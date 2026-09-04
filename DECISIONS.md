@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-155 - Beranda Saga Member memakai banner editorial foto penuh
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Arah visual carousel Beranda Saga Member |
+| Keputusan | Jadikan referensi banner coffee editorial Andreas sebagai arah aktif: format pendek dan lebar, foto memenuhi kartu, overlay gelap menyatu, teks kiri yang tegas, serta CTA sederhana. Terapkan konsisten pada seluruh empat slide dan pertahankan satu stable public Vercel URL. |
+| Alasan | Andreas menilai komposisi ini lebih kuat daripada banner sebelumnya; nested glass card menutupi foto dan terasa lebih generik. |
+| Alternatif | Mempertahankan panel kaca inset; mengubah hanya slide Coffee; mengganti URL publik setiap iterasi. |
+| Dampak | Main `1e8d64783cebdd21213c5c661d93a3dfd3235e41` dan deployment `dpl_3AG6DEUdFz12SrPfTq3twcAqEzw7` menerapkan V18 pada public dummy demo. Backend/provider/data nyata tetap OFF dan `BUSINESS_READY=false`. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-154 - Saga POS memakai portrait kiosk berpedoman pada Saga Member V5
 
 | Field | Nilai |

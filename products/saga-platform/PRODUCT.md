@@ -66,6 +66,26 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V18 Editorial Story Banner
+
+- Saga Member canonical main `1e8d64783cebdd21213c5c661d93a3dfd3235e41`
+  (PR #34) aktif pada Vercel production deployment
+  `dpl_3AG6DEUdFz12SrPfTq3twcAqEzw7` melalui stable public URL
+  `https://saga-member-platform.vercel.app` setelah Preview
+  `dpl_Fe54oYSjCaUGohBxUKp3gFaDm1Vd` berstatus Ready.
+- Empat story Beranda kini memakai banner editorial foto penuh 160–168 px,
+  solid scrim, radius 24 px, copy ringkas, dan CTA 44 px. Nested glass card
+  di atas foto sudah dihapus.
+- Slideshow empat detik, pause, previous/next, swipe, Feather icon, serta
+  reduced-motion tetap dipertahankan.
+- 136/136 test, PR CI `33840636398`, canonical-main CI `33840964968`, local
+  UAT, dan public UAT 320/360/375/390/430 px lulus tanpa overflow, gambar
+  rusak, target kecil, browser error, atau Axe serious/critical.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V17 Inbox Center
 
 - Saga Member canonical main `537efb165da794fdebb881f74748fa1dcf60b8e9`

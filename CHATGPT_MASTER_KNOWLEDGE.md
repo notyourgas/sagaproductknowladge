@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V18 Editorial Story Banner aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`1e8d64783cebdd21213c5c661d93a3dfd3235e41` (PR #34) dan deployment
+`dpl_3AG6DEUdFz12SrPfTq3twcAqEzw7`. Empat slide Beranda memakai foto penuh,
+solid scrim, tinggi 160–168 px, radius 24 px, copy ringkas, dan CTA 44 px;
+nested glass card yang sebelumnya menutup foto sudah dihapus.
+
+Autoplay empat detik, pause, previous/next, swipe, off-screen pause, Feather
+icon, dan reduced-motion tetap berjalan. 136/136 test, PR CI `33840636398`,
+main CI `33840964968`, Preview `dpl_Fe54oYSjCaUGohBxUKp3gFaDm1Vd`, local
+UAT, dan public UAT 320–430 px lulus tanpa overflow, broken image, target kecil,
+browser error, atau Axe serious/critical. Runtime tetap dummy; backend,
+provider, transaksi, dan data pelanggan nyata OFF. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 Saga Member V17 Inbox Center aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `537efb165da794fdebb881f74748fa1dcf60b8e9` (PR #32/#33) dan deployment

@@ -8,6 +8,20 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V18 Editorial Story Banner deployed
+
+- Main `1e8d64783cebdd21213c5c661d93a3dfd3235e41` (PR #34) aktif pada
+  deployment `dpl_3AG6DEUdFz12SrPfTq3twcAqEzw7` dan stable public URL setelah
+  Preview `dpl_Fe54oYSjCaUGohBxUKp3gFaDm1Vd` berstatus Ready.
+- Empat story Beranda berubah menjadi banner editorial foto penuh yang ringkas;
+  nested glass card dihapus, copy dipadatkan, dan CTA 44 px dipertahankan.
+- 136/136 test, exact PR/main CI, local dan public UAT lima viewport, Axe,
+  target sentuh, geometry banner, offline shell, serta Vercel inspection lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V17 Inbox Center deployed
 
 - Main `537efb165da794fdebb881f74748fa1dcf60b8e9` (PR #32/#33) aktif pada

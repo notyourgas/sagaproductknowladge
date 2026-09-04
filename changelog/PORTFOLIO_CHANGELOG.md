@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V18 Editorial Story Banner deployed
+
+- Saga Member main `1e8d64783cebdd21213c5c661d93a3dfd3235e41` (PR #34)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_3AG6DEUdFz12SrPfTq3twcAqEzw7`.
+- Empat carousel story Beranda kini memakai foto penuh, solid scrim, radius
+  24 px, copy ringkas, dan CTA 44 px tanpa nested glass card.
+- 136/136 test, exact PR/main CI, local/public UAT lima viewport, Axe, target
+  sentuh, geometry banner, offline shell, serta Vercel inspection lulus.
+- Runtime tetap dummy; backend, provider, transaksi, dan data nyata OFF,
+  `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V17 Inbox Center deployed
 
 - Saga Member main `537efb165da794fdebb881f74748fa1dcf60b8e9` (PR #32/#33)
