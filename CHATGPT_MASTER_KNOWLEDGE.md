@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V21 Member Card readability refinement aktif pada stable public
+dummy URL `https://saga-member-platform.vercel.app` dari canonical main
+`a788cce43fda9f12d12c4fbb9db9f69bf492f841` (PR #37), Preview
+`dpl_5p56eUtwhA8xw1keEskXkntcPEVi`, dan production deployment
+`dpl_APiyaJGgW9v4BecMyGEHWT3TkELz`. Panel rectangle pada identitas, NFC, dan
+Member ID di preview maupun PNG telah dihapus. Stroke adaptif digunakan untuk
+keterbacaan, dan pemilih tujuh tema sekarang berupa satu tema aktif dengan
+tombol sebelumnya/berikutnya yang siklik. Full 147 test, PR CI `33856318571`,
+main CI `33856691901`, local mobile/accessibility/export UAT, serta remote
+production UAT lulus. Backend, provider, NFC nyata, transaksi, dan real data
+tetap OFF; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 SagaOPS Kiosk cart session recovery tervalidasi lokal pada source exact
 `506af0e5a66038c406660b5cf7a3d21d8ebc8480` yang sudah dipush. Cart belum
 dibayar dipulihkan setelah reload hanya untuk session server yang sama. Draft

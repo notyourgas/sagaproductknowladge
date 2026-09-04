@@ -58,22 +58,28 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V20 Member Card 35 Collection dari Saga
-Member main `d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36), Preview
-deployment `dpl_ARfnu2xy92vScv98wpadWDGXHoYj`, dan Vercel production
-deployment `dpl_2scRKVtU4ekDsFSZ2xVJtVvsu1Bi` pada stable URL
+Frontend public dummy terkini adalah V21 Member Card readability refinement
+dari Saga Member main `a788cce43fda9f12d12c4fbb9db9f69bf492f841`
+(PR #37), Preview deployment `dpl_5p56eUtwhA8xw1keEskXkntcPEVi`, dan
+Vercel production deployment `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz` pada stable URL
 `https://saga-member-platform.vercel.app`. Saga Pass memakai satu renderer
 CR80 untuk halaman utama dan dialog crew, dengan tujuh tema dan lima varian
 per tema. Polos dibangun dari CSS primitives; enam tema lain memakai total 30
 background WebP lokal. Nama, tier, Member ID, NFC label, dan ikon contactless
 tetap menjadi overlay dinamis, bukan bagian dari artwork.
 
+V21 menghapus panel rectangle dari seluruh overlay pada preview dan PNG, lalu
+menjaga keterbacaan memakai stroke adaptif. Pemilih tema kini menampilkan satu
+tema per baris dengan tombol sebelumnya/berikutnya yang siklik dan target sentuh
+44 px; lima varian tema aktif tetap terlihat di bawahnya. Cache offline berubah
+ke `v34-member-card-stepper`.
+
 Pilihan theme/variant disimpan lokal dengan fallback Polos A. Pengguna dapat
 mengunduh PNG demo 1712×1080 secara lokal di browser tanpa upload data. Points,
 XP, dan disclaimer tetap di luar muka kartu; tidak ada chip pembayaran, QR,
 barcode, magnetic stripe, atau klaim transaksi.
 
-146/146 test, PR CI `33851882411`, canonical-main CI `33852445823`, local UAT
+147/147 test, PR CI `33856318571`, canonical-main CI `33856691901`, local UAT
 320/360/375/390/430 px, remote production UAT seluruh tujuh tema, persistence,
 dialog parity, export, Axe, overflow, broken-image, dan console checks lulus.
 Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data

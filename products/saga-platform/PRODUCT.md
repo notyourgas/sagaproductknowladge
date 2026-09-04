@@ -66,6 +66,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V21 Member Card readability refinement
+
+- Saga Member canonical main `a788cce43fda9f12d12c4fbb9db9f69bf492f841`
+  (PR #37) aktif pada Vercel production deployment
+  `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_5p56eUtwhA8xw1keEskXkntcPEVi` divalidasi.
+- Panel rectangle pada identitas, Member ID, dan label NFC dihapus dari preview
+  kartu serta PNG. Teks memakai stroke/outline adaptif tanpa menutupi artwork.
+- Pemilih tujuh tema berubah dari rail horizontal menjadi satu tema aktif dengan
+  tombol sebelumnya/berikutnya yang siklik dan target sentuh 44 px.
+- Full 147 test, PR CI `33856318571`, canonical-main CI `33856691901`, local
+  mobile UAT, accessibility, PNG inspection, serta remote production UAT lulus.
+- Status tetap `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V20 Member Card 35 Collection
 
 - Saga Member canonical main `d3e581b557df8aa1f3d701b9913680a61b4b8465`

@@ -8,6 +8,22 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V21 Member Card readability refinement deployed
+
+- Main `a788cce43fda9f12d12c4fbb9db9f69bf492f841` (PR #37) aktif pada
+  deployment `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz` dan stable public URL setelah
+  Preview `dpl_5p56eUtwhA8xw1keEskXkntcPEVi` berstatus Ready.
+- Rectangle di belakang identitas/NFC/Member ID dihapus dari preview dan PNG;
+  stroke adaptif menjaga keterbacaan tanpa menutup ilustrasi.
+- Rail tujuh tema diganti stepper satu baris dengan navigasi siklik kiri/kanan,
+  focus recovery, live status, dan target sentuh 44 px.
+- 147/147 test, exact PR/main CI, local UAT lima viewport, PNG inspection,
+  accessibility, persistence, dialog parity, serta remote production UAT lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V20 Member Card 35 Collection deployed
 
 - Main `d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36) aktif pada

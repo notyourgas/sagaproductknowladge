@@ -2148,6 +2148,20 @@ keputusan pengganti.
 | Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V4_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `99ca02a06bb85d52570d35454cd5c3c0a0d4087d`, PR #18, deployment `dpl_58yvx5Me4wLb3xwgBMnaczZmmGGY` |
 | Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |
 
+## DEC-156 - Saga Member Card memakai overlay stroke dan stepper tema satu baris
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Keterbacaan ekspor kartu dan navigasi tema Saga Member public dummy |
+| Keputusan | Hapus rectangle di belakang identitas, Member ID, dan NFC pada preview serta PNG; gunakan stroke adaptif. Ganti rail tujuh tema dengan satu tema aktif dan tombol kiri/kanan yang siklik. |
+| Alasan | Founder menemukan posisi rectangle pada PNG tidak presisi, rectangle menutupi artwork, dan rail tema kurang responsif pada mobile. |
+| Alternatif yang dipertimbangkan | Memperbaiki ukuran rectangle; mempertahankan rail horizontal; memakai dropdown tema. |
+| Dampak | Artwork lebih bersih, identitas tidak terpotong panel, pemilihan tema konsisten pada 320–430 px, dan target sentuh tetap 44 px. Backend, provider, NFC nyata, data, dan transaksi tidak berubah. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V21_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `a788cce43fda9f12d12c4fbb9db9f69bf492f841`, PR #37, deployment `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz` |
+| Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |
+
 ## DEC-151 - Saga Member memakai V5 Urban Coffee Club pada public dummy
 
 | Field | Isi |

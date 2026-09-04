@@ -15,7 +15,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7a392c70781354b629de6f93635e12ade0c5b558` |
+| Baseline sebelum pembaruan | `0dc41243219eb707a3a9d0a402db0638d2f7ef51` |
+
+## Saga Member V21 card readability refinement
+
+- Source exact `a788cce43fda9f12d12c4fbb9db9f69bf492f841` (PR #37) aktif
+  pada Vercel production deployment `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz`
+  melalui stable public URL.
+- Rectangle overlay dihapus dari preview dan PNG, stroke adaptif digunakan,
+  dan pemilih tema berubah menjadi stepper kiri/kanan satu baris.
+- Full 147 test, PR/main CI, local UAT, PNG inspection, accessibility, dan
+  remote production UAT lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V21
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk cart session recovery
 
