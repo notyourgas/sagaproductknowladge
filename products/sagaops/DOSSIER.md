@@ -179,6 +179,16 @@ binding order. Full 170/170, dua viewport portrait, Axe serious/critical nol,
 overflow nol, target sentuh minimal 56 px, dependency/secret scan, stable
 health, serta remote member journey lulus. Runtime tetap public simulator
 ephemeral; readiness formal 84/100 dan gate external tidak berubah.
+Kiosk P10 success time control exact runtime source
+`3f14f522cfaf5887f0a62c52d7a9aa58fca08f34` aktif melalui deployment
+`dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ`. Hard reset 12 detik berubah menjadi
+default 30 detik dengan extension 20 detik melalui satu target sentuh, maksimal
+sepuluh kali atau total 230 detik. Countdown terlihat sejak awal, extension
+tidak membuat order/payment, dan setelah waktu habis session tetap dibersihkan
+ke P01. Full 171/171, browser clock 30→230→P01, dua viewport, keyboard, touch,
+reduced motion, Axe serious/critical nol, overflow nol, dependency/secret scan,
+stable health, serta public smoke 30→50 lulus. Runtime tetap public simulator
+ephemeral; readiness formal 84/100 dan gate external tidak berubah.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

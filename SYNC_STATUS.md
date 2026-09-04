@@ -1,5 +1,26 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga POS Kiosk P10 success time control
+
+- Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /
+  PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `3f14f522cfaf5887f0a62c52d7a9aa58fca08f34`.
+- Stable deployment: `dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ` pada
+  `https://saga-pos-kiosk.vercel.app/kiosk`.
+- Perubahan: P10 memiliki default 30 detik dan extension 20 detik sampai
+  sepuluh kali; setelah maksimal 230 detik session tetap dibersihkan ke P01.
+  Extension tidak membuat order/payment.
+- Evidence: full 171/171; browser clock 30→230→P01; dua portrait viewport;
+  keyboard/touch; reduced motion; Axe serious/critical 0; overflow 0;
+  dependency/secret scan, health, dan public smoke 30→50 lulus.
+- Batas: QRIS simulator dan state ephemeral. NFC fisik, Customer Platform
+  external UAT, durable outlet runtime, settlement, perangkat, serta business
+  acceptance belum tervalidasi. Readiness formal tetap 84/100.
+- File diperbarui: `products/sagaops/PRODUCT.md`,
+  `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 ## Saga POS Kiosk Member degraded recovery
 
 - Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /

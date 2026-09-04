@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga POS Kiosk P10 success time control deployed
+
+- `CONFIRMED`: Saga POS source
+  `3f14f522cfaf5887f0a62c52d7a9aa58fca08f34` aktif pada stable public demo
+  melalui deployment `dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ`.
+- P10 kini memberi 30 detik waktu baca dan extension 20 detik hingga sepuluh
+  kali, lalu tetap membersihkan session untuk privasi kiosk bersama.
+- Extension tidak menambah order/payment. Full 171/171, dua viewport,
+  keyboard/touch, reduced motion, Axe, overflow, dependency/secret scan,
+  health, dan remote smoke lulus.
+- Produk lain tidak berubah. Public runtime tetap simulator ephemeral;
+  readiness formal 84/100 dan `BUSINESS_READY=false`.
+
 ## 2026-09-05 - Saga Member V33 Notification Rhythm deployed
 
 - Saga Member main `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49)

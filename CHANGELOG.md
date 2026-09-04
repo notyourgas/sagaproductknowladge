@@ -1,5 +1,27 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga POS Kiosk P10 success time control sync
+
+- Informasi `CONFIRMED`: exact source
+  `3f14f522cfaf5887f0a62c52d7a9aa58fca08f34` dan stable public demo
+  deployment `dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ`.
+- Perubahan: waktu P10 12→30 detik dan dapat diperpanjang 20 detik sampai
+  sepuluh kali tanpa membuat order/payment baru.
+- Alasan: memberi cukup waktu membaca nomor antrean/detail sambil menjaga
+  eventual privacy reset pada kiosk bersama.
+- Area terdampak: SagaOPS/Saga POS Kiosk P10; produk lain tidak berubah.
+- File terdampak: product, dossier, product/portfolio/root changelog, master
+  knowledge, dan sync status SagaOPS.
+- Delivery: public demo simulator aktif; production outlet dan business
+  readiness tidak berubah. Readiness formal 84/100.
+- Validasi: full 171/171, browser clock 30→230→P01, dua viewport,
+  keyboard/touch, reduced motion, Axe, overflow, dependency/secret scan,
+  stable health, dan public smoke.
+- Blocker: NFC fisik, Customer Platform external UAT, durable outlet runtime,
+  settlement, perangkat outlet, dan business acceptance.
+- Source: Saga POS release evidence, 5 September 2026. Knowledge commit
+  menggunakan `main HEAD`.
+
 ## 2026-09-05 - Saga Member V33 Notification Rhythm sync
 
 - Informasi `CONFIRMED`: Saga Member main
