@@ -51,16 +51,18 @@ session-derived role/outlet, checkout, recovery, closing, approval, reporting,
 Member Code/Voyager/Reward integration boundary, dan fallback tanpa printer.
 
 Public demo Kiosk exact deployed source
-`7422eb9c8a8e57b74ea38adaac1e2d9755676a2e` menambahkan Tap NFC simulator
+`b42419cefad6b585123bb4816353e8d49f97f373` menambahkan Tap NFC simulator
 setelah Dine-in/Takeaway. Aksi besar 144 px mengikat Member fixture pada session
 server dan membuka welcome, tiga rekomendasi, modifier, serta kategori
 `Untukmu` tanpa browser credential dan tanpa membuat order/payment. Endpoint
 memerlukan same-origin, HttpOnly session, CSRF, rate limit, serta order-type
 policy; runtime non-public-demo tidak memproyeksikannya. Stable deployment
-`dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu` lulus full 175/175 dan browser smoke dua
+`dpl_4SGbVJdjAJjGRTSnjZUE4kRqf7k4` lulus full 176/176 dan browser smoke dua
 viewport dengan Axe serious/critical 0, overflow 0, serta application error 0.
 Physical NFC, Customer Platform production, gateway nyata, dan business
 readiness tidak berubah.
+Saat koneksi terputus, status NFC menjadi `Offline`, aksinya terkunci, dan
+guest tetap masuk katalog termuat tanpa request NFC.
 
 Saga POS local sprint lab menambah self-service Kiosk, assisted Cashier
 fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,

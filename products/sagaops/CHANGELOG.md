@@ -7,9 +7,10 @@
   `Untukmu` dalam satu tap.
 - Server mengabaikan credential browser; same-origin, HttpOnly session, CSRF,
   rate limit, order-type policy, serta nol order/payment tetap terverifikasi.
-- Exact deployed source `7422eb9c8a8e57b74ea38adaac1e2d9755676a2e`;
-  stable deployment `dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu`.
-- Full 175/175, dua viewport, Axe/overflow/touch/reduced-motion, dependency dan
+- Exact deployed source `b42419cefad6b585123bb4816353e8d49f97f373`;
+  stable deployment `dpl_4SGbVJdjAJjGRTSnjZUE4kRqf7k4`.
+- Offline mengunci NFC dan mempertahankan guest catalog tanpa request NFC.
+- Full 176/176, dua viewport, Axe/overflow/touch/reduced-motion, dependency dan
   secret scan, health, serta public smoke lulus.
 - Hanya public demo simulator yang berubah. Physical NFC, Customer Platform,
   payment production, product activation, dan `BUSINESS_READY` tetap OFF.
