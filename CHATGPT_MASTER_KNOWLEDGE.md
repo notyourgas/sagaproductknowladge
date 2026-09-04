@@ -1,5 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V26 Quick Access Emoji aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc` (PR #42), Preview
+`dpl_8NGNLMHBBCxhkifVJWmbPwQWHnCc`, dan production deployment
+`dpl_9Y5i6hKUeFUQA44zYCWR6eiUc473`. Empat kartu Akses cepat Beranda memakai
+Coffee `☕`, Studio `📸`, Reward `🎁`, dan Quest `🎯`. Font stack
+memprioritaskan Apple Color Emoji lalu fallback emoji sistem; glyph akhir
+bergantung pada OS. Emoji dekoratif memakai `aria-hidden`, sedangkan label teks
+tetap menjadi accessible name. Kotak ikon 42 px atau 38 px pada layar kompak,
+target sentuh minimal 44 px, dan ikon sistem/navbar tetap Feather. Full 154
+test, PR CI `33868554807`, main CI `33868783645`, local UAT lima viewport,
+serta remote production UAT 320/390/430 px lulus tanpa overflow, console error,
+atau temuan Axe serious/critical. Tidak ada dependency atau request jaringan
+baru. Backend, provider, NFC nyata, transaksi, dan real data tetap OFF;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 SagaOPS Kiosk atomic session bootstrap tervalidasi lokal pada exact source
 `410ad19b1641dc47e84c86dc0b8324082d01083b` yang sudah dipush. Create/resume
 session dan snapshot kini satu POST same-origin: first load turun 3→1 request,

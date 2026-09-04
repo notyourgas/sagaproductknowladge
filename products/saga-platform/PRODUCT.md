@@ -66,6 +66,27 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V26 Quick Access Emoji
+
+- Saga Member canonical main `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc`
+  (PR #42) aktif pada Vercel production deployment
+  `dpl_9Y5i6hKUeFUQA44zYCWR6eiUc473` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_8NGNLMHBBCxhkifVJWmbPwQWHnCc` divalidasi.
+- Empat tujuan Akses cepat Beranda memakai emoji semantik: Coffee `☕`, Studio
+  `📸`, Reward `🎁`, dan Quest `🎯`. Font stack memprioritaskan
+  `Apple Color Emoji`, lalu fallback emoji bawaan sistem.
+- Emoji bersifat dekoratif (`aria-hidden`); label teks tetap menjadi accessible
+  name. Kotak ikon tetap 42 px dan menjadi 38 px pada breakpoint kompak,
+  sedangkan target sentuh tetap minimal 44 px. Ikon sistem dan navbar tetap
+  Feather.
+- Full 154 test, PR CI `33868554807`, canonical-main CI `33868783645`, local
+  UAT lima viewport, serta remote production UAT 320/390/430 px lulus tanpa
+  overflow, console error, atau temuan Axe serious/critical.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+  pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V25 Compact Navigation + Floating Label
 
 - Saga Member canonical main `9a3661781158723b43da2bcb6e1960b4edad607a`
