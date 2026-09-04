@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+
+## 2026-09-05 - Saga POS integrated finalization batch
+
+- `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED_BRANCH / NOT_DEPLOYED / BUSINESS_READY=false`.
+- Source: `4cebfd1687f247be51e369d50844bf70e118d93e`.
+- Durable order/member/staff and production-item snapshots now survive recovery; mixed BAR/FOOD tickets require all stations ready before pickup.
+- Owner reports support business-date selection and paid-only item rankings; current production queue remains live independently.
+- Validation: 182/182 regression tests, seven migrations, focused browser/Axe/overflow checks and zero dependency vulnerabilities. No live transaction or production activation.
+- Finalization has 32 planned sprints and remains IN_PROGRESS, not fully accepted. Real operator hosting/auth, Customer Platform, hardware, staff UAT and business acceptance remain gates.
+- Production/public demo unchanged by this batch. Continue durable integration and external gates; no readiness increase from local validation.
+
+
 ## 2026-09-05 - Early NFC Member public-demo handoff
 
 - `CONFIRMED`: setelah Dine-in/Takeaway, public demo Kiosk menyediakan touch
