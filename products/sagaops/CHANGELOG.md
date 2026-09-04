@@ -8,6 +8,22 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-05 — Persistent help dan safe session cancel aktif di Vercel
+
+- Exact runtime source `85d9ed18ea37fa922d6ee9b6ef4a9f0d571a7da3`
+  aktif melalui deployment `dpl_CvrRuXWou6wfQR15TKb9frdumyLD`.
+- Bantuan tetap tersedia pada P02-P07. Pembatalan pre-checkout turun dari
+  empat-lima back tap atau idle 180 detik menjadi tiga tap dengan konfirmasi.
+- Fokus awal berada pada aksi aman. Decline dan network failure mempertahankan
+  draft/Member; konfirmasi berhasil membuat fresh session dan nol order/payment.
+- P08-P10 tetap payment-safe dan tidak menawarkan session cancel.
+- Full 173/173, dua viewport, target 56-80 px, fold, focus return, reduced
+  motion, Axe/overflow, dependency/secret scan, health, serta public smoke
+  tanpa console/page/request error lulus.
+- Status `CONFIRMED / PUBLIC_DEMO_ACTIVE /
+  PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; readiness tetap
+  84/100.
+
 ## 2026-09-05 — P10 success time dan receipt-scroll control aktif di Vercel
 
 - Exact runtime source `60200026b4372cf122855f69c5baaa2ddc2640a8`

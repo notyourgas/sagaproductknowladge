@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga POS Kiosk persistent help dan safe cancel deployed
+
+- `CONFIRMED`: exact source
+  `85d9ed18ea37fa922d6ee9b6ef4a9f0d571a7da3` aktif pada stable public demo
+  melalui deployment `dpl_CvrRuXWou6wfQR15TKb9frdumyLD`.
+- P02-P07 kini memiliki Bantuan persisten dan pembatalan tiga-tap dengan
+  konfirmasi aman. Decline/offline menjaga draft; fresh session membersihkan
+  cart/Member dan tidak membuat order/payment.
+- P08-P10 tidak menawarkan cancel. Full 173/173, dua viewport, focus, target,
+  fold, Axe/overflow, dependency/secret scan, health, dan remote smoke lulus.
+- Produk lain tidak berubah. Runtime tetap simulator ephemeral; readiness
+  formal 84/100 dan `BUSINESS_READY=false`.
+
 ## 2026-09-05 - Saga Member V34 Pusat Data Demo deployed
 
 - Saga Member main `bb8307c1ee359a2c340ccbf3b4f9af388798b35d` (PR #50)
