@@ -15,7 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `6bd5e2232d05973af675a1b8f3541779bfbb537e` |
+| Baseline sebelum pembaruan | `70727b93adbabd97c2fa19158de3e0b23d284909` |
+
+## SagaOPS Kiosk Member session recovery
+
+- Runtime source exact `172c56a1435196e2edf46d6348884b33094c1ac9`
+  aktif pada deployment `dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb` melalui stable
+  public URL.
+- Session server memulihkan Member dan benefit setelah refresh. Raw Member Code
+  tidak disimpan atau dikirim ulang browser; rekomendasi langsung ke modifier,
+  guest clear, dan fresh reset lulus.
+- Full 167/167, focused Kiosk 28/28, browser dua viewport, Axe, overflow,
+  reduced-motion, dependency/secret scan, preview/stable smoke, dan remote UAT
+  lulus.
+- Status `CONFIRMED / PUBLIC_DEMO_DEPLOYED / MEMBER_LOCAL_FIXTURE /
+  NFC_NOT_RUN / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`;
+  readiness tetap 84/100.
+
+## File yang berubah pada sinkronisasi Member session recovery
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V30 Reward Pocket
 

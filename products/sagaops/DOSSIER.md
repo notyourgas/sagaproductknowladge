@@ -139,6 +139,19 @@ candidate/stable smoke, dan browser public journey lulus. Runtime code aktif
 pada stable URL melalui deployment `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo`.
 Customer Platform external UAT, NFC fisik, durable outlet runtime, dan owner
 business acceptance tetap pending; readiness formal tetap 84/100.
+Kiosk Member recovery exact runtime source
+`172c56a1435196e2edf46d6348884b33094c1ac9` aktif melalui deployment
+`dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb`. Ownership identitas terverifikasi berada
+pada session server; browser tidak lagi menyimpan atau mengirim ulang raw Member
+Code pada quote/checkout. Bootstrap memulihkan P02B atau P05 beserta benefit,
+guest/fresh reset membersihkan konteks server, dan rekomendasi dapat membuka P04
+tanpa transisi ilegal. Baseline refresh yang membutuhkan identifikasi ulang
+turun menjadi nol langkah tambahan dan total member tetap Rp11.700 untuk fixture
+Americano, lalu kembali Rp13.000 setelah guest dipilih. Full 167/167, focused
+Kiosk 28/28, Axe serious/critical nol, dua viewport, overflow, reduced-motion,
+dependency/secret scan, candidate/stable smoke, dan remote browser journey
+lulus. Runtime tetap public simulator ephemeral; NFC dan Customer Platform
+external UAT belum dijalankan.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

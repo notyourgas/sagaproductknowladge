@@ -46,7 +46,7 @@ keputusan pengganti.
 | Alternatif yang dipertimbangkan | Mempertahankan Member setelah cart; meminta Member saat welcome; memblokir guest sampai identitas berhasil. |
 | Dampak | Flow/progress Kiosk berubah menjadi lima tahap, resolver Member harus public-safe, raw credential tidak boleh dipersistenkan ke draft, dan NFC harus menunjukkan status unavailable sampai hardware/UAT nyata tersedia. Payment authority, harga server, promo, dan canary tidak berubah. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / IMPLEMENTED / PUBLIC_DEMO_DEPLOYED / MEMBER_LOCAL_FIXTURE / NFC_NOT_RUN / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `ddb16339578e8696ff154260a027d04c162a9676`, deployment `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo` |
+| Status | `CONFIRMED / IMPLEMENTED / PUBLIC_DEMO_DEPLOYED / MEMBER_SESSION_RECOVERY_ACTIVE / MEMBER_LOCAL_FIXTURE / NFC_NOT_RUN / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; runtime source `172c56a1435196e2edf46d6348884b33094c1ac9`, deployment `dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb` |
 | Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-171 - Quest Saga Member menjadi journey simulasi yang dapat diulang

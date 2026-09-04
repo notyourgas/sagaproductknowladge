@@ -97,15 +97,20 @@ SETTLEMENT_PENDING_CLEARING / HARDWARE_AND_OUTLET_PILOT_PENDING /
 BUSINESS_READY=false`.
 
 - Kiosk public demo aktif di `https://saga-pos-kiosk.vercel.app/kiosk` melalui
-  deployment Vercel `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo`, memakai runtime code
-  source `ddb16339578e8696ff154260a027d04c162a9676`. Surface publik dibatasi ke
+  deployment Vercel `dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb`, memakai runtime code
+  source `172c56a1435196e2edf46d6348884b33094c1ac9`. Surface publik dibatasi ke
   Kiosk dan API simulator; gateway nyata, canary, dan promo nyata tidak
   diaktifkan. State session/order bersifat ephemeral dan bukan runtime outlet.
 - Setelah pelanggan memilih Dine In atau Takeaway, Kiosk meminta identifikasi
   Saga Member sebelum katalog. Member Code yang valid membuka sapaan personal,
   tiga rekomendasi aktif dalam tabel ringkas, dan kategori `Untukmu`; guest tetap
   dapat lanjut tanpa akun. NFC nyata ditampilkan jujur sebagai belum tersedia.
-- Full regression 165/165, focused member/API 14/14, browser Kiosk 21/21,
+- Identitas Member terverifikasi kini dimiliki session server. Refresh memulihkan
+  welcome/rekomendasi atau cart beserta benefit tanpa menyimpan raw Member Code
+  di browser atau mengirim ulang credential pada quote/checkout. Pilihan guest
+  dan fresh reset menghapus konteks server. Rekomendasi kini benar-benar dapat
+  membuka modifier tanpa dead-end state machine.
+- Full regression 167/167, focused Kiosk 28/28, browser dua viewport,
   dependency/secret scan, production health/static smoke, serta browser UAT
   sampai rekomendasi lulus.
 - Source exact `410ad19b1641dc47e84c86dc0b8324082d01083b` menambahkan atomic

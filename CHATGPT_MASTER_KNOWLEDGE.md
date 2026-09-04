@@ -7085,6 +7085,19 @@ browser smoke lulus. NFC fisik serta Customer Platform external UAT tetap
 `NOT_RUN`; public runtime tetap simulator ephemeral, readiness 84/100, dan
 `BUSINESS_READY=false`.
 
+Update Member session recovery 4 September 2026: Saga POS runtime exact
+`172c56a1435196e2edf46d6348884b33094c1ac9` aktif pada stable public Kiosk
+melalui deployment `dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb`. Identitas terverifikasi
+kini dimiliki session server; bootstrap memulihkan welcome/rekomendasi atau cart
+beserta benefit setelah refresh. Browser tidak menyimpan raw Member Code dan
+tidak mengirim ulang credential pada quote/checkout. Rekomendasi dapat membuka
+modifier tanpa transisi ilegal; guest/fresh reset menghapus konteks server.
+Full 167/167, focused Kiosk 28/28, browser dua viewport, Axe, overflow,
+reduced-motion, dependency/secret scan, preview/stable smoke, dan remote browser
+journey lulus. Runtime tetap public simulator ephemeral; NFC fisik serta
+Customer Platform external UAT `NOT_RUN`, readiness 84/100, dan
+`BUSINESS_READY=false`.
+
 Status: `SOURCE_PUSHED / LOCAL_VALIDATED / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED /
 SAGAOPS_TRANSACTIONS_LOCKED / PRIVATE_CANARY_PAID /
 SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`. Founder telah menerima
