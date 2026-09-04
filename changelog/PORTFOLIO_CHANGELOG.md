@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaBook S422 merged, release blocked offsite quota
+
+- DP custom booking manual sudah berada di canonical main
+  `d01afc3a51f687c196601808648f2660afdec04a` melalui PR #103 dan seluruh
+  exact-main gate source, database, browser, responsive, serta security lulus.
+- Release berhenti fail-closed sebelum artifact/upload/lock/switch karena tiga
+  arsip backup terenkripsi tidak dapat dikirim ke offsite yang kuotanya penuh.
+- Production tetap exact `ca549d185d02786e1233c44da5562b55830c490d`
+  pada release `20260903141813-ca549d1`, sehat dan tidak berubah.
+- Status `LOCAL_VALIDATED / RELEASE_BLOCKED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V28 borderless quick emoji deployed
 
 - Saga Member main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44)

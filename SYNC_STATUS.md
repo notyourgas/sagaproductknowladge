@@ -15,7 +15,16 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `4bc653aa7a43f57c6b5a424d78de7f071f6ff1bc` |
+| Baseline sebelum pembaruan | `8612e1fff7b2bc2ef90e7af965502b43f1eab0f1` |
+
+## SagaBook S422 DP Custom
+
+- Canonical source main
+  `d01afc3a51f687c196601808648f2660afdec04a` melalui PR #103; seluruh
+  exact-main source, MySQL, browser, responsive, dan security gate lulus.
+- Release tertahan sebelum artifact/upload/lock/switch karena kuota offsite
+  penuh. Production tidak berubah dari `20260903141813-ca549d1`, shared lock
+  tersedia, dan `BUSINESS_READY=false`.
 
 ## Saga Member V28 Borderless Quick Emoji
 

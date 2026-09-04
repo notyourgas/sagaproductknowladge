@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-09-04 - S422 masuk main, release berhenti pada gate backup offsite
+
+- Exact kandidat S422 sudah digabung melalui PR #103 ke canonical main
+  `d01afc3a51f687c196601808648f2660afdec04a`.
+- Exact-main lulus full Feature 1.341/1.341 (15.125 assertion), focused
+  pembayaran 18/18 (174 assertion), Saga AI 18/18, MySQL 8.4, build,
+  typecheck, audit dependency high-severity, visual regression, serta matrix
+  DP custom 6/6 pada 320x568, 360x800, 390x844, 430x932, dan 1440x900.
+- Backup terenkripsi fresh di VPS selesai dengan checksum 3/3, tetapi transfer
+  tiga arsip ke offsite ditolak karena kuota penyimpanan penuh. Disposable
+  restore, artifact production, upload, release lock, dan atomic switch tidak
+  dijalankan.
+- Production tetap sehat pada exact
+  `ca549d185d02786e1233c44da5562b55830c490d`, release
+  `20260903141813-ca549d1`; shared lock tersedia.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-04 - Kandidat DP custom booking manual tervalidasi lokal
 
 - Sebelum: operator hanya dapat memilih bayar lunas atau DP 50%, sehingga

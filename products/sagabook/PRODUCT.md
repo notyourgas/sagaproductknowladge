@@ -23,12 +23,18 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   melebihi total ditolak. Verifikasi bukti, ledger cicilan append-only,
   pelunasan, Closing, report, void, idempotency, tenant/cabang, permission,
   serta optimistic lock tetap memakai engine DP yang sama. Exact source
-  `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` sudah dipush dan lulus full
+  `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` sudah dipush dan digabung ke
+  canonical main `d01afc3a51f687c196601808648f2660afdec04a`. Exact-main lulus full
   Feature 1.341/1.341 (15.125 assertion), focused 11/11 (133 assertion),
-  typecheck, build, audit dependency nol, serta Playwright 6/6 pada viewport
+  typecheck, build, audit dependency high-severity, serta Playwright 6/6 pada viewport
   320x568, 360x800, 390x844, 430x932, dan 1440x900. Status `CONFIRMED /
-  SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  SOURCE_PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Release berhenti sebelum artifact, upload, lock, atau atomic switch karena
+  penyimpanan offsite menolak tiga arsip terenkripsi akibat kuota penuh.
+  Production terverifikasi tetap sehat pada exact
+  `ca549d185d02786e1233c44da5562b55830c490d`, release
+  `20260903141813-ca549d1`; shared release lock tersedia.
 
 - Rilis mobile kumulatif exact `80c100c0c1aadf2a276fb8b0c424078718faa059`
   membuat sidebar admin hanya menandai satu route aktif, memperbaiki kontras
