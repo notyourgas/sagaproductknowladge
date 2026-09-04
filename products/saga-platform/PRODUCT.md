@@ -66,6 +66,29 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V13 Pass Spotlight
+
+- Saga Member canonical main `18f86bc02cd2c69344f813a7b99e60484bcfc015`
+  (PR #27 dan koreksi kontras PR #28) aktif pada Vercel production deployment
+  `dpl_76ASTFPsosi3nvvCMgfJWdm5rCGX` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Halaman Pass memiliki satu aksi dominan `Siapkan Pass demo` yang membuka
+  presentasi fokus berisi nama dummy, tier, dan member code bertopeng. Mode ini
+  tidak membuka QR, barcode, NFC, transaksi, identitas lengkap, atau koneksi
+  provider.
+- Native dialog mengunci fokus, dapat ditutup lewat tombol eksplisit atau
+  Escape, mengembalikan fokus ke pemicu, dan langsung tersembunyi ketika page
+  menjadi hidden. Motion hanya opacity/transform 140-180 ms dan menghormati
+  reduced-motion.
+- 116/116 test, dua PR CI, dua canonical-main CI, dependency audit nol
+  vulnerability, Preview artifact verification, serta public UAT
+  320/360/375/390/430 px lulus. Axe critical/serious nol pada modal di seluruh
+  matriks.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ### Saga Member V12 Saga Compass
 
 - Saga Member canonical main `b9fc1bf0eec01badccce0c59fd930cd840891421`

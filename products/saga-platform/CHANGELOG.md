@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V13 Pass Spotlight deployed
+
+- Main `18f86bc02cd2c69344f813a7b99e60484bcfc015` (PR #27 dan koreksi
+  kontras PR #28) aktif pada deployment `dpl_76ASTFPsosi3nvvCMgfJWdm5rCGX`
+  dan stable public URL.
+- Pass mendapat satu aksi presentasi fokus dengan data dummy bertopeng, label
+  simulasi/scan live OFF, native modal focus containment, Escape/close recovery,
+  serta auto-hide ketika page hidden.
+- Remote UAT awal menemukan kontras 430 px; koreksi membuat Axe modal nol
+  critical/serious pada semua viewport 320/360/375/390/430 px.
+- 116/116 test, dua PR CI, dua main CI, dependency audit, Preview artifact
+  check, dan public UAT lima viewport lulus tanpa dependency baru.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V12 Saga Compass deployed
 
 - Main `b9fc1bf0eec01badccce0c59fd930cd840891421` (PR #26) aktif pada

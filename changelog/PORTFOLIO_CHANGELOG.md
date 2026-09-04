@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V13 Pass Spotlight deployed
+
+- Saga Member main `18f86bc02cd2c69344f813a7b99e60484bcfc015`
+  (PR #27/#28) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_76ASTFPsosi3nvvCMgfJWdm5rCGX`.
+- Pass kini memiliki presentasi fokus privacy-first dengan data dummy
+  bertopeng, focus containment, close/Escape recovery, page-hidden reset, dan
+  label eksplisit bahwa scan live OFF.
+- 116/116 test, exact PR/main CI, dependency audit, Preview verification, serta
+  UAT lokal/publik lima viewport lulus. Runtime tetap dummy; backend, provider,
+  transaksi, dan data nyata OFF, `PRODUCTION_ACTIVATED=false`,
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS stale-version conflict guard local validated
 
 - Saga POS exact `54fda1a` mengharuskan expected catalog version untuk mutasi

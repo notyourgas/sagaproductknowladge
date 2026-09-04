@@ -58,7 +58,33 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V12 Saga Compass dari Saga Member main
+Frontend public dummy terkini adalah V13 Pass Spotlight dari Saga Member main
+`18f86bc02cd2c69344f813a7b99e60484bcfc015` (PR #27 dan koreksi kontras
+PR #28) pada Vercel production deployment `dpl_76ASTFPsosi3nvvCMgfJWdm5rCGX`
+dan stable URL `https://saga-member-platform.vercel.app`. Halaman Pass kini
+memiliki satu aksi dominan untuk membuka presentasi fokus yang hanya menampilkan
+nama dummy, tier, dan kode bertopeng. Label `Mode presentasi · simulasi` serta
+`SCAN LIVE OFF` membedakannya dari credential atau proses transaksi nyata.
+
+Implementasi memakai native dialog: fokus awal berada pada judul, Tab tetap di
+dalam modal, Escape/tombol tutup mengembalikan fokus ke pemicu, dan
+`visibilitychange` menutup modal saat page hidden. Motion 13.2.0 yang sudah ada
+hanya menggerakkan opacity/transform 140-180 ms. WAI-ARIA Dialog Pattern, W3C
+H102, MDN dialog, dan Motion menjadi rujukan; Base UI Dialog dievaluasi tetapi
+tidak ditambah karena aplikasi framework-free tidak memerlukan primitive React
+kedua. QR, barcode, NFC, timer, provider, dan network request baru tidak ada.
+
+116/116 test, PR CI `33823904568` dan `33824453936`, canonical-main CI
+`33823999634` dan `33824599731`, dependency audit nol vulnerability, Preview
+artifact verification, local UAT, dan public remote UAT pada
+320/360/375/390/430 px lulus. Remote UAT awal menemukan kontras label pada
+430 px dan koreksi PR #28 menutupnya; Axe modal kini nol critical/serious pada
+seluruh matriks. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider,
+transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak
+aktif. Status tertinggi `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED`;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V12 Saga Compass sebelumnya berasal dari Saga Member main
 `b9fc1bf0eec01badccce0c59fd930cd840891421` (PR #26) pada Vercel production
 deployment `dpl_83UwTsmrPTbWA9xYaAjDX3xV1tXT` dan stable URL
 `https://saga-member-platform.vercel.app`. Saga Compass memperbaiki continuity
