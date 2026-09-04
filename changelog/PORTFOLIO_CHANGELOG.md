@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk early Member dan rekomendasi deployed
+
+- Exact Saga POS `ddb16339578e8696ff154260a027d04c162a9676` dipush dan runtime
+  code aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui deployment
+  `dpl_H8kP3NdyzdufLJ2xhMABC5AmXGNo`.
+- Identifikasi Member sekarang berada setelah Dine In/Takeaway. Member valid
+  mendapat sapaan, tiga rekomendasi, dan kategori `Untukmu`; guest tetap bisa
+  lanjut, sedangkan NFC fisik dinyatakan belum tersedia.
+- Full 165/165 dan seluruh focused/browser/accessibility/security/public smoke
+  lulus. Runtime tetap public simulator ephemeral; readiness 84/100 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V29 Quest Trail deployed
 
 - Saga Member main `8fadccbf96665701b2ecf1fb98a98a762ccdde65` (PR #45)
