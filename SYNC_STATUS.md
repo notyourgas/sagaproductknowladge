@@ -15,22 +15,23 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `073a7e0` |
+| Baseline sebelum pembaruan | `7a69e4b` |
 
 ## Saga Member V17 Inbox Center
 
-- Source canonical main `416adac5794d65e62b21a2b8d723c879fc4d0f64`
-  dari PR #32.
-- Production deployment `dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW` READY dan aktif
+- Source canonical main `537efb165da794fdebb881f74748fa1dcf60b8e9`
+  dari PR #32/#33.
+- Production deployment `dpl_5b4D5EseVase3sVv3pbVx6sruzUd` READY dan aktif
   pada `https://saga-member-platform.vercel.app` setelah Preview
-  `dpl_BiCCVMKNK6HkNqapmhxMzgfBrUYs` berstatus Ready.
+  `dpl_4RpC7DeFjPGhf1gQZ1QZmdZYV1yn` berstatus Ready.
 - Inbox sekarang memiliki unread overview, filter, kelompok waktu, kategori,
   deep-link, individual/bulk read state, empty recovery, serta badge Profil.
-- 133/133 test, PR CI `33838157171`, main CI `33838557658`, local UAT lima
-  viewport, Axe, touch target, offline shell, dan Vercel inspection lulus.
-  Public browser UAT V17 belum dijalankan.
-- Status `CONFIRMED / SAGA_MEMBER_V17_LOCAL_VALIDATED /
-  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_UAT_PENDING / PUBLIC_DUMMY_DEMO_ACTIVE /
+- Remote UAT pertama menemukan overflow 4 px pada 320 px; hotfix menutupnya dan
+  test kini mengukur layout setelah membuka Inbox. 133/133 test, dua PR/main CI,
+  local/public UAT lima viewport, Axe, touch target, offline shell, dan Vercel
+  inspection lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
   REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
   PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
 

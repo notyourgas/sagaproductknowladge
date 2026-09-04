@@ -10,16 +10,16 @@ Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
 ## 2026-09-04 — Saga Member V17 Inbox Center deployed
 
-- Main `416adac5794d65e62b21a2b8d723c879fc4d0f64` (PR #32) aktif pada
-  deployment `dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW` dan stable public URL setelah
-  Preview `dpl_BiCCVMKNK6HkNqapmhxMzgfBrUYs` berstatus Ready.
+- Main `537efb165da794fdebb881f74748fa1dcf60b8e9` (PR #32/#33) aktif pada
+  deployment `dpl_5b4D5EseVase3sVv3pbVx6sruzUd` dan stable public URL setelah
+  Preview `dpl_4RpC7DeFjPGhf1gQZ1QZmdZYV1yn` berstatus Ready.
 - Inbox kini memiliki unread overview, filter, kelompok waktu, kategori,
   deep-link, individual/bulk read state, empty recovery, dan badge Profil.
-- 133/133 test, PR CI `33838157171`, main CI `33838557658`, local UAT lima
-  viewport, Axe, target sentuh, offline shell, serta Vercel inspection lulus;
-  public browser UAT V17 masih pending.
-- Klasifikasi `CONFIRMED / SAGA_MEMBER_V17_LOCAL_VALIDATED /
-  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_UAT_PENDING / PUBLIC_DUMMY_DEMO_ACTIVE /
+- Remote UAT pertama menemukan overflow 4 px pada 320 px; hotfix menutupnya
+  dan menambah regression check. 133/133 test, dua PR/main CI, local dan public
+  UAT lima viewport, Axe, target sentuh, offline shell, serta Vercel inspection lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
   REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
   PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
 

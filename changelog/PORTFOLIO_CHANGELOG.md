@@ -2,14 +2,15 @@
 
 ## 2026-09-04 - Saga Member V17 Inbox Center deployed
 
-- Saga Member main `416adac5794d65e62b21a2b8d723c879fc4d0f64` (PR #32)
+- Saga Member main `537efb165da794fdebb881f74748fa1dcf60b8e9` (PR #32/#33)
   aktif pada `https://saga-member-platform.vercel.app` melalui deployment
-  `dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW`.
+  `dpl_5b4D5EseVase3sVv3pbVx6sruzUd`.
 - Inbox berubah menjadi notification center mobile dengan unread count,
   filter, kelompok waktu, deep-link, read state, empty recovery, dan badge
   Profil yang konsisten.
-- 133/133 test, exact PR/main CI, local UAT lima viewport, Axe, touch target,
-  offline shell, serta Vercel inspection lulus. Public browser UAT V17 pending.
+- Remote UAT pertama menemukan overflow 4 px di 320 px; hotfix menutupnya dan
+  menambah regression check. 133/133 test, dua exact PR/main CI, local/public
+  UAT lima viewport, Axe, touch target, offline shell, serta Vercel inspection lulus.
 - Runtime tetap dummy; backend, provider, transaksi, dan data nyata OFF,
   `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
 
