@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-165 - Ruang kanan header Kiosk diisi konteks kategori
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Hierarchy dan pemanfaatan ruang P03 Kiosk |
+| Keputusan | Gunakan header dua kolom selebar konten: judul di kiri serta kategori aktif, jumlah menu, dan panduan kontekstual di kanan. |
+| Alasan | Andreas menilai sisi kanan heading kosong dan meminta komposisi lebih menarik sekaligus tetap menjelaskan menu. Informasi kontekstual memberi fungsi nyata tanpa menambah ornamen atau langkah. |
+| Alternatif | Memperbesar judul saja; menambah ilustrasi dekoratif; mempertahankan batas lebar 820 px. |
+| Dampak | Source `16ae7940be06dee154df5ef8ecd0ff04118d4b78` mengurangi right gap 1080 px dari 148 menjadi 0 px, mempertahankan header ringkas pada dua viewport, dan tidak mengubah price/payment truth. Public deployment belum berubah. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md` |
+
 ## DEC-164 - Akses cepat Saga Member memakai emoji semantik
 
 | Field | Nilai |

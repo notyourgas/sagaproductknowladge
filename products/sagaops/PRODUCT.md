@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_CONTEXTUAL_BROWSE_HEADER_LOCAL_VALIDATED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -129,21 +129,25 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS current branch head
-  `a7611c647045feaf9340ed737cf29b3054acf80f` sudah dipush. Rail kategori
+  `16ae7940be06dee154df5ef8ecd0ff04118d4b78` sudah dipush. P03 memakai header
+  dua kolom selebar konten: judul `Pilih menu favoritmu` dan kartu konteks yang
+  menampilkan kategori aktif, jumlah menu, serta panduan yang berubah mengikuti
+  pilihan. Ruang kanan kosong pada viewport 1080 px turun dari 148 px menjadi
+  0 px; tinggi header tetap 151 px pada 720 dan 181 px pada 1080 tanpa
+  horizontal overflow. Rail kategori
   photo-led pada 720x1280 sekarang memiliki scroll viewport mandiri yang
   berhenti sebelum cart dock. Fokus keyboard, pemilihan kategori, render ulang,
   dan return dari modifier mempertahankan kategori aktif terlihat tanpa
   mengubah `window.scrollY` atau posisi grid produk. Katalog Kiosk kini
   memiliki kategori Bagel dengan Creamcheese, Strawberry, Ham & Fresh, dan
   Moka Bagel. Rail kategori memakai foto produk pertama pada tujuh kartu yang
-  lebih tinggi tanpa ikon; label katalog menjadi `Pilih menu`. Bagel tidak
+  lebih tinggi tanpa ikon. Bagel tidak
   mewarisi suhu, gula, atau add-on minuman dan input modifier tersebut ditolak
   server. Area bawah P08 memiliki jarak antarkontrol minimal 10 px pada
   720x1280. Harga Bagel Rp18.000/Rp20.000/Rp25.000/Rp20.000 masih
-  `NEEDS CONFIRMATION` sebelum activation. Full 160/160 dan focused Kiosk 24/24
-  lulus; Axe, overflow/fold/touch, transparansi aset, dan secret diff scan
-  lulus tanpa perubahan dependency. Registry `npm audit` timeout setelah 60
-  detik sehingga tidak diklaim pass. Jika menu menjadi
+  `NEEDS CONFIRMATION` sebelum activation. Full 163/163 dan focused Kiosk 31/31
+  lulus; Axe serious/critical nol, overflow/fold/touch, transparansi aset,
+  dependency audit, dan secret diff scan lulus. Jika menu menjadi
   sold out setelah masuk cart, Kiosk memuat ulang katalog server, melepas hanya
   item yang habis, mempertahankan item valid, dan meminta quote ulang. Bila cart
   kosong, pelanggan kembali ke katalog dengan arahan memilih pengganti; recovery

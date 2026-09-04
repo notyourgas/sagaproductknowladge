@@ -15,7 +15,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `3351f83a09906ae95f45e1d9983edc33b5dcf529` |
+| Baseline sebelum pembaruan | `d25dd99088a956bd09c7257c5aef5662ae760f87` |
 
 ## Saga Member V26 Quick Access Emoji
 
@@ -38,6 +38,27 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 - `products/saga-platform/PRODUCT.md`
 - `products/saga-platform/DOSSIER.md`
 - `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
+
+## SagaOPS Kiosk contextual browse header
+
+- Source exact `16ae7940be06dee154df5ef8ecd0ff04118d4b78` dipush ke branch Saga POS.
+- Header P03 mengisi lebar konten dengan judul, kategori aktif, jumlah menu,
+  dan panduan yang berubah mengikuti kategori. Right gap 1080 px turun 148→0 px.
+- Focused Kiosk 31/31 dan full 163/163 lulus; geometry dua viewport, Axe,
+  overflow, dependency audit, dan secret scan lulus.
+- Status `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  BUSINESS_READY=false`; stable public Vercel belum berubah.
+
+## File yang berubah pada sinkronisasi SagaOPS contextual browse header
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
 - `changelog/PORTFOLIO_CHANGELOG.md`
 - `CHATGPT_MASTER_KNOWLEDGE.md`
 - `DECISIONS.md`

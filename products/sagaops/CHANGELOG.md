@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Contextual browse header Kiosk tervalidasi lokal
+
+- Source exact `16ae7940be06dee154df5ef8ecd0ff04118d4b78` dipush ke branch Saga POS.
+- P03 berubah dari heading selebar 820 px menjadi header dua kolom selebar
+  konten. Kartu kanan menampilkan kategori, jumlah menu, dan panduan kontekstual.
+- Pada 1080 px, ruang kanan kosong turun 148→0 px. Header terukur 151 px pada
+  720 dan 181 px pada 1080 tanpa horizontal overflow.
+- Focused Kiosk 31/31 dan full 163/163 lulus; Axe serious/critical nol,
+  dependency audit dan secret scan lulus.
+- Status `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; stable
+  Vercel tetap runtime `7fc4ff483b053db904511f8ae2106ce34ef975e8`,
+  readiness 84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 — Atomic session bootstrap Kiosk tervalidasi lokal
 
 - Source exact `410ad19b1641dc47e84c86dc0b8324082d01083b` dipush ke branch
