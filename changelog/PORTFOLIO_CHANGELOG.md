@@ -1,15 +1,16 @@
 # Portfolio Changelog
 
-## 2026-09-05 - Saga POS Kiosk P10 success time control deployed
+## 2026-09-05 - Saga POS Kiosk P10 success time dan receipt scroll deployed
 
 - `CONFIRMED`: Saga POS source
-  `3f14f522cfaf5887f0a62c52d7a9aa58fca08f34` aktif pada stable public demo
-  melalui deployment `dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ`.
+  `60200026b4372cf122855f69c5baaa2ddc2640a8` aktif pada stable public demo
+  melalui deployment `dpl_GUmDu6skaFMCU7UgL3dcctav93vG`.
 - P10 kini memberi 30 detik waktu baca dan extension 20 detik hingga sepuluh
   kali, lalu tetap membersihkan session untuk privasi kiosk bersama.
-- Extension tidak menambah order/payment. Full 171/171, dua viewport,
-  keyboard/touch, reduced motion, Axe, overflow, dependency/secret scan,
-  health, dan remote smoke lulus.
+- Struk tujuh item memiliki scroll touch/keyboard sendiri tanpa menggeser
+  halaman dan CTA tetap di fold. Extension tidak menambah order/payment. Full
+  172/172, dua viewport, reduced motion, Axe, overflow, dependency/secret scan,
+  health, serta remote smoke tanpa error lulus.
 - Produk lain tidak berubah. Public runtime tetap simulator ephemeral;
   readiness formal 84/100 dan `BUSINESS_READY=false`.
 

@@ -7,8 +7,8 @@ sales, dan konten SagaOPS.
 
 ## Konteks dan status bukti
 
-- Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Updated: 5 September 2026
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_SUCCESS_TIME_AND_SCROLL_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `KIOSK_PUBLIC_DEMO_ACTIVE / SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -179,16 +179,19 @@ binding order. Full 170/170, dua viewport portrait, Axe serious/critical nol,
 overflow nol, target sentuh minimal 56 px, dependency/secret scan, stable
 health, serta remote member journey lulus. Runtime tetap public simulator
 ephemeral; readiness formal 84/100 dan gate external tidak berubah.
-Kiosk P10 success time control exact runtime source
-`3f14f522cfaf5887f0a62c52d7a9aa58fca08f34` aktif melalui deployment
-`dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ`. Hard reset 12 detik berubah menjadi
+Kiosk P10 success time dan receipt-scroll control exact runtime source
+`60200026b4372cf122855f69c5baaa2ddc2640a8` aktif melalui deployment
+`dpl_GUmDu6skaFMCU7UgL3dcctav93vG`. Hard reset 12 detik berubah menjadi
 default 30 detik dengan extension 20 detik melalui satu target sentuh, maksimal
 sepuluh kali atau total 230 detik. Countdown terlihat sejak awal, extension
 tidak membuat order/payment, dan setelah waktu habis session tetap dibersihkan
-ke P01. Full 171/171, browser clock 30→230→P01, dua viewport, keyboard, touch,
-reduced motion, Axe serious/critical nol, overflow nol, dependency/secret scan,
-stable health, serta public smoke 30→50 lulus. Runtime tetap public simulator
-ephemeral; readiness formal 84/100 dan gate external tidak berubah.
+ke P01. Struk tujuh item memiliki region scroll fokus; drag touch dan keyboard
+menggerakkan detail tanpa menggeser halaman, sementara CTA tetap di fold. Full
+172/172, browser clock 30→230→P01, dua viewport, keyboard, touch, reduced
+motion, Axe serious/critical nol, overflow nol, dependency/secret scan, stable
+health, serta public smoke tanpa console/page/request error lulus. Runtime tetap
+public simulator ephemeral; readiness formal 84/100 dan gate external tidak
+berubah.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

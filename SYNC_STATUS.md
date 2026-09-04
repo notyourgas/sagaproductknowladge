@@ -1,18 +1,20 @@
 # Status Sinkronisasi Saga Product Knowledge
 
-## Saga POS Kiosk P10 success time control
+## Saga POS Kiosk P10 success time dan receipt-scroll control
 
 - Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /
   PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
-- Source exact: `3f14f522cfaf5887f0a62c52d7a9aa58fca08f34`.
-- Stable deployment: `dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ` pada
+- Source exact: `60200026b4372cf122855f69c5baaa2ddc2640a8`.
+- Stable deployment: `dpl_GUmDu6skaFMCU7UgL3dcctav93vG` pada
   `https://saga-pos-kiosk.vercel.app/kiosk`.
 - Perubahan: P10 memiliki default 30 detik dan extension 20 detik sampai
   sepuluh kali; setelah maksimal 230 detik session tetap dibersihkan ke P01.
-  Extension tidak membuat order/payment.
-- Evidence: full 171/171; browser clock 30→230→P01; dua portrait viewport;
-  keyboard/touch; reduced motion; Axe serious/critical 0; overflow 0;
-  dependency/secret scan, health, dan public smoke 30→50 lulus.
+  Extension tidak membuat order/payment. Struk panjang memiliki region scroll
+  fokus yang dapat digunakan lewat touch dan keyboard tanpa menggeser halaman;
+  CTA `Selesai` tetap di fold.
+- Evidence: full 172/172; browser clock 30→230→P01; struk tujuh item pada dua
+  portrait viewport; keyboard/touch; reduced motion; Axe serious/critical 0;
+  overflow 0; dependency/secret scan, health, dan public smoke tanpa error lulus.
 - Batas: QRIS simulator dan state ephemeral. NFC fisik, Customer Platform
   external UAT, durable outlet runtime, settlement, perangkat, serta business
   acceptance belum tervalidasi. Readiness formal tetap 84/100.
