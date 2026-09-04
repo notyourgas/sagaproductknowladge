@@ -58,7 +58,33 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V14 Reward Route dari Saga Member main
+Frontend public dummy terkini adalah V15 Human Copy & Moments dari Saga Member
+main `d6efc0394f0c991d64dd657c4614b7fdc9dee048` (PR #30), Preview deployment
+`dpl_4FBadqpkqVD4qmRfFTcJHHwxPupy`, dan Vercel production deployment
+`dpl_DEZprmybhdvs1MZrE1ShFfUpAXNA` pada stable URL
+`https://saga-member-platform.vercel.app`. Carousel Beranda memuat empat cerita
+yang ringkas: Kopi Saga Salak, Member Moments, Quest minggu ini, dan Saga
+Studio. Member Moments serta Quest memakai photographic-style dummy asset
+responsif 480/960 WebP, solid scrim berkontras tinggi, CTA minimal 44 px, dan
+fallback yang tetap aman saat gambar gagal dimuat.
+
+Copy aktif pada Beranda, Jelajah, Pass, Reward, Profil, Aktivitas, Inbox,
+Quest, Detail Reward, Booking, serta feedback/error diubah dari istilah internal
+dan frasa generik menjadi bahasa Indonesia yang singkat, kontekstual, dan
+berorientasi tindakan. Runtime disclosure kini berbunyi `Mode demo · semua data
+hanya contoh`. Tidak ada endpoint, provider, auth, backend, atau dependency
+runtime baru; Motion tetap 13.2.0.
+
+124/124 test, PR CI `33831396702`, canonical-main CI `33831772203`, audit
+dependency nol vulnerability, exact Preview asset verification, local UAT,
+dan public UAT pada 320/360/375/390/430 px lulus. Axe serious/critical,
+overflow, broken image, undersized target, unexpected HTTP, console, dan page
+error semuanya nol. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider,
+transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak
+aktif. Status tertinggi `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED`;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+Frontend public dummy V14 sebelumnya adalah Reward Route dari Saga Member main
 `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed` (PR #29), Preview deployment
 `dpl_GMQd4Je32A7BwD6gL33eEvx7XX4p`, dan Vercel production deployment
 `dpl_7tL3XVMo1NcFbEgEi3BhJzFdEgt4` pada stable URL

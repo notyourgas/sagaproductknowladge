@@ -15,7 +15,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f37c8f6` |
+| Baseline sebelum pembaruan | `05e88e8` |
+
+## Saga Member V15 Human Copy & Moments
+
+- Source canonical main `d6efc0394f0c991d64dd657c4614b7fdc9dee048`
+  dari PR #30.
+- Production deployment `dpl_DEZprmybhdvs1MZrE1ShFfUpAXNA` READY dan aktif
+  pada `https://saga-member-platform.vercel.app` setelah exact Preview
+  `dpl_4FBadqpkqVD4qmRfFTcJHHwxPupy` diverifikasi.
+- Member Moments dan Quest minggu ini memakai photographic-style dummy asset
+  responsif; seluruh route aktif serta feedback/error mendapat copy Indonesia
+  yang lebih ringkas. Runtime disclosure menjadi `Mode demo · semua data hanya
+  contoh`.
+- 124/124 test, PR CI `33831396702`, main CI `33831772203`, dependency audit
+  nol vulnerability, local UAT, Preview artifact check, dan public UAT lima
+  viewport lulus; Axe, overflow, broken image, HTTP, console, dan page error nol.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V15
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS kiosk menu illustrative dummy assets
 

@@ -1,5 +1,24 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V15 Human Copy & Moments aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`d6efc0394f0c991d64dd657c4614b7fdc9dee048` (PR #30) dan deployment
+`dpl_DEZprmybhdvs1MZrE1ShFfUpAXNA`. Beranda memuat empat cerita: Kopi Saga
+Salak, Member Moments, Quest minggu ini, dan Saga Studio. Dua cerita baru
+memakai photographic-style dummy assets responsif 480/960 WebP, solid scrim,
+dan CTA mobile minimal 44 px.
+
+Copy pada seluruh route aktif dan feedback/error telah disederhanakan menjadi
+bahasa Indonesia yang lebih langsung, kontekstual, dan mudah dipahami. Runtime
+menampilkan `Mode demo · semua data hanya contoh`. 124/124 test, PR CI
+`33831396702`, main CI `33831772203`, audit dependency nol vulnerability,
+exact Preview artifact verification, serta public UAT 320-430 px lulus dengan
+Axe serious/critical, overflow, broken image, HTTP failure, console, dan page
+error nol. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
 Saga Member V14 Reward Route aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed` (PR #29) dan deployment

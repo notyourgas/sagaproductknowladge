@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V15 Human Copy & Moments sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `d6efc0394f0c991d64dd657c4614b7fdc9dee048`, PR #30, PR CI
+  `33831396702`, main CI `33831772203`, Preview
+  `dpl_4FBadqpkqVD4qmRfFTcJHHwxPupy`, dan production deployment
+  `dpl_DEZprmybhdvs1MZrE1ShFfUpAXNA` aktif pada stable URL.
+- Before -> after: banner generik dan copy berbahasa internal berubah menjadi
+  dua banner photographic-style responsif serta bahasa Indonesia yang ringkas,
+  kontekstual, dan berorientasi tindakan di seluruh route aktif.
+- 124/124 test, exact PR/main CI, audit dependency, Preview asset verification,
+  local UAT, dan public UAT lima viewport lulus.
+- Backend/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan
+  `BUSINESS_READY=false`. Dokumen terdampak: Saga Platform
+  product/dossier/changelog, portfolio, master knowledge, root changelog, dan
+  sync status.
+
 ## 2026-09-04 - SagaOPS kiosk menu dummy asset sync
 
 - Informasi `CONFIRMED`: source exact

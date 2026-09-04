@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V15 Human Copy & Moments deployed
+
+- Saga Member main `d6efc0394f0c991d64dd657c4614b7fdc9dee048` (PR #30)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_DEZprmybhdvs1MZrE1ShFfUpAXNA`.
+- Carousel Beranda kini memuat Member Moments dan Quest minggu ini memakai
+  photographic-style dummy assets responsif. Copy di seluruh route aktif dan
+  feedback diubah menjadi bahasa Indonesia yang lebih singkat dan jelas.
+- 124/124 test, exact PR/main CI, audit dependency, Preview verification, serta
+  public UAT lima viewport lulus tanpa Axe serious/critical, overflow, broken
+  image, unexpected HTTP, console, atau page error.
+- Runtime tetap dummy; backend, provider, transaksi, dan data nyata OFF,
+  `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS kiosk menu asset gaps filled locally
 
 - Saga POS exact `ec8ffd907c7766d552ca91fe50ce79358398b28e` dipush; 18/18 kartu

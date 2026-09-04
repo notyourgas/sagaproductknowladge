@@ -66,6 +66,29 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V15 Human Copy & Moments
+
+- Saga Member canonical main `d6efc0394f0c991d64dd657c4614b7fdc9dee048`
+  (PR #30) aktif pada Vercel production deployment
+  `dpl_DEZprmybhdvs1MZrE1ShFfUpAXNA` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Carousel Beranda kini memiliki empat cerita: Kopi Saga Salak, Member Moments,
+  Quest minggu ini, dan Saga Studio. Dua banner baru memakai photographic-style
+  dummy asset responsif 480/960 WebP dengan solid text scrim.
+- Copy aktif pada Beranda, Jelajah, Pass, Reward, Profil, Aktivitas, Inbox,
+  Quest, Detail Reward, Booking, dan feedback/error disederhanakan menjadi
+  bahasa Indonesia yang langsung menjelaskan aksi dan keadaan pengguna.
+- Runtime disclosure menjadi `Mode demo · semua data hanya contoh`; jargon dan
+  status teknis yang tidak membantu pengguna dihapus dari alur utama.
+- 124/124 test, PR CI `33831396702`, canonical-main CI `33831772203`, audit
+  dependency nol vulnerability, Preview artifact verification, serta public
+  UAT 320/360/375/390/430 px lulus tanpa Axe serious/critical, overflow,
+  broken image, unexpected HTTP, console, atau page error.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ### Saga Member V14 Reward Route
 
 - Saga Member canonical main `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed`
