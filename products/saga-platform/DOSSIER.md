@@ -58,7 +58,31 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V29 Quest Trail dari Saga Member main
+Frontend public dummy terkini adalah V30 Reward Pocket dari Saga Member main
+`64da605fe707b44f6ebf781e7c17250f10a8026e` (PR #46), Preview
+`dpl_71xjbvjUpWHfvpj7HUqkaqRHqpqN`, dan production deployment
+`dpl_3q6jh5d7apx4NgiBgYmJFVHqQMEL` pada stable URL
+`https://saga-member-platform.vercel.app`. Penukaran Reward eligible kini
+membuat pocket persisten selama tab aktif, bukan feedback sementara. Pocket
+menjelaskan reward, biaya Points, referensi demo tersamarkan, serta tiga
+langkah handoff ke crew. Dialog native `Tampilkan ke crew` menandai artefak
+sebagai demo yang tidak berlaku untuk transaksi; pengguna dapat membatalkan
+simulasi dan fokus kembali ke kontrol pemicu.
+
+State hanya berada di memori tab, refresh menghapusnya, saldo tetap 128, dan
+tidak ada request backend. Dialog ditutup ketika halaman tersembunyi, melalui
+Escape, backdrop, atau tombol; focus trap/recovery dan target sentuh minimal
+44 px diverifikasi. Full 165 test, PR CI `33881639119`, canonical-main CI
+`33881866552`, local UAT 320/360/375/390/430 px, dan remote production UAT
+lima viewport lulus tanpa overflow, request backend, page error, atau temuan
+Axe serious/critical. Cache offline berubah ke `v43-reward-pocket`. Runtime
+tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data pelanggan,
+QRIS, Push, NFC, printer, dan pilot nyata tidak aktif. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
+V29 Quest Trail sebelumnya berasal dari Saga Member main
 `8fadccbf96665701b2ecf1fb98a98a762ccdde65` (PR #45), Preview
 `dpl_64f8r2QuYCgRUh2k8Zm5m8yCMf7S`, dan production deployment
 `dpl_57MXHh67m11Pr6twjpyMRTGcDD4V` pada stable URL

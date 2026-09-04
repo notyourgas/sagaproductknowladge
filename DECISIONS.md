@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-173 - Penukaran Reward demo menghasilkan Reward Pocket
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Kejelasan hasil penukaran dan handoff crew Saga Member |
+| Keputusan | Penukaran Reward eligible membuat satu `Reward Pocket` yang hidup selama tab aktif. Pocket memuat reward, biaya Points, referensi demo tersamarkan, dan langkah crew; CTA membuka dialog native berlabel `DEMO / TIDAK BERLAKU UNTUK TRANSAKSI`. Pembatalan harus reversible dan refresh menghapus state. |
+| Alasan | Toast sementara tidak cukup menjelaskan apa yang diperoleh pengguna atau langkah berikutnya, sedangkan backend dan transaksi nyata belum boleh diaktifkan. |
+| Alternatif | Mempertahankan toast; menyimpan voucher di localStorage; menghubungkan penukaran nyata; menampilkan QR/kode yang menyerupai alat bayar. |
+| Dampak | Main `64da605fe707b44f6ebf781e7c17250f10a8026e` dan deployment `dpl_3q6jh5d7apx4NgiBgYmJFVHqQMEL` menambahkan pocket memori-tab, dialog crew, focus recovery, dan cancellation tanpa mengubah saldo 128 atau mengirim request backend. |
+| Pemberi keputusan | SAGADEVS Product/UX review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-172 - Identifikasi Saga Member ditempatkan sebelum katalog Kiosk
 
 | Field | Isi |

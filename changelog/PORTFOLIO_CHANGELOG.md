@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V30 Reward Pocket deployed
+
+- Saga Member main `64da605fe707b44f6ebf781e7c17250f10a8026e` (PR #46)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_3q6jh5d7apx4NgiBgYmJFVHqQMEL`.
+- Penukaran Reward demo sekarang menghasilkan pocket persisten selama tab
+  aktif, dialog handoff crew berlabel demo, dan pembatalan reversible tanpa
+  mengubah saldo atau memanggil backend.
+- 165 test, exact PR/main CI, local mobile UAT, dan remote production UAT lima
+  viewport lulus. Runtime tetap dummy tanpa backend, transaksi, provider, atau
+  data nyata; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk early Member dan rekomendasi deployed
 
 - Exact Saga POS `ddb16339578e8696ff154260a027d04c162a9676` dipush dan runtime

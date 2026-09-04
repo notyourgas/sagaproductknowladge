@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V30 Reward Pocket sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `64da605fe707b44f6ebf781e7c17250f10a8026e`, PR #46, PR CI
+  `33881639119`, main CI `33881866552`, Preview
+  `dpl_71xjbvjUpWHfvpj7HUqkaqRHqpqN`, dan production deployment
+  `dpl_3q6jh5d7apx4NgiBgYmJFVHqQMEL` aktif pada stable URL.
+- Reward Pocket memori-tab dan dialog crew berlabel demo membuat hasil
+  penukaran dapat dipahami serta dibatalkan tanpa mengubah saldo atau backend.
+  Delivery tetap public dummy dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk early Member sync
 
 - Informasi `CONFIRMED`: exact source
