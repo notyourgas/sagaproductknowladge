@@ -66,6 +66,29 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V14 Reward Route
+
+- Saga Member canonical main `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed`
+  (PR #29) aktif pada Vercel production deployment
+  `dpl_7tL3XVMo1NcFbEgEi3BhJzFdEgt4` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Halaman Reward kini membuka dengan `Saga Match`: ringkasan reward yang cocok,
+  memiliki langkah berikutnya, atau sudah selesai/tidak tersedia. Reward Store
+  menjadi fokus sebelum Quest.
+- Locked state tidak lagi menjadi disabled dead end. Kurang Points menunjukkan
+  selisih eksplisit dan mengarah ke Coffee; syarat booking mengarah ke Studio;
+  stok habis/expired tampil sebagai status terminal tanpa tombol palsu.
+- Adaptor Motion kini menormalisasi Web Animations keyframe arrays sehingga
+  filter, feedback, dan empty state tidak menghasilkan page error.
+- 121/121 test, PR CI `33828131461`, canonical-main CI `33828444039`, audit
+  dependency nol vulnerability, Preview artifact verification, serta public
+  UAT 320/360/375/390/430 px lulus tanpa Axe serious/critical, overflow, atau
+  HTTP/page error.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ### Saga Member V13 Pass Spotlight
 
 - Saga Member canonical main `18f86bc02cd2c69344f813a7b99e60484bcfc015`

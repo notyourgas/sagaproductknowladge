@@ -15,7 +15,36 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f362b95` |
+| Baseline sebelum pembaruan | `1fdcdbd` |
+
+## Saga Member V14 Reward Route
+
+- Source canonical main `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed`
+  dari PR #29.
+- Production deployment `dpl_7tL3XVMo1NcFbEgEi3BhJzFdEgt4` READY dan aktif
+  pada `https://saga-member-platform.vercel.app` setelah Preview
+  `dpl_GMQd4Je32A7BwD6gL33eEvx7XX4p` diverifikasi.
+- `Saga Match` dan card eligibility mengubah locked dead end menjadi alasan,
+  selisih Points, next step Coffee/Studio, atau terminal status tanpa action.
+  Reward Store sekarang mendahului Quest.
+- Adaptor Motion keyframe diperbaiki tanpa dependency baru. 121/121 test, PR CI
+  `33828131461`, main CI `33828444039`, dependency audit nol vulnerability,
+  local UAT, Preview artifact check, dan public UAT lima viewport lulus; Axe,
+  overflow, HTTP failure, serta page error nol.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V14
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS scheduled availability
 

@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V14 Reward Route deployed
+
+- Main `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed` (PR #29) aktif pada
+  deployment `dpl_7tL3XVMo1NcFbEgEi3BhJzFdEgt4` dan stable public URL.
+- `Saga Match` merangkum 1 reward cocok, 2 memiliki langkah, dan 1 terminal;
+  Reward Store kini mendahului Quest.
+- Locked reward menampilkan alasan dan next step Coffee/Studio. Stok
+  habis/expired tidak lagi memakai disabled action.
+- Adaptor Motion menormalisasi array keyframe dan menutup page error pada filter,
+  feedback, serta empty state tanpa dependency baru.
+- 121/121 test, PR CI `33828131461`, main CI `33828444039`, audit dependency,
+  Preview artifact check, dan public UAT lima viewport lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V13 Pass Spotlight deployed
 
 - Main `18f86bc02cd2c69344f813a7b99e60484bcfc015` (PR #27 dan koreksi

@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V14 Reward Route deployed
+
+- Saga Member main `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed` (PR #29)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_7tL3XVMo1NcFbEgEi3BhJzFdEgt4`.
+- Reward memiliki `Saga Match`, alasan eligibility, selisih Points, next step
+  Coffee/Studio, dan terminal state tanpa disabled action; Reward Store kini
+  mendahului Quest.
+- Adaptor Motion keyframe diperbaiki tanpa dependency baru. 121/121 test, exact
+  PR/main CI, audit dependency, Preview verification, serta public UAT lima
+  viewport lulus tanpa Axe serious/critical, overflow, HTTP, atau page error.
+- Runtime tetap dummy; backend, provider, transaksi, dan data nyata OFF,
+  `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS scheduled availability local validated
 
 - Saga POS exact `f5c446b` menambah sold-out 30/60 menit, akhir hari 22.00 WIB,
