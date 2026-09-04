@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V28 Borderless Quick Emoji aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44), Preview
+`dpl_3Rz3pgJQPQK8Uk5ts1FmZWhJz2nk`, dan production deployment
+`dpl_HzgJW5FataWqGqL6qsJuyJio8AeX`. Empat emoji Akses cepat tampil langsung
+tanpa background, border, radius, shadow, atau warna wadah per-kategori.
+Ruang alignment tak terlihat tetap 42 px atau 38 px pada layar kompak dan
+target sentuh tetap berada pada kartu minimal 44 px. Full 157 test, PR CI
+`33872331545`, main CI `33872492134`, local UAT lima viewport, serta remote
+production UAT 320/390/430 px lulus tanpa overflow, console error, atau temuan
+Axe serious/critical. Tidak ada dependency, aset, request, atau animasi baru.
+Backend, provider, NFC nyata, transaksi, dan real data tetap OFF;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 SagaOPS Kiosk QRIS expiry handoff aktif pada stable URL
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact source
 `1c383ef861b706728a0d712a02c0a9bda7596d17` dan deployment

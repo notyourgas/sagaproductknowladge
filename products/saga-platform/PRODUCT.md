@@ -66,6 +66,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V28 Borderless Quick Emoji
+
+- Saga Member canonical main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477`
+  (PR #44) aktif pada Vercel production deployment
+  `dpl_HzgJW5FataWqGqL6qsJuyJio8AeX` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_3Rz3pgJQPQK8Uk5ts1FmZWhJz2nk` divalidasi.
+- Emoji Coffee `☕`, Studio `📸`, Reward `🎁`, dan Quest `🎯` tampil langsung
+  tanpa kotak kecil: background transparan, border/radius nol, dan tanpa shadow.
+- Ruang alignment tak terlihat tetap 42 px atau 38 px pada layar kompak;
+  target sentuh berada pada kartu utama dan tetap minimal 44 px.
+- Full 157 test, PR CI `33872331545`, canonical-main CI `33872492134`, local
+  UAT lima viewport, serta remote production UAT 320/390/430 px lulus tanpa
+  overflow, console error, atau temuan Axe serious/critical.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+  pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V27 Home Next Step
 
 - Saga Member canonical main `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69`

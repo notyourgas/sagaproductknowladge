@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-170 - Emoji Akses cepat Saga Member tanpa kotak kecil
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Presentasi emoji pada kartu Akses cepat Saga Member |
+| Keputusan | Tampilkan emoji Coffee, Studio, Reward, dan Quest secara langsung tanpa background, border, radius, shadow, atau warna wadah per-kategori. Pertahankan ruang alignment tak terlihat dan target sentuh pada kartu utama. |
+| Alasan | Andreas menilai kotak kecil di dalam kartu membuat emoji terasa berlapis dan meminta presentasi yang lebih ringan. |
+| Alternatif | Mempertahankan kotak berwarna; menghapus ruang alignment; mengganti emoji dengan Feather. |
+| Dampak | Main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` dan deployment `dpl_HzgJW5FataWqGqL6qsJuyJio8AeX` menghapus seluruh permukaan visual wadah emoji, mempertahankan alignment 42/38 px, dan menjaga target kartu minimal 44 px. Backend/provider/data nyata tetap OFF. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-169 - QRIS yang melewati countdown harus masuk handoff server
 
 | Field | Nilai |
