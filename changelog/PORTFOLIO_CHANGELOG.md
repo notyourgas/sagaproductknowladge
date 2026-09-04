@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk atomic bootstrap local validated
+
+- Saga POS exact `410ad19b1641dc47e84c86dc0b8324082d01083b` dipush.
+  First load turun 3→1 request dan expected 401 turun 1→0; reset turun 2→1
+  request dengan session rotation atomik.
+- Full 163/163, browser dua portrait viewport, Axe, outage recovery,
+  dependency/secret scan lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public Vercel belum
+  berubah, readiness tetap 84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V25 compact navigation + floating label deployed
 
 - Saga Member main `9a3661781158723b43da2bcb6e1960b4edad607a` (PR #41)

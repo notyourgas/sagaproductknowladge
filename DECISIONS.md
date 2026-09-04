@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-163 - Bootstrap session Kiosk harus atomik
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Reliability dan latency session Kiosk |
+| Keputusan | Satukan create/resume session, snapshot, CSRF, dan force-fresh rotation dalam satu POST same-origin. Pertahankan endpoint lama hanya untuk kompatibilitas. |
+| Alasan | Sequence tiga request menghasilkan expected 401 pada first load, sedangkan reset dua request berisiko jatuh pada instance serverless berbeda. |
+| Alternatif | Tetap mentoleransi 401; menyimpan session di client; memindahkan payment truth ke browser. |
+| Dampak | Exact source `410ad19b1641dc47e84c86dc0b8324082d01083b` menurunkan first load 3→1 request, reset 2→1 request, dan failed response 1→0 tanpa mengubah server-owned price/payment. Public deployment belum berubah. |
+| Pemberi keputusan | SAGADEVS Product/Engineering review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md` |
+
 ## DEC-162 - Label aktif Saga Member mengambang di atas navbar ringkas
 
 | Field | Nilai |

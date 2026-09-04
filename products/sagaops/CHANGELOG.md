@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Atomic session bootstrap Kiosk tervalidasi lokal
+
+- Source exact `410ad19b1641dc47e84c86dc0b8324082d01083b` dipush ke branch
+  Saga POS.
+- First load berubah dari tiga request dengan expected 401 menjadi satu POST
+  bootstrap tanpa 4xx. Completion dan idle reset berubah dari dua request
+  menjadi satu serta mencabut session lama.
+- Focused 7/7 dan full 163/163 lulus; browser 720×1280/1080×1920, Axe,
+  outage recovery, dependency audit, dan secret scan lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; stable Vercel masih
+  memakai runtime `7fc4ff483b053db904511f8ae2106ce34ef975e8`, readiness tetap
+  84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 — Public demo Kiosk aktif di Vercel
 
 - Exact runtime source `7fc4ff483b053db904511f8ae2106ce34ef975e8`

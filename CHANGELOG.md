@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk atomic bootstrap sync
+
+- Informasi `CONFIRMED`: source exact
+  `410ad19b1641dc47e84c86dc0b8324082d01083b` sudah dipush; first load dan
+  session reset kini memakai satu atomic bootstrap request.
+- Full 163/163 dan browser/accessibility/security gates lulus. Delivery tetap
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, decisions, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V25 compact navigation + floating label sync
 
 - Informasi `CONFIRMED`: Saga Member main

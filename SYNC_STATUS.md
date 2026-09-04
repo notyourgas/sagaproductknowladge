@@ -15,7 +15,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `1d9a8ebc4a5397f7bec3969491c27d4b2cf5e458` |
+| Baseline sebelum pembaruan | `6b36f9849d2de502091d9729030868c3d045df25` |
+
+## SagaOPS Kiosk atomic session bootstrap
+
+- Source exact `410ad19b1641dc47e84c86dc0b8324082d01083b` dipush ke branch
+  Saga POS.
+- First load turun 3→1 request dan expected 401 turun 1→0; completion/idle
+  reset turun 2→1 request dengan pencabutan session lama.
+- Focused 7/7, full 163/163, browser dua viewport, Axe, outage recovery,
+  dependency/secret scan lulus.
+- Status `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  BUSINESS_READY=false`; stable public Vercel belum berubah.
+
+## File yang berubah pada sinkronisasi SagaOPS atomic bootstrap
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V25 Compact Navigation + Floating Label
 
