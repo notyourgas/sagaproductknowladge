@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk image recovery local validated
+
+- Saga POS exact `c6b4a056fb53ab6c4e7c7b2872005e86416e04c1` dipush dengan
+  recovery gambar pada hero, katalog, modifier, dan cart.
+- Failure injection seluruh aset tetap memungkinkan order sampai add-to-cart
+  pada dua viewport portrait; full suite 151/151 dan focused 17/17 lulus.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100
+  dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - SagaOPS Kiosk welcome hero local validated
 
 - Saga POS exact `8708170b994b879199dbc34de040055c3bfffd49` dipush dengan P01

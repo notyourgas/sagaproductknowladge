@@ -15,7 +15,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ad6e56b91d86338cbe21986d7ed69ca4028b499e` |
+| Baseline sebelum pembaruan | `14535ae1b8dd15d9e368bba86b8a3797bbea65c4` |
+
+## SagaOPS Kiosk image recovery
+
+- Source exact `c6b4a056fb53ab6c4e7c7b2872005e86416e04c1` sudah dipush ke
+  branch Saga POS.
+- Hero, katalog, modifier, dan cart menangani gambar gagal melalui capture
+  listener terpusat. Failure injection seluruh aset tetap menyelesaikan flow
+  sampai add-to-cart pada 720x1280 dan 1080x1920.
+- Full suite 151/151, focused 17/17, overflow, secret scan, dan OSV 31
+  package/0 vulnerability lulus. Status `CONFIRMED /
+  KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  BUSINESS_READY=false`; readiness formal 84/100 tidak berubah.
+
+## File yang berubah pada sinkronisasi SagaOPS Kiosk image recovery
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk welcome hero
 

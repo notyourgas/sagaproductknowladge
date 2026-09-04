@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk image recovery sync
+
+- Informasi `CONFIRMED`: Saga POS exact
+  `c6b4a056fb53ab6c4e7c7b2872005e86416e04c1` sudah dipush.
+- Hero, katalog, modifier, dan cart memiliki fallback jujur saat gambar gagal;
+  failure injection seluruh aset tetap menyelesaikan flow sampai add-to-cart
+  pada dua viewport portrait.
+- Full suite 151/151, focused 17/17, overflow, secret scan, dan OSV 31
+  package/0 vulnerability lulus. Delivery tetap `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production dan readiness 84/100 tidak berubah.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk welcome hero sync
 
 - Informasi `CONFIRMED`: Saga POS exact

@@ -8,6 +8,18 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Recovery gambar Kiosk tervalidasi lokal
+
+- Source exact `c6b4a056fb53ab6c4e7c7b2872005e86416e04c1` dipush ke branch Saga POS.
+- Hero, katalog, modifier, dan cart menangani kegagalan gambar melalui capture
+  listener terpusat. Fallback menyatakan foto belum termuat dan tidak mengganti
+  produk dengan visual minuman lain.
+- Browser failure injection seluruh aset pada 720x1280 dan 1080x1920 tetap
+  dapat memilih produk sampai add-to-cart. Full suite 151/151, focused 17/17,
+  overflow nol, secret scan nol, dan OSV 31 package/0 vulnerability lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Hero welcome Kiosk memakai minuman katalog
 
 - Source exact `8708170b994b879199dbc34de040055c3bfffd49` dipush ke branch Saga POS.

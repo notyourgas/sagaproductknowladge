@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk image recovery tervalidasi lokal pada source exact
+`c6b4a056fb53ab6c4e7c7b2872005e86416e04c1` yang sudah dipush. Hero, katalog,
+modifier, dan cart kini mengganti gambar gagal muat dengan ikon serta copy
+jujur tanpa menyamarkan produk atau memblokir order flow. Failure injection
+seluruh aset lulus sampai add-to-cart pada 720x1280 dan 1080x1920. Full suite
+151/151, focused 17/17, overflow, secret scan, dan OSV 31 package/0
+vulnerability lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+readiness 84/100 dan `BUSINESS_READY=false` tidak berubah.
+
 SagaOPS Kiosk P01 welcome tervalidasi lokal pada source exact
 `8708170b994b879199dbc34de040055c3bfffd49` yang sudah dipush. Hero memakai
 aset ilustratif Es Kopi Saga yang sama dengan katalog, bukan lagi cup generik
