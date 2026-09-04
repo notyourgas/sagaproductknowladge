@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk public demo aktif pada
+`https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime source
+`7fc4ff483b053db904511f8ae2106ce34ef975e8` melalui Vercel deployment
+`dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`. Full 162/162, focused deployment 6/6,
+dependency/secret scan, production smoke, dan browser UAT order sampai success
+lulus. Runtime publik dibatasi ke Kiosk dan QRIS simulator; gateway, promo,
+canary, dan transaksi nyata tidak diaktifkan. State session/order masih
+ephemeral, sehingga ini bukan production outlet. Readiness tetap 84/100 dan
+`BUSINESS_READY=false`.
+
 Saga Member V24 Icon-only Bottom Navigation aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40), Preview

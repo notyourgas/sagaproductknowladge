@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk public demo deployed ke Vercel
+
+- Saga POS exact runtime `7fc4ff483b053db904511f8ae2106ce34ef975e8`
+  aktif di `https://saga-pos-kiosk.vercel.app/kiosk` melalui deployment
+  `dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`.
+- Full 162/162 dan browser UAT pemesanan sampai success lulus. Public runtime
+  hanya memakai QRIS simulator dan state ephemeral; gateway/promo/transaksi
+  nyata tidak diaktifkan.
+- Status `PUBLIC_DEMO_ACTIVE / OUTLET_PRODUCTION_NOT_ACTIVATED`;
+  readiness tetap 84/100 dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V24 icon-only bottom navigation deployed
 
 - Saga Member main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40)

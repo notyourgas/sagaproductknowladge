@@ -8,6 +8,20 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Public demo Kiosk aktif di Vercel
+
+- Exact runtime source `7fc4ff483b053db904511f8ae2106ce34ef975e8`
+  dipromosikan sebagai artifact yang sama dari preview ke production Vercel
+  deployment `dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`.
+- Stable URL: `https://saga-pos-kiosk.vercel.app/kiosk`.
+- Surface publik dibatasi ke Kiosk dan QRIS simulator. Gateway nyata, promo,
+  canary, dan transaksi nyata tidak diaktifkan oleh release ini.
+- Full 162/162, focused server/deployment 6/6, dependency/secret scan,
+  production health smoke, dan browser UAT order sampai success lulus.
+- State serverless masih ephemeral dan log memuat warning Node `DEP0169`.
+  Status `PUBLIC_DEMO_ACTIVE / OUTLET_PRODUCTION_NOT_ACTIVATED /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
 ## 2026-09-04 — Fixed touch canvas Kiosk tervalidasi lokal
 
 - Source exact `5568c2f26da6668a60c0c2120740395b4a542ec6` dipush ke branch Saga POS.

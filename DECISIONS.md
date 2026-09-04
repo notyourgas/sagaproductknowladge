@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-161 - Saga POS Kiosk dideploy sebagai public simulator demo
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Public delivery Saga POS Kiosk |
+| Keputusan | Deploy Kiosk ke stable Vercel URL sebagai public demo dengan QRIS simulator; jangan aktifkan gateway, promo, canary, atau transaksi nyata pada release ini. |
+| Alasan | Andreas meminta project dapat dibuka melalui link publik, sementara batas payment truth dan kesiapan outlet harus tetap aman dan eksplisit. |
+| Alternatif | Menahan seluruh deploy sampai durable production tersedia; mengaktifkan payment nyata pada public demo; memublikasikan seluruh operator surface. |
+| Dampak | Exact runtime `7fc4ff483b053db904511f8ae2106ce34ef975e8` aktif melalui deployment `dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6` pada `https://saga-pos-kiosk.vercel.app/kiosk`. Surface publik Kiosk-only, state ephemeral, dan `BUSINESS_READY=false`. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / PUBLIC_DEMO_ACTIVE / OUTLET_PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md` |
+
 ## DEC-160 - Bottom navigation Saga Member memakai ikon dengan label aktif
 
 | Field | Nilai |

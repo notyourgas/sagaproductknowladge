@@ -8,8 +8,8 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
-- Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Activation: `KIOSK_PUBLIC_DEMO_ACTIVE / SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
 ## Overview produk
@@ -92,9 +92,15 @@ menyegarkan katalog ketika quote menolak item stale, melepas hanya item habis,
 mempertahankan item valid, dan mengarahkan pelanggan memilih pengganti bila cart
 kosong. Recovery membuat 0 payment intent. Focused Kiosk terkini 24/24 dan full
 suite 160/160 lulus.
-Perubahan ini masih
-`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; validasi fisik portrait,
-owner visual/add-on sign-off, dan production release gate tetap diperlukan.
+Kiosk exact runtime `7fc4ff483b053db904511f8ae2106ce34ef975e8`
+aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui Vercel deployment
+`dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`. Public surface hanya Kiosk dan API QRIS
+simulator; tidak mengaktifkan gateway, promo, canary, atau transaksi nyata.
+Full 162/162, focused deployment 6/6, production smoke, dan browser UAT order
+sampai success lulus. State session/order serverless masih ephemeral dan ada
+peringatan deprecation Node `DEP0169`; validasi fisik portrait, durable runtime,
+owner visual/add-on sign-off, dan production outlet release gate tetap
+diperlukan.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

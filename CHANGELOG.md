@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk Vercel public demo sync
+
+- Informasi `CONFIRMED`: exact runtime source
+  `7fc4ff483b053db904511f8ae2106ce34ef975e8` aktif pada production deployment
+  `dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6` dengan stable Kiosk URL.
+- Public delivery hanya QRIS simulator dan state ephemeral; outlet production,
+  gateway nyata, promo, dan transaksi nyata tidak diaktifkan.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, decisions, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V24 icon-only bottom navigation sync
 
 - Informasi `CONFIRMED`: Saga Member main

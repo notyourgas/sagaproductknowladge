@@ -15,7 +15,28 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `687ef9e1144f81ae1c886d5eeb482dde0c077c99` |
+| Baseline sebelum pembaruan | `ec8c423fbcfd2537f090d76f3b06865091c37eec` |
+
+## SagaOPS Kiosk Vercel public demo
+
+- Exact runtime source `7fc4ff483b053db904511f8ae2106ce34ef975e8`
+  aktif di `https://saga-pos-kiosk.vercel.app/kiosk` melalui deployment
+  `dpl_66feChVVoBJnFbtMRZ5ofmuAVWK6`.
+- Full 162/162, focused 6/6, production health smoke, dan browser UAT order
+  sampai success lulus. QRIS tetap simulator dan state serverless ephemeral.
+- Status `CONFIRMED / PUBLIC_DEMO_ACTIVE / OUTLET_PRODUCTION_NOT_ACTIVATED /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
+## File yang berubah pada sinkronisasi SagaOPS Vercel public demo
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V24 Icon-only Bottom Navigation
 
