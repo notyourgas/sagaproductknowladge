@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -69,7 +69,7 @@ kasir dan Back Office untuk owner/manager.
 - Cashier Payment Confidence: satu QRIS uncertain mengunci checkout pengganti,
   menampilkan status/order/total server dan membuka katalog kembali hanya
   setelah paid atau terminal state.
-- Catalog 18 menu Kopi Saga Salak, modifier fixture, cash/shift, QRIS simulator,
+- Catalog 22 menu dalam 7 kategori, modifier fixture, cash/shift, QRIS simulator,
   Member/Reward fixture, sold-out versioning, refund/remake contract, report,
   export, device/print boundary, dan safe kiosk reset.
 
@@ -108,7 +108,17 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS current branch head
-  `4ce47803333a9d171ba816560fa325be2a0da12a` sudah dipush. Jika menu menjadi
+  `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` sudah dipush. Katalog Kiosk kini
+  memiliki kategori Bagel dengan Creamcheese, Strawberry, Ham & Fresh, dan
+  Moka Bagel. Rail kategori memakai foto produk pertama pada tujuh kartu yang
+  lebih tinggi tanpa ikon; label katalog menjadi `Pilih menu`. Bagel tidak
+  mewarisi suhu, gula, atau add-on minuman dan input modifier tersebut ditolak
+  server. Area bawah P08 memiliki jarak antarkontrol minimal 10 px pada
+  720x1280. Harga Bagel Rp18.000/Rp20.000/Rp25.000/Rp20.000 masih
+  `NEEDS CONFIRMATION` sebelum activation. Full 159/159 dan focused 31/31
+  lulus; Axe, overflow/fold/touch, transparansi aset, dan secret diff scan
+  lulus tanpa perubahan dependency. Registry `npm audit` timeout setelah 60
+  detik sehingga tidak diklaim pass. Jika menu menjadi
   sold out setelah masuk cart, Kiosk memuat ulang katalog server, melepas hanya
   item yang habis, mempertahankan item valid, dan meminta quote ulang. Bila cart
   kosong, pelanggan kembali ke katalog dengan arahan memilih pengganti; recovery
@@ -145,11 +155,12 @@ BUSINESS_READY=false`.
   logout cleanup. Focused 4/4 dan full suite 141/141 lulus; dua viewport,
   Axe, overflow, target 56 px, exactly-once fulfillment, secret scan, serta OSV
   31 package/0 temuan lulus. `npm audit` resmi tetap timeout.
-- Seluruh 18 kartu menu kini memiliki visual illustrative dummy. Aset referensi
-  aktif dioptimalkan dari total 15,48 MB menjadi 1,17 MB dalam WebP dengan
+- Seluruh 22 kartu menu kini memiliki visual; 13 di antaranya illustrative dummy.
+  Empat aset Bagel ImageGen disimpan sebagai source PNG transparan dan WebP
+  640x640 berukuran 98-122 KB. Aset referensi aktif dioptimalkan menjadi 1,60 MB dalam WebP dengan
   source PNG tetap dipertahankan dan proses build yang dapat diulang.
   Placeholder kotak tulisan tidak lagi dipakai untuk katalog saat ini. Aset
-  dummy tidak membuktikan resep/penampilan produk dan seluruh 18 visual tetap
+  dummy tidak membuktikan resep/penampilan produk dan seluruh visual dummy tetap
   memerlukan owner review serta penggantian foto nyata sebelum activation.
 - Perubahan ini `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime SagaDev
   Platform, lock transaksi, settlement, readiness 84/100, dan

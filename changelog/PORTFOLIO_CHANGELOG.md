@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk Bagel dan photo categories local validated
+
+- Saga POS exact `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` dipush.
+  Kiosk kini memiliki 22 produk/7 kategori, termasuk empat Bagel dengan aset
+  generatif transparan, dan rail kategori photo-led tanpa ikon.
+- Bagel tidak mewarisi modifier minuman; spacing bawah QRIS diperbaiki.
+  Focused 31/31 dan full 159/159 lulus.
+- Harga Bagel masih `NEEDS CONFIRMATION`. Status tetap `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100 dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V22 Jelajah Hero Typography deployed
 
 - Saga Member main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38)

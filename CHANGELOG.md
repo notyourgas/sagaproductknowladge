@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk Bagel dan category photo sync
+
+- Informasi `CONFIRMED`: source Saga POS exact
+  `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` sudah dipush; katalog menjadi
+  22 produk/7 kategori dengan empat Bagel dan photo-led category rail.
+- Harga empat Bagel berstatus `NEEDS CONFIRMATION`; production tidak berubah.
+- Focused 31/31 dan full 159/159 lulus. Delivery tetap `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100 tidak berubah.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V22 Jelajah Hero Typography sync
 
 - Informasi `CONFIRMED`: Saga Member main
