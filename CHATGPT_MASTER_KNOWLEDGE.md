@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk checkout quote guard aktif pada stable URL
+`https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime source
+`7217bf2dd4b5ff54cd06c765501b5b9ba882127e` dan deployment
+`dpl_9HVQW4Mafg26ZHf1QxVpXHP8jsZB`. Quote terakhir diikat oleh fingerprint
+HMAC server, catalog version, total, dan expiry. Runtime menghitung ulang fakta
+server tepat sebelum mutation; perubahan Member/menu/total atau quote expired
+menolak checkout sebelum order/payment intent. UI kembali ke P05 dan
+menampilkan total lama → baru untuk konfirmasi ulang. Full 169/169, dua
+viewport, Axe, overflow, dependency/secret scan, preview/stable smoke, dan
+browser public journey sampai QRIS simulator lulus. Runtime tetap public
+simulator ephemeral; readiness 84/100, NFC fisik, Customer Platform external
+UAT, product production activation, dan `BUSINESS_READY` tidak berubah.
+
 Saga Member V31 Reward Passbook aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47), Preview

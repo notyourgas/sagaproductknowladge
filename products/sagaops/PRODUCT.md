@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_CHECKOUT_QUOTE_GUARD_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -75,6 +75,9 @@ kasir dan Back Office untuk owner/manager.
 - Saga Payment Confidence pada P08–P09: panduan scan/bayar/tunggu, live status
   server, polling production ber-backoff dan terbatas, pemeriksaan manual,
   peringatan anti-double-payment, serta recovery spesifik per status.
+- Checkout quote guard pada P05–P08: fingerprint HMAC server, versi katalog,
+  total, dan expiry wajib cocok dengan quote terakhir sebelum order/payment
+  dibuat; drift mengembalikan pelanggan ke review dengan total lama → baru.
 - Cashier Payment Confidence: satu QRIS uncertain mengunci checkout pengganti,
   menampilkan status/order/total server dan membuka katalog kembali hanya
   setelah paid atau terminal state.
@@ -97,8 +100,8 @@ SETTLEMENT_PENDING_CLEARING / HARDWARE_AND_OUTLET_PILOT_PENDING /
 BUSINESS_READY=false`.
 
 - Kiosk public demo aktif di `https://saga-pos-kiosk.vercel.app/kiosk` melalui
-  deployment Vercel `dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb`, memakai runtime code
-  source `172c56a1435196e2edf46d6348884b33094c1ac9`. Surface publik dibatasi ke
+  deployment Vercel `dpl_9HVQW4Mafg26ZHf1QxVpXHP8jsZB`, memakai runtime code
+  source `7217bf2dd4b5ff54cd06c765501b5b9ba882127e`. Surface publik dibatasi ke
   Kiosk dan API simulator; gateway nyata, canary, dan promo nyata tidak
   diaktifkan. State session/order bersifat ephemeral dan bukan runtime outlet.
 - Setelah pelanggan memilih Dine In atau Takeaway, Kiosk meminta identifikasi
@@ -110,9 +113,14 @@ BUSINESS_READY=false`.
   di browser atau mengirim ulang credential pada quote/checkout. Pilihan guest
   dan fresh reset menghapus konteks server. Rekomendasi kini benar-benar dapat
   membuka modifier tanpa dead-end state machine.
-- Full regression 167/167, focused Kiosk 28/28, browser dua viewport,
+- Quote yang dilihat pelanggan kini terikat HMAC, versi katalog, total, dan
+  expiry. Jika Member, menu, atau total berubah sebelum QRIS dibuat, checkout
+  ditolak sebelum mutation lalu P05 menampilkan total lama → baru untuk
+  konfirmasi ulang. Production-canary quote dan checkout memakai policy
+  TRIAL99 yang sama.
+- Full regression 169/169, browser dua viewport,
   dependency/secret scan, production health/static smoke, serta browser UAT
-  sampai rekomendasi lulus.
+  sampai QRIS simulator lulus.
 - Source exact `410ad19b1641dc47e84c86dc0b8324082d01083b` menambahkan atomic
   bootstrap dan sudah tercakup dalam runtime public terbaru.
 

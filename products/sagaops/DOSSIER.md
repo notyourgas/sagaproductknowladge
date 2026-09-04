@@ -152,6 +152,21 @@ Kiosk 28/28, Axe serious/critical nol, dua viewport, overflow, reduced-motion,
 dependency/secret scan, candidate/stable smoke, dan remote browser journey
 lulus. Runtime tetap public simulator ephemeral; NFC dan Customer Platform
 external UAT belum dijalankan.
+Kiosk checkout quote guard exact runtime source
+`7217bf2dd4b5ff54cd06c765501b5b9ba882127e` aktif melalui deployment
+`dpl_9HVQW4Mafg26ZHf1QxVpXHP8jsZB`. Quote P05/P07 kini membawa fingerprint
+HMAC server, catalog version, total, dan expiry. Tepat sebelum mutation,
+runtime menghitung ulang cart, modifier, order type, Member/reward/promo, dan
+seluruh komponen total; mismatch atau expiry menolak checkout sebelum order
+dan payment dibuat. Browser kemudian memuat state server, kembali ke P05,
+menampilkan total lama → baru, dan meminta konfirmasi ulang. Skenario Member
+Rp11.700 berubah menjadi guest Rp13.000 menghasilkan nol order/payment intent.
+Production-direct canary quote dan checkout memakai policy TRIAL99 yang sama.
+Full 169/169, dua viewport portrait, Axe serious/critical nol, overflow nol,
+dependency/secret scan, preview/stable smoke, serta browser public journey
+lulus. Public runtime tetap simulator ephemeral; readiness formal 84/100,
+NFC fisik, Customer Platform external UAT, outlet activation, dan
+`BUSINESS_READY` tidak berubah.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

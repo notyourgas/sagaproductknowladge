@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk checkout quote guard sync
+
+- Informasi `CONFIRMED`: runtime source
+  `7217bf2dd4b5ff54cd06c765501b5b9ba882127e` aktif pada stable public Kiosk
+  melalui deployment `dpl_9HVQW4Mafg26ZHf1QxVpXHP8jsZB`.
+- Quote HMAC, catalog version, total, dan expiry kini diverifikasi ulang tepat
+  sebelum mutation; drift mengembalikan pelanggan ke review dan membuat nol
+  order/payment intent.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status. Production outlet, NFC, Customer
+  Platform UAT, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V31 Reward Passbook sync
 
 - Informasi `CONFIRMED`: Saga Member main
