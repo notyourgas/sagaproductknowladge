@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-175 - Reward Passbook public dummy menyediakan recovery lab
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Empty, error, loading, dan recovery Reward Passbook Saga Member |
+| Keputusan | Sediakan disclosure khusus public dummy untuk memperagakan kondisi `Aktif`, `Kosong`, dan `Gangguan`. Empty state harus menuju katalog; retry harus memberi loading segera, memulihkan reward aktif, dan membatalkan timer secara recoverable jika pengguna berpindah halaman. State hanya hidup dalam memori tab. |
+| Alasan | Passbook V31 sudah memperjelas kepemilikan reward, tetapi tim belum dapat menguji failure/recovery dari UI dan empty state belum memiliki jalan keluar. |
+| Alternatif | Mengubah fixture source setiap pengujian; menyimpan scenario di browser storage; menghubungkan backend sebelum otorisasi; membiarkan loading tertinggal setelah navigasi. |
+| Dampak | Main `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` dan deployment `dpl_5837edXEQ5NRDfTpuPcGv318f6aB` menambahkan recovery lab, live feedback, fokus kontekstual, target 44 px, serta stale-timer protection tanpa mengubah saldo 128 atau mengirim request backend. |
+| Pemberi keputusan | SAGADEVS Product/UX/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-174 - Reward milik pengguna disusun sebagai Reward Passbook
 
 | Field | Nilai |

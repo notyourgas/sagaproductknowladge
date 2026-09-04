@@ -66,6 +66,29 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V32 Reward Passbook Recovery Lab
+
+- Saga Member canonical main `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37`
+  (PR #48) aktif pada Vercel production deployment
+  `dpl_5837edXEQ5NRDfTpuPcGv318f6aB` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_8BiwmoLjfu3Xi4L6C5rEQm8Z5HS9` divalidasi.
+- Reward Passbook public dummy kini dapat memperagakan kondisi `Aktif`,
+  `Kosong`, dan `Gangguan`; empty state menuju katalog, sedangkan retry
+  melewati loading struktural lalu kembali ke reward aktif.
+- Disclosure dan pilihan state memakai native button, `aria-expanded`,
+  `aria-pressed`, live region, target minimal 44 px, serta motion
+  transform/opacity 160 ms. Retry yang terinterupsi navigasi dibatalkan dan
+  kembali ke gangguan yang dapat dicoba ulang tanpa stale update.
+- Full 175 test, PR CI `33893637829`, canonical-main CI `33893844012`, local
+  UAT lima viewport plus text resize 200%, serta remote production UAT
+  320/360/375/390/430 px lulus tanpa overflow, request backend,
+  page/console/request failure, atau temuan Axe serious/critical.
+- State hanya berada di memori tab, saldo tetap 128, dan cache offline menjadi
+  `v45-reward-recovery`. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth,
+  provider, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot
+  nyata tidak aktif. `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V31 Reward Passbook
 
 - Saga Member canonical main `1ce0242239cef53234bee58b73c2f99e97ea03c3`

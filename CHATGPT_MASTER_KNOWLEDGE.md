@@ -13,7 +13,22 @@ browser public journey sampai QRIS simulator lulus. Runtime tetap public
 simulator ephemeral; readiness 84/100, NFC fisik, Customer Platform external
 UAT, product production activation, dan `BUSINESS_READY` tidak berubah.
 
-Saga Member V31 Reward Passbook aktif pada stable public dummy URL
+Saga Member V32 Reward Passbook Recovery Lab aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48), Preview
+`dpl_8BiwmoLjfu3Xi4L6C5rEQm8Z5HS9`, dan production deployment
+`dpl_5837edXEQ5NRDfTpuPcGv318f6aB`. Disclosure public dummy memperagakan
+`Aktif`, `Kosong`, dan `Gangguan`; empty CTA menuju katalog, sedangkan retry
+melewati loading struktural dan memulihkan reward aktif. Timer retry dibatalkan
+saat navigasi dan state kembali recoverable tanpa stale update. Full 175 test,
+exact PR/main CI, local UAT lima viewport plus text resize 200%, dan remote
+production UAT lima viewport lulus tanpa overflow, request backend,
+page/console/request failure, atau temuan Axe serious/critical. State hanya
+memori-tab, saldo tetap 128, dan cache offline `v45-reward-recovery`; backend,
+provider, NFC nyata, transaksi, dan real data tetap OFF;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+Saga Member V31 Reward Passbook sebelumnya aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47), Preview
 `dpl_LoZuWuXrwKwi4GmKkSRaY7gUHzyp`, dan production deployment

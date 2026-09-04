@@ -15,7 +15,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `dc57cd60643f6b42c32844f027fb551bb2061ecb` |
+| Baseline sebelum pembaruan | `f856b951551e49472ac353d356b58073a91e95c5` |
+
+## Saga Member V32 Reward Passbook Recovery Lab
+
+- Source exact `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48) aktif
+  pada Vercel production deployment `dpl_5837edXEQ5NRDfTpuPcGv318f6aB`
+  melalui stable public URL setelah Preview
+  `dpl_8BiwmoLjfu3Xi4L6C5rEQm8Z5HS9` divalidasi.
+- Disclosure public dummy memperagakan active/empty/error/loading/recovery,
+  empty CTA ke katalog, serta pembatalan retry yang kembali recoverable saat
+  navigasi tanpa mengubah saldo atau memanggil backend.
+- Full 175 test, PR CI `33893637829`, main CI `33893844012`, local UAT lima
+  viewport plus text resize 200%, dan remote production UAT lima viewport
+  lulus tanpa overflow, request backend, page/console/request failure, atau
+  temuan Axe serious/critical.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V32
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk checkout quote guard
 

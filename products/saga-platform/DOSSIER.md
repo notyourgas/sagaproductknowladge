@@ -58,7 +58,31 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V31 Reward Passbook dari Saga Member main
+Frontend public dummy terkini adalah V32 Reward Passbook Recovery Lab dari
+Saga Member main `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48), Preview
+`dpl_8BiwmoLjfu3Xi4L6C5rEQm8Z5HS9`, dan production deployment
+`dpl_5837edXEQ5NRDfTpuPcGv318f6aB` pada stable URL
+`https://saga-member-platform.vercel.app`. Disclosure public dummy menyediakan
+kondisi `Aktif`, `Kosong`, dan `Gangguan` tanpa mengubah fixture atau data.
+Empty state memiliki jalan ke katalog; gangguan memakai alert dan retry yang
+memberi loading struktural lalu memulihkan reward aktif.
+
+State hanya berada di memori tab. Native button, `aria-expanded`,
+`aria-pressed`, live region, target 44 px, dan motion transform/opacity 160 ms
+menjaga aksesibilitas. Navigasi saat retry membatalkan timer dan mengembalikan
+state ke gangguan yang dapat dicoba ulang sehingga tidak ada stale update.
+Full 175 test, PR CI `33893637829`, canonical-main CI `33893844012`, local UAT
+lima viewport plus text resize 200%, serta remote production UAT
+320/360/375/390/430 px lulus tanpa overflow, request backend,
+page/console/request failure, atau temuan Axe serious/critical. Saldo tetap
+128 dan cache offline berubah ke `v45-reward-recovery`. Runtime tetap
+`PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data pelanggan, QRIS,
+Push, NFC, printer, dan pilot nyata tidak aktif. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
+V31 Reward Passbook sebelumnya berasal dari Saga Member main
 `1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47), Preview
 `dpl_LoZuWuXrwKwi4GmKkSRaY7gUHzyp`, dan production deployment
 `dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu` pada stable URL

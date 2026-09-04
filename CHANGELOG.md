@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V32 Reward Passbook Recovery Lab sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37`, PR #48, PR CI
+  `33893637829`, main CI `33893844012`, Preview
+  `dpl_8BiwmoLjfu3Xi4L6C5rEQm8Z5HS9`, dan production deployment
+  `dpl_5837edXEQ5NRDfTpuPcGv318f6aB` aktif pada stable URL.
+- Recovery Lab menambahkan active/empty/error/loading/recovery, empty CTA, dan
+  pembatalan retry saat navigasi tanpa mengubah saldo atau backend. Delivery
+  tetap public dummy dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk checkout quote guard sync
 
 - Informasi `CONFIRMED`: runtime source
