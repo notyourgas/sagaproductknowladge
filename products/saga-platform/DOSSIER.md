@@ -7,7 +7,7 @@ status Saga Platform.
 
 ## Konteks dan status bukti
 
-- Updated: 4 September 2026
+- Updated: 5 September 2026
 - Delivery: `PRODUCTION_DEPLOYED` untuk fondasi tertentu
 - Activation: `PRODUCTION_ACTIVATED` untuk fondasi yang dipakai;
   `NOT_PRODUCTION_ACTIVATED` untuk adapter/roadmap lain
@@ -58,8 +58,31 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V32 Reward Passbook Recovery Lab dari
-Saga Member main `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48), Preview
+Frontend public dummy terkini adalah V33 Notification Rhythm dari Saga Member
+main `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49), Preview
+`dpl_J27d9AiWjLGwJ4iaZF9AtyebH7Nq`, dan production deployment
+`dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3` pada stable URL
+`https://saga-member-platform.vercel.app`. Profil sekarang membuka route
+Notifikasi dengan tiga kategori kabar dan tiga opsi jam tenang. Preview Inbox
+merangkum pilihan aktif; kondisi semua-off menjelaskan bahwa Inbox tetap dapat
+dibuka manual dan menyediakan satu pemulihan default.
+
+Perubahan berlaku langsung hanya dalam memori tab dan reset saat reload;
+tidak ada storage write, permission prompt, API, atau provider call. Native
+checkbox switch/radio, live region, focus recovery, target 44 px, reduced
+motion, dan cache offline `v46-notification-rhythm` diverifikasi. Full 179
+test, PR CI `33898631243`, canonical-main CI `33898836214`, local UAT lima
+viewport plus text resize 200%, Preview artifact UAT melalui jalur terlindungi,
+serta remote production UAT 390 px lulus tanpa overflow, request backend,
+response gagal, atau temuan Axe serious/critical. Runtime tetap
+`PUBLIC_DUMMY_DEMO`; Push provider, backend, auth, transaksi, data pelanggan,
+QRIS, NFC, printer, dan pilot nyata tetap OFF. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
+V32 Reward Passbook Recovery Lab sebelumnya berasal dari Saga Member main
+`e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48), Preview
 `dpl_8BiwmoLjfu3Xi4L6C5rEQm8Z5HS9`, dan production deployment
 `dpl_5837edXEQ5NRDfTpuPcGv318f6aB` pada stable URL
 `https://saga-member-platform.vercel.app`. Disclosure public dummy menyediakan

@@ -1,5 +1,27 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga Member V33 Notification Rhythm sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `cda26b0aa5291cd00003f56d3377a9de4219b441`, PR #49, PR CI
+  `33898631243`, main CI `33898836214`, Preview
+  `dpl_J27d9AiWjLGwJ4iaZF9AtyebH7Nq`, dan production deployment
+  `dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3` aktif pada stable URL.
+- Perubahan: preferensi kategori kabar dan jam tenang, preview Inbox,
+  semua-off, serta pemulihan default yang memory-only dan tanpa backend.
+- Alasan: memberi kontrol in-app yang jelas tanpa menyiratkan Push/provider
+  atau persistence yang belum aktif.
+- Area terdampak: Saga Platform/Saga Member UI, aksesibilitas, offline shell,
+  release, dan decision log.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`;
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Blocker tidak berubah: backend/auth/provider/QRIS/Push/NFC/printer/real data,
+  pilot nyata, dan business acceptance belum diaktifkan atau dibuktikan.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status. Knowledge
+  commit menggunakan `main HEAD`.
+
 ## 2026-09-04 - Saga POS Kiosk Member degraded recovery sync
 
 - Informasi `CONFIRMED`: exact source

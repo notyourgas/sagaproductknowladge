@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-176 - Preferensi notifikasi public dummy bersifat memory-only
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Kendali kategori kabar dan jam tenang Saga Member |
+| Keputusan | Sediakan route Notifikasi dari Profil dengan native switch untuk Aktivitas akun, Reward & Quest, dan Cerita & promo; radio untuk jam tenang; preview Inbox; state semua-off; serta pemulihan default. Perubahan berlaku langsung hanya selama tab terbuka. Push provider dan permission prompt tetap OFF. |
+| Alasan | Member membutuhkan kendali yang jelas atas kabar in-app, tetapi persistence atau permission prompt akan memberi klaim palsu sebelum backend dan provider diotorisasi. |
+| Alternatif | Tombol simpan tanpa backend; localStorage persisten; mengaktifkan Push; menyembunyikan state semua-off; menjadikan setting bagian dari halaman Profil yang padat. |
+| Dampak | Main `cda26b0aa5291cd00003f56d3377a9de4219b441` dan deployment `dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3` menambahkan preferensi aksesibel, live preview, dan recovery tanpa request backend atau storage write. |
+| Pemberi keputusan | SAGADEVS Product/UX/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-175 - Reward Passbook public dummy menyediakan recovery lab
 
 | Field | Nilai |

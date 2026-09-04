@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga Member V33 Notification Rhythm deployed
+
+- Saga Member main `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3`.
+- Member dapat mencoba tiga kategori kabar dan jam tenang, melihat preview
+  Inbox, menjeda semua kabar, lalu memulihkan default tanpa storage atau
+  backend.
+- 179 test, exact PR/main CI, local UAT lima viewport plus text resize 200%,
+  Preview artifact UAT, dan remote production UAT 390 px lulus. Runtime tetap
+  dummy; Push/provider/backend/transaksi/real data tetap OFF dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga POS Kiosk Member degraded recovery deployed
 
 - `CONFIRMED`: Saga POS source
