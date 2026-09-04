@@ -8,6 +8,24 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V31 Reward Passbook deployed
+
+- Main `1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47) aktif pada
+  deployment `dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu` dan stable public URL setelah
+  Preview `dpl_LoZuWuXrwKwi4GmKkSRaY7gUHzyp` berstatus Ready.
+- Reward milik pengguna kini menjadi passbook dengan pass aktif dominan,
+  status/expiry/referensi demo, progres tiga tahap, CTA dialog, serta riwayat
+  terminal terpisah tanpa CTA menyesatkan.
+- Status unknown/expired gagal aman ke riwayat; dialog demo menjaga focus
+  trap/recovery, saldo tetap 128, dan tidak ada request backend.
+- 170/170 test, exact PR/main CI, local UAT lima viewport plus text resize
+  200%, accessibility, dan remote production UAT lima viewport lulus tanpa
+  overflow atau page/console error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V30 Reward Pocket deployed
 
 - Main `64da605fe707b44f6ebf781e7c17250f10a8026e` (PR #46) aktif pada

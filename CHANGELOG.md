@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V31 Reward Passbook sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `1ce0242239cef53234bee58b73c2f99e97ea03c3`, PR #47, PR CI
+  `33888107426`, main CI `33888310677`, Preview
+  `dpl_LoZuWuXrwKwi4GmKkSRaY7gUHzyp`, dan production deployment
+  `dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu` aktif pada stable URL.
+- Reward Passbook membedakan pass aktif dari riwayat terminal, menjaga dialog
+  aksesibel, dan gagal aman untuk status unknown/expired tanpa mengubah saldo
+  atau backend. Delivery tetap public dummy dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk Member session recovery sync
 
 - Informasi `CONFIRMED`: runtime source

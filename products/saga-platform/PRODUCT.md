@@ -66,6 +66,28 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V31 Reward Passbook
+
+- Saga Member canonical main `1ce0242239cef53234bee58b73c2f99e97ea03c3`
+  (PR #47) aktif pada Vercel production deployment
+  `dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_LoZuWuXrwKwi4GmKkSRaY7gUHzyp` divalidasi.
+- Area reward milik pengguna kini menjadi `Reward Passbook`: satu pass aktif
+  dominan dengan expiry, referensi demo tersamarkan, status, progres tiga
+  tahap, dan CTA dialog; riwayat terminal dipisahkan di bawahnya dengan alasan
+  penyelesaian serta tanpa CTA yang menyesatkan.
+- Status unknown atau expired gagal aman ke riwayat. Dialog native menandai
+  reward sebagai `DEMO / TIDAK BERLAKU UNTUK TRANSAKSI`, menjaga focus trap,
+  mengembalikan fokus ke pemicu, dan tidak mengubah saldo 128.
+- Full 170 test, PR CI `33888107426`, canonical-main CI `33888310677`, local
+  UAT lima viewport dan text resize 200%, serta remote production UAT
+  320/360/375/390/430 px lulus tanpa overflow, request backend, page/console
+  error, atau temuan Axe serious/critical.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+  pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V30 Reward Pocket
 
 - Saga Member canonical main `64da605fe707b44f6ebf781e7c17250f10a8026e`

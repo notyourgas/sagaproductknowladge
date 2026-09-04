@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-174 - Reward milik pengguna disusun sebagai Reward Passbook
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Hierarki reward aktif dan riwayat Saga Member |
+| Keputusan | Tampilkan reward milik pengguna sebagai `Reward Passbook`: satu pass aktif dominan dengan status, expiry, referensi demo tersamarkan, progres tiga tahap, dan CTA dialog; pisahkan reward terminal ke riwayat dengan alasan penyelesaian tanpa CTA. Status unknown atau expired harus gagal aman ke riwayat. |
+| Alasan | Daftar datar sebelumnya belum membedakan reward yang siap dipakai dari reward selesai sehingga keputusan berikutnya kurang jelas. |
+| Alternatif | Mempertahankan daftar datar; memberi CTA pada seluruh status; menyimpan pass ke backend sebelum integrasi nyata aktif. |
+| Dampak | Main `1ce0242239cef53234bee58b73c2f99e97ea03c3` dan deployment `dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu` menambahkan passbook, dialog native aksesibel, dan history terminal tanpa mengubah saldo 128 atau mengirim request backend. |
+| Pemberi keputusan | SAGADEVS Product/UX review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-173 - Penukaran Reward demo menghasilkan Reward Pocket
 
 | Field | Nilai |

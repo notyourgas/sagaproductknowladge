@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V31 Reward Passbook deployed
+
+- Saga Member main `1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu`.
+- Reward milik pengguna kini tampil sebagai passbook: pass aktif dengan
+  expiry/progres/dialog demo serta riwayat terminal terpisah dan fail-closed.
+- 170 test, exact PR/main CI, local mobile/text-resize UAT, dan remote
+  production UAT lima viewport lulus. Runtime tetap dummy tanpa backend,
+  transaksi, provider, atau data nyata; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk Member session recovery deployed
 
 - Saga POS runtime exact `172c56a1435196e2edf46d6348884b33094c1ac9`
