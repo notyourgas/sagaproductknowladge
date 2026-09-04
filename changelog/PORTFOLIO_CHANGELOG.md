@@ -11,6 +11,25 @@
   UAT lulus. Runtime tetap dummy; backend, provider, transaksi, data nyata,
   dan NFC tetap OFF; `BUSINESS_READY=false`.
 
+## 2026-09-04 - SagaOPS Kiosk category rail continuity local validated
+
+- Saga POS exact `a7611c647045feaf9340ed737cf29b3054acf80f` dipush. Rail tujuh
+  kategori foto kini dapat discroll mandiri di 720x1280, clear dari cart dock,
+  dan mempertahankan kategori aktif saat render/return dari modifier.
+- Focused 24/24 dan full 160/160 lulus; dependency audit nol vulnerability.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100
+  dan `BUSINESS_READY=false` tidak berubah.
+
+## 2026-09-04 - SagaOPS Kiosk Bagel dan photo categories local validated
+
+- Saga POS exact `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` dipush.
+  Kiosk kini memiliki 22 produk/7 kategori, termasuk empat Bagel dengan aset
+  generatif transparan, dan rail kategori photo-led tanpa ikon.
+- Bagel tidak mewarisi modifier minuman; spacing bawah QRIS diperbaiki.
+  Focused 31/31 dan full 159/159 lulus.
+- Harga Bagel masih `NEEDS CONFIRMATION`. Status tetap `LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100 dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V22 Jelajah Hero Typography deployed
 
 - Saga Member main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38)

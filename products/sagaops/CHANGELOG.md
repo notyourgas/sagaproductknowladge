@@ -8,6 +8,35 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Category rail continuity tervalidasi lokal
+
+- Source exact `a7611c647045feaf9340ed737cf29b3054acf80f` dipush ke branch Saga POS.
+- Baseline 720x1280 memiliki rail 1.411 px dengan overlap 570 px terhadap cart
+  dock. Rail kini punya viewport scroll mandiri dan clearance dock minimal 8 px.
+- Fokus keyboard/Enter, pemilihan kategori, render ulang, dan return dari
+  modifier menjaga kategori aktif terlihat tanpa menggeser halaman atau grid.
+- Focused Kiosk 24/24 dan full 160/160 lulus; Axe, overflow/fold/touch, visual,
+  secret scan, serta `npm audit` 32 production dependency/0 vulnerability lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100,
+  production, payment, canary, dan `BUSINESS_READY=false` tidak berubah.
+
+## 2026-09-04 — Bagel dan photo-led category rail tervalidasi lokal
+
+- Source exact `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` dipush ke branch Saga POS.
+- Katalog bertambah menjadi 22 produk/7 kategori dengan Creamcheese,
+  Strawberry, Ham & Fresh, dan Moka Bagel. Empat aset transparan dibuat dengan
+  built-in ImageGen dan dioptimalkan ke WebP 98-122 KB.
+- Rail kategori memakai foto produk pertama pada kartu lebih tinggi tanpa ikon;
+  copy menjadi `Pilih menu`. Bagel tidak menerima modifier minuman dan P08
+  memiliki jarak bawah yang lebih lega.
+- Implementasi dan harga server-owned bersifat `CONFIRMED`, tetapi harga Bagel
+  Rp18.000/Rp20.000/Rp25.000/Rp20.000 berstatus `NEEDS CONFIRMATION`.
+- Focused 31/31 dan full 159/159 lulus; Axe, overflow, touch/fold,
+  transparansi, dan secret scan lulus. Dependency tidak berubah; registry
+  audit timeout dan tidak diklaim pass.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100,
+  production, canary, settlement, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Sold-out race recovery Kiosk tervalidasi lokal
 
 - Source exact `4ce47803333a9d171ba816560fa325be2a0da12a` dipush ke branch Saga POS.
