@@ -58,7 +58,33 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V11 Saga Signal dari Saga Member main
+Frontend public dummy terkini adalah V12 Saga Compass dari Saga Member main
+`b9fc1bf0eec01badccce0c59fd930cd840891421` (PR #26) pada Vercel production
+deployment `dpl_83UwTsmrPTbWA9xYaAjDX3xV1tXT` dan stable URL
+`https://saga-member-platform.vercel.app`. Saga Compass memperbaiki continuity
+Jelajah: query, filter, scroll, dan fokus kembali utuh setelah member membuka
+Booking atau Quest. Quest memakai parent context untuk tombol Back dan active
+bottom nav, sementara CTA berikutnya dapat membuka Coffee langsung.
+
+Riset mengikuti WCAG 4.1.3 Status Messages, WAI-ARIA Button Pattern, MDN
+history-entry state, dan evaluasi Base UI Toggle Group 1.7.0. Filter kini native
+toggle buttons dengan `aria-pressed`; result count memakai polite atomic status.
+Zero-result mengganti daftar kosong dengan satu Saga Compass recovery action,
+dynamic copy aman, dan fokus tetap pada search selama mengetik. Base UI tidak
+diadopsi karena aplikasi framework-free tidak memerlukan React untuk empat
+button; Motion 13.2.0 yang sudah ada hanya menggerakkan transform/opacity selama
+120-180 ms dan reduced-motion tetap dihormati.
+
+113/113 test, PR CI `33820024498`, canonical-main CI `33820205830`, dependency
+audit nol vulnerability, Preview artifact verification, local UAT, dan public
+remote UAT pada 320/360/375/390/430 px lulus tanpa overflow, request eksternal,
+atau kegagalan network; Axe critical/serious nol. Runtime tetap
+`PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data pelanggan, QRIS,
+Push, NFC, printer, dan pilot nyata tidak aktif. Delivery adalah
+`SAGA_MEMBER_V12_SAGA_COMPASS_PRODUCTION_DEPLOYED`, sedangkan
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+V11 Saga Signal berasal dari Saga Member main
 `f46903ee4d9a9ee1f976b8fe6b9176dd7f3db8df` (PR #25) pada Vercel production
 deployment `dpl_7bnYiDDqTNhuki5TyDRM8yjzcvvZ` dan stable URL
 `https://saga-member-platform.vercel.app`. Saga Signal mengganti placeholder

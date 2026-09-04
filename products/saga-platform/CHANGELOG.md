@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V12 Saga Compass deployed
+
+- Main `b9fc1bf0eec01badccce0c59fd930cd840891421` (PR #26) aktif pada
+  deployment `dpl_83UwTsmrPTbWA9xYaAjDX3xV1tXT` dan stable public URL.
+- Query, kategori, scroll, fokus, parent Quest, dan active bottom nav Jelajah
+  kini dipertahankan melalui perjalanan Booking/Quest.
+- Filter memakai native pressed buttons; result count diumumkan secara polite.
+  Zero-result menyediakan satu recovery action Saga Compass dengan copy aman
+  dan focus behavior yang dapat diprediksi.
+- 113/113 test, PR CI `33820024498`, main CI `33820205830`, dependency audit,
+  Preview artifact check, dan public UAT lima viewport lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V12_SAGA_COMPASS_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V11 Saga Signal deployed
 
 - Main `f46903ee4d9a9ee1f976b8fe6b9176dd7f3db8df` (PR #25) aktif pada
