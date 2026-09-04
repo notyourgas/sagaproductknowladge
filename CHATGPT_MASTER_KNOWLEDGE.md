@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V12 Saga Compass aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`b9fc1bf0eec01badccce0c59fd930cd840891421` (PR #26) dan deployment
+`dpl_83UwTsmrPTbWA9xYaAjDX3xV1tXT`. Jelajah kini mempertahankan query,
+kategori, scroll, fokus, dan konteks nav ketika membuka Booking atau Quest.
+Filter memakai native buttons dengan `aria-pressed`; polite atomic status
+mengumumkan jumlah hasil. Saga Compass memberi satu recovery action ketika
+hasil kosong, tanpa focus steal saat mengetik. Base UI Toggle Group 1.7.0
+dievaluasi tetapi tidak dipakai; tidak ada dependency baru dan Motion 13.2.0
+tetap dibundle lokal. 113/113 test, PR CI `33820024498`, canonical CI
+`33820205830`, dependency audit, Preview verification, serta UAT lokal/publik
+320-430 px lulus. Status `SAGA_MEMBER_V12_SAGA_COMPASS_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 Saga POS current branch head `e0df398` sudah dipush dengan Availability History
 untuk Owner Admin. Maksimal 20 audit event server terbaru menampilkan item,
 before/after, actor, reason, timestamp, dan catalog version; filter Sold out dan

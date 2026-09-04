@@ -66,6 +66,30 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V12 Saga Compass
+
+- Saga Member canonical main `b9fc1bf0eec01badccce0c59fd930cd840891421`
+  (PR #26) aktif pada Vercel production deployment
+  `dpl_83UwTsmrPTbWA9xYaAjDX3xV1tXT` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Saga Compass mempertahankan query, kategori, scroll, dan fokus Jelajah ketika
+  member membuka Booking atau Quest. Quest juga mempertahankan konteks nav asal
+  dan menyediakan shortcut langsung ke Coffee.
+- Filter memakai native toggle button dalam labelled group. Jumlah hasil
+  diumumkan melalui polite live status; pencarian tanpa hasil menampilkan satu
+  recovery action yang mereset query dan kategori tanpa memindahkan fokus saat
+  member masih mengetik.
+- Tidak ada dependency baru. Base UI Toggle Group 1.7.0 dievaluasi tetapi tidak
+  diadopsi karena PWA framework-free ini cukup memakai native buttons; Motion
+  13.2.0 tetap menjadi satu-satunya runtime motion.
+- 113/113 test, PR CI `33820024498`, canonical-main CI `33820205830`, audit
+  dependency nol vulnerability, Preview artifact verification, serta UAT lokal
+  dan publik pada 320/360/375/390/430 px lulus tanpa overflow, request eksternal,
+  kegagalan network, atau Axe critical/serious.
+- Status `CONFIRMED / SAGA_MEMBER_V12_SAGA_COMPASS_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+  REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V11 Saga Signal
 
 - Saga Member canonical main `f46903ee4d9a9ee1f976b8fe6b9176dd7f3db8df`

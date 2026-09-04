@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V12 Saga Compass deployed
+
+- Saga Member main `b9fc1bf0eec01badccce0c59fd930cd840891421`
+  (PR #26) aktif pada `https://saga-member-platform.vercel.app` melalui
+  deployment `dpl_83UwTsmrPTbWA9xYaAjDX3xV1tXT`.
+- Jelajah kini mengingat search/filter/scroll/fokus saat membuka Booking atau
+  Quest, memakai native pressed filters, result status accessible, contextual
+  Quest navigation, dan satu recovery action saat hasil kosong.
+- 113/113 test, exact PR/main CI, dependency audit, Preview verification, serta
+  UAT lokal/publik lima viewport lulus. Runtime tetap dummy; backend, provider,
+  transaksi, dan data nyata OFF, `PRODUCTION_ACTIVATED=false`,
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Availability History local validated
 
 - Saga POS exact `e0df398` menambah audit history Owner untuk item,
