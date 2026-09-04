@@ -58,7 +58,33 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V13 Pass Spotlight dari Saga Member main
+Frontend public dummy terkini adalah V14 Reward Route dari Saga Member main
+`8221b86893b0a9bde620fb156ed3ee7f89b0a9ed` (PR #29), Preview deployment
+`dpl_GMQd4Je32A7BwD6gL33eEvx7XX4p`, dan Vercel production deployment
+`dpl_7tL3XVMo1NcFbEgEi3BhJzFdEgt4` pada stable URL
+`https://saga-member-platform.vercel.app`. `Saga Match` memberi satu scan
+tentang reward yang cocok, recoverable, atau terminal. Reward Store sekarang
+mendahului Quest dan tiap card menampilkan status, alasan, biaya, saldo dummy,
+serta next step bila aman.
+
+State kurang Points menampilkan selisih 22 Points dan CTA `Jelajahi Coffee`;
+syarat booking memakai next-step fixture ke Studio. Final stock dan expired
+tidak memakai disabled button. Adaptor Motion juga mengubah array keyframe
+Web Animations menjadi property-indexed keyframes sehingga filter, feedback,
+dan empty state tidak lagi memicu exception browser. Tidak ada dependency baru;
+Motion tetap 13.2.0 dan Base UI Collapsible hanya dievaluasi.
+
+121/121 test, PR CI `33828131461`, canonical-main CI `33828444039`, audit
+dependency nol vulnerability, Preview artifact verification melalui akses
+bypass resmi Vercel, local UAT, dan public UAT pada 320/360/375/390/430 px
+lulus. Axe serious/critical, overflow, undersized target, unexpected HTTP, dan
+page error semuanya nol. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth,
+provider, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata
+tidak aktif. Status tertinggi `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED`;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`. Belum ada survei
+pengguna nyata untuk hipotesis penurunan waktu memahami locked state.
+
+V13 Pass Spotlight sebelumnya berasal dari Saga Member main
 `18f86bc02cd2c69344f813a7b99e60484bcfc015` (PR #27 dan koreksi kontras
 PR #28) pada Vercel production deployment `dpl_76ASTFPsosi3nvvCMgfJWdm5rCGX`
 dan stable URL `https://saga-member-platform.vercel.app`. Halaman Pass kini

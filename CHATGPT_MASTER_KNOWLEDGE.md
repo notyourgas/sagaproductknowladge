@@ -1,5 +1,25 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V14 Reward Route aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`8221b86893b0a9bde620fb156ed3ee7f89b0a9ed` (PR #29) dan deployment
+`dpl_7tL3XVMo1NcFbEgEi3BhJzFdEgt4`. Halaman Reward menampilkan `Saga Match`
+dengan 1 reward cocok, 2 recoverable, dan 1 terminal pada fixture saat ini.
+Setiap card menjelaskan status, alasan, biaya, saldo dummy, serta next step:
+kurang 22 Points menuju Coffee dan syarat booking menuju Studio. Stok habis
+atau expired tidak memiliki disabled action. Reward Store mendahului Quest.
+
+Adaptor Motion menormalisasi Web Animations keyframe arrays sehingga filter,
+feedback, dan empty state tidak memicu page error. Motion tetap 13.2.0; tidak
+ada dependency atau provider baru. 121/121 test, PR CI `33828131461`, main CI
+`33828444039`, audit dependency nol vulnerability, Preview artifact
+verification, dan public UAT 320-430 px lulus dengan Axe serious/critical,
+overflow, HTTP failure, serta page error nol. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`. Belum ada
+survei pengguna nyata.
+
 Saga POS current branch head `f5c446b` sudah dipush dengan scheduled
 availability. Saat set sold-out, Owner memilih 30 menit, 60 menit, akhir hari
 22.00 WIB, atau manual. Server menghitung waktu absolut, menolak mode invalid
