@@ -3,15 +3,17 @@
 ## 2026-09-04 - Saga Member V17 Inbox Center sync
 
 - Informasi `CONFIRMED`: Saga Member main
-  `416adac5794d65e62b21a2b8d723c879fc4d0f64`, PR #32, PR CI
-  `33838157171`, main CI `33838557658`, Preview
-  `dpl_BiCCVMKNK6HkNqapmhxMzgfBrUYs`, dan production deployment
-  `dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW` aktif pada stable URL.
+  `537efb165da794fdebb881f74748fa1dcf60b8e9`, PR #32/#33, PR CI
+  `33838157171`/`33839130337`, main CI `33838557658`/`33839466275`, Preview
+  `dpl_4RpC7DeFjPGhf1gQZ1QZmdZYV1yn`, dan production deployment
+  `dpl_5b4D5EseVase3sVv3pbVx6sruzUd` aktif pada stable URL.
 - Before -> after: dua kartu Inbox pasif berubah menjadi notification center
   dengan unread hierarchy, filter, kelompok waktu, deep-link, read state,
   empty recovery, dan badge Profil.
-- 133/133 test, exact PR/main CI, local UAT lima viewport, Axe, touch target,
-  offline shell, serta Vercel inspection lulus. Public browser UAT V17 pending.
+- Remote UAT pertama menemukan overflow 4 px pada 320 px; hotfix PR #33
+  menutupnya dan menambah regression check. 133/133 test, dua exact PR/main CI,
+  local/public UAT lima viewport, Axe, touch target, offline shell, serta
+  Vercel inspection lulus.
 - Backend/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan
   `BUSINESS_READY=false`. Dokumen terdampak: Saga Platform
   product/dossier/changelog, portfolio, master knowledge, root changelog, dan

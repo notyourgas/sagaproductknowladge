@@ -68,21 +68,21 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 
 ### Saga Member V17 Inbox Center
 
-- Saga Member canonical main `416adac5794d65e62b21a2b8d723c879fc4d0f64`
-  (PR #32) aktif pada Vercel production deployment
-  `dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW` melalui stable public URL
+- Saga Member canonical main `537efb165da794fdebb881f74748fa1dcf60b8e9`
+  (PR #32/#33) aktif pada Vercel production deployment
+  `dpl_5b4D5EseVase3sVv3pbVx6sruzUd` melalui stable public URL
   `https://saga-member-platform.vercel.app` setelah Preview
-  `dpl_BiCCVMKNK6HkNqapmhxMzgfBrUYs` berstatus Ready.
+  `dpl_4RpC7DeFjPGhf1gQZ1QZmdZYV1yn` berstatus Ready.
 - Inbox berubah dari dua kartu pasif menjadi notification center mobile dengan
   jumlah belum dibaca, filter, kelompok waktu, kategori, deep-link, tandai
   dibaca per kabar, tandai semua, serta badge Profil yang ikut diperbarui.
 - Seluruh isi tetap dummy dan read state hanya berlaku pada sesi presentasi.
   Push, backend, provider, transaksi, serta data pelanggan nyata tetap OFF.
-- 133/133 test, PR CI `33838157171`, canonical-main CI `33838557658`, local UAT
-  320/360/375/390/430 px, Axe, target sentuh, offline shell, dan Vercel
-  inspection lulus. Public browser UAT deployment V17 belum dijalankan.
-- Status `CONFIRMED / SAGA_MEMBER_V17_LOCAL_VALIDATED /
-  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_UAT_PENDING / PUBLIC_DUMMY_DEMO_ACTIVE /
+- 133/133 test, PR CI `33838157171`/`33839130337`, canonical-main CI
+  `33838557658`/`33839466275`, local dan public UAT 320/360/375/390/430 px,
+  Axe, target sentuh, offline shell, serta Vercel inspection lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
   REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
   PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
 
