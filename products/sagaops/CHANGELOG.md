@@ -1,6 +1,18 @@
 # SagaOPS Changelog
 
 
+## 2026-09-05 - Kiosk available-recommendation recovery deployed
+
+- `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Exact deployed source: `0a87d18332ca60724e95ffc3a38afef017f0d785`; deployment `dpl_14qLbUiVRzEgFUYXM9r8oiwC4Eu2`.
+- Member resume removes sold-out/unknown favorites; temporary restock restores eligible recommendations without identifying again. Empty state keeps membership and offers the main menu instead of claiming no history.
+- Existing catalog snapshot is reused; no additional network request or runtime dependency.
+- 187/187 regression tests; two portrait Axe/overflow tests; authenticated candidate and anonymous stable smoke on three viewports. No checkout requests in release smoke.
+- Stable public demo: https://saga-pos-kiosk.vercel.app/kiosk . Rollback: `dpl_4SGbVJdjAJjGRTSnjZUE4kRqf7k4`.
+- QRIS remains simulator and state ephemeral; operator surfaces remain blocked. Real gateway, NFC hardware, Customer Platform, activation and historical 84/100 readiness are unchanged. The separate 32-sprint finalization remains incomplete.
+
+
+
 ## 2026-09-05 - Saga POS integrated finalization batch
 
 - `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED_BRANCH / NOT_DEPLOYED / BUSINESS_READY=false`.
