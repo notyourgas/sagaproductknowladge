@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V29 Quest Trail aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`8fadccbf96665701b2ecf1fb98a98a762ccdde65` (PR #45), Preview
+`dpl_64f8r2QuYCgRUh2k8Zm5m8yCMf7S`, dan production deployment
+`dpl_57MXHh67m11Pr6twjpyMRTGcDD4V`. Quest menampilkan journey tiga milestone,
+progressbar determinate, syarat kunjungan Kopi Saga Salak, simulasi lokal
+`1/3` sampai `3/3`, CTA Reward demo, dan reset. State tidak persisten serta
+tidak memanggil backend atau mengubah saldo. Presenter membatasi nama, target,
+dan count. Full 160 test, PR CI `33876021566`, main CI `33876311688`, local
+UAT lima viewport, dan remote production UAT 320/390/430 px lulus tanpa
+overflow, request backend, console error, atau temuan Axe serious/critical.
+Backend, provider, NFC nyata, transaksi, dan real data tetap OFF;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 SagaBook S422 DP custom sudah berada di canonical main
 `d01afc3a51f687c196601808648f2660afdec04a` melalui PR #103. Exact-main
 Feature 1.341/1.341, focused 18/18, Saga AI 18/18, MySQL 8.4, build,

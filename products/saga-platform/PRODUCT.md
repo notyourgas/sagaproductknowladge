@@ -66,6 +66,27 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V29 Quest Trail
+
+- Saga Member canonical main `8fadccbf96665701b2ecf1fb98a98a762ccdde65`
+  (PR #45) aktif pada Vercel production deployment
+  `dpl_57MXHh67m11Pr6twjpyMRTGcDD4V` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_64f8r2QuYCgRUh2k8Zm5m8yCMf7S` divalidasi.
+- Quest kini membentuk perjalanan tiga milestone dengan progres determinate,
+  syarat kunjungan Kopi Saga Salak, dan tindakan yang berubah dari simulasi
+  kunjungan ke Reward.
+- Simulasi hanya hidup dalam memori tab, dapat diulang ke baseline `1/3`,
+  tidak memanggil backend, dan tidak mengubah saldo, transaksi, atau Reward.
+- Presenter membatasi target maksimal 12, count ke rentang aman, dan nama 64
+  karakter; input rusak gagal aman.
+- Full 160 test, PR CI `33876021566`, canonical-main CI `33876311688`, local
+  UAT lima viewport, dan remote production UAT 320/390/430 px lulus tanpa
+  overflow, request backend, console error, atau temuan Axe serious/critical.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+  pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V28 Borderless Quick Emoji
 
 - Saga Member canonical main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477`

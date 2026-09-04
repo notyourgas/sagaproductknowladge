@@ -58,7 +58,30 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V28 Borderless Quick Emoji dari Saga
+Frontend public dummy terkini adalah V29 Quest Trail dari Saga Member main
+`8fadccbf96665701b2ecf1fb98a98a762ccdde65` (PR #45), Preview
+`dpl_64f8r2QuYCgRUh2k8Zm5m8yCMf7S`, dan production deployment
+`dpl_57MXHh67m11Pr6twjpyMRTGcDD4V` pada stable URL
+`https://saga-member-platform.vercel.app`. Halaman Quest mengganti detail
+sederhana menjadi journey tiga milestone, progressbar determinate, syarat
+kunjungan eksplisit, dan tindakan kontekstual. Pengguna demo dapat mencoba
+progres `1/3` sampai `3/3`, membuka CTA Reward demo, lalu mengulang simulasi.
+
+State hanya berada di memori tab dan tidak ditulis ke storage atau backend.
+Presenter menjepit target maksimal 12, count 0-target, nama 64 karakter, dan
+fallback aman untuk input rusak. Motion hanya transform/opacity serta mati
+pada reduced motion; status perubahan memakai live region sopan. Full 160
+test, PR CI `33876021566`, canonical-main CI `33876311688`, local UAT
+320/360/375/390/430 px, dan remote production UAT 320/390/430 px lulus tanpa
+overflow, request backend, console error, atau temuan Axe serious/critical.
+Cache offline berubah ke `v42-quest-trail`. Runtime tetap
+`PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data pelanggan,
+QRIS, Push, NFC, printer, dan pilot nyata tidak aktif. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
+V28 Borderless Quick Emoji sebelumnya berasal dari Saga
 Member main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44), Preview
 deployment `dpl_3Rz3pgJQPQK8Uk5ts1FmZWhJz2nk`, dan Vercel production deployment
 `dpl_HzgJW5FataWqGqL6qsJuyJio8AeX` pada stable URL

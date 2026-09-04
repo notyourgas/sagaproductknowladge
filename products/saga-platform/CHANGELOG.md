@@ -8,6 +8,24 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V29 Quest Trail deployed
+
+- Main `8fadccbf96665701b2ecf1fb98a98a762ccdde65` (PR #45) aktif pada
+  deployment `dpl_57MXHh67m11Pr6twjpyMRTGcDD4V` dan stable public URL setelah
+  Preview `dpl_64f8r2QuYCgRUh2k8Zm5m8yCMf7S` berstatus Ready.
+- Quest kini memiliki tiga milestone, progres determinate, syarat kunjungan,
+  simulasi lokal `1/3` sampai `3/3`, CTA Reward demo, dan reset ke baseline.
+- State tidak persisten dan tidak memanggil backend; presenter membatasi nama,
+  target, dan count. Live region, reduced motion, serta target sentuh minimal
+  44 px dipertahankan.
+- 160/160 test, exact PR/main CI, local UAT lima viewport, accessibility, dan
+  remote production UAT tiga viewport lulus tanpa overflow, request backend,
+  atau console error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V28 Borderless Quick Emoji deployed
 
 - Main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44) aktif pada
