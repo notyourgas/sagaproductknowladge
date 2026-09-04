@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V24 Icon-only Bottom Navigation aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40), Preview
+`dpl_BvFUNzbwrCcDbXwCh9Q7VmDnsR7x`, dan production deployment
+`dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad`. Menu nonaktif hanya menampilkan ikon,
+sedangkan label 12 px muncul di atas ikon aktif. Lima Feather icon terkunci
+22x22 px dengan baseline dan gap seragam, indikator aktif 42 px, target sentuh
+minimal 44 px, dan accessible name eksplisit. Full 152 test, PR CI
+`33863687837`, main CI `33864129398`, local UAT lima viewport, serta remote
+production UAT 320/390/430 px lulus tanpa overflow atau console error. Backend,
+provider, NFC nyata, transaksi, dan real data tetap OFF;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 SagaOPS Kiosk fixed touch canvas tervalidasi lokal pada source exact
 `5568c2f26da6668a60c0c2120740395b4a542ec6` yang sudah dipush. P03 tidak lagi
 memakai document scroll: canvas terkunci ke viewport fisik, sedangkan rail

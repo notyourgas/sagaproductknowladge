@@ -15,7 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ce05db913056e9a1474752cef20701a88873f726` |
+| Baseline sebelum pembaruan | `687ef9e1144f81ae1c886d5eeb482dde0c077c99` |
+
+## Saga Member V24 Icon-only Bottom Navigation
+
+- Source exact `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40) aktif
+  pada Vercel production deployment `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad`
+  melalui stable public URL.
+- Menu nonaktif icon-only; label muncul di atas menu aktif. Lima Feather icon
+  22x22 px memiliki baseline dan jarak seragam, indikator 42 px, dan target
+  sentuh minimal 44 px.
+- Full 152 test, PR/main CI exact commit, local UAT lima viewport, dan remote
+  production behavior UAT 320/390/430 px lulus tanpa overflow atau console
+  error.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V24
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk fixed touch canvas
 

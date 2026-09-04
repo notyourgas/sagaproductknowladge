@@ -58,7 +58,25 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V23 Member Card Preview & Apply dari Saga
+Frontend public dummy terkini adalah V24 Icon-only Bottom Navigation dari Saga
+Member main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40), Preview
+deployment `dpl_BvFUNzbwrCcDbXwCh9Q7VmDnsR7x`, dan Vercel production
+deployment `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad` pada stable URL
+`https://saga-member-platform.vercel.app`. Menu nonaktif hanya menampilkan
+ikon; label 12 px muncul di atas ikon aktif. Kelima Feather icon memiliki
+geometri 22x22 px, baseline yang sama, distribusi horizontal merata, indikator
+aktif 42 px, target sentuh minimal 44 px, dan accessible name eksplisit.
+
+Full 152 test, PR CI `33863687837`, canonical-main CI `33864129398`, local UAT
+320/360/375/390/430 px, dan remote production behavior UAT 320/390/430 px
+lulus tanpa overflow atau console error. Cache offline berubah ke
+`v37-icon-only-bottom-nav`. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth,
+provider, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata
+tidak aktif. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+Frontend public dummy V23 sebelumnya adalah Member Card Preview & Apply dari Saga
 Member main `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39), Preview
 deployment `dpl_2hcsR9LCdEi45WaQmfySuSmtuwRU`, dan Vercel production
 deployment `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp` pada stable URL

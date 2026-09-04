@@ -8,6 +8,22 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V24 Icon-only Bottom Navigation deployed
+
+- Main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40) aktif pada
+  deployment `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad` dan stable public URL setelah
+  Preview `dpl_BvFUNzbwrCcDbXwCh9Q7VmDnsR7x` berstatus Ready.
+- Menu nonaktif hanya menampilkan ikon; label muncul di atas menu aktif.
+  Feather icon diseragamkan 22x22 px, baseline/gap diratakan, dan indikator
+  aktif dipadatkan menjadi 42 px tanpa mengurangi target sentuh 44 px.
+- 152/152 test, exact PR/main CI, local UAT lima viewport, accessibility, dan
+  remote production behavior UAT tiga viewport lulus tanpa overflow atau
+  console error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V23 Member Card Preview & Apply deployed
 
 - Main `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39) aktif pada

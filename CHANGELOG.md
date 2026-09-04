@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V24 icon-only bottom navigation sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `f19bf3e2f0cd77d0a94af1021668aa342dc05feb`, PR #40, PR CI
+  `33863687837`, main CI `33864129398`, Preview
+  `dpl_BvFUNzbwrCcDbXwCh9Q7VmDnsR7x`, dan production deployment
+  `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad` aktif pada stable URL.
+- Bottom navigation menjadi icon-only untuk menu nonaktif; label hanya muncul
+  di atas ikon aktif. Delivery tetap public dummy dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk fixed touch canvas sync
 
 - Informasi `CONFIRMED`: source Saga POS exact
