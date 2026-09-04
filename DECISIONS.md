@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-179 - Promosi install Saga Member menunggu engagement dan capability
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Discoverability instalasi PWA di Beranda Saga Member public dummy |
+| Keputusan | Tampilkan satu install nudge inline di Beranda hanya setelah dua perpindahan route dan hanya bila prompt Chromium tersedia atau iPhone Safari memiliki jalur manual. Capability sebelum engagement tidak boleh merender ulang Beranda atau menggeser fokus. Dismiss berlaku pada memori tab, prompt one-use dan gesture-only, serta browser unsupported/iOS non-Safari tidak mendapat CTA palsu. |
+| Alasan | Pusat Instalasi V35 jujur tetapi hanya dapat ditemukan dari Profil; promosi pada arrival akan mengganggu tugas utama Beranda. |
+| Alternatif | Banner install pada page load; CTA selalu aktif; modal; persistence lintas sesi; library atau telemetry baru. |
+| Dampak | Main `9a5393d73bdc7b459d5522991da94a955b6f692d` dan deployment `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` menambahkan nudge post-engagement, iOS handoff, status aksesibel, cache v50, dan acceptance tanpa backend/provider baru. |
+| Pemberi keputusan | SAGADEVS Product/UX/UI/Frontend/QA/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-178 - Instalasi Saga Member memakai capability progresif yang jujur
 
 | Field | Nilai |

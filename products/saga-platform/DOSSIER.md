@@ -58,7 +58,27 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V35 Install Concierge dari Saga Member
+Frontend public dummy terkini adalah V36 Home Install Nudge dari Saga Member
+main `9a5393d73bdc7b459d5522991da94a955b6f692d` (PR #53), Preview
+`dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8`, dan production deployment
+`dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` pada stable URL
+`https://saga-member-platform.vercel.app`. Beranda menampilkan satu ajakan
+install inline setelah dua perpindahan route, hanya ketika prompt Chromium
+tersedia atau iPhone Safari dapat memakai panduan manual. Capability yang hadir
+sebelum engagement tidak merender ulang Beranda atau menggeser fokus. Dismiss
+bersifat memory-only dan prompt tetap one-use serta gesture-only.
+
+Full 190 test, PR CI `33916490835`, canonical-main CI `33916725768`, UAT lima
+viewport plus text resize 200%, arrival stability, rapid tap, iOS Safari,
+offline, Preview artifact hash, dan remote production UAT lulus dengan Axe
+serious/critical 0, overflow 0, cookie/storage write 0, serta backend request 0.
+Cache offline `v50-home-install-nudge`. Runtime tetap `PUBLIC_DUMMY_DEMO`;
+backend, auth, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan provider
+nyata tetap OFF. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+V35 Install Concierge sebelumnya berasal dari Saga Member
 main `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede` (PR #51 dan #52), Preview
 `dpl_69aXzYoqu6zC2yjt9ywJkYrLhTdV`, dan production deployment
 `dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog` pada stable URL

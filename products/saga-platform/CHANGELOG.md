@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V36 Home Install Nudge deployed
+
+- Main `9a5393d73bdc7b459d5522991da94a955b6f692d` (PR #53) aktif pada
+  deployment `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` setelah Preview artifact
+  `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8` diverifikasi dengan hash dan dipromosikan.
+- Beranda kini memberi ajakan install post-engagement yang capability-aware,
+  dismissible, tidak merender ulang arrival, dan tetap menyembunyikan CTA pada
+  browser unsupported atau iOS non-Safari.
+- 190/190 test, PR/main CI, lima viewport plus text resize 200%, rapid tap,
+  arrival/focus stability, iOS Safari, offline, Preview hash, dan remote UAT
+  lulus tanpa overflow, cookie/storage write, backend request, atau temuan Axe
+  serious/critical.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-05 — Saga Member V35 Install Concierge deployed
 
 - Main `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede` (PR #51 dan #52) aktif
