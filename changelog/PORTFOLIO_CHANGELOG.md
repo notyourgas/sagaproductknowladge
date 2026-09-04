@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS stale-version conflict guard local validated
+
+- Saga POS exact `54fda1a` mengharuskan expected catalog version untuk mutasi
+  availability; missing version ditolak 422 dan stale version ditolak 409 tanpa
+  mengubah state, version, atau audit.
+- Admin memuat ulang fakta server dan meminta konfirmasi eksplisit baru tanpa
+  auto-retry. Full suite 132/132, browser dua tab, Axe, no-overflow, audit
+  dependency nol, dan secret scan lulus tanpa dependency baru.
+- Status tetap local validated/not deployed; production/canary tidak berubah,
+  readiness 84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V12 Saga Compass deployed
 
 - Saga Member main `b9fc1bf0eec01badccce0c59fd930cd840891421`

@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Stale-version guard mencegah lost update availability
+
+- Source exact `54fda1a` dipush ke branch Saga POS.
+- Mutasi availability kini wajib membawa `expectedVersion`; versi hilang
+  ditolak 422 dan versi stale ditolak 409 sebelum state, version, atau audit
+  berubah.
+- Admin memuat fakta server terbaru, menampilkan alert konflik, dan meminta
+  konfirmasi ulang tanpa auto-retry.
+- Full suite 132/132, skenario browser dua tab, Axe nol serious/critical,
+  no-overflow, audit dependency nol, dan secret scan lulus tanpa dependency baru.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Availability History membuka jejak perubahan menu
 
 - Source exact `e0df398` dipush ke branch Saga POS.

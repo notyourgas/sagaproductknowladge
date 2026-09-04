@@ -15,7 +15,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7713ecc` |
+| Baseline sebelum pembaruan | `326e316` |
+
+## SagaOPS stale-version conflict guard
+
+- Source exact `54fda1a` dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard`.
+- Availability mutation wajib membawa `expectedVersion`; missing version 422
+  dan stale version 409. Konflik terjadi sebelum perubahan state, catalog
+  version, atau audit; UI refresh ke fakta server dan meminta konfirmasi baru
+  tanpa auto-retry.
+- Full suite 132/132, browser dua tab, Axe nol serious/critical, no-overflow,
+  fresh production dependency audit nol vulnerability, dan secret scan lulus.
+- Status `ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; production/canary/settlement tidak berubah,
+  readiness 84/100, dan `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaOPS stale-version guard
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V12 Saga Compass
 

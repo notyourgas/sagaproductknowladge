@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -184,7 +184,7 @@ exact `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` lulus 112/112 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
 PostgreSQL enam migration/RLS/cross-outlet deny.
 
-Source implementation `9a43a89`, current branch head `ca827e1`, mengganti
+Source implementation `9a43a89`, current branch head `54fda1a`, mengganti
 customer kiosk menjadi pengalaman portrait
 P01-P12 pada 1080×1920 dan 720×1280. Alur mencakup order type, katalog dua
 kolom, modifier per-line, cart/server quote, member optional, QRIS-only,
@@ -247,10 +247,21 @@ dengan limit 1-100, sementara Admin state membatasi 20 event. UI memakai filter
 Semua/Sold out/Dipulihkan, honest empty state, caption, scope header/row, dan
 elemen `time` machine-readable. Full suite 132/132, dua viewport, Axe nol
 serious/critical, static/type check, dan secret scan lulus. Dependency/lockfile
-tidak berubah; fresh npm audit retry terkena registry timeout, sedangkan exact
-sebelumnya `960a5e6` memiliki nol production vulnerability. History masih
+tidak berubah; fresh npm audit kini lulus dengan nol production vulnerability.
+History masih
 in-memory local lab; persistence, retention, multi-instance, dan outlet UAT
 belum terbukti.
+
+Stale-version conflict guard exact `54fda1a` menutup lost-update lokal ketika
+dua tab atau device mengubah availability dari catalog version yang sama.
+Mutasi wajib mengirim `expectedVersion`; server menolak versi hilang dengan 422
+dan versi stale dengan 409 sebelum state, version, atau audit berubah. UI tidak
+melakukan auto-retry: dialog stale ditutup, state server terbaru dimuat, alert
+persisten tampil, dan operator wajib mengonfirmasi ulang. Skenario browser dua
+tab membuktikan request stale menghasilkan nol mutasi, full suite 132/132,
+Axe nol serious/critical, no-overflow, audit dependency nol, dan secret scan
+lulus. Boundary ini masih runtime lokal bersama; transaksi/row lock database,
+cache convergence deployed, dan multi-device outlet UAT tetap belum terbukti.
 
 Readiness program mencapai M4 84/100 setelah W25 durable runtime lulus lokal.
 Founder menyetujui harga customer-final,

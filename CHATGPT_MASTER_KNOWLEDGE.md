@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS current branch head `54fda1a` sudah dipush dengan stale-version
+conflict guard untuk availability Admin. Mutasi wajib membawa catalog
+`expectedVersion`; versi hilang ditolak 422 dan versi stale ditolak 409 sebelum
+state, version, atau audit berubah. UI tidak melakukan auto-retry: dialog stale
+ditutup, fakta server terbaru dimuat, alert persisten tampil, dan operator harus
+mengonfirmasi ulang. Skenario browser dua tab, full suite 132/132, Axe nol
+serious/critical, no-overflow, fresh production audit nol vulnerability, dan
+secret scan lulus tanpa dependency baru. Status `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; runtime lokal bersama belum membuktikan DB row lock,
+deployed cache convergence, atau outlet multi-device UAT. Production, canary,
+settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 Saga Member V12 Saga Compass aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `b9fc1bf0eec01badccce0c59fd930cd840891421` (PR #26) dan deployment
