@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 2 September 2026 WIB
+Updated: 4 September 2026 WIB
 Evidence status: SagaBook production aktif pada exact `80c100c0c1aadf2a276fb8b0c424078718faa059`, immutable release `20260902162647-80c100c`, dengan rollback kompatibel `20260902154557-e0f2214`. Rilis kumulatif mobile memperbaiki warna tab sidebar, hanya menyisakan satu penanda halaman aktif, menjaga navigasi sesuai role, dan menutup overflow/layout pada Settings, Detail Booking, Promo, Jam Cabang, serta dialog Block Time. Full Feature 1.361/1.361 (15.216 assertion), build, audit desain/dependency, matrix visual multi-device, fresh encrypted backup, disposable restore, atomic activation, verifier independen, dan public/security smoke lulus. UAT manual Andreas dicatat sebagai keputusan operator, tetapi belum menggantikan kontrak authenticated UAT otomatis yang masih tertahan karena credential bridge lokal belum aktif; actual rollback drill juga menunggu gate itu. Status produk keseluruhan tetap `PRODUCTION_ACTIVATED / AUTHENTICATED_OPERATOR_UAT_PENDING / ROLLBACK_DRILL_PENDING / AUDIO_UAT_PENDING / PILOT_BLOCKED / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
@@ -15,6 +15,20 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Kandidat S422 menambahkan pilihan `DP custom` pada booking manual agar
+  operator dapat mencatat DP di bawah atau di atas 50% sebagai nominal Rupiah
+  exact. Total paket dan add-on tetap dihitung server; nominal kosong, bukan
+  bilangan bulat, kurang dari atau sama dengan nol, sama dengan total, dan
+  melebihi total ditolak. Verifikasi bukti, ledger cicilan append-only,
+  pelunasan, Closing, report, void, idempotency, tenant/cabang, permission,
+  serta optimistic lock tetap memakai engine DP yang sama. Exact source
+  `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` sudah dipush dan lulus full
+  Feature 1.341/1.341 (15.125 assertion), focused 11/11 (133 assertion),
+  typecheck, build, audit dependency nol, serta Playwright 6/6 pada viewport
+  320x568, 360x800, 390x844, 430x932, dan 1440x900. Status `CONFIRMED /
+  SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
 
 - Rilis mobile kumulatif exact `80c100c0c1aadf2a276fb8b0c424078718faa059`
   membuat sidebar admin hanya menandai satu route aktif, memperbaiki kontras

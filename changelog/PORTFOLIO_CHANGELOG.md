@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaBook custom DP local validated
+
+- SagaBook source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` sudah
+  dipush dan menambahkan nominal DP booking manual di bawah/di atas 50% tanpa
+  memutus ledger cicilan, closing, report, atau guard pembayaran existing.
+- Full Feature 1.341/1.341, focused 11/11, visual 6/6 pada mobile 320-430 px
+  dan desktop, build/typecheck, serta dependency audit nol lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak
+  berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V27 Home Next Step deployed
 
 - Saga Member main `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43)

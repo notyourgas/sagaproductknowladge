@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaBook S422 custom DP sync
+
+- Informasi `CONFIRMED`: source exact
+  `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` sudah dipush; booking manual
+  mendukung nominal DP custom di bawah/di atas 50% dengan total server
+  authoritative dan ledger cicilan existing.
+- Full Feature 1.341/1.341, focused 11/11, visual 6/6 lintas mobile/desktop,
+  build/typecheck, serta dependency audit nol lulus. Status tetap
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah.
+- Dokumen terdampak: SagaBook product/dossier/changelog/coverage, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V27 Home Next Step sync
 
 - Informasi `CONFIRMED`: Saga Member main

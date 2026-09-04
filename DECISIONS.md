@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-168 - Booking manual mendukung nominal DP custom
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Fleksibilitas DP booking manual SagaBook |
+| Keputusan | Pertahankan bayar lunas dan DP 50%, lalu tambahkan DP custom sebagai nominal Rupiah exact agar operator dapat mencatat kesepakatan customer di bawah atau di atas 50%. |
+| Alasan | Nominal DP operasional tidak selalu tepat 50%; pencatatan harus tetap berada dalam workflow dan ledger SagaBook. |
+| Alternatif | Memaksa DP 50%; memasukkan pembayaran sebagai catatan bebas; memakai persentase custom di browser. |
+| Dampak | Source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` menyediakan input nominal dengan validasi total server dan memakai engine installment existing tanpa migration baru. Production belum berubah. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagabook/PRODUCT.md`, `products/sagabook/DOSSIER.md`, `products/sagabook/CHANGELOG.md`, `products/sagabook/FEATURE_COVERAGE_LEDGER.md` |
+
 ## DEC-167 - Beranda Saga Member memberi satu langkah lanjutan kontekstual
 
 | Field | Nilai |

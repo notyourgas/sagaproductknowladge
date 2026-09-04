@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-09-04 - Kandidat DP custom booking manual tervalidasi lokal
+
+- Sebelum: operator hanya dapat memilih bayar lunas atau DP 50%, sehingga
+  kesepakatan DP yang lebih kecil atau lebih besar harus ditangani di luar
+  workflow pembayaran SagaBook.
+- Setelah: dialog booking manual menyediakan `DP custom` berbasis nominal
+  Rupiah exact, menampilkan sisa pembayaran, dan mengirim satu mutation.
+  Server menghitung total authoritative, menolak nominal invalid, serta
+  memakai ledger DP existing untuk bukti, verifikasi, pelunasan, Closing,
+  report/export, void, dan audit.
+- Exact source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` sudah dipush.
+  Full Feature 1.341/1.341 (15.125 assertion), focused 11/11 (133 assertion),
+  typecheck/build, audit Composer/npm/OSV nol, dan Playwright 6/6 pada empat
+  profil mobile 320-430 px serta desktop lulus. Tidak ada migration baru.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-02 - Perbaikan UI/UX mobile admin aktif di production
 
 - Sebelum: sidebar mobile dapat menandai tiga route sekaligus, warna tab aktif

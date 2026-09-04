@@ -13,9 +13,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
-| Branch aktif | `main` |
+| Branch aktif | `codex/s422-sagabook-custom-deposit-knowledge` menuju `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `dc7ee0832be2900fd699237e95e27e01f0622f32` |
+| Baseline sebelum pembaruan | `225cec5b6f2ddcefe419cc12698329d915a2cbb2` |
+
+## SagaBook S422 custom DP
+
+- Exact source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` sudah dipush.
+  Booking manual mendukung DP custom nominal exact di bawah/di atas 50% dengan
+  validasi total authoritative serta ledger pembayaran existing.
+- Full Feature 1.341/1.341 (15.125 assertion), focused 11/11 (133 assertion),
+  visual 6/6 pada 320x568, 360x800, 390x844, 430x932, dan 1440x900,
+  typecheck/build, serta audit Composer/npm/OSV nol lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaBook S422
+
+- `products/sagabook/PRODUCT.md`
+- `products/sagabook/DOSSIER.md`
+- `products/sagabook/FEATURE_COVERAGE_LEDGER.md`
+- `products/sagabook/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V27 Home Next Step
 

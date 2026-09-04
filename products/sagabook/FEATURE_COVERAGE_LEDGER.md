@@ -1,6 +1,21 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 2 September 2026 WIB
+Evidence cut-off: 4 September 2026 WIB
+
+Custom DP booking manual S422 exact source
+`1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. UI menyediakan `Bayar lunas`, `DP 50%`, dan `DP custom`;
+nominal custom dan sisa pembayaran tampil langsung, dengan input/tombol 44 px
+dan tanpa overflow pada 320x568, 360x800, 390x844, 430x932, serta 1440x900.
+Server menghitung total katalog authoritative dan menolak nominal invalid;
+engine installment mempertahankan proof verification, append-only correction,
+closing/report/export, void, tenant/cabang, permission, idempotency, optimistic
+lock, dan read-after-write. Full Feature 1.341/1.341 (15.125 assertion),
+focused 11/11 (133 assertion), visual 6/6, typecheck/build, dan tiga audit
+dependency nol lulus. Tidak ada migration atau deploy. Next gate: review/merge
+exact candidate, full exact-main gate, lalu guarded release bila diotorisasi;
+`BUSINESS_READY=false`.
 
 Mobile admin shell dan operational layout exact source
 `80c100c0c1aadf2a276fb8b0c424078718faa059` telah `CONFIRMED /

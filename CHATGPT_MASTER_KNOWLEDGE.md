@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaBook S422 tervalidasi lokal pada exact source
+`1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` yang sudah dipush. Booking
+manual kini dapat memakai DP custom sebagai nominal Rupiah exact di bawah atau
+di atas 50%; bayar lunas dan DP 50% tetap tersedia. Server menghitung total
+paket/add-on authoritative dan menolak nilai kosong, non-integer, <=0, atau
+>=total. Proof verification, ledger cicilan append-only, pelunasan, Closing,
+report/export, void, permission, tenant/cabang, idempotency, dan optimistic
+lock tetap berlaku. Full Feature 1.341/1.341, focused 11/11, visual 6/6 pada
+mobile 320-430 px dan desktop, build/typecheck, serta dependency audit nol
+lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 Saga Member V27 Home Next Step aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43), Preview

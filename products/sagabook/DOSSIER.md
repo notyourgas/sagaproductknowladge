@@ -7,6 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S422 exact source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c`
+  memperluas engine DP booking manual dengan plan `deposit_custom`. Operator
+  memilih nominal Rupiah exact, sedangkan server tetap menjadi sumber
+  kebenaran total dan menolak nilai kosong, non-integer, <=0, atau >= total.
+  Nilai disimpan pada ledger cicilan yang sama dengan DP 50%; alur bukti,
+  verifikasi, partially paid, pelunasan, Closing, report/export, pembatalan,
+  koreksi append-only, permission, tenant/cabang, idempotency, dan concurrency
+  tetap fail-closed. Tidak ada migration baru. Full Feature 1.341/1.341
+  (15.125 assertion), focused 11/11 (133 assertion), typecheck/build, audit
+  Composer/npm/OSV nol, dan visual 6/6 pada empat profil mobile 320-430 px
+  serta desktop lulus tanpa overflow dengan target kontrol minimal 44 px.
+  Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 - Rilis kumulatif mobile exact
   `80c100c0c1aadf2a276fb8b0c424078718faa059` aktif sebagai immutable release
   `20260902162647-80c100c`, dengan rollback kompatibel
