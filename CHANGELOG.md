@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga Member V36 Home Install Nudge sync
+
+- Informasi `CONFIRMED`: Saga Member main `9a5393d73bdc7b459d5522991da94a955b6f692d`, PR #53, PR CI `33916490835`, canonical-main CI `33916725768`, Preview `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8`, dan production deployment `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` aktif pada stable URL.
+- Perubahan: Beranda menawarkan install post-engagement yang capability-aware, dismissible, arrival/focus stable, one-use, serta tetap jujur pada iOS dan browser unsupported.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Validasi: 190 test, PR/main CI, lima viewport plus text resize 200%, rapid tap, offline, Preview hash, dan remote production UAT tanpa overflow, backend request, cookie/storage write, atau temuan Axe serious/critical.
+- Batas tidak berubah: backend/auth/provider/QRIS/Push/NFC/printer/real data, physical-device acceptance, dan pilot nyata belum diaktifkan atau dibuktikan.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions, portfolio, master knowledge, root changelog, dan sync status.
+
 
 ## 2026-09-05 - Kiosk available-recommendation recovery deployed
 

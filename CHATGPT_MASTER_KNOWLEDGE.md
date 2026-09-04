@@ -1,5 +1,7 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V36 Home Install Nudge aktif pada stable public dummy URL `https://saga-member-platform.vercel.app` dari canonical main `9a5393d73bdc7b459d5522991da94a955b6f692d` (PR #53), Preview `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8`, dan production `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb`. Beranda menawarkan instalasi inline hanya setelah dua perpindahan route dan capability Chromium nyata atau iPhone Safari manual. Capability awal tidak merender ulang Beranda atau menggeser fokus; dismiss memory-only, prompt one-use, dan unsupported/iOS non-Safari tidak mendapat CTA palsu. Full 190 test, PR CI `33916490835`, main CI `33916725768`, lima viewport plus text resize 200%, Preview hash, dan production UAT lulus dengan Axe serious/critical 0, overflow 0, cookie/storage write 0, serta backend request 0. Cache `v50-home-install-nudge`; seluruh backend/provider/real data tetap OFF, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+
 
 ## 2026-09-05 - Kiosk available-recommendation recovery deployed
 

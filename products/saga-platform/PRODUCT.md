@@ -66,6 +66,27 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V36 Home Install Nudge
+
+- Saga Member canonical main `9a5393d73bdc7b459d5522991da94a955b6f692d`
+  (PR #53) aktif pada production deployment
+  `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview artifact
+  `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8` divalidasi dengan hash dan dipromosikan.
+- Beranda memberi ajakan install inline hanya setelah dua perpindahan route dan
+  hanya saat browser menyediakan prompt nyata atau iPhone Safari memiliki jalur
+  manual. Arrival tidak dirender ulang, fokus tidak bergeser, dan dismiss hanya
+  berlaku pada memori tab.
+- Prompt tetap one-use dan gesture-only; installed, accepted, dismissed,
+  unsupported, serta iOS browser non-Safari tidak memperoleh CTA palsu.
+- 190 test, PR CI `33916490835`, canonical-main CI `33916725768`, lima
+  viewport plus text resize 200%, arrival stability, rapid tap, iOS Safari,
+  offline, Preview hash, dan production remote UAT lulus dengan Axe
+  serious/critical 0, overflow 0, cookie/storage write 0, dan backend request 0.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, data pelanggan,
+  QRIS, Push, NFC, printer, dan provider nyata tetap OFF.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V35 Install Concierge
 
 - Saga Member canonical main `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede`

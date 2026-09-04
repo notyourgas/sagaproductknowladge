@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga Member V36 Home Install Nudge
+
+- Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `9a5393d73bdc7b459d5522991da94a955b6f692d` (PR #53; PR CI `33916490835`; canonical-main CI `33916725768`).
+- Stable deployment: `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` pada `https://saga-member-platform.vercel.app`; Preview `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8` diverifikasi dengan hash sebelum promosi.
+- Perubahan: install nudge inline setelah engagement, capability-aware, dismiss memory-only, arrival/focus stable, dan panduan iPhone Safari.
+- Evidence: 190/190 test; lima viewport plus text resize 200%; rapid tap; offline; Preview hash; production UAT; Axe serious/critical 0; overflow, cookie/storage write, dan backend request 0.
+- Batas: install lifecycle synthetic/browser emulation; backend, auth, transaksi, real data, QRIS, Push, NFC, printer, provider nyata, physical install acceptance, dan pilot nyata tetap OFF.
+- File diperbarui: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `DECISIONS.md`, `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 
 ## 2026-09-05 - Kiosk available-recommendation recovery deployed
 

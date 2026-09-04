@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga Member V36 Home Install Nudge deployed
+
+- Saga Member main `9a5393d73bdc7b459d5522991da94a955b6f692d` (PR #53) aktif pada stable URL melalui deployment `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` dari Preview `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8` tervalidasi.
+- Beranda menawarkan instalasi hanya setelah engagement dan capability nyata, tanpa mengganggu arrival atau memberi CTA palsu; dismiss tetap memory-only dan iPhone Safari memperoleh panduan manual.
+- 190 test, PR/main CI, lima viewport plus text resize 200%, Preview hash, dan production remote UAT lulus. Runtime tetap dummy; backend/provider/transaksi/real data tetap OFF dan `BUSINESS_READY=false`.
+
 
 ## 2026-09-05 - Kiosk available-recommendation recovery deployed
 
