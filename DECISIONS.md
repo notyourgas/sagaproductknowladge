@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-164 - Akses cepat Saga Member memakai emoji semantik
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Bahasa visual kartu Akses cepat Beranda Saga Member |
+| Keputusan | Gunakan Coffee `☕`, Studio `📸`, Reward `🎁`, dan Quest `🎯` pada empat kartu Akses cepat. Prioritaskan Apple Color Emoji, sediakan fallback emoji sistem, dan pertahankan Feather untuk ikon sistem serta navbar. |
+| Alasan | Andreas meminta shortcut terasa lebih langsung, ekspresif, dan mudah dikenali tanpa menambah aset atau kompleksitas. |
+| Alternatif | Mempertahankan seluruh ikon Feather; memakai aset PNG emoji; memaksakan glyph Apple pada semua platform melalui aset eksternal. |
+| Dampak | Main `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc` dan deployment `dpl_9Y5i6hKUeFUQA44zYCWR6eiUc473` menerapkan empat emoji dekoratif, label aksesibel, kotak 42/38 px, dan target sentuh minimal 44 px. Bentuk glyph mengikuti OS pengguna; backend/provider/data nyata tetap OFF. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-163 - Bootstrap session Kiosk harus atomik
 
 | Field | Nilai |

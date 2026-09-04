@@ -58,25 +58,32 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V25 Compact Navigation + Floating Label
-dari Saga Member main `9a3661781158723b43da2bcb6e1960b4edad607a`
-(PR #41), Preview deployment `dpl_4ugw4zDsQ8pm5TUpPToPb2tqTucE`, dan Vercel
-production deployment `dpl_5295PJjEdxDbheZV6yZHareHWr2Q` pada stable URL
-`https://saga-member-platform.vercel.app`. Navbar kini hanya berupa satu baris
-ikon setinggi maksimum 60 px. Label menu aktif berada dalam badge terpisah
-setinggi 28 px di atas bar dan terpusat terhadap ikon aktif; tidak ada ruang
-label yang menambah tinggi navbar. Lima Feather icon memiliki geometri 22x22
-px, indikator aktif 42 px, tombol 48 px, baseline/gap seragam, dan accessible
-name eksplisit.
+Frontend public dummy terkini adalah V26 Quick Access Emoji dari Saga Member
+main `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc` (PR #42), Preview deployment
+`dpl_8NGNLMHBBCxhkifVJWmbPwQWHnCc`, dan Vercel production deployment
+`dpl_9Y5i6hKUeFUQA44zYCWR6eiUc473` pada stable URL
+`https://saga-member-platform.vercel.app`. Empat kartu Akses cepat Beranda kini
+memakai Coffee `☕`, Studio `📸`, Reward `🎁`, dan Quest `🎯`. Font stack
+memprioritaskan `Apple Color Emoji`, dengan fallback `Segoe UI Emoji` dan
+`Noto Color Emoji`; bentuk glyph akhir mengikuti sistem operasi pengguna.
 
-Full 152 test, PR CI `33865512758`, canonical-main CI `33866066664`, local UAT
-320/360/375/390/430 px, dan remote production behavior UAT 320/390/430 px
-lulus tanpa overflow atau console error. Cache offline berubah ke
-`v38-floating-nav-label`. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth,
-provider, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata
-tidak aktif. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+Emoji ditandai dekoratif (`aria-hidden`) sehingga label teks tetap menjadi
+accessible name. Kotak ikon berukuran 42 px dan 38 px pada breakpoint kompak,
+sementara target sentuh kartu tetap minimal 44 px. Ikon fungsi, sistem, dan
+bottom navigation tetap memakai Feather. Full 154 test, PR CI `33868554807`,
+canonical-main CI `33868783645`, local UAT 320/360/375/390/430 px, serta remote
+production UAT 320/390/430 px lulus tanpa overflow, console error, broken
+image, atau temuan Axe serious/critical. Cache offline berubah ke
+`v39-quick-access-emoji`. Tidak ada dependency, aset eksternal, atau request
+jaringan baru. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider,
+transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak
+aktif. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
 VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
 PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+V25 Compact Navigation + Floating Label sebelumnya berasal dari Saga Member
+main `9a3661781158723b43da2bcb6e1960b4edad607a` dan tetap menjadi fondasi bottom
+navigation pada V26.
 
 V24 Icon-only Bottom Navigation sebelumnya memakai source main
 `f19bf3e2f0cd77d0a94af1021668aa342dc05feb`; presentasi label di dalam tinggi

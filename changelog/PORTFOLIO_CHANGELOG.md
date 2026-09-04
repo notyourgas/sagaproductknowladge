@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V26 quick access emoji deployed
+
+- Saga Member main `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc` (PR #42)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_9Y5i6hKUeFUQA44zYCWR6eiUc473`.
+- Akses cepat Beranda kini memakai emoji Coffee, Studio, Reward, dan Quest
+  dengan Apple Color Emoji sebagai preferensi dan fallback emoji sistem.
+- 154 test, exact PR/main CI, local mobile UAT, dan remote production UAT
+  lulus. Runtime tetap dummy; backend, provider, transaksi, data nyata, dan
+  NFC tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk atomic bootstrap local validated
 
 - Saga POS exact `410ad19b1641dc47e84c86dc0b8324082d01083b` dipush.
