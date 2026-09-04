@@ -58,8 +58,23 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V36 Home Install Nudge dari Saga Member
-main `9a5393d73bdc7b459d5522991da94a955b6f692d` (PR #53), Preview
+Frontend public dummy terkini adalah V37 Bare Quick Emoji dari Saga Member main
+`cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842` (PR #54) dan production
+deployment `dpl_GXQ4dDBK7YxehDZ3WoRDu8KN3V5f` pada stable URL
+`https://saga-member-platform.vercel.app`. Empat emoji Akses cepat kini memakai
+ukuran glyph natural tanpa fixed width/height, padding, background, border,
+radius, atau shadow. Kartu induk tetap menjadi target sentuh yang aksesibel.
+
+Full 190 test, PR CI `33919122407`, canonical-main CI `33919344362`, UAT lokal
+lima viewport, dan remote production UAT lulus. Axe serious/critical, overflow,
+broken image, console error, dan backend request tetap nol. Runtime tetap
+`PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, data pelanggan, QRIS, Push, NFC,
+printer, dan provider nyata tetap OFF. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+V36 Home Install Nudge sebelumnya berasal dari Saga Member main
+`9a5393d73bdc7b459d5522991da94a955b6f692d` (PR #53), Preview
 `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8`, dan production deployment
 `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` pada stable URL
 `https://saga-member-platform.vercel.app`. Beranda menampilkan satu ajakan

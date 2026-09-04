@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga Member V37 bare quick emoji sync
+
+- Informasi `CONFIRMED`: main `cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842`, PR #54, PR CI `33919122407`, canonical-main CI `33919344362`, dan production deployment `dpl_GXQ4dDBK7YxehDZ3WoRDu8KN3V5f` aktif pada stable URL.
+- Perubahan: fixed alignment box pada elemen emoji Akses cepat dihapus; glyph memakai ukuran natural dan kartu induk tetap memegang target sentuh.
+- Validasi: 190/190 test, browser acceptance 320/360/375/390/430 px, remote UAT, Axe serious/critical 0, overflow 0, broken image 0, console error 0, dan backend request 0.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Batas tidak berubah: backend/auth/provider/QRIS/Push/NFC/printer/transaksi/data nyata tetap OFF.
+
 ## 2026-09-05 - Saga Member V36 Home Install Nudge sync
 
 - Informasi `CONFIRMED`: Saga Member main `9a5393d73bdc7b459d5522991da94a955b6f692d`, PR #53, PR CI `33916490835`, canonical-main CI `33916725768`, Preview `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8`, dan production deployment `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb` aktif pada stable URL.

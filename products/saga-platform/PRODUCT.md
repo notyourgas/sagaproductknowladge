@@ -66,6 +66,22 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V37 Bare Quick Emoji
+
+- Saga Member canonical main `cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842`
+  (PR #54) aktif pada production deployment
+  `dpl_GXQ4dDBK7YxehDZ3WoRDu8KN3V5f` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Empat emoji Akses cepat memakai ukuran glyph natural tanpa inner box:
+  tidak ada fixed width/height, padding, background, border, radius, atau
+  shadow pada elemen emoji. Area sentuh tetap dimiliki kartu induk.
+- 190/190 test, PR CI `33919122407`, canonical-main CI `33919344362`, dan
+  browser acceptance pada 320/360/375/390/430 px lulus; Axe serious/critical,
+  overflow, broken image, console error, dan backend request tetap nol.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, data pelanggan,
+  QRIS, Push, NFC, printer, dan provider nyata tetap OFF.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V36 Home Install Nudge
 
 - Saga Member canonical main `9a5393d73bdc7b459d5522991da94a955b6f692d`
