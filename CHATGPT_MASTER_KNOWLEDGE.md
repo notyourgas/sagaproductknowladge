@@ -1,5 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V13 Pass Spotlight aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`18f86bc02cd2c69344f813a7b99e60484bcfc015` (PR #27/#28) dan deployment
+`dpl_76ASTFPsosi3nvvCMgfJWdm5rCGX`. Halaman Pass memiliki satu aksi dominan
+yang membuka native modal dengan nama dummy, tier, kode bertopeng, serta label
+`Mode presentasi · simulasi` dan `SCAN LIVE OFF`. Fokus terkunci di modal,
+Escape/tombol eksplisit mengembalikannya ke pemicu, dan page hidden langsung
+menutup presentasi. Tidak ada QR, barcode, NFC, timer, provider, atau request
+network baru. Motion 13.2.0 tetap dibundle lokal; Base UI Dialog dievaluasi
+tetapi tidak dipakai. 116/116 test, PR CI `33823904568`/`33824453936`, main CI
+`33823999634`/`33824599731`, dependency audit, Preview verification, serta UAT
+lokal/publik 320-430 px lulus dengan Axe modal critical/serious nol. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 Saga POS current branch head `54fda1a` sudah dipush dengan stale-version
 conflict guard untuk availability Admin. Mutasi wajib membawa catalog
 `expectedVersion`; versi hilang ditolak 422 dan versi stale ditolak 409 sebelum

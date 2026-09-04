@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V13 Pass Spotlight sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `18f86bc02cd2c69344f813a7b99e60484bcfc015`, PR #27/#28, PR CI
+  `33823904568`/`33824453936`, main CI `33823999634`/`33824599731`, dan
+  production deployment `dpl_76ASTFPsosi3nvvCMgfJWdm5rCGX` aktif pada stable
+  URL.
+- Before -> after: panduan Pass generik berubah menjadi Pass Spotlight
+  privacy-first dengan data dummy bertopeng, native modal, focus containment,
+  close/Escape recovery, page-hidden reset, dan disclosure scan live OFF.
+- Remote UAT awal menemukan kontras label 430 px; PR #28 memperbaiki dan
+  memperluas Axe modal ke lima viewport. 116/116 test, dependency audit,
+  Preview artifact verification, serta UAT lokal/publik lulus.
+- Backend/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan
+  `BUSINESS_READY=false`. Dokumen terdampak: Saga Platform
+  product/dossier/changelog, portfolio, master knowledge, root changelog, dan
+  sync status.
+
 ## 2026-09-04 - SagaOPS stale-version conflict guard sync
 
 - Informasi `CONFIRMED`: source exact `54fda1a` dipush dengan required

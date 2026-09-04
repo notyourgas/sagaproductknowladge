@@ -15,7 +15,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `326e316` |
+| Baseline sebelum pembaruan | `63bad2b` |
+
+## Saga Member V13 Pass Spotlight
+
+- Source canonical main `18f86bc02cd2c69344f813a7b99e60484bcfc015`
+  dari PR #27 dan koreksi kontras PR #28.
+- Production deployment `dpl_76ASTFPsosi3nvvCMgfJWdm5rCGX` READY dan aktif
+  pada `https://saga-member-platform.vercel.app`.
+- Pass Spotlight menampilkan hanya data dummy bertopeng dalam native modal;
+  fokus, Escape/close recovery, page-hidden reset, reduced-motion, dan label
+  scan live OFF telah diverifikasi.
+- 116/116 test, PR CI `33823904568`/`33824453936`, main CI
+  `33823999634`/`33824599731`, dependency audit, Preview artifact check, dan
+  remote UAT lima viewport lulus; Axe modal critical/serious nol.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V13
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS stale-version conflict guard
 
