@@ -53,7 +53,7 @@ fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,
 modifier, cash/shift, QRIS simulator, Member/Reward fixture, availability,
 refund/remake, report/export, device health dan print spooler boundary.
 Kiosk portrait P01-P12 pada source exact
-`b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` kini memiliki hierarchy kategori
+`a7611c647045feaf9340ed737cf29b3054acf80f` kini memiliki hierarchy kategori
 dan modifier yang lebih jelas, cart dengan harga per item dan undo, jalur QRIS
 tunggal yang lebih singkat, QR stabil saat polling, bantuan kontekstual,
 recovery offline/outage/idle, serta focus dan status announcement yang lebih
@@ -62,7 +62,9 @@ aset ImageGen transparan; rail kategori memakai foto produk pertama pada kartu
 lebih tinggi tanpa ikon. Bagel tidak menerima modifier suhu/gula/add-on
 minuman, dan P08 menjaga jarak antarkontrol bawah minimal 10 px di 720x1280.
 Harga empat Bagel masih `NEEDS CONFIRMATION`: Rp18.000, Rp20.000, Rp25.000,
-dan Rp20.000. P04-P05 mengikuti density reference ImageGen V2 secara code-native:
+dan Rp20.000. Pada 720x1280, rail kategori menjadi scroll viewport mandiri yang
+clear terhadap cart dock; fokus keyboard, render ulang, serta return dari
+modifier mempertahankan kategori aktif tanpa memindahkan halaman/grid. P04-P05 mengikuti density reference ImageGen V2 secara code-native:
 pilihan suhu/manis dan dua add-on berharga dihitung server, total menyatu dengan
 CTA, edit/hapus quantity dipisah, order type dapat diubah dengan requote, dan
 jarak antarkelompok action dibatasi. P01 memakai aset ilustratif Es Kopi Saga
@@ -83,7 +85,8 @@ dari server. Draft tidak menyimpan harga/member/payment, terikat session, dan
 dibersihkan pada idle/new session/checkout/expiry. Sold-out race recovery
 menyegarkan katalog ketika quote menolak item stale, melepas hanya item habis,
 mempertahankan item valid, dan mengarahkan pelanggan memilih pengganti bila cart
-kosong. Recovery membuat 0 payment intent. Focused Kiosk terkini 31/31 lulus.
+kosong. Recovery membuat 0 payment intent. Focused Kiosk terkini 24/24 dan full
+suite 160/160 lulus.
 Perubahan ini masih
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; validasi fisik portrait,
 owner visual/add-on sign-off, dan production release gate tetap diperlukan.

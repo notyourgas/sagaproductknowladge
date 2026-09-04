@@ -8,6 +8,18 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Category rail continuity tervalidasi lokal
+
+- Source exact `a7611c647045feaf9340ed737cf29b3054acf80f` dipush ke branch Saga POS.
+- Baseline 720x1280 memiliki rail 1.411 px dengan overlap 570 px terhadap cart
+  dock. Rail kini punya viewport scroll mandiri dan clearance dock minimal 8 px.
+- Fokus keyboard/Enter, pemilihan kategori, render ulang, dan return dari
+  modifier menjaga kategori aktif terlihat tanpa menggeser halaman atau grid.
+- Focused Kiosk 24/24 dan full 160/160 lulus; Axe, overflow/fold/touch, visual,
+  secret scan, serta `npm audit` 32 production dependency/0 vulnerability lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100,
+  production, payment, canary, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Bagel dan photo-led category rail tervalidasi lokal
 
 - Source exact `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` dipush ke branch Saga POS.

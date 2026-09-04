@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk category rail continuity tervalidasi lokal pada source exact
+`a7611c647045feaf9340ed737cf29b3054acf80f` yang sudah dipush. Setelah tujuh
+kategori memakai kartu foto tinggi, baseline rail 720x1280 mencapai 1.411 px
+dan overlap 570 px terhadap cart dock. Rail kini menjadi scroll viewport
+mandiri dengan clearance minimal 8 px; fokus keyboard/Enter, pemilihan,
+rerender, serta return dari modifier menjaga kategori aktif terlihat tanpa
+menggeser halaman atau product grid. Focused Kiosk 24/24, full 160/160, Axe,
+overflow/fold/touch, visual review, secret scan, dan `npm audit` 32 production
+dependency/0 vulnerability lulus. Status `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100 dan `BUSINESS_READY=false` tidak
+berubah.
+
 SagaOPS Kiosk Bagel dan photo-led category rail tervalidasi lokal pada source
 exact `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` yang sudah dipush. Katalog
 kini berisi 22 produk/7 kategori, termasuk Creamcheese, Strawberry, Ham &

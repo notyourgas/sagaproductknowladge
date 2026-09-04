@@ -108,14 +108,18 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS current branch head
-  `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` sudah dipush. Katalog Kiosk kini
+  `a7611c647045feaf9340ed737cf29b3054acf80f` sudah dipush. Rail kategori
+  photo-led pada 720x1280 sekarang memiliki scroll viewport mandiri yang
+  berhenti sebelum cart dock. Fokus keyboard, pemilihan kategori, render ulang,
+  dan return dari modifier mempertahankan kategori aktif terlihat tanpa
+  mengubah `window.scrollY` atau posisi grid produk. Katalog Kiosk kini
   memiliki kategori Bagel dengan Creamcheese, Strawberry, Ham & Fresh, dan
   Moka Bagel. Rail kategori memakai foto produk pertama pada tujuh kartu yang
   lebih tinggi tanpa ikon; label katalog menjadi `Pilih menu`. Bagel tidak
   mewarisi suhu, gula, atau add-on minuman dan input modifier tersebut ditolak
   server. Area bawah P08 memiliki jarak antarkontrol minimal 10 px pada
   720x1280. Harga Bagel Rp18.000/Rp20.000/Rp25.000/Rp20.000 masih
-  `NEEDS CONFIRMATION` sebelum activation. Full 159/159 dan focused 31/31
+  `NEEDS CONFIRMATION` sebelum activation. Full 160/160 dan focused Kiosk 24/24
   lulus; Axe, overflow/fold/touch, transparansi aset, dan secret diff scan
   lulus tanpa perubahan dependency. Registry `npm audit` timeout setelah 60
   detik sehingga tidak diklaim pass. Jika menu menjadi

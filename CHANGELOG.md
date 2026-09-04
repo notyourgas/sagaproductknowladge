@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk category rail continuity sync
+
+- Informasi `CONFIRMED`: source Saga POS exact
+  `a7611c647045feaf9340ed737cf29b3054acf80f` sudah dipush.
+- Rail tujuh kategori foto pada 720x1280 kini clear dari cart dock dan menjaga
+  posisi halaman/grid serta kategori aktif pada rerender dan modifier return.
+- Focused 24/24, full 160/160, dan dependency audit nol vulnerability lulus.
+  Delivery tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan
+  readiness 84/100 tidak berubah.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk Bagel dan category photo sync
 
 - Informasi `CONFIRMED`: source Saga POS exact

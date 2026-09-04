@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk category rail continuity local validated
+
+- Saga POS exact `a7611c647045feaf9340ed737cf29b3054acf80f` dipush. Rail tujuh
+  kategori foto kini dapat discroll mandiri di 720x1280, clear dari cart dock,
+  dan mempertahankan kategori aktif saat render/return dari modifier.
+- Focused 24/24 dan full 160/160 lulus; dependency audit nol vulnerability.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100
+  dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - SagaOPS Kiosk Bagel dan photo categories local validated
 
 - Saga POS exact `b2b4cbd11fba54d0e0032f6a193f6df6b4307f70` dipush.
