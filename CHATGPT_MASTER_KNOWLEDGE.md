@@ -1,5 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V27 Home Next Step aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43), Preview
+`dpl_Cqwyq7CYcTuZWHXvhEuK6158BNiT`, dan production deployment
+`dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz`. Satu kartu `Lanjutkan dari sini` setelah
+Akses cepat menampilkan langkah paling relevan; fixture demo memilih quest
+Coffee aktif, rute Coffee -> Quest -> Reward, progres `1 dari 3`, dan CTA
+`Lanjutkan quest`. Presenter memprioritaskan quest, booking terkonfirmasi,
+reward eligible, lalu Jelajah; nama dibatasi 64 karakter dan biaya reward
+non-finite ditolak. Progressbar aksesibel, target CTA 44 px, label `Data contoh`,
+dan reduced-motion dipertahankan. Full 157 test, PR CI `33870609104`, main CI
+`33870891068`, local UAT lima viewport, serta remote production UAT
+320/390/430 px lulus tanpa overflow, console error, atau temuan Axe
+serious/critical. Backend, provider, NFC nyata, transaksi, dan real data tetap
+OFF; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 SagaOPS Kiosk contextual header aktif pada stable URL
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact source
 `16ae7940be06dee154df5ef8ecd0ff04118d4b78` dan deployment

@@ -58,12 +58,26 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V26 Quick Access Emoji dari Saga Member
-main `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc` (PR #42), Preview deployment
-`dpl_8NGNLMHBBCxhkifVJWmbPwQWHnCc`, dan Vercel production deployment
-`dpl_9Y5i6hKUeFUQA44zYCWR6eiUc473` pada stable URL
-`https://saga-member-platform.vercel.app`. Empat kartu Akses cepat Beranda kini
-memakai Coffee `☕`, Studio `📸`, Reward `🎁`, dan Quest `🎯`. Font stack
+Frontend public dummy terkini adalah V27 Home Next Step dari Saga Member main
+`71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43), Preview deployment
+`dpl_Cqwyq7CYcTuZWHXvhEuK6158BNiT`, dan Vercel production deployment
+`dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz` pada stable URL
+`https://saga-member-platform.vercel.app`. Setelah Akses cepat, Beranda kini
+menampilkan satu kartu keputusan `Lanjutkan dari sini`. Fixture demo memilih
+quest Coffee aktif, memperlihatkan rute Coffee -> Quest -> Reward, status
+`1 dari 3 selesai`, dan CTA langsung ke detail quest.
+
+Presenter deterministik memprioritaskan quest aktif, booking terkonfirmasi,
+reward eligible, lalu fallback Jelajah. Nama quest/tenant/reward dibatasi 64
+karakter dan biaya reward non-finite ditolak. Progressbar menyediakan
+`aria-valuenow` serta `aria-valuetext`; CTA minimal 44 px dan label `Data
+contoh` mencegah klaim data nyata. Full 157 test, PR CI `33870609104`,
+canonical-main CI `33870891068`, local UAT lima viewport, serta remote
+production UAT 320/390/430 px lulus tanpa overflow, console error, atau temuan
+Axe serious/critical. Cache offline berubah ke `v40-home-next-step`.
+
+V26 Quick Access Emoji tetap menjadi fondasi Akses cepat. Empat kartu memakai
+Coffee `☕`, Studio `📸`, Reward `🎁`, dan Quest `🎯`; font stack
 memprioritaskan `Apple Color Emoji`, dengan fallback `Segoe UI Emoji` dan
 `Noto Color Emoji`; bentuk glyph akhir mengikuti sistem operasi pengguna.
 

@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V27 Home Next Step sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69`, PR #43, PR CI
+  `33870609104`, main CI `33870891068`, Preview
+  `dpl_Cqwyq7CYcTuZWHXvhEuK6158BNiT`, dan production deployment
+  `dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz` aktif pada stable URL.
+- Beranda memberi satu langkah lanjutan kontekstual dengan progres aksesibel,
+  CTA 44 px, sanitasi input, dan label data contoh. Delivery tetap public
+  dummy dan `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk contextual header deployment sync
 
 - Informasi `CONFIRMED`: exact source
