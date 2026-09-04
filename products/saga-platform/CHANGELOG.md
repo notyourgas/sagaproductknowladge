@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V34 Pusat Data Demo deployed
+
+- Main `bb8307c1ee359a2c340ccbf3b4f9af388798b35d` (PR #50) aktif pada
+  deployment `dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy` dan stable public URL setelah
+  Preview `dpl_D9njs8ouSsEggD1mxHiWeF3aqZ31` berstatus Ready.
+- Profil kini memiliki disclosure dummy, inventaris data, penjelasan lokasi
+  penyimpanan, export JSON aman di browser, dan reset perubahan demo.
+- Export mengecualikan identitas/session/provider/credential; reset memakai
+  native alert dialog dan hanya membersihkan state lokal tanpa request backend.
+- 184/184 test, exact PR/main CI, UAT lokal lima viewport plus text resize
+  200%, Preview artifact UAT, accessibility, dan remote production UAT 390 px
+  lulus tanpa overflow atau response gagal.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-05 — Saga Member V33 Notification Rhythm deployed
 
 - Main `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49) aktif pada

@@ -66,6 +66,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V34 Pusat Data Demo
+
+- Saga Member canonical main `bb8307c1ee359a2c340ccbf3b4f9af388798b35d`
+  (PR #50) aktif pada Vercel production deployment
+  `dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_D9njs8ouSsEggD1mxHiWeF3aqZ31` divalidasi.
+- Profil memiliki Pusat Data Demo yang menjelaskan cakupan data contoh,
+  inventaris per kategori, lokasi penyimpanan, export JSON browser-only tanpa
+  identitas/credential, dan reset perubahan demo yang terkonfirmasi.
+- 184 test, PR CI `33904736090`, canonical-main CI `33904955721`, UAT lokal
+  lima viewport plus text resize 200%, Preview artifact UAT, dan remote
+  production UAT 390 px lulus tanpa overflow, request backend, response gagal,
+  atau temuan Axe serious/critical. Cache offline `v47-demo-data-center`.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, data pelanggan,
+  QRIS, Push, NFC, printer, dan provider nyata tetap OFF.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V33 Notification Rhythm
 
 - Saga Member canonical main `cda26b0aa5291cd00003f56d3377a9de4219b441`

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-177 - Privasi public dummy memakai pusat data browser-only
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Transparansi, export, dan reset data Saga Member public dummy |
+| Keputusan | Sediakan Pusat Data Demo dari Profil yang menginventaris data contoh dan lokasi penyimpanannya. Export harus dibuat di browser tanpa identitas, session, provider, credential, atau token. Reset harus meminta konfirmasi, memilih Batal sebagai fokus awal, dan hanya membersihkan perubahan demo lokal. |
+| Alasan | Panel privasi lama menyiratkan proses backend tetapi tidak memberi pengguna gambaran konkret tentang data demo atau kendali yang aman. |
+| Alternatif | Mempertahankan panel details; meniru permintaan ekspor server; menghapus state tanpa konfirmasi; memasukkan identitas demo ke file export. |
+| Dampak | Main `bb8307c1ee359a2c340ccbf3b4f9af388798b35d` dan deployment `dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy` menambahkan route, export, dialog reset, focus recovery, dan cache offline tanpa request backend atau penghapusan akun. |
+| Pemberi keputusan | SAGADEVS Product/UX/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-176 - Preferensi notifikasi public dummy bersifat memory-only
 
 | Field | Nilai |

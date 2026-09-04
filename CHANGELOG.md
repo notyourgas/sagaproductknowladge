@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga Member V34 Pusat Data Demo sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `bb8307c1ee359a2c340ccbf3b4f9af388798b35d`, PR #50, PR CI
+  `33904736090`, main CI `33904955721`, Preview
+  `dpl_D9njs8ouSsEggD1mxHiWeF3aqZ31`, dan production deployment
+  `dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy` aktif pada stable URL.
+- Perubahan: Pusat Data Demo dengan disclosure, inventaris, penjelasan storage,
+  export JSON aman di browser, dan reset perubahan lokal setelah konfirmasi.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`;
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Blocker tidak berubah: backend/auth/provider/QRIS/Push/NFC/printer/real data,
+  pilot nyata, dan business acceptance belum diaktifkan atau dibuktikan.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status. Knowledge
+  commit menggunakan `main HEAD`.
+
 ## 2026-09-05 - Saga POS Kiosk P10 success time dan receipt scroll sync
 
 - Informasi `CONFIRMED`: exact source

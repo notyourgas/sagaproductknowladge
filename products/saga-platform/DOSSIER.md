@@ -58,7 +58,29 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V33 Notification Rhythm dari Saga Member
+Frontend public dummy terkini adalah V34 Pusat Data Demo dari Saga Member main
+`bb8307c1ee359a2c340ccbf3b4f9af388798b35d` (PR #50), Preview
+`dpl_D9njs8ouSsEggD1mxHiWeF3aqZ31`, dan production deployment
+`dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy` pada stable URL
+`https://saga-member-platform.vercel.app`. Profil sekarang membuka route
+Privasi & data dengan disclosure dummy, inventaris data contoh, penjelasan
+fixture/browser/server, export JSON browser-only yang mengecualikan identitas,
+session, provider, credential, dan token, serta reset perubahan demo.
+
+Reset memakai native alert dialog dengan fokus awal pada Batal, Escape dan
+focus return. Perubahan kartu serta checklist Studio dibersihkan secara lokal;
+tidak ada akun atau data server yang dihapus. Full 184 test, PR CI
+`33904736090`, canonical-main CI `33904955721`, UAT lokal lima viewport plus
+text resize 200%, Preview artifact UAT, dan remote production UAT 390 px lulus
+tanpa overflow, request backend, response gagal, atau temuan Axe
+serious/critical. Cache offline `v47-demo-data-center`. Runtime tetap
+`PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, data pelanggan, QRIS, Push, NFC,
+printer, dan provider nyata tetap OFF. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
+V33 Notification Rhythm sebelumnya berasal dari Saga Member
 main `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49), Preview
 `dpl_J27d9AiWjLGwJ4iaZF9AtyebH7Nq`, dan production deployment
 `dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3` pada stable URL
