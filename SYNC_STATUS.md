@@ -15,7 +15,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `396b81925775b92491303780598e436b0db1e682` |
+| Baseline sebelum pembaruan | `dc7ee0832be2900fd699237e95e27e01f0622f32` |
+
+## Saga Member V27 Home Next Step
+
+- Source exact `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43) aktif
+  pada Vercel production deployment `dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz`
+  melalui stable public URL setelah Preview
+  `dpl_Cqwyq7CYcTuZWHXvhEuK6158BNiT` divalidasi.
+- Kartu `Lanjutkan dari sini` memilih satu langkah kontekstual; demo menunjukkan
+  quest Coffee, progres `1 dari 3`, dan CTA ke detail quest. Progressbar,
+  label data contoh, target 44 px, dan input defensif telah diverifikasi.
+- Full 157 test, PR CI `33870609104`, main CI `33870891068`, local UAT lima
+  viewport, dan remote production UAT 320/390/430 px lulus tanpa overflow,
+  console error, atau temuan Axe serious/critical.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V27
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk contextual header Vercel deployment
 

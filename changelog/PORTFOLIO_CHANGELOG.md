@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V27 Home Next Step deployed
+
+- Saga Member main `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz`.
+- Kartu `Lanjutkan dari sini` memberi satu aksi lanjutan kontekstual setelah
+  Akses cepat; demo saat ini menunjukkan progres quest Coffee dan CTA langsung
+  ke detail quest.
+- 157 test, exact PR/main CI, local mobile UAT, dan remote production UAT
+  lulus. Runtime tetap dummy; backend, provider, transaksi, data nyata, dan
+  NFC tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk contextual header deployed ke Vercel
 
 - Exact Saga POS `16ae7940be06dee154df5ef8ecd0ff04118d4b78` aktif pada stable Kiosk

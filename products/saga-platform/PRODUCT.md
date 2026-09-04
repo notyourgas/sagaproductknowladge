@@ -66,6 +66,28 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V27 Home Next Step
+
+- Saga Member canonical main `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69`
+  (PR #43) aktif pada Vercel production deployment
+  `dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_Cqwyq7CYcTuZWHXvhEuK6158BNiT` divalidasi.
+- Beranda memiliki satu kartu keputusan `Lanjutkan dari sini` setelah Akses
+  cepat. Data demo memprioritaskan quest aktif dan menampilkan rute
+  Coffee -> Quest -> Reward, progres `1 dari 3`, serta CTA `Lanjutkan quest`.
+- Presenter deterministik memilih quest aktif, booking terkonfirmasi, reward
+  yang dapat ditukar, lalu fallback Jelajah. Nama konten dibatasi 64 karakter
+  dan biaya reward non-finite ditolak agar UI tidak menampilkan nilai rusak.
+- Progres memiliki semantic progressbar, `aria-valuetext`, label `Data contoh`,
+  target sentuh CTA 44 px, dan reduced-motion tetap dihormati.
+- Full 157 test, PR CI `33870609104`, canonical-main CI `33870891068`, local
+  UAT lima viewport, serta remote production UAT 320/390/430 px lulus tanpa
+  overflow, console error, atau temuan Axe serious/critical.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+  pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V26 Quick Access Emoji
 
 - Saga Member canonical main `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc`

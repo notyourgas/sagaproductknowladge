@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-167 - Beranda Saga Member memberi satu langkah lanjutan kontekstual
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Hierarchy tindakan utama Beranda Saga Member |
+| Keputusan | Setelah Akses cepat, tampilkan satu kartu `Lanjutkan dari sini` yang memilih langkah paling relevan dengan urutan quest aktif, booking terkonfirmasi, reward eligible, lalu Jelajah. |
+| Alasan | Beranda perlu membantu pengguna mengambil keputusan berikutnya tanpa menambah deretan kartu yang bersaing atau menyembunyikan konteks progres. |
+| Alternatif | Tidak memberi rekomendasi; menampilkan seluruh rekomendasi sekaligus; mengubah urutan berdasarkan data nyata sebelum backend aktif. |
+| Dampak | Main `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` dan deployment `dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz` menerapkan satu kartu keputusan dengan progressbar aksesibel, CTA 44 px, input defensif, dan label data contoh. Runtime tetap dummy; backend/provider/data nyata tetap OFF. |
+| Pemberi keputusan | SAGADEVS Product/UX review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-166 - Perubahan Kiosk tervalidasi langsung dideploy ke public demo
 
 | Field | Nilai |

@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V27 Home Next Step deployed
+
+- Main `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43) aktif pada
+  deployment `dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz` dan stable public URL setelah
+  Preview `dpl_Cqwyq7CYcTuZWHXvhEuK6158BNiT` berstatus Ready.
+- Beranda memiliki satu kartu keputusan setelah Akses cepat: rute demo
+  Coffee -> Quest -> Reward, progres `1 dari 3`, dan CTA `Lanjutkan quest`.
+- Presenter memiliki urutan quest, booking, reward, lalu Jelajah; input nama
+  dibatasi dan biaya reward non-finite ditolak. Progres aksesibel, label data
+  contoh, CTA 44 px, dan reduced-motion dipertahankan.
+- 157/157 test, exact PR/main CI, local UAT lima viewport, accessibility, dan
+  remote production UAT tiga viewport lulus tanpa overflow atau console error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V26 Quick Access Emoji deployed
 
 - Main `ddfeebc9f9629d7e2bd8c862e1bc505bcd09d8fc` (PR #42) aktif pada
