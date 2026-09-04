@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V33 Notification Rhythm deployed
+
+- Main `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49) aktif pada
+  deployment `dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3` dan stable public URL setelah
+  Preview `dpl_J27d9AiWjLGwJ4iaZF9AtyebH7Nq` berstatus Ready.
+- Profil kini memiliki preferensi kategori kabar, jam tenang, preview Inbox,
+  state semua-off, dan pemulihan default yang langsung berlaku di memori tab.
+- Tidak ada storage write, request backend, permission prompt, atau provider
+  call; Push provider, QRIS, NFC, printer, auth, dan real data tetap OFF.
+- 179/179 test, exact PR/main CI, local UAT lima viewport plus text resize
+  200%, Preview artifact UAT, accessibility, dan remote production UAT 390 px
+  lulus tanpa overflow atau response gagal.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V32 Reward Passbook Recovery Lab deployed
 
 - Main `e1c54a6a6ea4bc2a3766af516fc17911e3ff9c37` (PR #48) aktif pada

@@ -33,10 +33,38 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 | Field | Nilai |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-04 WIB |
+| Waktu pembaruan terakhir | 2026-09-05 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `f856b951551e49472ac353d356b58073a91e95c5` |
+| Baseline sebelum pembaruan | `e2010590ff1c3edcdd81a759ae85989528ce222a` |
+
+## Saga Member V33 Notification Rhythm
+
+- Source exact `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49) aktif
+  pada Vercel production deployment `dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3`
+  melalui stable public URL setelah Preview
+  `dpl_J27d9AiWjLGwJ4iaZF9AtyebH7Nq` divalidasi.
+- Profil menyediakan kategori kabar, jam tenang, preview Inbox, state
+  semua-off, dan pemulihan default. Preferensi hanya hidup selama tab terbuka;
+  tidak ada storage, backend, permission prompt, atau provider call.
+- Full 179 test, PR CI `33898631243`, main CI `33898836214`, local UAT lima
+  viewport plus text resize 200%, Preview artifact UAT, dan remote production
+  UAT 390 px lulus tanpa overflow, request backend, response gagal, atau
+  temuan Axe serious/critical.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V33
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V32 Reward Passbook Recovery Lab
 

@@ -1,5 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V33 Notification Rhythm aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49), Preview
+`dpl_J27d9AiWjLGwJ4iaZF9AtyebH7Nq`, dan production deployment
+`dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3`. Profil menyediakan route Notifikasi untuk
+Aktivitas akun, Reward & Quest, Cerita & promo, dan jam tenang. Preview Inbox,
+state semua-off, dan pemulihan default membuat efek pilihan jelas. Preferensi
+hanya hidup di memori tab dan kembali ke fixture saat reload; tidak ada
+storage write, permission prompt, API, atau provider call. Full 179 test, PR
+CI `33898631243`, main CI `33898836214`, local UAT lima viewport plus text
+resize 200%, Preview artifact UAT, serta remote production UAT 390 px lulus
+tanpa overflow, request backend, response gagal, atau temuan Axe
+serious/critical. Cache offline `v46-notification-rhythm`; Push provider,
+backend, auth, transaksi, real data, QRIS, NFC, printer, dan pilot nyata tetap
+OFF. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 Saga POS Kiosk Member degraded recovery aktif pada stable URL
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime
 `4f2986c8b51d14312cce81d4b0b7ecc820a1988a` dan deployment

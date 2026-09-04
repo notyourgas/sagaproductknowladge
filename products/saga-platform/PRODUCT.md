@@ -1,6 +1,6 @@
 # Saga Platform Product Knowledge
 
-Updated: 4 September 2026
+Updated: 5 September 2026
 Evidence status: production foundation + migration roadmap
 
 ## Tujuan dokumen
@@ -65,6 +65,28 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Product account dan commerce flows sudah digunakan untuk SagaBook/SagaView.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
+
+### Saga Member V33 Notification Rhythm
+
+- Saga Member canonical main `cda26b0aa5291cd00003f56d3377a9de4219b441`
+  (PR #49) aktif pada Vercel production deployment
+  `dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_J27d9AiWjLGwJ4iaZF9AtyebH7Nq` divalidasi.
+- Profil memiliki route Notifikasi untuk mengatur Aktivitas akun, Reward &
+  Quest, Cerita & promo, serta tiga opsi jam tenang. Preview Inbox, state
+  semua-off, dan pemulihan default memberi hasil langsung yang dapat dipahami.
+- Preferensi hanya hidup di memori tab dan kembali ke fixture awal saat reload.
+  Native checkbox switch/radio, live region, focus recovery, target minimal
+  44 px, reduced motion, dan cache offline `v46-notification-rhythm`
+  diverifikasi.
+- 179 test, PR CI `33898631243`, canonical-main CI `33898836214`, local UAT
+  lima viewport plus text resize 200%, Preview artifact UAT, serta remote
+  production UAT 390 px lulus tanpa overflow, request backend, response gagal,
+  atau temuan Axe serious/critical.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; Push provider, backend, auth, transaksi,
+  data pelanggan, QRIS, NFC, printer, dan pilot nyata tetap OFF.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
 
 ### Saga Member V32 Reward Passbook Recovery Lab
 
