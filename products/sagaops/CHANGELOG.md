@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — QRIS expiry handoff Kiosk aktif di Vercel
+
+- Exact source `1c383ef861b706728a0d712a02c0a9bda7596d17` aktif pada stable Kiosk
+  melalui deployment `dpl_CF5mvsKEMD7QsYhNhTDxLPvy65aN`.
+- Saat P08 mencapai `00:00`, QR ditutup agar tidak dipindai ulang dan client
+  meminta tepat satu status authoritative. Hanya server/provider yang dapat
+  menetapkan terminal `EXPIRED` dan mengarahkan ke P09.
+- Browser 720×1280/1080×1920, Axe, overflow, focused Kiosk 32/32, full 164/164,
+  dependency audit, secret scan, candidate/stable smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE / QRIS_SIMULATOR_ONLY /
+  PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; rollback
+  deployment `dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`, readiness tetap 84/100.
+
 ## 2026-09-04 — Contextual browse header Kiosk aktif di Vercel
 
 - Exact source `16ae7940be06dee154df5ef8ecd0ff04118d4b78` dibangun sebagai prebuilt

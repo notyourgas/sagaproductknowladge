@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk QRIS expiry handoff deployed
+
+- Exact `1c383ef861b706728a0d712a02c0a9bda7596d17` aktif pada stable Kiosk
+  melalui deployment `dpl_CF5mvsKEMD7QsYhNhTDxLPvy65aN`.
+- Countdown P08 kini menutup QR dan meminta satu status server sebelum P09;
+  client tidak memalsukan status expired atau success.
+- Focused 32/32, full 164/164, dua viewport, Axe, overflow, security, dan public
+  smoke lulus. Runtime tetap simulator ephemeral; readiness 84/100 dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaBook custom DP local validated
 
 - SagaBook source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` sudah

@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-169 - QRIS yang melewati countdown harus masuk handoff server
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Anti-double-payment dan recovery P08-P09 |
+| Keputusan | Saat countdown QRIS mencapai `00:00`, tutup visual QR dan lakukan tepat satu status check authoritative; client tidak boleh menetapkan status payment terminal. |
+| Alasan | Polling production berhenti setelah enam percobaan. Tanpa handoff, QR tetap terlihat dan label mengaku mengecek meski tidak ada request baru, sehingga pelanggan berisiko scan ulang. |
+| Alternatif | Membiarkan QR terlihat; mengulang polling tanpa batas; menetapkan expired dari jam client; hanya menyediakan tombol manual. |
+| Dampak | Exact source `1c383ef861b706728a0d712a02c0a9bda7596d17` aktif melalui deployment `dpl_CF5mvsKEMD7QsYhNhTDxLPvy65aN`; P08 memblokir rescan dan P09 tetap bergantung pada server truth. |
+| Pemberi keputusan | SAGADEVS Product/UX/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / KIOSK_PUBLIC_DEMO_PRODUCTION_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md` |
+
 ## DEC-168 - Booking manual mendukung nominal DP custom
 
 | Field | Nilai |

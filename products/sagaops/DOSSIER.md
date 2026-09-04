@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `KIOSK_PUBLIC_DEMO_ACTIVE / SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -92,9 +92,9 @@ menyegarkan katalog ketika quote menolak item stale, melepas hanya item habis,
 mempertahankan item valid, dan mengarahkan pelanggan memilih pengganti bila cart
 kosong. Recovery membuat 0 payment intent. Focused Kiosk terkini 24/24 dan full
 suite 160/160 lulus.
-Kiosk exact runtime `16ae7940be06dee154df5ef8ecd0ff04118d4b78`
+Kiosk exact runtime `1c383ef861b706728a0d712a02c0a9bda7596d17`
 aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui Vercel deployment
-`dpl_7mhsBWhDk2fM8Kv34YWRWePdSLRc`. Public surface hanya Kiosk dan API QRIS
+`dpl_CF5mvsKEMD7QsYhNhTDxLPvy65aN`. Public surface hanya Kiosk dan API QRIS
 simulator; tidak mengaktifkan gateway, promo, canary, atau transaksi nyata.
 Full 162/162, focused deployment 6/6, production smoke, dan browser UAT order
 sampai success lulus. State session/order serverless masih ephemeral dan ada
@@ -118,6 +118,13 @@ yang menyerupai kontrol. Focused Kiosk 31/31 dan full 163/163 lulus termasuk
 Axe serious/critical nol, dependency audit, dan secret scan. Exact artifact
 dipromosikan ke stable Vercel; public health/static smoke dan browser journey
 welcome→order type→katalog membuktikan header kontekstual aktif.
+P08 kini melakukan expiry handoff ketika countdown mencapai `00:00`: QR
+ditutup overlay agar tidak dipindai ulang dan tepat satu status check dikirim ke
+server. Client tidak pernah menetapkan `EXPIRED`; response provider/server tetap
+menjadi authority untuk P09 atau success. Browser clock pada 720×1280 dan
+1080×1920 membuktikan overlay tanpa overflow, Axe serious/critical nol, satu
+request, serta tidak ada false success. Focused Kiosk 32/32 dan full 164/164
+lulus. Exact artifact dipromosikan setelah candidate health/static/asset smoke.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

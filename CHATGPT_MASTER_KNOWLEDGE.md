@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk QRIS expiry handoff aktif pada stable URL
+`https://saga-pos-kiosk.vercel.app/kiosk` dari exact source
+`1c383ef861b706728a0d712a02c0a9bda7596d17` dan deployment
+`dpl_CF5mvsKEMD7QsYhNhTDxLPvy65aN`. Saat countdown P08 mencapai `00:00`,
+QR ditutup untuk mencegah scan ulang dan tepat satu status check dikirim ke
+server; client tidak menetapkan terminal payment. Browser dua viewport, Axe,
+overflow, focused 32/32, full 164/164, dependency/secret scan, serta
+candidate/stable smoke lulus. Runtime tetap public simulator ephemeral,
+readiness 84/100, dan `BUSINESS_READY=false`.
+
 SagaBook S422 tervalidasi lokal pada exact source
 `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` yang sudah dipush. Booking
 manual kini dapat memakai DP custom sebagai nominal Rupiah exact di bawah atau

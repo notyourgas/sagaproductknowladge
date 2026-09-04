@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk QRIS expiry handoff sync
+
+- Informasi `CONFIRMED`: exact source
+  `1c383ef861b706728a0d712a02c0a9bda7596d17` aktif pada stable Kiosk melalui
+  deployment `dpl_CF5mvsKEMD7QsYhNhTDxLPvy65aN`.
+- P08 menutup QR pada `00:00` dan meminta satu status authoritative tanpa
+  membuat client sebagai payment authority. Semua local dan public gates lulus.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, decisions, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaBook S422 custom DP sync
 
 - Informasi `CONFIRMED`: source exact

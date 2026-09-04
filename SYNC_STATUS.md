@@ -13,9 +13,32 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Field | Nilai |
 |---|---|
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
-| Branch aktif | `codex/s422-sagabook-custom-deposit-knowledge` menuju `main` |
+| Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `225cec5b6f2ddcefe419cc12698329d915a2cbb2` |
+| Baseline sebelum pembaruan | `9b4b3b2a2fc337f8cf0d14fb5122c07cf52eab67` |
+
+## SagaOPS Kiosk QRIS expiry handoff
+
+- Exact source `1c383ef861b706728a0d712a02c0a9bda7596d17` aktif pada stable URL melalui
+  deployment `dpl_CF5mvsKEMD7QsYhNhTDxLPvy65aN`.
+- P08 menutup QR pada `00:00`, meminta tepat satu status authoritative, lalu
+  hanya berpindah ke P09 jika server/provider menyatakan expired.
+- Focused Kiosk 32/32, full 164/164, browser dua viewport, Axe, overflow,
+  dependency/secret scan, candidate dan stable smoke lulus.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE /
+  QRIS_SIMULATOR_ONLY / PRODUCT_PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
+## File yang berubah pada sinkronisasi QRIS expiry handoff
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaBook S422 custom DP
 
