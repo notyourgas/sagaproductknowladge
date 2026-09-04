@@ -1,6 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 5 September 2026
+Latest material status: `KIOSK_EARLY_NFC_MEMBER_DEMO_DEPLOYED / PHYSICAL_NFC_NOT_ACTIVATED`
 Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PERSISTENT_HELP_SAFE_CANCEL_PUBLIC_DEMO_DEPLOYED / KIOSK_SUCCESS_TIME_AND_SCROLL_PUBLIC_DEMO_DEPLOYED / KIOSK_MEMBER_DEGRADED_RECOVERY_PUBLIC_DEMO_DEPLOYED / KIOSK_CHECKOUT_QUOTE_GUARD_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
@@ -100,14 +101,18 @@ SETTLEMENT_PENDING_CLEARING / HARDWARE_AND_OUTLET_PILOT_PENDING /
 BUSINESS_READY=false`.
 
 - Kiosk public demo aktif di `https://saga-pos-kiosk.vercel.app/kiosk` melalui
-  deployment Vercel `dpl_5rpTFJfqfLKLGiLJLkYh3ZR8hatJ`, memakai runtime code
-  source `3f14f522cfaf5887f0a62c52d7a9aa58fca08f34`. Surface publik dibatasi ke
+  deployment Vercel `dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu`, memakai exact deployed
+  source `7422eb9c8a8e57b74ea38adaac1e2d9755676a2e`. Surface publik dibatasi ke
   Kiosk dan API simulator; gateway nyata, canary, dan promo nyata tidak
   diaktifkan. State session/order bersifat ephemeral dan bukan runtime outlet.
 - Setelah pelanggan memilih Dine In atau Takeaway, Kiosk meminta identifikasi
   Saga Member sebelum katalog. Member Code yang valid membuka sapaan personal,
   tiga rekomendasi aktif dalam tabel ringkas, dan kategori `Untukmu`; guest tetap
   dapat lanjut tanpa akun. NFC nyata ditampilkan jujur sebagai belum tersedia.
+- Public demo kini menyediakan touch card `Tap NFC · SIMULATOR` setelah pilihan
+  order type. Satu tap membuka welcome dan tiga rekomendasi tanpa meminta kode,
+  tanpa menerima credential browser, serta tanpa membuat order/payment. Fitur
+  hanya aktif pada public demo; physical NFC dan Customer Platform tetap OFF.
 - Identitas Member terverifikasi kini dimiliki session server. Refresh memulihkan
   welcome/rekomendasi atau cart beserta benefit tanpa menyimpan raw Member Code
   di browser atau mengirim ulang credential pada quote/checkout. Pilihan guest
@@ -131,7 +136,7 @@ BUSINESS_READY=false`.
 - Bantuan persisten tersedia pada P02-P07. Pelanggan dapat membatalkan sesi
   pre-checkout lewat konfirmasi aman dalam tiga tap; decline atau network gagal
   mempertahankan draft, sedangkan P08-P10 tidak menawarkan cancel.
-- Full regression 173/173, browser dua viewport,
+- Full regression 175/175, browser dua viewport,
   dependency/secret scan, production health/static smoke, serta browser UAT
   P10 sampai extension timer dan struk tujuh item lulus.
 - Source exact `410ad19b1641dc47e84c86dc0b8324082d01083b` menambahkan atomic

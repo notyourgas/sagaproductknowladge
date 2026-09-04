@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga POS Kiosk early NFC Member demo
+
+- Saga POS public demo kini dapat memperagakan Tap NFC setelah pemilihan
+  Dine-in/Takeaway, lalu welcome, rekomendasi personal fixture, dan `Untukmu`.
+- Exact deployed source `7422eb9c8a8e57b74ea38adaac1e2d9755676a2e`;
+  stable Vercel `dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu`.
+- Delivery: `PUBLIC_DEMO_ACTIVE`; physical NFC, data customer nyata, payment
+  production, product activation, serta `BUSINESS_READY` tidak berubah.
+- Klasifikasi: `CONFIRMED`; sumber: release evidence Saga POS, 5 September 2026.
+
 ## 2026-09-05 - Saga POS Kiosk persistent help dan safe cancel deployed
 
 - `CONFIRMED`: exact source
