@@ -6595,6 +6595,16 @@ accept masih blocked. Skor tetap 84 sampai dependency-ordered gate SagaDev,
 Customer Platform, hardware, installed runtime, staging, staff, pilot,
 activation, dan owner business acceptance benar-benar diterima.
 
+Update visual kiosk 4 September 2026: Saga POS exact
+`ec8ffd907c7766d552ca91fe50ce79358398b28e` sudah dipush. Seluruh 18 kartu menu
+kini memiliki visual; sembilan kandidat konvensional dipertahankan dan sembilan
+menu Kupsus/Mocktail/Soda memakai illustrative dummy PNG transparan 512×768
+hasil ImageGen. Placeholder kotak tulisan tidak lagi muncul pada katalog saat
+ini. Focused asset/browser 8/8 dan full suite 133/133 lulus pada dua viewport,
+audit dependency nol vulnerability, secret scan nol, serta tidak ada dependency
+baru. Dummy bukan foto/resep terverifikasi dan tetap memerlukan owner review,
+appearance brief, serta foto nyata sebelum activation.
+
 Status: `SOURCE_PUSHED / LOCAL_VALIDATED / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED /
 SAGAOPS_TRANSACTIONS_LOCKED / PRIVATE_CANARY_PAID /
 SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`. Founder telah menerima

@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -102,15 +102,18 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS implementation exact `9a43a89`, dengan current branch head
-  `f5c446b`, sudah dipush ke branch yang sama dan
+  `ec8ffd907c7766d552ca91fe50ce79358398b28e`, sudah dipush ke branch yang sama dan
   mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
   V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
   target sentuh, state machine, restore payment pending, server-owned quote,
   QR PNG allowlist, serta CTA modifier portrait telah diterapkan. Full suite
-  124/124 dan audit dependency production nol vulnerability lulus.
-- Sembilan kandidat visual minuman konvensional dipakai pada preview lokal;
-  sembilan menu khas Saga tetap memakai fallback sampai foto/appearance brief
-  tersedia. Seluruh kandidat memerlukan owner review sebelum activation.
+  terkini 133/133 dan audit dependency production nol vulnerability lulus.
+- Seluruh 18 kartu menu kini memiliki visual: sembilan kandidat minuman
+  konvensional dan sembilan PNG transparan 512×768 hasil ImageGen sebagai
+  illustrative dummy. Placeholder kotak tulisan tidak lagi dipakai untuk katalog
+  saat ini. Aset dummy tidak membuktikan resep/penampilan produk dan seluruh 18
+  visual tetap memerlukan owner review serta penggantian foto nyata sebelum
+  activation.
 - Perubahan ini `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime SagaDev
   Platform, lock transaksi, settlement, readiness 84/100, dan
   `BUSINESS_READY=false` tidak berubah.

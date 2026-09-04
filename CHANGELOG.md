@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS kiosk menu dummy asset sync
+
+- Informasi `CONFIRMED`: source exact
+  `ec8ffd907c7766d552ca91fe50ce79358398b28e` dipush; 18/18 menu memiliki
+  visual dan sembilan fallback tulisan diganti illustrative dummy transparan.
+- Focused asset/browser 8/8, full suite 133/133, dua viewport portrait, audit
+  dependency nol vulnerability, dan secret scan nol lulus tanpa dependency baru.
+- Dummy bukan resep/foto final dan menunggu owner review serta foto nyata.
+  Production/canary tidak berubah; readiness 84/100, transaksi locked, dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V14 Reward Route sync
 
 - Informasi `CONFIRMED`: Saga Member main

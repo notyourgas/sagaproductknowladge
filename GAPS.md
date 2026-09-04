@@ -1269,7 +1269,8 @@ GAP-004, bukan gap implementasi warna komponen.
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
-- `TODO`: source terbaru exact `f5c446b` (scheduled availability;
+- `TODO`: source terbaru exact `ec8ffd9` (menu asset completion;
+  scheduled availability `f5c446b`;
   stale-version conflict guard `54fda1a`;
   Availability History `e0df398`; Admin Control
   Room V2 `960a5e6`; Owner Dashboard
@@ -1279,8 +1280,9 @@ GAP-004, bukan gap implementasi warna komponen.
   dipush ke branch
   `codex/saga-pos-vs01-kiosk-kds-dashboard`; merge/review tetap pending.
 - `NEEDS CONFIRMATION`: owner visual review untuk sembilan kandidat minuman
-  konvensional serta foto/appearance brief sembilan menu khas sebelum kiosk
-  portrait boleh masuk activation gate.
+  konvensional dan sembilan illustrative dummy. Seluruh 18 kartu sudah memiliki
+  visual lokal, tetapi dummy bukan bukti resep/appearance; foto atau appearance
+  brief nyata tetap wajib sebelum kiosk portrait masuk activation gate.
 - `NEEDS CONFIRMATION`: kalibrasi threshold KDS attention 5 menit dan urgent
   10 menit memakai data prep-time nyata outlet; nilai saat ini hanya default
   UX lokal dan bukan SLA produksi.
@@ -1295,9 +1297,8 @@ GAP-004, bukan gap implementasi warna komponen.
   worker, transaksi/row lock database durable, deployed cache convergence,
   kalender hari libur/jam outlet nyata, durable audit retention/export,
   multi-device dan operator UAT.
-- `TODO`: fresh production dependency audit exact `f5c446b` timeout dua kali;
-  dependency/lockfile tidak berubah dan exact `54fda1a` sebelumnya lulus nol
-  vulnerability. Ulangi saat registry tersedia.
+- `CONFIRMED`: fresh production dependency audit exact `ec8ffd9` lulus nol
+  vulnerability; dependency/lockfile tidak berubah dan secret scan nol.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh
   live provider, hardware, staging, staff, pilot, release, dan business acceptance;

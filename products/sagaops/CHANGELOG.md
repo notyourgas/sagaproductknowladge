@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Seluruh kartu menu kiosk memiliki visual lokal
+
+- Source exact `ec8ffd907c7766d552ca91fe50ce79358398b28e` dipush ke branch
+  Saga POS. Sembilan menu yang sebelumnya memakai kotak fallback kini memakai
+  illustrative dummy PNG transparan 512×768; total 18/18 kartu memiliki visual.
+- Dummy mencakup tiga Kupsus, empat Mocktail, dan dua Soda. Arah Mohito memakai
+  cue lime-mint-soda dan mocktail memakai warna/citrus sebagai referensi visual;
+  aset eksternal tidak disalin.
+- Focused asset/browser 8/8 dan full suite 133/133 lulus pada 1080×1920 serta
+  720×1280 untuk seluruh enam kategori. Audit dependency nol vulnerability,
+  secret scan nol, dan dependency/lockfile tidak berubah.
+- Seluruh aset baru berstatus `ILLUSTRATIVE_DUMMY_PENDING_OWNER_REVIEW_AND_REAL_PHOTO`;
+  bukan foto resep terverifikasi. Status tetap local validated/not deployed,
+  readiness 84/100, transaksi locked, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 — Scheduled sold-out mencegah menu terlupakan antar-shift
 
 - Source exact `f5c446b` dipush ke branch Saga POS.

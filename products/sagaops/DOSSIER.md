@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -184,19 +184,22 @@ exact `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` lulus 112/112 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
 PostgreSQL enam migration/RLS/cross-outlet deny.
 
-Source implementation `9a43a89`, current branch head `f5c446b`, mengganti
+Source implementation `9a43a89`, current branch head `ec8ffd9`, mengganti
 customer kiosk menjadi pengalaman portrait
 P01-P12 pada 1080×1920 dan 720×1280. Alur mencakup order type, katalog dua
 kolom, modifier per-line, cart/server quote, member optional, QRIS-only,
 pending, recovery, server-confirmed success, idle reset, dan out-of-service.
 Visual memakai Plus Jakarta Sans lokal berlisensi, paper/espresso/lime dan
 icon Feather-style dari pedoman Saga Member V5; typography, spacing, dan touch
-geometry tetap code-native. Sembilan aset menu konvensional adalah kandidat
-yang masih menunggu owner review, sedangkan sembilan menu khas memakai fallback
-hingga appearance brief tersedia. Full suite 124/124, Axe tanpa serious atau
-critical issue, dua viewport portrait, QR allowlist, reload recovery, serta
-KDS exactly-once lulus. Ini `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` dan
-tidak membuka external gate atau transaksi baru.
+geometry tetap code-native. Sembilan aset menu konvensional adalah kandidat;
+sembilan menu khas kini memakai illustrative dummy PNG transparan 512×768
+hasil ImageGen, bukan lagi fallback kotak tulisan. Semua 18 kartu memiliki
+visual dan tidak ada code-drawn fallback pada katalog saat ini. Full suite
+133/133, focused asset/browser 8/8, Axe tanpa serious atau critical issue, dua
+viewport portrait, QR allowlist, reload recovery, serta KDS exactly-once lulus.
+Aset dummy belum membuktikan resep atau appearance final dan seluruh visual
+menunggu owner review/foto nyata. Ini `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED` dan tidak membuka external gate atau transaksi baru.
 
 KDS V2 exact `973f81c` menutup pain point scanability bar: ticket aging memakai
 server clock, queue summary dan filter status terlihat di first fold, modifier

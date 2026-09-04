@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS kiosk menu asset gaps filled locally
+
+- Saga POS exact `ec8ffd907c7766d552ca91fe50ce79358398b28e` dipush; 18/18 kartu
+  menu kini memiliki visual dan sembilan kotak fallback diganti illustrative
+  dummy PNG transparan 512×768.
+- Kupsus, Mocktail, dan Soda telah direview pada 1080×1920 serta 720×1280.
+  Focused asset/browser 8/8, full suite 133/133, audit dependency nol, dan
+  secret scan nol lulus tanpa dependency baru.
+- Dummy bukan foto atau resep terverifikasi dan tetap menunggu owner review serta
+  foto nyata. Production/canary tidak berubah, readiness 84/100, transaksi
+  locked, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V14 Reward Route deployed
 
 - Saga Member main `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed` (PR #29)
