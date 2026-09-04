@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V29 Quest Trail deployed
+
+- Saga Member main `8fadccbf96665701b2ecf1fb98a98a762ccdde65` (PR #45)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_57MXHh67m11Pr6twjpyMRTGcDD4V`.
+- Quest kini berupa journey tiga milestone yang dapat disimulasikan dan
+  diulang di memori tab, dengan syarat kunjungan serta CTA Reward yang jelas.
+- 160 test, exact PR/main CI, local mobile UAT, dan remote production UAT
+  lulus. Runtime tetap dummy tanpa backend, transaksi, provider, atau data
+  nyata; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaBook S422 merged, release blocked offsite quota
 
 - DP custom booking manual sudah berada di canonical main

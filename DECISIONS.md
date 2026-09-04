@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-171 - Quest Saga Member menjadi journey simulasi yang dapat diulang
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Hierarchy, feedback, dan ketercobaan halaman Quest Saga Member |
+| Keputusan | Ubah detail Quest menjadi journey tiga milestone dengan progres determinate, syarat kunjungan eksplisit, simulasi lokal sampai completion, CTA Reward demo, dan reset. State simulasi hanya hidup dalam memori tab dan tidak boleh mengubah saldo atau memanggil backend. |
+| Alasan | Halaman sebelumnya terlalu polos dan hanya menampilkan angka, progress bar, paragraf, serta CTA Coffee; pengguna belum dapat memahami atau mencoba siklus Quest secara utuh. |
+| Alternatif | Mempertahankan kartu statis; membuat progres persisten di browser; menghubungkan transaksi nyata sebelum backend diaktifkan. |
+| Dampak | Main `8fadccbf96665701b2ecf1fb98a98a762ccdde65` dan deployment `dpl_57MXHh67m11Pr6twjpyMRTGcDD4V` menerapkan presenter fail-closed, milestone, live status, motion aman, dan UAT lintas mobile. Backend/provider/data nyata tetap OFF. |
+| Pemberi keputusan | SAGADEVS Product/UX review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-170 - Emoji Akses cepat Saga Member tanpa kotak kecil
 
 | Field | Nilai |
