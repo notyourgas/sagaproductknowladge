@@ -58,7 +58,29 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V30 Reward Pocket dari Saga Member main
+Frontend public dummy terkini adalah V31 Reward Passbook dari Saga Member main
+`1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47), Preview
+`dpl_LoZuWuXrwKwi4GmKkSRaY7gUHzyp`, dan production deployment
+`dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu` pada stable URL
+`https://saga-member-platform.vercel.app`. Reward milik pengguna kini disusun
+sebagai passbook: pass aktif dominan memuat status, expiry, referensi demo
+tersamarkan, progres tiga tahap, serta CTA dialog, sedangkan riwayat terminal
+dipisahkan di bawah dengan alasan penyelesaian dan tanpa CTA.
+
+Presenter mengklasifikasikan status unknown/expired secara fail-closed ke
+riwayat. Dialog native menandai reward sebagai demo yang tidak berlaku untuk
+transaksi, menjaga focus trap, dan mengembalikan fokus ke pemicu. Saldo tetap
+128 dan tidak ada request backend. Full 170 test, PR CI `33888107426`,
+canonical-main CI `33888310677`, local UAT lima viewport dan text resize 200%,
+serta remote production UAT 320/360/375/390/430 px lulus tanpa overflow,
+request backend, page/console error, atau temuan Axe serious/critical. Cache
+offline berubah ke `v44-reward-passbook`. Runtime tetap `PUBLIC_DUMMY_DEMO`;
+backend, auth, provider, transaksi, data pelanggan, QRIS, Push, NFC, printer,
+dan pilot nyata tidak aktif. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+V30 Reward Pocket sebelumnya berasal dari Saga Member main
 `64da605fe707b44f6ebf781e7c17250f10a8026e` (PR #46), Preview
 `dpl_71xjbvjUpWHfvpj7HUqkaqRHqpqN`, dan production deployment
 `dpl_3q6jh5d7apx4NgiBgYmJFVHqQMEL` pada stable URL

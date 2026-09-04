@@ -15,7 +15,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `70727b93adbabd97c2fa19158de3e0b23d284909` |
+| Baseline sebelum pembaruan | `c73c2ea5754da4665cfd82635f8c71239bc42874` |
+
+## Saga Member V31 Reward Passbook
+
+- Source exact `1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47) aktif
+  pada Vercel production deployment `dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu`
+  melalui stable public URL setelah Preview
+  `dpl_LoZuWuXrwKwi4GmKkSRaY7gUHzyp` divalidasi.
+- Passbook membedakan reward aktif dari riwayat terminal, menyediakan dialog
+  demo aksesibel, dan gagal aman untuk status unknown/expired tanpa mengubah
+  saldo atau memanggil backend.
+- Full 170 test, PR CI `33888107426`, main CI `33888310677`, local UAT lima
+  viewport plus text resize 200%, dan remote production UAT lima viewport
+  lulus tanpa overflow, request backend, page/console error, atau temuan Axe
+  serious/critical.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V31
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk Member session recovery
 

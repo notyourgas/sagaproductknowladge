@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V31 Reward Passbook aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47), Preview
+`dpl_LoZuWuXrwKwi4GmKkSRaY7gUHzyp`, dan production deployment
+`dpl_BPs9noWMA1cZUVirdDPmNP5nvgcu`. Reward milik pengguna disusun sebagai
+pass aktif dominan dengan expiry, status, referensi demo, progres tiga tahap,
+serta dialog native; riwayat terminal dipisahkan dan tidak memiliki CTA.
+Status unknown/expired gagal aman ke riwayat. Full 170 test, exact PR/main CI,
+local UAT lima viewport plus text resize 200%, dan remote production UAT lima
+viewport lulus tanpa overflow, request backend, page/console error, atau
+temuan Axe serious/critical. Saldo tetap 128; backend, provider, NFC nyata,
+transaksi, dan real data tetap OFF; `PRODUCTION_ACTIVATED=false` dan
+`BUSINESS_READY=false`.
+
 Saga Member V30 Reward Pocket aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `64da605fe707b44f6ebf781e7c17250f10a8026e` (PR #46), Preview
