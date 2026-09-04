@@ -15,7 +15,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8d6b22559659260b3e518af5fe3c294eed605ad7` |
+| Baseline sebelum pembaruan | `0751fdc8969fb669bf0d370fd5862225b74d6533` |
+
+## Saga Member V20 Member Card 35 Collection
+
+- Source exact `d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36) aktif
+  pada Vercel production deployment `dpl_2scRKVtU4ekDsFSZ2xVJtVvsu1Bi`
+  melalui stable public URL setelah Preview
+  `dpl_ARfnu2xy92vScv98wpadWDGXHoYj` berstatus Ready.
+- Saga Pass memiliki tujuh tema × lima varian, rasio CR80, overlay identitas
+  dinamis, preference lokal, parity dialog, dan ekspor PNG lokal.
+- 146/146 test, PR/main CI, local UAT lima viewport, dan remote production UAT
+  seluruh tema lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V20
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk member benefit confirmation
 

@@ -8,6 +8,22 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V20 Member Card 35 Collection deployed
+
+- Main `d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36) aktif pada
+  deployment `dpl_2scRKVtU4ekDsFSZ2xVJtVvsu1Bi` dan stable public URL setelah
+  Preview `dpl_ARfnu2xy92vScv98wpadWDGXHoYj` berstatus Ready.
+- Saga Pass berubah dari satu kartu menjadi 35 desain: tujuh tema dengan lima
+  varian, rasio CR80, data member dinamis, preference lokal, parity dialog,
+  dan ekspor PNG 1712×1080 di browser.
+- 146/146 test, exact PR/main CI, local UAT lima viewport, remote production
+  UAT seluruh tema, persistence, dialog, export, Axe, overflow, broken image,
+  serta console checks lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V19 Studio Session Planner deployed
 
 - Main `2858d5aea39008386387cf58668808386247edfd` (PR #35) aktif pada

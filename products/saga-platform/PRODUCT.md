@@ -66,6 +66,26 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V20 Member Card 35 Collection
+
+- Saga Member canonical main `d3e581b557df8aa1f3d701b9913680a61b4b8465`
+  (PR #36) aktif pada Vercel production deployment
+  `dpl_2scRKVtU4ekDsFSZ2xVJtVvsu1Bi` melalui stable public URL
+  `https://saga-member-platform.vercel.app` setelah Preview
+  `dpl_ARfnu2xy92vScv98wpadWDGXHoYj` berstatus Ready.
+- Saga Pass memiliki 35 desain dalam tujuh tema: Polos, Kopi, Lucu, Retro,
+  Futuristik, Retro Colorful, dan Cutie Duck; masing-masing tepat lima varian.
+- Kartu memakai rasio CR80, identitas dinamis, pilihan lokal yang bertahan
+  setelah reload, satu renderer untuk halaman/dialog crew, dan ekspor PNG
+  1712×1080 yang diproses hanya di browser.
+- 146/146 test, PR CI `33851882411`, canonical-main CI `33852445823`, local
+  UAT lima viewport, remote production UAT tujuh tema, persistence, dialog,
+  export, Axe, overflow, broken-image, dan console checks lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V19 Studio Session Planner
 
 - Saga Member canonical main `2858d5aea39008386387cf58668808386247edfd`

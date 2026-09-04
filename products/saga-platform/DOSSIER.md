@@ -58,7 +58,30 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V19 Studio Session Planner dari Saga
+Frontend public dummy terkini adalah V20 Member Card 35 Collection dari Saga
+Member main `d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36), Preview
+deployment `dpl_ARfnu2xy92vScv98wpadWDGXHoYj`, dan Vercel production
+deployment `dpl_2scRKVtU4ekDsFSZ2xVJtVvsu1Bi` pada stable URL
+`https://saga-member-platform.vercel.app`. Saga Pass memakai satu renderer
+CR80 untuk halaman utama dan dialog crew, dengan tujuh tema dan lima varian
+per tema. Polos dibangun dari CSS primitives; enam tema lain memakai total 30
+background WebP lokal. Nama, tier, Member ID, NFC label, dan ikon contactless
+tetap menjadi overlay dinamis, bukan bagian dari artwork.
+
+Pilihan theme/variant disimpan lokal dengan fallback Polos A. Pengguna dapat
+mengunduh PNG demo 1712×1080 secara lokal di browser tanpa upload data. Points,
+XP, dan disclaimer tetap di luar muka kartu; tidak ada chip pembayaran, QR,
+barcode, magnetic stripe, atau klaim transaksi.
+
+146/146 test, PR CI `33851882411`, canonical-main CI `33852445823`, local UAT
+320/360/375/390/430 px, remote production UAT seluruh tujuh tema, persistence,
+dialog parity, export, Axe, overflow, broken-image, dan console checks lulus.
+Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+Frontend public dummy V19 sebelumnya adalah Studio Session Planner dari Saga
 Member main `2858d5aea39008386387cf58668808386247edfd` (PR #35), Preview
 deployment `dpl_2veZGPbrgdxPxZrEtPHsv6irbnxa`, dan Vercel production
 deployment `dpl_GDMmw3ZZPUiAEgWfcthzdbiNniHw` pada stable URL

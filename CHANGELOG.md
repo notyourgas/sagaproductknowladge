@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V20 Member Card 35 Collection sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `d3e581b557df8aa1f3d701b9913680a61b4b8465`, PR #36, PR CI
+  `33851882411`, main CI `33852445823`, Preview
+  `dpl_ARfnu2xy92vScv98wpadWDGXHoYj`, dan production deployment
+  `dpl_2scRKVtU4ekDsFSZ2xVJtVvsu1Bi` aktif pada stable URL.
+- Saga Pass memiliki tujuh tema × lima varian, preference lokal, parity dialog,
+  dan ekspor PNG CR80; seluruh data tetap dummy.
+- Delivery `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED`; activation nyata tetap false dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk member benefit confirmation sync
 
 - Informasi `CONFIRMED`: Saga POS exact

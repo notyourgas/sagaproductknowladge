@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V20 Member Card 35 Collection deployed
+
+- Saga Member main `d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_2scRKVtU4ekDsFSZ2xVJtVvsu1Bi`.
+- Saga Pass kini menyediakan tujuh tema × lima varian, CR80, identitas dinamis,
+  preference lokal, dialog parity, dan ekspor PNG lokal.
+- 146/146 test, exact PR/main CI, local UAT lima viewport, dan remote UAT
+  seluruh tema lulus. Runtime tetap dummy; backend, provider, transaksi, data
+  nyata, dan NFC tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk member benefit confirmation local validated
 
 - Saga POS exact `8999674a4d96f2a6d3b954ec67673141c92fe7e1` dipush. Input P06
