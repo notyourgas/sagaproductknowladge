@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk fixed touch canvas local validated
+
+- Saga POS exact `5568c2f26da6668a60c0c2120740395b4a542ec6` dipush. P03 kini
+  terkunci ke viewport; gesture sentuh hanya menggulir rail kategori atau
+  katalog produk.
+- Semua kartu kategori sama tinggi pada breakpoint yang sama. Focused Kiosk
+  31/31 dan full 160/160 lulus bersama Axe, overflow, dan secret scan.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100
+  dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V23 Member Card Preview & Apply deployed
 
 - Saga Member main `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39)

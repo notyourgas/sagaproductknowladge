@@ -15,7 +15,30 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `e51e5961f5e2160f4fbd560527b36b6140ff6ba1` |
+| Baseline sebelum pembaruan | `ce05db913056e9a1474752cef20701a88873f726` |
+
+## SagaOPS Kiosk fixed touch canvas
+
+- Source exact `5568c2f26da6668a60c0c2120740395b4a542ec6` dipush ke branch Saga POS.
+- P03 terkunci ke viewport fisik. Rail kategori dan product grid menjadi scroll
+  surface internal dengan gesture sentuh; dokumen tetap pada `window.scrollY=0`.
+- Semua kategori memiliki tinggi sama per breakpoint: 132/124/118 px.
+- Focused Kiosk 31/31, full 160/160, Axe serious/critical nol, overflow nol,
+  gesture sentuh, secret scan, dan dependency audit offline lulus.
+- Status `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  BUSINESS_READY=false`; production, payment, canary, dan readiness 84/100
+  tidak berubah.
+
+## File yang berubah pada sinkronisasi SagaOPS fixed touch canvas
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V23 Member Card Preview & Apply
 

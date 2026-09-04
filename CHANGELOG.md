@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk fixed touch canvas sync
+
+- Informasi `CONFIRMED`: source Saga POS exact
+  `5568c2f26da6668a60c0c2120740395b4a542ec6` sudah dipush.
+- P03 kini mengunci halaman ke viewport, membatasi scroll ke panel kategori dan
+  produk, serta memakai tinggi card kategori identik per breakpoint.
+- Focused Kiosk 31/31 dan full 160/160 lulus. Delivery tetap
+  `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan readiness
+  84/100 tidak berubah.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, decisions, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V23 Member Card Preview & Apply sync
 
 - Informasi `CONFIRMED`: Saga Member main

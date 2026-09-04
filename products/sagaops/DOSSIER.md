@@ -53,7 +53,7 @@ fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,
 modifier, cash/shift, QRIS simulator, Member/Reward fixture, availability,
 refund/remake, report/export, device health dan print spooler boundary.
 Kiosk portrait P01-P12 pada source exact
-`a7611c647045feaf9340ed737cf29b3054acf80f` kini memiliki hierarchy kategori
+`5568c2f26da6668a60c0c2120740395b4a542ec6` kini memiliki hierarchy kategori
 dan modifier yang lebih jelas, cart dengan harga per item dan undo, jalur QRIS
 tunggal yang lebih singkat, QR stabil saat polling, bantuan kontekstual,
 recovery offline/outage/idle, serta focus dan status announcement yang lebih
@@ -64,15 +64,20 @@ minuman, dan P08 menjaga jarak antarkontrol bawah minimal 10 px di 720x1280.
 Harga empat Bagel masih `NEEDS CONFIRMATION`: Rp18.000, Rp20.000, Rp25.000,
 dan Rp20.000. Pada 720x1280, rail kategori menjadi scroll viewport mandiri yang
 clear terhadap cart dock; fokus keyboard, render ulang, serta return dari
-modifier mempertahankan kategori aktif tanpa memindahkan halaman/grid. P04-P05 mengikuti density reference ImageGen V2 secara code-native:
+modifier mempertahankan kategori aktif tanpa memindahkan halaman/grid. P03
+sekarang mengunci seluruh canvas ke viewport fisik dan memberi scroll sentuh
+internal hanya kepada rail kategori serta product grid. Tinggi kartu kategori
+identik per breakpoint: 132 px desktop, 124 px portrait 720, dan 118 px layar
+sempit; gambar boleh mengecil di dalam frame tanpa mengubah ukuran kartu.
+P04-P05 mengikuti density reference ImageGen V2 secara code-native:
 pilihan suhu/manis dan dua add-on berharga dihitung server, total menyatu dengan
 CTA, edit/hapus quantity dipisah, order type dapat diubah dengan requote, dan
 jarak antarkelompok action dibatasi. P01 memakai aset ilustratif Es Kopi Saga
 yang sama dengan katalog menggantikan cup CSS generik. Jika aset gagal dimuat,
 hero, katalog, modifier, dan cart menampilkan fallback jujur tanpa mengganti
 identitas produk atau memblokir order flow. Dua puluh dua aset aktif memakai
-WebP total 1,60 MB; empat aset Bagel berukuran 98-122 KB per file. Full suite 159/159 dan
-focused Kiosk template + UI/UX 17/17 lulus; Axe serious/critical nol, no horizontal overflow,
+WebP total 1,60 MB; empat aset Bagel berukuran 98-122 KB per file. Full suite 160/160 dan
+focused Kiosk 31/31 lulus; Axe serious/critical nol, no horizontal overflow,
 touch/density gap, secret diff scan nol temuan, dan OSV 31 package/0
 vulnerability lulus. Revisi founder berikutnya memperbesar kontrol kategori,
 mengubah P05 menjadi table-card ringkas tanpa vertical stretch untuk satu item,

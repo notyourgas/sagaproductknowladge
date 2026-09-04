@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-159 - P03 Saga POS memakai fixed touch canvas dan equal-height categories
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Ownership scroll dan ukuran kategori Kiosk portrait |
+| Keputusan | Kunci seluruh halaman P03 ke viewport fisik. Hanya panel kategori dan product grid yang boleh digeser dengan sentuhan. Seluruh kartu kategori pada breakpoint yang sama wajib memiliki tinggi identik; foto boleh mengecil atau terpotong di dalam frame tanpa mengubah ukuran kartu. |
+| Alasan | Kiosk adalah perangkat touch-screen; document scroll membuat layar terasa seperti web biasa, menggeser header/dock, dan card tidak seragam mengganggu pemindaian menu. |
+| Alternatif | Mempertahankan document scroll; hanya memberi scroll pada rail kategori; membiarkan tinggi card mengikuti rasio foto. |
+| Dampak | Source `5568c2f26da6668a60c0c2120740395b4a542ec6` menerapkan dynamic viewport height, internal touch scroll/containment, pemulihan posisi dua panel, serta card 132/124/118 px. Production dan payment tidak berubah. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false` |
+| Dokumen terkait | `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md` |
+
 ## DEC-158 - Pemilihan desain Saga Member Card memakai preview lalu apply
 
 | Field | Nilai |

@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk fixed touch canvas tervalidasi lokal pada source exact
+`5568c2f26da6668a60c0c2120740395b4a542ec6` yang sudah dipush. P03 tidak lagi
+memakai document scroll: canvas terkunci ke viewport fisik, sedangkan rail
+kategori dan product grid memiliki scroll sentuh internal dengan containment.
+Semua kartu kategori identik per breakpoint (132 px desktop, 124 px portrait
+720, 118 px layar sempit), dan posisi panel dipulihkan tanpa membawa product
+scroll ke kategori berbeda. Gesture sentuh nyata, keyboard continuity, Axe,
+overflow, focused Kiosk 31/31, full 160/160, secret scan, dan dependency audit
+offline lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness
+84/100, production, payment, canary, dan `BUSINESS_READY=false` tidak berubah.
+
 Saga Member V23 Member Card Preview & Apply aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39), Preview

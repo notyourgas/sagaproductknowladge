@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Fixed touch canvas Kiosk tervalidasi lokal
+
+- Source exact `5568c2f26da6668a60c0c2120740395b4a542ec6` dipush ke branch Saga POS.
+- P03 mengunci dokumen ke viewport fisik; hanya rail kategori dan product grid
+  yang dapat digeser vertikal dengan sentuhan.
+- Kartu kategori memiliki tinggi identik per breakpoint: 132 px desktop,
+  124 px portrait 720, dan 118 px layar sempit. Foto tetap berada di frame
+  seragam dan boleh mengecil tanpa mengubah card.
+- Gesture sentuh nyata, keyboard continuity, Axe, overflow, focused Kiosk
+  31/31, full 160/160, secret scan, dan audit dependency offline lulus.
+- Status `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness
+  84/100, production, payment, canary, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Category rail continuity tervalidasi lokal
 
 - Source exact `a7611c647045feaf9340ed737cf29b3054acf80f` dipush ke branch Saga POS.
