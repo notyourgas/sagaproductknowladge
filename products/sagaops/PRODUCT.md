@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -58,6 +58,8 @@ kasir dan Back Office untuk owner/manager.
 - Expected-version guard untuk availability: request tanpa versi ditolak 422,
   versi stale ditolak 409, UI memuat state terbaru, dan operator wajib
   mengonfirmasi ulang tanpa auto-retry.
+- Scheduled sold-out dengan pilihan 30 menit, 60 menit, akhir hari 22.00 WIB,
+  atau manual; waktu server terlihat pada kartu dan audit history.
 - Kiosk portrait 1080×1920 dan 720×1280 dengan flow order type, katalog,
   modifier per-line, cart, member optional, QRIS pending/recovery, success,
   idle reset, serta out-of-service fallback.
@@ -100,7 +102,7 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS implementation exact `9a43a89`, dengan current branch head
-  `54fda1a`, sudah dipush ke branch yang sama dan
+  `f5c446b`, sudah dipush ke branch yang sama dan
   mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
   V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
   target sentuh, state machine, restore payment pending, server-owned quote,
@@ -145,6 +147,15 @@ BUSINESS_READY=false`.
   konfirmasi eksplisit baru tanpa auto-retry. Skenario browser dua tab, full
   suite 132/132, Axe nol serious/critical, no-overflow, audit dependency nol,
   dan secret scan lulus tanpa dependency baru.
+- Scheduled availability exact `f5c446b` memberi owner pilihan pulih 30/60
+  menit, akhir hari 22.00 WIB, atau manual. Server menghitung waktu, menolak
+  reset mode invalid 422, memulihkan secara lazy pada akses pertama setelah
+  expiry, menaikkan catalog version, dan menulis audit actor `SYSTEM`. Admin
+  menampilkan waktu absolut pada kartu/history tanpa countdown live. Full suite
+  133/133, browser 1440×900 dan 1024×768, Axe nol serious/critical, no-overflow,
+  visual review, readiness evidence, dan secret scan lulus. Dependency tidak
+  berubah; fresh registry audit timeout dua kali, sementara exact `54fda1a`
+  sebelumnya memiliki audit nol vulnerability.
 
 - Saga POS source branch `codex/saga-pos-vs01-kiosk-kds-dashboard` exact
   `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` menyelesaikan local program

@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS scheduled availability sync
+
+- Informasi `CONFIRMED`: source exact `f5c446b` dipush dengan pilihan reset
+  30/60 menit, akhir hari 22.00 WIB, atau manual, absolute server time, invalid
+  mode 422, catalog version increment, dan automatic `SYSTEM` audit.
+- Full suite 133/133, browser dua viewport, Axe, no-overflow, visual review,
+  readiness evidence, dan secret scan lulus. Dependency tidak berubah; fresh
+  registry audit timeout dua kali, exact `54fda1a` sebelumnya nol vulnerability.
+- Production/canary tidak berubah; readiness 84/100 dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, gaps, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V13 Pass Spotlight sync
 
 - Informasi `CONFIRMED`: Saga Member main

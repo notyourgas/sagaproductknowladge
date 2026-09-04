@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS scheduled availability local validated
+
+- Saga POS exact `f5c446b` menambah sold-out 30/60 menit, akhir hari 22.00 WIB,
+  atau manual dengan absolute server time pada kartu dan history.
+- Expiry memulihkan menu secara lazy, menaikkan version, dan menulis audit
+  `SYSTEM`; 133/133 test, browser dua viewport, Axe, no-overflow, visual review,
+  readiness evidence, dan secret scan lulus.
+- Dependency tidak berubah; fresh registry audit timeout dua kali dan exact
+  `54fda1a` sebelumnya nol vulnerability. Production/canary tidak berubah,
+  readiness tetap 84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V13 Pass Spotlight deployed
 
 - Saga Member main `18f86bc02cd2c69344f813a7b99e60484bcfc015`

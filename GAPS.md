@@ -1269,7 +1269,8 @@ GAP-004, bukan gap implementasi warna komponen.
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
-- `TODO`: source terbaru exact `54fda1a` (stale-version conflict guard;
+- `TODO`: source terbaru exact `f5c446b` (scheduled availability;
+  stale-version conflict guard `54fda1a`;
   Availability History `e0df398`; Admin Control
   Room V2 `960a5e6`; Owner Dashboard
   V2 `287b26d`; Cashier V2
@@ -1289,12 +1290,14 @@ GAP-004, bukan gap implementasi warna komponen.
 - `NEEDS CONFIRMATION`: kalibrasi alert Owner Dashboard terhadap prep-time,
   pickup, dan settlement SOP outlet; decision board saat ini memakai fakta
   lokal/simulator dan belum menjadi bukti production clearing.
-- `NEEDS CONFIRMATION`: availability guard exact `54fda1a` menolak request
-  stale 409 tanpa mutasi pada runtime lokal bersama. Masih perlu transaksi/row
-  lock database durable, deployed cache convergence, reset otomatis per
-  business day, durable audit retention/export, multi-device dan operator UAT.
-- `CONFIRMED`: fresh production dependency audit pada exact `54fda1a` lulus
-  dengan nol vulnerability; dependency dan lockfile tidak berubah.
+- `NEEDS CONFIRMATION`: scheduled reset exact `f5c446b` dan stale guard
+  `54fda1a` tervalidasi pada runtime lokal bersama. Masih perlu background
+  worker, transaksi/row lock database durable, deployed cache convergence,
+  kalender hari libur/jam outlet nyata, durable audit retention/export,
+  multi-device dan operator UAT.
+- `TODO`: fresh production dependency audit exact `f5c446b` timeout dua kali;
+  dependency/lockfile tidak berubah dan exact `54fda1a` sebelumnya lulus nol
+  vulnerability. Ulangi saat registry tersedia.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan
   preparation sudah dijalankan lokal, tetapi sembilan wave masih blocked oleh
   live provider, hardware, staging, staff, pilot, release, dan business acceptance;

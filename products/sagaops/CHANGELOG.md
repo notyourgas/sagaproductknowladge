@@ -8,6 +8,19 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Scheduled sold-out mencegah menu terlupakan antar-shift
+
+- Source exact `f5c446b` dipush ke branch Saga POS.
+- Owner memilih pulih 30 menit, 60 menit, akhir hari 22.00 WIB, atau manual;
+  kartu dan history menampilkan waktu absolut dari server.
+- Expiry memulihkan menu pada akses berikutnya, menaikkan catalog version, dan
+  menulis audit actor `SYSTEM`; reset mode invalid ditolak 422.
+- Full suite 133/133, browser dua viewport, Axe nol serious/critical,
+  no-overflow, visual/readiness/secret scan lulus. Dependency tidak berubah;
+  fresh registry audit timeout dua kali, exact `54fda1a` sebelumnya nol.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Stale-version guard mencegah lost update availability
 
 - Source exact `54fda1a` dipush ke branch Saga POS.

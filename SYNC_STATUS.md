@@ -15,7 +15,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `63bad2b` |
+| Baseline sebelum pembaruan | `f362b95` |
+
+## SagaOPS scheduled availability
+
+- Source exact `f5c446b` dipush ke branch
+  `codex/saga-pos-vs01-kiosk-kds-dashboard`.
+- Sold-out dapat pulih dalam 30/60 menit, akhir hari 22.00 WIB, atau manual.
+  Waktu absolut berasal dari server dan terlihat pada kartu/history; expiry
+  menaikkan catalog version dan menulis audit actor `SYSTEM`.
+- Full suite 133/133, browser 1440×900 dan 1024×768, Axe nol serious/critical,
+  no-overflow, visual review, readiness evidence, dan secret scan lulus.
+- Dependency/lockfile tidak berubah; fresh registry audit timeout dua kali,
+  sementara exact `54fda1a` sebelumnya nol vulnerability.
+- Status `ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED`; scheduler masih lazy/shared-memory. Production,
+  canary, settlement tidak berubah, readiness 84/100, dan
+  `BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi SagaOPS scheduled availability
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `GAPS.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V13 Pass Spotlight
 

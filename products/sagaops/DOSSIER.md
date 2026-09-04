@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -184,7 +184,7 @@ exact `d9598dd94200c8cd3e2fc1bbdf8245acec1f69cc` lulus 112/112 test, browser
 E2E/accessibility, dependency audit, screenshot evidence, serta local
 PostgreSQL enam migration/RLS/cross-outlet deny.
 
-Source implementation `9a43a89`, current branch head `54fda1a`, mengganti
+Source implementation `9a43a89`, current branch head `f5c446b`, mengganti
 customer kiosk menjadi pengalaman portrait
 P01-P12 pada 1080×1920 dan 720×1280. Alur mencakup order type, katalog dua
 kolom, modifier per-line, cart/server quote, member optional, QRIS-only,
@@ -262,6 +262,18 @@ tab membuktikan request stale menghasilkan nol mutasi, full suite 132/132,
 Axe nol serious/critical, no-overflow, audit dependency nol, dan secret scan
 lulus. Boundary ini masih runtime lokal bersama; transaksi/row lock database,
 cache convergence deployed, dan multi-device outlet UAT tetap belum terbukti.
+
+Scheduled availability exact `f5c446b` menutup risiko menu terlupakan dalam
+status sold-out antar-shift. Owner memilih 30 menit, 60 menit, akhir hari 22.00
+WIB, atau manual; server menghitung absolute restore time dan menolak mode
+invalid 422. Akses pertama setelah expiry memulihkan menu, menaikkan catalog
+version, dan menulis audit event actor `SYSTEM`, sehingga expected-version guard
+tetap mencegah intent lama. UI menampilkan waktu absolut tanpa countdown live.
+Full suite 133/133, dua viewport, Axe nol serious/critical, no-overflow, visual
+review, readiness evidence, dan secret scan lulus. Dependency/lockfile tidak
+berubah; fresh npm registry audit timeout dua kali, sementara exact `54fda1a`
+sebelumnya nol vulnerability. Pemulihan masih lazy, bukan background worker,
+dan belum durable database/multi-instance/deployed cache evidence.
 
 Readiness program mencapai M4 84/100 setelah W25 durable runtime lulus lokal.
 Founder menyetujui harga customer-final,

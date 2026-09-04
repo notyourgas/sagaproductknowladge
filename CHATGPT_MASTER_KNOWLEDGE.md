@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS current branch head `f5c446b` sudah dipush dengan scheduled
+availability. Saat set sold-out, Owner memilih 30 menit, 60 menit, akhir hari
+22.00 WIB, atau manual. Server menghitung waktu absolut, menolak mode invalid
+422, lalu pada akses pertama setelah expiry memulihkan menu, menaikkan catalog
+version, dan menulis audit actor `SYSTEM`. Admin menampilkan waktu pada kartu
+dan history tanpa countdown live; pemulihan manual tetap tersedia. Full suite
+133/133, browser 1440×900 dan 1024×768, Axe nol serious/critical, no-overflow,
+visual review, readiness evidence, dan secret scan lulus. Dependency tidak
+berubah; fresh registry audit timeout dua kali, exact `54fda1a` sebelumnya nol
+vulnerability. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; scheduler
+masih lazy/shared-memory, bukan durable background worker. Production, canary,
+settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 Saga Member V13 Pass Spotlight aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `18f86bc02cd2c69344f813a7b99e60484bcfc015` (PR #27/#28) dan deployment
