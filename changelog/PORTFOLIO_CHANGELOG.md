@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk checkout quote guard deployed
+
+- Saga POS runtime exact `7217bf2dd4b5ff54cd06c765501b5b9ba882127e`
+  aktif pada stable Kiosk melalui deployment
+  `dpl_9HVQW4Mafg26ZHf1QxVpXHP8jsZB`.
+- HMAC quote guard mencegah perubahan Member, menu, atau total antara review
+  dan payment intent; drift kembali ke P05 dengan total lama → baru dan nol
+  order/payment intent.
+- Full 169/169, dua viewport, Axe, overflow, dependency/secret scan, dan remote
+  stable journey lulus. Runtime tetap simulator ephemeral; NFC/Customer
+  Platform external UAT pending, readiness 84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V31 Reward Passbook deployed
 
 - Saga Member main `1ce0242239cef53234bee58b73c2f99e97ea03c3` (PR #47)

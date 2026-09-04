@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Checkout quote drift guard Kiosk aktif di Vercel
+
+- Exact runtime source `7217bf2dd4b5ff54cd06c765501b5b9ba882127e`
+  aktif melalui deployment `dpl_9HVQW4Mafg26ZHf1QxVpXHP8jsZB`.
+- Checkout wajib membawa fingerprint HMAC server, catalog version, total, dan
+  expiry dari quote terakhir; runtime menghitung ulang fakta server sebelum
+  order/payment dibuat.
+- Drift Member/menu/total mengembalikan pelanggan ke P05 dengan total lama →
+  baru. Acceptance Rp11.700 → Rp13.000 membuktikan nol order/payment intent.
+- Full 169/169, dua viewport, Axe, overflow, dependency/secret scan,
+  preview/stable smoke, serta browser publik sampai QRIS simulator lulus.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE /
+  QRIS_SIMULATOR_ONLY / PRODUCT_PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
 ## 2026-09-04 — Member session recovery Kiosk aktif di Vercel
 
 - Runtime code exact `172c56a1435196e2edf46d6348884b33094c1ac9`
