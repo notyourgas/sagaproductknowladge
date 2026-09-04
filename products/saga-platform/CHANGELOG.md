@@ -8,6 +8,20 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V22 Jelajah Hero Typography deployed
+
+- Main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38) aktif pada
+  deployment `dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL` dan stable public URL setelah
+  Preview `dpl_FeLM9U2xEoSs6SKTrDE9FcBfyANX` berstatus Ready.
+- Hero Jelajah berubah dari wrap otomatis tiga baris menjadi lockup dua baris
+  rata tengah dengan ukuran 28-32 px, line-height 1.12, dan spacing lebih lega.
+- 148/148 test, exact PR/main CI, local UAT lima viewport, serta remote
+  production UAT 320/390/430 px lulus tanpa overflow atau console error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V21 Member Card readability refinement deployed
 
 - Main `a788cce43fda9f12d12c4fbb9db9f69bf492f841` (PR #37) aktif pada

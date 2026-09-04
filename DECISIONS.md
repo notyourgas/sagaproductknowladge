@@ -2162,6 +2162,20 @@ keputusan pengganti.
 | Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V21_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `a788cce43fda9f12d12c4fbb9db9f69bf492f841`, PR #37, deployment `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz` |
 | Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |
 
+## DEC-157 - Hero Jelajah Saga Member memakai lockup dua baris rata tengah
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Hierarki typography hero Jelajah Saga Member public dummy |
+| Keputusan | Pusatkan eyebrow, judul, dan deskripsi hero Jelajah; kunci judul menjadi dua baris `Temukan yang kamu` / `butuhkan.`; gunakan ukuran responsif 28-32 px dan spacing vertikal yang lebih lega. |
+| Alasan | Founder menilai wrap tiga baris sebelumnya terlalu menumpuk dan meminta komposisi di tengah dengan line break serta jarak yang disengaja. |
+| Alternatif yang dipertimbangkan | Mempertahankan wrap otomatis tiga baris; mengecilkan font tanpa mengubah komposisi; memakai satu baris yang akan terlalu sempit pada mobile. |
+| Dampak | Hero lebih tenang dan mudah dipindai pada 320-430 px tanpa mengubah navigasi, data, backend, provider, atau transaksi. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V22_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `7c82148e599fea9cd42eac1f8cb7f5bf617f310e`, PR #38, deployment `dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL` |
+| Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |
+
 ## DEC-151 - Saga Member memakai V5 Urban Coffee Club pada public dummy
 
 | Field | Isi |

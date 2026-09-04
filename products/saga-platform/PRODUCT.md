@@ -66,6 +66,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V22 Jelajah Hero Typography
+
+- Saga Member canonical main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e`
+  (PR #38) aktif pada Vercel production deployment
+  `dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_FeLM9U2xEoSs6SKTrDE9FcBfyANX` divalidasi.
+- Hero Jelajah kini rata tengah dengan judul dua baris yang disengaja:
+  `Temukan yang kamu` / `butuhkan.`. Ukuran judul responsif 28-32 px,
+  line-height 1.12, serta jarak eyebrow dan deskripsi dibuat lebih lega.
+- Full 148 test, PR CI `33858203877`, canonical-main CI `33858782863`, local
+  UAT lima viewport, dan remote production UAT 320/390/430 px lulus tanpa
+  overflow atau console error.
+- Status tetap `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V21 Member Card readability refinement
 
 - Saga Member canonical main `a788cce43fda9f12d12c4fbb9db9f69bf492f841`

@@ -58,7 +58,26 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V21 Member Card readability refinement
+Frontend public dummy terkini adalah V22 Jelajah Hero Typography dari Saga
+Member main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38), Preview
+deployment `dpl_FeLM9U2xEoSs6SKTrDE9FcBfyANX`, dan Vercel production
+deployment `dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL` pada stable URL
+`https://saga-member-platform.vercel.app`. Hero Jelajah yang sebelumnya
+terbungkus otomatis menjadi tiga baris kini memakai dua baris yang disengaja,
+rata tengah, dengan ukuran responsif 28-32 px dan line-height 1.12. Eyebrow,
+judul, dan deskripsi memiliki jarak vertikal yang lebih tenang; deskripsi tetap
+dibatasi agar nyaman dibaca pada mobile.
+
+Full 148 test, PR CI `33858203877`, canonical-main CI `33858782863`, local UAT
+320/360/375/390/430 px, serta remote production UAT 320/390/430 px lulus tanpa
+overflow atau console error. Cache offline berubah ke
+`v35-explore-typography`. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth,
+provider, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata
+tidak aktif. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+Frontend public dummy V21 sebelumnya adalah Member Card readability refinement
 dari Saga Member main `a788cce43fda9f12d12c4fbb9db9f69bf492f841`
 (PR #37), Preview deployment `dpl_5p56eUtwhA8xw1keEskXkntcPEVi`, dan
 Vercel production deployment `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz` pada stable URL
