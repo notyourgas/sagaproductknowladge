@@ -58,23 +58,29 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V24 Icon-only Bottom Navigation dari Saga
-Member main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40), Preview
-deployment `dpl_BvFUNzbwrCcDbXwCh9Q7VmDnsR7x`, dan Vercel production
-deployment `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad` pada stable URL
-`https://saga-member-platform.vercel.app`. Menu nonaktif hanya menampilkan
-ikon; label 12 px muncul di atas ikon aktif. Kelima Feather icon memiliki
-geometri 22x22 px, baseline yang sama, distribusi horizontal merata, indikator
-aktif 42 px, target sentuh minimal 44 px, dan accessible name eksplisit.
+Frontend public dummy terkini adalah V25 Compact Navigation + Floating Label
+dari Saga Member main `9a3661781158723b43da2bcb6e1960b4edad607a`
+(PR #41), Preview deployment `dpl_4ugw4zDsQ8pm5TUpPToPb2tqTucE`, dan Vercel
+production deployment `dpl_5295PJjEdxDbheZV6yZHareHWr2Q` pada stable URL
+`https://saga-member-platform.vercel.app`. Navbar kini hanya berupa satu baris
+ikon setinggi maksimum 60 px. Label menu aktif berada dalam badge terpisah
+setinggi 28 px di atas bar dan terpusat terhadap ikon aktif; tidak ada ruang
+label yang menambah tinggi navbar. Lima Feather icon memiliki geometri 22x22
+px, indikator aktif 42 px, tombol 48 px, baseline/gap seragam, dan accessible
+name eksplisit.
 
-Full 152 test, PR CI `33863687837`, canonical-main CI `33864129398`, local UAT
+Full 152 test, PR CI `33865512758`, canonical-main CI `33866066664`, local UAT
 320/360/375/390/430 px, dan remote production behavior UAT 320/390/430 px
 lulus tanpa overflow atau console error. Cache offline berubah ke
-`v37-icon-only-bottom-nav`. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth,
+`v38-floating-nav-label`. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth,
 provider, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata
 tidak aktif. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
 VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
 PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+V24 Icon-only Bottom Navigation sebelumnya memakai source main
+`f19bf3e2f0cd77d0a94af1021668aa342dc05feb`; presentasi label di dalam tinggi
+navbar telah digantikan oleh kontrak V25 berdasarkan koreksi langsung Andreas.
 
 Frontend public dummy V23 sebelumnya adalah Member Card Preview & Apply dari Saga
 Member main `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39), Preview

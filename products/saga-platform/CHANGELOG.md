@@ -8,6 +8,22 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V25 Compact Navigation + Floating Label deployed
+
+- Main `9a3661781158723b43da2bcb6e1960b4edad607a` (PR #41) aktif pada
+  deployment `dpl_5295PJjEdxDbheZV6yZHareHWr2Q` dan stable public URL setelah
+  Preview `dpl_4ugw4zDsQ8pm5TUpPToPb2tqTucE` berstatus Ready.
+- Navbar dipadatkan menjadi satu baris ikon maksimal 60 px; label aktif kini
+  berupa badge 28 px yang sepenuhnya berada di atas bar dan terpusat pada ikon.
+  Ikon 22 px, indikator 42 px, dan tombol 48 px tetap konsisten.
+- 152/152 test, exact PR/main CI, local UAT lima viewport, accessibility, dan
+  remote production behavior UAT tiga viewport lulus tanpa overflow atau
+  console error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V24 Icon-only Bottom Navigation deployed
 
 - Main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40) aktif pada

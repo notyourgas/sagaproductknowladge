@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V25 compact navigation + floating label deployed
+
+- Saga Member main `9a3661781158723b43da2bcb6e1960b4edad607a` (PR #41)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_5295PJjEdxDbheZV6yZHareHWr2Q`.
+- Navbar kini satu baris ikon maksimal 60 px; nama tujuan aktif tampil dalam
+  badge kecil terpisah di atas bar dan tepat di tengah ikon aktif.
+- 152 test, exact PR/main CI, local mobile UAT, dan remote production UAT
+  lulus. Runtime tetap dummy; backend, provider, transaksi, data nyata, dan
+  NFC tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk public demo deployed ke Vercel
 
 - Saga POS exact runtime `7fc4ff483b053db904511f8ae2106ce34ef975e8`

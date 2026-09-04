@@ -15,7 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `ec8c423fbcfd2537f090d76f3b06865091c37eec` |
+| Baseline sebelum pembaruan | `1d9a8ebc4a5397f7bec3969491c27d4b2cf5e458` |
+
+## Saga Member V25 Compact Navigation + Floating Label
+
+- Source exact `9a3661781158723b43da2bcb6e1960b4edad607a` (PR #41) aktif
+  pada Vercel production deployment `dpl_5295PJjEdxDbheZV6yZHareHWr2Q`
+  melalui stable public URL setelah Preview
+  `dpl_4ugw4zDsQ8pm5TUpPToPb2tqTucE` divalidasi.
+- Navbar icon-only maksimal 60 px; badge label aktif 28 px terpisah di atas
+  bar. Ikon 22 px, indikator 42 px, tombol 48 px, dan accessible name tetap.
+- Full 152 test, PR CI `33865512758`, main CI `33866066664`, local UAT lima
+  viewport, dan remote production behavior UAT 320/390/430 px lulus tanpa
+  overflow atau console error.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V25
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk Vercel public demo
 
