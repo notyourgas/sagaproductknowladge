@@ -1,5 +1,19 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+
+## 2026-09-05 - SagaOPS portrait modifier touch panel deployed
+
+- `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Exact application source: `78ced4511290fce99f111147610e8e4e31cff244`; deployment: `dpl_75K2g8q5t1PG9uk2xqmgjgSbvj98`.
+- Before: constrained 720x900 portrait scrolled the document. After: options scroll inside a named keyboard-accessible region; product identity and checkout stay in the viewport, without overlaying options. Standard 720x1280 and 1080x1920 already fitted before; no false baseline claim.
+- Quantity changes and offline/reconnect rerenders preserve option position and keyboard focus. Phone/landscape retains prior responsive document flow. No new dependency, animation, backend pricing or operator contract.
+- Evidence: 192/192 full regression; three local viewport scenarios with raw touch gestures, keyboard, note-to-cart, Axe serious/critical zero and overflow checks. Existing help measurement avoids stale DOM handles; pinned checkout is tested by geometry instead of a literal CSS position value.
+- Candidate and stable smoke pass on three viewports with zero checkout requests, simulator health and operator route denial. Stable demo: https://saga-pos-kiosk.vercel.app/kiosk . Rollback: `dpl_MQHDLnVTVGiovRThk6sCNdQmupia`.
+- Dependency audits zero vulnerabilities; heuristic secret scan clear. Public static output excludes operator pages and env files; server function still contains guarded operator modules.
+- Historical readiness remains 84/100. Real API/DB target, Customer Platform, physical NFC/printer and human UAT remain external gates; all 32 sprints are not accepted. This release changes the public demo only.
+- Impacted source: Kiosk modifier styles/render/template, regression/smoke and release evidence. Knowledge updated in product, dossier, changelogs, master and sync status. No new founder/business policy.
+
+
 ## Saga Member V38 Coffee Detail + Rencana Mampir
 
 - Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.

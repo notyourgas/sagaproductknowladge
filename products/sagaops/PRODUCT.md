@@ -1,6 +1,20 @@
 # SagaOPS Product Knowledge
 
 
+## 2026-09-05 - SagaOPS portrait modifier touch panel deployed
+
+- `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Exact application source: `78ced4511290fce99f111147610e8e4e31cff244`; deployment: `dpl_75K2g8q5t1PG9uk2xqmgjgSbvj98`.
+- Before: constrained 720x900 portrait scrolled the document. After: options scroll inside a named keyboard-accessible region; product identity and checkout stay in the viewport, without overlaying options. Standard 720x1280 and 1080x1920 already fitted before; no false baseline claim.
+- Quantity changes and offline/reconnect rerenders preserve option position and keyboard focus. Phone/landscape retains prior responsive document flow. No new dependency, animation, backend pricing or operator contract.
+- Evidence: 192/192 full regression; three local viewport scenarios with raw touch gestures, keyboard, note-to-cart, Axe serious/critical zero and overflow checks. Existing help measurement avoids stale DOM handles; pinned checkout is tested by geometry instead of a literal CSS position value.
+- Candidate and stable smoke pass on three viewports with zero checkout requests, simulator health and operator route denial. Stable demo: https://saga-pos-kiosk.vercel.app/kiosk . Rollback: `dpl_MQHDLnVTVGiovRThk6sCNdQmupia`.
+- Dependency audits zero vulnerabilities; heuristic secret scan clear. Public static output excludes operator pages and env files; server function still contains guarded operator modules.
+- Historical readiness remains 84/100. Real API/DB target, Customer Platform, physical NFC/printer and human UAT remain external gates; all 32 sprints are not accepted. This release changes the public demo only.
+- Impacted source: Kiosk modifier styles/render/template, regression/smoke and release evidence. Knowledge updated in product, dossier, changelogs, master and sync status. No new founder/business policy.
+
+
+
 ## 2026-09-05 - SagaOPS compact identical cart release
 
 - Classification: `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
@@ -26,7 +40,7 @@
 
 
 Updated: 5 September 2026
-Latest material status: `KIOSK_COMPACT_IDENTICAL_CART_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
+Latest material status: `KIOSK_MODIFIER_TOUCH_PANEL_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
 Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PERSISTENT_HELP_SAFE_CANCEL_PUBLIC_DEMO_DEPLOYED / KIOSK_SUCCESS_TIME_AND_SCROLL_PUBLIC_DEMO_DEPLOYED / KIOSK_MEMBER_DEGRADED_RECOVERY_PUBLIC_DEMO_DEPLOYED / KIOSK_CHECKOUT_QUOTE_GUARD_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
