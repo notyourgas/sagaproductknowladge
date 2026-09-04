@@ -1,5 +1,26 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga POS Kiosk early NFC Member demo
+
+- Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /
+  PHYSICAL_NFC_NOT_ACTIVATED / PRODUCT_PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+- Exact deployed source: `7422eb9c8a8e57b74ea38adaac1e2d9755676a2e`.
+- Stable deployment: `dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu` pada
+  `https://saga-pos-kiosk.vercel.app/kiosk`.
+- Perubahan: Tap NFC simulator setelah order type menghubungkan Member fixture
+  session-owned dan membuka welcome, tiga rekomendasi, serta kategori `Untukmu`.
+- Evidence: full 175/175; browser 720×1280 dan 1080×1920; touch 144 px;
+  reduced motion; Axe serious/critical 0; overflow 0; dependency/secret scan;
+  health dan stable public smoke tanpa application error lulus.
+- Batas: simulator hanya public demo. Physical NFC, Customer Platform, payment
+  production, durable outlet runtime, settlement, perangkat, dan business
+  acceptance belum tervalidasi. Readiness formal tetap 84/100.
+- File diperbarui: `products/sagaops/PRODUCT.md`,
+  `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 ## Saga POS Kiosk persistent help dan safe session cancel
 
 - Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /

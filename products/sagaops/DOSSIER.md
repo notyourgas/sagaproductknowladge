@@ -8,6 +8,8 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 5 September 2026
+- Latest material delivery: `KIOSK_EARLY_NFC_MEMBER_DEMO_DEPLOYED /
+  PHYSICAL_NFC_NOT_ACTIVATED`
 - Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PERSISTENT_HELP_SAFE_CANCEL_PUBLIC_DEMO_DEPLOYED / KIOSK_SUCCESS_TIME_AND_SCROLL_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `KIOSK_PUBLIC_DEMO_ACTIVE / SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
@@ -47,6 +49,18 @@ ledger, stock guard, override, purchase order, dashboard, dan approval.
 Workflow lokal mencakup POS/back office, operator console OWNER/STAFF,
 session-derived role/outlet, checkout, recovery, closing, approval, reporting,
 Member Code/Voyager/Reward integration boundary, dan fallback tanpa printer.
+
+Public demo Kiosk exact deployed source
+`7422eb9c8a8e57b74ea38adaac1e2d9755676a2e` menambahkan Tap NFC simulator
+setelah Dine-in/Takeaway. Aksi besar 144 px mengikat Member fixture pada session
+server dan membuka welcome, tiga rekomendasi, modifier, serta kategori
+`Untukmu` tanpa browser credential dan tanpa membuat order/payment. Endpoint
+memerlukan same-origin, HttpOnly session, CSRF, rate limit, serta order-type
+policy; runtime non-public-demo tidak memproyeksikannya. Stable deployment
+`dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu` lulus full 175/175 dan browser smoke dua
+viewport dengan Axe serious/critical 0, overflow 0, serta application error 0.
+Physical NFC, Customer Platform production, gateway nyata, dan business
+readiness tidak berubah.
 
 Saga POS local sprint lab menambah self-service Kiosk, assisted Cashier
 fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,

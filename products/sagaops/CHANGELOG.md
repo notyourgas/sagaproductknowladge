@@ -1,5 +1,19 @@
 # SagaOPS Changelog
 
+## 2026-09-05 - Early NFC Member public-demo handoff
+
+- `CONFIRMED`: setelah Dine-in/Takeaway, public demo Kiosk menyediakan touch
+  card Tap NFC simulator yang membuka welcome, tiga rekomendasi, dan kategori
+  `Untukmu` dalam satu tap.
+- Server mengabaikan credential browser; same-origin, HttpOnly session, CSRF,
+  rate limit, order-type policy, serta nol order/payment tetap terverifikasi.
+- Exact deployed source `7422eb9c8a8e57b74ea38adaac1e2d9755676a2e`;
+  stable deployment `dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu`.
+- Full 175/175, dua viewport, Axe/overflow/touch/reduced-motion, dependency dan
+  secret scan, health, serta public smoke lulus.
+- Hanya public demo simulator yang berubah. Physical NFC, Customer Platform,
+  payment production, product activation, dan `BUSINESS_READY` tetap OFF.
+
 ## Tujuan
 
 Mencatat perubahan material SagaOPS.

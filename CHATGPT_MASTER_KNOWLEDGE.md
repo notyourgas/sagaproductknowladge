@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga POS Kiosk early NFC Member demo aktif pada
+`https://saga-pos-kiosk.vercel.app/kiosk` dari exact deployed source
+`7422eb9c8a8e57b74ea38adaac1e2d9755676a2e` dan deployment
+`dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu`. Setelah Dine-in/Takeaway, satu touch card
+144 px yang jelas berlabel simulator membuka welcome Andreas, tiga rekomendasi,
+modifier, dan kategori `Untukmu` tanpa mengetik kode. Browser credential
+diabaikan; session/CSRF/rate limit/order-type policy berlaku dan identifikasi
+membuat nol order/payment. Full 175/175 serta browser 720×1280 dan 1080×1920
+lulus dengan Axe serious/critical 0, overflow 0, dan application error 0.
+Physical NFC, Customer Platform production, QRIS/gateway nyata, serta
+`BUSINESS_READY` tetap tidak aktif; readiness formal tetap 84/100.
+
 Saga POS Kiosk persistent help dan safe session cancel aktif pada
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact runtime
 `85d9ed18ea37fa922d6ee9b6ef4a9f0d571a7da3` dan deployment

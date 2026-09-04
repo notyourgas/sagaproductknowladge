@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga POS Kiosk early NFC Member demo sync
+
+- Informasi `CONFIRMED`: exact deployed source
+  `7422eb9c8a8e57b74ea38adaac1e2d9755676a2e` dan stable public-demo deployment
+  `dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu`.
+- Perubahan: Tap NFC simulator setelah Dine-in/Takeaway membuka Member welcome,
+  tiga rekomendasi, modifier, dan kategori `Untukmu` tanpa browser credential.
+- Alasan: membuat pengalaman NFC awal dapat dievaluasi dari HP tanpa
+  mengklaim hardware/data/integrasi production yang belum tersedia.
+- Area: SagaOPS/Saga POS Kiosk; produk lain tidak berubah.
+- Delivery: public demo simulator aktif; physical NFC, Customer Platform,
+  payment production, product activation, dan business readiness tidak berubah.
+- Validasi: full 175/175, dua viewport, Axe/overflow/touch/reduced-motion,
+  dependency/secret scan, health, dan public smoke tanpa application error.
+- Blocker: signed device bridge dan hardware UAT, Customer Platform external
+  contract/UAT, durable outlet runtime, settlement, serta business acceptance.
+- Knowledge commit menggunakan `main HEAD`.
+
 ## 2026-09-05 - Saga POS Kiosk persistent help dan safe cancel sync
 
 - Informasi `CONFIRMED`: exact source
