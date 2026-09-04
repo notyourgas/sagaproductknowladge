@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-180 - Emoji Akses cepat Saga Member tidak memakai fixed alignment box
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Ukuran dan wadah emoji pada kartu Akses cepat Saga Member |
+| Keputusan | Tampilkan Coffee, Studio, Reward, dan Quest sebagai glyph emoji berukuran natural tanpa fixed width/height, padding, background, border, radius, atau shadow pada elemen emoji. Area sentuh dan alignment grid tetap menjadi tanggung jawab kartu induk. |
+| Alasan | Andreas menegaskan emoji tidak perlu memiliki kotak di dalam kartu; fixed alignment box yang tidak terlihat juga tidak diperlukan. |
+| Alternatif | Mempertahankan ruang alignment 42/38 px dari DEC-170; memakai inner box berwarna; mengganti emoji dengan Feather. |
+| Dampak | Main `cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842` dan deployment `dpl_GXQ4dDBK7YxehDZ3WoRDu8KN3V5f` memakai glyph natural, mempertahankan target sentuh kartu, dan lulus lima viewport tanpa overflow. Backend/provider/data nyata tetap OFF. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-179 - Promosi install Saga Member menunggu engagement dan capability
 
 | Field | Nilai |
@@ -158,7 +172,7 @@ keputusan pengganti.
 | Alternatif | Mempertahankan kotak berwarna; menghapus ruang alignment; mengganti emoji dengan Feather. |
 | Dampak | Main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` dan deployment `dpl_HzgJW5FataWqGqL6qsJuyJio8AeX` menghapus seluruh permukaan visual wadah emoji, mempertahankan alignment 42/38 px, dan menjaga target kartu minimal 44 px. Backend/provider/data nyata tetap OFF. |
 | Pemberi keputusan | Andreas |
-| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Status | `DEPRECATED` oleh `DEC-180`; riwayat V28 tetap dipertahankan |
 | Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
 
 ## DEC-169 - QRIS yang melewati countdown harus masuk handoff server

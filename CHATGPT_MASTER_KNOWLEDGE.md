@@ -209,7 +209,17 @@ dan disposable restore belum dijalankan. Production tetap sehat pada exact
 `ca549d185d02786e1233c44da5562b55830c490d`, release
 `20260903141813-ca549d1`; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
-Saga Member V28 Borderless Quick Emoji aktif pada stable public dummy URL
+Saga Member V37 Bare Quick Emoji aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842` (PR #54) dan production
+deployment `dpl_GXQ4dDBK7YxehDZ3WoRDu8KN3V5f`. Empat emoji Akses cepat memakai
+ukuran glyph natural tanpa fixed width/height, padding, background, border,
+radius, atau shadow; kartu induk tetap menjadi target sentuh. Full 190 test,
+PR/main CI, lima viewport, dan remote UAT lulus tanpa overflow, request backend,
+console error, atau temuan Axe serious/critical. Runtime tetap dummy;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+Saga Member V28 Borderless Quick Emoji sebelumnya aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44), Preview
 `dpl_3Rz3pgJQPQK8Uk5ts1FmZWhJz2nk`, dan production deployment

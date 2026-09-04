@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga Member V37 Bare Quick Emoji
+
+- Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842` (PR #54; PR CI `33919122407`; canonical-main CI `33919344362`).
+- Stable deployment: `dpl_GXQ4dDBK7YxehDZ3WoRDu8KN3V5f` pada `https://saga-member-platform.vercel.app`.
+- Perubahan: emoji Akses cepat memakai glyph natural tanpa fixed width/height, padding, background, border, radius, atau shadow; target sentuh tetap pada kartu induk.
+- Evidence: 190/190 test, lima viewport, remote production UAT, Axe serious/critical 0, overflow 0, broken image 0, console error 0, dan backend request 0.
+- Batas: runtime dummy; backend, auth, transaksi, real data, QRIS, Push, NFC, printer, provider nyata, physical UAT, dan pilot nyata tetap OFF.
+
 ## Saga Member V36 Home Install Nudge
 
 - Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
