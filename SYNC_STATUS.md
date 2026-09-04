@@ -5,12 +5,13 @@
 - Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /
   PHYSICAL_NFC_NOT_ACTIVATED / PRODUCT_PRODUCTION_ACTIVATED=false /
   BUSINESS_READY=false`.
-- Exact deployed source: `7422eb9c8a8e57b74ea38adaac1e2d9755676a2e`.
-- Stable deployment: `dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu` pada
+- Exact deployed source: `b42419cefad6b585123bb4816353e8d49f97f373`.
+- Stable deployment: `dpl_4SGbVJdjAJjGRTSnjZUE4kRqf7k4` pada
   `https://saga-pos-kiosk.vercel.app/kiosk`.
 - Perubahan: Tap NFC simulator setelah order type menghubungkan Member fixture
   session-owned dan membuka welcome, tiga rekomendasi, serta kategori `Untukmu`.
-- Evidence: full 175/175; browser 720×1280 dan 1080×1920; touch 144 px;
+- Recovery: offline mengunci NFC dan tetap membuka guest catalog tanpa request.
+- Evidence: full 176/176; browser 720×1280 dan 1080×1920; touch 144 px;
   reduced motion; Axe serious/critical 0; overflow 0; dependency/secret scan;
   health dan stable public smoke tanpa application error lulus.
 - Batas: simulator hanya public demo. Physical NFC, Customer Platform, payment

@@ -101,8 +101,8 @@ SETTLEMENT_PENDING_CLEARING / HARDWARE_AND_OUTLET_PILOT_PENDING /
 BUSINESS_READY=false`.
 
 - Kiosk public demo aktif di `https://saga-pos-kiosk.vercel.app/kiosk` melalui
-  deployment Vercel `dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu`, memakai exact deployed
-  source `7422eb9c8a8e57b74ea38adaac1e2d9755676a2e`. Surface publik dibatasi ke
+  deployment Vercel `dpl_4SGbVJdjAJjGRTSnjZUE4kRqf7k4`, memakai exact deployed
+  source `b42419cefad6b585123bb4816353e8d49f97f373`. Surface publik dibatasi ke
   Kiosk dan API simulator; gateway nyata, canary, dan promo nyata tidak
   diaktifkan. State session/order bersifat ephemeral dan bukan runtime outlet.
 - Setelah pelanggan memilih Dine In atau Takeaway, Kiosk meminta identifikasi
@@ -113,6 +113,8 @@ BUSINESS_READY=false`.
   order type. Satu tap membuka welcome dan tiga rekomendasi tanpa meminta kode,
   tanpa menerima credential browser, serta tanpa membuat order/payment. Fitur
   hanya aktif pada public demo; physical NFC dan Customer Platform tetap OFF.
+  Saat offline, status NFC berubah menjadi `Offline`, aksinya terkunci, dan
+  guest tetap dapat membuka katalog termuat tanpa request NFC.
 - Identitas Member terverifikasi kini dimiliki session server. Refresh memulihkan
   welcome/rekomendasi atau cart beserta benefit tanpa menyimpan raw Member Code
   di browser atau mengirim ulang credential pada quote/checkout. Pilihan guest
@@ -136,7 +138,7 @@ BUSINESS_READY=false`.
 - Bantuan persisten tersedia pada P02-P07. Pelanggan dapat membatalkan sesi
   pre-checkout lewat konfirmasi aman dalam tiga tap; decline atau network gagal
   mempertahankan draft, sedangkan P08-P10 tidak menawarkan cancel.
-- Full regression 175/175, browser dua viewport,
+- Full regression 176/176, browser dua viewport,
   dependency/secret scan, production health/static smoke, serta browser UAT
   P10 sampai extension timer dan struk tujuh item lulus.
 - Source exact `410ad19b1641dc47e84c86dc0b8324082d01083b` menambahkan atomic

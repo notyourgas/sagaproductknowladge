@@ -2,12 +2,13 @@
 
 Saga POS Kiosk early NFC Member demo aktif pada
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact deployed source
-`7422eb9c8a8e57b74ea38adaac1e2d9755676a2e` dan deployment
-`dpl_6dQLoymQo5EDCwfWjPAY4fnUZNcu`. Setelah Dine-in/Takeaway, satu touch card
+`b42419cefad6b585123bb4816353e8d49f97f373` dan deployment
+`dpl_4SGbVJdjAJjGRTSnjZUE4kRqf7k4`. Setelah Dine-in/Takeaway, satu touch card
 144 px yang jelas berlabel simulator membuka welcome Andreas, tiga rekomendasi,
 modifier, dan kategori `Untukmu` tanpa mengetik kode. Browser credential
 diabaikan; session/CSRF/rate limit/order-type policy berlaku dan identifikasi
-membuat nol order/payment. Full 175/175 serta browser 720×1280 dan 1080×1920
+membuat nol order/payment. Offline mengunci NFC dan mempertahankan guest catalog
+tanpa request NFC. Full 176/176 serta browser 720×1280 dan 1080×1920
 lulus dengan Axe serious/critical 0, overflow 0, dan application error 0.
 Physical NFC, Customer Platform production, QRIS/gateway nyata, serta
 `BUSINESS_READY` tetap tidak aktif; readiness formal tetap 84/100.
