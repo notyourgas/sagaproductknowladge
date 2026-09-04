@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V21 card readability refinement deployed
+
+- Saga Member main `a788cce43fda9f12d12c4fbb9db9f69bf492f841` (PR #37)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz`.
+- Preview dan PNG tidak lagi memakai rectangle pada label kartu; stroke adaptif
+  menjaga teks, sedangkan pemilih tema menjadi stepper kiri/kanan satu baris.
+- 147 test, exact PR/main CI, mobile/accessibility/export, dan remote UAT lulus.
+  Runtime tetap dummy; backend, provider, transaksi, data nyata, dan NFC tetap
+  OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk cart session recovery local validated
 
 - Saga POS exact `506af0e5a66038c406660b5cf7a3d21d8ebc8480` dipush. Cart kini

@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V21 card readability refinement sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `a788cce43fda9f12d12c4fbb9db9f69bf492f841`, PR #37, PR CI
+  `33856318571`, main CI `33856691901`, Preview
+  `dpl_5p56eUtwhA8xw1keEskXkntcPEVi`, dan production deployment
+  `dpl_APiyaJGgW9v4BecMyGEHWT3TkELz` aktif pada stable URL.
+- Rectangle overlay kartu dihapus, stroke adaptif diterapkan, dan navigasi tema
+  menjadi stepper satu baris. Delivery tetap public dummy dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk cart session recovery sync
 
 - Informasi `CONFIRMED`: Saga POS exact
