@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V17 Inbox Center aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`416adac5794d65e62b21a2b8d723c879fc4d0f64` (PR #32) dan deployment
+`dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW`. Inbox kini memiliki unread overview,
+filter Semua/Belum dibaca/Points/Studio, kelompok waktu, kategori, waktu,
+deep-link, individual/bulk read state, empty recovery, dan badge Profil.
+
+Read state hanya presentation state sesi dummy. Push tetap OFF; tidak ada
+provider, backend, transaksi, atau data pelanggan nyata yang diaktifkan.
+133/133 test, PR CI `33838157171`, main CI `33838557658`, Preview
+`dpl_BiCCVMKNK6HkNqapmhxMzgfBrUYs`, local UAT 320–430 px, Axe, touch target,
+offline shell, serta Vercel inspection lulus. Public browser UAT V17 masih
+pending. Status `SAGA_MEMBER_V17_LOCAL_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_UAT_PENDING / PUBLIC_DUMMY_DEMO_ACTIVE /
+REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 Saga Member V16 Points Ledger aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `373742e361a7e702f25c71c7f2ec9edcfb9e6540` (PR #31) dan deployment

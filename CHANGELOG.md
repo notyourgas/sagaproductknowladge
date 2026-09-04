@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V17 Inbox Center sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `416adac5794d65e62b21a2b8d723c879fc4d0f64`, PR #32, PR CI
+  `33838157171`, main CI `33838557658`, Preview
+  `dpl_BiCCVMKNK6HkNqapmhxMzgfBrUYs`, dan production deployment
+  `dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW` aktif pada stable URL.
+- Before -> after: dua kartu Inbox pasif berubah menjadi notification center
+  dengan unread hierarchy, filter, kelompok waktu, deep-link, read state,
+  empty recovery, dan badge Profil.
+- 133/133 test, exact PR/main CI, local UAT lima viewport, Axe, touch target,
+  offline shell, serta Vercel inspection lulus. Public browser UAT V17 pending.
+- Backend/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan
+  `BUSINESS_READY=false`. Dokumen terdampak: Saga Platform
+  product/dossier/changelog, portfolio, master knowledge, root changelog, dan
+  sync status.
+
 ## 2026-09-04 - SagaOPS Cashier Payment Confidence sync
 
 - Informasi `CONFIRMED`: source exact

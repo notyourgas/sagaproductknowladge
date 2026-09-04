@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V17 Inbox Center deployed
+
+- Main `416adac5794d65e62b21a2b8d723c879fc4d0f64` (PR #32) aktif pada
+  deployment `dpl_9iUA84cSgpbLqkQyNeUdwkMigeFW` dan stable public URL setelah
+  Preview `dpl_BiCCVMKNK6HkNqapmhxMzgfBrUYs` berstatus Ready.
+- Inbox kini memiliki unread overview, filter, kelompok waktu, kategori,
+  deep-link, individual/bulk read state, empty recovery, dan badge Profil.
+- 133/133 test, PR CI `33838157171`, main CI `33838557658`, local UAT lima
+  viewport, Axe, target sentuh, offline shell, serta Vercel inspection lulus;
+  public browser UAT V17 masih pending.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_V17_LOCAL_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_UAT_PENDING / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V16 Points Ledger deployed
 
 - Main `373742e361a7e702f25c71c7f2ec9edcfb9e6540` (PR #31) aktif pada
