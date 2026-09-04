@@ -13,7 +13,22 @@ Axe/overflow, dependency/secret scan, health, dan public smoke tanpa error
 lulus. Runtime tetap QRIS simulator ephemeral; readiness formal tetap 84/100
 dan seluruh gate outlet eksternal tidak berubah.
 
-Saga Member V33 Notification Rhythm aktif pada stable public dummy URL
+Saga Member V34 Pusat Data Demo aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`bb8307c1ee359a2c340ccbf3b4f9af388798b35d` (PR #50), Preview
+`dpl_D9njs8ouSsEggD1mxHiWeF3aqZ31`, dan production deployment
+`dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy`. Profil kini memiliki route Privasi & data
+yang menjelaskan scope dummy, inventaris, penyimpanan fixture/browser/server,
+export JSON browser-only tanpa identitas/session/provider/credential, dan reset
+perubahan demo melalui alert dialog aksesibel. Full 184 test, exact PR/main CI,
+UAT lokal lima viewport plus text resize 200%, Preview artifact UAT, serta
+remote production UAT 390 px lulus tanpa overflow, backend request, response
+gagal, atau Axe serious/critical. Cache offline `v47-demo-data-center`.
+Backend, auth, transaksi, data pelanggan, QRIS, Push, NFC, printer, dan
+provider nyata tetap OFF; `PRODUCTION_ACTIVATED=false` dan
+`BUSINESS_READY=false`.
+
+Saga Member V33 Notification Rhythm sebelumnya aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `cda26b0aa5291cd00003f56d3377a9de4219b441` (PR #49), Preview
 `dpl_J27d9AiWjLGwJ4iaZF9AtyebH7Nq`, dan production deployment

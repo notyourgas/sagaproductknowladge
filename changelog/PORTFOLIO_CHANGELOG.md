@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga Member V34 Pusat Data Demo deployed
+
+- Saga Member main `bb8307c1ee359a2c340ccbf3b4f9af388798b35d` (PR #50)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy`.
+- Profil sekarang menjelaskan data contoh dan penyimpanannya, menyediakan
+  export JSON tanpa identitas/credential, serta reset perubahan demo yang
+  hanya membersihkan state browser setelah konfirmasi.
+- 184 test, exact PR/main CI, UAT lokal lima viewport plus text resize 200%,
+  Preview artifact UAT, dan remote production UAT 390 px lulus. Runtime tetap
+  dummy; backend/provider/transaksi/real data tetap OFF dan
+  `BUSINESS_READY=false`.
+
 ## 2026-09-05 - Saga POS Kiosk P10 success time dan receipt scroll deployed
 
 - `CONFIRMED`: Saga POS source

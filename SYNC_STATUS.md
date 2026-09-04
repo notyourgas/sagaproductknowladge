@@ -1,5 +1,28 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga Member V34 Pusat Data Demo
+
+- Status: `accepted / CONFIRMED /
+  SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+- Source exact: `bb8307c1ee359a2c340ccbf3b4f9af388798b35d` (PR #50).
+- Stable deployment: `dpl_2HGvjcGmgAAp14CZvQAcYZtAFvjy` pada
+  `https://saga-member-platform.vercel.app`; Preview tervalidasi
+  `dpl_D9njs8ouSsEggD1mxHiWeF3aqZ31`.
+- Perubahan: Pusat Data Demo memberi disclosure, inventaris, lokasi penyimpanan,
+  export JSON aman browser-only, dan reset state demo lokal dengan konfirmasi.
+- Evidence: 184/184 test; PR CI `33904736090`; main CI `33904955721`; UAT
+  lokal lima viewport plus text resize 200%; Preview artifact UAT; remote
+  production UAT 390 px; Axe serious/critical 0; backend request dan failure 0.
+- Batas: backend, auth, transaksi, real data, QRIS, Push, NFC, printer, dan
+  provider nyata tetap OFF; rollback deployment V33
+  `dpl_7kv65g8maCeT8mEq2t6HnWNQwKi3`.
+- File diperbarui: `products/saga-platform/PRODUCT.md`,
+  `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `DECISIONS.md`, `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 ## Saga POS Kiosk P10 success time dan receipt-scroll control
 
 - Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /
