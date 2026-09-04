@@ -8,6 +8,22 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V30 Reward Pocket deployed
+
+- Main `64da605fe707b44f6ebf781e7c17250f10a8026e` (PR #46) aktif pada
+  deployment `dpl_3q6jh5d7apx4NgiBgYmJFVHqQMEL` dan stable public URL setelah
+  Preview `dpl_71xjbvjUpWHfvpj7HUqkaqRHqpqN` berstatus Ready.
+- Reward eligible kini menghasilkan pocket memori-tab berisi detail reward,
+  biaya Points, referensi demo tersamarkan, dan panduan handoff ke crew.
+- Dialog native crew berlabel demo, pembatalan bersifat reversible, saldo tetap
+  128, fokus dipulihkan, dan tidak ada request backend.
+- 165/165 test, exact PR/main CI, local UAT lima viewport, accessibility, dan
+  remote production UAT lima viewport lulus tanpa overflow atau page error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V29 Quest Trail deployed
 
 - Main `8fadccbf96665701b2ecf1fb98a98a762ccdde65` (PR #45) aktif pada

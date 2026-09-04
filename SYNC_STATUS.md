@@ -15,7 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `7445315458b97c742e02374f469916735fcee579` |
+| Baseline sebelum pembaruan | `6bd5e2232d05973af675a1b8f3541779bfbb537e` |
+
+## Saga Member V30 Reward Pocket
+
+- Source exact `64da605fe707b44f6ebf781e7c17250f10a8026e` (PR #46) aktif
+  pada Vercel production deployment `dpl_3q6jh5d7apx4NgiBgYmJFVHqQMEL`
+  melalui stable public URL setelah Preview
+  `dpl_71xjbvjUpWHfvpj7HUqkaqRHqpqN` divalidasi.
+- Reward Pocket memori-tab, dialog handoff crew berlabel demo, dan pembatalan
+  reversible lulus focus recovery tanpa mengubah saldo atau backend.
+- Full 165 test, PR CI `33881639119`, main CI `33881866552`, local UAT lima
+  viewport, dan remote production UAT lima viewport lulus tanpa overflow,
+  request backend, page error, atau temuan Axe serious/critical.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V30
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk early Member dan rekomendasi
 

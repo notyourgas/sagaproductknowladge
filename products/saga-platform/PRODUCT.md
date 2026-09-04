@@ -66,6 +66,29 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V30 Reward Pocket
+
+- Saga Member canonical main `64da605fe707b44f6ebf781e7c17250f10a8026e`
+  (PR #46) aktif pada Vercel production deployment
+  `dpl_3q6jh5d7apx4NgiBgYmJFVHqQMEL` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_71xjbvjUpWHfvpj7HUqkaqRHqpqN` divalidasi.
+- Penukaran Reward eligible kini membuat `Reward Pocket` yang persisten selama
+  tab terbuka, berisi reward, biaya Points, referensi demo tersamarkan, dan
+  tiga langkah handoff ke crew.
+- CTA `Tampilkan ke crew` membuka dialog native dengan penanda eksplisit
+  `DEMO / TIDAK BERLAKU UNTUK TRANSAKSI`; pembatalan simulasi menghapus pocket
+  secara reversible dan mengembalikan fokus.
+- State hanya berada di memori tab, refresh menghapusnya, saldo tetap 128, dan
+  tidak ada request backend atau perubahan transaksi.
+- Full 165 test, PR CI `33881639119`, canonical-main CI `33881866552`, local
+  UAT lima viewport, dan remote production UAT 320/360/375/390/430 px lulus
+  tanpa overflow, request backend, page error, atau temuan Axe
+  serious/critical.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+  pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V29 Quest Trail
 
 - Saga Member canonical main `8fadccbf96665701b2ecf1fb98a98a762ccdde65`
