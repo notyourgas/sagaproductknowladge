@@ -15,7 +15,29 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `0dc41243219eb707a3a9d0a402db0638d2f7ef51` |
+| Baseline sebelum pembaruan | `9e032d7b79ee51d5cb3a615a446d189b5b5f04e0` |
+
+## SagaOPS Kiosk sold-out race recovery
+
+- Source exact `4ce47803333a9d171ba816560fa325be2a0da12a` sudah dipush ke
+  branch Saga POS.
+- Quote stale memicu satu refresh katalog. Item unavailable dilepas, item valid
+  dipertahankan dan di-quote ulang; cart kosong kembali ke katalog.
+- Full 158/158 dan focused Kiosk 25/25 lulus. Recovery membuat 0 payment intent;
+  Axe, overflow/fold/touch, browser error checks, secret scan, serta OSV lulus.
+- Status `CONFIRMED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production dan readiness
+  formal 84/100 tidak berubah.
+
+## File yang berubah pada sinkronisasi SagaOPS Kiosk sold-out race recovery
+
+- `products/sagaops/PRODUCT.md`
+- `products/sagaops/DOSSIER.md`
+- `products/sagaops/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V21 card readability refinement
 

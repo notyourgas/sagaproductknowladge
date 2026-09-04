@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk sold-out race recovery sync
+
+- Informasi `CONFIRMED`: Saga POS exact
+  `4ce47803333a9d171ba816560fa325be2a0da12a` sudah dipush.
+- Cart direkonsiliasi dengan katalog server ketika item baru sold out; item
+  valid tetap tersimpan dan cart kosong diarahkan memilih pengganti.
+- Full 158/158 dan focused Kiosk 25/25 lulus; recovery membuat 0 payment intent.
+  Delivery tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan
+  readiness 84/100 tidak berubah.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, portfolio, master
+  knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V21 card readability refinement sync
 
 - Informasi `CONFIRMED`: Saga Member main

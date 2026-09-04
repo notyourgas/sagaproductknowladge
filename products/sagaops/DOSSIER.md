@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -53,7 +53,7 @@ fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,
 modifier, cash/shift, QRIS simulator, Member/Reward fixture, availability,
 refund/remake, report/export, device health dan print spooler boundary.
 Kiosk portrait P01-P12 pada source exact
-`506af0e5a66038c406660b5cf7a3d21d8ebc8480` kini memiliki hierarchy kategori
+`4ce47803333a9d171ba816560fa325be2a0da12a` kini memiliki hierarchy kategori
 dan modifier yang lebih jelas, cart dengan harga per item dan undo, jalur QRIS
 tunggal yang lebih singkat, QR stabil saat polling, bantuan kontekstual,
 recovery offline/outage/idle, serta focus dan status announcement yang lebih
@@ -75,8 +75,11 @@ memperlihatkan benefit serta total server sebelum checkout. Verifikasi member
 tidak membuat payment intent; CTA konfirmasi membuat tepat satu checkout.
 Cart session recovery memulihkan pesanan setelah reload lalu meminta quote ulang
 dari server. Draft tidak menyimpan harga/member/payment, terikat session, dan
-dibersihkan pada idle/new session/checkout/expiry. Full suite terkini 156/156,
-focused Kiosk template/browser 20/20, dan cart draft contract 2/2 lulus. Perubahan ini masih
+dibersihkan pada idle/new session/checkout/expiry. Sold-out race recovery
+menyegarkan katalog ketika quote menolak item stale, melepas hanya item habis,
+mempertahankan item valid, dan mengarahkan pelanggan memilih pengganti bila cart
+kosong. Recovery membuat 0 payment intent. Full suite terkini 158/158 dan
+focused Kiosk 25/25 lulus. Perubahan ini masih
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; validasi fisik portrait,
 owner visual/add-on sign-off, dan production release gate tetap diperlukan.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,

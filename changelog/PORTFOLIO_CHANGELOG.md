@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk sold-out race recovery local validated
+
+- Saga POS exact `4ce47803333a9d171ba816560fa325be2a0da12a` dipush. Kiosk kini
+  merekonsiliasi cart otomatis terhadap katalog server saat menu baru sold out,
+  mempertahankan item valid, dan memberi jalur memilih pengganti tanpa dead-end.
+- Full 158/158 dan focused Kiosk 25/25 lulus; recovery membuat 0 payment intent.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100
+  dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V21 card readability refinement deployed
 
 - Saga Member main `a788cce43fda9f12d12c4fbb9db9f69bf492f841` (PR #37)

@@ -8,6 +8,18 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Sold-out race recovery Kiosk tervalidasi lokal
+
+- Source exact `4ce47803333a9d171ba816560fa325be2a0da12a` dipush ke branch Saga POS.
+- Saat quote menolak menu yang baru sold out, Kiosk memuat katalog server,
+  melepas hanya item unavailable, mempertahankan item valid, dan melakukan
+  requote. Cart kosong kembali ke katalog dengan arahan memilih pengganti.
+- Acceptance membuktikan satu stale quote ditolak dan 0 payment intent dibuat
+  selama recovery. Full 158/158 dan focused Kiosk 25/25 lulus; Axe,
+  overflow/fold/touch, console/page/request checks, secret scan, serta OSV lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness 84/100,
+  production, canary, settlement, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Cart session recovery Kiosk tervalidasi lokal
 
 - Source exact `506af0e5a66038c406660b5cf7a3d21d8ebc8480` dipush ke branch Saga POS.

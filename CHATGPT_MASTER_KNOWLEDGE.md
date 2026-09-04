@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+SagaOPS Kiosk sold-out race recovery tervalidasi lokal pada source exact
+`4ce47803333a9d171ba816560fa325be2a0da12a` yang sudah dipush. Ketika quote
+server menolak menu yang berubah menjadi sold out setelah masuk cart, Kiosk
+memuat katalog terbaru, melepas hanya item unavailable, mempertahankan item
+valid beserta modifier/quantity, dan melakukan requote. Bila cart kosong,
+pelanggan kembali ke katalog dengan arahan memilih pengganti. Satu stale quote
+ditolak dan 0 payment intent dibuat selama recovery. Full 158/158, focused
+Kiosk 25/25, Axe serious/critical nol, overflow nol, fold/touch, browser error
+checks, secret scan, serta OSV 31 package/0 vulnerability lulus. Status
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary, settlement,
+readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 Saga Member V21 Member Card readability refinement aktif pada stable public
 dummy URL `https://saga-member-platform.vercel.app` dari canonical main
 `a788cce43fda9f12d12c4fbb9db9f69bf492f841` (PR #37), Preview
