@@ -8,6 +8,18 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Cashier QRIS Confidence tervalidasi lokal
+
+- Source exact `4a4ff91acdc9c2117efc268d525317971e4de2ff` dipush ke branch Saga POS.
+- QRIS uncertain kini memiliki status card dan mengunci checkout pengganti
+  sampai server mengembalikan paid atau terminal state. Status, order, total,
+  warning, bounded checking, dan logout cleanup tetap code-native.
+- Focused 4/4 dan full suite 141/141 lulus; browser 1440×900/1024×768, Axe,
+  overflow, target 56 px, exactly-once fulfillment, secret scan, dan OSV
+  31 package/0 temuan lulus. Endpoint npm audit resmi timeout.
+- Production/canary/settlement tidak berubah; readiness 84/100, transaksi
+  locked, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Payment Confidence P08–P09 tervalidasi lokal
 
 - Source exact `795cc3327249aeee7575deb66bdda9e2be09d1f3` dipush ke branch Saga POS.

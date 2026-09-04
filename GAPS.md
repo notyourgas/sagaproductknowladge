@@ -1269,7 +1269,8 @@ GAP-004, bukan gap implementasi warna komponen.
   checkout/outbox, dan restart recovery. Evidence exact
   `8b63df321c3a0f7aeba9080eea5ac044470a6d8c` bersifat lokal dan belum
   membuktikan external PostgreSQL, multi-instance, atau staging recovery.
-- `TODO`: source terbaru exact `795cc33` (Saga Payment Confidence P08–P09;
+- `TODO`: source terbaru exact `4a4ff91` (Cashier Payment Confidence;
+  Saga Payment Confidence P08–P09 `795cc33`;
   menu asset completion `ec8ffd9`;
   scheduled availability `f5c446b`;
   stale-version conflict guard `54fda1a`;
@@ -1298,8 +1299,8 @@ GAP-004, bukan gap implementasi warna komponen.
   worker, transaksi/row lock database durable, deployed cache convergence,
   kalender hari libur/jam outlet nyata, durable audit retention/export,
   multi-device dan operator UAT.
-- `CONFIRMED`: exact `795cc33` lulus full suite 138/138, focused
-  payment/portrait 13/13, secret scan, dan OSV 31 package production/0 temuan;
+- `CONFIRMED`: exact `4a4ff91` lulus full suite 141/141, focused
+  Cashier Payment Confidence 4/4, secret scan, dan OSV 31 package production/0 temuan;
   dependency/lockfile tidak berubah. Endpoint npm audit resmi timeout dua kali,
   sehingga fresh npm advisory result masih perlu diulang saat registry pulih.
 - `TODO`: verifikasi dan terima external gate W26-W34. Seluruh contract dan

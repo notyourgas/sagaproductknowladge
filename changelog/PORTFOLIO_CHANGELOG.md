@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Cashier Payment Confidence local validated
+
+- Saga POS exact `4a4ff91acdc9c2117efc268d525317971e4de2ff` dipush; checkout
+  pengganti kini terkunci selama QRIS uncertain dan dibuka setelah paid atau
+  terminal state server.
+- Focused 4/4 dan full suite 141/141 lulus pada dua viewport; Axe, overflow,
+  touch target, exactly-once, secret scan, dan OSV 31 package/0 temuan lulus.
+- Production/canary tidak berubah, readiness 84/100, transaksi locked,
+  settlement pending, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Payment Confidence local validated
 
 - Saga POS exact `795cc3327249aeee7575deb66bdda9e2be09d1f3` dipush; P08–P09 kini

@@ -213,6 +213,16 @@ package/0 temuan lulus. `npm audit` resmi timeout dua kali. Ini hanya source/loc
 validation; gateway runtime, canary lock, settlement, dan readiness 84/100 tidak
 berubah.
 
+Cashier Payment Confidence exact `4a4ff91acdc9c2117efc268d525317971e4de2ff`
+memperluas kepastian QRIS ke assisted checkout. Selama payment `PENDING` atau
+`UNKNOWN`, katalog dan checkout pengganti dikunci; card menampilkan order,
+total, status server, dampak ke antrean, serta warning pembayaran ganda. Status
+check production memakai bounded backoff, simulator tetap manual, dan paid
+membuka katalog hanya setelah fulfillment server tercatat. Focused 4/4, full
+suite 141/141, dua viewport, Axe, overflow, touch target, exactly-once, secret
+scan, dan OSV 31 package/0 temuan lulus. Status tetap local validated/not
+deployed; readiness 84/100 dan production tidak berubah.
+
 KDS V2 exact `973f81c` menutup pain point scanability bar: ticket aging memakai
 server clock, queue summary dan filter status terlihat di first fold, modifier
 serta catatan pelanggan ikut dalam fulfillment payload, dan CTA aksi tetap
