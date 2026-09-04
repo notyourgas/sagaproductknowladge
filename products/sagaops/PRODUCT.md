@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -107,28 +107,28 @@ BUSINESS_READY=false`.
   gagal dua kali. Runtime production tetap exact `1d7146c2`; satu ledger canary
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
-- Saga POS implementation exact `9a43a89`, dengan current branch head
-  `4a4ff91acdc9c2117efc268d525317971e4de2ff`, sudah dipush ke branch yang sama dan
-  mengimplementasikan kiosk portrait P01-P12 berpedoman pada visual Saga Member
-  V5 dengan typography serta sizing code-native. Plus Jakarta Sans berlisensi,
-  target sentuh, state machine, restore payment pending, server-owned quote,
-  QR PNG allowlist, serta CTA modifier portrait telah diterapkan. P08–P09 kini
-  memiliki Saga Payment Confidence tanpa mengubah kontrak gateway atau payment
-  truth. Full suite terkini 138/138; focused payment/portrait 13/13, Axe,
-  overflow, touch target, secret scan, dan OSV 31 package/0 temuan lulus.
-  Endpoint npm audit resmi timeout dua kali dan dicatat sebagai keterbatasan
-  jaringan, bukan bukti pass.
+- Saga POS current branch head
+  `e14e2a3299459ea850255b9c9d35434a7a7decb3` sudah dipush dan menyelesaikan
+  sprint UI/UX Kiosk portrait P01-P12. Perubahan mencakup hierarchy kategori
+  dan modifier, cart dengan harga per item serta undo, jalur QRIS tunggal yang
+  lebih singkat, QR stabil selama polling, bantuan kontekstual, recovery
+  offline/outage/idle, serta focus dan status announcement yang lebih tepat.
+  Full suite terkini 148/148 dan focused Kiosk UI/UX 7/7 lulus; Axe
+  serious/critical nol, no horizontal overflow, fold 720x1280, stable QR,
+  secret diff scan nol temuan, dan OSV 31 package/0 vulnerability lulus.
+  Endpoint npm audit resmi tidak memberi respons dalam batas waktu dan dicatat
+  sebagai keterbatasan jaringan, bukan bukti pass.
 - Cashier Payment Confidence exact `4a4ff91` menambah active QRIS status card,
   uncertain-state checkout lock, bounded server checks, accessible status, dan
   logout cleanup. Focused 4/4 dan full suite 141/141 lulus; dua viewport,
   Axe, overflow, target 56 px, exactly-once fulfillment, secret scan, serta OSV
   31 package/0 temuan lulus. `npm audit` resmi tetap timeout.
-- Seluruh 18 kartu menu kini memiliki visual: sembilan kandidat minuman
-  konvensional dan sembilan PNG transparan 512×768 hasil ImageGen sebagai
-  illustrative dummy. Placeholder kotak tulisan tidak lagi dipakai untuk katalog
-  saat ini. Aset dummy tidak membuktikan resep/penampilan produk dan seluruh 18
-  visual tetap memerlukan owner review serta penggantian foto nyata sebelum
-  activation.
+- Seluruh 18 kartu menu kini memiliki visual illustrative dummy. Aset referensi
+  aktif dioptimalkan dari total 15,48 MB menjadi 1,17 MB dalam WebP dengan
+  source PNG tetap dipertahankan dan proses build yang dapat diulang.
+  Placeholder kotak tulisan tidak lagi dipakai untuk katalog saat ini. Aset
+  dummy tidak membuktikan resep/penampilan produk dan seluruh 18 visual tetap
+  memerlukan owner review serta penggantian foto nyata sebelum activation.
 - Perubahan ini `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime SagaDev
   Platform, lock transaksi, settlement, readiness 84/100, dan
   `BUSINESS_READY=false` tidak berubah.

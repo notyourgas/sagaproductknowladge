@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk portrait UI/UX sprint local validated
+
+- Saga POS exact `e14e2a3299459ea850255b9c9d35434a7a7decb3` dipush dengan
+  perbaikan material UI/UX Kiosk P01-P12: hierarchy, cart item detail dan undo,
+  short single-QRIS flow, stable QR polling, bantuan, recovery, focus, serta
+  accessible status feedback.
+- Delapan belas aset referensi aktif turun dari total 15,48 MB menjadi 1,17 MB
+  WebP. Full suite 148/148 dan focused 7/7 lulus; Axe serious/critical nol,
+  overflow/fold, stable QR, secret scan, dan OSV 31 package/0 vulnerability
+  lulus.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  canary, settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V18 Editorial Story Banner deployed
 
 - Saga Member main `1e8d64783cebdd21213c5c661d93a3dfd3235e41` (PR #34)

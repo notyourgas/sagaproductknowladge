@@ -8,7 +8,7 @@ sales, dan konten SagaOPS.
 ## Konteks dan status bukti
 
 - Updated: 4 September 2026
-- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
+- Delivery: `SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_DEPLOYED / TRIAL99_CANARY_PAID`
 - Activation: `SAGADEV_PLATFORM_ACTIVATED / TRANSACTIONS_LOCKED`
 - Business readiness: `BLOCKED`
 
@@ -52,6 +52,17 @@ Saga POS local sprint lab menambah self-service Kiosk, assisted Cashier
 fallback, nota checker/KDS, Owner Dashboard, POS Admin, menu Kopi Saga Salak,
 modifier, cash/shift, QRIS simulator, Member/Reward fixture, availability,
 refund/remake, report/export, device health dan print spooler boundary.
+Kiosk portrait P01-P12 pada source exact
+`e14e2a3299459ea850255b9c9d35434a7a7decb3` kini memiliki hierarchy kategori
+dan modifier yang lebih jelas, cart dengan harga per item dan undo, jalur QRIS
+tunggal yang lebih singkat, QR stabil saat polling, bantuan kontekstual,
+recovery offline/outage/idle, serta focus dan status announcement yang lebih
+tepat. Delapan belas aset referensi aktif memakai WebP total 1,17 MB dari
+source PNG 15,48 MB. Full suite 148/148 dan focused Kiosk UI/UX 7/7 lulus;
+Axe serious/critical nol, no horizontal overflow, fold 720x1280, secret diff
+scan nol temuan, dan OSV 31 package/0 vulnerability lulus. Perubahan ini masih
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; validasi fisik portrait,
+owner visual review, dan production release gate tetap diperlukan.
 Disk-backed local durable runtime kini mengikat checkout/outbox atomik,
 idempotency, collision-safe order counter, signed-event replay guard,
 exactly-once fulfillment, refund work item, dan restart recovery untuk

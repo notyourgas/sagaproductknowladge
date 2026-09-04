@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk portrait UI/UX sprint sync
+
+- Informasi `CONFIRMED`: Saga POS exact
+  `e14e2a3299459ea850255b9c9d35434a7a7decb3` sudah dipush.
+- P01-P12 mendapat perbaikan hierarchy, cart item detail dan undo, short
+  single-QRIS flow, stable QR polling, bantuan, recovery offline/outage/idle,
+  focus management, accessible status feedback, dan optimasi 18 aset aktif
+  dari total 15,48 MB menjadi 1,17 MB WebP.
+- Full suite 148/148 dan focused 7/7 lulus; Axe serious/critical nol,
+  overflow/fold, stable QR, secret scan, serta OSV 31 package/0 vulnerability
+  lulus.
+- Status tetap `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production,
+  canary, settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 - Saga Member V18 Editorial Story Banner sync
 
 - Informasi `CONFIRMED`: Saga Member main

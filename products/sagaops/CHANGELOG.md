@@ -8,6 +8,20 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Kiosk portrait UI/UX sprint tervalidasi lokal
+
+- Source exact `e14e2a3299459ea850255b9c9d35434a7a7decb3` dipush ke branch Saga POS.
+- P01-P12 kini memiliki hierarchy kategori/modifier yang lebih jelas, cart
+  dengan harga item dan undo, alur single-QRIS lebih singkat, QR stabil saat
+  polling, bantuan kontekstual, recovery offline/outage/idle, serta pengelolaan
+  focus dan status announcement yang lebih tepat.
+- Delapan belas aset referensi aktif dioptimalkan dari total 15,48 MB menjadi
+  1,17 MB WebP. Full suite 148/148 dan focused 7/7 lulus; Axe
+  serious/critical nol, no horizontal overflow, fold 720x1280, stable QR,
+  secret diff scan nol temuan, dan OSV 31 package/0 vulnerability lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
+  settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-04 — Cashier QRIS Confidence tervalidasi lokal
 
 - Source exact `4a4ff91acdc9c2117efc268d525317971e4de2ff` dipush ke branch Saga POS.
