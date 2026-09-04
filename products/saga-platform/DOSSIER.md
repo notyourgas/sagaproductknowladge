@@ -58,7 +58,30 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V15 Human Copy & Moments dari Saga Member
+Frontend public dummy terkini adalah V16 Points Ledger dari Saga Member main
+`373742e361a7e702f25c71c7f2ec9edcfb9e6540` (PR #31), Preview deployment
+`dpl_F8zpHNeYjh1Nt415Jv6Huk4DTmW8`, dan Vercel production deployment
+`dpl_FttVUMWWb8JhwyCNFZxXHA2KY6eL` pada stable URL
+`https://saga-member-platform.vercel.app`. Aktivitas kini memakai pola ledger
+mobile: saldo menjadi anchor utama, diikuti agregat masuk/dipakai/diproses,
+filter empat keadaan, kelompok tanggal, baris dengan arah Points, serta detail
+native bottom sheet berisi sumber, status, waktu, dan referensi bertopeng.
+
+Pola informasi mengambil prinsip daftar yang mudah dipindai dan detail on
+demand; tidak memakai grafik karena fixture sederhana belum memerlukan analisis
+tren. Seluruh nilai tetap berasal dari presentation model dan dummy fixture,
+bukan kalkulasi ledger produksi. Motion dialog hanya opacity/transform
+140–160 ms, menghormati reduced-motion, dan tidak menambah dependency baru.
+
+129/129 test, PR CI `33834451555`, canonical-main CI `33834835680`, audit
+dependency nol vulnerability, exact Preview artifact verification, local UAT,
+dan public UAT 320/360/375/390/430 px lulus tanpa overflow, console, page,
+atau runtime error. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider,
+transaksi, data pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak
+aktif. Status tertinggi `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED`;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
+Frontend public dummy V15 sebelumnya adalah Human Copy & Moments dari Saga Member
 main `d6efc0394f0c991d64dd657c4614b7fdc9dee048` (PR #30), Preview deployment
 `dpl_4FBadqpkqVD4qmRfFTcJHHwxPupy`, dan Vercel production deployment
 `dpl_DEZprmybhdvs1MZrE1ShFfUpAXNA` pada stable URL

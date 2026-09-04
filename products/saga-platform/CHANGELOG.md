@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V16 Points Ledger deployed
+
+- Main `373742e361a7e702f25c71c7f2ec9edcfb9e6540` (PR #31) aktif pada
+  deployment `dpl_FttVUMWWb8JhwyCNFZxXHA2KY6eL` dan stable public URL setelah
+  Preview `dpl_F8zpHNeYjh1Nt415Jv6Huk4DTmW8` diverifikasi.
+- Aktivitas kini memiliki saldo anchor, ringkasan masuk/dipakai/diproses,
+  filter, kelompok tanggal, arah Points, dan native bottom-sheet detail dengan
+  referensi bertopeng.
+- 129/129 test, PR CI `33834451555`, main CI `33834835680`, audit dependency,
+  local UAT, Preview artifact check, dan public UAT lima viewport lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V15 Human Copy & Moments deployed
 
 - Main `d6efc0394f0c991d64dd657c4614b7fdc9dee048` (PR #30) aktif pada

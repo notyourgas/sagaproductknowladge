@@ -66,6 +66,27 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V16 Points Ledger
+
+- Saga Member canonical main `373742e361a7e702f25c71c7f2ec9edcfb9e6540`
+  (PR #31) aktif pada Vercel production deployment
+  `dpl_FttVUMWWb8JhwyCNFZxXHA2KY6eL` melalui stable public URL
+  `https://saga-member-platform.vercel.app`.
+- Halaman Aktivitas berubah menjadi riwayat Points bergaya ledger mobile:
+  saldo tersedia, ringkasan Points masuk/dipakai/diproses, filter, kelompok
+  tanggal, status, waktu, dan detail aktivitas dalam native bottom sheet.
+- Detail hanya memakai data dummy dan referensi bantuan bertopeng. Navigasi,
+  filter, fokus, Escape, reduced-motion, forced-colors, serta target sentuh
+  minimal 44 px tetap dipertahankan tanpa dependency baru.
+- 129/129 test, PR CI `33834451555`, canonical-main CI `33834835680`, audit
+  dependency nol vulnerability, local UAT, Preview artifact verification, dan
+  public UAT 320/360/375/390/430 px lulus tanpa overflow, console, page, atau
+  runtime error.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ### Saga Member V15 Human Copy & Moments
 
 - Saga Member canonical main `d6efc0394f0c991d64dd657c4614b7fdc9dee048`
