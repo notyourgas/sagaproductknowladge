@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V28 borderless quick emoji sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477`, PR #44, PR CI
+  `33872331545`, main CI `33872492134`, Preview
+  `dpl_3Rz3pgJQPQK8Uk5ts1FmZWhJz2nk`, dan production deployment
+  `dpl_HzgJW5FataWqGqL6qsJuyJio8AeX` aktif pada stable URL.
+- Kotak kecil di belakang empat emoji Akses cepat dihapus; alignment dan target
+  sentuh kartu tetap dipertahankan. Delivery tetap public dummy dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk QRIS expiry handoff sync
 
 - Informasi `CONFIRMED`: exact source

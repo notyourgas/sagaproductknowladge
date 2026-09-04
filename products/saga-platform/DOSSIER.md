@@ -58,7 +58,27 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V27 Home Next Step dari Saga Member main
+Frontend public dummy terkini adalah V28 Borderless Quick Emoji dari Saga
+Member main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44), Preview
+deployment `dpl_3Rz3pgJQPQK8Uk5ts1FmZWhJz2nk`, dan Vercel production deployment
+`dpl_HzgJW5FataWqGqL6qsJuyJio8AeX` pada stable URL
+`https://saga-member-platform.vercel.app`. Coffee `☕`, Studio `📸`, Reward
+`🎁`, dan Quest `🎯` kini tampil langsung tanpa background, border, radius,
+shadow, atau warna wadah per-kategori. Ruang alignment 42 px atau 38 px pada
+layar kompak tetap dipertahankan tanpa permukaan visual; target sentuh tetap
+berada pada kartu utama dan minimal 44 px.
+
+Full 157 test, PR CI `33872331545`, canonical-main CI `33872492134`, local UAT
+320/360/375/390/430 px, serta remote production UAT 320/390/430 px lulus tanpa
+overflow, console error, broken image, atau temuan Axe serious/critical. Cache
+offline berubah ke `v41-borderless-quick-emoji`. Tidak ada dependency, aset,
+request jaringan, atau animasi baru. Runtime tetap `PUBLIC_DUMMY_DEMO`;
+backend, auth, provider, transaksi, data pelanggan, QRIS, Push, NFC, printer,
+dan pilot nyata tidak aktif. Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+V27 Home Next Step sebelumnya berasal dari Saga Member main
 `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43), Preview deployment
 `dpl_Cqwyq7CYcTuZWHXvhEuK6158BNiT`, dan Vercel production deployment
 `dpl_9f8jfjtWT91is9F1Rqbfh6VztSgz` pada stable URL

@@ -15,7 +15,34 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9b4b3b2a2fc337f8cf0d14fb5122c07cf52eab67` |
+| Baseline sebelum pembaruan | `4bc653aa7a43f57c6b5a424d78de7f071f6ff1bc` |
+
+## Saga Member V28 Borderless Quick Emoji
+
+- Source exact `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44) aktif
+  pada Vercel production deployment `dpl_HzgJW5FataWqGqL6qsJuyJio8AeX`
+  melalui stable public URL setelah Preview
+  `dpl_3Rz3pgJQPQK8Uk5ts1FmZWhJz2nk` divalidasi.
+- Empat emoji Akses cepat tampil tanpa kotak kecil. Background transparan,
+  border/radius nol, shadow none, alignment 42/38 px, dan target kartu minimal
+  44 px telah diverifikasi.
+- Full 157 test, PR CI `33872331545`, main CI `33872492134`, local UAT lima
+  viewport, dan remote production UAT 320/390/430 px lulus tanpa overflow,
+  console error, atau temuan Axe serious/critical.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V28
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk QRIS expiry handoff
 

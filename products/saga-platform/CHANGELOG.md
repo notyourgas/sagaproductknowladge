@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V28 Borderless Quick Emoji deployed
+
+- Main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44) aktif pada
+  deployment `dpl_HzgJW5FataWqGqL6qsJuyJio8AeX` dan stable public URL setelah
+  Preview `dpl_3Rz3pgJQPQK8Uk5ts1FmZWhJz2nk` berstatus Ready.
+- Empat emoji Akses cepat tampil langsung tanpa background, border, radius,
+  shadow, atau warna wadah per-kategori. Alignment 42/38 px dan target sentuh
+  kartu minimal 44 px tetap dipertahankan.
+- 157/157 test, exact PR/main CI, local UAT lima viewport, accessibility, dan
+  remote production UAT tiga viewport lulus tanpa overflow atau console error.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V27 Home Next Step deployed
 
 - Main `71b12cbdbbb9248f75fbce1a0ea3c0c486561f69` (PR #43) aktif pada

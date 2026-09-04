@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V28 borderless quick emoji deployed
+
+- Saga Member main `7c72ebdbbb3088820dcbb56fcc1df3f9b90fd477` (PR #44)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_HzgJW5FataWqGqL6qsJuyJio8AeX`.
+- Emoji Coffee, Studio, Reward, dan Quest kini tampil tanpa kotak kecil;
+  alignment serta target sentuh kartu tetap konsisten pada mobile.
+- 157 test, exact PR/main CI, local mobile UAT, dan remote production UAT
+  lulus. Runtime tetap dummy; backend, provider, transaksi, data nyata, dan
+  NFC tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk QRIS expiry handoff deployed
 
 - Exact `1c383ef861b706728a0d712a02c0a9bda7596d17` aktif pada stable Kiosk
