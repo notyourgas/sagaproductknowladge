@@ -15,7 +15,31 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `9e032d7b79ee51d5cb3a615a446d189b5b5f04e0` |
+| Baseline sebelum pembaruan | `8c9dd46304193281fcb47d6306f7cac44d31211d` |
+
+## Saga Member V22 Jelajah Hero Typography
+
+- Source exact `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38) aktif
+  pada Vercel production deployment `dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL`
+  melalui stable public URL.
+- Hero Jelajah berubah menjadi judul dua baris rata tengah, ukuran responsif
+  28-32 px, line-height 1.12, serta spacing eyebrow/deskripsi yang lebih lega.
+- Full 148 test, PR/main CI, local UAT lima viewport, dan remote production UAT
+  320/390/430 px lulus tanpa overflow atau console error.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V22
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk sold-out race recovery
 

@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V22 Jelajah Hero Typography aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38), Preview
+`dpl_FeLM9U2xEoSs6SKTrDE9FcBfyANX`, dan production deployment
+`dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL`. Hero Jelajah memakai judul dua baris
+`Temukan yang kamu` / `butuhkan.`, rata tengah, ukuran responsif 28-32 px,
+line-height 1.12, dan spacing vertikal yang lebih lega. Full 148 test, PR CI
+`33858203877`, main CI `33858782863`, local UAT lima viewport, serta remote
+production UAT 320/390/430 px lulus tanpa overflow atau console error. Backend,
+provider, NFC nyata, transaksi, dan real data tetap OFF;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 SagaOPS Kiosk sold-out race recovery tervalidasi lokal pada source exact
 `4ce47803333a9d171ba816560fa325be2a0da12a` yang sudah dipush. Ketika quote
 server menolak menu yang berubah menjadi sold out setelah masuk cart, Kiosk

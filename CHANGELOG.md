@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V22 Jelajah Hero Typography sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `7c82148e599fea9cd42eac1f8cb7f5bf617f310e`, PR #38, PR CI
+  `33858203877`, main CI `33858782863`, Preview
+  `dpl_FeLM9U2xEoSs6SKTrDE9FcBfyANX`, dan production deployment
+  `dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL` aktif pada stable URL.
+- Hero Jelajah dikunci dua baris, rata tengah, responsif 28-32 px, dan diberi
+  spacing yang lebih lega. Delivery tetap public dummy dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk sold-out race recovery sync
 
 - Informasi `CONFIRMED`: Saga POS exact

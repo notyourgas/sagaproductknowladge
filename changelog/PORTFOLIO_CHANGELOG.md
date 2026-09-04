@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V22 Jelajah Hero Typography deployed
+
+- Saga Member main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL`.
+- Hero Jelajah kini memakai komposisi rata tengah dengan judul dua baris tetap,
+  ukuran responsif 28-32 px, dan spacing deskripsi yang lebih nyaman.
+- 148 test, exact PR/main CI, local mobile UAT, dan remote UAT lulus. Runtime
+  tetap dummy; backend, provider, transaksi, data nyata, dan NFC tetap OFF;
+  `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk sold-out race recovery local validated
 
 - Saga POS exact `4ce47803333a9d171ba816560fa325be2a0da12a` dipush. Kiosk kini
