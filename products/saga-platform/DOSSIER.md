@@ -58,6 +58,29 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
+Frontend public dummy terkini adalah V19 Studio Session Planner dari Saga
+Member main `2858d5aea39008386387cf58668808386247edfd` (PR #35), Preview
+deployment `dpl_2veZGPbrgdxPxZrEtPHsv6irbnxa`, dan Vercel production
+deployment `dpl_GDMmw3ZZPUiAEgWfcthzdbiNniHw` pada stable URL
+`https://saga-member-platform.vercel.app`. Halaman Booking yang sebelumnya
+pasif kini memiliki ringkasan sesi, progress native, serta tiga checklist
+persiapan: mood foto, outfit utama, dan datang lebih awal. Setiap baris memakai
+checkbox HTML native dengan label penuh sebagai target sentuh, status live,
+serta Feather icon.
+
+State checklist hanya memakai `sessionStorage`, memfilter ID yang dikenal, dan
+berakhir bersama tab demo. Handoff Saga Book tetap simulasi, diberi copy yang
+jelas, dan tidak mengubah booking. Tidak ada dependency, endpoint, atau data
+produksi baru.
+
+140/140 test, PR CI `33842387433`, canonical-main CI `33842819870`, local UAT,
+public UAT 320/360/375/390/430 px, keyboard, session persistence, Axe,
+touch-target, offline shell, image fallback, serta Vercel inspection lulus.
+Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 Frontend public dummy terkini adalah V18 Editorial Story Banner dari Saga
 Member main `1e8d64783cebdd21213c5c661d93a3dfd3235e41` (PR #34), Preview
 deployment `dpl_Fe54oYSjCaUGohBxUKp3gFaDm1Vd`, dan Vercel production

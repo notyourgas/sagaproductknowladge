@@ -15,7 +15,35 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `67c002c8a5796106f03dd6cc74c8b028b584ed00` |
+| Baseline sebelum pembaruan | `26db0a09f323355b54e9c065f5bcfa3c05c82c13` |
+
+## Saga Member V19 Studio Session Planner
+
+- Source canonical main `2858d5aea39008386387cf58668808386247edfd`
+  dari PR #35.
+- Production deployment `dpl_GDMmw3ZZPUiAEgWfcthzdbiNniHw` READY dan aktif
+  pada `https://saga-member-platform.vercel.app` setelah Preview
+  `dpl_2veZGPbrgdxPxZrEtPHsv6irbnxa` berstatus Ready.
+- Booking kini memiliki ringkasan sesi, progress native, tiga checklist
+  persiapan, status live, serta state `sessionStorage` yang hanya berlaku
+  selama tab demo. Saga Book tetap simulasi.
+- 140/140 test, PR CI `33842387433`, main CI `33842819870`, local/public UAT
+  lima viewport, keyboard, persistence, Axe, touch target, offline shell,
+  image fallback, serta Vercel inspection lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V19
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## SagaOPS Kiosk portrait UI/UX sprint
 
