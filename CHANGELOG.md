@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - SagaOPS Kiosk Member session recovery sync
+
+- Informasi `CONFIRMED`: runtime source
+  `172c56a1435196e2edf46d6348884b33094c1ac9` aktif pada stable public Kiosk
+  melalui deployment `dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb`.
+- Session server kini memulihkan Member/benefit setelah refresh, browser tidak
+  menyimpan atau mengirim ulang raw code, dan rekomendasi dapat membuka
+  modifier tanpa dead-end.
+- Dokumen terdampak: SagaOPS product/dossier/changelog, decisions, portfolio,
+  master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V30 Reward Pocket sync
 
 - Informasi `CONFIRMED`: Saga Member main

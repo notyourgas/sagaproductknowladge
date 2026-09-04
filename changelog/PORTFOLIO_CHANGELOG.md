@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - SagaOPS Kiosk Member session recovery deployed
+
+- Saga POS runtime exact `172c56a1435196e2edf46d6348884b33094c1ac9`
+  aktif pada stable Kiosk melalui deployment
+  `dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb`.
+- Refresh kini memulihkan Member dan benefit dari session server tanpa raw code
+  pada browser; rekomendasi langsung ke modifier juga tidak lagi dead-end.
+- Full 167/167, focused Kiosk 28/28, local browser dua viewport, dan remote
+  stable journey lulus. Runtime tetap simulator ephemeral; NFC/Customer Platform
+  external UAT pending, readiness 84/100, dan `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V30 Reward Pocket deployed
 
 - Saga Member main `64da605fe707b44f6ebf781e7c17250f10a8026e` (PR #46)

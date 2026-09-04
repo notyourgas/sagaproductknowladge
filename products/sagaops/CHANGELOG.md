@@ -8,6 +8,22 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Member session recovery Kiosk aktif di Vercel
+
+- Runtime code exact `172c56a1435196e2edf46d6348884b33094c1ac9`
+  aktif melalui deployment `dpl_H4Pqewf4wL46PZWTqEbpwUgKD8Mb`.
+- Refresh memulihkan welcome/rekomendasi atau cart beserta benefit dari session
+  server. Raw Member Code tidak berada di cart draft, bootstrap, quote,
+  checkout, atau bundle Kiosk.
+- Rekomendasi sekarang dapat membuka modifier; pilihan guest dan fresh reset
+  menghapus konteks Member server lalu melakukan requote.
+- Full 167/167, focused Kiosk 28/28, dua viewport, Axe, overflow,
+  reduced-motion, dependency/secret scan, candidate/stable smoke, dan browser
+  publik lulus.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PUBLIC_DEMO_ACTIVE /
+  MEMBER_LOCAL_FIXTURE / NFC_NOT_RUN / PRODUCT_PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`; readiness tetap 84/100.
+
 ## 2026-09-04 — Early Member dan rekomendasi personal Kiosk aktif di Vercel
 
 - Exact source `ddb16339578e8696ff154260a027d04c162a9676` dipush pada branch
