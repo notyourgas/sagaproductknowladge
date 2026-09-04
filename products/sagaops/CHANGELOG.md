@@ -8,6 +8,21 @@ Mencatat perubahan material SagaOPS.
 
 Prototype dan production outlet adalah evidence level yang berbeda.
 
+## 2026-09-04 — Konfirmasi benefit member sebelum QRIS tervalidasi lokal
+
+- Source exact `8999674a4d96f2a6d3b954ec67673141c92fe7e1` dipush ke branch Saga POS.
+- P06 mengikuti capability `memberMode=code` dan menerima kode alfanumerik,
+  bukan keypad telepon yang menyesatkan. P07 menampilkan kode tersamarkan, tier,
+  hemat, subtotal, dan total final dari server sebelum QRIS dibuat. P08 menjaga
+  kontinuitas status benefit.
+- Browser acceptance membuktikan verifikasi member membuat 0 payment intent dan
+  CTA total final membuat tepat 1 checkout. Full suite 153/153, focused Kiosk
+  UI/UX 19/19, Axe serious/critical nol, overflow nol, secret scan nol, serta
+  OSV 31 package/0 vulnerability lulus.
+- Status `CONFIRMED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production, canary,
+  settlement, dan readiness 84/100 tidak berubah.
+
 ## 2026-09-04 — Revisi founder UI Kiosk tervalidasi lokal
 
 - Source exact `0540b34abb4e4bb6824a7ded3f06350db4e32244` dipush ke branch Saga POS.

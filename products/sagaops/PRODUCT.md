@@ -1,7 +1,7 @@
 # SagaOPS Product Knowledge
 
 Updated: 4 September 2026
-Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
+Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_18_OF_18_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
 
@@ -108,7 +108,11 @@ BUSINESS_READY=false`.
   direkonsiliasi atomik dari provider `Success` dengan audit metadata.
 
 - Saga POS current branch head
-  `0540b34abb4e4bb6824a7ded3f06350db4e32244` sudah dipush. Revisi founder
+  `8999674a4d96f2a6d3b954ec67673141c92fe7e1` sudah dipush. Jalur member kini
+  mengikuti capability `memberMode=code`, mendukung input alfanumerik, dan
+  menampilkan kode tersamarkan, tier, benefit, subtotal, serta total final
+  sebelum QRIS dibuat. Verifikasi member menghasilkan nol payment intent;
+  checkout terjadi tepat setelah CTA konfirmasi total. Revisi founder sebelumnya
   memperbesar tombol dan teks kategori P03; P05 kini memakai table-card ringkas
   yang tetap berada di atas ketika hanya ada satu item, dengan quantity dan
   line total yang mudah dipindai; P10 menampilkan detail item setelah pembayaran
@@ -122,7 +126,7 @@ BUSINESS_READY=false`.
   requote server. P01 welcome kini memakai aset ilustratif Es Kopi Saga yang
   sama dengan katalog, bukan cup generik CSS. Hero, katalog, modifier, dan cart
   kini memiliki recovery jujur ketika gambar gagal dimuat tanpa memblokir alur
-  pesan. Full suite terkini 152/152 dan focused Kiosk UI/UX 18/18 lulus;
+  pesan. Full suite terkini 153/153 dan focused Kiosk UI/UX 19/19 lulus;
   Axe serious/critical nol, no horizontal overflow, touch/density gap, secret
   diff scan nol temuan, dan OSV 31 package/0 vulnerability lulus.
   Endpoint npm audit resmi tidak memberi respons dalam batas waktu dan dicatat
