@@ -8,6 +8,22 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V19 Studio Session Planner deployed
+
+- Main `2858d5aea39008386387cf58668808386247edfd` (PR #35) aktif pada
+  deployment `dpl_GDMmw3ZZPUiAEgWfcthzdbiNniHw` dan stable public URL setelah
+  Preview `dpl_2veZGPbrgdxPxZrEtPHsv6irbnxa` berstatus Ready.
+- Booking berubah dari handoff pasif menjadi planner persiapan sesi dengan
+  ringkasan jadwal, progress native, tiga checklist, status live, dan state
+  `sessionStorage` yang hanya berlaku selama tab demo.
+- 140/140 test, PR CI `33842387433`, main CI `33842819870`, local dan public
+  UAT lima viewport, keyboard, persistence, Axe, target sentuh, offline shell,
+  image fallback, serta Vercel inspection lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V18 Editorial Story Banner deployed
 
 - Main `1e8d64783cebdd21213c5c661d93a3dfd3235e41` (PR #34) aktif pada

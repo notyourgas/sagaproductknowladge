@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V19 Studio Session Planner deployed
+
+- Saga Member main `2858d5aea39008386387cf58668808386247edfd` (PR #35)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_GDMmw3ZZPUiAEgWfcthzdbiNniHw`.
+- Booking kini memiliki ringkasan sesi, progress native, tiga checklist
+  persiapan, status live, dan state session-only; Saga Book tetap simulasi.
+- 140/140 test, exact PR/main CI, local/public UAT lima viewport, keyboard,
+  Axe, target sentuh, offline shell, image fallback, dan Vercel inspection
+  lulus.
+- Runtime tetap dummy; backend, provider, transaksi, dan data nyata OFF,
+  `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk portrait UI/UX sprint local validated
 
 - Saga POS exact `e14e2a3299459ea850255b9c9d35434a7a7decb3` dipush dengan

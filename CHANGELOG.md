@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V19 Studio Session Planner sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `2858d5aea39008386387cf58668808386247edfd`, PR #35, PR CI
+  `33842387433`, main CI `33842819870`, Preview
+  `dpl_2veZGPbrgdxPxZrEtPHsv6irbnxa`, dan production deployment
+  `dpl_GDMmw3ZZPUiAEgWfcthzdbiNniHw` aktif pada stable URL.
+- Before -> after: halaman Booking pasif berubah menjadi planner persiapan
+  Saga Studio dengan ringkasan sesi, progress native, tiga checklist, status
+  live, dan state yang hanya bertahan selama tab demo.
+- 140/140 test, exact PR/main CI, local/public UAT lima viewport, keyboard,
+  persistence, Axe, touch target, offline shell, image fallback, dan Vercel
+  inspection lulus.
+- Backend/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan
+  `BUSINESS_READY=false`. Dokumen terdampak: Saga Platform
+  product/dossier/changelog, portfolio, master knowledge, root changelog, dan
+  sync status.
+
 ## 2026-09-04 - SagaOPS Kiosk portrait UI/UX sprint sync
 
 - Informasi `CONFIRMED`: Saga POS exact

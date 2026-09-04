@@ -12,6 +12,21 @@ QR, secret diff scan nol temuan, dan OSV 31 package/0 vulnerability lulus.
 Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, canary,
 settlement, readiness 84/100, dan `BUSINESS_READY=false` tidak berubah.
 
+Saga Member V19 Studio Session Planner aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`2858d5aea39008386387cf58668808386247edfd` (PR #35) dan deployment
+`dpl_GDMmw3ZZPUiAEgWfcthzdbiNniHw`. Halaman Booking kini memiliki ringkasan
+sesi, progress native, dan tiga checklist persiapan: mood foto, outfit utama,
+serta datang 10 menit lebih awal. Checklist memakai checkbox native, label
+penuh sebagai target sentuh, status live, dan state `sessionStorage` yang
+berakhir bersama tab demo. Saga Book tetap simulasi dan tidak mengubah booking.
+140/140 test, PR CI `33842387433`, main CI `33842819870`, local/public UAT
+320/360/375/390/430 px, keyboard, persistence, Axe, offline shell, image
+fallback, serta Vercel inspection lulus. Status `CONFIRMED /
+SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF / REAL_PROVIDER_OFF /
+REAL_DATA_OFF / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 Saga Member V18 Editorial Story Banner aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `1e8d64783cebdd21213c5c661d93a3dfd3235e41` (PR #34) dan deployment

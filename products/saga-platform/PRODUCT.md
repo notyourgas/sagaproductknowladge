@@ -66,6 +66,27 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V19 Studio Session Planner
+
+- Saga Member canonical main `2858d5aea39008386387cf58668808386247edfd`
+  (PR #35) aktif pada Vercel production deployment
+  `dpl_GDMmw3ZZPUiAEgWfcthzdbiNniHw` melalui stable public URL
+  `https://saga-member-platform.vercel.app` setelah Preview
+  `dpl_2veZGPbrgdxPxZrEtPHsv6irbnxa` berstatus Ready.
+- Halaman Booking kini menjadi planner persiapan Saga Studio: ringkasan sesi,
+  progress native, dan tiga checklist untuk mood foto, outfit, serta waktu
+  kedatangan.
+- Checklist memakai checkbox native, label penuh sebagai touch target, status
+  live, Feather icons, dan penyimpanan `sessionStorage` yang berakhir bersama
+  tab demo. Handoff Saga Book tetap simulasi dan tidak mengubah booking.
+- 140/140 test, PR CI `33842387433`, canonical-main CI `33842819870`, local
+  UAT, serta public UAT 320/360/375/390/430 px lulus tanpa overflow, target
+  kecil, browser error, atau Axe serious/critical.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V18 Editorial Story Banner
 
 - Saga Member canonical main `1e8d64783cebdd21213c5c661d93a3dfd3235e41`
