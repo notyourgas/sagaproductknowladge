@@ -1,6 +1,15 @@
 # Saga Product Knowledge Changelog
 
 
+## 2026-09-05 - Saga Member V39 Studio Brief Pocket sync
+
+- Informasi `CONFIRMED`: main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5`, PR #56, PR CI `33930057801`, canonical-main CI `33930273512`, Preview `dpl_4jEJu9Q74fvhCN4NbdjVYK8Un5ZY`, dan production deployment `dpl_296rvEny9sGj3DfoeJejRqFMLmuV` aktif pada stable URL.
+- Perubahan: entry Studio memperoleh detail berfoto nyata dan brief personal/produk/bareng dengan tiga arahan kontekstual, konfirmasi/edit, serta handoff checklist.
+- Validasi: 197/197 test, lima viewport, keyboard, rapid submit, invalid-value recovery, focus recovery, 200% zoom, forced colors, reduced motion, offline, enam artifact hash, remote UAT, Axe serious/critical 0, overflow 0, storage write 0, dan backend request 0.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Batas tidak berubah: Brief Pocket memory-only dan bukan booking; backend/auth/provider/QRIS/Push/NFC/printer/transaksi/data nyata tetap OFF. Emoji Akses cepat tetap tanpa kotak internal.
+
+
 ## 2026-09-05 - SagaOPS portrait modifier touch panel deployed
 
 - `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.

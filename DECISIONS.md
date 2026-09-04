@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-182 - Brief Pocket Studio Saga Member bersifat memory-only dan jujur
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Continuity Studio pada public dummy Saga Member |
+| Keputusan | Entry Studio membuka detail berfoto nyata dan Brief Pocket. Pengguna memilih tujuan personal, produk, atau bareng, meninjau tiga arahan foto, lalu boleh mengonfirmasi, mengedit, dan menuju checklist. State hanya hidup di memori tab, hilang saat reload, dan tidak boleh disebut booking. |
+| Alasan | Entry Studio sebelumnya belum memberi tugas lanjutan yang jelas; public dummy memerlukan pengalaman yang dapat dicoba tanpa menciptakan booking, persistence, atau klaim operasional palsu. |
+| Alternatif | CTA tanpa tujuan; formulir booking palsu; localStorage; backend/provider baru; klaim jadwal, harga, ketersediaan, atau layanan nyata. |
+| Dampak | Main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5`, PR #56, dan deployment `dpl_296rvEny9sGj3DfoeJejRqFMLmuV` menyediakan Studio Brief Pocket aksesibel tanpa backend, storage, atau provider. Emoji Akses cepat tetap tanpa kotak internal. |
+| Pemberi keputusan | SAGADEVS Product/UX/UI/Frontend/QA/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-181 - Rencana Mampir Saga Member bersifat memory-only dan jujur
 
 | Field | Nilai |

@@ -66,6 +66,30 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V39 Studio Brief Pocket
+
+- Saga Member canonical main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5`
+  (PR #56) aktif pada production deployment
+  `dpl_296rvEny9sGj3DfoeJejRqFMLmuV` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_4jEJu9Q74fvhCN4NbdjVYK8Un5ZY` diverifikasi dengan hash.
+- Entry Studio kini membuka detail Saga Studio berfoto nyata dan Brief Pocket:
+  pengguna memilih satu dari tiga tujuan foto, meninjau tiga arahan pose/properti,
+  mengonfirmasi, mengedit, lalu dapat melompat ke checklist persiapan.
+- Brief bersifat memory-only, hilang saat reload, dan tidak membuat booking,
+  transaksi, penyimpanan, atau permintaan backend. Jadwal, ketersediaan, harga,
+  serta operasional nyata tidak diklaim.
+- 197/197 test, PR/main CI, browser acceptance 320/360/375/390/430 px, keyboard,
+  rapid submit, invalid-value recovery, focus recovery, 200% zoom, forced colors,
+  reduced motion, offline, artifact hash, dan remote stable UAT lulus tanpa
+  overflow, broken image, storage write, backend request, atau temuan Axe
+  serious/critical.
+- Emoji Akses cepat tetap glyph natural tanpa kotak internal. Backend, auth,
+  provider, QRIS, Push, NFC, printer, transaksi, dan data nyata tetap OFF.
+- Klasifikasi: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V38 Coffee Detail + Rencana Mampir
 
 - Saga Member canonical main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5`

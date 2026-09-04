@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V39 Studio Brief Pocket deployed
+
+- Main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5` (PR #56) aktif pada
+  deployment `dpl_296rvEny9sGj3DfoeJejRqFMLmuV` setelah Preview
+  `dpl_4jEJu9Q74fvhCN4NbdjVYK8Un5ZY` diverifikasi dengan hash.
+- Entry Studio kini menyediakan foto nyata, tiga tujuan brief, tiga arahan foto
+  kontekstual, konfirmasi/edit, dan handoff checklist dalam state memory-only.
+- 197/197 test, PR/main CI, lima viewport, keyboard, rapid submit,
+  invalid-value recovery, 200% zoom, forced colors, reduced motion, offline,
+  artifact hash, dan remote UAT lulus tanpa overflow, broken image, storage
+  write, backend request, atau temuan Axe serious/critical.
+- Emoji Akses cepat tetap tanpa kotak internal. Brief bukan booking dan seluruh
+  backend/auth/provider/transaksi/data nyata tetap OFF.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-05 — Saga Member V38 Coffee Detail + Rencana Mampir deployed
 
 - Main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5` (PR #55) aktif pada
