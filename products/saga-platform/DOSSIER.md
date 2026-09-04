@@ -58,7 +58,29 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V37 Bare Quick Emoji dari Saga Member main
+Frontend public dummy terkini adalah V38 Coffee Detail + Rencana Mampir dari
+Saga Member main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5` (PR #55), Preview
+`dpl_BfSV2b8jTf1bs38HHhhksSzzM4d5`, dan production deployment
+`dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ` pada stable URL
+`https://saga-member-platform.vercel.app`. Entry Coffee pada banner Beranda,
+Akses cepat, dan kartu Jelajah kini menyatu ke detail outlet dengan foto nyata,
+menu demo, radio waktu native, konfirmasi memory-only, edit, serta CTA Quest.
+
+Rencana Mampir tidak membuat reservasi atau transaksi, tidak menulis storage,
+dan kembali ke fixture saat reload. UI tidak mengklaim jam buka, jarak, stok,
+harga transaksi, atau ketersediaan outlet nyata. Full 193 test, PR CI
+`33925578250`, canonical-main CI `33925766363`, lima viewport, keyboard,
+rapid tap, 200% zoom, forced colors, reduced motion, offline shell, Preview dan
+production artifact hash, serta remote production UAT lulus. Axe
+serious/critical, overflow, broken image, storage write, dan backend/provider
+request tetap nol. Cache offline `v51-coffee-visit-plan`.
+
+Status `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; backend, auth, transaksi,
+data pelanggan, QRIS, Push, NFC, printer, dan provider nyata tetap OFF.
+
+V37 Bare Quick Emoji sebelumnya berasal dari Saga Member main
 `cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842` (PR #54) dan production
 deployment `dpl_GXQ4dDBK7YxehDZ3WoRDu8KN3V5f` pada stable URL
 `https://saga-member-platform.vercel.app`. Empat emoji Akses cepat kini memakai

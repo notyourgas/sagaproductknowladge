@@ -66,6 +66,27 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V38 Coffee Detail + Rencana Mampir
+
+- Saga Member canonical main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5`
+  (PR #55) aktif pada production deployment
+  `dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_BfSV2b8jTf1bs38HHhhksSzzM4d5` diverifikasi dengan hash.
+- Banner Coffee, Akses cepat Coffee, dan kartu Jelajah Coffee kini menuju satu
+  detail outlet dengan foto nyata, menu demo, pilihan waktu yang aksesibel,
+  konfirmasi memory-only, edit pilihan, dan handoff menuju Quest.
+- Rencana Mampir adalah simulasi lokal: tidak membuat reservasi, tidak menulis
+  storage, tidak menghubungi backend, dan hilang saat reload. Klaim jam buka,
+  jarak, stok, harga transaksi, dan ketersediaan nyata tidak ditampilkan.
+- 193/193 test, PR CI `33925578250`, canonical-main CI `33925766363`, browser
+  acceptance 320/360/375/390/430 px, 200% zoom, keyboard, rapid tap, offline,
+  forced colors, reduced motion, artifact hash, dan remote production UAT lulus;
+  Axe serious/critical, overflow, broken image, dan backend request tetap nol.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, data pelanggan,
+  QRIS, Push, NFC, printer, dan provider nyata tetap OFF.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V37 Bare Quick Emoji
 
 - Saga Member canonical main `cd5bd4bcc5ce0bf836aad72f3a4dd02ae6c97842`

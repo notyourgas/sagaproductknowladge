@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga Member V38 Coffee Detail + Rencana Mampir deployed
+
+- Saga Member main `1791e0319b1dc36d6b40f61e2e4a3b78cfd5c7a5` (PR #55) aktif melalui deployment `dpl_wT3spJ7gRBymCnANKwR4MuvFXweQ` pada stable URL setelah Preview `dpl_BfSV2b8jTf1bs38HHhhksSzzM4d5` diverifikasi.
+- Entry Coffee kini mempunyai detail outlet, menu demo, pemilihan waktu dan konfirmasi memory-only yang aksesibel; ini bukan reservasi dan tidak membuat transaksi atau storage write.
+- 193 test, exact PR/main CI, lima viewport, offline, aksesibilitas, artifact hash, dan remote UAT lulus. Backend/provider/data nyata tetap OFF; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 
 ## 2026-09-05 - SagaOPS compact identical cart release
 
