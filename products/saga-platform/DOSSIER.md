@@ -58,7 +58,28 @@ D0. Customer `f763fc19d8463cf2120387b0d06a57ffa5c868f7` dan Member
 `2eaa35334e59dc2656b98816db6bdc020c478a8f` lulus CI canonical-main, remote
 Chrome UAT, forced-RLS audit, backup/restore dan rollback rehearsal.
 
-Frontend public dummy terkini adalah V22 Jelajah Hero Typography dari Saga
+Frontend public dummy terkini adalah V23 Member Card Preview & Apply dari Saga
+Member main `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39), Preview
+deployment `dpl_2hcsR9LCdEi45WaQmfySuSmtuwRU`, dan Vercel production
+deployment `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp` pada stable URL
+`https://saga-member-platform.vercel.app`. UI memisahkan dua state: kartu
+aktif yang tersimpan dan desain yang sedang dipreview. Stepper tema serta
+pilihan varian tidak lagi langsung mengubah preference. Perubahan baru berlaku
+setelah pengguna menekan `Ganti ke desain ini`; `Tampilkan Pass` dan ekspor
+PNG tetap memakai kartu aktif sampai aksi tersebut dilakukan.
+
+Full 150 test, PR CI `33860460618`, canonical-main CI `33861023848` attempt
+2, local UAT 320/360/375/390/430 px, dan remote production behavior UAT lulus
+tanpa overflow atau console error. Attempt pertama main CI timeout pada
+download Chromium sebelum test berjalan; rerun exact commit lulus. Cache
+offline berubah ke `v36-member-card-preview-apply`. Runtime tetap
+`PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data pelanggan, QRIS,
+Push, NFC, printer, dan pilot nyata tidak aktif. Status
+`SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
+Frontend public dummy V22 sebelumnya adalah Jelajah Hero Typography dari Saga
 Member main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38), Preview
 deployment `dpl_FeLM9U2xEoSs6SKTrDE9FcBfyANX`, dan Vercel production
 deployment `dpl_9qWcZtJ52cpwoRPgMXEVapJgpHhL` pada stable URL

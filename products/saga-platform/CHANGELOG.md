@@ -8,6 +8,24 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V23 Member Card Preview & Apply deployed
+
+- Main `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39) aktif pada
+  deployment `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp` dan stable public URL setelah
+  Preview `dpl_2hcsR9LCdEi45WaQmfySuSmtuwRU` berstatus Ready.
+- Navigasi tema dan pilihan varian hanya mengubah preview. Kartu aktif baru
+  diganti melalui CTA `Ganti ke desain ini`; dialog Pass dan ekspor PNG tetap
+  membaca kartu aktif selama preview belum diterapkan.
+- 150/150 test, exact PR/main CI, local UAT lima viewport, persistence,
+  dialog parity, export, accessibility, serta remote production behavior UAT
+  lulus tanpa overflow atau console error.
+- Main CI attempt pertama timeout pada download Chromium sebelum test;
+  rerun exact commit `33861023848` attempt 2 lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V22 Jelajah Hero Typography deployed
 
 - Main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38) aktif pada

@@ -15,7 +15,33 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 | Waktu pembaruan terakhir | 2026-09-04 WIB |
 | Branch aktif | `main` |
 | Commit SHA terbaru | `branch HEAD` — resolve dari Git/GitHub setelah push |
-| Baseline sebelum pembaruan | `8c9dd46304193281fcb47d6306f7cac44d31211d` |
+| Baseline sebelum pembaruan | `91140ac54790730a8a57994ba741997166e55afc` |
+
+## Saga Member V23 Member Card Preview & Apply
+
+- Source exact `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39) aktif
+  pada Vercel production deployment `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp`
+  melalui stable public URL.
+- Theme stepper dan pilihan varian hanya mengubah preview. Preference aktif
+  baru disimpan melalui `Ganti ke desain ini`; Pass dialog dan ekspor PNG
+  tetap membaca kartu aktif sebelum apply.
+- Full 150 test, PR/main CI exact commit, local UAT lima viewport, dan remote
+  production behavior UAT lulus tanpa overflow atau console error. Main CI
+  attempt pertama timeout pada download Chromium; attempt 2 lulus.
+- Status `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
+## File yang berubah pada sinkronisasi Saga Member V23
+
+- `products/saga-platform/PRODUCT.md`
+- `products/saga-platform/DOSSIER.md`
+- `products/saga-platform/CHANGELOG.md`
+- `changelog/PORTFOLIO_CHANGELOG.md`
+- `CHATGPT_MASTER_KNOWLEDGE.md`
+- `DECISIONS.md`
+- `CHANGELOG.md`
+- `SYNC_STATUS.md`
 
 ## Saga Member V22 Jelajah Hero Typography
 

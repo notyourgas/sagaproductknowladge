@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-158 - Pemilihan desain Saga Member Card memakai preview lalu apply
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | State model pemilihan desain Saga Member Card |
+| Keputusan | Pertahankan satu kartu aktif. Navigasi kategori/tema dan pemilihan varian hanya memperbarui preview; kartu aktif baru diganti setelah pengguna menekan `Ganti ke desain ini`. Dialog Pass dan ekspor PNG harus selalu memakai kartu aktif sampai apply. |
+| Alasan | Pengguna perlu bebas membandingkan desain tanpa perubahan tidak sengaja pada identitas member yang sedang dipakai. |
+| Alternatif | Mengganti kartu aktif langsung saat kategori atau varian disentuh; menyimpan setiap preview ke local storage; memakai preview pada dialog dan unduhan. |
+| Dampak | Main `81e89e6b361277fda5370e51749e3bcc62f8cf3d` dan deployment `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp` menerapkan dua state eksplisit, penanda `Preview`/`Dipakai`, CTA apply, persistence, dan parity dialog/export pada public dummy. Backend/provider/data nyata tetap OFF. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-155 - Beranda Saga Member memakai banner editorial foto penuh
 
 | Field | Nilai |

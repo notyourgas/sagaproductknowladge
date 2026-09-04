@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V23 Member Card Preview & Apply deployed
+
+- Saga Member main `81e89e6b361277fda5370e51749e3bcc62f8cf3d` (PR #39)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp`.
+- Browsing tema/varian kini hanya preview; kartu aktif berubah hanya setelah
+  CTA `Ganti ke desain ini`. Dialog Pass dan ekspor tetap memakai kartu aktif.
+- 150 test, exact PR/main CI, local mobile UAT, dan remote production behavior
+  UAT lulus. Runtime tetap dummy; backend, provider, transaksi, data nyata,
+  dan NFC tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - Saga Member V22 Jelajah Hero Typography deployed
 
 - Saga Member main `7c82148e599fea9cd42eac1f8cb7f5bf617f310e` (PR #38)

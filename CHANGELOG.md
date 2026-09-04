@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-04 - Saga Member V23 Member Card Preview & Apply sync
+
+- Informasi `CONFIRMED`: Saga Member main
+  `81e89e6b361277fda5370e51749e3bcc62f8cf3d`, PR #39, PR CI
+  `33860460618`, main CI `33861023848` attempt 2, Preview
+  `dpl_2hcsR9LCdEi45WaQmfySuSmtuwRU`, dan production deployment
+  `dpl_BgEheE2Ue2fnGp8WJj9S9zv8roWp` aktif pada stable URL.
+- Pemilihan tema/varian menjadi preview-only; CTA eksplisit diperlukan untuk
+  mengganti kartu aktif. Delivery tetap public dummy dan
+  `BUSINESS_READY=false`.
+- Dokumen terdampak: Saga Platform product/dossier/changelog, decisions,
+  portfolio, master knowledge, root changelog, dan sync status.
+
 ## 2026-09-04 - Saga Member V22 Jelajah Hero Typography sync
 
 - Informasi `CONFIRMED`: Saga Member main
