@@ -66,6 +66,27 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V35 Install Concierge
+
+- Saga Member canonical main `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede`
+  (PR #51 dan #52) aktif pada production deployment
+  `dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview artifact
+  `dpl_69aXzYoqu6zC2yjt9ywJkYrLhTdV` divalidasi.
+- Profil memiliki Pusat Instalasi yang membedakan installed, prompt-ready,
+  dismissed, iPhone Safari manual, iOS browser lain, dan unavailable tanpa CTA
+  palsu. Prompt hanya dipanggil setelah gesture pengguna.
+- Manifest, icon 180/192/512, Apple metadata, standalone detection, offline
+  cache `v49-install-contrast`, focus safety, forced-colors, reduced motion,
+  target 44 px, dan body copy minimum 12 px tersedia.
+- 188 test, canonical-main CI `33912518901`, lima viewport plus text resize
+  200%, synthetic install lifecycle, iOS Safari, Preview artifact UAT, dan
+  production remote UAT lulus dengan Axe serious/critical 0, overflow 0, dan
+  backend request 0.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, data pelanggan,
+  QRIS, Push, NFC, printer, dan provider nyata tetap OFF.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V34 Pusat Data Demo
 
 - Saga Member canonical main `bb8307c1ee359a2c340ccbf3b4f9af388798b35d`

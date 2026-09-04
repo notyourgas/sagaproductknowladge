@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-178 - Instalasi Saga Member memakai capability progresif yang jujur
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Instalasi PWA Saga Member public dummy |
+| Keputusan | Sediakan Pusat Instalasi dari Profil. Tombol install hanya aktif setelah browser menangkap `beforeinstallprompt` dan hanya dijalankan setelah gesture pengguna; status installed memakai `appinstalled` dan standalone display mode. iPhone Safari memperoleh panduan manual empat langkah. Browser yang belum mendukung tetap mendapat penjelasan, bukan CTA palsu. |
+| Alasan | Instalasi perlu terasa native dan mudah ditemukan tanpa menjanjikan capability yang tidak tersedia pada browser atau mengaktifkan backend/provider nyata. |
+| Alternatif | Memanggil prompt saat page load; menampilkan tombol install yang tidak bekerja; menyamakan alur iOS dan Chromium; menambah library eksternal. |
+| Dampak | Main `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede` dan deployment `dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog` menambahkan install concierge, metadata/icon PWA, panduan iPhone, offline cache, dan contrast hardening tanpa request backend. |
+| Pemberi keputusan | SAGADEVS Product/UX/Frontend/QA/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-177 - Privasi public dummy memakai pusat data browser-only
 
 | Field | Nilai |

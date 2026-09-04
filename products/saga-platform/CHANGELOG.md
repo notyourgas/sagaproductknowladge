@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V35 Install Concierge deployed
+
+- Main `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede` (PR #51 dan #52) aktif
+  pada deployment `dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog` setelah Preview artifact
+  `dpl_69aXzYoqu6zC2yjt9ywJkYrLhTdV` divalidasi dan dipromosikan.
+- Profil kini memiliki Pusat Instalasi capability-aware, status installed,
+  panduan iPhone Safari, metadata/icon PWA, dan offline cache.
+- Prompt hanya berjalan setelah gesture dan hanya ketika browser menyediakan
+  capability; unavailable state tidak memberi CTA palsu.
+- 188/188 test, canonical-main CI, lima viewport plus text resize 200%,
+  synthetic install lifecycle, iOS Safari, accessibility, Preview artifact,
+  dan remote production UAT lulus tanpa overflow atau backend request.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-05 — Saga Member V34 Pusat Data Demo deployed
 
 - Main `bb8307c1ee359a2c340ccbf3b4f9af388798b35d` (PR #50) aktif pada

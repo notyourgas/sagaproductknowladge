@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V35 Install Concierge aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede` (PR #51 dan #52), Preview artifact
+`dpl_69aXzYoqu6zC2yjt9ywJkYrLhTdV`, dan production deployment
+`dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog`. Profil menyediakan Pusat Instalasi yang
+membedakan installed, prompt-ready, dismissed, iPhone Safari manual, iOS
+browser lain, dan unavailable. Prompt hanya dipanggil setelah gesture dan bila
+browser memberi capability. Manifest PWA, icon 180/192/512, Apple metadata,
+standalone detection, offline cache `v49-install-contrast`, target 44 px,
+focus safety, reduced motion, forced colors, dan contrast hardening tersedia.
+Full 188 test, canonical-main CI `33912518901`, lima viewport plus text resize
+200%, synthetic install lifecycle, iOS Safari, Preview artifact, dan remote
+production UAT lulus dengan Axe serious/critical 0, overflow 0, serta backend
+request 0. Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, transaksi, real
+data, QRIS, Push, NFC, printer, dan provider nyata tetap OFF;
+`PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 Saga POS Kiosk early NFC Member demo aktif pada
 `https://saga-pos-kiosk.vercel.app/kiosk` dari exact deployed source
 `b42419cefad6b585123bb4816353e8d49f97f373` dan deployment

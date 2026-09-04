@@ -1,5 +1,29 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga Member V35 Install Concierge
+
+- Status: `accepted / CONFIRMED /
+  SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED /
+  PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+- Source exact: `bb7ed733e4481bf7b0c9391c507a2c2d30bd4ede` (PR #51 dan
+  contrast hotfix PR #52).
+- Stable deployment: `dpl_BwnL5PA2QqsosvMTbdpZVcLNuBog` pada
+  `https://saga-member-platform.vercel.app`; Preview tervalidasi
+  `dpl_69aXzYoqu6zC2yjt9ywJkYrLhTdV` dan menjadi artifact production yang sama.
+- Perubahan: Pusat Instalasi memberi capability-aware CTA, status terpasang,
+  panduan iPhone Safari empat langkah, metadata/icon PWA, dan offline cache.
+- Evidence: 188/188 test; canonical-main CI `33912518901`; lima viewport plus
+  text resize 200%; synthetic install lifecycle; iOS Safari; Preview dan remote
+  production UAT; Axe serious/critical 0; overflow dan backend request 0.
+- Batas: pengujian install lifecycle bersifat synthetic/browser emulation;
+  backend, auth, transaksi, real data, QRIS, Push, NFC, printer, dan provider
+  nyata tetap OFF. Physical-device install belum menjadi business acceptance.
+- File diperbarui: `products/saga-platform/PRODUCT.md`,
+  `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `DECISIONS.md`, `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 ## Saga POS Kiosk early NFC Member demo
 
 - Status: `accepted / CONFIRMED / PUBLIC_DEMO_ACTIVE /
