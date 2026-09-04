@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+
+## 2026-09-05 - SagaOPS compact identical cart release
+
+- Classification: `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source: `1cf0562013a79bd8c49989119c89d6a8e7a7f775`; deployment: `dpl_MQHDLnVTVGiovRThk6sCNdQmupia`.
+- Identical new menu additions share one row with increased quantity; different modifiers/notes remain distinct. Two identical additions use one row instead of two. Editing, undo, reload and quantity-limit overflow preserve quantities.
+- Cart action labels previously clipped at 720px; action column widened from 98px to 126px without shrinking typography/touch controls. New browser regression reproduces the failure and passes after the fix.
+- Evidence: 189/189 full regression; two portrait browser/Axe/overflow tests; nine guest/member/reward pricing parity checks; dependency audit zero vulnerabilities; heuristic secret scan clear. Candidate and stable public smoke pass on three viewports with zero checkout requests and operator routes blocked.
+- Demo updated: https://saga-pos-kiosk.vercel.app/kiosk . Rollback: `dpl_14qLbUiVRzEgFUYXM9r8oiwC4Eu2`.
+- No real payment, Customer Platform integration, physical NFC or operator activation. Historical readiness 84/100 unchanged; 32-sprint finalization remains incomplete. Real operator API/DB, hardware and staff UAT gates remain open.
+- Impacted source: Kiosk cart/controller/styles, browser regression, public-demo smoke and release evidence. Public knowledge synchronized across product, dossier, changelogs, master and sync status. No new business policy or dependency.
+
+
 Saga Member V36 Home Install Nudge aktif pada stable public dummy URL `https://saga-member-platform.vercel.app` dari canonical main `9a5393d73bdc7b459d5522991da94a955b6f692d` (PR #53), Preview `dpl_2nKEoPK4DiTX7hEFD1uNFZhK63E8`, dan production `dpl_AnBsZh4DKwh26ejsZdT5zMixHwqb`. Beranda menawarkan instalasi inline hanya setelah dua perpindahan route dan capability Chromium nyata atau iPhone Safari manual. Capability awal tidak merender ulang Beranda atau menggeser fokus; dismiss memory-only, prompt one-use, dan unsupported/iOS non-Safari tidak mendapat CTA palsu. Full 190 test, PR CI `33916490835`, main CI `33916725768`, lima viewport plus text resize 200%, Preview hash, dan production UAT lulus dengan Axe serious/critical 0, overflow 0, cookie/storage write 0, serta backend request 0. Cache `v50-home-install-nudge`; seluruh backend/provider/real data tetap OFF, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
 
 

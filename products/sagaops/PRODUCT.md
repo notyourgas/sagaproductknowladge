@@ -1,6 +1,19 @@
 # SagaOPS Product Knowledge
 
 
+## 2026-09-05 - SagaOPS compact identical cart release
+
+- Classification: `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source: `1cf0562013a79bd8c49989119c89d6a8e7a7f775`; deployment: `dpl_MQHDLnVTVGiovRThk6sCNdQmupia`.
+- Identical new menu additions share one row with increased quantity; different modifiers/notes remain distinct. Two identical additions use one row instead of two. Editing, undo, reload and quantity-limit overflow preserve quantities.
+- Cart action labels previously clipped at 720px; action column widened from 98px to 126px without shrinking typography/touch controls. New browser regression reproduces the failure and passes after the fix.
+- Evidence: 189/189 full regression; two portrait browser/Axe/overflow tests; nine guest/member/reward pricing parity checks; dependency audit zero vulnerabilities; heuristic secret scan clear. Candidate and stable public smoke pass on three viewports with zero checkout requests and operator routes blocked.
+- Demo updated: https://saga-pos-kiosk.vercel.app/kiosk . Rollback: `dpl_14qLbUiVRzEgFUYXM9r8oiwC4Eu2`.
+- No real payment, Customer Platform integration, physical NFC or operator activation. Historical readiness 84/100 unchanged; 32-sprint finalization remains incomplete. Real operator API/DB, hardware and staff UAT gates remain open.
+- Impacted source: Kiosk cart/controller/styles, browser regression, public-demo smoke and release evidence. Public knowledge synchronized across product, dossier, changelogs, master and sync status. No new business policy or dependency.
+
+
+
 ## 2026-09-05 - Kiosk available-recommendation recovery deployed
 
 - `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
@@ -13,7 +26,7 @@
 
 
 Updated: 5 September 2026
-Latest material status: `KIOSK_AVAILABLE_RECOMMENDATIONS_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
+Latest material status: `KIOSK_COMPACT_IDENTICAL_CART_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
 Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PERSISTENT_HELP_SAFE_CANCEL_PUBLIC_DEMO_DEPLOYED / KIOSK_SUCCESS_TIME_AND_SCROLL_PUBLIC_DEMO_DEPLOYED / KIOSK_MEMBER_DEGRADED_RECOVERY_PUBLIC_DEMO_DEPLOYED / KIOSK_CHECKOUT_QUOTE_GUARD_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen
