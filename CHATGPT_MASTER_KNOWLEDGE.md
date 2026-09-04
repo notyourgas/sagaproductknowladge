@@ -1,5 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V20 Member Card 35 Collection aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`d3e581b557df8aa1f3d701b9913680a61b4b8465` (PR #36), Preview
+`dpl_ARfnu2xy92vScv98wpadWDGXHoYj`, dan production deployment
+`dpl_2scRKVtU4ekDsFSZ2xVJtVvsu1Bi`. Saga Pass memiliki tujuh tema × lima
+varian dalam rasio CR80. Identitas member, tier, Member ID, label NFC, dan ikon
+contactless dirender dinamis; preference bertahan setelah reload; dialog crew
+memakai renderer yang sama; ekspor PNG 1712×1080 berlangsung lokal di browser.
+Tidak ada chip pembayaran, QR, barcode, atau klaim transaksi pada kartu.
+
+146/146 test, PR CI `33851882411`, main CI `33852445823`, local UAT lima
+viewport, remote production UAT seluruh tema, persistence, dialog parity,
+export, Axe, overflow, broken-image, dan console checks lulus. Status
+`CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+REAL_PROVIDER_OFF / REAL_DATA_OFF / NFC_OFF / PRODUCTION_ACTIVATED=false /
+BUSINESS_READY=false`.
+
 SagaOPS Kiosk member benefit confirmation tervalidasi lokal pada source exact
 `8999674a4d96f2a6d3b954ec67673141c92fe7e1` yang sudah dipush. P06 mengikuti
 capability `memberMode=code` sehingga virtual keyboard dapat memasukkan kode
