@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-160 - Bottom navigation Saga Member memakai ikon dengan label aktif
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-04 |
+| Topik | Hierarki visual bottom navigation mobile Saga Member |
+| Keputusan | Tampilkan ikon saja pada menu nonaktif. Label hanya muncul di atas ikon yang aktif; seluruh Feather icon wajib sama tinggi dan sejajar dengan distribusi jarak merata. |
+| Alasan | Navbar lama menampilkan lima label sekaligus sehingga terasa padat dan mengurangi fokus pada tujuan aktif. |
+| Alternatif | Mempertahankan semua label; memakai label di bawah ikon; membesarkan menu aktif hingga mengubah jarak antaritem. |
+| Dampak | Main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` dan deployment `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad` menerapkan ikon 22x22 px, label aktif 12 px, indikator 42 px, target sentuh minimal 44 px, dan accessible name pada public dummy. Backend/provider/data nyata tetap OFF. |
+| Pemberi keputusan | Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-159 - P03 Saga POS memakai fixed touch canvas dan equal-height categories
 
 | Field | Nilai |

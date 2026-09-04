@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-04 - Saga Member V24 icon-only bottom navigation deployed
+
+- Saga Member main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb` (PR #40)
+  aktif pada `https://saga-member-platform.vercel.app` melalui deployment
+  `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad`.
+- Menu nonaktif kini icon-only; label hanya muncul di atas ikon aktif. Kelima
+  Feather icon 22x22 px memiliki baseline dan distribusi jarak yang seragam.
+- 152 test, exact PR/main CI, local mobile UAT, dan remote production UAT
+  lulus. Runtime tetap dummy; backend, provider, transaksi, data nyata, dan
+  NFC tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-04 - SagaOPS Kiosk fixed touch canvas local validated
 
 - Saga POS exact `5568c2f26da6668a60c0c2120740395b4a542ec6` dipush. P03 kini

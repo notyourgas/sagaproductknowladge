@@ -66,6 +66,24 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V24 Icon-only Bottom Navigation
+
+- Saga Member canonical main `f19bf3e2f0cd77d0a94af1021668aa342dc05feb`
+  (PR #40) aktif pada Vercel production deployment
+  `dpl_Cs4Uwe6CM8J6k7BRybdWrbEFxoad` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_BvFUNzbwrCcDbXwCh9Q7VmDnsR7x` divalidasi.
+- Bottom navigation kini menampilkan ikon saja pada menu nonaktif. Label hanya
+  muncul di atas ikon menu aktif; lima Feather icon terkunci 22x22 px,
+  baseline sejajar, jarak horizontal merata, dan indikator aktif ringkas 42 px.
+- Full 152 test, PR CI `33863687837`, canonical-main CI `33864129398`, local
+  UAT lima viewport, serta remote production UAT 320/390/430 px lulus tanpa
+  overflow atau console error. Target sentuh tetap minimal 44 px dan seluruh
+  item memiliki accessible name.
+- Runtime tetap `PUBLIC_DUMMY_DEMO`; backend, auth, provider, transaksi, data
+  pelanggan, QRIS, Push, NFC, printer, dan pilot nyata tidak aktif.
+  `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+
 ### Saga Member V23 Member Card Preview & Apply
 
 - Saga Member canonical main `81e89e6b361277fda5370e51749e3bcc62f8cf3d`
