@@ -8,6 +8,21 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-04 — Saga Member V15 Human Copy & Moments deployed
+
+- Main `d6efc0394f0c991d64dd657c4614b7fdc9dee048` (PR #30) aktif pada
+  deployment `dpl_DEZprmybhdvs1MZrE1ShFfUpAXNA` dan stable public URL.
+- Beranda mendapat banner responsif Member Moments dan Quest minggu ini;
+  carousel tetap empat cerita dengan solid scrim dan CTA mobile 44 px.
+- Copy aktif di seluruh route dan feedback disederhanakan, termasuk disclosure
+  `Mode demo · semua data hanya contoh`; jargon/status teknis dihapus dari alur.
+- 124/124 test, PR CI `33831396702`, main CI `33831772203`, audit dependency,
+  exact Preview asset check, dan public UAT lima viewport lulus.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / REAL_BACKEND_OFF /
+  REAL_PROVIDER_OFF / REAL_DATA_OFF / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ## 2026-09-04 — Saga Member V14 Reward Route deployed
 
 - Main `8221b86893b0a9bde620fb156ed3ee7f89b0a9ed` (PR #29) aktif pada
