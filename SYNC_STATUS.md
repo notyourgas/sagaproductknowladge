@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-05 - Saga Member: identitas kartu tanpa panel teks
+
+- CONFIRMED source `fbb70797026acc55f123f5fe28d2144bd005d5d4`, PR #66 MERGED ke main `f06044444934433d1aad71a429f51b8dcb056ae0`; exact PR Quality CI `33963076236` PASS.
+- Teks pada artwork mendapat halo kontras tipis tanpa kotak, simbol contactless mendapat garis luar dekoratif, dan label Member ID pada PNG tidak lagi transparan. Mode kontras tinggi menggunakan warna sistem tanpa artwork. Kartu atas tetap memakai desain tersimpan; kategori/geser hanya preview sampai Apply eksplisit.
+- Local: 231 unit tests, browser regression, 35 desain x 5 viewport (320-430px) termasuk teks 200%, dan 35 ekspor PNG 1712x1080 PASS. Ekspor identik secara piksel pada mode normal versus forced-colors + teks 200%. Lima Polos DOM identik; raster berubah pada identitas. Axe serious/critical 0 dalam cakupan uji; bukan sertifikasi WCAG atau uji perangkat fisik iOS/VoiceOver.
+- CPU4x local comparative soak: 900 pergantian desain, kartu aktif/fokus tetap, satu gambar preview, CLS 0, tanpa long task pada window interaksi; p95 waktu siap 42-49ms sebelum dan 46-50ms sesudah. Bukan jaminan field/slow-network. Upgrade cache v58/v59 ke v60 menjaga desain tersimpan dan Apply offline; exact module hashes diperiksa.
+- Native CSS/SVG/Canvas; Motion 13.2.0 MIT tidak berubah. Tidak ada library/aset/provider baru pada rilis kartu; delta runtime +266 byte gzip, dependency audit 0 vulnerability. Riset heuristic: https://www.w3.org/WAI/WCAG21/Techniques/general/G18 dan https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow .
+- SUDAH DEPLOY: canonical main CI `33963396798` PASS. Preview `dpl_31HZh1bcer6S1JQNoWberAY7nC8t` lolos exact seven-file source parity dan remote card UAT sebelum promotion. Production `dpl_4uY3SuLduGAc6HcoVP6NBFEJD1ib` Ready pada https://saga-member-platform.vercel.app ; source parity, smoke lima viewport dan full public card UAT PASS. Diagnostik Chromium public: CLS 0, LCP 440ms unthrottled, tanpa long task pada window interaksi, request backend/external 0. Status maksimum `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED`.
+- PUBLIC_DUMMY_DEMO; backend, auth/provider dan data nyata OFF. PRODUCTION_ACTIVATED=false; BUSINESS_READY=false. Rollback `dpl_AVcUTWmJaCdgd62LV9RmQhdtsK5w`, schema preference v2 tetap. Berikutnya: halaman Jelajah, integrasi aset editorial baru beserta crop mobile dan fallback/offline. Tiga aset yang baru digenerate belum dipasang pada rilis ini.
+
+
 
 ## 2026-09-05 - SagaOPS unresolved checkout reload continuity
 
