@@ -2,7 +2,7 @@
 
 ## 2026-09-05 - SagaWork Staff credential dan Google Maps Workspace flow
 
-- Status: `accepted`; klasifikasi `CONFIRMED` dari keputusan Andreas dan exact source/runtime evidence `775380a`.
+- Status: `accepted`; klasifikasi `CONFIRMED` dari keputusan Andreas, feature evidence `775380a`, copy-fix `a085c4a`, dan exact active runtime/harness `711ef77`.
 - Before -> after: Staff tidak lagi bergantung pada invitation; HR membuat Employee ID+password awal yang wajib diganti sebelum sesi pertama. Workspace tidak lagi memerlukan salin koordinat manual; HR dapat menempel pin Google Maps allowlisted, memeriksa hasil, mengatur radius, dan menguji lokasi perangkat.
 - Delivery: `PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY` pada `https://app.sagawork.site`; `NOT_PRODUCTION_ACTIVATED / BLOCKED_EXTERNAL` tetap berlaku.
 - Gate: 42/156 test, 51-page build, OpenAPI 79/98/54, manifest 1.172 file, authenticated smoke, security-abuse 9/9, public HTTPS, rollback dua arah, encrypted backup/checksum, disposable restore 67/27/32, dan zero resurrection PASS.
