@@ -1,6 +1,21 @@
 # SagaOPS Product Knowledge
 
 
+## 2026-09-05 - SagaOPS storage-denial checkout recovery deployed
+
+- `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Exact application source: `df56303e1b317a21df4462c179722ed1a80c9c2b`; deployment: `dpl_G3egg9ExHgQooi1jUxAkuaHe86AY`.
+- Denied browser storage previously blocked checkout and could interrupt success/reset. A best-effort key store now retains one live-page attempt key in memory, preserves available-storage compatibility and safely clears stale values even when removal fails.
+- Review warns when cart persistence is restricted. Pre-checkout cart reload is not promised without storage; existing active-order recovery still depends on the server session/cookies.
+- Local simulator evidence covers a lost checkout response followed by same-key retry (one order/payment), active-payment reload, simulated success, safe reset and a fresh key for the next session. No new backend/provider contract or weaker key generation.
+- Validation: 202/202 full regression; eight focused key/browser cases; two portrait Axe/overflow/page-error checks; dependency audits zero vulnerabilities and heuristic secret scan clear. No new dependency or data collection.
+- Candidate and stable public smoke passed three viewports, including storage-denied review and quote recovery; zero public checkout requests, simulator health and operator denial. Payment lifecycle testing was local simulator-only.
+- Stable: https://saga-pos-kiosk.vercel.app/kiosk . Rollback: `dpl_EDifvHY2eHF7C39uwrCAnCJJvpUJ`. No env files/operator static pages in public output; guarded server modules remain bundled.
+- Historical readiness remains 84/100. Real API/DB, Customer Platform, NFC/printer and human UAT remain external gates; all 32 finalization sprints are not accepted.
+- Impacted source: Kiosk key helper/controller, review warning, regression/smoke and release evidence. Product, dossier, changelogs, master and sync status updated together; no business-policy change.
+
+
+
 ## 2026-09-05 - SagaOPS in-place quote recovery deployed
 
 - `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
@@ -54,7 +69,7 @@
 
 
 Updated: 5 September 2026
-Latest material status: `KIOSK_QUOTE_RETRY_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
+Latest material status: `KIOSK_STORAGE_RECOVERY_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
 Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PERSISTENT_HELP_SAFE_CANCEL_PUBLIC_DEMO_DEPLOYED / KIOSK_SUCCESS_TIME_AND_SCROLL_PUBLIC_DEMO_DEPLOYED / KIOSK_MEMBER_DEGRADED_RECOVERY_PUBLIC_DEMO_DEPLOYED / KIOSK_CHECKOUT_QUOTE_GUARD_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen

@@ -1,6 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
 
+## 2026-09-05 - SagaOPS storage-denial checkout recovery deployed
+
+- `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Exact application source: `df56303e1b317a21df4462c179722ed1a80c9c2b`; deployment: `dpl_G3egg9ExHgQooi1jUxAkuaHe86AY`.
+- Denied browser storage previously blocked checkout and could interrupt success/reset. A best-effort key store now retains one live-page attempt key in memory, preserves available-storage compatibility and safely clears stale values even when removal fails.
+- Review warns when cart persistence is restricted. Pre-checkout cart reload is not promised without storage; existing active-order recovery still depends on the server session/cookies.
+- Local simulator evidence covers a lost checkout response followed by same-key retry (one order/payment), active-payment reload, simulated success, safe reset and a fresh key for the next session. No new backend/provider contract or weaker key generation.
+- Validation: 202/202 full regression; eight focused key/browser cases; two portrait Axe/overflow/page-error checks; dependency audits zero vulnerabilities and heuristic secret scan clear. No new dependency or data collection.
+- Candidate and stable public smoke passed three viewports, including storage-denied review and quote recovery; zero public checkout requests, simulator health and operator denial. Payment lifecycle testing was local simulator-only.
+- Stable: https://saga-pos-kiosk.vercel.app/kiosk . Rollback: `dpl_EDifvHY2eHF7C39uwrCAnCJJvpUJ`. No env files/operator static pages in public output; guarded server modules remain bundled.
+- Historical readiness remains 84/100. Real API/DB, Customer Platform, NFC/printer and human UAT remain external gates; all 32 finalization sprints are not accepted.
+- Impacted source: Kiosk key helper/controller, review warning, regression/smoke and release evidence. Product, dossier, changelogs, master and sync status updated together; no business-policy change.
+
+
+
 ## 2026-09-05 - SagaOPS in-place quote recovery deployed
 
 - `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
