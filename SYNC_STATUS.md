@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 - SagaWork penguatan bukti acceptance logout
+
+- Klasifikasi: `CONFIRMED`; sumber task SagaWork dan pengujian native terisolasi. Instrumentasi `6b9133ddb2d4983c5771cd3eb41357ff5cd3840f`, baseline yang dikompilasi `60137bf5c5acb6999f20ea4d17a94a0435f70d2b`; kode aplikasi tidak berubah. Perubahan ini memperketat bukti acceptance, bukan fitur pelanggan baru, migration baru atau perubahan source POS.
+- Sebelum: status logout sukses saja belum cukup membuktikan pencabutan akses. Sesudah: helper yang dipakai langsung pada native HTTP membedakan logout anonim tanpa dampak, penolakan lintas origin tanpa pencabutan, serta logout terautentikasi dan pengulangannya yang membuat introspeksi/perintah bridge ditolak 401 dengan no-store dan respons privat-safe. Identitas HR lain tetap aktif.
+- Gate PASS: 57 file/393 test (termasuk 9 regresi baru), lint, TypeScript, 5 runtime guards dan audit nol vulnerability; Linux build, tiga suite native MySQL, full HTTP, Chromium first-change/recovery staf serta detail permintaan HR/staf. Layanan uji disposable dihentikan dan cleanup akses database terkonfirmasi; database sintetis dipertahankan.
+- Status: `ISOLATED_SYNTHETIC_VALIDATED`; public workforce `711ef77` tetap HTTP 200, tidak ada deployment publik atau activation baru. Tidak ada binding M2 baru. Kandidat POS `76b96c` mempunyai validasi lokal terdahulu, tetapi task POS kini menyatakan fresh runner/readiness `NOT_READY`; source pair dan fixture baru masih menunggu. Joint M2 tetap `PARTIAL / NOT_ACCEPTED`, bukan dibuka kembali oleh PASS provider ini.
+- Next: tunggu kesiapan task POS, lalu buat binding baru dan rerun pasangan exact tanpa mengubah metadata evidence lama. Program 36 sprint, perangkat nyata, owner UAT, recovery menyeluruh, payroll operasional/admission dan business readiness tetap belum selesai; performance OFF. Catatan POS sebelumnya dipertahankan sebagai histori. Tidak ada perubahan pricing, positioning atau keputusan founder; sinkronisasi mencakup delapan dokumen produk/portfolio/master/status/gaps.
+
+
 
 ## 2026-09-06 — SagaOPS own-only staff portal, M2 partial
 
