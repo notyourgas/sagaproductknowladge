@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-05 - Saga Member: Jelajah dengan foto editorial
+
+- CONFIRMED: PR #67 mengintegrasikan foto editorial sintetis pada Jelajah; source `9563ddcee00559aab8f31c1b0adf1a20b3775c43`, main artefak `5aa7d1765dfa08b307d72666225a95731f92c7ab`. Coffee menjadi kartu utama, Studio/Quest tetap ringkas; teks dan CTA terpisah dari foto. Foto diberi disclaimer AI, bukan foto outlet/produk asli. Label proximity tanpa geolokasi dihapus.
+- Kartu melebar untuk teks 200% melalui container query; loading tidak mengubah geometri, error tetap menyisakan CTA, enam WebP diprecache. Search/filter/reset, query kembali dari detail, navigasi Coffee-Studio, dan kartu member tersimpan tetap terjaga. Tidak ada perubahan fitur/provider produk lain.
+- Local check/build, 234 unit tests dan full browser regression PASS. Focused Preview UAT: lima viewport 320-430px, keyboard, target 44px, axe serious/critical 0, teks 200%, forced colors, delayed/error images, warm offline PASS. Lab CPU4x 24 pergantian filter: CLS 0, tanpa long task pada window interaksi. DPR2/3 local: pertama membuka Jelajah saat offline sesudah hanya Beranda dibuka tetap berhasil; desktop tetap satu canvas 430px. Bukan physical iOS/VoiceOver, sertifikasi WCAG, survei atau field LCP.
+- Library baru: tidak ada. Motion 13.2.0 MIT tetap; picture/srcset dan CSS native. Enam aset total 97.650 byte, delta runtime +777 byte gzip terhadap baseline ternormalisasi; dependency audit 0 vulnerability. Riset: https://www.w3.org/WAI/tutorials/images/decorative/ , https://web.dev/articles/optimize-lcp , https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries .
+- Preview `dpl_3DaZ9i88iEKUka3Kehvkx8fXDJA5` Ready, exact 14-file parity dan remote Jelajah UAT PASS. Koreksi instrumentasi audit CSP ada pada PR #68; aplikasi tidak melonggarkan CSP. Folder public identik, tree `45f85d2f30a62db8cf67637cc719bd0c8baba678`.
+- SUDAH DEPLOY: Production `dpl_7jNe5QeJz89pb8aCg5sSgcNuA8eM` Ready pada https://saga-member-platform.vercel.app ; promosi Preview yang sama. Artefak source `5aa7d1765dfa08b307d72666225a95731f92c7ab`, canonical QA main `379225a0b375ea5db7c8074dc7704443c2b0edd1` memiliki public tree identik. PR #68 source `8d5261274219e48d2e5e66293491302d44967730`, exact CI `33970579494` dan main CI `33970922092` PASS. Public exact 14-file parity, full Jelajah UAT dan smoke lima viewport PASS; console/error backend/eksternal 0. Rollback tersedia ke `dpl_4uY3SuLduGAc6HcoVP6NBFEJD1ib`. Status maksimum `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED`; backend/auth/provider/data nyata OFF, PRODUCTION_ACTIVATED=false, BUSINESS_READY=false. Next slice: Quest editorial.
+
 
 ## 2026-09-05 - SagaOPS Help inactivity privacy protection
 
