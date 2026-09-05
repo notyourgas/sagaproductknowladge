@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-05 - Saga Member artwork recovery: belum deploy
+
+- Follow-up CONFIRMED: source terbaru `2ea81c0011802a39f5075c51bb4ae16df6133b7c`, draft PR #65 yang sama; 226 unit tests PASS. CI kandidat awal `33953135884` FAILED pada uji sentuh tambahan. Rehearsal upgrade PWA juga belum lolos saat reload offline; pemeriksaan controller/module-cache masih diperlukan. Perubahan fallback cache belum boleh disebut integration-validated. Release tetap HOLD; Production tidak berubah.
+
+- CONFIRMED: source `0078b0f40cb7da34d6abb254211152c507539a1b`, draft PR #65 di repository saga-member, mengimplementasikan loading/error/retry gambar kartu, decode sebelum tampil, Apply menunggu gambar siap, bantuan yang mengikuti pembesaran teks, serta batas waktu unduhan tanpa menghasilkan kartu kosong. Browsing tetap hanya preview; kartu aktif tidak berubah tanpa Apply.
+- Local: 224 unit tests PASS; regresi penuh dan uji artwork lima viewport/error/retry/timeout/export/zoom/offline lulus sebelum perluasan uji sentuh. Uji tambahan swipe lalu tap kategori masih RED dalam simulasi Chromium CPU4x. Gejala sama direproduksi pada Production lama; belum dipastikan apakah akar penyebab berada pada harness input atau aplikasi. Jangan menyebut semua UAT atau CI PASS.
+- Status `IMPLEMENTED_NOT_DEPLOYED`; PR masih draft, belum merge dan belum Preview UAT. Production sehat sebelumnya tetap `dpl_62S5sGbHV3moHCyx51JH24ESQvGk` / source `92c93da151a149260e9ae258727002910a1acd6d` pada https://saga-member-platform.vercel.app . Next: selesaikan satu regresi sentuh ini pada branch yang sama, lalu ulangi seluruh gate sebelum release.
+- Tanpa dependency atau biaya baru. Riset heuristic memakai MDN image.decode https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decode ; bukan survei/perangkat fisik. PUBLIC_DUMMY_DEMO; backend/provider/data nyata tetap OFF; PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
+
 
 ## 2026-09-05 - SagaOPS refresh choice integrity
 
