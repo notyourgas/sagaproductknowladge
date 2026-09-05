@@ -1,6 +1,16 @@
 # Saga Product Knowledge Changelog
 
 
+## 2026-09-05 - SagaOPS refresh choice integrity
+
+- CONFIRMED from source and browser acceptance: `e639ba582cd01096fdc3fef46423537619dae9a0`; deployment `dpl_EavhDPcZFuL21afCsnPe29tCzb3r`; https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: a saved drink could restore without its disappeared modifier. After: affected lines are not silently changed; review explains why re-entry is needed, even if the cart is empty. Available lines still restore and the customer can reselect before requesting a new server quote. This is pre-checkout draft recovery, not payment restart recovery.
+- Validation: red unit -> green; focused 3 unit + 2 portrait browser tests; full 241/241 with concurrency=2 and static/type checks. Axe serious/critical zero, no horizontal overflow or page errors, both screenshots reviewed. Dependency audit zero vulnerabilities; heuristic secret scan zero matches. Candidate and same-artifact stable smoke pass on three viewports, zero checkout requests and blocked operator routes.
+- Delivery LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Only ephemeral public simulator updated; private VPS unchanged. Historical readiness remains 84/100. No pricing, founder decision, provider or operator changes.
+- Product/dossier/product-portfolio-root changelogs/master/sync status updated. Residual: affected items require re-entry; complete required-group migration, durable sessions, authoritative gateway/member and hardware/offsite acceptance remain open. Next: required-choice migration, ambiguous checkout refresh recovery, private operational integration.
+
+
+
 ## 2026-09-05 - SagaOPS sent-choice recovery UI
 
 - CONFIRMED from source and visual/runtime evidence: `992603e654800bd17c4f3081896f6b00bb493974`; public deployment `dpl_CxcQR9cqAU91qbMW2mho1L53SsN3`; https://saga-pos-kiosk.vercel.app/kiosk .
