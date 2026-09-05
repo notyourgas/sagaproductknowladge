@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 - SagaWork HRPOS19 detail permintaan sesuai akses
+
+- Klasifikasi: `CONFIRMED`; aplikasi final `bcf7eb66ec2a841407437a8e8a21b990bfe36412`, source ledger `f5a7e10f623181abb9d41461e02c87f25af068f7`. Sumber: implementasi, pengujian dan verifikasi runtime oleh task SagaWork. Tidak ada keputusan founder baru.
+- Sebelum: daftar permintaan belum menyediakan detail dan riwayat klarifikasi on-demand. Sesudah: UI workforce membuka detail milik staf atau lokasi yang diizinkan untuk reviewer, termasuk tahap persetujuan dan 100 transisi terbaru dengan penanda riwayat terpotong. Akses lintas staf/lokasi/tenant ditolak; identitas aktor internal dan metadata privat tidak disajikan.
+- Provider menambah `requests.get` sehingga kandidat memiliki 67 operasi; angka 66 pada milestone terdahulu tetap bukti historis. OpenAPI tervalidasi mencakup 85 path/104 operasi. Tidak ada migration baru.
+- Gate final PASS: 56 file/384 test, lint, TypeScript, contract/OpenAPI, audit nol vulnerability, Linux build dan tiga suite native MySQL sintetis/disposable. Native detail meliputi dua tenant, own/location scope, isolasi riwayat, urutan dan truncation 100 item. Signed HTTP create/review/detail kedua role, invalid-ID 400, private GET 401 dan no-store PASS. Chromium meluluskan first-password change normal/recovery serta detail HR/staf: pemuatan on-demand, alasan/riwayat sebagai teks, buka ulang, layar 390 px tanpa overflow, Axe tanpa pelanggaran dan tanpa JavaScript error. Perbaikan tata letak kontrol HR mobile serta hierarki heading termasuk aplikasi final.
+- Delivery: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Public trial `711ef77` diverifikasi aktif dengan HTTP 200 dan tidak berubah; shared private runtime tidak disentuh. Tidak ada production activation atau peningkatan business readiness.
+- Batas: penambahan provider diterima task POS sebagai proposal integrasi saja, bukan fitur native POS yang sudah diimplementasikan atau joint-tested. Tidak ada source POS diubah. Native M2 POS, workflow lengkap, perangkat/owner UAT, joint recovery, admission dan payroll operasional tetap terbuka; performance OFF.
+- Next: koordinasikan konsumsi capability dengan task POS, lalu lakukan joint acceptance native M2 sesuai scope akses. Evidence browser workforce tidak menggantikan acceptance native SagaPOS. Sinkronisasi mencakup SagaWork PRODUCT/DOSSIER/CHANGELOG, master knowledge, root/portfolio changelog, SYNC_STATUS dan GAPS; tidak ada perubahan pricing, struktur repository atau keputusan founder.
+
 
 ## 2026-09-06 — SagaOPS owner financial clarity
 
