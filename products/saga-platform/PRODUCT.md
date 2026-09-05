@@ -1,6 +1,17 @@
 # Saga Platform Product Knowledge
 
 
+## 2026-09-06 — Saga Member searchable Points history
+
+- Classification: CONFIRMED. Scope remains PUBLIC_DUMMY_DEMO, no real account/backend/provider/payment/customer activation and no added service cost.
+- Activity now searches example entries by title, Coffee/Studio/reward source, status and displayed date, intersected with the existing direction filters. Bounded80-character Unicode-normalized word search is local to the tab/history; the query is not sent to a server or added to demo exports.
+- Results retain original detail indices; query/filter/count survive Back/Forward and refresh. Clear search retains direction; empty-state Tampilkan semua resets both. Balance128 and all-history totals are unchanged and explicitly distinguished from filtered results.
+- Accessibility deepening: stable heading names the ledger even when empty; IME composition suppresses pending announcements; refresh restores focus/reading position. At320px/200% text, the prior public page overflowed15px and truncated7 activity titles; candidate layout has0 overflow and0 clipped titles at320/390px. Input min48px, clear44px, existing mobile-only canvas and Plus Jakarta Sans retained.
+- Typing animates no rows; explicit filtering/reset animates at most five distinct rows, reduced-motion final state. Existing Motion13.2.0 MIT bundle unchanged; CSS/native input suffice. No added dependencies, dependency audit0. Normalized gzip deltas: app+573B, member UI+255B, experience model+120B, existing ledger CSS+481B; no new stylesheet layer.
+- Source candidate ea3ea3ced1752ad40e18ea5255ce2ed94ccd3f09, PR79. Focused83 checks passed across five widths/both motion settings, detail/history/refresh/empty/IME/Unicode/long input, native touch, cached offline search, axe and200% text. CPU4x synthetic input handler samples3.6–9.7ms; initial lab CLS0–0.00014. These are not field INP/LCP or physical-device/assistive-technology certification.
+- Delivery verified: full local suite passed294 unit tests and all browser acceptance; one earlier full regression used the superseded result-count copy and its assertion was corrected without relaxing row/detail checks. Exact PR CI33995734267 passed; canonical main3e73e5c1a0d52defbe614080e735e850b7aded24 is tree-identical to candidate and main CI33996138009 passed. Preview dpl_8zpqKGT4QETETH35ng6VfKEN2yPi Ready with all five UAT suites passing. Production dpl_6VUq3tMsuXcwY9tRPkip3DvWhQuN Ready at https://saga-member-platform.vercel.app, static PWA build6.356s;18-file public/source parity and all five public UAT suites passed (Activity83, bootstrap91, carousel80 plus touch/autoplay, lifecycle, navigation38). Error-level15-minute query returned no entries; comprehensive monitoring/drains unverified. Rollback target dpl_DmrqdqKxbYi2SbiqnTpWkgNn2oKW. Status SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED only; no real-service activation or business readiness.
+- Research: W3C status messages and focus order informed count/focus continuity; MDN compositionstart and CSS container queries informed IME cancellation and text-aware row reflow. Heuristic/synthetic review, not a user survey. Other Saga products unchanged.
+
 ## 2026-09-06 — Saga Member Home startup and reading-position continuity
 
 - Classification: CONFIRMED. Scope remains PUBLIC_DUMMY_DEMO only, with no real account, backend, payment, provider or device activation and no added service cost.
