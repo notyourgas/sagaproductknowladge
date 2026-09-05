@@ -11,6 +11,15 @@
 - SUDAH DEPLOY: protected Preview `dpl_4dvXGjg1N2qyd9kgKQGcrjzF7EBm` lolos UAT sebelum promotion. Production `dpl_62S5sGbHV3moHCyx51JH24ESQvGk` Ready di https://saga-member-platform.vercel.app ; stable UAT PASS, HTTP200, app.js cocok dengan exact source dan cache v58. CPU4x stable diagnostic: LCP796ms, CLS0, long tasks0 pada window interaksi (bukan field/slow-network guarantee). Global storage denial lalu pemulihan juga lulus. Rollback tersedia ke `dpl_922msoyByZgWaSUeZak7USPNpusm` / source `630e9880f4ab6ee4c801fe89138447c5b91d6237`.
 - PUBLIC_DUMMY_DEMO; backend/provider/data nyata tetap OFF. PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
 
+## 2026-09-05 - SagaOPS receipt recovery guard
+
+- CONFIRMED by source and runtime: `6255854bfc102464e5b3e40987cdbd189275268f`, public deployment `dpl_D8j7ZFdjo3HGDUGCrg4tGhCyQ7fS`, https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: incomplete receipt details could interrupt the payment screen. After: invalid receipt rows are rejected before checkout state is discarded; original-order recovery stays available without creating a duplicate payment. This extends the prior envelope guard, not a visual redesign or complete provider schema claim.
+- Validation: five initial regressions red -> green; final full suite 236/236, API focused 28/28. Portrait malformed-receipt recovery and existing body-timeout paths pass with no page errors; Axe/focus/touch/fold checks pass. Dependency audit zero vulnerabilities; changed-source heuristic secret scan zero recognized matches. Candidate then same-artifact stable smoke pass on three viewports, no checkout requests, operator surfaces blocked.
+- Status LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Simulator and ephemeral persistence only. Private VPS release unchanged; previous private integration acceptance is not superseded. Historical readiness remains 84/100. No pricing or founder-decision change.
+- Impacted knowledge: product, dossier, product/portfolio/root changelogs, master and sync status. Remaining gates: production identity/session durability, provider/member integration and hardware/offsite recovery. Next: restart recovery, full payment state schema, private integration acceptance.
+
+
 ## 2026-09-05 - Saga Member: gesture continuity kartu
 
 - CONFIRMED: preview kartu kini memperbarui isi picker saja. Kartu aktif, route, carousel, tombol panah, posisi scroll dan fokus tetap terjaga; Apply tetap satu-satunya tindakan yang mengganti kartu aktif.
