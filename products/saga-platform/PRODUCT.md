@@ -1,5 +1,16 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-05 - Saga Member: simpan kartu dan kembali ke desain sebelumnya
+
+- CONFIRMED dari reproduksi browser: sebelumnya kegagalan storage dapat terlihat sebagai Apply berhasil. Kini kartu aktif berubah hanya setelah penyimpanan dan pembacaan balik cocok; gagal simpan mempertahankan kartu aktif dan preview, dengan satu tombol Coba simpan lagi.
+- Satu langkah kembali ke desain sebelumnya tersedia setelah Apply sukses, menampilkan nama tujuan. Undo juga harus berhasil disimpan; kegagalan bisa dicoba ulang. Undo berlaku untuk sesi berjalan, bukan riwayat akun permanen. Reset demo menghapus state undo.
+- Live region tetap terpasang, fokus status terarah, pesan tidak hanya dibedakan lewat warna. Browsing kategori tetap preview-only; unduhan dan spotlight selalu memakai kartu aktif. CSS tap-grid lama yang tidak dipakai dihapus.
+- Source `bb52209a392610fdada48c14c4e77748c5a98036`, PR #63. Local: 211 unit test; lima viewport; retry/undo/route/reload; keyboard; forced colors; zoom 200%; target 44px; failed-preview export exclusion; offline save/undo/reload. Axe serious/critical 0. CPU4x diagnostic: enam siklus touch apply/undo, CLS 0, tanpa long task >50ms atau animasi tersisa. Bukan uji perangkat fisik atau field metrics.
+- Release main `92c93da151a149260e9ae258727002910a1acd6d`; PR #63 CI `33947277368` PASS. Test-only follow-up PR #64 (`d7cf47bf7c54b9834a6dfbce466ba30de8d87fe9`) menunggu final animation state sebelum full-page Axe; CI `33947676581` dan canonical main CI `33947882872` PASS. Run main sebelumnya `33947490867` gagal audit Reward Pocket dan tidak dipakai untuk deploy. Runtime Reward tidak berubah. Upgrade PWA lokal v57->v58 menjaga desain tersimpan dan tetap bekerja offline.
+- Library tetap Motion 13.2.0 MIT dan platform storage API; tanpa dependency baru. Delta gzip empat file runtime +1529 bytes terhadap baseline, audit dependency 0 vulnerability. Review riset bersifat heuristic, bukan survei: MDN localStorage https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage dan W3C status messages https://www.w3.org/WAI/WCAG21/Understanding/status-messages .
+- SUDAH DEPLOY: protected Preview `dpl_4dvXGjg1N2qyd9kgKQGcrjzF7EBm` lolos UAT sebelum promotion. Production `dpl_62S5sGbHV3moHCyx51JH24ESQvGk` Ready di https://saga-member-platform.vercel.app ; stable UAT PASS, HTTP200, app.js cocok dengan exact source dan cache v58. CPU4x stable diagnostic: LCP796ms, CLS0, long tasks0 pada window interaksi (bukan field/slow-network guarantee). Global storage denial lalu pemulihan juga lulus. Rollback tersedia ke `dpl_922msoyByZgWaSUeZak7USPNpusm` / source `630e9880f4ab6ee4c801fe89138447c5b91d6237`.
+- PUBLIC_DUMMY_DEMO; backend/provider/data nyata tetap OFF. PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
+
 ## 2026-09-05 - Saga Member: gesture continuity kartu
 
 - CONFIRMED: preview kartu kini memperbarui isi picker saja. Kartu aktif, route, carousel, tombol panah, posisi scroll dan fokus tetap terjaga; Apply tetap satu-satunya tindakan yang mengganti kartu aktif.
