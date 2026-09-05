@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-186 - Preview kartu memakai carousel dan kartu aktif tetap stabil
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Pemilihan desain Saga Member Card |
+| Keputusan | Pilih tema untuk menampilkan desain A di bawahnya; geser berulang A sampai E dan kembali A. Kartu aktif di atas hanya berubah setelah Ganti ke desain ini ditekan. |
+| Alasan | Andreas menginginkan browsing visual dengan geser dan pemisahan jelas dari kartu yang sedang dipakai. |
+| Alternatif | Grid pilihan desain dengan tap; preview menggantikan kartu utama. |
+| Dampak | Carousel preview, navigasi keyboard, dan explicit apply; unduhan dan spotlight tetap memakai kartu aktif. |
+| Pemberi keputusan | Andreas |
+| Status | CONFIRMED |
+| Dokumen terkait | products/saga-platform/PRODUCT.md, products/saga-platform/CHANGELOG.md |
+
 ## DEC-185 - Rute Hari Saga memisahkan preview, konfirmasi, dan progres lokal
 
 | Field | Nilai |
