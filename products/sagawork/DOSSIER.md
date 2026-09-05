@@ -13,6 +13,10 @@ Menjadi detail public-safe produk, workflow, teknologi, bukti, risiko, dan gate 
 
 ## Integrasi SagaPOS terbaru
 
+Snapshot slice pemulihan staf: source `c6e2382552b4ceb7a3092bc54419a6b817d4bf32`, native test `df033ebe25842786ebcc400b00163eac31f64560`. Login dan perubahan password awal menangani respons tidak pasti dengan batas 12 detik, tidak melakukan retry mutasi otomatis, dan menyediakan jalur masuk ulang. Kode perusahaan, Employee ID dan tujuan consent terjaga; password dibersihkan ketika berganti tahap. Pengumuman staf (notice) serta review swap menggunakan permission/scope yang berlaku.
+
+Validasi lokal 53 file/359 test, lint, TypeScript, contract dan audit nol vulnerability PASS. Aplikasi `c6e2382` juga lulus Linux webpack build, 12 concurrent native MySQL exchanges, scoped visibility pada dua tenant/dua lokasi, full HTTP absensi staf, serta Chromium normal first-password change dan recovery setelah respons terputus. Kelanjutan consent, staff authority/revocation, Axe dan layar 390 px PASS. Source dokumentasi/harness final `fc0062ac348a37b802af55e7f9bcd82cf63a2d86`; semua data sintetis/disposable. Slice `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada deployment run ini dan shared private `0254822` serta public `711ef77` tidak berubah. UI M2 staf native POS belum diuji; evidence browser workforce tidak menggantikannya.
+
 Keputusan Andreas: HR menjadi bagian dari satu pengalaman SagaPOS untuk usaha sendiri. Kopi Saga F&B mengikuti prioritas task POS yang terbaru; dukungan Saga Studio tetap arah perluasan yang tidak mengganti prioritas itu. Scope pilot eksternal sebelumnya bersifat historis dan tidak mengotorisasi penggunaan data nyata pada integrasi ini.
 
 Source core `aab15ad` menyediakan consent/login bridge dan 66 command terdaftar yang memanggil layanan domain dengan permission/tenant scope asli. Source kandidat menambah tiga tabel ephemeral bridge dan mencapai 70 application tables/29 migrations; public runtime lama tetap pada schema sebelumnya. POS memakai PostgreSQL dan workforce memakai MySQL, dengan mapping organisasi, hak akses dan sesi yang eksplisit.

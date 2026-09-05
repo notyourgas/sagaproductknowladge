@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-06 - SagaWork pemulihan login staf dan visibilitas sesuai akses
+
+- Klasifikasi: `CONFIRMED`; source aplikasi `c6e2382552b4ceb7a3092bc54419a6b817d4bf32` dan native visibility test `df033ebe25842786ebcc400b00163eac31f64560`. Perubahan mengikuti workflow staf yang sudah disetujui; tidak ada keputusan owner baru.
+- Sebelum: kelanjutan login dan pergantian password awal memerlukan pemulihan yang lebih jelas ketika respons layanan tidak pasti. Sesudah: permintaan dibatasi 12 detik, submit ganda dicegah, dan respons yang tidak valid tidak membuka dashboard. Staf bisa kembali masuk memakai password baru tanpa kehilangan kode perusahaan/Employee ID atau tujuan consent, sementara field password dibersihkan.
+- Visibilitas pengumuman staf (notice) mengikuti permission yang berlaku dan review tukar shift mengikuti scope lokasi reviewer. Privacy dan scope enforcement diuji tanpa mempublikasikan data atau detail internal.
+- Gate PASS: 53 file/359 test, lint, TypeScript, contract checks dan audit nol vulnerability. Aplikasi `c6e2382` lulus Linux webpack build, 12 concurrent native MySQL exchanges, visibility multi-tenant/lokasi, full HTTP absensi staf, serta Chromium login/password-change normal dan recovery saat respons terputus. Kelanjutan consent, staff authority, revocation, Axe dan layar 390 px PASS. Source dokumentasi/harness final `fc0062ac348a37b802af55e7f9bcd82cf63a2d86`; seluruh evidence sintetis/disposable.
+- Delivery slice: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Tidak ada deployment pada run ini; shared private runtime tetap `0254822` dan public synthetic trial tetap `711ef77`. Production activation serta business readiness tidak berubah.
+- Native M2 staf di SagaPOS dan program 36 sprint belum selesai seluruhnya. Task POS tetap mengerjakan prioritas owner/finance sendiri; source POS tidak diubah oleh slice workforce ini. Payroll belum operasional dan performance tetap OFF.
+- Next: lanjutkan kelanjutan staf native bersama task POS serta workflow/recovery/owner-device UAT yang masih terbuka. Hasil Chromium workforce ini bukan acceptance UI M2 native SagaPOS.
+
+
 ## 2026-09-06 - SagaWork menjadi modul HR SagaPOS: integrasi privat M1
 
 - Klasifikasi: `CONFIRMED`; keputusan Andreas dan evidence source core `aab15ade5ee18856374d11387614df92d4cbec4d`, assignment `f64e25a14183ebf5465dd5f2b55b897080c606e9`, serta hardening `0254822ee84f4753a6b568b069e2cdd2b55139f9`.
