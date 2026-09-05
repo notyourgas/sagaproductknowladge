@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-05 - SagaOPS ambiguous checkout recovery
+
+- CONFIRMED: LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
+- Application source: `46d5e0691f4c33a9e1f9357ff9684999bafa51fa`; deployment: `dpl_BY8GtRNtJJLmqrDFmfUUbSCVc5Ew`.
+- Before: an interrupted checkout response left editable cart contents while server replay retained the original order. After: unresolved checkout retains its exact payload, locks edits/reset, recovers the session active order or offers a same-payload retry. No new payment is inferred from network failure.
+- Evidence: final full regression 202/202; local storage-denial/lost-response coverage at two portrait sizes, one order/payment, exact payload retry, Axe serious/critical and overflow checks. First full image fallback timeout passed targeted rerun and final regression.
+- Both dependency audits zero vulnerabilities; heuristic changed-file secret scan clear. Build, candidate and stable three-viewport smoke passed, operator access denied, zero public checkout requests.
+- Public simulator updated at https://saga-pos-kiosk.vercel.app/kiosk ; rollback deployment `dpl_G3egg9ExHgQooi1jUxAkuaHe86AY`. Real provider/operator production unchanged.
+- S11 remains partial. API/DB target, staff identity, Customer Platform, hardware, and UAT gates remain. Historical 84/100 is unchanged, not a current PRD-completion percentage. Pending attempt recovery after reload still relies on the server session.
+- Source evidence: `docs/SAGA_POS_CHECKOUT_AMBIGUITY_RECOVERY_2026-09-05.md`. Product/dossier/changelogs/master/sync updated together. Next: confirm operator runtime target, complete durable cross-surface acceptance, then external UAT/release gates.
+
 
 ## 2026-09-05 - SagaOPS storage-denial checkout recovery deployed
 
@@ -69,7 +80,7 @@
 
 
 Updated: 5 September 2026
-Latest material status: `KIOSK_STORAGE_RECOVERY_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
+Latest material status: `KIOSK_CHECKOUT_AMBIGUITY_RECOVERY_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
 Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PERSISTENT_HELP_SAFE_CANCEL_PUBLIC_DEMO_DEPLOYED / KIOSK_SUCCESS_TIME_AND_SCROLL_PUBLIC_DEMO_DEPLOYED / KIOSK_MEMBER_DEGRADED_RECOVERY_PUBLIC_DEMO_DEPLOYED / KIOSK_CHECKOUT_QUOTE_GUARD_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen

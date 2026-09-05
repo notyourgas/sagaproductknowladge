@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-05 - SagaOPS ambiguous checkout recovery
+
+- CONFIRMED: LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
+- Application source: `46d5e0691f4c33a9e1f9357ff9684999bafa51fa`; deployment: `dpl_BY8GtRNtJJLmqrDFmfUUbSCVc5Ew`.
+- Before: an interrupted checkout response left editable cart contents while server replay retained the original order. After: unresolved checkout retains its exact payload, locks edits/reset, recovers the session active order or offers a same-payload retry. No new payment is inferred from network failure.
+- Evidence: final full regression 202/202; local storage-denial/lost-response coverage at two portrait sizes, one order/payment, exact payload retry, Axe serious/critical and overflow checks. First full image fallback timeout passed targeted rerun and final regression.
+- Both dependency audits zero vulnerabilities; heuristic changed-file secret scan clear. Build, candidate and stable three-viewport smoke passed, operator access denied, zero public checkout requests.
+- Public simulator updated at https://saga-pos-kiosk.vercel.app/kiosk ; rollback deployment `dpl_G3egg9ExHgQooi1jUxAkuaHe86AY`. Real provider/operator production unchanged.
+- S11 remains partial. API/DB target, staff identity, Customer Platform, hardware, and UAT gates remain. Historical 84/100 is unchanged, not a current PRD-completion percentage. Pending attempt recovery after reload still relies on the server session.
+- Source evidence: `docs/SAGA_POS_CHECKOUT_AMBIGUITY_RECOVERY_2026-09-05.md`. Product/dossier/changelogs/master/sync updated together. Next: confirm operator runtime target, complete durable cross-surface acceptance, then external UAT/release gates.
+
 Saga Member V41 Home Reward Loop aktif pada stable public dummy URL
 `https://saga-member-platform.vercel.app` dari canonical main
 `72f38f1349903f1b9a6c80facbd617f27bbc920f` (PR #58), Preview
