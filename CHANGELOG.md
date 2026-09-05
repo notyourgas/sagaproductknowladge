@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+
+## 2026-09-06 — SagaOPS own-only staff portal, M2 partial
+
+- CONFIRMED; final POS source `76b96c35b9a9d5836235c04263658ff0b1e5a98d` pushed. Before: staff had no native POS own-only role/landing page. After: explicitly granted staff can read their published upcoming schedules, assigned notes and permission-scoped notices through the existing encrypted SagaWork bridge. Staff access does not imply HR, owner, cashier or bar. Private assets are excluded from public Kiosk packaging.
+- Reason and scope: close a concrete staff integration gap without giving HR privileges. Native page is read-only, not attendance/payroll evidence or a 67-command UI. Role/employee-query overrides are denied; output is plaintext; unavailable/revoked/hidden state clears private data. Final logout recovery treats an already-absent session as signed out while keeping retry for transport failures.
+- Validation: final 282/282 local regression, focused client/staff/isolated-runner guards 6/6, static/type, mobile/desktop Axe and overflow/keyboard/touch pass; dependency audit reports zero vulnerabilities. Source evidence: `docs/HRPOS_STAFF_PORTAL_M2_2026-09-06.md`.
+- Native evidence remains source-specific: POS `e5db3cb66de7fd12ecddbd06b48d16e72efbaff4` plus workforce `f5a7e10f623181abb9d41461e02c87f25af068f7` passed staff login/consent, own shift, access denials, restart and private-data clearing after actual browser parent logout. Overall joint M2 is PARTIAL: final POS logout UI correction needs a fresh immutable fixture/runtime binding. Do not retarget old evidence or label final source joint-validated. Earlier HTTP-helper logout behavior was a synthetic cookie-context testing issue, not a confirmed provider revocation defect.
+- Delivery: final source LOCAL_VALIDATED; no operational production deployment/activation or real payments. Both disposable test services were stopped; synthetic data retained for audit, not an offsite backup. Operational POS remains unchanged at `a9d500722f3451aaf6f792f247c3fe5328b3b7ce`. Prior SagaWork handoff chronology remains valid.
+- Open/next: fresh native joint acceptance for final POS source; permission-scoped request detail; remaining HR/attendance/device and stock/HPP workflows. Customer Platform configuration and approved offsite backup still open; Waves 1–8 partial, Wave 9 deferred. No readiness increase from local source or tests.
+
+
 ## 2026-09-06 - SagaWork persiapan acceptance M2 sintetis
 
 - Klasifikasi: `CONFIRMED`; sumber: task SagaWork dan verifikasi native terisolasi. Instrumentasi `c53a8ffbf60bf1d099ab0d0cdd632dbcebf40f05` (bootstrap `d143735`), aplikasi dibekukan pada `f5a7e10f623181abb9d41461e02c87f25af068f7`, pasangan POS `e5db3cb66de7fd12ecddbd06b48d16e72efbaff4`. Ini tooling acceptance, bukan fitur pelanggan baru atau keputusan founder baru.
