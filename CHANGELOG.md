@@ -1,6 +1,20 @@
 # Saga Product Knowledge Changelog
 
 
+## 2026-09-05 - SagaOPS in-place quote recovery deployed
+
+- `CONFIRMED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Exact application source: `64401fed4507332d90751fe5f4c506fd4a0125f0`; deployment: `dpl_EDifvHY2eHF7C39uwrCAnCJJvpUJ`.
+- Quote failure now offers Hitung ulang total without leaving the cart or changing menu, note, quantity or member. Loading does not claim a confirmed total; repeated failures retain retry focus and success focuses the next step without submitting it.
+- Removing the last item cancels loading ownership; stale responses are ignored and undo re-quotes. 5xx diagnostics use customer-safe copy. No backend, gateway, operator, dependency or business policy changes.
+- Evidence: 194/194 full regression; two portrait guest/member browser scenarios with fault injection, delayed response, offline, focus, Axe serious/critical zero and overflow checks. Dependency audits zero vulnerabilities; heuristic secret scan clear.
+- Authenticated candidate and anonymous stable smoke each passed three viewports with one browser-injected failure followed by explicit retry, zero checkout requests, simulator health and operator route denial.
+- Stable: https://saga-pos-kiosk.vercel.app/kiosk . Rollback: `dpl_75K2g8q5t1PG9uk2xqmgjgSbvj98`. No env files/operator static pages in public build; guarded server modules remain bundled.
+- Historical readiness stays 84/100. Real operator API/DB, Customer Platform, NFC/printer and staff UAT remain external gates; all 32 finalization sprints are not accepted.
+- Impacted source: Kiosk quote handler/template, browser tests, smoke and release evidence. Product, dossier, changelogs, master and sync status updated together. Concurrent Saga Member knowledge was preserved by preparing this sync on a fresh current-main worktree; no force push or history replacement.
+
+
+
 ## 2026-09-05 - Saga Member V40 Reward Target sync
 
 - Informasi `CONFIRMED`: main `14dba0de07fcafe0d6e08aa4a4c1b02f81005a5f`, PR #57, PR CI `33932567681`, canonical-main CI `33932761922`, Preview `dpl_8pqpU61SvCcPvQAVoCLe5zt1kwRU`, dan production deployment `dpl_EFcJdeE7pLCxuZGR8u7hrynGYMjv` aktif pada stable URL.
