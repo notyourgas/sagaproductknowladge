@@ -1,6 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
 
+## 2026-09-05 — SagaOPS session persistence and member hardening
+
+CONFIRMED source `7e45411229f137d1f303595c6b7b9db38d84a8d4`: private/durable HTTP sessions now recover from PostgreSQL, preserve expiry/revocation across restart, isolate Kiosk/operator token types and avoid storing bearer tokens. The existing member helper now bounds requests, prevents redirects and distinguishes paid checkout success from ambiguous reward confirmation. It is not authoritative live member integration or a durable loyalty retry consumer.
+
+Local evidence: 261/261 regression PASS, focused member 6/6, final session recovery/failure test PASS, static/type PASS, dependency audit zero reported vulnerabilities. Status LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; no public/private deployment or payment activation. Wave 1–8 completion remains unaccepted. Owner confirmed Customer Platform configuration/vault reference and approved offsite destination are unavailable; external acceptance awaits those inputs. Internal catalog/inventory/cash/refund/report work remains unfinished separately. See source `docs/SAGA_POS_SESSION_AND_MEMBER_HARDENING_2026-09-05.md`. No readiness increase inferred.
+
+
+
 ## 2026-09-05 — Saga Member photo recovery and enlarged-text reflow
 
 - CONFIRMED: editorial photos on Quest/Reward now retain geometry on failure and expose an explicit keyboard-safe retry, without automatic request loops or cache-busting URLs. Quest progress and Reward summary reflow for text enlarged to 200%. Photo browser QA is included in test:all. Member-card state, balances and provider boundaries are unchanged.
