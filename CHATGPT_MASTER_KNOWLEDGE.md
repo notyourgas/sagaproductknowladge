@@ -53,6 +53,19 @@ Local evidence: 261/261 regression PASS, focused member 6/6, final session recov
 
 
 
+## 2026-09-06 — Saga Member navigation keyframe read batching
+
+- Final verification: test-only PR CI 33986894177 and canonical main CI 33987457269 passed; reused Preview passed all three suites, final public lifecycle and final-source artifact parity passed. No duplicate deployment was required.
+- Classification: CONFIRMED. Scope: Saga Member PUBLIC_DUMMY_DEMO; production runtime changed, no real backend, account, database, payment or provider activation.
+- Navigation captures the actual in-flight indicator transform before route DOM writes, then supplies explicit Motion keyframes. Instrumented indicator style reads after writes decreased from 2 to 0. Visual dimensions and interaction contract are unchanged.
+- Runtime application `e5609078d983c67a37b3febdf1becb9eaf37e720`, PR #74, canonical runtime `c57789a287bb3504402d2fa45fdffefe9f3cb185`; exact PR CI 33985408632 and canonical CI 33985760194 passed.
+- Production `dpl_BuNCzTVEGJfbfNBpTWQJpJGXWVH3` Ready at the existing stable Saga Member Vercel URL; preview `dpl_C7T6PpEKVYBau4uvfFXbjhGwm89p`. Static PWA build 6.882 seconds; 16-file public artifact parity passed. Rollback remains `dpl_CvegfXP37dCzjXxbg4xw7EvN6UUP`.
+- Test-only PR #75 settles route focus and finite motion before accessibility assertions. Earlier focus setup and mid-fade contrast checks failed; corrected steady-state checks pass without weakening thresholds. This is not an intermediate-frame accessibility certification. Final test source `89f24ae9a5df744d15e3f5d1aef492f8eb980883` has identical runtime inputs.
+- Final local suite passed, including 256 unit tests. Focused browser coverage includes 20 viewport/route read cases, 10 timed interruptions and 5 DPR3 emulated-touch destinations; public navigation passed 38 checks and corrected lifecycle passed. Physical iOS and native screen readers remain unverified.
+- CPU4x loopback ABBA lab synchronous-handler medians: baseline 32.55/33.15 ms versus candidate 14.20/13.30 ms. Overall frame-speed improvement is inconclusive; no field INP or network-throttled LCP claim. Initial long tasks remain.
+- Existing Motion 13.2.0, MIT; no added dependency or service cost, bundle gzip +48 bytes, dependency audit 0 findings. Error-log scan returned 0 records; external log drains not checked.
+- Source: Saga Member runtime, acceptance tests, exact-commit CI and deployment verification. Next scoped investigation: Home carousel initial offsetLeft measurement; preserve swipe, resize, keyboard and offline behavior. Other Saga products are unaffected.
+
 ## 2026-09-06 — Saga Member motion lifecycle and live preferences
 
 - CONFIRMED: finished/cancelled animation controls are released, held buttons restore their original transform, stale route callbacks cannot restart motion, and live reduced-motion changes finish nonessential animations. Resize cancels the old navigation endpoint. Deferred visibility cleanup prevents an old dialog-close callback from closing a freshly reopened Pass, Points or Reward dialog. Existing visual design and membership data are unchanged.
