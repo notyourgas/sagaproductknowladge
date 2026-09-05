@@ -1,6 +1,16 @@
 # SagaOPS Dossier
 
 
+## 2026-09-06 — SagaOPS owner financial clarity
+
+- CONFIRMED; source `749f2448018e6a8bdf20a34e172a5ebdf6370ae5`, implementation and local acceptance. Before: total bills were labeled net sales and zero cost placeholders could imply profit. After: owner/Admin separate menu sales from charges and allocated payments, expose per-order discrepancies and owner-only CSV, and mark HPP/profit unverified. Stale date responses cannot overwrite the selected report.
+- Reason: avoid misleading financial conclusions. Current PAID/COMPLETED business-date projection excludes refunded/pending orders explicitly; it is not a historical refund ledger, bank settlement or P&L. No new dependency, migration or external HR source change.
+- Evidence: 279/279 regression and 9/9 focused tests pass; mobile/desktop browser, Axe serious/critical, overflow, keyboard/touch, local database reconstruction and 2,000-order arithmetic/CSV coverage pass. Dependency audit reports zero vulnerabilities. Source report: `docs/SAGA_POS_OWNER_FINANCIAL_RECONCILIATION_2026-09-06.md`; research map: `docs/SAGA_POS_OPERATIONS_RESEARCH_MAP_2026-09-06.md`.
+- Delivery: LOCAL_VALIDATED, source pushed. Operational production remains unchanged at `a9d500722f3451aaf6f792f247c3fe5328b3b7ce`; service checked active. No production activation, real payment or public operator deployment. Waves 1–8 remain partial; no readiness increase from local evidence.
+- Open: authoritative recipe/HPP snapshots; refund/cash/settlement ledger; native POS staff own-only joint acceptance; Customer Platform configuration and approved offsite backup. WIS definition remains unconfirmed, not assumed to mean WMS. Wave 9 stays deferred. Next: cost snapshots, full financial ledger, native staff joint acceptance.
+
+
+
 ## SagaOPS — HR onboarding M1, 6 September 2026
 
 - CONFIRMED; source `7d328ab839f1a848d0f9ad0f8201da052f542248`, joint workforce source `aab15ade5ee18856374d11387614df92d4cbec4d`; source implementation and synthetic native browser acceptance.
