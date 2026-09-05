@@ -1,6 +1,17 @@
 # SagaOPS Changelog
 
 
+## 2026-09-05 - SagaOPS Help inactivity privacy protection
+
+- CONFIRMED source `8b42016c382a01a27c2d89985f8b120304ec7271`; public deployment `dpl_6g5zatD4VYffjh3YmqSKo5Vpi4mU`; stable https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: an abandoned pre-payment Help dialog suspended the inactivity policy. After: Help participates in the existing three-minute inactivity warning plus thirty-second continuation window. One modal owns focus; explicit continuation retains cart; confirmed timeout reset clears the draft. Pending-payment Help remains excluded from automatic reset.
+- Evidence: two portrait red regressions -> green; full 254/254 and static/type PASS. Axe serious/critical zero, focus, continuation target/fold, overflow, reduced-motion, page errors and visual review checked. No new dependency, CSS, animation, payment or backend change. Dependency audit zero vulnerabilities; heuristic secret scan zero matches; candidate and same-artifact stable smoke PASS on three viewports, no checkout requests and blocked operator surfaces.
+- Research: W3C Timing Adjustable https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html reviewed 2026-09-05 informed preserving the warning and repeatable continuation, not immediate cancellation. No complete accessibility certification claim.
+- LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Private VPS and real providers unchanged. Historical readiness stays 84/100. Background timer suspension, reset failure and physical device UAT remain gates. No founder/pricing change; product/dossier/changelogs/master/sync updated, knowledge provenance main HEAD.
+- Next: background/sleep recovery, device privacy UAT, server-owned session durability.
+
+
+
 ## 2026-09-05 - SagaOPS checkout storage-denial recovery
 
 - CONFIRMED source `60137c9611fd23690d3fe29e2a61bc56ed39aa1e`; public deployment `dpl_Cch9jq88P7Z3NkdguZHM5U1iAFDW`; stable https://saga-pos-kiosk.vercel.app/kiosk .
