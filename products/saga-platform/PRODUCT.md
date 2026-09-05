@@ -1,5 +1,14 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-05 - Saga Member: carousel preview kartu
+
+- CONFIRMED, keputusan Andreas: tema menampilkan desain A langsung di bawahnya. Geser horizontal menampilkan B, C, D, E, lalu kembali ke A; navigasi keyboard dan tombol panah tersedia.
+- Kartu aktif di atas tetap memakai desain tersimpan ketika tema atau preview berubah. Hanya tombol Ganti ke desain ini menerapkan pilihan; spotlight dan unduhan memakai kartu aktif.
+- Source: `ded8459`, PR #60. Local validation: 208 unit test, tujuh tema, lima viewport mobile, drag, wrap, apply, reload, export, dan Axe serious/critical 0.
+- Delivery: VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE. Canonical source `28ede587ff63bfe92f20d79d964b2892379cd3f3`; PR CI `33939894009` lulus. Production `dpl_2UELwMdmUswZXNPDmHAjtUxk6Gs7` Ready pada https://saga-member-platform.vercel.app. Remote card UAT lulus pada tujuh tema dan lima viewport, termasuk drag, wrap, apply, reload, spotlight, unduhan, dan Axe serious/critical 0.
+- Backend/provider/data nyata tetap OFF; PRODUCTION_ACTIVATED=false; BUSINESS_READY=false. Tidak ada dependency baru.
+
+
 Updated: 5 September 2026
 Evidence status: production foundation + migration roadmap
 
