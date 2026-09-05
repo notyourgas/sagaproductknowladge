@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+
+## 2026-09-05 - SagaOPS completed-session reset recovery
+
+- CONFIRMED from source and runtime: `418fd8ab454e165076ab37e382b1ad471238ee42`; public deployment `dpl_GH1n2BQ9SEozhJtncXsUM1KbGX87`; https://saga-pos-kiosk.vercel.app/kiosk .
+- Completed-order finish now hides receipt while preparing the next session, prevents duplicate reset requests and retries session closure rather than resuming the previous receipt. A bound browser-local marker supports reload recovery when storage is available; another session/order or pending payment cannot match it. Pre-checkout failed cancellation retains the established recoverable-cart behavior.
+- Validation: two initial red portrait regressions -> green; focused reset/marker 4/4; final full suite 245/245 plus static/type. A broad pre-checkout regression was corrected without weakening the old test. Portrait Axe serious/critical zero, retry touch/fold checks, visual review and no page errors; completed order/payment retained. Dependency audit zero vulnerabilities; changed-source heuristic secret scan zero recognized matches. Candidate/same-artifact stable smoke pass on three viewports with zero checkout requests and blocked operator surfaces.
+- Status LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Private VPS and live provider unchanged. Historical readiness remains 84/100. Browser persistence is best-effort; authoritative server-owned session retirement remains an operational gate. No pricing or founder-decision change.
+- Product/dossier/product-portfolio-root changelogs/master/sync status updated. Next: durable session retirement, storage-denied device recovery, private operational UAT. No full manual P01-P12 or physical-device acceptance claim.
+
+
 ## 2026-09-05 - Saga Member artwork recovery: belum deploy
 
 - Follow-up CONFIRMED: source terbaru `2ea81c0011802a39f5075c51bb4ae16df6133b7c`, draft PR #65 yang sama; 226 unit tests PASS. CI kandidat awal `33953135884` FAILED pada uji sentuh tambahan. Rehearsal upgrade PWA juga belum lolos saat reload offline; pemeriksaan controller/module-cache masih diperlukan. Perubahan fallback cache belum boleh disebut integration-validated. Release tetap HOLD; Production tidak berubah.
