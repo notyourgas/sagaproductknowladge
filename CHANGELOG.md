@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+
+## 2026-09-05 - SagaOPS Kiosk response recovery public release
+
+- CONFIRMED from source and runtime smoke: `adec9223d8e8926412bb9c7f68ca58a2c935bbae`, deployment `dpl_BUZdJg7fgpWmixjZqmro1AP2LTSs`, https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: incomplete service replies could leave checkout without usable payment details. After: Kiosk preserves the original attempt, displays sent choices, offers safe retry, and bounds response-body waiting. Synthetic retry produces one order/payment; no implied payment success from incomplete data.
+- Validation: full suite 224/224; focused 19/19; portrait 720x1280 and 1080x1920 recovery, Axe serious/critical zero, internal touch-scroll/focus/fold checks. Candidate and promoted stable smoke PASS on three viewports with zero checkout requests and blocked operator surfaces. Dependency audit zero vulnerabilities; heuristic changed-source secret scan zero matches.
+- Delivery: LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED. Only QRIS simulator and ephemeral persistence; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Private VPS remains on a9d500722f3451aaf6f792f247c3fe5328b3b7ce and is not updated by this release. Earlier private integration acceptance remains valid within its stated scope.
+- Historical readiness 84/100 unchanged. Remaining: durable production identity/session and business data, authoritative gateway/member, hardware UAT and independent offsite recovery. No new founder decision or pricing change. Product, dossier, product/portfolio/root changelogs, master knowledge and sync status updated together.
+
+
 ## 2026-09-05 - Saga POS private VPS PostgreSQL integration
 
 - CONFIRMED owner decision: use existing VPS with PostgreSQL; domain follows. MySQL proposal superseded. Scope is private synthetic staging, not operational launch.
