@@ -1,5 +1,15 @@
 # Saga Platform Dossier
 
+## 2026-09-05 - Saga Member: validasi ulang pemulihan gambar kartu
+
+- CONFIRMED: source `573bd46af092c953ae7b0f6c401221e0d247c8df`, PR #65 MERGED ke main `ef7e4dd4542450543b66821c4dda15bf3a55ad06`. Exact PR CI `33957691208` PASS. Dua hold sebelumnya terisolasi pada timing simulasi sentuh dan penantian lifecycle worker di harness; bukan alasan menonaktifkan assertion atau menambah workaround klik pada aplikasi.
+- Kartu aktif tetap ketika kategori/preview digeser. Loading/error/retry artwork, Apply setelah decode, penanganan unduhan macet tanpa PNG kosong, dan preference lokal tetap dipertahankan. Regresi upgrade exact baseline v58 ke v59 kini wajib di CI: kartu tersimpan bertahan, browse offline tidak mengganti kartu, dan Apply eksplisit bertahan setelah reload.
+- Local check/build, 226 unit tests dan seluruh browser regression PASS. Lima viewport 320–430px; keyboard, reduced motion, zoom teks 200%, forced colors, retry/timeout/export/offline; Axe serious/critical 0. Window interaksi raster CPU4x: CLS 0 dan tanpa long task >50ms. Review normal 35 desain mempertahankan komposisi; raster memiliki perbedaan resampling kecil dari background ke decoded img, bukan pixel-identical.
+- SUDAH DEPLOY: main CI `33958073124` PASS; Preview `dpl_35vhyg1u6qUwJTqCmJdy5RiQvHFo` lolos remote card UAT dan exact source parity sebelum promotion. Production `dpl_AVcUTWmJaCdgd62LV9RmQhdtsK5w` Ready, source main `ef7e4dd4542450543b66821c4dda15bf3a55ad06`, pada https://saga-member-platform.vercel.app . Stable source parity, lima viewport smoke dan full remote card UAT PASS; Axe serious/critical 0, request backend/external 0, offline browse/apply PASS. Diagnostik Chromium stable: CLS 0, LCP 612ms unthrottled, tanpa long task pada window interaksi. Status maksimum `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED`.
+- Native Image/decode dan CSS; Motion 13.2.0 MIT tetap. Tanpa dependency/aset/provider/biaya baru; delta runtime gzip sekitar 2.1KB; audit dependency 0 vulnerability. Uji Chromium mobile synthetic, bukan survei, perangkat fisik iOS/VoiceOver atau field performance. Riset: https://web.dev/articles/service-worker-lifecycle dan https://github.com/microsoft/playwright/blob/v1.61.1/packages/playwright-core/src/server/frames.ts .
+- PUBLIC_DUMMY_DEMO; backend/provider/data nyata OFF; PRODUCTION_ACTIVATED=false; BUSINESS_READY=false. Rollback ke deployment sebelumnya dengan schema preference v2 yang sama.
+
+
 ## 2026-09-05 - Saga Member artwork recovery: belum deploy
 
 - Follow-up CONFIRMED: source terbaru `2ea81c0011802a39f5075c51bb4ae16df6133b7c`, draft PR #65 yang sama; 226 unit tests PASS. CI kandidat awal `33953135884` FAILED pada uji sentuh tambahan. Rehearsal upgrade PWA juga belum lolos saat reload offline; pemeriksaan controller/module-cache masih diperlukan. Perubahan fallback cache belum boleh disebut integration-validated. Release tetap HOLD; Production tidak berubah.
