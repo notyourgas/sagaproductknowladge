@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+
+## 2026-09-05 — Saga Member photo recovery and enlarged-text reflow
+
+- CONFIRMED: editorial photos on Quest/Reward now retain geometry on failure and expose an explicit keyboard-safe retry, without automatic request loops or cache-busting URLs. Quest progress and Reward summary reflow for text enlarged to 200%. Photo browser QA is included in test:all. Member-card state, balances and provider boundaries are unchanged.
+- Source PR #70, application `6f9e2545f2be77022fa62ffcfebe32eaa829839e`; test-only PR #71, `b178f9a900d78bd5c0ac386a1ca96177c24354c4`; canonical main `e856dba0d92c99576cfead06c60bcb274982cae3`. Exact PR/main CI runs `33976400964`, `33976718147`, `33977254145`, `33977589426` PASS. The previously pending editorial-assets main CI `33974937030` is also confirmed PASS.
+- Production changed to Vercel `dpl_7NnDqjma6986HfMP73VSAtcGxeCd`, Ready, https://saga-member-platform.vercel.app . Validated Preview `dpl_33LRdZmUBYSNSwgkUwXETueaZwbu` reused because the test follow-up did not change public assets. Public parity: 15 files PASS. Rollback: `dpl_Dq8V3vea2vz3i26kryY1hCWuPmBp`.
+- Local isolated full regression and 237 unit tests PASS. Local/Preview/public focused UAT covers four routes and five canonical mobile viewports, text 200% at 320/430, image decode, keyboard recovery, delayed/rapid retry, first offline Quest/Reward after Home warm-up, and zero serious/critical axe findings on the normal matrix. Forced colors and rapid navigation checked locally. Scope is not WCAG certification or physical iOS/VoiceOver UAT.
+- No dependency added; Motion 13.2.0 MIT retained, native HTML/CSS recovery, related runtime +893 bytes gzip. Dependency audit zero vulnerabilities; targeted credential scan PASS, not exhaustive. Lab CLS0 and twelve CPU4x post-render motion windows without long tasks; initial route-render long tasks remain a future optimization item, not claimed resolved. No field-performance or user-survey claim.
+- Sources informing error capture and decorative-image semantics: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/error_event and https://www.w3.org/WAI/tutorials/images/decorative/ . PUBLIC_DUMMY_DEMO only; no real data/provider activation, no paid service, not BUSINESS_READY. Next single slice: investigate initial Reward render performance.
+
+
 ## 2026-09-05 - SagaWork Staff access dan Workspace pin
 
 SagaWork public synthetic trial sekarang menjalankan exact source/runtime `775380a` pada `https://app.sagawork.site`. Staff login memakai kode perusahaan+Employee ID+password tanpa OTP atau invitation link. HR membuat/reset akses dari record staf; password awal ditampilkan sekali, berlaku 72 jam, wajib diganti sebelum sesi pertama, dan reset mencabut seluruh sesi lama. Plaintext password tidak disimpan/logged. Settings menerima tautan pin HTTPS Google Maps allowlisted, memvalidasi ulang setiap redirect, mengekstrak nama saran/koordinat, serta menyediakan pengaturan radius dan device distance/accuracy test sebelum Workspace disimpan.
