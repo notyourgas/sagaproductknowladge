@@ -1,6 +1,16 @@
 # SagaOPS Product Knowledge
 
 
+## 2026-09-06 — SagaOPS master controls and counted cash closing
+
+CONFIRMED source `e35ea2ce8e9f3f7988c3dbc1be9d276a0464194b`: Owner can configure existing-menu category, display rank, BAR/FOOD destination and reversible archive status. Archived menus cannot be ordered; historical snapshots remain intact. Persisted order-pause and opt-in same-day WIB hours gate new orders without blocking settlement of existing payments. New end-of-day availability deadlines use configured closing time.
+
+Cashier must enter physical cash count; missing count no longer defaults to expected cash. Closing sales are isolated to the cash session across restart; large cashier variances require owner review. Native expandable count controls preserve the normal cashier first fold. API-design skill informed validated, compatible action contracts and error handling.
+
+Validation: full local regression 265/265 PASS; final durable focused 12/12; Admin/browser, cashier count/first-fold, Axe/overflow checks PASS; dependency audit zero reported vulnerabilities. Status LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. No private/public deployment or payment activation. Whole Waves 1–8 remain partial: full master CRUD/assets/modifiers, stock, historical cash/refund reconciliation and reports remain open; Customer Platform/offsite inputs unavailable. HR identity contract coordination is not an implemented BFF or unified login. Evidence: source `docs/SAGA_POS_MASTER_CONTROLS_CASH_CLOSE_2026-09-05.md`. No readiness uplift inferred.
+
+
+
 ## 2026-09-05 — SagaOPS session persistence and member hardening
 
 CONFIRMED source `7e45411229f137d1f303595c6b7b9db38d84a8d4`: private/durable HTTP sessions now recover from PostgreSQL, preserve expiry/revocation across restart, isolate Kiosk/operator token types and avoid storing bearer tokens. The existing member helper now bounds requests, prevents redirects and distinguishes paid checkout success from ambiguous reward confirmation. It is not authoritative live member integration or a durable loyalty retry consumer.
