@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-185 - Rute Hari Saga memisahkan preview, konfirmasi, dan progres lokal
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Planner lintas Coffee dan Studio pada Jelajah public dummy Saga Member |
+| Keputusan | Pengguna memilih urutan Coffee ke Studio atau Studio ke Coffee sebagai preview, lalu harus mengonfirmasi sebelum rute aktif berubah. Rute aktif memakai timeline dua langkah yang membuka Rencana Mampir dan Brief Pocket yang sudah ada; kembali ke Jelajah mengarahkan CTA ke langkah belum selesai. State memory-only dan reset/reload tidak boleh dianggap booking, transaksi, atau progres nyata. |
+| Alasan | Jelajah memerlukan pengalaman lintas tenant yang terasa berguna dan berkelanjutan, tetapi public dummy harus tetap jujur serta tidak mengklaim persistence atau transaksi yang belum tersedia. |
+| Alternatif | Mengubah rute langsung saat radio dipilih; membuat booking palsu; menyimpan progres di localStorage/backend; menambah dependency planner baru. |
+| Dampak | Main `12e578e4cf7ca02326c5cf3bcc7ee65a9c2ed551`, PR #59, dan deployment `dpl_CduvhAn3kkzC9M3JJzmSJ7qkfn3a` menyediakan planner aksesibel tanpa backend, provider, persistence, atau dependency baru. Emoji Akses cepat tetap tanpa kotak internal. |
+| Pemberi keputusan | SAGADEVS Product/UX/UI/Frontend/QA/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-184 - Target Reward aktif tersambung ke Beranda dan kembali dari Quest
 
 | Field | Nilai |

@@ -8,6 +8,25 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V42 Rute Hari Saga deployed
+
+- Main `12e578e4cf7ca02326c5cf3bcc7ee65a9c2ed551` (PR #59) aktif pada
+  deployment `dpl_CduvhAn3kkzC9M3JJzmSJ7qkfn3a` setelah Preview
+  `dpl_F4aovXzG5KxrFic4TthNbeo3vbUk` diverifikasi.
+- Planner progresif Jelajah menyediakan urutan Coffee ke Studio atau Studio ke
+  Coffee; preview radio tidak mengubah rute aktif sampai pengguna mengonfirmasi.
+- Timeline dua langkah memakai Rencana Mampir dan Brief Pocket yang sudah ada,
+  meneruskan CTA ke langkah belum selesai, dan menyediakan reset eksplisit.
+- 208/208 test, PR/main CI, lima viewport, invalid input, reload memory, 200%
+  zoom, forced colors, reduced motion, offline, artifact hash, dan remote UAT
+  lulus tanpa backend request atau temuan Axe serious/critical.
+- State tetap memory-only; tidak ada booking, transaksi, perubahan Points,
+  backend, provider, persistence, atau dependency baru. Emoji Akses cepat tetap
+  tanpa kotak internal.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-05 — Saga Member V41 Home Reward Loop deployed
 
 - Main `72f38f1349903f1b9a6c80facbd617f27bbc920f` (PR #58) aktif pada

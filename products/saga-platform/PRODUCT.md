@@ -23,6 +23,27 @@ readiness, launcher, dan integration contract.
 
 Saga Platform bukan database gabungan seluruh operational data.
 
+### Saga Member V42 Rute Hari Saga
+
+- Saga Member canonical main `12e578e4cf7ca02326c5cf3bcc7ee65a9c2ed551`
+  (PR #59) aktif pada production deployment
+  `dpl_CduvhAn3kkzC9M3JJzmSJ7qkfn3a` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_F4aovXzG5KxrFic4TthNbeo3vbUk` diverifikasi.
+- Jelajah kini memiliki planner progresif Rute Hari Saga. Pengguna memilih
+  Coffee ke Studio atau Studio ke Coffee, mengonfirmasi urutan, lalu membuka
+  Rencana Mampir dan Brief Pocket yang sudah ada sebagai dua langkah terkait.
+- Mengganti opsi radio hanya mengubah preview; rute aktif baru berubah setelah
+  konfirmasi. Kembali ke Jelajah mengarahkan CTA ke langkah berikutnya yang
+  belum selesai dan menyediakan reset eksplisit setelah rute tuntas.
+- State tetap memory-only dan hilang saat reload/reset. Tidak ada reservasi,
+  transaksi, perubahan Points, backend, provider, atau persistence baru.
+- Emoji Akses cepat Coffee, Studio, Reward, dan Quest tetap glyph natural tanpa
+  kotak internal.
+- Status: `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V41 Home Reward Loop
 
 - Saga Member canonical main `72f38f1349903f1b9a6c80facbd617f27bbc920f`

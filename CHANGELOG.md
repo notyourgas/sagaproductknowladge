@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga Member V42 Rute Hari Saga sync
+
+- Informasi `CONFIRMED`: main `12e578e4cf7ca02326c5cf3bcc7ee65a9c2ed551`, PR #59, PR CI `33938863948`, canonical-main CI `33939064126`, Preview `dpl_F4aovXzG5KxrFic4TthNbeo3vbUk`, dan production deployment `dpl_CduvhAn3kkzC9M3JJzmSJ7qkfn3a` aktif pada stable URL.
+- Perubahan: planner progresif Jelajah memisahkan pilihan preview dari konfirmasi dan menghubungkan urutan Coffee/Studio ke Rencana Mampir serta Brief Pocket dalam timeline dua langkah.
+- Validasi: 208/208 test, lima viewport, invalid input, reload memory, 200% zoom, forced colors, reduced motion, offline, lima artifact hash, remote UAT, Axe serious/critical 0, dan backend request 0.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Batas: state memory-only; tidak ada booking, transaksi, perubahan Points, backend/auth/provider/data nyata, persistence, atau dependency baru. Emoji Akses cepat tetap tanpa kotak internal.
+
+
 ## 2026-09-05 - SagaOPS ambiguous checkout recovery
 
 - CONFIRMED: LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.

@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga Member V42 Rute Hari Saga
+
+- Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `12e578e4cf7ca02326c5cf3bcc7ee65a9c2ed551` (PR #59; PR CI `33938863948`; canonical-main CI `33939064126`).
+- Stable deployment: `dpl_CduvhAn3kkzC9M3JJzmSJ7qkfn3a` pada `https://saga-member-platform.vercel.app`; Preview `dpl_F4aovXzG5KxrFic4TthNbeo3vbUk` diverifikasi sebelum promosi.
+- Perubahan: planner progresif Jelajah memilih Coffee ke Studio atau Studio ke Coffee, memisahkan preview dari konfirmasi, lalu menyambungkan Rencana Mampir dan Brief Pocket dalam timeline dua langkah.
+- Evidence: 208/208 test, lima viewport, invalid input, reload memory, 200% zoom, forced colors, reduced motion, offline, hash lima artifact, remote UAT, Axe serious/critical 0, dan backend request 0.
+- Batas: state hilang saat reload/reset dan tidak membuat booking, transaksi, atau perubahan Points; backend, auth, data nyata, QRIS, Push, NFC, printer, provider nyata, physical UAT, dan pilot nyata tetap OFF. Emoji Akses cepat tetap glyph natural tanpa kotak internal; tidak ada dependency baru.
+- File diperbarui: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `DECISIONS.md`, `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
+
 ## 2026-09-05 - SagaOPS ambiguous checkout recovery
 
 - CONFIRMED: LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
