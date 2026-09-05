@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V41 Home Reward Loop aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`72f38f1349903f1b9a6c80facbd617f27bbc920f` (PR #58), Preview
+`dpl_FhwL7SE4nsZqMJZXHhL8z5q4VvZ9`, dan production deployment
+`dpl_8hnbG6VkzVKpeCTQkzdyna3JE2Kq`. Satu target Reward aktif menggantikan slot
+kelanjutan generik Beranda dengan gap Points, meter aksesibel, dan CTA Quest.
+Quest yang dibuka dari Beranda mempertahankan parent Beranda; ketika kembali,
+target dan fokus CTA dipulihkan. Target tetap memory-only, hilang saat reload,
+dan Quest demo tidak mengubah saldo.
+
+Full 205 test, PR CI `33936041011`, main CI `33936226269`, lima viewport,
+invalid-ID recovery, 200% zoom, forced colors, reduced motion, offline, hash
+enam artifact, dan production UAT lulus tanpa Axe serious/critical, overflow,
+storage write, atau backend request. Emoji Akses cepat tetap glyph natural tanpa
+kotak internal. Tidak ada dependency baru; backend/auth/provider/real data
+tetap OFF, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+
 
 ## 2026-09-05 - SagaOPS storage-denial checkout recovery deployed
 

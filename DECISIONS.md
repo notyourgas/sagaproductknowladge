@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-184 - Target Reward aktif tersambung ke Beranda dan kembali dari Quest
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Continuity target Reward pada Beranda public dummy Saga Member |
+| Keputusan | Bila satu target Reward valid aktif, slot kelanjutan generik Beranda diganti dengan ringkasan target, gap Points, meter aksesibel, dan CTA Quest. Quest yang dibuka dari sana tetap berada dalam hierarchy Beranda dan kembali dengan target serta fokus pulih. State tetap memory-only, hilang saat reload, dan Quest demo tidak mengubah saldo. |
+| Alasan | Target V40 kehilangan konteks ketika pengguna kembali ke Beranda; continuity lintas Reward, Beranda, dan Quest diperlukan tanpa menambah persistence atau klaim progres nyata. |
+| Alternatif | Menambah kartu kedua; mempertahankan slot generik; menyimpan target di localStorage/backend; mengubah saldo setelah Quest demo. |
+| Dampak | Main `72f38f1349903f1b9a6c80facbd617f27bbc920f`, PR #58, dan deployment `dpl_8hnbG6VkzVKpeCTQkzdyna3JE2Kq` menyediakan Home Reward Loop aksesibel tanpa backend, storage, provider, atau dependency baru. Emoji Akses cepat tetap tanpa kotak internal. |
+| Pemberi keputusan | SAGADEVS Product/UX/UI/Frontend/QA/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-183 - Reward Target Saga Member bersifat memory-only dan tidak mengubah saldo
 
 | Field | Nilai |
