@@ -1,6 +1,17 @@
 # Gaps dan Keputusan Founder
 
 
+## SagaOPS — HR onboarding M1, 6 September 2026
+
+- CONFIRMED; source `7d328ab839f1a848d0f9ad0f8201da052f542248`, joint workforce source `aab15ade5ee18856374d11387614df92d4cbec4d`; source implementation and synthetic native browser acceptance.
+- Before: transport-only HR integration. After: durable encrypted login bridge, explicit consent, native Workspace/staff creation and initial staff credential issuance. HR authority does not imply cashier, bar or owner authority.
+- Validation: 270 local regression tests pass; focused suite 6 pass; native PostgreSQL/MySQL joint browser M1 covers login, creation, restart/session recovery and parent revocation. Axe and mobile overflow pass; dependency audit reports zero vulnerabilities. These results are not whole-product operational acceptance.
+- Status: LOCAL_VALIDATED plus JOINT_SYNTHETIC_M1_VALIDATED. Only disposable isolated test services changed; operational production deployment and activation unchanged. No live payments. Public Kiosk excludes private HR assets.
+- Open: own-only staff UI, broader HR workflows/permission matrix, provider login early-submit hardening, approved deployment configuration and release recovery. Customer Platform configuration and approved offsite backup destination remain unavailable; Waves 1–8 remain partial and Wave 9 stays deferred. No readiness increase inferred from this batch.
+- Next: verify provider login hardening, implement own-only staff acceptance, then complete outstanding operational/recovery gates. Source details: `docs/HRPOS_POS_ADAPTER_HANDOFF_V1.md`. Knowledge sync is separate from source and deployment.
+
+
+
 ## 2026-09-05 — SagaOPS session persistence and member hardening
 
 CONFIRMED source `7e45411229f137d1f303595c6b7b9db38d84a8d4`: private/durable HTTP sessions now recover from PostgreSQL, preserve expiry/revocation across restart, isolate Kiosk/operator token types and avoid storing bearer tokens. The existing member helper now bounds requests, prevents redirects and distinguishes paid checkout success from ambiguous reward confirmation. It is not authoritative live member integration or a durable loyalty retry consumer.
