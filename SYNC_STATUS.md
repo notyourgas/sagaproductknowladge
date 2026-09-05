@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-05 - Saga Member: gesture continuity kartu
+
+- CONFIRMED: preview kartu kini memperbarui isi picker saja. Kartu aktif, route, carousel, tombol panah, posisi scroll dan fokus tetap terjaga; Apply tetap satu-satunya tindakan yang mengganti kartu aktif.
+- Native touch mendapat gerakan horizontal terbatas, pembatalan aman, vertical scroll, pinch zoom dan reduced motion. Kontras Apply pada forced colors diperbaiki; palet Polos C/E serta PNG export memakai teks lebih terbaca (base contrast 4.78:1 dan 4.96:1).
+- Source `4ae8dbc10782ca4431235583e4645269af11a1e9`, PR #61; release main `630e9880f4ab6ee4c801fe89138447c5b91d6237`. Exact PR CI `33944604109` dan canonical main CI `33944780752` PASS, termasuk 208 unit tests dan full browser suite.
+- SUDAH DEPLOY sebagai public dummy pada https://saga-member-platform.vercel.app . Preview `dpl_DbYkPjk9hqd1DMP5voJGzphe4N8m` lolos browser UAT sebelum promotion ke production `dpl_922msoyByZgWaSUeZak7USPNpusm`; stable URL UAT juga PASS: lima viewport, native touch/cancel/rapid wrap, zoom 200%, forced colors, offline artwork/browse/apply, Axe serious/critical 0, request backend/external 0. Tidak ada dependency baru.
+- Audit harness `fc0af0e56f825fb0e3d051a8fd1c88ead17c1925` (PR #62) memperbaiki injection Axe agar cocok dengan CSP Preview; CSP aplikasi tidak dilonggarkan. Pengukuran Chromium unthrottled stable: CLS 0, LCP 476ms, tanpa long task pada window interaksi; bukan field performance atau uji perangkat fisik. Rollback tersedia ke release sebelumnya `28ede587ff63bfe92f20d79d964b2892379cd3f3`.
+- Riset: W3C carousel pattern https://www.w3.org/WAI/ARIA/apg/patterns/carousel/ dan MDN pointer cancellation https://developer.mozilla.org/en-US/docs/Web/API/Element/pointercancel_event . Review bersifat heuristic, bukan survei pengguna.
+- PUBLIC_DUMMY_DEMO; backend/provider/data nyata tetap OFF. PRODUCTION_ACTIVATED=false dan BUSINESS_READY=false.
+
+
 ## 2026-09-05 - Saga POS private VPS PostgreSQL integration
 
 - CONFIRMED owner decision: use existing VPS with PostgreSQL; domain follows. MySQL proposal superseded. Scope is private synthetic staging, not operational launch.
