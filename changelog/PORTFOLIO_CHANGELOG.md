@@ -1,6 +1,13 @@
 # Portfolio Changelog
 
 
+## 2026-09-05 - Saga Member V40 Reward Target deployed
+
+- Saga Member main `14dba0de07fcafe0d6e08aa4a4c1b02f81005a5f` (PR #57) aktif melalui deployment `dpl_EFcJdeE7pLCxuZGR8u7hrynGYMjv` pada stable URL setelah Preview `dpl_8pqpU61SvCcPvQAVoCLe5zt1kwRU` diverifikasi.
+- Reward belum cukup Points dapat dijadikan satu target memory-only dengan saldo, gap, meter aksesibel, handoff Quest, hapus target, dan pemulihan fokus.
+- 201 test, exact PR/main CI, lima viewport, offline, accessibility, artifact hash, dan remote UAT lulus. Target tidak mengubah saldo; backend/auth/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+- Emoji Akses cepat tetap menggunakan glyph natural tanpa kotak internal.
+
 ## 2026-09-05 - Saga Member V39 Studio Brief Pocket deployed
 
 - Saga Member main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5` (PR #56) aktif melalui deployment `dpl_296rvEny9sGj3DfoeJejRqFMLmuV` pada stable URL setelah Preview `dpl_4jEJu9Q74fvhCN4NbdjVYK8Un5ZY` diverifikasi.

@@ -1,6 +1,14 @@
 # Saga Product Knowledge Changelog
 
 
+## 2026-09-05 - Saga Member V40 Reward Target sync
+
+- Informasi `CONFIRMED`: main `14dba0de07fcafe0d6e08aa4a4c1b02f81005a5f`, PR #57, PR CI `33932567681`, canonical-main CI `33932761922`, Preview `dpl_8pqpU61SvCcPvQAVoCLe5zt1kwRU`, dan production deployment `dpl_EFcJdeE7pLCxuZGR8u7hrynGYMjv` aktif pada stable URL.
+- Perubahan: reward dengan Points belum cukup dapat dijadikan satu target memory-only dengan saldo, gap, meter, handoff Quest, hapus target, dan pemulihan fokus.
+- Validasi: 201/201 test, lima viewport, keyboard, rapid action, invalid-ID recovery, 200% zoom, forced colors, reduced motion, offline, enam artifact hash, remote UAT, Axe serious/critical 0, overflow 0, storage write 0, dan backend request 0.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Batas tidak berubah: Reward Target memory-only dan tidak mengubah saldo; backend/auth/provider/QRIS/Push/NFC/printer/transaksi/data nyata tetap OFF. Emoji Akses cepat tetap tanpa kotak internal.
+
 ## 2026-09-05 - Saga Member V39 Studio Brief Pocket sync
 
 - Informasi `CONFIRMED`: main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5`, PR #56, PR CI `33930057801`, canonical-main CI `33930273512`, Preview `dpl_4jEJu9Q74fvhCN4NbdjVYK8Un5ZY`, dan production deployment `dpl_296rvEny9sGj3DfoeJejRqFMLmuV` aktif pada stable URL.

@@ -8,6 +8,23 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V40 Reward Target deployed
+
+- Main `14dba0de07fcafe0d6e08aa4a4c1b02f81005a5f` (PR #57) aktif pada
+  deployment `dpl_EFcJdeE7pLCxuZGR8u7hrynGYMjv` setelah Preview
+  `dpl_8pqpU61SvCcPvQAVoCLe5zt1kwRU` diverifikasi dengan hash.
+- Reward dengan saldo belum cukup dapat dipilih sebagai satu target memory-only
+  dengan meter, gap Points, handoff Quest, hapus, dan pemulihan fokus.
+- 201/201 test, PR/main CI, lima viewport, keyboard, invalid-ID recovery,
+  200% zoom, forced colors, reduced motion, offline, artifact hash, dan remote
+  UAT lulus tanpa overflow, storage write, backend request, atau temuan Axe
+  serious/critical.
+- Emoji Akses cepat tetap tanpa kotak internal. Target bukan transaksi dan
+  seluruh backend/auth/provider/data nyata tetap OFF.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-05 — Saga Member V39 Studio Brief Pocket deployed
 
 - Main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5` (PR #56) aktif pada
