@@ -1,6 +1,15 @@
 # SagaOPS Product Knowledge
 
 
+## 2026-09-06 — SagaOPS fresh M2 acceptance guard
+
+- CONFIRMED; implementation candidate `3885c845a919d87ef7fc247d5472b446caf8c0b0`, evidence/docs closure `ba8d626b129a5437225f2ee1ca6e9ec9e465dcd5`, source pushed. Before: a fixed historical M2 test database/unit. After: explicit per-run isolation and immutable handoff binding; retained acceptance evidence cannot be silently retargeted. This closes test-infrastructure risk, not a new HR business feature.
+- Validation: local 286/286 tests, focused 6/6, static/type, mobile/desktop Axe/overflow and dependency audit zero. Fresh native PostgreSQL guard passed concurrent binding, same-pair restart binding, changed-handoff denial and wrong-database denial. Native pair: candidate above plus workforce `f5a7e10f623181abb9d41461e02c87f25af068f7`; provider instrumentation `6b9133ddb2d4983c5771cd3eb41357ff5cd3840f`. Evidence: source `docs/HRPOS_M2_FRESH_DATABASE_GUARD_2026-09-06.md`.
+- Complete joint browser acceptance NOT_RUN: execution policy rejected browser-transport launch before execution; no bypass attempted. This is not a provider authentication defect. Both disposable services stopped; evidence retained. Source LOCAL_VALIDATED plus native database guard only; M2 still PARTIAL, not JOINT_SYNTHETIC_VALIDATED or BUSINESS_READY.
+- Production unchanged at POS `a9d500722f3451aaf6f792f247c3fe5328b3b7ce`; no operational deployment, real payment or payroll activation. No readiness increase. Customer Platform/offsite backup and Wave 9 remain open/deferred. Next: permitted test transport, new immutable joint browser acceptance, then the next permission-scoped staff/operational slice. Prior historical pair evidence remains unchanged.
+
+
+
 ## 2026-09-06 — SagaOPS own-only staff portal, M2 partial
 
 - CONFIRMED; final POS source `76b96c35b9a9d5836235c04263658ff0b1e5a98d` pushed. Before: staff had no native POS own-only role/landing page. After: explicitly granted staff can read their published upcoming schedules, assigned notes and permission-scoped notices through the existing encrypted SagaWork bridge. Staff access does not imply HR, owner, cashier or bar. Private assets are excluded from public Kiosk packaging.
