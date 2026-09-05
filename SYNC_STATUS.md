@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 - SagaWork acceptance native: gate transport belum terbuka
+
+- Klasifikasi: `CONFIRMED`; sumber: evidence workforce dan laporan task POS, dokumentasi `3ec1f09c13fc7c4de5bc957a32b01a4076218569`. Pasangan baru workforce `f5a7e10f623181abb9d41461e02c87f25af068f7` / POS `3885c845a919d87ef7fc247d5472b446caf8c0b0`, instrumentasi `6b9133ddb2d4983c5771cd3eb41357ff5cd3840f`, marker `8401490e2c2926f761198782de641d820ab8da30`. Ini status acceptance, bukan fitur pelanggan baru atau keputusan founder.
+- Gate provider PASS: 393 test/57 file, lint, TypeScript, 5 runtime guards, Linux build dengan hash sesuai dan fixture MySQL baru 70 tabel/29 migration. Probe nyata meluluskan jadwal sendiri/timezone/pengumuman kosong, tiga penolakan privileged serta logout terautentikasi/ulang yang mencabut akses bridge dengan 401/no-store. Task POS melaporkan 286 test dan native concurrent binding, digest immutable, restart pasangan sama serta penolakan database salah PASS.
+- Sebelum: kesiapan fresh runner/database POS belum terkonfirmasi. Sesudah: guard database native sudah PASS, tetapi browser joint pasangan baru `NOT_RUN / BLOCKED_TEST_TRANSPORT`. Kebijakan eksekusi menolak pembuatan proses transport pengujian sebelum dijalankan; rincian aturan atau tindakan perbaikan belum ditetapkan. Ini gate kebijakan eksekusi/transport yang diizinkan, bukan temuan cacat autentikasi provider/POS. Tidak ada percobaan transport alternatif atau bypass.
+- Penutupan: layanan uji workforce terverifikasi inactive, listener kosong dan login database disposable dicabut; database/file sintetis dipertahankan. Task POS melaporkan layanan ujinya juga dihentikan. Public workforce `711ef77` tetap HTTP 200; tidak ada deployment publik, perubahan aplikasi/migration workforce atau perubahan source POS oleh task workforce. Production activation dan business readiness tidak berubah.
+- Next: klarifikasi aturan dan transport pengujian yang diizinkan sebelum menentukan remediation atau tindakan owner; jangan mengasumsikan izin owner sebagai solusi. Setelah jalur valid tersedia, gunakan binding/fixture baru dan rerun exact pair, bukan memakai ulang metadata lama. Joint M2 keseluruhan tetap `PARTIAL / NOT_ACCEPTED`; slice baca-saja tidak menutup 36 sprint, perangkat nyata, payroll, recovery menyeluruh atau owner UAT. Performance OFF. Catatan historis POS dipertahankan; delapan dokumen produk/portfolio/master/status/gaps disinkronkan tanpa perubahan positioning/pricing/keputusan.
+
+
 
 ## 2026-09-06 — SagaOPS fresh M2 acceptance guard
 
