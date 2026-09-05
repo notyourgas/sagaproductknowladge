@@ -1,6 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
 
+## 2026-09-05 — SagaOPS durable catalog and owner menu editing
+
+CONFIRMED from source `2f37021e834235be34d82efb7b7145c57ac86a92`: existing menu names/prices can be edited in Admin; server pricing consumes those overrides. Durable PostgreSQL runtime preserves catalog availability, timed restoration, edits and history after restart, with version conflict and failed-write recovery. Previously these controls were memory-only or source constants. Existing order snapshots are not rewritten.
+
+Validation: full local regression 258/258 PASS; final focused durable rerun 9/9; Admin browser/Axe/touch/overflow PASS; dependency audit zero reported vulnerabilities. Status LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Neither public simulator nor private VPS was deployed by this batch; no live-payment activation. Waves 1–8 remain partially implemented, not completed. Identity/session durability, full catalog CRUD, inventory/cash/refund/member integration and native staging release acceptance remain next work. Source evidence: `docs/SAGA_POS_WAVES_1_8_EXECUTION_2026-09-05.md`. This supersedes no deployed-runtime claim.
+
+
+
 ## 2026-09-05 - SagaOPS safe idle warning dismissal
 
 - CONFIRMED source `f388b5d949320e28ec6850511b7926bc88e7cee5`; public deployment `dpl_DWLq3PURNs4texwjimrS8MQV1vxU`; stable https://saga-pos-kiosk.vercel.app/kiosk .
