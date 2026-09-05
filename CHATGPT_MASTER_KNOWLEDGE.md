@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+
+## 2026-09-05 - SagaOPS sent-choice recovery UI
+
+- CONFIRMED from source and visual/runtime evidence: `992603e654800bd17c4f3081896f6b00bb493974`; public deployment `dpl_CxcQR9cqAU91qbMW2mho1L53SsN3`; https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: repeated drinks on locked checkout recovery were indistinguishable. After: sent modifiers, preparation notes and dine-in/takeaway context are visible. Customers and assisting staff can distinguish their choices while retry retains the original payload and one order/payment. No price, provider, storage or operator changes.
+- Validation: two missing-detail assertions red -> green; focused 5/5, complete suite 238/238 with concurrency=2 plus static/type checks. Default-concurrency run encountered local socket resource exhaustion; no OS or unrelated processes changed. Portrait Axe/focus/touch/fold/overflow checks and visual review pass. Dependency audit zero vulnerabilities and heuristic secret scan zero matches. Same-artifact candidate/promotion/stable smoke pass on three viewports with zero checkout requests and blocked operator surfaces.
+- Status LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Private VPS and operational integrations unchanged; public simulator remains ephemeral. Readiness historical 84/100 unchanged. No founder/pricing decision changed.
+- Impacted knowledge: product, dossier, product/portfolio/root changelogs, master and sync status. Remaining: persistent session recovery, authoritative payment/member and hardware/offsite gates. Test-host concurrency sensitivity remains a limitation. Next: refresh recovery, payment state consistency, private operational acceptance.
+
+
 ## 2026-09-05 - Saga Member: simpan kartu dan kembali ke desain sebelumnya
 
 - CONFIRMED dari reproduksi browser: sebelumnya kegagalan storage dapat terlihat sebagai Apply berhasil. Kini kartu aktif berubah hanya setelah penyimpanan dan pembacaan balik cocok; gagal simpan mempertahankan kartu aktif dan preview, dengan satu tombol Coba simpan lagi.
