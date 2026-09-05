@@ -1,7 +1,7 @@
 # SagaWork Product Knowledge
 
-Updated: 5 September 2026
-Evidence status: `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_PASS / OWNER_FEATURE_REVIEW_READY`
+Updated: 6 September 2026
+Evidence status: `CONFIRMED / LOCAL_VALIDATED / JOINT_SYNTHETIC_M1_VALIDATED`; public trial tetap `711ef77`.
 
 ## Tujuan dokumen
 
@@ -17,11 +17,23 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 
 ## Scope tervalidasi
 
+### Arah integrasi SagaPOS terbaru
+
+Andreas menetapkan satu pengalaman SagaPOS untuk usaha sendiri, dengan SagaWork menjadi mesin HR internal. Kopi Saga F&B mengikuti prioritas operasional terbaru task POS; rencana dukungan Saga Studio tidak memperluas prioritas tersebut secara otomatis. Rencana pilot perusahaan eksternal lama menjadi histori, bukan admission aktif. Lihat [DEC-190](../../DECISIONS.md#dec-190---sagawork-menjadi-modul-hr-di-sagapos-untuk-usaha-sendiri).
+
+Core `aab15ad` menyediakan authenticated bridge dan 66 operasi domain, dengan PostgreSQL POS/MySQL workforce terpisah serta kewenangan eksplisit. Joint browser M1 memakai POS `7d328ab` + workforce `aab15ad` dan meluluskan login/consent, Workspace/staf/credential awal, pemulihan sesi setelah restart, revoke, Axe dan tampilan sempit. Ini milestone privat sintetis, belum seluruh alur HR.
+
+Patch `f64e25a` membatasi check-in tanpa jadwal ke Workspace yang ditugaskan secara efektif, termasuk verifikasi ulang saat event direkam; staf tetap bisa menyelesaikan sesi setelah transfer. Hardening `0254822ee84f4753a6b568b069e2cdd2b55139f9` meluluskan 51 test file/336 test, Linux webpack build, native concurrent exchange, full HTTP staf sintetis dan Chrome credential-form checks. Runtime joint privat diperbarui ke `0254822` dengan health PASS; M1 joint browser tetap memakai kombinasi sebelumnya. Source dokumentasi/evidence terbaru `7d4bbdd`.
+
+Program 36 sprint belum selesai seluruhnya; sebagian pekerjaan source sudah lulus lokal. M2 staf native POS, workflow lengkap, owner/device UAT, joint recovery, payroll persisten/slip/statutory validation/pembayaran dan admission baru belum selesai. Pure payroll engine bulanan/harian/per jam sudah tersedia dengan policy eksplisit dan biaya pemberi kerja terpisah; angka fixture bukan upah aktual. Performance OFF.
+
+### Kapabilitas PWA dan baseline trial
+
 - HR CRUD staff serta membuat/reset akses Staff. Sistem menampilkan kode perusahaan, Employee ID, dan password awal satu kali; Staff wajib mengganti password awal sebelum sesi pertama diterbitkan. Reset mencabut seluruh sesi lama dan kembali memakai credential sementara berumur 72 jam; plaintext tidak disimpan atau dicatat.
 - Status kerja dan akses dipisahkan. HR dapat suspend/restore akses Staff dengan pencabutan sesi, melakukan terminasi hanya setelah kewajiban jadwal/request/swap selesai, lalu archive tanpa menghapus histori; rehire belum termasuk pilot.
 - HR bulk import CSV memakai preview per baris, validasi tenant/lokasi/duplikat, commit atomik sebagai draft, dan audit; impor tidak membuat akun atau password staff.
 - Staff Home, jadwal, notes, konfirmasi shift, swap, request, dan check-in/break/check-out dengan paid/unpaid break policy.
-- Absensi darurat tanpa jadwal bersifat default-off; bila policy mengizinkan, staff memilih lokasi aktif, sistem membuat draft yang selalu direview, dan HR harus publish sebelum hasil dapat direkonsiliasi.
+- Absensi darurat tanpa jadwal bersifat default-off. Source integrasi `f64e25a` hanya mengizinkan Workspace aktif yang ditugaskan pada tanggal setempat; sistem membuat draft untuk review dan HR publish sebelum rekonsiliasi. Perubahan source ini belum aktif di public trial lama.
 - Supervisor-assisted attendance tersedia untuk staf tanpa smartphone: hanya jadwal published tiga hari terakhir, reason + attestation wajib, Staff tidak dapat membuatnya, tidak ada foto/GPS palsu, dan pembuat record wajib berbeda dari reviewer.
 - Correction maker-checker, leave ledger, staff-requested overtime candidate→Supervisor→partial HR final.
 - Work-hours memisahkan net produktif dan payable, missing/long break masuk human review, serta telat, overtime candidate/approved, Reliability 50/30/20, period lock, CSV, dan maker-checker reopen.
@@ -37,6 +49,8 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 - Request Hub target wajib mencakup izin, cuti, sakit, ganti hari libur, direct shift swap/replacement, lembur, dan attendance correction dengan state, approval, audit, serta schedule/payroll impact terpisah.
 
 ## Status saat ini
+
+Snapshot integrasi 6 September 2026 di atas adalah status terbaru. Rincian release lama di bawah dipertahankan sebagai evidence historis; public runtime aktif tetap `711ef77`, bukan `e2a0391`. Integrasi baru tidak dipasang di URL publik tersebut.
 
 - Andreas telah mengunci scope pilot pertama dengan kode public-safe `KANANTA-MADIUN-CANARY-01`: satu company/satu lokasi di Kota Madiun, 5–10 Staff, mulai 26 Agustus 2026, default tiga hari, support enabled dengan default 09.00–18.00 WIB, manual attendance parallel run, dan performance `OFF`. Statusnya `OWNER_SCOPE_CONFIRMED / PRE_ADMISSION / NO_GO`; nama customer, roster, serta identitas champion individual tidak dipublikasikan.
 - Sprint 30 exact local source `a500a52` menambah startup/readiness guard untuk `pilot` + `pilot_restricted`, binding dedicated database name/user serta private evidence bucket, kill switch performance/signup, dedicated MFA scope, ClamAV requirement, dan topology service/health/evidence/retention/encrypted-backup/rollback terpisah. Full local check lulus 33 test file/123 test dan 44-page production build.
@@ -62,6 +76,8 @@ SagaWork adalah PWA operasi tenaga kerja multi-lokasi untuk jadwal, absensi foto
 
 Belum ada real employee/photo/performance data, external provider storage/DPA, protected pilot access, offsite key escrow, human device/PWA-install UAT, legal/privacy approval, exact roster/named individual champion/signed charter, private source remote/hosted CI run, independent security verification, real signed admission receipt, atau closed beta. Public synthetic trial memakai password lemah yang disetujui owner hanya untuk feature review dan wajib dirotasi/dihapus sebelum pilot; CSP object workflow juga masih menunjuk service loopback sehingga photo upload publik belum diterima. Real performance activation menunggu authoritative KPI adapters/sources, company rubric, staff transparency, DPIA/legal basis, trained calibration/fairness review, dan appeal owner; pilot pertama sengaja mempertahankannya OFF. Shared-VPS `/tmp` dan capacity monitoring, XLSX/async private export, dedicated coverage/leave/exception export, rehire, scheduled/backdated termination, real offboarding authority/SOP, serta training/test shift isolation juga masih terbuka. Payroll nominal/compliance tidak diklaim. External-evidence runbook public-safe sudah memetakan 16 admission records, canary, UAT, provider/legal/recovery, performance appendix, dan receipt assembly; owner scope baru memenuhi definisi awal, bukan seluruh evidence admission.
 
-## Internal pilot execution bridge
+## Internal pilot execution bridge - historis sebelum integrasi SagaPOS
+
+Rencana berikut `DEPRECATED` sebagai target aktif oleh DEC-190. Gate keamanan/perangkat/recovery tetap relevan, tetapi cohort dan tanggal pilot lama tidak boleh dipakai sebagai approval baru.
 
 `CONFIRMED`: Andreas menerima Sprint 30–40 secara berurutan: isolated `pilot_restricted` environment, secure organization/HR bootstrap, pilot configuration, Staff lifecycle, schedule/note/swap, Android+iOS owner attendance rehearsal, HR report reconciliation, uncoached Andreas UAT, revision/regression, five-Staff three-day canary, lalu final Go/No-Go. Program ini kini dipecah menjadi F01-F52 dengan Workspace/Cabang sebagai operating model; F53-F60 tidak boleh menghambat canary. Sprint 31 trial login sudah lulus otomatis dan Owner feature review dapat dimulai, tetapi K0/K1 belum PASS. Akun pilot harus dibuat ulang di database, email, bootstrap token, password, dan TOTP terpisah; akun trial tidak boleh dipromosikan. Performance tetap OFF dan payroll tetap payroll-ready only.

@@ -6,10 +6,24 @@ Menjadi detail public-safe produk, workflow, teknologi, bukti, risiko, dan gate 
 
 ## Konteks dan status bukti
 
-- Updated: `5 September 2026`
+- Updated: `6 September 2026`
 - Delivery: `STAGING_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED_EXTERNAL`; internal disposition `PILOT_READY_CANDIDATE`
+
+## Integrasi SagaPOS terbaru
+
+Keputusan Andreas: HR menjadi bagian dari satu pengalaman SagaPOS untuk usaha sendiri. Kopi Saga F&B mengikuti prioritas task POS yang terbaru; dukungan Saga Studio tetap arah perluasan yang tidak mengganti prioritas itu. Scope pilot eksternal sebelumnya bersifat historis dan tidak mengotorisasi penggunaan data nyata pada integrasi ini.
+
+Source core `aab15ad` menyediakan consent/login bridge dan 66 command terdaftar yang memanggil layanan domain dengan permission/tenant scope asli. Source kandidat menambah tiga tabel ephemeral bridge dan mencapai 70 application tables/29 migrations; public runtime lama tetap pada schema sebelumnya. POS memakai PostgreSQL dan workforce memakai MySQL, dengan mapping organisasi, hak akses dan sesi yang eksplisit.
+
+M1 joint browser POS `7d328ab` + workforce `aab15ad` PASS: login/consent, Workspace, staf, credential awal, restart/session recovery, parent revoke, Axe dan narrow-screen. Patch `f64e25a` meluluskan native MySQL/HTTP staf, first-password change, own-only access, assignment-aware unscheduled attendance dan alur check-in/break/check-out. Evidence foto/GPS tetap sintetis dan tidak membuktikan kamera/perangkat nyata.
+
+Hardening `0254822ee84f4753a6b568b069e2cdd2b55139f9`: 51 file/336 test, Linux webpack build, 12 concurrent native MySQL exchanges, full HTTP staf, dan Chrome credential-form checks PASS. Runtime joint privat kemudian diperbarui ke `0254822` dengan health PASS; source dokumentasi/evidence terbaru `7d4bbdd`. Hasil joint browser M1 tetap dibind ke kombinasi core sebelumnya, bukan ditafsirkan sebagai rerun seluruh alur setelah hardening.
+
+Integrasi berstatus `LOCAL_VALIDATED / JOINT_SYNTHETIC_M1_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public trial tetap `711ef77` dan production tidak berubah. Keseluruhan 36 sprint belum selesai. M2 UI staf POS, workflow lengkap, outlet/operator reconciliation, perangkat/owner UAT, joint recovery dan admission baru menunggu acceptance. Kalkulator payroll hanya fungsi deterministik dengan input/kebijakan eksplisit; persistence, statutory validation, slip, payment dan parallel finance cycle belum tersedia. Performance OFF.
+
+Bagian release dan pilot lama di bawah adalah histori bila bertentangan dengan snapshot integrasi ini; keputusan pengganti tercatat pada [DEC-190](../../DECISIONS.md#dec-190---sagawork-menjadi-modul-hr-di-sagapos-untuk-usaha-sendiri).
 
 ## Overview dan pengguna
 

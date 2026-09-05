@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-06 - SagaWork menjadi modul HR SagaPOS: integrasi privat M1
+
+- Klasifikasi: `CONFIRMED`; keputusan Andreas dan evidence source core `aab15ade5ee18856374d11387614df92d4cbec4d`, assignment `f64e25a14183ebf5465dd5f2b55b897080c606e9`, serta hardening `0254822ee84f4753a6b568b069e2cdd2b55139f9`.
+- Sebelum: PWA workforce terpisah dengan rencana pilot perusahaan eksternal. Sesudah: arah satu pengalaman SagaPOS untuk usaha sendiri, dengan SagaWork sebagai mesin HR. Kopi Saga F&B menjadi fokus operasional POS terkini; dukungan Saga Studio tidak mengubah prioritas POS yang lebih baru. Rencana pilot Madiun lama bukan admission aktif integrasi ini.
+- Source menyediakan consent/login bridge, pemetaan organisasi dan kewenangan eksplisit, 66 operasi domain HR, serta fondasi kalkulator payroll deterministik. PostgreSQL POS dan MySQL workforce tetap mempunyai kepemilikan data terpisah; akses HR tidak otomatis memberi akses kasir/owner.
+- Gate: kandidat workforce 51 file/336 test PASS. Joint browser M1 POS `7d328ab839f1a848d0f9ad0f8201da052f542248` + workforce `aab15ad` PASS untuk login/consent, pembuatan Workspace/staf, credential awal, restart/pemulihan sesi, parent revocation, Axe dan tampilan sempit. Source `f64e25a` lulus native MySQL dan HTTP staf untuk first-change, akses milik sendiri, Workspace ditugaskan, urutan absensi dan idempotency. Pengujian memakai data/evidence sintetis.
+- Hardening/runtime privat `0254822` menambah ketahanan form credential, transaksi bridge dan privasi logging. Linux webpack build, 12 concurrent native MySQL exchanges, full HTTP staf, serta Chrome credential-form checks PASS. Runtime joint privat kemudian diperbarui ke `0254822` dengan health PASS; evidence joint browser M1 tetap milik kombinasi core `aab15ad` + POS `7d328ab`. Source dokumentasi/evidence terbaru `7d4bbdd`.
+- Delivery: `LOCAL_VALIDATED / JOINT_SYNTHETIC_M1_VALIDATED / IMPLEMENTED_NOT_DEPLOYED` untuk integrasi. Public synthetic trial tetap `711ef77` di `https://app.sagawork.site`; integrasi hanya privat, public deployment dan production activation tidak berubah.
+- Program 36 sprint belum selesai seluruhnya; sebagian pekerjaan source sudah lulus lokal, sedangkan M2 UI staf native POS, workflow lengkap, owner/perangkat UAT, joint recovery, deployment dan admission baru masih terbuka. Payroll nominal baru pure engine, belum persisted policy/run, statutory validation, slip atau pembayaran. Performance tetap OFF.
+- Next: lanjut M2 staf native bersama task POS, kemudian workflow lengkap, konfigurasi/recovery/UAT. Aturan gaji aktual dan pembandingan finance diperlukan sebelum payroll operasional.
+
+
 
 ## SagaOPS — HR onboarding M1, 6 September 2026
 

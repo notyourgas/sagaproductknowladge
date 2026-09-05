@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-190 - SagaWork menjadi modul HR di SagaPOS untuk usaha sendiri
+
+- Tanggal: 2026-09-06.
+- Klasifikasi/status: `CONFIRMED`, aktif; pemberi keputusan Andreas.
+- Topik: satu pengalaman SagaPOS untuk operasional dan HR usaha sendiri.
+- Keputusan: gunakan SagaWork sebagai mesin HR dalam SagaPOS; target usaha sendiri menggantikan rencana pilot eksternal. Kopi Saga F&B mengikuti prioritas operasional task POS terbaru; dukungan Saga Studio tidak otomatis mengganti atau memperluas prioritas tersebut.
+- Alasan: owner dan staf mengakses operasional serta HR dalam aplikasi yang sama dan memakai kembali fondasi workforce.
+- Alternatif: dua aplikasi pengguna yang terpisah tidak menjadi pengalaman akhir yang dipilih. Pemisahan database teknis tetap diperbolehkan.
+- Dampak: koordinasi implementasi antar-task, identitas/permission eksplisit, PostgreSQL POS dan MySQL workforce, program 36 sprint dengan acceptance bertahap. Payroll/performance tidak diaktifkan otomatis. Scope/admission pilot lama pada DEC-105 diganti; data nyata/perangkat/finance tetap membutuhkan acceptance baru.
+- Dokumen terkait: [SagaWork Product](products/sagawork/PRODUCT.md), [SagaWork Dossier](products/sagawork/DOSSIER.md), [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-189 - Workspace SagaWork menerima pin Google Maps yang tervalidasi
 
 - Tanggal: 2026-09-05.
@@ -1004,6 +1015,8 @@ keputusan pengganti.
 | Dokumen terkait | [SagaView Product](products/sagaview/PRODUCT.md), [SagaView Ledger](products/sagaview/FEATURE_COVERAGE_LEDGER.md), [SagaView Changelog](products/sagaview/CHANGELOG.md), [Gaps](GAPS.md) |
 
 ## DEC-105 - SagaWork Pilot Canary 01 memakai scope Madiun dan performance OFF
+
+`DEPRECATED` untuk target pilot aktif; diganti [DEC-190](#dec-190---sagawork-menjadi-modul-hr-di-sagapos-untuk-usaha-sendiri). Tabel berikut mempertahankan keputusan historis, bukan approval integrasi saat ini.
 
 | Field | Value |
 |---|---|
