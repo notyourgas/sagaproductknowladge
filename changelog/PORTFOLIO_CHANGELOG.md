@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-05 - SagaWork Staff credential dan Google Maps Workspace flow
+
+- `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED`: runtime `775380a` memberi HR flow create/reset akses Staff dengan Employee ID+password awal sekali tampil dan mandatory first-password change, tanpa OTP/invitation link untuk Staff.
+- HR juga dapat membuat Workspace dari tautan pin Google Maps allowlisted, mengatur radius, dan menguji jarak/akurasi perangkat. Full application, security, public HTTPS, rollback, encrypted backup, dan disposable restore gate PASS.
+- `https://app.sagawork.site` tetap hanya synthetic feature review. Real pilot, real Staff/foto/GPS, protected topology, provider/offsite recovery, owner device UAT, signed admission, production activation, dan business readiness belum berubah.
+
 
 ## 2026-09-05 — SagaOPS durable catalog and owner menu editing
 

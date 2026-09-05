@@ -6,7 +6,7 @@ Menjadi detail public-safe produk, workflow, teknologi, bukti, risiko, dan gate 
 
 ## Konteks dan status bukti
 
-- Updated: `26 Agustus 2026`
+- Updated: `5 September 2026`
 - Delivery: `STAGING_DEPLOYED`
 - Activation: `NOT_PRODUCTION_ACTIVATED`
 - Business readiness: `BLOCKED_EXTERNAL`; internal disposition `PILOT_READY_CANDIDATE`
@@ -17,13 +17,13 @@ SagaWork menghubungkan roster, komunikasi staff, attendance evidence, exception,
 
 ## Value dan workflow
 
-Staff memperoleh action-first home, jadwal/note, swap, request, attendance foto+GPS, dan own performance review. HR mengelola staff/policy/lokasi, approval, versioned scorecard, evidence, review, dan appeal; Payroll merekonsiliasi report sebelum lock tetapi tidak memperoleh permission performance. Raw event, evaluation, correction, approved overtime, score calculation/source snapshot, human action, serta snapshot final dipisahkan agar dapat ditelusuri.
+Staff memperoleh action-first home, jadwal/note, swap, request, attendance foto+GPS, dan own performance review. HR mengelola staff/policy/lokasi, approval, versioned scorecard, evidence, review, dan appeal; Payroll merekonsiliasi report sebelum lock tetapi tidak memperoleh permission performance. Raw event, evaluation, correction, approved overtime, score calculation/source snapshot, human action, serta snapshot final dipisahkan agar dapat ditelusuri. HR kini membuat credential Staff langsung dari record: kode perusahaan+Employee ID+password awal ditampilkan sekali, dan Staff wajib mengganti password awal sebelum sesi pertama. Tidak ada OTP atau invitation link pada flow Staff ini.
 
-Founder menetapkan hierarchy `Company -> Workspace/Cabang -> Staff assignment -> shift/policy/geofence`. Workspace adalah label UI untuk cabang/unit operasional dan memakai entity `location` yang sudah ada pada MVP. Organization HR dapat menangani seluruh Workspace; Workspace HR dapat diberi satu atau beberapa scope. Staff mempunyai Workspace primer dan assignment sekunder/temporer yang terpisah dari permission scope. Satu Workspace memakai satu zone utama pada MVP; multi-zone dan multi-Company HR menjadi extension setelah pilot bila ada evidence kebutuhan.
+Founder menetapkan hierarchy `Company -> Workspace/Cabang -> Staff assignment -> shift/policy/geofence`. Workspace adalah label UI untuk cabang/unit operasional dan memakai entity `location` yang sudah ada pada MVP. Organization HR dapat menangani seluruh Workspace; Workspace HR dapat diberi satu atau beberapa scope. Staff mempunyai Workspace primer dan assignment sekunder/temporer yang terpisah dari permission scope. Satu Workspace memakai satu zone utama pada MVP; multi-zone dan multi-Company HR menjadi extension setelah pilot bila ada evidence kebutuhan. Untuk mengurangi salah salin koordinat, HR dapat menempel tautan pin Google Maps allowlisted, memeriksa hasil pin, mengatur radius, menguji jarak/akurasi perangkat, lalu menyimpan Workspace.
 
 ## Technical overview dan validasi
 
-Next.js 16 PWA, React 19, TypeScript, Drizzle, MySQL 8.4, Node 22, systemd, Nginx, isolated Hostinger staging, dan Vercel Preview. Active public synthetic staging exact `e2a0391` tersedia pada `https://app.sagawork.site`, mempunyai 67 application table/26 migration/32 trigger; full gate meluluskan 41 test file/150 test, 49-page build, OpenAPI 76 path/95 operasi/52 request components, encrypted pre/post backup, manifest 1.141 file, dan guarded rollback `e2a0391 → e59efcd → e2a0391`. Protected Vercel Preview tetap `dpl_9zvZTjgQBRhHJm5pVXH4rmtqQaBg` `READY` tanpa perubahan.
+Next.js 16 PWA, React 19, TypeScript, Drizzle, MySQL 8.4, Node 22, systemd, Nginx, isolated Hostinger staging, dan Vercel Preview. Active public synthetic staging exact `775380a` tersedia pada `https://app.sagawork.site`, mempunyai 67 application table/27 migration/32 trigger; full gate meluluskan 42 test file/156 test, 51-page build, OpenAPI 79 path/98 operasi/54 request components, Linux manifest 1.172 file, authenticated smoke, security-abuse 9/9, public HTTPS readiness/login checks, encrypted post-migration backup plus disposable restore, dan guarded rollback `775380a -> 75549c2 -> 775380a`. Protected Vercel Preview tetap tidak berubah.
 
 PWA baseline memakai standalone manifest, Staff install guidance, dan waiting-worker update yang membutuhkan aksi eksplisit sebelum reload. Service worker memakai exact allowlist hanya untuk manifest/icon publik dan tidak mengintersep HTML, API, authenticated workspace, foto, atau export. Workflow CI dengan locked Node/pnpm, frozen lockfile, read-only permission, SHA-pinned official actions, lint/typecheck/test/build/audit/manifest guard sudah tersedia dan full local equivalent lulus. Hosted runner belum pernah dijalankan karena source belum mempunyai private Git remote; ini tetap gate, bukan evidence CI hijau.
 
@@ -49,7 +49,7 @@ Pilot admission control implementation exact `3bcdf06` dan acceptance exact `a36
 
 Attendance evidence bytes kini lulus acceptance internal dengan gambar sintetis non-PII: random private key, presigned PUT, size/type/magic/decode, ClamAV service-user EICAR, Sharp auto-rotate dan JPEG re-encode tanpa EXIF/XMP/ICC, quarantine-to-clean status, Staff denial, scoped five-minute HR signed view + audit, legal hold, byte purge, serta `bytesDeleted` certificate. Object store hanya listen di loopback pada VPS yang sama; signed URL acceptance tidak ditujukan ke browser eksternal. Topologi ini bukan external provider, DPA, offsite backup, HA, atau izin real photo data.
 
-Bulk onboarding CSV tervalidasi untuk maksimal 500 baris/1 MB: template tetap, parser quoted UTF-8, normalisasi, tenant/location/duplicate checks, preview hash, commit atomik, hasil per baris, serta audit batch/per-employee. Hasil selalu draft tanpa account/password; HR tetap mengundang staff satu per satu. XLSX dan downloadable safe error export belum tersedia.
+Bulk onboarding CSV tervalidasi untuk maksimal 500 baris/1 MB: template tetap, parser quoted UTF-8, normalisasi, tenant/location/duplicate checks, preview hash, commit atomik, hasil per baris, serta audit batch/per-employee. Hasil selalu draft tanpa account/password; HR tetap membuat akses Staff satu per satu dari record yang sudah diperiksa. XLSX dan downloadable safe error export belum tersedia.
 
 Attendance policy versioned mengatur paid/unpaid break, toleransi long break, serta human review untuk missing/long break. Report, CSV, snapshot, dan component line memisahkan net produktif dari payable. Anomali membuat risk/exception evidence tanpa penalti disipliner otomatis; snapshot locked lama tetap dapat diekspor tanpa dimutasi.
 

@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-05 - SagaWork Staff credential dan Google Maps Workspace flow
+
+- Status: `accepted`; klasifikasi `CONFIRMED` dari keputusan Andreas dan exact source/runtime evidence `775380a`.
+- Before -> after: Staff tidak lagi bergantung pada invitation; HR membuat Employee ID+password awal yang wajib diganti sebelum sesi pertama. Workspace tidak lagi memerlukan salin koordinat manual; HR dapat menempel pin Google Maps allowlisted, memeriksa hasil, mengatur radius, dan menguji lokasi perangkat.
+- Delivery: `PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY` pada `https://app.sagawork.site`; `NOT_PRODUCTION_ACTIVATED / BLOCKED_EXTERNAL` tetap berlaku.
+- Gate: 42/156 test, 51-page build, OpenAPI 79/98/54, manifest 1.172 file, authenticated smoke, security-abuse 9/9, public HTTPS, rollback dua arah, encrypted backup/checksum, disposable restore 67/27/32, dan zero resurrection PASS.
+- Public-safety: tidak ada credential, identity, tenant identifier, koordinat restricted, atau raw evidence yang ditulis.
+- File sinkronisasi: `products/sagawork/PRODUCT.md`, `products/sagawork/DOSSIER.md`, `products/sagawork/CHANGELOG.md`, `DECISIONS.md`, `CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`.
+- Residual: real pilot/account/roster/photo/GPS, protected topology, external provider/DPA, offsite recovery, owner device UAT, signed admission, production activation, dan business readiness belum PASS; performance pilot tetap OFF.
+
 
 ## 2026-09-05 — SagaOPS durable catalog and owner menu editing
 

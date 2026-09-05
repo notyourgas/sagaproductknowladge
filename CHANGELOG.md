@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - SagaWork Staff credential dan Google Maps Workspace flow
+
+- `CONFIRMED`: keputusan Andreas mengganti flow invitation Staff menjadi HR-created Employee ID+password awal dengan mandatory first-password change; Workspace menerima pin Google Maps allowlisted dan device distance test.
+- Source/runtime `775380a` aktif di public synthetic trial `https://app.sagawork.site`. Full local/runtime/security/recovery gate PASS: 42/156 test, 51-page build, OpenAPI 79/98/54, manifest 1.172 file, security-abuse 9/9, rollback dua arah, dan zero-resurrection restore.
+- Product, dossier, product/portfolio/root changelog, master knowledge, decisions, serta sync status diperbarui. Ini bukan real pilot atau production activation; credential/identity/data lokasi restricted tidak dipublikasikan.
+
 
 ## 2026-09-05 — SagaOPS durable catalog and owner menu editing
 

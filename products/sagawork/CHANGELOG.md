@@ -8,6 +8,14 @@ Mencatat perubahan material SagaWork dengan status delivery dan activation yang 
 
 Synthetic fixture, preview, dan staging bukan bukti real pilot atau production activation.
 
+## 2026-09-05 - Staff credential dan Google Maps Workspace flow
+
+- `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY`: source/runtime `775380a` aktif pada `https://app.sagawork.site`.
+- HR membuat atau mereset akses Staff dari record staf. Handoff berisi kode perusahaan, Employee ID, dan password awal sekali tampil; password wajib diganti sebelum sesi pertama. Reset mencabut sesi lama, credential sementara berumur 72 jam, dan plaintext tidak disimpan/logged. Flow Staff tidak memakai OTP atau invitation link.
+- Settings menerima tautan pin HTTPS Google Maps allowlisted, termasuk redirect pendek yang divalidasi ulang, lalu mengisi koordinat dan nama saran. HR tetap mengatur radius, dapat membuka pin di Maps, dan dapat menguji jarak/akurasi perangkat sebelum menyimpan Workspace.
+- Gate PASS: 42 test file/156 test, 51-page build, audit dependency produksi tanpa vulnerability yang diketahui, OpenAPI 79/98/54, Linux manifest 1.172 file, full authenticated smoke, security-abuse 9/9, public HTTPS check, rollback `775380a -> 75549c2 -> 775380a`, serta encrypted backup/checksum/disposable restore 67 table/27 migration/32 trigger/29 tombstone/zero resurrection.
+- Real Staff, foto, GPS, akun pilot, protected pilot topology, provider/offsite recovery, owner device UAT, dan signed admission belum diterima. Status tetap synthetic trial; performance pilot OFF, production activation dan business readiness tidak berubah.
+
 ## 2026-08-26 - Workspace finalization synthetic trial release
 
 - `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY`: exact source/runtime `e2a0391`; acceptance documentation `0dd224f`.

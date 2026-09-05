@@ -1,5 +1,25 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-189 - Workspace SagaWork menerima pin Google Maps yang tervalidasi
+
+- Tanggal: 2026-09-05.
+- Klasifikasi/status: CONFIRMED, aktif; pemberi keputusan Andreas.
+- Keputusan: HR dapat menempel tautan pin Google Maps untuk mengisi koordinat Workspace, lalu memeriksa pin, radius, serta jarak/akurasi perangkat sebelum menyimpan.
+- Alasan: menurunkan kesalahan input koordinat dan membuat setup geofence lebih mudah dipahami operator.
+- Alternatif: salin latitude/longitude manual tetap dapat dipakai sebagai fallback, bukan jalur utama.
+- Dampak: hanya host HTTPS allowlisted dan redirect yang tervalidasi ulang yang diterima; hasil resolver tidak otomatis mengaktifkan Workspace atau menggantikan review HR.
+- Dokumen terkait: [SagaWork Product](products/sagawork/PRODUCT.md), [SagaWork Dossier](products/sagawork/DOSSIER.md), [SagaWork Changelog](products/sagawork/CHANGELOG.md).
+
+## DEC-188 - Akses Staff SagaWork dibuat HR dengan password awal
+
+- Tanggal: 2026-09-05.
+- Klasifikasi/status: CONFIRMED, aktif; pemberi keputusan Andreas.
+- Keputusan: HR membuat akses Staff dari record staf dan menyerahkan kode perusahaan, Employee ID, serta password awal; Staff wajib mengganti password tersebut sebelum sesi pertama. Flow Staff tidak memakai OTP atau invitation link.
+- Alasan: lebih sederhana untuk tim pilot kecil dan sesuai pola operasional HR yang membuat akun staf.
+- Alternatif: self-signup, OTP, serta invitation link tidak dipakai pada flow Staff pilot; privileged HR/Owner reguler tetap memakai kontrol MFA terpisah.
+- Dampak: password awal sekali tampil, berumur 72 jam, tidak disimpan plaintext, dan reset mencabut seluruh sesi lama. Akun trial tetap tidak boleh dipromosikan menjadi akun pilot.
+- Dokumen terkait: [SagaWork Product](products/sagawork/PRODUCT.md), [SagaWork Dossier](products/sagawork/DOSSIER.md), [SagaWork Changelog](products/sagawork/CHANGELOG.md), [DEC-103](#dec-103---sagawork-memakai-no-otp-staff-auth-dan-phased-synthetic-deployment).
+
 ## DEC-187 - Saga POS memakai PostgreSQL pada VPS dengan staging privat
 
 - Tanggal: 2026-09-05.

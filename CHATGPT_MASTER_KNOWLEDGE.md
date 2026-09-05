@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-05 - SagaWork Staff access dan Workspace pin
+
+SagaWork public synthetic trial sekarang menjalankan exact source/runtime `775380a` pada `https://app.sagawork.site`. Staff login memakai kode perusahaan+Employee ID+password tanpa OTP atau invitation link. HR membuat/reset akses dari record staf; password awal ditampilkan sekali, berlaku 72 jam, wajib diganti sebelum sesi pertama, dan reset mencabut seluruh sesi lama. Plaintext password tidak disimpan/logged. Settings menerima tautan pin HTTPS Google Maps allowlisted, memvalidasi ulang setiap redirect, mengekstrak nama saran/koordinat, serta menyediakan pengaturan radius dan device distance/accuracy test sebelum Workspace disimpan.
+
+Evidence `CONFIRMED / PUBLIC_SYNTHETIC_TRIAL_DEPLOYED / FEATURE_REVIEW_READY`: 42 test file/156 test, 51-page build, OpenAPI 79 path/98 operasi/54 request components, manifest Linux 1.172 file, full authenticated smoke, security-abuse 9/9, public HTTPS readiness/login check, healthy service tanpa restart, rollback `775380a -> 75549c2 -> 775380a`, dan encrypted disposable restore 67 table/27 migration/32 trigger/29 tombstone/zero resurrection. Ini tidak mengaktifkan real pilot atau production: akun/roster/data foto-GPS nyata, protected pilot topology, external storage/DPA, offsite recovery, owner device UAT, signed admission, dan business readiness masih gated; performance pilot tetap OFF.
+
 
 ## 2026-09-05 — SagaOPS durable catalog and owner menu editing
 
