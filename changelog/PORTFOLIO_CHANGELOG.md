@@ -1,6 +1,17 @@
 # Portfolio Changelog
 
 
+## 2026-09-05 - SagaOPS storage-denied reset recovery
+
+- CONFIRMED source/runtime: `5e4f8f50106a9181cd22c70ca3c63a3fbf9262e2`; public deployment `dpl_49c7MHg8DAN5uZ1g1o3QUkTaqTsZ`; https://saga-pos-kiosk.vercel.app/kiosk .
+- Completed-session reset now uses a namespaced current-history-entry fallback when sessionStorage is unavailable. Reload recovery remains bound to the matching completed order/session; no URL change or added navigation entry. Unrelated object keys are preserved; primitive/array history state is not overwritten. This strengthens the prior reset workflow without changing layout or payment logic.
+- Evidence: new red fallback assertion -> green; focused 5/5 and full 246/246 plus static/type PASS. Actual Chromium reload with sessionStorage denied passes, with existing portrait Axe/fold/overflow/page-error checks. Dependency audit zero vulnerabilities; heuristic secret scan zero matches. Candidate then same-artifact stable smoke pass on three viewports, zero checkout requests and blocked operator surfaces.
+- Research: MDN History.replaceState, reviewed 2026-09-05, https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState . Best-effort fallback is an engineering inference verified in Chromium, not universal crash persistence. No new dependency.
+- Delivery LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Private VPS and provider unchanged, historical readiness 84/100 unchanged. Both browser mechanisms may still be unavailable; server-owned retirement/device UAT remains an operational gate. No founder/pricing change.
+- Product/dossier/product-portfolio-root changelogs/master/sync status updated. Next: server-owned retirement, device failure matrix, private operational UAT.
+
+
+
 ## 2026-09-05 - SagaOPS completed-session reset recovery
 
 - CONFIRMED from source and runtime: `418fd8ab454e165076ab37e382b1ad471238ee42`; public deployment `dpl_GH1n2BQ9SEozhJtncXsUM1KbGX87`; https://saga-pos-kiosk.vercel.app/kiosk .
