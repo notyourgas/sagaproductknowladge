@@ -1,6 +1,17 @@
 # SagaOPS Changelog
 
 
+## 2026-09-05 - SagaOPS elapsed-time privacy warning
+
+- CONFIRMED source `b8da723ae91f487c5ea40f2bfb77053fc13ec76f`; public deployment `dpl_7naZ4ix2viFqSmCmJShbQPfvgUhj`; stable https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: delayed interval delivery could leave the privacy warning showing 29 seconds after thirty seconds elapsed. After: warning uses a wall-clock deadline and reaches zero on its first delivered callback after expiry. Existing continuation, fresh-session confirmation and pending-payment exclusions remain intact.
+- Evidence: Chromium delayed-tick regression red -> green, normal portrait timing also passes. Full 254/254 and static/type PASS; existing portrait Axe/focus/touch/fold/overflow/reduced-motion/page-error coverage preserved. Dependency audit zero vulnerabilities and heuristic secret scan zero matches. Candidate and same-artifact stable smoke PASS, three viewports, zero checkout requests, operator surfaces blocked.
+- Research: MDN Window.setTimeout https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout reviewed 2026-09-05. Timers may be delayed; elapsed-time arithmetic is an engineering response, not a guarantee scripts run during sleep. No new dependency, layout, animation, backend or provider change.
+- LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Private VPS and historical readiness 84/100 unchanged. System-clock changes, pre-warning suspension, physical sleep/wake and reset failure remain gates. No founder/pricing change; product/dossier/changelogs/master/sync updated; knowledge provenance main HEAD.
+- Next: pre-warning resume recovery, physical-device privacy UAT, server-session durability.
+
+
+
 ## 2026-09-05 - SagaOPS Help inactivity privacy protection
 
 - CONFIRMED source `8b42016c382a01a27c2d89985f8b120304ec7271`; public deployment `dpl_6g5zatD4VYffjh3YmqSKo5Vpi4mU`; stable https://saga-pos-kiosk.vercel.app/kiosk .
