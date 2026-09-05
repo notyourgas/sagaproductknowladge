@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Saga Member V41 Home Reward Loop
+
+- Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `72f38f1349903f1b9a6c80facbd617f27bbc920f` (PR #58; PR CI `33936041011`; canonical-main CI `33936226269`).
+- Stable deployment: `dpl_8hnbG6VkzVKpeCTQkzdyna3JE2Kq` pada `https://saga-member-platform.vercel.app`; Preview `dpl_FhwL7SE4nsZqMJZXHhL8z5q4VvZ9` diverifikasi dengan hash sebelum promosi.
+- Perubahan: satu target Reward aktif menggantikan slot kelanjutan generik Beranda dengan gap Points, meter aksesibel, CTA Quest, parent-route Beranda, dan pemulihan fokus ketika kembali.
+- Evidence: 205/205 test, lima viewport, invalid-ID recovery, 200% zoom, forced colors, reduced motion, offline, hash enam artifact, remote UAT, Axe serious/critical 0, overflow 0, broken image 0, storage write 0, backend request 0, dan audit dependency 0 vulnerability.
+- Batas: target hilang saat reload dan tidak mengubah saldo; backend, auth, transaksi, real data, QRIS, Push, NFC, printer, provider nyata, physical UAT, dan pilot nyata tetap OFF. Emoji Akses cepat tetap glyph natural tanpa kotak internal; tidak ada dependency baru.
+- File diperbarui: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `DECISIONS.md`, `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 
 ## 2026-09-05 - SagaOPS storage-denial checkout recovery deployed
 

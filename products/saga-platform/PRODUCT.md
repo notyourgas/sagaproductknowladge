@@ -23,6 +23,24 @@ readiness, launcher, dan integration contract.
 
 Saga Platform bukan database gabungan seluruh operational data.
 
+### Saga Member V41 Home Reward Loop
+
+- Saga Member canonical main `72f38f1349903f1b9a6c80facbd617f27bbc920f`
+  (PR #58) aktif pada production deployment
+  `dpl_8hnbG6VkzVKpeCTQkzdyna3JE2Kq` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_FhwL7SE4nsZqMJZXHhL8z5q4VvZ9` diverifikasi dengan hash.
+- Target Reward aktif kini menggantikan slot kelanjutan generik di Beranda,
+  menampilkan kekurangan Points, meter aksesibel, dan tindakan menuju Quest.
+- Quest yang dibuka dari Beranda kembali ke Beranda dengan target dan fokus
+  tetap tersambung. Target tetap memory-only, hilang saat reload, dan Quest demo
+  tidak mengubah saldo.
+- Emoji Akses cepat Coffee, Studio, Reward, dan Quest tetap glyph natural tanpa
+  kotak internal.
+- Status: `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## Prinsip arsitektur
 
 - Operational workflow dan data tetap dimiliki masing-masing produk.

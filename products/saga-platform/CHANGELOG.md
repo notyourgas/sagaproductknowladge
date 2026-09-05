@@ -8,6 +8,24 @@ Mencatat perubahan material control plane Saga.
 
 Fondasi production dan roadmap pemisahan boundary harus dibedakan.
 
+## 2026-09-05 — Saga Member V41 Home Reward Loop deployed
+
+- Main `72f38f1349903f1b9a6c80facbd617f27bbc920f` (PR #58) aktif pada
+  deployment `dpl_8hnbG6VkzVKpeCTQkzdyna3JE2Kq` setelah Preview
+  `dpl_FhwL7SE4nsZqMJZXHhL8z5q4VvZ9` diverifikasi dengan hash.
+- Target Reward aktif menggantikan slot kelanjutan generik Beranda dengan gap
+  Points, meter aksesibel, dan CTA Quest; kembali dari Quest mempertahankan
+  parent Beranda, target, scroll context, dan fokus.
+- 205/205 test, PR/main CI, lima viewport, invalid-ID recovery, 200% zoom,
+  forced colors, reduced motion, offline, artifact hash, dan remote UAT lulus
+  tanpa overflow, storage write, backend request, atau temuan Axe
+  serious/critical.
+- Target tetap memory-only dan tidak mengubah saldo. Emoji Akses cepat tetap
+  tanpa kotak internal; tidak ada dependency baru.
+- Klasifikasi `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-05 — Saga Member V40 Reward Target deployed
 
 - Main `14dba0de07fcafe0d6e08aa4a4c1b02f81005a5f` (PR #57) aktif pada

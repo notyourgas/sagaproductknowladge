@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga Member V41 Home Reward Loop deployed
+
+- Saga Member main `72f38f1349903f1b9a6c80facbd617f27bbc920f` (PR #58) aktif melalui deployment `dpl_8hnbG6VkzVKpeCTQkzdyna3JE2Kq` pada stable URL setelah Preview `dpl_FhwL7SE4nsZqMJZXHhL8z5q4VvZ9` diverifikasi.
+- Target Reward aktif kini tersambung ke Beranda dan Quest: satu slot kelanjutan menampilkan gap Points dan meter, Quest menjaga parent Beranda, lalu kembali dengan target dan fokus tetap utuh.
+- 205 test, exact PR/main CI, lima viewport, offline, accessibility, artifact hash, dan remote UAT lulus. Target tidak mengubah saldo; backend/auth/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+- Emoji Akses cepat tetap glyph natural tanpa kotak internal; tidak ada dependency baru.
+
 
 ## 2026-09-05 - SagaOPS storage-denial checkout recovery deployed
 

@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-05 - Saga Member V41 Home Reward Loop sync
+
+- Informasi `CONFIRMED`: main `72f38f1349903f1b9a6c80facbd617f27bbc920f`, PR #58, PR CI `33936041011`, canonical-main CI `33936226269`, Preview `dpl_FhwL7SE4nsZqMJZXHhL8z5q4VvZ9`, dan production deployment `dpl_8hnbG6VkzVKpeCTQkzdyna3JE2Kq` aktif pada stable URL.
+- Perubahan: target Reward aktif menggantikan slot kelanjutan Beranda dengan gap Points, meter aksesibel, CTA Quest, parent-route Beranda, dan pemulihan fokus ketika kembali.
+- Validasi: 205/205 test, lima viewport, invalid-ID recovery, focus recovery, 200% zoom, forced colors, reduced motion, offline, enam artifact hash, remote UAT, Axe serious/critical 0, overflow 0, storage write 0, dan backend request 0.
+- Delivery: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE`; `PRODUCTION_ACTIVATED=false` dan `BUSINESS_READY=false`.
+- Batas tidak berubah: state memory-only dan tidak mengubah saldo; backend/auth/provider/QRIS/Push/NFC/printer/transaksi/data nyata tetap OFF. Emoji Akses cepat tetap tanpa kotak internal dan dependency tidak bertambah.
+
 
 ## 2026-09-05 - SagaOPS storage-denial checkout recovery deployed
 
