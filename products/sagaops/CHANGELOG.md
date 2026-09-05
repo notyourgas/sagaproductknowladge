@@ -1,6 +1,17 @@
 # SagaOPS Changelog
 
 
+## 2026-09-05 - SagaOPS unresolved checkout reload continuity
+
+- CONFIRMED source `cf2ab8743fedac75b1e5f8fde16291f32ac600b3`, deployment `dpl_3e8MRJUEBpLYHy372z13sWSNbUM6`, stable https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: reload could return an unresolved checkout to an editable cart. After: same-session submitted request is restored with its original cart/quote/key and locked recovery screen; no automatic submission. Authoritative active-order recovery takes priority. Definitive expired-quote rejection retains the cart for renewed confirmation and a new key.
+- Evidence: two portrait red tests -> green; full regression 250/250, static/type PASS; portrait Axe serious/critical zero, focus/fold/touch-target/overflow/page-error checks and visual review. Dependency audit zero vulnerabilities, heuristic secret scan zero matches, build output no environment files. Candidate and same-artifact promoted stable smoke PASS, three viewports, zero checkout requests, operator surfaces blocked.
+- Research: MDN sessionStorage https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage reviewed 2026-09-05. Best-effort tab storage survives reload but can be denied; no new library or cosmetic change. Denied/corrupt storage and server-session loss remain residual recovery gates.
+- LOCAL_VALIDATED and PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false, BUSINESS_READY=false. Private VPS/provider unchanged; historical readiness 84/100 unchanged. No founder/pricing change. Product/dossier/changelogs/master/sync updated.
+- Next: storage-denial recovery, server-session durability, physical device/operator UAT. Source release is separate from knowledge main HEAD.
+
+
+
 ## 2026-09-05 - SagaOPS storage-denied reset recovery
 
 - CONFIRMED source/runtime: `5e4f8f50106a9181cd22c70ca3c63a3fbf9262e2`; public deployment `dpl_49c7MHg8DAN5uZ1g1o3QUkTaqTsZ`; https://saga-pos-kiosk.vercel.app/kiosk .
