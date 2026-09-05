@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-09-05 - Saga POS private VPS PostgreSQL integration
+
+- CONFIRMED owner decision: use existing VPS with PostgreSQL; domain follows. MySQL proposal superseded. Scope is private synthetic staging, not operational launch.
+- Source deployed: `a9d500722f3451aaf6f792f247c3fe5328b3b7ce`. Status: PRIVATE_STAGING_DEPLOYED / PRIVATE_INTEGRATION_VALIDATED / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Public Vercel demo unchanged.
+- Before: durable evidence used embedded PostgreSQL locally. After: isolated native PostgreSQL cluster plus one shared private API serves Kiosk, Cashier, KDS, Owner and Admin. Dedicated identities, bounded resources and private-only networking; no production provider secrets.
+- Validation: final full regression 205/205, focused adapter tests, native synthetic checkout replay/station recovery/owner aggregate, browser Kiosk-to-KDS-to-Owner flow, authenticated Admin/Cashier login, three-surface Axe serious/critical zero and no horizontal overflow.
+- Encrypted same-host backup plus isolated restore passed with two synthetic orders/payments/tickets and matching counts. Independent offsite recovery remains unvalidated. This is not full business continuity acceptance.
+- Neighbor services remained active. New resources are bounded; initial swap allocation and existing certificate-service warning require separate monitoring/remediation before launch. No changes to other product source or public proxy configuration.
+- Remaining gates: actual staff/device identity, durable sessions, full catalog/stock/refund/shift parity, Customer Platform, gateway reconciliation, hardware, offsite recovery, TLS/domain and staff/finance UAT. Fixture identities and simulator payment remain private-only. Historical readiness score is not raised or treated as PRD completion.
+- Evidence: source `docs/SAGA_POS_PRIVATE_ENVIRONMENT_2026-09-05.md`; S02 execution ledger updated. Backend Architect guided isolation and single-writer boundaries. Next: identity/session hardening, complete durable operational workflows, then external release/UAT gates.
+
 ## 2026-09-05 - SagaOPS ambiguous checkout recovery
 
 - CONFIRMED: LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.

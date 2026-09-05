@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-05 - Saga POS private VPS PostgreSQL integration
+
+- CONFIRMED owner decision: use existing VPS with PostgreSQL; domain follows. MySQL proposal superseded. Scope is private synthetic staging, not operational launch.
+- Source deployed: `a9d500722f3451aaf6f792f247c3fe5328b3b7ce`. Status: PRIVATE_STAGING_DEPLOYED / PRIVATE_INTEGRATION_VALIDATED / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Public Vercel demo unchanged.
+- Before: durable evidence used embedded PostgreSQL locally. After: isolated native PostgreSQL cluster plus one shared private API serves Kiosk, Cashier, KDS, Owner and Admin. Dedicated identities, bounded resources and private-only networking; no production provider secrets.
+- Validation: final full regression 205/205, focused adapter tests, native synthetic checkout replay/station recovery/owner aggregate, browser Kiosk-to-KDS-to-Owner flow, authenticated Admin/Cashier login, three-surface Axe serious/critical zero and no horizontal overflow.
+- Encrypted same-host backup plus isolated restore passed with two synthetic orders/payments/tickets and matching counts. Independent offsite recovery remains unvalidated. This is not full business continuity acceptance.
+- Neighbor services remained active. New resources are bounded; initial swap allocation and existing certificate-service warning require separate monitoring/remediation before launch. No changes to other product source or public proxy configuration.
+- Remaining gates: actual staff/device identity, durable sessions, full catalog/stock/refund/shift parity, Customer Platform, gateway reconciliation, hardware, offsite recovery, TLS/domain and staff/finance UAT. Fixture identities and simulator payment remain private-only. Historical readiness score is not raised or treated as PRD completion.
+- Evidence: source `docs/SAGA_POS_PRIVATE_ENVIRONMENT_2026-09-05.md`; S02 execution ledger updated. Backend Architect guided isolation and single-writer boundaries. Next: identity/session hardening, complete durable operational workflows, then external release/UAT gates.
+
 ## 2026-09-05 - SagaOPS ambiguous checkout recovery
 
 - CONFIRMED: LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
@@ -80,7 +91,7 @@
 
 
 Updated: 5 September 2026
-Latest material status: `KIOSK_CHECKOUT_AMBIGUITY_RECOVERY_PUBLIC_DEMO_DEPLOYED / OPERATOR_FINALIZATION_LOCAL_ONLY / PHYSICAL_NFC_NOT_ACTIVATED`
+Latest material status: `PRIVATE_VPS_POSTGRES_INTEGRATION_VALIDATED / PUBLIC_KIOSK_SIMULATOR_UNCHANGED / PHYSICAL_NFC_NOT_ACTIVATED`
 Evidence status: `CONFIRMED / SOURCE_PUSHED_BRANCH / PORTRAIT_KIOSK_LOCAL_VALIDATED / KIOSK_PERSISTENT_HELP_SAFE_CANCEL_PUBLIC_DEMO_DEPLOYED / KIOSK_SUCCESS_TIME_AND_SCROLL_PUBLIC_DEMO_DEPLOYED / KIOSK_MEMBER_DEGRADED_RECOVERY_PUBLIC_DEMO_DEPLOYED / KIOSK_CHECKOUT_QUOTE_GUARD_PUBLIC_DEMO_DEPLOYED / KIOSK_QRIS_EXPIRY_HANDOFF_PRODUCTION_DEPLOYED / KIOSK_CONTEXTUAL_HEADER_PRODUCTION_DEPLOYED / KIOSK_FIXED_TOUCH_CANVAS_LOCAL_VALIDATED / KIOSK_ATOMIC_BOOTSTRAP_LOCAL_VALIDATED / KIOSK_VERCEL_PUBLIC_DEMO_ACTIVE / KIOSK_BAGEL_CATEGORY_PHOTO_LOCAL_VALIDATED / KIOSK_SOLD_OUT_RACE_RECOVERY_LOCAL_VALIDATED / KIOSK_CART_SESSION_RECOVERY_LOCAL_VALIDATED / KIOSK_MEMBER_BENEFIT_CONFIRMATION_LOCAL_VALIDATED / KIOSK_FOUNDER_REVIEW_UI_LOCAL_VALIDATED / KIOSK_IMAGE_RECOVERY_LOCAL_VALIDATED / KIOSK_WELCOME_HERO_LOCAL_VALIDATED / KIOSK_UIUX_SPRINTS_LOCAL_VALIDATED / KIOSK_MODIFIER_CART_V2_LOCAL_VALIDATED / KIOSK_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / CASHIER_PAYMENT_CONFIDENCE_LOCAL_VALIDATED / MENU_ASSETS_22_OF_22_LOCAL_VALIDATED / KDS_V2_LOCAL_VALIDATED / CASHIER_V2_LOCAL_VALIDATED / OWNER_DASHBOARD_V2_LOCAL_VALIDATED / ADMIN_CONTROL_ROOM_V2_LOCAL_VALIDATED / ADMIN_AVAILABILITY_HISTORY_LOCAL_VALIDATED / ADMIN_STALE_VERSION_GUARD_LOCAL_VALIDATED / ADMIN_SCHEDULED_AVAILABILITY_LOCAL_VALIDATED / SAGA_POS_M4_LOCAL_DURABLE_RUNTIME / SAGADEV_PLATFORM_PRODUCTION_ACTIVATED / PRIVATE_CANARY_PAID_AND_LOCKED / SETTLEMENT_PENDING_CLEARING / BUSINESS_READY=false`
 
 ## Tujuan dokumen

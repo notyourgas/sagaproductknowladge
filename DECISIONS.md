@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-187 - Saga POS memakai PostgreSQL pada VPS dengan staging privat
+
+- Tanggal: 2026-09-05.
+- Klasifikasi/status: CONFIRMED, aktif; pemberi keputusan Andreas.
+- Keputusan: pertahankan PostgreSQL, gunakan VPS existing untuk environment Saga POS terisolasi; domain menyusul.
+- Alasan: selaras dengan kontrak durable PostgreSQL existing dan memungkinkan pembuktian integrasi sebelum exposure publik.
+- Alternatif MySQL sebelumnya diganti oleh instruksi PostgreSQL terbaru; tidak dilakukan migrasi lintas engine.
+- Dampak: private synthetic staging deployed pada source `a9d500722f3451aaf6f792f247c3fe5328b3b7ce`. Ini bukan izin transaksi nyata atau penerimaan operasional.
+- Dokumen terkait: [SagaOPS](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md).
+- Gate tersisa: identity/session, durable parity, provider/member, hardware, offsite recovery, TLS/domain, UAT dan release approval.
+
 ## Tujuan
 
 Menyimpan keputusan penting founder dan governance secara append-only agar
