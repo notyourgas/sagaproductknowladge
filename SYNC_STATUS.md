@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+
+## 2026-09-05 - SagaOPS checkout storage-denial recovery
+
+- CONFIRMED source `60137c9611fd23690d3fe29e2a61bc56ed39aa1e`; public deployment `dpl_Cch9jq88P7Z3NkdguZHM5U1iAFDW`; stable https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: unresolved-checkout reload continuity required sessionStorage. After: independent same-entry history fallback retains the exact same-session request when that storage is denied. No automatic checkout or URL change; unrelated record state preserved, non-record state not overwritten, saved request cleared after confirmed handoff. Existing server payment/price/idempotency truth remains unchanged.
+- Evidence: denied-storage Chromium reload and unit reproduction red -> green. Full 252/252 tests plus static/type PASS; portrait Axe serious/critical zero, focus/fold/touch/overflow/page-error checks and visual review. Dependency audit zero vulnerabilities, heuristic secret scan zero matches. Candidate and same-artifact stable smoke PASS on three viewports with zero checkout requests and blocked operator surfaces.
+- Research: MDN History.replaceState https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState reviewed 2026-09-05. No new library, styling or animation. Browser history is best-effort local storage, not an encrypted vault; browser retention policy, both-mechanisms denial and server-session loss remain operational gates.
+- LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Private VPS and real providers unchanged. Historical readiness remains 84/100; no founder or pricing change. Product/dossier/changelogs/master/sync updated; knowledge commit is main HEAD.
+- Next: browser/device privacy acceptance, server-owned session durability, full operational UAT.
+
+
 ## 2026-09-05 - Saga Member: identitas kartu tanpa panel teks
 
 - CONFIRMED source `fbb70797026acc55f123f5fe28d2144bd005d5d4`, PR #66 MERGED ke main `f06044444934433d1aad71a429f51b8dcb056ae0`; exact PR Quality CI `33963076236` PASS.
