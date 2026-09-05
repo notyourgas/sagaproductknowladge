@@ -1,6 +1,15 @@
 # Saga Product Knowledge Changelog
 
 
+## 2026-09-05 — Saga Member editorial page photography v2
+
+- CONFIRMED, requested by Andreas: replace generic artwork with generated editorial photography. Quest and Reward use new coffee banners; Studio and Member Moments use prepared synthetic photographs. Eight responsive WebP derivatives total 191,478 bytes; original assets retained. Native text, controls, member-card preferences and loyalty behavior unchanged.
+- Source PR #69, commit `ce79251db00c1f0a8ae6512d31b61c5296d89fd4`; canonical main `b936a0de47a81c2a05d977ecb083c32ad8dd404e`. PR quality run `33974643875` PASS. Local full regression and focused local/Preview/public browser checks PASS: four routes, five mobile widths, decoded images, no overflow, zero serious/critical axe findings. Public 12-file parity PASS. Main post-merge CI `33974937030` pending at this snapshot, not claimed green.
+- Production changed: Vercel `dpl_Dq8V3vea2vz3i26kryY1hCWuPmBp`, Ready at stable https://saga-member-platform.vercel.app . PUBLIC_DUMMY_DEMO only; generated imagery is not actual outlet/product/customer photography. No paid service, backend/provider activation or real transaction. Not BUSINESS_READY. Rollback deployment `dpl_7jNe5QeJz89pb8aCg5sSgcNuA8eM`.
+- No new dependency. Production dependency audit and targeted credential-pattern scan PASS; not an exhaustive security audit. Next: observe post-merge CI and continue page-specific improvements.
+
+
+
 ## 2026-09-05 - SagaOPS elapsed-time privacy warning
 
 - CONFIRMED source `b8da723ae91f487c5ea40f2bfb77053fc13ec76f`; public deployment `dpl_7naZ4ix2viFqSmCmJShbQPfvgUhj`; stable https://saga-pos-kiosk.vercel.app/kiosk .
