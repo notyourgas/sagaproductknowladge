@@ -1,6 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
 
+## Saga Member V40 Reward Target
+
+- Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Source exact: `14dba0de07fcafe0d6e08aa4a4c1b02f81005a5f` (PR #57; PR CI `33932567681`; canonical-main CI `33932761922`).
+- Stable deployment: `dpl_EFcJdeE7pLCxuZGR8u7hrynGYMjv` pada `https://saga-member-platform.vercel.app`; Preview `dpl_8pqpU61SvCcPvQAVoCLe5zt1kwRU` diverifikasi dengan hash sebelum promosi.
+- Perubahan: satu reward dengan Points belum cukup dapat menjadi target memory-only dengan saldo, gap, meter aksesibel, handoff Quest, hapus target, dan pemulihan fokus.
+- Evidence: 201/201 test, lima viewport, keyboard, rapid action, invalid-ID recovery, 200% zoom, forced colors, reduced motion, offline, hash enam artifact, remote UAT, Axe serious/critical 0, overflow 0, broken image 0, storage write 0, dan backend request 0.
+- Batas: target hilang saat reload dan tidak mengubah saldo; backend, auth, transaksi, real data, QRIS, Push, NFC, printer, provider nyata, physical UAT, dan pilot nyata tetap OFF. Emoji Akses cepat tetap glyph natural tanpa kotak internal.
+- File diperbarui: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `DECISIONS.md`, `CHANGELOG.md`, dan `SYNC_STATUS.md`.
+
 ## Saga Member V39 Studio Brief Pocket
 
 - Status: `accepted / CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.

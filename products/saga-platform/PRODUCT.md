@@ -66,6 +66,30 @@ Activation: parsial. Business model eksternal: `NEEDS CONFIRMATION`.
 - Pemisahan bounded context dan adapter dilakukan bertahap.
 - Bukan rewrite total.
 
+### Saga Member V40 Reward Target
+
+- Saga Member canonical main `14dba0de07fcafe0d6e08aa4a4c1b02f81005a5f`
+  (PR #57) aktif pada production deployment
+  `dpl_EFcJdeE7pLCxuZGR8u7hrynGYMjv` melalui stable public URL
+  `https://saga-member-platform.vercel.app`, setelah Preview
+  `dpl_8pqpU61SvCcPvQAVoCLe5zt1kwRU` diverifikasi dengan hash.
+- Reward dengan Points belum cukup kini dapat dijadikan satu target. UI
+  menampilkan saldo, kekurangan Points, meter aksesibel, handoff Quest, dan
+  aksi hapus dengan pemulihan fokus.
+- Target hanya hidup dalam memori tab, hilang saat reload, dan tidak menambah
+  saldo atau membuka reward nyata. Backend, auth, provider, transaksi, dan data
+  nyata tidak dipanggil.
+- 201/201 test, PR/main CI, browser acceptance 320/360/375/390/430 px,
+  keyboard, rapid action, invalid-ID recovery, focus recovery, 200% zoom,
+  forced colors, reduced motion, offline, artifact hash, serta remote stable
+  UAT lulus tanpa overflow, broken image, storage write, backend request, atau
+  temuan Axe serious/critical.
+- Emoji Akses cepat tetap glyph natural tanpa background, border, radius,
+  shadow, atau kotak internal.
+- Klasifikasi: `SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED /
+  VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ### Saga Member V39 Studio Brief Pocket
 
 - Saga Member canonical main `8019eaf550bb6eb1c8e620e5372f2cf1ab782cd5`

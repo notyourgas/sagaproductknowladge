@@ -21,6 +21,20 @@ keputusan pengganti.
 - Field “Alternatif” bukan keputusan aktif.
 - Implementasi keputusan tetap memerlukan source/release evidence.
 
+## DEC-183 - Reward Target Saga Member bersifat memory-only dan tidak mengubah saldo
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-09-05 |
+| Topik | Continuity reward belum cukup Points pada public dummy Saga Member |
+| Keputusan | Pengguna boleh memilih satu reward berstatus Points tidak cukup sebagai target, melihat saldo, kekurangan dan meter, lalu menuju Quest atau menghapus target. State hanya hidup di memori tab, hilang saat reload, dan tidak mengubah saldo atau membuka reward nyata. |
+| Alasan | Reward terkunci sebelumnya menjadi dead-end; public dummy membutuhkan tujuan yang dapat dicoba tanpa menciptakan persistence, transaksi, atau klaim progres nyata. |
+| Alternatif | Tombol mati tanpa tindak lanjut; localStorage; mutasi saldo dummy; backend/provider baru; klaim reward atau quest nyata. |
+| Dampak | Main `14dba0de07fcafe0d6e08aa4a4c1b02f81005a5f`, PR #57, dan deployment `dpl_EFcJdeE7pLCxuZGR8u7hrynGYMjv` menyediakan Reward Target aksesibel tanpa backend, storage, atau provider. Emoji Akses cepat tetap tanpa kotak internal. |
+| Pemberi keputusan | SAGADEVS Product/UX/UI/Frontend/QA/Security review dalam mandat heartbeat Andreas |
+| Status | `CONFIRMED / SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED / VERCEL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false` |
+| Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
+
 ## DEC-182 - Brief Pocket Studio Saga Member bersifat memory-only dan jujur
 
 | Field | Nilai |
