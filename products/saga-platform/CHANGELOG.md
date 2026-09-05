@@ -1,6 +1,14 @@
 # Saga Platform Changelog
 
 
+## 2026-09-06 — Saga Member navigation layout ordering
+
+- CONFIRMED source: PR #72, application `adb1b5753ae9f5bac471ad9a710a56998f5eaf35`, canonical main `6ae36be04bbc5f91d8b602a7fd430fb37fae9774`. Navigation geometry is read before route DOM writes; compact icons, floating labels, parent-route selection and resize behavior remain unchanged. No feature or provider activation.
+- Validation: 240 unit tests and full local regression PASS; 38 dedicated navigation checks across five mobile widths, keyboard, rapid transitions, reduced motion and resize PASS locally, in Preview and publicly. Dependency audit zero findings. Exact PR CI `33979688755` and canonical main CI `33980023032` PASS.
+- Delivery: PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO. Preview `dpl_Em7mnV3qkSRxUeHXp5ZHQigG9iVP` passed UAT; production `dpl_7Bdtp3EurLJVhmvgLuR8YwJavtLz` Ready at https://saga-member-platform.vercel.app . Public parity PASS for 16 files including Motion bundle. Rollback: `dpl_7NnDqjma6986HfMP73VSAtcGxeCd`. Vercel promotion created a new deployment, so parity was checked after Ready rather than assuming identical build output.
+- Performance: initial instrumented results looked faster, but two uninstrumented before/after pairs did not establish consistent total latency improvement. No percentage speedup, field INP improvement, or all-long-tasks-fixed claim. Follow-up: isolate remaining route style and motion initialization cost.
+- Scope: PUBLIC_DUMMY_DEMO only; no new dependency or spend. Offline cache v64-navigation-layout; raw generated originals and local diagnostic evidence excluded from Vercel upload. Customer Platform, live payments, database, auth and providers remain OFF.
+
 ## 2026-09-05 — Saga Member photo recovery and enlarged-text reflow
 
 - CONFIRMED: editorial photos on Quest/Reward now retain geometry on failure and expose an explicit keyboard-safe retry, without automatic request loops or cache-busting URLs. Quest progress and Reward summary reflow for text enlarged to 200%. Photo browser QA is included in test:all. Member-card state, balances and provider boundaries are unchanged.
