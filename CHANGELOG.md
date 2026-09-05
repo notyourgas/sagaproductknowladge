@@ -1,6 +1,17 @@
 # Saga Product Knowledge Changelog
 
 
+## 2026-09-05 - SagaOPS safe idle warning dismissal
+
+- CONFIRMED source `f388b5d949320e28ec6850511b7926bc88e7cee5`; public deployment `dpl_DWLq3PURNs4texwjimrS8MQV1vxU`; stable https://saga-pos-kiosk.vercel.app/kiosk .
+- Before: Escape hid the idle warning but left its reset countdown running. After: native cancel requests use the existing continue-session path, retaining cart and rearming normal inactivity protection. Pending-payment exclusions and unattended reset remain unchanged.
+- Evidence: Escape plus 31 seconds reproduced lost cart before the fix and passes after it. Full 254/254 and static/type PASS, existing portrait Axe/focus/touch/fold/overflow/reduced-motion/page-error checks preserved. Dependency audit zero vulnerabilities, heuristic secret scan zero matches. Candidate and same-artifact stable smoke PASS on three viewports with zero checkout requests and blocked operator surfaces.
+- Research: MDN HTMLDialogElement cancel event https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/cancel_event reviewed 2026-09-05. No new dependency, styling, animation or backend change. Physical mobile Back and device UAT are not newly accepted.
+- LOCAL_VALIDATED / PUBLIC_DEMO_PRODUCTION_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false / BUSINESS_READY=false. Private VPS and providers unchanged. Owner-facing operational-readiness estimate was clarified to approximately 60/100; historical 84/100 is not PRD-completion or operational acceptance. This release does not raise either estimate. Broader finalization remains proposed, not silently activated by Kiosk-only automation.
+- No founder/pricing change in this release; product/dossier/changelogs/master/sync updated, knowledge provenance main HEAD. Next: native mobile dismissal UAT, sleep/wake recovery, server-session durability.
+
+
+
 ## 2026-09-05 — Saga Member editorial page photography v2
 
 - CONFIRMED, requested by Andreas: replace generic artwork with generated editorial photography. Quest and Reward use new coffee banners; Studio and Member Moments use prepared synthetic photographs. Eight responsive WebP derivatives total 191,478 bytes; original assets retained. Native text, controls, member-card preferences and loyalty behavior unchanged.
