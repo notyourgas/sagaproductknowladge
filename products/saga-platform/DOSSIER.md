@@ -1,6 +1,16 @@
 # Saga Platform Dossier
 
 
+## 2026-09-06 — Saga Member Home startup and reading-position continuity
+
+- Classification: CONFIRMED. Scope remains PUBLIC_DUMMY_DEMO only, with no real account, backend, payment, provider or device activation and no added service cost.
+- Home boot snapshots history before DOM writes, avoiding a forced full-Home layout at that point. Ordinary navigation still captures the actual current scroll; browser scrollRestoration is not overridden.
+- Native reload with normal motion previously shifted a350px reading position to358px in four baseline replays. Initial reveal is now skipped for restored reload/back_forward documents only; fresh visits and subsequent SPA transitions retain editorial motion, press feedback and cleanup. Existing photos, copy, typography, color and hierarchy are unchanged.
+- Source `42a91044887d74d4326e5fb34dced49e719814b7`, PR #78; exact PR CI 33992940224 passed. Focused 91 cases passed across five widths and both motion settings, including focus, reload, ten actual cross-document back_forward entries, 200% text/44px controls, restored-Home accessibility and actual cached offline bootstrap/back. Physical iOS/native screen readers and Firefox/WebKit remain unverified.
+- Final-source CPU4x loopback ABBA (6 samples/cohort): history-call medians 157.05/176.75ms baseline versus 2.3/2.7ms candidate; LCP 528/578 versus 490/504ms. These are lab samples with cohort drift, not an overall or field speedup claim. Startup long tasks remain; lab CLS 0. Existing Motion 13.2.0 MIT, no new dependencies, normalized app gzip +246B and Motion bundle +798B including full upstream license notices; dependency audit 0. A build unit guard checks all four bundled packages' license texts.
+- Delivery verified: 278 unit tests and the full local acceptance suite passed on unchanged final source; one earlier local Studio run recorded Chromium ERR_NO_BUFFER_SPACE, followed by passing unchanged focused/full reruns. Canonical main `2a5bfc50d9751d96088852a2084b0c91c6168743` is tree-identical to final candidate; main CI 33993669879 passed. Preview `dpl_Bmeqo5So5BYbpd3WvaaMVqHmWkRg` Ready and all four UAT suites passed. Promoted production `dpl_DmrqdqKxbYi2SbiqnTpWkgNn2oKW` Ready at https://saga-member-platform.vercel.app, static PWA build 6.896s; 16-file source/public parity and all four public UAT suites passed (bootstrap 91, carousel 80 plus touch/autoplay, motion lifecycle, navigation 38). The 15-minute error-level runtime query returned no entries; monitoring/drains and field behavior remain unverified. Rollback target `dpl_7BXJZjDVD1zE95EGy8duiCHtVcej`. Status SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED, not real-service activation or business readiness.
+- Research: official web.dev synchronous-layout/long-task guidance and MDN browser scroll restoration. Reason: preserve reading position while reducing unnecessary synchronous startup work; no unrelated product changes.
+
 ## 2026-09-06 — Saga Member Home carousel continuity and text resilience
 
 - Classification: CONFIRMED. Scope: Saga Member public dummy UI/UX demo only. No backend, database, account, payment, device or provider activation; no added service cost.
