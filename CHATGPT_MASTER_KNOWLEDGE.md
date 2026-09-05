@@ -1,5 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Saga Member V42 Rute Hari Saga aktif pada stable public dummy URL
+`https://saga-member-platform.vercel.app` dari canonical main
+`12e578e4cf7ca02326c5cf3bcc7ee65a9c2ed551` (PR #59), Preview
+`dpl_F4aovXzG5KxrFic4TthNbeo3vbUk`, dan production deployment
+`dpl_CduvhAn3kkzC9M3JJzmSJ7qkfn3a`. Jelajah memiliki planner progresif untuk
+urutan Coffee ke Studio atau Studio ke Coffee. Pilihan radio hanya mengubah
+preview hingga dikonfirmasi; timeline dua langkah lalu menyambungkan Rencana
+Mampir dan Brief Pocket serta mengarahkan CTA ke langkah belum selesai.
+
+Full 208 test, PR CI `33938863948`, main CI `33939064126`, lima viewport,
+invalid input, reload memory, 200% zoom, forced colors, reduced motion, offline,
+hash lima artifact, dan production UAT lulus tanpa Axe serious/critical atau
+backend request. State tetap memory-only dan tidak membuat booking, transaksi,
+atau perubahan Points. Emoji Akses cepat tetap glyph natural tanpa kotak
+internal. Tidak ada dependency baru; backend/auth/provider/real data tetap OFF,
+`PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+
+
 ## 2026-09-05 - SagaOPS ambiguous checkout recovery
 
 - CONFIRMED: LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.

@@ -19,23 +19,25 @@ Control plane SagaDev untuk product registry, identity, product account,
 subscription, entitlement, audit, readiness, launcher, dan integration
 contract.
 
-Frontend public dummy terkini adalah V41 Home Reward Loop dari Saga Member main
-`72f38f1349903f1b9a6c80facbd617f27bbc920f` (PR #58), Preview
-`dpl_FhwL7SE4nsZqMJZXHhL8z5q4VvZ9`, dan production deployment
-`dpl_8hnbG6VkzVKpeCTQkzdyna3JE2Kq` pada stable URL
-`https://saga-member-platform.vercel.app`. Target Reward yang dipilih di tab
-Reward kini menggantikan satu slot kelanjutan generik di Beranda dengan gap
-Points, meter aksesibel, dan CTA Quest. Quest mempertahankan parent Beranda,
-target, serta pemulihan fokus saat kembali.
+Frontend public dummy terkini adalah V42 Rute Hari Saga dari Saga Member main
+`12e578e4cf7ca02326c5cf3bcc7ee65a9c2ed551` (PR #59), Preview
+`dpl_F4aovXzG5KxrFic4TthNbeo3vbUk`, dan production deployment
+`dpl_CduvhAn3kkzC9M3JJzmSJ7qkfn3a` pada stable URL
+`https://saga-member-platform.vercel.app`. Planner progresif di Jelajah memberi
+pilihan Coffee ke Studio atau Studio ke Coffee. Pilihan radio hanya mengubah
+preview sampai dikonfirmasi; sesudahnya timeline dua langkah menghubungkan
+Rencana Mampir V38 dan Brief Pocket V39, lalu meneruskan CTA ke langkah yang
+belum selesai.
 
-Full 205 test, PR CI `33936041011`, main CI `33936226269`, lima viewport,
-invalid-ID recovery, 200% zoom, forced colors, reduced motion, offline, hash
-enam artifact, dan production UAT lulus tanpa Axe serious/critical, overflow,
-storage write, atau backend request. Motion memakai bundle `motion@13.2.0` yang
-sudah ada; tidak ada dependency baru. Target tetap memory-only, hilang saat
-reload, dan tidak mengubah saldo. Emoji Akses cepat tetap glyph natural tanpa
-kotak internal. Backend/auth/provider/data nyata tetap OFF,
-`PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+Full 208 test, PR CI `33938863948`, main CI `33939064126`, lima viewport,
+invalid-input recovery, reload memory, 200% zoom, forced colors, reduced motion,
+offline, hash lima artifact, dan production UAT lulus tanpa Axe
+serious/critical atau backend request. Motion memakai bundle `motion@13.2.0`
+yang sudah ada; tidak ada dependency baru. Rute tetap memory-only, hilang saat
+reload/reset, dan tidak membuat booking, transaksi, atau perubahan Points.
+Emoji Akses cepat tetap glyph natural tanpa kotak internal.
+Backend/auth/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan
+`BUSINESS_READY=false`.
 
 ## Masalah yang diselesaikan
 

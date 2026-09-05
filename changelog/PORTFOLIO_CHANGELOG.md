@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-05 - Saga Member V42 Rute Hari Saga deployed
+
+- Saga Member main `12e578e4cf7ca02326c5cf3bcc7ee65a9c2ed551` (PR #59) aktif melalui deployment `dpl_CduvhAn3kkzC9M3JJzmSJ7qkfn3a` pada stable URL setelah Preview `dpl_F4aovXzG5KxrFic4TthNbeo3vbUk` diverifikasi.
+- Jelajah kini menawarkan planner progresif Coffee ke Studio atau Studio ke Coffee. Pilihan hanya preview sampai dikonfirmasi; timeline lalu menyambungkan Rencana Mampir dan Brief Pocket serta mengarahkan langkah berikutnya.
+- 208 test, exact PR/main CI, lima viewport, offline, accessibility, artifact hash, dan remote UAT lulus. State memory-only; backend/auth/provider/data nyata tetap OFF, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+- Emoji Akses cepat tetap glyph natural tanpa kotak internal; tidak ada dependency baru.
+
 ## 2026-09-05 - SagaOPS ambiguous checkout recovery
 
 - CONFIRMED: LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED; PRODUCT_PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
