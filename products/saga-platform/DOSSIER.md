@@ -1,6 +1,15 @@
 # Saga Platform Dossier
 
 
+## 2026-09-06 — Saga Member motion lifecycle and live preferences
+
+- CONFIRMED: finished/cancelled animation controls are released, held buttons restore their original transform, stale route callbacks cannot restart motion, and live reduced-motion changes finish nonessential animations. Resize cancels the old navigation endpoint. Deferred visibility cleanup prevents an old dialog-close callback from closing a freshly reopened Pass, Points or Reward dialog. Existing visual design and membership data are unchanged.
+- Source PR #73; application commits `a5de6c735953a4e4120e4f776cb9557bf139cc3b` and `5e93ffdd06cfcc0e8e77c3b1e9763564c2589e4d`; canonical main `78b5a8f372d96b9d34ff505e7c5362173ce49a38`. Exact final PR CI `33983447084` and main CI `33983779158` PASS. Source contract: `docs/MOTION_LIFECYCLE.md`.
+- Validation: 254 unit tests and full final local regression PASS. Fourteen grouped motion checks across five mobile widths, 100 presses, three dialog families, live preference changes, keyboard, text 200%, warm offline and synthetic visibility transitions PASS locally, in Preview and publicly. Baseline retained 8 captured animations after reduced-motion change; candidate retained 0. This is not a heap-byte or field-performance measurement.
+- Delivery: PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO. Validated Preview `dpl_9MXvJoKBnrATUv4BCWKAPmmegZQ1`; production `dpl_CvegfXP37dCzjXxbg4xw7EvN6UUP` Ready at https://saga-member-platform.vercel.app . Public parity PASS for 16 files; post-deploy error-log scan returned zero records. Rollback target: `dpl_7Bdtp3EurLJVhmvgLuR8YwJavtLz`. Promotion created a new deployment and its output was independently verified.
+- Scope: Motion 13.2.0 MIT retained, no new dependencies or spend, +565 bytes gzip for the Motion bundle, cache v65-motion-lifecycle. Live payments, database and external providers remain OFF; no BUSINESS_READY claim.
+- Residual: one initial local compound reward-recovery assertion failed without an established product cause; per-condition diagnostics were added and focused/full reruns passed. Native screen readers, physical iOS, full forced-colors visual audit, field INP and heap savings remain unverified. Follow-up: measure initial route rendering separately. W3C animation-from-interactions is an AAA criterion, not whole-site certification.
+
 ## 2026-09-06 — Saga Member navigation layout ordering
 
 - CONFIRMED source: PR #72, application `adb1b5753ae9f5bac471ad9a710a56998f5eaf35`, canonical main `6ae36be04bbc5f91d8b602a7fd430fb37fae9774`. Navigation geometry is read before route DOM writes; compact icons, floating labels, parent-route selection and resize behavior remain unchanged. No feature or provider activation.
