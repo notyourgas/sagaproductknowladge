@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 - SagaWork persiapan acceptance M2 sintetis
+
+- Klasifikasi: `CONFIRMED`; sumber: task SagaWork dan verifikasi native terisolasi. Instrumentasi `c53a8ffbf60bf1d099ab0d0cdd632dbcebf40f05` (bootstrap `d143735`), aplikasi dibekukan pada `f5a7e10f623181abb9d41461e02c87f25af068f7`, pasangan POS `e5db3cb66de7fd12ecddbd06b48d16e72efbaff4`. Ini tooling acceptance, bukan fitur pelanggan baru atau keputusan founder baru.
+- Sebelum: acceptance M2 memerlukan lingkungan bersama yang terikat source. Sesudah: lingkungan privat sintetis berumur terbatas tersedia dengan validasi pasangan source, pembatasan sumber daya dan pembersihan akses probe miliknya sendiri. Aplikasi workforce tidak diubah; task workforce tidak mengubah source POS atau menambah migration.
+- Gate PASS: 56 file/384 test lokal, lint, TypeScript dan 5 pengujian guard runtime; Linux build dan MySQL native dengan 70 tabel/29 migration. HTTP nyata meluluskan login staf, consent, exchange, jadwal mendatang milik sendiri dengan timezone, pengumuman kosong tanpa izin, serta tiga penolakan akses privileged.
+- Joint browser pada pasangan POS `e5db3cb66de7fd12ecddbd06b48d16e72efbaff4` / workforce `f5a7e10f623181abb9d41461e02c87f25af068f7` meluluskan login/consent staf, jadwal sendiri dan timezone, pengumuman kosong, batas role, validasi parameter, Axe/mobile serta restart. Logout melalui browser same-origin nyata menghasilkan HTTP 200; pembacaan POS berikutnya ditolak 401 dan tampilan privat dibersihkan. Perbedaan percobaan logout terdahulu berasal dari konteks cookie harness, bukan bug provider.
+- Status joint tetap `PARTIAL / NOT_ACCEPTED`: UI logout POS setelah revocation masih menyatakan hasil belum terkonfirmasi ketika menerima 401. Task POS sedang memperbaikinya; source pengganti dan rerun pasangan exact belum tersedia. Dokumentasi workforce `e74f40389722d62865f4de4a4afcd8be591e9440` mencatat evidence sementara. Tidak ada perubahan aplikasi workforce. Program M2 penuh dan 36 sprint tetap parsial; perangkat nyata, owner UAT, payroll operasional, recovery menyeluruh, admission dan business readiness belum selesai. Performance OFF.
+- Delivery: `ISOLATED_SYNTHETIC_VALIDATED`; tidak ada deployment publik. Public workforce `711ef77` tetap dan health HTTP 200 diverifikasi. Setelah task POS menyelesaikan pengumpulan evidence, layanan uji workforce dihentikan: inactive, listener kosong dan penghapusan login database disposable terkonfirmasi; database sintetis/file privat dipertahankan untuk inspeksi. Source penutupan `60137bf5c5acb6999f20ea4d17a94a0435f70d2b`. Tidak ada production activation atau perubahan business readiness. Next: kandidat POS pengganti memerlukan binding baru dan rerun exact-pair, bukan mengubah metadata pasangan lama.
+- Sinkronisasi meliputi delapan dokumen SagaWork/portfolio/master/status/gaps; pricing, positioning dan keputusan founder tidak berubah.
+
+
 ## 2026-09-06 - SagaWork HRPOS19 detail permintaan sesuai akses
 
 - Klasifikasi: `CONFIRMED`; aplikasi final `bcf7eb66ec2a841407437a8e8a21b990bfe36412`, source ledger `f5a7e10f623181abb9d41461e02c87f25af068f7`. Sumber: implementasi, pengujian dan verifikasi runtime oleh task SagaWork. Tidak ada keputusan founder baru.
