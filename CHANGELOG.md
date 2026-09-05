@@ -77,6 +77,19 @@ Local evidence: 261/261 regression PASS, focused member 6/6, final session recov
 
 
 
+## 2026-09-06 — Saga Member Home carousel continuity and text resilience
+
+- Classification: CONFIRMED. Scope: Saga Member public dummy UI/UX demo only. No backend, database, account, payment, device or provider activation; no added service cost.
+- Home starts its four-story carousel at the natural origin without resolving slide geometry or creating a no-op settle animation. Later slide moves retain measured offsets and the existing gap.
+- Grabbing a moving banner now continues from its visible transform, not the destination offset. A controlled390px replay measured takeover jumps365/229/116/0px before,0px after, at1/45/90/179ms. This closes a user-visible interruption defect.
+- Home grid tracks may shrink and section headings wrap for enlarged text. At320px with200% text, previous document width366px overflowed; candidate passes all five canonical widths without clipping or smaller44px targets. Default photos, copy, palette, typography and hierarchy remain unchanged.
+- Source PR #76 and corrective PR #77 merged. Final application `5c1a68e53e06a4dc75ebbf2469c64fd0efbcb31d`, canonical main `8182d0851fadf05afb1445e6a867f1033e528188`; exact corrective PR CI33990189385 passed. Earlier PR76 CI33989202911 passed; initial CI33988580286 failed a screenshot/autoplay test setup and was superseded. Final full local suite passed265 unit tests and all acceptance. Canonical CI33990598345 is tracked separately from local validation.
+- Focused acceptance passed80 cases including20 timed interruptions, five widths, resize/remount/reduced motion,200% text/44px controls; four emulated native-touch cases verify geometry/inert. A later true-touch Play replay exposed sticky compatibility mouseenter; corrective source5c1a68e53e06a4dc75ebbf2469c64fd0efbcb31d / PR77 uses pointer hover excluding touch. Existing4000ms autoplay interval is unchanged; corrected pause observations last4250ms and native touch Play/Pause is verified separately. Physical iOS and native screen readers remain unverified.
+- CPU4x loopback ABBA6 samples/cohort on intermediate d6 source measured initial-show145.6/143.4ms baseline versus0.45/0.55ms candidate, with inconclusive total startup benefit. Final5c1 measurement showed substantial baseline cohort drift (LCP1662 versus562ms), so no overall speedup ratio is claimed. Initial long tasks remain; no field INP or mobile-network LCP claim. CLS0 in these lab samples.
+- Existing Motion13.2.0 MIT plus platform DOMMatrixReadOnly; no new library, unchanged Motion bundle. Normalized gzip deltas: app+387bytes, CSS+22bytes. Dependency audit0 and staged secret-pattern scan0 findings. Cache versionv67-carousel-initial supports the upgrade.
+- Delivery verified: canonical main CI33990598345 passed. Preview `dpl_2hALcaR92CRWHofrrgQaK4jza1mm` Ready with carousel, lifecycle and navigation UAT passing; promoted production `dpl_7BXJZjDVD1zE95EGy8duiCHtVcej` Ready at the existing stable Saga Member URL. Static PWA production build6.642seconds;16-file final-source public parity and all three public UAT suites passed. Error-level runtime log query returned no entries in its15-minute observation window; this is not comprehensive monitoring certification, drains unverified. Rollback `dpl_BuNCzTVEGJfbfNBpTWQJpJGXWVH3`. Status PUBLIC_DUMMY_DEMO_VALIDATED, not real-service activation or business readiness.
+- Source: official web.dev layout guidance, MDN DOMMatrixReadOnly documentation, exact source/CI and browser acceptance. Other Saga products are unaffected. Residual: initial long tasks and real-device/field verification.
+
 ## 2026-09-06 — Saga Member navigation keyframe read batching
 
 - Final verification: test-only PR CI 33986894177 and canonical main CI 33987457269 passed; reused Preview passed all three suites, final public lifecycle and final-source artifact parity passed. No duplicate deployment was required.
