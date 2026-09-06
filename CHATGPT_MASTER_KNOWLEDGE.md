@@ -1752,6 +1752,17 @@ REAL_BACKEND_OFF / REAL_PROVIDER_OFF / REAL_DATA_OFF / BUSINESS_READY=false`.
 Jangan menyebut demo ini sebagai akun member nyata, provider aktif, pilot
 transaksi, production backend, atau business-ready.
 
+SagaView Studio S383 exact source
+`8b1197534bec3e426d8596784915a4ab61567b1a` sudah pushed dan locally
+validated. Slot foto sekarang hanya menjadi clipping viewport: sumber penuh
+tetap tersedia saat zoom/pan, preview dan export PNG memakai geometri yang
+sama, zoom minimum tetap cover, dan pan berhenti di tepi foto agar tidak
+menampilkan area kosong. Vitest 284/284, Playwright editor/review 8/8,
+format/lint/typecheck, client/SSR build, bundle budget, npm audit nol, dan
+remote exact lulus. Foto/path/output tetap lokal; tidak ada backend, database,
+payment, SagaBook, atau deploy. Status `IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`; jangan menyebut perbaikan sudah tersedia di production.
+
 Production SagaView S382 memakai backend exact
 `ceb33732144badbb929d212b0d5d7b3fd0e24474` pada release
 `20260903003542-ceb3373` dan Studio exact

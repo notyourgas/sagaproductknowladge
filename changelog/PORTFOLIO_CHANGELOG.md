@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaView slot photo viewport non-destruktif
+
+`CONFIRMED`; exact Studio `8b1197534bec3e426d8596784915a4ab61567b1a`
+pushed. Preview tidak lagi memindahkan bitmap yang sudah terpotong sebesar
+slot: sumber penuh tetap di belakang viewport, preview/export memakai geometri
+yang sama, zoom minimum cover, dan pan dibatasi pada tepi foto. Vitest 284/284,
+Playwright editor/review 8/8, format/lint/typecheck, client/SSR build, bundle
+316,5/450 KiB, npm audit nol, clean/remote exact PASS. `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap S382, no-upload tetap, dan tidak
+ada perubahan backend/database/payment/SagaBook atau business readiness.
+
 ## 2026-09-07 — SagaOPS Owner Dashboard modular protected preview
 
 `CONFIRMED`; exact source `96ca11a9006269fcafd906a2aa0b67d57789aa14` pushed. Saga POS Owner Dashboard berubah dari satu halaman editorial panjang menjadi responsive application shell dengan sidebar/drawer dan 12 module berbasis pekerjaan F&B. Existing server facts tetap authoritative; Overview polling live, sedangkan finance/report/inventory memakai explicit refresh untuk stabilitas focus dan selection. Purchasing, workforce dan member menyatakan gap dengan jujur tanpa PO/AP, payroll, promo atau customer analytics dummy. Static/type173/OpenAPI3.1/migrations12, focused browser, serial full340/340, all-module 390/1440 Axe0/overflow0, dependency0 dan secret heuristic0 PASS. Protected operator preview refreshed dan anonymous access 302 ke Vercel Authentication. `LOCAL_VALIDATED / PROTECTED_OPERATOR_PREVIEW_DEPLOYED`; bukan production activation/business-ready dan tidak mengubah produk lain.

@@ -1,5 +1,31 @@
 # SagaView Dossier
 
+## S383 non-destructive slot photo viewport
+
+Before, preview membuat elemen foto sama besar dengan slot memakai
+`object-cover`, kemudian memindahkan elemen yang sudah terpotong itu. Bagian
+sumber di luar crop awal tidak tersedia saat operator menggeser foto, sehingga
+tepi slot dapat menampilkan area putih walau file asli masih memiliki gambar.
+Jalur export memakai gambar asli sehingga preview dan hasil PNG juga dapat
+berbeda.
+
+After, exact Studio `8b1197534bec3e426d8596784915a4ab61567b1a`
+memakai satu resolver geometri untuk preview dan export. Resolver menghitung
+cover dari dimensi sumber asli, mempertahankan seluruh foto di belakang clip
+slot, menyamakan offset pan terhadap ukuran slot, mendukung rotasi 90 derajat,
+menahan zoom minimum pada cover, dan membatasi pan ke tepi gambar. Slot tetap
+menjadi clipping viewport; sumber tidak dipotong atau ditulis ulang.
+
+Evidence: regression red membuktikan model geometri belum tersedia; focused
+unit/component/export/store hijau, full Vitest 284/284, Playwright editor dan
+review 8/8 pada mobile/desktop, format, lint, typecheck, build client 2.134
+modul dan SSR 208 modul, bundle budget 316,5 KiB dari 450 KiB, npm audit nol,
+clean exact commit, serta remote exact lulus. Tidak ada upload, backend/API,
+database, migration, pricing, payment, atau perubahan SagaBook. Status
+`SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`; production tetap Studio S382 dan
+`BUSINESS_READY=false`.
+
 ## S382 production activation dan kompatibilitas npm 9
 
 Backend exact `ceb33732144badbb929d212b0d5d7b3fd0e24474` aktif pada release

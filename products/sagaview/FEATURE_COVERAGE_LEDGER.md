@@ -1,5 +1,21 @@
 # SagaView Feature Coverage Ledger
 
+S383 non-destructive slot photo viewport: exact pushed Studio source
+`8b1197534bec3e426d8596784915a4ab61567b1a` mengganti preview slot yang
+memindahkan elemen `object-cover` terpotong dengan full-source cover di balik
+clipping viewport. Preview dan export memakai resolver geometri yang sama;
+zoom minimum tetap menutup slot dan pan dibatasi pada tepi foto, termasuk
+rotasi kanan 90 derajat.
+
+Ledger lulus: regression red lalu focused unit/component/export/store hijau;
+Vitest 284/284; Playwright editor/review 8/8 pada mobile dan desktop; format,
+lint, typecheck, client 2.134 modul + SSR 208 modul, bundle 316,5 KiB dari 450
+KiB, npm audit nol, exact clean/upstream provenance, serta remote exact.
+No-upload tetap utuh dan tidak ada perubahan backend/API/database/migration,
+payment, atau produk lain. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production tetap S382 dan
+physical UAT serta `BUSINESS_READY` tidak diklaim.
+
 S382 production pair: backend
 `ceb33732144badbb929d212b0d5d7b3fd0e24474` / release
 `20260903003542-ceb3373` dan Studio

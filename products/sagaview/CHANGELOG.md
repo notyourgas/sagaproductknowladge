@@ -1,5 +1,25 @@
 # SagaView Changelog
 
+## 2026-09-07 - S383 non-destructive slot photo pan
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`.
+- Before: preview menerapkan `object-cover` pada elemen sebesar slot lalu
+  memindahkan elemen yang sudah terpotong. Pan/zoom dapat membuka area putih
+  dan preview tidak memakai geometri sumber yang sama dengan export PNG.
+- After: exact Studio `8b1197534bec3e426d8596784915a4ab61567b1a`
+  menjaga foto utuh di belakang clipping viewport, menyatukan geometri
+  preview/export, menahan zoom minimum pada cover, dan membatasi pan di tepi
+  foto termasuk rotasi 90 derajat.
+- Evidence: focused unit/component/export/store hijau; full Vitest 284/284;
+  Playwright editor/review 8/8; format, lint, typecheck, client/SSR build,
+  bundle 316,5 KiB dari batas 450 KiB, npm audit nol, worktree bersih, dan
+  remote exact.
+- Boundary: foto, thumbnail, path, editor, dan output tetap lokal. Tidak ada
+  backend/API/database/migration, pricing/payment, SagaBook, atau deployment.
+  Production tetap S382; next gate adalah review/deploy terpisah tanpa klaim
+  physical UAT atau business readiness.
+
 ## 2026-09-03 - S382 production activation dan npm 9 lockfile compatibility
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

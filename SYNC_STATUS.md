@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaView non-destructive slot photo pan
+
+- Status `accepted`; klasifikasi `CONFIRMED`; Studio exact
+  `8b1197534bec3e426d8596784915a4ab61567b1a` pushed dan clean.
+- Disinkronkan: full-source photo viewport, shared preview/export geometry,
+  cover-safe zoom, edge-clamped pan, dan right-angle rotation support.
+- Evidence focused hijau, Vitest 284/284, Playwright editor/review 8/8,
+  format/lint/typecheck, client/SSR build, bundle 316,5/450 KiB, npm audit nol,
+  dan remote exact. Foto/path/output tetap lokal dan tidak ada data restricted.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  S382. Backend/API/database, pricing/payment, SagaBook, physical UAT, dan
+  `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-07 — SagaOPS Owner Dashboard modular preview
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `96ca11a9006269fcafd906a2aa0b67d57789aa14` pushed.

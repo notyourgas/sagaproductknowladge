@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaView non-destructive slot photo pan
+
+- `CONFIRMED`: Studio exact `8b1197534bec3e426d8596784915a4ab61567b1a`
+  menjaga sumber foto penuh di belakang slot, menyamakan geometri preview dan
+  export, serta mencegah zoom/pan membuka area kosong.
+- PASS 284 unit test, 8 Playwright editor/review, format/lint/typecheck,
+  client/SSR build, bundle 316,5/450 KiB, dependency audit nol, clean commit,
+  dan remote exact. Boundary local-first/no-upload tetap utuh.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production S382, backend/API/database, pricing/payment, SagaBook, physical
+  UAT, dan `BUSINESS_READY=false` tidak berubah.
+
 ## 2026-09-07 — SagaOPS modular Owner Dashboard sync
 
 - `CONFIRMED`: source `96ca11a9006269fcafd906a2aa0b67d57789aa14` membangun 12-module responsive dashboard shell, data-backed overview/sales/orders/finance/inventory/report surfaces, manual refresh untuk form modules, dan honest readiness untuk purchasing/workforce/member.

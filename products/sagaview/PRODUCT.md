@@ -1,6 +1,22 @@
 # SagaView Product Knowledge
 
-Updated: 3 September 2026 WIB
+Updated: 7 September 2026 WIB
+
+SagaView Studio S383 exact source
+`8b1197534bec3e426d8596784915a4ab61567b1a` sudah `SOURCE_PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Slot editor sekarang menjadi
+viewport non-destruktif: foto asli tetap utuh di belakang slot ketika di-zoom,
+digeser, atau diputar. Preview dan export PNG memakai geometri cover/pan yang
+sama; zoom-out tidak dapat lebih kecil dari ukuran cover dan pan dibatasi di
+tepi foto agar area kosong tidak terbuka.
+
+Perbaikan hanya mengubah Studio lokal dan renderer export. Foto, thumbnail,
+path, editor, dan output tetap lokal; backend, API, database, pricing,
+payment, serta SagaBook tidak berubah. Exact gate lulus 284 unit test, 8
+Playwright editor/review, format, lint, typecheck, client/SSR build, bundle
+budget 316,5 KiB dari 450 KiB, dan npm audit nol vulnerability. Production
+tetap S382 sehingga perbaikan belum terlihat di aplikasi production dan
+`BUSINESS_READY=false` tetap berlaku.
 
 SagaView S382 aktif di production memakai backend exact
 `ceb33732144badbb929d212b0d5d7b3fd0e24474` pada immutable release
