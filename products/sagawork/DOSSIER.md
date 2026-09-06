@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Staff record edit/delete lost-response recovery
+
+- `CONFIRMED`; application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, harness-only HTTP204 evidence correction `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`. Edit and draft delete are one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and strict exact success. Expected allowlisted 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.
+- Uncertainty closes edit context and locks all People writes until reload; prior one-time credentials clear and late completion cannot claim success. Focused32/full869, lint/types/audit/contracts, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed. Chromium correctly exposes no body buffer for 204; final harness retains the protocol-level 204 plus persistence proof without changing application behavior.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. API/domain/schema/grant/lifecycle/import/POS/shared runtime unchanged. Public `711ef77` remains HTTP200; joint/offsite restore/config rollback/owner-device-finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff import commit lost-response recovery
 
 - `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`. Valid CSV commit is one POST with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and exact submitted-preview versus batch/row validation. Expected allowlisted 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain. Raw server text is not rendered.

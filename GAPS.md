@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — SagaWork after Staff record recovery
+
+- `CONFIRMED`: lost/late-response safety for preferred-name edit and account-less draft deletion is closed at application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, final harness `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`.
+- `NEEDS CONFIRMATION`: fresh exact-pair SagaPOS joint-native candidate/transport, encrypted offsite backup plus disposable restore, exact config/rollback and real-device/owner/finance UAT. Active POS work remains separate and untouched.
+- `NEEDS CONFIRMATION`: remaining People Workspace-assignment mutation recovery and complete production payroll policy/facts/payment activation. Public `711ef77` unchanged; Performance and real payroll/payment OFF. Provider acceptance is not deployment, activation or business readiness.
+
 ## 2026-09-07 — SagaWork after Staff import recovery
 
 - `CONFIRMED`: lost/late-response safety for committing a valid Staff CSV preview is closed at provider source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`; one-shot uncertainty/reload behavior passed full and native acceptance.

@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Staff record edit/delete lost-response recovery
+
+- `CONFIRMED`; application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, final harness `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`.
+- Edit name and account-less draft deletion are single-request and bounded with strict success validation, safe expected-4xx handling and reload-only full People write recovery after uncertain outcomes.
+- Focused32/full869 plus Linux/MySQL/full HTTP/Chromium passed with held edit200/delete204, one request/audit each, persisted edit, atomic related-row cleanup, invariance and mobile/Axe/device guards.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.
+
 ## 2026-09-07 — Staff import commit lost-response recovery
 
 - `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`.

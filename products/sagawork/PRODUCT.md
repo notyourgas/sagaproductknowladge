@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Staff record edit/delete lost-response recovery
+
+- `CONFIRMED`; application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, final harness `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`. Edit preferred name and delete account-less draft now use one bounded request, exact target/value or bodyless-204 validation and a full People write lock on uncertainty. No retry or late false success; HR reloads and verifies the selected Employee ID first.
+- Focused32/full869 tests in95 files, lint/types, dependency audit0, contracts/OpenAPI87 paths/106 operations, crypto/release checks, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed. Native proved held genuine edit200/delete204, one request/audit each, persisted edit, atomic draft/employment/assignment removal, unrelated employee/account invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains HTTP200. POS active work was untouched; fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff import commit lost-response recovery
 
 - `CONFIRMED`; application/native instrumentation `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`. Committing a valid CSV preview now uses one bounded request, exact batch/row matching and a full People write lock when the result is uncertain. No automatic retry or late false success; HR reloads and verifies every submitted Employee ID before preparing another import.
