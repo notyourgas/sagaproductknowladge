@@ -1,5 +1,14 @@
 # SagaWork Changelog
 
+## 2026-09-06 — SagaWork reports follow actual shift intervals
+
+- **CONFIRMED** from source and fresh isolated evidence: application/instrumentation `d85cd94af56738ae0d2c9d2f2932d3d199280c63`, evidence `d6b059d3799b32fe4abf4e461ab57be9d8e61c6f`. Before: UTC calendar-day lookup could miss leave/overtime for early local or overnight shifts; after: actual authorized schedule interval overlap plus explicitly linked overtime, under organization/selected employee/state guards. Pending overtime remains a blocker; no invented approval or wage.
+- HRPOS25/29 dependency: service SQL RED1 -> GREEN3, helper8; full626 tests/79 files, lint/types, contracts/OpenAPI87/106, five guards and audit0. Linux build0/fresh native runner0: eight MySQL suites/full HTTP/Chromium. Early WIB and overnight requests, approvedOT60 synthetic minutes, pending linked blocker, touching boundaries and tenant/employee/location/permission isolation PASS; existing browser regressions also PASS.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce `711ef77` active/HTTP200 unchanged; POS `c99add2` clean, untouched. Scope/joint/ownership messages sent; no fresh joint pair/allowed transport or POS acceptance received. Knowledge refreshed clean after POS inventory-variance update before this sync. No API/DTO/schema/grant or shared runtime change.
+- Remaining correctness gate: current partial approved leave still excludes a whole shift rather than only its excused interval; that existing behavior is not fixed by retrieval. Next reporting slice must resolve partial coverage without inventing pay policy. Persistent payroll policy/fact verification, fresh joint-native, encrypted offsite backup/disposable restore, config/rollback and owner/device/finance acceptance remain. Earlier unrelated coarse browser reload cause remains **NEEDS CONFIRMATION**.
+- Performance OFF; no real payroll/payment, Studio expansion, activation or business-ready claim. Affects SagaWork PRODUCT/DOSSIER/CHANGELOG, portfolio/root changelogs, master knowledge, gaps and sync status; no pricing or founder-policy change.
+
+
 ## 2026-09-06 — SagaWork request reload state clarity
 
 - **CONFIRMED** from source and fresh isolated tests: application/instrumentation `524332666974d87771f37650dad295c6af9bb382`, evidence `31f08360e057db7e79cb509acce6325a2b7bc6d4`. Before: a pending or failed own-request reload could also say there were no requests; after: empty text appears only when neither loading nor error is present. This avoids misleading staff during slow connections; private-row clearing and safe retry remain.
