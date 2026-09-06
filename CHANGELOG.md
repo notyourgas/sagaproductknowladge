@@ -10,9 +10,9 @@
 
 ## 2026-09-06 — SagaOPS penerimaan pembelian dan moving-average HPP
 
-- Klasifikasi `CONFIRMED`; status sinkronisasi `accepted`. Exact source final `bd353d1a6caae390cd5c3fdf201bb85796b69263` pada branch Saga POS.
+- Klasifikasi `CONFIRMED`; status sinkronisasi `accepted`. Exact source final `80b5d00526a764185561763c686fdf7db889bf23` pada branch Saga POS.
 - Before: biaya ingredient hanya manual. After: Owner/Admin lokal mencatat supplier receipt dan package conversion; server memperbarui quantity/value serta moving-average base-unit cost secara idempotent, restart-safe dan terhubung ke recipe HPP tanpa menulis ulang snapshot transaksi lama.
-- Focused 29/29, full 318/318, static/type/OpenAPI 166 modul/12 migrasi, browser Admin 390/1440 Axe serious/critical 0, touch/overflow/reduced-motion PASS, dependency audit 0 dan high-confidence restricted-data scan 0. Defect fingerprint akibat property ordering PostgreSQL JSONB ditemukan oleh restart test, assertion dipertahankan dan canonical serialization memperbaikinya; hardening final merekonsiliasi receipt, saldo dan biaya ingredient.
+- Focused 30/30, full 319/319, static/type/OpenAPI 166 modul/12 migrasi, browser Admin 390/1440 Axe serious/critical 0, touch/overflow/reduced-motion PASS, dependency audit 0 dan high-confidence restricted-data scan 0. Defect fingerprint akibat property ordering PostgreSQL JSONB ditemukan oleh restart test, assertion dipertahankan dan canonical serialization memperbaikinya; hardening final merekonsiliasi receipt, saldo dan biaya ingredient serta mempertahankan presisi fractional sampai total line resep.
 - Produk/area: SagaOPS purchasing, inventory valuation, HPP dan Owner/Admin. File knowledge: product, dossier, product/portfolio/root changelog, master dan sync status. Tidak ada perubahan pricing, founder decision atau produk lain.
 - Production berubah: tidak. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; protected preview dan private runtime tidak diperbarui. Readiness tetap sekitar 60/100; Waves 1–8 masih PARTIAL, Wave 9 deferred. Actual HPP, consumption, count/waste/adjustment, modifier/packaging dan PO lifecycle tetap blocker berikutnya.
 

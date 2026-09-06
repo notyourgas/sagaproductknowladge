@@ -2,9 +2,9 @@
 
 ## 2026-09-06 — Penerimaan pembelian mengalir ke moving-average HPP
 
-- `CONFIRMED`; source final `bd353d1a6caae390cd5c3fdf201bb85796b69263` menambah owner-only supplier receipt, package-to-base-unit conversion, idempotent inventory quantity/value update dan moving-average ingredient cost.
+- `CONFIRMED`; source final `80b5d00526a764185561763c686fdf7db889bf23` menambah owner-only supplier receipt, package-to-base-unit conversion, idempotent inventory quantity/value update dan moving-average ingredient cost dengan presisi fractional per base unit.
 - Recipe/HPP memakai biaya pembelian terkini, sementara snapshot order lama tetap immutable. Restore v2 memvalidasi canonical fingerprint, total, conversion dan metadata; v1 bermigrasi fail-closed tanpa mengarang saldo.
-- PASS: focused 29/29, full 318/318, static/type/OpenAPI 166 modul/12 migrasi, Admin 390/1440 Axe/touch/overflow/reduced-motion, dependency audit 0 dan scan restricted data 0. Restore juga merekonsiliasi receipt, saldo dan biaya ingredient.
+- PASS: focused 30/30, full 319/319, static/type/OpenAPI 166 modul/12 migrasi, Admin 390/1440 Axe/touch/overflow/reduced-motion, dependency audit 0 dan scan restricted data 0. Restore juga merekonsiliasi receipt, saldo dan biaya ingredient.
 - `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, readiness tetap sekitar 60/100. Actual HPP, count/waste/consumption dan PO lifecycle masih terbuka.
 
 ## 2026-09-06 — Protected Dashboard Owner dan KDS review
