@@ -1,5 +1,14 @@
 # SagaWork Changelog
 
+## 2026-09-06 — SagaWork same-day emergency attendance completion
+
+- **CONFIRMED** from source and current isolated acceptance: application `9fa3527d2082907b1c9ca17cfd2fd9d3ed4a0dbc`, diagnostic-only `4bc87d6e3b39c79c7615766b153b38d2ead9ed62`, evidence `8bc9bc2`. Before: completed same-day emergency session could return capture fallback; after: read-only completion for the selected eligible location's local business date, without implying HR/payroll approval. Staff can still select a legitimately different local date; no automatic location movement.
+- Own permission and consistent tenant/employee joins, minimal date-only read and existing one-draft/business-date rule preserved. Open-session recovery remains first; no API/bridge/schema/grant or POS/shared runtime change.
+- LOCAL_VALIDATED: 612 tests/77 files, lint/types, contracts/OpenAPI87/106, five guard suites, audit0. PROVIDER_NATIVE_SYNTHETIC_VALIDATED: Linux build0 and final fresh native runner0, seven MySQL suites/full HTTP/Chromium, completed/next-date UI and reload/mobile/Axe. Initial native1 failed in existing own-request reload before new UI; safe diagnostics preserved assertions/timeouts/actions. Fresh rerun passes, but cause remains **NEEDS CONFIRMATION**, not claimed fixed.
+- **BELUM DEPLOY HR**: public workforce `711ef77` active/HTTP200 unchanged. POS `916bac28` checked clean; provider-only scope and knowledge window confirmed, stock/HPP untouched. Fresh allowed joint transport/exact pair, encrypted offsite backup/disposable restore, config/rollback, owner/device/finance acceptance and browser reliability risk remain open. Performance OFF; no real payroll activation, business-ready or Studio scope expansion.
+- Next: reproduce/resolve reload reliability and obtain fresh joint-native evidence before conditional release. Published completed-flow and broad capture/offline lifecycle remain separate backlog. This update affects SagaWork PRODUCT/DOSSIER/CHANGELOG, portfolio/root changelogs, master knowledge, gaps and sync status; no pricing or founder-policy change.
+
+
 ## 2026-09-06 - SagaWork draft absensi selesai tidak mengunci hari berikutnya
 
 Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk HRPOS17/18/25 provider-only. Aplikasi `60893153891766f76039c16683a153e9358475d7`, instrumentasi final `f7d9310c768b75efa2d56f4d5bdadf75abdecd3e`, dokumentasi `a5f9e3799e4edd3695c082c8829a7d923fee782d`.
