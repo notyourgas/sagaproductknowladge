@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-06 — SagaWork request reload state clarity
+
+- **CONFIRMED** from source and fresh isolated tests: application/instrumentation `524332666974d87771f37650dad295c6af9bb382`, evidence `31f08360e057db7e79cb509acce6325a2b7bc6d4`. Before: a pending or failed own-request reload could also say there were no requests; after: empty text appears only when neither loading nor error is present. This avoids misleading staff during slow connections; private-row clearing and safe retry remain.
+- HRPOS19/25: focused RED6 -> GREEN22; full615 tests/77 files, lint/types, contracts/OpenAPI87/106, five guards, audit0. Linux build0 and fresh native runner0: seven MySQL suites/full HTTP/Chromium. Holding one genuine list response body proves loading/no false empty then row/detail recovery for staff and dual-role, preserving colleague denial, pagination/filter, mobile390/Axe. No API/schema/grant/POS/shared runtime changes.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`; **BELUM DEPLOY HR**. Public workforce `711ef77` rechecked active/HTTP200 unchanged. POS `87e878f` clean, stock/HPP priority complete and provider-only scope/knowledge window confirmed. No fresh joint pair/allowed transport yet; joint-native, encrypted offsite backup/disposable restore, config/rollback and owner/device/finance gates remain. Performance OFF; no real payroll activation, business-ready or Studio expansion.
+- **NEEDS CONFIRMATION**: exact cause of the earlier coarse reload failure. New bounded UI-ready synchronization preserves final assertions; the controlled-body probe is not proof of the historical cause. Next: fresh joint-native handoff and retain safe diagnostics if the incident recurs.
+- Scope of this sync: SagaWork PRODUCT/DOSSIER/CHANGELOG, portfolio/root changelogs, master knowledge, gaps and sync status. No pricing or founder-policy change.
+
+
 ## 2026-09-06 — SagaOPS full inventory count atomik
 
 `CONFIRMED`; source `87e878f06d383fc851684cdc171744d1abf691cb` pushed. Owner Admin kini membedakan cycle count parsial dari full count seluruh managed ingredients, memakai blank physical inputs, explicit review/confirm, linked before/after/value movements, idempotency dan restore integrity. Injected Postgres failure membuktikan rollback memory/database. Focused 29/29, full 332/332, static/type/OpenAPI169/12, Admin 390/1440 Axe0/touch/keyboard/overflow/reduced-motion, dependency0 dan secret heuristic0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves 1–8 PARTIAL dan Wave 9 deferred. Actual HPP/variance, sale consumption, maker-checker, transfer, real inputs, offsite restore dan production gates tetap terbuka; payment/promo/payroll/production tidak berubah.
