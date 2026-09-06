@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 - SagaWork draft absensi selesai tidak mengunci hari berikutnya
+
+Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk HRPOS17/18/25 provider-only. Aplikasi `60893153891766f76039c16683a153e9358475d7`, instrumentasi final `f7d9310c768b75efa2d56f4d5bdadf75abdecd3e`, dokumentasi `a5f9e3799e4edd3695c082c8829a7d923fee782d`.
+
+Before: sesi darurat yang sudah checkout tetapi pending-review dapat mengunci pilihan lokasi hari berikutnya. After: activeDraft hanya memakai sesi faktual terbuka dengan pencocokan organisasi/staf/lokasi/jadwal; urutan deterministik. DTO/bridge/schema/grant, scope Workspace/policy dan satu draft per businessDate tidak berubah. Challenge saja bukan absensi; tidak membuka shift darurat kedua pada hari yang sama.
+
+`LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce tetap `711ef77`, aktif/HTTP200; source lokal tanpa remote. POS menyetujui provider-only/knowledge window, sumber17d57a2 dan prioritas stok/HPP tidak diubah. Program36 PARTIAL; joint transport/exact pair baru, encrypted offsite backup/disposable restore, config/rollback, owner/device/finance acceptance tetap terbuka. Same-day completed-session UX dan broad capture/offline lifecycle tetap backlog. DEC-191 tidak berubah; performance OFF, payroll nyata tidak aktif, tanpa perluasan Studio. Tidak ada keputusan founder/pricing baru.
+
 ## 2026-09-06 — SagaOPS gap HPP setelah cycle count/waste
 
 - `CONFIRMED`: source `17d57a281da53fe3be3882b37af9acd00316d09e` menutup gap local untuk owner cycle count, reasoned waste/deductions, restart-safe ledger dan daily Dashboard purchase/waste. Stock count/waste tidak lagi boleh disebut seluruhnya belum diimplementasikan.

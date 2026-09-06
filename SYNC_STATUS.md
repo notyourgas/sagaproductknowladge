@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 - SagaWork draft absensi selesai tidak mengunci hari berikutnya
+
+Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk HRPOS17/18/25 provider-only. Aplikasi `60893153891766f76039c16683a153e9358475d7`, instrumentasi final `f7d9310c768b75efa2d56f4d5bdadf75abdecd3e`, dokumentasi `a5f9e3799e4edd3695c082c8829a7d923fee782d`.
+
+Before: sesi darurat yang sudah checkout tetapi pending-review dapat mengunci pilihan lokasi hari berikutnya. After: activeDraft hanya memakai sesi faktual terbuka dengan pencocokan organisasi/staf/lokasi/jadwal; urutan deterministik. DTO/bridge/schema/grant, scope Workspace/policy dan satu draft per businessDate tidak berubah. Challenge saja bukan absensi; tidak membuka shift darurat kedua pada hari yang sama.
+
+PASS597 tes/75 file, lint/types, kontrak/OpenAPI87/106, lima guard suite, audit0 dan signature scan0; Linux build0 dan final native runner0: tujuh suite MySQL/full signed HTTP/Chromium. Browser selector unlocked/reload/evidence gating/mobile390/Axe0/device0/mutation0/pageerror0; domain membuktikan closed-exclusion, fresh next date, same-date reuse. Run awal menemukan fixture melanggar tenant FK; instrumentasi memperbaiki tuple tanpa mengubah aplikasi, constraint atau assertion. Database uji baru dipakai untuk rerun; akun uji final dicabut/listener clear.
+
+`LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce tetap `711ef77`, aktif/HTTP200; source lokal tanpa remote. POS menyetujui provider-only/knowledge window, sumber17d57a2 dan prioritas stok/HPP tidak diubah. Program36 PARTIAL; joint transport/exact pair baru, encrypted offsite backup/disposable restore, config/rollback, owner/device/finance acceptance tetap terbuka. Same-day completed-session UX dan broad capture/offline lifecycle tetap backlog. DEC-191 tidak berubah; performance OFF, payroll nyata tidak aktif, tanpa perluasan Studio. Tidak ada keputusan founder/pricing baru.
+
 ## 2026-09-06 — SagaOPS cycle count dan waste ledger
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source final `17d57a281da53fe3be3882b37af9acd00316d09e` terverifikasi pushed dan clean.
