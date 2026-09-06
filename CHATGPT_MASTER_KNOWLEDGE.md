@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — SagaOPS permohonan pribadi staf terintegrasi lokal
+
+- CONFIRMED; source `f79a773259f6a1fd2c8ef893cab02d29bdd3e855`, pushed pada branch `codex/saga-pos-vs01-kiosk-kds-dashboard`. Bukti: source/tests dan `docs/HRPOS_STAFF_OWN_REQUEST_POS_2026-09-06.md`. Hanya F&B Kopi Saga.
+- Before: portal POS hanya membaca jadwal. After: staf berizin dapat membaca permohonan pribadi, sembilan filter status, pagination manual 20 baris, detail inline, alasan/riwayat/tahap persetujuan. Tidak ada create/edit/approve/payroll action. Akses permohonan tidak mensyaratkan izin jadwal; role HR tidak menjadi jalan pintas.
+- Integrasi: dua fixed own-read operations, strict input/output projection, active-role/CSRF/same-origin dan re-introspection. Cursor body-only, null menit disetujui bukan nol; konten privat dibersihkan saat hide/close/logout/revocation. POS mengenali 23 operasi, bukan seluruh 69 capability provider. Kontrak provider `c6cd3007c5f52cab33ac507d56ab93414033f73e` unchanged; increment portal provider berikutnya bukan dependency.
+- Validasi lokal final: Chromium 304/304, WebKit 14/14, focused DTO/transport 5/5, static/type/diff, Axe 0 pada 390/1440px, overflow/touch/keyboard/recovery dan 20 baris panjang PASS; dependency audit 0 dan high-confidence staged secret signatures 0. Actual BFF memakai provider sintetis dan PGlite, bukan joint native MySQL/PostgreSQL.
+- Delivery LOCAL_VALIDATED; BELUM DEPLOY/ACTIVATED operasional. Runtime POS tetap `a9d500722f3451aaf6f792f247c3fe5328b3b7ce`, public Kiosk HTTP 200 dan staff HTTP 404. Tidak ada migrasi, tunnel/provisioning, payment/payroll activation, dependency baru atau grant baru. Knowledge sync terpisah dari source.
+- Blocker/risiko: fresh exact-pair joint acceptance lewat transport yang diizinkan, Customer Platform, offsite encrypted backup/disposable restore dan release gates. Tidak ada bypass/retarget fixture lama. M2 dan Waves 1–8 PARTIAL; Wave 9 deferred. Readiness estimasi operasional tetap sekitar 60/100, tidak naik dari test lokal. Next: joint acceptance yang diizinkan, sisa acceptance staf, lalu ingredient/recipe HPP snapshots.
+
+
 ## 2026-09-06 - SagaWork permohonan staf own-only: provider native tervalidasi
 
 - Klasifikasi: `CONFIRMED`; sumber task SagaWork, source fitur `05a1035894701b7235553af55946bcf3f4275123`, aplikasi final `c6cd3007c5f52cab33ac507d56ab93414033f73e`, instrumentasi `147f236d5338b9a1e6a9e754af68f680e3f63207` dan dokumentasi `881be6d14241adedbd4e4e50e628f25dce70ca7b`. Tidak ada keputusan founder, pricing atau positioning baru.
