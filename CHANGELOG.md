@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork Staff import recovery
+
+- `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`. HR CSV commit now fails safely on lost/late responses through one bounded request, exact preview/batch/row validation and reload-only People write recovery. Full837/93 plus exact-source Linux/MySQL/HTTP/Chromium passed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint/offsite restore/release and owner/device/finance gates remain.
+
 ## 2026-09-07 — SagaOPS PO partial receiving sync
 
 - `CONFIRMED`: source `8ae899b10a4052933c4b9472e479b255007d7f8a` menautkan per-line partial receiving ke PO dengan server-owned cost, exactly-once stock/HPP mutation dan restart reconciliation.

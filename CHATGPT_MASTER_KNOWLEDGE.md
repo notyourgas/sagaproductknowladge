@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaWork Staff import recovery
+
+- `CONFIRMED`: source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`. HR CSV commit is single-request and bounded; uncertain outcomes clear local import state, lock every People write until reload and never render late false success. Exact preview/batch/row validation and safe expected-4xx copy are enforced.
+- Provider acceptance passed focused30/full837, lint/types/audit/contracts, Linux build and fresh disposable MySQL/full HTTP/Chromium, including held genuine commit201, one batch/per-row audits and atomic drafts without accounts. No parser/preview, API/domain/schema/grant/POS/shared-runtime change.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains HTTP200. Fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS partial receiving dari PO
 
 - `CONFIRMED`; source `8ae899b10a4052933c4b9472e479b255007d7f8a`, docs `a3f0f2c755b2471481e5c49391f5a5e303f34db9`. Owner Admin dapat menerima sisa line PO bertahap; UI menunjukkan ordered, received, remaining dan remaining value lalu status berpindah OPEN/PARTIAL/RECEIVED.

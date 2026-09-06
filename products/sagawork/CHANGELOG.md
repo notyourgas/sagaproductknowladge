@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Staff import commit lost-response recovery
+
+- `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`.
+- CSV commit is now single-request and bounded with exact preview/batch/row success validation, safe expected-4xx handling and reload-only full People write recovery after uncertain outcomes. Local CSV/preview clears and late responses cannot claim success.
+- Focused30/full837, lint/types/audit/contracts, Linux build and fresh disposable MySQL/full HTTP/Chromium passed with held genuine commit201, one batch/per-row audits, atomic drafts without accounts, invariance and mobile/Axe/device guards.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS/shared runtime untouched. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff lifecycle lost-response recovery
 
 - `CONFIRMED`; source `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`.

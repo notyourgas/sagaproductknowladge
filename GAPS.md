@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — SagaWork after Staff import recovery
+
+- `CONFIRMED`: lost/late-response safety for committing a valid Staff CSV preview is closed at provider source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`; one-shot uncertainty/reload behavior passed full and native acceptance.
+- `NEEDS CONFIRMATION`: fresh exact-pair SagaPOS joint-native candidate and allowed transport, encrypted offsite backup plus disposable restore, exact config/rollback and real-device/owner/finance UAT. Active POS work is separate and untouched.
+- `NEEDS CONFIRMATION`: XLSX and safe downloadable error export remain separate import backlog; complete production payroll policy/facts and payment activation also remain open. Public `711ef77` unchanged; Performance and real payroll/payment OFF. Provider acceptance is not deployment, activation or business readiness.
+
 ## 2026-09-07 — SagaWork after Staff lifecycle recovery
 
 - `CONFIRMED`: lost/late-response safety for HR suspend/restore access, terminate and archive is closed at provider source `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`; one-shot uncertainty/reload behavior passed full and native acceptance.

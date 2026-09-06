@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaWork Staff import recovery
+
+- Status: `accepted`; classification `CONFIRMED` for provider-only source `f52f9a318ca310aaff776171dcd9980515f84971` and evidence `0d8f69a505a42fcd2d6b06c17588529286084170`.
+- Scope: Staff CSV commit lost-response recovery, full837/93 and exact-source Linux/MySQL/full HTTP/Chromium acceptance. No POS/shared runtime, parser/preview, API/domain/schema/grant, pricing or founder-policy change.
+- Delivery: `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / BELUM DEPLOY HR`; public `711ef77` unchanged/HTTP200. Fresh exact-pair joint-native, offsite encrypted restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS PO-linked partial receiving
 
 - Status `accepted`; klasifikasi `CONFIRMED`; implementation source `8ae899b10a4052933c4b9472e479b255007d7f8a` dan docs `a3f0f2c755b2471481e5c49391f5a5e303f34db9` pushed dan clean.
