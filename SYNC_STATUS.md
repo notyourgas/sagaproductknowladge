@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 — SagaWork Staff credential issuance recovery
+
+- Status `accepted`; klasifikasi `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`.
+- Sinkron: one-shot bounded create/reset Staff access, exact 201 validation, full People uncertainty lock, explicit reload/reset recovery, one-time-secret cleanup and real 390 px selector containment. No API/schema/grant/POS/shared-runtime change.
+- Evidence focused26/full747, lint/types/audit/contracts, Linux build0, fresh MySQL/full HTTP/Chromium0; genuine held create201, in-memory hash match, one create/one reset audit, old-session revoke, unrelated invariance, mobile/Axe/device/mutation/page-error guards PASS.
+- Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Public `711ef77` HTTP200 unchanged; fresh POS exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance/payroll/payment nyata OFF; no restricted data or new founder/pricing decision.
+
 ## 2026-09-06 — SagaOPS variance evidence drilldown
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source final `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d` pushed dan clean.

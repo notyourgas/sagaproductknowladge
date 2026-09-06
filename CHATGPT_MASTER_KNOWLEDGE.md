@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — SagaWork Staff credential issuance recovery
+
+- `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. HR can safely recover when initial Staff credential creation or reset completes server-side but the browser loses the response: exactly one request, no automatic retry or late password, all People writes locked until reload, then explicit reset when needed. One-time secrets clear on close/hide.
+- Provider-native evidence passed focused26/full747, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium, including genuine held create201, persisted-hash verification in memory, exact audits, session revocation, unrelated-account invariance and mobile390/Axe. This is not real-device or production acceptance.
+- Status `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Public workforce `711ef77` remains HTTP200. No API/schema/grant/POS/shared-runtime change. Fresh POS exact-pair joint-native, encrypted offsite backup/disposable restore, config/rollback and owner/device/finance gates remain; Performance and real payroll/payment OFF.
+
 ## 2026-09-06 — SagaOPS inventory variance source trace
 
 - `CONFIRMED`; exact source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d`, delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production dan business readiness tidak berubah. State disclosure bertahan saat polling tetapi dibersihkan pada logout.

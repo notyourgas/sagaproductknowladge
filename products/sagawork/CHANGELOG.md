@@ -1,5 +1,11 @@
 # SagaWork Changelog
 
+## 2026-09-06 — Staff credential issuance uncertainty recovery
+
+- `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. HR create/reset access now fails safe on lost or ambiguous responses, locks People writes until reload, prevents duplicate requests and late password display, and clears one-time secrets when hidden/closed.
+- Focused26/full747, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium passed. Genuine held create201 and explicit one-reset recovery proved hash/audit/session/account invariants; the native 390 px test found and retained a real selector-overflow regression before the CSS fix.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**; public `711ef77` HTTP200 unchanged. No API/schema/grant/POS/shared-runtime change. Fresh joint-native, verified encrypted offsite restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
+
 ## 2026-09-06 — SagaWork account mutation uncertainty recovery
 
 - **CONFIRMED** from source/native evidence: application `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. Password change and own-session termination now use one bounded request, exact success validation and a locked uncertainty state; private session rows clear and no retry or late false success is allowed. Expected 4xx uses safe allowlisted/fallback copy; raw server text is never rendered. No API/schema/grant/POS/shared-runtime change.

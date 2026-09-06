@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 — SagaWork Staff credential recovery sync
+
+- `CONFIRMED`: source `1aab7832bdb8b43e1407ecd03b622e48fc3c6476` plus mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`; evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. One-shot HR Staff credential create/reset, uncertainty lock, explicit reload/reset recovery and secret-lifetime controls are provider-native validated.
+- PASS focused26/full747, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium. Public `711ef77` unchanged; **BELUM DEPLOY HR** because fresh POS joint-native, verified encrypted offsite restore, config/rollback and owner/device/finance gates remain open. No restricted data, pricing/founder-policy, POS/shared-runtime or real payroll/performance activation change.
+
 ## 2026-09-06 — SagaOPS variance evidence drilldown sync
 
 - `CONFIRMED`: source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d` menambah owner receipt/waste source trace untuk exact inventory count pair, bounded newest projection, complete totals, explicit truncation, polling-stable progressive disclosure, keyboard/touch access, dan logout state clearing.

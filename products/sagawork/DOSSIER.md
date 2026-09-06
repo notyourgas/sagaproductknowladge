@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-06 — Staff credential issuance uncertainty recovery
+
+- `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, diagnostic `4ce893746f0fde06da70b9022baa98c3dfdca592`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. Create initial Staff access and reset access each send exactly one 12-second bounded request. Only a valid exact 201 DTO confirms success; expected 4xx is definite, while network/timeout/5xx/redirect/malformed or mismatched success is uncertain and locks every People write until reload. No late credential or raw server text is shown; hide/unmount/close clears the secret.
+- The original native mobile assertion caught an actual long-option selector overflow at 390 px. CSS containment fixed the behavior without changing the assertion. Final evidence: focused26/full747 in87 files, lint/types, audit0, contracts/OpenAPI87/106, crypto/release checks, exact-source Linux build0 and fresh MySQL/full signed-cookie HTTP/compiled Chromium0. Genuine held create201, explicit-reset recovery, in-memory hash match, one create/one reset audit, old-session revoke, unrelated invariance, mobile390/Axe/device/mutation/page-error guards passed.
+- Delivery is `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public release `711ef77` remains active/HTTP200. No API/domain/schema/grant/POS/shared-runtime change. Fresh exact-pair POS joint-native, verified encrypted offsite backup/disposable restore, config/rollback and owner/device/finance acceptance remain mandatory. Performance and real payroll/payment are OFF.
+
 ## 2026-09-06 — SagaWork account mutation uncertainty recovery
 
 - **CONFIRMED** from source/native evidence: application `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. Password change and own-session termination now use one bounded request, exact success validation and a locked uncertainty state; private session rows clear and no retry or late false success is allowed. Expected 4xx uses safe allowlisted/fallback copy; raw server text is never rendered. No API/schema/grant/POS/shared-runtime change.

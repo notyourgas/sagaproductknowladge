@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-06 — SagaWork Staff credential issuance recovery
+
+`CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. HR Staff credential create/reset now uses one bounded request, strict success validation, uncertainty lock and reload/reset recovery; one-time secrets cannot appear late and clear on close/hide. Focused26/full747, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium passed; native verified genuine held create201, hash/audit/session/account invariants and preserved mobile390/Axe. `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, verified encrypted offsite restore, release/rollback and owner/device/finance gates remain; no POS/shared-runtime, Performance or real payroll/payment change.
+
 ## 2026-09-06 — SagaOPS variance evidence drilldown
 
 `CONFIRMED`; source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d` pushed. Owner Dashboard menghubungkan actual-versus-theoretical per ingredient dengan bounded newest receipt dan named waste/deduction facts untuk exact completed-count pair. Complete counts serta explicit truncation mencegah bukti terpotong dianggap lengkap; disclosure tetap terbuka saat polling tetapi dibersihkan saat logout, mendukung keyboard/touch, CSV owner-only/no-store/formula-safe, dan projection mengecualikan raw receipt, actor, idempotency/fingerprint serta customer/payment data. Focused6/6, full339/339, static/type/OpenAPI172/12, browser390/1440 Axe0/touch48/overflow/reduced-motion, dependency0 dan secret scan0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves1–8 PARTIAL, Wave9 deferred. Tidak ada deploy/payment/payroll/produk lain.

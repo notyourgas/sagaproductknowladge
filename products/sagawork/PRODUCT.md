@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-06 — Staff credential issuance uncertainty recovery
+
+- `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile containment `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. HR create/reset Staff access now uses one bounded request, exact 201 validation and a full People write lock on uncertain outcomes. Late responses cannot expose a password or claim success; reload plus explicit reset is the safe recovery path. Closing or hiding removes the one-time secret.
+- Focused26/full747 tests in87 files, lint/types, audit0, contracts/OpenAPI87/106, crypto/release guards, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed. Native verified genuine held create201, one create/one reset audit, reset password against its stored hash only in memory, target-session revocation, unrelated-account/session invariance, mobile390/Axe and zero device/page-error/unexpected mutation.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains HTTP200. POS `4152976bbb213712c37425c258070b876cb99469` is clean/pushed but no fresh exact-pair joint-native exists. The current backup endpoint is loopback-only local storage, not verified offsite; joint, offsite restore, config/rollback and owner/device/finance gates remain open. No API/schema/grant/POS/shared-runtime change; Performance and real payroll/payment remain OFF.
+
 ## 2026-09-06 — SagaWork account mutation uncertainty recovery
 
 - **CONFIRMED** from source/native evidence: application `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. Password change and own-session termination now use one bounded request, exact success validation and a locked uncertainty state; private session rows clear and no retry or late false success is allowed. Expected 4xx uses safe allowlisted/fallback copy; raw server text is never rendered. No API/schema/grant/POS/shared-runtime change.

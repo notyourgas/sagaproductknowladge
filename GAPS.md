@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 — SagaWork Staff credential issuance recovery
+
+- `CONFIRMED`: provider gap for lost/late initial-credential and reset responses is closed at application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476` plus mobile containment `aab7ac2b2c5353bba129d4efce1af99df022ed03`; evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. One request, strict 201, uncertainty lock, reload/reset recovery and secret cleanup passed genuine native acceptance. A real mobile overflow found by the unchanged 390 px assertion was fixed.
+- Provider evidence focused26/full747, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium passed, including persisted-hash/audit/session/account invariants. No API/schema/grant/POS/shared-runtime change.
+- `NEEDS CONFIRMATION / BELUM DEPLOY HR`: fresh exact-pair SagaPOS joint-native and allowed transport; encrypted offsite backup plus disposable restore; exact config/rollback; real-device/owner/finance UAT. Current backup endpoint is loopback-only local storage and cannot satisfy the offsite gate. Public `711ef77` remains HTTP200; Performance and real payroll/payment OFF.
+
 ## 2026-09-06 — SagaOPS setelah variance source evidence
 
 - `CONFIRMED`: aggregate variance sekarang dapat ditelusuri ke bounded receipt dan named waste/deduction facts pada source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d`; complete totals, explicit truncation, keyboard/touch access, dan logout state clearing tersedia tanpa raw receipt/actor/customer/payment exposure.
