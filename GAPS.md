@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 — SagaWork account session inventory recovery
+
+- **CONFIRMED** from source/evidence: application `3fbe625d2ad4706591cb745326c7ce26ed295b25`, final test harness `a5a3d1a64c86036b07cf01b8dd74818ad7b165e8`, evidence `5ffc1e1350de716fce03647cade289c6addd00ac`. Before: account session reload could retain stale rows or show empty alongside an error. After: validated bounded12s read, clear uncertain/hidden rows, safe distinct loading/error/empty and revalidation; password/revoke mutations and account ownership unchanged.
+- HRPOS09/10/25 dependency: helper22/component11, full691 tests83 files, lint/types/contracts87/106, five guards/audit0; Linux build0 and final fresh eight MySQL suites/full HTTP/Chromium runner0. Genuine held response, injected401/503 and real recovery, staff/HR session separation, mobile390/Axe0 and zero mutation/device/page errors PASS. Initial test failure was confirmed as a blank Next accessibility announcer counted globally; harness scope corrected, not application security weakened.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce711ef77 active/HTTP200 unchanged; POS5099c9e priority/source untouched. Coordination and knowledge reservation sent; no fresh allowed joint pair/transport or joint acceptance received. Refreshed knowledge baseline20d83fa preserves POS inventory update. Fresh joint-native, encrypted offsite backup/disposable restore, config/rollback and owner/device/finance gates remain.
+- Password/revoke uncertain-mutation UX, complete POS flows and prorated payroll remain separate backlog; prior unrelated request reload cause remains NEEDS CONFIRMATION. No API/schema/grant/pricing/founder-policy change. Performance and real payroll/payment OFF; no activation/business-ready claim. Affects SagaWork PRODUCT/DOSSIER/CHANGELOG, portfolio/root changelogs, master, gaps and sync status.
+
+
 ## 2026-09-06 — SagaOPS setelah historical inventory-period selector
 
 - `CONFIRMED`: gap arbitrary historical completed count-pair selection tertutup secara lokal pada source `5099c9ef4c8efae4c9f94fae9f8c514478dcc763`, termasuk invalid-closing prevention, selection-stable polling, exact-pair CSV, reset-to-latest dan safe server validation.
