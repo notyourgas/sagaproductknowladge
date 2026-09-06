@@ -8,6 +8,13 @@
 - Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce diperiksa ulang tetap `711ef77`, aktif/HTTP200. Source commit lokal tanpa remote. Task POS menyetujui provider-only dan menyatakan belum ada transport joint baru; dirty source, purchasing/stock/HPP/dashboard serta shared runtime POS tidak diubah. Validasi provider bukan joint-native, deployment, activation atau business readiness.
 - Program36 tetap PARTIAL. Next: konteks sesi kerja yang sudah melewati akhir jadwal dan capture/offline recovery; joint melalui transport diizinkan dengan exact source pair baru, encrypted offsite backup/disposable restore, config/rollback, serta owner/device/finance acceptance. Uji ini tidak mengambil foto/GPS dan tidak menggantikan uji HP nyata. DEC-191 tetap izin deploy bersyarat; performance OFF dan payroll nyata tidak diaktifkan. Tidak ada keputusan founder/pricing/positioning baru. Delapan dokumen disinkronkan tanpa data restricted.
 
+## 2026-09-06 — SagaOPS purchase moving-average HPP
+
+- Status sinkronisasi: `accepted`; klasifikasi `CONFIRMED` untuk exact local source `1f01525c0b2f68b38383fda62ec91aa8fc4e2689`.
+- Disinkronkan: supplier receipt, package/base-unit conversion, idempotent inventory quantity/value, moving-average ingredient cost, persistence v2 dan Admin responsive evidence.
+- Delivery sumber: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/activation/business readiness tidak berubah. Readiness tetap sekitar 60/100; Waves 1–8 PARTIAL dan Wave 9 deferred.
+- File: SagaOPS product/dossier/changelog, portfolio changelog, master knowledge, root changelog dan sync status. Tidak ada keputusan founder/pricing baru; tidak ada secret, PII, payload transaksi mentah atau identifier/path privat.
+- Terbuka: input bisnis nyata, sale consumption, count/waste/adjustment, actual-versus-theoretical, modifier/packaging, PO/partial receiving, approved offsite recovery dan operational UAT.
 
 ## 2026-09-06 - SagaWork konfirmasi catatan staf: native tervalidasi
 

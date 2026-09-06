@@ -8,6 +8,13 @@
 - Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce diperiksa ulang tetap `711ef77`, aktif/HTTP200. Source commit lokal tanpa remote. Task POS menyetujui provider-only dan menyatakan belum ada transport joint baru; dirty source, purchasing/stock/HPP/dashboard serta shared runtime POS tidak diubah. Validasi provider bukan joint-native, deployment, activation atau business readiness.
 - Program36 tetap PARTIAL. Next: konteks sesi kerja yang sudah melewati akhir jadwal dan capture/offline recovery; joint melalui transport diizinkan dengan exact source pair baru, encrypted offsite backup/disposable restore, config/rollback, serta owner/device/finance acceptance. Uji ini tidak mengambil foto/GPS dan tidak menggantikan uji HP nyata. DEC-191 tetap izin deploy bersyarat; performance OFF dan payroll nyata tidak diaktifkan. Tidak ada keputusan founder/pricing/positioning baru. Delapan dokumen disinkronkan tanpa data restricted.
 
+## 2026-09-06 — SagaOPS penerimaan pembelian dan moving-average HPP
+
+- Klasifikasi `CONFIRMED`; status sinkronisasi `accepted`. Exact source `1f01525c0b2f68b38383fda62ec91aa8fc4e2689` pada branch Saga POS.
+- Before: biaya ingredient hanya manual. After: Owner/Admin lokal mencatat supplier receipt dan package conversion; server memperbarui quantity/value serta moving-average base-unit cost secara idempotent, restart-safe dan terhubung ke recipe HPP tanpa menulis ulang snapshot transaksi lama.
+- Focused 28/28, full 317/317, static/type/OpenAPI 166 modul/12 migrasi, browser Admin 390/1440 Axe serious/critical 0, touch/overflow/reduced-motion PASS, dependency audit 0 dan high-confidence restricted-data scan 0. Defect fingerprint akibat property ordering PostgreSQL JSONB ditemukan oleh restart test, assertion dipertahankan dan canonical serialization memperbaikinya.
+- Produk/area: SagaOPS purchasing, inventory valuation, HPP dan Owner/Admin. File knowledge: product, dossier, product/portfolio/root changelog, master dan sync status. Tidak ada perubahan pricing, founder decision atau produk lain.
+- Production berubah: tidak. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; protected preview dan private runtime tidak diperbarui. Readiness tetap sekitar 60/100; Waves 1–8 masih PARTIAL, Wave 9 deferred. Actual HPP, consumption, count/waste/adjustment, modifier/packaging dan PO lifecycle tetap blocker berikutnya.
 
 ## 2026-09-06 - SagaWork konfirmasi catatan staf: native tervalidasi
 

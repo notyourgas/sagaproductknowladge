@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-06 — Penerimaan pembelian dan moving-average HPP
+
+- Klasifikasi `CONFIRMED`; source `1f01525c0b2f68b38383fda62ec91aa8fc4e2689` pada branch Saga POS. Scope hanya Kopi Saga F&B dan status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Owner/Admin kini dapat mencatat penerimaan supplier per bahan dengan kuantitas kemasan, konversi ke gram/ml/pcs dan total biaya. Server memperbarui saldo kuantitas/nilai serta moving-average biaya satuan secara idempotent; recipe HPP memakai biaya tersebut tanpa menulis ulang snapshot transaksi lama.
+- Persistence HPP v2 pulih setelah restart dan memverifikasi ulang fingerprint kanonik, total, konversi, waktu serta alasan. Base unit dan biaya purchase-managed tidak dapat diedit diam-diam setelah receipt.
+- Validasi: focused 28/28, full regression 317/317, static/type/OpenAPI 166 modul/12 migrasi, Admin 390/1440px dengan Axe serious/critical 0, touch minimal 44px, tanpa overflow, audit dependency 0 dan scan restricted-data 0.
+- Ini masih HPP teoretis. Data bisnis nyata, sale consumption, stock count/waste/adjustment, modifier/packaging, PO/partial receiving dan actual-versus-theoretical belum selesai. Readiness tetap sekitar 60/100; Waves 1–8 tetap PARTIAL dan Wave 9 deferred.
+
 ## 2026-09-06 — Dashboard Owner dan KDS protected review
 
 - Klasifikasi `CONFIRMED`; exact application source `c10167e4d54afd3977864fa9b9d43a78c4510066`, release record `fa712247cb57d456e2da5b1b5270becb58c09bfc`, dan Vercel deployment `dpl_9D2YNBVHsB8yEgXc2JArAS3nDRW9` berstatus Ready.

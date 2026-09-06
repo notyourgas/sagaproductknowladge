@@ -8,6 +8,11 @@
 - Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce diperiksa ulang tetap `711ef77`, aktif/HTTP200. Source commit lokal tanpa remote. Task POS menyetujui provider-only dan menyatakan belum ada transport joint baru; dirty source, purchasing/stock/HPP/dashboard serta shared runtime POS tidak diubah. Validasi provider bukan joint-native, deployment, activation atau business readiness.
 - Program36 tetap PARTIAL. Next: konteks sesi kerja yang sudah melewati akhir jadwal dan capture/offline recovery; joint melalui transport diizinkan dengan exact source pair baru, encrypted offsite backup/disposable restore, config/rollback, serta owner/device/finance acceptance. Uji ini tidak mengambil foto/GPS dan tidak menggantikan uji HP nyata. DEC-191 tetap izin deploy bersyarat; performance OFF dan payroll nyata tidak diaktifkan. Tidak ada keputusan founder/pricing/positioning baru. Delapan dokumen disinkronkan tanpa data restricted.
 
+## 2026-09-06 — SagaOPS purchasing ke moving-average HPP
+
+- `CONFIRMED`; source `1f01525c0b2f68b38383fda62ec91aa8fc4e2689`. Owner/Admin lokal dapat menerima bahan berdasarkan supplier/kemasan, mengonversi ke gram/ml/pcs dan memperbarui saldo quantity/value plus moving-average unit cost secara idempotent. Recipe HPP menggunakan biaya itu dan snapshot transaksi lama tidak berubah.
+- State HPP v2 restart-safe dan fail-closed terhadap fingerprint/total/conversion/metadata yang korup. Validasi final: focused 28/28, full 317/317, check 166 modul/12 migrasi, Admin 390/1440 Axe/touch/overflow/reduced-motion, dependency dan restricted-data scan 0.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bukan actual HPP, production activation atau business ready. Sale consumption, count/waste/adjustment, actual variance, modifier/packaging dan PO lifecycle masih terbuka. Readiness tetap sekitar 60/100; Waves 1–8 PARTIAL dan Wave 9 deferred.
 
 ## 2026-09-06 - SagaWork konfirmasi catatan staf: native tervalidasi
 
