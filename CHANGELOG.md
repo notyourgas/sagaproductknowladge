@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 — SagaOPS hosted operator link audit
+
+`NEEDS CONFIRMATION`; read-only Vercel audit setelah source `916bac28dd994966b607d629aebbd6741524419f` dipush menemukan project operator masih memiliki deployment immutable berstatus `Ready` dan anonymous request ke deployment ditantang HTTP 302, tetapi alias project `/dashboard` memberi HTTP 404 `DEPLOYMENT_NOT_FOUND`. Fitur theoretical usage tetap `IMPLEMENTED_NOT_DEPLOYED`; tidak ada redeploy otomatis. Jangan membagikan alias sebagai usable Dashboard/KDS sampai exact-source release, protection, alias, rollback dan smoke diverifikasi melalui gate terpisah.
+
 ## 2026-09-06 — SagaOPS pemakaian bahan teoretis
 
 `CONFIRMED`; source `916bac28dd994966b607d629aebbd6741524419f` pushed. Owner Dashboard mengubah snapshot resep immutable dan menu `PAID/COMPLETED` menjadi quantity/cost bahan per tanggal WIB, coverage tertimbang, sumber menu, alert resep parsial dan CSV owner-only. Subset terverifikasi tidak menjadi total; actual usage tetap memerlukan stock count pembuka/penutup. Full 330/330, static/type/OpenAPI 169/12, durable/browser 390/1440, Axe/overflow/touch-scroll, dependency0 dan secret heuristic0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves 1–8 PARTIAL, Wave 9 deferred, production/payment/activation tidak berubah.

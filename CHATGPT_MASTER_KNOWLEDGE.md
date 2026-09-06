@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — SagaOPS hosted operator link audit
+
+`NEEDS CONFIRMATION`; read-only Vercel audit setelah source `916bac28dd994966b607d629aebbd6741524419f` dipush menemukan project operator masih memiliki deployment immutable berstatus `Ready` dan anonymous request ke deployment ditantang HTTP 302, tetapi alias project `/dashboard` memberi HTTP 404 `DEPLOYMENT_NOT_FOUND`. Fitur theoretical usage tetap `IMPLEMENTED_NOT_DEPLOYED`; tidak ada redeploy otomatis. Jangan membagikan alias sebagai usable Dashboard/KDS sampai exact-source release, protection, alias, rollback dan smoke diverifikasi melalui gate terpisah.
+
 ## 2026-09-06 — Theoretical ingredient usage projection
 
 `CONFIRMED` dari source `916bac28dd994966b607d629aebbd6741524419f`. Projection owner-only memakai order `PAID/COMPLETED`, business date WIB dan immutable recipe line snapshot. Per bahan, server menghitung recipe base quantity × sold quantity serta snapshot line cost × sold quantity; pending, refunded dan tanggal lain dikecualikan.

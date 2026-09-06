@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 — SagaOPS hosted operator link audit
+
+`NEEDS CONFIRMATION`; read-only Vercel audit setelah source `916bac28dd994966b607d629aebbd6741524419f` dipush menemukan project operator masih memiliki deployment immutable berstatus `Ready` dan anonymous request ke deployment ditantang HTTP 302, tetapi alias project `/dashboard` memberi HTTP 404 `DEPLOYMENT_NOT_FOUND`. Fitur theoretical usage tetap `IMPLEMENTED_NOT_DEPLOYED`; tidak ada redeploy otomatis. Jangan membagikan alias sebagai usable Dashboard/KDS sampai exact-source release, protection, alias, rollback dan smoke diverifikasi melalui gate terpisah.
+
 ## 2026-09-06 — SagaOPS gap setelah theoretical ingredient usage
 
 - `CONFIRMED`: source `916bac28dd994966b607d629aebbd6741524419f` menutup gap read-only untuk pemakaian bahan menurut resep dari menu paid, coverage parsial, alert owner dan export.
