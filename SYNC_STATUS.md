@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaWork Staff lifecycle recovery
+
+- Status: `accepted`; classification `CONFIRMED` for provider-only application `b4cd282874872adff5318b8583af30b534ab8474` and evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`.
+- Scope: Staff lifecycle lost-response recovery, full807/91 and exact-source Linux/MySQL/full HTTP/Chromium acceptance. No POS/shared-runtime, API/domain/schema/grant, pricing or founder-policy change.
+- Delivery: `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / BELUM DEPLOY HR`; public `711ef77` unchanged/HTTP200. Fresh exact-pair joint-native, offsite encrypted restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS supplier dan PO internal
 
 - Status `accepted`; klasifikasi `CONFIRMED`; implementation source `88e830ef02a3de3dfa2ceaad2bde7db8594e4f1b` dan docs `8febd89b801e2dd02f181b2ee8dae8aff9f23035` pushed dan clean.

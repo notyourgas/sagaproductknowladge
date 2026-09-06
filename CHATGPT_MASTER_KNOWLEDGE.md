@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaWork Staff lifecycle recovery
+
+- `CONFIRMED`: source `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`. HR lifecycle writes (suspend/restore access, terminate, archive) are single-request and bounded; uncertain outcomes lock all People writes until reload and never render late false success. Exact target/action validation and safe expected-4xx copy are enforced.
+- Provider acceptance passed focused45/full807, lint/types/audit/contracts, Linux build and fresh disposable MySQL/full HTTP/Chromium, including held genuine suspend200, one transition/audit, target-session revocation and invariance. No API/domain/schema/grant/POS/shared-runtime change.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains HTTP200. Fresh exact-pair POS joint-native, encrypted offsite backup/restore, config/rollback and owner/device/finance gates remain; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS supplier dan PO internal
 
 - `CONFIRMED`; source `88e830ef02a3de3dfa2ceaad2bde7db8594e4f1b`, docs `8febd89b801e2dd02f181b2ee8dae8aff9f23035`. Owner Admin dapat mengelola supplier dan membuat internal `OPEN` purchase order dengan expected date, kemasan/konversi, kuantitas dan cost snapshot.

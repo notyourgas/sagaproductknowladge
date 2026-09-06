@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Staff lifecycle lost-response recovery
+
+- `CONFIRMED`; application `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`. The People UI sends exactly one suspend/restore/terminate/archive POST with a 12-second fetch and body deadline, same-origin/no-store/redirect rejection, exact selected Employee ID and action-consistent status validation. Expected allowlisted 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain. Raw server text is not rendered.
+- An uncertain lifecycle result clears prior one-time credentials and locks all People writes until full reload. Hide/pagehide/unmount and late completion cannot claim success; domain maker-checker blockers remain authoritative. Focused45/full807, lint/types/audit/contracts, exact-source Linux build and fresh MySQL/full HTTP/compiled Chromium passed, including one transition/audit, target session revocation and related invariants.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. No API/domain/schema/grant/POS/shared-runtime change. Public `711ef77` is unchanged; fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance acceptance remain open. Performance and real payroll/payment remain OFF.
+
 ## 2026-09-07 — Staff draft creation recovery
 
 - `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness-only correction `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. One POST/no retry, 12-second fetch+body deadline, same-origin/no-store/redirect rejection and exact minimal 201 DTO now protect Staff draft creation. Expected 4xx is definite; network/timeout/5xx/redirect/malformed success is uncertain and locks all People writes until reload. No API/domain/schema/grant/import/credential/lifecycle/assignment change.

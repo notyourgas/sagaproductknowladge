@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Staff lifecycle lost-response recovery
+
+- `CONFIRMED`; application `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`. Suspend/restore access, terminate and archive now use one bounded request, exact employee/action validation and a full People write lock when the result is uncertain. No automatic retry or late false success; HR reloads and checks Staff status plus active sessions first.
+- Focused45/full807 tests in91 files, lint/types, dependency audit0, contracts/OpenAPI87 paths/106 operations, crypto/release checks, exact-source Linux build and fresh disposable MySQL/full HTTP/Chromium passed. Native proved a genuine held suspend200, exactly one transition/audit, target-session revocation, target password/status and unrelated employee/account/session invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains HTTP200. POS active work was untouched and no fresh exact-pair joint candidate exists. Encrypted offsite backup/restore, config/rollback and owner/device/finance gates remain open; Performance and real payroll/payment remain OFF.
+
 ## 2026-09-07 — Staff draft creation recovery
 
 - `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. HR create Staff draft now uses one bounded request, strict 201 validation and a full People write lock when the outcome is uncertain. Late responses cannot claim success or create a second request; HR reloads and searches the submitted Employee ID before acting again.

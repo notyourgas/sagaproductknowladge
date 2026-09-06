@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Staff lifecycle lost-response recovery
+
+- `CONFIRMED`; source `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`.
+- HR lifecycle actions are now single-request and bounded, with exact target/action success validation, definite safe 4xx handling and a full People write lock on uncertain outcomes until reload. Late responses cannot claim success; prior one-time credentials clear before action.
+- Focused45/full807, lint/types, audit/contracts, Linux build and fresh disposable MySQL/full HTTP/Chromium passed with genuine held suspend200, one transition/audit, target-session revocation, invariance, mobile390/Axe and zero unexpected mutations/device/page errors.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS/shared runtime untouched. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff draft creation recovery
 
 - `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. HR Staff draft create now fails safe on lost/ambiguous responses, prevents duplicate submits and late success, locks all People writes, then recovers by reload and Employee ID search.

@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork Staff lifecycle recovery
+
+- `CONFIRMED`; application `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`. HR suspend/restore/terminate/archive now fail safely on lost or late responses through one bounded request, exact result validation and reload-only People write recovery. Full807/91 plus exact-source Linux/MySQL/HTTP/Chromium acceptance passed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment are unchanged. Joint/offsite restore/release and owner/device/finance gates remain.
+
 ## 2026-09-07 — SagaOPS supplier dan PO planning sync
 
 - `CONFIRMED`: source `88e830ef02a3de3dfa2ceaad2bde7db8594e4f1b` menambah supplier master dan internal OPEN PO tanpa external send atau stock mutation.

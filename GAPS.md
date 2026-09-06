@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — SagaWork after Staff lifecycle recovery
+
+- `CONFIRMED`: lost/late-response safety for HR suspend/restore access, terminate and archive is closed at provider source `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`; one-shot uncertainty/reload behavior passed full and native acceptance.
+- `NEEDS CONFIRMATION`: fresh exact-pair SagaPOS joint-native candidate and allowed transport, encrypted offsite backup plus disposable restore, exact config/rollback, and real-device/owner/finance UAT. Active POS dashboard work is separate and untouched.
+- `NEEDS CONFIRMATION`: complete production payroll policy/facts and payment activation. Public `711ef77` remains unchanged; Performance and real payroll/payment stay OFF. Provider acceptance is not deployment, activation or business readiness.
+
 ## 2026-09-07 — SagaWork Staff draft creation recovery
 
 - `CONFIRMED`: lost/late response gap for a single HR-created Staff draft is closed at application `de9427ed766c50bbe342731cefd312c407110650`; evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. One request, strict201, full People write lock, reload+Employee-ID recovery and no late success passed provider-native acceptance.
