@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 — SagaOPS full inventory count atomik
+
+- Status sinkronisasi `accepted`; klasifikasi `CONFIRMED`; source final `87e878f06d383fc851684cdc171744d1abf691cb` terverifikasi pushed dan clean.
+- Disinkronkan: owner-only exact-coverage full count, blank physical inputs, review/confirm, idempotent atomic movements, detail audit, restart integrity dan injected Postgres rollback.
+- Evidence local: focused 29/29, full 332/332 bounded concurrency, static/type/OpenAPI169/12, responsive Admin plus Axe/touch/keyboard/overflow/reduced-motion, dependency0 dan added-line secret heuristic0.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Readiness sekitar 60/100, Waves 1–8 PARTIAL, Wave 9 deferred. Actual HPP/variance, sale consumption, maker-checker, transfer, business inputs dan offsite restore tetap terbuka.
+
 ## 2026-09-06 — SagaWork same-day emergency attendance completion
 
 - **CONFIRMED** from source and current isolated acceptance: application `9fa3527d2082907b1c9ca17cfd2fd9d3ed4a0dbc`, diagnostic-only `4bc87d6e3b39c79c7615766b153b38d2ead9ed62`, evidence `8bc9bc2`. Before: completed same-day emergency session could return capture fallback; after: read-only completion for the selected eligible location's local business date, without implying HR/payroll approval. Staff can still select a legitimately different local date; no automatic location movement.

@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-06 — Full inventory count atomik dan restart-safe
+
+- `CONFIRMED`; exact source `87e878f06d383fc851684cdc171744d1abf691cb` menambah owner-only full count untuk semua managed ingredients, blank physical inputs, explicit review/confirm, idempotency, optimistic versioning, linked movements dan detail audit per bahan.
+- Before: individual cycle count tidak dapat membuktikan inventaris lokasi lengkap. After: sesi `COMPLETED` menjadi evidence coverage yang tervalidasi, dengan rollback memory/Postgres bila commit gagal dan corruption/orphan/replay conflict yang fail-closed.
+- PASS: focused 29/29, full 332/332 bounded concurrency, static/type/OpenAPI 169/12, Admin 390/1440 Axe/touch/keyboard/overflow/reduced-motion, dependency0 dan added-line secret heuristic0.
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100. Actual period HPP/variance, sale consumption, maker-checker correction/reversal, warehouse transfer, real inputs, offsite recovery dan Wave 9 tetap terbuka; production/payment/activation tidak berubah.
+
 ## 2026-09-06 — SagaOPS hosted operator link audit
 
 `NEEDS CONFIRMATION`; read-only Vercel audit setelah source `916bac28dd994966b607d629aebbd6741524419f` dipush menemukan project operator masih memiliki deployment immutable berstatus `Ready` dan anonymous request ke deployment ditantang HTTP 302, tetapi alias project `/dashboard` memberi HTTP 404 `DEPLOYMENT_NOT_FOUND`. Fitur theoretical usage tetap `IMPLEMENTED_NOT_DEPLOYED`; tidak ada redeploy otomatis. Jangan membagikan alias sebagai usable Dashboard/KDS sampai exact-source release, protection, alias, rollback dan smoke diverifikasi melalui gate terpisah.

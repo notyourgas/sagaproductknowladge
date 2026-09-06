@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-06 — Full inventory count atomik
+
+- Klasifikasi `CONFIRMED`; source final `87e878f06d383fc851684cdc171744d1abf691cb` pada branch Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Owner Admin kini memiliki full-count terpisah dari cycle count: seluruh bahan dengan saldo terkelola wajib diisi dari hasil fisik yang sengaja tidak diprefill, lalu direview dan dikonfirmasi. Sesi selesai menyimpan coverage, before/after, delta nilai, actor, alasan, waktu, dan movement terhubung.
+- Domain menolak bahan hilang/duplikat, payload berubah pada idempotency key yang sama, version conflict, orphan movement, urutan sesi rusak, dan state tampered. Satu kegagalan commit Postgres membatalkan memory dan database bersama; retry bersih menghasilkan satu sesi.
+- Evidence exact source: focused domain/browser/durable 29/29, full regression 332/332 concurrency 2, static/type/OpenAPI 169 modul/12 migrasi, Admin 390/1440 reduced-motion dengan Axe serious/critical 0, touch target/keyboard/overflow dan visual review lulus; dependency production 0 dan added-line secret heuristic 0.
+- Full count menjadi calon anchor pembuka/penutup, bukan laporan actual HPP. Actual-vs-theoretical, sale consumption, maker-checker correction/reversal, transfer gudang, data bisnis nyata, offsite restore dan Wave 9 tetap terbuka. Readiness sekitar 60/100; production, payment, promo, payroll, activation dan business readiness tidak berubah.
+
 ## 2026-09-06 — SagaOPS hosted operator link audit
 
 `NEEDS CONFIRMATION`; read-only Vercel audit setelah source `916bac28dd994966b607d629aebbd6741524419f` dipush menemukan project operator masih memiliki deployment immutable berstatus `Ready` dan anonymous request ke deployment ditantang HTTP 302, tetapi alias project `/dashboard` memberi HTTP 404 `DEPLOYMENT_NOT_FOUND`. Fitur theoretical usage tetap `IMPLEMENTED_NOT_DEPLOYED`; tidak ada redeploy otomatis. Jangan membagikan alias sebagai usable Dashboard/KDS sampai exact-source release, protection, alias, rollback dan smoke diverifikasi melalui gate terpisah.

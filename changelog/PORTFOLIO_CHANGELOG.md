@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-06 — SagaOPS full inventory count atomik
+
+`CONFIRMED`; source `87e878f06d383fc851684cdc171744d1abf691cb` pushed. Owner Admin kini membedakan cycle count parsial dari full count seluruh managed ingredients, memakai blank physical inputs, explicit review/confirm, linked before/after/value movements, idempotency dan restore integrity. Injected Postgres failure membuktikan rollback memory/database. Focused 29/29, full 332/332, static/type/OpenAPI169/12, Admin 390/1440 Axe0/touch/keyboard/overflow/reduced-motion, dependency0 dan secret heuristic0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves 1–8 PARTIAL dan Wave 9 deferred. Actual HPP/variance, sale consumption, maker-checker, transfer, real inputs, offsite restore dan production gates tetap terbuka; payment/promo/payroll/production tidak berubah.
+
 ## 2026-09-06 — SagaWork same-day emergency attendance completion
 
 - **CONFIRMED** from source and current isolated acceptance: application `9fa3527d2082907b1c9ca17cfd2fd9d3ed4a0dbc`, diagnostic-only `4bc87d6e3b39c79c7615766b153b38d2ead9ed62`, evidence `8bc9bc2`. Before: completed same-day emergency session could return capture fallback; after: read-only completion for the selected eligible location's local business date, without implying HR/payroll approval. Staff can still select a legitimately different local date; no automatic location movement.

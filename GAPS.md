@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 — SagaOPS setelah full inventory count atomik
+
+- `CONFIRMED`: exact source `87e878f06d383fc851684cdc171744d1abf691cb` menyediakan completed full-count sessions yang exact-coverage, atomic, idempotent dan restart-safe. Kekurangan "full count tidak dapat dibedakan dari cycle count" tertutup secara lokal.
+- `NEEDS CONFIRMATION`: actual-versus-theoretical masih memerlukan dua sesi pembuka/penutup yang disetujui, batas periode WIB, purchase scope, sale-consumption truth, modifier/packaging recipe, serta correction/reversal maker-checker. Jangan menyebut full count tunggal sebagai actual HPP atau variance.
+- `NEEDS CONFIRMATION`: real ingredient balances, warehouse transfer authority, offsite encrypted backup/disposable restore, private deployment alias, monitoring, rollback dan owner/finance/device acceptance belum tersedia. Readiness tetap sekitar 60/100; Wave 9 deferred.
+
 ## 2026-09-06 — SagaWork same-day emergency attendance completion
 
 - **CONFIRMED** from source and current isolated acceptance: application `9fa3527d2082907b1c9ca17cfd2fd9d3ed4a0dbc`, diagnostic-only `4bc87d6e3b39c79c7615766b153b38d2ead9ed62`, evidence `8bc9bc2`. Before: completed same-day emergency session could return capture fallback; after: read-only completion for the selected eligible location's local business date, without implying HR/payroll approval. Staff can still select a legitimately different local date; no automatic location movement.
