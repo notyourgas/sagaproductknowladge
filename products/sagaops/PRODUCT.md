@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Technical inventory period close
+
+- `CONFIRMED`; exact source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5` dan documentation `0758959f9e27be6eb88533afa3cd28662b0f42f9` pushed. Owner Admin dapat menutup pasangan full count berurutan dengan reference/timestamp/version boundaries immutable.
+- Server mewajibkan count completed, opening lebih lama, exact ingredient coverage dan chain dari closing count periode sebelumnya. Idempotency hanya dapat replay pasangan sama; overlap/reused closing dan state tampering fail closed saat restart.
+- PASS focused44/full345, check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency dan secret scan nol. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; ini technical lock, bukan accounting close atau maker-checker acceptance. Production/payment/business readiness tidak berubah.
+
 ## 2026-09-07 — Konsumsi stok dari order paid
 
 - `CONFIRMED`; source `eb3d60bfd169f0bd7161378156662aa4380e53c7` dan release record `4e7343ec1775a18cc9ce503f535fe0cb2bb1d3fc` sudah dipush. Transisi pembayaran authoritative kini mengurangi saldo bahan dari snapshot resep immutable secara exactly-once; order pending/failed tidak memengaruhi stok.

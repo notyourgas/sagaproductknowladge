@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Sequential inventory period lock
+
+- `CONFIRMED`; source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5` menambah owner-only close untuk dua completed full counts, exact coverage, immutable event-version boundary dan restart-safe chain.
+- Periode berikutnya wajib dimulai dari closing count terakhir; overlap, reused closing, reversed count, altered fingerprint/linkage dan idempotency drift ditolak.
+- PASS focused44/full345, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency0 dan secret0.
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; independent approval/reopen, maker-checker, real opening data, relational normalization dan operational UAT tetap terbuka.
+
 ## 2026-09-07 — Paid order mengonsumsi inventory secara exactly-once
 
 - `CONFIRMED`; source `eb3d60bfd169f0bd7161378156662aa4380e53c7` menghubungkan seluruh paid transition authoritative ke snapshot resep immutable dan mengurangi saldo bahan secara idempotent. Pending/failed payment tetap stock-neutral.
