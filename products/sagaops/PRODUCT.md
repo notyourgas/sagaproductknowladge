@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — Pemilihan periode inventory historis
 
-- `CONFIRMED`; exact source `a56fbfea5ee1b6bfc864581911806ce43124614e` sudah dipush. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100.
+- `CONFIRMED`; exact source `a0973f298f2181f5439f2b7b587d27d1f66b5e56` sudah dipush. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100.
 - Owner Dashboard dapat memilih pasangan full count pembuka dan penutup yang sudah `COMPLETED`, mempertahankan pasangan saat polling, mengekspor CSV untuk periode yang sama, dan kembali ke dua count terbaru.
 - API mewajibkan kedua referensi bersama, membatasi format/ukuran, menolak unknown atau closing yang tidak lebih baru dengan safe `422`, serta tetap owner-only/no-store. Tidak ada free-form inventory date, mutation stok, perubahan payment, dependency atau migrasi.
 - Evidence: focused 30/30, full regression 338/338, static/type/OpenAPI 172 modul/12 migrasi, Chromium 390/1440 Axe serious/critical 0, touch/keyboard/overflow/reduced-motion, dependency0 dan added-line secret scan0. Explicit period close/approval lock, modifier/packaging/prep, maker-checker, real data, offsite restore dan Wave 9 tetap terbuka.

@@ -2,9 +2,9 @@
 
 ## 2026-09-06 — SagaOPS historical inventory-period selector
 
-- Status `accepted`; klasifikasi `CONFIRMED`; source `a56fbfea5ee1b6bfc864581911806ce43124614e` pushed dan clean.
+- Status `accepted`; klasifikasi `CONFIRMED`; source final `a0973f298f2181f5439f2b7b587d27d1f66b5e56` pushed dan clean.
 - Disinkronkan: completed opening/closing selector, polling persistence, exact-period owner CSV, latest reset dan fail-closed pair validation.
-- Evidence: focused30/30, full338/338, static/type/OpenAPI172/12, Chromium390/1440 Axe0/touch/keyboard/overflow/reduced-motion, dependency0 dan secret scan0.
+- Evidence: focused30/30 plus hardening14/14, final full338/338, static/type/OpenAPI172/12, Chromium390/1440 Axe0/touch/keyboard/overflow/reduced-motion, dependency0 dan secret scan0.
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada deploy, activation, payment, promo atau payroll nyata. Readiness sekitar 60/100; Waves 1–8 PARTIAL, Wave 9 deferred.
 - Terbuka: closing approval lock, modifier/packaging/prep, maker-checker, real data, private release, offsite restore dan operational UAT. Tidak ada data restricted atau keputusan founder/pricing baru.
 

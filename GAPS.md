@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS setelah historical inventory-period selector
 
-- `CONFIRMED`: gap arbitrary historical completed count-pair selection tertutup secara lokal pada source `a56fbfea5ee1b6bfc864581911806ce43124614e`, termasuk selection-stable polling, exact-pair CSV, reset-to-latest dan safe validation.
+- `CONFIRMED`: gap arbitrary historical completed count-pair selection tertutup secara lokal pada source `a0973f298f2181f5439f2b7b587d27d1f66b5e56`, termasuk invalid-closing prevention, selection-stable polling, exact-pair CSV, reset-to-latest dan safe server validation.
 - `NEEDS CONFIRMATION`: pasangan report belum memiliki explicit period close/approval lock atau signed finance acknowledgement. Modifier, packaging, prep/yield dan maker-checker correction/reversal belum lengkap.
 - `NEEDS CONFIRMATION`: real inventory facts, private deployment, encrypted offsite backup/disposable restore, monitoring, rollback, device/finance UAT dan Wave 9 belum tersedia. Readiness tetap sekitar 60/100; historical local report bukan actual HPP production atau business readiness.
 

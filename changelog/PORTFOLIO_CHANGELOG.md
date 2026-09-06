@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS historical inventory-period selector
 
-`CONFIRMED`; source `a56fbfea5ee1b6bfc864581911806ce43124614e` pushed. Owner Dashboard kini memilih completed full-count opening/closing anchors, mempertahankan pair saat polling, mengekspor exact visible period dan reset ke latest. Missing/malformed/unknown/reversed pairs fail-closed safe422; owner-only/no-store, stock/payment immutability dan CSV safety tetap. Focused30/30, full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0 dan security scans PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves 1–8 PARTIAL, Wave 9 deferred. Closing approval lock, modifier/packaging/prep, maker-checker, real data, offsite restore dan production gates terbuka.
+`CONFIRMED`; source `a0973f298f2181f5439f2b7b587d27d1f66b5e56` pushed. Owner Dashboard kini memilih completed full-count opening/closing anchors, mencegah closing yang tidak lebih baru sebelum submit, mempertahankan pair saat polling, mengekspor exact visible period dan reset ke latest. Missing/malformed/unknown/reversed pairs tetap fail-closed safe422; owner-only/no-store, stock/payment immutability dan CSV safety tetap. Focused30/30 plus hardening14/14, final full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0 dan security scans PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves 1–8 PARTIAL, Wave 9 deferred. Closing approval lock, modifier/packaging/prep, maker-checker, real data, offsite restore dan production gates terbuka.
 
 ## 2026-09-06 — SagaWork partial-leave reconciliation safety gate
 
