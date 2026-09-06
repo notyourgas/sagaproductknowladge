@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Owner Dashboard modular dan protected preview
+
+- `CONFIRMED`; exact implementation source `96ca11a9006269fcafd906a2aa0b67d57789aa14` sudah dipush. Owner Dashboard berubah dari satu halaman editorial panjang menjadi application shell responsif dengan sidebar/drawer dan 12 deep-linked modules: overview, sales, orders, catalog, inventory/HPP, purchasing, finance, workforce, member, integrations, reports, dan settings.
+- Modul yang memiliki fakta server menampilkan KPI, alert, queue, hourly sales, paid orders, payment, financial reconciliation, theoretical usage, full-count variance dan CSV. Purchasing/Workforce/Member menyebutkan gap backend/provider secara eksplisit dan tidak mengarang PO/AP, payroll, promo, atau customer analytics.
+- Polling live hanya pada overview; module historis/form memakai refresh manual agar focus, disclosure, selected count dan scroll stabil. Dashboard tetap read-only dan Admin tetap mutation surface owner-only.
+- PASS static/type 173 modules/OpenAPI3.1/12 migrations, focused browser, final serial regression340/340, seluruh 12 module pada 390/1440 Axe serious-critical0 dan page overflow0, dependency0 serta changed-file secret heuristic0. Protected operator Vercel preview refreshed dan anonymous access tetap ditantang Vercel Authentication.
+- Delivery `LOCAL_VALIDATED / PROTECTED_OPERATOR_PREVIEW_DEPLOYED`; bukan production activation atau business readiness. Overall readiness tidak dinaikkan dari preview; PO/AP, expense/P&L, Customer Platform, HR production acceptance, durable production DB, offsite restore, hardware, domain, monitoring dan payment activation tetap terbuka.
+
 ## 2026-09-06 — Jejak bukti variance bahan
 
 - `CONFIRMED`; exact source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d` sudah dipush. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100. Disclosure evidence bertahan saat polling, mendukung keyboard/touch, dan dibersihkan saat logout.

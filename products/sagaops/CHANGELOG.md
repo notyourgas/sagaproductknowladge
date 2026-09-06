@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Owner Dashboard menjadi aplikasi modular
+
+- `CONFIRMED`; source `96ca11a9006269fcafd906a2aa0b67d57789aa14` mengganti one-page editorial dashboard menjadi sidebar/drawer application shell dengan 12 deep-linked modules dan compact responsive hierarchy.
+- Existing server facts dipisahkan ke Overview, Sales, Orders, Finance, Inventory/HPP, Reports dan Integrations. Catalog/Settings menuju Admin; Workforce/Member/Purchasing menampilkan integration readiness dan gap tanpa data dummy atau readiness palsu.
+- Polling live hanya di Overview; report/inventory modules memakai manual refresh. Role/payment/inventory authority tidak berubah.
+- PASS static/type173/OpenAPI3.1/migrations12, focused browser, serial full340/340, all-module 390/1440 Axe0 dan overflow0, dependency0/secret heuristic0. Protected operator preview refreshed dan tetap Vercel-auth protected.
+- Delivery `LOCAL_VALIDATED / PROTECTED_OPERATOR_PREVIEW_DEPLOYED`; production activation/business readiness tidak berubah. PO/AP, expense/P&L, HR/Customer Platform production, database/recovery, hardware/domain/monitoring/payment gates masih terbuka.
+
 ## 2026-09-06 — Bounded receipt dan waste drilldown pada variance
 
 - `CONFIRMED`; source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d` menambah owner-only evidence projection dan progressive disclosure per ingredient untuk exact selected full-count pair, termasuk pembersihan disclosure state saat logout.

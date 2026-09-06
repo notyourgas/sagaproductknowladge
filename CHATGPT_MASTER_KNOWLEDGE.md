@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS Owner Dashboard application shell
+
+- `CONFIRMED`; source `96ca11a9006269fcafd906a2aa0b67d57789aa14`. Owner Dashboard kini merupakan aplikasi responsif dengan sidebar desktop/drawer portrait dan 12 deep-linked modules untuk overview, sales, orders, catalog, inventory/HPP, purchasing, finance, workforce, member, integrations, reports dan settings.
+- Hanya fakta server yang ditampilkan sebagai operasional: sales/order/AOV, queue, payment, top products, finance reconciliation, theoretical usage, receipt/waste, full-count variance/evidence dan CSV. Missing PO/AP, expense/P&L, promo, Customer Platform analytics dan HR production dipresentasikan sebagai gap, bukan capability selesai.
+- Polling live hanya pada Overview; module dengan form/selection/disclosure memakai manual refresh. Admin tetap owner-only mutation surface; dashboard read-only dan payment truth tidak berubah.
+- Validation static/type173/OpenAPI3.1/migrations12, focused browser, serial full340/340, all modules 390/1440 Axe serious-critical0/page overflow0, dependency0/secret heuristic0. Protected Vercel operator preview refreshed; anonymous Dashboard/KDS ditantang authentication. Status `LOCAL_VALIDATED / PROTECTED_OPERATOR_PREVIEW_DEPLOYED`, bukan production activation/business-ready; readiness keseluruhan tetap sekitar60/100.
+
 ## 2026-09-06 — SagaWork Staff credential issuance recovery
 
 - `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. HR can safely recover when initial Staff credential creation or reset completes server-side but the browser loses the response: exactly one request, no automatic retry or late password, all People writes locked until reload, then explicit reset when needed. One-time secrets clear on close/hide.

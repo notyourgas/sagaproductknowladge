@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS Owner Dashboard modular protected preview
+
+`CONFIRMED`; exact source `96ca11a9006269fcafd906a2aa0b67d57789aa14` pushed. Saga POS Owner Dashboard berubah dari satu halaman editorial panjang menjadi responsive application shell dengan sidebar/drawer dan 12 module berbasis pekerjaan F&B. Existing server facts tetap authoritative; Overview polling live, sedangkan finance/report/inventory memakai explicit refresh untuk stabilitas focus dan selection. Purchasing, workforce dan member menyatakan gap dengan jujur tanpa PO/AP, payroll, promo atau customer analytics dummy. Static/type173/OpenAPI3.1/migrations12, focused browser, serial full340/340, all-module 390/1440 Axe0/overflow0, dependency0 dan secret heuristic0 PASS. Protected operator preview refreshed dan anonymous access 302 ke Vercel Authentication. `LOCAL_VALIDATED / PROTECTED_OPERATOR_PREVIEW_DEPLOYED`; bukan production activation/business-ready dan tidak mengubah produk lain.
+
 ## 2026-09-06 — SagaWork Staff credential issuance recovery
 
 `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. HR Staff credential create/reset now uses one bounded request, strict success validation, uncertainty lock and reload/reset recovery; one-time secrets cannot appear late and clear on close/hide. Focused26/full747, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium passed; native verified genuine held create201, hash/audit/session/account invariants and preserved mobile390/Axe. `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, verified encrypted offsite restore, release/rollback and owner/device/finance gates remain; no POS/shared-runtime, Performance or real payroll/payment change.

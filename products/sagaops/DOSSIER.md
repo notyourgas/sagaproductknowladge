@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-07 — Conventional Owner Dashboard application shell
+
+`CONFIRMED` dari source `96ca11a9006269fcafd906a2aa0b67d57789aa14`. Benchmark resmi ESB POSLite menunjukkan dashboard F&B perlu memisahkan sales, transaction, inventory, bookkeeping, attendance, promo, access dan integration jobs. Saga menerapkan information architecture tersebut tanpa menyalin UI/aset vendor dan tanpa menambah dependency: sticky sidebar desktop, drawer portrait, compact topbar, 12 fragment routes, active navigation, code-native hourly bars, date toolbar, internal table scroll dan public-safe integration status.
+
+Data-backed modules memakai owner state yang sudah ada: sales/order/AOV, payment breakdown, queue, top products, finance reconciliation, theoretical recipe usage, purchase/waste totals, full-count variance/evidence dan protected CSV. Catalog/settings membuka Admin owner-only; workforce membuka HR/Staff/Cashier boundaries. Purchasing menyatakan supplier master/PO/approval/partial delivery/invoice/AP belum ada. Member menyatakan Customer Platform/segmentation/retention/promo personalization belum terhubung; tidak ada dummy analytics atau PII.
+
+Polling dua detik dibatasi ke Overview. Finance, reports dan inventory memakai explicit refresh agar form focus, selected count, disclosure dan scroll tidak hilang. Browser acceptance melintasi semua modules pada 390×844 dan 1440×900, plus dashboard 1024×768: Axe serious/critical0, page overflow0, deep-link/aria-current/44px controls, report/HPP/variance regressions PASS. Static/type173/OpenAPI3.1/migrations12, serial full340/340, dependency0 dan secret heuristic0. Protected preview `READY` dan anonymous Dashboard/KDS 302 ke Vercel Authentication. Delivery bukan durable production, activation atau business-ready; readiness keseluruhan tetap sekitar 60/100 sampai external/data/device/recovery gates selesai.
+
 ## 2026-09-06 — Inventory variance evidence projection
 
 `CONFIRMED` dari source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d`. Before: aggregate purchase dan waste sudah muncul pada variance tetapi Owner harus mencari receipt/movement sumber secara manual. After: read model per ingredient membawa complete counts dan newest receipt/waste facts untuk exact completed-count pair; UI progressive disclosure menyajikan timestamp WIB, supplier atau deduction type, reason, quantity, value dan short reference tanpa meninggalkan report. Disclosure bertahan saat polling tetapi dibersihkan saat logout agar state UI tidak berpindah sesi.
