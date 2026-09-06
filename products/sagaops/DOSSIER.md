@@ -1,6 +1,15 @@
 # SagaOPS Dossier
 
 
+## 2026-09-06 — SagaOPS pemulihan portal staf lintas browser
+
+- CONFIRMED; source `03d234468013724bee7e9a9c6cec186cda973f64` pushed, berdasarkan source/tests dan laporan `docs/HRPOS_STAFF_LIFECYCLE_RECOVERY_2026-09-06.md`. Before: jadwal dapat tertahan saat kembali ke halaman dan refresh bersaing dengan logout. After: baca lama dibatalkan, foreground membaca ulang, logout mengunci baca sampai konfirmasi, timeout body pulih dengan retry eksplisit, dan fokus keyboard menuju tindakan yang tepat. Tidak ada retry mutasi otomatis atau klaim logout sukses dari timeout.
+- Validasi: Chromium full regression 298/298; WebKit focused 13/13 pada 390/1440px, termasuk real history return, streamed-body recovery dan logout ambigu; Axe/overflow/keyboard, static/type dan dependency audit zero PASS. Empat baseline race tests serta failure streaming WebKit direproduksi sebelum perbaikan. Binary WebKit dipakai untuk QA lokal, bukan Safari/iPhone fisik dan bukan dependency aplikasi baru.
+- Delivery: LOCAL_VALIDATED, belum deployment/activation operasional atau native joint acceptance. POS operasional tetap aktif pada `a9d500722f3451aaf6f792f247c3fe5328b3b7ce`; public Kiosk HTTP 200, private staff route HTTP 404. Tidak ada tunnel retry, fixture/runtime baru, perubahan provider/izin/allowlist/database, pembayaran atau payroll activation.
+- Blocker/next: provider `staff.requests.list/get` masih contract-pending, bukan 69 operasi terintegrasi. Terima handoff implementasi/DTO/native evidence, baru kerjakan BFF/UI own-only; joint acceptance memerlukan jalur uji yang diizinkan dan pasangan baru. Customer Platform/offsite backup dan Wave 9 tetap terbuka/deferred. Tidak ada kenaikan readiness dari perbaikan lokal; historical native database evidence tetap terikat ke pasangan lamanya.
+
+
+
 ## 2026-09-06 — SagaOPS fresh M2 acceptance guard
 
 - CONFIRMED; implementation candidate `3885c845a919d87ef7fc247d5472b446caf8c0b0`, evidence/docs closure `ba8d626b129a5437225f2ee1ca6e9ec9e465dcd5`, source pushed. Before: a fixed historical M2 test database/unit. After: explicit per-run isolation and immutable handoff binding; retained acceptance evidence cannot be silently retargeted. This closes test-infrastructure risk, not a new HR business feature.
