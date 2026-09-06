@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-06 — SagaOPS owner recipe dan HPP authoring guard
+
+- Klasifikasi `CONFIRMED`; source implementasi `ca945a539a36231066b0be7b3c4696d9f62b5ba3`, dokumentasi `f90f8f75a13e78e3bb2b8cef3de36ef6df89f32c`, pushed pada branch Saga POS. Scope hanya F&B Kopi Saga; bukti dari source, test dan laporan HPP kanonik.
+- Before: snapshot biaya telah aman tetapi katalog aktif belum memiliki workflow untuk mengisi bahan/resep atau menahan minuman yang belum lengkap. After: Owner Admin memiliki empat tahap untuk master bahan dalam gram/ml/pcs, komponen resep, audit HPP/margin/harga saran per menu, dan gate completeness minuman yang diaktifkan terpisah. Biaya kosong tetap `INCOMPLETE`, bukan Rp0.
+- Mutasi owner membutuhkan CSRF, reason dan expected version; state disimpan per organisasi/outlet dengan PostgreSQL CAS, RLS serta audit. Snapshot checkout tetap immutable. Gate hanya dapat aktif ketika semua minuman aktif lengkap dan setelah aktif menolak perubahan atau checkout yang merusak coverage. Tidak ada biaya supplier/resep bisnis yang dikarang.
+- Validasi lokal: focused domain/durable/finance 25/25, browser terkait 5/5, full regression 312/312, static/type/OpenAPI 163 modul/12 migrasi, Owner 390/1440px dengan Axe serious/critical 0, touch target minimal 44px dan tanpa overflow; dependency audit serta scan credential/private-key 0. Regresi scroll keyboard ditemukan oleh full suite, diperbaiki, lalu assertion asli tetap hijau.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, payment dan gate operasional tidak diaktifkan. Readiness estimasi tetap sekitar 60/100; Waves 1–8 masih PARTIAL dan Wave 9 deferred. Next: data recipe/cost nyata, purchase receipt plus unit conversion/moving average, stock count/waste/adjustment dan actual-versus-theoretical. Modifier/packaging serta migrasi state ke tabel master ternormalisasi masih terbuka.
+
+
 ## 2026-09-06 - SagaWork jadwal pribadi: provider native tervalidasi
 
 - Klasifikasi `CONFIRMED`; sumber task SagaWork: aplikasi/instrumentasi `4f0604ebcd94a97d46cf87deb3c01aee0a3318e5`, dokumentasi `7767591b479d405af8c8927ae6a0ed93e0767f96`. Before: portal jadwal memakai daftar generik reviewer dan bergantung pada izin swap. After: jadwal selalu milik staf sendiri termasuk dual-role HR, hanya histori published/cancelled yang pernah dipublikasi; proyeksi minimal, rentang maksimum 93 hari, maksimum 200 baris dengan pemberitahuan truncation.
