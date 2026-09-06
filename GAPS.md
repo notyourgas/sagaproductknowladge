@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS setelah variance source evidence
 
-- `CONFIRMED`: aggregate variance sekarang dapat ditelusuri ke bounded receipt dan named waste/deduction facts pada source `4152976bbb213712c37425c258070b876cb99469`; complete totals dan explicit truncation tersedia tanpa raw receipt/actor/customer/payment exposure.
+- `CONFIRMED`: aggregate variance sekarang dapat ditelusuri ke bounded receipt dan named waste/deduction facts pada source `b8fa7a76bc08bd759c44897539522615cf4b614b`; complete totals, explicit truncation, keyboard/touch access, dan logout state clearing tersedia tanpa raw receipt/actor/customer/payment exposure.
 - `NEEDS CONFIRMATION`: exact period belum memiliki close/approval lock atau signed finance acknowledgement. Correction/reversal maker-checker, server-owned sale consumption, modifier/packaging/prep yield dan PO lifecycle tetap terbuka.
 - `NEEDS CONFIRMATION`: real ingredient costs/recipes/counts/receipts, approved offsite encrypted backup plus disposable restore, private durable release, monitoring, owner/device/finance UAT dan Wave9 belum tersedia. WIS tetap belum terdefinisi kanonik. Readiness sekitar 60/100; source push bukan production atau business readiness.
 

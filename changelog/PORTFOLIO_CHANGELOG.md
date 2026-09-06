@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS variance evidence drilldown
 
-`CONFIRMED`; source `4152976bbb213712c37425c258070b876cb99469` pushed. Owner Dashboard menghubungkan actual-versus-theoretical per ingredient dengan bounded newest receipt dan named waste/deduction facts untuk exact completed-count pair. Complete counts serta explicit truncation mencegah bukti terpotong dianggap lengkap; disclosure tetap terbuka saat polling, CSV owner-only/no-store/formula-safe, dan projection mengecualikan raw receipt, actor, idempotency/fingerprint serta customer/payment data. Focused6/6, full339/339, static/type/OpenAPI172/12, browser390/1440 Axe0/touch48/overflow/reduced-motion, dependency0 dan secret scan0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves1–8 PARTIAL, Wave9 deferred. Tidak ada deploy/payment/payroll/produk lain.
+`CONFIRMED`; source `b8fa7a76bc08bd759c44897539522615cf4b614b` pushed. Owner Dashboard menghubungkan actual-versus-theoretical per ingredient dengan bounded newest receipt dan named waste/deduction facts untuk exact completed-count pair. Complete counts serta explicit truncation mencegah bukti terpotong dianggap lengkap; disclosure tetap terbuka saat polling tetapi dibersihkan saat logout, mendukung keyboard/touch, CSV owner-only/no-store/formula-safe, dan projection mengecualikan raw receipt, actor, idempotency/fingerprint serta customer/payment data. Focused6/6, full339/339, static/type/OpenAPI172/12, browser390/1440 Axe0/touch48/overflow/reduced-motion, dependency0 dan secret scan0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves1–8 PARTIAL, Wave9 deferred. Tidak ada deploy/payment/payroll/produk lain.
 
 ## 2026-09-06 — SagaWork account mutation uncertainty recovery
 
