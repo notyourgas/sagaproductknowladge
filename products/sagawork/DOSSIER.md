@@ -1,5 +1,14 @@
 # SagaWork Dossier
 
+## 2026-09-06 - SagaWork jadwal pribadi: provider native tervalidasi
+
+- Klasifikasi `CONFIRMED`; sumber task SagaWork: aplikasi/instrumentasi `4f0604ebcd94a97d46cf87deb3c01aee0a3318e5`, dokumentasi `7767591b479d405af8c8927ae6a0ed93e0767f96`. Before: portal jadwal memakai daftar generik reviewer dan bergantung pada izin swap. After: jadwal selalu milik staf sendiri termasuk dual-role HR, hanya histori published/cancelled yang pernah dipublikasi; proyeksi minimal, rentang maksimum 93 hari, maksimum 200 baris dengan pemberitahuan truncation.
+- Setiap shift menampilkan timezone lokasi dan tanggal akhir lintas tengah malam. Jadwal dibatalkan tidak memiliki tombol aksi; tidak punya/ditolak izin swap tidak menghalangi membaca jadwal. Tidak ada migration, grant, operasi bridge atau DTO baru; portal provider bukan klaim UI POS seluruhnya selesai.
+- PASS: 487 tes/65 file, lint/types, kontrak/OpenAPI 87 path/106 operasi, lima guard suite dan audit dependency tanpa kerentanan diketahui. Review independen tanpa P0/P1; fresh exact-source Linux build exit0, empat suite MySQL native termasuk 13 skenario jadwal, full HTTP dan Chromium provider. SSR/DOM own-only, reload, timezone/overnight, cancelled read-only, swap API403, mobile390/Axe dan nol mutasi jadwal lulus. Login uji dicabut/listener ditutup, data sintetis dipertahankan.
+- Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY publik**. Public workforce diperiksa ulang `711ef77`, aktif/HTTP200; source workforce commit lokal tanpa remote. Task POS melaporkan source `abdc1132fd012ed7e2172f5424436ee5ec33aa88` fokus recipe/finance; own-request POS sebelumnya tetap local validated, bukan joint-native. Tidak ada perubahan POS/shared runtime oleh increment ini.
+- Izin deploy bersyarat DEC-191 tetap berlaku; next: exact-pair joint melalui transport yang diizinkan, encrypted offsite backup/disposable restore, exact config/rollback serta acceptance perangkat/owner/finance. Guard test bukan bukti restore operasional. Program 36 sprint tetap PARTIAL; request-only staff-shell dan lifecycle mutasi lebih luas masih backlog, payroll nyata/performance OFF. Delapan dokumen produk/portfolio/master/status/gaps disinkronkan; tidak ada perubahan pricing/positioning/keputusan founder baru atau data restricted.
+
+
 ## 2026-09-06 - SagaWork portal permohonan staf diterima pada provider native
 
 - Klasifikasi `CONFIRMED`; sumber task SagaWork: aplikasi/instrumentasi `6c245d7bbf4be7a222d3153399eb9c8f3a7232b8`, dokumen acceptance `dc35980bf8a25efb3bf488c7c0ea31c8699934a6`. Before: portal provider masih memakai daftar generik reviewer. After: SSR dan baca detail selalu milik staf sendiri termasuk akun dual-role HR, dengan filter sembilan status, pagination 20, batas tampilan 100, timezone serta nol menit disetujui yang eksplisit.
