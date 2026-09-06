@@ -10,8 +10,8 @@
 
 ## 2026-09-06 — SagaOPS purchasing ke moving-average HPP
 
-- `CONFIRMED`; source final `80b5d00526a764185561763c686fdf7db889bf23`. Owner/Admin lokal dapat menerima bahan berdasarkan supplier/kemasan, mengonversi ke gram/ml/pcs dan memperbarui saldo quantity/value plus moving-average unit cost secara idempotent. Unit cost mempertahankan fractional Rupiah sampai total line resep dibulatkan; snapshot transaksi lama tidak berubah.
-- State HPP v2 restart-safe dan fail-closed terhadap fingerprint/total/conversion/metadata yang korup serta drift antara receipt, saldo dan biaya ingredient. Validasi final: focused 30/30, full 319/319, check 166 modul/12 migrasi, Admin 390/1440 Axe/touch/overflow/reduced-motion, dependency dan restricted-data scan 0.
+- `CONFIRMED`; source final `a742d5f98608c3729b7e80f523a450346499295d`. Owner/Admin lokal dapat menerima bahan berdasarkan supplier/kemasan, mengonversi ke gram/ml/pcs dan memperbarui saldo quantity/value plus moving-average unit cost secara idempotent. Unit cost mempertahankan fractional Rupiah sampai total line resep dibulatkan; snapshot transaksi lama tidak berubah.
+- State HPP v2 restart-safe dan fail-closed terhadap fingerprint/total/conversion/metadata yang korup serta drift antara receipt, saldo dan biaya ingredient. Batas receipt/saldo maksimum konsisten saat restore. Validasi final: focused 31/31, full 320/320, check 166 modul/12 migrasi, Admin 390/1440 Axe/touch/overflow/reduced-motion, dependency dan restricted-data scan 0.
 - Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bukan actual HPP, production activation atau business ready. Sale consumption, count/waste/adjustment, actual variance, modifier/packaging dan PO lifecycle masih terbuka. Readiness tetap sekitar 60/100; Waves 1–8 PARTIAL dan Wave 9 deferred.
 
 ## 2026-09-06 - SagaWork konfirmasi catatan staf: native tervalidasi

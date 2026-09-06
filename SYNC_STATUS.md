@@ -10,7 +10,7 @@
 
 ## 2026-09-06 — SagaOPS purchase moving-average HPP
 
-- Status sinkronisasi: `accepted`; klasifikasi `CONFIRMED` untuk exact local source final `80b5d00526a764185561763c686fdf7db889bf23`.
+- Status sinkronisasi: `accepted`; klasifikasi `CONFIRMED` untuk exact local source final `a742d5f98608c3729b7e80f523a450346499295d`.
 - Disinkronkan: supplier receipt, package/base-unit conversion, idempotent inventory quantity/value, moving-average ingredient cost, persistence v2 dan Admin responsive evidence.
 - Delivery sumber: `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/activation/business readiness tidak berubah. Readiness tetap sekitar 60/100; Waves 1–8 PARTIAL dan Wave 9 deferred.
 - File: SagaOPS product/dossier/changelog, portfolio changelog, master knowledge, root changelog dan sync status. Tidak ada keputusan founder/pricing baru; tidak ada secret, PII, payload transaksi mentah atau identifier/path privat.
