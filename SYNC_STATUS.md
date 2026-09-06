@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 - SagaWork pemulihan sesi absensi yang belum selesai
+
+Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk HRPOS17/18/25.
+
+Source aplikasi `008568af9c856a86a4d91d710a794e76c731b3d9`, instrumentasi `355215b8e343105b49b7cbc01a2830265704b4e3`, dokumentasi `1071428356dd4df99d4a8aefae427cf8730e5651`. Sinkronisasi delapan dokumen SagaWork/root melalui window yang dikoordinasikan dengan task POS; klasifikasi accepted hanya untuk increment provider, bukan seluruh integrasi. Tidak ada data restricted atau konflik keputusan baru.
+
+PASS591 tes/74 file, lint/types, kontrak/OpenAPI87 path106 operasi, lima guard suite, audit0, Linux build0 dan final native runner0. Tujuh suite MySQL serta full HTTP/Chromium lolos; tiga mode working/break/review, reload, mobile390/Axe0, device/mutation/page-error0. Run awal gagal karena label fixture; instrumentasi diperbaiki tanpa perubahan aplikasi atau pelonggaran assertion dan diulang pada database baru. Akun uji final dicabut, listener clear; data sintetis saja.
+
+Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**; public workforce tetap `711ef77`, aktif/HTTP200. Program36 PARTIAL, bukan joint-native/activation/BUSINESS_READY. Task POS menyetujui provider-only; source POS dan prioritas stok/waste/adjustment/HPP tidak diubah. Next: fresh allowed joint transport/exact pair, encrypted offsite backup/disposable restore, config/rollback serta owner/device/finance acceptance. Broad offline recovery/cancellation dan fallback unscheduled selesai tanpa shift berikutnya tetap backlog. DEC-191 izin deploy bersyarat tidak berubah; performance OFF, payroll nyata tidak diaktifkan.
+
 ## 2026-09-06 - SagaWork akses absensi independen untuk staf
 
 - Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk increment provider HRPOS15/17/25, bukan seluruh program. Source aplikasi `73e3703420b8fb72c1b59b15a80b2b33268908fb`, instrumentasi final `32a449732a12e95f9e01a2b115073b38d17d6b81`, dokumentasi `54f8006e8f924d8bf1d50987fc75ad406beed218`. Before: izin absensi saja belum cukup untuk membuka halaman karena bergantung pada izin jadwal. After: staf aktif berizin absensi dapat masuk tanpa akses jadwal; explicit denial tetap berlaku sebelum pembacaan data dan persiapan capture.
