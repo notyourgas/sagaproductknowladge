@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — Theoretical ingredient usage projection
+
+`CONFIRMED` dari source `916bac28dd994966b607d629aebbd6741524419f`. Projection owner-only memakai order `PAID/COMPLETED`, business date WIB dan immutable recipe line snapshot. Per bahan, server menghitung recipe base quantity × sold quantity serta snapshot line cost × sold quantity; pending, refunded dan tanggal lain dikecualikan.
+
+Status `VERIFIED/PARTIAL/INCOMPLETE/NO_SALES` serta quantity-weighted coverage mencegah subset biaya dianggap total. Historical name/base-unit variants tetap dipisah agar satuan berbeda tidak dijumlahkan. Duplicate, malformed dan overflow fail-closed; CSV menetralkan formula spreadsheet, no-store, dan ditolak untuk anonymous/cashier/staff. Dashboard mengangkat gap resep ke panel tindakan.
+
+Riset Toast membedakan theoretical consumption dari actual consumption berbasis opening/purchases/closing count; Square memisahkan sale, waste dan recount. Karena itu slice ini read-only dan tidak dapat menggagalkan atau memundurkan payment truth. Resep dasar saja; modifier consumption, sale movement/outbox, period AvT, correction/reversal dan data bisnis nyata tetap gap.
+
+Evidence final: full 330/330, static/type/OpenAPI 169 modul/12 migrasi, focused/browser/durable PASS, 390/1440 Axe/overflow/touch-scroll/visual PASS, dependency dan secret scans 0. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, production tidak berubah.
+
 ## 2026-09-06 - SagaWork draft absensi selesai tidak mengunci hari berikutnya
 
 Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk HRPOS17/18/25 provider-only. Aplikasi `60893153891766f76039c16683a153e9358475d7`, instrumentasi final `f7d9310c768b75efa2d56f4d5bdadf75abdecd3e`, dokumentasi `a5f9e3799e4edd3695c082c8829a7d923fee782d`.

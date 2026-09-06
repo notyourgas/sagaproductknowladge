@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 — SagaOPS gap setelah theoretical ingredient usage
+
+- `CONFIRMED`: source `916bac28dd994966b607d629aebbd6741524419f` menutup gap read-only untuk pemakaian bahan menurut resep dari menu paid, coverage parsial, alert owner dan export.
+- Masih terbuka: idempotent stock-mutating sale movement/outbox yang tidak dapat memalsukan payment truth; dua approved period counts; actual-versus-theoretical; modifier/packaging/prep yield; correction/reversal; real recipe/cost/count; production recovery/UAT.
+- Jangan menyebut verified subset sebagai total, theoretical usage sebagai actual usage, atau local test sebagai deployment. Readiness sekitar 60/100; Waves 1–8 PARTIAL, Wave 9 deferred.
+
 ## 2026-09-06 - SagaWork draft absensi selesai tidak mengunci hari berikutnya
 
 Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk HRPOS17/18/25 provider-only. Aplikasi `60893153891766f76039c16683a153e9358475d7`, instrumentasi final `f7d9310c768b75efa2d56f4d5bdadf75abdecd3e`, dokumentasi `a5f9e3799e4edd3695c082c8829a7d923fee782d`.

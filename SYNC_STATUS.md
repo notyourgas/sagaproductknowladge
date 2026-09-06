@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 — SagaOPS pemakaian bahan teoretis
+
+`CONFIRMED`; source `916bac28dd994966b607d629aebbd6741524419f` pushed. Owner Dashboard mengubah snapshot resep immutable dan menu `PAID/COMPLETED` menjadi quantity/cost bahan per tanggal WIB, coverage tertimbang, sumber menu, alert resep parsial dan CSV owner-only. Subset terverifikasi tidak menjadi total; actual usage tetap memerlukan stock count pembuka/penutup. Full 330/330, static/type/OpenAPI 169/12, durable/browser 390/1440, Axe/overflow/touch-scroll, dependency0 dan secret heuristic0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves 1–8 PARTIAL, Wave 9 deferred, production/payment/activation tidak berubah.
+
 ## 2026-09-06 - SagaWork draft absensi selesai tidak mengunci hari berikutnya
 
 Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk HRPOS17/18/25 provider-only. Aplikasi `60893153891766f76039c16683a153e9358475d7`, instrumentasi final `f7d9310c768b75efa2d56f4d5bdadf75abdecd3e`, dokumentasi `a5f9e3799e4edd3695c082c8829a7d923fee782d`.

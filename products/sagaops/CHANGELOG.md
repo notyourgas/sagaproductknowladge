@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-06 — Pemakaian bahan teoretis dari menu paid
+
+- Klasifikasi `CONFIRMED`; source `916bac28dd994966b607d629aebbd6741524419f` pushed pada branch Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Owner Dashboard kini menghitung kuantitas bahan teoretis dari snapshot resep immutable × quantity menu `PAID/COMPLETED` per tanggal bisnis WIB, menampilkan sumber menu, cost snapshot, coverage tertimbang quantity, resep yang belum lengkap, dan CSV owner-only.
+- Coverage parsial dipromosikan ke `Perlu ditindak`; verified subset tidak pernah disebut total seluruh penjualan. Actual usage tetap unavailable sampai ada stock count pembuka/penutup. Resep modifier, packaging dan stock-mutating sale consumption belum diimplementasikan.
+- Validasi final: focused 30/30 lalu 19/19, full 330/330 concurrency 2, static/type/OpenAPI 169 modul/12 migrasi, restart PostgreSQL, 390/1440 browser, Axe serious/critical 0, no overflow, internal touch-scroll, dependency audit 0 dan added-line secret heuristic 0. Tidak ada dependency/migrasi/payment/HR/provider baru.
+- Readiness tetap sekitar 60/100; Waves 1–8 PARTIAL, Wave 9 deferred. Production, real payment, promo, payroll, activation dan business readiness tidak berubah.
+
 ## 2026-09-06 — Cycle count dan waste ledger lokal
 
 - `CONFIRMED`; source `17d57a281da53fe3be3882b37af9acd00316d09e` menambah owner-only physical cycle count, six reasoned deductions, idempotent/versioned ledger, restart reconciliation dan Owner Dashboard purchase/waste by Jakarta business date.
