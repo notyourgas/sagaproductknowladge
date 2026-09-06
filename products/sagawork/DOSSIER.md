@@ -1,5 +1,13 @@
 # SagaWork Dossier
 
+## 2026-09-06 - SagaWork permohonan staf own-only: provider native tervalidasi
+
+- Klasifikasi: `CONFIRMED`; sumber task SagaWork, source fitur `05a1035894701b7235553af55946bcf3f4275123`, aplikasi final `c6cd3007c5f52cab33ac507d56ab93414033f73e`, instrumentasi `147f236d5338b9a1e6a9e754af68f680e3f63207` dan dokumentasi `881be6d14241adedbd4e4e50e628f25dce70ca7b`. Tidak ada keputusan founder, pricing atau positioning baru.
+- Sebelum: dua operasi permohonan milik staf masih kontrak usulan. Sesudah: provider memiliki daftar berpaginasi dan detail yang selalu dibatasi ke organisasi/karyawan sendiri, termasuk akun dual-role HR. Daftar default 20/maksimum 50, filter status, cursor terikat konteks/filter dengan presisi database; detail menampilkan alasan/histori yang diizinkan tanpa identitas reviewer atau attachment. Capability provider 69, tanpa migration atau pemberian permission baru.
+- Gate PASS: 423 test/60 file, lint/types/contracts/OpenAPI, lima guard runtime, audit dependency tanpa temuan diketahui; aplikasi dikompilasi Linux dan diterima pada tiga suite MySQL native, 23 skenario permohonan, signed HTTP own-read/revoke serta Chromium HR/staf, first-change/recovery, mobile dan Axe. Header privasi diperkuat berdasarkan native regression; fixture browser dipisahkan tanpa melonggarkan assertion. Final runner exit 0.
+- Status `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY publik**. Listener uji ditutup dan login database uji dicabut, data sintetis dipertahankan. Public workforce `711ef77` tetap aktif/HTTP 200. Source workforce tidak mempunyai remote; commit lokal bukan klaim source push. Tidak ada perubahan source/runtime POS oleh task workforce.
+- Task POS menerima DTO/source/evidence, tetapi belum menyerahkan implementasi/acceptance UI/BFF baru. Handoff bukan joint acceptance. Fokus operasional Kopi Saga; langkah berikut native UI/BFF POS lalu exact-pair joint acceptance melalui transport yang diizinkan. Gate transport joint tetap terpisah, tanpa bypass. Program 36 sprint, perangkat nyata, payroll, owner UAT dan business readiness belum selesai; performance OFF. Sinkronisasi mencakup delapan dokumen produk/portfolio/master/status/gaps, tanpa data restricted.
+
 ## 2026-09-06 - SagaWork acceptance native: gate transport belum terbuka
 
 - Klasifikasi: `CONFIRMED`; sumber: evidence workforce dan laporan task POS, dokumentasi `3ec1f09c13fc7c4de5bc957a32b01a4076218569`. Pasangan baru workforce `f5a7e10f623181abb9d41461e02c87f25af068f7` / POS `3885c845a919d87ef7fc247d5472b446caf8c0b0`, instrumentasi `6b9133ddb2d4983c5771cd3eb41357ff5cd3840f`, marker `8401490e2c2926f761198782de641d820ab8da30`. Ini status acceptance, bukan fitur pelanggan baru atau keputusan founder.
