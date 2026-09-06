@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS variance evidence drilldown sync
 
-- `CONFIRMED`: source `b8fa7a76bc08bd759c44897539522615cf4b614b` menambah owner receipt/waste source trace untuk exact inventory count pair, bounded newest projection, complete totals, explicit truncation, polling-stable progressive disclosure, keyboard/touch access, dan logout state clearing.
+- `CONFIRMED`: source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d` menambah owner receipt/waste source trace untuk exact inventory count pair, bounded newest projection, complete totals, explicit truncation, polling-stable progressive disclosure, keyboard/touch access, dan logout state clearing.
 - PASS focused6/full339, static/type/OpenAPI172/12, browser390/1440 Axe0/touch48/overflow/reduced-motion, dependency0 dan secret scan0. Projection/CSV tidak membawa raw receipt, actor/customer/payment data atau credential.
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/operator preview/readiness tidak berubah. Period approval, sale consumption, real inputs, offsite restore dan Wave9 tetap blocker.
 

@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS inventory variance source trace
 
-- `CONFIRMED`; exact source `b8fa7a76bc08bd759c44897539522615cf4b614b`, delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production dan business readiness tidak berubah. State disclosure bertahan saat polling tetapi dibersihkan pada logout.
+- `CONFIRMED`; exact source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d`, delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production dan business readiness tidak berubah. State disclosure bertahan saat polling tetapi dibersihkan pada logout.
 - Owner actual-versus-theoretical report kini menyediakan progressive receipt/waste drilldown untuk exact selected completed-count pair. UI menampilkan safe supplier/reason, time, quantity/value dan short reference; open state bertahan saat polling.
 - Projection owner-only/no-store mengecualikan raw receipt, actor, idempotency/fingerprint dan customer/payment data. Complete evidence counts disertai bounded newest 200 entries serta explicit truncation; CSV membawa cakupan sama dan menetralkan formula.
 - Validation final: focused6/6, full339/339, static/type/OpenAPI172/12, Chromium390/1440 Axe0/touch48/overflow/reduced-motion, dependency0 dan secret scan0. Readiness sekitar 60/100; all Waves1–8 remain PARTIAL, Wave9 deferred.

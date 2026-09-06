@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — Jejak bukti variance bahan
 
-- `CONFIRMED`; exact source `b8fa7a76bc08bd759c44897539522615cf4b614b` sudah dipush. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100. Disclosure evidence bertahan saat polling, mendukung keyboard/touch, dan dibersihkan saat logout.
+- `CONFIRMED`; exact source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d` sudah dipush. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100. Disclosure evidence bertahan saat polling, mendukung keyboard/touch, dan dibersihkan saat logout.
 - Owner Dashboard kini menghubungkan setiap bahan pada laporan actual-versus-theoretical ke receipt pembelian dan waste/pengurangan bernama dalam pasangan full count yang dipilih. Disclosure ringkas mempertahankan scanability dan tetap terbuka saat background refresh.
 - Projection owner-only/no-store menampilkan waktu, supplier/alasan, quantity, nilai dan referensi UI pendek; actor, idempotency/fingerprint, data customer/payment dan payload receipt mentah tidak diteruskan. Total bukti tetap lengkap, tampilan/CSV newest-first dibatasi global 200 dengan `shown/total/truncated` eksplisit dan formula-safe.
 - Evidence: focused 6/6, full regression 339/339, static/type/OpenAPI 172 modul/12 migrasi, Chromium 390/1440 Axe serious/critical 0, touch target 48px, polling/overflow/reduced-motion, dependency0 dan secret scan0. Tidak ada dependency/migrasi/deploy; period approval lock, sale consumption, real inputs, offsite restore dan Wave 9 tetap terbuka.

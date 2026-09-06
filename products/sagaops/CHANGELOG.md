@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — Bounded receipt dan waste drilldown pada variance
 
-- `CONFIRMED`; source `b8fa7a76bc08bd759c44897539522615cf4b614b` menambah owner-only evidence projection dan progressive disclosure per ingredient untuk exact selected full-count pair, termasuk pembersihan disclosure state saat logout.
+- `CONFIRMED`; source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d` menambah owner-only evidence projection dan progressive disclosure per ingredient untuk exact selected full-count pair, termasuk pembersihan disclosure state saat logout.
 - Before: purchase/waste hanya aggregate. After: Owner dapat menelusuri supplier/reason, waktu, quantity, value dan short reference; panel terbuka bertahan saat polling. Raw receipt, actor, idempotency/fingerprint dan customer/payment data tidak diproyeksikan.
 - Complete evidence totals dipertahankan; newest display/CSV dibatasi global 200 dengan explicit truncation dan formula-safe strings. Report tetap read-only, no-store, server-derived dan tidak mengubah stock/payment.
 - PASS focused6/6, full339/339, static/type/OpenAPI172/12, Chromium390/1440 Axe0/touch48/polling/overflow/reduced-motion, dependency0 dan secret scan0. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/readiness tidak berubah.

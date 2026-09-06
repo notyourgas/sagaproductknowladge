@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — Inventory variance evidence projection
 
-`CONFIRMED` dari source `b8fa7a76bc08bd759c44897539522615cf4b614b`. Before: aggregate purchase dan waste sudah muncul pada variance tetapi Owner harus mencari receipt/movement sumber secara manual. After: read model per ingredient membawa complete counts dan newest receipt/waste facts untuk exact completed-count pair; UI progressive disclosure menyajikan timestamp WIB, supplier atau deduction type, reason, quantity, value dan short reference tanpa meninggalkan report. Disclosure bertahan saat polling tetapi dibersihkan saat logout agar state UI tidak berpindah sesi.
+`CONFIRMED` dari source `b8fa7a700847033fa5fe6456d6c5b18c57e5b78d`. Before: aggregate purchase dan waste sudah muncul pada variance tetapi Owner harus mencari receipt/movement sumber secara manual. After: read model per ingredient membawa complete counts dan newest receipt/waste facts untuk exact completed-count pair; UI progressive disclosure menyajikan timestamp WIB, supplier atau deduction type, reason, quantity, value dan short reference tanpa meninggalkan report. Disclosure bertahan saat polling tetapi dibersihkan saat logout agar state UI tidak berpindah sesi.
 
 Backend boundary mempertahankan raw HPP facts sebagai authority dan tidak membuat mutation baru. Projection mengeluarkan actor, idempotency/fingerprint serta raw receipt/customer/payment data; maximum 200 evidence entries dialokasikan ke ingredient dengan absolute value variance terbesar lalu newest fact. Baris yang tidak masuk tetap mempunyai complete total dan explicit truncation. Owner CSV memakai cakupan sama, no-store dan formula neutralization untuk ingredient, supplier dan reason.
 
