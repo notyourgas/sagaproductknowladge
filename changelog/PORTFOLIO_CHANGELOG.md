@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — SagaWork Staff import lost-response recovery
 
-`CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`. HR CSV commit now uses one bounded request, exact preview/batch/row validation and reload-only full People write recovery on uncertainty. Focused30/full837 plus Linux/MySQL/full HTTP/Chromium passed with one batch/per-row audits, atomic drafts without accounts and mobile/Axe/device guards. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.
+`CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`. HR CSV commit now uses one bounded request, exact preview/batch/row validation and reload-only full People write recovery on uncertainty. Focused30/full837 plus Linux/MySQL/full HTTP/Chromium passed with one batch/per-row audits, atomic drafts without accounts and mobile/Axe/device guards. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.
 
 ## 2026-09-07 — SagaOPS PO-linked partial receiving
 

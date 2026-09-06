@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — Staff import commit lost-response recovery
 
-- `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`.
+- `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`.
 - CSV commit is now single-request and bounded with exact preview/batch/row success validation, safe expected-4xx handling and reload-only full People write recovery after uncertain outcomes. Local CSV/preview clears and late responses cannot claim success.
 - Focused30/full837, lint/types/audit/contracts, Linux build and fresh disposable MySQL/full HTTP/Chromium passed with held genuine commit201, one batch/per-row audits, atomic drafts without accounts, invariance and mobile/Axe/device guards.
 - `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS/shared runtime untouched. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain; Performance and real payroll/payment OFF.

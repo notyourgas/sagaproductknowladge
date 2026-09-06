@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — Staff import commit lost-response recovery
 
-- `CONFIRMED`; application/native instrumentation `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`. Committing a valid CSV preview now uses one bounded request, exact batch/row matching and a full People write lock when the result is uncertain. No automatic retry or late false success; HR reloads and verifies every submitted Employee ID before preparing another import.
+- `CONFIRMED`; application/native instrumentation `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`. Committing a valid CSV preview now uses one bounded request, exact batch/row matching and a full People write lock when the result is uncertain. No automatic retry or late false success; HR reloads and verifies every submitted Employee ID before preparing another import.
 - Focused30/full837 tests in93 files, lint/types, dependency audit0, contracts/OpenAPI87 paths/106 operations, crypto/release checks, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed. Native proved a genuine held commit201, one batch plus per-row audits, atomic draft/planned employment creation without accounts, existing employee/account invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
 - `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains HTTP200. POS active work was untouched and no fresh exact-pair joint candidate exists. Encrypted offsite backup/restore, config/rollback and owner/device/finance gates remain open; Performance and real payroll/payment remain OFF.
 

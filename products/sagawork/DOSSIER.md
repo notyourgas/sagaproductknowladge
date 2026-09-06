@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — Staff import commit lost-response recovery
 
-- `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`. Valid CSV commit is one POST with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and exact submitted-preview versus batch/row validation. Expected allowlisted 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain. Raw server text is not rendered.
+- `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`. Valid CSV commit is one POST with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and exact submitted-preview versus batch/row validation. Expected allowlisted 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain. Raw server text is not rendered.
 - Uncertainty clears local CSV/preview, closes import UI and locks all People writes until reload; hide/pagehide/unmount and late completion cannot claim success. Focused30/full837, lint/types/audit/contracts, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed with one batch/per-row audits, atomic drafts without accounts and related invariants.
 - `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Parser/preview, API/domain/schema/grant/POS/shared runtime are unchanged. Public `711ef77` remains HTTP200; fresh joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
 

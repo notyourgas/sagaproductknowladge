@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — SagaWork Staff import recovery
 
-- `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a505a42fcd2d6b06c17588529286084170`. HR CSV commit now fails safely on lost/late responses through one bounded request, exact preview/batch/row validation and reload-only People write recovery. Full837/93 plus exact-source Linux/MySQL/HTTP/Chromium passed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint/offsite restore/release and owner/device/finance gates remain.
+- `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`. HR CSV commit now fails safely on lost/late responses through one bounded request, exact preview/batch/row validation and reload-only People write recovery. Full837/93 plus exact-source Linux/MySQL/HTTP/Chromium passed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint/offsite restore/release and owner/device/finance gates remain.
 
 ## 2026-09-07 — SagaOPS PO partial receiving sync
 
