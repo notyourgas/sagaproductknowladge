@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — Konsumsi stok dari order paid
 
-- `CONFIRMED`; source `eb3d60bfd169f0bd7161378156662aa4380e53c7` dan dokumentasi `e3748166fa65af72dd7e2dce4a1e0bbc2eb6cfc3` sudah dipush. Transisi pembayaran authoritative kini mengurangi saldo bahan dari snapshot resep immutable secara exactly-once; order pending/failed tidak memengaruhi stok.
+- `CONFIRMED`; source `eb3d60bfd169f0bd7161378156662aa4380e53c7` dan release record `4e7343ec1775a18cc9ce503f535fe0cb2bb1d3fc` sudah dipush. Transisi pembayaran authoritative kini mengurangi saldo bahan dari snapshot resep immutable secara exactly-once; order pending/failed tidak memengaruhi stok.
 - Mutation `SALE_CONSUMPTION` hanya dibuat sistem. Shortage dicatat eksplisit untuk rekonsiliasi tanpa membatalkan pembayaran yang sudah captured; resep tidak lengkap tetap menjadi coverage gap, bukan pemakaian atau HPP nol palsu. Order/payment dan proyeksi HPP dipersistenkan dalam satu transaksi PostgreSQL dengan rollback runtime saat commit gagal.
 - Admin membedakan penjualan terbayar dari waste dan menampilkan referensi order, saldo sebelum/sesudah serta shortage. PASS focused43/43, full344/344, check175/OpenAPI3.1/migrations12, browser390/1440 Axe0/overflow0, dependency dan secret scan nol.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / STAGING_BUILD_READY / IMPLEMENTED_NOT_DEPLOYED`; redeploy protected preview tertahan batas harian Vercel. Deployment preview sebelumnya tetap tersedia tetapi bukan exact source ini. Production/payment activation/business readiness tidak berubah; period close, modifier/packaging/prep, reversal maker-checker, PO/refund/settlement, data nyata, offsite restore dan Wave 9 tetap terbuka.
