@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — SagaWork account mutation uncertainty recovery
+
+`CONFIRMED` from application `46c3ecf470e9570bd78f3266fd78feea50769b26` and evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`: password change and own-session termination are one-shot, bounded and exact-DTO validated. Uncertain responses clear private rows, lock further actions until full reload and cannot produce late success or automatic retry. Expected 4xx is safe definite rejection without raw server text. Focused41/full721, lint/types, contracts, Linux build and fresh disposable MySQL/full HTTP/Chromium passed, including genuine held-body/reload/state/audit proof. Status `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain; Performance and real payroll/payment are OFF.
+
 ## 2026-09-06 — SagaWork account session inventory recovery
 
 - **CONFIRMED** from source/evidence: application `3fbe625d2ad4706591cb745326c7ce26ed295b25`, final test harness `a5a3d1a64c86036b07cf01b8dd74818ad7b165e8`, evidence `5ffc1e1350de716fce03647cade289c6addd00ac`. Before: account session reload could retain stale rows or show empty alongside an error. After: validated bounded12s read, clear uncertain/hidden rows, safe distinct loading/error/empty and revalidation; password/revoke mutations and account ownership unchanged.

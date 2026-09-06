@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-06 — SagaWork account mutation uncertainty recovery
+
+- **CONFIRMED** from source/native evidence: application `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. Password change and own-session termination now use one bounded request, exact success validation and a locked uncertainty state; private session rows clear and no retry or late false success is allowed. Expected 4xx uses safe allowlisted/fallback copy; raw server text is never rendered. No API/schema/grant/POS/shared-runtime change.
+- Focused41 and full721 tests/85 files, lint/types, contracts/OpenAPI87/106, security/runtime guards, Linux build and fresh disposable MySQL/full HTTP/Chromium passed. Native held a genuine successful DELETE body past12s, then proved explicit-reload recovery, exact target revoke, unchanged other sessions and one audit. Security review closed inherited-property error-code handling with regressions.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce `711ef77` remains active/HTTP200; Performance and real payroll/payment remain OFF. Fresh exact-pair POS joint-native, encrypted offsite backup/disposable restore, config/rollback and owner/device/finance gates remain open; local backup evidence does not replace offsite evidence.
+
 ## 2026-09-06 — SagaWork account session inventory recovery
 
 - **CONFIRMED** from source/evidence: application `3fbe625d2ad4706591cb745326c7ce26ed295b25`, final test harness `a5a3d1a64c86036b07cf01b8dd74818ad7b165e8`, evidence `5ffc1e1350de716fce03647cade289c6addd00ac`. Before: account session reload could retain stale rows or show empty alongside an error. After: validated bounded12s read, clear uncertain/hidden rows, safe distinct loading/error/empty and revalidation; password/revoke mutations and account ownership unchanged.

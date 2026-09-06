@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 — SagaWork account mutation uncertainty recovery
+
+- **CONFIRMED**: source `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. One-shot password/session mutations now fail safe under lost, late, malformed or timed-out responses, with private rows cleared and no automatic retry or false success.
+- PASS focused41/full721, lint/types, contracts/OpenAPI87/106, guards, Linux build and fresh disposable MySQL/full HTTP/Chromium. Native proved one genuine synthetic session revoke, one audit and explicit-reload recovery; inherited error-code lookup was hardened after independent security review.
+- Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Public `711ef77` remains HTTP200. No API/schema/POS/runtime, pricing, production, real payroll/payment or Performance activation change. Joint POS, encrypted offsite restore, config/rollback and owner/device/finance acceptance remain open.
+
 ## 2026-09-06 — SagaWork account session inventory recovery
 
 - **CONFIRMED** from source/evidence: application `3fbe625d2ad4706591cb745326c7ce26ed295b25`, final test harness `a5a3d1a64c86036b07cf01b8dd74818ad7b165e8`, evidence `5ffc1e1350de716fce03647cade289c6addd00ac`. Before: account session reload could retain stale rows or show empty alongside an error. After: validated bounded12s read, clear uncertain/hidden rows, safe distinct loading/error/empty and revalidation; password/revoke mutations and account ownership unchanged.

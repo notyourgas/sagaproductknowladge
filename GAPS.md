@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 — SagaWork account mutation uncertainty recovery
+
+- **CONFIRMED**: source `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. Gap lost/late response untuk password change dan own-session revoke ditutup pada provider dengan one-shot bounded request, exact success validation, private-row clearing, uncertainty lock dan explicit reload recovery. Inherited-property error-code edge case juga ditutup; tidak ada raw server text.
+- Provider evidence focused41/full721, lint/types/contracts/guards, Linux build dan fresh disposable MySQL/full HTTP/Chromium PASS; satu genuine synthetic DELETE menghasilkan target revoke, unchanged other sessions dan satu matching audit. No API/schema/grant/POS/shared-runtime change.
+- **NEEDS CONFIRMATION / BELUM DEPLOY HR**: fresh exact-pair POS joint-native dan allowed transport, encrypted offsite backup plus disposable restore, target/config/rollback, real-device/owner/finance UAT. Public `711ef77` tetap HTTP200; local backup bukan offsite evidence. Performance dan real payroll/payment OFF; provider acceptance bukan activation atau business readiness.
+
 ## 2026-09-06 — SagaWork account session inventory recovery
 
 - **CONFIRMED** from source/evidence: application `3fbe625d2ad4706591cb745326c7ce26ed295b25`, final test harness `a5a3d1a64c86036b07cf01b8dd74818ad7b165e8`, evidence `5ffc1e1350de716fce03647cade289c6addd00ac`. Before: account session reload could retain stale rows or show empty alongside an error. After: validated bounded12s read, clear uncertain/hidden rows, safe distinct loading/error/empty and revalidation; password/revoke mutations and account ownership unchanged.

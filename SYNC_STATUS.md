@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 — SagaWork account mutation uncertainty recovery
+
+- Status sinkronisasi `accepted`; klasifikasi **CONFIRMED**; source application `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`.
+- Disinkronkan ke PRODUCT/DOSSIER/product changelog/root changelog/master/gaps/portfolio: one-shot bounded mutation, exact success DTO, safe expected-4xx mapping, uncertainty lock, private-row clearing dan explicit reload recovery. API/schema/grant/POS/shared runtime tidak berubah.
+- Evidence focused41/full721, lint/types, contracts/OpenAPI87/106, guards, Linux build dan fresh disposable MySQL/full HTTP/Chromium PASS; genuine held-body DELETE menghasilkan exact target revoke, unchanged other sessions dan satu audit. Security review inherited-code edge case sudah ditutup.
+- Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` HTTP200 unchanged. Joint POS, encrypted offsite restore, config/rollback serta owner/device/finance tetap terbuka. Performance dan real payroll/payment OFF; tidak ada data restricted atau keputusan pricing/founder baru.
+
 ## 2026-09-06 — SagaWork account session inventory recovery
 
 - **CONFIRMED** from source/evidence: application `3fbe625d2ad4706591cb745326c7ce26ed295b25`, final test harness `a5a3d1a64c86036b07cf01b8dd74818ad7b165e8`, evidence `5ffc1e1350de716fce03647cade289c6addd00ac`. Before: account session reload could retain stale rows or show empty alongside an error. After: validated bounded12s read, clear uncertain/hidden rows, safe distinct loading/error/empty and revalidation; password/revoke mutations and account ownership unchanged.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-06 — SagaWork account mutation uncertainty recovery
+
+`CONFIRMED`; application `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. Password/session mutations now use one bounded attempt, exact success validation and a locked uncertainty state with no stale private rows, retry or late false success. Focused41/full721, lint/types, contracts/guards, Linux build and fresh disposable MySQL/full HTTP/Chromium passed, including genuine held-body DELETE, explicit reload, exact revoke and one audit. `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, encrypted offsite restore, release/rollback and owner/device/finance gates remain; Performance and real payroll/payment OFF.
+
 ## 2026-09-06 — SagaWork account session inventory recovery
 
 - **CONFIRMED** from source/evidence: application `3fbe625d2ad4706591cb745326c7ce26ed295b25`, final test harness `a5a3d1a64c86036b07cf01b8dd74818ad7b165e8`, evidence `5ffc1e1350de716fce03647cade289c6addd00ac`. Before: account session reload could retain stale rows or show empty alongside an error. After: validated bounded12s read, clear uncertain/hidden rows, safe distinct loading/error/empty and revalidation; password/revoke mutations and account ownership unchanged.
