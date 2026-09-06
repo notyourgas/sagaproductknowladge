@@ -1,5 +1,17 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-191 - Deploy integrasi HR ke SagaPOS ketika siap
+
+- Tanggal: 2026-09-06.
+- Klasifikasi/status: `CONFIRMED`, otorisasi bersyarat aktif; pemberi keputusan Andreas.
+- Topik: rilis increment integrasi HR dalam scope aktif Kopi Saga.
+- Keputusan langsung founder: "deploy saja kalau sudah ready".
+- Alasan: hasil implementasi yang sudah diterima dapat dirilis tanpa menunggu permintaan izin ulang untuk increment siap dalam scope yang sama.
+- Alternatif: menunggu persetujuan manual tambahan pada setiap increment; merilis sebelum readiness. Alternatif kedua tidak diizinkan oleh keputusan ini.
+- Dampak: koordinasikan satu release window dengan pemilik task SagaPOS setelah source/QA, fresh joint-native, target/config, encrypted offsite backup/disposable restore serta rollback terverifikasi. Catat DEPLOYED terpisah dari ACTIVATED dan BUSINESS_READY. Izin tidak menghapus blocker transport, tidak mengizinkan retarget fixture/bypass atau perubahan prioritas produk lain.
+- Batas: tidak mencakup pembayaran/payroll nyata, perluasan operasional Studio, performance activation atau acceptance pilot/perangkat/owner/finance yang belum terjadi. Saat pencatatan, source provider `6c245d7` native sintetis dan POS `f79a773` lokal; integrasi baru belum deployed publik.
+- Dokumen terkait: [SagaWork Product](products/sagawork/PRODUCT.md), [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md), [Master Knowledge](CHATGPT_MASTER_KNOWLEDGE.md).
+
 ## DEC-190 - SagaWork menjadi modul HR di SagaPOS untuk usaha sendiri
 
 - Tanggal: 2026-09-06.

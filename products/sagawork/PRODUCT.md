@@ -1,5 +1,13 @@
 # SagaWork Product Knowledge
 
+## 2026-09-06 - SagaWork portal permohonan staf diterima pada provider native
+
+- Klasifikasi `CONFIRMED`; sumber task SagaWork: aplikasi/instrumentasi `6c245d7bbf4be7a222d3153399eb9c8f3a7232b8`, dokumen acceptance `dc35980bf8a25efb3bf488c7c0ea31c8699934a6`. Before: portal provider masih memakai daftar generik reviewer. After: SSR dan baca detail selalu milik staf sendiri termasuk akun dual-role HR, dengan filter sembilan status, pagination 20, batas tampilan 100, timezone serta nol menit disetujui yang eksplisit.
+- Pemulihan UI dibatasi waktu, menghapus data privat saat akses ditolak/halaman disembunyikan, menolak respons tidak valid dan tidak mengulang aksi otomatis ketika hasil belum pasti. Dua route baca cookie tidak mengubah 69 command bridge/DTO; tidak ada migration atau grant baru. Ini portal provider, bukan klaim seluruh workflow sudah tersedia di POS.
+- PASS: 463 tes/62 file, lint tanpa warning/types, kontrak/OpenAPI 87 path/106 operasi, lima guard suite dan audit tanpa kerentanan diketahui; build Linux exit 0, tiga suite MySQL native, HTTP dan Chromium provider. Fixture staf serta dual-role lulus isolasi SSR, pagination/filter/detail, mobile390 dan Axe. Login/listener uji ditutup; data sintetis dipertahankan. Guard suite bukan bukti backup/restore operasional.
+- Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY publik**. Public workforce `711ef77` aktif/HTTP200 setelah uji. Source workforce hanya commit lokal karena tidak punya remote. POS `f79a773` sudah UI/BFF own-request LOCAL_VALIDATED menurut handoff task POS, bukan joint-native; task POS melaporkan runtime operasional tidak berubah.
+- Keputusan founder [DEC-191](../../DECISIONS.md): boleh deploy ketika ready, tanpa melewati gate. Next: exact-pair joint lewat transport yang diizinkan, offsite encrypted backup/disposable restore, konfigurasi/rollback dan acceptance perangkat/owner/finance. Tidak ada bypass, retarget fixture lama, payroll nyata atau performance activation; 36 sprint tetap PARTIAL. Sinkronisasi sembilan dokumen produk/portfolio/master/status/gaps/keputusan, tanpa data restricted.
+
 ## 2026-09-06 - SagaWork permohonan staf own-only: provider native tervalidasi
 
 - Klasifikasi: `CONFIRMED`; sumber task SagaWork, source fitur `05a1035894701b7235553af55946bcf3f4275123`, aplikasi final `c6cd3007c5f52cab33ac507d56ab93414033f73e`, instrumentasi `147f236d5338b9a1e6a9e754af68f680e3f63207` dan dokumentasi `881be6d14241adedbd4e4e50e628f25dce70ca7b`. Tidak ada keputusan founder, pricing atau positioning baru.
