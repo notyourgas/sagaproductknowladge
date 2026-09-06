@@ -10,8 +10,8 @@
 
 ## 2026-09-06 — SagaOPS purchase-derived HPP lokal
 
-- `CONFIRMED`; SagaOPS source `1f01525c0b2f68b38383fda62ec91aa8fc4e2689` menghubungkan penerimaan supplier, konversi kemasan, saldo nilai/kuantitas dan moving-average ingredient cost ke recipe HPP secara idempotent dan restart-safe.
-- Focused 28/28, full 317/317, browser Admin 390/1440, Axe/touch/overflow, check dan dependency/public-safety gates lulus. Perbaikan canonical fingerprint mempertahankan acceptance restart PostgreSQL JSONB.
+- `CONFIRMED`; SagaOPS source final `bd353d1a6caae390cd5c3fdf201bb85796b69263` menghubungkan penerimaan supplier, konversi kemasan, saldo nilai/kuantitas dan moving-average ingredient cost ke recipe HPP secara idempotent dan restart-safe.
+- Focused 29/29, full 318/318, browser Admin 390/1440, Axe/touch/overflow, check dan dependency/public-safety gates lulus. Canonical fingerprint dan rekonsiliasi receipt-saldo mempertahankan acceptance restart PostgreSQL JSONB.
 - Delivery hanya `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada perubahan production, payment, pricing atau produk lain. Readiness SagaOPS tetap sekitar 60/100 dan Waves 1–8 masih PARTIAL.
 
 ## 2026-09-06 - SagaWork konfirmasi catatan staf: native tervalidasi
