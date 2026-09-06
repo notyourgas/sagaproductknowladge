@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Staff Workspace-assignment lost-response recovery
+
+- `CONFIRMED`; application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`. HR create/end Workspace assignment now uses one bounded request, exact result validation and reload-only full People write recovery on uncertainty; a confirmed mutation remains confirmed when its following list refresh fails.
+- Focused36/full905 tests in97 files plus Linux/MySQL/full HTTP/Chromium passed with held genuine create201/end200, one request/audit each, ended secondary assignment persistence, unchanged primary/unrelated records and mobile/Axe/device guards.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains HTTP200. Exact handoff reached the active POS task, but fresh joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff record edit/delete lost-response recovery
 
 - `CONFIRMED`; application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, final harness `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`. Edit preferred name and delete account-less draft now use one bounded request, exact target/value or bodyless-204 validation and a full People write lock on uncertainty. No retry or late false success; HR reloads and verifies the selected Employee ID first.

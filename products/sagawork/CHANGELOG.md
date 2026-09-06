@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Staff Workspace-assignment lost-response recovery
+
+- `CONFIRMED`; application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`.
+- HR assignment create/end is single-request and bounded with exact success validation, safe expected-4xx handling, full People lock on uncertainty and confirmed-mutation guidance when a later list refresh fails.
+- Focused36/full905 plus Linux/MySQL/full HTTP/Chromium passed with held create201/end200, one request/audit each, persisted ended assignment, invariance and mobile/Axe/device guards.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. Exact handoff reached POS, but joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff record edit/delete lost-response recovery
 
 - `CONFIRMED`; application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, final harness `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`.

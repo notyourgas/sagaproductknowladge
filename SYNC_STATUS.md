@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaWork Staff Workspace-assignment recovery
+
+- Status: `accepted`; classification `CONFIRMED` for application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source/harness `a1c894bb8803a7bf0e76264663b3d41073681a03` and evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`.
+- Scope: Staff Workspace-assignment create/end lost-response recovery, full905/97 and exact-source Linux/MySQL/full HTTP/Chromium acceptance. No POS/shared runtime, API/domain/schema/grant, pricing or founder-policy change.
+- Delivery: `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / BELUM DEPLOY HR`; public `711ef77` unchanged/HTTP200. Provider handoff is sent, but fresh exact-pair joint-native, offsite encrypted restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaWork Staff record recovery
 
 - Status: `accepted`; classification `CONFIRMED` for application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, harness `aecb6613a017fef1af870f6b639d2aa22247f829` and evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`.

@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Staff Workspace-assignment lost-response recovery
+
+- `CONFIRMED`; application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source/harness `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`. Create/end effective-dated assignment are one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and exact HTTP/ID/status/date validation. Expected allowlisted 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.
+- Uncertainty closes Staff detail and locks all People writes until reload; confirmed mutation plus failed list refresh shows reload guidance without retry. Focused36/full905, lint/types/audit/contracts, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed with one create/end audit, ended persistence and invariance.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. No API/domain/schema/grant/POS/shared-runtime change. Public `711ef77` remains HTTP200; the evidence endpoint remains loopback-only, and joint-native/offsite restore/config rollback/owner-device-finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff record edit/delete lost-response recovery
 
 - `CONFIRMED`; application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, harness-only HTTP204 evidence correction `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`. Edit and draft delete are one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and strict exact success. Expected allowlisted 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.
