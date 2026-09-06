@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 — SagaOPS setelah variance source evidence
+
+- `CONFIRMED`: aggregate variance sekarang dapat ditelusuri ke bounded receipt dan named waste/deduction facts pada source `4152976bbb213712c37425c258070b876cb99469`; complete totals dan explicit truncation tersedia tanpa raw receipt/actor/customer/payment exposure.
+- `NEEDS CONFIRMATION`: exact period belum memiliki close/approval lock atau signed finance acknowledgement. Correction/reversal maker-checker, server-owned sale consumption, modifier/packaging/prep yield dan PO lifecycle tetap terbuka.
+- `NEEDS CONFIRMATION`: real ingredient costs/recipes/counts/receipts, approved offsite encrypted backup plus disposable restore, private durable release, monitoring, owner/device/finance UAT dan Wave9 belum tersedia. WIS tetap belum terdefinisi kanonik. Readiness sekitar 60/100; source push bukan production atau business readiness.
+
 ## 2026-09-06 — SagaWork account mutation uncertainty recovery
 
 - **CONFIRMED**: source `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. Gap lost/late response untuk password change dan own-session revoke ditutup pada provider dengan one-shot bounded request, exact success validation, private-row clearing, uncertainty lock dan explicit reload recovery. Inherited-property error-code edge case juga ditutup; tidak ada raw server text.

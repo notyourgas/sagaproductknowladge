@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-06 — Bounded receipt dan waste drilldown pada variance
+
+- `CONFIRMED`; source `4152976bbb213712c37425c258070b876cb99469` menambah owner-only evidence projection dan progressive disclosure per ingredient untuk exact selected full-count pair.
+- Before: purchase/waste hanya aggregate. After: Owner dapat menelusuri supplier/reason, waktu, quantity, value dan short reference; panel terbuka bertahan saat polling. Raw receipt, actor, idempotency/fingerprint dan customer/payment data tidak diproyeksikan.
+- Complete evidence totals dipertahankan; newest display/CSV dibatasi global 200 dengan explicit truncation dan formula-safe strings. Report tetap read-only, no-store, server-derived dan tidak mengubah stock/payment.
+- PASS focused6/6, full339/339, static/type/OpenAPI172/12, Chromium390/1440 Axe0/touch48/polling/overflow/reduced-motion, dependency0 dan secret scan0. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/readiness tidak berubah.
+
 ## 2026-09-06 — Historical full-count period selection
 
 - `CONFIRMED`; source `5099c9ef4c8efae4c9f94fae9f8c514478dcc763` menambah completed opening/closing selector, selection-stable polling, exact-pair CSV, reset-to-latest serta client prevention/recovery copy untuk closing yang tidak lebih baru pada Owner Dashboard.

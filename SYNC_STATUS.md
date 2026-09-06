@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 — SagaOPS variance evidence drilldown
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source final `4152976bbb213712c37425c258070b876cb99469` pushed dan clean.
+- Disinkronkan: bounded newest receipt/waste projection per ingredient, complete evidence totals, explicit truncation, polling-stable disclosure dan protected formula-safe CSV. Tidak ada raw receipt, actor/customer/payment identifier atau credential.
+- Evidence: focused6/6, full339/339, static/type/OpenAPI172/12, Chromium390/1440 Axe0/touch48/overflow/reduced-motion, visual review, dependency0 dan secret scan0.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada deploy, activation, payment, promo atau payroll nyata. Readiness sekitar 60/100; Waves1–8 PARTIAL, Wave9 deferred. Period approval, sale consumption, real inputs, offsite restore dan operational UAT tetap terbuka.
+
 ## 2026-09-06 — SagaWork account mutation uncertainty recovery
 
 - Status sinkronisasi `accepted`; klasifikasi **CONFIRMED**; source application `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`.

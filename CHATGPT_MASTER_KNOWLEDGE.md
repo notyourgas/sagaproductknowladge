@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — SagaOPS inventory variance source trace
+
+- `CONFIRMED`; exact source `4152976bbb213712c37425c258070b876cb99469`, delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production dan business readiness tidak berubah.
+- Owner actual-versus-theoretical report kini menyediakan progressive receipt/waste drilldown untuk exact selected completed-count pair. UI menampilkan safe supplier/reason, time, quantity/value dan short reference; open state bertahan saat polling.
+- Projection owner-only/no-store mengecualikan raw receipt, actor, idempotency/fingerprint dan customer/payment data. Complete evidence counts disertai bounded newest 200 entries serta explicit truncation; CSV membawa cakupan sama dan menetralkan formula.
+- Validation final: focused6/6, full339/339, static/type/OpenAPI172/12, Chromium390/1440 Axe0/touch48/overflow/reduced-motion, dependency0 dan secret scan0. Readiness sekitar 60/100; all Waves1–8 remain PARTIAL, Wave9 deferred.
+
 ## 2026-09-06 — SagaWork account mutation uncertainty recovery
 
 `CONFIRMED` from application `46c3ecf470e9570bd78f3266fd78feea50769b26` and evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`: password change and own-session termination are one-shot, bounded and exact-DTO validated. Uncertain responses clear private rows, lock further actions until full reload and cannot produce late success or automatic retry. Expected 4xx is safe definite rejection without raw server text. Focused41/full721, lint/types, contracts, Linux build and fresh disposable MySQL/full HTTP/Chromium passed, including genuine held-body/reload/state/audit proof. Status `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain; Performance and real payroll/payment are OFF.

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-06 — Inventory variance evidence projection
+
+`CONFIRMED` dari source `4152976bbb213712c37425c258070b876cb99469`. Before: aggregate purchase dan waste sudah muncul pada variance tetapi Owner harus mencari receipt/movement sumber secara manual. After: read model per ingredient membawa complete counts dan newest receipt/waste facts untuk exact completed-count pair; UI progressive disclosure menyajikan timestamp WIB, supplier atau deduction type, reason, quantity, value dan short reference tanpa meninggalkan report.
+
+Backend boundary mempertahankan raw HPP facts sebagai authority dan tidak membuat mutation baru. Projection mengeluarkan actor, idempotency/fingerprint serta raw receipt/customer/payment data; maximum 200 evidence entries dialokasikan ke ingredient dengan absolute value variance terbesar lalu newest fact. Baris yang tidak masuk tetap mempunyai complete total dan explicit truncation. Owner CSV memakai cakupan sama, no-store dan formula neutralization untuk ingredient, supplier dan reason.
+
+Focused6/6, final full339/339, static/type/OpenAPI172/12, browser390/1440 Axe0, touch48, polling persistence, overflow/reduced-motion dan visual review PASS; dependency/security scans0. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, readiness sekitar 60/100. Production/operator preview tidak berubah; period close/approval, sale depletion, correction/reversal, modifier/packaging/prep, real cost/count/receipt, offsite restore dan Wave 9 masih terbuka.
+
 ## 2026-09-06 — Historical inventory-period selector
 
 `CONFIRMED` dari source `5099c9ef4c8efae4c9f94fae9f8c514478dcc763`. Owner dapat memilih completed opening/closing full-count anchors yang tersedia, melihat actual-versus-theoretical untuk periode itu, mempertahankan pilihan melalui background refresh, mengekspor exact visible pair, dan reset ke latest pair. Kontrak fail-closed mewajibkan kedua opaque references, format maksimal 128 karakter dan closing lebih baru; missing/unknown/reversed input menghasilkan safe `422`. UI juga menonaktifkan closing yang tidak lebih baru dan menjelaskan recovery sebelum submit. Native controls 48px runtuh ke satu kolom di 390px tanpa overflow. Focused30/30, final full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0 dan security scans lulus. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum ada closing approval lock, correction/reversal maker-checker, data nyata, private release atau Wave 9.

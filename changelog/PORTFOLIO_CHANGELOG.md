@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-06 — SagaOPS variance evidence drilldown
+
+`CONFIRMED`; source `4152976bbb213712c37425c258070b876cb99469` pushed. Owner Dashboard menghubungkan actual-versus-theoretical per ingredient dengan bounded newest receipt dan named waste/deduction facts untuk exact completed-count pair. Complete counts serta explicit truncation mencegah bukti terpotong dianggap lengkap; disclosure tetap terbuka saat polling, CSV owner-only/no-store/formula-safe, dan projection mengecualikan raw receipt, actor, idempotency/fingerprint serta customer/payment data. Focused6/6, full339/339, static/type/OpenAPI172/12, browser390/1440 Axe0/touch48/overflow/reduced-motion, dependency0 dan secret scan0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, Waves1–8 PARTIAL, Wave9 deferred. Tidak ada deploy/payment/payroll/produk lain.
+
 ## 2026-09-06 — SagaWork account mutation uncertainty recovery
 
 `CONFIRMED`; application `46c3ecf470e9570bd78f3266fd78feea50769b26`, evidence `962eea4e3e2c7cb3519d3bd17ada8bd2e0a77534`. Password/session mutations now use one bounded attempt, exact success validation and a locked uncertainty state with no stale private rows, retry or late false success. Focused41/full721, lint/types, contracts/guards, Linux build and fresh disposable MySQL/full HTTP/Chromium passed, including genuine held-body DELETE, explicit reload, exact revoke and one audit. `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, encrypted offsite restore, release/rollback and owner/device/finance gates remain; Performance and real payroll/payment OFF.
