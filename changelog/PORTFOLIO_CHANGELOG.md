@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS receiving discrepancy dan landed fees
+
+`CONFIRMED`; exact source `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1` (core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`) pushed. SagaOPS kini memisahkan accepted/rejected PO quantity, menyimpan alasan penolakan dan additional fees, serta mengalokasikan fee secara deterministik hanya ke inventory yang diterima. Rejected stock tidak masuk HPP; outstanding backorder tetap eksplisit. Full357/focused51/check175/OpenAPI3.1/migrations12, mobile Axe0/overflow0/touch44/page-error0, dependency0 dan secret0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production, payment serta produk lain tidak berubah. Invoice/AP, supplier credit/replacement, maker-checker, real inputs, offsite restore dan UAT tetap terbuka.
+
 ## 2026-09-07 — SagaOPS multi-item purchase orders
 
 `CONFIRMED`; exact source `3393c1836043655925a6716a685e01b63a96fff3` (core `184bfdd729de99d865092d170774f5e5805477c7`) pushed. Owner Admin kini dapat menyusun dan mengedit PO `OPEN` multi-item dengan add/remove line, live count/total, duplicate recovery, submit lock dan maksimal 100 line, tanpa mengubah server-owned price/version/idempotency atau post-receipt change control. Full353/focused42/check175/OpenAPI3.1/migrations12, mobile Axe0/overflow0/touch44, dependency0 dan secret0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production, payment serta produk lain tidak berubah. Damage/loss/fees, invoice/AP/three-way match, maker-checker, real inputs, offsite restore dan UAT tetap terbuka.

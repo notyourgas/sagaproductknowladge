@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaOPS receiving discrepancy dan landed fees
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1`, core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`, branch Saga POS pushed dan clean.
+- Sinkron: accepted/rejected PO quantity, bounded rejection reason, reject-only receipt, additional fees dan deterministic accepted-inventory allocation. Rejected quantity tidak masuk stock/HPP dan outstanding backorder tetap eksplisit. Tidak ada supplier contact, secret, PII, raw receipt/callback atau identifier private.
+- Evidence full357/357, focused51/51, static/check175/OpenAPI3.1/migrations12, Chromium390 Axe0/overflow0/touch44/page-error0, dependency0 dan secret0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Invoice/AP, supplier credit/replacement, maker-checker correction/reversal, real inputs, production activation dan `BUSINESS_READY` tetap terbuka.
+
 ## 2026-09-07 — SagaOPS multi-item purchase-order authoring
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `3393c1836043655925a6716a685e01b63a96fff3`, core `184bfdd729de99d865092d170774f5e5805477c7`, branch Saga POS pushed dan clean.

@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Receiving discrepancy dan landed-fee allocation
+
+- `CONFIRMED`; exact source head `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1`, core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`. Owner Admin dapat memisahkan kuantitas barang baik dan ditolak saat menerima PO, memilih alasan rusak/hilang/salah barang/kedaluwarsa, serta mencatat biaya shipping, handling atau other.
+- Rejected quantity memproses pemenuhan supplier tetapi tidak pernah masuk stock/HPP; backorder tetap outstanding. Additional fee dialokasikan deterministik hanya ke item yang diterima dan masuk moving-average HPP. Reject-only receipt bernilai nol, durable dan exactly-once.
+- PASS full357/357, focused51/51, static/check175/OpenAPI3.1/migrations12, Chromium390 Axe serious-critical0/overflow0/touch44/page-error0, dependency0 dan secret0. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+- Next: invoice/AP dan three-way matching; supplier credit/replacement; maker-checker correction/reversal. Data bisnis nyata, backup offsite, UAT perangkat dan Wave 9 tetap `NEEDS CONFIRMATION`.
+
 ## 2026-09-07 — Admin purchase order multi-item
 
 - `CONFIRMED`; exact source head `3393c1836043655925a6716a685e01b63a96fff3`, core `184bfdd729de99d865092d170774f5e5805477c7`. Owner Admin dapat membuat dan mengedit PO `OPEN` berisi beberapa bahan dari master yang sudah ada, menambah/menghapus line, serta melihat jumlah item dan total biaya secara langsung.

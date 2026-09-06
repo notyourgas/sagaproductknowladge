@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS receiving discrepancy dan landed-fee sync
+
+- `CONFIRMED`: exact source `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1` (core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`) menambah accepted/rejected PO receiving, alasan penolakan bounded, reject-only receipt dan fee allocation ke accepted inventory HPP.
+- Alasan: operator perlu membedakan stok yang benar-benar diterima, barang bermasalah, sisa backorder dan landed cost tanpa memalsukan inventory.
+- Area/file: SagaOPS purchasing, HPP state v10, inventory variance compatibility, owner Admin, browser/domain/durable tests, product/master/portfolio changelog dan sync status.
+- PASS full357/focused51, static/check175/OpenAPI3.1/migrations12, mobile Axe/layout/touch/page-error serta dependency/secret scan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, readiness sekitar 60/100. Invoice/AP, supplier credit/replacement, maker-checker, real inputs, offsite restore dan UAT tetap terbuka.
+
 ## 2026-09-07 — SagaOPS multi-item PO sync
 
 - `CONFIRMED`: exact source `3393c1836043655925a6716a685e01b63a96fff3` (core `184bfdd729de99d865092d170774f5e5805477c7`) menambah owner Admin create/edit PO multi-line, add/remove line, live count/total, duplicate recovery dan submit lock dengan batas 100 line.

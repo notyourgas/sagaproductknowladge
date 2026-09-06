@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS receiving discrepancy dan landed fees
+
+- `CONFIRMED`; exact source `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1`, core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`. Owner Admin dapat mencatat good/rejected quantity dengan alasan bounded serta shipping/handling/other fee ketika menerima PO.
+- Rejected quantity menutup bagian fulfillment tetapi tidak membuat stock atau acquisition cost; backorder dibiarkan outstanding. Fee dialokasikan deterministik ke accepted item cost dan masuk moving-average HPP. Receipt, PO progress, inventory dan fingerprint persist/replay exactly-once.
+- PASS full357/focused51, static/check175/OpenAPI3.1/migrations12, Chromium390 Axe0/overflow0/touch44/page-error0, dependency0 dan secret0. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+- `NEEDS CONFIRMATION`: data supplier/cost nyata, backup offsite, konfigurasi bisnis, UAT perangkat dan Wave 9. Next source: invoice/AP/three-way matching, supplier credit/replacement, lalu maker-checker correction/reversal.
+
 ## 2026-09-07 — SagaOPS multi-item PO authoring
 
 - `CONFIRMED`; exact source `3393c1836043655925a6716a685e01b63a96fff3`, core `184bfdd729de99d865092d170774f5e5805477c7`. Owner Admin dapat membuat dan mengedit PO `OPEN` dengan beberapa ingredient, add/remove line, live item count/total dan batas 100 line yang selaras dengan backend.
