@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — SagaOPS cycle count dan waste ledger
+
+- `CONFIRMED`; source `25ef1a77a0213b73154f41340937ff11e7a91cd9`. Owner Admin memiliki physical cycle count absolut dan enam reasoned stock deductions, dengan optimistic version, idempotency, reason, negative-stock guard dan audit before/after quantity/value.
+- HPP state v3 merekonsiliasi receipt dan movement saat restart. Owner Dashboard menampilkan purchase serta waste/pengurangan per business date WIB; count variance sengaja tidak dijumlahkan sebagai waste. Historical HPP snapshots tetap immutable.
+- Final local gates: focused 33/33, full 323/323, static/type/OpenAPI 166 modul/12 migrasi; Admin 390/1440 dan Dashboard 1024/1440, Axe serious/critical 0, touch/overflow/reduced-motion, PostgreSQL restart, dependency0 dan added-line secret signature0.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, payment activation dan business readiness tidak berubah. Actual HPP menunggu sale consumption, opening/closing period count, modifier/packaging recipe, full-count approval/correction dan input bisnis nyata. Readiness sekitar 60/100; Waves 1–8 PARTIAL dan Wave 9 deferred.
+
 ## 2026-09-06 - SagaWork pemulihan sesi absensi yang belum selesai
 
 Klasifikasi `CONFIRMED`; sinkronisasi `accepted` untuk HRPOS17/18/25.

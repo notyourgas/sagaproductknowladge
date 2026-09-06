@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-06 — Cycle count dan reasoned deduction ledger
+
+`CONFIRMED` dari source `25ef1a77a0213b73154f41340937ff11e7a91cd9`. Before: receipt dapat menambah saldo dan moving-average cost, tetapi physical count serta waste berada di luar SagaOPS dan Dashboard tidak memiliki sumber purchase/waste. After: Owner Admin menyediakan cycle count absolut serta enam kategori deduction dengan expected-version, idempotency, reason, negative-stock guard dan ledger maksimal 20 event.
+
+Persistence HPP v3 memigrasikan state v1/v2 dengan ledger kosong dan merekonsiliasi receipt plus movement berurutan. Stored before/after quantity, value delta, cost snapshot, fingerprint, unique event version, final balance dan ingredient cost harus cocok saat restart. Count ke nol menghasilkan quantity/value nol namun mempertahankan last unit cost untuk recipe; historical checkout snapshots tidak ditulis ulang.
+
+Owner Dashboard menerima receipt dan deduction menurut business date Asia/Jakarta. `Bahan diterima` berasal dari receipt; `Waste / pengurangan` mengecualikan count variance. Ini operasional stock control, bukan final accounting classification atau actual HPP.
+
+Evidence: focused final 33/33 dan full 323/323 PASS; static/type/OpenAPI 166 modul/12 migrasi; PostgreSQL restart; Admin 390/1440 serta Dashboard 1024/1440 dengan Axe serious/critical 0, no page overflow, mobile control minimal 44px dan reduced motion. Dependency audit 0; added-line secret signature scan 0. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada deploy/activation/private runtime change.
+
+Residual: server-owned sale consumption, period opening/closing count, full count maker-checker, correction/reversal, modifier/packaging, supplier/PO lifecycle, actual variance, approved offsite restore dan operational UAT. WIS definition tetap belum dikonfirmasi.
+
 ## 2026-09-06 — Penerimaan pembelian dan moving-average HPP
 
 - `CONFIRMED`; exact source final `a742d5f98608c3729b7e80f523a450346499295d`, berdasarkan source, test dan laporan kanonik Saga POS. Tidak ada data supplier atau receipt bisnis dipublikasikan.

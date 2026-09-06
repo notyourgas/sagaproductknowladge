@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-06 — Cycle count dan waste ledger lokal
+
+- `CONFIRMED`; source `25ef1a77a0213b73154f41340937ff11e7a91cd9` menambah owner-only physical cycle count, six reasoned deductions, idempotent/versioned ledger, restart reconciliation dan Owner Dashboard purchase/waste by Jakarta business date.
+- Before: stock hanya bertambah dari receipt. After: operator dapat mencocokkan saldo fisik dan menjelaskan pengurangan tanpa saldo negatif; ledger merekam before/after quantity, value delta, actor, reason dan timestamp.
+- Validation: focused 33/33, full 323/323, static/type/OpenAPI PASS; Admin/Dashboard responsive browser, Axe/touch/overflow/reduced-motion, PostgreSQL recovery, dependency audit dan added-line secret scan lulus.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/payment/gate/business readiness tidak berubah. Actual HPP, sale consumption, period counts, full-count approval, reversal, modifier/packaging dan PO tetap terbuka. Readiness sekitar 60/100; Waves 1–8 PARTIAL, Wave 9 deferred.
+
 ## 2026-09-06 — Penerimaan pembelian mengalir ke moving-average HPP
 
 - `CONFIRMED`; source final `a742d5f98608c3729b7e80f523a450346499295d` menambah owner-only supplier receipt, package-to-base-unit conversion, idempotent inventory quantity/value update dan moving-average ingredient cost dengan presisi fractional per base unit.

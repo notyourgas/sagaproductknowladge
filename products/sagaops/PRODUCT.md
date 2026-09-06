@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-06 — Cycle count, waste ledger, dan Dashboard stok
+
+- Klasifikasi `CONFIRMED`; source final `25ef1a77a0213b73154f41340937ff11e7a91cd9` pada branch Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Owner Admin kini dapat menyimpan saldo fisik absolut melalui cycle count atau mengurangi saldo dengan alasan basi/kedaluwarsa, waste produksi, rusak, pemakaian internal, sampel/promosi, dan hilang/pencurian. Mutasi owner-only, versioned, idempotent, beralasan dan menolak stok negatif.
+- Ledger menampilkan kuantitas sebelum/sesudah, delta nilai HPP, actor dan waktu. HPP state v3 memutar ulang receipt serta movement menurut versi dan gagal tertutup bila fingerprint, delta, saldo atau ingredient cost tidak cocok. Count nol mempertahankan unit cost terakhir tanpa menyisakan nilai persediaan.
+- Owner Dashboard menampilkan nilai bahan diterima dan waste/pengurangan pada tanggal bisnis WIB yang dipilih; selisih cycle count tidak diam-diam diklasifikasikan sebagai waste. Snapshot HPP transaksi lama tetap immutable.
+- Validasi: focused final 33/33, full 323/323, static/type/OpenAPI 166 modul/12 migrasi; Admin 390/1440 dan Dashboard 1024/1440, Axe serious/critical 0, touch/overflow/reduced-motion serta visual review lulus. Dependency audit 0 dan scan signature secret pada baris tambahan 0.
+- HPP aktual tetap belum tersedia: sale consumption, opening/closing period count, modifier/packaging recipe, full-count approval dan correction/reversal masih terbuka. Readiness tetap sekitar 60/100; Waves 1–8 PARTIAL, Wave 9 deferred, production tidak berubah.
+
 ## 2026-09-06 — Penerimaan pembelian dan moving-average HPP
 
 - Klasifikasi `CONFIRMED`; source final `a742d5f98608c3729b7e80f523a450346499295d` pada branch Saga POS. Scope hanya Kopi Saga F&B dan status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
