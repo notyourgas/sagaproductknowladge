@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 7 September 2026 WIB
-Evidence status: SagaBook production terverifikasi aktif pada exact `ca549d185d02786e1233c44da5562b55830c490d`, immutable release `20260903141813-ca549d1`; nginx, PHP-FPM, queue worker, dan public login redirect merespons. Kandidat DP custom sudah berada di canonical main `d01afc3a51f687c196601808648f2660afdec04a`, sedangkan guard draft Block Time exact `9bab95864246708345f2c01321991b849c15c4b8` sudah dipush pada branch terpisah. Keduanya `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada release, lock, atau mutasi production pada sinkronisasi ini. Status produk keseluruhan tetap `PRODUCTION_ACTIVATED / RELEASE_CANDIDATE_PENDING / BUSINESS_READY=false`.
+Evidence status: SagaBook production terverifikasi aktif pada exact `9bab95864246708345f2c01321991b849c15c4b8`, immutable release `20260906181822-9bab958`, rollback `20260903141813-ca549d1`. Custom DP dan Block Time refresh guard telah `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; encrypted backup/offsite restore, verifier, service/journal, dan public-security smoke lulus. Authenticated Owner/Staff UAT serta actual rollback drill masih pending karena credential bridge lokal belum aktif. Shared release lock sudah dilepas; `BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -16,7 +16,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- Kandidat S423 mencegah bootstrap dashboard mereset isian ketika dialog Block
+- S423 mencegah bootstrap dashboard mereset isian ketika dialog Block
   Time sedang terbuka. Interval polling, focus, visibility, invalidasi lintas
   tab, dan pemeriksaan versi release menghormati editor aktif; feed notifikasi
   ringan tetap berjalan dan refresh penuh kembali setelah dialog ditutup.
@@ -26,10 +26,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   lulus Playwright mobile/tablet/desktop 3/3, regresi dialog 7/7, regresi DP
   multi-device 6/6, backend terkait 22/22 (217 assertion), tooling dashboard
   18/18, typecheck, build, design audit, dan audit dependency nol. Status
-  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  BUSINESS_READY=false`.
 
-- Kandidat S422 menambahkan pilihan `DP custom` pada booking manual agar
+- S422 menambahkan pilihan `DP custom` pada booking manual agar
   operator dapat mencatat DP di bawah atau di atas 50% sebagai nominal Rupiah
   exact. Total paket dan add-on tetap dihitung server; nominal kosong, bukan
   bilangan bulat, kurang dari atau sama dengan nol, sama dengan total, dan
@@ -41,13 +42,12 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   Feature 1.341/1.341 (15.125 assertion), focused 11/11 (133 assertion),
   typecheck, build, audit dependency high-severity, serta Playwright 6/6 pada viewport
   320x568, 360x800, 390x844, 430x932, dan 1440x900. Status `CONFIRMED /
-  SOURCE_PUSHED / LOCAL_VALIDATED / RELEASE_BLOCKED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
-  Release berhenti sebelum artifact, upload, lock, atau atomic switch karena
-  penyimpanan offsite menolak tiga arsip terenkripsi akibat kuota penuh.
-  Production terverifikasi tetap sehat pada exact
-  `ca549d185d02786e1233c44da5562b55830c490d`, release
-  `20260903141813-ca549d1`; shared release lock tersedia.
+  SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  BUSINESS_READY=false`. Blocker kuota offsite lama sudah ditutup oleh fresh
+  encrypted backup/checksum/offsite/disposable restore. Runtime gabungan aktif
+  pada exact `9bab95864246708345f2c01321991b849c15c4b8`, release
+  `20260906181822-9bab958`; shared release lock sudah dilepas.
 
 - Rilis mobile kumulatif exact `80c100c0c1aadf2a276fb8b0c424078718faa059`
   membuat sidebar admin hanya menandai satu route aktif, memperbaiki kontras

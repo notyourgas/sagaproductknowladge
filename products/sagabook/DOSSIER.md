@@ -7,6 +7,15 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Rilis gabungan S422/S423 exact source
+  `9bab95864246708345f2c01321991b849c15c4b8` aktif pada immutable release
+  `20260906181822-9bab958`, rollback `20260903141813-ca549d1`. Full exact-main
+  gates, multi-device browser acceptance, immutable artifact, fresh encrypted
+  backup/checksum/offsite/disposable restore, atomic activation, verifier,
+  service/journal, dan public-security smoke lulus. Shared lock sudah dilepas.
+  Authenticated Owner/Staff UAT dan actual rollback drill belum lulus karena
+  credential bridge lokal belum aktif; `BUSINESS_READY=false`.
+
 - S423 exact source `9bab95864246708345f2c01321991b849c15c4b8`
   mendaftarkan dialog Block Time sebagai editor aktif selama terbuka. Bootstrap
   dashboard dari interval, focus, visibility, invalidasi lintas tab, dan
@@ -17,8 +26,8 @@ dalam satu dokumen public-safe.
   regresi dialog 7/7, regresi DP custom multi-device 6/6, backend 22/22 (217
   assertion), tooling dashboard 18/18, typecheck/build/design audit, serta
   audit dependency nol lulus. Status `CONFIRMED / SOURCE_PUSHED /
-  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
-  BUSINESS_READY=false`.
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING / BUSINESS_READY=false`.
 
 - S422 exact source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c`
   memperluas engine DP booking manual dengan plan `deposit_custom`. Operator
@@ -31,8 +40,9 @@ dalam satu dokumen public-safe.
   (15.125 assertion), focused 11/11 (133 assertion), typecheck/build, audit
   Composer/npm/OSV nol, dan visual 6/6 pada empat profil mobile 320-430 px
   serta desktop lulus tanpa overflow dengan target kontrol minimal 44 px.
-  Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+  Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  BUSINESS_READY=false`.
 
 - Rilis kumulatif mobile exact
   `80c100c0c1aadf2a276fb8b0c424078718faa059` aktif sebagai immutable release

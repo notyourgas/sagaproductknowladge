@@ -4,6 +4,17 @@
 
 `CONFIRMED`; source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5` pushed. Owner dapat mengunci completed full-count pair yang berurutan; server menyimpan immutable count references, timestamps dan version boundaries, menolak overlap/coverage mismatch/idempotency drift serta memvalidasi ulang chain saat restart. Focused44/full345, check175/OpenAPI3.1/migrations12, responsive Axe0/overflow0/touch44 dan scans0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bukan accounting/maker-checker approval dan tidak mengubah production, payment atau produk lain.
 
+## 2026-09-07 — SagaBook S422/S423 production activation
+
+SagaBook production aktif pada exact source
+`9bab95864246708345f2c01321991b849c15c4b8`, release
+`20260906181822-9bab958`, rollback `20260903141813-ca549d1`. Custom DP di
+bawah/di atas 50% dan Block Time draft refresh guard telah melewati full
+exact-main gates, immutable artifact, fresh encrypted backup/offsite restore,
+atomic activation, verifier, service/journal, dan public-security smoke. Shared
+lock sudah dilepas. Authenticated Owner/Staff UAT serta actual rollback drill
+masih pending karena credential bridge lokal belum aktif; `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaOPS paid-sale inventory consumption
 
 `CONFIRMED`; exact source `eb3d60bfd169f0bd7161378156662aa4380e53c7` pushed. Paid transition authoritative kini mengonsumsi immutable recipe snapshot secara exactly-once dan transactionally persisted; pending/failed tetap stock-neutral, shortage eksplisit dan tidak mengubah payment truth. Admin membedakan sale consumption dari waste. Focused43/43, full344/344, check175/OpenAPI3.1/migrations12, browser390/1440 Axe0/overflow0, dependency/secret0 PASS. `LOCAL_VALIDATED / STAGING_BUILD_READY / IMPLEMENTED_NOT_DEPLOYED`; redeploy protected preview diblokir limit harian Vercel, sehingga preview lama bukan exact source. Production activation, business readiness dan produk lain tidak berubah.

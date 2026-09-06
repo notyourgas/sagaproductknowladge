@@ -4,21 +4,24 @@ Evidence cut-off: 7 September 2026 WIB
 
 Block Time refresh guard S423 exact source
 `9bab95864246708345f2c01321991b849c15c4b8` telah `CONFIRMED /
-SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PRODUCTION_UNCHANGED`. Dialog menjadi editor aktif sehingga interval polling,
+SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. Dialog menjadi editor aktif sehingga interval polling,
 focus, visibility, invalidasi lintas tab, dan release reload tidak dapat
 menghidrasi ulang draft; notifikasi ringan tetap berjalan dan refresh penuh
 pulih setelah close. Draft in-memory, tanpa perubahan API/database/permission.
 Playwright guard 3/3 pada mobile/tablet/desktop, regresi dialog 7/7 termasuk
 forced colors/reduced motion/no-overflow, regresi DP multi-device 6/6,
 backend terkait 22/22 (217 assertion), tooling dashboard 18/18, typecheck,
-build, design audit, serta audit dependency nol lulus. Next gate: review/merge
-exact candidate lalu guarded release gabungan bersama S422; `BUSINESS_READY=false`.
+build, design audit, serta audit dependency nol lulus. Production aktif pada
+release `20260906181822-9bab958` dengan rollback `20260903141813-ca549d1`;
+backup/restore, verifier, service/journal dan public-security smoke lulus.
+Next gate: authenticated Owner/Staff UAT lalu actual rollback drill;
+`BUSINESS_READY=false`.
 
 Custom DP booking manual S422 exact source
 `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` telah `CONFIRMED /
-SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PRODUCTION_UNCHANGED`. UI menyediakan `Bayar lunas`, `DP 50%`, dan `DP custom`;
+SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. UI menyediakan `Bayar lunas`, `DP 50%`, dan `DP custom`;
 nominal custom dan sisa pembayaran tampil langsung, dengan input/tombol 44 px
 dan tanpa overflow pada 320x568, 360x800, 390x844, 430x932, serta 1440x900.
 Server menghitung total katalog authoritative dan menolak nominal invalid;
@@ -26,9 +29,10 @@ engine installment mempertahankan proof verification, append-only correction,
 closing/report/export, void, tenant/cabang, permission, idempotency, optimistic
 lock, dan read-after-write. Full Feature 1.341/1.341 (15.125 assertion),
 focused 11/11 (133 assertion), visual 6/6, typecheck/build, dan tiga audit
-dependency nol lulus. Tidak ada migration atau deploy. Next gate: review/merge
-exact candidate, full exact-main gate, lalu guarded release bila diotorisasi;
-`BUSINESS_READY=false`.
+dependency nol lulus. Tidak ada migration baru. Runtime gabungan aktif pada
+exact source `9bab95864246708345f2c01321991b849c15c4b8`, release
+`20260906181822-9bab958`. Next gate: authenticated Owner/Staff UAT lalu actual
+rollback drill; `BUSINESS_READY=false`.
 
 Mobile admin shell dan operational layout exact source
 `80c100c0c1aadf2a276fb8b0c424078718faa059` telah `CONFIRMED /

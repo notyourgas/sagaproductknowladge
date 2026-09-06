@@ -6,6 +6,21 @@
 - Exact ingredient coverage, chronological ordering dan previous-closing-to-next-opening chain enforced. Overlap/reused closing/idempotency drift dan restore tampering fail closed. HPP state v6 memigrasi v1–5 tanpa mengarang period record.
 - Focused44/full345, check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0 PASS. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bukan accounting close, independent approval atau business readiness.
 
+## 2026-09-07 — SagaBook custom DP dan Block Time refresh guard aktif
+
+- `CONFIRMED`; production aktif pada exact source
+  `9bab95864246708345f2c01321991b849c15c4b8`, release
+  `20260906181822-9bab958`, rollback `20260903141813-ca549d1`.
+- Booking manual kini mendukung nominal DP custom di bawah atau di atas 50%
+  dengan total server authoritative. Dialog Block Time menahan bootstrap penuh
+  selama editor terbuka sehingga polling/focus/visibility tidak mereset draft;
+  notifikasi ringan tetap berjalan dan refresh penuh kembali setelah close.
+- Full exact-main tests, multi-device browser acceptance, build dan dependency
+  audit, MySQL disposable, immutable artifact, encrypted backup/offsite restore,
+  activation, verifier, service/journal, dan public-security smoke lulus.
+  Authenticated Owner/Staff UAT dan actual rollback drill masih pending karena
+  credential bridge lokal belum aktif; `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaOPS paid-sale inventory truth
 
 - `CONFIRMED`; source `eb3d60bfd169f0bd7161378156662aa4380e53c7` dan release record `4e7343ec1775a18cc9ce503f535fe0cb2bb1d3fc` pushed. Paid transition authoritative mengonsumsi immutable recipe snapshot exactly-once; pending/failed tidak mengubah stok. Shortage menjadi explicit reconciliation evidence tanpa membatalkan captured payment, dan incomplete recipe tetap coverage gap.

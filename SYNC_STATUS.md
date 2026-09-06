@@ -7,6 +7,19 @@
 - Evidence focused44/44, full345/345, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency0 dan secret0.
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bukan accounting close/approval, maker-checker, production activation atau `BUSINESS_READY`.
 
+## 2026-09-07 — SagaBook S422/S423 production activation
+
+- Status: `partially accepted`; exact source
+  `9bab95864246708345f2c01321991b849c15c4b8` aktif pada release
+  `20260906181822-9bab958`, rollback `20260903141813-ca549d1`.
+- DP custom dan Block Time refresh guard telah `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`. Backup terenkripsi fresh, checksum, offsite copy,
+  disposable restore, immutable artifact, atomic switch, verifier,
+  service/journal, serta public/security smoke lulus; shared lock sudah dilepas.
+- Authenticated Owner/Staff UAT tidak dijalankan karena bridge kredensial lokal
+  belum aktif. Sesuai kontrak, actual rollback drill menunggu UAT tersebut.
+  Tidak ada credential atau data customer dibaca; `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaOPS paid-sale inventory consumption
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `eb3d60bfd169f0bd7161378156662aa4380e53c7` dan release record `4e7343ec1775a18cc9ce503f535fe0cb2bb1d3fc` pushed dan clean.

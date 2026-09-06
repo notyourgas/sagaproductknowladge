@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-09-07 - DP custom dan Block Time refresh guard aktif di production
+
+- Exact source `9bab95864246708345f2c01321991b849c15c4b8` aktif pada release
+  `20260906181822-9bab958`, rollback `20260903141813-ca549d1`.
+- Booking manual menerima nominal DP custom di bawah atau di atas 50% dengan
+  total server authoritative. Dialog Block Time tidak lagi kehilangan draft
+  akibat polling, focus, visibility, invalidasi lintas tab, atau release reload.
+- Full Feature 1.341/1.341 (15.125 assertion), browser multi-device, build,
+  typecheck, design/dependency audit, MySQL disposable, immutable artifact,
+  encrypted backup/checksum/offsite/disposable restore, atomic activation,
+  verifier, service/journal, dan public-security smoke lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  BUSINESS_READY=false`. Bridge kredensial lokal belum aktif; shared release
+  lock sudah dilepas.
+
 ## 2026-09-07 - Kandidat Block Time tidak lagi kehilangan draft saat refresh
 
 - Sebelum: focus, visibility, invalidasi lintas tab, atau interval polling dapat

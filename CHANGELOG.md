@@ -6,6 +6,21 @@
 - PASS focused44/full345, check175/OpenAPI3.1/migrations12, Admin accessibility/layout/touch, dependency dan secret scan.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; accounting approval/reopen, maker-checker dan business readiness tetap terbuka.
 
+## 2026-09-07 — SagaBook custom DP dan Block Time refresh guard production
+
+- `CONFIRMED`: exact source `9bab95864246708345f2c01321991b849c15c4b8`
+  aktif pada immutable release `20260906181822-9bab958`, dengan rollback
+  `20260903141813-ca549d1`.
+- DP custom di bawah/di atas 50% dan perlindungan draft Block Time telah
+  melewati full Feature 1.341/1.341 (15.125 assertion), exact-main browser
+  regression, build/typecheck/design audit, dependency audit, MySQL disposable,
+  immutable artifact, encrypted backup/checksum/offsite/disposable restore,
+  atomic activation, verifier, service/journal, dan public-security smoke.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; credential bridge lokal belum aktif, sehingga
+  authenticated Owner/Staff UAT dan actual rollback drill belum diklaim lulus.
+  Shared release lock sudah dilepas dan `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaOPS paid-sale inventory sync
 
 - `CONFIRMED`: exact source `eb3d60bfd169f0bd7161378156662aa4380e53c7` mengurangi stok bahan dari immutable paid-order recipes secara exactly-once dan mencatat shortage eksplisit; pending/failed payment tetap stock-neutral.
