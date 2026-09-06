@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — PO edit dan outstanding cancellation
+
+- `CONFIRMED`; source `ef4077a1958be07d039b8c04bca4a488b1baf095` (core `23ed7da7fdb0214f975de454df94589907b54b0d`) menambah pre-receipt amendment dan irreversible cancel untuk sisa PO.
+- Revision dan idempotency chain dipersistenkan; stale/conflicting action, edit setelah receipt, cancel PO complete, receive setelah cancel dan restore tampering ditolak. Partial cancel mempertahankan stok/cost yang sudah diterima.
+- PASS full352/final-focused40/check175/OpenAPI3.1/migrations12, responsive Admin Axe0/overflow0/touch44 dan scans0.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah. Multi-line Admin, damage/loss, fees, invoice/AP, maker-checker, real inputs dan business readiness belum selesai.
+
 ## 2026-09-07 — PO-linked partial receiving
 
 - `CONFIRMED`; exact source head `84cc6cad4d0a666dc4437b44757f7ba2b10c2125` (core `8ae899b10a4052933c4b9472e479b255007d7f8a`) menambah per-line partial receiving dengan OPEN/PARTIAL/RECEIVED progress dan receipt evidence yang tertaut ke PO, plus aggregate-total overflow guard.

@@ -6,6 +6,13 @@
 - Scope: Staff name edit/draft-delete lost-response recovery, full869/95 and exact-source Linux/MySQL/full HTTP/Chromium acceptance. No POS/shared runtime, API/domain/schema/grant, pricing or founder-policy change.
 - Delivery: `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / BELUM DEPLOY HR`; public `711ef77` unchanged/HTTP200. Joint-native, offsite encrypted restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
 
+## 2026-09-07 — SagaOPS purchase-order edit/cancel
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `ef4077a1958be07d039b8c04bca4a488b1baf095`, core `23ed7da7fdb0214f975de454df94589907b54b0d`, branch Saga POS pushed dan clean.
+- Sinkron: owner-only pre-receipt amendment, irreversible outstanding cancellation, stock-neutral partial cancel, revision/fingerprint chain, optimistic version dan exact replay. Tidak ada supplier contact, secret, PII, raw receipt/callback atau identifier private.
+- Evidence full352/352, final focused40/40, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency0 dan secret0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100. Multi-line Admin edit, AP/fees/damage, real inputs, production activation dan `BUSINESS_READY` tetap terbuka.
+
 ## 2026-09-07 — SagaWork Staff import recovery
 
 - Status: `accepted`; classification `CONFIRMED` for provider-only source `f52f9a318ca310aaff776171dcd9980515f84971` and evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`.

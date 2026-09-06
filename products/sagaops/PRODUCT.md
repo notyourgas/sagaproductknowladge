@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Kontrol revisi dan pembatalan purchase order
+
+- `CONFIRMED`; exact source head `ef4077a1958be07d039b8c04bca4a488b1baf095`, core `23ed7da7fdb0214f975de454df94589907b54b0d`. Owner dapat merevisi supplier, expected date, kemasan, kuantitas, konversi dan biaya PO hanya sebelum receipt pertama.
+- PO `PARTIALLY_RECEIVED` dapat dibatalkan untuk menutup sisa outstanding tanpa membalik receipt, stok, inventory value atau moving-average HPP yang sudah masuk. PO `RECEIVED` tidak dapat dibatalkan; PO `CANCELLED` tidak dapat diedit atau menerima stok baru.
+- Creation/amend/cancel/receipt replay exactly-once dengan optimistic version, durable revision/fingerprint chain dan restart validation. Admin menampilkan revision, edit form, locked explanation dan destructive confirmation.
+- PASS full352, final focused40, check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100. Multi-line Admin editor, damage/loss, fee/AP, maker-checker, data nyata, offsite recovery dan operational acceptance tetap terbuka.
+
 ## 2026-09-07 — Partial receiving tertaut purchase order
 
 - `CONFIRMED`; exact source head `84cc6cad4d0a666dc4437b44757f7ba2b10c2125`, core implementation `8ae899b10a4052933c4b9472e479b255007d7f8a` dan documentation `6aa01dd967ec4f85fc386619da487009105dd44b` pushed. Owner Admin dapat menerima sebagian atau seluruh sisa line PO dengan progress `OPEN → PARTIALLY_RECEIVED → RECEIVED`.

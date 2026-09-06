@@ -4,6 +4,14 @@
 
 - `CONFIRMED`; application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, final harness `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`. Edit name and draft deletion now fail safely on lost/late responses through one bounded request, exact success validation and reload-only People recovery. Full869/95 plus Linux/MySQL/HTTP/Chromium passed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged; release gates remain.
 
+## 2026-09-07 — SagaOPS PO edit/cancel sync
+
+- `CONFIRMED`: source `ef4077a1958be07d039b8c04bca4a488b1baf095` (core `23ed7da7fdb0214f975de454df94589907b54b0d`) menambah pre-receipt PO edit dan cancellation untuk outstanding quantity tanpa reversal stok yang sudah diterima.
+- Alasan: operator membutuhkan koreksi rencana sebelum fulfillment dan cara audit-safe menutup sisa pesanan supplier.
+- Area/file: SagaOPS purchasing, HPP state v9, owner Admin, tests, product/master/portfolio changelog dan sync status.
+- PASS full352/final-focused40, static/check175/OpenAPI3.1/migrations12, Admin responsive accessibility/layout/touch dan dependency/secret scan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, readiness sekitar 60/100. Multi-line UI, invoice/AP/fees/damage, real inputs, offsite restore dan business readiness terbuka.
+
 ## 2026-09-07 — SagaWork Staff import recovery
 
 - `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`. HR CSV commit now fails safely on lost/late responses through one bounded request, exact preview/batch/row validation and reload-only People write recovery. Full837/93 plus exact-source Linux/MySQL/HTTP/Chromium passed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint/offsite restore/release and owner/device/finance gates remain.

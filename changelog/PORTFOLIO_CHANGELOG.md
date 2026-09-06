@@ -4,6 +4,10 @@
 
 `CONFIRMED`; application `0bc5b22b5124bb58ab415a3847f107f72f687d50`, harness `aecb6613a017fef1af870f6b639d2aa22247f829`, evidence `04c550c92fc56e8af36a548247b3daf26ffbb639`. Edit name and draft deletion now use one bounded request, exact success validation and reload-only full People recovery on uncertainty. Focused32/full869 plus Linux/MySQL/full HTTP/Chromium passed with one request/audit each, persisted edit, atomic cleanup and mobile/Axe/device guards. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged; release gates remain.
 
+## 2026-09-07 — SagaOPS PO edit dan cancellation control
+
+`CONFIRMED`; exact source `ef4077a1958be07d039b8c04bca4a488b1baf095` (core `23ed7da7fdb0214f975de454df94589907b54b0d`) pushed. Owner SagaOPS dapat merevisi PO sebelum receipt dan membatalkan sisa outstanding secara irreversible; partial cancel tidak membalik receipt, stok atau HPP yang sudah tercatat. Revision/fingerprint chain, optimistic concurrency, exactly-once replay, PostgreSQL rollback/restart serta responsive Admin controls lulus full352/final-focused40/check175/OpenAPI3.1/migrations12/Axe0/overflow0/touch44/scans0. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100 dan production, payment, produk lain serta business readiness tidak berubah.
+
 ## 2026-09-07 — SagaWork Staff import lost-response recovery
 
 `CONFIRMED`; source `f52f9a318ca310aaff776171dcd9980515f84971`, evidence `0d8f69a9ea37780966f11994fc05bdb61a630f9e`. HR CSV commit now uses one bounded request, exact preview/batch/row validation and reload-only full People write recovery on uncertainty. Focused30/full837 plus Linux/MySQL/full HTTP/Chromium passed with one batch/per-row audits, atomic drafts without accounts and mobile/Axe/device guards. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.
