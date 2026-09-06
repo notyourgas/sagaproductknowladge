@@ -8,13 +8,21 @@ zoom minimum tetap menutup slot dan pan dibatasi pada tepi foto, termasuk
 rotasi kanan 90 derajat.
 
 Ledger lulus: regression red lalu focused unit/component/export/store hijau;
-Vitest 284/284; Playwright editor/review 8/8 pada mobile dan desktop; format,
-lint, typecheck, client 2.134 modul + SSR 208 modul, bundle 316,5 KiB dari 450
-KiB, npm audit nol, exact clean/upstream provenance, serta remote exact.
-No-upload tetap utuh dan tidak ada perubahan backend/API/database/migration,
-payment, atau produk lain. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; production tetap S382 dan
-physical UAT serta `BUSINESS_READY` tidak diklaim.
+Vitest 284/284; Playwright editor/review 8/8 dan full 170 pass + 3 skip
+terkontrol; format, lint, typecheck, client 2.134 modul + SSR 208 modul, bundle
+316,5 KiB dari 450 KiB, dua npm audit nol, exact clean/upstream provenance,
+serta remote exact. No-upload tetap utuh dan tidak ada perubahan
+backend/API/database/migration, payment, atau produk lain.
+
+Studio aktif pada immutable release `20260906180200-8b11975`; backend tetap
+exact `ceb33732144badbb929d212b0d5d7b3fd0e24474` / release
+`20260903003542-ceb3373`. Artifact, git bundle, salinan terpisah, fresh backup
+terenkripsi tiga arsip/checksum/offsite/disposable restore, exclusive shared
+lock, atomic switch, public/security smoke, actual rollback ke
+`20260903005049-6bd8e54`, reaktivasi, service, journal, dan provenance lulus.
+Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+BUSINESS_READY=false`.
 
 S382 production pair: backend
 `ceb33732144badbb929d212b0d5d7b3fd0e24474` / release
@@ -36,11 +44,10 @@ smoke; security header; journal bersih; dan pointer rollback tervalidasi.
 Belum lulus: physical UAT exact pair 12 gate non-printer, count 50/200/500,
 konfirmasi operator/reviewer, dan receipt `ready_for_human_release_review`.
 Owner exception hanya menerima risiko kapasitas dan ketiadaan receipt saat
-activation; tidak mengubah safety guard atau menjadi bukti UAT. Rollback pair
-tetap backend `20260831080506-5f642d8` dan Studio
-`20260831081456-8257f49`; `UAT_ACCEPTED` tidak diklaim.
+activation; tidak mengubah safety guard atau menjadi bukti UAT. Rollback
+Studio sekarang `20260903005049-6bd8e54`; `UAT_ACCEPTED` tidak diklaim.
 
-Evidence cut-off: 3 September 2026 WIB
+Evidence cut-off: 7 September 2026 WIB
 
 S364 provenance response-policy enforcement: exact pushed source
 `2371db8e746aeaed6a76c21daa80e14bc3ff77fb` membuat probe S344 menolak

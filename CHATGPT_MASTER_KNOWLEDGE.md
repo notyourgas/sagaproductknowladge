@@ -1779,8 +1779,15 @@ sama, zoom minimum tetap cover, dan pan berhenti di tepi foto agar tidak
 menampilkan area kosong. Vitest 284/284, Playwright editor/review 8/8,
 format/lint/typecheck, client/SSR build, bundle budget, npm audit nol, dan
 remote exact lulus. Foto/path/output tetap lokal; tidak ada backend, database,
-payment, SagaBook, atau deploy. Status `IMPLEMENTED_NOT_DEPLOYED /
-PRODUCTION_UNCHANGED`; jangan menyebut perbaikan sudah tersedia di production.
+payment, atau perubahan SagaBook. Studio aktif pada immutable release
+`20260906180200-8b11975`; backend tetap exact
+`ceb33732144badbb929d212b0d5d7b3fd0e24474` / release
+`20260903003542-ceb3373`. Fresh encrypted backup/checksum/offsite/disposable
+restore, artifact/bundle/salinan terpisah, shared lock, atomic switch,
+public/security smoke, actual rollback ke `20260903005049-6bd8e54`, reaktivasi,
+service/journal, dan provenance lulus. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+BUSINESS_READY=false`.
 
 Production SagaView S382 memakai backend exact
 `ceb33732144badbb929d212b0d5d7b3fd0e24474` pada release
@@ -1793,7 +1800,7 @@ actual rollback/reactivation, service, public/security smoke, journal, dan
 provenance lulus. Rollback pair adalah backend `20260831080506-5f642d8` dan
 Studio `20260831081456-8257f49`.
 
-Status exact pair `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+Status prior S382 pair `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
 BUSINESS_READY=false`. Owner menerima risiko kapasitas serta activation tanpa
 receipt physical UAT exact pair, tetapi pengecualian tidak melewati safety

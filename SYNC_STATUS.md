@@ -27,12 +27,18 @@
   `8b1197534bec3e426d8596784915a4ab61567b1a` pushed dan clean.
 - Disinkronkan: full-source photo viewport, shared preview/export geometry,
   cover-safe zoom, edge-clamped pan, dan right-angle rotation support.
-- Evidence focused hijau, Vitest 284/284, Playwright editor/review 8/8,
-  format/lint/typecheck, client/SSR build, bundle 316,5/450 KiB, npm audit nol,
-  dan remote exact. Foto/path/output tetap lokal dan tidak ada data restricted.
-- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
-  S382. Backend/API/database, pricing/payment, SagaBook, physical UAT, dan
-  `BUSINESS_READY=false` tidak berubah.
+- Evidence focused hijau, Vitest 284/284, full Playwright 170 pass + 3 skip
+  terkontrol, format/lint/typecheck, client/SSR build, bundle 316,5/450 KiB,
+  dua npm audit nol, dan remote exact. Foto/path/output tetap lokal dan tidak
+  ada data restricted.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` pada Studio release
+  `20260906180200-8b11975`; backend tetap `20260903003542-ceb3373`. Fresh
+  encrypted backup/checksum/offsite/disposable restore, immutable artifact,
+  shared lock, atomic switch, public/security smoke, actual rollback ke
+  `20260903005049-6bd8e54`, reaktivasi, service/journal, dan provenance lulus.
+- Physical UAT 12 gate tetap residual; `UAT_ACCEPTED` tidak diklaim dan
+  `BUSINESS_READY=false`. Backend/API/database, pricing/payment, dan SagaBook
+  tidak berubah.
 
 ## 2026-09-07 — SagaOPS Owner Dashboard modular preview
 

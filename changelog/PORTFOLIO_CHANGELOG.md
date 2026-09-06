@@ -23,9 +23,14 @@ pushed. Preview tidak lagi memindahkan bitmap yang sudah terpotong sebesar
 slot: sumber penuh tetap di belakang viewport, preview/export memakai geometri
 yang sama, zoom minimum cover, dan pan dibatasi pada tepi foto. Vitest 284/284,
 Playwright editor/review 8/8, format/lint/typecheck, client/SSR build, bundle
-316,5/450 KiB, npm audit nol, clean/remote exact PASS. `LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED`; production tetap S382, no-upload tetap, dan tidak
-ada perubahan backend/database/payment/SagaBook atau business readiness.
+316,5/450 KiB, npm audit nol, clean/remote exact PASS. Studio release
+`20260906180200-8b11975` aktif dengan fresh encrypted backup/restore, artifact
+immutable, shared lock, atomic switch, public/security smoke, actual rollback
+ke `20260903005049-6bd8e54`, reaktivasi, service/journal, dan provenance PASS.
+Backend tetap `20260903003542-ceb3373`; no-upload tetap dan tidak ada perubahan
+database/payment/SagaBook. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+BUSINESS_READY=false`; physical UAT 12 gate belum diklaim lulus.
 
 ## 2026-09-07 — SagaOPS Owner Dashboard modular protected preview
 

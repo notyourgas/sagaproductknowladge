@@ -3,7 +3,8 @@
 ## 2026-09-07 - S383 non-destructive slot photo pan
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED`; `BUSINESS_READY=false`.
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false`.
 - Before: preview menerapkan `object-cover` pada elemen sebesar slot lalu
   memindahkan elemen yang sudah terpotong. Pan/zoom dapat membuka area putih
   dan preview tidak memakai geometri sumber yang sama dengan export PNG.
@@ -11,14 +12,19 @@
   menjaga foto utuh di belakang clipping viewport, menyatukan geometri
   preview/export, menahan zoom minimum pada cover, dan membatasi pan di tepi
   foto termasuk rotasi 90 derajat.
-- Evidence: focused unit/component/export/store hijau; full Vitest 284/284;
-  Playwright editor/review 8/8; format, lint, typecheck, client/SSR build,
-  bundle 316,5 KiB dari batas 450 KiB, npm audit nol, worktree bersih, dan
-  remote exact.
+- Evidence source: focused unit/component/export/store hijau; full Vitest
+  284/284; full Playwright 170 pass + 3 skip terkontrol; format, lint,
+  typecheck, client/SSR build, bundle 316,5 KiB dari batas 450 KiB, dua npm
+  audit nol, worktree bersih, dan remote exact.
+- Delivery: Studio release `20260906180200-8b11975`; backend tetap
+  `20260903003542-ceb3373`. Artifact immutable, git bundle/salinan terpisah,
+  fresh encrypted backup/checksum/offsite/disposable restore, shared lock,
+  atomic switch, public/security smoke, actual rollback ke
+  `20260903005049-6bd8e54`, reaktivasi, service, journal, dan provenance lulus.
 - Boundary: foto, thumbnail, path, editor, dan output tetap lokal. Tidak ada
-  backend/API/database/migration, pricing/payment, SagaBook, atau deployment.
-  Production tetap S382; next gate adalah review/deploy terpisah tanpa klaim
-  physical UAT atau business readiness.
+  backend/API/database/migration, pricing/payment, atau perubahan SagaBook.
+  Physical UAT 12 gate masih residual; `UAT_ACCEPTED` dan `BUSINESS_READY`
+  tidak diklaim.
 
 ## 2026-09-03 - S382 production activation dan npm 9 lockfile compatibility
 

@@ -4,7 +4,9 @@ Updated: 7 September 2026 WIB
 
 SagaView Studio S383 exact source
 `8b1197534bec3e426d8596784915a4ab61567b1a` sudah `SOURCE_PUSHED /
-LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Slot editor sekarang menjadi
+LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false` pada immutable release
+`20260906180200-8b11975`. Slot editor sekarang menjadi
 viewport non-destruktif: foto asli tetap utuh di belakang slot ketika di-zoom,
 digeser, atau diputar. Preview dan export PNG memakai geometri cover/pan yang
 sama; zoom-out tidak dapat lebih kecil dari ukuran cover dan pan dibatasi di
@@ -12,29 +14,19 @@ tepi foto agar area kosong tidak terbuka.
 
 Perbaikan hanya mengubah Studio lokal dan renderer export. Foto, thumbnail,
 path, editor, dan output tetap lokal; backend, API, database, pricing,
-payment, serta SagaBook tidak berubah. Exact gate lulus 284 unit test, 8
-Playwright editor/review, format, lint, typecheck, client/SSR build, bundle
-budget 316,5 KiB dari 450 KiB, dan npm audit nol vulnerability. Production
-tetap S382 sehingga perbaikan belum terlihat di aplikasi production dan
-`BUSINESS_READY=false` tetap berlaku.
+payment, serta SagaBook tidak berubah. Exact gate lulus 284 unit test, full
+Playwright 170 pass + 3 skip terkontrol, format, lint, typecheck, client/SSR
+build, bundle budget 316,5 KiB dari 450 KiB, dan npm audit nol vulnerability.
 
-SagaView S382 aktif di production memakai backend exact
+Production memakai backend exact
 `ceb33732144badbb929d212b0d5d7b3fd0e24474` pada immutable release
-`20260903003542-ceb3373` dan Studio exact
-`6bd8e54a0d472e700ec9acf00112f468656a0583` pada release
-`20260903005049-6bd8e54`. Rollback tetap tersedia pada backend
-`20260831080506-5f642d8` dan Studio `20260831081456-8257f49`.
-
-Studio memperbarui lockfile agar dependency nested yang dibutuhkan build
-tercatat eksplisit dan kompatibel dengan npm 9 di VPS. Exact pair lulus full
-PHP 1.046/1.046 dengan 13.396 assertion, scoped release gate 234/234 dengan
-2.024 assertion, Vitest 278/278, Playwright 170 pass + 3 skip terkontrol,
-client build 2.133 modul, server build 207 modul, audit dependency, serta
-benchmark galeri 50/200/500 tanpa upload.
+`20260903003542-ceb3373`; backend tidak berubah pada release S383. Rollback
+tetap tersedia pada backend `20260831080506-5f642d8` dan Studio
+`20260903005049-6bd8e54`.
 
 Release memakai artifact immutable, fresh encrypted backup dengan checksum,
-salinan terpisah dan disposable restore, migration/storage rehearsal, shared
-lock eksklusif, atomic switch, actual rollback/reactivation, empat service
+salinan terpisah dan disposable restore; backend/migration tidak berubah,
+shared lock eksklusif, atomic switch, actual rollback/reactivation, empat service
 aktif, lima public smoke HTTP 200, security header, journal bersih, dan
 provenance exact. Status `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
 PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /

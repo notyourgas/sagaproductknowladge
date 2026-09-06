@@ -18,13 +18,21 @@ menjadi clipping viewport; sumber tidak dipotong atau ditulis ulang.
 
 Evidence: regression red membuktikan model geometri belum tersedia; focused
 unit/component/export/store hijau, full Vitest 284/284, Playwright editor dan
-review 8/8 pada mobile/desktop, format, lint, typecheck, build client 2.134
-modul dan SSR 208 modul, bundle budget 316,5 KiB dari 450 KiB, npm audit nol,
-clean exact commit, serta remote exact lulus. Tidak ada upload, backend/API,
-database, migration, pricing, payment, atau perubahan SagaBook. Status
-`SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PRODUCTION_UNCHANGED`; production tetap Studio S382 dan
-`BUSINESS_READY=false`.
+review 8/8 serta full Playwright 170 pass + 3 skip terkontrol, format, lint,
+typecheck, build client 2.134 modul dan SSR 208 modul, bundle budget 316,5 KiB
+dari 450 KiB, npm audit nol, clean exact commit, serta remote exact lulus.
+Tidak ada upload, backend/API, database, migration, pricing, payment, atau
+perubahan SagaBook.
+
+Release Studio `20260906180200-8b11975` memakai artifact immutable, git bundle
+dan salinan terpisah; fresh encrypted backup tiga arsip, checksum, offsite dan
+disposable restore; shared lock, atomic switch, actual rollback ke
+`20260903005049-6bd8e54`, reaktivasi, empat service aktif, public/security
+smoke, journal, serta provenance exact. Backend tetap release
+`20260903003542-ceb3373`. Status `SOURCE_PUSHED / LOCAL_VALIDATED /
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false`; 12 gate physical UAT
+dan konfirmasi operator/reviewer belum diklaim lulus.
 
 ## S382 production activation dan kompatibilitas npm 9
 

@@ -23,12 +23,18 @@
 - `CONFIRMED`: Studio exact `8b1197534bec3e426d8596784915a4ab61567b1a`
   menjaga sumber foto penuh di belakang slot, menyamakan geometri preview dan
   export, serta mencegah zoom/pan membuka area kosong.
-- PASS 284 unit test, 8 Playwright editor/review, format/lint/typecheck,
-  client/SSR build, bundle 316,5/450 KiB, dependency audit nol, clean commit,
-  dan remote exact. Boundary local-first/no-upload tetap utuh.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
-  production S382, backend/API/database, pricing/payment, SagaBook, physical
-  UAT, dan `BUSINESS_READY=false` tidak berubah.
+- PASS 284 unit test, full Playwright 170 pass + 3 skip terkontrol,
+  format/lint/typecheck, client/SSR build, bundle 316,5/450 KiB, dependency
+  audit nol, clean commit, dan remote exact. Boundary local-first/no-upload
+  tetap utuh.
+- Studio release `20260906180200-8b11975` aktif setelah immutable artifact,
+  fresh encrypted backup/checksum/offsite/disposable restore, shared lock,
+  atomic switch, public/security smoke, actual rollback/reactivation,
+  service/journal, dan provenance lulus. Backend tetap release
+  `20260903003542-ceb3373`; rollback Studio `20260903005049-6bd8e54`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+  BUSINESS_READY=false`; physical UAT 12 gate belum diklaim lulus.
 
 ## 2026-09-07 — SagaOPS modular Owner Dashboard sync
 
