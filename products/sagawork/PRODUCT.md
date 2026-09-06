@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Staff draft creation recovery
+
+- `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. HR create Staff draft now uses one bounded request, strict 201 validation and a full People write lock when the outcome is uncertain. Late responses cannot claim success or create a second request; HR reloads and searches the submitted Employee ID before acting again.
+- Focused36/full775 tests in89 files, lint/types, audit0, contracts/OpenAPI87/106, crypto/release checks, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed. Native proved genuine held create201, exactly one draft and audit, no account creation, existing employee/account invariance, mobile390/Axe and device/mutation/page-error guards.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains HTTP200. POS dashboard work is active and untouched; no fresh exact-pair joint candidate exists. Verified encrypted offsite backup/restore, config/rollback and owner/device/finance gates remain open; Performance and real payroll/payment stay OFF.
+
 ## 2026-09-06 — Staff credential issuance uncertainty recovery
 
 - `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile containment `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. HR create/reset Staff access now uses one bounded request, exact 201 validation and a full People write lock on uncertain outcomes. Late responses cannot expose a password or claim success; reload plus explicit reset is the safe recovery path. Closing or hiding removes the one-time secret.

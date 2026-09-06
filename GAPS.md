@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — SagaWork Staff draft creation recovery
+
+- `CONFIRMED`: lost/late response gap for a single HR-created Staff draft is closed at application `de9427ed766c50bbe342731cefd312c407110650`; evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. One request, strict201, full People write lock, reload+Employee-ID recovery and no late success passed provider-native acceptance.
+- Evidence focused36/full775, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium passed, including exactly one draft/audit, no account and existing-record invariance. No API/schema/grant/POS/shared-runtime change.
+- `NEEDS CONFIRMATION / BELUM DEPLOY HR`: fresh exact-pair SagaPOS joint-native, encrypted offsite backup plus disposable restore, exact config/rollback and real-device/owner/finance UAT. Current loopback-only local storage is not offsite evidence. Public `711ef77` remains HTTP200; Performance and real payroll/payment OFF.
+
 ## 2026-09-06 — SagaWork Staff credential issuance recovery
 
 - `CONFIRMED`: provider gap for lost/late initial-credential and reset responses is closed at application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476` plus mobile containment `aab7ac2b2c5353bba129d4efce1af99df022ed03`; evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. One request, strict 201, uncertainty lock, reload/reset recovery and secret cleanup passed genuine native acceptance. A real mobile overflow found by the unchanged 390 px assertion was fixed.

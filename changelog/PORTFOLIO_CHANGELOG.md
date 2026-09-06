@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaWork Staff draft creation recovery
+
+`CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. HR Staff draft creation now uses one bounded request, exact success validation, uncertainty lock and reload+Employee-ID recovery, preventing duplicate submits and late false success. Focused36/full775, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium passed with one draft/audit, no account, invariance and mobile390/Axe/device guards. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, encrypted offsite restore, release/rollback and owner/device/finance gates remain; no POS/shared-runtime, Performance or real payroll/payment change.
+
 ## 2026-09-07 — SagaOPS sequential inventory period close
 
 `CONFIRMED`; source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5` pushed. Owner dapat mengunci completed full-count pair yang berurutan; server menyimpan immutable count references, timestamps dan version boundaries, menolak overlap/coverage mismatch/idempotency drift serta memvalidasi ulang chain saat restart. Focused44/full345, check175/OpenAPI3.1/migrations12, responsive Axe0/overflow0/touch44 dan scans0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; bukan accounting/maker-checker approval dan tidak mengubah production, payment atau produk lain.

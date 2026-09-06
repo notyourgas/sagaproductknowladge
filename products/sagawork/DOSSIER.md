@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Staff draft creation recovery
+
+- `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness-only correction `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. One POST/no retry, 12-second fetch+body deadline, same-origin/no-store/redirect rejection and exact minimal 201 DTO now protect Staff draft creation. Expected 4xx is definite; network/timeout/5xx/redirect/malformed success is uncertain and locks all People writes until reload. No API/domain/schema/grant/import/credential/lifecycle/assignment change.
+- Focused36/full775 in89 files, lint/types/audit/contracts, exact application Linux build0 and fresh MySQL/full signed-cookie HTTP/compiled Chromium0. Native held the genuine create201 body, proved one draft/one audit/no account, reload+Employee-ID recovery, existing-record invariance, mobile390/Axe/device/mutation/page-error guards. The first native assertion targeted a create-access button already correctly absent after account creation; harness correction uses the stable edit control without weakening safety assertions.
+- Status `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` HTTP200 unchanged. POS/shared runtime untouched. Fresh joint-native, encrypted offsite restore, config/rollback and owner/device/finance acceptance remain mandatory; Performance/payroll/payment nyata OFF.
+
 ## 2026-09-06 — Staff credential issuance uncertainty recovery
 
 - `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, diagnostic `4ce893746f0fde06da70b9022baa98c3dfdca592`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. Create initial Staff access and reset access each send exactly one 12-second bounded request. Only a valid exact 201 DTO confirms success; expected 4xx is definite, while network/timeout/5xx/redirect/malformed or mismatched success is uncertain and locks every People write until reload. No late credential or raw server text is shown; hide/unmount/close clears the secret.

@@ -1,5 +1,11 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Staff draft creation recovery
+
+- `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. HR Staff draft create now fails safe on lost/ambiguous responses, prevents duplicate submits and late success, locks all People writes, then recovers by reload and Employee ID search.
+- PASS focused36/full775, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium; exactly one draft/audit, no account, existing-record invariance and mobile390/Axe/device guards verified.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. No POS/shared-runtime, Performance or real payroll/payment change.
+
 ## 2026-09-06 — Staff credential issuance uncertainty recovery
 
 - `CONFIRMED`; application `1aab7832bdb8b43e1407ecd03b622e48fc3c6476`, mobile fix `aab7ac2b2c5353bba129d4efce1af99df022ed03`, evidence `04f17eb1ed0377b21060a8ecd321aaae46928129`. HR create/reset access now fails safe on lost or ambiguous responses, locks People writes until reload, prevents duplicate requests and late password display, and clears one-time secrets when hidden/closed.

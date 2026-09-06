@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaWork Staff draft creation recovery
+
+- Status `accepted`; klasifikasi `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`.
+- Sinkron: one-shot bounded Staff draft create, exact201 validation, uncertainty lock, reload+Employee-ID recovery and late-result suppression. No API/schema/grant/POS/shared-runtime change.
+- Evidence focused36/full775, lint/types/audit/contracts, Linux build0 and fresh MySQL/full HTTP/Chromium0; one draft/one audit/no account/existing invariance/mobile390/Axe/device0 passed.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` HTTP200 unchanged. POS active work untouched; joint-native, encrypted offsite restore, config/rollback and owner/device/finance open. No restricted data or founder/pricing/payroll/performance change.
+
 ## 2026-09-07 — SagaOPS technical inventory period close
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5` dan docs `0758959f9e27be6eb88533afa3cd28662b0f42f9` pushed dan clean.

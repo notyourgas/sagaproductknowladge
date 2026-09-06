@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaWork Staff draft creation recovery
+
+- `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. If the browser loses the response while HR creates a Staff draft, SagaWork sends no retry, shows no late success and locks every People write until HR reloads and searches the submitted Employee ID. This prevents accidental duplicate employee records.
+- Provider-native evidence passed focused36/full775, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium, including exactly one draft/audit, no login account, unchanged existing records and mobile390/Axe. This is not joint SagaPOS, real-device or production acceptance.
+- Status `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. Joint-native, verified encrypted offsite restore, config/rollback and owner/device/finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS technical inventory period close
 
 - `CONFIRMED`; source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5`, docs `0758959f9e27be6eb88533afa3cd28662b0f42f9` pushed. Owner Admin dapat menutup sequential completed full-count pair dengan immutable count/timestamp/version boundaries.

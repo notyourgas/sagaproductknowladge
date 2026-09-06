@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork Staff draft recovery sync
+
+- `CONFIRMED`: application `de9427ed766c50bbe342731cefd312c407110650`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. HR create Staff draft is one-shot/bounded and locks People writes after an uncertain response until reload plus Employee ID search.
+- PASS focused36/full775, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium. **BELUM DEPLOY HR**; public `711ef77` unchanged. POS joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. No restricted data, founder/pricing, POS/shared-runtime or payroll/performance activation change.
+
 ## 2026-09-07 — SagaOPS inventory period close sync
 
 - `CONFIRMED`: source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5` menambah sequential full-count period lock dengan exact coverage, idempotency, immutable boundaries dan restart validation.
