@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS gap HPP setelah cycle count/waste
 
-- `CONFIRMED`: source `25ef1a77a0213b73154f41340937ff11e7a91cd9` menutup gap local untuk owner cycle count, reasoned waste/deductions, restart-safe ledger dan daily Dashboard purchase/waste. Stock count/waste tidak lagi boleh disebut seluruhnya belum diimplementasikan.
+- `CONFIRMED`: source `17d57a281da53fe3be3882b37af9acd00316d09e` menutup gap local untuk owner cycle count, reasoned waste/deductions, restart-safe ledger dan daily Dashboard purchase/waste. Stock count/waste tidak lagi boleh disebut seluruhnya belum diimplementasikan.
 - Masih terbuka: sale consumption dari paid order, opening/closing period count, actual-versus-theoretical, modifier/packaging recipes, full-count maker-checker, correction/reversal, supplier/PO lifecycle, input bisnis nyata dan production recovery/UAT.
 - `actualHppRupiah` dan laba bersih tetap unavailable; jangan diinferensikan dari moving-average purchase plus satu cycle count. Delivery masih `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, readiness sekitar 60/100, Waves 1–8 PARTIAL dan Wave 9 deferred.
 

@@ -2,9 +2,9 @@
 
 ## 2026-09-06 — Cycle count dan waste ledger lokal
 
-- `CONFIRMED`; source `25ef1a77a0213b73154f41340937ff11e7a91cd9` menambah owner-only physical cycle count, six reasoned deductions, idempotent/versioned ledger, restart reconciliation dan Owner Dashboard purchase/waste by Jakarta business date.
+- `CONFIRMED`; source `17d57a281da53fe3be3882b37af9acd00316d09e` menambah owner-only physical cycle count, six reasoned deductions, idempotent/versioned ledger, restart reconciliation dan Owner Dashboard purchase/waste by Jakarta business date.
 - Before: stock hanya bertambah dari receipt. After: operator dapat mencocokkan saldo fisik dan menjelaskan pengurangan tanpa saldo negatif; ledger merekam before/after quantity, value delta, actor, reason dan timestamp.
-- Validation: focused 33/33, full 323/323, static/type/OpenAPI PASS; Admin/Dashboard responsive browser, Axe/touch/overflow/reduced-motion, PostgreSQL recovery, dependency audit dan added-line secret scan lulus.
+- Validation: focused 27/27, full 324/324 dengan concurrency 2, static/type/OpenAPI PASS; Admin/Dashboard responsive browser, Axe/touch/overflow/reduced-motion, PostgreSQL recovery, dependency audit dan added-line secret scan lulus. Unbounded run OOM dicatat sebagai resource contention, bukan diloloskan sebagai pass.
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/payment/gate/business readiness tidak berubah. Actual HPP, sale consumption, period counts, full-count approval, reversal, modifier/packaging dan PO tetap terbuka. Readiness sekitar 60/100; Waves 1–8 PARTIAL, Wave 9 deferred.
 
 ## 2026-09-06 — Penerimaan pembelian mengalir ke moving-average HPP

@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS cycle count dan waste ledger
 
-`CONFIRMED`; source `25ef1a77a0213b73154f41340937ff11e7a91cd9`. Owner Kopi Saga dapat merekonsiliasi saldo bahan melalui count fisik dan enam alasan pengurangan, melihat ledger audit, serta membaca nilai receipt dan waste per tanggal WIB di Owner Dashboard. Persistence v3 fail-closed dan historical order cost tetap immutable. Focused 33/33, full 323/323, static/type, PostgreSQL restart, responsive Admin/Dashboard, Axe/overflow/touch, dependency dan added-line secret gates PASS. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada perubahan production/payment/produk lain. Actual HPP dan release gates masih terbuka; readiness sekitar 60/100, Waves 1–8 PARTIAL.
+`CONFIRMED`; source `17d57a281da53fe3be3882b37af9acd00316d09e`. Owner Kopi Saga dapat merekonsiliasi saldo bahan melalui count fisik dan enam alasan pengurangan, melihat ledger audit, serta membaca nilai receipt dan waste per tanggal WIB di Owner Dashboard. Persistence v3 fail-closed dan historical order cost tetap immutable. Focused 27/27 dan full 324/324 bounded-concurrency, static/type, PostgreSQL restart, responsive Admin/Dashboard, Axe/overflow/touch, dependency dan added-line secret gates PASS; unbounded host OOM dicatat terpisah. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada perubahan production/payment/produk lain. Actual HPP dan release gates masih terbuka; readiness sekitar 60/100, Waves 1–8 PARTIAL.
 
 ## 2026-09-06 - SagaWork pemulihan sesi absensi yang belum selesai
 
