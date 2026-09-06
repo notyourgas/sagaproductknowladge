@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS supplier dan purchase-order planning
+
+`CONFIRMED`; exact source `88e830ef02a3de3dfa2ceaad2bde7db8594e4f1b` pushed. SagaOPS kini memiliki supplier master dan internal OPEN PO yang restart-safe/idempotent, menyimpan expected date, package conversion, kuantitas dan cost snapshot tanpa external send atau stock mutation. Focused45/full346, check175/OpenAPI3.1/migrations12, responsive Axe0/overflow0/touch44 dan scans0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; edit/cancel, multi-line Admin, PO-linked partial receiving, fee/AP, real inputs, production/payment/business readiness dan produk lain tidak berubah.
+
 ## 2026-09-07 — SagaWork Staff draft creation recovery
 
 `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, harness `10c662005dfc7a79e124f3e4a0693fca6377227a`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. HR Staff draft creation now uses one bounded request, exact success validation, uncertainty lock and reload+Employee-ID recovery, preventing duplicate submits and late false success. Focused36/full775, lint/types/audit/contracts, Linux build and fresh MySQL/full HTTP/Chromium passed with one draft/audit, no account, invariance and mobile390/Axe/device guards. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` unchanged. POS joint-native, encrypted offsite restore, release/rollback and owner/device/finance gates remain; no POS/shared-runtime, Performance or real payroll/payment change.

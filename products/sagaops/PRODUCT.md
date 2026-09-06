@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Supplier master dan PO internal
+
+- `CONFIRMED`; implementation source `88e830ef02a3de3dfa2ceaad2bde7db8594e4f1b` dan documentation head `8febd89b801e2dd02f181b2ee8dae8aff9f23035` pushed. Owner Admin dapat menyimpan supplier reusable serta membuat purchase order internal berstatus `OPEN` sebelum barang diterima.
+- PO menyimpan snapshot supplier, expected date, package/base-unit conversion, kuantitas, unit cost, total, alasan, aktor, versi dan idempotency. Supplier nonaktif, tanggal invalid, duplikasi bahan, payload berubah pada key sama dan state tampering ditolak. Rename supplier tidak menulis ulang snapshot PO.
+- PO tidak mengirim pesan eksternal dan tidak mengubah stock/cost; receiving tetap mutation terpisah. PASS focused45/full346, check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; multi-line Admin authoring, edit/cancel, PO-linked partial receiving, fee/AP, maker-checker, real business inputs, production/payment/business readiness tetap terbuka.
+
 ## 2026-09-07 — Technical inventory period close
 
 - `CONFIRMED`; exact source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5` dan documentation `0758959f9e27be6eb88533afa3cd28662b0f42f9` pushed. Owner Admin dapat menutup pasangan full count berurutan dengan reference/timestamp/version boundaries immutable.

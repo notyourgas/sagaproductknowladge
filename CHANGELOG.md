@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS supplier dan PO planning sync
+
+- `CONFIRMED`: source `88e830ef02a3de3dfa2ceaad2bde7db8594e4f1b` menambah supplier master dan internal OPEN PO tanpa external send atau stock mutation.
+- PASS focused45/full346, check175/OpenAPI3.1/migrations12, Admin responsive accessibility/layout/touch, dependency dan secret scan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; real inputs, PO edit/cancel/partial receiving, fee/AP, maker-checker dan business readiness tetap terbuka.
+
 ## 2026-09-07 — SagaWork Staff draft recovery sync
 
 - `CONFIRMED`: application `de9427ed766c50bbe342731cefd312c407110650`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. HR create Staff draft is one-shot/bounded and locks People writes after an uncertain response until reload plus Employee ID search.

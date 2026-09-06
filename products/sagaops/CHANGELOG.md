@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Supplier master dan internal purchase-order planning
+
+- `CONFIRMED`; source `88e830ef02a3de3dfa2ceaad2bde7db8594e4f1b` menambah supplier master dan internal `OPEN` PO dengan expected date, conversion, cost snapshot, reason/version dan idempotency.
+- Server menolak supplier nonaktif, invalid/duplicate line, conflict dan restore tampering; rename supplier mempertahankan historical snapshot. PO tidak mengirim ke supplier atau menambah stok sebelum receiving.
+- PASS focused45/full346, check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency0 dan secret0.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; edit/cancel, multi-line UI, partial receiving linkage, fee/AP, real inputs dan operational acceptance belum selesai.
+
 ## 2026-09-07 — Sequential inventory period lock
 
 - `CONFIRMED`; source `0a41686e8bca6d72b130f3b4be5011a3ee830fd5` menambah owner-only close untuk dua completed full counts, exact coverage, immutable event-version boundary dan restart-safe chain.

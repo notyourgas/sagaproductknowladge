@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS supplier dan PO internal
+
+- `CONFIRMED`; source `88e830ef02a3de3dfa2ceaad2bde7db8594e4f1b`, docs `8febd89b801e2dd02f181b2ee8dae8aff9f23035`. Owner Admin dapat mengelola supplier dan membuat internal `OPEN` purchase order dengan expected date, kemasan/konversi, kuantitas dan cost snapshot.
+- PO restart-safe dan idempotent; server memvalidasi supplier aktif, line unik, nilai, tanggal dan total. Historical PO mempertahankan supplier-name snapshot saat master di-rename. PO belum menghubungi supplier dan belum memengaruhi stock/moving-average cost sebelum receiving.
+- PASS focused45/full346, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; real data, lifecycle/partial receiving/AP/maker-checker serta production/payment/business readiness tetap terbuka.
+
 ## 2026-09-07 — SagaWork Staff draft creation recovery
 
 - `CONFIRMED`; application `de9427ed766c50bbe342731cefd312c407110650`, evidence `0b91c4e56904fdfc7e576fce357c313b705d89ec`. If the browser loses the response while HR creates a Staff draft, SagaWork sends no retry, shows no late success and locks every People write until HR reloads and searches the submitted Employee ID. This prevents accidental duplicate employee records.
