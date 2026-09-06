@@ -1,6 +1,19 @@
 # SagaBook Feature Coverage Ledger
 
-Evidence cut-off: 4 September 2026 WIB
+Evidence cut-off: 7 September 2026 WIB
+
+Block Time refresh guard S423 exact source
+`9bab95864246708345f2c01321991b849c15c4b8` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+PRODUCTION_UNCHANGED`. Dialog menjadi editor aktif sehingga interval polling,
+focus, visibility, invalidasi lintas tab, dan release reload tidak dapat
+menghidrasi ulang draft; notifikasi ringan tetap berjalan dan refresh penuh
+pulih setelah close. Draft in-memory, tanpa perubahan API/database/permission.
+Playwright guard 3/3 pada mobile/tablet/desktop, regresi dialog 7/7 termasuk
+forced colors/reduced motion/no-overflow, regresi DP multi-device 6/6,
+backend terkait 22/22 (217 assertion), tooling dashboard 18/18, typecheck,
+build, design audit, serta audit dependency nol lulus. Next gate: review/merge
+exact candidate lalu guarded release gabungan bersama S422; `BUSINESS_READY=false`.
 
 Custom DP booking manual S422 exact source
 `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` telah `CONFIRMED /

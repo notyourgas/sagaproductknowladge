@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 4 September 2026 WIB
-Evidence status: SagaBook production aktif pada exact `80c100c0c1aadf2a276fb8b0c424078718faa059`, immutable release `20260902162647-80c100c`, dengan rollback kompatibel `20260902154557-e0f2214`. Rilis kumulatif mobile memperbaiki warna tab sidebar, hanya menyisakan satu penanda halaman aktif, menjaga navigasi sesuai role, dan menutup overflow/layout pada Settings, Detail Booking, Promo, Jam Cabang, serta dialog Block Time. Full Feature 1.361/1.361 (15.216 assertion), build, audit desain/dependency, matrix visual multi-device, fresh encrypted backup, disposable restore, atomic activation, verifier independen, dan public/security smoke lulus. UAT manual Andreas dicatat sebagai keputusan operator, tetapi belum menggantikan kontrak authenticated UAT otomatis yang masih tertahan karena credential bridge lokal belum aktif; actual rollback drill juga menunggu gate itu. Status produk keseluruhan tetap `PRODUCTION_ACTIVATED / AUTHENTICATED_OPERATOR_UAT_PENDING / ROLLBACK_DRILL_PENDING / AUDIO_UAT_PENDING / PILOT_BLOCKED / BUSINESS_READY=false`.
+Updated: 7 September 2026 WIB
+Evidence status: SagaBook production terverifikasi aktif pada exact `ca549d185d02786e1233c44da5562b55830c490d`, immutable release `20260903141813-ca549d1`; nginx, PHP-FPM, queue worker, dan public login redirect merespons. Kandidat DP custom sudah berada di canonical main `d01afc3a51f687c196601808648f2660afdec04a`, sedangkan guard draft Block Time exact `9bab95864246708345f2c01321991b849c15c4b8` sudah dipush pada branch terpisah. Keduanya `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada release, lock, atau mutasi production pada sinkronisasi ini. Status produk keseluruhan tetap `PRODUCTION_ACTIVATED / RELEASE_CANDIDATE_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,19 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Kandidat S423 mencegah bootstrap dashboard mereset isian ketika dialog Block
+  Time sedang terbuka. Interval polling, focus, visibility, invalidasi lintas
+  tab, dan pemeriksaan versi release menghormati editor aktif; feed notifikasi
+  ringan tetap berjalan dan refresh penuh kembali setelah dialog ditutup.
+  Draft hanya in-memory dan tidak ditulis ke browser storage. Exact source
+  `9bab95864246708345f2c01321991b849c15c4b8` sudah dipush. TDD membuktikan
+  kondisi lama memicu tiga request bootstrap saat dialog aktif lalu kandidat
+  lulus Playwright mobile/tablet/desktop 3/3, regresi dialog 7/7, regresi DP
+  multi-device 6/6, backend terkait 22/22 (217 assertion), tooling dashboard
+  18/18, typecheck, build, design audit, dan audit dependency nol. Status
+  `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+  PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
 
 - Kandidat S422 menambahkan pilihan `DP custom` pada booking manual agar
   operator dapat mencatat DP di bawah atau di atas 50% sebagai nominal Rupiah

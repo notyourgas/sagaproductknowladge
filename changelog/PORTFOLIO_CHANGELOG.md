@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaBook Block Time refresh guard
+
+`CONFIRMED`; exact source `9bab95864246708345f2c01321991b849c15c4b8`
+pushed. Dialog Block Time kini menahan bootstrap dashboard dari polling, focus,
+visibility, invalidasi lintas tab, dan release reload sehingga draft operator
+tidak ter-reset; feed notifikasi tetap berjalan dan refresh pulih setelah
+close. Playwright guard 3/3 mobile/tablet/desktop, dialog 7/7, DP custom 6/6,
+backend 22/22 (217 assertion), tooling dashboard 18/18, typecheck/build/design
+audit, dan dependency audit nol PASS. `LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`; production tetap `20260903141813-ca549d1`, DP S422
+juga belum production, dan tidak ada perubahan SagaVIEW atau business readiness.
+
 ## 2026-09-07 — SagaView slot photo viewport non-destruktif
 
 `CONFIRMED`; exact Studio `8b1197534bec3e426d8596784915a4ab61567b1a`

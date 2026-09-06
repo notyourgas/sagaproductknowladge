@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaBook Block Time draft refresh guard
+
+- `CONFIRMED`; exact source `9bab95864246708345f2c01321991b849c15c4b8`
+  pushed. Dialog Block Time kini menahan bootstrap dashboard dan release reload
+  selama aktif, tetap menerima feed notifikasi ringan, menyimpan draft hanya
+  in-memory, lalu mengaktifkan refresh penuh kembali setelah close.
+- Playwright guard 3/3 mobile/tablet/desktop, dialog 7/7, regresi DP custom
+  6/6, backend terkait 22/22 (217 assertion), tooling dashboard 18/18,
+  typecheck/build/design audit, dan audit dependency nol lulus.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaBook
+  tetap exact `ca549d185d02786e1233c44da5562b55830c490d`, DP custom S422 belum
+  production, SagaVIEW tidak berubah, dan `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaOPS Owner Dashboard application shell
 
 - `CONFIRMED`; source `96ca11a9006269fcafd906a2aa0b67d57789aa14`. Owner Dashboard kini merupakan aplikasi responsif dengan sidebar desktop/drawer portrait dan 12 deep-linked modules untuk overview, sales, orders, catalog, inventory/HPP, purchasing, finance, workforce, member, integrations, reports dan settings.

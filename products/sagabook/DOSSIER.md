@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S423 exact source `9bab95864246708345f2c01321991b849c15c4b8`
+  mendaftarkan dialog Block Time sebagai editor aktif selama terbuka. Bootstrap
+  dashboard dari interval, focus, visibility, invalidasi lintas tab, dan
+  pemeriksaan versi release ditahan sehingga draft operator tidak dihidrasi
+  ulang; feed notifikasi ringan tetap boleh berjalan dan refresh penuh pulih
+  setelah dialog ditutup. Draft hanya in-memory, tanpa API, database, schema,
+  permission, atau perubahan tenant. Playwright mobile/tablet/desktop 3/3,
+  regresi dialog 7/7, regresi DP custom multi-device 6/6, backend 22/22 (217
+  assertion), tooling dashboard 18/18, typecheck/build/design audit, serta
+  audit dependency nol lulus. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED /
+  BUSINESS_READY=false`.
+
 - S422 exact source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c`
   memperluas engine DP booking manual dengan plan `deposit_custom`. Operator
   memilih nominal Rupiah exact, sedangkan server tetap menjadi sumber

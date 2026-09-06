@@ -1,5 +1,22 @@
 # SagaBook Changelog
 
+## 2026-09-07 - Kandidat Block Time tidak lagi kehilangan draft saat refresh
+
+- Sebelum: focus, visibility, invalidasi lintas tab, atau interval polling dapat
+  memanggil bootstrap dashboard saat dialog Block Time terbuka dan menghidrasi
+  ulang data form operator.
+- Setelah: dialog terdaftar sebagai editor aktif; bootstrap dan release reload
+  ditahan, notifikasi ringan tetap berjalan, draft in-memory tetap utuh, dan
+  refresh penuh pulih setelah dialog ditutup.
+- Exact source `9bab95864246708345f2c01321991b849c15c4b8` sudah dipush.
+  Playwright guard 3/3 mobile/tablet/desktop, regresi dialog 7/7, regresi DP
+  custom 6/6, backend terkait 22/22 (217 assertion), tooling dashboard 18/18,
+  typecheck/build/design audit, serta audit dependency nol lulus.
+- Production masih exact `ca549d185d02786e1233c44da5562b55830c490d`, release
+  `20260903141813-ca549d1`. DP custom S422 dan guard S423 belum dideploy;
+  status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+
 ## 2026-09-04 - S422 masuk main, release berhenti pada gate backup offsite
 
 - Exact kandidat S422 sudah digabung melalui PR #103 ke canonical main

@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaBook Block Time draft refresh guard
+
+- `CONFIRMED`: source `9bab95864246708345f2c01321991b849c15c4b8`
+  menahan bootstrap dashboard selama dialog Block Time aktif tanpa menghentikan
+  feed notifikasi dan tanpa menyimpan draft ke browser storage.
+- PASS Playwright guard 3/3 mobile/tablet/desktop, dialog 7/7, DP custom 6/6,
+  backend 22/22 (217 assertion), tooling dashboard 18/18, typecheck, build,
+  design audit, npm/Composer/OSV audit nol, clean commit, dan remote exact.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+  production `ca549d185d02786e1233c44da5562b55830c490d` tidak berubah, DP S422
+  juga belum dideploy, SagaVIEW tidak disentuh, dan `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaView non-destructive slot photo pan
 
 - `CONFIRMED`: Studio exact `8b1197534bec3e426d8596784915a4ab61567b1a`
