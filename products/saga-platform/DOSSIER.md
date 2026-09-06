@@ -1,5 +1,18 @@
 # Saga Platform Dossier
 
+## 2026-09-06 — Saga Member notification preference continuity
+
+- Classification: CONFIRMED implementation; PUBLIC_DUMMY_DEMO only, no real account/backend/provider/customer activation and no added service/dependency.
+- Profil notification choices now remain during activity refresh and route navigation. Previously refresh silently restored defaults. Native switches, radios and polite status remain mounted during edits rather than replacing the screen. Summary copy explicitly describes a simulation, not actual notification delivery.
+- Urungkan perubahan restores the exact last successful edit, including default reset; no-op does not overwrite recovery. Global reset/reload clears it, cancelling reset retains it, and offline demo export reflects current selection. All state remains memory-only.
+- High-contrast switch thumbs now use system colors instead of disappearing white-on-white. Native radio-arrow focus uses a cancellable next-frame adjustment when hidden by fixed chrome, without changing focus. Canonical320–430 canvas, self-hosted Jakarta/Feather,44px controls and200% text remain supported.
+- Existing Motion13.2.0 MIT bundle unchanged; native switch120ms CSS feedback replaces repeated preview fades, reduced motion final-state. Gzip net+791B across app/UI/model/existing Inbox CSS, no new stylesheet layer or dependency.
+- Source2359899268ecd31a9400fbcd33fab0ed0278eec5, PR81. Full local PASS338 units including24 new, focused86 browser checks, additional keyboard55 checks and exact-baseline offline PWA upgrade/recovery. Dependency audit0; diff/secret-pattern checks and synthetic diagnostic redaction passed.
+- Final CPU4x synthetic switch dispatch20 samples per phase: baseline max33.1ms, candidate max2ms;20/20 inputs retained vs0/20. Handler only, not field INP. Matching verified public gzip with CPU4x/150ms/1.6Mbps gave three cold candidate document LCP samples2.048/2.052/2.248s, CLS0; baseline2.108/2.044/2.116s. Document LCP refers to Beranda startup, not settings SPA LCP; no LCP improvement claim. Initial uncompressed local stress exceeded4s and was not equivalent to public encoding; evidence retained.
+- Delivery: IMPLEMENTED_NOT_DEPLOYED. PR81 merged to canonical main6549e1131b9354cddfa9bdbac90dac7dc924d132; source tree matches candidate2359899. Exact PR CI34001736560 PASS; main CI34002178122 could not start because hosted CI execution is account-restricted (zero test steps), not a failed application test. No retry loop, paid capacity, gate bypass, Preview deployment or production promotion. Resume exact-main CI after CI capacity is restored, then Preview/public UAT. Prior healthy Production dpl_J1C5cmm16JPLYSBanwtHNAYSaiEH remains unchanged. Physical devices/native screen readers/field vitals/comprehensive monitoring remain unverified.
+- Research: [W3C switch pattern](https://www.w3.org/WAI/ARIA/apg/patterns/switch/), [status messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html), and [MDN forced colors](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/forced-colors) informed stable native controls, mounted feedback and system colors. Heuristic/synthetic review, not a real-user survey. Other Saga products unchanged.
+
+
 ## 2026-09-06 — Saga Member Inbox read recovery
 
 - Classification: CONFIRMED. Scope PUBLIC_DUMMY_DEMO only. No real account, backend, payment, Push/provider, customer or device activation; no new service or dependency.
