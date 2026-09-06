@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS PO partial receiving sync
+
+- `CONFIRMED`: source `8ae899b10a4052933c4b9472e479b255007d7f8a` menautkan per-line partial receiving ke PO dengan server-owned cost, exactly-once stock/HPP mutation dan restart reconciliation.
+- PASS focused47/final37, full348, check175/OpenAPI3.1/migrations12, Admin responsive accessibility/layout/touch, dependency dan secret scan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; real inputs, PO edit/cancel/damage/loss, fee/AP, maker-checker dan business readiness tetap terbuka.
+
 ## 2026-09-07 — SagaWork Staff lifecycle recovery
 
 - `CONFIRMED`; application `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`. HR suspend/restore/terminate/archive now fail safely on lost or late responses through one bounded request, exact result validation and reload-only People write recovery. Full807/91 plus exact-source Linux/MySQL/HTTP/Chromium acceptance passed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment are unchanged. Joint/offsite restore/release and owner/device/finance gates remain.

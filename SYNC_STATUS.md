@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaOPS PO-linked partial receiving
+
+- Status `accepted`; klasifikasi `CONFIRMED`; implementation source `8ae899b10a4052933c4b9472e479b255007d7f8a` dan docs `a3f0f2c755b2471481e5c49391f5a5e303f34db9` pushed dan clean.
+- Sinkron: partial receipt per PO line, server-owned PO cost, OPEN/PARTIAL/RECEIVED progress, atomic receipt/stock/HPP mutation, idempotent replay dan restart reconciliation. Tidak ada external send, secret, PII, raw receipt atau identifier private.
+- Evidence focused47/47, final37/37, full348/348, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency0 dan secret0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; edit/cancel, damage/loss, fee/AP, real inputs, production activation dan `BUSINESS_READY` tetap terbuka.
+
 ## 2026-09-07 — SagaWork Staff lifecycle recovery
 
 - Status: `accepted`; classification `CONFIRMED` for provider-only application `b4cd282874872adff5318b8583af30b534ab8474` and evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`.

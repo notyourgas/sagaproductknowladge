@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS PO-linked partial receiving
+
+`CONFIRMED`; exact source `8ae899b10a4052933c4b9472e479b255007d7f8a` pushed. SagaOPS kini menautkan partial receipt per line ke PO, menghitung cost dari server-owned PO, mengubah OPEN/PARTIAL/RECEIVED progress serta mempersistenkan receipt, stock dan moving-average HPP secara atomik/exactly-once. Focused47/final37, full348, check175/OpenAPI3.1/migrations12, responsive Axe0/overflow0/touch44 dan scans0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; lifecycle, fee/AP, real inputs, production/payment/business readiness dan produk lain tidak berubah.
+
 ## 2026-09-07 — SagaWork Staff lifecycle lost-response recovery
 
 `CONFIRMED`; application `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`. HR suspend/restore access, terminate and archive now use one bounded request, exact target/action validation and a reload-only full People write lock on uncertainty. Focused45/full807 plus Linux/MySQL/full HTTP/Chromium passed with one transition/audit, target-session revocation, invariance and mobile/Axe/device guards. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.

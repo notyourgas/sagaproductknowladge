@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS partial receiving dari PO
+
+- `CONFIRMED`; source `8ae899b10a4052933c4b9472e479b255007d7f8a`, docs `a3f0f2c755b2471481e5c49391f5a5e303f34db9`. Owner Admin dapat menerima sisa line PO bertahap; UI menunjukkan ordered, received, remaining dan remaining value lalu status berpindah OPEN/PARTIAL/RECEIVED.
+- Linked receipt memakai supplier/cost/package/conversion dari PO server dan tidak mempercayai biaya browser. Receipt, PO progress, stock, inventory value, moving-average HPP dan audit commit atomik, exactly-once dan direkonsiliasi saat restart.
+- PASS focused47/final37, full348, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; real data, edit/cancel, damage/loss, fee/AP/maker-checker dan production/payment/business readiness tetap terbuka.
+
 ## 2026-09-07 — SagaWork Staff lifecycle recovery
 
 - `CONFIRMED`: source `b4cd282874872adff5318b8583af30b534ab8474`, evidence `03a5d9726fb4f1d8db1729a932a16429dd705efe`. HR lifecycle writes (suspend/restore access, terminate, archive) are single-request and bounded; uncertain outcomes lock all People writes until reload and never render late false success. Exact target/action validation and safe expected-4xx copy are enforced.
