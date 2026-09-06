@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-06 — SagaOPS historical HPP snapshot truth
+
+- Klasifikasi `CONFIRMED`; source implementasi `7fdbc158b010efd3db66d7303e2712224be2b0d2`, dokumentasi `abdc1132fd012ed7e2172f5424436ee5ec33aa88`, pushed pada branch Saga POS. Bukti utama: source/test dan `docs/SAGA_POS_HPP_SNAPSHOT_TRUTH_2026-09-06.md`. Scope hanya F&B Kopi Saga.
+- Before: item order hanya memiliki angka biaya placeholder sehingga Rp0 tidak dapat dibedakan dari biaya yang hilang. After: checkout membekukan versi resep, kuantitas/unit/biaya bahan dan status `VERIFIED/INCOMPLETE`; produk resep yang belum lengkap diblokir kecuali eksplisit diizinkan sementara. Order lama/simulator tetap `UNVERIFIED`, bukan direkayasa sebagai biaya nol.
+- Owner/Admin dan CSV menampilkan coverage, order terverifikasi/dikecualikan, subset penjualan/HPP dan produk yang perlu dilengkapi. Total HPP teoretis serta laba kotor hanya muncul pada coverage 100%. HPP aktual dan laba bersih tetap tidak tersedia sampai pembelian, stock count, waste/adjustment, fee dan biaya operasional mempunyai fakta otoritatif.
+- PostgreSQL menyimpan snapshot JSON/version/status immutable dan mempertahankan RLS. Validasi lokal: static/type/OpenAPI 160 modul/11 migrasi PASS; focused 32/32 dan full 307/307 PASS; owner 390/1440px, Axe serious/critical 0, overflow/touch/keyboard serta visual review PASS; dependency audit 0 dan high-confidence secret scan 0.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada aktivasi payment, perubahan runtime operasional atau business-ready claim. Readiness estimasi operasional tetap sekitar 60/100; Waves 1–8 tetap PARTIAL dan Wave 9 deferred. Next: recipe/ingredient authoring, purchase/moving-average/unit conversion, lalu stock count/waste dan actual-versus-theoretical.
+
+
+
 ## 2026-09-06 — SagaOPS permohonan pribadi staf terintegrasi lokal
 
 - CONFIRMED; source `f79a773259f6a1fd2c8ef893cab02d29bdd3e855`, pushed pada branch `codex/saga-pos-vs01-kiosk-kds-dashboard`. Bukti: source/tests dan `docs/HRPOS_STAFF_OWN_REQUEST_POS_2026-09-06.md`. Hanya F&B Kopi Saga.
