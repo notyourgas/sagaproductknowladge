@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 - SagaWork akses portal staf berdasarkan capability
+
+- Update koordinasi terbaru: task POS melaporkan permintaan owner untuk preview sintetis Dashboard/KDS di Vercel dan mengalihkan pekerjaannya ke sana. Task HR tidak mengubah prioritas itu; deployment preview belum diverifikasi di sini dan tidak berarti integrasi HR telah deployed/activated.
+
+- Klasifikasi `CONFIRMED`; sumber task SagaWork: aplikasi/instrumentasi `df19783d7f2385104ef6b0e2404abe31dd8d1412`, dokumentasi `2a6b064161baf790055d71886bd46cf68a19c087`. Before: akses seluruh portal staf tergantung izin jadwal. After: staf aktif dapat memakai permohonan atau akun sendiri secara independen; menu dan halaman awal mengikuti izin aktual termasuk explicit denial. Halaman jadwal/absensi/permohonan yang tidak diizinkan kembali ke akun sebelum membaca data atau memuat capture.
+- CTA absensi dan tukar jadwal di beranda kini mengikuti izin masing-masing. Tidak ada role, grant, schema, API, bridge atau DTO baru; permission tetap ditegakkan layanan domain. Ketergantungan halaman absensi pada izin jadwal masih backlog tersendiri. Performance kill switch tetap tidak diaktifkan.
+- PASS: 512 tes/68 file, lint/types, kontrak/OpenAPI 87 path/106 operasi, lima guard suite, audit dependency0 diketahui dan staged secret-signature scan0. Temuan audit CTA diperbaiki dengan tes red-green; fresh exact-source Linux build receipt0, empat suite MySQL native, full HTTP/Chromium. Sesi request-only/account-only lulus landing, navigasi, reload, akun, direct-route fallback, mobile390 dan Axe0; signed schedule403 serta permohonan200/403 sesuai izin.
+- Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY publik**. Runner mencapai completion marker, akun uji dicabut/listener ditutup/proses selesai; kanal SSH yang tertinggal ditutup terpisah dan bukan bukti exit native. Data sintetis dipertahankan. Public workforce diperiksa ulang `711ef77`, aktif/HTTP200; source hanya commit lokal tanpa remote.
+- Task POS menyetujui bounded provider slice; source POS clean terverifikasi `f90f8f75a13e78e3bb2b8cef3de36ef6df89f32c`, prioritas recipe/stock tidak diubah. Tidak ada perubahan POS/shared runtime. Program36 tetap PARTIAL; next exact-pair joint melalui transport diizinkan, encrypted offsite backup/disposable restore, config/rollback dan perangkat/owner/finance. DEC-191 tetap izin deploy bersyarat, bukan bypass atau aktivasi payroll nyata. Delapan dokumen disinkronkan; tanpa keputusan founder/pricing/positioning baru atau data restricted.
+
+
 ## 2026-09-06 — SagaOPS owner recipe dan HPP authoring guard
 
 - Klasifikasi `CONFIRMED`; source implementasi `ca945a539a36231066b0be7b3c4696d9f62b5ba3`, dokumentasi `f90f8f75a13e78e3bb2b8cef3de36ef6df89f32c`, pushed pada branch Saga POS. Scope hanya F&B Kopi Saga; bukti dari source, test dan laporan HPP kanonik.
