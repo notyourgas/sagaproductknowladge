@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-06 — Protected Dashboard Owner dan KDS review
+
+- `CONFIRMED`; deployed exact application source `c10167e4d54afd3977864fa9b9d43a78c4510066`, documentation `fa712247cb57d456e2da5b1b5270becb58c09bfc`, Vercel `dpl_9D2YNBVHsB8yEgXc2JArAS3nDRW9` Ready.
+- Before: Dashboard/KDS hanya dapat direview dari localhost/private runtime. After: dua surface tersedia pada deployment khusus yang memerlukan login Vercel; anonymous access redirect `302`, sedangkan alias pendek tak terlindungi telah dihapus dan `404`.
+- Scope synthetic/ephemeral dan read-only review; Kiosk API, operator lain, payment nyata, production database dan data customer tidak diaktifkan. Full regression 314/314, final guard 10/10, build dan audit dependency lulus.
+- Status `PROTECTED_OPERATOR_PREVIEW_DEPLOYED`; tidak mengubah public Kiosk atau operational production. `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`, readiness tetap sekitar 60/100. Next: review tablet, durable shared runtime, backup/restore dan physical-device UAT.
+
 ## 2026-09-06 — SagaOPS owner recipe dan HPP authoring guard
 
 - Klasifikasi `CONFIRMED`; source implementasi `ca945a539a36231066b0be7b3c4696d9f62b5ba3`, dokumentasi `f90f8f75a13e78e3bb2b8cef3de36ef6df89f32c`, pushed pada branch Saga POS. Scope hanya F&B Kopi Saga; bukti dari source, test dan laporan HPP kanonik.

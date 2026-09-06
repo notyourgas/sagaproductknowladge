@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-06 — SagaOPS protected operator review
+
+- `CONFIRMED`; Dashboard Owner dan KDS synthetic/ephemeral tersedia pada Vercel deployment terlindungi `dpl_9D2YNBVHsB8yEgXc2JArAS3nDRW9` dari exact app source `c10167e4d54afd3977864fa9b9d43a78c4510066`. Anonymous request redirect `302` ke Vercel Authentication; alias pendek tanpa protection dihapus dan `404`.
+- Project Kiosk publik, private VPS, database operasional, Customer Platform, gateway/pembayaran nyata dan produk lain tidak berubah. Regression 314/314, final guard 10/10, build dan dependency audit lulus. Delivery `PROTECTED_OPERATOR_PREVIEW_DEPLOYED`, bukan production activation/business readiness; readiness sekitar 60/100 tidak naik.
+
 ## 2026-09-06 - SagaWork akses portal staf berdasarkan capability
 
 - Update koordinasi terbaru: task POS melaporkan permintaan owner untuk preview sintetis Dashboard/KDS di Vercel dan mengalihkan pekerjaannya ke sana. Task HR tidak mengubah prioritas itu; deployment preview belum diverifikasi di sini dan tidak berarti integrasi HR telah deployed/activated.

@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 — SagaOPS protected operator review
+
+- `CONFIRMED`; sinkronisasi Dashboard Owner/KDS synthetic pada protected Vercel deployment `dpl_9D2YNBVHsB8yEgXc2JArAS3nDRW9`, exact app source `c10167e4d54afd3977864fa9b9d43a78c4510066`, release record `fa712247cb57d456e2da5b1b5270becb58c09bfc`.
+- Vercel Authentication dan anonymous `302` telah dibuktikan; alias pendek tanpa perlindungan dihapus/`404`. Public Kiosk dan production operasional tidak berubah. Status `PROTECTED_OPERATOR_PREVIEW_DEPLOYED`, `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`; tidak ada kenaikan readiness.
+- Files: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`. Sumber: keputusan deploy owner, source/test, Vercel runtime evidence. Blocker: durable production, recovery, perangkat dan owner/finance UAT.
+
 ## 2026-09-06 - SagaWork akses portal staf berdasarkan capability
 
 - Update koordinasi terbaru: task POS melaporkan permintaan owner untuk preview sintetis Dashboard/KDS di Vercel dan mengalihkan pekerjaannya ke sana. Task HR tidak mengubah prioritas itu; deployment preview belum diverifikasi di sini dan tidak berarti integrasi HR telah deployed/activated.
