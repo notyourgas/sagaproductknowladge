@@ -2,9 +2,9 @@
 
 ## 2026-09-07 — PO-linked partial receiving
 
-- `CONFIRMED`; source `8ae899b10a4052933c4b9472e479b255007d7f8a` menambah per-line partial receiving dengan OPEN/PARTIAL/RECEIVED progress dan receipt evidence yang tertaut ke PO.
+- `CONFIRMED`; exact source head `84cc6cad4d0a666dc4437b44757f7ba2b10c2125` (core `8ae899b10a4052933c4b9472e479b255007d7f8a`) menambah per-line partial receiving dengan OPEN/PARTIAL/RECEIVED progress dan receipt evidence yang tertaut ke PO, plus aggregate-total overflow guard.
 - Server menghitung receipt cost dari immutable PO line. Replay exactly-once; overage, unknown/duplicate line, package/conversion/cost mismatch dan restore tampering gagal tertutup. PO, receipt, stock dan moving-average HPP persist atomik.
-- PASS focused47/final37, full348, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency0 dan secret0.
+- PASS focused47/final37/numeric20, full349, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency0 dan secret0.
 - `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; edit/cancel, damage/loss, fees, invoice/AP, maker-checker, real inputs dan production acceptance belum selesai.
 
 ## 2026-09-07 — Supplier master dan internal purchase-order planning

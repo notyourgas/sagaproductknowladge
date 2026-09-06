@@ -2,9 +2,9 @@
 
 ## 2026-09-07 — Partial receiving tertaut purchase order
 
-- `CONFIRMED`; implementation source `8ae899b10a4052933c4b9472e479b255007d7f8a` dan documentation `a3f0f2c755b2471481e5c49391f5a5e303f34db9` pushed. Owner Admin dapat menerima sebagian atau seluruh sisa line PO dengan progress `OPEN → PARTIALLY_RECEIVED → RECEIVED`.
+- `CONFIRMED`; exact source head `84cc6cad4d0a666dc4437b44757f7ba2b10c2125`, core implementation `8ae899b10a4052933c4b9472e479b255007d7f8a` dan documentation `6aa01dd967ec4f85fc386619da487009105dd44b` pushed. Owner Admin dapat menerima sebagian atau seluruh sisa line PO dengan progress `OPEN → PARTIALLY_RECEIVED → RECEIVED`.
 - Biaya, supplier snapshot, kemasan dan konversi receipt berasal dari PO server; over-receipt, line/cost/conversion mismatch dan payload berbeda pada idempotency key sama ditolak. Linked receipt, stock, inventory value, moving-average HPP, PO progress dan audit commit atomik serta restart-reconciled.
-- PASS focused47/final37, full348, check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0. Run full awal mengalami satu Windows socket exhaustion; same test 3/3 dan rerun full concurrency2 lulus tanpa melemahkan assertion.
+- Aggregate PO total di luar safe-integer ditolak sebelum mutation. PASS focused47/final37/numeric20, full349, check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0. Run full awal mengalami satu Windows socket exhaustion; same test 3/3 dan rerun full concurrency2 lulus tanpa melemahkan assertion.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; multi-line Admin authoring, edit/cancel, damage/loss, fee, invoice/AP, maker-checker, real inputs, production/payment/business readiness tetap terbuka.
 
 ## 2026-09-07 — Supplier master dan PO internal

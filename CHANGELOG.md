@@ -6,8 +6,8 @@
 
 ## 2026-09-07 — SagaOPS PO partial receiving sync
 
-- `CONFIRMED`: source `8ae899b10a4052933c4b9472e479b255007d7f8a` menautkan per-line partial receiving ke PO dengan server-owned cost, exactly-once stock/HPP mutation dan restart reconciliation.
-- PASS focused47/final37, full348, check175/OpenAPI3.1/migrations12, Admin responsive accessibility/layout/touch, dependency dan secret scan.
+- `CONFIRMED`: exact source head `84cc6cad4d0a666dc4437b44757f7ba2b10c2125` (core `8ae899b10a4052933c4b9472e479b255007d7f8a`) menautkan per-line partial receiving ke PO dengan server-owned cost, exactly-once stock/HPP mutation, restart reconciliation dan aggregate-total overflow guard.
+- PASS focused47/final37/numeric20, full349, check175/OpenAPI3.1/migrations12, Admin responsive accessibility/layout/touch, dependency dan secret scan.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; real inputs, PO edit/cancel/damage/loss, fee/AP, maker-checker dan business readiness tetap terbuka.
 
 ## 2026-09-07 — SagaWork Staff lifecycle recovery

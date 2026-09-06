@@ -8,9 +8,9 @@
 
 ## 2026-09-07 — SagaOPS partial receiving dari PO
 
-- `CONFIRMED`; source `8ae899b10a4052933c4b9472e479b255007d7f8a`, docs `a3f0f2c755b2471481e5c49391f5a5e303f34db9`. Owner Admin dapat menerima sisa line PO bertahap; UI menunjukkan ordered, received, remaining dan remaining value lalu status berpindah OPEN/PARTIAL/RECEIVED.
+- `CONFIRMED`; exact source head `84cc6cad4d0a666dc4437b44757f7ba2b10c2125`, core `8ae899b10a4052933c4b9472e479b255007d7f8a`, docs `6aa01dd967ec4f85fc386619da487009105dd44b`. Owner Admin dapat menerima sisa line PO bertahap; UI menunjukkan ordered, received, remaining dan remaining value lalu status berpindah OPEN/PARTIAL/RECEIVED.
 - Linked receipt memakai supplier/cost/package/conversion dari PO server dan tidak mempercayai biaya browser. Receipt, PO progress, stock, inventory value, moving-average HPP dan audit commit atomik, exactly-once dan direkonsiliasi saat restart.
-- PASS focused47/final37, full348, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; real data, edit/cancel, damage/loss, fee/AP/maker-checker dan production/payment/business readiness tetap terbuka.
+- Unsafe aggregate PO total ditolak sebelum mutation. PASS focused47/final37/numeric20, full349, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0/touch44, dependency/secret0. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; real data, edit/cancel, damage/loss, fee/AP/maker-checker dan production/payment/business readiness tetap terbuka.
 
 ## 2026-09-07 — SagaWork Staff lifecycle recovery
 

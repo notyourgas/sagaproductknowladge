@@ -6,7 +6,7 @@
 
 ## 2026-09-07 — SagaOPS PO-linked partial receiving
 
-`CONFIRMED`; exact source `8ae899b10a4052933c4b9472e479b255007d7f8a` pushed. SagaOPS kini menautkan partial receipt per line ke PO, menghitung cost dari server-owned PO, mengubah OPEN/PARTIAL/RECEIVED progress serta mempersistenkan receipt, stock dan moving-average HPP secara atomik/exactly-once. Focused47/final37, full348, check175/OpenAPI3.1/migrations12, responsive Axe0/overflow0/touch44 dan scans0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; lifecycle, fee/AP, real inputs, production/payment/business readiness dan produk lain tidak berubah.
+`CONFIRMED`; exact source head `84cc6cad4d0a666dc4437b44757f7ba2b10c2125` (core `8ae899b10a4052933c4b9472e479b255007d7f8a`) pushed. SagaOPS kini menautkan partial receipt per line ke PO, menghitung cost dari server-owned PO, mengubah OPEN/PARTIAL/RECEIVED progress, menolak unsafe aggregate total, serta mempersistenkan receipt, stock dan moving-average HPP secara atomik/exactly-once. Focused47/final37/numeric20, full349, check175/OpenAPI3.1/migrations12, responsive Axe0/overflow0/touch44 dan scans0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; lifecycle, fee/AP, real inputs, production/payment/business readiness dan produk lain tidak berubah.
 
 ## 2026-09-07 — SagaWork Staff lifecycle lost-response recovery
 
