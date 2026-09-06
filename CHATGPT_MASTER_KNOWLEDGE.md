@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — SagaOPS actual-versus-theoretical inventory variance
+
+`CONFIRMED` dari source `c99add2ca8fa53947823bc514f94c2531d6ee6a9`. Owner report memakai dua completed full counts terbaru: actual = opening physical + receipts setelah opening sampai closing - closing physical; theoretical = immutable recipe line quantity/cost × quantity menu `PAID/COMPLETED`. Recorded waste/loss adalah evidence penjelas, bukan pengurang kedua. Coverage mismatch, missing paid time, incomplete order/recipe coverage atau negative actual membuat status partial dan total null. Owner CSV no-store/formula-safe. Cash-order authoritative `paidAt` kini bertahan melalui PostgreSQL restart. Evidence slice5/5, focused28/28, full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0 dan security scans lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production/payment/payroll tidak berubah.
+
 ## 2026-09-06 — SagaWork request reload state clarity
 
 - **CONFIRMED** from source and fresh isolated tests: application/instrumentation `524332666974d87771f37650dad295c6af9bb382`, evidence `31f08360e057db7e79cb509acce6325a2b7bc6d4`. Before: a pending or failed own-request reload could also say there were no requests; after: empty text appears only when neither loading nor error is present. This avoids misleading staff during slow connections; private-row clearing and safe retry remain.

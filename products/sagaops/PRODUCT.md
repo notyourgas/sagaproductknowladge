@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-06 — Actual versus theoretical inventory variance
+
+- Klasifikasi `CONFIRMED`; exact source `c99add2ca8fa53947823bc514f94c2531d6ee6a9` sudah dipush. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100.
+- Owner Dashboard menghitung actual quantity/value dari full count pembuka + receipt setelah pembuka sampai penutup - full count penutup, lalu membandingkannya dengan theoretical recipe snapshot dari order `PAID/COMPLETED`. Recorded waste/damage/internal-use/loss disajikan sebagai penjelas dan tidak dikurangkan dua kali.
+- Laporan membutuhkan dua completed full counts terbaru dan gagal tertutup pada coverage count berbeda, paid timestamp hilang, recipe/order coverage tidak lengkap, atau actual negatif. Total menjadi `null` saat partial. CSV owner-only memakai `no-store` dan netralisasi formula spreadsheet.
+- Perbaikan durability menyimpan cash-order `paidAt` authoritative ketika payment object tidak memilikinya, sehingga restart tidak memindahkan penjualan ke waktu fallback repository.
+- Evidence: slice 5/5, focused lintas-surface 28/28, full regression 338/338, static/type/OpenAPI 172 modul/12 migrasi, PostgreSQL restart, Chromium 390/1440 Axe serious/critical 0, keyboard/focus/overflow/touch/reduced-motion, dependency0 dan added-line secret heuristic0. Historical count selector, modifier/packaging/prep, maker-checker correction/reversal, data bisnis nyata, offsite restore dan Wave 9 tetap terbuka.
+
 ## 2026-09-06 — Full inventory count atomik
 
 - Klasifikasi `CONFIRMED`; source final `87e878f06d383fc851684cdc171744d1abf691cb` pada branch Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

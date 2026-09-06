@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-06 — Actual-versus-theoretical inventory report
+
+- `CONFIRMED`; exact source `c99add2ca8fa53947823bc514f94c2531d6ee6a9` menambah Owner Dashboard report actual vs theoretical dari dua completed full counts, in-period receipts dan immutable paid recipe snapshots.
+- Fail-closed pada mismatch coverage, missing paid timestamp, incomplete recipe/order coverage dan negative actual; totals `null` pada partial. Recorded waste ditampilkan sebagai explanatory evidence, CSV owner-only no-store/formula-safe.
+- Durable cash persistence diperbaiki agar authoritative `order.paidAt` tidak hilang saat payment object tidak memiliki timestamp, menjaga report periodik identik setelah restart.
+- PASS: slice 5/5, focused 28/28, full 338/338, static/type/OpenAPI172/12, PostgreSQL restart, Chromium390/1440 Axe0/keyboard/overflow/touch/reduced-motion, dependency0 dan secret heuristic0.
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Historical pair selector, modifier/packaging/prep, maker-checker correction/reversal, real data, offsite recovery dan Wave 9 tetap terbuka.
+
 ## 2026-09-06 — Full inventory count atomik dan restart-safe
 
 - `CONFIRMED`; exact source `87e878f06d383fc851684cdc171744d1abf691cb` menambah owner-only full count untuk semua managed ingredients, blank physical inputs, explicit review/confirm, idempotency, optimistic versioning, linked movements dan detail audit per bahan.
