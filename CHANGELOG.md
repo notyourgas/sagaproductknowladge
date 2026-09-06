@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 — SagaWork partial-leave reconciliation safety gate
+
+- **CONFIRMED** from source/native evidence: application and contract `aa801deb8e901c759418065b57991fec8c4351a6`, evidence `219880c9fa40cc71a50eeac960c16309af0d2f67`. Before: any approved leave overlap excluded the whole shift. After: only a single full-span approval excludes it; partial/multiple overlaps require reconciliation, preserving raw attendance and minute projections. HR sees a readable blocker/warning. No prorated paid/unpaid calculation or automatic wage consequence is claimed.
+- HRPOS25/29: full658 tests/81 files, lint/types, contracts/OpenAPI87/106, five guards, audit0; Linux build0 and fresh eight-suite MySQL/full HTTP/Chromium runner0. Native proves review-required refresh and stale-ready lock409 without snapshots/components. New report UI label has component coverage; existing native browser regressions pass. No API shape/schema/grants/POS/runtime changes.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public workforce711ef77 active/HTTP200 unchanged. POS ownership/joint/knowledge messages sent; no fresh allowed pair/transport or joint acceptance received at cutoff. Fresh joint-native, encrypted offsite backup/disposable restore, config/rollback and owner/device/finance remain open. Partial-pay calculations and persistent policy/fact verification remain backlog; historical unrelated browser reload cause remains NEEDS CONFIRMATION.
+- Performance OFF and real payroll/payment OFF; no activation/business-ready claim. Affects SagaWork PRODUCT/DOSSIER/CHANGELOG, portfolio/root changelogs, master, gaps and sync status. No pricing/founder-policy change. Supersedes the previous partial-overlap whole-shift exclusion gap with an interim blocking safeguard, not completed payroll.
+
+
 ## 2026-09-06 — SagaWork reports follow actual shift intervals
 
 - **CONFIRMED** from source and fresh isolated evidence: application/instrumentation `d85cd94af56738ae0d2c9d2f2932d3d199280c63`, evidence `d6b059d3799b32fe4abf4e461ab57be9d8e61c6f`. Before: UTC calendar-day lookup could miss leave/overtime for early local or overnight shifts; after: actual authorized schedule interval overlap plus explicitly linked overtime, under organization/selected employee/state guards. Pending overtime remains a blocker; no invented approval or wage.
