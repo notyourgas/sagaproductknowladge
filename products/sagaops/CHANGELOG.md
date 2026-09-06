@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — Historical full-count period selection
 
-- `CONFIRMED`; source `a0973f2dc25d29f7dee050c946564528d6bafe70` menambah completed opening/closing selector, selection-stable polling, exact-pair CSV, reset-to-latest serta client prevention/recovery copy untuk closing yang tidak lebih baru pada Owner Dashboard.
+- `CONFIRMED`; source `5099c9ef4c8efae4c9f94fae9f8c514478dcc763` menambah completed opening/closing selector, selection-stable polling, exact-pair CSV, reset-to-latest serta client prevention/recovery copy untuk closing yang tidak lebih baru pada Owner Dashboard.
 - Before: full count baru otomatis menggeser report ke latest pair sehingga periode lama tidak dapat direproduksi dari UI. After: Owner memilih submitted/completed anchors dan memperoleh report/CSV identik untuk pair tersebut.
 - Pair incomplete, malformed, unknown atau reversed ditolak dengan safe `422`; authorization owner-only, no-store, stock/payment immutability dan formula-safe CSV tetap dipertahankan.
 - PASS: focused30/30, full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0/keyboard/touch/overflow/reduced-motion, dependency0 dan secret scan0. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
