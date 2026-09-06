@@ -1,5 +1,17 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-06 — Saga Member Inbox read recovery
+
+- Classification: CONFIRMED. Scope PUBLIC_DUMMY_DEMO only. No real account, backend, payment, Push/provider, customer or device activation; no new service or dependency.
+- Inbox now offers Urungkan after Tandai semua dibaca. Only the originally unread messages are restored; later explicitly opened messages are excluded, and previously read messages stay read. Recovery is memory-only, with no expiry timer, and reset/reload clears it.
+- Browser Back restores the message focus when visible or the selected filter when the newly read message is hidden. Counts stay consistent after remount: the old Studio view showed6 while displaying2; it now shows2 of6. Bulk actions keep the DOM/live status mounted instead of losing focus to the page.
+- Demo Inbox no longer aliases the reset fixture: old mark-all then reset left0 unread; reset now restores3 initial unread. Refresh retains local read state. No real notification is sent or changed.
+- Message title/body wrap fully; typography is14px title,13px body,12px metadata. At200% text, recovery controls scroll only enough to remain above navigation; returning from the last unread message also brings the fallback filter into the visible rail and viewport. Canonical320–430 mobile canvas, self-hosted Plus Jakarta Sans, Feather and warm palette retained.
+- Existing Motion13.2.0 MIT bundle unchanged. Inbox filter uses transform-only140ms, maximum5 rows and cancellation of prior filter motion; eight rapid-filter samples showed no instantaneous or settled serious contrast finding after removing text fades. Reduced motion remains final-state. Gzip deltas: app+1175B, memberUI+14B, existing Inbox CSS+122B; no new stylesheet layer.
+- Source candidate3cb56a143c934e11c0d010b4cb2526e95fe35c07, PR80. Full local suite PASS with314 units including20 new, focused86 browser checks across five widths/both motion modes plus touch, reset/reload, offline and forced colors. CPU4x synthetic mark/undo handler20 samples max12.8ms; not field INP/LCP or physical-device/native-screen-reader certification. Dependency audit0 and diff/secret-pattern checks passed.
+- Delivery: SAGA_MEMBER_PUBLIC_DUMMY_DEMO_VALIDATED. PR80 merged to canonical mainfb8732241a2c35033afce07ce13abfe80bcd27c7; exact PR CI33998989893 and main CI33999378160 PASS. Preview dpl_2uqNyBccehi7rZpQV4MSE43YEWpu READY and six remote UAT suites PASS. Production dpl_J1C5cmm16JPLYSBanwtHNAYSaiEH READY at the unchanged https://saga-member-platform.vercel.app, deployed2026-09-06 06:56 WIB; static build output2s. All19 public artifact hashes match canonical source and all six public UAT suites PASS (Inbox86, Activity83, bootstrap91, carousel80, motion14, navigation38). Exact-deployment last-hour error-log query returned0 records; this is not comprehensive monitoring or verified drains. Rollback target remains prior Ready dpl_6VUq3tMsuXcwY9tRPkip3DvWhQuN; rollback not executed. No business readiness or real-service activation claim.
+- Research: [W3C status messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html) and [focus order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html) informed mounted feedback and focus recovery. Heuristic/synthetic review, not a user survey. Other Saga products unchanged.
+
 
 ## 2026-09-06 — Saga Member searchable Points history
 
