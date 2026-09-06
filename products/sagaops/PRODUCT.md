@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Admin purchase order multi-item
+
+- `CONFIRMED`; exact source head `3393c1836043655925a6716a685e01b63a96fff3`, core `184bfdd729de99d865092d170774f5e5805477c7`. Owner Admin dapat membuat dan mengedit PO `OPEN` berisi beberapa bahan dari master yang sudah ada, menambah/menghapus line, serta melihat jumlah item dan total biaya secara langsung.
+- UI membatasi 100 line sesuai guard backend, menolak bahan duplikat sebelum submit, mengunci form selama request, memulihkan fokus setelah line dihapus, dan mempertahankan lock perubahan setelah receipt pertama. Harga, version, idempotency dan supplier/ingredient authority tetap divalidasi server.
+- PASS full353/353, focused Admin/HPP/durable42/42, static/type/OpenAPI175 modul/3.1/12 migrasi, browser390 Axe serious-critical0/overflow0/touch44/reduced-motion, dependency0 dan secret0. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+- Next: damaged/lost receiving serta alokasi fee; invoice/AP dan three-way matching; maker-checker correction/reversal. Data bisnis nyata, backup offsite, UAT perangkat dan Wave 9 tetap `NEEDS CONFIRMATION`.
+
 ## 2026-09-07 — Kontrol revisi dan pembatalan purchase order
 
 - `CONFIRMED`; exact source head `ef4077a1958be07d039b8c04bca4a488b1baf095`, core `23ed7da7fdb0214f975de454df94589907b54b0d`. Owner dapat merevisi supplier, expected date, kemasan, kuantitas, konversi dan biaya PO hanya sebelum receipt pertama.

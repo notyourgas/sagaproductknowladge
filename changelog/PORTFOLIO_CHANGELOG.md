@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS multi-item purchase orders
+
+`CONFIRMED`; exact source `3393c1836043655925a6716a685e01b63a96fff3` (core `184bfdd729de99d865092d170774f5e5805477c7`) pushed. Owner Admin kini dapat menyusun dan mengedit PO `OPEN` multi-item dengan add/remove line, live count/total, duplicate recovery, submit lock dan maksimal 100 line, tanpa mengubah server-owned price/version/idempotency atau post-receipt change control. Full353/focused42/check175/OpenAPI3.1/migrations12, mobile Axe0/overflow0/touch44, dependency0 dan secret0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production, payment serta produk lain tidak berubah. Damage/loss/fees, invoice/AP/three-way match, maker-checker, real inputs, offsite restore dan UAT tetap terbuka.
+
 ## 2026-09-07 — SagaWork Staff Workspace-assignment lost-response recovery
 
 `CONFIRMED`; application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`. HR create/end assignment now uses one bounded request, exact success validation and reload-only full People recovery on uncertainty; confirmed mutation remains confirmed if list refresh fails. Focused36/full905 plus Linux/MySQL/full HTTP/Chromium passed with one request/audit each, ended persistence and mobile/Axe/device guards. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.

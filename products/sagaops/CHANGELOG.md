@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Multi-item purchase-order authoring
+
+- `CONFIRMED`; source `3393c1836043655925a6716a685e01b63a96fff3` (core `184bfdd729de99d865092d170774f5e5805477c7`) menambah create/edit PO multi-line pada owner Admin, dengan add/remove line, live item count/total dan maksimum 100 line.
+- Bahan duplikat dan total tidak aman ditahan sebelum submit; state submitting mengunci perubahan, focus recovery dan announcement tetap aksesibel, sementara server tetap menguasai supplier, ingredient, version, idempotency dan post-receipt lock.
+- PASS full353/focused42/check175/OpenAPI3.1/migrations12, mobile390 Axe0/overflow0/touch44/reduced-motion, dependency0 dan secret0.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan readiness sekitar 60/100. Damage/loss, fee allocation, invoice/AP/three-way match, maker-checker, real inputs, offsite restore dan operational acceptance belum selesai.
+
 ## 2026-09-07 — PO edit dan outstanding cancellation
 
 - `CONFIRMED`; source `ef4077a1958be07d039b8c04bca4a488b1baf095` (core `23ed7da7fdb0214f975de454df94589907b54b0d`) menambah pre-receipt amendment dan irreversible cancel untuk sisa PO.

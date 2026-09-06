@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS multi-item PO authoring
+
+- `CONFIRMED`; exact source `3393c1836043655925a6716a685e01b63a96fff3`, core `184bfdd729de99d865092d170774f5e5805477c7`. Owner Admin dapat membuat dan mengedit PO `OPEN` dengan beberapa ingredient, add/remove line, live item count/total dan batas 100 line yang selaras dengan backend.
+- Duplicate ingredient dan unsafe total diblokir sebelum submit; request lock, focus recovery, reduced motion dan status announcement diuji. Supplier/ingredient authority, version, idempotency, cost validation dan post-receipt edit lock tetap di server.
+- PASS full353/353, focused42/42, static/check175/OpenAPI3.1/migrations12, Chromium390 Axe0/overflow0/touch44, dependency0 dan secret0. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+- `NEEDS CONFIRMATION`: data supplier/ingredient/cost nyata, lokasi backup offsite, konfigurasi bisnis, UAT perangkat dan seluruh gate Wave 9. Next source: damaged/lost receipt plus fee allocation, invoice/AP/three-way matching, lalu maker-checker correction/reversal.
+
 ## 2026-09-07 — SagaWork Staff Workspace-assignment recovery
 
 - `CONFIRMED`: application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`. HR create/end assignment is single-request and bounded; uncertainty closes Staff detail, locks every People write until reload and cannot render late false success. Confirmed mutation is not reclassified as failed when the following list refresh fails.

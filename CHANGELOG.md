@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS multi-item PO sync
+
+- `CONFIRMED`: exact source `3393c1836043655925a6716a685e01b63a96fff3` (core `184bfdd729de99d865092d170774f5e5805477c7`) menambah owner Admin create/edit PO multi-line, add/remove line, live count/total, duplicate recovery dan submit lock dengan batas 100 line.
+- PASS full353/focused42, static/check175/OpenAPI3.1/migrations12, mobile Axe/layout/touch/reduced-motion serta dependency/secret scan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, readiness sekitar 60/100. Damage/loss/fee, invoice/AP/three-way match, maker-checker, real inputs, offsite restore dan UAT tetap terbuka.
+
 ## 2026-09-07 — SagaWork Staff Workspace-assignment recovery
 
 - `CONFIRMED`; application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`. HR assignment create/end now fails safely on lost/late responses through one bounded request, exact result validation and reload-only People recovery. Full905/97 plus Linux/MySQL/HTTP/Chromium passed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged; joint/offsite/release/UAT gates remain.
