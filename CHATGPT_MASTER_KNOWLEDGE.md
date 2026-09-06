@@ -2,7 +2,7 @@
 
 ## 2026-09-06 — SagaOPS historical inventory-period selector
 
-`CONFIRMED` dari source `a0973f298f2181f5439f2b7b587d27d1f66b5e56`. Owner Dashboard dapat memilih pasangan completed full-count opening/closing, mencegah closing yang tidak lebih baru sebelum submit, mempertahankannya saat polling, mengekspor CSV dari exact visible pair dan reset ke latest pair. API meminta kedua references bersama, memvalidasi format/keberadaan/urutan dan memberi safe `422`; report tetap owner-only, no-store dan read-only terhadap stok/payment. Evidence focused30/30 plus hardening14/14, final full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0 dan security scans lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production/payment/payroll tidak berubah.
+`CONFIRMED` dari source `a0973f2dc25d29f7dee050c946564528d6bafe70`. Owner Dashboard dapat memilih pasangan completed full-count opening/closing, mencegah closing yang tidak lebih baru sebelum submit, mempertahankannya saat polling, mengekspor CSV dari exact visible pair dan reset ke latest pair. API meminta kedua references bersama, memvalidasi format/keberadaan/urutan dan memberi safe `422`; report tetap owner-only, no-store dan read-only terhadap stok/payment. Evidence focused30/30 plus hardening14/14, final full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0 dan security scans lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production/payment/payroll tidak berubah.
 
 ## 2026-09-06 — SagaWork partial-leave reconciliation safety gate
 
