@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-06 — SagaOPS historical inventory-period selector
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source `a56fbfea5ee1b6bfc864581911806ce43124614e` pushed dan clean.
+- Disinkronkan: completed opening/closing selector, polling persistence, exact-period owner CSV, latest reset dan fail-closed pair validation.
+- Evidence: focused30/30, full338/338, static/type/OpenAPI172/12, Chromium390/1440 Axe0/touch/keyboard/overflow/reduced-motion, dependency0 dan secret scan0.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; tidak ada deploy, activation, payment, promo atau payroll nyata. Readiness sekitar 60/100; Waves 1–8 PARTIAL, Wave 9 deferred.
+- Terbuka: closing approval lock, modifier/packaging/prep, maker-checker, real data, private release, offsite restore dan operational UAT. Tidak ada data restricted atau keputusan founder/pricing baru.
+
 ## 2026-09-06 — SagaWork partial-leave reconciliation safety gate
 
 - **CONFIRMED** from source/native evidence: application and contract `aa801deb8e901c759418065b57991fec8c4351a6`, evidence `219880c9fa40cc71a50eeac960c16309af0d2f67`. Before: any approved leave overlap excluded the whole shift. After: only a single full-span approval excludes it; partial/multiple overlaps require reconciliation, preserving raw attendance and minute projections. HR sees a readable blocker/warning. No prorated paid/unpaid calculation or automatic wage consequence is claimed.

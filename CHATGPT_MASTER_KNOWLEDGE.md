@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-06 — SagaOPS historical inventory-period selector
+
+`CONFIRMED` dari source `a56fbfea5ee1b6bfc864581911806ce43124614e`. Owner Dashboard dapat memilih pasangan completed full-count opening/closing, mempertahankannya saat polling, mengekspor CSV dari exact visible pair dan reset ke latest pair. API meminta kedua references bersama, memvalidasi format/keberadaan/urutan dan memberi safe `422`; report tetap owner-only, no-store dan read-only terhadap stok/payment. Evidence focused30/30, full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0 dan security scans lulus. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production/payment/payroll tidak berubah.
+
 ## 2026-09-06 — SagaWork partial-leave reconciliation safety gate
 
 - **CONFIRMED** from source/native evidence: application and contract `aa801deb8e901c759418065b57991fec8c4351a6`, evidence `219880c9fa40cc71a50eeac960c16309af0d2f67`. Before: any approved leave overlap excluded the whole shift. After: only a single full-span approval excludes it; partial/multiple overlaps require reconciliation, preserving raw attendance and minute projections. HR sees a readable blocker/warning. No prorated paid/unpaid calculation or automatic wage consequence is claimed.

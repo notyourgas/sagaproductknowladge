@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-06 — SagaOPS setelah historical inventory-period selector
+
+- `CONFIRMED`: gap arbitrary historical completed count-pair selection tertutup secara lokal pada source `a56fbfea5ee1b6bfc864581911806ce43124614e`, termasuk selection-stable polling, exact-pair CSV, reset-to-latest dan safe validation.
+- `NEEDS CONFIRMATION`: pasangan report belum memiliki explicit period close/approval lock atau signed finance acknowledgement. Modifier, packaging, prep/yield dan maker-checker correction/reversal belum lengkap.
+- `NEEDS CONFIRMATION`: real inventory facts, private deployment, encrypted offsite backup/disposable restore, monitoring, rollback, device/finance UAT dan Wave 9 belum tersedia. Readiness tetap sekitar 60/100; historical local report bukan actual HPP production atau business readiness.
+
 ## 2026-09-06 — SagaWork partial-leave reconciliation safety gate
 
 - **CONFIRMED** from source/native evidence: application and contract `aa801deb8e901c759418065b57991fec8c4351a6`, evidence `219880c9fa40cc71a50eeac960c16309af0d2f67`. Before: any approved leave overlap excluded the whole shift. After: only a single full-span approval excludes it; partial/multiple overlaps require reconciliation, preserving raw attendance and minute projections. HR sees a readable blocker/warning. No prorated paid/unpaid calculation or automatic wage consequence is claimed.

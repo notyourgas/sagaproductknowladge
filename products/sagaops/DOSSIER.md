@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-06 — Historical inventory-period selector
+
+`CONFIRMED` dari source `a56fbfea5ee1b6bfc864581911806ce43124614e`. Owner dapat memilih completed opening/closing full-count anchors yang tersedia, melihat actual-versus-theoretical untuk periode itu, mempertahankan pilihan melalui background refresh, mengekspor exact visible pair, dan reset ke latest pair. Kontrak fail-closed mewajibkan kedua opaque references, format maksimal 128 karakter dan closing lebih baru; missing/unknown/reversed input menghasilkan safe `422`. Native controls 48px runtuh ke satu kolom di 390px tanpa overflow. Focused30/30, full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0 dan security scans lulus. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; belum ada closing approval lock, correction/reversal maker-checker, data nyata, private release atau Wave 9.
+
 ## 2026-09-06 — Actual versus theoretical inventory variance
 
 `CONFIRMED` dari source `c99add2ca8fa53947823bc514f94c2531d6ee6a9`. Owner-only report memakai dua completed full counts terbaru sebagai opening/closing anchor; actual = opening physical + in-period receipts - closing physical, sedangkan theoretical berasal dari immutable recipe snapshot × sold quantity untuk order `PAID/COMPLETED`. Waste/loss yang tercatat adalah evidence penjelas, bukan pengurang kedua. Coverage mismatch, missing paid timestamp, incomplete order/recipe coverage dan actual negatif membuat report partial dengan total `null`. CSV no-store dan formula-safe. Durable persistence kini memakai authoritative order `paidAt` sebagai fallback untuk cash payment agar hasil periode tetap sama setelah restart. Slice5/5, focused28/28, full338/338, static/type/OpenAPI172/12, PostgreSQL restart, Chromium390/1440 Axe0 dan security scans lulus. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; historical pair selection, expanded recipe mapping, correction/reversal, private release, real inputs dan Wave 9 belum selesai.

@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-06 — Historical full-count period selection
+
+- `CONFIRMED`; source `a56fbfea5ee1b6bfc864581911806ce43124614e` menambah completed opening/closing selector, selection-stable polling, exact-pair CSV dan reset-to-latest pada Owner Dashboard.
+- Before: full count baru otomatis menggeser report ke latest pair sehingga periode lama tidak dapat direproduksi dari UI. After: Owner memilih submitted/completed anchors dan memperoleh report/CSV identik untuk pair tersebut.
+- Pair incomplete, malformed, unknown atau reversed ditolak dengan safe `422`; authorization owner-only, no-store, stock/payment immutability dan formula-safe CSV tetap dipertahankan.
+- PASS: focused30/30, full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0/keyboard/touch/overflow/reduced-motion, dependency0 dan secret scan0. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+
 ## 2026-09-06 — Actual-versus-theoretical inventory report
 
 - `CONFIRMED`; exact source `c99add2ca8fa53947823bc514f94c2531d6ee6a9` menambah Owner Dashboard report actual vs theoretical dari dua completed full counts, in-period receipts dan immutable paid recipe snapshots.

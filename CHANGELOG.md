@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-06 — SagaOPS historical inventory-period selector
+
+- Status `accepted`; source `a56fbfea5ee1b6bfc864581911806ce43124614e` pushed dan clean.
+- Sinkronisasi mencakup completed count-pair selector, stable polling, exact-pair CSV, reset-to-latest, safe `422` validation dan responsive accessibility evidence.
+- PASS: focused30/30, full338/338, static/type/OpenAPI172/12, browser390/1440 Axe0, dependency0 dan secret scan0.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100, production tidak berubah. Closing approval lock, expanded recipe mapping, maker-checker, real inputs, offsite restore dan Wave 9 tetap terbuka.
+
 ## 2026-09-06 — SagaWork partial-leave reconciliation safety gate
 
 - **CONFIRMED** from source/native evidence: application and contract `aa801deb8e901c759418065b57991fec8c4351a6`, evidence `219880c9fa40cc71a50eeac960c16309af0d2f67`. Before: any approved leave overlap excluded the whole shift. After: only a single full-span approval excludes it; partial/multiple overlaps require reconciliation, preserving raw attendance and minute projections. HR sees a readable blocker/warning. No prorated paid/unpaid calculation or automatic wage consequence is claimed.
