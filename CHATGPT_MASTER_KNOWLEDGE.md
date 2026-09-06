@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS paid-sale inventory truth
+
+- `CONFIRMED`; source `eb3d60bfd169f0bd7161378156662aa4380e53c7` dan docs `e3748166fa65af72dd7e2dce4a1e0bbc2eb6cfc3` pushed. Paid transition authoritative mengonsumsi immutable recipe snapshot exactly-once; pending/failed tidak mengubah stok. Shortage menjadi explicit reconciliation evidence tanpa membatalkan captured payment, dan incomplete recipe tetap coverage gap.
+- `SALE_CONSUMPTION` system-only dan diproyeksikan terpisah dari waste. PostgreSQL menyimpan order/payment transition dan HPP state dalam satu transaksi dengan runtime rollback saat persist gagal. Admin menunjukkan order reference, before/after balance dan shortage.
+- Focused43/full344, check175/OpenAPI3.1/migrations12, browser390/1440 Axe0/overflow0, dependency/secret0 PASS. Status `SOURCE_PUSHED / LOCAL_VALIDATED / STAGING_BUILD_READY / IMPLEMENTED_NOT_DEPLOYED`: Vercel menolak redeploy karena daily deployment limit, sehingga protected preview lama tidak membuktikan exact source. Production/payment/business readiness tetap tidak berubah.
+
 ## 2026-09-07 — SagaBook Block Time draft refresh guard
 
 - `CONFIRMED`; exact source `9bab95864246708345f2c01321991b849c15c4b8`

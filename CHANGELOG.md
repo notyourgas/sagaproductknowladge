@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS paid-sale inventory sync
+
+- `CONFIRMED`: exact source `eb3d60bfd169f0bd7161378156662aa4380e53c7` mengurangi stok bahan dari immutable paid-order recipes secara exactly-once dan mencatat shortage eksplisit; pending/failed payment tetap stock-neutral.
+- PASS focused43/full344, check175/OpenAPI3.1/migrations12, responsive Admin Axe/overflow, dependency dan secret scan. Source/doc pushed dan clean.
+- Delivery `LOCAL_VALIDATED / STAGING_BUILD_READY / IMPLEMENTED_NOT_DEPLOYED`; protected preview redeploy diblokir quota harian Vercel. Production, payment activation dan `BUSINESS_READY` tidak berubah.
+
 ## 2026-09-07 — SagaBook Block Time draft refresh guard
 
 - `CONFIRMED`: source `9bab95864246708345f2c01321991b849c15c4b8`

@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaOPS paid-sale inventory consumption
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `eb3d60bfd169f0bd7161378156662aa4380e53c7` dan docs `e3748166fa65af72dd7e2dce4a1e0bbc2eb6cfc3` pushed dan clean.
+- Disinkronkan: exactly-once paid-order recipe consumption, stock-neutral pending/failed payment, shortage reconciliation, PostgreSQL transactional persistence dan Admin movement visibility. Tidak ada secret, PII, receipt mentah atau identifier private.
+- Evidence focused43/43, full344/344, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0, dependency0 dan high-confidence secret0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / STAGING_BUILD_READY / IMPLEMENTED_NOT_DEPLOYED`. Build Vercel exact source PASS tetapi upload diblokir daily deployment limit; preview sebelumnya tetap terlindungi namun bukan exact source. Production/payment/activation/business readiness tidak berubah.
+
 ## 2026-09-07 — SagaBook Block Time refresh guard
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

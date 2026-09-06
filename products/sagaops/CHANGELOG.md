@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Paid order mengonsumsi inventory secara exactly-once
+
+- `CONFIRMED`; source `eb3d60bfd169f0bd7161378156662aa4380e53c7` menghubungkan seluruh paid transition authoritative ke snapshot resep immutable dan mengurangi saldo bahan secara idempotent. Pending/failed payment tetap stock-neutral.
+- Shortage direkam sebagai reconciliation evidence tanpa menggagalkan captured payment; resep belum terverifikasi tetap coverage gap. `SALE_CONSUMPTION` system-only, terpisah dari waste, dan order/payment plus HPP projection commit dalam transaksi PostgreSQL yang sama.
+- PASS focused43/43, full344/344, static/check175/OpenAPI3.1/migrations12, Admin390/1440 Axe0/overflow0, dependency0 dan high-confidence secret0.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / STAGING_BUILD_READY / IMPLEMENTED_NOT_DEPLOYED`; upload preview ditolak karena batas harian deployment Vercel. Preview lama bukan exact source. Production/payment/business readiness tidak berubah.
+
 ## 2026-09-07 — Owner Dashboard menjadi aplikasi modular
 
 - `CONFIRMED`; source `96ca11a9006269fcafd906a2aa0b67d57789aa14` mengganti one-page editorial dashboard menjadi sidebar/drawer application shell dengan 12 deep-linked modules dan compact responsive hierarchy.
