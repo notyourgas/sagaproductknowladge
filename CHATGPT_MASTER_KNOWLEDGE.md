@@ -6,6 +6,13 @@
 - PASS focused38/full1002, lint/types/production-audit/contracts/build/release checks and exact-source Linux/MySQL/full HTTP/compiled Chromium. Native proves genuine held/lost success, one request/audit each, exact update/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
 - `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200; POS/shared runtime unchanged. Fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
 
+## 2026-09-07 — SagaOPS invoice approval dan AP posting
+
+- `CONFIRMED`; exact source `887095ef2d72b9de025112ff4bc76b985636828c`, core `e4b99a181956d14f9881c929b0f01fe7f8727582`. Dedicated Finance surface meninjau matched supplier invoice dengan guard pembuat invoice tidak boleh menyetujui invoice sendiri.
+- Finance approval menghasilkan `APPROVED_NOT_POSTED`. Owner berbeda dari reviewer memposting open payable `POSTED_UNPAID`; tidak ada supplier payment, bank transfer atau external mutation.
+- Immutable workflow history, exact replay, state v12 restore dan PostgreSQL rollback/restart tervalidasi. Dashboard menampilkan queue, approved, posted-unpaid dan outstanding AP.
+- PASS full362/check176/OpenAPI3.1/migrations12, mobile390 Axe0/overflow0/touch44/page-error0, dependency0/secret0. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Credit/replacement, correction/reversal/resubmit, actual inputs, offsite restore, device UAT dan Wave 9 masih terbuka.
+
 ## 2026-09-07 — SagaWork attendance-policy lifecycle recovery
 
 - `CONFIRMED`; application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350`. HR policy create, activate and delete are bounded one-shot mutations with exact success validation. An uncertain result closes policy context, locks all Settings writes until reload and never claims late success.

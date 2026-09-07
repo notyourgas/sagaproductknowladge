@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Independent invoice approval dan AP posting
+
+- `CONFIRMED`; exact source head `887095ef2d72b9de025112ff4bc76b985636828c`, core `e4b99a181956d14f9881c929b0f01fe7f8727582`. Invoice `READY_FOR_APPROVAL` kini ditinjau melalui surface Finance least-privilege; pembuat invoice yang sama tidak dapat menjadi reviewer.
+- Approval menghasilkan `APPROVED_NOT_POSTED`; Owner berbeda dari reviewer Finance dapat memposting open payable `POSTED_UNPAID`. Posting tidak membuat supplier payment, bank transfer atau external mutation.
+- Approval/posting history versioned, exact-idempotent dan tervalidasi saat PostgreSQL restart. Dashboard merangkum review queue, approved-not-posted, posted-unpaid dan outstanding AP.
+- PASS full362/362, HPP26, Finance browser1, legacy match1, check176/OpenAPI3.1/migrations12, mobile390 Axe0/overflow0/touch44/page-error0, dependency0 dan changed-file secret scan0. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+- Next: supplier credit/replacement; correction/reversal/resubmit; modifier/packaging/prep cost-consumption. Data nyata, offsite restore, device UAT dan Wave 9 tetap `NEEDS CONFIRMATION`.
+
 ## 2026-09-07 — Supplier invoice three-way matching
 
 - `CONFIRMED`; exact source head `4e5203d3552eb883df6c0fa5aaf4f4b8d61e2ec4`, core `130581e6590aa7b7bc0c85297e720b1204d977ba`. Owner Admin dapat mencatat invoice supplier parsial dan membandingkan kuantitas, harga serta landed fee terhadap PO dan accepted receipt.

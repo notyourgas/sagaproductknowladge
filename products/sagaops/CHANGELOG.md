@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Invoice approval dan open-payable posting
+
+- `CONFIRMED`; source `887095ef2d72b9de025112ff4bc76b985636828c` (core `e4b99a181956d14f9881c929b0f01fe7f8727582`) menambah Finance review, maker-checker guard, Owner posting dan AP outstanding projection.
+- Maker invoice tidak dapat review; reviewer Finance tidak dapat menjadi poster. Hasil posting tetap `POSTED_UNPAID` dan payment count tidak berubah.
+- State v12, immutable workflow evidence, exact replay, rollback dan PostgreSQL restart fail-closed. Browser role boundary, Axe, overflow, touch target serta no-payment assertion lulus.
+- PASS full362/check176/OpenAPI3.1/migrations12/dependency0/secret0. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan readiness sekitar 60/100 tidak berubah. Credit/replacement, correction/reversal/resubmit, real inputs, offsite restore dan UAT masih terbuka.
+
 ## 2026-09-07 — Supplier invoice three-way matching
 
 - `CONFIRMED`; source `4e5203d3552eb883df6c0fa5aaf4f4b8d61e2ec4` (core `130581e6590aa7b7bc0c85297e720b1204d977ba`) menambah partial supplier invoice intake, server-owned PO-receipt-invoice comparison dan explicit AP readiness.

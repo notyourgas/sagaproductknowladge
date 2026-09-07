@@ -7,6 +7,13 @@
 - Area/file: SagaWork Settings Workspace UX, client mutation guard, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
 - PASS focused38/full1002, Linux/MySQL/full HTTP/compiled Chromium, exactly one audit per action, exact update/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
 
+## 2026-09-07 — SagaOPS invoice approval dan AP posting sync
+
+- `CONFIRMED`: exact source `887095ef2d72b9de025112ff4bc76b985636828c` (core `e4b99a181956d14f9881c929b0f01fe7f8727582`) menambah independent Finance approval, Owner open-payable posting dan Dashboard AP projection.
+- Alasan: invoice yang sudah cocok perlu segregation of duties dan pencatatan kewajiban tanpa mengarang pembayaran pemasok.
+- Area/file: SagaOPS HPP state v12, Finance AP surface, Owner Admin/Dashboard, browser/domain/durable tests, product/master/portfolio changelog dan sync status. Tidak ada payment, supplier contact, secret, PII atau raw receipt.
+- PASS full362/check176/OpenAPI3.1/migrations12, PostgreSQL restart, mobile390 Axe/layout/touch/page-error, dependency dan secret scan. Production tetap unchanged; credit/replacement, correction/reversal/resubmit, real inputs, offsite restore dan UAT masih terbuka.
+
 ## 2026-09-07 — SagaWork attendance-policy lifecycle recovery sync
 
 - `CONFIRMED`: application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350` adds bounded one-shot policy create/activate/delete, strict success validation and reload-only full Settings recovery after uncertain results.
