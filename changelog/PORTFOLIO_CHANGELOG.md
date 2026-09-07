@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS official-domain private release dan storage retention
+
+- `CONFIRMED`; exact SagaOPS `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d` diterima pada private staging dengan 13 migration, browser integration, restart, backup/restore dan compatible rollback/forward rehearsal.
+- Official staging menjadi integration lane; public Saga POS tetap maintenance, production/payment tidak diaktifkan dan produk Saga lain tidak berubah.
+- Guarded retention memulihkan sedikitnya 841.486.906 byte file sambil mempertahankan current, rollback dan encrypted backup. Full380/380 dan security/release gates lulus; offsite restore, monitoring, production identity, hardware dan approvals tetap residual.
+
 ## 2026-09-07 — SagaWork schedule publish recovery
 
 `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final native harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`. HR schedule publish is one-shot/bounded with exact response validation and a reload-only lock across roster, swap and template writes after uncertain outcomes. Native acceptance found and closed keyboard access for horizontally scrollable schedule/template tables without weakening Axe. Focused12/full1055 plus Linux/MySQL/full HTTP/Chromium passed. Delivery `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native/offsite restore/config rollback/owner-device-finance gates remain.

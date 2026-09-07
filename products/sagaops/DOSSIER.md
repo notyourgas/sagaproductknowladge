@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-07 — Official-domain release lane dan storage lifecycle
+
+`CONFIRMED` dari exact application release `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d` dan documentation source `ecd84fd96124c0cb7c98a62ffbe282a1a6a98ef1`. Private staging Hostinger sekarang menjalankan 13/13 migration dengan exact source health. Jalur pengembangan terintegrasi menggunakan hostname resmi staging melalui akses privat; hostname Kiosk, Cashier, KDS, Dashboard, Admin, Staff dan API disiapkan sebagai boundary surface, tetapi public production tetap maintenance `503` dan staging tetap menolak akses internet dengan `403`.
+
+Promotion contract adalah build-once dari pushed commit, encrypted backup plus disposable restore, extraction ke release directory immutable, migration, atomic current switch dan exact-health verification. Successful upgrade menyimpan compatible rollback; rehearsal ke rollback `63492d14650185f306d343ee217ae22601382837` dan kembali ke current lulus. Production tetap memerlukan OS user, service, port, PostgreSQL database/role, identity dan secret sendiri; deployment tidak sama dengan activation.
+
+Storage lifecycle fail-closed: dry run wajib mendahului approved prune yang terikat exact current SHA. Current dan rollback harus valid, berbeda, root-owned dan berada di release root. Hanya release Saga POS lain, transfer archive Saga POS yang usang dan zero-session disposable restore database dengan pola khusus yang dapat dipilih. Encrypted backup, shared temporary files, journal dan cache produk lain tidak disentuh. Tujuh obsolete release, empat transfer archive dan empat disposable restore database terhapus; sedikitnya 841.486.906 byte file kembali tersedia, sementara current, rollback dan backup tetap ada.
+
+Final regression 380/380, focused retention/runtime 34/34, static/type/OpenAPI 186 module/13 migration, dependency audit0 dan changed-line high-confidence secret scan0 lulus. Private browser acceptance meliputi Kiosk→simulated QRIS→KDS/Owner, Admin, Cashier, durable-session restart, Axe0 dan overflow0; tidak ada payment nyata. Status `PRIVATE_STAGING_EXACT_RELEASE_ACCEPTED / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`, readiness sekitar 60/100. Residual: encrypted offsite backup/restore, monitoring/alert owner, production identity tanpa `BYPASSRLS`, vault reference, hardware UAT dan separate deploy/activation/payment approval.
+
 ## 2026-09-07 — Hostinger domain containment dan TLS
 
 `CONFIRMED` dari exact source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8` dengan core infrastructure `b25307cab685310d7af50d377446f7e5483d66e1`. Founder menetapkan `sagapos.site` dan Hostinger VPS. Imported DNS tidak lagi dapat jatuh ke default virtual host produk lain: setiap hostname Saga POS dimiliki konfigurasi khusus, HTTP dipindahkan ke HTTPS, dan production-intended surfaces berhenti pada halaman maintenance `503` yang tidak di-cache.

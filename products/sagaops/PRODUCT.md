@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Official-domain release lane dan guarded storage retention
+
+- `CONFIRMED`; exact application release `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d` diterima pada private staging Hostinger dengan 13/13 migration. Dokumentasi acceptance berada pada source `ecd84fd96124c0cb7c98a62ffbe282a1a6a98ef1`.
+- Pengembangan terintegrasi menggunakan `staging.sagapos.site` melalui akses privat. Kiosk, Cashier, KDS, Dashboard, Admin, Staff dan API memiliki hostname resmi terpisah untuk cutover berikutnya; public production tetap maintenance `503` dan external staging tetap `403`.
+- Release memakai exact pushed commit, encrypted backup/disposable restore, atomic switch, exact-health check, current-plus-rollback pointer dan rollback/forward rehearsal. Retention bersifat dry-run-first dan hanya boleh menghapus release Saga POS selain current/rollback, transfer archive usang serta restore database disposable; backup tidak ikut dipangkas.
+- Final full regression 380/380 PASS; browser synthetic Kiosk→KDS/Owner/Admin/Cashier, durable-session restart, Axe serious/critical0 dan overflow0 lulus tanpa transaksi nyata. Cleanup terkontrol mengembalikan sedikitnya 841.486.906 byte file release/upload.
+- Status `PRIVATE_STAGING_EXACT_RELEASE_ACCEPTED / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`; readiness operasional tetap sekitar 60/100. Offsite backup, production identity/RLS, monitoring, physical-device UAT dan exact activation approval masih menjadi gate.
+
 ## 2026-09-07 — Hostinger domain containment, TLS, dan private staging
 
 - `CONFIRMED`; owner memilih `sagapos.site` dan Hostinger VPS sebagai target hosting Saga POS. Exact source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8`, core infrastructure `b25307cab685310d7af50d377446f7e5483d66e1`.

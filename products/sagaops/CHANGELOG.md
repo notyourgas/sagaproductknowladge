@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Official-domain private release dan guarded retention
+
+- `CONFIRMED`; exact runtime `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d`, acceptance docs `ecd84fd96124c0cb7c98a62ffbe282a1a6a98ef1`, 13/13 migration.
+- Official private staging menjadi integration lane; public surfaces tetap maintenance dan production tidak diaktifkan. Backup/restore, atomic promotion, exact health dan rollback/forward rehearsal lulus.
+- Dry-run-first pruning mempertahankan current/rollback/backup dan menghapus tujuh obsolete Saga POS releases, empat old transfer archives serta empat disposable restore databases; sedikitnya 841.486.906 byte file dipulihkan.
+- Final full380/380, focused34/34, check186/13, browser/Axe/overflow/restart, dependency0 dan public-safety scan lulus. Status `PRIVATE_STAGING_EXACT_RELEASE_ACCEPTED / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`; offsite restore, monitoring, production identity, vault, hardware dan activation approval tetap terbuka.
+
 ## 2026-09-07 — Hostinger domain containment, TLS, dan private staging
 
 - `CONFIRMED`; `sagapos.site` dan Hostinger VPS menjadi target Saga POS. Source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8`, core `b25307cab685310d7af50d377446f7e5483d66e1`.

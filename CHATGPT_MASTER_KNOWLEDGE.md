@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS official-domain deployment strategy
+
+- `CONFIRMED`; exact app `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d` aktif dan diterima hanya pada private staging Hostinger dengan 13/13 migration. Source dokumentasi acceptance `ecd84fd96124c0cb7c98a62ffbe282a1a6a98ef1` tidak mengubah runtime.
+- Gunakan `staging.sagapos.site` melalui akses privat sebagai integration/UAT lane. Jangan mengembangkan dengan mutasi langsung pada runtime production. Surface resmi Kiosk, Cashier, KDS, Dashboard, Admin, Staff dan API tetap maintenance sampai exact production deployment dan activation disetujui terpisah.
+- Release wajib build-once dari pushed commit, backup plus disposable restore, atomic current switch, exact-health check, compatible rollback dan post-switch smoke. Retention dry-run-first hanya menghapus obsolete Saga POS release/upload/disposable restore; current, rollback, backup dan resource produk lain dilindungi.
+- Final full380/380, browser integration/restart/Axe/overflow dan rollback rehearsal lulus; sedikitnya 841.486.906 byte file release/upload dipulihkan. Status `PRIVATE_STAGING_EXACT_RELEASE_ACCEPTED / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`; readiness sekitar 60/100. Offsite restore, monitoring, production identity/RLS, vault, hardware dan activation/payment approvals belum selesai.
+
 ## 2026-09-07 — SagaWork schedule publish recovery
 
 - `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final native harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`. Penerbitan draft shift oleh HR sekarang one-shot dan bounded dengan validasi identitas/status/versi exact serta safe known-4xx copy.

@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS official-domain release strategy sync
+
+- `CONFIRMED`: exact application `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d`, documentation `ecd84fd96124c0cb7c98a62ffbe282a1a6a98ef1`; private staging accepted at 13/13 migration.
+- Alasan: menjadikan domain resmi sebagai integration lane tanpa mengaburkan staging, production deployment dan activation, sekaligus mencegah obsolete releases memenuhi VPS.
+- Area/file: SagaOPS product/dossier/changelog, portfolio/master, gaps dan sync. Tidak ada secret, PII, server address, private identifier, raw receipt atau payment mutation.
+- PASS full380/380, focused34/34, static/type/OpenAPI186/13, browser/restart/Axe/overflow, backup/restore, rollback/forward, dependency0 dan changed-line secret scan0. Guarded cleanup memulihkan sedikitnya 841.486.906 byte file dan melindungi current/rollback/backup.
+- Delivery `PRIVATE_STAGING_EXACT_RELEASE_ACCEPTED / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`; readiness sekitar 60/100. Offsite restore, monitoring, production identity, vault/hardware dan exact deployment/activation approvals tetap terbuka.
+
 ## 2026-09-07 — SagaWork schedule publish recovery sync
 
 - `CONFIRMED`: application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`.
