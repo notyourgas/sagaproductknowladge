@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — SagaOPS protected HRPOS staging/recovery sync
 
-- `CONFIRMED`: exact source `690cd0eeb7fe65aef41d683945ee67a12000a47f`, feature `52d77fc8039281838a3594fd4f9b211c19cf28ea`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`; branch source pushed dan clean.
+- `CONFIRMED`: exact source `690cd0e35560a39816f74135353f428caa4eb368`, feature `52d77fc818b29ca27350d4098dd3b89b827c5033`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`; branch source pushed dan clean.
 - Alasan: menyiapkan HR/Staff integration lane yang source-bound dan recoverable tanpa membuka domain POS, fixture login, payment atau production.
 - Area/file: SagaOPS product/dossier/changelog, portfolio/master, gaps dan sync. Tidak ada secret, PII, grant subject, tenant/device identifier, private path, raw callback/receipt atau provider mutation.
 - PASS full387/387, focused14/14, static/type/OpenAPI166/13, shell syntax, dependency0 dan high-confidence public-safety/diff scan0.

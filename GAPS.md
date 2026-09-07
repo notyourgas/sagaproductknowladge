@@ -1556,7 +1556,7 @@ GAP-004, bukan gap implementasi warna komponen.
 ### SagaOPS
 
 - `CONFIRMED`: exact app `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d` diterima pada private official-domain staging dengan 13 migration, full380/380, integrated browser/restart, encrypted backup/disposable restore dan rollback/forward rehearsal. Guarded retention mempertahankan current/rollback/backup serta menghapus obsolete Saga POS resources saja.
-- `CONFIRMED`: source candidate `690cd0eeb7fe65aef41d683945ee67a12000a47f` menutup source-pair credential contract, HR/Staff-only staging allowlist, revocation retry serta exact release/symlink/path/incomplete-pair recovery guard secara lokal. Kandidat belum dipromosikan ke staging.
+- `CONFIRMED`: source candidate `690cd0e35560a39816f74135353f428caa4eb368` menutup source-pair credential contract, HR/Staff-only staging allowlist, revocation retry serta exact release/symlink/path/incomplete-pair recovery guard secara lokal. Kandidat belum dipromosikan ke staging.
 - `NEEDS CONFIRMATION`: encrypted offsite backup/disposable restore di lokasi terpisah, monitoring/alert destination dan incident owner, production OS/service/PostgreSQL identity tanpa `BYPASSRLS`, vault references, physical Kiosk/KDS/printer/NFC/router/UPS UAT, serta exact approvals untuk production deployment, activation dan payment. Public production tetap maintenance dan `BUSINESS_READY=false`.
 
 - `CONFIRMED`: pilot pertama Kopi Saga Salak memakai self-service kiosk + nota

@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — Protected HRPOS staging dan recovery guard
 
-- `CONFIRMED`; source `690cd0eeb7fe65aef41d683945ee67a12000a47f` (feature `52d77fc8039281838a3594fd4f9b211c19cf28ea`) pushed dari base POS `9a2893db5697a55b300440aeafcd07aa79581e26`.
+- `CONFIRMED`; source `690cd0e35560a39816f74135353f428caa4eb368` (feature `52d77fc818b29ca27350d4098dd3b89b827c5033`) pushed dari base POS `9a2893db5697a55b300440aeafcd07aa79581e26`.
 - HR/Staff bridge kini mempunyai exact source-pair/tenant/grant credential validation, encrypted session, per-command re-introspection, revocation retry dan staging route allowlist; POS operator/customer/payment surfaces tetap tertutup.
 - Release/provision/rollback menolak symlink, alias/path traversal, non-root release dan incomplete credential pair. PASS full387/check166/13, focused14, shell syntax, dependency0 dan public-safety0.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `STAGING_READY=false`, production/activation/business-ready false. Fresh credential evidence, backup/restore, authenticated joint UAT, containment dan rollback rehearsal masih terbuka.

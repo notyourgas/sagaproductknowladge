@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — Protected HRPOS staging candidate dan recovery boundary
 
-`CONFIRMED` dari source head `690cd0eeb7fe65aef41d683945ee67a12000a47f`, feature source `52d77fc8039281838a3594fd4f9b211c19cf28ea`, dibangun di atas POS base `9a2893db5697a55b300440aeafcd07aa79581e26`. Kandidat ini memuat HR/Staff bridge tanpa membuka surface Kiosk, Cashier, KDS, Dashboard, Admin, fixture identity atau payment pada public staging. Login memakai provider redirect HTTPS, source-pair dan tenant binding exact, explicit grant, encrypted server-side session, command-time re-introspection, revocation dan bounded retry.
+`CONFIRMED` dari source head `690cd0e35560a39816f74135353f428caa4eb368`, feature source `52d77fc818b29ca27350d4098dd3b89b827c5033`, dibangun di atas POS base `9a2893db5697a55b300440aeafcd07aa79581e26`. Kandidat ini memuat HR/Staff bridge tanpa membuka surface Kiosk, Cashier, KDS, Dashboard, Admin, fixture identity atau payment pada public staging. Login memakai provider redirect HTTPS, source-pair dan tenant binding exact, explicit grant, encrypted server-side session, command-time re-introspection, revocation dan bounded retry.
 
 Secret tidak menjadi environment variable atau release artifact; runtime membaca systemd service credentials. Disabled state hanya satu payload minimal. Enabled configuration menolak field tambahan, HTTP origin, source/tenant mismatch, duplicate grant, malformed key dan ukuran/timeout di luar batas. Release path harus exact-SHA, root-owned, direct child dan bukan symlink. Provision, upgrade dan rollback menolak alias/path traversal; upgrade juga menolak setengah pasangan credential agar kehilangan satu file tidak memicu secret rotation diam-diam.
 

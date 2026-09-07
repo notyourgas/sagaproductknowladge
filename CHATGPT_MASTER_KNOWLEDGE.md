@@ -2,7 +2,7 @@
 
 ## 2026-09-07 — SagaOPS protected HRPOS staging candidate
 
-- `CONFIRMED`; exact source `690cd0eeb7fe65aef41d683945ee67a12000a47f`, feature `52d77fc8039281838a3594fd4f9b211c19cf28ea`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`, branch pushed.
+- `CONFIRMED`; exact source `690cd0e35560a39816f74135353f428caa4eb368`, feature `52d77fc818b29ca27350d4098dd3b89b827c5033`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`, branch pushed.
 - Kandidat mengekspos hanya HR/Staff melalui provider login, explicit grants, exact POS/SagaWork source pair, tenant binding, encrypted server-side session, per-command authorization refresh dan bounded revocation retry. Kiosk/Cashier/KDS/Dashboard/Admin/fixture login/payment tetap ditolak oleh staging allowlist.
 - Systemd credential, exact-SHA root-owned non-symlink release path, fail-closed incomplete credential pair, backup-first promotion dan guarded rollback adalah boundary release. Full387, focused14, check166/13, shell syntax, dependency0 dan public-safety0 PASS.
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `STAGING_READY=false`, `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`. Jangan mengklaim staging acceptance sebelum fresh source-pair credentials, backup/disposable restore, authenticated HR+Staff UAT, containment dan rollback rehearsal lulus.
