@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-07 — Hostinger domain containment dan TLS
+
+`CONFIRMED` dari exact source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8` dengan core infrastructure `b25307cab685310d7af50d377446f7e5483d66e1`. Founder menetapkan `sagapos.site` dan Hostinger VPS. Imported DNS tidak lagi dapat jatuh ke default virtual host produk lain: setiap hostname Saga POS dimiliki konfigurasi khusus, HTTP dipindahkan ke HTTPS, dan production-intended surfaces berhenti pada halaman maintenance `503` yang tidak di-cache.
+
+Private synthetic staging tetap fail-closed. Permintaan internet ditolak meskipun mencoba memalsukan forwarded address; health check hanya dapat mencapai service melalui jalur privat. Security headers membatasi embedding, content source, referrer dan browser capabilities. HSTS sengaja belum diaktifkan sampai inventaris hostname dan cutover final diterima agar rollback DNS tetap aman.
+
+DNS authoritative/public, TLS coverage, renewal simulation, Nginx syntax/service, public host matrix, cross-product isolation, local staging health, 390×844/1440×900 visual, Axe serious/critical0, overflow0, dependency0, secret scan, `check` dan full374/374 lulus. Produk lain tetap sehat. Status `DOMAIN_CONTAINED / TLS_ACTIVE / PRIVATE_STAGING_REACHABLE / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`; readiness operasional tetap sekitar 60/100. Identity/session production, isolated production runtime/database, offsite restore, monitoring, rollback rehearsal, exact release smoke, hardware dan payment activation belum diterima.
+
 ## 2026-09-07 — SagaOPS posted supplier-credit reversal
 
 - `CONFIRMED`; source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, implementation `4ba5ee5f6b2334ee0136112779937c1f96ee550a`. Before: posted supplier credit tidak memiliki jalur koreksi aman. After: Finance mengirim reasoned reversal request dan Owner berbeda memutuskan APPROVE/REJECT.

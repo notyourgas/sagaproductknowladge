@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Hostinger domain containment, TLS, dan private staging
+
+- `CONFIRMED`; owner memilih `sagapos.site` dan Hostinger VPS sebagai target hosting Saga POS. Exact source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8`, core infrastructure `b25307cab685310d7af50d377446f7e5483d66e1`.
+- Seluruh hostname Saga POS yang sudah diimpor kini dimiliki virtual host khusus sehingga tidak lagi jatuh ke produk lain. HTTP diarahkan ke HTTPS; hostname production-intended menampilkan halaman maintenance `no-store`, sedangkan staging sintetis menolak akses internet langsung dan hanya tersedia melalui jalur privat.
+- Sertifikat TLS mencakup seluruh hostname yang dipilih dan renewal simulation lulus. Nginx, DNS, security headers, mobile/desktop visual, Axe serious/critical0, overflow0, dependency0, secret/public-safety scan serta regression374/374 lulus; produk Saga lain tetap sehat.
+- Status: `DOMAIN_CONTAINED / TLS_ACTIVE / PRIVATE_STAGING_REACHABLE / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`. Readiness operasional tetap sekitar 60/100; tidak ada public operator/staff/API activation, transaksi nyata, payment canary, promo, atau perubahan hardware.
+- Gate berikutnya: production identity/session, service dan database production terisolasi, encrypted offsite backup plus disposable restore, monitoring, rollback rehearsal, exact-release smoke, perangkat dan approval activation.
+
 ## 2026-09-07 — Reversal credit supplier terkontrol
 
 - `CONFIRMED`; source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a`. Finance dapat meminta reversal untuk credit memo supplier yang sudah `POSTED`; Owner berbeda menyetujui atau menolak tanpa mengedit atau menghapus dokumen asal.

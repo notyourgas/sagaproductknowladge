@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Hostinger domain containment, TLS, dan private staging
+
+- `CONFIRMED`; `sagapos.site` dan Hostinger VPS menjadi target Saga POS. Source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8`, core `b25307cab685310d7af50d377446f7e5483d66e1`.
+- Imported hostnames kini terisolasi dari produk lain, HTTP→HTTPS, production-intended hosts maintenance-only/no-store, dan synthetic staging ditolak dari internet serta dapat diverifikasi lewat jalur privat.
+- DNS/TLS/renewal/Nginx/host matrix/cross-product health, browser390/1440, Axe0/overflow0, full374/check183, dependency0 dan public-safety lulus.
+- `DOMAIN_CONTAINED / TLS_ACTIVE / PRIVATE_STAGING_REACHABLE / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`; readiness sekitar 60/100 tidak dinaikkan. Production identity/runtime/database, offsite restore, monitoring, rollback, perangkat dan payment activation tetap terbuka.
+
 ## 2026-09-07 — Posted supplier-credit reversal
 
 - `CONFIRMED`: Finance request → separate Owner decision untuk membalik supplier credit yang sudah posted tanpa menghapus histori.

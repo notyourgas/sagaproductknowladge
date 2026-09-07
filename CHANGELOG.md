@@ -7,6 +7,14 @@
 - Focused12/full1055 plus Linux/MySQL/full HTTP/Chromium PASS; one publish/event/audit, exact versions, notices unchanged, mobile/Axe/device/mutation/page-error guards PASS.
 - Delivery `IMPLEMENTED_NOT_DEPLOYED`; public release, POS/shared runtime, pricing dan business readiness tidak berubah. Joint exact-pair, encrypted offsite restore, rollback/config dan owner/device/finance tetap blocker.
 
+## 2026-09-07 — SagaOPS Hostinger domain containment sync
+
+- `CONFIRMED`: `sagapos.site` dan Hostinger VPS ditetapkan; exact source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8`, core `b25307cab685310d7af50d377446f7e5483d66e1`.
+- Alasan: DNS yang sudah terimpor harus diisolasi dari produk lain dan diamankan dengan TLS sebelum aplikasi apa pun boleh diekspos.
+- Area/file: SagaOPS Nginx containment, maintenance surface, private staging, TLS renewal evidence dan knowledge publik. Tidak ada secret, PII, server address, private identifier, payment mutation atau aktivasi produk lain.
+- PASS DNS/TLS/renewal/Nginx/host matrix/cross-product health, browser390/1440 Axe/layout, full374/check183, dependency0 dan public-safety scan.
+- Delivery `DOMAIN_CONTAINED / TLS_ACTIVE / PRIVATE_STAGING_REACHABLE / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`; readiness sekitar 60/100 tetap. Identity/runtime/database production, offsite restore, monitoring, rollback, perangkat dan activation approval masih terbuka.
+
 ## 2026-09-07 — SagaOPS posted supplier-credit reversal sync
 
 - `CONFIRMED`: exact source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a` menambah immutable Finance request → separate Owner decision untuk reversal credit supplier posted.

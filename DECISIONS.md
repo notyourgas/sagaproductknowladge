@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-192 - Saga POS memakai sagapos.site dan Hostinger VPS dengan activation terpisah
+
+- Tanggal: 2026-09-07.
+- Klasifikasi/status: `CONFIRMED`, aktif; pemberi keputusan Andreas.
+- Topik: domain, hosting dan exposure Saga POS.
+- Keputusan: gunakan `sagapos.site` beserta subdomain Saga POS pada Hostinger VPS; selesaikan containment, TLS dan private synthetic staging sekarang. Public production activation, transaksi nyata, payment canary dan hardware tetap membutuhkan gate serta otorisasi release terpisah.
+- Alasan: zone DNS sudah terimpor sehingga setiap hostname harus segera dimiliki secara eksplisit dan tidak boleh jatuh ke virtual host produk lain sebelum runtime production siap.
+- Alternatif: membiarkan DNS mengarah ke default host atau mengekspos fixture staging ke internet tidak diterima. Vercel preview dapat tetap menjadi artefak terpisah sampai cutover yang terverifikasi.
+- Dampak: exact source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8` mengaktifkan TLS, maintenance-only public hosts, private-only staging dan renewal evidence tanpa mengaktifkan aplikasi operasional. Keputusan ini menyelesaikan gate domain/TLS pada DEC-187, bukan gate identity/session, production runtime/database, offsite restore, monitoring, rollback, device/UAT atau payment.
+- Dokumen terkait: [SagaOPS](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Changelog](products/sagaops/CHANGELOG.md), [DEC-187](#dec-187---saga-pos-memakai-postgresql-pada-vps-dengan-staging-privat).
+
 ## DEC-191 - Deploy integrasi HR ke SagaPOS ketika siap
 
 - Tanggal: 2026-09-06.

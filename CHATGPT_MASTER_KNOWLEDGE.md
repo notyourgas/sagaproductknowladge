@@ -7,6 +7,13 @@
 - Focused12/full1055 plus Linux/MySQL/full HTTP/Chromium PASS dengan satu publish/event/audit, publication1/version2, notices tidak berubah, mobile390/Axe dan unexpected mutation/device/page error nol.
 - Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Public `711ef77` tetap HTTP200; POS/shared runtime tidak berubah. Fresh exact-pair SagaPOS joint-native, encrypted offsite restore, config/rollback dan owner/device/finance masih terbuka. Performance dan real payroll/payment OFF.
 
+## 2026-09-07 — SagaOPS Hostinger domain containment dan TLS
+
+- `CONFIRMED`; founder memilih `sagapos.site` dan Hostinger VPS. Exact source `b14179ac9fd9dcc6ca4d15b479ac64e3b0e44ff8`, core infrastructure `b25307cab685310d7af50d377446f7e5483d66e1`.
+- Imported hostnames kini terisolasi dari produk lain, HTTP diarahkan ke HTTPS, production-intended hosts hanya maintenance no-store, dan synthetic staging menolak internet langsung serta tersedia melalui jalur privat.
+- DNS/TLS/renewal/Nginx/host matrix, cross-product health, browser390/1440 Axe0/overflow0, full374/check183, dependency0 dan public-safety lulus. Status `DOMAIN_CONTAINED / TLS_ACTIVE / PRIVATE_STAGING_REACHABLE / PRODUCTION_NOT_ACTIVATED / BUSINESS_READY=false`; readiness operasional tetap sekitar 60/100.
+- Jangan mengklaim public production, operator/staff/API activation, payment canary atau operational readiness. Identity/session production, isolated runtime/database, offsite restore, monitoring, rollback rehearsal, exact release smoke dan perangkat masih menjadi gate.
+
 ## 2026-09-07 — SagaOPS posted credit reversal
 
 - `CONFIRMED`; exact source `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a`. Posted supplier credit kini dikoreksi melalui Finance request dan keputusan Owner terpisah, bukan edit/delete dokumen asal.
