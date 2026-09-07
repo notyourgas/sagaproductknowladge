@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaOPS Owner-only production pilot
+
+- Status `accepted`; classification `CONFIRMED`; exact source `60b3426e59698014639113070c89bfa195eb5100`, branch `codex/sagapos-production-release-50b3`, source branch pushed and active on Hostinger VPS.
+- Synced: official-domain production pilot on `sagapos.site`, PostgreSQL persistent runtime, Owner hash auth, anonymous Basic Auth containment, HTTPS/Nginx health, systemd monitor, seven-day expiry, and Owner access across Dashboard/Admin/Cashier/KDS/Kiosk.
+- Evidence focused12, full393, dependency audit0, secret scan0, migration preflight16, encrypted backup/disposable restore, health/monitor and authenticated browser smoke5 PASS. Transport tar cleanup ran for `/tmp/sagapos-*.tar`; release/rollback/backup retained.
+- Delivery `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_PILOT_ACTIVE`; `BUSINESS_READY=false`. Payment/QRIS, payroll/payout, messaging, NFC, printer, offsite recovery and final business UAT remain gated.
+
 ## 2026-09-07 — SAGA Member R0 Owner-only di domain asli
 
 - `CONFIRMED`, cut-off 2026-09-07 14:18:33 UTC: [login Owner](https://app.sagamember.site/owner) telah `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada Hostinger dengan authoritative Customer Platform API same-origin dan PostgreSQL persistent.

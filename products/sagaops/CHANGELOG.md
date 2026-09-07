@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Owner-only production pilot aktif pada domain resmi
+
+- `CONFIRMED`; source `60b3426e59698014639113070c89bfa195eb5100` di branch `codex/sagapos-production-release-50b3` sudah aktif pada Hostinger VPS untuk `sagapos.site`.
+- Production runtime memakai PostgreSQL persistent, Owner hash auth, HTTPS/Nginx containment, monitor systemd, seven-day expiry, dan Basic Auth untuk anonymous public traffic. Surface authenticated: Dashboard, Admin, Cashier, KDS, dan Kiosk.
+- Owner-as-cashier pilot path ditutup dengan regression coverage agar Owner dapat memeriksa Cashier surface tanpa membuka identitas kasir sintetis. Payment/QRIS eksternal tetap `OFF`; deployment/smoke membuat 0 transaksi.
+- PASS focused12, full393, dependency audit0, secret scan0, migration preflight16, encrypted backup/disposable restore, health/monitor dan authenticated browser smoke5. Cleanup hanya menghapus `/tmp/sagapos-*.tar` transport artifacts; release/rollback/backup dipertahankan.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_PILOT_ACTIVE`; `BUSINESS_READY=false` sampai payment, hardware, offsite recovery, device UAT dan owner business acceptance selesai.
+
 ## 2026-09-07 — Integrated release-lock handoff candidate
 
 - `CONFIRMED`; source `5a90a18866e0d16bb1639a53f544024d961a04f5` on branch `codex/sagapos-release-lock`, combining v4 recovery guards from `227e0d66fe26b5805eb4328ada1fef7bcb8cad86` with integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`.

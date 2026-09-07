@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — SagaOPS residual setelah Owner-only production pilot
+
+- `CONFIRMED`: domain resmi, production runtime, PostgreSQL persistence, Owner auth, authenticated Dashboard/Admin/Cashier/KDS/Kiosk, backup lokal terenkripsi, disposable restore, monitor, dan rollback artifact boundary sudah melewati gate untuk source `60b3426e59698014639113070c89bfa195eb5100`.
+- `NEEDS CONFIRMATION`: `BUSINESS_READY` belum boleh dinaikkan sampai Andreas menyelesaikan UAT bisnis pada perangkat nyata, menerima policy outlet, dan menyetujui activation di luar owner-only pilot.
+- `NEEDS CONFIRMATION`: payment/QRIS eksternal SagaDev Gateway, canary uang nyata, payroll/payout, messaging, NFC, printer, router/UPS dan operational hardware commissioning tetap OFF.
+- `NEEDS CONFIRMATION`: independent offsite backup/restore, long-running monitoring/alerting, HR/Staff production activation penuh, domain sub-surface final, dan cleanup release retention otomatis masih perlu diselesaikan.
+
 ## 2026-09-07 — SAGA Member R0 residual setelah aktivasi
 
 - `CONFIRMED`: domain asli, same-origin authoritative API, Owner login dan PostgreSQL telah aktif pada release `20260907T140646Z-75d56d5-r0`; deployment/domain/TLS bukan lagi blocker R0.

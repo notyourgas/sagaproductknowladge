@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS Owner-only production pilot aktif
+
+`CONFIRMED`; exact Saga POS source `60b3426e59698014639113070c89bfa195eb5100` aktif di Hostinger VPS pada keluarga domain `sagapos.site`. Runtime memakai PostgreSQL persistent, Owner hash auth, Basic Auth containment, HTTPS/Nginx valid, monitor systemd dan seven-day expiry. Authenticated smoke membuktikan Dashboard, Admin, Cashier, KDS dan Kiosk; anonymous public tetap `401` dan payment/QRIS eksternal tetap `OFF`. Focused12/full393, dependency0, secret scan0, migration preflight16, encrypted backup/disposable restore, health/monitor dan browser smoke5 PASS. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_PILOT_ACTIVE`; `BUSINESS_READY=false` sampai payment, hardware, offsite recovery, device UAT dan business acceptance selesai.
+
 ## 2026-09-07 — SAGA Member R0 Owner-only di domain asli
 
 - `CONFIRMED`, cut-off 2026-09-07 14:18:33 UTC: [login Owner](https://app.sagamember.site/owner) telah `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada Hostinger dengan authoritative Customer Platform API same-origin dan PostgreSQL persistent.

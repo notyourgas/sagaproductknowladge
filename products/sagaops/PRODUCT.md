@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Owner-only Saga POS production pilot aktif di sagapos.site
+
+- `CONFIRMED`; exact SagaOPS/Saga POS source `60b3426e59698014639113070c89bfa195eb5100`, branch `codex/sagapos-production-release-50b3`, sudah dipush dan aktif pada Hostinger VPS untuk keluarga domain `sagapos.site`.
+- Runtime production memakai PostgreSQL persistent single-writer, Owner hash authentication, Basic Auth containment di surface publik, HTTPS/Nginx valid, monitor systemd aktif, dan pilot expiry tujuh hari sampai 2026-09-14 14:29:17 UTC.
+- Surface terverifikasi dengan Owner authentication: Dashboard, Admin, Cashier, KDS, dan Kiosk. Owner dapat membuka Cashier surface untuk pilot/operator review; public anonymous tetap ditahan `401`.
+- PASS focused 12/12, full regression 393/393, dependency audit high 0, secret scan no-match, migration preflight 16, encrypted backup + disposable restore, health/monitor, browser smoke authenticated 5 surface, dan cleanup tar transport SagaPOS dari `/tmp`.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_PILOT_ACTIVE`; `BUSINESS_READY=false`. Payment/QRIS eksternal, payroll/payout, messaging, NFC, printer, offsite backup, dan UAT perangkat nyata tetap belum diaktifkan.
+
 ## 2026-09-07 — Integrated release-lock handoff candidate
 
 - `CONFIRMED`; exact integration source `5a90a18866e0d16bb1639a53f544024d961a04f5`, branch `codex/sagapos-release-lock`, built on integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c` and includes recovery guard v4 `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`.

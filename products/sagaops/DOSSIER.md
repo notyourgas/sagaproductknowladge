@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-07 — Owner-only production pilot on sagapos.site
+
+`CONFIRMED` dari exact source `60b3426e59698014639113070c89bfa195eb5100` pada branch `codex/sagapos-production-release-50b3`. Ini adalah perubahan status dari integrated handoff candidate menjadi Owner-only production pilot yang aktif pada Hostinger VPS untuk domain resmi `sagapos.site`.
+
+Runtime production berjalan dengan PostgreSQL persistent single-writer, Owner hash authentication, cookie/session/CSRF untuk operator surface, Basic Auth containment untuk anonymous public traffic, HTTPS/Nginx syntax valid, systemd service dan monitor aktif, serta expiry pilot tujuh hari sampai 2026-09-14 14:29:17 UTC. Release aktif cocok antara symlink current, release env, dan `/api/health`.
+
+Surface yang sudah dibuktikan melalui authenticated browser smoke adalah Dashboard, Admin, Cashier, KDS, dan Kiosk. Owner dapat membuka Cashier surface untuk pilot/operator review tanpa membuat kasir sintetis baru. Anonymous public request pada host pilot tetap ditahan `401`. Payment mode tetap `OFF`; deployment dan smoke tidak membuat transaksi.
+
+Evidence: focused production/server 12/12 PASS, full regression 393/393 PASS, dependency audit high 0, high-confidence secret scan no-match, migration preflight 16 PASS, encrypted backup plus disposable restore PASS, runtime health/monitor PASS, browser smoke authenticated 5 surface PASS, dan tar transport SagaPOS di `/tmp` dibersihkan tanpa menghapus release/rollback directories. Backup offsite independen belum tervalidasi.
+
+Delivery sekarang `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_PILOT_ACTIVE`. `BUSINESS_READY=false` karena real payment/QRIS, payroll/payout, messaging, NFC, printer, physical device UAT, offsite restore, dan final owner business acceptance masih gate terpisah.
+
 ## 2026-09-07 — Integrated release-lock candidate for protected staging
 
 `CONFIRMED` from exact source `5a90a18866e0d16bb1639a53f544024d961a04f5` on branch `codex/sagapos-release-lock`. This is a clean integration child of `682456535a9dc0c930910dba3c9773ab44fcc84c` and incorporates the v4 recovery guard from `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`.

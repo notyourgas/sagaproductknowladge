@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS Owner-only production pilot sync
+
+- `CONFIRMED`: Saga POS source `60b3426e59698014639113070c89bfa195eb5100` aktif di Hostinger VPS pada keluarga domain `sagapos.site`.
+- Alasan: status SagaOPS berubah dari production-not-activated menjadi Owner-only production pilot sehingga knowledge publik harus memisahkan deployed/activated dari business-ready.
+- Area/file: SagaOPS product/dossier/changelog, portfolio/master, gaps dan sync status. Tidak ada secret, PII, server address, raw receipt/callback, private identifier, atau credential.
+- PASS focused12, full393, dependency0, secret scan0, migration preflight16, encrypted backup/disposable restore, health/monitor, authenticated browser smoke5 dan cleanup transport tar.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_PILOT_ACTIVE`; payment/hardware/offsite/UAT bisnis tetap belum selesai dan `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SAGA Member R0 Owner-only di domain asli
 
 - `CONFIRMED`, cut-off 2026-09-07 14:18:33 UTC: [login Owner](https://app.sagamember.site/owner) telah `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada Hostinger dengan authoritative Customer Platform API same-origin dan PostgreSQL persistent.
