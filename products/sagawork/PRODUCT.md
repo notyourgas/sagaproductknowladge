@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Organization profile lost-response recovery
+
+- `CONFIRMED`; application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`. HR can update organization name, timezone, payroll cycle and Attendance Reliability through one bounded mutation with exact success validation and reload-only full Settings recovery when the result is uncertain.
+- Focused46/full1038 tests in105 files plus exact-source Linux/MySQL/full HTTP/compiled Chromium passed with a genuine held PATCH200, one request/audit, exact persistence, unchanged status/performance and related records, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200. POS/shared runtime was not modified; fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Manual Workspace create lost-response recovery
 
 - `CONFIRMED`; application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c`. HR can create a Workspace through the manual fallback form without Maps using a bounded one-shot mutation, exact success validation and reload-only full Settings recovery when the result is uncertain.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaWork organization profile recovery
+
+`CONFIRMED`; application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`. Organization profile save now fails safely through bounded one-shot transport, exact HTTP200/current-organization/submitted-value validation and reload-only full Settings recovery after an uncertain result. Focused46/full1038 plus Linux/MySQL/full HTTP/Chromium passed with one request/audit, exact persistence, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.
+
 ## 2026-09-07 — SagaOPS supplier price credit memo
 
 `CONFIRMED`; exact source `f539238dd1dcda0dfa7c150379d899ff96ee53ce` (core `9e4cd41d567ca95c69447532897bdbab1cffe260`) pushed. SagaOPS kini memisahkan Finance pembuat credit dan Owner poster untuk koreksi harga non-stok terhadap posted unpaid supplier invoice. Pending credit mereservasi outstanding; posting mengurangi payable tanpa stock/HPP/payment mutation. Focused49/full364/check177/OpenAPI3.1/migrations12, PostgreSQL rollback/restart, mobile Axe0/overflow0/touch44/page-error0, dependency0 dan public-safety0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production, payment serta produk lain tidak berubah. Return/replacement, correction/reversal/resubmit, real inputs, offsite restore dan UAT tetap terbuka.

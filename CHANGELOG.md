@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork organization profile recovery sync
+
+- `CONFIRMED`: application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664` adds bounded one-shot organization profile update, strict success validation and reload-only full Settings recovery after uncertain results.
+- Reason: prevent duplicate settings writes or false success when the profile mutation response is lost.
+- Area/file: SagaWork Settings profile UX, client mutation guard, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
+- PASS focused46/full1038, Linux/MySQL/full HTTP/compiled Chromium, exactly one request/audit, exact profile persistence, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
+
 ## 2026-09-07 — SagaOPS supplier price credit memo sync
 
 - `CONFIRMED`: exact source `f539238dd1dcda0dfa7c150379d899ff96ee53ce` (core `9e4cd41d567ca95c69447532897bdbab1cffe260`) menambah Finance-authored, Owner-posted non-stock supplier credit dan open-payable reduction.

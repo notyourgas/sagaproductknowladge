@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Organization profile recovery
+
+- `CONFIRMED`; application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`.
+- Organization name, timezone, payroll cycle and Attendance Reliability update are single-request and bounded with exact success validation, safe expected-4xx handling and reload-only full Settings recovery after an uncertain result.
+- Focused46/full1038 plus Linux/MySQL/full HTTP/Chromium passed with a genuine held PATCH200, one request/audit, exact persistence, invariance and mobile/Axe/device guards.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.
+
 ## 2026-09-07 — Manual Workspace create recovery
 
 - `CONFIRMED`; application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c`.

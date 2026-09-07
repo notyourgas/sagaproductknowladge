@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Organization profile lost-response recovery
+
+- `CONFIRMED`; application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`. Profile save is one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and strict HTTP200/current-organization/submitted-value validation. Safe expected 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.
+- Uncertainty locks all Settings writes until reload; confirmed save plus failed refresh stays confirmed. Focused46/full1038, lint/types/audit/contracts, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed with one audit, exact persistence and invariance.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Organization status transition, API/domain/schema/grant/POS/shared runtime remain unchanged. Public `711ef77` stays active/HTTP200; joint-native/offsite restore/config rollback/owner-device-finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Manual Workspace create lost-response recovery
 
 - `CONFIRMED`; application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c`. Manual fallback create is one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and strict 201/ID/status validation. Safe expected 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.
