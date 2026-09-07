@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — Customer Platform Owner Dashboard after operations summary
+
+- `CONFIRMED`: scoped read-only operations summary candidate, operator auth/RBAC isolation, PII-minimized payload, audit persistence dan restart recovery pada exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`.
+- `NEEDS CONFIRMATION`: final production role-permission matrix dan siapa yang boleh melihat laporan lintas outlet/tenant; current OWNER/MANAGER rules hanya fail-closed local baseline.
+- `NEEDS CONFIRMATION`: authoritative member-context attribution, signed scoped SagaPOS/SagaBook facts, approved identity provider/credential rotation, immutable audit retention, monitoring/SLO, encrypted offsite backup and disposable restore, joint UAT, staging/release/activation approvals.
+- Hosted CI billing/spending-limit harus dipulihkan dan exact PR checks diulang. Tidak ada deploy atau kenaikan business readiness dari test lokal.
+
 ## 2026-09-07 — SagaWork after Staff Workspace-assignment recovery
 
 - `CONFIRMED`: lost/late-response safety for HR create/end Workspace assignment is closed at application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`; one-shot uncertainty/reload behavior passed full and native acceptance.

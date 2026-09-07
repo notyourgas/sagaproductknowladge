@@ -1,5 +1,7 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+Customer Platform Owner Operations Summary candidate pada exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR #9, berstatus `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Endpoint read-only memakai operator credential terpisah dan assignment RBAC persisted; Owner dapat membaca scope organisasinya, Manager hanya exact outlet assigned, role lain ditolak. Payload PII-minimized hanya aggregate operasional dan wajib membawa classification/freshness/limitations. Member counts menunggu authoritative member-context read model; transaction/booking totals menunggu scoped connector facts dari SagaPOS/SagaBook. 19 test files dan security/diff gates lokal PASS; hosted CI tidak mulai karena billing/spending-limit. Tidak ada deploy, provider/customer data, production activation, atau business-ready claim.
+
 ## 2026-09-07 — SagaOPS protected HRPOS staging candidate
 
 - `CONFIRMED`; exact source `690cd0e35560a39816f74135353f428caa4eb368`, feature `52d77fc818b29ca27350d4098dd3b89b827c5033`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`, branch pushed.

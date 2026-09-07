@@ -1,5 +1,14 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-07 — Customer Platform scoped Owner Operations Summary candidate
+
+- `CONFIRMED` implementation candidate pada exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR Customer Platform #9.
+- Endpoint read-only Owner Operations Summary menyediakan health operasional per organisasi, outlet, atau tenant tanpa memindahkan authority. SagaPOS dan SagaBook tetap menjadi sumber fakta transaksi/booking; Saga Member tetap projection client.
+- Kredensial operator terpisah dari machine connector token, di-hash in-memory, digabung dengan assignment RBAC persisted, rate limit, fail-closed scope, dan no-existence-leak. Manager hanya dapat membaca outlet assigned; staff, support, dan finance ditolak pada endpoint ini.
+- Payload hanya berisi aggregate topology/device/event/dead-letter/reconciliation/capability, freshness, classification dan limitation flags; tidak memuat data member, saldo, nama, transaksi mentah, booking detail, credential, atau provider data. Audit read sukses persisted dan lolos restart.
+- Seluruh 19 file test, static/migration check, dependency audit nol, secret-scan dan diff check lulus lokal. Hosted CI tidak memulai step karena billing/spending-limit account, bukan kegagalan aplikasi.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `JOINT_VALIDATED=false`, `STAGING_READY=false`, `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+
 ## 2026-09-06 — Saga Member notification preference continuity
 
 - Classification: CONFIRMED implementation; PUBLIC_DUMMY_DEMO only, no real account/backend/provider/customer activation and no added service/dependency.
