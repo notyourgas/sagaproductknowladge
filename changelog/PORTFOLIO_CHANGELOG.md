@@ -4,9 +4,9 @@
 
 `CONFIRMED`; exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4` di PR #9 menyediakan read-only aggregate untuk Owner Dashboard dengan operator auth terpisah, persisted RBAC/audit, rate limit, PII-minimized response, dan fail-closed organization/outlet/tenant scope. 19 test files, static/migration, dependency0, secret dan diff checks PASS; hosted CI belum memulai step akibat billing/spending-limit account. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; semua joint/staging/production/activation/business-ready gate false dan authority produk lain tidak berubah.
 
-## 2026-09-07 — SagaOPS protected HRPOS staging candidate
+## 2026-09-07 — SagaOPS protected HRPOS staging candidate v4
 
-`CONFIRMED`; source `690cd0e35560a39816f74135353f428caa4eb368` menyiapkan HR/Staff-only provider bridge dengan exact source/tenant/grant validation, encrypted session, command-time authorization refresh, staging allowlist dan fail-closed release/recovery inputs. Full387, focused14, check166/13, shell syntax, dependency0 dan public-safety0 PASS. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; staging, production, activation, payroll/payment nyata dan business readiness tidak berubah. Fresh exact-pair credentials, backup/restore, authenticated joint UAT, containment dan rollback rehearsal tetap blocker.
+`CONFIRMED`; source `227e0d66fe26b5805eb4328ada1fef7bcb8cad86` di atas integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c` mempertahankan HR/Staff-only provider bridge sekaligus mengembalikan exact-SHA, direct-child, canonical path, non-symlink dan root-owned recovery guards. Red-green contract, full387, focused18, check166/16, shell syntax, dependency0 dan public-safety0 PASS. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; staging, production, activation, payroll/payment nyata dan business readiness tidak berubah. Fresh exact-pair credentials, backup/restore, authenticated joint UAT, containment dan rollback rehearsal tetap blocker.
 
 ## 2026-09-07 — SagaOPS official-domain private release dan storage retention
 

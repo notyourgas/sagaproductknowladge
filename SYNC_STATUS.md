@@ -7,11 +7,11 @@
 - Evidence: 19 isolated test files dan focused4 PASS; static/migration, dependency0, secret/diff checks PASS. Hosted CI belum menjalankan step karena billing/spending-limit account.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `JOINT_VALIDATED=false`, `STAGING_READY=false`, `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
 
-## 2026-09-07 — SagaOPS protected HRPOS staging/recovery
+## 2026-09-07 — SagaOPS protected HRPOS staging/recovery v4
 
-- Status `accepted`; classification `CONFIRMED`; exact source `690cd0e35560a39816f74135353f428caa4eb368`, feature `52d77fc818b29ca27350d4098dd3b89b827c5033`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`; source branch pushed/clean.
-- Synced: HR/Staff-only provider bridge, source-pair/tenant/grant validation, encrypted session, command-time authorization refresh, revocation retry, staging route allowlist dan fail-closed release/rollback/credential-pair guard. Tidak ada restricted data.
-- Evidence full387, focused14, check166/13, shell syntax, dependency0 dan public-safety/diff0.
+- Status `accepted`; classification `CONFIRMED`; exact source `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`, integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`; source branch pushed/clean.
+- Synced: HR/Staff-only provider bridge, source-pair/tenant/grant validation, encrypted session, command-time authorization refresh, revocation retry, staging route allowlist serta fail-closed direct-child release/rollback/credential-pair guard. Tidak ada restricted data.
+- Evidence red-green contract, full387, focused18, check166/16, shell syntax, dependency0 dan public-safety/diff0.
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; staging-ready, production-deployed, production-activated dan business-ready false. Fresh credentials, backup/disposable restore, authenticated HR+Staff UAT, containment dan rollback rehearsal tetap residual.
 
 ## 2026-09-07 — SagaOPS official-domain private release

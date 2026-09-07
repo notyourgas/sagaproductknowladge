@@ -1,12 +1,12 @@
 # SagaOPS Dossier
 
-## 2026-09-07 — Protected HRPOS staging candidate dan recovery boundary
+## 2026-09-07 — Protected HRPOS staging candidate v4 dan recovery boundary
 
-`CONFIRMED` dari source head `690cd0e35560a39816f74135353f428caa4eb368`, feature source `52d77fc818b29ca27350d4098dd3b89b827c5033`, dibangun di atas POS base `9a2893db5697a55b300440aeafcd07aa79581e26`. Kandidat ini memuat HR/Staff bridge tanpa membuka surface Kiosk, Cashier, KDS, Dashboard, Admin, fixture identity atau payment pada public staging. Login memakai provider redirect HTTPS, source-pair dan tenant binding exact, explicit grant, encrypted server-side session, command-time re-introspection, revocation dan bounded retry.
+`CONFIRMED` dari source head `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`, dibangun di atas integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`. Kandidat ini memuat HR/Staff bridge tanpa membuka surface Kiosk, Cashier, KDS, Dashboard, Admin, fixture identity atau payment pada public staging. Login memakai provider redirect HTTPS, source-pair dan tenant binding exact, explicit grant, encrypted server-side session, command-time re-introspection, revocation dan bounded retry.
 
 Secret tidak menjadi environment variable atau release artifact; runtime membaca systemd service credentials. Disabled state hanya satu payload minimal. Enabled configuration menolak field tambahan, HTTP origin, source/tenant mismatch, duplicate grant, malformed key dan ukuran/timeout di luar batas. Release path harus exact-SHA, root-owned, direct child dan bukan symlink. Provision, upgrade dan rollback menolak alias/path traversal; upgrade juga menolak setengah pasangan credential agar kehilangan satu file tidak memicu secret rotation diam-diam.
 
-Local acceptance lulus static/type/OpenAPI166/13, full387/387, focused release/security14/14, shell syntax, dependency audit0 dan public-safety/diff0. Ini adalah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runtime private staging yang sebelumnya diterima tidak berubah. `STAGING_READY=false` sampai ada fresh exact-pair provider configuration, encrypted backup/disposable restore, authenticated HR+Staff browser proof, cross-tenant denial, Nginx containment dan rollback/forward rehearsal. Production deployment, activation, real payroll/payment dan `BUSINESS_READY` tetap false.
+Local acceptance lulus red-green recovery contract, static/type/OpenAPI166/16, full387/387, focused release/security18/18, shell syntax, dependency audit0 dan public-safety/diff0. Ini adalah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Runtime private staging yang sebelumnya diterima tidak berubah. `STAGING_READY=false` sampai ada fresh exact-pair provider configuration, encrypted backup/disposable restore, authenticated HR+Staff browser proof, cross-tenant denial, Nginx containment dan rollback/forward rehearsal. Production deployment, activation, real payroll/payment dan `BUSINESS_READY` tetap false.
 
 ## 2026-09-07 — Official-domain release lane dan storage lifecycle
 

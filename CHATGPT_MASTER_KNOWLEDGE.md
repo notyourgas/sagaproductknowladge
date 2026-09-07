@@ -2,11 +2,11 @@
 
 Customer Platform Owner Operations Summary candidate pada exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR #9, berstatus `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Endpoint read-only memakai operator credential terpisah dan assignment RBAC persisted; Owner dapat membaca scope organisasinya, Manager hanya exact outlet assigned, role lain ditolak. Payload PII-minimized hanya aggregate operasional dan wajib membawa classification/freshness/limitations. Member counts menunggu authoritative member-context read model; transaction/booking totals menunggu scoped connector facts dari SagaPOS/SagaBook. 19 test files dan security/diff gates lokal PASS; hosted CI tidak mulai karena billing/spending-limit. Tidak ada deploy, provider/customer data, production activation, atau business-ready claim.
 
-## 2026-09-07 — SagaOPS protected HRPOS staging candidate
+## 2026-09-07 — SagaOPS protected HRPOS staging candidate v4
 
-- `CONFIRMED`; exact source `690cd0e35560a39816f74135353f428caa4eb368`, feature `52d77fc818b29ca27350d4098dd3b89b827c5033`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`, branch pushed.
+- `CONFIRMED`; exact source `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`, integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`, branch `codex/hrpos-staging-release-v4-recovery-guards` pushed.
 - Kandidat mengekspos hanya HR/Staff melalui provider login, explicit grants, exact POS/SagaWork source pair, tenant binding, encrypted server-side session, per-command authorization refresh dan bounded revocation retry. Kiosk/Cashier/KDS/Dashboard/Admin/fixture login/payment tetap ditolak oleh staging allowlist.
-- Systemd credential, exact-SHA root-owned non-symlink release path, fail-closed incomplete credential pair, backup-first promotion dan guarded rollback adalah boundary release. Full387, focused14, check166/13, shell syntax, dependency0 dan public-safety0 PASS.
+- Systemd credential, exact-SHA root-owned non-symlink direct-child release path, fail-closed incomplete credential pair, backup-first promotion dan guarded rollback adalah boundary release. Red-green contract, full387, focused18, check166/16, shell syntax, dependency0 dan public-safety0 PASS.
 - Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `STAGING_READY=false`, `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`. Jangan mengklaim staging acceptance sebelum fresh source-pair credentials, backup/disposable restore, authenticated HR+Staff UAT, containment dan rollback rehearsal lulus.
 
 ## 2026-09-07 — SagaOPS official-domain deployment strategy

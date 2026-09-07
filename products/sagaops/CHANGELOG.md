@@ -1,10 +1,10 @@
 # SagaOPS Changelog
 
-## 2026-09-07 — Protected HRPOS staging dan recovery guard
+## 2026-09-07 — Protected HRPOS staging dan recovery guard v4
 
-- `CONFIRMED`; source `690cd0e35560a39816f74135353f428caa4eb368` (feature `52d77fc818b29ca27350d4098dd3b89b827c5033`) pushed dari base POS `9a2893db5697a55b300440aeafcd07aa79581e26`.
+- `CONFIRMED`; source `227e0d66fe26b5805eb4328ada1fef7bcb8cad86` pushed dari integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`.
 - HR/Staff bridge kini mempunyai exact source-pair/tenant/grant credential validation, encrypted session, per-command re-introspection, revocation retry dan staging route allowlist; POS operator/customer/payment surfaces tetap tertutup.
-- Release/provision/rollback menolak symlink, alias/path traversal, non-root release dan incomplete credential pair. PASS full387/check166/13, focused14, shell syntax, dependency0 dan public-safety0.
+- Release/provision/rollback menolak nested/traversal path, symlink, non-canonical atau non-root release dan incomplete credential pair sebelum downtime/switch. PASS red-green contract, full387/check166/16, focused18, shell syntax, dependency0 dan public-safety0.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `STAGING_READY=false`, production/activation/business-ready false. Fresh credential evidence, backup/restore, authenticated joint UAT, containment dan rollback rehearsal masih terbuka.
 
 ## 2026-09-07 — Official-domain private release dan guarded retention

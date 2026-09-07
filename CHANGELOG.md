@@ -8,12 +8,12 @@
 - PASS 19 isolated test files, focused4, static/migration, dependency0, secret/diff checks; hosted CI zero-step terblokir billing account.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; joint/staging/production/activation/business-ready false.
 
-## 2026-09-07 — SagaOPS protected HRPOS staging/recovery sync
+## 2026-09-07 — SagaOPS protected HRPOS staging/recovery v4 sync
 
-- `CONFIRMED`: exact source `690cd0e35560a39816f74135353f428caa4eb368`, feature `52d77fc818b29ca27350d4098dd3b89b827c5033`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`; branch source pushed dan clean.
-- Alasan: menyiapkan HR/Staff integration lane yang source-bound dan recoverable tanpa membuka domain POS, fixture login, payment atau production.
+- `CONFIRMED`: exact source `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`, integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`; branch `codex/hrpos-staging-release-v4-recovery-guards` pushed dan clean.
+- Alasan: mempertahankan HR/Staff integration lane yang source-bound sekaligus mengembalikan fail-closed exact release/recovery path guards setelah merge-forward RLS.
 - Area/file: SagaOPS product/dossier/changelog, portfolio/master, gaps dan sync. Tidak ada secret, PII, grant subject, tenant/device identifier, private path, raw callback/receipt atau provider mutation.
-- PASS full387/387, focused14/14, static/type/OpenAPI166/13, shell syntax, dependency0 dan high-confidence public-safety/diff scan0.
+- PASS red-green contract, full387/387, focused18/18, static/type/OpenAPI166/16, shell syntax, dependency0 dan high-confidence public-safety/diff scan0.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `STAGING_READY=false`, production/activation/business-ready false. Exact-pair provider evidence, backup/restore, authenticated UAT, containment dan rollback rehearsal masih menunggu.
 
 ## 2026-09-07 — SagaOPS official-domain release strategy sync

@@ -1,11 +1,11 @@
 # SagaOPS Product Knowledge
 
-## 2026-09-07 — Protected HRPOS staging candidate dan recovery guard
+## 2026-09-07 — Protected HRPOS staging candidate v4 dan recovery guard
 
-- `CONFIRMED`; exact source head `690cd0e35560a39816f74135353f428caa4eb368`, feature source `52d77fc818b29ca27350d4098dd3b89b827c5033`, branch `codex/hrpos-staging-ops` pushed dari base POS `9a2893db5697a55b300440aeafcd07aa79581e26`.
+- `CONFIRMED`; exact source head `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`, integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`, branch `codex/hrpos-staging-release-v4-recovery-guards` pushed dan clean.
 - Kandidat menghubungkan HR dan Staff saja melalui login provider, explicit role grant, exact POS/SagaWork source pair, tenant binding, server-side encrypted session, per-command re-introspection, bounded revocation retry, serta allowlist route staging. Kiosk, Cashier, KDS, Dashboard, Admin, fixture login dan payment tetap tidak diekspos oleh konfigurasi ini.
-- Credential dibaca sebagai systemd service credentials dan konfigurasi fail-closed terhadap source/tenant/grant/HTTPS yang tidak cocok. Release/provision/rollback menolak release alias, symlink, path traversal, owner yang salah, dan setengah pasangan credential; missing half tidak dibuat ulang atau dirotasi otomatis.
-- PASS static/type/OpenAPI 166 module/13 migration, full387/387, focused release/security14/14, shell syntax, dependency audit0, diff/public-safety scan0. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 tidak dinaikkan.
+- Credential dibaca sebagai systemd service credentials dan konfigurasi fail-closed terhadap source/tenant/grant/HTTPS yang tidak cocok. Release/provision/rollback menolak nested/traversal alias, symlink, non-canonical atau non-root directory dan setengah pasangan credential; missing half tidak dibuat ulang atau dirotasi otomatis.
+- PASS red-green contract, static/type/OpenAPI 166 module/16 migration, full387/387, focused release/security18/18, shell syntax, dependency audit0, diff/public-safety scan0. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 tidak dinaikkan.
 - `STAGING_READY=false`, `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`. Fresh exact-pair provider credentials, encrypted backup/disposable restore, authenticated HR+Staff staging UAT, Nginx/rollback rehearsal, offsite recovery dan owner/device/finance acceptance masih wajib.
 
 ## 2026-09-07 — Official-domain release lane dan guarded storage retention
