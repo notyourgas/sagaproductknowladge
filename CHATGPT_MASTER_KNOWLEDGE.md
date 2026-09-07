@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SAGA Member R0 Owner-only di domain asli
+
+- `CONFIRMED`, cut-off 2026-09-07 14:18:33 UTC: [login Owner](https://app.sagamember.site/owner) telah `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada Hostinger dengan authoritative Customer Platform API same-origin dan PostgreSQL persistent.
+- Release `20260907T140646Z-75d56d5-r0`; backend `75d56d5b4255046a0506cebf5cc6002dec8f69f1`; frontend `8ce4f37d49f0eeeee51664fda0bca7e3f92c6d8e`. Provenance: [laporan rilis source](https://github.com/notyourgas/saga-customer-platform/blob/3842dd412a3140525be17060ee603f4c5f4e08af/docs/PRODUCTION_R0_RELEASE_2026-09-07.md).
+- Login Owner nyata menggunakan cookie aman, session, CSRF, consent, RBAC, audit dan dashboard organisasi yang ditentukan server. Customer Platform tetap authoritative; Member hanya projection client. Akun/customer lain tidak diimpor.
+- PASS: backend 96 tes, frontend 463 tes, dependency audit nol, tujuh migrasi, encrypted backup lokal dan disposable restore, rollback rehearsal, health/monitoring, serta browser autentikasi same-origin, mobile/desktop dan pemeriksaan accessibility otomatis. Hosted GitHub CI terblokir billing dan **tidak** diklaim PASS; release branches pushed, protected source main tidak di-merge.
+- `PILOT_ACTIVE` untuk penggunaan bisnis masih `PENDING_OWNER_FIRST_USE_CONSENT`; `BUSINESS_READY=false`. Owner harus meninjau dan memberi consent sendiri sebelum business UAT dashboard. Pilot tujuh hari berakhir 2026-09-14T14:08:12.752Z; bukti login teknis bukan persetujuan privacy atau acceptance bisnis.
+- Payment/QRIS, external commerce/marketing, NFC dan printer tetap OFF. Runtime dibatasi Owner-only snapshot bridge; normalisasi repository skala dan independent offsite recovery belum terverifikasi. Pricing, janji sales, commercial tenant dan aktivasi produk Saga lain tidak berubah.
+- Catatan D0, PUBLIC_DUMMY_DEMO dan kandidat lokal sebelumnya tetap riwayat `DEPRECATED` untuk status runtime domain ini; riwayat itu tidak menggantikan snapshot R0 di atas. Tidak ada credential, PII, identifier privat atau raw recovery evidence dalam sinkronisasi ini.
+
+
 Customer Platform Owner Member Cohort candidate pada exact source `b379b53d3a45ad72586157d258571cf64d05edc0`, PR #9, berstatus `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Endpoint read-only menghitung hanya explicit verified context links; organization total dideduplikasi, sedangkan outlet/tenant cohorts non-additive. Operator RBAC tetap fail-closed: Owner scoped organisasinya, Manager exact assigned outlet, role/session/machine lain ditolak. Payload hanya count lifecycle/Tier plus classification/freshness/limitations tanpa PII, member identifier, Member Code, Points, booking, transaksi, atau revenue. Link writer internal memakai evidence hash dan collision-safe idempotency; connector ingestion belum dibuka sampai identity/approval/revocation/retry contract disahkan. 20 test files/80 tests dan security/diff gates lokal PASS; hosted CI exact head tidak mendapat runner karena billing/spending-limit. Tidak ada deploy, provider/customer mutation, production activation, atau business-ready claim.
 
 Customer Platform Owner Operations Summary candidate pada exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR #9, berstatus `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Endpoint read-only memakai operator credential terpisah dan assignment RBAC persisted; Owner dapat membaca scope organisasinya, Manager hanya exact outlet assigned, role lain ditolak. Payload PII-minimized hanya aggregate operasional dan wajib membawa classification/freshness/limitations. Member counts menunggu authoritative member-context read model; transaction/booking totals menunggu scoped connector facts dari SagaPOS/SagaBook. 19 test files dan security/diff gates lokal PASS; hosted CI tidak mulai karena billing/spending-limit. Tidak ada deploy, provider/customer data, production activation, atau business-ready claim.
@@ -8345,17 +8356,18 @@ authorization.
 
 ### Saga Member
 
-Customer experience dan loyalty boundary untuk Email OTP fixture, Member PWA,
-Points/XP/Tier, Voyager, Reward, Card, Quest, Push in-app fallback, Member Code,
-serta SagaBook handoff. Customer Platform tetap authority loyalty/Reward;
+Customer experience dan loyalty projection dengan Customer Platform sebagai authority;
 SagaOPS tetap commerce writer dan SagaBook tetap booking/payment writer.
 
-Status: `SOURCE_PUSHED / CI_PASSED /
-SAGA_MEMBER_PRODUCTION_DEPLOYED_INTERNAL_ALPHA / D0 /
-PRODUCTION_ACTIVATED=false / PUBLIC=false / BUSINESS_READY=false`. Real Resend,
-Sagadev Gateway/QRIS, Push, SagaBook live connector, NFC, printer, outlet kedua,
-commercial tenant dan R3-R6 belum aktif. R0 menunggu domain exact, TLS, hashed
-internal allowlist, expiring passport dan UAT ulang.
+`CONFIRMED` pada 2026-09-07 14:18:33 UTC: R0 Owner-only di
+[domain asli](https://app.sagamember.site/owner) `PRODUCTION_DEPLOYED` dan
+`PRODUCTION_ACTIVATED`, release `20260907T140646Z-75d56d5-r0`.
+Login/session dan recovery teknis terverifikasi; penggunaan bisnis `PILOT_ACTIVE`
+masih menunggu first-use consent Owner dan dashboard business UAT.
+`BUSINESS_READY=false`; batas waktu 2026-09-14T14:08:12.752Z.
+Payment/QRIS, external commerce/marketing, NFC, printer dan customer lain OFF.
+Snapshot bridge hanya Owner-only; independent offsite recovery belum terverifikasi.
+Detail exact source dan validation terdapat pada snapshot R0 paling atas.
 
 ### Saga Platform
 

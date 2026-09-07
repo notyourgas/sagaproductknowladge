@@ -1,5 +1,16 @@
 # Saga Platform Changelog
 
+## 2026-09-07 — SAGA Member R0 Owner-only di domain asli
+
+- `CONFIRMED`, cut-off 2026-09-07 14:18:33 UTC: [login Owner](https://app.sagamember.site/owner) telah `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada Hostinger dengan authoritative Customer Platform API same-origin dan PostgreSQL persistent.
+- Release `20260907T140646Z-75d56d5-r0`; backend `75d56d5b4255046a0506cebf5cc6002dec8f69f1`; frontend `8ce4f37d49f0eeeee51664fda0bca7e3f92c6d8e`. Provenance: [laporan rilis source](https://github.com/notyourgas/saga-customer-platform/blob/3842dd412a3140525be17060ee603f4c5f4e08af/docs/PRODUCTION_R0_RELEASE_2026-09-07.md).
+- Login Owner nyata menggunakan cookie aman, session, CSRF, consent, RBAC, audit dan dashboard organisasi yang ditentukan server. Customer Platform tetap authoritative; Member hanya projection client. Akun/customer lain tidak diimpor.
+- PASS: backend 96 tes, frontend 463 tes, dependency audit nol, tujuh migrasi, encrypted backup lokal dan disposable restore, rollback rehearsal, health/monitoring, serta browser autentikasi same-origin, mobile/desktop dan pemeriksaan accessibility otomatis. Hosted GitHub CI terblokir billing dan **tidak** diklaim PASS; release branches pushed, protected source main tidak di-merge.
+- `PILOT_ACTIVE` untuk penggunaan bisnis masih `PENDING_OWNER_FIRST_USE_CONSENT`; `BUSINESS_READY=false`. Owner harus meninjau dan memberi consent sendiri sebelum business UAT dashboard. Pilot tujuh hari berakhir 2026-09-14T14:08:12.752Z; bukti login teknis bukan persetujuan privacy atau acceptance bisnis.
+- Payment/QRIS, external commerce/marketing, NFC dan printer tetap OFF. Runtime dibatasi Owner-only snapshot bridge; normalisasi repository skala dan independent offsite recovery belum terverifikasi. Pricing, janji sales, commercial tenant dan aktivasi produk Saga lain tidak berubah.
+- Catatan D0, PUBLIC_DUMMY_DEMO dan kandidat lokal sebelumnya tetap riwayat `DEPRECATED` untuk status runtime domain ini; riwayat itu tidak menggantikan snapshot R0 di atas. Tidak ada credential, PII, identifier privat atau raw recovery evidence dalam sinkronisasi ini.
+
+
 ## 2026-09-07 — Explicit Owner Member Cohort candidate
 
 - Exact Customer Platform source `b379b53d3a45ad72586157d258571cf64d05edc0`, PR #9, menambah read-only member cohort aggregate yang hanya memakai explicit verified context links.

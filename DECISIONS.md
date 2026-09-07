@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-193 — R0 Owner-only SAGA Member pada domain asli
+
+- Tanggal: 2026-09-07. Status: `CONFIRMED`; pemberi keputusan Andreas, pelaksana dan provenance Release Lead melalui laporan rilis exact source.
+- Keputusan: deployment operasional terbatas tujuh hari pada [login Owner](https://app.sagamember.site/owner), menggunakan authoritative Customer Platform same-origin dan PostgreSQL persistent; source release branches dipush tanpa merge protected main. Hosted CI billing tidak dianggap PASS.
+- Alasan: menjalankan login/session/consent/RBAC/audit/dashboard nyata untuk Owner dengan recovery teruji.
+- Alternatif: D0 holding dan PUBLIC_DUMMY_DEMO tetap riwayat `DEPRECATED` untuk domain ini; bukan runtime R0 akhir.
+- Dampak: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; penggunaan `PILOT_ACTIVE` bisnis menunggu first-use consent Owner/dashboard UAT dan `BUSINESS_READY=false`. Pilot berakhir 2026-09-14T14:08:12.752Z. Payment/QRIS, external commerce/marketing, NFC/printer dan customer lain OFF; tidak mengubah pricing, commercial promise atau authority produk lain.
+- Terkait: [produk](products/saga-platform/PRODUCT.md), [dossier](products/saga-platform/DOSSIER.md), [gaps](GAPS.md), [snapshot sinkronisasi](SYNC_STATUS.md).
+
+
 ## DEC-192 - Saga POS memakai sagapos.site dan Hostinger VPS dengan activation terpisah
 
 - Tanggal: 2026-09-07.
