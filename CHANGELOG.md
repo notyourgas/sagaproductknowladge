@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — Customer Platform Owner Member Cohort sync
+
+- `CONFIRMED`: exact source `b379b53d3a45ad72586157d258571cf64d05edc0`, PR #9, branch pushed dan clean.
+- Alasan: Owner Dashboard membutuhkan jumlah member scoped yang tidak menebak atribusi dari client, balance, booking, atau transaksi.
+- Area/file: Saga Platform product/dossier/changelog, portfolio/master, gaps, dan sync. Tidak ada secret, PII, private identifier, raw provider evidence, transaction, atau production access.
+- PASS 20 isolated test files/80 tests, focused4, static/migration, dependency0, secret/diff checks; hosted CI exact head zero-step terblokir billing account.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; joint/staging/production/activation/business-ready false.
+
 ## 2026-09-07 — Customer Platform Owner Operations Summary sync
 
 - `CONFIRMED`: exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR #9, branch pushed.
