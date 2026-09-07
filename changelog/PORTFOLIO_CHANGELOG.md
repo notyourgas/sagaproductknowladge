@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — Customer Platform explicit Owner Member Cohort candidate
+
+`CONFIRMED`; exact source `b379b53d3a45ad72586157d258571cf64d05edc0` di PR #9 menambah read-only member cohort aggregate yang menghitung hanya link konteks eksplisit terverifikasi. Organization total dideduplikasi dan scope outlet/tenant non-additive; payload hanya count lifecycle/Tier dengan classification/freshness/limitations tanpa PII, member identifier, Points, booking, transaksi, atau revenue. Link writer tetap internal dan connector ingestion menunggu identity/approval/revocation/retry contract. 20 test files/80 tests, focused4, static/migration, dependency0, secret/diff checks PASS; hosted CI exact head zero-step akibat billing/spending-limit account. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; semua joint/staging/production/activation/business-ready gate false.
+
 ## 2026-09-07 — Customer Platform scoped Owner Operations Summary candidate
 
 `CONFIRMED`; exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4` di PR #9 menyediakan read-only aggregate untuk Owner Dashboard dengan operator auth terpisah, persisted RBAC/audit, rate limit, PII-minimized response, dan fail-closed organization/outlet/tenant scope. 19 test files, static/migration, dependency0, secret dan diff checks PASS; hosted CI belum memulai step akibat billing/spending-limit account. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; semua joint/staging/production/activation/business-ready gate false dan authority produk lain tidak berubah.

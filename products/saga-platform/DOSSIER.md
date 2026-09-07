@@ -1,5 +1,17 @@
 # Saga Platform Dossier
 
+## 2026-09-07 — Explicit Owner Member Cohort read model candidate
+
+Exact source `b379b53d3a45ad72586157d258571cf64d05edc0` pada PR Customer Platform #9 menambah kontrak additive `GET /v1/owner/members/summary`. Endpoint memakai operator credential dan assignment `dashboard:read` yang sama dengan Operations Summary: Owner scoped ke organisasinya; Manager wajib exact assigned outlet; Staff, Support, Finance, member session, dan machine connector token ditolak. Foreign dan unknown organization sama-sama scope denied.
+
+Read model hanya menghitung member dengan link konteks eksplisit yang sudah diverifikasi oleh boundary internal. Penulisan link mensyaratkan existing member, exact outlet atau tenant, source system yang diizinkan, hash bukti SHA-256, dan idempotency key yang collision-safe. Raw provider reference tidak disimpan. API ingestion belum dibuka karena connector identity, approval authority, credential rotation/revocation, dan retry contract belum diratifikasi.
+
+Response memuat linked-member count yang dideduplikasi, active-link count, lifecycle counts, Tier counts, scope, classification, freshness, dan limitations. Organization count boleh mendeduplikasi satu member yang muncul di beberapa konteks; outlet/tenant cohorts tidak additive. Points balance sengaja tidak dihitung karena ledger saat ini member-wide dan tidak membuktikan atribusi outlet/tenant. Booking, transaksi, revenue, PII, Member Code, dan member ID juga tidak ditampilkan.
+
+Empat test baru memverifikasi exact context/evidence, duplicate/idempotency collision, permission-negative/no-existence-leak, pemisahan operator-versus-machine auth, PII minimization, no-cache, durable audit, dan restart persistence. Seluruh 20 isolated test files/80 tests, static/migration check, dependency audit nol, secret scan, dan diff check PASS. GitHub Quality run exact head tidak memperoleh runner dan menjalankan nol step akibat billing/spending-limit account. Tidak ada merge, deploy, database/provider/customer mutation, atau activation.
+
+Status: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; seluruh joint/staging/production/activation/business-ready gate tetap false.
+
 ## 2026-09-07 — Customer Platform scoped Owner Operations Summary candidate
 
 Exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4` pada PR Customer Platform #9 menambah kontrak additive `GET /v1/owner/operations/summary`. Runtime meminta organisasi dan maksimal satu outlet atau tenant. Operator token hanya membuktikan actor bootstrap; permission tetap berasal dari assignment Customer Platform yang aktif dan belum kedaluwarsa. Machine connector token tidak diterima.

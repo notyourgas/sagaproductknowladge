@@ -1,5 +1,15 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-07 — Customer Platform explicit Owner Member Cohort candidate
+
+- `CONFIRMED` implementation candidate pada exact source `b379b53d3a45ad72586157d258571cf64d05edc0`, PR Customer Platform #9.
+- Endpoint read-only Owner Member Cohort menghitung hanya member yang memiliki link konteks terverifikasi eksplisit. Organization total dideduplikasi, sedangkan hasil per outlet/tenant bersifat non-additive dan tidak boleh dijumlahkan lintas scope.
+- Owner mengikuti scope organisasinya; Manager hanya exact outlet assigned. Staff, Support, Finance, member session, dan machine connector credential ditolak. Read sukses diaudit dan dipersist sebelum respons.
+- Payload hanya memuat jumlah member/link, status lifecycle, Tier, classification, freshness, dan limitations. Member ID, nama, email, Member Code, Points balance, detail booking, transaksi, dan revenue tidak ditampilkan.
+- Link writer tetap internal sampai connector identity, approval, rotation/revocation, dan retry contract disahkan. Raw provider reference tidak disimpan; hanya hash bukti. Tidak ada atribusi yang ditebak dari client, balance, booking, atau transaksi.
+- Seluruh 20 file test/80 test, focused4, static/migration, dependency audit nol, secret dan diff checks lulus lokal. Hosted CI kembali tidak memulai step karena billing/spending-limit account.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `JOINT_VALIDATED=false`, `STAGING_READY=false`, `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, dan `BUSINESS_READY=false`.
+
 ## 2026-09-07 — Customer Platform scoped Owner Operations Summary candidate
 
 - `CONFIRMED` implementation candidate pada exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR Customer Platform #9.

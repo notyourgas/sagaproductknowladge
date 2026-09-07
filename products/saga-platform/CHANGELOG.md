@@ -1,5 +1,13 @@
 # Saga Platform Changelog
 
+## 2026-09-07 — Explicit Owner Member Cohort candidate
+
+- Exact Customer Platform source `b379b53d3a45ad72586157d258571cf64d05edc0`, PR #9, menambah read-only member cohort aggregate yang hanya memakai explicit verified context links.
+- Organization total dideduplikasi dan outlet/tenant cohorts dinyatakan non-additive. Response hanya berupa count lifecycle/Tier plus classification/freshness/limitations; PII, member identifier, Member Code, Points, booking, transaction, dan revenue tidak ditampilkan.
+- Link writer tetap internal, evidence hanya hash, idempotency collision fail-closed, dan snapshot/audit restart-safe. Connector ingestion menunggu identity/approval/revocation/retry contract.
+- PASS 20 isolated test files/80 tests, focused4, static/migration, dependency0, secret/diff checks. Hosted CI exact head zero-step akibat billing/spending-limit account.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; joint/staging/deploy/activation/business readiness tidak berubah.
+
 ## 2026-09-07 — Scoped Owner Operations Summary candidate
 
 - Exact Customer Platform source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR #9, menambah read-only owner operations aggregate dengan operator credential terpisah, persisted RBAC/audit, rate limit, fail-closed organization/outlet/tenant scope, dan no-existence-leak.

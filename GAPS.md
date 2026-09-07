@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — Customer Platform Owner Dashboard after explicit member cohort
+
+- `CONFIRMED`: explicit verified member-context link model dan PII-minimized non-additive cohort summary tersedia pada exact source `b379b53d3a45ad72586157d258571cf64d05edc0`.
+- `NEEDS CONFIRMATION`: final production role-permission matrix serta siapa yang boleh melihat organization-wide/outlet/tenant cohort. Current OWNER/MANAGER rules hanya fail-closed local baseline.
+- `NEEDS CONFIRMATION`: connector identity, signer/approval authority, credential rotation/revocation, retry/reconciliation, evidence retention, dan public ingestion contract. Link writer sengaja tetap internal.
+- `NEEDS CONFIRMATION`: signed scoped SagaPOS/SagaBook facts untuk booking/transaction/revenue, Points attribution policy, immutable audit retention, monitoring/SLO, encrypted offsite backup/disposable restore, joint UAT, staging, release, dan activation approvals.
+- Hosted CI billing/spending-limit harus dipulihkan dan exact PR checks diulang. Tidak ada merge, deploy, atau kenaikan business readiness dari test lokal.
+
 ## 2026-09-07 — Customer Platform Owner Dashboard after operations summary
 
 - `CONFIRMED`: scoped read-only operations summary candidate, operator auth/RBAC isolation, PII-minimized payload, audit persistence dan restart recovery pada exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`.
