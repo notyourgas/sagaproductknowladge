@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Owner-session delegation untuk SagaPOS production
+
+- `CONFIRMED`; provider source `0b10496aba9f2bc620902181f0fb971285b10725` menambahkan HMAC/nonce-protected Owner token exchange dengan exact identity mapping dan short-lived server-side session.
+- Per-command membership, organization, role, permission dan scope refresh tetap berlaku; browser tidak menerima token SagaWork dan logout mencabut grant.
+- PASS full1085/focused70, type/lint/build/OpenAPI, audit0, backup/disposable restore, manifest, health dan end-to-end delegated read/revoke.
+- Integration endpoint aktif untuk SagaPOS production, tetapi data provider masih sintetis; real employee/payroll/payout dan `BUSINESS_READY` tetap false.
+
 ## 2026-09-07 — Schedule publish recovery
 
 - `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final native harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`.

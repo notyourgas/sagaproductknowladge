@@ -1,5 +1,12 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Delegasi Owner SagaPOS tanpa login HR kedua
+
+- `CONFIRMED`; provider source `0b10496aba9f2bc620902181f0fb971285b10725` aktif untuk integrasi production SagaPOS. Endpoint Owner delegation menerbitkan sesi server-side pendek hanya setelah exact client, Owner, organization, signature, timestamp dan nonce lolos.
+- Browser tidak menerima access token SagaWork. Membership aktif, permission dan scope diperiksa ulang pada setiap introspection/command; logout SagaPOS mencabut delegated grant.
+- PASS 1085 test, lint/type/build/OpenAPI, dependency audit high0, encrypted backup/disposable restore, release manifest, live health dan delegated read/revoke end-to-end.
+- Provider aktif masih menggunakan dataset `synthetic`; ini cukup untuk feature trial tetapi bukan data karyawan bisnis. `BUSINESS_READY=false`, real payroll/payment dan payout tetap OFF.
+
 ## 2026-09-07 — Schedule publish uncertainty recovery
 
 - `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final native harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`. HR draft-to-publish is now one-shot and bounded with exact identity/version validation, safe known-4xx copy, and reload-only recovery after an uncertain outcome.

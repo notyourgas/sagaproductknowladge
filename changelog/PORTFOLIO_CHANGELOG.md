@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — Satu sesi Owner untuk SagaPOS dan HR
+
+`CONFIRMED`; SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` dan SagaWork provider source `0b10496aba9f2bc620902181f0fb971285b10725` mengaktifkan `/hr` pada Owner Dashboard production tanpa login SagaWork kedua. Delegasi server-side memakai exact identity binding, HMAC/nonce, short-lived token, command-time authorization dan revocation. Full394/full1085, audit0, backup/disposable restore, delegated read/revoke, monitor serta rollback/reactivation lulus; 0 order/payment dibuat. Feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, tetapi workforce dataset masih sintetis, browser Owner acceptance dan offsite recovery belum selesai, sehingga `BUSINESS_READY=false`; payment, payroll payout, messaging dan hardware tetap OFF.
+
 ## 2026-09-07 — SagaOPS Owner-only production pilot aktif
 
 `CONFIRMED`; exact Saga POS source `60b3426e59698014639113070c89bfa195eb5100` aktif di Hostinger VPS pada keluarga domain `sagapos.site`. Runtime memakai PostgreSQL persistent, Owner hash auth, Basic Auth containment, HTTPS/Nginx valid, monitor systemd dan seven-day expiry. Authenticated smoke membuktikan Dashboard, Admin, Cashier, KDS dan Kiosk; anonymous public tetap `401` dan payment/QRIS eksternal tetap `OFF`. Focused12/full393, dependency0, secret scan0, migration preflight16, encrypted backup/disposable restore, health/monitor dan browser smoke5 PASS. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_PILOT_ACTIVE`; `BUSINESS_READY=false` sampai payment, hardware, offsite recovery, device UAT dan business acceptance selesai.

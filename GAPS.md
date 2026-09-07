@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — Residual setelah Owner-to-HR single login production
+
+- `CONFIRMED`: SagaPOS `/hr` aktif memakai satu sesi Owner dan delegated server-side SagaWork access; anonymous denial, delegated read/revoke, encrypted backup/disposable restore, monitor dan rollback/reactivation lulus.
+- `NEEDS CONFIRMATION`: workforce provider masih berisi data sintetis. Real employee import/onboarding, kebijakan payroll, finance acceptance dan payout tidak boleh dianggap aktif.
+- `NEEDS CONFIRMATION`: browser Owner UAT pada domain resmi tertahan karena vault credential pada sesi automation terkunci; Andreas perlu membuka akses domain dan login Owner untuk acceptance tampilan/alur.
+- `NEEDS CONFIRMATION`: independent offsite restore, device/hardware UAT dan monitoring jangka panjang tetap terbuka. `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaOPS residual setelah Owner-only production pilot
 
 - `CONFIRMED`: domain resmi, production runtime, PostgreSQL persistence, Owner auth, authenticated Dashboard/Admin/Cashier/KDS/Kiosk, backup lokal terenkripsi, disposable restore, monitor, dan rollback artifact boundary sudah melewati gate untuk source `60b3426e59698014639113070c89bfa195eb5100`.

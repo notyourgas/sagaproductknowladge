@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-07 — Production Owner-session delegation ke HR
+
+`CONFIRMED` dari SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` dan SagaWork provider source `0b10496aba9f2bc620902181f0fb971285b10725`. Release SagaPOS aktif di domain resmi dengan `authMode=OWNER_HASH_HRPOS_SSO`; Owner membuka `/hr` dari dashboard menggunakan cookie/session Owner yang sudah ada, tanpa login SagaWork kedua.
+
+Delegasi terjadi server-to-server: binding exact Owner dan organisasi, signed request HMAC plus nonce, token pendek yang tidak dikirim ke browser, encrypted bridge storage, command-time identity/permission refresh, logout revocation dan anonymous denial. Grant production hanya `hr`; endpoint browser lama tetap tidak menjadi jalur default production.
+
+Evidence: SagaPOS full394 dan audit0; SagaWork full1085, type/lint/build/OpenAPI dan audit0; encrypted backup/disposable restore kedua runtime; exact release manifest provider; production monitor; end-to-end delegation, introspection, read-only People request dan revoke; serta rollback ke release sebelumnya lalu reactivation. Order, payment intent dan payment tetap nol selama acceptance.
+
+Delivery `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Data workforce aktif masih `synthetic`, independent offsite recovery belum tervalidasi, dan browser Owner UAT tertahan karena credential vault pada sesi automation terkunci. Karena itu `BUSINESS_READY=false`; payroll payout, payment/QRIS, messaging, NFC dan printer tetap OFF.
+
 ## 2026-09-07 — Owner-only production pilot on sagapos.site
 
 `CONFIRMED` dari exact source `60b3426e59698014639113070c89bfa195eb5100` pada branch `codex/sagapos-production-release-50b3`. Ini adalah perubahan status dari integrated handoff candidate menjadi Owner-only production pilot yang aktif pada Hostinger VPS untuk domain resmi `sagapos.site`.

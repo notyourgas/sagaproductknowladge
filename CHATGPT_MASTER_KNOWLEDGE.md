@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — Owner SagaPOS memakai HR tanpa login kedua
+
+- `CONFIRMED`; [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/) production menjalankan source `614be99927802e329705f5c7575dd6813a83bac6`; halaman `/hr` memakai sesi Owner SagaPOS yang sama melalui delegasi server-side ke provider SagaWork source `0b10496aba9f2bc620902181f0fb971285b10725`.
+- Jangan meminta Owner login HR/SagaWork kedua. Jika sesi Owner tidak ada atau berakhir, arahkan kembali ke login Owner SagaPOS.
+- Security boundary: exact Owner/organization/client mapping, HMAC plus nonce, short-lived server-only token, per-command authorization refresh, encrypted bridge storage, logout revocation dan anonymous denial.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, tetapi data workforce saat ini sintetis dan browser Owner acceptance belum selesai. `BUSINESS_READY=false`; payment/QRIS, payroll payout, messaging, NFC dan printer tetap OFF.
+
 ## 2026-09-07 — SAGA Member R0 Owner-only di domain asli
 
 - `CONFIRMED`, cut-off 2026-09-07 14:18:33 UTC: [login Owner](https://app.sagamember.site/owner) telah `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada Hostinger dengan authoritative Customer Platform API same-origin dan PostgreSQL persistent.

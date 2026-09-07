@@ -1,5 +1,13 @@
 # SagaWork Dossier
 
+## 2026-09-07 — SagaPOS Owner delegation provider
+
+`CONFIRMED` dari source `0b10496aba9f2bc620902181f0fb971285b10725`. Provider menambahkan signed `owner-token` exchange yang hanya menerima configured SagaPOS Owner identity. Delegasi membuat parent auth session berumur sekitar 31 menit dan bridge grant paling lama 30 menit, tanpa cookie atau access token SagaWork di browser.
+
+Membership/organization harus aktif; identity, permissions dan scopes diperiksa ulang pada introspection dan setiap command. Konfigurasi exact-key, client binding dan nonce replay protection fail closed; grant dicabut saat logout. Production acceptance berhasil melakukan delegated read dan revoke tanpa menampilkan PII atau mengubah data HR.
+
+Full1085, focused70, type/lint/build/OpenAPI, audit high0, encrypted backup/disposable restore, manifest dan health lulus. Runtime provider tetap `dataMode=synthetic`; real employee onboarding, payroll/payout, browser Owner acceptance dan independent offsite recovery belum selesai. `BUSINESS_READY=false`.
+
 ## 2026-09-07 — Schedule publish lost-response recovery
 
 - `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`. A publish confirmation can issue at most one POST and shares a 12-second fetch/body deadline. Success requires exact schedule identity, published state and coherent positive version counters; known 4xx uses mapped public-safe copy.

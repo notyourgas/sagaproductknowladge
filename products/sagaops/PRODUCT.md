@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — HR langsung dari sesi Owner SagaPOS production
+
+- `CONFIRMED`; exact SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` pada branch `codex/sagapos-production-release-50b3` sudah dipush dan aktif di `dashboard.sagapos.site`.
+- Owner cukup login sekali ke SagaPOS. Halaman `/hr` memakai sesi Owner yang sama dan membuat delegasi server-to-server berumur pendek ke SagaWork; tidak ada form atau login SagaWork kedua di browser.
+- Integrasi memakai exact organization/owner binding, HMAC plus nonce, token terenkripsi server-side, per-command permission refresh, revocation, anonymous denial dan role grant `hr` least-privilege.
+- PASS SagaPOS full394, SagaWork full1085, type/lint/build/OpenAPI, dependency audit high0, encrypted backup plus disposable restore pada kedua runtime, end-to-end delegated read, monitor dan rollback/reactivation drill. Pengujian tidak membuat order atau payment.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; `BUSINESS_READY=false`. Sumber data workforce yang aktif masih sintetis dan browser Owner acceptance masih menunggu vault credential tersedia. Payroll payout, payment/QRIS, messaging dan hardware tetap OFF.
+
 ## 2026-09-07 — Owner-only Saga POS production pilot aktif di sagapos.site
 
 - `CONFIRMED`; exact SagaOPS/Saga POS source `60b3426e59698014639113070c89bfa195eb5100`, branch `codex/sagapos-production-release-50b3`, sudah dipush dan aktif pada Hostinger VPS untuk keluarga domain `sagapos.site`.

@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-194 — Owner SagaPOS tidak login ulang untuk memakai HR
+
+- Tanggal: 2026-09-07. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: autentikasi Owner dan workflow HR pada SagaPOS.
+- Keputusan: Owner login satu kali ke SagaPOS lalu membuka seluruh fitur HR dari Owner Dashboard. Browser tidak meminta login SagaWork/HR kedua; jika sesi Owner tidak ada atau berakhir, pengguna dikembalikan ke login Owner SagaPOS.
+- Alasan: mengurangi friction operasional Owner saat mencoba dan menjalankan fungsi workforce dari pusat kendali bisnis.
+- Alternatif: login provider HR terpisah tetap tersedia hanya sebagai jalur non-production/legacy, bukan default workflow Owner production.
+- Dampak: SagaPOS production memakai short-lived server-side delegation dengan exact identity binding, per-command authorization dan revocation. Keputusan ini tidak membuka anonymous HR, tidak mengaktifkan payment/payroll payout/hardware, dan tidak menjadikan synthetic workforce data `BUSINESS_READY`.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [SagaWork](products/sagawork/PRODUCT.md), [gaps](GAPS.md), [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-193 — R0 Owner-only SAGA Member pada domain asli
 
 - Tanggal: 2026-09-07. Status: `CONFIRMED`; pemberi keputusan Andreas, pelaksana dan provenance Release Lead melalui laporan rilis exact source.

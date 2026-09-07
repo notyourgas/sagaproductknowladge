@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Owner membuka HR tanpa login kedua
+
+- `CONFIRMED`; source `614be99927802e329705f5c7575dd6813a83bac6` aktif pada SagaPOS production.
+- `/hr` kini memakai sesi Owner SagaPOS dan short-lived server-side SagaWork delegation. Tidak ada form/password HR kedua di browser; anonymous API tetap `401`.
+- PASS full394/full1085, build/type/lint/OpenAPI, audit0, encrypted backup/disposable restore, delegated read plus revoke, monitor dan rollback/reactivation. Order/payment tetap nol.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data HR masih sintetis, browser Owner acceptance dan offsite recovery belum selesai, sehingga `BUSINESS_READY=false`. Payment/payroll payout/hardware tetap OFF.
+
 ## 2026-09-07 — Owner-only production pilot aktif pada domain resmi
 
 - `CONFIRMED`; source `60b3426e59698014639113070c89bfa195eb5100` di branch `codex/sagapos-production-release-50b3` sudah aktif pada Hostinger VPS untuk `sagapos.site`.

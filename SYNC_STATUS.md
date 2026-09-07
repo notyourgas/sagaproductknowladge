@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaPOS Owner-to-HR tanpa login kedua
+
+- Status `accepted`; classification `CONFIRMED`; SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` pushed/active dan SagaWork provider source `0b10496aba9f2bc620902181f0fb971285b10725` active.
+- Synced: same Owner session untuk `/hr`, server-only short-lived delegation, exact identity binding, HMAC/nonce, per-command authorization, revocation dan anonymous denial.
+- Evidence full394/full1085, type/lint/build/OpenAPI, audit0, encrypted backup/disposable restore, release manifest, live delegated read/revoke, monitor, rollback/reactivation dan 0 order/payment.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data workforce synthetic, browser Owner acceptance dan independent offsite recovery pending. `BUSINESS_READY=false`; payment/QRIS, payroll payout, messaging dan hardware OFF.
+
 ## 2026-09-07 — SagaOPS Owner-only production pilot
 
 - Status `accepted`; classification `CONFIRMED`; exact source `60b3426e59698014639113070c89bfa195eb5100`, branch `codex/sagapos-production-release-50b3`, source branch pushed and active on Hostinger VPS.
