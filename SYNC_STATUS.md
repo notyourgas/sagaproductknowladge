@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — Saga Member R0 Owner production-pilot candidate
+
+- Status `accepted`; classification `CONFIRMED`; founder selected a seven-day Owner-only controlled production pilot at `app.sagamember.site`.
+- Exact Customer Platform source `d0016572a5f03374bb5d721599717aff2f13c48a`, PR #10, is pushed and clean. It integrates Wave 1–7 plus both Owner read models and adds fail-closed route classification, operator startup guard, idempotent non-synthetic OWNER provisioning, and Hostinger immutable deploy/recovery/activation controls.
+- Evidence: 21 isolated test files/86 tests, static/migration, shell syntax, dependency0, diff/secret checks PASS. Hosted Quality run `34131232628` created zero steps because billing blocked runner allocation; `CI_BILLING_BLOCKED`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production unchanged; frontend candidate, Resend/operator credentials, fresh disposable restore, exact composite artifact, authenticated same-origin Owner UAT, monitor and rollback rehearsal remain open. Payment/QRIS, commerce/reward writes, Push, marketing, NFC/printer, other customers and external transactions remain OFF; business-ready false.
+
 ## 2026-09-07 — SagaOPS integrated release-lock handoff
 
 - Status `accepted`; classification `CONFIRMED`; exact source `5a90a18866e0d16bb1639a53f544024d961a04f5`, branch `codex/sagapos-release-lock`, source branch pushed and clean.

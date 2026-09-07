@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — Saga Member R0 Owner pilot candidate sync
+
+- `CONFIRMED`: founder target is a seven-day Owner-only production pilot at `app.sagamember.site`; backend exact `d0016572a5f03374bb5d721599717aff2f13c48a`, PR #10.
+- Alasan: bind Customer Platform/Owner Dashboard to an auditable fail-closed Hostinger release path without enabling payment, external transactions, other customers, or unaccepted frontend/runtime inputs.
+- Area/file: Saga Platform product/dossier/changelog, portfolio/master, decision, gaps and sync. No secret, PII, private infrastructure path, organization/device identifier, raw receipt or provider value.
+- PASS local 21 files/86 tests, static/migration, shell syntax, dependency0, diff/secret checks; hosted CI zero-step due billing. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/activation/business readiness unchanged.
+
 ## 2026-09-07 — SagaOPS integrated release-lock sync
 
 - `CONFIRMED`: exact source `5a90a18866e0d16bb1639a53f544024d961a04f5`, branch `codex/sagapos-release-lock`, clean and pushed.

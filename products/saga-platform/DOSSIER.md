@@ -1,5 +1,19 @@
 # Saga Platform Dossier
 
+## 2026-09-07 — R0 Owner controlled production-pilot release candidate
+
+Andreas confirmed a seven-day Owner-only production pilot at `https://app.sagamember.site`. The allowed R0 surface is intentionally narrow: one hashed internal email cohort, Resend-backed email OTP, secure same-origin cookie/session and CSRF, versioned consent, persistent PostgreSQL snapshot/event journal, separate operator credential, scoped OWNER assignment, audit, and the two PII-minimized Owner Dashboard summaries. The public PWA must use the actual same-origin API; dummy fixtures and undefined API base are forbidden.
+
+Customer Platform exact source `d0016572a5f03374bb5d721599717aff2f13c48a`, PR #10, merges Wave 1–7 source `7039a580cf0dc05ded194b6fdb6f06da8aa5cf9f` with Owner read-model source `b379b53d3a45ad72586157d258571cf64d05edc0`. The production policy now has explicit route-to-feature classification and rejects every unclassified `/v1` route. Account, Owner Dashboard, commerce, reward, support, privacy, Push, quest, SagaBook, and machine surfaces cannot inherit accidental default access. Enabling Owner Dashboard without a separate configured operator credential prevents startup.
+
+Idempotent R0 provisioning creates one non-synthetic organization scope and one OWNER assignment bound to a pseudonymous actor; it does not seed member PII or inferred context links. Release controls bind exact backend SHA, stable configuration digest, SBOM digest and supported Node runtime. The Hostinger path includes root-owned systemd/nginx templates, same-origin proxying, encrypted age backup with SHA-256, disposable PostgreSQL restore plus semantic/count comparison, migration checksum verification, atomic current/rollback pointers, guarded R0 activation, negative monitoring, and automatic config/pointer recovery on failure. No retention deletion is included.
+
+Exact-head local evidence: 21 isolated test files/86 tests PASS, including policy, RLS, persistence/restart and provisioning; static/migration check PASS; shell syntax and diff checks PASS; heuristic credential-pattern scan clear; production and full dependency audits report zero vulnerabilities. GitHub Quality run `34131232628` finished with an empty step list because billing prevented a runner from starting, so hosted CI is `CI_BILLING_BLOCKED`.
+
+The existing Hostinger D0 backend remained deployed-inactive and the public hostname continued to serve its prior static surface during this work. No source/ops candidate was installed. Frontend V100 remains unaccepted while a preserved performance assertion and an existing continuity flake are investigated. Required Resend and separate operator credential inputs were not available in the approved runtime credential source, and a fresh disposable restore receipt has not yet been produced. Therefore no composite artifact, nginx cutover, R0 activation, authenticated Owner UAT, rollback rehearsal, or business acceptance occurred.
+
+Status: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_BILLING_BLOCKED`; `JOINT_VALIDATED=false`, `PRODUCTION_ACTIVATED=false`, `AUTHENTICATED_OWNER_UAT_PENDING`, `BUSINESS_READY=false`. Payment/QRIS, commerce/reward writes, Push, marketing/mass email, NFC, printer, support merge, other customers, and external transactions remain OFF.
+
 ## 2026-09-07 — Explicit Owner Member Cohort read model candidate
 
 Exact source `b379b53d3a45ad72586157d258571cf64d05edc0` pada PR Customer Platform #9 menambah kontrak additive `GET /v1/owner/members/summary`. Endpoint memakai operator credential dan assignment `dashboard:read` yang sama dengan Operations Summary: Owner scoped ke organisasinya; Manager wajib exact assigned outlet; Staff, Support, Finance, member session, dan machine connector token ditolak. Foreign dan unknown organization sama-sama scope denied.

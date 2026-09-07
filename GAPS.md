@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-07 — Saga Member R0 Owner pilot after backend release hardening
+
+- `CONFIRMED`: exact Customer Platform candidate `d0016572a5f03374bb5d721599717aff2f13c48a` is pushed on PR #10 with fail-closed R0 feature gates, Owner provisioning, and source-controlled Hostinger deploy/recovery controls.
+- `NEEDS CONFIRMATION`: exact frontend candidate still must pass the preserved performance/continuity assertions and prove same-origin real API mode without dummy fixtures before a composite artifact may be promoted.
+- `NEEDS CONFIRMATION`: approved Resend sender/key and one separate operator credential are unavailable; R0 startup intentionally fails closed without them. Fresh encrypted backup plus disposable restore, target Node/unit/nginx preflight, shared release lock, authenticated Owner UAT, monitoring and rollback rehearsal also remain.
+- Hosted CI billing must be restored for exact remote checks. Production is unchanged and R0 is not activated; payment/QRIS, commerce/reward writes, Push, marketing, NFC/printer, support merge, other customers and external transactions remain OFF.
+
 ## 2026-09-07 — SagaOPS after integrated release-lock handoff
 
 - `CONFIRMED`: integration source `5a90a18866e0d16bb1639a53f544024d961a04f5` is pushed and locally validated with recovery guard v4 plus monitoring/prune serialization.

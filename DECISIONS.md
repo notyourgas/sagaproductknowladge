@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-193 - Saga Member memakai R0 Owner-only production pilot tujuh hari
+
+- Tanggal: 2026-09-07.
+- Klasifikasi/status: `CONFIRMED`, aktif; pemberi keputusan Andreas.
+- Topik: target produksi Saga Member dan Customer Platform.
+- Keputusan: gunakan `app.sagamember.site` untuk controlled business production pilot selama tujuh hari, hanya untuk Andreas. Customer Platform menjadi backend authoritative dengan PostgreSQL, login OTP, secure session/consent, scoped Owner RBAC/audit dan Owner Dashboard. Frontend wajib same-origin memakai API nyata tanpa dummy fixture.
+- Alasan: membuktikan workflow operasional Owner end-to-end pada scope terkecil sebelum membuka customer atau transaksi lain.
+- Alternatif: mempertahankan target sebagai preview/public dummy atau langsung membuka seluruh provider/customer tidak dipilih.
+- Dampak: exact backend candidate `d0016572a5f03374bb5d721599717aff2f13c48a` menyiapkan fail-closed R0 dan release/recovery Hostinger, tetapi belum dideploy. Aktivasi menunggu frontend accepted, Resend dan operator credential, fresh backup/disposable restore, authenticated same-origin Owner UAT, monitoring dan rollback rehearsal. Payment/QRIS, commerce/reward writes, Push, marketing/mass email, NFC/printer, support merge, other customers dan external transactions tetap OFF.
+- Dokumen terkait: [Saga Platform](products/saga-platform/PRODUCT.md), [Dossier](products/saga-platform/DOSSIER.md), [Gaps](GAPS.md), [Portfolio Changelog](changelog/PORTFOLIO_CHANGELOG.md).
+
 ## DEC-192 - Saga POS memakai sagapos.site dan Hostinger VPS dengan activation terpisah
 
 - Tanggal: 2026-09-07.
