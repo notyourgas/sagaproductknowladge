@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-07 — Scoped Owner Operations Summary candidate
+
+- Exact Customer Platform source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR #9, menambah read-only owner operations aggregate dengan operator credential terpisah, persisted RBAC/audit, rate limit, fail-closed organization/outlet/tenant scope, dan no-existence-leak.
+- Payload minim PII dan menandai synthetic/local state serta missing member-context/connector facts secara eksplisit; Saga Member, SagaPOS, dan SagaBook authority boundaries tidak berubah.
+- 19 isolated test files, static/migration, dependency0, secret/diff checks PASS. Hosted CI belum berjalan karena account billing/spending-limit.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; joint/staging/production/activation/business-ready false.
+
 ## 2026-09-06 — Saga Member notification preference continuity
 
 - Classification: CONFIRMED implementation; PUBLIC_DUMMY_DEMO only, no real account/backend/provider/customer activation and no added service/dependency.

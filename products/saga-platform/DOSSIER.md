@@ -1,5 +1,17 @@
 # Saga Platform Dossier
 
+## 2026-09-07 — Customer Platform scoped Owner Operations Summary candidate
+
+Exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4` pada PR Customer Platform #9 menambah kontrak additive `GET /v1/owner/operations/summary`. Runtime meminta organisasi dan maksimal satu outlet atau tenant. Operator token hanya membuktikan actor bootstrap; permission tetap berasal dari assignment Customer Platform yang aktif dan belum kedaluwarsa. Machine connector token tidak diterima.
+
+Owner boleh membaca scope organisasinya; Manager wajib meminta exact outlet assigned dan tidak dapat melakukan organization-wide/tenant read. Finance, Support, dan Staff tidak memiliki action `dashboard:read`. Foreign dan unknown organization sama-sama gagal dengan scope denial sehingga tidak membocorkan existence. Auth/scoping failure tidak memicu durable write; read sukses menambahkan audit redacted dan baru merespons setelah persist.
+
+Read model menampilkan aggregate topology, device status, event flow, dead-letter, reconciliation, explicit capability flags, freshness, dan source classification. Ia sengaja mengembalikan limitation bahwa member counts belum tersedia sebelum member-context read model, dan transaction/booking totals belum boleh tampil sebelum connector facts scoped tersedia. Ini mencegah dashboard menebak data dari client atau fixtures.
+
+Empat test baru mencakup credential hashing/config failure, permission negative, machine-token isolation, PII minimization, no-cache, audit, dan restart persistence. Seluruh 19 isolated test files, static/migration check, dependency audit nol, secret scan, dan diff check PASS. GitHub Actions run untuk PR #9 berhenti sebelum runner/step karena billing/spending-limit account; remote CI belum hijau. Tidak ada deploy, database migration, provider mutation, payment/email/push/NFC/customer data, atau activation.
+
+Status: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; seluruh joint/staging/production/activation/business-ready gate tetap false.
+
 ## 2026-09-06 — Saga Member notification preference continuity
 
 - Classification: CONFIRMED implementation; PUBLIC_DUMMY_DEMO only, no real account/backend/provider/customer activation and no added service/dependency.
