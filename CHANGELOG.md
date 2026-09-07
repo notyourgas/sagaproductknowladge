@@ -5,7 +5,7 @@
 - `CONFIRMED`: founder target is a seven-day Owner-only production pilot at `app.sagamember.site`; backend exact `d0016572a5f03374bb5d721599717aff2f13c48a`, PR #10.
 - Alasan: bind Customer Platform/Owner Dashboard to an auditable fail-closed Hostinger release path without enabling payment, external transactions, other customers, or unaccepted frontend/runtime inputs.
 - Area/file: Saga Platform product/dossier/changelog, portfolio/master, decision, gaps and sync. No secret, PII, private infrastructure path, organization/device identifier, raw receipt or provider value.
-- PASS local 21 files/86 tests, static/migration, shell syntax, dependency0, diff/secret checks; hosted CI zero-step due billing. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/activation/business readiness unchanged.
+- PASS backend local 21 files/86 tests, static/migration, shell syntax, dependency0, diff/secret checks; hosted CI zero-step due billing. Backend candidate remains `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. A separate public Owner Pilot runtime was observed at source `8ce4f37d49f0eeeee51664fda0bca7e3f92c6d8e` / release `20260907T140646Z-75d56d5-r0`, but exact backend provenance, release-lock ownership, health/readiness, passport, restore, authenticated UAT, monitor and rollback remain unverified. Local integration `4a0dd8258017b4eb334cf65220ec8c90d9cc3181` is unpushed/undeployed and has a recorded CPU4x flake. Status `PUBLIC_RUNTIME_OBSERVED / ACTIVATION_UNVERIFIED / BUSINESS_READY=false`.
 
 ## 2026-09-07 — SagaOPS integrated release-lock sync
 

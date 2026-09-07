@@ -3,9 +3,11 @@
 ## 2026-09-07 — Saga Member R0 Owner pilot after backend release hardening
 
 - `CONFIRMED`: exact Customer Platform candidate `d0016572a5f03374bb5d721599717aff2f13c48a` is pushed on PR #10 with fail-closed R0 feature gates, Owner provisioning, and source-controlled Hostinger deploy/recovery controls.
-- `NEEDS CONFIRMATION`: exact frontend candidate still must pass the preserved performance/continuity assertions and prove same-origin real API mode without dummy fixtures before a composite artifact may be promoted.
+- `CONFIRMED`: public hostname currently exposes frontend source `8ce4f37d49f0eeeee51664fda0bca7e3f92c6d8e` / runtime `20260907T140646Z-75d56d5-r0`, production mode, `PUBLIC_DUMMY_DEMO=false`, and same-origin `/v1`. This is observation only; it is not proof of authorized deployment or activation.
+- `NEEDS CONFIRMATION`: identify the release-lock owner and exact backend/config bound to that runtime. `/health` and `/ready` returned 404; activation passport, encrypted backup/disposable restore, authenticated Owner UAT, monitoring, and rollback evidence are missing.
+- `NEEDS CONFIRMATION`: local clean integration `4a0dd8258017b4eb334cf65220ec8c90d9cc3181` combines V100 `be51f311ddb30e9d5e6f911ca2ca9abe35d01a0e` with the observed frontend. Focused checks pass, but one full-suite CPU4x run produced a 54 ms long task before the unchanged serial rerun passed; repeat exact full-suite stability under a quiet runner before promotion.
 - `NEEDS CONFIRMATION`: approved Resend sender/key and one separate operator credential are unavailable; R0 startup intentionally fails closed without them. Fresh encrypted backup plus disposable restore, target Node/unit/nginx preflight, shared release lock, authenticated Owner UAT, monitoring and rollback rehearsal also remain.
-- Hosted CI billing must be restored for exact remote checks. Production is unchanged and R0 is not activated; payment/QRIS, commerce/reward writes, Push, marketing, NFC/printer, support merge, other customers and external transactions remain OFF.
+- Hosted CI billing must be restored for exact remote checks. Activation remains unverified; payment/QRIS, commerce/reward writes, Push, marketing, NFC/printer, support merge, other customers and external transactions remain OFF.
 
 ## 2026-09-07 — SagaOPS after integrated release-lock handoff
 
