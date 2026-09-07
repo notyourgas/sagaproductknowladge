@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS integrated release-lock sync
+
+- `CONFIRMED`: exact source `5a90a18866e0d16bb1639a53f544024d961a04f5`, branch `codex/sagapos-release-lock`, clean and pushed.
+- Alasan: integrated HRPOS/RLS staging candidate membutuhkan recovery guards dan serialization agar monitoring/prune tidak race dengan release mutation.
+- Area/file: SagaOPS product/dossier/changelog, portfolio/master, gaps and sync. Tidak ada secret, PII, grant subject, tenant/device identifier, private path, raw callback/receipt or provider mutation.
+- PASS full387/387, focused release/monitor/storage6/6, focused Admin+Kiosk29/29, check191/16, shell syntax, dependency0 and staged diff secret scan0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; staging, production, activation, payroll/payment and business readiness unchanged.
+
 ## 2026-09-07 — Customer Platform Owner Member Cohort sync
 
 - `CONFIRMED`: exact source `b379b53d3a45ad72586157d258571cf64d05edc0`, PR #9, branch pushed dan clean.

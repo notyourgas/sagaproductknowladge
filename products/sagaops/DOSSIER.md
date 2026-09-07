@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-07 — Integrated release-lock candidate for protected staging
+
+`CONFIRMED` from exact source `5a90a18866e0d16bb1639a53f544024d961a04f5` on branch `codex/sagapos-release-lock`. This is a clean integration child of `682456535a9dc0c930910dba3c9773ab44fcc84c` and incorporates the v4 recovery guard from `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`.
+
+The candidate keeps release, provisioning and rollback input validation fail-closed: direct child of the release root, exact lowercase 40-character SHA basename, non-symlink, canonical path and root ownership are required before service downtime or pointer movement. It adds a shared release lock for monitoring installation and destructive retention pruning, so install/prune cannot race an upgrade or rollback. Dry-run retention remains unlocked for monitor observability.
+
+Acceptance evidence: focused release/monitor/storage 6/6 PASS, focused Admin+Kiosk browser 29/29 PASS, full regression 387/387 PASS, static/type/OpenAPI 191 modules and 16 migrations PASS, shell syntax via VPS PASS, dependency audit zero high findings and staged diff secret scan zero findings. Existing broad secret scan hits were synthetic fixture strings already present in tests, not new staged changes.
+
+This is `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. The VPS runtime remains on the previously accepted integrated source until the Release Lead finishes credential scope verification, encrypted backup and disposable restore, authenticated UAT, containment, rollback rehearsal and deployment activation gates. Do not claim staging-ready, production-deployed, production-activated, real payroll/payment readiness or `BUSINESS_READY`.
+
 ## 2026-09-07 — Protected HRPOS staging candidate v4 dan recovery boundary
 
 `CONFIRMED` dari source head `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`, dibangun di atas integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`. Kandidat ini memuat HR/Staff bridge tanpa membuka surface Kiosk, Cashier, KDS, Dashboard, Admin, fixture identity atau payment pada public staging. Login memakai provider redirect HTTPS, source-pair dan tenant binding exact, explicit grant, encrypted server-side session, command-time re-introspection, revocation dan bounded retry.

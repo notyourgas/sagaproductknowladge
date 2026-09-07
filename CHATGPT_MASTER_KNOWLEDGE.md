@@ -4,6 +4,13 @@ Customer Platform Owner Member Cohort candidate pada exact source `b379b53d3a45a
 
 Customer Platform Owner Operations Summary candidate pada exact source `f7cb9fb75a946d19eb9fc59d6fc3fa5b559179b4`, PR #9, berstatus `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Endpoint read-only memakai operator credential terpisah dan assignment RBAC persisted; Owner dapat membaca scope organisasinya, Manager hanya exact outlet assigned, role lain ditolak. Payload PII-minimized hanya aggregate operasional dan wajib membawa classification/freshness/limitations. Member counts menunggu authoritative member-context read model; transaction/booking totals menunggu scoped connector facts dari SagaPOS/SagaBook. 19 test files dan security/diff gates lokal PASS; hosted CI tidak mulai karena billing/spending-limit. Tidak ada deploy, provider/customer data, production activation, atau business-ready claim.
 
+## 2026-09-07 — SagaOPS integrated release-lock handoff candidate
+
+- `CONFIRMED`; exact source `5a90a18866e0d16bb1639a53f544024d961a04f5`, branch `codex/sagapos-release-lock`, pushed and clean. It integrates protected recovery guard v4 `227e0d66fe26b5805eb4328ada1fef7bcb8cad86` with HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`.
+- Release/provision/rollback stay exact-SHA, direct-child, non-symlink, canonical and root-owned. Monitoring installation and approved destructive pruning now use the shared release lock; dry-run retention remains available for monitor checks.
+- Evidence: focused release/monitor/storage6, focused Admin+Kiosk29, full387, check191/16, shell syntax, dependency0 and staged diff secret scan0 PASS.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; current staging/runtime, production deployment, activation, real payment/payroll and `BUSINESS_READY` are unchanged until Release Lead gates complete.
+
 ## 2026-09-07 — SagaOPS protected HRPOS staging candidate v4
 
 - `CONFIRMED`; exact source `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`, integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`, branch `codex/hrpos-staging-release-v4-recovery-guards` pushed.

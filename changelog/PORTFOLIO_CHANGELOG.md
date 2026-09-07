@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS integrated release-lock handoff candidate
+
+`CONFIRMED`; source `5a90a18866e0d16bb1639a53f544024d961a04f5` on branch `codex/sagapos-release-lock` integrates v4 protected recovery guards with the 16-migration HRPOS/RLS source and adds a release lock for monitoring installation plus approved destructive storage pruning. Full387/387, focused release/monitor/storage6/6, focused Admin+Kiosk29/29, check191/16, shell syntax, dependency0 and staged diff secret scan0 PASS. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; staging runtime, production, activation, payroll/payment and business readiness unchanged pending Release Lead gates.
+
 ## 2026-09-07 — Customer Platform explicit Owner Member Cohort candidate
 
 `CONFIRMED`; exact source `b379b53d3a45ad72586157d258571cf64d05edc0` di PR #9 menambah read-only member cohort aggregate yang menghitung hanya link konteks eksplisit terverifikasi. Organization total dideduplikasi dan scope outlet/tenant non-additive; payload hanya count lifecycle/Tier dengan classification/freshness/limitations tanpa PII, member identifier, Points, booking, transaksi, atau revenue. Link writer tetap internal dan connector ingestion menunggu identity/approval/revocation/retry contract. 20 test files/80 tests, focused4, static/migration, dependency0, secret/diff checks PASS; hosted CI exact head zero-step akibat billing/spending-limit account. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; semua joint/staging/production/activation/business-ready gate false.

@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Integrated release-lock handoff candidate
+
+- `CONFIRMED`; source `5a90a18866e0d16bb1639a53f544024d961a04f5` on branch `codex/sagapos-release-lock`, combining v4 recovery guards from `227e0d66fe26b5805eb4328ada1fef7bcb8cad86` with integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`.
+- Release/provision/rollback retain exact-SHA direct-child non-symlink root-owned path validation; monitoring installation and approved destructive prune now fail with a busy release lock instead of racing another promotion or cleanup.
+- PASS full387, focused release/monitor/storage6, focused Admin+Kiosk29, check191/16, shell syntax, dependency0 and staged diff secret scan0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production, payment, payroll, staging activation and business readiness are unchanged.
+
 ## 2026-09-07 — Protected HRPOS staging dan recovery guard v4
 
 - `CONFIRMED`; source `227e0d66fe26b5805eb4328ada1fef7bcb8cad86` pushed dari integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`.

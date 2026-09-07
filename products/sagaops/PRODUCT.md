@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Integrated release-lock handoff candidate
+
+- `CONFIRMED`; exact integration source `5a90a18866e0d16bb1639a53f544024d961a04f5`, branch `codex/sagapos-release-lock`, built on integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c` and includes recovery guard v4 `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`.
+- Candidate combines fail-closed exact release/provision/rollback path guards with an OS release lock for monitoring installation and destructive storage pruning. Approved prune is serialized; monitor dry-run retention remains readable so operational monitoring does not create false failures.
+- PASS focused release/monitor/storage 6/6, focused Admin+Kiosk browser 29/29, full regression 387/387, static/type/OpenAPI 191 module/16 migration, shell syntax via VPS, dependency audit0 and staged diff secret scan0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; VPS staging current remains the prior integrated source until Release Lead completes credential, backup/restore, UAT, containment, rollback and deployment gates. `STAGING_READY=false`, `PRODUCTION_DEPLOYED=false`, `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-07 — Protected HRPOS staging candidate v4 dan recovery guard
 
 - `CONFIRMED`; exact source head `227e0d66fe26b5805eb4328ada1fef7bcb8cad86`, integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c`, branch `codex/hrpos-staging-release-v4-recovery-guards` pushed dan clean.
