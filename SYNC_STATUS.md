@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaOPS supplier price credit memo
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `f539238dd1dcda0dfa7c150379d899ff96ee53ce`, core `9e4cd41d567ca95c69447532897bdbab1cffe260`, branch Saga POS pushed dan clean.
+- Sinkron: Finance-authored credit, independent Owner posting, pending reservation, payable reduction, state v13 restore dan Dashboard projection. Credit tidak mengubah stock/HPP/receipt/PO atau membuat payment. Tidak ada secret, PII, raw receipt/callback atau identifier private.
+- Evidence focused49/49, full364/364, static/check177/OpenAPI3.1/migrations12, PostgreSQL rollback/restart, Chromium390 Axe0/overflow0/touch44/page-error0, dependency0 dan public-safety0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Return/replacement, correction/reversal/resubmit, actual inputs, offsite restore, production activation dan `BUSINESS_READY` tetap terbuka.
+
 ## 2026-09-07 — SagaWork manual Workspace create recovery
 
 - Status `accepted`; classification `CONFIRMED`; exact application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c`.

@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS supplier price credit memo sync
+
+- `CONFIRMED`: exact source `f539238dd1dcda0dfa7c150379d899ff96ee53ce` (core `9e4cd41d567ca95c69447532897bdbab1cffe260`) menambah Finance-authored, Owner-posted non-stock supplier credit dan open-payable reduction.
+- Alasan: invoice yang sudah diposting perlu koreksi harga terdokumentasi tanpa mengarang retur stok atau pembayaran pemasok.
+- Area/file: SagaOPS HPP state v13, Finance AP surface, Owner Admin/Dashboard, browser/domain/durable tests, product/master/portfolio changelog dan sync status. Tidak ada secret, PII, raw receipt/callback atau identifier private.
+- PASS focused49/full364/check177/OpenAPI3.1/migrations12, PostgreSQL rollback/restart, mobile390 Axe/layout/touch/page-error, dependency dan public-safety scan. Production tetap unchanged; return/replacement, correction/reversal/resubmit, real inputs, offsite restore dan UAT masih terbuka.
+
 ## 2026-09-07 — SagaWork manual Workspace create recovery sync
 
 - `CONFIRMED`: application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c` adds bounded one-shot manual Workspace create, strict success validation and reload-only full Settings recovery after uncertain results.

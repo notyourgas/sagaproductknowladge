@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS supplier price credit memo
+
+- `CONFIRMED`; exact source `f539238dd1dcda0dfa7c150379d899ff96ee53ce`, core `9e4cd41d567ca95c69447532897bdbab1cffe260`. Finance dapat mencatat bounded non-stock credit memo yang mereferensikan posted unpaid supplier invoice; supplier credit number unik dan pending memo mereservasi outstanding.
+- Owner berbeda memposting credit dan mengurangi open payable menjadi partially credited atau closed by credit. Tidak ada stock, HPP acquisition, receipt, PO, supplier payment, bank transfer atau external mutation.
+- State v13, exact replay, version/role guards, aggregate reconciliation dan PostgreSQL rollback/restart tervalidasi. Finance/Admin surface serta Owner Dashboard menampilkan status secara least-privilege dan jujur.
+- PASS focused49/full364/check177/OpenAPI3.1/migrations12, mobile390 Axe0/overflow0/touch44/page-error0, dependency0/public-safety0. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Return/replacement, correction/reversal/resubmit, actual inputs, offsite restore, device UAT dan Wave 9 masih terbuka.
+
 ## 2026-09-07 — SagaWork manual Workspace create recovery
 
 - `CONFIRMED`; application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c`. Manual Workspace create is a bounded one-shot mutation with exact success validation. An uncertain result closes form context, locks all Settings writes until reload and never claims late success.

@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Supplier price credit memo
+
+- `CONFIRMED`; source `f539238dd1dcda0dfa7c150379d899ff96ee53ce` (core `9e4cd41d567ca95c69447532897bdbab1cffe260`) menambah Finance-authored dan Owner-posted non-stock credit terhadap posted unpaid supplier invoice.
+- Pending credit mereservasi outstanding; posting mengurangi payable dan tidak mengubah stock/HPP/receipt/PO atau membuat payment.
+- State v13, unique supplier credit number, exact replay, role/version guards, aggregate restore validation dan PostgreSQL rollback/restart fail-closed. Browser role boundary, Axe, overflow, touch target serta no-stock/no-payment assertion lulus.
+- PASS focused49/full364/check177/OpenAPI3.1/migrations12/dependency0/public-safety0. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan readiness sekitar 60/100 tidak berubah. Return/replacement, correction/reversal/resubmit, actual inputs, offsite restore dan UAT masih terbuka.
+
 ## 2026-09-07 — Invoice approval dan open-payable posting
 
 - `CONFIRMED`; source `887095ef2d72b9de025112ff4bc76b985636828c` (core `e4b99a181956d14f9881c929b0f01fe7f8727582`) menambah Finance review, maker-checker guard, Owner posting dan AP outstanding projection.

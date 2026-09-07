@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Supplier price credit memo
+
+- `CONFIRMED`; exact source head `f539238dd1dcda0dfa7c150379d899ff96ee53ce`, core `9e4cd41d567ca95c69447532897bdbab1cffe260`. Finance dapat mencatat credit memo non-stok terhadap invoice supplier `POSTED_UNPAID`; nomor dokumen unik per supplier dan pending credit mereservasi outstanding.
+- Owner berbeda memposting koreksi. Posting mengurangi open payable menjadi partial atau closed-by-credit tanpa mengubah stock, HPP pembelian, receipt, PO atau payment.
+- State v13, exact idempotency, version guard, aggregate credit reconciliation, PostgreSQL rollback/restart dan Finance/Admin role isolation tervalidasi. Dashboard merangkum pending/posted credit dan outstanding tanpa mengklaim settlement bank.
+- PASS focused49/49, full364/364, check177/OpenAPI3.1/migrations12, mobile390 Axe0/overflow0/touch44/page-error0, dependency0 dan public-safety scan0. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+- Next: stock return/replacement; correction/reversal/resubmit; modifier/packaging/prep cost-consumption. Data nyata, offsite restore, device UAT dan Wave 9 tetap `NEEDS CONFIRMATION`.
+
 ## 2026-09-07 — Independent invoice approval dan AP posting
 
 - `CONFIRMED`; exact source head `887095ef2d72b9de025112ff4bc76b985636828c`, core `e4b99a181956d14f9881c929b0f01fe7f8727582`. Invoice `READY_FOR_APPROVAL` kini ditinjau melalui surface Finance least-privilege; pembuat invoice yang sama tidak dapat menjadi reviewer.
