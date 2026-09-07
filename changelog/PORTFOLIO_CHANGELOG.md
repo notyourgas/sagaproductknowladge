@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaWork manual Workspace create recovery
+
+`CONFIRMED`; application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c`. The non-Maps Workspace fallback now fails safely through bounded one-shot transport, exact 201/ID/status validation and reload-only full Settings recovery after an uncertain result. Focused46/full1010 plus Linux/MySQL/full HTTP/Chromium passed with one POST/audit, exact null-coordinate persistence, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.
+
 ## 2026-09-07 — SagaWork Workspace update/delete recovery
 
 `CONFIRMED`; application/native harness `d444ac3894f43848aa971b72438de833836449e0`, evidence `7fbf2abc65e313e005f3b1990eecd1486493b18c`. HR Workspace update/delete now fails safely through bounded one-shot transport, exact success validation and reload-only full Settings recovery after an uncertain result. Focused38/full1002 plus Linux/MySQL/full HTTP/Chromium passed with one request/audit each, persisted update/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.

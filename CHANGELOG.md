@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork manual Workspace create recovery sync
+
+- `CONFIRMED`: application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c` adds bounded one-shot manual Workspace create, strict success validation and reload-only full Settings recovery after uncertain results.
+- Reason: prevent duplicate Workspace creation or false success when the fallback form response is lost.
+- Area/file: SagaWork Settings Workspace fallback UX, client mutation guard, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
+- PASS focused46/full1010, Linux/MySQL/full HTTP/compiled Chromium, exactly one POST/audit, exact null-coordinate persistence, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
+
 ## 2026-09-07 — SagaWork Workspace update/delete recovery sync
 
 - `CONFIRMED`: application/native harness `d444ac3894f43848aa971b72438de833836449e0`, evidence `7fbf2abc65e313e005f3b1990eecd1486493b18c` adds bounded one-shot Workspace update/delete, strict success validation and reload-only full Settings recovery after uncertain results.

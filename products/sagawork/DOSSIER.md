@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Manual Workspace create lost-response recovery
+
+- `CONFIRMED`; application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c`. Manual fallback create is one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and strict 201/ID/status validation. Safe expected 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.
+- Uncertainty closes local form context and locks all Settings writes until reload; confirmed create plus failed refresh stays confirmed. Focused46/full1010, lint/types/audit/contracts, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed with one audit, exact null-coordinate draft persistence and invariance.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. API/domain/schema/grant/POS/shared runtime unchanged. Public `711ef77` remains active/HTTP200; joint-native/offsite restore/config rollback/owner-device-finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Workspace update/delete lost-response recovery
 
 - `CONFIRMED`; application/native harness `d444ac3894f43848aa971b72438de833836449e0`, evidence `7fbf2abc65e313e005f3b1990eecd1486493b18c`. Workspace update/delete are one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and strict target/submitted-value or bodyless-204 validation. Safe expected 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.

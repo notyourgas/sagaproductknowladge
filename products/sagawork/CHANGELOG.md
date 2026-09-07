@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Manual Workspace create recovery
+
+- `CONFIRMED`; application/native harness `91093e0fbb494914c99c87829eef2b915dc2a34f`, evidence `a2b7fb326820825e4dc1a3d9d0f82d221a5ae70c`.
+- The manual non-Maps Workspace form now uses one bounded POST, exact 201/ID/status validation, safe expected-4xx handling and reload-only full Settings write recovery after an uncertain outcome.
+- Focused46/full1010 plus Linux/MySQL/full HTTP/Chromium passed with a genuine held create201, one POST/audit, exact null-coordinate persistence, invariance and mobile/Axe/device guards.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.
+
 ## 2026-09-07 — Workspace update/delete recovery
 
 - `CONFIRMED`; application/native harness `d444ac3894f43848aa971b72438de833836449e0`, evidence `7fbf2abc65e313e005f3b1990eecd1486493b18c`.
