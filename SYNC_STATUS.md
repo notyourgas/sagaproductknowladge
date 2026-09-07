@@ -1,11 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-08 — SagaPOS Owner-to-HR authenticated production UAT
+
+- Status `accepted`; classification `CONFIRMED`; authenticated official-domain UAT membuktikan satu login Owner, `/hr` tanpa login kedua, delegated read-only People, logout revocation dan nol transaksi.
+- Nginx production aktif membatasi pengecualian `/hr` dan `/api/hr/{state,command}` ke `dashboard.sagapos.site`; anonymous tetap ditahan dan jalur HR/Staff lama tetap deny/redirect sesuai boundary.
+- SagaPOS runtime tetap source `614be99927802e329705f5c7575dd6813a83bac6`; source durability `e5f669d6c3e3416ee2ae53e78aa136c84d06eeec` dipush terpisah dan lulus full394 serta dependency audit0, tetapi tidak diklaim sebagai runtime release baru.
+- Feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_UAT_PASS`; workforce data masih sintetis, sehingga `BUSINESS_READY=false`. Payment/QRIS, payroll payout, messaging, hardware dan independent offsite recovery tetap OFF/belum selesai.
+
 ## 2026-09-07 — SagaPOS Owner-to-HR tanpa login kedua
 
 - Status `accepted`; classification `CONFIRMED`; SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` pushed/active dan SagaWork provider source `0b10496aba9f2bc620902181f0fb971285b10725` active.
 - Synced: same Owner session untuk `/hr`, server-only short-lived delegation, exact identity binding, HMAC/nonce, per-command authorization, revocation dan anonymous denial.
 - Evidence full394/full1085, type/lint/build/OpenAPI, audit0, encrypted backup/disposable restore, release manifest, live delegated read/revoke, monitor, rollback/reactivation dan 0 order/payment.
-- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data workforce synthetic, browser Owner acceptance dan independent offsite recovery pending. `BUSINESS_READY=false`; payment/QRIS, payroll payout, messaging dan hardware OFF.
+- Delivery saat sinkronisasi ini `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data workforce synthetic dan independent offsite recovery pending. Browser Owner acceptance yang saat itu pending ditutup oleh UAT 2026-09-08. `BUSINESS_READY=false`; payment/QRIS, payroll payout, messaging dan hardware OFF.
 
 ## 2026-09-07 — SagaOPS Owner-only production pilot
 

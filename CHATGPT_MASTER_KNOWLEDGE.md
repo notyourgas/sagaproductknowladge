@@ -1,11 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-08 — Owner-to-HR official-domain UAT PASS
+
+- `CONFIRMED`: [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/) dan [HR Owner](https://dashboard.sagapos.site/hr) telah melewati authenticated production UAT dengan satu login Owner; tidak ada login SagaWork kedua.
+- UAT membuktikan HR state terintegrasi, delegated read-only People, logout/revocation dan nol transaksi. Anonymous access tetap ditahan; route HR Owner hanya dibuka pada host Dashboard.
+- Runtime aplikasi aktif tetap exact source `614be99927802e329705f5c7575dd6813a83bac6`. Source durability ingress/smoke `e5f669d6c3e3416ee2ae53e78aa136c84d06eeec` sudah dipush dan lulus full394/audit0, tetapi bukan runtime release baru.
+- Feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_UAT_PASS`. Provider workforce masih sintetis; `BUSINESS_READY=false`, real payroll/payout, payment/QRIS, messaging, hardware dan independent offsite recovery tetap belum aktif.
+
 ## 2026-09-07 — Owner SagaPOS memakai HR tanpa login kedua
 
 - `CONFIRMED`; [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/) production menjalankan source `614be99927802e329705f5c7575dd6813a83bac6`; halaman `/hr` memakai sesi Owner SagaPOS yang sama melalui delegasi server-side ke provider SagaWork source `0b10496aba9f2bc620902181f0fb971285b10725`.
 - Jangan meminta Owner login HR/SagaWork kedua. Jika sesi Owner tidak ada atau berakhir, arahkan kembali ke login Owner SagaPOS.
 - Security boundary: exact Owner/organization/client mapping, HMAC plus nonce, short-lived server-only token, per-command authorization refresh, encrypted bridge storage, logout revocation dan anonymous denial.
-- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, tetapi data workforce saat ini sintetis dan browser Owner acceptance belum selesai. `BUSINESS_READY=false`; payment/QRIS, payroll payout, messaging, NFC dan printer tetap OFF.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data workforce saat ini sintetis. Browser Owner acceptance sudah lulus pada 2026-09-08. `BUSINESS_READY=false`; payment/QRIS, payroll payout, messaging, NFC dan printer tetap OFF.
 
 ## 2026-09-07 — SAGA Member R0 Owner-only di domain asli
 

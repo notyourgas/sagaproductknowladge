@@ -1,8 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-08 — SagaPOS Owner-to-HR production UAT PASS
+
+`CONFIRMED`; Andreas menyelesaikan authenticated UAT pada domain resmi: satu login Owner membuka HR tanpa login kedua, delegated read-only People dan logout/revocation lulus, anonymous tetap ditahan, serta nol transaksi dibuat. Runtime tetap `614be99927802e329705f5c7575dd6813a83bac6`; ingress aktif dibatasi ke host Dashboard dan durability source `e5f669d6c3e3416ee2ae53e78aa136c84d06eeec` sudah dipush dengan full394/audit0 PASS tanpa klaim redeploy aplikasi baru. Feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_UAT_PASS`; workforce data sintetis dan gate operasional lain mempertahankan `BUSINESS_READY=false`.
+
 ## 2026-09-07 — Satu sesi Owner untuk SagaPOS dan HR
 
-`CONFIRMED`; SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` dan SagaWork provider source `0b10496aba9f2bc620902181f0fb971285b10725` mengaktifkan `/hr` pada Owner Dashboard production tanpa login SagaWork kedua. Delegasi server-side memakai exact identity binding, HMAC/nonce, short-lived token, command-time authorization dan revocation. Full394/full1085, audit0, backup/disposable restore, delegated read/revoke, monitor serta rollback/reactivation lulus; 0 order/payment dibuat. Feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, tetapi workforce dataset masih sintetis, browser Owner acceptance dan offsite recovery belum selesai, sehingga `BUSINESS_READY=false`; payment, payroll payout, messaging dan hardware tetap OFF.
+`CONFIRMED`; SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` dan SagaWork provider source `0b10496aba9f2bc620902181f0fb971285b10725` mengaktifkan `/hr` pada Owner Dashboard production tanpa login SagaWork kedua. Delegasi server-side memakai exact identity binding, HMAC/nonce, short-lived token, command-time authorization dan revocation. Full394/full1085, audit0, backup/disposable restore, delegated read/revoke, monitor serta rollback/reactivation lulus; 0 order/payment dibuat. Feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; workforce dataset masih sintetis dan offsite recovery belum selesai. Browser Owner acceptance yang saat itu residual ditutup pada 2026-09-08. `BUSINESS_READY=false`; payment, payroll payout, messaging dan hardware tetap OFF.
 
 ## 2026-09-07 — SagaOPS Owner-only production pilot aktif
 

@@ -1,12 +1,18 @@
 # SagaWork Dossier
 
+## 2026-09-08 — SagaPOS Owner UAT terhadap provider lulus
+
+`CONFIRMED`: official-domain UAT mengakses HR dari satu sesi Owner SagaPOS, membuktikan integrated state dan read-only People, lalu mencabut delegated grant ketika logout. Browser tidak menerima credential atau token SagaWork dan tidak diminta login kedua; tidak ada mutasi HR maupun transaksi.
+
+Provider production integration tetap source `0b10496aba9f2bc620902181f0fb971285b10725`. Browser Owner acceptance yang sebelumnya residual kini selesai untuk single-session delegation, tetapi dataset aktif masih sintetis. Real employee import/onboarding, payroll policy, finance/payout acceptance, offsite recovery dan device/hardware UAT tetap residual; `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaPOS Owner delegation provider
 
 `CONFIRMED` dari source `0b10496aba9f2bc620902181f0fb971285b10725`. Provider menambahkan signed `owner-token` exchange yang hanya menerima configured SagaPOS Owner identity. Delegasi membuat parent auth session berumur sekitar 31 menit dan bridge grant paling lama 30 menit, tanpa cookie atau access token SagaWork di browser.
 
 Membership/organization harus aktif; identity, permissions dan scopes diperiksa ulang pada introspection dan setiap command. Konfigurasi exact-key, client binding dan nonce replay protection fail closed; grant dicabut saat logout. Production acceptance berhasil melakukan delegated read dan revoke tanpa menampilkan PII atau mengubah data HR.
 
-Full1085, focused70, type/lint/build/OpenAPI, audit high0, encrypted backup/disposable restore, manifest dan health lulus. Runtime provider tetap `dataMode=synthetic`; real employee onboarding, payroll/payout, browser Owner acceptance dan independent offsite recovery belum selesai. `BUSINESS_READY=false`.
+Full1085, focused70, type/lint/build/OpenAPI, audit high0, encrypted backup/disposable restore, manifest dan health lulus. Browser Owner acceptance sudah lulus pada 2026-09-08. Runtime provider tetap `dataMode=synthetic`; real employee onboarding, payroll/payout dan independent offsite recovery belum selesai. `BUSINESS_READY=false`.
 
 ## 2026-09-07 — Schedule publish lost-response recovery
 

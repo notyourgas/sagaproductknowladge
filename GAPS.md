@@ -1,10 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-08 — Owner-to-HR authenticated production UAT selesai
+
+- `CONFIRMED`: authenticated UAT pada domain resmi lulus: satu login Owner membuka `/hr`, delegated read-only People berhasil, logout mencabut sesi, dan tidak ada transaksi yang dibuat. Nginx production mengizinkan hanya surface HR Owner pada host Dashboard dan tetap menahan jalur HR/Staff lama.
+- `CONFIRMED`: source durability `e5f669d6c3e3416ee2ae53e78aa136c84d06eeec` sudah dipush dengan renderer Nginx dan smoke Owner-HR; runtime aplikasi aktif tetap exact source `614be99927802e329705f5c7575dd6813a83bac6` karena tidak diperlukan redeploy aplikasi untuk konfigurasi ingress yang sudah aktif.
+- `NEEDS CONFIRMATION`: provider workforce masih memakai data sintetis; real employee onboarding/import, policy payroll, finance acceptance, payout, hardware/device UAT, independent offsite recovery dan monitoring jangka panjang tetap terbuka. `BUSINESS_READY=false`.
+
 ## 2026-09-07 — Residual setelah Owner-to-HR single login production
 
 - `CONFIRMED`: SagaPOS `/hr` aktif memakai satu sesi Owner dan delegated server-side SagaWork access; anonymous denial, delegated read/revoke, encrypted backup/disposable restore, monitor dan rollback/reactivation lulus.
 - `NEEDS CONFIRMATION`: workforce provider masih berisi data sintetis. Real employee import/onboarding, kebijakan payroll, finance acceptance dan payout tidak boleh dianggap aktif.
-- `NEEDS CONFIRMATION`: browser Owner UAT pada domain resmi tertahan karena vault credential pada sesi automation terkunci; Andreas perlu membuka akses domain dan login Owner untuk acceptance tampilan/alur.
+- `DEPRECATED` oleh acceptance 2026-09-08: browser Owner UAT pada domain resmi sudah lulus; blocker vault ini telah ditutup.
 - `NEEDS CONFIRMATION`: independent offsite restore, device/hardware UAT dan monitoring jangka panjang tetap terbuka. `BUSINESS_READY=false`.
 
 ## 2026-09-07 — SagaOPS residual setelah Owner-only production pilot

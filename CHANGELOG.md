@@ -1,12 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-08 — SagaPOS Owner-to-HR production UAT PASS sync
+
+- `CONFIRMED`: Andreas menyelesaikan authenticated UAT pada domain resmi; satu sesi Owner membuka HR, menjalankan read-only People, lalu logout/revocation berhasil tanpa membuat transaksi.
+- Alasan: browser Owner acceptance yang sebelumnya residual sudah tertutup dan aturan ingress telah disimpan ke source deployment.
+- Area/file: SagaOPS dan SagaWork product/dossier/changelog, portfolio/master, gaps dan sync. Tidak ada credential, PII, private identifier atau raw receipt.
+- Active runtime tetap `614be99927802e329705f5c7575dd6813a83bac6`; durability source `e5f669d6c3e3416ee2ae53e78aa136c84d06eeec` pushed, full394 dan audit0 PASS, tanpa klaim redeploy aplikasi baru.
+- Delivery feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_UAT_PASS`; data HR sintetis dan gate operasional lain menahan `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaPOS Owner-to-HR single-login sync
 
 - `CONFIRMED`: SagaPOS `614be99927802e329705f5c7575dd6813a83bac6` dan SagaWork provider `0b10496aba9f2bc620902181f0fb971285b10725` mengaktifkan HR dari sesi Owner production tanpa login HR kedua.
 - Alasan: workflow Owner, permission, provider integration dan production activation berubah material.
 - Area/file: SagaOPS dan SagaWork product/dossier/changelog, portfolio/master, decisions, gaps dan sync. Tidak ada secret, PII, private identifier, raw callback atau credential.
 - PASS full394/full1085, type/lint/build/OpenAPI, audit0, encrypted backup/disposable restore, end-to-end delegated read/revoke, health/monitor dan rollback/reactivation; 0 order/payment.
-- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; synthetic workforce data, browser Owner acceptance dan offsite recovery masih terbuka. `BUSINESS_READY=false`; payment/payroll payout/hardware OFF.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; synthetic workforce data dan offsite recovery masih terbuka. Browser Owner acceptance yang saat itu residual ditutup pada 2026-09-08. `BUSINESS_READY=false`; payment/payroll payout/hardware OFF.
 
 ## 2026-09-07 — SagaOPS Owner-only production pilot sync
 

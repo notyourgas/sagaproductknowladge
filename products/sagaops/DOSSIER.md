@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-08 — Authenticated Owner-HR production acceptance
+
+`CONFIRMED`: UAT dari domain resmi membuktikan satu sesi Owner membuka `/hr`, menerima HR state terintegrasi, menjalankan satu read-only People request, lalu logout dan revocation berhasil. Tidak ada login SagaWork kedua, tidak ada transaksi, dan anonymous request tetap ditahan.
+
+Ingress production memberi exception paling sempit untuk `/hr` dan `/api/hr/{state,command}` hanya ketika host adalah `dashboard.sagapos.site`; jalur Staff, HRPOS, gateway dan route HR lain tetap deny/redirect sesuai boundary. Renderer serta authenticated smoke yang mengunci perilaku ini tersimpan pada source durability `e5f669d6c3e3416ee2ae53e78aa136c84d06eeec`, pushed dan lulus full394/audit0.
+
+Runtime aplikasi aktif tidak berubah dari `614be99927802e329705f5c7575dd6813a83bac6`; source durability bukan klaim redeploy release aplikasi. Feature sekarang `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_UAT_PASS`, tetapi provider masih sintetis dan offsite recovery, device/hardware, real payroll/payout, payment/QRIS serta finance acceptance tetap residual. `BUSINESS_READY=false`.
+
 ## 2026-09-07 — Production Owner-session delegation ke HR
 
 `CONFIRMED` dari SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` dan SagaWork provider source `0b10496aba9f2bc620902181f0fb971285b10725`. Release SagaPOS aktif di domain resmi dengan `authMode=OWNER_HASH_HRPOS_SSO`; Owner membuka `/hr` dari dashboard menggunakan cookie/session Owner yang sudah ada, tanpa login SagaWork kedua.
@@ -8,7 +16,7 @@ Delegasi terjadi server-to-server: binding exact Owner dan organisasi, signed re
 
 Evidence: SagaPOS full394 dan audit0; SagaWork full1085, type/lint/build/OpenAPI dan audit0; encrypted backup/disposable restore kedua runtime; exact release manifest provider; production monitor; end-to-end delegation, introspection, read-only People request dan revoke; serta rollback ke release sebelumnya lalu reactivation. Order, payment intent dan payment tetap nol selama acceptance.
 
-Delivery `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Data workforce aktif masih `synthetic`, independent offsite recovery belum tervalidasi, dan browser Owner UAT tertahan karena credential vault pada sesi automation terkunci. Karena itu `BUSINESS_READY=false`; payroll payout, payment/QRIS, messaging, NFC dan printer tetap OFF.
+Delivery `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Browser Owner UAT sudah lulus pada 2026-09-08. Data workforce aktif masih `synthetic` dan independent offsite recovery belum tervalidasi. Karena itu `BUSINESS_READY=false`; payroll payout, payment/QRIS, messaging, NFC dan printer tetap OFF.
 
 ## 2026-09-07 — Owner-only production pilot on sagapos.site
 

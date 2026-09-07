@@ -1,11 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-09-08 — Owner-HR authenticated production UAT PASS
+
+- `CONFIRMED`; satu login Owner pada domain resmi membuka `/hr`, delegated read-only People berhasil, logout/revocation lulus dan nol transaksi dibuat.
+- Nginx exception dibatasi ke HR state/command pada host Dashboard; anonymous dan legacy provider routes tetap ditahan.
+- Runtime tetap `614be99927802e329705f5c7575dd6813a83bac6`; source durability `e5f669d6c3e3416ee2ae53e78aa136c84d06eeec` pushed, full394/audit0 PASS, tidak diklaim sebagai runtime release baru.
+- Feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_UAT_PASS`; synthetic workforce dan residual operasional mempertahankan `BUSINESS_READY=false`.
+
 ## 2026-09-07 — Owner membuka HR tanpa login kedua
 
 - `CONFIRMED`; source `614be99927802e329705f5c7575dd6813a83bac6` aktif pada SagaPOS production.
 - `/hr` kini memakai sesi Owner SagaPOS dan short-lived server-side SagaWork delegation. Tidak ada form/password HR kedua di browser; anonymous API tetap `401`.
 - PASS full394/full1085, build/type/lint/OpenAPI, audit0, encrypted backup/disposable restore, delegated read plus revoke, monitor dan rollback/reactivation. Order/payment tetap nol.
-- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data HR masih sintetis, browser Owner acceptance dan offsite recovery belum selesai, sehingga `BUSINESS_READY=false`. Payment/payroll payout/hardware tetap OFF.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; data HR masih sintetis dan offsite recovery belum selesai. Browser Owner acceptance ditutup pada 2026-09-08. `BUSINESS_READY=false`; payment/payroll payout/hardware tetap OFF.
 
 ## 2026-09-07 — Owner-only production pilot aktif pada domain resmi
 

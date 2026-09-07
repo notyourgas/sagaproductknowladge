@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-08 — Provider delegation lulus Owner production UAT
+
+- `CONFIRMED`; authenticated UAT melalui SagaPOS Owner Dashboard berhasil memakai provider SagaWork tanpa login HR kedua. HR state, read-only People dan logout/revocation lulus melalui sesi Owner yang sama.
+- Browser tetap tidak menerima credential/token SagaWork; provider hanya diakses melalui delegasi server-side dan command-time authorization. UAT tidak mengubah data HR atau membuat transaksi.
+- Provider aktif tetap source `0b10496aba9f2bc620902181f0fb971285b10725` dengan dataset sintetis. Feature integration `PRODUCTION_ACTIVATED / OWNER_UAT_PASS`, tetapi real employee onboarding/import, payroll/payout dan `BUSINESS_READY` tetap belum aktif.
+
 ## 2026-09-07 — Delegasi Owner SagaPOS tanpa login HR kedua
 
 - `CONFIRMED`; provider source `0b10496aba9f2bc620902181f0fb971285b10725` aktif untuk integrasi production SagaPOS. Endpoint Owner delegation menerbitkan sesi server-side pendek hanya setelah exact client, Owner, organization, signature, timestamp dan nonce lolos.

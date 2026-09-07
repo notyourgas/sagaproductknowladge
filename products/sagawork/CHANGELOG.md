@@ -1,5 +1,11 @@
 # SagaWork Changelog
 
+## 2026-09-08 — Owner production UAT untuk delegated HR PASS
+
+- `CONFIRMED`; SagaPOS Owner official-domain UAT memakai provider tanpa login HR kedua, dengan integrated state, read-only People dan logout revocation PASS.
+- Browser tidak menerima SagaWork credential/token, tidak ada mutasi HR dan tidak ada transaksi.
+- Provider aktif tetap `0b10496aba9f2bc620902181f0fb971285b10725` dengan data sintetis. Integration `PRODUCTION_ACTIVATED / OWNER_UAT_PASS`; real workforce/payroll/payout dan `BUSINESS_READY` tetap false.
+
 ## 2026-09-07 — Owner-session delegation untuk SagaPOS production
 
 - `CONFIRMED`; provider source `0b10496aba9f2bc620902181f0fb971285b10725` menambahkan HMAC/nonce-protected Owner token exchange dengan exact identity mapping dan short-lived server-side session.
