@@ -1,5 +1,12 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Schedule publish lost-response recovery
+
+- `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`. A publish confirmation can issue at most one POST and shares a 12-second fetch/body deadline. Success requires exact schedule identity, published state and coherent positive version counters; known 4xx uses mapped public-safe copy.
+- Network/timeout/abort/redirect/5xx/unexpected/malformed/mismatch becomes mutation-uncertain. The UI shows no false success and locks roster, swap and template writes until full reload; confirmed publish remains confirmed if refresh fails. Named focusable scroll regions close the accessibility defect found by native Axe.
+- Focused12/full1055, lint/types/build/contracts and release/security guards passed. Linux/MySQL/full HTTP/Chromium proved one publish, one event/audit, publication1/version2, unchanged notices, full write lock, reload recovery, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. API/schema/grants/POS/shared runtime unchanged; public `711ef77` remains HTTP200. Joint exact-pair, encrypted offsite restore, config/rollback and owner/device/finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Organization self-lockout prevention
 
 - `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`. Authorization filters organization status to active. Therefore authenticated Settings no longer renders tenant lifecycle mutations that could invalidate every session without an in-app recovery principal; provisioning and recovery remain separate operator procedures.

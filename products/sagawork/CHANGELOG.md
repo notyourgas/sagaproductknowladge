@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Schedule publish recovery
+
+- `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final native harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`.
+- HR schedule publish now fails safely through one bounded request, exact response validation and reload-only recovery. Uncertainty locks roster, swap and template writes. Keyboard-focusable schedule/template scroll regions close the native Axe finding.
+- Focused12/full1055 plus Linux/MySQL/full HTTP/Chromium passed with one publish/event/audit, exact versions, unchanged notices, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.
+
 ## 2026-09-07 — Organization self-lockout prevention
 
 - `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`.

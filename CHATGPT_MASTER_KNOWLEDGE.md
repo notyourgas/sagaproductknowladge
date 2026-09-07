@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaWork schedule publish recovery
+
+- `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final native harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`. Penerbitan draft shift oleh HR sekarang one-shot dan bounded dengan validasi identitas/status/versi exact serta safe known-4xx copy.
+- Outcome uncertain tidak menampilkan sukses dan mengunci pembuatan/penerbitan roster, review swap, serta write Shift Template sampai reload. Native Axe menemukan lalu memvalidasi perbaikan akses keyboard untuk tabel roster/template yang scrollable.
+- Focused12/full1055 plus Linux/MySQL/full HTTP/Chromium PASS dengan satu publish/event/audit, publication1/version2, notices tidak berubah, mobile390/Axe dan unexpected mutation/device/page error nol.
+- Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Public `711ef77` tetap HTTP200; POS/shared runtime tidak berubah. Fresh exact-pair SagaPOS joint-native, encrypted offsite restore, config/rollback dan owner/device/finance masih terbuka. Performance dan real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS posted credit reversal
 
 - `CONFIRMED`; exact source `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a`. Posted supplier credit kini dikoreksi melalui Finance request dan keputusan Owner terpisah, bukan edit/delete dokumen asal.

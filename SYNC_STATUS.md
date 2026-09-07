@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaWork schedule publish recovery
+
+- Status `accepted`; classification `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`.
+- Synced: one-shot bounded schedule publish, exact response/version validation, reload-only roster/swap/template write lock, and keyboard-focusable scroll regions.
+- Evidence focused12/full1055, Linux/MySQL/full HTTP/Chromium, one publish/event/audit, exact versions, notices unchanged, mobile390/Axe and zero unexpected mutation/device/page errors.
+- Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; public `711ef77` HTTP200 unchanged. Joint exact-pair, encrypted offsite restore, config/rollback and owner/device/finance remain; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS supplier-credit reversal
 
 - Status `accepted`; classification `CONFIRMED`; exact source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a`, Saga POS branch pushed and clean.

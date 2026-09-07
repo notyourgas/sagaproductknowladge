@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork schedule publish recovery sync
+
+- `CONFIRMED`: application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`.
+- HR publish shift kini one-shot/bounded dan fail-closed; hasil uncertain mengunci roster/swap/template writes sampai reload. Native Axe menemukan dan memvalidasi perbaikan fokus keyboard pada region tabel scrollable.
+- Focused12/full1055 plus Linux/MySQL/full HTTP/Chromium PASS; one publish/event/audit, exact versions, notices unchanged, mobile/Axe/device/mutation/page-error guards PASS.
+- Delivery `IMPLEMENTED_NOT_DEPLOYED`; public release, POS/shared runtime, pricing dan business readiness tidak berubah. Joint exact-pair, encrypted offsite restore, rollback/config dan owner/device/finance tetap blocker.
+
 ## 2026-09-07 — SagaOPS posted supplier-credit reversal sync
 
 - `CONFIRMED`: exact source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a` menambah immutable Finance request → separate Owner decision untuk reversal credit supplier posted.

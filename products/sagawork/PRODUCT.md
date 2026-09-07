@@ -1,5 +1,12 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Schedule publish uncertainty recovery
+
+- `CONFIRMED`; application `de5885b2154fc4f1fbabcb8407978e19bfb2bd0c`, final native harness `4cb19a5f036b2cbfd899303dbe4a5baacf4d51da`, evidence `26068f1e0a9039ae104497c9f6dfa31d759c8e82`. HR draft-to-publish is now one-shot and bounded with exact identity/version validation, safe known-4xx copy, and reload-only recovery after an uncertain outcome.
+- Uncertainty locks roster creation/publication, swap review and Shift Template writes. Native acceptance also fixed keyboard access for horizontally scrollable roster/template regions while retaining mobile 390 px and Axe zero.
+- Focused12/full1055 tests in108 files plus Linux/MySQL/full HTTP/compiled Chromium passed with one publish/event/audit, correct versions, unchanged notices and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` stays active/HTTP200. Fresh exact-pair SagaPOS joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Organization self-lockout prevention
 
 - `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`. Settings no longer exposes organization activate/suspend/archive actions because authorization admits only active organizations and self-suspension had no in-app recovery principal. Lifecycle copy points to separate provisioning/operator recovery.
