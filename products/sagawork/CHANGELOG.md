@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Workspace update/delete recovery
+
+- `CONFIRMED`; application/native harness `d444ac3894f43848aa971b72438de833836449e0`, evidence `7fbf2abc65e313e005f3b1990eecd1486493b18c`.
+- Scoped Workspace update and dependency-free draft deletion are single-request and bounded with exact success validation, safe expected-4xx handling and reload-only full Settings write recovery after uncertain outcomes.
+- Focused38/full1002 plus Linux/MySQL/full HTTP/Chromium passed with genuine held/lost successful responses, one request/audit each, exact update/draft deletion, invariance and mobile/Axe/device guards.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.
+
 ## 2026-09-07 — Attendance-policy lifecycle recovery
 
 - `CONFIRMED`; application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350`.

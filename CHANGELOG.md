@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork Workspace update/delete recovery sync
+
+- `CONFIRMED`: application/native harness `d444ac3894f43848aa971b72438de833836449e0`, evidence `7fbf2abc65e313e005f3b1990eecd1486493b18c` adds bounded one-shot Workspace update/delete, strict success validation and reload-only full Settings recovery after uncertain results.
+- Reason: prevent duplicate Workspace changes/deletions or false success when a mutation response is lost.
+- Area/file: SagaWork Settings Workspace UX, client mutation guard, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
+- PASS focused38/full1002, Linux/MySQL/full HTTP/compiled Chromium, exactly one audit per action, exact update/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
+
 ## 2026-09-07 — SagaWork attendance-policy lifecycle recovery sync
 
 - `CONFIRMED`: application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350` adds bounded one-shot policy create/activate/delete, strict success validation and reload-only full Settings recovery after uncertain results.

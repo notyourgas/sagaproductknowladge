@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaWork Workspace update/delete recovery
+
+`CONFIRMED`; application/native harness `d444ac3894f43848aa971b72438de833836449e0`, evidence `7fbf2abc65e313e005f3b1990eecd1486493b18c`. HR Workspace update/delete now fails safely through bounded one-shot transport, exact success validation and reload-only full Settings recovery after an uncertain result. Focused38/full1002 plus Linux/MySQL/full HTTP/Chromium passed with one request/audit each, persisted update/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.
+
 ## 2026-09-07 — SagaWork attendance-policy lifecycle recovery
 
 `CONFIRMED`; application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350`. HR policy create/activate/delete now fails safely through bounded one-shot transport, exact success validation and reload-only full Settings recovery after an uncertain result. Focused34/full971 plus Linux/MySQL/full HTTP/Chromium passed with one request/audit each, persisted active retirement/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.
