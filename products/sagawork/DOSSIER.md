@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Google Maps Workspace create lost-response recovery
+
+- `CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`. Pin resolve is one bounded read-only request. Workspace create is one bounded POST with exact HTTP201/ID/status validation; safe expected 4xx is definite while network/timeout/abort/redirect/5xx/unexpected/malformed/mismatched outcomes are uncertain.
+- Create uncertainty clears local pin/device state, renders no success and locks every Settings write until reload; resolve failure remains retryable. Focused37/full942, lint/types/production-audit/contracts/build/release checks and exact-source Linux/MySQL/full HTTP/Chromium passed. Native proves one persisted Workspace/audit, invariance, mobile390/Axe and zero device/unexpected-write/page errors; two exposed accessibility/layout defects were fixed without weakening assertions.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. API/domain/schema/grant/POS/shared runtime unchanged. Public `711ef77` remains active/HTTP200; joint-native/offsite restore/config rollback/owner-device-finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff Workspace-assignment lost-response recovery
 
 - `CONFIRMED`; application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source/harness `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`. Create/end effective-dated assignment are one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and exact HTTP/ID/status/date validation. Expected allowlisted 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.

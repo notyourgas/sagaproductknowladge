@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaWork Google Maps Workspace create recovery
+
+- `CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`. HR Google Maps pin resolve is bounded and retryable; Workspace create is one-shot with exact success validation. An uncertain create clears local state, locks all Settings writes until reload and never claims late success.
+- PASS focused37/full942, lint/types/production-audit/contracts/build/release checks and exact-source Linux/MySQL/full HTTP/compiled Chromium. Native proves one resolve/create, one Workspace/audit, persistence/invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Acceptance-discovered mobile overflow and keyboard-table defects are fixed without weakening checks.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200; POS/shared runtime unchanged. Fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS receiving discrepancy dan landed fees
 
 - `CONFIRMED`; exact source `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1`, core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`. Owner Admin dapat mencatat good/rejected quantity dengan alasan bounded serta shipping/handling/other fee ketika menerima PO.

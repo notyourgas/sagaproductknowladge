@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaWork Google Maps Workspace create recovery
+
+`CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`. Google Maps pin resolve/create now fails safely through bounded one-shot transport, exact success validation and reload-only full Settings recovery after uncertain create. Focused37/full942 plus Linux/MySQL/full HTTP/Chromium passed with one Workspace/audit, persistence/invariance, mobile390/Axe and zero unexpected mutation/device/page errors; exposed mobile overflow and keyboard-scroll defects were fixed. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance gates remain.
+
 ## 2026-09-07 — SagaOPS receiving discrepancy dan landed fees
 
 `CONFIRMED`; exact source `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1` (core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`) pushed. SagaOPS kini memisahkan accepted/rejected PO quantity, menyimpan alasan penolakan dan additional fees, serta mengalokasikan fee secara deterministik hanya ke inventory yang diterima. Rejected stock tidak masuk HPP; outstanding backorder tetap eksplisit. Full357/focused51/check175/OpenAPI3.1/migrations12, mobile Axe0/overflow0/touch44/page-error0, dependency0 dan secret0 PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan production, payment serta produk lain tidak berubah. Invoice/AP, supplier credit/replacement, maker-checker, real inputs, offsite restore dan UAT tetap terbuka.

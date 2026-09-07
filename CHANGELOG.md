@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork Google Maps Workspace create recovery sync
+
+- `CONFIRMED`: source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4` adds bounded one-shot Google Maps pin resolve/create, strict success validation and reload-only full Settings recovery after uncertain create.
+- Reason: prevent duplicate Workspace creation or false success when the create response is lost while keeping read-only pin resolution safely retryable.
+- Area/file: SagaWork Settings Workspace UX, client mutation guard, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
+- PASS focused37/full942, Linux/MySQL/full HTTP/compiled Chromium, persisted one Workspace/audit, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
+
 ## 2026-09-07 — SagaOPS receiving discrepancy dan landed-fee sync
 
 - `CONFIRMED`: exact source `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1` (core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`) menambah accepted/rejected PO receiving, alasan penolakan bounded, reject-only receipt dan fee allocation ke accepted inventory HPP.

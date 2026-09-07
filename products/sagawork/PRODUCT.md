@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Google Maps Workspace create lost-response recovery
+
+- `CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`. HR can resolve a pasted Google Maps pin and create one Workspace with bounded one-shot requests, exact success validation and reload-only full Settings write recovery when the create result is uncertain.
+- Focused37/full942 tests in99 files plus Linux/MySQL/full HTTP/compiled Chromium passed with one resolve/create, one Workspace/audit, persisted configuration, unchanged related records, mobile390/Axe and zero unexpected mutation/device/page errors. The acceptance also fixed a real 36 px mobile overflow and keyboard access for Settings tables.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200. POS/shared runtime was not modified; fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Staff Workspace-assignment lost-response recovery
 
 - `CONFIRMED`; application `b23745013cd74a2c40bb6e70986fc2fa116d0d3b`, final source `a1c894bb8803a7bf0e76264663b3d41073681a03`, evidence `0981d695ca72483c6c4ca6426537d27879c5ae63`. HR create/end Workspace assignment now uses one bounded request, exact result validation and reload-only full People write recovery on uncertainty; a confirmed mutation remains confirmed when its following list refresh fails.
