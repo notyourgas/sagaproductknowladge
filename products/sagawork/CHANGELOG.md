@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Organization self-lockout prevention
+
+- `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`.
+- Removed organization activate/suspend/archive controls from authenticated Settings and added honest separate provisioning/operator-recovery guidance, preventing a tenant-wide self-lockout path.
+- Focused51/full1043 plus Linux/MySQL/full HTTP/Chromium passed with no status actions, one profile-only request/audit, persistence/invariance and mobile/Axe/device guards.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.
+
 ## 2026-09-07 — Organization profile recovery
 
 - `CONFIRMED`; application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`.

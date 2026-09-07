@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Organization self-lockout prevention
+
+- `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`. Settings no longer exposes organization activate/suspend/archive actions because authorization admits only active organizations and self-suspension had no in-app recovery principal. Lifecycle copy points to separate provisioning/operator recovery.
+- Focused51/full1043 tests in106 files plus exact-source Linux/MySQL/full HTTP/compiled Chromium passed with no status action, one profile-only request/audit, persistence/invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200. POS/shared runtime was not modified; fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Organization profile lost-response recovery
 
 - `CONFIRMED`; application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`. HR can update organization name, timezone, payroll cycle and Attendance Reliability through one bounded mutation with exact success validation and reload-only full Settings recovery when the result is uncertain.

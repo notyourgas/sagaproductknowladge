@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork organization self-lockout prevention sync
+
+- `CONFIRMED`: application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4` removes authenticated organization status controls and adds separate operator-recovery guidance.
+- Reason: an organization self-suspend invalidates all tenant sessions because authorization only admits active organizations, while no in-app principal can restore the tenant.
+- Area/file: SagaWork Settings lifecycle UX, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
+- PASS focused51/full1043, Linux/MySQL/full HTTP/compiled Chromium, no status actions, one profile-only request/audit, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
+
 ## 2026-09-07 — SagaOPS supplier return-credit sync
 
 - `CONFIRMED`: source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d` links one physical return to one exact-valued supplier credit and one unambiguous posted invoice.

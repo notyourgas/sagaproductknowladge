@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaWork organization self-lockout prevention
+
+- `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`. Authenticated Settings no longer exposes organization activate/suspend/archive actions because authorization only admits active organizations and no in-app recovery principal exists after self-suspension. Lifecycle changes use separate provisioning/operator recovery.
+- PASS focused51/full1043, lint/types/production-audit/contracts/build/release checks and exact-source Linux/MySQL/full HTTP/compiled Chromium. Native proves no status actions, one profile-only request/audit, persistence/invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200; POS/shared runtime unchanged. Fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaOPS supplier return-credit lineage
 
 - `CONFIRMED`; source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`. Finance may link one `CREDIT_EXPECTED` physical return to one exact-valued supplier credit memo only when supplier, PO and a unique posted invoice agree.

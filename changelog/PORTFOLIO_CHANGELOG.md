@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaWork organization self-lockout prevention
+
+`CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`. Authenticated Settings no longer exposes organization lifecycle mutations that could invalidate every tenant session without an in-app recovery principal; copy points to separate provisioning/operator recovery. Focused51/full1043 plus Linux/MySQL/full HTTP/Chromium passed with no status action, one profile-only request/audit, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.
+
 ## 2026-09-07 — SagaOPS supplier return-credit lineage
 
 `CONFIRMED`; source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d` pushed. SagaOPS now links one physical supplier return to one exact-valued credit memo and one unambiguous posted PO invoice. Finance record remains AP/stock/payment-neutral; independent Owner posting reduces payable and closes the return credit state without creating payment. State v15, PostgreSQL rollback/restart, focused24/full371, check180/OpenAPI3.1/migrations12, Chromium390/1440 Axe0/overflow0/touch44/page-error0, dependency0 and public-safety scan passed. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness about 60/100 and production/payment/other products unchanged.

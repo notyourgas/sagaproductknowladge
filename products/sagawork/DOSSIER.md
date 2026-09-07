@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Organization self-lockout prevention
+
+- `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`. Authorization filters organization status to active. Therefore authenticated Settings no longer renders tenant lifecycle mutations that could invalidate every session without an in-app recovery principal; provisioning and recovery remain separate operator procedures.
+- Profile, Workspace and policy controls remain. Focused51/full1043, lint/types/audit/contracts, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed with no status action, one profile-only request/audit and invariance.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. API/domain/schema/grant/POS/shared runtime unchanged. Public `711ef77` remains active/HTTP200; joint-native/offsite restore/config rollback/owner-device-finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Organization profile lost-response recovery
 
 - `CONFIRMED`; application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`. Profile save is one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and strict HTTP200/current-organization/submitted-value validation. Safe expected 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.
