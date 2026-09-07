@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS supplier return-credit sync
+
+- `CONFIRMED`: source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d` links one physical return to one exact-valued supplier credit and one unambiguous posted invoice.
+- Reason: close the gap between inventory movement and AP correction without selecting invoice by guess, auto-posting credit, or fabricating supplier payment.
+- Area/file: SagaOPS HPP state v15, Finance AP, Owner Admin/Dashboard, domain/browser/durable tests and public product knowledge. No secret, PII, raw receipt/callback, private identifier or production mutation.
+- PASS focused24/full371/check180/OpenAPI3.1/migrations12, PostgreSQL rollback/restart, Chromium390/1440 Axe/layout/touch/page-error, dependency and public-safety scan. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness and production unchanged.
+
 ## 2026-09-07 — SagaWork organization profile recovery sync
 
 - `CONFIRMED`: application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664` adds bounded one-shot organization profile update, strict success validation and reload-only full Settings recovery after uncertain results.

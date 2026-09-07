@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Supplier return linked to credit memo
+
+- `CONFIRMED`; source `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`.
+- Finance records one exact-valued supplier credit against one unambiguous PO/invoice/return lineage; Owner posts payable reduction separately. No stock or payment mutation occurs in the financial steps.
+- State v15 restore validation, duplicate/ambiguity/amount guards, PostgreSQL rollback/restart, Finance/Admin UI, dashboard projection, focused24/full371, check180 and browser390/1440 acceptance passed.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production and readiness about 60/100 unchanged. Correction/reversal, partial-credit policy, supplier settlement, real inputs, offsite restore, device UAT and Wave 9 remain open.
+
 ## 2026-09-07 — Supplier physical return dan replacement
 
 - `CONFIRMED`; source `8b422f32b4edf398b1cdbd80703fbddc0b711b8a` (core `fee5605ace3c7c3fd05326bd6776e7c58787a748`) menambah partial return terhadap PO-linked receipt dan penerimaan replacement yang terpisah.

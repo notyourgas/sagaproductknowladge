@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS supplier return-credit lineage
+
+- `CONFIRMED`; source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`. Finance may link one `CREDIT_EXPECTED` physical return to one exact-valued supplier credit memo only when supplier, PO and a unique posted invoice agree.
+- Finance record moves the return to `CREDIT_RECEIVED_PENDING_POST` without changing payable, stock or payment. Independent Owner posting reduces open payable and moves it to `CREDIT_POSTED`; no supplier payment is created.
+- State v15, fail-closed duplicate/ambiguity/tamper guards, PostgreSQL rollback/restart, focused24/full371, check180 and browser390/1440 Axe/layout/touch acceptance passed.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness remains about 60/100. Partial credit/restocking fee, correction/reversal, supplier settlement, tax distribution, real inputs, offsite restore, device UAT and Wave 9 remain `NEEDS CONFIRMATION`.
+
 ## 2026-09-07 — SagaWork organization profile recovery
 
 - `CONFIRMED`; application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`. HR organization profile update is a bounded one-shot mutation with exact success validation. An uncertain result locks all Settings writes until reload and never claims late success.

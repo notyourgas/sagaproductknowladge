@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaOPS supplier return-credit lineage
+
+- Status `accepted`; classification `CONFIRMED`; exact source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`, Saga POS branch pushed and clean.
+- Synced: exact one-return/one-credit/one-unambiguous-invoice lineage, Finance record versus Owner post separation, state v15 restore guards, Finance/Admin UI and Dashboard projections. Financial credit steps do not mutate stock or create payment.
+- Evidence focused24/full371, check180/OpenAPI3.1/migrations12, PostgreSQL rollback/restart, Chromium390/1440 Axe0/overflow0/touch44/page-error0, dependency0 and public-safety scan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness about 60/100. Production, payment activation and other products unchanged; correction/reversal, partial credit, settlement, real inputs, offsite restore, device UAT and Wave 9 remain open.
+
 ## 2026-09-07 — SagaWork organization profile recovery
 
 - Status `accepted`; classification `CONFIRMED`; exact application/native harness `e66679cefb49fb7f5edbfce68f0d4b54867c7049`, evidence `f451db70c2ea05861a05524609e46570f6051664`.

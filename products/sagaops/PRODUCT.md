@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Retur supplier tertaut credit memo
+
+- `CONFIRMED`; source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`. Finance dapat menautkan satu `CREDIT_EXPECTED` physical return ke satu supplier credit memo pada satu posted invoice yang tidak ambigu.
+- Nominal credit dikunci ke nilai retur server. Supplier, PO, invoice dan return reference harus satu lineage; duplicate link, wrong amount/disposition dan multi-invoice ambiguity fail closed.
+- Finance recording hanya menandai `CREDIT_RECEIVED_PENDING_POST`; payable, stock dan payment tidak berubah. Owner berbeda memposting sehingga payable berkurang dan retur menjadi `CREDIT_POSTED`, tanpa membuat supplier payment.
+- State v15 migration/restore, PostgreSQL rollback/restart, browser Finance/Owner 390/1440, Axe0/overflow0/touch44/page-error0, focused24 dan full371 lulus. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100.
+- `NEEDS CONFIRMATION`: partial financial credit/restocking fee, posted-credit correction/reversal, supplier settlement, tax distribution, actual inputs, offsite restore, device UAT dan Wave 9.
+
 ## 2026-09-07 — Retur fisik dan replacement supplier
 
 - `CONFIRMED`; exact source head `8b422f32b4edf398b1cdbd80703fbddc0b711b8a`, core `fee5605ace3c7c3fd05326bd6776e7c58787a748`. Owner dapat mencatat partial return terhadap receipt yang berasal dari PO, dengan referensi, alasan/kondisi dan pilihan replacement atau credit.

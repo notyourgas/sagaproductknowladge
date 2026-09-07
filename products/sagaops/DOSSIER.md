@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-07 — Supplier return to AP credit lineage
+
+`CONFIRMED` dari source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`. Mengikuti pola Microsoft Dynamics/Business Central, Oracle Payables dan SAP, SagaOPS memisahkan shipment fisik, penerimaan dokumen credit dan posting finansial. Satu retur `CREDIT_EXPECTED` hanya boleh menunjuk satu posted supplier invoice yang unik untuk supplier dan PO yang sama; satu credit memo hanya menyelesaikan retur tersebut.
+
+Finance AP menampilkan antrean retur dan nominal readonly dari receipt-valued inventory truth. Record mengubah status ke `CREDIT_RECEIVED_PENDING_POST` tetapi tidak menyentuh outstanding, stock, HPP acquisition atau payment. Owner terpisah memposting credit, mengurangi payable dan menutup status retur sebagai `CREDIT_POSTED`. Ambiguous invoice, duplicate link, wrong supplier/PO, wrong amount, wrong disposition dan tampered restore ditolak. Generic non-stock credit tidak boleh membawa return link.
+
+State v15 migration, exact replay, aggregate reconciliation dan PostgreSQL rollback/restart lulus. Browser 390x844 dan 1440x900 membuktikan Finance-to-Owner flow, reduced motion, Axe serious/critical0, overflow0, touch target44 dan page-error0. Focused24/full371, static/check180/OpenAPI3.1/migrations12, dependency0 dan public-safety scan lulus. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/payment activation dan readiness sekitar 60/100 tidak berubah. Partial reimbursement/restocking fee, credit correction/reversal, supplier settlement, tax posting dan business inputs masih terbuka.
+
 ## 2026-09-07 — Conventional Owner Dashboard application shell
 
 `CONFIRMED` dari source `96ca11a9006269fcafd906a2aa0b67d57789aa14`. Benchmark resmi ESB POSLite menunjukkan dashboard F&B perlu memisahkan sales, transaction, inventory, bookkeeping, attendance, promo, access dan integration jobs. Saga menerapkan information architecture tersebut tanpa menyalin UI/aset vendor dan tanpa menambah dependency: sticky sidebar desktop, drawer portrait, compact topbar, 12 fragment routes, active navigation, code-native hourly bars, date toolbar, internal table scroll dan public-safe integration status.
