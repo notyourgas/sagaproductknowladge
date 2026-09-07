@@ -2,6 +2,17 @@
 
 Evidence cut-off: 7 September 2026 WIB
 
+Closing-history read indexes S402 exact source
+`afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce` telah `CONFIRMED /
+SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`. MySQL 8.4 full rollback/reapply, fresh Feature
+1.346/1.346 (15.153 assertion), Unit 33/33 (222 assertion), build, focused
+format, audit dependency, encrypted backup/checksum/disposable restore,
+verifier 33 scope, authenticated Owner/Staff UAT read-only, dan actual rollback
+drill/reactivation lulus. Active release `20260907061232-afb62b3`, rollback
+`20260906181822-9bab958`, shared lock tersedia. Residual hanya pilot dua studio
+dan provider canary; `BUSINESS_READY=false`.
+
 Block Time refresh guard S423 exact source
 `9bab95864246708345f2c01321991b849c15c4b8` telah `CONFIRMED /
 SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
@@ -12,11 +23,11 @@ pulih setelah close. Draft in-memory, tanpa perubahan API/database/permission.
 Playwright guard 3/3 pada mobile/tablet/desktop, regresi dialog 7/7 termasuk
 forced colors/reduced motion/no-overflow, regresi DP multi-device 6/6,
 backend terkait 22/22 (217 assertion), tooling dashboard 18/18, typecheck,
-build, design audit, serta audit dependency nol lulus. Production aktif pada
-release `20260906181822-9bab958` dengan rollback `20260903141813-ca549d1`;
-backup/restore, verifier, service/journal dan public-security smoke lulus.
-Next gate: authenticated Owner/Staff UAT lalu actual rollback drill;
-`BUSINESS_READY=false`.
+build, design audit, serta audit dependency nol lulus. Runtime kumulatif aktif
+pada release `20260907061232-afb62b3` dengan rollback
+`20260906181822-9bab958`; backup/restore, verifier, authenticated Owner/Staff
+UAT read-only, actual rollback drill/reactivation, service/journal, dan
+public-security smoke lulus. `BUSINESS_READY=false`.
 
 Custom DP booking manual S422 exact source
 `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c` telah `CONFIRMED /
@@ -29,10 +40,10 @@ engine installment mempertahankan proof verification, append-only correction,
 closing/report/export, void, tenant/cabang, permission, idempotency, optimistic
 lock, dan read-after-write. Full Feature 1.341/1.341 (15.125 assertion),
 focused 11/11 (133 assertion), visual 6/6, typecheck/build, dan tiga audit
-dependency nol lulus. Tidak ada migration baru. Runtime gabungan aktif pada
-exact source `9bab95864246708345f2c01321991b849c15c4b8`, release
-`20260906181822-9bab958`. Next gate: authenticated Owner/Staff UAT lalu actual
-rollback drill; `BUSINESS_READY=false`.
+dependency nol lulus. Tidak ada migration baru. Runtime gabungan aktif secara
+kumulatif pada exact source `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`,
+release `20260907061232-afb62b3`. Authenticated Owner/Staff UAT read-only dan
+actual rollback drill/reactivation lulus; `BUSINESS_READY=false`.
 
 Mobile admin shell dan operational layout exact source
 `80c100c0c1aadf2a276fb8b0c424078718faa059` telah `CONFIRMED /
@@ -49,10 +60,9 @@ lulus. Active release `20260902162647-80c100c`, rollback
 drill masih pending karena credential bridge lokal belum aktif;
 `BUSINESS_READY=false`.
 
-Closing-history read indexes S402 tetap `IMPLEMENTED_NOT_DEPLOYED`. Migration
-index sengaja tidak termasuk release `80c100c0c1aadf2a276fb8b0c424078718faa059`
-agar migration tree byte-identical dengan rollback aktif. Next gate adalah
-strategi release dan rollback migration yang kompatibel, bukan redeploy mobile.
+Closing-history read indexes S402 sudah masuk production melalui release
+rollback-compatible `20260907061232-afb62b3`; status lama
+`IMPLEMENTED_NOT_DEPLOYED` ditutup.
 
 Manual-booking operational lifecycle exact source
 `c71ac5466e13f2a75903cc569bba0d9882933ea1` telah `CONFIRMED /
@@ -81,19 +91,11 @@ Production aktif release `20260902044110-6da06fe` dengan rollback
 setelah rilis; semua gate runtime lulus. Gap business readiness produk tetap
 UAT audio fisik dan pilot; `BUSINESS_READY=false`.
 
-Closing-history read indexes S402 exact candidate
-`010b2c67025c51494a66b12b1e8b6778667660c6` telah `CONFIRMED /
-SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-PRODUCTION_UNCHANGED`. Kandidat prefix awal gagal dipilih optimizer MySQL dan
-tetap filesort; correction full-column tenant+date+ordering kini menjadi
-covering index tanpa filesort. Pada MySQL 8.4.9 sintetis 120.000+120.000
-baris, p50 closing membaik 406,5444 menjadi 0,2207 ms dan revision 462,8893
-menjadi 0,2730 ms. Rollback/reapply menjaga semua baris, database audit 98,
-focused 41/41 (477 assertion), full Feature 1.314/1.314 (14.859 assertion),
-typecheck/build, serta audit dependency nol lulus. Tidak ada deploy atau
-perubahan production; next gate adalah review/merge exact candidate dan guarded
-release hanya setelah approval. UAT speaker Chrome/Edge dan pilot tetap
-residual produk; `BUSINESS_READY=false`.
+Riwayat kandidat awal S402 tetap menjadi provenance benchmark. Delivery final
+berada pada exact source `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`
+dan release `20260907061232-afb62b3`; gate rollback-compatible, UAT, dan
+reaktivasi telah menutup blocker deployment. Pilot produk tetap residual;
+`BUSINESS_READY=false`.
 
 Release-chronology binding S401 exact
 `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` telah `CONFIRMED /

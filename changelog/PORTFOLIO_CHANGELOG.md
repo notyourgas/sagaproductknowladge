@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaBook Closing History read indexes production
+
+SagaBook exact `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce` aktif pada
+release `20260907061232-afb62b3`, rollback `20260906181822-9bab958`.
+MySQL rollback/reapply, backup terenkripsi/disposable restore, verifier,
+authenticated Owner/Staff UAT read-only, actual rollback drill/reactivation,
+service/journal dan public-security smoke lulus. Shared lock tersedia kembali;
+`BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaWork organization self-lockout prevention
 
 `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`. Authenticated Settings no longer exposes organization lifecycle mutations that could invalidate every tenant session without an in-app recovery principal; copy points to separate provisioning/operator recovery. Focused51/full1043 plus Linux/MySQL/full HTTP/Chromium passed with no status action, one profile-only request/audit, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.

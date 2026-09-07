@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaBook S402 production activation
+
+- `CONFIRMED`: exact main `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`
+  aktif pada release `20260907061232-afb62b3`, rollback
+  `20260906181822-9bab958`.
+- Closing History read indexes lolos MySQL 8.4 rollback/reapply, full regression,
+  encrypted backup/disposable restore, verifier, authenticated Owner/Staff UAT,
+  actual rollback drill/reactivation, dan public-security smoke.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  shared release lock sudah dilepas.
+
 ## 2026-09-07 — SagaWork organization self-lockout prevention sync
 
 - `CONFIRMED`: application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4` removes authenticated organization status controls and adds separate operator-recovery guidance.

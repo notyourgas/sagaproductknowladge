@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 7 September 2026 WIB
-Evidence status: SagaBook production terverifikasi aktif pada exact `9bab95864246708345f2c01321991b849c15c4b8`, immutable release `20260906181822-9bab958`, rollback `20260903141813-ca549d1`. Custom DP dan Block Time refresh guard telah `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; encrypted backup/offsite restore, verifier, service/journal, dan public-security smoke lulus. Authenticated Owner/Staff UAT serta actual rollback drill masih pending karena credential bridge lokal belum aktif. Shared release lock sudah dilepas; `BUSINESS_READY=false`.
+Evidence status: SagaBook production terverifikasi aktif pada exact `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`, immutable release `20260907061232-afb62b3`, rollback `20260906181822-9bab958`. Closing History read indexes S402 telah `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; MySQL 8.4 full rollback/reapply, encrypted backup/checksum/disposable restore, verifier, authenticated Owner/Staff UAT read-only, actual rollback drill/reactivation, service/journal, dan public-security smoke lulus. Shared release lock sudah dilepas; `BUSINESS_READY=false` karena pilot dua studio dan provider canary tetap terpisah.
 
 ## Tujuan dokumen
 
@@ -27,7 +27,7 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   multi-device 6/6, backend terkait 22/22 (217 assertion), tooling dashboard
   18/18, typecheck, build, design audit, dan audit dependency nol. Status
   `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
-  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PASSED / ROLLBACK_DRILL_PASSED /
   BUSINESS_READY=false`.
 
 - S422 menambahkan pilihan `DP custom` pada booking manual agar
@@ -43,11 +43,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   typecheck, build, audit dependency high-severity, serta Playwright 6/6 pada viewport
   320x568, 360x800, 390x844, 430x932, dan 1440x900. Status `CONFIRMED /
   SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
-  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PASSED / ROLLBACK_DRILL_PASSED /
   BUSINESS_READY=false`. Blocker kuota offsite lama sudah ditutup oleh fresh
   encrypted backup/checksum/offsite/disposable restore. Runtime gabungan aktif
-  pada exact `9bab95864246708345f2c01321991b849c15c4b8`, release
-  `20260906181822-9bab958`; shared release lock sudah dilepas.
+  secara kumulatif pada exact `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`,
+  release `20260907061232-afb62b3`; shared release lock sudah dilepas.
 
 - Rilis mobile kumulatif exact `80c100c0c1aadf2a276fb8b0c424078718faa059`
   membuat sidebar admin hanya menandai satu route aktif, memperbaiki kontras
@@ -138,8 +138,11 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
   dari 406,5444 ke 0,2207 ms dan revision dari 462,8893 ke 0,2730 ms.
   Rollback/reapply menjaga semua baris, database audit 98 tanpa failure,
   focused 41/41 (477 assertion), full Feature 1.314/1.314 (14.859 assertion),
-  build, typecheck, serta audit Composer/npm nol lulus. Kandidat belum
-  dideploy; review/merge dan guarded release tetap gate berikutnya.
+  build, typecheck, serta audit Composer/npm nol lulus. Exact main
+  `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce` aktif pada release
+  `20260907061232-afb62b3` dengan rollback `20260906181822-9bab958`.
+  Backup terenkripsi, restore disposable, verifier 33 scope, authenticated
+  Owner/Staff UAT read-only, serta actual rollback drill/reactivation lulus.
 
 - S401 menaikkan receipt UAT audio fisik ke schema v3. `executedAt` wajib ISO
   8601 lengkap dengan zona waktu dan tidak boleh mendahului timestamp UTC pada

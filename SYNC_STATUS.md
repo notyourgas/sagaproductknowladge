@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-07 — SagaBook S402 Closing History production
+
+- Exact source/main `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`; release
+  `20260907061232-afb62b3`; rollback `20260906181822-9bab958`.
+- MySQL 8.4 full rollback/reapply, encrypted backup run `20260907T060537Z`,
+  checksum/disposable restore, verifier 33 read scope, authenticated Owner/Staff
+  UAT read-only, actual rollback drill/reactivation, service/journal, dan
+  public-security smoke lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; shared lock tersedia, `BUSINESS_READY=false`.
+
 ## 2026-09-07 — SagaWork organization self-lockout prevention
 
 - Status `accepted`; classification `CONFIRMED`; exact application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`.

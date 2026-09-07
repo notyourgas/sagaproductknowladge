@@ -7,14 +7,23 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S402 exact source `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`
+  aktif pada immutable release `20260907061232-afb62b3`, rollback
+  `20260906181822-9bab958`. MySQL 8.4 full rollback/reapply, backup terenkripsi
+  dan disposable restore, verifier, authenticated Owner/Staff UAT read-only,
+  actual rollback drill/reactivation, service/journal, serta public-security
+  smoke lulus. Shared lock sudah dilepas; `BUSINESS_READY=false` karena pilot
+  dua studio dan provider canary belum ditutup.
+
 - Rilis gabungan S422/S423 exact source
-  `9bab95864246708345f2c01321991b849c15c4b8` aktif pada immutable release
-  `20260906181822-9bab958`, rollback `20260903141813-ca549d1`. Full exact-main
-  gates, multi-device browser acceptance, immutable artifact, fresh encrypted
-  backup/checksum/offsite/disposable restore, atomic activation, verifier,
-  service/journal, dan public-security smoke lulus. Shared lock sudah dilepas.
-  Authenticated Owner/Staff UAT dan actual rollback drill belum lulus karena
-  credential bridge lokal belum aktif; `BUSINESS_READY=false`.
+  `9bab95864246708345f2c01321991b849c15c4b8` kini tercakup secara kumulatif
+  dalam active exact `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`, immutable
+  release `20260907061232-afb62b3`, rollback `20260906181822-9bab958`. Full
+  exact-main gates, multi-device browser acceptance, fresh encrypted
+  backup/checksum/disposable restore, atomic activation, verifier,
+  authenticated Owner/Staff UAT read-only, actual rollback drill/reactivation,
+  service/journal, dan public-security smoke lulus. Shared lock sudah dilepas;
+  `BUSINESS_READY=false`.
 
 - S423 exact source `9bab95864246708345f2c01321991b849c15c4b8`
   mendaftarkan dialog Block Time sebagai editor aktif selama terbuka. Bootstrap
@@ -27,7 +36,7 @@ dalam satu dokumen public-safe.
   assertion), tooling dashboard 18/18, typecheck/build/design audit, serta
   audit dependency nol lulus. Status `CONFIRMED / SOURCE_PUSHED /
   LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING / BUSINESS_READY=false`.
+  AUTHENTICATED_UAT_PASSED / ROLLBACK_DRILL_PASSED / BUSINESS_READY=false`.
 
 - S422 exact source `1dd3c54f247c9463f51e8d7e0d678cc5eb50dd4c`
   memperluas engine DP booking manual dengan plan `deposit_custom`. Operator
@@ -41,7 +50,7 @@ dalam satu dokumen public-safe.
   Composer/npm/OSV nol, dan visual 6/6 pada empat profil mobile 320-430 px
   serta desktop lulus tanpa overflow dengan target kontrol minimal 44 px.
   Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
-  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / ROLLBACK_DRILL_PENDING /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PASSED / ROLLBACK_DRILL_PASSED /
   BUSINESS_READY=false`.
 
 - Rilis kumulatif mobile exact
@@ -109,7 +118,7 @@ dalam satu dokumen public-safe.
   ancestor dari main. Status `CONFIRMED / SOURCE_PUSHED / CI_PASSED /
   PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
-- S402 exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
+- S402 final source `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`
   menutup gap query history closing lintas cabang pada MySQL. Kandidat awal
   dengan prefix tenant/date terbukti tidak dipilih optimizer dan masih
   filesort; correction full-column tenant+date+ordering kini dipakai sebagai
@@ -119,9 +128,9 @@ dalam satu dokumen public-safe.
   audit 98 tanpa failure, focused 41/41 (477 assertion), full Feature
   1.314/1.314 (14.859 assertion), typecheck/build, dan audit dependency nol
   lulus. Scope tenant/branch, permission, dan data bisnis tidak berubah.
-  Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
-  PRODUCTION_UNCHANGED`; production aktif tetap exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`
-  release `20260901083148-fdf4155`, dan `BUSINESS_READY=false`.
+  Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED`; release `20260907061232-afb62b3`, rollback
+  `20260906181822-9bab958`, dan `BUSINESS_READY=false`.
 
 - S401 exact `cd3a5e12d58d8e0b3aecf02b9470fad256396f2a` menutup gap
   kronologi receipt: schema v3 mewajibkan `executedAt` berzona waktu, kalender

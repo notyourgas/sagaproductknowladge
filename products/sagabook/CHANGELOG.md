@@ -1,5 +1,23 @@
 # SagaBook Changelog
 
+## 2026-09-07 - S402 Closing History read indexes aktif di production
+
+- Exact main `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce` aktif pada immutable
+  release `20260907061232-afb62b3`; rollback `20260906181822-9bab958` tersedia
+  dan kompatibel.
+- MySQL 8.4 migrate fresh, rollback seluruh batch, reapply seluruh migration,
+  serta kontrak Closing History lulus. Fresh Feature 1.346/1.346 (15.153
+  assertion), Unit 33/33 (222 assertion), build, focused format, dan audit
+  Composer/npm nol lulus.
+- Backup run `20260907T060537Z` terenkripsi dan lolos checksum/disposable
+  restore dengan migration applied. Verifier production lulus 33/33 read
+  scope, 0 pending migration, service aktif, journal error 0, public/security
+  smoke 3/3, dan snapshot release stabil.
+- Authenticated Owner/Staff UAT read-only serta actual rollback drill ke
+  `20260906181822-9bab958` dan reaktivasi S402 lulus. Shared release lock sudah
+  dilepas. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-07 - DP custom dan Block Time refresh guard aktif di production
 
 - Exact source `9bab95864246708345f2c01321991b849c15c4b8` aktif pada release

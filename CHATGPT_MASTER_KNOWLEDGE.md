@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaBook S402 Closing History production
+
+- Exact source `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce` aktif pada
+  immutable release `20260907061232-afb62b3`; rollback
+  `20260906181822-9bab958` tersedia dan kompatibel.
+- Closing History memakai full-column tenant/date/ordering read indexes.
+  MySQL 8.4 rollback/reapply, encrypted backup/disposable restore, verifier,
+  authenticated Owner/Staff UAT read-only, actual rollback drill/reactivation,
+  dan public-security smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+  residual gate adalah pilot dua studio dan provider canary.
+
 ## 2026-09-07 — SagaWork organization self-lockout prevention
 
 - `CONFIRMED`; application/native source `84a97f47b13b13235fa14c033214de0fdd32a149`, evidence `0010b29e8cb1acd1dd577641eea86122053324c4`. Authenticated Settings no longer exposes organization activate/suspend/archive actions because authorization only admits active organizations and no in-app recovery principal exists after self-suspension. Lifecycle changes use separate provisioning/operator recovery.
@@ -2198,7 +2210,7 @@ migrasi atau mutasi commerce saat deploy. Status tetap
 `COMMERCE_ACTIVE / BUSINESS_READY=false`; resolusi insiden shipment dan
 exception pembayaran lama masih residual operasional.
 
-SagaBook S402 exact candidate `010b2c67025c51494a66b12b1e8b6778667660c6`
+SagaBook S402 final source `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`
 memperbaiki temuan MySQL nyata: index prefix kandidat awal tidak dipilih
 optimizer dan masih memakai filesort, sedangkan full-column
 tenant+date+ordering kini menjadi covering index tanpa filesort. Pada MySQL
@@ -2207,9 +2219,9 @@ ke 0,2207 ms dan revision dari 462,8893 ms ke 0,2730 ms. Rollback/reapply
 menjaga seluruh baris; database audit 98, focused 41/41, full Feature
 1.314/1.314 (14.859 assertion), typecheck/build, dan audit dependency nol
 lulus. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED / BUSINESS_READY=false`;
-production aktif tetap exact `fdf4155c0a294a6af8b41a819ba40e6d371f3ba8`
-pada release `20260901083148-fdf4155`.
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
+production aktif pada release `20260907061232-afb62b3` dengan rollback
+`20260906181822-9bab958`.
 
 Saga Member Platform Goal 2 diterima founder hanya pada state
 `GOAL_2_LOCAL_VALIDATED`. Staging dilewati untuk scope saat ini. Fresh local
