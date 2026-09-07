@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaWork attendance-policy lifecycle recovery
+
+- `CONFIRMED`; application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350`. HR policy create, activate and delete are bounded one-shot mutations with exact success validation. An uncertain result closes policy context, locks all Settings writes until reload and never claims late success.
+- PASS focused34/full971, lint/types/production-audit/contracts/build/release checks and exact-source Linux/MySQL/full HTTP/compiled Chromium. Native proves genuine held/lost success, one request/audit each, active retirement/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200; POS/shared runtime unchanged. Fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — SagaWork Google Maps Workspace create recovery
 
 - `CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`. HR Google Maps pin resolve is bounded and retryable; Workspace create is one-shot with exact success validation. An uncertain create clears local state, locks all Settings writes until reload and never claims late success.

@@ -1,5 +1,11 @@
 # SagaWork Dossier
 
+## 2026-09-07 — Attendance-policy lifecycle lost-response recovery
+
+- `CONFIRMED`; application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350`. Policy create/activate/delete are one-shot with a 12-second fetch/body deadline, same-origin/no-store/redirect rejection and strict HTTP/identity/version/status validation. Safe expected 4xx is definite; network/timeout/abort/redirect/5xx/unexpected/malformed or mismatched success is uncertain.
+- Uncertainty closes policy context and locks all Settings writes until reload; confirmed mutation plus failed refresh stays confirmed. Focused34/full971, lint/types/audit/contracts, exact-source Linux build and fresh MySQL/full HTTP/Chromium passed with one audit per action, active retirement, draft deletion and invariance.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. API/domain/schema/grant/POS/shared runtime unchanged. Public `711ef77` remains active/HTTP200; joint-native/offsite restore/config rollback/owner-device-finance gates remain. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Google Maps Workspace create lost-response recovery
 
 - `CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`. Pin resolve is one bounded read-only request. Workspace create is one bounded POST with exact HTTP201/ID/status validation; safe expected 4xx is definite while network/timeout/abort/redirect/5xx/unexpected/malformed/mismatched outcomes are uncertain.

@@ -1,5 +1,12 @@
 # SagaWork Changelog
 
+## 2026-09-07 — Attendance-policy lifecycle recovery
+
+- `CONFIRMED`; application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350`.
+- Policy version create, draft activation and draft deletion are single-request and bounded with exact success validation, safe expected-4xx handling and reload-only full Settings write recovery after uncertain outcomes.
+- Focused34/full971 plus Linux/MySQL/full HTTP/Chromium passed with genuine held/lost successful responses, one request/audit each, active retirement/draft deletion, invariance and mobile/Axe/device guards.
+- `IMPLEMENTED_NOT_DEPLOYED`; public `711ef77`, POS/shared runtime, Performance and real payroll/payment unchanged. Joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain.
+
 ## 2026-09-07 — Google Maps Workspace create recovery
 
 - `CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`.

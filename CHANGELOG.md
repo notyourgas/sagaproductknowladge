@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaWork attendance-policy lifecycle recovery sync
+
+- `CONFIRMED`: application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350` adds bounded one-shot policy create/activate/delete, strict success validation and reload-only full Settings recovery after uncertain results.
+- Reason: prevent duplicate policy versions, repeated activation/deletion or false success when a mutation response is lost.
+- Area/file: SagaWork Settings policy UX, client mutation guard, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
+- PASS focused34/full971, Linux/MySQL/full HTTP/compiled Chromium, exactly one audit per action, active retirement/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
+
 ## 2026-09-07 — SagaWork Google Maps Workspace create recovery sync
 
 - `CONFIRMED`: source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4` adds bounded one-shot Google Maps pin resolve/create, strict success validation and reload-only full Settings recovery after uncertain create.

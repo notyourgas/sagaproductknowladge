@@ -1,5 +1,11 @@
 # SagaWork Product Knowledge
 
+## 2026-09-07 — Attendance-policy lifecycle lost-response recovery
+
+- `CONFIRMED`; application/native harness `e5b0f0627e8932a85db29fbe93e27fc8c9353c67`, evidence `67def2532a58536ed6eee1c1f10e773afcbd5350`. HR can create a policy version, activate a draft and delete a draft through bounded one-shot mutations with exact success validation and reload-only full Settings recovery when the outcome is uncertain.
+- Focused34/full971 tests in101 files plus Linux/MySQL/full HTTP/compiled Chromium passed with genuine held create201/activate200 and lost committed delete204, one request/audit each, active retirement/draft deletion, unchanged related records, mobile390/Axe and zero unexpected mutation/device/page errors.
+- `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200. POS/shared runtime was not modified; fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
+
 ## 2026-09-07 — Google Maps Workspace create lost-response recovery
 
 - `CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`. HR can resolve a pasted Google Maps pin and create one Workspace with bounded one-shot requests, exact success validation and reload-only full Settings write recovery when the create result is uncertain.
