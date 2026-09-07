@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-07 — SagaOPS posted credit reversal
+
+- `CONFIRMED`; exact source `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a`. Posted supplier credit kini dikoreksi melalui Finance request dan keputusan Owner terpisah, bukan edit/delete dokumen asal.
+- Approval menjadikan credit `REVERSED`, memulihkan payable outstanding, dan membuka linked return untuk credit pengganti; rejection mempertahankan credit. Stock/payment tidak berubah. History, idempotency, separation, PostgreSQL rollback/restart dan restore tamper guard tervalidasi.
+- Finance/Admin/Dashboard UI lulus mobile390/desktop1440, Axe serious-critical0, contained overflow dan touch44. Full374/check182/dependency0/public-safety lulus. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100 dan Wave 9 tetap deferred.
+
 ## 2026-09-07 — SagaBook S402 Closing History production
 
 - Exact source `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce` aktif pada

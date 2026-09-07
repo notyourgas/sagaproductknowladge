@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Reversal credit supplier terkontrol
+
+- `CONFIRMED`; source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a`. Finance dapat meminta reversal untuk credit memo supplier yang sudah `POSTED`; Owner berbeda menyetujui atau menolak tanpa mengedit atau menghapus dokumen asal.
+- Approval menandai credit `REVERSED`, memulihkan outstanding invoice, dan membuka kembali retur tertaut untuk credit koreksi. Rejection mempertahankan credit/payable aktif. Stok dan payment tidak berubah pada request maupun keputusan.
+- History reversal versioned, bounded, exact-idempotent, fingerprint-validated dan tamper-detected. PostgreSQL commit failure rollback-safe; state v15 bermigrasi ke v16.
+- PASS full374/check182/OpenAPI3.1/migrations12, domain/durable/browser390/1440, Axe0/contained-overflow/touch44/page-error0, dependency0 dan public-safety scan. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness tetap sekitar 60/100.
+- `NEEDS CONFIRMATION`: partial-credit/restocking-fee policy, supplier payment/bank settlement, tax/GL distribution, actual inputs, offsite restore, device UAT dan Wave 9.
+
 ## 2026-09-07 — Retur supplier tertaut credit memo
 
 - `CONFIRMED`; source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`. Finance dapat menautkan satu `CREDIT_EXPECTED` physical return ke satu supplier credit memo pada satu posted invoice yang tidak ambigu.

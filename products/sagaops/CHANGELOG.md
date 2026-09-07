@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Posted supplier-credit reversal
+
+- `CONFIRMED`: Finance request → separate Owner decision untuk membalik supplier credit yang sudah posted tanpa menghapus histori.
+- Approval memulihkan outstanding dan membuka kembali linked return; rejection tidak mengubah payable. Stok dan payment selalu unchanged.
+- Source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a`; full374, check182, PostgreSQL fault/restart, browser390/1440, Axe/layout/touch, dependency/public-safety lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Supplier settlement, partial-credit policy, tax/GL, actual inputs dan release acceptance tetap terbuka.
+
 ## 2026-09-07 — Supplier return linked to credit memo
 
 - `CONFIRMED`; source `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`.

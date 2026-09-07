@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-07 — SagaOPS supplier-credit reversal sync
+
+- `CONFIRMED`: source `37b518ca1d44353c0428e0280d91e447cc1fc4c7` menambah Finance-request/Owner-decision reversal yang immutable untuk posted supplier credit.
+- Approval memulihkan AP outstanding dan membuka kembali return-credit linkage; rejection mempertahankan credit aktif. Tidak ada perubahan stok, payment, supplier communication, pricing atau produk lain.
+- PASS full374/check182, PostgreSQL rollback/restart, browser390/1440 Axe/layout/touch, dependency0 dan public-safety. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan readiness tidak berubah.
+
 ## 2026-09-07 — SagaBook Closing History read indexes production
 
 SagaBook exact `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce` aktif pada

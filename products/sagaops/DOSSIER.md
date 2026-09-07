@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-07 — SagaOPS posted supplier-credit reversal
+
+- `CONFIRMED`; source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, implementation `4ba5ee5f6b2334ee0136112779937c1f96ee550a`. Before: posted supplier credit tidak memiliki jalur koreksi aman. After: Finance mengirim reasoned reversal request dan Owner berbeda memutuskan APPROVE/REJECT.
+- Request tidak mengubah payable. Approval mempertahankan credit asal sebagai `REVERSED`, menambah kembali outstanding, dan mengembalikan linked goods return ke `SHIPPED_AWAITING_CREDIT` agar Finance dapat merekam credit note koreksi. Rejection mempertahankan `POSTED`. Tidak ada stock mutation, payment, supplier message, tax/GL distribution atau settlement.
+- Domain menyimpan request/decision history immutable, maksimum satu pending dan satu approved reversal, exact replay, actor separation, version/fingerprint/timestamp validation dan restore tamper detection. Durable runtime membatalkan state memory jika PostgreSQL commit gagal.
+- Finance AP, Owner Admin dan Owner Dashboard menampilkan status serta tindakan/reason yang aman. Acceptance 390×844 dan 1440×900 mencakup touch≥44, reduced motion, contained table scrolling, Axe serious/critical0 dan page-error0.
+- Full374, check182/OpenAPI3.1/migrations12, dependency0 dan public-safety scan lulus. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Partial credit/restocking fee, supplier payment/bank, tax/GL, actual inputs, offsite restore, UAT perangkat dan Wave 9 tetap terbuka.
+
 ## 2026-09-07 — Supplier return to AP credit lineage
 
 `CONFIRMED` dari source head `2f4d9d1d396b8e6f0583c2ff4086dce929b412a5`, core `f8add758aadd0fbf0ca9d0345c6a638141cd381d`. Mengikuti pola Microsoft Dynamics/Business Central, Oracle Payables dan SAP, SagaOPS memisahkan shipment fisik, penerimaan dokumen credit dan posting finansial. Satu retur `CREDIT_EXPECTED` hanya boleh menunjuk satu posted supplier invoice yang unik untuk supplier dan PO yang sama; satu credit memo hanya menyelesaikan retur tersebut.

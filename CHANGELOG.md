@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS posted supplier-credit reversal sync
+
+- `CONFIRMED`: exact source head `37b518ca1d44353c0428e0280d91e447cc1fc4c7`, core `4ba5ee5f6b2334ee0136112779937c1f96ee550a` menambah immutable Finance request → separate Owner decision untuk reversal credit supplier posted.
+- Alasan: koreksi AP perlu memulihkan outstanding dan membuka linked return tanpa menghapus histori, mengubah stok, membuat payment, atau memilih dokumen pengganti secara otomatis.
+- Area/file: SagaOPS HPP state v16, Finance AP, Owner Admin/Dashboard, domain/browser/durable tests dan knowledge publik. Tidak ada secret, PII, raw receipt/callback, identifier private, pricing atau produk lain.
+- PASS full374/check182/OpenAPI3.1/migrations12, PostgreSQL rollback/restart, Chromium390/1440 Axe/layout/touch/page-error, dependency0 dan public-safety scan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production/readiness unchanged. Partial-credit/restocking-fee policy, supplier payment/bank settlement, tax/GL, actual inputs, offsite restore, UAT perangkat dan Wave 9 remain open.
+
 ## 2026-09-07 — SagaBook S402 production activation
 
 - `CONFIRMED`: exact main `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`
