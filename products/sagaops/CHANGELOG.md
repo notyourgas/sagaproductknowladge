@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Supplier invoice three-way matching
+
+- `CONFIRMED`; source `4e5203d3552eb883df6c0fa5aaf4f4b8d61e2ec4` (core `130581e6590aa7b7bc0c85297e720b1204d977ba`) menambah partial supplier invoice intake, server-owned PO-receipt-invoice comparison dan explicit AP readiness.
+- Matched invoice hanya siap approval; exception diblokir. Nomor invoice unik per supplier, rejected stock tidak invoiceable, remaining accepted quantity/fee mendukung beberapa invoice, dan immutable receipt cutoff menjaga restore evidence.
+- PASS full360/focused54/final29/check175/OpenAPI3.1/migrations12, mobile390 Axe0/overflow0/touch44/page-error0, dependency0 dan high-confidence secret0.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan readiness sekitar 60/100. Approval/posting maker-checker, supplier credit/replacement, correction/reversal, payment, real inputs, offsite restore dan operational acceptance belum selesai.
+
 ## 2026-09-07 — PO receiving discrepancy dan landed fees
 
 - `CONFIRMED`; source `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1` (core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`) menambah accepted/rejected quantity, bounded rejection reason, reject-only receipt dan additional-fee evidence pada receiving PO.

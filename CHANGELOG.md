@@ -7,6 +7,13 @@
 - Area/file: SagaWork Settings policy UX, client mutation guard, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
 - PASS focused34/full971, Linux/MySQL/full HTTP/compiled Chromium, exactly one audit per action, active retirement/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
 
+## 2026-09-07 — SagaOPS supplier invoice matching sync
+
+- `CONFIRMED`: exact source `4e5203d3552eb883df6c0fa5aaf4f4b8d61e2ec4` (core `130581e6590aa7b7bc0c85297e720b1204d977ba`) menambah partial invoice intake, three-way match, duplicate invoice guard, immutable receipt cutoff dan AP blocking.
+- Alasan: owner perlu mengetahui invoice supplier yang konsisten dengan barang diterima sebelum approval tanpa mengarang pembayaran atau policy tolerance.
+- Area/file: SagaOPS purchasing, HPP state v11, Owner Admin/Dashboard, domain/browser/durable tests, product/master/portfolio changelog dan sync status. Tidak ada payment, supplier contact, secret, PII atau raw receipt.
+- PASS full360/focused54/final29/check175/OpenAPI3.1/migrations12, PostgreSQL restart/fault injection, mobile390 Axe/layout/touch/page-error serta dependency/high-confidence secret scan. Production tetap unchanged; approval/posting, credit/replacement, correction/reversal, real inputs, offsite restore dan UAT masih terbuka.
+
 ## 2026-09-07 — SagaWork Google Maps Workspace create recovery sync
 
 - `CONFIRMED`: source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4` adds bounded one-shot Google Maps pin resolve/create, strict success validation and reload-only full Settings recovery after uncertain create.

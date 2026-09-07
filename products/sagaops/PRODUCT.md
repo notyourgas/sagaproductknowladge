@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Supplier invoice three-way matching
+
+- `CONFIRMED`; exact source head `4e5203d3552eb883df6c0fa5aaf4f4b8d61e2ec4`, core `130581e6590aa7b7bc0c85297e720b1204d977ba`. Owner Admin dapat mencatat invoice supplier parsial dan membandingkan kuantitas, harga serta landed fee terhadap PO dan accepted receipt.
+- Match menggunakan tolerance nol. Invoice cocok menjadi `READY_FOR_APPROVAL`, bukan dibayar; discrepancy menjadi `BLOCKED`. Rejected goods tidak dapat ditagih, nomor invoice unik per supplier, dan immutable receipt cutoff mempertahankan bukti historis setelah receipt berikutnya.
+- Owner Dashboard menampilkan supplier, PO aktif, invoice cocok/diblokir dan nilai siap diajukan. HPP state v11, PostgreSQL rollback/restart dan exact replay tervalidasi.
+- PASS full360/360, focused54/54, final domain/browser29/29, check175/OpenAPI3.1/migrations12, mobile390 Axe0/overflow0/touch44/page-error0, dependency0 dan high-confidence secret0. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+- Next: maker-checker invoice approval/posting; supplier credit/replacement; audited correction/reversal. Data bisnis nyata, backup offsite, UAT perangkat dan Wave 9 tetap `NEEDS CONFIRMATION`.
+
 ## 2026-09-07 — Receiving discrepancy dan landed-fee allocation
 
 - `CONFIRMED`; exact source head `6e1d7f7ddaeb813b918c4e3bf3e8c8afe5e7e1e1`, core `e3bc4e3dd2cfa650d2766a8b1e54010d0edb99f2`. Owner Admin dapat memisahkan kuantitas barang baik dan ditolak saat menerima PO, memilih alasan rusak/hilang/salah barang/kedaluwarsa, serta mencatat biaya shipping, handling atau other.

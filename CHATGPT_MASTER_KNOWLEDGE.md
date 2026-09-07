@@ -6,6 +6,13 @@
 - PASS focused34/full971, lint/types/production-audit/contracts/build/release checks and exact-source Linux/MySQL/full HTTP/compiled Chromium. Native proves genuine held/lost success, one request/audit each, active retirement/draft deletion, invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
 - `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200; POS/shared runtime unchanged. Fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
 
+## 2026-09-07 — SagaOPS supplier invoice three-way matching
+
+- `CONFIRMED`; exact source `4e5203d3552eb883df6c0fa5aaf4f4b8d61e2ec4`, core `130581e6590aa7b7bc0c85297e720b1204d977ba`. Owner Admin mencatat invoice supplier parsial dan membandingkan quantity, PO price serta landed fee dengan accepted receipt server truth.
+- Zero-tolerance match menjadi `READY_FOR_APPROVAL`, bukan `PAID`; quantity/price/fee exception menjadi `BLOCKED`. Rejected goods dikecualikan, nomor invoice unik per supplier, remaining received evidence mendukung multiple invoice dan receipt cutoff menjaga bukti saat restart.
+- Owner Dashboard memiliki purchasing/AP summary dan recent invoice. PASS full360/focused54/final29, check175/OpenAPI3.1/migrations12, PostgreSQL fault/restart, Chromium390 Axe0/overflow0/touch44/page-error0, dependency0 dan high-confidence secret0.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. `NEEDS CONFIRMATION`: maker-checker approval/posting, credit/replacement, correction/reversal, actual supplier/cost data, offsite restore, device UAT dan Wave 9. Tidak ada pembayaran supplier atau activation.
+
 ## 2026-09-07 — SagaWork Google Maps Workspace create recovery
 
 - `CONFIRMED`; source/native harness `f471754073a629097dbecef4afc8de75f471c2d4`, evidence `3a73435a4a265cc43288c7e537890039793a4ff4`. HR Google Maps pin resolve is bounded and retryable; Workspace create is one-shot with exact success validation. An uncertain create clears local state, locks all Settings writes until reload and never claims late success.
