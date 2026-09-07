@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-07 — Saga Member R0 Owner pilot candidate
+
+`CONFIRMED`; Andreas selected a seven-day Owner-only controlled production pilot at `app.sagamember.site`. Customer Platform exact candidate `d0016572a5f03374bb5d721599717aff2f13c48a`, PR #10, integrates Wave 1–7 plus Owner Dashboard and adds fail-closed feature classification, guarded OWNER provisioning, immutable release identity, encrypted backup/disposable restore, atomic Hostinger promotion/activation, monitoring, and rollback. Local exact-head 21 files/86 tests plus static/migration, shell, dependency0 and public-safety checks PASS; hosted run `34131232628` had zero steps because billing blocked the runner. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_BILLING_BLOCKED`; frontend acceptance, runtime credentials, fresh recovery receipt, authenticated UAT and activation remain open. Payment/QRIS, commerce/reward writes, Push, marketing, NFC/printer, other customers and external transactions remain OFF; production and business readiness did not change.
+
 ## 2026-09-07 — SagaOPS integrated release-lock handoff candidate
 
 `CONFIRMED`; source `5a90a18866e0d16bb1639a53f544024d961a04f5` on branch `codex/sagapos-release-lock` integrates v4 protected recovery guards with the 16-migration HRPOS/RLS source and adds a release lock for monitoring installation plus approved destructive storage pruning. Full387/387, focused release/monitor/storage6/6, focused Admin+Kiosk29/29, check191/16, shell syntax, dependency0 and staged diff secret scan0 PASS. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; staging runtime, production, activation, payroll/payment and business readiness unchanged pending Release Lead gates.

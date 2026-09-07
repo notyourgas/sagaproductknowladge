@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-07 — R0 Owner pilot release controls prepared
+
+- `CONFIRMED`: Andreas selected a seven-day Owner-only controlled production pilot at `app.sagamember.site`; exact backend candidate `d0016572a5f03374bb5d721599717aff2f13c48a`, PR #10.
+- Integrated Wave 1–7 and Owner Dashboard sources; added explicit fail-closed production route features, operator-credential startup guard, non-synthetic OWNER provisioning, immutable artifact/config/SBOM/runtime binding, encrypted backup/disposable restore, atomic deploy/activation, monitor, and rollback scripts.
+- Local exact-head full suite PASS 21 files/86 tests; static/migration, shell syntax, dependency0, diff/secret checks PASS. Hosted run `34131232628` had zero steps due billing and remains `CI_BILLING_BLOCKED`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Frontend acceptance, production credentials, fresh restore evidence, composite deployment, authenticated UAT, and activation remain pending; all transaction/payment/device/provider features outside email OTP stay OFF.
+
 ## 2026-09-07 — Explicit Owner Member Cohort candidate
 
 - Exact Customer Platform source `b379b53d3a45ad72586157d258571cf64d05edc0`, PR #9, menambah read-only member cohort aggregate yang hanya memakai explicit verified context links.

@@ -1,5 +1,14 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-07 — R0 Owner production-pilot candidate and activation boundary
+
+- `CONFIRMED`: Andreas selected `https://app.sagamember.site` for a seven-day, Owner-only controlled business production pilot. Customer Platform is authoritative for PostgreSQL persistence, email OTP, secure session/consent, scoped Owner RBAC/audit, and Owner Dashboard aggregates.
+- Exact backend candidate `d0016572a5f03374bb5d721599717aff2f13c48a` on Customer Platform PR #10 integrates the Wave 1–7 runtime and both Owner Dashboard read models. R0 now classifies every `/v1` business route fail-closed and refuses Owner Dashboard startup without separate operator credentials.
+- Hostinger release source now contains immutable manifest/SBOM/runtime binding, encrypted backup plus disposable restore gate, migration verification, atomic promotion, guarded activation, monitoring, and exact-release rollback. These controls are `IMPLEMENTED_NOT_DEPLOYED`.
+- Exact-head local validation passed 21 isolated test files/86 tests, static/migration checks, shell syntax, diff/secret checks, and production dependency audit with zero reported vulnerabilities. Hosted Quality run `34131232628` created zero runner steps because account billing blocked execution; status is `CI_BILLING_BLOCKED`, not PASS.
+- Production was not changed by this candidate. R0 activation remains blocked by the not-yet-accepted frontend candidate, unavailable Resend/operator runtime credentials, missing fresh disposable-restore receipt, and authenticated Owner/same-origin UAT.
+- Payment/QRIS, commerce and reward writes, marketing/mass email, Push, NFC, printer, support merge, other customers, and external transactions remain OFF. Delivery: `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `PRODUCTION_ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-07 — Customer Platform explicit Owner Member Cohort candidate
 
 - `CONFIRMED` implementation candidate pada exact source `b379b53d3a45ad72586157d258571cf64d05edc0`, PR Customer Platform #9.
