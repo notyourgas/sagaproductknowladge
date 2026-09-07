@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-07 — SagaOPS protected HRPOS staging/recovery sync
+
+- `CONFIRMED`: exact source `690cd0eeb7fe65aef41d683945ee67a12000a47f`, feature `52d77fc8039281838a3594fd4f9b211c19cf28ea`, base POS `9a2893db5697a55b300440aeafcd07aa79581e26`; branch source pushed dan clean.
+- Alasan: menyiapkan HR/Staff integration lane yang source-bound dan recoverable tanpa membuka domain POS, fixture login, payment atau production.
+- Area/file: SagaOPS product/dossier/changelog, portfolio/master, gaps dan sync. Tidak ada secret, PII, grant subject, tenant/device identifier, private path, raw callback/receipt atau provider mutation.
+- PASS full387/387, focused14/14, static/type/OpenAPI166/13, shell syntax, dependency0 dan high-confidence public-safety/diff scan0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `STAGING_READY=false`, production/activation/business-ready false. Exact-pair provider evidence, backup/restore, authenticated UAT, containment dan rollback rehearsal masih menunggu.
+
 ## 2026-09-07 — SagaOPS official-domain release strategy sync
 
 - `CONFIRMED`: exact application `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d`, documentation `ecd84fd96124c0cb7c98a62ffbe282a1a6a98ef1`; private staging accepted at 13/13 migration.
