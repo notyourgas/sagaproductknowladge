@@ -7,6 +7,13 @@
 - Evidence focused46/full1038, lint/types/production-audit/contracts/build/release checks and exact-source Linux/MySQL/full HTTP/Chromium with one request/audit, exact profile persistence, invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
 - Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED / BELUM DEPLOY HR`; public `711ef77` unchanged/HTTP200. POS handoff sent; fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open. Performance and real payroll/payment OFF.
 
+## 2026-09-07 — SagaOPS supplier physical return dan replacement
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `8b422f32b4edf398b1cdbd80703fbddc0b711b8a`, core `fee5605ace3c7c3fd05326bd6776e7c58787a748`, branch Saga POS pushed dan clean.
+- Sinkron: PO-linked partial return, source-valued stock deduction, replacement receipt, expected-credit boundary, state v14 restore, inventory variance dan Owner Admin/Dashboard projection. Tidak ada supplier contact, automatic AP change, payment, secret, PII, raw receipt/callback atau identifier private.
+- Evidence full368/368, static/check178/OpenAPI3.1/migrations12, PostgreSQL rollback/restart, Chromium390/1440 Axe0/overflow0/touch44/page-error0, dependency0 dan public-safety0.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Return-credit link, correction/reversal/resubmit, actual inputs, offsite restore, production activation dan `BUSINESS_READY` tetap terbuka.
+
 ## 2026-09-07 — SagaOPS supplier price credit memo
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `f539238dd1dcda0dfa7c150379d899ff96ee53ce`, core `9e4cd41d567ca95c69447532897bdbab1cffe260`, branch Saga POS pushed dan clean.

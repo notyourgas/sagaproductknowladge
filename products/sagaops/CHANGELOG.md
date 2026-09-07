@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-07 — Supplier physical return dan replacement
+
+- `CONFIRMED`; source `8b422f32b4edf398b1cdbd80703fbddc0b711b8a` (core `fee5605ace3c7c3fd05326bd6776e7c58787a748`) menambah partial return terhadap PO-linked receipt dan penerimaan replacement yang terpisah.
+- Return mengurangi stock/value berdasarkan receipt snapshot; replacement memulihkannya hanya saat diterima. Expected credit tidak otomatis mengubah payable dan tidak membuat payment.
+- State v14, cumulative quantity/value guard, exact replay, Owner-only mutation, restore reconciliation, PostgreSQL rollback/restart serta mobile/desktop browser acceptance fail-closed.
+- PASS full368/check178/OpenAPI3.1/migrations12/dependency0/public-safety0. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production dan readiness sekitar 60/100 tidak berubah. Return-credit link, correction/reversal/resubmit, actual inputs, offsite restore dan UAT masih terbuka.
+
 ## 2026-09-07 — Supplier price credit memo
 
 - `CONFIRMED`; source `f539238dd1dcda0dfa7c150379d899ff96ee53ce` (core `9e4cd41d567ca95c69447532897bdbab1cffe260`) menambah Finance-authored dan Owner-posted non-stock credit terhadap posted unpaid supplier invoice.

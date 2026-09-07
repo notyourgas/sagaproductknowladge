@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-07 — Retur fisik dan replacement supplier
+
+- `CONFIRMED`; exact source head `8b422f32b4edf398b1cdbd80703fbddc0b711b8a`, core `fee5605ace3c7c3fd05326bd6776e7c58787a748`. Owner dapat mencatat partial return terhadap receipt yang berasal dari PO, dengan referensi, alasan/kondisi dan pilihan replacement atau credit.
+- Pengiriman balik mengurangi quantity serta nilai inventory berdasarkan receipt snapshot. Replacement memulihkan quantity/nilai yang sama hanya setelah benar-benar diterima. Jalur credit tetap `SHIPPED_AWAITING_CREDIT` dan tidak otomatis mengubah AP atau membuat payment.
+- State v14, exact idempotency, cumulative return cap, role/version guard, canonical fingerprint, inventory reconciliation, PostgreSQL rollback/restart dan return/replacement variance evidence tervalidasi. Owner Admin serta Dashboard menampilkan status dan nilai terbuka.
+- PASS full368/368, check178/OpenAPI3.1/migrations12, browser390/1440 Axe0/overflow0/touch44/page-error0, dependency0 dan public-safety scan. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100.
+- Next: link return-credit tanpa auto-post; maker-checker correction/reversal/resubmit; modifier/packaging/prep consumption. Data nyata, offsite restore, device UAT dan Wave 9 tetap `NEEDS CONFIRMATION`.
+
 ## 2026-09-07 — Supplier price credit memo
 
 - `CONFIRMED`; exact source head `f539238dd1dcda0dfa7c150379d899ff96ee53ce`, core `9e4cd41d567ca95c69447532897bdbab1cffe260`. Finance dapat mencatat credit memo non-stok terhadap invoice supplier `POSTED_UNPAID`; nomor dokumen unik per supplier dan pending credit mereservasi outstanding.

@@ -6,6 +6,13 @@
 - PASS focused46/full1038, lint/types/production-audit/contracts/build/release checks and exact-source Linux/MySQL/full HTTP/compiled Chromium. Native proves a genuine held PATCH200, one request/audit, exact persistence, invariance, mobile390/Axe and zero unexpected mutation/device/page errors.
 - `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY HR**. Public `711ef77` remains active/HTTP200; POS/shared runtime unchanged. Fresh exact-pair joint-native, encrypted offsite restore, config/rollback and owner/device/finance remain open; Performance and real payroll/payment OFF.
 
+## 2026-09-07 — SagaOPS supplier physical return dan replacement
+
+- `CONFIRMED`; exact source `8b422f32b4edf398b1cdbd80703fbddc0b711b8a`, core `fee5605ace3c7c3fd05326bd6776e7c58787a748`. Owner dapat mengirim balik sebagian barang dari PO-linked receipt; server membatasi cumulative quantity dan menilai retur dari receipt snapshot.
+- Return menurunkan stock/value. Replacement memulihkan exact quantity/value hanya sesudah penerimaan dicatat. `CREDIT_EXPECTED` tetap AP/payment-neutral hingga workflow Finance terpisah memproses dokumen credit.
+- State v14, exact replay, role/version guards, inventory/variance reconciliation dan PostgreSQL rollback/restart tervalidasi. Owner Admin/Dashboard memisahkan return, replacement dan credit secara eksplisit.
+- PASS full368/check178/OpenAPI3.1/migrations12, browser390/1440 Axe0/overflow0/touch44/page-error0, dependency0/public-safety0. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; readiness sekitar 60/100. Return-credit link, correction/reversal/resubmit, actual inputs, offsite restore, device UAT dan Wave 9 masih terbuka.
+
 ## 2026-09-07 — SagaOPS supplier price credit memo
 
 - `CONFIRMED`; exact source `f539238dd1dcda0dfa7c150379d899ff96ee53ce`, core `9e4cd41d567ca95c69447532897bdbab1cffe260`. Finance dapat mencatat bounded non-stock credit memo yang mereferensikan posted unpaid supplier invoice; supplier credit number unik dan pending memo mereservasi outstanding.

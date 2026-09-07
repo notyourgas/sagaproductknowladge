@@ -7,6 +7,13 @@
 - Area/file: SagaWork Settings profile UX, client mutation guard, browser/native acceptance, product/dossier/master/portfolio changelog and sync status. No API/schema/grant/POS/shared-runtime change.
 - PASS focused46/full1038, Linux/MySQL/full HTTP/compiled Chromium, exactly one request/audit, exact profile persistence, invariance, mobile390/Axe and zero unexpected mutation/device/page errors. Production stayed `711ef77`; joint/offsite/config/rollback/owner-device-finance gates remain.
 
+## 2026-09-07 — SagaOPS supplier return/replacement sync
+
+- `CONFIRMED`: exact source `8b422f32b4edf398b1cdbd80703fbddc0b711b8a` (core `fee5605ace3c7c3fd05326bd6776e7c58787a748`) menambah owner-only partial physical return dari PO-linked receipt, source-valued stock deduction dan separate replacement receipt.
+- Alasan: operator perlu membedakan barang yang benar-benar dikirim kembali dari credit supplier atau replacement yang belum diterima, tanpa memakai stock adjustment generik atau mengarang pembayaran.
+- Area/file: SagaOPS HPP state v14, inventory variance, Owner Admin/Dashboard, browser/domain/durable tests, product/master/portfolio changelog dan sync status. Tidak ada supplier contact, payment, secret, PII, raw receipt/callback atau identifier private.
+- PASS full368/check178/OpenAPI3.1/migrations12, PostgreSQL rollback/restart, Chromium390/1440 Axe/layout/touch/page-error, dependency dan public-safety scan. Production tetap unchanged; return-credit link, correction/reversal/resubmit, real inputs, offsite restore dan UAT masih terbuka.
+
 ## 2026-09-07 — SagaOPS supplier price credit memo sync
 
 - `CONFIRMED`: exact source `f539238dd1dcda0dfa7c150379d899ff96ee53ce` (core `9e4cd41d567ca95c69447532897bdbab1cffe260`) menambah Finance-authored, Owner-posted non-stock supplier credit dan open-payable reduction.
