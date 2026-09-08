@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-08 — Inventory authority dan shortage costing W1 terintegrasi
+
+- `CONFIRMED`; exact source `0df408243c08a54475fa3c3d43d13a973b12d68e`, branch `codex/sagapos-inventory-costing-w1-integrated`, draft PR #7. Confirmed order sekarang membuat reservation dari snapshot recipe; available turun tanpa mengubah on-hand dan PREPARING mengonversinya menjadi consumption tepat sekali.
+- State v18 menggabungkan `inventoryReservations` dan `cogsAdjustments`; migrasi v17 mengisi kedua ledger secara eksplisit dan state v18 parsial ditolak. Shortage memakai provisional COGS, receipt berikutnya membuat FIFO revaluation immutable, silent Rp0 gagal atomik, dan state lama ditandai `COST_MISSING`.
+- Cashier cash/zero-total, kiosk reward/complimentary zero-total, dan settled QRIS mempertahankan paid truth serta flagged shortage melalui keputusan server yang tidak dapat dikontrol client. PAYMENT_PENDING tetap tidak membuat reservation; cancel/refund sebelum PREPARING me-release reservation dan refund sesudah consumption tidak menambah stok.
+- `npm run check` PASS, clean install audit 0 vulnerability, full suite 631 PASS/0 FAIL/1 platform skip/2 TODO, dan independent critical merged 93 PASS/0 FAIL/2 TODO. Hosted Quality CI nol-step karena billing/spending-limit (`CI_BILLING_BLOCKED`).
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. Program Inventory PRD: Accepted 0/198, Implemented candidate 5/198, Audited 198/198, red-team accepted 0/25, readiness 21/100. Remake consumption, genuine offline negative stock, target DB/recovery/rollback/security dan authenticated UAT tetap blocker.
+
 ## 2026-09-08 — Inventory dikonsumsi saat PREPARING pada kandidat W0
 
 - `CONFIRMED`; source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338` pada draft PR #4 mengubah jalur HPP agar pembayaran tetap stock-neutral dan deduction pertama terjadi ketika fulfillment masuk `PREPARING`.

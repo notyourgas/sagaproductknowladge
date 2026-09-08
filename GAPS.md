@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-08 — SagaPOS Inventory PRD sesudah W1 integration
+
+- `CONFIRMED`: candidate `0df408243c08a54475fa3c3d43d13a973b12d68e` menutup konflik state v18 reservation-versus-costing dan silent zero provisional cost pada source lokal/pushed.
+- `NEEDS CONFIRMATION`: B13-05 remake masih belum memiliki production-start identity dan consumption kedua; B22 genuine offline physical sale belum mempertahankan shortage/negative event lengkap saat sync. Kedua executable acceptance masih expected-red.
+- `NEEDS CONFIRMATION`: exact target production source/state, target PostgreSQL migration, encrypted backup/disposable restore, rollback, CI runner, security gate dan authenticated operator UAT belum dijalankan untuk candidate ini. Production tidak boleh dianggap berubah dari preview atau source push.
+- Program Inventory PRD saat ini Accepted 0/198, Implemented candidate 5/198, Audited 198/198, red-team accepted 0/25, readiness 21/100; `BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS Inventory/HPP W0 residual
 
 - `CONFIRMED`: HPP payment-time deduction ditutup pada source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`; PREPARING consumption, atomic persistence, v16 replay dan period boundary lulus local regression.

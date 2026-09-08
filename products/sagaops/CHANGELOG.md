@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-08 — W1 inventory reservation dan provisional COGS terintegrasi
+
+- `CONFIRMED`; source `0df408243c08a54475fa3c3d43d13a973b12d68e`, draft PR #7, menggabungkan inventory authority `28209fbe` dan costing fix `5d0229fe` di atas W0 `3c4cbba3`.
+- Confirmed payment/zero-total membuat reservation tanpa mengurangi on-hand; PREPARING melakukan consumption satu kali. Shortage memiliki provisional cost, immutable FIFO revaluation, adjusted COGS, review flag, dan fail-closed untuk silent Rp0.
+- State v18 kanonik memuat reservation dan adjustment ledger; v17 migration dan partial-v18 rejection lulus. Full631/0/1 skip/2 TODO, check302/24, dependency0 dan independent critical93/0/2 TODO PASS.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; GitHub CI `CI_BILLING_BLOCKED`, production tidak berubah, `BUSINESS_READY=false`. Remake dan genuine offline physical-sale acceptance masih expected-red.
+
 ## 2026-09-08 — PREPARING inventory consumption W0
 
 - `CONFIRMED`; source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338` dipush pada branch `codex/sagapos-inventory-hpp-w0` dan tersedia pada draft PR #4.

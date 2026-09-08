@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-08 — SagaPOS inventory-costing W1
+
+- Status `partially accepted`; classification `CONFIRMED`; exact source `0df408243c08a54475fa3c3d43d13a973b12d68e`, branch `codex/sagapos-inventory-costing-w1-integrated`, draft PR #7.
+- Synced: reservation available-versus-on-hand, PREPARING consumption, cancel/refund release rule, verified-paid shortage review, provisional/adjusted COGS, FIFO revaluation, Rp0 fail-closed dan canonical v18 migration.
+- Evidence: full631 pass/0 fail/1 platform skip/2 TODO; check302 modules/24 migrations; dependency audit0; independent critical merged93 pass/0 fail/2 TODO. Hosted CI `CI_BILLING_BLOCKED`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production unchanged, `BUSINESS_READY=false`. Remake, genuine offline, target DB/recovery/rollback/security dan authenticated UAT masih terbuka.
+
 ## 2026-09-08 — SagaPOS PREPARING inventory W0
 
 - Status `partially accepted`; classification `CONFIRMED`; source branch `codex/sagapos-inventory-hpp-w0` dipush pada exact commit `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`, draft PR #4.

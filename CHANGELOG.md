@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-08 — SagaPOS inventory-costing W1 integration sync
+
+- `CONFIRMED`: source `0df408243c08a54475fa3c3d43d13a973b12d68e`, draft PR #7, menggabungkan reservation authority dan provisional/adjusted COGS dalam state v18 kanonik.
+- Alasan: perubahan ini mengubah workflow confirmed order, PREPARING, cancellation/refund, shortage valuation, report truth dan migration compatibility.
+- Area/file: SagaOPS product, dossier, changelog, portfolio, master knowledge, gaps dan sync status; tidak ada secret, PII, private identifier atau raw receipt.
+- Full631/0/1 skip/2 TODO, check302/24, dependency0 dan independent critical93/0/2 TODO PASS. Hosted CI nol-step karena billing/spending-limit (`CI_BILLING_BLOCKED`).
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS PREPARING inventory candidate sync
 
 - `CONFIRMED`: source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`, draft PR #4, mengubah HPP deduction dari payment-time menjadi PREPARING-time dengan atomic persistence dan replay guards.

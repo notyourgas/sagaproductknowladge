@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-08 — W1 canonical inventory-costing state
+
+Exact source `0df408243c08a54475fa3c3d43d13a973b12d68e` pada draft PR #7 menetapkan satu HPP state v18 yang mewajibkan reservation ledger dan COGS adjustment ledger. Reservation menyimpan recipe snapshot serta memisahkan available dari on-hand. PREPARING adalah physical-consumption trigger; replay/restart mempertahankan satu consumption dan refund sesudahnya tidak mengembalikan bahan.
+
+Verified-paid shortage dipertahankan sebagai fakta yang terlihat. Applied quantity dan provisional shortage cost membentuk posted COGS; receipt berikutnya membuat FIFO revaluation adjustment tanpa mengubah consumption asal. Aggregate yang membulat ke Rp0 ditolak atomik, sedangkan legacy unresolved zero-cost dilaporkan `COST_MISSING`. Flag shortage hanya dipilih server untuk confirmed cash, zero-total dan settled QRIS; client tidak dapat mengirim override.
+
+Evidence lokal: full631 pass/0 fail/1 platform skip/2 TODO, check302 modules/24 migrations/TypeScript PASS, dependency audit0, independent critical merged93 pass/0 fail/2 TODO. Dua TODO adalah B13-05 remake production-start consumption dan B22 genuine offline negative stock. Candidate belum melalui target DB, encrypted backup/disposable restore, rollback, CI runner, deployment atau authenticated business UAT; production tetap pada release sebelumnya dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — W0 PREPARING inventory-consumption candidate
 
 `CONFIRMED` dari exact source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`, branch `codex/sagapos-inventory-hpp-w0`, draft PR #4. Sebelum perubahan ini, HPP inventory dapat dikurangi saat payment menjadi PAID. Kandidat W0 memisahkan payment truth dari physical production: deduction terjadi sekali pada transisi `NEW -> IN_PROGRESS` atau PREPARING.

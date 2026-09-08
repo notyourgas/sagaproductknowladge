@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-08 — SagaPOS Inventory + HPP W1 candidate
+
+- `CONFIRMED`; exact source `0df408243c08a54475fa3c3d43d13a973b12d68e`, draft PR #7. Confirmed order memesan recipe-resolved ingredients tanpa mengurangi on-hand; PREPARING mengonsumsi tepat sekali. Cancel/refund sebelum produksi melepas reservation dan refund sesudah produksi tidak otomatis restock.
+- Shortage yang sudah menjadi paid truth dicatat dengan review flag dan provisional COGS, lalu direvaluasi secara immutable/FIFO dari receipt berikutnya. Silent Rp0 ditolak; legacy missing cost tetap null/`COST_MISSING`. Client tidak dapat mengaktifkan negative-stock override.
+- State v18 kanonik memerlukan `inventoryReservations` dan `cogsAdjustments`; state parsial fail-closed. Full631 pass/0 fail/1 skip/2 TODO, check302/24 dan dependency0 PASS; GitHub CI `CI_BILLING_BLOCKED`.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production belum berubah dan `BUSINESS_READY=false`. Jangan mengklaim remake atau genuine offline sale selesai; keduanya masih expected-red bersama target DB/recovery/rollback/UAT gates.
+
 ## 2026-09-08 — SagaPOS Inventory/HPP W0 menunggu PREPARING
 
 - `CONFIRMED`; draft PR #4 pada source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338` membuat payment stock-neutral dan mengurangi HPP inventory sekali saat fulfillment masuk PREPARING.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-08 — SagaPOS inventory authority + shortage costing W1
+
+`CONFIRMED`; exact source `0df408243c08a54475fa3c3d43d13a973b12d68e`, branch `codex/sagapos-inventory-costing-w1-integrated`, draft PR #7. Reservation kini menurunkan available tanpa on-hand deduction; PREPARING mem-post satu consumption. Shortage mendapat provisional COGS, flagged review dan immutable FIFO revaluation; silent Rp0 fail-closed. State v18 menyatukan reservation+adjustment ledger dan menolak bentuk parsial. Full631/0/1 skip/2 TODO, check302/24, dependency0 dan independent critical93/0/2 TODO PASS; hosted CI `CI_BILLING_BLOCKED`. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BUSINESS_READY=false`. Remake, genuine offline sale, recovery dan UAT tetap blocker.
+
 ## 2026-09-08 — SagaPOS PREPARING inventory W0
 
 `CONFIRMED`; exact source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`, branch `codex/sagapos-inventory-hpp-w0`, draft PR #4. Jalur HPP kini menunggu PREPARING sebelum physical deduction dan mempersistenkan fulfillment plus inventory atomik, termasuk migration/replay/report-boundary guards. Full suite lokal, static/type, dan tiga focused review lulus; hosted CI nol-step karena billing/spending-limit (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; preview bukan activation, production tidak berubah, `BUSINESS_READY=false`. ESB single-writer, reservation lifecycle, remake, shortage revaluation/COGS, recovery dan authenticated UAT tetap blocker.
