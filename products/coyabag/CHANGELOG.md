@@ -1,5 +1,24 @@
 # COYABAG Changelog
 
+## 2026-09-08 - Public checkout aktif dengan sole-owner governance
+
+- `CONFIRMED`: satu owner aktif dengan 2FA mengotorisasi checkout publik tanpa
+  akun owner kedua. Perubahan hanya mengaktifkan checkout; soft launch,
+  credential payment, dan payment gateway selection tidak berubah.
+- Exact source `187038317a5846bf121a197496aa404fde43892a` aktif pada immutable
+  release `20260908-1870383`. Readiness `45/45`, provider health, scheduler,
+  dua worker, backup, browser desktop/mobile, API health, dan nol failed job
+  lulus; smoke tidak membuat order.
+- Approval soft-launch yang tidak dapat self-approve ditutup sebagai superseded
+  oleh aktivasi sole-owner yang diaudit. Approval payment gateway terpisah tidak
+  disentuh.
+- Rollback konfigurasi dan rollback aplikasi ke `20260908-d6f171e` tersedia.
+  Status menjadi `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  READY_FOR_PUBLIC_ORDERS` untuk payment gateway dan shipping manual.
+- Classification: `CONFIRMED`; sumber: keputusan Andreas, exact source/release,
+  dan runtime evidence public-safe. Tidak ada PII, credential, atau raw payment
+  evidence dalam catatan ini.
+
 ## 2026-09-01 - Guarded shipment cancellation deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / BUSINESS_READY=false` dari source `a96d1a90a708dff917fb7b006dff3187f699d9af`, release `20260901-a96d1a9`, rollback `20260901-32d3419`.

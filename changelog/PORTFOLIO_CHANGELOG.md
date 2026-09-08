@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-08 - COYABAG public checkout aktif
+
+`CONFIRMED`; checkout publik COYABAG aktif melalui sole-owner governance tanpa
+membuat owner kedua. Exact source
+`187038317a5846bf121a197496aa404fde43892a` berjalan pada release
+`20260908-1870383`; readiness 45/45, payment provider health, two-worker queue,
+scheduler, backup, dependency audit, serta desktop/mobile smoke lulus tanpa
+membuat order. Soft launch dan manual payment tetap nonaktif, credential tidak
+berubah, dan shipping tetap manual. Status `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS` pada scope
+operasional saat ini; rollback konfigurasi dan aplikasi tersedia.
+
+
 ## 2026-09-08 — SagaPOS Owner-to-HR production UAT PASS
 
 `CONFIRMED`; Andreas menyelesaikan authenticated UAT pada domain resmi: satu login Owner membuka HR tanpa login kedua, delegated read-only People dan logout/revocation lulus, anonymous tetap ditahan, serta nol transaksi dibuat. Runtime tetap `614be99927802e329705f5c7575dd6813a83bac6`; ingress aktif dibatasi ke host Dashboard dan durability source `e5f669d6c3e3416ee2ae53e78aa136c84d06eeec` sudah dipush dengan full394/audit0 PASS tanpa klaim redeploy aplikasi baru. Feature `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_UAT_PASS`; workforce data sintetis dan gate operasional lain mempertahankan `BUSINESS_READY=false`.

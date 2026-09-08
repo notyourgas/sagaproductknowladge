@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-08 - COYABAG sole-owner public activation sync
+
+- `CONFIRMED`: checkout publik COYABAG diaktifkan oleh sole active owner dengan
+  2FA tanpa membuat akun owner kedua.
+- Exact source `187038317a5846bf121a197496aa404fde43892a`, immutable release
+  `20260908-1870383`, readiness 45/45, provider health, worker/scheduler,
+  backup, API dan browser desktop/mobile terverifikasi.
+- Payment credential/provider selection, soft launch, manual payment, dan data
+  order tidak dimutasi oleh smoke. Shipping tetap manual; rollback konfigurasi
+  dan aplikasi tersedia.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  READY_FOR_PUBLIC_ORDERS` pada scope sekarang. Area: COYABAG product/dossier,
+  changelog, master, decision, gap, dan sync status; data restricted dikecualikan.
+
+
 ## 2026-09-08 — SagaPOS Owner-to-HR production UAT PASS sync
 
 - `CONFIRMED`: Andreas menyelesaikan authenticated UAT pada domain resmi; satu sesi Owner membuka HR, menjalankan read-only People, lalu logout/revocation berhasil tanpa membuat transaksi.

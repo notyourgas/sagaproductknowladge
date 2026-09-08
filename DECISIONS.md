@@ -2710,3 +2710,16 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / IMPLEMENTED / SAGA_MEMBER_V7_HOME_FINAL_PRODUCTION_DEPLOYED / PUBLIC_DUMMY_DEMO_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; source `83b969d7c77a2ce8015fb087074d3d59e7acea39`, PR #21, deployment `dpl_7ZMPhGXxmfFG4SyUkXFZe2zWjGym` |
 | Dokumen terkait | [Saga Platform Product](products/saga-platform/PRODUCT.md), [Saga Platform Dossier](products/saga-platform/DOSSIER.md), [Saga Platform Changelog](products/saga-platform/CHANGELOG.md) |
+## DEC-195 - COYABAG memakai sole-owner governance untuk aktivasi publik
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-08 |
+| Topik | Aktivasi checkout publik dan struktur owner COYABAG |
+| Keputusan | Pertahankan tepat satu akun owner; jangan membuat owner kedua hanya untuk maker-checker. Aktivasi publik boleh dilakukan oleh sole active owner yang 2FA-nya terkonfirmasi setelah readiness, provider health, backup, worker, scheduler, UAT/sign-off, audit kritis, dan rollback lulus. |
+| Alasan | COYABAG dimiliki dan dioperasikan oleh satu owner; akun kedua fiktif menambah kerumitan dan menurunkan kejujuran audit. |
+| Alternatif yang dipertimbangkan | Membuat owner kedua; mempertahankan checkout tertutup; membypass approval tanpa guard atau audit. |
+| Dampak | Checkout publik aktif pada source `187038317a5846bf121a197496aa404fde43892a` dan release `20260908-1870383`; tidak ada perubahan credential, provider selection, manual payment, atau soft-launch mode. Approval soft-launch lama ditutup sebagai superseded, bukan dipalsukan sebagai approval dua pihak. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`; scope payment gateway dan shipping manual |
+| Dokumen terkait | [COYABAG Product](products/coyabag/PRODUCT.md), [COYABAG Dossier](products/coyabag/DOSSIER.md), [COYABAG Changelog](products/coyabag/CHANGELOG.md) |

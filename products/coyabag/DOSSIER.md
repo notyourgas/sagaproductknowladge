@@ -1,5 +1,23 @@
 # COYABAG Dossier
 
+## 2026-09-08 - Sole-owner public commerce activation
+
+`CONFIRMED`: checkout publik aktif tanpa akun owner kedua. Sistem memverifikasi
+tepat satu owner aktif dengan 2FA, exact runtime source
+`187038317a5846bf121a197496aa404fde43892a`, readiness `45/45`, payment provider
+health, nol exception bisnis high/critical terbuka, backup, scheduler, dan dua
+worker sebelum mengubah hanya `checkout_enabled`. Soft launch tetap nonaktif,
+credential payment tidak berubah, dan payment gateway tetap fail-closed ketika
+health/readiness turun.
+
+Immutable release aktif `20260908-1870383`. Laravel 679 total dengan 678 pass
+dan satu expected skip, storefront 224/224, audit dependency nol, serta browser
+desktop/mobile lulus tanpa overflow dan tanpa membuat order saat smoke.
+Rollback konfigurasi dapat menutup checkout segera; rollback aplikasi memakai
+release tersedia `20260908-d6f171e` dengan source terverifikasi. Status:
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+READY_FOR_PUBLIC_ORDERS` pada scope payment gateway dan shipping manual.
+
 ## 2026-09-01 - Guarded return quarantine handoff
 
 `CONFIRMED`: release `20260901-d09960c` menghapus keputusan restock/disposal
@@ -16,10 +34,10 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 1 September 2026
+- Updated: 8 September 2026
 - Delivery: `PRODUCTION_DEPLOYED`
 - Activation: `PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`
-- Business readiness: `BLOCKED`
+- Business readiness: `READY_FOR_PUBLIC_ORDERS` pada scope operasional saat ini
 
 ## Overview produk
 
@@ -84,15 +102,16 @@ dan maksimal lima intent baru per hari. Idempotent replay tidak menghabiskan
 kuota dua kali. Signed readiness lulus, tetapi tidak ada transaksi provider yang
 dibuat saat acceptance.
 
-Readiness saat ini 42/42. Owner 2FA, privacy/retention, UAT 15 langkah, dan
+Readiness pada snapshot historis ini 42/42. Owner 2FA, privacy/retention, UAT 15 langkah, dan
 release sign-off sudah lulus; readiness gate enforced mengembalikan
 `COMMERCE_ACTIVE`. Payment Detail menyediakan recovery sesi yang permissioned,
 recent-authenticated, rate-limited, dan fail-closed pada unknown attempt.
-Enam exception pembayaran lama tetap terbuka untuk rekonsiliasi operator.
+Exception pembayaran lama telah ditutup melalui keputusan operator dan tidak
+lagi menyisakan exception high/critical terbuka pada snapshot 8 September.
 Pengiriman memakai tarif manual pada sembilan kota dan belum merupakan
 coverage nasional atau Delivery API aktif.
-Backup database COYABAG masih local-disk dan perlu dipindahkan ke backup offsite
-sebelum business readiness final.
+Backup database dan restore drill lulus readiness. Offsite backup tetap menjadi
+hardening ketahanan yang direkomendasikan dan tidak mengubah status checkout.
 
 `CONFIRMED / PRODUCTION_DEPLOYED`: release `20260831-693152f`, exact source
 `693152f68d582bbdcb3fea564897056b094a1e7f`, dan rollback

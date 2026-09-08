@@ -7288,12 +7288,23 @@ pernah dilaporkan. Pricing final belum dikunci.
 ### COYABAG
 
 Ecommerce tas streetwear dengan storefront React/Vite dan backend
-Laravel/Inertia. Storefront, API, admin, dan checkout controlled trial live.
-Commerce aktif tidak sama dengan business readiness karena shipping masih
-manual terbatas dan exception pembayaran lama masih memerlukan operator.
+Laravel/Inertia. Storefront, API, admin, dan checkout publik live. Payment
+gateway menerima transaksi nyata; pengiriman memakai tarif manual sesuai
+wilayah yang ditampilkan saat checkout dan bukan klaim coverage nasional.
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED /
-COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
+COMMERCE_ACTIVE`. Business readiness: `READY_FOR_PUBLIC_ORDERS` pada scope
+payment gateway dan shipping manual saat ini.
+
+Snapshot 8 September 2026: sole active owner dengan 2FA mengotorisasi aktivasi
+tanpa akun owner kedua. Exact source
+`187038317a5846bf121a197496aa404fde43892a` aktif pada immutable release
+`20260908-1870383`; readiness `45/45`, payment provider health dan scheduler
+lulus, business exception high/critical terbuka nol, dua worker aktif, dan
+public desktop/mobile smoke tidak membuat order. Soft launch tetap nonaktif,
+manual payment nonaktif, credential payment tidak berubah, dan readiness gate
+tetap enforced. Rollback konfigurasi serta rollback aplikasi ke
+`20260908-d6f171e` tersedia.
 
 Admin terbaru sudah `PRODUCTION_DEPLOYED` pada exact source
 `1ad8cbcf3d175cb0b7ca619271a7e0d8ec801ac4`, immutable release

@@ -1,5 +1,20 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-08 - COYABAG public checkout sole-owner
+
+- Status `accepted`; classification `CONFIRMED`; Andreas menetapkan model satu
+  owner dan checkout publik telah aktif tanpa membuat owner kedua.
+- Runtime exact source `187038317a5846bf121a197496aa404fde43892a`, release
+  `20260908-1870383`, readiness 45/45, provider health, scheduler, worker,
+  backup, public API, dan browser desktop/mobile lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  READY_FOR_PUBLIC_ORDERS` pada scope payment gateway dan shipping manual.
+  Soft launch/manual payment tetap off dan credential tidak berubah.
+- Rollback konfigurasi serta rollback aplikasi ke `20260908-d6f171e`
+  tersedia. Offsite backup dan CSP dicatat sebagai hardening, bukan klaim
+  coverage nasional atau blocker checkout saat ini.
+
+
 ## 2026-09-08 — SagaPOS Owner-to-HR authenticated production UAT
 
 - Status `accepted`; classification `CONFIRMED`; authenticated official-domain UAT membuktikan satu login Owner, `/hr` tanpa login kedua, delegated read-only People, logout revocation dan nol transaksi.

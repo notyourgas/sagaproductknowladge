@@ -1,7 +1,7 @@
 # COYABAG Product Knowledge
 
-Updated: 1 September 2026
-Evidence status: production deployed + controlled-trial commerce active
+Updated: 8 September 2026
+Evidence status: production deployed + public commerce active
 
 ## Tujuan dokumen
 
@@ -11,9 +11,9 @@ berada di [GAPS](../../GAPS.md#coyabag).
 
 ## Konteks
 
-Storefront/API/admin live dan checkout controlled trial aktif. Aktivasi ini
-belum sama dengan kesiapan bisnis nasional karena pengiriman masih manual
-terbatas dan exception pembayaran lama masih memerlukan rekonsiliasi operator.
+Storefront/API/admin dan checkout publik aktif untuk menerima order nyata.
+Pengiriman tetap memakai tarif manual dengan cakupan yang ditampilkan saat
+checkout; status ini bukan klaim coverage nasional atau Delivery API otomatis.
 
 ## Ringkasan
 
@@ -52,7 +52,8 @@ payment, bukti, atau status pesanan sudah berubah. Exact source
 - API: `https://api.coyabag.com`
 - Admin: `https://admin.coyabag.com`
 
-Surface live tidak sama dengan transaksi commerce sudah aktif penuh.
+Surface live dan transaksi commerce publik aktif pada scope operasional saat
+ini.
 
 ## Fitur storefront
 
@@ -89,22 +90,39 @@ Surface live tidak sama dengan transaksi commerce sudah aktif penuh.
 ## Status saat ini
 
 Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED /
-COMMERCE_ACTIVE`. Business readiness: `BLOCKED`.
+COMMERCE_ACTIVE`. Business readiness: `READY_FOR_PUBLIC_ORDERS` pada scope
+payment gateway dan pengiriman manual saat ini.
 
 - Storefront, API, dan admin sudah live di Hostinger.
+- Public checkout diaktifkan 8 September 2026 oleh sole active owner tanpa
+  membuat akun owner kedua. Owner 2FA terkonfirmasi, readiness `45/45`, payment
+  provider health terbaru lulus, business exception high/critical terbuka nol,
+  dan readiness gate production tetap enforced.
+- Runtime aktif memakai exact source
+  `187038317a5846bf121a197496aa404fde43892a` pada immutable release
+  `20260908-1870383`. Source branch remote cocok. Storefront 224/224, Laravel
+  679 total dengan 678 pass dan satu expected skip, dependency audit nol,
+  desktop/mobile browser checkout, backup, worker, scheduler, public API, dan
+  rollback gate lulus.
+- Rollback konfigurasi dapat menutup checkout tanpa rollback source. Rollback
+  aplikasi diarahkan ke release tersedia `20260908-d6f171e`, exact source
+  `d6f171e51b3d277d07344f969fc78dd5de35ba18`, setelah checkout dinonaktifkan.
+- Approval soft-launch yang tidak mungkin disetujui oleh owner yang sama
+  ditutup sebagai superseded oleh aktivasi sole-owner yang diaudit. Permintaan
+  perubahan payment gateway lain tidak disentuh dan credential tidak berubah.
 - SagaDev Managed Gateway controlled trial sudah terhubung melalui Saga
   Platform release `20260828203505-bec577e`, exact source
   `bec577ec407c2fc8693ffea4cbb7c2adb5f70040`, dengan rollback
   `20260824104557-65f9ff4`. Satu instalasi dan satu service account scope minimum
   aktif; signed readiness serta callback fail-closed lulus. Batas trial adalah
   Rp500.000 per transaksi dan lima payment intent baru per hari.
-- Readiness COYABAG kini 42/42 (100%). Owner 2FA dan
+- Readiness COYABAG pada release historis ini 42/42 (100%). Owner 2FA dan
   privacy/retention policy versi `2026.08-v1` sudah aktif, terverifikasi, dan
   disetujui dengan fingerprint yang cocok. Kebijakan publik memuat delapan
   bagian; audit tetap `report_only` dan tidak menghapus record.
 - Launch UAT 15 langkah dan release sign-off sudah lulus. Readiness gate tetap
   enforced dan keputusan runtime adalah `COMMERCE_ACTIVE`.
-- Release aktif `20260901-d09960c` dengan exact material source
+- Release historis `20260901-d09960c` dengan exact material source
   `d09960c2b71c23fa3fbdeaccf5c8e75c4596f486` melayani production;
   rollback langsung `20260901-16922ab` tersedia dan readiness lulus 42/42.
   Indeks Pengaturan menampilkan ringkasan faktual, pencarian, empat kategori
