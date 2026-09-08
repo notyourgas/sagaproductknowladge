@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-08 — Inventory dikonsumsi saat PREPARING pada kandidat W0
+
+- `CONFIRMED`; source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338` pada draft PR #4 mengubah jalur HPP agar pembayaran tetap stock-neutral dan deduction pertama terjadi ketika fulfillment masuk `PREPARING`.
+- Fulfillment dan snapshot HPP commit/rollback atomik, replay worker memuat ulang state otoritatif, state v16 bermigrasi tanpa deduction kedua, cancel sebelum PREPARING tetap netral, dan refund setelah PREPARING tidak mengembalikan bahan secara otomatis.
+- Full repository suite lokal dan static/type check lulus; tiga review independen lulus 74/74, 68/68, dan 91/91 focused tests. Hosted CI tidak memulai satu pun step karena billing/spending-limit, sehingga berstatus `CI_BILLING_BLOCKED`, bukan PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Preview Vercel bukan aktivasi produk. Runtime production tidak berubah; `BUSINESS_READY=false`.
+- `NEEDS CONFIRMATION`: single inventory authority lintas ESB/HPP, reservation available versus on-hand, cancel/refund release, remake consumption, shortage revaluation/COGS, restore rehearsal, dan authenticated UAT.
+
 ## 2026-09-08 — Owner-HR single-session UAT lulus di production
 
 - `CONFIRMED`; [Owner Dashboard](https://dashboard.sagapos.site/) dan `/hr` lulus authenticated official-domain UAT: Owner login sekali, HR terbuka tanpa login kedua, read-only People berhasil dan logout mencabut sesi.

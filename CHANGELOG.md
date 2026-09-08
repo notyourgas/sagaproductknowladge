@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-08 — SagaPOS PREPARING inventory candidate sync
+
+- `CONFIRMED`: source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`, draft PR #4, mengubah HPP deduction dari payment-time menjadi PREPARING-time dengan atomic persistence dan replay guards.
+- Alasan: perubahan workflow inventory, migration compatibility, dan report period boundary merupakan perubahan material produk.
+- Area/file: SagaOPS product, dossier, changelog, portfolio, master knowledge, gaps dan sync status; tidak ada secret, PII, identifier privat atau raw receipt.
+- Full suite lokal/static/type dan review independen lulus. Hosted CI nol-step karena billing/spending-limit (`CI_BILLING_BLOCKED`).
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 - COYABAG sole-owner public activation sync
 
 - `CONFIRMED`: checkout publik COYABAG diaktifkan oleh sole active owner dengan

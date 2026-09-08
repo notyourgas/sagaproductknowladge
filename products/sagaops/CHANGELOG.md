@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-08 — PREPARING inventory consumption W0
+
+- `CONFIRMED`; source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338` dipush pada branch `codex/sagapos-inventory-hpp-w0` dan tersedia pada draft PR #4.
+- Payment menjadi stock-neutral; HPP inventory dikonsumsi atomik dan idempotent saat fulfillment pertama masuk PREPARING. Migrasi v16, stale-worker replay, cancel-before-prep, refund-after-prep dan count-boundary reporting mempunyai regression coverage.
+- Full suite lokal dan static/type check PASS; review independen 74/74, 68/68, dan 91/91 PASS. Hosted CI memiliki nol step karena billing/spending-limit: `CI_BILLING_BLOCKED`.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. ESB authority/reservation/remake dan valuation/COGS/recovery/UAT masih terbuka.
+
 ## 2026-09-08 — Owner-HR authenticated production UAT PASS
 
 - `CONFIRMED`; satu login Owner pada domain resmi membuka `/hr`, delegated read-only People berhasil, logout/revocation lulus dan nol transaksi dibuat.

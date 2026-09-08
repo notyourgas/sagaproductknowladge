@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-08 — SagaPOS Inventory/HPP W0 menunggu PREPARING
+
+- `CONFIRMED`; draft PR #4 pada source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338` membuat payment stock-neutral dan mengurangi HPP inventory sekali saat fulfillment masuk PREPARING.
+- Atomic persistence, v16 compatibility, stale-worker reload, cancel/refund timing dan PREPARING count-boundary sudah tervalidasi lokal. Hosted CI tidak berjalan karena billing/spending-limit dan tidak boleh disebut PASS.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production SagaPOS tidak berubah, preview bukan activation, dan `BUSINESS_READY=false`.
+- Jangan menjanjikan inventory authority lengkap sebelum ESB reservation/writer, cancel/refund release, remake, shortage revaluation/COGS, recovery dan authenticated UAT ditutup.
+
 ## 2026-09-08 — Owner-to-HR official-domain UAT PASS
 
 - `CONFIRMED`: [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/) dan [HR Owner](https://dashboard.sagapos.site/hr) telah melewati authenticated production UAT dengan satu login Owner; tidak ada login SagaWork kedua.

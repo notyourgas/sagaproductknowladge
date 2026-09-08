@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-08 — SagaPOS PREPARING inventory W0
+
+- Status `partially accepted`; classification `CONFIRMED`; source branch `codex/sagapos-inventory-hpp-w0` dipush pada exact commit `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`, draft PR #4.
+- Synced: payment stock-neutral, PREPARING consumption, atomic fulfillment/HPP persistence, v16 replay compatibility, stale-worker recovery, cancel/refund timing dan inventory variance boundary.
+- Evidence lokal full-suite exit 0, static/type PASS, focused independent 74/74, 68/68, dan 91/91. GitHub Actions tidak mendapat runner karena billing/spending-limit; `CI_BILLING_BLOCKED`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Vercel preview bukan product activation. Production tetap release sebelumnya; `BUSINESS_READY=false`.
+- Residual: ESB single writer/reservation/cancel-refund/remake, shortage revaluation/COGS, restore/rollback dan authenticated UAT.
+
 ## 2026-09-08 - COYABAG public checkout sole-owner
 
 - Status `accepted`; classification `CONFIRMED`; Andreas menetapkan model satu

@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-08 — W0 PREPARING inventory-consumption candidate
+
+`CONFIRMED` dari exact source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`, branch `codex/sagapos-inventory-hpp-w0`, draft PR #4. Sebelum perubahan ini, HPP inventory dapat dikurangi saat payment menjadi PAID. Kandidat W0 memisahkan payment truth dari physical production: deduction terjadi sekali pada transisi `NEW -> IN_PROGRESS` atau PREPARING.
+
+Repository mewajibkan scope organisasi/outlet dan consumption decision. Verified recipe harus membawa matching PREPARING consumption dalam transaksi fulfillment yang sama; legacy unmapped memakai keputusan eksplisit yang diverifikasi terhadap item snapshot dan tercatat di audit. State v16 paid-consumption tetap dapat masuk PREPARING tanpa deduction kedua. Concurrent stale worker memuat ulang HPP revision dan snapshot otoritatif.
+
+Inventory variance state v17 memakai `saleConsumption.occurredAt` dengan opening-exclusive/closing-inclusive, sehingga payment dan PREPARING yang melewati batas stock count tidak menghasilkan false verified report. Legacy state tetap memakai payment-time basis yang berlabel eksplisit.
+
+Bukti lokal: full repository suite exit 0, static/type check PASS untuk 298 modules, OpenAPI 3.1.0, 8 reliability routes dan 24 migration. Review independen Inventory, Costing, dan QA masing-masing lulus 74/74, 68/68, dan 91/91 focused tests. Hosted GitHub Actions berhenti sebelum step pertama karena billing/spending-limit; klasifikasi `CI_BILLING_BLOCKED`.
+
+Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; runtime production tetap pada release sebelumnya. Draft preview tidak membuktikan deployment atau activation. Single inventory writer lintas ESB/HPP, reservation lifecycle, remake, provisional shortage/revaluation, posted COGS, recovery dan UAT tetap blocker; `BUSINESS_READY=false`.
+
 ## 2026-09-08 — Authenticated Owner-HR production acceptance
 
 `CONFIRMED`: UAT dari domain resmi membuktikan satu sesi Owner membuka `/hr`, menerima HR state terintegrasi, menjalankan satu read-only People request, lalu logout dan revocation berhasil. Tidak ada login SagaWork kedua, tidak ada transaksi, dan anonymous request tetap ditahan.

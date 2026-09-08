@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-08 — SagaPOS Inventory/HPP W0 residual
+
+- `CONFIRMED`: HPP payment-time deduction ditutup pada source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`; PREPARING consumption, atomic persistence, v16 replay dan period boundary lulus local regression.
+- `NEEDS CONFIRMATION`: ESB masih mempunyai reservation/writer yang harus disatukan dengan authority HPP agar available dan on-hand tidak double-decrement.
+- `NEEDS CONFIRMATION`: cancellation/refund reservation release, remake second consumption, provisional shortage revaluation, posted/adjusted COGS, database-native restore/rollback dan authenticated operator UAT.
+- GitHub Actions berstatus `CI_BILLING_BLOCKED` karena job berhenti dengan nol step. Draft preview bukan deployment atau activation. `BUSINESS_READY=false`.
+
 ## 2026-09-08 — Owner-to-HR authenticated production UAT selesai
 
 - `CONFIRMED`: authenticated UAT pada domain resmi lulus: satu login Owner membuka `/hr`, delegated read-only People berhasil, logout mencabut sesi, dan tidak ada transaksi yang dibuat. Nginx production mengizinkan hanya surface HR Owner pada host Dashboard dan tetap menahan jalur HR/Staff lama.

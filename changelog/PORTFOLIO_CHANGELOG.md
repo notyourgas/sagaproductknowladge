@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-08 — SagaPOS PREPARING inventory W0
+
+`CONFIRMED`; exact source `3c4cbba3b9712c3f4837dc16dbe5483cbec73338`, branch `codex/sagapos-inventory-hpp-w0`, draft PR #4. Jalur HPP kini menunggu PREPARING sebelum physical deduction dan mempersistenkan fulfillment plus inventory atomik, termasuk migration/replay/report-boundary guards. Full suite lokal, static/type, dan tiga focused review lulus; hosted CI nol-step karena billing/spending-limit (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; preview bukan activation, production tidak berubah, `BUSINESS_READY=false`. ESB single-writer, reservation lifecycle, remake, shortage revaluation/COGS, recovery dan authenticated UAT tetap blocker.
+
 ## 2026-09-08 - COYABAG public checkout aktif
 
 `CONFIRMED`; checkout publik COYABAG aktif melalui sole-owner governance tanpa
