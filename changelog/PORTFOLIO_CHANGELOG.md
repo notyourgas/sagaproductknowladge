@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-09 - COYABAG UI integration production release
+
+`CONFIRMED`; exact source `951e294a6cfc50b45c5311fc2d91f613843acc32`
+aktif pada immutable release `20260909-951e294`, rollback
+`20260909-01fddb3`. Plus Jakarta Sans kini konsisten pada UI/body storefront dan
+admin; bootstrap tidak lagi meminta global `campaign_landing` yang unsupported.
+Full release, recovery, security, responsive, accessibility, provider/storage,
+worker/scheduler, monitor, dan public smoke lulus tanpa mutasi transaksi atau
+inventory. Readiness exact release `43/45`; checkout fail-closed sampai sole
+owner menutup UAT 15 langkah dan sign-off operations/security/UAT. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT /
+BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 5 candidate 101/198
 
 `CONFIRMED`; exact source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18` pada draft PR #12 mengintegrasikan master inventory, canonical movement/valuation, recipe/configuration/production/consumption, waste/count, traceability/transfer, availability/ATP dan replenishment sebagai kandidat lokal 101/198. Full 820/0/1 skip/1 TODO dari 822, focused 74/74, B18/B19 adversarial 27/27 dan check345/27 PASS; hosted Quality 34268550652 nol-step karena billing (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 24/100. Runtime authority, rollback v21, target DB/recovery/monitoring/staging/UAT belum selesai; production tidak berubah dan `BUSINESS_READY=false`.

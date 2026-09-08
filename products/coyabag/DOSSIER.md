@@ -1,5 +1,29 @@
 # COYABAG Dossier
 
+## 2026-09-09 - UI integration production release
+
+`CONFIRMED`: exact source `951e294a6cfc50b45c5311fc2d91f613843acc32`
+aktif pada immutable release `20260909-951e294`; rollback langsung
+`20260909-01fddb3` memakai source
+`01fddb3f00a450ce10639cab35127d4516c0e1ec`. Storefront, API, dan admin live.
+Deployment tidak menjalankan migrasi, mengubah credential, mengaktifkan
+provider, atau membuat/mengubah order, payment, reservation, dan inventory.
+
+Full release gate lulus termasuk 276/276 storefront, Laravel 677 pass dan satu
+expected skip dari 678 dengan 6.423 assertions, dependency audit nol, backup
+serta disposable restore, worker/scheduler, provider/storage probe, monitor,
+151 kombinasi responsif, 34 route-viewports aksesibilitas, dan 17 route tanpa
+HTTP/page error. Unsupported global request `campaign_landing` dihapus dari
+bootstrap storefront; route yang sah tetap memiliki fallback terlokalisasi.
+Plus Jakarta Sans dipakai untuk UI/body storefront dan seluruh admin.
+
+Readiness exact release adalah `43/45`; blocker hanya `launch_uat` dan
+`release_signoff`. Checkout tetap fail-closed dengan
+`PRODUCTION_READINESS_BLOCKED` sampai sole owner menyelesaikan checklist UAT 15
+langkah dan sign-off operations/security/UAT. Status:
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT /
+BUSINESS_READY=false`.
+
 ## 2026-09-08 - Sole-owner public commerce activation
 
 `CONFIRMED`: checkout publik aktif tanpa akun owner kedua. Sistem memverifikasi
@@ -34,10 +58,10 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 8 September 2026
+- Updated: 9 September 2026
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATED / COMMERCE_ACTIVE`
-- Business readiness: `READY_FOR_PUBLIC_ORDERS` pada scope operasional saat ini
+- Activation: `PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT`
+- Business readiness: `BUSINESS_READY=false`; checkout publik fail-closed
 
 ## Overview produk
 

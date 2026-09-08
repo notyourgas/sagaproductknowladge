@@ -1,5 +1,19 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-09 - COYABAG UI integration production release
+
+- Status `accepted`; classification `CONFIRMED`; exact source
+  `951e294a6cfc50b45c5311fc2d91f613843acc32`, release
+  `20260909-951e294`, rollback `20260909-01fddb3`.
+- Synced: Plus Jakarta Sans pada storefront/admin, penghapusan unsupported global
+  campaign content probe, full test/build/recovery/security/browser evidence,
+  dan state readiness exact release.
+- Gate teknis lulus dan provider/storage sehat. Readiness `43/45`; hanya
+  `launch_uat` dan `release_signoff` yang terbuka. Checkout tetap fail-closed
+  sampai sole owner menutup dua gate tersebut; `BUSINESS_READY=false`.
+- Tidak ada migrasi, aktivasi provider/credential, order/payment, reservation,
+  atau inventory mutation pada deployment.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 5
 
 - Status `partially accepted`; classification `CONFIRMED`; exact source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18`, branch `codex/sagapos-inventory-hpp-wave5-integration`, draft PR #12.

@@ -7329,16 +7329,28 @@ pernah dilaporkan. Pricing final belum dikunci.
 ### COYABAG
 
 Ecommerce tas streetwear dengan storefront React/Vite dan backend
-Laravel/Inertia. Storefront, API, admin, dan checkout publik live. Payment
-gateway menerima transaksi nyata; pengiriman memakai tarif manual sesuai
-wilayah yang ditampilkan saat checkout dan bukan klaim coverage nasional.
+Laravel/Inertia. Storefront, API, dan admin live. Payment gateway terhubung;
+pengiriman memakai tarif manual sesuai wilayah yang ditampilkan saat checkout
+dan bukan klaim coverage nasional. Checkout release terbaru masih fail-closed
+sampai UAT dan sign-off release-specific selesai.
 
-Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED /
-COMMERCE_ACTIVE`. Business readiness: `READY_FOR_PUBLIC_ORDERS` pada scope
-payment gateway dan shipping manual saat ini.
+Delivery: `PRODUCTION_DEPLOYED`. Activation:
+`PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT`. Business readiness:
+`BUSINESS_READY=false`.
 
-Snapshot 8 September 2026: sole active owner dengan 2FA mengotorisasi aktivasi
-tanpa akun owner kedua. Exact source
+Snapshot 9 September 2026: exact source
+`951e294a6cfc50b45c5311fc2d91f613843acc32` aktif pada immutable release
+`20260909-951e294`; rollback `20260909-01fddb3` memakai source
+`01fddb3f00a450ce10639cab35127d4516c0e1ec`. Plus Jakarta Sans konsisten pada
+UI/body storefront dan admin. Unsupported global content probe
+`campaign_landing` dihapus. Full release/recovery/security/browser gate lulus,
+provider dan storage sehat, worker/scheduler/monitor aktif, serta tidak ada
+migrasi atau mutasi order/payment/inventory saat deploy. Readiness `43/45`;
+sole owner perlu menyelesaikan UAT 15 langkah dan sign-off
+operations/security/UAT. Tidak diperlukan owner kedua.
+
+Snapshot historis 8 September 2026: sole active owner dengan 2FA mengotorisasi
+aktivasi tanpa akun owner kedua. Exact source
 `187038317a5846bf121a197496aa404fde43892a` aktif pada immutable release
 `20260908-1870383`; readiness `45/45`, payment provider health dan scheduler
 lulus, business exception high/critical terbuka nol, dua worker aktif, dan

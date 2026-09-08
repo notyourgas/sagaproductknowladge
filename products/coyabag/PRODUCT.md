@@ -1,7 +1,7 @@
 # COYABAG Product Knowledge
 
-Updated: 8 September 2026
-Evidence status: production deployed + public commerce active
+Updated: 9 September 2026
+Evidence status: production deployed + release-specific activation pending
 
 ## Tujuan dokumen
 
@@ -11,9 +11,11 @@ berada di [GAPS](../../GAPS.md#coyabag).
 
 ## Konteks
 
-Storefront/API/admin dan checkout publik aktif untuk menerima order nyata.
-Pengiriman tetap memakai tarif manual dengan cakupan yang ditampilkan saat
-checkout; status ini bukan klaim coverage nasional atau Delivery API otomatis.
+Storefront, API, dan admin live. Release UI 9 September 2026 sudah aktif, tetapi
+checkout publik fail-closed sampai checklist UAT dan release sign-off untuk
+exact release ini diselesaikan owner. Pengiriman tetap memakai tarif manual
+dengan cakupan yang ditampilkan saat checkout; status ini bukan klaim coverage
+nasional atau Delivery API otomatis.
 
 ## Ringkasan
 
@@ -21,7 +23,7 @@ COYABAG adalah ecommerce tas streetwear dengan storefront React/Vite dan backend
 operasional Laravel/Inertia.
 
 Visual direction storefront: streetwear, hitam-putih, editorial product focus,
-dengan Instrument Serif untuk display dan Helvetica family untuk UI/body.
+dengan Instrument Serif untuk display dan Plus Jakarta Sans untuk UI/body.
 Dashboard admin memakai Plus Jakarta Sans variable self-hosted untuk seluruh
 interface operasional; wordmark COYABAG tetap memakai font logo resminya.
 
@@ -52,8 +54,8 @@ payment, bukti, atau status pesanan sudah berubah. Exact source
 - API: `https://api.coyabag.com`
 - Admin: `https://admin.coyabag.com`
 
-Surface live dan transaksi commerce publik aktif pada scope operasional saat
-ini.
+Semua surface live. Transaksi commerce publik pada release terbaru masih
+ditahan readiness gate sampai UAT dan sign-off release selesai.
 
 ## Fitur storefront
 
@@ -89,27 +91,33 @@ ini.
 
 ## Status saat ini
 
-Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED /
-COMMERCE_ACTIVE`. Business readiness: `READY_FOR_PUBLIC_ORDERS` pada scope
-payment gateway dan pengiriman manual saat ini.
+Delivery: `PRODUCTION_DEPLOYED`. Activation:
+`PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT`. Business readiness:
+`BUSINESS_READY=false`; public checkout fail-closed.
 
 - Storefront, API, dan admin sudah live di Hostinger.
-- Public checkout diaktifkan 8 September 2026 oleh sole active owner tanpa
-  membuat akun owner kedua. Owner 2FA terkonfirmasi, readiness `45/45`, payment
-  provider health terbaru lulus, business exception high/critical terbuka nol,
-  dan readiness gate production tetap enforced.
 - Runtime aktif memakai exact source
-  `187038317a5846bf121a197496aa404fde43892a` pada immutable release
-  `20260908-1870383`. Source branch remote cocok. Storefront 224/224, Laravel
-  679 total dengan 678 pass dan satu expected skip, dependency audit nol,
-  desktop/mobile browser checkout, backup, worker, scheduler, public API, dan
-  rollback gate lulus.
-- Rollback konfigurasi dapat menutup checkout tanpa rollback source. Rollback
-  aplikasi diarahkan ke release tersedia `20260908-d6f171e`, exact source
-  `d6f171e51b3d277d07344f969fc78dd5de35ba18`, setelah checkout dinonaktifkan.
-- Approval soft-launch yang tidak mungkin disetujui oleh owner yang sama
-  ditutup sebagai superseded oleh aktivasi sole-owner yang diaudit. Permintaan
-  perubahan payment gateway lain tidak disentuh dan credential tidak berubah.
+  `951e294a6cfc50b45c5311fc2d91f613843acc32` pada immutable release
+  `20260909-951e294`; rollback langsung `20260909-01fddb3` memakai source
+  `01fddb3f00a450ce10639cab35127d4516c0e1ec`. Source remote cocok dan tidak ada
+  migrasi, aktivasi provider, perubahan credential, order, payment, atau mutasi
+  inventory saat deploy.
+- Full release gate lulus: storefront 276/276, Laravel 678 total dengan 677 pass
+  dan satu expected skip (6.423 assertions), dependency audit nol, backup dan
+  disposable restore, worker/scheduler, payment/storage probe, monitor, public
+  smoke, 151 kombinasi responsif, 34 route-viewports aksesibilitas, serta 17
+  route tanpa HTTP/page error.
+- Readiness saat ini `43/45` (96%). Dua blocker tunggal adalah `launch_uat` dan
+  `release_signoff`; checkout mengembalikan `PRODUCTION_READINESS_BLOCKED`.
+  Sole owner perlu menyelesaikan checklist 15 langkah lalu menyetujui sign-off
+  operations, security, dan UAT. Tidak diperlukan akun owner kedua.
+- Integrasi storefront tidak lagi meminta content key global
+  `campaign_landing` yang tidak didukung API; fallback campaign tetap hanya
+  digunakan pada route yang memang membutuhkannya. Plus Jakarta Sans kini
+  konsisten pada UI/body storefront dan admin.
+- Snapshot 8 September 2026 pada release `20260908-1870383` pernah mencapai
+  readiness `45/45` dan `COMMERCE_ACTIVE` melalui governance sole-owner. Bukti
+  tersebut historis dan tidak menggantikan UAT/sign-off exact release terbaru.
 - SagaDev Managed Gateway controlled trial sudah terhubung melalui Saga
   Platform release `20260828203505-bec577e`, exact source
   `bec577ec407c2fc8693ffea4cbb7c2adb5f70040`, dengan rollback

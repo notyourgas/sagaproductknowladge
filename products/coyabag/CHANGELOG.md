@@ -1,5 +1,24 @@
 # COYABAG Changelog
 
+## 2026-09-09 - UI integration release dan campaign probe cleanup
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `951e294a6cfc50b45c5311fc2d91f613843acc32` aktif pada immutable release
+  `20260909-951e294`; rollback `20260909-01fddb3` memakai source
+  `01fddb3f00a450ce10639cab35127d4516c0e1ec`.
+- Plus Jakarta Sans konsisten pada UI/body storefront dan admin. Bootstrap
+  storefront berhenti meminta content key global `campaign_landing` yang tidak
+  didukung API; fallback route-specific tetap dipertahankan.
+- Full gate lulus: storefront 276/276, Laravel 677 pass + satu expected skip dari
+  678 dengan 6.423 assertions, dependency audit nol, backup/disposable restore,
+  worker/scheduler, payment/storage/monitor, public smoke, 151 responsive
+  combinations, 34 route-viewports accessibility, dan 17 route tanpa HTTP/page
+  error.
+- Tidak ada migrasi, provider activation, credential change, order/payment,
+  reservation, atau inventory mutation. Readiness `43/45`; `launch_uat` dan
+  `release_signoff` tetap fail-closed sehingga status
+  `PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT / BUSINESS_READY=false`.
+
 ## 2026-09-08 - Public checkout aktif dengan sole-owner governance
 
 - `CONFIRMED`: satu owner aktif dengan 2FA mengotorisasi checkout publik tanpa

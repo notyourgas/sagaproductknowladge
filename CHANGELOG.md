@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-09 - COYABAG UI integration production sync
+
+- `CONFIRMED`: exact source `951e294a6cfc50b45c5311fc2d91f613843acc32`
+  aktif pada release `20260909-951e294`; rollback `20260909-01fddb3`.
+- Synced: Plus Jakarta Sans storefront/admin, unsupported campaign content probe
+  cleanup, full release/recovery/security/browser evidence, serta readiness
+  release-specific `43/45`.
+- Tidak ada migrasi, provider/credential activation, atau mutasi transaksi dan
+  inventory. Checkout fail-closed sampai UAT dan sign-off sole owner selesai;
+  status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT /
+  BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 5 sync
 
 - `CONFIRMED`: exact source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18`, draft PR #12, menaikkan implemented candidate dari 8/198 menjadi 101/198 pada scope B02–B05 dan B09–B19.
