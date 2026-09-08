@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-08 — W3 durable intake dan rollback compatibility v19
+
+- `CONFIRMED`; W3 exact source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39`, draft PR #9, membuat pre-start remake queue durable dan offline ingestion server-authorized dengan atomic queue/audit/outbox, replay, collision, restart, serta no-payment/no-loyalty guards.
+- `CONFIRMED`; rollback exact source `e1602833f3778aca906f13895d51a88050318252`, draft PR #10, membaca/mengekspor HPP v19 opaque dalam mode business read-only dan memverifikasi exact migration ledger 16 atau 24 dari base `6824565` serta writer `a5bcda3`.
+- W3 focused12/full644/0/1 skip/2 TODO/check309/24 dan audit adversarial PASS; rollback compatibility5, focused58, check169/16 dan cross-version deep-equal PASS. Quality CI kedua PR nol-step (`CI_BILLING_BLOCKED`).
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 0/198 accepted, 8/198 implemented candidate, 198/198 audited, 0/25 red-team accepted, readiness 21/100. Draft merge, hosted CI, package/target-DB rehearsal, backup/restore, monitoring, staging dan authenticated/physical UAT masih terbuka; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — W2 remake dan offline consumption pada canonical v19
 
 - `CONFIRMED`; exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, draft PR #8, mengintegrasikan B13-05 dan candidate B22-03/B22-04 di atas W1 `0df4082`.

@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-08 — SagaPOS inventory/HPP W3 dan rollback compatibility
+
+- Status `partially accepted`; classification `CONFIRMED`; W3 exact source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39` pada draft PR #9 dan rollback exact source `e1602833f3778aca906f13895d51a88050318252` pada draft PR #10.
+- Synced: durable pre-start remake queue, server-authorized offline ingestion, atomic queue/audit/outbox, persisted snapshot, replay/collision/restart guards, opaque v19 rollback read/export, global business-write fence, dan exact 16/24 migration ledger gate.
+- Evidence PASS: W3 focused12/full644/0/1 platform skip/2 legacy TODO/check309/24 plus adversarial audit; rollback compatibility5/focused58/check169/16 plus deep-equal cross-version rehearsal. Quality CI kedua PR `CI_BILLING_BLOCKED` karena nol step.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100. Production/activation tidak berubah dan `BUSINESS_READY=false`.
+- Blocker: draft merge, hosted CI, immutable packaging, target DB rehearsal, encrypted backup/disposable restore, monitoring, staging activation, physical devices, dan authenticated operator/finance/security/Owner UAT.
+
 ## 2026-09-08 — SagaPOS inventory/HPP W2
 
 - Status `partially accepted`; classification `CONFIRMED`; exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, branch `codex/sagapos-inventory-hpp-w2-integrated`, draft PR #8.

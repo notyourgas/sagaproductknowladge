@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-08 — W3 durable intake dan jalur rollback HPP v19
+
+Exact source W3 `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39` pada draft PR #9 memperkuat canonical v19 tanpa menaikkan coverage PRD. Queue remake sebelum production start menjadi durable dan dipersist bersama audit sehingga restart tidak kehilangan permintaan. Start produksi tetap menjadi satu-satunya physical-consumption trigger; retry menggunakan identity yang sama dan tidak membuat payment, loyalty, consumption, atau queue kedua.
+
+Offline sync sekarang memeriksa authority dari registrasi device aktif, outlet, dan capability inventory di server. Runtime memakai snapshot order persisted dan mempersistenkan queue, audit, serta outbox dalam transaksi yang sama. Exact replay tetap satu fakta; collision event ID atau device sequence dengan payload berbeda menghasilkan satu review operator dan tidak mengubah stok. Evidence exact candidate: focused W3+W2 12/12, full 644 pass/0 fail/1 platform skip/2 legacy TODO, check309 modules/24 migrations, serta independent adversarial replay/tamper/device/race PASS setelah dua P1 diperbaiki.
+
+Rollback source `e1602833f3778aca906f13895d51a88050318252` pada draft PR #10 mempertahankan runtime base `682456535a9dc0c930910dba3c9773ab44fcc84c` sambil membawa exact hash-bound reader untuk HPP v19 writer `a5bcda3316cab16b8647c09592b2889e2730e4d8`. Snapshot v19 divalidasi, dibaca, dan diekspor opaque tanpa rewrite; seluruh business/HPP write ditolak selama compatibility mode. Manifest hanya menerima exact 16 base migrations atau exact 24 forward migrations. Compatibility-specific 5/5, independent focused 58/58, check169/16, dan rehearsal v16→v19→rollback-read→v19 deep-equal PASS.
+
+GitHub Quality untuk kedua exact head berakhir dengan nol step sehingga `CI_BILLING_BLOCKED`, bukan PASS. Kedua PR masih draft. Program tetap Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100. Merge, hosted CI, immutable packaging, target PostgreSQL ledger/rehearsal, encrypted backup/disposable restore, monitoring/health, staging activation, physical two-device UAT, serta authenticated operator/finance/security/Owner acceptance belum selesai; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — W2 canonical production identity state v19
 
 Exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8` pada draft PR #8 menyatukan W1 reservation/COGS dengan remake dan offline physical-sale consumption. Original start memakai `ORIGINAL:<sha256(orderId)>`; remake membawa production-start key dan optional remake reference; offline membawa exact source event/fingerprint. State v18 bermigrasi deterministik ke v19 dan mempertahankan reservation arrays, COGS adjustments, serta `consumptionId` links.

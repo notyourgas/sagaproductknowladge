@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-08 — SagaPOS Inventory/HPP W3 dan rollback compatibility sync
+
+- `CONFIRMED`: W3 source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39`, draft PR #9, membuat remake queue durable dan offline ingestion server-authorized; rollback source `e1602833f3778aca906f13895d51a88050318252`, draft PR #10, menambah opaque read-only HPP v19 serta ledger exact 16/24 pada runtime base `6824565`.
+- Alasan: perubahan ini menutup risiko kehilangan queue/replay offline dan menyediakan jalur aplikasi rollback yang dapat boot tanpa menulis ulang HPP v19.
+- Area/file: SagaOPS product, dossier, changelog, portfolio, master knowledge, gaps dan sync status. Klasifikasi `CONFIRMED`; source pushed dan local validated, tanpa data restricted.
+- W3 focused12/full644/0/1 skip/2 TODO/check309/24 dan rollback5/focused58/check169/16/cross-version rehearsal PASS. Hosted Quality CI kedua PR nol-step (`CI_BILLING_BLOCKED`).
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 0/198 accepted, 8/198 implemented candidate, 198/198 audited, 0/25 red-team accepted, readiness 21/100. Merge, package, target DB/recovery/monitoring, staging dan UAT masih blocker; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS Inventory/HPP W2 canonical v19 sync
 
 - `CONFIRMED`: exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, branch `codex/sagapos-inventory-hpp-w2-integrated`, draft PR #8, menggabungkan remake production consumption dan offline physical-sale shortage pada satu state v19.

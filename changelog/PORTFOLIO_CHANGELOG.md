@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-08 — SagaPOS W3 durable intake dan rollback v19
+
+`CONFIRMED`; W3 source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39` pada draft PR #9 membuat queue remake sebelum production start durable serta menegakkan offline authority dari device/outlet/capability server dengan atomic audit/outbox dan collision review tanpa mutasi stok. Rollback source `e1602833f3778aca906f13895d51a88050318252` pada draft PR #10 memberi base runtime `6824565` reader HPP v19 hash-bound, opaque export, business-write fence dan verifier ledger exact 16/24. W3 focused12/full644/0/1 skip/2 TODO/check309/24 serta rollback5/focused58/check169 dan rehearsal lintas versi PASS; Quality CI kedua PR nol-step (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 0/198 accepted, 8/198 implemented candidate, 198/198 audited, 0/25 red-team accepted, readiness 21/100. Merge, hosted CI, packaging, target DB/recovery, monitoring, staging serta authenticated/physical UAT masih blocker; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS Inventory/HPP W2 canonical v19
 
 `CONFIRMED`; exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, branch `codex/sagapos-inventory-hpp-w2-integrated`, draft PR #8. Remake kini membuat consumption kedua tanpa payment/loyalty kedua; offline physical sale mempertahankan shortage, review flag, fingerprint, replay/restart, dan collision guard. State v19 memakai bounded SHA-256 original production ID, mempertahankan reservation/COGS links, dan mendukung beberapa consumption per order. W2 6/6, focused63/0/2 TODO, full638/0/1 skip/2 TODO, check305/24 serta adversarial audit PASS; hosted CI `CI_BILLING_BLOCKED`. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; program 0/198 accepted, 8/198 implemented candidate, 198/198 audited, 0/25 red-team accepted, readiness 21/100, `BUSINESS_READY=false`.

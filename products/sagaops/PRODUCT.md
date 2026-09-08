@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-08 — W3 durable remake queue, offline authority, dan rollback v19
+
+- `CONFIRMED`; exact W3 source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39`, branch `codex/sagapos-inventory-hpp-w3-integrated`, draft PR #9. Queue `order.remake` kini tersimpan atomik sebelum `order.remake.start`, bertahan setelah restart, dan menjaga replay/collision tanpa payment atau loyalty kedua.
+- Offline ingestion memverifikasi device outlet aktif dan capability inventory di server, memakai snapshot persisted, serta menyimpan queue/audit/outbox atomik. Replay identik aman; event atau device-sequence dengan fakta berbeda membuat satu review operator tanpa mutasi stok.
+- Exact rollback-compatibility source `e1602833f3778aca906f13895d51a88050318252`, draft PR #10 di atas runtime base `682456535a9dc0c930910dba3c9773ab44fcc84c`, dapat membaca dan mengekspor HPP v19 secara opaque. Mode ini fail-closed read-only, mengikat reader ke writer v19 `a5bcda3316cab16b8647c09592b2889e2730e4d8`, dan hanya menerima exact ledger 16 atau 24 migrasi.
+- W3 focused 12/12, full 644 pass/0 fail/1 platform skip/2 legacy TODO, check309/24, serta audit replay/tamper/device/race PASS setelah dua P1 ditutup. Rollback compatibility 5/5, audit focused 58/58, check169/16, dan rehearsal v16→v19→rollback-read→v19 deep-equal PASS. Quality CI kedua PR gagal sebelum menjalankan step (`CI_BILLING_BLOCKED`).
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100. Kedua PR masih draft; merge, hosted CI, packaging, target-DB rehearsal, encrypted backup/disposable restore, monitoring, staging activation, physical-device serta authenticated operator/finance/security/Owner UAT masih blocker. Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — Canonical v19 untuk remake dan offline consumption W2
 
 - `CONFIRMED`; exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, branch `codex/sagapos-inventory-hpp-w2-integrated`, draft PR #8. State v19 memperluas W1 dengan production-start identity untuk original, remake, dan offline physical sale.

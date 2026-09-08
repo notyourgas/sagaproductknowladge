@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-08 — SagaPOS Inventory/HPP W3 source dan rollback compatibility
+
+- `CONFIRMED`; exact W3 source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39`, draft PR #9. Pre-start remake queue kini durable; offline sync memakai authoritative device/outlet/capability dan persisted order snapshot, lalu menyimpan queue/audit/outbox atomik. Replay identik tidak menambah fakta dan collision membuat review tanpa stock write.
+- `CONFIRMED`; rollback source `e1602833f3778aca906f13895d51a88050318252`, draft PR #10, menambah reader opaque read-only untuk HPP v19 pada base runtime `682456535a9dc0c930910dba3c9773ab44fcc84c`. Reader terikat ke writer `a5bcda3316cab16b8647c09592b2889e2730e4d8`; business mutation ditolak dan hanya ledger exact 16/24 yang diterima.
+- Local evidence: W3 focused12/full644/0/1 platform skip/2 legacy TODO/check309/24 dan audit adversarial PASS; rollback compatibility5/focused58/check169/16 serta v16→v19→rollback-read→v19 deep-equal PASS. Hosted Quality CI kedua PR menjalankan nol step (`CI_BILLING_BLOCKED`).
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; PR masih draft dan preview bukan deployment. Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100. Merge, CI, package/target DB/recovery/monitoring, staging, physical devices dan authenticated acceptance masih terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS Inventory/HPP W2 candidate
 
 - `CONFIRMED`; exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, draft PR #8. Canonical HPP state v19 menggabungkan reservation/COGS W1 dengan production identity untuk original, remake, dan offline physical sale.

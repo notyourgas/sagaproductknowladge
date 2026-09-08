@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-08 — SagaPOS Inventory PRD sesudah W3 dan rollback source
+
+- `CONFIRMED`: W3 exact source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39`, draft PR #9, menutup source gap durable pre-start remake queue serta memperketat offline ingestion dengan device/outlet/capability authority, persisted snapshot, atomic audit/outbox, exact replay dan collision review tanpa stock mutation.
+- `CONFIRMED`: rollback compatibility exact source `e1602833f3778aca906f13895d51a88050318252`, draft PR #10, dapat membaca/mengekspor state v19 opaque, memblokir business/HPP write, dan hanya menerima ledger exact 16 atau 24. Rehearsal source lintas versi deep-equal lulus.
+- `NEEDS CONFIRMATION`: kedua PR masih draft dan belum merge. Hosted Quality CI keduanya nol-step (`CI_BILLING_BLOCKED`); immutable package, target PostgreSQL 16/24 rehearsal, encrypted backup/disposable restore, monitoring/health, staging activation, physical two-device/offline recovery, dan authenticated operator/finance/security/Owner UAT belum diterima.
+- Production tidak berubah. Program tetap Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100, `BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS Inventory PRD sesudah W2 canonical v19
 
 - `CONFIRMED`: source `a5bcda3316cab16b8647c09592b2889e2730e4d8` pada draft PR #8 menutup candidate implementation B13-05 serta B22-03/B22-04. Remake dan offline physical sale kini memiliki production identity, consumption/fingerprint, shortage review, replay/restart, collision guard, dan consumption-grain COGS.
