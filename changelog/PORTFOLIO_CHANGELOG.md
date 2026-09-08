@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-08 — Saga Member R0 Owner pilot final production release
+
+`CONFIRMED`: release `20260908T132140Z-f7e0a50-r0u` aktif di [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/) dengan backend `f7e0a50bf64164c034c39de24cb364fa898f43b0` serta frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`. Exact artifact/manifest, dependency audit nol, encrypted backup/disposable restore, migration compatibility, actual rollback/reactivation, monitor/backup dan authenticated Owner technical UAT PASS. Consent sudah tercatat sebelum UAT final dan tidak dikirim oleh UAT ini. Reward catalog kosong tanpa synthetic seed; reserve/cancel `PENDING_DATA`. Payment/QRIS, provider/broadcast, NFC, printer dan hardware OFF. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS inventory authority + shortage costing W1
 
 `CONFIRMED`; exact source `0df408243c08a54475fa3c3d43d13a973b12d68e`, branch `codex/sagapos-inventory-costing-w1-integrated`, draft PR #7. Reservation kini menurunkan available tanpa on-hand deduction; PREPARING mem-post satu consumption. Shortage mendapat provisional COGS, flagged review dan immutable FIFO revaluation; silent Rp0 fail-closed. State v18 menyatukan reservation+adjustment ledger dan menolak bentuk parsial. Full631/0/1 skip/2 TODO, check302/24, dependency0 dan independent critical93/0/2 TODO PASS; hosted CI `CI_BILLING_BLOCKED`. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BUSINESS_READY=false`. Remake, genuine offline sale, recovery dan UAT tetap blocker.

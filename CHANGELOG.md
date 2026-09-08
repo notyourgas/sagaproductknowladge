@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-08 — Saga Member R0 final production release sync
+
+- `CONFIRMED`: release `20260908T132140Z-f7e0a50-r0u`, backend `f7e0a50bf64164c034c39de24cb364fa898f43b0`, frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`, aktif di `app.sagamember.site`.
+- Alasan: mengganti snapshot runtime R0 sebelumnya dengan exact pair terintegrasi yang memuat Owner dan Saga Day, serta menutup gate backup/restore, rollback rehearsal, monitor/backup dan authenticated Owner technical UAT.
+- Area/file: Saga Platform product/dossier/changelog, master knowledge, portfolio changelog, decision impact, gaps dan sync status. Klasifikasi `CONFIRMED`; sumber adalah exact production release dan runtime evidence 2026-09-08. Production berubah.
+- PASS exact artifact/manifest, dependency audit nol, encrypted backup/disposable restore, tujuh migration tanpa perubahan schema, actual rollback/reactivation, monitor/backup, public security smoke dan authenticated Owner browser UAT mobile/desktop/accessibility.
+- Consent sudah tercatat sebelum UAT final dan tidak dikirim oleh UAT ini. Reward catalog kosong tanpa synthetic seed; reserve/cancel `PENDING_DATA`. Payment/QRIS, provider/broadcast, NFC, printer dan hardware tetap OFF.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; blocker bisnis: satu reward nyata dan acceptance Owner. Tidak ada secret, PII, private path, raw receipt atau private identifier dipublikasikan.
+
 ## 2026-09-08 — SagaPOS inventory-costing W1 integration sync
 
 - `CONFIRMED`: source `0df408243c08a54475fa3c3d43d13a973b12d68e`, draft PR #7, menggabungkan reservation authority dan provisional/adjusted COGS dalam state v18 kanonik.

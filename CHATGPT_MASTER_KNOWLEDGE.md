@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-08 — Saga Member R0 Owner pilot final production release
+
+- `CONFIRMED`, cut-off 2026-09-08 13:41:46 UTC: release `20260908T132140Z-f7e0a50-r0u` aktif di [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/); backend `f7e0a50bf64164c034c39de24cb364fa898f43b0`, frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`.
+- Customer Platform tetap authority PostgreSQL/account/privacy/reward. Exact artifact/manifest, audit dependency nol, backup/disposable restore, migration compatibility, actual rollback/reactivation, monitor/backup dan authenticated Owner technical UAT PASS.
+- Consent Owner sudah tercatat sebelum UAT final; UAT ini tidak mengirim consent baru. Reward catalog kosong tanpa synthetic seed, sehingga reserve/cancel `PENDING_DATA`. Payment/QRIS, provider email/gateway/Push, broadcast/marketing, NFC, printer dan hardware mutation OFF.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; acceptance bisnis serta satu reward nyata tetap residual.
+
 ## 2026-09-08 — SagaPOS Inventory + HPP W1 candidate
 
 - `CONFIRMED`; exact source `0df408243c08a54475fa3c3d43d13a973b12d68e`, draft PR #7. Confirmed order memesan recipe-resolved ingredients tanpa mengurangi on-hand; PREPARING mengonsumsi tepat sekali. Cancel/refund sebelum produksi melepas reservation dan refund sesudah produksi tidak otomatis restock.
@@ -8405,15 +8412,16 @@ authorization.
 Customer experience dan loyalty projection dengan Customer Platform sebagai authority;
 SagaOPS tetap commerce writer dan SagaBook tetap booking/payment writer.
 
-`CONFIRMED` pada 2026-09-07 14:18:33 UTC: R0 Owner-only di
+`CONFIRMED` pada 2026-09-08 13:41:46 UTC: R0 Owner-only di
 [domain asli](https://app.sagamember.site/owner) `PRODUCTION_DEPLOYED` dan
-`PRODUCTION_ACTIVATED`, release `20260907T140646Z-75d56d5-r0`.
-Login/session dan recovery teknis terverifikasi; penggunaan bisnis `PILOT_ACTIVE`
-masih menunggu first-use consent Owner dan dashboard business UAT.
-`BUSINESS_READY=false`; batas waktu 2026-09-14T14:08:12.752Z.
-Payment/QRIS, external commerce/marketing, NFC, printer dan customer lain OFF.
-Snapshot bridge hanya Owner-only; independent offsite recovery belum terverifikasi.
-Detail exact source dan validation terdapat pada snapshot R0 paling atas.
+`PRODUCTION_ACTIVATED`, release `20260908T132140Z-f7e0a50-r0u`.
+Authenticated Owner technical UAT, secure session, dashboard, backup/restore,
+actual rollback/reactivation dan monitoring PASS. Consent sudah tercatat sebelum
+UAT final dan tidak dikirim oleh UAT ini. Reward catalog kosong tanpa synthetic
+seed; reserve/cancel `PENDING_DATA`. `BUSINESS_READY=false`; batas waktu pilot
+2026-09-14T14:08:12.752Z. Payment/QRIS, provider/broadcast, NFC, printer dan
+hardware mutation OFF. Detail exact source dan validation terdapat pada snapshot
+R0 terbaru paling atas.
 
 ### Saga Platform
 

@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-08 — Saga Member R0 Owner pilot final production release
+
+- Status `accepted`; classification `CONFIRMED`; cut-off 2026-09-08 13:41:46 UTC.
+- Release `20260908T132140Z-f7e0a50-r0u` aktif pada [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/); backend `f7e0a50bf64164c034c39de24cb364fa898f43b0`, frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`.
+- Exact artifact/manifest, dependency audit nol, encrypted backup/disposable restore, tujuh migration kompatibel tanpa perubahan schema, rollback rehearsal/reactivation, monitor/backup dan authenticated Owner technical UAT PASS.
+- Consent sudah tercatat sebelum UAT final dan tidak dikirim oleh UAT ini. Reward catalog kosong tanpa synthetic seed; reserve/cancel `PENDING_DATA`. Seluruh payment/QRIS/provider/broadcast/NFC/printer/hardware tetap OFF.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`. Konflik: tidak ada; residual: satu reward nyata dan acceptance bisnis Owner.
+
 ## 2026-09-08 — SagaPOS inventory-costing W1
 
 - Status `partially accepted`; classification `CONFIRMED`; exact source `0df408243c08a54475fa3c3d43d13a973b12d68e`, branch `codex/sagapos-inventory-costing-w1-integrated`, draft PR #7.

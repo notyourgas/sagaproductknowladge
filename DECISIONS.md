@@ -16,7 +16,7 @@
 - Keputusan: deployment operasional terbatas tujuh hari pada [login Owner](https://app.sagamember.site/owner), menggunakan authoritative Customer Platform same-origin dan PostgreSQL persistent; source release branches dipush tanpa merge protected main. Hosted CI billing tidak dianggap PASS.
 - Alasan: menjalankan login/session/consent/RBAC/audit/dashboard nyata untuk Owner dengan recovery teruji.
 - Alternatif: D0 holding dan PUBLIC_DUMMY_DEMO tetap riwayat `DEPRECATED` untuk domain ini; bukan runtime R0 akhir.
-- Dampak: `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`; penggunaan `PILOT_ACTIVE` bisnis menunggu first-use consent Owner/dashboard UAT dan `BUSINESS_READY=false`. Pilot berakhir 2026-09-14T14:08:12.752Z. Payment/QRIS, external commerce/marketing, NFC/printer dan customer lain OFF; tidak mengubah pricing, commercial promise atau authority produk lain.
+- Dampak terbaru 2026-09-08: release `20260908T132140Z-f7e0a50-r0u` telah `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` dan authenticated Owner technical UAT PASS. Consent sudah tercatat sebelum UAT final dan tidak dikirim oleh UAT ini; reward catalog masih kosong tanpa synthetic seed sehingga reserve/cancel `PENDING_DATA` dan acceptance bisnis belum selesai. `BUSINESS_READY=false`; pilot berakhir 2026-09-14T14:08:12.752Z. Payment/QRIS, provider/broadcast, NFC/printer, hardware dan customer lain OFF; tidak mengubah pricing, commercial promise atau authority produk lain.
 - Terkait: [produk](products/saga-platform/PRODUCT.md), [dossier](products/saga-platform/DOSSIER.md), [gaps](GAPS.md), [snapshot sinkronisasi](SYNC_STATUS.md).
 
 

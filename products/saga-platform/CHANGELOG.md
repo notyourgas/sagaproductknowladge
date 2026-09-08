@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-08 — Saga Member R0 Owner pilot final production release
+
+- `CONFIRMED`: release `20260908T132140Z-f7e0a50-r0u` aktif di [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/) dengan backend `f7e0a50bf64164c034c39de24cb364fa898f43b0` serta frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`.
+- Exact artifact/manifest, dependency audit nol, backup/disposable restore, migration compatibility, rollback rehearsal/reactivation, monitor dan backup job PASS. Authenticated Owner technical UAT final PASS untuk session, dashboard, CSRF containment, accessibility dan mobile/desktop.
+- Consent sudah tercatat sebelum UAT final dan tidak dikirim oleh UAT ini. Reward catalog kosong, tanpa synthetic seed; reserve/cancel `PENDING_DATA`. Payment/QRIS, provider/broadcast, NFC, printer dan hardware tetap OFF.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; satu reward nyata dan acceptance bisnis Owner tetap residual.
+
 ## 2026-09-07 — SAGA Member R0 Owner-only di domain asli
 
 - `CONFIRMED`, cut-off 2026-09-07 14:18:33 UTC: [login Owner](https://app.sagamember.site/owner) telah `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED` pada Hostinger dengan authoritative Customer Platform API same-origin dan PostgreSQL persistent.
