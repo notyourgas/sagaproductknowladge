@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-08 — SagaPOS Inventory PRD sesudah W2 canonical v19
+
+- `CONFIRMED`: source `a5bcda3316cab16b8647c09592b2889e2730e4d8` pada draft PR #8 menutup candidate implementation B13-05 serta B22-03/B22-04. Remake dan offline physical sale kini memiliki production identity, consumption/fingerprint, shortage review, replay/restart, collision guard, dan consumption-grain COGS.
+- `CONFIRMED`: bounded original ID menutup overflow untuk `orderId` valid 80 karakter; migration v18 ke v19 deterministik dan mempertahankan reservation serta COGS links. Full638/0/1 skip/2 TODO, focused63/0/2 TODO, W2 6/6 dan check305/24 PASS.
+- `NEEDS CONFIRMATION`: dua placeholder acceptance W1 masih TODO walau dedicated W2 replacements lulus. Queue remake sebelum production start masih lokal; full two-device offline sync, target PostgreSQL preflight/migration, encrypted backup plus disposable restore, rollback, security release gate, CI runner, dan authenticated operator/business UAT belum diterima.
+- Quality CI run `34236544639` memiliki nol step karena billing/spending-limit (`CI_BILLING_BLOCKED`). Production tidak berubah; Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100, `BUSINESS_READY=false`.
+
 ## 2026-09-08 — Saga Member R0 residual setelah final production release
 
 - `CONFIRMED`: exact pair backend `f7e0a50bf64164c034c39de24cb364fa898f43b0` dan frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a` aktif pada release `20260908T132140Z-f7e0a50-r0u`. Domain/TLS, same-origin API, backup/disposable restore, rollback/reactivation, monitor/backup dan authenticated Owner technical UAT bukan lagi blocker.

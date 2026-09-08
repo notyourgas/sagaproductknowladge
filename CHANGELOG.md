@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-08 — SagaPOS Inventory/HPP W2 canonical v19 sync
+
+- `CONFIRMED`: exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, branch `codex/sagapos-inventory-hpp-w2-integrated`, draft PR #8, menggabungkan remake production consumption dan offline physical-sale shortage pada satu state v19.
+- Remake membuat consumption kedua tanpa payment/loyalty kedua; offline event mempertahankan shortage, review flag, fingerprint, replay/restart, dan collision guard. Original production ID memakai bounded SHA-256 dan COGS tetap keyed by `consumptionId`.
+- PASS W2 6/6, focused 63/0/2 TODO, full 638/0/1 skip/2 TODO, check305/24 dan audit adversarial independen. Quality CI nol-step karena billing/spending-limit (`CI_BILLING_BLOCKED`).
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah dan `BUSINESS_READY=false`. Program PRD: Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100.
+
 ## 2026-09-08 — Saga Member R0 final production release sync
 
 - `CONFIRMED`: release `20260908T132140Z-f7e0a50-r0u`, backend `f7e0a50bf64164c034c39de24cb364fa898f43b0`, frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`, aktif di `app.sagamember.site`.

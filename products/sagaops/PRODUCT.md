@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-08 — Canonical v19 untuk remake dan offline consumption W2
+
+- `CONFIRMED`; exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, branch `codex/sagapos-inventory-hpp-w2-integrated`, draft PR #8. State v19 memperluas W1 dengan production-start identity untuk original, remake, dan offline physical sale.
+- `order.remake.start` menghasilkan konsumsi fisik kedua untuk order yang sama tanpa payment atau loyalty commit baru. Replay/collision/restart dan refund-after-production mempertahankan fakta stok/COGS. Queue sebelum production start masih lokal dan belum menjadi durable work item.
+- Offline event menyimpan exact event/device sequence, source fingerprint, shortage, provisional COGS, dan `requiresReview`; reuse event/sequence dengan payload berbeda gagal tertutup. Original identity memakai bounded `ORIGINAL:<sha256(orderId)>`; satu order dapat memiliki beberapa consumption dan COGS tetap terhubung lewat `consumptionId`.
+- W2 6/6, focused63/0/2 TODO, full638/0/1 skip/2 TODO, check305/24, audit independen orderId80/replay/restart/tamper PASS. Quality CI `CI_BILLING_BLOCKED` pada zero-step run `34236544639`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; program PRD Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100. Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — Inventory authority dan shortage costing W1 terintegrasi
 
 - `CONFIRMED`; exact source `0df408243c08a54475fa3c3d43d13a973b12d68e`, branch `codex/sagapos-inventory-costing-w1-integrated`, draft PR #7. Confirmed order sekarang membuat reservation dari snapshot recipe; available turun tanpa mengubah on-hand dan PREPARING mengonversinya menjadi consumption tepat sekali.

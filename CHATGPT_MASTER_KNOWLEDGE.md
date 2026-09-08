@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-08 — SagaPOS Inventory/HPP W2 candidate
+
+- `CONFIRMED`; exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, draft PR #8. Canonical HPP state v19 menggabungkan reservation/COGS W1 dengan production identity untuk original, remake, dan offline physical sale.
+- Remake mengurangi stok untuk kejadian produksi kedua tanpa payment atau loyalty commit baru. Offline event menyimpan shortage sebagai negative/review truth, exact source fingerprint, idempotent replay, restart safety, dan collision denial; COGS memakai consumption grain walau satu order memiliki beberapa production start.
+- Original ID berupa `ORIGINAL:<sha256(orderId)>` yang deterministik dan panjangnya 73 karakter. Full638/0/1 skip/2 TODO, focused63/0/2 TODO, W2 6/6, check305/24 dan probe adversarial independen PASS; hosted CI `CI_BILLING_BLOCKED`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; preview bukan deployment. Accepted 0/198, Implemented candidate 8/198, Audited 198/198, red-team accepted 0/25, readiness 21/100; target DB/recovery/rollback/security/authenticated UAT masih terbuka dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — Saga Member R0 Owner pilot final production release
 
 - `CONFIRMED`, cut-off 2026-09-08 13:41:46 UTC: release `20260908T132140Z-f7e0a50-r0u` aktif di [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/); backend `f7e0a50bf64164c034c39de24cb364fa898f43b0`, frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`.

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-08 — W2 canonical production identity state v19
+
+Exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8` pada draft PR #8 menyatukan W1 reservation/COGS dengan remake dan offline physical-sale consumption. Original start memakai `ORIGINAL:<sha256(orderId)>`; remake membawa production-start key dan optional remake reference; offline membawa exact source event/fingerprint. State v18 bermigrasi deterministik ke v19 dan mempertahankan reservation arrays, COGS adjustments, serta `consumptionId` links.
+
+Remake mengonsumsi stok kedua kali sesuai produksi nyata, tanpa payment atau loyalty commit kedua. Offline event tetap dicatat ketika stok tidak cukup, membentuk shortage/provisional COGS dan `requiresReview`; exact replay tidak mengubah state, sedangkan reuse identity/device sequence dengan fakta berbeda ditolak. Reconciliation menerima beberapa consumption untuk satu order dan tetap mengikat adjustment pada consumption grain.
+
+Evidence exact candidate: W2 6/6; focused63 pass/0 fail/2 TODO; full638 pass/0 fail/1 Windows/POSIX skip/2 TODO; check305 modules/24 migrations/TypeScript PASS; independent 80-character order ID, replay, restart, dan tamper probe PASS. Quality CI nol-step karena billing/spending-limit. Candidate belum target-DB preflight, encrypted backup/disposable restore, rollback rehearsal, security release acceptance, deployment, activation, atau authenticated operator/business UAT; `BUSINESS_READY=false`.
+
 ## 2026-09-08 — W1 canonical inventory-costing state
 
 Exact source `0df408243c08a54475fa3c3d43d13a973b12d68e` pada draft PR #7 menetapkan satu HPP state v18 yang mewajibkan reservation ledger dan COGS adjustment ledger. Reservation menyimpan recipe snapshot serta memisahkan available dari on-hand. PREPARING adalah physical-consumption trigger; replay/restart mempertahankan satu consumption dan refund sesudahnya tidak mengembalikan bahan.

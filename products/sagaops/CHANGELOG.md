@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-08 — W2 remake dan offline consumption pada canonical v19
+
+- `CONFIRMED`; exact source `a5bcda3316cab16b8647c09592b2889e2730e4d8`, draft PR #8, mengintegrasikan B13-05 dan candidate B22-03/B22-04 di atas W1 `0df4082`.
+- Remake membuat second physical consumption tanpa payment/loyalty baru; offline sale mempertahankan shortage/review/fingerprint serta replay/restart/collision safety. Bounded original identity menutup overflow 80-character order ID; COGS mendukung beberapa consumption per order.
+- W2 6/6, focused63/0/2 TODO, full638/0/1 skip/2 TODO, check305/24 dan adversarial audit independen PASS. Hosted Quality CI `CI_BILLING_BLOCKED` pada zero-step run `34236544639`.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, program PRD 0/198 accepted, 8/198 implemented candidate, 198/198 audited, 0/25 red-team accepted, readiness 21/100, `BUSINESS_READY=false`.
+
 ## 2026-09-08 — W1 inventory reservation dan provisional COGS terintegrasi
 
 - `CONFIRMED`; source `0df408243c08a54475fa3c3d43d13a973b12d68e`, draft PR #7, menggabungkan inventory authority `28209fbe` dan costing fix `5d0229fe` di atas W0 `3c4cbba3`.
