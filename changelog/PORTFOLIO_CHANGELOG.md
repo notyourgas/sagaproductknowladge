@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 6 source hardening
+
+`CONFIRMED`; exact source `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2` pada draft PR #13 memensiunkan competing legacy/ESB inventory writers, menghubungkan availability/ATP/replenishment ke runtime/API dengan server scope dan authoritative provider, memperketat cancel terhadap snapshot HPP rusak, serta menambah rollback v21 read-only source kit. Full 851/0/1 skip/1 TODO dari 853, focused86/86, QA25/25 dan check352/27 PASS; Quality 34278060744 nol-step karena billing (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 101/198 kandidat, 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Target PG/RLS/runner, legacy client cutover, retained artifact/rehearsal, recovery, staging dan authenticated UAT tetap terbuka; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 - COYABAG UI integration production release
 
 `CONFIRMED`; exact source `951e294a6cfc50b45c5311fc2d91f613843acc32`

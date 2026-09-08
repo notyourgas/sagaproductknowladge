@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 6 review candidate
+
+- `CONFIRMED`; exact review head `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2`, draft PR #13. Legacy checkout v1 dan empat endpoint inventory ESB berhenti sebelum mutation; planning runtime/API memakai server scope dan authoritative inventory provider; exception cancel memvalidasi snapshot HPP kanonik.
+- Read-only rollback v21 tersedia sebagai source kit yang credential/fingerprint-bound, belum sebagai retained production artifact. Full851/0/1 skip/1 TODO dari 853, focused86/86, independent QA25/25, check352/27 PASS. Hosted Quality 34278060744 `CI_BILLING_BLOCKED`; preview bukan deployment.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat tetap 101/198, Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100. Jangan mengklaim business-ready sebelum target PG/RLS/runner, client cutover, retained rollback rehearsal, recovery, staging dan authenticated UAT selesai.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 5 source candidate
 
 - `CONFIRMED`; exact source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18`, draft PR #12, mengintegrasikan kandidat Inventory/HPP hingga 101/198 requirement: master/UOM/location, movement/valuation, recipe/configuration/production/consumption, waste/count, traceability/transfer, availability/ATP dan replenishment.

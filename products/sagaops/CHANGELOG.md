@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 6 source hardening
+
+- `CONFIRMED`; source head `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2`, draft PR #13, memensiunkan legacy checkout dan inventory ESB writers, mengintegrasikan planning runtime/API dengan authoritative provider, serta menambah read-only rollback source kit v21.
+- Full 851/0/1 skip/1 TODO dari 853, focused86/86, QA25/25, check352/27 PASS. Quality run 34278060744 nol-step karena billing (`CI_BILLING_BLOCKED`); preview bukan deployment.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 101/198 kandidat, 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Target PG/RLS/runner, client cutover, retained artifact/rehearsal, recovery, staging dan UAT tetap blocker; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 5 integration candidate
 
 - `CONFIRMED`; source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18`, draft PR #12, menambah kandidat B02–B05, B09–B19 dan menaikkan implemented candidate menjadi 101/198.

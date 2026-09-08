@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 6 source hardening
+
+- `CONFIRMED`; exact review head `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2`, branch `codex/sagapos-wave6-integrated`, draft PR #13 di atas Wave 5. Coverage tetap 101/198 kandidat; production tidak berubah.
+- Checkout v1 dan empat endpoint inventory ESB lama sekarang `410` sebelum mutation. Availability/ATP/replenishment memakai server scope dan provider inventory authoritative; input stok/timestamp tidak valid ditolak. Exception cancel memvalidasi snapshot HPP kanonik sebelum perubahan order.
+- Source kit rollback v21 ditambahkan sebagai reader read-only yang credential/fingerprint-bound, tetapi belum dipasang pada retained artifact atau direhearsal pada target PostgreSQL.
+- Full serial 851 pass/0 fail/1 platform skip/1 B22 TODO dari 853; focused 86/86; QA final 25/25; check352/27 PASS. Quality run 34278060744 nol-step karena billing (`CI_BILLING_BLOCKED`); Vercel hanya preview.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100. Draft tidak boleh merge/deploy; `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 5 candidate 101/198
 
 - `CONFIRMED`; exact source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18`, branch `codex/sagapos-inventory-hpp-wave5-integration`, draft PR #12, menaikkan implemented candidate menjadi 101/198 tanpa mengubah production.

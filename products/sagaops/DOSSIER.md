@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 6 inventory authority dan rollback source kit
+
+Exact review head `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2` pada draft PR #13 menutup competing source writers dari Wave 5: legacy checkout v1 serta empat endpoint inventory ESB dipensiunkan sebagai `410` sebelum order, payment, atau stock mutation. Jalur exception tidak lagi mengubah inventory ESB dan memvalidasi snapshot HPP di bawah row lock sebelum cancel. Availability, ATP, dan replenishment telah masuk runtime/API dengan scope dari server serta snapshot inventory provider; caller tidak dapat mengirim bucket stok authoritative.
+
+Guard tambahan mengikat revision/observed time provider ke fingerprint replay serta menolak timestamp null pada observed time, expiry, dan need-by. Source kit rollback v21 dapat membaca dan mengekspor state secara opaque dalam mode read-only dengan credential/fingerprint binding. Kit ini masih berada pada source kandidat dan belum digraft ke retained release `e1602833f3778aca906f13895d51a88050318252`.
+
+Bukti final pada implementation cut `804c5ae8724ea3eaa0110f1c14b849eadec0bc59`: full serial 853 total dengan 851 pass, 0 fail, 1 platform skip, dan 1 B22 TODO; focused 86/86; QA independen 25/25; static/type/OpenAPI PASS pada 352 modul, 8 reliability routes, dan 27 migrasi. Readiness menjadi 40/100 dan GO hanya untuk source review. Quality run 34278060744 memiliki nol step karena billing/spending limit (`CI_BILLING_BLOCKED`); Vercel preview tidak membuktikan deployment.
+
+Provider planning belum terhubung ke PostgreSQL target/RLS/runner, client traffic lama belum diaudit dari route yang dipensiunkan, retained reader dan rehearsal lintas versi belum selesai, serta package/backup/restore/monitoring/staging/authenticated UAT belum lulus. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198, Accepted 0/198, Audited 198/198, red-team accepted 0/25, `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 5 integrated source candidate
 
 Exact review source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18` pada draft PR #12 menyatukan kandidat domain Inventory/HPP hingga 101/198 requirement. Scope lokal mencakup master item/UOM dan konversi, location/custody/ownership, immutable movement ledger dan valuation, recipe serta normalized product configuration, production execution, reservation/sales consumption, waste/count reconciliation, lot/expiry/FEFO/genealogy/recall, transfer/transit, availability/ATP, dan replenishment recommendation. Urutan migrasi kanonik adalah valuation ke-25, locations ke-26, dan movement ledger ke-27.
