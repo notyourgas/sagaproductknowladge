@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 7
+
+- `CONFIRMED`: source `2e88a6c33d3c6011876597d81e829c98a7260677` pada draft PR #14 menutup source-side planning PostgreSQL/policy credential lifecycle, in-repo legacy route cutover, serta retained v21 read-only graft/rehearsal. Full872/874 dengan 0 fail, focused78/78 P0=0/P1=0, check361/28 dan audit production dependency0 PASS; Quality 34288094401 nol-step (`CI_BILLING_BLOCKED`).
+- `NEEDS CONFIRMATION`: native target PostgreSQL dan service credential, immutable package, encrypted backup/checksum/disposable restore, external caller/traffic telemetry, monitoring/health/rollback pada target, serta authenticated dan physical UAT.
+- Worker rebuild/DLQ, recall/outbox, forecast job, target concurrency/performance, RLS service lain, dan hardware flow tetap terbuka.
+- Production tidak berubah. Kandidat 101/198, Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100, `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 6
 
 - `CONFIRMED`: source `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2` pada draft PR #13 menutup competing legacy/ESB inventory writers pada source dan memberi GO source-review. Full851/853 dengan 0 fail, QA25/25, check352/27 PASS; Quality 34278060744 nol-step (`CI_BILLING_BLOCKED`).

@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 7 runtime hardening
+
+- `CONFIRMED`; exact source head `2e88a6c33d3c6011876597d81e829c98a7260677`, tested implementation cut `21de309ff5d05a3c4b474e1b18e3f97603844849`, branch `codex/sagapos-wave7-runtime-integrated`, draft PR #14 di atas Wave 6. Coverage tetap 101/198 kandidat; production tidak berubah.
+- Planning availability/ATP/replenishment kini memiliki adapter PostgreSQL forced-RLS, server-owned scope, Owner policy API, CAS/HMAC state, serta existing-install credential lifecycle yang fail-closed. Source checker memutus seluruh caller aktif dari checkout v1 dan empat route inventory ESB lama.
+- Retained source v21 dapat dibangun menjadi graft read-only minimal yang terikat exact candidate ledger v28, memagari writer/provisioning/seed/upgrade, dipublikasikan atomik, dan lulus rehearsal candidate-to-compat-read-to-candidate tanpa mutasi bisnis.
+- Default suite 872 pass/0 fail/1 platform skip/1 B22 TODO dari 874; audit independen focused78/78 dengan P0=0/P1=0; check361/28 PASS dan production dependency audit0. Quality run 34288094401 nol-step karena billing (`CI_BILLING_BLOCKED`); Vercel hanya preview.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100. Target PostgreSQL/recovery/package/runtime, external caller telemetry, monitoring, serta authenticated/physical UAT belum lulus; `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 6 source hardening
 
 - `CONFIRMED`; exact review head `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2`, branch `codex/sagapos-wave6-integrated`, draft PR #13 di atas Wave 5. Coverage tetap 101/198 kandidat; production tidak berubah.

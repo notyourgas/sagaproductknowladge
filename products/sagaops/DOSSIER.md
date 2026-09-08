@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 7 planning PostgreSQL, client cutover, dan retained graft
+
+Exact source head `2e88a6c33d3c6011876597d81e829c98a7260677` pada draft PR #14 menggabungkan tiga hardening lane di atas Wave 6. Tested implementation cut `21de309ff5d05a3c4b474e1b18e3f97603844849` memberi planning provider PostgreSQL forced-RLS yang membaca satu revision HPP authoritative, memakai tenant/outlet dari server, dan menyimpan policy serta recommendation melalui CAS dan HMAC. Owner policy API menolak non-Owner, CSRF invalid, scope override, stale revision, inventory tidak dikenal, serta race antar-worker sebelum mutasi. Existing-install credential disiapkan satu-kali, root-only, mode `0600`, shared-lock, tidak mencetak secret, dan fail-closed ketika state telah ada.
+
+Audit source menemukan seluruh caller aktif telah memakai checkout, movement, dan PREPARING fulfillment kanonik. Gate pemindai mencakup source dan config, termasuk literal route yang dirangkai statis, dan menghasilkan 239 file/0 referensi ke checkout v1 atau empat route inventory ESB yang dipensiunkan. Traffic dan caller di luar repository masih belum memiliki telemetry sehingga cutover eksternal tetap `UNVERIFIED`.
+
+Retained source `e1602833f3778aca906f13895d51a88050318252` sekarang dapat digraft menjadi artifact v21 read-only yang terikat exact state writer, candidate ledger v28, fingerprint, dan credential. Artifact hanya mempertahankan read/export; writer, provisioning, seed, upgrade, service, dependency, serta jalur bisnis dibuang atau dipagari. Build dan verification memakai scratch pada filesystem yang sama lalu no-clobber atomic publish; verifier failure tidak meninggalkan artifact atau receipt. Rehearsal disposable candidate-to-compat-read-to-candidate mempertahankan ledger/state tanpa transaksi bisnis. Test menggunakan detached clean exact source agar browser test paralel tidak melemahkan guard produksi `builder_source_dirty`.
+
+Bukti final: default suite 874 total dengan 872 pass, 0 fail, 1 Windows/POSIX skip, dan 1 B22 TODO; independent focused78/78, P0=0/P1=0; static/type/OpenAPI PASS pada 361 modul, 8 reliability routes, retired scan239/0, dan 28 migrasi; audit 45 production dependency menemukan 0 vulnerability. GitHub Quality run 34288094401 tidak memulai step karena billing/spending limit (`CI_BILLING_BLOCKED`), sedangkan Vercel success hanya preview.
+
+Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198, Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100. Target PostgreSQL dan service credential, immutable package, encrypted backup/disposable restore, external traffic telemetry, runtime monitoring/rollback, serta authenticated dan physical UAT belum dibuktikan. Production tidak berubah; `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 6 inventory authority dan rollback source kit
 
 Exact review head `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2` pada draft PR #13 menutup competing source writers dari Wave 5: legacy checkout v1 serta empat endpoint inventory ESB dipensiunkan sebagai `410` sebelum order, payment, atau stock mutation. Jalur exception tidak lagi mengubah inventory ESB dan memvalidasi snapshot HPP di bawah row lock sebelum cancel. Availability, ATP, dan replenishment telah masuk runtime/API dengan scope dari server serta snapshot inventory provider; caller tidak dapat mengirim bucket stok authoritative.

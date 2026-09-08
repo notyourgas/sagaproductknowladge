@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 7 runtime hardening
+
+`CONFIRMED`; source head `2e88a6c33d3c6011876597d81e829c98a7260677` dan tested implementation `21de309ff5d05a3c4b474e1b18e3f97603844849` pada draft PR #14 menambah planning PostgreSQL forced-RLS dan Owner policy/credential lifecycle, memverifikasi 239 file tanpa caller route inventory lama, serta membangun retained v21 read-only graft yang exact-ledger-bound dan atomik. Default full872/874 dengan 0 fail, independent focused78/78 P0=0/P1=0, check361/28 dan audit production dependency0 PASS; Quality 34288094401 nol-step karena billing (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 101/198 kandidat, 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Target DB/recovery/package/runtime, telemetry eksternal, monitoring dan UAT belum lulus; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 6 source hardening
 
 `CONFIRMED`; exact source `683c3d9bca88b380e54168eaa76c3f7f4d40f0f2` pada draft PR #13 memensiunkan competing legacy/ESB inventory writers, menghubungkan availability/ATP/replenishment ke runtime/API dengan server scope dan authoritative provider, memperketat cancel terhadap snapshot HPP rusak, serta menambah rollback v21 read-only source kit. Full 851/0/1 skip/1 TODO dari 853, focused86/86, QA25/25 dan check352/27 PASS; Quality 34278060744 nol-step karena billing (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 101/198 kandidat, 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Target PG/RLS/runner, legacy client cutover, retained artifact/rehearsal, recovery, staging dan authenticated UAT tetap terbuka; production tidak berubah dan `BUSINESS_READY=false`.
