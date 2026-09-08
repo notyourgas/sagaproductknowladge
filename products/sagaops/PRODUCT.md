@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 5 candidate 101/198
+
+- `CONFIRMED`; exact source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18`, branch `codex/sagapos-inventory-hpp-wave5-integration`, draft PR #12, menaikkan implemented candidate menjadi 101/198 tanpa mengubah production.
+- Kandidat mencakup item/UOM/location, immutable movement dan valuation, recipe/product configuration, production, sales consumption, waste/count, lot/expiry/FEFO, transfer/transit, availability/ATP, dan replenishment policy.
+- Full serial 820 pass/0 fail/1 platform skip/1 legacy TODO dari 822 test; focused final 74/74 dan B18/B19 adversarial 27/27; static/type/OpenAPI PASS pada 345 modul dan 27 migrasi. Hosted Quality run 34268550652 tidak memulai step karena billing (`CI_BILLING_BLOCKED`).
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 24/100. Draft belum boleh merge; `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-08 — W3 durable remake queue, offline authority, dan rollback v19
 
 - `CONFIRMED`; exact W3 source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39`, branch `codex/sagapos-inventory-hpp-w3-integrated`, draft PR #9. Queue `order.remake` kini tersimpan atomik sebelum `order.remake.start`, bertahan setelah restart, dan menjaga replay/collision tanpa payment atau loyalty kedua.

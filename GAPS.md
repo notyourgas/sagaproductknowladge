@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 5
+
+- `CONFIRMED`: source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18` pada draft PR #12 adalah kandidat lokal 101/198; 820/822 pass dengan 0 fail dan check345/27 PASS. Quality run 34268550652 nol-step (`CI_BILLING_BLOCKED`).
+- `NEEDS CONFIRMATION`: legacy checkout dan endpoint ESB masih competing writer; service Wave 5 belum menjadi satu durable runtime/API/UI/PostgreSQL transaction authority.
+- `NEEDS CONFIRMATION`: rollback build v19 tidak membaca state HPP v21; target PostgreSQL, immutable package, encrypted backup/disposable restore, monitor, rollback rehearsal, staging, dan authenticated/physical UAT belum lulus.
+- Production tidak berubah. Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 24/100, `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS Inventory PRD sesudah W3 dan rollback source
 
 - `CONFIRMED`: W3 exact source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39`, draft PR #9, menutup source gap durable pre-start remake queue serta memperketat offline ingestion dengan device/outlet/capability authority, persisted snapshot, atomic audit/outbox, exact replay dan collision review tanpa stock mutation.

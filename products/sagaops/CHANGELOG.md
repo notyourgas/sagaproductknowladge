@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 5 integration candidate
+
+- `CONFIRMED`; source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18`, draft PR #12, menambah kandidat B02–B05, B09–B19 dan menaikkan implemented candidate menjadi 101/198.
+- Full 820/0/1 skip/1 TODO dari 822, focused 74/74, B18/B19 adversarial 27/27, check345/27 PASS. Quality run 34268550652 nol-step karena billing (`CI_BILLING_BLOCKED`).
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 24/100. Competing writers, runtime integration, rollback v21, target PostgreSQL, recovery, staging dan UAT masih blocker; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — W3 durable intake dan rollback compatibility v19
 
 - `CONFIRMED`; W3 exact source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39`, draft PR #9, membuat pre-start remake queue durable dan offline ingestion server-authorized dengan atomic queue/audit/outbox, replay, collision, restart, serta no-payment/no-loyalty guards.

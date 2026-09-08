@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 5 candidate 101/198
+
+`CONFIRMED`; exact source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18` pada draft PR #12 mengintegrasikan master inventory, canonical movement/valuation, recipe/configuration/production/consumption, waste/count, traceability/transfer, availability/ATP dan replenishment sebagai kandidat lokal 101/198. Full 820/0/1 skip/1 TODO dari 822, focused 74/74, B18/B19 adversarial 27/27 dan check345/27 PASS; hosted Quality 34268550652 nol-step karena billing (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 24/100. Runtime authority, rollback v21, target DB/recovery/monitoring/staging/UAT belum selesai; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-08 — SagaPOS W3 durable intake dan rollback v19
 
 `CONFIRMED`; W3 source `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39` pada draft PR #9 membuat queue remake sebelum production start durable serta menegakkan offline authority dari device/outlet/capability server dengan atomic audit/outbox dan collision review tanpa mutasi stok. Rollback source `e1602833f3778aca906f13895d51a88050318252` pada draft PR #10 memberi base runtime `6824565` reader HPP v19 hash-bound, opaque export, business-write fence dan verifier ledger exact 16/24. W3 focused12/full644/0/1 skip/2 TODO/check309/24 serta rollback5/focused58/check169 dan rehearsal lintas versi PASS; Quality CI kedua PR nol-step (`CI_BILLING_BLOCKED`). Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 0/198 accepted, 8/198 implemented candidate, 198/198 audited, 0/25 red-team accepted, readiness 21/100. Merge, hosted CI, packaging, target DB/recovery, monitoring, staging serta authenticated/physical UAT masih blocker; production tidak berubah dan `BUSINESS_READY=false`.

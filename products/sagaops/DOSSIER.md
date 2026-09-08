@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 5 integrated source candidate
+
+Exact review source `3c3d835cc0e0bb3d98ecde30f400dfe61c00cd18` pada draft PR #12 menyatukan kandidat domain Inventory/HPP hingga 101/198 requirement. Scope lokal mencakup master item/UOM dan konversi, location/custody/ownership, immutable movement ledger dan valuation, recipe serta normalized product configuration, production execution, reservation/sales consumption, waste/count reconciliation, lot/expiry/FEFO/genealogy/recall, transfer/transit, availability/ATP, dan replenishment recommendation. Urutan migrasi kanonik adalah valuation ke-25, locations ke-26, dan movement ledger ke-27.
+
+Bukti final: full serial 822 total dengan 820 pass, 0 fail, 1 platform skip, dan 1 legacy B22 TODO; focused 74/74 serta adversarial B18/B19 27/27; static/type/OpenAPI PASS dengan 345 modul, 8 reliability routes, dan 27 migrasi. Independent release audit menilai readiness operasional 24/100 dan hanya mengizinkan source push/draft review. Hosted Quality run 34268550652 memiliki nol step karena billing/spending limit (`CI_BILLING_BLOCKED`), bukan PASS.
+
+Kandidat belum menjadi satu runtime authority: legacy checkout dan endpoint ESB masih dapat menjadi competing stock writer, beberapa service Wave 5 masih domain-only, dan state HPP v21 belum dapat dibaca rollback build v19. Target PostgreSQL, package immutable, backup/disposable restore, monitoring, rollback rehearsal, staging, serta authenticated/physical UAT belum lulus. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-08 — W3 durable intake dan jalur rollback HPP v19
 
 Exact source W3 `39ba12db6ea641dba870dd41a1f7b9c06c7dfc39` pada draft PR #9 memperkuat canonical v19 tanpa menaikkan coverage PRD. Queue remake sebelum production start menjadi durable dan dipersist bersama audit sehingga restart tidak kehilangan permintaan. Start produksi tetap menjadi satu-satunya physical-consumption trigger; retry menggunakan identity yang sama dan tidak membuat payment, loyalty, consumption, atau queue kedua.
