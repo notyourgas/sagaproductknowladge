@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 16 authority foundation
+
+- `CONFIRMED`: [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`, menutup source foundation untuk strict session/device/location/Finance authority, versioned server HMAC, same-tx recheck, replay-before-policy, dan error redaction. Affected135/135, independent90/90, check420/35, audit0; source P0=0/P1=0/P2=1.
+- `CONFIRMED`: production HTTP disabled dan empat mutasi tetap 503 `inventory_period_atomic_runtime_not_ready` dengan nol write. Quality zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview.
+- `NEEDS CONFIRMATION`: durable storage harus menyimpan stable session ID/token-hash authority, registered device dan session-device binding lintas restart; production Finance/reopen grant, routes/OpenAPI, serta cookie/origin/CSRF boundary belum aktif.
+- `NEEDS CONFIRMATION`: empat mutation path harus atomik bersama authorization, operation, event/aggregate, HPP, report/correction/restatement, B20 invalidation/outbox; global writer fence, real-provider restart/HTTP E2E, target recovery/monitoring, dan authenticated UAT belum terbukti.
+- `NEEDS CONFIRMATION`: P2 SQLSTATE mapping semantics dan retryability harus diuji per constraint/driver tanpa detail database pada response.
+- B23 `PARTIAL`, +0 requirement, 101/198, readiness40, merge/release HOLD, `STAGING_READY=false`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 15 phase one
 
 - `CONFIRMED`: [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`, menutup phase-one trust boundary API, interval `[start,end)`, serta PostgreSQL request/decision close-reopen. Evidence root51/51, audit28/28, check418/35, dependency/security audit0, P0=0/P1=0/P2=2.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 16 authority foundation
+
+`CONFIRMED`; [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`, menambah strict server session/device/location/Finance authority, versioned HMAC correlation, same-transaction authorization recheck, replay-before-policy, dan error redaction. Evidence affected135/135, independent90/90, check420/35, audit0, source P0=0/P1=0/P2=1. Production HTTP disabled; empat mutation stubs tetap 503 zero-write; Quality `CI_BILLING_BLOCKED` zero-step dan Vercel hanya preview. B23 `PARTIAL` +0, 101/198, readiness40, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 15 period-control phase one
 
 `CONFIRMED`; [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`, menambah server-derived B23 API trust boundary, canonical interval `[start,end)`, dan PostgreSQL request/decision close-reopen dengan finance checker, three-party actor separation, immutable binding, replay/CAS/RLS/startup guards. Empat mutation paths tetap fail-closed 503 dan nol write sampai atomic runtime lengkap. Evidence root51/51, audit28/28, check418/35, audit0, P0=0/P1=0/P2=2. Hosted Quality `CI_BILLING_BLOCKED` zero-step dan Vercel hanya preview. B23 tetap `PARTIAL` +0; kandidat 101/198, readiness 40/100, merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.

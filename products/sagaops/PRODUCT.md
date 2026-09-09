@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 16 authority foundation
+
+- `CONFIRMED`; [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) memuat source HEAD `06063829e8b46d6915938d511bb21c6de5df0518` dengan Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e` untuk B23 HTTP/authorization foundation.
+- Resolver hanya menerima server session reference dan memverifikasi active session/token hash, principal, location grant, registered device, session-device binding, serta role `owner`/`manager`/`finance` melalui authority provider. Finance dan device authority harus tersedia; close decision tetap Finance-only.
+- Correlation ID dibuat server memakai versioned HMAC yang mengikat action, scope, principal, session, device, operation key, dan canonical command hash. Retained key version menjaga exact replay lintas restart/rotasi; missing version gagal tertutup. Provider mengulang authority check dalam transaksi yang sama dan meredaksi detail internal error.
+- Evidence source: affected 135/135, independent 90/90, check 420 modul/35 migrasi, dependency/security audit 0 vulnerability, P0=0, P1=0, P2=1 untuk semantics allowlist SQLSTATE.
+- Production HTTP tetap disabled dan empat mutasi `executeClose`, `executeReopen`, `recordCorrection`, serta `restate` tetap 503 `inventory_period_atomic_runtime_not_ready` dengan nol write. Hosted Quality zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview.
+- B23 tetap `PARTIAL`, +0 requirement, kandidat 101/198 dan readiness 40/100. Merge/release HOLD; status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 15 period-control phase one
 
 - `CONFIRMED`; [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) memuat candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940` dengan Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9` untuk phase-one runtime B23.

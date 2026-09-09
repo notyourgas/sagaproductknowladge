@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 16 B23 HTTP authority foundation
+
+[Draft PR #20](https://github.com/notyourgas/sagaops/pull/20) pada source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`, menambah foundation authority untuk facade B23 dan provider PostgreSQL. HTTP facade hanya menerima reduced session reference yang dibuat server. Authority provider harus membuktikan session/token hash aktif dan belum kedaluwarsa, principal stabil aktif, location grant aktif, registered device aktif pada scope yang sama, serta session-device binding aktif. Role dibatasi ke Owner, Manager, dan Finance; production finance/device authority yang tidak tersedia membuat request gagal tertutup.
+
+Client tidak dapat memasok organization, outlet, location, actor, role, session, device, capability, correlation, atau policy. Correlation dibuat server dengan HMAC-SHA-256 berversi terhadap action, scope, principal, session, device, operation key, dan canonical command hash. Authority provider memilih retained key version berdasarkan action/scope/operation key sehingga exact replay tetap stabil setelah restart atau rotasi; selected key yang hilang menahan request.
+
+Provider melakukan actor/capability recheck di dalam transaksi PostgreSQL yang sama setelah RLS scope lock. Exact durable replay diperiksa sebelum policy provider agar replay identik tetap tersedia saat policy backend sementara gagal, sedangkan changed intent tetap collision. Error boundary hanya mengembalikan kode/status yang dibatasi dan tidak meneruskan SQL text, constraint, query, parameter, stack, tenant, atau device detail.
+
+Affected suite 135/135, final independent 90/90, check 420 modul/35 migrasi, dependency/security audit 0 vulnerability, dan source audit P0=0/P1=0 lulus. Satu P2 tersisa: semantics allowlist SQLSTATE, retryability, dan HTTP status perlu dibuktikan per constraint/driver pada target.
+
+Production HTTP tetap disabled. Durable HTTP storage belum mempertahankan seluruh session ID/device binding authority lintas restart, Finance grant dan routes/OpenAPI belum aktif, dan transaksi empat mutasi belum lengkap. `executeClose`, `executeReopen`, `recordCorrection`, serta `restate` tetap mengembalikan 503 `inventory_period_atomic_runtime_not_ready` sebelum write. Hosted Quality adalah zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview.
+
+B23 tetap `PARTIAL` dan +0 requirement: 101/198, readiness 40/100. Merge/release HOLD sampai durable authority, routes, seluruh mutation transaction, global period writer fence, real-provider restart/HTTP E2E, recovery, monitoring, dan authenticated Finance/Owner UAT lulus. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 15 B23 period-control runtime phase one
 
 [Draft PR #19](https://github.com/notyourgas/sagaops/pull/19) pada candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`, menambahkan trust boundary API dan provider PostgreSQL phase-one untuk kontrol periode inventory. Facade mengekspos delapan command serta bounded list/detail immutable report versions. Scope organization/outlet/location, actor, role, session, device, correlation, dan capabilities harus berasal dari trusted resolver; field client yang mencoba menggantinya ditolak. Close checker harus memiliki authority finance, tiga actor harus berbeda, dan read detail menghitung ulang canonical SHA-256 dari metadata dan dokumen report.

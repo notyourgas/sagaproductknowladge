@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 16
+
+- Status `partially accepted`; classification `CONFIRMED`; [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`.
+- Synced: strict server session/principal/location/device/Finance authority, versioned HMAC correlation dengan retained replay key, same-transaction authorization recheck, replay-before-policy, dan bounded error redaction.
+- Evidence: affected 135/135, independent 90/90, check 420 modul/35 migrasi, dependency/security audit 0 vulnerability, source P0=0/P1=0/P2=1. P2 adalah SQLSTATE mapping semantics.
+- Hosted status: Quality zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview. Production HTTP disabled dan empat mutation stubs tetap 503 zero-write.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; B23 `PARTIAL` +0, kandidat 101/198, readiness40. Merge/release HOLD; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- Open: durable session/device/Finance authority, routes/OpenAPI, empat transaksi mutasi, global writer fence, real-provider restart/HTTP E2E, target recovery/monitoring, dan authenticated Finance/Owner UAT.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 15
 
 - Status `partially accepted`; classification `CONFIRMED`; [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`.

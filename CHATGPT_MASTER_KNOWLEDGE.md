@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 16 authority foundation
+
+- `CONFIRMED`; [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`. B23 facade kini memerlukan server-derived active session/token hash, principal, location grant, registered device/session binding, serta Owner/Manager/Finance authority; Finance/device authority yang tidak tersedia gagal tertutup.
+- Correlation memakai versioned server HMAC atas action, scope, principal, session, device, operation key, dan canonical command hash. Retained version menjaga exact retry; provider melakukan same-transaction authorization recheck. Exact replay mendahului policy lookup dan internal database error tetap direduksi ke allowlisted response.
+- Evidence affected135/135, independent90/90, check420/35, dependency/security audit0, source P0=0/P1=0/P2=1 untuk SQLSTATE mapping semantics. Production HTTP tetap disabled dan empat mutation stubs tetap 503 zero-write. Hosted Quality zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview.
+- B23 tetap `PARTIAL`, +0 requirement, 101/198, readiness40. Merge/release HOLD; status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 15 phase-one candidate
 
 - `CONFIRMED`; [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`. B23 phase one menambah facade untuk delapan command dan dua bounded immutable report reads dengan scope, actor, role, session, device, correlation, serta capability yang seluruhnya diturunkan server; client override gagal tertutup.

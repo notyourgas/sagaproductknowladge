@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-09 — Sinkronisasi SagaPOS Inventory/HPP Wave 16
+
+- `CONFIRMED`: [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`, menambah strict session/device/location/Finance authority, versioned server HMAC, same-tx recheck, replay-before-policy, dan error redaction.
+- Evidence affected135/135, independent90/90, check420/35, dependency/security audit0, source P0=0/P1=0/P2=1 untuk SQLSTATE mapping semantics. Hosted Quality zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview.
+- Diperbarui: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root changelog. Klasifikasi `CONFIRMED`; tidak ada data restricted.
+- Production HTTP disabled; empat mutation stubs tetap 503 zero-write. B23 `PARTIAL` +0, 101/198, readiness40. Merge/release HOLD; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Sinkronisasi SagaPOS Inventory/HPP Wave 15
 
 - `CONFIRMED`: [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`, menambah phase-one API trust boundary, canonical `[start,end)`, dan PostgreSQL request/decision period-control authority.
