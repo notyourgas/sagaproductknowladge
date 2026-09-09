@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 15 phase one
+
+- `CONFIRMED`: [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`, menutup phase-one trust boundary API, interval `[start,end)`, serta PostgreSQL request/decision close-reopen. Evidence root51/51, audit28/28, check418/35, dependency/security audit0, P0=0/P1=0/P2=2.
+- `CONFIRMED`: empat mutasi `executeClose`, `executeReopen`, `recordCorrection`, dan `restate` sengaja 503 `inventory_period_atomic_runtime_not_ready` dan nol write. Hosted Quality zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview.
+- `NEEDS CONFIRMATION`: Wave16 harus menyediakan satu transaksi untuk authorization CAS, operation, period event/aggregate, HPP, correction/restatement, report dan B20 invalidation/outbox; revalidate actor/capability di transaksi yang sama; memasang lock guard pada seluruh dated writer; menghubungkan server/OpenAPI dan memensiunkan generic close; serta memetakan error PostgreSQL melalui allowlist.
+- `NEEDS CONFIRMATION`: concurrency/restart/replay/fault injection, report detail/CSV parity, target database restore, monitoring, staging, dan authenticated finance/Owner/business UAT belum terbukti.
+- B23 tetap `PARTIAL` dan +0 requirement. Kandidat 101/198, readiness 40/100, `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, merge/release HOLD, `STAGING_READY=false`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 14
 
 - `CONFIRMED`: draft PR #18 final candidate HEAD `60928b893bc3bb27c241c44c190a3775d7d4f460`, Git tree `b21d4382d42db30430d2ef9dae3758fe53ee8cb3`, menutup foundation lokal untuk finance-authorized close, privileged reopen, immutable report versions, duplicate reversal, value-neutral reclassification, dependency preview, replay/collision, dan tamper/fault rollback guards. Combined B23+HPP+B20+B21 104/104, check 413/35, audit 0.

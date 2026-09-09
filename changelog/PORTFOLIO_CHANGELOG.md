@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 15 period-control phase one
+
+`CONFIRMED`; [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`, menambah server-derived B23 API trust boundary, canonical interval `[start,end)`, dan PostgreSQL request/decision close-reopen dengan finance checker, three-party actor separation, immutable binding, replay/CAS/RLS/startup guards. Empat mutation paths tetap fail-closed 503 dan nol write sampai atomic runtime lengkap. Evidence root51/51, audit28/28, check418/35, audit0, P0=0/P1=0/P2=2. Hosted Quality `CI_BILLING_BLOCKED` zero-step dan Vercel hanya preview. B23 tetap `PARTIAL` +0; kandidat 101/198, readiness 40/100, merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 14 period close candidate
 
 `CONFIRMED`; [draft PR #18](https://github.com/notyourgas/sagaops/pull/18) final candidate HEAD `60928b893bc3bb27c241c44c190a3775d7d4f460`, Git tree `b21d4382d42db30430d2ef9dae3758fe53ee8cb3`, menambah kandidat lokal B23 untuk finance-authorized three-party close, privileged reopen, location-scoped single-use approval, immutable original/restated reports, dependency-aware correction, exact reversal, dan zero-value reclassification. Combined B23+HPP+B20+B21 104/104, check 413/35, audit 0. B23 tetap `PARTIAL`; runtime/repository writer fence, API/UI, revaluation/correction lengkap, target recovery dan UAT masih terbuka. Kandidat 101/198, readiness 40/100; `IMPLEMENTED_NOT_DEPLOYED`, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.

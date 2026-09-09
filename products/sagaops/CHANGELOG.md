@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 15 B23 phase one
+
+- `CONFIRMED`; [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`, menambah server-derived API facade, canonical `[start,end)`, dan PostgreSQL request/decision workflow untuk period close/reopen.
+- Scope lokasi, finance checker, actor/session context, three-party identity, expiry, immutable binding, replay/collision, CAS, forced RLS, startup reconciliation, HMAC domain state, dan immutable `INVALIDATED` report history dijaga fail-closed.
+- `executeClose`, `executeReopen`, `recordCorrection`, dan `restate` tetap 503 `inventory_period_atomic_runtime_not_ready` dengan nol write. B23 tetap `PARTIAL` dan +0 requirement.
+- Root focused 51/51, audit independen 28/28, check 418/35, dependency/security audit 0, P0=0/P1=0/P2=2. Hosted Quality zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview.
+- Kandidat 101/198, readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; merge/release HOLD, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 14 B23 candidate
 
 - `CONFIRMED`; draft PR #18 final candidate HEAD `60928b893bc3bb27c241c44c190a3775d7d4f460`, Git tree `b21d4382d42db30430d2ef9dae3758fe53ee8cb3`, menambah period close/restatement candidate dengan finance-authorized three-party close, privileged three-party reopen, location scope, single-use approval, immutable report lineage, correction dependency analysis, exact duplicate reversal, dan value-neutral reclassification.

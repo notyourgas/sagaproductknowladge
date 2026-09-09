@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 15 B23 period-control runtime phase one
+
+[Draft PR #19](https://github.com/notyourgas/sagaops/pull/19) pada candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`, menambahkan trust boundary API dan provider PostgreSQL phase-one untuk kontrol periode inventory. Facade mengekspos delapan command serta bounded list/detail immutable report versions. Scope organization/outlet/location, actor, role, session, device, correlation, dan capabilities harus berasal dari trusted resolver; field client yang mencoba menggantinya ditolak. Close checker harus memiliki authority finance, tiga actor harus berbeda, dan read detail menghitung ulang canonical SHA-256 dari metadata dan dokumen report.
+
+Semantik waktu B20, B23, dan migration #35 sekarang seragam `[start,end)`. Provider phase-one mengimplementasikan request dan decision close/reopen dengan exact location scope, expiry, policy/candidate/preview hash, optimistic revision, operation replay/collision, append-only event hash chain, aggregate CAS, forced RLS, dan startup reconciliation terhadap HPP/B20/B23. Domain state memakai HMAC-SHA-256; projection B20 yang di-invalidasi dipertahankan sebagai riwayat immutable dan dapat diverifikasi.
+
+Empat jalur yang memerlukan satu transaksi lintas subsistem belum dibuka. `executeClose`, `executeReopen`, `recordCorrection`, dan `restate` mengembalikan 503 `inventory_period_atomic_runtime_not_ready` sebelum write. Server routes/OpenAPI, production actor resolver, retirement generic close, dan shared lock guard untuk seluruh effective-dated inventory writer juga belum terhubung.
+
+Evidence lokal lulus: root focused 51/51, final independent audit 28/28, check 418 modul/35 migrasi, dependency/security audit 0 vulnerability, P0=0 dan P1=0. Dua P2 tersisa: capability dapat direvoke setelah resolver tetapi sebelum transaksi, sehingga Wave16 perlu revalidasi actor/capability di transaksi yang sama; error PostgreSQL juga perlu allowlist mapping ke domain code stabil tanpa membocorkan detail SQL. Hosted Quality adalah zero-step `CI_BILLING_BLOCKED`; Vercel hanya preview.
+
+B23 tetap `PARTIAL` dan tidak menambah requirement: 101/198, readiness 40/100. Merge/release tetap HOLD sampai empat mutasi atomik, writer fence menyeluruh, server/OpenAPI, concurrency/restart/replay/fault checks, report detail/CSV parity, target recovery, monitoring, dan authenticated finance/Owner UAT terbukti. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 14 B23 period close/restatement authority candidate
 
 [Draft PR #18](https://github.com/notyourgas/sagaops/pull/18) pada final candidate HEAD `60928b893bc3bb27c241c44c190a3775d7d4f460`, Git tree `b21d4382d42db30430d2ef9dae3758fe53ee8cb3`, menambah kandidat domain dan schema aditif untuk kontrol periode inventory. Close harus diminta maker, disetujui finance checker, lalu dieksekusi actor ketiga yang sudah ditentukan. Reopen memakai lifecycle request/approve/execute yang terpisah. Authorization mengikat organization/outlet/location, action/resource, actor/session context, expiry, candidate hash, dependency preview, policy snapshot, dan optimistic revision; exact replay aman dan intent berbeda pada operation key yang sama ditolak.

@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 15 period-control phase one
+
+- `CONFIRMED`; [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) memuat candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940` dengan Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9` untuk phase-one runtime B23.
+- Facade API menyediakan delapan command dan dua read report-version yang dibatasi. Organization, outlet, location, user, role, session, device, correlation, dan capability berasal dari trusted server resolver; client override ditolak. Detail report menghitung ulang canonical SHA-256 terhadap dokumen immutable.
+- Semantik periode B20/B23/migrasi #35 diselaraskan ke interval `[start,end)`. PostgreSQL phase-one mendukung request dan decision close/reopen dengan finance checker, maker/checker/executor berbeda, expiry, scope lokasi, policy/candidate/preview binding, optimistic revision, replay/collision guard, append-only hash chain, aggregate CAS, forced RLS, serta reconciliation saat startup. Domain state memakai HMAC-SHA-256 dan riwayat projection B20 yang `INVALIDATED` tetap immutable.
+- Empat mutasi `executeClose`, `executeReopen`, `recordCorrection`, dan `restate` sengaja fail-closed dengan HTTP 503 `inventory_period_atomic_runtime_not_ready` dan nol write sampai transaksi atomik lintas authorization, operation, event/aggregate, HPP, report, correction/restatement, serta B20 invalidation/outbox tersedia.
+- Evidence lokal: root focused 51/51, independent audit 28/28, check 418 modul/35 migrasi, dependency/security audit 0 vulnerability, P0=0, P1=0, P2=2. Hosted Quality menjalankan nol step karena billing (`CI_BILLING_BLOCKED`); Vercel hanya preview.
+- B23 tetap `PARTIAL` dengan +0 requirement: kandidat 101/198 dan readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; merge/release HOLD, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 14 period close dan restatement candidate
 
 - `CONFIRMED`; [draft PR #18](https://github.com/notyourgas/sagaops/pull/18) memuat final candidate HEAD `60928b893bc3bb27c241c44c190a3775d7d4f460` dengan Git tree `b21d4382d42db30430d2ef9dae3758fe53ee8cb3` untuk kandidat lokal B23 period close dan restatement.

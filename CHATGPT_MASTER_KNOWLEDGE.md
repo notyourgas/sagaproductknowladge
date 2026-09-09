@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 15 phase-one candidate
+
+- `CONFIRMED`; [draft PR #19](https://github.com/notyourgas/sagaops/pull/19) candidate HEAD `c5cf5ebe4a05d449722f2035922ef134a367e940`, Git tree `7946093eddb915ff2c228b7eb902ba344838a7f9`. B23 phase one menambah facade untuk delapan command dan dua bounded immutable report reads dengan scope, actor, role, session, device, correlation, serta capability yang seluruhnya diturunkan server; client override gagal tertutup.
+- B20/B23/migration #35 memakai interval `[start,end)`. PostgreSQL request/decision close-reopen mengikat location, finance checker, tiga actor berbeda, expiry, policy/candidate/preview, optimistic revision, replay/collision, event chain, CAS, forced RLS, dan startup reconciliation. Domain state memakai HMAC-SHA-256; history projection B20 tetap immutable setelah `INVALIDATED`.
+- Empat mutasi `executeClose`, `executeReopen`, `recordCorrection`, dan `restate` belum diaktifkan dan selalu 503 `inventory_period_atomic_runtime_not_ready` sebelum write. Evidence lokal root51/51, audit28/28, check418/35, dependency/security audit0, P0=0/P1=0/P2=2. P2 tersisa adalah same-transaction revocation recheck dan stable PostgreSQL error mapping.
+- Hosted Quality menjalankan nol step karena billing (`CI_BILLING_BLOCKED`); Vercel hanya preview. B23 tetap `PARTIAL`, +0 requirement, 101/198, readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; merge/release HOLD, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 14 source candidate
 
 - `CONFIRMED`; [draft PR #18](https://github.com/notyourgas/sagaops/pull/18) final candidate HEAD `60928b893bc3bb27c241c44c190a3775d7d4f460`, Git tree `b21d4382d42db30430d2ef9dae3758fe53ee8cb3`, memuat kandidat lokal B23 period close/restatement. Close dan reopen memakai maker, checker, serta executor berbeda; close approval memerlukan finance. Scope lokasi, expiry, candidate/preview/policy hashes, actor/session context, optimistic revision, single-use authorization, replay/collision, HMAC state, dan immutable audit/report lineage dijaga fail-closed.
