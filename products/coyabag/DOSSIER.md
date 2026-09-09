@@ -915,7 +915,7 @@ mengelola urutan, draft,
 preview, schedule, publish, retract, serta immutable rollback. Publish menolak
 cerita utama yang belum lengkap, ketiadaan story/warehouse, template marker,
 dan tujuan eksternal non-HTTPS. Loading, partial, unavailable/retry,
-broken/no-media, lazy route, Helvetica/Instrument Serif, dan browser production
+broken/no-media, lazy route, Plus Jakarta Sans/Instrument Serif, dan browser production
 desktop/mobile lulus. Production belum memiliki cerita About lengkap, sehingga
 preparation state jujur tampil tanpa source-owned claim atau media.
 

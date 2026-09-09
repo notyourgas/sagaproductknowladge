@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-10 - COYABAG Plus Jakarta Sans production release
+
+`CONFIRMED`; exact source `5ed4dc903a7ae7b8265fa8f6b1d97d7c247786aa`
+aktif pada immutable release `20260909-5ed4dc9`, dengan rollback
+`20260909-de6df58`. Plus Jakarta Sans variable self-hosted kini aktif pada
+seluruh UI/body storefront dan admin, sementara Instrument Serif tetap dipakai
+untuk display editorial. Exact-candidate release, recovery, security,
+responsive 151 kombinasi, storefront 329/329, Laravel 677 pass + satu expected
+skip, dependency audit nol, dan public browser checks lulus. Tidak ada migrasi,
+aktivasi provider/credential, atau mutasi transaksi/inventory. Readiness tetap
+`43/45`; checkout fail-closed pada `launch_uat` dan `release_signoff`, sehingga
+status `PRODUCTION_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 16 authority foundation
 
 `CONFIRMED`; [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`, menambah strict server session/device/location/Finance authority, versioned HMAC correlation, same-transaction authorization recheck, replay-before-policy, dan error redaction. Evidence affected135/135, independent90/90, check420/35, audit0, source P0=0/P1=0/P2=1. Production HTTP disabled; empat mutation stubs tetap 503 zero-write; Quality `CI_BILLING_BLOCKED` zero-step dan Vercel hanya preview. B23 `PARTIAL` +0, 101/198, readiness40, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.

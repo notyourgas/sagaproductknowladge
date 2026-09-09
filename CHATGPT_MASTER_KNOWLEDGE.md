@@ -7403,18 +7403,17 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation:
 `PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT`. Business readiness:
 `BUSINESS_READY=false`.
 
-Snapshot 9 September 2026: exact source
-`8b234453d71f0bfb4ec9c7727a80c249f94ddba6` aktif pada immutable release
-`20260909-8b23445`; rollback `20260909-c4d274c` memakai source
-`c4d274c5b1a091b3fdcd4b16911b46ef1f63c734`. Storefront memulihkan komposisi
-editorial campaign yang diterima sebelumnya dengan Instrument Serif dan
-Helvetica Local, sedangkan admin tetap Plus Jakarta Sans. Media CMS, katalog,
-varian, stok, publishing, motion dan reduced-motion tetap terhubung. Consent
-pertama menjadi dialog modal dan target galeri mobile tidak lagi terpotong tepi
-viewport. Full release/recovery/security/browser gate lulus, provider dan
-storage sehat, worker/scheduler/monitor aktif, serta tidak ada migrasi atau
-mutasi order/payment/inventory saat deploy. Readiness `43/45`; sole owner perlu
-menyelesaikan UAT 15 langkah dan sign-off operations/security/UAT. Tidak
+Snapshot 10 September 2026: exact source
+`5ed4dc903a7ae7b8265fa8f6b1d97d7c247786aa` aktif pada immutable release
+`20260909-5ed4dc9`; rollback `20260909-de6df58` memakai source
+`de6df5823f1144b9a1935b8c2b7ff9fc79474454`. Plus Jakarta Sans variable
+self-hosted aktif pada seluruh UI/body storefront dan admin; Instrument Serif
+tetap dipakai untuk display editorial. Media CMS, katalog, varian, stok,
+publishing, motion dan reduced-motion tetap terhubung. Full
+release/recovery/security/browser gate lulus, provider dan storage sehat,
+worker/scheduler/monitor aktif, serta tidak ada migrasi, aktivasi provider,
+atau mutasi order/payment/inventory saat deploy. Readiness `43/45`; sole owner
+perlu menyelesaikan UAT 15 langkah dan sign-off operations/security/UAT. Tidak
 diperlukan owner kedua.
 
 Snapshot historis 8 September 2026: sole active owner dengan 2FA mengotorisasi

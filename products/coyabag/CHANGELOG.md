@@ -1,5 +1,23 @@
 # COYABAG Changelog
 
+## 2026-09-10 - Plus Jakarta Sans storefront production release
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `5ed4dc903a7ae7b8265fa8f6b1d97d7c247786aa` aktif pada immutable release
+  `20260909-5ed4dc9`; rollback `20260909-de6df58` memakai source
+  `de6df5823f1144b9a1935b8c2b7ff9fc79474454`.
+- Plus Jakarta Sans variable self-hosted kini dipakai pada seluruh UI/body
+  storefront dan admin. Instrument Serif tetap menjadi font display editorial;
+  aset Helvetica storefront yang tidak lagi dipakai telah dihapus.
+- Gate exact candidate lulus: storefront 329/329, responsive 151 kombinasi,
+  Laravel 677 pass + satu expected skip dari 678 dengan 6.423 assertions,
+  dependency audit nol, encrypted backup/disposable restore, worker/scheduler,
+  provider/storage, recovery, public smoke, dan browser production tanpa error,
+  overflow, atau broken image.
+- Tidak ada migrasi, aktivasi provider/credential, order/payment, reservation,
+  atau inventory mutation. Readiness `43/45`; `launch_uat` dan
+  `release_signoff` menahan checkout fail-closed dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 - Storefront visual restoration and responsive/privacy hardening
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

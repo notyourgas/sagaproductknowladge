@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 9 September 2026
+Updated: 10 September 2026
 Evidence status: production deployed + release-specific activation pending
 
 ## Tujuan dokumen
@@ -23,9 +23,9 @@ COYABAG adalah ecommerce tas streetwear dengan storefront React/Vite dan backend
 operasional Laravel/Inertia.
 
 Visual direction storefront: streetwear, hitam-putih, editorial product focus,
-dengan Instrument Serif untuk display dan Helvetica Local untuk UI/body.
-Dashboard admin memakai Plus Jakarta Sans variable self-hosted untuk seluruh
-interface operasional; wordmark COYABAG tetap memakai font logo resminya.
+dengan Instrument Serif untuk display dan Plus Jakarta Sans variable self-hosted
+untuk seluruh UI/body storefront serta admin; wordmark COYABAG tetap memakai
+font logo resminya.
 
 Detail Pengiriman production memakai review dialog sebelum membuat order
 provider, menyerahkan paket ke kurir, atau membatalkan shipment. Operator
@@ -97,16 +97,16 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation:
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Runtime aktif memakai exact source
-  `8b234453d71f0bfb4ec9c7727a80c249f94ddba6` pada immutable release
-  `20260909-8b23445`; rollback langsung `20260909-c4d274c` memakai source
-  `c4d274c5b1a091b3fdcd4b16911b46ef1f63c734`. Source remote cocok dan tidak ada
+  `5ed4dc903a7ae7b8265fa8f6b1d97d7c247786aa` pada immutable release
+  `20260909-5ed4dc9`; rollback langsung `20260909-de6df58` memakai source
+  `de6df5823f1144b9a1935b8c2b7ff9fc79474454`. Source remote cocok dan tidak ada
   migrasi, aktivasi provider, perubahan credential, order, payment, atau mutasi
   inventory saat deploy.
-- Full release gate lulus: storefront 276/276, Laravel 678 total dengan 677 pass
+- Full release gate lulus: storefront 329/329, Laravel 678 total dengan 677 pass
   dan satu expected skip (6.423 assertions), dependency audit nol, backup dan
   disposable restore, worker/scheduler, payment/storage probe, monitor, public
-  smoke, 151 kombinasi responsif, 34 route-viewports aksesibilitas, serta 17
-  route tanpa HTTP/page error.
+  smoke, 151 kombinasi responsif, accessibility route matrix, serta public
+  browser tanpa HTTP/page error, overflow, atau broken image.
 - Readiness saat ini `43/45` (96%). Dua blocker tunggal adalah `launch_uat` dan
   `release_signoff`; checkout mengembalikan `PRODUCTION_READINESS_BLOCKED`.
   Sole owner perlu menyelesaikan checklist 15 langkah lalu menyetujui sign-off
@@ -117,9 +117,9 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation:
   berfokus dan galeri mobile memberi area target aman tanpa overflow.
 - Integrasi storefront tidak lagi meminta content key global
   `campaign_landing` yang tidak didukung API; fallback campaign tetap hanya
-  digunakan pada route yang memang membutuhkannya. Storefront memakai pasangan
-  Instrument Serif dan Helvetica Local; admin tetap konsisten memakai Plus
-  Jakarta Sans.
+  digunakan pada route yang memang membutuhkannya. Plus Jakarta Sans kini aktif
+  dan terverifikasi pada seluruh UI/body storefront serta admin; Instrument
+  Serif tetap dipakai untuk display editorial.
 - Snapshot 8 September 2026 pada release `20260908-1870383` pernah mencapai
   readiness `45/45` dan `COMMERCE_ACTIVE` melalui governance sole-owner. Bukti
   tersebut historis dan tidak menggantikan UAT/sign-off exact release terbaru.

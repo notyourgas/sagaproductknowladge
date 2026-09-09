@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-10 - COYABAG Plus Jakarta Sans production sync
+
+- `CONFIRMED`: source `5ed4dc903a7ae7b8265fa8f6b1d97d7c247786aa`,
+  release `20260909-5ed4dc9`, rollback `20260909-de6df58`.
+- Synced: Plus Jakarta Sans variable self-hosted pada UI/body storefront dan
+  admin, Instrument Serif untuk display editorial, exact-candidate release,
+  recovery, security, responsive, browser, dan rollback evidence.
+- Diperbarui: COYABAG product/changelog/dossier, portfolio changelog, master
+  knowledge, sync status, dan root changelog. Klasifikasi `CONFIRMED`; tidak ada
+  data restricted.
+- Production berubah tanpa migrasi, aktivasi provider/credential, atau mutasi
+  transaksi/inventory. Readiness `43/45`; checkout tetap fail-closed sampai
+  `launch_uat` dan `release_signoff` selesai; `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Sinkronisasi SagaPOS Inventory/HPP Wave 16
 
 - `CONFIRMED`: [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`, menambah strict session/device/location/Finance authority, versioned server HMAC, same-tx recheck, replay-before-policy, dan error redaction.
