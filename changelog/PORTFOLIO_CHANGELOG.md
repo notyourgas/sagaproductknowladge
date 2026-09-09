@@ -1,8 +1,8 @@
 # Portfolio Changelog
 
-## 2026-09-09 — SagaPOS Inventory/HPP Wave 10 durable reporting candidate
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 10 final source candidate
 
-`CONFIRMED`; [draft PR #17](https://github.com/notyourgas/sagaops/pull/17) pada final head `d08ae29573d72c66b05b9a9ee8d0e03a5d76256d`, tested parent `a9860be4e48fcda5a1a4b8bf5f55558a08c97c84`, menambah historical authority, migrations #29–30, durable PostgreSQL jobs/projections, backdated invalidation, restart/tamper protection, config-off production composition, dan health berbasis metrik aktual. Evidence focused72/72, full982 pass/0 fail/1 skip/1 todo dari 984, check388/30, dependency audit0; local technical 16 PASS/7 PARTIAL/2 GAP dan B20 5 partial + 1 local-domain pass. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198 (51,0%), accepted 0/198, red-team accepted 0/25, readiness 40/100. Production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+`CONFIRMED`; [draft PR #17](https://github.com/notyourgas/sagaops/pull/17) pada final docs-only head `b052480f423c4afe788df6cf4db6c9450dcefc42`, tested implementation `ba31bd8d30328399b2b29c5d583e06f10c7ba031`, mempertahankan historical authority, migrations #29–30, durable PostgreSQL jobs/projections, backdated invalidation, restart/tamper protection, config-off composition, dan actual-metric health. Evidence focused80/80, full995 pass/0 fail/1 skip/1 todo dari 997, check391/30, dependency audit0, audit P0 0. Real `productionExecutionFactory` dan adapter FEFO target masih P1; CI acceptance pending setelah Quality zero-step failure yang konsisten dengan billing block sebelumnya. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
 
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 9 reporting integration
 
