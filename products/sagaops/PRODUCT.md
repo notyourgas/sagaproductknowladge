@@ -2,10 +2,10 @@
 
 ## 2026-09-09 — Inventory/HPP Wave 14 period close dan restatement candidate
 
-- `CONFIRMED`; [draft PR #18](https://github.com/notyourgas/sagaops/pull/18) memuat audited source cut `1c72cbb967f5db422660de4caed79b3a37cb25c7` dengan Git tree `1e5685ce8d060a166e87a014a734326983dddd81` untuk kandidat lokal B23 period close dan restatement.
+- `CONFIRMED`; [draft PR #18](https://github.com/notyourgas/sagaops/pull/18) memuat final candidate HEAD `60928b893bc3bb27c241c44c190a3775d7d4f460` dengan Git tree `b21d4382d42db30430d2ef9dae3758fe53ee8cb3` untuk kandidat lokal B23 period close dan restatement.
 - Close memakai maker, finance checker, dan executor yang berbeda. Reopen juga memakai request, approval, dan execution terpisah, terikat scope lokasi, expiry, candidate/dependency-preview hash, policy snapshot, actor/session context, optimistic revision, single-use authorization, serta replay/collision guard.
 - Periode tertutup mempunyai immutable original report; koreksi yang didukung saat ini dibatasi pada exact reversal untuk duplicate posting dan append-only classification event dengan perubahan quantity/value nol. Restatement menghasilkan versi baru yang mereferensikan versi sebelumnya dan correction set; chronology, unresolved revaluation, dependency tidak lengkap, stale preview, serta state tamper gagal tertutup.
-- Evidence lokal 39/39, static/type/OpenAPI check 413 modul/35 migrasi, dan audit final 0 finding lulus. B23 tetap `PARTIAL`: PostgreSQL repository/runtime coupling, lock guard pada seluruh writer, API/UI, revaluation resolution, correction replacement lengkap, target database/recovery, dan authenticated UAT belum selesai. Kandidat tetap 101/198 dan readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- Combined B23+HPP+B20+B21 104/104, static/type/OpenAPI check 413 modul/35 migrasi, dan audit final 0 finding lulus. B23 tetap `PARTIAL`: PostgreSQL repository/runtime coupling, lock guard pada seluruh writer, API/UI, revaluation resolution, correction replacement lengkap, target database/recovery, dan authenticated UAT belum selesai. Kandidat tetap 101/198 dan readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
 
 ## 2026-09-09 — Inventory/HPP Wave 13 production loss dan compatibility guard
 
