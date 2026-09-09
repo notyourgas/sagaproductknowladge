@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 12 historical reporting dan production valuation
+
+[PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat implementation cut `ed549b32e630965938f78c234379de5e0c0af533`. Migration #33 merekam kalender bisnis dan lokasi INTERNAL usable sebagai fakta append-only, forced-RLS, bounded, serta fingerprint-bound. Query historis memilih fakta pada awal periode dan menolak missing/ambiguous/tampered/mid-period authority. Runtime request isolation memakai `AsyncLocalStorage`; periode sebelum bootstrap tidak diisi dari current state.
+
+Penyelesaian produksi kini menghasilkan `PRODUCTION_TRANSFORMATION` valuation fact/operation bersama movement, HPP, reporting fact, dan outbox dalam satu transaksi/idempotency boundary. Normal loss masuk carrying value output, abnormal loss harus mempunyai kuantitas dan nilai server-authoritative, dan receipt revaluation sebelumnya diteruskan ke adjusted valuation tanpa mengubah HPP posting kanonik. Migration #34 hanya mengganti constraint legacy yang nama dan definisinya tepat, mempertahankan constraint lain, menolak v2 lemah, dan idempotent.
+
+Evidence lokal: full 1064 total dengan 1062 pass, 0 fail, 1 platform skip, 1 B22 TODO; focused authority/valuation/migration 9/9; check405/34; dependency audit0; final independent migration audit P0=0/P1=0/P2=0. Kandidat tetap 101/198 dan readiness 40/100 karena target historical production backlog, abnormal-loss authority, rollback compatibility, target PostgreSQL/recovery/worker/monitoring/hosted CI, dan authenticated UAT belum dibuktikan. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 11 OUTLET/COMPANY reporting authority
 
 [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`. Kandidat lokal B20 mempertahankan `OUTLET` sebagai default dan menambahkan `COMPANY` melalui authority yang seluruhnya diturunkan server. Client hanya dapat meminta jenis view dan periode yang dibatasi; client tidak menjadi sumber organization, outlet, lokasi, timezone, status, currency, atau policy.

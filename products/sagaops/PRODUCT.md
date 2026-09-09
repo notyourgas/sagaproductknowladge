@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 12 historical authority dan production valuation
+
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat implementation cut `ed549b32e630965938f78c234379de5e0c0af533` untuk authority kalender/lokasi historis dan valuasi transformasi produksi.
+- Query bertanggal mengikat fakta kalender/lokasi append-only dan gagal tertutup bila sejarah hilang, ambigu, rusak, atau berubah di tengah periode. Production completion menulis movement, HPP, valuation, reporting, dan outbox atomik; normal loss diserap ke output dan abnormal loss memerlukan nilai eksplisit.
+- Evidence lokal: full 1062 pass/0 fail/1 platform skip/1 B22 TODO dari 1064, focused authority/valuation/migration 9/9, check 405 modules/34 migrations, audit dependency 0 vulnerability, audit migration final P0=0/P1=0/P2=0.
+- Kandidat tetap 101/198 (51,0%), accepted 0/198, red-team accepted 0/25, readiness 40/100. Backlog target, abnormal-loss authority, rollback compatibility, target database/recovery/worker/monitoring, hosted CI, dan authenticated UAT masih terbuka. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 11 OUTLET/COMPANY source candidate
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064` untuk kandidat laporan B20 dengan view `OUTLET` dan `COMPANY`.

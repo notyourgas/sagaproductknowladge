@@ -12184,3 +12184,6 @@ Detail tetap berada pada changelog produk; entri docs-only berada di root
 - Production backend tidak berubah.
 - Satu gate tersisa: paid Tokopay canary dan processed callback nyata sebelum
   promosi production.
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 12
+
+`CONFIRMED`; implementation cut `ed549b32e630965938f78c234379de5e0c0af533` pada PR #17 mengikat laporan bertanggal ke fakta kalender/lokasi historis dan menambah atomic `PRODUCTION_TRANSFORMATION` valuation dengan normal/abnormal loss serta revaluation propagation. Full 1062/1064 dengan 0 fail, focused authority/valuation/migration 9/9, check405/34, dependency audit0, dan audit migrasi P0/P1/P2=0 lulus. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198, accepted 0/198, audited 198/198, red-team accepted 0/25, readiness 40/100. Target backlog, rollback/recovery, worker/monitoring, hosted CI dan authenticated UAT belum lulus; production tidak berubah dan `BUSINESS_READY=false`.

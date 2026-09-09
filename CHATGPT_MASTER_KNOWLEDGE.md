@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 12 source candidate
+
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat implementation cut `ed549b32e630965938f78c234379de5e0c0af533`. B20 bertanggal memakai fakta kalender/lokasi historis append-only dan fail-closed; B12 production completion menulis movement, HPP, valuation, reporting, serta outbox atomik dan meneruskan revaluation tanpa menulis ulang HPP kanonik.
+- Evidence lokal full 1062 pass/0 fail/1 skip/1 TODO dari 1064, focused authority/valuation/migration 9/9, check405/34, dependency audit0, audit migrasi P0/P1/P2=0. Kandidat tetap 101/198, accepted 0/198, red-team accepted 0/25, readiness 40/100. Target backlog, abnormal-loss authority, rollback/recovery, worker/monitoring, hosted CI dan authenticated UAT belum dibuktikan. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 11 OUTLET/COMPANY source candidate
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`. B20 kini mempunyai kandidat lokal `OUTLET` dan `COMPANY`; seluruh organization/outlet/location/calendar authority tetap server-derived dan invalid atau ambiguous scope gagal tertutup.

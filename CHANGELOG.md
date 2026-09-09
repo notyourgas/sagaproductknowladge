@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 12 sync
+
+- `CONFIRMED`: PR #17 implementation cut `ed549b32e630965938f78c234379de5e0c0af533` menambah immutable historical calendar/location authority dan atomic production transformation valuation.
+- Diperbarui: Product, Dossier, product/portfolio/root changelog, master knowledge, gaps, dan sync status. Tidak ada data restricted.
+- Evidence lokal: full 1062/1064 dengan 0 fail, focused authority/valuation/migration 9/9, check405/34, dependency audit0, audit migrasi P0/P1/P2=0.
+- Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198, accepted 0/198, audited 198/198, red-team accepted 0/25, readiness 40/100. Production tidak berubah; `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 11 OUTLET/COMPANY sync
 
 - `CONFIRMED`: [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`.

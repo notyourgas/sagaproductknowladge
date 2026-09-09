@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 12
+
+- `CONFIRMED`: PR #17 implementation cut `ed549b32e630965938f78c234379de5e0c0af533` menutup source-side historical calendar/location authority dan production transformation valuation; final migration audit P0/P1/P2=0.
+- `NEEDS CONFIRMATION`: target historical production backlog harus dihitung read-only; abnormal-loss value authority, rollback compatibility/write fence, migration pada disposable restore target, RLS/performance, worker/monitoring, hosted CI, staging, dan authenticated Owner/business UAT belum dibuktikan.
+- Production tidak berubah. Kandidat 101/198 (51,0%), accepted 0/198, red-team accepted 0/25, readiness 40/100, `STAGING_READY=false`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 11
 
 - `CONFIRMED`: [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`; kandidat lokal B20 sekarang mencakup view `OUTLET` dan `COMPANY` dengan authority server-derived serta fail-closed invalid scope.

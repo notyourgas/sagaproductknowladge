@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 12
+
+- `CONFIRMED`; implementation cut `ed549b32e630965938f78c234379de5e0c0af533` pada PR #17 menambah authority kalender/lokasi historis serta atomic production transformation valuation.
+- Full 1062/1064 dengan 0 fail, focused authority/valuation/migration 9/9, check405/34, audit dependency0, dan audit migrasi P0/P1/P2=0 lulus.
+- Kandidat tetap 101/198 dan readiness 40/100. Target backlog, abnormal-loss authority, rollback compatibility, recovery/runtime target, hosted CI dan UAT masih terbuka. Production tidak berubah; `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 11 OUTLET/COMPANY authority
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact implementation `56283a85034fdb259411effd5ba0fce34712e064`.
