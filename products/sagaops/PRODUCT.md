@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 14 period close dan restatement candidate
+
+- `CONFIRMED`; [draft PR #18](https://github.com/notyourgas/sagaops/pull/18) memuat audited source cut `1c72cbb967f5db422660de4caed79b3a37cb25c7` dengan Git tree `1e5685ce8d060a166e87a014a734326983dddd81` untuk kandidat lokal B23 period close dan restatement.
+- Close memakai maker, finance checker, dan executor yang berbeda. Reopen juga memakai request, approval, dan execution terpisah, terikat scope lokasi, expiry, candidate/dependency-preview hash, policy snapshot, actor/session context, optimistic revision, single-use authorization, serta replay/collision guard.
+- Periode tertutup mempunyai immutable original report; koreksi yang didukung saat ini dibatasi pada exact reversal untuk duplicate posting dan append-only classification event dengan perubahan quantity/value nol. Restatement menghasilkan versi baru yang mereferensikan versi sebelumnya dan correction set; chronology, unresolved revaluation, dependency tidak lengkap, stale preview, serta state tamper gagal tertutup.
+- Evidence lokal 39/39, static/type/OpenAPI check 413 modul/35 migrasi, dan audit final 0 finding lulus. B23 tetap `PARTIAL`: PostgreSQL repository/runtime coupling, lock guard pada seluruh writer, API/UI, revaluation resolution, correction replacement lengkap, target database/recovery, dan authenticated UAT belum selesai. Kandidat tetap 101/198 dan readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 13 production loss dan compatibility guard
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat final source documentation `bb97c1a48988d879eb1ad37fc479870e53211f5b` dengan tested implementation `087e4148a68bf74c046558fc2a27f1a9192ae4e6`.

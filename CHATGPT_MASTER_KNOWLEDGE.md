@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 14 source candidate
+
+- `CONFIRMED`; [draft PR #18](https://github.com/notyourgas/sagaops/pull/18) audited source cut `1c72cbb967f5db422660de4caed79b3a37cb25c7`, Git tree `1e5685ce8d060a166e87a014a734326983dddd81`, memuat kandidat lokal B23 period close/restatement. Close dan reopen memakai maker, checker, serta executor berbeda; close approval memerlukan finance. Scope lokasi, expiry, candidate/preview/policy hashes, actor/session context, optimistic revision, single-use authorization, replay/collision, HMAC state, dan immutable audit/report lineage dijaga fail-closed.
+- Correction yang didukung dibatasi pada duplicate-posting reversal dan classification reclassification dengan quantity/value delta nol. Effective time tidak boleh mendahului source fact; dependency/revaluation yang belum lengkap menahan restatement.
+- Local validation 39/39, check 413 modul/35 migrasi, audit 0 finding. B23 tetap `PARTIAL`: repository/runtime integration, seluruh effective-dated writer fence, API/UI, correction dan revaluation lengkap, target PostgreSQL/recovery/monitoring, serta authenticated UAT belum selesai. Kandidat tetap 101/198, readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 13 source candidate
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat final source documentation `bb97c1a48988d879eb1ad37fc479870e53211f5b` dan tested implementation `087e4148a68bf74c046558fc2a27f1a9192ae4e6`. Abnormal loss kini dinilai server-side dengan formula proportional equivalent-output/half-up Rupiah, termasuk kuantitas positif yang secara sah membulat ke Rp0. Production quantity 4–6 desimal dipertahankan lintas durable HPP, ledger, reporting, valuation, restart, dan replay; representasi mikro yang tidak aman gagal sebelum mutasi.
