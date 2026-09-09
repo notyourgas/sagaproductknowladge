@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 9
+
+- Status `partially accepted`; classification `CONFIRMED`; source head `8b58c81c3bc6a0c76e303db151f4def077a0be9a`, branch `codex/sagapos-wave9-integrated`, draft PR #16.
+- Synced: B20 PostgreSQL provider, fingerprint-bound rebuild job, Owner-only 11-family API/UI/CSV/drill-down, closed red-team snapshot/shape/CSV/bounds/UI-race findings, dan residual authority/runtime gates.
+- Evidence: focused47/47; full937/0/1 skip/1 TODO dari 939; check377/28; retired scan247/0; production dependency audit0. Quality 34297838649 zero-step (`CI_BILLING_BLOCKED`); preview tidak mengubah production.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198, Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100. Production/activation tidak berubah; `BUSINESS_READY=false`.
+- Open: production provider/API/worker wiring, durable job persistence, historical/production/valuation authority, COMPANY scope, target DB/RLS/performance, package/recovery/monitoring, staging dan authenticated/physical UAT.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 8
 
 - Status `partially accepted`; classification `CONFIRMED`; source head `08076b60caa861dcd56028d4ab0f97385ca294b3`, tested implementation `dedb6de6e9a5ecf119a47eab9287b9fdb7966d42`, branch `codex/sagapos-wave8-integrated`, draft PR #15.

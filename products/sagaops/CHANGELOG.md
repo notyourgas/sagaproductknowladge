@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 9 reporting integration
+
+- `CONFIRMED`; exact source `8b58c81c3bc6a0c76e303db151f4def077a0be9a`, draft PR #16, menambah provider PostgreSQL B20, rebuild orchestration, dan Owner-only 11-family API/UI/CSV/drill-down.
+- Focused47/47, full937/0/1 skip/1 TODO dari 939, check377/28, retired scan247/0 dan production dependency audit0 PASS. Quality 34297838649 zero-step (`CI_BILLING_BLOCKED`); preview bukan deployment.
+- B20 tetap 1 local pass/5 partial, tanpa kenaikan requirement. Runtime production, durable job persistence/worker, historical/production/valuation authority, target DB/recovery/monitoring dan authenticated UAT masih terbuka.
+- `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; 101/198 kandidat, 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 8 evidence dan recovery hardening
 
 - `CONFIRMED`; source head `08076b60caa861dcd56028d4ab0f97385ca294b3`, tested implementation `dedb6de6e9a5ecf119a47eab9287b9fdb7966d42`, draft PR #15, menambah bounded retired-route telemetry, B20 local reporting candidate, exact Git-tree package verification dan digest/freshness-bound recovery selection.

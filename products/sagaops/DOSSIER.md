@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 9 provider, rebuild job, dan Owner reporting
+
+Exact source `8b58c81c3bc6a0c76e303db151f4def077a0be9a` pada draft PR #16 mengintegrasikan provider PostgreSQL B20, job rebuild, dan Owner report surface. Provider membaca authority dalam satu transaksi repeatable-read/read-only, memeriksa scope/RLS readiness dan source fingerprint, lalu membuat projection yang dapat ditelusuri. Job memakai immutable command, idempotency/collision guard, bounded concurrency, retry/backoff/DLQ, lease fencing, backdated invalidation dan tamper-checked restart export. Owner API/UI mengunci server-derived OUTLET scope, exact report/source fingerprint, semua 11 family, bounded page/CSV/time window, dan safe source record.
+
+Focused47/47 dan full939 total dengan 937 pass, 0 fail, 1 Windows/POSIX skip, 1 B22 TODO; check377 modules/247 client scan/0 retired refs/28 migrations; 45 production dependencies memiliki 0 vulnerability. Quality run 34297838649 zero-step karena billing (`CI_BILLING_BLOCKED`); preview bukan backend deployment.
+
+B20-01..05 tetap `PARTIAL`; B20-06 `PASS_LOCAL_DOMAIN`. Latest-state historical limits, catalog-HPP binding, production yield, valuation application, durable target job worker/persistence, COMPANY scope, target-role RLS/performance, backup/restore, rollback, monitoring dan authenticated UAT menahan staging. Status `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198, Accepted 0/198, red-team accepted 0/25, readiness 40/100, production tidak berubah, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 8 telemetry, B20 candidate, dan recovery binding
 
 Exact source review head `08076b60caa861dcd56028d4ab0f97385ca294b3` pada draft PR #15 menggabungkan telemetry lima retired route, B20 reporting domain candidate, dan package/recovery hardening di atas Wave 7. Tested implementation cut `dedb6de6e9a5ecf119a47eab9287b9fdb7966d42`.

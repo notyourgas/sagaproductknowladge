@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 9 reporting integration
+
+- `CONFIRMED`; source head `8b58c81c3bc6a0c76e303db151f4def077a0be9a`, branch `codex/sagapos-wave9-integrated`, draft PR #16 di atas Wave 8.
+- B20 sekarang memiliki provider PostgreSQL read-only, sealed source/fingerprint adapter, rebuild job dengan retry/DLQ/lease fencing/invalidation, serta Owner-only API/UI untuk 11 family, bounded CSV, pagination dan source drill-down.
+- Focused47/47 dan full937 pass/0 fail/1 platform skip/1 B22 TODO dari 939; check377/28 dan production dependency audit0 PASS. Quality run 34297838649 tidak memulai step karena billing (`CI_BILLING_BLOCKED`); Vercel hanya preview.
+- B20 tetap 1 local-domain pass/5 partial dan kandidat tetap 101/198. Historical authority, production yield, valuation cost basis, durable job worker/persistence, COMPANY surface, target RLS/performance/recovery/monitoring dan authenticated UAT belum lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100. Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 8 evidence dan recovery hardening
 
 - `CONFIRMED`; source review head `08076b60caa861dcd56028d4ab0f97385ca294b3`, tested implementation `dedb6de6e9a5ecf119a47eab9287b9fdb7966d42`, branch `codex/sagapos-wave8-integrated`, draft PR #15 di atas Wave 7.

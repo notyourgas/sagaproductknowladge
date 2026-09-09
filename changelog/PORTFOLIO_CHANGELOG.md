@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 9 reporting integration
+
+`CONFIRMED`; source `8b58c81c3bc6a0c76e303db151f4def077a0be9a` pada draft PR #16 menghubungkan B20 ke provider PostgreSQL read-only, rebuild job dengan fingerprint/retry/DLQ/lease/invalidation, dan Owner-only 11-family API/UI/CSV/drill-down. Focused47/47, full937/0/1 skip/1 TODO dari 939, check377/28, retired scan247/0 dan production dependency audit0 PASS; Quality 34297838649 zero-step karena billing (`CI_BILLING_BLOCKED`). B20 tetap 1 local pass/5 partial dan kandidat 101/198 karena production runtime/worker, historical/production/valuation authority, target DB/recovery/monitoring dan UAT belum lulus. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 8 evidence dan recovery hardening
 
 `CONFIRMED`; source head `08076b60caa861dcd56028d4ab0f97385ca294b3` dan tested implementation `dedb6de6e9a5ecf119a47eab9287b9fdb7966d42` pada draft PR #15 menambah privacy-safe retired-route telemetry, B20 local reporting candidate, exact Git-tree package binding, dan digest/freshness-bound recovery selection. Full900/902 dengan 0 fail, focused32/32, independent28/28 P0=0/P1=0, check368/28 dan production dependency audit0 PASS; Quality 34292997210 nol-step karena billing (`CI_BILLING_BLOCKED`). B20 1 local pass/5 partial belum menambah requirement; external traffic dan target recovery tetap `UNVERIFIED`. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 101/198 kandidat, 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Production tidak berubah dan `BUSINESS_READY=false`.
