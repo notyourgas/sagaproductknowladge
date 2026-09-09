@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 17 atomic period foundation
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`, memecah domain close menjadi prepare/finalize/abort. Opaque HMAC token mengikat action, scope, operation fingerprint, base revision, period, intermediate state, result intent, expiry, dan nonce; token single-use serta perubahan state di tengah proses gagal tertutup.
+
+B20 source loader dan persistence memakai exact caller transaction tanpa nested transaction. Root period writes memakai `SERIALIZABLE READ WRITE`; final job, event history, dan projection disimpan atomik dengan MAC, fault rollback, deterministic retry, serta recovery setelah commit acknowledgement hilang. Migration #36 dan adapter PostgreSQL menambah stable session/principal/Finance grant/device/binding/location authority, versioned correlation metadata, FORCE RLS, legacy-session deny, same-transaction recheck, dan restart/key-rotation replay.
+
+Percobaan bridge `executeClose` dibuang sebelum commit karena hasil canonical domain dan hasil PostgreSQL berbeda. Bridge berikutnya harus memakai satu kontrak canonical untuk domain result, operation replay, B20 projection, report version, HPP result, serta restart restore; satu transaksi juga harus mencakup authorization, B23/HPP/B20, invalidation, dan outbox.
+
+Evidence lokal: full 1133 pass/0 fail/1 platform skip/1 B22 TODO dari 1135, root affected71/71, migration regression38/38, independent implementation82/82, check425 modul/36 migrasi, dependency audit0, serta P0/P1/P2=0. Hosted Quality zero-step karena billing; Vercel hanya preview.
+
+Empat mutasi tetap 503 zero-write dan authority adapter belum dikomposisikan ke HTTP production. B23 `PARTIAL` +0, 101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100. Merge/release HOLD; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 16 B23 HTTP authority foundation
 
 [Draft PR #20](https://github.com/notyourgas/sagaops/pull/20) pada source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`, menambah foundation authority untuk facade B23 dan provider PostgreSQL. HTTP facade hanya menerima reduced session reference yang dibuat server. Authority provider harus membuktikan session/token hash aktif dan belum kedaluwarsa, principal stabil aktif, location grant aktif, registered device aktif pada scope yang sama, serta session-device binding aktif. Role dibatasi ke Owner, Manager, dan Finance; production finance/device authority yang tidak tersedia membuat request gagal tertutup.

@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 17
+
+- Status `partially accepted`; classification `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`.
+- Synced: HMAC single-use close preparation, same-transaction B20 read/persistence, serializable root period writes, migration #36 durable session/device/Finance/correlation authority, PostgreSQL adapter, restart/key-rotation replay, serta rejection bridge yang canonical result-nya tidak konsisten.
+- Evidence: full1133 pass/0 fail/1 platform skip/1 B22 TODO dari 1135; affected71/71; regression38/38; independent82/82; check425/36; dependency audit0; P0/P1/P2=0.
+- Hosted status: Quality zero-step karena billing; Vercel hanya preview. Empat mutasi tetap 503 zero-write dan authority adapter belum dikomposisikan ke production HTTP.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; B23 `PARTIAL` +0, kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100. Merge/release HOLD; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- Open: canonical atomic `executeClose`, HTTP composition, tiga mutasi lain, global writer fence, target recovery/monitoring, dan authenticated Finance/Owner/business UAT.
+
 ## 2026-09-10 - COYABAG Plus Jakarta Sans production release
 
 - Status `accepted`; classification `CONFIRMED`; exact source

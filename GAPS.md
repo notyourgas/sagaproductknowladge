@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 17
+
+- `CONFIRMED`: [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`, menutup fondasi prepare/finalize/abort, same-transaction B20 read/persistence, durable session/device/Finance authority, correlation replay, dan serializable root writes. Evidence full1133/1135 dengan 0 fail; P0/P1/P2=0.
+- `CONFIRMED`: bridge `executeClose` yang menghasilkan canonical domain/SQL berbeda dibuang sebelum commit. Empat mutasi tetap 503 zero-write dan authority adapter belum dikomposisikan ke HTTP production. Quality hosted zero-step karena billing; Vercel hanya preview.
+- `NEEDS CONFIRMATION`: satu canonical result contract dan satu transaksi harus mengikat domain, HPP, PostgreSQL replay, B20 projection, report lineage, invalidation, dan outbox dengan exact period/scope/cutoff `[start,end)`, concurrency, fault, acknowledgement-loss, dan restart parity.
+- `NEEDS CONFIRMATION`: server/OpenAPI/cookie/origin/CSRF composition, global effective-dated writer fence, `executeReopen`, `recordCorrection`, `restate`, target database/recovery/monitoring, dan authenticated Finance/Owner/business UAT belum terbukti.
+- B23 `PARTIAL`, +0 requirement, 101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100, merge/release HOLD, `STAGING_READY=false`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 16 authority foundation
 
 - `CONFIRMED`: [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`, menutup source foundation untuk strict session/device/location/Finance authority, versioned server HMAC, same-tx recheck, replay-before-policy, dan error redaction. Affected135/135, independent90/90, check420/35, audit0; source P0=0/P1=0/P2=1.

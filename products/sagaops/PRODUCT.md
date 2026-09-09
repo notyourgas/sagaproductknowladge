@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 17 atomic foundation
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) memuat source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6` dengan Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574` untuk fondasi transaksi atomik B23.
+- Domain close kini memiliki prepare/finalize/abort dengan token HMAC single-use. B20 dapat membaca dan menyimpan job, event, serta projection melalui transaksi caller yang sama. Migration #36 dan adapter PostgreSQL menambahkan durable session, principal, Finance grant, device/binding, location, serta retained correlation-key authority dengan replay lintas restart.
+- Evidence lokal: full 1133 pass/0 fail/1 platform skip/1 B22 TODO dari 1135, affected71/71, manifest regression38/38, independent implementation82/82, check425/36, dependency audit0, P0/P1/P2=0.
+- Empat mutasi `executeClose`, `executeReopen`, `recordCorrection`, dan `restate` tetap 503 zero-write. Adapter authority belum dikomposisikan ke server HTTP. Quality hosted berhenti sebelum step karena billing; Vercel hanya preview.
+- B23 tetap `PARTIAL`, +0 requirement, kandidat 101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100. Merge/release HOLD; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 16 authority foundation
 
 - `CONFIRMED`; [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) memuat source HEAD `06063829e8b46d6915938d511bb21c6de5df0518` dengan Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e` untuk B23 HTTP/authorization foundation.

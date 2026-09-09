@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 17 atomic foundation
+
+`CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`, menambah prepare/finalize/abort close, transaction-bound B20 read/write, migration #36 durable authority, dan adapter PostgreSQL untuk session/device/Finance/correlation. Full1133/1135 dengan 0 fail, affected71/71, regression38/38, independent82/82, check425/36, dependency audit0, P0/P1/P2=0. Empat mutasi tetap 503 zero-write dan adapter belum terhubung ke HTTP production. Quality hosted zero-step karena billing; Vercel hanya preview. B23 `PARTIAL` +0, 101/198, readiness40/100, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 - COYABAG Plus Jakarta Sans production release
 
 `CONFIRMED`; exact source `5ed4dc903a7ae7b8265fa8f6b1d97d7c247786aa`

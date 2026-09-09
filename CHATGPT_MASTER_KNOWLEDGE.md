@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 17 atomic foundation
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`. Domain close memiliki HMAC-bound prepare/finalize/abort; B20 read dan persistence dapat memakai transaksi caller yang sama; seluruh root period write memakai serializable read-write.
+- Migration #36 dan adapter PostgreSQL menyediakan durable session, principal, Finance grant, registered device/binding, location authority, serta versioned correlation metadata dengan same-transaction recheck dan restart/key-rotation replay. Legacy session tetap tidak eligible dan FORCE RLS diterapkan.
+- Evidence full1133/1135 dengan 0 fail, affected71/71, manifest regression38/38, independent implementation82/82, check425/36, dependency audit0, P0/P1/P2=0. Quality hosted zero-step karena billing; Vercel hanya preview.
+- Empat mutasi tetap 503 zero-write dan adapter belum dikomposisikan ke HTTP production. B23 `PARTIAL` +0; kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100. Merge/release HOLD, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 16 authority foundation
 
 - `CONFIRMED`; [draft PR #20](https://github.com/notyourgas/sagaops/pull/20) source HEAD `06063829e8b46d6915938d511bb21c6de5df0518`, Git tree `88c5cf21e99469b153cf8550d2550d0ecef5319e`. B23 facade kini memerlukan server-derived active session/token hash, principal, location grant, registered device/session binding, serta Owner/Manager/Finance authority; Finance/device authority yang tidak tersedia gagal tertutup.
