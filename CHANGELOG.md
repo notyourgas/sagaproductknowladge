@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-10 — Sinkronisasi SagaPOS Inventory/HPP Wave 18
+
+- `CONFIRMED`: [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, Git tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`, menambah atomic PostgreSQL `executeClose`, canonical replay, B20/B23/outbox transaction, ACK-loss recovery, dan post-trigger database cutoff.
+- Evidence root101/101, QA23/23+24/24, independent133/133, full efektif1172 pass tanpa functional failure, check429/36, dependency audit0, P0=0/P1=0/P2=2.
+- Diperbarui: Product, Dossier, dan changelog SagaOPS; portfolio changelog; master knowledge; gaps; sync status; dan root changelog. Klasifikasi `CONFIRMED`; tidak ada data restricted.
+- B23 `PARTIAL` +0, 101/198, readiness40/100. Tiga mutasi lain dan production HTTP tetap fail-closed; merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Sinkronisasi SagaPOS Inventory/HPP Wave 17
 
 - `CONFIRMED`: [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`, menambah atomic preparation, transaction-bound B20, durable authority migration #36, dan PostgreSQL authority adapter.

@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 18 atomic execute close
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, Git tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`; implementation/QA cut `040e64e677c86216526c187e9cde99dc28e67354`.
+- PostgreSQL `executeClose` kini mengikat authority recheck, authorization, HPP, B20 job/projection, B23 event/operation/aggregate/report, dan outbox dalam satu transaksi serializable. Exact replay bertahan setelah restart, ACK-loss, mutasi HPP berikutnya, dan restatement; cutoff report diambil sesudah trigger snapshot dengan ceiling milidetik PostgreSQL.
+- Evidence lokal: root affected101/101, QA PostgreSQL23/23 + affected24/24, independent133/133, full efektif1172 pass/0 functional fail/1 platform skip/1 B22 TODO dari1174, check429/36, dependency audit0, P0=0/P1=0/P2=2.
+- `executeReopen`, `recordCorrection`, dan `restate` tetap 503 zero-write; durable provider belum terhubung ke production HTTP. B23 `PARTIAL` +0, kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100. Merge/release HOLD; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 17 atomic foundation
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) memuat source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6` dengan Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574` untuk fondasi transaksi atomik B23.

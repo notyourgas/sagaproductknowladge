@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 18
+
+- Status `partially accepted`; classification `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, Git tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`.
+- Synced: atomic PostgreSQL `executeClose`, stateless HPP transition, canonical metadata-only result, B20 job/projection, B23 event/operation/aggregate/report/outbox, replay/restart/ACK-loss, historical replay setelah restatement, dan real-clock microsecond-safe cutoff.
+- Evidence: root affected101/101; QA23/23+24/24; independent133/133; full efektif1172 pass/0 functional fail/1 platform skip/1 B22 TODO dari1174; check429/36; dependency audit0; P0=0/P1=0/P2=2.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; B23 `PARTIAL` +0, kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100. Merge/release HOLD; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- Open: dua P2 source, `executeReopen`, `recordCorrection`, `restate`, production HTTP composition, target PostgreSQL multi-process, recovery/monitoring, hosted Quality billing, dan authenticated Finance/Owner/business UAT.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 17
 
 - Status `partially accepted`; classification `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`.

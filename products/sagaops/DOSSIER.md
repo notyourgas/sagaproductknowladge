@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 18 atomic execute close
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`, mengimplementasikan `executeClose` PostgreSQL sebagai satu transaksi serializable. Authority actor/policy/candidate direcheck setelah lock; state HPP dipulihkan dari snapshot database, ditransisikan secara stateless, lalu HPP, B20 projection, B23 lineage, operation, aggregate, report, dan outbox disimpan atomik. Canonical result hanya memuat metadata dan fingerprint; dokumen projection tetap berada pada persistence B20.
+
+Replay memverifikasi original report ID secara historis sehingga tetap exact sesudah current report berubah karena restatement. ACK-loss dipulihkan hanya dari operation durable, sedangkan commit ambigu tanpa operation gagal tertutup. Cutoff report memakai waktu PostgreSQL sesudah trigger master snapshot dan ceiling satu milidetik untuk menjaga presisi mikrodetik. HPP persistence revision dan domain `snapshot.version` diperlakukan terpisah, termasuk preservation `_productionExecutionState`.
+
+Evidence lokal: root affected101/101, QA PostgreSQL23/23 dan affected24/24, audit independen133/133, full efektif1172 pass/0 functional fail/1 Windows skip/1 B22 TODO dari1174, check429 modul/36 migrasi, dependency audit0. Scoped finding P0=0/P1=0/P2=2; residual P2 adalah domain-conflict mapping yang masih generik dan lookup historical snapshot 10.000-row pada outlet sangat aktif.
+
+B23 tetap `PARTIAL` karena `executeReopen`, `recordCorrection`, dan `restate` masih 503, provider belum dikomposisikan ke HTTP production, dan belum ada target PostgreSQL multi-process, recovery rehearsal, atau authenticated UAT. Kandidat101/198, readiness40/100; merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 17 atomic period foundation
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`, memecah domain close menjadi prepare/finalize/abort. Opaque HMAC token mengikat action, scope, operation fingerprint, base revision, period, intermediate state, result intent, expiry, dan nonce; token single-use serta perubahan state di tengah proses gagal tertutup.

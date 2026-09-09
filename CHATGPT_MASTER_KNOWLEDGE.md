@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 18 atomic execute close
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`. PostgreSQL `executeClose` sekarang menjalankan authority recheck, HPP close, B20 build/persistence, B23 report lineage, operation/aggregate, dan outbox dalam satu transaksi serializable.
+- Canonical result dan historical replay tetap exact setelah restart, ACK-loss, mutasi HPP valid, dan restatement. Report cutoff diambil dari PostgreSQL setelah HPP master-snapshot trigger dengan ceiling milidetik agar presisi mikrodetik tidak terpotong oleh JavaScript.
+- Evidence lokal root101/101, QA23/23+24/24, independent133/133, full efektif1172 pass/0 functional fail/1 platform skip/1 TODO dari1174, check429/36, dependency audit0; P0=0/P1=0/P2=2.
+- `executeReopen`, `recordCorrection`, dan `restate` serta production HTTP tetap disabled/fail-closed. B23 `PARTIAL` +0; kandidat101/198, readiness40/100. Merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 17 atomic foundation
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, Git tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`. Domain close memiliki HMAC-bound prepare/finalize/abort; B20 read dan persistence dapat memakai transaksi caller yang sama; seluruh root period write memakai serializable read-write.

@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-10 — Inventory/HPP Wave 18 atomic execute close
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) final source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`, menambah atomic PostgreSQL `executeClose`, canonical result, post-trigger DB cutoff, B20/B23/outbox transaction, restart/replay, dan ACK-loss recovery.
+- Root affected101/101, QA23/23+24/24, independent133/133, full efektif1172/0/1 skip/1 TODO dari1174, check429/36, audit0; P0=0/P1=0/P2=2.
+- Tiga mutasi lain dan production HTTP tetap fail-closed. B23 `PARTIAL` +0, 101/198, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 17 atomic foundation
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`, menambah prepare/finalize/abort close, transaction-bound B20 read/write, migration #36 durable authority, dan adapter PostgreSQL session/device/Finance/correlation.

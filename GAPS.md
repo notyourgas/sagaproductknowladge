@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 18
+
+- `CONFIRMED`: draft PR #21 source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`, menutup source-side atomic PostgreSQL `executeClose`, canonical replay, B20/B23/outbox coupling, ACK-loss recovery, dan real-clock cutoff.
+- `NEEDS CONFIRMATION`: dua P2 source tersisa, yaitu exact 409/422 mapping untuk sebagian domain conflict dan lookup historical HPP snapshot yang lebih tepat daripada batas 10.000 versi sama.
+- `NEEDS CONFIRMATION`: `executeReopen`, `recordCorrection`, `restate`, production HTTP composition, PostgreSQL target lintas koneksi/proses, recovery rehearsal, monitoring, staging, dan authenticated Finance/Owner/business UAT belum dibuktikan.
+- Production tidak berubah. Kandidat101/198, accepted0/198, red-team0/25, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `STAGING_READY=false`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 17
 
 - `CONFIRMED`: [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`, menutup fondasi prepare/finalize/abort, same-transaction B20 read/persistence, durable session/device/Finance authority, correlation replay, dan serializable root writes. Evidence full1133/1135 dengan 0 fail; P0/P1/P2=0.

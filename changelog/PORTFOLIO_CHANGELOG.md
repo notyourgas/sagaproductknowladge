@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 18 atomic execute close
+
+`CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`, menambah satu transaksi serializable untuk PostgreSQL `executeClose`: authority, authorization, HPP, B20, B23 report lineage, operation/aggregate, dan outbox. Restart, replay historis, ACK-loss, 13 rollback boundary, concurrency, tamper, dan cutoff real-clock/microsecond diuji. Root affected101/101, QA23/23+24/24, independent133/133, full efektif1172 pass tanpa functional failure, check429/36, dependency audit0; P0=0/P1=0/P2=2. B23 tetap `PARTIAL` +0; 101/198, readiness40/100, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 17 atomic foundation
 
 `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `752240095e5e005e5fbdd336677cdfdd346294e6`, tree `3a8bde91ebe227bdaa6d5a7b6ed3d00f402db574`, menambah prepare/finalize/abort close, transaction-bound B20 read/write, migration #36 durable authority, dan adapter PostgreSQL untuk session/device/Finance/correlation. Full1133/1135 dengan 0 fail, affected71/71, regression38/38, independent82/82, check425/36, dependency audit0, P0/P1/P2=0. Empat mutasi tetap 503 zero-write dan adapter belum terhubung ke HTTP production. Quality hosted zero-step karena billing; Vercel hanya preview. B23 `PARTIAL` +0, 101/198, readiness40/100, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
