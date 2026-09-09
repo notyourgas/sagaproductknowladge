@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 19 replay hardening dan reopen foundation
+
+`CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `a95600b1e12844391442f4ae8031ae16e95953ac`, tree `b5d0eb95de66cae5b8f66e2e927b7292d8dcd2b9`, menutup dua P2 Wave 18 melalui allowlist safe conflict 409/422 dan exact primary-key HPP replay binding. Pure stateless `executeReopen` kini mengikat authority, current B20 report/query, immutable HPP, serta event/invalidation/outbox intent, tetapi belum terintegrasi ke transaksi PostgreSQL. Focused39/39, QA2/2 dengan 10.050 decoy, reopen8/8, affected54/54, independent16/16, full1183 pass/0 fail/1 skip/1 TODO dari1185, check432/36, audit0; P0/P1/P2=0. B23 `PARTIAL` +0; 101/198, readiness40/100, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 18 atomic execute close
 
 `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`, menambah satu transaksi serializable untuk PostgreSQL `executeClose`: authority, authorization, HPP, B20, B23 report lineage, operation/aggregate, dan outbox. Restart, replay historis, ACK-loss, 13 rollback boundary, concurrency, tamper, dan cutoff real-clock/microsecond diuji. Root affected101/101, QA23/23+24/24, independent133/133, full efektif1172 pass tanpa functional failure, check429/36, dependency audit0; P0=0/P1=0/P2=2. B23 tetap `PARTIAL` +0; 101/198, readiness40/100, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.

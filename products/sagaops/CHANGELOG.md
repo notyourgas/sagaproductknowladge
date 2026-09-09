@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-10 — Inventory/HPP Wave 19 replay hardening dan reopen foundation
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `a95600b1e12844391442f4ae8031ae16e95953ac`, tree `b5d0eb95de66cae5b8f66e2e927b7292d8dcd2b9`, menutup safe conflict mapping dan exact historical HPP replay lookup, serta menambah pure stateless reopen transition.
+- Evidence focused39/39, QA2/2 dengan 10.050 decoy, reopen8/8, affected54/54, independent16/16, full1183/0/1 skip/1 TODO dari1185, check432/36, audit0; P0/P1/P2=0.
+- B23 tetap `PARTIAL` +0 karena provider `executeReopen`, `recordCorrection`, `restate`, dan HTTP production belum selesai. 101/198, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 18 atomic execute close
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) final source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`, menambah atomic PostgreSQL `executeClose`, canonical result, post-trigger DB cutoff, B20/B23/outbox transaction, restart/replay, dan ACK-loss recovery.

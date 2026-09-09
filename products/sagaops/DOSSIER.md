@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 19 replay hardening dan reopen foundation
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `a95600b1e12844391442f4ae8031ae16e95953ac`, tree `b5d0eb95de66cae5b8f66e2e927b7292d8dcd2b9`, menutup dua P2 Wave 18. Error transition hanya diteruskan bila pasangan code/status ada pada allowlist aman; detail internal tetap teredaksi. Outbox close kini menyimpan binding authority HPP dan replay membaca tepat satu snapshot immutable lewat primary key organization/outlet/catalog revision/HPP persistence revision, lalu memverifikasi fingerprint. QA membuktikannya dengan 10.050 snapshot pengalih, zero-write pada konflik, dan tamper fail-closed.
+
+Source juga menambah fondasi murni `executeReopen`: approval/scope/actor/capability, three-party separation, expiry, policy/candidate, HPP period, active report metadata/document/query, serta effect intent untuk control event, invalidasi B20 dari awal periode, dan outbox terikat dalam transition fingerprint. Prepare/finalize/abort dan restart recomputation menjaga HPP byte-identical. Provider PostgreSQL belum mengonsumsi transition ini, sehingga belum ada klaim transaksi runtime reopen.
+
+Evidence lokal final: focused39/39, QA2/2, pure reopen8/8, affected54/54, audit independen16/16, full1183 pass/0 fail/1 Windows skip/1 B22 TODO dari1185, static check432 modul/36 migrasi, dependency audit0, P0/P1/P2=0. B23 tetap `PARTIAL` +0; kandidat101/198 dan readiness40/100. `executeReopen`, `recordCorrection`, `restate`, HTTP production, target PostgreSQL/recovery, dan authenticated UAT masih terbuka. Merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 18 atomic execute close
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`, mengimplementasikan `executeClose` PostgreSQL sebagai satu transaksi serializable. Authority actor/policy/candidate direcheck setelah lock; state HPP dipulihkan dari snapshot database, ditransisikan secara stateless, lalu HPP, B20 projection, B23 lineage, operation, aggregate, report, dan outbox disimpan atomik. Canonical result hanya memuat metadata dan fingerprint; dokumen projection tetap berada pada persistence B20.

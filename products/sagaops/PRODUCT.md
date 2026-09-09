@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 19 replay hardening dan reopen foundation
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `a95600b1e12844391442f4ae8031ae16e95953ac`, Git tree `b5d0eb95de66cae5b8f66e2e927b7292d8dcd2b9`; tested implementation `f5269dee4549708551b6a8292da898d63b9b4737`.
+- Dua P2 Wave 18 ditutup: conflict transition terpilih kembali sebagai exact 409/422 melalui allowlist code/status tanpa detail sensitif, dan replay close mengikat snapshot historis lewat outbox authority serta primary key empat kolom dengan satu kandidat.
+- Fondasi stateless `executeReopen` mengikat scope/actor/capability, pemisahan maker-checker-executor, expiry, policy/candidate, HPP period, current B20 report document/query, serta immutable event/invalidation/outbox intent. HPP tetap byte-identical, tetapi provider PostgreSQL belum mengonsumsi kontrak ini.
+- Evidence lokal: focused39/39, QA adversarial2/2 dengan 10.050 snapshot pengalih, pure reopen8/8, affected54/54, audit independen16/16, full1183 pass/0 fail/1 Windows skip/1 B22 TODO dari1185, check432/36, dependency audit0; P0/P1/P2=0.
+- B23 tetap `PARTIAL` +0; `executeReopen`, `recordCorrection`, `restate`, dan production HTTP masih fail-closed. Kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100; merge/release HOLD, `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 18 atomic execute close
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, Git tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`; implementation/QA cut `040e64e677c86216526c187e9cde99dc28e67354`.

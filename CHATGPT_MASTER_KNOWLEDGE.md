@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 19 replay hardening dan reopen foundation
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `a95600b1e12844391442f4ae8031ae16e95953ac`, tree `b5d0eb95de66cae5b8f66e2e927b7292d8dcd2b9`. Dua P2 Wave 18 ditutup: safe transition conflict memakai allowlist code/status teredaksi, dan close replay memakai exact four-column primary key plus HPP fingerprint daripada JSON-version scan 10.000 baris.
+- Pure `executeReopen` transition mengikat three-party authority, expiry, policy/candidate, HPP period, active B20 report document/query, serta control-event, period-start invalidation, dan outbox intent. HPP tetap byte-identical; provider PostgreSQL belum mengonsumsi kontrak ini.
+- Evidence lokal focused39/39, QA2/2 dengan 10.050 decoy, reopen8/8, affected54/54, independent16/16, full1183 pass/0 fail/1 Windows skip/1 B22 TODO dari1185, check432/36, dependency audit0; P0/P1/P2=0.
+- B23 tetap `PARTIAL` +0; kandidat101/198, readiness40/100. `executeReopen`, `recordCorrection`, `restate`, production HTTP, target recovery, dan authenticated UAT belum selesai. Merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 18 atomic execute close
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b90e8f68e4f682b3b5dc2e4cd01d8cb80815ba6c`, tree `a9a5552eaf72165cabd29d1b6785a9448e61ebc4`. PostgreSQL `executeClose` sekarang menjalankan authority recheck, HPP close, B20 build/persistence, B23 report lineage, operation/aggregate, dan outbox dalam satu transaksi serializable.
