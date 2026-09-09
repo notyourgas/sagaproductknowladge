@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 20 atomic execute reopen
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `c5f273f98f2459f09a9f2c0a9847abfada5ae42e`, tree `67d3c3341699620667417ca68378b38248b97703`, mengintegrasikan pure reopen Wave 19 ke PostgreSQL. Implementation cut `fac477a6654d826966407bd5d30dd8c343118847` menjalankan authority recheck, single-use approval, event/operation/aggregate CAS, B20 invalidation, outbox, dan readiness dalam satu transaksi `SERIALIZABLE READ WRITE`; QA cut `fbdfb51776a064437f78a048c0a7cb178cca746e` menguji fault, tamper, concurrency, replay, dan ACK-loss.
+
+HPP tetap byte-identical pada fresh execute maupun replay. Outbox menyimpan exact four-column historical authority; replay memverifikasi historical snapshot fingerprint, state/HPP version, period fingerprint, current report/projection, invalidation job revision/history/window/outlet, authorization event/operation hashes, previous-event chain, aggregate, dan shared event ID. B20 same-transaction seams menolak transaksi lemah serta membatasi maksimum 1.000 affected job sebelum mutation.
+
+Evidence lokal: dedicated24/24, combined39/39, affected153/153, check433 modul/36 migrasi, dependency audit0, audit independen P0/P1/P2=0. Full regression menghasilkan1207 pass/1 browser touch-measurement flake/1 Windows skip/1 B22 TODO dari1210; test browser yang sama lulus1/1 pada rerun terisolasi. B23 tetap `PARTIAL` +0; kandidat101/198 dan readiness40/100. `recordCorrection`, `restate`, HTTP production, target PostgreSQL/recovery, dan authenticated UAT masih terbuka. Merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 19 replay hardening dan reopen foundation
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `a95600b1e12844391442f4ae8031ae16e95953ac`, tree `b5d0eb95de66cae5b8f66e2e927b7292d8dcd2b9`, menutup dua P2 Wave 18. Error transition hanya diteruskan bila pasangan code/status ada pada allowlist aman; detail internal tetap teredaksi. Outbox close kini menyimpan binding authority HPP dan replay membaca tepat satu snapshot immutable lewat primary key organization/outlet/catalog revision/HPP persistence revision, lalu memverifikasi fingerprint. QA membuktikannya dengan 10.050 snapshot pengalih, zero-write pada konflik, dan tamper fail-closed.

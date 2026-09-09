@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 20 atomic execute reopen
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c5f273f98f2459f09a9f2c0a9847abfada5ae42e`, Git tree `67d3c3341699620667417ca68378b38248b97703`; implementation `fac477a6654d826966407bd5d30dd8c343118847`, QA `fbdfb51776a064437f78a048c0a7cb178cca746e`.
+- PostgreSQL `executeReopen` sekarang atomik dalam satu transaksi serializable: authority recheck, approval sekali pakai, event/operation/aggregate, exact B20 invalidation, outbox, readiness, replay/restart, concurrency, ACK-loss recovery, dan rollback pada delapan fault boundary.
+- HPP tidak berubah. Replay mengikat exact historical master snapshot empat kolom, metadata version/state, current report/projection, invalidation lineage, outlet scope, dan hash chain approval/outbox.
+- Evidence: dedicated24/24, combined39/39, affected153/153, check433/36, dependency audit0, independent P0/P1/P2=0. Full regression1207 pass/1 browser flake/1 Windows skip/1 B22 TODO dari1210; exact browser failure lulus1/1 saat rerun.
+- B23 tetap `PARTIAL` +0 karena `recordCorrection`, `restate`, production HTTP, target recovery, dan authenticated UAT belum selesai. Kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100; merge/release HOLD, `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 19 replay hardening dan reopen foundation
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `a95600b1e12844391442f4ae8031ae16e95953ac`, Git tree `b5d0eb95de66cae5b8f66e2e927b7292d8dcd2b9`; tested implementation `f5269dee4549708551b6a8292da898d63b9b4737`.

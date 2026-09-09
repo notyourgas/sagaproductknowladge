@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 20 atomic execute reopen
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c5f273f98f2459f09a9f2c0a9847abfada5ae42e`, tree `67d3c3341699620667417ca68378b38248b97703`. PostgreSQL `executeReopen` sekarang memakai satu transaksi serializable untuk authority, single-use approval, event/operation/aggregate, exact B20 invalidation, outbox, readiness, replay, concurrency, ACK-loss, dan rollback.
+- HPP tidak dimutasi; exact historical four-column master snapshot, version/state, period, current report/projection, invalidation/outlet/history, approval chain, operation, aggregate, dan outbox diverifikasi fail-closed.
+- Evidence dedicated24/24, combined39/39, affected153/153, check433/36, dependency audit0, audit independen P0/P1/P2=0. Full1207 pass/1 browser flake/1 Windows skip/1 B22 TODO dari1210; targeted rerun1/1 pass.
+- B23 tetap `PARTIAL` +0; kandidat101/198, readiness40/100. Correction/restatement, production HTTP, target recovery, dan authenticated UAT belum selesai. Merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 19 replay hardening dan reopen foundation
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `a95600b1e12844391442f4ae8031ae16e95953ac`, tree `b5d0eb95de66cae5b8f66e2e927b7292d8dcd2b9`. Dua P2 Wave 18 ditutup: safe transition conflict memakai allowlist code/status teredaksi, dan close replay memakai exact four-column primary key plus HPP fingerprint daripada JSON-version scan 10.000 baris.
