@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 10 durable reporting candidate
+
+`CONFIRMED`; [draft PR #17](https://github.com/notyourgas/sagaops/pull/17) pada final head `d08ae29573d72c66b05b9a9ee8d0e03a5d76256d`, tested parent `a9860be4e48fcda5a1a4b8bf5f55558a08c97c84`, menambah historical authority, migrations #29–30, durable PostgreSQL jobs/projections, backdated invalidation, restart/tamper protection, config-off production composition, dan health berbasis metrik aktual. Evidence focused72/72, full982 pass/0 fail/1 skip/1 todo dari 984, check388/30, dependency audit0; local technical 16 PASS/7 PARTIAL/2 GAP dan B20 5 partial + 1 local-domain pass. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198 (51,0%), accepted 0/198, red-team accepted 0/25, readiness 40/100. Production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 9 reporting integration
 
 `CONFIRMED`; source `8b58c81c3bc6a0c76e303db151f4def077a0be9a` pada draft PR #16 menghubungkan B20 ke provider PostgreSQL read-only, rebuild job dengan fingerprint/retry/DLQ/lease/invalidation, dan Owner-only 11-family API/UI/CSV/drill-down. Focused47/47, full937/0/1 skip/1 TODO dari 939, check377/28, retired scan247/0 dan production dependency audit0 PASS; Quality 34297838649 zero-step karena billing (`CI_BILLING_BLOCKED`). B20 tetap 1 local pass/5 partial dan kandidat 101/198 karena production runtime/worker, historical/production/valuation authority, target DB/recovery/monitoring dan UAT belum lulus. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Production tidak berubah dan `BUSINESS_READY=false`.

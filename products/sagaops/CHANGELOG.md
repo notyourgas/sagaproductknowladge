@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 10 durable reporting candidate
+
+- `CONFIRMED`; [draft PR #17](https://github.com/notyourgas/sagaops/pull/17), final head `d08ae29573d72c66b05b9a9ee8d0e03a5d76256d`, tested implementation parent `a9860be4e48fcda5a1a4b8bf5f55558a08c97c84`.
+- Menambah historical authority, migrations #29–30, durable jobs/projections, lease fencing, retry/DLQ, backdated invalidation, restart/tamper protection, persisted projection adapter, config-off composition, dan strict actual-metric health.
+- Focused72/72; full982 pass/0 fail/1 skip/1 todo dari 984; check388/30; production dependency audit0 PASS. Local technical snapshot 16/7/2 dan B20 5 partial + 1 local-domain pass.
+- `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198 (51,0%), accepted 0/198, red-team accepted 0/25, readiness 40/100. Production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 9 reporting integration
 
 - `CONFIRMED`; exact source `8b58c81c3bc6a0c76e303db151f4def077a0be9a`, draft PR #16, menambah provider PostgreSQL B20, rebuild orchestration, dan Owner-only 11-family API/UI/CSV/drill-down.

@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 10 durable authority, jobs, dan composition
+
+[Draft PR #17](https://github.com/notyourgas/sagaops/pull/17) pada final review head `d08ae29573d72c66b05b9a9ee8d0e03a5d76256d` menggabungkan implementation code parent `a9860be4e48fcda5a1a4b8bf5f55558a08c97c84`. Scope source B20 menambah historical product/order-line/production/valuation authority, migration #29 untuk durable reporting jobs/projections dan migration #30 untuk historical authority. Durable queue memakai immutable command, exact query/source/projection fingerprints, idempotency/collision guard, bounded claims, database-time lease fencing, retry/backoff/DLQ, backdated invalidation, restart recovery, HMAC tamper detection, dan tenant-scoped RLS.
+
+Production composition source hanya aktif melalui konfigurasi eksplisit dan credential file tervalidasi. Composite worker menjalankan durable job worker bersama canonical backdated invalidation consumer; persisted projection adapter menjaga report/source fingerprint dan membership. Health contract hanya melaporkan queue, dead letter, expired lease, invalidation backlog/lag, dan projection freshness aktual. Startup fail-closed saat projection segar belum tersedia. Default OFF tidak membuka koneksi reporting.
+
+Evidence final pada implementation parent: focused72/72 PASS; full984 total, 982 pass, 0 fail, 1 skip, 1 todo; check388 modules dan 30 migrations; production dependency audit0. Local technical assessment adalah 16 PASS/7 PARTIAL/2 GAP. B20 tetap 5 `PARTIAL` + 1 `PASS_LOCAL_DOMAIN`; historical legacy coverage, COMPANY scope, target database/RLS/performance/recovery, packaging, monitoring, dan authenticated UAT belum diterima.
+
+Status `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198 (51,0%), business accepted 0/198, red-team accepted 0/25, readiness 40/100. PR masih draft; production tidak berubah, `BELUM DEPLOY`, dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 9 provider, rebuild job, dan Owner reporting
 
 Exact source `8b58c81c3bc6a0c76e303db151f4def077a0be9a` pada draft PR #16 mengintegrasikan provider PostgreSQL B20, job rebuild, dan Owner report surface. Provider membaca authority dalam satu transaksi repeatable-read/read-only, memeriksa scope/RLS readiness dan source fingerprint, lalu membuat projection yang dapat ditelusuri. Job memakai immutable command, idempotency/collision guard, bounded concurrency, retry/backoff/DLQ, lease fencing, backdated invalidation dan tamper-checked restart export. Owner API/UI mengunci server-derived OUTLET scope, exact report/source fingerprint, semua 11 family, bounded page/CSV/time window, dan safe source record.
