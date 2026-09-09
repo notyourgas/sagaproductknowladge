@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 8 telemetry, B20 candidate, dan recovery binding
+
+Exact source review head `08076b60caa861dcd56028d4ab0f97385ca294b3` pada draft PR #15 menggabungkan telemetry lima retired route, B20 reporting domain candidate, dan package/recovery hardening di atas Wave 7. Tested implementation cut `dedb6de6e9a5ecf119a47eab9287b9fdb7966d42`.
+
+Telemetry merekam hanya UUID server, timestamp, fixed route/method/status dan caller class setelah guard, sebelum body parsing, kemudian mempertahankan respons `410`. Ia tidak menyimpan body, IP, token, cookie, user-agent mentah, PII atau path identifier. Durable runtime memakai append-only `pos_audit_events`, Owner read memakai server-derived scope dan cursor bounded, summary PostgreSQL dibatasi maksimum 20 group, dan health tidak mengekspos scope/count. Real external traffic belum diobservasi, jadi status tetap `UNVERIFIED`.
+
+B20 service menghasilkan sealed dan rebuildable projection untuk stock, HPP/COGS, usage/variance, transfer/production, profitability, supplier, replenishment dan data quality dengan fixed-point quantity serta versioned metric dictionary. Audit mengklasifikasikan B20-01 sampai B20-05 `PARTIAL` dan B20-06 `PASS_LOCAL_DOMAIN`; modul belum terhubung ke authoritative provider, API, persistence, server authorization, UI/export atau UAT, sehingga tidak menambah hitungan 101/198.
+
+Package assembler membandingkan seluruh file Git-controlled terhadap independent `git archive` exact SHA dan menolak forged self-consistent archive. Recovery selector memakai canonical evidence digest, exact artifact hashes, freshness lima menit dan future skew 30 detik. PGlite backup/restore terenkripsi hanya synthetic disposable local rehearsal; Linux/systemd, PostgreSQL 18 target backup/restore, monitoring dan rollback activation masih `UNVERIFIED`.
+
+Bukti final: full 902 total dengan 900 pass, 0 fail, 1 Windows/POSIX skip, 1 B22 TODO; focused32/32; independent audit28/28, P0=0/P1=0; static/type/OpenAPI PASS pada 368 modul, 8 reliability routes, retired scan242/0 dan 28 migrasi; audit 45 production dependency 0 vulnerability. Quality run 34292997210 tidak memulai step karena billing (`CI_BILLING_BLOCKED`); Vercel success hanya preview.
+
+Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198, Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100. Production tidak berubah; `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 7 planning PostgreSQL, client cutover, dan retained graft
 
 Exact source head `2e88a6c33d3c6011876597d81e829c98a7260677` pada draft PR #14 menggabungkan tiga hardening lane di atas Wave 6. Tested implementation cut `21de309ff5d05a3c4b474e1b18e3f97603844849` memberi planning provider PostgreSQL forced-RLS yang membaca satu revision HPP authoritative, memakai tenant/outlet dari server, dan menyimpan policy serta recommendation melalui CAS dan HMAC. Owner policy API menolak non-Owner, CSRF invalid, scope override, stale revision, inventory tidak dikenal, serta race antar-worker sebelum mutasi. Existing-install credential disiapkan satu-kali, root-only, mode `0600`, shared-lock, tidak mencetak secret, dan fail-closed ketika state telah ada.

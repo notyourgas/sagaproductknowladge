@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 8 evidence dan recovery hardening
+
+- `CONFIRMED`; source review head `08076b60caa861dcd56028d4ab0f97385ca294b3`, tested implementation `dedb6de6e9a5ecf119a47eab9287b9fdb7966d42`, branch `codex/sagapos-wave8-integrated`, draft PR #15 di atas Wave 7.
+- Lima retired route kini merekam metadata bounded setelah auth/role/CSRF dan sebelum body parsing, lalu tetap `410` tanpa mutasi bisnis. PostgreSQL memakai append-only audit provider; pembacaan dibatasi Owner dan server scope. Traffic eksternal tetap `UNVERIFIED`.
+- B20 mempunyai domain projection rebuildable, lapisan HPP/COGS, quantity/value waterfall, keluarga laporan, metric dictionary dan drill-down reference. Statusnya 1 local-domain pass/5 partial; provider authority, runtime/API/persistence, permission/RLS, UI/export, direct ledger derivation dan UAT belum terhubung, sehingga kandidat tetap 101/198.
+- Package planning diverifikasi terhadap exact Git tree; recovery evidence mengikat SHA candidate/package/backup/graft dan menolak bukti stale, future atau berubah. Backup PGlite terenkripsi hanya synthetic-disposable rehearsal, bukan bukti target PostgreSQL.
+- Full 900 pass/0 fail/1 platform skip/1 B22 TODO dari 902; focused32/32; audit independen28/28 dengan P0=0/P1=0; check368/28 dan production dependency audit0 PASS. Quality run 34292997210 nol-step karena billing (`CI_BILLING_BLOCKED`); Vercel hanya preview.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100. Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 7 runtime hardening
 
 - `CONFIRMED`; exact source head `2e88a6c33d3c6011876597d81e829c98a7260677`, tested implementation cut `21de309ff5d05a3c4b474e1b18e3f97603844849`, branch `codex/sagapos-wave7-runtime-integrated`, draft PR #14 di atas Wave 6. Coverage tetap 101/198 kandidat; production tidak berubah.

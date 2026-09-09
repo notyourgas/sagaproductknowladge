@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 8
+
+- `CONFIRMED`: source `08076b60caa861dcd56028d4ab0f97385ca294b3` pada draft PR #15 menutup source gap bounded retired-route telemetry, forged-package acceptance, dan stale/unbound recovery selection. Full900/902 dengan 0 fail, focused32/32, independent28/28 P0=0/P1=0, check368/28 dan audit production dependency0 PASS; Quality 34292997210 nol-step (`CI_BILLING_BLOCKED`).
+- `NEEDS CONFIRMATION`: B20-01..05 masih partial karena authoritative provider/direct ledger derivation, job/persistence, server authorization, API/OpenAPI, UI/export dan authenticated UAT belum ada. B20-06 hanya lulus pada domain lokal.
+- `NEEDS CONFIRMATION`: external caller observation window, Linux/systemd package, PostgreSQL 18 backup/disposable restore, monitoring dan rollback activation pada target belum diverifikasi.
+- Production tidak berubah. Kandidat 101/198, Accepted 0/198, Audited 198/198, red-team accepted 0/25, readiness 40/100, `PRODUCTION_ACTIVATED=false`, `PILOT_ACTIVE=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 7
 
 - `CONFIRMED`: source `2e88a6c33d3c6011876597d81e829c98a7260677` pada draft PR #14 menutup source-side planning PostgreSQL/policy credential lifecycle, in-repo legacy route cutover, serta retained v21 read-only graft/rehearsal. Full872/874 dengan 0 fail, focused78/78 P0=0/P1=0, check361/28 dan audit production dependency0 PASS; Quality 34288094401 nol-step (`CI_BILLING_BLOCKED`).

@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 8 evidence dan recovery hardening
+
+- `CONFIRMED`; source head `08076b60caa861dcd56028d4ab0f97385ca294b3`, tested implementation `dedb6de6e9a5ecf119a47eab9287b9fdb7966d42`, draft PR #15, menambah bounded retired-route telemetry, B20 local reporting candidate, exact Git-tree package verification dan digest/freshness-bound recovery selection.
+- B20 tetap 1 local-domain pass/5 partial dan tidak menambah kandidat karena provider/runtime/API/UI/export/UAT belum terhubung. External traffic dan target recovery tetap `UNVERIFIED`.
+- Full900/0/1 skip/1 TODO dari 902, focused32/32, independent28/28 P0=0/P1=0, check368/28 dan production dependency audit0 PASS. Quality 34292997210 nol-step karena billing (`CI_BILLING_BLOCKED`); preview bukan deployment.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; 101/198 kandidat, 0/198 accepted, 198/198 audited, 0/25 red-team accepted, readiness 40/100. Production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 7 runtime hardening
 
 - `CONFIRMED`; source head `2e88a6c33d3c6011876597d81e829c98a7260677`, tested implementation `21de309ff5d05a3c4b474e1b18e3f97603844849`, draft PR #14, menambah planning PostgreSQL forced-RLS/policy credential lifecycle, memutus caller route lama, dan membuat retained v21 read-only graft yang terikat ledger v28.
