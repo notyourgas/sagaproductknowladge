@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 11 OUTLET/COMPANY sync
+
+- `CONFIRMED`: [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`.
+- Ringkasan: menyinkronkan kandidat lokal B20 untuk view `OUTLET` dan `COMPANY`, server-derived authority, bounded multi-outlet aggregation, calendar/isolation guard, serta query/source fingerprint.
+- Produk/area: SagaPOS Inventory/HPP reporting, Owner access, PostgreSQL/RLS boundary, recovery dan release readiness. Dokumen terdampak: Product, Dossier dan changelog SagaOPS, portfolio, master knowledge, gaps, root changelog, serta sync status.
+- Klasifikasi `CONFIRMED`; tidak ada data restricted. Coverage tetap 101/198 dan readiness 40/100.
+- Production berubah: tidak. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; `BELUM DEPLOY`, `NOT_PRODUCTION_ACTIVATED`, `BUSINESS_READY=false`. Next: buktikan seluruh target database, package/recovery, runtime/monitoring, hosted CI dan authenticated UAT gates.
+
 ## 2026-09-09 - COYABAG storefront visual restoration sync
 
 - `CONFIRMED`: source `8b234453d71f0bfb4ec9c7727a80c249f94ddba6`,

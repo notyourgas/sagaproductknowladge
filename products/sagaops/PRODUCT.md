@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 11 OUTLET/COMPANY source candidate
+
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064` untuk kandidat laporan B20 dengan view `OUTLET` dan `COMPANY`.
+- Scope laporan ditentukan server. `OUTLET` mempertahankan outlet aktif yang dipilih server; `COMPANY` hanya tersedia untuk Owner organisasi yang sah dan mengagregasi outlet aktif yang lolos batas, kalender, lokasi, serta isolation check. Scope atau kalender yang ambigu gagal tertutup.
+- Kandidat tetap 101/198 (51,0%) dengan readiness 40/100. Target PostgreSQL/RLS dan performa multi-outlet, exact package, backup/disposable restore, rollback, credential serta worker/monitoring target, hosted CI, dan authenticated Owner/business UAT masih harus dibuktikan.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Wave 11 belum mengubah production, `BELUM DEPLOY`, `NOT_PRODUCTION_ACTIVATED`, dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 10 final source candidate
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memakai source head `7b5f2c7778766fe3df8f4734c10743f2c152cdd0`, dengan implementation final yang diuji `ee624217b062fd4c8f712f6b02075738cbb3d3b7`.

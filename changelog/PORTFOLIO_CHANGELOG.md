@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 11 OUTLET/COMPANY candidate
+
+- [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`.
+- B20 kini memiliki kandidat lokal untuk laporan `OUTLET` dan agregat `COMPANY` dengan scope Owner yang ditentukan server, bounded outlet set, kalender bersama, tenant isolation, serta query/source fingerprint.
+- Coverage tetap 101/198 dan readiness 40/100. Target database/RLS/performance, package/recovery, runtime worker/monitoring, hosted CI, serta authenticated Owner/business UAT masih outstanding.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 - COYABAG storefront visual restoration production release
 
 `CONFIRMED`; exact source `8b234453d71f0bfb4ec9c7727a80c249f94ddba6`

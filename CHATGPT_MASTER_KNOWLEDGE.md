@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-09 — SagaPOS Inventory/HPP Wave 11 OUTLET/COMPANY source candidate
+
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`. B20 kini mempunyai kandidat lokal `OUTLET` dan `COMPANY`; seluruh organization/outlet/location/calendar authority tetap server-derived dan invalid atau ambiguous scope gagal tertutup.
+- Kandidat tetap 101/198 (51,0%) dan readiness 40/100. Target PostgreSQL/RLS/performance, artifact dan recovery, credential serta worker/monitoring target, hosted CI, dan authenticated Owner/business UAT belum dibuktikan. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `NOT_PRODUCTION_ACTIVATED`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 10 final source candidate
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17), source head `7b5f2c7778766fe3df8f4734c10743f2c152cdd0`, tested implementation `ee624217b062fd4c8f712f6b02075738cbb3d3b7`. Same-runtime recovery kini melakukan canonical reload dan hanya mengembalikan replay bila operation serta immutable B20 fact persis cocok. Migration #30 byte-frozen pada SHA-256 `ae72538b1af5cea666affbe0b4cf855d40754a7fee47012557cfeea548153c86`; perbaikan legacy gap berada pada migration #31 aditif; public integration outbox memakai forced-RLS dan readiness memverifikasi enforcement itu.

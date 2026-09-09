@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 11 OUTLET/COMPANY authority
+
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact implementation `56283a85034fdb259411effd5ba0fce34712e064`.
+- B20 kini mempunyai kandidat lokal untuk report `OUTLET` dan agregat `COMPANY` dengan server-derived authority, bounded outlet set, kalender bersama, tenant isolation, stable fingerprint, dan fail-closed invalid scope.
+- Coverage tetap 101/198 (51,0%) dan readiness 40/100. Target database/RLS/performance, package dan recovery, credential/runtime worker, monitoring, hosted CI, serta authenticated Owner/business UAT belum lulus.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `NOT_PRODUCTION_ACTIVATED`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 10 durable reporting candidate
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17), final head `7b5f2c7778766fe3df8f4734c10743f2c152cdd0`, tested implementation `ee624217b062fd4c8f712f6b02075738cbb3d3b7`.

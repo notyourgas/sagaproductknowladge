@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 11
+
+- `CONFIRMED`: [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`; kandidat lokal B20 sekarang mencakup view `OUTLET` dan `COMPANY` dengan authority server-derived serta fail-closed invalid scope.
+- `NEEDS CONFIRMATION`: target PostgreSQL migrations, organization-owner RLS, isolation dan performa multi-outlet, exact package, backup/disposable restore, rollback, credential, worker/scheduler/monitoring target, hosted CI, staging, dan authenticated Owner/business UAT belum dibuktikan.
+- Production tidak berubah. Kandidat 101/198 (51,0%), readiness 40/100, `STAGING_READY=false`, `NOT_PRODUCTION_ACTIVATED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP residual setelah Wave 10
 
 - `CONFIRMED`: [draft PR #17](https://github.com/notyourgas/sagaops/pull/17), final head `d08ae29573d72c66b05b9a9ee8d0e03a5d76256d`, tested parent `a9860be4e48fcda5a1a4b8bf5f55558a08c97c84`, menutup source-side durable persistence/composition dan menambah historical authority. Evidence focused72/72, full982 pass/0 fail/1 skip/1 todo dari 984, check388/30, dependency audit0.

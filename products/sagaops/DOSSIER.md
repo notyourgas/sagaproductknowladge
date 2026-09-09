@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 11 OUTLET/COMPANY reporting authority
+
+[PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat exact source implementation `56283a85034fdb259411effd5ba0fce34712e064`. Kandidat lokal B20 mempertahankan `OUTLET` sebagai default dan menambahkan `COMPANY` melalui authority yang seluruhnya diturunkan server. Client hanya dapat meminta jenis view dan periode yang dibatasi; client tidak menjadi sumber organization, outlet, lokasi, timezone, status, currency, atau policy.
+
+View `COMPANY` mensyaratkan satu Owner organisasi aktif, kumpulan outlet aktif yang unik dan dibatasi, lokasi usable, serta timezone dan business-day cutoff yang sama. Kegagalan authority, duplikasi, lintas tenant, lebih dari batas outlet, lokasi hilang, atau kalender campuran ditolak. Projection dan drill-down tetap terikat ke query serta source fingerprint; perpindahan internal antar-outlet tidak boleh menggandakan arus ekonomi perusahaan.
+
+Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat tetap 101/198 (51,0%) dan readiness 40/100. Target PostgreSQL/RLS dan performa multi-outlet, migration readiness, exact artifact, backup/disposable restore, rollback, credential dan worker/scheduler/monitoring target, hosted CI, serta authenticated Owner/business UAT masih terbuka. Wave 11 belum masuk production: `BELUM DEPLOY`, `NOT_PRODUCTION_ACTIVATED`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Wave 10 durable authority, jobs, dan composition
 
 [Draft PR #17](https://github.com/notyourgas/sagaops/pull/17) pada final review head `d08ae29573d72c66b05b9a9ee8d0e03a5d76256d` menggabungkan implementation code parent `a9860be4e48fcda5a1a4b8bf5f55558a08c97c84`. Scope source B20 menambah historical product/order-line/production/valuation authority, migration #29 untuk durable reporting jobs/projections dan migration #30 untuk historical authority. Durable queue memakai immutable command, exact query/source/projection fingerprints, idempotency/collision guard, bounded claims, database-time lease fencing, retry/backoff/DLQ, backdated invalidation, restart recovery, HMAC tamper detection, dan tenant-scoped RLS.
