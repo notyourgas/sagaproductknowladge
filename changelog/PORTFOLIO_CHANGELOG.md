@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-09 - COYABAG storefront visual restoration production release
+
+`CONFIRMED`; exact source `8b234453d71f0bfb4ec9c7727a80c249f94ddba6`
+aktif pada immutable release `20260909-8b23445`, rollback
+`20260909-c4d274c`. Storefront memulihkan komposisi editorial campaign yang
+diterima sebelumnya sambil mempertahankan media/CMS, katalog, varian, stok,
+admin publishing, motion, dan reduced-motion. Consent modal serta target galeri
+mobile diperkeras; live responsive 151/151, accessibility 34 route x 2,
+performance 16 state x 2, services/worker/log/public smoke, backup dan restore
+lulus. Tidak ada migrasi atau mutasi transaksi/inventory. Readiness tetap
+`43/45`; checkout fail-closed pada `launch_uat` dan `release_signoff`, sehingga
+status `PRODUCTION_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 10 final source candidate
 
 `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) pada source head `7b5f2c7778766fe3df8f4734c10743f2c152cdd0` dan tested implementation `ee624217b062fd4c8f712f6b02075738cbb3d3b7` menutup same-runtime recovery melalui canonical reload dan exact replay proof setelah conflict atau commit ambigu. Migration #30 kembali byte-frozen pada SHA-256 `ae72538b1af5cea666affbe0b4cf855d40754a7fee47012557cfeea548153c86`; legacy-gap repair berada pada migration #31 aditif; public outbox forced-RLS dan readiness memeriksa enforcement tersebut. Evidence focused60/60, independent47/47, full1009 pass/0 fail/1 skip/1 todo dari 1011, check396/31, dependency audit 0 vulnerability, dan source audit P0=0/P1=0. Kandidat tetap 101/198, accepted 0/198, red-team accepted 0/25, readiness 40/100. Hosted CI, target PostgreSQL, backup/restore, rollback/recovery target, monitoring, COMPANY surface, dan authenticated UAT masih `UNVERIFIED`. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.

@@ -1,5 +1,25 @@
 # COYABAG Changelog
 
+## 2026-09-09 - Storefront visual restoration and responsive/privacy hardening
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `8b234453d71f0bfb4ec9c7727a80c249f94ddba6` aktif pada immutable release
+  `20260909-8b23445`; rollback `20260909-c4d274c` memakai source
+  `c4d274c5b1a091b3fdcd4b16911b46ef1f63c734`.
+- Komposisi editorial campaign storefront dipulihkan tanpa memutus media CMS,
+  katalog, varian, stok, publish admin, atau kontrak API. Instrument Serif dan
+  Helvetica Local kembali membentuk storefront; admin tetap Plus Jakarta Sans.
+- Motion/reduced-motion dipertahankan. Consent kunjungan pertama kini dialog
+  modal dengan focus trap/inert background, dan padding galeri mobile menutup
+  target thumbnail yang sebelumnya terlalu dekat tepi viewport.
+- Gate lulus: storefront 276/276, Laravel 677 pass + satu expected skip dari
+  678, audit dependency nol, backup/restore terenkripsi, responsive live
+  151/151, accessibility live 34 route x 2 viewport, motion 24 state x 2, runtime
+  performance 16 state x 2, HTTP/service/worker/log smoke hijau.
+- Tidak ada migrasi, credential/provider activation, order/payment,
+  reservation, atau inventory mutation. Readiness `43/45`; `launch_uat` dan
+  `release_signoff` menahan checkout fail-closed dan `BUSINESS_READY=false`.
+
 ## 2026-09-09 - UI integration release dan campaign probe cleanup
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

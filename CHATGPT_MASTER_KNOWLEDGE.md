@@ -7368,15 +7368,18 @@ Delivery: `PRODUCTION_DEPLOYED`. Activation:
 `BUSINESS_READY=false`.
 
 Snapshot 9 September 2026: exact source
-`951e294a6cfc50b45c5311fc2d91f613843acc32` aktif pada immutable release
-`20260909-951e294`; rollback `20260909-01fddb3` memakai source
-`01fddb3f00a450ce10639cab35127d4516c0e1ec`. Plus Jakarta Sans konsisten pada
-UI/body storefront dan admin. Unsupported global content probe
-`campaign_landing` dihapus. Full release/recovery/security/browser gate lulus,
-provider dan storage sehat, worker/scheduler/monitor aktif, serta tidak ada
-migrasi atau mutasi order/payment/inventory saat deploy. Readiness `43/45`;
-sole owner perlu menyelesaikan UAT 15 langkah dan sign-off
-operations/security/UAT. Tidak diperlukan owner kedua.
+`8b234453d71f0bfb4ec9c7727a80c249f94ddba6` aktif pada immutable release
+`20260909-8b23445`; rollback `20260909-c4d274c` memakai source
+`c4d274c5b1a091b3fdcd4b16911b46ef1f63c734`. Storefront memulihkan komposisi
+editorial campaign yang diterima sebelumnya dengan Instrument Serif dan
+Helvetica Local, sedangkan admin tetap Plus Jakarta Sans. Media CMS, katalog,
+varian, stok, publishing, motion dan reduced-motion tetap terhubung. Consent
+pertama menjadi dialog modal dan target galeri mobile tidak lagi terpotong tepi
+viewport. Full release/recovery/security/browser gate lulus, provider dan
+storage sehat, worker/scheduler/monitor aktif, serta tidak ada migrasi atau
+mutasi order/payment/inventory saat deploy. Readiness `43/45`; sole owner perlu
+menyelesaikan UAT 15 langkah dan sign-off operations/security/UAT. Tidak
+diperlukan owner kedua.
 
 Snapshot historis 8 September 2026: sole active owner dengan 2FA mengotorisasi
 aktivasi tanpa akun owner kedua. Exact source

@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-09 - COYABAG storefront visual restoration sync
+
+- `CONFIRMED`: source `8b234453d71f0bfb4ec9c7727a80c249f94ddba6`,
+  release `20260909-8b23445`, rollback `20260909-c4d274c`.
+- Synced: visual editorial storefront, media/CMS dan admin publishing tetap
+  terhubung, motion/reduced-motion, consent modal, galeri mobile, recovery dan
+  postdeploy browser evidence.
+- Diperbarui: COYABAG product/changelog, portfolio changelog, master knowledge,
+  sync status, dan root changelog. Klasifikasi `CONFIRMED`; tidak ada data
+  restricted.
+- Production berubah tanpa migrasi atau mutasi transaksi/inventory. Readiness
+  `43/45`; checkout tetap fail-closed sampai `launch_uat` dan
+  `release_signoff` selesai; `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 10 final source sync
 
 - `CONFIRMED`: [PR #17](https://github.com/notyourgas/sagaops/pull/17), source head `779f8577cf2a2d6ecce38c0be3725f2466a72e06`, tested implementation final `06fc13c97db0b590df54db59b3c3558256da70b2`, parent atomic completion `61a9afc15e6ace2da5587f628f3d90f494962184`.
