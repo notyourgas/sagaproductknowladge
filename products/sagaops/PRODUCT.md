@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-09 — Inventory/HPP Wave 13 production loss dan compatibility guard
+
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat final source documentation `bb97c1a48988d879eb1ad37fc479870e53211f5b` dengan tested implementation `087e4148a68bf74c046558fc2a27f1a9192ae4e6`.
+- Nilai abnormal loss dihitung server-side dengan proportional equivalent-output dan pembulatan half-up Rupiah. Kuantitas abnormal positif dapat sah bernilai Rp0 ketika hasil proporsinya di bawah setengah Rupiah; nilai yang dikirim caller tetap diverifikasi ulang. Jalur produksi mempertahankan kuantitas 4–6 desimal, memakai safe-micro guard, dan gagal sebelum mutasi bila delta tidak dapat direpresentasikan tepat.
+- Startup memeriksa exact parity antara production reporting, valuation transformation, dan operation ledger. Rollback legacy read-write ditolak setelah transformation ada; hanya runtime yang memahami transformation atau compatibility runtime read-only yang memenuhi kontrak. Monitor mengikat source, migration ledger/fingerprint, health reporting, serta backup checksum dan freshness.
+- Evidence lokal: full 1077 pass/0 fail/1 platform skip/1 B22 TODO dari 1079, focused 36/36, affected 81/81, dan independent audit 68/68 dengan P0=0/P1=0/P2=0. Source branch sudah dipush; hosted Quality menjalankan nol step karena billing (`CI_BILLING_BLOCKED`) dan Vercel hanya preview. Kandidat tetap 101/198 (51,0%) dan readiness 40/100. Target PostgreSQL, package/restore/rollback target, monitoring aktual, staging, serta authenticated Owner/business UAT masih harus dibuktikan. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 12 historical authority dan production valuation
 
 - `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat implementation cut `ed549b32e630965938f78c234379de5e0c0af533` untuk authority kalender/lokasi historis dan valuasi transformasi produksi.

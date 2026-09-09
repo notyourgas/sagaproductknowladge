@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-09 — Sinkronisasi SagaPOS Inventory/HPP Wave 13
+
+- `CONFIRMED`: final source documentation `bb97c1a48988d879eb1ad37fc479870e53211f5b` dan tested implementation `087e4148a68bf74c046558fc2a27f1a9192ae4e6` pada PR #17.
+- Disinkronkan: abnormal loss server-authoritative termasuk hasil sah Rp0, quantity 4–6 desimal dan safe-micro guard, startup/rollback compatibility, serta exact monitor contract.
+- Evidence lokal: full 1077/1079 dengan 0 fail, focused 36/36, affected 81/81, independent audit 68/68 P0/P1/P2=0.
+- Diperbarui: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root changelog. Klasifikasi `CONFIRMED`; tidak ada data restricted.
+- Source branch sudah dipush; hosted Quality zero-step berstatus `CI_BILLING_BLOCKED` dan Vercel hanya preview. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198, readiness 40/100, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 12 sync
 
 - `CONFIRMED`: PR #17 implementation cut `ed549b32e630965938f78c234379de5e0c0af533` menambah immutable historical calendar/location authority dan atomic production transformation valuation.

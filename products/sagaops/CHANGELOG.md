@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-09 — Inventory/HPP Wave 13
+
+- `CONFIRMED`; PR #17 final source documentation `bb97c1a48988d879eb1ad37fc479870e53211f5b`, tested implementation `087e4148a68bf74c046558fc2a27f1a9192ae4e6`.
+- Menambah server-side abnormal-loss valuation termasuk hasil sah Rp0, exact quantity 4–6 desimal dengan safe-micro failure sebelum mutation, startup reporting/valuation compatibility assessment, rollback write fence, dan monitor yang mengikat source, migration ledger, health, serta backup evidence.
+- Full 1077/1079 dengan 0 fail, focused 36/36, affected 81/81, dan independent audit 68/68 P0/P1/P2=0 lulus.
+- Source branch sudah dipush. Hosted Quality `CI_BILLING_BLOCKED` setelah nol step; Vercel hanya preview. Kandidat tetap 101/198 dan readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; target gates masih terbuka, production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-09 — Inventory/HPP Wave 12
 
 - `CONFIRMED`; implementation cut `ed549b32e630965938f78c234379de5e0c0af533` pada PR #17 menambah authority kalender/lokasi historis serta atomic production transformation valuation.

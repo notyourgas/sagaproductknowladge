@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-09 — Wave 13 abnormal-loss authority, precision, dan recovery compatibility
+
+[PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat final source documentation `bb97c1a48988d879eb1ad37fc479870e53211f5b` dan tested implementation `087e4148a68bf74c046558fc2a27f1a9192ae4e6`. Production execution menghitung nilai abnormal loss dari carrying value input dan equivalent output dengan pembulatan half-up Rupiah. Normal loss tetap diserap ke output. Abnormal quantity positif dengan hasil proporsional di bawah setengah Rupiah dipertahankan sebagai fakta Rp0 yang sah, sementara kombinasi quantity/value palsu gagal pada execution, HPP, reporting, valuation, atau parity check.
+
+Quantity produksi 4–6 desimal dinormalisasi melalui scaled integer/string. Durable HPP, immutable movement, reporting document, valuation transformation, restart, replay, dan collision guard mempertahankan nilai yang sama. Safe-micro guard menolak operasi sebelum mutasi ketika saldo berbasis Number tidak dapat merepresentasikan delta mikro; nilai uang di luar safe integer juga ditolak.
+
+Startup production menjalankan assessment bounded atas exact reporting fact, transformation fact, operation result, scope, dan fingerprint. Missing, orphan, parity drift, tamper, atau backlog menahan startup. Setelah transformation tersimpan, rollback legacy read-write tidak kompatibel; pilihan yang diterima adalah runtime transformation-aware atau forward-schema compatibility read-only. Monitor source memeriksa exact source SHA, migration count/fingerprint dan ledger, health reporting, organization-owner verification, serta backup checksum/freshness; penerapannya pada target tetap gate terpisah.
+
+Evidence lokal: full 1079 total dengan 1077 pass, 0 fail, 1 platform skip, 1 B22 TODO; focused 36/36; affected 81/81; independent audit 68/68 P0=0/P1=0/P2=0. Source branch sudah dipush; hosted Quality zero-step karena billing (`CI_BILLING_BLOCKED`) dan Vercel preview bukan deployment. Kandidat tetap 101/198 dan readiness 40/100. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`. Target PostgreSQL, artifact, restore dan rollback target, monitoring aktual, staging, serta authenticated Owner/business UAT masih terbuka.
+
 ## 2026-09-09 — Wave 12 historical reporting dan production valuation
 
 [PR #17](https://github.com/notyourgas/sagaops/pull/17) memuat implementation cut `ed549b32e630965938f78c234379de5e0c0af533`. Migration #33 merekam kalender bisnis dan lokasi INTERNAL usable sebagai fakta append-only, forced-RLS, bounded, serta fingerprint-bound. Query historis memilih fakta pada awal periode dan menolak missing/ambiguous/tampered/mid-period authority. Runtime request isolation memakai `AsyncLocalStorage`; periode sebelum bootstrap tidak diisi dari current state.
