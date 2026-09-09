@@ -2,11 +2,11 @@
 
 ## 2026-09-09 — Inventory/HPP Wave 10 final source candidate
 
-- `CONFIRMED`; [draft PR #17](https://github.com/notyourgas/sagaops/pull/17) memakai final docs-only head `b052480f423c4afe788df6cf4db6c9450dcefc42`, dengan implementation code yang diuji `ba31bd8d30328399b2b29c5d583e06f10c7ba031`.
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memakai source head `779f8577cf2a2d6ecce38c0be3725f2466a72e06`, dengan implementation final yang diuji `06fc13c97db0b590df54db59b3c3558256da70b2` dan parent atomic completion `61a9afc15e6ace2da5587f628f3d90f494962184`.
 - Source B20 kini menambah historical authority, dua migrasi aditif sehingga manifest menjadi 30, durable PostgreSQL job/projection persistence dengan idempotency, lease fencing, retry/backoff/DLQ, invalidation backdated, restart/tamper protection, dan tenant isolation.
-- Production composition tersedia dalam source dengan credential terpisah, worker plus invalidation consumer, persisted projection adapter, dan health berbasis metrik aktual. Fitur tetap default OFF dan fail-closed bila belum ada projection segar.
-- Evidence final: focused80/80 PASS; full997 total dengan 995 pass, 0 fail, 1 skip, 1 todo; check391 modules/30 migrations; `npm audit` 0; audit P0 0.
-- P1 tersisa: real `productionExecutionFactory` dan adapter FEFO target belum tersedia, sehingga production completion tetap fail-closed. Hosted CI belum diterima; Quality terbaru gagal tanpa step, konsisten dengan billing block sebelumnya dan bukan test PASS. Production tidak berubah, `BELUM DEPLOY`, dan `BUSINESS_READY=false`.
+- Production composition kini memiliki factory durable yang mengikat allocation HPP ke authority lokal, menyimpan HPP state, movement ledger, execution state, dan immutable reporting fact dalam satu transaksi. Allocation Rupiah memakai rasional BigInt half-up; completion source dibekukan untuk replay; worker shutdown menunggu invalidation dan scheduled refresh selesai. Fitur tetap default OFF dan fail-closed bila projection belum segar.
+- Evidence final: focused93/93 dan spot audit54/54 PASS; full1006 pada parent atomic dengan 1004 pass, 0 fail, 1 skip, 1 todo; check395 modules/30 migrations; audit P0 0 dan P1 2.
+- P1 tersisa: runtime yang kalah pada concurrent completion belum reload state/revision untuk replay pada proses yang sama, serta perubahan legacy-gap v2 masih membutuhkan migration #31 aditif dan readiness yang memvalidasi kontrak payload yang sama. Hosted CI, target PostgreSQL/recovery/monitoring, dan authenticated UAT belum diterima. Production tidak berubah, `BELUM DEPLOY`, dan `BUSINESS_READY=false`.
 
 ## 2026-09-09 — Inventory/HPP Wave 9 reporting integration
 

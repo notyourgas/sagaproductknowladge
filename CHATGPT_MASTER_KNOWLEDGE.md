@@ -2,8 +2,8 @@
 
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 10 final source candidate
 
-- `CONFIRMED`; [draft PR #17](https://github.com/notyourgas/sagaops/pull/17), final docs-only head `b052480f423c4afe788df6cf4db6c9450dcefc42`, tested implementation `ba31bd8d30328399b2b29c5d583e06f10c7ba031`. Source memuat historical authority, migrations #29–30, durable jobs/projections, invalidation/recovery/tamper guards, config-off composition, dan strict actual-metric health.
-- Evidence focused80/80, full995 pass/0 fail/1 skip/1 todo dari 997, check391/30, dependency audit0, audit P0 0. Real `productionExecutionFactory` dan adapter FEFO target masih P1; hosted CI acceptance pending setelah latest Quality zero-step failure yang konsisten dengan billing block sebelumnya. Status `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17), source head `779f8577cf2a2d6ecce38c0be3725f2466a72e06`, tested implementation final `06fc13c97db0b590df54db59b3c3558256da70b2`, parent atomic completion `61a9afc15e6ace2da5587f628f3d90f494962184`. Source memuat historical authority, migrations #29–30, durable jobs/projections, config-off composition, strict actual-metric health, production factory durable, transaksi atomic HPP/movement/execution/reporting fact, BigInt half-up, frozen replay source, dan shutdown drain.
+- Evidence focused93/93, spot54/54, full1004 pass/0 fail/1 skip/1 todo dari 1006 pada parent atomic, check395/30, audit P0 0/P1 2. Residual P1: same-runtime completion loser belum reload untuk replay dan legacy-gap v2 membutuhkan migration #31 aditif plus readiness yang sejalan. Hosted CI, target recovery/monitoring, dan authenticated UAT belum diterima. Status `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
 
 ## 2026-09-09 — SagaPOS Inventory/HPP Wave 9 review candidate
 
