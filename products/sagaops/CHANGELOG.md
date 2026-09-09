@@ -2,10 +2,10 @@
 
 ## 2026-09-09 — Inventory/HPP Wave 10 durable reporting candidate
 
-- `CONFIRMED`; [draft PR #17](https://github.com/notyourgas/sagaops/pull/17), final head `d08ae29573d72c66b05b9a9ee8d0e03a5d76256d`, tested implementation parent `a9860be4e48fcda5a1a4b8bf5f55558a08c97c84`.
-- Menambah historical authority, migrations #29–30, durable jobs/projections, lease fencing, retry/DLQ, backdated invalidation, restart/tamper protection, persisted projection adapter, config-off composition, dan strict actual-metric health.
-- Focused72/72; full982 pass/0 fail/1 skip/1 todo dari 984; check388/30; production dependency audit0 PASS. Local technical snapshot 16/7/2 dan B20 5 partial + 1 local-domain pass.
-- `SOURCE_PUSHED / LOCAL_VALIDATED_PARTIAL / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198 (51,0%), accepted 0/198, red-team accepted 0/25, readiness 40/100. Production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17), final head `7b5f2c7778766fe3df8f4734c10743f2c152cdd0`, tested implementation `ee624217b062fd4c8f712f6b02075738cbb3d3b7`.
+- Menutup same-runtime recovery untuk optimistic conflict dan commit ambigu dengan canonical reload serta exact operation/fact proof. Migration #30 dibekukan pada SHA-256 `ae72538b1af5cea666affbe0b4cf855d40754a7fee47012557cfeea548153c86`; legacy-gap repair menjadi migration #31 aditif; public outbox memakai forced-RLS dan readiness memverifikasinya.
+- Focused60/60, independent47/47, full1009 pass/0 fail/1 skip/1 todo dari 1011, check396/31, dependency audit 0 vulnerability, dan source audit P0=0/P1=0.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; kandidat 101/198 (51,0%), accepted 0/198, red-team accepted 0/25, readiness 40/100. Hosted CI, target PostgreSQL, backup/restore, rollback/recovery target, monitoring, COMPANY surface, dan authenticated UAT masih `UNVERIFIED`; production tidak berubah, `BELUM DEPLOY`, `BUSINESS_READY=false`.
 
 ## 2026-09-09 — Inventory/HPP Wave 9 reporting integration
 

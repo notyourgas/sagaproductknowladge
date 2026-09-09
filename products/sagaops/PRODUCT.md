@@ -2,11 +2,11 @@
 
 ## 2026-09-09 — Inventory/HPP Wave 10 final source candidate
 
-- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memakai source head `779f8577cf2a2d6ecce38c0be3725f2466a72e06`, dengan implementation final yang diuji `06fc13c97db0b590df54db59b3c3558256da70b2` dan parent atomic completion `61a9afc15e6ace2da5587f628f3d90f494962184`.
-- Source B20 kini menambah historical authority, dua migrasi aditif sehingga manifest menjadi 30, durable PostgreSQL job/projection persistence dengan idempotency, lease fencing, retry/backoff/DLQ, invalidation backdated, restart/tamper protection, dan tenant isolation.
-- Production composition kini memiliki factory durable yang mengikat allocation HPP ke authority lokal, menyimpan HPP state, movement ledger, execution state, dan immutable reporting fact dalam satu transaksi. Allocation Rupiah memakai rasional BigInt half-up; completion source dibekukan untuk replay; worker shutdown menunggu invalidation dan scheduled refresh selesai. Fitur tetap default OFF dan fail-closed bila projection belum segar.
-- Evidence final: focused93/93 dan spot audit54/54 PASS; full1006 pada parent atomic dengan 1004 pass, 0 fail, 1 skip, 1 todo; check395 modules/30 migrations; audit P0 0 dan P1 2.
-- P1 tersisa: runtime yang kalah pada concurrent completion belum reload state/revision untuk replay pada proses yang sama, serta perubahan legacy-gap v2 masih membutuhkan migration #31 aditif dan readiness yang memvalidasi kontrak payload yang sama. Hosted CI, target PostgreSQL/recovery/monitoring, dan authenticated UAT belum diterima. Production tidak berubah, `BELUM DEPLOY`, dan `BUSINESS_READY=false`.
+- `CONFIRMED`; [PR #17](https://github.com/notyourgas/sagaops/pull/17) memakai source head `7b5f2c7778766fe3df8f4734c10743f2c152cdd0`, dengan implementation final yang diuji `ee624217b062fd4c8f712f6b02075738cbb3d3b7`.
+- Same-runtime recovery kini memuat ulang snapshot HPP dan state produksi kanonik setelah optimistic conflict atau hasil commit ambigu. Replay hanya diterima bila operation dan immutable B20 fact persis cocok, tanpa duplikasi ledger, fact, atau kenaikan revision.
+- Migration historical authority #30 dibekukan kembali ke byte awal dengan SHA-256 `ae72538b1af5cea666affbe0b4cf855d40754a7fee47012557cfeea548153c86`; perbaikan legacy gap dipindahkan ke migration #31 yang aditif. Public integration outbox kini forced-RLS dan readiness provider memeriksa status forced-RLS itu sebelum menyatakan siap.
+- Durable production composition tetap default OFF dan fail-closed. Source lokal lulus focused60/60, independent47/47, full1011 dengan 1009 pass, 0 fail, 1 skip, 1 todo, check396 modules/31 migrations, dependency audit 0 vulnerability, dan source audit P0=0/P1=0.
+- Kandidat tetap 101/198 (51,0%), accepted 0/198, red-team accepted 0/25, dan readiness 40/100. Hosted CI, target PostgreSQL, backup/restore, rollback/recovery target, monitoring, COMPANY surface, serta authenticated UAT masih `UNVERIFIED`. Production tidak berubah, `BELUM DEPLOY`, dan `BUSINESS_READY=false`.
 
 ## 2026-09-09 — Inventory/HPP Wave 9 reporting integration
 
