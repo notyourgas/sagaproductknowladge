@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-10 — Inventory/HPP Wave 25 hardened session authority
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`, menambah migration #40/#41, versioned session credential reference, dan DB-owned issue/revoke ledger authority.
+- Exact four-field scope dipasang pada repository/launcher; direct production DML session/binding/operation ditolak; runtime grants memakai allowlist eksplisit yang diverifikasi terhadap SQL call-site.
+- Evidence: focused25/25, migration33/33, inventory-period265/265, check442/41. Full awal1347 pass/1 stale fixture/1 skip/1 TODO dari1350; corrected file22/22 pass. Vercel preview lulus; Quality zero-step karena billing.
+- B23 `PARTIAL` +0, 101/198, readiness40/100. Recovery/compatibility candidate baru, real three-human provider loader, monitoring, hosted Quality dan authenticated UAT tetap blocker. Launcher `OFF`; `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 24 trusted identity provisioning
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`, menambah trusted identity verifier boundary, canonical identity, session issuer/revoker, dan authority rotation atomik.

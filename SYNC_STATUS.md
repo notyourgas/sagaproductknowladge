@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 25
+
+- Status `partially accepted`; classification `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, Git tree `332170890ca14880483f26ea9d09710b05729e8b`.
+- Synced: exact four-field session scope, versioned retained credential-key authority, DB-owned issue/revoke functions, binding CAS, atomic receipt/replay, direct session-ledger DML denial, explicit runtime grants, SQL call-site coverage, dan fail-closed launcher dependency.
+- Evidence: focused25/25; migration33/33; inventory-period265/265; check442/41. Full awal1347 pass/1 stale fixture/1 Windows skip/1 B22 TODO dari1350; corrected file22/22 pass tanpa full-suite repeat. Vercel preview lulus; hosted Quality exact SHA zero-step karena billing.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; B23 `PARTIAL` +0, kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100. `MERGED=false`; launcher `OFF`, production tidak berubah, `BELUM DEPLOY`, `ACTIVATED=false`, `BUSINESS_READY=false`.
+- Open: fresh candidate-bound recovery/compatibility, real production identity/dependency loader tiga manusia, retained provider keyrings, target monitoring privilege, hosted Quality, dan authenticated three-human UAT.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 24
 
 - Status `partially accepted`; classification `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, Git tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`.

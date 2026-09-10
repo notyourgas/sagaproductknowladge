@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 25 hardened session authority
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`.
+- Source memiliki exact four-field transaction scope, versioned retained credential keyring, serta DB-owned issue/revoke session functions dengan authority recheck, binding CAS, dan atomic receipt. Migration #41 menolak direct session/binding/operation DML; runtime grants kini explicit allowlist dan diverifikasi terhadap SQL call-site.
+- Evidence focused25/25, migration33/33, inventory-period265/265, check442/41. Full awal1347 pass/1 stale fixture/1 skip/1 TODO dari1350; corrected file22/22 pass tanpa full-suite repeat. Vercel preview lulus; hosted Quality zero-step karena billing.
+- Wave25 menutup P0 source Wave24, tetapi recovery compatibility, real identity/dependency loader tiga manusia, target monitoring, hosted CI dan authenticated UAT belum selesai. B23 `PARTIAL` +0; 101/198, readiness40/100; launcher `OFF`, `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 24 trusted identity provisioning
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`.

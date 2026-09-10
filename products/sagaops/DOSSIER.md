@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 25 hardened session authority
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`, memindahkan issue dan revoke eligible session ke fungsi PostgreSQL yang memiliki authority transaksi. Fungsi memeriksa exact organization, outlet, location, dan authenticated user dari transaction-local scope, mengulang pemeriksaan principal/grant/device, mengikat session-device dengan CAS, dan menyimpan receipt replay secara atomik.
+
+Migration #40 menyimpan credential-key version non-secret pada eligible session dan mewajibkan versioned retained keyring untuk replay setelah restart/rotasi. Migration #41 menolak direct production DML terhadap session, binding, dan operation ledger. Runtime grant mengganti blanket table/sequence grant dengan allowlist eksplisit yang diaudit terhadap checked-in SQL call-site. Production composition tetap fail-closed sebelum membuka listener bila dependency server-owned belum terpasang.
+
+Evidence lokal: focused Wave25 25/25, migration regression 33/33, inventory-period 265/265, dan static check 442 modul/41 migrasi. Full repository awal menghasilkan 1347 pass, satu stale manifest fixture, satu Windows skip, dan satu B22 TODO dari 1350; fixture dikoreksi lalu file lengkap lulus 22/22. Tidak ada known source failure yang tersisa, tetapi full suite tidak diulang dalam satu invocation. Vercel preview lulus; hosted Quality exact SHA zero-step karena billing akun.
+
+Wave 25 menutup P0 source yang dicatat pada Wave 24 untuk shared-session scope, credential rotation/replay, direct session-ledger write, dan blanket grant. Status tetap B23 `PARTIAL` +0, 101/198, readiness 40/100. Recovery/compatibility baru yang candidate-bound, real identity/dependency loader untuk tiga manusia, monitoring privilege, hosted CI, dan authenticated UAT masih wajib. Launcher `OFF`; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 24 trusted identity provisioning
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`, menambahkan provider PostgreSQL untuk provisioning identity set, issue/revoke session, dan authority rotation. Fingerprint identitas berasal dari trusted-verifier port; browser tidak dapat menyatakan identitas, scope, role, capability, device, atau credential sendiri. Session menyimpan hash token dan subject empat field yang mengikat canonical fingerprint.

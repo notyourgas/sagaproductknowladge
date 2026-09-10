@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-10 — Sinkronisasi SagaPOS Inventory/HPP Wave 25
+
+- `CONFIRMED`: source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`, menambah hardened period-session authority, migration #40/#41, database-owned issue/revoke, dan explicit runtime grant allowlist.
+- Evidence: focused25/25, migration33/33, inventory-period265/265, check442/41; full awal1347 pass/1 stale fixture/1 skip/1 TODO dari1350 dan corrected file22/22 pass. Vercel preview lulus; Quality zero-step karena billing.
+- Diperbarui: SagaOPS Product/Dossier/CHANGELOG, portfolio changelog, master knowledge, gaps, sync status, dan root changelog. Klasifikasi `CONFIRMED`; tidak ada data restricted.
+- B23 `PARTIAL` +0, 101/198, readiness40/100. Recovery compatibility, real production dependencies, monitoring dan UAT tetap HOLD; launcher `OFF`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Sinkronisasi SagaPOS Inventory/HPP Wave 24
 
 - `CONFIRMED`: source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`, menambah trusted identity provisioning, session issuer/revoker, authority rotation, dan migration #39.

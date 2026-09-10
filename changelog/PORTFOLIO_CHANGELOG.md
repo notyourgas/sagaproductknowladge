@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 25 hardened session authority
+
+`CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`, menutup P0 source untuk shared-session scope, credential replay/rotation, direct session-ledger DML, dan blanket runtime grants melalui migration #40/#41 serta database-owned issue/revoke authority. Evidence focused25/25, migration33/33, inventory-period265/265, check442/41; stale full-suite fixture dikoreksi dan file lulus22/22. Launcher tetap `OFF`; B23 `PARTIAL` +0, 101/198, readiness40/100, `BELUM DEPLOY`, `BUSINESS_READY=false`. Recovery compatibility, real production dependencies, monitoring, CI billing, dan authenticated UAT masih terbuka.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 24 trusted identity provisioning
 
 `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`, menambah trusted-verifier identity provisioning, canonical identity/operation ledger migration #39, server-issued eligible session, atomic revocation, dan authority rotation dengan FORCE RLS/CAS. Wave24 10/10, focused82/82, inventory-period250, full1333 pass/0 fail/1 skip/1 TODO dari1335, check439/39, P0 residual=0. Launcher tetap `OFF`; B23 `PARTIAL` +0, 101/198, readiness40/100, `BELUM DEPLOY`, `BUSINESS_READY=false`. Shared-session RLS/launcher, credential rotation, recovery, verifier HRPOS nyata, hosted Quality, dan three-human UAT tetap terbuka.

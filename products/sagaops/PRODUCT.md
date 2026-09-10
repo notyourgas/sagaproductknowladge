@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 25 hardened session authority
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, Git tree `332170890ca14880483f26ea9d09710b05729e8b`.
+- Source menambah versioned credential-key reference pada eligible session, bounded retained keyring untuk replay/restart, exact inventory-period scope pada repository dan launcher, serta database-owned issue/revoke session functions dengan authority recheck dan atomic receipt.
+- Migration #41 menutup direct DML pada eligible session, binding, dan operation ledger. Runtime grant kini memakai allowlist tabel/sekuens/fungsi eksplisit; static test mencocokkan seluruh SQL call-site yang diperiksa. Launcher tetap fail-closed sebelum listen bila dependency server belum tersedia.
+- Evidence lokal: focused Wave25 25/25, migration regression 33/33, inventory-period 265/265, check 442 modul/41 migrasi. Full repository awal 1347 pass/1 stale fixture/1 skip/1 TODO dari 1350; fixture diperbaiki dan file lengkap lulus 22/22, tanpa full-suite repeat. Vercel preview lulus; hosted Quality tidak memulai step karena billing.
+- B23 `PARTIAL` +0; kandidat 101/198, audited 198/198, accepted 0/198, red-team 0/25, readiness 40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, launcher `OFF`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- Open: candidate-bound recovery/compatibility rehearsal untuk migration #41, real production identity/dependency loader bagi tiga manusia terpisah, target monitoring privilege, hosted Quality, dan authenticated three-human UAT.
+
 ## 2026-09-10 — Inventory/HPP Wave 24 trusted identity provisioning
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, Git tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`.
