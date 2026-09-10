@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 24 trusted identity provisioning
+
+`CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`, menambah trusted-verifier identity provisioning, canonical identity/operation ledger migration #39, server-issued eligible session, atomic revocation, dan authority rotation dengan FORCE RLS/CAS. Wave24 10/10, focused82/82, inventory-period250, full1333 pass/0 fail/1 skip/1 TODO dari1335, check439/39, P0 residual=0. Launcher tetap `OFF`; B23 `PARTIAL` +0, 101/198, readiness40/100, `BELUM DEPLOY`, `BUSINESS_READY=false`. Shared-session RLS/launcher, credential rotation, recovery, verifier HRPOS nyata, hosted Quality, dan three-human UAT tetap terbuka.
+
 ## 2026-09-10 — Saga Member fresh guarded production release
 
 `CONFIRMED`: release `20260910T034155Z-f7e0a50-r0u` aktif pada [Saga Member](https://app.sagamember.site/) dan [Owner](https://app.sagamember.site/owner), backend `f7e0a50bf64164c034c39de24cb364fa898f43b0`, frontend `e53fea930dec88411d8c8147c6a3530086f991d6`. Fresh artifact, dependency audit nol, encrypted backup/disposable restore, tujuh migration tanpa perubahan, switch rehearsal, rollback, activation, monitor, authenticated Owner UAT, serta post-UAT backup PASS. Failed chain lama dipertahankan dan tidak dipakai ulang. Provider/payment/broadcast/NFC/printer/hardware OFF. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / PILOT_ACTIVE / BUSINESS_READY=false`.

@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 24 trusted identity provisioning
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, Git tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`.
+- Source menambah authority provisioning identitas periode inventory yang mengikat fingerprint dari trusted verifier, principal, role/capability grant, lokasi, dan device. Token/CSRF diterbitkan server; session eligible, binding, operation receipt, revocation, serta authority rotation memakai transaksi atomik dan replay-safe.
+- Migration #39 menambah canonical identity dan operation ledger append-only dengan FORCE RLS, menahan adopsi session eligible lama, dan mempersempit direct write role production pada authority configuration. Readiness memakai canonical identity statis sehingga bootstrap tidak memerlukan session aktif.
+- Evidence lokal: Wave24 10/10, focused affected82/82, inventory-period250 pass, full repository1333 pass/0 fail/1 Windows skip/1 B22 TODO dari1335, check439 modul/39 migrasi, dan audit P0 residual=0.
+- Launcher tetap `OFF`. B23 `PARTIAL` +0; kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- Open: launcher dan shared-session RLS scope, direct session DML versus ledger boundary, credential-key rotation/replay, target recovery, verifier HRPOS Manager/Finance nyata, hosted Quality, dan authenticated three-human UAT.
+
 ## 2026-09-10 — Inventory/HPP Wave 23 guarded production HTTP composition
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source final `b1b9fdf27cf4d6b9cb752cfab0ecceaeb49affd9`, Git tree `b41ab6eed5f83ad9ae4eec8c491df4eca3b9678b`.

@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 24 trusted identity provisioning
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`, menambahkan provider PostgreSQL untuk provisioning identity set, issue/revoke session, dan authority rotation. Fingerprint identitas berasal dari trusted-verifier port; browser tidak dapat menyatakan identitas, scope, role, capability, device, atau credential sendiri. Session menyimpan hash token dan subject empat field yang mengikat canonical fingerprint.
+
+Migration additive #39 menambah canonical identity serta operation receipt append-only dengan FORCE RLS, menjaga principal/grant/device melalui CAS, menolak eligible session lama saat upgrade, dan mempersempit direct configuration write role production. Rotation memeriksa location fact terbaru, grant/device revision, shared atau replacement device, lalu mencabut semua session dan binding terdampak dalam transaksi yang sama. Readiness memakai identity/grant/device statis sehingga initial provisioning tidak deadlock karena belum ada session.
+
+Evidence lokal: dedicated10/10, focused affected82/82, inventory-period250 pass, full repository1333 pass/0 fail/1 Windows skip/1 B22 TODO dari1335, check439 modul/39 migrasi, `git diff --check` lulus, dan audit P0 residual=0. Hosted Quality exact source tidak memulai step karena billing/spending limit.
+
+B23 tetap `PARTIAL` +0; kandidat101/198 dan readiness40/100. Launcher dan shared repository RLS scope, direct session DML boundary, versioned credential key rotation, recovery/rollback, verifier HRPOS Manager/Finance nyata, serta authenticated three-human UAT masih terbuka. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 22 atomic restatement
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`, mengimplementasikan PostgreSQL `restate` dalam satu transaksi `SERIALIZABLE READ WRITE`. Implementation cut `cb37fbb535315602e1ada9e810d3cadc4345e98f` dan hardening `81860082787c34a12aa84029a1e15245239008bc` mengikat authority recheck, exact replay, event chain, current report, HPP, correction set, resolution, projection B20, report version, aggregate CAS, operation, outbox, dan readiness.

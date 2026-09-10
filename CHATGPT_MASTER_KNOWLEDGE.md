@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 24 trusted identity provisioning
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`.
+- Source memiliki trusted-verifier boundary untuk canonical identity, provisioning principal/grant/device, server-issued session, atomic revoke, dan authority rotation. Migration #39 memakai append-only operation receipt, FORCE RLS, CAS, fail-closed upgrade precondition, dan privilege production yang dipersempit; readiness tidak membutuhkan session aktif.
+- Evidence Wave24 10/10, focused82/82, inventory-period250, full1333 pass/0 fail/1 Windows skip/1 B22 TODO dari1335, check439/39, audit P0 residual=0. Hosted Quality exact SHA zero-step karena billing.
+- Launcher tetap `OFF`; B23 `PARTIAL` +0, kandidat101/198, readiness40/100. Launcher/RLS shared session, credential rotation, target recovery, verifier HRPOS Manager/Finance, dan authenticated three-human UAT belum selesai. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Saga Member fresh guarded production release
 
 - `CONFIRMED`: release `20260910T034155Z-f7e0a50-r0u` aktif di [Saga Member](https://app.sagamember.site/) dan [Owner](https://app.sagamember.site/owner), dengan Customer Platform `f7e0a50bf64164c034c39de24cb364fa898f43b0` sebagai authority dan Member `e53fea930dec88411d8c8147c6a3530086f991d6` sebagai projection client.

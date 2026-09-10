@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-10 — Inventory/HPP Wave 24 trusted identity provisioning
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `478b9a1e4a2236e3238db696534ed45c11761d8b`, tree `ea4f852fd1de540c55499b9e27fafbcce2f58caa`, menambah trusted identity verifier boundary, canonical identity, session issuer/revoker, dan authority rotation atomik.
+- Migration #39 menambah append-only identity/operation authority dengan FORCE RLS, CAS grant/device/session guards, pre-upgrade eligible-session hold, serta privilege production yang dipersempit. Readiness tidak lagi bergantung pada session aktif.
+- Wave24 10/10, focused82/82, inventory-period250, full1333 pass/0 fail/1 skip/1 TODO dari1335, check439/39, audit P0=0. Hosted Quality zero-step karena billing.
+- Launcher `OFF`; B23 `PARTIAL` +0, 101/198, readiness40/100. Shared-session RLS/launcher, direct DML boundary, credential rotation, recovery, real HRPOS verifier dan three-human UAT tetap blocker. `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 23 guarded production HTTP composition
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source final `b1b9fdf27cf4d6b9cb752cfab0ecceaeb49affd9`, tree `b41ab6eed5f83ad9ae4eec8c491df4eca3b9678b`, menambah composition production fail-closed untuk delapan mutasi periode inventory dan dua bounded report reads.
