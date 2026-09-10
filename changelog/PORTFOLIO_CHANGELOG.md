@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 21 atomic record correction
+
+`CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`, mengintegrasikan `recordCorrection` ke satu transaksi PostgreSQL serializable. Reversal menambah satu fact pembalik; reclassification mempertahankan HPP byte-identical melalui immutable overlay. Same-transaction authority, bounded dependency graph, source/dependency fingerprints, event/operation/aggregate/outbox, replay, concurrency, ACK-loss, dan fault rollback lulus; migration #37 menambah capability backdate tanpa grant. Dedicated50/50, replay/tamper19/19, affected196/196, audit83/83, check434/37, audit0, P0/P1/P2=0; full1257 pass/1 stale assertion/1 skip/1 TODO dan corrected-file22/22. B23 `PARTIAL` +0; 101/198, readiness40/100, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 20 atomic execute reopen
 
 `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c5f273f98f2459f09a9f2c0a9847abfada5ae42e`, tree `67d3c3341699620667417ca68378b38248b97703`, mengintegrasikan `executeReopen` ke satu transaksi PostgreSQL serializable dengan authority recheck, approval sekali pakai, event/operation/aggregate, exact B20 invalidation, outbox, replay/restart, concurrency, ACK-loss, dan fault rollback. HPP tetap byte-identical dan replay terikat ke exact historical master snapshot empat kolom. Dedicated24/24, combined39/39, affected153/153, check433/36, audit0, P0/P1/P2=0; full1207 pass/1 browser flake/1 skip/1 TODO dari1210 dan targeted rerun1/1 pass. B23 `PARTIAL` +0; 101/198, readiness40/100, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.

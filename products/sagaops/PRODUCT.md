@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 21 atomic record correction
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, Git tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`; implementation `7b0b791566681308da30e34fcaa4e42951269a9b`, QA `3666b9220ba2301bdc07b6d11990b7e76c43895e`.
+- PostgreSQL `recordCorrection` sekarang atomik dalam satu transaksi serializable. Reversal menambah satu fact pembalik dan mempertahankan state eksekusi HPP; reclassification menjaga HPP byte-identical dan menambah immutable classification overlay.
+- Same-transaction authority, source/dependency fingerprint, bounded dependency analysis, event/operation/aggregate/outbox, replay/restart/concurrency/ACK-loss, dan fault rollback diverifikasi fail-closed. Migration #37 menambah capability backdate tanpa memberi grant kepada principal mana pun.
+- Evidence: dedicated50/50, replay/tamper19/19, affected196/196, audit83/83, check434/37, dependency audit0, independent P0/P1/P2=0. Full regression1257 pass/1 stale manifest assertion/1 Windows skip/1 B22 TODO; assertion diperbaiki dan file lengkapnya lulus22/22, tanpa pengulangan full suite.
+- B23 tetap `PARTIAL` +0 karena `restate`, production HTTP composition, target recovery, dan authenticated UAT belum selesai. Kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100; merge/release HOLD, `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 20 atomic execute reopen
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c5f273f98f2459f09a9f2c0a9847abfada5ae42e`, Git tree `67d3c3341699620667417ca68378b38248b97703`; implementation `fac477a6654d826966407bd5d30dd8c343118847`, QA `fbdfb51776a064437f78a048c0a7cb178cca746e`.

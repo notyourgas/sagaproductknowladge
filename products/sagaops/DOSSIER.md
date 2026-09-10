@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 21 atomic record correction
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`, mengimplementasikan PostgreSQL `recordCorrection` dalam satu transaksi `SERIALIZABLE READ WRITE`. Reversal memakai CAS HPP dan tepat satu fact pembalik sambil mempertahankan production execution state. Reclassification tidak menulis HPP atau fact dan menyimpan immutable classification overlay.
+
+Source movement, scope lokasi/periode, tipe koreksi, global duplicate fence, actor/reason, serta dependency graph yang dibatasi 500 node dan kedalaman 20 diikat ke fingerprint. Koreksi backdate memerlukan capability `inventory:period:backdate` yang dicek kembali di transaksi yang sama; migration #37 hanya mendefinisikan capability dan tidak memberi grant. Replay memverifikasi event, operation, aggregate, outbox, current reversal state, report binding, dan seluruh fingerprint. B20 tidak diinvaliasi untuk kedua kali setelah reopen; koreksi hanya menerbitkan rebuild intent untuk restatement berikutnya.
+
+Evidence lokal: dedicated50/50, replay/tamper19/19, affected196/196, audit83/83, check434 modul/37 migrasi, dependency audit0, dan audit independen P0/P1/P2=0. Full regression menghasilkan1257 pass/1 stale manifest-count assertion/1 Windows skip/1 B22 TODO; assertion test diperbaiki dan file lengkapnya lulus22/22, tetapi full suite tidak diulang setelah perubahan satu angka tersebut.
+
+B23 tetap `PARTIAL` +0; kandidat101/198 dan readiness40/100. `restate`, production HTTP composition, target PostgreSQL/recovery, hosted Quality, dan authenticated Finance/Owner/business UAT masih terbuka. Merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 20 atomic execute reopen
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `c5f273f98f2459f09a9f2c0a9847abfada5ae42e`, tree `67d3c3341699620667417ca68378b38248b97703`, mengintegrasikan pure reopen Wave 19 ke PostgreSQL. Implementation cut `fac477a6654d826966407bd5d30dd8c343118847` menjalankan authority recheck, single-use approval, event/operation/aggregate CAS, B20 invalidation, outbox, dan readiness dalam satu transaksi `SERIALIZABLE READ WRITE`; QA cut `fbdfb51776a064437f78a048c0a7cb178cca746e` menguji fault, tamper, concurrency, replay, dan ACK-loss.

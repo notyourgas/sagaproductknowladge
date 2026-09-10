@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-10 — Inventory/HPP Wave 21 atomic record correction
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`, menambah atomic PostgreSQL `recordCorrection`, reversal fact tunggal, value-neutral reclassification overlay, backdate capability migration #37, exact lineage, dan rebuild intent tanpa invalidasi B20 kedua.
+- Evidence dedicated50/50, replay/tamper19/19, affected196/196, audit83/83, check434/37, dependency audit0, audit P0/P1/P2=0; full1257 pass/1 stale assertion/1 skip/1 TODO dan corrected-file rerun22/22 pass.
+- B23 tetap `PARTIAL` +0 karena `restate`, HTTP production, target recovery, dan UAT masih terbuka. 101/198, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 20 atomic execute reopen
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c5f273f98f2459f09a9f2c0a9847abfada5ae42e`, tree `67d3c3341699620667417ca68378b38248b97703`, menambah atomic PostgreSQL `executeReopen`, same-transaction B20 invalidation, exact replay, concurrency, ACK-loss, rollback, dan historical HPP authority binding.

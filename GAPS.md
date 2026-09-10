@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 21
+
+- `CONFIRMED`: draft PR #21 source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`, menutup source-side atomic PostgreSQL `recordCorrection`, exact correction lineage, backdate capability, replay/restart/concurrency/ACK-loss, dan fault rollback. Audit P0/P1/P2=0.
+- `NEEDS CONFIRMATION`: provider `restate` masih belum selesai. Immutable reclassification overlay dan reversal/revaluation intent harus dikonsumsi untuk membangun serta menerbitkan versi report B20 baru tanpa menulis ulang history.
+- `NEEDS CONFIRMATION`: production HTTP composition, native target multi-process validation, recovery/monitoring rehearsal, hosted Quality, dan authenticated Finance/Owner/business UAT belum terbukti. Preview Vercel berhasil tetapi bukan deployment atau activation.
+- Production tidak berubah. B23 `PARTIAL` +0; kandidat101/198, accepted0/198, red-team0/25, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `STAGING_READY=false`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 20
 
 - `CONFIRMED`: draft PR #21 source HEAD `c5f273f98f2459f09a9f2c0a9847abfada5ae42e`, tree `67d3c3341699620667417ca68378b38248b97703`, menutup source-side atomic PostgreSQL `executeReopen`, exact B20 invalidation/outbox coupling, historical HPP authority replay, concurrency, ACK-loss, dan fault rollback. Audit P0/P1/P2=0.
