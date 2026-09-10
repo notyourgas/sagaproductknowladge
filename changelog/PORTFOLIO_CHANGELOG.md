@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaBook S424 non-consuming add-on Closing recovery
+
+- Status `accepted`; classification `CONFIRMED`; exact source
+  `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`, release
+  `20260910145632-1dadc30`, rollback `20260907061232-afb62b3`.
+- Rule eksplisit `0 kertas / 0 packaging` aman berlaku sejak add-on dibuat bila
+  tidak ada histori konsumsi positif. Histori positif tetap immutable dan
+  recovery katalog mengikuti capability Owner/Manager versus Staff.
+- Full PHP 1.381/1.381, focused 23/23, UI contract 11/11, audit dependency nol,
+  encrypted backup/disposable restore, locked activation, verifier 23/23, serta
+  public/security smoke 3/3 lulus. Hosted Quality zero-step karena billing.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+  Add-on legacy yang masih unmapped perlu disimpan ulang oleh Owner/Manager;
+  deployment tidak mengubah data tenant.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 26 session recovery hardening
 
 `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`, memindahkan generic eligible logout ke database revoke ledger dengan exact terminal receipt/scope verification, menambah atomic #40/#41 prefix recovery, exact keyring errors, monitor false-green guards, dan complete production-role DML denial proof. Evidence Inventory Period263/263, focused26/26, check443/41, audit P0/P1/P2=0. Launcher tetap `OFF`; B23 `PARTIAL` +0, 101/198, readiness40/100, `BELUM DEPLOY`, `BUSINESS_READY=false`. Fresh compatibility/recovery, production dependencies/monitoring, hosted Quality, dan authenticated UAT tetap terbuka.

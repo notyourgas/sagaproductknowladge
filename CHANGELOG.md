@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-10 — Sinkronisasi SagaBook S424 non-consuming add-on
+
+- `CONFIRMED`: source `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`,
+  release `20260910145632-1dadc30`, rollback `20260907061232-afb62b3`.
+- Sinkronisasi mencakup rule nol backdated yang menjaga histori konsumsi
+  positif, recovery UI capability-aware, upgrade Predis 3.6.0, dan batas bahwa
+  add-on legacy unmapped harus disimpan ulang Owner/Manager.
+- Diperbarui: SagaBook Product, Dossier, dan changelog; portfolio changelog;
+  master knowledge; sync status; dan root changelog. Tidak ada data restricted.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-10 — Sinkronisasi SagaPOS Inventory/HPP Wave 26
 
 - `CONFIRMED`: source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`, menutup generic logout ledger compatibility, exact terminal replay, atomic migration recovery, monitor health contract, keyring errors, dan production-role DML proof.

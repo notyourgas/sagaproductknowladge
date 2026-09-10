@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaBook S424 add-on non-consuming aktif di production
+
+- `CONFIRMED`: exact source `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`
+  aktif pada release `20260910145632-1dadc30`, rollback
+  `20260907061232-afb62b3`.
+- Jika Owner/Manager menyimpan add-on sebagai `0 kertas / 0 packaging` dan
+  add-on itu tidak pernah memiliki konsumsi positif, rule nol berlaku sejak
+  tanggal pembuatan agar Closing booking historis tidak salah unmapped. Histori
+  positif tidak ditulis ulang. Staff tidak diberi tautan katalog tanpa izin dan
+  diarahkan meminta Owner/Manager.
+- Add-on legacy yang masih unmapped tetap fail-closed sampai disimpan ulang;
+  deployment tidak memutasi data tenant. Predis aktif pada 3.6.0. Exact-commit
+  tests/build/audit, encrypted backup/disposable restore, verifier 23/23, queue,
+  PHP-FPM, nginx, migration 0 pending, dan public/security smoke 3/3 lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING`; `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 26 session recovery hardening
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`.

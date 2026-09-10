@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-09-10 - S424 add-on tanpa konsumsi tidak lagi salah menahan Closing
+
+- Sebelum: rule nol yang baru disimpan dapat mulai setelah tanggal booking,
+  sehingga Closing tetap menghasilkan `ADDON_RULE_UNMAPPED` walau add-on tidak
+  memakai kertas foto maupun packaging.
+- Setelah: penyimpanan eksplisit `0/0` oleh Owner/Manager berlaku sejak tanggal
+  pembuatan add-on jika tidak pernah ada konsumsi positif. Histori add-on yang
+  pernah memakai bahan tidak ditulis ulang. Tombol recovery hanya tampil bagi
+  akun `manage_catalog`; Staff diarahkan meminta Owner/Manager.
+- Exact source `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0` aktif pada release
+  `20260910145632-1dadc30`; rollback `20260907061232-afb62b3` tersedia dan
+  kompatibel. Predis dinaikkan dari 3.0.0 ke 3.6.0 untuk menutup advisory.
+- Full PHP 1.381/1.381 (15.386 assertion), focused 23/23 (139 assertion),
+  kontrak UI 11/11, typecheck/build/Pint, audit Composer/npm nol, backup
+  terenkripsi/checksum/offsite/disposable restore, verifier 23/23, dan smoke
+  publik/security 3/3 lulus. Hosted Quality tidak memulai job karena billing;
+  exact-commit local/VPS release gates lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+  Add-on legacy yang masih unmapped harus disimpan ulang sebagai `0/0`; tidak
+  ada koreksi data tenant pada deployment.
+
 ## 2026-09-07 - S402 Closing History read indexes aktif di production
 
 - Exact main `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce` aktif pada immutable

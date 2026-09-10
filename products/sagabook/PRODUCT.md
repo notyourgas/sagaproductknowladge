@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 7 September 2026 WIB
-Evidence status: SagaBook production terverifikasi aktif pada exact `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`, immutable release `20260907061232-afb62b3`, rollback `20260906181822-9bab958`. Closing History read indexes S402 telah `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; MySQL 8.4 full rollback/reapply, encrypted backup/checksum/disposable restore, verifier, authenticated Owner/Staff UAT read-only, actual rollback drill/reactivation, service/journal, dan public-security smoke lulus. Shared release lock sudah dilepas; `BUSINESS_READY=false` karena pilot dua studio dan provider canary tetap terpisah.
+Updated: 10 September 2026 WIB
+Evidence status: SagaBook production terverifikasi aktif pada exact `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`, immutable release `20260910145632-1dadc30`, rollback `20260907061232-afb62b3`. Perbaikan Closing untuk add-on tanpa pemakaian kertas foto/packaging telah `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backup terenkripsi/checksum/offsite/disposable restore, exact-commit release gates, verifier 23/23, service/journal, dan public-security smoke 3/3 lulus. Authenticated Owner UAT dan penyimpanan ulang rule `0/0` pada add-on legacy yang masih unmapped tetap terpisah; `BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,23 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S424 memperbaiki Closing yang tertahan ketika add-on memang tidak memakai
+  kertas foto maupun packaging. Saat Owner/Manager menyimpan rule eksplisit
+  `0/0` untuk add-on yang tidak pernah memiliki konsumsi positif, effective date
+  rule ditarik aman ke tanggal pembuatan add-on agar booking historisnya dapat
+  dipetakan. Riwayat add-on yang pernah memakai bahan tidak ditulis ulang; rule
+  nol berikutnya tetap berlaku sejak perubahan. UI memberi recovery langsung ke
+  katalog hanya bagi akun `manage_catalog`, sedangkan Staff diarahkan meminta
+  Owner/Manager. Add-on legacy yang masih benar-benar unmapped tetap fail-closed
+  sampai disimpan ulang; deployment tidak melakukan koreksi data tenant.
+  Exact source `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0` aktif pada release
+  `20260910145632-1dadc30`, rollback `20260907061232-afb62b3`. Full PHP
+  1.381/1.381 (15.386 assertion), focused 23/23 (139 assertion), kontrak UI
+  11/11, typecheck/build/Pint, serta audit Composer/npm nol lulus. Predis
+  diperbarui ke 3.6.0. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING /
+  BUSINESS_READY=false`.
 
 - S423 mencegah bootstrap dashboard mereset isian ketika dialog Block
   Time sedang terbuka. Interval polling, focus, visibility, invalidasi lintas

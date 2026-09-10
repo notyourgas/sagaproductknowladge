@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S424 exact source `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`
+  aktif pada immutable release `20260910145632-1dadc30`, rollback kompatibel
+  `20260907061232-afb62b3`. Rule add-on eksplisit `0 kertas / 0 packaging`
+  sekarang dapat berlaku sejak add-on dibuat bila tidak ada histori konsumsi
+  positif; histori konsumsi positif tetap immutable. Recovery UI bersifat
+  capability-aware: Owner/Manager dapat membuka katalog, Staff mendapat
+  instruksi eskalasi. Add-on legacy yang belum pernah disimpan sebagai rule nol
+  tetap fail-closed dan memerlukan tindakan Owner/Manager; deployment tidak
+  memutasi data tenant. Backup terenkripsi/disposable restore, exact-commit
+  gates, verifier 23/23, service/journal, dan public-security smoke 3/3 lulus.
+  Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+
 - S402 exact source `afb62b3f9d7e61b29f57a9b4f35ad91e420c47ce`
   aktif pada immutable release `20260907061232-afb62b3`, rollback
   `20260906181822-9bab958`. MySQL 8.4 full rollback/reapply, backup terenkripsi

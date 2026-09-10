@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-10 — SagaBook S424 non-consuming add-on
+
+- Status `accepted`; classification `CONFIRMED`; exact source
+  `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`, release
+  `20260910145632-1dadc30`, rollback `20260907061232-afb62b3`.
+- Synced: rule eksplisit `0/0` yang dapat berlaku sejak add-on dibuat tanpa
+  mengubah histori konsumsi positif, recovery UI capability-aware, dan Predis
+  3.6.0. Tidak ada migration atau mutasi data tenant.
+- Evidence: full PHP 1.381/1.381; focused 23/23; UI contract 11/11;
+  typecheck/build/Pint; audit Composer/npm nol; encrypted backup/checksum/
+  offsite/disposable restore; verifier 23/23; public/security smoke 3/3.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+  Open: Owner/Manager perlu menyimpan ulang add-on legacy yang masih unmapped,
+  lalu authenticated Closing UAT pada akun terdampak.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 26
 
 - Status `partially accepted`; classification `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, Git tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`.
