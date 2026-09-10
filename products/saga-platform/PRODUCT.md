@@ -1,5 +1,12 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-10 — Saga Member fresh guarded production release
+
+- `CONFIRMED`, cut-off 2026-09-10 03:45 UTC: [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/) aktif pada release `20260910T034155Z-f7e0a50-r0u`; Customer Platform `f7e0a50bf64164c034c39de24cb364fa898f43b0`, Member `e53fea930dec88411d8c8147c6a3530086f991d6`.
+- Fresh immutable artifact, production dependency audit nol, encrypted backup/disposable restore, tujuh migration byte-identical, switch rehearsal, actual rollback, final activation, monitor, dan post-UAT active backup seluruhnya PASS. Failed candidate sebelumnya dipertahankan terpisah dan tidak dipakai ulang.
+- Authenticated Owner technical UAT PASS untuk secure cookie, session reload, scoped dashboard, CSRF dan commerce containment, accessibility, mobile/desktop, serta logout. Consent yang sudah tercatat tidak diubah oleh automation.
+- Customer Platform tetap authority; Member tetap projection client. Provider email/gateway/Push, payment, machine commit, NFC, printer, dan hardware tetap OFF. Status `LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASS / PILOT_ACTIVE / BUSINESS_READY=false`; business/physical UAT tetap terpisah.
+
 ## 2026-09-08 — Saga Member R0 Owner pilot final production release
 
 - `CONFIRMED`, cut-off 2026-09-08 13:41:46 UTC: [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/) aktif pada release `20260908T132140Z-f7e0a50-r0u`; backend `f7e0a50bf64164c034c39de24cb364fa898f43b0`, frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`.

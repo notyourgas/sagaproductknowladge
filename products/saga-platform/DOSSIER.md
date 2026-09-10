@@ -1,5 +1,12 @@
 # Saga Platform Dossier
 
+## 2026-09-10 — Saga Member recovery dan fresh production activation
+
+- `CONFIRMED`: failed release chain `20260910T022514Z-f7e0a50-r0u` berhenti pada recovery rehearsal, dipertahankan append-only, dan tidak di-resume atau diaktifkan ulang. Old runtime dipulihkan terminal beserta monitor, timer, encrypted backup, dan disposable restore sebelum chain baru dibuat.
+- Fresh source Member `e53fea930dec88411d8c8147c6a3530086f991d6` mempertahankan reviewed tree dari kandidat UI sebelumnya; paired Customer Platform tetap `f7e0a50bf64164c034c39de24cb364fa898f43b0`. Release aktif `20260910T034155Z-f7e0a50-r0u` memakai fresh artifact yang terikat exact source.
+- Candidate-bound backup/restore, migration contract 7 dengan `added=0`/`changed=0`, switch rehearsal, rollback database-preserved, final switch, public/internal health, monitor, dan post-UAT active backup PASS. Service/timer terminal sehat dan shared release locks bebas saat audit akhir.
+- Authenticated Owner UAT PASS tanpa mengirim consent. Anonymous Owner session tetap 401; HSTS dan no-store aktif. Provider eksternal OFF; lifecycle Reward internal aktif, tetapi payment, machine commit, dan hardware false. `BUSINESS_READY=false` sampai acceptance bisnis/physical selesai.
+
 ## 2026-09-08 — Saga Member R0 Owner pilot final production release
 
 - `CONFIRMED`, cut-off 2026-09-08 13:41:46 UTC: [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/) aktif pada release `20260908T132140Z-f7e0a50-r0u`; backend `f7e0a50bf64164c034c39de24cb364fa898f43b0`, frontend `6cbddfb27df1e0bb9a02959621b780f74a1fb28a`.
