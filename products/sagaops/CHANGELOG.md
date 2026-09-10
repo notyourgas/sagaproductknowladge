@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-10 — Inventory/HPP Wave 22 atomic restatement
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`, menambah atomic PostgreSQL `restate`, immutable B20 report version, exact cumulative correction set, append-only revaluation resolution migration #38, current-pointer CAS, serta event/operation/aggregate/outbox/readiness dalam satu transaksi.
+- Reclassification overlay dan reversal/revaluation intent dikonsumsi tanpa menulis ulang HPP/report lama. Historical replay, restart, concurrency, ACK-loss, tamper, authority revocation, bounds, safe outbox, dan fault rollback lulus.
+- Evidence dedicated47/47, broader172/172, migration50/50, stale-manifest5/5, full1305 pass/0 fail/1 skip/1 TODO dari1307, check435/38, dependency audit0, audit P0/P1/P2=0.
+- B23 tetap `PARTIAL` +0 karena HTTP production, target recovery/monitoring, hosted Quality, staging, dan UAT masih terbuka. 101/198, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 21 atomic record correction
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`, menambah atomic PostgreSQL `recordCorrection`, reversal fact tunggal, value-neutral reclassification overlay, backdate capability migration #37, exact lineage, dan rebuild intent tanpa invalidasi B20 kedua.

@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 22 atomic restatement
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, Git tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`; implementation `cb37fbb535315602e1ada9e810d3cadc4345e98f`, hardening `81860082787c34a12aa84029a1e15245239008bc`, dan QA final `3b97cbea30741469027b4e25e9bb8fae4dfc2593`.
+- PostgreSQL `restate` sekarang atomik dalam satu transaksi serializable. Provider mengonsumsi immutable reclassification overlay serta reversal/revaluation resolution, membangun ulang projection B20, menerbitkan versi report baru, lalu memindahkan current pointer melalui CAS bersama event, operation, aggregate, outbox, dan readiness.
+- Report dan HPP lama tetap immutable. Versi baru mengikat exact cumulative correction set yang disortir, source/query/projection fingerprint, exact catalog/HPP authority, serta resolution append-only dari migration #38. Replay historis tetap valid setelah versi report dan HPP berikutnya maju.
+- Outbox `INVENTORY_PERIOD_RESTATED_V1` hanya membawa identifier dan fingerprint operasional yang diperlukan; actor, session, device, authority snapshot, dan alasan bebas tidak dipublikasikan. Correction set dibatasi maksimum 100 dan prospective rows dihitung sebelum write pertama.
+- Evidence: dedicated47/47, broader affected172/172, migration50/50, targeted stale manifest5/5, full1305 pass/0 fail/1 Windows skip/1 B22 TODO dari1307, check435/38, dependency audit0, independent P0/P1/P2=0.
+- B23 tetap `PARTIAL` +0 karena production HTTP composition, target PostgreSQL multi-process/recovery/monitoring, hosted Quality, dan authenticated Finance/Owner/business UAT belum selesai. Kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100; merge/release HOLD, `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 21 atomic record correction
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, Git tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`; implementation `7b0b791566681308da30e34fcaa4e42951269a9b`, QA `3666b9220ba2301bdc07b6d11990b7e76c43895e`.

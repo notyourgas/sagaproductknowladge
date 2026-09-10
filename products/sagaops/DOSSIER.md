@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 22 atomic restatement
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`, mengimplementasikan PostgreSQL `restate` dalam satu transaksi `SERIALIZABLE READ WRITE`. Implementation cut `cb37fbb535315602e1ada9e810d3cadc4345e98f` dan hardening `81860082787c34a12aa84029a1e15245239008bc` mengikat authority recheck, exact replay, event chain, current report, HPP, correction set, resolution, projection B20, report version, aggregate CAS, operation, outbox, dan readiness.
+
+Reclassification memakai overlay immutable sebelum klasifikasi movement dan variance B20. Reversal memakai movement inverse yang sudah dipersist. `requires_rebuild` diselesaikan melalui row resolution append-only yang terikat ke movement, event, report, operation, catalog, dan HPP authority; migration additive #38 menambahkan tabel resolution, append-only guard, FORCE RLS, runtime scope policy, bounded grant, dan readiness validation tanpa mengubah 37 migration sebelumnya.
+
+Restatement tidak menulis ulang report lama, HPP fact, atau HPP state. Versi report baru mengikat exact cumulative correction set yang disortir, source/query/projection fingerprint, serta exact HPP version, persistence revision, snapshot fingerprint, catalog revision, dan catalog snapshot. Current pointer berpindah dengan CAS. Replay historis tetap exact walaupun versi report dan HPP terkini sudah maju. Correction set dibatasi maksimum 100; prospective report-correction dan resolution rows dihitung sebelum mutation pertama.
+
+Payload integration outbox `INVENTORY_PERIOD_RESTATED_V1` memakai schema aman berisi identifier dan fingerprint operasional yang diperlukan. Actor, session, device, authority snapshot, dan alasan bebas tidak keluar ke outbox. Replay/restart, dua worker, operation collision, acknowledgement loss, ambiguous rollback, 14 fault boundary, tamper, serta authority revocation gagal tertutup tanpa partial HPP/report state.
+
+Evidence lokal: dedicated47/47, broader affected172/172, migration regression50/50, targeted stale manifest5/5, full repository1305 pass/0 fail/1 Windows skip/1 B22 TODO dari1307, check435 modul/38 migrasi, dependency audit0, dan audit independen P0/P1/P2=0.
+
+B23 tetap `PARTIAL` +0; kandidat101/198 dan readiness40/100. Production HTTP composition, target PostgreSQL multi-process, backup/disposable restore dan recovery rehearsal, monitoring, hosted Quality, staging, serta authenticated Finance/Owner/business UAT masih terbuka. Merge/release HOLD, `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 21 atomic record correction
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`, mengimplementasikan PostgreSQL `recordCorrection` dalam satu transaksi `SERIALIZABLE READ WRITE`. Reversal memakai CAS HPP dan tepat satu fact pembalik sambil mempertahankan production execution state. Reclassification tidak menulis HPP atau fact dan menyimpan immutable classification overlay.

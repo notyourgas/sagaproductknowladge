@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 22 atomic restatement
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`. PostgreSQL `restate` sekarang memakai satu transaksi serializable untuk authority, correction/resolution validation, B20 projection, immutable report version, current-pointer CAS, event/operation/aggregate, safe outbox, dan readiness.
+- Reclassification overlay serta reversal/revaluation resolution dikonsumsi tanpa menulis ulang HPP atau report lama. Versi baru mengikat exact cumulative correction set yang disortir dan exact catalog/HPP authority. Migration #38 menyimpan resolution append-only dengan FORCE RLS; historical replay tetap exact setelah report/HPP terkini maju.
+- Evidence dedicated47/47, broader affected172/172, migration50/50, stale manifest5/5, full1305 pass/0 fail/1 Windows skip/1 B22 TODO dari1307, check435/38, dependency audit0, independent P0/P1/P2=0.
+- B23 tetap `PARTIAL` +0; kandidat101/198, readiness40/100. Production HTTP, target recovery/monitoring, hosted Quality, staging, dan authenticated UAT belum selesai. Merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 21 atomic record correction
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`. PostgreSQL `recordCorrection` sekarang memakai satu transaksi serializable untuk authority, source/dependency validation, correction event/operation/aggregate, outbox, dan rebuild intent.

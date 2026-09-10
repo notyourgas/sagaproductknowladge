@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 22
+
+- `CONFIRMED`: draft PR #21 source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`, menutup source-side atomic PostgreSQL `restate`, immutable correction/resolution consumption, exact B20 report versioning, current-pointer CAS, safe outbox, historical replay, concurrency, ACK-loss, bounds, tamper, dan fault rollback. Audit P0/P1/P2=0.
+- `CONFIRMED`: migration #38 menyediakan append-only `requires_rebuild` resolution dengan FORCE RLS dan readiness. HPP/report lama tetap immutable; cumulative correction set, catalog/HPP authority, source/query/projection fingerprint, event, operation, aggregate, dan outbox terikat exact.
+- `NEEDS CONFIRMATION`: production HTTP composition, native target PostgreSQL multi-process validation, backup/disposable restore dan recovery rehearsal, monitoring, hosted Quality, staging, serta authenticated Finance/Owner/business UAT belum terbukti.
+- Production tidak berubah. B23 `PARTIAL` +0; kandidat101/198, accepted0/198, red-team0/25, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `STAGING_READY=false`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 21
 
 - `CONFIRMED`: draft PR #21 source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`, menutup source-side atomic PostgreSQL `recordCorrection`, exact correction lineage, backdate capability, replay/restart/concurrency/ACK-loss, dan fault rollback. Audit P0/P1/P2=0.

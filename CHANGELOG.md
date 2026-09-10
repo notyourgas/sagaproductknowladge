@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-10 — Sinkronisasi SagaPOS Inventory/HPP Wave 22
+
+- `CONFIRMED`: [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`, menambah atomic PostgreSQL restatement, immutable B20 report version, cumulative correction binding, append-only resolution migration #38, current-pointer CAS, safe outbox, replay, dan transactional rollback.
+- Evidence dedicated47/47, broader172/172, migration50/50, stale-manifest5/5, full1305 pass/0 fail/1 skip/1 TODO dari1307, check435/38, audit0, P0/P1/P2=0.
+- Diperbarui: Product, Dossier, dan changelog SagaOPS; portfolio changelog; master knowledge; gaps; sync status; dan root changelog. Klasifikasi `CONFIRMED`; tidak ada data restricted.
+- B23 `PARTIAL` +0, 101/198, readiness40/100. Production HTTP dan target recovery/UAT masih terbuka; merge/release HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Sinkronisasi SagaPOS Inventory/HPP Wave 21
 
 - `CONFIRMED`: [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `b10d0682a48c4f02bb7683cc3a4f8066f0c2fbaa`, tree `a4ec2d32864430585ca3ac4d18c1272197ee6629`, menambah atomic PostgreSQL correction, reversal/reclassification lineage, backdate capability migration #37, rebuild intent, replay dan transactional rollback.
