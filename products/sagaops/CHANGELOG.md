@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-10 — Inventory/HPP Wave 23 guarded production HTTP composition
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source final `b1b9fdf27cf4d6b9cb752cfab0ecceaeb49affd9`, tree `b41ab6eed5f83ad9ae4eec8c491df4eca3b9678b`, menambah composition production fail-closed untuk delapan mutasi periode inventory dan dua bounded report reads.
+- HTTP hanya meneruskan session reference dan command intent yang telah dibatasi. Server menolak client scope/actor/permission/provider authority, mewajibkan origin/CSRF/JSON/body/rate limits, mengeluarkan DTO serta error publik yang tertutup, dan menjaga replay serta same-transaction authority recheck.
+- Health/readiness mengikat session/device eligible, pemisahan principal, dependency production, serta versi correlation key. Evidence dedicated18/18 dan audit P0/P1/P2=0.
+- Launcher tetap `OFF`; source belum diaktifkan atau dideploy. B23 `PARTIAL` +0, 101/198, readiness40/100; blocker tersisa provisioning authority, target recovery/monitoring, hosted Quality, staging, dan authenticated UAT. `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 22 atomic restatement
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`, menambah atomic PostgreSQL `restate`, immutable B20 report version, exact cumulative correction set, append-only revaluation resolution migration #38, current-pointer CAS, serta event/operation/aggregate/outbox/readiness dalam satu transaksi.

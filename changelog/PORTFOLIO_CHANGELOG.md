@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 23 guarded production HTTP composition
+
+`CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source final `b1b9fdf27cf4d6b9cb752cfab0ecceaeb49affd9`, tree `b41ab6eed5f83ad9ae4eec8c491df4eca3b9678b`, menambah composition production fail-closed untuk delapan mutasi close/reopen/correction/restatement dan dua bounded report reads. Server menurunkan scope/actor/permission/correlation/authority, menerapkan session eligible, origin/CSRF/JSON/body/rate guards, same-transaction recheck, DTO/error publik tertutup, serta dependency/correlation/multi-identity readiness. Dedicated18/18 dan audit P0/P1/P2=0 lulus. Launcher tetap `OFF`; B23 `PARTIAL` +0, 101/198, readiness40/100, `BELUM DEPLOY`, `BUSINESS_READY=false`. Provisioning authority, target recovery/monitoring, hosted Quality, staging, dan authenticated UAT tetap blocker.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 22 atomic restatement
 
 `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`, mengintegrasikan `restate` ke satu transaksi PostgreSQL serializable. Immutable reclassification overlay dan reversal/revaluation resolution membangun projection B20 serta versi report baru dengan exact cumulative correction set; current-pointer CAS, event/operation/aggregate/outbox/readiness, historical replay, concurrency, ACK-loss, tamper, bounds, dan fault rollback lulus. Migration #38 menambah resolution append-only, FORCE RLS, dan readiness; HPP/report lama tetap immutable dan outbox meredaksi konteks actor/session/device/alasan. Dedicated47/47, broader172/172, migration50/50, stale-manifest5/5, full1305 pass/0 fail/1 skip/1 TODO dari1307, check435/38, audit0, P0/P1/P2=0. B23 `PARTIAL` +0; 101/198, readiness40/100, HOLD, `BELUM DEPLOY`, `BUSINESS_READY=false`.

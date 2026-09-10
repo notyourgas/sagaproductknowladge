@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 23 guarded production HTTP composition
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source final `b1b9fdf27cf4d6b9cb752cfab0ecceaeb49affd9`, tree `b41ab6eed5f83ad9ae4eec8c491df4eca3b9678b`. Source memiliki production composition fail-closed untuk delapan mutasi close/reopen/correction/restatement dan dua bounded report reads.
+- Client tidak dapat memasok scope, actor, permission, correlation, atau provider authority. Server mewajibkan eligible operator session, origin/CSRF/JSON/body/rate guards, menurunkan identity/authority, dan provider mengulang pemeriksaan di transaksi yang sama; DTO, error, replay, serta report reads dibatasi kontrak publik tertutup.
+- Health/readiness memeriksa authority, tiga principal terpisah, dependency production, dan active correlation-key version. Evidence dedicated18/18 dan audit P0/P1/P2=0 lulus.
+- Composition masih dormant dan launcher production tetap `OFF`. B23 `PARTIAL` +0; kandidat101/198, readiness40/100. Provisioning eligible session/device dan multi-identitas, target PostgreSQL/recovery/monitoring, hosted Quality, staging, serta authenticated business UAT masih terbuka. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 22 atomic restatement
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`. PostgreSQL `restate` sekarang memakai satu transaksi serializable untuk authority, correction/resolution validation, B20 projection, immutable report version, current-pointer CAS, event/operation/aggregate, safe outbox, dan readiness.

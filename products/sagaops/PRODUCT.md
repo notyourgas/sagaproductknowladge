@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-10 — Inventory/HPP Wave 23 guarded production HTTP composition
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source final `b1b9fdf27cf4d6b9cb752cfab0ecceaeb49affd9`, Git tree `b41ab6eed5f83ad9ae4eec8c491df4eca3b9678b`.
+- Source kini memiliki composition production yang fail-closed untuk kontrol periode inventory. Kontrak HTTP mencakup delapan mutasi close/reopen/correction/restatement dan dua bounded read versi report; scope, actor, permission, correlation, serta authority provider selalu diturunkan server dan tidak dapat dibawa client.
+- Mutasi mewajibkan session operator yang eligible, same-origin, CSRF, JSON dan batas body/rate; provider mengulang pemeriksaan authority di transaksi yang sama. Response memakai DTO publik tertutup, error aman, replay stabil, dan health/readiness memeriksa authority, multi-identitas, dependency, serta versi correlation key.
+- Evidence lokal Wave 23: dedicated18/18, syntax/diff/OpenAPI validation lulus, dan audit final P0/P1/P2=0.
+- Composition masih dormant: launcher production tetap `OFF` dan tidak mengaktifkan route terhadap target. B23 tetap `PARTIAL` +0; kandidat101/198, audited198/198, accepted0/198, red-team0/25, readiness40/100; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+- Blocker ringkas: issuer dan provisioning session/device eligible serta principal Finance/Owner/Executor terpisah, dependency production dan correlation authority, target PostgreSQL/recovery/monitoring, hosted Quality, staging, dan authenticated business UAT belum dibuktikan.
+
 ## 2026-09-10 — Inventory/HPP Wave 22 atomic restatement
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source HEAD `c380ff3fe6dcf4a6ff2cf9c45e46161926aba05b`, Git tree `ff511f956e1691d9d0deefe09dc78a5a0503ccba`; implementation `cb37fbb535315602e1ada9e810d3cadc4345e98f`, hardening `81860082787c34a12aa84029a1e15245239008bc`, dan QA final `3b97cbea30741469027b4e25e9bb8fae4dfc2593`.
