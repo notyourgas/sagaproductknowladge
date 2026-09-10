@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-10 — Inventory/HPP Wave 26 session recovery hardening
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`, memindahkan generic eligible logout ke DB revoke ledger dengan exact terminal-retry verification dan bounded error mapping.
+- Menambah atomic #40/#41 migration-prefix recovery test, exact keyring failure semantics, strict production health truth table, dan complete production-role direct-DML denial evidence.
+- Evidence: Inventory Period263/263, focused26/26, production-role3/3, keyring8/8, migration2/2, monitor9/9, check443/41, audit P0/P1/P2=0.
+- B23 `PARTIAL` +0, 101/198, readiness40/100. Fresh compatibility/recovery, production dependencies/monitoring, hosted Quality, dan authenticated UAT tetap blocker. Launcher `OFF`; `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 25 hardened session authority
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`, menambah migration #40/#41, versioned session credential reference, dan DB-owned issue/revoke ledger authority.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 26 session recovery hardening
+
+`CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`, memindahkan generic eligible logout ke database revoke ledger dengan exact terminal receipt/scope verification, menambah atomic #40/#41 prefix recovery, exact keyring errors, monitor false-green guards, dan complete production-role DML denial proof. Evidence Inventory Period263/263, focused26/26, check443/41, audit P0/P1/P2=0. Launcher tetap `OFF`; B23 `PARTIAL` +0, 101/198, readiness40/100, `BELUM DEPLOY`, `BUSINESS_READY=false`. Fresh compatibility/recovery, production dependencies/monitoring, hosted Quality, dan authenticated UAT tetap terbuka.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 25 hardened session authority
 
 `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`, menutup P0 source untuk shared-session scope, credential replay/rotation, direct session-ledger DML, dan blanket runtime grants melalui migration #40/#41 serta database-owned issue/revoke authority. Evidence focused25/25, migration33/33, inventory-period265/265, check442/41; stale full-suite fixture dikoreksi dan file lulus22/22. Launcher tetap `OFF`; B23 `PARTIAL` +0, 101/198, readiness40/100, `BELUM DEPLOY`, `BUSINESS_READY=false`. Recovery compatibility, real production dependencies, monitoring, CI billing, dan authenticated UAT masih terbuka.

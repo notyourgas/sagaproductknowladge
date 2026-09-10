@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-10 — Wave 26 session recovery hardening
+
+[Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`, menutup incompatibility generic logout terhadap migration #41. Eligible logout sekarang memanggil database-owned revoke ledger; retry terminal memverifikasi exact session/binding/receipt/result/scope/revision/time, dan error dipetakan ke kontrak 403/409/503 teredaksi. Legacy explicitly-ineligible session mempertahankan jalur delete lama.
+
+Test role production membuktikan UPDATE/DELETE eligible session, INSERT/UPDATE/DELETE binding, dan INSERT operation ditolak. Upgrade test dari exact 39-migration prefix membuktikan pre-key eligible session menggagalkan #40 secara atomik tanpa schema/ledger drift; prefix bersih menerapkan #40/#41 satu kali dan bertahan setelah reload/restart. Monitor kini mewajibkan `alive=true` serta exact truth table OFF/POSTGRES, sambil mempertahankan field reporting lama.
+
+Evidence lokal: seluruh Inventory Period263/263, focused26/26, production-role3/3, keyring8/8, migration2/2, monitor9/9, check443 modul/41 migration, audit P0/P1/P2=0. B23 tetap `PARTIAL` +0, 101/198 dan readiness40/100. Fresh strict-prefix compatibility artifact, candidate-bound recovery rehearsal, production dependency loader, target monitoring, hosted Quality, dan authenticated three-human UAT masih wajib. Launcher `OFF`; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `ACTIVATED=false`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 25 hardened session authority
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`, memindahkan issue dan revoke eligible session ke fungsi PostgreSQL yang memiliki authority transaksi. Fungsi memeriksa exact organization, outlet, location, dan authenticated user dari transaction-local scope, mengulang pemeriksaan principal/grant/device, mengikat session-device dengan CAS, dan menyimpan receipt replay secara atomik.

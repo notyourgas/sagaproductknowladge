@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-10 — SagaPOS Inventory/HPP Wave 26 session recovery hardening
+
+- `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`.
+- Generic eligible logout memakai DB revoke ledger; terminal retry mengikat exact receipt, result, scope, revision, dan time. Migration #40/#41 recovery diuji dari exact prefix, keyring errors dibedakan, monitor menolak false-green, dan role production tidak dapat direct-write authority.
+- Evidence Inventory Period263/263, focused26/26, check443/41, audit P0/P1/P2=0.
+- B23 `PARTIAL` +0; 101/198, readiness40/100. Fresh compatibility/recovery, production dependency loader, target monitoring, hosted CI, dan authenticated UAT belum selesai. Launcher `OFF`; `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`, `BELUM DEPLOY`, `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP Wave 25 hardened session authority
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `9aaa990db1ec4152afd61ab3ea89bb5add435ece`, tree `332170890ca14880483f26ea9d09710b05729e8b`.
