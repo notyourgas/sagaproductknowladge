@@ -1,5 +1,23 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-15 — Database Bahan mobile cards aktif di production
+
+- `CONFIRMED`: exact production source
+  `d40e0536ab8dc01585148e33b0a166587f5cd685`, rollback
+  `aee5ec08ef41c8b3a6b63ce2bbc6fd8183edaefb`.
+- Pada layar maksimum 420 piksel, tabel Database Bahan berubah menjadi kartu
+  bertumpuk yang tetap menampilkan nama/SKU/kategori, unit, biaya rata-rata,
+  status, dan aksi Edit/Archive tanpa terpotong ke kanan. Target sentuh aksi
+  minimum 44 piksel; desktop mempertahankan tabel semantik.
+- Focused browser serta kontrak logic/RBAC/persistence lulus, `npm check`
+  lulus, service dan PostgreSQL aktif, health production mengikat exact source,
+  migration count 34, dashboard/aset 200, dan endpoint inventory tanpa auth
+  menolak 401. Full suite menghasilkan 1.239 pass, 2 baseline environment
+  failures, 71 skip, dan 1 todo dari 1.313; dua failure tidak diklaim lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING /
+  BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 26 session recovery hardening
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, Git tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`.

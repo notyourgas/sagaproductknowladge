@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-15 — Sinkronisasi SagaPOS Database Bahan mobile cards
+
+- `CONFIRMED`: production source
+  `d40e0536ab8dc01585148e33b0a166587f5cd685`, rollback
+  `aee5ec08ef41c8b3a6b63ce2bbc6fd8183edaefb`.
+- Sinkronisasi mencakup kartu Database Bahan mobile tanpa pemotongan informasi
+  dan aksi, focused browser/logic/RBAC/persistence, runtime exact-source, serta
+  hasil full suite yang tetap mencatat dua baseline environment failures.
+- Diperbarui: SagaOPS Product, Dossier, dan changelog; portfolio changelog;
+  master knowledge; sync status; serta root changelog. Tidak ada data
+  restricted. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-15 — Sinkronisasi SagaBook S425 add-on task reconciliation
 
 - `CONFIRMED`: source `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`,

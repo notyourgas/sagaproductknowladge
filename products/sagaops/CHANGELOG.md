@@ -1,5 +1,21 @@
 # SagaOPS Changelog
 
+## 2026-09-15 — Database Bahan mobile cards aktif di production
+
+- Sebelum: tabel Database Bahan pada layar ponsel memotong kolom Status serta
+  aksi Edit/Archive ke sisi kanan.
+- Setelah: viewport maksimum 420 piksel memakai kartu bertumpuk dengan seluruh
+  informasi dan aksi utama tetap di dalam viewport; target sentuh aksi minimum
+  44 piksel. Desktop tetap memakai tabel semantik.
+- Exact source `d40e0536ab8dc01585148e33b0a166587f5cd685` aktif di
+  production; rollback `aee5ec08ef41c8b3a6b63ce2bbc6fd8183edaefb`.
+- Focused browser dan logic/RBAC/persistence serta `npm check` lulus. Service,
+  PostgreSQL, exact-source health, migration 34, dashboard/aset 200, dan
+  unauthenticated inventory 401 terverifikasi. Full suite: 1.239 pass, 2
+  baseline environment failures, 71 skip, 1 todo dari 1.313.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-10 — Inventory/HPP Wave 26 session recovery hardening
 
 - `CONFIRMED`; [draft PR #21](https://github.com/notyourgas/sagaops/pull/21) source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`, memindahkan generic eligible logout ke DB revoke ledger dengan exact terminal-retry verification dan bounded error mapping.

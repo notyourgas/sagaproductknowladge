@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-15 — SagaPOS Database Bahan mobile aktif di production
+
+- `CONFIRMED`: exact source `d40e0536ab8dc01585148e33b0a166587f5cd685`
+  aktif di production; rollback `aee5ec08ef41c8b3a6b63ce2bbc6fd8183edaefb`.
+- Pada layar maksimum 420 piksel, Database Bahan memakai kartu bertumpuk yang
+  mempertahankan identitas bahan, unit, biaya rata-rata, status, dan aksi
+  Edit/Archive di dalam viewport. Desktop tetap memakai tabel semantik.
+- Focused browser serta logic/RBAC/persistence dan `npm check` lulus. Runtime
+  mengikat exact source, service/PostgreSQL aktif, migration 34, dan boundary
+  tanpa auth menolak 401. Full suite memiliki 2 baseline environment failures
+  di samping 1.239 pass; authenticated Owner UAT masih pending.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING`;
+  `BUSINESS_READY=false`.
+
 ## 2026-09-15 — SagaBook S425 add-on task reconciliation aktif di production
 
 - `CONFIRMED`: exact source `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`

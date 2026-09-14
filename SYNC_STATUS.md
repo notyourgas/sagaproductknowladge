@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-15 — SagaPOS Database Bahan mobile cards
+
+- Status `accepted`; classification `CONFIRMED`; exact production source
+  `d40e0536ab8dc01585148e33b0a166587f5cd685`, rollback
+  `aee5ec08ef41c8b3a6b63ce2bbc6fd8183edaefb`.
+- Synced: kartu Database Bahan untuk viewport maksimum 420 piksel, target sentuh
+  aksi minimum 44 piksel, dan tabel desktop yang tetap semantik.
+- Evidence: focused browser dan logic/RBAC/persistence, `npm check`, service,
+  PostgreSQL, exact-source production health, migration 34, dashboard/aset 200,
+  serta unauthenticated inventory 401. Full suite 1.239 pass/2 baseline
+  environment failures/71 skip/1 todo dari 1.313.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING /
+  BUSINESS_READY=false`. Open: Owner mencoba flow Database Bahan pada ponsel
+  production dan memverifikasi Edit/Archive sesuai kebutuhan operasional.
+
 ## 2026-09-15 — SagaBook S425 add-on payment task reconciliation
 
 - Status `accepted`; classification `CONFIRMED`; exact source

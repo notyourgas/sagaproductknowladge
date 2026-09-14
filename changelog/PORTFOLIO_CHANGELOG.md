@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-15 — SagaPOS Database Bahan mobile cards
+
+- `CONFIRMED`: source `d40e0536ab8dc01585148e33b0a166587f5cd685`
+  aktif di production; rollback `aee5ec08ef41c8b3a6b63ce2bbc6fd8183edaefb`.
+- Database Bahan pada ponsel kini memakai kartu bertumpuk tanpa memotong unit,
+  biaya, status, dan aksi Edit/Archive; desktop tetap tabel semantik.
+- Focused browser dan logic/RBAC/persistence, `npm check`, service/PostgreSQL,
+  exact-source health, migration 34, public asset, dan negative auth lulus. Full
+  suite mencatat 1.239 pass serta 2 baseline environment failures dari 1.313.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING /
+  BUSINESS_READY=false`.
+
 ## 2026-09-15 — SagaBook S425 add-on payment task reconciliation
 
 - Status `accepted`; classification `CONFIRMED`; exact source

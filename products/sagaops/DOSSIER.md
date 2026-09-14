@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-09-15 — Database Bahan mobile cards
+
+Exact source `d40e0536ab8dc01585148e33b0a166587f5cd685` aktif di
+production dengan rollback `aee5ec08ef41c8b3a6b63ce2bbc6fd8183edaefb`.
+Database Bahan pada viewport maksimum 420 piksel kini memakai kartu bertumpuk,
+sehingga identitas bahan, unit, biaya rata-rata, status, dan aksi Edit/Archive
+tetap terbaca dan dapat disentuh tanpa scroll horizontal. Desktop tetap memakai
+tabel semantik. Focused browser dan logic/RBAC/persistence, `npm check`, exact
+source health, service, PostgreSQL, dashboard/aset, migration 34, serta negative
+auth 401 lulus. Full suite mencatat 1.239 pass dan 2 baseline environment
+failures dari 1.313; hasil tersebut dipertahankan apa adanya. Status
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING /
+BUSINESS_READY=false`.
+
 ## 2026-09-10 — Wave 26 session recovery hardening
 
 [Draft PR #21](https://github.com/notyourgas/sagaops/pull/21) pada source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`, menutup incompatibility generic logout terhadap migration #41. Eligible logout sekarang memanggil database-owned revoke ledger; retry terminal memverifikasi exact session/binding/receipt/result/scope/revision/time, dan error dipetakan ke kontrak 403/409/503 teredaksi. Legacy explicitly-ineligible session mempertahankan jalur delete lama.
