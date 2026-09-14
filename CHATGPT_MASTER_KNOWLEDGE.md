@@ -1,5 +1,24 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-15 — SagaBook S425 add-on task reconciliation aktif di production
+
+- `CONFIRMED`: exact source `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`
+  aktif pada release `20260914173811-bdef20a`, rollback
+  `20260910145632-1dadc30`.
+- Booking completed dengan add-on pending memiliki satu task pembayaran aktif
+  yang dibuat/diperbarui secara tenant-scoped; setelah lunas, task dan
+  notifikasi diselesaikan atomik. UI hanya menganggap rule konsumsi mapped bila
+  pasangan rule benar-benar tersimpan.
+- Satu recovery production yang fail-closed dan idempotent menambahkan rule
+  `0/0` untuk satu add-on legacy yang terverifikasi dan menutup task stale
+  terkait. Recovery tidak mengirim Closing; operator tetap mengonfirmasi
+  hitungan fisik sebelum submit.
+- Full PHP 1.384/1.384, focused QA/security 49/49, browser 5/5, dependency audit
+  nol, encrypted backup/disposable restore, verifier 23/23, dan public/security
+  smoke 3/3 lulus. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING`;
+  `BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaBook S424 add-on non-consuming aktif di production
 
 - `CONFIRMED`: exact source `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`

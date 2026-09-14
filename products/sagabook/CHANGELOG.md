@@ -1,5 +1,27 @@
 # SagaBook Changelog
 
+## 2026-09-15 - S425 task pembayaran add-on dan recovery legacy
+
+- Task pembayaran add-on pada booking completed kini dibuat, diperbarui, atau
+  diselesaikan oleh satu service atomik yang tenant-scoped. Pelunasan menutup
+  task serta notifikasi terkait; add-on pending baru setelah completion kembali
+  membuka task yang tepat.
+- Dashboard hanya menandai rule konsumsi sebagai mapped bila data persisten
+  benar-benar ada. Add-on legacy yang belum dipetakan menampilkan peringatan dan
+  instruksi Owner untuk menyimpan pasangan rule `0/0`.
+- Satu koreksi production yang fail-closed dan idempotent diterapkan pada satu
+  rule legacy yang terbukti tidak memiliki konsumsi positif dan satu task stale
+  terkait. Tidak ada Closing yang dikirim otomatis; operator tetap harus
+  mengonfirmasi hitungan fisik, termasuk nilai nol, sebelum submit.
+- Exact source `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb` aktif pada release
+  `20260914173811-bdef20a`; rollback `20260910145632-1dadc30` tersedia dan
+  kompatibel. Full PHP 1.384/1.384 (15.403 assertion), focused QA/security
+  49/49 (303 assertion), browser persistence 5/5, audit Composer/npm nol,
+  backup/disposable restore, verifier 23/23, dan smoke publik/security 3/3
+  lulus.
+- Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-10 - S424 add-on tanpa konsumsi tidak lagi salah menahan Closing
 
 - Sebelum: rule nol yang baru disimpan dapat mulai setelah tanggal booking,

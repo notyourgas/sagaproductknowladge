@@ -7,6 +7,20 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- S425 exact source `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`
+  aktif pada immutable release `20260914173811-bdef20a`, rollback kompatibel
+  `20260910145632-1dadc30`. Service tenant-scoped mengelola task pembayaran
+  add-on booking completed secara atomik: membuat/memperbarui task ketika masih
+  pending dan menyelesaikan task/notifikasi ketika lunas. UI tidak lagi
+  menyamakan toggle non-consuming yang belum disimpan dengan rule `0/0`
+  persisten. Koreksi data production dibatasi pada satu rule legacy yang
+  terverifikasi serta satu task stale terkait, bersifat idempotent, dan tidak
+  mengirim Closing. Full PHP 1.384/1.384, focused QA/security 49/49, browser
+  persistence 5/5, dependency audit nol, backup/disposable restore, verifier
+  23/23, dan public/security smoke 3/3 lulus. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+
 - S424 exact source `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`
   aktif pada immutable release `20260910145632-1dadc30`, rollback kompatibel
   `20260907061232-afb62b3`. Rule add-on eksplisit `0 kertas / 0 packaging`

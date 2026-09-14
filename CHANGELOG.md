@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-15 — Sinkronisasi SagaBook S425 add-on task reconciliation
+
+- `CONFIRMED`: source `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`,
+  release `20260914173811-bdef20a`, rollback `20260910145632-1dadc30`.
+- Sinkronisasi mencakup lifecycle task pembayaran add-on yang atomik dan
+  tenant-scoped, indikator rule persisten yang jujur, serta recovery terbatas
+  satu rule legacy/task stale tanpa submit Closing otomatis.
+- Evidence full PHP 1.384/1.384, focused QA/security 49/49, browser 5/5,
+  dependency audit nol, backup/disposable restore, verifier 23/23, dan
+  public/security smoke 3/3.
+- Diperbarui: SagaBook Product, Dossier, dan changelog; portfolio changelog;
+  master knowledge; sync status; serta root changelog. Tidak ada data
+  restricted. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-10 — Sinkronisasi SagaBook S424 non-consuming add-on
 
 - `CONFIRMED`: source `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`,

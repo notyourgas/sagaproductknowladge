@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-09-15 — SagaBook S425 add-on payment task reconciliation
+
+- Status `accepted`; classification `CONFIRMED`; exact source
+  `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`, release
+  `20260914173811-bdef20a`, rollback `20260910145632-1dadc30`.
+- Lifecycle task pembayaran add-on booking completed kini atomik dan
+  tenant-scoped. UI membedakan rule persisten dari toggle non-consuming yang
+  belum disimpan. Satu recovery data legacy yang terverifikasi menambahkan rule
+  nol dan menutup task stale tanpa mengirim Closing.
+- Full PHP 1.384/1.384, focused QA/security 49/49, browser 5/5, dependency audit
+  nol, encrypted backup/disposable restore, locked activation, verifier 23/23,
+  serta public/security smoke 3/3 lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaBook S424 non-consuming add-on Closing recovery
 
 - Status `accepted`; classification `CONFIRMED`; exact source

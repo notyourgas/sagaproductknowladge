@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 10 September 2026 WIB
-Evidence status: SagaBook production terverifikasi aktif pada exact `1dadc3000d18c58a6f2ded18a1e052c6b2398ad0`, immutable release `20260910145632-1dadc30`, rollback `20260907061232-afb62b3`. Perbaikan Closing untuk add-on tanpa pemakaian kertas foto/packaging telah `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; backup terenkripsi/checksum/offsite/disposable restore, exact-commit release gates, verifier 23/23, service/journal, dan public-security smoke 3/3 lulus. Authenticated Owner UAT dan penyimpanan ulang rule `0/0` pada add-on legacy yang masih unmapped tetap terpisah; `BUSINESS_READY=false`.
+Updated: 15 September 2026 WIB
+Evidence status: SagaBook production terverifikasi aktif pada exact `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`, immutable release `20260914173811-bdef20a`, rollback `20260910145632-1dadc30`. Sinkronisasi task pembayaran add-on pada booking completed kini atomik dan tenant-scoped; UI membedakan rule legacy yang belum tersimpan dari rule non-consuming `0/0` yang eksplisit. Satu koreksi data legacy terbatas telah menambahkan rule nol yang terverifikasi dan menutup task pembayaran stale tanpa mengirim Closing. Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
 
@@ -15,6 +15,24 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- S425 menyatukan lifecycle task pembayaran add-on untuk booking completed.
+  Penambahan add-on pending membuat atau memperbarui satu task aktif; perubahan
+  status pembayaran menjadi lunas menyelesaikan task dan notifikasinya dalam
+  transaksi yang sama. Query dan mutasi dikunci ke tenant serta booking yang
+  tepat, termasuk perlindungan terhadap ID booking sama pada tenant lain. UI
+  hanya menganggap rule konsumsi sudah dipetakan bila pasangan rule benar-benar
+  tersimpan; add-on legacy yang belum dipetakan menampilkan instruksi Owner untuk
+  menyimpan `0/0`. Satu koreksi data production yang fail-closed dan idempotent
+  diterapkan hanya pada satu rule legacy yang terbukti non-consuming dan satu
+  task stale terkait; tidak ada Closing yang dikirim otomatis. Exact source
+  `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb` aktif pada release
+  `20260914173811-bdef20a`, rollback `20260910145632-1dadc30`. Full PHP
+  1.384/1.384 (15.403 assertion), focused QA/security 49/49 (303 assertion),
+  browser persistence 5/5, audit dependency nol, backup/disposable restore,
+  verifier 23/23, serta public/security smoke 3/3 lulus. Status `CONFIRMED /
+  SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
 
 - S424 memperbaiki Closing yang tertahan ketika add-on memang tidak memakai
   kertas foto maupun packaging. Saat Owner/Manager menyimpan rule eksplisit

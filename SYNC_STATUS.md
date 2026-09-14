@@ -1,5 +1,22 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-15 — SagaBook S425 add-on payment task reconciliation
+
+- Status `accepted`; classification `CONFIRMED`; exact source
+  `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`, release
+  `20260914173811-bdef20a`, rollback `20260910145632-1dadc30`.
+- Synced: task pembayaran add-on booking completed yang atomik/tenant-scoped,
+  indikator mapped yang hanya berasal dari rule persisten, dan recovery satu
+  rule legacy serta satu task stale tanpa submit Closing otomatis.
+- Evidence: full PHP 1.384/1.384 (15.403 assertion); focused QA/security 49/49
+  (303 assertion); browser persistence 5/5; audit Composer/npm nol; encrypted
+  backup/disposable restore; verifier 23/23; public/security smoke 3/3.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+  Open: operator perlu memuat ulang Closing terdampak, mengonfirmasi hitungan
+  fisik termasuk nol, lalu submit; authenticated Owner/operator UAT belum
+  dilakukan oleh agent.
+
 ## 2026-09-10 — SagaBook S424 non-consuming add-on
 
 - Status `accepted`; classification `CONFIRMED`; exact source
