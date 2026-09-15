@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-15 — Tambah stok masuk satu layar di dashboard production
+
+- `CONFIRMED`: Owner Dashboard source `c7b1e31d9de58572b19932e7a622f761e3c4b009` aktif di production; rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.
+- Tombol Tambah stok masuk membuka pop-up pada halaman Gudang yang sama, bukan wizard tiga tahap atau tab baru. Owner memilih bahan dan satuan pembelian tersimpan, mengisi jumlah, biaya aktual, serta supplier; batch/kedaluwarsa muncul sesuai kebutuhan bahan. Preview menunjukkan konversi ke satuan dasar, stok, dan biaya rata-rata sebelum satu tombol simpan.
+- Perhitungan stok/HPP tetap diputuskan server; harga acuan tidak diam-diam menggantikan biaya pembelian aktual. Form mempertahankan isian bila server menolak perubahan, dan respons terputus tetap direkonsiliasi tanpa penerimaan kedua.
+- Static check, tes fokus/browser desktop-mobile, recovery code-only dengan backup terenkripsi dan restore sementara, 34 migrasi, health exact-source, HTTPS/aset baru, serta penolakan API anonim 401 lulus. Full suite dan offsite backup belum diverifikasi.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment dan Member eksternal tetap OFF. Keputusan UI dari Andreas; pricing dan produk lain tidak berubah.
+
 ## 2026-09-15 — Enam celah operasional Bahan, Gudang, dan HPP ditutup di production
 
 - `CONFIRMED`: Owner Dashboard source `c4ae7096defe64a63fdf22b1185556aad0bf9df9` aktif di production; rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.

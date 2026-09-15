@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-15 — SagaPOS Gudang: penerimaan satu layar aktif di production
+
+- `CONFIRMED`: Owner Dashboard source `c7b1e31d9de58572b19932e7a622f761e3c4b009`, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.
+- Tambah stok masuk membuka pop-up pada dashboard yang sama, bukan wizard bertahap. Owner memilih bahan dan satuan beli, mengisi jumlah, biaya aktual serta supplier; batch/kedaluwarsa disesuaikan kebijakan bahan. Preview mengonversi jumlah ke satuan dasar dan memperkirakan stok/biaya rata-rata sebelum simpan. Harga referensi tidak otomatis dipakai sebagai harga transaksi.
+- Mesin stok/HPP, API/schema dan permission tidak berubah; idempotensi/recovery penerimaan tetap aman. Static check, tes fokus/browser, host-local recovery, encrypted backup/restore, 34 migrasi, HTTPS/aset baru, dan anonymous API 401 lulus. Payment/Member OFF; Owner UAT bisnis, full suite dan offsite backup belum, sehingga `BUSINESS_READY=false`.
+
 ## 2026-09-15 — SagaPOS Bahan/Gudang/HPP production: alur aman untuk diuji
 
 - `CONFIRMED`: Owner Dashboard source `c4ae7096defe64a63fdf22b1185556aad0bf9df9` aktif di production; rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.

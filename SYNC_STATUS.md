@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-15 — SagaPOS Gudang: pop-up stok masuk
+
+- Status `accepted`; klasifikasi `CONFIRMED`; production source `c7b1e31d9de58572b19932e7a622f761e3c4b009`, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.
+- Synced: dialog satu layar mengganti wizard penerimaan, satuan beli/konversi dan biaya aktual tetap jelas, batch wajib bila dilacak, preview stok/biaya tanpa mengubah engine. Source dan runtime sudah diverifikasi pada domain asli.
+- Evidence: static check, tes fokus/browser desktop-mobile/keyboard/accessibility, encrypted backup/disposable restore, host-local recovery, service/PostgreSQL 34 migrasi, HTTPS/aset dialog baru, anonymous inventory 401. Full suite dan offsite backup belum diverifikasi.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Payment/Member OFF. Next: Andreas uji satu bahan dengan satuan/biaya pembelian nyata pada link Owner Dashboard; jangan klaim bisnis siap sebelum UAT.
+
 ## 2026-09-15 — SagaPOS enam celah operasional Bahan/Gudang/HPP
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source production `c4ae7096defe64a63fdf22b1185556aad0bf9df9`, rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.

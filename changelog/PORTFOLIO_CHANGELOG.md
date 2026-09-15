@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-15 — SagaPOS Gudang: stok masuk langsung dari pop-up
+
+- `CONFIRMED`: source `c7b1e31d9de58572b19932e7a622f761e3c4b009` aktif di production, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.
+- Wizard stok masuk tiga tahap diganti satu dialog dalam dashboard. Bahan/satuan beli, jumlah dan biaya aktual terisi dalam satu form; preview stok serta biaya rata-rata muncul langsung. Batch tetap wajib jika bahan dilacak. Schema/API, pricing, payment, Member, dan produk lain tidak berubah.
+- Static check, tes fokus/browser, backup/recovery, service/PostgreSQL 34 migrasi, HTTPS/aset baru dan anonymous 401 lulus. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; full suite/offsite backup belum diverifikasi.
+
 ## 2026-09-15 — SagaPOS: enam celah operasional Bahan/Gudang/HPP
 
 - `CONFIRMED`: source `c4ae7096defe64a63fdf22b1185556aad0bf9df9` aktif di production; rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.

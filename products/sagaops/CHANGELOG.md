@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-15 — Penerimaan stok Gudang menjadi pop-up satu form
+
+- Sebelum: tombol Tambah stok masuk membuka workspace penuh dan wizard tiga tahap.
+- Setelah: pop-up native dalam Owner Dashboard memuat pilih bahan/satuan beli, jumlah, biaya aktual, supplier, batch bila diperlukan, serta preview stok/HPP. Batal/Escape kembali ke Gudang; satu tombol menyimpan tanpa langkah review terpisah.
+- `CONFIRMED`: source `c7b1e31d9de58572b19932e7a622f761e3c4b009` aktif di production, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`. Static check, tes fokus/browser, backup/recovery code-only, 34 migrasi, health/HTTPS/aset baru, dan anonymous inventory 401 lulus. Full suite dan offsite backup `UNVERIFIED`.
+- Tidak ada migration/API/engine stok/HPP yang diubah; biaya aktual tetap wajib untuk nilai stok yang benar. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment OFF.
+
 ## 2026-09-15 — Enam celah operasional Bahan/Gudang/HPP
 
 - Sebelum: isi kemasan contoh bisa diterima tanpa pemeriksaan, margin HPP mudah dibaca sebagai laba bersih, hitung stok fisik tidak terjangkau dari Gudang sederhana, dan copy varians tidak selalu sesuai boundary produksi/retur.

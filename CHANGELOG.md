@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-15 — Sinkronisasi pop-up penerimaan stok SagaPOS
+
+- `CONFIRMED`: source production `c7b1e31d9de58572b19932e7a622f761e3c4b009`, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`; keputusan Andreas mengganti wizard Gudang menjadi satu pop-up yang tetap menghitung jumlah dan biaya dengan benar.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio changelog, master knowledge, decision log, serta sync status. Tidak ada data restricted atau perubahan pricing/payment.
+- Static check, tes fokus/browser, backup/recovery, 34 migrasi, health/HTTPS/aset, dan negative auth 401 lulus; full suite/offsite backup belum. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-15 — Sinkronisasi SagaPOS enam celah operasional
 
 - `CONFIRMED`: source production `c4ae7096defe64a63fdf22b1185556aad0bf9df9`, rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.

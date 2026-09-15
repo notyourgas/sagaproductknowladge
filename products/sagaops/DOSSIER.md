@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-15 — Form penerimaan stok sebagai pop-up, tanpa wizard
+
+Sebelum perubahan, Tambah stok masuk menukar seluruh area Gudang dengan wizard pilih bahan → jumlah/biaya → review. Source production `c7b1e31d9de58572b19932e7a622f761e3c4b009` mengubahnya menjadi dialog native satu layar di atas stok dan riwayat yang tetap terlihat pada dashboard; rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.
+
+Owner memilih bahan/satuan beli tersimpan, mengisi jumlah dalam satuan itu, biaya pembelian aktual dan supplier (prefill jika tersedia). Konversi ke gram/ml/pcs, stok baru, nilai dan MWA dipratinjau tanpa tahap review. Harga katalog hanya acuan. Batch dan kedaluwarsa tersedia dalam rincian dan langsung terbuka/wajib untuk bahan yang dilacak. Batal/Escape kembali ke tombol Gudang tanpa mutasi; konflik server menjaga draft, sedangkan idempotensi dan rekonsiliasi respons hilang tetap mengikuti kontrak backend yang sama.
+
+Tidak ada perubahan schema, API, ledger, pembayaran, atau authority Member. `npm run check`, focused logic/browser desktop-mobile/keyboard/accessibility, encrypted backup/disposable restore, host-local code-only recovery, service/PostgreSQL 34 migrasi, exact-source HTTPS health, aset dialog baru, dan negative auth 401 lulus. Full suite dan offsite backup belum diverifikasi; Owner UAT pada data uji bisnis nyata masih pending, `BUSINESS_READY=false`.
+
 ## 2026-09-15 — Alur operasional Bahan → Gudang → HPP → laporan
 
 Source production `c4ae7096defe64a63fdf22b1185556aad0bf9df9`, rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`. Wizard Database Bahan menampilkan konversi kemasan dan mewajibkan operator mencocokkan isinya dengan barang nyata; mengubah angka membatalkan konfirmasi sebelumnya. HPP menu menampilkan laba dan margin kotor dari komponen tercatat, dengan peringatan bahwa biaya operasional/pembayaran belum masuk.

@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-196 — Penerimaan stok SagaPOS cukup satu pop-up di Gudang
+
+- Tanggal: 2026-09-15. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: interaksi Owner saat memasukkan stok Gudang.
+- Keputusan: tombol Tambah stok masuk membuka dialog satu layar pada dashboard yang sama; tidak memakai wizard langkah demi langkah atau tab baru. Owner memilih bahan/satuan dan mengisi jumlah, dengan preview sebelum satu aksi simpan.
+- Alasan: tugas menerima stok perlu cepat dan mudah dipahami tanpa memutus konteks stok saat ini.
+- Alternatif: wizard tiga tahap sebelumnya diganti hanya untuk penerimaan Gudang; wizard Database Bahan dan HPP tidak termasuk keputusan ini.
+- Dampak: biaya pembelian aktual/supplier dan batch yang diwajibkan tetap tersedia agar nilai stok, HPP, dan histori benar; native dialog mendukung keyboard, Escape, serta ponsel. Engine stok/API/permission dan payment tidak berubah. Source production `c7b1e31d9de58572b19932e7a622f761e3c4b009`; Owner UAT bisnis dan `BUSINESS_READY` tetap terpisah.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-194 — Owner SagaPOS tidak login ulang untuk memakai HR
 
 - Tanggal: 2026-09-07. Status: `CONFIRMED`; pemberi keputusan Andreas.
