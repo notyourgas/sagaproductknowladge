@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-15 — Gudang: penerimaan dikelompokkan per kiriman
+
+Sebelumnya satu kiriman multi-bahan muncul sebagai beberapa baris dan badge/pencarian menyebutnya beberapa penerimaan. Read model Owner sekarang memproyeksikan maksimum 20 transaksi stok masuk terbaru yang benar-benar memiliki bahan diterima; setiap transaksi memuat lokasi tujuan, nilai total, serta rincian bahan dan batch. Tampilan memakai disclosure native sehingga ringkasan singkat tetap dapat dibuka dengan keyboard. Pencarian melihat seluruh bahan dalam kiriman tetapi hasilnya dihitung sekali per transaksi.
+
+Source production `72db215a8b17cafbf3047f54b1f893a625b2a5ed`, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`. Tidak ada migration atau perubahan engine stok/HPP. Focused test 21/21, static check, desktop/mobile accessibility dan layout, backup/restore disposable, 34 migration, exact-health, aset HTTPS, serta anonymous Owner API 401 lulus. Full suite belum dijalankan; Owner UAT operasional masih menunggu Andreas. Payment dan inventory reporting tetap OFF, offsite backup belum diverifikasi; `BUSINESS_READY=false`.
+
 ## 2026-09-15 — Database Bahan mobile cards
 
 Exact source `d40e0536ab8dc01585148e33b0a166587f5cd685` aktif di

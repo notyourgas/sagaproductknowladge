@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-15 — Riwayat penerimaan Gudang per kiriman
+
+- Sebelum: satu kiriman multi-bahan dihitung sebagai beberapa penerimaan dan histori dibatasi oleh baris ledger.
+- Setelah: hingga 20 transaksi stok masuk terbaru tampil sebagai ringkasan per kiriman dengan rincian bahan, nilai, batch, supplier, dan lokasi; pencarian mengembalikan hitungan transaksi yang benar.
+- `CONFIRMED`; source `72db215a8b17cafbf3047f54b1f893a625b2a5ed` aktif di production, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`. Focused Owner/Gudang/HPP 21/21, static check, browser desktop/mobile/keyboard/axe/overflow, encrypted backup/disposable restore, PostgreSQL 34 migrasi, monitor, HTTPS/aset dan anonymous auth 401 lulus. Full suite tidak dijalankan.
+- Tanpa migration, mutasi stok/HPP, atau payment activation. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite backup masih `UNVERIFIED`.
+
 ## 2026-09-15 — Database Bahan mobile cards aktif di production
 
 - Sebelum: tabel Database Bahan pada layar ponsel memotong kolom Status serta

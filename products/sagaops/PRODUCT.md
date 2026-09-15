@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-15 — Riwayat stok masuk per transaksi aktif di production
+
+- `CONFIRMED`: SagaPOS Owner Dashboard memakai source `72db215a8b17cafbf3047f54b1f893a625b2a5ed`; rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.
+- Satu kiriman berisi beberapa bahan kini dihitung dan ditampilkan sebagai satu penerimaan. Ringkasan menunjukkan supplier, waktu, lokasi tujuan, jumlah bahan, dan total nilai; rincian bahan/kuantitas/nilai/batch dibuka seperlunya. Pencarian bahan, supplier, lokasi, dan batch menghitung transaksi, bukan baris bahan.
+- Perubahan hanya pada read model dan UI Gudang; stok, HPP, transaksi, schema, serta payment authority tidak berubah. Tes terkait Owner/Gudang/HPP 21/21 dan static check lulus; desktop/mobile, keyboard, axe serious/critical, dan overflow lulus. Full suite tidak dijalankan untuk rilis ini.
+- Artifact exact-source, backup terenkripsi/disposable restore, service, PostgreSQL 34 migrasi, monitor, HTTPS/aset publik, dan negative auth 401 lulus. Payment tetap OFF, reporting OFF:OFF, offsite backup belum diverifikasi. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-15 — Database Bahan mobile cards aktif di production
 
 - `CONFIRMED`: exact production source

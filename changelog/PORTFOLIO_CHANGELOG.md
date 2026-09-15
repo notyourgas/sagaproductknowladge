@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-15 — SagaPOS Gudang: riwayat per penerimaan
+
+- `CONFIRMED`: source `72db215a8b17cafbf3047f54b1f893a625b2a5ed` aktif di production, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.
+- Kiriman multi-bahan dihitung sekali; Owner dapat membuka rincian bahan/nilai/batch dan mencari berdasarkan bahan, supplier, lokasi, atau batch tanpa keluar dashboard. Focused test 21/21, static check, recovery, 34 migrasi, HTTPS/aset, monitor, dan negative auth 401 lulus.
+- Read-only UI projection; stok/HPP/payment tidak berubah. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Full suite tidak dijalankan; offsite backup `UNVERIFIED`.
+
 ## 2026-09-15 — SagaPOS Database Bahan mobile cards
 
 - `CONFIRMED`: source `d40e0536ab8dc01585148e33b0a166587f5cd685`

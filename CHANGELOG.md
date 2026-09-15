@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-15 — Sinkronisasi SagaPOS riwayat Gudang per transaksi
+
+- `CONFIRMED`: source production `72db215a8b17cafbf3047f54b1f893a625b2a5ed`, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.
+- Alasan: jumlah penerimaan dan hasil pencarian sebelumnya mengikuti baris bahan, bukan satu kiriman. Produk SagaOPS Product/Dossier/Changelog, portfolio changelog, master knowledge, dan sync status diperbarui tanpa data restricted.
+- Focused test 21/21, static check, recovery, 34 migrasi, public asset/negative auth lulus; full suite tidak dijalankan. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite backup belum diverifikasi.
+
 ## 2026-09-15 — Sinkronisasi SagaPOS Database Bahan mobile cards
 
 - `CONFIRMED`: production source

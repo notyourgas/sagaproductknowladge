@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-15 — SagaPOS riwayat Gudang per kiriman
+
+- Status `accepted`; classification `CONFIRMED`; source production `72db215a8b17cafbf3047f54b1f893a625b2a5ed`, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.
+- Synced: satu penerimaan per kiriman multi-bahan, ringkasan/rincian Gudang, pencarian per transaksi, dan batas stok/HPP/payment yang tidak berubah.
+- Evidence: focused 21/21, static check, desktop/mobile/keyboard/axe/overflow, encrypted backup/disposable restore, service/PostgreSQL 34 migrasi, exact health, monitor, HTTPS/aset, anonymous Owner 401. Full suite tidak dijalankan; offsite backup `UNVERIFIED`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Andreas menguji satu penerimaan multi-bahan dan pencarian pada dashboard production.
+
 ## 2026-09-15 — SagaPOS Database Bahan mobile cards
 
 - Status `accepted`; classification `CONFIRMED`; exact production source

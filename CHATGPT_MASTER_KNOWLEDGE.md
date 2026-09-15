@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-15 — SagaPOS Gudang: satu kiriman satu penerimaan
+
+- `CONFIRMED`: Owner Dashboard production source `72db215a8b17cafbf3047f54b1f893a625b2a5ed`, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.
+- Riwayat stok masuk mengelompokkan bahan per transaksi. Ringkasan menampilkan supplier, waktu, lokasi, jumlah bahan dan nilai; rincian bahan/kuantitas/nilai/batch tersedia saat dibuka. Pencarian menghitung transaksi yang cocok sekali, termasuk bila satu kiriman berisi beberapa bahan.
+- Focused Owner/Gudang/HPP 21/21, static check, browser desktop/mobile/keyboard/axe/overflow, exact artifact, backup/restore, PostgreSQL 34 migrasi, monitor, public assets HTTPS, dan negative auth 401 lulus. Full suite belum dijalankan. Engine stok/HPP dan payment tidak berubah; payment OFF, offsite backup belum diverifikasi, authenticated Owner UAT pending, `BUSINESS_READY=false`.
+
 ## 2026-09-15 — SagaPOS Database Bahan mobile aktif di production
 
 - `CONFIRMED`: exact source `d40e0536ab8dc01585148e33b0a166587f5cd685`
