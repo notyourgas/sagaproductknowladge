@@ -1,9 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-## 2026-09-15 — SagaPOS HPP pop-up resep belum aktif
+## 2026-09-15 — SagaPOS HPP pop-up resep aktif di production
 
-- `CONFIRMED`: Owner meminta HPP disusun sebagai resep dalam pop-up, bukan wizard. Source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` implemented/pushed: pilih bahan Database, isi takaran, tambah beberapa baris, lihat HPP/margin langsung, simpan draft, lalu publish versi terpisah.
-- Belum boleh dijanjikan sebagai fitur production: runtime masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`; kapasitas disk target 96% melanggar batas monitor <90%. Full suite tidak hijau akibat baseline/environment test; Owner UAT belum terjadi. Payment/Member OFF, `BUSINESS_READY=false`.
+- `CONFIRMED`: Owner meminta HPP disusun sebagai resep dalam pop-up, bukan wizard. Source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif di [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard), rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`: pilih bahan Database, isi takaran, tambah beberapa baris, lihat HPP/margin langsung, simpan draft, lalu publish versi terpisah.
+- Release code-only melewati paket exact-source, backup/restore, rehearsal, aktivasi, health/34 migrasi, HTTPS/aset, anonymous inventory 401 dan monitor. Disk 88% setelah retention rilis/paket nonaktif yang diarsipkan. Full suite tidak hijau akibat baseline/environment test; offsite backup dan Owner UAT belum terjadi. Payment/Member OFF; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
 ## 2026-09-15 — SagaPOS Gudang: penerimaan satu layar aktif di production
 

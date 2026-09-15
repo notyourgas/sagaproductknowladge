@@ -1,11 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
-## 2026-09-15 — SagaPOS HPP pop-up resep kandidat lokal
+## 2026-09-15 — SagaPOS HPP pop-up resep aktif di production
 
-- Status `accepted`; klasifikasi `CONFIRMED`; source kandidat `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` pushed, production masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`.
+- Status `accepted`; klasifikasi `CONFIRMED`; source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` pushed dan aktif di production, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`.
 - Synced: HPP diatur di pop-up resep tanpa wizard; bahan/takaran multi-baris dan estimasi langsung, draft/publish terpisah, published/stok/menu/payment tetap aman.
-- Evidence: static check, empat browser desktop/mobile/keyboard/accessibility, dependency audit produksi 0; full suite tidak hijau karena baseline/environment tests. Storage server 96% melebihi monitor <90%; recovery/aktivasi/Owner UAT belum dilakukan.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Next: keputusan storage aman yang menjaga backup/current/rollback, lalu candidate-bound release dan Owner UAT pada domain asli.
+- Evidence: static check, empat browser desktop/mobile/keyboard/accessibility, dependency audit produksi 0, paket exact-source, backup terenkripsi/disposable restore, recovery rehearsal code-only, aktivasi atomik, health/DB 34 migrasi, HTTPS dashboard/aset, anonymous inventory 401, dan monitor production lulus. Retention rilis/paket nonaktif setelah arsip terverifikasi menurunkan disk ke 88%; full suite baseline, offsite backup dan Owner UAT tetap terbuka.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Andreas uji resep satu menu dengan bahan dan biaya nyata pada domain asli, lalu laporkan friksi UI atau angka yang tidak sesuai.
 
 ## 2026-09-15 — SagaPOS Gudang: pop-up stok masuk
 

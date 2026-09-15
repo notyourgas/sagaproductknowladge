@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-15 — Pop-up resep HPP aktif pada domain asli
+
+- `CONFIRMED`: production source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f`, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`; Owner mengedit resep dalam satu pop-up pada daftar HPP menu.
+- Retention rilis/paket nonaktif dilakukan setelah arsip off-host dan checksum; backup, current, rollback, serta database dipertahankan. Disk akhir 88%.
+- Empat tes UI, static check, dependency audit production, backup terenkripsi/disposable restore, rehearsal code-only, aktivasi, health, 34 migrasi, HTTPS dashboard/aset baru, anonymous inventory 401, dan monitor lulus. Full suite baseline dan offsite backup belum hijau/terverifikasi.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; tanpa perubahan schema/API, stok, payment, atau Member.
+
 ## 2026-09-15 — Kandidat edit HPP sebagai pop-up resep
 
 - Sebelum: daftar menu diganti workspace editor dan komponen memakai langkah Susun → Review sebelum simpan.

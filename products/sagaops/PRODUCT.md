@@ -1,12 +1,12 @@
 # SagaOPS Product Knowledge
 
-## 2026-09-15 — Kandidat pop-up resep HPP, belum aktif
+## 2026-09-15 — Pop-up resep HPP aktif di production
 
-- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` sudah pushed; production masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`.
+- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` sudah pushed dan aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`.
 - Atur HPP membuka pop-up pada daftar menu yang sama. Owner memilih bahan dari Database, mengisi takaran per porsi, dapat menambah beberapa baris dan melihat simulasi HPP/margin kotor langsung tanpa wizard dua tahap. Edit bahan lama dan pembatalan input belum tersimpan tetap tersedia.
 - Simpan masuk draft; publish versi terpisah. Resep published, stok, schema/API, harga menu, payment, dan Member tidak diubah. Bahan tanpa biaya tidak dianggap Rp0 dan belum dapat dipublikasikan.
-- Static check, empat tes browser desktop/mobile/keyboard/accessibility, serta production dependency audit 0 lulus. Full suite tidak hijau karena tes laporan memakai rute UI lama dan runner Linux perlu WSL distro; tes rute lama juga gagal pada source production sebelumnya.
-- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Disk target 96% terpakai, monitor membatasi <90%; tidak ada recovery/aktivasi kandidat atau authenticated Owner UAT.
+- Static check, empat tes browser desktop/mobile/keyboard/accessibility, serta production dependency audit 0 lulus. Paket exact-source, backup terenkripsi/restore sementara, rehearsal kandidat-rollback-kandidat, aktivasi atomik, health, 34 migrasi, HTTPS dashboard/asset, anonymous inventory 401, dan monitor production lulus. Full suite tidak hijau karena tes laporan memakai rute UI lama dan runner Linux perlu WSL distro; tes rute lama juga gagal pada source production sebelumnya.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Retention rilis/paket lama yang terarsip dan bisa dipulihkan menurunkan disk target ke 88%; offsite backup dan uji Owner nyata belum dibuktikan.
 
 ## 2026-09-15 — Tambah stok masuk satu layar di dashboard production
 

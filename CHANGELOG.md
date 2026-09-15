@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-15 — Aktivasi production pop-up resep HPP SagaPOS
+
+- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada domain asli; rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Keputusan UI Andreas kini dapat diuji di Owner Dashboard.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, decision impact, gaps dan sync status. Retention rilis/paket nonaktif setelah arsip terverifikasi menutup blocker disk tanpa menghapus backup atau rollback.
+- Empat tes UI, static check, dependency audit produksi, backup/restore, rehearsal/aktivasi, health/34 migrasi, HTTPS/aset, anonymous inventory 401, dan monitor lulus; disk 88%. Full suite baseline, offsite backup dan Owner UAT belum ditutup. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-15 — Sinkronisasi kandidat pop-up resep HPP SagaPOS
 
 - `CONFIRMED`: keputusan Andreas dan source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` mengganti wizard HPP dengan pop-up resep satu layar; simpan draft dan publish versi tetap terpisah.

@@ -7,7 +7,7 @@
 - Keputusan: Atur/Edit HPP membuka pop-up pada dashboard yang sama. Owner memilih bahan dari Database, memasukkan takaran per porsi, menambah beberapa bahan, dan melihat preview HPP/margin langsung; tidak memakai wizard tahap komponen.
 - Alasan: pengaturan resep harus singkat dan mudah dipahami tanpa berpindah tampilan.
 - Alternatif: workspace editor dan wizard Susun → Review komponen diganti; publish versi tetap keputusan terpisah agar draft tidak otomatis masuk transaksi.
-- Dampak: source kandidat `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` pushed, belum deploy karena disk target melebihi batas monitor. Tidak mengubah schema/API, stok, menu tanpa HPP, published snapshot, payment, atau authority Member. Owner UAT dan `BUSINESS_READY` tetap terpisah.
+- Dampak: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif di production, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Retention rilis/paket nonaktif yang diarsipkan menutup blocker disk; kapasitas 88%. Tidak mengubah schema/API, stok, menu tanpa HPP, published snapshot, payment, atau authority Member. Owner UAT dan `BUSINESS_READY` tetap terpisah.
 - Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md).
 
 ## DEC-196 — Penerimaan stok SagaPOS cukup satu pop-up di Gudang

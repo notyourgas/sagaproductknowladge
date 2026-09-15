@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-15 — SagaPOS HPP recipe popup aktif di production
+
+- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada Owner Dashboard SagaPOS; rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Atur/Edit HPP tetap pada daftar menu dan membuka pop-up resep satu layar dengan bahan, takaran, dan simulasi HPP/margin langsung.
+- Paket immutable, backup/restore sementara, recovery rehearsal, aktivasi, health, DB 34 migrasi, HTTPS/aset, anonymous 401, monitor dan empat tes UI lulus; disk 88% setelah retention terarsip. Full suite baseline, offsite backup, dan Owner UAT masih terbuka.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; Saga Member, payment dan produk lain tidak berubah.
+
 ## 2026-09-15 — SagaPOS HPP recipe popup belum production
 
 - `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` menyatukan bahan, takaran, dan pratinjau HPP/margin dalam satu pop-up Owner Dashboard tanpa wizard. Simpan tetap draft; publish resep tetap terpisah.

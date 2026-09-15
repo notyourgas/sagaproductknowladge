@@ -1,10 +1,10 @@
 # Gaps dan Keputusan Founder
 
-## 2026-09-15 — HPP recipe popup belum aktif
+## 2026-09-15 — Residual setelah HPP recipe popup aktif
 
-- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` dan tes UI lokal selesai; production masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`.
-- `NEEDS CONFIRMATION`: disk target 96% terpakai, monitor SagaPOS mensyaratkan <90%. Retention dry-run resmi mengidentifikasi sekitar 1,8 GB rilis nonaktif; backup/current/rollback terlindungi dan itu belum cukup. Perlu keputusan pemilik untuk rencana storage yang menjaga recovery sebelum paket/backup/rehearsal/aktivasi baru.
-- Full suite tidak hijau karena tes laporan teoretis memakai rute UI lama (sama pada source production sebelumnya) dan tes Linux memerlukan WSL distro. Recheck regresi setelah storage siap; authenticated Owner UAT tetap pending. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada production, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`; tes UI lokal, backup/restore, recovery code-only, health/DB/aset publik/monitor lulus.
+- `CONFIRMED`: blocker disk ditutup lewat retention rilis/paket nonaktif setelah arsip dan checksum; backup/current/rollback tidak dihapus, kapasitas akhir 88% di bawah gate monitor <90%.
+- `NEEDS CONFIRMATION`: full suite tidak hijau karena tes laporan teoretis memakai rute UI lama (sama pada source production sebelumnya) dan tes Linux memerlukan WSL distro. Offsite backup belum terverifikasi; authenticated Owner UAT pada alur resep/biaya masih pending. Payment dan Member eksternal OFF; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
 ## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 26
 

@@ -6,7 +6,7 @@ Source kandidat `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` mengganti editor komp
 
 Komponen existing dapat diedit/dihapus dengan konfirmasi. Satu aksi simpan menulis draft, sedangkan publish versi terpisah agar transaksi tidak memakai resep setengah jadi. Published snapshot, stok, menu tanpa HPP, schema/API, permission, dan payment authority tidak berubah. Bahan tanpa harga tidak dianggap biaya Rp0.
 
-Empat tes browser mencakup multi-bahan, biaya/margin langsung, draft/publish, Escape/input belum disimpan, ponsel dan accessibility; static check dan dependency audit produksi lulus. Full suite memiliki kegagalan lama pada laporan teoretis/rute UI lama dan runner WSL tanpa distro. Production masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`; kandidat `IMPLEMENTED_NOT_DEPLOYED` karena disk target 96% dan monitor mensyaratkan <90%. Recovery/aktivasi/Owner UAT belum dilakukan; `BUSINESS_READY=false`.
+Empat tes browser mencakup multi-bahan, biaya/margin langsung, draft/publish, Escape/input belum disimpan, ponsel dan accessibility; static check dan dependency audit produksi lulus. Full suite memiliki kegagalan lama pada laporan teoretis/rute UI lama dan runner WSL tanpa distro. Source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada domain production, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Paket immutable, backup terenkripsi/disposable restore, rehearsal code-only kandidat-rollback-kandidat, aktivasi atomik, health/34 migrasi, HTTPS/aset pop-up, anonymous inventory 401, dan monitor lulus. Retention rilis/paket nonaktif yang terarsip menurunkan disk ke 88%. Owner UAT dan offsite backup tetap belum dibuktikan; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
 ## 2026-09-15 — Form penerimaan stok sebagai pop-up, tanpa wizard
 
