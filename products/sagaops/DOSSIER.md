@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-15 — HPP sebagai resep satu pop-up
+
+Source kandidat `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` mengganti editor komponen dua tahap dan workspace yang menukar daftar menu dengan pop-up native di Owner Dashboard. Owner memilih bahan, mengisi pemakaian per porsi, menambah beberapa bahan, lalu melihat biaya per bahan, total HPP, laba dan margin kotor langsung. Satuan berasal dari Database Bahan; yield/susut tersedia sebagai opsi.
+
+Komponen existing dapat diedit/dihapus dengan konfirmasi. Satu aksi simpan menulis draft, sedangkan publish versi terpisah agar transaksi tidak memakai resep setengah jadi. Published snapshot, stok, menu tanpa HPP, schema/API, permission, dan payment authority tidak berubah. Bahan tanpa harga tidak dianggap biaya Rp0.
+
+Empat tes browser mencakup multi-bahan, biaya/margin langsung, draft/publish, Escape/input belum disimpan, ponsel dan accessibility; static check dan dependency audit produksi lulus. Full suite memiliki kegagalan lama pada laporan teoretis/rute UI lama dan runner WSL tanpa distro. Production masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`; kandidat `IMPLEMENTED_NOT_DEPLOYED` karena disk target 96% dan monitor mensyaratkan <90%. Recovery/aktivasi/Owner UAT belum dilakukan; `BUSINESS_READY=false`.
+
 ## 2026-09-15 — Form penerimaan stok sebagai pop-up, tanpa wizard
 
 Sebelum perubahan, Tambah stok masuk menukar seluruh area Gudang dengan wizard pilih bahan → jumlah/biaya → review. Source production `c7b1e31d9de58572b19932e7a622f761e3c4b009` mengubahnya menjadi dialog native satu layar di atas stok dan riwayat yang tetap terlihat pada dashboard; rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.

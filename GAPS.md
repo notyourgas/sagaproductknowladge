@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-15 — HPP recipe popup belum aktif
+
+- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` dan tes UI lokal selesai; production masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`.
+- `NEEDS CONFIRMATION`: disk target 96% terpakai, monitor SagaPOS mensyaratkan <90%. Retention dry-run resmi mengidentifikasi sekitar 1,8 GB rilis nonaktif; backup/current/rollback terlindungi dan itu belum cukup. Perlu keputusan pemilik untuk rencana storage yang menjaga recovery sebelum paket/backup/rehearsal/aktivasi baru.
+- Full suite tidak hijau karena tes laporan teoretis memakai rute UI lama (sama pada source production sebelumnya) dan tes Linux memerlukan WSL distro. Recheck regresi setelah storage siap; authenticated Owner UAT tetap pending. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-10 — SagaPOS Inventory/HPP residual setelah Wave 26
 
 - `CONFIRMED`: draft PR #21 source `bfec2bbf436fd16c6a08451663fa5627735ae8ce`, tree `0bc26d6b0e4e0d1003481f3066edfeb9835e7c1c`, menutup generic eligible-logout compatibility, terminal receipt verification, migration-prefix atomicity, monitor false-green, exact keyring errors, dan direct-DML evidence. Audit P0/P1/P2=0.

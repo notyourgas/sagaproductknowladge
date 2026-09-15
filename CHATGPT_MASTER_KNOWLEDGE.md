@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-15 — SagaPOS HPP pop-up resep belum aktif
+
+- `CONFIRMED`: Owner meminta HPP disusun sebagai resep dalam pop-up, bukan wizard. Source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` implemented/pushed: pilih bahan Database, isi takaran, tambah beberapa baris, lihat HPP/margin langsung, simpan draft, lalu publish versi terpisah.
+- Belum boleh dijanjikan sebagai fitur production: runtime masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`; kapasitas disk target 96% melanggar batas monitor <90%. Full suite tidak hijau akibat baseline/environment test; Owner UAT belum terjadi. Payment/Member OFF, `BUSINESS_READY=false`.
+
 ## 2026-09-15 — SagaPOS Gudang: penerimaan satu layar aktif di production
 
 - `CONFIRMED`: Owner Dashboard source `c7b1e31d9de58572b19932e7a622f761e3c4b009`, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.

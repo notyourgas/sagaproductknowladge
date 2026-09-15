@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-15 — SagaPOS HPP recipe popup belum production
+
+- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` menyatukan bahan, takaran, dan pratinjau HPP/margin dalam satu pop-up Owner Dashboard tanpa wizard. Simpan tetap draft; publish resep tetap terpisah.
+- Static check, empat tes browser desktop/mobile/accessibility dan dependency audit produksi lulus. Full suite memiliki kegagalan baseline/environment yang tidak terkait UI ini.
+- `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production tetap `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Disk server 96% melampaui batas monitor <90%; release/recovery/Owner UAT belum dilakukan. Produk lain tidak berubah.
+
 ## 2026-09-15 — SagaPOS Gudang: stok masuk langsung dari pop-up
 
 - `CONFIRMED`: source `c7b1e31d9de58572b19932e7a622f761e3c4b009` aktif di production, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.

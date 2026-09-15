@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-15 — Sinkronisasi kandidat pop-up resep HPP SagaPOS
+
+- `CONFIRMED`: keputusan Andreas dan source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` mengganti wizard HPP dengan pop-up resep satu layar; simpan draft dan publish versi tetap terpisah.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, decision log, gaps dan sync status. Tidak ada credential/data restricted atau perubahan pricing/payment.
+- Static check, empat tes browser dan dependency audit produksi lulus; full suite tidak hijau akibat baseline/environment test. Production tidak berubah karena disk target 96% melanggar monitor <90%. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-15 — Sinkronisasi pop-up penerimaan stok SagaPOS
 
 - `CONFIRMED`: source production `c7b1e31d9de58572b19932e7a622f761e3c4b009`, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`; keputusan Andreas mengganti wizard Gudang menjadi satu pop-up yang tetap menghitung jumlah dan biaya dengan benar.

@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-15 — SagaPOS HPP pop-up resep kandidat lokal
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source kandidat `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` pushed, production masih `c7b1e31d9de58572b19932e7a622f761e3c4b009`.
+- Synced: HPP diatur di pop-up resep tanpa wizard; bahan/takaran multi-baris dan estimasi langsung, draft/publish terpisah, published/stok/menu/payment tetap aman.
+- Evidence: static check, empat browser desktop/mobile/keyboard/accessibility, dependency audit produksi 0; full suite tidak hijau karena baseline/environment tests. Storage server 96% melebihi monitor <90%; recovery/aktivasi/Owner UAT belum dilakukan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Next: keputusan storage aman yang menjaga backup/current/rollback, lalu candidate-bound release dan Owner UAT pada domain asli.
+
 ## 2026-09-15 — SagaPOS Gudang: pop-up stok masuk
 
 - Status `accepted`; klasifikasi `CONFIRMED`; production source `c7b1e31d9de58572b19932e7a622f761e3c4b009`, rollback `c4ae7096defe64a63fdf22b1185556aad0bf9df9`.

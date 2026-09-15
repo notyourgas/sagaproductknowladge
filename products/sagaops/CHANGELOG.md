@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-15 — Kandidat edit HPP sebagai pop-up resep
+
+- Sebelum: daftar menu diganti workspace editor dan komponen memakai langkah Susun → Review sebelum simpan.
+- Setelah: Atur HPP membuka pop-up pada dashboard yang sama; bahan, takaran, multi-baris, dan estimasi HPP/margin ada dalam satu layar. Edit, hapus, pembatalan input, dan publish versi terpisah tetap tersedia.
+- `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` pushed; empat tes browser, static check, dan production dependency audit 0 lulus. Full suite tidak hijau akibat baseline/environment test.
+- `IMPLEMENTED_NOT_DEPLOYED`: runtime tetap `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Disk target 96% melanggar monitor <90%. Tanpa schema/API/stok/payment change; authenticated UAT dan `BUSINESS_READY` pending.
+
 ## 2026-09-15 — Penerimaan stok Gudang menjadi pop-up satu form
 
 - Sebelum: tombol Tambah stok masuk membuka workspace penuh dan wizard tiga tahap.
