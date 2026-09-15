@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-15 — Alur operasional Bahan → Gudang → HPP → laporan
+
+Source production `c4ae7096defe64a63fdf22b1185556aad0bf9df9`, rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`. Wizard Database Bahan menampilkan konversi kemasan dan mewajibkan operator mencocokkan isinya dengan barang nyata; mengubah angka membatalkan konfirmasi sebelumnya. HPP menu menampilkan laba dan margin kotor dari komponen tercatat, dengan peringatan bahwa biaya operasional/pembayaran belum masuk.
+
+Gudang tetap sederhana: stok saat ini, tombol penerimaan, histori, pengurangan, dan hitung stok fisik yang tertutup sampai diminta. Hasil fisik harus diisi sendiri, semua pergerakan selama hitung perlu dicatat oleh operator, dan revisi stok yang berubah menuntut hitung ulang. Penerimaan yang tersimpan tetapi respons browser hilang dicek melalui riwayat sehingga tidak dibuat ulang. Koreksi fisik menghasilkan hitungan baru yang dapat ditelusuri; histori lama tidak ditimpa. Laporan periode memakai penerimaan bersih, resep pada waktu mulai produksi untuk data baru, dan waktu pembayaran untuk fallback lama.
+
+`npm run check` serta 23 tes fokus lulus; simulasi satu hari menghasilkan pemakaian aktual 250 ml, teoretis 200 ml, waste 50 ml, dan varians 50 ml dengan nilai yang cocok. Paket immutable, backup terenkripsi/disposable restore, recovery code-only, health exact-source, PostgreSQL 34 migrasi, HTTPS dashboard 200, dan penolakan anonim 401 lulus. Full suite tidak dijalankan. Uji Owner terautentikasi dan satu hari data bisnis nyata masih pending; pembayaran OFF, offsite backup belum diverifikasi, `BUSINESS_READY=false`. Konfirmasi pergerakan pada form stock count adalah langkah manusia, bukan bukti server yang tidak dapat dilewati.
+
 ## 2026-09-15 — Gudang: penerimaan dikelompokkan per kiriman
 
 Sebelumnya satu kiriman multi-bahan muncul sebagai beberapa baris dan badge/pencarian menyebutnya beberapa penerimaan. Read model Owner sekarang memproyeksikan maksimum 20 transaksi stok masuk terbaru yang benar-benar memiliki bahan diterima; setiap transaksi memuat lokasi tujuan, nilai total, serta rincian bahan dan batch. Tampilan memakai disclosure native sehingga ringkasan singkat tetap dapat dibuka dengan keyboard. Pencarian melihat seluruh bahan dalam kiriman tetapi hasilnya dihitung sekali per transaksi.

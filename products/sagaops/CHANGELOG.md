@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-15 — Enam celah operasional Bahan/Gudang/HPP
+
+- Sebelum: isi kemasan contoh bisa diterima tanpa pemeriksaan, margin HPP mudah dibaca sebagai laba bersih, hitung stok fisik tidak terjangkau dari Gudang sederhana, dan copy varians tidak selalu sesuai boundary produksi/retur.
+- Setelah: konfirmasi kemasan harus diulang saat angka berubah; margin diberi label kotor di seluruh HPP; hitung stok fisik tersedia dalam dashboard dengan draft/revisi aman; laporan menjelaskan fallback lama dan penerimaan bersih. Respons penerimaan yang hilang direkonsiliasi dari histori.
+- `CONFIRMED`; source `c4ae7096defe64a63fdf22b1185556aad0bf9df9` aktif di production, rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`. Static check, 23 tes fokus, backup/recovery, health, PostgreSQL 34 migrasi, HTTPS 200, dan anonymous inventory 401 lulus. Full suite tidak dijalankan.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment OFF, offsite backup `UNVERIFIED`. Count movement checkbox adalah prosedur operator, bukan attestation server.
+
 ## 2026-09-15 — Riwayat penerimaan Gudang per kiriman
 
 - Sebelum: satu kiriman multi-bahan dihitung sebagai beberapa penerimaan dan histori dibatasi oleh baris ledger.

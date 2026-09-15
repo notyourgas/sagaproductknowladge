@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-15 — SagaPOS enam celah operasional Bahan/Gudang/HPP
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source production `c4ae7096defe64a63fdf22b1185556aad0bf9df9`, rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.
+- Synced: pemeriksaan kemasan, label margin kotor, stock count fisik dengan revisi aman, respons penerimaan hilang tanpa duplikasi, boundary laporan dan penerimaan bersih. Simulasi satu hari dan 23 tes fokus lulus, static check, backup/recovery, service/DB 34 migrasi, HTTPS 200, dan anonymous inventory 401 lulus. Full suite tidak dijalankan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Payment OFF, offsite backup `UNVERIFIED`. Next: Andreas menjalankan Owner UAT dengan data uji bisnis di link production.
+
 ## 2026-09-15 — SagaPOS riwayat Gudang per kiriman
 
 - Status `accepted`; classification `CONFIRMED`; source production `72db215a8b17cafbf3047f54b1f893a625b2a5ed`, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.

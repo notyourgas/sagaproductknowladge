@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-15 — SagaPOS Bahan/Gudang/HPP production: alur aman untuk diuji
+
+- `CONFIRMED`: Owner Dashboard source `c4ae7096defe64a63fdf22b1185556aad0bf9df9` aktif di production; rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.
+- Operator mengonfirmasi isi kemasan nyata saat membuat bahan; Gudang memakai saldo bersama, tombol stok masuk, riwayat, waste, dan hitung fisik yang harus diisi manual. Draft count tetap ada saat refresh, tetapi revisi stok berubah mengharuskan hitung ulang. Respons penerimaan yang hilang dapat dicocokkan dengan riwayat tanpa penerimaan kedua.
+- HPP menu menunjukkan margin kotor dari komponen tercatat, bukan laba bersih. Laporan varians menghitung penerimaan bersih dan membedakan waktu mulai produksi untuk data baru serta fallback pembayaran untuk data lama. Tes satu hari lokal dan 23 tes fokus lulus; static check/recovery/health/PostgreSQL 34 migrasi/HTTPS 200/anonymous 401 lulus. Full suite tidak dijalankan.
+- Payment OFF; authenticated Owner UAT dan data bisnis nyata pending; offsite backup belum diverifikasi. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-15 — SagaPOS Gudang: satu kiriman satu penerimaan
 
 - `CONFIRMED`: Owner Dashboard production source `72db215a8b17cafbf3047f54b1f893a625b2a5ed`, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.

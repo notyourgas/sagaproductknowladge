@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-15 — SagaPOS: enam celah operasional Bahan/Gudang/HPP
+
+- `CONFIRMED`: source `c4ae7096defe64a63fdf22b1185556aad0bf9df9` aktif di production; rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.
+- Wizard bahan mengunci konfirmasi kemasan, HPP menyebut margin kotor, Gudang membuka hitung fisik dengan revisi aman, penerimaan merespons kehilangan jawaban tanpa duplikasi, dan laporan memakai waktu konsumsi sesuai generasi data serta penerimaan bersih.
+- Static check dan 23 tes fokus lulus, termasuk simulasi satu hari; backup/recovery, exact health, PostgreSQL 34 migrasi, HTTPS 200, dan anonymous 401 lulus. Full suite belum dijalankan. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment OFF, offsite backup `UNVERIFIED`.
+
 ## 2026-09-15 — SagaPOS Gudang: riwayat per penerimaan
 
 - `CONFIRMED`: source `72db215a8b17cafbf3047f54b1f893a625b2a5ed` aktif di production, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.

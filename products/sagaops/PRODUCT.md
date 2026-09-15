@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-15 — Enam celah operasional Bahan, Gudang, dan HPP ditutup di production
+
+- `CONFIRMED`: Owner Dashboard source `c4ae7096defe64a63fdf22b1185556aad0bf9df9` aktif di production; rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.
+- Wizard bahan menuntut pemeriksaan isi kemasan sebelum lanjut; angka contoh kategori bukan bukti fisik. Seluruh tampilan HPP menyebut margin kotor, bukan laba bersih. Laporan varians membedakan waktu menu mulai dibuat dan fallback transaksi lama, serta menampilkan penerimaan bersih setelah retur.
+- Gudang sekarang membuka hitung stok fisik dari dashboard dan dari laporan. Draft hitungan tidak hilang saat refresh, tetapi versi lama ditahan setelah perubahan stok; sesi login baru tidak mewarisi draft lama. Penerimaan dengan respons terputus direkonsiliasi dari riwayat tanpa membuat stok masuk kedua.
+- Static check dan 23 pengujian fokus lulus, termasuk simulasi satu hari bahan → penerimaan → HPP → penjualan → waste → hitung penutup → laporan. Artifact/recovery, health exact-source, PostgreSQL 34 migrasi, HTTPS 200, dan anonymous inventory 401 lulus. Full suite tidak dijalankan; offsite backup belum diverifikasi.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment tetap OFF. Konfirmasi pergerakan saat stock count adalah prosedur operator, bukan audit attestation server.
+
 ## 2026-09-15 — Riwayat stok masuk per transaksi aktif di production
 
 - `CONFIRMED`: SagaPOS Owner Dashboard memakai source `72db215a8b17cafbf3047f54b1f893a625b2a5ed`; rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.

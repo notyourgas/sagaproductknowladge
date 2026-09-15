@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-15 — Sinkronisasi SagaPOS enam celah operasional
+
+- `CONFIRMED`: source production `c4ae7096defe64a63fdf22b1185556aad0bf9df9`, rollback `9643a4f7cb5103fc2659111001aa5c82562e8cbc`.
+- Alasan: wizard kemasan, margin HPP, stock count, respons penerimaan, dan batas laporan perlu konsisten untuk pengujian bisnis. Diperbarui SagaOPS Product/Dossier/Changelog, portfolio changelog, master knowledge, dan sync status; tidak ada data restricted.
+- Static check, 23 tes fokus, backup/recovery, health, DB 34 migrasi, HTTPS 200, dan anonymous 401 lulus; full suite tidak dijalankan. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment OFF, offsite backup `UNVERIFIED`.
+
 ## 2026-09-15 — Sinkronisasi SagaPOS riwayat Gudang per transaksi
 
 - `CONFIRMED`: source production `72db215a8b17cafbf3047f54b1f893a625b2a5ed`, rollback `4e0608882a4c25742b01820f118e359ce2de83a9`.
