@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-17 — SagaPOS absensi terjadwal GPS/foto
+
+- `CONFIRMED`: SagaPOS source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif di production dengan rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.
+- Karyawan kini dapat absen mobile sesuai shift dan jendela waktu memakai GPS serta foto wajah privat; Owner mengatur policy dan meninjau evidence/koreksi dari dashboard SagaPOS.
+- Schema, pricing, payment, Member, dan produk lain tidak berubah. Authenticated Owner/real-device UAT serta offsite restore masih terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — SagaPOS roster stale-conflict fix aktif
 
 - `CONFIRMED`: SagaPOS production berpindah ke exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65`, rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`.

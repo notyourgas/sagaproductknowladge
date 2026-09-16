@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 — SagaPOS absensi GPS/foto aktif
+
+- `CONFIRMED`: production source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36`, rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.
+- Portal staf SagaPOS mengizinkan absensi hanya pada shift terbit dalam jendela 60 menit sebelum mulai sampai 60 menit setelah selesai. GPS akurat dan foto kamera depan dapat diwajibkan; foto adalah evidence privat, bukan biometrik.
+- Owner mengelola waktu, radius, akurasi, koordinat outlet, kebijakan review/block, dan keputusan koreksi dari tab Absensi pada dashboard yang sama.
+- Release code-only lulus full suite 1.453 test tanpa failure, backup/restore, tiga boot recovery, activation, exact-source health, 34 migrasi dan public smoke. Authenticated Owner/real-device UAT pending; `BUSINESS_READY=false`.
+
 ## Update 2026-09-17 — SagaPOS staff inventory receiving dan multi-foto
 
 - `CONFIRMED`: exact production source `1d08a1898bace02ff770f78da6bc24b1cb400f6c`; rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.

@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-17 — Residual setelah absensi GPS/foto aktif
+
+- `CONFIRMED`: source production `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` mengaktifkan attendance shift-bound, jendela T-60/end+60, GPS/geofence, foto privat, koreksi dan review Owner tanpa migration baru.
+- `NEEDS CONFIRMATION`: authenticated Owner UAT belum membuktikan penyimpanan policy, review evidence dan approval pada data uji nyata. UAT perangkat fisik juga belum membuktikan izin GPS/kamera, akurasi indoor, jaringan lambat, absen masuk/pulang dan koreksi ujung-ke-ujung.
+- `NEEDS CONFIRMATION`: koordinat/radius outlet operasional harus ditetapkan Owner. Offsite restore belum diverifikasi dan foto wajah belum memiliki kebijakan retensi/penghapusan bisnis yang disahkan.
+- Dampak: fitur aktif dan dapat diuji, tetapi residual manusia, perangkat dan kebijakan data tersebut menahan `BUSINESS_READY=true`.
+
 ## 2026-09-17 — Residual setelah staff inventory receiving aktif
 
 - `CONFIRMED`: source production `1d08a1898bace02ff770f78da6bc24b1cb400f6c` mengaktifkan receipt staf multi-bahan/multi-foto, lifecycle koreksi, Owner review, capability granular, dan idempotent stock posting. Health ready dan anonymous-route smoke lulus.

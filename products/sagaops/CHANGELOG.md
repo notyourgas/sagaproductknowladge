@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Absensi mobile GPS/foto production
+
+- `CONFIRMED`: source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif di production; rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.
+- Added: eligibility shift dan server time, T-60/end+60, GPS/geofence, foto kamera depan privat, challenge anti-replay, receipt, koreksi lupa absen, policy Owner, review evidence, dan pesan operasional Indonesia.
+- Changed: tab Absensi Owner menampilkan ringkasan, filter, jarak/akurasi, foto privat, serta pengaturan lokasi/waktu tanpa membuka aplikasi lain.
+- Evidence: focused 4/4; static/type PASS; full 1.453 dengan 1.381 pass/0 fail/71 expected skip/1 TODO; exact artifact, encrypted backup/disposable restore, recovery rehearsal, activation, health, 34 migrasi, HTTPS dan negative auth PASS.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Live conflict refresh setelah koreksi roster
 
 - `CONFIRMED`: source `e5e291c9e25334f52bd0551045e92ac4889fcd65` aktif di production; rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`.

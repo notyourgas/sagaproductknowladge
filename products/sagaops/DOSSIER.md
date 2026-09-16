@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Attendance evidence mobile dan review Owner
+
+- `CONFIRMED`: release production `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36`, rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`, tanpa perubahan ledger 34 migrasi.
+- Flow staf: login Employee ID → lihat shift dan waktu server → ambil GPS → ambil foto kamera depan → kirim absen → terima receipt. Di luar jendela waktu, staf diarahkan mengajukan koreksi untuk keputusan Owner.
+- Flow Owner: Tim & Shift → Absensi → atur policy outlet → filter catatan → periksa waktu, GPS, jarak, akurasi dan foto privat → setujui atau tolak review/koreksi.
+- Policy disimpan atomik pada storage privat agar bertahan saat restart. Evidence terikat organisasi, outlet, staf, shift, challenge, checksum dan metadata gambar; konten tidak menjadi URL publik dan memakai `private, no-store`.
+- UAT Owner dengan credential nyata dan UAT kamera/GPS pada perangkat fisik belum dilakukan; klaim business-ready tetap ditahan.
+
 ## 2026-09-17 — Kontrak live validation setelah edit roster
 
 Source production `e5e291c9e25334f52bd0551045e92ac4889fcd65` memisahkan riwayat konflik saat Generate dari status konflik roster saat ini. Sebelumnya dashboard membaca snapshot immutable pada generation run, sehingga koreksi manual yang sudah benar dapat tetap menampilkan kartu perbaikan dan tanda seru.

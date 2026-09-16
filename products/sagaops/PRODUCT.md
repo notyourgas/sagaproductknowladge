@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — Absensi terjadwal dengan GPS dan foto wajah aktif di production
+
+- `CONFIRMED`: exact source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard) dan [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.
+- Karyawan hanya dapat absen pada shift terbit, mulai 60 menit sebelum shift sampai 60 menit setelah shift selesai. Waktu server, shift malam, absensi masuk/pulang, idempotensi, sesi singkat anti-replay, serta pengajuan lupa absen ditangani server-side.
+- Portal mobile meminta GPS akurat dan kamera depan, menampilkan jarak/akurasi serta receipt. Foto disimpan privat dan hanya dapat dilihat Owner terautentikasi; fitur ini adalah bukti foto, bukan pengenalan biometrik.
+- Owner dapat mengatur jendela waktu, radius, akurasi, koordinat outlet, aturan review/block, serta kewajiban GPS/foto dari tab Absensi. Catatan di luar area atau kurang akurat masuk antrean review bila kebijakan `REVIEW` dipilih.
+- Full suite 1.453 test: 1.381 pass, 0 fail, 71 expected skip, 1 TODO. Artifact immutable, backup/restore, tiga-boot recovery rehearsal, activation, health exact-source, 34 migrasi, HTTPS, header kamera/GPS, dan anonymous boundary lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`; offsite restore tetap `UNVERIFIED`.
+
 ## 2026-09-17 — Konflik roster langsung mengikuti koreksi Owner
 
 - `CONFIRMED`: exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`.

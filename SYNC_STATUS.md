@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 — SagaPOS absensi GPS/foto
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif di production, rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.
+- Synced: attendance terikat shift/waktu server, GPS/geofence, foto privat, koreksi, policy dan review Owner, recovery evidence, serta residual UAT/retensi data.
+- Evidence: focused 4/4; static/type PASS; full 1.453 dengan 1.381 pass/0 fail/71 expected skip/1 TODO; artifact, backup/restore, recovery rehearsal, activation, health 34 migrasi, HTTPS/header capability dan anonymous boundary PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+- Next: Owner mengisi koordinat/radius, membuat jadwal dan akun uji, lalu menjalankan absen masuk/pulang pada HP serta review dashboard.
+
 ## 2026-09-17 — SagaPOS live conflict refresh
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65` aktif di production, rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`.
