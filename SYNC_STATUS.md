@@ -6,7 +6,8 @@
 - Synced: status konflik mengikuti assignment terkini, manual validation event immutable, fallback live untuk draf legacy, dan satu validator untuk dashboard serta Publish.
 - Evidence: static 507 modul; focused 29/29; full 1.449 test dengan 1.377 pass/0 fail/71 expected skip/1 TODO; exact artifact, backup/restore, recovery rehearsal, activation, 34 migrasi, monitor, dan dashboard HTTP 200 PASS.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
-- Next: Owner refresh dashboard, membuka bulan yang dikoreksi, memastikan kartu konflik dan tanda seru hilang, lalu Publish bila tidak ada konflik baru.
+- Live read-only verification: draf September memiliki satu konflik nyata `same_shift_streak_exceeded`, band sore, streak empat, dengan titik pelanggaran 7 September; tidak ada PII yang dicatat.
+- Next: Owner membuka action konflik tersebut, mengubah satu shift dalam rangkaian sore, hard refresh, lalu memastikan kartu dan tanda seru hilang sebelum Publish.
 
 ## 2026-09-17 — SagaPOS staff inventory receiving dan multi-foto
 

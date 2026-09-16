@@ -1845,7 +1845,7 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### SagaOPS
 
-- `NEEDS CONFIRMATION` (2026-09-17): Owner melakukan hard refresh pada dashboard production, membuka periode roster yang sebelumnya dikoreksi, dan memastikan kartu konflik/tanda seru hilang tanpa Generate ulang. Exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65` sudah aktif; automated validation dan release gates lulus, tetapi authenticated human UAT ini belum dilakukan.
+- `NEEDS CONFIRMATION` (2026-09-17): live validation production pada draf September tidak lagi memakai snapshot stale, tetapi menemukan satu konflik nyata berupa empat shift sore berturut-turut dengan titik pelanggaran 7 September. Owner perlu membuka action terkait, mengubah salah satu shift pada rangkaian itu, lalu hard refresh dan memastikan indikator hilang. Exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65` aktif; automated validation dan release gates lulus, tetapi authenticated human UAT belum dilakukan.
 
 - `CONFIRMED`: exact app `40b9a6cc962602aae0ab151f5fcfd7e80852ae1d` diterima pada private official-domain staging dengan 13 migration, full380/380, integrated browser/restart, encrypted backup/disposable restore dan rollback/forward rehearsal. Guarded retention mempertahankan current/rollback/backup serta menghapus obsolete Saga POS resources saja.
 - `CONFIRMED`: source candidate v4 `227e0d66fe26b5805eb4328ada1fef7bcb8cad86` di atas integrated HRPOS/RLS base `682456535a9dc0c930910dba3c9773ab44fcc84c` menutup source-pair credential contract, HR/Staff-only staging allowlist, revocation retry serta exact-SHA/direct-child/non-symlink/canonical/root-owned recovery guard secara lokal. Kandidat belum dipromosikan ke staging.
