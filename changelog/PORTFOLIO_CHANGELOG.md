@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-17 — SagaPOS roster stale-conflict fix aktif
+
+- `CONFIRMED`: SagaPOS production berpindah ke exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65`, rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`.
+- Setelah koreksi manual, dashboard menghitung ulang konflik dari jadwal terkini dan tidak lagi mempertahankan notifikasi Generate yang sudah kedaluwarsa. Publish memakai validator yang sama.
+- Tidak ada schema, credential, payment, provider, atau produk lain yang berubah. Authenticated Owner UAT masih pending dan `BUSINESS_READY=false`.
+
 ## 2026-09-17 — SagaPOS staff inventory receiving aktif
 
 - `CONFIRMED`: SagaPOS production berpindah ke exact source `1d08a1898bace02ff770f78da6bc24b1cb400f6c`, rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.

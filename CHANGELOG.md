@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 — Sinkronisasi live conflict refresh SagaPOS
+
+- `CONFIRMED`: exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65` aktif di production; rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`.
+- Knowledge SagaOPS diperbarui untuk validasi live setelah edit roster, audit immutable hasil validasi manual, kompatibilitas snapshot legacy, evidence release, dan residual Owner UAT.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, gaps, dan sync status. Tidak ada credential, PII, identifier privat, perubahan schema, pricing, payment, provider, atau produk lain.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Sinkronisasi SagaPOS staff inventory receiving
 
 - `CONFIRMED`: exact source `1d08a1898bace02ff770f78da6bc24b1cb400f6c` aktif di production; rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.

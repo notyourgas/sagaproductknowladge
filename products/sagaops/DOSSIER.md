@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Kontrak live validation setelah edit roster
+
+Source production `e5e291c9e25334f52bd0551045e92ac4889fcd65` memisahkan riwayat konflik saat Generate dari status konflik roster saat ini. Sebelumnya dashboard membaca snapshot immutable pada generation run, sehingga koreksi manual yang sudah benar dapat tetap menampilkan kartu perbaikan dan tanda seru.
+
+Validator roster kini menjadi satu kontrak yang dipakai untuk tampilan Owner, penyimpanan manual, bulk assignment, copy pattern, dan Publish. Validator membaca assignment, libur/izin, eligibility, role coverage, min/max shift, hard conflict, serta streak shift terkini. Setelah mutasi manual, sistem menambah generation event `manual-roster-validation-v1` tanpa menulis ulang evidence lama. Untuk draf legacy, response Owner mengganti konflik yang ditampilkan dengan hasil live read-only pada periode aktif.
+
+Rilis code-only tidak mengubah schema, migration manifest, credential, payment, atau provider. Static check 507 modul, focused 29/29, dan full suite 1.449 test dengan 1.377 pass, 0 fail, 71 expected skip, serta 1 TODO lulus. Artifact immutable, encrypted backup/disposable restore, host-local recovery rehearsal, activation, exact-source health dengan 34 migrasi, monitor, dan dashboard publik lulus. Rollback menunjuk `1d08a1898bace02ff770f78da6bc24b1cb400f6c`. Authenticated Owner UAT tetap diperlukan; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Kontrak staff inventory receiving dan evidence foto
 
 Source production `1d08a1898bace02ff770f78da6bc24b1cb400f6c` menambahkan alur penerimaan stok dari portal staf mobile. Satu receipt dapat berisi beberapa bahan dan beberapa foto pada tingkat dokumen atau baris bahan. Foto dapat dipilih dari kamera atau galeri, divalidasi ukurannya, dimensinya, jenis kontennya, dan checksum-nya, lalu hanya dibaca kembali melalui route terautentikasi.

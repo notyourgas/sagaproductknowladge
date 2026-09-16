@@ -8639,6 +8639,8 @@ readiness tidak berubah.
 
 ### SagaOPS
 
+`CONFIRMED` pada 2026-09-17: exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65` aktif di production dengan rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`. Konflik roster Owner kini dihitung dari assignment terkini setelah koreksi manual; snapshot Generate lama tetap immutable tetapi tidak lagi mempertahankan kartu perbaikan atau tanda seru yang sudah tidak berlaku. Save manual mencatat validation event baru dan Publish memakai validator yang sama. Authenticated Owner UAT masih pending; `BUSINESS_READY=false`.
+
 POS dan Back Office coffeeshop: order, payment, shift, recipe/HPP, inventory
 ledger, purchase order, live dashboard, approval, dan closing. Private source
 kanonik kini memiliki API/service, operator console OWNER/STAFF, local

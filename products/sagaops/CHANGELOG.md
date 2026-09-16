@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Live conflict refresh setelah koreksi roster
+
+- `CONFIRMED`: source `e5e291c9e25334f52bd0551045e92ac4889fcd65` aktif di production; rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`.
+- Fixed: kartu perbaikan dan tanda seru roster sekarang memakai validasi assignment terkini setelah Owner mengedit jadwal, termasuk untuk snapshot konflik legacy.
+- Changed: save manual/bulk/copy mencatat hasil validasi immutable baru; Publish dan dashboard memakai validator yang sama.
+- Evidence: static 507 modul, focused 29/29, full 1.449 test dengan 1.377 pass/0 fail/71 expected skip/1 TODO; backup/restore, recovery, activation, exact health 34 migrasi, monitor, dan public dashboard PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner UAT `NEEDS CONFIRMATION`; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Staff inventory receiving dan multi-photo evidence
 
 - `CONFIRMED`: source `1d08a1898bace02ff770f78da6bc24b1cb400f6c` aktif di production; rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.

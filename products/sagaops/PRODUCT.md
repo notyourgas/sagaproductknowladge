@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — Konflik roster langsung mengikuti koreksi Owner
+
+- `CONFIRMED`: exact source `e5e291c9e25334f52bd0551045e92ac4889fcd65` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `1d08a1898bace02ff770f78da6bc24b1cb400f6c`.
+- Setelah Owner mengubah Pagi/Sore/Libur, daftar perbaikan dan ikon cakupan dihitung ulang dari assignment terkini. Konflik hasil Generate yang sudah tidak berlaku tidak lagi tertinggal di dashboard.
+- Write manual menyimpan hasil validasi baru sebagai audit immutable. Draf lama dari sebelum rilis tetap mendapat perhitungan live saat dashboard dibuka; Publish memakai validator yang sama sehingga status UI dan keputusan server konsisten.
+- Static check 507 modul, focused 29/29, dan full suite 1.449 test dengan 1.377 pass, 0 fail, 71 expected skip, serta 1 TODO lulus. Backup/restore, recovery rehearsal, activation, exact health 34 migrasi, monitor, dan dashboard HTTP 200 lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; tidak ada perubahan schema, credential, payment, atau provider.
+
 ## 2026-09-17 — Penerimaan stok oleh staf dengan multi-foto aktif di production
 
 - `CONFIRMED`: exact source `1d08a1898bace02ff770f78da6bc24b1cb400f6c` aktif pada [SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.
