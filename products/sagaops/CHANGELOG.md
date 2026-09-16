@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Roster bulanan otomatis dengan libur weekday
+
+- Sebelum: generator tidak memiliki kebijakan eksplisit satu libur mingguan dan Owner belum mendapat marker libur/izin serta filter per staf pada matriks bulanan.
+- Setelah: empat staf mendapat libur Senin–Kamis, lima staf atau lebih Senin–Jumat; akhir pekan wajib terjadwal kecuali izin disetujui, dan izin akhir pekan menggantikan libur weekday. Owner dapat melihat semua/satu staf, mengedit draf, review, lalu publish dengan guard hari kosong.
+- `CONFIRMED`: source `2d47ee3cfe4da90c1325df5923bf739d52a35598` aktif di production, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`. Focused 17/17, full 1.296 pass/0 fail/71 skip/1 TODO dari 1.368, audit 0; release/recovery/health/DB/HTTPS/auth-negative/monitor lulus.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; schema/ledger tetap 34 migrasi, offsite backup `UNVERIFIED`.
+
 ## 2026-09-16 — Recovery permanen simpan template shift
 
 - Sebelum: browser dapat menunggu tanpa batas dan berakhir `Failed to fetch`; hasil POST tidak diketahui sehingga retry manual berisiko membuat template ganda.

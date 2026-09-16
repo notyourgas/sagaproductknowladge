@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Kebijakan roster bulanan empat/lima staf
+
+Source production `2d47ee3cfe4da90c1325df5923bf739d52a35598` menambahkan generator `weekday-rotation-roster-v2` tanpa migration baru. Draf menyimpan hari libur otomatis dan pengganti izin akhir pekan pada generation run periode terkait, sehingga kalender desktop dan agenda mobile dapat menampilkan `L` untuk libur serta `I` untuk izin. State Owner kini mengambil ringkasan konflik per periode, bukan hanya generation run global terbaru.
+
+Untuk empat staf, satu hari libur mingguan didistribusikan di Senin–Kamis; untuk lima staf atau lebih, di Senin–Jumat. Izin/cuti/sakit minimal enam jam pada Sabtu/Minggu menggantikan libur weekday staf tersebut. Generator mengisi hari kerja lain, menyeimbangkan template, mempertahankan locked/manual assignment, dan tetap menolak role, overlap, unavailable, jeda, jam mingguan, serta hari berturut-turut yang melanggar. Sel kosong manual disimpan sebagai keputusan libur Owner; publish gagal tertutup bila ada hari kosong tanpa marker atau izin sah.
+
+UI menyediakan pemilih bulan, filter semua/satu staf, matriks tanggal, agenda mobile, perbaikan sel, review, dan publish. Source tidak mengubah schema atau ledger 34 migrasi. Focused 17/17, full suite 1.296 pass/0 fail/71 skip/1 TODO dari 1.368, dependency audit 0. Paket immutable, backup terenkripsi/disposable restore, boot rehearsal kandidat–current–kandidat, aktivasi atomik, service restart 0, DB lock wait 0, dashboard/staff HTTPS 200, anonymous API 401, dan monitor lulus; disk 89% setelah bounded retention. Rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.
+
+Authenticated Owner UAT untuk membuat template, generate satu bulan, mengedit, publish, dan memeriksa portal staf masih pending. Optimistic concurrency antartab masih perlu hardening dan offsite backup belum diverifikasi; karena itu `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Ketahanan penyimpanan template shift
 
 Source production `e9315a889f6d92c055076f108b2d32fa0fedf878` mengganti pemanggilan jaringan dashboard dengan client terpusat yang memiliki deadline delapan detik, normalisasi error, dan penanganan sesi kedaluwarsa. Operasi baca dapat retry sekali ketika jaringan terputus atau timeout; operasi tulis tidak pernah retry otomatis agar satu klik tidak membuat mutasi ganda.

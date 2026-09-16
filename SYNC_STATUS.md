@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS roster bulanan weekday rotation
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `2d47ee3cfe4da90c1325df5923bf739d52a35598` aktif di production, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.
+- Synced: pilih bulan, generate matriks semua/satu staf, satu libur mingguan Senin–Kamis untuk empat staf atau Senin–Jumat untuk lima staf atau lebih, izin akhir pekan sebagai pengganti libur weekday, edit/review/publish dan guard hari kosong.
+- Evidence: focused 17/17; full 1.296 pass/0 fail/71 skip/1 TODO dari 1.368; audit dependency 0; artifact, backup/restore, code-only rehearsal, activation, exact health, 34 migrasi, DB lock 0, service restart 0, HTTPS/aset 200, anonymous 401, dan monitor PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Andreas menjalankan UAT bulan nyata dan memeriksa hasil di portal staf; offsite backup `UNVERIFIED`.
+
 ## 2026-09-16 - COYABAG verified Instagram support and public checkout
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

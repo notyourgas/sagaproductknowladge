@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi roster bulanan SagaPOS
+
+- `CONFIRMED`: source `2d47ee3cfe4da90c1325df5923bf739d52a35598` aktif di production, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.
+- Knowledge SagaOPS diperbarui untuk matriks bulanan, filter staf, kebijakan libur empat/lima staf, pengganti izin akhir pekan, guard publish, evidence pengujian/recovery, dan status UAT.
+- Tidak ada credential, PII, tenant ID, pricing, payment, atau perubahan produk lain. Full suite dan release lulus; `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 - Sinkronisasi customer care dan checkout publik COYABAG
 
 - `CONFIRMED`: source `db60b17f7409d77e388edc8a82d7948499b22a80`

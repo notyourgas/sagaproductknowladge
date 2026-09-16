@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-199 — Roster SagaPOS memberi satu libur weekday per staf per minggu
+
+- Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: kebijakan generator jadwal bulanan staf SagaPOS.
+- Keputusan: empat staf mendapat satu libur terjadwal di Senin–Kamis; lima staf atau lebih dapat memakai Senin–Jumat. Sabtu/Minggu dijadwalkan masuk kecuali ada izin yang disetujui. Izin akhir pekan menggantikan, bukan menambah, libur weekday pada minggu yang sama.
+- Alasan: jadwal harus otomatis, mudah diperiksa sebagai matriks bulanan, dan menjaga coverage akhir pekan secara manusiawi.
+- Alternatif: pemilihan jadwal satu per satu atau libur akhir pekan otomatis tidak digunakan. Owner tetap boleh mengedit draf sebelum review/publish.
+- Dampak: source `2d47ee3cfe4da90c1325df5923bf739d52a35598` aktif di production tanpa migration baru; generator tetap menjaga batas role, bentrok, jeda, jam dan hari berturut-turut. Authenticated Owner UAT dan `BUSINESS_READY` tetap terpisah.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md), [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-197 — HPP SagaPOS diedit sebagai pop-up resep tanpa wizard
 
 - Tanggal: 2026-09-15. Status: `CONFIRMED`; pemberi keputusan Andreas.

@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS roster bulanan empat/lima staf aktif di production
+
+- `CONFIRMED`: source `2d47ee3cfe4da90c1325df5923bf739d52a35598`, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.
+- Owner dapat generate matriks jadwal bulanan, memfilter semua/satu staf, mengedit draf dan publish. Kebijakan memberi satu libur weekday per minggu; empat staf memakai Senin–Kamis, lima staf atau lebih Senin–Jumat, sedangkan izin akhir pekan yang disetujui menggantikan libur weekday.
+- Full suite 1.368 tanpa fail, audit dependency 0, backup/recovery, activation, health, 34 migrasi, DB lock 0, HTTPS/401, dan monitor lulus. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; produk lain tidak berubah.
+
 ## 2026-09-16 - COYABAG verified Instagram support and checkout activation
 
 - Exact source `db60b17f7409d77e388edc8a82d7948499b22a80` aktif pada immutable

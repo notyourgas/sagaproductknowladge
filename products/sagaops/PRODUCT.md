@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Generator jadwal bulanan dengan aturan libur aktif di production
+
+- `CONFIRMED`: source `2d47ee3cfe4da90c1325df5923bf739d52a35598` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.
+- Owner memilih bulan lalu membuat draf jadwal berbentuk matriks staf × tanggal, dapat melihat semua staf atau satu staf, mengubah sel sebelum review, dan baru menerbitkannya setelah pemeriksaan.
+- Setiap staf mendapat satu hari libur per minggu: untuk empat staf ditempatkan Senin–Kamis, untuk lima staf atau lebih Senin–Jumat. Sabtu/Minggu tetap dijadwalkan kecuali ada izin yang disetujui; izin akhir pekan menggantikan libur weekday pada minggu yang sama.
+- Publish menolak hari kerja kosong tanpa libur/izin sah. Generator tetap menjaga role, bentrok, jeda minimum, maksimum 48 jam/minggu, maksimum enam hari berturut-turut, locked cell, dan pembagian template shift.
+- Focused 17/17; full suite 1.368 test: 1.296 pass, 0 fail, 71 skip, 1 TODO; dependency audit 0. Artifact immutable, backup/restore, rehearsal code-only, activation, health exact-source, 34 migrasi, database tanpa lock wait, HTTPS/aset, negative auth, dan monitor lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite backup masih `UNVERIFIED`.
+
 ## 2026-09-16 — Simpan template shift pulih dari kegagalan jaringan
 
 - `CONFIRMED`: source `e9315a889f6d92c055076f108b2d32fa0fedf878` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `dda8b00382280f97856815bc715ba72d8fe1a365`.

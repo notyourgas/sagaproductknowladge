@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-16 — SagaPOS roster bulanan weekday rotation aktif
+
+- `CONFIRMED`: production source `2d47ee3cfe4da90c1325df5923bf739d52a35598`, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`, pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard).
+- Flow Owner: pilih bulan → buat draf otomatis → lihat matriks semua/satu staf → edit sel → review → publish. Empat staf mendapat satu libur mingguan Senin–Kamis; lima staf atau lebih Senin–Jumat. Sabtu/Minggu tetap masuk kecuali izin disetujui; izin akhir pekan menggantikan libur weekday.
+- Generator dan publish menjaga coverage/role, unavailable, overlap, jeda, 48 jam per minggu, enam hari berturut-turut, locked/manual cell, serta menolak hari kosong tanpa alasan sah. Tidak ada migration baru; ledger tetap 34.
+- Full suite 1.296 pass/0 fail/71 skip/1 TODO dari 1.368 dan release gate production lulus. Owner UAT dan offsite backup masih terbuka; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS template shift tahan timeout dan respons hilang
 
 - `CONFIRMED`: source `e9315a889f6d92c055076f108b2d32fa0fedf878` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard), rollback `dda8b00382280f97856815bc715ba72d8fe1a365`.
