@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — SagaPOS HR roster manusiawi aktif di production
+
+- `CONFIRMED`: exact source `dda8b00382280f97856815bc715ba72d8fe1a365` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `a741cd091af08a6e01aa403a74146704fafd4bc9`.
+- Owner mengelola Tim, template shift, availability, kalender/agenda jadwal, generate roster, review, publish, absensi, dan permohonan dari dashboard yang sama. Generator menjaga role, cuti/tidak tersedia, bentrok, jeda minimum, jam mingguan, hari berturut-turut, locked cell, serta mengurangi jumping shift; tukar shift memvalidasi ulang kedua penerima.
+- Schema roster V2 bersifat aditif dan ledger utama tetap 34. Full suite 1.359 test: 1.287 pass, 0 fail, 71 skip, 1 TODO; acceptance V2 8/8, integrated HR 20/20, static/type check, mobile 390 px, immutable artifact, backup/restore, dua recovery rehearsal, HTTPS, negative auth, serta exact-source health lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Residual prototype: UI belum selalu mengirim expected version antartab dan ringkasan konflik generator belum dipersempit per periode; payment/Member tetap OFF.
+
+
 ## 2026-09-15 — Pop-up resep HPP aktif pada domain asli
 
 - `CONFIRMED`: production source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f`, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`; Owner mengedit resep dalam satu pop-up pada daftar HPP menu.

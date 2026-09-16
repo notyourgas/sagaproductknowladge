@@ -1,5 +1,14 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — HR roster terintegrasi di Owner Dashboard SagaPOS
+
+Source production `dda8b00382280f97856815bc715ba72d8fe1a365` menempatkan Tim, template shift, availability, jadwal, absensi, dan permohonan pada satu visual SagaPOS. Template menyimpan jam, istirahat, toleransi telat, warna semantik, band shift, dan kebutuhan role. Jadwal tampil sebagai kalender desktop dan agenda mingguan mobile; Owner dapat mengisi manual, bulk, menyalin pola, mengunci sel, meminta generator, memeriksa konflik, lalu publish.
+
+Generator hanya membuat draft dan mempertahankan locked cell. Penempatan ditolak bila role tidak cocok, akun suspended, ada overlap, cuti/izin/sakit, availability unavailable, jeda kurang, jam mingguan berlebih, atau hari kerja berturut-turut melampaui aturan. Tukar shift memeriksa ulang kedua penerima serta memperbarui jadwal published dan roster secara atomik. Rules dan assignment tidak dapat berubah setelah masuk Review tanpa kembali ke Draft.
+
+Rilis memakai migration roster V2 aditif dengan enam tabel baru, tenant FK, Owner RLS, audit log, dan single-writer guard pada jadwal. Compatibility release `a741cd091af08a6e01aa403a74146704fafd4bc9` dipasang lebih dulu agar rollback tetap dapat menulis jadwal sesudah migration. Full suite 1.359 test menghasilkan 1.287 pass, 0 fail, 71 skip, 1 TODO; acceptance V2 8/8 dan integrated HR 20/20 lulus. Immutable package, encrypted backup/disposable restore, compatibility dan final recovery rehearsal, activation, service/health exact SHA, database ledger, HTTPS, aset UI, serta 401 anonim lulus. Owner UAT belum dilakukan; concurrent-tab versioning dan conflict summary per periode masih perlu hardening sebelum `BUSINESS_READY`.
+
+
 ## 2026-09-15 — HPP sebagai resep satu pop-up
 
 Source kandidat `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` mengganti editor komponen dua tahap dan workspace yang menukar daftar menu dengan pop-up native di Owner Dashboard. Owner memilih bahan, mengisi pemakaian per porsi, menambah beberapa bahan, lalu melihat biaya per bahan, total HPP, laba dan margin kotor langsung. Satuan berasal dari Database Bahan; yield/susut tersedia sebagai opsi.

@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-16 — SagaPOS HR roster prototype hardening
+
+- `CONFIRMED`: production HR roster aktif dan dapat diuji, tetapi dua tab Owner masih dapat memakai last-write-wins karena UI belum selalu mengirim `expectedVersion`.
+- `CONFIRMED`: ringkasan konflik pada state Owner masih mengambil generation run terbaru global dan perlu dipersempit ke periode roster aktif.
+- Dampak: tidak memblokir prototype/UAT Andreas, tetapi menahan klaim `BUSINESS_READY=true`. Next: uji alur Owner nyata, lalu tambahkan optimistic concurrency wajib dan konflik per periode sebelum hardening akhir.
+
+
 ## 2026-09-15 — Residual setelah HPP recipe popup aktif
 
 - `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada production, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`; tes UI lokal, backup/restore, recovery code-only, health/DB/aset publik/monitor lulus.
