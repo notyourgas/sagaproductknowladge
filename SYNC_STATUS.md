@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 - COYABAG checkout identitas dan tujuan netral
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `f60267263e1249098205c9928f0ac0590b9315b7`, release
+  `20260916-f602672`, rollback `20260916-f6bfdbf`.
+- Synced: seluruh field identitas dan tujuan kosong saat form pertama dibuka,
+  placeholder publik netral, serta payload hanya dari pilihan/input pelanggan.
+- Evidence: storefront 336/336; Laravel 694 pass + satu expected skip dengan
+  6.495 assertion; browser production desktop/mobile; backup/restore 79/79;
+  checksum, provider, inventory, worker/scheduler, readiness 45/45, dan public
+  smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS /
+  BUSINESS_READY=false`. Next: sahkan seller identity/legal-tax dan batas
+  shipping final; autofill yang disimpan pengguna tetap dikelola browser.
+
 ## 2026-09-16 — SagaPOS maksimal satu libur terjadwal per hari
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` aktif di production, rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.

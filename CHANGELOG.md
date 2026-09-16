@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 - Sinkronisasi checkout netral COYABAG
+
+- `CONFIRMED`: exact source `f60267263e1249098205c9928f0ac0590b9315b7`
+  aktif pada release `20260916-f602672`; rollback `20260916-f6bfdbf`.
+- Knowledge COYABAG diperbarui untuk form identitas dan tujuan yang selalu
+  dimulai kosong, placeholder netral, serta payload yang hanya memakai pilihan
+  atau input pelanggan.
+- Tidak ada credential, PII, reference pembayaran, migrasi, order/payment baru,
+  atau mutasi inventory. Readiness 45/45 dan checkout publik tetap aktif;
+  `BUSINESS_READY=false` karena residual legal seller dan shipping final.
+
 ## 2026-09-16 — Sinkronisasi batas satu libur harian SagaPOS
 
 - `CONFIRMED`: exact source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` aktif di production; rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.

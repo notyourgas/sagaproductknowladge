@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-16 - COYABAG neutral checkout customer data
+
+- `CONFIRMED`: source `f60267263e1249098205c9928f0ac0590b9315b7`
+  aktif pada release `20260916-f602672`; rollback `20260916-f6bfdbf` tersedia.
+- Form checkout tidak lagi membawa identitas operator atau lokasi bawaan.
+  Seluruh data identitas dan tujuan dimulai kosong dengan placeholder netral,
+  lalu payload order hanya memakai pilihan atau input pelanggan.
+- Full release gate, browser production desktop/mobile, backup/restore 79/79,
+  provider, inventory, worker/scheduler, readiness 45/45, dan public smoke
+  lulus. Tidak ada migrasi atau mutasi commerce. Status
+  `READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS membatasi satu libur terjadwal per hari
 
 - `CONFIRMED`: SagaPOS production berpindah ke exact source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83`, rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.

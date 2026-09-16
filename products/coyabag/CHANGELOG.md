@@ -1,5 +1,20 @@
 # COYABAG Changelog
 
+## 2026-09-16 - Neutral blank checkout customer data deployed
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `f60267263e1249098205c9928f0ac0590b9315b7` aktif pada immutable release
+  `20260916-f602672`; rollback `20260916-f6bfdbf` tersedia.
+- Nama, nomor WhatsApp, email, tujuan, provinsi, kecamatan, alamat, dan kode pos
+  tidak lagi diisi aplikasi. Form memakai placeholder netral dan order hanya
+  menerima tujuan yang dipilih serta nilai yang diketik pelanggan.
+- Storefront 336/336; Laravel 694 pass + satu expected skip dengan 6.495
+  assertion; browser production desktop/mobile, accessibility, responsive,
+  payment, delivery, backup/restore 79/79, checksum, inventory integrity,
+  provider, worker/scheduler, readiness 45/45, dan public smoke lulus. Tidak ada
+  migrasi, order/payment baru, atau mutasi stok. Status tetap
+  `READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-16 - Inline QRIS and payment countdown deployed
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

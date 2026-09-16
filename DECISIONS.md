@@ -1,5 +1,24 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-203 - Checkout COYABAG tidak membawa identitas atau lokasi bawaan
+
+- Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: sumber data pelanggan pada form checkout publik COYABAG.
+- Keputusan: nama, nomor WhatsApp, email, tujuan, provinsi, kecamatan, alamat,
+  dan kode pos harus dimulai kosong. UI hanya memberi placeholder netral; order
+  menerima data dari pilihan tujuan atau input pelanggan.
+- Alasan: identitas operator dan lokasi contoh tidak boleh tampak sebagai data
+  pelanggan, terbawa ke draft, atau masuk ke payload order.
+- Alternatif: prefill identitas owner, kota umum, atau alamat contoh tidak
+  dipakai. Autofill yang secara eksplisit disimpan pengguna tetap merupakan
+  fitur browser dan bukan default aplikasi.
+- Dampak: source `f60267263e1249098205c9928f0ac0590b9315b7` aktif pada release
+  `20260916-f602672` tanpa migrasi atau perubahan payment, order state, dan stok;
+  rollback `20260916-f6bfdbf` tersedia.
+- Terkait: [COYABAG](products/coyabag/PRODUCT.md),
+  [changelog](products/coyabag/CHANGELOG.md), dan
+  [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-202 — Maksimal satu libur terjadwal per tanggal pada SagaPOS
 
 - Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.

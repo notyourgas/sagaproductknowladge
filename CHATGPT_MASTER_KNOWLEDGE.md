@@ -7629,8 +7629,10 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
 final belum ditutup.
 
 Snapshot operasional 16 September 2026: exact source
-`66545d3de0be93783ccab0d8f0e9cd545d0446d9` aktif pada immutable release
-`20260916-66545d3`; rollback `20260916-1e22eb4`. QRIS SagaDev tervalidasi
+`f60267263e1249098205c9928f0ac0590b9315b7` aktif pada immutable release
+`20260916-f602672`; rollback `20260916-f6bfdbf`. Form checkout identitas dan
+tujuan dimulai kosong dengan placeholder netral; payload order hanya memakai
+pilihan tujuan dan nilai yang diketik pelanggan. QRIS SagaDev tervalidasi
 ditampilkan langsung pada checkout/status pesanan dengan countdown dan fallback
 ukuran penuh; status lunas tetap hanya berasal dari konfirmasi provider ke
 server. Admin tetap dapat mengganti foto produk/varian tanpa mengubah penempatan
