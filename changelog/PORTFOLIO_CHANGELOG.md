@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-16 - COYABAG verified Instagram support and checkout activation
+
+- Exact source `db60b17f7409d77e388edc8a82d7948499b22a80` aktif pada immutable
+  release `20260916-db60b17`; rollback `20260910-0a53810` tersedia.
+- DM Instagram `@coyabag` menjadi customer care resmi pada hari kerja
+  09.00-17.00 WIB. Storefront menampilkan ekspektasi balasan pada jam kerja dan
+  membuka aksi checkout/cart setelah support trust gate terverifikasi.
+- Readiness 45/45, UAT 15/15, sign-off 3/3, payment health, policy API,
+  desktop/mobile browser, worker/scheduler, backup, security, dan build lulus.
+  Tidak ada order/payment/inventory mutation saat smoke. Status
+  `PRODUCTION_ACTIVATED / READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS template shift tahan kegagalan jaringan
 
 - `CONFIRMED`: source `e9315a889f6d92c055076f108b2d32fa0fedf878` aktif di production, rollback `dda8b00382280f97856815bc715ba72d8fe1a365`.

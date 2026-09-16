@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 - Sinkronisasi customer care dan checkout publik COYABAG
+
+- `CONFIRMED`: source `db60b17f7409d77e388edc8a82d7948499b22a80`
+  aktif pada release `20260916-db60b17`; rollback `20260910-0a53810`.
+- Knowledge COYABAG kini mencatat DM Instagram `@coyabag`, jam layanan hari
+  kerja 09.00-17.00 WIB, respons pada jam kerja, readiness 45/45, UAT 15/15,
+  sign-off 3/3, dan public checkout aktif.
+- Tidak ada credential, PII, migrasi, order/payment baru, atau mutasi stok.
+  `READY_FOR_PUBLIC_ORDERS` tidak disamakan dengan `BUSINESS_READY`; residual
+  seller identity/legal-tax dan batas shipping final tetap terbuka.
+
 ## 2026-09-16 — Sinkronisasi recovery simpan template shift SagaPOS
 
 - `CONFIRMED`: source production `e9315a889f6d92c055076f108b2d32fa0fedf878`, rollback `dda8b00382280f97856815bc715ba72d8fe1a365`; request dashboard kini memiliki deadline dan recovery aman tanpa retry otomatis untuk POST.

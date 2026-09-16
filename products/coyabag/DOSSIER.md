@@ -1,5 +1,29 @@
 # COYABAG Dossier
 
+## 2026-09-16 - Verified Instagram customer care and public checkout
+
+`CONFIRMED`: exact source `db60b17f7409d77e388edc8a82d7948499b22a80`
+aktif pada immutable release `20260916-db60b17`; rollback langsung
+`20260910-0a53810` memakai source
+`0a538105203dd01f73446070cff732e043e0cb00`. Customer care resmi adalah DM
+Instagram `@coyabag`, beroperasi pada hari kerja 09.00-17.00 WIB, dengan
+ekspektasi bahwa DM dibalas pada jam kerja.
+
+Public config menerbitkan kanal, jam, dan ekspektasi respons hanya setelah
+status support verified. Frontend memvalidasi host Instagram resmi dan memakai
+kanal itu pada footer, checkout, serta status pesanan. Readiness exact release
+`45/45`, Launch UAT `15/15`, sign-off `3/3`, payment provider verified, policy
+endpoint 200, worker/scheduler aktif, dan browser desktop/mobile membuktikan
+`Beli Sekarang` serta `Tambah ke Keranjang` aktif tanpa membuat order saat
+smoke.
+
+Tidak ada migrasi, perubahan credential/provider selection, atau mutasi
+payment/inventory saat deploy. Backup fresh dan rollback settings tersedia;
+agregat sebelum/sesudah tetap 11 produk, 34 varian, stok total 329, dan 14
+order. Status: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`; seller identity/legal-tax dan
+batas shipping final tetap residual bisnis.
+
 ## 2026-09-09 - UI integration production release
 
 `CONFIRMED`: exact source `951e294a6cfc50b45c5311fc2d91f613843acc32`
@@ -58,10 +82,10 @@ content COYABAG tanpa menyamakan surface live dengan commerce aktif.
 
 ## Konteks dan status bukti
 
-- Updated: 9 September 2026
+- Updated: 16 September 2026
 - Delivery: `PRODUCTION_DEPLOYED`
-- Activation: `PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT`
-- Business readiness: `BUSINESS_READY=false`; checkout publik fail-closed
+- Activation: `PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`
+- Business readiness: `BUSINESS_READY=false`; residual legal dan shipping masih terbuka
 
 ## Overview produk
 

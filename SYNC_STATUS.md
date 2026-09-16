@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 - COYABAG verified Instagram support and public checkout
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `db60b17f7409d77e388edc8a82d7948499b22a80`, release
+  `20260916-db60b17`, rollback `20260910-0a53810`.
+- Synced: customer care DM Instagram `@coyabag`, hari kerja 09.00-17.00 WIB,
+  ekspektasi balasan pada jam kerja, readiness 45/45, UAT/sign-off lengkap, dan
+  checkout publik aktif melalui gateway dengan shipping manual.
+- Evidence: storefront 334/334, Laravel 680 pass + satu expected skip, 6.451
+  assertion, build/audit/security/backup/checksum, provider health, policy API,
+  worker/scheduler, dan browser desktop/mobile lulus. Tidak ada mutasi transaksi
+  atau stok saat smoke.
+- Delivery `SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`. Next:
+  sahkan seller identity/legal-tax dan batas layanan shipping final.
+
 ## 2026-09-16 — SagaPOS recovery simpan template shift
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source `e9315a889f6d92c055076f108b2d32fa0fedf878` pushed dan aktif di production, rollback `dda8b00382280f97856815bc715ba72d8fe1a365`.

@@ -2605,6 +2605,20 @@ keputusan pengganti.
 | Status | `CONFIRMED / PRODUCTION_DEPLOYED / NOT_PRODUCTION_ACTIVATED`; exact source `2dad82c3e1cb41db2149915eb1977512e5fc6069`, release `20260827-2dad82c` |
 | Dokumen terkait | [COYABAG Product](products/coyabag/PRODUCT.md), [COYABAG Dossier](products/coyabag/DOSSIER.md), [COYABAG Changelog](products/coyabag/CHANGELOG.md) |
 
+## DEC-198 - Customer care COYABAG memakai DM Instagram pada jam kerja
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-09-16 |
+| Topik | Kanal bantuan dan jam layanan publik COYABAG |
+| Keputusan | Tetapkan DM Instagram akun resmi `@coyabag` sebagai kanal customer care. Jam layanan adalah hari kerja 09.00-17.00 WIB dan ekspektasi publik adalah DM dibalas pada jam kerja. |
+| Alasan | Customer memerlukan satu kanal bantuan resmi dan batas waktu layanan yang jujur sebelum checkout publik dibuka. |
+| Alternatif yang dipertimbangkan | Email atau WhatsApp sebagai kanal utama; layanan tanpa jam; SLA maksimum yang belum disepakati. |
+| Dampak | Storefront memvalidasi host Instagram resmi, menampilkan kanal/jam/ekspektasi di footer dan flow bantuan, serta membuka support trust gate. Tidak ada credential/provider selection, payment, shipping, order, atau inventory mutation dari keputusan ini. |
+| Pemberi keputusan | Andreas / founder |
+| Status | `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`; source `db60b17f7409d77e388edc8a82d7948499b22a80`, release `20260916-db60b17` |
+| Dokumen terkait | [COYABAG Product](products/coyabag/PRODUCT.md), [COYABAG Dossier](products/coyabag/DOSSIER.md), [COYABAG Changelog](products/coyabag/CHANGELOG.md), [Gaps](GAPS.md) |
+
 ## DEC-113 - WhatsApp operasional SagaBook disuspensi selama transisi provider
 
 | Field | Isi |

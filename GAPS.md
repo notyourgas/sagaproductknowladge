@@ -649,7 +649,7 @@ GAP-004, bukan gap implementasi warna komponen.
 | ID | Produk/area | Label | Pertanyaan atau gap | Bukti penutup |
 |---|---|---|---|---|
 | GAP-004 | SagaBook | NEEDS CONFIRMATION | Business readiness belum dibuktikan pada cohort studio nyata. | Minimal cohort onboarding, booking nyata, support observation, dan incident review. |
-| GAP-005 | COYABAG | NEEDS CONFIRMATION | Release UI `20260909-951e294` sudah production deployed dengan provider/storage/worker/scheduler/monitor sehat dan readiness 43/45. Checkout fail-closed karena UAT serta release sign-off harus diulang untuk exact release; status 45/45 pada 8 September adalah bukti historis. | Sole owner menyelesaikan checklist UAT 15 langkah lalu menyetujui sign-off operations, security, dan UAT. Tidak diperlukan owner kedua. |
+| GAP-005 | COYABAG | CLOSED | Exact release `20260916-db60b17` lulus readiness 45/45, UAT 15/15, sign-off 3/3, provider health, dan browser desktop/mobile. Checkout publik aktif dengan sole-owner governance. | Ditutup oleh source `db60b17f7409d77e388edc8a82d7948499b22a80`; residual seller identity/legal-tax dan batas shipping final tetap dicatat pada product knowledge, bukan blocker release UAT. |
 | GAP-006 | Semua produk berbayar | NEEDS CONFIRMATION | Kebijakan pajak, invoice, refund, dunning, grace, dan SLA komersial lintas produk belum disatukan. | Policy founder/legal yang disetujui per produk. |
 | GAP-007 | Semua produk | NEEDS CONFIRMATION | COYABAG sudah memiliki retention report-only dan policy publik yang disetujui versi `2026.08-v1`; produk lain masih membutuhkan policy, deletion SLA, incident contact, dan subprocessor list masing-masing. | Policy per produk, owner, tanggal berlaku, approval, dan bukti publikasi. |
 | GAP-008 | SagaTech | NEEDS CONFIRMATION | V23 aktif di branded domain, tetapi business readiness belum tercapai karena seller of record, exact BOM/condition/warranty, renewal software/DNP, Linktree/PDF lama, persistensi analytics, UAT perangkat nyata, dan repository source kanonik belum ditutup. | Quotation final terverifikasi, Linktree owner UAT, dashboard/network evidence analytics, iPhone/Android dan booth UAT, serta Git remote/source push SagaTech. |
@@ -1498,13 +1498,14 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
-- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT /
-  BUSINESS_READY=false`: exact source
-  `951e294a6cfc50b45c5311fc2d91f613843acc32`, release
-  `20260909-951e294`, rollback `20260909-01fddb3`. Gate teknis, recovery,
-  responsive/accessibility, provider/storage, worker/scheduler, monitor, dan
-  smoke lulus. Readiness 43/45; sole owner perlu menutup `launch_uat` dan
-  `release_signoff` sebelum checkout publik kembali aktif.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`: exact source
+  `db60b17f7409d77e388edc8a82d7948499b22a80`, release
+  `20260916-db60b17`, rollback `20260910-0a53810`. Readiness 45/45, UAT 15/15,
+  sign-off 3/3, provider, worker/scheduler, policy API, dan browser
+  desktop/mobile lulus. Customer care resmi adalah DM Instagram `@coyabag`
+  pada hari kerja 09.00-17.00 WIB. Residual bisnis: seller identity/legal-tax
+  dan batas shipping final.
 
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
   BUSINESS_READY=false`: exact pushed source

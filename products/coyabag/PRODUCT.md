@@ -1,7 +1,7 @@
 # COYABAG Product Knowledge
 
-Updated: 10 September 2026
-Evidence status: production deployed + release-specific activation pending
+Updated: 16 September 2026
+Evidence status: production deployed + production activated + public orders open
 
 ## Tujuan dokumen
 
@@ -11,11 +11,11 @@ berada di [GAPS](../../GAPS.md#coyabag).
 
 ## Konteks
 
-Storefront, API, dan admin live. Release UI 9 September 2026 sudah aktif, tetapi
-checkout publik fail-closed sampai checklist UAT dan release sign-off untuk
-exact release ini diselesaikan owner. Pengiriman tetap memakai tarif manual
-dengan cakupan yang ditampilkan saat checkout; status ini bukan klaim coverage
-nasional atau Delivery API otomatis.
+Storefront, API, admin, dan checkout publik live. Release 16 September 2026
+menetapkan DM Instagram `@coyabag` sebagai customer care resmi dengan jam
+layanan hari kerja 09.00-17.00 WIB dan ekspektasi balasan pada jam kerja.
+Pengiriman tetap memakai tarif manual dengan cakupan yang ditampilkan saat
+checkout; status ini bukan klaim coverage nasional atau Delivery API otomatis.
 
 ## Ringkasan
 
@@ -54,8 +54,9 @@ payment, bukti, atau status pesanan sudah berubah. Exact source
 - API: `https://api.coyabag.com`
 - Admin: `https://admin.coyabag.com`
 
-Semua surface live. Transaksi commerce publik pada release terbaru masih
-ditahan readiness gate sampai UAT dan sign-off release selesai.
+Semua surface live. Checkout publik aktif melalui SagaDev Managed Gateway dan
+shipping manual; health/readiness tetap fail-closed bila provider atau gate
+produksi turun.
 
 ## Fitur storefront
 
@@ -91,26 +92,27 @@ ditahan readiness gate sampai UAT dan sign-off release selesai.
 
 ## Status saat ini
 
-Delivery: `PRODUCTION_DEPLOYED`. Activation:
-`PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT`. Business readiness:
-`BUSINESS_READY=false`; public checkout fail-closed.
+Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED /
+COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
+`BUSINESS_READY=false` karena residual bisnis di bawah masih terbuka.
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Runtime aktif memakai exact source
-  `5ed4dc903a7ae7b8265fa8f6b1d97d7c247786aa` pada immutable release
-  `20260909-5ed4dc9`; rollback langsung `20260909-de6df58` memakai source
-  `de6df5823f1144b9a1935b8c2b7ff9fc79474454`. Source remote cocok dan tidak ada
-  migrasi, aktivasi provider, perubahan credential, order, payment, atau mutasi
-  inventory saat deploy.
-- Full release gate lulus: storefront 329/329, Laravel 678 total dengan 677 pass
-  dan satu expected skip (6.423 assertions), dependency audit nol, backup dan
-  disposable restore, worker/scheduler, payment/storage probe, monitor, public
-  smoke, 151 kombinasi responsif, accessibility route matrix, serta public
-  browser tanpa HTTP/page error, overflow, atau broken image.
-- Readiness saat ini `43/45` (96%). Dua blocker tunggal adalah `launch_uat` dan
-  `release_signoff`; checkout mengembalikan `PRODUCTION_READINESS_BLOCKED`.
-  Sole owner perlu menyelesaikan checklist 15 langkah lalu menyetujui sign-off
-  operations, security, dan UAT. Tidak diperlukan akun owner kedua.
+  `db60b17f7409d77e388edc8a82d7948499b22a80` pada immutable release
+  `20260916-db60b17`; rollback langsung `20260910-0a53810` memakai source
+  `0a538105203dd01f73446070cff732e043e0cb00`.
+- Kanal customer care resmi adalah DM Instagram `@coyabag`. Jam layanan adalah
+  hari kerja 09.00-17.00 WIB; ekspektasi publiknya adalah DM dibalas pada jam
+  kerja. Storefront tidak menjanjikan SLA maksimum yang belum disetujui.
+- Readiness exact release `45/45`, Launch UAT `15/15`, dan sign-off operations,
+  security, serta UAT `3/3`. SagaDev Managed Gateway berstatus verified, dua
+  worker dan scheduler aktif, seluruh policy endpoint 200, dan browser
+  desktop/mobile lulus tanpa overflow atau error.
+- Storefront 334/334; Laravel 680 pass, satu expected skip, dan 6.451 assertion;
+  build storefront/admin, contract/routes/security, dependency audit, backup,
+  checksum, serta public smoke lulus. Tidak ada migrasi, perubahan credential
+  atau provider selection, order/payment baru, maupun mutasi inventory saat
+  release. Agregat tetap 11 produk, 34 varian, stok total 329, dan 14 order.
 - Storefront memulihkan komposisi editorial campaign yang diterima sebelumnya
   tanpa memutus media CMS, katalog, varian, stok, atau publish dari dashboard.
   Motion tetap tersedia dengan reduced-motion; consent pertama kini modal

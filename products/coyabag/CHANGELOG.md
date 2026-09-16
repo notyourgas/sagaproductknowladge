@@ -132,6 +132,25 @@
 
 Mencatat perubahan material COYABAG dengan provenance public-safe.
 
+## 2026-09-16 - Verified Instagram support and public checkout deployed
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`: exact source
+  `db60b17f7409d77e388edc8a82d7948499b22a80` aktif pada immutable release
+  `20260916-db60b17`; rollback `20260910-0a53810` memakai source
+  `0a538105203dd01f73446070cff732e043e0cb00`.
+- Customer care resmi adalah DM Instagram `@coyabag`, hari kerja
+  09.00-17.00 WIB, dengan ekspektasi DM dibalas pada jam kerja. Storefront
+  menerbitkan kanal ini hanya setelah verified dan memvalidasi host Instagram.
+- Readiness `45/45`, UAT `15/15`, sign-off `3/3`, payment provider verified,
+  policy endpoint 200, dua worker/scheduler, serta browser desktop/mobile untuk
+  support, checkout, cart, font, dan overflow lulus.
+- Storefront 334/334; Laravel 680 pass, satu expected skip, 6.451 assertion;
+  build, contract, routes, security, dependency audit, backup, checksum, dan
+  public smoke lulus. Tidak ada migrasi, order/payment baru, perubahan provider
+  atau credential, maupun mutasi inventory. `BUSINESS_READY=false` tetap karena
+  seller identity/legal-tax dan batas shipping final belum ditutup.
+
 ## 2026-08-31 - Settings operator navigator deployed
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /

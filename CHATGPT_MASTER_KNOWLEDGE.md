@@ -7561,25 +7561,25 @@ pernah dilaporkan. Pricing final belum dikunci.
 Ecommerce tas streetwear dengan storefront React/Vite dan backend
 Laravel/Inertia. Storefront, API, dan admin live. Payment gateway terhubung;
 pengiriman memakai tarif manual sesuai wilayah yang ditampilkan saat checkout
-dan bukan klaim coverage nasional. Checkout release terbaru masih fail-closed
-sampai UAT dan sign-off release-specific selesai.
+dan bukan klaim coverage nasional. Customer care resmi adalah DM Instagram
+`@coyabag` pada hari kerja 09.00-17.00 WIB; ekspektasi publiknya adalah DM
+dibalas pada jam kerja.
 
-Delivery: `PRODUCTION_DEPLOYED`. Activation:
-`PRODUCTION_ACTIVATION_PENDING_RELEASE_UAT`. Business readiness:
-`BUSINESS_READY=false`.
+Delivery: `PRODUCTION_DEPLOYED`. Activation: `PRODUCTION_ACTIVATED /
+COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
+`BUSINESS_READY=false` karena seller identity/legal-tax dan batas shipping
+final belum ditutup.
 
-Snapshot 10 September 2026: exact source
-`5ed4dc903a7ae7b8265fa8f6b1d97d7c247786aa` aktif pada immutable release
-`20260909-5ed4dc9`; rollback `20260909-de6df58` memakai source
-`de6df5823f1144b9a1935b8c2b7ff9fc79474454`. Plus Jakarta Sans variable
-self-hosted aktif pada seluruh UI/body storefront dan admin; Instrument Serif
-tetap dipakai untuk display editorial. Media CMS, katalog, varian, stok,
-publishing, motion dan reduced-motion tetap terhubung. Full
-release/recovery/security/browser gate lulus, provider dan storage sehat,
-worker/scheduler/monitor aktif, serta tidak ada migrasi, aktivasi provider,
-atau mutasi order/payment/inventory saat deploy. Readiness `43/45`; sole owner
-perlu menyelesaikan UAT 15 langkah dan sign-off operations/security/UAT. Tidak
-diperlukan owner kedua.
+Snapshot 16 September 2026: exact source
+`db60b17f7409d77e388edc8a82d7948499b22a80` aktif pada immutable release
+`20260916-db60b17`; rollback `20260910-0a53810` memakai source
+`0a538105203dd01f73446070cff732e043e0cb00`. Public support trust gate
+memvalidasi Instagram resmi dan menerbitkan kanal/jam/ekspektasi respons dari
+dashboard. Readiness `45/45`, UAT `15/15`, sign-off `3/3`, provider health,
+policy API, worker/scheduler, backup, serta browser desktop/mobile lulus. Tidak
+ada migrasi, perubahan credential/provider selection, order/payment baru, atau
+mutasi inventory saat deploy. Plus Jakarta Sans tetap aktif pada UI/body dan
+Instrument Serif pada display editorial.
 
 Snapshot historis 8 September 2026: sole active owner dengan 2FA mengotorisasi
 aktivasi tanpa akun owner kedua. Exact source
