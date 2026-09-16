@@ -1,10 +1,10 @@
 # Saga Product Knowledge Changelog
 
-## 2026-09-16 — Sinkronisasi kandidat SagaPOS kejelasan HPP draft/published
+## 2026-09-16 — Sinkronisasi production SagaPOS HPP menu inactive
 
-- `CONFIRMED`: source `c62446a98f8b1d94e7059174d64949e64794e17f` (tree `a27df6793bf45c1161f34919bc03d3b057b1ac06`) pada [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) menjelaskan histori published dan alasan HPP aktif kosong, lalu menolak publish baru menu nonaktif.
-- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, dan sync status. Penyebab record production Cafe Latte masih `NEEDS CONFIRMATION`; tidak ada credential, data restricted, atau mutasi production.
-- Validasi terbaru: check, 9/9 tes HPP backend/server, 1/1 browser HPP, 1/1 browser UI/UX dashboard, audit dependency produksi 0 kerentanan, dan diff check lulus. CI Quality sebelumnya belum berjalan akibat billing. Delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`) aktif di production; rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Menu inactive dapat draft/publish HPP tanpa menjadi sellable, dan coverage readiness hanya menilai menu active.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, gaps, dan sync status. Tidak ada credential atau data restricted.
+- Code-only deploy, health ready/production, 34 migrasi tanpa perubahan schema, dashboard 200, dan aset exact lulus. Payment/gateway OFF; Quality `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing. Authenticated Cafe Latte UAT pending; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
 ## 2026-09-15 — Aktivasi production pop-up resep HPP SagaPOS
 

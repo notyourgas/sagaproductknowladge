@@ -1,11 +1,11 @@
 # SagaOPS Product Knowledge
 
-## 2026-09-16 — Kejelasan status draft dan HPP published (kandidat source)
+## 2026-09-16 — HPP menu inactive aktif di production
 
-- `CONFIRMED` pada source `c62446a98f8b1d94e7059174d64949e64794e17f` (tree `a27df6793bf45c1161f34919bc03d3b057b1ac06`), [draft PR #23](https://github.com/notyourgas/sagaops/pull/23): Owner Dashboard menjelaskan bahwa revisi draft hanya simulasi; HPP aktif memakai versi published terakhir yang masih memenuhi syarat. Riwayat versi published diberi label histori bila HPP aktif kini tidak tersedia.
-- Kolom HPP membedakan menu nonaktif, resep yang perlu ditinjau, dan biaya/referensi bahan yang belum lengkap. Konfirmasi publish meminta Owner memeriksa versi serta nilai HPP setelah simpan. Server menolak publish baru untuk menu nonaktif sebelum membuat versi semu.
-- Penyebab record production Cafe Latte yang sudah terbit tetapi HPP-nya kosong masih `NEEDS CONFIRMATION` melalui pemeriksaan data terautentikasi. Perubahan source ini tidak memperbaiki data lama atau membuktikan HPP record tersebut aktif. Tidak ada migration, perubahan stok, payment, atau Member pada diff kandidat.
-- Validasi terbaru: `npm run check` lulus, 9/9 tes HPP backend/server lulus, 1/1 tes browser HPP lulus, 1/1 tes browser UI/UX dashboard lulus, audit dependency produksi 0 kerentanan, dan `git diff --check` lulus. GitHub Quality sebelumnya tidak menjalankan job karena blokir billing akun. Status kandidat `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; status source runtime production saat ini belum diverifikasi ulang untuk entri ini.
+- `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`) aktif di production; rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`.
+- Menu inactive tetap dapat menyimpan draft dan mem-publish resep sehingga current HPP tersedia. Status menu tetap archived dan tidak sellable; publish HPP tidak mengaktifkan menu. Coverage readiness hanya menghitung menu active.
+- Deployment code-only lulus tanpa perubahan schema: PostgreSQL tetap 34 migrasi, health menunjukkan ready/production, dashboard publik 200, dan aset `operator.js` cocok dengan SHA-256 `C78F1AAF0908E8EF4D0C01835F4E6A0542635BA77993140334E92DF62101E605`. Payment/gateway tetap OFF.
+- GitHub Quality berstatus `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing, bukan kegagalan tes kandidat. Authenticated Cafe Latte UAT belum dilakukan. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
 
 ## 2026-09-15 — Pop-up resep HPP aktif di production
 

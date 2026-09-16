@@ -1,11 +1,11 @@
 # SagaOPS Changelog
 
-## 2026-09-16 — Kandidat penjelasan Published v1 tanpa HPP aktif
+## 2026-09-16 — HPP menu inactive aktif di production
 
-- Sebelum: versi resep published dapat tampil berdampingan dengan HPP belum tersedia tanpa alasan jelas, sehingga draft atau riwayat versi mudah disalahartikan sebagai HPP aktif.
-- Setelah: dashboard memisahkan simulasi draft, histori published, dan HPP aktif; memberi alasan untuk menu nonaktif atau biaya/referensi bahan yang belum lengkap; serta meminta pemeriksaan versi/HPP setelah publish. Publish baru menu nonaktif ditolak server.
-- `CONFIRMED` source `c62446a98f8b1d94e7059174d64949e64794e17f` (tree `a27df6793bf45c1161f34919bc03d3b057b1ac06`), [draft PR #23](https://github.com/notyourgas/sagaops/pull/23). Validasi terbaru: `npm run check`, 9/9 tes backend/server HPP, 1/1 browser HPP, 1/1 browser UI/UX dashboard, audit dependency produksi 0 kerentanan, dan diff check lulus. CI Quality sebelumnya tidak mulai karena billing GitHub.
-- Penyebab record production Cafe Latte `NEEDS CONFIRMATION`; tidak ada data production yang diubah. `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; runtime production exact source belum diverifikasi ulang.
+- Sebelum: lifecycle resep mengikuti status menu sehingga menu inactive dapat kehilangan current HPP atau tidak dapat mem-publish revisi.
+- Setelah: menu inactive dapat menyimpan draft dan mem-publish HPP; current HPP tersedia, sementara menu tetap archived/tidak sellable. Coverage readiness hanya menilai menu active.
+- `CONFIRMED`: production source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`), rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Code-only deploy, health ready/production, 34 migrasi tanpa perubahan schema, dashboard 200, serta hash aset publik exact lulus; payment/gateway OFF.
+- GitHub Quality `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing. Authenticated Cafe Latte UAT masih `NEEDS CONFIRMATION`; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
 ## 2026-09-15 — Pop-up resep HPP aktif pada domain asli
 

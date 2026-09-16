@@ -1,10 +1,10 @@
 # SagaOPS Dossier
 
-## 2026-09-16 — Status resep draft, published, dan HPP aktif
+## 2026-09-16 — HPP tetap tersedia saat menu inactive
 
-Kandidat source `c62446a98f8b1d94e7059174d64949e64794e17f` (tree `a27df6793bf45c1161f34919bc03d3b057b1ac06`) pada [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) memperjelas tiga keadaan yang dapat terlihat bersamaan: versi resep pernah published, draft baru sedang disimulasikan, dan HPP aktif saat ini belum tersedia. Dashboard menunjukkan alasan HPP yang relevan—menu nonaktif, resep perlu review, atau biaya/referensi bahan belum lengkap—serta menandai versi published sebagai histori jika tidak lagi menjadi HPP aktif. Setelah publish, Owner diminta memeriksa versi dan nilai HPP yang tersimpan.
+Source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`) memisahkan lifecycle menu dari lifecycle resep. Owner dapat menyimpan draft dan mem-publish HPP untuk menu inactive; current HPP tetap tersedia untuk histori dan pengelolaan biaya, sedangkan menu tetap archived dan tidak dapat dijual. Readiness coverage hanya memakai menu active agar menu arsip tidak menimbulkan false blocker.
 
-Server menolak publish resep baru untuk menu nonaktif sebelum menciptakan versi baru. Penyebab record production Cafe Latte masih belum dapat dipastikan tanpa pemeriksaan data terautentikasi; kandidat tidak memutasi record itu. Diff kandidat tidak membawa migrasi, perubahan ledger stok, payment, atau Member. Validasi terbaru mencatat `npm run check`, 9/9 tes HPP backend/server, 1/1 tes browser HPP, 1/1 tes browser UI/UX dashboard, audit dependency produksi 0 kerentanan, dan diff check lulus. CI Quality sebelumnya terhalang billing sebelum job mulai; source ini `IMPLEMENTED_NOT_DEPLOYED`, runtime production dan Owner UAT untuk perilaku baru belum dibuktikan, `BUSINESS_READY=false`.
+Release code-only aktif di production dengan rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Schema tetap 34 migrasi; health ready/production, dashboard publik 200, dan hash aset `operator.js` cocok dengan `C78F1AAF0908E8EF4D0C01835F4E6A0542635BA77993140334E92DF62101E605`. Payment/gateway OFF. GitHub Quality diklasifikasikan `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing. Uji Cafe Latte oleh Owner terautentikasi masih `NEEDS CONFIRMATION`; deployment aktif tetapi `BUSINESS_READY=false`.
 
 ## 2026-09-15 — HPP sebagai resep satu pop-up
 
