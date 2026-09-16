@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi SagaPOS prep production hardening
+
+- `CONFIRMED`: exact source `61fd150de7b3d803219d618a1d8dc3f3524ff156` aktif di production; rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.
+- Knowledge SagaOPS diperbarui untuk recipe-cycle guard, immutable dependency identity, lifecycle cancel/expire, output lot/expiry, reservation dan period guard, projected prep costing, evidence release, serta residual fail-closed.
+- Area terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, portfolio changelog, master knowledge, gaps, dan sync status. Tidak ada credential, PII, identifier privat, perubahan schema, pricing, payment, provider, atau produk lain.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; next action adalah UAT fisik Owner dan penutupan residual produksi.
+
 ## 2026-09-16 - Sinkronisasi inline QRIS COYABAG
 
 - `CONFIRMED`: exact source `66545d3de0be93783ccab0d8f0e9cd545d0446d9`

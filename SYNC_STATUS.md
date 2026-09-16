@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS prep production hardening
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `61fd150de7b3d803219d618a1d8dc3f3524ff156` aktif di production, rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.
+- Synced: recipe graph dan identity guard, purchase boundary, exact plan resume, cancel/expire durable, completion guard, output lot/expiry, projected prep costing, dan dampak margin menu downstream.
+- Evidence: full 1.425 test dengan 1.353 pass/0 fail/71 expected skip/1 TODO; 34 migrasi; exact release, recovery rehearsal, activation, health, monitor, dan public dashboard/aset PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+- Next: UAT fisik satu batch kecil; selesaikan reversal lintas-ledger, authority FEFO input wajib lot, pagination histori, dan scheduler expiry otomatis.
+
 ## 2026-09-16 - COYABAG inline QRIS dan countdown
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

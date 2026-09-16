@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-16 — SagaPOS prep production hardening
+
+- `CONFIRMED`: exact production source `61fd150de7b3d803219d618a1d8dc3f3524ff156`; rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.
+- Resep bahan olahan tidak boleh membentuk siklus dan identitas bahan yang sudah dipakai terkunci. Bahan dibuat sendiri tidak masuk lewat pembelian; stoknya berasal dari batch produksi.
+- Owner dapat melanjutkan snapshot batch yang sama, memakai backflush atau measured input, membatalkan rencana, dan melihat lot/expiry hasil. Completion menolak stok terreservasi, periode tertutup, hasil/input tidak masuk akal, lot ganda, dan expiry output yang melampaui input terlacak.
+- Simulasi perubahan harga bahan mentah meneruskan projected cost ke bahan olahan dan margin menu downstream tanpa mengubah book cost transaksi aktual.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; 34 migrasi. Void/correct lintas-ledger tetap fail-closed, authority FEFO untuk input wajib lot belum lengkap, histori belum paginated, auto-expiry scheduler belum aktif, dan UAT fisik Owner pending.
+
 ## Update 2026-09-16 — SagaPOS roster maksimal dua shift sejenis
 
 - `CONFIRMED`: exact production source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`; rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.

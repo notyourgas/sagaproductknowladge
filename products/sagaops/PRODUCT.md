@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Lifecycle dan costing produksi bahan olahan diperkeras
+
+- `CONFIRMED`: exact source `61fd150de7b3d803219d618a1d8dc3f3524ff156` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.
+- Resep produksi kini menolak siklus antarbahan olahan, mengunci identitas bahan yang sudah menjadi dependensi, dan membatasi toleransi hasil maksimal 25%. Bahan `MADE_IN_HOUSE` tidak dapat dimasukkan melalui penerimaan pembelian.
+- Rencana batch dapat dilanjutkan memakai snapshot resep yang sama, dibatalkan, atau ditandai kedaluwarsa dengan audit dan replay idempoten. Completion menolak stok yang sudah direservasi, tanggal pada periode tertutup, hasil di atas toleransi, input measured yang terlalu rendah, lot output ganda, serta kedaluwarsa output yang melampaui input berlot.
+- Simulasi perubahan harga bahan mentah sekarang meneruskan dampak biaya ke bahan olahan dan margin menu downstream. Gudang menampilkan lot hasil, tanggal kedaluwarsa, dan sisa kuantitas turunannya.
+- Full suite 1.425 test: 1.353 pass, 0 fail, 71 expected skip, 1 TODO; ledger tetap 34 migrasi. Release exact-source, recovery, activation, health, monitor, dan public asset lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Void/correct lintas-ledger dinonaktifkan fail-closed; FEFO input berlot wajib, pagination histori, scheduler kedaluwarsa otomatis, dan UAT fisik Owner masih terbuka.
+
 ## 2026-09-16 — Maksimal dua shift sejenis dan konflik roster operasional
 
 - `CONFIRMED`: exact source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.

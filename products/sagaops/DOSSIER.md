@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Hardening lifecycle, lot, dan costing bahan olahan
+
+Source production `61fd150de7b3d803219d618a1d8dc3f3524ff156` memperkeras kontrak resep dan batch bahan olahan di atas release `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`. Graph resep menolak siklus transitif, replay operation key tetap idempoten walau revision bergerak, toleransi hasil dibatasi maksimal 25%, dan nama, satuan, sumber, serta jenis bahan dikunci setelah menjadi dependensi. Penerimaan pembelian juga menolak bahan `MADE_IN_HOUSE` agar stok olahan hanya terbentuk dari transformasi yang dapat diaudit.
+
+Plan menyimpan snapshot resep authoritative. Owner dapat melanjutkan exact batch lama tanpa mengambil resep terbaru, memakai backflush atau input measured, serta membatalkan rencana. Status cancel/expire bersifat durable, audited, replay-safe, dan restart-safe. Scheduler yang menandai rencana kedaluwarsa otomatis belum tersedia; command expiry sudah ada sebagai boundary yang aman.
+
+Completion memvalidasi sebelum mutasi: hasil tidak boleh melebihi toleransi, input measured tidak boleh terlalu rendah, stok yang sudah direservasi untuk penjualan tidak dapat dipakai, dan posting bertanggal pada periode inventory tertutup ditolak. Lot output unik per bahan, minimum shelf life divalidasi, kedaluwarsa output tidak boleh melampaui input berlot yang paling cepat, dan metadata lot/expiry dipertahankan saat restart. Workspace Gudang menurunkan sisa lot produksi dari movement yang terkait.
+
+Simulasi harga referensi bahan mentah sekarang menghitung ulang projected unit cost bahan olahan terkait lalu meneruskan perubahan HPP dan margin ke menu downstream. Ini adalah simulasi keputusan supplier; moving-average book cost tetap mengikuti transaksi aktual.
+
+Rilis tidak mengubah schema; ledger tetap 34 migrasi. Full suite 1.425 test menghasilkan 1.353 pass, 0 fail, 71 expected skip, dan 1 TODO. Exact artifact, recovery rehearsal, activation, health, monitor, serta public dashboard/aset lulus. Rollback menunjuk `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.
+
+Void/correct produksi melalui boundary lintas-ledger lama sengaja mengembalikan konflik tanpa mutasi sampai reversal seluruh ledger dapat dijamin atomik. Input dengan lot tracking wajib juga masih gagal tertutup karena authority FEFO end-to-end belum lengkap. Pagination histori batch, scheduler expiry otomatis, dan UAT fisik Owner tetap pending; `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Batas dua shift sejenis dan resolusi konflik roster
 
 Source production `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` menaikkan generator schedule rows ke `schedule-rules-rolling-v3`. Untuk setiap kandidat, mesin menghitung rangkaian hari kerja berurutan pada band shift yang sama. Hari libur atau pergantian band memutus rangkaian. Kandidat ketiga pada band yang sama mendapat penalti dominan, sehingga Pagi–Pagi diarahkan ke Sore berikutnya bila kombinasi tersebut tetap memenuhi jeda, role, availability, izin, batas jam, coverage, dan locked cell.

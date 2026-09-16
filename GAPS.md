@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-16 — Residual setelah prep production hardening aktif
+
+- `CONFIRMED`: source production `61fd150de7b3d803219d618a1d8dc3f3524ff156` memperkeras recipe graph, lifecycle plan/cancel/expire, completion guard, output lot/expiry, serta projected costing bahan olahan dan menu downstream. Full suite lulus tanpa failure dan ledger tetap 34 migrasi.
+- `CONFIRMED`: void/correct pada boundary production lintas-ledger dinonaktifkan fail-closed agar tidak membuat reversal parsial. Jalur ini belum boleh dianggap tersedia untuk operator.
+- `NEEDS CONFIRMATION`: authority FEFO end-to-end untuk input yang mewajibkan lot belum lengkap; production menolak jalur tersebut. Pagination histori batch dan scheduler expiry otomatis juga belum tersedia.
+- `NEEDS CONFIRMATION`: UAT fisik Owner dengan bahan, lot, output, susut, dan konsumsi menu nyata belum dilakukan.
+- Dampak: flow inti prep dapat diuji pada production, tetapi residual operasional tersebut menahan `BUSINESS_READY=true`.
+
 ## 2026-09-16 — Residual setelah bahan olahan dan produksi batch aktif
 
 - `CONFIRMED`: source production `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` mengaktifkan bahan dibuat sendiri, resep olahan, transformasi stok atomik, audit produksi, serta konsumsi menu tanpa pengurangan bahan mentah dua kali.

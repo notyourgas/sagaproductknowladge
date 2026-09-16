@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS prep production hardening aktif
+
+- `CONFIRMED`: SagaPOS production berpindah ke exact source `61fd150de7b3d803219d618a1d8dc3f3524ff156`, rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.
+- Lifecycle batch, lot/expiry, reservation guard, recipe graph, dan costing bertingkat diperkeras. Perubahan harga bahan mentah kini dapat menunjukkan dampaknya pada bahan olahan dan margin menu terkait.
+- Schema tetap 34 migrasi; pricing, payment, credential, provider, dan produk lain tidak berubah. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; residual produksi dicatat fail-closed.
+
 ## 2026-09-16 - COYABAG inline QRIS payment experience
 
 - `CONFIRMED`: source `66545d3de0be93783ccab0d8f0e9cd545d0446d9`

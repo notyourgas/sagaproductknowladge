@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Hardening produksi bahan olahan
+
+- `CONFIRMED`: source `61fd150de7b3d803219d618a1d8dc3f3524ff156` aktif di production; rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.
+- Added: cancel/expire batch yang audited dan replay-safe, output lot/expiry durable, projected costing bahan olahan, serta dampak harga bahan mentah hingga margin menu downstream.
+- Changed: resep menolak siklus dan perubahan identitas dependensi; completion menjaga reservasi penjualan, periode tertutup, toleransi output/input measured, lot unik, shelf life, dan expiry lineage. Penerimaan pembelian menolak bahan buatan sendiri.
+- Evidence: full 1.425 test dengan 1.353 pass/0 fail/71 expected skip/1 TODO; 34 migrasi; exact release, recovery, activation, health, monitor, dan public asset PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; void/correct lintas-ledger fail-closed, FEFO input berlot wajib, pagination histori, auto-expiry scheduler, dan UAT fisik masih pending.
+
 ## 2026-09-16 — Roster maksimal dua shift sejenis dan konflik actionable
 
 - `CONFIRMED`: source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` aktif di production; rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.
