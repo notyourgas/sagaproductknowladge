@@ -2,13 +2,13 @@
 
 ## 2026-09-16 — Kontrak satu libur terjadwal per tanggal
 
-Source production `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e` menaikkan generator menjadi `weekday-rotation-roster-v3` dan `schedule-rules-rolling-v4`. Planner menggabungkan libur otomatis dengan libur manual Owner, menghapus duplikasi identik, lalu hanya memilih tanggal yang belum mempunyai libur terjadwal aktif. Batas ini berlaku pada lingkup roster organisasi/outlet aktif.
+Source production `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` menaikkan generator menjadi `weekday-rotation-roster-v3` dan `schedule-rules-rolling-v4`. Planner menggabungkan libur otomatis dengan libur manual Owner, menghapus duplikasi identik, lalu hanya memilih tanggal yang belum mempunyai libur terjadwal aktif. Batas ini berlaku pada lingkup roster organisasi/outlet aktif.
 
 Jika seluruh tanggal libur yang diperbolehkan sudah dipakai, generator tidak menumpuk libur. Draf mendapat konflik blocking berbahasa operasional yang meminta Owner menambah hari libur yang diperbolehkan atau menyesuaikan jadwal. Minggu parsial pada batas bulan tidak menciptakan konflik palsu bila tanggal pilihan berada di luar periode.
 
 Write manual menolak libur kedua pada tanggal yang sama, termasuk benturan dengan libur otomatis. Publish menghitung ulang seluruh libur manual dan otomatis sehingga draf legacy dengan duplikasi tetap fail-closed. Sakit, izin, dan cuti yang disetujui tetap menjadi exception approval dan tidak dihitung sebagai libur terjadwal karena kebutuhan darurat tidak boleh ditolak hanya untuk memenuhi pola roster.
 
-Rilis code-only tidak mengubah schema, migration manifest, credential, payment, atau provider. Focused 27/27 dan full suite 1.429 test dengan 1.357 pass, 0 fail, 71 expected skip, serta 1 TODO lulus. Artifact immutable, backup terenkripsi/disposable restore, recovery rehearsal host-local, activation atomik, exact-source health, 34 migrasi, dan dashboard publik lulus. Rollback menunjuk `61fd150de7b3d803219d618a1d8dc3f3524ff156`. Authenticated Owner UAT dan offsite restore masih pending; `BUSINESS_READY=false`.
+Rilis code-only tidak mengubah schema, migration manifest, credential, payment, atau provider. Focused 27/27 dan full suite 1.429 test dengan 1.357 pass, 0 fail, 71 expected skip, serta 1 TODO lulus. Artifact immutable, backup terenkripsi/disposable restore, recovery rehearsal host-local, activation atomik, exact-source health, monitor, 34 migrasi, dan dashboard publik lulus. Monitor backup-history diperkeras dan retention menjaga current/rollback/backup sambil menurunkan kapasitas host ke 88%. Rollback menunjuk `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`. Authenticated Owner UAT dan offsite restore masih pending; `BUSINESS_READY=false`.
 
 ## 2026-09-16 — Hardening lifecycle, lot, dan costing bahan olahan
 

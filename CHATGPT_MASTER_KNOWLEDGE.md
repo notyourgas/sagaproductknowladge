@@ -2,7 +2,7 @@
 
 ## Update 2026-09-16 — SagaPOS maksimal satu libur terjadwal per tanggal
 
-- `CONFIRMED`: exact production source `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`; rollback `61fd150de7b3d803219d618a1d8dc3f3524ff156`.
+- `CONFIRMED`: exact production source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83`; rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.
 - Generator mengalokasikan maksimal satu libur terjadwal per tanggal. Edit manual Owner dan publish memvalidasi aturan yang sama; draf lama dengan duplikasi tidak dapat dipublikasikan.
 - Bila hari libur yang diizinkan tidak cukup untuk jumlah staf, sistem menampilkan konflik dan meminta pengaturan diperluas atau jadwal disesuaikan. Sakit, izin, dan cuti yang disetujui tetap exception approval, bukan libur terjadwal.
 - Flow UAT: Tim & Shift → Jadwal → Simpan aturan → Generate ulang → pastikan hanya satu `L` per tanggal → coba edit libur kedua → review → publish.

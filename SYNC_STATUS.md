@@ -2,9 +2,9 @@
 
 ## 2026-09-16 — SagaPOS maksimal satu libur terjadwal per hari
 
-- Status `accepted`; klasifikasi `CONFIRMED`; exact source `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e` aktif di production, rollback `61fd150de7b3d803219d618a1d8dc3f3524ff156`.
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` aktif di production, rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.
 - Synced: batas satu libur terjadwal pada generator/edit manual/publish, exception approval untuk sakit/izin/cuti, konflik actionable, serta perilaku minggu parsial.
-- Evidence: focused 27/27; full 1.429 test dengan 1.357 pass/0 fail/71 expected skip/1 TODO; immutable artifact, encrypted backup/restore, recovery rehearsal, activation, exact health 34 migrasi, dan public dashboard PASS.
+- Evidence: focused 27/27; full 1.429 test dengan 1.357 pass/0 fail/71 expected skip/1 TODO; immutable artifact, encrypted backup/restore, recovery rehearsal, activation, exact health 34 migrasi, monitor, public dashboard, dan retention 88% PASS.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
 - Next: Owner Generate ulang satu bulan uji, memastikan satu `L` per tanggal, mencoba penolakan libur kedua, lalu publish; offsite restore tetap `UNVERIFIED`.
 
