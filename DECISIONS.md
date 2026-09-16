@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-201 — Bahan olahan memakai transformasi stok tanpa pengurangan ganda
+
+- Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: mekanisme bahan yang diproses menjadi bahan baru pada SagaPOS.
+- Keputusan: bahan `MADE_IN_HOUSE` dibuat melalui batch produksi yang mengurangi bahan baku dan menambah bahan hasil secara atomik. Menu downstream mengurangi bahan hasil dan bahan langsung pada resep menu saja. Bahan baku tidak dikurangi lagi dan shortage bahan hasil berhenti tertutup tanpa fallback otomatis ke resep mentah.
+- Alasan: stok, HPP, hasil aktual, dan susut harus dapat ditelusuri per tahap tanpa konsumsi ganda. Contoh Espresso memakai kopi dan air pada batch; Cafe Latte kemudian memakai Espresso dan susu.
+- Alternatif: recursive explosion bahan mentah ketika menu dijual tidak dipakai karena menghilangkan jejak batch dan dapat mengurangi kopi/air dua kali. Linked void hanya tersedia sebelum hasil dipakai; setelah itu koreksi menjadi kejadian baru.
+- Dampak: source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif di production. Authenticated Owner UAT, data operasional nyata, dan offsite restore tetap gate terpisah; `BUSINESS_READY=false`.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md), [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-200 — Flow HR operasional berjalan native di SagaPOS
 
 - Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.

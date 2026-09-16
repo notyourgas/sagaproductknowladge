@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-16 — Residual setelah bahan olahan dan produksi batch aktif
+
+- `CONFIRMED`: source production `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` mengaktifkan bahan dibuat sendiri, resep olahan, transformasi stok atomik, audit produksi, serta konsumsi menu tanpa pengurangan bahan mentah dua kali.
+- `CONFIRMED`: acceptance bahan olahan, exact artifact, backup/disposable restore, recovery rehearsal, activation, health 34 migrasi, monitor, dan public HTTPS/aset lulus. Inventory reporting tetap OFF sesuai konfigurasi production dan tidak menonaktifkan Produksi batch.
+- `NEEDS CONFIRMATION`: authenticated Owner UAT dengan batch kecil dan data bahan nyata belum dilakukan. Independent offsite restore juga belum diverifikasi.
+- Dampak: fungsi tersedia untuk diuji pada production, tetapi hasil biaya/yield operasional dan pemulihan offsite tetap menahan klaim `BUSINESS_READY=true`.
+
 ## 2026-09-16 — Residual setelah SagaPOS HR native report aktif
 
 - `CONFIRMED`: source production `537a9aef3363ac18cdef5f4dda518b5430dbb267` menutup ketergantungan runtime flow HR terhadap SagaWork dan menambah laporan work-time/payroll preview tenant/outlet scoped.
