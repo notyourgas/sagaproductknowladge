@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Kandidat penjelasan Published v1 tanpa HPP aktif
+
+- Sebelum: versi resep published dapat tampil berdampingan dengan HPP belum tersedia tanpa alasan jelas, sehingga draft atau riwayat versi mudah disalahartikan sebagai HPP aktif.
+- Setelah: dashboard memisahkan simulasi draft, histori published, dan HPP aktif; memberi alasan untuk menu nonaktif atau biaya/referensi bahan yang belum lengkap; serta meminta pemeriksaan versi/HPP setelah publish. Publish baru menu nonaktif ditolak server.
+- `CONFIRMED` source `78c0601a78799ea222ef70fbb9776226c8db5521`, [draft PR #23](https://github.com/notyourgas/sagaops/pull/23). PR mencatat `npm run check`, 9/9 tes backend/server, 1/1 tes browser, audit dependency produksi 0 temuan, dan diff check. CI Quality tidak mulai karena billing GitHub.
+- Penyebab record production yang dilaporkan `NEEDS CONFIRMATION`; tidak ada data production yang diubah. `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; runtime production exact source belum diverifikasi ulang.
+
 ## 2026-09-15 — Pop-up resep HPP aktif pada domain asli
 
 - `CONFIRMED`: production source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f`, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`; Owner mengedit resep dalam satu pop-up pada daftar HPP menu.

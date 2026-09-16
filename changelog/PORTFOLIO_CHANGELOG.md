@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS: kejelasan HPP draft/published pada kandidat
+
+- Source `78c0601a78799ea222ef70fbb9776226c8db5521` di [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) membedakan simulasi draft, histori resep published, dan HPP aktif; menjelaskan alasan HPP kosong serta menolak publish menu nonaktif. Penyebab record production yang dilaporkan masih perlu pemeriksaan data terautentikasi.
+- Validasi PR: static check, HPP backend/server 9/9, browser 1/1, audit dependency produksi 0, diff check. CI Quality belum menjalankan job akibat billing GitHub. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; tidak ada perubahan data production, payment, Member, atau produk lain.
+
 ## 2026-09-15 — SagaPOS HPP recipe popup aktif di production
 
 - `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada Owner Dashboard SagaPOS; rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Atur/Edit HPP tetap pada daftar menu dan membuka pop-up resep satu layar dengan bahan, takaran, dan simulasi HPP/margin langsung.

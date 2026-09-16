@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Kejelasan status draft dan HPP published (kandidat source)
+
+- `CONFIRMED` pada source `78c0601a78799ea222ef70fbb9776226c8db5521`, [draft PR #23](https://github.com/notyourgas/sagaops/pull/23): Owner Dashboard menjelaskan bahwa revisi draft hanya simulasi; HPP aktif memakai versi published terakhir yang masih memenuhi syarat. Riwayat versi published diberi label histori bila HPP aktif kini tidak tersedia.
+- Kolom HPP membedakan menu nonaktif, resep yang perlu ditinjau, dan biaya/referensi bahan yang belum lengkap. Konfirmasi publish meminta Owner memeriksa versi serta nilai HPP setelah simpan. Server menolak publish baru untuk menu nonaktif sebelum membuat versi semu.
+- Penyebab record production yang sudah terbit tetapi HPP-nya kosong masih `NEEDS CONFIRMATION` melalui pemeriksaan data terautentikasi. Perubahan source ini tidak memperbaiki data lama atau membuktikan HPP record tersebut aktif. Tidak ada migration, perubahan stok, payment, atau Member pada diff kandidat.
+- Validasi yang dicatat pada PR: `npm run check`, 9/9 tes HPP backend/server, 1/1 tes browser HPP, audit dependency produksi 0 temuan, dan `git diff --check`. GitHub Quality belum menjalankan job karena blokir billing akun. Status kandidat `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; status source runtime production saat ini belum diverifikasi ulang untuk entri ini.
+
 ## 2026-09-15 — Pop-up resep HPP aktif di production
 
 - `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` sudah pushed dan aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`.

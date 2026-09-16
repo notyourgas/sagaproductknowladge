@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-16 — SagaPOS HPP draft/published: kandidat belum production
+
+- `CONFIRMED` pada source `78c0601a78799ea222ef70fbb9776226c8db5521`, [draft PR #23](https://github.com/notyourgas/sagaops/pull/23): draft adalah simulasi, versi published dapat menjadi histori, dan HPP aktif hanya muncul bila resep/menu/bahan memenuhi syarat. Dashboard menjelaskan alasan HPP belum tersedia; publish baru menu nonaktif ditolak.
+- Penyebab record production yang dilaporkan belum diverifikasi lewat data terautentikasi. CI Quality tidak mulai akibat billing GitHub. Kandidat `IMPLEMENTED_NOT_DEPLOYED`; perilaku baru belum diklaim aktif atau business-ready. Riwayat release production sebelumnya tetap berlaku sebagai catatan historis, bukan bukti runtime exact source hari ini.
+
 ## 2026-09-15 — SagaPOS HPP pop-up resep aktif di production
 
 - `CONFIRMED`: Owner meminta HPP disusun sebagai resep dalam pop-up, bukan wizard. Source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif di [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard), rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`: pilih bahan Database, isi takaran, tambah beberapa baris, lihat HPP/margin langsung, simpan draft, lalu publish versi terpisah.

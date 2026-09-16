@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi kandidat SagaPOS kejelasan HPP draft/published
+
+- `CONFIRMED`: source `78c0601a78799ea222ef70fbb9776226c8db5521` pada [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) menjelaskan histori published dan alasan HPP aktif kosong, lalu menolak publish baru menu nonaktif.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, dan sync status. Penyebab record production masih `NEEDS CONFIRMATION`; tidak ada credential, data restricted, atau mutasi production.
+- Validasi tercatat di PR: check, 9/9 tes HPP backend/server, 1/1 browser, audit dependency produksi 0, diff check. CI Quality belum berjalan akibat billing. Delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-15 — Aktivasi production pop-up resep HPP SagaPOS
 
 - `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada domain asli; rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Keputusan UI Andreas kini dapat diuji di Owner Dashboard.

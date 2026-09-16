@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS HPP draft/published, draft PR #23
+
+- Status `pending release`; klasifikasi source `CONFIRMED`, penyebab record production `NEEDS CONFIRMATION`. Source `78c0601a78799ea222ef70fbb9776226c8db5521` pada [draft PR #23](https://github.com/notyourgas/sagaops/pull/23).
+- Synced: simulasi draft dibedakan dari HPP aktif, published yang tidak lagi aktif diberi label histori, alasan HPP kosong ditampilkan, dan publish menu nonaktif ditolak sebelum versi baru dibuat.
+- Evidence: PR mencatat `npm run check`, tes HPP backend/server 9/9, browser 1/1, audit dependency produksi 0, dan diff check. CI Quality tidak mulai akibat billing GitHub; runtime exact source dan data record terautentikasi belum diverifikasi.
+- Delivery `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: pulihkan CI, review/merge source, verifikasi release exact-source, lalu UAT Owner pada record yang dilaporkan untuk menentukan penyebabnya tanpa menebak data.
+
 ## 2026-09-15 — SagaPOS HPP pop-up resep aktif di production
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` pushed dan aktif di production, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`.

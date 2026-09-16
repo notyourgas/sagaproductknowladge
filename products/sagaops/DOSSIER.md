@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Status resep draft, published, dan HPP aktif
+
+Kandidat source `78c0601a78799ea222ef70fbb9776226c8db5521` pada [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) memperjelas tiga keadaan yang dapat terlihat bersamaan: versi resep pernah published, draft baru sedang disimulasikan, dan HPP aktif saat ini belum tersedia. Dashboard menunjukkan alasan HPP yang relevan—menu nonaktif, resep perlu review, atau biaya/referensi bahan belum lengkap—serta menandai versi published sebagai histori jika tidak lagi menjadi HPP aktif. Setelah publish, Owner diminta memeriksa versi dan nilai HPP yang tersimpan.
+
+Server menolak publish resep baru untuk menu nonaktif sebelum menciptakan versi baru. Penyebab record production yang dilaporkan masih belum dapat dipastikan tanpa pemeriksaan data terautentikasi; kandidat tidak memutasi record itu. Diff kandidat tidak membawa migrasi, perubahan ledger stok, payment, atau Member. Validasi pada PR mencatat static check, 9 tes HPP backend/server, satu tes browser, audit dependency produksi 0 temuan, dan diff check. CI Quality terhalang billing sebelum job mulai; source ini `IMPLEMENTED_NOT_DEPLOYED`, runtime production dan Owner UAT untuk perilaku baru belum dibuktikan, `BUSINESS_READY=false`.
+
 ## 2026-09-15 — HPP sebagai resep satu pop-up
 
 Source kandidat `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` mengganti editor komponen dua tahap dan workspace yang menukar daftar menu dengan pop-up native di Owner Dashboard. Owner memilih bahan, mengisi pemakaian per porsi, menambah beberapa bahan, lalu melihat biaya per bahan, total HPP, laba dan margin kotor langsung. Satuan berasal dari Database Bahan; yield/susut tersedia sebagai opsi.
