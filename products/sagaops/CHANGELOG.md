@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Roster rules save dan weekly rotation v2
+
+- `CONFIRMED`: source `1b632bc841b6c7db923e18fdab062f7de6801765` aktif di production; rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.
+- Menambahkan penyimpanan eksplisit schedule rows serta fairness mingguan yang menggilir staf melalui shift pagi/sore pada kapasitas yang memungkinkan dan tetap menghormati jeda aman.
+- Tidak ada schema/provider/credential change. Focused 21/21, static/audit, exact package, backup/restore, recovery, activation, health/monitor/HTTPS lulus; authenticated Owner UAT dan offsite restore pending, `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Pengaturan jadwal dan rolling shift
 
 - `CONFIRMED`: production source `1e510299bcd8d7aedba79e7e030b86550562b623`, rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.

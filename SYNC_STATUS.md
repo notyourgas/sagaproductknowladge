@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS roster rules save dan weekly rotation v2
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `1b632bc841b6c7db923e18fdab062f7de6801765` aktif di production, rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.
+- Synced: simpan schedule rows terpisah dari Generate, aturan libur/min/max per bulan, weekly shift diversity, dan rotasi aman melalui batas hari libur.
+- Evidence: focused 21/21; static/type dan dependency audit 0; full suite 1.314 pass/0 fail/71 skip/1 TODO dengan satu kiosk timeout yang lulus rerun terisolasi; artifact, encrypted backup/restore, recovery rehearsal, activation, exact health 34 migrasi, monitor dan HTTPS PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Owner menyimpan aturan dan Generate ulang satu bulan nyata; offsite restore masih `UNVERIFIED`.
+
 ## 2026-09-16 - COYABAG product media and fulfillment operations
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

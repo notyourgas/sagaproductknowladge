@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi SagaPOS roster save dan weekly rotation v2
+
+- `CONFIRMED`: exact source `1b632bc841b6c7db923e18fdab062f7de6801765` aktif di production; rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.
+- Knowledge SagaOPS diperbarui untuk tombol simpan aturan bulanan, makna min/max sebagai coverage, fairness shift per minggu, batas jeda aman, evidence release, dan flow UAT.
+- Tidak ada credential, PII, tenant ID, perubahan schema, pricing, payment, atau produk lain. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 - Sinkronisasi operasi media dan fulfillment COYABAG
 
 - `CONFIRMED`: exact source `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0`

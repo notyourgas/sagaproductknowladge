@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-16 — SagaPOS simpan schedule rows dan rolling mingguan
+
+- `CONFIRMED`: exact production source `1b632bc841b6c7db923e18fdab062f7de6801765`; rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.
+- Owner menyimpan hari libur serta minimum/maksimum shift per bulan secara eksplisit sebelum Generate. Generator v2 memeratakan pagi/sore per minggu dengan perpindahan aman setelah libur, tanpa melonggarkan role, izin, availability, rest, hours, consecutive-day, atau locked-cell guard.
+- Draf existing tidak berubah otomatis. Flow UAT: Tim & Shift → Jadwal → ubah aturan → Simpan pengaturan jadwal → Generate → review/publish.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite restore tetap belum diverifikasi.
+
 ## 2026-09-16 — SagaPOS schedule rules dan rolling shift aktif
 
 - `CONFIRMED`: production source `1e510299bcd8d7aedba79e7e030b86550562b623`, rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`, pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard).

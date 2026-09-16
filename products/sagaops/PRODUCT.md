@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Simpan aturan roster dan rolling mingguan aktif di production
+
+- `CONFIRMED`: exact source `1b632bc841b6c7db923e18fdab062f7de6801765` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.
+- Panel Pengaturan Jadwal memiliki tombol **Simpan pengaturan jadwal**. Hari libur yang diizinkan, minimum/maksimum staf per shift, pola, dan blok rolling kini dapat disimpan untuk bulan terpilih tanpa harus Generate.
+- Generator `schedule-rules-rolling-v2` menilai keragaman shift per minggu dan memakai hari libur sebagai batas perpindahan yang aman. Pada dua shift dan kapasitas yang memungkinkan, setiap staf mendapat kombinasi pagi dan sore dalam minggu penuh; role, izin, availability, jeda minimum, batas jam, hari berturut-turut, dan locked cell tetap menjadi guard keras.
+- Minimum/maksimum tetap berarti kebutuhan jumlah orang per shift, bukan jaminan rotasi per orang. Jaminan pemerataan berasal dari aturan rolling mingguan baru; perpindahan sore ke pagi tidak dipaksakan bila melanggar jeda aman.
+- Tidak ada migrasi database, perubahan credential, payment, atau provider. Focused 21/21, static/type check, dependency audit 0, dan test timeout kiosk yang tidak terkait lulus saat rerun terisolasi. Paket exact-source, backup/restore, recovery rehearsal, activation, health 34 migrasi, monitor, dan HTTPS lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; jadwal draf lama tidak diubah otomatis dan harus di-Generate ulang setelah aturan disimpan.
+
 ## 2026-09-16 — Aturan jadwal dan pola rolling shift aktif di production
 
 - `CONFIRMED`: exact source `1e510299bcd8d7aedba79e7e030b86550562b623` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.

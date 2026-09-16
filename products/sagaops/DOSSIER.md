@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Persistensi aturan roster dan fairness mingguan
+
+Source production `1b632bc841b6c7db923e18fdab062f7de6801765` menambahkan endpoint Owner yang menyimpan schedule rows secara terpisah dari Generate. UI mengirim periode bulan, optimistic version ketika periode sudah ada, pola, blok rolling, hari libur, serta minimum/maksimum setiap template shift. Validasi tetap menolak aturan tanpa hari libur dan batas minimum/maksimum yang tidak sah.
+
+Masalah sebelumnya muncul karena minimum/maksimum hanya mengatur headcount shift, sedangkan fairness masih berupa skor lunak berbasis riwayat bulanan. Guard jeda 11 jam juga benar-benar menolak perpindahan sore ke pagi pada hari berikutnya, sehingga staf bisa tertahan pada satu band. Algoritme `schedule-rules-rolling-v2` menambah target mingguan yang kuat, menghitung keragaman shift per staf, dan memakai libur terencana sebagai batas rotasi aman. Untuk mode schedule rows, weekday libur yang dipilih dibuat stabil antarminggu sehingga tidak menciptakan rangkaian kerja lintas pekan yang tidak manusiawi.
+
+Acceptance mereproduksi empat staf dengan minimum pagi satu dan sore dua serta maksimum berbeda pada akhir pekan. Tiga minggu penuh menghasilkan kedua shift untuk setiap staf tanpa konflik coverage. Focused 21/21, static/type check dan audit dependency 0 lulus. Full suite mencatat 1.314 pass, 0 fail, 71 skip, 1 TODO, serta satu test kiosk tidak terkait yang dibatalkan karena timeout beban suite dan kemudian lulus terisolasi dalam 1,7 detik.
+
+Rilis code-only memakai artifact immutable, backup terenkripsi dengan disposable restore, rehearsal kandidat–current–kandidat, activation atomik, exact-source health dengan 34 migrasi, monitor, dan public HTTPS. Rollback menunjuk `47dc4ae3a13d3c982ad9670e489a854334e40d75`. Draf roster existing tidak dimutasi; Owner perlu Simpan lalu Generate ulang dan menjalankan authenticated UAT. Offsite restore belum diverifikasi, sehingga `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Schedule rows, staffing bounds, dan rolling pattern
 
 Source production `1e510299bcd8d7aedba79e7e030b86550562b623` menambah panel Pengaturan Jadwal sebelum Generate. Owner dapat memakai empat preset sebagai titik awal atau mengubah tujuh schedule row: izin libur per hari serta minimum/maksimum orang pada setiap template shift. Durasi rolling dapat dipilih per 1, 2, atau 3 hari sehingga assignment tidak mengunci orang yang sama pada pagi atau sore terus-menerus.

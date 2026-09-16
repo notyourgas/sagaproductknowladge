@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS roster save dan weekly fairness production
+
+- `CONFIRMED`: SagaPOS production berpindah ke exact source `1b632bc841b6c7db923e18fdab062f7de6801765`, rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.
+- Owner dapat menyimpan aturan libur/minimum/maksimum sebelum Generate; rolling v2 mencegah staf terkunci pagi atau sore sepanjang minggu bila coverage dan guard operasional memungkinkan.
+- Produk lain, pricing, payment, credential, dan schema tidak berubah. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 - COYABAG product media and fulfillment operations
 
 - `CONFIRMED`: source `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0`
