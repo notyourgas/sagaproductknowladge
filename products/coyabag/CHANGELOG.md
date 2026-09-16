@@ -1,5 +1,23 @@
 # COYABAG Changelog
 
+## 2026-09-17 - Mobile finalization and admin auth targets deployed
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `54f571d7f81902cd7b32787c1e1265df943a7977` aktif pada immutable release
+  `20260917-54f571d`; rollback `20260917-42b6a01` tersedia.
+- Finalisasi mobile mencakup storefront, Product Detail, sticky commerce CTA,
+  footer accordion, checkout, admin, dan auth. Plus Jakarta Sans tetap aktif;
+  kontrol kritis pada viewport 360/390 piksel memiliki target minimal 44 piksel
+  tanpa horizontal overflow, overlap, page error, atau respons 5xx.
+- Full RC lulus 336 storefront test, 695 Laravel test dengan 694 pass dan satu
+  expected skip, 6.495 assertion, 151 kombinasi responsive, serta 22 pemeriksaan
+  route produksi. Readiness 45/45, dua worker, failed job nol, dan exact asset
+  parity lulus.
+- Tidak ada migrasi, perubahan credential/provider, order/payment baru, atau
+  mutasi inventory. Checkout tetap `COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`;
+  seller identity/legal-tax dan batas shipping final masih menahan
+  `BUSINESS_READY=true`.
+
 ## 2026-09-16 - Neutral blank checkout customer data deployed
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

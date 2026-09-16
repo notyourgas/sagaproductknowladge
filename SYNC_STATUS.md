@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 - COYABAG mobile finalization
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `54f571d7f81902cd7b32787c1e1265df943a7977`, release
+  `20260917-54f571d`, rollback `20260917-42b6a01`.
+- Synced: finalisasi mobile storefront, Product Detail, sticky CTA, footer,
+  checkout, admin/auth, Plus Jakarta Sans, target 44 piksel, serta regression
+  guard login admin.
+- Evidence: 336 storefront test; 695 Laravel test dengan 694 pass, satu expected
+  skip, dan 6.495 assertion; 151 kombinasi responsive; 22 route production;
+  readiness 45/45; worker, asset parity, backup/restore, dan rollback PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS /
+  BUSINESS_READY=false`. Next: sahkan seller identity/legal-tax dan batas
+  shipping final.
+
 ## 2026-09-17 — SagaPOS absensi GPS/foto
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif di production, rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.

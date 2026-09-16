@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 - COYABAG mobile finalization aktif
+
+- `CONFIRMED`: exact production source
+  `54f571d7f81902cd7b32787c1e1265df943a7977`, immutable release
+  `20260917-54f571d`, rollback `20260917-42b6a01`.
+- Storefront, Product Detail, sticky commerce CTA, footer, checkout, admin, dan
+  auth tervalidasi pada viewport 360/390 piksel. Plus Jakarta Sans tetap aktif;
+  kontrol kritis minimal 44 piksel tanpa overflow, overlap, page error, atau 5xx.
+- Full RC, 151 kombinasi responsive, 22 production route checks, readiness
+  45/45, dua worker, exact asset parity, backup/restore, dan rollback gate lulus.
+  Tidak ada migrasi atau mutasi order/payment/stock/provider.
+- Status tetap `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`; residual bisnis adalah
+  seller identity/legal-tax dan batas shipping final.
+
 ## Update 2026-09-17 — SagaPOS absensi GPS/foto aktif
 
 - `CONFIRMED`: production source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36`, rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.

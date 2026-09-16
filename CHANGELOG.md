@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 - Sinkronisasi mobile finalization COYABAG
+
+- `CONFIRMED`: exact source `54f571d7f81902cd7b32787c1e1265df943a7977`
+  aktif pada release `20260917-54f571d`; rollback `20260917-42b6a01`.
+- Knowledge COYABAG diperbarui untuk finalisasi viewport mobile storefront,
+  checkout, admin, dan auth; target kontrol 44 piksel; hasil RC, public smoke,
+  readiness, exact asset parity, serta batas commerce/business readiness.
+- Tidak ada credential, PII, reference pembayaran, path evidence privat,
+  migrasi, order/payment baru, atau mutasi inventory/provider. Delivery tetap
+  `PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Sinkronisasi absensi GPS/foto SagaPOS
 
 - `CONFIRMED`: exact source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif di production; rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.

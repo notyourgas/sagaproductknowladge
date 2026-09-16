@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 16 September 2026
+Updated: 17 September 2026
 Evidence status: production deployed + production activated + public orders open
 
 ## Tujuan dokumen
@@ -98,9 +98,13 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Runtime aktif memakai exact source
-  `f60267263e1249098205c9928f0ac0590b9315b7` pada immutable release
-  `20260916-f602672`; rollback langsung `20260916-f6bfdbf` memakai source
-  `f6bfdbfc55ef9aa55a9738c1fec01ff9dc2d2592`.
+  `54f571d7f81902cd7b32787c1e1265df943a7977` pada immutable release
+  `20260917-54f571d`; rollback langsung `20260917-42b6a01` memakai source
+  `42b6a01dd8f9c06560f280e9b254c24b045357fc`.
+- Finalisasi mobile production mencakup storefront, Product Detail, sticky
+  commerce CTA, footer accordion, checkout, admin, dan auth. Plus Jakarta Sans
+  tetap aktif; kontrol kritis pada 360/390 piksel minimal 44 piksel tanpa
+  horizontal overflow, overlap, page error, atau respons 5xx.
 - Form detail checkout publik dimulai tanpa data identitas atau tujuan bawaan.
   Nama, nomor WhatsApp, email, tujuan, provinsi, kecamatan, alamat, dan kode pos
   hanya berasal dari pilihan atau input pelanggan; panduan memakai placeholder
@@ -116,11 +120,12 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
   security, serta UAT `3/3`. SagaDev Managed Gateway berstatus verified, dua
   worker dan scheduler aktif, seluruh policy endpoint 200, dan browser
   desktop/mobile lulus tanpa overflow atau error.
-- Storefront 336/336; Laravel 694 pass, satu expected skip, dan 6.495 assertion;
-  build storefront/admin, contract/routes/security, dependency audit, backup,
-  disposable restore, checksum, serta public smoke lulus. Tidak ada migrasi,
-  perubahan credential atau provider selection, order/payment baru, maupun
-  mutasi inventory saat release.
+- Full RC exact release lulus 336 storefront test, 695 Laravel test dengan
+  694 pass dan satu expected skip, 6.495 assertion, 151 kombinasi responsive,
+  serta 22 pemeriksaan route production pada dua viewport mobile. Build,
+  contract/routes/security, performance, backup/restore, checksum, asset parity,
+  worker, dan public smoke lulus. Tidak ada migrasi, perubahan credential atau
+  provider selection, order/payment baru, maupun mutasi inventory saat release.
 - Operator dapat mengganti foto produk atau varian pada posisi media yang sama.
   File baru divalidasi dan staged sebelum transaksi; variant, urutan, serta
   primary state dipertahankan, sedangkan storefront tetap memakai snapshot

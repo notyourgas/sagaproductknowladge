@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-17 - COYABAG mobile finalization deployed
+
+- `CONFIRMED`: source `54f571d7f81902cd7b32787c1e1265df943a7977`
+  aktif pada release `20260917-54f571d`; rollback `20260917-42b6a01` tersedia.
+- Storefront, Product Detail, sticky CTA, footer, checkout, admin, dan auth kini
+  tervalidasi pada 360/390 piksel dengan Plus Jakarta Sans, target kontrol
+  minimal 44 piksel, serta tanpa overflow, overlap, page error, atau 5xx.
+- Full RC, 151 kombinasi responsive, 22 production route checks, readiness
+  45/45, worker, asset parity, backup/restore, dan rollback gate lulus. Tidak ada
+  migrasi atau mutasi order/payment/stock/provider. Status tetap
+  `COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-17 — SagaPOS absensi terjadwal GPS/foto
 
 - `CONFIRMED`: SagaPOS source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif di production dengan rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.
