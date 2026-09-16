@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Staff receiving hardening, procurement linkage, dan media recovery
+
+- `CONFIRMED`: production source `81154a727e601b0e5cc94e601593a750cd61b25b`; rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
+- Portal staf mendapat draft foto durable, retry/timeout per foto, dirty-state guard, validasi lot/expiry, dan resume koreksi. Owner mendapat evidence detail, price variance, disposition, timestamp, retry `POSTING`, dan blocker yang dapat ditindaklanjuti.
+- Backend menambah duplicate-delivery guard, business-date authority, capability outlet, atomic idempotency, supplier/PO/additional-fee linkage, multi-lot aggregation, serta companion schema V2–V4. Main migration ledger tetap 34.
+- Storage foto VPS kini memiliki capacity/concurrency admission, image integrity/privacy validation, encrypted DB+media recovery set, monitor dan maintenance timer. Object storage tetap fase berikutnya.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated Owner dan real-device UAT masih pending, sehingga `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Absensi mobile GPS/foto production
 
 - `CONFIRMED`: source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif di production; rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.

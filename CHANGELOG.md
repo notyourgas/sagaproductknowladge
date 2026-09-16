@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 — Sinkronisasi SagaPOS staff receiving hardening
+
+- `CONFIRMED`: exact source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif di production; rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
+- Knowledge SagaOPS diperbarui untuk durable multi-photo capture, supplier/PO/fee dan multi-lot receipt, business-date/capability/idempotency guard, Owner review/recovery, media backup, capacity monitor, serta residual fail-closed.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, root changelog, dan sync status. Tidak ada credential, PII, foto, tenant/device identifier, atau path evidence privat.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 - Sinkronisasi mobile finalization COYABAG
 
 - `CONFIRMED`: exact source `54f571d7f81902cd7b32787c1e1265df943a7977`

@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — Penerimaan barang staf diperkeras dan aktif di production
+
+- `CONFIRMED`: exact source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard) dan [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
+- Draft dan foto barang datang bertahan setelah refresh, dapat dicoba ulang per foto saat koneksi putus/lambat, serta mencegah perubahan form selama upload atau submit. Multi-foto, koreksi Owner, resubmit, idempotensi, dan pemulihan status `POSTING` tetap tercatat.
+- Receipt dapat terhubung ke supplier dan PO, membawa business date serta biaya SHIPPING/HANDLING/OTHER, dan menerima beberapa lot bahan yang sama tanpa kehilangan lot/expiry. Duplicate delivery, selisih harga, kondisi barang, biaya yang belum jelas, dan capability outlet ditangani fail-closed atau masuk review Owner.
+- Evidence tetap privat pada filesystem VPS dengan checksum, validasi struktur/dimensi gambar, batas kapasitas dan concurrency, encrypted recovery set DB+credential+media, monitor 60 detik, serta maintenance timer. Adapter object storage belum diaktifkan (`objectStorageMigrationReady=false`).
+- Static/type check 516 modul, acceptance gabungan 86/86, attendance/mobile regression 5/5, package, backup/restore, recovery rehearsal, activation, schema companion V1–V4, Nginx, monitor, timer, dan public 200/401/403 smoke lulus. Ledger utama tetap 34.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`. Tax/discount receipt dan koreksi receipt yang sudah `POSTED` tetap ditolak sampai kontrak canonical tersedia.
+
 ## 2026-09-17 — Absensi terjadwal dengan GPS dan foto wajah aktif di production
 
 - `CONFIRMED`: exact source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard) dan [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.

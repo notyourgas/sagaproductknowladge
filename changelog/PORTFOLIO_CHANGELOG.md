@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-17 — SagaPOS staff receiving hardening aktif
+
+- `CONFIRMED`: SagaPOS source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif di production dengan rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
+- Penerimaan barang staf kini tahan refresh/koneksi lambat, mendukung multi-foto, supplier/PO/fee, multi-lot, duplicate dan price-variance review, serta recovery `POSTING` yang idempoten. Owner mendapat detail evidence dan blocker operasional.
+- Evidence tetap privat di VPS dengan backup media, capacity guard, monitor, dan maintenance timer. Object storage, tax/discount canonical, koreksi receipt posted, serta authenticated real-device UAT masih terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-17 - COYABAG mobile finalization deployed
 
 - `CONFIRMED`: source `54f571d7f81902cd7b32787c1e1265df943a7977`

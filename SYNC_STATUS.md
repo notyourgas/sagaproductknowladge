@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 — SagaPOS staff receiving hardening
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif di production, rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
+- Synced: durable photo queue, retry/timeout, correction/resubmit, supplier/PO/fee, multi-lot, duplicate delivery, price variance, outlet capability, posting recovery, storage capacity/integrity, backup media, monitor dan maintenance timer.
+- Evidence: static/type check 516 modul; acceptance gabungan 86/86; attendance/mobile regression 5/5; artifact, target admission, schema companion V1–V4, backup/restore, recovery rehearsal, activation, exact-source health, Nginx, monitor/timer dan public 200/401/403 smoke PASS. Main ledger 34.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+- Next: staf merekam satu kiriman fisik dari HP dan Owner memeriksa foto, meminta koreksi bila perlu, approve, lalu mencocokkan movement stok. Object storage, tax/discount canonical, dan posted-receipt reversal tetap backlog.
+
 ## 2026-09-17 - COYABAG mobile finalization
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

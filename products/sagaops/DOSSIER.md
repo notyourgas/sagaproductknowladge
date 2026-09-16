@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Kontrak operasional penerimaan barang staf V4
+
+Source production `81154a727e601b0e5cc94e601593a750cd61b25b` memperkeras penerimaan barang dari Portal Staff sampai posting stok canonical. Foto dipersistenkan pada antrean perangkat, dipulihkan setelah refresh, dan diunggah dengan timeout serta retry per objek. Submit membekukan revisi form agar upload lambat tidak mencampur payload lama dan baru.
+
+Server menyimpan supplier, PO, business date, fee tambahan, detail lot/expiry, kondisi dan sumber biaya sebagai snapshot audit. Bahan yang sama boleh hadir dalam beberapa lot dan diagregasi menjadi satu line canonical sambil mempertahankan detail per lot. Duplicate delivery, price variance, biaya yang belum jelas, quantity/condition tidak konsisten, serta capability outlet ditahan sebelum posting atau diarahkan ke review Owner. Retry `POSTING` memakai claim durable dan operation fingerprint agar respons canonical yang hilang tidak menggandakan stok.
+
+Evidence VPS diverifikasi melalui checksum, ukuran, dimensi, struktur file, metadata privat, ruang disk/inode, dan batas concurrent write. Backup terenkripsi mencakup database, credential integrity, dan media evidence; monitor dan maintenance timer aktif. Storage masih `FILESYSTEM_VPS` dan adapter object storage belum dinyatakan siap migrasi.
+
+Companion schema V1–V4 terpasang dengan checksum exact sementara main ledger tetap 34. Static/type check 516 modul, acceptance gabungan 86/86, attendance/mobile regression 5/5, immutable artifact, disposable recovery rehearsal, activation, exact-source health, Nginx timeout, timer, dan public negative-auth smoke lulus. Rollback menunjuk `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
+
+Tax/discount nonzero ditolak karena canonical receipt belum memiliki kontraknya. Koreksi receipt `POSTED` juga tetap `BLOCKED_CANONICAL_UNSUPPORTED` agar tidak membuat reversal palsu. UAT staf dan Owner pada perangkat serta kiriman fisik belum dilakukan; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Attendance evidence mobile dan review Owner
 
 - `CONFIRMED`: release production `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36`, rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`, tanpa perubahan ledger 34 migrasi.

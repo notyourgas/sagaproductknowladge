@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 — SagaPOS staff receiving hardening aktif
+
+- `CONFIRMED`: exact production source `81154a727e601b0e5cc94e601593a750cd61b25b`; rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
+- Staf dapat menyimpan dan melanjutkan draft barang datang, mengunggah beberapa foto dengan retry per foto, mencatat beberapa lot bahan yang sama, supplier/PO, business date, serta biaya pengiriman/handling/other. Form tidak dapat berubah diam-diam selama upload atau submit.
+- Owner melihat foto beserta provenance, line disposition, referensi biaya, selisih harga, timestamp, duplicate-delivery warning, correction/resubmit, dan pemulihan receipt yang tertahan di `POSTING`. Posting canonical tetap idempoten dan outlet-scoped.
+- Evidence tersimpan privat pada VPS dengan capacity/concurrency guard, validasi gambar, encrypted DB+media recovery, monitor dan maintenance timer. `objectStorageMigrationReady=false`; perpindahan storage tetap fase terpisah.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`. Tax/discount receipt dan reversal untuk receipt yang sudah posted ditolak fail-closed sampai canonical contract tersedia.
+
 ## Update 2026-09-17 - COYABAG mobile finalization aktif
 
 - `CONFIRMED`: exact production source
