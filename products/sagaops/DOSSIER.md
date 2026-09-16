@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Schedule rows, staffing bounds, dan rolling pattern
+
+Source production `1e510299bcd8d7aedba79e7e030b86550562b623` menambah panel Pengaturan Jadwal sebelum Generate. Owner dapat memakai empat preset sebagai titik awal atau mengubah tujuh schedule row: izin libur per hari serta minimum/maksimum orang pada setiap template shift. Durasi rolling dapat dipilih per 1, 2, atau 3 hari sehingga assignment tidak mengunci orang yang sama pada pagi atau sore terus-menerus.
+
+Generator mengisi minimum coverage lebih dahulu, memprioritaskan staf dengan pilihan paling sempit, lalu mendistribusikan sisa kapasitas dengan batas maksimum dan riwayat target shift. Validasi menolak hari yang hilang/duplikat, min di atas max, aturan tanpa hari libur yang diizinkan, dan publish yang tidak lagi memenuhi staffing bounds. Approved absence dapat menggantikan libur otomatis tanpa melonggarkan role, availability, rest, hours, consecutive-day, atau locked-cell guard.
+
+Rilis code-only tidak mengubah 34 migrasi atau service unit. Full suite efektif lulus 1.304/1.376 dengan 71 expected skip dan 1 TODO, focused 22/22, static check dan audit dependency 0. Backup terenkripsi dengan disposable restore, tiga boot recovery terisolasi, activation atomik, health/monitor/HTTPS lulus; rollback menunjuk `537a9aef3363ac18cdef5f4dda518b5430dbb267`. Authenticated Owner UAT dan offsite restore belum dibuktikan, sehingga `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Native work-time report dan payroll readiness
 
 Source production `537a9aef3363ac18cdef5f4dda518b5430dbb267` menyatukan pengelolaan tim, template shift, roster, absensi, permohonan, dan laporan jam kerja di Owner Dashboard SagaPOS. Owner membuat akun karyawan dari record staf; Employee ID dibuat server dan password sementara hanya tampil sekali. Portal karyawan native memakai Employee ID/password pada `staff.sagapos.site`, tanpa membuka aplikasi SagaWork. Jalur `/hr`, `/api/hr/*`, `/api/hrpos/*`, dan API staf bridge lama ditutup pada runtime production.

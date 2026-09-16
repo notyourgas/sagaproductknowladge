@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS schedule rules dan rolling shift aktif
+
+- `CONFIRMED`: source `1e510299bcd8d7aedba79e7e030b86550562b623` aktif di production dengan rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.
+- Owner mengatur hari libur, min/max orang per shift dan pola rolling 1–3 hari sebelum generate; preset adaptif, empat staf, lima staf, dan weekend ramai tersedia serta dapat diedit.
+- Rilis code-only lulus full/focused test, backup/restore, recovery, activation, 34 migrasi, health, monitor dan HTTPS. `AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS HR native: laporan jam kerja dan payroll preview
 
 - `CONFIRMED`: source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif di production dengan rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.

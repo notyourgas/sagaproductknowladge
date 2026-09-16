@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS schedule rules dan rolling shift
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source `1e510299bcd8d7aedba79e7e030b86550562b623` aktif di production, rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.
+- Synced: preset roster, schedule row Senin–Minggu, hari libur yang boleh dipakai, min/max tiap shift, rolling 1–3 hari, fairness generator, serta validasi generate/publish.
+- Evidence: focused 22/22; full 1.304 pass/0 fail/71 skip/1 TODO dari 1.376; static/audit 0; artifact, encrypted backup/restore, recovery rehearsal, activation, exact health, 34 migrasi, monitor dan HTTPS PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Owner menguji satu bulan dengan staf dan kebutuhan coverage nyata; offsite restore tetap pending.
+
 ## 2026-09-16 — SagaPOS HR native dan payroll preview
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif di production, rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.

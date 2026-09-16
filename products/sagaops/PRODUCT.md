@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Aturan jadwal dan pola rolling shift aktif di production
+
+- `CONFIRMED`: exact source `1e510299bcd8d7aedba79e7e030b86550562b623` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.
+- Sebelum generate roster, Owner memilih pola `Tim aktual`, `Seimbang 4 staf`, `Seimbang 5 staf`, atau `Weekend ramai`, lalu dapat mengatur hari yang boleh dipakai untuk libur serta minimum/maksimum staf tiap shift untuk Senin–Minggu.
+- Rolling shift dapat memakai blok 1, 2, atau 3 hari. Generator membagi target shift secara deterministik dan tetap memprioritaskan role, availability/izin, jeda, batas jam, hari berturut-turut, dan locked cell; seorang staf tidak dipertahankan terus pada shift pagi bila pilihan valid tersedia.
+- Aturan tersimpan bersama periode roster dan dimuat kembali untuk revisi. Tidak ada perubahan schema, credential, payment, Member, atau data jadwal aktif sampai Owner menekan Generate lalu Publish.
+- Focused 22/22; full 1.304 pass, 0 fail, 71 skip, 1 TODO dari 1.376; static check dan production dependency audit 0. Artifact immutable, backup/restore, rehearsal kandidat–rollback–kandidat, activation, exact-source health, 34 migrasi, monitor, dan HTTPS lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite backup masih `UNVERIFIED`.
+
 ## 2026-09-16 — Laporan jam kerja dan payroll preview native aktif di SagaPOS
 
 - `CONFIRMED`: source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `2d47ee3cfe4da90c1325df5923bf739d52a35598`.

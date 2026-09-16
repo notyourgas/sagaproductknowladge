@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-16 — SagaPOS schedule rules dan rolling shift aktif
+
+- `CONFIRMED`: production source `1e510299bcd8d7aedba79e7e030b86550562b623`, rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`, pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard).
+- Sebelum Generate, Owner memilih preset adaptif/seimbang 4 staf/seimbang 5 staf/weekend ramai dan dapat mengedit schedule row Senin–Minggu: hari yang boleh libur serta minimum/maksimum staf per shift. Rolling berlangsung dalam blok 1–3 hari agar orang yang sama tidak terus berada pada pagi atau sore.
+- Guard role, availability/izin, rest, jam mingguan, consecutive day, locked cell, min/max coverage, review dan publish tetap berlaku. Schema/payment/Member tidak berubah. Authenticated Owner UAT dan offsite restore masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS HR native dan payroll preview aktif
 
 - `CONFIRMED`: production source `537a9aef3363ac18cdef5f4dda518b5430dbb267`, rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.

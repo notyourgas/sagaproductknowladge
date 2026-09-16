@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi SagaPOS schedule rules dan rolling shift
+
+- `CONFIRMED`: exact source `1e510299bcd8d7aedba79e7e030b86550562b623` aktif di production; rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.
+- Knowledge SagaOPS diperbarui untuk preset roster, schedule row harian, hari libur, min/max coverage, rolling 1–3 hari, fairness generator, evidence release, dan batas UAT.
+- Tidak ada credential, PII, tenant ID, perubahan schema, pricing, payment, Member, atau produk lain. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Sinkronisasi SagaPOS HR native dan payroll preview
 
 - `CONFIRMED`: exact source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif di production; rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.

@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Pengaturan jadwal dan rolling shift
+
+- `CONFIRMED`: production source `1e510299bcd8d7aedba79e7e030b86550562b623`, rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.
+- Added: empat preset roster, schedule row Senin–Minggu, hari libur yang diizinkan, min/max per shift, dan blok rolling 1–3 hari sebelum Generate.
+- Changed: generator membagi minimum coverage dan rotasi target shift secara adil tanpa melepas guard role, availability, izin, rest, jam kerja, hari berturut-turut, dan locked cell.
+- Evidence: focused 22/22; full 1.304 pass/0 fail/71 skip/1 TODO dari 1.376; check/audit 0; artifact, backup/restore, code-only recovery, activation, exact health, 34 migrasi, monitor dan HTTPS PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Native laporan jam kerja dan payroll preview
 
 - `CONFIRMED`: production source `537a9aef3363ac18cdef5f4dda518b5430dbb267`, rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
