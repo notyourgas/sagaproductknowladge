@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS Database Bahan satu pop-up aktif di production
+
+- `CONFIRMED`: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di Owner Dashboard, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Wizard lima tahap diganti dialog satu layar dengan form dan review langsung; tampilan ponsel bertumpuk dan draft sesi tetap terjaga saat ditutup.
+- Kandidat final lulus check, backend 7/7, dan browser 4/4; full suite implementation cut menghasilkan 1.278 pass, 0 fail, 71 skip, dan 1 todo dari 1.350. Backup/restore, recovery, aktivasi, schema 34 migrasi, HTTPS/aset exact, dan monitor lulus. Authenticated Owner UAT pending; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Progress PRD tetap 101/198 (51%), payment/gateway/Member OFF; produk lain tidak berubah.
+
 ## 2026-09-16 — SagaPOS: HPP menu inactive aktif di production
 
 - `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` aktif di production, rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Menu inactive tetap dapat draft/publish HPP dan memiliki current HPP tanpa kembali sellable; readiness coverage hanya untuk menu active.

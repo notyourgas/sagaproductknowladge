@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS Database Bahan satu pop-up
+
+- Status `accepted`; klasifikasi `CONFIRMED`. Production source `f9540071fa5e64552f74848c7615d5872c00144f`, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`.
+- Synced: seluruh input tambah bahan berada pada satu dialog dengan review langsung; desktop memakai dua kolom, ponsel bertumpuk, validasi seluruh form dan draft sesi tetap tersedia. Tidak ada perubahan schema/backend authority.
+- Evidence: kandidat final lulus check, backend 7/7 dan browser 4/4; full suite implementation cut menghasilkan 1.278 pass, 0 fail, 71 skip, dan 1 todo dari 1.350. Backup terenkripsi/restore sementara, code-only recovery, aktivasi, health 34 migrasi, HTTPS/aset exact, monitor, dan disk 89%. GitHub Quality dilewati atas keputusan Owner.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Progress PRD tetap 101/198 (51%). Next: Owner login ke production, buka Stok & HPP → Database Bahan → Tambah bahan, lalu verifikasi review dan simpan dengan data uji.
+
 ## 2026-09-16 — SagaPOS HPP menu inactive production
 
 - Status `accepted`; klasifikasi `CONFIRMED`. Production source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`), rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`.

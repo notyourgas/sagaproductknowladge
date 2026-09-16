@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Database Bahan satu pop-up aktif di production
+
+- `CONFIRMED`: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`.
+- Tambah bahan membuka satu pop-up pada daftar Database Bahan. Semua field pilihan dan input tampil bersama, dengan review langsung di kanan pada desktop dan bertumpuk pada ponsel. Tidak ada wizard langkah demi langkah; Batal/Escape menyimpan draft sesi dan kembali ke daftar.
+- Validasi seluruh form dijalankan sebelum simpan. Perubahan unit langsung memperbarui label konversi dan ringkasan biaya; alur HPP tanpa bahan mengarahkan Owner ke pop-up yang sama. Kontrak backend, schema, stok, menu inactive, payment, dan Member tidak berubah.
+- Static check, tes backend 7/7 dan browser 4/4 desktop-mobile/accessibility/overflow pada kandidat final lulus. Full repository pada implementation cut menghasilkan 1.278 pass, 0 fail, 71 skip, dan 1 todo dari 1.350. Paket exact-source, backup terenkripsi/restore sementara, recovery rehearsal, aktivasi, health 34 migrasi, HTTPS/aset exact, dan monitor production lulus; disk 89%. GitHub Quality dilewati atas keputusan Owner.
+- Progress PRD tetap 101/198 (51%) karena rilis UI ini tidak menambah requirement yang telah diaudit. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment/gateway/Member tetap OFF.
+
 ## 2026-09-16 — HPP menu inactive aktif di production
 
 - `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`) aktif di production; rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`.

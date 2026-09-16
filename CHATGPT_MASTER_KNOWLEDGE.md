@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-16 — SagaPOS Database Bahan satu layar aktif di production
+
+- `CONFIRMED`: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard), rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Tambah bahan memakai satu pop-up berisi seluruh field dengan review langsung di kanan pada desktop dan bertumpuk pada ponsel; tidak ada wizard.
+- Validasi dilakukan untuk seluruh form sebelum simpan, draft sesi bertahan saat dialog ditutup, perubahan unit memperbarui konversi/biaya, dan alur HPP tanpa bahan membuka pop-up ini. Backend/schema/stok/HPP/menu inactive tidak berubah.
+- Kandidat final lulus static check, backend 7/7, dan browser 4/4; full repository pada implementation cut menghasilkan 1.278 pass, 0 fail, 71 skip, dan 1 todo dari 1.350. Backup/restore, recovery, aktivasi, 34 migrasi, HTTPS/aset exact dan monitor lulus. GitHub Quality dilewati atas keputusan Owner; authenticated Owner UAT pending. Progress PRD 101/198 (51%); `PRODUCTION_ACTIVATED / BUSINESS_READY=false`, payment/gateway/Member OFF.
+
 ## 2026-09-16 — SagaPOS HPP menu inactive aktif di production
 
 - `CONFIRMED`: production source `c1f7ff043fde636c00f8094ba99959357a5e1828`, rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Owner dapat draft/publish HPP untuk menu inactive; current HPP tersedia, tetapi menu tetap archived dan tidak sellable. Readiness coverage hanya menilai menu active.

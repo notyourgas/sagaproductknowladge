@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Form Database Bahan satu layar
+
+Source `f9540071fa5e64552f74848c7615d5872c00144f` mengganti wizard lima tahap dengan dialog native satu layar di atas daftar Database Bahan. Field identitas, kategori, unit, konversi kemasan, harga, supplier, dan kontrol tersedia bersama. Review langsung berada di kanan pada desktop dan di bawah form pada ponsel; perubahan input segera memperbarui ringkasan. Batal atau Escape mempertahankan draft selama sesi, sedangkan satu aksi simpan menjalankan validasi seluruh form dan kontrak backend atomik yang sama.
+
+Rilis code-only aktif di production dengan rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Kandidat final lulus static check, backend 7/7 dan browser 4/4; full repository pada implementation cut menghasilkan 1.278 pass, 0 fail, 71 skip, dan 1 todo dari 1.350. Backup/restore, rehearsal, aktivasi, health/34 migrasi, HTTPS/aset exact, dan monitor lulus; kapasitas akhir 89%. Tidak ada perubahan schema, engine stok/HPP, status menu inactive, payment, atau Member. GitHub Quality dilewati atas keputusan Owner. Authenticated Owner UAT belum dibuktikan karena helper credential tidak tersedia, sehingga `PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Coverage PRD tetap 101/198 (51%).
+
 ## 2026-09-16 — HPP tetap tersedia saat menu inactive
 
 Source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`) memisahkan lifecycle menu dari lifecycle resep. Owner dapat menyimpan draft dan mem-publish HPP untuk menu inactive; current HPP tetap tersedia untuk histori dan pengelolaan biaya, sedangkan menu tetap archived dan tidak dapat dijual. Readiness coverage hanya memakai menu active agar menu arsip tidak menimbulkan false blocker.

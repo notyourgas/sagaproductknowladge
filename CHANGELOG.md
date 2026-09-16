@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi production Database Bahan satu layar SagaPOS
+
+- `CONFIRMED`: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di production, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Wizard lima tahap diganti satu pop-up form dengan review langsung desktop/mobile.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, keputusan, gaps, dan sync status. Tidak ada credential, data restricted, perubahan pricing, atau perubahan payment.
+- Kandidat final lulus check, backend 7/7, dan browser 4/4; full suite implementation cut menghasilkan 1.278 pass, 0 fail, 71 skip, dan 1 todo dari 1.350. Code-only recovery/activation, health 34 migrasi, HTTPS/aset exact, dan monitor lulus. Authenticated Owner UAT pending; progress tetap 101/198 (51%), `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Sinkronisasi production SagaPOS HPP menu inactive
 
 - `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`) aktif di production; rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Menu inactive dapat draft/publish HPP tanpa menjadi sellable, dan coverage readiness hanya menilai menu active.

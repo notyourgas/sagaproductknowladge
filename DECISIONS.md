@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-198 — Database Bahan SagaPOS memakai satu pop-up dengan review langsung
+
+- Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: interaksi Owner saat menambahkan bahan.
+- Keputusan: ganti wizard lima tahap dengan satu dialog. Semua dropdown dan input tersedia pada satu form; review langsung berada di kanan pada desktop dan bertumpuk pada ponsel.
+- Alasan: Owner perlu melihat kelengkapan dan hasil input tanpa berpindah langkah.
+- Dampak: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di production, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Backend/schema/stok/HPP/payment/Member tidak berubah. Authenticated Owner UAT dan `BUSINESS_READY` tetap terpisah.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md).
+
 ## DEC-197 — HPP SagaPOS diedit sebagai pop-up resep tanpa wizard
 
 - Tanggal: 2026-09-15. Status: `CONFIRMED`; pemberi keputusan Andreas.

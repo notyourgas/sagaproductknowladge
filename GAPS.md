@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-16 — Residual setelah Database Bahan satu layar aktif
+
+- `CONFIRMED`: production source `f9540071fa5e64552f74848c7615d5872c00144f`, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`; wizard bahan telah diganti satu pop-up form dengan review langsung.
+- `CONFIRMED`: kandidat final lulus check, backend 7/7 dan browser 4/4; full suite implementation cut menghasilkan 1.278 pass, 0 fail, 71 skip, dan 1 todo dari 1.350. Code-only backup/recovery/aktivasi, health 34 migrasi, HTTPS/aset exact, dan monitor lulus; disk 89%. Payment/gateway/Member OFF.
+- `NEEDS CONFIRMATION`: authenticated Owner UAT belum berjalan karena helper credential lokal tidak tersedia. Jangan nyatakan business-ready sebelum alur Tambah bahan disimpan dengan data uji melalui sesi Owner production. Progress PRD tetap 101/198 (51%); `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Residual setelah HPP menu inactive aktif
 
 - `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` aktif di production, rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`; menu inactive dapat draft/publish HPP tanpa menjadi sellable dan readiness coverage hanya menilai menu active.

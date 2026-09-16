@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Database Bahan menjadi satu pop-up dengan review langsung
+
+- Sebelum: tambah bahan memakai wizard lima tahap yang memisahkan identitas, satuan, pembelian, kontrol, dan review.
+- Setelah: seluruh form ada dalam satu dialog; review di kanan memperbarui identitas, kategori/satuan, konversi, harga, biaya unit, dan status verifikasi kemasan. Pada ponsel form dan review bertumpuk dengan aksi simpan yang mudah dijangkau.
+- `CONFIRMED`: production source `f9540071fa5e64552f74848c7615d5872c00144f`, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Kandidat final lulus check, backend 7/7, dan browser 4/4; full suite implementation cut menghasilkan 1.278 pass, 0 fail, 71 skip, dan 1 todo dari 1.350. Code-only recovery/activation, 34 migrasi, HTTPS/aset exact, dan monitor lulus.
+- Authenticated Owner UAT masih pending karena helper credential lokal tidak tersedia saat verifikasi otomatis. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`; progress PRD tetap 101/198 (51%), payment/gateway/Member OFF.
+
 ## 2026-09-16 — HPP menu inactive aktif di production
 
 - Sebelum: lifecycle resep mengikuti status menu sehingga menu inactive dapat kehilangan current HPP atau tidak dapat mem-publish revisi.
