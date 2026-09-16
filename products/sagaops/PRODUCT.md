@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Maksimal satu libur terjadwal per hari
+
+- `CONFIRMED`: exact source `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `61fd150de7b3d803219d618a1d8dc3f3524ff156`.
+- Generator roster tidak lagi menempatkan lebih dari satu libur terjadwal pada tanggal yang sama. Jika jumlah hari libur yang diizinkan tidak cukup, sistem menampilkan konflik yang dapat ditindaklanjuti dan menahan publish, bukan menumpuk dua staf libur.
+- Edit manual Owner menolak libur terjadwal kedua pada tanggal yang sudah dipakai. Publish memvalidasi ulang aturan ini agar draf lama yang sudah memiliki duplikasi tidak dapat lolos.
+- Sakit, izin, atau cuti yang disetujui tetap diproses sebagai exception melalui approval dan tidak dipalsukan sebagai libur terjadwal. Draf lama perlu di-Generate ulang untuk memakai aturan baru.
+- Focused 27/27; full suite 1.429 test: 1.357 pass, 0 fail, 71 expected skip, 1 TODO. Backup/restore, recovery rehearsal, activation, exact-source health, dashboard publik, dan 34 migrasi lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite restore tetap `UNVERIFIED`.
+
 ## 2026-09-16 — Lifecycle dan costing produksi bahan olahan diperkeras
 
 - `CONFIRMED`: exact source `61fd150de7b3d803219d618a1d8dc3f3524ff156` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.

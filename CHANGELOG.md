@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi batas satu libur harian SagaPOS
+
+- `CONFIRMED`: exact source `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e` aktif di production; rollback `61fd150de7b3d803219d618a1d8dc3f3524ff156`.
+- Knowledge SagaOPS diperbarui untuk batas satu libur terjadwal per tanggal pada generator, edit manual dan publish, exception approval, konflik actionable, evidence release, serta flow UAT.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, decision log, gaps, dan sync status. Tidak ada credential, PII, identifier privat, perubahan schema, pricing, payment, provider, atau produk lain.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Sinkronisasi SagaPOS prep production hardening
 
 - `CONFIRMED`: exact source `61fd150de7b3d803219d618a1d8dc3f3524ff156` aktif di production; rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.

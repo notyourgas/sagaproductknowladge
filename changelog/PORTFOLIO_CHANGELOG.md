@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS membatasi satu libur terjadwal per hari
+
+- `CONFIRMED`: SagaPOS production berpindah ke exact source `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`, rollback `61fd150de7b3d803219d618a1d8dc3f3524ff156`.
+- Generator, edit manual Owner, dan publish kini mencegah lebih dari satu libur terjadwal pada tanggal yang sama. Ketidakcukupan hari libur menghasilkan konflik operasional, sedangkan sakit/izin/cuti tetap melalui approval sebagai exception.
+- Schema tetap 34 migrasi; pricing, payment, credential, provider, dan produk lain tidak berubah. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS prep production hardening aktif
 
 - `CONFIRMED`: SagaPOS production berpindah ke exact source `61fd150de7b3d803219d618a1d8dc3f3524ff156`, rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.

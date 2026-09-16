@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-16 — Residual setelah batas satu libur harian aktif
+
+- `CONFIRMED`: source production `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e` menegakkan maksimal satu libur terjadwal per tanggal pada generator, edit manual Owner, dan publish tanpa migration baru.
+- `CONFIRMED`: sakit, izin, atau cuti yang disetujui tetap exception approval dan dapat membuat ketidakhadiran nyata lebih dari satu orang; kondisi itu harus terlihat sebagai exception operasional, bukan dilanggar atau disembunyikan oleh generator.
+- `NEEDS CONFIRMATION`: authenticated Owner UAT belum membuktikan Generate ulang, penolakan edit libur kedua, conflict action, dan publish dengan jumlah staf serta aturan hari libur nyata.
+- Dampak: kontrak aplikasi aktif di production, tetapi validasi flow manusia dan pemulihan offsite masih menahan `BUSINESS_READY=true`.
+
 ## 2026-09-16 — Residual setelah prep production hardening aktif
 
 - `CONFIRMED`: source production `61fd150de7b3d803219d618a1d8dc3f3524ff156` memperkeras recipe graph, lifecycle plan/cancel/expire, completion guard, output lot/expiry, serta projected costing bahan olahan dan menu downstream. Full suite lulus tanpa failure dan ledger tetap 34 migrasi.

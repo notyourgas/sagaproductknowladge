@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS maksimal satu libur terjadwal per hari
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e` aktif di production, rollback `61fd150de7b3d803219d618a1d8dc3f3524ff156`.
+- Synced: batas satu libur terjadwal pada generator/edit manual/publish, exception approval untuk sakit/izin/cuti, konflik actionable, serta perilaku minggu parsial.
+- Evidence: focused 27/27; full 1.429 test dengan 1.357 pass/0 fail/71 expected skip/1 TODO; immutable artifact, encrypted backup/restore, recovery rehearsal, activation, exact health 34 migrasi, dan public dashboard PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+- Next: Owner Generate ulang satu bulan uji, memastikan satu `L` per tanggal, mencoba penolakan libur kedua, lalu publish; offsite restore tetap `UNVERIFIED`.
+
 ## 2026-09-16 — SagaPOS prep production hardening
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `61fd150de7b3d803219d618a1d8dc3f3524ff156` aktif di production, rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.

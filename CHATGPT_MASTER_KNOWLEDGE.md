@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-16 — SagaPOS maksimal satu libur terjadwal per tanggal
+
+- `CONFIRMED`: exact production source `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`; rollback `61fd150de7b3d803219d618a1d8dc3f3524ff156`.
+- Generator mengalokasikan maksimal satu libur terjadwal per tanggal. Edit manual Owner dan publish memvalidasi aturan yang sama; draf lama dengan duplikasi tidak dapat dipublikasikan.
+- Bila hari libur yang diizinkan tidak cukup untuk jumlah staf, sistem menampilkan konflik dan meminta pengaturan diperluas atau jadwal disesuaikan. Sakit, izin, dan cuti yang disetujui tetap exception approval, bukan libur terjadwal.
+- Flow UAT: Tim & Shift → Jadwal → Simpan aturan → Generate ulang → pastikan hanya satu `L` per tanggal → coba edit libur kedua → review → publish.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; ledger tetap 34 migrasi dan offsite restore belum diverifikasi.
+
 ## Update 2026-09-16 — SagaPOS prep production hardening
 
 - `CONFIRMED`: exact production source `61fd150de7b3d803219d618a1d8dc3f3524ff156`; rollback `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`.

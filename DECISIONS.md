@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-202 — Maksimal satu libur terjadwal per tanggal pada SagaPOS
+
+- Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: batas libur harian pada roster SagaPOS.
+- Keputusan: dalam satu tanggal dan lingkup roster aktif, maksimal satu staf dapat mempunyai libur terjadwal. Generator, edit manual Owner, dan publish wajib menegakkan batas yang sama. Sakit, izin, dan cuti yang disetujui tetap diproses sebagai exception approval dan tidak disamarkan sebagai libur terjadwal.
+- Alasan: coverage perusahaan tidak boleh berkurang karena dua staf dijadwalkan libur pada hari yang sama, tetapi keadaan darurat yang disetujui tetap harus direkam secara benar.
+- Alternatif: menumpuk libur ketika hari yang diizinkan tidak cukup tidak dipakai. Sistem mengeluarkan konflik dan meminta Owner memperluas hari libur atau menyesuaikan jadwal.
+- Dampak: source `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e` aktif di production tanpa migration baru. Draf lama perlu di-Generate ulang; authenticated Owner UAT dan `BUSINESS_READY` tetap terpisah.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md), [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-201 — Bahan olahan memakai transformasi stok tanpa pengurangan ganda
 
 - Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
