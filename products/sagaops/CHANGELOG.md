@@ -4,8 +4,8 @@
 
 - Sebelum: versi resep published dapat tampil berdampingan dengan HPP belum tersedia tanpa alasan jelas, sehingga draft atau riwayat versi mudah disalahartikan sebagai HPP aktif.
 - Setelah: dashboard memisahkan simulasi draft, histori published, dan HPP aktif; memberi alasan untuk menu nonaktif atau biaya/referensi bahan yang belum lengkap; serta meminta pemeriksaan versi/HPP setelah publish. Publish baru menu nonaktif ditolak server.
-- `CONFIRMED` source `78c0601a78799ea222ef70fbb9776226c8db5521`, [draft PR #23](https://github.com/notyourgas/sagaops/pull/23). PR mencatat `npm run check`, 9/9 tes backend/server, 1/1 tes browser, audit dependency produksi 0 temuan, dan diff check. CI Quality tidak mulai karena billing GitHub.
-- Penyebab record production yang dilaporkan `NEEDS CONFIRMATION`; tidak ada data production yang diubah. `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; runtime production exact source belum diverifikasi ulang.
+- `CONFIRMED` source `c62446a98f8b1d94e7059174d64949e64794e17f` (tree `a27df6793bf45c1161f34919bc03d3b057b1ac06`), [draft PR #23](https://github.com/notyourgas/sagaops/pull/23). Validasi terbaru: `npm run check`, 9/9 tes backend/server HPP, 1/1 browser HPP, 1/1 browser UI/UX dashboard, audit dependency produksi 0 kerentanan, dan diff check lulus. CI Quality sebelumnya tidak mulai karena billing GitHub.
+- Penyebab record production Cafe Latte `NEEDS CONFIRMATION`; tidak ada data production yang diubah. `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; runtime production exact source belum diverifikasi ulang.
 
 ## 2026-09-15 — Pop-up resep HPP aktif pada domain asli
 

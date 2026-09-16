@@ -2,9 +2,9 @@
 
 ## 2026-09-16 — Sinkronisasi kandidat SagaPOS kejelasan HPP draft/published
 
-- `CONFIRMED`: source `78c0601a78799ea222ef70fbb9776226c8db5521` pada [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) menjelaskan histori published dan alasan HPP aktif kosong, lalu menolak publish baru menu nonaktif.
-- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, dan sync status. Penyebab record production masih `NEEDS CONFIRMATION`; tidak ada credential, data restricted, atau mutasi production.
-- Validasi tercatat di PR: check, 9/9 tes HPP backend/server, 1/1 browser, audit dependency produksi 0, diff check. CI Quality belum berjalan akibat billing. Delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- `CONFIRMED`: source `c62446a98f8b1d94e7059174d64949e64794e17f` (tree `a27df6793bf45c1161f34919bc03d3b057b1ac06`) pada [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) menjelaskan histori published dan alasan HPP aktif kosong, lalu menolak publish baru menu nonaktif.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, dan sync status. Penyebab record production Cafe Latte masih `NEEDS CONFIRMATION`; tidak ada credential, data restricted, atau mutasi production.
+- Validasi terbaru: check, 9/9 tes HPP backend/server, 1/1 browser HPP, 1/1 browser UI/UX dashboard, audit dependency produksi 0 kerentanan, dan diff check lulus. CI Quality sebelumnya belum berjalan akibat billing. Delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
 ## 2026-09-15 — Aktivasi production pop-up resep HPP SagaPOS
 

@@ -2,8 +2,8 @@
 
 ## 2026-09-16 — SagaPOS: kejelasan HPP draft/published pada kandidat
 
-- Source `78c0601a78799ea222ef70fbb9776226c8db5521` di [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) membedakan simulasi draft, histori resep published, dan HPP aktif; menjelaskan alasan HPP kosong serta menolak publish menu nonaktif. Penyebab record production yang dilaporkan masih perlu pemeriksaan data terautentikasi.
-- Validasi PR: static check, HPP backend/server 9/9, browser 1/1, audit dependency produksi 0, diff check. CI Quality belum menjalankan job akibat billing GitHub. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; tidak ada perubahan data production, payment, Member, atau produk lain.
+- Source `c62446a98f8b1d94e7059174d64949e64794e17f` (tree `a27df6793bf45c1161f34919bc03d3b057b1ac06`) di [draft PR #23](https://github.com/notyourgas/sagaops/pull/23) membedakan simulasi draft, histori resep published, dan HPP aktif; menjelaskan alasan HPP kosong serta menolak publish menu nonaktif. Penyebab record production Cafe Latte masih perlu pemeriksaan data terautentikasi.
+- Validasi terbaru: `npm run check`, HPP backend/server 9/9, browser HPP 1/1, browser UI/UX dashboard 1/1, audit dependency produksi 0 kerentanan, dan diff check lulus. CI Quality sebelumnya belum menjalankan job akibat billing GitHub. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; tidak ada perubahan data production, payment, Member, atau produk lain.
 
 ## 2026-09-15 — SagaPOS HPP recipe popup aktif di production
 
