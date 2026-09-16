@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Bahan olahan dan produksi batch
+
+- `CONFIRMED`: source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif di production; rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.
+- Added: sumber bahan dibeli/dibuat sendiri, resep olahan satu layar, plan/complete produksi batch, hasil aktual, susut, audit, koreksi, dan linked void.
+- Changed: menu dengan `STOCKED_PREP` mengurangi stok bahan hasil tanpa mengurangi ulang bahan mentah; shortage bahan hasil tidak memakai fallback recursive.
+- Evidence: acceptance 21/21, static/type check, exact artifact, backup/restore, recovery, activation, health/monitor/HTTPS/aset lulus; satu timeout kiosk tidak terkait lulus pada rerun terisolasi.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; ledger tetap 34 migrasi dan offsite restore masih `UNVERIFIED`.
+
 ## 2026-09-16 — Roster rules save dan weekly rotation v2
 
 - `CONFIRMED`: source `1b632bc841b6c7db923e18fdab062f7de6801765` aktif di production; rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.

@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-16 — SagaPOS bahan olahan dan produksi batch
+
+- `CONFIRMED`: exact production source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`; rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.
+- Owner memilih sumber bahan `Dibeli` atau `Dibuat sendiri`. Bahan dibuat sendiri memakai resep olahan dan diproduksi sebagai batch di Gudang dengan output aktual, lot/kedaluwarsa, susut, audit, koreksi, serta pembatalan yang dijaga oleh konsumsi downstream.
+- Menu hanya mengurangi bahan yang tercantum pada resep menu. Cafe Latte berbahan Espresso dan susu tidak mengurangi lagi biji kopi atau air; kekurangan Espresso tidak melakukan fallback otomatis ke bahan mentah.
+- Flow UAT: Database Bahan → tambah bahan dibuat sendiri → Atur resep olahan → Gudang → Produksi batch → cek saldo → pasang Espresso pada HPP Cafe Latte → publish → uji order PREPARING.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; inventory reporting tetap OFF, ledger tetap 34 migrasi, dan offsite restore belum diverifikasi.
+
 ## Update 2026-09-16 — SagaPOS simpan schedule rows dan rolling mingguan
 
 - `CONFIRMED`: exact production source `1b632bc841b6c7db923e18fdab062f7de6801765`; rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.

@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi SagaPOS bahan olahan dan produksi batch
+
+- `CONFIRMED`: exact source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif di production; rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.
+- Knowledge SagaOPS diperbarui untuk bahan dibuat sendiri, resep olahan, transformasi stok atomik, pencegahan pengurangan ganda, evidence rilis, batas reporting, dan flow UAT.
+- Tidak ada credential, PII, tenant ID, perubahan schema, pricing, payment, atau produk lain. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Sinkronisasi SagaPOS roster save dan weekly rotation v2
 
 - `CONFIRMED`: exact source `1b632bc841b6c7db923e18fdab062f7de6801765` aktif di production; rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.

@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS bahan olahan dan produksi batch
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif di production, rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.
+- Synced: sumber bahan, resep olahan satu layar, plan/complete batch atomik, hasil aktual/susut, idempotensi, linked void/correction, dan kontrak konsumsi tanpa pengurangan ganda.
+- Evidence: acceptance 21/21; static/type check; full 1.335 pass/71 expected skip/1 TODO dengan satu timeout kiosk yang lulus rerun terisolasi; immutable artifact, encrypted backup/restore, recovery rehearsal, activation, exact health 34 migrasi, monitor dan public HTTPS/aset PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Owner menguji satu batch Espresso kecil sampai konsumsi Cafe Latte; offsite restore masih `UNVERIFIED`.
+
 ## 2026-09-16 — SagaPOS roster rules save dan weekly rotation v2
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `1b632bc841b6c7db923e18fdab062f7de6801765` aktif di production, rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.

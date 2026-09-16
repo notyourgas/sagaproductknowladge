@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Kontrak bahan olahan dan transformasi stok
+
+Source production `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` memperluas master bahan dengan sumber `PURCHASED` atau `MADE_IN_HOUSE` serta tipe `PREP_ITEM`. Bahan dibuat sendiri tidak meminta supplier atau satuan pembelian. Owner menyusun resep olahan append-only melalui pop-up satu layar: jumlah hasil standar, unit hasil, komponen dan takaran, toleransi susut, serta review biaya sebelum disimpan.
+
+Produksi batch memakai alur plan lalu complete. Completion berjalan atomik: seluruh input bahan mentah keluar dari stock ledger dan output aktual masuk sebagai lot bahan olahan dengan biaya yang diwariskan dari input. Backflush menghitung pemakaian dari hasil; mode measured menerima pemakaian aktual. Susut normal masuk biaya hasil, sedangkan susut abnormal tetap terlihat sebagai selisih. Operation key, retry, restart, dan concurrency guard mencegah batch ganda saat respons jaringan hilang.
+
+Kontrak konsumsi menu adalah `STOCKED_PREP`: penjualan Cafe Latte mengonsumsi stok Espresso dan susu saja ketika status masuk PREPARING. Biji kopi dan air telah dikonsumsi pada transformasi Espresso, sehingga mesin tidak melakukan recursive explosion atau pengurangan ganda. Jika stok Espresso kurang, transaksi menampilkan shortage pada Espresso dan tidak menggantinya dengan bahan mentah. Void terhubung membalik seluruh kaki transformasi sebelum output dipakai; setelah ada konsumsi downstream, void ditolak dan koreksi tercatat sebagai kejadian baru.
+
+Rilis tidak menambah migrasi dan ledger tetap 34. Acceptance bahan olahan 21/21 serta static/type check lulus. Full suite menghasilkan 1.335 pass, 71 expected skip, 1 TODO, dan satu timeout kiosk tidak terkait yang lulus saat rerun terisolasi. Artifact immutable, backup terenkripsi/disposable restore, rehearsal kandidat–current–kandidat, aktivasi atomik, exact-source health, monitor, dan public HTTPS/aset lulus. Rollback menunjuk `1b632bc841b6c7db923e18fdab062f7de6801765`.
+
+Inventory reporting tetap OFF sesuai konfigurasi production dan tidak mematikan launcher Produksi batch. Authenticated Owner UAT dengan stok nyata dan offsite restore belum dibuktikan, sehingga `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Persistensi aturan roster dan fairness mingguan
 
 Source production `1b632bc841b6c7db923e18fdab062f7de6801765` menambahkan endpoint Owner yang menyimpan schedule rows secara terpisah dari Generate. UI mengirim periode bulan, optimistic version ketika periode sudah ada, pola, blok rolling, hari libur, serta minimum/maksimum setiap template shift. Validasi tetap menolak aturan tanpa hari libur dan batas minimum/maksimum yang tidak sah.

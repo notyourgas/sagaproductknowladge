@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Bahan olahan dan produksi batch aktif di production
+
+- `CONFIRMED`: exact source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.
+- Database Bahan kini membedakan bahan yang dibeli dan dibuat sendiri. Untuk bahan dibuat sendiri seperti Espresso, Owner mengatur resep olahan dalam pop-up satu layar dengan komponen, hasil standar, toleransi susut, dan review langsung.
+- Gudang menyediakan Produksi batch: bahan mentah berkurang dan bahan hasil bertambah secara atomik berdasarkan hasil aktual. Mode backflush atau pemakaian terukur, susut normal/abnormal, retry, koreksi, dan pembatalan terhubung tercatat dalam audit.
+- Menu yang memakai bahan olahan hanya mengurangi stok bahan hasil. Contoh Cafe Latte mengurangi Espresso dan susu ketika mulai dibuat; biji kopi dan air sudah dikurangi saat batch Espresso diproduksi sehingga tidak dikurangi dua kali. Kekurangan Espresso tidak otomatis meledakkan resep ke bahan mentah.
+- Tidak ada migrasi baru; ledger tetap 34. Acceptance bahan olahan 21/21 dan static/type check lulus. Full suite mencatat 1.335 pass, 71 expected skip, 1 TODO, serta satu timeout kiosk yang tidak terkait dan langsung lulus saat dijalankan terisolasi. Paket exact-source, backup/restore, rehearsal kandidat–current–kandidat, activation, health, monitor, dan HTTPS/aset lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; inventory reporting tetap OFF sesuai konfigurasi production, tetapi produksi batch tersedia. Offsite restore masih `UNVERIFIED`.
+
 ## 2026-09-16 — Simpan aturan roster dan rolling mingguan aktif di production
 
 - `CONFIRMED`: exact source `1b632bc841b6c7db923e18fdab062f7de6801765` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.

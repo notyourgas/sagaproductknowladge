@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS bahan olahan dan produksi batch aktif
+
+- `CONFIRMED`: SagaPOS production berpindah ke exact source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`, rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.
+- Owner dapat membuat bahan olahan, menyusun resep, dan menyelesaikan batch yang mengurangi bahan mentah serta menambah bahan hasil secara atomik. Menu mengonsumsi bahan hasil tanpa pengurangan ganda ke bahan mentah.
+- Produk lain, pricing, payment, credential, dan schema tidak berubah. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite restore belum diverifikasi.
+
 ## 2026-09-16 — SagaPOS roster save dan weekly fairness production
 
 - `CONFIRMED`: SagaPOS production berpindah ke exact source `1b632bc841b6c7db923e18fdab062f7de6801765`, rollback `47dc4ae3a13d3c982ad9670e489a854334e40d75`.
