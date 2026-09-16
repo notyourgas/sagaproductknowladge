@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Template rotasi empat staf Set A–D
+
+- `CONFIRMED`: source `1de842b4270cab2a8f9e9565f01f2a0c4a018689` aktif di production; rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.
+- Added: pilihan rotasi `Otomatis` dan Set A–D untuk pola empat staf/two-shift, beserta offset deterministik dan reason assignment.
+- Changed: Set A–D membatasi streak shift sejenis maksimal dua dan menampilkan konsekuensi jeda aktual 8 jam Sore→Pagi; mode Otomatis tetap 11 jam. Roster lama tidak berubah sebelum Simpan dan Generate.
+- Evidence: focused HR 27/27; full 1.362 pass/0 fail/71 expected skip/1 TODO dari 1.434; backup/restore, recovery rehearsal, activation, exact health 34 migrasi, monitor, public asset, dan retention 89% PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite restore `UNVERIFIED`.
+
 ## 2026-09-16 — Batas satu libur terjadwal per hari
 
 - `CONFIRMED`: source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` aktif di production; rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.

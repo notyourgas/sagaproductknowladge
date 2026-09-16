@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 — SagaPOS template rotasi Set A–D
+
+- `CONFIRMED`: exact production source `1de842b4270cab2a8f9e9565f01f2a0c4a018689`; rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.
+- Pada Tim & Shift → Pengaturan Jadwal, pola empat staf dengan dua shift menyediakan mode Otomatis serta Set A–D. Set menggeser pola deterministik Pagi/Sore antarkaryawan dan menjaga maksimal dua shift sejenis berturut-turut.
+- Set A–D memakai jeda aktual 8 jam untuk transisi Sore→Pagi pada template 07.00–15.00/15.00–23.00 dan menampilkan peringatan; mode Otomatis tetap memakai 11 jam. Roster yang sudah ada baru berubah setelah Owner Simpan aturan dan Generate ulang.
+- Flow UAT: pilih bulan → pola Seimbang 4 staf → pilih Set A/B/C/D → Simpan → Generate → periksa streak maksimal dua, satu libur per hari, coverage, dan konflik → Publish bila sesuai.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite restore belum diverifikasi.
+
 ## Update 2026-09-16 — SagaPOS maksimal satu libur terjadwal per tanggal
 
 - `CONFIRMED`: exact production source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83`; rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.

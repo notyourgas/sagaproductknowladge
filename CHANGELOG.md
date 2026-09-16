@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 — Sinkronisasi template rotasi Set A–D SagaPOS
+
+- `CONFIRMED`: exact source `1de842b4270cab2a8f9e9565f01f2a0c4a018689` aktif di production; rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.
+- Knowledge SagaOPS diperbarui untuk pilihan rotasi empat staf, batas streak, perbedaan jeda Set vs Otomatis, flow UAT, evidence release, dan residual risk.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, dan sync status. Tidak ada credential, PII, identifier privat, perubahan schema, pricing, payment, provider, atau produk lain.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 - Sinkronisasi checkout netral COYABAG
 
 - `CONFIRMED`: exact source `f60267263e1249098205c9928f0ac0590b9315b7`

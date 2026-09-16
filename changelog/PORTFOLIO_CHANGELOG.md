@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-17 — SagaPOS template rotasi empat staf Set A–D
+
+- `CONFIRMED`: SagaPOS production berpindah ke exact source `1de842b4270cab2a8f9e9565f01f2a0c4a018689`; rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.
+- Owner kini dapat memilih empat variasi rotasi deterministik untuk empat staf dan dua shift. Set membatasi streak shift sejenis maksimal dua; mode otomatis tetap tersedia dan roster lama tidak diubah sampai Generate.
+- Full suite, backup/restore, recovery rehearsal, activation, health, 34 migrasi, monitor, public asset, dan capacity gate lulus. Authenticated Owner UAT dan offsite restore masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-16 - COYABAG neutral checkout customer data
 
 - `CONFIRMED`: source `f60267263e1249098205c9928f0ac0590b9315b7`

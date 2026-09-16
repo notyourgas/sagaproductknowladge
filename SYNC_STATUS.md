@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 — SagaPOS template rotasi empat staf Set A–D
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `1de842b4270cab2a8f9e9565f01f2a0c4a018689` aktif di production, rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.
+- Synced: pilihan Otomatis/Set A–D, offset deterministik, batas streak maksimal dua, peringatan jeda aktual Set, dan flow Simpan–Generate–Review–Publish.
+- Evidence: focused HR 27/27; full 1.434 test dengan 1.362 pass/0 fail/71 expected skip/1 TODO; immutable artifact, encrypted backup/restore, recovery rehearsal, activation, exact health 34 migrasi, monitor, public UI asset, dan retention host ke 89% PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+- Next: Owner menguji Set A–D pada satu bulan nyata, memeriksa coverage/libur/streak dan menerima atau mengubah pola sebelum Publish; offsite restore tetap `UNVERIFIED`.
+
 ## 2026-09-16 - COYABAG checkout identitas dan tujuan netral
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

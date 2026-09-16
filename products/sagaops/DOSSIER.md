@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Kontrak template rotasi empat staf Set A–D
+
+Source production `1de842b4270cab2a8f9e9565f01f2a0c4a018689` menambah pilihan eksplisit `Otomatis`, `Set A`, `Set B`, `Set C`, dan `Set D` pada Pengaturan Jadwal. Pilihan hanya aktif untuk pola `balanced_4`, empat staf, dan tepat dua template shift aktif. Set A–D memakai offset staf yang berbeda atas pola blok Pagi/Sore deterministik sehingga Owner dapat mencoba beberapa susunan tanpa mengacak aturan secara bebas; generator mencatat `rotationSet` pada reason assignment dan tetap menjalankan role, availability, libur, coverage, jam mingguan, serta batas hari kerja.
+
+Mode `Otomatis` mempertahankan minimum rest 11 jam. Karena template operasional 07.00–15.00 dan 15.00–23.00 hanya menyediakan 8 jam untuk transisi Sore→Pagi, memilih Set A–D menyesuaikan minimum rest ke jeda aktual dan UI menampilkan peringatan eksplisit. Set A–D tidak menyamarkan konflik coverage, maksimal satu libur per hari, atau batas maksimal dua shift sejenis. Perubahan tidak meregenerasi roster aktif; Owner harus Simpan aturan lalu Generate, review, dan Publish.
+
+Rilis code-only tidak mengubah schema, migration manifest, credential, payment, Member, atau data roster. Focused HR 27/27 dan full suite 1.434 test dengan 1.362 pass, 0 fail, 71 expected skip, serta 1 TODO lulus. Artifact immutable, backup terenkripsi/disposable restore, rehearsal kandidat–rollback–kandidat, activation atomik, exact-source health, monitor, 34 migrasi, public UI asset, dan retention host ke 89% lulus. Rollback menunjuk `45fbd5bd0b82235ac9918d9649e6044503b56c4a`. Authenticated Owner UAT dan offsite restore masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Kontrak satu libur terjadwal per tanggal
 
 Source production `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` menaikkan generator menjadi `weekday-rotation-roster-v3` dan `schedule-rules-rolling-v4`. Planner menggabungkan libur otomatis dengan libur manual Owner, menghapus duplikasi identik, lalu hanya memilih tanggal yang belum mempunyai libur terjadwal aktif. Batas ini berlaku pada lingkup roster organisasi/outlet aktif.

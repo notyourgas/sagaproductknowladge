@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — Template rotasi Set A–D untuk empat staf
+
+- `CONFIRMED`: exact source `1de842b4270cab2a8f9e9565f01f2a0c4a018689` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.
+- Pada pola Seimbang 4 staf dengan tepat dua shift aktif, Owner dapat memilih `Otomatis`, `Set A`, `Set B`, `Set C`, atau `Set D`. Set A–D menggeser urutan deterministik Pagi/Sore antarkaryawan agar pembagian tidak terus membentuk streak panjang dan tetap maksimal dua shift sejenis berturut-turut.
+- Set hanya dipakai saat Owner menyimpan aturan lalu menekan Generate; roster/draf yang sudah ada tidak diubah otomatis. Mode Otomatis tetap memakai jeda aman 11 jam. Set A–D menampilkan peringatan bahwa pola anti-streak dapat memakai jeda aktual Sore→Pagi 8 jam untuk template 07.00–15.00 dan 15.00–23.00.
+- Focused HR 27/27; full suite 1.434 test: 1.362 pass, 0 fail, 71 expected skip, 1 TODO. Artifact immutable, backup/restore, recovery rehearsal, activation, exact-source health, 34 migrasi, public asset, monitor, dan retention di bawah gate 90% lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; uji Owner nyata dan offsite restore tetap pending.
+
 ## 2026-09-16 — Maksimal satu libur terjadwal per hari
 
 - `CONFIRMED`: exact source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.
