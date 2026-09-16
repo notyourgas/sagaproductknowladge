@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi batas dua shift dan resolusi konflik SagaPOS
+
+- `CONFIRMED`: exact source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` aktif di production; rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.
+- Knowledge SagaOPS diperbarui untuk rolling v3, batas publish maksimal dua shift sejenis berurutan, konflik Indonesia, action langsung, evidence release, dan flow UAT.
+- Tidak ada credential, PII, tenant ID, perubahan schema, pricing, payment, provider, atau produk lain. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Sinkronisasi SagaPOS bahan olahan dan produksi batch
 
 - `CONFIRMED`: exact source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif di production; rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.

@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Roster maksimal dua shift sejenis dan konflik actionable
+
+- `CONFIRMED`: source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` aktif di production; rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.
+- Changed: generator sangat menghindari shift band yang sama lebih dari dua hari berturut-turut; server menolak publish bila pelanggaran tetap ada.
+- Added: konflik roster berbahasa Indonesia dan action yang membuka staf/tanggal atau pengaturan minimum shift yang perlu diperbaiki; kode internal tidak ditampilkan.
+- Evidence: focused 22/22; full 1.337 pass/0 fail/71 skip/1 TODO dari 1.409; static/type 497 modul; audit 0; exact artifact, backup/restore, recovery, activation, health/monitor/public UI PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; schema tetap 34 migrasi dan offsite restore `UNVERIFIED`.
+
 ## 2026-09-16 — Bahan olahan dan produksi batch
 
 - `CONFIRMED`: source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif di production; rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.

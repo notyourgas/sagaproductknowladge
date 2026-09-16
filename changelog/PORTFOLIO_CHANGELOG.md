@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS roster maksimal dua shift sejenis aktif
+
+- `CONFIRMED`: SagaPOS production berpindah ke exact source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`, rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.
+- Owner mendapat rotasi yang sangat menghindari lebih dari dua Pagi/Sore berturut-turut, konflik berbahasa operasional, dan tombol langsung ke jadwal atau aturan minimum yang harus diperbaiki. Publish tetap fail-closed bila konflik tidak selesai.
+- Produk lain, schema, pricing, payment, credential, dan provider tidak berubah. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite restore belum diverifikasi.
+
 ## 2026-09-16 — SagaPOS bahan olahan dan produksi batch aktif
 
 - `CONFIRMED`: SagaPOS production berpindah ke exact source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`, rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.

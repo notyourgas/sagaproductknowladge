@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Maksimal dua shift sejenis dan konflik roster operasional
+
+- `CONFIRMED`: exact source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.
+- Generator `schedule-rules-rolling-v3` sangat memprioritaskan pergantian setelah maksimal dua shift pada band yang sama. Pola Pagi–Sore tetap boleh selama jeda minimum, role, izin, jam kerja, coverage, dan guard operasional lain terpenuhi.
+- Bila aturan coverage dan jeda membuat rotasi maksimal dua tidak mungkin, draf tetap lengkap tetapi konflik tampil dengan kalimat Indonesia dan tombol yang membuka staf/tanggal atau pengaturan minimum shift terkait. Publish ditolak sampai konflik diselesaikan; sistem tidak melonggarkan jeda aman.
+- Tidak ada migrasi, credential, payment, atau provider change. Focused 22/22; full suite 1.337 pass, 0 fail, 71 expected skip, 1 TODO dari 1.409; static/type check 497 modul dan dependency audit 0. Paket exact-source, backup/restore, tiga boot recovery, activation, health 34 migrasi, monitor, dan public UI smoke lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; draf lama perlu di-Generate ulang dan offsite restore tetap `UNVERIFIED`.
+
 ## 2026-09-16 — Bahan olahan dan produksi batch aktif di production
 
 - `CONFIRMED`: exact source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.

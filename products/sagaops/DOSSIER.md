@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Batas dua shift sejenis dan resolusi konflik roster
+
+Source production `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` menaikkan generator schedule rows ke `schedule-rules-rolling-v3`. Untuk setiap kandidat, mesin menghitung rangkaian hari kerja berurutan pada band shift yang sama. Hari libur atau pergantian band memutus rangkaian. Kandidat ketiga pada band yang sama mendapat penalti dominan, sehingga Pagi–Pagi diarahkan ke Sore berikutnya bila kombinasi tersebut tetap memenuhi jeda, role, availability, izin, batas jam, coverage, dan locked cell.
+
+Batas maksimal dua juga dihitung ulang oleh server ketika publish, bukan hanya oleh browser. Bila kebutuhan minimum shift dan guard jeda membuat rotasi tersebut tidak mungkin, generator mempertahankan draf lengkap dan mengeluarkan konflik blocking `same_shift_streak_exceeded`; publish gagal sampai Owner mengganti sel jadwal atau menyesuaikan kebutuhan orang. Kontrak ini sengaja tidak memaksa transisi Sore ke Pagi yang hanya memberi delapan jam istirahat pada template 15.00–23.00 dan 07.00–15.00.
+
+Panel konflik tidak menampilkan kode internal. Owner melihat masalah operasional, nama staf/shift, tanggal, dan tombol tindakan: membuka minggu serta staf yang tepat atau memfokuskan input minimum shift terkait. Coverage kurang/lebih, staf tanpa jadwal, role coverage, dan generation state yang hilang juga mempunyai panduan Indonesia dengan fallback aman.
+
+Rilis code-only tidak mengubah schema, migration manifest, package lock, service unit, credential, payment, atau provider. Focused 22/22 dan full suite 1.337 pass, 0 fail, 71 expected skip, 1 TODO dari 1.409; static/type check 497 modul dan audit dependency 0. Artifact immutable, backup terenkripsi/disposable restore, boot kandidat–current–kandidat, activation atomik, exact-source health 34 migrasi, monitor, dan public dashboard/aset lulus. Rollback menunjuk `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`. Authenticated Owner UAT dan offsite restore masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Kontrak bahan olahan dan transformasi stok
 
 Source production `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` memperluas master bahan dengan sumber `PURCHASED` atau `MADE_IN_HOUSE` serta tipe `PREP_ITEM`. Bahan dibuat sendiri tidak meminta supplier atau satuan pembelian. Owner menyusun resep olahan append-only melalui pop-up satu layar: jumlah hasil standar, unit hasil, komponen dan takaran, toleransi susut, serta review biaya sebelum disimpan.

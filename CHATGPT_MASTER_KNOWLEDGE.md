@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-16 — SagaPOS roster maksimal dua shift sejenis
+
+- `CONFIRMED`: exact production source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`; rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.
+- Generator v3 sangat menghindari shift band yang sama lebih dari dua hari kerja berurutan. Pagi–Sore boleh bila seluruh guard terpenuhi; jeda minimum tidak boleh dilonggarkan hanya untuk memaksa rotasi.
+- Jika coverage membuat batas dua tidak mungkin, draf tetap dibuat tetapi konflik blocking menjelaskan staf/tanggal dan menyediakan tombol ke sel jadwal atau minimum shift. Publish server-side ditolak sampai Owner menyelesaikannya; kode sistem tidak ditampilkan ke operator.
+- Flow UAT: Tim & Shift → Jadwal → Simpan aturan → Generate ulang → gunakan tombol pada panel konflik → ubah jadwal/minimum → review → publish.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; ledger tetap 34 migrasi dan offsite restore belum diverifikasi.
+
 ## Update 2026-09-16 — SagaPOS bahan olahan dan produksi batch
 
 - `CONFIRMED`: exact production source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`; rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.

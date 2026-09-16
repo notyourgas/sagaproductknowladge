@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS roster maksimal dua shift dan konflik actionable
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` aktif di production, rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.
+- Synced: rolling v3, maksimal dua shift sejenis berturut-turut sebagai publish constraint, perlindungan jeda minimum, konflik Indonesia, dan tombol ke staf/tanggal atau staffing minimum terkait.
+- Evidence: focused 22/22; full 1.337 pass/0 fail/71 skip/1 TODO dari 1.409; static/type 497 modul; dependency audit 0; immutable artifact, encrypted backup/restore, recovery rehearsal, activation, exact health 34 migrasi, monitor, public dashboard/aset PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Owner Generate ulang satu bulan nyata dan menyelesaikan setiap konflik sebelum publish; offsite restore `UNVERIFIED`.
+
 ## 2026-09-16 — SagaPOS bahan olahan dan produksi batch
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270` aktif di production, rollback `1b632bc841b6c7db923e18fdab062f7de6801765`.
