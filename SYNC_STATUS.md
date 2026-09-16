@@ -1,5 +1,22 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 - COYABAG product media and fulfillment operations
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0`, release
+  `20260916-258b4f3`, rollback `20260916-db60b17`.
+- Synced: replace foto produk/varian yang snapshot-safe, atomic bulk dispatch
+  preflight/retry, dan write-off payment gagal historis yang auditable.
+- Evidence: storefront 334/334; Laravel 687 pass + satu expected skip dengan
+  6.494 assertion; audit dependency nol; browser, backup/restore, checksum,
+  provider, inventory integrity, worker/scheduler, dan public smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS /
+  BUSINESS_READY=false`. Next: authenticated owner UAT pada replace foto dan
+  bulk dispatch saat transaksi operasional berikutnya; sahkan legal seller dan
+  batas shipping final. Security hardening tambahan ditunda tanpa melewati gate
+  keamanan baseline release.
+
 ## 2026-09-16 — SagaPOS schedule rules dan rolling shift
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source `1e510299bcd8d7aedba79e7e030b86550562b623` aktif di production, rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.

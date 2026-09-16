@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-16 - COYABAG product media and fulfillment operations
+
+- `CONFIRMED`: source `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0`
+  aktif pada release `20260916-258b4f3`; rollback `20260916-db60b17` tersedia.
+- Operator dapat mengganti foto produk/varian dengan snapshot storefront yang
+  tetap stabil sampai republish. Bulk dispatch memakai preflight atomik dan
+  retry idempoten; satu kasus historis payment gagal dicatat sebagai write-off
+  auditable tanpa mengubah stok atau status payment/order.
+- Readiness 45/45, provider verified, inventory integrity, test, browser,
+  backup/restore, worker/scheduler, dan public smoke lulus. Status
+  `PRODUCTION_ACTIVATED / READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS schedule rules dan rolling shift aktif
 
 - `CONFIRMED`: source `1e510299bcd8d7aedba79e7e030b86550562b623` aktif di production dengan rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.

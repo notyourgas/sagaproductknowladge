@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 - Sinkronisasi operasi media dan fulfillment COYABAG
+
+- `CONFIRMED`: exact source `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0`
+  aktif pada release `20260916-258b4f3`; rollback `20260916-db60b17`.
+- Knowledge COYABAG diperbarui untuk penggantian foto produk/varian, preflight
+  dan retry pengiriman massal, serta write-off auditable satu payment gagal
+  historis tanpa mutasi stok atau status payment/order.
+- Tidak ada credential, PII, migrasi, atau perubahan provider. Readiness 45/45
+  dan checkout publik tetap aktif; legal seller serta batas shipping final
+  tetap menahan `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Sinkronisasi SagaPOS schedule rules dan rolling shift
 
 - `CONFIRMED`: exact source `1e510299bcd8d7aedba79e7e030b86550562b623` aktif di production; rollback `537a9aef3363ac18cdef5f4dda518b5430dbb267`.

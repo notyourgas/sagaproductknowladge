@@ -98,9 +98,9 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Runtime aktif memakai exact source
-  `db60b17f7409d77e388edc8a82d7948499b22a80` pada immutable release
-  `20260916-db60b17`; rollback langsung `20260910-0a53810` memakai source
-  `0a538105203dd01f73446070cff732e043e0cb00`.
+  `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0` pada immutable release
+  `20260916-258b4f3`; rollback langsung `20260916-db60b17` memakai source
+  `db60b17f7409d77e388edc8a82d7948499b22a80`.
 - Kanal customer care resmi adalah DM Instagram `@coyabag`. Jam layanan adalah
   hari kerja 09.00-17.00 WIB; ekspektasi publiknya adalah DM dibalas pada jam
   kerja. Storefront tidak menjanjikan SLA maksimum yang belum disetujui.
@@ -108,11 +108,21 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
   security, serta UAT `3/3`. SagaDev Managed Gateway berstatus verified, dua
   worker dan scheduler aktif, seluruh policy endpoint 200, dan browser
   desktop/mobile lulus tanpa overflow atau error.
-- Storefront 334/334; Laravel 680 pass, satu expected skip, dan 6.451 assertion;
+- Storefront 334/334; Laravel 687 pass, satu expected skip, dan 6.494 assertion;
   build storefront/admin, contract/routes/security, dependency audit, backup,
-  checksum, serta public smoke lulus. Tidak ada migrasi, perubahan credential
-  atau provider selection, order/payment baru, maupun mutasi inventory saat
-  release. Agregat tetap 11 produk, 34 varian, stok total 329, dan 14 order.
+  disposable restore, checksum, serta public smoke lulus. Tidak ada migrasi,
+  perubahan credential atau provider selection, order/payment baru, maupun
+  mutasi inventory saat release.
+- Operator dapat mengganti foto produk atau varian pada posisi media yang sama.
+  File baru divalidasi dan staged sebelum transaksi; variant, urutan, serta
+  primary state dipertahankan, sedangkan storefront tetap memakai snapshot
+  publik lama sampai produk diterbitkan ulang.
+- Pengiriman massal melakukan preflight seluruh pilihan sebelum mutasi pertama.
+  Retry bersifat idempoten: shipment yang sudah dikirim dilewati dan hanya item
+  yang masih siap yang diproses, dengan ringkasan race/partial yang eksplisit.
+- Satu kasus historis barang sudah diserahkan tetapi payment gagal dicatat
+  sebagai `order_write_off` yang auditable. Pencatatan tidak mengubah stok,
+  status payment, atau status order dan aman diulang tanpa audit ganda.
 - Storefront memulihkan komposisi editorial campaign yang diterima sebelumnya
   tanpa memutus media CMS, katalog, varian, stok, atau publish dari dashboard.
   Motion tetap tersedia dengan reduced-motion; consent pertama kini modal
@@ -212,9 +222,9 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
   Finance dapat menyiapkan sesi hanya dengan `payments.manage`, recent auth,
   2FA, rate limit, serta state yang mengizinkan retry. Unknown attempt tetap
   fail-closed dan raw response, token, serta URL privat tidak dirender.
-  Production masih memiliki enam exception pembayaran lama untuk rekonsiliasi
-  operator: tiga amount mismatch, dua unknown session, dan satu provider status
-  unavailable. Antrean exception sekarang mewajibkan operator membuka review
+  Enam exception pembayaran lama pada snapshot fitur ini sudah ditutup oleh
+  keputusan operator; exception high/critical aktif kini nol. Antrean exception
+  tetap mewajibkan operator membuka review
   aman yang menampilkan nominal order/teramati, status provider/rekonsiliasi,
   referensi, usia kasus, dan guidance per tipe. Raw context terenkripsi tidak
   dirender; penyelesaian memerlukan recent auth, catatan minimal delapan
@@ -1085,9 +1095,9 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
 - Commerce sudah aktif dengan readiness 42/42, owner 2FA, kebijakan privasi dan
   retensi, Launch UAT, release sign-off, email Resend, serta storage VPS yang
   terverifikasi.
-- Enam exception pembayaran lama masih perlu direkonsiliasi memakai bukti
-  provider: tiga `amount_mismatch`, dua `payment_session_unknown`, dan satu
-  `provider_status_unavailable`.
+- Exception pembayaran high/critical terbuka berjumlah nol. Satu kasus historis
+  payment gagal dengan barang sudah diserahkan telah ditutup sebagai write-off
+  auditable tanpa mengubah stok atau mengubah payment menjadi berhasil.
 - Pengiriman masih memakai tarif manual untuk sembilan kota. Coverage nasional
   atau Delivery API belum aktif dan tidak boleh diklaim.
 - Seller identity, legal/tax, serta batas layanan pengiriman perlu disahkan

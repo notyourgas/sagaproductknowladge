@@ -1,5 +1,30 @@
 # COYABAG Dossier
 
+## 2026-09-16 - Product media and fulfillment operations release
+
+`CONFIRMED`: exact source `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0`
+aktif pada immutable release `20260916-258b4f3`; rollback langsung
+`20260916-db60b17` memakai source
+`db60b17f7409d77e388edc8a82d7948499b22a80`.
+
+Admin Produk dapat mengganti foto pada media existing tanpa memindahkan variant,
+urutan, atau primary state. Upload diproses sebelum transaksi dan file lama baru
+dibersihkan setelah commit; snapshot storefront tidak berubah sampai publish
+berikutnya. Pengiriman massal kini memvalidasi seluruh batch sebelum mutasi dan
+retry melewati shipment yang sudah `in_transit` sehingga aman dilanjutkan setelah
+respons parsial.
+
+Satu kasus historis payment gagal dengan barang sudah diserahkan direkam sebagai
+`order_write_off` negatif yang resolved dan idempoten. Write-off tidak mengubah
+stok, status payment, atau status order. Readiness tetap `45/45`, provider payment
+verified, inventory integrity bersih, dua worker dan scheduler aktif. Storefront
+334/334, Laravel 687 pass + satu expected skip dengan 6.494 assertion, dependency
+audit nol, browser desktop/mobile, backup/disposable restore, checksum, dan public
+smoke lulus. Tidak ada migrasi atau perubahan provider/credential. Status:
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`; legal seller dan batas shipping
+final tetap residual bisnis.
+
 ## 2026-09-16 - Verified Instagram customer care and public checkout
 
 `CONFIRMED`: exact source `db60b17f7409d77e388edc8a82d7948499b22a80`

@@ -1,5 +1,22 @@
 # COYABAG Changelog
 
+## 2026-09-16 - Product media and fulfillment operations deployed
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0` aktif pada immutable release
+  `20260916-258b4f3`; rollback `20260916-db60b17` tersedia.
+- Admin dapat mengganti foto produk/varian secara fail-closed dengan revision
+  guard dan mempertahankan snapshot publik sampai republish. Bulk dispatch kini
+  memakai full-batch preflight dan retry idempoten.
+- Satu payment gagal historis untuk barang yang sudah diserahkan ditutup sebagai
+  write-off auditable tanpa memutasi stok atau status payment/order.
+- Storefront 334/334; Laravel 687 pass + satu expected skip dengan 6.494
+  assertion; browser desktop/mobile, build, audit dependency, backup/restore,
+  checksum, worker/scheduler, provider health, inventory integrity, dan public
+  smoke lulus. Tidak ada migrasi atau perubahan credential/provider. Readiness
+  `45/45`; `READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false` karena legal seller
+  dan batas shipping final belum disahkan.
+
 ## 2026-09-10 - Plus Jakarta Sans storefront production release
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

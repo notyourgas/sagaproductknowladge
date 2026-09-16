@@ -7589,6 +7589,17 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
 `BUSINESS_READY=false` karena seller identity/legal-tax dan batas shipping
 final belum ditutup.
 
+Snapshot operasional 16 September 2026: exact source
+`258b4f32d299453a0dd15dd4b0eb286ec4a88cf0` aktif pada immutable release
+`20260916-258b4f3`; rollback `20260916-db60b17`. Admin dapat mengganti foto
+produk/varian tanpa mengubah penempatan dan snapshot storefront sampai
+republish. Bulk dispatch menjalankan full-batch preflight dan retry idempoten.
+Satu payment gagal historis untuk barang yang sudah diserahkan ditutup sebagai
+write-off auditable tanpa mengubah stok atau status payment/order. Readiness
+`45/45`, provider verified, inventory integrity, worker/scheduler, backup/
+restore, browser, dependency audit, serta public smoke lulus; tidak ada migrasi
+atau perubahan credential/provider.
+
 Snapshot 16 September 2026: exact source
 `db60b17f7409d77e388edc8a82d7948499b22a80` aktif pada immutable release
 `20260916-db60b17`; rollback `20260910-0a53810` memakai source
