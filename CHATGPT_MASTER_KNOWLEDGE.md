@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-16 — SagaPOS HPP menu inactive aktif di production
+
+- `CONFIRMED`: production source `c1f7ff043fde636c00f8094ba99959357a5e1828`, rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Owner dapat draft/publish HPP untuk menu inactive; current HPP tersedia, tetapi menu tetap archived dan tidak sellable. Readiness coverage hanya menilai menu active.
+- Code-only release lulus dengan schema tetap 34 migrasi, health ready/production, dashboard publik 200, dan aset exact. Payment/gateway OFF. Hosted Quality `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing; authenticated Cafe Latte UAT masih pending. Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-15 — SagaPOS HPP pop-up resep aktif di production
 
 - `CONFIRMED`: Owner meminta HPP disusun sebagai resep dalam pop-up, bukan wizard. Source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif di [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard), rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`: pilih bahan Database, isi takaran, tambah beberapa baris, lihat HPP/margin langsung, simpan draft, lalu publish versi terpisah.

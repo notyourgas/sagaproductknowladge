@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-16 — Residual setelah HPP menu inactive aktif
+
+- `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` aktif di production, rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`; menu inactive dapat draft/publish HPP tanpa menjadi sellable dan readiness coverage hanya menilai menu active.
+- `CONFIRMED`: code-only deploy, health ready/production, schema 34 migrasi, dashboard publik 200, dan aset exact lulus. Payment/gateway OFF. Quality `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing.
+- `NEEDS CONFIRMATION`: authenticated Owner UAT pada record Cafe Latte belum dilakukan. Jangan nyatakan alur tersebut business-ready sebelum draft, publish, current HPP, serta status archived diverifikasi bersama; `BUSINESS_READY=false`.
+
 ## 2026-09-15 — Residual setelah HPP recipe popup aktif
 
 - `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada production, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`; tes UI lokal, backup/restore, recovery code-only, health/DB/aset publik/monitor lulus.

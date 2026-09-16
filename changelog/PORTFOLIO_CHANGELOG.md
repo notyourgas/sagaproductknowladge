@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS: HPP menu inactive aktif di production
+
+- `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` aktif di production, rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Menu inactive tetap dapat draft/publish HPP dan memiliki current HPP tanpa kembali sellable; readiness coverage hanya untuk menu active.
+- Deploy code-only, health ready/production, schema tetap 34 migrasi, dashboard publik 200, dan aset exact lulus. Payment/gateway OFF; GitHub Quality `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing. Authenticated Cafe Latte UAT pending; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Produk lain tidak berubah.
+
 ## 2026-09-15 — SagaPOS HPP recipe popup aktif di production
 
 - `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada Owner Dashboard SagaPOS; rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Atur/Edit HPP tetap pada daftar menu dan membuka pop-up resep satu layar dengan bahan, takaran, dan simulasi HPP/margin langsung.

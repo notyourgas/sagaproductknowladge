@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS HPP menu inactive production
+
+- Status `accepted`; klasifikasi `CONFIRMED`. Production source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`), rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`.
+- Synced: menu inactive dapat draft/publish HPP dan mempertahankan current HPP; menu tetap archived/tidak sellable. Coverage readiness hanya menghitung menu active.
+- Evidence: deployment code-only lulus, schema tetap 34 migrasi, health ready/production, dashboard publik 200, dan `operator.js` SHA-256 `C78F1AAF0908E8EF4D0C01835F4E6A0542635BA77993140334E92DF62101E605`. Payment/gateway OFF. GitHub Quality `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Owner menjalankan authenticated Cafe Latte UAT untuk memastikan draft, publish, current HPP, dan status archived bekerja bersama pada data production.
+
 ## 2026-09-15 — SagaPOS HPP pop-up resep aktif di production
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` pushed dan aktif di production, rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`.

@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi production SagaPOS HPP menu inactive
+
+- `CONFIRMED`: source `c1f7ff043fde636c00f8094ba99959357a5e1828` (tree `b1f2243e231802ab67dadd13f8013e753613ab27`) aktif di production; rollback `6ec6e7a119491e471b43f3a592b9e9ced6464e76`. Menu inactive dapat draft/publish HPP tanpa menjadi sellable, dan coverage readiness hanya menilai menu active.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, gaps, dan sync status. Tidak ada credential atau data restricted.
+- Code-only deploy, health ready/production, 34 migrasi tanpa perubahan schema, dashboard 200, dan aset exact lulus. Payment/gateway OFF; Quality `CI_NOT_RUN_BY_OWNER` karena explicit skip/billing. Authenticated Cafe Latte UAT pending; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-15 — Aktivasi production pop-up resep HPP SagaPOS
 
 - `CONFIRMED`: source `99f16d84583e0fa9c0c562f1888eef3e21ba2d1f` aktif pada domain asli; rollback `c7b1e31d9de58572b19932e7a622f761e3c4b009`. Keputusan UI Andreas kini dapat diuji di Owner Dashboard.
