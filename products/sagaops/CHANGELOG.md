@@ -5,7 +5,7 @@
 - `CONFIRMED`: source `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` aktif di production; rollback `4c50671bdee1c0122b9ee2fa2e4337d0ae3d190e`.
 - Changed: generator, edit manual Owner, dan publish membatasi satu libur terjadwal pada setiap tanggal dalam roster aktif.
 - Added: konflik operasional saat hari libur yang diperbolehkan tidak cukup; izin/sakit/cuti yang disetujui tetap exception approval.
-- Evidence: focused 27/27; full 1.357 pass/0 fail/71 expected skip/1 TODO dari 1.429; backup/restore, recovery, activation, exact health 34 migrasi, monitor, public dashboard, dan retention 88% PASS.
+- Evidence: focused 27/27; full 1.357 pass/0 fail/71 expected skip/1 TODO dari 1.429; backup/restore, recovery, activation, exact health 34 migrasi, monitor, public dashboard, dan retention di bawah gate 90% PASS.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; draf lama perlu di-Generate ulang dan offsite restore `UNVERIFIED`.
 
 ## 2026-09-16 — Hardening produksi bahan olahan
