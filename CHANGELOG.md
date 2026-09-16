@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 — Sinkronisasi SagaPOS staff inventory receiving
+
+- `CONFIRMED`: exact source `1d08a1898bace02ff770f78da6bc24b1cb400f6c` aktif di production; rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.
+- Knowledge SagaOPS diperbarui untuk receipt mobile multi-bahan/multi-foto, draft dan correction/resubmit, Owner review/posting, capability granular, idempotent stock posting, private evidence adapter, serta batas UAT.
+- Area terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, portfolio changelog, master knowledge, gaps, dan sync status. Tidak ada credential, PII, path privat, detail backup, tenant/device identifier, pricing, payment, atau perubahan produk lain.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated real-device UAT `NEEDS CONFIRMATION`; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Sinkronisasi template rotasi Set A–D SagaPOS
 
 - `CONFIRMED`: exact source `1de842b4270cab2a8f9e9565f01f2a0c4a018689` aktif di production; rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.

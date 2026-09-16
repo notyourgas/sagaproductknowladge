@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — Penerimaan stok oleh staf dengan multi-foto aktif di production
+
+- `CONFIRMED`: exact source `1d08a1898bace02ff770f78da6bc24b1cb400f6c` aktif pada [SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.
+- Staf dapat mencatat beberapa bahan dalam satu dokumen penerimaan melalui portal mobile, melampirkan beberapa foto dari kamera atau galeri, menyimpan draft, memperbaiki permintaan koreksi, dan mengirim ulang tanpa membuat receipt baru.
+- Owner mendapat antrean Barang Datang untuk memeriksa bahan, jumlah, biaya, exception, foto, dan jejak aktivitas; keputusan approve memposting stok melalui jalur inventory kanonik yang idempoten. Owner juga dapat meminta perbaikan atau menolak.
+- Akses dipecah menjadi capability untuk membuat, mengirim, memposting, mereview, menulis biaya, dan membaca evidence. Jabatan tidak otomatis memberi seluruh akses.
+- Evidence foto disimpan privat melalui adapter filesystem server-side. Kontrak penyimpanannya dapat dipindahkan ke object storage tanpa mengubah alur mobile.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated real-device UAT `NEEDS CONFIRMATION`; `BUSINESS_READY=false`. Health receiving siap dengan evidence mode `FILESYSTEM_VPS` dan object-storage migration ready; anonymous-route smoke lulus.
+
 ## 2026-09-17 — Template rotasi Set A–D untuk empat staf
 
 - `CONFIRMED`: exact source `1de842b4270cab2a8f9e9565f01f2a0c4a018689` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.

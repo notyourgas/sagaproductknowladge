@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-17 — Residual setelah staff inventory receiving aktif
+
+- `CONFIRMED`: source production `1d08a1898bace02ff770f78da6bc24b1cb400f6c` mengaktifkan receipt staf multi-bahan/multi-foto, lifecycle koreksi, Owner review, capability granular, dan idempotent stock posting. Health ready dan anonymous-route smoke lulus.
+- `CONFIRMED`: health melaporkan evidence mode `FILESYSTEM_VPS` dan object-storage migration ready. Contract sudah memisahkan storage dari pengalaman mobile sehingga migrasi object storage dapat dilakukan tanpa mengubah alur staf.
+- `NEEDS CONFIRMATION`: authenticated real-device UAT belum membuktikan pengambilan kamera, pilihan galeri, upload beberapa foto, correction/resubmit, approval Owner, dan movement stok pada satu alur fisik penuh.
+- Dampak: fitur aktif dan dapat diuji di production, tetapi UAT tersebut masih menahan `BUSINESS_READY=true`.
+
 ## 2026-09-16 — Residual setelah batas satu libur harian aktif
 
 - `CONFIRMED`: source production `e117d1f8d22cb1fbfa8b3c2740a3d3e0bcffca83` menegakkan maksimal satu libur terjadwal per tanggal pada generator, edit manual Owner, dan publish tanpa migration baru. Monitor serta retention current/rollback/backup lulus dengan pemakaian host di bawah gate 90%.

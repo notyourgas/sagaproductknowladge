@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Staff inventory receiving dan multi-photo evidence
+
+- `CONFIRMED`: source `1d08a1898bace02ff770f78da6bc24b1cb400f6c` aktif di production; rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.
+- Added: receipt mobile multi-bahan, foto kamera/galeri pada dokumen atau bahan, draft, correction/resubmit, riwayat status sendiri, antrean review Owner, dan pengaturan capability per staf.
+- Changed: approval Owner memposting ke inventory kanonik secara idempoten; respons tidak pasti dapat direkonsiliasi tanpa stok ganda. Evidence memakai storage adapter privat yang dapat diganti ke object storage tanpa perubahan mobile.
+- Evidence: backend, browser mobile, dashboard Owner, dan ingress coverage tersedia; production health ready dan public anonymous-route smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated real-device UAT `NEEDS CONFIRMATION`; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Template rotasi empat staf Set A–D
 
 - `CONFIRMED`: source `1de842b4270cab2a8f9e9565f01f2a0c4a018689` aktif di production; rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.

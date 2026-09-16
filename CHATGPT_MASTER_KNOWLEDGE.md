@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 — SagaPOS staff inventory receiving dan multi-foto
+
+- `CONFIRMED`: exact production source `1d08a1898bace02ff770f78da6bc24b1cb400f6c`; rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.
+- Flow staf: Portal Staff → Barang Datang → tambah beberapa bahan → ambil/pilih beberapa foto → simpan draft atau kirim. Jika Owner meminta koreksi, staf membuka receipt yang sama, memperbaiki, menambah evidence, lalu resubmit.
+- Flow Owner: Gudang → antrean Barang Datang → periksa actor, bahan, jumlah, biaya, exception, foto, dan audit → setujui & posting, minta perbaikan, atau tolak. Posting ulang tidak boleh menggandakan stok.
+- Akses capture, submit, post, review, cost, dan baca evidence diatur per staf. Evidence disimpan privat melalui adapter server-side; perpindahan ke object storage tidak mengubah kontrak mobile.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated real-device UAT `NEEDS CONFIRMATION`; `BUSINESS_READY=false`. Health ready dan anonymous-route smoke lulus.
+
 ## Update 2026-09-17 — SagaPOS template rotasi Set A–D
 
 - `CONFIRMED`: exact production source `1de842b4270cab2a8f9e9565f01f2a0c4a018689`; rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.

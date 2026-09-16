@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Kontrak staff inventory receiving dan evidence foto
+
+Source production `1d08a1898bace02ff770f78da6bc24b1cb400f6c` menambahkan alur penerimaan stok dari portal staf mobile. Satu receipt dapat berisi beberapa bahan dan beberapa foto pada tingkat dokumen atau baris bahan. Foto dapat dipilih dari kamera atau galeri, divalidasi ukurannya, dimensinya, jenis kontennya, dan checksum-nya, lalu hanya dibaca kembali melalui route terautentikasi.
+
+Lifecycle receipt mencakup `DRAFT`, submit, review, `NEEDS_CORRECTION`, resubmit, reject, posting, dan recovery bila hasil posting belum pasti. Staf hanya melihat receipt miliknya dalam scope aktif. Draft dan koreksi memakai revision guard; operation key dan fingerprint menjaga replay agar request yang sama tidak membuat dokumen atau upload ganda.
+
+Owner mengelola capability `inventory.receipt.capture`, `inventory.receipt.submit`, `inventory.receipt.post`, `inventory.receipt.review`, `inventory.receipt.cost.write`, dan `inventory.receipt.evidence.read` per staf. Capability disimpan sebagai snapshot audit pada receipt. Staf tanpa izin posting mengirim receipt ke antrean review; biaya yang belum terverifikasi menahan approval sampai koreksi selesai.
+
+Approval memanggil jalur penerimaan inventory kanonik. Posting mengikat receipt dan movement secara idempoten sehingga retry, respons yang tidak pasti, atau caller key baru tidak menggandakan stok. Tanggal bisnis ditentukan server, kuantitas yang diterima/ditolak/rusak tetap direkonsiliasi, dan akses lintas staf gagal tertutup.
+
+Evidence aktif memakai adapter filesystem privat pada server dengan write atomik dan pemeriksaan checksum. Storage contract memisahkan lifecycle evidence dari UI/API, sehingga migrasi ke object storage tidak memerlukan perubahan pada pengalaman mobile. Lokasi internal, credential, dan identifier privat tidak dipublikasikan.
+
+Rilis cumulative memakai rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`. Health production menyatakan ready dengan evidence mode `FILESYSTEM_VPS` dan kontrak migrasi object storage siap. Smoke route anonim membuktikan surface tidak terbuka tanpa autentikasi. Authenticated real-device UAT untuk kamera/galeri, koreksi/resubmit, review Owner, dan stock posting masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Kontrak template rotasi empat staf Set A–D
 
 Source production `1de842b4270cab2a8f9e9565f01f2a0c4a018689` menambah pilihan eksplisit `Otomatis`, `Set A`, `Set B`, `Set C`, dan `Set D` pada Pengaturan Jadwal. Pilihan hanya aktif untuk pola `balanced_4`, empat staf, dan tepat dua template shift aktif. Set A–D memakai offset staf yang berbeda atas pola blok Pagi/Sore deterministik sehingga Owner dapat mencoba beberapa susunan tanpa mengacak aturan secara bebas; generator mencatat `rotationSet` pada reason assignment dan tetap menjalankan role, availability, libur, coverage, jam mingguan, serta batas hari kerja.

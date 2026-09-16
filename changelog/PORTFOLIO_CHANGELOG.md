@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-17 — SagaPOS staff inventory receiving aktif
+
+- `CONFIRMED`: SagaPOS production berpindah ke exact source `1d08a1898bace02ff770f78da6bc24b1cb400f6c`, rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.
+- Staf mobile dapat menerima beberapa bahan dalam satu dokumen dengan beberapa foto, memperbaiki receipt, dan mengirim ulang. Owner mereview dan memposting stok melalui capability serta idempotency guard.
+- Evidence foto tetap privat dan storage contract siap dipindahkan tanpa mengubah mobile. Health dan anonymous-route smoke lulus; authenticated real-device UAT masih menahan `BUSINESS_READY=true`.
+
 ## 2026-09-17 — SagaPOS template rotasi empat staf Set A–D
 
 - `CONFIRMED`: SagaPOS production berpindah ke exact source `1de842b4270cab2a8f9e9565f01f2a0c4a018689`; rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.

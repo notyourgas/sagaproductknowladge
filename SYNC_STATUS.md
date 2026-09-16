@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 — SagaPOS staff inventory receiving dan multi-foto
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `1d08a1898bace02ff770f78da6bc24b1cb400f6c` aktif di production, rollback `b8da8ef5aca7d8a71045fa4917adf445aa0a470e`.
+- Synced: mobile receipt multi-bahan, multi-photo camera/gallery, draft/correction/resubmit, Owner review/approve/post, capability granular, idempotent canonical stock posting, dan private evidence storage contract.
+- Evidence: source/backend/browser/ingress coverage tersedia; production health receiving ready dengan `FILESYSTEM_VPS` dan object-storage migration ready; anonymous-route smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; authenticated real-device UAT `NEEDS CONFIRMATION`; `BUSINESS_READY=false`.
+- Next: staf dan Owner menjalankan satu receipt fisik pada perangkat nyata sampai movement stok terverifikasi.
+
 ## 2026-09-17 — SagaPOS template rotasi empat staf Set A–D
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `1de842b4270cab2a8f9e9565f01f2a0c4a018689` aktif di production, rollback `45fbd5bd0b82235ac9918d9649e6044503b56c4a`.
