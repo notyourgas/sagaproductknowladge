@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Recovery permanen simpan template shift
+
+- Sebelum: browser dapat menunggu tanpa batas dan berakhir `Failed to fetch`; hasil POST tidak diketahui sehingga retry manual berisiko membuat template ganda.
+- Setelah: semua request dashboard memiliki deadline dan pesan Indonesia; GET boleh retry sekali, POST tidak retry otomatis. Pembuatan template merekonsiliasi state setelah respons hilang dan mengenali template yang sebenarnya sudah tersimpan.
+- `CONFIRMED`: source `e9315a889f6d92c055076f108b2d32fa0fedf878` aktif di production, rollback `dda8b00382280f97856815bc715ba72d8fe1a365`. Focused 18/18 dan full suite 1.290 pass/0 fail/71 skip/1 TODO dari 1.362; release/recovery, health, 34 migrasi, HTTPS/aset, 401 anonim, database, dan monitor lulus.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; tanpa perubahan schema/data/permission/payment/Member, offsite backup `UNVERIFIED`.
+
 ## 2026-09-16 — SagaPOS HR roster manusiawi aktif di production
 
 - `CONFIRMED`: exact source `dda8b00382280f97856815bc715ba72d8fe1a365` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `a741cd091af08a6e01aa403a74146704fafd4bc9`.

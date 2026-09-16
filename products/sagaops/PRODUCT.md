@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Simpan template shift pulih dari kegagalan jaringan
+
+- `CONFIRMED`: source `e9315a889f6d92c055076f108b2d32fa0fedf878` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `dda8b00382280f97856815bc715ba72d8fe1a365`.
+- Permintaan dashboard kini berhenti dengan pesan yang jelas setelah batas waktu delapan detik. Pembacaan aman dapat dicoba ulang sekali, sedangkan penyimpanan tidak dikirim ulang otomatis agar template shift tidak tercatat ganda.
+- Bila jawaban penyimpanan template hilang, dashboard membaca ulang state dan mengenali template baru yang cocok. Owner diberi tahu bahwa data sebenarnya sudah tersimpan, atau mendapat kegagalan yang dapat dicoba ulang secara sadar.
+- Full suite 1.362 test: 1.290 pass, 0 fail, 71 skip, 1 TODO; tes fokus 18/18. Paket immutable, backup/restore, rehearsal code-only, aktivasi, health exact-source, 34 migrasi, HTTPS/aset, negative auth, database tanpa lock wait, dan monitor lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Tidak ada perubahan schema, data HR, permission, payment, atau Member; offsite backup tetap belum diverifikasi.
+
 ## 2026-09-16 — SagaPOS HR roster manusiawi aktif di production
 
 - `CONFIRMED`: exact source `dda8b00382280f97856815bc715ba72d8fe1a365` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `a741cd091af08a6e01aa403a74146704fafd4bc9`.

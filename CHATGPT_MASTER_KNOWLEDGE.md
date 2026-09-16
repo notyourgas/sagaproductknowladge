@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-16 — SagaPOS template shift tahan timeout dan respons hilang
+
+- `CONFIRMED`: source `e9315a889f6d92c055076f108b2d32fa0fedf878` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard), rollback `dda8b00382280f97856815bc715ba72d8fe1a365`.
+- Request dashboard memiliki deadline delapan detik dan pesan yang dapat ditindaklanjuti. GET dapat retry sekali; POST tidak dikirim ulang otomatis. Jika jawaban pembuatan template hilang, dashboard membaca ulang state dan mengenali template yang sudah tersimpan tanpa duplikasi.
+- Full suite 1.290 pass/0 fail/71 skip/1 TODO dari 1.362 dan seluruh gate release code-only lulus. Authenticated Owner UAT dan offsite backup masih pending; `PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Schema, data HR, permission, payment, dan Member tidak berubah.
+
 ## 2026-09-16 — SagaPOS HR roster manusiawi aktif di production
 
 - `CONFIRMED`: exact source `dda8b00382280f97856815bc715ba72d8fe1a365` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `a741cd091af08a6e01aa403a74146704fafd4bc9`.

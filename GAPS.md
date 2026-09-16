@@ -2,6 +2,7 @@
 
 ## 2026-09-16 — SagaPOS HR roster prototype hardening
 
+- `CONFIRMED`: timeout/`Failed to fetch` saat membuat template sudah ditutup pada source production `e9315a889f6d92c055076f108b2d32fa0fedf878` melalui deadline, larangan retry otomatis POST, dan rekonsiliasi state tanpa duplikasi. Authenticated Owner UAT masih diperlukan untuk menutup pengalaman perangkat/jaringan nyata.
 - `CONFIRMED`: production HR roster aktif dan dapat diuji, tetapi dua tab Owner masih dapat memakai last-write-wins karena UI belum selalu mengirim `expectedVersion`.
 - `CONFIRMED`: ringkasan konflik pada state Owner masih mengambil generation run terbaru global dan perlu dipersempit ke periode roster aktif.
 - Dampak: tidak memblokir prototype/UAT Andreas, tetapi menahan klaim `BUSINESS_READY=true`. Next: uji alur Owner nyata, lalu tambahkan optimistic concurrency wajib dan konflik per periode sebelum hardening akhir.

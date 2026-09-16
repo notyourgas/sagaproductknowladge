@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS recovery simpan template shift
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source `e9315a889f6d92c055076f108b2d32fa0fedf878` pushed dan aktif di production, rollback `dda8b00382280f97856815bc715ba72d8fe1a365`.
+- Synced: deadline request, retry satu kali hanya untuk GET, larangan retry otomatis POST, pesan sesi/jaringan yang jelas, dan rekonsiliasi state khusus pembuatan template setelah respons hilang.
+- Evidence: focused 18/18; full suite 1.290 pass/0 fail/71 skip/1 TODO dari 1.362; package immutable, encrypted backup/disposable restore, code-only rehearsal, activation, exact health, database 34 migrasi tanpa lock wait, dashboard/aset 200, anonymous 401, service tanpa restart/error, monitor PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Andreas membuat satu template shift di production dan memastikan toast sukses muncul tanpa penantian panjang; offsite backup masih `UNVERIFIED`.
+
 ## 2026-09-16 — SagaPOS HR roster manusiawi aktif di production
 
 - `CONFIRMED`: exact source `dda8b00382280f97856815bc715ba72d8fe1a365` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `a741cd091af08a6e01aa403a74146704fafd4bc9`.

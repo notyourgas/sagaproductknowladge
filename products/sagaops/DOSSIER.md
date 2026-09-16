@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Ketahanan penyimpanan template shift
+
+Source production `e9315a889f6d92c055076f108b2d32fa0fedf878` mengganti pemanggilan jaringan dashboard dengan client terpusat yang memiliki deadline delapan detik, normalisasi error, dan penanganan sesi kedaluwarsa. Operasi baca dapat retry sekali ketika jaringan terputus atau timeout; operasi tulis tidak pernah retry otomatis agar satu klik tidak membuat mutasi ganda.
+
+Khusus pembuatan template shift, kehilangan respons setelah POST ditangani dengan membaca ulang state lalu mencocokkan hanya template baru berdasarkan nama/kode/jam mulai/jam selesai. Bila template ditemukan, UI menyatakan data telah tersimpan tanpa membuat kiriman kedua. Bila tidak ditemukan, draft tetap dapat diperbaiki dan dikirim ulang oleh Owner secara sadar. Perubahan hanya pada client dan recovery UI; schema, ledger 34 migrasi, permission, data HR, dan kontrak server tidak berubah.
+
+Tes fokus 18/18 dan full suite 1.362 test menghasilkan 1.290 pass, 0 fail, 71 skip, 1 TODO. Exact-source package, encrypted backup/disposable restore, code-only recovery rehearsal, activation, service tanpa restart/error, public dashboard/aset 200, anonymous state 401, database tanpa lock wait, serta monitor production lulus. Rollback `dda8b00382280f97856815bc715ba72d8fe1a365`; authenticated Owner UAT pada satu template nyata dan offsite backup masih pending, sehingga `BUSINESS_READY=false`.
+
 ## 2026-09-16 — HR roster terintegrasi di Owner Dashboard SagaPOS
 
 Source production `dda8b00382280f97856815bc715ba72d8fe1a365` menempatkan Tim, template shift, availability, jadwal, absensi, dan permohonan pada satu visual SagaPOS. Template menyimpan jam, istirahat, toleransi telat, warna semantik, band shift, dan kebutuhan role. Jadwal tampil sebagai kalender desktop dan agenda mingguan mobile; Owner dapat mengisi manual, bulk, menyalin pola, mengunci sel, meminta generator, memeriksa konflik, lalu publish.

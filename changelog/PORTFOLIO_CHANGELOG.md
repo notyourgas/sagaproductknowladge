@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS template shift tahan kegagalan jaringan
+
+- `CONFIRMED`: source `e9315a889f6d92c055076f108b2d32fa0fedf878` aktif di production, rollback `dda8b00382280f97856815bc715ba72d8fe1a365`.
+- Dashboard membatasi request, hanya retry GET, tidak mengulang POST, dan merekonsiliasi state ketika respons simpan template hilang agar Owner tidak terjebak `Failed to fetch` atau membuat duplikasi.
+- Focused 18/18, full suite 1.290 pass/0 fail/71 skip/1 TODO dari 1.362, backup/restore, recovery, health/DB/aset/negative auth/monitor lulus. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; produk lain tidak berubah.
+
 ## 2026-09-16 — SagaPOS HR roster manusiawi aktif di production
 
 - `CONFIRMED`: exact source `dda8b00382280f97856815bc715ba72d8fe1a365` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `a741cd091af08a6e01aa403a74146704fafd4bc9`.
