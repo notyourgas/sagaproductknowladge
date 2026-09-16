@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-16 - COYABAG inline QRIS payment experience
+
+- `CONFIRMED`: source `66545d3de0be93783ccab0d8f0e9cd545d0446d9`
+  aktif pada release `20260916-66545d3`; rollback `20260916-1e22eb4` tersedia.
+- QRIS SagaDev tervalidasi kini tampil langsung dengan countdown di checkout dan
+  status pesanan; fallback ukuran penuh serta status provider-authoritative
+  tetap dipertahankan.
+- Test, browser lintas viewport, backup/restore, provider, readiness 45/45,
+  worker/scheduler, dan public smoke lulus. Tidak ada migrasi atau mutasi
+  commerce. Status `READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS roster maksimal dua shift sejenis aktif
 
 - `CONFIRMED`: SagaPOS production berpindah ke exact source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f`, rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.

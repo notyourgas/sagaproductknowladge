@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 - Sinkronisasi inline QRIS COYABAG
+
+- `CONFIRMED`: exact source `66545d3de0be93783ccab0d8f0e9cd545d0446d9`
+  aktif pada release `20260916-66545d3`; rollback `20260916-1e22eb4`.
+- Knowledge COYABAG diperbarui untuk QRIS inline, countdown server, fallback
+  ukuran penuh, allowlist aset provider, dan status pembayaran yang tetap
+  provider-authoritative.
+- Tidak ada credential, PII, reference pembayaran, migrasi, atau mutasi
+  inventory. Readiness 45/45 dan checkout publik tetap aktif;
+  `BUSINESS_READY=false` karena residual legal seller dan shipping final.
+
 ## 2026-09-16 — Sinkronisasi batas dua shift dan resolusi konflik SagaPOS
 
 - `CONFIRMED`: exact source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` aktif di production; rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.

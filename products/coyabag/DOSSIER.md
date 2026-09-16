@@ -1,5 +1,30 @@
 # COYABAG Dossier
 
+## 2026-09-16 - Inline QRIS payment and countdown release
+
+`CONFIRMED`: exact source `66545d3de0be93783ccab0d8f0e9cd545d0446d9`
+aktif pada immutable release `20260916-66545d3`; rollback langsung
+`20260916-1e22eb4` memakai source
+`1e22eb437f4df144b403b0f9cc54bdd7a16c2ab0`.
+
+Checkout dan status pesanan sekarang menampilkan QRIS SagaDev yang tervalidasi
+langsung pada halaman bersama countdown `HH:MM:SS`. Hanya URL HTTPS dengan host
+provider yang sudah diizinkan dan pola aset gambar terkendali yang boleh
+dirender inline. Tautan QR ukuran penuh tetap tersedia bila gambar gagal dimuat;
+membuka atau memindai QR tidak mengubah status pesanan menjadi lunas. Status
+tetap provider-authoritative dan QR dihapus setelah konfirmasi pembayaran.
+
+Verifikasi mencakup pola aset nyata provider tanpa mengekspos reference,
+desktop/mobile/landscape, refresh otomatis dan manual, error recovery, serta
+paid-state cleanup. Storefront 336/336; Laravel 697 pass + satu expected skip
+dengan 6.512 assertion; focused payment 63/63 dengan 203 assertion; build,
+dependency audit, checksum, dua backup kandidat, dua disposable restore drill,
+worker/scheduler, payment provider, readiness `45/45`, dan public smoke lulus.
+Tidak ada migrasi, perubahan credential/provider adapter, order/payment baru,
+atau mutasi inventory. Status tetap `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS /
+BUSINESS_READY=false`; legal seller dan batas shipping final tetap residual.
+
 ## 2026-09-16 - Product media and fulfillment operations release
 
 `CONFIRMED`: exact source `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0`

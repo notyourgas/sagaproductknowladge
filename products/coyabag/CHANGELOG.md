@@ -1,5 +1,20 @@
 # COYABAG Changelog
 
+## 2026-09-16 - Inline QRIS and payment countdown deployed
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `66545d3de0be93783ccab0d8f0e9cd545d0446d9` aktif pada immutable release
+  `20260916-66545d3`; rollback `20260916-1e22eb4` tersedia.
+- QRIS provider tervalidasi tampil langsung di checkout/status pesanan dengan
+  countdown server, fallback ukuran penuh, refresh status, serta paid-state
+  cleanup. URL selain host dan pola aset terkontrol tetap redirect-only.
+- Storefront 336/336; Laravel 697 pass + satu expected skip dengan 6.512
+  assertion; focused payment 63/63, browser desktop/mobile/landscape,
+  backup/restore, checksum, provider, worker/scheduler, readiness 45/45, dan
+  public smoke lulus. Tidak ada migrasi, perubahan credential/provider adapter,
+  order/payment baru, atau mutasi inventory. Status tetap
+  `READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-16 - Product media and fulfillment operations deployed
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

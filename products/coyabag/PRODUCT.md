@@ -98,9 +98,13 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Runtime aktif memakai exact source
-  `258b4f32d299453a0dd15dd4b0eb286ec4a88cf0` pada immutable release
-  `20260916-258b4f3`; rollback langsung `20260916-db60b17` memakai source
-  `db60b17f7409d77e388edc8a82d7948499b22a80`.
+  `66545d3de0be93783ccab0d8f0e9cd545d0446d9` pada immutable release
+  `20260916-66545d3`; rollback langsung `20260916-1e22eb4` memakai source
+  `1e22eb437f4df144b403b0f9cc54bdd7a16c2ab0`.
+- Halaman pembayaran menampilkan QRIS provider yang tervalidasi langsung di
+  dalam checkout/status pesanan, beserta countdown server. Tautan ukuran penuh
+  tetap tersedia sebagai fallback; status lunas hanya berasal dari konfirmasi
+  provider ke server, bukan dari membuka atau memindai gambar.
 - Kanal customer care resmi adalah DM Instagram `@coyabag`. Jam layanan adalah
   hari kerja 09.00-17.00 WIB; ekspektasi publiknya adalah DM dibalas pada jam
   kerja. Storefront tidak menjanjikan SLA maksimum yang belum disetujui.
@@ -108,7 +112,7 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
   security, serta UAT `3/3`. SagaDev Managed Gateway berstatus verified, dua
   worker dan scheduler aktif, seluruh policy endpoint 200, dan browser
   desktop/mobile lulus tanpa overflow atau error.
-- Storefront 334/334; Laravel 687 pass, satu expected skip, dan 6.494 assertion;
+- Storefront 336/336; Laravel 697 pass, satu expected skip, dan 6.512 assertion;
   build storefront/admin, contract/routes/security, dependency audit, backup,
   disposable restore, checksum, serta public smoke lulus. Tidak ada migrasi,
   perubahan credential atau provider selection, order/payment baru, maupun

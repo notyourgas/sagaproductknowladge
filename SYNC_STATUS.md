@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 - COYABAG inline QRIS dan countdown
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `66545d3de0be93783ccab0d8f0e9cd545d0446d9`, release
+  `20260916-66545d3`, rollback `20260916-1e22eb4`.
+- Synced: QRIS inline yang dibatasi host/pola aset, countdown `HH:MM:SS`,
+  fallback ukuran penuh, refresh/recovery, dan paid-state cleanup.
+- Evidence: storefront 336/336; Laravel 697 pass + satu expected skip dengan
+  6.512 assertion; focused payment 63/63; browser lintas viewport; dua backup
+  kandidat dan restore drill; checksum, provider, readiness 45/45,
+  worker/scheduler, runtime gate, dan public smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS /
+  BUSINESS_READY=false`. Next: customer melakukan hard refresh pada order aktif;
+  legal seller dan batas shipping final tetap perlu disahkan.
+
 ## 2026-09-16 — SagaPOS roster maksimal dua shift dan konflik actionable
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `76c7f5df6aa518eba8b008489f0ee3dbd34e068f` aktif di production, rollback `985aa1efaccaa59ecb7b6ba6dc27cb32ad92b270`.
