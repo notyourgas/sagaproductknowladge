@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Riwayat harga bahan dan dampak margin aktif di production
+
+- `CONFIRMED`: source `47dc4ae3a13d3c982ad9670e489a854334e40d75` aktif di [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `1e510299bcd8d7aedba79e7e030b86550562b623`.
+- Database Bahan menyediakan `Riwayat & dampak`: filter bulan WIB, supplier, dan sumber harga; timeline terpagina; perbandingan harga per satuan dasar; jumlah/perubahan kumulatif bulanan; serta simulasi HPP dan margin untuk menu aktif, inactive, draft, atau partial.
+- Harga acuan disimpan append-only dengan timestamp/effective date, idempotency, correction/void contract, dan audit v22. Harga acuan hanya untuk analisis: stok, moving-average cost, HPP published, order COGS, serta harga jual tidak berubah otomatis. Receipt aktual tetap otoritas MWA.
+- Kandidat final lulus full suite 1.314 pass, 0 fail, 71 skip, 1 todo; check 493 modul/34 migrasi; exact rollback parity, restore-tamper, desktop/mobile/accessibility, backup/restore, code-only recovery, activation, monitor, public dashboard/aset lulus.
+- Progress PRD tetap 101/198 (51%). `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment/gateway/Member OFF dan offsite backup belum terverifikasi.
+
 ## 2026-09-16 — Database Bahan satu pop-up aktif di production
 
 - `CONFIRMED`: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`.

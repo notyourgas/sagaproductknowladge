@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-199 — Harga acuan bahan adalah fakta analitik append-only
+
+- Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: histori perubahan harga bahan, evaluasi supplier, dan dampak margin.
+- Keputusan: simpan setiap perubahan harga acuan dengan timestamp/effective date, actor, reason, dan histori koreksi/void; tampilkan frekuensi, perubahan kumulatif, perbandingan supplier, serta simulasi HPP/margin.
+- Authority: harga acuan tidak otomatis mengubah stok, moving-average cost, HPP published, order COGS, atau harga jual. Receipt aktual tetap otoritas MWA; publish HPP tetap aksi Owner terpisah.
+- Alasan: Owner perlu menilai perubahan biaya dan supplier tanpa membuat perubahan analisis menjadi transaksi stok atau costing final.
+- Dampak: source `47dc4ae3a13d3c982ad9670e489a854334e40d75` aktif di production. Authenticated Owner UAT dan `BUSINESS_READY` tetap gate terpisah.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md).
+
 ## DEC-198 — Database Bahan SagaPOS memakai satu pop-up dengan review langsung
 
 - Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.

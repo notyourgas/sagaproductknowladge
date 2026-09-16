@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS riwayat harga bahan dan dampak margin aktif
+
+- `CONFIRMED`: source `47dc4ae3a13d3c982ad9670e489a854334e40d75` aktif di production, rollback `1e510299bcd8d7aedba79e7e030b86550562b623`. Owner memperoleh histori harga per bahan, filter WIB/supplier/sumber, agregat bulanan, perbandingan supplier, alert, dan simulasi HPP/margin menu.
+- Harga acuan tetap analitik; receipt/MWA, stok, published HPP, COGS order, serta harga jual tidak berubah otomatis. Full suite 1.314/0, check 493/34, backup/restore, recovery, aktivasi, monitor, HTTPS/aset lulus.
+- `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; PRD 101/198, payment/gateway/Member OFF. Produk lain tidak berubah.
+
 ## 2026-09-16 — SagaPOS Database Bahan satu pop-up aktif di production
 
 - `CONFIRMED`: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di Owner Dashboard, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Wizard lima tahap diganti dialog satu layar dengan form dan review langsung; tampilan ponsel bertumpuk dan draft sesi tetap terjaga saat ditutup.

@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-16 — Residual setelah riwayat harga dan margin impact aktif
+
+- `CONFIRMED`: production source `47dc4ae3a13d3c982ad9670e489a854334e40d75`, rollback `1e510299bcd8d7aedba79e7e030b86550562b623`; histori harga, supplier comparison, monthly change dan simulasi margin aktif. Full suite 1.314/0 dan recovery/monitor lulus.
+- `NEEDS CONFIRMATION`: authenticated Owner UAT belum berjalan karena helper kredensial lokal tidak tersedia. Verifikasi dengan harga supplier nyata: save, refresh timeline, MWA/stok tetap, dan simulasi Cafe Latte benar.
+- `NEEDS CONFIRMATION`: offsite backup tetap `UNVERIFIED`; margin historis perubahan harga jual memakai HPP buku saat ini dan sudah dilabeli sebagai simulasi, bukan margin historis as-of.
+- Progress PRD tetap 101/198 (51%). Jangan nyatakan `BUSINESS_READY` sebelum Owner UAT; payment/gateway/Member OFF.
+
 ## 2026-09-16 — Residual setelah Database Bahan satu layar aktif
 
 - `CONFIRMED`: production source `f9540071fa5e64552f74848c7615d5872c00144f`, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`; wizard bahan telah diganti satu pop-up form dengan review langsung.

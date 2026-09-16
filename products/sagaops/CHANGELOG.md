@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Riwayat harga bahan, supplier, dan dampak margin aktif
+
+- Sebelum: perubahan harga bahan tidak memiliki satu histori terfilter yang menunjukkan frekuensi, supplier, serta dampaknya ke HPP dan margin menu.
+- Setelah: setiap bahan mempunyai dialog riwayat/dampak dengan kalender WIB, timeline terpagina, normalisasi supplier, agregat/perubahan kumulatif bulanan, alert, dan simulasi menu aktif/inactive/partial. Owner dapat mencatat harga acuan beserta tanggal efektif dan alasan.
+- Harga acuan bersifat analitik dan append-only; receipt aktual tetap otoritas MWA. Tidak ada stok, HPP published, COGS order, atau harga jual yang berubah otomatis.
+- `CONFIRMED`: production source `47dc4ae3a13d3c982ad9670e489a854334e40d75`, rollback `1e510299bcd8d7aedba79e7e030b86550562b623`. Full suite 1.314 pass/0 fail, check 493/34, recovery dan monitor lulus. Authenticated Owner UAT pending; `BUSINESS_READY=false`, PRD 101/198.
+
 ## 2026-09-16 — Database Bahan menjadi satu pop-up dengan review langsung
 
 - Sebelum: tambah bahan memakai wizard lima tahap yang memisahkan identitas, satuan, pembelian, kontrol, dan review.

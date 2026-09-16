@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS riwayat harga bahan dan margin impact
+
+- Status `accepted`; klasifikasi `CONFIRMED`. Production source `47dc4ae3a13d3c982ad9670e489a854334e40d75`, rollback `1e510299bcd8d7aedba79e7e030b86550562b623`.
+- Synced: append-only reference price facts; timestamp/effective date; filter kalender WIB, supplier dan source; pagination; monthly/full aggregates; supplier comparison; alert; simulation HPP/margin; correction/void dan rollback parity.
+- Evidence: full suite 1.314 pass, 0 fail, 71 skip, 1 todo; static check 493 modul/34 migrasi; encrypted backup/disposable restore, code-only recovery, activation, monitor, dashboard 200 dan exact asset lulus. GitHub Quality dilewati atas keputusan Owner.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Progress PRD 101/198. Next: Owner UAT dengan satu harga supplier nyata, lalu verifikasi timeline, MWA tetap, dan dampak Cafe Latte.
+
 ## 2026-09-16 — SagaPOS Database Bahan satu pop-up
 
 - Status `accepted`; klasifikasi `CONFIRMED`. Production source `f9540071fa5e64552f74848c7615d5872c00144f`, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`.

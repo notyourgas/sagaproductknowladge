@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Analisis perubahan harga bahan dan margin menu
+
+Source `47dc4ae3a13d3c982ad9670e489a854334e40d75` menambah dialog `Riwayat & dampak` pada setiap bahan. Owner dapat menyaring bulan kalender Asia/Jakarta, supplier yang dinormalisasi, serta harga beli aktual, harga acuan, atau perubahan harga jual menu. Timeline memakai pagination gabungan tanpa duplikasi; kartu supplier membandingkan biaya per satuan dasar, rata-rata tertimbang, rentang, jumlah perubahan, perubahan kumulatif bulanan, dan selisih dari supplier termurah. Panel kanan menyimulasikan HPP dan margin menu aktif maupun inactive, termasuk state draft/partial, tanpa menyimpan hasil simulasi.
+
+Harga acuan baru tersimpan sebagai fakta append-only dengan effectiveAt/recordedAt, actor, reason, operation key, correction/void, dan validasi fingerprint/snapshot saat restore. Fakta ini sengaja tidak menjadi book-cost authority. Penerimaan aktual tetap mengubah moving-average cost; HPP published, order COGS, stok, dan harga jual tidak berubah otomatis. Riwayat harga jual memakai label jelas bahwa margin dihitung dengan HPP buku saat ini.
+
+Rilis code-only aktif di production dengan rollback `1e510299bcd8d7aedba79e7e030b86550562b623`. Full suite 1.314/0, check 493 modul/34 migrasi, rollback parity, backup terenkripsi/restore disposable, rehearsal current-candidate-current, aktivasi, monitor, HTTPS dan aset exact lulus. Authenticated Owner UAT belum berjalan karena helper kredensial lokal tidak tersedia; `BUSINESS_READY=false`, progress PRD 101/198.
+
 ## 2026-09-16 — Form Database Bahan satu layar
 
 Source `f9540071fa5e64552f74848c7615d5872c00144f` mengganti wizard lima tahap dengan dialog native satu layar di atas daftar Database Bahan. Field identitas, kategori, unit, konversi kemasan, harga, supplier, dan kontrol tersedia bersama. Review langsung berada di kanan pada desktop dan di bawah form pada ponsel; perubahan input segera memperbarui ringkasan. Batal atau Escape mempertahankan draft selama sesi, sedangkan satu aksi simpan menjalankan validasi seluruh form dan kontrak backend atomik yang sama.

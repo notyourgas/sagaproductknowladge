@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-16 — SagaPOS riwayat harga bahan dan simulasi margin aktif
+
+- `CONFIRMED`: production source `47dc4ae3a13d3c982ad9670e489a854334e40d75`, rollback `1e510299bcd8d7aedba79e7e030b86550562b623`. Database Bahan menyediakan histori harga per bulan WIB, supplier dan sumber, perbandingan ternormalisasi, perubahan kumulatif, alert, serta simulasi HPP/margin menu aktif/inactive/partial.
+- Harga acuan baru adalah fakta append-only untuk analisis dan tidak otomatis mengubah stok, MWA, HPP published, order COGS, atau harga jual. Receipt aktual tetap otoritas MWA; Owner harus membuat/publish revisi HPP secara eksplisit bila diperlukan.
+- Full suite final 1.314 pass/0 fail; check 493 modul/34 migrasi; production recovery dan monitor lulus. Authenticated Owner UAT pending. Status `PRODUCTION_ACTIVATED / BUSINESS_READY=false`, PRD 101/198.
+
 ## 2026-09-16 — SagaPOS Database Bahan satu layar aktif di production
 
 - `CONFIRMED`: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard), rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Tambah bahan memakai satu pop-up berisi seluruh field dengan review langsung di kanan pada desktop dan bertumpuk pada ponsel; tidak ada wizard.

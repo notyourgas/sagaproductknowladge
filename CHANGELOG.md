@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi SagaPOS riwayat harga dan dampak margin
+
+- `CONFIRMED`: source `47dc4ae3a13d3c982ad9670e489a854334e40d75` aktif di production, rollback `1e510299bcd8d7aedba79e7e030b86550562b623`.
+- Diperbarui SagaOPS Product/Dossier/Changelog, portfolio, master knowledge, keputusan, gaps, dan sync status untuk histori harga bahan, supplier comparison, monthly change, dan simulasi HPP/margin.
+- Full suite 1.314/0, check 493/34, backup/restore, code-only rehearsal/activation, monitor dan public asset lulus. Authenticated Owner UAT pending; `BUSINESS_READY=false`, PRD 101/198. Tidak ada credential atau data restricted.
+
 ## 2026-09-16 — Sinkronisasi production Database Bahan satu layar SagaPOS
 
 - `CONFIRMED`: source `f9540071fa5e64552f74848c7615d5872c00144f` aktif di production, rollback `c1f7ff043fde636c00f8094ba99959357a5e1828`. Wizard lima tahap diganti satu pop-up form dengan review langsung desktop/mobile.
