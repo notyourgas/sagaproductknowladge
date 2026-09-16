@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-16 — SagaPOS HR native dan payroll preview
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif di production, rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
+- Synced: akun staf Employee ID/password sementara, portal staf native, shift/roster, attendance/request, laporan jam kerja bulanan dan CSV, serta retirement jalur SagaWork production.
+- Evidence: focused 26/26; full 1.300 pass/0 fail/71 skip/1 TODO dari 1.372; audit 0; artifact, migration V3, backup/restore, recovery rehearsal, activation, health, integrity, database, HTTPS dan negative auth PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Next: Owner membuat satu akun uji dan menjalankan siklus roster → absensi → request → laporan; payroll nominal/payout, performance, foto/geofence dan offsite restore tetap OFF/pending.
+
 ## 2026-09-16 — SagaPOS roster bulanan weekday rotation
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `2d47ee3cfe4da90c1325df5923bf739d52a35598` aktif di production, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.

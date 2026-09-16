@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-16 — Native work-time report dan payroll readiness
+
+Source production `537a9aef3363ac18cdef5f4dda518b5430dbb267` menyatukan pengelolaan tim, template shift, roster, absensi, permohonan, dan laporan jam kerja di Owner Dashboard SagaPOS. Owner membuat akun karyawan dari record staf; Employee ID dibuat server dan password sementara hanya tampil sekali. Portal karyawan native memakai Employee ID/password pada `staff.sagapos.site`, tanpa membuka aplikasi SagaWork. Jalur `/hr`, `/api/hr/*`, `/api/hrpos/*`, dan API staf bridge lama ditutup pada runtime production.
+
+Read model laporan dibatasi maksimal 62 hari dan selalu scope organisasi serta outlet sesi Owner. Per staf, server menghitung jadwal yang sudah jatuh tempo, hadir, izin yang disetujui, absen, telat/menit telat, absensi belum lengkap atau tanpa jadwal, menit kerja, pulang awal, kandidat lembur, tingkat kehadiran, dan alasan review. CSV berasal dari model yang sama. Status payroll hanya `PREVIEW_ONLY`: belum ada komponen gaji, tarif, tunjangan, pajak/BPJS, potongan otomatis, approval Finance, slip final, atau disbursement. Performance tetap OFF.
+
+Migration laporan V3 menambah tiga kolom non-negatif pada attendance secara aditif dan ledger aplikasi utama tetap 34. Full suite menghasilkan 1.300 pass, 0 fail, 71 skip, 1 TODO dari 1.372; focused 26/26 dan audit dependency 0. Paket immutable, backup terenkripsi/disposable restore, boot rehearsal kandidat–current–kandidat, activation atomik, service tanpa restart/error, file ledger, schema V3, public HTTPS, serta anonymous boundary lulus. Rollback menunjuk `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
+
+Authenticated Owner UAT dan satu siklus staf nyata belum dilakukan. Foto/geofence attendance, approval lembur, kebijakan payroll Kananta/Kopi Saga, slip, payout, skor kinerja, dan offsite restore tetap backlog; `BUSINESS_READY=false`.
+
 ## 2026-09-16 — Kebijakan roster bulanan empat/lima staf
 
 Source production `2d47ee3cfe4da90c1325df5923bf739d52a35598` menambahkan generator `weekday-rotation-roster-v2` tanpa migration baru. Draf menyimpan hari libur otomatis dan pengganti izin akhir pekan pada generation run periode terkait, sehingga kalender desktop dan agenda mobile dapat menampilkan `L` untuk libur serta `I` untuk izin. State Owner kini mengambil ringkasan konflik per periode, bukan hanya generation run global terbaru.

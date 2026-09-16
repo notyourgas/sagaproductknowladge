@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-16 — SagaPOS HR native dan payroll preview aktif
+
+- `CONFIRMED`: production source `537a9aef3363ac18cdef5f4dda518b5430dbb267`, rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
+- Jalur operasional HR sekarang native di Owner Dashboard dan portal staf SagaPOS: akun staf, Employee ID/password sementara, shift, roster, absensi, permohonan, laporan work-time dan CSV. Production menutup `/hr` dan API bridge SagaWork; jangan mengarahkan Owner/staf ke SagaWork untuk flow ini.
+- Payroll berstatus `PREVIEW_ONLY`: laporan kuantitas dan exception tersedia, tetapi nominal, potongan otomatis, slip final, payout dan performance tetap OFF. Foto/geofence attendance dan authenticated business UAT masih terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS roster bulanan weekday rotation aktif
 
 - `CONFIRMED`: production source `2d47ee3cfe4da90c1325df5923bf739d52a35598`, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`, pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard).

@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-200 — Flow HR operasional berjalan native di SagaPOS
+
+- Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: product boundary SagaPOS dan SagaWork untuk flow HR.
+- Keputusan: Owner dan staf tidak membuka SagaWork untuk penggunaan HR sehari-hari. Akun staf, shift/roster, absensi, permohonan dan laporan disediakan pada domain dan runtime SagaPOS; jalur bridge lama ditutup pada production.
+- Alasan: HR adalah salah satu fitur SagaPOS, bukan aplikasi terpisah bagi pengguna.
+- Alternatif: mempertahankan halaman SagaPOS yang mendelegasikan runtime ke SagaWork tidak dipakai untuk flow aktif. Histori dan source SagaWork tidak dihapus.
+- Dampak: source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif di production. Payroll nominal/payout, performance, geofence/foto dan business UAT tetap gate terpisah.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md), [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-199 — Roster SagaPOS memberi satu libur weekday per staf per minggu
 
 - Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.
@@ -76,7 +86,7 @@
 ## DEC-190 - SagaWork menjadi modul HR di SagaPOS untuk usaha sendiri
 
 - Tanggal: 2026-09-06.
-- Klasifikasi/status: `CONFIRMED`, aktif; pemberi keputusan Andreas.
+- Klasifikasi/status: `DEPRECATED` oleh [DEC-200](#dec-200--flow-hr-operasional-berjalan-native-di-sagapos); pemberi keputusan Andreas.
 - Topik: satu pengalaman SagaPOS untuk operasional dan HR usaha sendiri.
 - Keputusan: gunakan SagaWork sebagai mesin HR dalam SagaPOS; target usaha sendiri menggantikan rencana pilot eksternal. Kopi Saga F&B mengikuti prioritas operasional task POS terbaru; dukungan Saga Studio tidak otomatis mengganti atau memperluas prioritas tersebut.
 - Alasan: owner dan staf mengakses operasional serta HR dalam aplikasi yang sama dan memakai kembali fondasi workforce.

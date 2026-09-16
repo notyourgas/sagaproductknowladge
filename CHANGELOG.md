@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-16 — Sinkronisasi SagaPOS HR native dan payroll preview
+
+- `CONFIRMED`: exact source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif di production; rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
+- Knowledge SagaOPS diperbarui untuk akun staf, portal staf native, roster/attendance/request, laporan jam kerja/CSV, retirement jalur SagaWork, migration V3, serta batas payroll/performance.
+- Tidak ada credential, PII, tenant ID, payroll nyata, atau data transaksi. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Sinkronisasi roster bulanan SagaPOS
 
 - `CONFIRMED`: source `2d47ee3cfe4da90c1325df5923bf739d52a35598` aktif di production, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.

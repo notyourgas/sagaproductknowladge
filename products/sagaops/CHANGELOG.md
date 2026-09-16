@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-16 — Native laporan jam kerja dan payroll preview
+
+- `CONFIRMED`: production source `537a9aef3363ac18cdef5f4dda518b5430dbb267`, rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
+- Added: tab Laporan payroll native, filter bulan, ringkasan attendance/work-time, review flags, CSV, dan pencatatan pulang awal/kandidat lembur.
+- Changed: Owner dan staf memakai UI/API native SagaPOS; jalur workforce bridge lama ditutup pada production. Payroll tetap preview dan tidak mengirim uang; performance OFF.
+- Evidence: focused 26/26; full 1.300 pass/0 fail/71 skip/1 TODO dari 1.372; audit 0; migration V3, backup/restore, code-only recovery, activation, health, integrity, schema, HTTPS dan auth boundary PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — Roster bulanan otomatis dengan libur weekday
 
 - Sebelum: generator tidak memiliki kebijakan eksplisit satu libur mingguan dan Owner belum mendapat marker libur/izin serta filter per staf pada matriks bulanan.

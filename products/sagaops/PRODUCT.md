@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-16 — Laporan jam kerja dan payroll preview native aktif di SagaPOS
+
+- `CONFIRMED`: source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
+- Area Tim & Shift kini native di SagaPOS: Owner dapat membuat akun karyawan dengan Employee ID/password sementara sekali tampil, mengelola template dan roster bulanan, memeriksa absensi/permohonan, lalu membuka tab Laporan payroll dengan filter bulan dan ekspor CSV.
+- Laporan merangkum jadwal jatuh tempo, hadir, izin, absen, telat dan menit telat, absensi belum lengkap/tanpa jadwal, jam kerja, pulang awal, kandidat lembur, tingkat kehadiran, serta baris yang wajib direview. Nominal gaji, potongan otomatis, pembayaran payroll, dan skor kinerja tetap tidak dihitung atau diaktifkan.
+- Runtime production memensiunkan `/hr` dan API bridge SagaWork dengan respons tertutup; portal staf native tersedia pada [staff.sagapos.site](https://staff.sagapos.site/staff/login). Data tetap tenant/outlet scoped pada PostgreSQL SagaPOS.
+- Full suite 1.372 test: 1.300 pass, 0 fail, 71 skip, 1 TODO; focused 26/26 dan dependency audit 0. Artifact immutable, migration V3 aditif, backup/restore, rehearsal kandidat–rollback–kandidat, activation, exact-source health, file integrity, database, HTTPS dan negative auth lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; performance, payroll payout, kebijakan nominal/potongan, geofence/foto attendance, dan offsite recovery tetap gate terpisah.
+
 ## 2026-09-16 — Generator jadwal bulanan dengan aturan libur aktif di production
 
 - `CONFIRMED`: source `2d47ee3cfe4da90c1325df5923bf739d52a35598` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.

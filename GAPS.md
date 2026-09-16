@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-16 — Residual setelah SagaPOS HR native report aktif
+
+- `CONFIRMED`: source production `537a9aef3363ac18cdef5f4dda518b5430dbb267` menutup ketergantungan runtime flow HR terhadap SagaWork dan menambah laporan work-time/payroll preview tenant/outlet scoped.
+- `NEEDS CONFIRMATION`: authenticated Owner/staf UAT pada data uji operasional belum dilakukan; geofence/foto dan aturan perangkat attendance belum tersedia pada flow native production.
+- `NEEDS CONFIRMATION`: nominal payroll, komponen gaji, pajak/BPJS, potongan, approval lembur/Finance, slip final, payout dan formula performance belum didefinisikan atau diaktifkan. Offsite restore juga belum diverifikasi.
+- Dampak: fitur cukup untuk trial akun, roster, absensi dasar, request dan review laporan, tetapi belum boleh dianggap payroll operasional atau `BUSINESS_READY=true`.
+
 ## 2026-09-16 — SagaPOS HR roster prototype hardening
 
 - `CONFIRMED`: source production `2d47ee3cfe4da90c1325df5923bf739d52a35598` menutup ringkasan konflik global dengan generation run per periode dan mengaktifkan kebijakan libur empat/lima staf beserta guard publish.

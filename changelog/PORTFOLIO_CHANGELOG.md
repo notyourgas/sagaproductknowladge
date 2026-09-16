@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-16 — SagaPOS HR native: laporan jam kerja dan payroll preview
+
+- `CONFIRMED`: source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif di production dengan rollback `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
+- Owner mengelola akun staf, shift/roster, absensi, permohonan dan laporan work-time dari SagaPOS; staf memakai portal native SagaPOS. Runtime production tidak membuka SagaWork atau bridge HR lama.
+- Payroll hanya readiness/preview dan CSV; nominal, potongan, slip final, payout, performance, geofence/foto dan offsite recovery belum aktif. `AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-16 — SagaPOS roster bulanan empat/lima staf aktif di production
 
 - `CONFIRMED`: source `2d47ee3cfe4da90c1325df5923bf739d52a35598`, rollback `e9315a889f6d92c055076f108b2d32fa0fedf878`.
