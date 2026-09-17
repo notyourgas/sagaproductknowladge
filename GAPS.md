@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-17 — Residual panel Review barang datang mobile
+
+- `CONFIRMED`: source production `c9e23066ba010a94cc98cec8fec9b7702847b7c2` membuat panel Review sticky dapat diminimalkan dan dibuka kembali tanpa mengubah draft atau foto.
+- `NEEDS CONFIRMATION`: iPhone Andreas belum mengonfirmasi tinggi panel ringkas, safe-area Safari, scroll form, dan reopen setelah foto nyata dipilih.
+- Dampak: perbaikan aktif dan browser acceptance lulus, tetapi validasi perangkat nyata tetap menahan `BUSINESS_READY=true`.
+
 ## 2026-09-17 — Residual setelah login Portal Staff mobile dipulihkan
 
 - `CONFIRMED`: source production `f618dacdc2b35d19712d8c058757f55757a8d044` meneruskan route attendance native staff yang sebelumnya diblokir ingress setelah autentikasi berhasil.

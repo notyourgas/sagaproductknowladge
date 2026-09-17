@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Kontrol panel Review penerimaan pada layar kecil
+
+Pada viewport mobile, kartu Review penerimaan memakai sticky bottom agar aksi kirim tetap mudah dijangkau. Versi sebelumnya tidak menyediakan kontrol tutup sehingga panel dapat menutupi form dan terasa seperti window yang terkunci. Source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` menambahkan header mobile, tombol tutup/buka dengan state aksesibel, dan mode ringkas yang tetap menunjukkan jumlah bahan serta foto.
+
+State form, antrean foto IndexedDB, dan draft lokal tidak disentuh saat panel diminimalkan. Desktop mempertahankan review dua kolom. UAT visual pada iPhone Andreas tetap diperlukan untuk memastikan tinggi panel dan safe-area Safari sesuai perangkat nyata.
+
 ## 2026-09-17 — Recovery login Portal Staff pada perangkat mobile
 
 Login staff, pembentukan session, dan pembacaan home telah berhasil, tetapi bootstrap portal juga meminta eligibility absensi. Konfigurasi ingress belum memasukkan namespace attendance sehingga respons `403` dibaca client sebagai portal tidak tersedia dan state autentikasi dibersihkan. Source `f618dacdc2b35d19712d8c058757f55757a8d044` menambahkan route attendance ke allowlist yang sama dengan route native staff lain serta mengikatnya ke test baseline konfigurasi production.

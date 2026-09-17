@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — Review barang datang dapat diminimalkan di HP
+
+- `CONFIRMED`: exact source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.
+- Panel Review yang menempel di bawah layar kini mempunyai tombol tutup. Saat diminimalkan, panel berubah menjadi bar ringkas berisi jumlah bahan dan foto, lalu dapat dibuka kembali untuk mengirim.
+- Menutup panel tidak menghapus supplier, bahan, foto, atau draft perangkat. Tombol berukuran minimal 44 px dan state buka/tutup memiliki label aksesibel.
+- Static/type check 520 modul dan focused browser 4/4 lulus. Public HTML/JS/CSS, exact-source health, backup/restore, monitor dan timer terverifikasi.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Login Portal Staff mobile tidak lagi terpental
 
 - `CONFIRMED`: exact source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `8b15d82320825658fcbc78958c322c24ae55268c`.

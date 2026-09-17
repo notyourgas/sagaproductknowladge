@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 — Sinkronisasi kontrol panel Review SagaPOS mobile
+
+- `CONFIRMED`: exact source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif di production; rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.
+- Knowledge SagaOPS diperbarui untuk panel Review penerimaan yang dapat diminimalkan, preservasi draft/foto, bukti release, dan residual UAT iPhone.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, gaps, dan sync status. Tidak ada credential, PII, foto, atau identifier privat.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Sinkronisasi perbaikan login Portal Staff SagaPOS
 
 - `CONFIRMED`: exact source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif di production; rollback `8b15d82320825658fcbc78958c322c24ae55268c`.

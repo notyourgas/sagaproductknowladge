@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 — Review penerimaan SagaPOS mobile dapat diminimalkan
+
+- `CONFIRMED`: exact production source `c9e23066ba010a94cc98cec8fec9b7702847b7c2`; rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.
+- Panel Review barang datang pada HP mempunyai tombol tutup dan mode ringkas yang dapat dibuka kembali. Supplier, bahan, foto, serta draft tetap tersimpan ketika panel diminimalkan.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## Update 2026-09-17 — Login Portal Staff SagaPOS mobile dipulihkan
 
 - `CONFIRMED`: exact production source `f618dacdc2b35d19712d8c058757f55757a8d044`; rollback `8b15d82320825658fcbc78958c322c24ae55268c`.

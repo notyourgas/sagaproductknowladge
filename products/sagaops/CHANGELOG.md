@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Panel Review barang datang mobile dapat ditutup
+
+- `CONFIRMED`: source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif di production; rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.
+- Fixed: kartu Review sticky tidak lagi menutup area form tanpa jalan keluar pada iPhone. Staf dapat meminimalkan dan membuka kembali panel tanpa kehilangan draft atau foto.
+- Evidence: focused browser 4/4, static/type 520 modul, release/backup/health/monitor dan public asset smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Perbaikan login Portal Staff mobile
 
 - `CONFIRMED`: source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif di production; rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
