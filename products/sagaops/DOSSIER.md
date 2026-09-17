@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Recovery login Portal Staff pada perangkat mobile
+
+Login staff, pembentukan session, dan pembacaan home telah berhasil, tetapi bootstrap portal juga meminta eligibility absensi. Konfigurasi ingress belum memasukkan namespace attendance sehingga respons `403` dibaca client sebagai portal tidak tersedia dan state autentikasi dibersihkan. Source `f618dacdc2b35d19712d8c058757f55757a8d044` menambahkan route attendance ke allowlist yang sama dengan route native staff lain serta mengikatnya ke test baseline konfigurasi production.
+
+Release dilakukan tanpa migration database. Backup/disposable restore, runtime upgrade, rollback pointer, Nginx validation/reload, exact-source health, monitor dan timer lulus. Public boundary tetap fail-closed: endpoint staff yang memerlukan sesi menjawab `401`, sedangkan route Owner dan legacy menjawab `403`. Login nyata pada HP Andreas tetap menjadi UAT terakhir sebelum status business-ready dapat berubah.
+
 ## 2026-09-17 — Kontrak operasional penerimaan barang staf V4
 
 Source production `81154a727e601b0e5cc94e601593a750cd61b25b` memperkeras penerimaan barang dari Portal Staff sampai posting stok canonical. Foto dipersistenkan pada antrean perangkat, dipulihkan setelah refresh, dan diunggah dengan timeout serta retry per objek. Submit membekukan revisi form agar upload lambat tidak mencampur payload lama dan baru.

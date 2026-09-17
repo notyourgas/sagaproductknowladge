@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Perbaikan login Portal Staff mobile
+
+- `CONFIRMED`: source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif di production; rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
+- Fixed: alur login tidak lagi kembali ke layar awal ketika portal memuat eligibility absensi. Ingress native staff sekarang mengizinkan namespace attendance tanpa membuka route Owner atau legacy.
+- Evidence: static/type check 520 modul; full suite 1.412 pass, 0 fail, 71 expected skip, 1 TODO; immutable artifact, target admission, backup/restore, runtime upgrade, Nginx syntax/reload, exact-source health, monitor/timer, dan public 200/401/403 smoke lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Staff receiving hardening, procurement linkage, dan media recovery
 
 - `CONFIRMED`: production source `81154a727e601b0e5cc94e601593a750cd61b25b`; rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.

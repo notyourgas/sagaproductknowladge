@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 — Login Portal Staff SagaPOS mobile dipulihkan
+
+- `CONFIRMED`: exact production source `f618dacdc2b35d19712d8c058757f55757a8d044`; rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
+- Penyebab portal terpental adalah eligibility absensi yang diblokir ingress setelah login/session/home berhasil. Namespace attendance native staff sekarang diteruskan, sedangkan boundary Owner dan legacy tetap tertutup.
+- Public smoke dan exact-source health lulus. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## Update 2026-09-17 — SagaPOS staff receiving hardening aktif
 
 - `CONFIRMED`: exact production source `81154a727e601b0e5cc94e601593a750cd61b25b`; rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.

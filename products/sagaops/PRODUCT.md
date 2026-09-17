@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — Login Portal Staff mobile tidak lagi terpental
+
+- `CONFIRMED`: exact source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
+- Login, session, dan home sebelumnya berhasil, tetapi permintaan eligibility absensi diblokir ingress sehingga portal kembali ke layar login dengan pesan portal belum tersedia. Allowlist ingress kini meneruskan seluruh route attendance native yang terautentikasi.
+- Public smoke membuktikan login `200`, session/attendance/receiving anonim `401`, serta route Owner dan legacy tetap `403`. Service, monitor, maintenance timer, exact-source health, backup/restore, dan 34 migration tetap sehat.
+- Static/type check 520 modul dan full suite 1.484 test selesai dengan 1.412 pass, 0 fail, 71 expected skip, dan 1 TODO lama.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Penerimaan barang staf diperkeras dan aktif di production
 
 - `CONFIRMED`: exact source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard) dan [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.

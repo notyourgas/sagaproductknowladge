@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 — SagaPOS login Portal Staff mobile
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif di production, rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
+- Synced: akar portal terpental, allowlist attendance native staff, negative boundary Owner/legacy, release evidence, dan residual UAT perangkat nyata.
+- Evidence: static/type check 520 modul; full 1.484 test dengan 1.412 pass/0 fail/71 expected skip/1 TODO; artifact, target admission, backup/restore, activation, exact-source health, Nginx, monitor/timer dan public 200/401/403 smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+- Next: Andreas login ulang pada HP menggunakan akun staf lalu memastikan Beranda dan Absensi tetap terbuka setelah refresh.
+
 ## 2026-09-17 - COYABAG Product Detail mobile composition
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

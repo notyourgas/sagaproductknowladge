@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 — Sinkronisasi perbaikan login Portal Staff SagaPOS
+
+- `CONFIRMED`: exact source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif di production; rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
+- Knowledge SagaOPS diperbarui untuk penyebab portal mobile terpental, perluasan allowlist attendance, bukti release, dan UAT perangkat nyata yang masih menunggu.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, gaps, dan sync status. Tidak ada credential, PII, foto, tenant/device identifier, atau path evidence privat.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 - Sinkronisasi Product Detail mobile COYABAG
 
 - `CONFIRMED`: exact source `a1a80dc179505b64fc4b98a172d227de44937e2a`

@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-17 — Login Portal Staff SagaPOS mobile dipulihkan
+
+- `CONFIRMED`: SagaPOS source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif di production dengan rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
+- Bootstrap portal kini dapat memuat eligibility absensi setelah login; ingress tetap menolak route Owner dan legacy dari host staff.
+- Full suite 1.412 pass/0 fail, backup/restore, exact-source health, Nginx, monitor/timer, dan public 200/401/403 smoke lulus. Authenticated real-device UAT masih terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-17 - COYABAG Product Detail mobile composition aktif
 
 - `CONFIRMED`: source `a1a80dc179505b64fc4b98a172d227de44937e2a`

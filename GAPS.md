@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-17 — Residual setelah login Portal Staff mobile dipulihkan
+
+- `CONFIRMED`: source production `f618dacdc2b35d19712d8c058757f55757a8d044` meneruskan route attendance native staff yang sebelumnya diblokir ingress setelah autentikasi berhasil.
+- `NEEDS CONFIRMATION`: UAT terautentikasi pada HP Andreas belum membuktikan login, Beranda, eligibility absensi, refresh, dan kembali dari background dalam satu sesi nyata.
+- Dampak: perbaikan aktif dan boundary publik lulus, tetapi UAT perangkat nyata tetap menahan `BUSINESS_READY=true`.
+
 ## 2026-09-17 — Residual setelah absensi GPS/foto aktif
 
 - `CONFIRMED`: source production `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` mengaktifkan attendance shift-bound, jendela T-60/end+60, GPS/geofence, foto privat, koreksi dan review Owner tanpa migration baru.
