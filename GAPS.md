@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-17 — Residual setelah reference-fidelity Portal Staff
+
+- `CONFIRMED`: source production `4f3acabaf8b1656b70909712f0d00b13b5599802` menyelaraskan token UI, Feather Icons, dan flow fokus Pengajuan dengan handoff Portal Staff v1 tanpa perubahan schema.
+- `NEEDS CONFIRMATION`: UAT terautentikasi pada HP nyata masih diperlukan untuk Beranda, absensi kamera/GPS, Jadwal, semua jenis Pengajuan, dan Barang Datang dengan foto nyata.
+- `NEEDS CONFIRMATION`: kesetaraan yang diterapkan adalah kontrak UI/UX browser terhadap token, layout, dan flow handoff; perbedaan isi data nyata, font rendering OS, serta tinggi browser chrome tidak dapat dijanjikan sebagai pixel-identical raster.
+- `NEEDS CONFIRMATION`: koordinat/radius outlet dan independent offsite restore tetap belum selesai.
+- Dampak: production siap dicoba, tetapi residual operasional tersebut menahan `BUSINESS_READY=true`.
+
 ## 2026-09-17 — Residual setelah Portal Staff handoff v1 aktif
 
 - `CONFIRMED`: source production `21bbba38366a47cb6cf23a8e53b2e318d460e94f` mengaktifkan 29 state handoff mobile-first untuk Beranda, Jadwal, Pengajuan, Barang, attendance, dan recovery respons tidak pasti tanpa migration baru.

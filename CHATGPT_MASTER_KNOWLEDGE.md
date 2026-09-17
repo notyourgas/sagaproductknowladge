@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 — Reference-fidelity Portal Staff SagaPOS aktif
+
+- `CONFIRMED`: exact production source `4f3acabaf8b1656b70909712f0d00b13b5599802`; rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
+- Portal Staff memakai Plus Jakarta Sans, token handoff, dan Feather outline icon 22 px/stroke 1.8 pada seluruh navigasi, aksi, status, attendance, pengajuan, serta penerimaan.
+- Flow Pengajuan memilih jenis lebih dulu lalu membuka form pada layar fokus. Layout lulus tanpa overflow pada 360, 390, 430, dan 768 px.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`; koordinat outlet dan offsite restore masih perlu ditutup.
+
 ## Update 2026-09-17 — Portal Staff SagaPOS handoff v1 aktif
 
 - `CONFIRMED`: exact production source `21bbba38366a47cb6cf23a8e53b2e318d460e94f`; rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.

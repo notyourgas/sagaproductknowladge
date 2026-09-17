@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — UI Portal Staff diselaraskan dengan handoff dan Feather Icons
+
+- `CONFIRMED`: exact source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
+- UI memakai token handoff: Plus Jakarta Sans, palet netral-cokelat, judul 28/34, isi 16/24, caption 12/16, angka utama 40/44, kartu 24 px, tombol 52 px, input 52 px, dan icon 22 px dengan stroke 1.8.
+- Seluruh icon navigasi, aksi, status, attendance, pengajuan, dan penerimaan memakai satu bahasa Feather outline. Glyph campuran, gradient, glow, dan blur dekoratif lama telah dihapus.
+- Flow Pengajuan kini membuka pemilih jenis satu kolom sebagai layar fokus, lalu form terkait tanpa header utama atau bottom navigation. Layout tervalidasi tanpa overflow pada 360, 390, 430, dan 768 px.
+- Static/type check dan full suite 1.499 test selesai dengan 1.426 pass, 0 fail, 72 expected skip, serta 1 TODO. Release code-only, backup/restore, recovery rehearsal, activation, health 34 migration, monitor, TLS, dan smoke aset publik lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`. Koordinat outlet masih belum dikonfigurasi dan offsite restore belum terverifikasi.
+
 ## 2026-09-17 — Portal Staff mobile mengikuti handoff operasional v1
 
 - `CONFIRMED`: exact source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.

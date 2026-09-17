@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 — SagaPOS Portal Staff reference-fidelity
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `4f3acabaf8b1656b70909712f0d00b13b5599802`, rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
+- Synced: token visual handoff, Feather Icons, tipografi dan sizing, flow fokus Pengajuan, responsive evidence, release evidence, serta residual UAT.
+- Evidence: static/type PASS; focused 16/16; full 1.499 test dengan 1.426 pass, 0 fail, 72 expected skip, 1 TODO; backup/restore, recovery rehearsal, activation, exact-source health, 34 migration, monitor, TLS, dan public asset smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 - COYABAG Soft Gallery Wave 1-6 dan stock truth
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

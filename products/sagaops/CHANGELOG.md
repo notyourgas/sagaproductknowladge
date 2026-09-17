@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Reference-fidelity UI dan Feather Icons Portal Staff
+
+- `CONFIRMED`: source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif di production; rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
+- Changed: palet, Plus Jakarta Sans, skala teks, radius, tinggi kontrol, spacing, serta layar fokus mengikuti handoff Portal Staff v1.
+- Changed: Pengajuan memilih jenis terlebih dahulu, baru membuka form terkait; header utama dan bottom navigation tidak tampil pada flow fokus.
+- Replaced: seluruh icon campuran diganti Feather outline 22 px dengan stroke 1.8; gradient, glow, dan blur dekoratif dihapus.
+- Evidence: static/type PASS; focused 16/16; full 1.499 dengan 1.426 pass/0 fail/72 expected skip/1 TODO; responsive 360/390/430/768, backup/restore, code-only recovery, activation, exact-source health, monitor, TLS, dan public asset smoke PASS.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Staff Implementation Handoff v1 aktif di production
 
 - `CONFIRMED`: source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif di production; rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.

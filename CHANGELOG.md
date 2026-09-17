@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 — Sinkronisasi reference-fidelity Portal Staff SagaPOS
+
+- `CONFIRMED`: exact source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif di production; rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
+- Knowledge SagaOPS diperbarui untuk token UI handoff, Feather Icons, tipografi/sizing, flow fokus Pengajuan, bukti responsive/release, dan residual authenticated UAT.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status. Tidak ada credential, PII, foto pengguna, tenant/device identifier, atau path evidence privat.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 - Sinkronisasi Soft Gallery dan stock truth COYABAG
 
 - `CONFIRMED`: exact source `a386c427090fe882d884a1da495249613061196b`

@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-17 — Portal Staff SagaPOS memakai UI handoff dan Feather Icons
+
+- `CONFIRMED`: SagaPOS source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif di production dengan rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
+- Typography, ukuran kontrol, palet, radius, spacing, dan seluruh icon diselaraskan dengan handoff; flow Pengajuan kini memilih jenis sebelum form pada layar fokus.
+- Full 1.499 test tanpa failure, empat breakpoint tanpa overflow, backup/restore, rehearsal recovery, health, monitor, TLS, dan public smoke lulus. Authenticated UAT, koordinat outlet, serta offsite restore tetap terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-17 - COYABAG Soft Gallery dan Quick View stock truth aktif
 
 - `CONFIRMED`: source `a386c427090fe882d884a1da495249613061196b`

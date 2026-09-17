@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Reference-fidelity pass Portal Staff
+
+Source production `4f3acabaf8b1656b70909712f0d00b13b5599802` menyelesaikan pass UI/UX terhadap handoff Portal Staff v1. Implementasi mengikat palet, Plus Jakarta Sans, skala tipografi, radius, tinggi kontrol, spacing mobile, dan Feather outline icon pada token yang diuji otomatis. Seluruh glyph icon campuran, gradient, glow, serta blur dekoratif dihapus agar satu bahasa visual terjaga.
+
+Layar Pengajuan diperbaiki dari form yang langsung terbuka menjadi flow referensi: pemilih jenis pengajuan satu kolom tampil lebih dulu, kemudian form izin/lembur/tukar shift berjalan pada layar fokus tanpa root header dan bottom navigation. Tanggal mobile ditumpuk agar tidak overflow. Screenshot browser 390 px memverifikasi Beranda, Jadwal, daftar Pengajuan, pemilih jenis, form izin, dan Barang Datang; browser juga membuktikan token dan no-overflow pada 360/390/430/768 px.
+
+Full suite mencatat 1.499 test, 1.426 pass, 0 fail, 72 environment skip, dan 1 TODO. Artifact immutable, encrypted backup/disposable restore, code-only candidate-current-candidate rehearsal, activation, exact-source health, 34 migration, monitor aktif, TLS, serta public HTML/CSS/JS smoke lulus. Tidak ada perubahan schema, payment, provider, atau hardware. Authenticated real-device UAT, koordinat outlet, dan offsite restore tetap terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Implementasi menyeluruh handoff Portal Staff v1
 
 Source production `21bbba38366a47cb6cf23a8e53b2e318d460e94f` menyelaraskan Portal Staff dengan handoff mobile-first melalui empat akar navigasi: Beranda, Jadwal, Pengajuan, dan Barang. Implementasi mencakup 29 state deterministik beserta state muat, kosong, gagal, koreksi, serta pemulihan operasi yang hasilnya belum diketahui. Semua API baru mengambil identitas staf, organisasi, dan outlet dari sesi server; client tidak dapat memilih scope sendiri.
