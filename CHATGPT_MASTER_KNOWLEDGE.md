@@ -3645,9 +3645,14 @@ diterapkan karena seluruhnya belum dipetakan (`applied=false`). Status
 `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`;
 authenticated Owner/Staff UAT dan mapping legacy masih pending.
 
-COYABAG storefront/API/admin kini pada release `20260830-878a570` dengan exact
-source `878a5705f8f9f2577019f5f5259d8259eed96898`; rollback
-`20260830-0e4a251` tersedia. Link pesanan/stok, aksi katalog, dan pagination
+COYABAG storefront/API/admin kini pada release `20260917-a386c42` dengan exact
+source `a386c427090fe882d884a1da495249613061196b`; rollback
+`20260917-d472d01` tersedia. Soft Gallery Wave 1-6 aktif pada katalog responsif,
+filter mobile, dan Quick View. Label stok per warna kini membaca stock label
+aktual sehingga varian tersedia tidak lagi keliru ditampilkan sebagai habis.
+Readiness 45/45, provider verified, checkout publik `COMMERCE_ACTIVE`, recovery,
+public smoke, serta audit mobile/desktop lulus tanpa migrasi atau perubahan
+provider. Link pesanan/stok, aksi katalog, dan pagination
 sekarang memiliki target minimal 40 px; checkbox/radio 24 px berada dalam baris
 label minimal 40 px. Browser acceptance mengukur target ini secara langsung di
 Pesanan serta Produk desktop/mobile. Tiga wave UI/UX telah memoles 55 route Admin pada

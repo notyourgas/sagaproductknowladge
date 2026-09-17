@@ -98,9 +98,13 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Runtime aktif memakai exact source
-  `a1a80dc179505b64fc4b98a172d227de44937e2a` pada immutable release
-  `20260917-a1a80dc`; rollback langsung `20260917-54f571d` memakai source
-  `54f571d7f81902cd7b32787c1e1265df943a7977`.
+  `a386c427090fe882d884a1da495249613061196b` pada immutable release
+  `20260917-a386c42`; rollback langsung `20260917-d472d01` memakai source
+  `d472d01ebb7e7c2ae69dd17f667903960fcc3edb`.
+- Soft Gallery Wave 1-6 aktif pada storefront. Katalog memakai komposisi editorial
+  yang responsif, filter drawer mobile, Quick View, dan status stok per warna.
+  Quick View membaca label stok dari selection server-authoritative sehingga
+  varian tersedia tidak lagi keliru ditampilkan sebagai `Stok habis`.
 - Product Detail mobile kini memakai galeri dengan proporsi stabil, judul
   maksimal 40 piksel, tombol simpan ringkas, susunan warna lalu jumlah secara
   vertikal, serta modal foto layar penuh dengan kontrol minimal 44 piksel.

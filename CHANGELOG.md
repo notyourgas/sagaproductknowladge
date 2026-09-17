@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 - Sinkronisasi Soft Gallery dan stock truth COYABAG
+
+- `CONFIRMED`: exact source `a386c427090fe882d884a1da495249613061196b`
+  aktif pada release `20260917-a386c42`; rollback `20260917-d472d01`.
+- Knowledge COYABAG diperbarui untuk Soft Gallery Wave 1-6, status stok Quick
+  View yang akurat, bukti full RC, recovery, dan smoke production.
+- Area terdampak: product, product changelog, portfolio changelog, master
+  knowledge, root changelog, dan sync status. Tidak ada credential, PII, raw
+  payment/provider payload, atau path evidence privat.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
+  READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Sinkronisasi Staff Implementation Handoff v1 SagaPOS
 
 - `CONFIRMED`: exact source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif di production; rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.

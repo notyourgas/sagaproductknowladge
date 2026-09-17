@@ -1,5 +1,22 @@
 # COYABAG Changelog
 
+## 2026-09-17 - Soft Gallery Wave 1-6 dan Quick View stock truth deployed
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `a386c427090fe882d884a1da495249613061196b` aktif pada immutable release
+  `20260917-a386c42`; rollback `20260917-d472d01` tersedia.
+- Soft Gallery Wave 1-6 merapikan katalog responsif, filter mobile, ritme visual,
+  dan Quick View. Label stok per warna kini memakai stock label aktual; varian
+  tersedia tidak lagi salah ditampilkan sebagai `Stok habis`.
+- Full RC lulus 336 storefront test, 695 Laravel test dengan 694 pass dan satu
+  expected skip, 6.495 assertion, 151 kombinasi responsive, serta browser smoke
+  production pada viewport 390 dan 1440 piksel tanpa overflow atau console error.
+  Readiness 45/45, provider verified, dua worker, backup/restore, encrypted
+  offsite roundtrip, checksum, dan public smoke lulus.
+- Tidak ada migrasi, perubahan credential/provider, order/payment baru, atau
+  mutasi inventory. Checkout tetap `COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`;
+  residual bisnis tetap membuat status `BUSINESS_READY=false`.
+
 ## 2026-09-17 - Product Detail mobile composition deployed
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

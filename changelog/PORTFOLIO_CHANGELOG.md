@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-17 - COYABAG Soft Gallery dan Quick View stock truth aktif
+
+- `CONFIRMED`: source `a386c427090fe882d884a1da495249613061196b`
+  aktif pada release `20260917-a386c42`; rollback `20260917-d472d01` tersedia.
+- Soft Gallery Wave 1-6 aktif dan label stok Quick View kini mengikuti data stok
+  per warna, bukan fallback yang keliru menandai seluruh varian sebagai habis.
+- Full RC 336 storefront test dan 695 Laravel test, readiness 45/45, payment
+  provider, backup/restore, offsite roundtrip, worker, public smoke, serta audit
+  browser mobile/desktop lulus. Checkout publik tetap aktif; tanpa migrasi atau
+  perubahan provider.
+
 ## 2026-09-17 — Portal Staff SagaPOS handoff v1 aktif
 
 - `CONFIRMED`: SagaPOS source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif di production dengan rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.

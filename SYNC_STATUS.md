@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 - COYABAG Soft Gallery Wave 1-6 dan stock truth
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `a386c427090fe882d884a1da495249613061196b`, release
+  `20260917-a386c42`, rollback `20260917-d472d01`.
+- Synced: Soft Gallery Wave 1-6, katalog/filter responsif, dan label stok Quick
+  View server-authoritative untuk setiap warna.
+- Evidence: 336 storefront test; 695 Laravel test dengan 694 pass, satu expected
+  skip, dan 6.495 assertion; 151 kombinasi responsive; readiness 45/45;
+  provider, worker, backup/restore, encrypted offsite roundtrip, checksum,
+  public smoke, serta browser 390/1440 tanpa overflow atau console error PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS /
+  BUSINESS_READY=false`. Next: finalisasi seller identity/legal-tax dan batas
+  shipping bisnis yang masih terbuka.
+
 ## 2026-09-17 — SagaPOS Staff Implementation Handoff v1
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif di production, rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.
