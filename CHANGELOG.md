@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 - Sinkronisasi Product Detail mobile COYABAG
+
+- `CONFIRMED`: exact source `a1a80dc179505b64fc4b98a172d227de44937e2a`
+  aktif pada release `20260917-a1a80dc`; rollback `20260917-54f571d`.
+- Knowledge COYABAG diperbarui untuk komposisi Product Detail mobile: galeri,
+  judul, tombol simpan, warna, jumlah, lightbox, target 44 piksel, dan guard
+  browser pada viewport 360/390.
+- Tidak ada credential, PII, reference pembayaran, path evidence privat,
+  migrasi, order/payment baru, atau mutasi inventory/provider. Delivery tetap
+  `PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS /
+  BUSINESS_READY=false`.
+
 ## 2026-09-17 — Sinkronisasi SagaPOS staff receiving hardening
 
 - `CONFIRMED`: exact source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif di production; rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.

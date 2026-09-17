@@ -1,5 +1,23 @@
 # COYABAG Changelog
 
+## 2026-09-17 - Product Detail mobile composition deployed
+
+- `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source
+  `a1a80dc179505b64fc4b98a172d227de44937e2a` aktif pada immutable release
+  `20260917-a1a80dc`; rollback `20260917-54f571d` tersedia.
+- Product Detail mobile tidak lagi mempertahankan komposisi desktop yang sempit.
+  Galeri stabil, judul maksimal 40 piksel, tombol simpan ringkas, warna dan
+  jumlah tersusun vertikal, serta pembesaran foto menjadi modal layar penuh
+  dengan kontrol minimal 44 piksel.
+- Full RC lulus 336 storefront test, 695 Laravel test dengan 694 pass dan satu
+  expected skip, 6.495 assertion, 151 kombinasi responsive, serta 22 route
+  production pada viewport 360/390. Readiness 45/45, provider verified, dua
+  worker, failed job nol, backup dan restore terisolasi, serta public screenshot
+  smoke lulus.
+- Tidak ada migrasi, perubahan credential/provider, order/payment baru, atau
+  mutasi inventory. Checkout tetap `COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`;
+  residual bisnis tetap menahan `BUSINESS_READY=true`.
+
 ## 2026-09-17 - Mobile finalization and admin auth targets deployed
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

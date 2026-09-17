@@ -98,9 +98,14 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
 
 - Storefront, API, dan admin sudah live di Hostinger.
 - Runtime aktif memakai exact source
-  `54f571d7f81902cd7b32787c1e1265df943a7977` pada immutable release
-  `20260917-54f571d`; rollback langsung `20260917-42b6a01` memakai source
-  `42b6a01dd8f9c06560f280e9b254c24b045357fc`.
+  `a1a80dc179505b64fc4b98a172d227de44937e2a` pada immutable release
+  `20260917-a1a80dc`; rollback langsung `20260917-54f571d` memakai source
+  `54f571d7f81902cd7b32787c1e1265df943a7977`.
+- Product Detail mobile kini memakai galeri dengan proporsi stabil, judul
+  maksimal 40 piksel, tombol simpan ringkas, susunan warna lalu jumlah secara
+  vertikal, serta modal foto layar penuh dengan kontrol minimal 44 piksel.
+  Guard browser memeriksa komposisi tersebut pada viewport 360 dan 390 piksel,
+  bukan hanya ketiadaan overflow.
 - Finalisasi mobile production mencakup storefront, Product Detail, sticky
   commerce CTA, footer accordion, checkout, admin, dan auth. Plus Jakarta Sans
   tetap aktif; kontrol kritis pada 360/390 piksel minimal 44 piksel tanpa

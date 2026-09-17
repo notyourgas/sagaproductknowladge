@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-17 - COYABAG Product Detail mobile composition aktif
+
+- `CONFIRMED`: source `a1a80dc179505b64fc4b98a172d227de44937e2a`
+  aktif pada release `20260917-a1a80dc`; rollback `20260917-54f571d` tersedia.
+- Galeri, judul, aksi simpan, pilihan warna, jumlah, dan modal foto Product
+  Detail kini mengikuti komposisi mobile 360/390 piksel dengan target kontrol
+  minimal 44 piksel dan tanpa overlap atau overflow.
+- Full RC, 151 kombinasi responsive, 22 production route checks, backup/restore,
+  provider, readiness 45/45, worker, dan public screenshot smoke lulus. Tidak
+  ada migrasi atau mutasi commerce; status tetap `COMMERCE_ACTIVE /
+  READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`.
+
 ## 2026-09-17 — SagaPOS staff receiving hardening aktif
 
 - `CONFIRMED`: SagaPOS source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif di production dengan rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.

@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-17 - COYABAG Product Detail mobile composition
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `a1a80dc179505b64fc4b98a172d227de44937e2a`, release
+  `20260917-a1a80dc`, rollback `20260917-54f571d`.
+- Synced: galeri mobile stabil, judul maksimal 40 piksel, tombol simpan ringkas,
+  warna dan jumlah vertikal, modal foto layar penuh, target minimal 44 piksel,
+  serta regression guard komposisi 360/390.
+- Evidence: 336 storefront test; 695 Laravel test dengan 694 pass, satu expected
+  skip, dan 6.495 assertion; 151 kombinasi responsive; 22 route production;
+  readiness 45/45; provider, worker, backup/restore, dan screenshot smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS /
+  BUSINESS_READY=false`. Next: sahkan seller identity/legal-tax dan batas
+  shipping final.
+
 ## 2026-09-17 — SagaPOS staff receiving hardening
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif di production, rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
