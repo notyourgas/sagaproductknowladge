@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-17 — Portal Staff SagaPOS handoff v1 aktif
+
+- `CONFIRMED`: exact production source `21bbba38366a47cb6cf23a8e53b2e318d460e94f`; rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.
+- Portal Staff mobile-first memakai Beranda, Jadwal, Pengajuan, dan Barang. Dua puluh sembilan state handoff mencakup absensi GPS/foto dan koreksi, jadwal milik staf, pengajuan kondisional dengan timeline, serta receiving multi-item/multi-foto dengan draft, retry, koreksi, dan receipt.
+- API staf tetap tenant/outlet/current-staff scoped. Payroll tetap preview-only; payout dan performance OFF. Lampiran umum Pengajuan belum tersedia, sedangkan evidence koreksi absensi tetap didukung.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`; koordinat outlet dan offsite restore masih perlu ditutup.
+
 ## Update 2026-09-17 — Review penerimaan SagaPOS mobile dapat diminimalkan
 
 - `CONFIRMED`: exact production source `c9e23066ba010a94cc98cec8fec9b7702847b7c2`; rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.

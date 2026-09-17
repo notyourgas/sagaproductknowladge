@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-17 — Sinkronisasi Staff Implementation Handoff v1 SagaPOS
+
+- `CONFIRMED`: exact source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif di production; rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.
+- Knowledge SagaOPS diperbarui untuk empat navigasi Portal Staff, 29 state handoff, API current-staff, attendance recovery, request/timeline, receiving durable, evidence release, dan residual operational UAT.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status. Tidak ada credential, PII, foto, tenant/device identifier, atau path evidence privat.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Sinkronisasi kontrol panel Review SagaPOS mobile
 
 - `CONFIRMED`: exact source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif di production; rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.

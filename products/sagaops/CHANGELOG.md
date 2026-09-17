@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-17 — Staff Implementation Handoff v1 aktif di production
+
+- `CONFIRMED`: source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif di production; rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.
+- Changed: Portal Staff mobile-first diselaraskan dengan 29 state handoff dan empat area utama Beranda, Jadwal, Pengajuan, serta Barang.
+- Added: lookup operasi absensi, jadwal current-staff, detail jadwal, daftar/detail pengajuan, form request kondisional, timeline keputusan, dan pemulihan receiving yang tetap outlet-scoped.
+- Preserved: absensi GPS/foto, koreksi attendance, receipt barang multi-item/multi-foto, serta payroll preview-only. Lampiran umum Pengajuan tetap tidak didukung sampai kontrak penyimpanan disahkan.
+- Evidence: static/type PASS; focused 17/17; handoff 11/11; full 1.498 dengan 1.425 pass/0 fail/72 expected skip/1 TODO; backup/restore, code-only recovery, activation, exact-source health, monitor, dan public negative-auth smoke PASS.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Panel Review barang datang mobile dapat ditutup
 
 - `CONFIRMED`: source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif di production; rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.

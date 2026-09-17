@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-17 — Residual setelah Portal Staff handoff v1 aktif
+
+- `CONFIRMED`: source production `21bbba38366a47cb6cf23a8e53b2e318d460e94f` mengaktifkan 29 state handoff mobile-first untuk Beranda, Jadwal, Pengajuan, Barang, attendance, dan recovery respons tidak pasti tanpa migration baru.
+- `NEEDS CONFIRMATION`: UAT staf terautentikasi pada HP nyata belum membuktikan login, perubahan password sementara, kamera/GPS, jadwal, pengajuan, koreksi absensi, receiving multi-foto, refresh, koneksi lambat, dan kembali dari background secara ujung-ke-ujung.
+- `NEEDS CONFIRMATION`: koordinat/radius outlet harus ditetapkan Owner agar attendance menjadi operational-ready. Independent offsite restore belum diverifikasi.
+- `NEEDS CONFIRMATION`: attachment umum Pengajuan belum mempunyai storage/audit contract canonical dan tetap tidak tersedia; hanya evidence koreksi attendance yang didukung.
+- Dampak: aplikasi production dapat diuji, tetapi residual operasional tersebut menahan `BUSINESS_READY=true`.
+
 ## 2026-09-17 — Residual panel Review barang datang mobile
 
 - `CONFIRMED`: source production `c9e23066ba010a94cc98cec8fec9b7702847b7c2` membuat panel Review sticky dapat diminimalkan dan dibuka kembali tanpa mengubah draft atau foto.

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-17 — Implementasi menyeluruh handoff Portal Staff v1
+
+Source production `21bbba38366a47cb6cf23a8e53b2e318d460e94f` menyelaraskan Portal Staff dengan handoff mobile-first melalui empat akar navigasi: Beranda, Jadwal, Pengajuan, dan Barang. Implementasi mencakup 29 state deterministik beserta state muat, kosong, gagal, koreksi, serta pemulihan operasi yang hasilnya belum diketahui. Semua API baru mengambil identitas staf, organisasi, dan outlet dari sesi server; client tidak dapat memilih scope sendiri.
+
+Absensi memakai eligibility shift/waktu server, GPS dan selfie privat, receipt, lookup operation, serta koreksi dengan evidence opsional. Jadwal menyediakan rentang dan detail milik staf. Pengajuan menyediakan jenis izin/sakit/cuti/perubahan jadwal/lembur/tukar shift, field kondisional, status, detail, dan timeline keputusan. Barang Datang mempertahankan draft lokal, beberapa bahan dan foto, retry upload, koreksi/resume, serta receipt ID. Payroll yang sudah ada tetap preview-only dan tidak mengaktifkan payout atau performance.
+
+Lampiran umum pada Pengajuan sengaja fail-closed karena belum ada kontrak storage/audit canonical; evidence koreksi absensi tetap tersedia melalui jalur attendance. Rilis code-only tidak mengubah lockfile, unit service, migration directory, atau manifest schema. Static/type, 17 focused acceptance, 11 handoff acceptance, dan 1.498 full test lulus tanpa failure. Backup/restore terenkripsi, recovery rehearsal candidate-current-candidate, activation, health exact source dengan 34 migrasi, monitor/timer, dan public 200/401 smoke lulus. Authenticated UAT belum dijalankan, koordinat outlet belum diisi, dan offsite restore belum terverifikasi; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Kontrol panel Review penerimaan pada layar kecil
 
 Pada viewport mobile, kartu Review penerimaan memakai sticky bottom agar aksi kirim tetap mudah dijangkau. Versi sebelumnya tidak menyediakan kontrol tutup sehingga panel dapat menutupi form dan terasa seperti window yang terkunci. Source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` menambahkan header mobile, tombol tutup/buka dengan state aksesibel, dan mode ringkas yang tetap menunjukkan jumlah bahan serta foto.

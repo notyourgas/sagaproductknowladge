@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-17 — Portal Staff SagaPOS handoff v1 aktif
+
+- `CONFIRMED`: SagaPOS source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif di production dengan rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.
+- Portal Staff mobile-first kini menyatukan Beranda, Jadwal, Pengajuan, dan Barang dalam 29 state handoff, termasuk attendance GPS/foto, request, receiving, serta recovery respons tidak pasti.
+- Full 1.498 test tanpa failure, backup/restore, recovery rehearsal, exact-source health, monitor, dan public boundary lulus. Authenticated UAT, koordinat outlet, dan offsite restore masih terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Review barang datang SagaPOS dapat diminimalkan
 
 - `CONFIRMED`: SagaPOS source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif di production dengan rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.

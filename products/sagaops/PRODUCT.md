@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-17 — Portal Staff mobile mengikuti handoff operasional v1
+
+- `CONFIRMED`: exact source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.
+- Portal memakai empat navigasi utama mobile-first: Beranda, Jadwal, Pengajuan, dan Barang. Dua puluh sembilan state handoff terhubung ke data tenant/outlet/staf yang terautentikasi, termasuk empty, loading, error, koreksi, dan pemulihan respons tidak pasti.
+- Absensi memeriksa shift dan jendela waktu server, GPS, foto, receipt, serta status operasi; Jadwal menyediakan daftar/rentang dan detail milik staf; Pengajuan menyediakan form kondisional dan timeline keputusan; Barang Datang mempertahankan draft, beberapa item/foto, retry, koreksi, dan receipt ID.
+- Payroll tetap preview-only tanpa payout atau aktivasi performance. Lampiran umum Pengajuan belum diaktifkan; foto koreksi absensi memakai jalur evidence attendance yang terproteksi.
+- Static/type check, 17 focused acceptance, 11 handoff acceptance, dan full suite 1.498 test dengan 1.425 pass, 0 fail, 72 expected skip, serta 1 TODO lulus. Release code-only tanpa perubahan schema; backup/restore, recovery rehearsal, activation, exact-source health, monitor, dan public 200/401 smoke lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_UAT_PENDING / BUSINESS_READY=false`. Koordinat outlet belum dikonfigurasi dan offsite restore masih belum terverifikasi.
+
 ## 2026-09-17 — Review barang datang dapat diminimalkan di HP
 
 - `CONFIRMED`: exact source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.
