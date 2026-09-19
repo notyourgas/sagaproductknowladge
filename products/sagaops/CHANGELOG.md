@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-20 — Portal Staff PWA dan pengelolaan izin
+
+- CONFIRMED: source b9026956fd448be1e8fe091c8dbd22eebe6ef94a aktif di production; rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.
+- Added: installable PWA, manifest, maskable icon, standalone metadata, service worker shell-only, tombol install, serta panduan Add to Home Screen untuk iPhone.
+- Added: Pusat Izin awal untuk status, permintaan, pemeriksaan ulang, dan pemulihan GPS/kamera. Browser yang sudah memblokir tetap memerlukan perubahan manual pada pengaturan situs/perangkat.
+- Preserved: API, sesi, foto, dan attendance tidak dicache; eligibility, GPS, selfie, geofence, challenge, idempotensi, dan receipt tetap enforced ketika Absen.
+- Evidence: browser manifest error 0, service worker production aktif, asset/MIME/header PASS; full 1.507 dengan 1.434 pass/0 fail/72 skip/1 TODO; static/type 525 serta focused ingress PASS; release/recovery/health/monitor PASS.
+- Delivery SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PERMISSION_UAT_PENDING / BUSINESS_READY=false.
+
 ## 2026-09-20 — Mode uji absensi 24 jam untuk foto/GPS
 
 - `CONFIRMED`: source `618c218cf33b0ff9347c691006b89a61b947ebd2` aktif di production; rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.

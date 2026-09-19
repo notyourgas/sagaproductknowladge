@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-20 — SagaPOS Portal Staff PWA
+
+- Status accepted; klasifikasi CONFIRMED; exact source b9026956fd448be1e8fe091c8dbd22eebe6ef94a, rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.
+- Synced: installable PWA, permission onboarding/recovery, browser permission boundary, shell-only caching, production ingress, release evidence, dan residual UAT HP.
+- Evidence: full 1.507 dengan 1.434 pass, 0 fail, 72 expected skip, 1 TODO; static/type 525; focused PWA/ingress PASS; production manifest error 0, service worker aktif, aset/MIME/header, artifact, backup/restore, recovery rehearsal, activation, health, Nginx, monitor dan timer PASS.
+- Delivery SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PERMISSION_UAT_PENDING / BUSINESS_READY=false.
+- Next: install pada HP, izinkan GPS/kamera, uji deny→settings→recheck, lalu clock-in/foto/receipt dan review Owner.
+
 ## 2026-09-20 — SagaPOS Mode uji absensi foto
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `618c218cf33b0ff9347c691006b89a61b947ebd2`, rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.

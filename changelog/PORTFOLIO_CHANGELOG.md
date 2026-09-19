@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-20 — Portal Staff SagaPOS menjadi PWA
+
+- CONFIRMED: SagaPOS source b9026956fd448be1e8fe091c8dbd22eebe6ef94a aktif di production dengan rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.
+- Portal Staff dapat dipasang di HP dan menampilkan Pusat Izin GPS/kamera pada awal sesi. Penolakan browser disertai langkah pemulihan; attendance tetap melakukan pemeriksaan server saat Absen.
+- PWA hanya menyimpan shell publik, tidak menyimpan API, sesi, foto, atau data absensi. Manifest/service worker/aset publik, recovery release, health, Nginx, dan monitor lulus; UAT HP nyata masih pending dan BUSINESS_READY=false.
+
 ## 2026-09-20 — SagaPOS mengaktifkan Mode uji absensi 24 jam
 
 - `CONFIRMED`: SagaPOS source `618c218cf33b0ff9347c691006b89a61b947ebd2` aktif di production dengan rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.

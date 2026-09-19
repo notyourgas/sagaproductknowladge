@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 — Sinkronisasi Portal Staff PWA SagaPOS
+
+- CONFIRMED: exact source b9026956fd448be1e8fe091c8dbd22eebe6ef94a aktif di production; rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.
+- Knowledge SagaOPS diperbarui untuk PWA, manifest/service worker, Pusat Izin dan recovery, browser permission boundary, ingress aset, release evidence, serta residual real-device UAT.
+- File terdampak: products/sagaops/PRODUCT.md, products/sagaops/DOSSIER.md, products/sagaops/CHANGELOG.md, changelog/PORTFOLIO_CHANGELOG.md, CHATGPT_MASTER_KNOWLEDGE.md, GAPS.md, SYNC_STATUS.md, dan root CHANGELOG.md.
+- Production berubah: ya. Tidak ada credential, PII, foto, koordinat, tenant/device identifier, atau path evidence privat yang dipublikasikan.
+- Delivery PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PERMISSION_UAT_PENDING / BUSINESS_READY=false.
+
 ## 2026-09-20 — Sinkronisasi Mode uji absensi SagaPOS
 
 - `CONFIRMED`: exact source `618c218cf33b0ff9347c691006b89a61b947ebd2` aktif di production; rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.

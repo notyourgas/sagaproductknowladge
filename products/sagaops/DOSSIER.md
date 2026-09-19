@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-20 — Portal Staff PWA dan permission recovery
+
+Source production b9026956fd448be1e8fe091c8dbd22eebe6ef94a menambahkan web app manifest, icon maskable, service worker shell-only, metadata standalone, dan Pusat Izin perangkat. Setelah autentikasi atau reload, portal membaca status kamera/lokasi bila browser mendukung Permissions API. Permintaan GPS dan kamera hanya dipicu dari tombol pengguna; stream kamera pemeriksaan langsung dihentikan. Status granted, prompt, denied, atau unavailable ditampilkan dengan langkah pemulihan khusus Android/Chrome dan iPhone/Safari.
+
+Service worker hanya menangani allowlist shell Portal Staff dan melewati seluruh API; session, attendance, foto, request, receiving, dan response privat tidak masuk cache. Browser tidak dapat dipaksa menampilkan prompt lagi setelah izin diblokir permanen, sehingga portal menyediakan Periksa ulang izin setelah staf memperbaiki pengaturan situs. Attendance sendiri tetap melakukan pemeriksaan GPS/kamera saat aksi Absen, sehingga menutup dialog awal tidak menonaktifkan enforcement server.
+
+Ingress production diperluas secara fail-closed untuk manifest, service worker, icon, dan font. Browser production membuktikan manifest tanpa error dan service worker aktif pada scope origin; content type seluruh aset benar. Full suite PWA 1.507 test menghasilkan 1.434 pass, 0 fail, 72 environment skip, dan 1 TODO; static/type 525 modul serta focused ingress lulus. Release menggunakan immutable artifact, encrypted backup/disposable restore, candidate-current-candidate rehearsal, activation atomik, exact-source health 34 migrasi, Nginx, monitor dan timer. Tidak ada migrasi schema, perubahan payment/provider, atau data kehadiran otomatis. UAT HP nyata dan independent offsite restore tetap pending; BUSINESS_READY=false.
+
 ## Mode uji 2026-09-20 — UAT foto absensi tanpa menunggu jam shift
 
 Source production `618c218cf33b0ff9347c691006b89a61b947ebd2` menambahkan `anytimeTestMode` pada kebijakan absensi schema-neutral. Untuk kebijakan file legacy yang belum memiliki field tersebut, runtime rilis ini memperlakukannya sebagai aktif; penyimpanan berikutnya menulis pilihan eksplisit Owner. Default runtime tanpa kebijakan tersimpan tetap nonaktif.

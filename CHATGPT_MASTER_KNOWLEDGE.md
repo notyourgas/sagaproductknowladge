@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-20 — Portal Staff SagaPOS adalah PWA
+
+- CONFIRMED: exact production source b9026956fd448be1e8fe091c8dbd22eebe6ef94a; rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.
+- Portal Staff dapat dipasang ke layar utama dan berjalan standalone. Pusat Izin muncul pada awal sesi untuk memeriksa/meminta GPS dan kamera serta menjelaskan pemulihan jika izin ditolak.
+- Jangan menjanjikan bahwa web dapat memaksa prompt izin yang sudah diblokir. Pengguna harus mengubah izin situs/perangkat lalu menekan Periksa ulang izin.
+- Service worker hanya cache shell; API, session, foto, attendance, receiving, dan data privat tidak dicache. Enforcement attendance tetap server-side saat tombol Absen digunakan.
+- Status PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PERMISSION_UAT_PENDING / BUSINESS_READY=false.
+
 ## Update 2026-09-20 — SagaPOS Mode uji absensi 24 jam
 
 - `CONFIRMED`: exact production source `618c218cf33b0ff9347c691006b89a61b947ebd2`; rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.

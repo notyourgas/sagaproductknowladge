@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-20 — Residual setelah Portal Staff PWA aktif
+
+- CONFIRMED: source production b9026956fd448be1e8fe091c8dbd22eebe6ef94a menyediakan installable PWA, Pusat Izin, recovery guidance, dan service worker shell-only tanpa mengubah schema.
+- CONFIRMED: browser mengendalikan izin. Aplikasi dapat meminta dari aksi pengguna, membaca status, dan mengarahkan pemulihan, tetapi tidak dapat mengulang prompt yang diblokir permanen tanpa perubahan pengaturan situs/perangkat.
+- NEEDS CONFIRMATION: Andreas perlu memasang PWA pada HP nyata, memberi izin lokasi/kamera, menutup dan membuka ulang aplikasi, lalu membuktikan clock-in, foto, receipt, dan review Owner ujung-ke-ujung.
+- NEEDS CONFIRMATION: Safari iPhone dan Chrome Android perlu diuji terpisah untuk install prompt/Add to Home Screen, akurasi GPS, kamera depan, serta pemulihan setelah Deny. Independent offsite restore juga belum diverifikasi.
+- Dampak: delivery production selesai, tetapi real-device acceptance dan offsite recovery menahan BUSINESS_READY=true.
+
 ## 2026-09-20 — Residual Mode uji absensi 24 jam
 
 - `CONFIRMED`: source production `618c218cf33b0ff9347c691006b89a61b947ebd2` melonggarkan hanya jendela waktu bagi staf yang mempunyai jadwal terbit. GPS, foto, session/challenge, idempotensi, geofence, dan review Owner tetap aktif.

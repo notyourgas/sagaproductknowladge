@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## PWA production 2026-09-20 — Portal Staff dan Pusat Izin
+
+- CONFIRMED: exact source aktif b9026956fd448be1e8fe091c8dbd22eebe6ef94a; rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.
+- Portal Staff kini installable sebagai PWA dengan manifest, icon maskable, service worker shell-only, dan tampilan standalone. API, sesi, foto, serta data absensi tidak disimpan oleh service worker.
+- Setelah login atau reload, Pusat Izin memeriksa GPS dan kamera, meminta izin lewat aksi pengguna, menampilkan status, serta memberi langkah pemulihan Android/Chrome dan iPhone/Safari. Browser tetap menjadi pemegang keputusan izin; penolakan permanen harus diubah melalui pengaturan situs/perangkat.
+- Attendance tetap memeriksa eligibility server, GPS, selfie, session binding, challenge, checksum, idempotensi, geofence, dan receipt ketika staf benar-benar menekan Absen.
+- Evidence: PWA browser manifest tanpa error dan service worker aktif; full suite 1.507 test mencatat 1.434 pass, 0 fail, 72 expected skip, dan 1 TODO; static/type 525 modul serta focused ingress lulus. Artifact, encrypted backup/disposable restore, tiga-boot recovery, activation, exact-source health, Nginx, monitor/timer, dan semua aset publik lulus.
+- Status SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PERMISSION_UAT_PENDING / BUSINESS_READY=false.
+
 ## Mode uji production 2026-09-20 — Absensi foto dapat dicoba kapan saja
 
 - `CONFIRMED`: exact source aktif `618c218cf33b0ff9347c691006b89a61b947ebd2`; rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.
