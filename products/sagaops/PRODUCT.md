@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Hotfix production 2026-09-19 — Short link Google Maps terbaca
+
+- `CONFIRMED`: exact source aktif `84baa2cea64b7dd572eeb10830f688917f8e05c8`; rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.
+- Resolver lokasi kini membaca koordinat pada path hasil redirect Google Maps modern, termasuk bentuk `/maps/search/latitude,+longitude`; format lama tetap didukung.
+- Link short Google Maps yang dilaporkan Owner lulus resolver smoke pada runtime production. Link dan koordinat aktual tidak dicatat dalam knowledge publik.
+- Tidak ada perubahan schema, payment, provider, atau data lokasi. Static/type 524 modul dan full 1.504 test: 1.431 pass, 0 fail, 72 expected skip, 1 TODO; backup/restore, recovery rehearsal, activation, health, monitor, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; Owner tetap harus mengambil titik, meninjaunya, lalu menyimpan kebijakan.
+
 ## Update production 2026-09-19 — Lokasi absensi via Google Maps
 
 - Exact source aktif `2408eeb13faf4dbca57fdaa9adcb347b695f337b`; rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.

@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-19 — Fixed short link Google Maps dengan koordinat pada path
+
+- `CONFIRMED`: source `84baa2cea64b7dd572eeb10830f688917f8e05c8` aktif di production; rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.
+- Fixed: redirect short link Google Maps berbentuk `/maps/search/latitude,+longitude` kini dikenali oleh resolver lokasi outlet.
+- Preserved: validasi rentang koordinat, allowlist host, HTTPS, redirect/timeout bound, Owner auth, CSRF, rate limit, serta format link lama.
+- Evidence: static/type 524 modul; full 1.504 dengan 1.431 pass/0 fail/72 expected skip/1 TODO; exact-link production smoke, artifact, backup/restore, recovery rehearsal, activation, health 34 migrasi, monitor, dan public dashboard PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-19 — Konfigurasi titik outlet dari Google Maps aktif
 
 - `CONFIRMED`: source `2408eeb13faf4dbca57fdaa9adcb347b695f337b` aktif di production; rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.

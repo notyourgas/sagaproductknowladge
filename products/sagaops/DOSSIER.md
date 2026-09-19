@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## Hotfix 2026-09-19 — Parser path koordinat short link Google Maps
+
+Source production `84baa2cea64b7dd572eeb10830f688917f8e05c8` menutup kegagalan short link yang diarahkan Google ke path pencarian berisi pasangan koordinat. Parser kini memeriksa segmen path di bawah `/maps/`, melakukan decode aman, mengubah tanda plus menjadi pemisah, lalu memakai validasi latitude/longitude yang sama. Allowlist host, HTTPS-only, batas redirect, timeout, Owner auth, CSRF, dan rate limit tidak dilonggarkan.
+
+Static/type 524 modul serta full suite 1.504 test dengan 1.431 pass, 0 fail, 72 expected skip, dan 1 TODO lulus. Exact link yang dilaporkan Owner lulus runtime production smoke tanpa mempublikasikan link atau koordinat. Artifact immutable, encrypted backup/disposable restore, code-only candidate-current-candidate rehearsal, activation, exact-source health 34 migrasi, monitor, dan public dashboard 200 lulus. Rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`; konfigurasi dan real-device attendance UAT tetap pending; `BUSINESS_READY=false`.
+
 ## Update 2026-09-19 — Google Maps outlet-location resolver
 
 - Production source: `2408eeb13faf4dbca57fdaa9adcb347b695f337b`; rollback: `4f3acabaf8b1656b70909712f0d00b13b5599802`.

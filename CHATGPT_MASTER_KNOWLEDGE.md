@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Hotfix 2026-09-19 — Short link lokasi SagaPOS kompatibel dengan redirect Google terbaru
+
+- `CONFIRMED`: exact production source `84baa2cea64b7dd572eeb10830f688917f8e05c8`; rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.
+- Resolver kini mendukung pasangan koordinat yang ditempatkan Google pada path `/maps/search/...`, selain format URL yang sudah ada. Boundary keamanan tidak dilonggarkan.
+- Exact link laporan Owner lulus runtime production smoke. Tidak ada schema/provider/payment change atau penulisan lokasi otomatis.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; Owner harus mencoba kembali Ambil titik, memeriksa hasil, dan menekan Simpan.
+
 ## Update 2026-09-19 — Lokasi outlet absensi dapat diambil dari Google Maps
 
 - `CONFIRMED`: exact production source `2408eeb13faf4dbca57fdaa9adcb347b695f337b`; rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.

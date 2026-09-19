@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-19 — SagaPOS Google Maps short-link hotfix
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `84baa2cea64b7dd572eeb10830f688917f8e05c8`, rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.
+- Synced: akar kegagalan format redirect path, cakupan parser baru, boundary keamanan yang tetap, release evidence, serta residual konfigurasi/UAT.
+- Evidence: static/type 524 modul; full 1.504 dengan 1.431 pass, 0 fail, 72 expected skip, 1 TODO; exact-link runtime smoke, artifact, encrypted backup/disposable restore, code-only recovery, activation, exact-source health 34 migrasi, monitor, dan public dashboard 200 PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+- Next: Owner hard refresh, Ambil titik dari link yang sama, tinjau preview, Simpan, lalu jalankan UAT attendance pada HP nyata.
+
 ## 2026-09-19 — SagaPOS Google Maps outlet location
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `2408eeb13faf4dbca57fdaa9adcb347b695f337b`, rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.

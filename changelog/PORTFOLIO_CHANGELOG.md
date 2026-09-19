@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-19 — SagaPOS memperbaiki pembacaan short link Google Maps
+
+- `CONFIRMED`: SagaPOS source `84baa2cea64b7dd572eeb10830f688917f8e05c8` aktif di production dengan rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.
+- Short link yang diarahkan Google ke path pencarian koordinat kini dapat dipakai pada pengaturan lokasi absensi. Kontrol keamanan dan format link lama tetap dipertahankan.
+- Exact link laporan Owner lulus smoke production; full 1.504 test tanpa failure dan release/recovery gate lulus. Owner masih perlu meninjau serta menyimpan titik outlet; `BUSINESS_READY=false`.
+
 ## 2026-09-19 — SagaPOS menerima link/pin Google Maps untuk lokasi absensi
 
 - `CONFIRMED`: SagaPOS source `2408eeb13faf4dbca57fdaa9adcb347b695f337b` aktif di production dengan rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.

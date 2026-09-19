@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-19 — Residual setelah hotfix short link Google Maps
+
+- `CONFIRMED`: source production `84baa2cea64b7dd572eeb10830f688917f8e05c8` dapat membaca format redirect path dari short link yang dilaporkan Owner; smoke dilakukan tanpa mempublikasikan link atau koordinat aktual.
+- `CONFIRMED`: hotfix tidak menulis lokasi secara otomatis dan tidak mengubah policy, schema, provider, atau payment.
+- `NEEDS CONFIRMATION`: Owner perlu hard refresh, menekan Ambil titik pada link yang sama, memastikan preview benar, lalu menekan Simpan. Health akan tetap `coordinatesConfigured=false` sampai penyimpanan berhasil.
+- `NEEDS CONFIRMATION`: UAT GPS/kamera/absen pada HP nyata serta independent offsite restore tetap terbuka.
+- Dampak: blocker parser sudah tertutup, tetapi konfigurasi manusia dan UAT operasional masih menahan `BUSINESS_READY=true`.
+
 ## 2026-09-19 — Residual konfigurasi lokasi outlet lewat Google Maps
 
 - `CONFIRMED`: source production `2408eeb13faf4dbca57fdaa9adcb347b695f337b` menyediakan input link/pin Google Maps, pembacaan lokasi perangkat, preview koordinat, serta penyimpanan lewat attendance policy yang sudah ada tanpa migration baru.

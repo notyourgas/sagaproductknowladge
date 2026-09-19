@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-19 — Sinkronisasi hotfix short link Google Maps SagaPOS
+
+- `CONFIRMED`: exact source `84baa2cea64b7dd572eeb10830f688917f8e05c8` aktif di production; rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.
+- Knowledge SagaOPS diperbarui untuk dukungan koordinat pada path redirect Google Maps, bukti exact-link runtime, release/recovery, dan residual konfigurasi Owner.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status. Tidak ada credential, link aktual, koordinat, PII, foto, tenant/device identifier, atau path evidence privat.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-19 — Sinkronisasi lokasi outlet SagaPOS via Google Maps
 
 - `CONFIRMED`: exact source `2408eeb13faf4dbca57fdaa9adcb347b695f337b` aktif di production; rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.
