@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-20 — Residual Mode uji absensi 24 jam
+
+- `CONFIRMED`: source production `618c218cf33b0ff9347c691006b89a61b947ebd2` melonggarkan hanya jendela waktu bagi staf yang mempunyai jadwal terbit. GPS, foto, session/challenge, idempotensi, geofence, dan review Owner tetap aktif.
+- `CONFIRMED`: hasil mode uji diberi `PENDING`, `is_unscheduled=true`, dan alasan khusus sehingga tidak diterima sebagai absensi operasional normal tanpa keputusan Owner.
+- `NEEDS CONFIRMATION`: Andreas perlu menjalankan clock-in dan clock-out pada HP nyata, mengizinkan GPS/kamera, memastikan receipt muncul, lalu memeriksa foto/lokasi pada dashboard Owner.
+- `NEEDS CONFIRMATION`: setelah UAT selesai, Owner perlu mematikan Mode uji 24 jam agar aturan waktu shift kembali berlaku. Independent offsite restore tetap belum diverifikasi.
+- Dampak: fitur siap dicoba, tetapi mode sementara dan UAT perangkat nyata menahan `BUSINESS_READY=true`.
+
 ## 2026-09-19 — Residual setelah hotfix short link Google Maps
 
 - `CONFIRMED`: source production `84baa2cea64b7dd572eeb10830f688917f8e05c8` dapat membaca format redirect path dari short link yang dilaporkan Owner; smoke dilakukan tanpa mempublikasikan link atau koordinat aktual.

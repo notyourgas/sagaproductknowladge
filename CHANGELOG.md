@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 — Sinkronisasi Mode uji absensi SagaPOS
+
+- `CONFIRMED`: exact source `618c218cf33b0ff9347c691006b89a61b947ebd2` aktif di production; rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.
+- Knowledge SagaOPS diperbarui untuk Mode uji 24 jam, boundary jadwal/GPS/foto/review, toggle Owner, release evidence, dan residual UAT perangkat nyata.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah: ya. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; next action adalah UAT foto/GPS dan menonaktifkan mode sesudah pengujian.
+
 ## 2026-09-19 — Sinkronisasi hotfix short link Google Maps SagaPOS
 
 - `CONFIRMED`: exact source `84baa2cea64b7dd572eeb10830f688917f8e05c8` aktif di production; rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.

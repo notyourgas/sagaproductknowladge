@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-20 — SagaPOS Mode uji absensi 24 jam
+
+- `CONFIRMED`: exact production source `618c218cf33b0ff9347c691006b89a61b947ebd2`; rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.
+- Untuk UAT foto, staf yang sudah mempunyai jadwal terbit dapat absen di luar jam shift. Staf tanpa jadwal tetap tidak dapat absen.
+- GPS, foto privat, session/challenge, checksum, idempotensi, dan geofence tidak dinonaktifkan. Semua hasil mode uji ditandai unscheduled dan `PENDING` untuk review Owner.
+- Owner dapat menonaktifkan Mode uji dari pengaturan Absensi. Jangan menjanjikan fitur ini sebagai kebijakan kehadiran operasional; authenticated real-device UAT masih pending dan `BUSINESS_READY=false`.
+
 ## Hotfix 2026-09-19 — Short link lokasi SagaPOS kompatibel dengan redirect Google terbaru
 
 - `CONFIRMED`: exact production source `84baa2cea64b7dd572eeb10830f688917f8e05c8`; rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.

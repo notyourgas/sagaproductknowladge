@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-20 — Mode uji absensi 24 jam untuk foto/GPS
+
+- `CONFIRMED`: source `618c218cf33b0ff9347c691006b89a61b947ebd2` aktif di production; rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.
+- Added: staf dengan jadwal terbit dapat mencoba clock-in/clock-out kapan saja tanpa menunggu jendela shift.
+- Preserved: GPS, foto, challenge/session binding, checksum, idempotensi, storage privat, geofence, serta boundary staf/Owner.
+- Added: setiap hasil mode uji masuk review Owner dengan penanda unscheduled dan alasan manusiawi; dashboard menyediakan toggle untuk menonaktifkan mode.
+- Evidence: static/type 524 modul; full 1.505 dengan 1.432 pass/0 fail/72 expected skip/1 TODO; exact artifact, backup/restore, recovery rehearsal, activation, exact-source health, monitor, dan public dashboard/staff PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PHOTO_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-19 — Fixed short link Google Maps dengan koordinat pada path
 
 - `CONFIRMED`: source `84baa2cea64b7dd572eeb10830f688917f8e05c8` aktif di production; rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.

@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Mode uji production 2026-09-20 — Absensi foto dapat dicoba kapan saja
+
+- `CONFIRMED`: exact source aktif `618c218cf33b0ff9347c691006b89a61b947ebd2`; rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.
+- Staf yang memiliki jadwal terbit dapat mencoba absen masuk atau pulang di luar jendela shift melalui Mode uji 24 jam. Mode ini memilih jadwal terdekat yang belum mempunyai absensi; staf tanpa jadwal tetap ditolak.
+- GPS, foto wajah, session binding, challenge, checksum, idempotensi, dan penyimpanan privat tetap berlaku. Hasil mode uji ditandai `PENDING`, `is_unscheduled=true`, dan masuk antrean Perlu diperiksa Owner; hasil tidak diterima sebagai absensi normal secara diam-diam.
+- Owner dapat mematikan mode dari Tim & Shift → Absensi → Pengaturan waktu dan lokasi outlet. Kebijakan production lama memperoleh mode uji aktif pada rilis ini agar UAT foto dapat langsung dilakukan.
+- Tidak ada perubahan schema, payment, provider, atau data kehadiran otomatis. Static/type 524 modul dan full 1.505 test: 1.432 pass, 0 fail, 72 expected skip, 1 TODO; backup/restore, tiga-boot recovery rehearsal, activation, health, monitor, dan public smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PHOTO_UAT_PENDING / BUSINESS_READY=false`; Mode uji harus dimatikan setelah uji foto selesai.
+
 ## Hotfix production 2026-09-19 — Short link Google Maps terbaca
 
 - `CONFIRMED`: exact source aktif `84baa2cea64b7dd572eeb10830f688917f8e05c8`; rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.

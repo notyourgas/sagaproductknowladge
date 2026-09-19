@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-20 — SagaPOS Mode uji absensi foto
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `618c218cf33b0ff9347c691006b89a61b947ebd2`, rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.
+- Synced: eligibility staf terjadwal kapan saja, evidence GPS/foto yang tetap wajib, penanda review/unscheduled, toggle Owner, release evidence, dan residual UAT/penonaktifan.
+- Evidence: static/type 524 modul; full 1.505 test dengan 1.432 pass, 0 fail, 72 expected skip, 1 TODO; package, encrypted backup/disposable restore, code-only recovery rehearsal, activation, exact-source health, monitor, dan public HTTP PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PHOTO_UAT_PENDING / BUSINESS_READY=false`.
+- Next: staf mencoba foto/GPS pada HP, Owner memeriksa hasil, lalu mematikan Mode uji 24 jam.
+
 ## 2026-09-19 — SagaPOS Google Maps short-link hotfix
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `84baa2cea64b7dd572eeb10830f688917f8e05c8`, rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.

@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-20 — SagaPOS mengaktifkan Mode uji absensi 24 jam
+
+- `CONFIRMED`: SagaPOS source `618c218cf33b0ff9347c691006b89a61b947ebd2` aktif di production dengan rollback `84baa2cea64b7dd572eeb10830f688917f8e05c8`.
+- Staf terjadwal dapat mencoba GPS dan foto absensi kapan saja. Bukti tetap privat dan hasil selalu masuk review Owner sebagai data uji, bukan absensi normal otomatis.
+- Tidak ada perubahan schema/provider/payment. Release dan recovery gate lulus; real-device UAT masih pending dan Mode uji harus dimatikan setelah percobaan selesai. `BUSINESS_READY=false`.
+
 ## 2026-09-19 — SagaPOS memperbaiki pembacaan short link Google Maps
 
 - `CONFIRMED`: SagaPOS source `84baa2cea64b7dd572eeb10830f688917f8e05c8` aktif di production dengan rollback `2408eeb13faf4dbca57fdaa9adcb347b695f337b`.

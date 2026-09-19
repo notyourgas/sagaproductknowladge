@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## Mode uji 2026-09-20 — UAT foto absensi tanpa menunggu jam shift
+
+Source production `618c218cf33b0ff9347c691006b89a61b947ebd2` menambahkan `anytimeTestMode` pada kebijakan absensi schema-neutral. Untuk kebijakan file legacy yang belum memiliki field tersebut, runtime rilis ini memperlakukannya sebagai aktif; penyimpanan berikutnya menulis pilihan eksplisit Owner. Default runtime tanpa kebijakan tersimpan tetap nonaktif.
+
+Ketika aktif, eligibility hanya melonggarkan batas waktu. Staf tetap harus mempunyai jadwal terbit; server memilih jadwal terdekat dalam rentang eligibility yang belum mempunyai attendance log. GPS, foto, challenge berumur pendek, session binding, checksum, idempotensi, pemeriksaan geofence, dan akses foto privat tetap digunakan. Clock-in UAT disimpan dengan `reviewStatus=PENDING`, alasan `attendance_prototype_anytime_mode`, `is_unscheduled=true`, serta nol menit terlambat agar percobaan di luar jam tidak mencemari metrik keterlambatan. Clock-out pada log terbuka juga dapat diuji kapan saja.
+
+Portal Staff menampilkan label Mode uji 24 jam dan menjelaskan bahwa hasil perlu diperiksa. Dashboard Owner menampilkan banner aktif, alasan review yang mudah dibaca, dan toggle untuk mematikan mode. Source/release tidak menambah migrasi; exact package, encrypted backup dan disposable restore, candidate-current-candidate recovery rehearsal, activation, health, monitor, serta HTTP 200 dashboard/staff lulus. UAT kamera/GPS pada perangkat nyata dan keputusan menonaktifkan mode setelah uji tetap diperlukan; `BUSINESS_READY=false`.
+
 ## Hotfix 2026-09-19 — Parser path koordinat short link Google Maps
 
 Source production `84baa2cea64b7dd572eeb10830f688917f8e05c8` menutup kegagalan short link yang diarahkan Google ke path pencarian berisi pasangan koordinat. Parser kini memeriksa segmen path di bawah `/maps/`, melakukan decode aman, mengubah tanda plus menjadi pemisah, lalu memakai validasi latitude/longitude yang sama. Allowlist host, HTTPS-only, batas redirect, timeout, Owner auth, CSRF, dan rate limit tidak dilonggarkan.
