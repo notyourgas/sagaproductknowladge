@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## Update 2026-09-19 — Google Maps outlet-location resolver
+
+- Production source: `2408eeb13faf4dbca57fdaa9adcb347b695f337b`; rollback: `4f3acabaf8b1656b70909712f0d00b13b5599802`.
+- Owner flow: buka Tim & Shift → Absensi → Pengaturan waktu dan lokasi outlet → tempel link/pin atau gunakan GPS perangkat → Ambil titik → tinjau koordinat → atur radius/kebijakan → Simpan.
+- Supported input: Google Maps URL dengan path/parameter koordinat, pasangan koordinat langsung, dan short link resmi. Resolution dibatasi oleh HTTPS, allowlist domain, maksimal lima redirect, timeout lima detik, Owner auth, same-origin/CSRF, serta rate limit.
+- Verification: focused attendance 10/10; static/type 524 modul; full 1.503 dengan 1.430 pass/0 fail/72 skip/1 TODO; immutable artifact, encrypted backup/disposable restore, code-only recovery rehearsal, activation, exact-source health, 34 migrasi, monitor/timer, dan public dashboard smoke PASS.
+- Boundary: schema tetap, payment OFF, tidak ada provider activation. Titik outlet nyata dan real-device GPS UAT masih pending; offsite restore `NOT_VALIDATED`; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Reference-fidelity pass Portal Staff
 
 Source production `4f3acabaf8b1656b70909712f0d00b13b5599802` menyelesaikan pass UI/UX terhadap handoff Portal Staff v1. Implementasi mengikat palet, Plus Jakarta Sans, skala tipografi, radius, tinggi kontrol, spacing mobile, dan Feather outline icon pada token yang diuji otomatis. Seluruh glyph icon campuran, gradient, glow, serta blur dekoratif dihapus agar satu bahasa visual terjaga.

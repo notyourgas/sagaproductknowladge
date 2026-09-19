@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-19 — Lokasi outlet absensi dapat diambil dari Google Maps
+
+- `CONFIRMED`: exact production source `2408eeb13faf4dbca57fdaa9adcb347b695f337b`; rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.
+- Owner dapat menempel link atau pin Google Maps, mengambil koordinat perangkat, meninjau titik, lalu menyimpan latitude, longitude, radius, dan kebijakan geofence dari Tim & Shift → Absensi.
+- Resolver menerima URL Google Maps resmi atau pasangan koordinat. Short link diurai server-side dengan allowlist host, HTTPS-only, batas redirect, timeout, autentikasi Owner, CSRF, dan rate limit.
+- Release tanpa perubahan schema lulus full suite 1.503 test dengan 1.430 pass, 0 fail, 72 expected skip, dan 1 TODO; artifact, backup/restore, recovery rehearsal, activation, health 34 migrasi, monitor, serta public smoke lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`; titik outlet aktual belum disimpan Owner dan offsite restore belum diverifikasi.
+
 ## Update 2026-09-17 — Reference-fidelity Portal Staff SagaPOS aktif
 
 - `CONFIRMED`: exact production source `4f3acabaf8b1656b70909712f0d00b13b5599802`; rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.

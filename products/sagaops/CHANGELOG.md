@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-19 — Konfigurasi titik outlet dari Google Maps aktif
+
+- `CONFIRMED`: source `2408eeb13faf4dbca57fdaa9adcb347b695f337b` aktif di production; rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.
+- Added: input link/pin Google Maps, tombol Ambil titik, lokasi perangkat, preview koordinat, dan tautan buka ulang di Google Maps pada pengaturan Absensi Owner.
+- Added: resolver short-link server-side dengan host allowlist, HTTPS-only, redirect/timeout bound, Owner auth, CSRF, dan rate limit.
+- Evidence: focused 10/10; static/type 524 modul; full 1.503 dengan 1.430 pass/0 fail/72 expected skip/1 TODO; artifact, backup/restore, recovery rehearsal, activation, exact health 34 migrasi, monitor, dan public dashboard PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Reference-fidelity UI dan Feather Icons Portal Staff
 
 - `CONFIRMED`: source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif di production; rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.

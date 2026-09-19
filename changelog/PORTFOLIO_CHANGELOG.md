@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-19 — SagaPOS menerima link/pin Google Maps untuk lokasi absensi
+
+- `CONFIRMED`: SagaPOS source `2408eeb13faf4dbca57fdaa9adcb347b695f337b` aktif di production dengan rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.
+- Owner dapat mengubah link/pin Google Maps atau GPS perangkat menjadi koordinat outlet tanpa menyalin latitude/longitude secara manual. Preview dan penyimpanan tetap berada di dashboard Tim & Shift → Absensi.
+- Resolver dibatasi pada Google Maps resmi dan boundary Owner; full 1.503 test tanpa failure serta release/recovery/public smoke lulus. Titik outlet aktual dan UAT GPS HP nyata masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-17 — Portal Staff SagaPOS memakai UI handoff dan Feather Icons
 
 - `CONFIRMED`: SagaPOS source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif di production dengan rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.

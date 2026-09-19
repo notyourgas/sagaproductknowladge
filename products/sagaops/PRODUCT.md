@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Update production 2026-09-19 — Lokasi absensi via Google Maps
+
+- Exact source aktif `2408eeb13faf4dbca57fdaa9adcb347b695f337b`; rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.
+- Pada Tim & Shift → Absensi, Owner dapat menempel link/pin Google Maps atau memakai lokasi perangkat untuk mengisi koordinat outlet, melihat preview, mengatur radius, lalu menyimpan kebijakan.
+- Link penuh, parameter koordinat, pasangan latitude/longitude, dan short link Google Maps didukung. Resolver server-side fail-closed pada host non-Google, HTTP, redirect berlebih, timeout, atau akses non-Owner.
+- Tidak ada perubahan schema, payment, provider, atau data operasional. Full 1.503 test: 1.430 pass, 0 fail, 72 expected skip, 1 TODO; release dan recovery gate lulus.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`. Owner belum menyimpan titik outlet aktual.
+
 ## 2026-09-17 — UI Portal Staff diselaraskan dengan handoff dan Feather Icons
 
 - `CONFIRMED`: exact source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.

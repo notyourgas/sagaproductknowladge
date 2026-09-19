@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-19 — Residual konfigurasi lokasi outlet lewat Google Maps
+
+- `CONFIRMED`: source production `2408eeb13faf4dbca57fdaa9adcb347b695f337b` menyediakan input link/pin Google Maps, pembacaan lokasi perangkat, preview koordinat, serta penyimpanan lewat attendance policy yang sudah ada tanpa migration baru.
+- `CONFIRMED`: resolver short link dibatasi pada host Google Maps resmi, HTTPS, redirect terbatas, timeout, autentikasi Owner, CSRF, dan rate limit; URL atau hasil redirect di luar allowlist ditolak.
+- `NEEDS CONFIRMATION`: Owner masih harus memilih titik outlet aktual, meninjau koordinat, menetapkan radius/kebijakan, dan menekan Simpan. Sampai itu dilakukan, health tetap melaporkan `coordinatesConfigured=false` dan attendance belum operational-ready.
+- `NEEDS CONFIRMATION`: UAT HP nyata masih diperlukan untuk izin GPS, akurasi di area outlet, link share Google Maps yang digunakan Andreas, serta absen masuk/pulang. Independent offsite restore juga belum diverifikasi.
+- Dampak: fitur aktif di production dan siap dicoba, tetapi konfigurasi manusia, UAT perangkat, serta offsite recovery tersebut menahan `BUSINESS_READY=true`.
+
 ## 2026-09-17 — Residual setelah reference-fidelity Portal Staff
 
 - `CONFIRMED`: source production `4f3acabaf8b1656b70909712f0d00b13b5599802` menyelaraskan token UI, Feather Icons, dan flow fokus Pengajuan dengan handoff Portal Staff v1 tanpa perubahan schema.

@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-19 — Sinkronisasi lokasi outlet SagaPOS via Google Maps
+
+- `CONFIRMED`: exact source `2408eeb13faf4dbca57fdaa9adcb347b695f337b` aktif di production; rollback `4f3acabaf8b1656b70909712f0d00b13b5599802`.
+- Knowledge SagaOPS diperbarui untuk link/pin Google Maps, GPS perangkat, preview titik, resolver aman, bukti release/recovery, dan residual konfigurasi Owner serta UAT perangkat nyata.
+- Area terdampak: product, dossier, product changelog, portfolio changelog, master knowledge, gaps, root changelog, dan sync status. Tidak ada credential, koordinat aktual, PII, foto, tenant/device identifier, atau path evidence privat.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_AND_REAL_DEVICE_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-17 — Sinkronisasi reference-fidelity Portal Staff SagaPOS
 
 - `CONFIRMED`: exact source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif di production; rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
