@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update operasional 2026-09-20 — Pilot SagaPOS aktif kembali
+
+- `CONFIRMED`: SagaPOS sempat fail-closed setelah expiry pilot dan kini kembali aktif pada exact source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` setelah perpanjangan yang diotorisasi Andreas sampai 27 September 2026 malam WIB.
+- Jangan menyebut insiden sebagai crash, DNS, atau TLS failure: Nginx/PostgreSQL tetap aktif dan 502 terjadi karena service upstream sengaja dihentikan oleh expiry monitor.
+- Source, artifact, identity/password, schema, dan data bisnis tidak berubah. Payment/gateway, Member, dan inventory reporting tetap `OFF`.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; printer/NFC dan independent offsite restore belum selesai.
+
 ## Update 2026-09-20 — SagaPOS memisahkan order prototype dari operasional
 
 - `CONFIRMED`: exact production source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`; rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

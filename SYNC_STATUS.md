@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-20 — Renewal pilot SagaPOS
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`.
+- Synced: akar 502 dari expiry fail-closed, otorisasi perpanjangan, batas waktu baru sampai 27 September 2026 malam WIB, status aktivasi, boundary payment/provider, evidence recovery/runtime, dan residual readiness.
+- Evidence: encrypted backup/disposable restore, artifact checksum, exact-source health, 34 migrasi, service/PostgreSQL/Nginx, monitor/timer, Dashboard, health endpoint, Portal Staff, serta auth boundary PASS.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite restore tetap `UNVERIFIED`.
+- Next: jalankan authenticated Owner/Staff UAT dan printer/NFC UAT; jangan mengaktifkan payment/provider tanpa gate serta otorisasi terpisah.
+
 ## 2026-09-20 — SagaPOS isolasi Mode Uji dan hardening katalog
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`, rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Update operasional 2026-09-20 — Pilot SagaPOS diperpanjang dan diaktifkan kembali
+
+- `CONFIRMED`: runtime production tetap memakai exact source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`; tidak ada source, artifact, migration, schema, atau data bisnis yang diubah.
+- Guard expiry menghentikan service secara fail-closed setelah periode pilot sebelumnya berakhir. Andreas mengotorisasi perpanjangan baru sampai 27 September 2026 malam WIB; identity dan password Owner tidak berubah.
+- Encrypted backup/disposable restore, checksum artifact, exact-source health, 34 migrasi, service, PostgreSQL, Nginx, monitor/timer, Dashboard, health endpoint, dan Portal Staff kembali lulus.
+- Payment/gateway, Member, dan inventory reporting tetap `OFF`; printer/NFC, authenticated Owner/Staff UAT, serta independent offsite restore tetap residual.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## Update production 2026-09-20 — Isolasi Mode Uji dan hardening katalog POS
 
 - `CONFIRMED`: exact source aktif `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`; rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

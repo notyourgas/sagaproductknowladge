@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-20 — Pilot SagaPOS diaktifkan kembali setelah expiry
+
+- `CONFIRMED`: monitor menghentikan SagaPOS secara fail-closed ketika periode pilot lama berakhir; runtime kini aktif kembali pada source yang sama `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` setelah perpanjangan yang diotorisasi Andreas.
+- Renewal berlaku sampai 27 September 2026 malam WIB tanpa perubahan identity/password, source, artifact, schema, atau data bisnis.
+- Backup/restore, checksum, exact-source health, 34 migrasi, service, monitor/timer, dan public smoke lulus. Payment/gateway, Member, serta inventory reporting tetap `OFF`.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; printer/NFC dan independent offsite restore tetap residual. Produk SagaDev lain tidak berubah.
+
 ## 2026-09-20 — SagaPOS mengisolasi alur order prototype
 
 - `CONFIRMED`: SagaPOS source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` aktif di production dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

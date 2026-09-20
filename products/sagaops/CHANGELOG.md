@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-20 — Pilot production diperpanjang dan runtime dipulihkan
+
+- `CONFIRMED`: guard expiry menghentikan runtime secara fail-closed setelah pilot lama berakhir; penyebab 502 adalah upstream SagaPOS tidak aktif, bukan DNS/TLS atau crash.
+- Changed: Andreas mengotorisasi expiry pilot baru sampai 27 September 2026 malam WIB. Identity/password Owner, source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`, artifact, schema, dan data bisnis tidak berubah.
+- Evidence: encrypted backup/disposable restore, artifact checksum, exact-source health, 34 migrasi, service/PostgreSQL/Nginx, monitor/timer, Dashboard, health endpoint, Portal Staff, dan auth boundary PASS.
+- Preserved: payment/gateway, Member, dan inventory reporting tetap `OFF`; tidak ada migration, provider activation, atau transaksi nyata.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; offsite restore tetap `UNVERIFIED`.
+
 ## 2026-09-20 — Isolasi order uji dan hardening media katalog
 
 - `CONFIRMED`: source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` aktif di production; rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

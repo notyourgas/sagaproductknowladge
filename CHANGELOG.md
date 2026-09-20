@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 — Sinkronisasi renewal pilot SagaPOS
+
+- `CONFIRMED`: SagaPOS kembali `PRODUCTION_ACTIVATED` pada source yang sama `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` setelah expiry fail-closed dan perpanjangan yang diotorisasi Andreas sampai 27 September 2026 malam WIB.
+- Knowledge SagaOPS diperbarui untuk akar 502, batas renewal, runtime/recovery evidence, status delivery, dan residual readiness.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah hanya pada expiry/activation. Identity/password, source, artifact, schema, data bisnis, payment, dan provider tidak berubah; tidak ada credential atau evidence privat yang dipublikasikan.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Sinkronisasi isolasi Mode Uji SagaPOS
 
 - `CONFIRMED`: exact source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` aktif di production; rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## Operasional 2026-09-20 — Renewal pilot setelah expiry fail-closed
+
+Monitor production mendeteksi berakhirnya periode pilot dan menghentikan hanya service SagaPOS secara normal; PostgreSQL dan Nginx tetap aktif, sedangkan reverse proxy mengembalikan 502 karena upstream loopback tidak listening. Ini merupakan enforcement expiry yang disengaja, bukan crash aplikasi, DNS, atau TLS.
+
+Setelah otorisasi Andreas, expiry pilot dan expiry Owner diperpanjang sebagai satu pasangan sampai 27 September 2026 malam WIB dengan identity serta password yang tetap. Sebelum mutasi, encrypted backup, checksum, dan disposable restore lulus. Aktivasi mempertahankan source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`, 34 migrasi, payment/gateway `OFF`, Member `OFF`, inventory reporting `OFF`, serta tidak menjalankan migration atau menulis transaksi bisnis.
+
+Sesudah aktivasi, service dan timer monitor aktif tanpa restart failure; exact-source health, artifact checksum, Dashboard, health endpoint, Portal Staff, serta boundary anonim Kiosk/Cashier/KDS lulus. Authenticated Owner/Staff UAT, printer/NFC, dan independent offsite restore tetap belum selesai; `BUSINESS_READY=false`.
+
 ## 2026-09-20 — Boundary order prototype dan media katalog POS
 
 Source production `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` menguatkan boundary antara preview POS dan transaksi operasional. Runtime memberi nomor `TEST-` pada order prototype, menampilkan label Mode Uji di Kiosk/KDS, dan mengecualikannya dari metrik live Dashboard. Owner dapat membersihkan antrean prototype dengan konfirmasi serta alasan; server membatasi pembersihan pada order/items/payment/fulfillment/session/idempotency data uji dan mencatat audit event.
