@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-20 — SagaPOS menyiapkan recovery maintenance untuk pilot expiry
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: candidate `ac4b59f616408348d5c10d1143269d341eed16f8` menutup celah yang sebelumnya menampilkan `502` setelah runtime pilot berhenti.
+- Future expiry akan menghentikan runtime lalu mengembalikan retained maintenance `503` melalui exact-release/epoch guard, shared lock, checksum, Nginx validation, dan rollback ingress; database tidak diubah.
+- Production tetap memakai `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan pilot aktif kembali melalui recovery terpisah. Candidate belum dideploy karena full regression masih mempunyai baseline failure; `BUSINESS_READY=false`.
+
 ## 2026-09-20 — Pilot SagaPOS diaktifkan kembali setelah expiry
 
 - `CONFIRMED`: monitor menghentikan SagaPOS secara fail-closed ketika periode pilot lama berakhir; runtime kini aktif kembali pada source yang sama `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` setelah perpanjangan yang diotorisasi Andreas.

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-20 — Kandidat recovery ingress saat pilot kedaluwarsa
+
+Saat masa pilot sebelumnya berakhir, monitor production berhenti secara fail-closed dan database tetap aktif, tetapi ingress masih menunjuk ke upstream aplikasi yang sudah mati. Dampaknya adalah halaman Nginx generik `502`, bukan state maintenance yang dapat dipahami operator. Pilot kemudian diperpanjang dan runtime `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` kembali aktif melalui recovery yang diotorisasi terpisah.
+
+Candidate `ac4b59f616408348d5c10d1143269d341eed16f8` menambahkan transisi expiry khusus. Helper hanya berjalan sebagai root, memakai shared release lock, mengikat exact current release dan `release.env`, membaca epoch expiry, menolak eksekusi sebelum waktunya, memverifikasi retained maintenance config beserta checksum, lalu menghentikan runtime sebelum switch ingress atomik. `nginx -t` wajib lulus sebelum reload; kegagalan memulihkan konfigurasi ingress sebelumnya dan tetap membiarkan runtime berhenti. Eksekusi ulang pada maintenance yang sama bersifat idempoten. PostgreSQL, backup, receipt evidence, payment, provider, dan data bisnis tidak dimutasi.
+
+Bash syntax, static/type 526 modul, 14 focused operations/Nginx acceptance, serta dependency audit lulus. Full suite global masih mempunyai 16 baseline/historical failure dari 1.518 test, sehingga candidate baru `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED`. Production tetap pada source lama yang aktif; `BUSINESS_READY=false`.
+
 ## Operasional 2026-09-20 — Renewal pilot setelah expiry fail-closed
 
 Monitor production mendeteksi berakhirnya periode pilot dan menghentikan hanya service SagaPOS secara normal; PostgreSQL dan Nginx tetap aktif, sedangkan reverse proxy mengembalikan 502 karena upstream loopback tidak listening. Ini merupakan enforcement expiry yang disengaja, bukan crash aplikasi, DNS, atau TLS.

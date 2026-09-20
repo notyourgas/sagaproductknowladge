@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 — Sinkronisasi kandidat recovery pilot-expiry SagaPOS
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source candidate `ac4b59f616408348d5c10d1143269d341eed16f8`; production tetap pada `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan aktif kembali melalui recovery terpisah.
+- Knowledge SagaOPS diperbarui untuk akar `502` saat expiry, transisi maintenance `503`, exact-release/epoch/lock/checksum/Nginx guards, evidence lokal, serta deployment hold.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah oleh recovery pilot terpisah, bukan oleh candidate ini. Tidak ada credential, PII, tenant/device identifier, raw receipt, atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_THIS_PATCH / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Sinkronisasi renewal pilot SagaPOS
 
 - `CONFIRMED`: SagaPOS kembali `PRODUCTION_ACTIVATED` pada source yang sama `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` setelah expiry fail-closed dan perpanjangan yang diotorisasi Andreas sampai 27 September 2026 malam WIB.

@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Hotfix candidate 2026-09-20 — Pilot expiry kembali ke maintenance 503
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `ac4b59f616408348d5c10d1143269d341eed16f8` sudah dipush pada branch `codex/sagapos-pilot-expiry-maintenance`; production tetap memakai `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan pilot yang diperpanjang kembali aktif.
+- Sebelum patch, monitor menghentikan runtime ketika pilot kedaluwarsa tetapi membiarkan ingress pilot aktif sehingga upstream yang mati menghasilkan `502 Bad Gateway`.
+- Candidate menghentikan runtime lalu mengembalikan ingress secara atomik ke maintenance `503` yang sudah ditahan dan diverifikasi checksum. Guard mencakup exact release, epoch expiry, shared release lock, `nginx -t`, rollback ingress bila reload gagal, dan verifikasi host; database serta data bisnis tidak diubah.
+- Evidence: Bash syntax PASS, static/type 526 modul, focused operations/Nginx 14/14, dependency audit 0 vulnerability. Full suite global 1.518 test menghasilkan 1.429 pass, 16 baseline/historical failure, 72 skip, dan 1 TODO; karena full regression belum hijau, candidate belum dideploy.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_THIS_PATCH / BUSINESS_READY=false`.
+
 ## Update operasional 2026-09-20 — Pilot SagaPOS diperpanjang dan diaktifkan kembali
 
 - `CONFIRMED`: runtime production tetap memakai exact source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`; tidak ada source, artifact, migration, schema, atau data bisnis yang diubah.

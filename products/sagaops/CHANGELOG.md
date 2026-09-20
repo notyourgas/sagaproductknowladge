@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-20 — Kandidat maintenance 503 saat pilot berakhir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `ac4b59f616408348d5c10d1143269d341eed16f8` dipush; production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan pilot aktif kembali melalui recovery terpisah.
+- Fixed candidate: expiry tidak lagi berhenti pada runtime stop yang meninggalkan upstream `502`; monitor diarahkan ke helper yang mengembalikan retained maintenance ingress `503` secara checksum-verified dan atomik.
+- Hardened: exact release/epoch guard, shared lock, idempotency, `nginx -t`, rollback ingress, known-host verification, dan database retention.
+- Evidence: Bash syntax, static/type 526, focused 14/14, audit 0 vulnerability. Full global 1.518: 1.429 pass, 16 baseline/historical failure, 72 skip, 1 TODO.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_THIS_PATCH / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Pilot production diperpanjang dan runtime dipulihkan
 
 - `CONFIRMED`: guard expiry menghentikan runtime secara fail-closed setelah pilot lama berakhir; penyebab 502 adalah upstream SagaPOS tidak aktif, bukan DNS/TLS atau crash.

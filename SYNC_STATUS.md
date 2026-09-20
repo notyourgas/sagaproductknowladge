@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-20 — SagaPOS pilot-expiry maintenance candidate
+
+- Status `accepted`; klasifikasi `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; source `ac4b59f616408348d5c10d1143269d341eed16f8` sudah dipush.
+- Synced: akar planned-expiry `502`, helper maintenance `503`, exact release/epoch, lock, checksum, idempotency, Nginx validation/rollback, dan database-retained boundary.
+- Evidence: Bash syntax PASS, static/type 526, focused 14/14, dependency audit 0 vulnerability; full global 1.518 berisi 1.429 pass, 16 baseline/historical failure, 72 skip, dan 1 TODO.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_THIS_PATCH / BUSINESS_READY=false`. Production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan pilot aktif kembali melalui recovery terpisah.
+- Next: selesaikan baseline regression, package exact candidate, jalankan recovery rehearsal, deploy terkontrol, lalu buktikan maintenance `503` pada expiry tanpa membuka payment/provider.
+
 ## 2026-09-20 — Renewal pilot SagaPOS
 
 - Status `accepted`; klasifikasi `CONFIRMED`; source production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`.
