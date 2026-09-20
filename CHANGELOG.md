@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 — Sinkronisasi katalog dan checkout prototype SagaPOS
+
+- `CONFIRMED`: exact source `446e95318b9ec8e7e323fbe44c37388202507d8b` aktif di production; rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.
+- Knowledge SagaOPS diperbarui untuk menu/foto/publish Kiosk, jam operasional, checkout prototype ke KDS, isolasi data finansial/inventori, release evidence, dan residual UAT.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah: ya. Tidak ada credential, PII, foto pengguna, tenant/device identifier, atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Sinkronisasi Saga Campaign QR pada domain Saga Studio
 
 - `CONFIRMED`: exact source `0443012b0048eccbe43926b1b30e27988beb3025`

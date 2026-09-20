@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Update production 2026-09-20 — Katalog Owner dan checkout prototype POS
+
+- `CONFIRMED`: exact source aktif `446e95318b9ec8e7e323fbe44c37388202507d8b`; rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.
+- Owner dapat membuat kategori dan draft menu, mengunggah foto, mengatur nama, harga, kategori, station, urutan, status, jam operasional, lalu menerbitkan menu ke Kiosk langsung dari Dashboard.
+- Saat payment production tetap `OFF`, Kiosk menyediakan checkout prototype terautentikasi. Pesanan uji dapat masuk ke KDS dan diproses, tetapi ditandai `testMode`, tidak ditulis ke database bisnis, dan tidak masuk penjualan, settlement, laporan keuangan, HPP, varians inventori, atau konsumsi stok.
+- State katalog custom bertahan setelah restart. Pesanan prototype sengaja ephemeral dan hilang setelah service restart agar tidak disalahartikan sebagai transaksi operasional.
+- Evidence: static/type 526 modul; focused Dashboard/Kiosk/KDS/payment 10/10; artifact immutable, encrypted backup/disposable restore, tiga-boot code-only recovery rehearsal, activation, exact-source health, 34 migrasi, monitor, public health, dan service journal lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment/member provider tetap `OFF`, printer/NFC UAT dan offsite restore masih belum selesai.
+
 ## Hotfix production 2026-09-20 — Foto absensi iPhone tanpa metadata perangkat
 
 - `CONFIRMED`: exact source aktif `9f80cbaf8f24d318cf402bb775694350db9f2a1f`; rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.

@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-20 — SagaPOS katalog Owner dan checkout prototype
+
+- `CONFIRMED`: exact production source `446e95318b9ec8e7e323fbe44c37388202507d8b`; rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.
+- Dashboard Owner menyediakan kategori, draft menu, upload foto, harga, station, urutan, status, jam operasional, dan publish ke Kiosk tanpa berpindah aplikasi.
+- Payment production tetap `OFF`. Checkout prototype yang terautentikasi dapat mengalir dari Kiosk ke KDS, tetapi order bertanda test, ephemeral, dan dikecualikan dari database bisnis, penjualan, settlement, laporan, stok, HPP, serta inventory variance.
+- Jangan menyebut alur prototype sebagai transaksi pembayaran atau operasional nyata. Authenticated Owner UAT, hardware printer/NFC, provider payment, dan offsite restore belum selesai; `BUSINESS_READY=false`.
+
 ## Update 2026-09-20 — Saga Campaign QR production holding page
 
 `https://sagastudio.site/campaignqr` aktif sebagai holding page Campaign QR

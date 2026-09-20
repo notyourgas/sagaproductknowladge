@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-20 — Katalog dan alur order prototype SagaPOS aktif
+
+- `CONFIRMED`: SagaPOS source `446e95318b9ec8e7e323fbe44c37388202507d8b` aktif di production dengan rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.
+- Owner kini mengelola kategori, menu, foto, station, urutan, status, jam operasional, dan publish Kiosk dari Dashboard yang sama.
+- Kiosk dapat membuat order prototype ke KDS saat payment `OFF`; order uji tidak masuk transaksi, penjualan, stok, HPP, settlement, atau laporan bisnis.
+- Release/recovery/health/34 migrasi/monitor lulus. Authenticated Owner UAT, printer/NFC, provider pembayaran, dan offsite restore masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-20 — Saga Campaign QR tersedia aman di domain Saga Studio
 
 - Holding page Campaign QR aktif di `https://sagastudio.site/campaignqr` dengan

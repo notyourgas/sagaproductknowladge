@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-20 — Owner menu publishing dan alur order prototype aktif
+
+- `CONFIRMED`: source `446e95318b9ec8e7e323fbe44c37388202507d8b` aktif di production; rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.
+- Added: kategori, draft menu, foto, station, urutan, status, jam operasional, dan publish Kiosk dari Dashboard Owner.
+- Added: checkout prototype dari Kiosk ke KDS ketika payment `OFF`; order selalu ditandai test dan dikecualikan dari seluruh data finansial, stok, HPP, settlement, dan laporan bisnis.
+- Preserved: payment/member provider tetap `OFF`, checkout normal tetap fail-closed, menu custom persisten, serta schema tetap 34 migrasi.
+- Evidence: static/type 526; focused 10/10; immutable artifact, encrypted backup/disposable restore, code-only recovery rehearsal, activation, health, monitor, public HTTP, dan journal PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Fixed foto absensi iPhone yang ditolak karena metadata
 
 - `CONFIRMED`: source `9f80cbaf8f24d318cf402bb775694350db9f2a1f` aktif di production; rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.
