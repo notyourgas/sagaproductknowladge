@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-20 — Saga Campaign QR tersedia aman di domain Saga Studio
+
+- Holding page Campaign QR aktif di `https://sagastudio.site/campaignqr` dengan
+  exact source, TLS, MySQL persisten, backup/restore, dan guard write.
+- Root Saga Studio tidak diambil alih. Public registration dan integrasi
+  voucher SagaBook tetap nonaktif sampai kontrak fakta, UAT Owner/Staff, dan
+  keputusan operasional final selesai.
+- Status `PRODUCTION_DEPLOYED / DOMAIN_ACTIVE / PRODUCTION_ACTIVATED=false /
+  BUSINESS_READY=false`.
+
 ## 2026-09-20 — SagaPOS memperbaiki foto absensi iPhone
 
 - `CONFIRMED`: SagaPOS source `9f80cbaf8f24d318cf402bb775694350db9f2a1f` aktif di production dengan rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.

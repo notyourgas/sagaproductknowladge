@@ -1,6 +1,6 @@
 # SagaBook Product Knowledge
 
-Updated: 15 September 2026 WIB
+Updated: 20 September 2026 WIB
 Evidence status: SagaBook production terverifikasi aktif pada exact `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`, immutable release `20260914173811-bdef20a`, rollback `20260910145632-1dadc30`. Sinkronisasi task pembayaran add-on pada booking completed kini atomik dan tenant-scoped; UI membedakan rule legacy yang belum tersimpan dari rule non-consuming `0/0` yang eksplisit. Satu koreksi data legacy terbatas telah menambahkan rule nol yang terverifikasi dan menutup task pembayaran stale tanpa mengirim Closing. Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
 
 ## Tujuan dokumen
@@ -15,6 +15,15 @@ Ringkasan ini memuat fakta public-safe per cut-off di atas; runtime yang dapat
 berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
+
+- Companion Saga Campaign QR tersedia pada
+  `https://sagastudio.site/campaignqr` sebagai holding page production yang
+  fail-closed. Exact source Campaign `0443012b0048eccbe43926b1b30e27988beb3025`
+  aktif dengan MySQL persisten, TLS, backup/restore, dan public smoke lulus.
+  Public registration/write serta integrasi voucher SagaBook tetap nonaktif;
+  SagaBook tetap menjadi otoritas booking, harga, kapasitas, pembayaran,
+  refund, dan stok. Status `CONFIRMED / PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
 
 - S425 menyatukan lifecycle task pembayaran add-on untuk booking completed.
   Penambahan add-on pending membuat atau memperbarui satu task aktif; perubahan
