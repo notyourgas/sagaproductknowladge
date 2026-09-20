@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Hotfix production 2026-09-20 — Foto absensi iPhone tanpa metadata perangkat
+
+- `CONFIRMED`: exact source aktif `9f80cbaf8f24d318cf402bb775694350db9f2a1f`; rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.
+- Foto yang diambil langsung dari kamera Portal Staff kini dibuat sebagai PNG tanpa EXIF sehingga Safari/iPhone tidak lagi mengirim metadata perangkat yang ditolak oleh penyimpanan evidence.
+- Validasi server tetap ketat: EXIF, GPS tersembunyi, dan metadata perangkat pada evidence attendance tetap ditolak. Upload memakai content type hasil foto aktual dan tetap terikat challenge, checksum, GPS, sesi, serta idempotensi.
+- Evidence: focused attendance/PWA/recovery 72/72, static/type 525 modul, production dependency audit 0 vulnerability, isolated retry atas satu timeout kiosk yang tidak terkait lulus, immutable artifact, encrypted backup/disposable restore, tiga-boot recovery rehearsal, activation, exact-source health, 34 migrasi, monitor/timer, dan public asset verification lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PHOTO_UAT_PENDING / BUSINESS_READY=false`.
+
 ## PWA production 2026-09-20 — Portal Staff dan Pusat Izin
 
 - CONFIRMED: exact source aktif b9026956fd448be1e8fe091c8dbd22eebe6ef94a; rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.

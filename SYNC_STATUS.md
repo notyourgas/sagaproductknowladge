@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-20 — SagaPOS hotfix foto absensi iPhone
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `9f80cbaf8f24d318cf402bb775694350db9f2a1f`, rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.
+- Synced: hasil kamera PNG tanpa EXIF, server evidence yang tetap menolak metadata tersembunyi, content type upload aktual, release/recovery evidence, dan residual UAT iPhone.
+- Evidence: focused attendance/PWA/recovery 72/72, static/type 525, audit produksi 0 vulnerability; satu timeout kiosk yang tidak terkait lulus pada isolated retry; package, encrypted backup/disposable restore, tiga-boot recovery, activation, exact-source health, 34 migrasi, monitor/timer, dan public runtime PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PHOTO_UAT_PENDING / BUSINESS_READY=false`.
+- Next: tutup dan buka ulang PWA di iPhone, ambil foto langsung dari halaman Absensi, kirim satu clock-in uji, lalu periksa receipt dan antrean review Owner.
+
 ## 2026-09-20 - COYABAG J&T Express Wave 0-5
 
 - Status `accepted`; klasifikasi `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; exact

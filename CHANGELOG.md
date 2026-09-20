@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 — Sinkronisasi hotfix foto absensi iPhone SagaPOS
+
+- `CONFIRMED`: exact source `9f80cbaf8f24d318cf402bb775694350db9f2a1f` aktif di production; rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.
+- Knowledge SagaOPS diperbarui untuk akar kegagalan metadata foto Safari/iPhone, hasil kamera PNG tanpa EXIF, boundary validasi evidence yang tetap ketat, release evidence, dan residual UAT perangkat nyata.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah: ya. Tidak ada credential, PII, foto pengguna, koordinat, tenant/device identifier, atau path evidence privat yang dipublikasikan.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PHOTO_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-20 - Sinkronisasi kandidat J&T Express COYABAG Wave 0-5
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source COYABAG

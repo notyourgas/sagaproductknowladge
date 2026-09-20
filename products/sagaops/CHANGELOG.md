@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-20 — Fixed foto absensi iPhone yang ditolak karena metadata
+
+- `CONFIRMED`: source `9f80cbaf8f24d318cf402bb775694350db9f2a1f` aktif di production; rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.
+- Fixed: hasil kamera langsung Portal Staff memakai PNG tanpa EXIF agar Safari/iPhone tidak lagi memicu pesan metadata perangkat.
+- Preserved: server tetap menolak metadata tersembunyi, termasuk EXIF/GPS perangkat; GPS resmi, challenge, checksum, session binding, idempotensi, evidence privat, dan review Owner tidak dilonggarkan.
+- Evidence: focused 72/72, static/type 525, audit produksi 0 vulnerability, retry tes kiosk timeout lulus, artifact/recovery/activation/health/34 migrasi/monitor/public runtime lulus.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_REAL_DEVICE_PHOTO_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Portal Staff PWA dan pengelolaan izin
 
 - CONFIRMED: source b9026956fd448be1e8fe091c8dbd22eebe6ef94a aktif di production; rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.

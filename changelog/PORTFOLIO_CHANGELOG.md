@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-20 — SagaPOS memperbaiki foto absensi iPhone
+
+- `CONFIRMED`: SagaPOS source `9f80cbaf8f24d318cf402bb775694350db9f2a1f` aktif di production dengan rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.
+- Kamera Portal Staff kini menghasilkan PNG tanpa EXIF; penolakan metadata tersembunyi di server tetap dipertahankan dan kontrol GPS/challenge/checksum tidak berubah.
+- Release, recovery, health, 34 migrasi, monitor/timer, dan file publik lulus. UAT foto pada iPhone nyata masih menunggu Andreas; `BUSINESS_READY=false`.
+
 ## 2026-09-20 - COYABAG menyiapkan J&T Express tanpa aktivasi
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source
