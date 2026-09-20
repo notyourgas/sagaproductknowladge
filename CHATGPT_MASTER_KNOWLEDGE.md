@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-20 — Saga Campaign QR production holding page
+
+`https://sagastudio.site/campaignqr` aktif sebagai holding page Campaign QR
+dengan exact source `0443012b0048eccbe43926b1b30e27988beb3025`, MySQL
+persisten, TLS, encrypted backup/restore, dan public smoke terverifikasi. Public
+registration/write dan integrasi voucher SagaBook tetap dimatikan; UI publik
+menyatakan campaign belum dibuka. SagaBook tetap otoritas booking, harga,
+kapasitas, pembayaran, refund, dan stok. Jangan menyebut campaign aktif atau
+business-ready sebelum Owner UAT, kontrak fakta SagaBook, serta activation gate
+lulus. Status `PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## Update 2026-09-20 - COYABAG J&T Express Wave 0-5 candidate
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source

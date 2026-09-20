@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-20 — Residual Saga Campaign QR setelah domain aktif
+
+- `NEEDS CONFIRMATION`: jam draw final, branch resmi, SKU add print 4R,
+  harga/tax/pembulatan otoritatif, tenggat hold, kapasitas/buffer, stock/Closing,
+  dan role mapping Owner/Operator/Staff.
+- Integrasi fakta dan voucher SagaBook belum memiliki token/provider contract
+  yang diaktifkan; public writes tetap mati.
+- UAT Owner/Staff pada perangkat nyata, canary source, observability operasi,
+  reconciliation, dan SOP rollback belum menutup activation/business gate.
+- VPS Hostinger perlu diperpanjang sebelum masa layanan berakhir agar domain
+  tidak kehilangan runtime.
+
 ## 2026-09-20 — Residual setelah Portal Staff PWA aktif
 
 - CONFIRMED: source production b9026956fd448be1e8fe091c8dbd22eebe6ef94a menyediakan installable PWA, Pusat Izin, recovery guidance, dan service worker shell-only tanpa mengubah schema.

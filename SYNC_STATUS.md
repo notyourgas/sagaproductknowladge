@@ -1,5 +1,19 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-20 — Saga Campaign QR domain holding release
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `0443012b0048eccbe43926b1b30e27988beb3025`, artifact SHA-256
+  `00b61ad673b5e09300964bb8f0ac39abd9a3e9a8ce1fdfd9bd40d2ad93453fdd`.
+- Synced: URL publik, boundary subpath/root, exact artifact, MySQL/TLS/recovery
+  evidence, holding-state UX, public-write guard, dan boundary integrasi
+  SagaBook.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  DOMAIN_ACTIVE / PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Next: lengkapi fakta SagaBook dan keputusan operasional, jalankan Owner/Staff
+  UAT, lalu canary activation terjadwal. Tidak ada data customer atau transaksi
+  nyata pada release ini.
+
 ## 2026-09-20 — SagaPOS hotfix foto absensi iPhone
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `9f80cbaf8f24d318cf402bb775694350db9f2a1f`, rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.

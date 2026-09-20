@@ -7,6 +7,19 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
+- Companion Saga Campaign QR exact source
+  `0443012b0048eccbe43926b1b30e27988beb3025` aktif di
+  `https://sagastudio.site/campaignqr`. Artifact SHA-256
+  `00b61ad673b5e09300964bb8f0ac39abd9a3e9a8ce1fdfd9bd40d2ad93453fdd`
+  dibangun dari checkout exact source; service non-root, MySQL 25 tabel/6
+  migrasi, encrypted backup/disposable restore, Nginx subpath, TLS renewal
+  rehearsal, dan public smoke lulus. UI publik menampilkan holding state
+  `SAGALIST BELUM DIBUKA`; endpoint registration dan integrasi voucher tetap
+  fail-closed. SagaBook belum menerima token, voucher, booking, customer data,
+  atau mutasi dari Campaign. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 - S425 exact source `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`
   aktif pada immutable release `20260914173811-bdef20a`, rollback kompatibel
   `20260910145632-1dadc30`. Service tenant-scoped mengelola task pembayaran

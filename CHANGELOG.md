@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 — Sinkronisasi Saga Campaign QR pada domain Saga Studio
+
+- `CONFIRMED`: exact source `0443012b0048eccbe43926b1b30e27988beb3025`
+  tersedia pada `https://sagastudio.site/campaignqr` dalam mode holding.
+- Knowledge SagaBook/portfolio diperbarui untuk URL, source/artifact
+  provenance, TLS/MySQL/recovery evidence, boundary root domain, write guard,
+  status integrasi, dan residual activation.
+- File terdampak: `products/sagabook/PRODUCT.md`,
+  `products/sagabook/DOSSIER.md`, `products/sagabook/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`,
+  `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah untuk Campaign QR, bukan runtime SagaBook. Tidak ada
+  credential, tenant identifier, PII, customer photo, transaksi, atau raw
+  receipt yang dipublikasikan. Delivery `PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Sinkronisasi hotfix foto absensi iPhone SagaPOS
 
 - `CONFIRMED`: exact source `9f80cbaf8f24d318cf402bb775694350db9f2a1f` aktif di production; rollback `7c825d3bdb7800e34ae6f99429659b6ef8585330`.

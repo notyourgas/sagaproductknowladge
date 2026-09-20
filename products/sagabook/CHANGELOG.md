@@ -1,5 +1,17 @@
 # SagaBook Changelog
 
+## 2026-09-20 - Companion Saga Campaign QR live dalam mode holding
+
+- `https://sagastudio.site/campaignqr` kini melayani holding page Campaign QR
+  dari exact source `0443012b0048eccbe43926b1b30e27988beb3025`.
+- DNS, TLS, Nginx subpath, service, MySQL, migration, encrypted backup/restore,
+  exact artifact, dan public smoke lulus. Root Saga Studio tetap dilayani
+  terpisah.
+- Public registration/write dan integrasi voucher SagaBook tetap nonaktif;
+  tidak ada voucher, booking, data customer, atau transaksi nyata yang dibuat.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
+  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+
 ## 2026-09-15 - S425 task pembayaran add-on dan recovery legacy
 
 - Task pembayaran add-on pada booking completed kini dibuat, diperbarui, atau
