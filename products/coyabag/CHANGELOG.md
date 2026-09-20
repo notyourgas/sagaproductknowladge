@@ -1,5 +1,21 @@
 # COYABAG Changelog
 
+## 2026-09-20 - J&T Express Wave 0-5 implemented, not deployed
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source
+  `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a` menyiapkan adapter J&T untuk
+  order, cancel, tracking, area mapping, capability-aware operator actions, dan
+  readiness fail-closed.
+- J&T tetap default-off. Tidak ada credential, request vendor, perubahan
+  production, migration production, order/shipment, atau mutasi stok.
+- 711 test backend menghasilkan 710 pass, satu expected skip, dan 6.557
+  assertion. Build, dependency audit, readiness, integration browser, dan
+  fulfillment browser desktop/mobile lulus.
+- Production tetap exact source
+  `a386c427090fe882d884a1da495249613061196b` pada release
+  `20260917-a386c42`. Next action: terima kontrak endpoint/credential dan data
+  area resmi, jalankan sandbox serta controlled-live UAT, lalu guarded deploy.
+
 ## 2026-09-17 - Soft Gallery Wave 1-6 dan Quick View stock truth deployed
 
 - `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED`: exact source

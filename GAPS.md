@@ -1601,6 +1601,15 @@ GAP-004, bukan gap implementasi warna komponen.
 
 ### COYABAG
 
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: J&T Wave 0-5 tersedia pada source
+  `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a`; adapter, mapping, readiness,
+  capability guard, dan security boundary lulus gate lokal/browser. Production
+  tetap release `20260917-a386c42` dan J&T tetap default-off.
+- `NEEDS CONFIRMATION`: kontrak endpoint sandbox/production, credential serta
+  account entitlement resmi, allowed host, kode origin/area dan dataset area
+  resmi, rate limit/SLA, format error/status final, lalu sandbox dan
+  controlled-live UAT sebelum activation/deploy.
+
 - `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE /
   READY_FOR_PUBLIC_ORDERS / BUSINESS_READY=false`: exact source
   `db60b17f7409d77e388edc8a82d7948499b22a80`, release

@@ -1,5 +1,29 @@
 # COYABAG Dossier
 
+## 2026-09-20 - J&T Express Wave 0-5 candidate
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source
+`24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a` menyiapkan boundary J&T Express
+tanpa mengaktifkan provider. Tarif checkout, pembuatan/pembatalan kiriman, dan
+tracking kini memiliki pemilihan provider terpisah dengan fallback legacy yang
+tetap kompatibel. Kapabilitas provider membuat UI operator hanya menawarkan
+aksi yang memang didukung.
+
+Kandidat mencakup adapter order/cancel/tracking, signature dan normalisasi
+payload deterministik, mapper respons/status, versioned area mapping dengan
+preview sebelum apply, credential masking, readiness CLI, endpoint HTTPS exact
+host allowlist, larangan redirect, sanitasi error, serta migration aditif yang
+dapat di-rollback. Request mutasi tidak memakai retry otomatis; operation
+journal yang ada tetap menjadi guard idempotensi dan unknown outcome.
+
+Backend lulus 711 test dengan 710 pass, satu expected skip, dan 6.557 assertion.
+Build, Composer/npm audit, readiness default-off, browser Integration Settings,
+dan browser fulfillment desktop/mobile lulus. Production tetap release
+`20260917-a386c42`; tidak ada credential, request J&T, migration production,
+provider switch, order/shipment, atau inventory mutation. Next gate adalah
+kontrak endpoint dan credential resmi, data area resmi, sandbox UAT,
+controlled-live UAT, lalu guarded immutable deployment.
+
 ## 2026-09-16 - Inline QRIS payment and countdown release
 
 `CONFIRMED`: exact source `66545d3de0be93783ccab0d8f0e9cd545d0446d9`

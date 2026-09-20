@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-20 - COYABAG menyiapkan J&T Express tanpa aktivasi
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source
+  `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a` memisahkan provider tarif,
+  fulfillment, dan tracking serta menambahkan adapter, area mapping,
+  capability matrix, readiness, dan operator guard untuk J&T.
+- J&T tetap default-off dan production tetap release `20260917-a386c42`.
+  Tidak ada credential, request vendor, migration production, transaksi, atau
+  mutasi stok.
+- Gate lokal dan browser desktop/mobile lulus. Aktivasi menunggu kontrak vendor,
+  data area resmi, sandbox/controlled-live UAT, dan guarded immutable deploy.
+
 ## 2026-09-20 — Portal Staff SagaPOS menjadi PWA
 
 - CONFIRMED: SagaPOS source b9026956fd448be1e8fe091c8dbd22eebe6ef94a aktif di production dengan rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.

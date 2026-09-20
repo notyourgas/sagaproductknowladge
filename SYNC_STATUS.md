@@ -1,5 +1,23 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-20 - COYABAG J&T Express Wave 0-5
+
+- Status `accepted`; klasifikasi `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; exact
+  source `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a`.
+- Synced: provider separation, J&T order/cancel/tracking adapter, versioned area
+  mapping, capability-aware UI, readiness/security boundary, test evidence,
+  source-production boundary, blocker vendor, dan next UAT.
+- Evidence: 711 backend test dengan 710 pass, satu expected skip, dan 6.557
+  assertion; build, Composer/npm audit, default-off readiness, integration
+  browser, serta fulfillment browser desktop/mobile PASS.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap
+  source `a386c427090fe882d884a1da495249613061196b` pada release
+  `20260917-a386c42`. J&T nonaktif; tidak ada request vendor, credential,
+  migration production, transaksi, atau inventory mutation.
+- Next: verifikasi kontrak endpoint/credential dan dataset area resmi, jalankan
+  sandbox serta controlled-live UAT, lalu gated immutable deploy dengan backup,
+  migration compatibility, worker/scheduler, smoke, dan rollback.
+
 ## 2026-09-20 — SagaPOS Portal Staff PWA
 
 - Status accepted; klasifikasi CONFIRMED; exact source b9026956fd448be1e8fe091c8dbd22eebe6ef94a, rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.

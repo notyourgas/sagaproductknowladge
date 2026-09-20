@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-20 - COYABAG J&T Express Wave 0-5 candidate
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source
+  `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a` menyiapkan kontrak J&T tanpa
+  mengubah runtime production.
+- Cost, delivery, dan tracking provider dipisahkan. Adapter order/cancel/
+  tracking, versioned area mapping, capability matrix, readiness CLI, secret
+  masking, dan endpoint allowlist sudah tersedia serta diuji desktop/mobile.
+- Jangan klaim J&T aktif atau siap produksi. J&T tetap default-off sampai
+  endpoint/credential resmi, area mapping resmi, sandbox UAT, controlled-live
+  UAT, dan guarded deploy lulus.
+- Production tetap release `20260917-a386c42`; commerce publik yang aktif masih
+  memakai kontrak shipping production sebelumnya.
+
 ## Update 2026-09-20 — Portal Staff SagaPOS adalah PWA
 
 - CONFIRMED: exact production source b9026956fd448be1e8fe091c8dbd22eebe6ef94a; rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.

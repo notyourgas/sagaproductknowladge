@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 - Sinkronisasi kandidat J&T Express COYABAG Wave 0-5
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source COYABAG
+  `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a` menambahkan kontrak dan adapter
+  J&T default-off, versioned area mapping, capability-aware operator flow,
+  readiness, serta security boundary endpoint.
+- Knowledge diperbarui untuk source/production boundary, hasil gate, blocker
+  vendor, urutan UAT, dan larangan mengklaim J&T aktif sebelum controlled-live
+  acceptance.
+- Production tidak berubah dan tetap memakai release `20260917-a386c42`.
+  Tidak ada credential, PII, endpoint privat, request vendor, atau data
+  transaksi yang dipublikasikan.
+
 ## 2026-09-20 — Sinkronisasi Portal Staff PWA SagaPOS
 
 - CONFIRMED: exact source b9026956fd448be1e8fe091c8dbd22eebe6ef94a aktif di production; rollback e8757d221956a9ce6deb5efed8c3065bc90c3698.

@@ -1,6 +1,6 @@
 # COYABAG Product Knowledge
 
-Updated: 17 September 2026
+Updated: 20 September 2026
 Evidence status: production deployed + production activated + public orders open
 
 ## Tujuan dokumen
@@ -101,6 +101,18 @@ COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`. Business readiness:
   `a386c427090fe882d884a1da495249613061196b` pada immutable release
   `20260917-a386c42`; rollback langsung `20260917-d472d01` memakai source
   `d472d01ebb7e7c2ae69dd17f667903960fcc3edb`.
+- Kandidat J&T Express Wave 0-5 tersedia pada source
+  `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a` dengan status
+  `IMPLEMENTED_NOT_DEPLOYED`. Pemilihan provider tarif, pembuatan kiriman, dan
+  tracking dipisahkan; adapter order/cancel/tracking, capability matrix,
+  versioned area mapping, readiness CLI, secret masking, dan kontrol operator
+  sudah dibuat. J&T tetap default-off dan tidak ada request vendor, credential,
+  migration production, order, shipment, atau inventory yang dimutasi.
+- Kandidat J&T lulus 711 test backend dengan 710 pass, satu expected skip, dan
+  6.557 assertion; build, dependency audit, readiness fail-closed, serta browser
+  integration dan fulfillment pada desktop/mobile lulus. Aktivasi masih
+  menunggu kontrak endpoint/credential resmi, area mapping resmi, sandbox UAT,
+  controlled-live UAT, dan guarded immutable deploy.
 - Soft Gallery Wave 1-6 aktif pada storefront. Katalog memakai komposisi editorial
   yang responsif, filter drawer mobile, Quick View, dan status stok per warna.
   Quick View membaca label stok dari selection server-authoritative sehingga
