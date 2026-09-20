@@ -1,12 +1,12 @@
 # Saga Product Knowledge Changelog
 
-## 2026-09-20 — Sinkronisasi kandidat recovery pilot-expiry SagaPOS
+## 2026-09-21 — Sinkronisasi staging recovery pilot-expiry SagaPOS
 
-- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source candidate `ac4b59f616408348d5c10d1143269d341eed16f8`; production tetap pada `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan aktif kembali melalui recovery terpisah.
-- Knowledge SagaOPS diperbarui untuk akar `502` saat expiry, transisi maintenance `503`, exact-release/epoch/lock/checksum/Nginx guards, evidence lokal, serta deployment hold.
+- `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: source candidate `ac4b59f616408348d5c10d1143269d341eed16f8`; production tetap pada `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
+- Knowledge SagaOPS diperbarui untuk akar `502` saat expiry, transisi maintenance `503`, exact-release/epoch/lock/checksum/Nginx guards, full-regression closure, immutable packaging, staging, disposable restore, recovery rehearsal, dan activation hold.
 - File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
-- Production berubah oleh recovery pilot terpisah, bukan oleh candidate ini. Tidak ada credential, PII, tenant/device identifier, raw receipt, atau path evidence privat yang dipublikasikan.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_THIS_PATCH / BUSINESS_READY=false`.
+- Production tidak berubah oleh candidate ini. Tidak ada credential, PII, tenant/device identifier, raw receipt, atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / STAGING_READY / PRODUCTION_UNCHANGED_BY_THIS_PATCH / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`; payment/provider tetap `OFF`.
 
 ## 2026-09-20 — Sinkronisasi renewal pilot SagaPOS
 

@@ -1,12 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
-## 2026-09-20 — SagaPOS pilot-expiry maintenance candidate
+## 2026-09-21 — SagaPOS pilot-expiry maintenance staging
 
-- Status `accepted`; klasifikasi `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; source `ac4b59f616408348d5c10d1143269d341eed16f8` sudah dipush.
-- Synced: akar planned-expiry `502`, helper maintenance `503`, exact release/epoch, lock, checksum, idempotency, Nginx validation/rollback, dan database-retained boundary.
-- Evidence: Bash syntax PASS, static/type 526, focused 14/14, dependency audit 0 vulnerability; full global 1.518 berisi 1.429 pass, 16 baseline/historical failure, 72 skip, dan 1 TODO.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_THIS_PATCH / BUSINESS_READY=false`. Production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan pilot aktif kembali melalui recovery terpisah.
-- Next: selesaikan baseline regression, package exact candidate, jalankan recovery rehearsal, deploy terkontrol, lalu buktikan maintenance `503` pada expiry tanpa membuka payment/provider.
+- Status `accepted`; klasifikasi `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`; source `ac4b59f616408348d5c10d1143269d341eed16f8` sudah dipush dan dipaketkan sebagai artifact Linux immutable `e5b25dc3cada501bebd20b810f8dd7efc8814066e3b589dbdcf9e6e6fb92638a`.
+- Synced: akar planned-expiry `502`, helper maintenance `503`, exact release/epoch, lock, checksum, idempotency, Nginx validation/rollback, database-retained boundary, full-regression closure, staging, dan recovery rehearsal.
+- Evidence: full global 1.518 berisi 1.445 pass, 0 fail, 72 skip, dan 1 TODO; focused final 49/49, static/type, audit dependency, secret scan, target admission, staging, artifact/tree verification, disposable restore, serta boot rehearsal candidate-current-candidate PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / STAGING_READY / PRODUCTION_UNCHANGED_BY_THIS_PATCH / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`. Production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`, rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`, dan payment/provider tetap `OFF`.
+- Next: setelah approval exact release, lakukan aktivasi atomik, authenticated smoke/UAT, monitor, dan verifikasi rollback tanpa membuka payment/provider.
 
 ## 2026-09-20 — Renewal pilot SagaPOS
 

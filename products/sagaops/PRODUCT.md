@@ -1,12 +1,13 @@
 # SagaOPS Product Knowledge
 
-## Hotfix candidate 2026-09-20 — Pilot expiry kembali ke maintenance 503
+## Staging-ready 2026-09-21 — Pilot expiry kembali ke maintenance 503
 
-- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `ac4b59f616408348d5c10d1143269d341eed16f8` sudah dipush pada branch `codex/sagapos-pilot-expiry-maintenance`; production tetap memakai `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan pilot yang diperpanjang kembali aktif.
+- `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: source `ac4b59f616408348d5c10d1143269d341eed16f8` sudah dipush dan dipaketkan sebagai artifact Linux immutable ber-SHA256 `e5b25dc3cada501bebd20b810f8dd7efc8814066e3b589dbdcf9e6e6fb92638a`; production tetap memakai `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
 - Sebelum patch, monitor menghentikan runtime ketika pilot kedaluwarsa tetapi membiarkan ingress pilot aktif sehingga upstream yang mati menghasilkan `502 Bad Gateway`.
 - Candidate menghentikan runtime lalu mengembalikan ingress secara atomik ke maintenance `503` yang sudah ditahan dan diverifikasi checksum. Guard mencakup exact release, epoch expiry, shared release lock, `nginx -t`, rollback ingress bila reload gagal, dan verifikasi host; database serta data bisnis tidak diubah.
-- Evidence: Bash syntax PASS, static/type 526 modul, focused operations/Nginx 14/14, dependency audit 0 vulnerability. Full suite global 1.518 test menghasilkan 1.429 pass, 16 baseline/historical failure, 72 skip, dan 1 TODO; karena full regression belum hijau, candidate belum dideploy.
-- Status `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_THIS_PATCH / BUSINESS_READY=false`.
+- Evidence lokal final: full suite 1.518 test menghasilkan 1.445 pass, 0 fail, 72 skip, dan 1 TODO; focused 49/49, static/type, dependency audit, dan changed-file secret scan lulus.
+- Target admission, staging, artifact/tree verification, encrypted-backup disposable restore, dan boot rehearsal candidate-current-candidate lulus tanpa transaksi serta tanpa menyentuh service/database production. Aktivasi candidate dan authenticated post-deploy UAT belum dijalankan.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / STAGING_READY / PRODUCTION_UNCHANGED_BY_THIS_PATCH / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`; payment/gateway/member tetap `OFF`.
 
 ## Update operasional 2026-09-20 — Pilot SagaPOS diperpanjang dan diaktifkan kembali
 

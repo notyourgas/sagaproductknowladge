@@ -1,12 +1,12 @@
 # SagaOPS Changelog
 
-## 2026-09-20 — Kandidat maintenance 503 saat pilot berakhir
+## 2026-09-21 — Candidate maintenance 503 siap staging
 
-- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `ac4b59f616408348d5c10d1143269d341eed16f8` dipush; production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan pilot aktif kembali melalui recovery terpisah.
+- `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: source `ac4b59f616408348d5c10d1143269d341eed16f8` dipush dan dipaketkan sebagai artifact Linux immutable `e5b25dc3cada501bebd20b810f8dd7efc8814066e3b589dbdcf9e6e6fb92638a`; production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
 - Fixed candidate: expiry tidak lagi berhenti pada runtime stop yang meninggalkan upstream `502`; monitor diarahkan ke helper yang mengembalikan retained maintenance ingress `503` secara checksum-verified dan atomik.
 - Hardened: exact release/epoch guard, shared lock, idempotency, `nginx -t`, rollback ingress, known-host verification, dan database retention.
-- Evidence: Bash syntax, static/type 526, focused 14/14, audit 0 vulnerability. Full global 1.518: 1.429 pass, 16 baseline/historical failure, 72 skip, 1 TODO.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_UNCHANGED_BY_THIS_PATCH / BUSINESS_READY=false`.
+- Evidence: full global 1.518 menghasilkan 1.445 pass, 0 fail, 72 skip, dan 1 TODO; focused final 49/49, static/type, audit dependency, secret scan, target admission, staging, artifact/tree verification, disposable restore, serta boot rehearsal candidate-current-candidate lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / STAGING_READY / PRODUCTION_UNCHANGED_BY_THIS_PATCH / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`; rehearsal tidak membuat transaksi atau menyentuh service/database production, dan payment/provider tetap `OFF`.
 
 ## 2026-09-20 — Pilot production diperpanjang dan runtime dipulihkan
 

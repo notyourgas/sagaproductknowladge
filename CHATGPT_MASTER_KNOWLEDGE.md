@@ -1,10 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-## Update 2026-09-20 — SagaPOS pilot-expiry maintenance candidate
+## Update 2026-09-21 — SagaPOS pilot-expiry candidate siap staging
 
-- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source candidate `ac4b59f616408348d5c10d1143269d341eed16f8`; production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dan pilot aktif kembali setelah recovery terpisah.
+- `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: source candidate `ac4b59f616408348d5c10d1143269d341eed16f8`; production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
 - Candidate mengubah planned expiry dari runtime stop yang dapat meninggalkan `502` menjadi runtime stop plus retained maintenance `503` yang guarded, atomik, idempoten, dan tidak menyentuh database.
-- Jangan menyebut hotfix ini production-deployed sampai exact release dan post-deploy evidence tersedia. Payment/member provider tetap `OFF`; `BUSINESS_READY=false`.
+- Full regression, immutable packaging, target admission, staging, disposable restore, dan recovery boot rehearsal lulus. Jangan menyebut hotfix ini production-deployed atau activated sampai exact release dan authenticated post-deploy evidence tersedia. Payment/member provider tetap `OFF`; `BUSINESS_READY=false`.
 
 ## Update operasional 2026-09-20 — Pilot SagaPOS aktif kembali
 
