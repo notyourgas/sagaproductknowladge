@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-20 — Isolasi order uji dan hardening media katalog
+
+- `CONFIRMED`: source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` aktif di production; rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
+- Changed: order prototype memakai awalan `TEST-`, label Mode Uji konsisten di Kiosk/KDS, dan antrean uji tidak dihitung sebagai metrik operasional Dashboard.
+- Added: pembersihan antrean prototype khusus Owner dengan konfirmasi, alasan, scope data-uji, dan audit event.
+- Hardened: foto menu dikompresi/re-encode ke WebP di browser, diverifikasi ulang di server, dan dapat dihapus Owner; error API membawa referensi permintaan melalui header.
+- Evidence: static/type 526; focused final 14/14; candidate-caused full-suite failures diperbaiki dan rerun lulus; artifact, backup/restore, recovery rehearsal, activation, exact-source health, 34 migrasi, monitor, dan journal PASS. Full suite global masih memiliki 19 failure baseline/historis dari 1.517 test.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Owner menu publishing dan alur order prototype aktif
 
 - `CONFIRMED`: source `446e95318b9ec8e7e323fbe44c37388202507d8b` aktif di production; rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.

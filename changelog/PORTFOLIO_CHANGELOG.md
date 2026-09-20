@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-20 — SagaPOS mengisolasi alur order prototype
+
+- `CONFIRMED`: SagaPOS source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` aktif di production dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
+- Order uji kini mudah dikenali melalui awalan `TEST-` dan label Mode Uji, tidak mencemari metrik operasional, serta dapat dibersihkan Owner secara ter-audit.
+- Upload foto menu diperkeras melalui re-encode browser dan validasi server; referensi permintaan aman membantu diagnosis error.
+- Release/recovery/health/34 migrasi/monitor lulus. Authenticated Owner UAT, printer/NFC, payment/member provider, dan independent offsite restore masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-20 — Katalog dan alur order prototype SagaPOS aktif
 
 - `CONFIRMED`: SagaPOS source `446e95318b9ec8e7e323fbe44c37388202507d8b` aktif di production dengan rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.

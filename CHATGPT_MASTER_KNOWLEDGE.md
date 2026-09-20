@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-20 — SagaPOS memisahkan order prototype dari operasional
+
+- `CONFIRMED`: exact production source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`; rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
+- Order Mode Uji memakai nomor `TEST-`, tampil jelas pada Kiosk/KDS, tidak masuk metrik operasional Dashboard, dan dapat dibersihkan Owner dengan alasan serta audit event.
+- Foto menu direkayasa ulang ke WebP di browser dan diverifikasi server; Owner dapat menghapus foto. Error API memiliki referensi permintaan aman pada header.
+- Jangan menyebut order prototype sebagai pembayaran atau transaksi bisnis. Payment/member provider tetap `OFF`; authenticated Owner UAT, printer/NFC, dan independent offsite restore belum selesai. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## Update 2026-09-20 — SagaPOS katalog Owner dan checkout prototype
 
 - `CONFIRMED`: exact production source `446e95318b9ec8e7e323fbe44c37388202507d8b`; rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.

@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## Update production 2026-09-20 — Isolasi Mode Uji dan hardening katalog POS
+
+- `CONFIRMED`: exact source aktif `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`; rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
+- Order prototype memakai nomor `TEST-`, berlabel Mode Uji pada Kiosk/KDS, dan dikeluarkan dari metrik operasional Dashboard. Copy Kiosk menegaskan tidak ada pembayaran, posting bisnis, konsumsi stok, HPP, atau settlement.
+- Owner dapat membersihkan antrean order prototype dengan konfirmasi dan alasan. Aksi hanya menyentuh data uji dan menghasilkan audit event.
+- Foto menu dikompresi serta dibuat ulang sebagai WebP di browser, lalu diverifikasi lagi oleh server berdasarkan base64, MIME/magic bytes, dimensi, ukuran piksel, dan metadata. Owner juga dapat menghapus foto menu.
+- Setiap respons memiliki referensi permintaan aman pada header untuk membantu penelusuran error tanpa mengubah kontrak JSON publik.
+- Evidence: static/type 526 modul; focused final 14/14; full suite 1.517 test mencatat 1.425 pass, 19 failure baseline/historis, 72 skip, dan 1 TODO. Seluruh failure yang disebabkan kandidat telah diperbaiki dan rerun terkait lulus. Artifact immutable, encrypted backup/disposable restore, tiga-boot recovery rehearsal, activation, exact-source health, 34 migrasi, monitor, dan service journal lulus.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; payment/member provider tetap `OFF`, printer/NFC UAT dan independent offsite restore masih pending.
+
 ## Update production 2026-09-20 — Katalog Owner dan checkout prototype POS
 
 - `CONFIRMED`: exact source aktif `446e95318b9ec8e7e323fbe44c37388202507d8b`; rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.

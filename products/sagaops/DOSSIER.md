@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-20 — Boundary order prototype dan media katalog POS
+
+Source production `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` menguatkan boundary antara preview POS dan transaksi operasional. Runtime memberi nomor `TEST-` pada order prototype, menampilkan label Mode Uji di Kiosk/KDS, dan mengecualikannya dari metrik live Dashboard. Owner dapat membersihkan antrean prototype dengan konfirmasi serta alasan; server membatasi pembersihan pada order/items/payment/fulfillment/session/idempotency data uji dan mencatat audit event.
+
+Foto menu di-resize dan di-encode ulang sebagai WebP pada browser, kemudian server memvalidasi base64, MIME/magic bytes, dimensi, pixel count, ukuran, serta menolak metadata. Metadata ukuran/dimensi disimpan dan Owner dapat menghapus foto. Request ID aman dikirim melalui header dan ditampilkan client pada error tanpa mengubah skema JSON kontrak lama.
+
+Static/type 526 modul dan focused final 14/14 lulus. Full suite global menghasilkan 1.425 pass dari 1.517 test, dengan 19 failure baseline/historis, 72 skip, dan 1 TODO; tiga regression yang berasal dari kandidat telah diperbaiki dan rerun terkait lulus. Rilis memakai artifact immutable, encrypted backup/disposable restore, tiga-boot recovery rehearsal, aktivasi atomik, exact-source health 34 migrasi, monitor, dan journal. Payment/member provider tetap `OFF`; authenticated Owner UAT, printer/NFC, serta independent offsite restore masih pending. `BUSINESS_READY=false`.
+
 ## 2026-09-20 — Portal Staff PWA dan permission recovery
 
 Source production b9026956fd448be1e8fe091c8dbd22eebe6ef94a menambahkan web app manifest, icon maskable, service worker shell-only, metadata standalone, dan Pusat Izin perangkat. Setelah autentikasi atau reload, portal membaca status kamera/lokasi bila browser mendukung Permissions API. Permintaan GPS dan kamera hanya dipicu dari tombol pengguna; stream kamera pemeriksaan langsung dihentikan. Status granted, prompt, denied, atau unavailable ditampilkan dengan langkah pemulihan khusus Android/Chrome dan iPhone/Safari.

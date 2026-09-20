@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-20 — SagaPOS isolasi Mode Uji dan hardening katalog
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b`, rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
+- Synced: nomor order `TEST-`, label Mode Uji Kiosk/KDS, pemisahan metrik operasional, pembersihan prototype ter-audit, hardening foto menu, referensi request, release evidence, dan residual UAT.
+- Evidence: static/type 526; focused final 14/14; candidate-caused failures diperbaiki dan rerun lulus; artifact, encrypted backup/disposable restore, tiga-boot recovery rehearsal, activation, exact-source health, 34 migrasi, monitor, dan journal PASS. Full suite global masih mempunyai 19 baseline/historical failures dari 1.517 test.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+- Next: Owner membuat/publish menu, membuat satu order Mode Uji, memproses `TEST-` di KDS, memastikan metrik operasional tidak berubah, lalu membersihkan antrean dari Dashboard.
+
 ## 2026-09-20 — SagaPOS katalog dan order prototype
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `446e95318b9ec8e7e323fbe44c37388202507d8b`, rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.

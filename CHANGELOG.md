@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-20 — Sinkronisasi isolasi Mode Uji SagaPOS
+
+- `CONFIRMED`: exact source `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` aktif di production; rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
+- Knowledge SagaOPS diperbarui untuk nomor order `TEST-`, label Mode Uji, pengecualian metrik operasional, pembersihan antrean ter-audit, hardening foto menu, referensi error, evidence rilis, dan residual UAT.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah: ya. Tidak ada credential, PII, foto pengguna, tenant/device identifier, atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-20 — Sinkronisasi katalog dan checkout prototype SagaPOS
 
 - `CONFIRMED`: exact source `446e95318b9ec8e7e323fbe44c37388202507d8b` aktif di production; rollback `e7d6ed59941683db76a038d4153c1f6083d72614`.
