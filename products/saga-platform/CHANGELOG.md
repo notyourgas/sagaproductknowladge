@@ -3,7 +3,7 @@
 ## 2026-09-21 — Saga Member UI/UX fidelity production
 
 - Release `20260921T092500Z-f0ab22a-r0u` mengaktifkan onboarding mobile-first final pada source Member `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`; backend dan shared contracts tidak berubah.
-- Dua belas state, typography, spacing, field/CTA, Feather Icons, cache lineage, recovery input, API timeout, dynamic loyalty projection, dan reveal member code sementara diselaraskan dengan handoff.
+- Dua belas state, typography, spacing, field/CTA, Feather Icons, recovery input, API timeout, dynamic loyalty projection, dan reveal member code sementara diselaraskan dengan handoff. Production worker tetap network-only; lineage cache demo/offline diperbarui tanpa menyimpan respons privat.
 - Frontend 561/561, visual delapan konfigurasi viewport, Axe/overflow, immutable artifact, dependency/security scan, backup/restore, actual rollback rehearsal, final activation, active backup, monitor, public health, dan authenticated Owner UAT PASS.
 - Public registration tetap OFF; payment/gateway, Push, NFC, printer, hardware, real-device UAT, offsite restore independen, dan business acceptance tetap residual. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 

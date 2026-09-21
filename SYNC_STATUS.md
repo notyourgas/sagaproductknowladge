@@ -3,7 +3,7 @@
 ## 2026-09-21 — Saga Member UI/UX handoff fidelity
 
 - Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T092500Z-f0ab22a-r0u` aktif dengan backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, frontend `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
-- Synced: 12 state onboarding final, token visual/responsive, Feather Icons, state recovery, timeout API, server-authoritative loyalty projection, cache lineage, release/recovery evidence, serta batas public registration dan business readiness.
+- Synced: 12 state onboarding final, token visual/responsive, Feather Icons, state recovery, timeout API, server-authoritative loyalty projection, production worker network-only, release/recovery evidence, serta batas public registration dan business readiness.
 - Evidence: frontend 561/561; 12 state pada delapan konfigurasi viewport; Axe/overflow nol; dependency/security scan nol temuan high-confidence; immutable artifact; 14 migrasi exact tanpa mutation; backup/restore; actual rollback rehearsal; final activation; active backup; monitor; public health; authenticated Owner technical UAT.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
 - Next: Andreas menjalankan flow Member di perangkat fisik dan memberi business acceptance; interactive Google callback, Push delivery, independent offsite restore, payment/hardware tetap gate terpisah.
