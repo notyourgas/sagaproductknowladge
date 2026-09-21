@@ -1,5 +1,26 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-204 — Saga Campaign QR SagaList diaktifkan dengan monitoring redemption aktual
+
+- Tanggal: 2026-09-21. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: aktivasi campaign SagaList pada domain Saga Studio.
+- Keputusan: jalankan seluruh strategi dan deploy Campaign QR pada
+  `sagastudio.site/campaignqr`, memakai campaign 21 September-10 Oktober 2026,
+  draw 11 Oktober pukul 00.05 WIB, serta voucher sampai 31 Desember 2026.
+  Potensi nilai hadiah dikelola dengan kebijakan monitor redemption aktual,
+  bukan dianggap sebagai biaya yang otomatis terealisasi.
+- Alasan: campaign perlu dapat dicoba sekarang dengan visual sesuai referensi,
+  integrasi SagaBook production, recovery, dan monitoring yang terjaga.
+- Alternatif: mempertahankan holding page atau membuka write tanpa fakta/
+  recovery terverifikasi tidak dipakai.
+- Dampak: companion exact source
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` aktif; runtime utama SagaBook
+  dan root Saga Studio tidak berubah. Scan QR cetak dan kesiapan operasional
+  draw/redeem tetap menahan `BUSINESS_READY`.
+- Terkait: [SagaBook](products/sagabook/PRODUCT.md),
+  [dossier](products/sagabook/DOSSIER.md), [gaps](GAPS.md), dan
+  [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-203 - Checkout COYABAG tidak membawa identitas atau lokasi bawaan
 
 - Tanggal: 2026-09-16. Status: `CONFIRMED`; pemberi keputusan Andreas.

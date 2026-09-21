@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-09-21 — Saga Campaign QR SagaList aktif
+
+- `CONFIRMED`: exact source `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`
+  aktif pada `https://sagastudio.site/campaignqr`, dengan rollback
+  `86276074c4ea75f412949734ef4480c6f73b4096`.
+- Holding page diganti flow mobile-first delapan layar; registration, voucher,
+  admin Owner, redeem, public writes, facts SagaBook, dan service contract
+  voucher production aktif. Runtime utama SagaBook dan root Saga Studio tidak
+  berubah.
+- Schedule: campaign sampai 10 Oktober 2026, draw 11 Oktober pukul 00.05 WIB,
+  voucher sampai 31 Desember 2026. Monitoring dan rekonsiliasi mengikuti fase
+  tersebut.
+- Release/recovery/health/public-security smoke, browser/MySQL acceptance, dan
+  authenticated Owner UAT lulus. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED /
+  BUSINESS_READY=NEEDS_CONFIRMATION`; QR cetak dan operasi draw/redeem nyata
+  masih perlu dibuktikan.
+
 ## 2026-09-21 — Integrasi production Saga Member dan Customer Platform
 
 - `CONFIRMED`: release `20260921T025500Z-453db12-r0u` aktif di `app.sagamember.site` dengan Customer Platform authoritative, Saga Member projection client, dan shared Member Session contract.

@@ -8,15 +8,38 @@ dalam satu dokumen public-safe.
 ## Konteks dan status bukti
 
 - Companion Saga Campaign QR exact source
-  `0443012b0048eccbe43926b1b30e27988beb3025` aktif di
-  `https://sagastudio.site/campaignqr`. Artifact SHA-256
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` aktif di
+  `https://sagastudio.site/campaignqr`; rollback kompatibel
+  `86276074c4ea75f412949734ef4480c6f73b4096`. Artifact exact-source,
+  service non-root, MySQL 25 tabel/6 migrasi tanpa migration baru,
+  backup/disposable restore, atomic activation, health, Nginx/TLS,
+  public/security smoke, serta authenticated Owner UAT lulus. Public writes
+  dan integrasi voucher SagaBook aktif dengan service contract; facts endpoint
+  production mengonfirmasi cabang, kapasitas/buffer, pricing, hold policy,
+  closing rule, print add-on, dan kesiapan stok tanpa mempublikasikan identifier
+  atau data customer. UI mobile-first memakai delapan golden state dari welcome
+  sampai thank-you, dengan ticket scratch/reveal dan tautan Instagram resmi.
+  Campaign berjalan 21 September sampai 10 Oktober 2026 WIB, draw terjadwal 11
+  Oktober pukul 00.05 WIB, dan voucher berlaku sampai 31 Desember 2026.
+  Kebijakan budget adalah memonitor redemption aktual; potensi maksimum hadiah
+  di atas budget bukan janji biaya aktual. Hosted GitHub Quality tidak memulai
+  job karena billing, sedangkan exact-main local gates, Vercel, browser matrix,
+  dan MySQL integration lulus. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OWNER_UAT_PASSED / BUSINESS_READY=NEEDS_CONFIRMATION`.
+
+- `DEPRECATED`: companion Saga Campaign QR exact source
+  `0443012b0048eccbe43926b1b30e27988beb3025` adalah holding release yang aktif
+  pada 20 September 2026 dan kini digantikan exact
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`. Artifact SHA-256
   `00b61ad673b5e09300964bb8f0ac39abd9a3e9a8ce1fdfd9bd40d2ad93453fdd`
   dibangun dari checkout exact source; service non-root, MySQL 25 tabel/6
   migrasi, encrypted backup/disposable restore, Nginx subpath, TLS renewal
   rehearsal, dan public smoke lulus. UI publik menampilkan holding state
   `SAGALIST BELUM DIBUKA`; endpoint registration dan integrasi voucher tetap
-  fail-closed. SagaBook belum menerima token, voucher, booking, customer data,
-  atau mutasi dari Campaign. Status `CONFIRMED / SOURCE_PUSHED /
+  fail-closed. Pada status historis itu SagaBook belum menerima token, voucher,
+  booking, customer data, atau mutasi dari Campaign. Status historis
+  `CONFIRMED / SOURCE_PUSHED /
   LOCAL_VALIDATED / PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
   PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
 

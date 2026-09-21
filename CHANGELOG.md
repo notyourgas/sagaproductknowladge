@@ -1,5 +1,25 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-21 — Aktivasi Saga Campaign QR SagaList
+
+- `CONFIRMED`: companion Campaign QR exact source
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` aktif pada
+  `https://sagastudio.site/campaignqr`; rollback
+  `86276074c4ea75f412949734ef4480c6f73b4096` tersedia.
+- Knowledge SagaBook/portfolio diperbarui untuk flow visual delapan layar,
+  schedule, activation public writes, integrasi fakta dan voucher SagaBook,
+  authenticated Owner UAT, monitoring, serta residual readiness.
+- File terdampak: `products/sagabook/PRODUCT.md`,
+  `products/sagabook/DOSSIER.md`, `products/sagabook/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `DECISIONS.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production Campaign QR berubah; runtime utama SagaBook tidak berubah. Tidak
+  ada credential, account/tenant identifier, PII, customer photo, raw receipt,
+  atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## 2026-09-21 — Sinkronisasi integrasi production Saga Member dan Customer Platform
 
 - `CONFIRMED`: production release `20260921T025500Z-453db12-r0u`; Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

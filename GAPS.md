@@ -1,16 +1,22 @@
 # Gaps dan Keputusan Founder
 
-## 2026-09-20 — Residual Saga Campaign QR setelah domain aktif
+## 2026-09-21 — Residual Saga Campaign QR setelah aktivasi
 
-- `NEEDS CONFIRMATION`: jam draw final, branch resmi, SKU add print 4R,
-  harga/tax/pembulatan otoritatif, tenggat hold, kapasitas/buffer, stock/Closing,
-  dan role mapping Owner/Operator/Staff.
-- Integrasi fakta dan voucher SagaBook belum memiliki token/provider contract
-  yang diaktifkan; public writes tetap mati.
-- UAT Owner/Staff pada perangkat nyata, canary source, observability operasi,
-  reconciliation, dan SOP rollback belum menutup activation/business gate.
-- VPS Hostinger perlu diperpanjang sebelum masa layanan berakhir agar domain
-  tidak kehilangan runtime.
+- `CONFIRMED`: schedule, cabang, print add-on, pricing, hold, kapasitas/buffer,
+  closing rule, stock readiness, Owner role, facts contract, voucher service
+  contract, public writes, recovery, observability, dan authenticated Owner UAT
+  sudah aktif atau terverifikasi pada production.
+- `NEEDS CONFIRMATION`: scan QR hasil cetak pada HP nyata belum dibuktikan;
+  kesiapan orang/SOP saat redeem dan draw juga perlu dikonfirmasi pada waktu
+  operasional. Draw production saat ini terjadwal 11 Oktober 2026 pukul 00.05
+  WIB; perubahan jam memerlukan konfigurasi baru yang dipublish Owner.
+- `NEEDS CONFIRMATION`: jumlah stok fisik yang disampaikan Owner tidak
+  dipublikasikan sebagai angka runtime; facts contract hanya membuktikan
+  `printStockReady=true`. Rekonsiliasi aktual tetap berjalan sampai voucher
+  berakhir 31 Desember 2026.
+- VPS Hostinger tetap perlu dipantau dan diperpanjang sebelum masa layanan
+  berakhir. Dampak residual ini menahan `BUSINESS_READY` tanpa mematikan
+  `PRODUCTION_ACTIVATED`.
 
 ## 2026-09-20 — Residual setelah Portal Staff PWA aktif
 

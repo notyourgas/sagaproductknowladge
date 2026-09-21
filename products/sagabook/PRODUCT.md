@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
-Updated: 20 September 2026 WIB
-Evidence status: SagaBook production terverifikasi aktif pada exact `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`, immutable release `20260914173811-bdef20a`, rollback `20260910145632-1dadc30`. Sinkronisasi task pembayaran add-on pada booking completed kini atomik dan tenant-scoped; UI membedakan rule legacy yang belum tersimpan dari rule non-consuming `0/0` yang eksplisit. Satu koreksi data legacy terbatas telah menambahkan rule nol yang terverifikasi dan menutup task pembayaran stale tanpa mengirim Closing. Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`.
+Updated: 21 September 2026 WIB
+Evidence status: SagaBook production tetap pada exact `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`. Companion Saga Campaign QR aktif terpisah pada exact `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`, dengan public writes, kontrak fakta SagaBook, dan integrasi voucher production aktif. Status companion `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED / BUSINESS_READY=NEEDS_CONFIRMATION`.
 
 ## Tujuan dokumen
 
@@ -16,14 +16,24 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
-- Companion Saga Campaign QR tersedia pada
-  `https://sagastudio.site/campaignqr` sebagai holding page production yang
-  fail-closed. Exact source Campaign `0443012b0048eccbe43926b1b30e27988beb3025`
-  aktif dengan MySQL persisten, TLS, backup/restore, dan public smoke lulus.
-  Public registration/write serta integrasi voucher SagaBook tetap nonaktif;
-  SagaBook tetap menjadi otoritas booking, harga, kapasitas, pembayaran,
-  refund, dan stok. Status `CONFIRMED / PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
-  PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+- Companion Saga Campaign QR pada `https://sagastudio.site/campaignqr` sudah
+  berubah dari holding page menjadi campaign SagaList aktif. Flow mobile-first
+  delapan layar, sumber Instagram resmi, registrasi, ticket/reveal, voucher,
+  panel Owner, redeem, integrasi fakta SagaBook, dan monitoring tersedia.
+  Jadwal aktif 21 September sampai 10 Oktober 2026 WIB; draw terjadwal 11
+  Oktober pukul 00.05 WIB dan voucher berlaku sampai 31 Desember 2026.
+  Exact source `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`, rollback
+  `86276074c4ea75f412949734ef4480c6f73b4096`, tanpa migration baru. Health,
+  backup/disposable restore, public/security smoke, integrasi fakta, dan
+  authenticated Owner UAT lulus. Status `CONFIRMED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED /
+  BUSINESS_READY=NEEDS_CONFIRMATION`; uji scan QR cetak dan kesiapan operasional
+  draw/redeem tetap harus dibuktikan.
+
+- `DEPRECATED`: holding page Campaign QR exact source
+  `0443012b0048eccbe43926b1b30e27988beb3025` adalah status 20 September 2026
+  sebelum activation. Riwayat ini digantikan oleh companion aktif exact
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` di atas.
 
 - S425 menyatukan lifecycle task pembayaran add-on untuk booking completed.
   Penambahan add-on pending membuat atau memperbarui satu task aktif; perubahan

@@ -1,5 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — Saga Campaign QR SagaList aktif
+
+- `CONFIRMED`: `https://sagastudio.site/campaignqr` aktif pada exact source
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`; rollback
+  `86276074c4ea75f412949734ef4480c6f73b4096` tersedia. Runtime utama SagaBook
+  dan root Saga Studio tidak berubah.
+- Flow publik mobile-first delapan layar, registration, ticket/reveal, voucher,
+  thank-you, admin Owner, redeem, public writes, facts SagaBook, serta service
+  contract voucher aktif. Campaign berakhir 10 Oktober 2026, draw terjadwal 11
+  Oktober pukul 00.05 WIB, dan voucher berlaku sampai 31 Desember 2026.
+- Release/recovery/health/security smoke, browser/MySQL acceptance, facts
+  production, dan authenticated Owner UAT lulus. Hosted GitHub Quality tidak
+  berjalan karena billing; exact-main local gates dan Vercel lulus.
+- Jangan mengklaim `BUSINESS_READY` sebelum scan QR cetak serta kesiapan SOP
+  draw/redeem nyata dibuktikan. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## Update 2026-09-21 — Saga Member dan Customer Platform aktif terintegrasi
 
 - `CONFIRMED`: production release `20260921T025500Z-453db12-r0u` aktif di [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner). Exact source: Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
@@ -35,15 +53,16 @@
 
 ## Update 2026-09-20 — Saga Campaign QR production holding page
 
-`https://sagastudio.site/campaignqr` aktif sebagai holding page Campaign QR
+`DEPRECATED`: `https://sagastudio.site/campaignqr` aktif sebagai holding page Campaign QR
 dengan exact source `0443012b0048eccbe43926b1b30e27988beb3025`, MySQL
 persisten, TLS, encrypted backup/restore, dan public smoke terverifikasi. Public
 registration/write dan integrasi voucher SagaBook tetap dimatikan; UI publik
 menyatakan campaign belum dibuka. SagaBook tetap otoritas booking, harga,
 kapasitas, pembayaran, refund, dan stok. Jangan menyebut campaign aktif atau
 business-ready sebelum Owner UAT, kontrak fakta SagaBook, serta activation gate
-lulus. Status `PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
-PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`.
+lulus. Status historis `PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; digantikan update aktivasi
+21 September 2026 pada exact `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`.
 
 ## Update 2026-09-20 - COYABAG J&T Express Wave 0-5 candidate
 

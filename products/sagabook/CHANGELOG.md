@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-09-21 - Companion Saga Campaign QR diaktifkan
+
+- Holding page diganti flow SagaList mobile-first delapan layar dengan
+  registrasi, ticket/reveal, voucher, thank-you, admin Owner, redeem, dan tautan
+  Instagram resmi.
+- Exact source `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` aktif pada
+  `https://sagastudio.site/campaignqr`; rollback
+  `86276074c4ea75f412949734ef4480c6f73b4096`. Tidak ada migration baru.
+- Public writes, service contract voucher, dan facts production SagaBook aktif.
+  Backup/disposable restore, health, public/security smoke, browser matrix,
+  MySQL integration, serta authenticated Owner UAT lulus. Hosted GitHub
+  Quality tidak memulai job karena billing; Vercel dan exact-main local gates
+  lulus.
+- Schedule production: 21 September-10 Oktober 2026 WIB; draw 11 Oktober pukul
+  00.05 WIB; voucher sampai 31 Desember 2026. Monitoring berjalan selama
+  campaign dan rekonsiliasi berlanjut sampai expiry voucher.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_OWNER_UAT_PASSED / BUSINESS_READY=NEEDS_CONFIRMATION` karena
+  scan QR cetak dan kesiapan operasional draw/redeem masih perlu dibuktikan.
+
 ## 2026-09-20 - Companion Saga Campaign QR live dalam mode holding
 
 - `https://sagastudio.site/campaignqr` kini melayani holding page Campaign QR

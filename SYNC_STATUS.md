@@ -1,5 +1,24 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — Aktivasi Saga Campaign QR SagaList
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` aktif pada production dengan
+  rollback `86276074c4ea75f412949734ef4480c6f73b4096`.
+- Synced: delapan state visual mobile-first, schedule campaign/draw/voucher,
+  public writes, voucher service contract, facts SagaBook, Owner dashboard,
+  redeem, recovery, monitoring, dan boundary data publik.
+- Evidence: exact-main local check/build/test, browser matrix, MySQL integration,
+  dependency audit, encrypted backup/disposable restore, atomic activation,
+  internal/public health, public/security smoke, facts production, serta
+  authenticated Owner UAT PASS. Hosted GitHub Quality terhalang billing;
+  Vercel checks lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+- Next: scan QR hasil cetak pada HP nyata, verifikasi SOP redeem/draw bersama
+  operator saat waktunya, dan rekonsiliasi redemption sampai expiry voucher.
+
 ## 2026-09-21 — Integrasi Saga Member dan Customer Platform production R0
 
 - Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T025500Z-453db12-r0u` aktif dengan Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
