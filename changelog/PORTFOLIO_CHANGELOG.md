@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS Menu & Promo Batch 7 terdeploy secara guarded
+
+- `CONFIRMED`: SagaOPS source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif pada production; rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c` dan 34 migrasi tetap tersedia/tidak berubah.
+- Workspace Owner enam tab dan enam tipe promo kini ada di code production dengan pricing/promo server-authoritative, draft/publish, audit, jadwal, scope, stacking, dan quota.
+- Semua feature flag Menu/Promo tetap OFF, sehingga ini `PRODUCTION_DEPLOYED / RELEASE_RUNTIME_ACTIVE`, bukan aktivasi capability atau business launch. Payment/gateway juga tetap OFF; Owner UAT, data nyata, perangkat, dan business acceptance masih terbuka.
+- Static/type, focused 22/22, resource-failure reconciliation 31/31, artifact, backup/restore, tiga-boot recovery, activation, health, ingress boundary, storage retention, dan final monitor lulus.
+
 ## 2026-09-21 — Saga Member lebih padat dan tetap mobile-first
 
 - `CONFIRMED`: release `20260921T134857Z-f0ab22a-r0u` mengaktifkan frontend `657a482f511edb9d71d012342102fffc0ec4eb31` pada [Saga Member](https://app.sagamember.site/member).

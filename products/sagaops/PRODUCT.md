@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-22 — Kode Menu & Promo Batch 7 terdeploy, aktivasi fitur tetap tertutup
+
+- `CONFIRMED`: exact source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif pada runtime production dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`; schema tetap 34 migrasi dan payment/gateway tetap `OFF`.
+- Source menambahkan workspace Owner enam tab: Produk, Kategori, Modifier & Add-on, Promo, Publikasi, dan Pengaturan Kiosk. Produk/kategori tetap memakai draft dan publish berversi; harga dan diskon dihitung server, bukan browser.
+- Mesin promo mendukung persen, potongan rupiah, harga khusus, bundle, beli X gratis Y, dan gratis item, dengan jadwal WIB, scope, prioritas/stacking, cap, kuota total, lifecycle draft/active/paused/archived, audit, serta persistence restart-safe.
+- Tiga kill switch `menuUiV2`, `catalogWorkspaceV2`, dan `promoEngineV1` default `false`. Environment production tidak mengaktifkannya, sehingga release code aktif tetapi UI dan promo baru belum tersedia bagi operator/customer serta belum memengaruhi checkout.
+- Validation: static/type 545 modul dan 34 migrasi; focused Menu/Promo, browser, accessibility, pricing, modifier, variant, dan preview 22/22; code-only contract 4 pass/3 controlled skip. Full-run paralel tidak seluruhnya hijau karena OOM dan kapasitas TEMP host; semua kelompok yang terdampak lulus 31/31 saat rerun serial pada volume yang cukup. Dependency audit mencatat dua advisory moderate Vitest, nol high/critical.
+- Immutable artifact, target admission, encrypted backup/disposable restore, candidate-current-candidate rehearsal, code-only activation, exact-source health, public anonymous boundary, dan final monitor lulus. Monitor awal mengenai ambang storage; redundant transport yang sudah identik dengan artifact dibersihkan melalui retention terverifikasi sampai volume 84%, lalu monitor PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / RELEASE_RUNTIME_ACTIVE / MENU_PROMO_FEATURE_ACTIVATION=false / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`. Aktivasi memerlukan Owner UAT, data menu/promo nyata, keputusan operasional, dan rollback switch yang tetap tersedia.
+
 ## Source 2026-09-21 — Packaging kandidat Linux dibuat fail-closed
 
 - `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: cumulative source `1b0dd66ec7f373c3d19a2131d57180a5a5ce30eb` menambahkan pipeline Linux permission-minimal untuk membangun artifact SagaPOS dari exact pushed SHA, memeriksa receipt serta checksum, dan menyimpan kandidat selama tujuh hari tanpa credential atau jalur deployment production.

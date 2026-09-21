@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS Menu & Promo Batch 7 terdeploy default-off
+
+- `CONFIRMED`: production SagaOPS berjalan pada exact source `5c817607c1c29a4078d8c0565272ff7068820b6c`, rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`, 34 migrasi, payment/gateway `OFF`.
+- Code menyediakan workspace Owner enam tab dan enam tipe promo server-authoritative dengan draft/publish, audit, jadwal WIB, scope, stacking, cap, quota, serta persistence restart-safe.
+- `menuUiV2`, `catalogWorkspaceV2`, dan `promoEngineV1` tetap default `false` dan tidak diaktifkan pada service. Jangan mengklaim UI/promo telah aktif untuk operator/customer atau telah mengubah checkout.
+- Release gate lulus untuk artifact immutable, backup/disposable restore, candidate-current-candidate recovery, activation, health, anonymous ingress boundary, retention, dan monitor. Owner UAT serta data/operasi bisnis nyata masih pending; status `MENU_PROMO_FEATURE_ACTIVATION=false / BUSINESS_READY=false`.
+
 ## Update 2026-09-21 — Saga Member onboarding density aktif
 
 - `CONFIRMED`: release `20260921T134857Z-f0ab22a-r0u` aktif pada [Saga Member](https://app.sagamember.site/member); backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `657a482f511edb9d71d012342102fffc0ec4eb31`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

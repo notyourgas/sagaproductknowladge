@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Menu & Promo Batch 7 terdeploy dalam mode default-off
+
+- Added workspace Owner enam tab untuk Produk, Kategori, Modifier & Add-on, Promo, Publikasi, dan Pengaturan Kiosk.
+- Added enam tipe promo server-authoritative, lifecycle/audit, jadwal WIB, scope, stacking, cap, dan quota; state bertahan setelah restart.
+- Added tiga feature flag fail-closed. Runtime production memakai source `5c817607c1c29a4078d8c0565272ff7068820b6c`, tetapi semua flag tetap `false`; checkout dan UI production belum berubah.
+- Validation: static/type 545 modul, focused 22/22, code-only contract lulus, failed resource groups dari full run lulus 31/31 secara serial; dua advisory moderate Vitest dan nol high/critical.
+- Release: artifact immutable, backup/restore, tiga-boot rehearsal, activation, exact health 34 migrasi, anonymous ingress boundary, storage retention, dan monitor PASS. Rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c` tersedia.
+- Status `PRODUCTION_DEPLOYED / RELEASE_RUNTIME_ACTIVE / MENU_PROMO_FEATURE_ACTIVATION=false / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Pipeline immutable candidate untuk assisted cash Owner
 
 - Added pada exact cumulative source `1b0dd66ec7f373c3d19a2131d57180a5a5ce30eb`: pipeline Linux read-only terhadap repository yang memaketkan exact pushed SHA memakai runner production kanonik, memverifikasi checksum/receipt, dan mengunggah artifact kandidat tanpa secret atau akses VPS.

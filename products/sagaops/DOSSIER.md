@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-22 — Menu & Promo Batch 7 sebagai release gated
+
+Redesign menempatkan pengelolaan menu dan promo dalam workspace Owner enam tab: Produk, Kategori, Modifier & Add-on, Promo, Publikasi, dan Pengaturan Kiosk. Mutasi struktural tetap draft-first dan dipublish berversi; ketersediaan harian tetap dapat diubah segera. Harga, tax/service, variant, modifier, serta diskon berasal dari state server-authoritative. Browser hanya mengirim intent dan tidak dapat menetapkan total transaksi.
+
+Promo mempunyai enam tipe: persen, fixed amount, fixed price, bundle, buy-X-get-Y, dan free item. Kontrak mencakup interval half-open, jadwal Asia/Jakarta, scope produk/kategori/payment/sales mode, minimum belanja, cap, prioritas, stacking, total quota, audit, optimistic version, dan lifecycle draft/active/paused/archived. State tersimpan bersama catalog durable state. Checkout menghitung promo dari snapshot item server dan menghitung penggunaan kuota hanya dari order paid/completed.
+
+Exact source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`. Package lock, service unit, manifest, dan seluruh 34 migrasi identik dengan release sebelumnya, sehingga jalur code-only dipakai. Fresh encrypted backup lulus disposable restore; rehearsal menjalankan candidate-current-candidate tanpa transaksi atau perubahan database; activation atomik, exact-source health, payment containment, public `401` boundary, dan final monitor lulus.
+
+Kill switch `menuUiV2`, `catalogWorkspaceV2`, dan `promoEngineV1` tetap default-off dan tidak ada di environment service production. Karena itu status release adalah `PRODUCTION_DEPLOYED / RELEASE_RUNTIME_ACTIVE`, sedangkan status capability `MENU_PROMO_FEATURE_ACTIVATION=false`. Belum ada authenticated Owner UAT atau pengisian data promo bisnis nyata. Payment/gateway tetap `OFF`, printer/NFC tetap residual, independent offsite restore tetap `UNVERIFIED`, dan `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Assisted cash Kiosk dengan konfirmasi uang fisik oleh kasir
 
 Slice ini menjaga QRIS sebagai CTA utama dan menempatkan cash sebagai jalur sekunder. Pelanggan memilih nominal cepat atau memasukkan uang yang akan diserahkan, lalu Kiosk menampilkan estimasi kembalian. Checkout cash membuat order dan payment berstatus pending; kasir melihat antrean bantuan, memasukkan nominal aktual yang diterima, meninjau kembalian, dan melakukan konfirmasi final. Hanya transisi server-side tersebut yang menandai payment `PAID` serta membuka aliran KDS, inventory/HPP, reward, dan cash ledger. Penutupan shift ditolak bila masih ada bantuan cash yang belum selesai.

@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-22 — Sinkronisasi SagaPOS Menu & Promo Batch 7
+
+- `CONFIRMED`: exact SagaOPS source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif di production dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`; schema 34 migrasi dan payment/gateway tetap OFF.
+- Knowledge diperbarui untuk workspace enam tab, enam tipe promo server-authoritative, draft/publish, audit/persistence, feature flags default-off, validation, release/recovery, serta batas activation/business readiness.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production code berubah, tetapi Menu/Promo capability belum aktif dan belum authenticated Owner UAT. Tidak ada credential, PII, raw receipt/callback, customer data, tenant/device identifier, atau path privat yang dipublikasikan. Delivery `PRODUCTION_DEPLOYED / MENU_PROMO_FEATURE_ACTIVATION=false / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Sinkronisasi Saga Member onboarding density dan motion
 
 - `CONFIRMED`: release `20260921T134857Z-f0ab22a-r0u`; Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `657a482f511edb9d71d012342102fffc0ec4eb31`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, artifact `c05bf31b09afe14cbafa6bf06f213ea8860c745c38ad37498370d46e0de370cd`.
