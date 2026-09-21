@@ -1,5 +1,15 @@
 # Saga Platform Dossier
 
+## Update 2026-09-21 — Google OIDC Owner internal
+
+- Production aktif pada release `20260921T071505Z-b8d24e3-r0u`; Customer Platform tetap authority account/session dan Saga Member tetap projection client.
+- Google OIDC memakai Authorization Code + PKCE, verifikasi signature/issuer/audience/expiry/nonce/email verified, state sekali pakai, dan secure temporary cookie. Google access/refresh token tidak menjadi data bisnis yang dipersist.
+- Hanya identitas Google yang cocok dengan akun internal yang sudah ada dapat memperoleh sesi Member. Akun terverifikasi tetapi belum terdaftar ditolak; public registration dan auto-provisioning tetap OFF.
+- Source: Customer Platform `b8d24e322bd47425822e6dff0b0140c58652287d`, Member `0de0b9c3204df3da43fd9605d5ec3a445935379e`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, artifact `4a12d00917b4974e51b03db3ad43d0e2e5abdcaeb84b706da5b37441e4da272e`.
+- Kandidat `af767dd8a1b022ce677a6bdc331cccbd9263369b` tidak dipromosikan setelah monitor menemukan health flag OIDC salah; rollback aktual PASS. Artifact dan source baru dipakai untuk aktivasi final.
+- Frontend 554 test, backend 43 isolated test files, runner 56 test, dependency audit nol, backup/disposable restore, rollback rehearsal, reactivation, health/monitor, timers, active backup, serta login Owner lama PASS. Public OAuth-start membuktikan redirect Google, PKCE, state, nonce, dan cookie aman tanpa membuka credential.
+- UAT consent/callback Google nyata oleh Andreas masih pending. `BUSINESS_READY=false`; provider bisnis lain dan independent offsite restore tetap dinilai terpisah.
+
 ## Update 2026-09-21 — Provider SagaPOS dan email OTP
 
 - Production aktif pada release `20260921T050306Z-421e461-r0u`; Customer Platform tetap authority dan Saga Member tetap projection client.

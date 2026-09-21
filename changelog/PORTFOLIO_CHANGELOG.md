@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-21 — Login Google Saga Member aktif untuk Owner internal
+
+- `CONFIRMED`: release `20260921T071505Z-b8d24e3-r0u` mengaktifkan Google OIDC pada `app.sagamember.site` untuk cohort Owner internal yang sudah terdaftar; public registration dan auto-provisioning tetap OFF.
+- Authorization Code + PKCE, state, nonce, exact redirect, secure cookie, provider health, backup/restore, rollback rehearsal, final activation, login Owner lama, dan public OAuth-start lulus. Kandidat awal rollback otomatis setelah monitor menemukan health flag yang salah dan tidak dipakai ulang.
+- Source backend `b8d24e322bd47425822e6dff0b0140c58652287d`, Member `0de0b9c3204df3da43fd9605d5ec3a445935379e`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`. Interactive Google callback UAT oleh Andreas masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Campaign QR memiliki login Staff terpisah
 
 - `CONFIRMED`: exact source

@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — Google OIDC Saga Member
+
+- Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T071505Z-b8d24e3-r0u` aktif dengan backend `b8d24e322bd47425822e6dff0b0140c58652287d`, frontend `0de0b9c3204df3da43fd9605d5ec3a445935379e`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Synced: Google Authorization Code + PKCE, state/nonce, exact redirect, secure cookie, internal-account allowlist, deny-by-default provisioning, rollback recovery, activation, monitor, dan boundary business readiness.
+- Evidence: frontend 554 test, backend 43 isolated files, runner 56 test, dependency audit nol, immutable artifact, encrypted backup/disposable restore, actual rollback rehearsal, final activation, active backup, Owner password login, dan public OAuth-start PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / GOOGLE_OIDC_INTERNAL_OWNER_ACTIVE / AUTHENTICATED_GOOGLE_CALLBACK_UAT_PENDING / BUSINESS_READY=false`.
+- Next: Andreas membuka Member, menekan `Masuk dengan Google`, memilih akun Owner, lalu mengonfirmasi halaman Member terbuka. Public registration dan provider bisnis lain tetap terpisah.
+
 ## 2026-09-21 — Login Staff terpisah Saga Campaign QR
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-21 — Google OIDC Owner internal production
+
+- `CONFIRMED`: release `20260921T071505Z-b8d24e3-r0u` aktif dengan backend `b8d24e322bd47425822e6dff0b0140c58652287d`, frontend `0de0b9c3204df3da43fd9605d5ec3a445935379e`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, dan artifact `4a12d00917b4974e51b03db3ad43d0e2e5abdcaeb84b706da5b37441e4da272e`.
+- Login Google aktif hanya untuk akun Owner internal yang sudah ada. Authorization Code + PKCE, state, nonce, exact redirect, secure cookie, dan deny-by-default provisioning terverifikasi; public registration tetap OFF.
+- Kandidat pertama rollback otomatis akibat health flag OIDC yang salah. Kandidat baru, encrypted backup/disposable restore, rollback rehearsal, final switch, monitor, active backup, login Owner lama, dan public OAuth-start PASS.
+- Authenticated consent/callback UAT oleh Andreas masih pending. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / GOOGLE_OIDC_INTERNAL_OWNER_ACTIVE / BUSINESS_READY=false`.
+
 ## 2026-09-21 — SagaPOS provider dan email OTP production
 
 - `CONFIRMED`: release `20260921T050306Z-421e461-r0u` aktif dengan backend `421e46143124a450bad8bee480cea6b622bdb20b`, frontend `35e348c32a1fa230deffef984105bf15fbcdfdae`, shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`, dan immutable artifact `d9abaf09c14429a52502eb3df62726a018dd1756bc9c8c07b5216fde38822399`.

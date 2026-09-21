@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — Google OIDC Saga Member aktif
+
+- `CONFIRMED`: release `20260921T071505Z-b8d24e3-r0u` aktif pada `app.sagamember.site`; backend `b8d24e322bd47425822e6dff0b0140c58652287d`, Member `0de0b9c3204df3da43fd9605d5ec3a445935379e`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Tombol Google memakai Authorization Code + PKCE, state, nonce, exact redirect, secure cookie, dan hanya dapat menautkan akun internal yang sudah ada. Public registration/auto-provisioning tetap OFF; akun Google asing ditolak.
+- Recovery dan activation gate PASS setelah kandidat awal rollback karena health flag OIDC salah. Login Owner lama dan OAuth-start production PASS; consent/callback nyata oleh Andreas masih pending. Status `PRODUCTION_ACTIVATED / GOOGLE_OIDC_INTERNAL_OWNER_ACTIVE / BUSINESS_READY=false`.
+
 ## Update 2026-09-21 — Login Staff Campaign QR terpisah
 
 - `CONFIRMED`: exact production source

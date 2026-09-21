@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-21 — Residual Google OIDC Saga Member
+
+- `CONFIRMED`: blocker credential/redirect Google OAuth sebelumnya ditutup. Provider OIDC aktif hanya untuk cohort Owner internal pada release `20260921T071505Z-b8d24e3-r0u`; public OAuth-start, PKCE/state/nonce, secure cookie, recovery, dan monitor PASS.
+- `NEEDS CONFIRMATION`: Andreas belum menyelesaikan consent dan callback Google nyata dari browser. Dampak: provider aktif, tetapi label `AUTHENTICATED_GOOGLE_CALLBACK_UAT_PASS` belum boleh digunakan.
+- `NEEDS CONFIRMATION`: public registration, payment/gateway, Push, NFC, printer, hardware, independent offsite restore, monitoring jangka panjang, dan business acceptance tetap terbuka. `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Residual provider SagaPOS dan email OTP Saga Member
 
 - `CONFIRMED`: SagaPOS machine provider dan email OTP allowlist aktif pada production. Health, capability/credential binding, Member lookup UAT, request OTP, delivery provider, recovery, activation, serta monitor lulus.

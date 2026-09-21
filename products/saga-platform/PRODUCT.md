@@ -1,5 +1,12 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-21 — Login Google Saga Member aktif untuk Owner internal
+
+- `CONFIRMED`, cut-off 2026-09-21 07:17 UTC: release `20260921T071505Z-b8d24e3-r0u` aktif di [Member](https://app.sagamember.site/member) dengan Customer Platform `b8d24e322bd47425822e6dff0b0140c58652287d`, Member `0de0b9c3204df3da43fd9605d5ec3a445935379e`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Tombol `Masuk dengan Google` memakai Authorization Code + PKCE, `state`, `nonce`, redirect resmi, serta cookie sementara `HttpOnly`, `Secure`, dan `SameSite=Lax`. Provider hanya menerima akun Google yang sudah terikat pada cohort Owner internal; public registration dan auto-provisioning akun baru tetap OFF.
+- Kandidat awal ditolak monitor karena health flag OIDC salah dan otomatis rollback. Kandidat pengganti memakai source serta artifact baru; backup/disposable restore, actual rollback rehearsal, final activation, monitor, timer, active backup, login Owner lama, dan public OAuth-start contract seluruhnya PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / GOOGLE_OIDC_INTERNAL_OWNER_ACTIVE / AUTHENTICATED_GOOGLE_CALLBACK_UAT_PENDING / BUSINESS_READY=false`. Andreas masih perlu memilih akun Google pada consent screen untuk menutup UAT callback end-to-end; payment/gateway, Push, NFC, printer, hardware, public registration, dan independent offsite restore tetap gate terpisah.
+
 ## 2026-09-21 — Provider SagaPOS dan email OTP Saga Member aktif
 
 - `CONFIRMED`, cut-off 2026-09-21 05:10 UTC: release `20260921T050306Z-421e461-r0u` aktif di [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner), dengan Customer Platform `421e46143124a450bad8bee480cea6b622bdb20b`, Member `35e348c32a1fa230deffef984105bf15fbcdfdae`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
