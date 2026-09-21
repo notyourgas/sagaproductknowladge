@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-21 — SagaOPS assisted cash terdeploy dengan payment containment
+
+- `CONFIRMED`: SagaOPS source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.
+- Kiosk kini memiliki kontrak assisted cash sekunder: estimasi kembalian di pelanggan dan konfirmasi tender aktual oleh kasir sebelum fakta paid, KDS, inventory/HPP, reward, atau cash ledger dibuat.
+- Release/recovery, Owner-authenticated restart smoke, monitor, dan public containment lulus tanpa transaksi. Payment/gateway serta aktivasi fitur cash tetap `OFF`; `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Campaign Control memakai password-only Owner login
 
 - `CONFIRMED`: Saga Campaign QR exact source

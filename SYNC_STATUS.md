@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — SagaPOS assisted cash production code
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.
+- Synced: QRIS-first assisted cash, tender/kembalian, kasir sebagai payment truth, shift-close guard, idempotency/restart, downstream containment, release/recovery evidence, serta activation boundary.
+- Evidence: focused 64/64; full 1.530 dengan 1.457 pass, 0 fail, 72 controlled skip, dan 1 TODO; static/type, dependency/security scan, Axe/viewport, immutable artifact, encrypted backup/disposable restore, recovery rehearsal, activation, monitor, authenticated Owner restart smoke, serta public smoke PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / CASH_FEATURE_ACTIVATION=false / BUSINESS_READY=false`.
+- Next: tetapkan SOP cash dan payment policy, lakukan UAT kasir/Kiosk pada perangkat nyata, verifikasi offsite restore, lalu minta approval activation terpisah. Payment/gateway tetap `OFF` dan tidak ada transaksi nyata dibuat.
+
 ## 2026-09-21 — Login password-only Saga Campaign QR
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source

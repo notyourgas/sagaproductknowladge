@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — SagaOPS assisted cash production code
+
+- `CONFIRMED`: SagaOPS exact source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`; schema tetap 34 migrasi.
+- QRIS tetap utama. Cash adalah assisted flow sekunder: Kiosk menghitung estimasi kembalian, kasir mengonfirmasi tender aktual, dan order tetap pending sampai uang fisik diterima. Hanya setelah itu KDS, cash ledger, inventory/HPP, dan reward boleh berlanjut.
+- Source, regression, immutable artifact, encrypted restore, recovery rehearsal, activation, monitor, Owner RBAC, restart persistence, dan payment containment lulus tanpa transaksi.
+- Jangan mengklaim cash operasional aktif: production tetap `paymentMode=OFF`, `gateway=PAYMENT_OFF`, feature activation belum dibuka, perangkat nyata/offsite restore masih residual, dan `BUSINESS_READY=false`.
+
 ## Update 2026-09-21 — Campaign Control memakai password-only Owner login
 
 - `CONFIRMED`: exact production source

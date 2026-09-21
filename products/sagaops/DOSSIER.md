@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-21 — Assisted cash Kiosk dengan konfirmasi uang fisik oleh kasir
+
+Slice ini menjaga QRIS sebagai CTA utama dan menempatkan cash sebagai jalur sekunder. Pelanggan memilih nominal cepat atau memasukkan uang yang akan diserahkan, lalu Kiosk menampilkan estimasi kembalian. Checkout cash membuat order dan payment berstatus pending; kasir melihat antrean bantuan, memasukkan nominal aktual yang diterima, meninjau kembalian, dan melakukan konfirmasi final. Hanya transisi server-side tersebut yang menandai payment `PAID` serta membuka aliran KDS, inventory/HPP, reward, dan cash ledger. Penutupan shift ditolak bila masih ada bantuan cash yang belum selesai.
+
+Kontrak mempertahankan server-owned price, idempotency, role/outlet boundary, restart recovery, dan audit. Nilai tender dari browser tidak dapat mengklaim pembayaran selesai. Kegagalan atau reload mempertahankan status pending yang dapat dipulihkan; konfirmasi berulang tidak menggandakan fakta uang maupun fulfillment.
+
+Exact source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`, artifact SHA-256 `044a0525103a3c2372ffe62446681d2fa23d66899670ab6f8842a1a725d6bb3c`, dan schema tetap 34 migrasi. Full regression 1.530 test menghasilkan 1.457 pass, 0 fail, 72 controlled skip, dan 1 TODO lama. Encrypted backup/disposable restore, candidate-current-candidate rehearsal, activation atomik, Owner-authenticated smoke sebelum/sesudah restart, payment containment, monitor, serta public 200/401 smoke lulus tanpa transaksi.
+
+Code telah `PRODUCTION_DEPLOYED` dan `PRODUCTION_ACTIVATED`, tetapi assisted cash tetap default-off bersama `paymentMode=OFF` dan `gateway=PAYMENT_OFF`. Aktivasi operasional membutuhkan payment policy yang disetujui, SOP cash handover, UAT kasir/Kiosk pada perangkat nyata, serta gate bisnis terpisah. Independent offsite restore tetap `UNVERIFIED`; `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Recovery ingress saat pilot kedaluwarsa siap staging
 
 Saat masa pilot sebelumnya berakhir, monitor production berhenti secara fail-closed dan database tetap aktif, tetapi ingress masih menunjuk ke upstream aplikasi yang sudah mati. Dampaknya adalah halaman Nginx generik `502`, bukan state maintenance yang dapat dipahami operator. Pilot kemudian diperpanjang dan runtime `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` kembali aktif melalui recovery yang diotorisasi terpisah.

@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-21 — Assisted cash Kiosk diaktifkan sebagai kode production
+
+- `CONFIRMED`: exact source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif; rollback `3f8c6b51f22407be00a7adffe863574a1734d885`; schema tetap 34 migrasi.
+- Added: cash sebagai pilihan sekunder Kiosk, nominal cepat/manual, estimasi kembalian, antrean bantuan kasir, tender aktual, konfirmasi final, dan shift-close guard untuk bantuan cash pending.
+- Preserved: QRIS tetap utama; order cash tidak menjadi paid dan tidak menyentuh KDS, inventory/HPP, reward, atau cash ledger sebelum konfirmasi uang fisik oleh kasir.
+- Evidence: focused 64/64; full 1.530 dengan 1.457 pass, 0 fail, 72 controlled skip, 1 TODO; static/type, audit dependency, Axe/viewport, immutable artifact, backup/restore, recovery rehearsal, activation, monitor, Owner-authenticated restart smoke, dan public smoke lulus tanpa transaksi.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / CASH_FEATURE_ACTIVATION=false / BUSINESS_READY=false`; payment/gateway tetap `OFF`, offsite restore independen dan UAT perangkat nyata masih pending.
+
 ## 2026-09-21 — Candidate maintenance 503 siap staging
 
 - `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: source `ac4b59f616408348d5c10d1143269d341eed16f8` dipush dan dipaketkan sebagai artifact Linux immutable `e5b25dc3cada501bebd20b810f8dd7efc8814066e3b589dbdcf9e6e6fb92638a`; production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

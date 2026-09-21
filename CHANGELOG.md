@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-21 — Sinkronisasi assisted cash SagaOPS
+
+- `CONFIRMED`: exact SagaOPS source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif di production dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.
+- Knowledge diperbarui untuk assisted cash QRIS-first, payment truth oleh kasir, tender/kembalian, downstream containment, shift-close guard, validation dan guarded release evidence.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah pada kode aplikasi, bukan aktivasi payment. Tidak ada credential, cookie, PII, raw receipt, tenant/device identifier, atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / CASH_FEATURE_ACTIVATION=false / BUSINESS_READY=false`; payment/gateway tetap `OFF`, offsite restore independen dan UAT perangkat nyata masih pending.
+
 ## 2026-09-21 — Login password-only Saga Campaign QR
 
 - `CONFIRMED`: exact source Campaign QR

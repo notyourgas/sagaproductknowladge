@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-21 — Assisted cash Kiosk siap kode, aktivasi bisnis tetap tertutup
+
+- `CONFIRMED`: exact source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif di production dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`; schema tetap 34 migrasi.
+- QRIS tetap metode utama. Slice assisted cash menambahkan pilihan sekunder kecil, nominal cepat/manual, estimasi kembalian, antrean bantuan kasir, konfirmasi uang fisik dan kembalian aktual, serta blok penutupan shift selama bantuan cash masih pending.
+- Order cash tidak dianggap `PAID`, tidak masuk KDS, stok, HPP, reward, atau cash ledger sebelum kasir mengonfirmasi penerimaan uang fisik. Replay konfirmasi bersifat idempoten dan tetap bertahan setelah restart.
+- Evidence: focused 64/64; full 1.530 test berisi 1.457 pass, 0 fail, 72 controlled skip, dan 1 TODO lama; static/type, dependency audit nol, Axe/viewport, target admission, artifact immutable, encrypted backup/disposable restore, recovery rehearsal, activation, monitor, public smoke, Owner RBAC, dan restart-persistence smoke lulus tanpa transaksi.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / CASH_FEATURE_ACTIVATION=false / BUSINESS_READY=false`. Production tetap `paymentMode=OFF` dan `gateway=PAYMENT_OFF`; printer/NFC, perangkat nyata, offsite restore independen, serta aktivasi operasional cash/payment tetap gate terpisah.
+
 ## Staging-ready 2026-09-21 — Pilot expiry kembali ke maintenance 503
 
 - `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: source `ac4b59f616408348d5c10d1143269d341eed16f8` sudah dipush dan dipaketkan sebagai artifact Linux immutable ber-SHA256 `e5b25dc3cada501bebd20b810f8dd7efc8814066e3b589dbdcf9e6e6fb92638a`; production tetap memakai `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.
