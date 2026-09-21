@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — Kandidat assisted cash Owner menunggu runner Linux
+
+- `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: cumulative source `1b0dd66ec7f373c3d19a2131d57180a5a5ce30eb` menambahkan pipeline immutable candidate exact-SHA, checksum, receipt, pinned actions, dan minimal repository permission.
+- Full regression final 1.532 test: 1.459 pass, 0 fail, 72 controlled skip, 1 TODO; static/type 530 dan focused packaging 24 pass/1 controlled skip.
+- Hosted job berhenti sebelum runner dimulai karena billing/spending limit GitHub. Jangan menyebut artifact tersedia, staging siap, atau release terdeploy. Production tetap `94d67c2aef26acabc4a4a46842985135b88c7819`, payment/gateway `OFF`, dan `BUSINESS_READY=false`.
+
 ## Update 2026-09-21 — Onboarding Saga Member handoff v1 aktif
 
 - `CONFIRMED`: release `20260921T080154Z-f0ab22a-r0u` aktif di [Member](https://app.sagamember.site/member); backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `7d00530d08fadaa5ad61fe81c40978393caf02fc`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

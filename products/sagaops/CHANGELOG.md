@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-21 — Pipeline immutable candidate untuk assisted cash Owner
+
+- Added pada exact cumulative source `1b0dd66ec7f373c3d19a2131d57180a5a5ce30eb`: pipeline Linux read-only terhadap repository yang memaketkan exact pushed SHA memakai runner production kanonik, memverifikasi checksum/receipt, dan mengunggah artifact kandidat tanpa secret atau akses VPS.
+- Added: test kontrak memastikan Ubuntu runner, pinned actions, minimal permission, exact source, digest verification, dan tidak adanya deploy/stage/SSH/provider path.
+- Validation final: focused 24 pass/1 controlled skip, static/type 530, full 1.532 dengan 1.459 pass, 0 fail, 72 skip, 1 TODO.
+- Hosted job gagal sebelum mulai karena billing/spending limit GitHub. Artifact tidak terbentuk; `STAGING_READY=false`, production dan payment tetap tidak berubah.
+
 ## 2026-09-21 — Dashboard Owner melihat bantuan tunai Kiosk yang belum selesai
 
 - `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: exact source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af`; production tidak berubah dari `94d67c2aef26acabc4a4a46842985135b88c7819`.

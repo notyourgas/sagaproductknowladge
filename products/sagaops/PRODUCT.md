@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-21 — Packaging kandidat Linux dibuat fail-closed
+
+- `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: cumulative source `1b0dd66ec7f373c3d19a2131d57180a5a5ce30eb` menambahkan pipeline Linux permission-minimal untuk membangun artifact SagaPOS dari exact pushed SHA, memeriksa receipt serta checksum, dan menyimpan kandidat selama tujuh hari tanpa credential atau jalur deployment production.
+- Pipeline memakai actions yang dipin ke commit, `contents: read`, Node 24, checkout history lengkap, exact-source/origin containment, packager kanonik, serta upload artifact yang fail-closed bila file, digest, atau receipt tidak cocok.
+- Evidence lokal final: focused packaging 24 pass/1 controlled skip; static/type 530 modul; full 1.532 test menghasilkan 1.459 pass, 0 fail, 72 controlled skip, dan 1 TODO. Browser cash-control tetap mencakup 390x844, 1024x768, dan 1440x900.
+- Eksekusi hosted Linux belum berjalan karena account billing/spending-limit GitHub menolak job sebelum runner memperoleh langkah apa pun. Tidak ada artifact yang diterbitkan; status tetap `IMPLEMENTED_NOT_DEPLOYED / STAGING_READY=false / PRODUCTION_UNCHANGED / BUSINESS_READY=false`.
+- Production tetap `94d67c2aef26acabc4a4a46842985135b88c7819`, rollback `3f8c6b51f22407be00a7adffe863574a1734d885`, payment/gateway `OFF`. Dua advisory moderate Vitest tetap dicatat tanpa upgrade major otomatis.
+
 ## Source 2026-09-21 — Kontrol assisted cash terhubung ke Dashboard Owner
 
 - `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`: exact source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af` menambahkan kontrol assisted cash pada Dashboard Owner. Production tetap `94d67c2aef26acabc4a4a46842985135b88c7819` dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.

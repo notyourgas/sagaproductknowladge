@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-21 — SagaOPS immutable candidate pipeline siap source
+
+- `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: SagaOPS `1b0dd66ec7f373c3d19a2131d57180a5a5ce30eb` mempunyai pipeline Linux exact-SHA untuk memaketkan kontrol assisted cash Owner tanpa credential atau mutation production.
+- Local contract, static/type, dan full 1.532 test lulus dengan 0 failure. Hosted execution tidak dimulai karena billing/spending limit GitHub, sehingga tidak ada artifact dan status belum `STAGING_READY`.
+- Production tetap `94d67c2aef26acabc4a4a46842985135b88c7819`; rollback, database, payment/gateway, dan business activation tidak berubah.
+
 ## 2026-09-21 — Onboarding Saga Member handoff v1 aktif
 
 - `CONFIRMED`: release `20260921T080154Z-f0ab22a-r0u` mengaktifkan flow mobile-first dari welcome sampai kartu, benefit, dan completion pada [Saga Member](https://app.sagamember.site/member).
