@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-21 — SagaOPS Owner cash-assistance control siap source
+
+- `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: SagaOPS head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af` menghubungkan assisted cash Kiosk ke action queue, detail pending, dan closing blocker Dashboard Owner.
+- Cashier tetap menjadi payment truth. Pending cash tidak dihitung sebagai sales atau diteruskan ke KDS, inventory/HPP, dan reward sebelum penerimaan uang fisik dikonfirmasi.
+- Browser 390x844, 1024x768, dan 1440x900, Axe, overflow, reduced motion, static/type, focused 4/4, dan full regression 1.531 dengan 0 fail lulus. Production tetap `94d67c2aef26acabc4a4a46842985135b88c7819`; payment/gateway tetap `OFF` dan `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Login Google Saga Member aktif untuk Owner internal
 
 - `CONFIRMED`: release `20260921T071505Z-b8d24e3-r0u` mengaktifkan Google OIDC pada `app.sagamember.site` untuk cohort Owner internal yang sudah terdaftar; public registration dan auto-provisioning tetap OFF.

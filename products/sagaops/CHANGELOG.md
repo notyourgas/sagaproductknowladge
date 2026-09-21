@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-21 — Dashboard Owner melihat bantuan tunai Kiosk yang belum selesai
+
+- `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: exact source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af`; production tidak berubah dari `94d67c2aef26acabc4a4a46842985135b88c7819`.
+- Added: action queue, metrik pending/nominal/umur, detail tender dan estimasi kembalian, CTA Kasir, serta closing blocker untuk assisted cash.
+- Preserved: cashier tetap payment truth; pending cash bukan penjualan cash dan tidak menyentuh downstream paid sebelum uang fisik dikonfirmasi.
+- Evidence: focused 4/4 pada 390x844, 1024x768, dan 1440x900; Axe critical/serious nol, overflow nol, reduced motion; static/type 529; full 1.531 dengan 1.458 pass, 0 fail, 72 skip, dan 1 TODO.
+- Delivery `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`; payment/gateway tetap `OFF`. Dua advisory moderate toolchain Vitest dicatat sebagai risiko residual tanpa upgrade major otomatis.
+
 ## 2026-09-21 — Assisted cash Kiosk diaktifkan sebagai kode production
 
 - `CONFIRMED`: exact source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif; rollback `3f8c6b51f22407be00a7adffe863574a1734d885`; schema tetap 34 migrasi.

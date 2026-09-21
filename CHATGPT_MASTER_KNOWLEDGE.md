@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — SagaOPS pending assisted cash terlihat oleh Owner
+
+- `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: exact source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af`; production masih memakai `94d67c2aef26acabc4a4a46842985135b88c7819`.
+- Dashboard Owner kini mempunyai action queue dan cash drawer control untuk assisted cash pending, termasuk nilai, umur tertua, tender pelanggan, estimasi kembalian, dan CTA ke Kasir. Closing tidak boleh siap selama tiket pending atau drawer belum dihitung.
+- Jangan menganggap pending cash sebagai paid/cash sales atau meneruskannya ke KDS, stok/HPP, dan reward. Kasir tetap mengonfirmasi uang fisik; slice ini belum staging/deploy/UAT dan tidak mengaktifkan payment atau transaksi production.
+- Validation source: focused 4/4, browser 390/1024/1440, Axe critical/serious nol, overflow nol, static/type 529, full 1.531 dengan 1.458 pass dan 0 fail. Dua advisory moderate Vitest adalah risiko toolchain residual.
+
 ## Update 2026-09-21 — Google OIDC Saga Member aktif
 
 - `CONFIRMED`: release `20260921T071505Z-b8d24e3-r0u` aktif pada `app.sagamember.site`; backend `b8d24e322bd47425822e6dff0b0140c58652287d`, Member `0de0b9c3204df3da43fd9605d5ec3a445935379e`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

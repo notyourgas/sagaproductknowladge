@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — SagaOPS Owner cash-assistance control
+
+- Status `accepted`; klasifikasi `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`; exact source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af`. Production tetap `94d67c2aef26acabc4a4a46842985135b88c7819` dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.
+- Synced: pending assisted-cash action queue, metrik dan detail tender/kembalian, CTA Kasir, closing blocker, cashier payment truth, serta downstream containment.
+- Evidence: focused 4/4; browser 390x844, 1024x768, 1440x900; reduced motion; Axe critical/serious nol; overflow nol; static/type 529; full 1.531 berisi 1.458 pass, 0 fail, 72 controlled skip, dan 1 TODO. Dependency scan: dua moderate Vitest, nol high/critical.
+- Delivery `IMPLEMENTED_NOT_DEPLOYED / STAGING_READY=false / PRODUCTION_UNCHANGED / AUTHENTICATED_UAT_PENDING / BUSINESS_READY=false`. Payment/gateway tetap `OFF`; tidak ada transaksi atau mutation provider/production.
+- Next: review kandidat exact source, jalankan release gate immutable artifact/backup-restore/recovery, lalu authenticated Owner/Cashier UAT sebelum activation terpisah.
+
 ## 2026-09-21 — Google OIDC Saga Member
 
 - Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T071505Z-b8d24e3-r0u` aktif dengan backend `b8d24e322bd47425822e6dff0b0140c58652287d`, frontend `0de0b9c3204df3da43fd9605d5ec3a445935379e`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

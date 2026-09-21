@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-21 — Kontrol assisted cash terhubung ke Dashboard Owner
+
+- `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`: exact source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af` menambahkan kontrol assisted cash pada Dashboard Owner. Production tetap `94d67c2aef26acabc4a4a46842985135b88c7819` dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.
+- Dashboard menampilkan jumlah/nilai bantuan tunai pending, umur tiket tertua, order, tagihan, nominal yang dinyatakan, estimasi kembalian, dan jalur tindakan ke Kasir. Checklist closing tetap tertutup selama bantuan cash belum dikonfirmasi.
+- Pending cash tidak dihitung sebagai cash sales serta tidak masuk KDS, inventory/HPP, reward, atau laporan paid. Setelah kasir mengonfirmasi uang fisik, antrean pending hilang dan expected cash diperbarui oleh server.
+- Evidence: focused 4/4 termasuk browser 390x844, 1024x768, dan 1440x900 dengan reduced motion, Axe A/AA critical/serious nol, serta overflow nol; static/type 529 modul; full 1.531 test berisi 1.458 pass, 0 fail, 72 controlled skip, dan 1 TODO.
+- Dependency scan menemukan dua advisory moderate pada toolchain Vitest dan nol high/critical; perbaikan tersedia hanya melalui upgrade major dan belum dipaksakan. Delivery belum `STAGING_READY`, belum `PRODUCTION_DEPLOYED`, belum authenticated UAT, dan tidak mengubah `paymentMode=OFF`, gateway, transaksi, atau data production.
+
 ## Production 2026-09-21 — Assisted cash Kiosk siap kode, aktivasi bisnis tetap tertutup
 
 - `CONFIRMED`: exact source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif di production dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`; schema tetap 34 migrasi.
