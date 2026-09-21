@@ -1,5 +1,13 @@
 # Saga Platform Dossier
 
+## 2026-09-21 — Density dan minimal motion onboarding Saga Member
+
+- `CONFIRMED`: release `20260921T134857Z-f0ab22a-r0u` mengganti frontend menjadi exact source `657a482f511edb9d71d012342102fffc0ec4eb31`; backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c` dan contracts `2930b1b3db2774482e17341d83677029e86cbf95` tidak berubah.
+- Welcome/email mempertahankan brand, sedangkan OTP/profil/minat/notifikasi/aktivasi memakai chrome ringkas; kartu dan benefit mempunyai page header. CTA tidak lagi didorong ke bawah secara artifisial, daftar minat memakai Feather Icons, dan kartu Member mengikuti rasio CR80 dengan Points/XP serta petunjuk pemakaian.
+- Motion menggunakan transform/opacity 120–180 ms dan menghormati reduced motion. Production service worker tetap network-only dan menghapus cache Member lama; marker cache demo bukan kontrak production.
+- Validasi: 561/561 regression, 12 state pada delapan viewport 320–1440 termasuk short-height, overflow nol, Axe nol pelanggaran, immutable artifact `c05bf31b09afe14cbafa6bf06f213ea8860c745c38ad37498370d46e0de370cd`, dependency audit nol vulnerability, dan nol high-confidence secret finding.
+- Encrypted backup/disposable restore, schema compatibility, actual rollback, re-prepare, final switch, active backup, monitor, public health, serta visual production PASS. Bitwarden dilewati satu kali atas instruksi eksplisit Andreas; tidak ada perubahan credential/auth/provider dan authenticated Owner UAT tidak dijalankan ulang. `BUSINESS_READY=false`.
+
 ## 2026-09-21 — UI/UX fidelity handoff Saga Member
 
 - `CONFIRMED`: release `20260921T092500Z-f0ab22a-r0u` mengganti frontend onboarding dengan exact source `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`; backend tetap `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c` dan contracts tetap `2930b1b3db2774482e17341d83677029e86cbf95`.

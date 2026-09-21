@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — Saga Member onboarding density aktif
+
+- `CONFIRMED`: release `20260921T134857Z-f0ab22a-r0u` aktif pada [Saga Member](https://app.sagamember.site/member); backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `657a482f511edb9d71d012342102fffc0ec4eb31`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Onboarding kini lebih padat dan mobile-first: chrome spesifik layar, whitespace terkendali, Feather Icons, kartu CR80, dan motion 120–180 ms dengan reduced-motion. Regression 561/561 serta 12 state/delapan viewport production lulus accessibility dan no-overflow.
+- Database/auth/provider tidak berubah. Bitwarden dilewati satu kali atas instruksi eksplisit Andreas, sehingga authenticated Owner UAT tidak dijalankan ulang. Public registration tetap OFF dan `BUSINESS_READY=false`.
+
 ## Update 2026-09-21 — Saga Member UI/UX handoff fidelity aktif
 
 - `CONFIRMED`: release `20260921T092500Z-f0ab22a-r0u` aktif pada `app.sagamember.site/member`; backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

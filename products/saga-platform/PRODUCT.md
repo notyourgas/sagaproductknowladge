@@ -1,5 +1,12 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-21 — Saga Member onboarding density dan motion aktif
+
+- `CONFIRMED`, cut-off 2026-09-21 13:55 UTC: release `20260921T134857Z-f0ab22a-r0u` aktif di [Member](https://app.sagamember.site/member) dengan Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `657a482f511edb9d71d012342102fffc0ec4eb31`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Onboarding tetap mobile-first tetapi kini lebih padat: chrome disesuaikan per layar, ruang kosong berlebih dihapus, minat memakai baris ikon Feather, kartu Member mengikuti rasio CR80, dan motion dibatasi pada transform/opacity 120–180 ms dengan `prefers-reduced-motion`.
+- Frontend 561/561 dan visual production 12 state pada delapan viewport lulus dengan overflow horizontal nol serta Axe nol pelanggaran. Artifact immutable, dependency/security scan, backup/restore, actual rollback rehearsal, final activation, active backup, monitor, dan public health PASS; 14 migrasi tidak berubah dan tidak ada mutasi database.
+- Sesuai instruksi eksplisit Andreas, Bitwarden dilewati hanya untuk rilis UI ini; credential/provider/auth tidak diubah dan authenticated Owner UAT tidak dijalankan ulang. Public registration tetap OFF, provider tetap internal-allowlist-only, dan `BUSINESS_READY=false` sampai UAT akun/perangkat nyata, callback Google/OTP, serta acceptance bisnis selesai.
+
 ## 2026-09-21 — Saga Member UI/UX handoff fidelity aktif
 
 - `CONFIRMED`, cut-off 2026-09-21 09:33 UTC: release `20260921T092500Z-f0ab22a-r0u` aktif di [Member](https://app.sagamember.site/member) dengan Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

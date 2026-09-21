@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-21 — Saga Member onboarding density dan motion production
+
+- Release `20260921T134857Z-f0ab22a-r0u` mengaktifkan frontend Member `657a482f511edb9d71d012342102fffc0ec4eb31`; backend dan shared contracts tidak berubah, serta tidak ada migration/database mutation.
+- Chrome per layar, whitespace, typography/spacing, daftar minat Feather, kartu CR80, Points/XP, page header, dan motion 120–180 ms diselaraskan untuk pengalaman mobile-first yang lebih padat.
+- Regression 561/561, visual production 12 state/delapan viewport, Axe/overflow, artifact/security/dependency, backup/restore, actual rollback, activation, monitor, dan public health PASS.
+- Bitwarden dilewati satu kali sesuai instruksi Owner hanya untuk promosi UI; auth/provider/credential tidak diubah dan authenticated UAT tidak dijalankan ulang. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_NOT_RE-RUN / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Saga Member UI/UX fidelity production
 
 - Release `20260921T092500Z-f0ab22a-r0u` mengaktifkan onboarding mobile-first final pada source Member `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`; backend dan shared contracts tidak berubah.

@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-21 — Saga Member lebih padat dan tetap mobile-first
+
+- `CONFIRMED`: release `20260921T134857Z-f0ab22a-r0u` mengaktifkan frontend `657a482f511edb9d71d012342102fffc0ec4eb31` pada [Saga Member](https://app.sagamember.site/member).
+- Dua belas state onboarding memakai chrome per layar, Feather Icons, kartu CR80, serta motion minimal yang menghormati reduced motion. Production visual 320–1440, 561 regression, accessibility, overflow, backup/restore, rollback, activation, monitor, dan health lulus.
+- Backend, schema, credential, provider, dan auth tidak berubah. Bitwarden dilewati satu kali atas instruksi Andreas, sehingga authenticated Owner UAT tidak dijalankan ulang; status `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Saga Member UI/UX handoff final aktif
 
 - `CONFIRMED`: release `20260921T092500Z-f0ab22a-r0u` mengaktifkan 12 state onboarding mobile-first final pada [Saga Member](https://app.sagamember.site/member), frontend `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`.

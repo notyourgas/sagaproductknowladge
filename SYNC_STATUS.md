@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — Saga Member onboarding density dan motion
+
+- Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T134857Z-f0ab22a-r0u` aktif dengan backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, frontend `657a482f511edb9d71d012342102fffc0ec4eb31`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Synced: density mobile-first, chrome per layar, Feather Icons, kartu CR80, Points/XP, minimal motion/reduced motion, production worker network-only, recovery/activation evidence, dan boundary UAT.
+- Evidence: 561/561 regression; 12 state/delapan viewport production; Axe dan overflow nol; artifact/security/dependency PASS; 14 migrasi unchanged; backup/restore; actual rollback; final activation; active backup; monitor; public health.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_NOT_RE-RUN / BUSINESS_READY=false`.
+- Next: Andreas menguji email OTP, Google callback, dan flow UI pada HP nyata. Public registration/provider expansion/payment/hardware tetap gate terpisah.
+
 ## 2026-09-21 — Saga Member UI/UX handoff fidelity
 
 - Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T092500Z-f0ab22a-r0u` aktif dengan backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, frontend `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

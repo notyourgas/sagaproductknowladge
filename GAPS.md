@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-21 — Residual setelah density dan motion Saga Member
+
+- `CONFIRMED`: frontend `657a482f511edb9d71d012342102fffc0ec4eb31` aktif pada release `20260921T134857Z-f0ab22a-r0u`; visual production, recovery, monitor, dan health lulus.
+- `CONFIRMED`: atas instruksi eksplisit Andreas, Bitwarden dilewati hanya pada rilis UI ini. Tidak ada credential, provider, auth, schema, atau database yang diubah.
+- `NEEDS CONFIRMATION`: login email OTP dan Google callback perlu dicoba Andreas dari HP nyata; authenticated Owner UAT tidak dijalankan ulang pada rilis ini. Instalasi PWA, keyboard, motion, dan rasa kepadatan pada iPhone/Android juga perlu acceptance manusia.
+- Public registration, Push delivery, payment/gateway, NFC/printer/hardware, independent offsite restore, dan acceptance bisnis tetap terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Residual setelah Saga Member UI/UX fidelity release
 
 - `CONFIRMED`: UI/UX onboarding final aktif pada release `20260921T092500Z-f0ab22a-r0u`; visual otomatis, recovery, public health, dan authenticated Owner technical UAT lulus.
