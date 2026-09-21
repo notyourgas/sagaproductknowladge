@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — Saga Member UI/UX handoff fidelity aktif
+
+- `CONFIRMED`: release `20260921T092500Z-f0ab22a-r0u` aktif pada `app.sagamember.site/member`; backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Dua belas state onboarding, aset, typography, spacing, Feather Icons, input recovery, cache lineage, timeout API, dynamic loyalty projection, serta reveal member code sementara telah diselaraskan dengan handoff final. Customer Platform tetap authoritative; Member tetap projection client.
+- Frontend 561/561, visual delapan konfigurasi viewport, accessibility/overflow, immutable artifact, recovery rehearsal aktual, final activation, backup/monitor, dan authenticated Owner UAT PASS. Public registration tetap OFF; `BUSINESS_READY=false` sampai business/real-device/offsite acceptance selesai.
+
 ## Update 2026-09-21 — Kandidat assisted cash Owner menunggu runner Linux
 
 - `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: cumulative source `1b0dd66ec7f373c3d19a2131d57180a5a5ce30eb` menambahkan pipeline immutable candidate exact-SHA, checksum, receipt, pinned actions, dan minimal repository permission.

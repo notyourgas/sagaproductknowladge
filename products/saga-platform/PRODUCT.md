@@ -1,5 +1,13 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-21 — Saga Member UI/UX handoff fidelity aktif
+
+- `CONFIRMED`, cut-off 2026-09-21 09:33 UTC: release `20260921T092500Z-f0ab22a-r0u` aktif di [Member](https://app.sagamember.site/member) dengan Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Dua belas state onboarding kini mengikuti handoff visual final: welcome, email, OTP, error, profil, minat, notifikasi, aktivasi, kartu, benefit, dan completion. Copy, aset, spacing, typography, kontrol 52/56 px, safe area, reduced motion, serta ikon Feather dikunci dalam satu kontrak UI mobile-first.
+- Data tier, Points, XP, member code, dan masa reward tetap berasal dari Customer Platform; Member hanya menampilkan proyeksi. Member code ditampilkan sementara selama 60 detik, request API dibatasi 12 detik, dan event onboarding tidak mencatat PII.
+- Frontend 561/561, 12 state pada delapan konfigurasi viewport, Axe nol pelanggaran, overflow nol, immutable artifact, backup/disposable restore, rollback rehearsal aktual, final activation, active backup, monitor, serta authenticated Owner technical UAT lulus.
+- Public registration dan auto-provisioning tetap OFF. Payment/gateway, Push delivery, NFC, printer, hardware, real-device acceptance, independent offsite restore, dan business acceptance tetap terpisah. Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Saga Member onboarding handoff v1 aktif
 
 - `CONFIRMED`, cut-off 2026-09-21 08:07 UTC: release `20260921T080154Z-f0ab22a-r0u` aktif di [Member](https://app.sagamember.site/member) dengan Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `7d00530d08fadaa5ad61fe81c40978393caf02fc`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

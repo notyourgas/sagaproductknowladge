@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-21 — Residual setelah Saga Member UI/UX fidelity release
+
+- `CONFIRMED`: UI/UX onboarding final aktif pada release `20260921T092500Z-f0ab22a-r0u`; visual otomatis, recovery, public health, dan authenticated Owner technical UAT lulus.
+- `NEEDS CONFIRMATION`: Andreas perlu menguji flow Member pada iPhone/Android fisik, termasuk keyboard, OTP nyata, Google callback interaktif, instalasi PWA, dan rasa penggunaan keseluruhan. Automated browser UAT tidak menggantikan acceptance manusia.
+- `NEEDS CONFIRMATION`: public registration/auto-provisioning, Push delivery, payment/gateway, NFC/printer/hardware, monitoring jangka panjang, dan independent offsite restore tetap terbuka. Dampak: production pilot tetap aktif, tetapi `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Residual onboarding Saga Member v1
 
 - `CONFIRMED`: onboarding handoff v1 dan persistence resumable aktif pada release `20260921T080154Z-f0ab22a-r0u`; public responsive/Axe UAT serta authenticated Owner technical UAT lulus.

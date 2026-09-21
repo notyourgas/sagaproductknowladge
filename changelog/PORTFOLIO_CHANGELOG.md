@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-21 — Saga Member UI/UX handoff final aktif
+
+- `CONFIRMED`: release `20260921T092500Z-f0ab22a-r0u` mengaktifkan 12 state onboarding mobile-first final pada [Saga Member](https://app.sagamember.site/member), frontend `628bbd8b6051c53ce3af9a80af7a689e4ccb025c`.
+- Customer Platform tetap authority untuk loyalty/account; tidak ada migrasi atau mutasi database. Visual delapan konfigurasi viewport, regression 561/561, artifact/recovery, monitor, public health, dan authenticated Owner technical UAT lulus.
+- Public registration tetap OFF dan business/real-device/offsite acceptance tetap terbuka. Delivery `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-21 — SagaOPS immutable candidate pipeline siap source
 
 - `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: SagaOPS `1b0dd66ec7f373c3d19a2131d57180a5a5ce30eb` mempunyai pipeline Linux exact-SHA untuk memaketkan kontrol assisted cash Owner tanpa credential atau mutation production.
