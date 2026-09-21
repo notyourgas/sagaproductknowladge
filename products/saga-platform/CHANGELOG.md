@@ -1,5 +1,11 @@
 # Saga Platform Changelog
 
+## 2026-09-21 — Saga Member ↔ Customer Platform production R0
+
+- `CONFIRMED`: release `20260921T025500Z-453db12-r0u` aktif di [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner) dengan backend `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, frontend `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, serta shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Account/privacy/reward/quest/Saga Card/SagaBook aktif pada pilot internal authoritative PostgreSQL; 14 migrasi, exact artifact, backup/restore, rollback rehearsal, final activation, monitor/timer, dan authenticated Owner public UAT PASS.
+- Public registration, email OTP, Push, payment/gateway, SagaPOS provider nyata, NFC, printer, dan hardware tetap OFF. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-10 — Saga Member fresh guarded production release
 
 - `CONFIRMED`: release `20260910T034155Z-f7e0a50-r0u` aktif di domain Saga Member dengan backend `f7e0a50bf64164c034c39de24cb364fa898f43b0` dan frontend `e53fea930dec88411d8c8147c6a3530086f991d6`.

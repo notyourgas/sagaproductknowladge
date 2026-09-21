@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — Saga Member dan Customer Platform aktif terintegrasi
+
+- `CONFIRMED`: production release `20260921T025500Z-453db12-r0u` aktif di [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner). Exact source: Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Customer Platform adalah authority PostgreSQL; Saga Member projection client. Account/privacy/reward/quest/Saga Card/SagaBook aktif pada pilot internal. 14 migrasi, immutable artifact, backup/restore, rollback rehearsal/reactivation, monitor/timer, dan authenticated Owner technical UAT PASS.
+- Jangan mengklaim integrasi SagaPOS provider, payment, email OTP, Push, NFC, printer, hardware, public registration, atau business readiness: semuanya tetap OFF/pending. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PILOT_ACTIVE / BUSINESS_READY=false`.
+
 ## Update 2026-09-21 — SagaPOS pilot-expiry candidate siap staging
 
 - `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: source candidate `ac4b59f616408348d5c10d1143269d341eed16f8`; production tetap `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

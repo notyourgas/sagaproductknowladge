@@ -1,5 +1,13 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-21 — Saga Member dan Customer Platform terintegrasi pada production R0
+
+- `CONFIRMED`, cut-off 2026-09-21 03:04 UTC: [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner) aktif pada release `20260921T025500Z-453db12-r0u`; Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, dan kontrak bersama `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Customer Platform tetap authority. Member menjadi projection client melalui 28 operasi Member Session yang dibagi bersama. Account, privacy, reward, quest, Saga Card, dan SagaBook aktif pada pilot internal; public registration, email OTP, Push, gateway/payment, NFC, printer, dan hardware tetap OFF.
+- PostgreSQL memuat 14 migrasi terverifikasi. Exact artifact `0410fb2a0d173adcbf2ed598b5675bb5c65a8d50811f83dea008a57c2cb7fb2f`, encrypted backup/disposable restore, switch, actual rollback rehearsal, reactivation, monitor, timer, dan active backup PASS.
+- Authenticated Owner technical UAT melalui domain publik PASS untuk login Bitwarden in-memory, secure cookie, reload sesi, scope/CSRF containment, mobile/desktop, accessibility, dan logout. Consent sudah tercatat sebelumnya dan tidak dikirim ulang oleh automation.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PILOT_ACTIVE / BUSINESS_READY=false`. Integrasi provider SagaPOS nyata, payment, hardware, business UAT, dan independent offsite restore tetap gate terpisah.
+
 ## 2026-09-10 — Saga Member fresh guarded production release
 
 - `CONFIRMED`, cut-off 2026-09-10 03:45 UTC: [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/) aktif pada release `20260910T034155Z-f7e0a50-r0u`; Customer Platform `f7e0a50bf64164c034c39de24cb364fa898f43b0`, Member `e53fea930dec88411d8c8147c6a3530086f991d6`.

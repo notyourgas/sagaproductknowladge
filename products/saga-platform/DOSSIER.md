@@ -1,5 +1,14 @@
 # Saga Platform Dossier
 
+## 2026-09-21 — Integrasi Saga Member ↔ Customer Platform R0
+
+- `CONFIRMED`: release `20260921T025500Z-453db12-r0u` mengaktifkan exact source trio Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95` di domain `app.sagamember.site`.
+- Kontrak bersama memuat 47 operasi, termasuk 28 operasi Member Session. Runtime Customer Platform authoritative memakai PostgreSQL, limiter atomik, security telemetry restricted-retention, session/consent/RBAC, reward, quest, Saga Card, serta SagaBook projection. Member hanya client/projection; authority tidak dipindahkan ke UI.
+- Artifact immutable `0410fb2a0d173adcbf2ed598b5675bb5c65a8d50811f83dea008a57c2cb7fb2f` berisi 1.564 file dan lulus safe extraction, inventory binding, dependency audit nol vulnerability, serta secret review nol unresolved/high-confidence finding. Backend 42 isolated test files, Member 550 test, contracts 20 test, dan runner 61 test PASS.
+- Candidate-bound backup/restore, 14-migration exact-prefix contract dengan `added=0`/`changed=0`, atomic switch, actual rollback rehearsal, final reactivation, Customer/Member/public health, monitor/timer, database count, serta post-activation active backup PASS.
+- Authenticated Owner public UAT PASS: credential Bitwarden hanya dibaca in-memory, secure HttpOnly cookie, session reload, CSRF/scope containment, mobile/desktop, accessibility, dan logout. Consent berstatus `ACCEPTED_PRIOR`; automation tidak mengubah persetujuan.
+- Ring ini internal dan dibatasi sampai `2026-09-27T02:57:09.041Z`. Public registration, email OTP, Push, gateway/payment, machine commit provider, NFC, printer, dan hardware OFF. SagaPOS provider nyata belum diaktifkan; repository masih snapshot bridge, belum normalized scaled repository, dan offsite restore independen belum dibuktikan. `BUSINESS_READY=false`.
+
 ## 2026-09-10 — Saga Member recovery dan fresh production activation
 
 - `CONFIRMED`: failed release chain `20260910T022514Z-f7e0a50-r0u` berhenti pada recovery rehearsal, dipertahankan append-only, dan tidak di-resume atau diaktifkan ulang. Old runtime dipulihkan terminal beserta monitor, timer, encrypted backup, dan disposable restore sebelum chain baru dibuat.

@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-21 — Integrasi production Saga Member dan Customer Platform
+
+- `CONFIRMED`: release `20260921T025500Z-453db12-r0u` aktif di `app.sagamember.site` dengan Customer Platform authoritative, Saga Member projection client, dan shared Member Session contract.
+- Account, privacy, reward, quest, Saga Card, dan SagaBook aktif dalam pilot internal. Exact artifact, 14 migrasi, backup/restore, rollback rehearsal, reactivation, monitor/timer, dan authenticated Owner public UAT lulus.
+- Public registration, email OTP, Push, payment/gateway, integrasi provider SagaPOS nyata, NFC, printer, dan hardware tetap OFF. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Recovery maintenance SagaPOS siap staging
 
 - `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: candidate `ac4b59f616408348d5c10d1143269d341eed16f8` menutup celah yang sebelumnya menampilkan `502` setelah runtime pilot berhenti dan sudah dipaketkan sebagai artifact Linux immutable.

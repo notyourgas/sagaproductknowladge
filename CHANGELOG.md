@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-21 — Sinkronisasi integrasi production Saga Member dan Customer Platform
+
+- `CONFIRMED`: production release `20260921T025500Z-453db12-r0u`; Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Knowledge Saga Platform diperbarui untuk authority boundary, 28 operasi Member Session, fitur pilot aktif, 14 migrasi, release/recovery evidence, authenticated Owner UAT, provider OFF, dan residual business readiness.
+- File terdampak: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah: ya. Tidak ada credential, PII, tenant/device identifier, raw receipt, atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; SagaPOS provider nyata, payment, Push, NFC, printer, hardware, dan public registration tetap OFF.
+
 ## 2026-09-21 — Sinkronisasi staging recovery pilot-expiry SagaPOS
 
 - `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`: source candidate `ac4b59f616408348d5c10d1143269d341eed16f8`; production tetap pada `0b7ef92f4a76af352fd7134d86c655dff1b8e37b` dengan rollback `446e95318b9ec8e7e323fbe44c37388202507d8b`.

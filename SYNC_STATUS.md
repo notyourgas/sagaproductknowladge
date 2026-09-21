@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — Integrasi Saga Member dan Customer Platform production R0
+
+- Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T025500Z-453db12-r0u` aktif dengan Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Synced: authority/projection boundary, shared Member Session contract, account/privacy/reward/quest/Saga Card/SagaBook pilot, 14 migrasi, immutable artifact, backup/restore, rollback rehearsal/reactivation, monitor/timer, dan authenticated Owner public UAT.
+- Evidence: backend 42 isolated test files, Member 550 test, contracts 20 test, runner 61 test, artifact/security review, Customer/Member/public health, database migration count, active backup, serta Owner secure-cookie/session/CSRF/mobile-desktop/accessibility acceptance PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PILOT_ACTIVE / BUSINESS_READY=false`.
+- Next: Andreas menjalankan business UAT fitur Member. Integrasi provider SagaPOS nyata, public registration, email OTP, Push, payment/gateway, NFC, printer, hardware, normalized scaled repository, dan independent offsite restore tetap memerlukan gate serta otorisasi terpisah.
+
 ## 2026-09-21 — SagaPOS pilot-expiry maintenance staging
 
 - Status `accepted`; klasifikasi `CONFIRMED / STAGING_READY / PRODUCTION_UNCHANGED`; source `ac4b59f616408348d5c10d1143269d341eed16f8` sudah dipush dan dipaketkan sebagai artifact Linux immutable `e5b25dc3cada501bebd20b810f8dd7efc8814066e3b589dbdcf9e6e6fb92638a`.
