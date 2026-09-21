@@ -1,5 +1,19 @@
 # Portfolio Changelog
 
+## 2026-09-21 — Campaign Control memakai password-only Owner login
+
+- `CONFIRMED`: Saga Campaign QR exact source
+  `abbda8c4210678a9783e5b350df4385f682ac19b` aktif dengan rollback
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`.
+- Dashboard hanya meminta password dan memilih tepat satu Owner aktif secara
+  server-side. Password tidak dirotasi atau disimpan di source; lockout, audit,
+  session, origin guard, dan secure cookie tetap aktif.
+- Tidak ada perubahan SagaBook utama, schema, campaign, public writes, pricing,
+  atau data customer. Release/recovery/security/UI smoke lulus; authenticated
+  login langsung oleh Owner masih menunggu. Status `PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## 2026-09-21 — SagaPOS provider dan email OTP Saga Member aktif
 
 - `CONFIRMED`: release `20260921T050306Z-421e461-r0u` mengaktifkan integrasi machine-to-machine SagaPOS dan email OTP allowlist di `app.sagamember.site`.

@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-21 — Login password-only Saga Campaign QR
+
+- `CONFIRMED`: exact source Campaign QR
+  `abbda8c4210678a9783e5b350df4385f682ac19b` aktif pada production; rollback
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` tersedia.
+- Dashboard Owner kini hanya meminta password dan berhenti tertutup bila Owner
+  aktif bukan tepat satu. Hash password, identity internal, lockout, audit,
+  session, origin guard, serta secure cookie tidak dilemahkan.
+- File terdampak: `products/sagabook/PRODUCT.md`,
+  `products/sagabook/DOSSIER.md`, `products/sagabook/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `DECISIONS.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production Campaign QR berubah; SagaBook utama, schema, data, campaign,
+  public writes, dan password tidak berubah. Tidak ada credential, email akun,
+  PII, raw receipt, atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## 2026-09-21 — Sinkronisasi provider SagaPOS dan email OTP Saga Member
 
 - `CONFIRMED`: production release `20260921T050306Z-421e461-r0u`; Customer Platform `421e46143124a450bad8bee480cea6b622bdb20b`, Member `35e348c32a1fa230deffef984105bf15fbcdfdae`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, dan artifact `d9abaf09c14429a52502eb3df62726a018dd1756bc9c8c07b5216fde38822399`.

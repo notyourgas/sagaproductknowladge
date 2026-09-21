@@ -1,5 +1,24 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — Login password-only Saga Campaign QR
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `abbda8c4210678a9783e5b350df4385f682ac19b` aktif dengan rollback
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`.
+- Synced: perubahan email+password menjadi password-only, binding satu Owner,
+  fail-closed multi-Owner, password-hash preservation, lockout/audit/session,
+  origin/cookie boundary, recovery, dan migration checksum normalization.
+- Evidence: exact-main 49 pass/12 controlled skip; browser 89 pass/7 controlled
+  skip; MySQL auth 3/3; MySQL dashboard 6/6; audit dependency nol; fresh
+  backup/restore 25/25 tabel dan 6/6 migrasi; service/health/public-security
+  smoke serta visual production PASS. Kandidat awal tidak diaktifkan setelah
+  checksum gate gagal; kandidat baru memakai source dan evidence baru.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+- Next: Owner mencoba login langsung memakai password lama; scan QR cetak dan
+  SOP draw/redeem tetap residual business readiness terpisah.
+
 ## 2026-09-21 — Provider SagaPOS dan email OTP Saga Member
 
 - Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T050306Z-421e461-r0u` aktif dengan backend `421e46143124a450bad8bee480cea6b622bdb20b`, frontend `35e348c32a1fa230deffef984105bf15fbcdfdae`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

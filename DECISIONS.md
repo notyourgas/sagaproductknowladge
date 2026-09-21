@@ -1,5 +1,23 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-205 — Campaign Control memakai password-only untuk satu Owner
+
+- Tanggal: 2026-09-21. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: autentikasi dashboard Saga Campaign QR.
+- Keputusan: login dashboard cukup memakai password yang sama, tanpa kolom
+  email. Backend harus memilih tepat satu Owner aktif dan tidak boleh menaruh
+  password atau identity rahasia di source/browser.
+- Alasan: menyamakan pengalaman masuk sederhana seperti dashboard SagaPOS
+  sambil mempertahankan kontrol autentikasi production.
+- Alternatif: form email+password lama tidak dipakai. Pemilihan akun berdasarkan
+  kecocokan banyak password juga tidak dipakai karena ambigu dan lebih lemah.
+- Dampak: exact source `abbda8c4210678a9783e5b350df4385f682ac19b`
+  aktif; hash password lama, lockout, audit, session, origin guard, dan secure
+  cookie dipertahankan. Bila Owner aktif lebih dari satu, login fail-closed.
+- Terkait: [SagaBook](products/sagabook/PRODUCT.md),
+  [dossier](products/sagabook/DOSSIER.md), [gaps](GAPS.md), dan
+  [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-204 — Saga Campaign QR SagaList diaktifkan dengan monitoring redemption aktual
 
 - Tanggal: 2026-09-21. Status: `CONFIRMED`; pemberi keputusan Andreas.

@@ -9,6 +9,13 @@
 
 ## 2026-09-21 — Residual Saga Campaign QR setelah aktivasi
 
+- `CONFIRMED`: login dashboard production sekarang hanya memiliki satu field
+  password dan database mempunyai tepat satu Owner aktif. Hash password lama,
+  lockout, audit, session, origin guard, secure cookie, rollback, serta health
+  tetap terverifikasi.
+- `NEEDS CONFIRMATION`: Andreas belum mencoba satu login langsung setelah
+  release password-only. Bukti UI/API/DB production tidak menggantikan
+  authenticated Owner acceptance dengan password yang diketahui Owner.
 - `CONFIRMED`: schedule, cabang, print add-on, pricing, hold, kapasitas/buffer,
   closing rule, stock readiness, Owner role, facts contract, voucher service
   contract, public writes, recovery, observability, dan authenticated Owner UAT

@@ -7,13 +7,32 @@ dalam satu dokumen public-safe.
 
 ## Konteks dan status bukti
 
-- Companion Saga Campaign QR exact source
-  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` aktif di
+- Companion Campaign QR exact source
+  `abbda8c4210678a9783e5b350df4385f682ac19b` mengaktifkan login dashboard
+  password-only untuk satu Owner aktif. Form dan API tidak lagi memerlukan
+  email; email tetap menjadi identitas internal/audit dan password hash lama
+  tidak dirotasi. Lockout lima kegagalan, audit login, session token ter-hash,
+  cookie HttpOnly/SameSite, dan same-origin guard tetap berlaku. Runtime
+  membuktikan satu Owner aktif, satu field password, nol field email, invalid
+  input 422, bad origin 403, serta service/health/public writes siap. Exact-main
+  check 49 pass/12 controlled skip, browser 89 pass/7 controlled skip,
+  disposable MySQL auth 3/3, MySQL browser 6/6, dependency audit nol,
+  backup/restore 25/25 tabel dan 6/6 migrasi, serta public smoke lulus. Gate
+  checksum kandidat awal berhenti sebelum activation; normalisasi migration
+  diperbaiki pada source dan fresh release baru lulus. Rollback kompatibel
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`; tidak ada migration atau
+  perubahan data. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING / BUSINESS_READY=NEEDS_CONFIRMATION`.
+
+- Companion Saga Campaign QR exact source kumulatif
+  `abbda8c4210678a9783e5b350df4385f682ac19b` aktif di
   `https://sagastudio.site/campaignqr`; rollback kompatibel
-  `86276074c4ea75f412949734ef4480c6f73b4096`. Artifact exact-source,
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`. Artifact exact-source,
   service non-root, MySQL 25 tabel/6 migrasi tanpa migration baru,
   backup/disposable restore, atomic activation, health, Nginx/TLS,
-  public/security smoke, serta authenticated Owner UAT lulus. Public writes
+  public/security smoke, serta authenticated Owner UAT campaign sebelum
+  perubahan login lulus. Public writes
   dan integrasi voucher SagaBook aktif dengan service contract; facts endpoint
   production mengonfirmasi cabang, kapasitas/buffer, pricing, hold policy,
   closing rule, print add-on, dan kesiapan stok tanpa mempublikasikan identifier
@@ -26,12 +45,14 @@ dalam satu dokumen public-safe.
   job karena billing, sedangkan exact-main local gates, Vercel, browser matrix,
   dan MySQL integration lulus. Status `CONFIRMED / SOURCE_PUSHED /
   LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  AUTHENTICATED_OWNER_UAT_PASSED / BUSINESS_READY=NEEDS_CONFIRMATION`.
+  AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
 
 - `DEPRECATED`: companion Saga Campaign QR exact source
   `0443012b0048eccbe43926b1b30e27988beb3025` adalah holding release yang aktif
-  pada 20 September 2026 dan kini digantikan exact
-  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`. Artifact SHA-256
+  pada 20 September 2026 dan pertama digantikan activation exact
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`; fungsinya kini tercakup dalam
+  companion aktif exact `abbda8c4210678a9783e5b350df4385f682ac19b`. Artifact SHA-256
   `00b61ad673b5e09300964bb8f0ac39abd9a3e9a8ce1fdfd9bd40d2ad93453fdd`
   dibangun dari checkout exact source; service non-root, MySQL 25 tabel/6
   migrasi, encrypted backup/disposable restore, Nginx subpath, TLS renewal

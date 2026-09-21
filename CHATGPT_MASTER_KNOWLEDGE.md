@@ -1,5 +1,21 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — Campaign Control memakai password-only Owner login
+
+- `CONFIRMED`: exact production source
+  `abbda8c4210678a9783e5b350df4385f682ac19b`; rollback
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`.
+- `/campaignqr/admin/login` hanya menampilkan/mengirim password. Backend
+  memilih tepat satu Owner aktif dan fail-closed bila jumlahnya berbeda.
+  Password hash lama tetap dipakai; email tetap identitas internal dan tidak
+  dikirim form. Lockout, audit, session, same-origin, serta secure cookie tetap.
+- Tidak ada migration, rotasi password, atau perubahan SagaBook utama,
+  campaign, pricing, public writes, dan data customer. Recovery, health,
+  browser/MySQL acceptance, security boundary, serta visual production lulus.
+- Jangan klaim authenticated password-only UAT sampai Owner mencoba login
+  langsung. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING / BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## Update 2026-09-21 — SagaPOS provider dan email OTP Saga Member aktif
 
 - `CONFIRMED`: release `20260921T050306Z-421e461-r0u` aktif di `app.sagamember.site` dengan Customer Platform `421e46143124a450bad8bee480cea6b622bdb20b`, Member `35e348c32a1fa230deffef984105bf15fbcdfdae`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
@@ -10,19 +26,20 @@
 ## Update 2026-09-21 — Saga Campaign QR SagaList aktif
 
 - `CONFIRMED`: `https://sagastudio.site/campaignqr` aktif pada exact source
-  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`; rollback
-  `86276074c4ea75f412949734ef4480c6f73b4096` tersedia. Runtime utama SagaBook
+  kumulatif `abbda8c4210678a9783e5b350df4385f682ac19b`; rollback
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` tersedia. Runtime utama SagaBook
   dan root Saga Studio tidak berubah.
 - Flow publik mobile-first delapan layar, registration, ticket/reveal, voucher,
   thank-you, admin Owner, redeem, public writes, facts SagaBook, serta service
   contract voucher aktif. Campaign berakhir 10 Oktober 2026, draw terjadwal 11
   Oktober pukul 00.05 WIB, dan voucher berlaku sampai 31 Desember 2026.
 - Release/recovery/health/security smoke, browser/MySQL acceptance, facts
-  production, dan authenticated Owner UAT lulus. Hosted GitHub Quality tidak
-  berjalan karena billing; exact-main local gates dan Vercel lulus.
+  production, dan authenticated Owner UAT campaign sebelum perubahan login
+  lulus. UAT langsung untuk login password-only masih pending. Hosted GitHub
+  Quality tidak berjalan karena billing; exact-main local gates dan Vercel lulus.
 - Jangan mengklaim `BUSINESS_READY` sebelum scan QR cetak serta kesiapan SOP
   draw/redeem nyata dibuktikan. Status `PRODUCTION_DEPLOYED /
-  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING /
   BUSINESS_READY=NEEDS_CONFIRMATION`.
 
 ## Update 2026-09-21 — Saga Member dan Customer Platform aktif terintegrasi
@@ -68,8 +85,10 @@ menyatakan campaign belum dibuka. SagaBook tetap otoritas booking, harga,
 kapasitas, pembayaran, refund, dan stok. Jangan menyebut campaign aktif atau
 business-ready sebelum Owner UAT, kontrak fakta SagaBook, serta activation gate
 lulus. Status historis `PRODUCTION_DEPLOYED / DOMAIN_ACTIVE /
-PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; digantikan update aktivasi
-21 September 2026 pada exact `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`.
+PRODUCTION_ACTIVATED=false / BUSINESS_READY=false`; pertama digantikan update
+aktivasi 21 September 2026 pada exact
+`58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` dan kini tercakup dalam exact
+kumulatif `abbda8c4210678a9783e5b350df4385f682ac19b`.
 
 ## Update 2026-09-20 - COYABAG J&T Express Wave 0-5 candidate
 

@@ -1,5 +1,20 @@
 # SagaBook Changelog
 
+## 2026-09-21 - Login Campaign Control menjadi password-only
+
+- Form dan API login production sekarang hanya meminta password lalu mengikat
+  autentikasi ke tepat satu Owner aktif. Email tetap internal; password hash
+  lama, lockout, audit, session, origin guard, dan secure cookie dipertahankan.
+- Exact source `abbda8c4210678a9783e5b350df4385f682ac19b` aktif dengan rollback
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`; tidak ada migration, rotasi
+  password, perubahan campaign, atau perubahan runtime utama SagaBook.
+- Exact-main, browser, disposable MySQL auth/dashboard, dependency audit,
+  backup/restore, health, public/security smoke, serta visual login production
+  lulus. Kandidat awal berhenti aman sebelum activation pada checksum gate;
+  normalisasi migration diperbaiki dan kandidat baru memakai fresh evidence.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING / BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## 2026-09-21 - Companion Saga Campaign QR diaktifkan
 
 - Holding page diganti flow SagaList mobile-first delapan layar dengan

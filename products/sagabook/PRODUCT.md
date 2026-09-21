@@ -1,7 +1,7 @@
 # SagaBook Product Knowledge
 
 Updated: 21 September 2026 WIB
-Evidence status: SagaBook production tetap pada exact `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`. Companion Saga Campaign QR aktif terpisah pada exact `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`, dengan public writes, kontrak fakta SagaBook, dan integrasi voucher production aktif. Status companion `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED / BUSINESS_READY=NEEDS_CONFIRMATION`.
+Evidence status: SagaBook production tetap pada exact `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`. Companion Saga Campaign QR aktif terpisah pada exact `abbda8c4210678a9783e5b350df4385f682ac19b`, dengan public writes, kontrak fakta SagaBook, integrasi voucher, dan login dashboard Owner berbasis password saja. Status companion `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING / BUSINESS_READY=NEEDS_CONFIRMATION`.
 
 ## Tujuan dokumen
 
@@ -16,24 +16,37 @@ berubah tetap harus diverifikasi sebelum klaim eksternal.
 
 ## Fitur terbaru
 
+- Login production Campaign Control sekarang hanya menampilkan dan mengirim
+  password. Backend mengikat login ke tepat satu akun Owner aktif, tetap memakai
+  hash password yang sudah ada, serta mempertahankan lockout, audit, session,
+  origin guard, dan secure cookie. Email tetap identitas internal dan tidak
+  dikirim oleh form. Bila Owner aktif bukan tepat satu, login berhenti tertutup.
+  Exact source `abbda8c4210678a9783e5b350df4385f682ac19b` aktif dengan rollback
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`, tanpa migration atau rotasi
+  password. Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING / BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 - Companion Saga Campaign QR pada `https://sagastudio.site/campaignqr` sudah
   berubah dari holding page menjadi campaign SagaList aktif. Flow mobile-first
   delapan layar, sumber Instagram resmi, registrasi, ticket/reveal, voucher,
   panel Owner, redeem, integrasi fakta SagaBook, dan monitoring tersedia.
   Jadwal aktif 21 September sampai 10 Oktober 2026 WIB; draw terjadwal 11
   Oktober pukul 00.05 WIB dan voucher berlaku sampai 31 Desember 2026.
-  Exact source `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`, rollback
-  `86276074c4ea75f412949734ef4480c6f73b4096`, tanpa migration baru. Health,
+  Exact source kumulatif kini `abbda8c4210678a9783e5b350df4385f682ac19b`,
+  rollback `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`, tanpa migration baru. Health,
   backup/disposable restore, public/security smoke, integrasi fakta, dan
-  authenticated Owner UAT lulus. Status `CONFIRMED / PRODUCTION_DEPLOYED /
-  PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASSED /
+  authenticated Owner UAT campaign sebelum perubahan login lulus. UAT langsung
+  untuk login password-only masih pending. Status `CONFIRMED /
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING /
   BUSINESS_READY=NEEDS_CONFIRMATION`; uji scan QR cetak dan kesiapan operasional
   draw/redeem tetap harus dibuktikan.
 
 - `DEPRECATED`: holding page Campaign QR exact source
   `0443012b0048eccbe43926b1b30e27988beb3025` adalah status 20 September 2026
-  sebelum activation. Riwayat ini digantikan oleh companion aktif exact
-  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` di atas.
+  sebelum activation. Riwayat ini pertama digantikan oleh activation exact
+  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3` dan kini tercakup dalam companion
+  aktif exact `abbda8c4210678a9783e5b350df4385f682ac19b` di atas.
 
 - S425 menyatukan lifecycle task pembayaran add-on untuk booking completed.
   Penambahan add-on pending membuat atau memperbarui satu task aktif; perubahan
