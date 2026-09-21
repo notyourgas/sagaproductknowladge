@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — Onboarding Saga Member handoff v1 aktif
+
+- `CONFIRMED`: release `20260921T080154Z-f0ab22a-r0u` aktif di [Member](https://app.sagamember.site/member); backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `7d00530d08fadaa5ad61fe81c40978393caf02fc`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Flow mobile-first welcome hingga completion, profil/consent, minat, primer notifikasi, kartu, dan benefit kini terhubung ke state Customer Platform yang resumable. UI production 320/390/1440, regression, recovery, monitor, database, dan Owner authentication PASS.
+- Public registration/auto-provisioning tetap OFF; provider bisnis, real-device/business acceptance, dan offsite restore tetap gate terpisah. Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## Update 2026-09-21 — SagaOPS pending assisted cash terlihat oleh Owner
 
 - `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: exact source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af`; production masih memakai `94d67c2aef26acabc4a4a46842985135b88c7819`.

@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-21 — Residual onboarding Saga Member v1
+
+- `CONFIRMED`: onboarding handoff v1 dan persistence resumable aktif pada release `20260921T080154Z-f0ab22a-r0u`; public responsive/Axe UAT serta authenticated Owner technical UAT lulus.
+- `NEEDS CONFIRMATION`: public registration dan auto-provisioning tetap OFF, sehingga pengujian akun benar-benar baru memerlukan provisioning internal yang terkontrol. Akun existing yang onboarding-nya sudah selesai dapat langsung masuk ke beranda dan tidak dipaksa mengulang flow.
+- `NEEDS CONFIRMATION`: UAT perangkat fisik, permission notifikasi nyata, interactive Google callback, monitoring jangka panjang, dan independent offsite restore belum ditutup. Dampak: `BUSINESS_READY=false` tanpa menonaktifkan production pilot.
+
 ## 2026-09-21 — Residual Google OIDC Saga Member
 
 - `CONFIRMED`: blocker credential/redirect Google OAuth sebelumnya ditutup. Provider OIDC aktif hanya untuk cohort Owner internal pada release `20260921T071505Z-b8d24e3-r0u`; public OAuth-start, PKCE/state/nonce, secure cookie, recovery, dan monitor PASS.

@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-21 — Onboarding Saga Member v1 aktif di production
+
+- Release `20260921T080154Z-f0ab22a-r0u` mengaktifkan flow onboarding handoff v1 dan state server-side yang resumable untuk cohort internal yang telah diprovision.
+- Source: Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `7d00530d08fadaa5ad61fe81c40978393caf02fc`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Test, exact-source scan, immutable artifact, dependency audit, backup/restore, rollback rehearsal, activation, monitor, database health, public responsive/Axe UAT, dan authenticated Owner login PASS.
+- Public registration tetap OFF dan `BUSINESS_READY=false`; UAT akun baru yang diprovision, real-device, Push delivery, serta independent offsite restore tetap residual.
+
 ## 2026-09-21 — Google OIDC Owner internal production
 
 - `CONFIRMED`: release `20260921T071505Z-b8d24e3-r0u` aktif dengan backend `b8d24e322bd47425822e6dff0b0140c58652287d`, frontend `0de0b9c3204df3da43fd9605d5ec3a445935379e`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, dan artifact `4a12d00917b4974e51b03db3ad43d0e2e5abdcaeb84b706da5b37441e4da272e`.

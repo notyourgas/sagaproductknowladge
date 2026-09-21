@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — Onboarding Saga Member handoff v1
+
+- Status `accepted`; klasifikasi `CONFIRMED`; release `20260921T080154Z-f0ab22a-r0u` aktif dengan backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, frontend `7d00530d08fadaa5ad61fe81c40978393caf02fc`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Synced: 12 state visual handoff, onboarding server-side resumable, profile/consent, minat, keputusan notifikasi, kartu/benefit/completion, recovery, production UAT, dan boundary public registration.
+- Evidence: frontend 558/558, backend 43 isolated files, runner 56/56, integrated E2E, exact-source/secret/dependency scan nol, immutable artifact, backup/restore, actual rollback rehearsal, final activation, active backup, monitor, 14 migrasi, 1 snapshot, Owner login, serta public visual 320/390/1440 PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-21 — SagaOPS Owner cash-assistance control
 
 - Status `accepted`; klasifikasi `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`; exact source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af`. Production tetap `94d67c2aef26acabc4a4a46842985135b88c7819` dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.

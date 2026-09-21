@@ -1,5 +1,12 @@
 # Saga Platform Dossier
 
+## 2026-09-21 — Onboarding handoff v1 production
+
+- `CONFIRMED`: Customer Platform menyimpan onboarding secara optimistic-versioned: profil dan consent, minat atau skip, keputusan notifikasi, activation view, benefit view, dan completion. Resume mengembalikan langkah berikutnya tanpa memindahkan authority ke client.
+- Member memakai aset WebP teroptimasi, Plus Jakarta Sans, ikon Feather, safe-area, reduced-motion, focus state, dan layout mobile-first. OTP tetap satu input logis dengan enam slot presentasional; error dan retry tidak mengekspos keberadaan akun atau credential.
+- Exact release: backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, frontend `7d00530d08fadaa5ad61fe81c40978393caf02fc`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, artifact `5a1da7bb439e9be7bafb351050382b26faaf5e72d651f9481ac962574d76f4bb`.
+- Recovery sequence mengeksekusi candidate switch, actual rollback ke release sebelumnya, backup/restore ulang, final switch, active backup, dan monitor. Production public UI UAT lulus pada 320/390/1440 px; Owner credential diambil in-memory dari item Bitwarden ber-scope OWNER dan tidak dipublikasikan.
+
 ## Update 2026-09-21 — Google OIDC Owner internal
 
 - Production aktif pada release `20260921T071505Z-b8d24e3-r0u`; Customer Platform tetap authority account/session dan Saga Member tetap projection client.

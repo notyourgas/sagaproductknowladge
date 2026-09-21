@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-21 — Sinkronisasi onboarding Saga Member handoff v1
+
+- `CONFIRMED`: release `20260921T080154Z-f0ab22a-r0u`; Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `7d00530d08fadaa5ad61fe81c40978393caf02fc`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, artifact `5a1da7bb439e9be7bafb351050382b26faaf5e72d651f9481ac962574d76f4bb`.
+- Knowledge Saga Platform diperbarui untuk flow onboarding, persistence resumable, UI/UX handoff, production/recovery evidence, public-registration boundary, dan business readiness.
+- File terdampak: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah: ya. Tidak ada credential, PII, raw callback, cookie, receipt privat, tenant/device identifier, atau path evidence restricted yang dipublikasikan. Delivery `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Sinkronisasi kontrol assisted cash Dashboard Owner SagaOPS
 
 - `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED`: exact SagaOPS source head `8eee60bb56da7ed0f4e61609b06f345aaa25c2af`; production tidak berubah dari `94d67c2aef26acabc4a4a46842985135b88c7819`.

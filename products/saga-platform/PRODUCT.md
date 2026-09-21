@@ -1,5 +1,12 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-21 — Saga Member onboarding handoff v1 aktif
+
+- `CONFIRMED`, cut-off 2026-09-21 08:07 UTC: release `20260921T080154Z-f0ab22a-r0u` aktif di [Member](https://app.sagamember.site/member) dengan Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `7d00530d08fadaa5ad61fe81c40978393caf02fc`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Flow mobile-first mencakup welcome, email, OTP, error OTP, profil, minat, primer notifikasi, aktivasi, kartu digital, benefit, dan completion. Profil, pilihan minat, keputusan notifikasi, serta progres onboarding disimpan server-side dan dapat dilanjutkan setelah sesi terputus.
+- Visual production pada 320, 390, dan 1440 px lulus tanpa overflow, error browser, atau pelanggaran Axe critical/serious. Full frontend 558/558, backend 43 isolated files, E2E terintegrasi, immutable artifact, backup/disposable restore, actual rollback rehearsal, final activation, monitor, database health, dan authenticated Owner login lulus.
+- Public registration dan auto-provisioning tetap OFF. Flow ini tersedia untuk akun internal yang telah diprovision; payment/gateway, Push delivery, NFC, printer, hardware, independent offsite restore, dan business acceptance tetap terpisah. Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Login Google Saga Member aktif untuk Owner internal
 
 - `CONFIRMED`, cut-off 2026-09-21 07:17 UTC: release `20260921T071505Z-b8d24e3-r0u` aktif di [Member](https://app.sagamember.site/member) dengan Customer Platform `b8d24e322bd47425822e6dff0b0140c58652287d`, Member `0de0b9c3204df3da43fd9605d5ec3a445935379e`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
