@@ -1,5 +1,12 @@
 # Saga Platform Dossier
 
+## Update 2026-09-21 — Provider SagaPOS dan email OTP
+
+- Production aktif pada release `20260921T050306Z-421e461-r0u`; Customer Platform tetap authority dan Saga Member tetap projection client.
+- SagaPOS mengakses Member melalui machine credential terikat dengan empat capability eksplisit: member lookup, benefit quote, commerce write, dan reward write. Provider UAT lookup tidak membuat transaksi sintetis.
+- Email OTP aktif hanya untuk allowlist internal. Request production dan delivery provider lulus; public registration tetap OFF. Google OAuth belum aktif dan tidak boleh disamakan dengan penggunaan alamat Gmail untuk OTP.
+- Release memakai immutable artifact, encrypted backup/disposable restore, rollback rehearsal aktual, migrasi kompatibel, monitor, dan active backup. Payment, Push, NFC, printer, hardware, independent offsite recovery, dan business acceptance tetap residual; `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Integrasi Saga Member ↔ Customer Platform R0
 
 - `CONFIRMED`: release `20260921T025500Z-453db12-r0u` mengaktifkan exact source trio Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95` di domain `app.sagamember.site`.

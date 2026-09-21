@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-21 — SagaPOS provider dan email OTP production
+
+- `CONFIRMED`: release `20260921T050306Z-421e461-r0u` aktif dengan backend `421e46143124a450bad8bee480cea6b622bdb20b`, frontend `35e348c32a1fa230deffef984105bf15fbcdfdae`, shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`, dan immutable artifact `d9abaf09c14429a52502eb3df62726a018dd1756bc9c8c07b5216fde38822399`.
+- SagaPOS machine provider aktif dengan capability terbatas; health, credential binding, dan lookup Member UAT lulus. Email OTP allowlist production diterima dan provider melaporkan delivered.
+- Backup/restore, 14 migrasi tanpa perubahan schema, rollback rehearsal, final activation, monitor, dan active backup PASS. Public registration, payment/gateway, Push, NFC, printer, serta hardware tetap OFF.
+- Gmail dapat menerima OTP, tetapi Google OAuth tetap OFF. Verifikasi kode terbaru oleh Owner dan business UAT masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-21 — Saga Member ↔ Customer Platform production R0
 
 - `CONFIRMED`: release `20260921T025500Z-453db12-r0u` aktif di [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner) dengan backend `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, frontend `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, serta shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

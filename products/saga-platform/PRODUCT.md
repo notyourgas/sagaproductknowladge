@@ -1,5 +1,13 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-21 — Provider SagaPOS dan email OTP Saga Member aktif
+
+- `CONFIRMED`, cut-off 2026-09-21 05:10 UTC: release `20260921T050306Z-421e461-r0u` aktif di [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner), dengan Customer Platform `421e46143124a450bad8bee480cea6b622bdb20b`, Member `35e348c32a1fa230deffef984105bf15fbcdfdae`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- SagaPOS memakai machine credential terikat dan capability-scoped untuk lookup Member, quote benefit, commerce write, dan reward write. Health, credential binding, serta provider lookup UAT lulus tanpa membuat transaksi sintetis.
+- Email OTP melalui Resend aktif untuk allowlist internal; request production diterima dan pesan terbaru berstatus delivered. Public registration tetap OFF. Gmail dapat dipakai sebagai alamat email OTP, tetapi Google OAuth atau tombol `Masuk dengan Google` tetap OFF karena OAuth Client ID/Secret belum tersedia.
+- Immutable artifact `d9abaf09c14429a52502eb3df62726a018dd1756bc9c8c07b5216fde38822399`, 14 migrasi tanpa perubahan schema, encrypted backup/disposable restore, actual rollback rehearsal, final activation, health/monitor, dan active backup PASS. Egress email tetap deny-by-default dengan allowlist jaringan provider terbatas.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / EMAIL_OTP_DELIVERY_PASS / SAGAPOS_PROVIDER_UAT_PASS / PILOT_ACTIVE / BUSINESS_READY=false`. Verifikasi kode OTP terbaru oleh Owner, Google OAuth, payment/gateway, Push, NFC, printer, hardware, independent offsite restore, dan business UAT tetap gate terpisah.
+
 ## 2026-09-21 — Saga Member dan Customer Platform terintegrasi pada production R0
 
 - `CONFIRMED`, cut-off 2026-09-21 03:04 UTC: [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner) aktif pada release `20260921T025500Z-453db12-r0u`; Customer Platform `453db12b3756150b7f194f8dd12b5e2baa2f3ae6`, Member `da8cfcce2145fb6a498d2173eb7889e8be9b6c57`, dan kontrak bersama `2930b1b3db2774482e17341d83677029e86cbf95`.

@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-21 — Residual provider SagaPOS dan email OTP Saga Member
+
+- `CONFIRMED`: SagaPOS machine provider dan email OTP allowlist aktif pada production. Health, capability/credential binding, Member lookup UAT, request OTP, delivery provider, recovery, activation, serta monitor lulus.
+- `NEEDS CONFIRMATION`: Owner perlu memasukkan kode OTP terbaru untuk membuktikan verifikasi dan sesi login ujung-ke-ujung. Bukti request/delivery tidak menggantikan verifikasi kode manusia.
+- `NEEDS CONFIRMATION`: Google OAuth tetap OFF karena OAuth Client ID/Secret dan redirect resmi belum tersedia. Alamat Gmail yang menerima OTP bukan bukti Google OAuth.
+- `NEEDS CONFIRMATION`: public registration, payment/gateway, Push, NFC, printer, hardware, independent offsite restore, monitoring jangka panjang, dan business acceptance tetap terbuka. Dampak: `BUSINESS_READY=false` tanpa mematikan provider dan email OTP pilot internal.
+
 ## 2026-09-21 — Residual Saga Campaign QR setelah aktivasi
 
 - `CONFIRMED`: schedule, cabang, print add-on, pricing, hold, kapasitas/buffer,

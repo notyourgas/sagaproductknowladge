@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-21 — Sinkronisasi provider SagaPOS dan email OTP Saga Member
+
+- `CONFIRMED`: production release `20260921T050306Z-421e461-r0u`; Customer Platform `421e46143124a450bad8bee480cea6b622bdb20b`, Member `35e348c32a1fa230deffef984105bf15fbcdfdae`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, dan artifact `d9abaf09c14429a52502eb3df62726a018dd1756bc9c8c07b5216fde38822399`.
+- Knowledge Saga Platform diperbarui untuk SagaPOS machine provider, email OTP allowlist, delivery proof, release/recovery evidence, Google OAuth OFF, dan residual business readiness.
+- File terdampak: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah: ya. Tidak ada credential, PII, tenant/device identifier, raw receipt, atau path evidence privat yang dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / EMAIL_OTP_DELIVERY_PASS / SAGAPOS_PROVIDER_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Aktivasi Saga Campaign QR SagaList
 
 - `CONFIRMED`: companion Campaign QR exact source

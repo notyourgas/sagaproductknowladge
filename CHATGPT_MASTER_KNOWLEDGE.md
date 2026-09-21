@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-21 — SagaPOS provider dan email OTP Saga Member aktif
+
+- `CONFIRMED`: release `20260921T050306Z-421e461-r0u` aktif di `app.sagamember.site` dengan Customer Platform `421e46143124a450bad8bee480cea6b622bdb20b`, Member `35e348c32a1fa230deffef984105bf15fbcdfdae`, dan contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- SagaPOS machine provider aktif dengan capability terbatas. Health, credential binding, dan actual Member lookup UAT lulus; tidak ada transaksi sintetis yang dibuat.
+- Email OTP Resend aktif untuk allowlist internal dan bukti provider menunjukkan delivered. Gmail adalah alamat penerima OTP, bukan Google OAuth. Google OAuth tetap OFF sampai kredensial dan redirect resmi tersedia.
+- Backup/restore, rollback rehearsal, final activation, monitor, dan active backup lulus. Public registration, payment/gateway, Push, NFC, printer, hardware, independent offsite recovery, serta business UAT tetap residual; `BUSINESS_READY=false`.
+
 ## Update 2026-09-21 — Saga Campaign QR SagaList aktif
 
 - `CONFIRMED`: `https://sagastudio.site/campaignqr` aktif pada exact source

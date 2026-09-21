@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-21 — SagaPOS provider dan email OTP Saga Member aktif
+
+- `CONFIRMED`: release `20260921T050306Z-421e461-r0u` mengaktifkan integrasi machine-to-machine SagaPOS dan email OTP allowlist di `app.sagamember.site`.
+- Health, capability/credential binding, lookup Member UAT, pengiriman OTP, backup/restore, rollback rehearsal, activation, serta monitor lulus. Customer Platform tetap authority dan transaksi sintetis tidak dibuat.
+- Gmail dapat dipakai untuk OTP; Google OAuth tetap OFF. Public registration, payment/gateway, Push, NFC, printer, hardware, dan business acceptance belum aktif. Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / EMAIL_OTP_DELIVERY_PASS / SAGAPOS_PROVIDER_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Saga Campaign QR SagaList aktif
 
 - `CONFIRMED`: exact source `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`
