@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-21 — Login Staff terpisah Saga Campaign QR
+
+- `CONFIRMED`: exact source
+  `d9f1bc829345390f1b649a372242a857777ee9c2` aktif pada production dengan
+  rollback `abbda8c4210678a9783e5b350df4385f682ac19b`.
+- Satu akun Staff aktif memakai login password-only terpisah untuk Check &
+  Redeem; role guard mencegah akses dashboard Owner. Login, redirect guard,
+  logout, audit/session, backup/restore, dan public smoke lulus.
+- File terdampak: `products/sagabook/PRODUCT.md`,
+  `products/sagabook/DOSSIER.md`, `products/sagabook/CHANGELOG.md`,
+  `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`,
+  `DECISIONS.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production Campaign QR dan satu akun internal Staff berubah; SagaBook utama,
+  schema, campaign, pricing, voucher, dan data customer tidak berubah. Tidak
+  ada credential, account identifier, PII, raw receipt, atau path privat yang
+  dipublikasikan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_LOGIN_UAT_PASS /
+  AUTHENTICATED_OWNER_PASSWORD_ONLY_UAT_PENDING /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## 2026-09-21 — Sinkronisasi assisted cash SagaOPS
 
 - `CONFIRMED`: exact SagaOPS source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif di production dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.

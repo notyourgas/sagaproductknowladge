@@ -9,6 +9,13 @@
 
 ## 2026-09-21 — Residual Saga Campaign QR setelah aktivasi
 
+- `CONFIRMED`: satu akun Staff production aktif memakai login password-only
+  terpisah. Authenticated login, Check & Redeem surface, redirect dari dashboard
+  Owner, logout, audit/session, dan pencabutan sesi uji sudah lulus. Password
+  Staff dan identifier internal tidak dipublikasikan.
+- `NEEDS CONFIRMATION`: UAT hanya menguji autentikasi dan permission; belum ada
+  voucher trial/nyata yang diredeem oleh Staff. SOP pemeriksaan booking, customer,
+  sesi, stok/capacity/buffer, serta eskalasi gagal tetap harus diterima operator.
 - `CONFIRMED`: login dashboard production sekarang hanya memiliki satu field
   password dan database mempunyai tepat satu Owner aktif. Hash password lama,
   lockout, audit, session, origin guard, secure cookie, rollback, serta health

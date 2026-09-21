@@ -1,5 +1,24 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-206 — Staff Campaign QR memakai akun dan password terpisah
+
+- Tanggal: 2026-09-21. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: autentikasi Staff untuk claim/redeem promo Saga Studio.
+- Keputusan: trial memakai tepat satu akun Staff aktif dengan password berbeda
+  dari Owner. Login tetap password-only tetapi berada pada route Staff khusus;
+  password tidak boleh disimpan di source atau knowledge.
+- Alasan: Staff dapat menjalankan Check & Redeem tanpa menerima akses dashboard
+  atau password Owner.
+- Alternatif: berbagi sesi/password Owner tidak dipakai. Banyak Staff tanpa
+  identifier juga belum dipakai karena login password-only harus tetap tidak
+  ambigu dan fail-closed.
+- Dampak: exact source `d9f1bc829345390f1b649a372242a857777ee9c2`
+  aktif; satu Staff production terprovisi, role guard dan logout lulus. Actual
+  voucher redemption tetap memerlukan SOP dan UAT operasional terpisah.
+- Terkait: [SagaBook](products/sagabook/PRODUCT.md),
+  [dossier](products/sagabook/DOSSIER.md), [gaps](GAPS.md), dan
+  [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-205 — Campaign Control memakai password-only untuk satu Owner
 
 - Tanggal: 2026-09-21. Status: `CONFIRMED`; pemberi keputusan Andreas.
@@ -11,9 +30,11 @@
   sambil mempertahankan kontrol autentikasi production.
 - Alternatif: form email+password lama tidak dipakai. Pemilihan akun berdasarkan
   kecocokan banyak password juga tidak dipakai karena ambigu dan lebih lemah.
-- Dampak: exact source `abbda8c4210678a9783e5b350df4385f682ac19b`
-  aktif; hash password lama, lockout, audit, session, origin guard, dan secure
-  cookie dipertahankan. Bila Owner aktif lebih dari satu, login fail-closed.
+- Dampak: source `abbda8c4210678a9783e5b350df4385f682ac19b`
+  memperkenalkan flow dan kini tercakup dalam exact cumulative
+  `d9f1bc829345390f1b649a372242a857777ee9c2`; hash password lama, lockout,
+  audit, session, origin guard, dan secure cookie dipertahankan. Bila Owner
+  aktif lebih dari satu, login fail-closed.
 - Terkait: [SagaBook](products/sagabook/PRODUCT.md),
   [dossier](products/sagabook/DOSSIER.md), [gaps](GAPS.md), dan
   [snapshot sinkronisasi](SYNC_STATUS.md).

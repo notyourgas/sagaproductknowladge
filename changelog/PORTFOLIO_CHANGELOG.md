@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-21 — Campaign QR memiliki login Staff terpisah
+
+- `CONFIRMED`: exact source
+  `d9f1bc829345390f1b649a372242a857777ee9c2` aktif dengan rollback
+  `abbda8c4210678a9783e5b350df4385f682ac19b`.
+- Staff memakai password-only khusus Check & Redeem; sesi Staff tidak dapat
+  membuka dashboard Owner. Login, role guard, logout, audit/session,
+  backup/restore, dan public smoke production lulus tanpa redeem voucher nyata.
+- SagaBook utama, schema, pricing, campaign, voucher, dan data customer tidak
+  berubah. Owner login UAT, QR cetak, actual Staff redeem, dan SOP draw/redeem
+  masih residual; `BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## 2026-09-21 — SagaOPS assisted cash terdeploy dengan payment containment
 
 - `CONFIRMED`: SagaOPS source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.

@@ -8,7 +8,29 @@ dalam satu dokumen public-safe.
 ## Konteks dan status bukti
 
 - Companion Campaign QR exact source
-  `abbda8c4210678a9783e5b350df4385f682ac19b` mengaktifkan login dashboard
+  `d9f1bc829345390f1b649a372242a857777ee9c2` menambahkan login password-only
+  terpisah untuk tepat satu Staff aktif pada `/campaignqr/redeem/login`.
+  Staff dapat membuka Check & Redeem tetapi tidak dashboard Owner; direct
+  `/admin` mengembalikan redirect ke `/redeem`. Hash password tidak masuk
+  source atau knowledge. Lockout, audit, session token ter-hash, same-origin,
+  secure cookie, logout, dan fail-closed multi-Staff tetap berlaku. Exact-main
+  52 pass/14 controlled skip, browser 89 pass/7 controlled skip, disposable
+  MySQL auth 5/5, MySQL browser 9/9, dependency audit nol, migration ledger
+  6/6, serta backup/restore 25/25 tabel dan 6/6 migrasi lulus. Vercel lulus;
+  hosted GitHub job tidak mulai karena billing. Authenticated production UAT
+  membuktikan login, redeem surface, admin role guard, dan logout tanpa redeem
+  voucher nyata. Harness verifikasi pertama berhenti pada format redirect dan
+  cleanup otomatisnya tidak selesai; state akun/sesi direkonsiliasi sebelum
+  UAT koreksi lulus dan seluruh sesi Staff uji dicabut. Rollback kompatibel
+  `abbda8c4210678a9783e5b350df4385f682ac19b`; tidak ada migration atau
+  perubahan campaign/customer. Status `CONFIRMED / SOURCE_PUSHED /
+  LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_STAFF_LOGIN_UAT_PASS /
+  AUTHENTICATED_OWNER_PASSWORD_ONLY_UAT_PENDING /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+
+- Companion Campaign QR exact source
+  `abbda8c4210678a9783e5b350df4385f682ac19b` memperkenalkan login dashboard
   password-only untuk satu Owner aktif. Form dan API tidak lagi memerlukan
   email; email tetap menjadi identitas internal/audit dan password hash lama
   tidak dirotasi. Lockout lima kegagalan, audit login, session token ter-hash,
@@ -22,13 +44,14 @@ dalam satu dokumen public-safe.
   diperbaiki pada source dan fresh release baru lulus. Rollback kompatibel
   `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`; tidak ada migration atau
   perubahan data. Status `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
-  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING / BUSINESS_READY=NEEDS_CONFIRMATION`.
+  Perubahan ini kini tercakup dalam exact cumulative
+  `d9f1bc829345390f1b649a372242a857777ee9c2`; authenticated Owner login
+  password-only tetap pending.
 
 - Companion Saga Campaign QR exact source kumulatif
-  `abbda8c4210678a9783e5b350df4385f682ac19b` aktif di
+  `d9f1bc829345390f1b649a372242a857777ee9c2` aktif di
   `https://sagastudio.site/campaignqr`; rollback kompatibel
-  `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`. Artifact exact-source,
+  `abbda8c4210678a9783e5b350df4385f682ac19b`. Artifact exact-source,
   service non-root, MySQL 25 tabel/6 migrasi tanpa migration baru,
   backup/disposable restore, atomic activation, health, Nginx/TLS,
   public/security smoke, serta authenticated Owner UAT campaign sebelum
@@ -45,14 +68,15 @@ dalam satu dokumen public-safe.
   job karena billing, sedangkan exact-main local gates, Vercel, browser matrix,
   dan MySQL integration lulus. Status `CONFIRMED / SOURCE_PUSHED /
   LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
-  AUTHENTICATED_PASSWORD_ONLY_UAT_PENDING /
+  AUTHENTICATED_STAFF_LOGIN_UAT_PASS /
+  AUTHENTICATED_OWNER_PASSWORD_ONLY_UAT_PENDING /
   BUSINESS_READY=NEEDS_CONFIRMATION`.
 
 - `DEPRECATED`: companion Saga Campaign QR exact source
   `0443012b0048eccbe43926b1b30e27988beb3025` adalah holding release yang aktif
   pada 20 September 2026 dan pertama digantikan activation exact
   `58bbc90fb0001942b2b86d0c1662b4ea2eb76eb3`; fungsinya kini tercakup dalam
-  companion aktif exact `abbda8c4210678a9783e5b350df4385f682ac19b`. Artifact SHA-256
+  companion aktif exact `d9f1bc829345390f1b649a372242a857777ee9c2`. Artifact SHA-256
   `00b61ad673b5e09300964bb8f0ac39abd9a3e9a8ce1fdfd9bd40d2ad93453fdd`
   dibangun dari checkout exact source; service non-root, MySQL 25 tabel/6
   migrasi, encrypted backup/disposable restore, Nginx subpath, TLS renewal

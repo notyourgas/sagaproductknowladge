@@ -1,5 +1,27 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-21 — Login Staff terpisah Saga Campaign QR
+
+- Status `accepted`; klasifikasi `CONFIRMED`; exact source
+  `d9f1bc829345390f1b649a372242a857777ee9c2` aktif dengan rollback
+  `abbda8c4210678a9783e5b350df4385f682ac19b`.
+- Synced: login Staff password-only, binding tepat satu Staff aktif, role guard
+  Owner/Staff, logout, lockout/audit/session, origin/cookie boundary, create-only
+  provisioning, recovery, dan UAT production tanpa redeem voucher nyata.
+- Evidence: exact-main 52 pass/14 controlled skip; browser 89 pass/7 controlled
+  skip; MySQL auth 5/5; MySQL browser 9/9; dependency audit nol; migration
+  ledger 6/6; fresh backup/restore 25/25 tabel dan 6/6 migrasi; health,
+  public-security smoke, Staff login, redeem, admin redirect, logout, serta
+  zero active Staff session setelah UAT PASS. Hosted GitHub job terhalang
+  billing; Vercel PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_LOGIN_UAT_PASS /
+  AUTHENTICATED_OWNER_PASSWORD_ONLY_UAT_PENDING /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+- Next: Andreas mencoba login Owner password-only; Staff melakukan UAT redeem
+  dengan voucher trial/nyata yang diizinkan, QR cetak diuji pada HP, dan SOP
+  draw/redeem diselesaikan.
+
 ## 2026-09-21 — SagaPOS assisted cash production code
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `94d67c2aef26acabc4a4a46842985135b88c7819` aktif dengan rollback `3f8c6b51f22407be00a7adffe863574a1734d885`.

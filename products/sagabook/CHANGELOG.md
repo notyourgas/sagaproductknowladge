@@ -1,5 +1,21 @@
 # SagaBook Changelog
 
+## 2026-09-21 - Login Staff Campaign QR terpisah
+
+- `/campaignqr/redeem/login` menyediakan password-only untuk tepat satu akun
+  Staff aktif. Staff hanya dapat masuk ke Check & Redeem dan direct `/admin`
+  dialihkan kembali ke `/redeem`; Owner tetap memakai login terpisah.
+- Exact source `d9f1bc829345390f1b649a372242a857777ee9c2` aktif dengan rollback
+  `abbda8c4210678a9783e5b350df4385f682ac19b`. Tidak ada migration, perubahan
+  campaign, pricing, voucher, customer, atau password Owner.
+- Exact-main 52 pass/14 controlled skip, browser 89 pass/7 controlled skip,
+  MySQL auth 5/5, MySQL browser 9/9, dependency audit nol, backup/restore,
+  public/security smoke, serta authenticated Staff login/guard/logout lulus.
+- Status `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+  AUTHENTICATED_STAFF_LOGIN_UAT_PASS /
+  AUTHENTICATED_OWNER_PASSWORD_ONLY_UAT_PENDING /
+  BUSINESS_READY=NEEDS_CONFIRMATION`.
+
 ## 2026-09-21 - Login Campaign Control menjadi password-only
 
 - Form dan API login production sekarang hanya meminta password lalu mengikat
