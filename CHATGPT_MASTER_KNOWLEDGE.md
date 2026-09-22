@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — Integrasi Saga Member ↔ Saga Platform aktif dan sehat
+
+- `CONFIRMED`: Member release `20260922T070500Z-cb51362-r0u` dan Platform release `20260922060607-aeb17ba` aktif. Owner integration dan projection Platform sama-sama `HEALTHY` dengan nol isu terbuka pada cut-off 07:10 UTC.
+- Customer Platform tetap authority untuk account, loyalty, Points, reward, dan ledger. Saga Member hanya memproyeksikan metadata readiness/capability minimum; jangan menjelaskan Saga Platform sebagai pemilik data loyalty atau transaksi.
+- Transport memakai HMAC dan least privilege. Runtime egress tetap default-deny, dengan satu tujuan Platform yang direview. ACK baru menyelesaikan insiden delivery lama yang sudah tersupersesi tanpa menghapus audit trail.
+- Test, artifact, dependency/security scan, encrypted backup/restore, actual rollback rehearsal, final activation, monitor, active backup, dan authenticated Owner technical UAT lulus. Status `PRODUCTION_ACTIVATED / PLATFORM_PROJECTION_HEALTHY / BUSINESS_READY=false`; payment, hardware, offsite recovery independen, serta business/operator acceptance tetap gate terpisah.
+
 ## Update 2026-09-22 — SagaPOS Menu & Promo Batch 7 aktif untuk Owner
 
 - `CONFIRMED`: source production `4349024cff24be29e7fffd4123f7ab3fb3670c5d`, rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`, schema 34 migrasi.

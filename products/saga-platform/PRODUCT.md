@@ -1,5 +1,14 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-22 — Saga Member ↔ Saga Platform projection aktif dan sehat
+
+- `CONFIRMED`, cut-off 2026-09-22 07:10 UTC: Saga Member release `20260922T070500Z-cb51362-r0u` aktif pada [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner), sementara Saga Platform release `20260922060607-aeb17ba` aktif pada [console produk Saga Member](https://platform.sagasuper.tech/products/sagamember).
+- Customer Platform tetap authority untuk identitas, loyalty, dan ledger. Saga Member hanya mengirim metadata readiness/capability minimum ke Saga Platform melalui kontrak HMAC bertanda tangan; tidak ada pemindahan authority account, Points, reward, atau transaksi.
+- Jalur outbound tetap deny-by-default dan hanya membuka satu host Saga Platform yang telah ditinjau. ACK terbaru menutup insiden pengiriman lama yang sudah tersupersesi, sehingga Owner menampilkan status integrasi `HEALTHY` dengan nol isu terbuka dan Platform menyimpan proyeksi terbaru yang sehat.
+- Backend 47 file test, frontend 566/566, contracts 20/20, Platform adapter 14 test/65 assertion, browser multi-viewport, dependency/security scan, encrypted backup/disposable restore, actual rollback rehearsal, activation, active backup, monitor, dan authenticated Owner UAT PASS.
+- Provenance: backend `cb51362a67c1193c894f4a7e467fce2408a2b1d3`, frontend `33b3524629cf7eb1b7ad640473d92190aed26353`, contracts `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`, Platform `aeb17ba9316252a6b2de0357cdcad6f7bd184589`, artifact Member `907d522233b55eba176e8378051614e18f34c001dc160e381d99e97311ec3205`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PLATFORM_PROJECTION_HEALTHY / BUSINESS_READY=false`. Payment, hardware, independent offsite restore, dan business/operator acceptance tetap gate terpisah.
+
 ## 2026-09-22 — Saga Member Wave 7 recovery console aktif
 
 - `CONFIRMED`, cut-off 2026-09-22 04:39 UTC: release `20260922T043720Z-fa5ce30-r0u` aktif di [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/member), dengan Customer Platform `fa5ce3038e749bbe3153d88b9c10d2244075cb82`, Member `23bd2bb16c66cca82e9a2faae8ef53b08ddc41a3`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

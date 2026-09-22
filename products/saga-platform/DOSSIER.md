@@ -1,5 +1,14 @@
 # Saga Platform Dossier
 
+## 2026-09-22 — Aktivasi projection Saga Member ke Saga Platform
+
+- `CONFIRMED`: Member release `20260922T070500Z-cb51362-r0u` dan Platform release `20260922060607-aeb17ba` aktif. Source exact: backend `cb51362a67c1193c894f4a7e467fce2408a2b1d3`, frontend `33b3524629cf7eb1b7ad640473d92190aed26353`, contracts `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`, Platform `aeb17ba9316252a6b2de0357cdcad6f7bd184589`.
+- Boundary authority dipertahankan: Customer Platform menguasai account/loyalty/ledger; Saga Member memproyeksikan metadata readiness/capability minimum; Saga Platform menjadi control-plane read model. Kontrak transport memakai HMAC, origin dan capability terbatas, serta tidak membawa credential, PII, atau ledger.
+- Sandbox service tetap default-deny. Egress hanya dibuka ke satu alamat host Platform yang direview dan dipasang dengan DNS-drift check, health binding, serta rollback otomatis. Pengiriman lama yang tersupersesi oleh ACK terbaru ditandai selesai sehingga tidak lagi menciptakan false degradation.
+- Bukti runtime final: status Owner `HEALTHY`, nol isu terbuka, sembilan event diproses; Platform memiliki proyeksi terbaru `HEALTHY`; public Member/Owner 200; console Platform meminta autentikasi; monitor, customer service, PWA, backup timer, dan projection worker aktif tanpa error journal pada jendela verifikasi.
+- Validasi: contracts 20/20; backend 47 isolated files; frontend 566/566; Platform 14 test/65 assertion; runner 82/82; audit dependency nol; immutable artifact `907d522233b55eba176e8378051614e18f34c001dc160e381d99e97311ec3205`; encrypted backup/restore, actual rollback rehearsal, final activation, active backup, dan authenticated Owner browser UAT PASS.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PLATFORM_PROJECTION_HEALTHY / BUSINESS_READY=false`. Business UAT, independent offsite restore, payment, dan hardware tidak tersirat oleh aktivasi integrasi ini.
+
 ## 2026-09-21 — Density dan minimal motion onboarding Saga Member
 
 - `CONFIRMED`: release `20260921T134857Z-f0ab22a-r0u` mengganti frontend menjadi exact source `657a482f511edb9d71d012342102fffc0ec4eb31`; backend `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c` dan contracts `2930b1b3db2774482e17341d83677029e86cbf95` tidak berubah.

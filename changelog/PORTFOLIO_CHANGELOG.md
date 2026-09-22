@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — Saga Member terhubung sehat ke Saga Platform
+
+- `CONFIRMED`: [Saga Member](https://app.sagamember.site/member), [Owner](https://app.sagamember.site/owner), dan [console Platform](https://platform.sagasuper.tech/products/sagamember) aktif pada release Member `20260922T070500Z-cb51362-r0u` dan Platform `20260922060607-aeb17ba`.
+- Customer Platform tetap menjadi authority. Integrasi hanya memproyeksikan metadata readiness/capability minimum melalui transport HMAC dan egress satu host yang dikunci; identitas, Points, reward, ledger, dan transaksi tidak dipindahkan.
+- Owner dan proyeksi Platform sama-sama `HEALTHY`, nol isu terbuka. Regression, security/dependency scan, recovery, rollback rehearsal, monitor, active backup, dan authenticated Owner UAT lulus.
+- Delivery `PRODUCTION_ACTIVATED / PLATFORM_PROJECTION_HEALTHY / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; business acceptance, offsite restore independen, payment, dan hardware tetap residual.
+
 ## 2026-09-22 — Saga Member Wave 7 recovery console aktif
 
 - `CONFIRMED`: Customer Platform `fa5ce3038e749bbe3153d88b9c10d2244075cb82` dan Member `23bd2bb16c66cca82e9a2faae8ef53b08ddc41a3` aktif pada release `20260922T043720Z-fa5ce30-r0u`.

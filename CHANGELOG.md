@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-22 — Sinkronisasi integrasi Saga Member ↔ Saga Platform
+
+- `CONFIRMED`: release Member `20260922T070500Z-cb51362-r0u` dan Platform `20260922060607-aeb17ba` aktif dengan projection `HEALTHY`, Owner integration `HEALTHY`, dan nol isu terbuka.
+- Knowledge mencatat authority boundary, signed transport, default-deny egress satu host, cleanup insiden tersupersesi, exact provenance, recovery/activation, authenticated Owner UAT, serta batas `BUSINESS_READY=false`.
+- File terdampak: `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Tidak ada credential, PII, raw payload/receipt, tenant/device identifier, database dump, atau path evidence restricted yang dipublikasikan.
+
 ## 2026-09-22 — Sinkronisasi Saga Member Wave 7
 
 - `CONFIRMED`: release `20260922T043720Z-fa5ce30-r0u` mengaktifkan recovery console Owner untuk event history/dead-letter replay dan visibilitas lifecycle program.

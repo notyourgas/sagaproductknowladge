@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-22 — Saga Member ↔ Saga Platform production projection
+
+- Release Member `20260922T070500Z-cb51362-r0u` dan Platform `20260922060607-aeb17ba` mengaktifkan proyeksi readiness/capability minimum dengan authority Customer Platform tetap utuh.
+- Transport HMAC, scope minimum, default-deny egress satu host, DNS-drift guard, dan rollback otomatis tervalidasi. ACK terbaru sekarang menyelesaikan insiden lama yang sudah tersupersesi, menghapus false degradation tanpa menghapus audit trail.
+- Owner integration `HEALTHY`, nol isu terbuka; proyeksi Platform terbaru `HEALTHY`. Test contracts/backend/frontend/Platform/runner, artifact, backup/restore, rollback rehearsal, monitor, active backup, dan authenticated Owner UAT PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PLATFORM_PROJECTION_HEALTHY / BUSINESS_READY=false`.
+
 ## 2026-09-22 — Saga Member Wave 7 event recovery
 
 - Release `20260922T043720Z-fa5ce30-r0u` mengaktifkan Owner event history, filter status/type, dan dead-letter replay dengan reason, evidence reference, scope, audit, serta idempotency.

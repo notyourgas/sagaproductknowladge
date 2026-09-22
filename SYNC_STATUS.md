@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-22 — Saga Member ↔ Saga Platform projection activation
+
+- Status `accepted`; klasifikasi `CONFIRMED`; Member release `20260922T070500Z-cb51362-r0u`, Platform release `20260922060607-aeb17ba`.
+- Synced: authority boundary, HMAC transport, least-privilege/default-deny egress, superseded incident cleanup, production activation, Owner health, Platform projection health, recovery evidence, dan residual business gates.
+- Evidence: contracts 20/20; backend 47 files; frontend 566/566; Platform 14 test/65 assertion; runner 82/82; dependency/security scan; immutable artifact; encrypted backup/disposable restore; actual rollback rehearsal; final activation; monitor; active backup; authenticated Owner browser UAT PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PLATFORM_PROJECTION_HEALTHY / BUSINESS_READY=false`.
+- Next: Andreas menjalankan business UAT pada Member/Owner/Platform; independent offsite restore, payment, dan hardware tetap gate terpisah.
+
 ## 2026-09-22 — Saga Member Wave 7 production activation
 
 - Status `accepted`; klasifikasi `CONFIRMED`; Customer Platform `fa5ce3038e749bbe3153d88b9c10d2244075cb82`, Member `23bd2bb16c66cca82e9a2faae8ef53b08ddc41a3`, contracts `2930b1b3db2774482e17341d83677029e86cbf95`, release `20260922T043720Z-fa5ce30-r0u`.
