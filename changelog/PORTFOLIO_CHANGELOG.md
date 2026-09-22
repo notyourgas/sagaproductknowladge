@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS Phase 1 master-data control center
+
+- `CONFIRMED`: SagaPOS production aktif pada `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` dengan rollback `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, health ready, dan 34 migrasi.
+- Owner Dashboard sekarang memiliki halaman Kesiapan bisnis yang membaca lima domain master data dari server. Snapshot `70%` (`16/23`); workforce selesai `100%`, sedangkan tujuh blocker data/kontrak tetap terbuka.
+- Artifact, backup/restore disposable, tiga-boot recovery rehearsal, activation, Owner restart smoke, dan anonymous denial lulus. Payment/gateway dan inventory reporting tetap OFF; tidak ada transaksi atau migration.
+- Delivery `PHASE_1_IN_PROGRESS / PRODUCTION_ACTIVATED / BUSINESS_READY=false`. Angka 70% adalah subscore master data dan tidak menaikkan business-readiness berbobot SagaPOS dari `62/100`.
+
 ## 2026-09-22 — Phase 0 readiness SagaPOS dan Saga Member
 
 - `CONFIRMED`: SagaPOS production truth terbaru adalah source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`; runtime ready, Member provider/attendance/receiving aktif, Table Order masih demo, serta payment dan inventory reporting tetap OFF.

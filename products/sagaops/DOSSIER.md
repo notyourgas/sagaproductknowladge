@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-22 — Phase 1 pusat kesiapan master data production
+
+Exact source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` mengaktifkan pusat kesiapan master data di Owner Dashboard. Service membaca state runtime dan state staff, lalu menghitung 23 pemeriksaan pada lima domain. Respons sengaja berbentuk agregat, Owner-only, dan fail-closed: data kosong, belum terverifikasi, atau masih contract pending tidak pernah dianggap selesai.
+
+Snapshot authenticated production adalah `70%` atau `16/23`: menu/harga `3/5`, bahan/supplier/HPP `4/5`, tim/jadwal `5/5`, member/reward `1/3`, dan aturan outlet `3/5`. Bukti positif mencakup 7 kategori, 22 menu berharga valid, 18 menu kustom dengan pilihan, 15 bahan berbiaya, 5 supplier, 14 satuan beli, 4 akun staff, 2 template shift, serta GPS/selfie dan koordinat outlet. Blocker tetap: foto menu, publish Owner, HPP 100%, kontrak member/reward, enforcement jam, dan konfirmasi pricing.
+
+Rilis memakai artifact immutable `6b0edac170a47dab4e45ba8af565bcb993b56b626725d7809b0116f695ce6aec` dengan rollback `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`. Rantai awal dibatalkan setelah rehearsal pertama gagal sebelum namespace dibuat; RC2 menambah diagnostic fase luar yang tidak memuat secret, kemudian membangun artifact, admission, backup, restore disposable, rehearsal, dan activation baru dari nol. Health, anonymous `401`, Owner smoke sebelum/sesudah restart, dan 34 migrasi lulus tanpa transaksi atau schema change.
+
+Halaman ini adalah pusat kontrol dan bukti kekurangan, bukan pengganti keputusan bisnis. Skor business-readiness SagaPOS tetap `62/100`; payment/gateway tetap `OFF`, inventory reporting tetap `OFF`, dan offsite recovery independen belum diterima. Status `PHASE_1_IN_PROGRESS / BUSINESS_READY=false`.
+
 ## 2026-09-22 — Phase 0 production truth dan readiness registry
 
 Pemeriksaan read-only terhadap domain publik dan runtime health menetapkan source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3` sebagai production truth terbaru. Runtime melaporkan ready dengan 34 migrasi, Member provider aktif, absensi dan penerimaan barang staff ready, serta Table Order durable dalam scope demo yang tidak memengaruhi fakta bisnis. Payment/gateway dan inventory reporting tetap OFF.

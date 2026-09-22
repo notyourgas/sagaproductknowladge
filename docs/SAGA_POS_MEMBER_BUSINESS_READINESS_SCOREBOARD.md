@@ -1,8 +1,8 @@
 # SagaPOS dan Saga Member Business Readiness Scoreboard
 
-Status: `CONFIRMED / PHASE_0_BASELINE`
+Status: `CONFIRMED / PHASE_1_IN_PROGRESS`
 
-Evidence cut-off: 22 September 2026, 16:00 WIB.
+Evidence cut-off: 22 September 2026, 17:22 WIB.
 
 ## Konteks
 
@@ -35,10 +35,17 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 
 ## Baseline production
 
+### Phase 1 master-data snapshot
+
+- SagaPOS production source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` menyediakan halaman Owner-only **Kesiapan bisnis**.
+- Nilai server-derived `70%` atau `16/23`: menu/harga `60%`; bahan/supplier/HPP `80%`; workforce `100%`; member/reward `33%`; aturan outlet `60%`.
+- Tujuh blocker: foto menu `0/22`, publish Owner, HPP `9%`, kontrak member, katalog reward, enforcement jam outlet, dan konfirmasi pricing.
+- Angka ini adalah subscore Phase 1, bukan business-readiness berbobot seluruh SagaPOS. Overall tetap `62/100` sampai gate lintas capability memperoleh evidence baru.
+
 ### SagaPOS
 
 - Runtime production aktif pada exact source
-  `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3` dengan 34 migrasi dan health
+  `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` dengan 34 migrasi dan health
   `ready=true`.
 - Member provider, absensi native, dan penerimaan barang staff aktif. Table
   Order masih `DEMO` dengan payment simulator dan tidak menulis fakta bisnis.

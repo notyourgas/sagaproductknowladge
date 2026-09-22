@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-22 — Phase 1 pusat kesiapan master data
+
+- `CONFIRMED`: exact source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` aktif pada production dengan rollback `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`; health `ready=true` dan ledger tetap 34 migrasi.
+- Owner Dashboard menambahkan halaman **Kesiapan bisnis**. Nilainya dihitung dari data server, bukan checklist manual, untuk lima domain: menu/harga; bahan/supplier/HPP; tim/jadwal; member/reward; dan aturan outlet. Endpoint agregat hanya dapat diakses Owner dan tidak mengeluarkan nama, kode karyawan, credential, atau data pribadi.
+- Snapshot production Phase 1 adalah `70%` atau `16/23` pemeriksaan. Tim/jadwal `100%`; menu/harga `60%`; bahan/supplier/HPP `80%`; member/reward `33%`; aturan outlet `60%`.
+- Tujuh blocker data: foto menu `0/22`, belum ada bukti publish Owner, cakupan HPP `9%`, kontrak member belum terverifikasi, katalog reward belum terverifikasi, enforcement jam outlet belum aktif, dan kebijakan harga belum memiliki bukti konfirmasi Owner.
+- Artifact immutable SHA-256 `6b0edac170a47dab4e45ba8af565bcb993b56b626725d7809b0116f695ce6aec`, encrypted backup/disposable restore, candidate-current-candidate rehearsal, activation code-only, anonymous denial, authenticated Owner restart smoke, dan ledger verification lulus. Payment/gateway tetap `OFF`; backup ini same-host dan bukan bukti offsite recovery.
+- Skor `70%` adalah kesiapan master data Phase 1, bukan pengganti skor business-readiness berbobot `62/100`. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_1_IN_PROGRESS / BUSINESS_READY=false`.
+
 ## Production truth 2026-09-22 — Phase 0 readiness baseline
 
 - `CONFIRMED`, cut-off 16:00 WIB: production SagaPOS berjalan pada exact source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, health `ready=true`, dan 34 migrasi. Snapshot ini menggantikan `4349024cff24be29e7fffd4123f7ab3fb3670c5d` sebagai fakta runtime terbaru tanpa menghapus histori release sebelumnya.

@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS Phase 1 master data
+
+- `CONFIRMED`: SagaPOS production source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`, rollback `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, 34 migrasi, health ready.
+- Owner Dashboard memiliki halaman Kesiapan bisnis berbasis state server dan khusus Owner. Snapshot production `70%` (`16/23`): workforce `100%`; menu `60%`; bahan/supplier/HPP `80%`; member/reward `33%`; aturan outlet `60%`.
+- Jangan menyebut Phase 1 selesai. Kekurangan: foto `0/22`, publish Owner, HPP `9%`, verifikasi kontrak member/reward, enforcement jam outlet, dan konfirmasi pricing.
+- Payment/gateway dan inventory reporting tetap OFF; `BUSINESS_READY=false`. Subscore master data 70% tidak menggantikan overall weighted SagaPOS `62/100`.
+
 ## Update 2026-09-22 — Phase 0 readiness SagaPOS dan Saga Member
 
 - `CONFIRMED`: SagaPOS live memakai exact source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, 34 migrasi, runtime ready, Member provider/attendance/receiving ready. Table Order tetap demo-only; payment/gateway dan inventory reporting tetap OFF.

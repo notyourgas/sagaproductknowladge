@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Phase 1 master-data readiness aktif
+
+- Activated exact source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`; rollback `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`; schema tetap 34 migrasi.
+- Added Owner-only **Kesiapan bisnis** dengan 23 pemeriksaan server-derived pada menu, inventory/HPP, workforce, member/reward, dan aturan outlet; response tidak memuat PII staff.
+- Production snapshot: `70%` atau `16/23`. Workforce `100%`; blocker adalah foto menu, publish Owner, HPP baru `9%`, kontrak member/reward, enforcement jam, dan konfirmasi pricing.
+- Validation: static/type 561 modul; production dependency audit nol vulnerability; domain/access/browser/Axe/regression fokus lulus. Kegagalan full-run akibat TEMP drive/OOM lulus saat rerun serial pada volume cukup.
+- Release: fresh RC2 artifact `6b0edac170a47dab4e45ba8af565bcb993b56b626725d7809b0116f695ce6aec`, encrypted backup/disposable restore, candidate-current-candidate rehearsal, code-only activation, anonymous denial, Owner restart smoke, dan ledger verification lulus.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_1_IN_PROGRESS / BUSINESS_READY=false`; overall weighted readiness tetap `62/100`, payment/reporting OFF, dan offsite restore belum diterima.
+
 ## 2026-09-22 — Phase 0 production truth dan scoreboard
 
 - Recorded exact live source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, health ready, 34 migrasi, Member provider/attendance/receiving ready, Table Order demo-only, serta payment dan inventory reporting OFF.
