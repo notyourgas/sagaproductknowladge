@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS Phase 6 finance closing aktif
+
+- `CONFIRMED`: production exact source `770c81657b4e589188885e33dc0b7ab3f2f9011a`, rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, health ready, service aktif, dan 34 migrasi unchanged.
+- Owner Dashboard mempunyai lima rehearsal finance/closing yang aman, deterministik, dan non-mutating; authenticated Owner UAT membuktikan readiness `92%` (`11/12`).
+- Immutable release, same-host backup/disposable restore, recovery rehearsal, restart persistence, dan monitor lulus. Lima expanded release lama dipangkas dengan current/rollback serta artifact/backup tetap terlindungi.
+- Delivery `PRODUCTION_ACTIVATED / PHASE_6_SIMULATION_SAFE / BUSINESS_READY=false`; controlled real closing, Finance acceptance, offsite restore, payment, dan inventory reporting tetap residual.
+
 ## 2026-09-22 — SagaPOS katalog publik performance hardening
 
 - `CONFIRMED`: production exact source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, rollback `f4553743a55ae659390594e80a7f30c25f47e265`, health ready, service aktif, dan 34 migrasi unchanged.

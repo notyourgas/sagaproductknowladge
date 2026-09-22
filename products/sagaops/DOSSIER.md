@@ -1,5 +1,14 @@
 # SagaOPS Dossier
 
+## Phase 6 finance, closing, dan exception — production 2026-09-23
+
+- `CONFIRMED`: source production `770c81657b4e589188885e33dc0b7ab3f2f9011a`; rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`; artifact SHA-256 `c8982af65e29a3e207fa6416d62054d4bd73f2c60ebb876243fc5f7336716590`; 34 migrasi unchanged.
+- Owner-only finance control center menyediakan `CLEAN_CLOSE`, `CASH_VARIANCE`, `PROVIDER_UNSETTLED`, `INCOMPLETE_COSTING`, dan `MULTI_EXCEPTION`. Setiap rehearsal mengembalikan keputusan, reason code, tindakan operator, action owner, dan replay fingerprint deterministik.
+- Boundary tetap fail-closed. Rehearsal tidak memanggil payment provider, tidak menulis ledger atau kas, tidak mengunci closing, tidak memakai data customer, dan tidak mengubah fakta bisnis. Payment/gateway serta inventory reporting tetap OFF.
+- Readiness server-derived `11/12` (`92%`). Gate keduabelas adalah controlled real shift closing yang diterima Owner/Finance dengan rekonsiliasi, exception handling, dan rollback/containment yang terdokumentasi.
+- Release code-only lulus regression tanpa failure, immutable packaging, encrypted same-host backup/disposable restore, candidate-current-candidate rehearsal, authenticated Owner UAT, restart persistence, dan monitor. Independent offsite restore belum diterima.
+- Status maksimum: `PRODUCTION_ACTIVATED / PHASE_6_SIMULATION_SAFE / BUSINESS_READY=false`.
+
 ## Phase 5 Member lifecycle — production 2026-09-22
 
 - `CONFIRMED`: source production `9c2035b27d10a2729896fa2adf0f8a8331c21d1f`; rollback `26eb16807e4a76349b1864f83dfb2624a369d821`; 34 migrasi unchanged.

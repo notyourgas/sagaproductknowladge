@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual Phase 6 finance closing SagaPOS
+
+- `CONFIRMED`: production source `770c81657b4e589188885e33dc0b7ab3f2f9011a` aktif dengan rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`; readiness Phase 6 `11/12` (`92%`), authenticated Owner UAT, restart persistence, recovery rehearsal, dan monitor lulus.
+- `CONFIRMED`: lima skenario closing/exception bersifat non-mutating; provider, ledger, kas, lock closing, customer data, dan fakta bisnis tidak berubah. Replay fingerprint deterministik tersedia untuk idempotency review.
+- `NEEDS CONFIRMATION`: controlled real shift closing dan acceptance Owner/Finance belum dijalankan. Bukti harus mencakup rekonsiliasi kas, provider unsettled, HPP incomplete, multi-exception, action ownership, containment, dan keputusan final closing.
+- `NEEDS CONFIRMATION`: payment/gateway serta inventory reporting tetap OFF; independent offsite restore, monitoring jangka panjang, load representatif, SOP, dan pilot outlet tetap terbuka. Dampak: `PHASE_6_SIMULATION_SAFE / BUSINESS_READY=false`.
+
 ## 2026-09-22 — Residual setelah performance hardening katalog publik SagaPOS
 
 - `CONFIRMED`: production source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27` aktif dengan rollback `f4553743a55ae659390594e80a7f30c25f47e265`; performance mobile production, authenticated Owner smoke, recovery, browser/accessibility matrix, dan monitor lulus. Payment/gateway serta inventory reporting tetap OFF; Table Order tetap demo-only.

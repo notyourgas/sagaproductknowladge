@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-23 — Phase 6 finance, closing, dan exception
+
+- `CONFIRMED`: exact source `770c81657b4e589188885e33dc0b7ab3f2f9011a` aktif pada production dengan rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, artifact SHA-256 `c8982af65e29a3e207fa6416d62054d4bd73f2c60ebb876243fc5f7336716590`, health `ready=true`, service aktif, dan schema tetap 34 migrasi.
+- Owner Dashboard menambahkan control center **Uji closing & exception** dengan lima rehearsal aman: closing bersih, selisih kas, provider belum settled, HPP belum lengkap, dan multi-exception. Hasil menampilkan keputusan, alasan yang mudah dipahami, pemilik tindakan, serta fingerprint replay deterministik.
+- Simulator bersifat non-mutating: provider tidak dipanggil, ledger dan kas tidak ditulis, closing tidak dikunci, data customer tidak dipakai, dan fakta bisnis tidak berubah. Engine varians kas production tetap menjadi sumber klasifikasi skenario cash variance.
+- Readiness Phase 6 adalah `92%` atau `11/12`. Kontrak, Owner RBAC, exception matrix, idempotency/replay, observability, UI, release, recovery, restart persistence, dan monitor lulus; gate terakhir adalah controlled real shift closing serta acceptance Owner/Finance.
+- Validation exact source mencatat 1.560 pass, 0 fail, 73 controlled skip, dan satu load-cancelled test dari 1.634; test tersebut lulus pada rerun terisolasi. Immutable packaging, encrypted same-host backup/disposable restore, code-only recovery rehearsal, authenticated Owner UAT, restart smoke, dan monitor lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_6_SIMULATION_SAFE / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap `OFF`; independent offsite restore dan closing bisnis nyata tetap gate terpisah.
+
 ## Production 2026-09-22 — Katalog publik performance hardening
 
 - `CONFIRMED`: exact source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27` aktif pada production dengan rollback `f4553743a55ae659390594e80a7f30c25f47e265`, health `ready=true`, service aktif, dan schema tetap 34 migrasi.

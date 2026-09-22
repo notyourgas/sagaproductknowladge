@@ -1,8 +1,8 @@
 # SagaPOS dan Saga Member Business Readiness Scoreboard
 
-Status: `CONFIRMED / PHASE_5_SIMULATION_SAFE / PROVIDER_MUTATION_UAT_PENDING`
+Status: `CONFIRMED / PHASE_6_SIMULATION_SAFE / REAL_CLOSING_UAT_PENDING`
 
-Evidence cut-off: 22 September 2026, 22:04 WIB.
+Evidence cut-off: 23 September 2026.
 
 ## Konteks
 
@@ -34,6 +34,13 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 `BUSINESS_READY` tetap status terpisah.
 
 ## Baseline production
+
+### Phase 6 finance, closing, dan exception snapshot
+
+- SagaPOS production source `770c81657b4e589188885e33dc0b7ab3f2f9011a` menyediakan control center Owner untuk rehearsal closing bersih, selisih kas, provider unsettled, HPP incomplete, dan multi-exception; rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27` dan schema tetap 34 migrasi.
+- Readiness server-derived `92%` atau `11/12`. Contract, Owner RBAC, exception matrix, idempotency/replay, observability, UI, release, recovery, restart persistence, dan monitor lulus.
+- Simulator selalu non-mutating: provider tidak dipanggil, ledger/kas tidak ditulis, closing tidak dikunci, customer data tidak dipakai, dan fakta bisnis tidak berubah. Angka 92% adalah subscore Phase 6, bukan business-readiness berbobot seluruh SagaPOS.
+- Satu blocker adalah controlled real shift closing serta acceptance Owner/Finance. Payment/gateway dan inventory reporting tetap OFF.
 
 ### Phase 5 Member lifecycle snapshot
 
@@ -73,7 +80,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 ### SagaPOS
 
 - Runtime production aktif pada exact source
-  `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` dengan 34 migrasi dan health
+  `770c81657b4e589188885e33dc0b7ab3f2f9011a` dengan 34 migrasi dan health
   `ready=true`.
 - Member provider, absensi native, dan penerimaan barang staff aktif. Table
   Order masih `DEMO` dengan payment simulator dan tidak menulis fakta bisnis.
@@ -124,7 +131,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 | Tukar shift/izin/libur | 68 | workflow parsial | approval dan exception operasional |
 | Absensi GPS/foto | 82 | operational-ready | matriks Android/iPhone |
 | Portal Staff/PWA | 80 | root/login aktif | UAT staff dan link hygiene |
-| Finance/report/closing | 58 | sebagian tersedia | finance reconciliation acceptance |
+| Finance/report/closing | 92 | simulator closing/exception dan Owner technical UAT lulus | controlled real closing dan Finance acceptance |
 | Security/monitor/release | 85 | health/recovery aktif | long-run alert dan incident drill |
 | Backup/rollback lokal | 88 | rehearsal lulus | pertahankan per candidate |
 | Independent offsite recovery | 40 | belum diterima | backup dan restore lokasi terpisah |

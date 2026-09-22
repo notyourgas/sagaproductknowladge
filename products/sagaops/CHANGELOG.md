@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Phase 6 finance closing dan exception aktif di production
+
+- Exact source `770c81657b4e589188885e33dc0b7ab3f2f9011a` aktif dengan rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, health ready, service aktif, dan 34 migrasi unchanged.
+- Added Owner-only closing/exception rehearsal untuk closing bersih, selisih kas, provider unsettled, HPP belum lengkap, dan multi-exception; hasil memuat keputusan, reason, action owner, dan replay fingerprint.
+- Readiness Phase 6 `92%` (`11/12`). Simulator tidak memanggil provider, tidak menulis ledger/kas, tidak mengunci closing, dan tidak mengubah fakta bisnis.
+- Release/recovery, authenticated Owner UAT, restart persistence, dan monitor lulus. Satu gate tersisa adalah controlled real shift closing dan acceptance Owner/Finance.
+- Delivery `PRODUCTION_ACTIVATED / PHASE_6_SIMULATION_SAFE / BUSINESS_READY=false`; payment/gateway dan inventory reporting tetap OFF, sedangkan independent offsite restore belum diterima.
+
 ## 2026-09-22 — Katalog publik lulus performance budget production
 
 - Activated exact source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27` dengan rollback `f4553743a55ae659390594e80a7f30c25f47e265`; schema tetap 34 migrasi.
