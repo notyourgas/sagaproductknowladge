@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-22 — Residual Phase 5 Member lifecycle SagaPOS
+
+- `CONFIRMED`: production source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` aktif; readiness Phase 5 `7/8` (`88%`), authenticated Owner UAT dan monitor lulus, serta simulator tidak memanggil provider atau mengubah fakta bisnis.
+- `CONFIRMED`: skenario ambigu menggunakan operation ID/idempotency key dan mewajibkan `LOOKUP_BY_IDEMPOTENCY_KEY_BEFORE_RETRY`; retry buta tidak dianggap solusi.
+- `NEEDS CONFIRMATION`: controlled real-provider mutation UAT belum dijalankan. Bukti harus mencakup earn, reserve/redeem, reversal/refund, replay, lookup setelah hasil ambigu, rekonsiliasi SagaPOS ↔ Customer Platform, dan cleanup data uji.
+- `NEEDS CONFIRMATION`: payment/gateway dan inventory reporting tetap OFF; pilot customer representatif, support/dispute SOP, monitoring jangka panjang, serta independent offsite restore belum diterima. Dampak: `PHASE_5_SIMULATION_SAFE / BUSINESS_READY=false`.
+
 ## 2026-09-22 — Residual completion katalog publik SagaPOS
 
 - `CONFIRMED`: production source kumulatif `26eb16807e4a76349b1864f83dfb2624a369d821` aktif; lima surface browse-only, 22 produk, authenticated Owner smoke, recovery, dan monitor lulus. Payment/gateway serta inventory reporting tetap OFF; Table Order tetap demo-only.

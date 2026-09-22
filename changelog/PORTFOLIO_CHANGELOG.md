@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS Phase 5 Member lifecycle aktif
+
+- `CONFIRMED`: production exact source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f`, rollback `26eb16807e4a76349b1864f83dfb2624a369d821`, health ready, service aktif, dan 34 migrasi unchanged.
+- Owner Dashboard mempunyai simulator aman commerce → earn → reserve → redeem → reversal dengan tiga skenario, replay deterministik, serta lookup-before-retry untuk hasil ambigu.
+- Authenticated Owner UAT membuktikan readiness `88%` (`7/8`), role/provider yang benar, provider tidak dipanggil, dan fakta bisnis tidak berubah. Full regression 1.548 pass/0 fail, recovery, restart persistence, dan monitor lulus.
+- Delivery `PRODUCTION_ACTIVATED / PHASE_5_SIMULATION_SAFE / BUSINESS_READY=false`; controlled provider mutation UAT, pilot customer, offsite restore, payment, dan reporting tetap residual.
+
 ## 2026-09-22 — SagaPOS katalog publik handoff-complete
 
 - `CONFIRMED`: source kumulatif `26eb16807e4a76349b1864f83dfb2624a369d821` aktif dengan rollback Phase 4 `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; 34 migrasi unchanged.

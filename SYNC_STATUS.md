@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-22 — SagaPOS Phase 5 Member lifecycle production
+
+- Status `accepted`; klasifikasi `CONFIRMED`; production source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f`; rollback `26eb16807e4a76349b1864f83dfb2624a369d821`; schema 34 migrasi unchanged.
+- Synced: Owner simulator earn/redeem/reversal, idempotency/replay, lookup-before-retry, authority boundary, readiness `88%` (`7/8`), exact release/recovery, authenticated Owner UAT, dan residual provider mutation gate.
+- Evidence: static/type 576, OpenAPI 3.1, full 1.548 pass/0 fail/72 controlled skip, immutable artifact, encrypted backup/disposable restore, code-only rehearsal, activation, restart smoke, Phase 5 Owner UAT, dan monitor PASS.
+- Production berubah: ya, code-only tanpa migration atau transaksi. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_5_SIMULATION_SAFE / BUSINESS_READY=false`.
+- Next: controlled provider mutation UAT untuk earn, redeem, reversal/refund, replay, lookup, dan reconciliation; independent offsite restore, payment, reporting, serta pilot customer tetap gate terpisah.
+
 ## 2026-09-22 — SagaPOS public catalogue handoff completion
 
 - Status `partially accepted`; klasifikasi runtime `CONFIRMED` dan residual bisnis `NEEDS CONFIRMATION`; production source `26eb16807e4a76349b1864f83dfb2624a369d821`; rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; schema 34 migrasi unchanged.

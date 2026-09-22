@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-22 — Sinkronisasi SagaPOS Phase 5 Member lifecycle
+
+- `CONFIRMED`: source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` aktif dengan rollback `26eb16807e4a76349b1864f83dfb2624a369d821`; schema 34 migrasi unchanged.
+- Knowledge diperbarui untuk simulator earn/redeem/reversal, idempotency dan rekonsiliasi ambigu, authority boundary, readiness `88%` (`7/8`), exact release/recovery, Owner UAT, serta residual controlled provider mutation UAT.
+- File terdampak: scoreboard, SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, GAPS, SYNC_STATUS, dan root CHANGELOG.
+- Production berubah melalui code-only release tanpa transaksi atau migration. Tidak ada credential, PII, payload/receipt mentah, tenant/device identifier, database dump, atau path restricted yang dipublikasikan. Status `PHASE_5_SIMULATION_SAFE / BUSINESS_READY=false`.
+
 ## 2026-09-22 — Sinkronisasi completion katalog publik SagaPOS
 
 - `CONFIRMED`: exact source `26eb16807e4a76349b1864f83dfb2624a369d821` aktif di production di atas Phase 4, dengan rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` dan 34 migrasi unchanged.

@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Phase 5 Member lifecycle aktif di production
+
+- `CONFIRMED`: source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` aktif; rollback `26eb16807e4a76349b1864f83dfb2624a369d821`; schema tetap 34 migrasi.
+- Owner memperoleh simulator aman earn → redeem → reversal dengan skenario happy path, redeem ambigu, dan reversal pending, termasuk idempotency/replay fingerprint serta instruksi lookup-before-retry.
+- Readiness Phase 5 `88%` (`7/8`). Simulator tidak memanggil provider, tidak memakai customer data, dan tidak mengubah fakta bisnis.
+- Full regression 1.548 pass/0 fail/72 controlled skip, static/type 576, immutable release, backup/restore, rehearsal, Owner restart smoke, authenticated UAT, dan monitor PASS.
+- Delivery `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_5_SIMULATION_SAFE / BUSINESS_READY=false`; controlled provider mutation UAT, real customer pilot, offsite restore, payment, dan reporting masih pending.
+
 ## 2026-09-22 — Katalog publik handoff-complete di atas Phase 4
 
 - Activated cumulative exact source `26eb16807e4a76349b1864f83dfb2624a369d821` dengan rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; artifact `77c7e914b03ce325055feafbf83bf63ddb683179c1ad4d43d7390da72a6a61f7`; schema tetap 34 migrasi.

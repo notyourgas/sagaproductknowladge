@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-22 — Phase 5 Member earn, redeem, dan reversal
+
+- `CONFIRMED`: exact source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` aktif pada production dengan rollback `26eb16807e4a76349b1864f83dfb2624a369d821`, health `ready=true`, service aktif, dan schema tetap 34 migrasi.
+- Owner Dashboard menambahkan console Phase 5 untuk memahami alur commerce → earn → reserve → redeem → reversal melalui tiga skenario aman: happy path, redeem ambigu, dan reversal pending. Input memakai nilai belanja eligible, biaya reward, serta idempotency key; hasil menampilkan operation ID, replay fingerprint, langkah lifecycle, saldo proyeksi, dan tindakan rekonsiliasi.
+- Simulator tidak memanggil provider, tidak memakai data customer, dan tidak mengubah poin, stok, penjualan, settlement, atau fakta bisnis. Status ambigu selalu diarahkan ke `LOOKUP_BY_IDEMPOTENCY_KEY_BEFORE_RETRY`, bukan retry buta.
+- Readiness Phase 5 production adalah `88%` atau `7/8`. Kontrak, idempotency, replay deterministik, reversal, rekonsiliasi, Owner surface, dan observability simulasi lulus; satu gate tersisa adalah controlled mutation UAT terhadap provider authoritative dengan data uji yang disetujui.
+- Source validation menghasilkan 1.548 pass, 0 fail, dan 72 controlled skip dari 1.620 test; static/type 576 modul, OpenAPI 3.1, artifact immutable, encrypted backup/disposable restore, code-only recovery rehearsal, Owner restart smoke, authenticated Phase 5 UAT, dan monitor lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_5_SIMULATION_SAFE / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap `OFF`; real earn/redeem/reversal, pilot customer, serta independent offsite restore tetap gate terpisah.
+
 ## Production 2026-09-22 — Katalog publik handoff-complete di atas Phase 4
 
 - `CONFIRMED`: exact source kumulatif `26eb16807e4a76349b1864f83dfb2624a369d821` aktif pada production dengan rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`, artifact SHA-256 `77c7e914b03ce325055feafbf83bf63ddb683179c1ad4d43d7390da72a6a61f7`, health `ready=true`, dan schema tetap 34 migrasi. Release mempertahankan seluruh perubahan Phase 4 workforce.

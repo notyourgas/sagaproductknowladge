@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## Phase 5 Member lifecycle — production 2026-09-22
+
+- `CONFIRMED`: source production `9c2035b27d10a2729896fa2adf0f8a8331c21d1f`; rollback `26eb16807e4a76349b1864f83dfb2624a369d821`; 34 migrasi unchanged.
+- Control surface Owner menyediakan tiga rehearsal: `HAPPY_PATH`, `AMBIGUOUS_REDEEM`, dan `REVERSAL_PENDING`. Idempotency key menghasilkan operation ID dan replay fingerprint deterministik agar operator dapat membedakan retry aman dari rekonsiliasi wajib.
+- Boundary authority tidak berubah: SagaPOS adalah sumber commerce/order; Customer Platform tetap authority identity, consent, loyalty ledger, tier, dan reward lifecycle; Saga Member tetap projection client; Saga Platform tetap control-plane projection.
+- Rehearsal bersifat non-mutating: `providerCalled=false`, `businessFactsAffected=false`, dan `customerDataUsed=false`. Alur ambigu memberi action `LOOKUP_BY_IDEMPOTENCY_KEY_BEFORE_RETRY` dan tidak mengklaim provider settlement berhasil.
+- Readiness server-derived `7/8` (`88%`); gate kedelapan adalah controlled real-provider mutation UAT yang harus membuktikan earn, redeem, reversal/refund, replay, dan lookup dengan approval serta cleanup yang terdokumentasi.
+- Release code-only lulus full regression 1.548/0 fail/72 controlled skip, packaging immutable, encrypted backup/disposable restore, recovery rehearsal, authenticated Owner UAT, restart persistence, dan monitor. Same-host recovery lulus; independent offsite restore belum diterima.
+- Status maksimum: `PRODUCTION_ACTIVATED / PHASE_5_SIMULATION_SAFE / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap OFF.
+
 ## 2026-09-22 — Completion handoff katalog publik di atas Phase 4
 
 Production sekarang menjalankan source kumulatif `26eb16807e4a76349b1864f83dfb2624a369d821`, turunan langsung dari Phase 4 `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`. Dengan demikian hardening katalog tidak menghapus Staff Portal, roster, attendance, atau readiness workforce yang sudah aktif. Artifact immutable mempunyai SHA-256 `77c7e914b03ce325055feafbf83bf63ddb683179c1ad4d43d7390da72a6a61f7`; rollback menunjuk ke `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; ledger tetap 34 migrasi.

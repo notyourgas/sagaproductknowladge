@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS Phase 5 Member lifecycle aktif
+
+- `CONFIRMED`: production source terbaru `9c2035b27d10a2729896fa2adf0f8a8331c21d1f`, rollback `26eb16807e4a76349b1864f83dfb2624a369d821`, health ready, dan 34 migrasi unchanged.
+- Owner Dashboard dapat menjalankan rehearsal commerce → earn → reserve → redeem → reversal melalui happy path, redeem ambigu, dan reversal pending. Idempotency/replay deterministik dan status ambigu mewajibkan lookup-before-retry.
+- Simulator adalah alat technical UAT: provider tidak dipanggil, data customer tidak dipakai, serta poin, order, stok, settlement, dan fakta bisnis tidak berubah. Customer Platform tetap authority loyalty; SagaPOS tetap authority commerce; Saga Member tetap projection client; Saga Platform tetap control plane.
+- Readiness Phase 5 `88%` (`7/8`) dan authenticated Owner UAT lulus. Jangan menyebut real earn/redeem/reversal siap operasional sebelum controlled provider mutation UAT, reconciliation, pilot customer, dan cleanup data uji lulus. Status `PHASE_5_SIMULATION_SAFE / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; payment/reporting tetap OFF dan offsite restore belum diterima.
+
 ## Update 2026-09-22 — SagaPOS katalog handoff-complete di production
 
 - `CONFIRMED`: production source terbaru `26eb16807e4a76349b1864f83dfb2624a369d821`, rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`, 34 migrasi unchanged. Source ini mempertahankan Phase 4 workforce.

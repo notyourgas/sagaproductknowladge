@@ -1,8 +1,8 @@
 # SagaPOS dan Saga Member Business Readiness Scoreboard
 
-Status: `CONFIRMED / PHASE_4_ACTIVE_PILOT_EVIDENCE_PENDING`
+Status: `CONFIRMED / PHASE_5_SIMULATION_SAFE / PROVIDER_MUTATION_UAT_PENDING`
 
-Evidence cut-off: 22 September 2026, 21:05 WIB.
+Evidence cut-off: 22 September 2026, 22:04 WIB.
 
 ## Konteks
 
@@ -35,6 +35,13 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 
 ## Baseline production
 
+### Phase 5 Member lifecycle snapshot
+
+- SagaPOS production source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` menyediakan console Owner untuk rehearsal commerce → earn → reserve → redeem → reversal; rollback tetap `26eb16807e4a76349b1864f83dfb2624a369d821` dan schema 34 migrasi unchanged.
+- Readiness server-derived `88%` atau `7/8`. Happy path, redeem ambigu, reversal pending, idempotency/replay deterministik, lookup-before-retry, Owner RBAC, dan observability simulasi lulus.
+- Simulator selalu non-mutating: provider tidak dipanggil, customer data tidak dipakai, dan fakta bisnis tidak berubah. Angka 88% adalah subscore Phase 5, bukan business-readiness berbobot seluruh SagaPOS atau Saga Member.
+- Satu blocker adalah controlled mutation UAT terhadap provider authoritative untuk earn, redeem, reversal/refund, replay, dan lookup. Sampai gate itu lulus, real loyalty lifecycle belum boleh disebut operational-ready.
+
 ### Phase 4 workforce snapshot
 
 - SagaPOS production source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` menyediakan Phase 4 readiness Owner-only dan Staff Portal PWA native.
@@ -66,7 +73,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 ### SagaPOS
 
 - Runtime production aktif pada exact source
-  `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` dengan 34 migrasi dan health
+  `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` dengan 34 migrasi dan health
   `ready=true`.
 - Member provider, absensi native, dan penerimaan barang staff aktif. Table
   Order masih `DEMO` dengan payment simulator dan tidak menulis fakta bisnis.
@@ -105,7 +112,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 | Cash dan shift accountability | 65 | kontrak tersedia, activation tertutup | cash drawer, closing, SOP |
 | QRIS/payment gateway | 55 | simulator dan guard tersedia | live canary paling akhir |
 | Refund/reversal/settlement | 55 | contract/simulator | provider settlement nyata |
-| Member/reward di POS | 72 | provider aktif | earn–redeem–refund end-to-end |
+| Member/reward di POS | 80 | provider dan simulator lifecycle aktif | controlled earn–redeem–reversal UAT |
 | Database bahan | 80 | UI/data model aktif | master data bahan asli |
 | Supplier dan pembelian | 72 | flow tersedia | PO, invoice, supplier asli |
 | Penerimaan barang | 80 | staff runtime ready | object storage dan perangkat nyata |
@@ -144,7 +151,7 @@ menutupi gate kritis payment, reporting, hardware, offsite recovery, dan pilot.
 | Inbox | 76 | aktif | event bisnis nyata |
 | Notification preference | 72 | UI/state aktif | delivery provider |
 | Push provider | 35 | belum aktif penuh | provider dan delivery receipt |
-| Integrasi SagaPOS | 75 | machine provider aktif | earn–redeem–refund end-to-end |
+| Integrasi SagaPOS | 78 | machine provider dan simulator lifecycle aktif | controlled mutation UAT end-to-end |
 | Integrasi Saga Platform | 90 | projection `HEALTHY` | business operator acceptance |
 | Dashboard Owner | 84 | aktif production | acceptance rutinitas harian |
 | SagaBook/cross-product | 55 | handoff parsial | booking dan benefit end-to-end |
