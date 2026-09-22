@@ -33,6 +33,7 @@ status berbeda; repository harus terus disinkronkan setelah perubahan material.
    untuk AI.
 3. [DECISIONS.md](DECISIONS.md) — keputusan founder dan governance.
 4. [SYNC_STATUS.md](SYNC_STATUS.md) — snapshot sinkronisasi terakhir.
+5. [SagaPOS dan Saga Member Business Readiness Scoreboard](docs/SAGA_POS_MEMBER_BUSINESS_READINESS_SCOREBOARD.md) — nilai proses, gate, dan urutan fase.
 5. [GAPS.md](GAPS.md) — pertanyaan dan keputusan founder yang belum ditutup.
 6. [SAGA_PRODUCT_PORTFOLIO.md](docs/SAGA_PRODUCT_PORTFOLIO.md) — hubungan dan
    batas produk.

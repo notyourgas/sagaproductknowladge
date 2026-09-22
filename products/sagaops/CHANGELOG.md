@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Phase 0 production truth dan scoreboard
+
+- Recorded exact live source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, health ready, 34 migrasi, Member provider/attendance/receiving ready, Table Order demo-only, serta payment dan inventory reporting OFF.
+- Validated exact source dengan static/type check 559 modul, 14 focused Menu Preview/Table Order tests, dan production dependency audit nol vulnerability.
+- Corrected Portal Staff canonical link menjadi `https://staff.sagapos.site/`, yang mengarahkan pengguna ke `/login/staff`.
+- Added cross-product Business Readiness Scoreboard dengan baseline SagaPOS `62/100` dan Saga Member `72/100`, evidence scale, residual gates, serta phase order sampai QRIS/hardware terakhir.
+- Knowledge-only change; production tidak dimutasi. Delivery tetap `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-22 — Menu & Promo Batch 7 diaktifkan dan lolos Owner UAT
 
 - Activated exact source `4349024cff24be29e7fffd4123f7ab3fb3670c5d`; rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`; schema tetap 34 migrasi.

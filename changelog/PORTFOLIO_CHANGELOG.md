@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — Phase 0 readiness SagaPOS dan Saga Member
+
+- `CONFIRMED`: SagaPOS production truth terbaru adalah source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`; runtime ready, Member provider/attendance/receiving aktif, Table Order masih demo, serta payment dan inventory reporting tetap OFF.
+- Portal Staff kanonik diperbaiki ke [staff.sagapos.site](https://staff.sagapos.site/). Saga Member/Owner dan Saga Platform tetap public-healthy pada pemeriksaan Phase 0; status integrasi terakhir `HEALTHY`.
+- [Business Readiness Scoreboard](../docs/SAGA_POS_MEMBER_BUSINESS_READINESS_SCOREBOARD.md) menetapkan baseline berbobot SagaPOS `62/100`, Saga Member `72/100`, dan urutan fase sampai QRIS/hardware terakhir.
+- Phase 0 tidak mengubah production. Exact release ID/rollback/artifact SagaPOS source terbaru masih perlu direkonsiliasi dari receipt restricted; `BUSINESS_READY=false`.
+
 ## 2026-09-22 — Saga Member terhubung sehat ke Saga Platform
 
 - `CONFIRMED`: [Saga Member](https://app.sagamember.site/member), [Owner](https://app.sagamember.site/owner), dan [console Platform](https://platform.sagasuper.tech/products/sagamember) aktif pada release Member `20260922T070500Z-cb51362-r0u` dan Platform `20260922060607-aeb17ba`.

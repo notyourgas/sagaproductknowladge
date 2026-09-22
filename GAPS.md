@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-22 — Residual Phase 0 SagaPOS dan Saga Member
+
+- `CONFIRMED`: drift source runtime SagaPOS ditutup pada knowledge dengan exact live source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`; link Portal Staff dikoreksi dan scoreboard lintas produk dibuat.
+- `NEEDS CONFIRMATION`: exact release identifier, rollback pointer, artifact checksum, dan recovery receipt yang terikat ke SagaPOS source live terbaru belum tersedia melalui bukti publik. Ini bukan kegagalan health, tetapi provenance release perlu direkonsiliasi sebelum promosi SagaPOS berikutnya.
+- `NEEDS CONFIRMATION`: Table Order masih demo-only; inventory reporting dan payment tetap OFF; object-storage migration, offsite recovery, UAT role/perangkat, load test, SOP, dan pilot bisnis tetap terbuka.
+- `NEEDS CONFIRMATION`: Saga Member masih membutuhkan public/customer pilot, earn–redeem–refund nyata, Push, support/privacy operation, offsite restore, dan acceptance bisnis. QRIS/NFC/hardware ditempatkan pada fase terakhir tetapi contract/simulator/runbook disiapkan lebih awal.
+- Status gabungan tetap `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Residual setelah density dan motion Saga Member
 
 - `CONFIRMED`: frontend `657a482f511edb9d71d012342102fffc0ec4eb31` aktif pada release `20260921T134857Z-f0ab22a-r0u`; visual production, recovery, monitor, dan health lulus.

@@ -42,6 +42,7 @@ Indeks mencakup knowledge publik pada evidence cut-off 16 Agustus 2026 08:39 WIB
   business readiness.
 - [Update Protocol](docs/UPDATE_PROTOCOL.md) — aturan sinkronisasi.
 - [Source Registry](docs/SOURCE_REGISTRY.md) — jenis sumber dan standar bukti.
+- [SagaPOS dan Saga Member Business Readiness Scoreboard](docs/SAGA_POS_MEMBER_BUSINESS_READINESS_SCOREBOARD.md) — baseline capability, residual gate, dan urutan fase.
 - [ChatGPT Import Guide](docs/CHATGPT_IMPORT_GUIDE.md) — cara memberi konteks
   repository kepada ChatGPT.
 

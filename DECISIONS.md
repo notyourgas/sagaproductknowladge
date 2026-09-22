@@ -1,5 +1,25 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-207 — QRIS dan hardware diuji terakhir setelah fondasi siap
+
+- Tanggal: 2026-09-22. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: urutan finalisasi business readiness SagaPOS dan Saga Member.
+- Keputusan: QRIS dan hardware tetap disiapkan sejak awal melalui contract,
+  simulator, idempotency, recovery, kill switch, device registry, print spooler,
+  dan runbook. Acceptance uang nyata, settlement, printer, NFC, kiosk/KDS,
+  jaringan, dan UPS dilakukan pada fase terakhir setelah data, flow, role,
+  reporting, recovery, SOP, dan pilot simulasi siap.
+- Alasan: pekerjaan software dan operasional dapat diselesaikan tanpa menunggu
+  perangkat atau transaksi uang, tetapi provider/hardware tetap harus diuji
+  sebelum status business-ready diberikan.
+- Alternatif: mengaktifkan QRIS atau membeli/menguji hardware lebih awal tidak
+  dipilih; melewati acceptance provider/perangkat juga tidak dipilih.
+- Dampak: baseline dan phase order dikunci pada [Business Readiness
+  Scoreboard](docs/SAGA_POS_MEMBER_BUSINESS_READINESS_SCOREBOARD.md). Keputusan
+  ini bukan otorisasi transaksi nyata, pembelian hardware, atau provider
+  activation.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [Saga Platform](products/saga-platform/PRODUCT.md), [gaps](GAPS.md), dan [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-206 — Staff Campaign QR memakai akun dan password terpisah
 
 - Tanggal: 2026-09-21. Status: `CONFIRMED`; pemberi keputusan Andreas.

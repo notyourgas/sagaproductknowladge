@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — Phase 0 readiness SagaPOS dan Saga Member
+
+- `CONFIRMED`: SagaPOS live memakai exact source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, 34 migrasi, runtime ready, Member provider/attendance/receiving ready. Table Order tetap demo-only; payment/gateway dan inventory reporting tetap OFF.
+- Portal Staff kanonik adalah `https://staff.sagapos.site/` dan redirect ke `/login/staff`; jangan membagikan URL historis `/staff/login`.
+- [Business Readiness Scoreboard](docs/SAGA_POS_MEMBER_BUSINESS_READINESS_SCOREBOARD.md) adalah sumber nilai proses: SagaPOS `62/100`, Saga Member `72/100`. Nilai hanya naik dari evidence; QRIS dan hardware dipersiapkan sekarang tetapi physical acceptance dilakukan pada fase terakhir.
+- Saga Member/Owner dan Platform public smoke tetap sehat. Status `PRODUCTION_ACTIVATED / BUSINESS_READY=false`; Phase 0 tidak melakukan deployment atau data/provider mutation.
+
 ## Update 2026-09-22 — Integrasi Saga Member ↔ Saga Platform aktif dan sehat
 
 - `CONFIRMED`: Member release `20260922T070500Z-cb51362-r0u` dan Platform release `20260922060607-aeb17ba` aktif. Owner integration dan projection Platform sama-sama `HEALTHY` dengan nol isu terbuka pada cut-off 07:10 UTC.

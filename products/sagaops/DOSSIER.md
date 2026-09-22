@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-22 — Phase 0 production truth dan readiness registry
+
+Pemeriksaan read-only terhadap domain publik dan runtime health menetapkan source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3` sebagai production truth terbaru. Runtime melaporkan ready dengan 34 migrasi, Member provider aktif, absensi dan penerimaan barang staff ready, serta Table Order durable dalam scope demo yang tidak memengaruhi fakta bisnis. Payment/gateway dan inventory reporting tetap OFF.
+
+Checkout bersih pada exact source tersebut lulus static/type check 559 modul, 14 focused Menu Preview/Table Order tests, dan production dependency audit nol vulnerability. Ini memvalidasi source dan boundary demo, bukan menggantikan full regression, release receipt, atau business UAT.
+
+Portal Staff kanonik adalah `https://staff.sagapos.site/` dan redirect ke `/login/staff`. Referensi `/staff/login` dalam knowledge historis diperbarui tanpa mengubah aplikasi production. Baseline capability dan aturan kenaikan nilai kini dikunci pada `docs/SAGA_POS_MEMBER_BUSINESS_READINESS_SCOREBOARD.md` agar UI, deployment, technical UAT, pilot, dan business acceptance tidak tercampur.
+
+Phase 0 hanya menyelaraskan knowledge dan governance; tidak melakukan deployment, migration, data mutation, provider activation, QRIS canary, atau hardware test. Exact release identifier, rollback pointer, dan artifact receipt untuk source live ini belum tersedia dari endpoint publik dan tetap `NEEDS CONFIRMATION`. `BUSINESS_READY=false`.
+
 ## 2026-09-22 — Menu & Promo Batch 7 production activation
 
 Release final memakai source `4349024cff24be29e7fffd4123f7ab3fb3670c5d`, artifact SHA-256 `32f400f4cb6f33ceb581be146e663046584c0446af805399ca2c83645fd747ee`, dan rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`. Schema tetap 34 migrasi. Jalur code-only membuat backup baru, membuktikan disposable restore, menjalankan candidate-current-candidate pada namespace terisolasi, lalu melakukan switch atomik tanpa transaksi atau perubahan schema.

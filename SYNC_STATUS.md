@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-22 — Phase 0 SagaPOS dan Saga Member
+
+- Status `accepted`; klasifikasi `CONFIRMED`; production truth SagaPOS `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`; Saga Member release terakhir terverifikasi `20260922T070500Z-cb51362-r0u`.
+- Synced: runtime capability state, canonical Portal Staff link, readiness scoring method, per-feature baseline, phase order, QRIS/hardware-last decision, residual provenance, dan business gates.
+- Evidence: SagaPOS public dashboard/health ready, 34 migrasi, Member provider/attendance/receiving ready, Table Order demo-only, payment/reporting OFF; exact-source check 559 modul, 14 focused tests, audit nol vulnerability; Member/Owner 200; Platform up 200; Platform product anonymous redirect ke login; Portal Staff root redirect ke `/login/staff`.
+- Production berubah: tidak. Delivery tetap `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Next: Phase 1 master data bisnis; sebelum promotion SagaPOS baru, rekonsiliasi restricted receipt untuk release ID, rollback, artifact, dan recovery source live terbaru.
+
 ## 2026-09-22 — Saga Member ↔ Saga Platform projection activation
 
 - Status `accepted`; klasifikasi `CONFIRMED`; Member release `20260922T070500Z-cb51362-r0u`, Platform release `20260922060607-aeb17ba`.

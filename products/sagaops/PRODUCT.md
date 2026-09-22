@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production truth 2026-09-22 — Phase 0 readiness baseline
+
+- `CONFIRMED`, cut-off 16:00 WIB: production SagaPOS berjalan pada exact source `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, health `ready=true`, dan 34 migrasi. Snapshot ini menggantikan `4349024cff24be29e7fffd4123f7ab3fb3670c5d` sebagai fakta runtime terbaru tanpa menghapus histori release sebelumnya.
+- Member provider, absensi native, dan penerimaan barang staff aktif. Table Order tetap `DEMO` dengan payment simulator serta tidak memengaruhi fakta bisnis. Payment/gateway dan inventory reporting tetap `OFF`; evidence storage masih filesystem VPS dan object-storage migration belum diterima.
+- Exact-source Phase 0 validation lulus: static/type check 559 modul, 14 focused Menu Preview/Table Order tests, dan production dependency audit nol vulnerability.
+- [Portal Staff](https://staff.sagapos.site/) kanonik mengarahkan ke `/login/staff`; URL historis `/staff/login` tidak lagi dipakai. Dashboard Owner tetap aktif di [dashboard.sagapos.site/dashboard](https://dashboard.sagapos.site/dashboard).
+- Registry lintas produk tersedia pada [Business Readiness Scoreboard](../../docs/SAGA_POS_MEMBER_BUSINESS_READINESS_SCOREBOARD.md). Baseline berbobot SagaPOS `62/100`; QRIS dan hardware dipersiapkan tetapi acceptance fisik ditempatkan pada fase terakhir.
+- Tidak ada deployment atau perubahan runtime pada sinkronisasi Phase 0 ini. Delivery tetap `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## Production 2026-09-22 — Menu & Promo Batch 7 aktif untuk Owner
 
 - `CONFIRMED`: exact source `4349024cff24be29e7fffd4123f7ab3fb3670c5d` aktif pada production dengan rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`; schema tetap 34 migrasi.
@@ -123,7 +132,7 @@
 
 ## 2026-09-17 — UI Portal Staff diselaraskan dengan handoff dan Feather Icons
 
-- `CONFIRMED`: exact source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
+- `CONFIRMED`: exact source `4f3acabaf8b1656b70909712f0d00b13b5599802` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/); rollback `21bbba38366a47cb6cf23a8e53b2e318d460e94f`.
 - UI memakai token handoff: Plus Jakarta Sans, palet netral-cokelat, judul 28/34, isi 16/24, caption 12/16, angka utama 40/44, kartu 24 px, tombol 52 px, input 52 px, dan icon 22 px dengan stroke 1.8.
 - Seluruh icon navigasi, aksi, status, attendance, pengajuan, dan penerimaan memakai satu bahasa Feather outline. Glyph campuran, gradient, glow, dan blur dekoratif lama telah dihapus.
 - Flow Pengajuan kini membuka pemilih jenis satu kolom sebagai layar fokus, lalu form terkait tanpa header utama atau bottom navigation. Layout tervalidasi tanpa overflow pada 360, 390, 430, dan 768 px.
@@ -132,7 +141,7 @@
 
 ## 2026-09-17 — Portal Staff mobile mengikuti handoff operasional v1
 
-- `CONFIRMED`: exact source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.
+- `CONFIRMED`: exact source `21bbba38366a47cb6cf23a8e53b2e318d460e94f` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/); rollback `66860fa67e5e509daee81d1ad42e0a9ed4d0e4df`.
 - Portal memakai empat navigasi utama mobile-first: Beranda, Jadwal, Pengajuan, dan Barang. Dua puluh sembilan state handoff terhubung ke data tenant/outlet/staf yang terautentikasi, termasuk empty, loading, error, koreksi, dan pemulihan respons tidak pasti.
 - Absensi memeriksa shift dan jendela waktu server, GPS, foto, receipt, serta status operasi; Jadwal menyediakan daftar/rentang dan detail milik staf; Pengajuan menyediakan form kondisional dan timeline keputusan; Barang Datang mempertahankan draft, beberapa item/foto, retry, koreksi, dan receipt ID.
 - Payroll tetap preview-only tanpa payout atau aktivasi performance. Lampiran umum Pengajuan belum diaktifkan; foto koreksi absensi memakai jalur evidence attendance yang terproteksi.
@@ -141,7 +150,7 @@
 
 ## 2026-09-17 — Review barang datang dapat diminimalkan di HP
 
-- `CONFIRMED`: exact source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.
+- `CONFIRMED`: exact source `c9e23066ba010a94cc98cec8fec9b7702847b7c2` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/); rollback `f618dacdc2b35d19712d8c058757f55757a8d044`.
 - Panel Review yang menempel di bawah layar kini mempunyai tombol tutup. Saat diminimalkan, panel berubah menjadi bar ringkas berisi jumlah bahan dan foto, lalu dapat dibuka kembali untuk mengirim.
 - Menutup panel tidak menghapus supplier, bahan, foto, atau draft perangkat. Tombol berukuran minimal 44 px dan state buka/tutup memiliki label aksesibel.
 - Static/type check 520 modul dan focused browser 4/4 lulus. Public HTML/JS/CSS, exact-source health, backup/restore, monitor dan timer terverifikasi.
@@ -149,7 +158,7 @@
 
 ## 2026-09-17 — Login Portal Staff mobile tidak lagi terpental
 
-- `CONFIRMED`: exact source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
+- `CONFIRMED`: exact source `f618dacdc2b35d19712d8c058757f55757a8d044` aktif pada [Portal Staff SagaPOS](https://staff.sagapos.site/); rollback `8b15d82320825658fcbc78958c322c24ae55268c`.
 - Login, session, dan home sebelumnya berhasil, tetapi permintaan eligibility absensi diblokir ingress sehingga portal kembali ke layar login dengan pesan portal belum tersedia. Allowlist ingress kini meneruskan seluruh route attendance native yang terautentikasi.
 - Public smoke membuktikan login `200`, session/attendance/receiving anonim `401`, serta route Owner dan legacy tetap `403`. Service, monitor, maintenance timer, exact-source health, backup/restore, dan 34 migration tetap sehat.
 - Static/type check 520 modul dan full suite 1.484 test selesai dengan 1.412 pass, 0 fail, 71 expected skip, dan 1 TODO lama.
@@ -157,7 +166,7 @@
 
 ## 2026-09-17 — Penerimaan barang staf diperkeras dan aktif di production
 
-- `CONFIRMED`: exact source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard) dan [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
+- `CONFIRMED`: exact source `81154a727e601b0e5cc94e601593a750cd61b25b` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard) dan [Portal Staff SagaPOS](https://staff.sagapos.site/); rollback `ff717a612093231f145f1b13e0456bc1ff2fee5a`.
 - Draft dan foto barang datang bertahan setelah refresh, dapat dicoba ulang per foto saat koneksi putus/lambat, serta mencegah perubahan form selama upload atau submit. Multi-foto, koreksi Owner, resubmit, idempotensi, dan pemulihan status `POSTING` tetap tercatat.
 - Receipt dapat terhubung ke supplier dan PO, membawa business date serta biaya SHIPPING/HANDLING/OTHER, dan menerima beberapa lot bahan yang sama tanpa kehilangan lot/expiry. Duplicate delivery, selisih harga, kondisi barang, biaya yang belum jelas, dan capability outlet ditangani fail-closed atau masuk review Owner.
 - Evidence tetap privat pada filesystem VPS dengan checksum, validasi struktur/dimensi gambar, batas kapasitas dan concurrency, encrypted recovery set DB+credential+media, monitor 60 detik, serta maintenance timer. Adapter object storage belum diaktifkan (`objectStorageMigrationReady=false`).
@@ -166,7 +175,7 @@
 
 ## 2026-09-17 — Absensi terjadwal dengan GPS dan foto wajah aktif di production
 
-- `CONFIRMED`: exact source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard) dan [Portal Staff SagaPOS](https://staff.sagapos.site/staff/login); rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.
+- `CONFIRMED`: exact source `6002ea4ffe8c71c58de5be0bb28d7d8faa8a7c36` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard) dan [Portal Staff SagaPOS](https://staff.sagapos.site/); rollback `e5e291c9e25334f52bd0551045e92ac4889fcd65`.
 - Karyawan hanya dapat absen pada shift terbit, mulai 60 menit sebelum shift sampai 60 menit setelah shift selesai. Waktu server, shift malam, absensi masuk/pulang, idempotensi, sesi singkat anti-replay, serta pengajuan lupa absen ditangani server-side.
 - Portal mobile meminta GPS akurat dan kamera depan, menampilkan jarak/akurasi serta receipt. Foto disimpan privat dan hanya dapat dilihat Owner terautentikasi; fitur ini adalah bukti foto, bukan pengenalan biometrik.
 - Owner dapat mengatur jendela waktu, radius, akurasi, koordinat outlet, aturan review/block, serta kewajiban GPS/foto dari tab Absensi. Catatan di luar area atau kurang akurat masuk antrean review bila kebijakan `REVIEW` dipilih.
@@ -256,7 +265,7 @@
 - `CONFIRMED`: source `537a9aef3363ac18cdef5f4dda518b5430dbb267` aktif pada [Owner Dashboard SagaPOS](https://dashboard.sagapos.site/dashboard); rollback kompatibel `2d47ee3cfe4da90c1325df5923bf739d52a35598`.
 - Area Tim & Shift kini native di SagaPOS: Owner dapat membuat akun karyawan dengan Employee ID/password sementara sekali tampil, mengelola template dan roster bulanan, memeriksa absensi/permohonan, lalu membuka tab Laporan payroll dengan filter bulan dan ekspor CSV.
 - Laporan merangkum jadwal jatuh tempo, hadir, izin, absen, telat dan menit telat, absensi belum lengkap/tanpa jadwal, jam kerja, pulang awal, kandidat lembur, tingkat kehadiran, serta baris yang wajib direview. Nominal gaji, potongan otomatis, pembayaran payroll, dan skor kinerja tetap tidak dihitung atau diaktifkan.
-- Runtime production memensiunkan `/hr` dan API bridge SagaWork dengan respons tertutup; portal staf native tersedia pada [staff.sagapos.site](https://staff.sagapos.site/staff/login). Data tetap tenant/outlet scoped pada PostgreSQL SagaPOS.
+- Runtime production memensiunkan `/hr` dan API bridge SagaWork dengan respons tertutup; portal staf native tersedia pada [staff.sagapos.site](https://staff.sagapos.site/). Data tetap tenant/outlet scoped pada PostgreSQL SagaPOS.
 - Full suite 1.372 test: 1.300 pass, 0 fail, 71 skip, 1 TODO; focused 26/26 dan dependency audit 0. Artifact immutable, migration V3 aditif, backup/restore, rehearsal kandidat–rollback–kandidat, activation, exact-source health, file integrity, database, HTTPS dan negative auth lulus.
 - Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PENDING / BUSINESS_READY=false`; performance, payroll payout, kebijakan nominal/potongan, geofence/foto attendance, dan offsite recovery tetap gate terpisah.
 

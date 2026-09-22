@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-22 — Phase 0 readiness SagaPOS dan Saga Member
+
+- `CONFIRMED`: production truth SagaPOS diselaraskan ke `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`; Portal Staff link dikoreksi; cross-product Business Readiness Scoreboard dibuat.
+- Scoreboard mengunci skala evidence, baseline SagaPOS `62/100`, Saga Member `72/100`, feature-by-feature residual, dan phase order yang menempatkan QRIS/hardware acceptance terakhir tanpa menunda persiapan contract/simulator/runbook.
+- File terdampak: `docs/SAGA_POS_MEMBER_BUSINESS_READINESS_SCOREBOARD.md`, `DECISIONS.md`, `INDEX.md`, `README.md`, `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Knowledge-only; production tidak berubah. Tidak ada credential, PII, raw receipt, tenant/device identifier, database dump, atau path restricted yang dipublikasikan.
+
 ## 2026-09-22 — Sinkronisasi integrasi Saga Member ↔ Saga Platform
 
 - `CONFIRMED`: release Member `20260922T070500Z-cb51362-r0u` dan Platform `20260922060607-aeb17ba` aktif dengan projection `HEALTHY`, Owner integration `HEALTHY`, dan nol isu terbuka.
