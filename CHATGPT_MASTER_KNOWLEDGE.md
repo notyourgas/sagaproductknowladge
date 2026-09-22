@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS katalog publik browse-only aktif
+
+- `CONFIRMED`: production source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908`, rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, 34 migrasi unchanged.
+- Empat route `dashboard.sagapos.site/menu*` menampilkan 22 produk published dengan Warm Wood responsive UI, K-price, filter/detail, promo aktif saja, dan Member handoff tanpa akun. Capability cart/quote/checkout/payment/table/KDS semuanya false.
+- Admin editorial fields memakai draft/publish/version/audit; nutrition tampil hanya sebagai `Estimasi Resep` saat sumber tanggal tersedia. Production visual, accessibility, asset decode, recovery, monitor, dan Owner smoke lulus.
+- Status `PRODUCTION_ACTIVATED / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`. Jangan menjanjikan order/payment dari katalog, promo/benefit/nutrisi yang belum diterbitkan, foto final, custom catalog domain, atau QR fisik sebelum gate bisnis selesai.
+
 ## Update 2026-09-22 — SagaPOS Phase 2 inventory/HPP aktif
 
 - `CONFIRMED`: SagaPOS production source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77`, rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`, 34 migrasi, health ready.

@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-22 — SagaPOS public menu catalogue production
+
+- Status `accepted`; klasifikasi `CONFIRMED`; production source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908`; rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`; schema 34 migrasi unchanged.
+- Synced: empat entry point browse-only, Warm Wood responsive contract, server-authoritative published snapshot, editorial admin fields, K-price, detail/error/offline/accessibility states, QR generator, privacy boundary Member, dan asset-manifest fix.
+- Evidence: static/type 569, 31 focused tests, browser 390/768/1440, Axe/no-overflow, exact artifact, target admission, encrypted backup/disposable restore, code-only rehearsal, activation, health/monitor, 22-product API, image/module HTTP, Owner smoke, image decode, product dialog, serta visual mobile/desktop production.
+- Production berubah: ya, code-only tanpa migration atau transaksi. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`.
+- Next: approve/ganti aset foto beserta hak pakai, isi copy/nutrisi dan promo bisnis, proof QR meja fisik, putuskan custom catalog domain, jalankan business UAT/perangkat, dan buktikan offsite restore. Payment/gateway tetap OFF.
+
 ## 2026-09-22 — SagaPOS Phase 2 inventory/HPP production
 
 - Status `accepted`; klasifikasi `CONFIRMED`; production source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77`; rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`.

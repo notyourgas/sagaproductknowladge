@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-09-22 — Redesign katalog publik Kopi Saga production
+
+Source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` mengaktifkan satu presentasi katalog read-only untuk kiosk discovery, e-catalogue, dan QR meja tanpa memperluas authority transaksi. Empat route publik menggunakan snapshot katalog/promo/jam outlet yang sudah published. Capability contract menolak cart, quote, checkout, payment, table identity, dan KDS dispatch; halaman Member hanya mengarahkan pengguna ke Saga Member dan tidak membaca data akun.
+
+Presentasi mengikuti Warm Wood Editorial dengan Plus Jakarta Sans dan serif terbatas untuk heading editorial. Harga exact ribuan ditampilkan sebagai `13K`, sementara nominal non-ribuan tetap utuh tanpa simbol `Rp` atau pembulatan. Layout memakai dua kolom mobile, tiga tablet, empat desktop, dan dua kolom kiosk; detail menjadi dialog/bottom-sheet responsif. Sold-out tetap terlihat dan dapat dibuka, outlet tutup tetap browseable, serta loading/error/retry/offline/reduced-motion/focus state tersedia.
+
+Model editorial admin menambah short/long description, flavor tags, allergens, maksimal dua badges, alternative product IDs, dan enam nilai nutrition estimate dengan source date. Data ini mengikuti versioning, draft/publish, rollback, reorder, validation, dan audit katalog. Promo publik hanya berasal dari konfigurasi published yang aktif dan efektif; tidak ada promo, benefit Member, atau klaim nutrisi fixture yang dipromosikan menjadi fakta production.
+
+Validasi final mencakup static/type 569 modul, 31 focused test katalog/kiosk/table-order/Phase 3, browser evidence 390/768/1440, Axe serious nol, no horizontal overflow, 22 produk, dan nol kontrol checkout. Verifikasi production menemukan dan menutup satu regresi boundary: import manifest dari jalur `/kiosk` terkena proteksi anonim. Candidate lama tidak digunakan ulang; fix memindahkan manifest ke `/menu-product-assets.js`, menambah regression test, dan menjalankan fresh artifact, target admission, encrypted backup/disposable restore, candidate-current-candidate rehearsal, serta activation chain.
+
+Runtime final memakai artifact SHA-256 `88cb90627d645324cfd2f5af48d3c194f7ae10bcf2b553ab3fa0a6b2fc428874`, rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, dan 34 migrasi unchanged. Health/monitor, empat route, manifest aset, image responses, 22-product API, Owner role/provider smoke, gambar 640x640 ter-decode, dialog detail, mobile two-column, Promo empty truth, dan Member privacy copy lulus tanpa transaksi. Payment/gateway tetap OFF dan Table Order tetap demo-only.
+
+Surface tetap `noindex,nofollow` dan `BUSINESS_READY=false`. Tiga belas aset masih ditandai `FOTO PREVIEW`; seluruh foto/copy/nutrisi memerlukan review hak pakai dan approval bisnis, promo nyata belum diterbitkan, QR belum dibuktikan pada media/meja fisik, custom catalog domain belum tersedia, dan independent offsite restore belum diterima.
+
 ## 2026-09-22 — Phase 2 finalisasi inventory/HPP production
 
 Source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` menambahkan satu control surface Owner pada Stok & HPP untuk menutup Phase 2 secara berurutan. Server menghitung tujuh check dari state tersimpan: bahan aktif, biaya, satuan beli supplier, saldo gudang, cakupan full count, menu aktif, dan resep/HPP terverifikasi. Browser hanya memproyeksikan hasil dan antrean tindakan; missing value tidak dipromosikan sebagai nol atau dianggap selesai.

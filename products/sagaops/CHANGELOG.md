@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Katalog publik Warm Wood aktif di production
+
+- Activated exact source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908`; rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`; artifact `88cb90627d645324cfd2f5af48d3c194f7ae10bcf2b553ab3fa0a6b2fc428874`; schema tetap 34 migrasi.
+- Added browse-only `/menu`, `/menu/qr`, `/menu/promo`, dan `/menu/member` dengan Warm Wood responsive grid, K-price, search/filter, product detail, store/promo truth, error/offline recovery, dan Member handoff tanpa personalisasi.
+- Added versioned editorial product fields dan optional `Estimasi Resep`; promo/hours publik sekarang memakai published snapshot, bukan draft.
+- Fixed anonymous production loader dengan memindahkan manifest aset dari boundary `/kiosk` yang dilindungi ke modul publik; regression test menjaga kontrak tersebut.
+- Static/type, 31 focused test, responsive/Axe evidence, fresh immutable artifact, encrypted backup/disposable restore, code-only rehearsal, activation, monitor, HTTP smoke, Owner smoke, dan visual production UAT lulus. Tidak ada transaksi dibuat.
+- Status `PRODUCTION_ACTIVATED / PUBLIC_CATALOG_BROWSE_ONLY / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; payment tetap OFF, foto/copy/nutrisi/promo/QR fisik/domain khusus/offsite restore masih gate bisnis.
+
 ## 2026-09-22 — Phase 2 finalisasi inventory/HPP aktif
 
 - Activated exact source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77`; rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`; schema tetap 34 migrasi.

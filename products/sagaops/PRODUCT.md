@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-22 — Katalog publik Menu, QR Meja, Promo, dan Member
+
+- `CONFIRMED`: exact source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` aktif pada production dengan rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, artifact SHA-256 `88cb90627d645324cfd2f5af48d3c194f7ae10bcf2b553ab3fa0a6b2fc428874`, dan schema tetap 34 migrasi.
+- Empat entry point browse-only aktif di `dashboard.sagapos.site`: `/menu`, `/menu/qr`, `/menu/promo`, dan `/menu/member`. API publik menampilkan 22 produk published dan secara eksplisit mematikan cart, quote, checkout, payment, identitas meja, serta dispatch KDS.
+- UI memakai arah Warm Wood Editorial, harga singkat tanpa pembulatan diam-diam, pencarian/kategori, grid responsif 2/3/4 kolom, detail produk, state sold-out/tutup/error/offline, promo hanya dari konfigurasi published aktif, dan halaman Member sebagai handoff tanpa membaca akun/poin/tier.
+- Admin dapat menyimpan deskripsi pendek/panjang, profil rasa, alergen, maksimal dua badge, alternatif produk, dan estimasi nutrisi bersumber tanggal. Seluruh field mengikuti draft/publish/version/audit yang sudah ada; label nutrisi publik adalah `Estimasi Resep` hanya ketika datanya tersedia.
+- Perbaikan final memindahkan manifest aset katalog ke boundary publik; browser production membuktikan 22 kartu, gambar ter-decode, detail dialog, mobile dua kolom tanpa overflow, serta route Promo/Member yang jujur. QR generator dikunci ke URL HTTPS browse-only `/menu/qr`.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`. Payment/gateway tetap `OFF`; Table Order tetap `DEMO`/simulator-only. Foto final beserta hak penggunaan, copy/nutrisi final, promo bisnis nyata, proof QR fisik, domain katalog khusus, offsite restore, dan business acceptance tetap gate terpisah.
+
 ## Production 2026-09-22 — Phase 2 finalisasi Database Bahan, Gudang, dan HPP
 
 - `CONFIRMED`: exact source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` aktif pada production dengan rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`; health `ready=true`, schema tetap 34 migrasi, dan artifact immutable SHA-256 `34ee0b109a12b55e0fd442dda0fb5a70195d2fe5752c5dac975fdc24329c0886`.

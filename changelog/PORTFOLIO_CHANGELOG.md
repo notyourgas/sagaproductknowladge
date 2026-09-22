@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS katalog publik Warm Wood production
+
+- `CONFIRMED`: source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` aktif dengan rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`; schema 34 migrasi tidak berubah.
+- `/menu`, `/menu/qr`, `/menu/promo`, dan `/menu/member` aktif sebagai katalog browse-only 22 produk; cart, checkout, payment, table identity, dan KDS dispatch tetap false.
+- Responsive/Axe, image decode, product detail, promo truth, Member privacy boundary, fresh recovery chain, monitor, dan authenticated Owner smoke lulus tanpa transaksi.
+- Delivery `PRODUCTION_ACTIVATED / BUSINESS_READY=false`; payment tetap OFF dan finalisasi aset/copy/nutrisi/promo/QR fisik/domain katalog/offsite restore masih diperlukan.
+
 ## 2026-09-22 — SagaPOS Phase 2 inventory/HPP finalization
 
 - `CONFIRMED`: SagaPOS production aktif pada `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` dengan rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`, health ready, dan 34 migrasi.

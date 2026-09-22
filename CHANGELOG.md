@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-22 — Sinkronisasi katalog publik SagaPOS production
+
+- `CONFIRMED`: exact SagaOPS source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` aktif dengan rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, artifact immutable, dan 34 migrasi unchanged.
+- Knowledge diperbarui untuk empat route browse-only, Warm Wood responsive UX, authority/capability boundary, editorial admin fields, published promo/hours truth, QR generator, asset-loader production fix, serta validation/recovery/activation evidence.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+- Production berubah: ya, code-only tanpa transaksi/migrasi. Delivery `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; payment/gateway tetap OFF dan aset/copy/nutrisi/promo/QR fisik/domain khusus/offsite restore tetap residual.
+
 ## 2026-09-22 — Sinkronisasi SagaPOS Phase 2 inventory/HPP
 
 - `CONFIRMED`: exact source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` aktif dengan finalization workflow dan authenticated readiness `43%` (`3/7`).
