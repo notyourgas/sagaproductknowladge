@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS menu reference parity v3 aktif
+
+- `CONFIRMED`: production source `e5734c028d94e48dbfb95023027eede15f18e7bb`, rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, health ready, service aktif, dan 34 migrasi unchanged.
+- E-katalog tetap preview-only. Kiosk dan signed QR meja dapat cart, checkout, serta payment simulasi sampai KDS; semua order berlabel demo, payment/gateway global OFF, dan fakta bisnis tidak berubah.
+- UI v3 mengikuti token serta komposisi Warm Wood handoff dan telah lulus browser/accessibility/public rendering evidence. Gunakan istilah `REFERENCE_PARITY_IMPLEMENTED`, bukan `100% pixel-perfect` atau `REFERENCE_PARITY_ACCEPTED`, sampai aset asli/substitusi dan visual sign-off Andreas selesai.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`. Jangan menjanjikan transaksi uang nyata, konten/nutrisi final, QR/perangkat fisik, Firefox acceptance, atau independent offsite recovery.
+
 ## Update 2026-09-23 — SagaPOS kiosk dan QR meja dapat checkout simulasi
 
 - `CONFIRMED`: production source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`, health ready, service aktif, dan 34 migrasi unchanged.

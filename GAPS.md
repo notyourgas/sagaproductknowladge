@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual menu reference parity v3 SagaPOS
+
+- `CONFIRMED`: source `e5734c028d94e48dbfb95023027eede15f18e7bb` aktif dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; kiosk dan signed QR meja lulus public HTTPS UAT sampai KDS, payment global tetap OFF, dan fakta bisnis tidak berubah.
+- `CONFIRMED`: visual engineering, manifest/provenance, responsive states, Chromium/WebKit/accessibility, public image decode, recovery, Owner restart smoke, dan monitor lulus. Status teknis `REFERENCE_PARITY_IMPLEMENTED`.
+- `NEEDS CONFIRMATION`: font produksi memakai substitute berlisensi; font/foto/logo/wood texture editable asli tidak tersedia. Andreas perlu menerima substitusi atau memberi aset asli lalu melakukan visual sign-off sebelum klaim `REFERENCE_PARITY_ACCEPTED=100%`.
+- `NEEDS CONFIRMATION`: copy/nutrisi/foto/promo/jam final, scan QR serta kiosk/KDS perangkat nyata, Firefox, operator/assistive-technology UAT, dan independent offsite restore tetap terbuka. Dampak `BUSINESS_READY=false`.
+
 ## 2026-09-23 — Residual menu reference v2 dan transaksi demo SagaPOS
 
 - `CONFIRMED`: source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`; kiosk dan signed QR meja lulus public HTTPS UAT sampai KDS, queue sehat, dan payment global tetap OFF.

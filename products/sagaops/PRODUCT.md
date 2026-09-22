@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-23 — Menu reference parity v3 aktif
+
+- `CONFIRMED`: exact source `e5734c028d94e48dbfb95023027eede15f18e7bb` aktif pada production dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, artifact SHA-256 `bec57f21af71bc61186cc04d7903676d9fded82c2f20b3a9123892529c39ca59`, health `ready=true`, dan schema tetap 34 migrasi.
+- E-katalog tetap preview-only. Kiosk dan signed QR meja tetap dapat cart, checkout, serta payment simulasi; public HTTPS UAT membuktikan kedua sumber demo mencapai KDS setelah `PAID` tanpa mengubah penjualan, settlement, reward, stok, HPP, atau fakta bisnis. Payment/gateway global tetap `OFF`.
+- UI v3 menerapkan token warna, grid 2/3/4 kolom, komposisi hero/favorit/pencarian/kategori, dialog detail-first, promo, Member, kiosk dua kolom, target sentuh, serta font serif berlisensi yang dibundel. Manifest sumber dan ledger parity tersedia pada source release.
+- Full regression exact candidate menghasilkan 1.567 pass, 0 fail, dan 73 controlled skip dari 1.640 test; static/type 589 modul; production dependency audit nol vulnerability. Chromium/WebKit, Axe serious/critical nol, public rendering/image decode, recovery rehearsal, authenticated Owner restart smoke, dan monitor lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / REFERENCE_PARITY_IMPLEMENTED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`. `REFERENCE_PARITY_ACCEPTED=100%` belum boleh diklaim sebelum aset editable/font/foto asli yang hilang tersedia dan Andreas memberi visual sign-off; QR/perangkat fisik, Firefox, konten final, serta independent offsite restore juga masih residual.
+
 ## Production 2026-09-23 — Menu reference v2, kiosk, dan QR meja transaksional-demo
 
 - `CONFIRMED`: exact source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif pada production dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`, artifact SHA-256 `ef1dc942c34b884e41caa50c4bd7fac4c98057f55e15c2bdb5010a71541992af`, health `ready=true`, dan schema tetap 34 migrasi.

@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS menu reference parity v3 aktif
+
+- `CONFIRMED`: production exact source `e5734c028d94e48dbfb95023027eede15f18e7bb`, rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, health ready, dan 34 migrasi unchanged.
+- E-katalog tetap preview-only; kiosk dan signed QR meja lulus checkout/payment simulasi sampai tiket KDS tanpa payment provider atau perubahan fakta bisnis.
+- UI v3 mengikat token, layout, breakpoint, detail, promo, Member, kiosk, font substitute berlisensi, manifest sumber, dan ledger parity ke source release. Public image decode/overflow serta Chromium/WebKit/accessibility lulus.
+- Delivery `PRODUCTION_ACTIVATED / REFERENCE_PARITY_IMPLEMENTED / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`; 100% visual acceptance, aset editable asli, Firefox, konten final, perangkat/QR fisik, serta independent offsite restore tetap residual.
+
 ## 2026-09-23 — SagaPOS menu reference v2 dan transaksi simulasi aktif
 
 - `CONFIRMED`: production exact source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`, health ready, dan 34 migrasi unchanged.

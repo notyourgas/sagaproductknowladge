@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Menu reference parity v3 aktif di production
+
+- Activated exact source `e5734c028d94e48dbfb95023027eede15f18e7bb` dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; schema tetap 34 migrasi.
+- Rebuilt e-katalog, kiosk, dan QR meja dengan token Warm Wood, responsive grid, detail-first dialog, promo/Member, kiosk touch layout, bundled serif, manifest provenance, dan parity ledger.
+- E-katalog tetap preview-only; kiosk dan signed QR meja lulus payment simulasi sampai KDS tanpa mengaktifkan payment provider atau mengubah fakta bisnis.
+- Validation: static/type 589; full 1.567 pass/0 fail/73 controlled skip; production audit nol vulnerability; Chromium/WebKit, accessibility, public rendering, recovery, Owner restart smoke, dan monitor lulus.
+- Delivery `PRODUCTION_ACTIVATED / REFERENCE_PARITY_IMPLEMENTED / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`; visual acceptance 100%, aset asli, Firefox, konten final, perangkat/QR fisik, dan offsite restore tetap residual.
+
 ## 2026-09-23 — Menu reference v2 dan transaksi demo kiosk/QR meja aktif
 
 - Activated exact source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`; schema tetap 34 migrasi.

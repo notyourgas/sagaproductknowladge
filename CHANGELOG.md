@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — Sinkronisasi SagaPOS menu reference parity v3
+
+- `CONFIRMED`: source `e5734c028d94e48dbfb95023027eede15f18e7bb` aktif dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; schema 34 migrasi unchanged.
+- Knowledge diperbarui untuk UI v3, provenance/ledger, font substitute, e-katalog preview-only, kiosk/QR transaksi demo sampai KDS, serta validation/release evidence.
+- Klasifikasi runtime dan technical parity `CONFIRMED`; visual acceptance 100%, konten, perangkat, Firefox, dan business acceptance `NEEDS CONFIRMATION`.
+- File terdampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, GAPS, SYNC_STATUS, dan root CHANGELOG.
+- Delivery `PRODUCTION_ACTIVATED / REFERENCE_PARITY_IMPLEMENTED / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`; tidak ada credential, PII, raw receipt, private identifier, database dump, atau path restricted yang dipublikasikan.
+
 ## 2026-09-23 — Sinkronisasi SagaPOS menu reference v2 dan transaksi demo
 
 - `CONFIRMED`: source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`; schema 34 migrasi unchanged.

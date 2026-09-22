@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS menu reference parity v3 production
+
+- Status `partially accepted`; release/runtime/technical parity `CONFIRMED`, sedangkan visual 100%, konten, perangkat, dan business acceptance `NEEDS CONFIRMATION`. Production source `e5734c028d94e48dbfb95023027eede15f18e7bb`; rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; schema 34 migrasi unchanged.
+- Synced: Warm Wood token/layout/breakpoint/detail/kiosk implementation, font substitute, manifest/provenance, e-katalog preview-only boundary, kiosk/QR demo transaction, KDS projection, release/recovery, Owner restart smoke, public rendering, dan residual gates.
+- Evidence: static/type 589; full 1.567 pass/0 fail/73 controlled skip dari 1.640; production dependency audit nol vulnerability; Chromium/WebKit/accessibility/public image decode; immutable artifact; fresh backup/disposable restore; rehearsal; activation; public kiosk + signed table UAT sampai KDS; dan monitor PASS.
+- Production berubah: ya, code-only tanpa migration atau transaksi bisnis. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / REFERENCE_PARITY_IMPLEMENTED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`.
+- Next: Andreas menerima substitusi atau menyediakan aset editable asli dan visual sign-off; finalisasi konten; QR/perangkat/operator/assistive-technology/Firefox UAT; serta independent offsite restore. Payment/gateway serta inventory reporting tetap OFF.
+
 ## 2026-09-23 — SagaPOS menu reference v2 dan transaksi demo production
 
 - Status `partially accepted`; runtime/flow `CONFIRMED`, sedangkan konten, visual, perangkat, dan business acceptance `NEEDS CONFIRMATION`. Production source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`; schema 34 migrasi unchanged.

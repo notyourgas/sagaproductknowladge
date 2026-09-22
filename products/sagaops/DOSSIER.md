@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## Menu reference parity v3 — production 2026-09-23
+
+Exact source `e5734c028d94e48dbfb95023027eede15f18e7bb` aktif dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, artifact SHA-256 `bec57f21af71bc61186cc04d7903676d9fded82c2f20b3a9123892529c39ca59`, dan 34 migrasi unchanged. Release code-only lulus target admission, fresh encrypted same-host backup/disposable restore, candidate-current-candidate rehearsal, activation atomik, Owner restart smoke, dan monitor exact-source. Independent offsite restore tetap `UNVERIFIED`.
+
+Visual implementation v3 memakai token handoff Warm Wood yang eksplisit, breakpoint 2/3/4 kolom, detail-first product dialog, hero/promosi/Member, serta layout kiosk dua kolom dengan target sentuh 64 px. Font Instrument Serif berlisensi OFL dibundel sebagai best-match substitute karena font sumber asli tidak tersedia. Hash manifest dan provenance aset mengikat 18 image reference dan dokumen handoff ke source release.
+
+Full suite berjumlah 1.640 test: 1.567 pass, 0 fail, dan 73 controlled skip; static/type 589 modul; production dependency audit nol vulnerability. Chromium/WebKit, accessibility Axe tanpa serious/critical, touch target, overflow, public HTTP/font/image decode, kiosk public HTTPS transaction, signed QR table transaction, dan KDS projection lulus. Firefox pada host Windows tetap environment skip; dua advisory moderate hanya berada pada dependency development Vitest.
+
+Kontrak produk tidak berubah: e-katalog preview-only; kiosk dan QR meja adalah simulator transaksi berlabel demo; payment/gateway global OFF dan tidak ada fakta bisnis yang dimutasi. Status maksimum adalah `REFERENCE_PARITY_IMPLEMENTED`, bukan `REFERENCE_PARITY_ACCEPTED=100%`, sampai font/foto/logo/texture editable asli atau persetujuan substitusi tersedia dan Andreas menyelesaikan visual sign-off. `BUSINESS_READY=false` sampai konten final, QR/perangkat fisik, operator/assistive-technology UAT, serta independent offsite recovery diterima.
+
 ## Menu reference v2 dan transaksi demo pelanggan — production 2026-09-23
 
 Exact source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`, artifact SHA-256 `ef1dc942c34b884e41caa50c4bd7fac4c98057f55e15c2bdb5010a71541992af`, dan 34 migrasi unchanged. Release code-only melewati immutable packaging, fresh encrypted same-host backup/disposable restore, candidate-bound recovery rehearsal, atomic activation, Owner restart smoke, public ingress guard, dan monitor exact-source. Independent offsite restore belum terverifikasi.
