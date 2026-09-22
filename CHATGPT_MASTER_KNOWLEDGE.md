@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS Phase 4 workforce aktif
+
+- `CONFIRMED`: production source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`, rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`, health ready, dan 34 migrasi unchanged.
+- Owner Dashboard membaca Phase 4 readiness dari state server tanpa PII. Snapshot authenticated `88%` (`7/8`): akun staf, template shift, roster published, request flow, GPS+selfie, runtime absensi, dan PWA lulus; pilot evidence roster → absensi → approval belum lengkap.
+- URL Staff resmi adalah `https://staff.sagapos.site/login/staff`; `/staff/login` hanya redirect. Anonymous session dan endpoint Owner pada host Staff tetap ditahan.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_4_ACTIVE_PILOT_EVIDENCE_PENDING / BUSINESS_READY=false`. Jangan menyebut Phase 4 business-ready sebelum siklus pilot selesai; payment/reporting/offsite recovery tetap gate terpisah.
+
 ## Update 2026-09-22 — SagaPOS katalog publik browse-only aktif
 
 - `CONFIRMED`: production source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908`, rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, 34 migrasi unchanged.

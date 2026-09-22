@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-22 — Phase 4 workforce dan Staff Portal native production
+
+Phase 4 menambahkan aggregate readiness Owner-only untuk delapan gate workforce tanpa mengekspor PII. Evaluasi production exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` menghasilkan `7/8` atau `88%`: akun staf `4/4`, dua template shift, satu roster published dengan 102 assignment, seluruh kategori request utama, policy GPS+selfie dan koordinat outlet, storage absensi operasional, serta Staff Portal PWA kanonik semuanya lulus. Gate pilot evidence tetap tertutup sampai terdapat kombinasi roster published, attendance record, dan request yang sudah diputuskan.
+
+Ingress memisahkan `staff.sagapos.site` dari host Admin lama. `/login/staff` melayani portal native, `/staff/login` menjadi redirect 308, anonymous session menghasilkan 401, dan route Owner pada host Staff menghasilkan 403; `admin.sagapos.site` tetap pada layanan sebelumnya. Percobaan aktivasi ingress pertama rollback otomatis karena post-check terlalu cepat sesudah Nginx reload. Source kemudian diperbaiki dengan bounded retry, dipaketkan ulang sebagai candidate baru, dan seluruh recovery chain diulang; candidate baru berhasil aktif tanpa memaksa konfigurasi gagal.
+
+Source validation mencakup static/type 571 modul, focused final 13/13 dan relevant regression 102/102. Immutable artifact, target admission, backup terenkripsi/disposable restore, recovery rehearsal, activation, authenticated Owner restart smoke, public route checks, dan monitor lulus. Monitor awal gagal karena penggunaan disk 86% melewati guard `<85%`; retention resmi membuang 15 release lama sambil mempertahankan current, rollback, backup, dan data, sehingga volume menjadi 83% dan monitor lulus. Rollback aktif adalah `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`; `BUSINESS_READY=false` sampai pilot bisnis dan gate lintas capability selesai.
+
 ## 2026-09-22 — Redesign katalog publik Kopi Saga production
 
 Source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` mengaktifkan satu presentasi katalog read-only untuk kiosk discovery, e-catalogue, dan QR meja tanpa memperluas authority transaksi. Empat route publik menggunakan snapshot katalog/promo/jam outlet yang sudah published. Capability contract menolak cart, quote, checkout, payment, table identity, dan KDS dispatch; halaman Member hanya mengarahkan pengguna ke Saga Member dan tidak membaca data akun.

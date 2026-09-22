@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-22 — Phase 4 HR, roster, absensi, dan Staff Portal
+
+- `CONFIRMED`: exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` aktif pada production dengan rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`, artifact SHA-256 `6ddd8fda2a09870dd739960f85638ceec3404d3af8999ddce88d870bea9cc618`, health `ready=true`, dan schema tetap 34 migrasi.
+- Owner Dashboard menampilkan readiness Phase 4 berbasis data server: akun staf, template shift, roster published, kategori pengajuan, policy GPS+selfie, storage absensi, Staff Portal PWA, dan bukti siklus pilot. Payload hanya agregat dan tidak membawa identitas staf.
+- Snapshot authenticated production adalah `88%` atau `7/8`: 4/4 akun staf aktif siap, dua template shift aktif, 102 assignment dari satu periode published, request flow lengkap, policy GPS+selfie aktif, runtime absensi operasional, dan URL kanonik PWA aktif. Satu blocker tersisa adalah bukti lengkap `roster → absensi → keputusan approval`.
+- Staff Portal native aktif pada [staff.sagapos.site/login/staff](https://staff.sagapos.site/login/staff). URL lama `/staff/login` mengarah permanen ke URL kanonik; sesi anonim ditolak dan endpoint Owner tidak dibuka pada host Staff. Host Admin lama tidak diubah.
+- Immutable packaging, target admission, dua backup terenkripsi dengan disposable restore, candidate-current-candidate rehearsal, activation, Owner restart smoke, public ingress checks, monitor, serta storage retention lulus. Payment/gateway dan inventory reporting tetap `OFF`; offsite recovery dan pilot bisnis tetap gate terpisah.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_4_ACTIVE_PILOT_EVIDENCE_PENDING / BUSINESS_READY=false`.
+
 ## Production 2026-09-22 — Katalog publik Menu, QR Meja, Promo, dan Member
 
 - `CONFIRMED`: exact source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` aktif pada production dengan rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, artifact SHA-256 `88cb90627d645324cfd2f5af48d3c194f7ae10bcf2b553ab3fa0a6b2fc428874`, dan schema tetap 34 migrasi.

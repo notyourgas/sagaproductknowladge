@@ -1,8 +1,8 @@
 # SagaPOS dan Saga Member Business Readiness Scoreboard
 
-Status: `CONFIRMED / PHASE_3_ACTIVE_DATA_INCOMPLETE`
+Status: `CONFIRMED / PHASE_4_ACTIVE_PILOT_EVIDENCE_PENDING`
 
-Evidence cut-off: 22 September 2026, 19:55 WIB.
+Evidence cut-off: 22 September 2026, 21:05 WIB.
 
 ## Konteks
 
@@ -35,6 +35,13 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 
 ## Baseline production
 
+### Phase 4 workforce snapshot
+
+- SagaPOS production source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` menyediakan Phase 4 readiness Owner-only dan Staff Portal PWA native.
+- Nilai server-derived `88%` atau `7/8`: akun staf `4/4`, dua template shift, 102 assignment dari satu roster published, request flow, GPS+selfie, storage absensi, dan portal kanonik lulus.
+- Satu blocker adalah bukti lengkap `roster published → absensi → keputusan approval`. Karena itu Phase 4 aktif dan siap diuji, tetapi belum business-ready.
+- URL staf kanonik adalah <https://staff.sagapos.site/login/staff>; `/staff/login` hanya redirect permanen.
+
 ### Phase 3 order/KDS/HPP snapshot
 
 - Source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` sudah tercakup dalam source production kumulatif `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` melalui parent `4b9f0532a55deef06b6df8589387ae9978bf46c2`.
@@ -59,7 +66,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 ### SagaPOS
 
 - Runtime production aktif pada exact source
-  `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` dengan 34 migrasi dan health
+  `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` dengan 34 migrasi dan health
   `ready=true`.
 - Member provider, absensi native, dan penerimaan barang staff aktif. Table
   Order masih `DEMO` dengan payment simulator dan tidak menulis fakta bisnis.

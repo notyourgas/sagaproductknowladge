@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Phase 4 workforce dan Staff Portal production
+
+- Activated exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` dengan rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`; schema tetap 34 migrasi.
+- Added Owner-only Phase 4 readiness untuk akun staf, shift, roster, request, absensi GPS+selfie, storage, portal PWA, dan pilot evidence. Snapshot production `7/8` atau `88%`.
+- Activated canonical Staff Portal `/login/staff`; legacy `/staff/login` redirect 308, anonymous session 401, dan Owner endpoint pada host Staff 403. Host Admin tidak berubah.
+- Fixed Nginx reload race dengan bounded post-check retry setelah percobaan pertama rollback otomatis; candidate dan recovery evidence dibangun ulang dari source fix.
+- Validation: static/type 571, relevant regression 102/102, final focused 13/13, immutable artifact, encrypted backup/disposable restore, rehearsal, activation, Owner restart smoke, public checks, dan monitor PASS.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_4_ACTIVE_PILOT_EVIDENCE_PENDING / BUSINESS_READY=false`; blocker Phase 4 adalah bukti lengkap roster → absensi → approval.
+
 ## 2026-09-22 — Katalog publik Warm Wood aktif di production
 
 - Activated exact source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908`; rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`; artifact `88cb90627d645324cfd2f5af48d3c194f7ae10bcf2b553ab3fa0a6b2fc428874`; schema tetap 34 migrasi.

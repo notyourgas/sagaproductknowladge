@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS Phase 4 workforce dan Staff Portal aktif
+
+- `CONFIRMED`: production exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`, rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`, health ready, dan 34 migrasi unchanged.
+- Owner Phase 4 readiness aktif dengan snapshot `88%` (`7/8`). Akun staf, shift, roster, request, policy GPS+selfie, storage absensi, serta Staff Portal PWA lulus; hanya bukti siklus pilot roster → absensi → approval yang belum lengkap.
+- Staff Portal native aktif pada `staff.sagapos.site/login/staff`; legacy redirect, anonymous denial, host isolation, recovery, Owner UAT, dan monitor lulus.
+- Delivery `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_4_ACTIVE_PILOT_EVIDENCE_PENDING / BUSINESS_READY=false`. Payment, reporting, offsite restore, dan pilot bisnis tetap residual.
+
 ## 2026-09-22 — SagaPOS katalog publik Warm Wood production
 
 - `CONFIRMED`: source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` aktif dengan rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`; schema 34 migrasi tidak berubah.

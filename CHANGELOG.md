@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-22 — Sinkronisasi SagaPOS Phase 4 workforce
+
+- `CONFIRMED`: exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` aktif dengan rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`; Owner readiness `88%` (`7/8`) dan Staff Portal native aktif.
+- Knowledge mencatat delapan gate workforce, canonical URL, host/role boundary, ingress reload fix, release/recovery evidence, serta satu residual pilot evidence.
+- File terdampak: scoreboard, SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, GAPS, SYNC_STATUS, dan root CHANGELOG.
+- Production berubah pada code-only release dan guarded ingress. Tidak ada credential, PII, raw receipt, tenant/device identifier, database dump, atau path restricted yang dipublikasikan. Status `BUSINESS_READY=false`.
+
 ## 2026-09-22 — Sinkronisasi katalog publik SagaPOS production
 
 - `CONFIRMED`: exact SagaOPS source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` aktif dengan rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, artifact immutable, dan 34 migrasi unchanged.

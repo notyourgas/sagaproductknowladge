@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-22 — SagaPOS Phase 4 workforce production
+
+- Status `accepted`; klasifikasi `CONFIRMED`; production source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`; schema 34 migrasi unchanged.
+- Synced: Owner readiness agregat, canonical Staff Portal, host isolation, Nginx reload recovery, exact artifact/recovery chain, Owner technical UAT, monitor, dan residual pilot evidence.
+- Evidence: static/type 571, relevant regression 102/102, final focused 13/13, immutable artifact, target admission, dua encrypted backup/disposable restore, dua candidate-bound rehearsal, activation, Owner restart smoke, public ingress checks, dan monitor PASS.
+- Production berubah: ya, code-only dan ingress terjaga tanpa migration atau transaksi. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_4_ACTIVE_PILOT_EVIDENCE_PENDING / BUSINESS_READY=false`.
+- Next: Andreas menjalankan satu siklus roster → absensi → request approval dari Staff Portal; lanjutkan real-device/operator acceptance dan offsite restore. Payment/gateway dan inventory reporting tetap OFF.
+
 ## 2026-09-22 — SagaPOS public menu catalogue production
 
 - Status `accepted`; klasifikasi `CONFIRMED`; production source `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908`; rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`; schema 34 migrasi unchanged.
