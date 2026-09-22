@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS katalog publik handoff-complete
+
+- `CONFIRMED`: source kumulatif `26eb16807e4a76349b1864f83dfb2624a369d821` aktif dengan rollback Phase 4 `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; 34 migrasi unchanged.
+- Menu, QR Meja, Promo, Member, dan Kiosk discovery kini berbagi navigation/recovery/accessibility/cache contract yang lengkap. Stale data tidak mengklaim promo, jam, atau availability; analytics tetap lokal dan privacy-safe tanpa sink eksternal.
+- Full regression 1.550 pass/0 fail, delapan viewport, Chromium/WebKit, Axe, performance, recovery, authenticated Owner smoke, lima route 200, 22 produk, serta monitor lulus. Firefox host Windows dicatat blocked environment.
+- Delivery `PRODUCTION_ACTIVATED / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`; payment/reporting OFF dan seluruh approval aset, konten, promo, domain, QR/perangkat, sign-off manusia, serta offsite restore tetap residual.
+
 ## 2026-09-22 — SagaPOS Phase 4 workforce dan Staff Portal aktif
 
 - `CONFIRMED`: production exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`, rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`, health ready, dan 34 migrasi unchanged.

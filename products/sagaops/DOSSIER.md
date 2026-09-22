@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-09-22 — Completion handoff katalog publik di atas Phase 4
+
+Production sekarang menjalankan source kumulatif `26eb16807e4a76349b1864f83dfb2624a369d821`, turunan langsung dari Phase 4 `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`. Dengan demikian hardening katalog tidak menghapus Staff Portal, roster, attendance, atau readiness workforce yang sudah aktif. Artifact immutable mempunyai SHA-256 `77c7e914b03ce325055feafbf83bf63ddb683179c1ad4d43d7390da72a6a61f7`; rollback menunjuk ke `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; ledger tetap 34 migrasi.
+
+Lima surface publik tersedia pada host dashboard: Menu, QR Meja, Promo, Member, dan Kiosk discovery. Semuanya memakai kontrak katalog yang sama dan browse-only. Kiosk discovery adalah `/menu/kiosk`, bukan flow transaksi `/kiosk`. Capability cart, quote, checkout, payment, table identity, dan KDS dispatch tetap false. Member masih berupa handoff dan tidak menampilkan akun, Points, tier, atau benefit personal.
+
+Completion UI/UX menutup state navigasi serta pemulihan handoff: kategori dan query tersimpan pada URL; detail produk/promo memakai deep link; Back, Escape, scroll lock, focus return, dan satu accordion terbuka dijaga; breakpoint 600/1024 menghasilkan grid 2/3/4, sedangkan kiosk selalu dua kolom dengan target sentuh 64 px. State loading, empty, sold-out, closed, error, offline, maintenance, Member guest/error, dan retry dibuat terpisah. Cache last-success terikat revision/schema dengan TTL lima menit untuk status/promo/availability dan 24 jam untuk konten. Saat stale, promo disembunyikan, jam/ketersediaan tidak diklaim, dan harga diberi label terakhir.
+
+Event measurement hanya hidup sebagai event browser lokal: `catalog_view`, `category_select`, `search_submit`, `product_open`, `promo_open`, `retry`, dan `member_connect`. Payload tidak membawa query pencarian atau PII dan tidak dikirim ke sink eksternal. Measurement readiness lokal adalah 55/100 dan signal quality 60/100; consent, retention, analytics sink, dan RUM belum diotorisasi sehingga tidak boleh disebut analytics production lengkap.
+
+Validation source final mencakup full suite 1.623 test: 1.550 pass, 0 fail, dan 73 controlled skip; static/type 573 modul; production dependency audit nol vulnerability; delapan acceptance width 320–1440; Chromium dan WebKit; Axe serious/critical nol pada seluruh surface; serta lab budget JS, CSS, payload API, load/LCP, CLS, dan search response. Firefox Playwright tidak dapat start pada host Windows karena runtime side-by-side dan dicatat `BLOCKED_ENVIRONMENT`. Satu `ERR_NO_BUFFER_SPACE` pada run gabungan terbukti transient; test Axe yang sama lulus saat diulang dan full suite final hijau.
+
+Release memakai Owner-authenticated guard, target admission, fresh encrypted backup dengan disposable restore, candidate-current-candidate rehearsal, atomic code-only activation, restart-persistence smoke, lima public route 200, katalog 22 produk, dan monitor exact-source. Payment/gateway serta inventory reporting tetap OFF; Table Order tetap demo/simulator-only dan tidak memengaruhi fakta bisnis. Independent offsite restore belum terverifikasi.
+
+`BUSINESS_READY=false`. Jam produksi saat ini tetap 07:00–22:00 dan tidak diubah menjadi 08:00–00:00 tanpa keputusan Owner. Foto final/hak pakai, copy dan nutrition source, promo bisnis, hostname katalog, keputusan SEO/noindex, proof QR fisik, real-device kiosk, assistive-technology/manual UAT, serta enam sign-off manusia masih `NEEDS CONFIRMATION`.
+
 ## 2026-09-22 — Phase 4 workforce dan Staff Portal native production
 
 Phase 4 menambahkan aggregate readiness Owner-only untuk delapan gate workforce tanpa mengekspor PII. Evaluasi production exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` menghasilkan `7/8` atau `88%`: akun staf `4/4`, dua template shift, satu roster published dengan 102 assignment, seluruh kategori request utama, policy GPS+selfie dan koordinat outlet, storage absensi operasional, serta Staff Portal PWA kanonik semuanya lulus. Gate pilot evidence tetap tertutup sampai terdapat kombinasi roster published, attendance record, dan request yang sudah diputuskan.

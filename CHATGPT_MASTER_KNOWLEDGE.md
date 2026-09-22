@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS katalog handoff-complete di production
+
+- `CONFIRMED`: production source terbaru `26eb16807e4a76349b1864f83dfb2624a369d821`, rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`, 34 migrasi unchanged. Source ini mempertahankan Phase 4 workforce.
+- Lima route `dashboard.sagapos.site/menu*` mencakup Menu, QR Meja, Promo, Member, dan `/menu/kiosk`. Semuanya browse-only dengan 22 produk; cart/quote/checkout/payment/table identity/KDS dispatch tetap false.
+- UI production mempunyai URL/deep-link state, Back/Escape/focus recovery, exact 2/3/4 responsive grid, two-column kiosk, fail-closed stale cache, promo terms, Member handoff, dan event analytics lokal tanpa PII atau sink eksternal.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`. Jangan menjanjikan order/payment, promo/benefit/nutrisi yang belum diterbitkan, foto final, jam 08:00–00:00, domain khusus, QR fisik, atau acceptance perangkat/manusia sebelum gate terkait selesai. Payment/reporting tetap OFF dan Table Order tetap demo-only.
+
 ## Update 2026-09-22 — SagaPOS Phase 4 workforce aktif
 
 - `CONFIRMED`: production source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`, rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`, health ready, dan 34 migrasi unchanged.

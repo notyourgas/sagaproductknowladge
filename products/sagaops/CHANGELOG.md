@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Katalog publik handoff-complete di atas Phase 4
+
+- Activated cumulative exact source `26eb16807e4a76349b1864f83dfb2624a369d821` dengan rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; artifact `77c7e914b03ce325055feafbf83bf63ddb683179c1ad4d43d7390da72a6a61f7`; schema tetap 34 migrasi.
+- Added `/menu/kiosk`, URL/deep-link state, Back/Escape/focus recovery, one-open accordion, exact 600/1024 breakpoints, 64 px kiosk targets, maintenance state, promo terms, Member guest/error, dan stale-cache fail-closed.
+- Added privacy-safe in-page analytics contract tanpa network sink, PII, atau query pencarian. Public API tetap 22 produk dan menolak cart, quote, checkout, payment, table identity, serta KDS dispatch.
+- Validation: full 1.550 pass/0 fail/73 controlled skip, static/type 573, production dependency audit nol vulnerability, delapan viewport, Chromium/WebKit, Axe, performance, immutable artifact, encrypted backup/disposable restore, recovery rehearsal, Owner restart smoke, public smoke, dan monitor PASS. Firefox Windows `BLOCKED_ENVIRONMENT`.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`; payment/reporting tetap OFF, Table Order demo-only, dan business content/asset/domain/QR/device/sign-off/offsite gates tetap terbuka.
+
 ## 2026-09-22 — Phase 4 workforce dan Staff Portal production
 
 - Activated exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` dengan rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`; schema tetap 34 migrasi.

@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-22 — SagaPOS public catalogue handoff completion
+
+- Status `partially accepted`; klasifikasi runtime `CONFIRMED` dan residual bisnis `NEEDS CONFIRMATION`; production source `26eb16807e4a76349b1864f83dfb2624a369d821`; rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; schema 34 migrasi unchanged.
+- Synced: cumulative Phase 4 ancestry, fifth `/menu/kiosk` route, navigation/dialog/accessibility states, breakpoint/kiosk contract, stale-cache behavior, local privacy analytics, validation matrix, exact release/recovery, dan business gates.
+- Evidence: full 1.550 pass/0 fail/73 controlled skip, static/type 573, audit production nol vulnerability, eight-width browser matrix, Chromium/WebKit, Axe/performance, immutable artifact, fresh backup/disposable restore, rehearsal, atomic activation, Owner restart smoke, public route/API smoke, dan monitor PASS. Firefox Windows `BLOCKED_ENVIRONMENT`.
+- Production berubah: ya, code-only tanpa migration atau transaksi. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`.
+- Next: Owner menyelesaikan jam, aset/hak pakai, copy/nutrisi, promo, domain/SEO, proof QR fisik, UAT perangkat/AT, enam sign-off, dan offsite restore. Payment/gateway dan inventory reporting tetap OFF.
+
 ## 2026-09-22 — SagaPOS Phase 4 workforce production
 
 - Status `accepted`; klasifikasi `CONFIRMED`; production source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`; rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`; schema 34 migrasi unchanged.

@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-22 — Residual completion katalog publik SagaPOS
+
+- `CONFIRMED`: production source kumulatif `26eb16807e4a76349b1864f83dfb2624a369d821` aktif; lima surface browse-only, 22 produk, authenticated Owner smoke, recovery, dan monitor lulus. Payment/gateway serta inventory reporting tetap OFF; Table Order tetap demo-only.
+- `NEEDS CONFIRMATION`: handoff menyebut jam 08:00–00:00, sedangkan runtime authoritative tetap 07:00–22:00. Jangan mengubah jam tanpa keputusan Owner dan bukti operasional.
+- `NEEDS CONFIRMATION`: aset foto final dan hak pakai, copy/deskripsi, nutrition source, serta data/terms promo bisnis nyata belum disetujui lengkap.
+- `NEEDS CONFIRMATION`: hostname katalog khusus, keputusan SEO/noindex, dan QR meja fisik belum ditetapkan/dibuktikan. Route dashboard aktif, tetapi bukan bukti signage atau scan fisik.
+- `NEEDS CONFIRMATION`: real-device kiosk, Firefox pada environment yang dapat berjalan, assistive technology/manual UAT, dan enam sign-off manusia belum selesai. Analytics sink, consent, retention, dan RUM juga belum diotorisasi.
+- `NEEDS CONFIRMATION`: independent offsite restore tetap belum terverifikasi. Dampak gabungan menahan `BUSINESS_READY=true` tanpa mematikan production browse-only.
+
 ## 2026-09-22 — Residual Phase 4 workforce SagaPOS
 
 - `CONFIRMED`: production source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` aktif dan authenticated readiness mencapai `7/8` atau `88%`.

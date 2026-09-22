@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-22 — Katalog publik handoff-complete di atas Phase 4
+
+- `CONFIRMED`: exact source kumulatif `26eb16807e4a76349b1864f83dfb2624a369d821` aktif pada production dengan rollback `e80305bb3fe68dc7fcb18b44060f1135d222b3c8`, artifact SHA-256 `77c7e914b03ce325055feafbf83bf63ddb683179c1ad4d43d7390da72a6a61f7`, health `ready=true`, dan schema tetap 34 migrasi. Release mempertahankan seluruh perubahan Phase 4 workforce.
+- Lima surface browse-only aktif pada host dashboard: `/menu`, `/menu/qr`, `/menu/promo`, `/menu/member`, dan `/menu/kiosk`. API publik memuat 22 produk; cart, quote, checkout, payment, identitas meja, dan dispatch KDS tetap `false`.
+- Completion handoff menambah URL/deep-link state, Back/Escape dan focus return pada dialog, satu accordion terbuka, kiosk dua kolom dengan target sentuh 64 px, state maintenance, promo terms, serta cache last-success yang fail-closed: promo disembunyikan dan jam/ketersediaan menjadi unknown ketika stale.
+- Analytics katalog hanya memancarkan event privasi-aman di halaman untuk view, kategori, pencarian, detail produk/promo, retry, dan handoff Member. Tidak ada query pencarian, PII, network sink, atau tracking provider yang diaktifkan.
+- Full regression menghasilkan 1.550 pass, 0 fail, dan 73 controlled skip dari 1.623 test; static/type 573 modul, production dependency audit nol vulnerability, delapan breakpoint, Chromium/WebKit, Axe serious/critical nol, performance budget, immutable packaging, backup/disposable restore, recovery rehearsal, Owner restart smoke, public smoke, dan monitor lulus. Firefox host Windows tetap `BLOCKED_ENVIRONMENT`, bukan pass.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap `OFF`; Table Order tetap `DEMO`/simulator-only. Jam bisnis final, aset/hak pakai, copy/nutrisi, promo nyata, domain katalog, QR fisik, UAT perangkat/assistive technology, enam sign-off manusia, dan offsite restore tetap gate terpisah.
+
 ## Production 2026-09-22 — Phase 4 HR, roster, absensi, dan Staff Portal
 
 - `CONFIRMED`: exact source `e80305bb3fe68dc7fcb18b44060f1135d222b3c8` aktif pada production dengan rollback `4a750a0261d12555d7f5222bda9d26f76f6ecc6b`, artifact SHA-256 `6ddd8fda2a09870dd739960f85638ceec3404d3af8999ddce88d870bea9cc618`, health `ready=true`, dan schema tetap 34 migrasi.
