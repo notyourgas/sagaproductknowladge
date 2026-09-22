@@ -12,7 +12,7 @@
 
 - Added order uji terisolasi yang mengalir ke KDS dan simulator server-side dengan status `READY`, `SHORTAGE`, atau `INCOMPLETE_RECIPE` tanpa mengubah stok maupun fakta bisnis.
 - Fixed konsumsi stok order bisnis agar transisi `NEW → ACKNOWLEDGED → PREPARING` terjadi tepat satu kali; fixed tanggal promo draft agar mengikuti waktu server/zona outlet.
-- Source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` sudah tercakup dalam production source kumulatif `4b9f0532a55deef06b6df8589387ae9978bf46c2`; rollback aktif `6ac0cd9639aedf19bba9f007c5f6cc919810f37d`, 34 migrasi, payment/gateway OFF.
+- Source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` sudah tercakup dalam production source kumulatif `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` melalui parent `4b9f0532a55deef06b6df8589387ae9978bf46c2`; rollback aktif `4b9f0532a55deef06b6df8589387ae9978bf46c2`, 34 migrasi, payment/gateway OFF.
 - Validation: static/type 567, OpenAPI 3.1, 21 focused test, recovery 9/9, full suite 1.531 pass + 72 controlled skip; seluruh kegagalan awal kapasitas/tanggal lulus setelah perbaikan environment/source.
 - Authenticated Owner UAT order demo Americano sampai served lulus dengan HPP teoritis Rp1.500, satu bahan, dan bukti `inventoryChanged=false`/`businessFactsAffected=false`.
 - Readiness Phase 3 `67%` (`4/6`); residual HPP `2/22` menu dan saldo `1/15` bahan. Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_3_ACTIVE_DATA_INCOMPLETE / BUSINESS_READY=false`.

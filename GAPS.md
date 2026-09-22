@@ -3,7 +3,7 @@
 ## 2026-09-22 — Residual Phase 3 order/KDS/HPP SagaPOS
 
 - `CONFIRMED`: flow order uji → KDS → simulasi HPP/stok aktif pada production dan tidak menulis inventory movement maupun fakta bisnis; authenticated Owner UAT mencapai `4/6` atau `67%`.
-- `CONFIRMED`: source kumulatif production `4b9f0532a55deef06b6df8589387ae9978bf46c2` tetap mengandung source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d`; health/monitor lulus, 34 migrasi, payment/gateway OFF.
+- `CONFIRMED`: source kumulatif production `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` tetap mengandung source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` melalui parent `4b9f0532a55deef06b6df8589387ae9978bf46c2`; health/monitor lulus, 34 migrasi, payment/gateway OFF.
 - `NEEDS CONFIRMATION`: 20 dari 22 menu aktif belum mempunyai HPP terverifikasi yang cukup untuk simulasi lengkap.
 - `NEEDS CONFIRMATION`: 14 dari 15 bahan aktif belum mempunyai saldo operasional, sehingga hasil shortage belum mewakili stok fisik lengkap.
 - `NEEDS CONFIRMATION`: satu full stock count, pilot shift nyata, hardware, offsite restore, payment, dan inventory reporting masih belum diterima. `PHASE_3_ACTIVE_DATA_INCOMPLETE / BUSINESS_READY=false`.

@@ -9,7 +9,7 @@
 - Next: approve/ganti aset foto beserta hak pakai, isi copy/nutrisi dan promo bisnis, proof QR meja fisik, putuskan custom catalog domain, jalankan business UAT/perangkat, dan buktikan offsite restore. Payment/gateway tetap OFF.
 ## 2026-09-22 — SagaPOS Phase 3 order/KDS/HPP production
 
-- Status `accepted`; klasifikasi `CONFIRMED`; production source kumulatif `4b9f0532a55deef06b6df8589387ae9978bf46c2` mencakup Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d`; rollback aktif adalah source Phase 3.
+- Status `accepted`; klasifikasi `CONFIRMED`; production source kumulatif `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` mencakup Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` melalui parent `4b9f0532a55deef06b6df8589387ae9978bf46c2`; rollback aktif `4b9f0532a55deef06b6df8589387ae9978bf46c2`.
 - Synced: order test terisolasi, KDS lifecycle, simulator HPP/stok, exact-once inventory consumption untuk order bisnis, server/outlet-time promo fix, release/recovery chain, authenticated UAT, readiness, dan residual data.
 - Evidence: static/type 567, OpenAPI 3.1, 34 migrasi, focused 21, recovery 9/9, full 1.531 pass + 72 controlled skip, immutable artifact, encrypted backup/disposable restore, host-local rehearsal, activation, Owner UAT, health, dan monitor.
 - Production berubah: ya, code-only tanpa migration dan tanpa transaksi uang. Test order tidak memengaruhi fakta bisnis. Payment/gateway dan inventory reporting tetap OFF.
