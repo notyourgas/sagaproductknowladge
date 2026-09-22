@@ -1,5 +1,13 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-22 — Saga Member Wave 7 recovery console aktif
+
+- `CONFIRMED`, cut-off 2026-09-22 04:39 UTC: release `20260922T043720Z-fa5ce30-r0u` aktif di [Owner](https://app.sagamember.site/owner) dan [Member](https://app.sagamember.site/member), dengan Customer Platform `fa5ce3038e749bbe3153d88b9c10d2244075cb82`, Member `23bd2bb16c66cca82e9a2faae8ef53b08ddc41a3`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.
+- Owner Operations kini menampilkan riwayat event terproses/gagal yang dapat difilter serta replay dead-letter yang scope-aware. Replay wajib memakai alasan, referensi bukti, dan idempotency; payload atau bukti mentah tidak dipublikasikan ke UI.
+- Reward dan Quest menampilkan state workflow, aksi yang diizinkan, dan blocker lifecycle secara eksplisit. Wave ini tidak membuka bypass maker-checker, step-up, terms, payment, hardware, atau editor Tier mutable.
+- Backend 46 file test, focused 24/24, frontend 566/566, browser acceptance empat viewport, runner 60/60, dependency audit nol, synthetic forward compatibility, encrypted backup/disposable restore, actual rollback rehearsal, final activation, authenticated Owner UAT, monitor, timer, dan active backup PASS. Rollback awal menemukan mismatch policy public predecessor; kandidat dikembalikan ke release lama, runner diperbaiki dan diuji, lalu fresh state/recovery chain dipromosikan.
+- Status `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`. Replay event bisnis nyata, acceptance operator, independent offsite restore, dan efek eksternal payment/hardware tetap gate terpisah.
+
 ## 2026-09-21 — Saga Member onboarding density dan motion aktif
 
 - `CONFIRMED`, cut-off 2026-09-21 13:55 UTC: release `20260921T134857Z-f0ab22a-r0u` aktif di [Member](https://app.sagamember.site/member) dengan Customer Platform `f0ab22a719bf98dc5c4d835203960e7d3ef8e84c`, Member `657a482f511edb9d71d012342102fffc0ec4eb31`, dan shared contracts `2930b1b3db2774482e17341d83677029e86cbf95`.

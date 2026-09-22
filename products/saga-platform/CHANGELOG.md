@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-22 — Saga Member Wave 7 event recovery
+
+- Release `20260922T043720Z-fa5ce30-r0u` mengaktifkan Owner event history, filter status/type, dan dead-letter replay dengan reason, evidence reference, scope, audit, serta idempotency.
+- Program lifecycle sekarang memperlihatkan blocker Reward/Quest tanpa membuka bypass approval atau Tier mutation.
+- Exact artifact, backup/restore, rollback rehearsal, authenticated Owner UAT, accessibility, monitor, timers, dan active backup lulus. Runner rollback diperbaiki setelah rehearsal awal menemukan public-registration predecessor mismatch; release lama tetap sehat selama recovery.
+- Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-21 — Saga Member onboarding density dan motion production
 
 - Release `20260921T134857Z-f0ab22a-r0u` mengaktifkan frontend Member `657a482f511edb9d71d012342102fffc0ec4eb31`; backend dan shared contracts tidak berubah, serta tidak ada migration/database mutation.
