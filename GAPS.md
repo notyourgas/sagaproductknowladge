@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual menu reference v2 dan transaksi demo SagaPOS
+
+- `CONFIRMED`: source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`; kiosk dan signed QR meja lulus public HTTPS UAT sampai KDS, queue sehat, dan payment global tetap OFF.
+- `CONFIRMED`: copy, flavor tag, alergen, alternatif, dan estimasi nutrisi untuk 22 produk berstatus `DUMMY_PREVIEW_ONLY`; ini menutup kebutuhan demonstrasi, bukan approval konten bisnis.
+- `NEEDS CONFIRMATION`: Owner/designer perlu menerima fidelity visual terhadap seluruh frame handoff; screenshot review bukan pixel-diff atau sign-off manusia 100%.
+- `NEEDS CONFIRMATION`: finalisasi copy/nutrisi bersumber, foto/hak pakai, promo dan jam authoritative, scan QR meja fisik, kiosk/KDS device, jaringan, assistive technology/manual UAT, serta operator/non-Owner acceptance.
+- `NEEDS CONFIRMATION`: Firefox belum berjalan pada host test dan dependency development memiliki dua advisory moderate pada jalur Vitest; production dependency audit tetap nol vulnerability.
+- `NEEDS CONFIRMATION`: independent offsite restore dan monitoring jangka panjang belum diterima. Dampak `PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Residual Phase 6 finance closing SagaPOS
 
 - `CONFIRMED`: production source `770c81657b4e589188885e33dc0b7ab3f2f9011a` aktif dengan rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`; readiness Phase 6 `11/12` (`92%`), authenticated Owner UAT, restart persistence, recovery rehearsal, dan monitor lulus.

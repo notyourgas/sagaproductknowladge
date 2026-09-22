@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS kiosk dan QR meja dapat checkout simulasi
+
+- `CONFIRMED`: production source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`, health ready, service aktif, dan 34 migrasi unchanged.
+- Jangan menyebut semua surface browse-only. E-katalog `/menu`, Promo, dan Member tetap read-only; `/menu/kiosk` dan signed table URL `/order?t=...` dapat cart, quote, checkout, serta payment simulasi. Hanya simulasi `PAID` yang masuk KDS.
+- Semua order customer-facing tersebut tetap test/demo dengan label `KIOSK DEMO` atau `QR MEJA DEMO`; tidak ada sales, settlement, reward, stock/HPP, atau fakta bisnis yang berubah. Payment/gateway global tetap OFF.
+- UI mengikuti komposisi Warm Wood handoff, tetapi copy, tag, alergen, alternatif, dan nutrisi 22 produk masih dummy preview-only sampai disetujui Owner.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`. Jangan menjanjikan transaksi uang nyata, konten/nutrisi final, pixel-perfect sign-off, QR/perangkat fisik, atau offsite recovery sebelum gate masing-masing lulus.
+
 ## Update 2026-09-23 — SagaPOS Phase 6 finance closing aktif
 
 - `CONFIRMED`: production source `770c81657b4e589188885e33dc0b7ab3f2f9011a`, rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, health ready, service aktif, dan 34 migrasi unchanged.

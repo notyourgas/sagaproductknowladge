@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS menu reference v2 dan transaksi demo production
+
+- Status `partially accepted`; runtime/flow `CONFIRMED`, sedangkan konten, visual, perangkat, dan business acceptance `NEEDS CONFIRMATION`. Production source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`; schema 34 migrasi unchanged.
+- Synced: surface split e-katalog versus kiosk/QR meja, signed public ingress, server-authoritative quote/checkout, payment simulator, KDS projection/labels/filter, Warm Wood reference composition, 22-product dummy content, release/recovery, authenticated Owner smoke, dan residual gates.
+- Evidence: static/type 587, full 1.566 pass/0 fail/73 controlled skip dari 1.639, audit production nol vulnerability, immutable artifact, fresh backup/disposable restore, rehearsal, activation, public ingress, public HTTPS UAT kiosk + table sampai KDS, restart smoke, dan monitor PASS.
+- Production berubah: ya, code-only tanpa migration atau transaksi bisnis. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`.
+- Next: approve copy/nutrisi/foto/promo/jam dan fidelity visual; scan QR fisik serta uji kiosk/KDS/perangkat/AT/operator; selesaikan offsite restore dan monitoring. Payment/gateway serta inventory reporting tetap OFF.
+
 ## 2026-09-23 — SagaPOS Phase 6 finance closing production
 
 - Status `accepted`; klasifikasi `CONFIRMED`; production source `770c81657b4e589188885e33dc0b7ab3f2f9011a`; rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`; schema 34 migrasi unchanged.

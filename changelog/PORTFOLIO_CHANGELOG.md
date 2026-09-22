@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS menu reference v2 dan transaksi simulasi aktif
+
+- `CONFIRMED`: production exact source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`, health ready, dan 34 migrasi unchanged.
+- E-katalog tetap read-only; kiosk pelanggan dan signed QR meja dapat checkout serta payment simulasi, lalu mengirim tiket berlabel demo ke KDS hanya setelah `PAID`.
+- UI mengikuti komposisi handoff Warm Wood; copy/nutrisi 22 produk masih dummy preview-only dan tidak menjadi data bisnis final.
+- Full regression 1.566 pass/0 fail, public HTTPS transaction UAT, immutable release/recovery, Owner restart smoke, dan monitor lulus tanpa mengaktifkan payment provider atau mengubah fakta bisnis.
+- Delivery `PRODUCTION_ACTIVATED / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`; sign-off konten/visual, QR dan perangkat fisik, assistive technology, Firefox, serta offsite restore tetap residual.
+
 ## 2026-09-23 — SagaPOS Phase 6 finance closing aktif
 
 - `CONFIRMED`: production exact source `770c81657b4e589188885e33dc0b7ab3f2f9011a`, rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, health ready, service aktif, dan 34 migrasi unchanged.

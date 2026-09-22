@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Menu reference v2 dan transaksi demo kiosk/QR meja aktif
+
+- Activated exact source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`; schema tetap 34 migrasi.
+- Redesigned katalog mengikuti komposisi Warm Wood handoff serta menambahkan 22 set copy/nutrisi dummy berlabel preview-only.
+- Kept e-katalog read-only, sementara kiosk pelanggan dan signed QR meja memperoleh cart, quote, checkout, payment simulator, serta KDS projection setelah status `PAID`.
+- Added KDS source label dan filter Simulasi; seluruh order tetap demo-only dan tidak memengaruhi payment provider, sales, stock, HPP, reward, atau fakta bisnis.
+- Full regression 1.566 pass/0 fail/73 controlled skip, production audit nol vulnerability, recovery/activation/Owner smoke/monitor lulus, dan public HTTPS UAT kiosk + QR meja sampai KDS lulus.
+- Delivery `PRODUCTION_ACTIVATED / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`; konten final, visual sign-off, QR/perangkat fisik, assistive technology, Firefox, offsite restore, dan dua advisory moderate dev-tool tetap residual.
+
 ## 2026-09-23 — Phase 6 finance closing dan exception aktif di production
 
 - Exact source `770c81657b4e589188885e33dc0b7ab3f2f9011a` aktif dengan rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, health ready, service aktif, dan 34 migrasi unchanged.

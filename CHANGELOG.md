@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — Sinkronisasi SagaPOS menu reference v2 dan transaksi demo
+
+- `CONFIRMED`: source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`; schema 34 migrasi unchanged.
+- Knowledge diperbarui untuk pemisahan e-katalog read-only dari kiosk/QR meja transaksional-demo, signed ingress, payment simulator, proyeksi/label KDS, UI handoff, serta dummy copy/nutrisi 22 produk.
+- Klasifikasi runtime dan technical UAT `CONFIRMED`; final visual/content/device/business acceptance `NEEDS CONFIRMATION`. Production berubah code-only tanpa transaksi bisnis atau aktivasi payment provider.
+- File terdampak: DECISIONS, SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, GAPS, SYNC_STATUS, dan root CHANGELOG.
+- Delivery `PRODUCTION_ACTIVATED / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`; tidak ada credential, PII, raw receipt, private identifier, database dump, atau path restricted yang dipublikasikan.
+
 ## 2026-09-23 — Sinkronisasi SagaPOS Phase 6 finance closing
 
 - `CONFIRMED`: source `770c81657b4e589188885e33dc0b7ab3f2f9011a` aktif dengan rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`; schema 34 migrasi unchanged.

@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## Menu reference v2 dan transaksi demo pelanggan — production 2026-09-23
+
+Exact source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`, artifact SHA-256 `ef1dc942c34b884e41caa50c4bd7fac4c98057f55e15c2bdb5010a71541992af`, dan 34 migrasi unchanged. Release code-only melewati immutable packaging, fresh encrypted same-host backup/disposable restore, candidate-bound recovery rehearsal, atomic activation, Owner restart smoke, public ingress guard, dan monitor exact-source. Independent offsite restore belum terverifikasi.
+
+Kontrak surface menggantikan asumsi lama bahwa seluruh katalog browse-only. E-katalog `/menu`, `/menu/promo`, dan `/menu/member` tetap read-only. Kiosk pelanggan pada `/menu/kiosk` serta QR meja bertanda tangan pada `/order?t=...` dapat membuat cart, quote server-authoritative, checkout idempotent, dan payment simulasi. Route QR generik tanpa token tidak mengarang identitas meja; API table menolak token hilang/tidak valid. Dashboard dan kiosk operator tetap berada di balik boundary autentikasi.
+
+Order baru hanya diproyeksikan ke KDS setelah simulator mencapai `PAID`. Ticket membawa sumber eksplisit `KIOSK_DEMO` atau `TABLE_QR_DEMO`, nomor demo terpisah, `testMode=true`, dan dapat difilter sebagai Simulasi. Persistence serta proyeksi KDS berada dalam scope demo terisolasi; penjualan, settlement, reward, stok, HPP, inventory variance, dan fakta bisnis tidak berubah. Payment provider/gateway global tetap OFF.
+
+UI menerapkan ulang struktur referensi handoff: header dan navigasi, hero editorial, favorit, pencarian, chip kategori, grid responsif 2/3/4 kolom, modal detail, promo, Member, serta state loading/error/offline/sold-out. Dummy editorial untuk 22 produk mencakup deskripsi, flavor tag, alergen, alternatif, dan estimasi nutrisi resep dengan label preview; JSON/CSV tersedia untuk review konten, tetapi tidak memutasi katalog bisnis dan tidak boleh dipromosikan sebagai fakta final.
+
+Validation mencakup 1.639 test dengan 1.566 pass, 0 fail, dan 73 controlled skip; static/type 587 modul; production dependency audit nol vulnerability. Chromium/WebKit evidence tersedia; Firefox host tetap blocked environment. Public HTTPS UAT menyelesaikan satu flow kiosk dan satu signed table flow sampai tiket exact terdeteksi pada KDS. Runtime akhir melaporkan health ready, queue pending nol, dead-letter nol, dan monitor lulus.
+
+`BUSINESS_READY=false`. Residual mencakup approval manusia terhadap fidelity visual, copy/nutrisi final bersumber, foto final/hak pakai, promo nyata, proof scan QR pada media dan perangkat fisik, kiosk/KDS hardware, assistive technology/manual UAT, dua advisory moderate dev-tool Vitest, monitoring jangka panjang, serta independent offsite recovery.
+
 ## Phase 6 finance, closing, dan exception — production 2026-09-23
 
 - `CONFIRMED`: source production `770c81657b4e589188885e33dc0b7ab3f2f9011a`; rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`; artifact SHA-256 `c8982af65e29a3e207fa6416d62054d4bd73f2c60ebb876243fc5f7336716590`; 34 migrasi unchanged.

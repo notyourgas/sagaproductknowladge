@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-208 — E-katalog read-only; kiosk dan QR meja memakai transaksi simulasi
+
+- Tanggal: 2026-09-23. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: pemisahan capability pada menu pelanggan SagaPOS.
+- Keputusan: e-katalog hanya untuk melihat menu. Kiosk pelanggan dan QR pada meja dapat membuat cart, checkout, serta pembayaran simulasi agar alur masuk KDS dapat diuji. Keduanya harus berlabel demo dan tidak boleh mengubah fakta bisnis atau mengaktifkan provider payment.
+- Alasan: pelanggan perlu melihat flow transaksi end-to-end yang realistis, sedangkan katalog umum harus tetap aman sebagai preview.
+- Alternatif: semua surface browse-only tidak dipakai karena tidak membuktikan KDS; transaksi uang nyata juga tidak dipakai karena payment belum diotorisasi/diaktifkan.
+- Dampak: source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif dengan surface split, signed QR table, payment simulator, dan KDS demo projection. `BUSINESS_READY=false` sampai konten, visual, perangkat fisik, operator, serta recovery gate diterima.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md), dan [snapshot sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-207 — QRIS dan hardware diuji terakhir setelah fondasi siap
 
 - Tanggal: 2026-09-22. Status: `CONFIRMED`; pemberi keputusan Andreas.

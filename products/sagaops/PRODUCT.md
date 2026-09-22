@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-23 — Menu reference v2, kiosk, dan QR meja transaksional-demo
+
+- `CONFIRMED`: exact source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif pada production dengan rollback `2520ebcb5f2936c40bc8beaa25174c78485303dc`, artifact SHA-256 `ef1dc942c34b884e41caa50c4bd7fac4c98057f55e15c2bdb5010a71541992af`, health `ready=true`, dan schema tetap 34 migrasi.
+- Surface kini dibedakan tegas. `/menu`, `/menu/promo`, dan `/menu/member` adalah e-katalog read-only. `/menu/kiosk` menyediakan cart, quote, checkout, serta payment simulator kiosk. QR meja memakai URL bertanda tangan `/order?t=...` dan flow Table Order demo. Hanya hasil simulasi `PAID` yang membuat tiket KDS.
+- KDS membedakan `KIOSK DEMO` dan `QR MEJA DEMO`, menyediakan filter Operasional/Simulasi, dan mempertahankan isolasi: order demo tidak menjadi penjualan, settlement, reward, pergerakan stok, HPP, atau fakta bisnis.
+- UI katalog menerapkan komposisi handoff Warm Wood: header/navigation, hero, favorit, pencarian, chip kategori, grid responsif 2/3/4 kolom, detail modal, promo, dan Member. Dua puluh dua produk memiliki copy, tag, alergen, alternatif, dan estimasi nutrisi dummy berlabel `DUMMY_PREVIEW_ONLY`; data ini bukan konten bisnis yang disetujui.
+- Full regression exact candidate menghasilkan 1.566 pass, 0 fail, dan 73 controlled skip dari 1.639 test; static/type 587 modul; dependency audit production nol vulnerability. Kiosk dan signed QR meja lulus UAT melalui HTTPS publik sampai tiket exact ditemukan di KDS, dengan payment global tetap `OFF` dan dead-letter nol.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`. Copy/nutrisi final, aset/hak pakai, promo bisnis, scan QR fisik, perangkat kiosk/KDS, assistive-technology UAT, Firefox environment, dan independent offsite restore tetap gate terpisah.
+
 ## Production 2026-09-23 — Phase 6 finance, closing, dan exception
 
 - `CONFIRMED`: exact source `770c81657b4e589188885e33dc0b7ab3f2f9011a` aktif pada production dengan rollback `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, artifact SHA-256 `c8982af65e29a3e207fa6416d62054d4bd73f2c60ebb876243fc5f7336716590`, health `ready=true`, service aktif, dan schema tetap 34 migrasi.
