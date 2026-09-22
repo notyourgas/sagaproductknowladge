@@ -6,6 +6,12 @@
 - `/menu`, `/menu/qr`, `/menu/promo`, dan `/menu/member` aktif sebagai katalog browse-only 22 produk; cart, checkout, payment, table identity, dan KDS dispatch tetap false.
 - Responsive/Axe, image decode, product detail, promo truth, Member privacy boundary, fresh recovery chain, monitor, dan authenticated Owner smoke lulus tanpa transaksi.
 - Delivery `PRODUCTION_ACTIVATED / BUSINESS_READY=false`; payment tetap OFF dan finalisasi aset/copy/nutrisi/promo/QR fisik/domain katalog/offsite restore masih diperlukan.
+## 2026-09-22 — SagaPOS Phase 3 order/KDS/HPP aktif
+
+- `CONFIRMED`: Phase 3 source `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` aktif sebagai bagian production source kumulatif `4b9f0532a55deef06b6df8589387ae9978bf46c2`.
+- Owner dapat menguji order demo → KDS → simulasi bahan/HPP tanpa mengubah stok, penjualan, settlement, reward, atau fakta bisnis; jalur bisnis KDS kini mengonsumsi stok tepat sekali saat pertama memasuki `PREPARING`.
+- Authenticated UAT lulus dan readiness Phase 3 `67%` (`4/6`). Residual tetap 20 menu tanpa HPP terverifikasi dan 14 bahan tanpa saldo operasional.
+- Delivery `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; payment/gateway, inventory reporting, hardware, offsite restore, dan pilot bisnis belum diaktifkan/diterima.
 
 ## 2026-09-22 — SagaPOS Phase 2 inventory/HPP finalization
 

@@ -1,8 +1,8 @@
 # SagaPOS dan Saga Member Business Readiness Scoreboard
 
-Status: `CONFIRMED / PHASE_1_IN_PROGRESS`
+Status: `CONFIRMED / PHASE_3_ACTIVE_DATA_INCOMPLETE`
 
-Evidence cut-off: 22 September 2026, 17:22 WIB.
+Evidence cut-off: 22 September 2026, 19:55 WIB.
 
 ## Konteks
 
@@ -35,6 +35,13 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 
 ## Baseline production
 
+### Phase 3 order/KDS/HPP snapshot
+
+- Source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` sudah tercakup dalam source production kumulatif `4b9f0532a55deef06b6df8589387ae9978bf46c2`.
+- Flow test order → KDS → simulasi HPP/stok aktif dan terisolasi dari stok, penjualan, settlement, reward, serta fakta bisnis.
+- Authenticated Owner UAT mencapai `67%` atau `4/6`; order demo Americano selesai sampai `SERVED`, membaca satu bahan dan HPP teoritis Rp1.500 tanpa inventory mutation.
+- Residual data adalah HPP terverifikasi baru `2/22` menu aktif dan saldo operasional baru `1/15` bahan aktif. Ini menahan klaim kesiapan inventory/HPP operasional penuh.
+
 ### Phase 1 master-data snapshot
 
 - SagaPOS production source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` menyediakan halaman Owner-only **Kesiapan bisnis**.
@@ -52,7 +59,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 ### SagaPOS
 
 - Runtime production aktif pada exact source
-  `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` dengan 34 migrasi dan health
+  `4b9f0532a55deef06b6df8589387ae9978bf46c2` dengan 34 migrasi dan health
   `ready=true`.
 - Member provider, absensi native, dan penerimaan barang staff aktif. Table
   Order masih `DEMO` dengan payment simulator dan tidak menulis fakta bisnis.

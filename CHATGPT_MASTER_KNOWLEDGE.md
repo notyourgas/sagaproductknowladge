@@ -6,6 +6,12 @@
 - Empat route `dashboard.sagapos.site/menu*` menampilkan 22 produk published dengan Warm Wood responsive UI, K-price, filter/detail, promo aktif saja, dan Member handoff tanpa akun. Capability cart/quote/checkout/payment/table/KDS semuanya false.
 - Admin editorial fields memakai draft/publish/version/audit; nutrition tampil hanya sebagai `Estimasi Resep` saat sumber tanggal tersedia. Production visual, accessibility, asset decode, recovery, monitor, dan Owner smoke lulus.
 - Status `PRODUCTION_ACTIVATED / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`. Jangan menjanjikan order/payment dari katalog, promo/benefit/nutrisi yang belum diterbitkan, foto final, custom catalog domain, atau QR fisik sebelum gate bisnis selesai.
+## Update 2026-09-22 — SagaPOS Phase 3 order/KDS/HPP aktif
+
+- `CONFIRMED`: production source kumulatif `4b9f0532a55deef06b6df8589387ae9978bf46c2` mencakup Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d`; rollback `6ac0cd9639aedf19bba9f007c5f6cc919810f37d`, health/monitor lulus, 34 migrasi.
+- Test order dapat mengalir ke KDS dan simulator HPP/stok tanpa mengubah inventory, penjualan, settlement, reward, atau fakta bisnis. Status simulator: `READY`, `SHORTAGE`, `INCOMPLETE_RECIPE`.
+- Authenticated Owner UAT lulus; readiness Phase 3 `67%` (`4/6`), dengan cakupan HPP `2/22` menu aktif dan saldo `1/15` bahan aktif.
+- Status `PRODUCTION_ACTIVATED / PHASE_3_ACTIVE_DATA_INCOMPLETE / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap OFF; jangan mengklaim kesiapan operasional stok/HPP penuh sampai data, stock count, shift pilot, hardware, dan offsite restore diterima.
 
 ## Update 2026-09-22 — SagaPOS Phase 2 inventory/HPP aktif
 

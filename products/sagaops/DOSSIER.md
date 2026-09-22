@@ -13,6 +13,17 @@ Validasi final mencakup static/type 569 modul, 31 focused test katalog/kiosk/tab
 Runtime final memakai artifact SHA-256 `88cb90627d645324cfd2f5af48d3c194f7ae10bcf2b553ab3fa0a6b2fc428874`, rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, dan 34 migrasi unchanged. Health/monitor, empat route, manifest aset, image responses, 22-product API, Owner role/provider smoke, gambar 640x640 ter-decode, dialog detail, mobile two-column, Promo empty truth, dan Member privacy copy lulus tanpa transaksi. Payment/gateway tetap OFF dan Table Order tetap demo-only.
 
 Surface tetap `noindex,nofollow` dan `BUSINESS_READY=false`. Tiga belas aset masih ditandai `FOTO PREVIEW`; seluruh foto/copy/nutrisi memerlukan review hak pakai dan approval bisnis, promo nyata belum diterbitkan, QR belum dibuktikan pada media/meja fisik, custom catalog domain belum tersedia, dan independent offsite restore belum diterima.
+## 2026-09-22 — Phase 3 order uji, KDS, dan simulasi inventory/HPP production
+
+Source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` menambahkan service readiness yang membaca katalog, resep, biaya bahan, serta saldo tersimpan untuk membuat simulasi server-authoritative. Order test diproyeksikan ke KDS dan dapat diproses sampai `SERVED`, tetapi penanda test mempertahankan isolasi: tidak ada penjualan, payment, settlement, reward, inventory movement, atau fakta bisnis yang ditulis. Status `READY`, `SHORTAGE`, dan `INCOMPLETE_RECIPE` membuat kekurangan data dapat ditindaklanjuti tanpa menyamarkannya sebagai nol.
+
+Patch yang sama memperbaiki jalur bisnis KDS. Sebelumnya konsumsi stok mengandalkan transisi langsung dari status `NEW`; sekarang waktu pertama `PREPARING` menjadi guard idempotensi sehingga alur `NEW → ACKNOWLEDGED → PREPARING` mengurangi stok tepat satu kali dan replay tidak menggandakannya. Koreksi lain mengikat tanggal promo draft ke waktu server dan zona outlet agar assertion tidak bergantung pada tanggal mesin penguji.
+
+Source Phase 3 lulus static/type 567 modul, OpenAPI 3.1, 34 migrasi, 21 focused test, browser evidence desktop/mobile, dan recovery Wave 8 9/9. Full suite mencatat 1.531 pass dan 72 controlled skip; tiga kegagalan awal terkait kapasitas TEMP serta tanggal semuanya lulus setelah environment diperbaiki dan assertion waktu dikoreksi. Artifact Phase 3 immutable ber-SHA-256 `59bcc1ebd4b0ecd351e4b0952f59f14a565ae0f104329ca315c47d4b46b4c9bd`.
+
+Release `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` melewati admission, encrypted backup/disposable restore, host-local recovery rehearsal, activation, role/provider Owner, health, dan authenticated UAT. Production kemudian bergerak ke source kumulatif `4b9f0532a55deef06b6df8589387ae9978bf46c2`, sebuah merge yang tetap mengandung Phase 3; rollback saat ini adalah source Phase 3. Monitor final lulus setelah retention hanya membuang salinan builder/cache yang dapat dibuat ulang tanpa menghapus release, artifact, backup, evidence, atau rollback.
+
+Authenticated UAT memakai order demo Americano: KDS menyelesaikan order, simulator membaca satu bahan dengan HPP teoritis Rp1.500, dan server membuktikan `inventoryChanged=false` serta `businessFactsAffected=false`. Skor Phase 3 menjadi `67%` (`4/6`). Residual data adalah HPP baru `2/22` menu aktif dan saldo baru `1/15` bahan aktif; payment/gateway, inventory reporting, hardware, offsite restore, serta pilot bisnis tetap gate terpisah. Status `PHASE_3_ACTIVE_DATA_INCOMPLETE / BUSINESS_READY=false`.
 
 ## 2026-09-22 — Phase 2 finalisasi inventory/HPP production
 

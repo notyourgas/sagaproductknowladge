@@ -8,6 +8,14 @@
 - Admin dapat menyimpan deskripsi pendek/panjang, profil rasa, alergen, maksimal dua badge, alternatif produk, dan estimasi nutrisi bersumber tanggal. Seluruh field mengikuti draft/publish/version/audit yang sudah ada; label nutrisi publik adalah `Estimasi Resep` hanya ketika datanya tersedia.
 - Perbaikan final memindahkan manifest aset katalog ke boundary publik; browser production membuktikan 22 kartu, gambar ter-decode, detail dialog, mobile dua kolom tanpa overflow, serta route Promo/Member yang jujur. QR generator dikunci ke URL HTTPS browse-only `/menu/qr`.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`. Payment/gateway tetap `OFF`; Table Order tetap `DEMO`/simulator-only. Foto final beserta hak penggunaan, copy/nutrisi final, promo bisnis nyata, proof QR fisik, domain katalog khusus, offsite restore, dan business acceptance tetap gate terpisah.
+## Production 2026-09-22 — Phase 3 order, KDS, dan simulasi HPP/stok
+
+- `CONFIRMED`: source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` sudah menjadi bagian dari production source kumulatif `4b9f0532a55deef06b6df8589387ae9978bf46c2`; rollback aktif menunjuk source Phase 3, health `ready=true`, schema tetap 34 migrasi, dan payment/gateway tetap `OFF`.
+- Flow demo Owner/Kiosk sekarang dapat membuat order uji, memproyeksikannya ke KDS, lalu menghitung simulasi kebutuhan bahan dan HPP per menu. Hasil membedakan `READY`, `SHORTAGE`, dan `INCOMPLETE_RECIPE`, serta secara eksplisit menyatakan bahwa simulasi tidak mengubah stok, penjualan, settlement, reward, atau fakta bisnis.
+- Jalur order bisnis juga dikoreksi agar transisi KDS `NEW → ACKNOWLEDGED → PREPARING` mengonsumsi stok tepat satu kali berdasarkan waktu mulai persiapan, bukan asumsi status sebelumnya selalu `NEW`.
+- Authenticated Owner UAT production lulus pada order demo Americano sampai `SERVED`: satu bahan terbaca, HPP teoritis Rp1.500, `inventoryChanged=false`, dan `businessFactsAffected=false`. Readiness Phase 3 production adalah `67%` (`4/6`); cakupan data masih `2/22` menu aktif ber-HPP dan `1/15` bahan aktif bersaldo.
+- Validation source: static/type 567 modul, OpenAPI 3.1, 34 migrasi, 21 focused test, dan recovery Wave 8 9/9 lulus. Full suite menghasilkan 1.531 pass, 72 controlled skip, dan tiga kegagalan kapasitas/tanggal yang seluruhnya lulus setelah TEMP dipindah serta assertion zona waktu dikoreksi.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_3_ACTIVE_DATA_INCOMPLETE / BUSINESS_READY=false`. Phase 3 siap dicoba sebagai prototype, bukan izin transaksi uang nyata atau klaim stok/HPP operasional lengkap.
 
 ## Production 2026-09-22 — Phase 2 finalisasi Database Bahan, Gudang, dan HPP
 
