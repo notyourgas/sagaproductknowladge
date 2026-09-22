@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS Menu & Promo Batch 7 aktif untuk Owner
+
+- `CONFIRMED`: source production `4349024cff24be29e7fffd4123f7ab3fb3670c5d`, rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`, schema 34 migrasi.
+- `menuUiV2`, `catalogWorkspaceV2`, dan `promoEngineV1` aktif untuk Owner; enam tab, draft/publish, pricing/promo server-authoritative, pagination, availability, dan responsive shell sudah lolos browser UAT.
+- Banner Admin production telah dikoreksi agar tidak membawa label fixture lokal. Fresh artifact, backup/restore, rehearsal, activation, restart smoke, monitor, dan tujuh surface Owner UAT lulus tanpa transaksi.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap OFF; jangan menjanjikan payment, hardware, offsite recovery, data promo nyata, atau akses Manager/Staff sebelum gate masing-masing selesai.
+
 ## Update 2026-09-22 — SagaPOS Menu & Promo Batch 7 terdeploy default-off
 
 - `CONFIRMED`: production SagaOPS berjalan pada exact source `5c817607c1c29a4078d8c0565272ff7068820b6c`, rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`, 34 migrasi, payment/gateway `OFF`.

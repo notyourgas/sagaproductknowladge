@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Menu & Promo Batch 7 diaktifkan dan lolos Owner UAT
+
+- Activated exact source `4349024cff24be29e7fffd4123f7ab3fb3670c5d`; rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`; schema tetap 34 migrasi.
+- Fixed production Admin banner yang sebelumnya masih menampilkan label fixture lokal karena elemen `header` tidak ikut ditransformasi; regression test sekarang menolak label tersebut.
+- Rebuilt fresh immutable artifact, target admission, encrypted backup/disposable restore, code-only recovery rehearsal, activation, restart-persistence Owner smoke, dan final monitor.
+- Authenticated Owner browser UAT PASS pada tujuh surface, enam tab Menu, pagination, shell 264 px, thumbnail 52 px, availability route, nol transaksi, dan nol browser exception.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / MENU_PROMO_FEATURE_ACTIVATION=true / BUSINESS_READY=false`; payment/gateway dan reporting tetap OFF, sedangkan perangkat, offsite restore, data bisnis, dan UAT non-Owner tetap terbuka.
+
 ## 2026-09-22 — Menu & Promo Batch 7 terdeploy dalam mode default-off
 
 - Added workspace Owner enam tab untuk Produk, Kategori, Modifier & Add-on, Promo, Publikasi, dan Pengaturan Kiosk.

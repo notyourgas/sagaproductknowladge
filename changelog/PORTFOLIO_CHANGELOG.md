@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS Menu & Promo Batch 7 aktif untuk Owner
+
+- `CONFIRMED`: exact production source `4349024cff24be29e7fffd4123f7ab3fb3670c5d`, rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`, schema 34 migrasi.
+- Feature Menu/Promo aktif setelah patch banner Admin production, fresh immutable artifact/recovery chain, Owner smoke sebelum/sesudah restart, dan browser UAT tujuh surface tanpa transaksi.
+- Workspace enam tab, pagination, shell desktop 264 px, thumbnail 52 px, availability route, dan nol browser exception terverifikasi. Payment/gateway serta reporting tetap OFF.
+- Delivery `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; perangkat, offsite restore, data promo nyata, dan UAT non-Owner masih gate terpisah.
+
 ## 2026-09-22 — SagaPOS Menu & Promo Batch 7 terdeploy secara guarded
 
 - `CONFIRMED`: SagaOPS source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif pada production; rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c` dan 34 migrasi tetap tersedia/tidak berubah.

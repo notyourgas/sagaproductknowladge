@@ -1,8 +1,17 @@
 # SagaOPS Product Knowledge
 
-## Production 2026-09-22 — Kode Menu & Promo Batch 7 terdeploy, aktivasi fitur tetap tertutup
+## Production 2026-09-22 — Menu & Promo Batch 7 aktif untuk Owner
 
-- `CONFIRMED`: exact source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif pada runtime production dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`; schema tetap 34 migrasi dan payment/gateway tetap `OFF`.
+- `CONFIRMED`: exact source `4349024cff24be29e7fffd4123f7ab3fb3670c5d` aktif pada production dengan rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`; schema tetap 34 migrasi.
+- Feature flag `menuUiV2`, `catalogWorkspaceV2`, dan `promoEngineV1` aktif. Workspace Owner mencakup Produk, Kategori, Modifier & Add-on, Promo, Publikasi, dan Pengaturan Kiosk; pricing/promo tetap server-authoritative dan mutasi struktural tetap draft/publish berversi.
+- Patch final memastikan seluruh elemen banner Admin production mengganti label fixture menjadi `SAGAPOS · PILOT OWNER`; regression test menolak `LOCAL SPRINT LAB` pada HTML production.
+- Artifact immutable SHA-256 `32f400f4cb6f33ceb581be146e663046584c0446af805399ca2c83645fd747ee`, target admission, encrypted backup/disposable restore, candidate-current-candidate rehearsal, activation atomik, Owner smoke sebelum/sesudah restart, dan monitor final lulus.
+- Browser UAT Owner lulus pada tujuh surface tanpa transaksi: enam tab, tujuh row halaman pertama, empat halaman, sidebar desktop 264 px, thumbnail 52 px, availability route, dan nol browser exception. Empat anonymous `401` bootstrap dikenali sebagai auth boundary yang diharapkan.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / MENU_PROMO_FEATURE_ACTIVATION=true / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap `OFF`; printer/NFC, offsite restore independen, data promo bisnis, serta UAT Manager/Staff dengan grant nyata tetap gate terpisah.
+
+## Historical snapshot 2026-09-22 — Kode Menu & Promo Batch 7 terdeploy, aktivasi fitur masih tertutup
+
+- Pada snapshot awal, exact source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif pada runtime production dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`; snapshot ini kemudian digantikan release `4349024cff24be29e7fffd4123f7ab3fb3670c5d` di atas.
 - Source menambahkan workspace Owner enam tab: Produk, Kategori, Modifier & Add-on, Promo, Publikasi, dan Pengaturan Kiosk. Produk/kategori tetap memakai draft dan publish berversi; harga dan diskon dihitung server, bukan browser.
 - Mesin promo mendukung persen, potongan rupiah, harga khusus, bundle, beli X gratis Y, dan gratis item, dengan jadwal WIB, scope, prioritas/stacking, cap, kuota total, lifecycle draft/active/paused/archived, audit, serta persistence restart-safe.
 - Tiga kill switch `menuUiV2`, `catalogWorkspaceV2`, dan `promoEngineV1` default `false`. Environment production tidak mengaktifkannya, sehingga release code aktif tetapi UI dan promo baru belum tersedia bagi operator/customer serta belum memengaruhi checkout.

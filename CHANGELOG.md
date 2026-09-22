@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-22 — Aktivasi final SagaPOS Menu & Promo Batch 7
+
+- `CONFIRMED`: SagaOPS source `4349024cff24be29e7fffd4123f7ab3fb3670c5d` aktif di production; rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`; 34 migrasi tidak berubah.
+- Knowledge dikoreksi dari snapshot default-off menjadi feature activation Owner setelah fresh artifact/recovery chain dan authenticated browser UAT tujuh surface lulus tanpa transaksi.
+- Dicatat patch banner production Admin, enam tab, pagination/shell/thumbnail fidelity, status payment/reporting OFF, dan residual gate bisnis.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/DOSSIER.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`. Tidak ada credential, PII, receipt mentah, path privat, atau identifier tenant/perangkat yang dipublikasikan.
+
 ## 2026-09-22 — Sinkronisasi SagaPOS Menu & Promo Batch 7
 
 - `CONFIRMED`: exact SagaOPS source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif di production dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`; schema 34 migrasi dan payment/gateway tetap OFF.

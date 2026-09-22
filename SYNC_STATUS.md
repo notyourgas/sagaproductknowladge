@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-22 — SagaPOS Menu & Promo Batch 7 production activation
+
+- Status `accepted`; klasifikasi `CONFIRMED`; source `4349024cff24be29e7fffd4123f7ab3fb3670c5d` aktif, rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`, schema tetap 34 migrasi.
+- Synced: feature activation, patch banner production Admin, exact artifact/recovery chain, restart persistence, browser UAT tujuh surface, fidelity shell/pagination/thumbnail, serta residual business gates.
+- Evidence: static/type PASS; targeted regression PASS setelah satu timeout kapasitas lulus saat isolasi; artifact immutable; target admission; encrypted backup/disposable restore; candidate-current-candidate rehearsal; activation; Owner smoke sebelum/sesudah restart; monitor; dan browser UAT tanpa transaksi/browser exception.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / MENU_PROMO_FEATURE_ACTIVATION=true / BUSINESS_READY=false`.
+- Next: isi/review data menu-promo bisnis, UAT Manager/Staff dengan grant nyata, perangkat/printer/NFC, dan offsite restore independen. Payment/gateway serta inventory reporting tetap OFF.
+
 ## 2026-09-22 — SagaPOS Menu & Promo Batch 7 guarded production release
 
 - Status `accepted`; klasifikasi `CONFIRMED`; exact source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c` dan schema tetap 34 migrasi.

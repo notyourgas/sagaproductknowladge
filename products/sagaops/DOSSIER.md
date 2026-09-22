@@ -1,12 +1,20 @@
 # SagaOPS Dossier
 
-## 2026-09-22 — Menu & Promo Batch 7 sebagai release gated
+## 2026-09-22 — Menu & Promo Batch 7 production activation
+
+Release final memakai source `4349024cff24be29e7fffd4123f7ab3fb3670c5d`, artifact SHA-256 `32f400f4cb6f33ceb581be146e663046584c0446af805399ca2c83645fd747ee`, dan rollback `47b1947f69f9979b1cf2bf01d10accbb43843419`. Schema tetap 34 migrasi. Jalur code-only membuat backup baru, membuktikan disposable restore, menjalankan candidate-current-candidate pada namespace terisolasi, lalu melakukan switch atomik tanpa transaksi atau perubahan schema.
+
+Saat authenticated browser UAT, route Admin pertama kali mengungkap label `LOCAL SPRINT LAB` karena transformer production hanya mengenali banner berbentuk `div`, sedangkan Admin memakai `header`. Patch final memperluas transformasi ke kedua elemen dan menambah regression test yang memastikan body production, banner `PILOT OWNER`, payment-off copy, serta tidak adanya label fixture. Karena source berubah, artifact, admission, backup, rehearsal, aktivasi, restart smoke, monitor, dan browser UAT dibangun ulang sebagai evidence chain baru.
+
+UAT Owner final mencakup Dashboard, Admin, Menu, availability, Cashier, KDS, dan Kiosk. Workspace Menu membuktikan enam tab, pagination nyata empat halaman, tujuh item pada halaman pertama, sidebar 264 px, thumbnail 52 px, dan tidak ada browser exception. Tidak ada transaksi dibuat. Feature flag Menu/Promo aktif, tetapi payment/gateway dan inventory reporting tetap OFF; perangkat nyata, printer/NFC, offsite restore independen, data promo bisnis, serta identitas/UAT non-Owner masih di luar acceptance ini. Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
+## 2026-09-22 — Menu & Promo Batch 7 sebagai release gated awal
 
 Redesign menempatkan pengelolaan menu dan promo dalam workspace Owner enam tab: Produk, Kategori, Modifier & Add-on, Promo, Publikasi, dan Pengaturan Kiosk. Mutasi struktural tetap draft-first dan dipublish berversi; ketersediaan harian tetap dapat diubah segera. Harga, tax/service, variant, modifier, serta diskon berasal dari state server-authoritative. Browser hanya mengirim intent dan tidak dapat menetapkan total transaksi.
 
 Promo mempunyai enam tipe: persen, fixed amount, fixed price, bundle, buy-X-get-Y, dan free item. Kontrak mencakup interval half-open, jadwal Asia/Jakarta, scope produk/kategori/payment/sales mode, minimum belanja, cap, prioritas, stacking, total quota, audit, optimistic version, dan lifecycle draft/active/paused/archived. State tersimpan bersama catalog durable state. Checkout menghitung promo dari snapshot item server dan menghitung penggunaan kuota hanya dari order paid/completed.
 
-Exact source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`. Package lock, service unit, manifest, dan seluruh 34 migrasi identik dengan release sebelumnya, sehingga jalur code-only dipakai. Fresh encrypted backup lulus disposable restore; rehearsal menjalankan candidate-current-candidate tanpa transaksi atau perubahan database; activation atomik, exact-source health, payment containment, public `401` boundary, dan final monitor lulus.
+Pada snapshot awal, source `5c817607c1c29a4078d8c0565272ff7068820b6c` aktif dengan rollback `b4a5ac3509afe9afc7907cba0324ce2c6e9fe69c`. Snapshot default-off ini kemudian digantikan release final di atas.
 
 Kill switch `menuUiV2`, `catalogWorkspaceV2`, dan `promoEngineV1` tetap default-off dan tidak ada di environment service production. Karena itu status release adalah `PRODUCTION_DEPLOYED / RELEASE_RUNTIME_ACTIVE`, sedangkan status capability `MENU_PROMO_FEATURE_ACTIVATION=false`. Belum ada authenticated Owner UAT atau pengisian data promo bisnis nyata. Payment/gateway tetap `OFF`, printer/NFC tetap residual, independent offsite restore tetap `UNVERIFIED`, dan `BUSINESS_READY=false`.
 
