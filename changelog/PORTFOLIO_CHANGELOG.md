@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS Phase 2 inventory/HPP finalization
+
+- `CONFIRMED`: SagaPOS production aktif pada `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` dengan rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`, health ready, dan 34 migrasi.
+- Owner memperoleh control surface Database Bahan → Gudang → HPP yang fail-closed terhadap data kosong. Snapshot production `43%` (`3/7`): Database `67%`, Gudang `0%`, HPP `50%`.
+- Rilis code-only, immutable artifact, encrypted backup/restore, recovery rehearsal, activation, Owner RBAC, public health, dan UI asset lulus. Payment/gateway serta inventory reporting tetap OFF.
+- Delivery `PRODUCTION_ACTIVATED / PHASE_2_ACTIVE_DATA_INCOMPLETE / BUSINESS_READY=false`; target Phase 2 75% dan overall readiness tetap belum berubah dari `62/100` sampai data operasional diselesaikan.
+
 ## 2026-09-22 — SagaPOS Phase 1 master-data control center
 
 - `CONFIRMED`: SagaPOS production aktif pada `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` dengan rollback `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, health ready, dan 34 migrasi.

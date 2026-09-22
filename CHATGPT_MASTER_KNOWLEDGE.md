@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS Phase 2 inventory/HPP aktif
+
+- `CONFIRMED`: SagaPOS production source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77`, rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`, 34 migrasi, health ready.
+- Stok & HPP memiliki tab Finalisasi Phase 2 berbasis state server. Snapshot authenticated `43%` (`3/7`): Database Bahan `67%`, Gudang `0%`, HPP `50%`.
+- Kekurangan data: satu satuan beli bahan, 14 saldo bahan, satu full stock count, dan 20 HPP menu terverifikasi. Jangan menyebut Phase 2 data-ready, actual HPP-ready, atau target gabungan 75% sudah tercapai.
+- Implementasi/deployment aktif, tetapi overall SagaPOS tetap `62/100`; payment/gateway dan inventory reporting OFF, offsite recovery dan business UAT belum selesai. `BUSINESS_READY=false`.
+
 ## Update 2026-09-22 — SagaPOS Phase 1 master data
 
 - `CONFIRMED`: SagaPOS production source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`, rollback `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`, 34 migrasi, health ready.

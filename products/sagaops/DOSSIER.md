@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-22 — Phase 2 finalisasi inventory/HPP production
+
+Source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` menambahkan satu control surface Owner pada Stok & HPP untuk menutup Phase 2 secara berurutan. Server menghitung tujuh check dari state tersimpan: bahan aktif, biaya, satuan beli supplier, saldo gudang, cakupan full count, menu aktif, dan resep/HPP terverifikasi. Browser hanya memproyeksikan hasil dan antrean tindakan; missing value tidak dipromosikan sebagai nol atau dianggap selesai.
+
+Snapshot authenticated production sesudah aktivasi adalah `43%` (`3/7`). Database Bahan `67%` karena satu bahan belum memiliki satuan beli. Gudang `0%` karena 14 bahan belum memiliki saldo operasional dan belum ada full stock count. HPP `50%` karena menu aktif tersedia tetapi 20 menu masih perlu HPP terverifikasi. Ini adalah data kerja nyata yang harus diselesaikan Owner, bukan defect deployment.
+
+Release code-only memakai artifact SHA-256 `34ee0b109a12b55e0fd442dda0fb5a70195d2fe5752c5dac975fdc24329c0886`, rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`, dan schema yang tidak berubah pada 34 migrasi. Target admission, encrypted backup/disposable restore, host-local recovery rehearsal, activation, exact-source health, public dashboard, anonymous containment, post-restart Owner role/provider check, dan asset UI Phase 2 lulus. Tidak ada transaksi atau provider payment yang diaktifkan.
+
+Validasi source mencakup focused inventory 12/12, Phase 2 4/4, static/type 564 modul, production dependency audit nol vulnerability, responsive browser 390/1440, Axe serious/critical nol, dan no-overflow. Full-run paralel melewati kapasitas memori host; grup yang OOM lulus saat rerun serial. Satu assertion promo bertanggal juga gagal pada source baseline Phase 1 sehingga dicatat sebagai residual test lama, bukan regresi Phase 2. Payment/gateway dan inventory reporting tetap OFF; offsite restore serta business UAT masih terbuka. Status `PHASE_2_ACTIVE_DATA_INCOMPLETE / BUSINESS_READY=false`.
+
 ## 2026-09-22 — Phase 1 pusat kesiapan master data production
 
 Exact source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` mengaktifkan pusat kesiapan master data di Owner Dashboard. Service membaca state runtime dan state staff, lalu menghitung 23 pemeriksaan pada lima domain. Respons sengaja berbentuk agregat, Owner-only, dan fail-closed: data kosong, belum terverifikasi, atau masih contract pending tidak pernah dianggap selesai.

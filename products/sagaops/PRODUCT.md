@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-22 — Phase 2 finalisasi Database Bahan, Gudang, dan HPP
+
+- `CONFIRMED`: exact source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` aktif pada production dengan rollback `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb`; health `ready=true`, schema tetap 34 migrasi, dan artifact immutable SHA-256 `34ee0b109a12b55e0fd442dda0fb5a70195d2fe5752c5dac975fdc24329c0886`.
+- Tab **Finalisasi Phase 2** di Stok & HPP menunjukkan urutan kerja server-derived: Database Bahan → baseline stok fisik Gudang → resep/HPP menu. Nilai kosong tidak dianggap nol; setiap blocker memiliki tautan kerja ke workspace terkait.
+- Snapshot authenticated production adalah `43%` atau `3/7`: Database Bahan `67%` dengan satu bahan belum mempunyai satuan beli; Gudang `0%` karena 14 bahan belum mempunyai saldo dan belum ada full stock count; HPP `50%` karena 20 menu belum mempunyai HPP terverifikasi.
+- Focused inventory 12/12, Phase 2 4/4, static/type 564 modul, dependency audit nol vulnerability, browser 390/1440 tanpa overflow, serta Axe serious/critical nol lulus. Full-run paralel terkena batas memori host; seluruh grup OOM lulus saat rerun serial. Satu test promo bertanggal gagal identik pada baseline Phase 1 dan bukan regresi Phase 2.
+- Target admission, encrypted backup/disposable restore, code-only recovery rehearsal, activation atomik, public health/dashboard, anonymous denial, Owner role/provider check, dan UI asset production lulus. Backup tetap same-host; offsite restore independen belum diterima.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_CHECK_PASS / PHASE_2_ACTIVE_DATA_INCOMPLETE / BUSINESS_READY=false`. Skor Phase 2 `43%` adalah kesiapan data inventory/HPP, bukan overall business-readiness SagaPOS; overall tetap `62/100`.
+
 ## Production 2026-09-22 — Phase 1 pusat kesiapan master data
 
 - `CONFIRMED`: exact source `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` aktif pada production dengan rollback `dfee4fc6d3cee75fc26ee4eb773501d3aab240d3`; health `ready=true` dan ledger tetap 34 migrasi.

@@ -42,10 +42,17 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 - Tujuh blocker: foto menu `0/22`, publish Owner, HPP `9%`, kontrak member, katalog reward, enforcement jam outlet, dan konfirmasi pricing.
 - Angka ini adalah subscore Phase 1, bukan business-readiness berbobot seluruh SagaPOS. Overall tetap `62/100` sampai gate lintas capability memperoleh evidence baru.
 
+### Phase 2 inventory/HPP snapshot
+
+- SagaPOS production source `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` menyediakan tab Owner **Finalisasi Phase 2**.
+- Nilai server-derived adalah `43%` atau `3/7`: Database Bahan `67%`, Gudang `0%`, dan HPP `50%`.
+- Blocker data: satu bahan belum memiliki satuan beli, 14 bahan belum memiliki saldo gudang, belum ada full stock count, dan 20 menu belum memiliki HPP terverifikasi.
+- Implementasi dan deployment Phase 2 selesai, tetapi data operasional belum. Target gabungan 75% belum dicapai dan overall SagaPOS tetap `62/100`.
+
 ### SagaPOS
 
 - Runtime production aktif pada exact source
-  `d49a6ee2efb2e562cd63d3dd24dd723b19eeb4fb` dengan 34 migrasi dan health
+  `5535e2c5c2637f5d4fc3284bf3ab101b05d14d77` dengan 34 migrasi dan health
   `ready=true`.
 - Member provider, absensi native, dan penerimaan barang staff aktif. Table
   Order masih `DEMO` dengan payment simulator dan tidak menulis fakta bisnis.
