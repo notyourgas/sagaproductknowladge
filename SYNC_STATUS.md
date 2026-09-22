@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-22 — SagaPOS public catalogue performance production
+
+- Status `partially accepted`; klasifikasi runtime/performance `CONFIRMED` dan residual bisnis `NEEDS CONFIRMATION`; production source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`; rollback `f4553743a55ae659390594e80a7f30c25f47e265`; schema 34 migrasi unchanged.
+- Synced: hero image discovery pada ingress `no-store`, exact release/recovery, Owner restart smoke, public mobile performance, responsive/browser/accessibility matrix, monitor, serta boundary browse-only.
+- Evidence: static/type 577, full 1.556 pass/0 fail/73 controlled skip dari 1.629, audit production nol vulnerability, p75 LCP `1.512 ms`, CLS `0,000787`, search `32,1 ms`, delapan breakpoint, lima route Chromium/WebKit, nol broken image/overflow/commerce control/Axe serious-critical, immutable artifact, fresh backup/disposable restore, rehearsal, activation, dan monitor PASS.
+- Production berubah: ya, code-only tanpa migration atau transaksi. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / PERFORMANCE_BUDGET_PASS / BUSINESS_READY=false`.
+- Next: Owner menyelesaikan jam, aset/hak pakai, copy/nutrisi, promo, domain/SEO, proof QR fisik, UAT perangkat/assistive technology, enam sign-off, analytics governance, dan independent offsite restore. Payment/gateway serta inventory reporting tetap OFF.
+
 ## 2026-09-22 — SagaPOS Phase 5 Member lifecycle production
 
 - Status `accepted`; klasifikasi `CONFIRMED`; production source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f`; rollback `26eb16807e4a76349b1864f83dfb2624a369d821`; schema 34 migrasi unchanged.

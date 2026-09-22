@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-22 — Katalog publik performance hardening
+
+- `CONFIRMED`: exact source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27` aktif pada production dengan rollback `f4553743a55ae659390594e80a7f30c25f47e265`, health `ready=true`, service aktif, dan schema tetap 34 migrasi.
+- Hero katalog sekarang diprioritaskan sebagai elemen gambar awal yang dipindahkan ke komposisi hero setelah payload authoritative tersedia. Perubahan ini menutup LCP lambat ketika ingress mengirim `Cache-Control: no-store`, tanpa mengubah data katalog atau membuka kemampuan commerce.
+- Pengukuran production 7 kali pada viewport 390x844, latency 150 ms, download 1,6 Mbps, dan CPU slowdown 4x menghasilkan p75 LCP `1.512 ms`, CLS `0,000787`, serta next-paint pencarian `32,1 ms`; target LCP adalah maksimal `2.500 ms`.
+- Validation exact source: 1.556 pass, 0 fail, dan 73 controlled skip dari 1.629 test; static/type 577 modul; dependency audit production nol vulnerability; delapan breakpoint dan lima route lulus pada Chromium/WebKit dengan nol overflow, nol gambar rusak, nol kontrol commerce, serta nol temuan Axe serious/critical. Immutable package, encrypted backup/disposable restore, recovery rehearsal, Owner restart smoke, dan monitor juga lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / PERFORMANCE_BUDGET_PASS / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap `OFF`; Table Order tetap `DEMO`/simulator-only. Konten, aset, promo, jam, domain/SEO, QR fisik, UAT perangkat/manusia, analytics governance, dan independent offsite restore tetap gate terpisah.
+
 ## Production 2026-09-22 — Phase 5 Member earn, redeem, dan reversal
 
 - `CONFIRMED`: exact source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` aktif pada production dengan rollback `26eb16807e4a76349b1864f83dfb2624a369d821`, health `ready=true`, service aktif, dan schema tetap 34 migrasi.

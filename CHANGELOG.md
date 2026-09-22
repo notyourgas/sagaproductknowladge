@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-22 — Sinkronisasi performance katalog publik SagaPOS
+
+- `CONFIRMED`: exact source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27` production-active dengan rollback `f4553743a55ae659390594e80a7f30c25f47e265`; schema 34 migrasi unchanged.
+- Menyinkronkan hero-image hardening untuk ingress `no-store`, production p75 LCP `1.512 ms`, CLS `0,000787`, search `32,1 ms`, validation 1.629 test, delapan breakpoint, lima route Chromium/WebKit, Axe, immutable release/recovery, Owner UAT, dan monitor.
+- Produk/area terdampak: SagaPOS public catalogue `/menu`, `/menu/qr`, `/menu/promo`, `/menu/member`, dan `/menu/kiosk`; production berubah code-only tanpa transaksi atau migration.
+- Klasifikasi `CONFIRMED`; sumber adalah source/release/runtime evidence 2026-09-22. Delivery `PRODUCTION_ACTIVATED / PERFORMANCE_BUDGET_PASS / BUSINESS_READY=false`; payment/reporting tetap OFF dan gate bisnis tetap terbuka.
+- File terdampak: `products/sagaops/PRODUCT.md`, `products/sagaops/CHANGELOG.md`, `changelog/PORTFOLIO_CHANGELOG.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `GAPS.md`, `SYNC_STATUS.md`, dan root `CHANGELOG.md`.
+
 ## 2026-09-22 — Sinkronisasi SagaPOS Phase 5 Member lifecycle
 
 - `CONFIRMED`: source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` aktif dengan rollback `26eb16807e4a76349b1864f83dfb2624a369d821`; schema 34 migrasi unchanged.

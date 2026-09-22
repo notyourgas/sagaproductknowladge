@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-22 — SagaPOS katalog publik performance budget PASS
+
+- `CONFIRMED`: production source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, rollback `f4553743a55ae659390594e80a7f30c25f47e265`, health ready, service aktif, 34 migrasi unchanged.
+- Hero catalogue diprioritaskan sejak dokumen awal sehingga ingress `no-store` tidak lagi menahan LCP utama. Production 7-run mobile profile menghasilkan p75 LCP `1.512 ms`, CLS `0,000787`, dan search next-paint `32,1 ms`.
+- Delapan breakpoint dan lima route Chromium/WebKit lulus dengan nol overflow, nol gambar rusak, nol commerce control, dan nol Axe serious/critical. Full source suite 1.556 pass/0 fail/73 controlled skip; static/type 577 dan dependency audit production nol vulnerability.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / PERFORMANCE_BUDGET_PASS / BUSINESS_READY=false`. Jangan menjanjikan order/payment, konten/promo yang belum diterbitkan, jam baru, domain khusus, QR fisik, atau acceptance perangkat/manusia. Payment/reporting tetap OFF; Table Order tetap demo-only.
+
 ## Update 2026-09-22 — SagaPOS Phase 5 Member lifecycle aktif
 
 - `CONFIRMED`: production source terbaru `9c2035b27d10a2729896fa2adf0f8a8331c21d1f`, rollback `26eb16807e4a76349b1864f83dfb2624a369d821`, health ready, dan 34 migrasi unchanged.

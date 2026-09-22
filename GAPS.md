@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-22 — Residual setelah performance hardening katalog publik SagaPOS
+
+- `CONFIRMED`: production source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27` aktif dengan rollback `f4553743a55ae659390594e80a7f30c25f47e265`; performance mobile production, authenticated Owner smoke, recovery, browser/accessibility matrix, dan monitor lulus. Payment/gateway serta inventory reporting tetap OFF; Table Order tetap demo-only.
+- `CONFIRMED`: p75 LCP production `1.512 ms`, CLS `0,000787`, dan search next-paint `32,1 ms` pada profil 390x844, latency 150 ms, download 1,6 Mbps, CPU slowdown 4x. Performance budget bukan business acceptance.
+- `NEEDS CONFIRMATION`: jam handoff 08:00–00:00 masih konflik dengan runtime 07:00–22:00; aset/hak pakai, copy/nutrisi, promo nyata, domain/SEO, QR fisik, UAT perangkat/assistive technology, enam sign-off manusia, analytics sink/consent/retention, dan independent offsite restore belum selesai.
+- Dampak: `PRODUCTION_ACTIVATED / PUBLIC_CATALOG_BROWSE_ONLY / PERFORMANCE_BUDGET_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-22 — Residual Phase 5 Member lifecycle SagaPOS
 
 - `CONFIRMED`: production source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` aktif; readiness Phase 5 `7/8` (`88%`), authenticated Owner UAT dan monitor lulus, serta simulator tidak memanggil provider atau mengubah fakta bisnis.

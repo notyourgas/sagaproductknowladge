@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-22 — Katalog publik lulus performance budget production
+
+- Activated exact source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27` dengan rollback `f4553743a55ae659390594e80a7f30c25f47e265`; schema tetap 34 migrasi.
+- Fixed hero image discovery pada ingress `no-store` dengan mempertahankan elemen prioritas tinggi sejak dokumen awal lalu memindahkannya ke hero setelah data authoritative tersedia.
+- Production mobile profile 7-run lulus dengan p75 LCP `1.512 ms`, CLS `0,000787`, dan search next-paint `32,1 ms`. Delapan breakpoint serta lima route Chromium/WebKit lulus tanpa overflow, gambar rusak, commerce control, atau Axe serious/critical.
+- Validation: static/type 577, full 1.556 pass/0 fail/73 controlled skip dari 1.629 test, dependency audit production nol vulnerability, immutable artifact, backup/disposable restore, recovery rehearsal, Owner restart smoke, dan monitor PASS.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / PERFORMANCE_BUDGET_PASS / BUSINESS_READY=false`; payment/reporting tetap OFF, Table Order demo-only, dan seluruh gate konten/aset/domain/QR/perangkat/sign-off/offsite tetap terbuka.
+
 ## 2026-09-22 — Phase 5 Member lifecycle aktif di production
 
 - `CONFIRMED`: source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f` aktif; rollback `26eb16807e4a76349b1864f83dfb2624a369d821`; schema tetap 34 migrasi.

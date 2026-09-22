@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-22 — SagaPOS katalog publik performance hardening
+
+- `CONFIRMED`: production exact source `cbde7e58c5e1368d9dda34ebb7c06afe98ad7d27`, rollback `f4553743a55ae659390594e80a7f30c25f47e265`, health ready, service aktif, dan 34 migrasi unchanged.
+- Hero image discovery diperkeras untuk ingress `no-store`. Production 7-run mobile profile mencapai p75 LCP `1.512 ms`, CLS `0,000787`, dan search next-paint `32,1 ms`; delapan breakpoint dan lima route Chromium/WebKit lulus tanpa overflow, broken image, commerce control, atau Axe serious/critical.
+- Full regression 1.556 pass/0 fail/73 controlled skip dari 1.629, static/type 577, dependency audit nol vulnerability, immutable packaging, backup/disposable restore, recovery rehearsal, Owner restart smoke, serta monitor PASS.
+- Delivery `PRODUCTION_ACTIVATED / PUBLIC_CATALOG_BROWSE_ONLY / PERFORMANCE_BUDGET_PASS / BUSINESS_READY=false`; payment/gateway dan inventory reporting OFF, Table Order demo-only, dan business-content/device/offsite gates tidak berubah.
+
 ## 2026-09-22 — SagaPOS Phase 5 Member lifecycle aktif
 
 - `CONFIRMED`: production exact source `9c2035b27d10a2729896fa2adf0f8a8331c21d1f`, rollback `26eb16807e4a76349b1864f83dfb2624a369d821`, health ready, service aktif, dan 34 migrasi unchanged.
