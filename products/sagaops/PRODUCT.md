@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-23 — Phase 7.5 Owner Dashboard information architecture aktif
+
+- `CONFIRMED`: exact source `c2440a2e938317332977f9d0912d986b9a502df6` aktif pada `https://dashboard.sagapos.site/dashboard` dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`, artifact SHA-256 `7f9c831e565c835569610ff1ac08f5ad61c07c7f5dc6568790525b4dce86521a`, health `ready=true`, dan schema tetap 34 migrasi.
+- Owner Dashboard kini mengelompokkan 13 route lama ke Beranda, Operasional, Menu & Katalog, Stok & Pembelian, Tim & Pelanggan, Keuangan & Laporan, serta Sistem. Navigasi menambahkan Feather icon lokal, breadcrumb, badge status server-derived, submenu readiness, dan lima tujuan mobile dengan safe-area tanpa mengubah otoritas route.
+- Quick app dipangkas menjadi Kasir, KDS, dan Portal staf; shortcut Admin/HR duplikat dihapus. Simulator Phase 7 dipindahkan dari Keuangan ke `Kesiapan bisnis > Simulasi & recovery` agar fungsi operasional dan alat technical UAT tidak tercampur.
+- Release juga memperbaiki crash penutupan event stream table-order pada serialized runtime dengan memastikan subscription di-await dan cleanup selalu berupa fungsi. Regression event stream, Phase 7, browser information architecture, recovery, authenticated Owner restart UAT, public ingress, anonymous denial, dan monitor lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap `OFF`; Table Order tetap demo-only; backup terbaru belum memiliki verifikasi offsite independen, dan real shift/hardware/payment UAT tetap residual.
+
 ## Production 2026-09-23 — Phase 7 resilience dan pilot simulasi aktif
 
 - `CONFIRMED`: exact source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` aktif pada production dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`, artifact SHA-256 `f9eb2bec4d5fcafc74aa41465f4d5afa4f704c8272275e097949fe1219cbec96`, health `ready=true`, dan schema tetap 34 migrasi.

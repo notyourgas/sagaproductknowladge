@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — Sinkronisasi SagaPOS Phase 7.5 Owner Dashboard IA
+
+- `CONFIRMED`: source `c2440a2e938317332977f9d0912d986b9a502df6` aktif dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`; schema 34 migrasi unchanged.
+- Knowledge diperbarui untuk grouped Owner navigation, mobile shell, Feather icon, breadcrumb, badge, quick-app deduplication, simulator relocation, table-order SSE cleanup fix, exact release/recovery, Owner UAT, serta monitor.
+- File terdampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, GAPS, SYNC_STATUS, dan root CHANGELOG.
+- Production berubah melalui code-only release tanpa transaksi atau migration. Tidak ada credential, PII, raw receipt, private identifier, database dump, atau path restricted yang dipublikasikan. Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; payment/reporting/hardware dan newest-backup offsite verification tetap terbuka.
+
 ## 2026-09-23 — Sinkronisasi SagaPOS Phase 7 resilience
 
 - `CONFIRMED`: source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` aktif dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`; schema 34 migrasi unchanged.

@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Phase 7.5 Owner Dashboard IA aktif di production
+
+- Activated exact source `c2440a2e938317332977f9d0912d986b9a502df6` dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`; artifact SHA-256 `7f9c831e565c835569610ff1ac08f5ad61c07c7f5dc6568790525b4dce86521a` dan schema 34 migrasi unchanged.
+- Reorganized 13 legacy routes menjadi tujuh domain, menambahkan Feather icon lokal, breadcrumb, badge server-derived, readiness subnavigation, dan lima-item mobile navigation dengan safe-area.
+- Removed duplicate Admin/HR shortcuts, retained Kasir/KDS/Portal staf, dan memindahkan simulator Phase 7 ke `Kesiapan bisnis > Simulasi & recovery`.
+- Fixed serialized table-order SSE close crash dengan awaited subscription serta validated cleanup; relevant regression, recovery, Owner restart UAT, public ingress, anonymous denial, dan monitor lulus.
+- Delivery `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; payment/reporting tetap OFF, Table Order demo-only, newest backup offsite belum diverifikasi, dan real shift/hardware/payment UAT tetap residual.
+
 ## 2026-09-23 — Phase 7 resilience dan pilot simulasi aktif di production
 
 - Activated exact source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`; artifact SHA-256 `f9eb2bec4d5fcafc74aa41465f4d5afa4f704c8272275e097949fe1219cbec96` dan schema 34 migrasi unchanged.

@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS Phase 7.5 Owner Dashboard IA aktif
+
+- `CONFIRMED`: production source `c2440a2e938317332977f9d0912d986b9a502df6`, rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`, health ready, service aktif, dan 34 migrasi unchanged.
+- Owner Dashboard mempertahankan 13 route tetapi mengelompokkannya ke tujuh domain dengan Feather icon lokal, breadcrumb, badge server-derived, submenu readiness, dan lima tujuan mobile. Kasir, KDS, serta Portal staf menjadi quick app; Admin/HR duplikat dihapus; simulator Phase 7 berada di `Kesiapan bisnis > Simulasi & recovery`.
+- Serialized table-order SSE close crash pada production baseline diperbaiki; regression, recovery, authenticated Owner restart UAT, public ingress, anonymous denial, dan monitor lulus.
+- Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`. Payment/gateway dan inventory reporting tetap OFF, Table Order demo-only, newest backup offsite independen belum diverifikasi, serta real shift/hardware/payment acceptance tetap terbuka.
+
 ## Update 2026-09-23 — SagaPOS Phase 7 resilience aktif
 
 - `CONFIRMED`: production source `df361c11ef07240cbefb376fc8ea3abf90dc84c7`, rollback `451c596c913c47b87a1c623e42b27063a84c3c26`, health ready, service aktif, dan 34 migrasi unchanged.

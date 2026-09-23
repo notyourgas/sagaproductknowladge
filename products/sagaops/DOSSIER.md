@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## Phase 7.5 Owner Dashboard information architecture — production 2026-09-23
+
+Exact source `c2440a2e938317332977f9d0912d986b9a502df6` aktif pada production dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`, artifact SHA-256 `7f9c831e565c835569610ff1ac08f5ad61c07c7f5dc6568790525b4dce86521a`, health ready, service aktif, dan 34 migrasi unchanged. Release code-only melewati immutable target admission, fresh encrypted backup/disposable restore, candidate-current-candidate rehearsal, activation atomik, authenticated Owner UAT sebelum dan setelah restart, public health/dashboard, anonymous denial, serta monitor exact-source.
+
+Owner shell tetap mempertahankan 13 legacy route, tetapi mengelompokkannya menjadi tujuh domain yang dapat dipahami operator: Beranda; Operasional; Menu & Katalog; Stok & Pembelian; Tim & Pelanggan; Keuangan & Laporan; dan Sistem. Implementasi menambahkan Feather icon lokal, breadcrumb, badge dari state server, readiness subnavigation, serta lima tujuan navigasi mobile dengan safe-area dan reduced-motion. Quick app hanya menyisakan Kasir, KDS, dan Portal staf sehingga shortcut Admin/HR yang mengulang fungsi dashboard tidak lagi membingungkan.
+
+Simulator satu shift Phase 7 dipindahkan dari konteks Keuangan ke `Kesiapan bisnis > Simulasi & recovery`. Perubahan ini hanya merapikan penemuan fitur dan tidak mengubah role, provider, payment, database authority, atau route contract. Browser test memverifikasi hierarchy, mobile navigation, route lama, ikon, breadcrumb, dan lokasi simulator.
+
+Current production baseline juga memiliki crash pada penutupan serialized table-order SSE karena subscription async diperlakukan sebagai fungsi cleanup. Release ini meng-await subscription dan memvalidasi unsubscriber; regression penutupan stream lulus bersama Phase 7 recovery suite. Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`: payment/gateway dan inventory reporting tetap OFF, Table Order tetap demo-only, newest backup offsite independen belum diverifikasi, serta real shift dan hardware/payment acceptance masih terbuka.
+
 ## Phase 7 resilience, offsite restore, load, dan pilot simulasi — production 2026-09-23
 
 Exact source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` aktif dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`, artifact SHA-256 `f9eb2bec4d5fcafc74aa41465f4d5afa4f704c8272275e097949fe1219cbec96`, service aktif, health ready, dan 34 migrasi unchanged. Release code-only melewati target admission, same-host encrypted backup/disposable restore, fresh candidate-current-candidate rehearsal, activation atomik, Owner restart smoke, serta monitor exact-source.

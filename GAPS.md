@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual Phase 7.5 Owner Dashboard IA SagaPOS
+
+- `CONFIRMED`: production source `c2440a2e938317332977f9d0912d986b9a502df6` aktif dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`; grouped navigation, mobile shell, route preservation, table-order stream fix, release/recovery, authenticated Owner restart UAT, dan monitor lulus.
+- `CONFIRMED`: perubahan code-only tidak mengubah schema, provider authority, payment, transaksi bisnis, atau data customer. Quick apps dan simulator hanya dipindahkan pada information architecture.
+- `NEEDS CONFIRMATION`: Andreas/operator perlu melakukan acceptance navigasi desktop dan mobile pada pekerjaan harian nyata, termasuk penemuan Kasir, KDS, Tim & shift, Laporan, serta Simulasi & recovery.
+- `NEEDS CONFIRMATION`: backup paling baru belum memiliki independent offsite verification. Payment/gateway, inventory reporting, QRIS, printer, NFC, dan hardware nyata tetap OFF; Table Order tetap demo-only. Dampak `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Residual Phase 7 resilience dan pilot SagaPOS
 
 - `CONFIRMED`: production source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` aktif dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`; readiness Phase 7 `24/25` (`96%`), authenticated Owner UAT, restart persistence, release/recovery, dan monitor lulus.
