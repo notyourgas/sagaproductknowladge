@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi rilis KopiSaga P0–P2
+
+- `CONFIRMED`: source runtime `de16d351e634fb7bfadb3617e1edd30b7cef9759` dan ingress source `10e4f51a6c63e225e0fad525b76b2da1f61316bb` aktif. E-katalog publik baca-saja, desain kiosk/QR meja diperbarui, release/rollback serta Owner/public/browser/monitor lulus.
+- Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Gateway existing tidak diubah, tidak ada payment intent; kiosk/QR meja simulator. UAT fisik, konten/hak pakai, offsite restore dan persetujuan bisnis tetap `NEEDS CONFIRMATION`. `BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS e-menu Phase 8B diagnosis dan release hold
 
 - `CONFIRMED`: source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menambahkan diagnostik canary tersanitasi pada Owner smoke; artifact exact-source staged, backup terenkripsi/restore disposable dan rehearsal rollback lulus. Phase 8B tetap `PARTIAL` (7/10), sehingga admission final/aktivasi tidak dijalankan dan `/menu` tetap 401.

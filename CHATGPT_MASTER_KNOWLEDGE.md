@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-24 — KopiSaga P0–P2 dan e-katalog publik
+
+- `CONFIRMED`: UI kiosk, e-katalog, dan QR meja telah dideploy dari source `de16d351e634fb7bfadb3617e1edd30b7cef9759`; ingress `10e4f51a6c63e225e0fad525b76b2da1f61316bb` membuat `https://sagapos.site/menu` HTTP 200 publik, hanya katalog baca-saja. Bukti Owner/public/browser desktop-mobile/monitor lulus.
+- Entri 2026-09-23 di bawah adalah histori sebelum rilis ini; klaim `/menu` 401 tidak lagi merupakan status terkini. Kiosk dan QR meja tetap simulator; payment gateway existing tidak diubah dan rilis tidak membuat payment intent. Jangan sebut checkout, pembayaran, atau business readiness sudah siap. UAT fisik, konten final, signoff, dan independent offsite restore masih terbuka; `BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — E-menu belum publik setelah diagnosis canary
 
 - `CONFIRMED`: commit `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` membuat scoped Owner smoke menampilkan status canary tersanitasi. Artifact baru staged; backup terenkripsi/restore disposable dan ingress rollback rehearsal lulus.

@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Rilis KopiSaga P0–P2 dan batas penerimaan
+
+Runtime production memakai source `de16d351e634fb7bfadb3617e1edd30b7cef9759`; ingress publik memakai source `10e4f51a6c63e225e0fad525b76b2da1f61316bb`. E-katalog di `https://sagapos.site/menu` telah lulus public smoke dan browser desktop/mobile: kartu produk tampil, gambar/logo berhasil ter-decode, tidak ada overflow horizontal maupun error browser. Kiosk dan QR meja memakai desain yang diselaraskan tetapi tetap simulator. Release mempertahankan mode SagaDev Gateway existing, tidak mengaktifkan commerce dari katalog, dan tidak membuat payment intent.
+
+Backup terenkripsi dengan restore disposable, rehearsal kode dan ingress, rollback kandidat gagal, Owner technical UAT, link audit, serta monitor production lulus. Dua kandidat ingress awal gagal pemeriksaan pasca-switch dan dipulihkan ke konfigurasi asli sebelum kandidat baru diuji; hasil final tidak memakai ulang evidence kandidat gagal. Canary pembayaran dan business readiness tetap gate terpisah. UAT perangkat fisik, konten/foto final dan hak pakai, persetujuan operasional, serta independent offsite restore masih terbuka. `BUSINESS_READY=false`.
+
 ## 2026-09-23 — Diagnosis canary dan kandidat e-menu terbaru
 
 Owner diagnostic yang diautentikasi mengonfirmasi Phase 8B `PARTIAL` (7/10): tiga gate readiness/jendela canary tidak lulus, sementara kontrak lain tetap lulus. Pemeriksaan lokal menemukan jendela canary telah kedaluwarsa; ini bukan alasan untuk memperpanjang izin transaksi. Postgres production menerima koneksi pada socket terisolasi, service dan monitor sehat. Source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menambahkan output status canary tersanitasi pada scoped Owner smoke supaya perbedaan antara ingress katalog baca-saja dan kesiapan pembayaran tetap terlihat.

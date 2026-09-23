@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Residual setelah rilis KopiSaga P0–P2
+
+- `CONFIRMED`: e-katalog publik baca-saja aktif dan monitor lulus; kiosk/QR meja tetap simulator, gateway existing tetap `GATEWAY`, tanpa payment intent baru. Entri 2026-09-23 yang menyebut `/menu` 401 adalah histori pra-rilis.
+- `NEEDS CONFIRMATION`: UAT kiosk fisik 32 inci dan dua ponsel nyata, foto/konten produk final berikut hak pakai dan persetujuan bisnis, independent offsite restore, serta gate transaksi canary/settlement yang terpisah. Jangan menyimpulkan `BUSINESS_READY` dari technical deployment; `BUSINESS_READY=false`.
+
 ## 2026-09-23 — Jendela canary menutup gate e-menu
 
 - `CONFIRMED`: diagnosis Owner menunjukkan Phase 8B `PARTIAL` (7/10), dengan tiga gate readiness/jendela yang tidak lulus; jendela lokal telah kedaluwarsa. Source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` dan artifact staged terbaru memiliki backup/restore serta disposable rollback rehearsal lulus. `/menu` masih 401.

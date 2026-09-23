@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — KopiSaga P0–P2 production aktif terbatas
+
+- Status `partially accepted`: source runtime `de16d351e634fb7bfadb3617e1edd30b7cef9759` dan ingress source `10e4f51a6c63e225e0fad525b76b2da1f61316bb` telah ter-push dan aktif. Backup/restore disposable, rehearsal rollback, Owner/public/browser UAT, asset rendering, dan monitor `CONFIRMED`; `/menu` publik HTTP 200.
+- Payment mode existing `GATEWAY` tidak berubah, kiosk/QR meja simulator, katalog preview tanpa commerce. UAT perangkat fisik, konten/foto final, independent offsite restore, dan business signoff `NEEDS CONFIRMATION`. Delivery `SOURCE_PUSHED / PRODUCTION_DEPLOYED / PUBLIC_MENU_INGRESS_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS e-menu exact-source restage, NO-GO
 
 - Status `partially accepted`: source clean pushed `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83`, immutable artifact checksum-verified/staged, focused 5/5, check/type 613, audit dependency 0, scoped Owner smoke, fresh encrypted backup/disposable restore dan disposable Nginx candidate/rollback rehearsal PASS.

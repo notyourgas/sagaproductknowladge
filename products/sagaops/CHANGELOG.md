@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — KopiSaga P0–P2 production
+
+- UI kiosk, e-katalog, dan QR meja diselaraskan untuk hierarki, spasi, ukuran target sentuh, palet KopiSaga, serta desktop/mobile. Source runtime `de16d351e634fb7bfadb3617e1edd30b7cef9759` aktif; ingress source `10e4f51a6c63e225e0fad525b76b2da1f61316bb` membuka `https://sagapos.site/menu` sebagai katalog publik baca-saja.
+- Release/rollback, Owner dan public smoke, browser desktop/mobile, asset rendering, serta monitor lulus. Gateway existing tetap `GATEWAY`, QR meja dan kiosk tetap simulator, dan tidak ada payment intent. UAT fisik/offsite restore/business signoff masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-23 — Diagnostik Phase 8B pada Owner smoke e-menu
 
 - Source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menampilkan state/skor/check ID canary tersanitasi tanpa melonggarkan gate pembayaran. Focused 5/5, check/type 613 modul, scoped Owner smoke, backup terenkripsi/restore disposable, dan disposable Nginx rollback rehearsal lulus; audit dependency production 0 vulnerability.

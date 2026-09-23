@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-24 — KopiSaga menu P0–P2 production
+
+- `CONFIRMED`: UI kiosk, e-katalog, dan QR meja diperbarui; `https://sagapos.site/menu` sekarang publik baca-saja dan lulus browser desktop/mobile serta monitor. Runtime source `de16d351e634fb7bfadb3617e1edd30b7cef9759`, ingress source `10e4f51a6c63e225e0fad525b76b2da1f61316bb`.
+- Gateway existing tidak diubah; kiosk/QR meja masih simulator, katalog tidak memiliki checkout/payment. UAT perangkat fisik, konten final, dan offsite restore belum diterima. `PRODUCTION_DEPLOYED / PUBLIC_MENU_INGRESS_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS e-menu tetap tertahan jendela canary
 
 - `CONFIRMED`: source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menambahkan diagnostik Owner yang tersanitasi; exact-source artifact staged, backup/restore dan rollback rehearsal lulus. Readiness gateway tetap `PARTIAL` (7/10) karena jendela/readiness canary belum lulus.

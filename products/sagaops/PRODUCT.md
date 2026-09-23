@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — KopiSaga P0–P2 aktif, e-katalog publik baca-saja
+
+- `CONFIRMED`: source UI/UX `de16d351e634fb7bfadb3617e1edd30b7cef9759` aktif di production; ingress katalog dari source `10e4f51a6c63e225e0fad525b76b2da1f61316bb` aktif. Rollback runtime `9c364ff2359940f73d52985fd752101d5d94b84b` tersedia. E-katalog `https://sagapos.site/menu` kini HTTP 200 publik, responsif di desktop/mobile, memakai palet KopiSaga dan Plus Jakarta Sans.
+- Kiosk dan QR meja mendapat perbaikan hierarki, ukuran, spasi, navigasi, dan responsivitas; keduanya tetap demo/simulator, bukan alur transaksi nyata. API katalog `CATALOG_PREVIEW`, `readOnly=true`, tanpa cart, quote, checkout, payment, identitas meja, atau dispatch KDS. Mode gateway production existing tetap `GATEWAY`; rilis ini tidak membuat payment intent atau memperpanjang canary.
+- Exact-source artifact, backup terenkripsi/restore disposable, rehearsal rollback, Owner/public/authenticated smoke, browser screenshot desktop/mobile, dan monitor production lulus. UAT kiosk fisik 32 inci, dua perangkat mobile nyata, konten/foto final dan hak pakai, persetujuan bisnis, serta independent offsite restore belum selesai. `PRODUCTION_DEPLOYED / PUBLIC_MENU_INGRESS_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-23 — E-menu admission tetap NO-GO
 
 - `CONFIRMED`: source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menampilkan status Phase 8B yang tersanitasi pada Owner smoke e-menu. Artifact exact-source baru checksum-verified dan staged; scoped Owner smoke, backup terenkripsi/restore disposable, dan rehearsal ingress–rollback kandidat lulus.
