@@ -4,6 +4,14 @@ Status: `CONFIRMED / PHASE_7_TECHNICAL_TARGET_PASS / REAL_SHIFT_PILOT_PENDING`
 
 Evidence cut-off: 23 September 2026.
 
+Catatan evidence terbaru (23 September 2026): controlled SagaDev Gateway canary
+SagaPOS sudah aktif pada source `9c364ff2359940f73d52985fd752101d5d94b84b`
+tanpa payment intent acceptance. Order Meja/Kiosk tetap simulator; e-menu publik
+masih 401. Nilai capability dan total 62/100 di bawah adalah ledger berbobot
+terakhir yang **belum direbaselined** setelah canary ini. Jangan menafsirkan
+angka tersebut sebagai readiness terkini yang sudah diverifikasi ulang atau
+sebagai izin transaksi nyata/`BUSINESS_READY`.
+
 ## Konteks
 
 Andreas memutuskan menyelesaikan kesiapan SagaPOS dan Saga Member secara
@@ -125,7 +133,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 | Table Order | 76 | demo durable terisolasi | UAT meja nyata dan promotion terpisah |
 | KDS bar/kitchen | 82 | projection demo sehat | satu shift operasional nyata |
 | Cash dan shift accountability | 65 | kontrak tersedia, activation tertutup | cash drawer, closing, SOP |
-| QRIS/payment gateway | 55 | simulator dan guard tersedia | live canary paling akhir |
+| QRIS/payment gateway | 55 | skor historis; controlled canary ON tanpa intent acceptance | controlled real QRIS, settlement, dan penilaian ulang berbobot |
 | Refund/reversal/settlement | 55 | contract/simulator | provider settlement nyata |
 | Member/reward di POS | 80 | provider dan simulator lifecycle aktif | controlled earn–redeem–reversal UAT |
 | Database bahan | 80 | UI/data model aktif | master data bahan asli |
@@ -147,7 +155,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 | Load/performance | 90 | 600 request, 0 gagal, p95 53,91 ms | observasi jam ramai nyata |
 | SOP/training/pilot | 55 | simulator empat skenario dan action queue aktif | pelatihan serta satu shift outlet nyata |
 
-Business-readiness berbobot SagaPOS: **62/100**. Nilai modul yang tinggi tidak
+Business-readiness berbobot SagaPOS pada ledger sebelum rebaseline: **62/100**. Nilai modul yang tinggi tidak
 menutupi gate kritis payment, reporting, hardware, real shift pilot, dan
 acceptance lintas capability.
 
