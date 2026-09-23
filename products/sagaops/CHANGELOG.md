@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Public e-menu ingress source candidate
+
+- Added host-scoped, GET/HEAD-only ingress untuk halaman Kopi Saga e-menu dan katalog baca-saja; signed Order Meja, Kiosk, Dashboard, dan KDS tidak ikut dibuka. Renderer idempoten/fail-closed, activation gate ber-backup dan rollback, serta negative contract tests tersedia pada source `1298fc375ab5134ed88729dd445845880f146dbf`.
+- Static/type 603 modul, regresi relevan 19 pass/0 fail/1 skip Firefox host, audit dependency production 0 temuan. Production tidak berubah: public `/menu` masih 401, payment/gateway OFF; artifact, release/recovery, Owner activation, dan public smoke belum dilakukan. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Phase 8B SagaDev Gateway source candidate
 
 - Added production gateway loader dengan systemd credentials terpisah, exact product/origin/delivery validation, controlled-canary marker, dan strict `OFF/OFF` atau `gateway/production` startup pairing.

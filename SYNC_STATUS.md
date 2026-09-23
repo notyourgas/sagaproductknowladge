@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS public e-menu ingress source-only
+
+- Status `partially accepted`: source dan focused validation `CONFIRMED`; deployment, public URL, Owner activation, dan business readiness `NEEDS CONFIRMATION`.
+- Source `1298fc375ab5134ed88729dd445845880f146dbf` ter-push. Static/type 603; 19 tes relevan pass/0 fail/1 host Firefox skip; audit dependency production 0 temuan. Production tidak berubah: active/rollback `758eb8f02cffa38a294c0fa91420074b06e4d981` / `c2440a2e938317332977f9d0912d986b9a502df6`, public `/menu` masih 401, payment/gateway OFF.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; release artifact, restore/rehearsal, source reconciliation, public/auth smoke, dan monitoring masih perlu evidence.
+
 ## 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway source-only
 
 - Status `partially accepted`: implementasi boundary dan focused validation `CONFIRMED`; full regression sehat, branch reconciliation, packaging/recovery, credential provisioning, activation, Owner UAT, live canary, dan settlement `NEEDS CONFIRMATION`.

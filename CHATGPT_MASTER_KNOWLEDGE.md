@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — Kopi Saga public e-menu source, belum production
+
+- `CONFIRMED`: candidate `1298fc375ab5134ed88729dd445845880f146dbf` menyiapkan ingress baca-saja untuk `https://sagapos.site/menu`, Promo, Member, API katalog, dan aset entry. Katalog tetap preview-only; tidak ada cart/checkout/payment/meja/KDS mutation. Order Meja dan Kiosk tetap pada boundary masing-masing.
+- Source lulus static/type 603, 19 tes relevan pass/0 fail/1 host Firefox skip, dan dependency production audit bersih. URL menu belum publik: anonymous `/menu` masih 401. Production aktif tetap `758eb8f02cffa38a294c0fa91420074b06e4d981`, payment/gateway OFF; release/activation gates belum lulus. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway belum production
 
 - `CONFIRMED`: source `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` pada branch `codex/sagapos-phase8b-sagadev-gateway` menambahkan integrasi SagaDev Gateway product `sagaops`, contract `1.0`, dan `signed_status_polling`. Provider callback serta central merchant secret tetap berada di gateway pusat.

@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-23 — ingress e-menu Kopi Saga publik baca-saja, belum aktif
+
+- `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` pada branch `codex/sagapos-public-menu-ingress-20260923` menyiapkan delapan lokasi Nginx tepat untuk `sagapos.site`: tiga halaman e-menu, API katalog baca-saja, dan empat aset entry CSS/JS. Host lain ditolak, hanya GET/HEAD diterima, dan credential/cookie tidak diteruskan ke backend.
+- Kontrak katalog tetap `CATALOG_PREVIEW` dan `readOnly=true`, tanpa cart, quote, checkout, payment, identitas meja, atau dispatch KDS. Signed Order Meja, Kiosk, Owner Dashboard, dan KDS tidak dibuka oleh ingress ini. Static/type 603 modul dan regresi relevan 19 pass/0 fail/1 skip host Firefox lulus; audit dependency production 0 temuan.
+- Production belum berubah: `/menu` masih 401 secara anonim, active/rollback `758eb8f02cffa38a294c0fa91420074b06e4d981` / `c2440a2e938317332977f9d0912d986b9a502df6`, payment/gateway nyata `OFF`. Candidate masih memerlukan rekonsiliasi dengan branch release lain, artifact/recovery, aktivasi ingress, public/auth negative smoke, dan monitoring. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Source 2026-09-23 — Phase 8B SagaDev Gateway candidate, belum dideploy
 
 - `CONFIRMED`: commit source `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` pada branch `codex/sagapos-phase8b-sagadev-gateway` mengimplementasikan boundary pembayaran SagaDev Gateway untuk product `sagaops`, contract `1.0`, dan delivery `signed_status_polling`. Provider callback tetap berhenti di gateway pusat; SagaPOS tidak menerima callback provider langsung dan tidak menyimpan central merchant secret.

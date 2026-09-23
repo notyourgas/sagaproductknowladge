@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — Sinkronisasi SagaPOS public e-menu ingress candidate
+
+- `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` ter-push dengan host-scoped GET/HEAD-only e-menu preview dan rollback-gated activation runner. Static/type 603, 19 tes relevan pass/0 fail/1 Firefox host skip; production tetap 401 untuk `/menu` anonim.
+- Produk SagaOPS, dossier, changelog, portfolio, master, gaps, dan sync status diperbarui. Artifact/recovery, branch reconciliation, Nginx candidate gate, Owner activation, public smoke, serta monitoring belum selesai; payment nyata OFF dan `BUSINESS_READY=false`. Tidak ada secret, PII, identifier privat, receipt, atau dump.
+
 ## 2026-09-23 — Sinkronisasi SagaPOS Phase 8B SagaDev Gateway
 
 - `CONFIRMED`: source candidate `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` ter-push dengan SagaDev Gateway product `sagaops`, signed status polling, credential separation, strict runtime pairing, controlled-canary marker, dan Owner readiness fail-closed.

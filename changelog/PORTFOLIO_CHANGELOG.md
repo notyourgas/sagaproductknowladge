@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS public e-menu ingress source-only
+
+- `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` menyiapkan akses e-menu Kopi Saga yang baca-saja dan host-scoped, tanpa membuka checkout atau surface operator. Static/type 603 dan 19 tes relevan lulus; Firefox host 1 skip.
+- Production belum berubah dan `/menu` anonim masih 401. Perlu rekonsiliasi branch, artifact/recovery, activation, public/auth smoke, dan monitoring sebelum link menu aktif dibagikan. Payment/gateway tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway source-only
 
 - `CONFIRMED`: candidate `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` mengimplementasikan gateway boundary product `sagaops`, signed status polling, systemd credential separation, controlled-canary marker, dan Owner readiness fail-closed tanpa provider callback/central merchant secret di SagaPOS.

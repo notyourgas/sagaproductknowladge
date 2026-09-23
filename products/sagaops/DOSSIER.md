@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## Public Kopi Saga e-menu ingress candidate
+
+Source `1298fc375ab5134ed88729dd445845880f146dbf` membuat renderer dan activation gate fail-closed untuk membuka hanya e-menu preview di `sagapos.site`. Delapan exact-match location membatasi host serta GET/HEAD, memutus credential/cookie ke upstream, dan mempertahankan Basic Auth pada `/menu/qr`, `/menu/kiosk`, Owner Dashboard, serta KDS. API katalog tetap server-authoritative dan tanpa capability commerce. Runner mengikat expected release dan digest Nginx, memeriksa payment OFF serta payload katalog, menyimpan backup checksummed, melakukan atomic install, `nginx -t`, negative probes, dan rollback bila aktivasi gagal.
+
+Renderer diuji terhadap baseline konfigurasi aktif secara read-only; static/type 603 modul, 19 tes relevan lulus, 1 Firefox host skip, dependency production 0 vulnerability. Ini belum bukti Nginx candidate test atau release production. `/menu` masih 401 anonim; source harus digabung dengan candidate lain dan melewati artifact, restore/rehearsal, Owner gate, activation, browser/public smoke, serta monitor sebelum link dibagikan sebagai menu aktif. Payment/gateway tetap `OFF`; `BUSINESS_READY=false`.
+
 ## Phase 8B — SagaDev Gateway controlled-canary candidate
 
 Commit `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` mengikat SagaPOS ke SagaDev Gateway product `sagaops` dengan contract `1.0` dan delivery `signed_status_polling`. Callback provider tetap diterminasi oleh gateway pusat; SagaPOS hanya membuat payment melalui endpoint produk dan membaca status tertandatangani. Implementasi menolak raw provider secret, product binding yang berbeda, origin selain SagaDev Gateway resmi, atau mode runtime yang tidak berpasangan.

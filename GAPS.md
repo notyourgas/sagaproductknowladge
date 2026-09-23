@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — E-menu publik Kopi Saga belum aktif
+
+- `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` menyiapkan delapan exact-match ingress baca-saja, mengikat host dan method, serta mempertahankan auth operator/Kiosk/Order Meja. Public `/menu` tetap 401 pada production aktif.
+- `NEEDS CONFIRMATION`: rekonsiliasi dengan branch release paralel, immutable artifact, Nginx candidate syntax gate, backup/restore dan rollback rehearsal, Owner activation, public/auth smoke, serta monitor. Jangan menyebarkan link e-menu sebagai aktif sebelum seluruh gate lulus. Payment nyata tetap OFF; `BUSINESS_READY=false`.
+
 ## 2026-09-23 — Residual Phase 8B SagaDev Gateway
 
 - `CONFIRMED`: candidate `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` menyediakan product-bound SagaDev Gateway client, central callback boundary, signed status polling, separated systemd credentials, strict runtime modes, controlled-canary marker, dan Owner readiness fail-closed. Payment production tetap `OFF`.
