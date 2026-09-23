@@ -1,11 +1,11 @@
 # SagaOPS Changelog
 
-## 2026-09-23 — Guided kiosk self-order flow implemented, belum deployed
+## 2026-09-23 — Guided kiosk self-order public demo aktif
 
-- Added full home → order type → member NFC/phone demo → menu/modifier → cart → payment review → QRIS/cash simulator → success/order number → repeat flow pada public kiosk candidate.
-- Preserved demo isolation: phone mentah tidak disimpan, provider/payment global tetap OFF, dan KDS baru menerima ticket setelah simulated success tanpa fakta bisnis.
-- Source commit `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb`; static/type 589, production audit 0 vulnerability, focused browser/API/cutover 15 pass + 1 Firefox host skip, dan kiosk UI/UX 25/25 pass. Full repo run terhenti oleh Windows Node OOM dan tidak diklaim lulus.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`; production tetap `e5734c028d94e48dbfb95023027eede15f18e7bb`.
+- Deployed exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41` as Vercel public demo `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`; rollback `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
+- Added full home → order type → member NFC/phone demo → menu/modifier → cart → payment review → QRIS/cash simulator → success/order number → repeat flow at `https://saga-pos-kiosk.vercel.app/kiosk`.
+- Public Chromium UAT passed NFC/QRIS and phone/cash to demo `KD-*` ticket with zero page/request failures; operator routes remain closed. A missing static-module candidate was rolled back, fixed, regression-tested, and replaced before final activation.
+- Preserved demo isolation: phone raw value is not retained in events, provider/payment real remains OFF, runtime is ephemeral simulator, and no business facts are created. Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`.
 
 ## 2026-09-23 — Menu reference parity v3 aktif di production
 

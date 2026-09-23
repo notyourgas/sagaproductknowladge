@@ -1,10 +1,10 @@
 # Portfolio Changelog
 
-## 2026-09-23 — SagaPOS guided kiosk flow siap kandidat
+## 2026-09-23 — SagaPOS guided kiosk public demo aktif
 
-- `CONFIRMED`: source `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb` menyediakan flow kiosk end-to-end dengan dine-in/takeaway, NFC/nomor HP demo, modifier, cart, QRIS/tunai simulator, nomor pesanan, dan repeat.
-- Isolasi demo dipertahankan: tidak ada provider uang nyata, PII telepon mentah, sales, settlement, stock, HPP, atau reward; ticket KDS hanya muncul setelah simulated success.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`. Production masih `e5734c028d94e48dbfb95023027eede15f18e7bb`; release/deployment dan public UAT belum dijalankan.
+- `CONFIRMED`: exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41`, Vercel deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`, dan stable `https://saga-pos-kiosk.vercel.app/kiosk` menyediakan flow end-to-end dine-in/takeaway, NFC/nomor HP demo, modifier, cart, QRIS/tunai simulator, nomor pesanan, dan repeat.
+- Public UAT lulus untuk NFC/QRIS serta phone/cash sampai tiket demo `KD-*`; isolasi mempertahankan payment nyata OFF, tanpa PII telepon mentah atau fakta sales/settlement/stock/HPP/reward. Rollback tersedia pada `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
+- Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`; Vercel demo bukan aktivasi production bisnis SagaPOS.
 
 ## 2026-09-23 — SagaPOS menu reference parity v3 aktif
 

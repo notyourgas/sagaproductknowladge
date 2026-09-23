@@ -1,11 +1,11 @@
 # SagaOPS Product Knowledge
 
-## Source 2026-09-23 — Guided kiosk self-order flow siap kandidat
+## Public demo 2026-09-23 — Guided kiosk self-order flow aktif
 
-- `CONFIRMED`: source branch commit `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb` mengubah public `/menu/kiosk` menjadi flow terpandu: home → dine-in/takeaway → NFC simulator atau nomor HP demo → menu → modifier → cart → detail pembayaran → QRIS/tunai simulator → sukses dengan nomor pesanan → pesan lagi.
-- Nomor HP mentah tidak disimpan atau dicatat pada event; UI hanya menerima identitas demo tersamarkan. QRIS dan tunai tetap simulator, payment provider/gateway global tetap `OFF`, dan tiket baru mencapai KDS setelah simulasi sukses tanpa membuat sales, settlement, stock, HPP, reward, atau fakta bisnis.
-- Validation kandidat: static/type 589 modul, production dependency audit nol vulnerability, 15 browser/API/cutover test lulus dengan satu controlled Firefox host skip, dan 25/25 kiosk UI/UX browser test lulus. Full monorepo run pada host Windows berhenti karena process OOM setelah ratusan test, sehingga bukan bukti full-regression PASS.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`. Production tetap pada `e5734c028d94e48dbfb95023027eede15f18e7bb` sampai release gate dan deployment terpisah dijalankan.
+- `CONFIRMED`: exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41` aktif pada Vercel public demo `https://saga-pos-kiosk.vercel.app/kiosk` melalui deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`; rollback tersedia pada `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
+- Flow publik adalah home → dine-in/takeaway → NFC simulator atau nomor HP demo → menu → modifier → cart → detail pembayaran → QRIS/tunai simulator → sukses dengan nomor pesanan → pesan lagi. UAT publik menghasilkan tiket demo `KD-*` untuk jalur NFC/QRIS dan phone/cash tanpa browser atau network error.
+- Nomor HP mentah tidak disimpan pada event. Payment tetap `SIMULATOR_ONLY`, persistence `EPHEMERAL_SERVERLESS_DEMO`, provider/gateway nyata tetap `OFF`, dan order tidak membuat sales, settlement, stock, HPP, reward, atau fakta bisnis.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`. Runtime SagaPOS privat/operasional tetap terpisah; deployment demo ini bukan aktivasi payment atau production bisnis.
 
 ## Production 2026-09-23 — Menu reference parity v3 aktif
 

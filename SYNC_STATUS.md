@@ -1,12 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
-## 2026-09-23 — SagaPOS guided kiosk source candidate
+## 2026-09-23 — SagaPOS guided kiosk public demo deployment
 
-- Status `partially accepted`; implementation source dan focused validation `CONFIRMED`, deployment/public runtime/perangkat/business acceptance `NEEDS CONFIRMATION`. Source `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb`; production tetap `e5734c028d94e48dbfb95023027eede15f18e7bb`.
-- Synced: flow home hingga repeat, dine-in/takeaway, NFC/phone demo, modifier/cart, QRIS/tunai simulator, nomor pesanan, KDS demo boundary, privacy masking, accessibility/touch target, dan test evidence.
-- Evidence: static/type 589; production audit 0 vulnerability; focused browser/API/cutover 15 pass dengan satu Firefox environment skip; kiosk UI/UX 25/25 pass. Full monorepo run pada Windows berhenti karena Node OOM setelah ratusan test, jadi full-regression status tetap belum dibuktikan pada kandidat ini.
-- Production berubah: tidak. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`.
-- Next: jalankan release screening dari exact commit, packaging/recovery/rollback gates, deploy terotorisasi, public production UAT sampai KDS, lalu verifikasi perangkat fisik dan business acceptance. Payment/gateway tetap OFF.
+- Status `partially accepted`; exact source, public Vercel runtime, rollback, dan browser UAT `CONFIRMED`, sedangkan perangkat fisik/payment nyata/final content/business acceptance `NEEDS CONFIRMATION`. Source `dc1aa4c5ecd0590202329362e464ff36da0d0c41`; deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`; rollback `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
+- Synced: flow home hingga repeat, dine-in/takeaway, NFC/phone demo, modifier/cart, QRIS/tunai simulator, nomor pesanan, KDS demo boundary, privacy masking, packaging fix, rollback evidence, public UAT, dan operator-route isolation.
+- Evidence: static/type 590; production audit 0 vulnerability; relevant suite 55 pass/0 fail/1 Firefox environment skip; public Chromium NFC/QRIS dan phone/cash UAT lulus tanpa page/request failure. Full monorepo run pada Windows berhenti karena Node OOM dan tidak diklaim full-regression PASS.
+- Public demo berubah: ya. Core production berubah: tidak. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`.
+- Next: finalisasi konten/nutrisi dan visual sign-off; uji QR/perangkat fisik/operator/assistive technology; payment/gateway nyata tetap OFF sampai gate production terpisah.
 
 ## 2026-09-23 — SagaPOS menu reference parity v3 production
 

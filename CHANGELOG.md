@@ -1,11 +1,11 @@
 # Saga Product Knowledge Changelog
 
-## 2026-09-23 — Sinkronisasi kandidat guided kiosk SagaPOS
+## 2026-09-23 — Sinkronisasi deployment public demo guided kiosk SagaPOS
 
-- `CONFIRMED`: source commit `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb` menambahkan flow kiosk penuh dengan order type, member demo, modifier/cart, QRIS/tunai simulator, nomor pesanan, dan reset.
+- `CONFIRMED`: exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41` aktif pada public Vercel deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj` dengan rollback `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
+- Public UAT membuktikan flow NFC/QRIS dan phone/cash sampai tiket demo `KD-*`; health tetap `PUBLIC_DEMO_SIMULATOR`, `production=false`, dan route operator tertutup.
 - File terdampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, SYNC_STATUS, dan root CHANGELOG. Tidak ada credential, PII mentah, callback/receipt, private identifier, database dump, atau path restricted yang dipublikasikan.
-- Validation kandidat: static/type 589, production audit 0 vulnerability, focused 15 pass + 1 controlled Firefox host skip, dan kiosk UI/UX 25/25 pass. Full repo run berhenti karena Windows Node OOM dan tidak diklaim lulus.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`; production tetap `e5734c028d94e48dbfb95023027eede15f18e7bb`.
+- Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`; payment/provider nyata dan production bisnis tidak diaktifkan.
 
 ## 2026-09-23 — Sinkronisasi SagaPOS menu reference parity v3
 

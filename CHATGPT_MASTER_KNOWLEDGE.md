@@ -1,10 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-## Update 2026-09-23 — SagaPOS guided kiosk flow belum production
+## Update 2026-09-23 — SagaPOS guided kiosk public demo aktif
 
-- `CONFIRMED`: source candidate `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb` menyediakan urutan home → dine-in/takeaway → NFC/nomor HP demo → menu/modifier → cart → payment review → QRIS/tunai simulator → sukses/nomor pesanan → pesan lagi.
-- Nomor HP mentah tidak disimpan. QRIS/tunai tetap simulator, provider global OFF, dan KDS hanya menerima order demo setelah simulated success tanpa fakta bisnis.
-- Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`. Jangan menyebut flow baru sudah production; production masih `e5734c028d94e48dbfb95023027eede15f18e7bb`.
+- `CONFIRMED`: exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41` aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui Vercel deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`; rollback `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
+- Flow home → dine-in/takeaway → NFC/nomor HP demo → menu/modifier → cart → payment review → QRIS/tunai simulator → sukses/nomor pesanan → pesan lagi lulus public Chromium UAT untuk kedua metode payment. Nomor HP mentah tidak disimpan; provider nyata tetap OFF; KDS hanya menerima tiket demo setelah simulated success.
+- Status `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`. Jangan menyebut deployment Vercel ini sebagai payment activation atau production bisnis SagaPOS; runtime privat/operasional tetap terpisah.
 
 ## Update 2026-09-23 — SagaPOS menu reference parity v3 aktif
 
