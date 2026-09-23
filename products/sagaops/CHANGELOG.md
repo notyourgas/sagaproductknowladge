@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Phase 8A operational data candidate tervalidasi lokal
+
+- Added official opening-stock baseline seluruh bahan aktif tanpa supplier receipt fiktif, dengan positive valuation, idempotency, restore, dan reconciliation contract.
+- Added fail-closed Owner readiness untuk HPP published, ledger/offline reconciliation, Admin-versus-transaction catalog parity, serta reporting provider/runtime/freshness/queue.
+- Added Owner Dashboard summary dan link finalisasi, expected reporting-mode monitor, serta least-privilege grant untuk tabel reporting append-only.
+- Source `420c407d92a8055d5bd8fcaa6605704f23195bbe`; static/type 605; focused 61/61; full 1.591 pass/73 skip dengan tiga initial failure yang lulus isolated rerun. Dua advisory moderate dependency development tetap terbuka.
+- Production tidak berubah dari `c2440a2e938317332977f9d0912d986b9a502df6`; reporting tetap `OFF`. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Status Kiosk source tervalidasi, deployment tertunda
 
 - Source `1491cd0` ter-push; Kiosk memakai stream sesi bersama QR meja untuk order, pembayaran demo, dan KDS, dengan bounded reconnect, freshness/offline, refresh manual, dan tanpa polling tetap.

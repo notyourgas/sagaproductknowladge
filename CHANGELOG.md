@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — Sinkronisasi SagaPOS Phase 8A operational data
+
+- `CONFIRMED`: source candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` tervalidasi lokal untuk opening baseline, HPP/katalog parity, Owner readiness, reporting health gate, monitor mode, dan least-privilege permission.
+- Knowledge SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master knowledge, GAPS, dan sync status membedakan candidate lokal dari production activation. Production tidak berubah; reporting tetap `OFF`; `BUSINESS_READY=false`.
+- Klasifikasi `partially accepted`: source/test `CONFIRMED`; data nyata, deployment, recovery, reporting activation, dan Owner UAT `NEEDS CONFIRMATION`. Tidak ada credential, PII, raw receipt/callback, identifier privat, database dump, atau path restricted yang dipublikasikan.
+
 ## 2026-09-23 — Sinkronisasi SagaPOS Kiosk stream source-only
 
 - `CONFIRMED`: source `1491cd0` ter-push setelah focused 17/17, full regression serial 1.588 pass/0 fail/73 skip, static/type/build, dan dependency audit nol vulnerability.

@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS Phase 8A operational data source-only
+
+- Status `partially accepted`: implementasi dan validasi candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` `CONFIRMED`; deployment, data bisnis, reporting activation, recovery, dan authenticated Owner UAT `NEEDS CONFIRMATION`.
+- Sinkron: opening baseline resmi, HPP/ledger/offline reconciliation, Admin-transaction catalog parity, thirteen-check Owner readiness, reporting health/action link, expected-mode monitor, dan least-privilege grants.
+- Evidence: static/type 605; focused 61/61; full suite 1.591 pass/73 skip dengan tiga initial failure yang seluruhnya lulus isolated rerun. Dua advisory moderate dependency development tetap terbuka.
+- Production berubah: tidak. Source aktif tetap `c2440a2e938317332977f9d0912d986b9a502df6`, reporting `OFF`. Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; berikutnya immutable artifact, candidate-bound backup/restore/rehearsal, aktivasi yang diotorisasi, dan Owner UAT.
+
 ## 2026-09-23 — SagaPOS Kiosk stream source-only
 
 - Status `partially accepted`: implementasi dan validasi source `1491cd0` `CONFIRMED`, sedangkan deployment/activation dan authenticated production UAT `NEEDS CONFIRMATION` setelah release gate. Production masih `c2440a2e938317332977f9d0912d986b9a502df6`.

@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS Phase 8A belum production
+
+- `CONFIRMED`: candidate lokal `420c407d92a8055d5bd8fcaa6605704f23195bbe` menyediakan opening baseline resmi seluruh bahan, parity katalog Admin terhadap transaksi/Kiosk, readiness HPP/ledger/reconciliation, serta reporting provider/runtime/freshness/queue yang fail-closed.
+- Dashboard Owner mempunyai ringkasan Phase 8A dan action link. Monitor mengikat expected reporting mode dan grant runtime menahan mutasi tabel reporting append-only.
+- Production tetap `c2440a2e938317332977f9d0912d986b9a502df6`; jangan menyatakan fitur ini telah aktif. Reporting tetap `OFF`, data opening/HPP nyata belum difinalisasi, dan artifact/recovery/Owner UAT kandidat belum ada. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — SagaPOS Kiosk stream belum production
 
 - `CONFIRMED`: source `1491cd0` ter-push dan lulus validasi lokal untuk sinkronisasi status Kiosk melalui event stream per sesi bersama QR meja, bounded reconnect, freshness/offline, serta manual refresh. Fixed polling dihapus; replay idempoten tidak menerbitkan event baru.

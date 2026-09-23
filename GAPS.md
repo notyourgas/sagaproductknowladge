@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual Phase 8A operational data SagaPOS
+
+- `CONFIRMED`: candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` menutup false-green opening stock dan Admin-versus-transaction catalog parity pada source lokal; reporting readiness sekarang fail-closed terhadap provider, runtime, freshness, dan queue.
+- `NEEDS CONFIRMATION`: Owner perlu memasukkan opening count dan valuation seluruh bahan aktif, menerbitkan HPP/katalog final tanpa draft, lalu memeriksa parity dan rekonsiliasi dengan data outlet nyata.
+- `NEEDS CONFIRMATION`: provider reporting PostgreSQL, projection worker, invalidation, freshness, serta queue belum diaktifkan pada production. Expected-mode file, runtime permissions, backup/restore, rehearsal, monitor, dan rollback harus diverifikasi terhadap candidate exact.
+- `NEEDS CONFIRMATION`: dua advisory moderate dependency development perlu ditinjau tanpa force-upgrade; artifact immutable, target recovery, authenticated Owner UAT, dan operational acceptance belum ada. Dampak `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Residual Phase 7.5 Owner Dashboard IA SagaPOS
 
 - `CONFIRMED`: production source `c2440a2e938317332977f9d0912d986b9a502df6` aktif dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`; grouped navigation, mobile shell, route preservation, table-order stream fix, release/recovery, authenticated Owner restart UAT, dan monitor lulus.

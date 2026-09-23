@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## Phase 8A operational data — source candidate 2026-09-23
+
+Candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` menutup dua false-green penting pada source: stock opening tidak lagi boleh direpresentasikan oleh penerimaan supplier fiktif, dan katalog Admin tidak dianggap siap bila berbeda dari katalog transaksi/Kiosk. Endpoint Owner `business-master-readiness` kini menyertakan kontrak Phase 8A dengan score, tiga belas pemeriksaan fail-closed, blocker berikutnya, dan action queue; Dashboard menampilkan ringkasan tersebut serta tautan ke finalisasi inventory, produk, dan laporan.
+
+Domain inventory menerima count kind `OPENING_BASELINE` dengan tanggal bisnis, cakupan semua bahan aktif, kuantitas nol eksplisit, dan biaya satuan positif. Fingerprint idempoten mengikat jenis count, tanggal, kuantitas, dan biaya; reconciliation/restore mengenali baseline tanpa membuat receipt supplier. Reporting hanya siap bila provider PostgreSQL, runtime projection, worker, invalidation, freshness, dan queue sehat; monitor memverifikasi expected mode `OFF` atau `POSTGRES`, sementara permission runtime menahan update/delete terhadap tabel append-only.
+
+Static/type 605 modul dan focused 61/61 lulus. Full suite menghasilkan 1.591 pass, 73 controlled skip, serta tiga kegagalan awal; seluruh failing test lulus pada rerun terisolasi, termasuk browser Kiosk dan dua browser Gudang. Dua advisory moderate dependency development masih terbuka. Tidak ada artifact immutable, target backup/restore, rehearsal, activation, atau authenticated production UAT untuk candidate ini. Production tetap `c2440a2e938317332977f9d0912d986b9a502df6`, reporting `OFF`, dan status tepat `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Kiosk status event stream — source-only 2026-09-23
 
 Commit `1491cd0` di branch source khusus menambahkan endpoint event stream per sesi Kiosk pada runtime order demo yang juga melayani QR meja. Snapshot awal dibuffer selama subscription agar perubahan KDS tidak hilang di antara subscribe dan initial state. Checkout, perubahan pembayaran simulator, dan transisi fulfillment hanya dipublikasikan jika bukan replay idempoten. Client Kiosk menutup stream lama, menandai freshness/offline, reconnect dengan backoff maksimum 30 detik, dan menyediakan refresh manual; fixed-interval polling dihapus. Server tetap authority untuk harga, pembayaran, dan status; jalur demo tidak mengubah fakta bisnis.

@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS Phase 8A operational data source-only
+
+- `CONFIRMED`: candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` menambahkan opening-stock baseline resmi, HPP/katalog transaction parity, Owner readiness, reporting health gate, monitor mode, dan least-privilege reporting grants.
+- Static/type 605 dan focused 61/61 lulus; full suite 1.591 pass/73 skip dengan tiga initial failure yang seluruhnya lulus isolated rerun. Dua advisory moderate dependency development masih terbuka.
+- Production belum berubah dari `c2440a2e938317332977f9d0912d986b9a502df6`; reporting tetap `OFF`, data bisnis nyata belum difinalisasi, dan release/recovery/UAT belum dijalankan. Delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Kiosk status stream source-only
 
 - `CONFIRMED`: source `1491cd0` ter-push dan tervalidasi lokal; Kiosk sekarang memiliki kontrak stream status order/KDS bersama QR meja tanpa polling tetap atau event replay ganda.

@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-23 — Phase 8A operational data candidate, belum dideploy
+
+- `CONFIRMED`: source candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` menambahkan readiness Owner yang fail-closed untuk opening stock, HPP published, ledger/reconciliation, katalog transaksi, serta pipeline reporting.
+- Owner dapat membuat `OPENING_BASELINE` resmi untuk seluruh bahan aktif tanpa penerimaan supplier fiktif. Baseline wajib mencakup semua bahan aktif dan memakai biaya satuan positif; penambahan bahan baru otomatis membuka kembali blocker cakupan.
+- Kandidat memeriksa parity katalog Admin terhadap katalog transaksi/Kiosk, price integer positif, published revision tanpa draft tersisa, serta mode/freshness/queue reporting. Monitor menahan drift mode reporting dan grant runtime membatasi mutasi tabel reporting append-only.
+- Validasi lokal: static/type 605 modul; focused 61/61; full suite 1.591 pass, 73 controlled skip, dan tiga kegagalan awal yang seluruhnya lulus pada rerun terisolasi. Dua advisory moderate pada dependency development masih perlu review sebelum packaging.
+- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Production tetap `c2440a2e938317332977f9d0912d986b9a502df6`; reporting tetap `OFF`, data opening/HPP nyata belum dimasukkan, dan artifact/recovery/Owner UAT belum dijalankan.
+
 ## Source 2026-09-23 — Status Kiosk tersinkron melalui stream, belum dideploy
 
 - `CONFIRMED`: commit `1491cd0` pada branch source khusus sudah ter-push. Kiosk memakai event stream sesi yang sama dengan QR meja untuk snapshot order, pembayaran demo, dan status KDS; polling tetap 4 detik dihapus. Reconnect dibatasi dengan backoff, status stale terlihat, dan tersedia refresh manual.
