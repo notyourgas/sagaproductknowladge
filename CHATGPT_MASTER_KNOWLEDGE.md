@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — E-menu staged, gate canary menahan aktivasi
+
+- `CONFIRMED`: source `91b3d575d4956528bf2c75d7889d1ba283c77263` menutup scoped Owner smoke dan disposable rollback rehearsal. Artifact checksum-verified staged, backup terenkripsi/restore disposable, dan rehearsal lulus; live production tidak berubah.
+- Broad smoke menemukan Phase 8B readiness `PARTIAL` (7/10), `activationSafe=false`; aktivasi ditahan. `https://sagapos.site/menu` masih 401, bukan link publik. Mode gateway existing tidak diubah dan Order Meja/Kiosk tetap simulator. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; skor 62/100 adalah ledger historis, bukan hasil rebaseline terbaru.
+
 ## Update 2026-09-23 — Runner e-menu siap diuji, link publik belum aktif
 
 - `CONFIRMED`: source `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambah packager/runner gateway-aware untuk e-menu baca-saja. Artifact lokal terikat checksum, tetapi belum ada Owner/recovery/activation evidence untuk kandidat ini.

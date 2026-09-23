@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Rehearsal e-menu lulus, aktivasi ditahan
+
+- Source `91b3d575d4956528bf2c75d7889d1ba283c77263` menambah scoped Owner smoke dan disposable ingress rollback rehearsal. Artifact checksum-bound staged; focused 5/5, static/type 613 modul, audit production 0 vulnerability, Owner scoped smoke, encrypted backup/disposable restore, dan dua arah `nginx -t` rehearsal lulus.
+- Broad smoke payment-containment gagal: Phase 8B `PARTIAL` (7/10), `activationSafe=false`. Tidak ada activation atau perubahan live Nginx, payment, provider, database, atau release pointer. Public `/menu` tetap 401; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Runner e-menu gateway-aware source-pushed
 
 - `CONFIRMED`: `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambah packager dan runner ingress host-scoped yang mempertahankan mode gateway existing serta menyediakan backup konfigurasi dan percobaan rollback. Artifact lokal checksum-bound tersedia; validasi focused 4/4, static/type 613 modul, sintaks Bash, dan audit dependency production 0 vulnerability lulus.

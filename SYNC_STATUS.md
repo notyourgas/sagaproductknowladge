@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS public e-menu release hold
+
+- Status `partially accepted`: clean pushed source `91b3d575d4956528bf2c75d7889d1ba283c77263`, artifact immutable staged dan checksum-verified; focused 5/5, static/type 613, production audit 0 vulnerability, scoped Owner/auth smoke, encrypted backup/disposable restore, dan disposable ingress/rollback rehearsal PASS.
+- Broad release smoke FAIL pada payment-containment: Phase 8B `PARTIAL` (7/10), `activationSafe=false`. Runtime tetap `9c364ff2359940f73d52985fd752101d5d94b84b`, rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`; `/menu` 401. Belum activation, post-activation smoke, atau monitoring kandidat. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; ledger 62/100 historis belum direbaseline.
+
 ## 2026-09-23 — Runner e-menu gateway-aware source-only
 
 - Status `partially accepted`: commit `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` ter-push, artifact lokal checksum-bound dibuat; focused 4/4, static/type 613 modul, Bash syntax, dan audit production 0 vulnerability lulus.

@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Gate e-menu tertahan readiness canary
+
+- `CONFIRMED`: candidate `91b3d575d4956528bf2c75d7889d1ba283c77263` dan artifact checksum-bound staged; scoped Owner smoke, encrypted backup/disposable restore, serta disposable Nginx rollback rehearsal lulus. Broad smoke gagal karena Phase 8B readiness `PARTIAL` (7/10), `activationSafe=false`; `/menu` tetap 401 dan release pointer tidak berubah.
+- `NEEDS CONFIRMATION`: penyebab canary window/gateway readiness yang turun, candidate-bound admission/receipt, aktivasi aman, authenticated/public negative smoke serta monitoring pascaaktivasi, independent offsite restore, dan business UAT. Jangan menurunkan gate atau mengubah provider untuk memaksa publish.
+
 ## 2026-09-23 — Gate aktivasi e-menu setelah runner gateway-aware
 
 - `CONFIRMED`: source `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` dan artifact lokal checksum-bound tersedia, tetapi live Nginx tidak berubah; public `/menu` masih 401.

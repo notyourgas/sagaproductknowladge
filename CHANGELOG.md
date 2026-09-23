@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — SagaPOS e-menu release gate fail-closed
+
+- `CONFIRMED`: source `91b3d575d4956528bf2c75d7889d1ba283c77263` menambah scoped Owner smoke dan disposable rollback rehearsal; artifact immutable staged dan checksum-verified. Scoped Owner/auth, encrypted backup/disposable restore, dan rehearsal Nginx/reversal lulus.
+- Alasan: broad payment-containment smoke menemukan canary readiness `PARTIAL` (7/10), `activationSafe=false`, sehingga ingress tidak diaktifkan. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master knowledge, GAPS, dan SYNC_STATUS. Runtime dan `/menu` tidak berubah; masih 401. Klasifikasi source/runtime `CONFIRMED`, activation dan business acceptance `NEEDS CONFIRMATION`; delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-23 — SagaPOS gateway-aware e-menu release runner
 
 - `CONFIRMED`: source `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambah runner, packager, dan runbook e-menu GET-only yang kompatibel dengan gateway canary existing. Artifact lokal checksum-bound dibuat; production tidak berubah dan `/menu` masih 401.

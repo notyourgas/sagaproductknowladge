@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-23 — E-menu ingress recovery rehearsal dan gate hold
+
+Candidate `91b3d575d4956528bf2c75d7889d1ba283c77263` dipaketkan dari exact clean pushed source, diverifikasi checksum, dan staged tanpa aktivasi. Scoped Owner smoke memeriksa runtime, Owner production auth, preview-only catalogue, CSRF dan anonymous boundary tanpa membuat order/payment intent. Backup terenkripsi dengan restore disposable lulus. Rehearsal Nginx kandidat dan pembalikan ke konfigurasi asli lulus di direktori disposable; konfigurasi live tetap sama.
+
+Broad smoke gagal pada payment-containment karena Phase 8B readiness `PARTIAL` (7/10), `activationSafe=false`; ini tidak diabaikan hanya karena route e-menu bersifat baca-saja. Candidate-bound recovery receipt, activation, public smoke pascaaktivasi, dan monitoring pascaaktivasi belum ada. `/menu` anonim masih 401, runtime source tetap `9c364ff2359940f73d52985fd752101d5d94b84b` dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`. Gateway mode existing dan simulator Order Meja/Kiosk tidak diubah. Independent offsite restore serta business UAT belum terverifikasi. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Gateway-compatible e-menu release runner — source-only
 
 Commit `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambahkan runner ingress dan packager lokal untuk renderer pada commit sebelumnya. Artifact dua-file dibuat dari exact pushed SHA dan diverifikasi SHA-256; runner menuntut active/ingress SHA, mode gateway existing, preview-only capabilities, recovery receipt, shared lock, smoke negatif, serta rollback Nginx. Ini adalah implementasi gate, bukan bukti gate Owner/backup/restore/rehearsal sudah lulus. Bitwarden CLI terkunci saat preflight; tidak ada mutasi VPS. Public `/menu` tetap 401, Table Order/Kiosk simulator, gateway canary existing ON; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.

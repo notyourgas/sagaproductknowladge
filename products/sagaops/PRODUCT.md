@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-23 — E-menu release gate ditahan
+
+- `CONFIRMED`: source bersih `91b3d575d4956528bf2c75d7889d1ba283c77263` menambah Owner smoke terbatas baca-saja dan rehearsal ingress terisolasi. Artifact immutable sudah checksum-verified dan staged, backup terenkripsi/restore disposable serta rehearsal rollback lulus; live Nginx tidak berubah.
+- Scoped Owner/auth/CSRF smoke lulus untuk runtime saat ini, tetapi broad release smoke gagal pada payment containment: Phase 8B readiness `PARTIAL` (7/10), `activationSafe=false`. Aktivasi ingress ditahan fail-closed, public `/menu` tetap 401, dan mode gateway existing tidak diubah. Status `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; ledger 62/100 historis belum direbaseline.
+
 ## Source 2026-09-23 — runner e-menu gateway-aware, belum aktif
 
 - `CONFIRMED`: source `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambah runner ingress baca-saja, packager exact pushed SHA, guard gateway existing, rollback Nginx, dan uji negatif. Artifact lokal checksum-bound telah dibuat; ini belum berarti staging atau production.
