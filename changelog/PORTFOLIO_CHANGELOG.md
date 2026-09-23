@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS Kiosk status stream source-only
+
+- `CONFIRMED`: source `1491cd0` ter-push dan tervalidasi lokal; Kiosk sekarang memiliki kontrak stream status order/KDS bersama QR meja tanpa polling tetap atau event replay ganda.
+- Production belum berubah: source aktif `c2440a2e938317332977f9d0912d986b9a502df6`, payment/gateway nyata `OFF`, dan kandidat belum melalui artifact/recovery/Owner UAT. Delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Phase 7.5 Owner Dashboard IA aktif
 
 - `CONFIRMED`: production exact source `c2440a2e938317332977f9d0912d986b9a502df6`, rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`, health ready, dan 34 migrasi unchanged.

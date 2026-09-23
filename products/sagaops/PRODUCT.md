@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-23 — Status Kiosk tersinkron melalui stream, belum dideploy
+
+- `CONFIRMED`: commit `1491cd0` pada branch source khusus sudah ter-push. Kiosk memakai event stream sesi yang sama dengan QR meja untuk snapshot order, pembayaran demo, dan status KDS; polling tetap 4 detik dihapus. Reconnect dibatasi dengan backoff, status stale terlihat, dan tersedia refresh manual.
+- Replay idempoten tidak mengirim notifikasi status baru. Harga, pembayaran, dan status tetap ditetapkan server; payment nyata tetap `OFF` dan order demo tetap terisolasi dari fakta bisnis.
+- Validasi lokal: focused Kiosk/Table 17/17, full regression serial 1.588 pass/0 fail/73 skip dari 1.661 tes, static/type/build lulus, dependency production audit nol vulnerability. Run paralel sebelumnya gagal satu tes akibat batas buffer jaringan host, bukan dipakai sebagai bukti lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Production masih pada `c2440a2e938317332977f9d0912d986b9a502df6`; artifact, recovery rehearsal, aktivasi, dan authenticated UAT untuk commit baru belum ada. Hostname khusus Order Meja belum terverifikasi DNS-nya.
+
 ## Production 2026-09-23 — Phase 7.5 Owner Dashboard information architecture aktif
 
 - `CONFIRMED`: exact source `c2440a2e938317332977f9d0912d986b9a502df6` aktif pada `https://dashboard.sagapos.site/dashboard` dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`, artifact SHA-256 `7f9c831e565c835569610ff1ac08f5ad61c07c7f5dc6568790525b4dce86521a`, health `ready=true`, dan schema tetap 34 migrasi.

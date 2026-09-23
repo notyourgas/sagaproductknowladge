@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS Kiosk stream belum production
+
+- `CONFIRMED`: source `1491cd0` ter-push dan lulus validasi lokal untuk sinkronisasi status Kiosk melalui event stream per sesi bersama QR meja, bounded reconnect, freshness/offline, serta manual refresh. Fixed polling dihapus; replay idempoten tidak menerbitkan event baru.
+- Production tetap `c2440a2e938317332977f9d0912d986b9a502df6`. Jangan menyatakan stream Kiosk baru telah terdeploy/aktif: artifact, recovery rehearsal, activation, dan authenticated UAT kandidat belum ada. Payment/gateway nyata `OFF`; `BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — SagaPOS Phase 7.5 Owner Dashboard IA aktif
 
 - `CONFIRMED`: production source `c2440a2e938317332977f9d0912d986b9a502df6`, rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`, health ready, service aktif, dan 34 migrasi unchanged.

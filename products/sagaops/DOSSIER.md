@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## Kiosk status event stream — source-only 2026-09-23
+
+Commit `1491cd0` di branch source khusus menambahkan endpoint event stream per sesi Kiosk pada runtime order demo yang juga melayani QR meja. Snapshot awal dibuffer selama subscription agar perubahan KDS tidak hilang di antara subscribe dan initial state. Checkout, perubahan pembayaran simulator, dan transisi fulfillment hanya dipublikasikan jika bukan replay idempoten. Client Kiosk menutup stream lama, menandai freshness/offline, reconnect dengan backoff maksimum 30 detik, dan menyediakan refresh manual; fixed-interval polling dihapus. Server tetap authority untuk harga, pembayaran, dan status; jalur demo tidak mengubah fakta bisnis.
+
+Focused Kiosk/Table 17/17, full regression serial 1.588 pass/0 fail/73 skip, static/type/build, serta dependency production audit nol vulnerability telah lulus lokal. Run paralel sebelumnya memiliki satu kegagalan batas buffer jaringan Windows; hasil final berasal dari rerun serial penuh. Belum ada artifact immutable, backup/rehearsal terikat kandidat, aktivasi, atau authenticated production UAT untuk commit baru. Production masih pada source `c2440a2e938317332977f9d0912d986b9a502df6` dengan payment/gateway `OFF`; status tepat `IMPLEMENTED_NOT_DEPLOYED`, bukan `STAGING_READY` atau `BUSINESS_READY`.
+
 ## Phase 7.5 Owner Dashboard information architecture — production 2026-09-23
 
 Exact source `c2440a2e938317332977f9d0912d986b9a502df6` aktif pada production dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`, artifact SHA-256 `7f9c831e565c835569610ff1ac08f5ad61c07c7f5dc6568790525b4dce86521a`, health ready, service aktif, dan 34 migrasi unchanged. Release code-only melewati immutable target admission, fresh encrypted backup/disposable restore, candidate-current-candidate rehearsal, activation atomik, authenticated Owner UAT sebelum dan setelah restart, public health/dashboard, anonymous denial, serta monitor exact-source.

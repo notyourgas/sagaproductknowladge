@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Status Kiosk source tervalidasi, deployment tertunda
+
+- Source `1491cd0` ter-push; Kiosk memakai stream sesi bersama QR meja untuk order, pembayaran demo, dan KDS, dengan bounded reconnect, freshness/offline, refresh manual, dan tanpa polling tetap.
+- Replay idempoten tidak mengirim event tambahan. Focused 17/17, full regression serial 1.588 pass/0 fail/73 skip, static/type/build, dan dependency audit nol vulnerability lulus.
+- Production tetap `c2440a2e938317332977f9d0912d986b9a502df6`; release artifact, recovery gate, aktivasi, dan authenticated UAT kandidat belum ada. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Phase 7.5 Owner Dashboard IA aktif di production
 
 - Activated exact source `c2440a2e938317332977f9d0912d986b9a502df6` dengan rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`; artifact SHA-256 `7f9c831e565c835569610ff1ac08f5ad61c07c7f5dc6568790525b4dce86521a` dan schema 34 migrasi unchanged.

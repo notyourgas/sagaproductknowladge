@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS Kiosk stream source-only
+
+- Status `partially accepted`: implementasi dan validasi source `1491cd0` `CONFIRMED`, sedangkan deployment/activation dan authenticated production UAT `NEEDS CONFIRMATION` setelah release gate. Production masih `c2440a2e938317332977f9d0912d986b9a502df6`.
+- Sinkron: event stream per sesi Kiosk/QR meja, replay suppression, freshness/offline, bounded reconnect, manual refresh, dan penghapusan fixed polling. Focused 17/17; full regression serial 1.588 pass/0 fail/73 skip; static/type/build pass; audit dependency production nol vulnerability.
+- Production berubah: tidak. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; payment/gateway nyata `OFF`. Berikutnya: immutable artifact, candidate-bound backup/restore dan rehearsal, Owner-gated activation serta authenticated UAT.
+
 ## 2026-09-23 — SagaPOS Phase 7.5 Owner Dashboard IA production
 
 - Status `partially accepted`; exact release/runtime, information architecture, SSE regression, recovery, dan Owner technical UAT `CONFIRMED`, sedangkan human navigation acceptance dan newest-backup offsite verification `NEEDS CONFIRMATION`. Production source `c2440a2e938317332977f9d0912d986b9a502df6`; rollback `66e9aa1263b2f06141742ab7c780ccfaa31971e9`; schema 34 migrasi unchanged.
