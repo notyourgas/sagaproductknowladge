@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-23 — Phase 8A diselaraskan ke release aktif, belum dideploy
+
+- `CONFIRMED`: commit source `93595a56e38efef43aa125e5fa69c503a5836075` pada branch `codex/sagapos-phase8a-aligned-20260923` membawa Phase 8A ke baseline production `758eb8f02cffa38a294c0fa91420074b06e4d981` tanpa mengganti Kiosk/Table Order stream. Pemeriksaan statis/type dan regresi penuh lulus: 1.600 pass, 0 fail, 73 skip.
+- Production tetap pada `758eb8f02cffa38a294c0fa91420074b06e4d981` dengan rollback `c2440a2e938317332977f9d0912d986b9a502df6`; inventory reporting dan pembayaran nyata `OFF`. Tidak ada artifact/rehearsal/aktivasi untuk commit baru ini, dan branch release paralel perlu direkonsiliasi sebelum rilis. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Production 2026-09-23 — Kiosk dan QR meja memakai status stream aktif
 
 - `CONFIRMED`: exact source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif; rollback `c2440a2e938317332977f9d0912d986b9a502df6`; artifact SHA-256 `14afd586a4b62100420553f25f29e9c63c07017e36d5fa2b3d9967d0031d9462`. Health ready, 34 migrasi unchanged, payment/gateway `OFF`, dan Table Order tetap simulator terisolasi.

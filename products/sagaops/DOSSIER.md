@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## Phase 8A — source selaras production, delivery tertunda
+
+Commit `93595a56e38efef43aa125e5fa69c503a5836075` disusun di atas release aktif `758eb8f02cffa38a294c0fa91420074b06e4d981`, bukan langsung memakai candidate lama `420c407d92a8055d5bd8fcaa6605704f23195bbe`. Kontrak opening baseline, parity katalog, tiga belas gate readiness, dan reporting tetap sama; regresi serial 1.673 tes menghasilkan 1.600 pass, 0 fail, 73 skip, disertai static/type check dan audit dependency production tanpa temuan. Dua advisory moderate hanya pada dependency development dan masih perlu penanganan terpisah.
+
+Branch release paralel telah berubah dan overlap sembilan file dengan candidate ini. Karena belum ada artifact immutable, restore/rehearsal candidate-bound, admission, atau Owner production smoke untuk SHA tersebut, tidak ada aktivasi. Backend production tetap `758eb8f02cffa38a294c0fa91420074b06e4d981`, rollback `c2440a2e938317332977f9d0912d986b9a502df6`; reporting dan pembayaran nyata `OFF`. Domain khusus Order Meja belum resolve; public catalogue preview pada `/menu` masih tertahan Basic Auth. Offsite restore independen dan UAT perangkat/shift tetap terbuka. `BUSINESS_READY=false`.
+
 ## Kiosk/Table Order status stream — production 2026-09-23
 
 Exact source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif dengan rollback `c2440a2e938317332977f9d0912d986b9a502df6`; 34 migrasi dan lockfile tidak berubah. Kiosk memakai stream sesi yang sama dengan QR meja untuk order, pembayaran simulasi, dan status KDS. Server tetap menentukan harga, pembayaran, serta transisi; client menampilkan freshness/offline, backoff reconnect, dan recovery manual tanpa fixed polling atau notifikasi replay ganda.

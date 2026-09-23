@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — Sinkronisasi SagaPOS Phase 8A source selaras release aktif
+
+- `CONFIRMED`: source `93595a56e38efef43aa125e5fa69c503a5836075` ter-push; 1.600 pass/0 fail/73 skip dan static/type lulus. Production tetap pada `758eb8f02cffa38a294c0fa91420074b06e4d981`, rollback `c2440a2e938317332977f9d0912d986b9a502df6`; candidate belum dideploy.
+- Produk SagaOPS, portfolio, master knowledge, gaps, dan sync status diperbarui. `NEEDS CONFIRMATION`: rekonsiliasi source paralel, release artifact/recovery/UAT, data operasional, public e-menu, DNS Order Meja, offsite restore dan physical UAT. Payment/reporting nyata `OFF`; `BUSINESS_READY=false`.
+- Tidak memuat credential, PII, raw callback/receipt, identifier privat, dump, atau path evidence restricted.
+
 ## 2026-09-23 — Sinkronisasi SagaPOS Kiosk status stream production
 
 - `CONFIRMED`: exact source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif dengan rollback `c2440a2e938317332977f9d0912d986b9a502df6`; full regression, artifact/recovery, authenticated Owner smoke, dan monitor lulus. Production berubah code-only, 34 migrasi unchanged, payment nyata tetap `OFF`.

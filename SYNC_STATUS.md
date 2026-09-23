@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS Phase 8A source selaras release aktif
+
+- Status `partially accepted`: source/test `CONFIRMED`; deployment, public e-menu, offsite restore, real-device UAT, dan business acceptance `NEEDS CONFIRMATION`.
+- Source `93595a56e38efef43aa125e5fa69c503a5836075` ter-push pada branch terisolasi di atas active `758eb8f02cffa38a294c0fa91420074b06e4d981`. Static/type pass; focused 44/44; full serial 1.600 pass, 0 fail, 73 skip; audit dependency production 0 temuan, dua advisory moderate development terbuka.
+- Production tidak berubah; rollback `c2440a2e938317332977f9d0912d986b9a502df6`, payment dan inventory reporting nyata `OFF`, Table Order tetap simulator. Candidate belum punya artifact/rehearsal/UAT production dan belum melewati rekonsiliasi branch release paralel. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Kiosk status stream production
 
 - Status `partially accepted`: release teknis `CONFIRMED`; offsite restore backup terbaru, DNS `order.sagapos.site`, real-device/shift acceptance, dan readiness bisnis `NEEDS CONFIRMATION`.

@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Phase 8A source selaras release, aktivasi tetap tertahan
+
+- `CONFIRMED`: source `93595a56e38efef43aa125e5fa69c503a5836075` lulus full regression 1.600 pass/0 fail/73 skip; production tetap `758eb8f02cffa38a294c0fa91420074b06e4d981`.
+- `NEEDS CONFIRMATION`: branch release paralel overlap sembilan file sehingga perlu rekonsiliasi dan gate baru sebelum artifact; backup/restore independen, recovery rehearsal, Owner UAT, data nyata, dan reporting activation belum selesai. E-menu publik `/menu` masih memerlukan allowlist autentikasi, sedangkan `order.sagapos.site` belum resolve DNS. `BUSINESS_READY=false`.
+
 ## 2026-09-23 — Residual release Kiosk/Table Order SagaPOS
 
 - `CONFIRMED`: exact source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif dengan status stream Kiosk/QR meja dan Owner browser gate; payment nyata tetap `OFF`, Table Order simulator, dan monitor lulus setelah salinan transport rilis dibersihkan.

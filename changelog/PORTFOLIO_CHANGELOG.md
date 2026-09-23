@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS Phase 8A source selaras release aktif
+
+- `CONFIRMED`: source `93595a56e38efef43aa125e5fa69c503a5836075` ter-push dan lulus regresi serial 1.600 pass/0 fail/73 skip di atas baseline production. Ini menutup drift source candidate Phase 8A, bukan deployment.
+- Active/rollback tetap `758eb8f02cffa38a294c0fa91420074b06e4d981` / `c2440a2e938317332977f9d0912d986b9a502df6`. Reporting dan payment nyata `OFF`; artifact/recovery/UAT candidate, DNS Order Meja, public e-menu boundary, serta offsite restore independen belum selesai. `BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Kiosk/Table Order status stream production
 
 - `CONFIRMED`: source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif dengan rollback `c2440a2e938317332977f9d0912d986b9a502df6`. Kiosk dan QR meja memakai status stream bersama; browser gate memverifikasi Owner production provider dan anonymous Table Order boundary.

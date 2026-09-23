@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS Phase 8A source selaras production, belum aktif
+
+- `CONFIRMED`: commit `93595a56e38efef43aa125e5fa69c503a5836075` mengintegrasikan Phase 8A di atas release SagaPOS aktif `758eb8f02cffa38a294c0fa91420074b06e4d981`, dengan 1.600 pass/0 fail/73 skip. Opening stock, parity katalog, HPP, dan reporting readiness tersedia di source branch, bukan runtime production.
+- Production/rollback tetap `758eb8f02cffa38a294c0fa91420074b06e4d981` / `c2440a2e938317332977f9d0912d986b9a502df6`. Payment dan inventory reporting nyata `OFF`; release gate, data operasional aktual, offsite restore independen, DNS khusus Order Meja, e-menu publik, serta UAT fisik belum selesai. `BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — SagaPOS Kiosk status stream production aktif
 
 - `CONFIRMED`: exact source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif; rollback `c2440a2e938317332977f9d0912d986b9a502df6`; 34 migrasi unchanged. Kiosk menggunakan status stream bersama signed QR meja, bukan fixed polling, dengan freshness/offline, backoff, dan refresh manual.
