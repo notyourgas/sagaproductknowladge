@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS guided kiosk source candidate
+
+- Status `partially accepted`; implementation source dan focused validation `CONFIRMED`, deployment/public runtime/perangkat/business acceptance `NEEDS CONFIRMATION`. Source `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb`; production tetap `e5734c028d94e48dbfb95023027eede15f18e7bb`.
+- Synced: flow home hingga repeat, dine-in/takeaway, NFC/phone demo, modifier/cart, QRIS/tunai simulator, nomor pesanan, KDS demo boundary, privacy masking, accessibility/touch target, dan test evidence.
+- Evidence: static/type 589; production audit 0 vulnerability; focused browser/API/cutover 15 pass dengan satu Firefox environment skip; kiosk UI/UX 25/25 pass. Full monorepo run pada Windows berhenti karena Node OOM setelah ratusan test, jadi full-regression status tetap belum dibuktikan pada kandidat ini.
+- Production berubah: tidak. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`.
+- Next: jalankan release screening dari exact commit, packaging/recovery/rollback gates, deploy terotorisasi, public production UAT sampai KDS, lalu verifikasi perangkat fisik dan business acceptance. Payment/gateway tetap OFF.
+
 ## 2026-09-23 — SagaPOS menu reference parity v3 production
 
 - Status `partially accepted`; release/runtime/technical parity `CONFIRMED`, sedangkan visual 100%, konten, perangkat, dan business acceptance `NEEDS CONFIRMATION`. Production source `e5734c028d94e48dbfb95023027eede15f18e7bb`; rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; schema 34 migrasi unchanged.

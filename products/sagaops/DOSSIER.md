@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## Guided kiosk self-order flow — source candidate 2026-09-23
+
+Commit `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb` pada branch source menukar halaman kiosk demo singkat dengan engine kiosk portrait penuh. Urutan customer adalah home, pilih dine-in/takeaway, identifikasi Saga Member melalui NFC simulator atau nomor HP demo, pilih menu dan modifier, review cart, review pembayaran, pilih QRIS atau assisted cash simulator, terima nomor pesanan, lalu reset melalui `Pesan Lagi`. Touch target ikon menjadi 64 px dan UI mempertahankan state idle, offline, recovery, serta accessibility semantics.
+
+API publik demo tetap dipisahkan dari API kiosk operasional. Session, same-origin, CSRF, rate limit pada mutation utama, server quote, idempotency, dan isolasi KDS tetap berlaku. Input nomor HP dinormalisasi hanya untuk validasi panjang, tidak disimpan mentah, dan response/event hanya membawa identitas demo tersamarkan. QRIS serta tunai tidak memanggil provider atau settlement; queue KDS dibuat sesudah simulator sukses dan seluruh order tetap `KIOSK_DEMO`/`testMode`.
+
+Static/type check lulus untuk 589 modul; production dependency audit melaporkan nol vulnerability; 15 test browser/API/cutover lulus dengan satu Firefox environment skip; 25 test kiosk UI/UX lulus terisolasi. Full suite repo tidak selesai pada Windows karena proses Node kehabisan memori setelah ratusan test dan tidak boleh dicatat sebagai full-regression PASS.
+
+Status adalah `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Production tidak berubah dan tetap menjalankan `e5734c028d94e48dbfb95023027eede15f18e7bb`. Deployment, public production UAT, perangkat fisik, payment nyata, dan business acceptance tetap gate terpisah.
+
 ## Menu reference parity v3 — production 2026-09-23
 
 Exact source `e5734c028d94e48dbfb95023027eede15f18e7bb` aktif dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, artifact SHA-256 `bec57f21af71bc61186cc04d7903676d9fded82c2f20b3a9123892529c39ca59`, dan 34 migrasi unchanged. Release code-only lulus target admission, fresh encrypted same-host backup/disposable restore, candidate-current-candidate rehearsal, activation atomik, Owner restart smoke, dan monitor exact-source. Independent offsite restore tetap `UNVERIFIED`.

@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-23 — Guided kiosk self-order flow siap kandidat
+
+- `CONFIRMED`: source branch commit `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb` mengubah public `/menu/kiosk` menjadi flow terpandu: home → dine-in/takeaway → NFC simulator atau nomor HP demo → menu → modifier → cart → detail pembayaran → QRIS/tunai simulator → sukses dengan nomor pesanan → pesan lagi.
+- Nomor HP mentah tidak disimpan atau dicatat pada event; UI hanya menerima identitas demo tersamarkan. QRIS dan tunai tetap simulator, payment provider/gateway global tetap `OFF`, dan tiket baru mencapai KDS setelah simulasi sukses tanpa membuat sales, settlement, stock, HPP, reward, atau fakta bisnis.
+- Validation kandidat: static/type 589 modul, production dependency audit nol vulnerability, 15 browser/API/cutover test lulus dengan satu controlled Firefox host skip, dan 25/25 kiosk UI/UX browser test lulus. Full monorepo run pada host Windows berhenti karena process OOM setelah ratusan test, sehingga bukan bukti full-regression PASS.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`. Production tetap pada `e5734c028d94e48dbfb95023027eede15f18e7bb` sampai release gate dan deployment terpisah dijalankan.
+
 ## Production 2026-09-23 — Menu reference parity v3 aktif
 
 - `CONFIRMED`: exact source `e5734c028d94e48dbfb95023027eede15f18e7bb` aktif pada production dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, artifact SHA-256 `bec57f21af71bc61186cc04d7903676d9fded82c2f20b3a9123892529c39ca59`, health `ready=true`, dan schema tetap 34 migrasi.

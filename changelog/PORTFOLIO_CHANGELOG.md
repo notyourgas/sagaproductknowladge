@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS guided kiosk flow siap kandidat
+
+- `CONFIRMED`: source `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb` menyediakan flow kiosk end-to-end dengan dine-in/takeaway, NFC/nomor HP demo, modifier, cart, QRIS/tunai simulator, nomor pesanan, dan repeat.
+- Isolasi demo dipertahankan: tidak ada provider uang nyata, PII telepon mentah, sales, settlement, stock, HPP, atau reward; ticket KDS hanya muncul setelah simulated success.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`. Production masih `e5734c028d94e48dbfb95023027eede15f18e7bb`; release/deployment dan public UAT belum dijalankan.
+
 ## 2026-09-23 — SagaPOS menu reference parity v3 aktif
 
 - `CONFIRMED`: production exact source `e5734c028d94e48dbfb95023027eede15f18e7bb`, rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`, health ready, dan 34 migrasi unchanged.

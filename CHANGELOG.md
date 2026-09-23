@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — Sinkronisasi kandidat guided kiosk SagaPOS
+
+- `CONFIRMED`: source commit `8cd7d6bfb3d46ef1b08b8034833a8f5957e8f8bb` menambahkan flow kiosk penuh dengan order type, member demo, modifier/cart, QRIS/tunai simulator, nomor pesanan, dan reset.
+- File terdampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, SYNC_STATUS, dan root CHANGELOG. Tidak ada credential, PII mentah, callback/receipt, private identifier, database dump, atau path restricted yang dipublikasikan.
+- Validation kandidat: static/type 589, production audit 0 vulnerability, focused 15 pass + 1 controlled Firefox host skip, dan kiosk UI/UX 25/25 pass. Full repo run berhenti karena Windows Node OOM dan tidak diklaim lulus.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_CHANGED=false / BUSINESS_READY=false`; production tetap `e5734c028d94e48dbfb95023027eede15f18e7bb`.
+
 ## 2026-09-23 — Sinkronisasi SagaPOS menu reference parity v3
 
 - `CONFIRMED`: source `e5734c028d94e48dbfb95023027eede15f18e7bb` aktif dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; schema 34 migrasi unchanged.
