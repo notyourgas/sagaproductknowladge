@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — E-menu ingress gateway-compatible belum production
+
+- `CONFIRMED`: source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` menyiapkan renderer baca-saja yang cocok dengan active gateway `9c364ff2359940f73d52985fd752101d5d94b84b`; Nginx live tidak berubah dan anonymous `/menu` tetap 401. Kandidat `1298fc...` payment-OFF bersifat historis dan tidak boleh digunakan untuk promosi saat ini.
+- `NEEDS CONFIRMATION`: runner ingress gateway-aware, artifact immutable, recovery/rollback, verifikasi Owner terkini, public/negative/authenticated smoke, dan monitoring. `https://order.sagapos.site/` juga belum tersedia. Jangan klaim e-menu publik atau `BUSINESS_READY` dari source/test lokal.
+
 ## 2026-09-23 — Residual setelah Phase 8B controlled canary aktif
 
 - `CONFIRMED`: exact source `9c364ff2359940f73d52985fd752101d5d94b84b` dan SagaDev Gateway product `sagaops` telah aktif dalam bounded production canary; release/recovery, Owner restart UAT, signed readiness, dan monitor lulus tanpa payment intent.

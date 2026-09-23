@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-23 — public e-menu diselaraskan dengan gateway aktif, belum deploy
+
+- `CONFIRMED`: commit `c8a811dbf90574c14b957e2668ddb0e22ce2d964` pada branch terisolasi menambahkan renderer fail-closed untuk delapan route katalog GET/HEAD tepat pada host `sagapos.site`. Kontrak preview tetap baca-saja, tanpa cart, quote, checkout, pembayaran, identitas meja, atau dispatch KDS.
+- Pemeriksaan statis/type 612 modul, tes terfokus, browser katalog, regresi penuh lokal dengan exit 0 pada host test yang mendukung hard-link, dan audit dependency production nol vulnerability. Kandidat konfigurasi lulus `nginx -t` secara terisolasi; Nginx production tidak diubah.
+- Production tetap pada source `9c364ff2359940f73d52985fd752101d5d94b84b`, dengan SagaDev Gateway controlled canary existing tetap ON atas izin Owner. Order Meja/Kiosk tetap simulator. Anonymous `https://sagapos.site/menu` masih 401; `https://order.sagapos.site/` belum tersedia. Artifact rilis, runner gateway-aware, recovery, Owner gate dan authenticated smoke masih pending. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- Entri ingress `1298fc...` di bawah adalah histori kandidat lama dengan asumsi payment OFF; jangan mempromosikannya di atas release gateway aktif.
+
 ## Production 2026-09-23 — Phase 8B SagaDev Gateway controlled canary aktif
 
 - `CONFIRMED`: exact source `9c364ff2359940f73d52985fd752101d5d94b84b` aktif dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`, artifact SHA-256 `3f0accd414ab1a13abb125f49385c6b34741e2ab3871efd5de92dde0bcbb72e9`, health ready, dan 34 migrasi unchanged.

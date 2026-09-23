@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS e-menu publik belum aktif pada gateway canary
+
+- `CONFIRMED`: source renderer e-menu terbaru `c8a811dbf90574c14b957e2668ddb0e22ce2d964` sudah diselaraskan ke baseline production `9c364ff2359940f73d52985fd752101d5d94b84b`; kandidat lama `1298fc...` yang mengasumsikan payment OFF tidak boleh dipromosikan. Source/test dan uji sintaks kandidat lulus, tetapi deployment belum dilakukan.
+- Link yang benar saat ini: `https://sagapos.site/order` untuk shell Order Meja demo (pesanan memerlukan QR meja bertanda tangan); `https://dashboard.sagapos.site/dashboard#catalog` untuk Owner Menu & promo (sesi Owner diperlukan). `https://sagapos.site/menu` masih 401 dan belum dapat dibagikan sebagai e-menu publik; `https://order.sagapos.site/` belum tersedia.
+- Owner mengizinkan gateway canary existing tetap ON, bukan transaksi uang nyata baru, payout atau provider mutation. Order Meja/Kiosk tetap simulator. Release e-menu menunggu runner gateway-aware, recovery, Owner gate, dan authenticated smoke. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway aktif terbatas
 
 - `CONFIRMED`: production SagaPOS memakai exact source `9c364ff2359940f73d52985fd752101d5d94b84b`, rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`, health ready, dan 34 migrasi unchanged.

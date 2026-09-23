@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS e-menu gateway-compatible source, belum publik
+
+- `CONFIRMED`: source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` menyiapkan ingress katalog baca-saja pada baseline gateway canary aktif. Tes source, browser, regresi lokal, audit dependency, dan uji sintaks Nginx kandidat lulus; tidak ada aktivasi production.
+- `https://sagapos.site/menu` tetap 401, sedangkan Order Meja tetap demo di `https://sagapos.site/order` dengan QR bertanda tangan. Gateway canary existing tetap ON tanpa transaksi baru; runner/recovery/Owner gate dan authenticated smoke e-menu masih terbuka. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Phase 8B controlled gateway production
 
 - `CONFIRMED`: exact source `9c364ff2359940f73d52985fd752101d5d94b84b` aktif dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`; SagaDev Gateway product `sagaops` berjalan dalam bounded controlled canary dengan signed status polling dan central kill switch.

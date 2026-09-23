@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — SagaPOS e-menu gateway-compatible source-only
+
+- `CONFIRMED`: source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` menutup konflik renderer e-menu payment-OFF lama terhadap gateway canary aktif, dengan tes lokal dan sintaks Nginx kandidat lulus.
+- Alasan: mencegah publikasi link menu atau promosi artifact yang salah. Area/file: SagaOPS PRODUCT, DOSSIER, CHANGELOG, portfolio, master knowledge, GAPS, SYNC_STATUS, dan keputusan Owner. Production tidak berubah; public `/menu` tetap 401, gateway canary existing ON, Order Meja/Kiosk simulator. Runner/recovery/Owner gate/UAT masih pending; `BUSINESS_READY=false`.
+- Klasifikasi `CONFIRMED` untuk source/runtime dan keputusan Owner; delivery `IMPLEMENTED_NOT_DEPLOYED`. Commit knowledge `main HEAD`.
+
 ## 2026-09-23 — Sinkronisasi aktivasi production SagaPOS Phase 8B
 
 - `CONFIRMED`: source `9c364ff2359940f73d52985fd752101d5d94b84b` aktif dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`; SagaDev Gateway controlled canary aktif dengan limit 5 intent/Rp220/Rp1.100.

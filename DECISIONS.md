@@ -1,10 +1,21 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-209 — Pertahankan gateway canary existing saat menyiapkan e-menu publik
+
+- Tanggal: 2026-09-23. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: rekonsiliasi kandidat e-menu read-only dengan mode pembayaran SagaPOS production yang sudah aktif.
+- Keputusan: gateway canary production yang sudah aktif boleh tetap ON. Izin ini tidak memperluas scope ke transaksi uang nyata baru, payout, callback/provider mutation, atau perubahan provider. Kiosk dan QR Order Meja tetap memakai pembayaran simulator terisolasi; e-menu publik tetap katalog baca-saja tanpa checkout.
+- Alasan: membuka katalog tidak boleh menimpa release gateway yang lebih baru atau mengubah batas pembayaran demo.
+- Alternatif: mempromosikan artifact ingress lama yang mengasumsikan payment OFF ditolak; menonaktifkan gateway existing atau mengaktifkan transaksi riil untuk e-menu juga tidak dipilih.
+- Dampak: renderer source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` tersedia, tetapi `/menu` production masih 401 sampai runner/recovery/Owner gate dan authenticated smoke lulus. `BUSINESS_READY=false`.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md), dan [status sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-208 — E-katalog read-only; kiosk dan QR meja memakai transaksi simulasi
 
 - Tanggal: 2026-09-23. Status: `CONFIRMED`; pemberi keputusan Andreas.
 - Topik: pemisahan capability pada menu pelanggan SagaPOS.
 - Keputusan: e-katalog hanya untuk melihat menu. Kiosk pelanggan dan QR pada meja dapat membuat cart, checkout, serta pembayaran simulasi agar alur masuk KDS dapat diuji. Keduanya harus berlabel demo dan tidak boleh mengubah fakta bisnis atau mengaktifkan provider payment.
+- Batas terbaru: larangan provider di atas berlaku pada Kiosk/QR meja; izin terbatas untuk mempertahankan gateway canary POS existing dicatat pada DEC-209.
 - Alasan: pelanggan perlu melihat flow transaksi end-to-end yang realistis, sedangkan katalog umum harus tetap aman sebagai preview.
 - Alternatif: semua surface browse-only tidak dipakai karena tidak membuktikan KDS; transaksi uang nyata juga tidak dipakai karena payment belum diotorisasi/diaktifkan.
 - Dampak: source `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce` aktif dengan surface split, signed QR table, payment simulator, dan KDS demo projection. `BUSINESS_READY=false` sampai konten, visual, perangkat fisik, operator, serta recovery gate diterima.

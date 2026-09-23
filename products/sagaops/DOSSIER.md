@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## E-menu public ingress — current gateway-compatible source boundary
+
+Source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` berasal dari baseline gateway production `9c364ff2359940f73d52985fd752101d5d94b84b`. Renderer hanya menyisipkan delapan route katalog baca-saja pada host `sagapos.site`, menolak baseline auth/host yang berubah, dan mempertahankan boundary signed Order Meja serta route Owner/Kiosk/KDS. Kandidat Nginx lulus tes sintaks terisolasi; live config tetap sama dan public `/menu` masih 401. Source/test lulus lokal, namun belum ada paket aktivasi gateway-aware, recovery lengkap, Owner gate terkini, atau authenticated production smoke. Candidate lama `1298fc...` adalah histori payment-OFF, bukan artifact rilis saat ini. Delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Phase 8B — SagaDev Gateway controlled canary production
 
 Exact source `9c364ff2359940f73d52985fd752101d5d94b84b` direkonsiliasi di atas release aktif dan dipromosikan dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`. Artifact immutable SHA-256 `3f0accd414ab1a13abb125f49385c6b34741e2ab3871efd5de92dde0bcbb72e9`; schema tetap 34 migrasi. Runtime health memuat `paymentMode=GATEWAY` dan `gateway=SAGADEV_GATEWAY_PRODUCTION`.

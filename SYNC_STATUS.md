@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS e-menu gateway-compatible source-only
+
+- Status `partially accepted`: source/test dan uji sintaks kandidat `CONFIRMED`; artifact/recovery, Owner gate, production activation, authenticated smoke, dan business readiness `NEEDS CONFIRMATION`.
+- Source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` ter-push. Production tidak berubah: active `9c364ff2359940f73d52985fd752101d5d94b84b`, gateway canary existing ON, Table Order simulator, public `/menu` 401. Knowledge ini mengoreksi snapshot ingress lama yang menyebut payment OFF tanpa menghapus sejarahnya.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway production canary
 
 - Status `partially accepted`: exact deployment, controlled activation, signed readiness, Owner restart UAT, dan monitor `CONFIRMED`; real payment, settlement/closing, hardware, offsite restore, dan business readiness `NEEDS CONFIRMATION`.

@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — E-menu ingress direkonsiliasi terhadap gateway canary aktif
+
+- Source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` ter-push: renderer delapan route katalog GET/HEAD host-scoped dan tes auth/asset fail-closed kini berasal dari baseline gateway aktif, bukan artifact payment-OFF lama.
+- Static/type, tes terfokus/browser, regresi penuh lokal, audit dependency, dan `nginx -t` kandidat terisolasi lulus. Production tidak berubah: active `9c364ff2359940f73d52985fd752101d5d94b84b`, gateway canary existing ON, Order Meja/Kiosk simulator, public `/menu` 401. Runner rilis, recovery, Owner gate, dan authenticated smoke masih pending; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Phase 8B SagaDev Gateway controlled canary production
 
 - Deployed exact source `9c364ff2359940f73d52985fd752101d5d94b84b` dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`; health ready, 34 migrasi unchanged, dan monitor memahami mode payment `OFF` maupun `GATEWAY`.
