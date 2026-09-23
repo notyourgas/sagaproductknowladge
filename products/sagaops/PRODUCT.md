@@ -1,19 +1,26 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-23 — Kiosk dan QR meja memakai status stream aktif
+
+- `CONFIRMED`: exact source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif; rollback `c2440a2e938317332977f9d0912d986b9a502df6`; artifact SHA-256 `14afd586a4b62100420553f25f29e9c63c07017e36d5fa2b3d9967d0031d9462`. Health ready, 34 migrasi unchanged, payment/gateway `OFF`, dan Table Order tetap simulator terisolasi.
+- Kiosk kini memakai stream status sesi bersama QR meja untuk perubahan pembayaran demo serta status KDS; fixed polling dihapus. Replay tidak menggandakan notifikasi; client menunjukkan freshness/offline, backoff reconnect, dan refresh manual. Browser gate memverifikasi role Owner dan provider produksi pada tujuh surface serta batas akses publik Order Meja tanpa membuat transaksi.
+- Regresi gabungan 1.589 pass/0 fail/73 skip dari 1.662 tes; static/type/build dan audit dependency production lulus. Artifact immutable, admission, backup terenkripsi/restore disposable, rehearsal kandidat-rollback-kandidat, aktivasi, authenticated browser smoke, dan monitor pasca-aktivasi lulus. Monitor pertama tertahan oleh 85% kapasitas host akibat transport sementara; setelah hanya salinan transport rilis dibersihkan, monitor lulus pada 84%.
+- URL Order Meja yang terverifikasi adalah `https://sagapos.site/order`; `https://order.sagapos.site/` belum resolve DNS. Kiosk/KDS tetap di boundary autentikasi. Delivery `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; backup terbaru belum diuji restore offsite independen, perangkat fisik dan acceptance bisnis masih terbuka. Kandidat Phase 8A `420c407d92a8055d5bd8fcaa6605704f23195bbe` tidak termasuk rilis ini.
+
 ## Source 2026-09-23 — Phase 8A operational data candidate, belum dideploy
 
 - `CONFIRMED`: source candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` menambahkan readiness Owner yang fail-closed untuk opening stock, HPP published, ledger/reconciliation, katalog transaksi, serta pipeline reporting.
 - Owner dapat membuat `OPENING_BASELINE` resmi untuk seluruh bahan aktif tanpa penerimaan supplier fiktif. Baseline wajib mencakup semua bahan aktif dan memakai biaya satuan positif; penambahan bahan baru otomatis membuka kembali blocker cakupan.
 - Kandidat memeriksa parity katalog Admin terhadap katalog transaksi/Kiosk, price integer positif, published revision tanpa draft tersisa, serta mode/freshness/queue reporting. Monitor menahan drift mode reporting dan grant runtime membatasi mutasi tabel reporting append-only.
 - Validasi lokal: static/type 605 modul; focused 61/61; full suite 1.591 pass, 73 controlled skip, dan tiga kegagalan awal yang seluruhnya lulus pada rerun terisolasi. Dua advisory moderate pada dependency development masih perlu review sebelum packaging.
-- Delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Production tetap `c2440a2e938317332977f9d0912d986b9a502df6`; reporting tetap `OFF`, data opening/HPP nyata belum dimasukkan, dan artifact/recovery/Owner UAT belum dijalankan.
+- Delivery kandidat Phase 8A `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; reporting tetap `OFF`, data opening/HPP nyata belum dimasukkan, dan artifact/recovery/Owner UAT khusus kandidat ini belum dijalankan. Catatan production `c2440a2e938317332977f9d0912d986b9a502df6` adalah snapshot saat validasi kandidat, bukan SHA aktif terkini.
 
 ## Source 2026-09-23 — Status Kiosk tersinkron melalui stream, belum dideploy
 
 - `CONFIRMED`: commit `1491cd0` pada branch source khusus sudah ter-push. Kiosk memakai event stream sesi yang sama dengan QR meja untuk snapshot order, pembayaran demo, dan status KDS; polling tetap 4 detik dihapus. Reconnect dibatasi dengan backoff, status stale terlihat, dan tersedia refresh manual.
 - Replay idempoten tidak mengirim notifikasi status baru. Harga, pembayaran, dan status tetap ditetapkan server; payment nyata tetap `OFF` dan order demo tetap terisolasi dari fakta bisnis.
 - Validasi lokal: focused Kiosk/Table 17/17, full regression serial 1.588 pass/0 fail/73 skip dari 1.661 tes, static/type/build lulus, dependency production audit nol vulnerability. Run paralel sebelumnya gagal satu tes akibat batas buffer jaringan host, bukan dipakai sebagai bukti lulus.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Production masih pada `c2440a2e938317332977f9d0912d986b9a502df6`; artifact, recovery rehearsal, aktivasi, dan authenticated UAT untuk commit baru belum ada. Hostname khusus Order Meja belum terverifikasi DNS-nya.
+- Saat source-only, delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; catatan ini telah disupersesi oleh rilis gabungan `758eb8f02cffa38a294c0fa91420074b06e4d981` di atas. Hostname khusus Order Meja tetap belum resolve DNS.
 
 ## Production 2026-09-23 — Phase 7.5 Owner Dashboard information architecture aktif
 

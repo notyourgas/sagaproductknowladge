@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS Kiosk/Table Order status stream production
+
+- `CONFIRMED`: source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif dengan rollback `c2440a2e938317332977f9d0912d986b9a502df6`. Kiosk dan QR meja memakai status stream bersama; browser gate memverifikasi Owner production provider dan anonymous Table Order boundary.
+- Full regression 1.589 pass/0 fail/73 skip; artifact immutable, backup terenkripsi/restore disposable, recovery rehearsal, authenticated smoke, dan monitor lulus. Monitor awal tertahan disk 85% oleh transport rilis dan lulus kembali setelah salinan transport dibersihkan. Payment nyata tetap `OFF`; Phase 8A source `420c407d92a8055d5bd8fcaa6605704f23195bbe` belum termasuk; `BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Phase 8A operational data source-only
 
 - `CONFIRMED`: candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` menambahkan opening-stock baseline resmi, HPP/katalog transaction parity, Owner readiness, reporting health gate, monitor mode, dan least-privilege reporting grants.

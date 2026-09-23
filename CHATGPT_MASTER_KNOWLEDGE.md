@@ -1,15 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS Kiosk status stream production aktif
+
+- `CONFIRMED`: exact source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif; rollback `c2440a2e938317332977f9d0912d986b9a502df6`; 34 migrasi unchanged. Kiosk menggunakan status stream bersama signed QR meja, bukan fixed polling, dengan freshness/offline, backoff, dan refresh manual.
+- Artifact/recovery, authenticated Owner technical smoke tujuh surface, dan monitor lulus. URL Order Meja terverifikasi `https://sagapos.site/order`; hostname `order.sagapos.site` belum resolve DNS. Payment/gateway nyata dan inventory reporting tetap `OFF`; Table Order demo-only. Kandidat Phase 8A operational data belum termasuk. Status `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — SagaPOS Phase 8A belum production
 
 - `CONFIRMED`: candidate lokal `420c407d92a8055d5bd8fcaa6605704f23195bbe` menyediakan opening baseline resmi seluruh bahan, parity katalog Admin terhadap transaksi/Kiosk, readiness HPP/ledger/reconciliation, serta reporting provider/runtime/freshness/queue yang fail-closed.
 - Dashboard Owner mempunyai ringkasan Phase 8A dan action link. Monitor mengikat expected reporting mode dan grant runtime menahan mutasi tabel reporting append-only.
-- Production tetap `c2440a2e938317332977f9d0912d986b9a502df6`; jangan menyatakan fitur ini telah aktif. Reporting tetap `OFF`, data opening/HPP nyata belum difinalisasi, dan artifact/recovery/Owner UAT kandidat belum ada. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- SHA `c2440a2e938317332977f9d0912d986b9a502df6` adalah snapshot production saat audit Phase 8A, bukan SHA aktif terkini; jangan menyatakan kandidat ini telah aktif. Reporting tetap `OFF`, data opening/HPP nyata belum difinalisasi, dan artifact/recovery/Owner UAT kandidat khusus Phase 8A belum ada. Status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
 ## Update 2026-09-23 — SagaPOS Kiosk stream belum production
 
 - `CONFIRMED`: source `1491cd0` ter-push dan lulus validasi lokal untuk sinkronisasi status Kiosk melalui event stream per sesi bersama QR meja, bounded reconnect, freshness/offline, serta manual refresh. Fixed polling dihapus; replay idempoten tidak menerbitkan event baru.
-- Production tetap `c2440a2e938317332977f9d0912d986b9a502df6`. Jangan menyatakan stream Kiosk baru telah terdeploy/aktif: artifact, recovery rehearsal, activation, dan authenticated UAT kandidat belum ada. Payment/gateway nyata `OFF`; `BUSINESS_READY=false`.
+- Catatan source-only ini telah disupersesi oleh rilis gabungan `758eb8f02cffa38a294c0fa91420074b06e4d981` di atas. Payment/gateway nyata tetap `OFF`; `BUSINESS_READY=false`.
 
 ## Update 2026-09-23 — SagaPOS Phase 7.5 Owner Dashboard IA aktif
 

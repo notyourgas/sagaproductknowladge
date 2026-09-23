@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS Kiosk status stream production
+
+- Status `partially accepted`: release teknis `CONFIRMED`; offsite restore backup terbaru, DNS `order.sagapos.site`, real-device/shift acceptance, dan readiness bisnis `NEEDS CONFIRMATION`.
+- Source aktif `758eb8f02cffa38a294c0fa91420074b06e4d981`, rollback `c2440a2e938317332977f9d0912d986b9a502df6`; artifact immutable, encrypted backup/disposable restore, rehearsal, activation, Owner browser smoke, dan monitor lulus. Full regression 1.589 pass/0 fail/73 skip; 34 migrasi unchanged.
+- Production berubah: ya, code-only. Kiosk status stream bersama QR meja/KDS aktif, payment/gateway nyata `OFF`, Table Order demo-only, inventory reporting `OFF`. Kandidat Phase 8A operational data tetap `IMPLEMENTED_NOT_DEPLOYED`; `BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Phase 8A operational data source-only
 
 - Status `partially accepted`: implementasi dan validasi candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` `CONFIRMED`; deployment, data bisnis, reporting activation, recovery, dan authenticated Owner UAT `NEEDS CONFIRMATION`.

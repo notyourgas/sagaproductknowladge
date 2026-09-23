@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Kiosk status stream dan Owner browser gate aktif di production
+
+- Activated exact source `758eb8f02cffa38a294c0fa91420074b06e4d981`, rollback `c2440a2e938317332977f9d0912d986b9a502df6`, artifact SHA-256 `14afd586a4b62100420553f25f29e9c63c07017e36d5fa2b3d9967d0031d9462`; schema tetap 34 migrasi.
+- Kiosk dan signed QR meja memakai stream status bersama untuk pembayaran demo dan KDS, dengan freshness/offline, bounded reconnect, manual recovery, serta replay suppression. Browser release gate mengikat tujuh surface ke Owner provider produksi dan memeriksa anonymous Table Order boundary.
+- Full regression gabungan 1.589 pass/0 fail/73 skip, static/type/build, dependency audit production, encrypted backup/disposable restore, host-local rehearsal, activation, authenticated browser smoke, dan monitor lulus. Monitor awal gagal pada ambang disk 85%; dua berkas transport rilis dibersihkan dan monitor lulus pada 84%.
+- Payment/gateway nyata `OFF`, Table Order simulator, inventory reporting `OFF`, offsite restore backup terbaru belum diverifikasi, dan Phase 8A operational-data candidate belum termasuk. Delivery `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Phase 8A operational data candidate tervalidasi lokal
 
 - Added official opening-stock baseline seluruh bahan aktif tanpa supplier receipt fiktif, dengan positive valuation, idempotency, restore, dan reconciliation contract.

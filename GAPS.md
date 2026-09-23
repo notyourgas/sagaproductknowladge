@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual release Kiosk/Table Order SagaPOS
+
+- `CONFIRMED`: exact source `758eb8f02cffa38a294c0fa91420074b06e4d981` aktif dengan status stream Kiosk/QR meja dan Owner browser gate; payment nyata tetap `OFF`, Table Order simulator, dan monitor lulus setelah salinan transport rilis dibersihkan.
+- `NEEDS CONFIRMATION`: hostname khusus `order.sagapos.site` belum resolve; URL yang dapat dipakai tetap `https://sagapos.site/order`. Backup terbaru belum diuji offsite independen; kapasitas host 84% perlu dipantau agar tidak kembali menutup monitor.
+- `NEEDS CONFIRMATION`: UAT perangkat kiosk/KDS/QR fisik, satu shift manusia, data produk/HPP/promo aktual, dan acceptance bisnis Owner belum selesai. Phase 8A operational-data candidate belum dideploy. Dampak `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Residual Phase 8A operational data SagaPOS
 
 - `CONFIRMED`: candidate `420c407d92a8055d5bd8fcaa6605704f23195bbe` menutup false-green opening stock dan Admin-versus-transaction catalog parity pada source lokal; reporting readiness sekarang fail-closed terhadap provider, runtime, freshness, dan queue.
