@@ -5,7 +5,7 @@
 - Deployed exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` as Vercel public demo `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`; rollback `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.
 - Added full home → order type → member NFC/phone demo → menu/modifier → cart → payment review → QRIS/cash simulator → success/order number → repeat flow at `https://saga-pos-kiosk.vercel.app/kiosk`.
 - Preserved the production Warm Wood visual shell while adopting only the requested kiosk flow; Chromium UAT passed QRIS and cash to demo `KD-*` tickets with zero page failures and verified image decode.
-- Preserved demo isolation: phone raw value is not retained in events, provider/payment real remains OFF, runtime is ephemeral simulator, and no business facts are created. Core candidate `451c596c913c47b87a1c623e42b27063a84c3c26` is pushed and packaged but not activated while the Owner Bitwarden gate is locked. Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / CORE_ACTIVATION_BLOCKED_OWNER_GATE / BUSINESS_READY=false`.
+- Preserved demo isolation: phone raw value is not retained in events, provider/payment real remains OFF, and no business facts are created. Activated core source `451c596c913c47b87a1c623e42b27063a84c3c26` with rollback `ec77f887c40e80c58ef78df39508596a70787727` after target admission, encrypted backup/restore, recovery rehearsal, Owner restart smoke, public QRIS UAT, KDS projection verification, and monitor passed. Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`.
 
 ## 2026-09-23 — Menu reference parity v3 aktif di production
 
