@@ -2,10 +2,11 @@
 
 ## Public demo 2026-09-23 — Guided kiosk self-order flow aktif
 
-- `CONFIRMED`: exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41` aktif pada Vercel public demo `https://saga-pos-kiosk.vercel.app/kiosk` melalui deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`; rollback tersedia pada `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
+- `CONFIRMED`: exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` aktif pada Vercel public demo `https://saga-pos-kiosk.vercel.app/kiosk` melalui deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`; rollback tersedia pada `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.
 - Flow publik adalah home → dine-in/takeaway → NFC simulator atau nomor HP demo → menu → modifier → cart → detail pembayaran → QRIS/tunai simulator → sukses dengan nomor pesanan → pesan lagi. UAT publik menghasilkan tiket demo `KD-*` untuk jalur NFC/QRIS dan phone/cash tanpa browser atau network error.
 - Nomor HP mentah tidak disimpan pada event. Payment tetap `SIMULATOR_ONLY`, persistence `EPHEMERAL_SERVERLESS_DEMO`, provider/gateway nyata tetap `OFF`, dan order tidak membuat sales, settlement, stock, HPP, reward, atau fakta bisnis.
-- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`. Runtime SagaPOS privat/operasional tetap terpisah; deployment demo ini bukan aktivasi payment atau production bisnis.
+- Desain tetap memakai shell produksi Warm Wood; URL kiosk lama hanya menjadi referensi urutan flow, bukan referensi visual. Source integrasi core `451c596c913c47b87a1c623e42b27063a84c3c26` sudah dipush dan artefak immutable terverifikasi, tetapi core production masih pada `ec77f887c40e80c58ef78df39508596a70787727` karena gate Owner Bitwarden belum unlocked.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / CORE_ACTIVATION_BLOCKED_OWNER_GATE / BUSINESS_READY=false`. Runtime SagaPOS privat/operasional tetap terpisah; deployment demo ini bukan aktivasi payment atau production bisnis.
 
 ## Production 2026-09-23 — Menu reference parity v3 aktif
 

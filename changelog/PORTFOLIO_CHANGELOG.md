@@ -2,9 +2,9 @@
 
 ## 2026-09-23 — SagaPOS guided kiosk public demo aktif
 
-- `CONFIRMED`: exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41`, Vercel deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`, dan stable `https://saga-pos-kiosk.vercel.app/kiosk` menyediakan flow end-to-end dine-in/takeaway, NFC/nomor HP demo, modifier, cart, QRIS/tunai simulator, nomor pesanan, dan repeat.
-- Public UAT lulus untuk NFC/QRIS serta phone/cash sampai tiket demo `KD-*`; isolasi mempertahankan payment nyata OFF, tanpa PII telepon mentah atau fakta sales/settlement/stock/HPP/reward. Rollback tersedia pada `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
-- Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`; Vercel demo bukan aktivasi production bisnis SagaPOS.
+- `CONFIRMED`: exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735`, Vercel deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`, dan stable `https://saga-pos-kiosk.vercel.app/kiosk` mempertahankan desain Warm Wood production sambil menyediakan flow end-to-end dine-in/takeaway, NFC/nomor HP demo, modifier, cart, QRIS/tunai simulator, nomor pesanan, dan repeat.
+- Public UAT lulus untuk QRIS serta cash sampai tiket demo `KD-*`; isolasi mempertahankan payment nyata OFF, tanpa PII telepon mentah atau fakta sales/settlement/stock/HPP/reward. Rollback tersedia pada `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.
+- Core candidate `451c596c913c47b87a1c623e42b27063a84c3c26` sudah dipush dan dipaketkan, tetapi activation fail-closed karena Owner Bitwarden bridge locked; core tetap `ec77f887c40e80c58ef78df39508596a70787727`. Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / CORE_ACTIVATION_BLOCKED_OWNER_GATE / BUSINESS_READY=false`.
 
 ## 2026-09-23 — SagaPOS menu reference parity v3 aktif
 

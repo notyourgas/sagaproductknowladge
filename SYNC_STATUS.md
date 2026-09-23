@@ -2,11 +2,11 @@
 
 ## 2026-09-23 — SagaPOS guided kiosk public demo deployment
 
-- Status `partially accepted`; exact source, public Vercel runtime, rollback, dan browser UAT `CONFIRMED`, sedangkan perangkat fisik/payment nyata/final content/business acceptance `NEEDS CONFIRMATION`. Source `dc1aa4c5ecd0590202329362e464ff36da0d0c41`; deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`; rollback `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
-- Synced: flow home hingga repeat, dine-in/takeaway, NFC/phone demo, modifier/cart, QRIS/tunai simulator, nomor pesanan, KDS demo boundary, privacy masking, packaging fix, rollback evidence, public UAT, dan operator-route isolation.
-- Evidence: static/type 590; production audit 0 vulnerability; relevant suite 55 pass/0 fail/1 Firefox environment skip; public Chromium NFC/QRIS dan phone/cash UAT lulus tanpa page/request failure. Full monorepo run pada Windows berhenti karena Node OOM dan tidak diklaim full-regression PASS.
-- Public demo berubah: ya. Core production berubah: tidak. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`.
-- Next: finalisasi konten/nutrisi dan visual sign-off; uji QR/perangkat fisik/operator/assistive technology; payment/gateway nyata tetap OFF sampai gate production terpisah.
+- Status `partially accepted`; exact source, public Vercel runtime, rollback, dan browser UAT `CONFIRMED`, sedangkan perangkat fisik/payment nyata/final content/business acceptance `NEEDS CONFIRMATION`. Source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735`; deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`; rollback `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.
+- Synced: desain Warm Wood production dipertahankan, flow home hingga repeat, dine-in/takeaway, NFC/phone demo, modifier/cart, QRIS/tunai simulator, nomor pesanan, KDS demo boundary, privacy masking, rollback evidence, public UAT, dan operator-route isolation.
+- Evidence: full 1.643 test menghasilkan 1.561 pass, 73 skip, dan sembilan kegagalan environment/stale-process yang seluruhnya lulus pada rerun terisolasi; exact integrated core candidate 15 focused test menghasilkan 14 pass/0 fail/1 Firefox unavailable; static/type 592; public Chromium QRIS/cash UAT lulus tanpa page error dan image decode terverifikasi.
+- Public demo berubah: ya. Core production berubah: tidak. Core candidate `451c596c913c47b87a1c623e42b27063a84c3c26` sudah dipush, artefak SHA-256 `9056f9ae58009cc98147f3a8a203cadf05b0ccf3b53c9dc8dd103c6d40fe182f` sudah terverifikasi, tetapi activation fail-closed karena Owner Bitwarden bridge locked. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / CORE_ACTIVATION_BLOCKED_OWNER_GATE / BUSINESS_READY=false`.
+- Next: unlock Owner bridge untuk target admission/backup/rehearsal/activation core; finalisasi konten/nutrisi dan visual sign-off; uji QR/perangkat fisik/operator/assistive technology; payment/gateway nyata tetap OFF.
 
 ## 2026-09-23 — SagaPOS menu reference parity v3 production
 

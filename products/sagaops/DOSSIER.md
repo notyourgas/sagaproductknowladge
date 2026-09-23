@@ -2,13 +2,13 @@
 
 ## Guided kiosk self-order flow — public demo aktif 2026-09-23
 
-Exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41` aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui Vercel deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`; rollback pointer adalah `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`. Urutan customer adalah home, dine-in/takeaway, Saga Member melalui NFC simulator atau nomor HP demo, menu dan modifier, cart, detail pembayaran, QRIS atau assisted cash simulator, nomor pesanan, lalu `Pesan Lagi`.
+Exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui Vercel deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`; rollback pointer adalah `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`. Urutan customer adalah home, dine-in/takeaway, Saga Member melalui NFC simulator atau nomor HP demo, menu dan modifier, cart, detail pembayaran, QRIS atau assisted cash simulator, nomor pesanan, lalu `Pesan Lagi`.
 
 API public demo dipisahkan dari kiosk operasional. Health/runtime menyatakan `PUBLIC_DEMO_SIMULATOR`, `production=false`, gateway simulator, dan persistence ephemeral. Session, same-origin, CSRF, rate limit mutation, server quote, idempotency, serta isolasi KDS tetap berlaku. Nomor HP mentah tidak disimpan pada event; QRIS/tunai tidak memanggil provider atau settlement; tiket demo `KD-*` dibuat hanya setelah simulator sukses.
 
 Static/type check lulus untuk 590 modul, production dependency audit melaporkan nol vulnerability, relevant suite menghasilkan 55 pass/0 fail/1 Firefox environment skip, dan packaging regression tambahan lulus. Public anonymous Chromium UAT lulus untuk NFC→QRIS (`KD-001`) dan phone→cash (`KD-002`) tanpa page error atau request failure. Route `/admin`, `/dashboard`, `/kds`, `/hr`, dan `/staff` tetap 404 pada public project. Full suite repo tidak selesai pada Windows karena Node OOM dan tidak diklaim full-regression PASS.
 
-Promosi kandidat pertama menemukan modul static hilang dan langsung di-rollback ke deployment sehat lama. Rewrite aset dan regression contract kemudian ditambahkan, kandidat baru diverifikasi sebelum promosi, dan public UAT pascapromosi lulus. Status `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`; perangkat fisik, payment nyata, final content, dan business acceptance tetap gate terpisah.
+Release terbaru mempertahankan desain Warm Wood produksi dan hanya mengadopsi urutan flow dari referensi kiosk. Public UAT pascapromosi lulus untuk QRIS dan cash, image decode terverifikasi, serta tidak ada page error. Kandidat integrasi core `451c596c913c47b87a1c623e42b27063a84c3c26` telah dipush dan dipaketkan dengan digest terverifikasi, tetapi aktivasi core dihentikan fail-closed karena Bitwarden Owner bridge masih locked; production core tetap `ec77f887c40e80c58ef78df39508596a70787727`. Status `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / CORE_ACTIVATION_BLOCKED_OWNER_GATE / BUSINESS_READY=false`; perangkat fisik, payment nyata, final content, dan business acceptance tetap gate terpisah.
 
 ## Menu reference parity v3 — production 2026-09-23
 

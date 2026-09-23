@@ -2,10 +2,11 @@
 
 ## 2026-09-23 — Sinkronisasi deployment public demo guided kiosk SagaPOS
 
-- `CONFIRMED`: exact source `dc1aa4c5ecd0590202329362e464ff36da0d0c41` aktif pada public Vercel deployment `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj` dengan rollback `dpl_GabXfARyR9xpKJgLJR7Yof6Tf4pb`.
+- `CONFIRMED`: exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` aktif pada public Vercel deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u` dengan rollback `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.
 - Public UAT membuktikan flow NFC/QRIS dan phone/cash sampai tiket demo `KD-*`; health tetap `PUBLIC_DEMO_SIMULATOR`, `production=false`, dan route operator tertutup.
 - File terdampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, SYNC_STATUS, dan root CHANGELOG. Tidak ada credential, PII mentah, callback/receipt, private identifier, database dump, atau path restricted yang dipublikasikan.
-- Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / BUSINESS_READY=false`; payment/provider nyata dan production bisnis tidak diaktifkan.
+- Knowledge juga mencatat desain Warm Wood production dipertahankan, sedangkan source core `451c596c913c47b87a1c623e42b27063a84c3c26` baru berstatus pushed/packaged dan belum diaktifkan karena Owner Bitwarden gate locked.
+- Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / CORE_PRODUCTION_CHANGED=false / CORE_ACTIVATION_BLOCKED_OWNER_GATE / BUSINESS_READY=false`; payment/provider nyata dan production bisnis tidak diaktifkan.
 
 ## 2026-09-23 — Sinkronisasi SagaPOS menu reference parity v3
 
