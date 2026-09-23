@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS Phase 8B controlled gateway production
+
+- `CONFIRMED`: exact source `9c364ff2359940f73d52985fd752101d5d94b84b` aktif dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`; SagaDev Gateway product `sagaops` berjalan dalam bounded controlled canary dengan signed status polling dan central kill switch.
+- Release/recovery, authenticated Owner restart UAT, dan monitor lulus tanpa membuat payment intent. Real QRIS/settlement, hardware, dan independent offsite restore belum diterima; `BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS public e-menu ingress source-only
 
 - `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` menyiapkan akses e-menu Kopi Saga yang baca-saja dan host-scoped, tanpa membuka checkout atau surface operator. Static/type 603 dan 19 tes relevan lulus; Firefox host 1 skip.

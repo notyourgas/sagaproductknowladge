@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — Sinkronisasi aktivasi production SagaPOS Phase 8B
+
+- `CONFIRMED`: source `9c364ff2359940f73d52985fd752101d5d94b84b` aktif dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`; SagaDev Gateway controlled canary aktif dengan limit 5 intent/Rp220/Rp1.100.
+- SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master knowledge, GAPS, dan SYNC_STATUS diperbarui. Release/recovery, Owner restart UAT, dan monitor lulus tanpa transaksi; real QRIS/settlement, hardware, serta offsite restore tetap residual. `BUSINESS_READY=false` dan tidak ada secret, PII, receipt, identifier privat, atau dump dipublikasikan.
+
 ## 2026-09-23 — Sinkronisasi SagaPOS public e-menu ingress candidate
 
 - `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` ter-push dengan host-scoped GET/HEAD-only e-menu preview dan rollback-gated activation runner. Static/type 603, 19 tes relevan pass/0 fail/1 Firefox host skip; production tetap 401 untuk `/menu` anonim.

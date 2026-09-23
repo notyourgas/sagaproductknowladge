@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## Phase 8B — SagaDev Gateway controlled canary production
+
+Exact source `9c364ff2359940f73d52985fd752101d5d94b84b` direkonsiliasi di atas release aktif dan dipromosikan dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`. Artifact immutable SHA-256 `3f0accd414ab1a13abb125f49385c6b34741e2ab3871efd5de92dde0bcbb72e9`; schema tetap 34 migrasi. Runtime health memuat `paymentMode=GATEWAY` dan `gateway=SAGADEV_GATEWAY_PRODUCTION`.
+
+SagaPOS memakai scoped systemd credential untuk product `sagaops`; central merchant secret dan callback provider tidak masuk runtime produk. Signed status polling, central kill switch, activation window, serta limit maksimal 5 intent, Rp220 per intent, dan Rp1.100 total aktif. Technical acceptance menguji readiness, anonymous containment, Owner login/RBAC, dan persistence sesi setelah restart tanpa membuat payment intent.
+
+Focused Linux release gate 26/26, static/type 608 modul, encrypted backup/disposable restore, code-only recovery rehearsal, exact activation, authenticated Owner restart smoke, dan monitor gateway lulus. Broad Windows suite memiliki 23 kegagalan host exFAT/permission/temp capacity dari 1.679 tes, sehingga bukan bukti release; gate Linux yang bersih digunakan untuk candidate. Independent offsite restore, real QRIS payment, settlement/closing, serta printer/NFC/network/UPS belum diterima. `PRODUCTION_ACTIVATED_CONTROLLED_CANARY / BUSINESS_READY=false`.
+
 ## Public Kopi Saga e-menu ingress candidate
 
 Source `1298fc375ab5134ed88729dd445845880f146dbf` membuat renderer dan activation gate fail-closed untuk membuka hanya e-menu preview di `sagapos.site`. Delapan exact-match location membatasi host serta GET/HEAD, memutus credential/cookie ke upstream, dan mempertahankan Basic Auth pada `/menu/qr`, `/menu/kiosk`, Owner Dashboard, serta KDS. API katalog tetap server-authoritative dan tanpa capability commerce. Runner mengikat expected release dan digest Nginx, memeriksa payment OFF serta payload katalog, menyimpan backup checksummed, melakukan atomic install, `nginx -t`, negative probes, dan rollback bila aktivasi gagal.

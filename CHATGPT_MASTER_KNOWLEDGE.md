@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway aktif terbatas
+
+- `CONFIRMED`: production SagaPOS memakai exact source `9c364ff2359940f73d52985fd752101d5d94b84b`, rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`, health ready, dan 34 migrasi unchanged.
+- SagaDev Gateway product `sagaops` aktif dalam controlled canary bertanda tangan dengan callback/central merchant secret tetap di gateway pusat, kill switch, dan limit 5 intent/Rp220/Rp1.100. Technical acceptance dan Owner restart UAT lulus tanpa transaksi uang nyata.
+- Status `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED_CONTROLLED_CANARY / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`. Jangan menjanjikan pembayaran operasional penuh sebelum real QRIS, settlement/closing, hardware, dan independent offsite restore lulus.
+
 ## Update 2026-09-23 — Kopi Saga public e-menu source, belum production
 
 - `CONFIRMED`: candidate `1298fc375ab5134ed88729dd445845880f146dbf` menyiapkan ingress baca-saja untuk `https://sagapos.site/menu`, Promo, Member, API katalog, dan aset entry. Katalog tetap preview-only; tidak ada cart/checkout/payment/meja/KDS mutation. Order Meja dan Kiosk tetap pada boundary masing-masing.

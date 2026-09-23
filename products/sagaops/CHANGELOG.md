@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Phase 8B SagaDev Gateway controlled canary production
+
+- Deployed exact source `9c364ff2359940f73d52985fd752101d5d94b84b` dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`; health ready, 34 migrasi unchanged, dan monitor memahami mode payment `OFF` maupun `GATEWAY`.
+- Activated bounded SagaDev Gateway canary untuk product `sagaops` dengan signed polling, central callback/secret boundary, kill switch, dan hard cap 5 intent/Rp220/Rp1.100. Owner restart UAT lulus tanpa membuat transaksi. `PRODUCTION_ACTIVATED_CONTROLLED_CANARY / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Public e-menu ingress source candidate
 
 - Added host-scoped, GET/HEAD-only ingress untuk halaman Kopi Saga e-menu dan katalog baca-saja; signed Order Meja, Kiosk, Dashboard, dan KDS tidak ikut dibuka. Renderer idempoten/fail-closed, activation gate ber-backup dan rollback, serta negative contract tests tersedia pada source `1298fc375ab5134ed88729dd445845880f146dbf`.

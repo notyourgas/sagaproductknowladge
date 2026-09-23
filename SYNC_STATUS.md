@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway production canary
+
+- Status `partially accepted`: exact deployment, controlled activation, signed readiness, Owner restart UAT, dan monitor `CONFIRMED`; real payment, settlement/closing, hardware, offsite restore, dan business readiness `NEEDS CONFIRMATION`.
+- Production source `9c364ff2359940f73d52985fd752101d5d94b84b`, rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`, artifact SHA-256 `3f0accd414ab1a13abb125f49385c6b34741e2ab3871efd5de92dde0bcbb72e9`, dan schema 34 migrasi unchanged.
+- SagaDev Gateway product `sagaops` aktif dalam bounded canary dengan signed polling, central kill switch/callback boundary, serta limit 5 intent, Rp220 per intent, Rp1.100 total. Focused Linux release gate 26/26, static/type 608, encrypted backup/disposable restore, rehearsal, Owner UAT, restart persistence, dan monitor lulus; acceptance membuat 0 payment intent.
+- Production berubah: ya. Delivery `SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED_CONTROLLED_CANARY / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS public e-menu ingress source-only
 
 - Status `partially accepted`: source dan focused validation `CONFIRMED`; deployment, public URL, Owner activation, dan business readiness `NEEDS CONFIRMATION`.

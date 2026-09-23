@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual setelah Phase 8B controlled canary aktif
+
+- `CONFIRMED`: exact source `9c364ff2359940f73d52985fd752101d5d94b84b` dan SagaDev Gateway product `sagaops` telah aktif dalam bounded production canary; release/recovery, Owner restart UAT, signed readiness, dan monitor lulus tanpa payment intent.
+- `NEEDS CONFIRMATION`: satu controlled real QRIS payment, signed transition ke `PAID`, exactly-once KDS fulfillment, settlement/reconciliation, dan closing Finance belum dijalankan.
+- `NEEDS CONFIRMATION`: printer, NFC, router/UPS, acceptance perangkat/operator, serta independent offsite restore untuk release terbaru masih menahan `BUSINESS_READY`.
+
 ## 2026-09-23 — E-menu publik Kopi Saga belum aktif
 
 - `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` menyiapkan delapan exact-match ingress baca-saja, mengikat host dan method, serta mempertahankan auth operator/Kiosk/Order Meja. Public `/menu` tetap 401 pada production aktif.

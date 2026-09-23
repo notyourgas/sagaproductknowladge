@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-23 — Phase 8B SagaDev Gateway controlled canary aktif
+
+- `CONFIRMED`: exact source `9c364ff2359940f73d52985fd752101d5d94b84b` aktif dengan rollback `dbb3d72b598f37210e970c2eb489517b9296ab11`, artifact SHA-256 `3f0accd414ab1a13abb125f49385c6b34741e2ab3871efd5de92dde0bcbb72e9`, health ready, dan 34 migrasi unchanged.
+- Payment runtime kini berada pada mode `GATEWAY` untuk controlled canary SagaDev Gateway product `sagaops`. Credential dipisahkan sebagai systemd credential, provider secret/callback tetap di gateway pusat, signed readiness menyatakan ready, dan limit produksi dikunci pada maksimal 5 intent, Rp220 per intent, serta Rp1.100 total.
+- Immutable packaging, focused Linux gate 26/26, static/type 608 modul, encrypted backup/disposable restore, code-only rehearsal, activation, authenticated Owner restart UAT, dan monitor mode gateway lulus. Acceptance tidak membuat payment intent atau transaksi uang nyata.
+- Delivery `SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED_CONTROLLED_CANARY / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`. Real QRIS payment, settlement/closing, hardware, dan independent offsite restore tetap gate terpisah.
+
 ## Source 2026-09-23 — ingress e-menu Kopi Saga publik baca-saja, belum aktif
 
 - `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` pada branch `codex/sagapos-public-menu-ingress-20260923` menyiapkan delapan lokasi Nginx tepat untuk `sagapos.site`: tiga halaman e-menu, API katalog baca-saja, dan empat aset entry CSS/JS. Host lain ditolak, hanya GET/HEAD diterima, dan credential/cookie tidak diteruskan ke backend.
