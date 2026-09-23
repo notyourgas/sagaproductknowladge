@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — SagaPOS e-menu Phase 8B diagnosis dan release hold
+
+- `CONFIRMED`: source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menambahkan diagnostik canary tersanitasi pada Owner smoke; artifact exact-source staged, backup terenkripsi/restore disposable dan rehearsal rollback lulus. Phase 8B tetap `PARTIAL` (7/10), sehingga admission final/aktivasi tidak dijalankan dan `/menu` tetap 401.
+- Alasan: membedakan kesiapan katalog baca-saja dari kesiapan transaksi canary tanpa menurunkan gate. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master knowledge, GAPS, SYNC_STATUS. Klasifikasi source/runtime `CONFIRMED`; activation/business readiness `NEEDS CONFIRMATION`. Production tidak berubah; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; knowledge commit `main HEAD`.
+
 ## 2026-09-23 — SagaPOS e-menu release gate fail-closed
 
 - `CONFIRMED`: source `91b3d575d4956528bf2c75d7889d1ba283c77263` menambah scoped Owner smoke dan disposable rollback rehearsal; artifact immutable staged dan checksum-verified. Scoped Owner/auth, encrypted backup/disposable restore, dan rehearsal Nginx/reversal lulus.

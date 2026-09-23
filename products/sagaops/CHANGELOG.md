@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Diagnostik Phase 8B pada Owner smoke e-menu
+
+- Source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menampilkan state/skor/check ID canary tersanitasi tanpa melonggarkan gate pembayaran. Focused 5/5, check/type 613 modul, scoped Owner smoke, backup terenkripsi/restore disposable, dan disposable Nginx rollback rehearsal lulus; audit dependency production 0 vulnerability.
+- Phase 8B masih `PARTIAL` (7/10) akibat jendela/readiness canary tertutup. Artifact baru staged, tetapi admission final dan aktivasi tidak dilakukan. Runtime, payment mode, dan `/menu` 401 tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-23 — Rehearsal e-menu lulus, aktivasi ditahan
 
 - Source `91b3d575d4956528bf2c75d7889d1ba283c77263` menambah scoped Owner smoke dan disposable ingress rollback rehearsal. Artifact checksum-bound staged; focused 5/5, static/type 613 modul, audit production 0 vulnerability, Owner scoped smoke, encrypted backup/disposable restore, dan dua arah `nginx -t` rehearsal lulus.

@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-23 — E-menu admission tetap NO-GO
+
+- `CONFIRMED`: source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menampilkan status Phase 8B yang tersanitasi pada Owner smoke e-menu. Artifact exact-source baru checksum-verified dan staged; scoped Owner smoke, backup terenkripsi/restore disposable, dan rehearsal ingress–rollback kandidat lulus.
+- Gateway readiness tetap `PARTIAL` (7/10) karena tiga gate terkait readiness/jendela canary belum lulus; jendela lokal kedaluwarsa sesuai konfigurasi. Tidak ada izin memperpanjangnya untuk rilis katalog. Admission final dan aktivasi ditahan; `/menu` masih 401. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — E-menu release gate ditahan
 
 - `CONFIRMED`: source bersih `91b3d575d4956528bf2c75d7889d1ba283c77263` menambah Owner smoke terbatas baca-saja dan rehearsal ingress terisolasi. Artifact immutable sudah checksum-verified dan staged, backup terenkripsi/restore disposable serta rehearsal rollback lulus; live Nginx tidak berubah.

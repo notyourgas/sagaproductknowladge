@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — E-menu belum publik setelah diagnosis canary
+
+- `CONFIRMED`: commit `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` membuat scoped Owner smoke menampilkan status canary tersanitasi. Artifact baru staged; backup terenkripsi/restore disposable dan ingress rollback rehearsal lulus.
+- Phase 8B tetap `PARTIAL` (7/10) karena gate jendela/readiness canary; jangan menyebutnya siap atau memperpanjang jendela untuk merilis katalog. Public `https://sagapos.site/menu` masih 401; tidak ada aktivasi production baru. `BUSINESS_READY=false`; total 62/100 hanya ledger historis sebelum rebaseline.
+
 ## Update 2026-09-23 — E-menu staged, gate canary menahan aktivasi
 
 - `CONFIRMED`: source `91b3d575d4956528bf2c75d7889d1ba283c77263` menutup scoped Owner smoke dan disposable rollback rehearsal. Artifact checksum-verified staged, backup terenkripsi/restore disposable, dan rehearsal lulus; live production tidak berubah.

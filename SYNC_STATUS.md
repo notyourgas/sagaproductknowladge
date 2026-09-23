@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS e-menu exact-source restage, NO-GO
+
+- Status `partially accepted`: source clean pushed `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83`, immutable artifact checksum-verified/staged, focused 5/5, check/type 613, audit dependency 0, scoped Owner smoke, fresh encrypted backup/disposable restore dan disposable Nginx candidate/rollback rehearsal PASS.
+- Phase 8B tetap `PARTIAL` (7/10) akibat tiga gate readiness/jendela canary; admission final dan aktivasi tidak dilakukan. Production active/rollback `9c364ff2359940f73d52985fd752101d5d94b84b` / `dbb3d72b598f37210e970c2eb489517b9296ab11`, `/menu` 401, monitor dan DB sehat. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; 62/100 adalah ledger historis.
+
 ## 2026-09-23 — SagaPOS public e-menu release hold
 
 - Status `partially accepted`: clean pushed source `91b3d575d4956528bf2c75d7889d1ba283c77263`, artifact immutable staged dan checksum-verified; focused 5/5, static/type 613, production audit 0 vulnerability, scoped Owner/auth smoke, encrypted backup/disposable restore, dan disposable ingress/rollback rehearsal PASS.

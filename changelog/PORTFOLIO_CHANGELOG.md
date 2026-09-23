@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS e-menu tetap tertahan jendela canary
+
+- `CONFIRMED`: source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menambahkan diagnostik Owner yang tersanitasi; exact-source artifact staged, backup/restore dan rollback rehearsal lulus. Readiness gateway tetap `PARTIAL` (7/10) karena jendela/readiness canary belum lulus.
+- Tidak ada aktivasi production atau transaksi baru. `https://sagapos.site/menu` tetap 401; Order Meja/Kiosk masih simulator. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS e-menu recovery gate, belum publik
 
 - `CONFIRMED`: candidate source `91b3d575d4956528bf2c75d7889d1ba283c77263` dan immutable artifact staged; scoped Owner/auth smoke, encrypted backup/disposable restore, serta disposable Nginx rollback rehearsal lulus. Broad payment-containment gate gagal karena readiness canary `PARTIAL` (7/10).

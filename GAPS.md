@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Jendela canary menutup gate e-menu
+
+- `CONFIRMED`: diagnosis Owner menunjukkan Phase 8B `PARTIAL` (7/10), dengan tiga gate readiness/jendela yang tidak lulus; jendela lokal telah kedaluwarsa. Source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` dan artifact staged terbaru memiliki backup/restore serta disposable rollback rehearsal lulus. `/menu` masih 401.
+- `NEEDS CONFIRMATION`: keputusan terpisah untuk jendela canary baru jika memang diperlukan bisnis, bukti gateway pusat yang kembali siap, candidate-bound admission final, activation, post-activation smoke/monitor, independent offsite restore dan business UAT. Jangan menganggap permintaan deploy katalog sebagai izin transaksi atau perpanjangan canary.
+
 ## 2026-09-23 — Gate e-menu tertahan readiness canary
 
 - `CONFIRMED`: candidate `91b3d575d4956528bf2c75d7889d1ba283c77263` dan artifact checksum-bound staged; scoped Owner smoke, encrypted backup/disposable restore, serta disposable Nginx rollback rehearsal lulus. Broad smoke gagal karena Phase 8B readiness `PARTIAL` (7/10), `activationSafe=false`; `/menu` tetap 401 dan release pointer tidak berubah.

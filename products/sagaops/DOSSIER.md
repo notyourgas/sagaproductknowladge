@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-23 — Diagnosis canary dan kandidat e-menu terbaru
+
+Owner diagnostic yang diautentikasi mengonfirmasi Phase 8B `PARTIAL` (7/10): tiga gate readiness/jendela canary tidak lulus, sementara kontrak lain tetap lulus. Pemeriksaan lokal menemukan jendela canary telah kedaluwarsa; ini bukan alasan untuk memperpanjang izin transaksi. Postgres production menerima koneksi pada socket terisolasi, service dan monitor sehat. Source `3330ce1da4779d9576a9dee43a4c8ccfc78d1b83` menambahkan output status canary tersanitasi pada scoped Owner smoke supaya perbedaan antara ingress katalog baca-saja dan kesiapan pembayaran tetap terlihat.
+
+Artifact kandidat baru checksum-verified dan staged; backup terenkripsi/restore disposable serta rehearsal konfigurasi Nginx dan pembalikan byte asli lulus. Candidate-bound admission final dan aktivasi tidak dijalankan karena canary gate tetap merah. Runtime/rollback tetap `9c364ff2359940f73d52985fd752101d5d94b84b` / `dbb3d72b598f37210e970c2eb489517b9296ab11`; live ingress dan `/menu` tidak berubah. Independent offsite restore dan business UAT tetap terbuka. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — E-menu ingress recovery rehearsal dan gate hold
 
 Candidate `91b3d575d4956528bf2c75d7889d1ba283c77263` dipaketkan dari exact clean pushed source, diverifikasi checksum, dan staged tanpa aktivasi. Scoped Owner smoke memeriksa runtime, Owner production auth, preview-only catalogue, CSRF dan anonymous boundary tanpa membuat order/payment intent. Backup terenkripsi dengan restore disposable lulus. Rehearsal Nginx kandidat dan pembalikan ke konfigurasi asli lulus di direktori disposable; konfigurasi live tetap sama.
