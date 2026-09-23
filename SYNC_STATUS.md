@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — Runner e-menu gateway-aware source-only
+
+- Status `partially accepted`: commit `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` ter-push, artifact lokal checksum-bound dibuat; focused 4/4, static/type 613 modul, Bash syntax, dan audit production 0 vulnerability lulus.
+- Production unchanged: active `9c364ff2359940f73d52985fd752101d5d94b84b`, gateway canary existing ON, Table Order DEMO, `/menu` anonim 401. Owner/recovery/rehearsal/activation/authenticated UAT kandidat masih `NEEDS CONFIRMATION`. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS e-menu gateway-compatible source-only
 
 - Status `partially accepted`: source/test dan uji sintaks kandidat `CONFIRMED`; artifact/recovery, Owner gate, production activation, authenticated smoke, dan business readiness `NEEDS CONFIRMATION`.

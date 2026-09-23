@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS runner e-menu gateway-aware, belum deploy
+
+- `CONFIRMED`: commit `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` dan artifact lokal checksum-bound menutup gap tooling ingress katalog baca-saja tanpa mematikan gateway canary existing. `/menu` masih 401; verifikasi Owner serta recovery/activation/UAT belum dilakukan. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS e-menu gateway-compatible source, belum publik
 
 - `CONFIRMED`: source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` menyiapkan ingress katalog baca-saja pada baseline gateway canary aktif. Tes source, browser, regresi lokal, audit dependency, dan uji sintaks Nginx kandidat lulus; tidak ada aktivasi production.

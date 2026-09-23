@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Gate aktivasi e-menu setelah runner gateway-aware
+
+- `CONFIRMED`: source `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` dan artifact lokal checksum-bound tersedia, tetapi live Nginx tidak berubah; public `/menu` masih 401.
+- `NEEDS CONFIRMATION`: Owner vault CLI, backup terenkripsi/restore disposable kandidat, rehearsal rollback, ingress activation, authenticated/public negative smoke, dan monitoring. Jangan mengisi recovery receipt tanpa bukti tersebut atau menyebut `STAGING_READY`/`BUSINESS_READY`.
+
 ## 2026-09-23 — E-menu ingress gateway-compatible belum production
 
 - `CONFIRMED`: source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` menyiapkan renderer baca-saja yang cocok dengan active gateway `9c364ff2359940f73d52985fd752101d5d94b84b`; Nginx live tidak berubah dan anonymous `/menu` tetap 401. Kandidat `1298fc...` payment-OFF bersifat historis dan tidak boleh digunakan untuk promosi saat ini.

@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## Gateway-compatible e-menu release runner — source-only
+
+Commit `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambahkan runner ingress dan packager lokal untuk renderer pada commit sebelumnya. Artifact dua-file dibuat dari exact pushed SHA dan diverifikasi SHA-256; runner menuntut active/ingress SHA, mode gateway existing, preview-only capabilities, recovery receipt, shared lock, smoke negatif, serta rollback Nginx. Ini adalah implementasi gate, bukan bukti gate Owner/backup/restore/rehearsal sudah lulus. Bitwarden CLI terkunci saat preflight; tidak ada mutasi VPS. Public `/menu` tetap 401, Table Order/Kiosk simulator, gateway canary existing ON; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## E-menu public ingress — current gateway-compatible source boundary
 
 Source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` berasal dari baseline gateway production `9c364ff2359940f73d52985fd752101d5d94b84b`. Renderer hanya menyisipkan delapan route katalog baca-saja pada host `sagapos.site`, menolak baseline auth/host yang berubah, dan mempertahankan boundary signed Order Meja serta route Owner/Kiosk/KDS. Kandidat Nginx lulus tes sintaks terisolasi; live config tetap sama dan public `/menu` masih 401. Source/test lulus lokal, namun belum ada paket aktivasi gateway-aware, recovery lengkap, Owner gate terkini, atau authenticated production smoke. Candidate lama `1298fc...` adalah histori payment-OFF, bukan artifact rilis saat ini. Delivery `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.

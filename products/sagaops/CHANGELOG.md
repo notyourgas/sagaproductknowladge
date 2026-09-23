@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Runner e-menu gateway-aware source-pushed
+
+- `CONFIRMED`: `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambah packager dan runner ingress host-scoped yang mempertahankan mode gateway existing serta menyediakan backup konfigurasi dan percobaan rollback. Artifact lokal checksum-bound tersedia; validasi focused 4/4, static/type 613 modul, sintaks Bash, dan audit dependency production 0 vulnerability lulus.
+- Production tidak berubah: `/menu` masih 401, active `9c364ff2359940f73d52985fd752101d5d94b84b`. Owner vault/recovery/rehearsal/authenticated smoke belum lulus untuk kandidat ini. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — E-menu ingress direkonsiliasi terhadap gateway canary aktif
 
 - Source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` ter-push: renderer delapan route katalog GET/HEAD host-scoped dan tes auth/asset fail-closed kini berasal dari baseline gateway aktif, bukan artifact payment-OFF lama.

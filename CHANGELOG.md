@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-23 — SagaPOS gateway-aware e-menu release runner
+
+- `CONFIRMED`: source `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambah runner, packager, dan runbook e-menu GET-only yang kompatibel dengan gateway canary existing. Artifact lokal checksum-bound dibuat; production tidak berubah dan `/menu` masih 401.
+- Alasan: menutup gap release tooling tanpa mempromosikan kandidat lama yang payment-OFF. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, dan SYNC_STATUS. Owner gate, encrypted backup/disposable restore, rollback rehearsal, aktivasi, authenticated smoke/monitor tetap blocker. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Klasifikasi `CONFIRMED` untuk source/runtime dan `NEEDS CONFIRMATION` untuk release; commit knowledge `main HEAD`.
+
 ## 2026-09-23 — SagaPOS e-menu gateway-compatible source-only
 
 - `CONFIRMED`: source `c8a811dbf90574c14b957e2668ddb0e22ce2d964` menutup konflik renderer e-menu payment-OFF lama terhadap gateway canary aktif, dengan tes lokal dan sintaks Nginx kandidat lulus.

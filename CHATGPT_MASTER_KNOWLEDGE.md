@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — Runner e-menu siap diuji, link publik belum aktif
+
+- `CONFIRMED`: source `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambah packager/runner gateway-aware untuk e-menu baca-saja. Artifact lokal terikat checksum, tetapi belum ada Owner/recovery/activation evidence untuk kandidat ini.
+- Jangan membagikan `https://sagapos.site/menu` sebagai e-menu aktif: anonymous masih 401. Gateway canary existing tetap ON; Order Meja/Kiosk tetap simulator. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — SagaPOS e-menu publik belum aktif pada gateway canary
 
 - `CONFIRMED`: source renderer e-menu terbaru `c8a811dbf90574c14b957e2668ddb0e22ce2d964` sudah diselaraskan ke baseline production `9c364ff2359940f73d52985fd752101d5d94b84b`; kandidat lama `1298fc...` yang mengasumsikan payment OFF tidak boleh dipromosikan. Source/test dan uji sintaks kandidat lulus, tetapi deployment belum dilakukan.

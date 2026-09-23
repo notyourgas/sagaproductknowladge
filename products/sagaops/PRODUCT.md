@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-23 — runner e-menu gateway-aware, belum aktif
+
+- `CONFIRMED`: source `b486d3399e68b5de37f42f8fdaa41d5a0da7508f` menambah runner ingress baca-saja, packager exact pushed SHA, guard gateway existing, rollback Nginx, dan uji negatif. Artifact lokal checksum-bound telah dibuat; ini belum berarti staging atau production.
+- Runtime tetap `9c364ff2359940f73d52985fd752101d5d94b84b`, `/menu` anonim masih 401. Verifikasi Owner terkini, backup terenkripsi/restore disposable, rehearsal rollback, authenticated smoke, dan monitoring kandidat belum lengkap. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Source 2026-09-23 — public e-menu diselaraskan dengan gateway aktif, belum deploy
 
 - `CONFIRMED`: commit `c8a811dbf90574c14b957e2668ddb0e22ce2d964` pada branch terisolasi menambahkan renderer fail-closed untuk delapan route katalog GET/HEAD tepat pada host `sagapos.site`. Kontrak preview tetap baca-saja, tanpa cart, quote, checkout, pembayaran, identitas meja, atau dispatch KDS.
