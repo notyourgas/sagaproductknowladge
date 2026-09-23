@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual Phase 7 resilience dan pilot SagaPOS
+
+- `CONFIRMED`: production source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` aktif dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`; readiness Phase 7 `24/25` (`96%`), authenticated Owner UAT, restart persistence, release/recovery, dan monitor lulus.
+- `CONFIRMED`: load 600 request lulus tanpa kegagalan; independent encrypted offsite copy dan disposable restore host terpisah lulus. Simulasi empat skenario tidak memanggil provider dan tidak mengubah payment, ledger, inventory, Member, customer, atau fakta bisnis.
+- `NEEDS CONFIRMATION`: Andreas/operator perlu menjalankan satu shift manusia representatif dan memberi acceptance Owner atas SOP, action queue, stop condition, respons degraded network, serta multi-exception.
+- `NEEDS CONFIRMATION`: payment/gateway, inventory reporting, QRIS live, printer, NFC, dan hardware outlet tetap OFF sampai Phase 8. Dampak `PHASE_7_TECHNICAL_TARGET_PASS / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Residual menu reference parity v3 SagaPOS
 
 - `CONFIRMED`: source `e5734c028d94e48dbfb95023027eede15f18e7bb` aktif dengan rollback `fbd178d8ac70ccb5888c95228cefa6d9b7f5e5ce`; kiosk dan signed QR meja lulus public HTTPS UAT sampai KDS, payment global tetap OFF, dan fakta bisnis tidak berubah.

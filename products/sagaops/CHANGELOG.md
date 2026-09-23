@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Phase 7 resilience dan pilot simulasi aktif di production
+
+- Activated exact source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`; artifact SHA-256 `f9eb2bec4d5fcafc74aa41465f4d5afa4f704c8272275e097949fe1219cbec96` dan schema 34 migrasi unchanged.
+- Added Owner-only shift simulation untuk normal day, rush hour, degraded network, dan multi-exception dengan action queue, stop conditions, idempotency, serta replay deterministik tanpa business mutation.
+- Phase 7 readiness mencapai `96%` (`24/25`); load 600 request lulus 0 fail dengan p95 53,91 ms dan p99 80,07 ms. Encrypted offsite copy dan disposable restore host terpisah juga lulus.
+- Release/recovery, authenticated Owner UAT, restart smoke, public health/dashboard, anonymous denial, dan monitor lulus. Delivery `PRODUCTION_ACTIVATED / PHASE_7_TECHNICAL_TARGET_PASS / BUSINESS_READY=false`; real human shift pilot, Owner acceptance, payment/reporting, dan hardware tetap residual.
+
 ## 2026-09-23 — Guided kiosk self-order public demo aktif
 
 - Deployed exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` as Vercel public demo `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`; rollback `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.

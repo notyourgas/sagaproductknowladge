@@ -1,6 +1,6 @@
 # SagaPOS dan Saga Member Business Readiness Scoreboard
 
-Status: `CONFIRMED / PHASE_6_SIMULATION_SAFE / REAL_CLOSING_UAT_PENDING`
+Status: `CONFIRMED / PHASE_7_TECHNICAL_TARGET_PASS / REAL_SHIFT_PILOT_PENDING`
 
 Evidence cut-off: 23 September 2026.
 
@@ -34,6 +34,14 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 `BUSINESS_READY` tetap status terpisah.
 
 ## Baseline production
+
+### Phase 7 resilience, offsite restore, load, SOP, dan pilot simulasi
+
+- SagaPOS production exact source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` aktif dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`, artifact SHA-256 `f9eb2bec4d5fcafc74aa41465f4d5afa4f704c8272275e097949fe1219cbec96`, health `ready=true`, dan schema tetap 34 migrasi.
+- Readiness Phase 7 server-derived mencapai `96%` atau `24/25`. Independent encrypted offsite copy dan disposable restore pada host terpisah lulus; restore menemukan satu organisasi, 147 tabel non-system, dan manifest 34 migrasi tanpa menulis plaintext dump persisten.
+- Load lab menjalankan 600 request dengan nol kegagalan, p50 `23,51 ms`, p95 `53,91 ms`, p99 `80,07 ms`, dan throughput `891,86 request/detik`. Simulasi `NETWORK_DEGRADED` dengan 200 order/concurrency 24 juga lulus tanpa mengubah fakta bisnis.
+- Owner Dashboard menyediakan **Simulasi satu shift** untuk `NORMAL_DAY`, `RUSH_HOUR`, `NETWORK_DEGRADED`, dan `MULTI_EXCEPTION`, lengkap dengan idempotency/replay, antrean tindakan, stop condition, dan bahasa tindakan operator.
+- Satu gate tersisa adalah pilot satu shift representatif oleh manusia serta acceptance Owner. Payment/gateway, inventory reporting, dan perangkat fisik tetap `OFF`; karena itu nilai 96% adalah subscore Phase 7 dan `BUSINESS_READY=false`.
 
 ### Phase 6 finance, closing, dan exception snapshot
 
@@ -80,7 +88,7 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 ### SagaPOS
 
 - Runtime production aktif pada exact source
-  `770c81657b4e589188885e33dc0b7ab3f2f9011a` dengan 34 migrasi dan health
+  `df361c11ef07240cbefb376fc8ea3abf90dc84c7` dengan 34 migrasi dan health
   `ready=true`.
 - Member provider, absensi native, dan penerimaan barang staff aktif. Table
   Order masih `DEMO` dengan payment simulator dan tidak menulis fakta bisnis.
@@ -132,15 +140,16 @@ acceptance bisnis. `PRODUCTION_DEPLOYED`, `PRODUCTION_ACTIVATED`, dan
 | Absensi GPS/foto | 82 | operational-ready | matriks Android/iPhone |
 | Portal Staff/PWA | 80 | root/login aktif | UAT staff dan link hygiene |
 | Finance/report/closing | 92 | simulator closing/exception dan Owner technical UAT lulus | controlled real closing dan Finance acceptance |
-| Security/monitor/release | 85 | health/recovery aktif | long-run alert dan incident drill |
+| Security/monitor/release | 90 | exact-source release, restart smoke, recovery, dan monitor lulus | long-run alert dan incident drill |
 | Backup/rollback lokal | 88 | rehearsal lulus | pertahankan per candidate |
-| Independent offsite recovery | 40 | belum diterima | backup dan restore lokasi terpisah |
+| Independent offsite recovery | 90 | encrypted copy dan disposable restore host terpisah lulus | uji berkala dan retention acceptance |
 | Printer/NFC/peripheral | 30 | kontrak lokal | hardware UAT terakhir |
-| Load/performance | 45 | belum representatif | simulasi jam ramai |
-| SOP/training/pilot | 40 | belum lengkap | pelatihan dan pilot outlet |
+| Load/performance | 90 | 600 request, 0 gagal, p95 53,91 ms | observasi jam ramai nyata |
+| SOP/training/pilot | 55 | simulator empat skenario dan action queue aktif | pelatihan serta satu shift outlet nyata |
 
 Business-readiness berbobot SagaPOS: **62/100**. Nilai modul yang tinggi tidak
-menutupi gate kritis payment, reporting, hardware, offsite recovery, dan pilot.
+menutupi gate kritis payment, reporting, hardware, real shift pilot, dan
+acceptance lintas capability.
 
 ## Scoreboard Saga Member
 

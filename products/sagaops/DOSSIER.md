@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## Phase 7 resilience, offsite restore, load, dan pilot simulasi — production 2026-09-23
+
+Exact source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` aktif dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`, artifact SHA-256 `f9eb2bec4d5fcafc74aa41465f4d5afa4f704c8272275e097949fe1219cbec96`, service aktif, health ready, dan 34 migrasi unchanged. Release code-only melewati target admission, same-host encrypted backup/disposable restore, fresh candidate-current-candidate rehearsal, activation atomik, Owner restart smoke, serta monitor exact-source.
+
+Owner Dashboard memiliki **Simulasi satu shift** dengan skenario hari normal, jam ramai, jaringan menurun, dan multi-exception. Engine bersifat non-mutating, menyediakan action queue, stop condition, deterministic replay, serta idempotency guard. Provider, payment, ledger, inventory, Member, customer, dan fakta bisnis tidak disentuh.
+
+Readiness server-derived adalah `96%` (`24/25`). Load lab 600 request lulus tanpa kegagalan dengan p95 `53,91 ms`, p99 `80,07 ms`, dan throughput `891,86 request/detik`. Independent encrypted offsite copy dan restore pada database disposable di host Windows terpisah lulus dengan 147 tabel non-system dan manifest 34 migrasi; plaintext dump tidak dipersistenkan.
+
+Authenticated Owner production UAT membuktikan role/provider production, readiness, simulasi `NETWORK_DEGRADED` 200 order/concurrency 24, dan `businessFactsAffected=false`. Public HTTPS health dan dashboard lulus, sedangkan akses operator anonim tetap ditolak. Status `PHASE_7_TECHNICAL_TARGET_PASS / BUSINESS_READY=false`: satu real human representative shift dan acceptance Owner tetap `NEEDS CONFIRMATION`; payment/gateway, inventory reporting, dan hardware fisik tetap OFF.
+
 ## Guided kiosk self-order flow — public demo aktif 2026-09-23
 
 Exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui Vercel deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`; rollback pointer adalah `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`. Urutan customer adalah home, dine-in/takeaway, Saga Member melalui NFC simulator atau nomor HP demo, menu dan modifier, cart, detail pembayaran, QRIS atau assisted cash simulator, nomor pesanan, lalu `Pesan Lagi`.

@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## Production 2026-09-23 — Phase 7 resilience dan pilot simulasi aktif
+
+- `CONFIRMED`: exact source `df361c11ef07240cbefb376fc8ea3abf90dc84c7` aktif pada production dengan rollback `451c596c913c47b87a1c623e42b27063a84c3c26`, artifact SHA-256 `f9eb2bec4d5fcafc74aa41465f4d5afa4f704c8272275e097949fe1219cbec96`, health `ready=true`, dan schema tetap 34 migrasi.
+- Owner Dashboard menambahkan **Simulasi satu shift** untuk hari normal, jam ramai, jaringan menurun, dan multi-exception. Hasil menyajikan keputusan, action queue, stop condition, serta idempotency/replay deterministik tanpa memanggil provider atau mengubah ledger, stok, payment, Member, customer, maupun fakta bisnis.
+- Readiness Phase 7 adalah `96%` atau `24/25`. Load lab 600 request mencatat nol kegagalan, p95 `53,91 ms`, p99 `80,07 ms`, dan throughput `891,86 request/detik`; simulasi jaringan menurun 200 order/concurrency 24 tidak mengubah fakta bisnis.
+- Independent encrypted offsite copy dan disposable restore pada host terpisah lulus untuk exact candidate, begitu pula same-host backup/restore, immutable target admission, candidate-current-candidate rehearsal, authenticated Owner UAT, restart smoke, public health/dashboard, anonymous denial, dan monitor.
+- Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PHASE_7_TECHNICAL_TARGET_PASS / BUSINESS_READY=false`. Satu shift manusia yang representatif dan acceptance Owner masih `NEEDS CONFIRMATION`; payment/gateway, inventory reporting, QRIS, printer, NFC, dan perangkat fisik tetap gate Phase 8.
+
 ## Public demo 2026-09-23 — Guided kiosk self-order flow aktif
 
 - `CONFIRMED`: exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` aktif pada Vercel public demo `https://saga-pos-kiosk.vercel.app/kiosk` melalui deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`; rollback tersedia pada `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.
