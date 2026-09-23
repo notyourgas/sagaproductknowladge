@@ -4,7 +4,7 @@
 
 - `CONFIRMED`: exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` aktif pada `https://saga-pos-kiosk.vercel.app/kiosk` melalui Vercel deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u`; rollback `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.
 - Flow home → dine-in/takeaway → NFC/nomor HP demo → menu/modifier → cart → payment review → QRIS/tunai simulator → sukses/nomor pesanan → pesan lagi lulus public Chromium UAT untuk kedua metode payment. Nomor HP mentah tidak disimpan; provider nyata tetap OFF; KDS hanya menerima tiket demo setelah simulated success.
-- Visual tetap shell Warm Wood production; referensi kiosk hanya dipakai untuk urutan flow. Core production aktif pada `451c596c913c47b87a1c623e42b27063a84c3c26` dengan rollback `ec77f887c40e80c58ef78df39508596a70787727`, 34 migrasi unchanged, Owner restart smoke lulus, serta public QRIS demo masuk projection KDS berlabel demo-only.
+- Visual tetap shell Warm Wood production; referensi kiosk hanya dipakai untuk urutan flow. Commit kiosk `451c596c913c47b87a1c623e42b27063a84c3c26` kini terintegrasi pada core merge release aktif `df361c11ef07240cbefb376fc8ea3abf90dc84c7`, dengan rollback ke commit kiosk `451c596c913c47b87a1c623e42b27063a84c3c26`. Exact-source health menyatakan 34 migrasi unchanged, monitor lulus, dan public QRIS demo pada release aktif masuk projection KDS berlabel demo-only.
 - Status `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`. Jangan menyebut release ini sebagai aktivasi payment nyata; gateway tetap OFF dan transaksi customer/settlement/fakta bisnis tidak diaktifkan.
 
 ## Update 2026-09-23 — SagaPOS menu reference parity v3 aktif

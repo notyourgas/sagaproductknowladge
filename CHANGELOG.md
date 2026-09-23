@@ -5,7 +5,7 @@
 - `CONFIRMED`: exact source `7e12466811f11a0b7f3dc9b20b6cb365e9f21735` aktif pada public Vercel deployment `dpl_64MYNBWucre2nfQoCcPdRpKhcp3u` dengan rollback `dpl_6HbnUCxnPuhpkubZzZCvgNF3G8Wj`.
 - Public UAT membuktikan flow NFC/QRIS dan phone/cash sampai tiket demo `KD-*`; health tetap `PUBLIC_DEMO_SIMULATOR`, `production=false`, dan route operator tertutup.
 - File terdampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio changelog, master knowledge, SYNC_STATUS, dan root CHANGELOG. Tidak ada credential, PII mentah, callback/receipt, private identifier, database dump, atau path restricted yang dipublikasikan.
-- Knowledge juga mencatat desain Warm Wood production dipertahankan dan core source `451c596c913c47b87a1c623e42b27063a84c3c26` aktif dengan rollback `ec77f887c40e80c58ef78df39508596a70787727` setelah immutable release/recovery, Owner restart smoke, public transaction simulation, KDS projection, dan monitor lulus.
+- Knowledge juga mencatat desain Warm Wood production dipertahankan. Commit kiosk `451c596c913c47b87a1c623e42b27063a84c3c26` telah aktif dan kini terintegrasi sebagai parent pada merge release core `df361c11ef07240cbefb376fc8ea3abf90dc84c7`; rollback menunjuk `451c596c913c47b87a1c623e42b27063a84c3c26`. Immutable release/recovery dan Owner restart smoke untuk commit kiosk lulus, lalu exact-source health, public transaction simulation, KDS projection, dan monitor pada merge release juga lulus.
 - Delivery `VERCEL_PUBLIC_DEMO_DEPLOYED / PUBLIC_DEMO_ACTIVE / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_TRANSACTION_SIMULATION_PASS / BUSINESS_READY=false`; payment/provider nyata tidak diaktifkan.
 
 ## 2026-09-23 — Sinkronisasi SagaPOS menu reference parity v3
