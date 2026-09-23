@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-23 — Residual Phase 8B SagaDev Gateway
+
+- `CONFIRMED`: candidate `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` menyediakan product-bound SagaDev Gateway client, central callback boundary, signed status polling, separated systemd credentials, strict runtime modes, controlled-canary marker, dan Owner readiness fail-closed. Payment production tetap `OFF`.
+- `NEEDS CONFIRMATION`: candidate berasal dari baseline Phase 8A lama dan wajib direkonsiliasi dengan release aktif serta Phase 8A aligned terbaru sebelum artifact dibuat.
+- `NEEDS CONFIRMATION`: full regression serial harus diulang pada host sehat setelah kapasitas disk/temp dan memory cukup; hasil focused tidak menggantikan full release gate.
+- `NEEDS CONFIRMATION`: credential provisioning melalui boundary Owner, immutable artifact, backup/restore, rehearsal, activation window, authenticated Owner UAT, satu controlled TRIAL99 payment, status polling, callback evidence di gateway pusat, settlement/reconciliation, refund/manual-finance SOP, serta rollback drill belum dilakukan. Dampak `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Phase 8A source selaras release, aktivasi tetap tertahan
 
 - `CONFIRMED`: source `93595a56e38efef43aa125e5fa69c503a5836075` lulus full regression 1.600 pass/0 fail/73 skip; production tetap `758eb8f02cffa38a294c0fa91420074b06e4d981`.

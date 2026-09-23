@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway belum production
+
+- `CONFIRMED`: source `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` pada branch `codex/sagapos-phase8b-sagadev-gateway` menambahkan integrasi SagaDev Gateway product `sagaops`, contract `1.0`, dan `signed_status_polling`. Provider callback serta central merchant secret tetap berada di gateway pusat.
+- Production default tetap `OFF/OFF`; source menolak mode parsial dan hanya menyiapkan controlled canary melalui credential systemd terpisah, marker aktivasi, kill switch/window/limits, remote readiness, local preflight, dan Owner dashboard readiness. Readiness tidak mengeksekusi transaksi.
+- Focused final 33/33, durable gateway 1/1, dan static/type 607 lulus. Full suite belum menjadi bukti release karena sepuluh residual failure lingkungan disk/OOM; branch juga masih harus direkonsiliasi ke release aktif.
+- Jangan menyatakan payment aktif atau Phase 8B deployed. Production tetap `758eb8f02cffa38a294c0fa91420074b06e4d981`, gateway/payment `OFF`; status `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-23 — SagaPOS Phase 8A source selaras production, belum aktif
 
 - `CONFIRMED`: commit `93595a56e38efef43aa125e5fa69c503a5836075` mengintegrasikan Phase 8A di atas release SagaPOS aktif `758eb8f02cffa38a294c0fa91420074b06e4d981`, dengan 1.600 pass/0 fail/73 skip. Opening stock, parity katalog, HPP, dan reporting readiness tersedia di source branch, bukan runtime production.

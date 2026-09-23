@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-23 — Phase 8B SagaDev Gateway source candidate
+
+- Added production gateway loader dengan systemd credentials terpisah, exact product/origin/delivery validation, controlled-canary marker, dan strict `OFF/OFF` atau `gateway/production` startup pairing.
+- Added fail-closed Owner Phase 8B readiness, dynamic remote/local preflight, central provider-callback boundary, signed status polling, kill switch/window/limits checks, dan dashboard readiness card. Readiness tidak mengaktifkan mutasi payment.
+- Source `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d`; static/type 607, focused final 33/33, durable gateway 1/1. Full suite belum accepted karena sepuluh residual failure lingkungan disk/OOM setelah satu ekspektasi source diperbaiki.
+- Candidate berbasis `420c407d92a8055d5bd8fcaa6605704f23195bbe` dan perlu rekonsiliasi ke release aktif. Production tidak berubah, gateway/payment tetap `OFF`; delivery `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — Phase 8A selaras release aktif, source pushed
 
 - Source `93595a56e38efef43aa125e5fa69c503a5836075` membawa candidate Phase 8A ke baseline production `758eb8f02cffa38a294c0fa91420074b06e4d981`; static/type pass, focused 44/44, full regression 1.600 pass/0 fail/73 skip, audit dependency production nol temuan.

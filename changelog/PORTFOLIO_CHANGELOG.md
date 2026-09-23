@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway source-only
+
+- `CONFIRMED`: candidate `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` mengimplementasikan gateway boundary product `sagaops`, signed status polling, systemd credential separation, controlled-canary marker, dan Owner readiness fail-closed tanpa provider callback/central merchant secret di SagaPOS.
+- Static/type 607, focused final 33/33, dan durable gateway 1/1 lulus. Full regression belum diterima karena kapasitas disk/OOM host; kandidat juga masih perlu direkonsiliasi dari baseline Phase 8A lama ke release aktif.
+- Production tidak berubah; payment/gateway tetap `OFF`. Artifact/recovery/rehearsal, credential provisioning, Owner UAT, controlled payment, dan settlement reconciliation masih `NEEDS CONFIRMATION`; status `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Phase 8A source selaras release aktif
 
 - `CONFIRMED`: source `93595a56e38efef43aa125e5fa69c503a5836075` ter-push dan lulus regresi serial 1.600 pass/0 fail/73 skip di atas baseline production. Ini menutup drift source candidate Phase 8A, bukan deployment.

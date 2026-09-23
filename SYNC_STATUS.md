@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-23 — SagaPOS Phase 8B SagaDev Gateway source-only
+
+- Status `partially accepted`: implementasi boundary dan focused validation `CONFIRMED`; full regression sehat, branch reconciliation, packaging/recovery, credential provisioning, activation, Owner UAT, live canary, dan settlement `NEEDS CONFIRMATION`.
+- Source `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` ter-push. Sinkron: product `sagaops`, signed status polling, provider callback terpusat, systemd credential separation, strict runtime pairing, controlled-canary marker, dynamic readiness, serta dashboard Owner fail-closed.
+- Evidence: static/type 607; focused final 33/33; durable gateway 1/1. Full suite tidak diterima sebagai release evidence karena residual capacity/OOM, dan candidate masih berbasis Phase 8A `420c407d92a8055d5bd8fcaa6605704f23195bbe`.
+- Production berubah: tidak. Source aktif tetap `758eb8f02cffa38a294c0fa91420074b06e4d981`; payment/gateway `OFF`. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-23 — SagaPOS Phase 8A source selaras release aktif
 
 - Status `partially accepted`: source/test `CONFIRMED`; deployment, public e-menu, offsite restore, real-device UAT, dan business acceptance `NEEDS CONFIRMATION`.

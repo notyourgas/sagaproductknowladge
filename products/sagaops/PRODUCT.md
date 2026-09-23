@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## Source 2026-09-23 — Phase 8B SagaDev Gateway candidate, belum dideploy
+
+- `CONFIRMED`: commit source `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` pada branch `codex/sagapos-phase8b-sagadev-gateway` mengimplementasikan boundary pembayaran SagaDev Gateway untuk product `sagaops`, contract `1.0`, dan delivery `signed_status_polling`. Provider callback tetap berhenti di gateway pusat; SagaPOS tidak menerima callback provider langsung dan tidak menyimpan central merchant secret.
+- Runtime production default tetap `OFF/OFF`. Mode gateway hanya dapat dimulai dengan pasangan `gateway/production`, credential systemd yang dipisah antara konfigurasi non-secret dan outbound secret, marker controlled canary, serta Owner readiness fail-closed. Readiness tidak mengeksekusi transaksi dan `paymentMutationAllowed` tetap `false`.
+- Validasi source: static/type 607 modul, focused final 33/33, dan durable production QRIS gateway 1/1 lulus. Full repository run tidak diterima sebagai bukti release karena kapasitas disk/OOM host; setelah satu ekspektasi source diperbaiki, sepuluh failure tersisa berasal dari admission/temp-write/Node OOM dan harus diulang pada host sehat.
+- Candidate ini berasal dari baseline Phase 8A `420c407d92a8055d5bd8fcaa6605704f23195bbe`, sehingga wajib direkonsiliasi ke release aktif dan branch Phase 8A terkini sebelum packaging. Belum ada artifact, credential provisioning, backup/restore, rehearsal, activation window, authenticated Owner production UAT, pembayaran uang nyata, atau settlement reconciliation. Production tetap pada `758eb8f02cffa38a294c0fa91420074b06e4d981`, payment/gateway `OFF`; status `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Source 2026-09-23 — Phase 8A diselaraskan ke release aktif, belum dideploy
 
 - `CONFIRMED`: commit source `93595a56e38efef43aa125e5fa69c503a5836075` pada branch `codex/sagapos-phase8a-aligned-20260923` membawa Phase 8A ke baseline production `758eb8f02cffa38a294c0fa91420074b06e4d981` tanpa mengganti Kiosk/Table Order stream. Pemeriksaan statis/type dan regresi penuh lulus: 1.600 pass, 0 fail, 73 skip.

@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## Phase 8B — SagaDev Gateway controlled-canary candidate
+
+Commit `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` mengikat SagaPOS ke SagaDev Gateway product `sagaops` dengan contract `1.0` dan delivery `signed_status_polling`. Callback provider tetap diterminasi oleh gateway pusat; SagaPOS hanya membuat payment melalui endpoint produk dan membaca status tertandatangani. Implementasi menolak raw provider secret, product binding yang berbeda, origin selain SagaDev Gateway resmi, atau mode runtime yang tidak berpasangan.
+
+Production service tetap fail-closed pada `OFF/OFF`. Kandidat menambahkan loader Linux systemd credential yang memisahkan konfigurasi non-secret dari outbound secret, marker `CONTROLLED_CANARY`, kill switch/window/limit checks, serta Owner Phase 8B readiness dengan sepuluh gate. Readiness dinamis menggabungkan kesiapan gateway remote dengan preflight canary lokal, tetapi tidak mengizinkan atau mengeksekusi mutasi payment.
+
+Static/type 607 modul, focused final 33/33, dan durable production QRIS gateway 1/1 lulus. Full suite menjalankan 1.674 tes dengan 1.590 pass, 73 skip, dan 11 initial failure; satu ekspektasi source sudah diperbaiki dan lulus di focused rerun, sedangkan sepuluh failure tersisa terkait kapasitas disk/temp-write/PGlite admission/Node OOM. Karena full suite belum diulang pada host sehat, hasil ini bukan release gate yang diterima.
+
+Kandidat dibangun dari baseline Phase 8A `420c407d92a8055d5bd8fcaa6605704f23195bbe`, bukan release aktif atau Phase 8A aligned terbaru. Rekonsiliasi branch, full regression serial pada host sehat, artifact immutable, candidate-bound backup/restore, rehearsal, provisioning credential, activation window, Owner production UAT, controlled TRIAL99 payment, dan settlement reconciliation masih wajib. Production tetap `758eb8f02cffa38a294c0fa91420074b06e4d981` dengan payment/gateway `OFF`; status `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Phase 8A — source selaras production, delivery tertunda
 
 Commit `93595a56e38efef43aa125e5fa69c503a5836075` disusun di atas release aktif `758eb8f02cffa38a294c0fa91420074b06e4d981`, bukan langsung memakai candidate lama `420c407d92a8055d5bd8fcaa6605704f23195bbe`. Kontrak opening baseline, parity katalog, tiga belas gate readiness, dan reporting tetap sama; regresi serial 1.673 tes menghasilkan 1.600 pass, 0 fail, 73 skip, disertai static/type check dan audit dependency production tanpa temuan. Dua advisory moderate hanya pada dependency development dan masih perlu penanganan terpisah.
