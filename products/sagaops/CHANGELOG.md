@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Quote metode bayar dan stream QR kedaluwarsa, source-only
+
+- Source `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push: quote Kiosk/QR meja terikat metode pembayaran, dan stream status QR meja yang kedaluwarsa ditutup server. Fixture QRIS diskon 99% dibatasi development/test; tidak ada promo atau pembayaran riil baru di production.
+- Full npm test exit 0, integrasi 14/14, check/type 616 modul, audit dependency production 0. Artifact/recovery/UAT transaksi production kandidat belum lulus; active tetap `ddf8b037d60705d9281639b926be8dce0d6d807c`. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Panah kartu dan CTA dirapikan
 
 - Deployed source `ddf8b037d60705d9281639b926be8dce0d6d807c`: panah e-katalog, QR meja, dan CTA kiosk kini memakai SVG konsisten, ukuran tetap, stroke lebih jelas, serta optical centering.

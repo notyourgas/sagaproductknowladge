@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Gap rilis kandidat integrasi
+
+- `CONFIRMED`: source `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push dengan regresi lokal exit 0, tetapi production tetap pada release sebelumnya. Owner auth/katalog/CSRF smoke lulus tanpa transaksi; ini bukan UAT order sampai KDS di production.
+- `NEEDS CONFIRMATION`: artifact immutable pada runner Linux terverifikasi, rollback pointer terkini, backup terenkripsi/restore disposable kandidat-bound, rehearsal, authenticated UAT lintas surface, dan penerimaan perangkat/operasional. Hostname khusus Order Meja belum tervalidasi DNS. Jangan membuka pembayaran nyata atau menyebut `STAGING_READY`/`BUSINESS_READY` dari simulator.
+
 ## 2026-09-24 — Residual setelah arrow polish KopiSaga
 
 - `CONFIRMED`: arrow polish source `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif dan lolos browser/monitor; tidak ada blocker visual terdeteksi pada viewport mobile live.

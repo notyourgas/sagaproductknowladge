@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-24 — Kandidat integrasi belum aktif
+
+- `CONFIRMED`: source SagaPOS `0f7940ed6d4159db56bfc78109964ff65bd08679` telah ter-push. Quote Kiosk/Order Meja mengikat metode bayar dan server menutup stream QR meja kedaluwarsa; diskon QRIS 99% baru fixture development/test. Full regression lokal exit 0 dan kontrak integrasi 14/14. Ini bukan aktivasi promo atau payment riil.
+- Production tetap `ddf8b037d60705d9281639b926be8dce0d6d807c`. `https://sagapos.site/menu` publik tetapi baca-saja; `https://sagapos.site/order` adalah shell publik yang tetap membutuhkan QR meja bertanda tangan. Kiosk/QR meja masih simulator, gateway canary existing tidak diubah; artifact/recovery/UAT transaksi production kandidat belum lulus. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-24 — Arrow polish KopiSaga aktif
 
 - `CONFIRMED`: UI customer SagaPOS aktif pada source `ddf8b037d60705d9281639b926be8dce0d6d807c`. Panah kartu e-katalog/QR meja dan CTA kiosk kini memakai ikon SVG konsisten dengan ukuran serta posisi yang terkontrol; verifikasi live mobile dan monitor lulus.

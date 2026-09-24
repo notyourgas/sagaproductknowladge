@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — SagaPOS source integrasi, rilis ditahan
+
+- Status `partially accepted`: source `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push; quote payment-method-bound dan stream QR meja kedaluwarsa `CONFIRMED` oleh full test exit 0, integrasi 14/14, check/type 616, audit production 0.
+- Production active `ddf8b037d60705d9281639b926be8dce0d6d807c`, e-menu baca-saja, Order Meja/Kiosk simulator, gateway existing tidak diubah. Artifact/recovery/rollback pointer dan UAT transaksi production kandidat `NEEDS CONFIRMATION`; tidak ada deploy/aktivasi baru. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS arrow polish production
 
 - Status `partially accepted`: source `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif, rollback `de16d351e634fb7bfadb3617e1edd30b7cef9759`. Focused UI/a11y 7/7, static/type 615, backup/restore, rehearsal, Owner/public/browser smoke, live mobile geometry, dan monitor `CONFIRMED`.

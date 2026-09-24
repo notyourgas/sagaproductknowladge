@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi kandidat integrasi SagaPOS source-only
+
+- `CONFIRMED`: source `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push dengan quote terikat metode bayar dan stream QR meja kedaluwarsa yang ditutup server. Alasan: mencegah replay lintas metode dan status stale; fixture QRIS 99% tetap hanya development/test.
+- Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, dan SYNC_STATUS. Production tidak berubah; artifact/recovery/UAT transaksi kandidat belum lulus, `BUSINESS_READY=false`. Klasifikasi source/runtime `CONFIRMED`, aktivasi `NEEDS CONFIRMATION`; knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi arrow polish KopiSaga
 
 - `CONFIRMED`: source SagaPOS `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif dengan perapian affordance panah pada e-katalog, QR meja, dan kiosk. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, dan SYNC_STATUS.

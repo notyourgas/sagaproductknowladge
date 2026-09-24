@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-24 — Kandidat Kiosk/Order Meja/KDS belum deploy
+
+- `CONFIRMED`: source SagaPOS `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push dengan quote terikat metode bayar dan penutupan stream QR meja kedaluwarsa. Fixture QRIS 99% tetap sintetis development/test. Regresi penuh lokal exit 0 dan integrasi 14/14.
+- Production masih `ddf8b037d60705d9281639b926be8dce0d6d807c`; tidak ada artifact, staging, aktivasi, atau transaksi uang nyata baru. Kiosk/QR meja simulator dan `BUSINESS_READY=false`.
+
 ## 2026-09-24 — KopiSaga arrow polish production
 
 - `CONFIRMED`: source SagaPOS `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif. Affordance panah e-katalog, QR meja, dan kiosk diseragamkan dengan SVG yang lebih rapi; live mobile tidak overflow dan bebas error browser.

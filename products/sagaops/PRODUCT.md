@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — Kandidat integrasi Kiosk/QR meja/KDS tetap source-only
+
+- `CONFIRMED`: branch `codex/sagapos-promo-method-binding-20260924`, source `0f7940ed6d4159db56bfc78109964ff65bd08679`, sudah ter-push. Quote Kiosk dan QR meja kini mengikat pilihan metode pembayaran; stream status QR meja kedaluwarsa ditutup oleh server. Fixture diskon QRIS 99% hanya untuk development/test, bukan promo atau pembayaran riil production.
+- Regresi penuh lokal exit 0, integrasi terfokus 14/14, static/type 616 modul, dan audit dependency production 0 temuan. Production tetap `ddf8b037d60705d9281639b926be8dce0d6d807c`; e-menu publik baca-saja, Kiosk/QR meja simulator, gateway canary existing tidak diubah. Artifact kandidat, recovery gate, dan UAT transaksi production belum lulus; rollback pointer terkini belum terverifikasi. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Affordance panah KopiSaga dipoles di production
 
 - `CONFIRMED`: source `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif dengan rollback `de16d351e634fb7bfadb3617e1edd30b7cef9759`. Panah teks pada kartu e-katalog/QR meja diganti SVG konsisten dalam wadah bulat 32 px; panah CTA kiosk memakai geometri dan optical centering yang sama pada ukuran lebih besar.

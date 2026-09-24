@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Batas source baru dan rilis
+
+Source ter-push `0f7940ed6d4159db56bfc78109964ff65bd08679` berbasis tepat pada active `ddf8b037d60705d9281639b926be8dce0d6d807c`. Kontrak quote sekarang memasukkan metode bayar untuk mencegah quote QRIS dipakai ulang sebagai cash meskipun nominal cocok. Kiosk dan QR meja berbagi order/KDS demo; stream status QR meja yang kedaluwarsa ditutup server. Fixture diskon 99% adalah sintetis development/test, bukan kampanye production.
+
+Full regression lokal exit 0, kontrak integrasi 14/14, check/type 616, audit produksi 0. Owner smoke pada runtime aktif membuktikan role production, katalog baca-saja, CSRF dan batas anonim tanpa order/payment intent; bukan UAT transaksi lintas surface. Packager lokal tidak menghasilkan artifact pada host Windows karena pemeriksaan canonical path Linux; tidak ada staging/activation. Rollback pointer runtime saat ini belum terverifikasi dan recovery kandidat-bound belum dilakukan. E-menu publik `https://sagapos.site/menu` hanya baca-saja; shell Order Meja `https://sagapos.site/order` tetap memerlukan QR bertanda tangan; hostname khusus Order Meja belum tervalidasi DNS. `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Arrow-affordance polish production
 
 Commit `ddf8b037d60705d9281639b926be8dce0d6d807c` mengganti simbol panah teks yang tipis/tidak konsisten pada kartu e-katalog dan QR meja dengan SVG berukuran tetap, garis 2.25 px, wadah bulat 32 px, dan optical offset 1 px. CTA kiosk memakai ikon 24 px dalam wadah 48–54 px. Ikon dekoratif tetap `aria-hidden`, sementara nama aksi tetap berada pada kontrol induk.
