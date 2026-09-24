@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-24 — Uji QRIS publik SagaPOS masih source-only
+
+- `CONFIRMED`: Andreas memilih uji QRIS publik Kiosk/Order Meja diskon 99% dengan maksimum Rp100.000 **yang dibayar pelanggan** per transaksi, 100 transaksi, sampai 1 Oktober 2026 pukul 23.59 WIB. Ini bukan izin melewati release/payment gate.
+- `PROPOSAL`: source `a7a445254f64e86c7207c0af8803246b891f0532` menambah guard subsidi melalui batas keranjang Rp100.000 (diskon maksimal Rp99.000/order dan Rp9,9 juta total). Guard tidak dapat menggerakkan uang. Gateway publik, quota atomik, aggregate TABLE bisnis, serta gate rilis belum siap; production Kiosk/Order Meja masih simulator, e-katalog baca-saja, `BUSINESS_READY=false`.
+
 ## Update 2026-09-24 — QR meja demo dapat diuji, pembayaran nyata belum dibuka
 
 - `CONFIRMED`: satu QR meja bertanda tangan untuk uji demo 24 jam telah diterbitkan dan bootstrap publik tanpa login operator lulus. E-katalog tetap publik baca-saja. Kiosk dan Order Meja masih simulator; jangan menyebut QR demo sebagai QRIS pembayaran nyata.

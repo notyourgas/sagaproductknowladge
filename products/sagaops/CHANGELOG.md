@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Batas promo QRIS publik di source, pembayaran belum aktif
+
+- `CONFIRMED`: source `a7a445254f64e86c7207c0af8803246b891f0532` ter-push pada `codex/sagapos-public-pilot-20260924`; guard `PUBLIC99` terpisah dari canary privat dan fail-closed, dengan batas yang diputuskan Andreas Rp100.000 dibayar per transaksi, 100 transaksi, sampai 1 Oktober 23.59 WIB.
+- `PROPOSAL`: batas keranjang Rp100.000/diskon Rp99.000 per order agar subsidi publik maksimum Rp9,9 juta; belum disetujui sebagai harga live. Tes relevan 40/40, static/type 623, audit production 0. Tidak ada quota atomik/gateway publik/checkout nyata/artifact/deploy; active/rollback tetap `8dc83caa0e211cd235415fe8f267712a23117171` / `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Guard QRIS canary ter-push, release ditahan
 
 - `CONFIRMED`: source `0567e7a64fe05265b5201430333c2980de29bf45` mengikat otorisasi diskon canary privat ke metode QRIS server-authoritative dan menolak override context. 42/42 payment/durable/gateway, 27/27 Table/Kiosk/KDS, restart 1/1, static/type 621, audit production 0 lulus.

@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Kontrak calon pilot publik 99%, tanpa aktivasi uang
+
+Andreas mengonfirmasi batas **pembayaran pelanggan** Rp100.000 per transaksi, 100 transaksi, akhir 1 Oktober 2026 23.59 WIB untuk uji publik Kiosk dan QR meja. Batas bayar saja tidak membatasi subsidi: pada diskon 99%, keranjang Rp10 juta masih menyisakan pembayaran Rp100.000. Karena itu source `a7a445254f64e86c7207c0af8803246b891f0532` memakai batas keranjang Rp100.000 sebagai `PROPOSAL` konservatif; maksimal diskon Rp99.000 per order/Rp9,9 juta total, percobaan dan transaksi sukses maksimal 100, total otorisasi pembayaran maksimal Rp10 juta. Batas tambahan ini perlu dipastikan Owner sebelum aktivasi.
+
+Kebijakan publik `PUBLIC99` dipisah dari private `TRIAL99`, QRIS-only, channel KIOSK/TABLE, berakhir tepat 1 Oktober 23.59.59 WIB, dan pemeriksaannya tidak dapat membuat pembayaran. Tes integrasi relevan 40/40, static/type 623 modul, audit dependency production 0 temuan. Belum ada quota reservation atomik lintas proses, kontrak gateway publik, penulisan aggregate bisnis TABLE, browser/UAT pembayaran nyata, atau gate release baru. Runtime tetap simulator untuk dua surface tersebut; source ini bukan artifact atau deployment.
+
 ## 2026-09-24 — Pengaman canary QRIS dan batas uji publik
 
 Source `0567e7a64fe05265b5201430333c2980de29bf45` meneruskan metode bayar dari quote hingga otorisasi gateway dan mengunci canary privat pada QRIS. Field context dari pemanggil tidak dapat mengganti metode. Tes terfokus payment/durable/gateway 42/42, kontrak Table/Kiosk/KDS 27/27, restart 1/1, static/type 621 modul, dan audit dependency production 0 temuan lulus. Ini perbaikan source-only, bukan pembukaan gateway publik.

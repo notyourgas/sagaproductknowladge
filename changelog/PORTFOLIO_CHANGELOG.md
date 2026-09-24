@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-24 — SagaPOS batas uji QRIS publik belum aktif
+
+- `CONFIRMED`: source `a7a445254f64e86c7207c0af8803246b891f0532` mengunci rancangan batas pilot publik terpisah dari canary privat: Rp100.000 maksimum pembayaran pelanggan, 100 transaksi, akhir 1 Oktober 23.59 WIB. Tambahan batas keranjang/subsidi adalah `PROPOSAL` konservatif, bukan promo production. Tidak ada pembayaran nyata atau deploy baru; Kiosk/QR meja simulator, `BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS guard QRIS source-only dan satu QR demo
 
 - `CONFIRMED`: source `0567e7a64fe05265b5201430333c2980de29bf45` menutup override metode bayar pada canary privat. Satu QR meja demo 24 jam lulus signed bootstrap publik; token tidak masuk knowledge. Production tidak berubah dan jalur publik tetap simulator. Regresi penuh host uji tidak hijau, sehingga artifact/deploy dan pembayaran QRIS nyata ditahan; `BUSINESS_READY=false`.

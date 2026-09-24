@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-210 — Batas niat uji QRIS publik Kiosk dan Order Meja
+
+- Tanggal: 2026-09-24. Status: `CONFIRMED` untuk batas Owner; pemberi keputusan Andreas.
+- Topik: uji publik diskon QRIS 99% terpisah dari canary privat.
+- Keputusan: target uji publik Kiosk/Order Meja, maksimum Rp100.000 **dibayar pelanggan** per transaksi, 100 transaksi, berakhir 1 Oktober 2026 pukul 23.59 WIB. Aktivasi hanya setelah kontrak gateway publik, batas subsidi, quota atomik, source dan release/payment gates lulus. Keputusan ini tidak memperpanjang canary privat atau mengizinkan transaksi otomatis.
+- Alasan: Owner ingin menguji bersama partner dengan nominal dan jumlah transaksi terbatas. Alternatif memperluas `TRIAL99` privat ditolak karena boundary perangkat dan jendelanya berbeda. Batas keranjang Rp100.000/diskon Rp99.000 masih `PROPOSAL` untuk membatasi subsidi maksimum Rp9,9 juta.
+- Dampak: source eligibility guard `a7a445254f64e86c7207c0af8803246b891f0532` tersedia, belum terpasang ke checkout, belum dideploy, `BUSINESS_READY=false`. Runtime simulator DEC-208 tetap berlaku sampai rilis baru lulus.
+- Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md), dan [status sinkronisasi](SYNC_STATUS.md).
+
 ## DEC-209 — Pertahankan gateway canary existing saat menyiapkan e-menu publik
 
 - Tanggal: 2026-09-23. Status: `CONFIRMED`; pemberi keputusan Andreas.

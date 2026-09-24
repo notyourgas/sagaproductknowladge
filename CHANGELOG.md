@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi batas calon pilot QRIS publik SagaPOS
+
+- `CONFIRMED`: keputusan Andreas untuk batas pembayaran Rp100.000/transaksi, 100 transaksi, akhir 1 Oktober 23.59 WIB; source guard `a7a445254f64e86c7207c0af8803246b891f0532` ter-push. `PROPOSAL`: batas keranjang/subsidi tambahan. Alasan: menghindari diskon publik tanpa plafon subsidi sambil memisahkan dari canary privat.
+- Area/file: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, DECISIONS, SYNC_STATUS. Tidak ada perubahan production atau transaksi nyata; gateway publik/quota/aggregate/release gate masih terbuka. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi guard metode QRIS dan status QR meja demo
 
 - `CONFIRMED`: source SagaPOS `0567e7a64fe05265b5201430333c2980de29bf45` menutup bypass metode pada canary privat; satu QR meja demo 24 jam lulus bootstrap publik, tanpa menyimpan bearer link. Alasan: memisahkan uji demo dari klaim pembayaran nyata. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Production tidak berubah; regresi penuh/gate gateway publik `NEEDS CONFIRMATION`, `BUSINESS_READY=false`. Knowledge commit `main HEAD`.

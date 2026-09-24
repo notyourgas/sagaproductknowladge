@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Gap pilot QRIS publik setelah keputusan batas Owner
+
+- `CONFIRMED`: Owner menetapkan maksimum pembayaran pelanggan Rp100.000, 100 transaksi, dan penutupan 1 Oktober 2026 23.59 WIB. Source guard terpisah `a7a445254f64e86c7207c0af8803246b891f0532` sudah ter-push; produksi tidak berubah.
+- `NEEDS CONFIRMATION`: penerimaan batas keranjang Rp100.000/subsidi maksimal Rp9,9 juta yang diusulkan; kontrak produk gateway publik dan approval Finance; reservasi quota atomik Postgres lintas Kiosk/TABLE; jalur aggregate/outbox/KDS bisnis; full regression pada runner Linux/NTFS; Owner/recovery/browser/authenticated smoke dan monitor kandidat. Jangan mengaktifkan promo publik atau menyebut pembayaran QR meja/Kiosk riil sudah bisa dicoba.
+
 ## 2026-09-24 — Pembayaran nyata Kiosk/Order Meja tetap NO-GO
 
 - `CONFIRMED`: source guard QRIS `0567e7a64fe05265b5201430333c2980de29bf45` ter-push, tetapi regresi penuh host uji tidak hijau dan runtime tidak berubah. Satu QR meja demo 24 jam dapat bootstrap anonim tanpa membawa payment intent nyata.

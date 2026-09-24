@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — Keputusan batas pilot publik, source-only
+
+- Status `partially accepted`: batas Owner untuk jumlah yang dibayar Rp100.000, 100 transaksi, dan akhir 1 Oktober 23.59 WIB `CONFIRMED`; source guard `a7a445254f64e86c7207c0af8803246b891f0532` ter-push. Batas keranjang/subsidi tambahan `PROPOSAL`, belum live.
+- Production terverifikasi active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`, gateway existing, Kiosk/Order Meja simulator. Gateway publik, quota atomik, aggregate TABLE bisnis dan release/UAT `NEEDS CONFIRMATION`; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Guard QRIS source-only, QR demo, release NO-GO
 
 - Status `partially accepted`: source `0567e7a64fe05265b5201430333c2980de29bf45` ter-push dan focused/security checks lulus; satu QR meja demo 24 jam lulus bootstrap publik HTTP 200. Token dan identifier privat tidak dicatat. Production tidak berubah: active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; Table/Kiosk simulator.
