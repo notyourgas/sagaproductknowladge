@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi guard metode QRIS dan status QR meja demo
+
+- `CONFIRMED`: source SagaPOS `0567e7a64fe05265b5201430333c2980de29bf45` menutup bypass metode pada canary privat; satu QR meja demo 24 jam lulus bootstrap publik, tanpa menyimpan bearer link. Alasan: memisahkan uji demo dari klaim pembayaran nyata. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Production tidak berubah; regresi penuh/gate gateway publik `NEEDS CONFIRMATION`, `BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi hardening smoke SagaPOS
 
 - `CONFIRMED`: source `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` memperkeras lifecycle bukti autentikasi sementara setelah kegagalan smoke. Alasan: mencegah bukti sementara tertinggal; tidak mengubah assertion atau izin pembayaran. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Production tidak berubah; candidate-bound artifact, admission baru, dan gate canary `NEEDS CONFIRMATION`; `BUSINESS_READY=false`. Knowledge commit `main HEAD`.

@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — Guard QRIS source-only, QR demo, release NO-GO
+
+- Status `partially accepted`: source `0567e7a64fe05265b5201430333c2980de29bf45` ter-push dan focused/security checks lulus; satu QR meja demo 24 jam lulus bootstrap publik HTTP 200. Token dan identifier privat tidak dicatat. Production tidak berubah: active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; Table/Kiosk simulator.
+- Regresi penuh host Windows/FAT32 dan gate pembayaran publik `NEEDS CONFIRMATION`; tidak ada artifact/deploy/aktivasi baru atau transaksi nyata. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Sinkronisasi recovery kandidat integrasi
 
 - Status `partially accepted`: source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49`, validasi lokal, artifact immutable, backup/restore, dan rehearsal `CONFIRMED`. Aktivasi sempat terjadi tetapi authenticated smoke payment-containment gagal; kandidat ditarik kembali. Runtime akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; monitor dan scoped Owner smoke lulus.

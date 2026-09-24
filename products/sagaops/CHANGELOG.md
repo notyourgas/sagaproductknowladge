@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Guard QRIS canary ter-push, release ditahan
+
+- `CONFIRMED`: source `0567e7a64fe05265b5201430333c2980de29bf45` mengikat otorisasi diskon canary privat ke metode QRIS server-authoritative dan menolak override context. 42/42 payment/durable/gateway, 27/27 Table/Kiosk/KDS, restart 1/1, static/type 621, audit production 0 lulus.
+- Regresi penuh host Windows/FAT32 tetap gagal; rerun terisolasi dihentikan setelah 533 pass/6 fail. Tidak ada artifact atau deploy. Satu QR meja **DEMO** 24 jam terbit dan bootstrap publik HTTP 200; token tidak dipublikasikan di repo. Runtime active/rollback tetap `8dc83caa0e211cd235415fe8f267712a23117171` / `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; QRIS riil dan diskon 99% publik OFF, `BUSINESS_READY=false`.
+
 ## 2026-09-24 — Hardening smoke rilis, source-only
 
 - `CONFIRMED`: source `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` mengikat bukti autentikasi sementara pada SHA rilis dan membersihkannya saat smoke gagal. Focused test 12/12, check/type 621, audit dependency production 0. Gate pembayaran tidak dilonggarkan; production tetap active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.

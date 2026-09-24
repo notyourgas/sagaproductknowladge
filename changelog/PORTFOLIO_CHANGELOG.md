@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-24 — SagaPOS guard QRIS source-only dan satu QR demo
+
+- `CONFIRMED`: source `0567e7a64fe05265b5201430333c2980de29bf45` menutup override metode bayar pada canary privat. Satu QR meja demo 24 jam lulus signed bootstrap publik; token tidak masuk knowledge. Production tidak berubah dan jalur publik tetap simulator. Regresi penuh host uji tidak hijau, sehingga artifact/deploy dan pembayaran QRIS nyata ditahan; `BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS hardening gate release
 
 - `CONFIRMED`: source `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` memperkeras lifecycle bukti smoke autentikasi setelah kandidat sebelumnya ditarik kembali. Hanya validasi lokal; runtime production dan mode gateway tidak berubah, Kiosk/Order Meja tetap simulator, `BUSINESS_READY=false`.

@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-24 — QR meja demo dapat diuji, pembayaran nyata belum dibuka
+
+- `CONFIRMED`: satu QR meja bertanda tangan untuk uji demo 24 jam telah diterbitkan dan bootstrap publik tanpa login operator lulus. E-katalog tetap publik baca-saja. Kiosk dan Order Meja masih simulator; jangan menyebut QR demo sebagai QRIS pembayaran nyata.
+- Source security `0567e7a64fe05265b5201430333c2980de29bf45` ter-push, belum dideploy. Regresi penuh/release gate belum hijau; production tetap active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. Promo 99% publik, transaksi nyata, dan `BUSINESS_READY` belum aktif.
+
 ## Update 2026-09-24 — Batas aktivasi kandidat SagaPOS
 
 - `CONFIRMED`: kandidat `b1d7bc5b70773389c3c1086c497875d667cbac49` bukan rilis aktif: aktivasi code-only dikembalikan setelah authenticated smoke umum gagal pada payment-containment Phase 8B. Runtime akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. `/menu` publik baca-saja; Order Meja/Kiosk tetap simulator, QRIS 99% hanya development/test, dan gateway existing tidak diubah. `BUSINESS_READY=false`.

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Pengaman canary QRIS dan batas uji publik
+
+Source `0567e7a64fe05265b5201430333c2980de29bf45` meneruskan metode bayar dari quote hingga otorisasi gateway dan mengunci canary privat pada QRIS. Field context dari pemanggil tidak dapat mengganti metode. Tes terfokus payment/durable/gateway 42/42, kontrak Table/Kiosk/KDS 27/27, restart 1/1, static/type 621 modul, dan audit dependency production 0 temuan lulus. Ini perbaikan source-only, bukan pembukaan gateway publik.
+
+Satu token QR meja demo 24 jam diterbitkan dari konfigurasi meja aktif, diverifikasi server-side, dan bootstrap melalui ingress publik mendapat HTTP 200 tanpa login operator. Token tidak dicatat dalam knowledge publik. Ini menguji boundary signed-table dan demo session saja; tidak membuktikan pembayaran nyata atau order/KDS UAT lengkap.
+
+Regresi penuh pada host Windows/FAT32 tidak hijau: tes packaging yang memanggil Git tanpa `safe.directory` gagal; rerun terisolasi dengan konfigurasi Git per-proses mencapai 533 pass dan 6 fail sebelum dihentikan, termasuk asumsi filesystem/symlink release. Tidak ada assertion yang diturunkan. Artifact kandidat dan aktivasi tidak dibuat. Production terverifikasi tetap active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`, payment mode gateway existing, Table Order `DEMO`. Jalur checkout publik `/api/table` dan `/api/menu-kiosk` masih simulator; kontrak gateway publik, aggregate bisnis TABLE, gate canary, dan UAT transaksi/settlement tetap terbuka.
+
 ## 2026-09-24 — Admission gabungan dan pemulihan fail-closed
 
 Source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` memasukkan quote terikat metode bayar dan penutupan stream status QR meja kedaluwarsa di atas rilis visual/operasional terbaru. Regresi penuh pada source gabungan sebelum perubahan finance: 1627 pass, 73 skip, 0 fail; final focused pada source lengkap: 47 pass, 1 skip, 0 fail; check/type 619 modul, audit dependency production 0. Artifact immutable, backup terenkripsi/restore disposable, dan rehearsal kandidat lulus. Ini bukti teknis kandidat, bukan kesiapan pembayaran nyata.

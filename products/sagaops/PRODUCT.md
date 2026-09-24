@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — Pengaman metode QRIS source-only dan QR meja demo terbatas
+
+- `CONFIRMED`: source `0567e7a64fe05265b5201430333c2980de29bf45` pada branch `codex/sagapos-trial99-method-guard-20260924` menolak penggunaan diskon canary privat pada metode selain QRIS, termasuk context override. Source ter-push tetapi belum dideploy; runtime tetap `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
+- Satu QR meja bertanda tangan berdurasi 24 jam diterbitkan untuk uji **DEMO** dan bootstrap publik lulus HTTP 200. Bearer URL tidak disimpan dalam knowledge publik. Order Meja/Kiosk tetap simulator; QRIS riil, promo publik 99%, dan fakta keuangan production tidak diaktifkan. Regresi terfokus lulus, tetapi regresi penuh lokal tidak hijau pada host uji sehingga release ditahan. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Kandidat integrasi ditarik kembali setelah gate gagal
 
 - `CONFIRMED`: source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` ter-push, tetapi **bukan runtime aktif**. Kandidat sempat diaktifkan lalu dikembalikan setelah authenticated smoke umum gagal pada payment-containment Phase 8B. Runtime akhir terverifikasi `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.

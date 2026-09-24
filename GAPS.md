@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Pembayaran nyata Kiosk/Order Meja tetap NO-GO
+
+- `CONFIRMED`: source guard QRIS `0567e7a64fe05265b5201430333c2980de29bf45` ter-push, tetapi regresi penuh host uji tidak hijau dan runtime tidak berubah. Satu QR meja demo 24 jam dapat bootstrap anonim tanpa membawa payment intent nyata.
+- `NEEDS CONFIRMATION`: kontrak dan otorisasi gateway untuk pilot publik berbatas, aggregate/outbox bisnis TABLE, DNS/TLS hostname khusus, tes Linux/NTFS penuh, gate Owner/backup/rollback/monitor kandidat baru, serta rekonsiliasi transaksi nyata. Jangan mengaktifkan promo 99% publik tanpa batas atau menganggap canary privat sebagai otorisasi publik.
+
 ## 2026-09-24 — Gate rilis gabungan masih terbuka
 
 - `CONFIRMED`: kandidat `b1d7bc5b70773389c3c1086c497875d667cbac49` berhasil dibangun, distage, dan melewati backup/restore serta rehearsal, tetapi authenticated smoke payment-containment Phase 8B gagal setelah aktivasi. Recovery kembali ke active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; scoped Owner smoke dan monitor lulus.
