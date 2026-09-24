@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Kandidat integrasi b1d7bc5 ditarik kembali
+
+- `CONFIRMED`: source `b1d7bc5b70773389c3c1086c497875d667cbac49` ter-push dan sempat diaktifkan setelah artifact, backup/restore, serta rehearsal lulus. Authenticated smoke umum kemudian gagal pada payment-containment Phase 8B; aktivasi dibatalkan. Active akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
+- Public-menu scoped Owner smoke, monitor, dan link verifier lulus setelah recovery. Quote binding/stream expiry kandidat **belum deployed**; QRIS 99% hanya fixture development/test. Kiosk/Order Meja simulator, gateway existing dipertahankan. `CANDIDATE_REVERTED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Warm UI dan seamless motion aktif
 
 - Deployed source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`, rollback `1d062bf95869f33c8816f49263f80d1315ad5649`: menyelaraskan Kiosk, e-katalog, dan QR menu meja ke palet kopi hangat, kategori rounded dengan selected coklat, CTA non-hitam, spacing responsif, serta microinteraction singkat/reduced-motion.

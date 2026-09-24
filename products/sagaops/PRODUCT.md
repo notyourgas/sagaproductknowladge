@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — Kandidat integrasi ditarik kembali setelah gate gagal
+
+- `CONFIRMED`: source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` ter-push, tetapi **bukan runtime aktif**. Kandidat sempat diaktifkan lalu dikembalikan setelah authenticated smoke umum gagal pada payment-containment Phase 8B. Runtime akhir terverifikasi `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
+- E-katalog tetap publik baca-saja; Order Meja/Kiosk tetap simulator dan memerlukan QR meja bertanda tangan untuk order. Gateway canary existing dipertahankan tanpa transaksi atau provider mutation baru. Diskon QRIS 99% hanya fixture development/test. `SOURCE_PUSHED / CANDIDATE_REVERTED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — KopiSaga warm UI dan motion aktif di production
 
 - `CONFIRMED`: source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` aktif dengan rollback `1d062bf95869f33c8816f49263f80d1315ad5649`. Kiosk, e-katalog, dan QR menu meja memakai sistem visual kopi hangat: tombol kategori rounded 12–14 px, state aktif coklat `#5b3826`, CTA non-hitam, hierarchy/spacing responsif, serta microinteraction singkat dengan reduced-motion fallback.

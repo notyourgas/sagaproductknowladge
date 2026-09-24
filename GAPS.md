@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Gate rilis gabungan masih terbuka
+
+- `CONFIRMED`: kandidat `b1d7bc5b70773389c3c1086c497875d667cbac49` berhasil dibangun, distage, dan melewati backup/restore serta rehearsal, tetapi authenticated smoke payment-containment Phase 8B gagal setelah aktivasi. Recovery kembali ke active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; scoped Owner smoke dan monitor lulus.
+- `NEEDS CONFIRMATION`: penyelesaian gate canary/payment-containment tanpa melonggarkan guard, artifact/admission kandidat baru, authenticated UAT Order Meja dan Kiosk sampai KDS, DNS hostname khusus, perangkat fisik, serta signoff bisnis. Jangan menyebut kandidat ini production-ready atau mengaktifkan promo QRIS riil dari fixture 99%.
+
 ## 2026-09-24 — Residual setelah warm UI KopiSaga
 
 - `CONFIRMED`: warm UI source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` aktif; live desktop/mobile tidak memiliki overflow, broken visible image, atau page error. Owner smoke, backup/restore, dan monitor lulus.

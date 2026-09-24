@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi kandidat SagaPOS yang ditarik kembali
+
+- `CONFIRMED`: source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` ter-push, namun aktivasi ditarik kembali karena authenticated smoke payment-containment Phase 8B gagal. Alasan sinkronisasi: mencegah klaim salah bahwa quote binding/stream expiry sudah production. Active akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
+- Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Production kembali ke baseline sehat; gateway existing dipertahankan, Order Meja/Kiosk simulator, 99% development/test. Gate canary, kandidat baru, dan UAT autentik `NEEDS CONFIRMATION`; `BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi KopiSaga warm UI production
 
 - `CONFIRMED`: SagaPOS source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` aktif dengan warm customer UI, rounded brown category state, responsive spacing, dan seamless reduced-motion-aware interaction pada Kiosk, e-katalog, serta QR menu meja. Alasan: memperbaiki hierarchy, konsistensi brand, touch affordance, dan kontras tanpa menambah fitur.

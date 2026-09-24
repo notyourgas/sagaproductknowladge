@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Admission gabungan dan pemulihan fail-closed
+
+Source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` memasukkan quote terikat metode bayar dan penutupan stream status QR meja kedaluwarsa di atas rilis visual/operasional terbaru. Regresi penuh pada source gabungan sebelum perubahan finance: 1627 pass, 73 skip, 0 fail; final focused pada source lengkap: 47 pass, 1 skip, 0 fail; check/type 619 modul, audit dependency production 0. Artifact immutable, backup terenkripsi/restore disposable, dan rehearsal kandidat lulus. Ini bukti teknis kandidat, bukan kesiapan pembayaran nyata.
+
+Sesudah aktivasi code-only, authenticated smoke umum gagal pada gate payment-containment Phase 8B yang masih parsial. Rilis segera ditarik kembali melalui recovery gateway-aware dengan backup/restore dan rehearsal segar. Runtime akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; service/database, scoped Owner public-menu smoke, monitor, dan verifier link lulus. Kiosk/Order Meja tetap simulator, gateway existing tidak berubah, tidak ada payment intent baru. Kandidat gagal tidak boleh dipakai ulang tanpa build dan admission segar. `BUSINESS_READY=false`.
+
 ## 2026-09-24 — Rilis warm UI, motion, dan kontras final
 
 Source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` menyatukan karakter visual customer-facing KopiSaga pada Kiosk, e-katalog, dan QR menu meja. Kategori berubah dari pill/hitam menjadi rounded 12–14 px dengan selected state coklat `#5b3826`; CTA memakai espresso/cream, kartu dan whitespace disesuaikan untuk portrait kiosk, desktop, serta mobile 390 px. Animasi scroll/reveal/dialog menggunakan opacity/transform berdurasi singkat dan menghormati `prefers-reduced-motion`. Kontras teks kecil nominal tunai pada state terpilih ditutup oleh regression browser khusus.

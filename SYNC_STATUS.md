@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — Sinkronisasi recovery kandidat integrasi
+
+- Status `partially accepted`: source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49`, validasi lokal, artifact immutable, backup/restore, dan rehearsal `CONFIRMED`. Aktivasi sempat terjadi tetapi authenticated smoke payment-containment gagal; kandidat ditarik kembali. Runtime akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; monitor dan scoped Owner smoke lulus.
+- Gap admission baru, UAT fisik/lintas surface, dan business signoff `NEEDS CONFIRMATION`. Kiosk/Order Meja simulator dan diskon 99% tidak production. `SOURCE_PUSHED / CANDIDATE_REVERTED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — KopiSaga warm UI production
 
 - Status `partially accepted`: exact source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`, rollback `1d062bf95869f33c8816f49263f80d1315ad5649`, visual/motion, Owner auth, live desktop/mobile, backup/restore, dan monitor `CONFIRMED`. Static/type 616; relevant regression 86 pass/0 fail/1 Firefox host skip.

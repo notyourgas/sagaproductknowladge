@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-24 — SagaPOS kandidat integrasi gagal admission akhir
+
+- `CONFIRMED`: kandidat gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` ditarik kembali setelah authenticated smoke payment-containment gagal; production kembali ke `8dc83caa0e211cd235415fe8f267712a23117171` dengan rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. Katalog publik tetap baca-saja, Order Meja/Kiosk simulator, gateway existing tetap; `BUSINESS_READY=false`.
+
 ## 2026-09-24 — KopiSaga warm UI production
 
 - `CONFIRMED`: SagaPOS source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` aktif dengan rollback `1d062bf95869f33c8816f49263f80d1315ad5649`. Kiosk, e-katalog, dan QR menu meja kini memakai palet espresso/cream, kategori rounded dengan state coklat, spacing responsif, dan microinteraction singkat/reduced-motion.
