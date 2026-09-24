@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Penguncian konfirmasi Gateway pada order durable
+
+Source `185fa53d81b5ac99b827373521fd86376687232d` memindahkan pembacaan inbox event ke setelah lock baris pembayaran. Boundary server memeriksa organization/outlet, metode QRIS dinamis, provider Gateway dan ikatan event ke payment/outlet asal sebelum mengembalikan replay. Dalam tes lokal, dua konfirmasi bersamaan hanya menulis satu outbox paid dan satu tiket KDS; event kedua tetap dapat diaudit tanpa menggandakan fulfillment. Ini bukan verifikasi native PostgreSQL dua writer atau validasi signature provider di boundary publik. Full regression 1.659 pass/0 fail/73 skip; tidak ada migrasi atau deploy. Gateway publik, approval Finance, batas subsidi tambahan, callback/settlement, report UI dan UAT partner masih terbuka.
+
 ## 2026-09-24 — Kontrak laporan QRIS lintas SagaPOS dan SagaDev Gateway
 
 Source `94979f802893b47dba7c2d6502999079d0d82842` menambah proyeksi finansial read-only dan rencana empat wave: kontrak produk Gateway/Finance, penulisan aggregate dan outbox Postgres, laporan Owner/rekonsiliasi, lalu rilis dan pilot terjaga. SagaPOS berwenang atas quote, promo, order dan KDS; Gateway pusat berwenang atas intent QRIS, status provider, fee dan settlement. Jangan mencampur fakta SagaPOS dengan ledger booking SagaBook. QR identitas meja tetap terpisah dari QRIS dinamis per order.

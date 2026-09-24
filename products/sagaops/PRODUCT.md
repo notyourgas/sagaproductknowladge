@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — Konfirmasi paid Gateway lebih tahan replay (source-only)
+
+- `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` ter-push. Konfirmasi QRIS Gateway kini mengunci pembayaran sebelum membaca event, menolak event yang dipakai ulang untuk pembayaran lain, dan tidak dapat melunasi metode cash. Dalam tes lokal, konfirmasi paralel menghasilkan satu outbox paid dan satu tiket KDS.
+- Tes terfokus 52/52, regresi penuh 1.659 pass/0 fail/73 skip, static/type 627 modul, dan audit dependency production 0 temuan. Tes paralel memakai database lokal, belum membuktikan dua writer PostgreSQL native. Production tidak berubah; Kiosk/Order Meja masih simulator, QRIS 99% publik belum aktif. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Rancangan laporan QRIS SagaDev Gateway source-only
 
 - `CONFIRMED`: source `94979f802893b47dba7c2d6502999079d0d82842` ter-push, menambah proyeksi laporan baca-saja untuk calon pilot `PUBLIC99` Kiosk/Order Meja. Laporan memisahkan penjualan SagaPOS, pembayaran terverifikasi Gateway, subsidi/diskon, fee, expected net, dan payout; uang tidak cocok, bukti ganda, serta selisih payout tampil sebagai exception. Nilai settlement yang belum diketahui tidak diisi nol.

@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-24 — Guard settlement SagaPOS belum aktif di production
+
+- `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` ter-push dengan lock pembayaran dan replay event Gateway yang terikat pembayaran/outlet; QRIS tidak dapat melunasi cash. Tes lokal 1.659 pass/0 fail/73 skip, tetapi native PostgreSQL dua writer belum dibuktikan. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`.
+- `NEEDS CONFIRMATION`: batas subsidi/keranjang 99% publik, kontrak dan approval Gateway/Finance, signed status/callback/settlement, integrasi bisnis Kiosk/Order Meja, UAT partner dan seluruh gate rilis. Kiosk/QR meja tetap simulator; pembayaran nyata publik dan dashboard rekonsiliasi belum aktif, `BUSINESS_READY=false`.
+
 ## Update 2026-09-24 — Laporan QRIS SagaPOS belum terhubung ke Gateway live
 
 - `CONFIRMED`: source `94979f802893b47dba7c2d6502999079d0d82842` ter-push dengan proyeksi baca-saja untuk rekonsiliasi `PUBLIC99` Kiosk/QR meja: penjualan POS, Gateway paid, diskon merchant, fee, expected net, payout dan exception dipisah. Regresi akhir 1.656 pass/0 fail/73 skip; status `IMPLEMENTED_NOT_DEPLOYED`.

@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Konfirmasi paid Gateway dikunci dan replay diikat ke pembayaran
+
+- `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` memperbaiki risiko dua konfirmasi bersamaan membuat outbox/KDS ganda; replay salah payment/outlet dan konfirmasi QRIS ke cash ditolak. Alasan: status `PAID` dan tiket dapur hanya boleh berasal dari satu transaksi server-authoritative.
+- Focused 52/52, full 1.659 pass/0 fail/73 skip, static/type 627 dan dependency production 0. Tes paralel lokal belum native multi-writer. Tidak ada artifact rilis atau activation; production tetap pada runtime sebelumnya, Kiosk/Order Meja simulator dan promo publik OFF. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Proyeksi laporan QRIS Gateway publik ter-push, belum live
 
 - `CONFIRMED`: source `94979f802893b47dba7c2d6502999079d0d82842` menambah laporan read-only dengan pemisahan penjualan SagaPOS, uang Gateway, diskon, fee, expected net, payout dan exception rekonsiliasi; mismatch payout tetap terlihat. Alasan: laporan Owner/Finance tidak boleh menganggap status bayar atau settlement yang belum terbukti sebagai penjualan pasti.

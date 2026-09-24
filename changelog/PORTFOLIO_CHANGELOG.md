@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-24 — SagaPOS Gateway paid convergence source-only
+
+- `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` mengunci konfirmasi paid dan menolak replay lintas pembayaran/metode cash. Regresi penuh 1.659 pass/0 fail/73 skip; production dan mode Kiosk/QR meja tidak berubah. QRIS publik 99% belum tersedia; `BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS QRIS Gateway reporting source-only
 
 - `CONFIRMED`: source `94979f802893b47dba7c2d6502999079d0d82842` memisahkan kontrak laporan penjualan, pembayaran Gateway dan payout serta menampilkan exception. Ini proyeksi teruji, bukan integrasi Gateway/checkout live. Production tidak berubah; Kiosk/QR meja simulator dan promo publik 99% OFF. `BUSINESS_READY=false`.

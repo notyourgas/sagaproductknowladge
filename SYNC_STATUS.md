@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — Guard konfirmasi Gateway SagaPOS source-only
+
+- Status `partially accepted`: exact source `185fa53d81b5ac99b827373521fd86376687232d` ter-push, focused 52/52, full 1.659 pass/0 fail/73 skip, static/type 627, audit production 0. Perubahan hanya source; production active/rollback terakhir tetap perlu verifikasi live sebelum klaim rilis.
+- Kiosk/Order Meja tetap simulator. Native dua writer, public Gateway/Finance, batas subsidi, UAT dan release gate belum selesai. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Kontrak laporan Gateway SagaPOS source-only
 
 - Status `partially accepted`: source `94979f802893b47dba7c2d6502999079d0d82842` ter-push dan laporan rekonsiliasi read-only teruji 13/13; regresi final 1.656 pass/0 fail/73 skip. Production tidak berubah; active/rollback terakhir terverifikasi `8dc83caa0e211cd235415fe8f267712a23117171` / `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
