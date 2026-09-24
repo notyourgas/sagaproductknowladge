@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Panah kartu dan CTA dirapikan
+
+- Deployed source `ddf8b037d60705d9281639b926be8dce0d6d807c`: panah e-katalog, QR meja, dan CTA kiosk kini memakai SVG konsisten, ukuran tetap, stroke lebih jelas, serta optical centering.
+- Focused UI/a11y 7/7, static/type 615, recovery, Owner/public/browser smoke, dan monitor lulus. Schema/payment/ingress tidak berubah; kiosk dan QR meja tetap simulator. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — KopiSaga P0–P2 production
 
 - UI kiosk, e-katalog, dan QR meja diselaraskan untuk hierarki, spasi, ukuran target sentuh, palet KopiSaga, serta desktop/mobile. Source runtime `de16d351e634fb7bfadb3617e1edd30b7cef9759` aktif; ingress source `10e4f51a6c63e225e0fad525b76b2da1f61316bb` membuka `https://sagapos.site/menu` sebagai katalog publik baca-saja.

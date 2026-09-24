@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — SagaPOS arrow polish production
+
+- Status `partially accepted`: source `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif, rollback `de16d351e634fb7bfadb3617e1edd30b7cef9759`. Focused UI/a11y 7/7, static/type 615, backup/restore, rehearsal, Owner/public/browser smoke, live mobile geometry, dan monitor `CONFIRMED`.
+- Database/schema, ingress, dan payment boundary tidak berubah; QR meja/kiosk simulator. Physical-device UAT, content approval, independent offsite restore, dan business signoff `NEEDS CONFIRMATION`. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — KopiSaga P0–P2 production aktif terbatas
 
 - Status `partially accepted`: source runtime `de16d351e634fb7bfadb3617e1edd30b7cef9759` dan ingress source `10e4f51a6c63e225e0fad525b76b2da1f61316bb` telah ter-push dan aktif. Backup/restore disposable, rehearsal rollback, Owner/public/browser UAT, asset rendering, dan monitor `CONFIRMED`; `/menu` publik HTTP 200.

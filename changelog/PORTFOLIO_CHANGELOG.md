@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-24 — KopiSaga arrow polish production
+
+- `CONFIRMED`: source SagaPOS `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif. Affordance panah e-katalog, QR meja, dan kiosk diseragamkan dengan SVG yang lebih rapi; live mobile tidak overflow dan bebas error browser.
+- Recovery, Owner/browser smoke, dan monitor lulus tanpa perubahan schema, ingress, atau payment boundary. Kiosk/QR meja tetap simulator; `BUSINESS_READY=false`.
+
 ## 2026-09-24 — KopiSaga menu P0–P2 production
 
 - `CONFIRMED`: UI kiosk, e-katalog, dan QR meja diperbarui; `https://sagapos.site/menu` sekarang publik baca-saja dan lulus browser desktop/mobile serta monitor. Runtime source `de16d351e634fb7bfadb3617e1edd30b7cef9759`, ingress source `10e4f51a6c63e225e0fad525b76b2da1f61316bb`.

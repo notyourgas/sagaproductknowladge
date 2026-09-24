@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi arrow polish KopiSaga
+
+- `CONFIRMED`: source SagaPOS `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif dengan perapian affordance panah pada e-katalog, QR meja, dan kiosk. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, dan SYNC_STATUS.
+- Alasan: mengganti simbol teks yang tipis/tidak konsisten dengan SVG terukur dan accessible. Production berubah; recovery, Owner/browser smoke, live mobile, dan monitor lulus. Schema/ingress/payment boundary tidak berubah; `BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi rilis KopiSaga P0–P2
 
 - `CONFIRMED`: source runtime `de16d351e634fb7bfadb3617e1edd30b7cef9759` dan ingress source `10e4f51a6c63e225e0fad525b76b2da1f61316bb` aktif. E-katalog publik baca-saja, desain kiosk/QR meja diperbarui, release/rollback serta Owner/public/browser/monitor lulus.

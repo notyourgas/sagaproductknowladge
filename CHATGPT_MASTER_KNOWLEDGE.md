@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-24 — Arrow polish KopiSaga aktif
+
+- `CONFIRMED`: UI customer SagaPOS aktif pada source `ddf8b037d60705d9281639b926be8dce0d6d807c`. Panah kartu e-katalog/QR meja dan CTA kiosk kini memakai ikon SVG konsisten dengan ukuran serta posisi yang terkontrol; verifikasi live mobile dan monitor lulus.
+- Perubahan ini visual-only: katalog tetap baca-saja, QR meja/kiosk tetap simulator, schema 34 migrasi dan SagaDev Gateway existing tidak berubah, serta tidak ada payment intent. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## Update 2026-09-24 — KopiSaga P0–P2 dan e-katalog publik
 
 - `CONFIRMED`: UI kiosk, e-katalog, dan QR meja telah dideploy dari source `de16d351e634fb7bfadb3617e1edd30b7cef9759`; ingress `10e4f51a6c63e225e0fad525b76b2da1f61316bb` membuat `https://sagapos.site/menu` HTTP 200 publik, hanya katalog baca-saja. Bukti Owner/public/browser desktop-mobile/monitor lulus.

@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Residual setelah arrow polish KopiSaga
+
+- `CONFIRMED`: arrow polish source `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif dan lolos browser/monitor; tidak ada blocker visual terdeteksi pada viewport mobile live.
+- `NEEDS CONFIRMATION`: UAT kiosk fisik 32 inci dan dua ponsel nyata, konten/foto final berikut hak pakai, independent offsite restore, serta business signoff tetap dibutuhkan. `BUSINESS_READY=false`.
+
 ## 2026-09-24 — Residual setelah rilis KopiSaga P0–P2
 
 - `CONFIRMED`: e-katalog publik baca-saja aktif dan monitor lulus; kiosk/QR meja tetap simulator, gateway existing tetap `GATEWAY`, tanpa payment intent baru. Entri 2026-09-23 yang menyebut `/menu` 401 adalah histori pra-rilis.

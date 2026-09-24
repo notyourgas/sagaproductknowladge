@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Arrow-affordance polish production
+
+Commit `ddf8b037d60705d9281639b926be8dce0d6d807c` mengganti simbol panah teks yang tipis/tidak konsisten pada kartu e-katalog dan QR meja dengan SVG berukuran tetap, garis 2.25 px, wadah bulat 32 px, dan optical offset 1 px. CTA kiosk memakai ikon 24 px dalam wadah 48–54 px. Ikon dekoratif tetap `aria-hidden`, sementara nama aksi tetap berada pada kontrol induk.
+
+Focused browser/accessibility 7/7 dan static/type 615 modul lulus. Artifact immutable, backup terenkripsi/restore disposable, code-only candidate-current-candidate rehearsal, activation, Owner/public smoke, browser smoke tujuh surface, live mobile geometry, dan monitor lulus. Production beralih dari `de16d351e634fb7bfadb3617e1edd30b7cef9759` ke `ddf8b037d60705d9281639b926be8dce0d6d807c`; rollback menunjuk release sebelumnya. Database, ingress, payment boundary, dan capability katalog tidak berubah. `BUSINESS_READY=false` karena UAT perangkat fisik, konten/foto final, signoff bisnis, dan independent offsite restore tetap terbuka.
+
 ## 2026-09-24 — Rilis KopiSaga P0–P2 dan batas penerimaan
 
 Runtime production memakai source `de16d351e634fb7bfadb3617e1edd30b7cef9759`; ingress publik memakai source `10e4f51a6c63e225e0fad525b76b2da1f61316bb`. E-katalog di `https://sagapos.site/menu` telah lulus public smoke dan browser desktop/mobile: kartu produk tampil, gambar/logo berhasil ter-decode, tidak ada overflow horizontal maupun error browser. Kiosk dan QR meja memakai desain yang diselaraskan tetapi tetap simulator. Release mempertahankan mode SagaDev Gateway existing, tidak mengaktifkan commerce dari katalog, dan tidak membuat payment intent.

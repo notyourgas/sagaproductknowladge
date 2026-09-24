@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — Affordance panah KopiSaga dipoles di production
+
+- `CONFIRMED`: source `ddf8b037d60705d9281639b926be8dce0d6d807c` aktif dengan rollback `de16d351e634fb7bfadb3617e1edd30b7cef9759`. Panah teks pada kartu e-katalog/QR meja diganti SVG konsisten dalam wadah bulat 32 px; panah CTA kiosk memakai geometri dan optical centering yang sama pada ukuran lebih besar.
+- Browser mobile live membuktikan 22 kartu, ikon 32×32 px, tanpa overflow, request gagal, atau error browser. Focused UI/aksesibilitas 7/7, static/type 615 modul, recovery rehearsal, Owner smoke, browser smoke, dan monitor lulus. Schema tetap 34 migrasi, gateway existing tetap `GATEWAY`, QR meja/kiosk tetap simulator, dan tidak ada payment intent. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — KopiSaga P0–P2 aktif, e-katalog publik baca-saja
 
 - `CONFIRMED`: source UI/UX `de16d351e634fb7bfadb3617e1edd30b7cef9759` aktif di production; ingress katalog dari source `10e4f51a6c63e225e0fad525b76b2da1f61316bb` aktif. Rollback runtime `9c364ff2359940f73d52985fd752101d5d94b84b` tersedia. E-katalog `https://sagapos.site/menu` kini HTTP 200 publik, responsif di desktop/mobile, memakai palet KopiSaga dan Plus Jakarta Sans.
