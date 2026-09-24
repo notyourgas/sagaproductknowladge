@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — KopiSaga warm UI production
+
+- Status `partially accepted`: exact source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`, rollback `1d062bf95869f33c8816f49263f80d1315ad5649`, visual/motion, Owner auth, live desktop/mobile, backup/restore, dan monitor `CONFIRMED`. Static/type 616; relevant regression 86 pass/0 fail/1 Firefox host skip.
+- Production berubah code-only; schema 34 migrasi dan gateway existing tetap. Katalog read-only, QR meja/kiosk simulator, tanpa payment intent acceptance. Physical kiosk/mobile UAT, content approval, independent offsite restore, serta business signoff `NEEDS CONFIRMATION`. `SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS source integrasi, rilis ditahan
 
 - Status `partially accepted`: source `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push; quote payment-method-bound dan stream QR meja kedaluwarsa `CONFIRMED` oleh full test exit 0, integrasi 14/14, check/type 616, audit production 0.

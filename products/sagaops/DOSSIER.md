@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Rilis warm UI, motion, dan kontras final
+
+Source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` menyatukan karakter visual customer-facing KopiSaga pada Kiosk, e-katalog, dan QR menu meja. Kategori berubah dari pill/hitam menjadi rounded 12–14 px dengan selected state coklat `#5b3826`; CTA memakai espresso/cream, kartu dan whitespace disesuaikan untuk portrait kiosk, desktop, serta mobile 390 px. Animasi scroll/reveal/dialog menggunakan opacity/transform berdurasi singkat dan menghormati `prefers-reduced-motion`. Kontras teks kecil nominal tunai pada state terpilih ditutup oleh regression browser khusus.
+
+Ingress publik kini mengirim theme QR menu sebagai aset GET-only tanpa membuka route operator atau kemampuan mutasi katalog. Validasi akhir mencakup check/type 616 modul, 86 relevant pass/0 fail/1 Firefox host skip, live desktop/mobile HTTP 200, active brown state, image decode, no horizontal overflow, Owner `production_owner` smoke, signed-table bootstrap demo tanpa transaksi, fresh encrypted backup/disposable restore, dan monitor production. Runtime beralih dari `1d062bf95869f33c8816f49263f80d1315ad5649` ke `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; rollback menunjuk release sebelumnya, schema 34 migrasi unchanged.
+
+Perubahan ini visual-only dan tidak menambah fitur. Katalog tetap preview/read-only; QR meja memakai `QRIS_DEMO`/`SIMULATOR_ONLY`; kiosk tetap boundary autentikasi dan memerlukan UAT perangkat fisik. Gateway existing tidak diubah dan acceptance membuat nol payment intent. Independent offsite restore, content/photo approval, physical-device UAT, serta business signoff tetap `NEEDS CONFIRMATION`; `BUSINESS_READY=false`.
+
 ## 2026-09-24 — Batas source baru dan rilis
 
 Source ter-push `0f7940ed6d4159db56bfc78109964ff65bd08679` berbasis tepat pada active `ddf8b037d60705d9281639b926be8dce0d6d807c`. Kontrak quote sekarang memasukkan metode bayar untuk mencegah quote QRIS dipakai ulang sebagai cash meskipun nominal cocok. Kiosk dan QR meja berbagi order/KDS demo; stream status QR meja yang kedaluwarsa ditutup server. Fixture diskon 99% adalah sintetis development/test, bukan kampanye production.

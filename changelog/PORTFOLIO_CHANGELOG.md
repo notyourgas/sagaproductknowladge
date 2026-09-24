@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-24 — KopiSaga warm UI production
+
+- `CONFIRMED`: SagaPOS source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` aktif dengan rollback `1d062bf95869f33c8816f49263f80d1315ad5649`. Kiosk, e-katalog, dan QR menu meja kini memakai palet espresso/cream, kategori rounded dengan state coklat, spacing responsif, dan microinteraction singkat/reduced-motion.
+- Live desktop/mobile, Owner smoke, backup/restore, dan monitor lulus. Tidak ada fitur/schema baru; katalog tetap read-only dan kiosk/QR meja simulator. Physical-device UAT, offsite restore, content approval, serta business signoff masih terbuka; `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Kandidat Kiosk/Order Meja/KDS belum deploy
 
 - `CONFIRMED`: source SagaPOS `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push dengan quote terikat metode bayar dan penutupan stream QR meja kedaluwarsa. Fixture QRIS 99% tetap sintetis development/test. Regresi penuh lokal exit 0 dan integrasi 14/14.

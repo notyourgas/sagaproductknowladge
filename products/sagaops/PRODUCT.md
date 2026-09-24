@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — KopiSaga warm UI dan motion aktif di production
+
+- `CONFIRMED`: source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` aktif dengan rollback `1d062bf95869f33c8816f49263f80d1315ad5649`. Kiosk, e-katalog, dan QR menu meja memakai sistem visual kopi hangat: tombol kategori rounded 12–14 px, state aktif coklat `#5b3826`, CTA non-hitam, hierarchy/spacing responsif, serta microinteraction singkat dengan reduced-motion fallback.
+- E-katalog publik dan stylesheet QR menu sama-sama tersedia melalui ingress GET-only. Live desktop 1440 px dan mobile 390 px lulus HTTP 200, image decode, tanpa overflow horizontal atau page error. Relevant regression 86 pass/0 fail/1 Firefox host skip; static/type 616 modul, Owner production smoke, encrypted backup/disposable restore, dan monitor production lulus.
+- Tidak ada fitur, schema, atau capability commerce baru. Katalog tetap read-only; QR meja dan kiosk tetap demo/simulator, gateway existing tetap `GATEWAY`, dan tidak ada payment intent pada acceptance. UAT kiosk fisik 32 inci, dua perangkat mobile nyata, konten/foto final, independent offsite restore, dan signoff bisnis masih terbuka. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Kandidat integrasi Kiosk/QR meja/KDS tetap source-only
 
 - `CONFIRMED`: branch `codex/sagapos-promo-method-binding-20260924`, source `0f7940ed6d4159db56bfc78109964ff65bd08679`, sudah ter-push. Quote Kiosk dan QR meja kini mengikat pilihan metode pembayaran; stream status QR meja kedaluwarsa ditutup oleh server. Fixture diskon QRIS 99% hanya untuk development/test, bukan promo atau pembayaran riil production.

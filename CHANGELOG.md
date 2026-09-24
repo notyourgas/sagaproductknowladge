@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi KopiSaga warm UI production
+
+- `CONFIRMED`: SagaPOS source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` aktif dengan warm customer UI, rounded brown category state, responsive spacing, dan seamless reduced-motion-aware interaction pada Kiosk, e-katalog, serta QR menu meja. Alasan: memperbaiki hierarchy, konsistensi brand, touch affordance, dan kontras tanpa menambah fitur.
+- Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master knowledge, GAPS, dan SYNC_STATUS. Production berubah code-only; schema/gateway/capability tetap. Physical-device UAT, konten final, independent offsite restore, dan business signoff `NEEDS CONFIRMATION`; `BUSINESS_READY=false`. Klasifikasi delivery teknis `CONFIRMED`; knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi kandidat integrasi SagaPOS source-only
 
 - `CONFIRMED`: source `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push dengan quote terikat metode bayar dan stream QR meja kedaluwarsa yang ditutup server. Alasan: mencegah replay lintas metode dan status stale; fixture QRIS 99% tetap hanya development/test.

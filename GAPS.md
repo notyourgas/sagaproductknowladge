@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Residual setelah warm UI KopiSaga
+
+- `CONFIRMED`: warm UI source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` aktif; live desktop/mobile tidak memiliki overflow, broken visible image, atau page error. Owner smoke, backup/restore, dan monitor lulus.
+- `NEEDS CONFIRMATION`: acceptance visual/human pada kiosk fisik 32 inci, dua perangkat mobile nyata untuk e-menu/QR meja, konten dan hak pakai foto final, independent offsite restore terbaru, serta signoff operasional/bisnis. QR meja dan kiosk tetap simulator; `BUSINESS_READY=false`.
+
 ## 2026-09-24 — Gap rilis kandidat integrasi
 
 - `CONFIRMED`: source `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push dengan regresi lokal exit 0, tetapi production tetap pada release sebelumnya. Owner auth/katalog/CSRF smoke lulus tanpa transaksi; ini bukan UAT order sampai KDS di production.

@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Warm UI dan seamless motion aktif
+
+- Deployed source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`, rollback `1d062bf95869f33c8816f49263f80d1315ad5649`: menyelaraskan Kiosk, e-katalog, dan QR menu meja ke palet kopi hangat, kategori rounded dengan selected coklat, CTA non-hitam, spacing responsif, serta microinteraction singkat/reduced-motion.
+- QR theme asset dibuka lewat ingress GET-only tanpa fitur atau commerce capability baru. Static/type 616; relevant 86 pass/0 fail/1 Firefox host skip; Owner/public/live viewport, backup/restore, dan monitor lulus. Schema tetap 34 migrasi, gateway existing dipertahankan, QR meja/kiosk simulator, `BUSINESS_READY=false`.
+
 ## 2026-09-24 — Quote metode bayar dan stream QR kedaluwarsa, source-only
 
 - Source `0f7940ed6d4159db56bfc78109964ff65bd08679` ter-push: quote Kiosk/QR meja terikat metode pembayaran, dan stream status QR meja yang kedaluwarsa ditutup server. Fixture QRIS diskon 99% dibatasi development/test; tidak ada promo atau pembayaran riil baru di production.
