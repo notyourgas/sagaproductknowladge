@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-25 — SagaPOS pilot QRIS belum live
+
+- `CONFIRMED`: source `365509b46d8ad52a690979971524acb47965473d` ter-push dan mengikat order paid, kuota `PUBLIC99`, outbox serta KDS dalam satu transaksi; regresi lokal 1.665 pass/0 fail/73 skip. Ini source-only, bukan checkout publik atau aktivasi promo.
+- `NEEDS CONFIRMATION`: kontrak dan signed status Gateway publik, native PostgreSQL dua writer, endpoint bisnis, persetujuan Owner/Finance efektif, UAT fisik/partner, serta release/recovery gates. Kiosk dan QR meja masih simulator; pembayaran QRIS asli 99% belum dapat dicoba, `BUSINESS_READY=false`.
+
 ## Update 2026-09-24 — Guard settlement SagaPOS belum aktif di production
 
 - `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` ter-push dengan lock pembayaran dan replay event Gateway yang terikat pembayaran/outlet; QRIS tidak dapat melunasi cash. Tes lokal 1.659 pass/0 fail/73 skip, tetapi native PostgreSQL dua writer belum dibuktikan. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`.

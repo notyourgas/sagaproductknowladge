@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-25 — Pilot QRIS publik: transaksi atomik source-only
+
+- `CONFIRMED`: source `365509b46d8ad52a690979971524acb47965473d` ter-push pada `codex/sagapos-public-pilot-20260924`. Penulisan `PAID` yang sudah terverifikasi Gateway kini dapat merekonsiliasi kuota `PUBLIC99`, outbox, dan satu tiket KDS dalam satu transaksi Postgres. Migrasi kanal `table` additive belum dijalankan di production. Sebelumnya kuota dan order writer belum terikat atomik.
+- Regresi penuh lokal 1.665 pass/0 fail/73 skip, check/type 627 modul dan audit dependency production 0. Validasi NTFS mengisolasi kegagalan graft lingkungan; native PostgreSQL dua writer, kontrak/signed status Gateway publik, endpoint checkout, Owner/Finance, UAT partner, dan release gate masih terbuka. Production tidak berubah; Kiosk/Order Meja tetap simulator, QRIS 99% publik belum aktif. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Konfirmasi paid Gateway lebih tahan replay (source-only)
 
 - `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` ter-push. Konfirmasi QRIS Gateway kini mengunci pembayaran sebelum membaca event, menolak event yang dipakai ulang untuk pembayaran lain, dan tidak dapat melunasi metode cash. Dalam tes lokal, konfirmasi paralel menghasilkan satu outbox paid dan satu tiket KDS.

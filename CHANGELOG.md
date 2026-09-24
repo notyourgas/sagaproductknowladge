@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-25 — SagaPOS pilot QRIS source-only
+
+- `CONFIRMED`: source `157c962106e7125a2977e3c1dcb3ecffc0754589` dan `365509b46d8ad52a690979971524acb47965473d` mengikat kuota publik dengan paid order/outbox/KDS dalam satu transaksi dan menambah migrasi kanal `table` additive. Sebab: mencegah hitungan promo dan tiket dapur divergen. Area/file: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Full lokal 1.665 pass/0 fail/73 skip, check/type 627, dependency production 0.
+- Production tidak berubah; Gateway publik, native multi-writer, UAT partner dan release/recovery belum lulus. Kiosk/QR meja simulator, QRIS 99% publik OFF. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi guard konfirmasi Gateway SagaPOS
 
 - `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` mengunci paid confirmation dan mengikat replay ke pembayaran/outlet serta metode QRIS. Alasan: satu pembayaran tidak boleh membuat outbox/KDS ganda atau melunasi cash. Area/file: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Focused 52/52, full 1.659 pass/0 fail/73 skip, static/type 627, audit production 0.

@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-25 — Sprint 1–3 jalur pilot Kiosk dan satu QR meja
+
+Source `157c962106e7125a2977e3c1dcb3ecffc0754589` mengikat replay kuota ke fakta Gateway terverifikasi; source lanjutan `365509b46d8ad52a690979971524acb47965473d` menempatkan rekonsiliasi kuota, pembayaran, event, outbox, dan tiket KDS dalam satu transaksi. Uji disposable mencakup replay satu tiket, mismatch kanal/harga, dan rollback bersama saat fault injection. Migrasi ke-36 menambah kanal `table` pada order bisnis tanpa mengubah RLS. Tidak ada endpoint publik yang memanggil writer ini; input browser tidak boleh menyatakan dirinya `PAID`.
+
+Graft build gagal di drive tanpa ownership/line-ending konsisten; clean NTFS dengan dependensi dan konfigurasi Git LF lulus 3/3. Regresi akhir 1.665 pass/0 fail/73 skip, check/type 627, audit production 0. UAT demo Kiosk/QR meja dan browser lokal tidak membuktikan Gateway publik atau perangkat partner. Satu QR meja uji tetap demo; DNS hostname khusus, native PostgreSQL dua writer, Gateway signed-status/create-intent, terminal failure/expiry, checkout bisnis, Finance approval, backup/recovery kandidat dan authenticated UAT masih terbuka. Tidak ada deploy, payment mutation, atau klaim `BUSINESS_READY`.
+
 ## 2026-09-24 — Penguncian konfirmasi Gateway pada order durable
 
 Source `185fa53d81b5ac99b827373521fd86376687232d` memindahkan pembacaan inbox event ke setelah lock baris pembayaran. Boundary server memeriksa organization/outlet, metode QRIS dinamis, provider Gateway dan ikatan event ke payment/outlet asal sebelum mengembalikan replay. Dalam tes lokal, dua konfirmasi bersamaan hanya menulis satu outbox paid dan satu tiket KDS; event kedua tetap dapat diaudit tanpa menggandakan fulfillment. Ini bukan verifikasi native PostgreSQL dua writer atau validasi signature provider di boundary publik. Full regression 1.659 pass/0 fail/73 skip; tidak ada migrasi atau deploy. Gateway publik, approval Finance, batas subsidi tambahan, callback/settlement, report UI dan UAT partner masih terbuka.

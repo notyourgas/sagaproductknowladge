@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-25 — Rekonsiliasi paid publik satu transaksi, belum deploy
+
+- `CONFIRMED`: source `157c962106e7125a2977e3c1dcb3ecffc0754589` dan `365509b46d8ad52a690979971524acb47965473d` menutup celah kuota terpisah dari order paid/outbox/KDS, mengikat kanal dan quote, serta menambah migrasi kanal `table` additive. Area: SagaPOS database/order writer, tes dan kontrak rilis. Sebab: replay, mismatch, atau fault tidak boleh membuat hitungan sukses dan tiket dapur berbeda.
+- Full lokal 1.665 pass/0 fail/73 skip; check/type 627; audit dependency production 0. NTFS clean graft 3/3. Source pushed, production tidak berubah. Gateway publik, native multi-writer, UAT partner dan release gates belum lulus; QRIS 99% Kiosk/QR meja tetap OFF/simulator. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Konfirmasi paid Gateway dikunci dan replay diikat ke pembayaran
 
 - `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` memperbaiki risiko dua konfirmasi bersamaan membuat outbox/KDS ganda; replay salah payment/outlet dan konfirmasi QRIS ke cash ditolak. Alasan: status `PAID` dan tiket dapur hanya boleh berasal dari satu transaksi server-authoritative.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-25 — SagaPOS pilot QRIS source-only
+
+- `CONFIRMED`: source `365509b46d8ad52a690979971524acb47965473d` menggabungkan fakta paid terverifikasi, kuota publik, outbox, dan KDS secara atomik; regresi 1.665 pass/0 fail/73 skip. Ini belum terhubung ke Gateway publik atau runtime production. Kiosk/QR meja tetap simulator, promo 99% belum aktif, `BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS Gateway paid convergence source-only
 
 - `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` mengunci konfirmasi paid dan menolak replay lintas pembayaran/metode cash. Regresi penuh 1.659 pass/0 fail/73 skip; production dan mode Kiosk/QR meja tidak berubah. QRIS publik 99% belum tersedia; `BUSINESS_READY=false`.

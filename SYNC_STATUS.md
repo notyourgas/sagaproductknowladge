@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-25 — SagaPOS pilot QRIS source-only
+
+- Status `partially accepted`: exact source `365509b46d8ad52a690979971524acb47965473d` ter-push. Graft NTFS 3/3, full lokal 1.665 pass/0 fail/73 skip, check/type 627, audit production 0. Kuota dan paid writer kini atomik pada tes disposable; production tidak berubah.
+- Gateway publik, native dua-writer, checkout endpoint, UAT partner dan release/recovery `NEEDS CONFIRMATION`. Kiosk/QR meja masih simulator, promo 99% OFF; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Guard konfirmasi Gateway SagaPOS source-only
 
 - Status `partially accepted`: exact source `185fa53d81b5ac99b827373521fd86376687232d` ter-push, focused 52/52, full 1.659 pass/0 fail/73 skip, static/type 627, audit production 0. Perubahan hanya source; production active/rollback terakhir tetap perlu verifikasi live sebelum klaim rilis.

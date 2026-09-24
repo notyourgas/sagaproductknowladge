@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-25 — Residual pilot QRIS Kiosk/QR meja
+
+- `CONFIRMED`: source `365509b46d8ad52a690979971524acb47965473d` ter-push; disposable transaction menguji paid+kuota+outbox+KDS atomik dan rollback bersama. Full lokal 1.665 pass/0 fail/73 skip. Tidak ada deployment atau transaksi nyata.
+- `NEEDS CONFIRMATION`: Gateway publik dan signed-status/create-intent yang terpisah dari canary privat, native dua-writer PostgreSQL, terminal failure/expiry serta settlement, checkout bisnis Kiosk/TABLE, penerimaan Owner/Finance, UAT partner/satu QR meja fisik, DNS hostname, dan gate backup/recovery/release. Jangan mempromosikan promo 99% atau status `BUSINESS_READY` dari simulator.
+
 ## 2026-09-24 — Gap setelah guard konfirmasi Gateway
 
 - `CONFIRMED`: source `185fa53d81b5ac99b827373521fd86376687232d` menutup replay lintas payment dan metode cash serta menguji satu outbox/KDS pada konkurensi lokal. Ini belum rilis produksi.
