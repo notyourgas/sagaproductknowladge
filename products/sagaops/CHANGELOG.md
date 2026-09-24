@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Proyeksi laporan QRIS Gateway publik ter-push, belum live
+
+- `CONFIRMED`: source `94979f802893b47dba7c2d6502999079d0d82842` menambah laporan read-only dengan pemisahan penjualan SagaPOS, uang Gateway, diskon, fee, expected net, payout dan exception rekonsiliasi; mismatch payout tetap terlihat. Alasan: laporan Owner/Finance tidak boleh menganggap status bayar atau settlement yang belum terbukti sebagai penjualan pasti.
+- Tes laporan 13/13, full lokal 1.656 pass/0 fail/73 skip, static/type 627, audit dependency production 0. Production tidak berubah: active/rollback `8dc83caa0e211cd235415fe8f267712a23117171` / `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; Kiosk/Order Meja simulator. Gateway publik, signature/snapshot upstream, aggregate/outbox/KDS bisnis, report UI, Finance/Owner approval dan release gate belum selesai. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Replay kuota setelah promo tutup diperbaiki di source
 
 - `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` membuat retry idempotent mengembalikan reservasi lama walau kampanye ditutup, sementara key berubah payload konflik dan permintaan baru tetap ditolak. Alasan: hasil reservasi durable tidak boleh hilang karena retry setelah penutupan. Regresi akhir 1.643 pass/0 fail/73 skip; check/type 625, dependency production 0. Run awal satu timeout browser lalu isolasi/rerun penuh lulus.

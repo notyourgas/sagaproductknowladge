@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi kontrak laporan QRIS SagaPOS
+
+- `CONFIRMED`: SagaPOS source `94979f802893b47dba7c2d6502999079d0d82842` ter-push dengan proyeksi read-only, pemisahan sales/Gateway paid/fee/payout, dan exception untuk mismatch. Alasan: rekonsiliasi SagaDev Gateway tidak boleh menyamarkan status uang belum terbukti. Area/file: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS.
+- Production tidak berubah; Kiosk/Order Meja simulator, tanpa pembayaran QRIS publik atau dashboard laporan live. Full lokal 1.656 pass/0 fail/73 skip, static/type 627, dependency production 0. Kontrak Gateway publik, approval Finance/Owner, aggregate/KDS bisnis, UAT dan release gate tetap terbuka; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi replay kuota publik SagaPOS
 
 - `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` ter-push; replay reservasi yang identik tetap stabil setelah penutupan promo, sedangkan permintaan baru tetap ditolak. Alasan: konsistensi idempotency pada pilot Kiosk/QR meja. Area/file: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Regresi akhir 1.643 pass/0 fail/73 skip. Production tidak berubah; gateway publik, order/KDS bisnis, approval Finance dan gate rilis masih terbuka. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Knowledge commit `main HEAD`.

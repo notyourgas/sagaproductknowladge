@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-24 — SagaPOS QRIS Gateway reporting source-only
+
+- `CONFIRMED`: source `94979f802893b47dba7c2d6502999079d0d82842` memisahkan kontrak laporan penjualan, pembayaran Gateway dan payout serta menampilkan exception. Ini proyeksi teruji, bukan integrasi Gateway/checkout live. Production tidak berubah; Kiosk/QR meja simulator dan promo publik 99% OFF. `BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS replay kuota publik source-only
 
 - `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` menjaga retry reservasi Kiosk/QR meja tetap idempotent sesudah kampanye ditutup; permintaan baru tetap fail-closed. Full regression akhir 1.643 pass/0 fail/73 skip. Tidak ada deploy atau transaksi nyata; kedua surface masih simulator, `BUSINESS_READY=false`.

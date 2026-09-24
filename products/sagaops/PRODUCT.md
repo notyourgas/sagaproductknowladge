@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — Rancangan laporan QRIS SagaDev Gateway source-only
+
+- `CONFIRMED`: source `94979f802893b47dba7c2d6502999079d0d82842` ter-push, menambah proyeksi laporan baca-saja untuk calon pilot `PUBLIC99` Kiosk/Order Meja. Laporan memisahkan penjualan SagaPOS, pembayaran terverifikasi Gateway, subsidi/diskon, fee, expected net, dan payout; uang tidak cocok, bukti ganda, serta selisih payout tampil sebagai exception. Nilai settlement yang belum diketahui tidak diisi nol.
+- Regresi lokal final 1.656 pass/0 fail/73 skip, static/type 627 modul, tes laporan 13/13, dependency production 0 temuan. Modul belum terhubung ke Gateway, query production, API atau dashboard; metadata bukti harus diverifikasi upstream. Production tidak berubah, Kiosk/Order Meja tetap simulator, dan promo QRIS nyata belum aktif. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Replay reservasi QRIS publik aman setelah kampanye tutup
 
 - `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` ter-push pada `codex/sagapos-public-pilot-20260924`. Retry dengan idempotency key dan payload sama kini mengembalikan reservasi yang sudah ada meski jendela promo tutup atau kill switch aktif; key sama dengan payload berbeda tetap ditolak dan percobaan baru tetap diblokir. Ini hanya ledger kuota, bukan payment intent atau pembayaran.

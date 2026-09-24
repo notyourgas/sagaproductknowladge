@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Kontrak laporan QRIS lintas SagaPOS dan SagaDev Gateway
+
+Source `94979f802893b47dba7c2d6502999079d0d82842` menambah proyeksi finansial read-only dan rencana empat wave: kontrak produk Gateway/Finance, penulisan aggregate dan outbox Postgres, laporan Owner/rekonsiliasi, lalu rilis dan pilot terjaga. SagaPOS berwenang atas quote, promo, order dan KDS; Gateway pusat berwenang atas intent QRIS, status provider, fee dan settlement. Jangan mencampur fakta SagaPOS dengan ledger booking SagaBook. QR identitas meja tetap terpisah dari QRIS dinamis per order.
+
+Proyeksi menghitung gross pelanggan, diskon merchant, fee, expected net dan payout secara terpisah. Orphan Gateway paid, POS-only paid, multi-paid intent, amount mismatch, pembayaran terlambat, refund/dispute dan payout mismatch masuk exception; fee/payout tanpa bukti menjadi `belum terverifikasi`, bukan nol. Scope organization/outlet wajib disuplai oleh caller terotorisasi; validasi signature Gateway dan snapshot cutoff konsisten tetap tanggung jawab upstream, bukan kemampuan modul ini. Tes final 1.656 pass/0 fail/73 skip; source saja, belum ada report live, transaksi nyata atau deploy. Batas keranjang/subsidi tambahan masih `PROPOSAL`; Gateway publik, Finance, native multi-writer, Owner UI, UAT partner dan release gate terbuka.
+
 ## 2026-09-24 — Replay reservasi kuota tetap deterministik setelah penutupan
 
 Source `9a674661b37962a656c1c40dd8be9696089a9223` memindahkan pemeriksaan replay ke dalam transaksi/lock kampanye sebelum evaluasi jendela dan kill switch. Receipt lama untuk key dan request yang identik tetap `RESERVED` dengan `paymentMutationAllowed:false`; request berbeda dengan key sama konflik; reservasi baru setelah tutup tetap ditolak. Ini mencegah retry jaringan mengubah hasil yang sudah tersimpan tanpa melonggarkan penutupan promo. Tidak ada migrasi baru atau mutasi provider.

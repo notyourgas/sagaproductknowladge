@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Gap laporan dan pembayaran QRIS publik
+
+- `CONFIRMED`: source `94979f802893b47dba7c2d6502999079d0d82842` menyediakan proyeksi read-only dan exception finansial; 1.656 tes lulus, 0 gagal, 73 skip. Belum ada data Gateway live yang sah masuk ke proyeksi.
+- `NEEDS CONFIRMATION`: keputusan Owner atas batas keranjang/subsidi tambahan, kontrak Gateway publik dan approval Finance, signature/snapshot cutoff, native multi-writer, paid convergence ke aggregate/outbox/KDS, Owner report API/UI, UAT partner serta gate deployment/recovery. Jangan memakai canary privat sebagai bukti QRIS publik atau mengklaim laporan terpasang.
+
 ## 2026-09-24 — Gap setelah perbaikan replay kuota
 
 - `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` menutup bug retry reservasi lama ketika promo berakhir. Regresi akhir lulus, tetapi tidak membuktikan pembayaran nyata.
