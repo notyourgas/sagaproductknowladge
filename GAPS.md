@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Residual setelah source kuota publik
+
+- `CONFIRMED`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` menutup gap ledger reservasi atomik **di source**; migrasi belum diterapkan di production dan tabel tetap kosong/nonaktif menurut kontrak. Full lokal lulus 1.642/0; PGlite single-connection bukan uji native multi-writer.
+- `NEEDS CONFIRMATION`: penerimaan Owner atas cap keranjang/subsidi, approval Finance, kontrak gateway publik terpisah dari canary privat, callback bertanda tangan dan reconciler exactly-once, penulisan aggregate/outbox/KDS bisnis lintas Kiosk/TABLE, UAT fisik/native PostgreSQL, dan seluruh gate release kandidat baru. Tidak boleh mengaktifkan pembayaran atau mengklaim `STAGING_READY`/`BUSINESS_READY` dari source-only ini.
+
 ## 2026-09-24 — Gap pilot QRIS publik setelah keputusan batas Owner
 
 - `CONFIRMED`: Owner menetapkan maksimum pembayaran pelanggan Rp100.000, 100 transaksi, dan penutupan 1 Oktober 2026 23.59 WIB. Source guard terpisah `a7a445254f64e86c7207c0af8803246b891f0532` sudah ter-push; produksi tidak berubah.

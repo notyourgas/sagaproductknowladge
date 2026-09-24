@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Reservasi kuota publik Postgres ter-push, belum deploy
+
+- `CONFIRMED`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` pada `codex/sagapos-public-pilot-20260924` menambah ledger kuota atomik dan audit tertaut outlet untuk `PUBLIC99` Kiosk/TABLE. Migrasi ke-35 masih source-only, tanpa seed/aktivasi kampanye, payment mutation atau transaksi nyata. Full lokal 1.642 pass/0 fail/73 skip, static/type 625, dependency 0; native multi-writer dan release gate belum terbukti.
+- Production active/rollback tetap `8dc83caa0e211cd235415fe8f267712a23117171` / `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. E-katalog baca-saja; Kiosk/Order Meja simulator. Batas keranjang/subsidi `PROPOSAL`; gateway publik, callback/reconciliation, aggregate/outbox/KDS bisnis, approval Owner/Finance dan UAT/recovery `NEEDS CONFIRMATION`. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Batas promo QRIS publik di source, pembayaran belum aktif
 
 - `CONFIRMED`: source `a7a445254f64e86c7207c0af8803246b891f0532` ter-push pada `codex/sagapos-public-pilot-20260924`; guard `PUBLIC99` terpisah dari canary privat dan fail-closed, dengan batas yang diputuskan Andreas Rp100.000 dibayar per transaksi, 100 transaksi, sampai 1 Oktober 23.59 WIB.

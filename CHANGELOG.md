@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi kuota pilot QRIS publik SagaPOS
+
+- `CONFIRMED`: SagaPOS source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` ter-push dengan migrasi/reservasi kuota Postgres lintas Kiosk/QR meja yang kosong dan nonaktif. Alasan: memberi batas durable lintas channel tanpa membuka uang nyata. Cap keranjang/subsidi tambahan tetap `PROPOSAL` untuk Owner.
+- Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Production tidak berubah; native multi-writer, gateway publik, callback, order aggregate/KDS, approval Finance/Owner dan release gate masih terbuka. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi batas calon pilot QRIS publik SagaPOS
 
 - `CONFIRMED`: keputusan Andreas untuk batas pembayaran Rp100.000/transaksi, 100 transaksi, akhir 1 Oktober 23.59 WIB; source guard `a7a445254f64e86c7207c0af8803246b891f0532` ter-push. `PROPOSAL`: batas keranjang/subsidi tambahan. Alasan: menghindari diskon publik tanpa plafon subsidi sambil memisahkan dari canary privat.

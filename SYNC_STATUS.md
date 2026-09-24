@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — Kuota QRIS publik SagaPOS source-only
+
+- Status `partially accepted`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` ter-push, migrasi kuota additive/nonaktif dan tes lokal lulus. Production active/rollback terverifikasi tetap `8dc83caa0e211cd235415fe8f267712a23117171` / `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; gateway existing, Table/Kiosk simulator, tanpa deploy/payment baru.
+- Cap keranjang/subsidi `PROPOSAL`; gateway publik, callback, aggregate/outbox/KDS bisnis, native multi-writer, approval Owner/Finance dan release/UAT `NEEDS CONFIRMATION`. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Keputusan batas pilot publik, source-only
 
 - Status `partially accepted`: batas Owner untuk jumlah yang dibayar Rp100.000, 100 transaksi, dan akhir 1 Oktober 23.59 WIB `CONFIRMED`; source guard `a7a445254f64e86c7207c0af8803246b891f0532` ter-push. Batas keranjang/subsidi tambahan `PROPOSAL`, belum live.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-24 — SagaPOS kuota QRIS publik source-only
+
+- `CONFIRMED`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` menambah reservasi kuota Postgres atomik/audit untuk calon pilot Kiosk dan Order Meja, tanpa mengaktifkan kampanye atau pembayaran. Full lokal 1.642 pass/0 fail/73 skip; native multi-writer dan public gateway/release gate belum selesai. Production dan gateway canary existing tidak berubah; Kiosk/QR meja simulator, `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS batas uji QRIS publik belum aktif
 
 - `CONFIRMED`: source `a7a445254f64e86c7207c0af8803246b891f0532` mengunci rancangan batas pilot publik terpisah dari canary privat: Rp100.000 maksimum pembayaran pelanggan, 100 transaksi, akhir 1 Oktober 23.59 WIB. Tambahan batas keranjang/subsidi adalah `PROPOSAL` konservatif, bukan promo production. Tidak ada pembayaran nyata atau deploy baru; Kiosk/QR meja simulator, `BUSINESS_READY=false`.

@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Reservasi kuota Postgres lintas Kiosk/QR meja (belum live)
+
+Source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` menambah migrasi additive kosong/nonaktif. Satu baris kampanye per outlet dikunci dalam transaksi Postgres untuk serialisasi Kiosk dan TABLE; replay idempotency key, scope order/outlet, snapshot harga server, batas percobaan/gross/discount, dan audit diperiksa atau ditulis atomik. RLS dipaksa, anon/authenticated tanpa grant, dan audit terikat reservasi dengan foreign key gabungan. Reservasi tidak membuat intent QRIS, pembayaran, penjualan, atau tiket KDS. Status gagal/expired/sukses dan rekonsiliasi provider belum dihubungkan; percobaan gagal tetap memakan kuota sebagai keputusan konservatif.
+
+Tes full lokal 1.642 pass, 0 fail, 73 skip; static/type 625 dan audit dependency production 0. Tes PGlite satu koneksi bukan bukti race multi-proses native PostgreSQL. Batas keranjang/subsidi source masih `PROPOSAL` sebelum aktivasi; public gateway contract, approval Owner/Finance, UAT dua channel, artifact/recovery/release gate tetap terbuka. Runtime production tidak berubah, Kiosk/Table simulator, `BUSINESS_READY=false`.
+
 ## 2026-09-24 — Kontrak calon pilot publik 99%, tanpa aktivasi uang
 
 Andreas mengonfirmasi batas **pembayaran pelanggan** Rp100.000 per transaksi, 100 transaksi, akhir 1 Oktober 2026 23.59 WIB untuk uji publik Kiosk dan QR meja. Batas bayar saja tidak membatasi subsidi: pada diskon 99%, keranjang Rp10 juta masih menyisakan pembayaran Rp100.000. Karena itu source `a7a445254f64e86c7207c0af8803246b891f0532` memakai batas keranjang Rp100.000 sebagai `PROPOSAL` konservatif; maksimal diskon Rp99.000 per order/Rp9,9 juta total, percobaan dan transaksi sukses maksimal 100, total otorisasi pembayaran maksimal Rp10 juta. Batas tambahan ini perlu dipastikan Owner sebelum aktivasi.

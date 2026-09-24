@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-24 — Kuota pilot QRIS publik belum diaktifkan
+
+- `CONFIRMED`: source SagaPOS `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` ter-push dengan ledger reservasi Postgres bersama untuk Kiosk/QR meja, idempotency, batas 100 percobaan, dan audit; migrasi hanya source, tidak dijalankan di production. Batas keranjang/subsidi guard masih `PROPOSAL` untuk Owner. Full lokal 1.642 pass/0 fail/73 skip tidak membuktikan pembayaran asli.
+- Production tetap pada `8dc83caa0e211cd235415fe8f267712a23117171`; `/menu` publik baca-saja, `/order` shell demo dengan QR meja tertanda tangan, Kiosk/QR meja simulator. Gateway publik, callback, business order/KDS, native concurrency, Finance/Owner/release gate masih terbuka; `BUSINESS_READY=false`.
+
 ## Update 2026-09-24 — Uji QRIS publik SagaPOS masih source-only
 
 - `CONFIRMED`: Andreas memilih uji QRIS publik Kiosk/Order Meja diskon 99% dengan maksimum Rp100.000 **yang dibayar pelanggan** per transaksi, 100 transaksi, sampai 1 Oktober 2026 pukul 23.59 WIB. Ini bukan izin melewati release/payment gate.

@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — Kuota pilot QRIS publik source-only
+
+- `CONFIRMED`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` ter-push menambahkan tabel kampanye/reservasi/audit Postgres yang kosong dan nonaktif serta reservasi atomik bersama untuk Kiosk dan Order Meja. Batas guard source: keranjang Rp100.000 sebelum diskon, diskon 99% maksimal Rp99.000/order, pembayaran akhir maksimal Rp100.000, 100 percobaan, dan akhir 1 Oktober 2026. Batas keranjang/subsidi tetap `PROPOSAL` untuk penerimaan Owner; batas pembayaran/jumlah/waktu telah dikonfirmasi.
+- Full regression lokal 1.642 pass/0 fail/73 skip, static/type 625, dependency production 0; uji PGlite belum membuktikan multi-writer native. Gateway publik, callback/reconciliation, penulisan aggregate bisnis TABLE/KIOSK, approval Finance dan release gate belum lengkap. Production tetap active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`, Kiosk/QR meja simulator. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Batas pilot QRIS publik, belum aktif
 
 - `CONFIRMED`: Andreas meminta uji QRIS nyata publik pada Kiosk dan Order Meja dengan diskon 99%, maksimum Rp100.000 **dibayar pelanggan** per transaksi, 100 transaksi, sampai 1 Oktober 2026 pukul 23.59 WIB. Keputusan ini tidak mengaktifkan provider atau memperluas canary privat.
