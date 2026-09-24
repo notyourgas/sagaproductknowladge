@@ -3,6 +3,7 @@
 ## Update 2026-09-24 — Batas aktivasi kandidat SagaPOS
 
 - `CONFIRMED`: kandidat `b1d7bc5b70773389c3c1086c497875d667cbac49` bukan rilis aktif: aktivasi code-only dikembalikan setelah authenticated smoke umum gagal pada payment-containment Phase 8B. Runtime akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. `/menu` publik baca-saja; Order Meja/Kiosk tetap simulator, QRIS 99% hanya development/test, dan gateway existing tidak diubah. `BUSINESS_READY=false`.
+- Source lanjutan `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` memperkeras pembersihan bukti autentikasi smoke yang gagal; belum dideploy dan tidak mengubah keputusan NO-GO untuk gate canary.
 
 ## Update 2026-09-24 — KopiSaga warm UI aktif
 

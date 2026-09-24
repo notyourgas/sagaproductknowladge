@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-24 — SagaPOS hardening gate release
+
+- `CONFIRMED`: source `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` memperkeras lifecycle bukti smoke autentikasi setelah kandidat sebelumnya ditarik kembali. Hanya validasi lokal; runtime production dan mode gateway tidak berubah, Kiosk/Order Meja tetap simulator, `BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS kandidat integrasi gagal admission akhir
 
 - `CONFIRMED`: kandidat gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` ditarik kembali setelah authenticated smoke payment-containment gagal; production kembali ke `8dc83caa0e211cd235415fe8f267712a23117171` dengan rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. Katalog publik tetap baca-saja, Order Meja/Kiosk simulator, gateway existing tetap; `BUSINESS_READY=false`.

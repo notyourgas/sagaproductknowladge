@@ -6,6 +6,8 @@ Source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` memasukkan quote teri
 
 Sesudah aktivasi code-only, authenticated smoke umum gagal pada gate payment-containment Phase 8B yang masih parsial. Rilis segera ditarik kembali melalui recovery gateway-aware dengan backup/restore dan rehearsal segar. Runtime akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; service/database, scoped Owner public-menu smoke, monitor, dan verifier link lulus. Kiosk/Order Meja tetap simulator, gateway existing tidak berubah, tidak ada payment intent baru. Kandidat gagal tidak boleh dipakai ulang tanpa build dan admission segar. `BUSINESS_READY=false`.
 
+Source lanjutan `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` memperbaiki lifecycle bukti autentikasi sementara untuk kegagalan smoke: bukti terikat ke exact source, file yang tidak aman ditolak, dan bukti yang cocok dibersihkan saat gagal. Focused release/security 12/12, check/type 621 modul, audit dependency production 0. Ini source-only; assertion Phase 8B tidak dilonggarkan, tidak ada artifact/deploy baru, dan runtime tetap pada baseline di atas.
+
 ## 2026-09-24 — Rilis warm UI, motion, dan kontras final
 
 Source `1ca225cbe1b219f5667eac1a7508f7c95c178e2a` menyatukan karakter visual customer-facing KopiSaga pada Kiosk, e-katalog, dan QR menu meja. Kategori berubah dari pill/hitam menjadi rounded 12–14 px dengan selected state coklat `#5b3826`; CTA memakai espresso/cream, kartu dan whitespace disesuaikan untuk portrait kiosk, desktop, serta mobile 390 px. Animasi scroll/reveal/dialog menggunakan opacity/transform berdurasi singkat dan menghormati `prefers-reduced-motion`. Kontras teks kecil nominal tunai pada state terpilih ditutup oleh regression browser khusus.

@@ -4,6 +4,7 @@
 
 - `CONFIRMED`: source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49` ter-push, tetapi **bukan runtime aktif**. Kandidat sempat diaktifkan lalu dikembalikan setelah authenticated smoke umum gagal pada payment-containment Phase 8B. Runtime akhir terverifikasi `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
 - E-katalog tetap publik baca-saja; Order Meja/Kiosk tetap simulator dan memerlukan QR meja bertanda tangan untuk order. Gateway canary existing dipertahankan tanpa transaksi atau provider mutation baru. Diskon QRIS 99% hanya fixture development/test. `SOURCE_PUSHED / CANDIDATE_REVERTED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- `CONFIRMED`: source lanjutan `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` memperkeras pembersihan bukti autentikasi sementara ketika smoke rilis gagal. Validasi lokal lulus; source ini juga **belum dideploy** dan tidak menyelesaikan gate canary Phase 8B.
 
 ## 2026-09-24 — KopiSaga warm UI dan motion aktif di production
 

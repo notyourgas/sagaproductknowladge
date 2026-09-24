@@ -4,6 +4,7 @@
 
 - Status `partially accepted`: source gabungan `b1d7bc5b70773389c3c1086c497875d667cbac49`, validasi lokal, artifact immutable, backup/restore, dan rehearsal `CONFIRMED`. Aktivasi sempat terjadi tetapi authenticated smoke payment-containment gagal; kandidat ditarik kembali. Runtime akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; monitor dan scoped Owner smoke lulus.
 - Gap admission baru, UAT fisik/lintas surface, dan business signoff `NEEDS CONFIRMATION`. Kiosk/Order Meja simulator dan diskon 99% tidak production. `SOURCE_PUSHED / CANDIDATE_REVERTED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- Source hardening susulan `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` telah ter-push dan lolos focused 12/12, check/type 621, audit production 0; tidak ada artifact atau aktivasi baru. Gate canary masih gagal dan runtime tetap pada active/rollback di atas.
 
 ## 2026-09-24 — KopiSaga warm UI production
 

@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Hardening smoke rilis, source-only
+
+- `CONFIRMED`: source `bc3b227175482f712bbb5f5e7cd7b9878d6407c1` mengikat bukti autentikasi sementara pada SHA rilis dan membersihkannya saat smoke gagal. Focused test 12/12, check/type 621, audit dependency production 0. Gate pembayaran tidak dilonggarkan; production tetap active `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Kandidat integrasi b1d7bc5 ditarik kembali
 
 - `CONFIRMED`: source `b1d7bc5b70773389c3c1086c497875d667cbac49` ter-push dan sempat diaktifkan setelah artifact, backup/restore, serta rehearsal lulus. Authenticated smoke umum kemudian gagal pada payment-containment Phase 8B; aktivasi dibatalkan. Active akhir `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
