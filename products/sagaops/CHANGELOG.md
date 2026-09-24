@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-24 — Replay kuota setelah promo tutup diperbaiki di source
+
+- `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` membuat retry idempotent mengembalikan reservasi lama walau kampanye ditutup, sementara key berubah payload konflik dan permintaan baru tetap ditolak. Alasan: hasil reservasi durable tidak boleh hilang karena retry setelah penutupan. Regresi akhir 1.643 pass/0 fail/73 skip; check/type 625, dependency production 0. Run awal satu timeout browser lalu isolasi/rerun penuh lulus.
+- Production tidak berubah; tidak ada artifact, migrasi production, gateway publik, pembayaran atau KDS bisnis baru. Owner/Finance, multi-writer, integrasi dan release gate masih terbuka. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Reservasi kuota publik Postgres ter-push, belum deploy
 
 - `CONFIRMED`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` pada `codex/sagapos-public-pilot-20260924` menambah ledger kuota atomik dan audit tertaut outlet untuk `PUBLIC99` Kiosk/TABLE. Migrasi ke-35 masih source-only, tanpa seed/aktivasi kampanye, payment mutation atau transaksi nyata. Full lokal 1.642 pass/0 fail/73 skip, static/type 625, dependency 0; native multi-writer dan release gate belum terbukti.

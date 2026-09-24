@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-24 — Replay kuota SagaPOS source-only
+
+- Status `partially accepted`: source `9a674661b37962a656c1c40dd8be9696089a9223` ter-push, perbaikan replay idempotent lulus regresi akhir 1.643 pass/0 fail/73 skip. Production active/rollback terakhir terverifikasi `8dc83caa0e211cd235415fe8f267712a23117171` / `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; Kiosk/QR meja simulator dan gateway publik tidak diaktifkan.
+- Gateway publik/Finance, order bisnis/KDS, multi-writer, UAT, dan release gate `NEEDS CONFIRMATION`; cap keranjang `PROPOSAL`. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Kuota QRIS publik SagaPOS source-only
 
 - Status `partially accepted`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` ter-push, migrasi kuota additive/nonaktif dan tes lokal lulus. Production active/rollback terverifikasi tetap `8dc83caa0e211cd235415fe8f267712a23117171` / `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; gateway existing, Table/Kiosk simulator, tanpa deploy/payment baru.

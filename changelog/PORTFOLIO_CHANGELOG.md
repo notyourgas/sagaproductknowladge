@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-24 — SagaPOS replay kuota publik source-only
+
+- `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` menjaga retry reservasi Kiosk/QR meja tetap idempotent sesudah kampanye ditutup; permintaan baru tetap fail-closed. Full regression akhir 1.643 pass/0 fail/73 skip. Tidak ada deploy atau transaksi nyata; kedua surface masih simulator, `BUSINESS_READY=false`.
+
 ## 2026-09-24 — SagaPOS kuota QRIS publik source-only
 
 - `CONFIRMED`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` menambah reservasi kuota Postgres atomik/audit untuk calon pilot Kiosk dan Order Meja, tanpa mengaktifkan kampanye atau pembayaran. Full lokal 1.642 pass/0 fail/73 skip; native multi-writer dan public gateway/release gate belum selesai. Production dan gateway canary existing tidak berubah; Kiosk/QR meja simulator, `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.

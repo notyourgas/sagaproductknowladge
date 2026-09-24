@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-24 — Replay reservasi QRIS publik aman setelah kampanye tutup
+
+- `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` ter-push pada `codex/sagapos-public-pilot-20260924`. Retry dengan idempotency key dan payload sama kini mengembalikan reservasi yang sudah ada meski jendela promo tutup atau kill switch aktif; key sama dengan payload berbeda tetap ditolak dan percobaan baru tetap diblokir. Ini hanya ledger kuota, bukan payment intent atau pembayaran.
+- Regresi lokal akhir 1.643 pass/0 fail/73 skip, static/type 625 modul, dependency production 0 temuan. Satu timeout browser pada run awal lulus saat isolasi dan rerun penuh; native multi-writer masih belum dibuktikan. Runtime production tidak berubah: Kiosk/Order Meja tetap simulator, promo publik dan QRIS nyata belum aktif. Batas keranjang/subsidi tambahan masih `PROPOSAL`; kontrak gateway publik, approval Finance, order bisnis/outbox/KDS, dan gate release `NEEDS CONFIRMATION`. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Kuota pilot QRIS publik source-only
 
 - `CONFIRMED`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` ter-push menambahkan tabel kampanye/reservasi/audit Postgres yang kosong dan nonaktif serta reservasi atomik bersama untuk Kiosk dan Order Meja. Batas guard source: keranjang Rp100.000 sebelum diskon, diskon 99% maksimal Rp99.000/order, pembayaran akhir maksimal Rp100.000, 100 percobaan, dan akhir 1 Oktober 2026. Batas keranjang/subsidi tetap `PROPOSAL` untuk penerimaan Owner; batas pembayaran/jumlah/waktu telah dikonfirmasi.

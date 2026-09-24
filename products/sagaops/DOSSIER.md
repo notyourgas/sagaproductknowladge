@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-24 — Replay reservasi kuota tetap deterministik setelah penutupan
+
+Source `9a674661b37962a656c1c40dd8be9696089a9223` memindahkan pemeriksaan replay ke dalam transaksi/lock kampanye sebelum evaluasi jendela dan kill switch. Receipt lama untuk key dan request yang identik tetap `RESERVED` dengan `paymentMutationAllowed:false`; request berbeda dengan key sama konflik; reservasi baru setelah tutup tetap ditolak. Ini mencegah retry jaringan mengubah hasil yang sudah tersimpan tanpa melonggarkan penutupan promo. Tidak ada migrasi baru atau mutasi provider.
+
+Regresi akhir 1.643 pass/0 fail/73 skip, check/type 625 modul, audit dependency production 0. Run pertama mengalami satu timeout browser non-finansial yang lulus pada isolasi dan rerun penuh. Uji native Postgres multi-writer, public gateway, callback/rekonsiliasi, aggregate bisnis/outbox/KDS, approval Finance, UAT, dan gate rilis tetap terbuka. Runtime production tetap simulator untuk Kiosk/QR meja; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-24 — Reservasi kuota Postgres lintas Kiosk/QR meja (belum live)
 
 Source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` menambah migrasi additive kosong/nonaktif. Satu baris kampanye per outlet dikunci dalam transaksi Postgres untuk serialisasi Kiosk dan TABLE; replay idempotency key, scope order/outlet, snapshot harga server, batas percobaan/gross/discount, dan audit diperiksa atau ditulis atomik. RLS dipaksa, anon/authenticated tanpa grant, dan audit terikat reservasi dengan foreign key gabungan. Reservasi tidak membuat intent QRIS, pembayaran, penjualan, atau tiket KDS. Status gagal/expired/sukses dan rekonsiliasi provider belum dihubungkan; percobaan gagal tetap memakan kuota sebagai keputusan konservatif.

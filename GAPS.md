@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-24 — Gap setelah perbaikan replay kuota
+
+- `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` menutup bug retry reservasi lama ketika promo berakhir. Regresi akhir lulus, tetapi tidak membuktikan pembayaran nyata.
+- `NEEDS CONFIRMATION`: persetujuan Owner atas cap keranjang/subsidi tambahan; kontrak dan approval Finance untuk gateway publik; native multi-writer, callback/rekonsiliasi, penulisan order/outbox/KDS bisnis, UAT perangkat, dan release/recovery gate kandidat baru. Kiosk/QR meja tetap simulator sampai seluruhnya lulus.
+
 ## 2026-09-24 — Residual setelah source kuota publik
 
 - `CONFIRMED`: source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` menutup gap ledger reservasi atomik **di source**; migrasi belum diterapkan di production dan tabel tetap kosong/nonaktif menurut kontrak. Full lokal lulus 1.642/0; PGlite single-connection bukan uji native multi-writer.

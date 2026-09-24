@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-24 — Sinkronisasi replay kuota publik SagaPOS
+
+- `CONFIRMED`: source `9a674661b37962a656c1c40dd8be9696089a9223` ter-push; replay reservasi yang identik tetap stabil setelah penutupan promo, sedangkan permintaan baru tetap ditolak. Alasan: konsistensi idempotency pada pilot Kiosk/QR meja. Area/file: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Regresi akhir 1.643 pass/0 fail/73 skip. Production tidak berubah; gateway publik, order/KDS bisnis, approval Finance dan gate rilis masih terbuka. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-24 — Sinkronisasi kuota pilot QRIS publik SagaPOS
 
 - `CONFIRMED`: SagaPOS source `479eb5ce9697e288ddc935ceca7bdffaa7b85cba` ter-push dengan migrasi/reservasi kuota Postgres lintas Kiosk/QR meja yang kosong dan nonaktif. Alasan: memberi batas durable lintas channel tanpa membuka uang nyata. Cap keranjang/subsidi tambahan tetap `PROPOSAL` untuk Owner.
