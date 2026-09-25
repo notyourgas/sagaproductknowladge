@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-25 — Source guard publik dan kuota native
+
+- Status `partially accepted`: source SagaPOS `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push. Full 1.667 pass/0 fail/73 skip, focused 31/31, check/type 628, audit dependency production 0; PostgreSQL 18 disposable membuktikan kuota slot terakhir dua writer, replay dan kill switch, tanpa fakta pembayaran.
+- `NEEDS CONFIRMATION`: Gateway publik, signed status, checkout bisnis, paid writer native, settlement, UAT partner dan release gate. Tidak ada aktivasi/deploy/payment baru; active/rollback live tidak direfresh dalam sinkronisasi ini. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-25 — SagaPOS pilot QRIS source-only
 
 - Status `partially accepted`: exact source `365509b46d8ad52a690979971524acb47965473d` ter-push. Graft NTFS 3/3, full lokal 1.665 pass/0 fail/73 skip, check/type 627, audit production 0. Kuota dan paid writer kini atomik pada tes disposable; production tidak berubah.

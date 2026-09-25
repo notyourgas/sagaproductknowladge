@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-25 — Kuota native lulus; Gateway publik masih blocker
+
+- `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` lulus 1.667 regresi, 31 tes terfokus, dan uji PostgreSQL native dua writer untuk satu slot kuota terakhir; replay lintas koneksi serta kill switch lulus. Ini menutup gap kuota native saja, bukan paid writer end-to-end.
+- `NEEDS CONFIRMATION`: kontrak Gateway `PUBLIC99` terpisah, signed status, checkout Kiosk/Meja, paid writer native, settlement dan laporan live, approval efektif, UAT partner/perangkat, serta gate backup/recovery/release. Gateway source yang diaudit masih membatasi create privat Rp220. Jangan menaikkan plafon privat atau mengaktifkan pembayaran publik dari fixture.
+
 ## 2026-09-25 — Residual pilot QRIS Kiosk/QR meja
 
 - `CONFIRMED`: source `365509b46d8ad52a690979971524acb47965473d` ter-push; disposable transaction menguji paid+kuota+outbox+KDS atomik dan rollback bersama. Full lokal 1.665 pass/0 fail/73 skip. Tidak ada deployment atau transaksi nyata.

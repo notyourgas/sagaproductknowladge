@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-25 — Guard Gateway publik dan kuota native source-only
+
+- `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push. Guard `PUBLIC99` menolak readiness canary privat, snapshot basi, batas Gateway berlebih, atau metode selain QRIS. Laporan menandai keranjang/diskon di atas batas Owner sebagai exception, meskipun pembayaran pelanggan tampak kecil.
+- Regresi penuh lokal 1.667 pass/0 fail/73 skip; focused 31/31, check/type 628 modul, dependency production 0. PostgreSQL 18 disposable menguji kuota slot ke-100 dengan dua koneksi (satu diterima), replay setelah koneksi baru, kill switch, dan 0 fakta pembayaran nyata. Bukti native ini untuk kuota, bukan signed status atau checkout Gateway end-to-end.
+- `NEEDS CONFIRMATION`: Gateway yang diaudit masih kontrak canary privat maksimum Rp220, belum kontrak publik terpisah. Endpoint checkout, status Gateway terverifikasi, paid writer native end-to-end, settlement, UAT partner, serta gate rilis belum lulus. Tidak ada deploy/aktivasi/pembayaran baru; Kiosk dan QR meja tetap simulator, `BUSINESS_READY=false`.
+
 ## 2026-09-25 — Pilot QRIS publik: transaksi atomik source-only
 
 - `CONFIRMED`: source `365509b46d8ad52a690979971524acb47965473d` ter-push pada `codex/sagapos-public-pilot-20260924`. Penulisan `PAID` yang sudah terverifikasi Gateway kini dapat merekonsiliasi kuota `PUBLIC99`, outbox, dan satu tiket KDS dalam satu transaksi Postgres. Migrasi kanal `table` additive belum dijalankan di production. Sebelumnya kuota dan order writer belum terikat atomik.

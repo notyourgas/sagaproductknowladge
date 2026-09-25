@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-25 — Guard pembayaran publik dan gate PostgreSQL native
+
+- `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push; guard readiness menolak canary privat/bukti basi, laporan mengangkat kelebihan cap keranjang/subsidi, dan uji kuota native dua writer lulus. Alasan: pilot QRIS publik tidak boleh memakai izin privat atau menyembunyikan subsidi di laporan.
+- File source: `src/pos-alpha/public-qris99-pilot.mjs`, `src/services/public-qris99-gateway-report.mjs`, uji dan runbook. Full 1.667 pass/0 fail/73 skip, focused 31/31, static/type 628, dependency production 0. PostgreSQL 18 disposable: slot 100 satu pemenang, restart replay/kill switch lulus, nol fakta pembayaran.
+- Gateway publik/signed status, endpoint checkout, paid writer native, settlement, UAT partner, dan release gate belum selesai. Production tidak berubah; Kiosk/QR meja tetap simulator, QRIS 99% publik OFF. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Rekonsiliasi paid publik satu transaksi, belum deploy
 
 - `CONFIRMED`: source `157c962106e7125a2977e3c1dcb3ecffc0754589` dan `365509b46d8ad52a690979971524acb47965473d` menutup celah kuota terpisah dari order paid/outbox/KDS, mengikat kanal dan quote, serta menambah migrasi kanal `table` additive. Area: SagaPOS database/order writer, tes dan kontrak rilis. Sebab: replay, mismatch, atau fault tidak boleh membuat hitungan sukses dan tiket dapur berbeda.

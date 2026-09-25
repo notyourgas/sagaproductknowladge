@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-25 — SagaPOS QRIS publik: gate native source-only
+
+- `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push. Kuota `PUBLIC99` lulus uji PostgreSQL 18 disposable dua writer untuk slot ke-100/replay/kill switch, dan guard readiness menolak canary privat. Full lokal 1.667 pass/0 fail/73 skip; ini bukan transaksi atau deploy. Gateway publik/checkout/release masih terbuka; Kiosk/QR meja simulator, `BUSINESS_READY=false`.
+
 ## 2026-09-25 — SagaPOS pilot QRIS source-only
 
 - `CONFIRMED`: source `365509b46d8ad52a690979971524acb47965473d` menggabungkan fakta paid terverifikasi, kuota publik, outbox, dan KDS secara atomik; regresi 1.665 pass/0 fail/73 skip. Ini belum terhubung ke Gateway publik atau runtime production. Kiosk/QR meja tetap simulator, promo 99% belum aktif, `BUSINESS_READY=false`.

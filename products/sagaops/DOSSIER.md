@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-25 — Pembuktian kuota native dan pemisahan canary
+
+Source `0f8ddc62e35de181a3411b52755c1740e1703d78` menambah guard snapshot readiness publik yang eksplisit (`PUBLIC99`, QRIS, waktu observasi segar, jendela dan plafon) serta exception laporan untuk keranjang dan diskon melewati cap. Uji PostgreSQL 18 disposable membuktikan dua writer berebut slot ke-100 hanya menghasilkan satu reservasi; replay lintas koneksi dan kill switch tetap konsisten, tanpa pembayaran/provider mutation. Regresi penuh 1.667 pass/0 fail/73 skip, focused 31/31, static/type 628, audit dependency produksi 0. Source Gateway yang diperiksa masih canary privat dengan create maksimum Rp220 dan belum mengirim identitas mode/jendela untuk pilot publik; ini audit source, bukan verifikasi Gateway live. Checkout publik, signed-status, paid writer native, settlement, UAT partner, dan release candidate masih terbuka. Production tidak dimutasi oleh pekerjaan ini; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Sprint 1–3 jalur pilot Kiosk dan satu QR meja
 
 Source `157c962106e7125a2977e3c1dcb3ecffc0754589` mengikat replay kuota ke fakta Gateway terverifikasi; source lanjutan `365509b46d8ad52a690979971524acb47965473d` menempatkan rekonsiliasi kuota, pembayaran, event, outbox, dan tiket KDS dalam satu transaksi. Uji disposable mencakup replay satu tiket, mismatch kanal/harga, dan rollback bersama saat fault injection. Migrasi ke-36 menambah kanal `table` pada order bisnis tanpa mengubah RLS. Tidak ada endpoint publik yang memanggil writer ini; input browser tidak boleh menyatakan dirinya `PAID`.
