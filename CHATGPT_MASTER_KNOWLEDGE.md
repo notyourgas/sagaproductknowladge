@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-25 — Editor Card SagaView memakai alur foto seperti Frame
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`
+  / `20260925164446-fbc186a` memakai thumbnail untuk memilih foto Card,
+  menandai slot terpasang, dan menyediakan zoom/geser/reset. Dua layer
+  menampilkan foto langsung. Tiga layer menampilkan desain saat menunggu;
+  operator menghapus background secara lokal, melihat subjek dalam preview,
+  lalu mengatur ukuran/posisinya. Reproses menghapus approval lama; staf
+  admin wajib memeriksa dan menyetujui sebelum review/ekspor. Harga
+  Rp25.000/dua kartu, 35 desain, dan backend tidak berubah.
+- `NEEDS CONFIRMATION`: authenticated UAT lokal dan proof fisik Epson L8050.
+  CI hosted tidak menjalankan langkah, gate lokal dan runner lulus;
+  `BUSINESS_READY=false`.
+
 ## Update 2026-09-25 — Pemilih Card SagaView memakai tab kategori
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`

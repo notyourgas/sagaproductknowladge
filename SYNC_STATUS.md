@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-25 — Editor Card SagaView aktif
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio
+  `fbc186ace1179864c85664e28577d9860ee56abd` /
+  `20260925164446-fbc186a`; backend tetap
+  `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`. Editor Card memakai
+  thumbnail dan transformasi foto; tiga layer menampilkan cutout lokal dalam
+  preview dan masih memerlukan approval admin. Gate lokal/runner dan
+  verifikasi runtime lulus, CI hosted `CI_NOT_RUN`. Authenticated UAT serta
+  proof Epson L8050 tertunda; `BUSINESS_READY=false`.
+- Sinkronisasi: SagaView PRODUCT/DOSSIER/CHANGELOG, portfolio, master,
+  DECISIONS, GAPS, dan root changelog; knowledge commit `main HEAD`.
+
 ## 2026-09-25 — UI tab Card SagaView aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`

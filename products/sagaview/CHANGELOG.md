@@ -1,5 +1,17 @@
 # SagaView Changelog
 
+## 2026-09-25 - Editor foto Card menyatu dengan pola Frame
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`
+  / `20260925164446-fbc186a` menambah pemilih foto thumbnail, penanda slot,
+  kontrol ukuran/posisi/reset, preview tiga layer sebelum dan sesudah cutout,
+  serta status approval per kartu. Cutout diproses lokal setelah foto dipilih;
+  persetujuan staf admin tetap wajib sebelum review/ekspor.
+- 296 tes unit/integrasi, browser Card sintetis, gate browser runner, build,
+  audit dependency, backup/recovery dan public smoke lulus. CI hosted tidak
+  menjalankan langkah. Backend, 35 desain, dan harga tetap. UAT login dan
+  proof Epson L8050 masih terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-25 - Card menjadi tab kategori dan pilihan lebih jelas
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`

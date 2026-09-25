@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-25 — Alur foto dan cutout editor Card SagaView
+
+- `CONFIRMED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`
+  aktif pada `20260925164446-fbc186a`. Pemilih foto thumbnail, penanda
+  slot, kontrol transformasi, preview cutout lokal, dan status approval
+  dicatat pada SagaView PRODUCT/DOSSIER/CHANGELOG, portfolio, master,
+  DECISIONS, GAPS, serta SYNC_STATUS.
+- Alasan: instruksi Andreas agar dua layer memakai alur Frame biasa dan tiga
+  layer menampilkan subjek cutout yang bisa diatur. Backend, harga, dan
+  katalog tidak berubah. UAT login/print fisik belum lengkap;
+  `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Tab kategori dan jumlah Card SagaView
 
 - `CONFIRMED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`

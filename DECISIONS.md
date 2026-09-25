@@ -1,5 +1,23 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-213 — Alur foto dan cutout Card mengikuti editor Frame
+
+- Tanggal: 2026-09-25. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: pemilihan foto dan pengaturan subjek pada desain Card dua/tiga layer.
+- Keputusan: foto Card dipilih lewat alur visual seperti Frame. Desain dua
+  layer menampilkan foto asli langsung; desain tiga layer menampilkan hasil
+  setelah penghapusan background lokal. Subjek cutout dapat diperbesar,
+  diperkecil, dan digeser di dalam kartu. Pemeriksaan dan approval staf admin
+  tetap menjadi gate review/ekspor.
+- Alasan: operator dapat memilih foto dan menilai komposisi Card pada satu
+  editor. Dropdown lama dan preview error sebelum cutout tidak memenuhi alur.
+- Dampak: Studio `fbc186ace1179864c85664e28577d9860ee56abd` aktif pada
+  `20260925164446-fbc186a`; harga, backend, katalog, dan jatah Frame reguler
+  tidak berubah. UAT login dan cetak fisik masih terbuka;
+  `BUSINESS_READY=false`.
+- Terkait: [SagaView](products/sagaview/PRODUCT.md),
+  [dossier](products/sagaview/DOSSIER.md), dan [gaps](GAPS.md).
+
 ## DEC-212 — Card tampil sebagai tab kategori preset SagaView
 
 - Tanggal: 2026-09-25. Status: `CONFIRMED`; pemberi keputusan Andreas.

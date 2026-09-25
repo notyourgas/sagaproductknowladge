@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-25 — Residual setelah editor foto Card aktif
+
+- `CONFIRMED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`
+  aktif pada `20260925164446-fbc186a`. Pemilihan thumbnail, preview sebelum
+  dan sesudah cutout, transformasi subjek, serta gate admin diuji lokal;
+  runner/backup/smoke dan provenance production lulus. CI hosted berhenti
+  sebelum langkah berjalan, sehingga dicatat `CI_NOT_RUN`.
+- `NEEDS CONFIRMATION`: masa akses langganan UAT pada runtime Studio belum
+  valid walaupun akun Owner dan entitlement pusat terverifikasi; authenticated
+  UAT belum selesai. Proof dua kartu dan safe area fisik Epson L8050 masih
+  diperlukan. Pengecualian Owner hanya mencakup bukti UAT fisik yang belum
+  tersedia. `BUSINESS_READY=false`.
+
 ## 2026-09-25 — Sisa gate setelah perbaikan tab Card
 
 - `CONFIRMED`: perbaikan tab dan ringkasan Card Studio aktif pada release

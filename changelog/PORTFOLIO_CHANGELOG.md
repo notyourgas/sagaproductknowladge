@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-25 — Editor foto Card SagaView aktif
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `fbc186a` menyamakan pemilih
+  foto dan kontrol posisi Card dengan Frame reguler. Desain tiga layer kini
+  menampilkan komposisi saat menunggu cutout, lalu subjek hasil proses lokal
+  dapat diatur sebelum pemeriksaan admin. Approval admin tetap wajib untuk
+  ekspor; backend, katalog, dan harga tidak berubah. UAT login/print fisik
+  belum tuntas, `BUSINESS_READY=false`.
+
 ## 2026-09-25 — UI Card SagaView menjadi tab kategori
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141` menempatkan

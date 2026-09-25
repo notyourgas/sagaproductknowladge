@@ -2,6 +2,19 @@
 
 Updated: 25 September 2026 WIB
 
+`CONFIRMED / PRODUCTION_ACTIVATED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`
+aktif pada release `20260925164446-fbc186a`. Editor Card kini memakai thumbnail
+foto terpilih dan kontrol zoom, geser, putar, serta reset seperti editor Frame.
+Desain dua layer langsung menampilkan foto. Pada desain tiga layer, operator
+memilih foto lalu menekan **Hapus background foto ini**; background dan frame
+tetap terlihat selama menunggu, lalu subjek cutout muncul dalam preview dan
+dapat diatur ukurannya serta posisinya. Status per kartu membedakan foto
+terpasang, cutout menunggu, dan cutout disetujui. Pemeriksaan/approval staf
+admin tetap wajib sebelum review atau ekspor. Foto dan mask tetap lokal.
+Backend, 35 desain, harga Rp25.000 per dua kartu, serta jatah Frame reguler
+tidak berubah. Authenticated UAT lokal dan proof Epson L8050 masih terbuka;
+`BUSINESS_READY=false`.
+
 `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`
 aktif pada release `20260925160512-ed11e14`. Kartu Koleksi sekarang tab
 kategori tersendiri pada pemilih preset pelanggan, sebelum tab Semua. Tab

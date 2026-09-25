@@ -1,5 +1,34 @@
 # SagaView Dossier
 
+## Editor foto dan cutout Card, 25 September 2026
+
+`CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`:
+Studio `fbc186ace1179864c85664e28577d9860ee56abd` aktif pada immutable
+release `20260925164446-fbc186a`. Pemilih foto Card mengganti dropdown
+dengan thumbnail seperti editor Frame; slot aktif dan foto terpasang tampak
+jelas. Foto baru mengatur ulang transformasi dan membatalkan mask sumber lama;
+memilih ulang foto yang sama menjaga posisi serta approval. Tombol dan panah
+keyboard mengatur zoom/geser; cutout dapat diperkecil sampai 50% dari fit.
+
+Pada tiga layer, preview tetap menampilkan background dan frame sambil
+menunggu mask. Tombol penghapusan background menjalankan model lokal setelah
+foto dipilih; mask yang siap langsung dikomposisikan dan dapat diatur posisinya.
+Memproses ulang membuang mask dan approval sebelumnya. Staf admin tetap
+memeriksa/memperbaiki mask dan menyetujui sebelum review/ekspor. Renderer
+ekspor tetap menolak slot tanpa cutout yang sah. Status kartu dan ringkasan
+memisahkan foto terpasang dari jumlah cutout yang disetujui.
+
+Gate source 296 tes unit/integrasi, format/lint/typecheck, build, bundle budget,
+audit dependency tanpa vulnerability, serta browser Card sintetis dan gate
+browser runner lulus. CI hosted berhenti sebelum menjalankan langkah; gate
+lokal exact source digunakan. Runner menyelesaikan backup/recovery, switch,
+public smoke, dan receipt terminal. Pointer, provenance, service, halaman
+publik, dan aset model diverifikasi ulang. Backend tetap
+`ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`; 35 desain dan harga kategori
+tetap. UAT login lokal masih terhalang masa akses, dan proof fisik Epson
+L8050 belum ada. Pengecualian Owner hanya untuk bukti UAT fisik yang belum
+tersedia; `BUSINESS_READY=false`.
+
 ## Tab Kartu Koleksi pada pemilih preset, 25 September 2026
 
 `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`:
