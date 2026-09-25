@@ -13,10 +13,11 @@
   foto asli; tema tiga layer memakai cutout subjek di atas background desain.
 - Alasan: variasi desain tetap sederhana untuk operator dan harga dapat
   ditentukan di satu tempat. Alternatif harga berbeda per desain tidak dipilih.
-- Dampak: source backend/Studio Card aktif; 35 desain masih draft di workspace
-  internal Saga Studio. Rute model/WASM cutout production telah diperbaiki;
-  koreksi visual tiap desain, proof Epson L8050, dan publish admin belum
-  selesai. `BUSINESS_READY=false`.
+- Dampak: source backend/Studio Card aktif; 35 desain telah diterbitkan di
+  akun Owner Saga Studio. Rute model/WASM cutout production telah diperbaiki
+  dan flag cutout ON berdasarkan instruksi Andreas setelah uji cutout.
+  Proof Epson L8050 dan receipt physical UAT belum tercatat;
+  `BUSINESS_READY=false`.
 - Terkait: [SagaView](products/sagaview/PRODUCT.md),
   [dossier](products/sagaview/DOSSIER.md), dan [gaps](GAPS.md).
 

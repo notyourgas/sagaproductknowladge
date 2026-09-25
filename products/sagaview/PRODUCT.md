@@ -2,7 +2,7 @@
 
 Updated: 25 September 2026 WIB
 
-SagaView Card TCG kini tersedia di production untuk pengelolaan internal.
+SagaView Card TCG kini tersedia di production pada katalog Saga Studio.
 Backend exact `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` pada release
 `20260925094720-ee3ddee` dan Studio exact
 `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` pada release
@@ -11,13 +11,15 @@ per pasangan dua kartu, terpisah dari jatah Frame reguler. Dua kartu
 disusun otomatis pada output 4R; tersedia desain foto asli dua layer
 dan desain cutout tiga layer.
 
-Workspace internal Saga Studio memiliki 35 desain draft dalam 9 tema;
-35 preview server terbaca, 0 published, dan harga kategori Rp25.000 per
-pasangan dua kartu sudah tersimpan serta diverifikasi ulang pada workspace
-Owner. Publikasi cutout masih OFF. Rute aset model/WASM cutout production
-telah diperbaiki dan lima aset merespons 200 dengan checksum cocok. Empat
-foto contoh menghasilkan mask secara lokal; koreksi visual tiap desain,
-proof Epson L8050, serta persetujuan publish admin masih diperlukan.
+Workspace Saga Studio menampilkan 35 desain published dalam 9 tema:
+21 foto asli dan 14 cutout. Harga kategori Rp25.000 per dua kartu sudah
+tersimpan dan terbaca ulang di Dashboard. Flag publikasi cutout ON;
+proyeksi katalog perangkat menghasilkan 35 desain dengan jatah Frame reguler
+nol. Dashboard menampilkan 35 desain dan seluruh preview terbaca. Rute lima
+aset model/WASM cutout production merespons 200; empat foto contoh pernah
+menghasilkan mask secara lokal. Andreas menyatakan cutout telah diuji dan aman
+untuk ditayangkan. Proof fisik Epson L8050 serta receipt physical UAT per
+profil cetak masih belum tercatat; `BUSINESS_READY=false`.
 Runner Studio kehilangan receipt akhir akibat koneksi SSH tertahan setelah
 aktivasi; pointer, provenance, service, halaman publik, dan jurnal diverifikasi
 terpisah. `PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /

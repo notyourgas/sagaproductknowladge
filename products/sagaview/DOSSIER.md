@@ -1,6 +1,6 @@
 # SagaView Dossier
 
-## Card TCG: rilis dan katalog draft Saga Studio, 25 September 2026
+## Card TCG: katalog terbit Saga Studio, 25 September 2026
 
 Keputusan Owner: satu kategori Kartu Koleksi dengan harga tunggal per dua
 kartu; pembelian selalu kelipatan dua, boleh dicampur dengan Frame reguler,
@@ -18,15 +18,15 @@ terenkripsi, checksum, restore disposable, gate source, pointer, provenance,
 public smoke, service, dan jurnal lulus. Runner kehilangan receipt akhir
 akibat sesi SSH tertahan setelah switch; pemeriksaan runtime independen lulus.
 
-Semua 35 paket per desain dari 9 tema diimpor ke workspace internal Saga
-Studio sebagai draft. Preview 35/35 terbaca; 0 published. Publikasi cutout
-masih ditahan dan katalog pelanggan hanya menampilkan desain published.
-Harga kategori telah disimpan dan dibaca ulang pada workspace Owner, tanpa
-menerbitkan desain. Aset model dan WASM cutout sempat 404 karena rute static
-belum terpasang; rute diperbaiki dengan backup dan rollback otomatis, lalu
-lima URL production merespons 200 dan checksum server cocok. Empat foto
-contoh menghasilkan mask dalam uji lokal. Koreksi visual per desain,
-proof Epson L8050, keputusan publish admin, dan physical UAT masih terbuka;
+Semua 35 paket per desain dari 9 tema masuk sebagai draft lalu melewati
+QA desain dan diterbitkan oleh akun Owner Saga Studio. Katalog sekarang
+memiliki 35 published: 21 foto asli dan 14 cutout. Dashboard memuat 35
+preview, harga kategori Rp25.000 per dua kartu, dan proyeksi katalog
+perangkat mengembalikan 35 desain serta jatah Frame reguler nol.
+Flag cutout ON setelah backup konfigurasi dan verifikasi runtime. Lima aset
+model/WASM production merespons 200; empat foto contoh menghasilkan mask
+pada uji lokal. Andreas menyatakan pengujian cutout aman untuk penayangan.
+Proof Epson L8050 dan receipt physical UAT belum tercatat;
 `BUSINESS_READY=false`.
 
 ## S383 non-destructive slot photo viewport

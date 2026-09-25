@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-25 — Katalog Card Saga Studio terbit
+
+- `CONFIRMED`: Andreas meminta seluruh desain ditampilkan setelah uji
+  cutout. Backend flag cutout ON dan 35 desain published (21 foto asli,
+  14 cutout); harga kategori tetap Rp25.000 per dua kartu.
+- Dashboard Owner dan proyeksi katalog perangkat diverifikasi 35 desain;
+  model/WASM, layanan, dan health aktif. Area knowledge: SagaView
+  PRODUCT/DOSSIER/CHANGELOG, portfolio, master, DECISIONS, GAPS,
+  SYNC_STATUS. Source backend/Studio tidak berubah. Proof fisik Epson L8050
+  dan receipt physical UAT belum tercatat; `BUSINESS_READY=false`.
+
 ## 2026-09-25 — Harga Card Saga Studio dan temuan cutout production
 
 - `CONFIRMED`: keputusan Andreas menetapkan Rp25.000 per dua kartu; harga

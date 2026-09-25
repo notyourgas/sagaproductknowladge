@@ -1,5 +1,17 @@
 # SagaView Changelog
 
+## 2026-09-25 - Katalog 35 Card Saga Studio diterbitkan
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: berdasarkan instruksi Andreas setelah
+  uji cutout, flag publikasi cutout ON dan 35 desain Saga Studio diterbitkan
+  melalui akun Owner: 21 foto asli, 14 cutout, 9 tema.
+- Harga Rp25.000 per dua kartu. QA desain tercatat per paket; 35 preview
+  Dashboard terbaca, proyeksi katalog perangkat menghasilkan 35 desain,
+  jatah Frame reguler nol, lima aset model/WASM 200, service dan health aktif.
+  Backup konfigurasi/rollback dipertahankan; source backend/Studio tidak
+  berubah. Proof Epson L8050 dan receipt physical UAT belum tercatat,
+  sehingga `BUSINESS_READY=false`.
+
 ## 2026-09-25 - Harga Card Saga Studio dan audit aset cutout
 
 - `CONFIRMED`: kategori Kartu Koleksi pada workspace Owner Saga Studio

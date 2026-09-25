@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-09-25 — Katalog Card Saga Studio terbit
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: 35 desain dalam 9 tema diterbitkan
+  (21 foto asli, 14 cutout) dan cutout publish ON setelah instruksi Andreas.
+  Harga tunggal Rp25.000 per pasangan dua kartu; proyeksi katalog perangkat
+  menampilkan seluruh desain tanpa memakai jatah Frame reguler.
+- Dashboard/preview, aset model, health, dan layanan production terverifikasi.
+  Source code tidak berubah. Proof fisik Epson L8050 dan receipt physical
+  UAT belum tercatat; `BUSINESS_READY=false`.
+
 ## 2026-09-25 — Harga kategori Card Saga Studio dikonfirmasi
 
 - `CONFIRMED`: harga Kartu Koleksi Rp25.000 per dua kartu tersimpan dan

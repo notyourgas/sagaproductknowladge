@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-25 — Katalog SagaView Card Saga Studio diterbitkan
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: 35 desain/9 tema published,
+  termasuk 14 cutout; flag cutout ON dan harga Rp25.000 per dua kartu.
+  Dashboard Owner menampilkan 35 desain dengan preview terbaca; proyeksi
+  katalog perangkat memuat 35 desain dan jatah Frame reguler nol.
+- Backend/Studio tetap pada source dan release sebelumnya. Health, layanan,
+  model/WASM dan backup konfigurasi/rollback diverifikasi. Sinkronisasi:
+  SagaView PRODUCT/DOSSIER/CHANGELOG, portfolio, master, DECISIONS, GAPS,
+  root changelog. Proof Epson L8050 dan receipt physical UAT belum tercatat;
+  `BUSINESS_READY=false`; knowledge commit `main HEAD`.
+
 ## 2026-09-25 — Harga Card Saga Studio dan rute aset cutout
 
 - `CONFIRMED`: harga kategori Kartu Koleksi Rp25.000 per dua kartu tersimpan

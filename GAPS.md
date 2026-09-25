@@ -2,17 +2,17 @@
 
 ## 2026-09-25 — Residual Card TCG SagaView setelah rilis
 
-- `CONFIRMED`: backend dan Studio Card aktif; workspace internal Saga Studio
-  memiliki 35 draft/9 tema, 35 preview terbaca, 0 published. Harga kategori
-  Rp25.000 per pasangan dua kartu telah diatur dan publikasi cutout masih OFF.
-  Lima aset model/WASM production merespons 200 setelah perbaikan rute;
-  empat foto contoh menghasilkan mask pada uji lokal.
-- `NEEDS CONFIRMATION`: koreksi visual tiap desain dengan potret nyata
-  untuk tiap desain termasuk tepi hijab/rambut/tangan, proof dua kartu pada
-  Epson L8050, keputusan desain mana diterbitkan, dan receipt physical UAT.
+- `CONFIRMED`: backend dan Studio Card aktif; akun Owner Saga Studio
+  menerbitkan 35 desain/9 tema, termasuk 14 cutout. Harga Rp25.000 per
+  dua kartu, flag cutout ON, 35 preview Dashboard terbaca, dan proyeksi
+  katalog perangkat memuat 35 desain tanpa jatah Frame reguler. Andreas
+  menyatakan cutout telah diuji dan aman ditayangkan; lima aset model/WASM
+  production 200 dan empat foto contoh menghasilkan mask lokal.
+- `NEEDS CONFIRMATION`: proof cetak dua kartu pada Epson L8050, safe area
+  fisik yang masih null pada bundle, dan receipt physical UAT.
   Runner Studio kehilangan receipt akhir pada SSH setelah switch; runtime
-  diverifikasi terpisah. Jangan menyebut Card siap dijual sebelum gate
-  operasional selesai; `BUSINESS_READY=false`.
+  diverifikasi terpisah. Katalog sudah terbit, tetapi jangan menyebut
+  profil cetak siap jual sebelum gate fisik selesai; `BUSINESS_READY=false`.
 
 ## 2026-09-25 — Kuota native lulus; Gateway publik masih blocker
 

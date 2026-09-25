@@ -7,13 +7,13 @@
   Kategori Card satu harga per dua kartu, kelipatan dua, campuran Frame
   reguler diperbolehkan tanpa memakai jatah Frame reguler, dan dua kartu
   ditata pada output 4R. Desain dua/tiga layer didukung.
-- Workspace internal Saga Studio memiliki 35 draft/9 tema dan 35 preview
-  server terbaca; belum ada desain terbit. Harga kategori Rp25.000 per dua
-  kartu telah tersimpan dan dibaca ulang pada workspace Owner.
-  Publikasi cutout OFF. Rute model/WASM cutout production telah diperbaiki;
-  lima URL merespons 200 dan empat foto contoh menghasilkan mask lokal.
-  Koreksi visual per desain, proof Epson L8050, dan signoff
-  admin/physical UAT diperlukan sebelum penjualan. Runner Studio kehilangan
+- Workspace Saga Studio kini memiliki 35 published/9 tema (21 foto asli,
+  14 cutout); Dashboard menampilkan seluruh preview. Harga kategori
+  Rp25.000 per dua kartu. Flag cutout ON; proyeksi katalog perangkat
+  memuat 35 desain dengan jatah Frame reguler nol. Lima aset model/WASM
+  production 200, empat foto contoh menghasilkan mask lokal, dan Andreas
+  menyatakan cutout aman untuk ditayangkan. Proof fisik Epson L8050 serta
+  receipt physical UAT belum tercatat. Runner Studio kehilangan
   receipt akhir karena SSH tertahan setelah switch; runtime diverifikasi
   terpisah. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
 
