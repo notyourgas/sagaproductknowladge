@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-26 — Kiosk QRIS statis DEMO tahan restart, source-only
+
+- `CONFIRMED`: source SagaPOS `e9a1e202ab018fedbc587a00a09cda5967ba812b` ter-push pada `codex/sagapos-static-demo-release-20260926`. Order uji QRIS statis, konfirmasi kasir, dan status KDS disimpan di tabel Postgres sintetis terpisah dengan outbox, revision, replay, dan pemulihan setelah restart. Dashboard Owner dapat mengganti PNG uji per outlet; gambar bawaan non-scannable dan upload tidak mengaktifkan pembayaran nyata.
+- Regresi lokal 1.642 pass/0 fail/73 skip, focused 15/15, check/type 623 modul, audit dependency produksi 0. Artifact lokal checksum-bound disiapkan, tetapi backup/restore dan smoke host private staging belum tervalidasi; tidak ada aktivasi runtime. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- `NEEDS CONFIRMATION`: akses dan expected-current host private staging, restore native skema baru, rollback rehearsal, Owner/Cashier/KDS authenticated UAT. Order Meja dan QRIS gateway nyata tetap jalur terpisah.
+
 ## 2026-09-25 — Laporan Payment Gateway Owner source-only
 
 - `CONFIRMED`: source SagaPOS `e7e9c675097b2f68ebc980dc8252e5a4f631634a` ter-push pada `codex/sagapos-gateway-report-page-20260925`. Menu Keuangan/Laporan memiliki halaman Owner baca-saja untuk intent QRIS SagaDev Gateway production per outlet/tanggal bisnis. Paid terverifikasi POS dibedakan dari pending, gagal, kedaluwarsa, dan paid yang perlu rekonsiliasi; data demo dan scope lain dikecualikan.

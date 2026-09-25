@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-26 — QRIS statis DEMO SagaPOS persisten, belum aktif
+
+- `CONFIRMED`: source SagaPOS `e9a1e202ab018fedbc587a00a09cda5967ba812b` ter-push dengan order kiosk QRIS statis dan konfirmasi kasir tahan restart pada Postgres privat, outbox/KDS demo terisolasi, serta PNG uji yang dapat diganti Owner dari dashboard. Focused 15/15, regresi 1.642 pass/0 fail/73 skip, check/type 623, dependency production 0.
+- `NEEDS CONFIRMATION`: gate host private staging, authenticated UAT, exact active/rollback runtime, dan pembayaran QRIS nyata. Kandidat lokal belum dideploy; Order Meja dan gateway produksi tidak berubah. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-25 — Editor Card SagaView memakai alur foto seperti Frame
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`

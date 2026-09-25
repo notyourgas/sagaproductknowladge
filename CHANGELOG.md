@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-26 — SagaPOS demo Kiosk persisten di source
+
+- `CONFIRMED`: SagaPOS source `e9a1e202ab018fedbc587a00a09cda5967ba812b` ter-push; order QRIS statis uji, konfirmasi kasir, KDS, dan penggantian PNG Owner kini punya kontrak Postgres sintetis tahan restart. Alasan: demo tidak boleh menjadi pendapatan produksi atau hilang saat restart.
+- Area: SagaOPS product/dossier/changelog, portfolio, master, GAPS, SYNC_STATUS. Full lokal 1.642 pass/0 fail/73 skip; artifact lokal bukan bukti deploy. Runtime production dan pembayaran nyata tidak diubah; private host gate/UAT masih terbuka. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Alur foto dan cutout editor Card SagaView
 
 - `CONFIRMED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`

@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-26 — SagaPOS QRIS statis DEMO source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e9a1e202ab018fedbc587a00a09cda5967ba812b` menambah persistensi demo Kiosk dan upload QR uji Owner. Regresi lokal 1.642 pass/0 fail/73 skip; produksi tidak berubah dalam pekerjaan ini. Gate host private staging dan authenticated UAT masih terbuka, `BUSINESS_READY=false`.
+- Sinkronisasi: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, root changelog; knowledge commit `main HEAD`.
+
 ## 2026-09-25 — Editor Card SagaView aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio

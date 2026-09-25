@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-26 — QRIS statis DEMO privat persisten, belum deploy
+
+- `CONFIRMED`: SagaPOS `e9a1e202ab018fedbc587a00a09cda5967ba812b` menambah penyimpanan Postgres sintetis untuk order kiosk uji, konfirmasi kasir, event/outbox/KDS, dan penggantian PNG melalui dashboard Owner. Alasan: status demo serta gambar tidak hilang saat restart dan tidak mencemari fakta keuangan produksi.
+- Focused 15/15, full lokal 1.642 pass/0 fail/73 skip, check/type 623, dependency production 0; tes restore disposable PGlite dan browser mobile/desktop lulus. Artifact lokal dibuat, tetapi gate host private staging belum dieksekusi. Tidak ada aktivasi atau transaksi nyata; `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Halaman laporan Gateway Owner ditambahkan di source
 
 - `CONFIRMED`: commit SagaPOS `e7e9c675097b2f68ebc980dc8252e5a4f631634a` menambah `#gateway-payments`, endpoint laporan Owner baca-saja, dan query Postgres scoped untuk intent QRIS Gateway production. Alasan: Owner dapat menelusuri status dan mismatch tanpa menyamakan POS paid dengan payout provider.

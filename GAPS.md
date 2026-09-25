@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-26 — Gate tersisa untuk uji QRIS statis DEMO Kiosk
+
+- `CONFIRMED`: source `e9a1e202ab018fedbc587a00a09cda5967ba812b` telah ter-push dan gate lokal lulus. Data demo, gambar QR, dan KDS privat memakai Postgres terpisah; QRIS nyata tidak diaktifkan.
+- `NEEDS CONFIRMATION`: exact current/rollback host private staging, kapasitas dan kredensial Owner, backup terenkripsi plus restore skema pada PostgreSQL target, rehearsal rollback, protected ingress, serta smoke Kiosk/Kasir/KDS terautentikasi. Host staging yang ada tidak otomatis membuka surface simulator ke publik. Jangan menyebut source ini siap transaksi QRIS asli atau `BUSINESS_READY`.
+
 ## 2026-09-25 — Residual setelah editor foto Card aktif
 
 - `CONFIRMED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`

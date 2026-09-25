@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-26 — SagaPOS Kiosk QRIS statis DEMO source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e9a1e202ab018fedbc587a00a09cda5967ba812b` menyimpan order uji, konfirmasi kasir, dan status KDS di Postgres privat serta menyediakan upload PNG uji dari dashboard Owner. Full lokal 1.642 pass/0 fail/73 skip. Belum ada release host, perubahan gateway, pembayaran asli, atau fakta keuangan produksi; `BUSINESS_READY=false`.
+
 ## 2026-09-25 — Editor foto Card SagaView aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `fbc186a` menyamakan pemilih

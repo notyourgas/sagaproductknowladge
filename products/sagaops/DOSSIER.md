@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-26 — Persistensi QRIS statis DEMO privat
+
+Source `e9a1e202ab018fedbc587a00a09cda5967ba812b` menambah aggregate, event, aset PNG, inbox/proyeksi KDS, serta dead-letter khusus demo di database private staging. Checkout server membuat order `PAYMENT_PENDING`; hanya konfirmasi kasir bersesi dan ber-CSRF yang mengubah status demo menjadi `PAID` sebelum KDS. Penulisan aggregate dan outbox atomik; request serentak menunggu commit, replay tidak menambah fakta, dan payload rusak dikarantina. Setelah restart, order, konfirmasi, status KDS, dan gambar Owner dimuat dari Postgres. Batas gambar 256 KB dan revision CAS mencegah overwrite antartab. Tabel demo tidak masuk laporan penjualan, kas, settlement, atau payout produksi.
+
+Skema ini ekstensi privat di luar 34 migrasi runtime produksi. Runner private kini menguji skema pada restore disposable terenkripsi dan menolak promosi bila worker demo tidak sehat. Bukti lokal: focused 15/15, full 1.642 pass/0 fail/73 skip, check/type 623, dependency production 0. Source ter-push dan artifact lokal disiapkan; pemeriksaan host native, exact active/rollback SHA, izin rilis, dan smoke terautentikasi belum selesai. E-katalog publik tetap baca-saja; kiosk/QR meja belum menerima pembayaran asli. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Owner Payment Gateway report dan batas data
 
 Source `e7e9c675097b2f68ebc980dc8252e5a4f631634a` menghubungkan halaman `#gateway-payments` dan API Owner baca-saja ke mirror Postgres SagaPOS: order, pembayaran QRIS, intent Gateway mode production, dan event konfirmasi provider yang sudah dipersist server. Scope organization/outlet berasal dari runtime, bukan query browser. Ringkasan dan halaman memakai snapshot `REPEATABLE READ READ ONLY`; tanggal bisnis WIB dipaginasi 50, tanpa polling otomatis atau raw callback/provider reference/PII. Paid digolongkan terverifikasi POS hanya jika order, satu payment, satu intent, satu event paid, dan nominalnya cocok; mismatch ditandai untuk rekonsiliasi. Ini **bukan** bukti settlement/payout Gateway. Nilai payout null sampai ada feed settlement sah.
