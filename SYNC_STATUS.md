@@ -1,5 +1,19 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-25 — SagaView Card TCG production dan draft Saga Studio
+
+- `CONFIRMED`: backend `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` /
+  `20260925094720-ee3ddee` dan Studio
+  `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` /
+  `20260925105916-f59bbcc` aktif. Migrasi spesifik, backup baru dan restore,
+  provenance/public smoke/service, 35 draft/9 tema dan 35 preview lulus.
+- Area: SagaView PRODUCT/DOSSIER/CHANGELOG, portfolio, master, keputusan,
+  GAPS, root changelog, dan SYNC_STATUS. 0 published, harga belum ditentukan,
+  cutout publish OFF; QA foto nyata, proof Epson L8050, dan physical UAT
+  tertunda. Receipt akhir runner Studio terputus di SSH setelah aktivasi,
+  dengan verifikasi runtime independen. `PRODUCTION_ACTIVATED /
+  BUSINESS_READY=false`; knowledge commit `main HEAD`.
+
 ## 2026-09-25 — Source guard publik dan kuota native
 
 - Status `partially accepted`: source SagaPOS `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push. Full 1.667 pass/0 fail/73 skip, focused 31/31, check/type 628, audit dependency production 0; PostgreSQL 18 disposable membuktikan kuota slot terakhir dua writer, replay dan kill switch, tanpa fakta pembayaran.

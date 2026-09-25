@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-25 — Residual Card TCG SagaView setelah rilis
+
+- `CONFIRMED`: backend dan Studio Card aktif; workspace internal Saga Studio
+  memiliki 35 draft/9 tema, 35 preview terbaca, 0 published. Harga kategori
+  belum diatur dan publikasi cutout masih OFF.
+- `NEEDS CONFIRMATION`: harga per pasangan ditetapkan admin, QA potret nyata
+  untuk tiap desain termasuk tepi hijab/rambut/tangan, proof dua kartu pada
+  Epson L8050, keputusan desain mana diterbitkan, dan receipt physical UAT.
+  Runner Studio kehilangan receipt akhir pada SSH setelah switch; runtime
+  diverifikasi terpisah. Jangan menyebut Card siap dijual sebelum gate
+  operasional selesai; `BUSINESS_READY=false`.
+
 ## 2026-09-25 — Kuota native lulus; Gateway publik masih blocker
 
 - `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` lulus 1.667 regresi, 31 tes terfokus, dan uji PostgreSQL native dua writer untuk satu slot kuota terakhir; replay lintas koneksi serta kill switch lulus. Ini menutup gap kuota native saja, bukan paid writer end-to-end.

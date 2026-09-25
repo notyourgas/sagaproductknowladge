@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-25 — SagaView Card TCG production dan 35 draft Saga Studio
+
+- `CONFIRMED`: source backend `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`
+  dan Studio `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` aktif. Alasan:
+  menyediakan desain kartu khusus tanpa mengubah jatah Frame reguler. Area:
+  SagaView PRODUCT/DOSSIER/CHANGELOG, portfolio, master, keputusan, GAPS,
+  SYNC_STATUS. Backup, migrasi, gate source, runtime, dan 35 preview lulus;
+  receipt akhir runner Studio terputus pada SSH setelah switch.
+- 35 desain/9 tema masih draft pada workspace internal Saga Studio; 0 terbit,
+  harga kategori belum ada, cutout publish OFF. QA foto nyata, proof Epson
+  L8050, keputusan harga, publish admin, dan physical UAT masih terbuka.
+  `PRODUCTION_ACTIVATED / BUSINESS_READY=false`; knowledge commit `main HEAD`.
+
 ## 2026-09-25 — SagaPOS guard Gateway publik dan kuota native
 
 - `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` menambah guard readiness publik, exception batas keranjang/subsidi, dan uji kuota PostgreSQL 18 dua writer. Alasan: pisahkan canary privat dari uang publik dan buktikan slot terakhir atomik. Area: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Full 1.667 pass/0 fail/73 skip, focused 31/31, static/type 628, dependency production 0.

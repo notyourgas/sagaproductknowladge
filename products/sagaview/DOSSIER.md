@@ -1,5 +1,28 @@
 # SagaView Dossier
 
+## Card TCG: rilis dan katalog draft Saga Studio, 25 September 2026
+
+Keputusan Owner: satu kategori Kartu Koleksi dengan harga tunggal per dua
+kartu; pembelian selalu kelipatan dua, boleh dicampur dengan Frame reguler,
+dan tidak memakai jatah Frame reguler. Desain kartu 63,5 × 88,9 mm;
+dua kartu ditempatkan otomatis pada output 4R. Tema dua layer mempertahankan
+foto/background asli di bawah frame PNG; tema tiga layer memakai background
+desain, subjek cutout, dan frame PNG. Harga belum ditentukan.
+
+Backend source `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` pada release
+`20260925094720-ee3ddee` aktif dengan migrasi Card spesifik tercatat satu
+kali. Studio source `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` pada
+release `20260925105916-f59bbcc` aktif dengan build flag Card. Backup
+terenkripsi, checksum, restore disposable, gate source, pointer, provenance,
+public smoke, service, dan jurnal lulus. Runner kehilangan receipt akhir
+akibat sesi SSH tertahan setelah switch; pemeriksaan runtime independen lulus.
+
+Semua 35 paket per desain dari 9 tema diimpor ke workspace internal Saga
+Studio sebagai draft. Preview 35/35 terbaca; 0 published. Publikasi cutout
+masih ditahan dan katalog pelanggan hanya menampilkan desain published.
+QA foto nyata, proof Epson L8050, harga, keputusan publish admin, dan
+physical UAT masih terbuka; `BUSINESS_READY=false`.
+
 ## S383 non-destructive slot photo viewport
 
 Before, preview membuat elemen foto sama besar dengan slot memakai

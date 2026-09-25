@@ -1,6 +1,24 @@
 # SagaView Product Knowledge
 
-Updated: 7 September 2026 WIB
+Updated: 25 September 2026 WIB
+
+SagaView Card TCG kini tersedia di production untuk pengelolaan internal.
+Backend exact `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` pada release
+`20260925094720-ee3ddee` dan Studio exact
+`f59bbcc2609f116d4b9dbbb51e609c21da82c22c` pada release
+`20260925105916-f59bbcc` aktif. Kategori Kartu Koleksi memakai satu harga
+per pasangan dua kartu, terpisah dari jatah Frame reguler. Dua kartu
+disusun otomatis pada output 4R; tersedia desain foto asli dua layer
+dan desain cutout tiga layer.
+
+Workspace internal Saga Studio memiliki 35 desain draft dalam 9 tema;
+35 preview server terbaca, 0 published, harga kategori belum diatur,
+dan publikasi cutout masih OFF. QA foto nyata, proof Epson L8050,
+keputusan harga, serta persetujuan publish admin masih diperlukan.
+Runner Studio kehilangan receipt akhir akibat koneksi SSH tertahan setelah
+aktivasi; pointer, provenance, service, halaman publik, dan jurnal diverifikasi
+terpisah. `PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
+BUSINESS_READY=false`.
 
 SagaView Studio S383 exact source
 `8b1197534bec3e426d8596784915a4ab61567b1a` sudah `SOURCE_PUSHED /
@@ -18,7 +36,7 @@ payment, serta SagaBook tidak berubah. Exact gate lulus 284 unit test, full
 Playwright 170 pass + 3 skip terkontrol, format, lint, typecheck, client/SSR
 build, bundle budget 316,5 KiB dari 450 KiB, dan npm audit nol vulnerability.
 
-Production memakai backend exact
+Pada rilis S383, production memakai backend exact
 `ceb33732144badbb929d212b0d5d7b3fd0e24474` pada immutable release
 `20260903003542-ceb3373`; backend tidak berubah pada release S383. Rollback
 tetap tersedia pada backend `20260831080506-5f642d8` dan Studio

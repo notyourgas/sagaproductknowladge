@@ -1,5 +1,23 @@
 # SagaView Changelog
 
+## 2026-09-25 - Card TCG production dan 35 draft Saga Studio
+
+- Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
+  PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING / BUSINESS_READY=false`.
+- Source/release: backend `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` /
+  `20260925094720-ee3ddee`; Studio
+  `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` /
+  `20260925105916-f59bbcc`.
+- Kategori harga per pasangan, desain dua/tiga layer, pilihan campuran dengan
+  Frame reguler, dan layout dua kartu pada 4R tersedia. Cutout publish OFF.
+- Backup terenkripsi/offsite/restore, migrasi spesifik, gate source,
+  service/provenance/public smoke, rollback pointer, dan jurnal diperiksa.
+  Receipt akhir runner Studio terputus di SSH setelah switch; runtime
+  diverifikasi independen.
+- Workspace internal Saga Studio: 35 draft/9 tema, 35 preview terbaca,
+  0 published, harga belum diatur. QA foto nyata, proof Epson L8050,
+  harga, dan publish admin masih terbuka; Card belum siap dijual.
+
 ## 2026-09-07 - S383 non-destructive slot photo pan
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /

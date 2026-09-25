@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-25 — SagaView Card TCG production, belum siap dijual
+
+- `CONFIRMED`: backend exact `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`
+  dan Studio exact `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` aktif.
+  Kategori Card satu harga per dua kartu, kelipatan dua, campuran Frame
+  reguler diperbolehkan tanpa memakai jatah Frame reguler, dan dua kartu
+  ditata pada output 4R. Desain dua/tiga layer didukung.
+- Workspace internal Saga Studio memiliki 35 draft/9 tema dan 35 preview
+  server terbaca; belum ada desain terbit dan harga kategori belum diatur.
+  Publikasi cutout OFF. QA foto nyata, proof Epson L8050, harga, dan signoff
+  admin/physical UAT diperlukan sebelum penjualan. Runner Studio kehilangan
+  receipt akhir karena SSH tertahan setelah switch; runtime diverifikasi
+  terpisah. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## Update 2026-09-25 — Kuota QRIS publik teruji native, belum live
 
 - `CONFIRMED`: source SagaPOS `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push; guard publik menolak canary privat/bukti basi, laporan menandai kelebihan batas keranjang/subsidi, dan kuota slot ke-100 lulus PostgreSQL 18 disposable dua writer serta replay setelah koneksi baru. Regresi penuh 1.667 pass/0 fail/73 skip. Tidak ada deploy atau payment mutation.

@@ -1,5 +1,23 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-211 — Kategori Kartu Koleksi SagaView
+
+- Tanggal: 2026-09-25. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: produk Card TCG pada SagaView untuk Saga Studio.
+- Keputusan: satu kategori Card dengan satu harga per pasangan dua kartu,
+  berlaku bagi semua desain. Pemilihan selalu kelipatan dua, boleh dicampur
+  dengan Frame reguler dalam satu sesi, tetapi tidak memakai jatah Frame
+  reguler. Dua kartu ditempatkan otomatis pada kanvas print 4R. Harga diatur
+  kemudian oleh admin di Dashboard. Tema dua layer mempertahankan background
+  foto asli; tema tiga layer memakai cutout subjek di atas background desain.
+- Alasan: variasi desain tetap sederhana untuk operator dan harga dapat
+  ditentukan di satu tempat. Alternatif harga berbeda per desain tidak dipilih.
+- Dampak: source backend/Studio Card aktif; 35 desain masih draft di workspace
+  internal Saga Studio. QA foto nyata, proof Epson L8050, harga, dan publish
+  admin belum selesai. `BUSINESS_READY=false`.
+- Terkait: [SagaView](products/sagaview/PRODUCT.md),
+  [dossier](products/sagaview/DOSSIER.md), dan [gaps](GAPS.md).
+
 ## DEC-210 — Batas niat uji QRIS publik Kiosk dan Order Meja
 
 - Tanggal: 2026-09-24. Status: `CONFIRMED` untuk batas Owner; pemberi keputusan Andreas.

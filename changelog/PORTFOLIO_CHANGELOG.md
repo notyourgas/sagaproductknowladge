@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-09-25 — SagaView Card TCG production, katalog masih draft
+
+- `CONFIRMED`: backend `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` dan
+  Studio `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` aktif di production.
+  Kartu Koleksi memakai satu harga per dua kartu, dapat dicampur Frame reguler,
+  dan disusun dua kartu pada 4R. Desain foto asli dua layer dan cutout tiga
+  layer didukung.
+- Workspace internal Saga Studio memuat 35 draft/9 tema; 35 preview terbaca,
+  0 terbit, harga belum ditetapkan, cutout publish OFF. Gate recovery/source
+  dan runtime lulus; receipt akhir runner Studio terputus di SSH setelah
+  aktivasi dan diganti verifikasi independen. Proof Epson L8050, QA foto
+  nyata, harga, serta approval admin masih terbuka; `BUSINESS_READY=false`.
+
 ## 2026-09-25 — SagaPOS QRIS publik: gate native source-only
 
 - `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push. Kuota `PUBLIC99` lulus uji PostgreSQL 18 disposable dua writer untuk slot ke-100/replay/kill switch, dan guard readiness menolak canary privat. Full lokal 1.667 pass/0 fail/73 skip; ini bukan transaksi atau deploy. Gateway publik/checkout/release masih terbuka; Kiosk/QR meja simulator, `BUSINESS_READY=false`.
