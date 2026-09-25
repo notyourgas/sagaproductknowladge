@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-25 — Halaman laporan Gateway Owner ditambahkan di source
+
+- `CONFIRMED`: commit SagaPOS `e7e9c675097b2f68ebc980dc8252e5a4f631634a` menambah `#gateway-payments`, endpoint laporan Owner baca-saja, dan query Postgres scoped untuk intent QRIS Gateway production. Alasan: Owner dapat menelusuri status dan mismatch tanpa menyamakan POS paid dengan payout provider.
+- File source: service/API/production composition, dashboard UI/CSS, dokumentasi, dan tes. Regresi penuh 1.676 pass/0 fail/73 skip; 50/50 tes relevan; static/type 631 modul; audit dependency production 0. Tidak ada schema/provider mutation.
+- Settlement/fee/payout tetap belum terverifikasi sampai feed Gateway sah; production tidak berubah dalam pekerjaan ini. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Guard pembayaran publik dan gate PostgreSQL native
 
 - `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push; guard readiness menolak canary privat/bukti basi, laporan mengangkat kelebihan cap keranjang/subsidi, dan uji kuota native dua writer lulus. Alasan: pilot QRIS publik tidak boleh memakai izin privat atau menyembunyikan subsidi di laporan.

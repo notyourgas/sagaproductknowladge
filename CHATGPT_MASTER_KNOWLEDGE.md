@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-25 — SagaPOS Owner Payment Gateway report belum live
+
+- `CONFIRMED`: SagaPOS source `e7e9c675097b2f68ebc980dc8252e5a4f631634a` ter-push dengan halaman `#gateway-payments` pada Keuangan/Laporan, hanya Owner dan baca-saja. Laporan membaca intent SagaDev Gateway mode production dari Postgres SagaPOS per outlet/tanggal bisnis, mengecualikan demo, dan memisahkan paid terverifikasi POS dari paid yang perlu rekonsiliasi. Full 1.676 pass/0 fail/73 skip; relevan 50/50; static/type 631; audit dependency production 0.
+- `NEEDS CONFIRMATION`: feed settlement/fee/payout Gateway, rilis source ini, authenticated UAT, dan transaksi partner. Payout tampil belum terverifikasi, bukan Rp0. Tidak ada deploy atau aktivasi payment oleh perubahan ini; Kiosk/QR meja publik belum dinyatakan siap QRIS asli. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-25 — SagaView Card TCG production, belum siap dijual
 
 - `CONFIRMED`: backend exact `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`

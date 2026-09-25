@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-25 — SagaPOS Owner Payment Gateway report source-only
+
+- `CONFIRMED`: source SagaPOS `e7e9c675097b2f68ebc980dc8252e5a4f631634a` ter-push. Halaman/API Owner laporan intent QRIS Gateway production ditambahkan; paid dibedakan dari settlement/payout yang belum terbukti. Alasan: transparansi transaksi dan rekonsiliasi tanpa angka keuangan palsu.
+- Area knowledge: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, SYNC_STATUS. Full 1.676 pass/0 fail/73 skip, tes relevan 50/50, static/type 631, audit dependency production 0. Production tidak berubah; release dan feed settlement upstream masih terbuka. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Katalog Card Saga Studio terbit
 
 - `CONFIRMED`: Andreas meminta seluruh desain ditampilkan setelah uji

@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-25 — Laporan Payment Gateway Owner source-only
+
+- `CONFIRMED`: source SagaPOS `e7e9c675097b2f68ebc980dc8252e5a4f631634a` ter-push pada `codex/sagapos-gateway-report-page-20260925`. Menu Keuangan/Laporan memiliki halaman Owner baca-saja untuk intent QRIS SagaDev Gateway production per outlet/tanggal bisnis. Paid terverifikasi POS dibedakan dari pending, gagal, kedaluwarsa, dan paid yang perlu rekonsiliasi; data demo dan scope lain dikecualikan.
+- Regresi penuh 1.676 pass/0 fail/73 skip, tes relevan 50/50, static/type 631 modul, audit dependency production 0. Payout tetap belum terverifikasi tanpa feed settlement independen. Tidak ada migrasi, pembayaran baru, atau deploy. `SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- `NEEDS CONFIRMATION`: feed settlement/fee/payout upstream, authenticated production UAT, release/recovery gate, dan transaksi partner. Kiosk/QR meja publik belum dinyatakan siap QRIS asli.
+
 ## 2026-09-25 — Guard Gateway publik dan kuota native source-only
 
 - `CONFIRMED`: source `0f8ddc62e35de181a3411b52755c1740e1703d78` ter-push. Guard `PUBLIC99` menolak readiness canary privat, snapshot basi, batas Gateway berlebih, atau metode selain QRIS. Laporan menandai keranjang/diskon di atas batas Owner sebagai exception, meskipun pembayaran pelanggan tampak kecil.

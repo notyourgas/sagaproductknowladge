@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-25 — Laporan Gateway Owner source-only, settlement belum tersedia
+
+- `CONFIRMED`: source SagaPOS `e7e9c675097b2f68ebc980dc8252e5a4f631634a` sudah memiliki halaman/API Owner baca-saja untuk mirror intent Gateway production. Ini menutup gap UI/query lokal yang tercatat pada entri 24 September, tetapi **tidak** menutup gap data Gateway live/settlement. Full 1.676 pass/0 fail/73 skip dan 50/50 tes relevan; belum dideploy.
+- `NEEDS CONFIRMATION`: feed fee/settlement/payout independen dan rekonsiliasi, authenticated production UAT, serta gate rilis/recovery. Jangan menamai POS paid sebagai uang diterima merchant atau menganggap pembayaran publik Kiosk/QR meja sudah aktif. `BUSINESS_READY=false`.
+
 ## 2026-09-25 — Residual Card TCG SagaView setelah rilis
 
 - `CONFIRMED`: backend dan Studio Card aktif; akun Owner Saga Studio

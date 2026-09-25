@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-25 — Owner Payment Gateway report dan batas data
+
+Source `e7e9c675097b2f68ebc980dc8252e5a4f631634a` menghubungkan halaman `#gateway-payments` dan API Owner baca-saja ke mirror Postgres SagaPOS: order, pembayaran QRIS, intent Gateway mode production, dan event konfirmasi provider yang sudah dipersist server. Scope organization/outlet berasal dari runtime, bukan query browser. Ringkasan dan halaman memakai snapshot `REPEATABLE READ READ ONLY`; tanggal bisnis WIB dipaginasi 50, tanpa polling otomatis atau raw callback/provider reference/PII. Paid digolongkan terverifikasi POS hanya jika order, satu payment, satu intent, satu event paid, dan nominalnya cocok; mismatch ditandai untuk rekonsiliasi. Ini **bukan** bukti settlement/payout Gateway. Nilai payout null sampai ada feed settlement sah.
+
+Postgres disposable menolak bocor outlet/tenant dan mengecualikan demo; browser Owner mobile 390 dan desktop 1440 plus a11y/keyboard, endpoint Owner-only, serta regresi penuh lulus. Source saja berubah; tidak ada migrasi, artifact rilis, transaksi, atau perubahan Gateway. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Pembuktian kuota native dan pemisahan canary
 
 Source `0f8ddc62e35de181a3411b52755c1740e1703d78` menambah guard snapshot readiness publik yang eksplisit (`PUBLIC99`, QRIS, waktu observasi segar, jendela dan plafon) serta exception laporan untuk keranjang dan diskon melewati cap. Uji PostgreSQL 18 disposable membuktikan dua writer berebut slot ke-100 hanya menghasilkan satu reservasi; replay lintas koneksi dan kill switch tetap konsisten, tanpa pembayaran/provider mutation. Regresi penuh 1.667 pass/0 fail/73 skip, focused 31/31, static/type 628, audit dependency produksi 0. Source Gateway yang diperiksa masih canary privat dengan create maksimum Rp220 dan belum mengirim identitas mode/jendela untuk pilot publik; ini audit source, bukan verifikasi Gateway live. Checkout publik, signed-status, paid writer native, settlement, UAT partner, dan release candidate masih terbuka. Production tidak dimutasi oleh pekerjaan ini; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.

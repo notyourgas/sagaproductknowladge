@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-25 — SagaPOS Owner Payment Gateway report source-only
+
+- `CONFIRMED`: source `e7e9c675097b2f68ebc980dc8252e5a4f631634a` menambah halaman Keuangan/Laporan baca-saja untuk intent QRIS SagaDev Gateway production, scoped per outlet/tanggal bisnis. Paid tanpa bukti cocok masuk review; payout tidak dipalsukan dari angka penjualan.
+- Regresi penuh 1.676 pass/0 fail/73 skip, tes relevan 50/50, static/type 631 dan dependency production 0. Tidak ada deploy, transaksi, atau pembayaran publik baru. Settlement upstream dan UAT production masih terbuka; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — Katalog Card Saga Studio terbit
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: 35 desain dalam 9 tema diterbitkan
