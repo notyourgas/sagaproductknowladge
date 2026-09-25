@@ -4,8 +4,10 @@
 
 - `CONFIRMED`: backend dan Studio Card aktif; workspace internal Saga Studio
   memiliki 35 draft/9 tema, 35 preview terbaca, 0 published. Harga kategori
-  belum diatur dan publikasi cutout masih OFF.
-- `NEEDS CONFIRMATION`: harga per pasangan ditetapkan admin, QA potret nyata
+  Rp25.000 per pasangan dua kartu telah diatur dan publikasi cutout masih OFF.
+  Lima aset model/WASM production merespons 200 setelah perbaikan rute;
+  empat foto contoh menghasilkan mask pada uji lokal.
+- `NEEDS CONFIRMATION`: koreksi visual tiap desain dengan potret nyata
   untuk tiap desain termasuk tepi hijab/rambut/tangan, proof dua kartu pada
   Epson L8050, keputusan desain mana diterbitkan, dan receipt physical UAT.
   Runner Studio kehilangan receipt akhir pada SSH setelah switch; runtime

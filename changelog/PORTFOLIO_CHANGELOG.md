@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-25 — Harga kategori Card Saga Studio dikonfirmasi
+
+- `CONFIRMED`: harga Kartu Koleksi Rp25.000 per dua kartu tersimpan dan
+  diverifikasi pada workspace Owner Saga Studio. Semua 35 desain tetap draft.
+- Rute aset model/WASM cutout production diperbaiki setelah temuan 404;
+  lima URL kini 200 dan empat foto contoh menghasilkan mask lokal. Publikasi
+  cutout OFF, koreksi visual dan proof Epson L8050 tertunda. Card belum siap dijual;
+  `BUSINESS_READY=false`.
+
 ## 2026-09-25 — SagaView Card TCG production, katalog masih draft
 
 - `CONFIRMED`: backend `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` dan

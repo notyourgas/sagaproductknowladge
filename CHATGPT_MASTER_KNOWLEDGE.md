@@ -8,8 +8,11 @@
   reguler diperbolehkan tanpa memakai jatah Frame reguler, dan dua kartu
   ditata pada output 4R. Desain dua/tiga layer didukung.
 - Workspace internal Saga Studio memiliki 35 draft/9 tema dan 35 preview
-  server terbaca; belum ada desain terbit dan harga kategori belum diatur.
-  Publikasi cutout OFF. QA foto nyata, proof Epson L8050, harga, dan signoff
+  server terbaca; belum ada desain terbit. Harga kategori Rp25.000 per dua
+  kartu telah tersimpan dan dibaca ulang pada workspace Owner.
+  Publikasi cutout OFF. Rute model/WASM cutout production telah diperbaiki;
+  lima URL merespons 200 dan empat foto contoh menghasilkan mask lokal.
+  Koreksi visual per desain, proof Epson L8050, dan signoff
   admin/physical UAT diperlukan sebelum penjualan. Runner Studio kehilangan
   receipt akhir karena SSH tertahan setelah switch; runtime diverifikasi
   terpisah. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.

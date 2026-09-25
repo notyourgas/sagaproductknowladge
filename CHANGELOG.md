@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-25 — Harga Card Saga Studio dan temuan cutout production
+
+- `CONFIRMED`: keputusan Andreas menetapkan Rp25.000 per dua kartu; harga
+  kategori tersimpan dan dibaca ulang pada akun Owner Saga Studio. Perubahan
+  dokumentasi mencakup SagaView PRODUCT/DOSSIER/CHANGELOG, portfolio, master,
+  DECISIONS, GAPS, serta SYNC_STATUS. Source release Card tetap sama.
+- 35 draft/0 published. Aset model/WASM cutout sempat 404; rute production
+  diperbaiki dan lima URL kini 200. Empat foto contoh menghasilkan mask
+  lokal; koreksi visual masih diperlukan. Proof Epson L8050 dan
+  signoff admin tertunda. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-25 — SagaView Card TCG production dan 35 draft Saga Studio
 
 - `CONFIRMED`: source backend `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`

@@ -7,7 +7,8 @@ kartu; pembelian selalu kelipatan dua, boleh dicampur dengan Frame reguler,
 dan tidak memakai jatah Frame reguler. Desain kartu 63,5 × 88,9 mm;
 dua kartu ditempatkan otomatis pada output 4R. Tema dua layer mempertahankan
 foto/background asli di bawah frame PNG; tema tiga layer memakai background
-desain, subjek cutout, dan frame PNG. Harga belum ditentukan.
+desain, subjek cutout, dan frame PNG. Harga kategori kini Rp25.000 per dua kartu,
+berlaku sama untuk semua desain Card; kategori Frame reguler terpisah.
 
 Backend source `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` pada release
 `20260925094720-ee3ddee` aktif dengan migrasi Card spesifik tercatat satu
@@ -20,8 +21,13 @@ akibat sesi SSH tertahan setelah switch; pemeriksaan runtime independen lulus.
 Semua 35 paket per desain dari 9 tema diimpor ke workspace internal Saga
 Studio sebagai draft. Preview 35/35 terbaca; 0 published. Publikasi cutout
 masih ditahan dan katalog pelanggan hanya menampilkan desain published.
-QA foto nyata, proof Epson L8050, harga, keputusan publish admin, dan
-physical UAT masih terbuka; `BUSINESS_READY=false`.
+Harga kategori telah disimpan dan dibaca ulang pada workspace Owner, tanpa
+menerbitkan desain. Aset model dan WASM cutout sempat 404 karena rute static
+belum terpasang; rute diperbaiki dengan backup dan rollback otomatis, lalu
+lima URL production merespons 200 dan checksum server cocok. Empat foto
+contoh menghasilkan mask dalam uji lokal. Koreksi visual per desain,
+proof Epson L8050, keputusan publish admin, dan physical UAT masih terbuka;
+`BUSINESS_READY=false`.
 
 ## S383 non-destructive slot photo viewport
 

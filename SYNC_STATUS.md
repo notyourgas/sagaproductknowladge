@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-25 — Harga Card Saga Studio dan rute aset cutout
+
+- `CONFIRMED`: harga kategori Kartu Koleksi Rp25.000 per dua kartu tersimpan
+  dan terverifikasi ulang pada akun Owner Saga Studio; 35 desain tetap draft,
+  0 published. Source/release Card tidak berubah.
+- Rute model/WASM cutout production diperbaiki setelah temuan 404; lima
+  aset kini 200 dan empat foto contoh menghasilkan mask lokal. Cutout publish
+  OFF. Koreksi visual, proof Epson L8050, dan signoff admin masih diperlukan.
+  Sinkronisasi: SagaView PRODUCT/DOSSIER/CHANGELOG, portfolio, master,
+  DECISIONS, GAPS, root changelog. `BUSINESS_READY=false`; knowledge commit
+  `main HEAD`.
+
 ## 2026-09-25 — SagaView Card TCG production dan draft Saga Studio
 
 - `CONFIRMED`: backend `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` /

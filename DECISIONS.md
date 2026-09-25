@@ -7,14 +7,16 @@
 - Keputusan: satu kategori Card dengan satu harga per pasangan dua kartu,
   berlaku bagi semua desain. Pemilihan selalu kelipatan dua, boleh dicampur
   dengan Frame reguler dalam satu sesi, tetapi tidak memakai jatah Frame
-  reguler. Dua kartu ditempatkan otomatis pada kanvas print 4R. Harga diatur
-  kemudian oleh admin di Dashboard. Tema dua layer mempertahankan background
+  reguler. Dua kartu ditempatkan otomatis pada kanvas print 4R. Harga yang
+  diputuskan kemudian adalah Rp25.000 per pasangan dan sudah disimpan oleh
+  Owner di Dashboard. Tema dua layer mempertahankan background
   foto asli; tema tiga layer memakai cutout subjek di atas background desain.
 - Alasan: variasi desain tetap sederhana untuk operator dan harga dapat
   ditentukan di satu tempat. Alternatif harga berbeda per desain tidak dipilih.
 - Dampak: source backend/Studio Card aktif; 35 desain masih draft di workspace
-  internal Saga Studio. QA foto nyata, proof Epson L8050, harga, dan publish
-  admin belum selesai. `BUSINESS_READY=false`.
+  internal Saga Studio. Rute model/WASM cutout production telah diperbaiki;
+  koreksi visual tiap desain, proof Epson L8050, dan publish admin belum
+  selesai. `BUSINESS_READY=false`.
 - Terkait: [SagaView](products/sagaview/PRODUCT.md),
   [dossier](products/sagaview/DOSSIER.md), dan [gaps](GAPS.md).
 

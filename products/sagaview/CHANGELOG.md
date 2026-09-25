@@ -1,5 +1,16 @@
 # SagaView Changelog
 
+## 2026-09-25 - Harga Card Saga Studio dan audit aset cutout
+
+- `CONFIRMED`: kategori Kartu Koleksi pada workspace Owner Saga Studio
+  sekarang Rp25.000 per pasangan dua kartu; pembacaan ulang mengonfirmasi
+  harga. Seluruh 35 desain tetap draft dan 0 published.
+- Pemeriksaan GET production sempat menemukan aset model/WASM cutout 404;
+  rute static diperbaiki dengan backup/rollback guard. Lima aset kini 200
+  dan empat foto contoh menghasilkan mask lokal. Cutout publish tetap OFF
+  sampai koreksi visual dan proof Epson L8050 selesai.
+  `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-25 - Card TCG production dan 35 draft Saga Studio
 
 - Klasifikasi: `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED /
