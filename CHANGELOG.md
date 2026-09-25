@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-25 — Tab kategori dan jumlah Card SagaView
+
+- `CONFIRMED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`
+  aktif pada `20260925160512-ed11e14`. Knowledge SagaView PRODUCT,
+  DOSSIER, CHANGELOG, portfolio, master, DECISIONS, GAPS, dan SYNC_STATUS mencatat
+  tab Kartu Koleksi serta ringkasan pilihan; backend, harga, dan katalog
+  tetap. `BUSINESS_READY=false`.
+
 ## 2026-09-25 — SagaPOS Owner Payment Gateway report source-only
 
 - `CONFIRMED`: source SagaPOS `e7e9c675097b2f68ebc980dc8252e5a4f631634a` ter-push. Halaman/API Owner laporan intent QRIS Gateway production ditambahkan; paid dibedakan dari settlement/payout yang belum terbukti. Alasan: transparansi transaksi dan rekonsiliasi tanpa angka keuangan palsu.

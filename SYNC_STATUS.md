@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-25 — UI tab Card SagaView aktif
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`
+  / `20260925160512-ed11e14`; backend tetap `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`.
+  Kartu Koleksi kini tab kategori dengan penanda desain/jumlah dan ringkasan
+  pasangan 4R. Runner dan verifikasi runtime selesai. Hosted CI tidak
+  mengeksekusi job; gate lokal penuh lulus. UAT autentikasi dan proof fisik
+  belum tuntas, `BUSINESS_READY=false`.
+- Sinkronisasi: SagaView PRODUCT/DOSSIER/CHANGELOG, portfolio, master,
+  DECISIONS, GAPS, root changelog; knowledge commit `main HEAD`.
+
 ## 2026-09-25 — SagaPOS Owner Payment Gateway report source-only
 
 - `CONFIRMED`: branch source `codex/sagapos-gateway-report-page-20260925` commit `e7e9c675097b2f68ebc980dc8252e5a4f631634a` ter-push. Sinkronisasi: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, GAPS, root changelog. Halaman Owner/API read-only lokal tervalidasi, payout belum terverifikasi, tanpa deploy atau pembayaran baru.

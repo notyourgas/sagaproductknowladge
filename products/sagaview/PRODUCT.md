@@ -2,11 +2,19 @@
 
 Updated: 25 September 2026 WIB
 
+`CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`
+aktif pada release `20260925160512-ed11e14`. Kartu Koleksi sekarang tab
+kategori tersendiri pada pemilih preset pelanggan, sebelum tab Semua. Tab
+menampilkan jumlah kartu terpilih; tiap desain menampilkan tanda terpilih
+dan kontrol jumlah. Ringkasan menampilkan desain, jumlah, pasangan, lembar
+4R, dan harga; pilihan bertahan saat beralih ke kategori Frame reguler.
+Backend, 35 desain terbit, dan harga Rp25.000 per dua kartu tidak berubah.
+UAT login lokal dan proof Epson L8050 belum lengkap; `BUSINESS_READY=false`.
+
 SagaView Card TCG kini tersedia di production pada katalog Saga Studio.
 Backend exact `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` pada release
-`20260925094720-ee3ddee` dan Studio exact
-`f59bbcc2609f116d4b9dbbb51e609c21da82c22c` pada release
-`20260925105916-f59bbcc` aktif. Kategori Kartu Koleksi memakai satu harga
+`20260925094720-ee3ddee` tetap aktif; Studio release sebelumnya
+`20260925105916-f59bbcc` kini rollback. Kategori Kartu Koleksi memakai satu harga
 per pasangan dua kartu, terpisah dari jatah Frame reguler. Dua kartu
 disusun otomatis pada output 4R; tersedia desain foto asli dua layer
 dan desain cutout tiga layer.

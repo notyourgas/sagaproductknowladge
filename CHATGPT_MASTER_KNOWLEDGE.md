@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-25 — Pemilih Card SagaView memakai tab kategori
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`
+  / `20260925160512-ed11e14` mengganti panel Card di bawah Frame menjadi
+  tab Kartu Koleksi di baris kategori. Jumlah terpilih tampak pada tab dan
+  tile, dapat diatur per desain, serta dirangkum sebagai pasangan 4R.
+  Pilihan tetap ada saat beralih tab dan dapat dicampur dengan Frame reguler.
+  Backend, harga Rp25.000/dua kartu, dan 35 desain terbit tetap;
+  `BUSINESS_READY=false` sampai proof fisik dan UAT lengkap.
+
 ## Update 2026-09-25 — SagaPOS Owner Payment Gateway report belum live
 
 - `CONFIRMED`: SagaPOS source `e7e9c675097b2f68ebc980dc8252e5a4f631634a` ter-push dengan halaman `#gateway-payments` pada Keuangan/Laporan, hanya Owner dan baca-saja. Laporan membaca intent SagaDev Gateway mode production dari Postgres SagaPOS per outlet/tanggal bisnis, mengecualikan demo, dan memisahkan paid terverifikasi POS dari paid yang perlu rekonsiliasi. Full 1.676 pass/0 fail/73 skip; relevan 50/50; static/type 631; audit dependency production 0.
@@ -8,7 +18,7 @@
 ## Update 2026-09-25 — SagaView Card TCG production, belum siap dijual
 
 - `CONFIRMED`: backend exact `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`
-  dan Studio exact `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` aktif.
+  dan Studio `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` adalah basis rilis Card awal.
   Kategori Card satu harga per dua kartu, kelipatan dua, campuran Frame
   reguler diperbolehkan tanpa memakai jatah Frame reguler, dan dua kartu
   ditata pada output 4R. Desain dua/tiga layer didukung.

@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-25 — Sisa gate setelah perbaikan tab Card
+
+- `CONFIRMED`: perbaikan tab dan ringkasan Card Studio aktif pada release
+  `20260925160512-ed11e14`. Source, test lokal, browser, runner, pointer,
+  provenance, service, public route, dan rollback diperiksa. Hosted CI
+  tidak mengeksekusi job, sehingga statusnya `CI_NOT_RUN`.
+- `NEEDS CONFIRMATION`: audit Owner menemukan masa trial UAT lokal kembali
+  kedaluwarsa walau entitlement pusat valid; authenticated UAT belum boleh
+  diklaim. Proof fisik dua kartu pada Epson L8050 dan safe area cetak juga
+  masih terbuka. `BUSINESS_READY=false`.
+
 ## 2026-09-25 — Laporan Gateway Owner source-only, settlement belum tersedia
 
 - `CONFIRMED`: source SagaPOS `e7e9c675097b2f68ebc980dc8252e5a4f631634a` sudah memiliki halaman/API Owner baca-saja untuk mirror intent Gateway production. Ini menutup gap UI/query lokal yang tercatat pada entri 24 September, tetapi **tidak** menutup gap data Gateway live/settlement. Full 1.676 pass/0 fail/73 skip dan 50/50 tes relevan; belum dideploy.

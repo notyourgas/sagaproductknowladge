@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-212 — Card tampil sebagai tab kategori preset SagaView
+
+- Tanggal: 2026-09-25. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: katalog Kartu Koleksi berada di tab khusus pada baris kategori
+  preset, bukan panel di bawah seluruh Frame reguler. Tab dan tiap desain
+  harus memperlihatkan pilihan serta jumlahnya; ringkasan menjelaskan
+  pasangan dua kartu, lembar 4R, dan harga.
+- Dampak: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0` aktif pada
+  `20260925160512-ed11e14`. Pilihan campuran dan batas kelipatan dua dari
+  DEC-211 tetap berlaku; `BUSINESS_READY=false` sampai gate fisik/UAT.
+- Terkait: [SagaView](products/sagaview/PRODUCT.md),
+  [dossier](products/sagaview/DOSSIER.md), dan [gaps](GAPS.md).
+
 ## DEC-211 — Kategori Kartu Koleksi SagaView
 
 - Tanggal: 2026-09-25. Status: `CONFIRMED`; pemberi keputusan Andreas.

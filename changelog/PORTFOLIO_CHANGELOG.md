@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-09-25 — UI Card SagaView menjadi tab kategori
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141` menempatkan
+  Kartu Koleksi di tab kategori preset dengan badge jumlah, penanda desain
+  terpilih, kontrol kuantitas, dan ringkasan pasangan 4R. Harga, backend,
+  dan 35 desain Saga Studio tetap. Physical UAT belum lengkap;
+  `BUSINESS_READY=false`.
+
 ## 2026-09-25 — SagaPOS Owner Payment Gateway report source-only
 
 - `CONFIRMED`: source `e7e9c675097b2f68ebc980dc8252e5a4f631634a` menambah halaman Keuangan/Laporan baca-saja untuk intent QRIS SagaDev Gateway production, scoped per outlet/tanggal bisnis. Paid tanpa bukti cocok masuk review; payout tidak dipalsukan dari angka penjualan.

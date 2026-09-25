@@ -1,5 +1,17 @@
 # SagaView Changelog
 
+## 2026-09-25 - Card menjadi tab kategori dan pilihan lebih jelas
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `ed11e141d4a17d47dae37f7cea380cca35cb60a0`
+  pada `20260925160512-ed11e14`. Kartu Koleksi berpindah dari panel bawah
+  ke tab kategori. Badge tab, penanda desain terpilih, kontrol jumlah per
+  desain, dan ringkasan pasangan/lembar 4R/harga membantu operator melihat
+  pilihan saat mencampur Frame reguler dan Card.
+- 296 tes unit/integrasi, gate browser penuh, audit dependency, build, dan
+  public smoke lulus. Hosted CI tidak mengeksekusi job. Backend, katalog
+  35 desain, dan harga tetap. Physical UAT dan proof Epson L8050 tertunda;
+  `BUSINESS_READY=false`.
+
 ## 2026-09-25 - Katalog 35 Card Saga Studio diterbitkan
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: berdasarkan instruksi Andreas setelah

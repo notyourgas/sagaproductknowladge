@@ -1,5 +1,26 @@
 # SagaView Dossier
 
+## Tab Kartu Koleksi pada pemilih preset, 25 September 2026
+
+`CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`:
+Studio source `ed11e141d4a17d47dae37f7cea380cca35cb60a0` aktif pada
+release `20260925160512-ed11e14`. Sebelumnya katalog Card berupa panel
+panjang setelah galeri Frame. Sekarang Kartu Koleksi berada di baris tab
+kategori, sebelum Semua, dan hanya galeri kategori aktif yang ditampilkan.
+Badge tab menunjukkan jumlah kartu; tile desain terpilih memiliki garis,
+badge jumlah, serta tombol tambah/kurang. Ringkasan di atas galeri menunjukkan
+desain dan jumlah, pasangan/lembar 4R, dan status minimal genap. Pilihan
+bertahan saat tab Frame reguler dan Card ditukar; jatah Frame tetap terpisah.
+
+Runner selesai dengan receipt terminal, full local/browser gate dan public
+smoke lulus. Runtime provenance, pointer, rollback, service, dan jurnal
+diperiksa independen. Backend tetap `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`;
+katalog 35 desain dan harga Rp25.000 per pasangan tidak dimutasi. Hosted CI
+tidak mengeksekusi job; gate lokal runner lulus. Masa akses UAT lokal yang
+tercatat sebelumnya kembali kedaluwarsa, sehingga authenticated UAT tetap
+terbuka. Bukti cetak fisik Epson L8050 masih diperlukan dan
+`BUSINESS_READY=false`.
+
 ## Card TCG: katalog terbit Saga Studio, 25 September 2026
 
 Keputusan Owner: satu kategori Kartu Koleksi dengan harga tunggal per dua
@@ -13,7 +34,7 @@ berlaku sama untuk semua desain Card; kategori Frame reguler terpisah.
 Backend source `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d` pada release
 `20260925094720-ee3ddee` aktif dengan migrasi Card spesifik tercatat satu
 kali. Studio source `f59bbcc2609f116d4b9dbbb51e609c21da82c22c` pada
-release `20260925105916-f59bbcc` aktif dengan build flag Card. Backup
+release `20260925105916-f59bbcc` adalah rilis sebelumnya dengan build flag Card. Backup
 terenkripsi, checksum, restore disposable, gate source, pointer, provenance,
 public smoke, service, dan jurnal lulus. Runner kehilangan receipt akhir
 akibat sesi SSH tertahan setelah switch; pemeriksaan runtime independen lulus.
