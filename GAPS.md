@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-26 — QRIS merchant manual belum aktif
+
+- `CONFIRMED`: source Kiosk/Kasir/Dashboard `1eb709161aeec10381aee3580fef817cd25284f2` dan uji lokal lulus. Produksi masih memakai source lama; QR merchant asli belum diunggah, jadi pembayaran baru belum bisa dicoba.
+- `NEEDS CONFIRMATION`: verifikasi Owner segar, schema dan backup/restore/rehearsal kandidat, artifact/activation/authenticated smoke, QR tujuan merchant, dan UAT transaksi serta settlement. Gate Gateway canary lama tidak boleh dipakai sebagai bukti QRIS manual. Order Meja nyata dan promo publik 99% masih di luar rilis ini.
+
 ## 2026-09-26 — Adapter demo produksi belum lolos gate aktivasi
 
 - `CONFIRMED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` lulus regresi lokal dan uji grant/skema disposable. Disk VPS 48% saat preflight; service dan database produksi aktif, active source tetap `8dc83caa0e211cd235415fe8f267712a23117171`.

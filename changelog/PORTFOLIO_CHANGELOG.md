@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-26 — SagaPOS QRIS merchant manual Kiosk source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1eb709161aeec10381aee3580fef817cd25284f2` menambah aset QRIS Owner dan konfirmasi Kasir sebelum satu order bisnis masuk KDS. Regresi 1.651 pass/0 fail/73 skip. QR asli, production release dan UAT transaksi belum ada; Gateway existing dan Order Meja demo tidak berubah. `BUSINESS_READY=false`.
+
 ## 2026-09-26 — SagaPOS adapter QRIS statis DEMO source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` menyiapkan isolasi Postgres sintetis pada runtime produksi tanpa mengubah Gateway existing atau menghasilkan fakta keuangan. Full regression 1.644 pass/0 fail/73 skip. Owner/recovery/admission belum lulus; `BUSINESS_READY=false`.

@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-26 — QRIS statis merchant manual SagaPOS belum deploy
+
+- `CONFIRMED`: source SagaPOS `1eb709161aeec10381aee3580fef817cd25284f2` menyediakan unggah PNG merchant Owner per outlet, checkout Kiosk pending, serta tombol Kasir setelah memeriksa nominal/referensi di aplikasi merchant; barulah order/outbox/KDS bisnis ditulis. Settlement tetap `unchecked`, bukan bukti transfer bank final.
+- `NEEDS CONFIRMATION`: aset QRIS asli, gate rilis Owner/backup/rollback/authenticated smoke, dan satu UAT pembayaran nyata serta rekonsiliasi. Produksi masih `8dc83caa0e211cd235415fe8f267712a23117171`; Order Meja masih demo, promo publik 99% belum aktif. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## Update 2026-09-26 — QRIS statis DEMO SagaPOS kandidat produksi belum aktif
 
 - `CONFIRMED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` ter-push untuk opt-in Kiosk QRIS statis demo di tabel Postgres sintetis, konfirmasi kasir dan KDS demo. Ini bukan QRIS asli; SagaDev Gateway existing tidak berubah. Regresi 1.644 pass/0 fail/73 skip, check/type 623, dependency production 0.

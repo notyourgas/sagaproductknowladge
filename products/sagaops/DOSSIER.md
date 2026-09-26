@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-26 — Jalur QRIS merchant manual terpisah dari Gateway
+
+Source `1eb709161aeec10381aee3580fef817cd25284f2` menambahkan aset PNG Owner per organization/outlet dengan revision, checksum, audit dan RLS, serta rilis flag fail-closed bila skema belum ada. Kiosk hanya membuat pembayaran `pending`; tidak ada provider callback/charge. Kasir mencocokkan nominal dan referensi dari aplikasi merchant. Satu transaksi Postgres mengubah status menjadi `paid`, menulis outbox/KDS tepat sekali, dan menandai settlement `unchecked` untuk rekonsiliasi. Referensi ulang untuk payment berbeda, nominal salah, dan lintas outlet ditolak. Tidak ada QR merchant asli atau transaksi nyata dalam tes. Browser mobile Kiosk dan desktop Kasir, restart, negative auth/tenant, database disposable dan regresi penuh lulus. Ini tidak memperluas Order Meja yang masih demo dan tidak mengaktifkan promo 99% publik. Rilis produksi belum dilakukan.
+
 ## 2026-09-26 — Batas adapter produksi Kiosk QRIS statis DEMO
 
 Source `a5fa89361f73da221e82134464b5cbbf87f7163b` menambah flag opt-in produksi dan ledger skema terpisah. Order demo tetap pada tabel sintetis dan tidak masuk tabel order/pembayaran bisnis; grant runtime hanya pada tabel demo. Quote kiosk membawa metode bayar sehingga QRIS statis demo tidak memicu promo canary Gateway, sedangkan QRIS dinamis tetap pada kontrak lama. Installer kandidat menguji arsip backup terenkripsi pada restore disposable baru, mempertahankan skrip recovery yang dipatok hash, lalu hanya boleh memasang DDL additive setelah guard exact-current dan artifact. Belum dijalankan di host; runtime produksi dan pembayaran nyata tidak berubah.

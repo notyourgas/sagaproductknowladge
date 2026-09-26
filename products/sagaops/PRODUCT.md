@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-26 — QRIS merchant manual Kiosk source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1eb709161aeec10381aee3580fef817cd25284f2` menambah unggah PNG QRIS merchant oleh Owner di Dashboard, Kiosk pending pada order/payment Postgres bisnis, dan konfirmasi Kasir berdasarkan nominal serta referensi aplikasi merchant sebelum outbox/KDS. Settlement tetap `unchecked`; ini bukan status settlement bank otomatis. QR asli belum diunggah.
+- Regresi akhir 1.651 pass/0 fail/73 skip, check/type 626 modul, dependency produksi 0 vulnerability. Produksi masih active `8dc83caa0e211cd235415fe8f267712a23117171`; schema, artifact, Owner, recovery, dan authenticated release belum aktif. Order Meja tetap simulator, promo 99% publik tidak diaktifkan, Gateway existing tidak diubah; `BUSINESS_READY=false`.
+
 ## 2026-09-26 — Adapter QRIS statis DEMO produksi, belum diaktifkan
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` pada `codex/sagapos-static-demo-production-20260926` menambah opt-in produksi untuk order kiosk QRIS statis demo pada tabel Postgres sintetis, konfirmasi kasir, outbox/KDS demo, serta PNG uji yang dapat diganti Owner. Metode demo tidak memanggil SagaDev Gateway dan tidak menulis fakta penjualan/kas/settlement.

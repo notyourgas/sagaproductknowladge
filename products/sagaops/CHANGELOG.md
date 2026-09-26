@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-26 — Jalur Kiosk QRIS merchant manual siap source, belum deploy
+
+- `CONFIRMED`: source `1eb709161aeec10381aee3580fef817cd25284f2` menambah upload aset asli Owner, checkout Kiosk pending, verifikasi manual Kasir (nominal/referensi), dan order/outbox/KDS bisnis setelah konfirmasi. Alasan: uji QRIS merchant tanpa mengubah Gateway existing; settlement tetap perlu review.
+- Tes final 1.651 pass/0 fail/73 skip; check/type 626, audit production 0. QR asli belum diunggah; tidak ada pembayaran nyata. Schema/install, Owner verification, artifact/recovery, authenticated smoke dan aktivasi belum lulus. Production tidak berubah; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-26 — Adapter produksi Kiosk QRIS statis DEMO source-only
 
 - `CONFIRMED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` ter-push; opt-in produksi menahan startup jika skema sintetis belum terpasang, memisahkan quote demo dari promo Gateway, dan menambah runner instalasi dengan restore disposable. Skrip backup pemulihan yang hash-nya dipatok tetap utuh.

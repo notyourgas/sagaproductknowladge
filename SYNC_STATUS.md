@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-26 — SagaPOS QRIS merchant manual source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1eb709161aeec10381aee3580fef817cd25284f2` lulus 1.651 pass/0 fail/73 skip, check/type 626 dan audit dependency production 0. Runtime terverifikasi tetap `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; tidak ada pembayaran baru.
+- Owner akan mengunggah PNG merchant asli nanti. Schema/backup/rehearsal/artifact/authenticated release dan uji transaksi nyata belum dilakukan; Order Meja simulator, Gateway existing tidak diubah, promo 99% publik OFF. `BUSINESS_READY=false`. Sinkronisasi lewat checkout bersih terpisah; knowledge commit `main HEAD`.
+
 ## 2026-09-26 — SagaPOS adapter demo produksi source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` lulus 1.644 tes, 0 gagal, 73 skip; static/type 623 dan audit production 0. Runtime tetap `8dc83caa0e211cd235415fe8f267712a23117171`. Owner/release gate belum lulus; tidak ada transaksi baru. `BUSINESS_READY=false`.

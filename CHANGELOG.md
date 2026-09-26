@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-26 — SagaPOS menyiapkan QRIS merchant manual Kiosk
+
+- `CONFIRMED`: source `1eb709161aeec10381aee3580fef817cd25284f2` ter-push. Owner nanti dapat mengunggah QR merchant; Kasir wajib mencocokkan pembayaran sebelum order bisnis masuk KDS. Alasan: jalur uji manual terpisah dari Gateway tanpa memakai QR dummy untuk uang nyata.
+- Area: SagaOPS product/dossier/changelog, portfolio, master, GAPS, SYNC_STATUS. Regresi 1.651 pass/0 fail/73 skip; belum ada rilis, QR asli, atau transaksi nyata. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-26 — SagaPOS adapter demo produksi disiapkan, belum deploy
 
 - `CONFIRMED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` ter-push dengan isolasi Kiosk QRIS statis demo pada runtime produksi. Alasan: memberi jalur uji tahan restart tanpa mencampur fakta keuangan atau mengubah SagaDev Gateway.
