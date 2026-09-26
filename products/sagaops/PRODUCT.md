@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Kiosk cash assisted aktif; QRIS merchant menunggu aset
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: runtime SagaPOS `73c042dc478a244379ea4ae179dde04ecb18297b` (rollback `8dc83caa0e211cd235415fe8f267712a23117171`) menyediakan `CASH_ASSISTED` di Kiosk terlindung. Kasir wajib membuka shift, menerima uang fisik, lalu mengonfirmasi; baru order bisnis diteruskan ke KDS. QRIS statis manual terpasang secara fail-closed tetapi belum muncul karena PNG merchant asli belum diunggah Owner. Gateway canary existing tetap terpisah; Order Meja masih demo dan promo 99% publik OFF.
+- Regresi penuh 1.655 pass/0 fail/73 skip, check/type 626 modul, audit dependency produksi 0, backup terenkripsi/restore disposable, rehearsal kandidat-versi lama-kandidat, authenticated Owner smoke dan monitor lulus. Tidak ada transaksi pembayaran nyata yang dibuat oleh verifikasi. `AUTHENTICATED_OWNER_SMOKE_PASS / CASH_UAT_PENDING / QRIS_ASSET_PENDING / BUSINESS_READY=false`; CI hosted tidak dijalankan sesuai keputusan Owner.
+
 ## 2026-09-26 — QRIS merchant manual Kiosk source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1eb709161aeec10381aee3580fef817cd25284f2` menambah unggah PNG QRIS merchant oleh Owner di Dashboard, Kiosk pending pada order/payment Postgres bisnis, dan konfirmasi Kasir berdasarkan nominal serta referensi aplikasi merchant sebelum outbox/KDS. Settlement tetap `unchecked`; ini bukan status settlement bank otomatis. QR asli belum diunggah.

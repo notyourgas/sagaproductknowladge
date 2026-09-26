@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS Kiosk cash assisted produksi
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: runtime `73c042dc478a244379ea4ae179dde04ecb18297b` membuka cash assisted Kiosk terlindung dengan persetujuan Kasir sebelum KDS. QRIS statis manual belum tersedia sampai Owner mengunggah PNG merchant asli; Gateway existing dan Order Meja demo tidak berubah. Backup/restore, rehearsal, Owner smoke dan monitor lulus; belum ada transaksi UAT nyata. `BUSINESS_READY=false`.
+
 ## 2026-09-26 — SagaPOS QRIS merchant manual Kiosk source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1eb709161aeec10381aee3580fef817cd25284f2` menambah aset QRIS Owner dan konfirmasi Kasir sebelum satu order bisnis masuk KDS. Regresi 1.651 pass/0 fail/73 skip. QR asli, production release dan UAT transaksi belum ada; Gateway existing dan Order Meja demo tidak berubah. `BUSINESS_READY=false`.

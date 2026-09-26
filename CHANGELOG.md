@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS Kiosk cash assisted diaktifkan
+
+- `CONFIRMED`: source/runtime `73c042dc478a244379ea4ae179dde04ecb18297b` aktif; Kiosk cash memerlukan konfirmasi Kasir sebelum KDS. QRIS merchant menunggu PNG asli dan UAT, bukan pembayaran otomatis. Alasan: menyediakan uji nyata yang sempit tanpa mengubah Gateway existing atau Order Meja demo.
+- Area: SagaOPS product/dossier/changelog, portfolio, master, GAPS, SYNC_STATUS. Regresi 1.655 pass/0 fail/73 skip; artifact/recovery/Owner smoke/monitor lulus, CI hosted tidak dijalankan. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-26 — SagaPOS menyiapkan QRIS merchant manual Kiosk
 
 - `CONFIRMED`: source `1eb709161aeec10381aee3580fef817cd25284f2` ter-push. Owner nanti dapat mengunggah QR merchant; Kasir wajib mencocokkan pembayaran sebelum order bisnis masuk KDS. Alasan: jalur uji manual terpisah dari Gateway tanpa memakai QR dummy untuk uang nyata.

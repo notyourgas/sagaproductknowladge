@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Batas rilis Kiosk assisted payment
+
+Source runtime aktif `73c042dc478a244379ea4ae179dde04ecb18297b` memakai metode `CASH_ASSISTED` saja sebelum ada PNG QRIS merchant asli. Checkout Kiosk menulis order/payment pending; Kasir memverifikasi uang fisik atau, setelah Owner mengunggah QR, nominal dan referensi pada aplikasi merchant. Konfirmasi kasir yang sah mengubah payment/order secara atomik dan mengirim satu tiket KDS; upload QR tidak otomatis menyatakan pembayaran sukses. Fitur ini bukan Gateway otomatis, settlement QRIS manual tetap perlu rekonsiliasi, dan tidak mengubah Order Meja demo. Smoke lintas host membuktikan Owner Dashboard, Cashier, Kiosk terlindung, metode cash-only dan penolakan CSRF tanpa menciptakan order. Artefak/recovery/monitor lulus; UAT satu transaksi fisik, QR asli, pengecekan merchant, dan offsite backup independen masih terbuka. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-26 — Jalur QRIS merchant manual terpisah dari Gateway
 
 Source `1eb709161aeec10381aee3580fef817cd25284f2` menambahkan aset PNG Owner per organization/outlet dengan revision, checksum, audit dan RLS, serta rilis flag fail-closed bila skema belum ada. Kiosk hanya membuat pembayaran `pending`; tidak ada provider callback/charge. Kasir mencocokkan nominal dan referensi dari aplikasi merchant. Satu transaksi Postgres mengubah status menjadi `paid`, menulis outbox/KDS tepat sekali, dan menandai settlement `unchecked` untuk rekonsiliasi. Referensi ulang untuk payment berbeda, nominal salah, dan lintas outlet ditolak. Tidak ada QR merchant asli atau transaksi nyata dalam tes. Browser mobile Kiosk dan desktop Kasir, restart, negative auth/tenant, database disposable dan regresi penuh lulus. Ini tidak memperluas Order Meja yang masih demo dan tidak mengaktifkan promo 99% publik. Rilis produksi belum dilakukan.

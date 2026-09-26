@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — Kiosk cash assisted SagaPOS aktif
+
+- `CONFIRMED`: SagaPOS produksi aktif `73c042dc478a244379ea4ae179dde04ecb18297b`, rollback `8dc83caa0e211cd235415fe8f267712a23117171`. Kiosk terlindung menawarkan cash assisted; kasir membuka shift dan mengonfirmasi pembayaran sebelum order bisnis/KDS. Aset QRIS merchant manual belum diunggah, sehingga QRIS statis belum dapat dicoba; Gateway existing terpisah, Order Meja demo, promo 99% publik OFF.
+- Owner smoke lintas host, backup terenkripsi/restore disposable, rehearsal rollback, link publik, dan monitor lulus tanpa transaksi nyata. `PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_SMOKE_PASS / BUSINESS_READY=false`; UAT cash fisik, QR merchant asli, konfirmasi aplikasi merchant, settlement dan offsite independen masih diperlukan.
+
 ## Update 2026-09-26 — QRIS statis merchant manual SagaPOS belum deploy
 
 - `CONFIRMED`: source SagaPOS `1eb709161aeec10381aee3580fef817cd25284f2` menyediakan unggah PNG merchant Owner per outlet, checkout Kiosk pending, serta tombol Kasir setelah memeriksa nominal/referensi di aplikasi merchant; barulah order/outbox/KDS bisnis ditulis. Settlement tetap `unchecked`, bukan bukti transfer bank final.

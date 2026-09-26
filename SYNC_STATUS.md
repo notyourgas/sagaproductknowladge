@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — SagaPOS Kiosk cash production activation
+
+- `CONFIRMED`: SagaPOS active `73c042dc478a244379ea4ae179dde04ecb18297b`, rollback `8dc83caa0e211cd235415fe8f267712a23117171`; Kiosk cash assisted Owner-protected tersedia, QRIS statis manual menunggu PNG merchant asli. E-katalog publik baca-saja, Order Meja demo, Gateway existing terpisah, promo 99% publik OFF. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+- Provenance source berikutnya untuk koreksi alat smoke lintas host dan registry link: `5f512ca61b9d0b7a8c46c986955bd293786babce`, bukan runtime aktif. Verifikasi Owner/monitor lulus tanpa transaksi; CI hosted tidak dijalankan. Sinkronisasi melalui checkout bersih; knowledge commit `main HEAD`.
+
 ## 2026-09-26 — SagaPOS QRIS merchant manual source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1eb709161aeec10381aee3580fef817cd25284f2` lulus 1.651 pass/0 fail/73 skip, check/type 626 dan audit dependency production 0. Runtime terverifikasi tetap `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`; tidak ada pembayaran baru.

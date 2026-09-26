@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Kiosk cash assisted aktif di produksi
+
+- `CONFIRMED`: source runtime `73c042dc478a244379ea4ae179dde04ecb18297b` diaktifkan dari expected-current `8dc83caa0e211cd235415fe8f267712a23117171` yang kini rollback. Alasan: memberi satu alur uji Kiosk cash dengan konfirmasi Kasir dan KDS tanpa membuka QRIS dummy atau Gateway baru.
+- Data: tabel aset QRIS merchant ditambahkan secara aditif setelah backup terenkripsi dan restore disposable. Candidate-bound rehearsal sempat gagal karena grant pada DB restore sementara, diperbaiki pada kandidat baru dan lulus; tidak ada transaksi verifikasi. Full 1.655 pass/0 fail/73 skip, type/check 626, dependency 0, Owner smoke dan monitor lulus. QR asli, transaksi fisik UAT, rekonsiliasi dan offsite independen masih menunggu. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-26 — Jalur Kiosk QRIS merchant manual siap source, belum deploy
 
 - `CONFIRMED`: source `1eb709161aeec10381aee3580fef817cd25284f2` menambah upload aset asli Owner, checkout Kiosk pending, verifikasi manual Kasir (nominal/referensi), dan order/outbox/KDS bisnis setelah konfirmasi. Alasan: uji QRIS merchant tanpa mengubah Gateway existing; settlement tetap perlu review.

@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-27 — UAT Kiosk setelah rilis cash assisted
+
+- `CONFIRMED`: Kiosk cash assisted sudah aktif pada runtime `73c042dc478a244379ea4ae179dde04ecb18297b`; tes Owner tanpa order, recovery dan monitor lulus. QR merchant belum tersimpan, jadi QRIS manual tetap terkunci. Gateway existing dan Order Meja demo tidak diubah.
+- `NEEDS CONFIRMATION`: satu shift dan transaksi cash fisik yang disaksikan Owner, unggah PNG QRIS merchant asli, pemeriksaan pembayaran pada aplikasi merchant sebelum konfirmasi Kasir, rekonsiliasi settlement, serta offsite backup independen. Tidak ada klaim promo 99% publik atau `BUSINESS_READY`.
+
 ## 2026-09-26 — QRIS merchant manual belum aktif
 
 - `CONFIRMED`: source Kiosk/Kasir/Dashboard `1eb709161aeec10381aee3580fef817cd25284f2` dan uji lokal lulus. Produksi masih memakai source lama; QR merchant asli belum diunggah, jadi pembayaran baru belum bisa dicoba.
