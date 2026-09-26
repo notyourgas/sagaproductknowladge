@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-26 — Adapter demo produksi belum lolos gate aktivasi
+
+- `CONFIRMED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` lulus regresi lokal dan uji grant/skema disposable. Disk VPS 48% saat preflight; service dan database produksi aktif, active source tetap `8dc83caa0e211cd235415fe8f267712a23117171`.
+- `NEEDS CONFIRMATION`: Owner vault bridge belum tersedia bagi runner; backup terenkripsi dan restore di host untuk kandidat ini, rehearsal rollback, admission serta authenticated smoke belum dieksekusi. Jangan mengklaim deployment atau uji QRIS asli.
+
 ## 2026-09-26 — Gate tersisa untuk uji QRIS statis DEMO Kiosk
 
 - `CONFIRMED`: source `e9a1e202ab018fedbc587a00a09cda5967ba812b` telah ter-push dan gate lokal lulus. Data demo, gambar QR, dan KDS privat memakai Postgres terpisah; QRIS nyata tidak diaktifkan.

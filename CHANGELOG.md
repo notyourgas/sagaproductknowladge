@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-26 — SagaPOS adapter demo produksi disiapkan, belum deploy
+
+- `CONFIRMED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` ter-push dengan isolasi Kiosk QRIS statis demo pada runtime produksi. Alasan: memberi jalur uji tahan restart tanpa mencampur fakta keuangan atau mengubah SagaDev Gateway.
+- Area: SagaOPS product/dossier/changelog, portfolio, master, GAPS, SYNC_STATUS. Full regression 1.644 pass/0 fail/73 skip; gate Owner/backup/recovery/admission belum lulus. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-26 — SagaPOS demo Kiosk persisten di source
 
 - `CONFIRMED`: SagaPOS source `e9a1e202ab018fedbc587a00a09cda5967ba812b` ter-push; order QRIS statis uji, konfirmasi kasir, KDS, dan penggantian PNG Owner kini punya kontrak Postgres sintetis tahan restart. Alasan: demo tidak boleh menjadi pendapatan produksi atau hilang saat restart.

@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-26 — Adapter produksi Kiosk QRIS statis DEMO source-only
+
+- `CONFIRMED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` ter-push; opt-in produksi menahan startup jika skema sintetis belum terpasang, memisahkan quote demo dari promo Gateway, dan menambah runner instalasi dengan restore disposable. Skrip backup pemulihan yang hash-nya dipatok tetap utuh.
+- Full regression 1.644 pass/0 fail/73 skip, check/type 623, audit dependency produksi 0. Tidak ada deploy, mutasi database produksi, transaksi QRIS asli, atau perubahan gateway. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-26 — QRIS statis DEMO privat persisten, belum deploy
 
 - `CONFIRMED`: SagaPOS `e9a1e202ab018fedbc587a00a09cda5967ba812b` menambah penyimpanan Postgres sintetis untuk order kiosk uji, konfirmasi kasir, event/outbox/KDS, dan penggantian PNG melalui dashboard Owner. Alasan: status demo serta gambar tidak hilang saat restart dan tidak mencemari fakta keuangan produksi.

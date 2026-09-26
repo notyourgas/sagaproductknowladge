@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-26 — Adapter QRIS statis DEMO produksi, belum diaktifkan
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` pada `codex/sagapos-static-demo-production-20260926` menambah opt-in produksi untuk order kiosk QRIS statis demo pada tabel Postgres sintetis, konfirmasi kasir, outbox/KDS demo, serta PNG uji yang dapat diganti Owner. Metode demo tidak memanggil SagaDev Gateway dan tidak menulis fakta penjualan/kas/settlement.
+- Gate lokal: regresi 1.644 pass/0 fail/73 skip, check/type 623 modul, audit dependency produksi 0; skema dan grant diuji di Postgres disposable. Produksi tetap `8dc83caa0e211cd235415fe8f267712a23117171`; Owner, backup/restore kandidat, admission, aktivasi, dan authenticated smoke belum lulus. `BUSINESS_READY=false`.
+
 ## 2026-09-26 — Kiosk QRIS statis DEMO tahan restart, source-only
 
 - `CONFIRMED`: source SagaPOS `e9a1e202ab018fedbc587a00a09cda5967ba812b` ter-push pada `codex/sagapos-static-demo-release-20260926`. Order uji QRIS statis, konfirmasi kasir, dan status KDS disimpan di tabel Postgres sintetis terpisah dengan outbox, revision, replay, dan pemulihan setelah restart. Dashboard Owner dapat mengganti PNG uji per outlet; gambar bawaan non-scannable dan upload tidak mengaktifkan pembayaran nyata.

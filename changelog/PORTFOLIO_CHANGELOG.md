@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-26 — SagaPOS adapter QRIS statis DEMO source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `a5fa89361f73da221e82134464b5cbbf87f7163b` menyiapkan isolasi Postgres sintetis pada runtime produksi tanpa mengubah Gateway existing atau menghasilkan fakta keuangan. Full regression 1.644 pass/0 fail/73 skip. Owner/recovery/admission belum lulus; `BUSINESS_READY=false`.
+
 ## 2026-09-26 — SagaPOS Kiosk QRIS statis DEMO source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e9a1e202ab018fedbc587a00a09cda5967ba812b` menyimpan order uji, konfirmasi kasir, dan status KDS di Postgres privat serta menyediakan upload PNG uji dari dashboard Owner. Full lokal 1.642 pass/0 fail/73 skip. Belum ada release host, perubahan gateway, pembayaran asli, atau fakta keuangan produksi; `BUSINESS_READY=false`.

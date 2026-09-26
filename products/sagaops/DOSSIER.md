@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-26 — Batas adapter produksi Kiosk QRIS statis DEMO
+
+Source `a5fa89361f73da221e82134464b5cbbf87f7163b` menambah flag opt-in produksi dan ledger skema terpisah. Order demo tetap pada tabel sintetis dan tidak masuk tabel order/pembayaran bisnis; grant runtime hanya pada tabel demo. Quote kiosk membawa metode bayar sehingga QRIS statis demo tidak memicu promo canary Gateway, sedangkan QRIS dinamis tetap pada kontrak lama. Installer kandidat menguji arsip backup terenkripsi pada restore disposable baru, mempertahankan skrip recovery yang dipatok hash, lalu hanya boleh memasang DDL additive setelah guard exact-current dan artifact. Belum dijalankan di host; runtime produksi dan pembayaran nyata tidak berubah.
+
 ## 2026-09-26 — Persistensi QRIS statis DEMO privat
 
 Source `e9a1e202ab018fedbc587a00a09cda5967ba812b` menambah aggregate, event, aset PNG, inbox/proyeksi KDS, serta dead-letter khusus demo di database private staging. Checkout server membuat order `PAYMENT_PENDING`; hanya konfirmasi kasir bersesi dan ber-CSRF yang mengubah status demo menjadi `PAID` sebelum KDS. Penulisan aggregate dan outbox atomik; request serentak menunggu commit, replay tidak menambah fakta, dan payload rusak dikarantina. Setelah restart, order, konfirmasi, status KDS, dan gambar Owner dimuat dari Postgres. Batas gambar 256 KB dan revision CAS mencegah overwrite antartab. Tabel demo tidak masuk laporan penjualan, kas, settlement, atau payout produksi.
