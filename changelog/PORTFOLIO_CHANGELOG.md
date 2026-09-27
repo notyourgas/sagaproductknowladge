@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS pratinjau selisih kas saat shift berikutnya dibuka
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5d0d1fe` membandingkan hitungan opening manual dengan kas yang dicatat ditinggalkan pada closing terakhir tanpa auto-fill atau konfirmasi uang. Regresi 1.660 pass/0 fail/73 skip; produksi belum berubah karena gate rilis belum lengkap. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS menampilkan rekonsiliasi kasir yang telah ditutup
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` menjaga ringkasan hitung kas terakhir terlihat setelah reload, dengan kas ditinggalkan dan untuk disetor terpisah. Regresi 1.660 pass/0 fail/73 skip; produksi belum berubah karena gate rilis belum lengkap. `BUSINESS_READY=false`.

@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — SagaPOS pratinjau opening kas source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source pushed `5d0d1fe`; kas yang ditinggalkan shift tertutup menjadi pembanding visual untuk hitungan opening manual. Ini bukan bukti serah-terima dan tidak menulis fakta uang. Focused 31/31, full lokal 1.660 pass/0 fail/73 skip, static/type 626, dependency produksi 0. Active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; Owner/artifact/recovery belum lulus. `BUSINESS_READY=false`. Knowledge commit `main HEAD` dari checkout bersih.
+
 ## 2026-09-27 — SagaPOS ringkasan closing kasir source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source pushed `8b4ef39ad538fa4f157161dcb733072f61711d16`; hasil hitung kas shift tertutup tampil setelah reload, pembukaan berikutnya tetap tanpa nominal otomatis. Full lokal 1.660 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; Owner/artifact/recovery kandidat belum lulus. `BUSINESS_READY=false`. Knowledge commit `main HEAD` dari checkout bersih.

@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Kas pembuka dibandingkan dengan sisa shift terakhir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5d0d1fe` menampilkan angka kas ditinggalkan dan pratinjau selisih saat kasir mengetik hitungan opening. Pembukaan tetap manual; pratinjau tidak membuat fakta pembayaran, shift, atau serah-terima. File: UI/CSS kasir dan tes browser.
+- Focused 31/31, full lokal 1.660 pass/0 fail/73 skip, static/type 626, dependency produksi 0. Percobaan schema yang tidak cocok dibatalkan sebelum kandidat akhir. Runtime active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; rilis belum dilakukan. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Hasil closing shift terlihat setelah reload
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` menambah ringkasan uang awal, expected, hitungan fisik, selisih, kas ditinggalkan, dan untuk disetor pada POS kasir. Ini membantu serah-terima ketika Kiosk ditangani manual; nominal setoran belum dianggap sudah disetor. File: UI/CSS kasir dan tes browser.

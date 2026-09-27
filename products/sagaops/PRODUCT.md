@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Pratinjau selisih kas sebelum shift baru
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5d0d1fe` memperlihatkan kas yang dicatat ditinggalkan pada shift sebelumnya dan selisih langsung terhadap hitungan pembuka yang diketik kasir. Nilai tidak diisi otomatis; pratinjau tidak mengonfirmasi serah-terima atau membuat fakta keuangan. Kasir tetap menghitung fisik dan Owner meninjau selisih.
+- Browser mobile/reload dan aksesibilitas terfokus lulus; regresi lokal 1.660 pass/0 fail/73 skip, static/type 626, dependency produksi 0. Produksi tetap active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Gate Owner/artifact/recovery belum lengkap; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Ringkasan closing kasir tetap terbaca setelah reload
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` menampilkan hitungan uang awal, kas seharusnya, uang fisik, selisih, kas ditinggalkan, dan nominal untuk disetor dari shift tertutup terbaru pada POS manual. Ringkasan bertahan setelah reload; form shift berikutnya tetap kosong dan harus dihitung fisik. Nominal untuk disetor bukan bukti setoran.

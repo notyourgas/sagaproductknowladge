@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — SagaPOS membandingkan kas antarshift secara visual
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5d0d1fe` memperlihatkan kas ditinggalkan terakhir dan selisih dari hitungan opening baru di POS kasir. Ini hanya pratinjau: kasir tetap menghitung fisik, tidak ada auto-fill atau fakta serah-terima baru. Regresi 1.660 pass/0 fail/73 skip; runtime active tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, gate Owner/release belum lengkap, `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — POS kasir SagaPOS membaca ulang ringkasan closing
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` menampilkan angka rekonsiliasi shift tertutup terakhir setelah reload tanpa otomatis membuka shift berikutnya. “Untuk disetor” bukan bukti setoran. Full lokal 1.660 pass/0 fail/73 skip, check/type 626, dependency 0; produksi masih `b4e79a028ce48f369f983955bfefa19b2ed44763`. Gate Owner/release belum selesai, `BUSINESS_READY=false`.

@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Pratinjau kas pembuka terhadap shift sebelumnya
+
+Source `5d0d1fe` memakai nilai kas ditinggalkan dari shift tertutup terakhir untuk membandingkan angka pembuka yang baru diketik, termasuk sinyal cocok atau selisih. Pada contoh browser, closing Rp120.000 dengan Rp50.000 ditinggalkan lalu kasir mengetik Rp49.000 menghasilkan pratinjau selisih -Rp1.000; mengetik Rp50.000 menghasilkan cocok. Setelah reload input tetap kosong dan shift tetap tertutup. Ini bantuan visual, bukan fakta serah-terima, bukan auto-fill, dan bukan pengganti hitung fisik atau tinjauan Owner. Tidak ada schema maupun transaksi baru. Percobaan awal menambah kolom persistence ditolak skema runtime dan dibatalkan; kandidat akhir UI-only lolos focused 31/31 dan regresi penuh 1.660 pass/0 fail/73 skip. Produksi belum berubah karena gate Owner/artifact/recovery belum lengkap; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Bukti hitung kas setelah closing shift
 
 Source `8b4ef39ad538fa4f157161dcb733072f61711d16` menampilkan kembali enam angka rekonsiliasi dari state shift server yang sudah tertutup, termasuk selisih dan pemisahan kas yang ditinggalkan versus nominal untuk disetor. Browser menguji closing Rp120.000, kas ditinggalkan Rp50.000, sehingga nominal untuk disetor Rp70.000, lalu reload pada 390×844 tanpa overflow atau temuan aksesibilitas serius/kritis. Jika data lama tidak lengkap atau rumus tidak konsisten, UI tidak mengarang Rp0; ia mengarahkan kasir ke laporan Owner. Pembukaan shift berikutnya tetap meminta hitungan baru. Tidak ada schema, gateway, atau transaksi baru. Regresi 1.660 pass/0 fail/73 skip; rilis produksi belum dilakukan karena gate Owner/artifact/recovery belum lengkap. `BUSINESS_READY=false`.
