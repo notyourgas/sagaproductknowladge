@@ -3,7 +3,7 @@
 ## 2026-09-28 — Pembuatan PO native di Pembelian Owner, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` menambah dialog pembuatan PO multi-bahan langsung di Dashboard Owner. Supplier aktif, kemasan, jumlah, konversi, harga, perkiraan tiba, alasan, dan total rencana dapat diperiksa tanpa membuka Admin lama. Revisi/pembatalan PO masih di Admin.
-- Browser 390/1440 menguji bahan ganda, tambah/hapus item, konflik versi, draft saat refresh, dan respons simpan terputus: retry menghasilkan satu PO, bukan duplikat. 47 tes dashboard/HPP dan 58 tes server/persistence lulus; check/type 630 modul. PO tetap rencana internal, tidak menambah stok atau mengirim pesan pemasok. Production tidak berubah pada `b4e79a028ce48f369f983955bfefa19b2ed44763`; gate rilis/UAT belum selesai, `BUSINESS_READY=false`.
+- Browser 390/1440 menguji bahan ganda, tambah/hapus item, konflik versi, draft saat refresh, dan respons simpan terputus: retry menghasilkan satu PO, bukan duplikat. 47 tes dashboard/HPP dan 58 tes server/persistence lulus; check/type 630 modul. PO tetap rencana internal, tidak menambah stok atau mengirim pesan pemasok. Slice Owner belum deploy. Cek penutup mengonfirmasi rilis kasir terpisah pada production `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; ini bukan deployment PO Owner, `BUSINESS_READY=false`.
 
 ## 2026-09-28 — Recovery antrean kasir aktif di production
 

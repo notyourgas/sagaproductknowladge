@@ -3,7 +3,7 @@
 ## 2026-09-28 — SagaPOS Owner PO authoring, source-only
 
 - `CONFIRMED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` menambah pembuatan PO internal multi-bahan di dialog Pembelian Owner untuk mengurangi perpindahan ke Admin. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status. Browser 390/1440, 47 UI/HPP + 58 server/persistence, check/type 630 lulus; konflik dan respons ambigu diuji.
-- Production tidak berubah; revisi/pembatalan tetap Admin dan gate rilis/UAT belum lengkap. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- Owner PO belum deploy; revisi/pembatalan tetap Admin dan gate kandidat Owner/UAT belum lengkap. Cek penutup mengonfirmasi production berubah melalui rilis kasir terpisah `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; service, Postgres, monitor, dan health aktif. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false` berlaku untuk kandidat Owner.
 
 ## 2026-09-28 — SagaPOS recovery antrean kasir production-activated
 

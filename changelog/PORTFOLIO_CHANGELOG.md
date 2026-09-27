@@ -2,7 +2,7 @@
 
 ## 2026-09-28 — SagaPOS Owner menyusun PO tanpa pindah halaman
 
-- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` membawa pembuatan PO internal multi-bahan ke dialog Dashboard Pembelian. Draft/konflik dan retry respons terputus diuji tanpa PO duplikat atau penambahan stok. 105 tes terkait dan check/type lulus; production tidak berubah, `BUSINESS_READY=false`.
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` membawa pembuatan PO internal multi-bahan ke dialog Dashboard Pembelian. Draft/konflik dan retry respons terputus diuji tanpa PO duplikat atau penambahan stok. 105 tes terkait dan check/type lulus. Owner PO belum deploy; rilis kasir terpisah kini terverifikasi pada production `f80146bb0bd6c67235914df2ba188cb551795b78`, `BUSINESS_READY=false`.
 
 ## 2026-09-28 — SagaPOS kasir mendapat recovery antrean di production
 

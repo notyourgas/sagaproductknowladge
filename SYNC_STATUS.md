@@ -2,7 +2,7 @@
 
 ## 2026-09-28 — SagaPOS Owner PO authoring source-only
 
-- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-owner-settings-20260927` ter-push pada `aef36ed9abc66664014686f35bd4e00c3a0a8ca8`. PO multi-bahan native, browser 390/1440, retry tanpa duplikat, 47 UI/HPP + 58 server/persistence lulus, check/type 630. Production active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; artifact/gate rilis dan authenticated UAT belum lengkap. Knowledge commit `main HEAD`; `BUSINESS_READY=false`.
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-owner-settings-20260927` ter-push pada `aef36ed9abc66664014686f35bd4e00c3a0a8ca8`. PO multi-bahan native, browser 390/1440, retry tanpa duplikat, 47 UI/HPP + 58 server/persistence lulus, check/type 630. Cek penutup production active kasir `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; ini rilis terpisah dan Owner PO belum deploy. Gate kandidat Owner dan authenticated UAT belum lengkap. Knowledge commit `main HEAD`; `BUSINESS_READY=false`.
 
 ## 2026-09-28 — SagaPOS cashier recovery activated
 

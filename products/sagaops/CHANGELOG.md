@@ -2,7 +2,7 @@
 
 ## 2026-09-28 — Owner membuat PO dari Dashboard Pembelian
 
-- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` menambah dialog PO multi-bahan dengan ringkasan nilai, konflik versi yang jelas, dan retry idempotent. Browser 390/1440, 47 tes dashboard/HPP, 58 server/persistence, dan check/type 630 lulus. PO tidak mengirim pesan atau menambah stok; revisi/pembatalan masih Admin. Production tidak berubah, `BUSINESS_READY=false`.
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` menambah dialog PO multi-bahan dengan ringkasan nilai, konflik versi yang jelas, dan retry idempotent. Browser 390/1440, 47 tes dashboard/HPP, 58 server/persistence, dan check/type 630 lulus. PO tidak mengirim pesan atau menambah stok; revisi/pembatalan masih Admin. Owner PO belum deploy; cek penutup production mengonfirmasi rilis kasir terpisah `f80146bb0bd6c67235914df2ba188cb551795b78`, `BUSINESS_READY=false`.
 
 ## 2026-09-28 — Antrean kasir berhasil dirilis
 

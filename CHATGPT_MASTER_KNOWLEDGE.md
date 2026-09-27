@@ -2,7 +2,7 @@
 
 ## Update 2026-09-28 — Pembuatan PO SagaPOS Owner
 
-- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` memungkinkan Owner membuat PO internal multi-bahan dari dialog Pembelian. Supplier aktif, konversi kemasan, harga, total, dan perkiraan tiba terlihat; konflik versi serta retry respons ambigu tidak menggandakan PO. PO belum mengirim pesan, menerima barang, atau membayar. Revisi/pembatalan masih di Admin; 105 tes terkait dan check/type 630 lulus. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` memungkinkan Owner membuat PO internal multi-bahan dari dialog Pembelian. Supplier aktif, konversi kemasan, harga, total, dan perkiraan tiba terlihat; konflik versi serta retry respons ambigu tidak menggandakan PO. PO belum mengirim pesan, menerima barang, atau membayar. Revisi/pembatalan masih di Admin; 105 tes terkait dan check/type 630 lulus. Owner PO belum deploy; cek penutup mengonfirmasi production kasir terpisah `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
 
 ## Update 2026-09-28 — Recovery antrean SagaPOS sudah aktif
 
