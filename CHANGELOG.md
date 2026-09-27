@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS quote checkout POS manual, source-only
+
+- `CONFIRMED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` menutup checkout kasir dengan quote yang berubah/kedaluwarsa. Alasan: harga yang dilihat kasir harus sama dengan otoritas server sebelum order/KDS. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Full lokal 1.666 pass/0 fail/73 skip, static/type 627, dependency 0. Produksi tidak berubah; Gateway Phase 8B 7/10 menahan artifact/aktivasi kandidat ini. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS QRIS asset guard dan akses pilot
 
 - Sinkronisasi source-only `0aaded55c4989be857beb5e14ddba07b40717262` serta pemulihan akses pilot produksi pada runtime lama. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status; tidak ada aktivasi QRIS atau transaksi.

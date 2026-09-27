@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — Quote kasir bound ke checkout, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-cashier-quote-freshness-20260927` source bersih/ter-push `1206c158865ec90a39dc163cbac8a945b6df1331`. Focused API/runtime 30/30, browser 3/3, full 1.666 pass/0 fail/73 skip, static/type 627, dependency 0. Belum ada artifact/deploy/aktivasi untuk commit ini; Phase 8B 7/10 menahan release. Active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; `BUSINESS_READY=false`. Knowledge commit `main HEAD` dari checkout bersih.
+
 ## 2026-09-27 — SagaPOS QRIS guard dan recovery pilot
 
 - Source `0aaded55c4989be857beb5e14ddba07b40717262` bersih/ter-push, lokal tervalidasi, belum ada artifact atau deploy untuk SHA ini. Production config akses pilot dipulihkan pada runtime lama `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; health dan Owner smoke lulus. Kiosk `CASH_ASSISTED` saja, QRIS merchant asli belum ada, tidak ada transaksi baru. `BUSINESS_READY=false`.

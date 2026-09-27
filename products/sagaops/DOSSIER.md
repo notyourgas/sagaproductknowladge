@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Binding harga checkout POS manual
+
+Kasir meminta quote dari server sebelum menerima cash atau membuat intent QRIS. Pada source `1206c158865ec90a39dc163cbac8a945b6df1331`, perubahan keranjang/metode langsung meniadakan quote layar, termasuk saat respons lama masih in-flight. API checkout meminta fingerprint, versi katalog, total, dan masa berlaku dari quote; runtime menghitung ulang dan menolak mismatch/kedaluwarsa dengan 409 sebelum pembuatan order. Retry idempotent tetap memakai kunci semantik pesanan. Tes mencakup respons terlambat, quote hilang/diubah/kedaluwarsa, dan tidak adanya order setelah penolakan. Regresi 1.666 pass/0 fail/73 skip; check/type 627; audit dependency 0. Tidak ada migrasi atau perubahan provider. Source ter-push tetapi belum dikemas/dideploy karena Phase 8B 7/10 dan canary-window berakhir. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Batas aset QRIS dan pemulihan pilot
 
 Source `0aaded55c4989be857beb5e14ddba07b40717262` menambahkan decoding PNG dan pemeriksaan payload QRIS statis Indonesia sebelum aset pembayaran disimpan, serta prosedur perpanjangan pilot yang dibatasi. Regresi penuh pada parent QR guard `cf325873a34958073c46c1434ac0ab58e062dee7`: 1.664 lulus, 0 gagal, 73 dilewati; pada SHA akhir, kontrak operasi terfokus 10/10, static/type 627 modul, dan audit dependency produksi 0 temuan. File promosi yang diberikan Owner ditolak oleh validasi tanpa write database. Source ini bersih dan ter-push, tetapi belum dikemas atau diaktifkan; merchant QRIS asli dan verifikasi penerima dana masih diperlukan.

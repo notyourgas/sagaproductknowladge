@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Quote kasir wajib cocok saat checkout
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` mengikat POST checkout POS manual ke quote server dan menolak quote stale/changed sebelum order/KDS. Respons quote lama setelah edit keranjang tidak boleh mengaktifkan tombol bayar. File: UI kasir, server/runtime, tes API/browser.
+- Focused 30/30 API/runtime dan 3/3 browser; full 1.666 pass/0 fail/73 skip; check/type 627; dependency produksi 0. Tidak ada skema/provider/transaksi baru. Phase 8B 7/10 menahan release; active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Tolak QR non-merchant, pemulihan akses pilot
 
 - `IMPLEMENTED_NOT_DEPLOYED`: source `0aaded55c4989be857beb5e14ddba07b40717262` menolak PNG poster/non-QRIS pada endpoint aset QRIS statis; regresi penuh pada parent `cf325873a34958073c46c1434ac0ab58e062dee7` 1.664 lulus, 0 gagal, 73 skip; kontrak operasi pada SHA akhir 10/10. Tidak ada aset pembayaran baru atau transaksi.

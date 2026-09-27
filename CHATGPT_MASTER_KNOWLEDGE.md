@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — Quote checkout POS kasir source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` menolak checkout POS manual bila quote server hilang, berubah, atau kedaluwarsa; UI menahan respons quote lama setelah edit. Regresi lokal 1.666 pass/0 fail/73 skip. Ini belum aktif di produksi: runtime `b4e79a028ce48f369f983955bfefa19b2ed44763`, Gateway Phase 8B 7/10, `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — SagaPOS QRIS guard source-only, pilot sehat kembali
 
 - `IMPLEMENTED_NOT_DEPLOYED`: source `0aaded55c4989be857beb5e14ddba07b40717262` menolak poster/non-QRIS sebagai aset pembayaran; QRIS merchant asli belum tersedia. Perpanjangan akses pilot yang disetujui Owner memulihkan runtime existing `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; mode Gateway tidak berubah, smoke Owner/Kiosk cash-assisted lulus tanpa transaksi. Jangan menganggap ini aktivasi QRIS atau `BUSINESS_READY`.

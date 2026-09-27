@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS mencegah checkout kasir dengan harga stale
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` meminta quote server yang cocok sebelum order POS manual dibuat. Regresi 1.666 pass/0 fail/73 skip; produksi belum berubah karena gate Gateway 7/10. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS memisahkan poster promosi dari QR pembayaran
 
 - Source `0aaded55c4989be857beb5e14ddba07b40717262` tervalidasi lokal untuk menolak unggahan non-QRIS, belum dideploy. Akses Owner pilot produksi dipulihkan pada runtime lama; Kiosk cash-assisted terverifikasi tanpa transaksi. QRIS merchant dan business readiness belum tersedia.

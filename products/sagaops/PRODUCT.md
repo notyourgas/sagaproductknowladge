@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Checkout kasir terikat quote server, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` mewajibkan quote katalog/harga yang masih berlaku pada checkout POS manual. Perubahan keranjang atau harga membuat kasir memeriksa ulang total; respons quote lama tidak lagi mengaktifkan tombol bayar. Order/KDS tidak dibuat ketika quote berubah atau kedaluwarsa.
+- Regresi lokal 1.666 pass/0 fail/73 skip, static/type 627 modul, audit dependency produksi 0. Produksi tetap active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Gate Gateway Phase 8B masih 7/10; tidak ada artifact atau aktivasi untuk commit ini. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Validasi QRIS merchant source-only; akses pilot dipulihkan
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `0aaded55c4989be857beb5e14ddba07b40717262` menolak unggahan PNG non-QRIS sebelum penyimpanan aset; poster promosi bukan QRIS merchant dan tidak diaktifkan sebagai pembayaran. Kiosk tetap menyediakan `CASH_ASSISTED` saja sampai QRIS merchant asli lolos validasi dan rilis.
