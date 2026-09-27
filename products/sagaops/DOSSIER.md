@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Handover kas: artifact production disiapkan tanpa aktivasi
+
+Artifact immutable untuk source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` dibuat lewat runner Linux dan staged setelah checksum serta admission kandidat cocok. Scoped Owner smoke membuktikan akses kasir/Kiosk dan metode `CASH_ASSISTED` tanpa membuat order; merchant QR asli belum tersedia. Backup terenkripsi dan restore disposable lulus. Gateway existing tetap ON, tetapi Phase 8B 7/10 dengan tiga kegagalan readiness tidak memenuhi assertion generic authenticated smoke; smoke kandidat tidak dijalankan. Karena itu tidak ada aktivasi, transaksi, atau perpanjangan canary; rehearsal serta bukti offsite masih pending. Produksi tetap pada `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Pembanding kas antarshift berprovenance Postgres
 
 Source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` menggunakan tabel cash session dan audit yang sudah ada, bukan kolom dari migrasi di luar manifest runtime. Saat opening, server mengunci per outlet selama transaksi, menolak pembukaan aktif kedua, membaca shift terakhir serta bukti closing eksplisit, lalu menulis satu audit opening berisi pembanding, selisih, dan status. Pada restart, operator state dibangun kembali dari audit tersebut. Selisih Rp1.000 pada fixture menghasilkan `review_required`; replay tidak menambah audit. Bukti closing lama yang tidak menyatakan titipan eksplisit menghasilkan `unverified_previous`, dan layar menahan angka ringkasan yang tidak aman. Kasir tetap menghitung fisik; Owner review dan persetujuan serah-terima formal belum tersedia. Tes PGlite disposable, race, restart, browser 390×844, aksesibilitas, dan regresi penuh 1.663 pass/0 fail/73 skip lulus. Produksi belum berubah; Gateway existing dan Order Meja DEMO tetap pada boundary lama. `BUSINESS_READY=false`.

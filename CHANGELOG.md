@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS artifact staged tanpa aktivasi
+
+- `CONFIRMED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` lulus packaging/staging, scoped Owner smoke, backup terenkripsi, dan disposable restore. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Production tidak berubah karena readiness gateway 7/10 belum memenuhi generic authenticated smoke; rehearsal dan offsite restore belum lengkap. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS pembanding kas antarshift durable, source-only
 
 - `CONFIRMED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` mencatat pembanding opening dan selisih di audit Postgres, menolak dua shift aktif satu outlet, serta menahan angka closing lama tanpa bukti titipan. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status. Persetujuan serah-terima Owner belum ada.

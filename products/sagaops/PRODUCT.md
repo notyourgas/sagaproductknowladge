@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Kandidat handover kas staged, belum aktif
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source bersih dan ter-push `7670945ae7ce76e6379c5d7b7c91663bb8499af2` telah dibangun menjadi artifact Linux immutable dan lulus target admission serta staging. Smoke Owner tanpa order, backup terenkripsi, dan restore disposable lulus; tidak ada migrasi atau perubahan pembayaran.
+- Aktivasi ditahan: readiness gateway production masih 7/10; `gateway-ready`, `canary-window`, dan `local-canary` gagal. Rehearsal candidate-bound, authenticated post-activation smoke, dan offsite restore belum lulus. Runtime tetap active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Selisih opening antarshift dicatat server
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` membandingkan hitungan pembuka kasir dengan nominal kas yang secara eksplisit ditinggalkan pada closing sebelumnya. Perbandingan dan status `matched`/`review_required` tersimpan di audit Postgres dan pulih setelah restart; dua pembukaan shift serentak tidak menghasilkan dua shift aktif. Closing lama tanpa bukti nominal titipan dinyatakan belum terverifikasi, bukan diberi selisih palsu. Ini belum merupakan persetujuan serah-terima Owner.

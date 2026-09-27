@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Artifact handover kas staged, gate gateway menahan aktivasi
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` menjadi artifact Linux immutable dan lulus staging, scoped Owner smoke, backup terenkripsi, serta disposable restore. Tidak ada transaksi atau perubahan runtime.
+- Phase 8B tetap 7/10: gateway-ready, canary-window, local-canary gagal. Rehearsal dan generic authenticated smoke belum lulus; production active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Audit pembanding opening cash tahan restart
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` mengganti pratinjau browser saja dengan hitungan server dari bukti closing Postgres, satu audit opening, pemulihan restart, dan penolakan dua shift aktif pada outlet yang sama. UI menampilkan selisih untuk tinjauan Owner dan menahan angka dari closing lama yang tidak terverifikasi. File: repository Postgres, runtime POS, UI kasir, tes browser dan durable.

@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — SagaPOS handover kas staged, belum dideploy
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` lulus packaging Linux, target admission, staging, scoped Owner smoke, backup terenkripsi, dan disposable restore. Gateway Phase 8B masih 7/10 sehingga aktivasi dan authenticated post-release smoke ditahan; active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Tidak ada transaksi atau perubahan mode pembayaran; `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — SagaPOS handover kas berbasis bukti server
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` menyimpan hasil perbandingan opening dengan kas yang dinyatakan ditinggalkan shift sebelumnya pada audit Postgres, memulihkannya setelah restart, dan menandai selisih untuk tinjauan Owner. Ini bukan konfirmasi serah-terima fisik. Closing lama tanpa bukti eksplisit tetap tidak terverifikasi. Regresi lokal 1.663 pass/0 fail/73 skip; produksi masih `b4e79a028ce48f369f983955bfefa19b2ed44763`, gate Owner/artifact/recovery belum lengkap, `BUSINESS_READY=false`.

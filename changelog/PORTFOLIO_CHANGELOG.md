@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS menyiapkan artifact handover kas, aktivasi tertahan
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: kandidat `7670945ae7ce76e6379c5d7b7c91663bb8499af2` staged dengan Owner smoke dan backup/restore disposable lulus. Runtime tidak berubah; gateway readiness 7/10 masih memblokir authenticated release gate. Tidak ada pembayaran baru; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS mencatat selisih kas antarshift di Postgres
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` membuat perbandingan kas pembuka dengan titipan closing sebelumnya tahan restart dan audit, tanpa menganggapnya persetujuan fisik. Regresi 1.663 pass/0 fail/73 skip; produksi belum berubah karena gate rilis belum lengkap. `BUSINESS_READY=false`.
