@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — PO internal multi-bahan dalam Dashboard Owner
+
+Before: daftar PO dan master supplier sudah native, tetapi Owner masih harus membuka Admin untuk membuat rencana pembelian. After pada source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8`: tombol Buat PO membuka dialog multi-bahan dengan supplier aktif, tanggal tiba, kemasan, jumlah, konversi satuan dasar, harga, alasan, dan total yang dihitung ulang server. Form mempertahankan draft setelah konflik/refresh, dibekukan selama simpan, dan menggunakan satu kunci percobaan untuk retry respons yang ambigu. Tes browser sengaja memutus respons setelah server menyimpan dan membuktikan retry tidak menggandakan PO; stok tetap kosong. Viewport 390/1440, aksesibilitas, Owner-only, tambah/hapus, bahan ganda, konflik versi, 47 tes UI/HPP dan 58 server/persistence lulus; check/type 630. Tidak ada migration, pesan pemasok, pembayaran, atau production mutation. Revisi/pembatalan dan invoice masih memakai Admin; source-only, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Delivery recovery antrean kasir
 
 Before: source sempit sudah diuji tetapi paket Linux belum terbentuk; pemindahan index Windows tidak menghasilkan checkout bersih. After: Git transport membuat checkout native Linux bersih untuk exact pushed `f80146bb0bd6c67235914df2ba188cb551795b78`; packager produk menghasilkan artifact SHA-256 `7ce2188d006c858ca6caa29e9439032592281a3d037dad460abc1a2f003f2d0c`. Owner terverifikasi, target admission, stage, backup terenkripsi/restore disposable dan rehearsal candidate–rollback–candidate lulus. Runner code-only melakukan aktivasi dengan expected-current, schema identik, receipt segar dan recovery trap; active sekarang `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`. Tidak ada perubahan pembayaran/provider atau source Owner Dashboard yang ikut terbawa.

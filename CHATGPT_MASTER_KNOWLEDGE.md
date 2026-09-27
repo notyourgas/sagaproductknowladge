@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Pembuatan PO SagaPOS Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` memungkinkan Owner membuat PO internal multi-bahan dari dialog Pembelian. Supplier aktif, konversi kemasan, harga, total, dan perkiraan tiba terlihat; konflik versi serta retry respons ambigu tidak menggandakan PO. PO belum mengirim pesan, menerima barang, atau membayar. Revisi/pembatalan masih di Admin; 105 tes terkait dan check/type 630 lulus. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Recovery antrean SagaPOS sudah aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: active `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`. Tombol **Perbarui antrean** di kasir memulihkan antrean Kiosk dengan freshness, offline/retry, dan penahan konfirmasi dari state lama. Artifact/admission, Owner, backup/restore, rehearsal, post-release browser dan monitor lulus; verifikasi tidak membuat transaksi. Source Owner Dashboard lain belum ikut dirilis. Kiosk tetap cash-assisted, QRIS merchant belum tersedia, Order Meja DEMO, Gateway existing tidak diubah; UAT bisnis/offsite restore masih pending, `BUSINESS_READY=false`.

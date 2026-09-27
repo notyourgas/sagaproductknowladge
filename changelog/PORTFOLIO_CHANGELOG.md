@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS Owner menyusun PO tanpa pindah halaman
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` membawa pembuatan PO internal multi-bahan ke dialog Dashboard Pembelian. Draft/konflik dan retry respons terputus diuji tanpa PO duplikat atau penambahan stok. 105 tes terkait dan check/type lulus; production tidak berubah, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS kasir mendapat recovery antrean di production
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: `f80146bb0bd6c67235914df2ba188cb551795b78` telah dirilis agar kasir menemukan antrean Kiosk baru tanpa reload dan tidak mengonfirmasi snapshot stale saat koneksi gagal. Gate artifact/Owner/backup/rehearsal serta post-release browser/monitor lulus. Gateway dan schema tetap; tidak ada transaksi verifikasi atau source Owner Dashboard lain yang dirilis. QRIS merchant, offsite restore dan UAT bisnis masih pending; `BUSINESS_READY=false`.
