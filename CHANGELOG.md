@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS hasil closing kasir tetap terlihat, source-only
+
+- `CONFIRMED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` memberi kasir ringkasan enam nominal shift tertutup setelah reload, tanpa menganggap uang sudah disetor. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Regresi 1.660 pass/0 fail/73 skip, check/type 626, dependency 0. Produksi tidak berubah; gate Owner/artifact/recovery kandidat belum lulus. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS cash checkout tanpa default uang pas, source-only
 
 - `CONFIRMED`: source `8d45fa7e7418e6ddaabceddf371d68ee249a8513` mewajibkan nominal cash diterima eksplisit; nilai hilang/invalid tidak membuat order, payment, atau tiket KDS. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

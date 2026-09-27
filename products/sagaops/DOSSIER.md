@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Bukti hitung kas setelah closing shift
+
+Source `8b4ef39ad538fa4f157161dcb733072f61711d16` menampilkan kembali enam angka rekonsiliasi dari state shift server yang sudah tertutup, termasuk selisih dan pemisahan kas yang ditinggalkan versus nominal untuk disetor. Browser menguji closing Rp120.000, kas ditinggalkan Rp50.000, sehingga nominal untuk disetor Rp70.000, lalu reload pada 390×844 tanpa overflow atau temuan aksesibilitas serius/kritis. Jika data lama tidak lengkap atau rumus tidak konsisten, UI tidak mengarang Rp0; ia mengarahkan kasir ke laporan Owner. Pembukaan shift berikutnya tetap meminta hitungan baru. Tidak ada schema, gateway, atau transaksi baru. Regresi 1.660 pass/0 fail/73 skip; rilis produksi belum dilakukan karena gate Owner/artifact/recovery belum lengkap. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Cash tender POS manual tidak boleh diasumsikan server
 
 Pada source `8d45fa7e7418e6ddaabceddf371d68ee249a8513`, request checkout kasir `CASH` tanpa `receivedRupiah` tidak lagi ditafsirkan sebagai nominal pas. Hanya angka Rupiah bulat nonnegatif dalam rentang integer aman dan sekurangnya total quote server yang dapat mencatat `PAID`; jalur QRIS tidak diubah. Form kasir kini tidak menafsirkan karakter negatif/huruf sebagai angka positif. Tes domain/HTTP membuktikan request invalid meninggalkan nol order, nol payment, dan nol tiket KDS; tes Postgres membuktikan tidak ada fakta parsial sebelum request sah. Ini mitigasi pencatatan uang, bukan bukti uang fisik benar-benar diterima. Regresi akhir 1.660 pass/0 fail/73 skip; production masih runtime lama dan `BUSINESS_READY=false`.

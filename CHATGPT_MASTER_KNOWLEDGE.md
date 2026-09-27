@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — POS kasir SagaPOS membaca ulang ringkasan closing
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` menampilkan angka rekonsiliasi shift tertutup terakhir setelah reload tanpa otomatis membuka shift berikutnya. “Untuk disetor” bukan bukti setoran. Full lokal 1.660 pass/0 fail/73 skip, check/type 626, dependency 0; produksi masih `b4e79a028ce48f369f983955bfefa19b2ed44763`. Gate Owner/release belum selesai, `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — SagaPOS POS manual mewajibkan jumlah cash diterima
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8d45fa7e7418e6ddaabceddf371d68ee249a8513` menolak checkout cash yang menghilangkan atau memalsukan format nominal uang diterima; API tidak lagi menebak uang pas. UI menahan input kosong/invalid. Regresi 1.660 pass/0 fail/73 skip, static/type 626, dependency 0. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; gate Owner/rilis belum lulus, Gateway existing dan Order Meja DEMO tidak berubah, `BUSINESS_READY=false`.

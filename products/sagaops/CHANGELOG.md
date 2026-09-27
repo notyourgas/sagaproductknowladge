@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Hasil closing shift terlihat setelah reload
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` menambah ringkasan uang awal, expected, hitungan fisik, selisih, kas ditinggalkan, dan untuk disetor pada POS kasir. Ini membantu serah-terima ketika Kiosk ditangani manual; nominal setoran belum dianggap sudah disetor. File: UI/CSS kasir dan tes browser.
+- Full lokal 1.660 pass/0 fail/73 skip, check/type 626, dependency 0. Produksi tetap active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; Owner/artifact/recovery kandidat belum lulus. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Cash tender wajib diisi sebelum POS mencatat lunas
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8d45fa7e7418e6ddaabceddf371d68ee249a8513` menghapus default nominal pas pada checkout cash. Nilai kosong/invalid ditolak sebelum fakta order/payment/KDS; UI kasir menahan checkout dan menunjukkan input tidak sah.

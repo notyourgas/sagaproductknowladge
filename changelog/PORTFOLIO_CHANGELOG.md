@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS menampilkan rekonsiliasi kasir yang telah ditutup
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` menjaga ringkasan hitung kas terakhir terlihat setelah reload, dengan kas ditinggalkan dan untuk disetor terpisah. Regresi 1.660 pass/0 fail/73 skip; produksi belum berubah karena gate rilis belum lengkap. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS menutup asumsi uang pas pada cash kasir
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8d45fa7e7418e6ddaabceddf371d68ee249a8513` mewajibkan nominal cash diterima yang eksplisit sebelum POS manual mencatat lunas atau mengirim KDS. Regresi 1.660 pass/0 fail/73 skip. Produksi/pembayaran nyata tidak berubah karena gate rilis belum lulus; `BUSINESS_READY=false`.

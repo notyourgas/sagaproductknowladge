@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Ringkasan closing kasir tetap terbaca setelah reload
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8b4ef39ad538fa4f157161dcb733072f61711d16` menampilkan hitungan uang awal, kas seharusnya, uang fisik, selisih, kas ditinggalkan, dan nominal untuk disetor dari shift tertutup terbaru pada POS manual. Ringkasan bertahan setelah reload; form shift berikutnya tetap kosong dan harus dihitung fisik. Nominal untuk disetor bukan bukti setoran.
+- Regresi penuh lokal 1.660 pass/0 fail/73 skip, check/type 626 modul, audit dependency produksi 0. Produksi tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; verifikasi Owner terkini terkunci, artifact/recovery kandidat belum ada. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Pembayaran cash POS manual wajib nominal diterima eksplisit
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8d45fa7e7418e6ddaabceddf371d68ee249a8513` menghapus asumsi “uang pas” dari API checkout kasir. Cash harus membawa nominal Rupiah bulat aman yang benar-benar dinyatakan kasir; kosong, null, teks, negatif, atau pecahan ditolak sebelum order, pembayaran, dan tiket KDS dibuat. UI menahan tombol saat input kosong/invalid dan tetap menampilkan kembalian dari quote server.
