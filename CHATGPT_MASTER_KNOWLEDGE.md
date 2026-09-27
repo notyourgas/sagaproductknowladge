@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — POS manual SagaPOS meminta nominal titipan closing eksplisit
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d` menghapus default kas ditinggalkan dari UI/API. Kasir harus mengisi hitungan fisik dan nominal untuk shift berikutnya; `0` sah bila eksplisit. Nilai kosong/berlebih tidak menutup shift. Regresi penuh 1.658 pass/0 fail/73 skip, static/type 626, dependency 0. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; gate Owner/rilis belum lulus, Gateway existing dan Order Meja demo tidak berubah; `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — POS manual SagaPOS mewajibkan nominal awal eksplisit
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` mengoreksi kandidat sebelumnya: form opening kosong dan API menolak nominal yang hilang; kasir mengetik `0` bila laci kosong. Regresi 1.657 pass/0 fail/73 skip. Runtime masih `b4e79a028ce48f369f983955bfefa19b2ed44763`; gate Owner rilis belum lulus, `BUSINESS_READY=false`.

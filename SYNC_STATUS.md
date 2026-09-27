@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — SagaPOS closing kas wajib eksplisit
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source ter-push `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d`; form/API closing tidak lagi menetapkan kas ditinggalkan otomatis. Input kosong atau melebihi hitungan fisik ditolak. Validasi 1.658 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; gate Owner/artifact/deploy belum lulus dan tidak ada transaksi baru. `BUSINESS_READY=false`. Knowledge commit `main HEAD` melalui checkout bersih.
+
 ## 2026-09-27 — SagaPOS POS manual opening cash wajib eksplisit
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source ter-push `4310a6c112c7ee37630cc0fc56ed1b7043ed0076`; UI/API tidak lagi default Rp300.000 dan body kosong ditolak. Validasi 1.657 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; gate Owner/deploy belum lulus dan tidak ada transaksi baru. `BUSINESS_READY=false`. Knowledge commit `main HEAD` melalui checkout bersih.

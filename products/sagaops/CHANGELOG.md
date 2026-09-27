@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Closing shift kasir tanpa default kas ditinggalkan
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d` mewajibkan nominal kas yang ditinggalkan eksplisit pada UI dan API, termasuk `0`. Field kosong atau melebihi hitungan fisik ditolak tanpa menutup shift; preview Owner tidak lagi memakai Rp0 otomatis.
+- Full lokal 1.658 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi belum berubah: active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Gate Owner/artifact/deploy belum lulus; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Default opening cash Rp300.000 dihapus dari UI dan API
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` mewajibkan hitungan awal yang diketik kasir, menolak body API tanpa nominal, dan menerima Rp0 yang eksplisit. Alasan: kandidat sebelumnya masih dapat membuka shift dengan nominal default, sehingga rekonsiliasi kas berisiko tidak sesuai uang fisik.

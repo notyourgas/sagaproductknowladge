@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Closing cash count tanpa nominal titipan otomatis
+
+Source `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d` mewajibkan kasir mengisi dua fakta closing secara terpisah: uang fisik yang dihitung dan uang yang ditinggalkan untuk shift berikutnya. Form tidak lagi mengambil opening cash sebagai nilai titipan; domain lokal dan Postgres menolak field yang hilang, dan preview Owner tidak lagi menggantinya dengan Rp0. Nominal titipan tidak boleh melebihi uang fisik. Browser, API lokal, serta regresi Postgres membuktikan shift tidak tertutup ketika input tidak sah. Regresi penuh 1.658 pass/0 fail/73 skip; static/type 626; dependency produksi 0. Ini masih source-only, tidak mengubah skema, mode Gateway, atau runtime produksi. Gate Owner dan rilis kandidat baru masih diperlukan; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Koreksi nominal awal wajib, source-only
 
 Kandidat `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` menutup dua default yang tersisa dari kandidat sebelumnya: UI tidak lagi menampilkan Rp300.000 sebelum kasir menghitung, dan API tidak lagi membuat shift Rp300.000 dari body kosong. Saldo awal `0` tetap sah bila kasir mengetiknya. Browser memeriksa nilai kosong/negatif, pembukaan Rp120.000, closing tanpa selisih, lalu form 390×844 kosong setelah reload; API memeriksa body kosong ditolak 422. Regresi penuh 1.657 pass/0 fail/73 skip; produksi masih memakai runtime sebelumnya karena gate Owner belum lulus. Tidak ada transaksi nyata atau perubahan mode Gateway.

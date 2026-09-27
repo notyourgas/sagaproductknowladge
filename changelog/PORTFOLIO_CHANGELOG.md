@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS closing kas eksplisit, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d` menolak closing POS manual tanpa hitungan uang fisik dan nominal kas yang ditinggalkan untuk shift berikutnya. Tidak ada default Rp300.000/Rp0; regresi 1.658 pass/0 fail/73 skip. Produksi dan pembayaran tidak berubah karena gate rilis belum lulus; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS menolak opening shift tanpa hitungan kasir
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` menghapus default Rp300.000 di UI/API; nominal kosong ditolak dan Rp0 eksplisit diterima. Regresi 1.657 pass/0 fail/73 skip; runtime produksi belum berubah karena gate Owner belum tersedia. Tidak ada transaksi atau perubahan Gateway; `BUSINESS_READY=false`.
