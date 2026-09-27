@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Tolak QR non-merchant, pemulihan akses pilot
+
+- `IMPLEMENTED_NOT_DEPLOYED`: source `0aaded55c4989be857beb5e14ddba07b40717262` menolak PNG poster/non-QRIS pada endpoint aset QRIS statis; regresi lokal 1.664 lulus, 0 gagal, 73 skip. Tidak ada aset pembayaran baru atau transaksi.
+- `PRODUCTION_ACTIVATED / CONFIG_ONLY`: akses pilot Owner dipulihkan setelah kedaluwarsa dengan izin baru. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; scoped Owner smoke lulus, Kiosk hanya `CASH_ASSISTED`. Ini bukan aktivasi fitur QRIS atau source baru.
+
 ## 2026-09-27 — Artifact handover kas staged, gate gateway menahan aktivasi
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` menjadi artifact Linux immutable dan lulus staging, scoped Owner smoke, backup terenkripsi, serta disposable restore. Tidak ada transaksi atau perubahan runtime.

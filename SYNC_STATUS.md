@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — SagaPOS QRIS guard dan recovery pilot
+
+- Source `0aaded55c4989be857beb5e14ddba07b40717262` bersih/ter-push, lokal tervalidasi, belum ada artifact atau deploy untuk SHA ini. Production config akses pilot dipulihkan pada runtime lama `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; health dan Owner smoke lulus. Kiosk `CASH_ASSISTED` saja, QRIS merchant asli belum ada, tidak ada transaksi baru. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS artifact staged, activation withheld
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source pushed `7670945ae7ce76e6379c5d7b7c91663bb8499af2`; artifact immutable sudah staged, Owner smoke dan backup/restore disposable lulus. Phase 8B masih 7/10 sehingga activation/rehearsal/authenticated post-release UAT belum lulus. Active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; tidak ada transaksi baru, offsite restore belum diverifikasi, `BUSINESS_READY=false`. Knowledge commit `main HEAD` dari checkout bersih.

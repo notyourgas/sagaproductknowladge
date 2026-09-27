@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS memisahkan poster promosi dari QR pembayaran
+
+- Source `0aaded55c4989be857beb5e14ddba07b40717262` tervalidasi lokal untuk menolak unggahan non-QRIS, belum dideploy. Akses Owner pilot produksi dipulihkan pada runtime lama; Kiosk cash-assisted terverifikasi tanpa transaksi. QRIS merchant dan business readiness belum tersedia.
+
 ## 2026-09-27 — SagaPOS menyiapkan artifact handover kas, aktivasi tertahan
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: kandidat `7670945ae7ce76e6379c5d7b7c91663bb8499af2` staged dengan Owner smoke dan backup/restore disposable lulus. Runtime tidak berubah; gateway readiness 7/10 masih memblokir authenticated release gate. Tidak ada pembayaran baru; `BUSINESS_READY=false`.

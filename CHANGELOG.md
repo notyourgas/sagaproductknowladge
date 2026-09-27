@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS QRIS asset guard dan akses pilot
+
+- Sinkronisasi source-only `0aaded55c4989be857beb5e14ddba07b40717262` serta pemulihan akses pilot produksi pada runtime lama. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status; tidak ada aktivasi QRIS atau transaksi.
+
 ## 2026-09-27 — SagaPOS artifact staged tanpa aktivasi
 
 - `CONFIRMED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` lulus packaging/staging, scoped Owner smoke, backup terenkripsi, dan disposable restore. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

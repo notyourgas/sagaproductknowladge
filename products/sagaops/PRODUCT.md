@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Validasi QRIS merchant source-only; akses pilot dipulihkan
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `0aaded55c4989be857beb5e14ddba07b40717262` menolak unggahan PNG non-QRIS sebelum penyimpanan aset; poster promosi bukan QRIS merchant dan tidak diaktifkan sebagai pembayaran. Kiosk tetap menyediakan `CASH_ASSISTED` saja sampai QRIS merchant asli lolos validasi dan rilis.
+- Akses Owner pilot yang kedaluwarsa sempat menghentikan layanan; perpanjangan terbatas yang disetujui Owner memulihkan health dan smoke Owner tanpa membuat order atau transaksi. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`, mode Gateway existing tidak berubah. Ini bukan aktivasi source baru atau `BUSINESS_READY`.
+
 ## 2026-09-27 — Kandidat handover kas staged, belum aktif
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source bersih dan ter-push `7670945ae7ce76e6379c5d7b7c91663bb8499af2` telah dibangun menjadi artifact Linux immutable dan lulus target admission serta staging. Smoke Owner tanpa order, backup terenkripsi, dan restore disposable lulus; tidak ada migrasi atau perubahan pembayaran.

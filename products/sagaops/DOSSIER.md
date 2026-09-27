@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Batas aset QRIS dan pemulihan pilot
+
+Source `0aaded55c4989be857beb5e14ddba07b40717262` menambahkan decoding PNG dan pemeriksaan payload QRIS statis Indonesia sebelum aset pembayaran disimpan. Tes regresi lokal: 1.664 lulus, 0 gagal, 73 dilewati; static/type 627 modul dan audit dependency produksi 0 temuan. File promosi yang diberikan Owner ditolak oleh validasi tanpa write database. Source ini bersih dan ter-push, tetapi belum dikemas atau diaktifkan; merchant QRIS asli dan verifikasi penerima dana masih diperlukan.
+
+Pilot Owner sempat kedaluwarsa sehingga runtime berhenti dan health publik gagal. Setelah persetujuan Owner yang baru, akses pilot diperpanjang secara terbatas dan service kembali sehat tanpa perubahan SHA runtime, mode Gateway, atau transaksi. Smoke Owner/Kiosk lulus dengan `CASH_ASSISTED` saja. Gate release pembayaran tetap terpisah dan `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Handover kas: artifact production disiapkan tanpa aktivasi
 
 Artifact immutable untuk source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` dibuat lewat runner Linux dan staged setelah checksum serta admission kandidat cocok. Scoped Owner smoke membuktikan akses kasir/Kiosk dan metode `CASH_ASSISTED` tanpa membuat order; merchant QR asli belum tersedia. Backup terenkripsi dan restore disposable lulus. Gateway existing tetap ON, tetapi Phase 8B 7/10 dengan tiga kegagalan readiness tidak memenuhi assertion generic authenticated smoke; smoke kandidat tidak dijalankan. Karena itu tidak ada aktivasi, transaksi, atau perpanjangan canary; rehearsal serta bukti offsite masih pending. Produksi tetap pada `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.

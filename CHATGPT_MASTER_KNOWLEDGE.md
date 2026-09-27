@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — SagaPOS QRIS guard source-only, pilot sehat kembali
+
+- `IMPLEMENTED_NOT_DEPLOYED`: source `0aaded55c4989be857beb5e14ddba07b40717262` menolak poster/non-QRIS sebagai aset pembayaran; QRIS merchant asli belum tersedia. Perpanjangan akses pilot yang disetujui Owner memulihkan runtime existing `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; mode Gateway tidak berubah, smoke Owner/Kiosk cash-assisted lulus tanpa transaksi. Jangan menganggap ini aktivasi QRIS atau `BUSINESS_READY`.
+
 ## Update 2026-09-27 — SagaPOS handover kas staged, belum dideploy
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` lulus packaging Linux, target admission, staging, scoped Owner smoke, backup terenkripsi, dan disposable restore. Gateway Phase 8B masih 7/10 sehingga aktivasi dan authenticated post-release smoke ditahan; active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Tidak ada transaksi atau perubahan mode pembayaran; `BUSINESS_READY=false`.
