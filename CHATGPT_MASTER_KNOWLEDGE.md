@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Supplier SagaPOS Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `297c483` memungkinkan Owner melihat, menambah, dan mengedit master supplier di Dashboard Pembelian. Simpan memakai versi server dan CSRF; status aktif serta lead time terlihat, konflik tidak menimpa perubahan lain. Membuat/revisi PO masih di Admin lama; tidak ada pesan supplier, stok, pembayaran, atau production mutation. 46 tes terkait dan check/type 630 lulus. Active production `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Kandidat sempit SagaPOS kasir
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: pemulihan antrean kasir dipisah menjadi source `f80146bb0bd6c67235914df2ba188cb551795b78`, satu commit di atas active `b4e79a028ce48f369f983955bfefa19b2ed44763`. Browser dan full regression ulang 1.655 pass/0 fail/73 skip; tidak ada migrasi atau perubahan payment. Ini belum artifact, deployment, authenticated UAT, atau kesiapan bisnis. Gate Owner/admission tetap wajib; `BUSINESS_READY=false`.

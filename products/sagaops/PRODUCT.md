@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Master supplier di Pembelian Owner, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `297c483` menambah daftar supplier dan dialog tambah/edit langsung di Dashboard Owner Pembelian. Nama, lead time, dan status aktif dikelola dengan versi data server; konflik perubahan serentak ditolak dan draft dipertahankan. Hanya Owner yang dapat menyimpan.
+- Browser 390/1440 dan 46 tes terkait lulus; check/type 630 modul. Menyimpan supplier tidak membuat PO, menghubungi pemasok, mengubah stok, atau membayar. PO masih dibuat/revisi di Admin lama. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; belum rilis atau UAT Owner, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Kandidat rilis sempit pemulihan antrean kasir
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: fungsi “Perbarui antrean” yang sebelumnya ada di branch pengembangan kini diisolasi pada source `f80146bb0bd6c67235914df2ba188cb551795b78`, tepat satu commit di atas runtime produksi aktif. Perubahan hanya UI kasir dan browser acceptance; tidak membawa perubahan Owner Dashboard, pembayaran, migrasi, atau provider.

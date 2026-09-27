@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — SagaPOS Owner supplier source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-owner-settings-20260927` ter-push pada `297c483` untuk daftar dan tambah/edit supplier di Pembelian Owner. Browser 390/1440, Owner-only, konflik/retry dan tidak adanya PO, 46/46 tes terkait, check/type 630 lulus. Production active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; release gate dan UAT Owner belum lulus, `BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-28 — SagaPOS narrow cashier release candidate
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-cashier-queue-release-20260928` bersih/ter-push `f80146bb0bd6c67235914df2ba188cb551795b78`, satu commit di atas active production. Browser 2/2, full ulang 1.655 pass/0 fail/73 skip, check/type 626, dependency 0; satu error buffer browser pada full pertama lulus saat isolasi dan ulang. Artifact/Owner/admission belum lengkap. Active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; `BUSINESS_READY=false`. Knowledge commit `main HEAD`.

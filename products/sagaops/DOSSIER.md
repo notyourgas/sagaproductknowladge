@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Supplier native pada Owner Pembelian
+
+Before: Owner hanya melihat jumlah supplier dan perlu membuka Admin lama untuk membuat atau memperbarui master pemasok. After pada source `297c483`: Pembelian memuat daftar supplier dengan status dan lead time serta dialog tambah/edit responsif. Aksi memakai endpoint Owner yang sudah ada, CSRF dan versi HPP server; saat data berubah serentak, penyimpanan ditolak dengan pesan dan draft tetap ada sampai refresh. Logout membersihkan draft. Browser memeriksa Owner-only, konflik/retry, perubahan status, tidak ada PO yang tercipta, viewport 390/1440, dan aksesibilitas; 46 tes terkait serta check/type 630 modul lulus. Ini belum memindahkan authoring PO/invoice dari Admin, tidak menambah provider atau migration, dan belum deploy. Active production `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Isolasi kandidat kasir dari runtime aktif
 
 Before: perubahan pemulihan antrean kasir ada pada branch dengan 13 commit di atas runtime sehingga tidak layak diperlakukan sebagai rilis satu slice. After: branch `codex/sagapos-cashier-queue-release-20260928` pada `f80146bb0bd6c67235914df2ba188cb551795b78` berisi satu commit dari active `b4e79a028ce48f369f983955bfefa19b2ed44763`, empat file UI/test saja. Browser membuktikan Kiosk pending cash terlihat setelah refresh, koneksi gagal menahan tombol, retry melanjutkan, dan satu konfirmasi mengirim satu fulfillment KDS. Tidak ada transaksi otomatis, migrasi, atau perubahan mode Gateway. Full ulang 1.655/0/73 setelah satu kegagalan resource browser lokal yang lulus saat isolasi. Artifact dan gate Owner/admission belum lengkap; rollback teramati `5186fcf650d52ae52bde8339ca54685d01dea462`. Source-only, belum authenticated UAT, `BUSINESS_READY=false`.

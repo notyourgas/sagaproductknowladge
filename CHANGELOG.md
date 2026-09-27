@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS Owner master supplier, source-only
+
+- `CONFIRMED`: source `297c483` menambah daftar dan tambah/edit supplier native dalam Dashboard Pembelian. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status. Browser Owner 390/1440 dan konflik/retry, 46/46 tes terkait, check/type 630 modul lulus.
+- Production tidak berubah; PO authoring masih Admin dan gate rilis/UAT Owner belum selesai. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS kandidat antrean kasir terisolasi, source-only
 
 - `CONFIRMED`: source `f80146bb0bd6c67235914df2ba188cb551795b78` memisahkan pemulihan antrean kasir menjadi satu commit dari active production. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status. Browser 2/2, full ulang 1.655/0/73, check/type 626, dependency 0; full pertama gagal resource browser lokal dan lulus saat isolasi/ulang.

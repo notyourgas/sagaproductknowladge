@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS Owner mengelola master supplier dalam dashboard
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `297c483` membuat daftar dan tambah/edit supplier native di Pembelian, dengan status aktif dan lead time yang jelas pada HP maupun desktop. Konflik simpan ditangani tanpa membuat PO atau mengirim pesan pemasok. 46 tes terkait lulus; production tetap pada `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS mengisolasi kandidat antrean Kiosk untuk kasir
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `f80146bb0bd6c67235914df2ba188cb551795b78` adalah satu commit dari active production, bukan rilis branch pengembangan 13 commit. Uji browser Kiosk-kasir-KDS dan regresi ulang 1.655/0/73 lulus; tidak ada perubahan production, gateway, atau penerimaan uang otomatis. Artifact dan gate release masih pending; `BUSINESS_READY=false`.

@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Master supplier di Dashboard Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `297c483` membawa daftar dan form tambah/edit supplier ke Pembelian tanpa pindah ke Admin. Versi server, CSRF, Owner-only, konflik/retry, mobile 390, desktop 1440, dan tidak terciptanya PO diuji; 46/46 tes terkait dan check/type 630 modul lulus. Production belum berubah; authoring PO tetap di Admin, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Kandidat sempit antrean kasir dari production base
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `f80146bb0bd6c67235914df2ba188cb551795b78` memport pemulihan antrean kasir saja ke active base; empat file UI/test, satu commit, tanpa migrasi/payment/provider. Browser 2/2, full ulang 1.655 pass/0 fail/73 skip, check/type 626, dependency 0. Run full pertama mengalami `ERR_NO_BUFFER_SPACE` pada browser; kasus 2/2 dan full ulang lulus. Artifact/Owner/admission/aktivasi belum ada; production tidak berubah dan `BUSINESS_READY=false`.
