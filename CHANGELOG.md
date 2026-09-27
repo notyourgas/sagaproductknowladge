@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS pemulihan draft kasir, source-only
+
+- `CONFIRMED`: source `720daa4d45978911314f8c41a953b2b297795ee6` memulihkan draft kasir secara terbatas per sesi dan memperbaiki fokus katalog tanpa membuka ulang checkout yang tidak pasti. Area: SagaOPS product/dossier/changelog, portfolio, master, dan sync status.
+- Regresi penuh 1670 lulus/0 gagal/73 dilewati; check/type 629; audit dependency production 0 vulnerability. Production tidak berubah; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS status laporan inventory Owner, source-only
 
 - `CONFIRMED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` mengoreksi kartu Laporan inventory agar tidak menawarkan laporan ketika health server `OFF`/belum siap. Alasan: menghindari kesan fitur sudah aktif. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

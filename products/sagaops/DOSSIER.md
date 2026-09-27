@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Draft kasir tahan navigasi sesi
+
+Before: draft keranjang kasir dapat hilang saat layar dimuat ulang, sementara navigasi kembali katalog dapat memicu render ganda dan melepas fokus keyboard. After pada source `720daa4d45978911314f8c41a953b2b297795ee6`: draft disimpan per actor/outlet dalam sesi browser selama 15 menit, diperiksa lagi terhadap katalog lalu di-quote oleh server; checkout tidak pasti tidak diproses otomatis. Navigasi katalog hanya merender ulang saat filter URL berubah. Regresi penuh 1670/0/73, check/type 629, audit production 0 vulnerability. Belum dideploy; active tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Ketersediaan laporan inventory di Owner Dashboard
 
 Before: kartu Laporan mengajak Owner membuka inventory reporting meski layanan production `OFF`. After pada source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0`: respons Owner state membawa health laporan yang telah dinormalisasi; UI menandai belum aktif/belum siap dan menahan tautan sampai status `ready=true`. Endpoint laporan tetap fail-closed dan tidak ada perubahan data bisnis atau aktivasi provider. Browser 390/1440, 22 tes terkait, dan check/type 628 modul lulus. Belum dideploy; production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS draft kasir dapat dipulihkan secara aman
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `720daa4d45978911314f8c41a953b2b297795ee6` menambah pemulihan draft kasir per sesi tanpa mengirim ulang checkout yang tidak pasti, serta memperbaiki fokus keyboard katalog. Regresi penuh 1670 lulus/0 gagal/73 dilewati. Belum dideploy, belum UAT Owner, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS Owner melihat status laporan inventory yang benar
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` menyembunyikan aksi laporan inventory saat layanan belum aktif dan menampilkan status server secara jelas. Production tetap pada SHA sebelumnya dengan inventory reporting `OFF`; `BUSINESS_READY=false`.

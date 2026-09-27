@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Pemulihan draft kasir dan fokus katalog, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `720daa4d45978911314f8c41a953b2b297795ee6` memulihkan keranjang kasir dalam sesi browser hanya untuk actor/outlet yang sama, memvalidasi ulang katalog dan meminta quote server. Checkout yang belum pasti tidak otomatis dikirim ulang. Perbaikan katalog mencegah render ganda saat navigasi kembali agar fokus keyboard kembali ke kartu asal.
+- Regresi penuh 1670 lulus, 0 gagal, 73 dilewati; check/type 629 modul; audit dependency production 0 vulnerability. Production masih `b4e79a028ce48f369f983955bfefa19b2ed44763`; belum ada aktivasi, transaksi, atau bukti UAT Owner. `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Status laporan inventory pada Dashboard Owner, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` membuat kartu Laporan inventory mengikuti status layanan dari server. Saat mode `OFF`, Owner melihat “Belum diaktifkan” dan tidak mendapat tombol membuka laporan yang tidak tersedia; saat siap, tombol kembali muncul. Browser 390/1440, 22 tes terkait, serta check/type 628 modul lulus.

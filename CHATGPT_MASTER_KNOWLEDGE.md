@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Draft kasir SagaPOS source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `720daa4d45978911314f8c41a953b2b297795ee6` memulihkan draft keranjang kasir dalam sesi browser per actor/outlet, selalu memerlukan validasi katalog dan quote server baru, dan tidak otomatis mengulang checkout yang tidak pasti. Fokus keyboard katalog saat navigasi kembali juga diperbaiki. Regresi penuh 1670 lulus/0 gagal/73 dilewati. Production aktif masih `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Kejelasan ketersediaan laporan SagaPOS
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` membuat kartu Laporan inventory di Owner Dashboard mengikuti status server: `OFF` berarti belum aktif dan tombol laporan ditahan. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, reporting `OFF`, `BUSINESS_READY=false`.

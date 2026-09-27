@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Pemulihan draft kasir dan fokus katalog
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `720daa4d45978911314f8c41a953b2b297795ee6` memulihkan draft kasir per actor/outlet dalam sesi dengan quote ulang dari server dan mencegah render ganda katalog saat kembali dari dialog. Checkout tidak pasti tidak otomatis dikirim. Regresi penuh 1670 lulus/0 gagal/73 dilewati, check/type 629, audit production 0 vulnerability. Production tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Kartu laporan inventory mencerminkan status server
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` menampilkan status laporan inventory aktual di Dashboard Owner dan menahan tombol saat layanan `OFF`/belum siap. Alasan: Owner tidak diarahkan ke laporan yang tidak tersedia. Browser 390/1440, 22 tes terkait, check/type 628; production tidak berubah dan `BUSINESS_READY=false`.
