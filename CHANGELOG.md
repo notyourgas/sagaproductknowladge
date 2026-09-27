@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS pembanding kas antarshift durable, source-only
+
+- `CONFIRMED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` mencatat pembanding opening dan selisih di audit Postgres, menolak dua shift aktif satu outlet, serta menahan angka closing lama tanpa bukti titipan. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status. Persetujuan serah-terima Owner belum ada.
+- Focused 34/34, regresi penuh 1.663 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi tidak berubah; gate Owner/artifact/recovery kandidat belum lengkap. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS pratinjau selisih opening kas, source-only
 
 - `CONFIRMED`: source `5d0d1fe` membantu kasir membandingkan hitungan opening dengan kas yang ditinggalkan shift sebelumnya tanpa mengarang konfirmasi serah-terima. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

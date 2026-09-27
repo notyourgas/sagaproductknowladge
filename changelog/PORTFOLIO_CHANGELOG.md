@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS mencatat selisih kas antarshift di Postgres
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` membuat perbandingan kas pembuka dengan titipan closing sebelumnya tahan restart dan audit, tanpa menganggapnya persetujuan fisik. Regresi 1.663 pass/0 fail/73 skip; produksi belum berubah karena gate rilis belum lengkap. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS pratinjau selisih kas saat shift berikutnya dibuka
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5d0d1fe` membandingkan hitungan opening manual dengan kas yang dicatat ditinggalkan pada closing terakhir tanpa auto-fill atau konfirmasi uang. Regresi 1.660 pass/0 fail/73 skip; produksi belum berubah karena gate rilis belum lengkap. `BUSINESS_READY=false`.

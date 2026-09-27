@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — SagaPOS handover kas berbasis bukti server
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` menyimpan hasil perbandingan opening dengan kas yang dinyatakan ditinggalkan shift sebelumnya pada audit Postgres, memulihkannya setelah restart, dan menandai selisih untuk tinjauan Owner. Ini bukan konfirmasi serah-terima fisik. Closing lama tanpa bukti eksplisit tetap tidak terverifikasi. Regresi lokal 1.663 pass/0 fail/73 skip; produksi masih `b4e79a028ce48f369f983955bfefa19b2ed44763`, gate Owner/artifact/recovery belum lengkap, `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — SagaPOS membandingkan kas antarshift secara visual
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5d0d1fe` memperlihatkan kas ditinggalkan terakhir dan selisih dari hitungan opening baru di POS kasir. Ini hanya pratinjau: kasir tetap menghitung fisik, tidak ada auto-fill atau fakta serah-terima baru. Regresi 1.660 pass/0 fail/73 skip; runtime active tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, gate Owner/release belum lengkap, `BUSINESS_READY=false`.

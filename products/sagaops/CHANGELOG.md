@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Audit pembanding opening cash tahan restart
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` mengganti pratinjau browser saja dengan hitungan server dari bukti closing Postgres, satu audit opening, pemulihan restart, dan penolakan dua shift aktif pada outlet yang sama. UI menampilkan selisih untuk tinjauan Owner dan menahan angka dari closing lama yang tidak terverifikasi. File: repository Postgres, runtime POS, UI kasir, tes browser dan durable.
+- Focused 34/34, full lokal 1.663 pass/0 fail/73 skip, static/type 626, dependency 0. Tanpa skema/provider/payment mutation. Produksi active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; artifact/recovery/Owner gate belum lengkap. Persetujuan serah-terima Owner belum diimplementasi; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Kas pembuka dibandingkan dengan sisa shift terakhir
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5d0d1fe` menampilkan angka kas ditinggalkan dan pratinjau selisih saat kasir mengetik hitungan opening. Pembukaan tetap manual; pratinjau tidak membuat fakta pembayaran, shift, atau serah-terima. File: UI/CSS kasir dan tes browser.

@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Selisih opening antarshift dicatat server
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `7670945ae7ce76e6379c5d7b7c91663bb8499af2` membandingkan hitungan pembuka kasir dengan nominal kas yang secara eksplisit ditinggalkan pada closing sebelumnya. Perbandingan dan status `matched`/`review_required` tersimpan di audit Postgres dan pulih setelah restart; dua pembukaan shift serentak tidak menghasilkan dua shift aktif. Closing lama tanpa bukti nominal titipan dinyatakan belum terverifikasi, bukan diberi selisih palsu. Ini belum merupakan persetujuan serah-terima Owner.
+- Focused 34/34, regresi penuh lokal 1.663 pass/0 fail/73 skip, static/type 626, dependency produksi 0. Tidak ada migrasi skema atau perubahan mode Gateway. Produksi tetap active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; artifact, recovery kandidat, dan verifikasi Owner belum lengkap. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Pratinjau selisih kas sebelum shift baru
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5d0d1fe` memperlihatkan kas yang dicatat ditinggalkan pada shift sebelumnya dan selisih langsung terhadap hitungan pembuka yang diketik kasir. Nilai tidak diisi otomatis; pratinjau tidak mengonfirmasi serah-terima atau membuat fakta keuangan. Kasir tetap menghitung fisik dan Owner meninjau selisih.
