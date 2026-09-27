@@ -2,7 +2,7 @@
 
 ## 2026-09-27 — Batas aset QRIS dan pemulihan pilot
 
-Source `0aaded55c4989be857beb5e14ddba07b40717262` menambahkan decoding PNG dan pemeriksaan payload QRIS statis Indonesia sebelum aset pembayaran disimpan. Tes regresi lokal: 1.664 lulus, 0 gagal, 73 dilewati; static/type 627 modul dan audit dependency produksi 0 temuan. File promosi yang diberikan Owner ditolak oleh validasi tanpa write database. Source ini bersih dan ter-push, tetapi belum dikemas atau diaktifkan; merchant QRIS asli dan verifikasi penerima dana masih diperlukan.
+Source `0aaded55c4989be857beb5e14ddba07b40717262` menambahkan decoding PNG dan pemeriksaan payload QRIS statis Indonesia sebelum aset pembayaran disimpan, serta prosedur perpanjangan pilot yang dibatasi. Regresi penuh pada parent QR guard `cf325873a34958073c46c1434ac0ab58e062dee7`: 1.664 lulus, 0 gagal, 73 dilewati; pada SHA akhir, kontrak operasi terfokus 10/10, static/type 627 modul, dan audit dependency produksi 0 temuan. File promosi yang diberikan Owner ditolak oleh validasi tanpa write database. Source ini bersih dan ter-push, tetapi belum dikemas atau diaktifkan; merchant QRIS asli dan verifikasi penerima dana masih diperlukan.
 
 Pilot Owner sempat kedaluwarsa sehingga runtime berhenti dan health publik gagal. Setelah persetujuan Owner yang baru, akses pilot diperpanjang secara terbatas dan service kembali sehat tanpa perubahan SHA runtime, mode Gateway, atau transaksi. Smoke Owner/Kiosk lulus dengan `CASH_ASSISTED` saja. Gate release pembayaran tetap terpisah dan `BUSINESS_READY=false`.
 

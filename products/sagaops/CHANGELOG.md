@@ -2,7 +2,7 @@
 
 ## 2026-09-27 — Tolak QR non-merchant, pemulihan akses pilot
 
-- `IMPLEMENTED_NOT_DEPLOYED`: source `0aaded55c4989be857beb5e14ddba07b40717262` menolak PNG poster/non-QRIS pada endpoint aset QRIS statis; regresi lokal 1.664 lulus, 0 gagal, 73 skip. Tidak ada aset pembayaran baru atau transaksi.
+- `IMPLEMENTED_NOT_DEPLOYED`: source `0aaded55c4989be857beb5e14ddba07b40717262` menolak PNG poster/non-QRIS pada endpoint aset QRIS statis; regresi penuh pada parent `cf325873a34958073c46c1434ac0ab58e062dee7` 1.664 lulus, 0 gagal, 73 skip; kontrak operasi pada SHA akhir 10/10. Tidak ada aset pembayaran baru atau transaksi.
 - `PRODUCTION_ACTIVATED / CONFIG_ONLY`: akses pilot Owner dipulihkan setelah kedaluwarsa dengan izin baru. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; scoped Owner smoke lulus, Kiosk hanya `CASH_ASSISTED`. Ini bukan aktivasi fitur QRIS atau source baru.
 
 ## 2026-09-27 — Artifact handover kas staged, gate gateway menahan aktivasi
