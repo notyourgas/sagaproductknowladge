@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Kandidat sempit SagaPOS kasir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: pemulihan antrean kasir dipisah menjadi source `f80146bb0bd6c67235914df2ba188cb551795b78`, satu commit di atas active `b4e79a028ce48f369f983955bfefa19b2ed44763`. Browser dan full regression ulang 1.655 pass/0 fail/73 skip; tidak ada migrasi atau perubahan payment. Ini belum artifact, deployment, authenticated UAT, atau kesiapan bisnis. Gate Owner/admission tetap wajib; `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Pembelian Owner SagaPOS
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` membuat Dashboard Owner menampilkan daftar PO terbaru dan status penerimaan dari server pada desktop dan HP. Daftar ini hanya baca; membuat/merevisi PO masih ke Admin lama dan PO bukan bukti penerimaan/pembayaran. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

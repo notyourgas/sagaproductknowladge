@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Kandidat sempit antrean kasir dari production base
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `f80146bb0bd6c67235914df2ba188cb551795b78` memport pemulihan antrean kasir saja ke active base; empat file UI/test, satu commit, tanpa migrasi/payment/provider. Browser 2/2, full ulang 1.655 pass/0 fail/73 skip, check/type 626, dependency 0. Run full pertama mengalami `ERR_NO_BUFFER_SPACE` pada browser; kasus 2/2 dan full ulang lulus. Artifact/Owner/admission/aktivasi belum ada; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-28 — PO terbaru dapat diperiksa di Dashboard Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` menambah daftar read-only PO di Pembelian dengan supplier, ETA, nilai, revisi dan status penerimaan. Browser 390/1440 dan 44 tes relevan lulus; check/type 630. Buat/revisi PO masih perlu Admin lama. Production tidak berubah; `BUSINESS_READY=false`.

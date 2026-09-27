@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Kandidat rilis sempit pemulihan antrean kasir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: fungsi “Perbarui antrean” yang sebelumnya ada di branch pengembangan kini diisolasi pada source `f80146bb0bd6c67235914df2ba188cb551795b78`, tepat satu commit di atas runtime produksi aktif. Perubahan hanya UI kasir dan browser acceptance; tidak membawa perubahan Owner Dashboard, pembayaran, migrasi, atau provider.
+- Browser terfokus 2/2, full regression ulang 1.655 lulus/0 gagal/73 dilewati, check/type 626 modul, audit dependency production 0 vulnerability. Run full pertama gagal satu navigasi browser lokal `ERR_NO_BUFFER_SPACE`; kasusnya lulus 2/2 terisolasi dan full ulang hijau. Artifact/admission/Owner/post-release smoke belum lengkap; produksi tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Daftar PO terbaca di Pembelian Owner, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` menampilkan delapan PO terbaru beserta supplier, perkiraan tiba, jumlah item, nilai rencana, revisi, dan status penerimaan langsung di Dashboard Owner. Pada HP informasi tampil sebagai kartu tanpa geser horizontal; pembuatan/revisi PO tetap di Admin lama dan dinyatakan jelas.

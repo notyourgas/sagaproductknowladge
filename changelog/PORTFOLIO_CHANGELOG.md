@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS mengisolasi kandidat antrean Kiosk untuk kasir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `f80146bb0bd6c67235914df2ba188cb551795b78` adalah satu commit dari active production, bukan rilis branch pengembangan 13 commit. Uji browser Kiosk-kasir-KDS dan regresi ulang 1.655/0/73 lulus; tidak ada perubahan production, gateway, atau penerimaan uang otomatis. Artifact dan gate release masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS Owner melihat detail PO tanpa pindah halaman
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` memberi Pembelian native daftar PO read-only dan status penerimaan, termasuk layout HP yang menampilkan nilai serta status tanpa scroll horizontal. Pembuatan/revisi belum native; production tidak berubah, `BUSINESS_READY=false`.

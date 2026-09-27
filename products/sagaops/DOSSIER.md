@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Isolasi kandidat kasir dari runtime aktif
+
+Before: perubahan pemulihan antrean kasir ada pada branch dengan 13 commit di atas runtime sehingga tidak layak diperlakukan sebagai rilis satu slice. After: branch `codex/sagapos-cashier-queue-release-20260928` pada `f80146bb0bd6c67235914df2ba188cb551795b78` berisi satu commit dari active `b4e79a028ce48f369f983955bfefa19b2ed44763`, empat file UI/test saja. Browser membuktikan Kiosk pending cash terlihat setelah refresh, koneksi gagal menahan tombol, retry melanjutkan, dan satu konfirmasi mengirim satu fulfillment KDS. Tidak ada transaksi otomatis, migrasi, atau perubahan mode Gateway. Full ulang 1.655/0/73 setelah satu kegagalan resource browser lokal yang lulus saat isolasi. Artifact dan gate Owner/admission belum lengkap; rollback teramati `5186fcf650d52ae52bde8339ca54685d01dea462`. Source-only, belum authenticated UAT, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — PO terbaru native di Owner Pembelian
 
 Before: kartu Pembelian hanya menyebut jumlah PO aktif; untuk mengetahui supplier, ETA, nilai, dan penerimaan Owner harus pindah ke Admin lama. After pada source `eb841d8a4eb54ea587c40a9260f023ddafa28efb`: proyeksi server yang sama menampilkan hingga delapan PO terakhir dengan revisi dan status penerimaan dalam Dashboard Owner; mobile 390 memakai kartu agar nilai/status tidak tersembunyi, desktop 1440 memakai tabel. Pembuatan/revisi masih di Admin dan UI tidak mengklaim paritas penuh. Browser Owner-only, penerimaan parsial, 44 tes relevan, dan check/type 630 modul lulus. Tidak ada migrasi, pembayaran, mutasi data bisnis, atau production release; active tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
