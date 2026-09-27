@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS menolak opening shift tanpa hitungan kasir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` menghapus default Rp300.000 di UI/API; nominal kosong ditolak dan Rp0 eksplisit diterima. Regresi 1.657 pass/0 fail/73 skip; runtime produksi belum berubah karena gate Owner belum tersedia. Tidak ada transaksi atau perubahan Gateway; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS POS manual: opening cash aktual
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` memungkinkan kasir menghitung uang awal shift dan menyelaraskan default closing; server menolak nominal invalid. Regresi 1.656 pass/0 fail/73 skip. Produksi belum berubah karena gate Owner rilis belum tersedia; `BUSINESS_READY=false`.

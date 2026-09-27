@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS opening cash wajib eksplisit, source-only
+
+- `CONFIRMED`: source `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` menutup default Rp300.000 di UI dan API agar shift tidak dibuka tanpa hitungan fisik kasir. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Regresi 1.657 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi tidak berubah; gate Owner/deploy tertunda. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS POS manual opening cash terhitung, belum deploy
 
 - `CONFIRMED`: source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` mengubah opening shift agar memakai hitungan kasir dan memvalidasi nominal di server; closing default mengikuti opening. Alasan: POS manual cadangan Kiosk memerlukan dasar rekonsiliasi kas yang benar. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

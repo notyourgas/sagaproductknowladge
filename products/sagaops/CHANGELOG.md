@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Default opening cash Rp300.000 dihapus dari UI dan API
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` mewajibkan hitungan awal yang diketik kasir, menolak body API tanpa nominal, dan menerima Rp0 yang eksplisit. Alasan: kandidat sebelumnya masih dapat membuka shift dengan nominal default, sehingga rekonsiliasi kas berisiko tidak sesuai uang fisik.
+- Full lokal 1.657 pass/0 fail/73 skip; static/type 626, dependency 0, browser desktop/tablet/mobile dan aksesibilitas terfokus lulus. Produksi tidak berubah: active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Gate Owner/deploy menunggu; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Opening cash POS manual dapat dihitung kasir, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` mengganti Rp300.000 tetap dengan hitungan kasir yang divalidasi server, lalu menyelaraskan default closing dengan opening. Alasan: mengurangi selisih kas palsu saat POS manual menjadi cadangan Kiosk. File: UI kasir, runtime shift, tes browser dan runtime.

@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Koreksi nominal awal wajib, source-only
+
+Kandidat `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` menutup dua default yang tersisa dari kandidat sebelumnya: UI tidak lagi menampilkan Rp300.000 sebelum kasir menghitung, dan API tidak lagi membuat shift Rp300.000 dari body kosong. Saldo awal `0` tetap sah bila kasir mengetiknya. Browser memeriksa nilai kosong/negatif, pembukaan Rp120.000, closing tanpa selisih, lalu form 390×844 kosong setelah reload; API memeriksa body kosong ditolak 422. Regresi penuh 1.657 pass/0 fail/73 skip; produksi masih memakai runtime sebelumnya karena gate Owner belum lulus. Tidak ada transaksi nyata atau perubahan mode Gateway.
+
 ## 2026-09-27 — Opening shift POS manual dihitung, bukan diasumsikan
 
 Source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` mengganti tombol opening yang selalu mengirim Rp300.000 dengan input hitungan fisik kasir. Validasi browser menahan nominal kosong/negatif/pecahan; domain menolak nilai bukan integer aman atau negatif sebelum membuat cash session. Nilai opening tersimpan sebagai fakta shift dan menjadi default nominal kas yang ditinggalkan pada form closing, yang tetap dapat diubah sesuai hitungan akhir. Tes browser membuka Rp120.000, menutup pada nilai yang sama tanpa selisih, dan memeriksa aksesibilitas/overflow. Regresi penuh 1.656 pass/0 fail/73 skip; produksi belum berubah karena gate Owner belum lulus. Gateway existing dan Order Meja demo tidak diubah.

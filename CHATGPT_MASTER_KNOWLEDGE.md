@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — POS manual SagaPOS mewajibkan nominal awal eksplisit
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` mengoreksi kandidat sebelumnya: form opening kosong dan API menolak nominal yang hilang; kasir mengetik `0` bila laci kosong. Regresi 1.657 pass/0 fail/73 skip. Runtime masih `b4e79a028ce48f369f983955bfefa19b2ed44763`; gate Owner rilis belum lulus, `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — POS manual SagaPOS menghitung opening cash
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` membuat kasir memasukkan uang fisik awal shift, bukan otomatis Rp300.000; server memvalidasi nilai dan form closing memakai opening itu sebagai default. Regresi lokal lulus 1.656/0/73. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; gate Owner rilis belum tersedia, `BUSINESS_READY=false`.

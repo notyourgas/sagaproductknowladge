@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Opening shift kasir wajib menghitung nominal aktual
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source SagaPOS `4310a6c112c7ee37630cc0fc56ed1b7043ed0076` menghapus isi otomatis Rp300.000 pada form dan default Rp300.000 di API. Kasir wajib mengetik hasil hitung fisik, termasuk `0` bila laci kosong; request tanpa nominal ditolak tanpa membuat shift. Ini mengoreksi celah pada kandidat source sebelumnya, bukan perubahan runtime produksi.
+- Regresi penuh 1.657 pass/0 fail/73 skip, static/type 626, audit dependency produksi 0; browser kasir 390×844 tanpa overflow/temuan aksesibilitas serius. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; gate Owner belum tersedia. Gateway existing dan Order Meja demo tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Nominal opening cash POS manual mengikuti hitungan kasir
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source SagaPOS `6b15abdefd1d10685cbfca4498f15b2ba026ce76` membuat kasir mengisi uang awal laci sebelum membuka shift, memvalidasi Rupiah bulat nonnegatif di server, dan memakai nominal opening itu sebagai nilai awal kas yang ditinggalkan saat closing. Ini mencegah asumsi tetap Rp300.000 mengacaukan rekonsiliasi saat Kiosk ditangani lewat POS manual.
