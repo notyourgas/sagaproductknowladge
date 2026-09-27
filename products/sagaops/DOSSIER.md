@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Semantik pengaturan pesanan lintas kasir dan kiosk
+
+Audit source menemukan `catalogPricing.quote()` dipakai oleh quote kiosk maupun kasir, dan keduanya menolak quote baru ketika `orderingSettings.paused` aktif. Copy lama setelah simpan menyebut kiosk saja, sehingga Owner dapat salah mengira kasir tetap beroperasi. Pada source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8`, label, badge, keterangan, serta pesan hasil simpan menyebut kasir dan kiosk; tampilan mobile menempatkan badge di bawah penjelasan agar terbaca. Tes browser 390/1440 melakukan jeda, memverifikasi kedua quote ditolak, lalu membuka kembali. Regresi terfokus 32/32 dan static/type 627 modul lulus. Tidak ada perubahan aturan server, provider, atau production; paritas seluruh Pengaturan Owner masih backlog. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — Baris POS manual terpisah untuk modifier dan instruksi bar
 
 Source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` mengubah cart kasir dari agregasi per produk menjadi baris bernomor internal. Kasir dapat mengubah opsi katalog yang tersedia dan memberi catatan hingga 160 karakter per baris; dua gelas produk sama tidak dipaksa berbagi pilihan. Server tetap memvalidasi pilihan, menghitung harga, dan mengikat checkout pada quote. Pada tes browser 390×844, dua Americano berbeda menghasilkan total server Rp31.000 dan satu tiket KDS membawa Extra Shot serta catatan alergi. Nilai tes adalah fixture sintetis, bukan transaksi nyata. Focused browser 4/4, API/runtime 30/30, full ulang 1.667 pass/0 fail/73 skip, static/type 627, dependency produksi 0. Satu timeout tes katalog pada full pertama lulus terisolasi dan di full ulang tanpa mengubah assertion. Tidak ada migrasi/provider mutation. Kandidat bersih ter-push, belum dikemas atau dideploy; runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

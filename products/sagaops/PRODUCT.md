@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Dampak jeda pemesanan Owner dijelaskan, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8` memperjelas bahwa tombol terima/jeda pesanan dan batas jam di Dashboard Owner berlaku untuk quote baru **kasir dan kiosk**, bukan kiosk saja. UI dan pesan simpan kini menyebut dua kanal agar Owner tidak menghentikan kasir tanpa sadar.
+- Browser 390/1440 membuktikan jeda menolak quote baru di kedua kanal dan pemesanan dapat dibuka kembali; 32/32 tes terfokus dan static/type 627 modul lulus. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Detail per gelas di POS manual, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` memungkinkan kasir membuat baris terpisah untuk produk yang sama dengan modifier dan catatan berbeda. Pilihan masuk ke quote harga server, snapshot order, dan tiket KDS; estimasi di cart tidak menggantikan total server.

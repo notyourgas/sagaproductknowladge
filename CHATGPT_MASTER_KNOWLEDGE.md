@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Batas kontrol pemesanan SagaPOS
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: pada source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8`, label Pengaturan Owner menyatakan dengan benar bahwa jeda dan jam layanan mengendalikan quote baru kasir serta kiosk. Browser 390/1440 memverifikasi kedua kanal; production masih `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — POS manual detail per baris source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` memberi kasir modifier dan catatan terpisah untuk dua baris produk sama; harga tetap dihitung server dan catatan mengalir ke KDS. Browser mobile/KDS dan full regresi ulang 1.667 pass/0 fail/73 skip lulus. Belum artifact/deploy; runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS memperjelas kontrol pesanan Owner
+
+- Source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8` menjelaskan bahwa jeda pesanan di dashboard berlaku untuk kasir dan kiosk; tes browser dua viewport dan kedua quote lulus. Belum dideploy; tidak mengubah pembayaran/provider, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS mencatat detail minuman per gelas di source
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` mendukung modifier dan catatan per baris pada POS manual sampai tiket KDS, dengan harga final tetap dari server. Regresi ulang 1.667 pass/0 fail/73 skip; produksi belum berubah dan `BUSINESS_READY=false`.

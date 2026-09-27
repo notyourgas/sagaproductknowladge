@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS dampak jeda pesanan Owner, source-only
+
+- `CONFIRMED`: source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8` memperbaiki copy Pengaturan agar Owner tahu jeda menghentikan quote baru kasir dan kiosk. Alasan: mencegah penghentian kasir yang tidak disengaja. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Browser 390/1440, 32 tes terfokus, check 627 modul lulus. Production tidak berubah; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS POS manual modifier dan catatan per baris
 
 - `CONFIRMED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` menjaga dua item produk sama dengan instruksi berbeda dan harga server hingga KDS. Alasan: kasir cadangan Kiosk perlu mencatat pesanan nyata per gelas tanpa mencampur catatan. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
