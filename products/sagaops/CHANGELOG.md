@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Antrean kasir berhasil dirilis
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: `f80146bb0bd6c67235914df2ba188cb551795b78` mengaktifkan perbarui antrean manual, freshness dan penahan konfirmasi saat gagal. Artifact Linux immutable, Owner, admission, backup/restore dan rehearsal lulus; post-release browser tujuh surface serta recovery live tiga viewport tanpa transaksi lulus. Active `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`. Gateway existing dan schema tidak berubah; QRIS merchant belum tersedia, offsite belum terverifikasi, UAT bisnis masih pending, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Master supplier di Dashboard Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `297c483` membawa daftar dan form tambah/edit supplier ke Pembelian tanpa pindah ke Admin. Versi server, CSRF, Owner-only, konflik/retry, mobile 390, desktop 1440, dan tidak terciptanya PO diuji; 46/46 tes terkait dan check/type 630 modul lulus. Production belum berubah; authoring PO tetap di Admin, `BUSINESS_READY=false`.

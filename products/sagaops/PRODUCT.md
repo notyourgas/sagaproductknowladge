@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Recovery antrean kasir aktif di production
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: source `f80146bb0bd6c67235914df2ba188cb551795b78` pada branch `codex/sagapos-cashier-queue-release-20260928` kini aktif; rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`. Kasir dapat memilih **Perbarui antrean**, melihat waktu pemeriksaan, dan mencoba ulang tanpa reload. Koneksi gagal menahan konfirmasi dari snapshot lama; status pembayaran/KDS tetap server-authoritative.
+- Artifact SHA-256 `7ce2188d006c858ca6caa29e9439032592281a3d037dad460abc1a2f003f2d0c`, admission, backup terenkripsi/restore disposable, serta rehearsal kandidat–rollback–kandidat lulus. Owner smoke, browser tujuh surface, recovery live normal/offline/retry/keyboard pada 390/1024/1440, monitor dan link verifier lulus; transaksi dibuat oleh verifikasi: 0.
+- Rilis code-only tidak mengubah 34 migrasi, provider, atau mode Gateway existing. Kiosk tetap `CASH_ASSISTED`; QRIS statis belum tersedia karena aset merchant belum dikonfigurasi, Order Meja tetap DEMO. Source lain pada branch pengembangan tidak ikut dirilis. Ini authenticated release smoke, bukan UAT pembayaran nyata; offsite restore belum terverifikasi, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Master supplier di Pembelian Owner, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `297c483` menambah daftar supplier dan dialog tambah/edit langsung di Dashboard Owner Pembelian. Nama, lead time, dan status aktif dikelola dengan versi data server; konflik perubahan serentak ditolak dan draft dipertahankan. Hanya Owner yang dapat menyimpan.

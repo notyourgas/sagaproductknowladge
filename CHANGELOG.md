@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS recovery antrean kasir production-activated
+
+- `CONFIRMED`: exact source `f80146bb0bd6c67235914df2ba188cb551795b78` dan artifact immutable kini aktif setelah Owner/admission, backup/restore dan rehearsal. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status. Post-release Owner/browser tujuh surface, recovery live tiga viewport, monitor/link verifier lulus tanpa transaksi.
+- Production berubah dari `b4e79a028ce48f369f983955bfefa19b2ed44763` ke `f80146bb0bd6c67235914df2ba188cb551795b78`; rollback menjadi base tersebut. Tidak ada perubahan schema/provider/mode pembayaran; QRIS merchant, UAT bisnis dan offsite restore belum terverifikasi. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`; knowledge `main HEAD`.
+
 ## 2026-09-28 — SagaPOS Owner master supplier, source-only
 
 - `CONFIRMED`: source `297c483` menambah daftar dan tambah/edit supplier native dalam Dashboard Pembelian. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status. Browser Owner 390/1440 dan konflik/retry, 46/46 tes terkait, check/type 630 modul lulus.

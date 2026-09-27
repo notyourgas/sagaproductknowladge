@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS kasir mendapat recovery antrean di production
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: `f80146bb0bd6c67235914df2ba188cb551795b78` telah dirilis agar kasir menemukan antrean Kiosk baru tanpa reload dan tidak mengonfirmasi snapshot stale saat koneksi gagal. Gate artifact/Owner/backup/rehearsal serta post-release browser/monitor lulus. Gateway dan schema tetap; tidak ada transaksi verifikasi atau source Owner Dashboard lain yang dirilis. QRIS merchant, offsite restore dan UAT bisnis masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS Owner mengelola master supplier dalam dashboard
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `297c483` membuat daftar dan tambah/edit supplier native di Pembelian, dengan status aktif dan lead time yang jelas pada HP maupun desktop. Konflik simpan ditangani tanpa membuat PO atau mengirim pesan pemasok. 46 tes terkait lulus; production tetap pada `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
