@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS status laporan inventory Owner, source-only
+
+- `CONFIRMED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` mengoreksi kartu Laporan inventory agar tidak menawarkan laporan ketika health server `OFF`/belum siap. Alasan: menghindari kesan fitur sudah aktif. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Browser 390/1440, 22 tes terkait, check/type 628 modul lulus. Production tidak berubah; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS dampak jeda pesanan Owner, source-only
 
 - `CONFIRMED`: source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8` memperbaiki copy Pengaturan agar Owner tahu jeda menghentikan quote baru kasir dan kiosk. Alasan: mencegah penghentian kasir yang tidak disengaja. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

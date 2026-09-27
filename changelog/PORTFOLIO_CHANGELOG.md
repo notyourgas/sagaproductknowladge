@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS Owner melihat status laporan inventory yang benar
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` menyembunyikan aksi laporan inventory saat layanan belum aktif dan menampilkan status server secara jelas. Production tetap pada SHA sebelumnya dengan inventory reporting `OFF`; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS memperjelas kontrol pesanan Owner
 
 - Source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8` menjelaskan bahwa jeda pesanan di dashboard berlaku untuk kasir dan kiosk; tes browser dua viewport dan kedua quote lulus. Belum dideploy; tidak mengubah pembayaran/provider, `BUSINESS_READY=false`.

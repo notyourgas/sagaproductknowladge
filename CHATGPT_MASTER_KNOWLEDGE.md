@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Kejelasan ketersediaan laporan SagaPOS
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` membuat kartu Laporan inventory di Owner Dashboard mengikuti status server: `OFF` berarti belum aktif dan tombol laporan ditahan. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, reporting `OFF`, `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Batas kontrol pemesanan SagaPOS
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: pada source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8`, label Pengaturan Owner menyatakan dengan benar bahwa jeda dan jam layanan mengendalikan quote baru kasir serta kiosk. Browser 390/1440 memverifikasi kedua kanal; production masih `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

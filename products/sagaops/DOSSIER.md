@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Ketersediaan laporan inventory di Owner Dashboard
+
+Before: kartu Laporan mengajak Owner membuka inventory reporting meski layanan production `OFF`. After pada source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0`: respons Owner state membawa health laporan yang telah dinormalisasi; UI menandai belum aktif/belum siap dan menahan tautan sampai status `ready=true`. Endpoint laporan tetap fail-closed dan tidak ada perubahan data bisnis atau aktivasi provider. Browser 390/1440, 22 tes terkait, dan check/type 628 modul lulus. Belum dideploy; production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Semantik pengaturan pesanan lintas kasir dan kiosk
 
 Audit source menemukan `catalogPricing.quote()` dipakai oleh quote kiosk maupun kasir, dan keduanya menolak quote baru ketika `orderingSettings.paused` aktif. Copy lama setelah simpan menyebut kiosk saja, sehingga Owner dapat salah mengira kasir tetap beroperasi. Pada source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8`, label, badge, keterangan, serta pesan hasil simpan menyebut kasir dan kiosk; tampilan mobile menempatkan badge di bawah penjelasan agar terbaca. Tes browser 390/1440 melakukan jeda, memverifikasi kedua quote ditolak, lalu membuka kembali. Regresi terfokus 32/32 dan static/type 627 modul lulus. Tidak ada perubahan aturan server, provider, atau production; paritas seluruh Pengaturan Owner masih backlog. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.

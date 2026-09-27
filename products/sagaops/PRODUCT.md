@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Status laporan inventory pada Dashboard Owner, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` membuat kartu Laporan inventory mengikuti status layanan dari server. Saat mode `OFF`, Owner melihat “Belum diaktifkan” dan tidak mendapat tombol membuka laporan yang tidak tersedia; saat siap, tombol kembali muncul. Browser 390/1440, 22 tes terkait, serta check/type 628 modul lulus.
+- Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763` dengan inventory reporting `OFF`; ini koreksi kejelasan UI, bukan aktivasi laporan atau paritas penuh halaman Laporan. `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Dampak jeda pemesanan Owner dijelaskan, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8` memperjelas bahwa tombol terima/jeda pesanan dan batas jam di Dashboard Owner berlaku untuk quote baru **kasir dan kiosk**, bukan kiosk saja. UI dan pesan simpan kini menyebut dua kanal agar Owner tidak menghentikan kasir tanpa sadar.

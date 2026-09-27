@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Kartu laporan inventory mencerminkan status server
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0` menampilkan status laporan inventory aktual di Dashboard Owner dan menahan tombol saat layanan `OFF`/belum siap. Alasan: Owner tidak diarahkan ke laporan yang tidak tersedia. Browser 390/1440, 22 tes terkait, check/type 628; production tidak berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Copy jeda pemesanan mencakup kasir dan kiosk
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `c37b8d1f6849a1b9d6572cf4b8500292504c42d8` menghilangkan klaim salah bahwa jeda hanya memengaruhi kiosk. Browser 390/1440 membuktikan quote kasir dan kiosk tertahan lalu dapat dibuka kembali; 32 tes terfokus dan check 627 modul lulus. Production tidak berubah, `BUSINESS_READY=false`.

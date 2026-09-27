@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — SagaPOS Owner inventory report status source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch source `codex/sagapos-owner-settings-20260927` ter-push pada `e5d4f1548a4ccbafbccf0ff7406809c1290bd3f0`; browser 390/1440, 22 tes terkait dan check/type 628 modul lulus. Production tidak berubah: active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`, inventory reporting `OFF`. Rilis dan paritas dashboard masih pending; `BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-28 — SagaPOS ordering scope source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch source ter-push `codex/sagapos-owner-settings-20260927` commit `c37b8d1f6849a1b9d6572cf4b8500292504c42d8`; browser 390/1440, quote kasir+kiosk, 32/32 tes terfokus, dan check 627 modul lulus. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; rilis dan seluruh parity Pengaturan masih pending, `BUSINESS_READY=false`. Knowledge commit `main HEAD` dari checkout bersih.
