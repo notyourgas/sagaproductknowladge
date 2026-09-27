@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Modifier dan catatan per baris POS kasir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` menambah editor pilihan/catatan per baris, cart produk sama dengan konfigurasi berbeda, quote server, dan proyeksi KDS. File: UI kasir HTML/JS/CSS dan browser acceptance.
+- Focused browser 4/4, API/runtime 30/30, full ulang 1.667 pass/0 fail/73 skip, check/type 627, dependency 0. Full pertama 1 fail timeout katalog yang lulus terisolasi dan pada ulang; tidak ada assertion dilemahkan. Produksi tidak berubah; candidate artifact, recovery dan Owner release gate belum lengkap. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Jam layanan native di Pengaturan Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e0ce6a459717c40306420f517101f4c0da039ffb` mengganti kartu `Buka Admin` dengan form jam layanan/pemesanan dan tautan modul dashboard. Browser 390/1440 serta 32 tes regresi terfokus lulus; pengaturan lain belum sepenuhnya native. Production tidak berubah; `BUSINESS_READY=false`.

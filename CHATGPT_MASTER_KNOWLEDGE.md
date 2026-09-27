@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — POS manual detail per baris source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` memberi kasir modifier dan catatan terpisah untuk dua baris produk sama; harga tetap dihitung server dan catatan mengalir ke KDS. Browser mobile/KDS dan full regresi ulang 1.667 pass/0 fail/73 skip lulus. Belum artifact/deploy; runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — SagaPOS Pengaturan Owner native bertahap
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e0ce6a459717c40306420f517101f4c0da039ffb` sudah menaruh jam layanan/status pesanan langsung di Pengaturan Dashboard Owner dan menghapus tautan `Buka Admin` dari layar itu. Ini baru satu slice; pembayaran/perangkat dan pengaturan lain belum paritas penuh. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.

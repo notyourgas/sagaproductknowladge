@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS POS manual modifier dan catatan per baris
+
+- `CONFIRMED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` menjaga dua item produk sama dengan instruksi berbeda dan harga server hingga KDS. Alasan: kasir cadangan Kiosk perlu mencatat pesanan nyata per gelas tanpa mencampur catatan. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Regresi ulang 1.667 pass/0 fail/73 skip setelah satu timeout katalog pada run pertama; static/type 627, dependency 0. Produksi tidak berubah; artifact/recovery/Owner gate kandidat belum selesai. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS Pengaturan Owner jam layanan, source-only
 
 - `CONFIRMED`: source `e0ce6a459717c40306420f517101f4c0da039ffb` menutup redirect `Buka Admin` untuk jam layanan dan pemesanan dengan kontrol Owner langsung di dashboard. Alasan: mengurangi perpindahan aplikasi dan menjaga konteks operasional. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

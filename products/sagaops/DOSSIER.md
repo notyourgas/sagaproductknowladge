@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Baris POS manual terpisah untuk modifier dan instruksi bar
+
+Source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` mengubah cart kasir dari agregasi per produk menjadi baris bernomor internal. Kasir dapat mengubah opsi katalog yang tersedia dan memberi catatan hingga 160 karakter per baris; dua gelas produk sama tidak dipaksa berbagi pilihan. Server tetap memvalidasi pilihan, menghitung harga, dan mengikat checkout pada quote. Pada tes browser 390×844, dua Americano berbeda menghasilkan total server Rp31.000 dan satu tiket KDS membawa Extra Shot serta catatan alergi. Nilai tes adalah fixture sintetis, bukan transaksi nyata. Focused browser 4/4, API/runtime 30/30, full ulang 1.667 pass/0 fail/73 skip, static/type 627, dependency produksi 0. Satu timeout tes katalog pada full pertama lulus terisolasi dan di full ulang tanpa mengubah assertion. Tidak ada migrasi/provider mutation. Kandidat bersih ter-push, belum dikemas atau dideploy; runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Slice Pengaturan Owner native
 
 Before: halaman Pengaturan hanya menawarkan `Buka Admin`, memaksa Owner keluar dari alur dashboard. After pada source `e0ce6a459717c40306420f517101f4c0da039ffb`: status terima pesanan dan jam layanan dapat dibaca/diubah di dashboard; alasan wajib, konflik versi ditolak, dan aksi tetap memakai same-origin/CSRF serta otorisasi Owner di server. Navigasi pengaturan lain menuju modul dashboard terkait. Browser 390/1440 membuktikan perubahan jam tersimpan dan tidak ada tautan `Buka Admin`; 32 tes regresi terfokus dan static/type 627 modul lulus. Belum ada parity penuh untuk pembayaran, perangkat, maupun pengaturan lain; source belum dideploy. Runtime `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

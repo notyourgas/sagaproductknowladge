@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Detail per gelas di POS manual, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` memungkinkan kasir membuat baris terpisah untuk produk yang sama dengan modifier dan catatan berbeda. Pilihan masuk ke quote harga server, snapshot order, dan tiket KDS; estimasi di cart tidak menggantikan total server.
+- Browser mobile 390 dan KDS lulus; regresi ulang 1.667 pass/0 fail/73 skip, check/type 627, dependency produksi 0. Percobaan regresi pertama mengalami satu timeout tes katalog yang lulus saat diisolasi dan pada regresi ulang. Belum ada artifact/deploy/aktivasi untuk SHA ini; produksi tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. QRIS merchant tetap belum tersedia; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Pengaturan jam layanan pindah ke Dashboard Owner, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e0ce6a459717c40306420f517101f4c0da039ffb` menampilkan status pesanan, jam buka, pesanan terakhir, jam tutup, dan form alasan langsung di Pengaturan Owner. Simpan memakai API Owner yang sudah ada dengan CSRF, versi katalog, audit, dan validasi jam; kartu Menu, Integrasi, serta Tim mengarah ke modul dashboard, bukan Admin lama.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS mencatat detail minuman per gelas di source
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `670dc12c92f512e2aa64ac1b5ebe928a31e2fff6` mendukung modifier dan catatan per baris pada POS manual sampai tiket KDS, dengan harga final tetap dari server. Regresi ulang 1.667 pass/0 fail/73 skip; produksi belum berubah dan `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS Pengaturan Owner source-only
 
 - Source `e0ce6a459717c40306420f517101f4c0da039ffb` memindahkan kontrol jam layanan dan status pemesanan ke Dashboard Owner. Modul lain tetap memakai tautan internal dashboard; paritas seluruh Admin masih backlog. Browser 390/1440 dan 32 tes terfokus lulus. Belum dideploy; `BUSINESS_READY=false`.
