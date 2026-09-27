@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — POS manual SagaPOS menghitung opening cash
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` membuat kasir memasukkan uang fisik awal shift, bukan otomatis Rp300.000; server memvalidasi nilai dan form closing memakai opening itu sebagai default. Regresi lokal lulus 1.656/0/73. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; gate Owner rilis belum tersedia, `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — Kiosk SagaPOS tidak lagi meminta login berulang
 
 - `CONFIRMED`: produksi aktif `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. GET stream katalog pada Kiosk menerima sesi Kiosk yang telah melewati Basic Auth, dan SSE diteruskan tanpa buffering; quote terautentikasi berhasil. Login awal Owner pilot tetap diperlukan, bukan akses publik tanpa login.

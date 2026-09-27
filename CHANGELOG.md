@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS POS manual opening cash terhitung, belum deploy
+
+- `CONFIRMED`: source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` mengubah opening shift agar memakai hitungan kasir dan memvalidasi nominal di server; closing default mengikuti opening. Alasan: POS manual cadangan Kiosk memerlukan dasar rekonsiliasi kas yang benar. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Regresi 1.656 pass/0 fail/73 skip, check/type 626, audit produksi 0. Produksi tidak berubah; gate Owner/deploy tertunda. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS login Kiosk dan stream katalog diperbaiki
 
 - `CONFIRMED`: source/runtime `b4e79a028ce48f369f983955bfefa19b2ed44763` aktif; GET SSE Kiosk tidak lagi memerlukan sesi Owner Dashboard dan respons tidak ditahan buffering ingress. Alasan: login berulang menghalangi quote/pembayaran Kiosk. Area: SagaOPS product/dossier/changelog, portfolio, master, gaps, sync status.

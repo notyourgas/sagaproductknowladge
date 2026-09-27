@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Nominal opening cash POS manual mengikuti hitungan kasir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source SagaPOS `6b15abdefd1d10685cbfca4498f15b2ba026ce76` membuat kasir mengisi uang awal laci sebelum membuka shift, memvalidasi Rupiah bulat nonnegatif di server, dan memakai nominal opening itu sebagai nilai awal kas yang ditinggalkan saat closing. Ini mencegah asumsi tetap Rp300.000 mengacaukan rekonsiliasi saat Kiosk ditangani lewat POS manual.
+- Regresi lokal 1.656 pass/0 fail/73 skip, check/type 626, audit dependency produksi 0, serta browser 390×844 tanpa overflow. Produksi tetap `b4e79a028ce48f369f983955bfefa19b2ed44763` dengan rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; sesi Owner untuk gate rilis belum tersedia. Tidak ada transaksi atau perubahan Gateway; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Login Kiosk tidak berulang saat katalog tersambung
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: runtime SagaPOS `b4e79a028ce48f369f983955bfefa19b2ed44763` (rollback `5186fcf650d52ae52bde8339ca54685d01dea462`) mengizinkan GET stream katalog hanya untuk host Kiosk dengan Basic Auth dan sesi Kiosk yang sah, lalu mengirim SSE tanpa buffering ingress. Login awal Owner pilot tetap diperlukan; ini bukan Kiosk publik tanpa login.

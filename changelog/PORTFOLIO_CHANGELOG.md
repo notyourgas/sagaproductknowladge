@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS POS manual: opening cash aktual
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` memungkinkan kasir menghitung uang awal shift dan menyelaraskan default closing; server menolak nominal invalid. Regresi 1.656 pass/0 fail/73 skip. Produksi belum berubah karena gate Owner rilis belum tersedia; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS Kiosk login dan katalog real-time
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: runtime `b4e79a028ce48f369f983955bfefa19b2ed44763` memperbaiki tantangan login berulang akibat SSE katalog Kiosk dan memulihkan quote terautentikasi. Login awal Owner pilot tetap ada; pembayaran cash assisted tidak berubah dan QRIS merchant belum aktif tanpa aset asli. Smoke live lulus tanpa transaksi; UAT fisik dan `BUSINESS_READY` masih menunggu.

@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Opening cash POS manual dapat dihitung kasir, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` mengganti Rp300.000 tetap dengan hitungan kasir yang divalidasi server, lalu menyelaraskan default closing dengan opening. Alasan: mengurangi selisih kas palsu saat POS manual menjadi cadangan Kiosk. File: UI kasir, runtime shift, tes browser dan runtime.
+- Full lokal 1.656 pass/0 fail/73 skip, check/type 626, audit produksi 0, browser mobile 390×844 lulus. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; gate Owner/deploy belum tuntas. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Login berulang dan stream katalog Kiosk diperbaiki di produksi
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: source/runtime `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Basic Auth + sesi Kiosk kini mengakses GET stream katalog tanpa syarat login Dashboard; SSE langsung diteruskan ingress. Login awal pilot tetap ada. Alasan: tantangan login berulang membuat quote dan langkah pembayaran tampak terkunci.

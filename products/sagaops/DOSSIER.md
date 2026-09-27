@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Opening shift POS manual dihitung, bukan diasumsikan
+
+Source `6b15abdefd1d10685cbfca4498f15b2ba026ce76` mengganti tombol opening yang selalu mengirim Rp300.000 dengan input hitungan fisik kasir. Validasi browser menahan nominal kosong/negatif/pecahan; domain menolak nilai bukan integer aman atau negatif sebelum membuat cash session. Nilai opening tersimpan sebagai fakta shift dan menjadi default nominal kas yang ditinggalkan pada form closing, yang tetap dapat diubah sesuai hitungan akhir. Tes browser membuka Rp120.000, menutup pada nilai yang sama tanpa selisih, dan memeriksa aksesibilitas/overflow. Regresi penuh 1.656 pass/0 fail/73 skip; produksi belum berubah karena gate Owner belum lulus. Gateway existing dan Order Meja demo tidak diubah.
+
 ## 2026-09-27 — Perbaikan sesi dan SSE Kiosk produksi
 
 Pada runtime `b4e79a028ce48f369f983955bfefa19b2ed44763`, GET `/api/catalog/events` pada host Kiosk tidak lagi salah ditafsirkan sebagai API Owner Dashboard. Aplikasi tetap memerlukan Basic Auth yang dibuktikan ingress dan cookie sesi Kiosk; metode lain, host lain, dan klien tanpa sesi tetap ditolak. Respons SSE diberi `X-Accel-Buffering: no` agar Nginx segera meneruskan stream, sehingga koneksi ulang katalog tidak memicu tantangan login berulang. Ini tidak menghapus login pertama pada pilot Owner.

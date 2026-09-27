@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — SagaPOS POS manual opening cash source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source ter-push `6b15abdefd1d10685cbfca4498f15b2ba026ce76`; kasir dapat membuka shift dari hitungan uang fisik dan nilai default closing mengikutinya. Validasi 1.656 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; gate Owner/deploy belum lulus dan tidak ada transaksi baru. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS Kiosk single-login production activation
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Owner smoke, SSE dan quote live, negative anonim, backup/restore, rehearsal dan monitor lulus tanpa transaksi. Sumber terkait commit aktif; Gateway existing, Order Meja demo dan QRIS merchant tanpa aset asli tidak berubah.
