@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS Kiosk login dan katalog real-time
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: runtime `b4e79a028ce48f369f983955bfefa19b2ed44763` memperbaiki tantangan login berulang akibat SSE katalog Kiosk dan memulihkan quote terautentikasi. Login awal Owner pilot tetap ada; pembayaran cash assisted tidak berubah dan QRIS merchant belum aktif tanpa aset asli. Smoke live lulus tanpa transaksi; UAT fisik dan `BUSINESS_READY` masih menunggu.
+
 ## 2026-09-27 — SagaPOS Kiosk cash assisted produksi
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: runtime `73c042dc478a244379ea4ae179dde04ecb18297b` membuka cash assisted Kiosk terlindung dengan persetujuan Kasir sebelum KDS. QRIS statis manual belum tersedia sampai Owner mengunggah PNG merchant asli; Gateway existing dan Order Meja demo tidak berubah. Backup/restore, rehearsal, Owner smoke dan monitor lulus; belum ada transaksi UAT nyata. `BUSINESS_READY=false`.

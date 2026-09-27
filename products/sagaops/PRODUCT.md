@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Login Kiosk tidak berulang saat katalog tersambung
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: runtime SagaPOS `b4e79a028ce48f369f983955bfefa19b2ed44763` (rollback `5186fcf650d52ae52bde8339ca54685d01dea462`) mengizinkan GET stream katalog hanya untuk host Kiosk dengan Basic Auth dan sesi Kiosk yang sah, lalu mengirim SSE tanpa buffering ingress. Login awal Owner pilot tetap diperlukan; ini bukan Kiosk publik tanpa login.
+- Smoke Owner, stream katalog `200`, quote Kiosk `200`, health/monitor dan batas anonim `401` lulus tanpa membuat order atau pembayaran. QRIS merchant manual tetap terkunci sampai PNG asli diunggah Owner; cash assisted tetap memerlukan konfirmasi Kasir, Order Meja masih demo, Gateway existing tidak berubah. UAT browser oleh Owner dan transaksi fisik belum selesai; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Kiosk cash assisted aktif; QRIS merchant menunggu aset
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: runtime SagaPOS `73c042dc478a244379ea4ae179dde04ecb18297b` (rollback `8dc83caa0e211cd235415fe8f267712a23117171`) menyediakan `CASH_ASSISTED` di Kiosk terlindung. Kasir wajib membuka shift, menerima uang fisik, lalu mengonfirmasi; baru order bisnis diteruskan ke KDS. QRIS statis manual terpasang secara fail-closed tetapi belum muncul karena PNG merchant asli belum diunggah Owner. Gateway canary existing tetap terpisah; Order Meja masih demo dan promo 99% publik OFF.

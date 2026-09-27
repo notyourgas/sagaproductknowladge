@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Login berulang dan stream katalog Kiosk diperbaiki di produksi
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: source/runtime `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Basic Auth + sesi Kiosk kini mengakses GET stream katalog tanpa syarat login Dashboard; SSE langsung diteruskan ingress. Login awal pilot tetap ada. Alasan: tantangan login berulang membuat quote dan langkah pembayaran tampak terkunci.
+- Regresi akhir 1.655 pass/0 fail/73 skip setelah satu run awal gagal dan belum terdiagnosis, static/type 626, dependency 0. Backup/restore, rehearsal, Owner smoke, SSE `200`, quote `200`, monitor dan negative anonim lulus; tidak ada order/transaksi uji nyata. QRIS merchant masih menunggu PNG asli; cash assisted tetap konfirmasi Kasir, Order Meja demo, Gateway existing tidak diubah. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Kiosk cash assisted aktif di produksi
 
 - `CONFIRMED`: source runtime `73c042dc478a244379ea4ae179dde04ecb18297b` diaktifkan dari expected-current `8dc83caa0e211cd235415fe8f267712a23117171` yang kini rollback. Alasan: memberi satu alur uji Kiosk cash dengan konfirmasi Kasir dan KDS tanpa membuka QRIS dummy atau Gateway baru.

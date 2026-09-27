@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-27 — Setelah perbaikan login Kiosk
+
+- `CONFIRMED`: runtime `b4e79a028ce48f369f983955bfefa19b2ed44763` mengembalikan SSE dan quote Kiosk `200`; akses anonim tetap `401`. Login awal Basic Auth masih kebijakan pilot, bukan regresi login berulang.
+- `NEEDS CONFIRMATION`: Andreas menguji browser Kiosk pada perangkatnya, lalu satu transaksi cash dengan shift dan konfirmasi Kasir sampai KDS. QRIS merchant perlu PNG asli serta verifikasi aplikasi merchant dan settlement terpisah. Backup offsite independen belum dibuktikan; run regresi pertama yang gagal tidak terulang dan penyebabnya belum dipastikan. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — UAT Kiosk setelah rilis cash assisted
 
 - `CONFIRMED`: Kiosk cash assisted sudah aktif pada runtime `73c042dc478a244379ea4ae179dde04ecb18297b`; tes Owner tanpa order, recovery dan monitor lulus. QR merchant belum tersimpan, jadi QRIS manual tetap terkunci. Gateway existing dan Order Meja demo tidak diubah.

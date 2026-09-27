@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS login Kiosk dan stream katalog diperbaiki
+
+- `CONFIRMED`: source/runtime `b4e79a028ce48f369f983955bfefa19b2ed44763` aktif; GET SSE Kiosk tidak lagi memerlukan sesi Owner Dashboard dan respons tidak ditahan buffering ingress. Alasan: login berulang menghalangi quote/pembayaran Kiosk. Area: SagaOPS product/dossier/changelog, portfolio, master, gaps, sync status.
+- Regresi akhir 1.655 pass/0 fail/73 skip, Owner smoke, stream/quote live, backup/restore, rehearsal dan monitor lulus tanpa transaksi. Run penuh awal sempat gagal dan tidak terulang; UAT browser fisik masih perlu. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS Kiosk cash assisted diaktifkan
 
 - `CONFIRMED`: source/runtime `73c042dc478a244379ea4ae179dde04ecb18297b` aktif; Kiosk cash memerlukan konfirmasi Kasir sebelum KDS. QRIS merchant menunggu PNG asli dan UAT, bukan pembayaran otomatis. Alasan: menyediakan uji nyata yang sempit tanpa mengubah Gateway existing atau Order Meja demo.

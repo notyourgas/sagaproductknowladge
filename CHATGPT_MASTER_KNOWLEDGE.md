@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — Kiosk SagaPOS tidak lagi meminta login berulang
+
+- `CONFIRMED`: produksi aktif `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. GET stream katalog pada Kiosk menerima sesi Kiosk yang telah melewati Basic Auth, dan SSE diteruskan tanpa buffering; quote terautentikasi berhasil. Login awal Owner pilot tetap diperlukan, bukan akses publik tanpa login.
+- Cash assisted masih menunggu verifikasi Kasir sebelum KDS. QRIS merchant manual belum tampil sampai PNG asli diunggah Owner; Order Meja tetap demo dan Gateway canary existing tidak berubah. Smoke tidak membuat order/pembayaran; UAT transaksi fisik, UAT browser Owner, settlement dan offsite independen belum selesai. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — Kiosk cash assisted SagaPOS aktif
 
 - `CONFIRMED`: SagaPOS produksi aktif `73c042dc478a244379ea4ae179dde04ecb18297b`, rollback `8dc83caa0e211cd235415fe8f267712a23117171`. Kiosk terlindung menawarkan cash assisted; kasir membuka shift dan mengonfirmasi pembayaran sebelum order bisnis/KDS. Aset QRIS merchant manual belum diunggah, sehingga QRIS statis belum dapat dicoba; Gateway existing terpisah, Order Meja demo, promo 99% publik OFF.

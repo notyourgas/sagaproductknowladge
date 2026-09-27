@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Perbaikan sesi dan SSE Kiosk produksi
+
+Pada runtime `b4e79a028ce48f369f983955bfefa19b2ed44763`, GET `/api/catalog/events` pada host Kiosk tidak lagi salah ditafsirkan sebagai API Owner Dashboard. Aplikasi tetap memerlukan Basic Auth yang dibuktikan ingress dan cookie sesi Kiosk; metode lain, host lain, dan klien tanpa sesi tetap ditolak. Respons SSE diberi `X-Accel-Buffering: no` agar Nginx segera meneruskan stream, sehingga koneksi ulang katalog tidak memicu tantangan login berulang. Ini tidak menghapus login pertama pada pilot Owner.
+
+Regresi penuh pada kandidat akhir lulus 1.655/0/73 setelah satu run awal gagal pada assertion yang tidak terulang; penyebab run awal belum dipastikan. Static/type 626 modul dan audit dependency produksi 0. Artifact checksum-bound, backup terenkripsi/restore disposable, rehearsal kandidat–rollback–kandidat, monitor, Owner smoke, stream dan quote live lulus tanpa order atau pembayaran. Rollback aktif `5186fcf650d52ae52bde8339ca54685d01dea462`; UAT browser fisik, transaksi cash, QR merchant asli dan offsite backup independen masih terbuka. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — Batas rilis Kiosk assisted payment
 
 Source runtime aktif `73c042dc478a244379ea4ae179dde04ecb18297b` memakai metode `CASH_ASSISTED` saja sebelum ada PNG QRIS merchant asli. Checkout Kiosk menulis order/payment pending; Kasir memverifikasi uang fisik atau, setelah Owner mengunggah QR, nominal dan referensi pada aplikasi merchant. Konfirmasi kasir yang sah mengubah payment/order secara atomik dan mengirim satu tiket KDS; upload QR tidak otomatis menyatakan pembayaran sukses. Fitur ini bukan Gateway otomatis, settlement QRIS manual tetap perlu rekonsiliasi, dan tidak mengubah Order Meja demo. Smoke lintas host membuktikan Owner Dashboard, Cashier, Kiosk terlindung, metode cash-only dan penolakan CSRF tanpa menciptakan order. Artefak/recovery/monitor lulus; UAT satu transaksi fisik, QR asli, pengecekan merchant, dan offsite backup independen masih terbuka. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.

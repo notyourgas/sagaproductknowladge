@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — SagaPOS Kiosk single-login production activation
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Owner smoke, SSE dan quote live, negative anonim, backup/restore, rehearsal dan monitor lulus tanpa transaksi. Sumber terkait commit aktif; Gateway existing, Order Meja demo dan QRIS merchant tanpa aset asli tidak berubah.
+- Full regression akhir 1.655 pass/0 fail/73 skip setelah run awal gagal dan tidak terulang; static/type 626, dependency 0. UAT browser/uang fisik dan offsite backup masih terbuka; `BUSINESS_READY=false`. Knowledge commit `main HEAD` melalui checkout bersih.
+
 ## 2026-09-27 — SagaPOS Kiosk cash production activation
 
 - `CONFIRMED`: SagaPOS active `73c042dc478a244379ea4ae179dde04ecb18297b`, rollback `8dc83caa0e211cd235415fe8f267712a23117171`; Kiosk cash assisted Owner-protected tersedia, QRIS statis manual menunggu PNG merchant asli. E-katalog publik baca-saja, Order Meja demo, Gateway existing terpisah, promo 99% publik OFF. `PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
