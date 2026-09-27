@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS Owner melihat detail PO tanpa pindah halaman
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` memberi Pembelian native daftar PO read-only dan status penerimaan, termasuk layout HP yang menampilkan nilai serta status tanpa scroll horizontal. Pembuatan/revisi belum native; production tidak berubah, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS kasir dapat memulihkan antrean Kiosk
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` menambah pembaruan antrean manual dan penahan konfirmasi saat state server belum terverifikasi. Tes browser cash-assisted sampai KDS dan regresi penuh 1670/0/73 lulus. Tidak ada aktivasi pembayaran atau perubahan production; `BUSINESS_READY=false`.

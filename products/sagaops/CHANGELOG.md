@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — PO terbaru dapat diperiksa di Dashboard Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` menambah daftar read-only PO di Pembelian dengan supplier, ETA, nilai, revisi dan status penerimaan. Browser 390/1440 dan 44 tes relevan lulus; check/type 630. Buat/revisi PO masih perlu Admin lama. Production tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Pembaruan aman antrean Kiosk di layar kasir
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` memberi kasir tombol perbarui antrean, penanda waktu pemeriksaan, serta fail-closed konfirmasi ketika refresh gagal. Browser membuktikan order Kiosk baru dapat ditemukan tanpa reload, kegagalan tidak membuat KDS, dan konfirmasi sah mengirim sekali. Regresi penuh 1670 lulus/0 gagal/73 dilewati; check/type 629. Production tidak berubah; `BUSINESS_READY=false`.

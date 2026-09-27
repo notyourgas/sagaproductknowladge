@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — PO terbaru native di Owner Pembelian
+
+Before: kartu Pembelian hanya menyebut jumlah PO aktif; untuk mengetahui supplier, ETA, nilai, dan penerimaan Owner harus pindah ke Admin lama. After pada source `eb841d8a4eb54ea587c40a9260f023ddafa28efb`: proyeksi server yang sama menampilkan hingga delapan PO terakhir dengan revisi dan status penerimaan dalam Dashboard Owner; mobile 390 memakai kartu agar nilai/status tidak tersembunyi, desktop 1440 memakai tabel. Pembuatan/revisi masih di Admin dan UI tidak mengklaim paritas penuh. Browser Owner-only, penerimaan parsial, 44 tes relevan, dan check/type 630 modul lulus. Tidak ada migrasi, pembayaran, mutasi data bisnis, atau production release; active tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Pemulihan antrean bantuan pembayaran Kiosk di kasir
 
 Before: antrean pembayaran Kiosk yang muncul sesudah layar kasir terbuka tidak otomatis terlihat kecuali halaman dimuat ulang atau event katalog terjadi. After pada source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29`: kasir memilih “Perbarui antrean”, membaca status pemeriksaan terakhir, dan konfirmasi dari snapshot lama ditahan selama pemeriksaan atau saat koneksi gagal; retry berhasil mengambil state server terbaru. Kasir tetap harus menerima uang fisik atau memeriksa merchant sesuai metode, dan hanya server yang mengubah pembayaran/KDS. Tidak ada polling periodik, migration, atau provider mutation. Regresi penuh 1670/0/73, check/type 629, audit dependency production 0 vulnerability. Source-only; production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

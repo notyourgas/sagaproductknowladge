@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS Owner Pembelian PO source-only
+
+- `CONFIRMED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` menambah pembacaan PO terbaru dalam Dashboard Owner agar supplier, ETA, nilai, dan status penerimaan dapat diperiksa tanpa membuka Admin lama. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Browser 390/1440, 44 tes relevan, check/type 630 lulus. Buat/revisi PO masih Admin; production tidak berubah. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS recovery antrean Kiosk ke kasir, source-only
 
 - `CONFIRMED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` memberi kasir perbarui antrean tanpa reload dan menahan konfirmasi dari data lama saat refresh gagal. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Daftar PO terbaca di Pembelian Owner, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` menampilkan delapan PO terbaru beserta supplier, perkiraan tiba, jumlah item, nilai rencana, revisi, dan status penerimaan langsung di Dashboard Owner. Pada HP informasi tampil sebagai kartu tanpa geser horizontal; pembuatan/revisi PO tetap di Admin lama dan dinyatakan jelas.
+- Browser 390/1440, akses Owner, status penerimaan parsial, 44 tes relevan, serta check/type 630 modul lulus. Ini data rencana pembelian, bukan bukti barang diterima atau pembayaran. Production tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Kasir dapat mengambil antrean Kiosk baru tanpa reload, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` menambah pembaruan antrean Kiosk yang dipicu kasir, menampilkan waktu pemeriksaan, dan menahan konfirmasi dari tampilan lama jika pemeriksaan gagal. Server tetap pemegang status pembayaran dan KDS; tidak ada polling liar atau transaksi otomatis.

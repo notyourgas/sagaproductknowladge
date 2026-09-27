@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Pembelian Owner SagaPOS
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `eb841d8a4eb54ea587c40a9260f023ddafa28efb` membuat Dashboard Owner menampilkan daftar PO terbaru dan status penerimaan dari server pada desktop dan HP. Daftar ini hanya baca; membuat/merevisi PO masih ke Admin lama dan PO bukan bukti penerimaan/pembayaran. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Recovery antrean Kiosk di kasir SagaPOS
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` memungkinkan kasir memeriksa ulang antrean pembayaran Kiosk tanpa reload, menunjukkan waktu pemeriksaan, dan menahan aksi dari snapshot lama ketika gagal. Status pembayaran dan pengiriman KDS tetap server-authoritative; tidak ada polling atau transaksi otomatis. Production masih `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
