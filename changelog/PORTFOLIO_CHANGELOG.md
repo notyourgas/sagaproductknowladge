@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS Owner mendapat status integrasi yang tidak menyesatkan
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` membedakan mode Gateway/Member yang dikonfigurasi dari aktivasi serta UAT yang belum terbukti di Dashboard Owner. Production tidak berubah, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS draft kasir dapat dipulihkan secara aman
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `720daa4d45978911314f8c41a953b2b297795ee6` menambah pemulihan draft kasir per sesi tanpa mengirim ulang checkout yang tidak pasti, serta memperbaiki fokus keyboard katalog. Regresi penuh 1670 lulus/0 gagal/73 dilewati. Belum dideploy, belum UAT Owner, `BUSINESS_READY=false`.

@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Integrasi Owner mengikuti mode runtime, bukan fixture
+
+Before: Integrasi memakai label status fixture lokal bahkan di konteks production, sementara header menyebut pembayaran nonaktif tanpa melihat mode runtime. After pada source `1fc2758786c56a7efb58100b6b5bcfabfae31b97`: label QRIS/gateway, Member, reward, penyimpanan, dan production dibatasi oleh konteks server; mode `GATEWAY`/`PROVIDER` hanya berarti terkonfigurasi dan tetap memerlukan canary/UAT, bukan aktif atau siap bisnis. Pengaturan Owner menampilkan ringkasan status dan tautan ke Integrasi di dashboard. Browser 390/1440, dua kombinasi mode, tanpa overflow atau temuan aksesibilitas serius/kritis; 22 tes terkait dan check/type 629. Tidak ada provider, payment, data, atau runtime production yang dimutasi; production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Draft kasir tahan navigasi sesi
 
 Before: draft keranjang kasir dapat hilang saat layar dimuat ulang, sementara navigasi kembali katalog dapat memicu render ganda dan melepas fokus keyboard. After pada source `720daa4d45978911314f8c41a953b2b297795ee6`: draft disimpan per actor/outlet dalam sesi browser selama 15 menit, diperiksa lagi terhadap katalog lalu di-quote oleh server; checkout tidak pasti tidak diproses otomatis. Navigasi katalog hanya merender ulang saat filter URL berubah. Regresi penuh 1670/0/73, check/type 629, audit production 0 vulnerability. Belum dideploy; active tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

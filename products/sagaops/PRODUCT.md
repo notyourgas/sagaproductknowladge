@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Mode integrasi Owner dijelaskan, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` mengoreksi label Integrasi dan ringkasan Pengaturan Owner. Pada konteks production, gateway ditandai hanya sebagai mode terkonfigurasi, Member/reward yang `OFF` sebagai belum aktif, dan perangkat tetap belum teruji; label fixture “simulator lokal” serta “production belum diotorisasi” tidak lagi dipakai sebagai fakta runtime production. Header juga membedakan mode gateway dari pembayaran nonaktif tanpa mengklaim bisnis siap.
+- Browser 390/1440 dan aksesibilitas serius/kritis lulus; 22 tes relevan serta check/type 629 modul lulus. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; ini kejelasan status, bukan aktivasi provider. `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Pemulihan draft kasir dan fokus katalog, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `720daa4d45978911314f8c41a953b2b297795ee6` memulihkan keranjang kasir dalam sesi browser hanya untuk actor/outlet yang sama, memvalidasi ulang katalog dan meminta quote server. Checkout yang belum pasti tidak otomatis dikirim ulang. Perbaikan katalog mencegah render ganda saat navigasi kembali agar fokus keyboard kembali ke kartu asal.

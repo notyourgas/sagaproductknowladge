@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Label Integrasi dan Pengaturan Owner tidak lagi memakai fixture sebagai status production
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` menampilkan mode runtime pada Integrasi, Pengaturan, dan header tanpa menyamakan “dikonfigurasi” dengan “siap”. Browser 390/1440, dua kombinasi mode, 22 tes terkait, check/type 629. Production/provider tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Pemulihan draft kasir dan fokus katalog
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `720daa4d45978911314f8c41a953b2b297795ee6` memulihkan draft kasir per actor/outlet dalam sesi dengan quote ulang dari server dan mencegah render ganda katalog saat kembali dari dialog. Checkout tidak pasti tidak otomatis dikirim. Regresi penuh 1670 lulus/0 gagal/73 dilewati, check/type 629, audit production 0 vulnerability. Production tidak berubah; `BUSINESS_READY=false`.

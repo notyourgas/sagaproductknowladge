@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Status integrasi SagaPOS Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` mengganti label fixture pada Integrasi/Pengaturan Owner dengan penjelasan mode runtime. `GATEWAY` atau `PROVIDER` berarti dikonfigurasi, bukan bukti canary, transaksi, koneksi Member, atau kesiapan bisnis. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Draft kasir SagaPOS source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `720daa4d45978911314f8c41a953b2b297795ee6` memulihkan draft keranjang kasir dalam sesi browser per actor/outlet, selalu memerlukan validasi katalog dan quote server baru, dan tidak otomatis mengulang checkout yang tidak pasti. Fokus keyboard katalog saat navigasi kembali juga diperbaiki. Regresi penuh 1670 lulus/0 gagal/73 dilewati. Production aktif masih `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.

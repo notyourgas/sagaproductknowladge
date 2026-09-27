@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS mode Integrasi Owner, source-only
+
+- `CONFIRMED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` mengoreksi label Integrasi, Pengaturan, dan header agar mode production tidak disamakan dengan fixture lokal atau kesiapan provider. Alasan: Owner perlu memahami apa yang terkonfigurasi versus yang masih perlu UAT. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Browser 390/1440, 22 tes terkait dan check/type 629 modul lulus. Production tidak berubah; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS pemulihan draft kasir, source-only
 
 - `CONFIRMED`: source `720daa4d45978911314f8c41a953b2b297795ee6` memulihkan draft kasir secara terbatas per sesi dan memperbaiki fokus katalog tanpa membuka ulang checkout yang tidak pasti. Area: SagaOPS product/dossier/changelog, portfolio, master, dan sync status.
