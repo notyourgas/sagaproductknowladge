@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Cash tender POS manual tidak boleh diasumsikan server
+
+Pada source `8d45fa7e7418e6ddaabceddf371d68ee249a8513`, request checkout kasir `CASH` tanpa `receivedRupiah` tidak lagi ditafsirkan sebagai nominal pas. Hanya angka Rupiah bulat nonnegatif dalam rentang integer aman dan sekurangnya total quote server yang dapat mencatat `PAID`; jalur QRIS tidak diubah. Form kasir kini tidak menafsirkan karakter negatif/huruf sebagai angka positif. Tes domain/HTTP membuktikan request invalid meninggalkan nol order, nol payment, dan nol tiket KDS; tes Postgres membuktikan tidak ada fakta parsial sebelum request sah. Ini mitigasi pencatatan uang, bukan bukti uang fisik benar-benar diterima. Regresi akhir 1.660 pass/0 fail/73 skip; production masih runtime lama dan `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Closing cash count tanpa nominal titipan otomatis
 
 Source `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d` mewajibkan kasir mengisi dua fakta closing secara terpisah: uang fisik yang dihitung dan uang yang ditinggalkan untuk shift berikutnya. Form tidak lagi mengambil opening cash sebagai nilai titipan; domain lokal dan Postgres menolak field yang hilang, dan preview Owner tidak lagi menggantinya dengan Rp0. Nominal titipan tidak boleh melebihi uang fisik. Browser, API lokal, serta regresi Postgres membuktikan shift tidak tertutup ketika input tidak sah. Regresi penuh 1.658 pass/0 fail/73 skip; static/type 626; dependency produksi 0. Ini masih source-only, tidak mengubah skema, mode Gateway, atau runtime produksi. Gate Owner dan rilis kandidat baru masih diperlukan; `BUSINESS_READY=false`.

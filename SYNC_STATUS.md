@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — SagaPOS cash tender kasir wajib eksplisit
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source ter-push `8d45fa7e7418e6ddaabceddf371d68ee249a8513`; POS manual menolak nominal cash diterima yang hilang/invalid sebelum fakta order/payment/KDS. Validasi 1.660 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; gate Owner/artifact/recovery belum lulus dan tidak ada transaksi baru. `BUSINESS_READY=false`. Knowledge commit `main HEAD` dari checkout bersih.
+
 ## 2026-09-27 — SagaPOS closing kas wajib eksplisit
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source ter-push `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d`; form/API closing tidak lagi menetapkan kas ditinggalkan otomatis. Input kosong atau melebihi hitungan fisik ditolak. Validasi 1.658 pass/0 fail/73 skip, static/type 626, dependency 0. Produksi active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; gate Owner/artifact/deploy belum lulus dan tidak ada transaksi baru. `BUSINESS_READY=false`. Knowledge commit `main HEAD` melalui checkout bersih.

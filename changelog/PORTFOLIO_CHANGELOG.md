@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS menutup asumsi uang pas pada cash kasir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8d45fa7e7418e6ddaabceddf371d68ee249a8513` mewajibkan nominal cash diterima yang eksplisit sebelum POS manual mencatat lunas atau mengirim KDS. Regresi 1.660 pass/0 fail/73 skip. Produksi/pembayaran nyata tidak berubah karena gate rilis belum lulus; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS closing kas eksplisit, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d` menolak closing POS manual tanpa hitungan uang fisik dan nominal kas yang ditinggalkan untuk shift berikutnya. Tidak ada default Rp300.000/Rp0; regresi 1.658 pass/0 fail/73 skip. Produksi dan pembayaran tidak berubah karena gate rilis belum lulus; `BUSINESS_READY=false`.

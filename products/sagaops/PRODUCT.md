@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Pembayaran cash POS manual wajib nominal diterima eksplisit
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `8d45fa7e7418e6ddaabceddf371d68ee249a8513` menghapus asumsi “uang pas” dari API checkout kasir. Cash harus membawa nominal Rupiah bulat aman yang benar-benar dinyatakan kasir; kosong, null, teks, negatif, atau pecahan ditolak sebelum order, pembayaran, dan tiket KDS dibuat. UI menahan tombol saat input kosong/invalid dan tetap menampilkan kembalian dari quote server.
+- Regresi penuh lokal 1.660 pass/0 fail/73 skip, check/type 626 modul, audit dependency produksi 0; tes HTTP, browser operator, dan Postgres restart relevan lulus. Produksi tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; gate Owner dan kandidat rilis baru belum lengkap. Gateway existing dan Order Meja DEMO tidak diubah. `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Closing shift kasir wajib menyatakan kas yang ditinggalkan
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `3bc49f9a7b1fd20f6bba5241aa21cb03b3e69e1d` menghapus default kas ditinggalkan dari form, domain, dan API closing. Kasir wajib memasukkan hasil hitung fisik serta nominal yang ditinggalkan untuk shift berikutnya, termasuk `0` bila seluruh uang disetor; input kosong atau lebih besar dari uang fisik menahan shift tetap terbuka. Ini mencegah deposit dan rekonsiliasi yang tercatat dari asumsi Rp300.000 atau Rp0.
