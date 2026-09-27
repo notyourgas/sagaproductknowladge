@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-27 — Jam layanan native di Pengaturan Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e0ce6a459717c40306420f517101f4c0da039ffb` mengganti kartu `Buka Admin` dengan form jam layanan/pemesanan dan tautan modul dashboard. Browser 390/1440 serta 32 tes regresi terfokus lulus; pengaturan lain belum sepenuhnya native. Production tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Quote kasir wajib cocok saat checkout
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` mengikat POST checkout POS manual ke quote server dan menolak quote stale/changed sebelum order/KDS. Respons quote lama setelah edit keranjang tidak boleh mengaktifkan tombol bayar. File: UI kasir, server/runtime, tes API/browser.

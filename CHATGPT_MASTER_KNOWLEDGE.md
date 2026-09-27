@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-27 — SagaPOS Pengaturan Owner native bertahap
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e0ce6a459717c40306420f517101f4c0da039ffb` sudah menaruh jam layanan/status pesanan langsung di Pengaturan Dashboard Owner dan menghapus tautan `Buka Admin` dari layar itu. Ini baru satu slice; pembayaran/perangkat dan pengaturan lain belum paritas penuh. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
+
 ## Update 2026-09-27 — Quote checkout POS kasir source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` menolak checkout POS manual bila quote server hilang, berubah, atau kedaluwarsa; UI menahan respons quote lama setelah edit. Regresi lokal 1.666 pass/0 fail/73 skip. Ini belum aktif di produksi: runtime `b4e79a028ce48f369f983955bfefa19b2ed44763`, Gateway Phase 8B 7/10, `BUSINESS_READY=false`.

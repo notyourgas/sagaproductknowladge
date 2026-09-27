@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-27 — Slice Pengaturan Owner native
+
+Before: halaman Pengaturan hanya menawarkan `Buka Admin`, memaksa Owner keluar dari alur dashboard. After pada source `e0ce6a459717c40306420f517101f4c0da039ffb`: status terima pesanan dan jam layanan dapat dibaca/diubah di dashboard; alasan wajib, konflik versi ditolak, dan aksi tetap memakai same-origin/CSRF serta otorisasi Owner di server. Navigasi pengaturan lain menuju modul dashboard terkait. Browser 390/1440 membuktikan perubahan jam tersimpan dan tidak ada tautan `Buka Admin`; 32 tes regresi terfokus dan static/type 627 modul lulus. Belum ada parity penuh untuk pembayaran, perangkat, maupun pengaturan lain; source belum dideploy. Runtime `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Binding harga checkout POS manual
 
 Kasir meminta quote dari server sebelum menerima cash atau membuat intent QRIS. Pada source `1206c158865ec90a39dc163cbac8a945b6df1331`, perubahan keranjang/metode langsung meniadakan quote layar, termasuk saat respons lama masih in-flight. API checkout meminta fingerprint, versi katalog, total, dan masa berlaku dari quote; runtime menghitung ulang dan menolak mismatch/kedaluwarsa dengan 409 sebelum pembuatan order. Retry idempotent tetap memakai kunci semantik pesanan. Tes mencakup respons terlambat, quote hilang/diubah/kedaluwarsa, dan tidak adanya order setelah penolakan. Regresi 1.666 pass/0 fail/73 skip; check/type 627; audit dependency 0. Tidak ada migrasi atau perubahan provider. Source ter-push tetapi belum dikemas/dideploy karena Phase 8B 7/10 dan canary-window berakhir. Runtime tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.

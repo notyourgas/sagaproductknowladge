@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-27 — SagaPOS Owner Settings source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source bersih/ter-push branch `codex/sagapos-owner-settings-20260927` commit `e0ce6a459717c40306420f517101f4c0da039ffb`. Browser 390/1440, 32 tes terfokus, static/type 627 modul lulus. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; pengaturan lain dan release gate masih pending, `BUSINESS_READY=false`. Knowledge commit `main HEAD` dari checkout terisolasi.
+
 ## 2026-09-27 — Quote kasir bound ke checkout, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-cashier-quote-freshness-20260927` source bersih/ter-push `1206c158865ec90a39dc163cbac8a945b6df1331`. Focused API/runtime 30/30, browser 3/3, full 1.666 pass/0 fail/73 skip, static/type 627, dependency 0. Belum ada artifact/deploy/aktivasi untuk commit ini; Phase 8B 7/10 menahan release. Active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; `BUSINESS_READY=false`. Knowledge commit `main HEAD` dari checkout bersih.

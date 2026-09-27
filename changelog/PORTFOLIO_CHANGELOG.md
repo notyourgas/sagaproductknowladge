@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-27 — SagaPOS Pengaturan Owner source-only
+
+- Source `e0ce6a459717c40306420f517101f4c0da039ffb` memindahkan kontrol jam layanan dan status pemesanan ke Dashboard Owner. Modul lain tetap memakai tautan internal dashboard; paritas seluruh Admin masih backlog. Browser 390/1440 dan 32 tes terfokus lulus. Belum dideploy; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS mencegah checkout kasir dengan harga stale
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` meminta quote server yang cocok sebelum order POS manual dibuat. Regresi 1.666 pass/0 fail/73 skip; produksi belum berubah karena gate Gateway 7/10. `BUSINESS_READY=false`.

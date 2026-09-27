@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-27 — SagaPOS Pengaturan Owner jam layanan, source-only
+
+- `CONFIRMED`: source `e0ce6a459717c40306420f517101f4c0da039ffb` menutup redirect `Buka Admin` untuk jam layanan dan pemesanan dengan kontrol Owner langsung di dashboard. Alasan: mengurangi perpindahan aplikasi dan menjaga konteks operasional. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Browser 390/1440, 32 tes terfokus, static/type 627 lulus. Production tidak berubah, parity seluruh pengaturan belum selesai. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-27 — SagaPOS quote checkout POS manual, source-only
 
 - `CONFIRMED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` menutup checkout kasir dengan quote yang berubah/kedaluwarsa. Alasan: harga yang dilihat kasir harus sama dengan otoritas server sebelum order/KDS. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

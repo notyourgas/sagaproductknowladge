@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-27 — Pengaturan jam layanan pindah ke Dashboard Owner, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `e0ce6a459717c40306420f517101f4c0da039ffb` menampilkan status pesanan, jam buka, pesanan terakhir, jam tutup, dan form alasan langsung di Pengaturan Owner. Simpan memakai API Owner yang sudah ada dengan CSRF, versi katalog, audit, dan validasi jam; kartu Menu, Integrasi, serta Tim mengarah ke modul dashboard, bukan Admin lama.
+- Browser 390/1440, regresi terfokus 32/32, dan static/type 627 modul lulus. Paritas seluruh pengaturan Admin belum selesai; ini satu slice jam layanan, bukan klaim semua kontrol sudah native. Produksi masih source `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Checkout kasir terikat quote server, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1206c158865ec90a39dc163cbac8a945b6df1331` mewajibkan quote katalog/harga yang masih berlaku pada checkout POS manual. Perubahan keranjang atau harga membuat kasir memeriksa ulang total; respons quote lama tidak lagi mengaktifkan tombol bayar. Order/KDS tidak dibuat ketika quote berubah atau kedaluwarsa.
