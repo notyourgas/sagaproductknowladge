@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Recovery antrean Kiosk di kasir SagaPOS
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` memungkinkan kasir memeriksa ulang antrean pembayaran Kiosk tanpa reload, menunjukkan waktu pemeriksaan, dan menahan aksi dari snapshot lama ketika gagal. Status pembayaran dan pengiriman KDS tetap server-authoritative; tidak ada polling atau transaksi otomatis. Production masih `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Status integrasi SagaPOS Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` mengganti label fixture pada Integrasi/Pengaturan Owner dengan penjelasan mode runtime. `GATEWAY` atau `PROVIDER` berarti dikonfigurasi, bukan bukti canary, transaksi, koneksi Member, atau kesiapan bisnis. Production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.

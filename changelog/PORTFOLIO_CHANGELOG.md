@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS kasir dapat memulihkan antrean Kiosk
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` menambah pembaruan antrean manual dan penahan konfirmasi saat state server belum terverifikasi. Tes browser cash-assisted sampai KDS dan regresi penuh 1670/0/73 lulus. Tidak ada aktivasi pembayaran atau perubahan production; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS Owner mendapat status integrasi yang tidak menyesatkan
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` membedakan mode Gateway/Member yang dikonfigurasi dari aktivasi serta UAT yang belum terbukti di Dashboard Owner. Production tidak berubah, `BUSINESS_READY=false`.

@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Pemulihan antrean bantuan pembayaran Kiosk di kasir
+
+Before: antrean pembayaran Kiosk yang muncul sesudah layar kasir terbuka tidak otomatis terlihat kecuali halaman dimuat ulang atau event katalog terjadi. After pada source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29`: kasir memilih “Perbarui antrean”, membaca status pemeriksaan terakhir, dan konfirmasi dari snapshot lama ditahan selama pemeriksaan atau saat koneksi gagal; retry berhasil mengambil state server terbaru. Kasir tetap harus menerima uang fisik atau memeriksa merchant sesuai metode, dan hanya server yang mengubah pembayaran/KDS. Tidak ada polling periodik, migration, atau provider mutation. Regresi penuh 1670/0/73, check/type 629, audit dependency production 0 vulnerability. Source-only; production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Integrasi Owner mengikuti mode runtime, bukan fixture
 
 Before: Integrasi memakai label status fixture lokal bahkan di konteks production, sementara header menyebut pembayaran nonaktif tanpa melihat mode runtime. After pada source `1fc2758786c56a7efb58100b6b5bcfabfae31b97`: label QRIS/gateway, Member, reward, penyimpanan, dan production dibatasi oleh konteks server; mode `GATEWAY`/`PROVIDER` hanya berarti terkonfigurasi dan tetap memerlukan canary/UAT, bukan aktif atau siap bisnis. Pengaturan Owner menampilkan ringkasan status dan tautan ke Integrasi di dashboard. Browser 390/1440, dua kombinasi mode, tanpa overflow atau temuan aksesibilitas serius/kritis; 22 tes terkait dan check/type 629. Tidak ada provider, payment, data, atau runtime production yang dimutasi; production tetap `b4e79a028ce48f369f983955bfefa19b2ed44763`, `BUSINESS_READY=false`.

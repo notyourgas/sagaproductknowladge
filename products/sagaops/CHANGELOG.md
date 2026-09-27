@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Pembaruan aman antrean Kiosk di layar kasir
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` memberi kasir tombol perbarui antrean, penanda waktu pemeriksaan, serta fail-closed konfirmasi ketika refresh gagal. Browser membuktikan order Kiosk baru dapat ditemukan tanpa reload, kegagalan tidak membuat KDS, dan konfirmasi sah mengirim sekali. Regresi penuh 1670 lulus/0 gagal/73 dilewati; check/type 629. Production tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Label Integrasi dan Pengaturan Owner tidak lagi memakai fixture sebagai status production
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` menampilkan mode runtime pada Integrasi, Pengaturan, dan header tanpa menyamakan “dikonfigurasi” dengan “siap”. Browser 390/1440, dua kombinasi mode, 22 tes terkait, check/type 629. Production/provider tidak berubah; `BUSINESS_READY=false`.

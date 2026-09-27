@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Kasir dapat mengambil antrean Kiosk baru tanpa reload, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` menambah pembaruan antrean Kiosk yang dipicu kasir, menampilkan waktu pemeriksaan, dan menahan konfirmasi dari tampilan lama jika pemeriksaan gagal. Server tetap pemegang status pembayaran dan KDS; tidak ada polling liar atau transaksi otomatis.
+- Browser Kiosk/kasir 390/720/1440, offline/retry, aksesibilitas, dan KDS exactly-once diuji; regresi penuh 1670 lulus/0 gagal/73 dilewati, check/type 629. Production masih `b4e79a028ce48f369f983955bfefa19b2ed44763`; authenticated UAT dan rilis belum selesai, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Mode integrasi Owner dijelaskan, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` mengoreksi label Integrasi dan ringkasan Pengaturan Owner. Pada konteks production, gateway ditandai hanya sebagai mode terkonfigurasi, Member/reward yang `OFF` sebagai belum aktif, dan perangkat tetap belum teruji; label fixture “simulator lokal” serta “production belum diotorisasi” tidak lagi dipakai sebagai fakta runtime production. Header juga membedakan mode gateway dari pembayaran nonaktif tanpa mengklaim bisnis siap.

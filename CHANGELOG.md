@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS recovery antrean Kiosk ke kasir, source-only
+
+- `CONFIRMED`: source `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29` memberi kasir perbarui antrean tanpa reload dan menahan konfirmasi dari data lama saat refresh gagal. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.
+- Browser Kiosk-kasir-KDS dan regresi penuh 1670 lulus/0 gagal/73 dilewati; check/type 629; audit dependency production 0 vulnerability. Production tidak berubah; `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS mode Integrasi Owner, source-only
 
 - `CONFIRMED`: source `1fc2758786c56a7efb58100b6b5bcfabfae31b97` mengoreksi label Integrasi, Pengaturan, dan header agar mode production tidak disamakan dengan fixture lokal atau kesiapan provider. Alasan: Owner perlu memahami apa yang terkonfigurasi versus yang masih perlu UAT. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status.

@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — SagaPOS cashier queue recovery source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-cashier-line-details-20260928` ter-push pada `5c1819b9fddcbf8c10cb49ec5de8e08f84b99c29`; browser Kiosk/kasir/KDS, retry/offline, 390/720/1440, a11y, regresi penuh 1670 lulus/0 gagal/73 dilewati, check/type 629, audit dependency production 0 vulnerability. Production active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`; authenticated UAT belum ada, `BUSINESS_READY=false`. Knowledge commit `main HEAD`.
+
 ## 2026-09-28 — SagaPOS Owner integration mode source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-owner-settings-20260927` ter-push pada `1fc2758786c56a7efb58100b6b5bcfabfae31b97`; browser 390/1440, dua kombinasi mode, tanpa overflow/Axe serius-kritis, 22 tes terkait dan check/type 629 modul lulus. Production tidak berubah: active `b4e79a028ce48f369f983955bfefa19b2ed44763`, rollback `5186fcf650d52ae52bde8339ca54685d01dea462`. Gateway canary dan Member activation tetap gate terpisah; `BUSINESS_READY=false`. Knowledge commit `main HEAD`.
