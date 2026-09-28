@@ -1,5 +1,23 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Tim & Akses: alur Owner dan staf pada kandidat source
+
+`CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: exact local commit `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, tree `68cf9b46aa1732819e5cef955f0abf63bdc1b02a`, parent `c0d7cd0a23ebf7905ba8bc927f38949a853d4b90`, basis `cb06fd88e0f290996537f4b8e947055bf012ad7c`. Independent review menerima koreksi successor; parent bukan kandidat accepted final. Source/schema/dependencies Cash dan guard AP tidak diubah oleh delta koreksi. Tidak ada source push, final release integration atau deployment dari pekerjaan ini.
+
+Before → after pada source: akses operasional kini mempunyai role custom dan akun personal yang dikelola Owner dari **Pengaturan → Tim & Akses**, bukan pemberian akses Owner bersama. Owner membuat/salin role, memilih tindakan yang didukung, melihat dampak izin dan preview navigasi, lalu membuat akun dan memilih role/outlet. Reset, nonaktifkan, perubahan assignment dan audit tersedia dalam screen yang sama. Satu role dapat dipakai banyak staf; satu akun memiliki satu role operasional dan satu outlet. Satu outlet bisnis aktif tetap dipertahankan.
+
+Role berisi izin eksplisit, tanpa wildcard; fitur baru tidak otomatis diberikan. Izin efektif mengikuti role, fitur aktif, organisasi, akun dan outlet runtime. Write/approval/export mensyaratkan view. Owner sistem dan administrasi Tim & Akses tidak dapat diberikan melalui role custom. Login staf tidak menggantikan login Owner existing; perubahan akses memerlukan autentikasi ulang Owner, alasan dan revisi yang cocok. Audit read-only dan data yang ditampilkan dibatasi sesuai izin; memilih checkbox tidak menyalakan provider, payroll atau simulator.
+
+Staf menerima kredensial awal yang ditampilkan sekali kepada Owner, berlaku tujuh hari dan wajib diganti sebelum operasi. Belum ada pengiriman email/pesan undangan otomatis. Navigasi dihitung dari katalog izin server: Kasir/KDS memakai surface native terbatas; bahan, pembelian, resep, menu, Finance dan HR memakai workspace command yang didukung. Ini bukan paritas seluruh halaman operasional. Form approval HR mengikuti state native dan eligibility; revokasi akses serta perubahan akun tetap berlaku pada sesi lama melalui pemeriksaan server.
+
+UX menggunakan form role, matrix fitur/tindakan, assignment akun, preview navigasi dan audit. Ada penjelasan fitur nonaktif, empty state role-first, pesan konflik/reload, validasi/alasan dan status save. Kandidat memakai aset Plus Jakarta Sans existing, target kontrol44px, label/focus keyboard dan status yang diumumkan. Chromium historis menguji Owner1440/390 serta sebagian workflow staf dengan assertion axe0; belum membuktikan semua surface atau perangkat fisik.
+
+Bukti successor: focused **15/15**,0fail/skip, explicit process/caller exit0; standalone TypeScript process/caller exit0; syntax/diff/scope dan immutable review diterima. Receipt13 focused lama digantikan, bukan ditambahkan. PGlite1 minimal membership scaffold dan Chromium1 mendahului delta koreksi serta metadata final; tidak ada rerun browser/PGlite/native/full/CI pada successor. PGlite bukan bukti PostgreSQL native, schema penuh, multi-connection concurrency atau restore. Bukti axe adalah assertion suite Owner, bukan laporan axe terpisah.
+
+**Default OFF / schema NOT_INSTALLED / BUSINESS_READY=false.** Aktivasi membutuhkan schema additive tervalidasi, compatible old-code, native PostgreSQL/RLS/concurrency/session restart, full regression, backup/restore dan rollout terotorisasi melalui sole Release Lead. Startup bukan installer schema/staf. Refund, portal personal/pengaitan absensi dan pengaturan outlet melalui custom role belum aktif; advanced UI, invitation delivery dan authenticated/physical UAT masih gap. Akun staf dan data bisnis production tidak dimutasi.
+
+HTTPS **28 September17.05.48 WIB**: SagaPOS ready=true, source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, schema34; native attendance belum operational-ready/koordinat belum dikonfigurasi. Member app502/API503 masih insiden terpisah. Tidak ada perubahan runtime/pilot/provider. Health tidak menggantikan UAT. Pricing/trial/positioning dan keputusan founder tidak berubah; fitur source ini belum menjadi janji operasional live.
+
 ## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
 
 - CONFIRMED / SOURCE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED: clean pushed source cb06fd88e0f290996537f4b8e947055bf012ad7c, branch codex/sagapos-coverage-release-20260928, direct parent 94a30f966da139a5817743e55d50c16739d2c9a0. Hanya dua file guard/test dari accepted leaf a35dcd274e93427d691dbb05da6157e77015e0cc diintegrasikan; seluruh 13 file kandidat94 dipertahankan. UI AP terpisah dan patch cash closing berikutnya belum termasuk.

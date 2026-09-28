@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Tim & Akses diterima pada source, belum deploy
+
+- `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: kandidat lokal `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, branch `codex/sagapos-core-team-access`, parent `c0d7cd0a23ebf7905ba8bc927f38949a853d4b90`, basis integrasi AP `cb06fd88e0f290996537f4b8e947055bf012ad7c`. Review independen menerima successor dengan koreksi bounded; source tidak dipush, digabung ke kandidat rilis final, atau dideploy oleh slice ini.
+- Owner dapat mengelola **Pengaturan → Tim & Akses** pada kandidat: buat/salin role, pilih izin per fitur/tindakan, preview navigasi, buat akun personal staf, tentukan role/outlet, reset/nonaktifkan akses dan baca audit. Satu akun memiliki satu role operasional dan satu outlet; banyak staf dapat memakai role yang sama. Ini bukan aktivasi outlet tambahan.
+- Izin efektif diperiksa server dengan scope organisasi/outlet; Owner sistem terlindungi, perubahan akses memerlukan autentikasi ulang/alasan, konflik versi meminta review ulang. Navigasi mengikuti izin tanpa impersonasi. Kredensial awal tampil sekali, kedaluwarsa tujuh hari dan wajib diganti sebelum operasi; pengiriman undangan otomatis belum tersedia.
+- Validasi successor: **15 PASS /0 FAIL /0 SKIP**, actual focused exit0 dan standalone TypeScript exit0. PGlite1 pada scaffold minimal serta Chromium1 Owner1440/390 adalah bukti lokal historis sebelum delta koreksi, bukan rerun/native/full successor; axe0 hanya assertion tes Owner tersebut. Angka tidak dijumlahkan dengan receipt13 terdahulu.
+- Fitur **default OFF**, schema additive Tim & Akses **belum dipasang**. Refund, pengaitan portal personal staf dan pengaturan outlet belum tersedia melalui katalog custom role ini. Native PostgreSQL/full schema/concurrency, restart/restore, regresi penuh, integrasi seluruh UI operasional, pengaitan absensi serta authenticated/physical UAT tetap pending; `BUSINESS_READY=false`.
+- Pengamatan HTTPS 28 September **17.05.48 WIB**: production SagaPOS tetap `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, ready=true/schema34; Member app502/API503. Tidak ada perubahan production, akun/data bisnis, provider atau pilot. Detail batas dan alur ada pada [Dossier](DOSSIER.md).
+
 ## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
 
 - CONFIRMED / SOURCE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED: clean pushed source cb06fd88e0f290996537f4b8e947055bf012ad7c, branch codex/sagapos-coverage-release-20260928, direct parent 94a30f966da139a5817743e55d50c16739d2c9a0. Hanya dua file guard/test dari accepted leaf a35dcd274e93427d691dbb05da6157e77015e0cc diintegrasikan; seluruh 13 file kandidat94 dipertahankan. UI AP terpisah dan patch cash closing berikutnya belum termasuk.

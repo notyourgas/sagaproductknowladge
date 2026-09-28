@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS Tim & Akses diterima pada source
+
+- `CONFIRMED`: local commit `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, parentc0d7/basiscb06, independent successor review dan focused15/15 actual exit0 serta standalone TypeScript exit0. Status `SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; bukan deploy.
+- Owner dapat menyiapkan role/action, preview navigasi dan akun/assignment/reset/nonaktifkan/audit pada kandidat **Pengaturan → Tim & Akses**; izin server terikat organisasi/outlet dan Owner terlindungi. Default OFF/schema NOT_INSTALLED. Bounded workspace bukan seluruh native UI; refund/personal portal/settings dan native/full/recovery/physical UAT masih pending. PGlite/Chromium sebelumnya tetap bukti historis, bukan full successor.
+- Produksi POS tidak berubah, HTTPS28September17.05.48 WIB ready/source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/schema34; Member502/503 tetap terpisah. Scope8dokumen SagaOPS/product-portfolio-root/master/gaps/sync; tidak ada source push, account/provider/pilot mutation atau perubahan produk lain. Next: gate target-engine/combined/recovery lalu rollout terotorisasi.
+
 ## 2026-09-28 — Keuangan tiga outlet: workflow operator dan recovery Windows
 
 - `CONFIRMED`: implementasi screening kedua dipush pada source privat `ee2d56701482620258813f1c6305267718bb6de5`. Preview https://keuangan-multi-outlet-preview.vercel.app sudah `PRODUCTION_DEPLOYED_STATIC_PREVIEW`, deployment `dpl_GHAXKvDF4XwLHQ5rqTWXH8iAd3uK` Ready. Tujuh file cocok checksum. Dummy, enam tombol role, tanpa login dan API publik503 tetap sesuai eksperimen pribadi nonkomersial. Rollback artifact publik sebelumnya tersedia.

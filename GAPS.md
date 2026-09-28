@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Tim & Akses: gap aktivasi setelah source acceptance
+
+- `CONFIRMED`: exact successor `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4` diterima independent QA sebagai `SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`. Koreksi form HR dan lifecycle akses ditutup pada scope source; focused15/15 actual exit0 dan standalone TypeScript exit0. Parentc0d7 bukan kandidat final accepted; receipt13 lama tidak dijumlahkan. PGlite/Chromium historis bukan native/full/retest successor.
+- `NEEDS CONFIRMATION`: native PostgreSQL/RLS/schema penuh/old-code compatibility, multi-connection concurrency, restart/restore, exact combined/full candidate, recovery/Owner/admission/activation serta authenticated physical UAT belum ditutup. Default OFF/schema NOT_INSTALLED; tidak membuka fitur hanya karena knowledge accepted.
+- `CONFIRMED`: katalog custom role bounded; refund, pengaitan portal personal/absensi dan outlet settings disabled. Advanced native UI dan undangan otomatis masih pekerjaan lanjutan. Satu outlet aktif dan pemisahan Owner/Finance tetap; belum ada akun staf/data bisnis production yang diubah.
+- Runtime HTTPS28September17.05.48 WIB: POSready/source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/schema34 tidak berubah; koordinat absensi belum configured/operationalReady=false, Memberapp502/API503. `BUSINESS_READY=false`. Next: sole Release Lead menutup gate target-engine/combined/recovery dan scoped rollout; insiden Member tidak diperbaiki oleh source Tim & Akses.
+
 ## 2026-09-28 — Keuangan tiga outlet: workflow operator dan recovery Windows
 
 - `CONFIRMED`: implementasi screening kedua dipush pada source privat `ee2d56701482620258813f1c6305267718bb6de5`. Preview https://keuangan-multi-outlet-preview.vercel.app sudah `PRODUCTION_DEPLOYED_STATIC_PREVIEW`, deployment `dpl_GHAXKvDF4XwLHQ5rqTWXH8iAd3uK` Ready. Tujuh file cocok checksum. Dummy, enam tombol role, tanpa login dan API publik503 tetap sesuai eksperimen pribadi nonkomersial. Rollback artifact publik sebelumnya tersedia.

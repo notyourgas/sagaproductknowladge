@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Tim & Akses custom role/account, source-only
+
+- `CONFIRMED`: exact local source `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, parent `c0d7cd0a23ebf7905ba8bc927f38949a853d4b90`, basis `cb06fd88e0f290996537f4b8e947055bf012ad7c`; sumber frozen commit, tes lokal dan review independen. `SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- Owner flow baru pada kandidat: role/action matrix, preview navigasi, akun staf dan assignment role/outlet, reset/nonaktifkan dan audit dengan autentikasi ulang/alasan/CAS. Workspace mengikuti izin server; Owner sistem terlindungi. Tujuannya mengelola akses operasional tanpa berbagi akun Owner. Satu outlet aktif tidak berubah.
+- Koreksi bounded native HR form dan lifecycle akses diterima; **15 PASS /0 FAIL /0 SKIP**, focused process exit0 dan standalone TypeScript exit0. PGlite1 minimal scaffold/Chromium1 Owner1440+390/axe assertion0 adalah bukti historis, bukan rerun successor atau native/full. Tidak menjumlahkan receipt13+15.
+- Default OFF, additive schema NOT_INSTALLED. Refund, portal/pengaitan absensi dan outlet settings via custom role disabled; native/full schema/concurrency/restore/restart/full regression/advanced UI dan authenticated physical UAT pending. Belum ada source push/final merge/deploy/akun nyata/undangan otomatis.
+- Produksi tidak berubah: HTTPS17.05.48 WIB ready/source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/schema34; Member502/503. Next: native/full/recovery/schema-compatible acceptance, controlled rollout oleh satu Release Lead. PRODUCT/DOSSIER, changelog portfolio/root, master, GAPS dan SYNC_STATUS disinkronkan; pricing/trial/keputusan founder/produk lain tidak diubah.
+
 ## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
 
 - CONFIRMED / SOURCE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED: clean pushed source cb06fd88e0f290996537f4b8e947055bf012ad7c, branch codex/sagapos-coverage-release-20260928, direct parent 94a30f966da139a5817743e55d50c16739d2c9a0. Hanya dua file guard/test dari accepted leaf a35dcd274e93427d691dbb05da6157e77015e0cc diintegrasikan; seluruh 13 file kandidat94 dipertahankan. UI AP terpisah dan patch cash closing berikutnya belum termasuk.

@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-28 — SagaPOS Tim & Akses source accepted, belum live
+
+- `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: local source `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, parentc0d7/basiscb06. Owner flow kandidat **Pengaturan → Tim & Akses** mencakup role custom/action matrix, preview navigasi, akun staf/assignment role-outlet, reset/nonaktifkan dan audit. Izin diperiksa server, Owner sistem terlindungi, perubahan akses memakai reauthentication/alasan/CAS. Satu outlet aktif tidak berubah.
+- Successor focused15/15,0fail/skip, actual exit0; standalone TypeScript exit0 dan independent review diterima. Bukti PGlite1 minimal scaffold/Chromium1 Owner1440+390/axe assertion0 historis, bukan rerun/native/full successor. Source tidak dipush atau digabung ke rilis final oleh slice ini.
+- **Default OFF/schema NOT_INSTALLED/BUSINESS_READY=false**. Workspace bounded; refund, personal portal/pengaitan absensi dan outlet settings belum tersedia via role custom. Native PostgreSQL/full schema/concurrency/restart/restore/full regression/advanced UI dan authenticated physical UAT masih pending. Belum ada undangan otomatis atau perubahan akun nyata.
+- HTTPS28September17.05.48 WIB: POS production tetap `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, ready/schema34; Memberapp502/API503. Tidak menyamakan source acceptance dengan deploy, atau health dengan business acceptance. Next: single Release Lead menutup schema-compatible/native/full/recovery/Owner gates sebelum rollout.
+
 ## 2026-09-28 — Keuangan tiga outlet: workflow operator dan recovery Windows
 
 - `CONFIRMED`: implementasi screening kedua dipush pada source privat `ee2d56701482620258813f1c6305267718bb6de5`. Preview https://keuangan-multi-outlet-preview.vercel.app sudah `PRODUCTION_DEPLOYED_STATIC_PREVIEW`, deployment `dpl_GHAXKvDF4XwLHQ5rqTWXH8iAd3uK` Ready. Tujuh file cocok checksum. Dummy, enam tombol role, tanpa login dan API publik503 tetap sesuai eksperimen pribadi nonkomersial. Rollback artifact publik sebelumnya tersedia.

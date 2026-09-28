@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — Tim & Akses SagaPOS source-only sync
+
+- `CONFIRMED`: source lokal `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, parentc0d7/basiscb06, independent successor QA accepted, focused15/15 actual exit0 dan standalone TypeScript exit0. Status `SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; default OFF/schema NOT_INSTALLED.
+- Bukti PGlite1 minimal scaffold dan Chromium1 Owner1440/390/axe assertion0 tetap historis sebelum correction/metadata final, bukan native/full/rerun successor. Refund/personal portal/settings, advanced UI/attendance linkage, native/concurrency/restart/restore/full dan physical UAT belum ditutup.
+- Scope8dokumen publik SagaOPS product/dossier/changelog, portfolio/root/master/gaps/sync. Clean main setelah FF dari latest upstream; perubahan keuangan/Saga Member dan histori produk lain dipertahankan. Tidak ada perubahan pricing/trial/keputusan founder/struktur knowledge, source push/final merge/deploy/akun/provider/pilot. Commit knowledge immutable dilaporkan setelah push terpisah.
+- Runtime HTTPS28September17.05.48 WIB: POSsource `bbd4567eec1898b2dc55c6b75bc37a56374c06d3` ready/schema34; Member502/503. Status accepted hanya fakta source; gate rilis tetap pending. Validator/diff/staged/public-safety/link dan raw remote verification wajib sebelum penutupan sync.
+
 ## 2026-09-28 — Keuangan tiga outlet: workflow operator dan recovery Windows
 
 - `CONFIRMED`: implementasi screening kedua dipush pada source privat `ee2d56701482620258813f1c6305267718bb6de5`. Preview https://keuangan-multi-outlet-preview.vercel.app sudah `PRODUCTION_DEPLOYED_STATIC_PREVIEW`, deployment `dpl_GHAXKvDF4XwLHQ5rqTWXH8iAd3uK` Ready. Tujuh file cocok checksum. Dummy, enam tombol role, tanpa login dan API publik503 tetap sesuai eksperimen pribadi nonkomersial. Rollback artifact publik sebelumnya tersedia.
@@ -50,13 +57,13 @@ Status sinkronisasi: `accepted`; perubahan preview terverifikasi, batas backend 
 
 | Field | Snapshot terbaru untuk pembaruan ini |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-28, source/runtime diverifikasi 11.30.55 WIB |
+| Waktu pembaruan terakhir | 2026-09-28, successor source diverifikasi 17.11 WIB; HTTPS runtime 17.05.48 WIB |
 | Branch aktif | `main` pada checkout knowledge bersih terisolasi |
 | Commit SHA terbaru | `main HEAD` — resolve hash final dari Git/GitHub setelah push |
-| Informasi terakhir disinkronkan | Source invoice Owner `060176bfa1ea08c73a429f182be676bd4156d3b7` SOURCE_ACCEPTED/LOCAL_VALIDATED; production `bbd4567` tetap |
-| Status sinkronisasi | `UP TO DATE` untuk fakta source; invoice IMPLEMENTED_NOT_DEPLOYED, BUSINESS_READY=false |
+| Informasi terakhir disinkronkan | Tim & Akses `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4` SOURCE_ACCEPTED_ONLY; production `bbd4567` tetap |
+| Status sinkronisasi | `UP TO DATE` untuk fakta source; Tim & Akses default OFF/schema NOT_INSTALLED/IMPLEMENTED_NOT_DEPLOYED, BUSINESS_READY=false |
 | Konflik | Tidak ada konflik fakta source/production; kerja kotor produk lain dipertahankan |
-| Error | Tidak ada error source; kandidat/full/native/recovery/Owner activation gate masih pending |
+| Error | Tidak ada error knowledge; native/full/combined/schema compatibility/recovery/Owner activation gate masih pending |
 
 - `CONFIRMED`: independent review diterima; final invoice 16/16, combined 39/39 (overlap), embedded-PG durable 1/1, static/type 644 dan viewport 390/1440 PASS. Pembaruan 8 dokumen sumber lokal tervalidasi saja; bukan rilis atau transaksi nyata. Snapshot sebelumnya di bawah adalah riwayat, tidak menggantikan status source-only pembaruan ini.
 

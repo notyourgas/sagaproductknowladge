@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — knowledge(sagaops): Tim & Akses source-only accepted
+
+- Klasifikasi `CONFIRMED`; sumber frozen source, focused tests dan QA independen successor `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, parent `c0d7cd0a23ebf7905ba8bc927f38949a853d4b90`, basis `cb06fd88e0f290996537f4b8e947055bf012ad7c`. Status `SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- Alasan sync: workflow Owner role/account/action/navigation/audit dan batas rollout harus jelas. Focused15/15 actual exit0 dan standalone TypeScript exit0; PGlite/Chromium sebelumnya historis, bukan native/full successor. Default OFF/schema NOT_INSTALLED; refund/personal portal/settings, advanced UI/attendance linkage dan native/full/recovery/physical UAT masih gap.
+- Delapan file terdampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, PORTFOLIO_CHANGELOG, CHATGPT_MASTER_KNOWLEDGE, GAPS, SYNC_STATUS dan root CHANGELOG. Governance/pricing/trial/struktur dan produk lain tidak berubah; keputusan founder tidak ditambah. Main clean FF mempertahankan upstream keuangan dan Saga Member. Validator/link/public-safety/diff/staged, commit/push terpisah dan raw GitHub verification menutup sync; SHA final berasal dari main HEAD.
+- Production tidak berubah: HTTPS28September17.05.48 WIB POSready/source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/schema34, Member502/503. Tidak ada source push/final merge/deploy/akun bisnis/provider/pilot mutation. Next: sole Release Lead target-engine/full/combined/schema-compatible/recovery/Owner gates, lalu rollout terotorisasi.
+
 ## 2026-09-28 — Keuangan tiga outlet: workflow operator dan recovery Windows
 
 - `CONFIRMED`: implementasi screening kedua dipush pada source privat `ee2d56701482620258813f1c6305267718bb6de5`. Preview https://keuangan-multi-outlet-preview.vercel.app sudah `PRODUCTION_DEPLOYED_STATIC_PREVIEW`, deployment `dpl_GHAXKvDF4XwLHQ5rqTWXH8iAd3uK` Ready. Tujuh file cocok checksum. Dummy, enam tombol role, tanpa login dan API publik503 tetap sesuai eksperimen pribadi nonkomersial. Rollback artifact publik sebelumnya tersedia.
