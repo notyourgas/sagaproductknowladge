@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Gap integrasi source ACK pada Owner base ditutup
+
+- `CONFIRMED`: clean pushed integrated source `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e` pada base 6ea70af menutup gap source integration/full regression/native proof dari entri sebelumnya. Full 1.675 PASS / 0 FAIL / 73 Windows SKIP, Linux 113/113, PG18.6 concurrency/encrypted restore/cold restart dan browser clean-commit 9/9 PASS; tidak ada produksi berubah. Tidak diperlukan keputusan bisnis tambahan Andreas untuk fix/integrasi cash ACK ini.
+- `NEEDS CONFIRMATION`: fresh full deploy artifact dan candidate-bound release admission/Owner/backup/rehearsal/activation serta staff UAT belum ditutup oleh lane source-only ini. Candidate Owner-hours f6038f3 tidak termasuk; evidence kandidat lain tidak boleh menggantikan gate successor. QRIS merchant asli, real-money/reconciliation, remake full-status/device dan offsite/business acceptance masih terpisah, `BUSINESS_READY=false`. Runtime aktif tetap 6ea70af, rollback f80146b.
+
 ## 2026-09-28 — Browser functional acceptance lokal ditutup
 
 - `CONFIRMED`: tooling source `3eb3774a17165671242c969b71d0edc264a5623b` menghasilkan 9/9 tahap browser, tiga disk restart dan closing variance nol; focused/relevant 20/20, check/type dan audit lulus. Gap bukti browser gabungan cash dari opening hingga closing tertutup pada fixture lokal, bukan pada runtime produksi.

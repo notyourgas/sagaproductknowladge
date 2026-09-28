@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Cash/ACK integrated candidate (`IMPLEMENTED_NOT_DEPLOYED`)
+
+- `CONFIRMED`: exact clean pushed `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`, branch `codex/sagapos-cash-ack-integrated-20260928`, base 6ea70af; Backend/Data/QA mengintegrasikan ACK yang tahan recovery tanpa menimpa Owner UI atau mengubah migration/payment. Before ACK patch terpisah → after satu candidate cash POS/Kiosk opening-to-closing tervalidasi → dampak fallback kasir dapat ditinjau untuk rilis.
+- Full 1.675 PASS / 0 FAIL / 73 Windows SKIP, check/type 638, audit 0; Linux 113/113, native PG18.6 concurrency/encrypted restore/cold restart PASS. Browser clean commit 9/9/tiga restart/lima a11y state, runtime 13/13/enam restart, variance Rp0. Verifier inventory receipt dan fixture native diperbaiki tanpa menurunkan gate; diagnostik yang sempat gagal tidak dipakai sebagai bukti lulus.
+- Product/dossier/changelog/portfolio/master/gaps/sync/root disinkronkan; active 6ea70af/rollback f80146b tetap, tanpa deploy/transaksi/provider mutation. Owner-hours f6038f3, full release artifact/fresh admission/recovery dan staff UAT pending; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Pengaturan jam layanan: draft, pending dan recovery pesan
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `f6038f37d0483b494994b694c170d6d0847b01cc` pada `codex/sagapos-owner-hours-sync-20260928`, berbasis 6ea70af. Tiga file source/test: operator UI, scoped status CSS, browser/API settings regression. Draft tetap ada; form pristine mengikuti server; kontrol pending terkunci; refresh/batal eksplisit, basis server terlihat, konflik dan hasil tidak pasti tidak ditutupi.

@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Kandidat cash POS/Kiosk dan ACK terintegrasi, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: clean pushed source `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`, branch `codex/sagapos-cash-ack-integrated-20260928`, menggabungkan durable ACK serta harness operasional/browser pada exact Owner base `6ea70af5167123927b548d0fee70dd47795f56b0`. Perubahan Owner/UI pada base dipertahankan; kandidat jam layanan `f6038f3` tetap lane terpisah, belum termasuk.
+- ACK bertahan setelah recovery tanpa mengubah 34 migration. Status/audit/outbox atomik, dua worker native berkonvergensi satu kali; ACK tidak mengurangi stok dan PREPARING mengonsumsi sekali. Alur cash opening→POS/Kiosk→konfirmasi kasir→KDS SERVED→physical closing lulus pada fixture terisolasi, bukan penerimaan uang merchant.
+- Full regression exact staged tree yang menjadi commit: 1.675 PASS / 0 FAIL / 73 SKIP Windows; Linux release contracts 113/113 tanpa skip dilaporkan terpisah. Static/type 638 module, dependency production 0 vulnerability. PostgreSQL 18.6 disposable concurrency, encrypted dump/restore dan cold restart mempertahankan fakta yang sama. Browser clean-commit 9/9, tiga restart, desktop/mobile/tablet, lima a11y state dan variance Rp0; harness runtime 13/13 dengan enam restart.
+- Verifier artifact menghasilkan fingerprint inventory tervalidasi sesuai kontrak ingestion; assertion checksum/provenance/negative tidak dilonggarkan. Test bundle native bukan artifact release. Live 09.00 WIB tetap active `6ea70af`, rollback `f80146b`, health ready, Gateway existing dan Table DEMO; tidak ada deploy/transaksi/provider mutation dalam lane ini. Artifact lengkap, fresh Owner/admission/recovery, activation dan staff UAT masih pending; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Draft jam layanan Owner aman, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source `f6038f37d0483b494994b694c170d6d0847b01cc`, branch `codex/sagapos-owner-hours-sync-20260928`, berbasis runtime `6ea70af`. Draft jam layanan/terima pesanan tetap ada saat refresh dan pindah modul selama sesi; form yang belum diedit mengikuti data server terbaru tanpa draft semu. Form terkunci saat simpan, menunggu data server terbaru, dan menyediakan **Perbarui data** serta **Batalkan perubahan** dengan ringkasan pengaturan yang sedang berlaku.

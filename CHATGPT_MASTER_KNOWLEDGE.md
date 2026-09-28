@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-28 — SagaPOS integrated cash/ACK source, bukan runtime aktif
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e` pada `codex/sagapos-cash-ack-integrated-20260928` mengintegrasikan durable ACK pada Owner base 6ea70af. Cash POS/Kiosk sampai physical closing lulus 13/13 runtime, 9/9 browser; native PG18.6 concurrency/encrypted restore/cold restart PASS. Full 1.675 PASS / 0 FAIL / 73 Windows SKIP, Linux release contracts 113/113, check/type 638, audit dependency 0. Tidak ada schema/payment/provider mutation atau transaksi nyata.
+- Production terverifikasi tetap 6ea70af/rollback f80146b, Gateway existing, Table DEMO; source-only candidate dan native test bundle bukan artifact/activation/UAT bisnis. Owner-hours f6038f3 lane terpisah; single Release Lead memerlukan fresh artifact/admission/backup/rehearsal/Owner smoke sebelum activation. Merchant QRIS, staff/device/offsite acceptance dan `BUSINESS_READY=false` tetap berlaku; jangan memakai ledger historis 62 sebagai readiness kini.
+
 ## Update 2026-09-28 — Draft Pengaturan SagaPOS, belum rilis
 
 - `CONFIRMED`: source-only `f6038f37d0483b494994b694c170d6d0847b01cc` menjaga draft jam layanan pada refresh/pindah modul, membedakan form pristine dan draft, mengunci pending, membedakan hasil simpan dan refresh, serta mempertahankan konflik versi dan logout boundary. Suite 19/19 dan 31 PASS / 1 Firefox host SKIP; tidak mengubah provider/schema/transaksi nyata. Current production 6ea70af/rollback f80146b; full candidate/recovery/Owner gates berikutnya masih pending, BUSINESS_READY=false.

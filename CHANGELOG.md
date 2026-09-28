@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — knowledge(sagaops): integrated durable cash ACK candidate
+
+- `CONFIRMED`, sumber Backend/Data/QA serta exact clean pushed source `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e` pada `codex/sagapos-cash-ack-integrated-20260928`, active Owner base 6ea70af. Menutup gap integrasi ACK/full/native cash–KDS–closing dan verifier inventory receipt tanpa menurunkan assertion; perubahan Owner-hours lane lain tidak termasuk. Delapan dokumen product/dossier/changelog/portfolio/master/gaps/sync/root diperbarui.
+- Full 1.675 PASS / 0 FAIL / 73 Windows SKIP, Linux 113/113, native PG18.6 backup/restore/cold restart dan browser 9/9/runtime 13/13 lulus; variance Rp0. Production active 6ea70af/rollback f80146b tidak berubah, tidak ada pembayaran nyata/provider mutation. Artifact lengkap, fresh release/admission/recovery serta staff UAT pending; `IMPLEMENTED_NOT_DEPLOYED`, `BUSINESS_READY=false`, knowledge `main HEAD`.
+
 ## 2026-09-28 — knowledge(sagaops): draft Pengaturan Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; source `f6038f37d0483b494994b694c170d6d0847b01cc`. Memperbarui 7 dokumen untuk draft/pristine jam layanan, pending/conflict/error/logout dan refresh/batal eksplisit berdasarkan source dan tes 19/19 serta 31 PASS / 1 host SKIP. Current 6ea70af/rollback f80146b tidak berubah. Exact candidate gates masih pending; BUSINESS_READY=false. Knowledge main HEAD diverifikasi sesudah push, tanpa credential/PII/receipt privat.
