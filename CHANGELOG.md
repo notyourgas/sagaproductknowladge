@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — knowledge: Member recovery tooling dan metadata actual
+
+- `CONFIRMED`, sumber independent source/package117Python PASS dan accepted actual adoption/retarget reviews: source9be3adcd31bb650369ead9f8f401a130edc935e9/treeaba2787a58fae5321bd571c48c326d66d8347364 memperbaiki guard mode historis tanpa bypass expiry/Owner/binding/providerOFF. Actual runner-only installation06.16–06.18 WIB dan metadata PREFLIGHTED06.23–06.25 WIB tertutup; helper/app/current/env/DB tidak berubah. Before tooling guard/metadata blocked → after preparation accepted, bukan aplikasi pulih/deploy.
+- Pada snapshot, currentcb51362/33b352 dan kandidat71b2618/5c1bd92 belum deploy/activate. PrivatePG18fourstages unchangedcandidate/helper bukan productionbackup atau newrunner rerun; encrypted production backup/restore, fresh genuine Owner proof, app promotion/auth-core UAT OPEN. `PRODUCTION_TOOLING_APPLIED_ONLY` terpisah dari aplikasi `IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`.
+- Scope8dokumen Saga Platform/product/dossier/changelog, portfolio/master/gaps/sync/root; satu clean-main writer menjaga histori/upstream, tidak mengubah founder decisions/pricing/struktur/produk lain. Validator pre/staged/public-safety/link/diff, separate knowledgecommit/push dan immutable remote verification wajib; SHA final dilaporkan setelah push. No source/test/build/SSH/lease/app/data/provider/payment mutation oleh sync; no secret/PII/restricted receipt/path publik.
+
 ## 2026-09-29 — knowledge: actual combined Cash/AP PURE18
 
 - `CONFIRMED`, sumber actual run03.06 WIB dan independent actual-result review: final `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, Cash8/AP10 =18PASS/0fail/cancel/skip/todo, exit0, Windows Node24.16. Before source preservation only → after scoped actual logika pada final candidate, clean/unchanged dan assertion asli. Histori Cash74/native8/APassembled dipertahankan; tidak disulap menjadi whole-final PASS.

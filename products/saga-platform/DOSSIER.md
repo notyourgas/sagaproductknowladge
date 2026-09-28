@@ -1,5 +1,15 @@
 # Saga Platform Dossier
 
+## 2026-09-29 — Recovery Member: tooling diterapkan, metadata kandidat siap
+
+`CONFIRMED`: runner source `9be3adcd31bb650369ead9f8f401a130edc935e9` / tree `aba2787a58fae5321bd571c48c326d66d8347364`, parent `7b03dc51c6a3cdd1614fd29e257379f4a70f1177`, hanya mengubah runner dan tesnya. Sebelum guard recovery salah mengharapkan mode pada exact legacy tuple; sesudah mode historis dikenali hanya pada tuple itu dan profil kandidat tetap mempertahankan kontraknya. Expiry/Owner, tujuh binding lain, provider OFF, pemeriksaan health/otoritas/service/database tidak dilemahkan. Independent source/package QA menjalankan 117/117 Python PASS (runner91/focused5 adalah subset), compile/secret-safety serta paket terikat source diterima.
+
+Penerapan produksi hanya tooling: runner diganti melalui installer yang telah direview, runner lama diarsipkan dan helper verify-only tetap identik. Original caller dan physical closure 06.16–06.18 WIB diterima independen: natural0/dualEOF, tanpa retry/signal, lock bebas dan scoped proses/FD/temp kosong. Current, environment, aplikasi/service/database/Owner/provider/pilot tidak berubah. Metadata retarget 06.23–06.25 WIB kemudian diterima independen sebagai `PREFLIGHTED`; genuine state lama diarsipkan, current/environment tetap. Metadata ini bukan perpanjangan expiry, fresh Owner proof atau runtime promotion.
+
+Snapshot retarget mengikat kandidat backend `71b2618ff1814ab333c8e69f8b57d30fa737af33`, frontend `5c1bd92d0eef55cc5bc53e726fd05b9bd826579d`, contracts `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`; aplikasi current masih backend `cb51362a67c1193c894f4a7e467fce2408a2b1d3` / frontend `33b3524629cf7eb1b7ad640473d92190aed26353`. Qualified private PostgreSQL18 empat tahap pada artifact/helper yang tidak berubah tetap bukti terpisah/carry-forward terbatas; bukan eksekusi baru seluruh runner9be atau production backup/restore.
+
+Status `PRODUCTION_TOOLING_APPLIED_ONLY / CANDIDATE_METADATA_PREFLIGHTED`, aplikasi `IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. OPEN: candidate-bound encrypted production backup/disposable restore, genuine Owner proof terbaru, app promotion dan authenticated auth-core UAT. Tidak ada aplikasi switch, perubahan authority Customer Platform, aktivasi bisnis/provider/payment atau transaksi nyata dari gate ini. Catatan ini berdasarkan receipts point-in-time, bukan pemeriksaan live baru oleh writer; histori kegagalan dan snapshot sebelumnya tetap tersimpan.
+
 ## 2026-09-28 — Recovery Member: acceptance paket nonproduction
 
 `CONFIRMED / VERIFIED_NON_PRODUCTION_PACKAGE_AND_RECOVERY / READY_FOR_RELEASE_LEAD_AUTHORIZATION`: package immutable `48e9ec58ea01f07fc137cbc25ca8e1f3837acbe80dbc768a96fe6e0d22c53e00`,22453283bytes, sumber Memberc40d18094eacae3555f6689c5dc30dc718500787, runner783e6e286cbfde5fdf5e0c1e50e29dde56de1db7, Platform8b1e8fefdbd32c08835764f78c95f65d0d21c718, contracts755ed1dccaf07c3576b6680faf2404f4724669bf. QA independen mencocokkan physical bytes, embedded source-pair/inventory dan original command terminals; writer mengulang physical checksum saja, tidak build/extract/rehearsal.

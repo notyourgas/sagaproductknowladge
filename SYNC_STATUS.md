@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Sync Member runner9be dan actual metadata recovery
+
+- `CONFIRMED / accepted`: source9be3adcd31bb650369ead9f8f401a130edc935e9/treeaba2787a58fae5321bd571c48c326d66d8347364 independent117Python PASS; actual bounded runner adoption06.16–06.18 WIB dan metadata PREFLIGHTED06.23–06.25 WIB diterima independent QA. Before guard salah/metadata tertahan → after tooling applied dan candidate metadata gate closed. Tidak mengubah expiry/Owner/binding/providerOFF; helper/current/app/env/DB tetap pada receipts, bukan live probe baru writer.
+- Kandidat backend71b2618/frontend5c1bd92 belum deploy/activate; snapshot current cb51362/33b352. PrivatePG18empat tahap unchangedcandidate/helper bukan production backup; encrypted production backup/restore, fresh genuine Owner proof dan app switch/auth-core UAT OPEN. `PRODUCTION_TOOLING_APPLIED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false` pada scope masing-masing.
+- Delapan dokumen Saga Platform/Product/Dossier/Changelog, portfolio/master/gaps/sync/root diperbarui pada clean main oleh sole writer; pre/staged validator/link/public-safety/diff serta separate commit/push/immutable raw verification wajib. Tidak ada source/test/build/SSH/release/provider/data mutation, private receipt/path/identifier tidak dipublikasikan; SHA knowledge dilaporkan setelah push.
+
 ## 2026-09-29 — Sync actual PURE18 final Cash/AP
 
 - `CONFIRMED / accepted` untuk hasil terarah: source `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, actual03.06 WIB Cash8/AP10, 18PASS/exit0/nol fail-cancel-skip-todo, Windows Node24.16; review hasil independen diterima, clean source unchanged. Before provenance-only → after actual scoped logic validation; bukti historis tidak ditulis ulang menjadi final full PASS.

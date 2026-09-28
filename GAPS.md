@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Member: tooling/metadata recovery closed, aplikasi masih pending
+
+- `CONFIRMED`: guard mode legacy pada runner9be3adcd31bb650369ead9f8f401a130edc935e9 diperbaiki, independent117Python PASS; expiry/Owner/tujuh binding/providerOFF tetap. Actual runner-only adoption06.16–06.18 WIB dan metadata PREFLIGHTED06.23–06.25 WIB accepted independent, helper/current/env/services/DB tidak berubah. CLOSED hanya source/package, tooling install dan metadata retarget yang dibuktikan; bukan availability/UAT aplikasi.
+- OPEN: encrypted production backup/disposable restore, fresh genuine Owner proof, app promotion/auth-core UAT untuk kandidat71b2618/5c1bd92. Snapshot current tetap cb51362/33b352. PrivatePG18empat tahap qualified candidate/helper unchanged tetap scoped carry-forward, bukan productionbackup atau rerun9be. `IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; provider/payment belum diaktifkan. Snapshot lama dipertahankan; tidak ada source/runtime/data mutation dari writer.
+
 ## 2026-09-29 — Gap tes logika final Cash/AP tertutup terbatas
 
 - `CONFIRMED`: exact final `7d9aaeed57f2dc30ff89c7cd699d917f59889832` mempunyai run aktual03.06 WIB 18/18PASS (Cashpure8/APcontroller10), exit0 dan review hasil independen; clean/unchanged, Windows Node24.16. Gap tanpa tes logika pada kandidat final kini tertutup untuk subset ini saja; snapshot historis di bawah dipertahankan.

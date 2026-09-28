@@ -1,5 +1,11 @@
 # Saga Platform Changelog
 
+## 2026-09-29 — Member recovery: runner9be diterapkan dan metadata retarget diterima
+
+- `CONFIRMED`: source `9be3adcd31bb650369ead9f8f401a130edc935e9` / tree `aba2787a58fae5321bd571c48c326d66d8347364`, dua file saja; guard mode legacy yang keliru diperbaiki tanpa bypass expiry/Owner/binding/providerOFF. Independent source/package117/117 Python PASS; runner91/focused5 subset. Before recovery tertahan guard → after scoped tooling dan metadata gate tertutup.
+- Actual runner-only adoption06.16–06.18 WIB dan metadata `PREFLIGHTED`06.23–06.25 WIB diterima independen, exit0/closure; helper/current/app/environment/DB/Owner/provider tetap, runner/state lama diarsipkan. Bukan deployment aplikasi kandidat backend71b2618/frontend5c1bd92; pada snapshot current masih cb51362/33b352.
+- `PRODUCTION_TOOLING_APPLIED_ONLY`, kandidat `IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. PrivatePG18fourstage candidate/helper unchanged tetap terpisah, bukan productionbackup. Encrypted production backup/restore, fresh Owner proof, app switch/auth-core UAT masih OPEN. Delapan dokumen terkait disinkronkan terpisah tanpa source/runtime action oleh writer; authority/pricing/founder decisions tidak berubah.
+
 ## 2026-09-28 — Paket Member dan recovery disposable diterima
 
 - `CONFIRMED`: four-source Memberc40d18094eacae3555f6689c5dc30dc718500787/runner783e6e286cbfde5fdf5e0c1e50e29dde56de1db7/Platform8b1e8fefdbd32c08835764f78c95f65d0d21c718/contracts755ed1dccaf07c3576b6680faf2404f4724669bf, package SHA256 `48e9ec58ea01f07fc137cbc25ca8e1f3837acbe80dbc768a96fe6e0d22c53e00`,22453283bytes; physical package/receipt/original natural0/dualEOF/scoped cleanup ditinjau independen.

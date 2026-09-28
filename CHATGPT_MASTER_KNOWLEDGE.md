@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — Saga Member: tooling recovery berhasil, aplikasi belum pulih terverifikasi
+
+- `CONFIRMED`: runner source `9be3adcd31bb650369ead9f8f401a130edc935e9` / tree `aba2787a58fae5321bd571c48c326d66d8347364`, independent117/117 Python PASS, memperbaiki guard mode legacy tanpa mengubah expiry/Owner/binding/providerOFF. Actual runner-only adoption06.16–06.18 WIB dan metadata retarget `PREFLIGHTED`06.23–06.25 WIB diterima independen. Helper/current/env/app/service/DB tetap; tidak ada proof Owner baru atau aplikasi switch.
+- Snapshot current backend `cb51362a67c1193c894f4a7e467fce2408a2b1d3` / frontend `33b3524629cf7eb1b7ad640473d92190aed26353`; kandidat backend `71b2618ff1814ab333c8e69f8b57d30fa737af33` / frontend `5c1bd92d0eef55cc5bc53e726fd05b9bd826579d` belum deploy/aktif. PrivatePG18fourstage candidate/helper unchanged tetap scoped, bukan productionbackup/newrunner whole execution. OPEN encrypted production backup/restore, fresh genuine Owner proof, app promotion/auth-core UAT. `PRODUCTION_TOOLING_APPLIED_ONLY` bukan `PRODUCTION_ACTIVATED`; aplikasi `IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. No source/runtime/data/provider/payment action oleh knowledge writer; riwayat di bawah tetap snapshot lama.
+
 ## 2026-09-29 — SagaPOS Cash/AP: actual scoped final-candidate validation
 
 - `CONFIRMED`: final lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39` memiliki run aktual03.06 WIB, Cashpure8 + APcontroller10, 18PASS/0fail/cancel/skip/todo/exit0. Review hasil independen menerima subset ini; source clean/unchanged dan assertion/body/timeout tidak diubah. Ini memperbarui snapshot provenance-only di bawah hanya untuk logika terarah.

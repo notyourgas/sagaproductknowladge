@@ -1,5 +1,12 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-29 — Saga Member: runner produksi diperbaiki, aplikasi belum diganti
+
+- `CONFIRMED / PRODUCTION_TOOLING_APPLIED_ONLY`: runner source `9be3adcd31bb650369ead9f8f401a130edc935e9` / tree `aba2787a58fae5321bd571c48c326d66d8347364` memperbaiki pencocokan mode runtime historis pada jalur recovery, tanpa mengubah expiry, verifikasi Owner, binding rilis lain atau provider OFF. Audit source/package independen: 117/117 tes Python PASS, termasuk suite runner91 dan focused5 sebagai subset, bukan tes tambahan.
+- Pemasangan runner saja pada 06.16 WIB dan penutupan proses pada 06.18 WIB diterima independen: helper tetap, runner lama diarsipkan, natural exit0 dan lock/proses/file descriptor terkait bersih. Metadata kandidat kemudian berhasil menjadi `PREFLIGHTED` pada 06.23–06.25 WIB. Ini persiapan recovery, bukan penggantian aplikasi atau bukti Owner terbaru.
+- Pada bukti retarget tersebut, aplikasi current masih backend `cb51362a67c1193c894f4a7e467fce2408a2b1d3` / frontend `33b3524629cf7eb1b7ad640473d92190aed26353`; kandidat backend `71b2618ff1814ab333c8e69f8b57d30fa737af33` / frontend `5c1bd92d0eef55cc5bc53e726fd05b9bd826579d` belum deploy/aktif. Hasil PostgreSQL18 private empat tahap pada kandidat/helper tidak berubah tetap scoped, bukan backup produksi atau run ulang pada runner baru.
+- OPEN: backup terenkripsi dan restore produksi disposable, genuine Owner proof terbaru, penggantian aplikasi serta auth-core UAT. `IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false` untuk kandidat aplikasi; provider/payment dan data bisnis tidak diaktifkan. Snapshot lama di bawah dipertahankan, bukan status live baru.
+
 ## 2026-09-28 — Saga Member: paket dan recovery nonproduction terverifikasi
 
 - `CONFIRMED / VERIFIED_NON_PRODUCTION_PACKAGE_AND_RECOVERY / READY_FOR_RELEASE_LEAD_AUTHORIZATION`: immutable package SHA256 `48e9ec58ea01f07fc137cbc25ca8e1f3837acbe80dbc768a96fe6e0d22c53e00`,22453283bytes. Exact four-source: Member `c40d18094eacae3555f6689c5dc30dc718500787`, runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7`, Platform `8b1e8fefdbd32c08835764f78c95f65d0d21c718`, contracts `755ed1dccaf07c3576b6680faf2404f4724669bf`. Physical artifact/source binding diterima QA independen.
