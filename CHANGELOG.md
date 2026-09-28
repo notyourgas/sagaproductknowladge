@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
+
+- CONFIRMED / SOURCE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED: clean pushed source cb06fd88e0f290996537f4b8e947055bf012ad7c, branch codex/sagapos-coverage-release-20260928, direct parent 94a30f966da139a5817743e55d50c16739d2c9a0. Hanya dua file guard/test dari accepted leaf a35dcd274e93427d691dbb05da6157e77015e0cc diintegrasikan; seluruh 13 file kandidat94 dipertahankan. UI AP terpisah dan patch cash closing berikutnya belum termasuk.
+- Sebelum: cakupan posting belum membatasi semua bentuk penerimaan yang dapat dilayani alokasi nilai yang ada. Sesudah pada source: posting baru menolak cakupan parsial/pemeriksaan atau penerimaan yang belum didukung sebelum perubahan finansial. Ini pengaman kompatibilitas; dukungan akuntansi parsial/pemeriksaan dan koreksi data lama belum ditambahkan. Finance approval, Owner posting, pemisahan actor, CAS dan exact replay tetap. Kasus full ordinary/bonus, pecahan, multi-bahan, Finance-approved price variance dan fee tetap didukung pada kasus yang diuji.
+- Bukti guard source: FAIL-before 15 total / 5 PASS / 10 FAIL / exit1; setelah guard satu run 19 focused + 33 HPP = 52/52 PASS, 0 SKIP, actual exit0. Source dan integrasi beku ditinjau independen. Angka ini bukan fresh full/native kandidatcb06. Existing UI pure10/10 pada branch asal adalah bukti tambahan terpisah; UI AP tersebut tidak dibawa ke kandidat.
+- Produksi tetap bbd4567eec1898b2dc55c6b75bc37a56374c06d3, rollback 3804f5b5729da90f0ab63cc1c25a13d5c61acc1a. Read-only current/health diverifikasi 28 September 13.42 WIB, ready/schema34/Gateway existing, reporting OFF dan Order Meja DEMO. Guard source belum live; BUSINESS_READY=false. Provider, Member/pilot, credential dan data bisnis nyata tidak berubah.
+- Next: fresh full dengan actual exit0 pada exact kandidat final, native rejection/positive/replay/rollback/restart/restore guard, immutable artifact serta fresh Owner/recovery/admission/activation/read-only smoke/monitor. Full94 sebelumnya mencatat 1731 PASS / 0 FAIL / 73 SKIP tetapi actual exitcode hilang, sehingga gate HOLD. Native94 lulus sebagai bukti historis, bukan native PASS kandidat baru. Cash closing masih source terpisah, belum commit rilis. UAT operator/perangkat/QRIS/stock/closing dan offsite recovery tetap terbuka.
+- Sinkronisasi 8 dokumen publik dari checkout main bersih setelah fast-forward. Validator, staged/public-safety/diff, push main dan raw verification menjadi penutupan sync. SHA knowledge final dilaporkan setelah push.
+
 ## 2026-09-28 — Preview eksperimen keuangan tiga outlet
 
 - `CONFIRMED / LOCAL_VALIDATED / PREVIEW_UI_ONLY`: eksperimen pribadi nonkomersial, tiga outlet sintetis dan satu pengelola. Preview publik: https://keuangan-multi-outlet-preview.vercel.app. Aplikasi terpisah; homepage SagaDevs dan runtime SagaFin/SagaPOS tidak berubah.

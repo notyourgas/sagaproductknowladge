@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
+
+- Status accepted untuk fakta source: clean pushed candidate cb06fd88e0f290996537f4b8e947055bf012ad7c, parent94, hanya accepted guard dua file leaf a35; independent source/integration PASS. IMPLEMENTED_NOT_DEPLOYED; full/native/artifact/activation kandidat final pending.
+- Runtime read-only28September13.42 WIB: production bbd/rollback380/ready/schema34/Gateway tetap; reporting OFF/Order Meja DEMO, BUSINESS_READY=false. Tidak ada production/data/provider/Member mutation.
+- Branch knowledge main, delapan dokumen. SHA knowledge final resolve dari Git/GitHub setelah push. Fresh fast-forward menjaga perubahan preview SagaDevs yang sudah ada. Tidak ada konflik, secret, identifier, raw receipt atau path privat dalam tambahan ini. Entri lama tetap menjadi riwayat; receipt historis tidak dinyatakan current PASS.
+
 ## 2026-09-28 — Preview eksperimen keuangan tiga outlet
 
 - `CONFIRMED / LOCAL_VALIDATED / PREVIEW_UI_ONLY`: eksperimen pribadi nonkomersial, tiga outlet sintetis dan satu pengelola. Preview publik: https://keuangan-multi-outlet-preview.vercel.app. Aplikasi terpisah; homepage SagaDevs dan runtime SagaFin/SagaPOS tidak berubah.

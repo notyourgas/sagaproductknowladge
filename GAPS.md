@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
+
+- CONFIRMED: guard cakupan invoice SOURCE_ACCEPTED pada clean pushed candidate cb06fd88e0f290996537f4b8e947055bf012ad7c (parent94), dua file accepted leaf a35; IMPLEMENTED_NOT_DEPLOYED. Unsupported partial/inspection/multi-receipt posting ditolak pada source. Dukungan finansial kasus tersebut belum ditambahkan.
+- CONFIRMED: full94 assertion1731/0/73 bukan gate PASS karena actual exitcode hilang. Native94 PASS historis; fresh full dan native guard/recovery kandidat final diperlukan. Candidatecb06 belum memiliki artifact/admission/activation. Cash closing masih source terpisah, belum commit/production; UI AP terpisah juga tidak termasuk.
+- Production bbd/rollback380/ready/schema34 diverifikasi13.42 WIB; aktivasi kode sebelumnya tetap sah. NEEDS CONFIRMATION: UAT invoice/Finance/AP/payment/stock/closing nyata, hardware/QRIS, offsite recovery, HR koordinat/staff dan Member pilot/recovery. Reporting OFF, Order Meja DEMO, BUSINESS_READY=false.
+
 ## 2026-09-28 — Batas eksperimen keuangan multi-outlet
 
 - `CONFIRMED`: preview keuangan tiga outlet sudah publik dengan data sintetis, localStorage dan role button. Login dilewati sesuai permintaan Andreas untuk eksperimen pribadi nonkomersial; tidak ada keputusan membuka data bisnis atau aktivasi backend.
