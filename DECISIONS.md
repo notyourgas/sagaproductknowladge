@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-215 — Backend keuangan sintetis di VPS biasa, preview tetap dummy
+
+- Tanggal: 2026-09-28. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: kerjakan strategi lanjutan dan deploy; gunakan VPS yang biasa digunakan untuk backend. Preview Vercel tetap tanpa login, dengan role button dan data dummy sebagaimana DEC-214. Console authenticated Laravel/MySQL tersedia secara privat melalui SSH.
+- Alasan: meninjau alur tiga outlet dengan satu pengelola sambil menguji fondasi server secara terisolasi.
+- Alternatif: Hostinger atau backend publik; belum dipilih untuk aktivasi.
+- Dampak: deployment privat sintetis diizinkan; tidak membuka data keuangan nyata, transaksi bank, DNS atau pesan customer. BUSINESS_READY=false; UAT operator dan recovery operasional tetap gate penggunaan nyata.
+- Dokumen terkait: [SagaDevs](products/sagadevs/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md).
+
 ## DEC-214 — Preview pribadi keuangan tiga outlet tanpa login
 
 | Field | Keputusan |
@@ -9,7 +18,7 @@
 | Keputusan | Andreas meminta build dan deploy Vercel; login dilewati, role berupa tombol yang bisa diganti dan data dummy. Penggunaan saat ini eksperimen pribadi nonkomersial. |
 | Alasan | Meninjau alur dashboard untuk tiga outlet dengan satu pengelola. |
 | Alternatif yang dipertimbangkan | Login/database operasional sejak awal; ditunda untuk tahap backend. |
-| Dampak | Preview statis publik terpisah, localStorage browser, noindex; BUSINESS_READY=false. Tidak mengizinkan transaksi/data bisnis nyata atau perubahan VPS/Hostinger/DNS. |
+| Dampak | Preview statis publik terpisah, localStorage browser, noindex; BUSINESS_READY=false. Tidak mengizinkan transaksi/data bisnis nyata. Scope VPS diperluas pada DEC-215; Hostinger/DNS tetap belum diaktifkan. |
 | Pemberi keputusan | Andreas |
 | Status | CONFIRMED |
 | Dokumen terkait | [SagaDevs](products/sagadevs/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md) |
