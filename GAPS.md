@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Gap input invoice Owner ditutup pada source, rilis masih pending
+
+- `CONFIRMED`: native invoice matching source `060176bfa1ea08c73a429f182be676bd4156d3b7` accepted/LOCAL_VALIDATED, actual production tetap `bbd4567`/ready/schema 34 pada 11.30.55 WIB. Popup dokumen/perbandingan dan read-only status selesai pada source; tidak mengaktifkan approval Finance/AP/payment atau mencatat invoice bisnis nyata.
+- `NEEDS CONFIRMATION`: exact integrated candidate/full regression/native target/recovery/effective Owner/admission/production read-only smoke dan activation invoice. Embedded-PG 1/1, final invoice 16/16 dan combined 39/39 yang tumpang tindih bukan pengganti gate native/production. Operational invoice/Finance/AP/payment UAT terpisah; reporting OFF, Order Meja DEMO, hardware/offsite/Member gaps dan `BUSINESS_READY=false` tetap.
+- Penahan sinkronisasi akibat checkout `main` produk lain yang kotor diselesaikan melalui clone knowledge terisolasi dengan Git/main sendiri; perubahan lama tidak disentuh. Ini penyelesaian workflow dokumentasi, bukan activation production atau penutupan gap bisnis.
+
+
 ## 2026-09-28 — Penerimaan barang PO native Owner aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: exact source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, direct parent/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`, branch `codex/sagapos-owner-release-20260928`, aktif **11.03.18 WIB**. Four-file receiving leaf `8ce0a3c09a693edbf6becbc1bb4a174eda8c54e2` di-cherry-pick dengan provenance onto actual cash380; approved receiving blobs identik dan kedua runtime cash blobs tetap persis380. Jam layanan, supplier, revisi/batal PO, cash replay/ACK dan REMAKE sebelumnya dipertahankan.

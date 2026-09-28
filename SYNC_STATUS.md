@@ -1,5 +1,20 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — Sinkronisasi source invoice Owner, production tidak berubah
+
+| Field | Snapshot terbaru untuk pembaruan ini |
+|---|---|
+| Waktu pembaruan terakhir | 2026-09-28, source/runtime diverifikasi 11.30.55 WIB |
+| Branch aktif | `main` pada checkout knowledge bersih terisolasi |
+| Commit SHA terbaru | `main HEAD` — resolve hash final dari Git/GitHub setelah push |
+| Informasi terakhir disinkronkan | Source invoice Owner `060176bfa1ea08c73a429f182be676bd4156d3b7` SOURCE_ACCEPTED/LOCAL_VALIDATED; production `bbd4567` tetap |
+| Status sinkronisasi | `UP TO DATE` untuk fakta source; invoice IMPLEMENTED_NOT_DEPLOYED, BUSINESS_READY=false |
+| Konflik | Tidak ada konflik fakta source/production; kerja kotor produk lain dipertahankan |
+| Error | Tidak ada error source; kandidat/full/native/recovery/Owner activation gate masih pending |
+
+- `CONFIRMED`: independent review diterima; final invoice 16/16, combined 39/39 (overlap), embedded-PG durable 1/1, static/type 644 dan viewport 390/1440 PASS. Pembaruan 8 dokumen sumber lokal tervalidasi saja; bukan rilis atau transaksi nyata. Snapshot sebelumnya di bawah adalah riwayat, tidak menggantikan status source-only pembaruan ini.
+
+
 ## 2026-09-28 — Penerimaan barang PO native Owner aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: exact source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, direct parent/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`, branch `codex/sagapos-owner-release-20260928`, aktif **11.03.18 WIB**. Four-file receiving leaf `8ce0a3c09a693edbf6becbc1bb4a174eda8c54e2` di-cherry-pick dengan provenance onto actual cash380; approved receiving blobs identik dan kedua runtime cash blobs tetap persis380. Jam layanan, supplier, revisi/batal PO, cash replay/ACK dan REMAKE sebelumnya dipertahankan.

@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Invoice native Owner diterima pada source, belum production
+
+- `CONFIRMED`: source `060176bfa1ea08c73a429f182be676bd4156d3b7` direct parentbbd4567, branch `codex/sagapos-owner-invoice-match-20260928`, independent SOURCE_ACCEPTED; `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Sebelum input invoice Admin lama; setelah pada source satu popup native Pembelian, actual document/locked reference/fees/total/provisional comparison dan read-only status. Alasan: operator tidak perlu pindah tampilan untuk mencatat invoice.
+- Final invoice16/16 dan combined39/39 regression PASS (overlap, jangan dijumlahkan), existing embedded-PG durable1/1 dan static/type644/browser390-1440 PASS. Approval Finance/AP/payment/stock/HPP/provider tidak diperluas; real business writes0. Production unchangedbbd, ready/schema34 fresh11.30.55WIB; native/full/recovery/Owner release gates masih pending.
+- Dokumen terdampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio/root changelog, master, GAPS dan SYNC_STATUS. Sumber: exact committed/pushed source, focused terminal evidence dan review independen. Next sole Lead release handoff; `BUSINESS_READY=false`, bukan klaim aktivasi invoice.
+
+
 ## 2026-09-28 — Penerimaan barang PO native Owner aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: exact source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, direct parent/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`, branch `codex/sagapos-owner-release-20260928`, aktif **11.03.18 WIB**. Four-file receiving leaf `8ce0a3c09a693edbf6becbc1bb4a174eda8c54e2` di-cherry-pick dengan provenance onto actual cash380; approved receiving blobs identik dan kedua runtime cash blobs tetap persis380. Jam layanan, supplier, revisi/batal PO, cash replay/ACK dan REMAKE sebelumnya dipertahankan.

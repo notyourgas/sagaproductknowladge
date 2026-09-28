@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — Sync source invoice native Owner SagaPOS
+
+- `CONFIRMED`, `accepted`: dokumentasikan source `060176bfa1ea08c73a429f182be676bd4156d3b7` (parent `bbd4567`), matching-only popup Owner dan status baca, agar kemajuan source tidak dikira sudah live. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED; source independent review, invoice 16/16/combined 39/39 overlap, embedded-PG 1/1, checks 644/viewport 390-1440 PASS. Production unchanged `bbd4567`, ready/schema 34 pada 11.30.55 WIB; BUSINESS_READY=false.
+- Area/file: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, GAPS, SYNC_STATUS, root dan portfolio changelog. Sebelum invoice input Admin lama; setelah pada source native Pembelian, tanpa Finance/AP/payment/provider/stock/HPP/data bisnis baru. Pricing/trial/founder decision/struktur/produk lain tidak berubah.
+- Sumber: exact source commit, terminal source tests dan independent immutable review. Validator/link/public-safety/diff serta staged check wajib sebelum commit/push main; SHA knowledge final dilaporkan setelah push. Gate release/native/recovery/Owner dan UAT bisnis masih terbuka. Clone terisolasi menjaga pekerjaan produk lain tanpa overwrite/force.
+
+
 ## 2026-09-28 — Penerimaan barang PO native Owner aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: exact source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, direct parent/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`, branch `codex/sagapos-owner-release-20260928`, aktif **11.03.18 WIB**. Four-file receiving leaf `8ce0a3c09a693edbf6becbc1bb4a174eda8c54e2` di-cherry-pick dengan provenance onto actual cash380; approved receiving blobs identik dan kedua runtime cash blobs tetap persis380. Jam layanan, supplier, revisi/batal PO, cash replay/ACK dan REMAKE sebelumnya dipertahankan.

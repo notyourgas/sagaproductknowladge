@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS invoice Owner matching source diterima
+
+- `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `060176bfa1ea08c73a429f182be676bd4156d3b7`, parentproductionbbd4567. Admin lama → popup native Pembelian untuk invoice dokumen aktual, locked PO reference, biaya/total/preview dan status tersimpan yang dibaca. Tidak mencakup Finance approval/AP posting/kredit/payment atau stock/HPP/provider mutation.
+- Independent review, finalinvoice16/16, combined39/39 overlap, embedded-PG1/1, static/type644/390-1440 PASS. Production unchangedbbd, ready/schema34 fresh11.30.55WIB; kandidat/native/recovery/Owner release gates tetap pending dan BUSINESS_READY=false. Tidak ada pricing/trial/founder decision/produk tetangga yang berubah.
+- Sumber exact committed source dan terminal/review evidence; sinkronisasi accepted mencakup8dokumen SagaOPS/master/gaps/sync/changelogs. Berikutnya sole Release Lead setelah handoff; knowledge source ini tidak mengaktifkan fitur bisnis.
+
+
 ## 2026-09-28 — Penerimaan barang PO native Owner aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: exact source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, direct parent/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`, branch `codex/sagapos-owner-release-20260928`, aktif **11.03.18 WIB**. Four-file receiving leaf `8ce0a3c09a693edbf6becbc1bb4a174eda8c54e2` di-cherry-pick dengan provenance onto actual cash380; approved receiving blobs identik dan kedua runtime cash blobs tetap persis380. Jam layanan, supplier, revisi/batal PO, cash replay/ACK dan REMAKE sebelumnya dipertahankan.
