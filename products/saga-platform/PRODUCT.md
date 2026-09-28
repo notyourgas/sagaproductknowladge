@@ -1,5 +1,12 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-28 — Saga Member: containment expiry dan maintenance tervalidasi lokal
+
+- `CONFIRMED`: source Member lokal `c40d18094eacae3555f6689c5dc30dc718500787` dan runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7` diterima QA source. Status `LOCAL_VALIDATED / SOURCE_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`.
+- Source kini memakai exit78 untuk expiry dengan kebijakan service yang mencegah restart berulang pada kondisi itu. Halaman maintenance disiapkan untuk dokumen Member; API tetap JSON503, service worker dan runtime config tetap respons503 terpisah, dengan no-store dan header server yang sudah ada dipertahankan.
+- Validasi lokal: Member571/571 dan runner98/98. Ini tidak membuktikan pemulihan layanan produksi. Pemeriksaan HTTP28September masih app502/API503; paket lama tidak menjadi kandidat baru untuk pasangan commit ini.
+- Next gate: keputusan Owner untuk jendela pilot/recovery baru, paket immutable baru, fresh recovery/release gates dan acceptance operasional. Push source Member, PR dan hosted CI tetap tidak dijalankan sesuai SKIP_GITHUB; sinkronisasi knowledge terpisah.
+
 ## 2026-09-22 — Saga Member ↔ Saga Platform projection aktif dan sehat
 
 - `CONFIRMED`, cut-off 2026-09-22 07:10 UTC: Saga Member release `20260922T070500Z-cb51362-r0u` aktif pada [Member](https://app.sagamember.site/member) dan [Owner](https://app.sagamember.site/owner), sementara Saga Platform release `20260922060607-aeb17ba` aktif pada [console produk Saga Member](https://platform.sagasuper.tech/products/sagamember).

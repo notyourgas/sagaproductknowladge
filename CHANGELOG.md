@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — knowledge(saga-platform): Saga Member recovery source-qualified
+
+- `CONFIRMED`, sumber source lokal bercommit dan QA independen: Member `c40d18094eacae3555f6689c5dc30dc718500787` / runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7`. Lokal Member571/571, runner98/98.
+- Menyinkronkan expiry exit78/no restart loop, maintenance dokumen versus API/runtime503, no-store dan header existing. Status `LOCAL_VALIDATED / SOURCE_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; live masih app502/API503, Owner window dan fresh package/recovery/release pending.
+- Delapan dokumen: saga-platform PRODUCT/DOSSIER/CHANGELOG, PORTFOLIO_CHANGELOG, CHATGPT_MASTER_KNOWLEDGE, GAPS, SYNC_STATUS dan root CHANGELOG. Knowledge main HEAD dicatat melalui commit/push terpisah. Source Member tetap SKIP_GITHUB; tidak ada perubahan produksi/aktivasi/provider atau paket baru.
+
 ## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
 
 - CONFIRMED / SOURCE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED: clean pushed source cb06fd88e0f290996537f4b8e947055bf012ad7c, branch codex/sagapos-coverage-release-20260928, direct parent 94a30f966da139a5817743e55d50c16739d2c9a0. Hanya dua file guard/test dari accepted leaf a35dcd274e93427d691dbb05da6157e77015e0cc diintegrasikan; seluruh 13 file kandidat94 dipertahankan. UI AP terpisah dan patch cash closing berikutnya belum termasuk.

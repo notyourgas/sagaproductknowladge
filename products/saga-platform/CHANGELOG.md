@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-28 — Saga Member expiry containment dan maintenance source-qualified
+
+- `CONFIRMED`: Member lokal `c40d18094eacae3555f6689c5dc30dc718500787` / runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7`; Member571/571 dan runner98/98 lokal, QA source diterima.
+- Alasan: menyiapkan expiry exit78 tanpa restart berulang serta fallback dokumen/API/runtime yang sesuai jenis respons, no-store dan header existing tetap.
+- Delivery `LOCAL_VALIDATED / SOURCE_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; produksi tidak berubah, app502/API503 masih teramati. Belum ada paket baru; paket lama tidak dipromosikan sebagai kandidat pair ini.
+- Next: keputusan Owner tentang jendela pilot/recovery, lalu paket dan recovery/release gates baru. Source push/PR/hosted CI tetap SKIP_GITHUB. Fakta disinkronkan ke PRODUCT, DOSSIER, portfolio, master, GAPS, SYNC_STATUS dan root changelog.
+
 ## 2026-09-22 — Saga Member ↔ Saga Platform production projection
 
 - Release Member `20260922T070500Z-cb51362-r0u` dan Platform `20260922060607-aeb17ba` mengaktifkan proyeksi readiness/capability minimum dengan authority Customer Platform tetap utuh.

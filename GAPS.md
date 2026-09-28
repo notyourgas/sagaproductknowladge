@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Saga Member recovery setelah expiry: source siap, authorization/runtime terbuka
+
+- `CONFIRMED`: Member `c40d18094eacae3555f6689c5dc30dc718500787` / runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7` diterima QA source, lokal571/571 dan98/98; expiry exit78 serta fallback maintenance/API/runtime503 dengan header existing telah diperbaiki pada source.
+- `NEEDS CONFIRMATION`: Owner pilot/recovery window belum tersedia; runtime masih app502/API503. Fresh immutable package dan candidate-bound recovery/release/operational acceptance belum selesai. Paket historis tidak dianggap kandidat baru; belum deployment, activation, renewal atau business acceptance.
+- `BUSINESS_READY=false`; source Member tetap SKIP_GITHUB/CI_NOT_RUN. Perbaikan ini tidak menutup UAT bisnis, offsite recovery atau gate kanal/perangkat tambahan.
+
 ## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
 
 - CONFIRMED: guard cakupan invoice SOURCE_ACCEPTED pada clean pushed candidate cb06fd88e0f290996537f4b8e947055bf012ad7c (parent94), dua file accepted leaf a35; IMPLEMENTED_NOT_DEPLOYED. Unsupported partial/inspection/multi-receipt posting ditolak pada source. Dukungan finansial kasus tersebut belum ditambahkan.

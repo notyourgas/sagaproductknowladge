@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-28 — Saga Member source recovery tervalidasi lokal
+
+`CONFIRMED`: source Member lokal `c40d18094eacae3555f6689c5dc30dc718500787` dan runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7` telah diterima QA source; Member571/571, runner98/98 lokal. Source menyiapkan expiry exit78 tanpa restart berulang dan fallback503: dokumen maintenance, API JSON, service worker/runtime config terpisah, no-store serta header existing dipertahankan.
+
+Status `LOCAL_VALIDATED / SOURCE_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Pemeriksaan28September masih app502/API503. Paket lama tidak menjadi kandidat bagi pair baru. Pemulihan membutuhkan keputusan Owner untuk jendela pilot/recovery, paket immutable baru dan fresh recovery/release/acceptance gates. SKIP_GITHUB source Member dipertahankan; knowledge dipush secara terpisah. Riwayat aktivasi sehat22September di bawah adalah fakta historis, bukan status live saat ini.
+
 ## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
 
 - CONFIRMED / SOURCE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED: clean pushed source cb06fd88e0f290996537f4b8e947055bf012ad7c, branch codex/sagapos-coverage-release-20260928, direct parent 94a30f966da139a5817743e55d50c16739d2c9a0. Hanya dua file guard/test dari accepted leaf a35dcd274e93427d691dbb05da6157e77015e0cc diintegrasikan; seluruh 13 file kandidat94 dipertahankan. UI AP terpisah dan patch cash closing berikutnya belum termasuk.

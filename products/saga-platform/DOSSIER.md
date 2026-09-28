@@ -1,5 +1,13 @@
 # Saga Platform Dossier
 
+## 2026-09-28 — Source recovery Member: batas expiry dan respons maintenance
+
+- `CONFIRMED`: pasangan source lokal Member `c40d18094eacae3555f6689c5dc30dc718500787` / runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7` telah melalui QA independen pada lingkup expiry, maintenance dan fallback. Member571/571 serta runner98/98 lulus lokal; belum menjadi paket atau release produksi baru.
+- Sebelum: expiry dapat memicu restart berulang dan kegagalan upstream belum mempunyai fallback terpisah yang disiapkan untuk dokumen/API/runtime. Setelah pada source: expiry keluar78 dengan RestartPreventExitStatus78; dokumen Member memperoleh halaman maintenance503, API memperoleh JSON503, sedangkan service worker/runtime config memperoleh respons503 terpisah. Respons tidak dicache dan header server existing dipertahankan.
+- Header fallback diambil dari server proxy yang benar, termasuk konfigurasi dengan server redirect sebelumnya; hasil source ini telah direview. Kontrak kandidat dan rollback tetap terikat source. Paket historis tidak dianggap cocok dengan source baru.
+- Status `LOCAL_VALIDATED / SOURCE_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Runtime28September masih app502/API503. Source ini belum memulihkan availability, memperpanjang pilot atau membuktikan UAT bisnis.
+- `NEEDS CONFIRMATION`: Owner menentukan jendela pilot/recovery; kemudian diperlukan fresh package, recovery/release, smoke dan acceptance operasional. Source Member tidak dipush, PR/hosted CI tidak dibuat sesuai SKIP_GITHUB; knowledge diperbarui terpisah.
+
 ## 2026-09-22 — Aktivasi projection Saga Member ke Saga Platform
 
 - `CONFIRMED`: Member release `20260922T070500Z-cb51362-r0u` dan Platform release `20260922060607-aeb17ba` aktif. Source exact: backend `cb51362a67c1193c894f4a7e467fce2408a2b1d3`, frontend `33b3524629cf7eb1b7ad640473d92190aed26353`, contracts `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`, Platform `aeb17ba9316252a6b2de0357cdcad6f7bd184589`.

@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-28 — Saga Member: source recovery diterima, runtime belum pulih
+
+- `CONFIRMED`: Member `c40d18094eacae3555f6689c5dc30dc718500787` / runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7` berstatus lokal/source-qualified, belum deploy. Expiry exit78, maintenance dokumen terpisah dari API/runtime503, no-store dan header existing dipertahankan; Member571/571 dan runner98/98.
+- Dampak: recovery source lebih siap, tetapi app502/API503 dan kebutuhan Owner pilot/recovery window masih terbuka; paket lama bukan kandidat baru. `BUSINESS_READY=false`, `CI_NOT_RUN`, source Member tetap SKIP_GITHUB.
+- Dokumen: products/saga-platform/PRODUCT.md, DOSSIER.md, CHANGELOG.md; CHATGPT_MASTER_KNOWLEDGE.md, GAPS.md, SYNC_STATUS.md, root CHANGELOG.md dan entri portfolio ini. Produksi produk lain tidak diubah oleh sync.
+
 ## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
 
 - CONFIRMED / SOURCE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED: clean pushed source cb06fd88e0f290996537f4b8e947055bf012ad7c, branch codex/sagapos-coverage-release-20260928, direct parent 94a30f966da139a5817743e55d50c16739d2c9a0. Hanya dua file guard/test dari accepted leaf a35dcd274e93427d691dbb05da6157e77015e0cc diintegrasikan; seluruh 13 file kandidat94 dipertahankan. UI AP terpisah dan patch cash closing berikutnya belum termasuk.

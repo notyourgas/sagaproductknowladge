@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — Sync source-qualified Saga Member recovery
+
+- `CONFIRMED`: knowledge8dokumen merekonsiliasi Member lokal `c40d18094eacae3555f6689c5dc30dc718500787` / runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7`, validasi571/571 dan98/98 serta QA source pada expiry/maintenance/header.
+- Status delivery `LOCAL_VALIDATED / SOURCE_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Produksi tidak berubah; app502/API503 dan keputusan Owner window tetap blocker. Fresh package/recovery/release belum dilakukan; old package bukan kandidat pair ini.
+- Scope publik hanya fakta produk dan provenance commit; tidak membawa credential, identifier, raw receipt atau evidence restricted. Source Member tidak dipush/PR/hosted CI sesuai SKIP_GITHUB. Knowledge main HEAD dilaporkan setelah commit/push terpisah.
+
 ## 2026-09-28 — Guard cakupan posting invoice diterima pada source, belum deploy
 
 - Status accepted untuk fakta source: clean pushed candidate cb06fd88e0f290996537f4b8e947055bf012ad7c, parent94, hanya accepted guard dua file leaf a35; independent source/integration PASS. IMPLEMENTED_NOT_DEPLOYED; full/native/artifact/activation kandidat final pending.
