@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Publikasi source kandidat Team terintegrasi
+
+- `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: canonical `e6d55cc2e63e8d997873d25178698389a411a108`, parentfec890, tree2102a5b1, branch `codex/sagapos-team-integrated-20260928`. Sumber: frozen commit, independent source QA dan sole Lead publication; live canonical branch cocok.
+- Delta15Ops/test/handoff menghubungkan Owner-session verification, native preparer, admission, durable flag/recovery/rollback dan preserved GATEWAY. Source-focused17runner/13prep/20retained/14helper terpisah;49legacyPASS/0FAIL/4WindowsSKIP, bukan full. Koreksi source compatibility selesai, tanpa klaim actual Owner signing/native execution.
+- Default OFF/schema NOT_INSTALLED/BUSINESS_READY=false; native/full/browser/artifact/rehearsal/restore/restart/concurrency/effective Owner/activation pending. Runtime baselinebbd/rollback380/schema34 unchanged oleh slice ini; Cash8 WIP/AP UI tidak diikutkan. Next: exact package dan gate nyata melalui sole Lead. Source-not-pushed lama kini histori; tidak ada production/provider/pilot/akun mutation. Knowledge11dokumen bersama recovery Member, menjaga keputusan/pricing/produk lain.
+
 ## 2026-09-28 — Kontrak helper recovery Tim & Akses diterima pada source
 
 - `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: helper successor `fec890334fef75340fe0c10908affd67ee46f872`, parent `07ac7e0cce89d54ff188bf193e186db325838d6d`, independent source QA. Persiapan rehearsal fresh kini memakai katalog SQL kanonik dan pemeriksaan preservasi data dasar/akun/audit; gap recovery bounded ditutup **pada source**, bukan native engine.

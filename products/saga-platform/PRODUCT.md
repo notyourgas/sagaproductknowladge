@@ -1,6 +1,12 @@
 # Saga Platform Product Knowledge
 
-## 2026-09-28 — Saga Member: containment expiry dan maintenance tervalidasi lokal
+## 2026-09-28 — Saga Member: paket dan recovery nonproduction terverifikasi
+
+- `CONFIRMED / VERIFIED_NON_PRODUCTION_PACKAGE_AND_RECOVERY / READY_FOR_RELEASE_LEAD_AUTHORIZATION`: immutable package SHA256 `48e9ec58ea01f07fc137cbc25ca8e1f3837acbe80dbc768a96fe6e0d22c53e00`,22453283bytes. Exact four-source: Member `c40d18094eacae3555f6689c5dc30dc718500787`, runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7`, Platform `8b1e8fefdbd32c08835764f78c95f65d0d21c718`, contracts `755ed1dccaf07c3576b6680faf2404f4724669bf`. Physical artifact/source binding diterima QA independen.
+- Dua restricted extracts cocok inventory1583entri. Synthetic PGlite tiga tahap dan actual PostgreSQL18.6 tiga tahap backup/restore/forward compatibility lulus; original natural terminal0/dualEOF/scoped cleanup diterima. Synthetic dan native tetap bukti terpisah, bukan production backup atau pengujian login/UAT.
+- **IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false.** Jendela/otorisasi recovery production Member masih pending; belum prepare/retarget/restart/renew/provider/activation. Snapshot lama package-pending digantikan untuk gate nonproduction ini saja; availability production belum diverifikasi ulang. Source Member tetap SKIP_GITHUB/CI_NOT_RUN. Next: Release Lead menerima handoff dan keputusan Owner window, lalu fresh target/recovery/release gates.
+
+## Histori 2026-09-28 — Saga Member: containment expiry dan maintenance tervalidasi lokal
 
 - `CONFIRMED`: source Member lokal `c40d18094eacae3555f6689c5dc30dc718500787` dan runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7` diterima QA source. Status `LOCAL_VALIDATED / SOURCE_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`.
 - Source kini memakai exit78 untuk expiry dengan kebijakan service yang mencegah restart berulang pada kondisi itu. Halaman maintenance disiapkan untuk dokumen Member; API tetap JSON503, service worker dan runtime config tetap respons503 terpisah, dengan no-store dan header server yang sudah ada dipertahankan.

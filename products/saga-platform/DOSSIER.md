@@ -1,6 +1,14 @@
 # Saga Platform Dossier
 
-## 2026-09-28 — Source recovery Member: batas expiry dan respons maintenance
+## 2026-09-28 — Recovery Member: acceptance paket nonproduction
+
+`CONFIRMED / VERIFIED_NON_PRODUCTION_PACKAGE_AND_RECOVERY / READY_FOR_RELEASE_LEAD_AUTHORIZATION`: package immutable `48e9ec58ea01f07fc137cbc25ca8e1f3837acbe80dbc768a96fe6e0d22c53e00`,22453283bytes, sumber Memberc40d18094eacae3555f6689c5dc30dc718500787, runner783e6e286cbfde5fdf5e0c1e50e29dde56de1db7, Platform8b1e8fefdbd32c08835764f78c95f65d0d21c718, contracts755ed1dccaf07c3576b6680faf2404f4724669bf. QA independen mencocokkan physical bytes, embedded source-pair/inventory dan original command terminals; writer mengulang physical checksum saja, tidak build/extract/rehearsal.
+
+Dua extract terpisah memakai exact inventory1583entri yang mengecualikan manifest inventory itu sendiri; builder1584 memasukkan manifest, bukan discrepancy. Synthetic PGlite membuktikan active baseline, active code setelah schema active dan active code setelah full forward schema. PostgreSQL18.6 disposable membuktikan active15 backup/restore, forward15→16 old/new writes, lalu candidate16 backup/restore. Ini forward compatibility, bukan down migration. Original natural caller0, kedua output EOF dan scoped cleanup diterima; sejarah failed comparator/dependency/start attempts tetap disimpan, tidak direlabel PASS.
+
+Status package-pending pada snapshot sebelumnya tersupersesi oleh **nonproduction recovery siap**. Hal ini tidak membuktikan production backup, live availability, effective production Owner, authenticated UAT, renewal atau provider. **IMPLEMENTED_NOT_DEPLOYED/BUSINESS_READY=false**, Owner production window masih keputusan terbuka. Source Member/SKIP_GITHUB dan hostedCI_NOT_RUN tetap; tidak ada production prepare/retarget/restart/renew/activation dari handoff ini. Next: acceptance oleh Release Lead, Owner window yang berlaku dan fresh source/target/capacity/authorization/recovery/promotion/smoke gates. Tidak mengubah authority Customer Platform atau loyalty/ledger.
+
+## Histori 2026-09-28 — Source recovery Member: batas expiry dan respons maintenance
 
 - `CONFIRMED`: pasangan source lokal Member `c40d18094eacae3555f6689c5dc30dc718500787` / runner `783e6e286cbfde5fdf5e0c1e50e29dde56de1db7` telah melalui QA independen pada lingkup expiry, maintenance dan fallback. Member571/571 serta runner98/98 lulus lokal; belum menjadi paket atau release produksi baru.
 - Sebelum: expiry dapat memicu restart berulang dan kegagalan upstream belum mempunyai fallback terpisah yang disiapkan untuk dokumen/API/runtime. Setelah pada source: expiry keluar78 dengan RestartPreventExitStatus78; dokumen Member memperoleh halaman maintenance503, API memperoleh JSON503, sedangkan service worker/runtime config memperoleh respons503 terpisah. Respons tidak dicache dan header server existing dipertahankan.

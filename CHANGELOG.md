@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — knowledge: Team source publication dan Member nonprod recovery
+
+- `CONFIRMED`, sumber exactcommit/canonicalbranch/frozen tests/independentQA: SagaPOS Team `e6d55cc2e63e8d997873d25178698389a411a108` tree2102a5b1 parentfec890, published soleLead. Ops15/source17runner13prep20retained14helper/legacy49PASS0FAIL4WindowsSKIP acceptedSOURCE_ONLY, bukan actualOwner/native/full/rehearsal/deploy.
+- `CONFIRMED`, sumber physicalartifact/sourcepair/inventory/actualcommand/independentQA: Member package48e9ec58ea01f07fc137cbc25ca8e1f3837acbe80dbc768a96fe6e0d22c53e00/22453283bytes, Memberc40d18094eacae3555f6689c5dc30dc718500787/runner783e6e286cbfde5fdf5e0c1e50e29dde56de1db7/Platform8b1e8fefdbd32c08835764f78c95f65d0d21c718/contracts755ed1dccaf07c3576b6680faf2404f4724669bf. Twoextracts1583 +synthetic3stage +PG18three-stagebackup/forwardrestore/natural0/dualEOF/scopedcleanup acceptedNONPRODUCTION, not productionbackup/availability/UAT.
+- Alasan: mengganti snapshot Team not-pushed dan Member package/recovery-pending dengan provenance baru tanpa menghapus histori. Team defaultOFF/schemaNOT_INSTALLED/IMPLEMENTED_NOT_DEPLOYED; Member READY_FOR_RELEASE_LEAD_AUTHORIZATION/IMPLEMENTED_NOT_DEPLOYED, productionwindow pending; keduanyaBUSINESS_READYfalse. POS baselinebbd/rollback380/schema34 unchanged oleh slice; tidak ada production prepare/renew/restart/provider/akun/data mutation atau runtimechecks oleh sync.
+- Scope11dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, SagaPlatform PRODUCT/DOSSIER/CHANGELOG, portfolio/master/gaps/sync/root. Cleanmain FF dari18a196b5 mempertahankan Finance/upstream; pricing/founder/struktur/produk lain tidak diubah. Validator/staged/link/public-safety/diff, separateknowledgecommit/push dan11raw-byte verification wajib; exactSHA dilaporkan setelah push. Member sourceSKIP_GITHUB/CI_NOT_RUN tetap. Next: sole Lead actual target/Owner/native/full/recovery/activation gates sesuai scope, tanpa inferensi deployment dari source publication.
+
 ## 2026-09-28 — Keuangan tiga outlet: screening ketiga dirilis, recovery aplikasi terverifikasi
 
 - `CONFIRMED`: source privat `bf57446f82dd66b2f3f4ad00799aef8757de842a` menutup implementasi teknis F01–F20. [Preview](https://keuangan-multi-outlet-preview.vercel.app) `PRODUCTION_DEPLOYED_STATIC_PREVIEW`, deployment `dpl_GazqEsiUT1DmoJEbuBdNeuTo3BwT` READY, dummy/enam role/no login/no MySQL/API503. Private authenticated Laravel/MySQL source sama `PRIVATE_STAGING_DEPLOYED`, SSH-only/synthetic.

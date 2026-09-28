@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Source terintegrasi Team: persiapan rilis, bukan aktivasi
+
+`CONFIRMED`: exact canonical commit `e6d55cc2e63e8d997873d25178698389a411a108`, tree `2102a5b1f5eb4e135e4059ee1d77da61ddc855cb`, parent `fec890334fef75340fe0c10908affd67ee46f872`, branch `codex/sagapos-team-integrated-20260928`, repository `notyourgas/sagaops`. Publikasi source oleh sole Release Lead sudah diverifikasi; klaim source belum dipush pada entri lama kini bersifat historis. `SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
+Before → after pada source preparation: helper addon terhubung ke admission/upgrade/recovery/rollback yang sama; script Owner memverifikasi sesi Owner existing sebelum menyiapkan grant, preparer mengikat schema/backup/compatibility pada kandidat dan preserved channel, durable environment/rollback mengikuti status yang terikat. Bukan pembuatan sesi/renewal atau bypass Owner. Gate finite dan source dependency/environment compatibility sudah direview. Perubahan15file Ops/test/handoff tidak mengubah SQL addon/main schema34, Cash8 WIP atau AP UI yang belum diterima.
+
+Source-focused17runner/13preparation/20retained-gate/14helper adalah grup terpisah dengan original exit0 yang ditinjau;49legacyPASS/0FAIL/4WindowsSKIP bukan mandatory full. Core3f15 dan historical PGlite/Chromium tetap receipt dengan scope asal. Review source tidak membuktikan genuine Owner signing, inherited-lock/native semantics, full schema/restore/restart/concurrency, artifact/candidate rehearsal, full/browser, activation atau authenticated UAT.
+
+Default OFF/schema NOT_INSTALLED; upgrade opt-in, rollback dan GATEWAY preservation baru diterima pada source. Runtime baselinebbd/rollback380/schema34, existing GATEWAY/reportingOFF/Order MejaDEMO tetap menurut receipt Lead; tidak ada cek health live atau mutasi production oleh sync ini. Next: exact immutable package, fresh effective Owner/capacity/lock, allocated native/full/recovery dan controlled rollout oleh satu Lead. Publikasi Git bukan deploy; tidak ada akun staf/provider/pilot/data bisnis diubah.
+
 ## 2026-09-28 — Tim & Akses: alur Owner dan staf pada kandidat source
 
 `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: exact local commit `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, tree `68cf9b46aa1732819e5cef955f0abf63bdc1b02a`, parent `c0d7cd0a23ebf7905ba8bc927f38949a853d4b90`, basis `cb06fd88e0f290996537f4b8e947055bf012ad7c`. Independent review menerima koreksi successor; parent bukan kandidat accepted final. Source/schema/dependencies Cash dan guard AP tidak diubah oleh delta koreksi. Tidak ada source push, final release integration atau deployment dari pekerjaan ini.

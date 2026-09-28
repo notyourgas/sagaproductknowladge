@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Kandidat Team terintegrasi diterima dan source dipublikasikan
+
+- `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: source kanonik `e6d55cc2e63e8d997873d25178698389a411a108`, tree `2102a5b1f5eb4e135e4059ee1d77da61ddc855cb`, parent `fec890334fef75340fe0c10908affd67ee46f872`, branch `codex/sagapos-team-integrated-20260928` pada repository `notyourgas/sagaops`. Sole Release Lead melakukan publikasi source; live branch cocok. Status local/not-pushed pada entri sebelumnya adalah histori, bukan status kandidat ini.
+- Delta15Ops/test/handoff mengintegrasikan persiapan verifikasi sesi Owner existing, native schema/recovery, pengaman admission, durable flag/environment dan rollback. GATEWAY existing dipertahankan; tidak mengganti provider. Koreksi source compatibility diterima independent QA. Source-focused runner17, preparation13, retained-gate20 dan helper14 dilaporkan terpisah; legacy49PASS/0FAIL/4WindowsSKIP, bukan full suite.
+- **Default OFF/schema NOT_INSTALLED/NOT_DEPLOYED/BUSINESS_READY=false.** Belum ada actual Owner signing, native Team/restore/restart/concurrency/full/browser/artifact/rehearsal/activation. Cash8 work-in-progress dan AP UI terpisah tidak ikut; main schema34 tetap. Baseline produksi `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`, reportingOFF/Order MejaDEMO tidak diubah oleh slice ini; bukan klaim health live baru.
+
 ## 2026-09-28 — Tim & Akses diterima pada source, belum deploy
 
 - `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: kandidat lokal `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, branch `codex/sagapos-core-team-access`, parent `c0d7cd0a23ebf7905ba8bc927f38949a853d4b90`, basis integrasi AP `cb06fd88e0f290996537f4b8e947055bf012ad7c`. Review independen menerima successor dengan koreksi bounded; source tidak dipush, digabung ke kandidat rilis final, atau dideploy oleh slice ini.
