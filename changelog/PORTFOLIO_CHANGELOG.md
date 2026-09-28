@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS: pengiriman aset Dashboard pulih
+
+- `CONFIRMED / PRODUCTION_DEPLOYED` hanya konfigurasi OPS, source `5e5bd3c660edbb4831de3d03ba96327648de603b`, apply23.27 WIB/QA independen accepted. Respons CSS/JS terputus → lima aset lengkap pada normal dan slow-read, exit0/Content-Length/hash cocok. Gudang Owner production diuji desktop1440/mobile390 setelah reload, styled/data terbaca/no page overflow/no warning/error tertangkap.
+- Runtime aplikasi `bbd4567eec1898b2dc55c6b75bc37a56374c06d3` dan rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a` tidak berubah. Backup konfigurasi/syntax/reload/pengaman runtime lulus, tanpa aplikasi restart/database/provider/pembayaran baru atau produk tetangga berubah. Rollback perbaikan tidak dieksekusi.
+- Gangguan aset POS ditutup; Member core/login dan Cash/KDS/full/business/physical UAT tetap terbuka. Tim/AP source-only tidak ikut deploy; reportingOFF/`BUSINESS_READY=false`. [SagaOPS](../products/sagaops/PRODUCT.md) memuat detail public-safe; ini bukan rilis seluruh fitur ekosistem.
+
 ## 2026-09-28 — SagaPOS Team: artifact nonproduction siap
 
 - `CONFIRMED`: exact Team source `e6d55cc2e63e8d997873d25178698389a411a108`, paket SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02` / 152555520 byte diterima lewat original natural terminal, pemeriksaan source/archive dan QA independen. Artifact pending sebelumnya tersupersesi oleh `ARTIFACT_PREPARED_NONPRODUCTION_ONLY`, bukan native atau release.

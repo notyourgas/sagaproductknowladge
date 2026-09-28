@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Tampilan Dashboard pulih melalui perbaikan ingress production
+
+- `CONFIRMED / PRODUCTION_DEPLOYED` untuk **perbaikan OPS pengiriman aset saja**: source runner `5e5bd3c660edbb4831de3d03ba96327648de603b`, diterapkan 23.27 WIB oleh satu Release Lead dan diterima QA independen. Sebelum: respons CSS/JavaScript terputus meskipun HTTP200, sehingga dashboard tampil polos. Sesudah: konfigurasi pengiriman aset terisolasi; syntax/reload, backup konfigurasi, pengaman runtime dan pemeriksaan izin lulus.
+- Verifikasi eksternal 23.29–23.30 WIB: **5/5 aset lengkap**, masing-masing cocok Content-Length dan hash, pada pembacaan normal maupun perlahan dengan exit0. CSS utama254468 byte dan JavaScript557757 byte. Gudang pada sesi Owner existing dibuka ulang di production: desktop1440 dan mobile390 tampil bergaya, data terbaca, tidak ada overflow halaman atau warning/error browser yang tertangkap. Tidak membuat transaksi atau login baru.
+- **Source aplikasi tidak berganti**: current `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`, rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`; health tetap ready, database/provider/pembayaran dan konfigurasi produk tetangga tidak berubah. Backup konfigurasi tersedia; rollback perbaikan ini tidak dieksekusi pada apply sukses. Bukti ini bukan full-suite atau UAT seluruh fitur.
+- Gangguan aset SagaPOS ditutup; pemulihan aplikasi/login Saga Member dan gate Cash/KDS tetap terpisah. Kandidat Tim/AP yang sebelumnya source-only tidak ikut dirilis; reporting tetap OFF sesuai batas aktivasi. `BUSINESS_READY=false`. Lihat [Dossier](DOSSIER.md) untuk batas bukti.
+
 ## 2026-09-28 — Paket Tim & Akses siap di nonproduction
 
 - `CONFIRMED / ARTIFACT_PREPARED_NONPRODUCTION_ONLY / IMPLEMENTED_NOT_DEPLOYED`: paket immutable untuk source `e6d55cc2e63e8d997873d25178698389a411a108`, SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02`, ukuran 152555520 byte. Release Lead membuat paket dari source/tree bersih yang terikat ke repository kanonik; pemeriksaan arsip dan review bukti aktual independen lulus. Packaging dan caller selesai normal dengan exit 0.

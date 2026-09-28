@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-28 — SagaPOS Dashboard pulih, scope OPS saja
+
+`CONFIRMED`: source runner `5e5bd3c660edbb4831de3d03ba96327648de603b` memperbaiki pengiriman aset production pada23.27 WIB. CSS/JS sebelumnya terputus walau HTTP200; sesudah apply dan QA independen, lima aset lengkap/hash cocok pada normal+slow-read dan Gudang Owner pada1440/390 setelah reload styled/data terbaca tanpa overflow halaman atau warning/error tertangkap. Status perbaikan OPS `PRODUCTION_DEPLOYED`, bukan rilis fitur baru.
+
+Current aplikasi `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`/health ready tetap. Tidak mengubah database, provider/pembayaran atau produk tetangga. Tim/AP source-only tidak ikut dirilis; Member core/login dan Cash/KDS/full/operational UAT tetap gap, reportingOFF/`BUSINESS_READY=false`. Detail di [SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-09-28 — SagaPOS Team artifact terverifikasi, akses Owner masih tertahan
 
 - `CONFIRMED / ARTIFACT_PREPARED_NONPRODUCTION_ONLY`: source Team `e6d55cc2e63e8d997873d25178698389a411a108`, paket immutable SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02`, 152555520 byte. Original packager/caller natural exit 0, canonical clean source/tree, archive validation dan scoped closure diterima independent QA. Artifact tidak lagi pending; belum native/staging/deploy.

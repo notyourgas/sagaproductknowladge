@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — Sync perbaikan ingress SagaPOS production
+
+- `CONFIRMED / accepted`: source OPS `5e5bd3c660edbb4831de3d03ba96327648de603b`, apply23.27 WIB/actual independent QA accepted, eksternal5/5 normal+slow/full-byte/hash exit0 serta genuine Owner Gudang1440/390 setelah reload styled/data/no-overflow/no warning-error. Before partial CSS/JS → after delivery dan visual reading acceptance. Scope perbaikan konfigurasi production, bukan full feature deployment.
+- Current aplikasi bbd4567eec1898b2dc55c6b75bc37a56374c06d3/rollback3804f5b5729da90f0ab63cc1c25a13d5c61acc1a ready/unchanged; no database/provider/payment/produk tetangga mutation. Backup konfigurasi tersedia, rollback tidak dieksekusi. Member core/login, Cash/KDS/full, Tim/AP activation dan business/physical UAT tetap OPEN; reportingOFF/`BUSINESS_READY=false`.
+- Delapan dokumen publik SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio/master/gaps/sync/root diperbarui pada cleanmain dengan satu writer; validator/staged/diff/public-safety/link dan commit/push terpisah diwajibkan. SHA final dilaporkan sesudah push. Tidak memuat receipt/path protected, identifier akun/perangkat, cookie atau data bisnis pengguna; pricing/founder/struktur/proyek lain tidak diubah.
+
 ## 2026-09-28 — Final readiness delta: artifact Team nonproduction
 
 - `CONFIRMED`: exact Team e6d55cc, artifact SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02`, 152555520 byte; actual terminal/clean source/archive validation/scoped closure accepted independent QA. Status ARTIFACT_PREPARED_NONPRODUCTION_ONLY mengganti artifact-pending lama, bukan native/deploy.
@@ -79,13 +85,13 @@ Status sinkronisasi: `accepted`; perubahan preview terverifikasi, batas backend 
 
 | Field | Snapshot terbaru untuk pembaruan ini |
 |---|---|
-| Waktu pembaruan terakhir | 2026-09-28, artifact Team aktual 20.31 WIB diterima QA independen; writer membaca review 20.37 WIB tanpa probe runtime baru |
+| Waktu pembaruan terakhir | 2026-09-28, OPS ingress apply 23.27 WIB; actual independent QA dan public/authenticated Gudang acceptance 23.29–23.33 WIB |
 | Branch aktif | `main` pada checkout knowledge bersih terisolasi |
 | Commit SHA terbaru | `main HEAD` — resolve hash final dari Git/GitHub setelah push |
-| Informasi terakhir disinkronkan | Team e6d55cc artifact9668e2 ARTIFACT_PREPARED_NONPRODUCTION_ONLY; Member48e9 recovery nonproduction accepted tetap; production tidak diubah |
-| Status sinkronisasi | `UP TO DATE` untuk source/package/nonprod recovery; kedua kandidat IMPLEMENTED_NOT_DEPLOYED/BUSINESS_READY=false |
+| Informasi terakhir disinkronkan | OPS source5e5bd3c pengiriman aset production diperbaiki/terverifikasi; appbbd/rollback380 unchanged. Team/Member source/package nonproduction tidak berubah menjadi feature deployment |
+| Status sinkronisasi | `UP TO DATE` untuk perbaikan OPS production dan batas source/package terdahulu; fitur source-only tetap belum deploy, BUSINESS_READY=false |
 | Konflik | Tidak ada konflik fakta source/production; kerja kotor produk lain dipertahankan |
-| Error | Tidak ada error knowledge; Team autentikasi Owner/native/full/recovery/admission dan Member production window/fresh release/UAT pending; artifact Team sudah diterima |
+| Error | Tidak ada error knowledge; Member core/login, Cash/KDS/full, Team native/recovery/admission/activation dan business UAT tetap terbuka. Existing genuine Owner sudah terverifikasi untuk repair/Gudang read-only, bukan seluruh gate kandidat |
 
 - `CONFIRMED`: independent review diterima; final invoice 16/16, combined 39/39 (overlap), embedded-PG durable 1/1, static/type 644 dan viewport 390/1440 PASS. Pembaruan 8 dokumen sumber lokal tervalidasi saja; bukan rilis atau transaksi nyata. Snapshot sebelumnya di bawah adalah riwayat, tidak menggantikan status source-only pembaruan ini.
 

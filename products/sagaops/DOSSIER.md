@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Perbaikan production pengiriman aset, bukan rilis fitur
+
+`CONFIRMED`: runner source `5e5bd3c660edbb4831de3d03ba96327648de603b` diterapkan 23.27 WIB. Kegagalan sebelumnya memutus CSS/JS meskipun HTTP200; sesudah perubahan ingress sempit, lima aset publik diterima utuh dengan Content-Length/hash identik pada pembacaan normal dan perlahan. Original caller dan kedua verifier exit0. QA independen menerima source/receipt aktual; syntax/reload dan pengaman current/rollback lulus. Backup konfigurasi tersedia dan perubahan produk tetangga dihindari; rollback branch tidak dijalankan pada apply sukses.
+
+Browser production memakai sesi Owner yang sudah sah, tanpa memasukkan credential atau membuat transaksi. Exact route `/dashboard#inventory/warehouse` dibuka dan direload: desktop1440/mobile390, tab Gudang aktif, proyeksi stok terbaca, font/style tampil, lebar dokumen tidak melampaui viewport dan tidak ada warning/error tertangkap. Ukuran browser serta halaman awal dikembalikan. Ini acceptance perbaikan tampilan dan pembacaan Gudang, bukan mutasi stok atau seluruh fitur.
+
+Status OPS `PRODUCTION_DEPLOYED`; aplikasi tetap current `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`, health ready, schema/data/pembayaran/provider unchanged. Tim/AP source-only, Cash/KDS/full acceptance, Saga Member core login, operational/physical UAT dan offsite recovery tetap belum ditutup. Reporting OFF disengaja; `BUSINESS_READY=false`. Tidak ada klaim rollback drill, pengujian semua route atau aktivasi provider baru.
+
 ## 2026-09-28 — Acceptance artifact Tim, bukan native atau production
 
 `CONFIRMED`: source `e6d55cc2e63e8d997873d25178698389a411a108`, tree `2102a5b1f5eb4e135e4059ee1d77da61ddc855cb`, kini memiliki artifact immutable 152555520 byte, SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02`. Lead memakai bundle Git genuine dengan prerequisite yang diverifikasi, source bersih dan origin kanonik. Packager serta validator arsip kandidat lulus; original caller natural exit 0, kedua stream selesai dan cleanup terbatas pada pekerjaan sendiri diterima QA independen. Reviewer menerima rantai bukti aktual, bukan download atau hash ulang arsip remote oleh writer knowledge.

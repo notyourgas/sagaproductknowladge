@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — knowledge: perbaikan aset Dashboard production
+
+- `CONFIRMED`, sumber exact published runner dan actual apply/independent QA: OPS `5e5bd3c660edbb4831de3d03ba96327648de603b`, diterapkan23.27 WIB. Partial CSS/JS dengan HTTP200 → lima aset full-byte/hash normal dan slow-read exit0. Existing genuine Owner Gudang produksi setelah reload1440/390 styled/data/no-overflow/no warning-error. Alasan: memulihkan dashboard polos dan membedakan bukti produksi dari source-only.
+- Status `PRODUCTION_DEPLOYED` khusus OPS. Aplikasi tetap bbd4567eec1898b2dc55c6b75bc37a56374c06d3/rollback3804f5b5729da90f0ab63cc1c25a13d5c61acc1a ready; no app restart/database/provider/payment atau produk tetangga changes. Backup/syntax/reload/guard accepted, rollback apply tidak dieksekusi. Member core/login, Cash/KDS/full, Tim/AP activation dan business/physical UAT tetap OPEN; reportingOFF/`BUSINESS_READY=false`.
+- Scope8file SagaOPS product/dossier/changelog, portfolio/master/gaps/sync/root. Cleanmain menjaga histori/upstream/unrelated work; satu authorized knowledge writer, validator/staged/diff/public-safety/link dan remote verification sebelum closure. Tidak mengubah pricing/founder/struktur/proyek lain atau menyalin raw receipt/PII/protected path. Knowledge SHA immutable dilaporkan setelah push terpisah.
+
 ## 2026-09-28 — knowledge: final delta artifact Tim nonproduction
 
 - `CONFIRMED`, sumber original terminal, exact source/archive validation dan independent QA: Team `e6d55cc2e63e8d997873d25178698389a411a108` memiliki paket immutable SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02`, 152555520 byte. Natural caller/packager exit 0 dan scoped closure diterima. Before artifact pending → after ARTIFACT_PREPARED_NONPRODUCTION_ONLY.

@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Gangguan aset Dashboard ditutup di production
+
+- `CONFIRMED / PRODUCTION_DEPLOYED`, OPS source `5e5bd3c660edbb4831de3d03ba96327648de603b`, apply23.27 WIB dan QA independen accepted. Sebelum CSS/JS terputus dengan HTTP200 → sesudah pengiriman aset terisolasi dan utuh. Konfigurasi memiliki backup; syntax/reload/pengaman current/rollback lulus, tanpa perubahan aplikasi/database/provider/produk tetangga.
+- Eksternal normal5/5 dan perlahan5/5 full-byte/hash exit0; authenticated Gudang Owner production desktop1440/mobile390 setelah reload tampil benar, data terbaca, tanpa overflow halaman/warning/error tertangkap. Tidak ada transaksi/login baru. Bukan penjumlahan coverage full-suite.
+- Runtime tetap `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`, ready. Ini rilis konfigurasi OPS, bukan fitur Tim/AP/Cash baru. Member core/login, Cash/KDS/full, physical/business UAT dan offsite recovery tetap terbuka; reportingOFF/`BUSINESS_READY=false`.
+- PRODUCT/DOSSIER, portfolio/master/gaps/sync/root disinkronkan dengan provenance rilis ini. Tidak ada perubahan pricing, keputusan founder, struktur knowledge atau proyek lain.
+
 ## 2026-09-28 — Artifact Tim nonproduction diterima
 
 - `CONFIRMED`, sumber original terminal packager/caller dan QA independen: exact source `e6d55cc2e63e8d997873d25178698389a411a108` memiliki paket SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02`, 152555520 byte; source/tree/origin bersih, archive validation, natural exit 0 dan scoped closure diterima.

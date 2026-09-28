@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Gap pengiriman aset POS ditutup; gap produk lain tetap
+
+- `CONFIRMED`, CLOSED pada scope sempit: source OPS `5e5bd3c660edbb4831de3d03ba96327648de603b` diterapkan23.27 WIB dan diterima independent actual QA. Full-byte/hash lima aset normal+perlahan, authenticated Gudang Owner desktop1440/mobile390 setelah reload dan style/load/no-overflow lulus. Klaim HTTP200 semata tidak dipakai sebagai acceptance.
+- Aplikasi tetap `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`/rollback `3804f5b5729da90f0ab63cc1c25a13d5c61acc1a`; tidak ada database/provider/payment baru. Backup konfigurasi tersedia, rollback apply tidak dijalankan. Bukti perbaikan ini tidak menutup native/full/recovery/activation/UAT kandidat Tim/AP/Cash, offsite recovery atau merchant/hardware/operational UAT.
+- OPEN terpisah: Saga Member recovery aplikasi/core login belum terverifikasi pulih; Cash/KDS focused failure dan full acceptance belum ditutup. Reporting OFF tetap batas aktivasi disengaja. `BUSINESS_READY=false`; tidak meminta izin ulang untuk keputusan yang sudah diberikan Andreas.
+
 ## 2026-09-28 — Artifact Team tertutup; gap autentikasi Owner tetap terbuka
 
 - `CONFIRMED`: exact Team e6d55cc artifact SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02` / 152555520 byte diterima QA independen melalui original natural exit 0 dan archive/source validation. Gap artifact-pending pada snapshot lama tersupersesi oleh ARTIFACT_PREPARED_NONPRODUCTION_ONLY.
