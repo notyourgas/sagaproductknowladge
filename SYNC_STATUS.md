@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — SagaPOS browser operational tooling tersinkron
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-operational-browser-uat-20260928`, clean pushed `3eb3774a17165671242c969b71d0edc264a5623b`. Browser 9/9, tiga restart, lima a11y state, variance Rp0; regresi relevan 20/20, check/type 634, audit 0. Delapan dokumen mencatat scope tooling dan residual integration/release/staff UAT, bukan fitur production. Live current 6ea70af/rollback f80146b; tidak deploy dalam slice ini atau membuat fakta keuangan. Knowledge `main HEAD`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS Owner production tersinkron
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: source `6ea70af5167123927b548d0fee70dd47795f56b0`, rollback f80146b, runtime/artifact/health/monitor/Owner read-only UI dan smoke tujuh surface terverifikasi. Full 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82; fresh admission/encrypted restore/rehearsal/activation PASS. Delapan dokumen disinkronkan dari exact source dan live production. Tidak ada transaksi verifikasi; KDS/HR/Member/device/offsite/business UAT tetap terpisah, `BUSINESS_READY=false`. Knowledge `main HEAD`; provenance lengkap dilaporkan setelah push.

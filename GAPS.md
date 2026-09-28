@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Browser functional acceptance lokal ditutup
+
+- `CONFIRMED`: tooling source `3eb3774a17165671242c969b71d0edc264a5623b` menghasilkan 9/9 tahap browser, tiga disk restart dan closing variance nol; focused/relevant 20/20, check/type dan audit lulus. Gap bukti browser gabungan cash dari opening hingga closing tertutup pada fixture lokal, bukan pada runtime produksi.
+- `NEEDS CONFIRMATION`: integrasi ACK 585a9fe ke current Owner 6ea70af dalam satu kandidat, full regression exact gabungan, fresh artifact/recovery/admission dan staff UAT. Tidak memerlukan keputusan bisnis tambahan untuk tooling/fix ACK; merchant QR asli, acceptance real-money, native proof kandidat dan BUSINESS_READY tetap terpisah.
+
 ## 2026-09-28 — Owner release gate ditutup, gap operasional tetap
 
 - `CONFIRMED`: Owner candidate `6ea70af5167123927b548d0fee70dd47795f56b0` telah melewati full exact 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82, effective Owner, admission, encrypted backup/restore, recovery rehearsal dan production activation. Health/source/artifact/monitor/auth dan read-only UI tiga viewport lulus. Supplier focus/save dan public catalog focus bukan lagi blocker release Owner. Tidak ada kebutuhan persetujuan deploy duplikat; scope telah diotorisasi Andreas.

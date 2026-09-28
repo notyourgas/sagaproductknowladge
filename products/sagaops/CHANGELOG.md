@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Tooling browser operasional cash tahan restart
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `3eb3774a17165671242c969b71d0edc264a5623b` menambah runner, strict acceptance test dan runbook browser cash POS/Kiosk/KDS/closing. 9/9 tahap, tiga restart, lima state a11y, dua order dan variance Rp0; regresi relevan 20/20, check/type 634, audit production 0. Tooling bukan fitur runtime baru; tidak deploy atau membuat transaksi nyata. Current 6ea70af/rollback f80146b terpisah, ACK 585a9fe belum termasuk. Integrasi/release dan staff UAT belum selesai; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Aktifkan Dashboard Owner, supplier dan PO native
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: `6ea70af5167123927b548d0fee70dd47795f56b0` aktif, rollback f80146b. Jam layanan/pause, status reporting/integrasi, daftar PO, supplier dan pembuatan PO multi-bahan kini native; supplier save/refresh dan katalog dialog focus diperbaiki. Revisi/cancel/invoice tetap Admin.

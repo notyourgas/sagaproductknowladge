@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Browser gate dari opening hingga closing cash
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact clean pushed tooling `3eb3774a17165671242c969b71d0edc264a5623b` pada branch `codex/sagapos-operational-browser-uat-20260928`, berbasis ACK source 585a9fe. Before: journey durable berbasis runtime langsung dan browser test terpisah. After: runner browser satu alur memakai server HTTP kanonik, tiga context per-role dan PGlite disk sementara milik runner. Quote, checkout, confirm, ACK, PREPARING/READY/SERVED dan closing menggunakan halaman/API nyata tanpa respons sukses mock atau force-click. Session/recovery setelah tiga restart, offline/manual refresh, negative CSRF, keyboard/touch, overflow dan axe lima state diuji.
+
+Commit bersih menghasilkan 9/9 tahap PASS, tiga restart, dua order/payment/tiket completed dan cash variance Rp0. Regresi relevan sembilan file 20 PASS / 0 FAIL / 0 SKIP; check/type 634 module dan audit dependency production 0 vulnerability. Production mode, fixture, URL atau credential caller ditolak sebelum alokasi; request eksternal diblokir, jumlah request eksternal nol. Error/receipt tooling tersanitasi dan temp DB dibersihkan. Ini validasi PGlite sintetis, bukan native-engine proof baru, uang fisik/QRIS atau UAT staff production; bukan seluruh regression project.
+
+Tool dan test tidak mengubah UI/runtime, schema, provider atau pembayaran production. Active teramati 6ea70af5167123927b548d0fee70dd47795f56b0, rollback f80146bb0bd6c67235914df2ba188cb551795b78 berasal dari lane rilis Owner, bukan deploy tooling ini. ACK 585a9fe belum ikut release itu; integrasi kandidat tunggal, full exact regression/recovery/admission dan UAT staff masih diperlukan. `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Rilis gabungan Owner dan lifecycle fokus katalog
 
 `CONFIRMED / PRODUCTION_ACTIVATED`: source `6ea70af5167123927b548d0fee70dd47795f56b0` menggabungkan tujuh perubahan Owner dengan supplier successor `73331ed` dan perbaikan fokus katalog. Before: alur jam layanan/supplier/PO berpindah ke Admin, hasil supplier dapat tertinggal, dan paired history events dapat melepas kartu pembuka setelah dialog ditutup. After: pengaturan/pembelian native, draft/error supplier konsisten, dan penutupan dialog mempertahankan node pembuka ketika filter tidak berubah. Baseline deterministic focus FAIL sebelum patch, original test dan regression sesudah PASS; grid/favorite/promo 390/1440 serta axe lima public surface lulus. Revisi/cancel/invoice masih Admin; PO tetap rencana internal tanpa penerimaan stok/pesan/payment.

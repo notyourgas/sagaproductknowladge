@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Gate browser operasional cash, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: tooling `3eb3774a17165671242c969b71d0edc264a5623b`, branch `codex/sagapos-operational-browser-uat-20260928`, menambah satu uji browser HTTP nyata dari opening shift, POS cash, assisted Kiosk, konfirmasi kasir, KDS sampai SERVED, hingga physical cash closing. Database disk sintetis terisolasi; tiga restart, sembilan tahap PASS, dua order dan selisih Rp0.
+- Regresi relevan 20/20 PASS, static/type 634 module, dependency production 0 vulnerability; lima layar a11y dan desktop/mobile/tablet lulus. Tidak ada pembayaran nyata, provider, migration atau perubahan runtime dalam slice ini. Production teramati tetap 6ea70af, rollback f80146b; fix ACK 585a9fe belum terintegrasi di runtime tersebut. Bukan full regression kandidat gabungan, authenticated production UAT atau BUSINESS_READY.
+
 ## 2026-09-28 — Dashboard Owner aktif di production
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: exact source `6ea70af5167123927b548d0fee70dd47795f56b0`, branch `codex/sagapos-owner-release-20260928`, kini aktif; rollback `f80146bb0bd6c67235914df2ba188cb551795b78`. Owner mengatur jam/jeda pesanan, membaca status reporting/integrasi yang sesuai runtime, melihat PO, mengelola supplier, dan membuat PO internal multi-bahan dari dashboard. Supplier save/refresh tersinkron dan fokus katalog tetap kembali ke kontrol pembuka. Revisi/pembatalan/invoice tetap melalui Admin.

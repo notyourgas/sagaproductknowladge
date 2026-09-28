@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Gate browser cash SagaPOS source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: clean pushed `3eb3774a17165671242c969b71d0edc264a5623b` menambah tooling browser HTTP nyata, per-role contexts dan database disk sintetis untuk opening, POS cash, assisted Kiosk, confirm, KDS SERVED dan closing. 9/9, tiga restart, lima state a11y, dua order, variance Rp0; regresi relevan 20/20, static/type 634, audit 0. Tidak mengubah production atau melakukan transaksi/provider; bukan native-engine proof baru maupun authenticated production UAT. Runtime Owner 6ea70af/rollback f80146b tetap terpisah, ACK 585a9fe perlu integrasi dan kandidat rilis baru. `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Dashboard Owner SagaPOS production
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: active `6ea70af5167123927b548d0fee70dd47795f56b0`, rollback `f80146bb0bd6c67235914df2ba188cb551795b78`. Owner mengatur jam/jeda pesanan, melihat reporting/integrasi sesuai mode runtime, mengelola supplier dan membuat PO multi-bahan langsung di Dashboard. Simpan supplier konsisten dan fokus katalog pulih; revisi/cancel/invoice masih Admin. Full 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82, artifact/admission/Owner/encrypted restore/rehearsal/activation dan read-only UI tiga viewport lulus, tanpa transaksi verifikasi. 34 migration/Gateway existing/reporting OFF/Order Meja DEMO tetap; KDS ACK dan HR source-only tidak ikut. Member expired/502/503, QRIS merchant, printer/NFC, offsite dan UAT bisnis belum selesai; `BUSINESS_READY=false`.

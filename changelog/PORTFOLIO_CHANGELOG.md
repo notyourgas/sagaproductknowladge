@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS memiliki gate browser cash terisolasi
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: tooling exact `3eb3774a17165671242c969b71d0edc264a5623b` menguji opening→POS/Kiosk cash→kasir→KDS SERVED→closing melalui browser nyata, 9/9 dengan tiga restart dan variance Rp0. Regresi relevan 20/20, check/type 634, audit 0. Tidak ada deploy/pembayaran nyata; runtime Owner 6ea70af dan rollback f80146b terpisah, ACK backend source belum terintegrasi. Bukan full kandidat gabungan atau business readiness.
+
 ## 2026-09-28 — SagaPOS Owner dashboard aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: source `6ea70af5167123927b548d0fee70dd47795f56b0` mengaktifkan pengaturan jam/jeda, status integrasi/reporting, supplier dan PO native; memperbaiki simpan supplier serta fokus katalog. Full 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82; Owner/admission/backup/restore/rehearsal/activation dan authenticated UI tiga viewport lulus. Runtime exact, rollback f80146b; tidak mengubah Gateway/34 migration atau membuat transaksi bisnis. KDS ACK/HR lokal tidak ikut, Member/device/merchant QRIS/offsite dan UAT bisnis tetap gap; `BUSINESS_READY=false`.
