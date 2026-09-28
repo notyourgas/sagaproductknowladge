@@ -22,7 +22,7 @@
 - CONFIRMED: full94 assertion1731/0/73 bukan gate PASS karena actual exitcode hilang. Native94 PASS historis; fresh full dan native guard/recovery kandidat final diperlukan. Candidatecb06 belum memiliki artifact/admission/activation. Cash closing masih source terpisah, belum commit/production; UI AP terpisah juga tidak termasuk.
 - Production bbd/rollback380/ready/schema34 diverifikasi13.42 WIB; aktivasi kode sebelumnya tetap sah. NEEDS CONFIRMATION: UAT invoice/Finance/AP/payment/stock/closing nyata, hardware/QRIS, offsite recovery, HR koordinat/staff dan Member pilot/recovery. Reporting OFF, Order Meja DEMO, BUSINESS_READY=false.
 
-## 2026-09-28 — Batas eksperimen keuangan multi-outlet
+## Histori 2026-09-28 — Batas awal keuangan (DEPRECATED snapshot)
 
 - `CONFIRMED`: preview keuangan tiga outlet sudah publik dengan data sintetis, localStorage dan role button. Login dilewati sesuai permintaan Andreas untuk eksperimen pribadi nonkomersial; tidak ada keputusan membuka data bisnis atau aktivasi backend.
 - `PROPOSAL`: tahap berikutnya Laravel/MySQL, integer rupiah/basis point, period guard dan transaksi atomik, ACL server, private storage, recovery dan76UAT. Rancangan SQL/API tersedia di source tetapi belum dijalankan pada MySQL.
