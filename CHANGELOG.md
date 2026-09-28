@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — knowledge: actual combined Cash/AP PURE18
+
+- `CONFIRMED`, sumber actual run03.06 WIB dan independent actual-result review: final `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, Cash8/AP10 =18PASS/0fail/cancel/skip/todo, exit0, Windows Node24.16. Before source preservation only → after scoped actual logika pada final candidate, clean/unchanged dan assertion asli. Histori Cash74/native8/APassembled dipertahankan; tidak disulap menjadi whole-final PASS.
+- Delapan dokumen SagaOPS/product/dossier/changelog, portfolio/master/gaps/sync/root diperbarui; pricing, founder decisions, struktur dan produk lain tidak berubah. `LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; full Linux Node22/PG/browser/recovery/production/business UAT OPEN, production unchanged oleh slice. No source/build/SSH/lease/deploy/real transaction/provider/payment mutation. Validator pre/staged, diff/public-safety dan immutable remote verification menutup separate knowledge commit/push; SHA final dilaporkan setelah push, restricted receipt/path tidak dipublikasikan.
+
 ## 2026-09-29 — knowledge: integrasi Cash15 dan native AP3 lokal
 
 - `CONFIRMED`, sumber actual clean Git/manifest/provenance integrator: lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832`, basis e6/parent AP32, exact delta Cash786. Before dua lane source → after satu kandidat dengan15/37/3 preservation, exact18path/syntax17/diff PASS. Delapan dokumen publik diperbarui; pricing/founder/struktur/produk lain tidak diubah.

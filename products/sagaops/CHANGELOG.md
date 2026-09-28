@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-29 — Actual 18 tes pure/controller kandidat final lulus
+
+`CONFIRMED`: source lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, run03.06 WIB dan review hasil independen: Cash8 + AP10, 18PASS/0fail/cancel/skip/todo, exit0, Windows Node24.16. Before provenance-only → after actual scoped logic validation pada final candidate; source clean/unchanged, assertion asli. Bukan rerun historis74/native8, whole-file/full, PG/browser/Linux Node22/recovery/UAT. `LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; production/provider/payment/data tidak dimutasi. Delapan dokumen knowledge terkait disinkronkan terpisah; gate rilis final tetap terbuka.
+
 ## 2026-09-29 — Source Cash15 + AP3 digabung, production tidak berubah
 
 `CONFIRMED / LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832`, basis e6/parent AP32, menerima delta Cash786. Actual preservation15/37/3, exact18path dan syntax17/diff PASS. Cash74/native8 accepted pada snapshot historis; satu fixture hanya EOF-normalized dan14 lainnya identik, bukan whole-final functional PASS. AP evidence tetap terpisah; full/browser/WebKit/native/recovery/Owner/business UAT final OPEN. No source push/CI/deploy/VPS/data/provider/payment mutation; `BUSINESS_READY=false`.

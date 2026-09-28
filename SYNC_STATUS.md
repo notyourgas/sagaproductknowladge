@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Sync actual PURE18 final Cash/AP
+
+- `CONFIRMED / accepted` untuk hasil terarah: source `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, actual03.06 WIB Cash8/AP10, 18PASS/exit0/nol fail-cancel-skip-todo, Windows Node24.16; review hasil independen diterima, clean source unchanged. Before provenance-only → after actual scoped logic validation; bukti historis tidak ditulis ulang menjadi final full PASS.
+- Delapan dokumen knowledge disinkronkan oleh satu writer pada clean main; pre/staged validator, diff/public-safety dan separate commit/push serta immutable remote verification wajib. Source GitHub/CI dilewati; no source/build/SSH/lease/deploy/data/provider/payment mutation. PG/browser/full/Linux/native recovery/production/business UAT OPEN; `LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. SHA knowledge dilaporkan setelah push.
+
 ## 2026-09-29 — Sync kandidat gabungan Cash/AP source-only
 
 - `CONFIRMED`: source lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, basis e6/parent AP32, Cash786 delta15. Preservation actual15/37/3, exact18path, syntax17/diff PASS; `LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`.

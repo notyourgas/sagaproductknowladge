@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-29 — Tes logika kandidat gabungan: 18/18, belum deploy
+
+- `CONFIRMED / LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: pada 03.06 WIB, kandidat `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39` menjalankan delapan kasus pure Cash dan sepuluh controller AP: 18 PASS, nol gagal/cancel/skip/todo, exit0. Ini run aktual pada kandidat final, bukan gabungan bukti historis. Review hasil independen menerima cakupan tersebut.
+- Run terfilter dengan judul tepat, concurrency4, assertion/body/timeout asli; Windows Node24.16, bukan Linux Node22. Source tetap bersih dan tidak berubah. Hanya cakupan logika ini yang kini tertutup; bukti Cash74/native8 dan AP lintas run sebelumnya tetap historis.
+- Tidak menjalankan PostgreSQL, browser, full regression, recovery atau UAT; tidak mengubah source, production, transaksi atau provider/payment. Gate rilis final tetap terbuka, `CI_NOT_RUN / BUSINESS_READY=false`. Riwayat di bawah merupakan snapshot sebelum run terarah ini.
+
 ## 2026-09-29 — Cash dan AP terintegrasi pada source lokal, belum rilis
 
 - `CONFIRMED / LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: kandidat lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832`, tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, parent AP `32b534b759d381438d5a5be29c59575f4192f124`, basis e6d55cc. Delta Cash `786df1ebca43ee85052252df90f974196c4ae3ce` yang berisi 15 file digabung tanpa konflik. Pemeriksaan aktual: 15/15 file Cash cocok dengan manifest, 37/37 file Owner/AP/HR/Team basis dan 3/3 file AP utuh; tepat 18 file berbeda dari e6 dan syntax17/diff check lulus.

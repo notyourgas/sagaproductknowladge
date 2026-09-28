@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-29 — SagaPOS: hasil aktual logika Cash/AP kandidat gabungan
+
+`CONFIRMED`: kandidat lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` pada03.06 WIB lulus 18/18 kasus pure/controller (Cash8/AP10), exit0 dan review hasil independen diterima. Ini bukti aktual final source yang clean/unchanged, bukan penjumlahan run lama; Windows Node24.16, bukan target Linux Node22. `LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Database/browser/full/recovery/production/business UAT tetap terbuka; tidak ada source push, deploy atau bisnis/provider/payment mutation. Member dan produk lain tidak berubah oleh slice ini.
+
 ## 2026-09-29 — SagaPOS: integrasi source Cash dan AP lokal
 
 `CONFIRMED`: `7d9aaeed57f2dc30ff89c7cd699d917f59889832` menggabungkan Cash15 dan AP3 pada basis e6 dengan actual15/37/3 file preservation, delta18/syntax17/diff PASS. Status `LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`. Cash74/native8 historis dan AP bukti terarah tidak dipromosikan menjadi whole-final test; Cash hanya EOF-normalized satu fixture. Final full/browser/native/recovery/production/business gate OPEN, no source push/CI atau production/data/provider/payment mutation. Produk lain dan Member recovery tidak berubah oleh integrasi ini.

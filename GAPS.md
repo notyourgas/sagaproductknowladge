@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Gap tes logika final Cash/AP tertutup terbatas
+
+- `CONFIRMED`: exact final `7d9aaeed57f2dc30ff89c7cd699d917f59889832` mempunyai run aktual03.06 WIB 18/18PASS (Cashpure8/APcontroller10), exit0 dan review hasil independen; clean/unchanged, Windows Node24.16. Gap tanpa tes logika pada kandidat final kini tertutup untuk subset ini saja; snapshot historis di bawah dipertahankan.
+- OPEN: seluruh regression pada Linux Node22, PostgreSQL/native, browser/WebKit/operator, backup/recovery/admission/preflight dan production/business UAT. Nol skip pada run terfilter tidak berarti semua tes dua file dijalankan. Bukti Cash74/native8/APassembled tetap historis; Member terpisah. `IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; source/production/data/provider/payment tidak dimutasi.
+
 ## 2026-09-29 — Gap integrasi source Cash/AP ditutup, acceptance final masih terbuka
 
 - `CONFIRMED`: clean lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` menggabungkan exact Cash15 + AP3 dan mempertahankan37 basis e6, tanpa overlap. Manifest/blob/raw hash, syntax17 dan diff check PASS. `LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`.

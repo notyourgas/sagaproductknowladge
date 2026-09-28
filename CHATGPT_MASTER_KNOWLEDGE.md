@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — SagaPOS Cash/AP: actual scoped final-candidate validation
+
+- `CONFIRMED`: final lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39` memiliki run aktual03.06 WIB, Cashpure8 + APcontroller10, 18PASS/0fail/cancel/skip/todo/exit0. Review hasil independen menerima subset ini; source clean/unchanged dan assertion/body/timeout tidak diubah. Ini memperbarui snapshot provenance-only di bawah hanya untuk logika terarah.
+- Windows Node24.16, bukan Linux Node22; tidak mencakup PG/browser/full/native recovery/Owner/business UAT atau rerun historisCash74/native8. `LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. No source push/deploy/real transaction/provider/payment mutation; recovery Member tetap lane terpisah.
+
 ## 2026-09-29 — SagaPOS Cash/AP: kandidat source gabungan, belum deploy
 
 `CONFIRMED / LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832`, tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, basis e6/parent AP32, Cash delta `786df1ebca43ee85052252df90f974196c4ae3ce`. Actual Cash15 cocok manifest, Owner37 dan AP3 utuh; exact18path, syntax17/diff PASS. Perbaikan immutable closing/payment/refund ordering dan native AP berada dalam satu source, tetapi tidak mengaktifkan provider atau pembayaran nyata.

@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-29 — Actual combined PURE18, cakupan terarah saja
+
+`CONFIRMED`: sebelum hanya integritas source final yang diterima, sesudah kandidat `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39` memiliki run aktual pure/controller 18/18 PASS pada 03.06 WIB. Delapan Cash dan sepuluh AP dipilih melalui exact-title filter, concurrency4, tanpa perubahan body/assertion/timeout. Natural exit0, nol fail/cancel/skip/todo, stderr kosong; Windows Node24.16 saja. Review independen membaca hasil/TAP lengkap dan memverifikasi clean HEAD/tree, bukan menjalankan ulang tes. Digest source sebelum/sesudah sama menurut receipt producer; seluruh manifest tidak diregenerasi oleh reviewer.
+
+Kasus Cash mencakup immutability CLOSED/APPROVED, konflik, scope, replay dan recovery; AP mencakup coverage invoice, role/Finance/versi, proof POSTED, ACK/replay dan perubahan sesi. Tidak membuktikan persistence PostgreSQL, urutan transaksi target, browser/auth operator atau seluruh tes dalam kedua file. Bukti historis Cash74/native8 serta AP assembled tetap terpisah. Full Linux Node22/native/browser/WebKit/recovery/backup/admission/preflight dan production/business UAT masih OPEN; `LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Tidak ada source edit/push, build, SSH, deploy atau bisnis/provider/payment mutation dari run dan sinkronisasi ini. Snapshot di bawah tidak dihapus.
+
 ## 2026-09-29 — Integrasi provenance Cash15 dan AP3
 
 `CONFIRMED / LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, parent AP32, mempertahankan basis e6d55cc. Hanya delta15 Cash dari `786df1ebca43ee85052252df90f974196c4ae3ce` digabung; parent author Cash yang lebih tua tidak digunakan sebagai basis integrasi. Ketiga kelompok tidak beririsan: actual Git blob/hash Cash15 sesuai manifest, semua37 perubahan basis tetap, AP3 identik. Exact delta18, syntax17 dan diff check lulus; clean local commit, no source push/PR/CI.
