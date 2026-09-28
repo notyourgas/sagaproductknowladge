@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Kontrak helper recovery Tim & Akses diterima pada source
+
+- `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: helper successor `fec890334fef75340fe0c10908affd67ee46f872`, parent `07ac7e0cce89d54ff188bf193e186db325838d6d`, independent source QA. Persiapan rehearsal fresh kini memakai katalog SQL kanonik dan pemeriksaan preservasi data dasar/akun/audit; gap recovery bounded ditutup **pada source**, bukan native engine.
+- 14 pure/injected contract tests PASS, actual process/caller exit0; AST/diff/scope/freeze PASS. Menggantikan10 helper tests lama; core3f15/historical browser/PGlite tidak direrun atau dijumlahkan. Native/full/schema compatibility/restore/restart/concurrency/effective Owner/exact candidate tetap OPEN.
+- Default OFF/schema NOT_INSTALLED/NOT_DEPLOYED/BUSINESS_READY=false. Production HTTPS28September18.39.02 WIB tetap `bbd4567eec1898b2dc55c6b75bc37a56374c06d3` ready/schema34. Tidak ada source push, CI/PR, schema/akun/provider/pilot/runtime mutation. Next: clean candidate/caller integration dan allocated native acceptance melalui sole Release Lead. PRODUCT/DOSSIER/changelog portfolio-root/master/gaps/sync diperbarui, tanpa perubahan keputusan founder/pricing/struktur/produk lain.
+
 ## 2026-09-28 — Tim & Akses custom role/account, source-only
 
 - `CONFIRMED`: exact local source `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, parent `c0d7cd0a23ebf7905ba8bc927f38949a853d4b90`, basis `cb06fd88e0f290996537f4b8e947055bf012ad7c`; sumber frozen commit, tes lokal dan review independen. `SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
