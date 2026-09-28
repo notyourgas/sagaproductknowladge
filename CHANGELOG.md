@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — knowledge(sagaops): draft Pengaturan Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; source `f6038f37d0483b494994b694c170d6d0847b01cc`. Memperbarui 7 dokumen untuk draft/pristine jam layanan, pending/conflict/error/logout dan refresh/batal eksplisit berdasarkan source dan tes 19/19 serta 31 PASS / 1 host SKIP. Current 6ea70af/rollback f80146b tidak berubah. Exact candidate gates masih pending; BUSINESS_READY=false. Knowledge main HEAD diverifikasi sesudah push, tanpa credential/PII/receipt privat.
+
 ## 2026-09-28 — SagaPOS browser gate operasional cash source-only
 
 - `CONFIRMED`: source `3eb3774a17165671242c969b71d0edc264a5623b` menambah tooling/test/runbook untuk menutup gap bukti browser gabungan opening→cash POS/Kiosk→KDS→closing/restart. Area: SagaOPS product/dossier/changelog, portfolio, master, gaps dan sync. 9/9 tahap, tiga restart, lima a11y state, variance Rp0; regresi relevan 20/20, check/type 634, audit production 0. Bukan full project regression, native proof baru atau authenticated production UAT.

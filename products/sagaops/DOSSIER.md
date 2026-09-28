@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Pengaturan Owner: draft dan konfirmasi simpan
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`, source `f6038f37d0483b494994b694c170d6d0847b01cc`, branch `codex/sagapos-owner-hours-sync-20260928`. Masalah direproduksi: draft pesanan terakhir hilang saat berpindah halaman. Setelah perbaikan, draft dipertahankan dalam sesi, versi awal tetap terikat, pending membekukan kontrol, status ditulis ke form aktif, dan sukses menunggu snapshot authoritative. Form untouched mengikuti pengaturan baru dari sesi lain, tidak membuat draft lama secara otomatis.
+- Tombol refresh eksplisit memungkinkan tinjau ulang setelah konflik. Ringkasan jam/terima pesanan/batas jam yang berlaku dibedakan dari draft. Hasil simpan tidak pasti tidak dikirim ulang otomatis; berhasil-simpan/gagal-refresh tidak dinyatakan sebagai gagal menulis. Logout membersihkan draft dan respons lama diabaikan. Batal hanya menghapus perubahan lokal, bukan pengaturan server.
+- Tujuh tes khusus, dua viewport, axe tanpa serious/critical; suite API/katalog/settings 19/19 dan dashboard/kasir/katalog 31 PASS / 1 Firefox-host SKIP. Syntax/diff dan static/type lulus. 34 migration, existing Gateway, role dan business-data boundary tidak berubah. Ini source-only; runtime masih 6ea70af/rollback f80146b. Kandidat menunggu full exact-source release gates; KDS lane terpisah dan tidak otomatis termasuk.
+
 ## 2026-09-28 — Browser gate dari opening hingga closing cash
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact clean pushed tooling `3eb3774a17165671242c969b71d0edc264a5623b` pada branch `codex/sagapos-operational-browser-uat-20260928`, berbasis ACK source 585a9fe. Before: journey durable berbasis runtime langsung dan browser test terpisah. After: runner browser satu alur memakai server HTTP kanonik, tiga context per-role dan PGlite disk sementara milik runner. Quote, checkout, confirm, ACK, PREPARING/READY/SERVED dan closing menggunakan halaman/API nyata tanpa respons sukses mock atau force-click. Session/recovery setelah tiga restart, offline/manual refresh, negative CSRF, keyboard/touch, overflow dan axe lima state diuji.

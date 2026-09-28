@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Draft Pengaturan SagaPOS, belum rilis
+
+- `CONFIRMED`: source-only `f6038f37d0483b494994b694c170d6d0847b01cc` menjaga draft jam layanan pada refresh/pindah modul, membedakan form pristine dan draft, mengunci pending, membedakan hasil simpan dan refresh, serta mempertahankan konflik versi dan logout boundary. Suite 19/19 dan 31 PASS / 1 Firefox host SKIP; tidak mengubah provider/schema/transaksi nyata. Current production 6ea70af/rollback f80146b; full candidate/recovery/Owner gates berikutnya masih pending, BUSINESS_READY=false.
+
 ## Update 2026-09-28 — Gate browser cash SagaPOS source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: clean pushed `3eb3774a17165671242c969b71d0edc264a5623b` menambah tooling browser HTTP nyata, per-role contexts dan database disk sintetis untuk opening, POS cash, assisted Kiosk, confirm, KDS SERVED dan closing. 9/9, tiga restart, lima state a11y, dua order, variance Rp0; regresi relevan 20/20, static/type 634, audit 0. Tidak mengubah production atau melakukan transaksi/provider; bukan native-engine proof baru maupun authenticated production UAT. Runtime Owner 6ea70af/rollback f80146b tetap terpisah, ACK 585a9fe perlu integrasi dan kandidat rilis baru. `BUSINESS_READY=false`.

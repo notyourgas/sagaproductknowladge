@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS draft Pengaturan Owner, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `f6038f37d0483b494994b694c170d6d0847b01cc`, berbasis 6ea70af, memperbaiki draft/pristine jam layanan, pending/conflict/error/logout dan refresh/batal eksplisit. Tes terkait 19/19 serta 31 PASS / 1 host SKIP; tidak ada perubahan production atau data bisnis. Release Lead menyiapkan review/full gate kandidat; current 6ea70af/rollback f80146b, BUSINESS_READY=false.
+
 ## 2026-09-28 — SagaPOS memiliki gate browser cash terisolasi
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: tooling exact `3eb3774a17165671242c969b71d0edc264a5623b` menguji opening→POS/Kiosk cash→kasir→KDS SERVED→closing melalui browser nyata, 9/9 dengan tiga restart dan variance Rp0. Regresi relevan 20/20, check/type 634, audit 0. Tidak ada deploy/pembayaran nyata; runtime Owner 6ea70af dan rollback f80146b terpisah, ACK backend source belum terintegrasi. Bukan full kandidat gabungan atau business readiness.

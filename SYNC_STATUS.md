@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — Pengaturan Owner source-only
+
+- `CONFIRMED`: source `f6038f37d0483b494994b694c170d6d0847b01cc`, branch `codex/sagapos-owner-hours-sync-20260928`, dokumentasi draft/pristine/pending/error/recovery jam layanan disinkronkan ke product/dossier/changelog/portfolio/master/root. Source pushed; production tidak berubah (6ea70af/rollback f80146b); review/Release Lead gate pending. Knowledge validator/link/public-safety dan main SHA diverifikasi setelah commit. BUSINESS_READY=false.
+
 ## 2026-09-28 — SagaPOS browser operational tooling tersinkron
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-operational-browser-uat-20260928`, clean pushed `3eb3774a17165671242c969b71d0edc264a5623b`. Browser 9/9, tiga restart, lima a11y state, variance Rp0; regresi relevan 20/20, check/type 634, audit 0. Delapan dokumen mencatat scope tooling dan residual integration/release/staff UAT, bukan fitur production. Live current 6ea70af/rollback f80146b; tidak deploy dalam slice ini atau membuat fakta keuangan. Knowledge `main HEAD`, `BUSINESS_READY=false`.

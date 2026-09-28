@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Draft jam layanan Owner aman, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source `f6038f37d0483b494994b694c170d6d0847b01cc`, branch `codex/sagapos-owner-hours-sync-20260928`, berbasis runtime `6ea70af`. Draft jam layanan/terima pesanan tetap ada saat refresh dan pindah modul selama sesi; form yang belum diedit mengikuti data server terbaru tanpa draft semu. Form terkunci saat simpan, menunggu data server terbaru, dan menyediakan **Perbarui data** serta **Batalkan perubahan** dengan ringkasan pengaturan yang sedang berlaku.
+- Konflik antar-sesi tidak mengubah versi draft secara diam-diam. Koneksi tidak pasti atau simpan berhasil tetapi refresh gagal meminta pemeriksaan ulang, bukan POST otomatis. Respons terlambat setelah logout tidak menghidupkan sesi kembali. Owner/CSRF/origin/version/validasi server tetap berlaku; tidak ada perubahan schema/provider atau transaksi nyata.
+- Tujuh tes khusus mencakup desktop 1440/mobile 390, aksesibilitas, draft/pristine/pending/conflict/error/logout dan batas API. Suite terkait 19/19 lulus; regresi dashboard/kasir/katalog 31 PASS / 1 Firefox-host SKIP; syntax/diff dan static/type lulus, 34 migration tetap. Production masih `6ea70af5167123927b548d0fee70dd47795f56b0`, rollback `f80146bb0bd6c67235914df2ba188cb551795b78`; kandidat baru menunggu review dan full regression/artifact/recovery/Owner dari Release Lead, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Gate browser operasional cash, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: tooling `3eb3774a17165671242c969b71d0edc264a5623b`, branch `codex/sagapos-operational-browser-uat-20260928`, menambah satu uji browser HTTP nyata dari opening shift, POS cash, assisted Kiosk, konfirmasi kasir, KDS sampai SERVED, hingga physical cash closing. Database disk sintetis terisolasi; tiga restart, sembilan tahap PASS, dua order dan selisih Rp0.

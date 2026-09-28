@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Pengaturan jam layanan: draft, pending dan recovery pesan
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `f6038f37d0483b494994b694c170d6d0847b01cc` pada `codex/sagapos-owner-hours-sync-20260928`, berbasis 6ea70af. Tiga file source/test: operator UI, scoped status CSS, browser/API settings regression. Draft tetap ada; form pristine mengikuti server; kontrol pending terkunci; refresh/batal eksplisit, basis server terlihat, konflik dan hasil tidak pasti tidak ditutupi.
+- Suite 19/19 dan 31 PASS / 1 Firefox-host SKIP; axe dua viewport, syntax/diff dan static/type lulus. Production tetap 6ea70af, rollback f80146b. Review/full regression/artifact/recovery/Owner Release Lead belum selesai; BUSINESS_READY=false. Tidak ada perubahan provider/migration/transaksi nyata.
+
 ## 2026-09-28 — Tooling browser operasional cash tahan restart
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `3eb3774a17165671242c969b71d0edc264a5623b` menambah runner, strict acceptance test dan runbook browser cash POS/Kiosk/KDS/closing. 9/9 tahap, tiga restart, lima state a11y, dua order dan variance Rp0; regresi relevan 20/20, check/type 634, audit production 0. Tooling bukan fitur runtime baru; tidak deploy atau membuat transaksi nyata. Current 6ea70af/rollback f80146b terpisah, ACK 585a9fe belum termasuk. Integrasi/release dan staff UAT belum selesai; `BUSINESS_READY=false`.
