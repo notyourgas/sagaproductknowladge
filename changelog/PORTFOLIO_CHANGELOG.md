@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS menutup bug sinkronisasi supplier di source
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` menjaga input/draft supplier, menunggu hasil simpan dan data terbaru, serta menambah refresh di modal. Tes lokal terfokus dan dua viewport lulus; production tetap f80146b. Kandidat Owner memerlukan full regression, artifact/recovery baru dan Owner proof sebelum aktivasi; tidak ada perubahan stok/payment, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS mengisolasi blocker operasional cash/KDS
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source tooling `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` menyediakan uji gabungan POS/Kiosk cash yang berhenti pada kegagalan acknowledge durable. 8 check lulus, 1 gagal, 4 belum berjalan; tidak ada transaksi nyata atau deploy. 40 tes reporting/regresi relevan lulus tidak menggantikan hasil alur FAIL. Kontrak persistence/status dan release masih terbuka, `BUSINESS_READY=false`.

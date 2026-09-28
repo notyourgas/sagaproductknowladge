@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Perbaiki fokus dan sinkronisasi supplier Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: commit `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` pada kandidat gabungan c5db471 memperbaiki input focus, draft pending, hasil simpan/refresh dan batas sesi dialog supplier. Sebelum: nilai input atau hasil yang dibaca dapat tertinggal. Sesudah: hasil sukses menunggu data terbaru; refresh tersedia langsung dalam modal dan kegagalan tetap menyimpan draft.
+- Validasi lokal 18/18 dashboard/kasir, 51/51 supplier/data/API, 8/8 HTTP PO, syntax/diff/check/type lulus. Tidak mengubah migration/provider/payment atau production f80146b; full regression dan candidate-bound recovery/Owner masih gate terbuka, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Diagnosis cash/KDS dapat diulang tanpa data production
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` menambah harness lokal dan fixture editable development/test. Alur 8 PASS / 1 FAIL acknowledge durable / 4 NOT_RUN; output tersanitasi dan nonzero. 40 tes reporting/regresi relevan serta check/type dan dependency lulus, bukan bukti acceptance operasional. Production tidak berubah; perbaikan status/release gate masih diperlukan, `BUSINESS_READY=false`.

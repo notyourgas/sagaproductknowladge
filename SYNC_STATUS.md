@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — SagaPOS supplier sync source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-owner-supplier-sync-20260928`, exact pushed `73331ed9f8ad88975a4406ddd52a11a5c6ff8458`, parent gabungan c5db471. Root source ter-commit; perubahan screenshot evidence tidak dimasukkan artifact/source. Tes lokal 18/18, 51/51 dan 8/8 HTTP PO lulus, check/type/diff lulus. Release Lead memegang full regression dan gate kandidat successor; production f80146b/rollback b4e79a0 tidak berubah. Knowledge `main HEAD`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS diagnostik alur cash source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source clean/pushed `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` pada `codex/sagapos-manual-operations-uat-20260928`. Reporting tool/regresi relevan 40/40 dan check/type 628 lulus; acceptance operasional 8 PASS / 1 FAIL acknowledge durable / 4 NOT_RUN. Tidak ada deploy/transaksi/migrasi. Active `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; knowledge `main HEAD`, `BUSINESS_READY=false`.

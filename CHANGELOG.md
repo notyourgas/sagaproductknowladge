@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS supplier save/focus diperbaiki di source
+
+- `CONFIRMED`: source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` menutup bug fokus dan sinkronisasi dialog supplier, menambah refresh dalam modal, serta menjaga draft/error/batas sesi. Area: SagaOPS product/dossier/changelog, portfolio, master dan sync. Tes lokal 18/18 dashboard/kasir, 51/51 supplier/data/API dan 8/8 HTTP PO lulus; check/type/diff lulus.
+- Production tetap f80146b, rollback b4e79a0; tidak ada mutasi bisnis atau provider. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; successor candidate masih memerlukan full regression, artifact/recovery dan Owner admission. Knowledge `main HEAD`.
+
 ## 2026-09-28 — SagaPOS blocker alur cash/KDS diisolasi, bukan ditutup
 
 - `CONFIRMED`: source `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` menambah tooling/fixture development-test untuk uji cash operasional yang dapat diulang. Area: product/dossier/changelog SagaOPS, portfolio, master, gaps dan sync. Reporting tool/regresi 40/40, check/type 628, production dependency 0 vulnerability; hasil journey tetap 8 PASS / 1 FAIL / 4 NOT_RUN dengan exit nonzero.

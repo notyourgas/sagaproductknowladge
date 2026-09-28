@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Sinkronisasi supplier SagaPOS Owner
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` memperbaiki fokus dan lifecycle dialog supplier pada kandidat gabungan Owner/kasir c5db471. Simpan menunggu data terbaru; draft dan error tetap terlihat; refresh berada di dalam modal dan sesi logout tidak dihidupkan oleh respons terlambat. Validasi lokal 18/18 dashboard/kasir, 51/51 supplier/data/API serta 8/8 HTTP PO lulus. Production masih f80146b, bukan release Owner baru. Full regression/recovery/Owner admission belum selesai; tidak mengubah schema/provider/payment dan tidak menyatakan `BUSINESS_READY`.
+
 ## Update 2026-09-28 — Blocker cash/KDS SagaPOS terisolasi
 
 - `CONFIRMED`: harness source-only `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` memakai database lokal sintetis; 8 check sebelum acknowledge KDS durable lulus, acknowledge gagal, 4 gate berikutnya NOT_RUN. Perlu perbaikan kontrak status persistence dalam kandidat terkoordinasi. 40 tes reporting/regresi relevan lulus bukan PASS alur operasional. Production tetap `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; pembayaran/provider/schema tidak diubah, `BUSINESS_READY=false`.

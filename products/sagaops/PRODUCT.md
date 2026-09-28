@@ -1,5 +1,10 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Simpan supplier tersinkron, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458`, branch `codex/sagapos-owner-supplier-sync-20260928`, memperbaiki fokus input dan penyimpanan supplier pada kandidat gabungan Owner/kasir `c5db471`. Form menahan perubahan selama simpan, menunggu snapshot terbaru sebelum menyatakan berhasil, dan menyediakan tombol **Perbarui data** di dalam dialog tanpa membuang draft.
+- Browser 390/1440 menguji respons tertahan, konflik, gagal simpan setelah render, simpan berhasil tetapi refresh gagal, serta respons terlambat setelah logout. Tes terkait 18/18 dashboard/kasir dan 51/51 supplier/data/API lulus; audit HTTP PO 8/8, check/type lulus. Ini validasi lokal, bukan full regression atau authenticated production UAT. Production tetap `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; artifact/recovery kandidat baru dan Owner admission masih diperlukan, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Gate diagnostik operasional cash, belum tuntas
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `986c8cb484cfcd8eac565dd7ebc6a383a83a0615`, branch `codex/sagapos-manual-operations-uat-20260928`, menambah harness development/test untuk satu alur POS cash dan Kiosk cash, restart, KDS, dan closing shift. Tidak mengubah runtime, schema atau pembayaran production.
