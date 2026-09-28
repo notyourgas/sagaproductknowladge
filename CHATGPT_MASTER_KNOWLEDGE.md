@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-28 — Keuangan tiga outlet: screening ketiga dirilis, recovery aplikasi terverifikasi
+
+- `CONFIRMED`: source privat `bf57446f82dd66b2f3f4ad00799aef8757de842a` menutup implementasi teknis F01–F20. [Preview](https://keuangan-multi-outlet-preview.vercel.app) `PRODUCTION_DEPLOYED_STATIC_PREVIEW`, deployment `dpl_GazqEsiUT1DmoJEbuBdNeuTo3BwT` READY, dummy/enam role/no login/no MySQL/API503. Private authenticated Laravel/MySQL source sama `PRIVATE_STAGING_DEPLOYED`, SSH-only/synthetic.
+- Native150/1.817/Pint73, frontend91, browser29+21+21 dan actual integration5 PASS; source/hash terikat. Frozen export mengecek ulang role/scope setelah downgrade. Runtime delapan CSV/PDF authenticated/hash, gold totals dan selisih-nol/retry canary lulus tanpa perubahan saldo. Annual1095 readmodel kandidat sebelumnya dibawa dengan tree identik, bukan1095 writer/closing atau SLA; browser live eksternal belum diverifikasi.
+- Windows encrypted recovery dependency PASS; PITR2detik; transfer+application recovery26,624detik (remote restore10), login Owner/report dan fingerprint lulus. Tidak restore database live atau provisioning OS/VPS baru. Rollback schema/contract3 identik dan kembali PASS; writer2 ditolak. Monitor nol alert/outbox0; task offsite Windows5menit hasil0. Retensi14hari dry-run tanpa deletion.
+- `BUSINESS_READY=false`: 76humanUAT PENDING/sign-off0; master/saldo/tarif/pajak nyata, perangkat, parallel run, provisioning host baru dan SLA recovery nyata pending. Windows~337MiB (<rekomendasi2GiB), custody key terpisah/pertumbuhan seminggu pending. Hosted CI36425055930/36425055937 billing/spending-blocked sebelum job mulai; bukan PASS. Tidak ada pembelian, aktivasi API publik/TLS/DNS, data bisnis nyata atau perubahan pricing/trial.
+- Detail kanonik: [SagaDevs PRODUCT](products/sagadevs/PRODUCT.md). Snapshot screening kedua di bawah ditandai histori; source dan runtime terbaru28September2026 terverifikasi.
+
 ## 2026-09-28 — SagaPOS Tim & Akses source accepted, belum live
 
 - `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: local source `3f5a37d5729b8913a402c1f5eeb7a1fc139b53b4`, parentc0d7/basiscb06. Owner flow kandidat **Pengaturan → Tim & Akses** mencakup role custom/action matrix, preview navigasi, akun staf/assignment role-outlet, reset/nonaktifkan dan audit. Izin diperiksa server, Owner sistem terlindungi, perubahan akses memakai reauthentication/alasan/CAS. Satu outlet aktif tidak berubah.
@@ -9,7 +17,7 @@
 
 - `CONFIRMED`, helper recovery tambahan accepted source-only `fec890334fef75340fe0c10908affd67ee46f872` (parent07ac): kontrak rehearsal fresh dengan katalog SQL approved yang independen dan preservasi data dasar/akun/audit. 14 pure/injected tests actual exit0/AST/diff/scope PASS, bukan native/full/restore/rollback; core15 tetap terpisah. Default OFF/schema NOT_INSTALLED/IMPLEMENTED_NOT_DEPLOYED/BUSINESS_READY=false. HTTPS28September18.39.02 WIB POS tetap ready/schema34/source `bbd4567eec1898b2dc55c6b75bc37a56374c06d3`; native/restart/concurrency/Owner/exact-candidate recovery dan rollout masih pending.
 
-## 2026-09-28 — Keuangan tiga outlet: workflow operator dan recovery Windows
+## Histori 2026-09-28 — Screening kedua keuangan tiga outlet (DEPRECATED snapshot)
 
 - `CONFIRMED`: implementasi screening kedua dipush pada source privat `ee2d56701482620258813f1c6305267718bb6de5`. Preview https://keuangan-multi-outlet-preview.vercel.app sudah `PRODUCTION_DEPLOYED_STATIC_PREVIEW`, deployment `dpl_GHAXKvDF4XwLHQ5rqTWXH8iAd3uK` Ready. Tujuh file cocok checksum. Dummy, enam tombol role, tanpa login dan API publik503 tetap sesuai eksperimen pribadi nonkomersial. Rollback artifact publik sebelumnya tersedia.
 - `CONFIRMED / PRIVATE_STAGING_DEPLOYED`: Laravel/MySQL dan console sintetis privat memakai source yang sama. Sembilan file console cocok checksum runtime; autentikasi dan izin berasal dari server. Mutasi terotorisasi ulang setelah menunggu group lock, termasuk perubahan user/staf/task; sesi yang dicabut, dipindah atau diganti token ditolak. Akses privat melalui SSH; Hostinger/API publik/TLS/DNS belum diaktifkan.
