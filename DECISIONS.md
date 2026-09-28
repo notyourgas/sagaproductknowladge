@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-216 — Backup offsite ke komputer Windows pemilik
+
+- Tanggal: 2026-09-28. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: tujuan backup otomatis di luar VPS adalah komputer Windows yang sedang digunakan Andreas, sebagai bagian strategi dashboard keuangan tiga outlet.
+- Alasan: memakai perangkat yang sudah tersedia untuk salinan pemulihan terenkripsi.
+- Dampak: penarikan DB/berkas/increment terenkripsi dan verifikasi checksum dijadwalkan setiap lima menit dalam sesi pemilik. Kunci disimpan terpisah dengan ACL pemilik. Ketika komputer offline/logout atau SSH gagal, backup lokal tetap berjalan dan offsite ditandai terlambat; ini bukan jaminan offsite saat komputer mati.
+- Batas: tidak mengizinkan penghapusan ledger/backup, membuka API publik, data bisnis nyata, perubahan DNS, pembelian storage atau pesan customer. DEC-214/215 dan BUSINESS_READY=false tetap berlaku; RPO/RTO nyata serta UAT pengelola masih gate aktivasi.
+- Terkait: [SagaDevs](products/sagadevs/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md).
+
 ## DEC-215 — Backend keuangan sintetis di VPS biasa, preview tetap dummy
 
 - Tanggal: 2026-09-28. Status: `CONFIRMED`; pemberi keputusan Andreas.
