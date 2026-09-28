@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-214 — Preview pribadi keuangan tiga outlet tanpa login
+
+| Field | Keputusan |
+|---|---|
+| Tanggal | 2026-09-28 |
+| Topik | Eksperimen dashboard keuangan multi-outlet |
+| Keputusan | Andreas meminta build dan deploy Vercel; login dilewati, role berupa tombol yang bisa diganti dan data dummy. Penggunaan saat ini eksperimen pribadi nonkomersial. |
+| Alasan | Meninjau alur dashboard untuk tiga outlet dengan satu pengelola. |
+| Alternatif yang dipertimbangkan | Login/database operasional sejak awal; ditunda untuk tahap backend. |
+| Dampak | Preview statis publik terpisah, localStorage browser, noindex; BUSINESS_READY=false. Tidak mengizinkan transaksi/data bisnis nyata atau perubahan VPS/Hostinger/DNS. |
+| Pemberi keputusan | Andreas |
+| Status | CONFIRMED |
+| Dokumen terkait | [SagaDevs](products/sagadevs/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md) |
+
 ## DEC-213 — Alur foto dan cutout Card mengikuti editor Frame
 
 - Tanggal: 2026-09-25. Status: `CONFIRMED`; pemberi keputusan Andreas.

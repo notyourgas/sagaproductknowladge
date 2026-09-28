@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Batas eksperimen keuangan multi-outlet
+
+- `CONFIRMED`: preview keuangan tiga outlet sudah publik dengan data sintetis, localStorage dan role button. Login dilewati sesuai permintaan Andreas untuk eksperimen pribadi nonkomersial; tidak ada keputusan membuka data bisnis atau aktivasi backend.
+- `PROPOSAL`: tahap berikutnya Laravel/MySQL, integer rupiah/basis point, period guard dan transaksi atomik, ACL server, private storage, recovery dan76UAT. Rancangan SQL/API tersedia di source tetapi belum dijalankan pada MySQL.
+- `NEEDS CONFIRMATION`: kapasitas/jenis paket Hostinger dan VPS, target backend serta UAT operator untuk penggunaan nyata. Ini tidak menghalangi preview statis yang sudah diminta.
+- Distribusi kuantitas parsial, retur multi-item, split pembayaran manual, koreksi final dan ekspor worker belum lengkap. BUSINESS_READY=false; aplikasi terpisah dari SagaFin dan SagaPOS.
+
 ## 2026-09-28 — Gap input invoice Owner ditutup pada source, rilis masih pending
 
 - `CONFIRMED`: native invoice matching source `060176bfa1ea08c73a429f182be676bd4156d3b7` accepted/LOCAL_VALIDATED, actual production tetap `bbd4567`/ready/schema 34 pada 11.30.55 WIB. Popup dokumen/perbandingan dan read-only status selesai pada source; tidak mengaktifkan approval Finance/AP/payment atau mencatat invoice bisnis nyata.
