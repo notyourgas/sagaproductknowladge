@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-29 — SagaPOS: native pembukuan invoice, validasi source saja
+
+`CONFIRMED`: lokal `32b534b759d381438d5a5be29c59575f4192f124` mengintegrasikan tombol Bukukan utang pada Owner Pembelian, memakai layanan existing dan Finance approver terpisah. Tiga file UI/test, 37 perubahan basis utuh; independen `SOURCE_ONLY_QUALIFIED`. Bukti 15 skenario lokal dirakit lintas run, bukan full run final, ditambah guard19/19; gagal fixture sebelumnya tetap dicatat. `LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`; no source push, deploy, data bisnis atau provider/payment activation. AP/nilai stok bukan tambahan jumlah fisik atau pembayaran. Native/full/recovery dan production/business UAT belum selesai; knowledge source-only tidak mengubah status rilis produk lain.
+
 ## 2026-09-28 — SagaPOS: pengiriman aset Dashboard pulih
 
 - `CONFIRMED / PRODUCTION_DEPLOYED` hanya konfigurasi OPS, source `5e5bd3c660edbb4831de3d03ba96327648de603b`, apply23.27 WIB/QA independen accepted. Respons CSS/JS terputus → lima aset lengkap pada normal dan slow-read, exit0/Content-Length/hash cocok. Gudang Owner production diuji desktop1440/mobile390 setelah reload, styled/data terbaca/no page overflow/no warning/error tertangkap.

@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-09-29 — Native AP posting: integrasi terbatas dan bukti lokal
+
+`CONFIRMED`: source lokal `32b534b759d381438d5a5be29c59575f4192f124` / tree `fd8a356e969dbf51a3673720f9f841afbb430367` membawa kandidat native pembukuan invoice disetujui ke basis terintegrasi e6d55cc. Tiga file UI/test saja; 37 perubahan Owner/AP/HR/Team diwarisi utuh. Layanan backend, schema, permission, dependency, Cash dan Member tidak diubah. Status `SOURCE_ONLY_QUALIFIED / LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`; source GitHub/PR dilewati, `CI_NOT_RUN`.
+
+Owner membuka PO Pembelian dan memilih Bukukan utang untuk invoice MATCHED yang sudah disetujui Finance berbeda akun. Dialog menampilkan dokumen, supplier, nilai dan jatuh tempo; Owner mengisi catatan dan konfirmasi dampak nilai persediaan. Cakupan awal memerlukan satu penerimaan lengkap dengan jumlah dibayar asli; bonus masuk stok fisik tetapi tidak ditagihkan ulang. Histori terbatas, invoice parsial, penerimaan ganda/pemeriksaan atau retur/kredit terkait ditahan. Layanan server tetap menentukan kewenangan, versi dan bukti final.
+
+Tindakan ini membuat utang dan dapat merevaluasi persediaan/HPP, bukan pembayaran. Stok fisik, kas dan payment tidak berubah. Bukti berhasil harus memuat transisi POSTED dengan invoice/PO, actor, alasan dan kunci pembukuan tepat. Respons hilang membekukan payload/kunci untuk rekonsiliasi atau replay identik; ACK tersimpan diikuti gagal baca hanya menawarkan pemuatan ulang. Deteksi pergantian sesi bersifat sticky; reset eksplisit membatalkan callback lama, bukan izin impersonasi atau kontrak cross-tab baru.
+
+Validasi producer: 10 controller + empat browser390/1440 lulus pada modul produk identik; axe tanpa serious/critical, tanpa overflow/page error. Satu kasus PGlite final lulus setelah koreksi fixture ke proyeksi ledger dari fakta tersimpan dan scope tiga field yang benar. Assertion tetap memastikan rollback saat fault, satu fakta valuasi, nol tambahan jumlah fisik, perubahan nilai yang tepat, kas/payment tetap, restart dan replay tidak berganda. Awalnya suite 14 PASS/1 FAIL dan koreksi pertama 0 PASS/1 FAIL; kegagalan tidak dihapus dari histori. Bukti 15 skenario dirakit lintas run, bukan whole-file run source final. Tambahan guard backend19/19 lulus. Reviewer independen menilai source/delta saja, tidak mengklaim menjalankan tes tersebut.
+
+Belum ada full suite, native target PostgreSQL, final release packaging/recovery, deployment, authenticated production atau business UAT. Source slice tidak memutasi production atau data bisnis. Integrasi Cash/rilis dan pemulihan Member tetap lane terpisah; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Perbaikan production pengiriman aset, bukan rilis fitur
 
 `CONFIRMED`: runner source `5e5bd3c660edbb4831de3d03ba96327648de603b` diterapkan 23.27 WIB. Kegagalan sebelumnya memutus CSS/JS meskipun HTTP200; sesudah perubahan ingress sempit, lima aset publik diterima utuh dengan Content-Length/hash identik pada pembacaan normal dan perlahan. Original caller dan kedua verifier exit0. QA independen menerima source/receipt aktual; syntax/reload dan pengaman current/rollback lulus. Backup konfigurasi tersedia dan perubahan produk tetangga dihindari; rollback branch tidak dijalankan pada apply sukses.

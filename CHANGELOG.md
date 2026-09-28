@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — knowledge: native approved invoice posting source-only
+
+- `CONFIRMED`, producer source/test dan independent source review: lokal `32b534b759d381438d5a5be29c59575f4192f124` / tree `fd8a356e969dbf51a3673720f9f841afbb430367`, basis e6d55cc. Native Bukukan utang untuk Owner kini terintegrasi di tiga file, 37 perubahan sebelumnya utuh. Alasan: memperjelas alur invoice disetujui tanpa pindah Admin dan membedakan source acceptance dari rilis.
+- `LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / SOURCE_ONLY_QUALIFIED`; 15 skenario terarah merupakan gabungan lintas run, bukan whole-file run final; kedua kegagalan fixture historis disimpan, final durable1/1 dan backend guard19/19 lulus. Native/full/recovery/production/business UAT pending. Source GitHub/CI dilewati; tidak ada deployment atau bisnis/provider/payment mutation dari slice ini.
+- Delapan dokumen publik diperbarui pada clean main sesuai protokol dan satu writer. Validasi pre/staged, diff dan public safety serta commit/push knowledge terpisah wajib; SHA immutable dilaporkan setelah push. Histori/upstream, pricing/founder/struktur dan produk lain dipertahankan; tidak menyalin PII/secret/private receipt/path.
+
 ## 2026-09-28 — knowledge: perbaikan aset Dashboard production
 
 - `CONFIRMED`, sumber exact published runner dan actual apply/independent QA: OPS `5e5bd3c660edbb4831de3d03ba96327648de603b`, diterapkan23.27 WIB. Partial CSS/JS dengan HTTP200 → lima aset full-byte/hash normal dan slow-read exit0. Existing genuine Owner Gudang produksi setelah reload1440/390 styled/data/no-overflow/no warning-error. Alasan: memulihkan dashboard polos dan membedakan bukti produksi dari source-only.

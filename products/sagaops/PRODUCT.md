@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-29 — Pembukuan invoice disetujui, native Owner, source-only
+
+- `CONFIRMED / LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: source lokal `32b534b759d381438d5a5be29c59575f4192f124`, tree `fd8a356e969dbf51a3673720f9f841afbb430367`, basis terintegrasi `e6d55cc2e63e8d997873d25178698389a411a108`. Kandidat pembukuan native lama kini terintegrasi pada tiga file UI/test, tanpa mengganti 37 file perubahan Owner/AP/HR/Team sebelumnya. Review independen menerima `SOURCE_ONLY_QUALIFIED`; source tidak dipush ke GitHub, `CI_NOT_RUN`.
+- Sebelum: invoice yang telah disetujui Finance belum memiliki tindakan pembukuan native pada kandidat terintegrasi. Sesudah: Owner meninjau invoice, supplier, total, jatuh tempo, catatan dan konfirmasi melalui tombol **Bukukan utang** di dialog PO Pembelian. Menggunakan layanan pembukuan yang sudah ada; hanya invoice MATCHED dengan satu penerimaan lengkap dan penyetuju Finance berbeda. Riwayat tidak lengkap atau penerimaan/retur/kredit yang belum didukung tetap ditahan, bukan ditebak.
+- Pembukuan membuat utang dan dapat memperbarui nilai persediaan/HPP; tidak menambah stok fisik, mengeluarkan kas, membayar invoice, atau mengaktifkan provider. Hasil tidak pasti memakai kunci/payload identik; hasil tersimpan tidak dibukukan ulang saat pembacaan gagal. Perubahan sesi yang terdeteksi mengunci draft/replay lama.
+- Bukti terarah mencakup 15 skenario: 10 controller + empat Chromium390/1440 lulus pada modul produk identik, lalu satu PGlite durable pada source final lulus. Ini gabungan bukti, **bukan satu full run 15/15 pada source final**. Dua kegagalan fixture sebelumnya tetap dicatat; 19 tes pengaman cakupan backend terpisah lulus. Native PostgreSQL, full suite, recovery rilis dan authenticated production/business UAT belum dijalankan. Tidak ada deploy atau transaksi nyata dari slice ini; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Tampilan Dashboard pulih melalui perbaikan ingress production
 
 - `CONFIRMED / PRODUCTION_DEPLOYED` untuk **perbaikan OPS pengiriman aset saja**: source runner `5e5bd3c660edbb4831de3d03ba96327648de603b`, diterapkan 23.27 WIB oleh satu Release Lead dan diterima QA independen. Sebelum: respons CSS/JavaScript terputus meskipun HTTP200, sehingga dashboard tampil polos. Sesudah: konfigurasi pengiriman aset terisolasi; syntax/reload, backup konfigurasi, pengaman runtime dan pemeriksaan izin lulus.

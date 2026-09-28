@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Gap source native pembukuan invoice ditutup, gate rilis masih terbuka
+
+- `CONFIRMED`: source lokal `32b534b759d381438d5a5be29c59575f4192f124` mengintegrasikan tindakan Owner Bukukan utang yang hilang dari e6d55cc. Tiga file, 37 perubahan basis utuh; independent `SOURCE_ONLY_QUALIFIED`. Bukti terarah 15 skenario gabungan dan backend guard19/19, bukan whole-file/full run final; dua gagal fixture historis dipertahankan.
+- OPEN: native PostgreSQL target, full suite dan candidate-bound release/recovery/rollback/production Owner UAT, kemudian business UAT. Invoice parsial, beberapa penerimaan, pemeriksaan, retur/kredit dan histori terpotong tidak didukung UI native awal; jangan membuka guard agar demo lulus. Finance approval dan pembayaran tetap berbeda tindakan/role.
+- `LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`, source belum dipush. Slice tidak memutasi production/data bisnis/provider/payment. Tidak menutup gap Cash, Team atau Member dan tidak mengubahnya menjadi `BUSINESS_READY`.
+
 ## 2026-09-28 — Gap pengiriman aset POS ditutup; gap produk lain tetap
 
 - `CONFIRMED`, CLOSED pada scope sempit: source OPS `5e5bd3c660edbb4831de3d03ba96327648de603b` diterapkan23.27 WIB dan diterima independent actual QA. Full-byte/hash lima aset normal+perlahan, authenticated Gudang Owner desktop1440/mobile390 setelah reload dan style/load/no-overflow lulus. Klaim HTTP200 semata tidak dipakai sebagai acceptance.

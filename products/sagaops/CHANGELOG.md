@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-29 — Bukukan utang invoice di Owner Pembelian, source-only
+
+- `CONFIRMED`, source lokal `32b534b759d381438d5a5be29c59575f4192f124`, basis e6d55cc. Gap tindakan pembukuan native ditutup pada tiga file; 37 perubahan terintegrasi dipertahankan dan review independen `SOURCE_ONLY_QUALIFIED`.
+- Owner mereview invoice MATCHED yang sudah disetujui Finance terpisah, lalu membukukan melalui layanan existing. AP/nilai persediaan dapat berubah; jumlah fisik, kas, pembayaran/provider tidak. Coverage konservatif, versi, rekonsiliasi respons hilang dan exact replay dipertahankan.
+- 15 skenario lokal gabungan (10 controller/four browser/satu final durable), bukan full run final; dua gagal fixture historis tetap dicatat. Guard backend19/19 lulus. `LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`, source push/CI dilewati. Native/full/recovery/production/business UAT masih terbuka; production tidak diubah slice ini, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Gangguan aset Dashboard ditutup di production
 
 - `CONFIRMED / PRODUCTION_DEPLOYED`, OPS source `5e5bd3c660edbb4831de3d03ba96327648de603b`, apply23.27 WIB dan QA independen accepted. Sebelum CSS/JS terputus dengan HTTP200 → sesudah pengiriman aset terisolasi dan utuh. Konfigurasi memiliki backup; syntax/reload/pengaman current/rollback lulus, tanpa perubahan aplikasi/database/provider/produk tetangga.

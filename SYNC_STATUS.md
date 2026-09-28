@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Sync native pembukuan invoice Owner, source-only
+
+- `CONFIRMED / accepted` pada scope source: lokal `32b534b759d381438d5a5be29c59575f4192f124`, tree `fd8a356e969dbf51a3673720f9f841afbb430367`, basis e6d55cc; tiga file UI/test, 37 perubahan basis dipertahankan. Independent `SOURCE_ONLY_QUALIFIED`; `LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`.
+- Before tindakan native belum terintegrasi → after Owner review dan Bukukan utang memakai layanan existing/Finance terpisah. Bukti lokal 15 skenario gabungan, bukan whole-file run final; awal14/15 dan koreksi pertama0/1 tetap histori, final durable1/1 dan backend guard19/19 lulus. Native/full/recovery/deploy/production/business UAT belum ditutup.
+- Delapan dokumen SagaOPS/product/dossier/changelog, portfolio/master/gaps/sync/root diperbarui pada clean main oleh satu writer sesuai UPDATE_PROTOCOL. Commit/push knowledge terpisah dari source yang tetap SKIP_GITHUB/CI_NOT_RUN. Tidak memuat raw receipt, identifier, credential atau private evidence path; no pricing/founder/struktur/produk lain change, no production/data/provider/payment mutation. SHA knowledge final dilaporkan setelah push/validator/remote verification.
+
 ## 2026-09-28 — Sync perbaikan ingress SagaPOS production
 
 - `CONFIRMED / accepted`: source OPS `5e5bd3c660edbb4831de3d03ba96327648de603b`, apply23.27 WIB/actual independent QA accepted, eksternal5/5 normal+slow/full-byte/hash exit0 serta genuine Owner Gudang1440/390 setelah reload styled/data/no-overflow/no warning-error. Before partial CSS/JS → after delivery dan visual reading acceptance. Scope perbaikan konfigurasi production, bukan full feature deployment.

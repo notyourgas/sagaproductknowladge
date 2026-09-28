@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — SagaPOS Owner: native Bukukan utang, belum production
+
+`CONFIRMED / LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: source lokal `32b534b759d381438d5a5be29c59575f4192f124`, basis e6d55cc; tiga file UI/test, 37 perubahan integrasi utuh, independent `SOURCE_ONLY_QUALIFIED`. Owner dapat meninjau invoice MATCHED dengan satu penerimaan lengkap dan Finance approver berbeda lalu membukukan AP di dialog PO Pembelian. Nilai persediaan/HPP dapat direvaluasi, tetapi stok fisik/kas/payment tidak berubah. Bukti tidak lengkap/unsupported ditahan; uncertain response memakai exact replay, saved ACK tidak dipost ulang.
+
+Bukti lokal 15 skenario terdiri dari 10 controller + empat browser390/1440 pada modul produk identik dan satu PGlite final, bukan whole-file run pada final source. Histori dua gagal fixture tetap dicatat; guard backend19/19 lulus. Source push/PR dilewati, `CI_NOT_RUN`; full/native/recovery/deploy/authenticated production/business UAT belum selesai. Tidak mengaktifkan provider atau pembayaran, tidak mengubah production oleh slice ini, `BUSINESS_READY=false`. Pemulihan Member dan kandidat Cash/rilis tetap terpisah.
+
 ## 2026-09-28 — SagaPOS Dashboard pulih, scope OPS saja
 
 `CONFIRMED`: source runner `5e5bd3c660edbb4831de3d03ba96327648de603b` memperbaiki pengiriman aset production pada23.27 WIB. CSS/JS sebelumnya terputus walau HTTP200; sesudah apply dan QA independen, lima aset lengkap/hash cocok pada normal+slow-read dan Gudang Owner pada1440/390 setelah reload styled/data terbaca tanpa overflow halaman atau warning/error tertangkap. Status perbaikan OPS `PRODUCTION_DEPLOYED`, bukan rilis fitur baru.
