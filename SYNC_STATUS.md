@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — Timeline REMAKE source-only tersinkron
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact clean pushed source `c546a5637569e8470866bccf390926ed755c7256`, branch `codex/sagapos-remake-timeline-20260928`. Product/dossier/changelog/portfolio/master/gaps/root diperbarui dari source, 44/44 regression dan native PG18 1/1/encrypted restore/cold restart. Check/type 639, 34 migration unchanged, dependency production audit 0; tidak memublikasikan raw facts/private target. Live 09.23 WIB active 6ea70af/rollback f80146b tetap, Gateway existing/Table DEMO. Fresh successor release/staff UAT pending; knowledge `main HEAD`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Integrasi cash/ACK source-only tersinkron
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source clean pushed `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`, branch `codex/sagapos-cash-ack-integrated-20260928`, base 6ea70af. Full 1.675 PASS / 0 FAIL / 73 Windows SKIP, Linux 113/113, native PG18.6 recovery/concurrency, browser 9/9 dan runtime 13/13 PASS; check/type 638, audit 0. Product/dossier/changelog/portfolio/master/gaps/root diperbarui tanpa restricted data. Production 6ea70af/rollback f80146b tetap, fresh artifact/admission/activation/staff UAT pending; knowledge `main HEAD`, `BUSINESS_READY=false`.

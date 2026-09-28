@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Durable REMAKE current-cycle timeline (`IMPLEMENTED_NOT_DEPLOYED`)
+
+- `CONFIRMED`, source clean pushed `c546a5637569e8470866bccf390926ed755c7256` (`codex/sagapos-remake-timeline-20260928`): repository reset timestamp current-cycle atomik; regression membuktikan defect sebelum fix, rollback commit, hydration, replay dan payment invariance. Files: repository, durable timeline test, owned PG18 proof wrapper dan runbook.
+- 44/44 relevant PASS, native 1/1 + encrypted restore/cold restart PASS; static/type 639, unchanged 34 migrations, production dependency audit 0. Evidence bukan release artifact/full successor release/business UAT. Delapan dokumen knowledge diperbarui; live 09.23 WIB active 6ea70af/rollback f80146b tidak berubah, Gateway existing/Table DEMO; `BUSINESS_READY=false`. Next: integrasi single Release Lead, fresh release gate, authenticated staff UAT.
+
 ## 2026-09-28 — Cash/ACK integrated candidate (`IMPLEMENTED_NOT_DEPLOYED`)
 
 - `CONFIRMED`: exact clean pushed `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`, branch `codex/sagapos-cash-ack-integrated-20260928`, base 6ea70af; Backend/Data/QA mengintegrasikan ACK yang tahan recovery tanpa menimpa Owner UI atau mengubah migration/payment. Before ACK patch terpisah → after satu candidate cash POS/Kiosk opening-to-closing tervalidasi → dampak fallback kasir dapat ditinjau untuk rilis.

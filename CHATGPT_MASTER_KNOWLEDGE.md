@@ -1,5 +1,10 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-28 — SagaPOS REMAKE timeline source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: `c546a5637569e8470866bccf390926ed755c7256` (`codex/sagapos-remake-timeline-20260928`) memperbaiki old-cycle preparation timestamps setelah REMAKE/recovery: current timestamps reset atomik, next PREPARING server-authored, payment/audit history tidak dihapus. Relevant 44/44, native PG18 1/1 + encrypted restore/cold restart, check/type 639, unchanged 34 migrations, dependency production audit 0 PASS.
+- Live 09.23 WIB masih active 6ea70af/rollback f80146b, Gateway existing/Table DEMO; lane ini tidak deploy atau membuat pembayaran. Full successor gate/artifact/admission/activation dan staff UAT masih diperlukan; jangan menyebut source/test bundle sebagai runtime atau readiness bisnis. `BUSINESS_READY=false`; ledger historis bukan skor kini.
+
 ## 2026-09-28 — SagaPOS integrated cash/ACK source, bukan runtime aktif
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e` pada `codex/sagapos-cash-ack-integrated-20260928` mengintegrasikan durable ACK pada Owner base 6ea70af. Cash POS/Kiosk sampai physical closing lulus 13/13 runtime, 9/9 browser; native PG18.6 concurrency/encrypted restore/cold restart PASS. Full 1.675 PASS / 0 FAIL / 73 Windows SKIP, Linux release contracts 113/113, check/type 638, audit dependency 0. Tidak ada schema/payment/provider mutation atau transaksi nyata.

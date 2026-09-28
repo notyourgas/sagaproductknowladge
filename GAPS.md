@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Defect timeline REMAKE ditutup lokal, gate rilis tetap terpisah
+
+- `CONFIRMED`: source `c546a5637569e8470866bccf390926ed755c7256` (`codex/sagapos-remake-timeline-20260928`) menutup old preparation timestamp setelah durable REMAKE dengan relevant 44/44, native PG18 1/1/encrypted restore/cold restart, check/type 639 dan dependency audit 0. Tidak memerlukan keputusan bisnis tambahan untuk fix timestamp; tidak ada perubahan mode/uang produksi.
+- `NEEDS CONFIRMATION`: integrasi single Release Lead, exact successor full regression/immutable artifact/fresh admission/backup/rehearsal/activation dan authenticated staff UAT. Native timeline receipt bukan bukti device, real-money atau seluruh inventory remake. Live 09.23 WIB active 6ea70af/rollback f80146b; `BUSINESS_READY=false`, total readiness kini belum direbaseline.
+
 ## 2026-09-28 — Gap integrasi source ACK pada Owner base ditutup
 
 - `CONFIRMED`: clean pushed integrated source `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e` pada base 6ea70af menutup gap source integration/full regression/native proof dari entri sebelumnya. Full 1.675 PASS / 0 FAIL / 73 Windows SKIP, Linux 113/113, PG18.6 concurrency/encrypted restore/cold restart dan browser clean-commit 9/9 PASS; tidak ada produksi berubah. Tidak diperlukan keputusan bisnis tambahan Andreas untuk fix/integrasi cash ACK ini.

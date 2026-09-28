@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Kontrak waktu remake dan recovery
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: `c546a5637569e8470866bccf390926ed755c7256` (`codex/sagapos-remake-timeline-20260928`) menutup defect durable READY→REMAKE: row lock → clear current prep/ready/completed columns → lifecycle/audit/outbox commit bersama → hydrate null times → new server PREPARING instant. Fault commit mengembalikan memory dan DB; replay tidak menulis ulang waktu; repeat REMAKE saat queued serta cancel setelah SERVED ditolak tanpa perubahan fakta.
+- Direct timeline fixture memakai recipe sintetis unmapped; konsumsi remake fisik pada jalur Owner yang sudah tersedia tetap diuji terpisah, bukan disimpulkan dari timestamp fix. Payment facts sebelum/sesudah sama. Schema dan 34 migration tidak berubah; rollback code-only tidak menghapus/restoring transaksi, tetapi kode lama dapat mengulang defect timestamp.
+- Relevant regression 44/44 PASS, native PostgreSQL 18 current-cycle 1/1, encrypted disposable restore/cold restart dan ticket/payment/audit/outbox fingerprints sama; cleanup owned cluster PASS. Check/type 639, audit production dependencies 0. Fresh full-release gate/artifact/admission dan staff UAT successor belum menjadi bukti lane ini. Runtime live 09.23 WIB 6ea70af/rollback f80146b, Gateway existing/Table DEMO; tidak ada transaksi nyata, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Integrasi cash durable terhadap current Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`, branch `codex/sagapos-cash-ack-integrated-20260928`, base exact `6ea70af5167123927b548d0fee70dd47795f56b0`; mengintegrasikan prerequisite operasional `986c8cb`, ACK `585a9fe` dan browser tooling `3eb3774`. Tidak mengubah operator UI, CSS, package/lockfile atau 34 migration; Owner-hours `f6038f3` belum termasuk.

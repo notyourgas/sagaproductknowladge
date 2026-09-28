@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Timeline REMAKE durable diperbaiki, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `c546a5637569e8470866bccf390926ed755c7256`, branch `codex/sagapos-remake-timeline-20260928`, parent `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`. Before REMAKE membawa waktu persiapan lama setelah recovery → after waktu current-cycle dikosongkan atomik bersama status/audit/outbox dan PREPARING berikutnya memakai waktu server baru → elapsed KDS tidak mewarisi siklus sebelumnya.
+- Suite relevan 44/44 PASS tanpa skip; native PG18 1/1, encrypted restore/cold restart/facts equality PASS; static/type 639 module, 34 migration tidak berubah, audit production dependency 0. Pembayaran tetap identik, fixture terisolasi, bukan penerimaan uang merchant. Full-release regression/artifact/admission/activation/staff UAT untuk successor masih wajib; patch ini tidak termasuk kandidat rilis lain.
+- Live 09.23 WIB: active `6ea70af5167123927b548d0fee70dd47795f56b0`, rollback `f80146bb0bd6c67235914df2ba188cb551795b78`, service/PG active dan health ready; Gateway existing, Table DEMO. Tidak ada deployment/payment/provider mutation oleh lane ini; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Kandidat cash POS/Kiosk dan ACK terintegrasi, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: clean pushed source `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`, branch `codex/sagapos-cash-ack-integrated-20260928`, menggabungkan durable ACK serta harness operasional/browser pada exact Owner base `6ea70af5167123927b548d0fee70dd47795f56b0`. Perubahan Owner/UI pada base dipertahankan; kandidat jam layanan `f6038f3` tetap lane terpisah, belum termasuk.

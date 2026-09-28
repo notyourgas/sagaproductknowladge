@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS waktu REMAKE tidak mewarisi siklus lama
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `c546a5637569e8470866bccf390926ed755c7256` pada `codex/sagapos-remake-timeline-20260928` memperbaiki timeline KDS durable dan recovery, tanpa schema/payment/provider mutation. Relevant 44/44, native PG18 1/1 plus encrypted restore/cold restart, check/type 639 dan audit production dependency 0 PASS. Tidak memakai ulang full/artifact kandidat lain. Live 09.23 WIB active 6ea70af/rollback f80146b tetap; release successor dan staff UAT pending, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS cash/ACK terintegrasi pada Owner base
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`, branch `codex/sagapos-cash-ack-integrated-20260928`, base 6ea70af; ACK durable dan alur POS/Kiosk cash–KDS–closing terintegrasi tanpa mengubah Owner UI/migration/payment. Full 1.675 PASS / 0 FAIL / 73 Windows SKIP, Linux 113/113, PG18.6 encrypted restore/cold restart, browser 9/9 dan runtime 13/13 lulus; variance Rp0. Source/test bundle bukan deploy artifact. Production 6ea70af/rollback f80146b tidak berubah; Release Lead admission/recovery/activation serta staff UAT masih diperlukan, `BUSINESS_READY=false`. Delapan dokumen knowledge disinkronkan dari source dan live read-only.

@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — knowledge(sagaops): durable remake timeline source-only
+
+- `CONFIRMED`, sumber Backend/Data/QA, source `c546a5637569e8470866bccf390926ed755c7256` (`codex/sagapos-remake-timeline-20260928`): before current-cycle timestamps lama survives REMAKE → after reset atomik dan waktu server baru saat PREPARING → dampak elapsed/recovery KDS konsisten. Repository/test/disposable native wrapper/runbook serta delapan dokumen knowledge terdampak.
+- 44/44 relevant PASS, native PG18 1/1 + encrypted restore/cold restart/facts equality PASS; check/type 639, unchanged 34 migration, audit production dependency 0. Tidak ada deployment/payment/provider mutation; live 09.23 WIB active 6ea70af/rollback f80146b, Gateway existing/Table DEMO. Fresh full-release successor/artifact/admission/staff UAT pending; `IMPLEMENTED_NOT_DEPLOYED`, `BUSINESS_READY=false`, knowledge `main HEAD`.
+
 ## 2026-09-28 — knowledge(sagaops): integrated durable cash ACK candidate
 
 - `CONFIRMED`, sumber Backend/Data/QA serta exact clean pushed source `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e` pada `codex/sagapos-cash-ack-integrated-20260928`, active Owner base 6ea70af. Menutup gap integrasi ACK/full/native cash–KDS–closing dan verifier inventory receipt tanpa menurunkan assertion; perubahan Owner-hours lane lain tidak termasuk. Delapan dokumen product/dossier/changelog/portfolio/master/gaps/sync/root diperbarui.
