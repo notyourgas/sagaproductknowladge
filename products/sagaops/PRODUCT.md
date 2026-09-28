@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Gate diagnostik operasional cash, belum tuntas
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `986c8cb484cfcd8eac565dd7ebc6a383a83a0615`, branch `codex/sagapos-manual-operations-uat-20260928`, menambah harness development/test untuk satu alur POS cash dan Kiosk cash, restart, KDS, dan closing shift. Tidak mengubah runtime, schema atau pembayaran production.
+- Acceptance alur **FAIL**: 8 pemeriksaan lulus, 1 gagal pada acknowledge KDS durable, 4 belum dijalankan. Dua restart lokal, dua order sintetis, dua payment dan dua tiket tanpa duplikasi terverifikasi sebelum gagal. Alat melaporkan kegagalan dan exit nonzero, tidak melewati acknowledge. 40 tes relevan termasuk reporting tool serta browser kasir/Kiosk lulus; check/type 628, dependency production 0 vulnerability. Ini bukan PASS operasional.
+- Perbaikan kontrak status durable dan compatibility perlu kandidat terkoordinasi. Production tetap `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; Gateway existing, Order Meja DEMO, `BUSINESS_READY=false`. Tidak ada transaksi nyata.
+
 ## 2026-09-28 — Pembuatan PO native di Pembelian Owner, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` menambah dialog pembuatan PO multi-bahan langsung di Dashboard Owner. Supplier aktif, kemasan, jumlah, konversi, harga, perkiraan tiba, alasan, dan total rencana dapat diperiksa tanpa membuka Admin lama. Revisi/pembatalan PO masih di Admin.

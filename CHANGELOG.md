@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS blocker alur cash/KDS diisolasi, bukan ditutup
+
+- `CONFIRMED`: source `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` menambah tooling/fixture development-test untuk uji cash operasional yang dapat diulang. Area: product/dossier/changelog SagaOPS, portfolio, master, gaps dan sync. Reporting tool/regresi 40/40, check/type 628, production dependency 0 vulnerability; hasil journey tetap 8 PASS / 1 FAIL / 4 NOT_RUN dengan exit nonzero.
+- Production tidak berubah. Mismatch state persistence membutuhkan fix dan gate kandidat terkoordinasi; tidak ada pembayaran nyata atau klaim BUSINESS_READY. Status tooling `IMPLEMENTED_NOT_DEPLOYED`; knowledge `main HEAD`.
+
 ## 2026-09-28 — SagaPOS Owner PO authoring, source-only
 
 - `CONFIRMED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` menambah pembuatan PO internal multi-bahan di dialog Pembelian Owner untuk mengurangi perpindahan ke Admin. Area: SagaOPS product/dossier/changelog, portfolio, master, sync status. Browser 390/1440, 47 UI/HPP + 58 server/persistence, check/type 630 lulus; konflik dan respons ambigu diuji.

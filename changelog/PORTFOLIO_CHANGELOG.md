@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS mengisolasi blocker operasional cash/KDS
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source tooling `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` menyediakan uji gabungan POS/Kiosk cash yang berhenti pada kegagalan acknowledge durable. 8 check lulus, 1 gagal, 4 belum berjalan; tidak ada transaksi nyata atau deploy. 40 tes reporting/regresi relevan lulus tidak menggantikan hasil alur FAIL. Kontrak persistence/status dan release masih terbuka, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS Owner menyusun PO tanpa pindah halaman
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` membawa pembuatan PO internal multi-bahan ke dialog Dashboard Pembelian. Draft/konflik dan retry respons terputus diuji tanpa PO duplikat atau penambahan stok. 105 tes terkait dan check/type lulus. Owner PO belum deploy; rilis kasir terpisah kini terverifikasi pada production `f80146bb0bd6c67235914df2ba188cb551795b78`, `BUSINESS_READY=false`.

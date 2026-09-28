@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Blocker cash/KDS SagaPOS terisolasi
+
+- `CONFIRMED`: harness source-only `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` memakai database lokal sintetis; 8 check sebelum acknowledge KDS durable lulus, acknowledge gagal, 4 gate berikutnya NOT_RUN. Perlu perbaikan kontrak status persistence dalam kandidat terkoordinasi. 40 tes reporting/regresi relevan lulus bukan PASS alur operasional. Production tetap `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; pembayaran/provider/schema tidak diubah, `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Pembuatan PO SagaPOS Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` memungkinkan Owner membuat PO internal multi-bahan dari dialog Pembelian. Supplier aktif, konversi kemasan, harga, total, dan perkiraan tiba terlihat; konflik versi serta retry respons ambigu tidak menggandakan PO. PO belum mengirim pesan, menerima barang, atau membayar. Revisi/pembatalan masih di Admin; 105 tes terkait dan check/type 630 lulus. Owner PO belum deploy; cek penutup mengonfirmasi production kasir terpisah `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`; `BUSINESS_READY=false`.

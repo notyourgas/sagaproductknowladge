@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Diagnosis cash/KDS dapat diulang tanpa data production
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` menambah harness lokal dan fixture editable development/test. Alur 8 PASS / 1 FAIL acknowledge durable / 4 NOT_RUN; output tersanitasi dan nonzero. 40 tes reporting/regresi relevan serta check/type dan dependency lulus, bukan bukti acceptance operasional. Production tidak berubah; perbaikan status/release gate masih diperlukan, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Owner membuat PO dari Dashboard Pembelian
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `aef36ed9abc66664014686f35bd4e00c3a0a8ca8` menambah dialog PO multi-bahan dengan ringkasan nilai, konflik versi yang jelas, dan retry idempotent. Browser 390/1440, 47 tes dashboard/HPP, 58 server/persistence, dan check/type 630 lulus. PO tidak mengirim pesan atau menambah stok; revisi/pembatalan masih Admin. Owner PO belum deploy; cek penutup production mengonfirmasi rilis kasir terpisah `f80146bb0bd6c67235914df2ba188cb551795b78`, `BUSINESS_READY=false`.

@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Acceptance acknowledge KDS untuk order cash durable
+
+- `CONFIRMED`: pada baseline `f80146bb0bd6c67235914df2ba188cb551795b78`, harness development/test source `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` gagal pada acknowledge durable setelah 8 check lulus. Empat tahap closing/recovery berikutnya belum dijalankan; jangan anggap acceptance KDS lengkap dari tes lama yang hijau.
+- `PROPOSAL`: Release Lead menggabungkan perbaikan kontrak persistence status dengan compatibility migrasi, konsumsi inventory setelah acknowledge, audit/replay dan restart. Jangan melemahkan constraint atau mengubah checksum migrasi lama hanya agar hijau. Native-engine/UAT kasir dan gate rilis kandidat tetap harus dibuktikan. Tidak memerlukan keputusan bisnis baru Andreas untuk membuat diagnosis ini; `BUSINESS_READY=false`.
+
 ## 2026-09-27 — Setelah perbaikan login Kiosk
 
 - `CONFIRMED`: runtime `b4e79a028ce48f369f983955bfefa19b2ed44763` mengembalikan SSE dan quote Kiosk `200`; akses anonim tetap `401`. Login awal Basic Auth masih kebijakan pilot, bukan regresi login berulang.
