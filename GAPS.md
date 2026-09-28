@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Blocker ACK ditutup pada source, bukan pada production
+
+- `CONFIRMED`: patch clean/pushed `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` menutup kegagalan acknowledge dari diagnosis `986c8cb`; whole cash journey 13/13, enam disk restart dan closing variance nol. Native PG18.6 dua koneksi/recovery, full regression 1.663 PASS / 0 FAIL / 73 SKIP dan focused 9/9 lulus, tanpa migration/constraint/checksum mutation.
+- `NEEDS CONFIRMATION`: kandidat terintegrasi Release Lead, immutable artifact, admission/recovery/Owner smoke dan staff UAT sebelum activation. Source patch bukan runtime f80146b. Rollback lama mempunyai degradasi tampilan ACK→NEW; remake inventory/full-status acceptance belum ditutup. Merchant QR asli, real-payment/financial acceptance dan BUSINESS_READY tetap tidak dapat disimpulkan dari fixture sintetis. Tidak memerlukan keputusan bisnis baru untuk fix ACK ini.
+
 ## 2026-09-28 — Acceptance acknowledge KDS untuk order cash durable
 
 - `CONFIRMED`: pada baseline `f80146bb0bd6c67235914df2ba188cb551795b78`, harness development/test source `986c8cb484cfcd8eac565dd7ebc6a383a83a0615` gagal pada acknowledge durable setelah 8 check lulus. Empat tahap closing/recovery berikutnya belum dijalankan; jangan anggap acceptance KDS lengkap dari tes lama yang hijau.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS menutup blocker ACK pada source
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` membuat alur cash POS/Kiosk sampai KDS dan closing dapat diulang: 13/13, enam restart, selisih Rp0. Native PG18.6 concurrency dua koneksi, encrypted backup/restore dan cold restart lulus; full lokal 1.663 PASS / 0 FAIL / 73 SKIP, focused 9/9. Tidak ada deploy, schema/provider mutation atau transaksi nyata. Integrasi kandidat, release admission dan operational UAT masih pending, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS menutup bug sinkronisasi supplier di source
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` menjaga input/draft supplier, menunggu hasil simpan dan data terbaru, serta menambah refresh di modal. Tes lokal terfokus dan dua viewport lulus; production tetap f80146b. Kandidat Owner memerlukan full regression, artifact/recovery baru dan Owner proof sebelum aktivasi; tidak ada perubahan stok/payment, `BUSINESS_READY=false`.

@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS ACK durable source-only tervalidasi
+
+- `CONFIRMED`: source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` memperbaiki blocker operasional ACK tanpa migration/provider/UI mutation agar cash POS/Kiosk dapat melewati KDS hingga closing. Area: SagaOPS product/dossier/changelog, portfolio, master, gaps dan sync. 13/13, enam restart, variance nol; PG18.6 dua koneksi/encrypted restore/cold restart PASS; full 1.663 PASS / 0 FAIL / 73 SKIP, focused 9/9, static 632, audit 0.
+- Production tidak berubah; integrasi kandidat/admission/UAT masih diperlukan. Tidak ada pembayaran nyata atau klaim business-ready. Status `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; knowledge `main HEAD`. Riwayat diagnosis FAIL dipertahankan sebagai baseline, bukan fakta kandidat fix.
+
 ## 2026-09-28 — SagaPOS supplier save/focus diperbaiki di source
 
 - `CONFIRMED`: source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` menutup bug fokus dan sinkronisasi dialog supplier, menambah refresh dalam modal, serta menjaga draft/error/batas sesi. Area: SagaOPS product/dossier/changelog, portfolio, master dan sync. Tes lokal 18/18 dashboard/kasir, 51/51 supplier/data/API dan 8/8 HTTP PO lulus; check/type/diff lulus.

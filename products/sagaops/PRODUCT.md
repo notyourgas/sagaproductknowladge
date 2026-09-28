@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — ACK KDS tahan restart, source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact clean pushed source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2`, branch `codex/sagapos-durable-kds-ack-20260928`, memperbaiki persistence acknowledge KDS untuk order cash POS dan assisted Kiosk. ACK disimpan sebagai sub-state server-owned yang kompatibel dengan schema lama; harga, provider dan 34 migration tidak berubah. Audit/outbox atomik dan replay tidak menggandakan order, event atau konsumsi stok.
+- Alur development/test 13/13 PASS, enam restart disk, dua order/payment/tiket dan closing selisih Rp0; PostgreSQL 18.6 disposable dua koneksi, backup terenkripsi, restore dan cold restart lulus. Regresi penuh 1.663 PASS / 0 FAIL / 73 SKIP; focused 9/9, check/type 632, audit production dependency 0 vulnerability. Ini bukti sintetis, bukan pembayaran nyata atau UAT staff production.
+- Production tetap `f80146bb0bd6c67235914df2ba188cb551795b78`, rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`. Integrasi kandidat tunggal Release Lead, artifact/recovery/Owner admission dan UAT masih diperlukan. Pada code rollback lama, ACK dapat terlihat NEW tanpa merusak schema; remake inventory belum diattestasi slice ini. `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Simpan supplier tersinkron, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458`, branch `codex/sagapos-owner-supplier-sync-20260928`, memperbaiki fokus input dan penyimpanan supplier pada kandidat gabungan Owner/kasir `c5db471`. Form menahan perubahan selama simpan, menunggu snapshot terbaru sebelum menyatakan berhasil, dan menyediakan tombol **Perbarui data** di dalam dialog tanpa membuang draft.

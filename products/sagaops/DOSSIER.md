@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Kontrak ACK durable kompatibel, functional acceptance lulus
+
+- `CONFIRMED`: source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` menutup blocker source-only `986c8cb` tanpa mengubah SQL/constraint/checksum. Waiting scalar tetap NEW, lifecycle versi 1 server-owned diproyeksikan ACKNOWLEDGED saat hydration/response. PREPARING memakai konsumsi inventory atomik yang sama. Audit dan status outbox satu transaksi; replay atau commit gagal tidak menyisakan fakta parsial. Scope/role negatif, payload tidak konsisten dan legacy-forward rollback diuji.
+- Whole journey cash POS + Kiosk pending/confirm → ACK/PREPARING/READY/SERVED → physical count/closing/restart/shift baru PASS 13/13 dengan enam disk restart, tepat dua order/payment/tiket dan variance nol. Stock-neutral ACK dan pengurangan stok sekali setelah PREPARING lulus. Native PG18.6 pada cluster sintetis sekali pakai menguji dua koneksi/worker, encrypted dump/restore ke DB kedua serta cold restart dengan hash fakta identik; cluster dibersihkan tanpa production mutation.
+- Regresi penuh lokal 1.663 PASS, 0 FAIL, 73 SKIP; focused 9/9; static 632, 34 ledger tetap, dependency production 0 vulnerability. Browser yang tercakup adalah regresi lokal, bukan authenticated production UAT. Tidak mengedit UI/CSS Owner, menghubungi provider atau membuat transaksi nyata. Rollback code lama mengabaikan metadata ACK dan menampilkan NEW; scalar maju yang sah tetap authoritative saat upgrade. Remake inventory/full-status acceptance, candidate admission dan operational staff UAT masih residual. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+
 ## 2026-09-28 — Draft dan hasil simpan supplier konsisten
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` memperbaiki dialog supplier native: fokus tidak mencuri input, draft/input terkunci selama request, cancel/Escape ditahan, refresh bersama ditunggu, dan pesan gagal ditampilkan pada form yang sedang aktif. **Perbarui data** dapat diklik dari modal untuk menyelesaikan konflik tanpa pindah halaman. Logout menutup dialog; respons dari sesi lama tidak menghidupkan editor kembali.

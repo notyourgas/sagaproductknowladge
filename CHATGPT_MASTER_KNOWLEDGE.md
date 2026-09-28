@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — ACK cash/KDS SagaPOS diperbaiki pada source
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` menutup blocker persistence ACK pada diagnosis `986c8cb`. Lifecycle server-owned kompatibel dengan schema/checksum lama; hydration, replay, audit/outbox dan inventory saat PREPARING lulus. Alur cash POS/Kiosk/closing PASS 13/13, enam restart disk, variance Rp0. PG18.6 disposable dua koneksi, encrypted restore/cold restart PASS; full lokal 1.663 PASS / 0 FAIL / 73 SKIP, focused 9/9, static 632/audit 0. Production masih f80146b, rollback b4e79a0; belum integrasi/aktivasi/UAT production. Rollback lama dapat menampilkan ACK sebagai NEW; remake inventory belum diattestasi. Tidak ada pembayaran nyata; `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — Sinkronisasi supplier SagaPOS Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` memperbaiki fokus dan lifecycle dialog supplier pada kandidat gabungan Owner/kasir c5db471. Simpan menunggu data terbaru; draft dan error tetap terlihat; refresh berada di dalam modal dan sesi logout tidak dihidupkan oleh respons terlambat. Validasi lokal 18/18 dashboard/kasir, 51/51 supplier/data/API serta 8/8 HTTP PO lulus. Production masih f80146b, bukan release Owner baru. Full regression/recovery/Owner admission belum selesai; tidak mengubah schema/provider/payment dan tidak menyatakan `BUSINESS_READY`.

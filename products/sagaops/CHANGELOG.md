@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Fix ACK durable untuk alur cash/KDS/closing
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` menutup blocker ACK pada source diagnosis `986c8cb`; tidak mengubah migration/provider/UI Owner. Server lifecycle, audit/outbox atomik, legacy rollback dan inventory setelah ACK diuji.
+- 13/13 alur, enam restart, closing variance nol; native PG18.6 dua koneksi + encrypted restore/cold restart PASS. Full regression 1.663 PASS / 0 FAIL / 73 SKIP, focused 9/9, check 632, audit 0. Production f80146b/rollback b4e79a0 tetap, integrasi/admission dan staff UAT belum selesai; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Perbaiki fokus dan sinkronisasi supplier Owner
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: commit `73331ed9f8ad88975a4406ddd52a11a5c6ff8458` pada kandidat gabungan c5db471 memperbaiki input focus, draft pending, hasil simpan/refresh dan batas sesi dialog supplier. Sebelum: nilai input atau hasil yang dibaca dapat tertinggal. Sesudah: hasil sukses menunggu data terbaru; refresh tersedia langsung dalam modal dan kegagalan tetap menyimpan draft.

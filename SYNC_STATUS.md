@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — SagaPOS ACK backend source-only
+
+- `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-durable-kds-ack-20260928`, exact clean pushed `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2`. 13/13 alur, enam restart, focused 9/9, native PG18.6 concurrency/encrypted restore/cold restart PASS; full 1.663 PASS / 0 FAIL / 73 SKIP, static 632, dependency audit 0. Production f80146b/rollback b4e79a0 tidak berubah; single candidate Release Lead dan release/UAT gate belum selesai. Delapan dokumen disinkronkan dari provenance source/runtime; knowledge `main HEAD`, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS supplier sync source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-owner-supplier-sync-20260928`, exact pushed `73331ed9f8ad88975a4406ddd52a11a5c6ff8458`, parent gabungan c5db471. Root source ter-commit; perubahan screenshot evidence tidak dimasukkan artifact/source. Tes lokal 18/18, 51/51 dan 8/8 HTTP PO lulus, check/type/diff lulus. Release Lead memegang full regression dan gate kandidat successor; production f80146b/rollback b4e79a0 tidak berubah. Knowledge `main HEAD`, `BUSINESS_READY=false`.
