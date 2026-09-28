@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Paket Tim & Akses siap di nonproduction
+
+- `CONFIRMED / ARTIFACT_PREPARED_NONPRODUCTION_ONLY / IMPLEMENTED_NOT_DEPLOYED`: paket immutable untuk source `e6d55cc2e63e8d997873d25178698389a411a108`, SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02`, ukuran 152555520 byte. Release Lead membuat paket dari source/tree bersih yang terikat ke repository kanonik; pemeriksaan arsip dan review bukti aktual independen lulus. Packaging dan caller selesai normal dengan exit 0.
+- Sebelumnya artifact pending; kini bukti artifact diterima hanya untuk nonproduction. Ini bukan pengujian native, deployment, atau aktivasi. Fitur tetap OFF, schema NOT_INSTALLED, `BUSINESS_READY=false`. Pada pemeriksaan Lead, current/rollback/schema34/GATEWAY tidak berubah.
+- Jendela Owner SagaPOS masih aktif pada pemeriksaan Lead, tetapi autentikasi efektif Owner belum terverifikasi dan vault terkunci. Tindakan unlock telah diminta satu kali oleh koordinator; bukan permintaan renewal. Signed grant, backup/recovery/native/full/browser/WebKit, admission dan UAT tetap belum selesai. Tidak ada perubahan akun, provider atau data bisnis.
+
 ## 2026-09-28 — Kandidat Team terintegrasi diterima dan source dipublikasikan
 
 - `CONFIRMED / SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: source kanonik `e6d55cc2e63e8d997873d25178698389a411a108`, tree `2102a5b1f5eb4e135e4059ee1d77da61ddc855cb`, parent `fec890334fef75340fe0c10908affd67ee46f872`, branch `codex/sagapos-team-integrated-20260928` pada repository `notyourgas/sagaops`. Sole Release Lead melakukan publikasi source; live branch cocok. Status local/not-pushed pada entri sebelumnya adalah histori, bukan status kandidat ini.

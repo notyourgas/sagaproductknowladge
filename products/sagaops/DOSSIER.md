@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Acceptance artifact Tim, bukan native atau production
+
+`CONFIRMED`: source `e6d55cc2e63e8d997873d25178698389a411a108`, tree `2102a5b1f5eb4e135e4059ee1d77da61ddc855cb`, kini memiliki artifact immutable 152555520 byte, SHA256 `9668e2ba774fd313932b96540fa7de900f669d111c583316dfb288c40d5cca02`. Lead memakai bundle Git genuine dengan prerequisite yang diverifikasi, source bersih dan origin kanonik. Packager serta validator arsip kandidat lulus; original caller natural exit 0, kedua stream selesai dan cleanup terbatas pada pekerjaan sendiri diterima QA independen. Reviewer menerima rantai bukti aktual, bukan download atau hash ulang arsip remote oleh writer knowledge.
+
+Before → after: artifact pending menjadi `ARTIFACT_PREPARED_NONPRODUCTION_ONLY`. Percobaan gagal sebelumnya tetap gagal dalam histori. Ini tidak menutup native restore/forward compatibility/restart/concurrency, mandatory full/browser/WebKit, genuine Owner grant, staging/admission, activation atau UAT. Slot packaging sudah ditutup; bukan alokasi kapasitas untuk pekerjaan berikutnya.
+
+Pada receipt Lead, produksi tetap baseline bbd/rollback380/schema34/GATEWAY. Jendela Owner masih aktif, namun autentikasi efektif belum terverifikasi/vault terkunci; koordinator meminta unlock satu kali tanpa renewal atau bypass. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`, default OFF/schema NOT_INSTALLED. Next: sole Lead memverifikasi Owner dan menjalankan gate release yang masih terbuka; source/paket tidak sama dengan promotion. Writer hanya memperbarui knowledge, tanpa probe runtime atau execution baru. Qualification Member48e9 dan source pair c40/783 tetap terpisah dari envelope otorisasi Member historis.
+
 ## 2026-09-28 — Source terintegrasi Team: persiapan rilis, bukan aktivasi
 
 `CONFIRMED`: exact canonical commit `e6d55cc2e63e8d997873d25178698389a411a108`, tree `2102a5b1f5eb4e135e4059ee1d77da61ddc855cb`, parent `fec890334fef75340fe0c10908affd67ee46f872`, branch `codex/sagapos-team-integrated-20260928`, repository `notyourgas/sagaops`. Publikasi source oleh sole Release Lead sudah diverifikasi; klaim source belum dipush pada entri lama kini bersifat historis. `SOURCE_ACCEPTED_ONLY / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
