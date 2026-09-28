@@ -11,6 +11,7 @@
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: clean pushed source `0cbbdfcd2fd71abdd6e2d4e66b0bd5cc2f18f716`, branch `codex/sagapos-owner-po-controls-20260928`, parentf6038f3. Detail20PO terakhir, revisi multi-bahan sebelum penerimaan pertama dan pembatalan sisa memakai API/version/CSRF/permission/audit yang ada; Finance approval, stok dan AP tetap. Original opening revision dipertahankan meski refresh berulang; konflik wajib close/reopen. Unknown commit memakai exact replay, confirmed-write/read-failure dibedakan, pending/session reset aman.
 - Source lane melaporkan21/21 browser dan7/7 domain/durable PASS, check/type/syntax/diff, mobile390/desktop1440 dan axe0; independent review menerima perbaikan stale-draft. Source/branch terverifikasi, preview merge terhadap runtime98 tanpa konflik. Belum menjadi integrated release candidate, immutable artifact, production activation atau operational staff UAT. Full exact/recovery/Owner gate baru diperlukan; production tetap98, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Kontrak waktu remake dan recovery
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: `c546a5637569e8470866bccf390926ed755c7256` (`codex/sagapos-remake-timeline-20260928`) menutup defect durable READY→REMAKE: row lock → clear current prep/ready/completed columns → lifecycle/audit/outbox commit bersama → hydrate null times → new server PREPARING instant. Fault commit mengembalikan memory dan DB; replay tidak menulis ulang waktu; repeat REMAKE saat queued serta cancel setelah SERVED ditolak tanpa perubahan fakta.
@@ -446,6 +447,7 @@ Validasi final mencakup static/type 569 modul, 31 focused test katalog/kiosk/tab
 Runtime final memakai artifact SHA-256 `88cb90627d645324cfd2f5af48d3c194f7ae10bcf2b553ab3fa0a6b2fc428874`, rollback `4b9f0532a55deef06b6df8589387ae9978bf46c2`, dan 34 migrasi unchanged. Health/monitor, empat route, manifest aset, image responses, 22-product API, Owner role/provider smoke, gambar 640x640 ter-decode, dialog detail, mobile two-column, Promo empty truth, dan Member privacy copy lulus tanpa transaksi. Payment/gateway tetap OFF dan Table Order tetap demo-only.
 
 Surface tetap `noindex,nofollow` dan `BUSINESS_READY=false`. Tiga belas aset masih ditandai `FOTO PREVIEW`; seluruh foto/copy/nutrisi memerlukan review hak pakai dan approval bisnis, promo nyata belum diterbitkan, QR belum dibuktikan pada media/meja fisik, custom catalog domain belum tersedia, dan independent offsite restore belum diterima.
+
 ## 2026-09-22 — Phase 3 order uji, KDS, dan simulasi inventory/HPP production
 
 Source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` menambahkan service readiness yang membaca katalog, resep, biaya bahan, serta saldo tersimpan untuk membuat simulasi server-authoritative. Order test diproyeksikan ke KDS dan dapat diproses sampai `SERVED`, tetapi penanda test mempertahankan isolasi: tidak ada penjualan, payment, settlement, reward, inventory movement, atau fakta bisnis yang ditulis. Status `READY`, `SHORTAGE`, dan `INCOMPLETE_RECIPE` membuat kekurangan data dapat ditindaklanjuti tanpa menyamarkannya sebagai nol.

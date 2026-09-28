@@ -11,6 +11,7 @@
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: clean pushed source `0cbbdfcd2fd71abdd6e2d4e66b0bd5cc2f18f716`, branch `codex/sagapos-owner-po-controls-20260928`, parentf6038f3. Detail20PO terakhir, revisi multi-bahan sebelum penerimaan pertama dan pembatalan sisa memakai API/version/CSRF/permission/audit yang ada; Finance approval, stok dan AP tetap. Original opening revision dipertahankan meski refresh berulang; konflik wajib close/reopen. Unknown commit memakai exact replay, confirmed-write/read-failure dibedakan, pending/session reset aman.
 - Source lane melaporkan21/21 browser dan7/7 domain/durable PASS, check/type/syntax/diff, mobile390/desktop1440 dan axe0; independent review menerima perbaikan stale-draft. Source/branch terverifikasi, preview merge terhadap runtime98 tanpa konflik. Belum menjadi integrated release candidate, immutable artifact, production activation atau operational staff UAT. Full exact/recovery/Owner gate baru diperlukan; production tetap98, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Durable REMAKE current-cycle timeline (`IMPLEMENTED_NOT_DEPLOYED`)
 
 - `CONFIRMED`, source clean pushed `c546a5637569e8470866bccf390926ed755c7256` (`codex/sagapos-remake-timeline-20260928`): repository reset timestamp current-cycle atomik; regression membuktikan defect sebelum fix, rollback commit, hydration, replay dan payment invariance. Files: repository, durable timeline test, owned PG18 proof wrapper dan runbook.
@@ -401,6 +402,7 @@
 - Fixed anonymous production loader dengan memindahkan manifest aset dari boundary `/kiosk` yang dilindungi ke modul publik; regression test menjaga kontrak tersebut.
 - Static/type, 31 focused test, responsive/Axe evidence, fresh immutable artifact, encrypted backup/disposable restore, code-only rehearsal, activation, monitor, HTTP smoke, Owner smoke, dan visual production UAT lulus. Tidak ada transaksi dibuat.
 - Status `PRODUCTION_ACTIVATED / PUBLIC_CATALOG_BROWSE_ONLY / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / BUSINESS_READY=false`; payment tetap OFF, foto/copy/nutrisi/promo/QR fisik/domain khusus/offsite restore masih gate bisnis.
+
 ## 2026-09-22 — Phase 3 order → KDS → simulasi HPP/stok aktif
 
 - Added order uji terisolasi yang mengalir ke KDS dan simulator server-side dengan status `READY`, `SHORTAGE`, atau `INCOMPLETE_RECIPE` tanpa mengubah stok maupun fakta bisnis.

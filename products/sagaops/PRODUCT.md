@@ -11,6 +11,7 @@
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: clean pushed source `0cbbdfcd2fd71abdd6e2d4e66b0bd5cc2f18f716`, branch `codex/sagapos-owner-po-controls-20260928`, parentf6038f3. Detail20PO terakhir, revisi multi-bahan sebelum penerimaan pertama dan pembatalan sisa memakai API/version/CSRF/permission/audit yang ada; Finance approval, stok dan AP tetap. Original opening revision dipertahankan meski refresh berulang; konflik wajib close/reopen. Unknown commit memakai exact replay, confirmed-write/read-failure dibedakan, pending/session reset aman.
 - Source lane melaporkan21/21 browser dan7/7 domain/durable PASS, check/type/syntax/diff, mobile390/desktop1440 dan axe0; independent review menerima perbaikan stale-draft. Source/branch terverifikasi, preview merge terhadap runtime98 tanpa konflik. Belum menjadi integrated release candidate, immutable artifact, production activation atau operational staff UAT. Full exact/recovery/Owner gate baru diperlukan; production tetap98, `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Timeline REMAKE durable diperbaiki, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `c546a5637569e8470866bccf390926ed755c7256`, branch `codex/sagapos-remake-timeline-20260928`, parent `29ef0adf47a7e33cb0ce9e8731f6bbd7c91ac67e`. Before REMAKE membawa waktu persiapan lama setelah recovery → after waktu current-cycle dikosongkan atomik bersama status/audit/outbox dan PREPARING berikutnya memakai waktu server baru → elapsed KDS tidak mewarisi siklus sebelumnya.
@@ -433,6 +434,7 @@
 - Admin dapat menyimpan deskripsi pendek/panjang, profil rasa, alergen, maksimal dua badge, alternatif produk, dan estimasi nutrisi bersumber tanggal. Seluruh field mengikuti draft/publish/version/audit yang sudah ada; label nutrisi publik adalah `Estimasi Resep` hanya ketika datanya tersedia.
 - Perbaikan final memindahkan manifest aset katalog ke boundary publik; browser production membuktikan 22 kartu, gambar ter-decode, detail dialog, mobile dua kolom tanpa overflow, serta route Promo/Member yang jujur. QR generator dikunci ke URL HTTPS browse-only `/menu/qr`.
 - Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_TECHNICAL_UAT_PASS / PUBLIC_CATALOG_BROWSE_ONLY / BUSINESS_READY=false`. Payment/gateway tetap `OFF`; Table Order tetap `DEMO`/simulator-only. Foto final beserta hak penggunaan, copy/nutrisi final, promo bisnis nyata, proof QR fisik, domain katalog khusus, offsite restore, dan business acceptance tetap gate terpisah.
+
 ## Production 2026-09-22 — Phase 3 order, KDS, dan simulasi HPP/stok
 
 - `CONFIRMED`: source Phase 3 `6ac0cd9639aedf19bba9f007c5f6cc919810f37d` sudah menjadi bagian dari production source kumulatif `c2e9ee4bf83e7997f0eee078d0e2ad02f9544908` melalui parent `4b9f0532a55deef06b6df8589387ae9978bf46c2`; rollback aktif `4b9f0532a55deef06b6df8589387ae9978bf46c2`, health `ready=true`, schema tetap 34 migrasi, dan payment/gateway tetap `OFF`.
