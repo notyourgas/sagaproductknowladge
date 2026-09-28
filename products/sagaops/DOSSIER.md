@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-09-28 — Rilis gabungan Owner dan lifecycle fokus katalog
+
+`CONFIRMED / PRODUCTION_ACTIVATED`: source `6ea70af5167123927b548d0fee70dd47795f56b0` menggabungkan tujuh perubahan Owner dengan supplier successor `73331ed` dan perbaikan fokus katalog. Before: alur jam layanan/supplier/PO berpindah ke Admin, hasil supplier dapat tertinggal, dan paired history events dapat melepas kartu pembuka setelah dialog ditutup. After: pengaturan/pembelian native, draft/error supplier konsisten, dan penutupan dialog mempertahankan node pembuka ketika filter tidak berubah. Baseline deterministic focus FAIL sebelum patch, original test dan regression sesudah PASS; grid/favorite/promo 390/1440 serta axe lima public surface lulus. Revisi/cancel/invoice masih Admin; PO tetap rencana internal tanpa penerimaan stok/pesan/payment.
+
+Full exact source 1.664 PASS / 0 FAIL / 73 SKIP; static/type 630 tracked module pada Linux, native target 82/82 tanpa skip, dependency production 0 temuan. Artifact immutable 151889920 byte, SHA-256 `09d1660ff34299dbc8f148c3442de9075e803b4e411e68275a2fa7c08e24fcea`, tree SHA-256 `fb5913b28eae371bbcc029f2c4065e920b68875a5784369856aceeb0af06a0f0`. Fresh Owner production role/provider, distinct integrity admission, encrypted DB/credential/evidence backup dan disposable restore, rehearsal kandidat→current→kandidat dengan live production untouched, lalu guarded activation PASS. Receipt fresh dikonsumsi sekali; rollback kini f80146b. Gateway dan 34 migration tetap. Existing HR bridge hanya mengikuti binding SHA pada runner code-only yang berlaku.
+
+Health/artifact/source, Owner logout/session boundary, fresh monitor, smoke tujuh surface dan read-only UI 390/1024/1440 terverifikasi tanpa fakta bisnis baru. KDS ACK successor 585a9fe, HR lokal, Member renewal dan provider/payment mutation tidak termasuk. `CI_NOT_RUN`; bukti native/local dan authenticated smoke bukan UAT pembayaran, device atau kesiapan staff/customer. Reporting OFF/Order Meja DEMO, QRIS merchant belum tersedia, Member 502/503 dan offsite restore belum terverifikasi; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Kontrak ACK durable kompatibel, functional acceptance lulus
 
 - `CONFIRMED`: source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` menutup blocker source-only `986c8cb` tanpa mengubah SQL/constraint/checksum. Waiting scalar tetap NEW, lifecycle versi 1 server-owned diproyeksikan ACKNOWLEDGED saat hydration/response. PREPARING memakai konsumsi inventory atomik yang sama. Audit dan status outbox satu transaksi; replay atau commit gagal tidak menyisakan fakta parsial. Scope/role negatif, payload tidak konsisten dan legacy-forward rollback diuji.

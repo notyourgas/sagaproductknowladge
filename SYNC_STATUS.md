@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-28 — SagaPOS Owner production tersinkron
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: source `6ea70af5167123927b548d0fee70dd47795f56b0`, rollback f80146b, runtime/artifact/health/monitor/Owner read-only UI dan smoke tujuh surface terverifikasi. Full 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82; fresh admission/encrypted restore/rehearsal/activation PASS. Delapan dokumen disinkronkan dari exact source dan live production. Tidak ada transaksi verifikasi; KDS/HR/Member/device/offsite/business UAT tetap terpisah, `BUSINESS_READY=false`. Knowledge `main HEAD`; provenance lengkap dilaporkan setelah push.
+
 ## 2026-09-28 — SagaPOS ACK backend source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagapos-durable-kds-ack-20260928`, exact clean pushed `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2`. 13/13 alur, enam restart, focused 9/9, native PG18.6 concurrency/encrypted restore/cold restart PASS; full 1.663 PASS / 0 FAIL / 73 SKIP, static 632, dependency audit 0. Production f80146b/rollback b4e79a0 tidak berubah; single candidate Release Lead dan release/UAT gate belum selesai. Delapan dokumen disinkronkan dari provenance source/runtime; knowledge `main HEAD`, `BUSINESS_READY=false`.

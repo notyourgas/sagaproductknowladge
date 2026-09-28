@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-28 — SagaPOS Owner dashboard aktif
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: source `6ea70af5167123927b548d0fee70dd47795f56b0` mengaktifkan pengaturan jam/jeda, status integrasi/reporting, supplier dan PO native; memperbaiki simpan supplier serta fokus katalog. Full 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82; Owner/admission/backup/restore/rehearsal/activation dan authenticated UI tiga viewport lulus. Runtime exact, rollback f80146b; tidak mengubah Gateway/34 migration atau membuat transaksi bisnis. KDS ACK/HR lokal tidak ikut, Member/device/merchant QRIS/offsite dan UAT bisnis tetap gap; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — SagaPOS menutup blocker ACK pada source
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` membuat alur cash POS/Kiosk sampai KDS dan closing dapat diulang: 13/13, enam restart, selisih Rp0. Native PG18.6 concurrency dua koneksi, encrypted backup/restore dan cold restart lulus; full lokal 1.663 PASS / 0 FAIL / 73 SKIP, focused 9/9. Tidak ada deploy, schema/provider mutation atau transaksi nyata. Integrasi kandidat, release admission dan operational UAT masih pending, `BUSINESS_READY=false`.

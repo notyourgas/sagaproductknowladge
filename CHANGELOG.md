@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-28 — SagaPOS Owner native diaktifkan
+
+- `CONFIRMED`: source/release `6ea70af5167123927b548d0fee70dd47795f56b0` aktif menggantikan f80146b, yang menjadi rollback. Pengaturan/supplier/PO/dashboard native dan perbaikan lifecycle supplier/catalog mengurangi perpindahan halaman dan stale focus/data. Area: product/dossier/changelog SagaOPS, portfolio, master, gaps dan sync. Full 1.664 PASS / 0 FAIL / 73 SKIP; native 82/82, effective Owner, artifact/admission/encrypted restore/rehearsal/activation dan read-only browser tiga viewport PASS.
+- Production berubah secara code-only; 34 migration/Gateway existing tetap, transaksi verifikasi nol. KDS ACK/HR source-only belum disertakan; Member expiry/502/503, merchant QRIS, devices/offsite/UAT bisnis tetap gap. Status `PRODUCTION_ACTIVATED / BUSINESS_READY=false`; knowledge `main HEAD`. Riwayat candidate HOLD disimpan sebagai bukti, bukan blocker runtime Owner terbaru.
+
 ## 2026-09-28 — SagaPOS ACK durable source-only tervalidasi
 
 - `CONFIRMED`: source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` memperbaiki blocker operasional ACK tanpa migration/provider/UI mutation agar cash POS/Kiosk dapat melewati KDS hingga closing. Area: SagaOPS product/dossier/changelog, portfolio, master, gaps dan sync. 13/13, enam restart, variance nol; PG18.6 dua koneksi/encrypted restore/cold restart PASS; full 1.663 PASS / 0 FAIL / 73 SKIP, focused 9/9, static 632, audit 0.

@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-09-28 — Aktifkan Dashboard Owner, supplier dan PO native
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: `6ea70af5167123927b548d0fee70dd47795f56b0` aktif, rollback f80146b. Jam layanan/pause, status reporting/integrasi, daftar PO, supplier dan pembuatan PO multi-bahan kini native; supplier save/refresh dan katalog dialog focus diperbaiki. Revisi/cancel/invoice tetap Admin.
+- Full 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82, check/type dan dependency audit lulus. Fresh Owner/admission, encrypted backup/disposable restore, rehearsal dan activation PASS; artifact `09d1660ff34299dbc8f148c3442de9075e803b4e411e68275a2fa7c08e24fcea`, runtime/monitor/auth/Owner browser tiga viewport terverifikasi. Tidak membuat transaksi verifikasi atau mengubah schema/provider/Gateway. KDS ACK source-only, Member, device/offsite dan business UAT tetap terpisah; `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Fix ACK durable untuk alur cash/KDS/closing
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` menutup blocker ACK pada source diagnosis `986c8cb`; tidak mengubah migration/provider/UI Owner. Server lifecycle, audit/outbox atomik, legacy rollback dan inventory setelah ACK diuji.

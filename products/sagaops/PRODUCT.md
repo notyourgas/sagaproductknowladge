@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-28 — Dashboard Owner aktif di production
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: exact source `6ea70af5167123927b548d0fee70dd47795f56b0`, branch `codex/sagapos-owner-release-20260928`, kini aktif; rollback `f80146bb0bd6c67235914df2ba188cb551795b78`. Owner mengatur jam/jeda pesanan, membaca status reporting/integrasi yang sesuai runtime, melihat PO, mengelola supplier, dan membuat PO internal multi-bahan dari dashboard. Supplier save/refresh tersinkron dan fokus katalog tetap kembali ke kontrol pembuka. Revisi/pembatalan/invoice tetap melalui Admin.
+- Full exact source 1.664 PASS / 0 FAIL / 73 SKIP, static/type PASS, native Linux 82/82 PASS tanpa skip, dependency production 0 temuan. Artifact SHA-256 `09d1660ff34299dbc8f148c3442de9075e803b4e411e68275a2fa7c08e24fcea`; fresh Owner/admission, encrypted backup/restore disposable, candidate–rollback–candidate rehearsal dan activation lulus. Health/source/artifact/monitor/auth serta smoke tujuh surface dan Owner read-only browser 390/1024/1440/fokus katalog terverifikasi; verifikasi tidak membuat supplier/PO/order/payment/stock.
+- Code-only: 34 migration, Gateway existing, Order Meja DEMO, reporting OFF tetap sesuai runtime. Fix KDS ACK `585a9fe` dan HR lokal tidak termasuk release ini. Member 502/503/pilot expired, merchant QRIS, perangkat printer/NFC, offsite recovery dan UAT bisnis masih gap terpisah. Hosted CI tidak dijalankan untuk branch ini (`CI_NOT_RUN`); gate local/native dicatat. `BUSINESS_READY=false`.
+
 ## 2026-09-28 — ACK KDS tahan restart, source-only
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: exact clean pushed source `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2`, branch `codex/sagapos-durable-kds-ack-20260928`, memperbaiki persistence acknowledge KDS untuk order cash POS dan assisted Kiosk. ACK disimpan sebagai sub-state server-owned yang kompatibel dengan schema lama; harga, provider dan 34 migration tidak berubah. Audit/outbox atomik dan replay tidak menggandakan order, event atau konsumsi stok.

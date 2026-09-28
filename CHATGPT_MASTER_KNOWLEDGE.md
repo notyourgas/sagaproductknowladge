@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## Update 2026-09-28 — Dashboard Owner SagaPOS production
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: active `6ea70af5167123927b548d0fee70dd47795f56b0`, rollback `f80146bb0bd6c67235914df2ba188cb551795b78`. Owner mengatur jam/jeda pesanan, melihat reporting/integrasi sesuai mode runtime, mengelola supplier dan membuat PO multi-bahan langsung di Dashboard. Simpan supplier konsisten dan fokus katalog pulih; revisi/cancel/invoice masih Admin. Full 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82, artifact/admission/Owner/encrypted restore/rehearsal/activation dan read-only UI tiga viewport lulus, tanpa transaksi verifikasi. 34 migration/Gateway existing/reporting OFF/Order Meja DEMO tetap; KDS ACK dan HR source-only tidak ikut. Member expired/502/503, QRIS merchant, printer/NFC, offsite dan UAT bisnis belum selesai; `BUSINESS_READY=false`.
+
 ## Update 2026-09-28 — ACK cash/KDS SagaPOS diperbaiki pada source
 
 - `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` menutup blocker persistence ACK pada diagnosis `986c8cb`. Lifecycle server-owned kompatibel dengan schema/checksum lama; hydration, replay, audit/outbox dan inventory saat PREPARING lulus. Alur cash POS/Kiosk/closing PASS 13/13, enam restart disk, variance Rp0. PG18.6 disposable dua koneksi, encrypted restore/cold restart PASS; full lokal 1.663 PASS / 0 FAIL / 73 SKIP, focused 9/9, static 632/audit 0. Production masih f80146b, rollback b4e79a0; belum integrasi/aktivasi/UAT production. Rollback lama dapat menampilkan ACK sebagai NEW; remake inventory belum diattestasi. Tidak ada pembayaran nyata; `BUSINESS_READY=false`.

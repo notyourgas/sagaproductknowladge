@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-28 — Owner release gate ditutup, gap operasional tetap
+
+- `CONFIRMED`: Owner candidate `6ea70af5167123927b548d0fee70dd47795f56b0` telah melewati full exact 1.664 PASS / 0 FAIL / 73 SKIP, native 82/82, effective Owner, admission, encrypted backup/restore, recovery rehearsal dan production activation. Health/source/artifact/monitor/auth dan read-only UI tiga viewport lulus. Supplier focus/save dan public catalog focus bukan lagi blocker release Owner. Tidak ada kebutuhan persetujuan deploy duplikat; scope telah diotorisasi Andreas.
+- `NEEDS CONFIRMATION`: business/device/staff UAT, merchant QRIS dan offsite recovery masih terbuka. Member expired dan live 502/503 terpisah; renewal memerlukan keputusan yang sesuai scope Member. KDS ACK `585a9fe` belum masuk runtime 6ea70af dan tetap memerlukan kandidat/gate sendiri; HR lokal belum push/merge/deploy. Reporting OFF bukan laporan inventory aktif. `BUSINESS_READY=false`.
+
 ## 2026-09-28 — Blocker ACK ditutup pada source, bukan pada production
 
 - `CONFIRMED`: patch clean/pushed `585a9fe7d043f6ede74f0bbc4ca7d8df144fb8b2` menutup kegagalan acknowledge dari diagnosis `986c8cb`; whole cash journey 13/13, enam disk restart dan closing variance nol. Native PG18.6 dua koneksi/recovery, full regression 1.663 PASS / 0 FAIL / 73 SKIP dan focused 9/9 lulus, tanpa migration/constraint/checksum mutation.
