@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-29 — SagaPOS: integrasi source Cash dan AP lokal
+
+`CONFIRMED`: `7d9aaeed57f2dc30ff89c7cd699d917f59889832` menggabungkan Cash15 dan AP3 pada basis e6 dengan actual15/37/3 file preservation, delta18/syntax17/diff PASS. Status `LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`. Cash74/native8 historis dan AP bukti terarah tidak dipromosikan menjadi whole-final test; Cash hanya EOF-normalized satu fixture. Final full/browser/native/recovery/production/business gate OPEN, no source push/CI atau production/data/provider/payment mutation. Produk lain dan Member recovery tidak berubah oleh integrasi ini.
+
 ## 2026-09-29 — SagaPOS: native pembukuan invoice, validasi source saja
 
 `CONFIRMED`: lokal `32b534b759d381438d5a5be29c59575f4192f124` mengintegrasikan tombol Bukukan utang pada Owner Pembelian, memakai layanan existing dan Finance approver terpisah. Tiga file UI/test, 37 perubahan basis utuh; independen `SOURCE_ONLY_QUALIFIED`. Bukti 15 skenario lokal dirakit lintas run, bukan full run final, ditambah guard19/19; gagal fixture sebelumnya tetap dicatat. `LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`; no source push, deploy, data bisnis atau provider/payment activation. AP/nilai stok bukan tambahan jumlah fisik atau pembayaran. Native/full/recovery dan production/business UAT belum selesai; knowledge source-only tidak mengubah status rilis produk lain.

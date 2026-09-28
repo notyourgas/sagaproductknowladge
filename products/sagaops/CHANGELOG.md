@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-29 — Source Cash15 + AP3 digabung, production tidak berubah
+
+`CONFIRMED / LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832`, basis e6/parent AP32, menerima delta Cash786. Actual preservation15/37/3, exact18path dan syntax17/diff PASS. Cash74/native8 accepted pada snapshot historis; satu fixture hanya EOF-normalized dan14 lainnya identik, bukan whole-final functional PASS. AP evidence tetap terpisah; full/browser/WebKit/native/recovery/Owner/business UAT final OPEN. No source push/CI/deploy/VPS/data/provider/payment mutation; `BUSINESS_READY=false`.
+
 ## 2026-09-29 — Bukukan utang invoice di Owner Pembelian, source-only
 
 - `CONFIRMED`, source lokal `32b534b759d381438d5a5be29c59575f4192f124`, basis e6d55cc. Gap tindakan pembukuan native ditutup pada tiga file; 37 perubahan terintegrasi dipertahankan dan review independen `SOURCE_ONLY_QUALIFIED`.

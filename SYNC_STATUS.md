@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Sync kandidat gabungan Cash/AP source-only
+
+- `CONFIRMED`: source lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, basis e6/parent AP32, Cash786 delta15. Preservation actual15/37/3, exact18path, syntax17/diff PASS; `LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`.
+- Cash74/native8 accepted historis + AP scoped evidence bukan whole-final test. EOF-only pada satu fixture tetap dicatat; final full/browser/native/recovery/production/business gate OPEN. Tidak ada source push/CI/build/heavy/VPS/deploy/provider/payment/data mutation dari integrasi. Delapan dokumen source-only disinkron oleh satu writer pada clean main, validator/pre-staged/public-safety/diff dan immutable remote verification wajib; SHA knowledge dilaporkan setelah push terpisah.
+
 ## 2026-09-29 — Sync native pembukuan invoice Owner, source-only
 
 - `CONFIRMED / accepted` pada scope source: lokal `32b534b759d381438d5a5be29c59575f4192f124`, tree `fd8a356e969dbf51a3673720f9f841afbb430367`, basis e6d55cc; tiga file UI/test, 37 perubahan basis dipertahankan. Independent `SOURCE_ONLY_QUALIFIED`; `LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`.

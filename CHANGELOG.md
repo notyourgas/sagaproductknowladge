@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — knowledge: integrasi Cash15 dan native AP3 lokal
+
+- `CONFIRMED`, sumber actual clean Git/manifest/provenance integrator: lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832`, basis e6/parent AP32, exact delta Cash786. Before dua lane source → after satu kandidat dengan15/37/3 preservation, exact18path/syntax17/diff PASS. Delapan dokumen publik diperbarui; pricing/founder/struktur/produk lain tidak diubah.
+- `LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`; Cash74/native8 historis/AP proof terarah bukan whole-final PASS. Satu fixture Cash EOF-only,14 file identik; final full/browser/native/recovery/production/business OPEN. No source GitHub/CI, runtime/data/provider/payment mutation. Knowledge push terpisah memakai pre/staged validator, public-safety/diff dan immutable remote verification; SHA final dilaporkan setelah push, tanpa raw receipt/PII/secret/protected path.
+
 ## 2026-09-29 — knowledge: native approved invoice posting source-only
 
 - `CONFIRMED`, producer source/test dan independent source review: lokal `32b534b759d381438d5a5be29c59575f4192f124` / tree `fd8a356e969dbf51a3673720f9f841afbb430367`, basis e6d55cc. Native Bukukan utang untuk Owner kini terintegrasi di tiga file, 37 perubahan sebelumnya utuh. Alasan: memperjelas alur invoice disetujui tanpa pindah Admin dan membedakan source acceptance dari rilis.

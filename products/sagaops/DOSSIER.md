@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-09-29 — Integrasi provenance Cash15 dan AP3
+
+`CONFIRMED / LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, parent AP32, mempertahankan basis e6d55cc. Hanya delta15 Cash dari `786df1ebca43ee85052252df90f974196c4ae3ce` digabung; parent author Cash yang lebih tua tidak digunakan sebagai basis integrasi. Ketiga kelompok tidak beririsan: actual Git blob/hash Cash15 sesuai manifest, semua37 perubahan basis tetap, AP3 identik. Exact delta18, syntax17 dan diff check lulus; clean local commit, no source push/PR/CI.
+
+Cash menjaga row CLOSED/APPROVED agar tidak ditimpa projection lama, mengikat payment/refund/closing pada shift yang berwenang dan mengurutkan mutasi asynchronous per instance; database tetap otoritas lintas worker. Konflik memakai rollback dan recovery terarah, bukan reinitialize seluruh order/HPP. AP native meninjau invoice yang disetujui Finance terpisah; pembukuan bukan pembayaran dan tidak menambah jumlah fisik. Source integration tidak mengubah schema, provider atau aturan bisnis baru.
+
+Snapshot historis Cash74/74 dan actual native8/8 dengan physical job closure diterima independen. Commit Cash memiliki satu perbedaan nonsemantik dari byte tes tersebut: dua newline akhir fixture dihapus, body/assertion/timeout dan14 file lain sama. Tidak ada functional rerun atas seluruh author commit atau final gabungan; AP15 merupakan assembled evidence sebelumnya, bukan final integration run. Histori gagal maupun laporan lama tetap tersimpan dan tidak menjadi status runtime terkini.
+
+Gate final exact-candidate full Linux, browser/WebKit/operator, native/recovery/backup/admission/preflight, production activation dan authenticated/business UAT masih terbuka. Tidak ada build/package/restore/VPS/provider/payment/data bisnis mutation dari lane integrasi; Member recovery tetap penanggung jawab release tunggal. `BUSINESS_READY=false`.
+
 ## 2026-09-29 — Native AP posting: integrasi terbatas dan bukti lokal
 
 `CONFIRMED`: source lokal `32b534b759d381438d5a5be29c59575f4192f124` / tree `fd8a356e969dbf51a3673720f9f841afbb430367` membawa kandidat native pembukuan invoice disetujui ke basis terintegrasi e6d55cc. Tiga file UI/test saja; 37 perubahan Owner/AP/HR/Team diwarisi utuh. Layanan backend, schema, permission, dependency, Cash dan Member tidak diubah. Status `SOURCE_ONLY_QUALIFIED / LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`; source GitHub/PR dilewati, `CI_NOT_RUN`.

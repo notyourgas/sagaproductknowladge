@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Gap integrasi source Cash/AP ditutup, acceptance final masih terbuka
+
+- `CONFIRMED`: clean lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` menggabungkan exact Cash15 + AP3 dan mempertahankan37 basis e6, tanpa overlap. Manifest/blob/raw hash, syntax17 dan diff check PASS. `LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`.
+- Gap native8 historis sudah diterima pada snapshot e6+Cash teruji; bukan proof final7d. Cash commit hanya beda EOF satu fixture,14 lainnya identik, no assertion/timeout/body edit. AP assembled proof tetap scoped. OPEN: whole-final full/Linux/browser/WebKit/operator, native/recovery/backup/admission/preflight/production Owner dan business UAT; Member recovery tetap lane berbeda. Source push/CI/deploy dan bisnis/provider/payment mutation tidak dilakukan.
+
 ## 2026-09-29 — Gap source native pembukuan invoice ditutup, gate rilis masih terbuka
 
 - `CONFIRMED`: source lokal `32b534b759d381438d5a5be29c59575f4192f124` mengintegrasikan tindakan Owner Bukukan utang yang hilang dari e6d55cc. Tiga file, 37 perubahan basis utuh; independent `SOURCE_ONLY_QUALIFIED`. Bukti terarah 15 skenario gabungan dan backend guard19/19, bukan whole-file/full run final; dua gagal fixture historis dipertahankan.

@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-29 — Cash dan AP terintegrasi pada source lokal, belum rilis
+
+- `CONFIRMED / LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: kandidat lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832`, tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, parent AP `32b534b759d381438d5a5be29c59575f4192f124`, basis e6d55cc. Delta Cash `786df1ebca43ee85052252df90f974196c4ae3ce` yang berisi 15 file digabung tanpa konflik. Pemeriksaan aktual: 15/15 file Cash cocok dengan manifest, 37/37 file Owner/AP/HR/Team basis dan 3/3 file AP utuh; tepat 18 file berbeda dari e6 dan syntax17/diff check lulus.
+- Perbaikan Cash melindungi penutupan shift dari cache lama, menertibkan urutan payment/refund/closing dan mutasi runtime; AP tetap memakai Finance approver terpisah serta review native Owner yang telah dicatat. Ini menggabungkan source yang sebelumnya terpisah, bukan menambah provider, pembayaran nyata atau role baru.
+- Bukti Cash74/74 dan native8/8 beserta penutupan proses diterima pada snapshot historis berbasis e6, **bukan tes pada seluruh commit gabungan ini**. Commit Cash hanya menormalkan dua newline akhir pada satu fixture, dengan 14 file lainnya identik; tidak ada perubahan assertion/body/timeout. Bukti AP15 gabungan dan guard19 sebelumnya tetap scoped ke source masing-masing. Whole-candidate full/browser/WebKit/native/recovery/Owner/business UAT masih terbuka; tidak ada rerun berat, source push/CI, deploy atau data bisnis mutation dari integrasi ini. `BUSINESS_READY=false`.
+
 ## 2026-09-29 — Pembukuan invoice disetujui, native Owner, source-only
 
 - `CONFIRMED / LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: source lokal `32b534b759d381438d5a5be29c59575f4192f124`, tree `fd8a356e969dbf51a3673720f9f841afbb430367`, basis terintegrasi `e6d55cc2e63e8d997873d25178698389a411a108`. Kandidat pembukuan native lama kini terintegrasi pada tiga file UI/test, tanpa mengganti 37 file perubahan Owner/AP/HR/Team sebelumnya. Review independen menerima `SOURCE_ONLY_QUALIFIED`; source tidak dipush ke GitHub, `CI_NOT_RUN`.

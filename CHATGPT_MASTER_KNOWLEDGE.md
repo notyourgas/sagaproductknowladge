@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — SagaPOS Cash/AP: kandidat source gabungan, belum deploy
+
+`CONFIRMED / LOCAL_SOURCE_INTEGRATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832`, tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, basis e6/parent AP32, Cash delta `786df1ebca43ee85052252df90f974196c4ae3ce`. Actual Cash15 cocok manifest, Owner37 dan AP3 utuh; exact18path, syntax17/diff PASS. Perbaikan immutable closing/payment/refund ordering dan native AP berada dalam satu source, tetapi tidak mengaktifkan provider atau pembayaran nyata.
+
+Cash74/native8 accepted berlaku pada snapshot historis teruji; satu fixture baru hanya EOF-normalized dan14 file identik. AP15 assembled/guard19 tetap bukti source sebelumnya. Tidak ada whole-final functional rerun/full/browser/native/recovery/production/business UAT, source push/CI atau runtime mutation dari lane ini. `BUSINESS_READY=false`; Member recovery dan release berikutnya tetap terpisah.
+
 ## 2026-09-29 — SagaPOS Owner: native Bukukan utang, belum production
 
 `CONFIRMED / LOCAL_SOURCE_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: source lokal `32b534b759d381438d5a5be29c59575f4192f124`, basis e6d55cc; tiga file UI/test, 37 perubahan integrasi utuh, independent `SOURCE_ONLY_QUALIFIED`. Owner dapat meninjau invoice MATCHED dengan satu penerimaan lengkap dan Finance approver berbeda lalu membukukan AP di dialog PO Pembelian. Nilai persediaan/HPP dapat direvaluasi, tetapi stok fisik/kas/payment tidak berubah. Bukti tidak lengkap/unsupported ditahan; uncertain response memakai exact replay, saved ACK tidak dipost ulang.
