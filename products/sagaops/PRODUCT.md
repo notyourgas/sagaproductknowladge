@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-30 — Gelombang 2 UI/UX Owner selesai lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Source kumulatif `6cdb2f548eb03b41ee84ea2c5c40774a751fb732` melanjutkan Gelombang 1 `a4483d053a393c534fdbb2142f16fa55af2482c1`. Menu & promo kini menampilkan aksi tambah produk hanya di tab Produk dan menjelaskan mana perubahan draft versus ketersediaan langsung. Stok & HPP mengutamakan tab Bahan, Gudang, HPP; diagnostik teknis tetap tersedia lewat tautan terpisah. Pembelian mendapat navigasi tahap ke supplier, PO, penerimaan Gudang, invoice/retur, pembayaran tercatat dan AP dari sumber data yang sama. Teks dua tombol Gudang yang sebelumnya hilang karena benturan CSS kembali terbaca. Tidak ada layanan, perhitungan uang/stok, permission, atau mode reporting yang diubah.
+
+Browser focused pada katalog, PO/penerimaan, inventory dan dashboard desktop 1440/mobile 390 lulus setelah tes dashboard lama mengikuti sub-menu Keuangan Gelombang 1. Static 672 modul/schema 35, TypeScript dan diff check lulus; review independen menutup satu masalah keyboard Diagnostik. Production tetap pada source `64dc78e347204ba7823fef8283f0ee881f3e4ff5` dan health ready saat dicek 30 September; integrasi kandidat aktif, release gate dan authenticated Owner UAT masih terbuka. Source push/PR/deploy tidak dijalankan. Tes sintetis ini bukan `BUSINESS_READY`.
+
 ## 2026-09-29 — Gelombang 1 UI/UX Owner selesai lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Atas instruksi Andreas, source `a4483d053a393c534fdbb2142f16fa55af2482c1` berbasis runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` merapikan shell, Beranda, Keuangan, serta navigasi Penjualan/Pesanan. Keuangan yang sebelumnya satu halaman panjang menjadi Ringkasan, Kas & closing, Settlement, dan Utang supplier. Simulator closing berpindah ke area uji operasional; alert Beranda mendapat tautan tindakan dan keadaan tanpa alert menjadi netral. Preferensi sidebar serta fokus closing dipertahankan; refresh mobile tersedia.

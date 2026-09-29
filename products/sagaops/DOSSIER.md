@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-30 — Owner UI/UX Gelombang 2, local acceptance
+
+`CONFIRMED`. Before: header katalog menawarkan tambah produk di setiap tab; Finalisasi Phase 2 menjadi tab utama Stok; Pembelian panjang tanpa akses cepat per tahap; dua CTA Gudang memiliki teks sewarna latar akibat selector tautan umum. After: CTA katalog kontekstual dan copy draft/publikasi, tab harian Bahan/Gudang/HPP dengan deep-link diagnostik, tujuh pintas Pembelian yang memfokuskan panel atau membuka Gudang/AP existing, serta warna CTA yang terbaca. Tidak ada duplikasi AP atau perubahan kalkulasi dan endpoint transaksi.
+
+Source `6cdb2f548eb03b41ee84ea2c5c40774a751fb732`, parent Gelombang 1 `a4483d053a393c534fdbb2142f16fa55af2482c1`. Acceptance browser 1440/390 mencakup aksi katalog sesuai tab, keyboard Diagnostik, fokus Pembelian, overflow, dan kontras CTA; regresi PO, receiving, inventory dan dashboard lulus. Static 672/schema 35, TypeScript serta diff check lulus. Full suite, native production, perangkat fisik dan authenticated Owner UAT belum dijalankan. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; pada cek health 30 September runtime ready masih source `64dc78e347204ba7823fef8283f0ee881f3e4ff5`. Integrasi exact candidate dan release contract tetap terbuka.
+
 ## 2026-09-29 — Owner UI/UX Gelombang 1, local acceptance
 
 `CONFIRMED`; permintaan Andreas menjalankan Gelombang1 setelah screening menu. Before: Keuangan menumpuk kas/closing/settlement/AP dan simulator; no-alert Beranda menyiratkan operasional terkendali. After: empat sub-menu finansial, simulator pada uji closing terpisah, alert actionable, status netral, sidebar menyimpan preferensi, fokus panel lintas route dan refresh mobile. Penjualan/Pesanan memakai tab, filter, pagination dan layanan existing; tidak membuat perhitungan uang/ledger baru.

@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-30 — SagaPOS Owner UI/UX Gelombang 2, belum deploy
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Source `6cdb2f548eb03b41ee84ea2c5c40774a751fb732` melanjutkan UI Gelombang 1: katalog memberi aksi sesuai tab dan membedakan draft dari availability langsung; Stok mengutamakan Bahan/Gudang/HPP serta memisahkan diagnostik; Pembelian menyediakan pintas supplier→PO→penerimaan Gudang→invoice/retur→pembayaran/AP; dua label CTA Gudang diperbaiki. Focused browser 1440/390, static 672/schema 35, TypeScript/diff dan review independen lulus. Production source tetap `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ready pada cek 30 September. Integrasi, release gate dan authenticated Owner UAT masih OPEN; `BUSINESS_READY=false`. [SagaOPS Product](products/sagaops/PRODUCT.md).
+
 ## 2026-09-29 — SagaPOS Owner UI/UX Gelombang1, belum deploy
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Source `a4483d053a393c534fdbb2142f16fa55af2482c1` berbasis `64dc78e347204ba7823fef8283f0ee881f3e4ff5`: Keuangan Ringkasan/Kas&closing/Settlement/Utang supplier, simulator terpisah, Beranda netral/actionable, collapse/fokus/refresh mobile. Focused11/11, static671/schema35, TypeScript/diff PASS; review source dua P2 resolved. Production tidak diubah; integrasi dengan reward candidate lane aktif dan release/authenticated UAT OPEN. `BUSINESS_READY=false`; tidak ada aktivasi reward/provider/data baru. Detail [SagaOPS Product](products/sagaops/PRODUCT.md). Ini UI/UX Wave1 yang berbeda dari Wave1 integrasi reward.

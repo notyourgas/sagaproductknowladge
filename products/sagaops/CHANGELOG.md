@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-30 — Gelombang 2 UI/UX Owner, lokal
+
+- `CONFIRMED`; instruksi Andreas, source `6cdb2f548eb03b41ee84ea2c5c40774a751fb732` di atas Gelombang 1 `a4483d053a393c534fdbb2142f16fa55af2482c1`.
+- Katalog: CTA per tab dan status draft/publikasi lebih jelas. Stok: Bahan/Gudang/HPP sebagai tab harian, diagnostik tetap deep-link. Pembelian: pintas tahap ke panel dan layanan Gudang/AP yang sama. CSS: label tombol Gudang kembali terlihat.
+- Focused browser desktop/mobile, static 672/schema 35, TypeScript, diff check, dan review independen lulus. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; source push/PR/deploy tidak dijalankan. Production masih `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ready pada cek 30 September. Next: integrasi exact candidate, release gate, authenticated Owner UAT.
+
 ## 2026-09-29 — Gelombang1 UI/UX Owner, lokal
 
 - `CONFIRMED`; instruksi Andreas untuk shell/Beranda/Keuangan/Penjualan/Pesanan. Source `a4483d053a393c534fdbb2142f16fa55af2482c1`, base `64dc78e347204ba7823fef8283f0ee881f3e4ff5`.

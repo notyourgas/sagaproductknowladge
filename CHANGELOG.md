@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-30 — knowledge(sagaops): Owner UI/UX Gelombang 2 lokal
+
+- `CONFIRMED`; sumber instruksi Andreas, source commit `6cdb2f548eb03b41ee84ea2c5c40774a751fb732`, focused browser/QA dan health runtime 30 September.
+- Menu & promo, Stok & HPP dan Pembelian dirapikan untuk tugas Owner; CTA Gudang yang tak terbaca diperbaiki. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; production tidak berubah, source push/PR/deploy tidak dijalankan.
+- Dampak: SagaOPS PRODUCT/DOSSIER/CHANGELOG, Portfolio, Master dan Sync Status. Next: integrasi kandidat source aktif, release acceptance dan authenticated Owner UAT. Knowledge commit terpisah pada main HEAD.
+
 ## 2026-09-29 — knowledge(sagaops): UI/UX Owner Gelombang1 lokal
 
 - Klasifikasi `CONFIRMED`; sumber instruksi Andreas, commit `a4483d053a393c534fdbb2142f16fa55af2482c1`, focused tests dan runtime monitor22:52WIB.
