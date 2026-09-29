@@ -1,5 +1,28 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — Wave 3 v2: admission program lokal, belum deploy
+
+`CONFIRMED`; Andreas meminta Wave3. Publish metadata-only sekarang menghasilkan
+Reward/Quest authoritative lewat draft/review independen/publish pada jalur lokal;
+Member mempertahankan status unavailable/koreksi dan tidak membuat completion
+dari state demo. Backend `733fea02f8405ed9caf3c584f2de7e5055cd63b5`
+(`codex/member-wave3-publishing-v2`); Member
+`bcf0a66d5c4c3db1a0835e686c9b13e6722cffc8`
+(`codex/member-wave3-projection-v2`); contracts
+`755ed1dccaf07c3576b6680faf2404f4724669bf` unchanged.
+Backend53file, Member582/582/static, authenticated synthetic API, scoped denial,
+concurrent retry dan embedded PostgreSQL close/reopen/reconciliation PASS.
+Local committed saja; source push/PR/CI/deploy/new activation/real UAT NOT_RUN.
+Production tetap `20260929T093800Z-e428b20-r0u`, monitor PASS; bisnis
+Reward/Quest/registrasi publik OFF; `IN_PROGRESS / BUSINESS_READY=false`.
+OPEN: Owner governed UI, normalized PostgreSQL atomic admission, generic Quest
+refund, candidate browser/UAT. Browser historis FAILED, tidak diulang/diklaim PASS.
+Next: normalized admission dan Owner UI; knowledge sync terpisah, bukan deploy.
+Detail: products/saga-platform/PRODUCT.md dan DOSSIER.md; histori di bawah tetap
+berlaku pada candidate masing-masing, bukan bukti rilis Wave3 ini.
+
+
+
 ## 2026-09-29 — Wave 2 v2: milestone rekonsiliasi refund lokal
 
 `CONFIRMED`; Andreas meminta lanjut Wave2 pada roadmap v2 loyalty/transaksi,

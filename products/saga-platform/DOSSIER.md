@@ -1,5 +1,43 @@
 # Saga Platform Dossier
 
+## 2026-09-29 — Wave 3 v2: governed Reward/Quest admission lokal
+
+`CONFIRMED`; sumber: permintaan Andreas untuk lanjut Wave3, source commit,
+tests lokal, dan monitor runtime pada 29 September 2026. Before publish hanya
+metadata -> after draft berisi definition tervalidasi, maker-submit-review
+independen-Owner publish memasukkan Reward/Quest aktual ke authority Platform.
+Katalog Member mengikuti organization/context, periode, stock/budget dan outcome
+server; retry publish/reserve/claim tidak menggandakan efek. Close/reopen database
+lokal mempertahankan definition, hold, grant, claim dan rekonsiliasi.
+Member menerima EXPIRED/BUDGET_BLOCKED/COMPENSATED, tidak menentukan completion
+dari penghitung demo atau cached claim, serta membaca ulang saldo setelah reserve.
+
+Backend `733fea02f8405ed9caf3c584f2de7e5055cd63b5`
+(`codex/member-wave3-publishing-v2`); Member
+`bcf0a66d5c4c3db1a0835e686c9b13e6722cffc8`
+(`codex/member-wave3-projection-v2`). Shared contracts tetap
+`755ed1dccaf07c3576b6680faf2404f4724669bf`; tidak ada migration/dependency baru.
+Backend53file/static, Member582/582/static, localhost authenticated API sintetis,
+scope denial, concurrent retry, embedded PostgreSQL close/reopen dan
+reconciliation PASS. Secret scan delta tanpa temuan high-confidence dan audit
+production dependency0. Bukan native production PostgreSQL atau real-user UAT.
+
+`LOCAL_VALIDATED / COMMITTED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN /
+IN_PROGRESS / BUSINESS_READY=false`; source push/PR NOT_RUN.
+Production tidak berubah: `20260929T093800Z-e428b20-r0u`,
+monitor customer/member/public PASS. Reward/Quest dan registrasi publik tetap OFF;
+OTP internal allowlist mengikuti izin Wave1, tidak diperluas.
+Wave3 belum selesai: UI governed create/edit/preview/pause/archive, admission
+atomik normalized PostgreSQL, lifecycle refund generic Quest dan browser/UAT
+candidate baru masih OPEN. Repository normalized menolak definition admission
+secara eksplisit, bukan diam-diam mempublikasikan metadata saja.
+Gate browser historis Wave3 FAILED dan dua correction rounds telah dipakai;
+tidak dijalankan ulang atau disebut PASS pada milestone ini. Wave2 residual
+policy/event mapping tetap OPEN. Next: tutup jalur normalized PostgreSQL dan
+Owner UI sebelum readiness/deploy. Histori di bawah bukan status candidate baru.
+
+
+
 ## 2026-09-29 — Wave 2 v2: milestone rekonsiliasi refund lokal
 
 `CONFIRMED`; Andreas meminta lanjut Wave2 pada roadmap v2 loyalty/transaksi,
