@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — SagaPOS Owner UI/UX Gelombang1, belum deploy
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Source `a4483d053a393c534fdbb2142f16fa55af2482c1` berbasis `64dc78e347204ba7823fef8283f0ee881f3e4ff5`: Keuangan Ringkasan/Kas&closing/Settlement/Utang supplier, simulator terpisah, Beranda netral/actionable, collapse/fokus/refresh mobile. Focused11/11, static671/schema35, TypeScript/diff PASS; review source dua P2 resolved. Production tidak diubah; integrasi dengan reward candidate lane aktif dan release/authenticated UAT OPEN. `BUSINESS_READY=false`; tidak ada aktivasi reward/provider/data baru. Detail [SagaOPS Product](products/sagaops/PRODUCT.md). Ini UI/UX Wave1 yang berbeda dari Wave1 integrasi reward.
+
 ## 2026-09-29 — Wave1 reward kasir: checkpoint source, belum deploy
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / UI_ACCEPTANCE_OPEN`. Permintaan Andreas: kerjakan Wave1 benefit Member dan lifecycle kasir. Source POS `e894e01f2712ed5d9de8abb959e77375ac0c03d3` pada `codex/cashier-member-reward-wave1-20260929`; Member `055f479c396039c8aaca1b3de98185f0d45955b1` pada `codex/member-pos-reward-wave1-20260929`; keduanya sudah dipush.

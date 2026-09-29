@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — knowledge(sagaops): UI/UX Owner Gelombang1 lokal
+
+- Klasifikasi `CONFIRMED`; sumber instruksi Andreas, commit `a4483d053a393c534fdbb2142f16fa55af2482c1`, focused tests dan runtime monitor22:52WIB.
+- Keuangan panjang → empat sub-menu, simulator ke uji operasional; status/tindakan Beranda dan navigasi responsive dirapikan. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; production tidak berubah, source push/PR/deploy NOT_RUN.
+- Dampak: PRODUCT/DOSSIER/CHANGELOG SagaOPS, Portfolio, Master, Gaps dan Sync Status. Next: integrasi kandidat reward aktif, release acceptance dan authenticated UAT. Knowledge terpisah pada main HEAD.
+
 ## 2026-09-29 — Wave1 reward kasir: checkpoint source, belum deploy
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / UI_ACCEPTANCE_OPEN`. Permintaan Andreas: kerjakan Wave1 benefit Member dan lifecycle kasir. Source POS `e894e01f2712ed5d9de8abb959e77375ac0c03d3` pada `codex/cashier-member-reward-wave1-20260929`; Member `055f479c396039c8aaca1b3de98185f0d45955b1` pada `codex/member-pos-reward-wave1-20260929`; keduanya sudah dipush.

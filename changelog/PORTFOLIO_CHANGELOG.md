@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-29 — SagaPOS Owner UI/UX Gelombang1 lokal
+
+`CONFIRMED`; source `a4483d053a393c534fdbb2142f16fa55af2482c1` merapikan workflow Owner: Keuangan empat sub-menu, uji closing terpisah, Beranda netral/actionable, sidebar/fokus/refresh mobile. Fokus11/11, static671/schema35, TypeScript/diff dan review delta PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Production tidak diubah, aktivasi bisnis tidak bertambah; integrasi/release/UAT OPEN. Detail [SagaOPS Product](../products/sagaops/PRODUCT.md) dan [Dossier](../products/sagaops/DOSSIER.md).
+
 ## 2026-09-29 — Wave1 reward kasir: checkpoint source, belum deploy
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / UI_ACCEPTANCE_OPEN`. Permintaan Andreas: kerjakan Wave1 benefit Member dan lifecycle kasir. Source POS `e894e01f2712ed5d9de8abb959e77375ac0c03d3` pada `codex/cashier-member-reward-wave1-20260929`; Member `055f479c396039c8aaca1b3de98185f0d45955b1` pada `codex/member-pos-reward-wave1-20260929`; keduanya sudah dipush.

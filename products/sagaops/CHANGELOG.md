@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-29 — Gelombang1 UI/UX Owner, lokal
+
+- `CONFIRMED`; instruksi Andreas untuk shell/Beranda/Keuangan/Penjualan/Pesanan. Source `a4483d053a393c534fdbb2142f16fa55af2482c1`, base `64dc78e347204ba7823fef8283f0ee881f3e4ff5`.
+- Keuangan panjang → empat sub-menu tugas; simulator terpisah; no-alert netral dan tautan tindakan; collapse/fokus/refresh mobile tertutup. Delta operator.js, pos-alpha.css dan focused browser test.
+- Local focused11/11, static671/schema35, TypeScript/diff PASS; dua P2 review source resolved. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Production tidak berubah; next: integrasi kandidat lane aktif, release acceptance dan UAT. Source push/PR/deploy NOT_RUN.
+
 ## 2026-09-29 — Wave1 reward kasir: checkpoint source, belum deploy
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / UI_ACCEPTANCE_OPEN`. Permintaan Andreas: kerjakan Wave1 benefit Member dan lifecycle kasir. Source POS `e894e01f2712ed5d9de8abb959e77375ac0c03d3` pada `codex/cashier-member-reward-wave1-20260929`; Member `055f479c396039c8aaca1b3de98185f0d45955b1` pada `codex/member-pos-reward-wave1-20260929`; keduanya sudah dipush.

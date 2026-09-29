@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-29 — Owner UI/UX Gelombang 1, local acceptance
+
+`CONFIRMED`; permintaan Andreas menjalankan Gelombang1 setelah screening menu. Before: Keuangan menumpuk kas/closing/settlement/AP dan simulator; no-alert Beranda menyiratkan operasional terkendali. After: empat sub-menu finansial, simulator pada uji closing terpisah, alert actionable, status netral, sidebar menyimpan preferensi, fokus panel lintas route dan refresh mobile. Penjualan/Pesanan memakai tab, filter, pagination dan layanan existing; tidak membuat perhitungan uang/ledger baru.
+
+Source lokal `a4483d053a393c534fdbb2142f16fa55af2482c1`, base production `64dc78e347204ba7823fef8283f0ee881f3e4ff5`. Delta hanya operator JavaScript, CSS dan satu focused browser test. Tes11/11 PASS, static671/schema35, TypeScript serta diffcheck PASS; review source independen dua P2 resolved. Desktop1440/mobile390 sepuluh route, empty/filled, tanggal, last-data saat refresh503, collapse active group, fokus closing, Axe serious/critical dan overflow diuji. Uang/pesanan tidak berubah pada fixture. Bukan full-suite/native/recovery/hardware/liveOwnerUAT PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; integrasi reward kandidat baru, release contract dan authenticated UAT tetap OPEN. Tidak ada deploy/aktivasi/mutasi production.
+
 ## 2026-09-29 — Wave1 reward kasir: checkpoint source, belum deploy
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / UI_ACCEPTANCE_OPEN`. Permintaan Andreas: kerjakan Wave1 benefit Member dan lifecycle kasir. Source POS `e894e01f2712ed5d9de8abb959e77375ac0c03d3` pada `codex/cashier-member-reward-wave1-20260929`; Member `055f479c396039c8aaca1b3de98185f0d45955b1` pada `codex/member-pos-reward-wave1-20260929`; keduanya sudah dipush.

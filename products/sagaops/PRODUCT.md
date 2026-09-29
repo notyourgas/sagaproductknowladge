@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-29 — Gelombang 1 UI/UX Owner selesai lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Atas instruksi Andreas, source `a4483d053a393c534fdbb2142f16fa55af2482c1` berbasis runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` merapikan shell, Beranda, Keuangan, serta navigasi Penjualan/Pesanan. Keuangan yang sebelumnya satu halaman panjang menjadi Ringkasan, Kas & closing, Settlement, dan Utang supplier. Simulator closing berpindah ke area uji operasional; alert Beranda mendapat tautan tindakan dan keadaan tanpa alert menjadi netral. Preferensi sidebar serta fokus closing dipertahankan; refresh mobile tersedia.
+
+Sebelas tes browser/domain terkait lulus, termasuk empty/filled, desktop1440/mobile390, tanggal, refresh503, Axe/overflow, permission, dan fakta transaksi tidak berubah. Static671/schema35 dan TypeScript lulus; review source independen menutup dua P2. Ini focused local acceptance, bukan full-suite/production UAT. Production tidak diubah oleh pekerjaan ini; health22:52WIB tetap ready pada `64dc78e347204ba7823fef8283f0ee881f3e4ff5`. Integrasi dengan kandidat reward lane lain serta packaging/release acceptance masih OPEN; reward/provider/data bisnis tidak diaktifkan, `BUSINESS_READY=false`. Source commit lokal, push/PR/deploy NOT_RUN; knowledge dipush terpisah.
+
 ## 2026-09-29 — Wave1 reward kasir: checkpoint source, belum deploy
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / UI_ACCEPTANCE_OPEN`. Permintaan Andreas: kerjakan Wave1 benefit Member dan lifecycle kasir. Source POS `e894e01f2712ed5d9de8abb959e77375ac0c03d3` pada `codex/cashier-member-reward-wave1-20260929`; Member `055f479c396039c8aaca1b3de98185f0d45955b1` pada `codex/member-pos-reward-wave1-20260929`; keduanya sudah dipush.
