@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-09-29 — Wave 2 / S3 Member inti: local validated, belum deploy
+
+- `CONFIRMED`; Andreas meminta lanjut Wave2. Source backend `e9ecc3d135ab79603a266c9517961a7999981144`, Member `2e49f5cea9e7f4b9f64b701a26a1f1e87f5a17c8`, di atas Wave1; shared contracts tetap `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`. Before self-service ditolak atau hanya mengubah browser -> after explicit memberCore, profil/undo dan preferensi versioned, Inbox read/deep-link/read-all tersimpan, privacy request EXPORT/CORRECTION/DELETION retry-safe; Home/ledger/Pass tetap proyeksi Platform. Permintaan penghapusan tidak langsung menghapus akun.
+- Backend49berkas dan frontend580/580 serta check PASS. Actual synthetic API/proxy/browser: sim OTP existing, consent, profile/undo, failure+reload preferences, Inbox persistence, privacy ambiguous retry tanpa duplikasi, masked Pass/focus, cursor20+5, offline stale/recovery, 320/360/375/390/430, root text200%, reduced motion, Axe serious/critical0 pada layar yang diuji; saldo/XP tidak berubah. Embedded PostgreSQL restore/restart PASS; migration15->15 byte-identical. Bukan native PostgreSQL production/iPhone PWA atau authenticated production UAT.
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; source branch codex/member-wave2-core dan codex/member-wave2-core-ui belum push/PR. Production tetap core-only `20260929T032900Z-3e43ee8-r0u` (read-only monitor29September11:41WIB PASS), bukan kandidat Wave1/2. Tidak ada schema/backfill, mutasi data production, email nyata, deploy atau activation dari run ini.
+- OPEN: runner dan immutable artifact harus mengikat pasangan Wave1+2, backup terenkripsi/disposable restore, native recovery/rollback, target migration journal, genuine Owner dan authenticated UAT kandidat. Real existing Member OTP tetap membutuhkan otorisasi provider/UAT khusus. Reward/quest/SagaPOS/SagaBook/Google/Push/payment/hardware tidak ikut dibuka. Wave2 implementation milestone selesai lokal; operational delivery masih IN_PROGRESS. Knowledge dipisahkan dari source melalui checkout bersih; checkout canonical yang dirty dipertahankan.
+
 ## 2026-09-29 — Wave 1 Owner/Member local-only
 
 - `CONFIRMED`: backend `34535d9edc9159436b93edadad3295491f7105c9`, Member `28ec581ce30f3bc94842bac4c1374b003b3760a1`; contracts unchanged. Before core-only/registration coupling -> after read-only organization registry and existing-only login/consent/session. No invented context links, new accounts, balance corrections or Member-to-Owner promotion.
