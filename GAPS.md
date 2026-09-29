@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Saga Member: pendaftaran permanen aktif
+
+`CONFIRMED`; new-member rejection/internal-only OTP blocker ditutup DEC-219
+dan release `20260929T125600Z-612f23f-r0u`. Public email signup tidak mengikuti
+expiry business pilot. Provider accepted202 ke alamat pemilik terotorisasi;
+inbox receipt, verifikasi kode, new real Member/iPhone UAT masih OPEN.
+Reviewer personal login/provisioning, integrated POS/Book and durable business
+program acceptance tetap OPEN; public signup tidak menggantikannya.
+`PRODUCTION_ACTIVATED` untuk signup/core saja; BUSINESS_READY=false.
+Lihat [PRODUCT](products/saga-platform/PRODUCT.md).
+
 ## 2026-09-29 — Saga Member: keputusan scope tertutup, gate operasional terbuka
 
 `CONFIRMED`; DEC-218 menutup outlet Kopi Saga, durasi tujuh hari, nominasi

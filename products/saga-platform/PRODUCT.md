@@ -1,5 +1,35 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-29 — Pendaftaran Member permanen production (DEC-219)
+
+`CONFIRMED`; keputusan terbaru Andreas membuka pendaftaran Member permanen
+(DEC-219). Before akun baru ditolak dan OTP internal-only -> after signup/login
+email publik via provider existing, tanpa mengikuti expiry pilot bisnis.
+Link kanonik: https://app.sagamember.site/member. Akun dibuat setelah verifikasi
+email; persetujuan tetap wajib dan tidak ada grant Owner/reviewer otomatis.
+
+Production `20260929T125600Z-612f23f-r0u` telah `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED`: backend `612f23fddd446347ae9d1259f898c4f050291fae`,
+Member `0a8d693aef5e30ca04a7b5d96b40afe4ef2fb0ed`, contracts
+`755ed1dccaf07c3576b6680faf2404f4724669bf`, artifact
+`ac8a97d7c8e5eb9349bce2256279627bce7329fcc79d1b0e85f5336563eddb0b`.
+Source lokal committed; push/PR/hosted CI NOT_RUN. Vercel lama tidak berubah.
+
+Validasi lokal backend52 test files, frontend581 tests, runner100 tests dan
+synthetic integrated browser signup/consent/restart/Owner-denial PASS.
+Native PostgreSQL18.6 migrations15 tetap; encrypted backup/disposable restore,
+off-host encrypted copy/checksum, current Owner proof, actual rollback retaining
+data, final reactivation dan monitor PASS. Canary OTP nyata ke alamat pemilik
+mendapat202 pada endpoint aplikasi yang benar dan accepted by provider;
+inbox receipt, verifikasi kode, akun Member nyata baru dan iPhone UAT OPEN.
+Tidak menyamakan respons202 dengan delivered-to-inbox atau authenticated UAT.
+
+Public registration serta user-initiated email OTP ON; business window tetap
+CLOSED. Reward/Quest, POS/Book business integration, Google/Push, broadcast,
+payment/QRIS/NFC/printer tetap OFF. DEC-218 tidak memulai pilot bisnis dengan
+signup ini. `BUSINESS_READY=false`; historical checkpoints di bawah bukan
+status live terbaru.
+
 ## 2026-09-29 — Scope pilot tujuh hari disetujui; belum diaktifkan
 
 `CONFIRMED`; keputusan Andreas: pilot satu outlet Kopi Saga selama tujuh hari,

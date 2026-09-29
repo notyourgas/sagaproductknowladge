@@ -1,5 +1,17 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-219 — Pendaftaran Saga Member permanen
+
+- Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: public Member signup/login.
+- Keputusan: buka pendaftaran permanen dengan email OTP provider existing, tidak tergantung expiry pilot bisnis.
+- Alasan: calon Member perlu membuat akun sendiri melalui link kanonik.
+- Alternatif: closed cohort/internal-only OTP atau memperpanjang semua fitur bisnis; tidak dipilih.
+- Dampak: email diverifikasi sebelum membuat Member, consent tetap wajib; tidak ada grant Owner/reviewer. Production registration/core aktif; provider canary accepted202, inbox dan authenticated new Member/iPhone UAT masih OPEN.
+- Batas: tidak membuka Reward/Quest/POS/Book/payment/Google/Push/broadcast/hardware; DEC-218 business pilot belum diaktifkan, BUSINESS_READY=false.
+- Menggantikan: batas signup/OTP internal DEC-217; histori validasi/izin sebelumnya dipertahankan.
+- Terkait: [Saga Platform](products/saga-platform/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md).
+
 ## DEC-218 — Pilot Saga Member satu outlet selama tujuh hari
 
 - Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
@@ -13,7 +25,7 @@
 
 ## DEC-217 — Saga Member OTP internal dan UAT alamat pemilik
 
-- Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Tanggal: 2026-09-29. Status: `DEPRECATED` untuk batas signup/OTP internal, diganti [DEC-219](#dec-219--pendaftaran-saga-member-permanen); histori rilis/validasi dan batas bisnis lain dipertahankan. Pemberi keputusan Andreas.
 - Keputusan: gunakan provider email OTP existing untuk login Member dengan internal allowlist dan UAT hanya ke alamat pemilik; lanjutkan Wave 1 lalu guarded deploy.
 - Alasan: menguji login Member nyata setelah dashboard Owner tersedia.
 - Alternatif: simulator saja atau registrasi publik; tidak dipilih untuk scope ini.

@@ -1,5 +1,23 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Pendaftaran Member permanen production (DEC-219)
+
+`CONFIRMED`; DEC-219 mengganti batas signup/OTP internal pada DEC-217:
+pendaftaran permanen aktif di https://app.sagamember.site/member setelah email
+terverifikasi dan consent. Tidak memberi akses Owner/reviewer atau memulai
+pilot bisnis DEC-218.
+
+Exact release `20260929T125600Z-612f23f-r0u`; backend
+`612f23fddd446347ae9d1259f898c4f050291fae`, Member
+`0a8d693aef5e30ca04a7b5d96b40afe4ef2fb0ed`. Local contracts/auth/browser,
+native PG18.6 unchanged15, encrypted backup/disposable restore, off-host copy
+checksum, rollback/data retained/reactivation dan monitor PASS. OTP nyata pada
+jalur aplikasi mendapat202, accepted by provider; inbox/code verification,
+new real Member and physical iPhone UAT OPEN. `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / CI_NOT_RUN / BUSINESS_READY=false`; source push/PR NOT_RUN.
+Business window CLOSED; reward/quest/POS/Book/Google/Push/broadcast/payment/hardware
+OFF. Detail [PRODUCT](products/saga-platform/PRODUCT.md). Checkpoint lama berikut adalah histori.
+
 ## 2026-09-29 — Sinkronisasi keputusan pilot DEC-218
 
 `CONFIRMED`; scope Kopi Saga tujuh hari, reviewer independen dan iPhone UAT
