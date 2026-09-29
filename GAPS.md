@@ -4,6 +4,17 @@
 
 `CONFIRMED`: UI candidate `a4483d053a393c534fdbb2142f16fa55af2482c1` telah focused local validated, belum dipromosikan. Integrasikan delta tiga file di atas active release/kandidat reward terbaru tanpa kehilangan perubahan lane lain, lalu exact-candidate release contract dan authenticated Owner UAT. Ini delivery gap, bukan kegagalan11 tes lokal. Production tidak diubah; `BUSINESS_READY=false`. Detail [Product](products/sagaops/PRODUCT.md).
 
+## 2026-09-29 — E2E-0/1: integration checkpoint lokal, belum deploy
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / IN_PROGRESS`. Andreas meminta E2E-0/1 dan mengizinkan koordinasi dengan SAGAPOS Implementation Lead. Backend lokal `2202beefab8448361efbb423c1d671ca83c262be` pada `codex/member-e2e01-access`; Member harness `1f9f73047f7c8cbc26343ae8cc487b66ba58c988` pada `codex/member-e2e01-acceptance`. Keduanya belum dipush. Candidate POS yang digunakan sebagai baseline: `e894e01f2712ed5d9de8abb959e77375ac0c03d3`; contracts/dependency/migration tetap.
+
+Before integrasi belum memiliki bukti replay/refund lintas projection yang lengkap -> after kontrol akses operator eksplisit, commerce scope/provenance terikat kredensial, referensi alokasi authoritative untuk refund POS, dan koreksi refund Rupiah kumulatif digunakan ulang. Platform tetap authority Points/XP; Member hanya projection. Focused final backend 43/43 dan Member unit 583/583 PASS. Synthetic seam sebelumnya lulus earn/pending/retry/refund, Member/Owner projection, pagination, offline dan restart; checkout di harness adalah simulator, bukan repository/outbox POS nyata. Perubahan source akhir belum memiliki full-suite/native/restore/browser acceptance.
+
+Full suite terhenti pada disposable encrypted restore karena kapasitas disk lokal tidak memadai; browser harness terhenti pada restart health. E2E-0/1 belum COMPLETE. OPEN: kapasitas restore, POS atomic earn/refund outbox dan dispatch, final native PostgreSQL acceptance, scoped machine read/reward boundaries, personal operator workspace, mobile/iPhone authenticated UAT dan exact-pair release gates. Kompensasi generic Quest mempunyai dependency tersendiri dan tidak disisipkan ke slice ini.
+
+Production **tidak berubah**: backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`, frontend `a4870bb3dc428168083f4650f41ed5a466ba19cc`, release `20260929T150800Z-a130945-r0u`. Tidak ada deployment/admission/provider/payment baru; `BUSINESS_READY=false`. Next: sediakan kapasitas disposable, sambungkan POS ke kontrak receipt/refund, kemudian verifikasi kandidat akhir. Ini bukan audit security mendalam atau klaim aman produksi.
+
+
 ## 2026-09-29 — Wave1 reward kasir: checkpoint source, belum deploy
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / UI_ACCEPTANCE_OPEN`. Permintaan Andreas: kerjakan Wave1 benefit Member dan lifecycle kasir. Source POS `e894e01f2712ed5d9de8abb959e77375ac0c03d3` pada `codex/cashier-member-reward-wave1-20260929`; Member `055f479c396039c8aaca1b3de98185f0d45955b1` pada `codex/member-pos-reward-wave1-20260929`; keduanya sudah dipush.
