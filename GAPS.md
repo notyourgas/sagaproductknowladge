@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Wave1 reward kasir: checkpoint source, belum deploy
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / UI_ACCEPTANCE_OPEN`. Permintaan Andreas: kerjakan Wave1 benefit Member dan lifecycle kasir. Source POS `e894e01f2712ed5d9de8abb959e77375ac0c03d3` pada `codex/cashier-member-reward-wave1-20260929`; Member `055f479c396039c8aaca1b3de98185f0d45955b1` pada `codex/member-pos-reward-wave1-20260929`; keduanya sudah dipush.
+
+Before kontrak benefit tidak lengkap/local fixture -> after benefit IDR scoped dengan product/quantity atau fixed/percentage-cap, exclusive stacking, version/fingerprint; reserve terikat checkout, commit/release dari fakta pembayaran tersimpan, replay/restart tanpa double-spend. Member17/17 dan POS25/25 focused PASS nol skip; POS static689/schema35/TypeScript PASS. Regresi browser promo3/3 PASS, tetapi browser reward FAILED karena fixture navigasi membuka kontrol tambahan yang bukan Member & reward. Batas dua correction round dihormati; ledger sprint diterima1/2. Ini bukan full-suite/native-production/Owner UAT PASS.
+
+Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347204ba7823fef8283f0ee881f3e4ff5`/schema35. Reward default OFF, Member business admission tidak diubah, tidak ada reward/points/campaign/payment activation baru. `BUSINESS_READY=false`. Next: perbaiki navigasi tes melalui kontrol Member & reward yang sudah ada, tutup desktop1440/mobile390+Axe, lalu exact-pair native/release acceptance dan approved reward mapping/admission. Hold pembayaran ambigu tidak dilepas oleh timer; orphan-before-persistence reconciliation dan refund provider/ESB (Wave2) tetap OPEN. Local refund tidak mengklaim reverse reward provider.
+
+
 ## 2026-09-29 — Gate onboarding/OTP release CLOSED; human UAT OPEN
 
 `CONFIRMED`; DEC-222 source/mobile, packaging, native PostgreSQL, production
