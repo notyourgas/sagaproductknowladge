@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Onboarding Wave 1 lokal; mobile polish dan release belum dilakukan
+
+`CONFIRMED`; DEC-221 menutup jalur source onboarding public yang sebelumnya
+melewati welcome/interest/card dan perlindungan checkpoint/retry/profil akun selesai.
+Backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`, Member
+`0b15fa2187373f4c86f321f0ce17a931fe9b5dfa`: `LOCAL_VALIDATED`, BELUM DEPLOY.
+Wave 2 ukuran/gap mobile, Wave 3 candidate recovery/preflight, personal Google
+callback dan iPhone UAT masih OPEN. Business/provider OFF tidak ditutup oleh
+onboarding. Rilis terakhir tercatat di bawah tidak dimutasi pada wave ini.
+
 ## 2026-09-29 — Google aktif; authenticated callback masih OPEN
 
 `CONFIRMED`; DEC-220 menutup blocker Google OFF dan UI OTP-only pada release

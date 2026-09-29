@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-221 — Wave 1 onboarding public, tanpa deploy atau aktivasi bisnis
+
+- Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: kerjakan Wave 1 alur member baru/existing/incomplete; Google utama, OTP fallback, checkpoint Platform, profil/consent, minat opsional dan kartu masked.
+- Alasan: mengembalikan onboarding yang jelas tanpa mengulang profil akun selesai.
+- Alternatif: langsung polish spacing/deploy atau membuka semua benefit/provider; tidak dipilih dalam wave ini.
+- Dampak: source lokal `LOCAL_VALIDATED` pada backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9` dan Member `0b15fa2187373f4c86f321f0ce17a931fe9b5dfa`; contracts/schema/provider unchanged.
+- Batas: BELUM DEPLOY, source push/PR/CI NOT_RUN; BUSINESS_READY=false. Wave 2 mobile size/gap dan Wave 3 release/UAT belum dikerjakan. DEC-220 production Google tetap berlaku, tidak ada aktivasi baru.
+- Terkait: [Saga Platform](products/saga-platform/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md).
+
 ## DEC-220 — Google menjadi login utama Saga Member
 
 - Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.

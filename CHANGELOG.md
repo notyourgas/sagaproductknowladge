@@ -1,5 +1,32 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — Wave 1 onboarding lokal (DEC-221)
+
+`CONFIRMED`; Andreas menyetujui Wave 1 onboarding, source/test lokal saja.
+Before public login melewati welcome dan menutup onboarding setelah consent ->
+after welcome, Google utama/email fallback, profil + consent, minat opsional,
+kartu masked dengan Points/XP/tier dari Platform, lalu Home. Akun selesai tidak
+mengulang/menimpa profil; akun belum selesai melanjutkan checkpoint Platform
+setelah reload/re-login. WhatsApp dan tanggal lahir opsional; push/benefit OFF
+bukan langkah wajib dan tidak dijanjikan aktif.
+
+Backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`; Member
+`0b15fa2187373f4c86f321f0ce17a931fe9b5dfa`; branch source
+`codex/member-onboarding-wave1`. Contracts, dependency/lockfile dan migrations
+unchanged. Backend static check + 52 isolated test files PASS; focused API,
+identity dan database restart 13/13; Member static check + 583/583 PASS.
+Local API/proxy/browser PASS untuk resume, konflik versi, offline/retry,
+sesi kedaluwarsa, akun selesai, 320-430 px, keyboard, Axe dan OTP simulator.
+Google primary UI diuji; authenticated Google/iPhone production UAT tidak dijalankan.
+
+Status `LOCAL_VALIDATED / BELUM DEPLOY / CI_NOT_RUN / BUSINESS_READY=false`.
+Source committed lokal; push/PR source NOT_RUN karena trigger deployment remote
+belum diverifikasi. Tidak ada deployment/activation baru, perubahan Vercel,
+atau aktivasi reward/POS/Book/Push/payment/broadcast/hardware. Rilis production
+terakhir yang tercatat tetap `20260929T135500Z-bef4223-r0u`; bukan verifikasi
+runtime baru pada Wave 1. Next: Wave 2 ukuran/gap mobile, lalu Wave 3 release
+preflight dan authenticated iPhone/Google UAT sesuai otorisasi.
+
 ## 2026-09-29 — Google login utama production (DEC-220)
 
 `CONFIRMED`; Andreas meminta Google sebagai prioritas dan aktivasi production.
