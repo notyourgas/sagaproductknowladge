@@ -1,5 +1,22 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-29 — Wave 5 v2: milestone recovery lokal, belum deploy
+
+`CONFIRMED`; Andreas meminta Wave5. Before restore backup legacy belum
+sepenuhnya terisolasi dari runtime tujuan -> after restore memakai isi backup
+dan default legacy yang kosong, tetap atomik bila validasi gagal. Sesi,
+Points/XP, reservasi, Inbox dan bukti replay Book terjaga setelah encrypted
+disposable restore/restart lokal. Backend `e945fe36a3210109a5f200ca840850bfd930201a`
+(`codex/member-wave5-restore-isolation-v2`), Member `bcf0a66` dan contracts
+`755ed1d` unchanged. Backend53file/static, focused4/4, contracts29/29,
+migration15->15 byte-identical source-only, dependency audit0 dan diff PASS.
+Tidak ada schema/dependency/API/client/provider baru; app-source push/PR/CI
+NOT_RUN. `LOCAL_VALIDATED / COMMITTED / IN_PROGRESS / BUSINESS_READY=false`.
+Candidate BELUM DEPLOY; production unchanged `20260929T093800Z-e428b20-r0u`.
+OPEN: acceptance Wave2/3/4, native iPhone/genuine Member login UAT, immutable
+artifact dan native target-bound recovery/offsite/old-runtime rollback/pilot.
+Next tutup acceptance sebelum cutover; knowledge sync bukan deployment.
+
 ## 2026-09-29 — Wave 4 v2: booking delivery recovery lokal
 
 `CONFIRMED`; sumber: Andreas meminta lanjut Wave4, exact source, tests lokal

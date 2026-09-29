@@ -1,5 +1,21 @@
 # Saga Platform Dossier
 
+## 2026-09-29 — Wave 5 v2: batas recovery candidate
+
+`CONFIRMED`; source `e945fe36a3210109a5f200ca840850bfd930201a`, branch
+`codex/member-wave5-restore-isolation-v2`. Restore legacy memakai backup dan
+default kosong, bukan state tujuan; penggantian tetap atomik. Focused4/4 dan
+full backend53file PASS; encrypted embedded PostgreSQL/PGlite restore/restart
+mempertahankan sesi, Points/XP, reservasi, Inbox, handoff dan replay Book.
+Contracts29/29 PASS; 15 SQL migration bytes unchanged terhadap active source.
+Ini bukan native production PostgreSQL, offsite/artifact/old-runtime rollback
+atau authenticated production UAT. Tidak ada schema/dependency/API/client edit.
+Member `bcf0a66d5c4c3db1a0835e686c9b13e6722cffc8`, contracts
+`755ed1dccaf07c3576b6680faf2404f4724669bf` unchanged. Candidate BELUM DEPLOY,
+source push/PR/CI NOT_RUN, Wave5 IN_PROGRESS; production core release unchanged
+`20260929T093800Z-e428b20-r0u`. Full acceptance Wave2/3/4 dan pilot tetap OPEN,
+business providers tidak diaktifkan; BUSINESS_READY=false.
+
 ## 2026-09-29 — Wave 4 v2: booking delivery recovery lokal
 
 `CONFIRMED`; sumber: Andreas meminta lanjut Wave4, exact source, tests lokal

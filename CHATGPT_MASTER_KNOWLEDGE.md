@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — Saga Member Wave 5 v2: local recovery milestone
+
+`CONFIRMED`; backend `e945fe36a3210109a5f200ca840850bfd930201a` memperbaiki
+restore legacy agar backup-only dan atomik; local encrypted restore/restart,
+backend53file, contracts29/29 PASS. Member/contracts tidak berubah.
+LOCAL_VALIDATED/COMMITTED saja, candidate BELUM DEPLOY; production tetap
+`20260929T093800Z-e428b20-r0u`, bukan kandidat Wave5. Wave5 IN_PROGRESS,
+BUSINESS_READY=false. Acceptance Wave2/3/4, iPhone/genuine Member login dan
+artifact/native recovery/offsite/rollback/pilot belum ditutup. Tidak ada fitur
+bisnis/provider tambahan diaktifkan; knowledge push bukan deploy aplikasi.
+
 ## 2026-09-29 — Wave 4 v2: milestone booking recovery, belum deploy
 
 `CONFIRMED`; Andreas meminta Wave4. Event booking tanpa mapping kini bisa

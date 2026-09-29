@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Wave 5 v2 recovery sync
+
+`CONFIRMED`; source backend `e945fe36a3210109a5f200ca840850bfd930201a`,
+Member `bcf0a66d5c4c3db1a0835e686c9b13e6722cffc8`, contracts
+`755ed1dccaf07c3576b6680faf2404f4724669bf`. Local focused4/4, backend53file,
+contracts29/29, encrypted embedded restore/restart, migration15->15 source
+comparison, dependency audit0 dan diff PASS. Product/Dossier/Changelog,
+Portfolio, Master, Gaps dan root Changelog diperbarui dari checkout bersih
+yang setara origin/main; knowledge exact main HEAD dilaporkan setelah push.
+App-source push/PR/CI NOT_RUN. Candidate BELUM DEPLOY; production unchanged
+`20260929T093800Z-e428b20-r0u`, Wave5 IN_PROGRESS/BUSINESS_READY=false.
+Native artifact/recovery/rollback, lintas-wave acceptance dan real UAT OPEN.
+
 ## 2026-09-29 — Wave 4 v2: milestone booking recovery, belum deploy
 
 `CONFIRMED`; Andreas meminta Wave4. Event booking tanpa mapping kini bisa

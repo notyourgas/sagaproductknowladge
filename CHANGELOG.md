@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — knowledge Saga Member Wave 5 v2 recovery
+
+`CONFIRMED`; sumber permintaan Andreas, exact backend
+`e945fe36a3210109a5f200ca840850bfd930201a`, local tests dan monitor production.
+Before legacy restore dapat tercampur state tujuan -> after backup-only atomic
+restore. Focused4/4, backend53file, contracts29/29 dan encrypted embedded
+restore/restart PASS; tanpa migration/dependency/client/provider edit.
+Dokumen terdampak: Saga Platform Product/Dossier/Changelog, Portfolio, Master,
+Gaps dan Sync Status. Knowledge main HEAD disinkronkan terpisah; app push/PR/CI
+NOT_RUN. Candidate BELUM DEPLOY, production core unchanged
+`20260929T093800Z-e428b20-r0u`, IN_PROGRESS/BUSINESS_READY=false. TODO acceptance
+lintas wave dan native artifact/recovery/rollback/genuine UAT sebelum pilot.
+
 ## 2026-09-29 — Wave 4 v2: milestone booking recovery, belum deploy
 
 `CONFIRMED`; Andreas meminta Wave4. Event booking tanpa mapping kini bisa

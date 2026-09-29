@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Wave 5 v2: recovery lokal bukan release gate lengkap
+
+`CONFIRMED`; source `e945fe36a3210109a5f200ca840850bfd930201a` menutup isolasi
+legacy restore lokal; focused4/4, backend53file dan encrypted embedded
+restore/restart PASS. BELUM DEPLOY, production core tidak berubah.
+TODO: acceptance Wave2/3/4 lengkap, native iPhone, genuine Member login UAT,
+exact immutable artifact, target migration journal/native PostgreSQL recovery,
+offsite backup, old-runtime replay compatibility dan rollback rehearsal serta
+pilot. Tidak menganggap migration-source byte-identical sebagai bukti target.
+Wave5 IN_PROGRESS/BUSINESS_READY=false; tidak perlu kredensial Andreas untuk
+melanjutkan slice synthetic, tetapi provider/pilot scope tetap harus eksplisit.
+
 ## 2026-09-29 — Wave 4 v2: milestone booking recovery, belum deploy
 
 `CONFIRMED`; Andreas meminta Wave4. Event booking tanpa mapping kini bisa

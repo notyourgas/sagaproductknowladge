@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-09-29 — Saga Member Wave 5 v2: recovery checkpoint lokal
+
+`CONFIRMED`; Andreas meminta Wave5. Backup legacy restore kini backup-only dan
+atomik. Backend `e945fe36a3210109a5f200ca840850bfd930201a`, 53file regression,
+focused4/4, contracts29/29 dan encrypted embedded restore/restart PASS.
+Tidak ada dependency/schema/client/provider activation. Candidate BELUM DEPLOY;
+production unchanged `20260929T093800Z-e428b20-r0u`; Wave5 IN_PROGRESS,
+BUSINESS_READY=false. Acceptance lintas wave/native recovery/UAT/pilot OPEN.
+Dokumen: Saga Platform Product/Dossier/Changelog, Master, Gaps, Sync Status,
+root Changelog. Knowledge sync tidak mengubah runtime produk.
+
 ## 2026-09-29 — Wave 4 v2: milestone booking recovery, belum deploy
 
 `CONFIRMED`; Andreas meminta Wave4. Event booking tanpa mapping kini bisa

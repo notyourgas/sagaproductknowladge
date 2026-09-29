@@ -1,5 +1,16 @@
 # Saga Platform Changelog
 
+## 2026-09-29 — Wave 5 v2: restore isolation lokal
+
+`CONFIRMED`; Andreas meminta Wave5. Restore legacy kini terisolasi dari data
+runtime tujuan dan tetap atomik; encrypted restore/restart menjaga authority.
+Backend `e945fe36a3210109a5f200ca840850bfd930201a`; Member/contracts unchanged.
+Backend53file, focused4/4, contracts29/29, migration15->15 source-only dan
+dependency audit0 PASS. Local committed, app push/PR/CI/deploy/UAT NOT_RUN.
+Production unchanged `20260929T093800Z-e428b20-r0u`; Wave5 IN_PROGRESS,
+BUSINESS_READY=false. Sisa acceptance dan native artifact/recovery/rollback
+OPEN; lihat PRODUCT/DOSSIER. Knowledge push terpisah, bukan deploy aplikasi.
+
 ## 2026-09-29 — Wave 4 v2: milestone booking recovery, belum deploy
 
 `CONFIRMED`; Andreas meminta Wave4. Event booking tanpa mapping kini bisa
