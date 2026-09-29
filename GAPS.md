@@ -1,5 +1,29 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Strategi Member: refund Quest lokal, deployment belum dilakukan
+
+`CONFIRMED`; Andreas meminta implementasi strategi dan deploy. Source lokal
+`3901ab495cce6b4ff62a57b4829339585e6d2270` (`codex/member-strategy-completion`)
+menutup gap refund commerce ke generic Quest: allocation-bound compensation,
+compound retry/restore dan atomic rollback; Points yang sudah digunakan masuk
+compensation review tanpa saldo negatif. Legacy progress tanpa allocation
+provenance memerlukan rekonsiliasi. Client tetap projection server-owned.
+
+Focused19/19, full backend54file/static37/migration15-source/proxy/preflight-source
+dan HTTP embedded PostgreSQL persist/reopen PASS. Bukan native production
+PostgreSQL/browser/iPhone atau authenticated UAT. Tidak ada perubahan SQL,
+dependency, contracts, client atau provider activation. Source committed lokal;
+app push/PR/CI/deploy NOT_RUN. Candidate BELUM DEPLOY; production core unchanged
+`20260929T093800Z-e428b20-r0u`, strategi Wave1–5 IN_PROGRESS/BUSINESS_READY=false.
+
+OPEN: Owner publish program PostgreSQL, actual POS/Book consumer, gate browser
+dua correction rounds yang belum PASS, genuine Member/native iPhone UAT,
+exact artifact/native target recovery/offsite/rollback dan scope pilot.
+Google/Push/public registration/payment/hardware tidak diaktifkan implisit.
+Delapan dokumen knowledge diperbarui; knowledge commit/push terpisah bukan
+deploy aplikasi, dan tidak mengubah keputusan founder lama.
+
+
 ## 2026-09-29 — Wave 5 v2: recovery lokal bukan release gate lengkap
 
 `CONFIRMED`; source `e945fe36a3210109a5f200ca840850bfd930201a` menutup isolasi
