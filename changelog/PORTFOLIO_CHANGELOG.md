@@ -1,5 +1,10 @@
 # Portfolio Changelog
 
+## 2026-09-29 — Saga Member core production, belum business-ready
+
+`CONFIRMED`; rilis core `20260929T072700Z-a7b5756-r0u` aktif atas permintaan Andreas: Owner read-only dan Member core server-owned. Exact backend `a7b5756d8c690aa8102680101fc1905be10ca678`, Member `2e49f5cea9e7f4b9f64b701a26a1f1e87f5a17c8`, contracts `755ed1dccaf07c3576b6680faf2404f4724669bf`. Native PG18.6, encrypted production/disposable restore, actual rollback, activation, active backup dan monitor PASS. Authenticated Owner fungsi read-only PASS, tetapi full browser UAT NOT_PASS: overflow dashboard390->476px. Checkpoint dua koreksi; next slice sizing/layout dan rilis frontend/UAT ulang. Member OTP/provider, reward/quest/POS/Book/Google/Push/payment/hardware tetap OFF; real Member/iPhone/offsite/business acceptance OPEN. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / IN_PROGRESS / CI_NOT_RUN / BUSINESS_READY=false`; source committed lokal, source push/PR NOT_RUN, knowledge terpisah. Detail/provenance/batas pengujian pada [Saga Platform PRODUCT](../products/saga-platform/PRODUCT.md). Entri lama di bawah merupakan histori, bukan status live baru.
+
+
 ## 2026-09-29 — Wave 5 / S9: recovery dan regresi kandidat lokal
 
 - `CONFIRMED`; permintaan Andreas lanjut Wave5. Backend `5ba980f70baca4514b9c1c9a39f525387f02d743` pada `codex/member-wave5-recovery`, Member bersih `2e49f5cea9e7f4b9f64b701a26a1f1e87f5a17c8`, contracts tetap `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`. Before recovery belum dijamin all-or-nothing -> after snapshot divalidasi lengkap sebelum mengganti state; compatibility legacy tetap. Tidak mengambil perubahan Wave3 yang belum diterima; tidak ada perubahan client, migration atau dependency.
