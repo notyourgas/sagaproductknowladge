@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-29 — SagaPOS kasir/promo schema35 aktif
+
+`CONFIRMED`; runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` aktif dengan compatible read-only rollback79fac509; upgrade atomic35, encrypted restore/recovery, activation dan Owner live1440/1024/390 PASS. Production lifecycle PERMANENT, auth/session/provider existing tetap. 4/4 langkah rilis teknis selesai, feature closure3/7; BUSINESS_READY=false/CI_NOT_RUN, Member reward/provider partial refund/physical settlement/offsite OPEN. Product/Dossier/changelog/master/gaps/decision/sync/root diperbarui. Bukan rilis kandidat Tim/AP atau perubahan backend Member. Provenance dan strategi di [SagaOPS](../products/sagaops/DOSSIER.md).
+
 ## 2026-09-29 — OTP paste lokal; Wave 2/3 belum dirilis (DEC-222)
 
 `CONFIRMED`; Andreas meminta Wave 2–3 lalu deploy, serta paste OTP.

@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Recovery schema35 dan deploy kasir CLOSED; integrasi bisnis OPEN
+
+`CONFIRMED`; SagaPOS active `64dc78e347204ba7823fef8283f0ee881f3e4ff5`, schema35. Gap jalur34→35/compatible rollback ditutup dengan recovery aktual, bukan waiver code-only. Owner live desktop/tablet/mobile PASS, teknis rilis4/4 selesai. Histori kandidat Tim/AP source-only tidak berubah; unrelated gaps tetap.
+
+Feature closure tetap3/7/BUSINESS_READY=false. Next berurutan: accepted Member authoritative benefit + durable reserve/commit/release; original-payment QRIS/ESB partial compensation; physical Owner/merchant/printer closing, settlement dan offsite proof. Reward/provider aktivasi tidak tersirat dari layanan PERMANENT. Full-suite dan hosted CI tidak diklaim PASS. Detail pada [Dossier](products/sagaops/DOSSIER.md).
+
 ## 2026-09-29 — Wave 2 OTP paste lokal; gate mobile/release OPEN
 
 `CONFIRMED`; DEC-222 mengizinkan Wave 2–3/deploy, tetapi 200% text pada 320 px

@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-09-29 — Rilis kasir/promo schema35 aktif
+
+`CONFIRMED`; Andreas meminta recovery/deploy lanjut. Runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` aktif, schema35, rollback read-only kompatibel `79fac5096fc4b0685f041f6840b4ca62c1c45169`; kedua source branch sudah dipush. Rilis mencakup promo/voucher/manual approval, queue refresh, partial cash refund dan dated receipt/report. Backup/disposable restore, actual compatible recovery, activation, native scoped checks dan Owner live1440/1024/390 PASS tanpa businesswrites. Layanan PERMANENT, existing provider/auth retained. Produk/Dossier/changelog/portfolio/master/gaps/decision/sync/root diperbarui; detail/batas ada di Dossier. 4/4 langkah rilis teknis selesai, fitur3/7, CI_NOT_RUN/BUSINESS_READY=false. Next Member authoritative benefit, provider partial compensation dan physical/settlement/offsite UAT; kandidat Tim/AP terpisah tidak ikut.
+
 ## 2026-09-29 — Actual 18 tes pure/controller kandidat final lulus
 
 `CONFIRMED`: source lokal `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39`, run03.06 WIB dan review hasil independen: Cash8 + AP10, 18PASS/0fail/cancel/skip/todo, exit0, Windows Node24.16. Before provenance-only → after actual scoped logic validation pada final candidate; source clean/unchanged, assertion asli. Bukan rerun historis74/native8, whole-file/full, PG/browser/Linux Node22/recovery/UAT. `LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; production/provider/payment/data tidak dimutasi. Delapan dokumen knowledge terkait disinkronkan terpisah; gate rilis final tetap terbuka.

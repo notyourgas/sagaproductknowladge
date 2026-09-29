@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — SagaPOS kasir/promo schema35 production
+
+`CONFIRMED`; source keputusan Andreas, immutable source/artifact, native/browsers/recovery dan live runtime22.00WIB. Before release blocked34→35; after production `64dc78e347204ba7823fef8283f0ee881f3e4ff5`, schema35, compatible read-only rollback79fac509, lifecycle PERMANENT. Source branches pushed; knowledge main HEAD terpisah. Files: SagaOPS Product/Dossier/Changelog, portfolio, Master, Gaps, Decisions, Sync dan root changelog. Technical release4/4PASS, feature3/7, CI_NOT_RUN/BUSINESS_READY=false; next Member benefit, provider partial compensation dan physical/settlement/offsite UAT. Existing provider unchanged; no production business transaction created by verification. Canonical dirty checkout/proyek lain dipertahankan.
+
 ## 2026-09-29 — OTP paste lokal; Wave 2/3 belum dirilis (DEC-222)
 
 `CONFIRMED`; Andreas meminta Wave 2–3 lalu deploy, serta paste OTP.

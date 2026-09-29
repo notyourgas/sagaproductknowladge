@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-29 — Kasir/promo aktif dengan recovery schema35
+
+- `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5`, branch `codex/sagapos-operations-sales-wave01-20260929`, verified 22.00 WIB. Canonical [Kasir](https://dashboard.sagapos.site/cashier) dan [Dashboard](https://dashboard.sagapos.site/dashboard) memakai schema35; current sebelumnya `9cc69aeb0802f8749d55ed7a3044ee8f381dfe08`/schema34. Ini tidak mempromosikan kandidat Tim/AP terpisah di bawah.
+- Before: rilis promo/approval/refund cash tertahan karena rollback lama hanya menerima schema34. After: upgrade atomik schema35, immutable source/artifact, backup terenkripsi/disposable restore dan kandidat→rollback kompatibel→kandidat lulus. Rollback `79fac5096fc4b0685f041f6840b4ca62c1c45169` adalah health-only read-only; operasi ditutup, bukan kasir normal. Lifecycle layanan PERMANENT sesuai Andreas; login/RBAC dan expiry sesi tetap.
+- Rilis mencakup harga server/promo otomatis dan voucher, batas diskon staf/approval Owner, refresh antrean bayar dari dialog, refund parsial cash berbasis alokasi asli serta struk/laporan bertanggal. Satu benefit per pesanan; live reward dan kombinasi benefit belum tersedia. Provider GATEWAY existing dipertahankan tanpa aktivasi baru.
+- Browser lokal end-to-end 9/9, native PG18 schema35 2/2, recovery contract 6/6, dan authenticated Owner live 1440/1024/390 PASS tanpa transaksi production. Kelompok tes tidak dijumlahkan; bukan full-suite. Empat langkah teknis rilis 4/4 selesai, closure fitur tetap3/7. `CI_NOT_RUN / BUSINESS_READY=false`: authoritative Member reward lifecycle, QRIS/ESB refund parsial, settlement/net-profit, physical Owner/printer UAT dan offsite recovery OPEN. Strategi berurutan ada di [Dossier](DOSSIER.md). Histori di bawah tetap dipertahankan.
+
 ## 2026-09-29 — Tes logika kandidat gabungan: 18/18, belum deploy
 
 - `CONFIRMED / LOCAL_SCOPED_VALIDATED_ONLY / IMPLEMENTED_NOT_DEPLOYED`: pada 03.06 WIB, kandidat `7d9aaeed57f2dc30ff89c7cd699d917f59889832` / tree `ea8a778bac9295a1da631fbb0daffb8a46b99a39` menjalankan delapan kasus pure Cash dan sepuluh controller AP: 18 PASS, nol gagal/cancel/skip/todo, exit0. Ini run aktual pada kandidat final, bukan gabungan bukti historis. Review hasil independen menerima cakupan tersebut.

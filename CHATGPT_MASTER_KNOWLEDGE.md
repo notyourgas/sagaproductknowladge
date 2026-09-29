@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — SagaPOS kasir/promo schema35 aktif
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` verified22.00WIB, schema35, compatible rollback `79fac5096fc4b0685f041f6840b4ca62c1c45169` health-only/read-only. Atomic upgrade, encrypted backup/disposable restore, actual candidate→compatibility→candidate, activation/health/monitor dan Owner live1440/1024/390 PASS, businesswrites0. Local opening→cash→KDS→restart→closing9/9PASS bukan transaksi bisnis. Promo/voucher/Owner approval, queue refresh dan partial cash-refund/dated receipt/report terdeploy; existing GATEWAY unchanged. Lifecycle PERMANENT sesuai [DEC-223](DECISIONS.md#dec-223--sagapos-production-permanen-tanpa-expiry-layanan-pilot), bukan login/session tanpa expiry. Tim/AP separate candidate tidak ikut. Technical release4/4 selesai, feature closure3/7, CI_NOT_RUN/BUSINESS_READY=false; Member authoritative reward lifecycle, QRIS/ESB partial compensation, bank settlement/net-profit, physical/printer/offsite UAT OPEN. Detail strategi/provenance di [SagaOPS Dossier](products/sagaops/DOSSIER.md); bukan update aplikasi Member.
+
 ## 2026-09-29 — OTP paste lokal; Wave 2/3 belum dirilis (DEC-222)
 
 `CONFIRMED`; Andreas meminta Wave 2–3 lalu deploy, serta paste OTP.

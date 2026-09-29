@@ -1,5 +1,12 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-223 — SagaPOS production permanen tanpa expiry layanan pilot
+
+- Tanggal: 2026-09-29. Pemberi keputusan: Andreas. Status: `CONFIRMED`.
+- Keputusan: layanan SagaPOS langsung production, tidak dibatasi timer pilot. Alasan: kebutuhan mencoba dan melanjutkan operasional tanpa aktivasi ulang layanan. Alternatif: renewal pilot berkala; ditolak oleh founder.
+- Dampak: lifecycle PERMANENT diterapkan setelah schema35 activation pada source `64dc78e347204ba7823fef8283f0ee881f3e4ff5`; monitor tetap aktif. Owner auth/RBAC, expiry sesi, transaction integrity, backup/compatible rollback dan batas provider tetap. Ini bukan izin reward/campaign/payment baru atau janji BUSINESS_READY.
+- Menggantikan: hanya batas expiry layanan pilot SagaPOS untuk rilis ini; histori tetap dan pilot produk lain tidak berubah. Dokumen: [Product](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md).
+
 ## DEC-222 — Wave 2–3 onboarding dan OTP paste, deploy setelah gate
 
 - Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.

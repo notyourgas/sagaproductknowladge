@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Sinkronisasi kasir schema35 production
+
+`CONFIRMED`; source/runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5`, compatible rollback `79fac5096fc4b0685f041f6840b4ca62c1c45169`, kedua branch source dipush; actual production/schema35/GATEWAY/monitor dan Owner UI1440/1024/390 PASS. Production berubah dari9cc/schema34; lifecycle PERMANENT diterapkan dengan auth/session expiry tetap. Knowledge disinkronkan melalui checkout bersih, main HEAD; Product/Dossier/produk changelog/portfolio/root/Master/Gaps/Decisions/Sync. CI_NOT_RUN/BUSINESS_READY=false; Member benefit, provider partial compensation dan physical/settlement/offsite UAT masih terbuka. Validasi/push knowledge dilaporkan setelah commit; bukan klaim rilis Tim/AP atau Member.
+
 ## 2026-09-29 — OTP paste lokal; Wave 2/3 belum dirilis (DEC-222)
 
 `CONFIRMED`; Andreas meminta Wave 2–3 lalu deploy, serta paste OTP.
