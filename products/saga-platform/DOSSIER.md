@@ -1,5 +1,44 @@
 # Saga Platform Dossier
 
+## 2026-09-29 — Onboarding Wave 2/3 dan OTP paste aktif (DEC-222)
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`; release
+`20260929T150800Z-a130945-r0u` aktif pada `https://app.sagamember.site`
+pukul 22:09 WIB. Backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`,
+Member `a4870bb3dc428168083f4650f41ed5a466ba19cc`, contracts
+`755ed1dccaf07c3576b6680faf2404f4724669bf`; artifact SHA-256
+`b7d39bf0ef7ad742c2bf19b54b43ab733e03db59e922dd90e2425eed11ed4c8f`.
+
+Before login langsung menutup onboarding dan paste belum terdeploy -> after
+welcome, Google utama/OTP fallback, profil + consent, minat opsional, kartu
+masked authoritative dan completion/resume server-owned. Akun selesai tidak
+dipaksa mengulang; kegagalan offline/retry tidak mengganti data dengan fixture.
+Tombol Tempel kode, paste native enam digit dengan spasi/tanda hubung dan
+autofill tersedia; tidak auto-submit, menyimpan atau mencatat clipboard.
+Mobile reflow memperbaiki padding, input, tombol, judul dan kartu pada teks 200%.
+
+583 unit, check, synthetic API/proxy serta 60 kombinasi core/320-430 px/100-200%
+dan 12 state legacy/9 viewport PASS; Axe tanpa pelanggaran. Native PostgreSQL
+18.6 menguji unchanged 15->15, old/new writes, restart dan restore PASS.
+Runner 100 tes Windows/Linux serta 11 tes screening PASS. Encrypted production
+backup/disposable restore, actual Owner credential proof, switch->rollback->
+switch, database preserved dan customer/member/public monitor PASS.
+Backup terenkripsi sebelum/sesudah cutover disalin ke host terpisah dan checksum
+cocok; dekripsi/restore di host offsite tidak diklaim. Production asset bytes
+dan anonymous mobile smoke diverifikasi terpisah dari authenticated UAT.
+
+Google/OTP PUBLIC_MEMBERS dan registrasi permanen existing dipertahankan.
+Reward, Quest, POS/Book, payment, Push, broadcast, NFC/printer/hardware tetap OFF;
+businessFeaturesAdmitted false. Tidak ada migration, dependency baru atau akun
+synthetic/OTP nyata dikirim untuk verifikasi produksi. App source push/PR/hosted
+CI NOT_RUN demi menjaga Vercel lama; knowledge push terpisah, bukan deployment.
+Personal Google/iPhone authenticated UAT OPEN dan BUSINESS_READY=false.
+Keyboard-height browser adalah simulasi, bukan uji keyboard fisik iPhone.
+Audit security mendalam NOT_REQUESTED. Checkpoint DEC-222 di bawah adalah
+histori yang digantikan outcome ini; tidak menghapus evidence gagal sebelumnya.
+Sumber: otorisasi Andreas, exact Git source, immutable artifact, tes dan runtime.
+Next: Andreas/Mahesa menguji login Google, resume onboarding dan paste OTP di iPhone.
+
 ## 2026-09-29 — OTP paste lokal; Wave 2/3 belum dirilis (DEC-222)
 
 `CONFIRMED`; Andreas meminta Wave 2–3 lalu deploy, serta paste OTP.

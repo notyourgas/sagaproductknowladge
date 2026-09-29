@@ -12,10 +12,13 @@
 - Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
 - Keputusan: lanjutkan Wave 2–3 lalu deploy; OTP dapat ditempel tanpa mengetik manual.
 - Alasan: akses mobile dan onboarding lebih mudah. Alternatif: mengetik enam digit.
-- Dampak: paste source lokal lulus; layout/release tetap ditahan gate 200% text.
+- Dampak terbaru: mobile/200% text dan OTP paste lulus; onboarding Wave 2/3
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada `20260929T150800Z-a130945-r0u`.
   Tidak mengubah credential, database atau membuka fitur bisnis/provider lain.
-- Provenance: Member `0f1aaa1b5c78a13ba8b03ccc64f5244fda66e958` lokal saja;
-  production Google predecessor unchanged, authenticated iPhone UAT OPEN.
+- Provenance: backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`, Member
+  `a4870bb3dc428168083f4650f41ed5a466ba19cc`; recovery/Owner proof/monitor PASS.
+  Google/OTP dan registrasi permanen dipertahankan; authenticated Google/iPhone
+  UAT OPEN, BUSINESS_READY=false. Checkpoint source-only lama tetap pada changelog.
 - Terkait: [Product](products/saga-platform/PRODUCT.md), [Gaps](GAPS.md).
 
 ## DEC-221 — Wave 1 onboarding public, tanpa deploy atau aktivasi bisnis

@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Gate onboarding/OTP release CLOSED; human UAT OPEN
+
+`CONFIRMED`; DEC-222 source/mobile, packaging, native PostgreSQL, production
+backup/disposable restore, credential-bound Owner proof, actual rollback and
+activation gates CLOSED pada release `20260929T150800Z-a130945-r0u`.
+Checkpoint wrapping320/200% dan BELUM DEPLOY di bawah menjadi histori.
+Production backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`, Member
+`a4870bb3dc428168083f4650f41ed5a466ba19cc`; provider existing unchanged.
+`NEEDS CONFIRMATION`: personal Google/iPhone login, clipboard permission/
+native paste/autofill, keyboard/safe area PWA, resume dan completion human UAT.
+BUSINESS_READY=false; business admission/provider lain OFF. Offsite encrypted
+checksum PASS tidak membuktikan offsite decrypted restore atau acceptance bisnis.
+
 ## 2026-09-29 — Recovery schema35 dan deploy kasir CLOSED; integrasi bisnis OPEN
 
 `CONFIRMED`; SagaPOS active `64dc78e347204ba7823fef8283f0ee881f3e4ff5`, schema35. Gap jalur34→35/compatible rollback ditutup dengan recovery aktual, bukan waiver code-only. Owner live desktop/tablet/mobile PASS, teknis rilis4/4 selesai. Histori kandidat Tim/AP source-only tidak berubah; unrelated gaps tetap.

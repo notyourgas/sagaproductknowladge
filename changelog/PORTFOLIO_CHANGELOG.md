@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-09-29 — Onboarding Wave 2/3 dan OTP paste production
+
+`CONFIRMED`; DEC-222 selesai sampai release teknis
+`20260929T150800Z-a130945-r0u`: backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`,
+Member `a4870bb3dc428168083f4650f41ed5a466ba19cc`.
+Before gate wrapping mobile/OTP source-only -> after resumable onboarding,
+OTP paste tanpa auto-submit, 320-430 px/200% text serta masked card aktif.
+Local 583 unit/60 core combinations, native PostgreSQL 18.6 unchanged15,
+encrypted restore, actual Owner proof, rollback/final switch dan monitor PASS.
+Registrasi permanen/Google utama/OTP fallback tetap; fitur bisnis/provider lain OFF.
+App source push/PR/hosted CI NOT_RUN. Authenticated Google/iPhone UAT OPEN,
+BUSINESS_READY=false. Files: Saga Platform Product/Dossier/Changelog, portfolio,
+Master/Gaps/Decisions/Sync/root. Knowledge main HEAD disinkronkan terpisah;
+source: Andreas, exact commits/artifact dan production runtime. Next physical UAT.
+
 ## 2026-09-29 — SagaPOS kasir/promo schema35 aktif
 
 `CONFIRMED`; runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` aktif dengan compatible read-only rollback79fac509; upgrade atomic35, encrypted restore/recovery, activation dan Owner live1440/1024/390 PASS. Production lifecycle PERMANENT, auth/session/provider existing tetap. 4/4 langkah rilis teknis selesai, feature closure3/7; BUSINESS_READY=false/CI_NOT_RUN, Member reward/provider partial refund/physical settlement/offsite OPEN. Product/Dossier/changelog/master/gaps/decision/sync/root diperbarui. Bukan rilis kandidat Tim/AP atau perubahan backend Member. Provenance dan strategi di [SagaOPS](../products/sagaops/DOSSIER.md).

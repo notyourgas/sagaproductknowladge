@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — Onboarding Wave 2/3 dan OTP paste production
+
+`CONFIRMED`; DEC-222 selesai sampai release teknis
+`20260929T150800Z-a130945-r0u`: backend `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`,
+Member `a4870bb3dc428168083f4650f41ed5a466ba19cc`.
+Before gate wrapping mobile/OTP source-only -> after resumable onboarding,
+OTP paste tanpa auto-submit, 320-430 px/200% text serta masked card aktif.
+Local 583 unit/60 core combinations, native PostgreSQL 18.6 unchanged15,
+encrypted restore, actual Owner proof, rollback/final switch dan monitor PASS.
+Registrasi permanen/Google utama/OTP fallback tetap; fitur bisnis/provider lain OFF.
+App source push/PR/hosted CI NOT_RUN. Authenticated Google/iPhone UAT OPEN,
+BUSINESS_READY=false. Files: Saga Platform Product/Dossier/Changelog, portfolio,
+Master/Gaps/Decisions/Sync/root. Knowledge main HEAD disinkronkan terpisah;
+source: Andreas, exact commits/artifact dan production runtime. Next physical UAT.
+
 ## 2026-09-29 — SagaPOS kasir/promo schema35 production
 
 `CONFIRMED`; source keputusan Andreas, immutable source/artifact, native/browsers/recovery dan live runtime22.00WIB. Before release blocked34→35; after production `64dc78e347204ba7823fef8283f0ee881f3e4ff5`, schema35, compatible read-only rollback79fac509, lifecycle PERMANENT. Source branches pushed; knowledge main HEAD terpisah. Files: SagaOPS Product/Dossier/Changelog, portfolio, Master, Gaps, Decisions, Sync dan root changelog. Technical release4/4PASS, feature3/7, CI_NOT_RUN/BUSINESS_READY=false; next Member benefit, provider partial compensation dan physical/settlement/offsite UAT. Existing provider unchanged; no production business transaction created by verification. Canonical dirty checkout/proyek lain dipertahankan.
