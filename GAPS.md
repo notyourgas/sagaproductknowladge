@@ -1,5 +1,27 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Wave 4 v2: milestone booking recovery, belum deploy
+
+`CONFIRMED`; Andreas meminta Wave4. Event booking tanpa mapping kini bisa
+dipulihkan lewat retry setelah verified mapping; changed-payload replay ditolak,
+duplicate tidak menggandakan proyeksi dan versi lama tidak mengubah status.
+Backend `694330028b73e22c2356f838a9cc8e35d9122329`
+(`codex/member-wave4-book-events-v2`); Member unchanged
+`bcf0a66d5c4c3db1a0835e686c9b13e6722cffc8`; contracts
+`755ed1dccaf07c3576b6680faf2404f4724669bf` unchanged.
+Backend53file/static, focused17/17, authenticated localhost delivery/projection/
+concurrent retry/embedded PostgreSQL restart PASS; Member adapter-render actual
+API dan focused20/20 PASS. Tidak ada migration/dependency/UI baru.
+Local committed; source push/PR/CI/deploy/activation/real UAT NOT_RUN.
+Production unchanged `20260929T093800Z-e428b20-r0u`, monitor PASS;
+`IN_PROGRESS / BUSINESS_READY=false`, provider business tetap OFF.
+OPEN: real Book consumer/scoped admission, handoff-return browser/native recovery,
+legacy retry evidence, Inbox/Push dan operator-role/privacy/support acceptance.
+Next W4-P1 consumer/return path dan scope mapping; sisa Wave2/Wave3 tetap OPEN.
+Detail products/saga-platform/PRODUCT.md dan DOSSIER.md; knowledge push bukan deploy.
+
+
+
 ## 2026-09-29 — Wave 3 v2: admission program lokal, belum deploy
 
 `CONFIRMED`; Andreas meminta Wave3. Publish metadata-only sekarang menghasilkan

@@ -1,5 +1,41 @@
 # Saga Platform Dossier
 
+## 2026-09-29 — Wave 4 v2: booking delivery recovery lokal
+
+`CONFIRMED`; sumber: Andreas meminta lanjut Wave4, exact source, tests lokal
+dan monitor production 29 September 2026. Before delivery tanpa mapping sudah
+dianggap processed dan replay tidak membedakan perubahan isi -> after event
+tetap recoverable setelah verified mapping, retry identik deduplicated,
+changed-payload conflict ditolak dan event lama tidak mengganti status terbaru.
+Fingerprint normalized source facts tersimpan pada snapshot existing. Legacy
+snapshot tetap load; retry processed legacy tanpa bukti payload fail closed
+dan memerlukan rekonsiliasi sumber, bukan menghapus receipt.
+
+Backend `694330028b73e22c2356f838a9cc8e35d9122329`
+(`codex/member-wave4-book-events-v2`), delta4files dari Wave3 `733fea0`.
+Member unchanged `bcf0a66d5c4c3db1a0835e686c9b13e6722cffc8`;
+contracts unchanged `755ed1dccaf07c3576b6680faf2404f4724669bf`.
+Tidak ada dependency, SQL migration, provider atau UI runtime baru.
+Backend53file/static, focused17/17, actual localhost authenticated delivery,
+concurrent duplicate, Member bookings/summary dan embedded PostgreSQL
+close/reopen PASS. API adapter/render Member membaca status authoritative dari
+actual API PASS; focused Member20/20. Bukan browser UAT atau consumer SagaBook nyata.
+Secret scan delta tanpa high-confidence finding; diff check PASS.
+
+`LOCAL_VALIDATED / COMMITTED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN /
+IN_PROGRESS / BUSINESS_READY=false`; source push/PR NOT_RUN. Production unchanged
+`20260929T093800Z-e428b20-r0u`, customer/member/public monitor PASS.
+SagaBook tetap authority booking; receiver tidak membuat booking/payment/Points.
+Connector nyata, Google/Push, registrasi publik dan business providers tetap OFF;
+OTP hanya izin internal allowlist Wave1 sebelumnya.
+OPEN: actual SagaBook consumer/scoped machine admission, browser handoff-return,
+legacy replay reconciliation, native production recovery; Wave4 Inbox/Push dan
+operator-role/privacy/support acceptance belum ditutup. Sisa Wave2/Wave3 tidak
+retroaktif disebut selesai. Next lanjut consumer/return-path dan scope mapping
+W4-P1 sebelum activation; knowledge sync terpisah, bukan deploy aplikasi.
+
+
+
 ## 2026-09-29 — Wave 3 v2: governed Reward/Quest admission lokal
 
 `CONFIRMED`; sumber: permintaan Andreas untuk lanjut Wave3, source commit,
