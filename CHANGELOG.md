@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — Wave 5 / S9: recovery dan regresi kandidat lokal
+
+- `CONFIRMED`; permintaan Andreas lanjut Wave5. Backend `5ba980f70baca4514b9c1c9a39f525387f02d743` pada `codex/member-wave5-recovery`, Member bersih `2e49f5cea9e7f4b9f64b701a26a1f1e87f5a17c8`, contracts tetap `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`. Before recovery belum dijamin all-or-nothing -> after snapshot divalidasi lengkap sebelum mengganti state; compatibility legacy tetap. Tidak mengambil perubahan Wave3 yang belum diterima; tidak ada perubahan client, migration atau dependency.
+- Bukti source lokal: focused recovery3/3 red-green, full backend51file dan check PASS; backup whole-platform terenkripsi dipulihkan ke database disposable embedded PostgreSQL/PGlite dan restart, kesamaan state/idempotency/replay protection PASS. Browser API/proxy synthetic Owner+Member core PASS termasuk320–430px, 200%text, reduced motion, focus, Axe, offline/stale/retry. Source migration15->15 byte-identical. Bukan native production PostgreSQL, backup production/offsite, physical artifact rollback atau authenticated production/iPhone UAT.
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; Wave5 keseluruhan `IN_PROGRESS`. Source commit lokal, push/PR/deploy NOT_RUN. Monitor read-only29September12:38WIB healthy pada core-only `20260929T032900Z-3e43ee8-r0u`, bukan kandidat Wave5. Wave3 reward/quest browser dan operator publish, Wave4 POS/Google/Push serta Book consumer UAT tetap OPEN; provider/payment/hardware OFF. Next: tutup acceptance lintas-wave, freeze satu pasangan lengkap, immutable artifact dan native target-bound recovery/rollback, lalu guarded release serta genuine Owner/Member UAT. Knowledge disinkronkan terpisah dari source tanpa mengubah checkout canonical yang dirty.
+
 
 ## 2026-09-29 — Wave 4 / S7: keandalan handoff Saga Book, lokal saja
 
