@@ -1,5 +1,38 @@
 # Saga Platform Dossier
 
+## 2026-09-29 — Wave 2 v2: milestone rekonsiliasi refund lokal
+
+`CONFIRMED`; Andreas meminta lanjut Wave2 pada roadmap v2 loyalty/transaksi,
+bukan mengulang Wave2 self-service lama. Before partial refund belum konsisten
+pada pembulatan kumulatif -> after Platform menyimpan bukti nilai eligible asli
+dan menghitung koreksi Points/XP dari sisa transaksi; refund tanpa perubahan
+Points tetap tercatat, retry/restart tidak menggandakan koreksi, bukti lama yang
+ambigu tidak ditebak. Client tetap proyeksi; tidak ada schema/dependency baru.
+
+Backend `8cc072480ed9392eccc3e042e975b7efa3466eea`
+(`codex/member-wave2-loyalty-v2`); Member acceptance helper
+`0d089dbd7d2bf66cfb36d951a6ab84ed41a803a2`
+(`codex/member-wave2-loyalty-browser`), tanpa perubahan aset UI runtime.
+Shared contracts tetap `755ed1dccaf07c3576b6680faf2404f4724669bf`.
+Backend51file/static, frontend580/580/static, focused provider/Owner8/8,
+embedded PostgreSQL close/reopen/concurrent retry serta scoped API denial PASS.
+Browser actual localhost API/proxy dengan identitas sintetis membuktikan
+Owner/Member sama49Points/49XP, dua koreksi, cursor20+7, offline recovery,
+320–430px/Owner1440,200%text/reduced motion/focus/Axe/console PASS.
+Bukan native production PostgreSQL, SagaPOS nyata atau iPhone fisik.
+
+`LOCAL_VALIDATED / COMMITTED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN /
+IN_PROGRESS / BUSINESS_READY=false`; source push/PR NOT_RUN. Production
+tidak berubah dari Wave1 `20260929T093800Z-e428b20-r0u` (monitor segar PASS).
+OTP nyata hanya internal allowlist sesuai izin sebelumnya; capture Member
+berakhir timeout tanpa sesi tersimpan, genuine delivery/login acceptance OPEN.
+Registrasi publik, broadcast, reward/quest/POS/Book/Google/Push/payment/hardware
+tetap OFF. Sisa Wave2: Owner policy preview/draft/version/publish, scoped paid
+event mapping/replay/drift/out-of-order dan lifecycle refund lanjutan; tidak
+mengklaim seluruh Wave2 selesai. Knowledge delapan dokumen disinkronkan terpisah
+dari source aplikasi; histori di bawah bukan status baru.
+
+
 ## 2026-09-29 — Wave 1: Owner mobile lulus, OTP internal diaktifkan
 
 - `CONFIRMED`; Andreas meminta Wave 1 lalu deploy dan mengizinkan email OTP nyata melalui provider existing serta UAT terbatas ke alamat sendiri. Before dashboard overflow dan OTP OFF -> after shared grid/panel sizing diperbaiki, Overview/Members/Audit lulus authenticated Owner browser; OTP server dibatasi internal allowlist. Member lain yang terdaftar tidak diberi izin pengiriman; registrasi publik dan broadcast tetap OFF. Customer Platform authority, Member hanya projection client via same-origin API.

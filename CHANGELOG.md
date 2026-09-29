@@ -1,5 +1,38 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — Wave 2 v2: milestone rekonsiliasi refund lokal
+
+`CONFIRMED`; Andreas meminta lanjut Wave2 pada roadmap v2 loyalty/transaksi,
+bukan mengulang Wave2 self-service lama. Before partial refund belum konsisten
+pada pembulatan kumulatif -> after Platform menyimpan bukti nilai eligible asli
+dan menghitung koreksi Points/XP dari sisa transaksi; refund tanpa perubahan
+Points tetap tercatat, retry/restart tidak menggandakan koreksi, bukti lama yang
+ambigu tidak ditebak. Client tetap proyeksi; tidak ada schema/dependency baru.
+
+Backend `8cc072480ed9392eccc3e042e975b7efa3466eea`
+(`codex/member-wave2-loyalty-v2`); Member acceptance helper
+`0d089dbd7d2bf66cfb36d951a6ab84ed41a803a2`
+(`codex/member-wave2-loyalty-browser`), tanpa perubahan aset UI runtime.
+Shared contracts tetap `755ed1dccaf07c3576b6680faf2404f4724669bf`.
+Backend51file/static, frontend580/580/static, focused provider/Owner8/8,
+embedded PostgreSQL close/reopen/concurrent retry serta scoped API denial PASS.
+Browser actual localhost API/proxy dengan identitas sintetis membuktikan
+Owner/Member sama49Points/49XP, dua koreksi, cursor20+7, offline recovery,
+320–430px/Owner1440,200%text/reduced motion/focus/Axe/console PASS.
+Bukan native production PostgreSQL, SagaPOS nyata atau iPhone fisik.
+
+`LOCAL_VALIDATED / COMMITTED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN /
+IN_PROGRESS / BUSINESS_READY=false`; source push/PR NOT_RUN. Production
+tidak berubah dari Wave1 `20260929T093800Z-e428b20-r0u` (monitor segar PASS).
+OTP nyata hanya internal allowlist sesuai izin sebelumnya; capture Member
+berakhir timeout tanpa sesi tersimpan, genuine delivery/login acceptance OPEN.
+Registrasi publik, broadcast, reward/quest/POS/Book/Google/Push/payment/hardware
+tetap OFF. Sisa Wave2: Owner policy preview/draft/version/publish, scoped paid
+event mapping/replay/drift/out-of-order dan lifecycle refund lanjutan; tidak
+mengklaim seluruh Wave2 selesai. Knowledge delapan dokumen disinkronkan terpisah
+dari source aplikasi; histori di bawah bukan status baru.
+
+
 ## 2026-09-29 — Wave 1 Owner mobile PASS, Member OTP internal aktif
 
 `CONFIRMED`; izin Andreas untuk Wave 1+deploy serta existing-provider OTP/UAT alamat sendiri. Release `20260929T093800Z-e428b20-r0u`, backend `e428b20a2c104085ee75e9b2ccffe79cc20c5542`, Member `c8f180e6108a8fffbf03cfc2c805766251b328e5`. Overflow Owner tertutup dan authenticated Owner browser320–430/1440, text200%, Axe, genuine Owner proof, encrypted backup/disposable restore, native PG18.6 unchanged15->15, rollback/reactivation serta final monitor PASS. OTP diaktifkan hanya internal allowlist; delivery/code verification/authenticated Member/iPhone UAT OPEN. Public registration, broadcast, reward/quest/POS/Book/Google/Push/payment/hardware tetap OFF. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / IN_PROGRESS / CI_NOT_RUN / BUSINESS_READY=false`; source push/PR NOT_RUN, knowledge terpisah. Detail pada [Saga Platform PRODUCT](products/saga-platform/PRODUCT.md); snapshot lama di bawah adalah histori.
