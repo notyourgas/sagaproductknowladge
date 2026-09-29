@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Wave 1 Owner mobile PASS, Member OTP internal aktif
+
+`CONFIRMED`; izin Andreas untuk Wave 1+deploy serta existing-provider OTP/UAT alamat sendiri. Release `20260929T093800Z-e428b20-r0u`, backend `e428b20a2c104085ee75e9b2ccffe79cc20c5542`, Member `c8f180e6108a8fffbf03cfc2c805766251b328e5`. Overflow Owner tertutup dan authenticated Owner browser320–430/1440, text200%, Axe, genuine Owner proof, encrypted backup/disposable restore, native PG18.6 unchanged15->15, rollback/reactivation serta final monitor PASS. OTP diaktifkan hanya internal allowlist; delivery/code verification/authenticated Member/iPhone UAT OPEN. Public registration, broadcast, reward/quest/POS/Book/Google/Push/payment/hardware tetap OFF. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / IN_PROGRESS / CI_NOT_RUN / BUSINESS_READY=false`; source push/PR NOT_RUN, knowledge terpisah. Detail pada [Saga Platform PRODUCT](products/saga-platform/PRODUCT.md); snapshot lama di bawah adalah histori.
+
+
 ## 2026-09-29 — Saga Member core production, belum business-ready
 
 `CONFIRMED`; rilis core `20260929T072700Z-a7b5756-r0u` aktif atas permintaan Andreas: Owner read-only dan Member core server-owned. Exact backend `a7b5756d8c690aa8102680101fc1905be10ca678`, Member `2e49f5cea9e7f4b9f64b701a26a1f1e87f5a17c8`, contracts `755ed1dccaf07c3576b6680faf2404f4724669bf`. Native PG18.6, encrypted production/disposable restore, actual rollback, activation, active backup dan monitor PASS. Authenticated Owner fungsi read-only PASS, tetapi full browser UAT NOT_PASS: overflow dashboard390->476px. Checkpoint dua koreksi; next slice sizing/layout dan rilis frontend/UAT ulang. Member OTP/provider, reward/quest/POS/Book/Google/Push/payment/hardware tetap OFF; real Member/iPhone/offsite/business acceptance OPEN. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / IN_PROGRESS / CI_NOT_RUN / BUSINESS_READY=false`; source committed lokal, source push/PR NOT_RUN, knowledge terpisah. Detail/provenance/batas pengujian pada [Saga Platform PRODUCT](products/saga-platform/PRODUCT.md). Entri lama di bawah merupakan histori, bukan status live baru.

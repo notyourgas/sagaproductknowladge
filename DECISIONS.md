@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-217 — Saga Member OTP internal dan UAT alamat pemilik
+
+- Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: gunakan provider email OTP existing untuk login Member dengan internal allowlist dan UAT hanya ke alamat pemilik; lanjutkan Wave 1 lalu guarded deploy.
+- Alasan: menguji login Member nyata setelah dashboard Owner tersedia.
+- Alternatif: simulator saja atau registrasi publik; tidak dipilih untuk scope ini.
+- Dampak: OTP bukan broadcast atau registrasi publik; akun lain tidak memperoleh izin pengiriman. Tidak mengizinkan POS/Book/Google/Push/payment/hardware atau perubahan saldo. Delivery dan verifikasi kode, iPhone/offsite serta business acceptance tetap gate terpisah; BUSINESS_READY=false.
+- Terkait: [Saga Platform](products/saga-platform/PRODUCT.md), [gaps](GAPS.md).
+
+
 ## DEC-216 — Backup offsite ke komputer Windows pemilik
 
 - Tanggal: 2026-09-28. Status: `CONFIRMED`; pemberi keputusan Andreas.
