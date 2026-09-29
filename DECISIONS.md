@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-220 — Google menjadi login utama Saga Member
+
+- Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik/keputusan: prioritaskan Google signup/login dan aktifkan di production; email OTP tetap fallback.
+- Alasan: akses Member lebih sederhana tanpa kode email pada setiap login.
+- Alternatif: OTP-only; tidak dipilih sebagai jalur utama.
+- Dampak: Google `PUBLIC_MEMBERS` permanen pada exact release `20260929T135500Z-bef4223-r0u`; consent dan role boundary tetap. Email linking hanya Google-authoritative atau subject yang sudah terikat.
+- Batas: business admission false dan provider bisnis/hardware OFF. Authenticated Google callback/iPhone UAT OPEN; BUSINESS_READY=false.
+- Menggantikan: hanya batas Google OFF DEC-219 menjadi `DEPRECATED`; keputusan pendaftaran permanen dan histori lainnya tetap berlaku.
+- Terkait: [Saga Platform](products/saga-platform/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md).
+
 ## DEC-219 — Pendaftaran Saga Member permanen
 
 - Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
@@ -8,7 +19,7 @@
 - Alasan: calon Member perlu membuat akun sendiri melalui link kanonik.
 - Alternatif: closed cohort/internal-only OTP atau memperpanjang semua fitur bisnis; tidak dipilih.
 - Dampak: email diverifikasi sebelum membuat Member, consent tetap wajib; tidak ada grant Owner/reviewer. Production registration/core aktif; provider canary accepted202, inbox dan authenticated new Member/iPhone UAT masih OPEN.
-- Batas: tidak membuka Reward/Quest/POS/Book/payment/Google/Push/broadcast/hardware; DEC-218 business pilot belum diaktifkan, BUSINESS_READY=false.
+- Batas historis: Google OFF diganti DEC-220; Reward/Quest/POS/Book/payment/Push/broadcast/hardware tidak ikut dibuka; DEC-218 business pilot belum diaktifkan, BUSINESS_READY=false.
 - Menggantikan: batas signup/OTP internal DEC-217; histori validasi/izin sebelumnya dipertahankan.
 - Terkait: [Saga Platform](products/saga-platform/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md).
 

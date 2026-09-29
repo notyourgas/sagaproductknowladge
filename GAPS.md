@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Google aktif; authenticated callback masih OPEN
+
+`CONFIRMED`; DEC-220 menutup blocker Google OFF dan UI OTP-only pada release
+`20260929T135500Z-bef4223-r0u`. Primary button dan official account chooser PASS;
+actual operator Google callback/consent dan iPhone UAT OPEN. Email OTP fallback
+tetap tersedia; belum ada bukti callback Google nyata yang diterima sesi Member.
+Pendaftaran sebelumnya user-confirmed; bukan Google UAT. Business/integration
+acceptance tidak ditutup dengan login; BUSINESS_READY=false. Detail
+[PRODUCT](products/saga-platform/PRODUCT.md). Status berikut adalah histori.
+
 ## 2026-09-29 — Saga Member: pendaftaran permanen aktif
 
 `CONFIRMED`; new-member rejection/internal-only OTP blocker ditutup DEC-219

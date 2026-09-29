@@ -1,5 +1,38 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Google login utama production (DEC-220)
+
+`CONFIRMED`; Andreas meminta Google sebagai prioritas dan aktivasi production.
+Before Google OFF -> after tombol Google utama untuk signup/login permanen di
+https://app.sagamember.site/member; email OTP tetap fallback. Penautan email
+hanya untuk Gmail/Google Workspace yang authoritative; email pihak ketiga yang
+belum terikat perlu OTP. Consent tetap wajib; tidak ada grant Owner/reviewer.
+
+Release `20260929T135500Z-bef4223-r0u`: backend
+`bef42238eebe1e19fec3e542f3e685a14ac7917d`, Member
+`712d03546ea85de842827fba5ac2c706db35af98`, contracts
+`755ed1dccaf07c3576b6680faf2404f4724669bf`, artifact
+`2db8b5987e416303bc5eb86cfe76f47784548a00455abe536ae07690490c548d`.
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / CI_NOT_RUN / BUSINESS_READY=false`.
+Source lokal committed; push/PR NOT_RUN, Vercel lama tidak diubah.
+
+Backend52 isolated files dan final focused10, frontend582, local integrated
+browser320-430/keyboard/200% text/Axe/OTP fallback, runner100 Windows+Linux,
+native PG18.6 unchanged15, encrypted backup/disposable restore, off-host encrypted
+copy/checksum, actual Owner proof, rollback/data retained/reactivation dan monitor
+PASS. UI Google utama dan redirect ke account chooser resmi terverifikasi;
+authenticated Google callback/consent dan iPhone UAT masih OPEN. Pendaftaran
+Member sebelumnya dikonfirmasi pemilik, bukan bukti Google callback.
+
+Google dan email OTP `PUBLIC_MEMBERS` ON; business admission tetap false,
+Reward/Quest/POS/Book/payment/Push/broadcast/hardware tetap OFF. Tidak memperpanjang
+pilot atau expiry sesi; milestone ini hanya login. DEC-220 mengganti batas Google
+OFF DEC-219 saja; checkpoint di bawah adalah histori, bukan runtime terbaru.
+Dokumen terdampak: Product/Dossier/Changelog Saga Platform, Portfolio, Master,
+Decisions, Gaps, Sync Status dan root Changelog; sumber instruksi Andreas dan
+exact runtime release. Next: operator login Google dengan email membership yang
+sama dan verifikasi kembali ke akun; tidak menerima consent otomatis.
+
 ## 2026-09-29 — Pendaftaran Member permanen production (DEC-219)
 
 `CONFIRMED`; DEC-219 mengganti batas signup/OTP internal pada DEC-217:
