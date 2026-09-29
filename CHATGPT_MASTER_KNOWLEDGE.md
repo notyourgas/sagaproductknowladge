@@ -1,5 +1,33 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — OTP paste lokal; Wave 2/3 belum dirilis (DEC-222)
+
+`CONFIRMED`; Andreas meminta Wave 2–3 lalu deploy, serta paste OTP.
+Tombol **Tempel kode**, paste native (termasuk spasi/tanda hubung), dan autofill
+tersedia pada source Member `0f1aaa1b5c78a13ba8b03ccc64f5244fda66e958`, branch
+`codex/member-onboarding-wave2`. Clipboard hanya dibaca saat ditekan; kode
+invalid/izin ditolak memberi panduan, tidak mengirim OTP otomatis atau menyimpan
+clipboard. Browser synthetic API/proxy positif/negatif PASS; bukan UAT produksi.
+Backend Wave 1 tetap `a1309455b4f3ca4cf0a4f34bbec1ac1422705ae9`; contracts,
+database, dependency dan provider tidak berubah. App push/PR/CI NOT_RUN.
+
+Layout Wave 2 masih working-tree checkpoint, bukan candidate hijau: tes 200%
+text/320 px menemukan overflow judul profil 22 px setelah dua correction rounds.
+Diagnosis DOM-only wrapping menghilangkan overflow, tetapi source belum diterapkan
+dan matriks belum PASS. `sagadevs-deployment` menghentikan promotion; tidak ada
+packaging, backup/restore atau deploy baru. Static check dan 583 unit working-tree
+PASS tidak menggantikan gate visual. Next: tutup wrapping judul, selesaikan matriks
+mobile, lalu freeze pair/recovery/guarded release tanpa meminta ulang izin deploy.
+
+Monitor live customer/member/public PASS; production tetap
+`20260929T135500Z-bef4223-r0u`, backend `bef42238eebe1e19fec3e542f3e685a14ac7917d`,
+Member `712d03546ea85de842827fba5ac2c706db35af98`. Google dan OTP PUBLIC_MEMBERS
+serta registrasi permanen existing tetap aktif; paste baru BELUM DEPLOY.
+Authenticated Google/iPhone UAT OPEN, businessFeaturesAdmitted false dan
+BUSINESS_READY=false. Audit security mendalam NOT_REQUESTED. Dokumen terdampak:
+Product, Dossier, changelog produk/portfolio/root, Master, Decisions, Gaps, Sync.
+Sumber: permintaan Andreas, exact source commit, tes lokal dan monitor runtime.
+
 ## 2026-09-29 — Wave 1 onboarding lokal (DEC-221)
 
 `CONFIRMED`; Andreas menyetujui Wave 1 onboarding, source/test lokal saja.

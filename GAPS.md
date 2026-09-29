@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Wave 2 OTP paste lokal; gate mobile/release OPEN
+
+`CONFIRMED`; DEC-222 mengizinkan Wave 2–3/deploy, tetapi 200% text pada 320 px
+masih menghasilkan overflow judul profil 22 px setelah dua correction rounds.
+Wrapping DOM diagnostic menghilangkan overflow; source patch/matriks belum lulus.
+OTP paste source `0f1aaa1b5c78a13ba8b03ccc64f5244fda66e958` lulus browser lokal;
+layout masih uncommitted checkpoint. Tidak ada kandidat baru dipromosikan.
+Next: selesaikan wrapping judul dan matriks mobile sebelum immutable pair/recovery.
+Production tetap Google predecessor; real Google/iPhone UAT dan BUSINESS_READY OPEN.
+
 ## 2026-09-29 — Onboarding Wave 1 lokal; mobile polish dan release belum dilakukan
 
 `CONFIRMED`; DEC-221 menutup jalur source onboarding public yang sebelumnya

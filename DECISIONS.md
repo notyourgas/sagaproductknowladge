@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-222 — Wave 2–3 onboarding dan OTP paste, deploy setelah gate
+
+- Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: lanjutkan Wave 2–3 lalu deploy; OTP dapat ditempel tanpa mengetik manual.
+- Alasan: akses mobile dan onboarding lebih mudah. Alternatif: mengetik enam digit.
+- Dampak: paste source lokal lulus; layout/release tetap ditahan gate 200% text.
+  Tidak mengubah credential, database atau membuka fitur bisnis/provider lain.
+- Provenance: Member `0f1aaa1b5c78a13ba8b03ccc64f5244fda66e958` lokal saja;
+  production Google predecessor unchanged, authenticated iPhone UAT OPEN.
+- Terkait: [Product](products/saga-platform/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-221 — Wave 1 onboarding public, tanpa deploy atau aktivasi bisnis
 
 - Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
