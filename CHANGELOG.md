@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — knowledge(saga-platform): scope pilot DEC-218
+
+`CONFIRMED`; sumber keputusan Andreas. Before scope pilot belum dipilih ->
+after Kopi Saga, tujuh hari, reviewer operasional independen dan ketersediaan
+UAT iPhone ditetapkan. Tidak mengganti gate teknis atau memperluas OTP DEC-217.
+Produk: Saga Platform/Member; PRODUCT/DOSSIER/CHANGELOG, portfolio, master,
+DECISIONS, GAPS dan SYNC_STATUS diperbarui. Provenance kandidat44493fe/40bfb59,
+runtime20260929T093800Z-e428b20-r0u; production tidak berubah.
+Cohort/reviewer provisioning, integrasi, native recovery dan UAT tetap OPEN;
+BELUM_DEPLOY untuk kandidat, BUSINESS_READY=false. Knowledge main HEAD
+dilaporkan setelah validasi dan push.
+
 ## 2026-09-29 — Owner governance dan admission atomik: kandidat lokal, belum deploy
 
 `CONFIRMED`; tindak lanjut permintaan Andreas menuntaskan empat area.

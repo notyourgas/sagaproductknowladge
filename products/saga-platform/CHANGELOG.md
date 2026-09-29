@@ -1,5 +1,15 @@
 # Saga Platform Changelog
 
+## 2026-09-29 — Keputusan scope pilot terbatas (DEC-218)
+
+`CONFIRMED`; sumber Andreas. Outlet Kopi Saga, durasi tujuh hari, reviewer
+operasional independen dinominasikan dan Andreas tersedia untuk iPhone UAT.
+Menutup keputusan scope, bukan provisioning/acceptance/deployment. Window baru
+dimulai pada aktivasi kandidat lulus gate; cohort, reviewer identity, integrasi
+dan recovery masih OPEN. Kandidat44493fe/40bfb59 belum deploy; runtime tidak
+berubah, BUSINESS_READY=false. OTP mengikuti DEC-217.
+Dokumen terkait: PRODUCT, DOSSIER, DECISIONS, GAPS, master dan portfolio.
+
 ## 2026-09-29 — Owner governance dan admission atomik: kandidat lokal, belum deploy
 
 `CONFIRMED`; tindak lanjut permintaan Andreas menuntaskan empat area.

@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-09-29 — Saga Member: pilot Kopi Saga tujuh hari disetujui
+
+`CONFIRMED`; keputusan Andreas (DEC-218). Reviewer operasional independen
+dinominasikan dan pemilik tersedia untuk iPhone UAT. Scope keputusan tertutup;
+akun/cohort, integrasi POS/Book, native recovery dan UAT belum tertutup.
+Kandidat44493fe/40bfb59 BELUM_DEPLOY; core runtime tidak berubah.
+Pilot dimulai saat aktivasi yang lulus gate; BUSINESS_READY=false, provider
+di luar OTP allowlist pemilik tetap OFF. Lihat produk Saga Platform.
+
 ## 2026-09-29 — Owner governance dan admission atomik: kandidat lokal, belum deploy
 
 `CONFIRMED`; tindak lanjut permintaan Andreas menuntaskan empat area.

@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-29 — Saga Member: keputusan pilot bukan aktivasi
+
+`CONFIRMED`; Andreas menyetujui pilot Kopi Saga tujuh hari, reviewer
+operasional independen dan UAT iPhone oleh dirinya (DEC-218). Jangan meminta
+ulang keputusan outlet/durasi atau izin deploy sebelumnya. Jangan menyebut
+pilot berjalan: window dimulai setelah exact candidate admitted dan activated.
+Akun reviewer, cohort existing, integrasi POS/Book, native recovery dan
+authenticated iPhone UAT masih OPEN. Core aktif; kandidat44493fe/40bfb59 belum
+deploy, BUSINESS_READY=false. Email OTP tetap scope pemilik pada DEC-217.
+
 ## 2026-09-29 — Owner governance dan admission atomik: kandidat lokal, belum deploy
 
 `CONFIRMED`; tindak lanjut permintaan Andreas menuntaskan empat area.

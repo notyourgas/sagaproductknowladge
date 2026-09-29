@@ -1,5 +1,16 @@
 # Saga Platform Dossier
 
+## 2026-09-29 — Pilot Kopi Saga: scope diterima, admission belum selesai
+
+`CONFIRMED`; Andreas menetapkan satu outlet Kopi Saga, tujuh hari, reviewer
+operasional independen dan UAT iPhone oleh pemilik (DEC-218). Awal/akhir UTC
+dihitung dari aktivasi exact candidate, expiry fail-closed; tidak memperpanjang
+pilot lama. Reviewer memakai identitas pribadi, tidak berbagi akun Owner atau
+menyetujui draft buatannya sendiri. Nominasi bukan provisioning atau bukti UAT.
+Cohort existing belum dipilih; perluasan email OTP tidak disimpulkan dari pilot.
+Gate teknis dan recovery tetap berlaku. Core aktif, fitur bisnis belum aktif,
+kandidat backend44493fe/Member40bfb59 BELUM_DEPLOY; BUSINESS_READY=false.
+
 ## 2026-09-29 — Owner governance dan admission atomik: kandidat lokal, belum deploy
 
 `CONFIRMED`; tindak lanjut permintaan Andreas menuntaskan empat area.

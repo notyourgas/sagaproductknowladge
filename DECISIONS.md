@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-218 — Pilot Saga Member satu outlet selama tujuh hari
+
+- Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Topik: scope pilot Saga Member / Customer Platform.
+- Keputusan: Kopi Saga, tujuh hari, reviewer operasional independen dinominasikan dan Andreas tersedia untuk UAT iPhone fisik.
+- Alasan: memvalidasi alur operasional pada satu outlet sebelum perluasan.
+- Alternatif: rollout semua outlet atau membuka fitur tanpa acceptance; tidak dipilih.
+- Dampak: window dimulai saat aktivasi exact candidate yang lulus gate, tidak memperpanjang window lama. Reviewer wajib identitas pribadi dan tidak self-approve. Cohort existing serta provisioning belum diputuskan/diselesaikan. Nominasi dan kesiapan iPhone bukan bukti UAT.
+- Batas: bukan aktivasi production, perluasan email OTP DEC-217, registrasi publik, broadcast, payment, Push, NFC atau printer. Integrasi/recovery/UAT wajib; BUSINESS_READY=false.
+- Terkait: [Saga Platform](products/saga-platform/PRODUCT.md), [gaps](GAPS.md), [portfolio](changelog/PORTFOLIO_CHANGELOG.md).
+
 ## DEC-217 — Saga Member OTP internal dan UAT alamat pemilik
 
 - Tanggal: 2026-09-29. Status: `CONFIRMED`; pemberi keputusan Andreas.

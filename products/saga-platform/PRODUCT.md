@@ -1,5 +1,23 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-29 — Scope pilot tujuh hari disetujui; belum diaktifkan
+
+`CONFIRMED`; keputusan Andreas: pilot satu outlet Kopi Saga selama tujuh hari,
+reviewer operasional independen dinominasikan, dan Andreas tersedia untuk UAT
+iPhone fisik. Before scope pilot menunggu keputusan -> after outlet, durasi,
+reviewer dan pelaksana UAT ditetapkan. Window dimulai saat aktivasi kandidat
+yang lulus gate, bukan tanggal persetujuan atau perpanjangan window lama.
+
+Kandidat tetap backend `44493febf0f88ab571b3def3f127f4ea909dfaaf` /
+Member `40bfb59230813000ba8171b2f7afce67b1dfb5a2`, BELUM_DEPLOY.
+Monitor fresh: core `20260929T093800Z-e428b20-r0u` aktif; business pilot
+`PRODUCTION_PILOT_WINDOW_CLOSED`. Provisioning akun reviewer pribadi, pilihan
+cohort existing, POS/Book acceptance, native recovery/rollback dan authenticated
+iPhone UAT tetap OPEN. Tidak ada perubahan runtime, provider atau data bisnis.
+DEC-217 tidak diperluas: OTP nyata hanya allowlist pemilik yang sudah diotorisasi;
+registrasi publik, broadcast, payment, Push, NFC dan printer tetap OFF.
+`BUSINESS_READY=false`. Lihat [DEC-218](../../DECISIONS.md).
+
 ## 2026-09-29 — Owner governance dan admission atomik: kandidat lokal, belum deploy
 
 `CONFIRMED`; tindak lanjut permintaan Andreas menuntaskan empat area.

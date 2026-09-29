@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-29 — Saga Member: keputusan scope tertutup, gate operasional terbuka
+
+`CONFIRMED`; DEC-218 menutup outlet Kopi Saga, durasi tujuh hari, nominasi
+reviewer operasional independen dan ketersediaan Andreas untuk iPhone UAT.
+Masih OPEN: identitas/akun pribadi reviewer serta jalur login scoped, pilihan
+cohort existing dan izin pengiriman jika di luar DEC-217, exact POS/Book
+integration, native target admission/restore/rollback, serta UAT fisik.
+Tidak perlu meminta ulang outlet/durasi atau izin deploy. Nominasi tidak
+membuat akun, menambah role, memperluas OTP atau mengaktifkan fitur.
+Kandidat44493fe/40bfb59 BELUM_DEPLOY; BUSINESS_READY=false.
+
 ## 2026-09-29 — Owner governance dan admission atomik: kandidat lokal, belum deploy
 
 `CONFIRMED`; tindak lanjut permintaan Andreas menuntaskan empat area.
