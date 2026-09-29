@@ -1,5 +1,42 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-29 — Owner governance dan admission atomik: kandidat lokal, belum deploy
+
+`CONFIRMED`; tindak lanjut permintaan Andreas menuntaskan empat area.
+Before Owner hanya draft tanpa submit/review/publish -> after UI dan API cookie
+menjalankan draft, submit, reviewer independen, publish; scope organisasi/CSRF
+dan larangan self-approval tetap berlaku. Definisi Reward/Quest, status program
+dan audit tersimpan satu transaksi repository PostgreSQL; live authority baru
+berubah sesudah COMMIT. Kegagalan audit rollback, retry tidak duplikat,
+reviewer revoked tetap ditolak setelah restart. Migration0016 additive.
+
+Backend `44493febf0f88ab571b3def3f127f4ea909dfaaf`
+(`codex/member-strategy-completion`), Member
+`40bfb59230813000ba8171b2f7afce67b1dfb5a2`
+(`codex/member-wave3-projection-v2`), contracts `755ed1d` unchanged.
+Backend54file/check37/migration16 dan delta18/18 PASS; frontend583/583/check PASS.
+Local actual API/proxy/browser Owner governance dan existing Member simulator,
+320–430px/Axe/200%/reduced motion/offline-recovery PASS. Embedded PostgreSQL
+transaction/restart bukan native target PostgreSQL atau human authenticated UAT.
+
+Immutable pair SHA256
+`819eb2ff1151d8585a59b341d375ce9f093341dbdbfcdde9b30bc159fca009af`
+(22,467,792 bytes) inventory/extraction/dependency0/entropy0/session28/SW PASS.
+Source migration compatibility15→16 PASS; target migration belum diterapkan.
+Candidate `BELUM_DEPLOY`; source push/PR/CI NOT_RUN; production tetap
+`20260929T093800Z-e428b20-r0u`, business pilot window closed.
+
+Empat area tetap IN_PROGRESS: native target admission/recovery dan legacy cutover,
+POS/Book live consumer + scoped reconciliation, physical iPhone/existing-member
+UAT, final guarded cutover. Checkout POS sedang berubah oleh pekerjaan lain;
+tidak dioverwrite atau diklaim belum punya consumer dari checkout lama.
+Browser Wave3 historis belum PASS dan correction budget tidak direset.
+Pilot baru memerlukan scope/cohort/operator/waktu; izin deploy existing tidak
+dipakai memperpanjang window expired. Providers/payment/hardware/public
+registration tidak diaktifkan; BUSINESS_READY=false. Knowledge push terpisah
+bukan deployment aplikasi; tidak ada keputusan founder/pricing baru.
+
+
 ## 2026-09-29 — Strategi Member: refund Quest lokal, deployment belum dilakukan
 
 `CONFIRMED`; Andreas meminta implementasi strategi dan deploy. Source lokal
