@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-29 — Wave 1 Owner/Member local-only
+
+- `CONFIRMED`: backend `34535d9edc9159436b93edadad3295491f7105c9`, Member `28ec581ce30f3bc94842bac4c1374b003b3760a1`; contracts unchanged. Before core-only/registration coupling -> after read-only organization registry and existing-only login/consent/session. No invented context links, new accounts, balance corrections or Member-to-Owner promotion.
+- Backend48files/frontend577tests/check, embedded PostgreSQL restart, source migration15->15 byte-identical, actual local API/proxy/browser synthetic Owner+Member PASS. Owner search/cursor/detail/audit320–1440; Member OTP simulator/consent/reload/logout-all. Not native production PostgreSQL/iPhone/offline-full-matrix or authenticated production UAT.
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; source push/PR NOT_RUN. Monitor29September11:31WIB current core-only release `20260929T032900Z-3e43ee8-r0u` healthy/account available, business/registration false, providers OFF. Wave1 did not deploy or send email; historical recovery snapshots below are not current live status.
+- Wave1 IN_PROGRESS. Next: exact runner/artifact binding, encrypted backup/disposable restore/rollback and genuine Owner UAT before read-only rollout. Real Member OTP provider requires separate authorization and controlled UAT; no shared Owner password. Knowledge updated on a clean isolated checkout; original dirty checkout preserved.
+
 ## 2026-09-29 — Sync Member runner9be dan actual metadata recovery
 
 - `CONFIRMED / accepted`: source9be3adcd31bb650369ead9f8f401a130edc935e9/treeaba2787a58fae5321bd571c48c326d66d8347364 independent117Python PASS; actual bounded runner adoption06.16–06.18 WIB dan metadata PREFLIGHTED06.23–06.25 WIB diterima independent QA. Before guard salah/metadata tertahan → after tooling applied dan candidate metadata gate closed. Tidak mengubah expiry/Owner/binding/providerOFF; helper/current/app/env/DB tetap pada receipts, bukan live probe baru writer.

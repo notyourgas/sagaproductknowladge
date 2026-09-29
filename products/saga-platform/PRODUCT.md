@@ -1,5 +1,15 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-29 — Wave 1 Member/Owner: slice lokal tervalidasi, belum deploy
+
+`CONFIRMED`: backend `34535d9edc9159436b93edadad3295491f7105c9` dan Member `28ec581ce30f3bc94842bac4c1374b003b3760a1`, contracts tetap `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`. Sebelum Owner berhenti di akses inti dan Member existing terikat registrasi/pilot; sesudah explicit Owner read-only dan existing-only login terimplementasi. Registry organisasi hasil restore tidak mengarang link outlet/tenant atau izin koreksi saldo; Member tidak menjadi Owner dan akun baru tidak dibuat.
+
+Backend 48 berkas tes, frontend 577/577, check, embedded PostgreSQL restart/restore, source migration15->15 byte-identical, dan browser API/proxy nyata dengan identitas sintetis PASS. Owner search/cursor/detail/audit, enam lebar320–1440, Member OTP simulator/consent/reload/logout-all serta Axe serious/critical pada halaman yang diuji lulus. Bukan native PostgreSQL production, native iPhone PWA, full offline/accessibility matrix atau authenticated production UAT.
+
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; source push/PR belum dilakukan. Monitor read-only 29September11:31WIB: active core-only `20260929T032900Z-3e43ee8-r0u`, backend `3e43ee82bc4e000c90157316363292b3de329c9b`, Member `e611619f05724f1458e0b235637faf69cc7d62ff`, account available; business admission/registrasi publik false, provider eksternal OFF. Snapshot recovery lama di bawah bukan status live sekarang. Tidak ada deploy, schema/backfill, perubahan saldo atau pengiriman email dari Wave1.
+
+OPEN: runner/artifact harus diikat pasangan Wave1 dan izin ownerRead; backup terenkripsi/disposable restore/rollback serta genuine Owner UAT kandidat baru. Member real OTP memerlukan otorisasi provider dan UAT terkontrol terpisah. Wave1 IN_PROGRESS; tidak membuka wave bisnis lain atau mengklaim semua fitur aktif.
+
 ## 2026-09-29 — Saga Member: runner produksi diperbaiki, aplikasi belum diganti
 
 - `CONFIRMED / PRODUCTION_TOOLING_APPLIED_ONLY`: runner source `9be3adcd31bb650369ead9f8f401a130edc935e9` / tree `aba2787a58fae5321bd571c48c326d66d8347364` memperbaiki pencocokan mode runtime historis pada jalur recovery, tanpa mengubah expiry, verifikasi Owner, binding rilis lain atau provider OFF. Audit source/package independen: 117/117 tes Python PASS, termasuk suite runner91 dan focused5 sebagai subset, bukan tes tambahan.
