@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+
+## 2026-09-29 — Wave 4 / S7: keandalan handoff Saga Book, lokal saja
+
+- `CONFIRMED`; atas permintaan Andreas lanjut Wave4. Customer Platform source `a3c356aea3b1c77a795b2aecdf95411344e2a6c6`, branch `codex/member-wave4-book-handoff`, berbasis Wave2 tanpa mengambil perubahan Wave3 yang belum diterima. Handoff Member mengikuti identity/scope/return path Platform, validasi waktu/tujuan dan single-use bertahan setelah restart. Saga Book tetap authority booking; handoff tidak membuat booking, payment atau Points.
+- Validasi source: 50 file tes backend dan static/migration source checks PASS; focused regression/API/disposable embedded PostgreSQL restart PASS. Bukan native production PostgreSQL, browser/iPhone UAT atau integrasi consumer Saga Book nyata. Tidak ada perubahan frontend, schema, shared-contract pin atau dependency.
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; source commit lokal, belum push/PR/deploy. Monitor read-only 29September12:28WIB PASS untuk core-only release `20260929T032900Z-3e43ee8-r0u`, bukan kandidat Wave4. SagaPOS, SagaBook provider, Google, Push, payment dan hardware tetap OFF.
+- Wave4 keseluruhan `IN_PROGRESS`: slice S7 lokal selesai, tetapi consumer contract/return-path UAT dan recovery/release masih OPEN; S6 SagaPOS serta S8 Google/Push belum diselesaikan pada run ini. Wave3 browser acceptance dan operator publish masih OPEN, tidak diklaim selesai atau dimasukkan kandidat ini. Consumer Saga Book harus memakai tenant/audience eksplisit sebelum aktivasi; pengujian provider nyata memerlukan otorisasi/UAT khusus. File knowledge terdampak: Product/Dossier/Changelog Saga Platform, Portfolio, Master, root Changelog, Sync Status dan Gaps.
+
+
 ## 2026-09-29 — Wave 2 / S3 Member inti: local validated, belum deploy
 
 - `CONFIRMED`; Andreas meminta lanjut Wave2. Source backend `e9ecc3d135ab79603a266c9517961a7999981144`, Member `2e49f5cea9e7f4b9f64b701a26a1f1e87f5a17c8`, di atas Wave1; shared contracts tetap `2635a52ac28f7b996bf21b0565c0fa3a940a4ce9`. Before self-service ditolak atau hanya mengubah browser -> after explicit memberCore, profil/undo dan preferensi versioned, Inbox read/deep-link/read-all tersimpan, privacy request EXPORT/CORRECTION/DELETION retry-safe; Home/ledger/Pass tetap proyeksi Platform. Permintaan penghapusan tidak langsung menghapus akun.
