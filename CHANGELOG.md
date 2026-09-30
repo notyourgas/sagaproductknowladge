@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-30 — knowledge(saga-platform): E2E-1 scope Reward mesin
+
+- `CONFIRMED`; sumber: instruksi Andreas dan Platform `56f89fde527a04122e413d7fe03421ba9f38cfa8`, backend 56 berkas dan POS 6/6 lokal.
+- Before scope quote/reservasi mesin belum dibatasi outlet → after terikat kredensial. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; production, provider dan payment tidak berubah.
+- Dampak: Saga Platform Product/Dossier/Changelog, Portfolio, Master, Sync Status dan Gaps. Native PostgreSQL/restore, historis, machine read, UAT autentik dan release final OPEN. Knowledge commit terpisah pada main HEAD.
+
 ## 2026-09-30 — knowledge(sagaops): UI/UX Gelombang 3 lokal
 
 - `CONFIRMED`; sumber instruksi Andreas, source commit `fab97f8d8f837e18e47fb8db2494acaf119e5f5a`, focused browser 16/16, static 674/schema 35, TypeScript/diff, QA independen dan health runtime 30 September.

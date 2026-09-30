@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-30 — E2E-1 scope Reward kasir lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform source `56f89fde527a04122e413d7fe03421ba9f38cfa8` mengikat quote dan siklus reservasi Reward mesin pada scope outlet kredensial; produksi menolak operasi Reward dari kredensial tanpa scope saat request. Backend 56 berkas dan POS outbox/cross-product 6/6 PASS lokal. Member/POS source dan production tidak berubah dalam slice ini; native PostgreSQL, rekonsiliasi historis, batas machine read, UAT iPhone autentik dan release pasangan final tetap OPEN. `BUSINESS_READY=false`.
+
 ## 2026-09-30 — E2E-0 baseline selesai lokal; E2E-1 masih berjalan
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform `497f413c2932063fe9880c11f145becf862c5869`, Member harness `ac3aca353ad501a1f7b257cfc3de85a713ffe835`, dan POS `7207429d4a092ce16e9a9acd139fd99065eabe80` mengikat refund pada receipt earn authoritative dan outbox POS tersimpan. Receipt refund membawa scope dari entry asli dan replay identik. Backend 55 berkas, Member browser 320–430 px, seam 14 pemeriksaan, serta POS cross-product/outbox 6/6 lulus lokal. Native PostgreSQL, rekonsiliasi zero-allocation/lama, iPhone/authenticated UAT, scope machine read/reward dan release pasangan final masih OPEN. Production tidak berubah; `BUSINESS_READY=false`.

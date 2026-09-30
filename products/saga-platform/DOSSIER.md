@@ -1,5 +1,9 @@
 # Saga Platform Dossier
 
+## 2026-09-30 — E2E-1 scope Reward mesin
+
+`CONFIRMED`. Before scope outlet machine hanya ditegakkan untuk commerce write; after Platform `c797545f7cc8e6f89c0e4a487747970e577af21f` menerapkan scope pada quote, reserve, commit, release, compensate, dan fail-closed untuk kredensial Reward tidak berscope dalam mode produksi. Regresi lintas outlet dan full suite 56 berkas PASS; POS disposable outbox/cross-product 6/6 PASS. Tidak ada perubahan schema, provider, Member client atau runtime produksi. Machine summary read, credential rollout, native PostgreSQL/restore dan UAT autentik masih gate E2E-1.
+
 ## 2026-09-30 — E2E-0/1 gate lokal terbaru
 
 `CONFIRMED`. Source Platform `497f413c2932063fe9880c11f145becf862c5869` menutup mismatch receipt refund POS: organisasi/outlet diambil dari alokasi earn asli, bukan input client. Test merah→hijau, suite backend 55 berkas, static/migration/proxy check dan seam POS connector→Platform→Member 14 pemeriksaan PASS; browser lokal login/summary/activity/stale/restart dan 320/360/375/390/430 px PASS tanpa Axe critical/serious atau error tak terduga. Member harness `ac3aca353ad501a1f7b257cfc3de85a713ffe835` memakai receipt API untuk refund dan menguji zero-allocation. POS `7207429d4a092ce16e9a9acd139fd99065eabe80` menguji checkout/outbox/refund dengan disposable PostgreSQL dan HTTP Platform nyata, 6/6 PASS termasuk lost ACK, restart, dan QRIS pending. Seam Member sendiri tetap mensimulasikan checkout; kedua bukti tidak setara native PostgreSQL atau iPhone/authenticated production UAT. E2E-0 baseline COMPLETE, E2E-1 IN_PROGRESS; production/provider/admission tidak berubah.
