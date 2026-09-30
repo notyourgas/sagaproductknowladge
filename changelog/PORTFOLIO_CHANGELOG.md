@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-30 — SagaPOS UI/UX Gelombang 3 lokal
+
+`CONFIRMED`; source `fab97f8d8f837e18e47fb8db2494acaf119e5f5a` merapikan Member, Laporan, Integrasi, HR, Kasir dan Kiosk portrait tanpa mengubah layanan atau transaksi. Browser gabungan 16/16, static 674/schema 35, TypeScript/diff dan QA independen PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; production masih source `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ready pada cek 30 September. Exact candidate integration, release gates dan UAT operator/perangkat masih terbuka. Detail [SagaOPS Product](../products/sagaops/PRODUCT.md) dan [Dossier](../products/sagaops/DOSSIER.md).
+
 ## 2026-09-30 — Saga Member × Platform E2E-0 lokal selesai
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform `497f413c2932063fe9880c11f145becf862c5869` memperbaiki receipt refund berscope untuk outbox POS; Member harness `ac3aca353ad501a1f7b257cfc3de85a713ffe835` membuktikan seam 14 pemeriksaan. Backend 55 berkas dan browser Member 320–430 px PASS. E2E-1 POS nyata, native PostgreSQL, iPhone UAT dan exact-pair release masih OPEN. Production tetap pada release sebelumnya; tidak ada aktivasi fitur bisnis baru, `BUSINESS_READY=false`.

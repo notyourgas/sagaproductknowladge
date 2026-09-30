@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-30 — knowledge(sagaops): UI/UX Gelombang 3 lokal
+
+- `CONFIRMED`; sumber instruksi Andreas, source commit `fab97f8d8f837e18e47fb8db2494acaf119e5f5a`, focused browser 16/16, static 674/schema 35, TypeScript/diff, QA independen dan health runtime 30 September.
+- Before ringkasan Member bercampur simulasi, ekspor tanpa kelompok, tindakan HR tertunda di mobile, pilihan bayar dan viewport Kiosk kurang efisien → after alur/status lebih jelas dan copy QR offline aman. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; production tidak berubah, source push/PR/deploy tidak dijalankan.
+- Dampak: SagaOPS Product/Dossier/Changelog, Portfolio, Master dan Sync Status. Next: integrasi exact candidate, release gate serta UAT operator/perangkat. Knowledge commit terpisah pada main HEAD.
+
 ## 2026-09-30 — knowledge(saga-platform): E2E-0 lokal, E2E-1 parsial
 
 - `CONFIRMED`; sumber: permintaan Andreas melanjutkan E2E-0/1, Platform `497f413c2932063fe9880c11f145becf862c5869`, Member `ac3aca353ad501a1f7b257cfc3de85a713ffe835`, tes lokal dan monitor runtime.

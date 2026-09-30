@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-30 — UI/UX Gelombang 3, source lokal
+
+`CONFIRMED`. Before: simulator Member mendahului ringkasan dan rekomendasi fixture tampak operasional; sepuluh ekspor laporan tanpa kelompok; antrean HR mobile berada setelah ringkasan; label roster lama/checkout memberi kesan siap; pilihan QRIS manual disabled memisahkan metode bayar aktif; ukuran banner Kiosk membuat scroll non-menu dan copy offline dapat menyatakan QR kedaluwarsa masih berlaku. After: Member ringkasan dahulu dengan contoh rekomendasi dan Diagnostik terlipat; laporan serta integrasi tersusun menurut tugas/status; HR menampilkan tindakan di depan dengan label sesuai cakupan; kasir menempatkan metode aktif berdampingan; Kiosk memakai tinggi banner terukur dan instruksi offline netral. Pengaturan jam layanan/Tim & Akses dari gelombang sebelumnya tidak diubah. Tidak ada kontrak API, kalkulasi uang/stok, atau payment/provider yang berubah.
+
+Source `fab97f8d8f837e18e47fb8db2494acaf119e5f5a`, parent Gelombang 2 `6cdb2f548eb03b41ee84ea2c5c40774a751fb732`. Browser gabungan 16/16, termasuk reporting OFF 390/1440, HR mobile dan tindakan, Member simulator tanpa fakta pelanggan, kasir tanpa sale, serta Kiosk 720/1080 portrait dan QR expired+offline; static 674/schema 35, TypeScript/diff dan QA independen PASS. Sepuluh href laporan tetap identik dengan base. Ini bukan tes seluruh repository, perangkat fisik, atau authenticated production UAT. Production health 30 September ready pada source `64dc78e347204ba7823fef8283f0ee881f3e4ff5`; `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Next: integrasi exact candidate dengan perubahan Owner/Member aktif, release gates oleh satu Lead, lalu UAT perangkat dan operator.
+
 ## 2026-09-30 — Owner UI/UX Gelombang 2, local acceptance
 
 `CONFIRMED`. Before: header katalog menawarkan tambah produk di setiap tab; Finalisasi Phase 2 menjadi tab utama Stok; Pembelian panjang tanpa akses cepat per tahap; dua CTA Gudang memiliki teks sewarna latar akibat selector tautan umum. After: CTA katalog kontekstual dan copy draft/publikasi, tab harian Bahan/Gudang/HPP dengan deep-link diagnostik, tujuh pintas Pembelian yang memfokuskan panel atau membuka Gudang/AP existing, serta warna CTA yang terbaca. Tidak ada duplikasi AP atau perubahan kalkulasi dan endpoint transaksi.

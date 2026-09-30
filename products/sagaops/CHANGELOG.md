@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-09-30 — Gelombang 3 UI/UX Owner dan kanal, lokal
+
+- `CONFIRMED`; source `fab97f8d8f837e18e47fb8db2494acaf119e5f5a`, parent Wave 2 `6cdb2f548eb03b41ee84ea2c5c40774a751fb732`, atas instruksi Andreas.
+- Member: ringkasan/status dahulu, fixture diberi label contoh, simulator di Diagnostik. Laporan: sepuluh target ekspor sama, dikelompokkan; reporting OFF tidak diubah. Integrasi: status existing dikelompokkan. HR: tindakan mobile di depan dan label roster/absensi akurat. Kasir: metode aktif berdampingan. Kiosk: non-menu tanpa scroll banner dan instruksi QR offline netral.
+- Browser gabungan 16/16, static 674/schema 35, TypeScript/diff dan QA independen PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; source push/PR/deploy tidak dijalankan. Health production tetap ready/source `64dc78e347204ba7823fef8283f0ee881f3e4ff5` saat cek 30 September. Next: exact candidate integration, release gates, authenticated Owner dan UAT kiosk 32 inci.
+
 ## 2026-09-30 — Gelombang 2 UI/UX Owner, lokal
 
 - `CONFIRMED`; instruksi Andreas, source `6cdb2f548eb03b41ee84ea2c5c40774a751fb732` di atas Gelombang 1 `a4483d053a393c534fdbb2142f16fa55af2482c1`.

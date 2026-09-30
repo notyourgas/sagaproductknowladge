@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-30 — Gelombang 3 UI/UX SagaPOS tervalidasi lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Source kumulatif `fab97f8d8f837e18e47fb8db2494acaf119e5f5a` melanjutkan Gelombang 2. Ringkasan Member kini mengutamakan data agregat/status koneksi, menandai rekomendasi fixture sebagai contoh, dan menaruh simulator di Diagnostik. Ekspor Laporan dikelompokkan menurut penjualan, kas/pembayaran, supplier/AP dan inventory/HPP tanpa mengubah target CSV; reporting OFF tetap berarti belum diaktifkan. Integrasi dikelompokkan menurut layanan. Pada mobile, antrean tindakan HR didahulukan dan label absensi/roster tidak menyiratkan kesiapan payroll. Kasir merapikan pilihan bayar; Kiosk portrait menghitung tinggi banner aktual agar layar non-menu tidak scroll serta memakai instruksi netral saat QR kedaluwarsa dan koneksi putus.
+
+Tes browser gabungan 16/16 pada viewport Owner 1440/390 dan Kiosk 720×1280/1080×1920, static 674 modul/schema 35, TypeScript/diff, dan QA independen lulus. Ini bukti sintetis lokal; UAT sentuh perangkat 32 inci dan Owner autentik masih terbuka. Health production 30 September ready, source `64dc78e347204ba7823fef8283f0ee881f3e4ff5`, inventory reporting OFF; tidak ada deploy, aktivasi provider, atau transaksi bisnis dari pekerjaan ini. Integrasi kandidat dengan lane aktif dan gate rilis tetap diperlukan; `BUSINESS_READY=false`.
+
 ## 2026-09-30 — Gelombang 2 UI/UX Owner selesai lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Source kumulatif `6cdb2f548eb03b41ee84ea2c5c40774a751fb732` melanjutkan Gelombang 1 `a4483d053a393c534fdbb2142f16fa55af2482c1`. Menu & promo kini menampilkan aksi tambah produk hanya di tab Produk dan menjelaskan mana perubahan draft versus ketersediaan langsung. Stok & HPP mengutamakan tab Bahan, Gudang, HPP; diagnostik teknis tetap tersedia lewat tautan terpisah. Pembelian mendapat navigasi tahap ke supplier, PO, penerimaan Gudang, invoice/retur, pembayaran tercatat dan AP dari sumber data yang sama. Teks dua tombol Gudang yang sebelumnya hilang karena benturan CSS kembali terbaca. Tidak ada layanan, perhitungan uang/stok, permission, atau mode reporting yang diubah.
