@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-09-30 — Release candidate gabungan UI/UX
+
+`CONFIRMED / ARTIFACT_STAGED / NOT_ACTIVATED`. Source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` menyatukan Wave 1 `a4483d0`, Wave 2 `6cdb2f5` dan Wave 3 `fab97f8` pada base production `64dc78e`. Menu Keuangan, katalog/pembelian, Member, laporan, integrasi, HR mobile, kasir dan Kiosk portrait memakai alur/copy yang telah diuji lokal. Perbaikan runner menerima ledger 34 atau 35 hanya pada promosi code-only dengan manifest kandidat identik, checksum migrasi dan jumlah baris database tetap diperiksa; profil upgrade 34→35 tidak dilonggarkan.
+
+Checkout bersih dan branch remote cocok; focused browser, static/schema, kontrak rilis serta review independen lulus lokal. Artifact dikemas dan distage oleh Release Lead tanpa mengganti runtime. Gate tersisa: fresh effective Owner, encrypted backup/disposable restore terikat kandidat, rehearsal 35→35, expected-current switch, health/authenticated UAT, dan UAT perangkat fisik. POS–Member reward/outbox serta AP divergen tidak termasuk paket. Reporting OFF dan boundary gateway existing dipertahankan; `BUSINESS_READY=false`.
+
 ## 2026-09-30 — UI/UX Gelombang 3, source lokal
 
 `CONFIRMED`. Before: simulator Member mendahului ringkasan dan rekomendasi fixture tampak operasional; sepuluh ekspor laporan tanpa kelompok; antrean HR mobile berada setelah ringkasan; label roster lama/checkout memberi kesan siap; pilihan QRIS manual disabled memisahkan metode bayar aktif; ukuran banner Kiosk membuat scroll non-menu dan copy offline dapat menyatakan QR kedaluwarsa masih berlaku. After: Member ringkasan dahulu dengan contoh rekomendasi dan Diagnostik terlipat; laporan serta integrasi tersusun menurut tugas/status; HR menampilkan tindakan di depan dengan label sesuai cakupan; kasir menempatkan metode aktif berdampingan; Kiosk memakai tinggi banner terukur dan instruksi offline netral. Pengaturan jam layanan/Tim & Akses dari gelombang sebelumnya tidak diubah. Tidak ada kontrak API, kalkulasi uang/stok, atau payment/provider yang berubah.

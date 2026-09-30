@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-30 — knowledge(sagaops): kandidat UI/UX gabungan distage
+
+- `CONFIRMED`; sumber keputusan Andreas, source `d8aa4c60ca2172e5e5915b96eb6956437e38134a`, QA independen dan stage artifact exact-source.
+- Before Wave 1–3 UI hanya lokal dan runner code-only menolak current schema 35 → after satu kandidat bersih/pushed, guard 35→35 dibetulkan, artifact dikemas dan distage tanpa switch production.
+- Dampak: SagaOPS Product/Dossier/Changelog, Portfolio, Master, Gaps dan Sync Status. `ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; Owner proof, recovery rehearsal dan UAT tetap OPEN. Knowledge commit terpisah pada main HEAD.
+
 ## 2026-09-30 — knowledge(saga-platform): E2E-1 scope Reward mesin
 
 - `CONFIRMED`; sumber: instruksi Andreas dan Platform `56f89fde527a04122e413d7fe03421ba9f38cfa8`, backend 56 berkas dan POS 6/6 lokal.

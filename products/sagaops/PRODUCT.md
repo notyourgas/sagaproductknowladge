@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-09-30 — Kandidat tunggal UI/UX Wave 1–3 siap aktivasi bersyarat
+
+`CONFIRMED / ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Atas instruksi Andreas, tiga gelombang UI/UX Owner, Kasir dan Kiosk disatukan dari runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ke source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` pada branch `codex/sagapos-owner-uiux-wave3-release-20260930`. Kandidat menambah koreksi runner code-only untuk transisi schema 35→35; migrasi, lockfile, service unit, transaksi dan mode provider tidak berubah. Kandidat POS–Member reward/outbox dan AP terpisah tidak ikut.
+
+QA independen menerima tes dashboard/kontrak rilis 6 pass, 0 fail, 1 tes khusus Linux dilewati di Windows; static 674 modul/schema 35 dan pemeriksaan sintaks lulus. Artifact exact-source telah dikemas dan distage terpisah di VPS, tetapi pointer production masih `64dc78e` dan layanan sehat saat pemeriksaan terakhir. Aktivasi menunggu bukti Owner autentik yang baru, backup terenkripsi/disposable restore, rehearsal kandidat, lalu verifikasi pascadeploy. UAT sentuh Kiosk 32 inci dan `BUSINESS_READY` tetap terbuka.
+
 ## 2026-09-30 — Gelombang 3 UI/UX SagaPOS tervalidasi lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Source kumulatif `fab97f8d8f837e18e47fb8db2494acaf119e5f5a` melanjutkan Gelombang 2. Ringkasan Member kini mengutamakan data agregat/status koneksi, menandai rekomendasi fixture sebagai contoh, dan menaruh simulator di Diagnostik. Ekspor Laporan dikelompokkan menurut penjualan, kas/pembayaran, supplier/AP dan inventory/HPP tanpa mengubah target CSV; reporting OFF tetap berarti belum diaktifkan. Integrasi dikelompokkan menurut layanan. Pada mobile, antrean tindakan HR didahulukan dan label absensi/roster tidak menyiratkan kesiapan payroll. Kasir merapikan pilihan bayar; Kiosk portrait menghitung tinggi banner aktual agar layar non-menu tidak scroll serta memakai instruksi netral saat QR kedaluwarsa dan koneksi putus.

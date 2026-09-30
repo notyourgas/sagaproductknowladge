@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-30 — SagaPOS UI/UX siap rilis bersyarat, belum aktif
+
+`CONFIRMED / ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Kandidat source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` menyatukan Wave 1–3 UI/UX Owner/Kasir/Kiosk pada base production `64dc78e`. Artifact exact-source telah distage, QA lokal independen lulus, dan runner code-only schema 35→35 diperbaiki tanpa melemahkan checksum migrasi. Production belum berpindah; fresh Owner auth, backup/restore, rehearsal dan authenticated UAT masih wajib. Reward/outbox POS–Member serta AP terpisah tidak disertakan. `BUSINESS_READY=false`. [SagaOPS Product](products/sagaops/PRODUCT.md).
+
 ## 2026-09-30 — Saga Member E2E-1 masih berjalan
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform `56f89fde527a04122e413d7fe03421ba9f38cfa8` menutup gap scope Reward mesin untuk quote/reservasi; backend 56 berkas dan POS outbox/cross-product 6/6 PASS lokal. Belum ada deploy atau aktivasi bisnis baru. Native PostgreSQL/restore, rekonsiliasi historis, machine read, UAT iPhone autentik dan exact-pair release tetap OPEN; `BUSINESS_READY=false`.
