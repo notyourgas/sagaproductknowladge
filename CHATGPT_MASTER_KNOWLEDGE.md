@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-30 — SagaView Newspaper dan Passport aktif
+
+`CONFIRMED`: Studio `6f28cfee5a5c96507270d555b172b1d93018737a`
+aktif pada release `20260930021641-6f28cfe`. Saga Studio memiliki 11
+Newspaper 4R Rp15.000, 11 Newspaper A4 Rp25.000, dan empat Passport Rp25.000;
+seluruh 26 frame published. Passport memakai cover + interior dua foto untuk
+preview, sedangkan output cetak adalah lembar 4R yang dipotong. Studio internal
+Saga mendapat batas praktis 10.000 frame aktif; jangan mengiklankannya sebagai
+paket publik atau mengubah limit Growth/Pro. Backend tetap `ee3ddee`.
+Release/provenance/health/public smoke lulus; physical print/cut UAT belum
+diverifikasi dan `BUSINESS_READY=false`.
+
 ## 2026-09-30 — SagaPOS UI/UX siap rilis bersyarat, belum aktif
 
 `CONFIRMED / ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Kandidat source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` menyatukan Wave 1–3 UI/UX Owner/Kasir/Kiosk pada base production `64dc78e`. Artifact exact-source telah distage, QA lokal independen lulus, dan runner code-only schema 35→35 diperbaiki tanpa melemahkan checksum migrasi. Production belum berpindah; fresh Owner auth, backup/restore, rehearsal dan authenticated UAT masih wajib. Reward/outbox POS–Member serta AP terpisah tidak disertakan. `BUSINESS_READY=false`. [SagaOPS Product](products/sagaops/PRODUCT.md).

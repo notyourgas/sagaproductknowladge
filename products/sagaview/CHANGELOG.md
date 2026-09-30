@@ -1,5 +1,20 @@
 # SagaView Changelog
 
+## 2026-09-30 - Newspaper dan Passport Saga Studio aktif
+
+- `CONFIRMED / PRODUCTION_ACTIVATED`: Studio
+  `6f28cfee5a5c96507270d555b172b1d93018737a` /
+  `20260930021641-6f28cfe` menambah preview Passport cover + bagian dalam,
+  dua foto pilihan, dan export lembar potong 4R. Rollback Studio adalah
+  `20260925164446-fbc186a`; backend tidak berubah.
+- 26 frame published: 11 Newspaper 4R Rp15.000, 11 Newspaper A4 Rp25.000,
+  dan empat Passport Rp25.000. Studio internal Saga memakai override praktis
+  10.000 frame aktif; paket komersial publik tidak berubah.
+- 70 file/298 test, build, full browser gate, provenance, service, Nginx,
+  jurnal dan public smoke lulus. CI hosted `NOT_RUN`. Bukti cetak/potong fisik
+  di-waive Owner untuk aktivasi teknis dan belum diverifikasi;
+  `BUSINESS_READY=false`.
+
 ## 2026-09-25 - Editor foto Card menyatu dengan pola Frame
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`

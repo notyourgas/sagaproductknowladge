@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-09-30 — SagaView Newspaper dan Passport production
+
+`CONFIRMED / PRODUCTION_ACTIVATED`: SagaView Studio
+`6f28cfee5a5c96507270d555b172b1d93018737a` aktif pada
+`20260930021641-6f28cfe`. Customer Flow menampilkan preview Passport cover dan
+bagian dalam, lalu mencetak lembar potong 4R. Katalog internal memuat 11
+Newspaper 4R Rp15.000, 11 Newspaper A4 Rp25.000, dan empat Passport Rp25.000;
+26 item published. Studio milik Saga memakai override praktis 10.000 frame,
+bukan paket komersial baru. Exact gate dan public verification lulus; backend
+tidak berubah. Physical print/cut UAT belum terverifikasi dan
+`BUSINESS_READY=false`.
+
 ## 2026-09-30 — SagaPOS UI/UX Wave 1–3 menjadi kandidat rilis tunggal
 
 `CONFIRMED / ARTIFACT_STAGED / NOT_ACTIVATED`. Source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` dari runtime `64dc78e` menyatukan tiga gelombang UI/UX Owner, Kasir dan Kiosk serta menutup guard code-only schema 35→35. QA independen dan static/kontrak terfokus lulus lokal; artifact exact-source distage, sedangkan production belum berpindah. Owner autentik, backup/disposable restore, rehearsal dan UAT pascadeploy masih OPEN; reward/outbox, AP, payment/provider activation tidak ikut. `CI_NOT_RUN / BUSINESS_READY=false`. Detail [SagaOPS Product](../products/sagaops/PRODUCT.md).

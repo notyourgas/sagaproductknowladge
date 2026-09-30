@@ -1,5 +1,22 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-224 — Newspaper, Passport, dan override frame internal Saga Studio
+
+- Tanggal: 2026-09-30. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: Newspaper dibagi menjadi kategori 4R Rp15.000 dan A4 Rp25.000.
+  Passport Rp25.000 menampilkan cover dan interior dua foto sebagai preview,
+  tetapi hasil cetaknya lembar 4R untuk dipotong. Studio internal milik Saga
+  mendapat batas praktis 10.000 frame aktif.
+- Alasan: membedakan ukuran/harga Newspaper, menjaga Passport sesuai proses
+  produksi nyata, dan menghindari batas katalog komersial pada studio sendiri.
+- Alternatif: mencetak layout Passport preview atau membuat paket unlimited
+  publik; tidak dipilih.
+- Dampak: 26 frame baru published dan Studio release
+  `20260930021641-6f28cfe` aktif. Paket komersial publik tidak berubah.
+  Physical print/cut UAT tetap wajib sebelum `BUSINESS_READY`.
+- Terkait: [SagaView](products/sagaview/PRODUCT.md),
+  [dossier](products/sagaview/DOSSIER.md), dan [gaps](GAPS.md).
+
 ## DEC-223 — SagaPOS production permanen tanpa expiry layanan pilot
 
 - Tanggal: 2026-09-29. Pemberi keputusan: Andreas. Status: `CONFIRMED`.

@@ -1,5 +1,31 @@
 # SagaView Dossier
 
+## Newspaper dan Passport Saga Studio, 30 September 2026
+
+`CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`:
+Studio `6f28cfee5a5c96507270d555b172b1d93018737a` aktif pada immutable release
+`20260930021641-6f28cfe`, dengan rollback
+`20260925164446-fbc186a`. Customer Flow kini mengenali Passport sebagai
+preview dua tahap: cover, lalu bagian dalam dengan dua foto pilihan. Preview
+ini hanya membantu komposisi; renderer print/export menghasilkan lembar 4R
+khusus potong. Passport 01 memutar foto kedua 90 derajat sesuai template.
+
+Katalog internal Saga Studio memiliki 11 Newspaper 4R (Rp15.000), 11
+Newspaper A4 (Rp25.000), dan empat Passport (Rp25.000); seluruh 26 item
+published. Hanya desain Tempo Dulu memakai satu slot pada masing-masing ukuran
+Newspaper; desain Newspaper lain memakai dua slot. Semua Newspaper portrait,
+semua Passport landscape dengan dua slot. Override internal memakai batas
+praktis 10.000 frame aktif dan 75 terpakai saat verifikasi. Ini bukan perubahan
+paket publik Growth/Pro.
+
+Backend tetap `ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`. Source gate
+70 file/298 test, format/lint/typecheck, build, bundle budget, dan full browser
+release gate lulus setelah kapasitas lokal pulih. Runner serta pemeriksaan
+independen mengonfirmasi exact provenance, rollback, service aktif, Nginx
+valid, jurnal tanpa error, dan empat route publik HTTP 200. Hosted CI tidak
+dijalankan. Owner menerima pengecualian bukti UAT fisik untuk rilis teknis;
+hasil cetak/potong nyata belum diverifikasi dan `BUSINESS_READY=false`.
+
 ## Editor foto dan cutout Card, 25 September 2026
 
 `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`:

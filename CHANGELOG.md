@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-30 — knowledge SagaView Newspaper dan Passport production
+
+`CONFIRMED`; sumber keputusan Andreas, Studio exact
+`6f28cfee5a5c96507270d555b172b1d93018737a`, runtime production, katalog Owner,
+dan release evidence. Before kategori/preview Passport belum tersedia -> after
+11 Newspaper 4R Rp15.000, 11 Newspaper A4 Rp25.000, serta empat Passport
+Rp25.000 published; Passport preview cover/interior mengekspor lembar potong
+4R. Override internal 10.000 frame bukan paket publik. Dokumen terdampak:
+SagaView Product/Dossier/Changelog, Portfolio, Master, Decisions, Gaps dan Sync
+Status. `PRODUCTION_ACTIVATED / UAT_EVIDENCE_NOT_VERIFIED /
+BUSINESS_READY=false`; physical print/cut UAT menjadi next action.
+
 ## 2026-09-30 — knowledge(sagaops): kandidat UI/UX gabungan distage
 
 - `CONFIRMED`; sumber keputusan Andreas, source `d8aa4c60ca2172e5e5915b96eb6956437e38134a`, QA independen dan stage artifact exact-source.

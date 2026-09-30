@@ -1,6 +1,21 @@
 # SagaView Product Knowledge
 
-Updated: 25 September 2026 WIB
+Updated: 30 September 2026 WIB
+
+`CONFIRMED / PRODUCTION_ACTIVATED`: Studio
+`6f28cfee5a5c96507270d555b172b1d93018737a` aktif pada release
+`20260930021641-6f28cfe`. Kategori Newspaper tersedia dalam 11 desain 4R
+seharga Rp15.000 dan 11 desain A4 seharga Rp25.000. Empat desain Passport
+seharga Rp25.000 menampilkan cover dan dua foto bagian dalam sebagai preview,
+tetapi output cetak tetap lembar potong 4R; cover/bagian dalam bukan file cetak.
+
+Seluruh 26 frame baru telah published. Studio internal milik Saga memakai
+override operasional 10.000 frame aktif (75 terpakai saat verifikasi), bukan
+paket komersial baru; batas Growth/Pro publik tidak berubah. Backend tetap
+`ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`. Source gate 70 file/298 test,
+build dan full browser release gate lulus; pointer, rollback, service, Nginx,
+provenance dan public smoke diverifikasi. Bukti cetak fisik belum diverifikasi
+dan dikecualikan Owner hanya untuk aktivasi teknis; `BUSINESS_READY=false`.
 
 `CONFIRMED / PRODUCTION_ACTIVATED`: Studio `fbc186ace1179864c85664e28577d9860ee56abd`
 aktif pada release `20260925164446-fbc186a`. Editor Card kini memakai thumbnail

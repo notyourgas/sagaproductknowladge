@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-09-30 — Physical UAT Newspaper dan Passport masih terbuka
+
+`CONFIRMED`: SagaView Studio release `20260930021641-6f28cfe` aktif dan exact
+technical gate lulus. Owner mengizinkan aktivasi tanpa bukti UAT fisik exact
+candidate; pengecualian hanya mencakup evidence cetak/potong. TODO: cetak
+Newspaper 4R dan A4, cetak lembar Passport 4R, potong hasilnya, cocokkan dua
+foto/rotasi/crop/warna/dimensi pada printer studio, lalu catat approval operator.
+Sampai itu selesai `UAT_EVIDENCE_NOT_VERIFIED / BUSINESS_READY=false`.
+
 ## 2026-09-30 — SagaPOS UI/UX release pending Owner dan recovery
 
 `CONFIRMED`. Kandidat UI/UX gabungan `d8aa4c60ca2172e5e5915b96eb6956437e38134a` sudah dikemas dan distage, tetapi belum aktif. Effective Owner proof yang baru, backup terenkripsi/disposable restore, rehearsal schema-identical 35→35, expected-current switch serta authenticated/operator dan Kiosk fisik UAT tetap terbuka. Release Lead tunggal menjaga production tetap pada `64dc78e` sampai gate lulus. Reward/outbox POS–Member dan AP kandidat lain tetap terpisah; tidak ada keputusan pricing atau aktivasi bisnis baru.

@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-30 — SagaView Newspaper dan Passport production sync
+
+`CONFIRMED`; source Studio `6f28cfee5a5c96507270d555b172b1d93018737a`
+aktif pada release `20260930021641-6f28cfe`; backend tetap
+`ee3ddeee3cbb05b1b62e7f9421fb26f15f85513d`. Katalog internal: 26 frame baru
+published dan batas praktis 10.000 frame; limit paket publik tidak berubah.
+Source gate 70 file/298 test, build, full browser gate, runtime provenance,
+service/Nginx/jurnal dan empat public smoke PASS; hosted CI `NOT_RUN`.
+Product/Dossier/Changelog, Portfolio, Master, Decisions, Gaps dan root Changelog
+disinkronkan dari worktree bersih. Physical UAT belum diverifikasi;
+`BUSINESS_READY=false`.
+
 ## 2026-09-30 — accepted: SagaPOS UI/UX kandidat tunggal distage
 
 `CONFIRMED`. Source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` pada branch `codex/sagapos-owner-uiux-wave3-release-20260930` menggabungkan Wave 1–3 dari production `64dc78e`; QA independen, static/schema dan kontrak rilis terfokus lulus. Artifact exact-source telah distage terpisah, production belum berganti. `ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Owner autentik, candidate-bound backup/restore, rehearsal, postdeploy UAT dan Kiosk fisik masih OPEN. Dokumen SagaOPS Product/Dossier/Changelog, Portfolio, Master, Gaps, root Changelog diperbarui; histori lokal sebelumnya dipertahankan.
