@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-09-30 — knowledge(saga-platform): E2E-0 lokal, E2E-1 parsial
+
+- `CONFIRMED`; sumber: permintaan Andreas melanjutkan E2E-0/1, Platform `497f413c2932063fe9880c11f145becf862c5869`, Member `ac3aca353ad501a1f7b257cfc3de85a713ffe835`, tes lokal dan monitor runtime.
+- Before receipt refund tanpa scope untuk ACK POS → after scope berasal dari earn asli dan replay identik; backend 55 berkas, seam 14 pemeriksaan, browser Member 320–430 px PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
+- Dampak: Saga Platform PRODUCT/DOSSIER/CHANGELOG, Portfolio, Master dan Sync Status. Production tidak berubah; outbox/refund POS nyata, native PostgreSQL, machine scope dan iPhone/authenticated UAT OPEN. Knowledge commit terpisah pada main HEAD.
+
 ## 2026-09-30 — knowledge(sagaops): Owner UI/UX Gelombang 2 lokal
 
 - `CONFIRMED`; sumber instruksi Andreas, source commit `6cdb2f548eb03b41ee84ea2c5c40774a751fb732`, focused browser/QA dan health runtime 30 September.

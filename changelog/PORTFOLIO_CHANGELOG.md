@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-09-30 — Saga Member × Platform E2E-0 lokal selesai
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform `497f413c2932063fe9880c11f145becf862c5869` memperbaiki receipt refund berscope untuk outbox POS; Member harness `ac3aca353ad501a1f7b257cfc3de85a713ffe835` membuktikan seam 14 pemeriksaan. Backend 55 berkas dan browser Member 320–430 px PASS. E2E-1 POS nyata, native PostgreSQL, iPhone UAT dan exact-pair release masih OPEN. Production tetap pada release sebelumnya; tidak ada aktivasi fitur bisnis baru, `BUSINESS_READY=false`.
+
 ## 2026-09-30 — SagaPOS Owner UI/UX Gelombang 2 lokal
 
 `CONFIRMED`; source `6cdb2f548eb03b41ee84ea2c5c40774a751fb732` merapikan aksi katalog, tab Stok harian, pintas alur Pembelian ke Gudang/AP existing, dan keterbacaan CTA Gudang. Focused browser 1440/390, static 672/schema 35, TypeScript/diff dan review independen lulus. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Runtime tetap source `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ready saat cek 30 September; integrasi, release gate dan authenticated UAT OPEN. Detail [SagaOPS Product](../products/sagaops/PRODUCT.md) dan [Dossier](../products/sagaops/DOSSIER.md).

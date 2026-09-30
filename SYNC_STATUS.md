@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-09-30 — accepted: E2E-0 baseline lokal dan receipt refund berscope
+
+`CONFIRMED`. Source Platform `497f413c2932063fe9880c11f145becf862c5869`, Member `ac3aca353ad501a1f7b257cfc3de85a713ffe835`; backend 55 berkas, seam 14 pemeriksaan, browser Member 320–430 px PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Production release tetap `20260929T150800Z-a130945-r0u` pada monitor; tidak ada mutasi production. E2E-1 POS outbox/refund, native PostgreSQL, machine scope dan authenticated iPhone UAT OPEN. Status push knowledge mengikuti main HEAD; histori sebelumnya dipertahankan.
+
 ## 2026-09-30 — accepted: SagaPOS Owner UI/UX Gelombang 2
 
 `CONFIRMED`; source `6cdb2f548eb03b41ee84ea2c5c40774a751fb732`, focused browser desktop/mobile, static 672/schema 35, TypeScript/diff dan independent review PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Cek production 30 September: health ready, source `64dc78e347204ba7823fef8283f0ee881f3e4ff5`; tidak ada deploy, aktivasi, atau mutasi bisnis dalam pekerjaan UI ini. Integrasi kandidat aktif, release gate dan authenticated Owner UAT tetap OPEN. Status push knowledge mengikuti commit main HEAD; histori di bawah dipertahankan.

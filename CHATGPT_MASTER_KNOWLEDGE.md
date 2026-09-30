@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-09-30 — Saga Member E2E-0 lokal selesai, E2E-1 belum selesai
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform `497f413c2932063fe9880c11f145becf862c5869` mengirim receipt refund dengan scope dari earn asli; Member harness `ac3aca353ad501a1f7b257cfc3de85a713ffe835` lulus 14 seam sintetis. Backend full suite 55 berkas dan browser lokal 320–430 px PASS. Checkout POS dalam seam masih simulasi; outbox/refund POS nyata, native PostgreSQL, machine read/reward boundary dan iPhone/authenticated UAT OPEN. Production tidak berubah, `BUSINESS_READY=false`. Jangan menjual bukti lokal ini sebagai integrasi production.
+
 ## 2026-09-30 — SagaPOS Owner UI/UX Gelombang 2, belum deploy
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Source `6cdb2f548eb03b41ee84ea2c5c40774a751fb732` melanjutkan UI Gelombang 1: katalog memberi aksi sesuai tab dan membedakan draft dari availability langsung; Stok mengutamakan Bahan/Gudang/HPP serta memisahkan diagnostik; Pembelian menyediakan pintas supplier→PO→penerimaan Gudang→invoice/retur→pembayaran/AP; dua label CTA Gudang diperbaiki. Focused browser 1440/390, static 672/schema 35, TypeScript/diff dan review independen lulus. Production source tetap `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ready pada cek 30 September. Integrasi, release gate dan authenticated Owner UAT masih OPEN; `BUSINESS_READY=false`. [SagaOPS Product](products/sagaops/PRODUCT.md).

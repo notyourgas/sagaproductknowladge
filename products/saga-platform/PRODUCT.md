@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-09-30 — E2E-0 baseline selesai lokal; E2E-1 masih berjalan
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform `497f413c2932063fe9880c11f145becf862c5869` dan Member harness `ac3aca353ad501a1f7b257cfc3de85a713ffe835` mengikat refund pada receipt earn authoritative; receipt refund kini membawa scope organisasi/outlet dari entry asli dan replay identik. Backend suite 55 berkas, Member browser 320–430 px dan seam sintetis 14 pemeriksaan lulus. POS yang dipin untuk seam masih `e894e01f2712ed5d9de8abb959e77375ac0c03d3`; outbox/refund POS nyata sedang dikerjakan terpisah. Native PostgreSQL, iPhone/authenticated UAT, scope machine read/reward dan release pasangan final masih OPEN. Production tidak berubah; `BUSINESS_READY=false`.
+
 ## 2026-09-29 — E2E-0/1: integration checkpoint lokal, belum deploy
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / IN_PROGRESS`. Andreas meminta E2E-0/1 dan mengizinkan koordinasi dengan SAGAPOS Implementation Lead. Backend lokal `2202beefab8448361efbb423c1d671ca83c262be` pada `codex/member-e2e01-access`; Member harness `1f9f73047f7c8cbc26343ae8cc487b66ba58c988` pada `codex/member-e2e01-acceptance`. Keduanya belum dipush. Candidate POS yang digunakan sebagai baseline: `e894e01f2712ed5d9de8abb959e77375ac0c03d3`; contracts/dependency/migration tetap.
