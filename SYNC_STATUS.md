@@ -6,7 +6,7 @@
 
 ## 2026-09-30 — accepted: E2E-0 baseline lokal dan receipt refund berscope
 
-`CONFIRMED`. Source Platform `497f413c2932063fe9880c11f145becf862c5869`, Member `ac3aca353ad501a1f7b257cfc3de85a713ffe835`; backend 55 berkas, seam 14 pemeriksaan, browser Member 320–430 px PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Production release tetap `20260929T150800Z-a130945-r0u` pada monitor; tidak ada mutasi production. E2E-1 POS outbox/refund, native PostgreSQL, machine scope dan authenticated iPhone UAT OPEN. Status push knowledge mengikuti main HEAD; histori sebelumnya dipertahankan.
+`CONFIRMED`. Source Platform `497f413c2932063fe9880c11f145becf862c5869`, Member `ac3aca353ad501a1f7b257cfc3de85a713ffe835`, POS `7207429d4a092ce16e9a9acd139fd99065eabe80`; backend 55 berkas, seam 14 pemeriksaan, POS outbox/cross-product 6/6 dan browser Member 320–430 px PASS. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. Production release tetap `20260929T150800Z-a130945-r0u` pada monitor; tidak ada mutasi production. E2E-1 native PostgreSQL, rekonsiliasi zero-allocation/lama, machine scope dan authenticated iPhone UAT OPEN. Status push knowledge mengikuti main HEAD; histori sebelumnya dipertahankan.
 
 ## 2026-09-30 — accepted: SagaPOS Owner UI/UX Gelombang 2
 

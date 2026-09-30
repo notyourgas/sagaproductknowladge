@@ -2,7 +2,7 @@
 
 ## 2026-09-30 — E2E-0 baseline dan scope refund lokal
 
-`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform `497f413c2932063fe9880c11f145becf862c5869`; Member harness `ac3aca353ad501a1f7b257cfc3de85a713ffe835`. Refund receipt kini terikat scope alokasi earn asli, replay identik; seam sintetis 14 pemeriksaan, backend 55 berkas dan browser Member 320–430 px PASS. E2E-0 baseline COMPLETE; E2E-1 menunggu outbox/refund POS nyata, native PostgreSQL, machine read/reward boundary, iPhone UAT dan exact-pair release. Production tidak berubah; `BUSINESS_READY=false`.
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform `497f413c2932063fe9880c11f145becf862c5869`; Member harness `ac3aca353ad501a1f7b257cfc3de85a713ffe835`; POS `7207429d4a092ce16e9a9acd139fd99065eabe80`. Refund receipt terikat scope alokasi earn asli, replay identik; seam 14 pemeriksaan, backend 55 berkas, browser Member 320–430 px dan POS outbox/cross-product 6/6 PASS lokal. E2E-0 baseline COMPLETE; E2E-1 menunggu native PostgreSQL, rekonsiliasi zero-allocation/lama, machine read/reward boundary, iPhone UAT dan exact-pair release. Production tidak berubah; `BUSINESS_READY=false`.
 
 ## 2026-09-29 — E2E-0/1: integration checkpoint lokal, belum deploy
 
