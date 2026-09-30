@@ -9,9 +9,9 @@ Newspaper 4R dan A4, cetak lembar Passport 4R, potong hasilnya, cocokkan dua
 foto/rotasi/crop/warna/dimensi pada printer studio, lalu catat approval operator.
 Sampai itu selesai `UAT_EVIDENCE_NOT_VERIFIED / BUSINESS_READY=false`.
 
-## 2026-09-30 — SagaPOS UI/UX release pending Owner dan recovery
+## 2026-09-30 — SagaPOS UI/UX deployed, acceptance kanal masih terbuka
 
-`CONFIRMED`. Kandidat UI/UX gabungan `d8aa4c60ca2172e5e5915b96eb6956437e38134a` sudah dikemas dan distage, tetapi belum aktif. Effective Owner proof yang baru, backup terenkripsi/disposable restore, rehearsal schema-identical 35→35, expected-current switch serta authenticated/operator dan Kiosk fisik UAT tetap terbuka. Release Lead tunggal menjaga production tetap pada `64dc78e` sampai gate lulus. Reward/outbox POS–Member dan AP kandidat lain tetap terpisah; tidak ada keputusan pricing atau aktivasi bisnis baru.
+`CONFIRMED`. UI/UX gabungan dengan hotfix tautan Owner kasir `c0dfa014b48c09a1637eda432826bc8fd13afaff` aktif di production, rollback d8aa. Effective Owner, backup terenkripsi/disposable restore, rehearsal schema-identical 35→35, expected-current switch, health, monitor dan browser tujuh surface lulus tanpa transaksi. Runner browser eksternal test-only `b3d1ea3` lulus tanpa redeploy aplikasi. Smoke pembayaran tetap PARTIAL pada canary yang sengaja belum aktif; mutasi pembayaran tertutup. Offsite backup belum terverifikasi, penerapan Owner organisasi belum lengkap, UAT operator bisnis dan Kiosk fisik masih terbuka. Reward/outbox POS–Member dan AP kandidat lain tetap terpisah; tidak ada keputusan pricing atau aktivasi bisnis baru. `BUSINESS_READY=false`.
 
 ## 2026-09-30 — E2E-1 release gates masih terbuka
 

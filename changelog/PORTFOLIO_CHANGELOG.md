@@ -12,9 +12,9 @@ bukan paket komersial baru. Exact gate dan public verification lulus; backend
 tidak berubah. Physical print/cut UAT belum terverifikasi dan
 `BUSINESS_READY=false`.
 
-## 2026-09-30 — SagaPOS UI/UX Wave 1–3 menjadi kandidat rilis tunggal
+## 2026-09-30 — SagaPOS UI/UX Wave 1–3 aktif di production
 
-`CONFIRMED / ARTIFACT_STAGED / NOT_ACTIVATED`. Source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` dari runtime `64dc78e` menyatukan tiga gelombang UI/UX Owner, Kasir dan Kiosk serta menutup guard code-only schema 35→35. QA independen dan static/kontrak terfokus lulus lokal; artifact exact-source distage, sedangkan production belum berpindah. Owner autentik, backup/disposable restore, rehearsal dan UAT pascadeploy masih OPEN; reward/outbox, AP, payment/provider activation tidak ikut. `CI_NOT_RUN / BUSINESS_READY=false`. Detail [SagaOPS Product](../products/sagaops/PRODUCT.md).
+`CONFIRMED / PRODUCTION_DEPLOYED`. Source `c0dfa014b48c09a1637eda432826bc8fd13afaff` mencakup tiga gelombang UI/UX Owner, Kasir dan Kiosk melalui base `d8aa4c6` dan hotfix tautan Owner kasir; d8aa menjadi rollback. QA independen, backup/disposable restore, rehearsal, switch, health, Owner pascarestart, monitor dan browser tujuh surface lulus tanpa transaksi. Runner browser eksternal diperbaiki pada commit test-only `b3d1ea3`. Smoke pembayaran PARTIAL karena canary sengaja tidak aktif; UAT Kiosk fisik dan offsite backup terbuka. Reward/outbox, AP, payment/provider activation tidak ikut. `CI_NOT_RUN / BUSINESS_READY=false`. Detail [SagaOPS Product](../products/sagaops/PRODUCT.md).
 
 ## 2026-09-30 — Saga Member × Platform E2E-1 scope Reward lokal
 

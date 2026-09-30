@@ -1,10 +1,10 @@
 # SagaOPS Dossier
 
-## 2026-09-30 — Release candidate gabungan UI/UX
+## 2026-09-30 — Release production gabungan UI/UX
 
-`CONFIRMED / ARTIFACT_STAGED / NOT_ACTIVATED`. Source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` menyatukan Wave 1 `a4483d0`, Wave 2 `6cdb2f5` dan Wave 3 `fab97f8` pada base production `64dc78e`. Menu Keuangan, katalog/pembelian, Member, laporan, integrasi, HR mobile, kasir dan Kiosk portrait memakai alur/copy yang telah diuji lokal. Perbaikan runner menerima ledger 34 atau 35 hanya pada promosi code-only dengan manifest kandidat identik, checksum migrasi dan jumlah baris database tetap diperiksa; profil upgrade 34→35 tidak dilonggarkan.
+`CONFIRMED / PRODUCTION_DEPLOYED / BUSINESS_READY=false`. Source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` berisi Wave 1 `a4483d0`, Wave 2 `6cdb2f5` dan Wave 3 `fab97f8` melalui base `d8aa4c6`, yang kini rollback. Hotfix mengarahkan tiga tautan Owner dari host kasir ke host dashboard, mempertahankan cookie host-only dan autentikasi server. Menu Keuangan, katalog/pembelian, Member, laporan, integrasi, HR mobile, kasir dan Kiosk portrait memakai alur/copy yang diuji. Runner menerima ledger 34 atau 35 hanya pada promosi code-only dengan manifest kandidat identik, checksum migrasi dan jumlah baris database tetap diperiksa; profil upgrade 34→35 tidak dilonggarkan.
 
-Checkout bersih dan branch remote cocok; focused browser, static/schema, kontrak rilis serta review independen lulus lokal. Artifact dikemas dan distage oleh Release Lead tanpa mengganti runtime. Gate tersisa: fresh effective Owner, encrypted backup/disposable restore terikat kandidat, rehearsal 35→35, expected-current switch, health/authenticated UAT, dan UAT perangkat fisik. POS–Member reward/outbox serta AP divergen tidak termasuk paket. Reporting OFF dan boundary gateway existing dipertahankan; `BUSINESS_READY=false`.
+Checkout bersih dan branch remote cocok; QA independen hotfix 5/5, static/schema dan sintaks lulus. Sole Release Lead mengemas artifact exact-source, memverifikasi effective Owner, menjalankan backup terenkripsi/disposable restore dan rehearsal 35→35, lalu mengaktifkan kandidat dengan expected-current. Health dan monitor ready; browser live membuktikan login Owner kasir serta tujuh surface tanpa transaksi/error. Runner browser eksternal test-only `b3d1ea3` memperbaiki race sesi dan lulus tanpa redeploy aplikasi. Smoke pembayaran tetap PARTIAL pada canary yang sengaja belum diaktifkan; payment mutation tertutup. Offsite backup, UAT operator bisnis dan perangkat fisik masih terbuka. POS–Member reward/outbox serta AP divergen tidak termasuk paket. Reporting OFF dipertahankan; `BUSINESS_READY=false`.
 
 ## 2026-09-30 — UI/UX Gelombang 3, source lokal
 

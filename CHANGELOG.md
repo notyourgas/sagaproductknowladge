@@ -12,11 +12,11 @@ SagaView Product/Dossier/Changelog, Portfolio, Master, Decisions, Gaps dan Sync
 Status. `PRODUCTION_ACTIVATED / UAT_EVIDENCE_NOT_VERIFIED /
 BUSINESS_READY=false`; physical print/cut UAT menjadi next action.
 
-## 2026-09-30 — knowledge(sagaops): kandidat UI/UX gabungan distage
+## 2026-09-30 — knowledge(sagaops): UI/UX gabungan production deployed
 
 - `CONFIRMED`; sumber keputusan Andreas, source `d8aa4c60ca2172e5e5915b96eb6956437e38134a`, QA independen dan stage artifact exact-source.
-- Before Wave 1–3 UI hanya lokal dan runner code-only menolak current schema 35 → after satu kandidat bersih/pushed, guard 35→35 dibetulkan, artifact dikemas dan distage tanpa switch production.
-- Dampak: SagaOPS Product/Dossier/Changelog, Portfolio, Master, Gaps dan Sync Status. `ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; Owner proof, recovery rehearsal dan UAT tetap OPEN. Knowledge commit terpisah pada main HEAD.
+- Before Wave 1–3 UI hanya lokal dan runner code-only menolak schema 35 → after kandidat d8aa dirilis, lalu hotfix kasir `c0dfa014b48c09a1637eda432826bc8fd13afaff` menjadi production current dengan rollback d8aa. Backup/restore, rehearsal, health, monitor dan browser tujuh surface lulus tanpa transaksi; runner eksternal test-only `b3d1ea3` menghilangkan race sesi.
+- Dampak: SagaOPS Product/Dossier/Changelog, Portfolio, Master, Gaps dan Sync Status. `PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`; smoke pembayaran PARTIAL pada canary tidak aktif, UAT operator/perangkat serta offsite backup OPEN. Knowledge commit terpisah pada main HEAD.
 
 ## 2026-09-30 — knowledge(saga-platform): E2E-1 scope Reward mesin
 

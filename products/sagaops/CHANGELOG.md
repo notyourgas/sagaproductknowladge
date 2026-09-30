@@ -1,10 +1,11 @@
 # SagaOPS Changelog
 
-## 2026-09-30 — Kandidat UI/UX Wave 1–3 dikemas dan distage
+## 2026-09-30 — UI/UX Wave 1–3 dirilis ke production
 
 - `CONFIRMED`; Andreas meminta satu kandidat lalu deploy. Source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` (branch `codex/sagapos-owner-uiux-wave3-release-20260930`) menggabungkan tiga gelombang UI dari base production `64dc78e` dan memperbaiki gate code-only schema 35→35.
-- Before tiga gelombang hanya lokal dan runner ordinary mengharuskan ledger 34 → after kandidat exact-source/remote bersih, QA independen PASS, artifact dikemas dan distage terpisah; checksum/row count ledger tetap wajib. Perubahan tidak menambah migrasi, transaksi atau aktivasi provider.
-- `ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Pointer production masih `64dc78e` saat cek terakhir; fresh Owner proof, backup/restore, rehearsal, switch dan authenticated UAT masih OPEN. Reward/outbox POS–Member dan AP kandidat lain tidak ikut.
+- Before tiga gelombang hanya lokal dan runner ordinary mengharuskan ledger 34 → after kandidat exact-source/remote bersih, QA independen PASS, artifact dikemas, backup/restore dan rehearsal kandidat lulus, lalu pointer production berpindah ke `d8aa4c6` dengan rollback `64dc78e`; checksum/row count ledger tetap wajib. Perubahan tidak menambah migrasi, transaksi atau aktivasi provider.
+- Hotfix kasir `c0dfa014b48c09a1637eda432826bc8fd13afaff` kini production current, d8aa rollback: tiga tautan Owner dari kasir menuju host Dashboard. QA hotfix 5/5, backup/restore, rehearsal, switch, health/monitor dan browser tujuh surface PASS tanpa transaksi. Runner eksternal test-only `b3d1ea3` lulus setelah memperbaiki race sesi, tanpa redeploy aplikasi.
+- `PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Smoke pembayaran tetap PARTIAL pada canary yang tidak aktif; UAT Kiosk fisik/operator bisnis dan offsite backup masih OPEN. Reward/outbox POS–Member dan AP kandidat lain tidak ikut.
 
 ## 2026-09-30 — Gelombang 3 UI/UX Owner dan kanal, lokal
 

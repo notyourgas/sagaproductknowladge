@@ -12,9 +12,9 @@ Product/Dossier/Changelog, Portfolio, Master, Decisions, Gaps dan root Changelog
 disinkronkan dari worktree bersih. Physical UAT belum diverifikasi;
 `BUSINESS_READY=false`.
 
-## 2026-09-30 — accepted: SagaPOS UI/UX kandidat tunggal distage
+## 2026-09-30 — accepted: SagaPOS UI/UX tunggal production deployed
 
-`CONFIRMED`. Source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` pada branch `codex/sagapos-owner-uiux-wave3-release-20260930` menggabungkan Wave 1–3 dari production `64dc78e`; QA independen, static/schema dan kontrak rilis terfokus lulus. Artifact exact-source telah distage terpisah, production belum berganti. `ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Owner autentik, candidate-bound backup/restore, rehearsal, postdeploy UAT dan Kiosk fisik masih OPEN. Dokumen SagaOPS Product/Dossier/Changelog, Portfolio, Master, Gaps, root Changelog diperbarui; histori lokal sebelumnya dipertahankan.
+`CONFIRMED`. Source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` pada branch `codex/sagapos-cashier-owner-login-hotfix-20260930` menggabungkan Wave 1–3 melalui d8aa dan memperbaiki tautan Owner kasir; rollback d8aa. QA independen, static/schema, Owner, artifact, backup/restore, rehearsal, switch, health/monitor dan browser tujuh surface lulus tanpa transaksi. Runner eksternal test-only `b3d1ea3` lulus; aplikasi production tetap c0dfa. `PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Smoke pembayaran PARTIAL pada canary yang sengaja tidak aktif; UAT operator/Kiosk fisik dan offsite backup OPEN. Dokumen SagaOPS Product/Dossier/Changelog, Portfolio, Master, Gaps, root Changelog diperbarui; histori lokal sebelumnya dipertahankan.
 
 ## 2026-09-30 — accepted: E2E-1 scope Reward lokal
 

@@ -1,10 +1,10 @@
 # SagaOPS Product Knowledge
 
-## 2026-09-30 — Kandidat tunggal UI/UX Wave 1–3 siap aktivasi bersyarat
+## 2026-09-30 — UI/UX Wave 1–3 aktif di SagaPOS production
 
-`CONFIRMED / ARTIFACT_STAGED / IMPLEMENTED_NOT_DEPLOYED / CI_NOT_RUN`. Atas instruksi Andreas, tiga gelombang UI/UX Owner, Kasir dan Kiosk disatukan dari runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ke source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` pada branch `codex/sagapos-owner-uiux-wave3-release-20260930`. Kandidat menambah koreksi runner code-only untuk transisi schema 35→35; migrasi, lockfile, service unit, transaksi dan mode provider tidak berubah. Kandidat POS–Member reward/outbox dan AP terpisah tidak ikut.
+`CONFIRMED / PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Atas instruksi Andreas, tiga gelombang UI/UX Owner, Kasir dan Kiosk disatukan dari runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ke `d8aa4c60ca2172e5e5915b96eb6956437e38134a`, lalu hotfix navigasi Owner dari kasir aktif sebagai source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` pada branch `codex/sagapos-cashier-owner-login-hotfix-20260930`; rollback menunjuk d8aa. Runner code-only mendukung transisi schema 35→35; migrasi, lockfile, service unit, transaksi dan mode provider tidak berubah. Kandidat POS–Member reward/outbox dan AP terpisah tidak ikut.
 
-QA independen menerima tes dashboard/kontrak rilis 6 pass, 0 fail, 1 tes khusus Linux dilewati di Windows; static 674 modul/schema 35 dan pemeriksaan sintaks lulus. Artifact exact-source telah dikemas dan distage terpisah di VPS, tetapi pointer production masih `64dc78e` dan layanan sehat saat pemeriksaan terakhir. Aktivasi menunggu bukti Owner autentik yang baru, backup terenkripsi/disposable restore, rehearsal kandidat, lalu verifikasi pascadeploy. UAT sentuh Kiosk 32 inci dan `BUSINESS_READY` tetap terbuka.
+QA independen hotfix menerima lima tes terfokus, static 674 modul/schema 35 dan sintaks. Artifact exact-source, Owner autentik, backup terenkripsi/disposable restore, rehearsal kandidat 35→35 dan expected-current switch lulus. HTTPS health/monitor production ready pada c0dfa. Browser live membuktikan kasir → login Owner → aplikasi kasir; runner browser eksternal yang dikoreksi pada commit test-only `b3d1ea356b0258db3cdd9b053b55d1ef08d108be` lulus tujuh surface tanpa transaksi/error. Smoke pembayaran tetap PARTIAL karena canary sengaja belum diaktifkan dan mutasi pembayaran tertutup. UAT sentuh Kiosk 32 inci dan bisnis nyata tetap terbuka; `BUSINESS_READY=false`.
 
 ## 2026-09-30 — Gelombang 3 UI/UX SagaPOS tervalidasi lokal
 
