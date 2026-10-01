@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-10-01 — SagaPOS Menu/Harga/Modifier residual production
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. READY `6dfa182ab712b94fa09f3d066b9519dccc2e6535`
+dan rollback reader `7540d73714da00dcaba20b287e70da53518c2f50` melengkapi compound HPP,
+recovery simpan, modifier copy mandiri, reset sold-out dan keranjang QR/table DEMO.
+266/269 focused PASS, 0 FAIL, 3 skip; Linux18/18 per kandidat, host-local recovery dan
+delapan browser surface production PASS. Off-host serta operator/perangkat asli OPEN;
+`BUSINESS_READY=false`. Provider/payment/pricing tidak berubah. Detail pada SagaOPS
+Product/Dossier/Changelog; knowledge sync tidak mengubah runtime.
+
+Copy off-host yang disetujui sudah checksum PASS, namun logical restore comparison
+gagal. Recovery tidak diluluskan dan production tidak dimutasi.
+
 ## 2026-09-30 — SagaView Newspaper dan Passport production
 
 `CONFIRMED / PRODUCTION_ACTIVATED`: SagaView Studio

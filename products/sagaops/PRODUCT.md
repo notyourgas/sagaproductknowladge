@@ -1,5 +1,29 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-01 — Menu/Harga/Modifier: finalisasi residual production
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+Source aktif `6dfa182ab712b94fa09f3d066b9519dccc2e6535`, rollback reader kompatibel
+`7540d73714da00dcaba20b287e70da53518c2f50`; service aktif dan public health ready
+diverifikasi kembali 1 Oktober. Owner dapat menyalin modifier menjadi draft mandiri
+dengan target menu wajib, mengatur pemulihan sold-out 30/60 menit/akhir hari WIB/manual,
+dan membuat resep HPP kombinasi varian lengkap hingga delapan atribut. Simpan HPP
+yang responsnya hilang direkonsiliasi lewat pembacaan, bukan mutasi ulang diam-diam.
+HPP kasir/kiosk memakai konteks katalog terbit; snapshot transaksi lama tetap.
+
+QR/table DEMO mempertahankan baris konfigurasi dan catatan, quantity/default/min/max,
+edit/reload dan rekonsiliasi checkout ambigu. Ini bukan aktivasi pembayaran meja nyata.
+Regresi terfokus 269 tes: 266 PASS, 0 FAIL, 3 skip platform; kontrak Linux 18/18 PASS
+per kandidat, browser production delapan surface PASS tanpa transaksi bisnis.
+Recovery terenkripsi host-local PASS; off-host restore dan penerimaan operator pada
+tablet/printer asli masih OPEN. Ledger bukti 25 kasus tetap 50/100, bukan skor seluruh
+SagaPOS. Pricing, provider, payment dan lifecycle tidak diubah oleh milestone ini.
+
+Update recovery 1 Oktober: tujuan Windows disetujui Owner; tiga arsip terenkripsi
+tersalin dengan checksum PASS. Restore SQL terisolasi berjalan, tetapi perbandingan
+hash data logis lintas host belum cocok, sehingga recovery off-host tetap BLOCKED,
+bukan PASS. Pengaman tidak diturunkan; database production tidak dimutasi.
+
 ## 2026-09-30 — UI/UX Wave 1–3 aktif di SagaPOS production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Atas instruksi Andreas, tiga gelombang UI/UX Owner, Kasir dan Kiosk disatukan dari runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ke `d8aa4c60ca2172e5e5915b96eb6956437e38134a`, lalu hotfix navigasi Owner dari kasir aktif sebagai source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` pada branch `codex/sagapos-cashier-owner-login-hotfix-20260930`; rollback menunjuk d8aa. Runner code-only mendukung transisi schema 35→35; migrasi, lockfile, service unit, transaksi dan mode provider tidak berubah. Kandidat POS–Member reward/outbox dan AP terpisah tidak ikut.

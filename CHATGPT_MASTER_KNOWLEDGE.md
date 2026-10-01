@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-01 — SagaPOS Menu/Harga/Modifier residual aktif
+
+`CONFIRMED`: production `6dfa182ab712b94fa09f3d066b9519dccc2e6535`, rollback kompatibel
+`7540d73714da00dcaba20b287e70da53518c2f50`. Modifier copy mandiri, reset sold-out,
+compound HPP exact dan recovery simpan tersedia; kasir/kiosk memakai konteks varian terbit.
+QR/table masih DEMO, bukan pembayaran nyata. Focused269:266 PASS/0 FAIL/3 skip,
+Linux18/18 per kandidat dan delapan browser surface production PASS tanpa transaksi bisnis.
+Host-local recovery PASS; off-host serta operator/tablet/printer OPEN. Ledger finalisasi
+25 kasus tetap50/100, bukan persentase seluruh produk. `PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / BUSINESS_READY=false`. [SagaOPS Product](products/sagaops/PRODUCT.md).
+
+Owner menyetujui tujuan backup Windows: checksum tiga arsip copy off-host PASS,
+tetapi logical comparison restore isolated gagal. Recovery tetap BLOCKED; key
+escrow independen dan parity dump menjadi next action. Production tidak dimutasi.
+
 ## 2026-09-30 — SagaView Newspaper dan Passport aktif
 
 `CONFIRMED`: Studio `6f28cfee5a5c96507270d555b172b1d93018737a`

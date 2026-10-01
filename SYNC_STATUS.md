@@ -1,5 +1,20 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-01 — accepted: Menu/Harga/Modifier production residual
+
+| Field | Snapshot milestone |
+|---|---|
+| Waktu pembaruan terakhir | 2026-10-01, 23.31 WIB; production current/service/public health diverifikasi |
+| Branch aktif | `main` pada checkout bersih terisolasi |
+| Commit SHA terbaru | `main HEAD`; resolve immutable SHA setelah push |
+| Informasi terakhir disinkronkan | SagaPOS READY6dfa182 dan rollback reader7540d73; HPP exact/recovery, modifier copy/reset dan cart QR/table DEMO |
+| Status sinkronisasi | `UP TO DATE` untuk milestone ini; `BUSINESS_READY=false` |
+| Konflik | Tidak ada konflik fakta; dirty checkout produk lain dipertahankan |
+| Error | Copy off-host checksum PASS, SQL restore isolated logical hash mismatch BLOCKED; key escrow dan operator/tablet/printer OPEN. 25-case evidence50/100, bukan seluruh produk |
+
+Product/Dossier/Changelog SagaOPS, Portfolio, Master, Gaps dan root Changelog diperbarui.
+Pricing, lifecycle, provider, payment dan produksi tidak berubah oleh sync knowledge.
+
 ## 2026-09-30 — SagaView Newspaper dan Passport production sync
 
 `CONFIRMED`; source Studio `6f28cfee5a5c96507270d555b172b1d93018737a`

@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-01 — knowledge(sagaops): finalisasi Menu/Harga/Modifier production
+
+`CONFIRMED`; sumber instruksi Andreas, source READY `6dfa182ab712b94fa09f3d066b9519dccc2e6535`,
+rollback reader `7540d73714da00dcaba20b287e70da53518c2f50`, release/tes dan fresh health/service.
+Before residual HPP/modifier/cart belum final -> after compound exact, recovery simpan,
+copy scoped/reset sold-out dan cart DEMO tersedia. Dampak Product/Dossier/Changelog SagaOPS,
+Portfolio, Master, Gaps dan Sync Status. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+BUSINESS_READY=false`; off-host restore/operator/perangkat OPEN, ledger50/100 tetap.
+Checkout bersih terisolasi mengikuti protocol, perubahan pengguna pada checkout lain
+dipertahankan. Knowledge main HEAD terpisah; runtime/provider/payment tidak berubah oleh sync.
+
+Recovery lanjutan ke tujuan Windows yang disetujui: tiga encrypted copy checksum
+PASS, logical comparison setelah SQL restore isolated gagal. Recovery tetap BLOCKED;
+disposable dibersihkan, production tidak dimutasi. Key escrow/parity dump belum diterima.
+
 ## 2026-09-30 — knowledge SagaView Newspaper dan Passport production
 
 `CONFIRMED`; sumber keputusan Andreas, Studio exact

@@ -1,5 +1,22 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-01 — Menu/Harga/Modifier: recovery off-host dan operator belum terbukti
+
+`CONFIRMED`: residual source `6dfa182ab712b94fa09f3d066b9519dccc2e6535` production aktif,
+rollback reader kompatibel `7540d73714da00dcaba20b287e70da53518c2f50`. Host-local encrypted
+backup/disposable restore dan technical/browser gates PASS. TODO: salinan terenkripsi
+di tujuan Owner yang disetujui, checksum dan restore PostgreSQL isolated pada host tujuan;
+uji 25 kasus pada tablet/printer asli dengan penerimaan operator. Copy saja bukan restore,
+browser headless bukan physical UAT. Pembayaran QR/table nyata tetap belum tervalidasi.
+`BUSINESS_READY=false`; ledger S/T/P/U tetap50/100 sampai bukti per-case bertambah.
+Histori release September di bawah adalah snapshot tanggalnya, bukan current runtime.
+
+Tujuan Windows sudah disetujui dan copy tiga arsip terenkripsi checksum PASS.
+Restore SQL isolated berjalan tetapi logical hash tidak cocok; off-host BLOCKED.
+TODO: verifikasi parity timezone/encoding dan dump deterministik lintas host,
+serta akses recovery key independen ketika VPS tidak tersedia. Jangan mengganti
+logical check dengan row-count saja atau mengklaim copy sebagai disaster recovery.
+
 ## 2026-09-30 — Physical UAT Newspaper dan Passport masih terbuka
 
 `CONFIRMED`: SagaView Studio release `20260930021641-6f28cfe` aktif dan exact

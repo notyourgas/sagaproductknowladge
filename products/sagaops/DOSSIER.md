@@ -1,5 +1,32 @@
 # SagaOPS Dossier
 
+## 2026-10-01 — Finalisasi Menu/Harga/Modifier pada production
+
+`CONFIRMED`. READY `6dfa182ab712b94fa09f3d066b9519dccc2e6535` aktif;
+READ_COMPATIBILITY `7540d73714da00dcaba20b287e70da53518c2f50` menjadi rollback.
+Compound HPP exact-context hingga delapan atribut mencegah kecocokan parsial;
+override identik dihitung sekali. Kasir/kiosk membaca varian katalog terbit, bukan
+draft Owner. Recovery popup HPP mempertahankan draft/version conflict dan memakai
+GET-only setelah ACK tidak pasti. Modifier dapat disalin sebagai draft mandiri scoped,
+tanpa mengubah grup asal. Sold-out memiliki reset 30/60 menit, akhir hari WIB, atau manual.
+
+Keranjang QR/table DEMO menjaga konfigurasi/catatan, quantity dan attempt checkout saat
+respons malformed/hilang; tidak membersihkan keranjang sebelum hasil tervalidasi.
+Rilis dua tahap menyediakan reader rollback yang kompatibel sebelum advanced authoring.
+Regresi 266 PASS/0 FAIL/3 skip dari 269 tes; kontrak Linux 18/18 PASS per kandidat,
+backup/disposable restore host-local dan browser delapan surface PASS. Source, schema35,
+health/service serta asset hash diverifikasi. Tidak ada transaksi bisnis/provider baru.
+`PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; off-host restore,
+tablet/printer/operator 25 kasus dan pembayaran meja nyata belum tervalidasi.
+Read-only browser bukan acceptance production transaksi per-case; ledger tetap 50/100.
+
+Copy off-host ke Windows telah disetujui dan checksum ketiga arsip PASS. Restore
+SQL isolated berjalan; logical snapshot comparison gagal, maka recovery off-host
+belum diterima. Next: buktikan parity timezone/encoding/deterministic dump tanpa
+mengabaikan selisih data. Port restore hanya loopback dengan SCRAM; disposable
+database dihentikan/dihapus, arsip terenkripsi dipertahankan. Key escrow independen
+VPS belum dibuktikan; uji ini masih menggunakan identity melalui pipe proses.
+
 ## 2026-09-30 — Release production gabungan UI/UX
 
 `CONFIRMED / PRODUCTION_DEPLOYED / BUSINESS_READY=false`. Source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` berisi Wave 1 `a4483d0`, Wave 2 `6cdb2f5` dan Wave 3 `fab97f8` melalui base `d8aa4c6`, yang kini rollback. Hotfix mengarahkan tiga tautan Owner dari host kasir ke host dashboard, mempertahankan cookie host-only dan autentikasi server. Menu Keuangan, katalog/pembelian, Member, laporan, integrasi, HR mobile, kasir dan Kiosk portrait memakai alur/copy yang diuji. Runner menerima ledger 34 atau 35 hanya pada promosi code-only dengan manifest kandidat identik, checksum migrasi dan jumlah baris database tetap diperiksa; profil upgrade 34→35 tidak dilonggarkan.

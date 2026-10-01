@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-10-01 — Menu/Harga/Modifier residual dirilis
+
+- `CONFIRMED`; instruksi Andreas dan source READY `6dfa182ab712b94fa09f3d066b9519dccc2e6535`, rollback reader `7540d73714da00dcaba20b287e70da53518c2f50`.
+- Before HPP kombinasi/recovery authoring, salinan modifier mandiri, reset sold-out dan cart QR/table belum final -> after konteks varian terbit, compound exact, GET-only uncertain-save recovery, draft copy scoped, empat mode reset dan cart DEMO idempotent tersedia.
+- Regresi 269 tes: 266 PASS, 0 FAIL, 3 platform skip; Linux 18/18 per kandidat, recovery host-local dan delapan surface browser production PASS tanpa transaksi bisnis. Current/service/public health diverifikasi kembali 1 Oktober.
+- Product/Dossier/Portfolio/Master/Gaps/Sync/root Changelog diperbarui. `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`; off-host restore serta tablet/printer/operator masih OPEN. Skor bukti 25 kasus tetap 50/100. Payment/provider nyata tidak diaktifkan; sync knowledge tidak merilis ulang aplikasi.
+- Recovery lanjutan: Owner menyetujui tujuan Windows, tiga copy encrypted checksum PASS; restore SQL isolated berjalan tetapi logical comparison gagal. Off-host tetap BLOCKED, disposable dibersihkan, production tidak dimutasi; parity dump dan key escrow independen perlu dibuktikan.
+
 ## 2026-09-30 — UI/UX Wave 1–3 dirilis ke production
 
 - `CONFIRMED`; Andreas meminta satu kandidat lalu deploy. Source `d8aa4c60ca2172e5e5915b96eb6956437e38134a` (branch `codex/sagapos-owner-uiux-wave3-release-20260930`) menggabungkan tiga gelombang UI dari base production `64dc78e` dan memperbaiki gate code-only schema 35→35.
