@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — Pemeriksaan ulang Wave 5: kandidat perbaikan V1
+
+`CONFIRMED / LOCAL_VALIDATED / IN_PROGRESS / BELUM DEPLOY`. Kandidat Member `140e7b1dbfd4ca5f0e909862779b7a58105e06cc` menggantikan kandidat lokal 86b9c7c: konsistensi pergantian akun, identitas Reward yang hilang, dan saldo tersedia dari Platform diperbaiki.609 Member, dua journey API/mobile, Owner sintetis enam viewport serta worker upgrade/rollback PASS. Artifact `e53067a85121a8b4e4920681a9eba98ad39e0ab7318d22d8b3527cef78df8d96`, runner lokal5e668cd/140+14tests dan PostgreSQL18.6 disposable restore/restart15→15 PASS. Backend/contracts/POS/provider unchanged; production Member81fc239 tetap. Authenticated production recovery/Owner/current/lock dan iPhone fisik masih OPEN, bukan BUSINESS_READY. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Wave 5 kandidat V1 siap lokal, belum production
 
 `CONFIRMED / LOCAL_CANDIDATE_PREPARED / IN_PROGRESS / BELUM DEPLOY`. Member `86b9c7c299e0b8a8d1f015066dfe780dec1a28e3` membawa Wave1–4; immutable artifact `03be636bf3e1d2e36ad04cf3d3e40541cd57cad06f11d6c03fce4fa49d2ea680` memakai backendd8/contracts3279 tanpa perubahan schema/provider/POS.605Member, API lokal/mobile, production-worker upgrade/rollback sintetis dan PostgreSQL18.6 restore/restart15→15 PASS. Runner lokal exact-pair e77cc82/140+14tests PASS; belum installed. OPEN: fresh production recovery/Owner/lock/current dan authenticated kandidat/iPhone fisik. Production tetap frontend81fc239; bukan BUSINESS_READY. [Detail](DOSSIER.md).

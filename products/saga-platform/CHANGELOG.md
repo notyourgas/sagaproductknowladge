@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Wave 5 review: konsistensi akun/Reward diperbaiki lokal
+
+`CONFIRMED`; Andreas meminta periksa/perbaiki kekurangan. Member140e7b1/artifacte53067a/runner5e668cd menggantikan kandidat86b9c7c. Konsistensi pergantian sesi, pilihan Reward unavailable dan saldo Platform diperbaiki;609Member/Owner6viewports/mobile-worker serta140+14runner/native15→15restore-restart PASS_LOCAL. Backendd8/contracts3279/POS/provider unchanged. Source belum push/PR/CI/deploy; runtime81fc239 tetap. Fresh production recovery/Owner/current/lock dan authenticated/iPhone UAT OPEN. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Wave 5 preparation milestone lokal
 
 `CONFIRMED`; Andreas lanjut Wave5. Member86b9c7c/artifact03be636, backendd8/contracts3279 unchanged;605Member/actual worker rollback/native15→15 restore-restart dan140+14runner tests PASS_LOCAL. Runnere77cc82 menerima exact frontend delta/rollback, belum installed. Source belum push/PR/deploy; productionfrontend81fc unchanged. Fresh recovery/Owner/lock/current dan authenticated/iPhone UAT OPEN; IN_PROGRESS bukan BUSINESS_READY. [Detail](DOSSIER.md).

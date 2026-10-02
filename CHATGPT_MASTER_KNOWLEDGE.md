@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Member V1 Wave 5 diperiksa dan diperbaiki, belum production
+
+`CONFIRMED`: kandidat Member140e7b1/artifacte53067a/runner5e668cd menggantikan kandidat lokal86b9c7c. Konsistensi akun, identitas Reward hilang dan saldo authoritative Platform diperbaiki;609Member, Owner6viewports, mobile/API/worker rollback,140+14runner dan PostgreSQL15→15restore-restart PASS_LOCAL. Source belum push/PR/CI; runner belum installed; production81fc239/backendd8/contracts3279/POS/provider unchanged. Fresh production recovery/Owner/current/lock dan authenticated final/iPhone fisik OPEN; IN_PROGRESS/BELUM DEPLOY, bukan BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Member V1 Wave 5 siap lokal, belum tayang
 
 `CONFIRMED`: Member86b9c7c/artifact03be636 membawa tiga tab/kartu/XP/perjalanan/Promo dan empat area Owner, backendd8/contracts3279 tetap.605Member, worker update/rollback sintetis, PostgreSQL15→15 restore/restart dan140+14runner tests PASS. Local runnere77cc82 exact-pair tanpa membuka provider, belum installed. Wave5 IN_PROGRESS/BELUM DEPLOY; frontend production tetap81fc239. Fresh production Owner/lock/recovery serta authenticated kandidat/iPhone fisik OPEN. Jangan menyebut paket lokal sebagai production aktif/BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).

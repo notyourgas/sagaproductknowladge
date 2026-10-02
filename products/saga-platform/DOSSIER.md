@@ -1,5 +1,15 @@
 # Saga Platform Dossier
 
+## 2026-10-02 — Wave 5 review: consistency fixes dan exact artifact baru
+
+`CONFIRMED / LOCAL_VALIDATED / IN_PROGRESS / BELUM DEPLOY`; sumber permintaan Andreas untuk pemeriksaan ulang dan perbaikan kekurangan. Member `140e7b1dbfd4ca5f0e909862779b7a58105e06cc`, branch `codex/member-v1-wave5-review-20261002`, menggantikan kandidat86b9c7c. Before konsistensi respons antar sesi dan pilihan Reward belum tertutup → after request lama tidak mengganti data akun terbaru, detail Reward hilang tidak beralih ke item lain, refresh katalog memperbarui detail, dan V1 hanya menampilkan saldo tersedia dari Platform tanpa estimasi saldo setelah reservasi client. Tidak menambah framework/dependency atau mengaktifkan provider.
+
+609 unit/contract Member + check PASS; two loopback API journeys dipisah/reset, viewport320/360/375/390/430/200% text, Axe critical/serious/overflow/unexpected console nol. Lifecycle Reward mencakup ambiguous timeout, same-key retry, cancel/commit dan persistence/restart. Owner enam viewport dan production-worker baseline/candidate/rollback/reswitch PASS_LOCAL_SYNTHETIC; bukan Owner production atau Safari/iPhone fisik.
+
+Backend tetap `d8c060d4a4dbca6156b60a9c155c8f97a3581e59`, contracts `3279a02b6d06d3532190488f6abbcc59c312d120`. Immutable artifact SHA256 `e53067a85121a8b4e4920681a9eba98ad39e0ab7318d22d8b3527cef78df8d96`/22,513,876 bytes dibuat ulang; builder900e903 existing,183 text files diperiksa, nol forbidden paths/high-confidence secret findings/dependency vulnerabilities. Runner lokal `5e668cd84a6b69f552dc2b7002545a7510b6261e` mengikat exact pair baru serta menolak provenance frontend tidak lengkap;140Python+14Node PASS, belum installed. Native PostgreSQL18.6 report mengikat clean runner5e668cd + artifact baru dan artifact rollback aktif: active restore, unchanged15→15 writes, candidate restart, candidate restore PASS. Disposable cluster sintetis tidak membuktikan encrypted production recovery custody.
+
+Source/runner belum push/PR; CI_NOT_RUN. Read-only runtime tetap release `20261002T065100Z-d8c060d-r0u`, Member `81fc23904c983c04efe2c40f49f9e723d5a55074`, artifact rollback `2e72fb7fdee7e1e24006d2c9e195e914429932452012ce369d6583da85de084e`. Production activation, fresh current/sole lock/effective Owner/candidate-bound production recovery dan authenticated final/iPhone UAT masih OPEN. Provider, POS, privacy/erasure scope unchanged; tidak memakai AppDeploy atau mengubah Vercel lama. BUSINESS_READY belum ditetapkan.
+
 ## 2026-10-02 — Wave 5 kandidat immutable dan recovery lokal
 
 `CONFIRMED / LOCAL_CANDIDATE_PREPARED / IN_PROGRESS / BELUM DEPLOY`; Andreas meminta lanjut Wave5. Member `86b9c7c299e0b8a8d1f015066dfe780dec1a28e3`, branch `codex/member-v1-wave5-20261002`, kandidat kumulatif Wave1–4. Delta terbaru deskripsi manifest V1 dan acceptance actual production worker existing, tanpa perubahan worker/framework/dependency.605/605 Member/check serta dua loopback API journey terpisah dengan fixture reset PASS: viewport320/360/375/390/430/200% text/Axe/session/stale/offline/Reward lifecycle. Owner Wave4 runtime unchanged; relevant evidence direuse.
