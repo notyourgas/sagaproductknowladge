@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Wave 4 Owner V1 lokal
+
+`CONFIRMED`; permintaan Andreas lanjut Wave 4. Source `f83d0343bd3c5f08136532799964d6da5b7ce9d9`: empat area dan per-view loading, formulir Promo bertahap, legacy controls/laporan/audit tetap; error tidak membuka mutasi atau fallback. 605/605 serta browser/native PostgreSQL restart/previous-binary regression PASS. Source belum push/PR/deploy; production/backend/schema/POS/provider unchanged. Wave 5 tetap OPEN. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Wave 3 Promo V1 lokal
 
 `CONFIRMED`; permintaan Andreas lanjut Wave 3. Member `3eb0611f570daa1ef755e4900939a9eaa6755222` menyederhanakan Penawaran/Milik saya, review klaim dan authoritative eligibility/Points tersedia; POS test-only `2fab7918062d54227eaa962fffd217430410035d` membuktikan lintas produk. 605 Member + 34 backend focused + 9 native PostgreSQL scenarios PASS. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED; source belum push/PR, production/backend/schema/provider/runtime POS tidak berubah. Wave 4 Owner dan Wave 5 release/UAT berikutnya. [Detail](DOSSIER.md).

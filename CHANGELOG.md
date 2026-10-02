@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(saga-platform): Wave 4 Owner V1
+
+`CONFIRMED`; sumber permintaan Andreas dan source `f83d0343bd3c5f08136532799964d6da5b7ce9d9`. Before enam menu/eager reads → empat area/per-view loading, native Promo forms dan error recovery tanpa mengurangi kontrol Owner. 605/605 dan browser/native PostgreSQL synthetic regression PASS. Delapan dokumen Product/Dossier/Changelog/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD. Source belum push/PR/CI/deploy; production/backend/schema/POS runtime/provider unchanged. Wave 5 release/iPhone/autentik dan residual retention/recovery OPEN. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(saga-platform): Wave 3 Promo V1
 
 `CONFIRMED`; sumber permintaan Andreas dan source Member `3eb0611f570daa1ef755e4900939a9eaa6755222`, POS acceptance-only `2fab7918062d54227eaa962fffd217430410035d`. Before discovery/target/voucher terpisah → Penawaran/Milik saya dengan review dan lifecycle server-authoritative. 605 Member + 34 backend focused + 9 native PostgreSQL synthetic scenarios PASS. Delapan dokumen Product/Dossier/Changelog/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD; source belum push/PR/deploy, production/backend/schema/runtime POS/provider unchanged. Wave 4 Owner dan Wave 5 release/iPhone/authenticated UAT serta residual retention/recovery OPEN. [Detail](products/saga-platform/DOSSIER.md).

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — Saga Member Wave 4 Owner lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Member `f83d0343bd3c5f08136532799964d6da5b7ce9d9` menyederhanakan Owner menjadi empat area dan memuat endpoint per kebutuhan. Cases/audit/reports dan server-authoritative voucher/Reward tetap. 605/605 dan six-width/native PostgreSQL regression PASS; tidak mengubah backend/schema/POS runtime/provider/production atau mempublikasikan source. Wave 5 release/iPhone/UAT OPEN. [Dossier](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Saga Member Wave 3 Promo V1 lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Member `3eb0611f570daa1ef755e4900939a9eaa6755222`: dua tab Promo, review klaim, lifecycle voucher/Reward dan retry aman; POS test-only `2fab7918062d54227eaa962fffd217430410035d`: 9/9 native PostgreSQL cross-product scenarios PASS, bersama 605/605 Member dan 34/34 backend focused. Tidak mengubah runtime POS, backend, schema, provider atau production. Source belum push/PR; Owner Wave 4 dan release/iPhone Wave 5 OPEN. [Dossier](../products/saga-platform/DOSSIER.md).

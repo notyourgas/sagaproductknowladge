@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — Wave 4 Owner Member V1 selesai lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source Member `f83d0343bd3c5f08136532799964d6da5b7ce9d9` mengganti enam menu teknis menjadi Ringkasan/Member/Promo/Pengaturan dengan loading per area. Laporan/audit tetap reachable; voucher dan Reward dipisahkan, formulir dibuka saat perlu, kolom benefit relevan saja. Snapshot503 tidak mengizinkan tindakan,403 membersihkan data ditolak,401 kembali login. 605/605 unit/static, browser enam lebar/Axe/200% text dan actual Owner→API→PostgreSQL native restart/previous-binary roundtrip PASS. Source commit lokal belum push/PR, production/backend/schema/POS/provider tidak berubah. Wave 5 release/iPhone/autentik OPEN; bukan BUSINESS_READY. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Wave 3 Promo Member V1 selesai lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source Member `3eb0611f570daa1ef755e4900939a9eaa6755222` menutup Promo V1 dengan dua tab Penawaran/Milik saya, review sebelum klaim, kuota/jadwal/masa pakai dari Platform, serta status voucher dan reservasi Reward. Retry respons hilang menggunakan kunci yang sama; data stale tidak mengizinkan klaim baru. 605/605 Member, 34/34 backend focused dan 9/9 lintas POS PostgreSQL native PASS dengan data sintetis. Source commit lokal belum push/PR; backend/database/runtime POS/provider/production tidak berubah. Wave 4 Owner dan Wave 5 release/iPhone/autentik tetap OPEN; bukan BUSINESS_READY. [Detail](DOSSIER.md).

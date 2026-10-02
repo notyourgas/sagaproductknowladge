@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Member V1 Wave 4 lokal CLOSED; rilis OPEN
+
+`CONFIRMED`: source `f83d0343bd3c5f08136532799964d6da5b7ce9d9` menutup empat area Owner/lazy reads/Promo progressive form dengan kasus/laporan/audit tetap reachable; actual local API/native PostgreSQL regression PASS. OPEN: Wave 5 immutable paired artifact, old-client/service-worker, recovery/rollback/monitoring, iPhone fisik dan authenticated production UAT. Personalisasi kartu tetap browser-local; residual erasure/Book/POS/history/backup belum ditutup. Tidak ada source push/deployment/BUSINESS_READY baru. [Dossier](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Member V1 Wave 3 lokal CLOSED; Owner dan rilis OPEN
 
 `CONFIRMED`: Member `3eb0611f570daa1ef755e4900939a9eaa6755222` dan POS acceptance-only `2fab7918062d54227eaa962fffd217430410035d` menutup simplifikasi Promo/lifecycle dan synthetic native POS regression. OPEN: Wave 4 empat area Owner/per-view loading/cases/audit; Wave 5 exact paired release, recovery, old-client/service-worker, physical iPhone dan authenticated production UAT. Card preference tetap browser-local. Tidak menutup residual erasure/Book/POS/history/backup lama; bukan BUSINESS_READY. Catatan Wave 2 di bawah adalah snapshot sebelumnya. [Dossier](products/saga-platform/DOSSIER.md).

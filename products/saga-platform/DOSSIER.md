@@ -1,5 +1,15 @@
 # Saga Platform Dossier
 
+## 2026-10-02 — Wave 4 empat area Owner dan lazy loading lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Andreas meminta lanjut Wave 4. Source `f83d0343bd3c5f08136532799964d6da5b7ce9d9` pada `codex/member-v1-wave4-20261002`, baseline3eb0611. Dashboard eager semua endpoint/enam menu → empat area Ringkasan/Member/Promo/Pengaturan; laporan di Ringkasan dan audit di Pengaturan. Perlu perhatian memakai open/inReview summary server, bukan panjang daftar. Promo membedakan voucher diskon dan Reward tukar Points; native disclosure mempertahankan panel setelah refresh. Reward menampilkan benefit relevan saja, Quest creation baru disembunyikan tetapi legacy rights/controls, koreksi Points dan Inbox announcement tetap reachable.
+
+Auth, CSRF, password step-up, permissions dan authority Platform tetap. Per-area loading503 mempertahankan snapshot berlabel bukan live dan menutup tindakan sampai retry;403 membersihkan endpoint ditolak,401 menghapus sesi/data, late response tidak menimpa area/sesi baru. Read-only Owner tidak memperoleh mutasi. Backend unchanged `d8c060d4a4dbca6156b60a9c155c8f97a3581e59`, previous binary `d6b3c45f1bbb5e197692caedee7fc34cbced1125`; tidak ada migrasi/dependency/provider/POS runtime baru.
+
+605/605 unit/static dan check/diff PASS. Browser320/360/375/390/430/1440, keyboard/focus/reduced motion,200% text/Axe critical-serious nol, lazy reads dan fail/retry states PASS. Core-only auth dan actual local read-only API search/pagination/detail/audit/denial PASS. PostgreSQL native18.6 disposable actual Owner voucher draft/password publish→Member catalog, Reward lifecycle, sole-Owner correction, reports, privacy export, Inbox/announcement opt-in/WIB/ambiguous retry, role/scope/CSRF/password denial, persistence restart serta previous-binary write/reopen PASS. Data sintetis; bukan provider nyata atau UAT iPhone/production. Source revert tanpa migrasi; bukan candidate-bound production backup/restore.
+
+Source commit lokal belum push/PR/CI/BELUM DEPLOY; hanya knowledge dipublikasikan terpisah. Wave 5 exact paired artifact/old-client/service-worker/recovery/rollback/monitoring/authenticated production UAT dan iPhone fisik OPEN. Residual erasure/Book/POS/history/backup tidak ditutup; bukan BUSINESS_READY. DEC-225 tidak berubah; catatan Wave 3 di bawah adalah snapshot sebelumnya.
+
 ## 2026-10-02 — Wave 3 Promo dan integrasi POS tervalidasi lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Andreas meminta lanjut Wave 3. Before workspace Reward bercampur discovery/target dan bagian voucher terpisah → Promo V1 dua tab Penawaran/Milik saya. Review voucher menampilkan benefit, kuota, jadwal, batas per member dan masa pakai setelah klaim dari Platform; status claimed/paused/expired/reserved/redeemed dipertahankan. Reward memakai eligibility dan Points tersedia dari server, bukan hitungan saldo setelah penukaran di client. Klaim bukan diskon otomatis; pemakaian tetap melalui POS dengan identitas Member. UI kartu/XP/perjalanan Wave 2 tetap.
