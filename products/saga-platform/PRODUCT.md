@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — Wave 3 Promo Member V1 selesai lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source Member `3eb0611f570daa1ef755e4900939a9eaa6755222` menutup Promo V1 dengan dua tab Penawaran/Milik saya, review sebelum klaim, kuota/jadwal/masa pakai dari Platform, serta status voucher dan reservasi Reward. Retry respons hilang menggunakan kunci yang sama; data stale tidak mengizinkan klaim baru. 605/605 Member, 34/34 backend focused dan 9/9 lintas POS PostgreSQL native PASS dengan data sintetis. Source commit lokal belum push/PR; backend/database/runtime POS/provider/production tidak berubah. Wave 4 Owner dan Wave 5 release/iPhone/autentik tetap OPEN; bukan BUSINESS_READY. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Wave 2 inti Member V1 selesai lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Wave 2 Member V1 source `378e48569f49a17f8adcc9df1e1db325733faf33` (`codex/member-v1-wave2-20261002`, commit lokal, belum push/PR): tiga tab Beranda/Promo/Akun; onboarding nama+consent; kartu dan personalisasi per akun di browser, Points/expiry/XP/perjalanan dari Platform. 598/598 unit/static PASS; browser synthetic terintegrasi320/360/375/390/430, 200% text, Axe critical/serious nol, card reload/storage failure/account-switch, stale503/offline recovery dan expired-session/return path PASS. Backend complete-profile contract1/1 PASS, fixture restart/reset PASS. Backend/database/POS/Owner/provider/production tidak berubah; bukan Google nyata/iPhone/Owner production UAT atau BUSINESS_READY. Wave 3 Promo/POS, Wave 4 Owner, Wave 5 release/UAT tetap berikutnya. Personalisasi tidak cross-device; hak lama tetap. [Detail](DOSSIER.md).

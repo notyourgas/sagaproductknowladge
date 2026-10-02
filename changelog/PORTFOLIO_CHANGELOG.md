@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — Saga Member Wave 3 Promo V1 lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Member `3eb0611f570daa1ef755e4900939a9eaa6755222`: dua tab Promo, review klaim, lifecycle voucher/Reward dan retry aman; POS test-only `2fab7918062d54227eaa962fffd217430410035d`: 9/9 native PostgreSQL cross-product scenarios PASS, bersama 605/605 Member dan 34/34 backend focused. Tidak mengubah runtime POS, backend, schema, provider atau production. Source belum push/PR; Owner Wave 4 dan release/iPhone Wave 5 OPEN. [Dossier](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Saga Member Wave 2 V1 lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Wave 2 Member V1 source `378e48569f49a17f8adcc9df1e1db325733faf33` (`codex/member-v1-wave2-20261002`, commit lokal, belum push/PR): tiga tab Beranda/Promo/Akun; onboarding nama+consent; kartu dan personalisasi per akun di browser, Points/expiry/XP/perjalanan dari Platform. 598/598 unit/static PASS; browser synthetic terintegrasi320/360/375/390/430, 200% text, Axe critical/serious nol, card reload/storage failure/account-switch, stale503/offline recovery dan expired-session/return path PASS. Backend complete-profile contract1/1 PASS, fixture restart/reset PASS. Backend/database/POS/Owner/provider/production tidak berubah; bukan Google nyata/iPhone/Owner production UAT atau BUSINESS_READY. Wave 3 Promo/POS, Wave 4 Owner, Wave 5 release/UAT tetap berikutnya. Personalisasi tidak cross-device; hak lama tetap. [Saga Platform](../products/saga-platform/DOSSIER.md).

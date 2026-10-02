@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(saga-platform): Wave 3 Promo V1
+
+`CONFIRMED`; sumber permintaan Andreas dan source Member `3eb0611f570daa1ef755e4900939a9eaa6755222`, POS acceptance-only `2fab7918062d54227eaa962fffd217430410035d`. Before discovery/target/voucher terpisah → Penawaran/Milik saya dengan review dan lifecycle server-authoritative. 605 Member + 34 backend focused + 9 native PostgreSQL synthetic scenarios PASS. Delapan dokumen Product/Dossier/Changelog/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD; source belum push/PR/deploy, production/backend/schema/runtime POS/provider unchanged. Wave 4 Owner dan Wave 5 release/iPhone/authenticated UAT serta residual retention/recovery OPEN. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(saga-platform): Wave 2 inti Member V1
 
 `CONFIRMED`: source `378e48569f49a17f8adcc9df1e1db325733faf33` LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED; lima tab/onboarding panjang/global card preference → tiga tab/nama+consent/personalisasi terisolasi akun browser/Points+XP dari Platform. 598/598 unit dan loopback browser320–430/offline/stale/storage/session PASS. Delapan dokumen terdampak diperbarui pada main HEAD; source commit lokal tanpa push/PR, production/backend/database/Owner/POS/provider tidak berubah. Wave 3–5, physical iPhone/authenticated production UAT dan recovery/cache release gates tetap OPEN. [Detail](products/saga-platform/DOSSIER.md).
