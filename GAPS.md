@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Logical off-host restore ditutup; physical acceptance OPEN
+
+`CONFIRMED`: mismatch logical snapshot pada rehearsal Windows telah selesai dengan
+timezoneUTC parity. Originalhash/fullSQL/35migrations/keypair/evidence manifest
+PASS pada recovery point source `6dfa182ab712b94fa09f3d066b9519dccc2e6535`.
+Histori mismatch1Oktober di bawah bukan status terbaru. Residual8/9; operator25case
+serta tablet/printer asli masih OPEN. SharedUSB+Bluetooth memerlukan OS/driver,
+printqueue dan duplicate/ambiguity proof. Independent recovery-key escrow belum
+dibuktikan; identity rehearsal masih dari liveVPS. `BUSINESS_READY=false`, bukan
+full disaster recovery. Next: actualdevice/operator dan custody key Owner.
+
 ## 2026-10-01 — Menu/Harga/Modifier: recovery off-host dan operator belum terbukti
 
 `CONFIRMED`: residual source `6dfa182ab712b94fa09f3d066b9519dccc2e6535` production aktif,

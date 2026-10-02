@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — SagaPOS recovery Windows lulus
+
+`CONFIRMED`: recovery source `6dfa182ab712b94fa09f3d066b9519dccc2e6535` lulus
+off-host Windows PostgreSQL18.6 isolated. Original logical hash cocok setelah
+timezoneUTC parity; checksum3arsip,35migrations,keypair/evidence manifest PASS.
+Tidak ada productionwrites/redeploy. Residual8/9, operator25case/tablet/printer
+sharedUSB+Bluetooth masih OPEN; OS/driver/cetak asli belum terbukti. Independent
+key escrow UNVERIFIED, bukan full disaster recovery. `BUSINESS_READY=false` dan
+ledger25case tetap50/100. [SagaOPS Product](products/sagaops/PRODUCT.md).
+
 ## 2026-10-01 — SagaPOS Menu/Harga/Modifier residual aktif
 
 `CONFIRMED`: production `6dfa182ab712b94fa09f3d066b9519dccc2e6535`, rollback kompatibel

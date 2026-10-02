@@ -1,5 +1,19 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: SagaPOS native off-host restore
+
+| Field | Milestone recovery |
+|---|---|
+| Waktu pembaruan terakhir | 2026-10-02, restore07.14WIB; runtime fresh ready |
+| Branch aktif | `main` checkout knowledge bersih terisolasi |
+| Commit SHA terbaru | `main HEAD`; hash immutable setelah push |
+| Informasi terakhir disinkronkan | Source6dfa182 OFFHOST_RESTORE_PASS: UTC parity, originalhash/fullSQL/35migrations/keypair/evidence manifest |
+| Status sinkronisasi | `UP TO DATE` untuk milestone recovery; residual8/9, BUSINESS_READY=false |
+| Konflik | Histori mismatch1Oktober dipertahankan, bukan status recovery terbaru |
+| Error | Physicaloperator25case/tablet/printer dan independentkeyescrow OPEN; ledger50/100 tetap |
+
+Delapan dokumen material diperbarui; aplikasi/provider/payment production tidak berubah.
+
 ## 2026-10-01 — accepted: Menu/Harga/Modifier production residual
 
 | Field | Snapshot milestone |

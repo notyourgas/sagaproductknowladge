@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-10-02 — Recovery off-host lulus, operator/perangkat masih terbuka
+
+- `CONFIRMED`; instruksi Andreas menutup residual, source production `6dfa182ab712b94fa09f3d066b9519dccc2e6535` dan native restore receipt2Oktober.
+- Before encrypted copy checksum PASS namun logical comparison gagal -> after targetUTC parity memberi hash asli identik; fullSQL,35migrations,keypair dan manifest restore PASS. Database disposable removed, productionwrites0.
+- Residual8/9, physical operator25case OPEN; sharedUSB+Bluetooth kiosk/kasir perlu OS/driver dan real print proof. Independent key escrow belum diuji, maka bukan total-loss recovery/BUSINESS_READY; ledger50/100 tidak berubah.
+- Product/Dossier/Portfolio/Master/Gaps/Sync/root Changelog diperbarui. Tidak redeploy aplikasi, tidak aktivasi provider/payment atau rotasi credential.
+
 ## 2026-10-01 — Menu/Harga/Modifier residual dirilis
 
 - `CONFIRMED`; instruksi Andreas dan source READY `6dfa182ab712b94fa09f3d066b9519dccc2e6535`, rollback reader `7540d73714da00dcaba20b287e70da53518c2f50`.

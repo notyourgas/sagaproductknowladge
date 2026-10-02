@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-02 — SagaPOS off-host restore PASS
+
+`CONFIRMED`: encrypted backup source `6dfa182ab712b94fa09f3d066b9519dccc2e6535`
+direstore pada Windows nativePostgreSQL18.6 isolated. UTC parity menyelesaikan
+logical mismatch tanpa melemahkan check; fullSQL,originalhash,35migrations,keypair
+dan manifest PASS. Residual8/9; physicaloperator/tablet/printer OPEN. Independent
+keyescrow UNVERIFIED; `BUSINESS_READY=false`. Production tidak berubah oleh recovery.
+
 ## 2026-10-01 — SagaPOS Menu/Harga/Modifier residual production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. READY `6dfa182ab712b94fa09f3d066b9519dccc2e6535`

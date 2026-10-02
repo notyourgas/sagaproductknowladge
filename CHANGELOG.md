@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(sagaops): off-host recovery accepted
+
+`CONFIRMED`; instruksi Andreas, production source `6dfa182ab712b94fa09f3d066b9519dccc2e6535`
+dan nativeWindowsPostgreSQL18.6 recovery receipt. Before logical mismatch -> after
+UTC parity, originalhash/fullSQL/35migrations/keypair/manifest PASS. Impact Product,
+Dossier,Changelog SagaOPS, Portfolio,Master,Gaps,Sync. Runtime/provider/payment tidak
+berubah; residual8/9, physicaloperator25case dan independentkeyescrow OPEN;
+BUSINESS_READYfalse/ledger50/100 tetap. Knowledge main HEAD terpisah, bukan apprelease.
+
 ## 2026-10-01 — knowledge(sagaops): finalisasi Menu/Harga/Modifier production
 
 `CONFIRMED`; sumber instruksi Andreas, source READY `6dfa182ab712b94fa09f3d066b9519dccc2e6535`,

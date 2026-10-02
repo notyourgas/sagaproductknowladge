@@ -1,5 +1,22 @@
 # SagaOPS Dossier
 
+## 2026-10-02 — Penutupan logical mismatch restore Windows
+
+`CONFIRMED`: recovery point release `6dfa182ab712b94fa09f3d066b9519dccc2e6535`
+lulus native PostgreSQL18.6 isolated pada host Windows terpisah. Target `PGTZ=UTC`
+dan assertion SHOW TimeZone menyamakan serialisasi timestamp dengan VPS; original
+logical digest kini identik. Tiga encrypted archive checksum, fullSQL restore,
+35 ledger names/checksums, keypair comparison memory-only dan evidence manifest
+PASS. Snapshot tersebut memang0verifiedobjects, bukan bukti pemulihan media yang
+belum pernah ada. Database disposable dihentikan/dihapus, backup encrypted tetap.
+
+Runtime/provider/payment/credential production tidak diubah; exact source tetap
+6dfa dan health ready. Residual8/9; operator25case dan printer/tablet asli OPEN.
+USB+Bluetooth shared kiosk/kasir perlu proof driver, nota tidak bercampur/duplikat,
+paper-out/reconnect dan reprint. Independent key escrow UNVERIFIED; liveVPS identity
+dibutuhkan saat rehearsal. OFFHOST_RESTORE_PASS bukan full disaster recovery atau
+BUSINESS_READY; skor25case tetap50/100.
+
 ## 2026-10-01 — Finalisasi Menu/Harga/Modifier pada production
 
 `CONFIRMED`. READY `6dfa182ab712b94fa09f3d066b9519dccc2e6535` aktif;

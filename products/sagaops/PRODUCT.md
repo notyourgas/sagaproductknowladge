@@ -1,5 +1,22 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-02 — Recovery off-host Menu/Harga/Modifier diterima
+
+`CONFIRMED`: backup terenkripsi pada tujuan Windows yang disetujui Owner berhasil
+direstore ke PostgreSQL18.6 isolated. Checksum tiga arsip, original logical hash,
+35 migration checksums dan credential pair PASS; evidence manifest0objek/0issues.
+Selisih logical comparison sebelumnya diselesaikan dengan timezoneUTC yang sama
+dengan VPS, tanpa mengganti expected hash atau mengurangi assertion. Disposable
+database dihapus; tidak ada mutasi database/provider atau rilis ulang aplikasi.
+Source production tetap `6dfa182ab712b94fa09f3d066b9519dccc2e6535`, fresh health ready.
+
+Residual8/9 selesai; tablet/printer thermal dan operator25case masih OPEN. Owner
+menetapkan USB+Bluetooth untuk dua perangkat kiosk/kasir, tetapi OS/driver/queue
+lintas perangkat dan hasil cetak asli belum terbukti. Independent recovery-key
+escrow belum diverifikasi; restore ini masih memakai identity dari VPS lewat pipe.
+Ini OFFHOST_RESTORE_PASS pada recovery point yang diuji, bukan total-loss recovery
+atau `BUSINESS_READY`. Ledger25case tetap50/100 sampai bukti percase/operator ada.
+
 ## 2026-10-01 — Menu/Harga/Modifier: finalisasi residual production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
