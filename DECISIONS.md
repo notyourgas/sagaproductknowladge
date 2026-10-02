@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-226 — Hadiah 100 pendaftar sejak 3 Oktober
+
+- Tanggal: 2026-10-03. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: satu minuman gratis dan diskon50%Self Photo Couple khusus100 pendaftar pertama sejak3Oktober; hadiah foto bukan sesi Express gratis. Birthday satu item bebas pilihan menu adalah benefit terpisah, tidak dibatasi cohort100.
+- Alasan: promo pendaftaran dan ulang tahun tanpa membagikan benefit yang salah.
+- Alternatif: Express gratis dan minuman untuk seluruh pendaftar; dikoreksi Andreas, tidak dipakai.
+- Dampak: Wave1 menyimpan hak pasangan di Platform; Member tidak menghitung kuota atau diskon. Urutan pendaftar memakai registration authority, bukan kecepatan klik klaim.
+- Delivery: source lokal `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f`, 345/345tes73berkas + focused PASS; LOCAL_VALIDATED/BELUM DEPLOY, hak pending/tidak bisa ditukar. Source belum push/PR/CI; production tidak dimutasi.
+- Belum dikunci: masa pakai voucher30hari adalah `PROPOSAL`; cutoff00.00WIB adalah `ASSUMPTION`. Katalog/penukaran Wave2–3, birthdayWave4, dashboard/E2E/deployWave5 belum selesai.
+- Terkait: [Product](products/saga-platform/PRODUCT.md), [Dossier](products/saga-platform/DOSSIER.md), [Gaps](GAPS.md). DEC-225 scope V1 tetap berlaku.
+
 ## DEC-225 — Scope Member V1 dan penyederhanaan Owner
 
 - Tanggal: 2026-10-02. Status: `CONFIRMED`; pemberi keputusan Andreas.

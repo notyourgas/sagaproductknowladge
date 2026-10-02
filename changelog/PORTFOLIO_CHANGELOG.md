@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-03 — Saga Member registration gifts Wave 1 lokal
+
+`CONFIRMED`: backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f` menyiapkan paired rights minuman gratis+50%Couple bagi satu cohort100 registrasi sejak3Oktober; bukan Express gratis/promo aktif. 345/345tes73berkas + focused PASS; LOCAL_VALIDATED/BELUM DEPLOY, source belum push/PR/CI, Member/POS/Book/schema/provider/production tidak dimutasi. Dokumen produk dan keputusan disinkronkan terpisah; Wave2–5 dan validity masih terbuka. [Detail](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — Login/onboarding lama aktif production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member `6f07e1ec6a92f319792ce9fa4de8450a5232f746`, release `20261002T170000Z-d8c060d-r0u`, artifact SHA256 `3f09b98b3b4c71b1942643d8034ad596a622fc85a2b237b62a23639f00c6747c`. Desain berilustrasi lama kembali, Google utama/OTP fallback, profil satu langkah dengan telepon/WhatsApp dan tanggal lahir opsional tersimpan di Platform. Backend/contracts/schema/POS/provider unchanged. 610 Member, 145 runner/15 Node, native PostgreSQL15→15, encrypted recovery/disposable restore/actual rollback/reswitch/monitor/authenticated Owner/public mobile320–430 PASS. Source commit lokal, CI_NOT_RUN; knowledge sync terpisah. Google Member/iPhone fisik UAT OPEN, bukan BUSINESS_READY. Catatan lokal sebelumnya adalah histori sebelum deploy. [Dossier](../products/saga-platform/DOSSIER.md).

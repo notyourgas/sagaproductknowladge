@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-03 — Hadiah pendaftaran foundation CLOSED lokal; redemption OPEN
+
+`CONFIRMED`: backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f`, 345/345tes73berkas + focused PASS, source belum push/PR/CI/deploy. Cohort100/paired rights/replay/restart/CAS/purge-with-burned-slots/HTTP503 CLOSED lokal. Hak non-redeemable; production tidak dimutasi. OPEN: eligible beverages/variants/add-ons dan binding POS Wave2; satu paketCouple/stacking Wave3; birthday1item Wave4; UI/dashboard serta actual Member/Owner/POS/Book UAT, native restore dan rollback-compatible writer Wave5. `PROPOSAL`: validity30hari; `ASSUMPTION`: cutoff3Oktober00.00WIB. Jangan mulai expiry sebelum voucher benar-benar aktif atau menjanjikan promo sudah tersedia. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — Koreksi login/onboarding release CLOSED; Member/device UAT OPEN
 
 `CONFIRMED`: Member6f07e1e/artifact3f09b98/release20261002T170000Z-d8c060d-r0u PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED. Restore/rollback/reswitch/monitor/Owner autentik dan tampilan login publik320–430 CLOSED, backend/schema/contracts/POS/provider unchanged. Telepon/WhatsApp dan tanggal lahir opsional dikirim melalui kontrak existing; akun selesai tidak dipaksa onboarding ulang. OPEN: genuine Google Member/iPhone Safari/PWA, representative POS redemption UAT, cross-device card sync serta residual erasure/Book/history/backup custody. Bukan BUSINESS_READY; snapshot release140e sebelumnya kini histori. [Dossier](products/saga-platform/DOSSIER.md).

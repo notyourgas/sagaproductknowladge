@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-03 — Hadiah pendaftaran Wave 1, fondasi lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f` mencatat satu cohort 100 registrasi publik terverifikasi sejak 3 Oktober: masing-masing satu minuman gratis dan diskon 50% satu Self Photo Couple. Hak berpasangan, replay-safe dan restart-safe; masih pending/tidak bisa ditukar, bukan voucher promo aktif. 345 tes/73 berkas + focused concurrency/HTTP PASS. Source commit lokal belum push/PR/CI/deploy; Member UI, schema, POS/Book dan production tidak dimutasi. Wave 2–5 serta masa pakai voucher masih terbuka. [Detail](DOSSIER.md), [keputusan](../../DECISIONS.md#dec-226--hadiah-100-pendaftar-sejak-3-oktober).
+
 ## 2026-10-03 — Login/onboarding lama aktif production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member `6f07e1ec6a92f319792ce9fa4de8450a5232f746`, release `20261002T170000Z-d8c060d-r0u`, artifact SHA256 `3f09b98b3b4c71b1942643d8034ad596a622fc85a2b237b62a23639f00c6747c`. Desain berilustrasi lama kembali, Google utama/OTP fallback, profil satu langkah dengan telepon/WhatsApp dan tanggal lahir opsional tersimpan di Platform. Backend/contracts/schema/POS/provider unchanged. 610 Member, 145 runner/15 Node, native PostgreSQL15→15, encrypted recovery/disposable restore/actual rollback/reswitch/monitor/authenticated Owner/public mobile320–430 PASS. Source commit lokal, CI_NOT_RUN; knowledge sync terpisah. Google Member/iPhone fisik UAT OPEN, bukan BUSINESS_READY. Catatan lokal sebelumnya adalah histori sebelum deploy. [Detail](DOSSIER.md).

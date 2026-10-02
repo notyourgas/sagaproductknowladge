@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-03 — Wave 1 hadiah pendaftaran, belum deploy
+
+`CONFIRMED`; sumber keputusan Andreas dan source backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f`. Alokasi otomatis satu cohort100 pendaftar terverifikasi sejak3Oktober, paired minuman gratis+50%Couple, idempotent/restart-safe/scoped; perbaikan error durable503 dan purge tanpa membuka quota. 345/345 tes73berkas + focused PASS. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED, source belum push/PR/CI, production tidak dimutasi. Hak masih pending/non-redeemable; Wave2–5/validity/rollback-compatible writer OPEN. Dokumen Product/Dossier/Changelog/Master/Decision/Gaps/Portfolio/root/Sync diperbarui terpisah. [Detail](DOSSIER.md).
+
 ## 2026-10-03 — Login/onboarding lama aktif production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member `6f07e1ec6a92f319792ce9fa4de8450a5232f746`, release `20261002T170000Z-d8c060d-r0u`, artifact SHA256 `3f09b98b3b4c71b1942643d8034ad596a622fc85a2b237b62a23639f00c6747c`. Desain berilustrasi lama kembali, Google utama/OTP fallback, profil satu langkah dengan telepon/WhatsApp dan tanggal lahir opsional tersimpan di Platform. Backend/contracts/schema/POS/provider unchanged. 610 Member, 145 runner/15 Node, native PostgreSQL15→15, encrypted recovery/disposable restore/actual rollback/reswitch/monitor/authenticated Owner/public mobile320–430 PASS. Source commit lokal, CI_NOT_RUN; knowledge sync terpisah. Google Member/iPhone fisik UAT OPEN, bukan BUSINESS_READY. Catatan lokal sebelumnya adalah histori sebelum deploy. [Dossier](DOSSIER.md).
