@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-03 — Wave 2 minuman, belum tersedia production
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Andreas mengunci semua minuman standar/add-on berbayar dan30hari sejak voucher diterbitkan. Backend `33567ed0d72f6b82d4965e91bf5e2da42bb70080`, Member `84f21a812d8ee2253d587c9428368db7448c58c4`, POS `8b2b45062c139e8bf2f3a9f93c26a094d0950d3e` menghubungkan cohort100 ke issued claim, tampilan Member dan penukaran satu harga dasar melalui kasir/kiosk. Native/retry/restart/Rp0 serta mobile320–430 PASS; source belum push/PR/CI/deploy, production tidak dimutasi. Issuance defaultOFF sampai actual catalog/outlet dan pasangan reader/writer/recovery diadmit. FotoCouple Wave3/birthday Wave4/dashboard/deploy Wave5 OPEN; bukan promo production aktif atau BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — Hadiah Member Wave 1, bukan promo production aktif
 
 `CONFIRMED / LOCAL_VALIDATED`: backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f` menyiapkan satu cohort100 registrasi terverifikasi sejak3Oktober untuk minuman gratis+50%Self Photo Couple. Kedua hak masih pending/non-redeemable, default runtimeOFF. 345tes/73berkas + focused PASS; source lokal belum push/PR/CI/deploy, frontend/schema/POS/Book/provider/production tidak dimutasi. Birthday1item allmenu serta Wave2–5 belum aktif; masa pakai30hari masih proposal. Jangan menjanjikan hadiah sudah dapat dipakai. [Detail](products/saga-platform/DOSSIER.md).

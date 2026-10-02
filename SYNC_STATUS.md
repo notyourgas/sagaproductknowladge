@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-03 — accepted: registration beverage Wave 2 lokal
+
+`CONFIRMED`: sembilan dokumen tersinkron dari backend `33567ed0d72f6b82d4965e91bf5e2da42bb70080`, Member `84f21a812d8ee2253d587c9428368db7448c58c4`, POS `8b2b45062c139e8bf2f3a9f93c26a094d0950d3e`. Keputusan minuman standar/add-on berbayar/30hari sejak issuance mengganti proposal minuman lama. Backend349/74, Member611+mobile320–430, POS44+native/static/TypeScript PASS. Source lokal belum push/PR/CI/deploy; production tidak dimutasi, default issuanceOFF. Wave3–5/actualcatalog/pairedrecovery/UAT OPEN. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — accepted: registration gifts Wave 1 lokal
 
 `CONFIRMED`: sembilan dokumen produk/keputusan/status tersinkron dari backend lokal bersih `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f`; 345/345tes73berkas + focused PASS. LOCAL_VALIDATED/BELUM DEPLOY, source belum push/PR/CI; production tidak dimutasi. Hak paired cohort100 masih pending/non-redeemable; Wave2–5/validity/recovery-compatible writer OPEN. Penafsiran cutoff00WIB ditandai ASSUMPTION dan validity30hari PROPOSAL, bukan fakta promo aktif. [Detail](products/saga-platform/DOSSIER.md).

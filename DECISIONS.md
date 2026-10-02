@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-227 — Voucher minuman standar dan masa pakai
+
+- Tanggal: 2026-10-03. Status: `CONFIRMED`; pemberi keputusan Andreas melalui jawaban aturan Wave2.
+- Keputusan: hadiah minuman cohort100 berlaku untuk semua minuman standar; tambahan/add-on tetap berbayar. Masa pakai30hari dihitung sejak voucher diterbitkan, bukan pendaftaran akun.
+- Alasan: penerima dapat memilih minuman tanpa menggratiskan add-on atau memotong masa pakai sebelum voucher tersedia.
+- Alternatif: menu minuman tertentu atau expiry dari tanggal daftar; tidak dipilih.
+- Dampak: satu unit harga dasar dipotong lewat POS authoritative, quantity tambahan dan makanan tetap dibayar. Validity foto/birthday tidak otomatis mengikuti keputusan minuman ini.
+- Delivery: backend `33567ed0d72f6b82d4965e91bf5e2da42bb70080`, Member `84f21a812d8ee2253d587c9428368db7448c58c4`, POS `8b2b45062c139e8bf2f3a9f93c26a094d0950d3e`; source lokal/LOCAL_VALIDATED/BELUM DEPLOY, belum push/PR/CI. Production tidak dimutasi.
+- Menggantikan: hanya proposal validity minuman30hari pada DEC-226 menjadi `CONFIRMED`; cohort/50%Couple dan cutoff00WIB berstatusnya tetap.
+- Terkait: [Product](products/saga-platform/PRODUCT.md), [Dossier](products/saga-platform/DOSSIER.md), [Gaps](GAPS.md).
+
 ## DEC-226 — Hadiah 100 pendaftar sejak 3 Oktober
 
 - Tanggal: 2026-10-03. Status: `CONFIRMED`; pemberi keputusan Andreas.

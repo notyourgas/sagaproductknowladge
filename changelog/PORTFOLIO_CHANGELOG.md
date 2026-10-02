@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-03 — Saga Member Wave 2 beverage, lokal terintegrasi
+
+`CONFIRMED`: backend `33567ed0d72f6b82d4965e91bf5e2da42bb70080`, Member `84f21a812d8ee2253d587c9428368db7448c58c4`, POS `8b2b45062c139e8bf2f3a9f93c26a094d0950d3e`; cohort100 kini punya jalur issued claim/Member/single-base-price cashier-kiosk redemption, add-on berbayar dan30hari dari issuance. Backend349/74, Member611+mobile320–430, POS44+native/static/TypeScript PASS; source lokal belum push/PR/CI/deploy, production unchanged. Sembilan dokumen disinkron terpisah. Foto/birthday/dashboard/actualcatalog/recovery/UAT/release masih OPEN. [Detail](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — Saga Member registration gifts Wave 1 lokal
 
 `CONFIRMED`: backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f` menyiapkan paired rights minuman gratis+50%Couple bagi satu cohort100 registrasi sejak3Oktober; bukan Express gratis/promo aktif. 345/345tes73berkas + focused PASS; LOCAL_VALIDATED/BELUM DEPLOY, source belum push/PR/CI, Member/POS/Book/schema/provider/production tidak dimutasi. Dokumen produk dan keputusan disinkronkan terpisah; Wave2–5 dan validity masih terbuka. [Detail](../products/saga-platform/DOSSIER.md).

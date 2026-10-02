@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-03 — Wave 2 voucher minuman, lokal terintegrasi
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend `33567ed0d72f6b82d4965e91bf5e2da42bb70080`, Member `84f21a812d8ee2253d587c9428368db7448c58c4`, POS `8b2b45062c139e8bf2f3a9f93c26a094d0950d3e`. Cohort100 Wave1 mendapat satu voucher minuman otomatis pada issuance yang diotorisasi; semua minuman standar, add-on berbayar, 30 hari sejak diterbitkan sesuai Andreas. Platform menjaga kuota/status; POS memakai satu harga dasar dari katalog dan Member hanya menampilkan hak. Native PostgreSQL/retry/restart/Rp0/kiosk serta mobile320–430 PASS. Source commit lokal belum push/PR/CI/deploy; production tidak dimutasi. Katalog/outlet nyata, Writer/reader kompatibel dan gate rilis pasangan masih diperlukan; fotoCouple Wave3/birthday Wave4/dashboard/release Wave5 belum aktif. [Detail](DOSSIER.md), [keputusan](../../DECISIONS.md#dec-227--voucher-minuman-standar-dan-masa-pakai).
+
 ## 2026-10-03 — Hadiah pendaftaran Wave 1, fondasi lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f` mencatat satu cohort 100 registrasi publik terverifikasi sejak 3 Oktober: masing-masing satu minuman gratis dan diskon 50% satu Self Photo Couple. Hak berpasangan, replay-safe dan restart-safe; masih pending/tidak bisa ditukar, bukan voucher promo aktif. 345 tes/73 berkas + focused concurrency/HTTP PASS. Source commit lokal belum push/PR/CI/deploy; Member UI, schema, POS/Book dan production tidak dimutasi. Wave 2–5 serta masa pakai voucher masih terbuka. [Detail](DOSSIER.md), [keputusan](../../DECISIONS.md#dec-226--hadiah-100-pendaftar-sejak-3-oktober).

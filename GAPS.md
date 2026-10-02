@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-03 — Wave 2 beverage CLOSED lokal; release dan hadiah lanjutan OPEN
+
+`CONFIRMED`: backend33567ed/Member84f21a8/POS8b2b450 menyelesaikan issued claim cohort100,30hari dari issuance, satu harga dasar minuman/add-on berbayar, Member projection dan durable POS cash/kiosk/retry/Rp0. Backend349/74, Member611+mobile320–430, POS44+native/static/TypeScript PASS. BELUM DEPLOY; source belum push/PR/CI, production unchanged. OPEN: actual complete beverage catalog/outlet admission, reader/writer kompatibel, encrypted candidate-bound restore/rollback/UAT dan issuance activation; Couple50%Wave3/birthdayWave4/Owner campaign dashboardWave5. Validity minuman bukan lagi proposal (DEC-227); validity foto belum ditetapkan dan cutoff00WIB tetap ASSUMPTION. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — Hadiah pendaftaran foundation CLOSED lokal; redemption OPEN
 
 `CONFIRMED`: backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f`, 345/345tes73berkas + focused PASS, source belum push/PR/CI/deploy. Cohort100/paired rights/replay/restart/CAS/purge-with-burned-slots/HTTP503 CLOSED lokal. Hak non-redeemable; production tidak dimutasi. OPEN: eligible beverages/variants/add-ons dan binding POS Wave2; satu paketCouple/stacking Wave3; birthday1item Wave4; UI/dashboard serta actual Member/Owner/POS/Book UAT, native restore dan rollback-compatible writer Wave5. `PROPOSAL`: validity30hari; `ASSUMPTION`: cutoff3Oktober00.00WIB. Jangan mulai expiry sebelum voucher benar-benar aktif atau menjanjikan promo sudah tersedia. [Detail](products/saga-platform/DOSSIER.md).

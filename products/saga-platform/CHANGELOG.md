@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-03 — Wave 2 beverage terintegrasi lokal, belum deploy
+
+`CONFIRMED`; aturan Andreas semua minuman standar/add-on berbayar/30hari dari issuance. Backend `33567ed0d72f6b82d4965e91bf5e2da42bb70080`, Member `84f21a812d8ee2253d587c9428368db7448c58c4`, POS `8b2b45062c139e8bf2f3a9f93c26a094d0950d3e`: satu issued claim cohort100, projection Member, single-base-price redemption, cart-bound durable recovery dan perbaikan clock retry. Backend349/74, Member611+mobile320–430, POS44+native/static740/TypeScript PASS. Source lokal, belum push/PR/CI/deploy; production unchanged. Foto/birthday/dashboard/actualcatalog/recovery/UAT/release OPEN. Sembilan dokumen knowledge disinkronkan terpisah; status LOCAL_VALIDATED/BELUM DEPLOY. [Detail](DOSSIER.md).
+
 ## 2026-10-03 — Wave 1 hadiah pendaftaran, belum deploy
 
 `CONFIRMED`; sumber keputusan Andreas dan source backend `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f`. Alokasi otomatis satu cohort100 pendaftar terverifikasi sejak3Oktober, paired minuman gratis+50%Couple, idempotent/restart-safe/scoped; perbaikan error durable503 dan purge tanpa membuka quota. 345/345 tes73berkas + focused PASS. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED, source belum push/PR/CI, production tidak dimutasi. Hak masih pending/non-redeemable; Wave2–5/validity/rollback-compatible writer OPEN. Dokumen Product/Dossier/Changelog/Master/Decision/Gaps/Portfolio/root/Sync diperbarui terpisah. [Detail](DOSSIER.md).

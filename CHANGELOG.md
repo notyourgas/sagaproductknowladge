@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-03 — Registration gifts Wave 2 beverage
+
+`CONFIRMED`: keputusan Andreas semua minuman standar/add-on berbayar/30hari dari issuance diterima melalui DEC-227; source backend `33567ed0d72f6b82d4965e91bf5e2da42bb70080`, Member `84f21a812d8ee2253d587c9428368db7448c58c4`, POS `8b2b45062c139e8bf2f3a9f93c26a094d0950d3e`. Product/Dossier/Changelog/Master/Decision/Gaps/Portfolio/root/Sync diperbarui pada main HEAD setelah source provenance bersih. Backend349/74, Member611+mobile320–430, POS44+native/static/TypeScript PASS. LOCAL_VALIDATED/BELUM DEPLOY; source belum push/PR/CI, production tidak dimutasi. Wave3–5/actualcatalog/compatible recovery/UAT OPEN. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — Registration gifts Wave 1 foundation
 
 `CONFIRMED`: keputusan Andreas100 pendaftar sejak3Oktober untuk minuman gratis+50%Self Photo Couple dan source lokal `ae33c49bf518e44ebfaec0c3cf72830e9bfa478f` diterima. Product/Dossier/Changelog/Master/Decision/Gaps/Portfolio/root/Sync diperbarui pada main HEAD setelah source provenance bersih. 345/345tes73berkas + focused PASS. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED, hak pending/non-redeemable, source belum push/PR/CI/deploy; production tidak dimutasi. Validity30hari masih proposal/cutoff00WIB asumsi; Wave2–5 OPEN. [Detail](products/saga-platform/DOSSIER.md).
