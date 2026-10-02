@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(sagaops): Member–POS pair production delivery
+
+`CONFIRMED`; Andreas requested completion through deployment. Before local-only coordinator→after exact POSb945ab5 and Member backendd6b3c45 production-activated, frontend81fc239 unchanged. Candidate-bound recovery, public health/monitor and authenticated Owner read PASS; rollback verified. Product/Dossier/Changelog for both products, Portfolio/Master/Gaps/Sync/root updated on main HEAD. No real account erasure or new provider; full admission/custody/journal/history/backup activation remains OPEN. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(sagaops): trusted Member–POS source coordinator
 
 `CONFIRMED`; instruksi Andreas dan source Memberd6b3c45/POSb945ab5 exact native paired PostgreSQL18.6 PASS. Before handwritten callback proof→after reusable stored-case coordinator+readonly POS custody readback, original-time lost-ACK/restart. Product/Dossier/Changelog kedua produk, Portfolio/Master/Gaps/Sync/root diperbarui pada main HEAD. Kedua kandidat NOT_DEPLOYED; POS24c79c3 sehat dan executorOFF. Operational journal/custody/all-scope admission/history/backup residual OPEN. [Detail](products/sagaops/DOSSIER.md).

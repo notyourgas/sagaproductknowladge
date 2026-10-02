@@ -1,5 +1,9 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-02 — Sambungan Member–POS sudah production, closure nyata OFF
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a`, rollback `24c79c3691a47af76d908f46d98452cc79cce6aa`; Member backend `d6b3c45f1bbb5e197692caedee7fc34cbced1125` juga aktif. Recovery kandidat, backup terenkripsi, health publik, monitor dan Owner read smoke PASS. Source connection tersedia di runtime; actual closure tetap OFF sampai admission/custody/jurnal/history/backup lengkap. Tidak ada penghapusan akun atau transaksi uji nyata. Snapshot di bawah adalah histori sebelum rilis. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Sambungan trusted Member–POS tervalidasi lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a` menambah scoped preflight dan readback nonmutating; CustomerPlatform Member `d6b3c45f1bbb5e197692caedee7fc34cbced1125` menurunkan job dari kasus tersimpan sebelum erasure. Native PostgreSQL18.6 pasangan exact PASS untuk lost-ACK/restart/original timestamp dan fakta pembayaran/HPP utuh. Production tetap24c79c3 sehat; executor closure OFF. Ini koneksi source, bukan penghapusan global. Detail dan residual di [Dossier](DOSSIER.md).

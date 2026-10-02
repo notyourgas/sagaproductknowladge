@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-02 — Exact pair released, bukan aktivasi global erasure
+
+`CONFIRMED`: POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a` production-activated; rollback `24c79c3691a47af76d908f46d98452cc79cce6aa`. Artifact `47a37a0da5f727dc8a5357d16d3dd0bb2d9ba45532c2a620967a7342bed97a2d`, 35 migrasi unchanged. Fresh encrypted backup/disposable restore dan candidate→rollback→candidate rehearsal PASS; tiga encrypted off-host copies checksum PASS, fresh off-host restore NOT_RUN. Public health/monitor dan effective Owner cashier/kiosk read smoke PASS, no orders created. Member backend d6b3c45 juga aktif dengan frontend81fc239 unchanged, fresh encrypted recovery, authenticated rollback/reswitch dan public Owner read smoke PASS.
+
+Sambungan preflight/close/readback dan stored-case coordinator sekarang berada pada source runtime kedua produk. Executor/key POS tetap OFF/absent dan guard erasure Member production tetap hard-deny. Native paired lost-ACK/restart acceptance tetap bukti synthetic, bukan penghapusan customer production. Durable all-product admission/fence, independently fresh recovery journal/custody, rotated-code reconciliation, full Book/history/all-copy expiry tetap OPEN. BUSINESS_READY global closure tidak diklaim. Verified unused dependency/browser caches saja dibersihkan: physical gain448450560bytes; source, evidence, data, backups, active/rollback dipertahankan. Historical source-only snapshots berikut tersupersesi untuk delivery, bukan untuk residual.
+
 ## 2026-10-02 — Coordinator penutupan akun Member tersambung ke adapter POS
 
 `CONFIRMED`; instruksi Andreas menyambungkan workflow. Before: freeze/close/receipt dipanggil manual pada harness. After: CustomerPlatform Member `d6b3c45f1bbb5e197692caedee7fc34cbced1125` memakai durable case intent dan adapter POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a` untuk preflight→close→readonly readback. Retry setelah lost ACK dan native SQL restart menggunakan waktu penutupan asli; scope/custody drift ditolak. Pembayaran dan HPP tidak berubah, retensi POS tetap30hari, case tidak maju ke global COMPLETED.

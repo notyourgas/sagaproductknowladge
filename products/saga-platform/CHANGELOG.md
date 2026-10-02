@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Member d6b3c45 backend release, closure activation held
+
+`CONFIRMED`; Andreas requested deployment. Memberd6b3c45/unchangedfrontend81fc239/contracts3279a02 and POSb945ab5 production-activated. Backend71 processes, runner102+12 tests, native artifact15→15 recovery, fresh production recovery/rollback/reswitch and public authenticated Owner read PASS. No real erasure, new provider, worker or separate Platform backend deployment. Residual all-scope custody/journal/history/backup and genuine iPhone UAT stay OPEN. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Member stored-case closure coordinator lokal
 
 `CONFIRMED`; instruksi Andreas dan Memberd6b3c45/POSb945ab5. Manual callback harness diganti reusable coordinator; persisted freeze/intent, exact custody readback dan native lost-ACK/restart PASS. Source Member hanya LOCAL_VALIDATED/NOT_DEPLOYED; production closure OFF, backend Platform terpisah unchanged. Penghapusan semua produk/backup belum lengkap. [Detail](DOSSIER.md).

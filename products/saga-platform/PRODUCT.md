@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — CustomerPlatform Member backend d6b3c45 aktif
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: backend `d6b3c45f1bbb5e197692caedee7fc34cbced1125`, frontend `81fc23904c983c04efe2c40f49f9e723d5a55074` unchanged, contracts3279a02; POSb945ab5 aktif. Stored-case coordinator tersedia pada source runtime, tetapi penghapusan nyata masih OFF. Recovery/rollback/reswitch, monitor dan public Owner login/session/dashboard read PASS. Backend Platform terpisah tidak berubah; BUSINESS_READY global closure tidak diklaim. Histori source-only di bawah mendahului rilis ini. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — CustomerPlatform dalam Member: coordinator closure POS lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source Memberd6b3c45 memiliki reusable coordinator dari stored deletion case, persisted intent/write freeze/original active timestamp, adapter POSb945ab5 preflight/close/readonly readback. Native exact paired PostgreSQL18.6 PASS untuk lost ACK/restart dengan pembayaran/HPP utuh. Akun ditutup oleh Platform Member, bukan POS; receipt association bukan global erasure. Worker production OFF; tidak mengubah source backend Platform terpisah. [Detail](DOSSIER.md).

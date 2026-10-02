@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Member–POS connection deployed; erasure belum aktif
+
+`CONFIRMED`: POSb945ab5/rollback24c79c3 dan Member backendd6b3c45/unchangedfrontend81fc239 aktif di production. Fresh encrypted recovery, rollback/reswitch, health/monitor dan public Owner login/read PASS. Source connection tidak lagi NOT_DEPLOYED; actual closure tetap OFF, bukan global BUSINESS_READY. Account closure dimiliki Platform Member, POS hanya asosiasi tanpa menghapus fakta keuangan. Next: durable all-product admission/fence, independent latest recovery custody/journal, legacy mapping dan full Book/history/all-copy expiry sebelum activation. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — Penutupan akun Member tersambung pada source, belum aktif production
 
 `CONFIRMED`: reusable CustomerPlatform coordinator Memberd6b3c45 memakai adapter POSb945ab5, persisted original intent/time, preflight dan readonly authoritative receipt. Paired native PostgreSQL18.6 lost-ACK/restart PASS tanpa perubahan fakta pembayaran/HPP. Production tetap24c79c3 sehat/closureOFF, kandidat belum deploy. Receipt POS tidak berarti Book/history/seluruh backup terhapus; next durable all-scope admission dan independent fresh recovery custody. [Detail](products/sagaops/DOSSIER.md).

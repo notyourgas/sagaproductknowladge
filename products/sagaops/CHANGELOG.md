@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-02 — Deploy trusted Member–POS connection
+
+`CONFIRMED`; instruksi Andreas lanjut sampai deploy. POSb945ab5 aktif/rollback24c79c3 dan Memberd6b3c45 aktif. Exact artifacts, recovery, monitor, public health dan Owner authenticated read PASS; schema35 unchanged. Off-host encrypted copy3 checksum PASS, fresh off-host restore NOT_RUN. Release source connection selesai, bukan global closure activation: executor/custody/journal/all-scope/history/backup expiry tetap OPEN. Tidak ada real account erasure atau provider activation. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Sambungkan stored-case Member ke preflight/readback POS
 
 `CONFIRMED`; Andreas meminta sambungan. Source POSb945ab5 dan Memberd6b3c45 menutup handwritten harness gap; scoped readonly receipt verification dan original-time retry/restart native PASS. Source/tests/docs berubah tanpa schema/dependency baru. LOCAL_VALIDATED, NOT_DEPLOYED; production24c79c3/closureOFF unchanged. Next: durable all-scope admission dan fresh independent recovery custody, legacy reconciliation, Book/history/backup scope. [Detail](DOSSIER.md).

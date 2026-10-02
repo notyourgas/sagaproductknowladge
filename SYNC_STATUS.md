@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: Member–POS production source connection
+
+`CONFIRMED`: exact POSb945ab5/rollback24c79c3 and Memberd6b3c45/unchangedfrontend81fc239 production-activated. Source/runner pushed; encrypted recovery, actual rollback/reswitch, health/monitor and authenticated Owner read PASS. Eleven impacted public documents synced once on main HEAD separately from app source. No global closure activation or BUSINESS_READY; custody/journal/all-scope/history/backup and iPhone UAT stay OPEN. Previous source-only status is historical. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — accepted: trusted Member–POS source connection
 
 `CONFIRMED`: Memberd6b3c45/POSb945ab5 exact source dan native paired evidence tervalidasi; knowledge dimutakhirkan sekali pada main HEAD terpisah. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED, production24c79c3 sehat/actualclosureOFF, tanpa real erasure/deploy baru. Residual custody/all-scope/history/backup tetap eksplisit. [Detail](products/sagaops/DOSSIER.md).

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — Trusted Member–POS pair deployed
+
+`CONFIRMED`: POSb945ab5/rollback24c79c3 and Member backendd6b3c45/unchangedfrontend81fc239 are production-activated. Candidate-bound encrypted recovery, rollback, public health/monitor and authenticated Owner read PASS. New source connection is deployed, not global erasure: executor OFF, all-product admission/custody/journal/history/backup expiry OPEN. No new provider/payment or customer erasure. [SagaOPS](../products/sagaops/DOSSIER.md), [CustomerPlatform Member](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Trusted Member–POS closure connection, source-only
 
 `CONFIRMED`: Memberd6b3c45/POSb945ab5 menghubungkan stored-case intent→freeze→close→readonly custody receipt. Native PostgreSQL18.6 paired PASS untuk lost ACK/restart/original time dan pembayaran/HPP tetap. Kedua kandidat baru belum deploy; POS24c79c3 sehat, actual closure OFF. Independent recovery/all-scope admission/legacy mapping/Book/history/backup expiry masih OPEN, bukan BUSINESS_READY. [SagaOPS](../products/sagaops/DOSSIER.md), [CustomerPlatform Member](../products/saga-platform/DOSSIER.md).

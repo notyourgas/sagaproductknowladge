@@ -1,5 +1,11 @@
 # Saga Platform Dossier
 
+## 2026-10-02 — Member backend deployed dengan rollback terverifikasi
+
+`CONFIRMED`: release `20261002T043500Z-d6b3c45-r0u`, backend `d6b3c45f1bbb5e197692caedee7fc34cbced1125`, frontend `81fc23904c983c04efe2c40f49f9e723d5a55074` unchanged, contracts `3279a02b6d06d3532190488f6abbcc59c312d120`, artifact `4757bb795c9732391950e14707f8d6edd2f2fd5d89d6bdb7b6989b915c1e3a67`. Source/runner pushed; runner98827e7 exact bounded pins. Before897366e→afterd6b3c45. Backend full71 isolated file processes, static38, runner102 adversarial plus12 migration/profile tests and exact-artifact native PostgreSQL18.6 15→15 recovery PASS. Fresh production encrypted backup/disposable restore and active backup PASS; no migration additions. Actual switch4.08s→rollback exact897366e/unchangedfrontend with fresh Owner proof→finalswitch3.133s PASS. Monitor/public health/services/timers PASS; public authenticated Owner login, secure cookie, session, four read surfaces and logout PASS, no business writes. Genuine iPhone UAT NOT_RUN.
+
+Previously authorized onboarding/profile, reward fulfilment, Book mappings and private export backend changes are included; unchanged UI/provider configuration is preserved. Production registration remains permanent; no expiry/key/worker/provider activation. POSb945ab5 scoped connection is deployed, but Member production erasure guard remains hard-deny. Full all-product admission/fence, independent fresh recovery journal/custody, rotated-code reconciliation, Book/history/backup expiry are not complete; no global COMPLETED or BUSINESS_READY claim. This does not change separate Platform backend authority. Earlier NOT_DEPLOYED entries are historical snapshots.
+
 ## 2026-10-02 — Stored-case coordinator Member ke POS, source-only
 
 `CONFIRMED`; Member `d6b3c45f1bbb5e197692caedee7fc34cbced1125` dan POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a`. Job berasal dari kasus/identity tersimpan; intent kode disimpan sebelum erasure. Admission semua produk stricttrue dan persisted freeze wajib, custody scope terikat; active checkpoint menetapkan waktu asli, receipt diperiksa lewat readback readonly. Lost POS ACK diikuti native SQL restart+retry PASS; globalDeletionComplete=false. Focused Member13PASS/persistence3PASS, POS8PASS/2SKIP, paired native PostgreSQL18.6 PASS; bukan full-suite atau production UAT.
