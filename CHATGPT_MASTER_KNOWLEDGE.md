@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-03 — Wave 4 birthday menu, terintegrasi lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Wave 4 menyediakan kandidat hadiah ulang tahun satu menu makanan/minuman gratis, independen dari cohort100. Platform menerbitkan dan menghitung benefit; Member menampilkan hadiah/status/expiry; POS menukar satu base unit eligible, add-on/unit lain tetap dibayar, tanpa stacking. Lifecycle existing menangani cart binding, retry/restart, cancel dan paid commit.
+
+Backend `7edd0a1f1552d0c59d88ac00a8aee8592e0281a3` (`codex/member-birthday-wave4-20261003`), Member `3f55bb9672930696a89104d5ad2a08e25e84f452` (`codex/member-birthday-wave4-ui-20261003`), POS `154b29d0e7aa4db6125df0b1ac2572d5b083c104` (`codex/birthday-wave4-pos-20261003`). Source commit lokal bersih, belum push/PR; CI_NOT_RUN. BELUM DEPLOY; production tidak dimutasi.
+
+`NEEDS CONFIRMATION`: masa pakai birthday dan aturan29Februari; fixture168jam/7hari+FEB28 hanya test, rekomendasi7hari belum keputusan Andreas. Validity foto Wave3 juga tetap OPEN. Issuance trusted defaultOFF, actual all-food/drink catalog/outlet completeness wajib. Kandidat menerbitkan sekali per member/tahun, window mulai00WIB ulang tahun, expiry tetap dari birthday; lazy reconcile pada startup/registration/readMember/scopedPOS, bukan scheduler/notification baru dan tidak backfill setelah expired. Profil lama tanpa DOB tidak menerima hadiah; tidak ada forced onboarding/DOB-editor baru. Wave4 implementasi lokal CLOSED; Owner campaign controls, konfirmasi policy, exact compatible reader/writer, candidate-bound recovery/UAT/deploy Wave5 OPEN. Book unchanged. Riwayat source-only Wave1–3 di bawah tidak berarti telah deploy. Local/native tests PASS, bukan promo production aktif atau BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — Wave 3 Self Photo Couple, penukaran kasir lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: cohort100 yang sama kini mempunyai jalur penerbitan dan penukaran voucher50% satu harga dasar Self Photo Couple; unit tambahan, Group dan add-on tetap dibayar, tidak stacking. Member menampilkan hak/status/validity dari Platform. Kasir/kiosk memakai binding cart authoritative dan lifecycle durable existing; retry respons hilang/restart tidak menggandakan redemption.
