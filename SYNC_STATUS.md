@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — Koreksi desain login dan profil Member V1, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Member `6f07e1ec6a92f319792ce9fa4de8450a5232f746` memulihkan desain login/onboarding lama dan telepon/WhatsApp serta tanggal lahir opsional yang tersimpan di Platform. Google utama/OTP fallback dan onboarding satu langkah dipertahankan. 610 unit/static dan browser320–430/200%/Axe/invalid-input/restart PASS. Source belum push/PR/CI; backend/database/provider/production tidak berubah. Bukan Google nyata/iPhone UAT atau BUSINESS_READY. Status sync accepted; tujuh dokumen disinkronkan dari commit lokal bersih. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — accepted: Member V1 production release
 
 `CONFIRMED`: delapan dokumen Product/Dossier/Changelog/Master/Gaps/Portfolio/root/sync diperbarui sekali untuk Member140e7b1/artifacte53067a/release20261002T125500Z-d8c060d-r0u yang telah PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED. Source app/runner commit lokal, CI_NOT_RUN; public runtime/recovery/rollback/Owner browser terverifikasi. Backend/contracts/POS/provider tidak dimutasi. DEC-225 unchanged. iPhone/representative Member/POS UAT OPEN, bukan BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).

@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — Koreksi desain login dan profil Member V1, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Member `6f07e1ec6a92f319792ce9fa4de8450a5232f746` memulihkan desain login/onboarding lama dan telepon/WhatsApp serta tanggal lahir opsional yang tersimpan di Platform. Google utama/OTP fallback dan onboarding satu langkah dipertahankan. 610 unit/static dan browser320–430/200%/Axe/invalid-input/restart PASS. Source belum push/PR/CI; backend/database/provider/production tidak berubah. Bukan Google nyata/iPhone UAT atau BUSINESS_READY. Tujuh dokumen Product/Dossier/Changelog/Master/Portfolio/root/sync diperbarui pada main HEAD setelah source provenance jelas; knowledge push terpisah. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(saga-platform): activate Member V1
 
 `CONFIRMED`; sumber otorisasi Andreas, Member140e7b1/artifacte53067a/runner02fa4a1 dan exact runtime release20261002T125500Z-d8c060d-r0u. Before kandidat lokal → after PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED dengan tiga tab dan empat area Owner. Delapan Product/Dossier/Changelog/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD setelah provenance jelas. Recovery/rollback/reswitch/monitor/public health/authenticated Owner browser PASS. Source app/runner belum push/PR/CI; knowledge push terpisah. Backend/schema/POS/provider unchanged; iPhone/representative Member/POS UAT serta backlog privasi/recovery tetap OPEN, bukan BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).

@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Koreksi desain login dan profil Member V1, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Member `6f07e1ec6a92f319792ce9fa4de8450a5232f746` memulihkan desain login/onboarding lama dan telepon/WhatsApp serta tanggal lahir opsional yang tersimpan di Platform. Google utama/OTP fallback dan onboarding satu langkah dipertahankan. 610 unit/static dan browser320–430/200%/Axe/invalid-input/restart PASS. Source belum push/PR/CI; backend/database/provider/production tidak berubah. Bukan Google nyata/iPhone UAT atau BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Saga Member V1 telah tayang
 
 `CONFIRMED`: Member140e7b1/artifacte53067a/release20261002T125500Z-d8c060d-r0u PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED. Member tiga tab Beranda/Promo/Akun, kartu/personalisasi browser-local dan XP/perjalanan; Owner empat area. Backendd8/contracts3279 dan scope provider unchanged; POS5bbb dipertahankan, tidak dirilis ulang. Backup encrypted/disposable restore, rollback/reswitch, monitor/exact public runtime, authenticated Owner browser/read/logout PASS. iPhone fisik dan representative Member/POS redemption UAT OPEN; bukan BUSINESS_READY. Snapshot lokal di bawah mendahului deploy ini. [Detail](products/saga-platform/DOSSIER.md).

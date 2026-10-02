@@ -1,5 +1,9 @@
 # Saga Platform Dossier
 
+## 2026-10-02 — Koreksi desain login dan profil Member V1, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; sumber koreksi Andreas. Member `6f07e1ec6a92f319792ce9fa4de8450a5232f746` (`codex/member-login-onboarding-restore-20261002`, commit lokal belum push/PR/CI) memperbaiki V1 yang memaksa renderer existing-only: desain login/onboarding berilustrasi lama dipulihkan untuk registrasi publik, Google tetap utama/email OTP fallback. Profil MEMBER_CORE satu langkah mengirim nama, telepon/WhatsApp opsional, tanggal lahir opsional dan consent lewat complete-profile existing. Data divalidasi/disimpan Platform; tidak mengklaim nomor terverifikasi. Akun selesai tidak dipaksa onboarding ulang; registrasi tertutup dan backend FULL tetap kompatibel. 610 unit/static/check/diff dan dua browser harness lima lebar320–430/200% text/Axe/keyboard/validasi/restart/CSRF/logout/expiry/offline/reset PASS_LOCAL_SYNTHETIC. Google callback/session hanya simulasi; bukan Google nyata/iPhone fisik UAT. Backend/schema/dependency/provider unchanged; production tidak dimutasi. Guarded deploy dan physical iPhone UAT masih berikutnya, bukan BUSINESS_READY.
+
 ## 2026-10-02 — Penutupan deploy Member V1
 
 `CONFIRMED`; sumber otorisasi deploy Andreas dan verifikasi runtime exact. Before UI production81fc239 → after Member `140e7b1dbfd4ca5f0e909862779b7a58105e06cc`: tiga tab Beranda/Promo/Akun, kartu/personalisasi per akun di browser, Points/expiry/riwayat serta XP/perjalanan dari Platform, Promo Penawaran/Milik saya dengan review/status/retry. Owner empat area Ringkasan/Member/Promo/Pengaturan, laporan/audit sekunder dan formulir progressive. Quest discovery/creation V1 disembunyikan; hak lama tetap reachable. Summary/session race dan identitas Reward hilang diperbaiki. Personalisasi belum cross-device.

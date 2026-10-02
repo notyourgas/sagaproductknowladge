@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Koreksi desain login dan profil Member V1, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Member `6f07e1ec6a92f319792ce9fa4de8450a5232f746` memulihkan desain login/onboarding lama dan telepon/WhatsApp serta tanggal lahir opsional yang tersimpan di Platform. Google utama/OTP fallback dan onboarding satu langkah dipertahankan. 610 unit/static dan browser320–430/200%/Axe/invalid-input/restart PASS. Source belum push/PR/CI; backend/database/provider/production tidak berubah. Bukan Google nyata/iPhone UAT atau BUSINESS_READY. [Dossier](DOSSIER.md).
+
 ## 2026-10-02 — Member V1 production activation
 
 `CONFIRMED`; Andreas mengotorisasi deploy. Member140e7b1/artifacte53067a/release20261002T125500Z-d8c060d-r0u PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED; tiga tab, kartu/personalisasi/XP/perjalanan/Promo dan empat area Owner kini tayang. Backendd8/contracts3279/POS5bbb/provider tidak dimutasi. Exact runner02fa4a1, encrypted restore/rollback/reswitch/monitor/public health dan authenticated Owner browser PASS. iPhone fisik/representative Member/POS-redemption UAT OPEN, bukan BUSINESS_READY. [Detail](DOSSIER.md).
