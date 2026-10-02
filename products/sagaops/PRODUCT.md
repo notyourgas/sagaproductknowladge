@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-02 — Fondasi closure POS dirilis, executor tetap OFF
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: source
+`24c79c3691a47af76d908f46d98452cc79cce6aa` aktif; rollback `6dfa182ab712b94fa09f3d066b9519dccc2e6535`.
+Health publik, monitor35migrasi, Owner/kasir smoke dan recovery kandidat lulus.
+Tiga backup terenkripsi disalin off-host dengan checksum; restore kandidat dilakukan
+di VPS terisolasi, bukan fresh off-host restore. Native paired Member–POS lulus
+terhadap Member lokal `aa48447efce5df502a1ee30a8aa72880dc4c00a4`; Member belum dirilis.
+Penutupan/purge akun production tetap OFF: trusted executor, custody/jurnal wajib
+di recovery/rollback, seluruh data Book/history dan expiry semua backup belum selesai.
+Tidak ada akun/customer/backup nyata dihapus. Ini rilis fondasi, bukan fitur closure
+aktif atau BUSINESS_READY. Status historis source lokal di bawah telah superseded.
+
 ## 2026-10-02 — Penutupan asosiasi Member, source lokal
 
 `CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED`: source lokal

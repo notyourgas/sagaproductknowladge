@@ -1,5 +1,20 @@
 # SagaOPS Dossier
 
+## 2026-10-02 — Delivery fondasi POS, bukan aktivasi penghapusan
+
+`CONFIRMED`: POS `24c79c3691a47af76d908f46d98452cc79cce6aa` dipush dan aktif,
+rollback6dfa182, PERMANENT dan payment/provider boundary tidak diubah. Artifact
+`1ff46dbfac44595974a633ab00b7c614e659c890adec2b862f2904f62a6e040e` terikat exact Git.
+Backup terenkripsi/disposable restore, candidate→rollback→candidate boot, health
+publik/monitor dan effective Owner smoke PASS. Off-host3arsip checksum PASS; fresh
+off-host restore untuk snapshot ini NOT_RUN. Native paired Member–POS PASS dengan
+Member source lokal aa48447e; akun freeze/receipt/retry/30hari dan fakta keuangan
+terverifikasi memakai fixture. Executor production OFF, tidak ada penutupan nyata.
+Trusted operational adapter, dedicated custody/fresh journal, full Book/history
+scope dan backup/WAL/offsite expiry tetap OPEN. Registered-copy helper bukan
+global erasure proof. Generated local test screenshots dipertahankan; artifact
+dibangun dari clean Linux checkout exact source, bukan worktree berartefak tes.
+
 ## 2026-10-02 — Pemutusan tautan Member tervalidasi lokal
 
 `CONFIRMED`: commit lokal `24c79c3691a47af76d908f46d98452cc79cce6aa`, belum

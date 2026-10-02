@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Delivery POS ditutup, activation closure masih terpisah
+
+`CONFIRMED`: fondasi POS24c79c3 aktif, Owner/health/recovery PASS; tidak lagi
+NOT_DEPLOYED untuk source POS. Native paired freeze/receipt Member aa48447e–POS
+lulus lokal, tetapi trusted production executor/custody belum tersedia. Full
+Book/history30hari, mandatory independently fresh startup/restore/rollback journal
+dan expiry seluruh backup/WAL/offsite tetap OPEN. Production closure OFF; bukan
+global erasure atau BUSINESS_READY. Source Member belum deploy. Off-host copy3arsip
+checksum PASS, fresh off-host restore belum dilakukan untuk snapshot release ini.
+Cache build terverifikasi saja dibersihkan; tidak ada backup/data bisnis dihapus.
+
 ## 2026-10-02 — Closure Member: POS lokal bukan penghapusan lintas produk selesai
 
 `CONFIRMED`: POS source `24c79c3691a47af76d908f46d98452cc79cce6aa` lokal tervalidasi,
