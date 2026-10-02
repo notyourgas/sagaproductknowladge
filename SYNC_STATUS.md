@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: legacy retention local milestone
+
+`CONFIRMED`: sourcefa5df6c exact local clean commit, focused4/4 and static PASS, no runtime change. Eight impacted documents synchronized once on main HEAD; source not pushed/deployed, productionPOSb945ab5/Memberd6b3c45 unchanged. Global closure remains OFF pending downstream/recovery/expiry; online custody not activated. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — accepted: Member–POS production source connection
 
 `CONFIRMED`: exact POSb945ab5/rollback24c79c3 and Memberd6b3c45/unchangedfrontend81fc239 production-activated. Source/runner pushed; encrypted recovery, actual rollback/reswitch, health/monitor and authenticated Owner read PASS. Eleven impacted public documents synced once on main HEAD separately from app source. No global closure activation or BUSINESS_READY; custody/journal/all-scope/history/backup and iPhone UAT stay OPEN. Previous source-only status is historical. [Detail](products/sagaops/DOSSIER.md).

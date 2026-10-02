@@ -1,5 +1,9 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-02 — Retensi riwayat legacy diperbaiki pada source
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `fa5df6cf7f1c19f79e5d1eb4a4c21b44e6787491` memperluas cakupan retensi legacy Member pada batas 30 hari dan recovery jurnal. Empat tes focused serta static/OpenAPI/TypeScript PASS; tidak ada schema/dependency baru. Production masih b945ab5, executor OFF; storage online dan aktivasi global belum selesai. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Sambungan Member–POS sudah production, closure nyata OFF
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a`, rollback `24c79c3691a47af76d908f46d98452cc79cce6aa`; Member backend `d6b3c45f1bbb5e197692caedee7fc34cbced1125` juga aktif. Recovery kandidat, backup terenkripsi, health publik, monitor dan Owner read smoke PASS. Source connection tersedia di runtime; actual closure tetap OFF sampai admission/custody/jurnal/history/backup lengkap. Tidak ada penghapusan akun atau transaksi uji nyata. Snapshot di bawah adalah histori sebelum rilis. [Detail](DOSSIER.md).

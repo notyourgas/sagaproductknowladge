@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Retention coverage corrected locally, activation unchanged
+
+`CONFIRMED`: POSfa5df6c closes one local legacy-retention coverage gap, focused4/4/static PASS. It does not close complete rotated-identity mapping, all-product admission, full Book/history, independent latest journal/compatible rollback or all-copy expiry. Source not pushed/deployed, actualerasureOFF; native release and device/operator acceptance OPEN. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — Pair delivery ditutup, global closure activation masih OPEN
 
 `CONFIRMED`: POSb945ab5 dan Member backendd6b3c45 production-activated, recovery/Owner read/health PASS; source delivery blocker CLOSED. Executor tetap OFF dan Member erasure guard hard-deny. OPEN: durable all-product admission/fence; independently latest journal/key custody enforced on startup/restore/rollback; rotated-code reconciliation; full Book/history/all-copy backup expiry; genuine iPhone UAT. Fresh POS off-host copy checksum PASS, fresh off-host restore NOT_RUN. Native synthetic closure acceptance bukan real production erasure/BUSINESS_READY. [Detail](products/sagaops/DOSSIER.md).

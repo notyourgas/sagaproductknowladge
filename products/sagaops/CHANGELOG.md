@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-02 — Koreksi cakupan retensi legacy Member, source-only
+
+`CONFIRMED`; Andreas meminta melanjutkan bagian independen setelah storage ditunda. Before: cakupan retensi legacy belum lengkap; after: shared scrub/recovery mengikuti deadline asli untuk riwayat legacy, tanpa mengubah fakta keuangan atau outlet/member lain. Source `fa5df6cf7f1c19f79e5d1eb4a4c21b44e6787491`, focused4/4 dan static/OpenAPI/TypeScript PASS; native final NOT_RUN. LOCAL_VALIDATED, belum deploy/push; production b945ab5 tetap. Next: mapping lengkap, admission, full downstream/history dan independent recovery sebelum aktivasi. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Deploy trusted Member–POS connection
 
 `CONFIRMED`; instruksi Andreas lanjut sampai deploy. POSb945ab5 aktif/rollback24c79c3 dan Memberd6b3c45 aktif. Exact artifacts, recovery, monitor, public health dan Owner authenticated read PASS; schema35 unchanged. Off-host encrypted copy3 checksum PASS, fresh off-host restore NOT_RUN. Release source connection selesai, bukan global closure activation: executor/custody/journal/all-scope/history/backup expiry tetap OPEN. Tidak ada real account erasure atau provider activation. [Detail](DOSSIER.md).

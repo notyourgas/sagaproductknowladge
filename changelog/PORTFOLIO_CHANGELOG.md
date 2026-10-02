@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — SagaPOS legacy Member retention, source-only
+
+`CONFIRMED`: POSfa5df6c menutup satu gap cakupan retensi; focused4/4 dan static PASS, productionb945ab5 unchanged. Actual cross-product erasure OFF; independent storage deferred, downstream/recovery/expiry masih OPEN. [SagaOPS](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — Trusted Member–POS pair deployed
 
 `CONFIRMED`: POSb945ab5/rollback24c79c3 and Member backendd6b3c45/unchangedfrontend81fc239 are production-activated. Candidate-bound encrypted recovery, rollback, public health/monitor and authenticated Owner read PASS. New source connection is deployed, not global erasure: executor OFF, all-product admission/custody/journal/history/backup expiry OPEN. No new provider/payment or customer erasure. [SagaOPS](../products/sagaops/DOSSIER.md), [CustomerPlatform Member](../products/saga-platform/DOSSIER.md).

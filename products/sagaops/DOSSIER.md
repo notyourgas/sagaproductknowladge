@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-10-02 — Koreksi retensi legacy pada source, bukan aktivasi erasure
+
+`CONFIRMED`: local commit `fa5df6cf7f1c19f79e5d1eb4a4c21b44e6787491`, base activated b945ab5, memperbaiki cakupan riwayat legacy Member pada shared scrub dan journal replay. Focused4/4 PASS mencakup deadline minus1ms/exact30hari, retry, instance restart, replay dan isolasi member/outlet. Static733modules/OpenAPI/TypeScript PASS; schema35 dan dependencies unchanged. Native target/release/production erasure NOT_RUN; commit belum dipush/deploy. Independent fresh custody, complete identity mapping, all-product admission, full downstream/history/all-copy expiry tetap OPEN. Tidak ada data/backup nyata dihapus atau provider/storage baru diaktifkan.
+
 ## 2026-10-02 — Exact pair released, bukan aktivasi global erasure
 
 `CONFIRMED`: POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a` production-activated; rollback `24c79c3691a47af76d908f46d98452cc79cce6aa`. Artifact `47a37a0da5f727dc8a5357d16d3dd0bb2d9ba45532c2a620967a7342bed97a2d`, 35 migrasi unchanged. Fresh encrypted backup/disposable restore dan candidate→rollback→candidate rehearsal PASS; tiga encrypted off-host copies checksum PASS, fresh off-host restore NOT_RUN. Public health/monitor dan effective Owner cashier/kiosk read smoke PASS, no orders created. Member backend d6b3c45 juga aktif dengan frontend81fc239 unchanged, fresh encrypted recovery, authenticated rollback/reswitch dan public Owner read smoke PASS.

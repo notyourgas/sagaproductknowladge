@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — SagaPOS legacy retention source correction
+
+`CONFIRMED`: POSfa5df6c LOCAL_VALIDATED/NOT_DEPLOYED; focused4/4 and static/OpenAPI/TypeScript PASS for retention/recovery coverage with other members/outlets and financial facts preserved. ProductionPOSb945ab5/Memberd6b3c45 unchanged, erasureOFF; no new storage/provider, full downstream/recovery/expiry OPEN. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — Member–POS connection deployed; erasure belum aktif
 
 `CONFIRMED`: POSb945ab5/rollback24c79c3 dan Member backendd6b3c45/unchangedfrontend81fc239 aktif di production. Fresh encrypted recovery, rollback/reswitch, health/monitor dan public Owner login/read PASS. Source connection tidak lagi NOT_DEPLOYED; actual closure tetap OFF, bukan global BUSINESS_READY. Account closure dimiliki Platform Member, POS hanya asosiasi tanpa menghapus fakta keuangan. Next: durable all-product admission/fence, independent latest recovery custody/journal, legacy mapping dan full Book/history/all-copy expiry sebelum activation. [Detail](products/sagaops/DOSSIER.md).
