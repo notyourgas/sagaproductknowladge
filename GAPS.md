@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+
+## 2026-10-03 — Wave 5 kontrol hadiah Owner dan penutupan celah lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: sebelum Owner belum mempunyai kontrol campaign hadiah otomatis; sekarang tersedia konfigurasi dengan password, kuota/status agregat, jeda, lanjut dan akhiri penerbitan. Platform tetap authority; Member hanya projection. Pengaturan awal PAUSED, katalog/outlet wajib diizinkan, expiry hak lama tidak diubah. Cohort100 tetap untuk minuman + Couple50%; birthday independen dari cohort.
+
+Backend `cc2d3cf4b8458b9fef93a75a400801821379918e` (`codex/member-gift-campaigns-wave5-20261003`), Member `7babb1937cd1881abaa62b88f04d7124e8609839` (`codex/member-gift-campaigns-wave5-ui-20261003`), POS unchanged `154b29d0e7aa4db6125df0b1ac2572d5b083c104`. Commit source lokal bersih, belum push/PR; CI_NOT_RUN. BELUM DEPLOY; tidak ada mutasi production, provider/hardware/Book/schema/dependency.
+
+Backend77berkas isolated tanpa skip, Member614unit/static, Owner browser320/360/375/390/430/1440+Axe/keyboard/200%text/reducedmotion dan3nativePOSgift PASS. Perbaikan: endpoint guard client tepat, konfigurasi katalog immutable dan scope drift ditolak, restore legacy tidak meninggalkan campaign aktif, snapshot campaign v2 menolak old v1-only writer. Gagal tulis PostgreSQL nyata memberi503 dan hold; restart memulihkan state committed. Snapshot synthetic terenkripsi berhasil dipersist/restore/restart pada PostgreSQL baru. Bukan production database backup restore, actual rollback, authenticated production/iPhone UAT atau BUSINESS_READY.
+
+`NEEDS CONFIRMATION`: masa pakai Couple/birthday serta aturan29Februari; fixture30hari/7hari/FEB28 bukan keputusan baru. Owner sekarang dapat mengisi pilihan eksplisit, tanpa default aktivasi. OPEN: actual katalog lengkap dan outlet, rollback binary kompatibel v2 serta candidate-bound production recovery/artifact/Owner/runtime/lock/UAT/deploy. Old writer ditolak untuk mencegah kehilangan data, bukan dijadikan rollback yang aman. Adopsi campaign legacy dan pengumpulan DOB untuk profil lama belum ditambahkan; Member tanpa DOB belum eligible birthday. Source/minimum controls lokal CLOSED; rilis Wave5 tetap IN_PROGRESS. Sumber: Andreas meminta lanjutWave5 lalu cari kekurangan dan kerjakan; tidak ada konfirmasi policy baru. Knowledge delapan dokumen diperbarui terpisah pada main HEAD setelah provenance source.
+
 ## 2026-10-03 — Wave 4 birthday menu, terintegrasi lokal
 
 Wave4 birthday Member–Platform–POS CLOSED lokal: issuance/own projection/single base unit/add-on paid/retry/restart/nativeCAS/expiry/purge. Backend `7edd0a1f1552d0c59d88ac00a8aee8592e0281a3` (`codex/member-birthday-wave4-20261003`), Member `3f55bb9672930696a89104d5ad2a08e25e84f452` (`codex/member-birthday-wave4-ui-20261003`), POS `154b29d0e7aa4db6125df0b1ac2572d5b083c104` (`codex/birthday-wave4-pos-20261003`). Source commit lokal bersih, belum push/PR; CI_NOT_RUN. BELUM DEPLOY; production tidak dimutasi.

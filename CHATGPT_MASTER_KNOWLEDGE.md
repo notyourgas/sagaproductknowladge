@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+
+## 2026-10-03 — Wave 5 kontrol hadiah Owner dan penutupan celah lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: sebelum Owner belum mempunyai kontrol campaign hadiah otomatis; sekarang tersedia konfigurasi dengan password, kuota/status agregat, jeda, lanjut dan akhiri penerbitan. Platform tetap authority; Member hanya projection. Pengaturan awal PAUSED, katalog/outlet wajib diizinkan, expiry hak lama tidak diubah. Cohort100 tetap untuk minuman + Couple50%; birthday independen dari cohort.
+
+Backend `cc2d3cf4b8458b9fef93a75a400801821379918e` (`codex/member-gift-campaigns-wave5-20261003`), Member `7babb1937cd1881abaa62b88f04d7124e8609839` (`codex/member-gift-campaigns-wave5-ui-20261003`), POS unchanged `154b29d0e7aa4db6125df0b1ac2572d5b083c104`. Commit source lokal bersih, belum push/PR; CI_NOT_RUN. BELUM DEPLOY; tidak ada mutasi production, provider/hardware/Book/schema/dependency.
+
+Backend77berkas isolated tanpa skip, Member614unit/static, Owner browser320/360/375/390/430/1440+Axe/keyboard/200%text/reducedmotion dan3nativePOSgift PASS. Perbaikan: endpoint guard client tepat, konfigurasi katalog immutable dan scope drift ditolak, restore legacy tidak meninggalkan campaign aktif, snapshot campaign v2 menolak old v1-only writer. Gagal tulis PostgreSQL nyata memberi503 dan hold; restart memulihkan state committed. Snapshot synthetic terenkripsi berhasil dipersist/restore/restart pada PostgreSQL baru. Bukan production database backup restore, actual rollback, authenticated production/iPhone UAT atau BUSINESS_READY.
+
+`NEEDS CONFIRMATION`: masa pakai Couple/birthday serta aturan29Februari; fixture30hari/7hari/FEB28 bukan keputusan baru. Owner sekarang dapat mengisi pilihan eksplisit, tanpa default aktivasi. OPEN: actual katalog lengkap dan outlet, rollback binary kompatibel v2 serta candidate-bound production recovery/artifact/Owner/runtime/lock/UAT/deploy. Old writer ditolak untuk mencegah kehilangan data, bukan dijadikan rollback yang aman. Adopsi campaign legacy dan pengumpulan DOB untuk profil lama belum ditambahkan; Member tanpa DOB belum eligible birthday. Source/minimum controls lokal CLOSED; rilis Wave5 tetap IN_PROGRESS. Sumber: Andreas meminta lanjutWave5 lalu cari kekurangan dan kerjakan; tidak ada konfirmasi policy baru. Knowledge delapan dokumen diperbarui terpisah pada main HEAD setelah provenance source.
+
 ## 2026-10-03 — Wave 4 birthday menu, terintegrasi lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Wave 4 menyediakan kandidat hadiah ulang tahun satu menu makanan/minuman gratis, independen dari cohort100. Platform menerbitkan dan menghitung benefit; Member menampilkan hadiah/status/expiry; POS menukar satu base unit eligible, add-on/unit lain tetap dibayar, tanpa stacking. Lifecycle existing menangani cart binding, retry/restart, cancel dan paid commit.
