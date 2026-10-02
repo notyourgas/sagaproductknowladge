@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — Saga Member V1 aktif production
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Member `140e7b1dbfd4ca5f0e909862779b7a58105e06cc` kini aktif: Beranda/Promo/Akun, kartu dan personalisasi browser-local, XP/perjalanan, voucher/Reward; Owner Ringkasan/Member/Promo/Pengaturan. Release `20261002T125500Z-d8c060d-r0u`, artifacte53067a, backendd8/contracts3279 unchanged. Recovery terenkripsi/disposable restore, actual rollback/reswitch, monitor, exact public health dan authenticated Owner browser/read/logout PASS. POS5bbb kompatibel dan dipertahankan, bukan deploy POS baru oleh run ini. iPhone fisik serta representative Member/POS-redemption UAT OPEN; bukan BUSINESS_READY. Catatan lokal di bawah adalah histori sebelum rilis. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Pemeriksaan ulang Wave 5: kandidat perbaikan V1
 
 `CONFIRMED / LOCAL_VALIDATED / IN_PROGRESS / BELUM DEPLOY`. Kandidat Member `140e7b1dbfd4ca5f0e909862779b7a58105e06cc` menggantikan kandidat lokal 86b9c7c: konsistensi pergantian akun, identitas Reward yang hilang, dan saldo tersedia dari Platform diperbaiki.609 Member, dua journey API/mobile, Owner sintetis enam viewport serta worker upgrade/rollback PASS. Artifact `e53067a85121a8b4e4920681a9eba98ad39e0ab7318d22d8b3527cef78df8d96`, runner lokal5e668cd/140+14tests dan PostgreSQL18.6 disposable restore/restart15→15 PASS. Backend/contracts/POS/provider unchanged; production Member81fc239 tetap. Authenticated production recovery/Owner/current/lock dan iPhone fisik masih OPEN, bukan BUSINESS_READY. [Detail](DOSSIER.md).

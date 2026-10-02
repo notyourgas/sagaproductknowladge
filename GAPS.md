@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Member V1 release CLOSED; device/business UAT OPEN
+
+`CONFIRMED`: frontend140e7b1/artifacte53067a aktif release20261002T125500Z-d8c060d-r0u. Installed exact runner/current/sole lock/effective Owner, candidate/active encrypted disposable restore, actual rollback/reswitch, monitor/public exact health dan authenticated Owner browser CLOSED. POS drift terselesaikan dengan exact compatible5bbb pin tanpa mutasi POS. OPEN: iPhone fisik, representative Member/Google/POS redemption UAT, cross-device card sync serta residual erasure/Book/history/recovery custody. Bukan BUSINESS_READY; catatan sebelum deploy di bawah historis. [Dossier](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Wave 5 consistency review CLOSED lokal; production gate OPEN
 
 `CONFIRMED`: Member140e7b1/artifacte53067a/runner5e668cd menutup konsistensi pergantian sesi, pilihan Reward unavailable dan provenance migration frontend;609+140+14tests/mobile/Owner/worker/native15→15restore-restart PASS_LOCAL. Kandidat86b9c7c historis, jangan reuse artifact/bukti itu untuk perbaikan baru. OPEN: installed runner, fresh current/sole lock/effective Owner, candidate-bound encrypted production recovery/rollback/monitor, authenticated kandidat final dan genuine iPhone Safari/PWA. Checklist source Wave5 tetap berlaku; erasure/Book/POS/history/backup residual serta cross-device card sync tidak ditutup. Production81fc239 unchanged/BELUM DEPLOY. [Dossier](products/saga-platform/DOSSIER.md).

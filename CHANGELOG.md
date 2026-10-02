@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(saga-platform): activate Member V1
+
+`CONFIRMED`; sumber otorisasi Andreas, Member140e7b1/artifacte53067a/runner02fa4a1 dan exact runtime release20261002T125500Z-d8c060d-r0u. Before kandidat lokal → after PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED dengan tiga tab dan empat area Owner. Delapan Product/Dossier/Changelog/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD setelah provenance jelas. Recovery/rollback/reswitch/monitor/public health/authenticated Owner browser PASS. Source app/runner belum push/PR/CI; knowledge push terpisah. Backend/schema/POS/provider unchanged; iPhone/representative Member/POS UAT serta backlog privasi/recovery tetap OPEN, bukan BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(saga-platform): Wave 5 review fixes
 
 `CONFIRMED`; sumber Andreas dan Member140e7b1/runner5e668cd/artifacte53067a. Before konsistensi akun/Reward dan provenance belum tertutup → after perbaikan root cause, immutable artifact baru,609Member/Owner6viewport/mobile-worker/140+14runner/native15→15restore-restart PASS_LOCAL. Delapan Product/Dossier/Changelog/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD. Source belum push/PR/CI/deploy; production81fc239/backendd8/contracts3279/POS/provider unchanged. Fresh production recovery/Owner/current/lock serta authenticated final/iPhone UAT OPEN; IN_PROGRESS/BELUM DEPLOY, bukan BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).

@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Saga Member V1 telah tayang
+
+`CONFIRMED`: Member140e7b1/artifacte53067a/release20261002T125500Z-d8c060d-r0u PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED. Member tiga tab Beranda/Promo/Akun, kartu/personalisasi browser-local dan XP/perjalanan; Owner empat area. Backendd8/contracts3279 dan scope provider unchanged; POS5bbb dipertahankan, tidak dirilis ulang. Backup encrypted/disposable restore, rollback/reswitch, monitor/exact public runtime, authenticated Owner browser/read/logout PASS. iPhone fisik dan representative Member/POS redemption UAT OPEN; bukan BUSINESS_READY. Snapshot lokal di bawah mendahului deploy ini. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Member V1 Wave 5 diperiksa dan diperbaiki, belum production
 
 `CONFIRMED`: kandidat Member140e7b1/artifacte53067a/runner5e668cd menggantikan kandidat lokal86b9c7c. Konsistensi akun, identitas Reward hilang dan saldo authoritative Platform diperbaiki;609Member, Owner6viewports, mobile/API/worker rollback,140+14runner dan PostgreSQL15→15restore-restart PASS_LOCAL. Source belum push/PR/CI; runner belum installed; production81fc239/backendd8/contracts3279/POS/provider unchanged. Fresh production recovery/Owner/current/lock dan authenticated final/iPhone fisik OPEN; IN_PROGRESS/BELUM DEPLOY, bukan BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).

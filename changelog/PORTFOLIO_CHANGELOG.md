@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — Saga Member V1 production
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member140e7b1/release20261002T125500Z-d8c060d-r0u kini tiga tab, kartu/personalisasi/XP/perjalanan/Promo dan empat area Owner. Exact artifacte53067a/backendd8/contracts3279, POS5bbb dipertahankan. Recovery/rollback/reswitch/monitor/public health/authenticated Owner browser PASS; iPhone/representative Member/POS UAT OPEN, bukan BUSINESS_READY. [Dossier](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Saga Member Wave 5 review diperbaiki lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IN_PROGRESS`. Member140e7b1/artifacte53067a/runner5e668cd memperbaiki konsistensi sesi, identitas Reward dan saldo Platform.609Member/Owner6viewport/mobile-worker/140+14runner/native15→15restore-restart PASS; backendd8/contracts3279/POS/provider unchanged. Source belum push/PR/CI/deploy; production81fc239 tetap. Fresh recovery/Owner/current/lock serta authenticated final/iPhone UAT OPEN, bukan BUSINESS_READY. [Dossier](../products/saga-platform/DOSSIER.md).

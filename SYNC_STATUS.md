@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: Member V1 production release
+
+`CONFIRMED`: delapan dokumen Product/Dossier/Changelog/Master/Gaps/Portfolio/root/sync diperbarui sekali untuk Member140e7b1/artifacte53067a/release20261002T125500Z-d8c060d-r0u yang telah PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED. Source app/runner commit lokal, CI_NOT_RUN; public runtime/recovery/rollback/Owner browser terverifikasi. Backend/contracts/POS/provider tidak dimutasi. DEC-225 unchanged. iPhone/representative Member/POS UAT OPEN, bukan BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — accepted: Wave 5 review dan kandidat perbaikan
 
 `CONFIRMED`: Member140e7b1/artifacte53067a/runner5e668cd LOCAL_VALIDATED;609Member/Owner6viewport/mobile-worker/140+14runner/native15→15restore-restart PASS. Delapan Product/Dossier/Changelog/Master/Gaps/Portfolio/root/sync dokumen disinkronkan terpisah pada main HEAD dari provenance source lokal bersih. Source belum push/PR/CI/deploy; production81fc239/backendd8/contracts3279/POS/provider unchanged. Fresh production recovery/Owner/current/lock dan authenticated/iPhone UAT OPEN, bukan BUSINESS_READY; DEC-225 unchanged. [Detail](products/saga-platform/DOSSIER.md).

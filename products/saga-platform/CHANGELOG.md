@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Member V1 production activation
+
+`CONFIRMED`; Andreas mengotorisasi deploy. Member140e7b1/artifacte53067a/release20261002T125500Z-d8c060d-r0u PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED; tiga tab, kartu/personalisasi/XP/perjalanan/Promo dan empat area Owner kini tayang. Backendd8/contracts3279/POS5bbb/provider tidak dimutasi. Exact runner02fa4a1, encrypted restore/rollback/reswitch/monitor/public health dan authenticated Owner browser PASS. iPhone fisik/representative Member/POS-redemption UAT OPEN, bukan BUSINESS_READY. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Wave 5 review: konsistensi akun/Reward diperbaiki lokal
 
 `CONFIRMED`; Andreas meminta periksa/perbaiki kekurangan. Member140e7b1/artifacte53067a/runner5e668cd menggantikan kandidat86b9c7c. Konsistensi pergantian sesi, pilihan Reward unavailable dan saldo Platform diperbaiki;609Member/Owner6viewports/mobile-worker serta140+14runner/native15→15restore-restart PASS_LOCAL. Backendd8/contracts3279/POS/provider unchanged. Source belum push/PR/CI/deploy; runtime81fc239 tetap. Fresh production recovery/Owner/current/lock dan authenticated/iPhone UAT OPEN. [Detail](DOSSIER.md).
