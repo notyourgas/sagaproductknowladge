@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: keputusan Member V1 dan Wave 1 lokal
+
+`CONFIRMED`: keputusan Andreas DEC-225 dan source scope/wireframe `7a76dda2aded9cd383287526305864b80a89bb59` disinkronkan terpisah dari source. Product/Dossier/Changelog, Decision/Master/Gaps/Portfolio/root/sync diperbarui; tidak mengubah status production sebelumnya. LOCAL_SPEC_VALIDATED/NOT_DEPLOYED; implementasi Wave 2–5 dan UAT tetap OPEN. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — accepted: ready-source Member–POS pair deployment
 
 `CONFIRMED`: exact POSfa5df6c/rollbackb945ab5 and Memberd8c060d4/rollbackd6b3c45 production-activated, source/runner pushed. Native tests/exact recovery/public health/authenticated Owner read PASS. Eleven impacted documents updated once on main HEAD; global closure OFF, genuine device/iPhone/full downstream/custody/expiry remain OPEN. Previous source-only statements are historical. [Detail](products/sagaops/DOSSIER.md).

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — Saga Member V1: Wave 1 desain lokal
+
+`CONFIRMED`: Andreas menyederhanakan Member ke tiga tab dan Owner empat area, tetap kartu/personalisasi/XP/perjalanan serta benefit inti. Wave 1 scope/route/rights/wireframe `7a76dda2aded9cd383287526305864b80a89bb59` LOCAL_SPEC_VALIDATED/NOT_DEPLOYED; tidak mengubah production/integrasi POS. Hak lama dipertahankan, Wave 2–5 implementasi/UAT/rilis berikutnya. [Saga Platform](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Ready-source Member–POS pair deployed
 
 `CONFIRMED`: POSfa5df6c and Memberd8c060d4 production-activated; native tests, exact encrypted recovery, rollback and public authenticated Owner read PASS. Legacy retention and unproven history-completion guard deployed, global erasure remains OFF. Online storage deferred; full downstream/custody/history/expiry/device UAT OPEN. [POS](../products/sagaops/DOSSIER.md), [Member](../products/saga-platform/DOSSIER.md).

@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(saga-platform): keputusan V1 dan Wave 1
+
+`CONFIRMED`; sumber keputusan Andreas dan source `7a76dda2aded9cd383287526305864b80a89bb59`. Scope/display Member dan Owner disederhanakan tanpa mencabut hak lama; artefak rancangan lokal tervalidasi, bukan rilis UI. Product/Dossier/Changelog, Decision/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD; production tidak berubah. Next implementasi Wave 2, residual persistence/Owner loading/UAT OPEN. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — knowledge: ready-source pair production deployment
 
 `CONFIRMED`; Andreas authorized deploy and necessary bounded release work. POSfa5df6c/Memberd8c060d4 activated with preserved rollback/current provenance, native tests, encrypted recovery and public Owner read PASS. Eleven Product/Dossier/Changelog and portfolio/master/gaps/sync/root documents updated on main HEAD. No real erasure/new provider/online storage; global admission/custody/history/expiry and physical UAT OPEN. [POS](products/sagaops/DOSSIER.md), [Member](products/saga-platform/DOSSIER.md).

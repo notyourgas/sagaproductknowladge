@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Wave 1 V1 scope dan wireframe lokal
+
+`CONFIRMED`; Andreas meminta V1 lebih sederhana dengan personalisasi kartu/XP/perjalanan. Before lima tab/six Owner areas → target tiga tab/four Owner areas, preserve hak lama. Source `7a76dda2aded9cd383287526305864b80a89bb59`; 2/2 spec dan browser/a11y viewport320–430/1280/200% text PASS hanya artefak rancangan. LOCAL_SPEC_VALIDATED/NOT_DEPLOYED, production tidak berubah. Files source: docs/v1/WAVE1.md, wireframe.html, pemeriksaan spec/browser. Next Wave 2; gap persistence kartu/lazy-load Owner dan UAT nyata tetap OPEN. [Dossier](DOSSIER.md).
+
 ## 2026-10-02 — Member d8 history guard production-activated
 
 `CONFIRMED`; Andreas authorized deploy. Source d8c060d4/unchangedFE81/contracts3279 and pairedPOSfa5 deployed; full72files/native recovery/runner138+13/fresh production recovery/actual Owner rollback/reswitch/public read PASS. False completion now refused; physical SQL erasure and global closure OFF. Source/runner pushed; genuine iPhone/all-product recovery custody/history/expiry OPEN. [Detail](DOSSIER.md).

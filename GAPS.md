@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Member V1: scope tertutup, implementasi OPEN
+
+`CONFIRMED`: Wave 1 source `7a76dda2aded9cd383287526305864b80a89bb59` menutup scope/mapping/flow, bukan runtime. OPEN Wave 2 account-isolated kartu browser preference/jujur persistence, nav/login/Points/XP; Wave 3 voucher/Reward/POS regression; Wave 4 lazy-load Owner dan cases/audit tetap reachable; Wave 5 authenticated/iPhone UAT + release gates. Tidak ada capability erasure/provider baru dan tidak menutup residual Book/POS/history/backup lama. [Dossier](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Ready-source deployment closed, global erasure open
 
 `CONFIRMED`: POSfa5df6c and Memberd8c060d4 production-activated after native/recovery/authenticated Owner verification; new-source delivery blocker CLOSED. Global erasure OFF. OPEN: authoritative full history attribution/physical SQL purge, full Book/all-product admission, independently latest journal/key custody/compatible recovery/all-copy expiry; genuine iPhone and physical printer/operator UAT. Online storage deferred. [POS](products/sagaops/DOSSIER.md), [Member](products/saga-platform/DOSSIER.md).

@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Target Member V1 disederhanakan; belum di production
+
+`CONFIRMED` Andreas: Member Beranda/Promo/Akun, kartu+personalisasi, Points, XP/perjalanan, voucher/Reward dan akun; Owner Ringkasan/Member/Promo/Pengaturan. Discovery/alat noninti hide, hak lama tetap. Wave 1 source `7a76dda2aded9cd383287526305864b80a89bb59` LOCAL_SPEC_VALIDATED/NOT_DEPLOYED, bukan implementasi nav atau perubahan backend/production. [Rincian](products/saga-platform/DOSSIER.md); DEC-225. Jangan menjual rancangan sebagai fitur baru aktif.
+
 ## 2026-10-02 — Ready-source Member–POS pair active
 
 `CONFIRMED`: production POSfa5df6c/rollbackb945ab5 and Memberd8c060d4/rollbackd6b3c45, unchanged Memberfrontend81fc239/contracts3279. Legacy retention fix and unproven history-completion guard deployed; native tests, exact recovery, public health/monitor/authenticated Owner read PASS. Closure production OFF; not global erasure/BUSINESS_READY. Online custody deferred; full Book/SQL purge/all-product admission/latest independent journal/all-copy expiry and device/iPhone UAT remain OPEN. [POS](products/sagaops/DOSSIER.md), [Member](products/saga-platform/DOSSIER.md).

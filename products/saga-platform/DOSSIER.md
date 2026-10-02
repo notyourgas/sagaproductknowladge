@@ -1,5 +1,13 @@
 # Saga Platform Dossier
 
+## 2026-10-02 — Wave 1 simplifikasi V1, bukan perubahan runtime
+
+`CONFIRMED`: Andreas menyetujui V1 inti, menambahkan personalisasi kartu/XP/perjalanan, lalu meminta Wave 1. Source Member `7a76dda2aded9cd383287526305864b80a89bb59`, baseline frontend `81fc23904c983c04efe2c40f49f9e723d5a55074`; artefak scope, route policy dan wireframe lokal tersedia di source. Semua 21 route lama/six Owner areas dipetakan; klaim, booking dan pesan penting lama tetap memiliki jalur. Member target Beranda/Promo/Akun, Owner target Ringkasan/Member/Promo/Pengaturan; bukan penghapusan domain/backend/data.
+
+Sprint 1.1 scope/rights/route mapping dan Sprint 1.2 struktur layar/alur selesai lokal. Dua spec checks, browser viewport320/360/375/390/430/1280, Axe, keyboard/back, 200% text/reduced motion/console PASS untuk wireframe saja. Tidak ada perubahan backend/database/public UI/production/provider, no deployment atau authenticated UAT baru. Wave 2 mengintegrasikan nav/card/Points/XP; Wave 3 lifecycle promo/POS; Wave 4 Owner; Wave 5 UAT dan guarded release. Platform tetap authority dan Owner-only password publish/kuota/jadwal/masa pakai setelah klaim tetap.
+
+Gap source: pilihan kartu masih browser-local, perlu isolasi akun/disclosure tanpa janji cross-device; dashboard Owner masih eager-load area tersembunyi, perlu per-view loading tanpa menghilangkan kasus/audit. iPhone autentik dan closure erasure/retention residual sebelumnya tidak ditutup oleh desain. [Decision](../../DECISIONS.md#dec-225--scope-member-v1-dan-penyederhanaan-owner).
+
 ## 2026-10-02 — Member history admission guard production release
 
 `CONFIRMED`: release `20261002T065100Z-d8c060d-r0u`, backend `d8c060d4a4dbca6156b60a9c155c8f97a3581e59`, frontend81fc239/contracts3279 unchanged; artifact `2e72fb7fdee7e1e24006d2c9e195e914429932452012ce369d6583da85de084e`, bounded runner478e662 pushed. Before d6→after d8: dormant snapshot history purge retains anonymous quota and refuses unproven retained history completion; physical SQL purge remains NOT_IMPLEMENTED.

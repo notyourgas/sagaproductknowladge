@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-225 — Scope Member V1 dan penyederhanaan Owner
+
+- Tanggal: 2026-10-02. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: fokus V1 Member pada Beranda/Promo/Akun; kartu dan personalisasi, Points/expiry/riwayat, XP/perjalanan tier, voucher/Reward dan akun tetap. Dashboard Owner target Ringkasan/Member/Promo/Pengaturan.
+- Alasan: terlalu banyak fitur membuat member dan operator kesulitan menemukan tugas utama.
+- Alternatif: mempertahankan semua discovery/alat sebagai menu utama; tidak dipilih. Fitur pending disembunyikan, bukan dihapus.
+- Dampak: Explore, booking/Quest baru, rekomendasi/SagaDay dan diagnostik keluar discovery V1; hak/klaim/history lama tetap reachable, domain authority dan permission tetap. Kuota, jadwal, masa berlaku setelah klaim, Owner-only password publish dipertahankan.
+- Delivery: Wave 1 scope+wireframe source `7a76dda2aded9cd383287526305864b80a89bb59` tervalidasi lokal; bukan UI production baru. Wave 2–5 belum diselesaikan oleh keputusan ini.
+- Terkait: [Product](products/saga-platform/PRODUCT.md), [Dossier](products/saga-platform/DOSSIER.md), [Gaps](GAPS.md). Histori fitur lama dipertahankan; fitur existing tidak menjadi janji discovery V1.
+
 ## DEC-224 — Newspaper, Passport, dan override frame internal Saga Studio
 
 - Tanggal: 2026-09-30. Status: `CONFIRMED`; pemberi keputusan Andreas.

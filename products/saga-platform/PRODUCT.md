@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — Scope Saga Member V1 dipersempit, Wave 1 lokal
+
+`CONFIRMED` keputusan Andreas; delivery **LOCAL_SPEC_VALIDATED / NOT_DEPLOYED**. Target Member tiga tab Beranda/Promo/Akun, tetap kartu + personalisasi, Points/expiry/riwayat, XP/perjalanan tier, voucher/Reward dan akses akun penting. Target Owner empat area Ringkasan/Member/Promo/Pengaturan. Explore, booking/Quest discovery baru, rekomendasi/SagaDay dan diagnostik disembunyikan; hak lama tetap reachable. Scope ini belum mengganti UI production. Source rancangan `7a76dda2aded9cd383287526305864b80a89bb59`; [rincian](DOSSIER.md), [keputusan](../../DECISIONS.md#dec-225--scope-member-v1-dan-penyederhanaan-owner).
+
 ## 2026-10-02 — CustomerPlatform Member history guard dirilis
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member backend `d8c060d4a4dbca6156b60a9c155c8f97a3581e59`, unchanged frontend81fc239/contracts3279, POSfa5df6c. Guard menolak completion riwayat yang belum terbukti; bukan aktivasi penghapusan SQL. Full72file tests/native artifact15→15, production recovery/rollback/reswitch and public authenticated Owner read PASS. Global erasure OFF; separate Platform backend unchanged. [Detail](DOSSIER.md).
