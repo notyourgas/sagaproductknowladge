@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — Trusted Member–POS closure connection, source-only
+
+`CONFIRMED`: Memberd6b3c45/POSb945ab5 menghubungkan stored-case intent→freeze→close→readonly custody receipt. Native PostgreSQL18.6 paired PASS untuk lost ACK/restart/original time dan pembayaran/HPP tetap. Kedua kandidat baru belum deploy; POS24c79c3 sehat, actual closure OFF. Independent recovery/all-scope admission/legacy mapping/Book/history/backup expiry masih OPEN, bukan BUSINESS_READY. [SagaOPS](../products/sagaops/DOSSIER.md), [CustomerPlatform Member](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — SagaPOS closure foundation deployed, feature activation held
 
 `CONFIRMED`: POS exact24c79c3 production-activated dengan rollback6dfa182, health,

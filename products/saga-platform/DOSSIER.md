@@ -1,5 +1,11 @@
 # Saga Platform Dossier
 
+## 2026-10-02 — Stored-case coordinator Member ke POS, source-only
+
+`CONFIRMED`; Member `d6b3c45f1bbb5e197692caedee7fc34cbced1125` dan POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a`. Job berasal dari kasus/identity tersimpan; intent kode disimpan sebelum erasure. Admission semua produk stricttrue dan persisted freeze wajib, custody scope terikat; active checkpoint menetapkan waktu asli, receipt diperiksa lewat readback readonly. Lost POS ACK diikuti native SQL restart+retry PASS; globalDeletionComplete=false. Focused Member13PASS/persistence3PASS, POS8PASS/2SKIP, paired native PostgreSQL18.6 PASS; bukan full-suite atau production UAT.
+
+Tidak ada deploy/HTTP/worker/timer baru, global erasure atau backend Platform terpisah berubah. Rotated-code history memerlukan rekonsiliasi dan satu case hanya satu POS scope. Production activation memerlukan durable all-scope lanes, dedicated custody dan journal terbaru independen untuk startup/restore/rollback; full Book/history/all-copy backup expiry masih OPEN. [POS](../sagaops/DOSSIER.md).
+
 ## 2026-09-30 — E2E-1 scope Reward mesin
 
 `CONFIRMED`. Before scope outlet machine hanya ditegakkan untuk commerce write; after Platform `c797545f7cc8e6f89c0e4a487747970e577af21f` menerapkan scope pada quote, reserve, commit, release, compensate, dan fail-closed untuk kredensial Reward tidak berscope dalam mode produksi. Regresi lintas outlet dan full suite 56 berkas PASS; POS disposable outbox/cross-product 6/6 PASS. Tidak ada perubahan schema, provider, Member client atau runtime produksi. Machine summary read, credential rollout, native PostgreSQL/restore dan UAT autentik masih gate E2E-1.

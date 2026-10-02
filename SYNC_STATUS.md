@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: trusted Member–POS source connection
+
+`CONFIRMED`: Memberd6b3c45/POSb945ab5 exact source dan native paired evidence tervalidasi; knowledge dimutakhirkan sekali pada main HEAD terpisah. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED, production24c79c3 sehat/actualclosureOFF, tanpa real erasure/deploy baru. Residual custody/all-scope/history/backup tetap eksplisit. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — accepted: POS foundation production / closure activation held
 
 `CONFIRMED`: app source24c79c3 sudah dipush dan production-activated; rollback6dfa182.

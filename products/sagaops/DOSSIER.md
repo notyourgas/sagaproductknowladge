@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-02 — Coordinator penutupan akun Member tersambung ke adapter POS
+
+`CONFIRMED`; instruksi Andreas menyambungkan workflow. Before: freeze/close/receipt dipanggil manual pada harness. After: CustomerPlatform Member `d6b3c45f1bbb5e197692caedee7fc34cbced1125` memakai durable case intent dan adapter POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a` untuk preflight→close→readonly readback. Retry setelah lost ACK dan native SQL restart menggunakan waktu penutupan asli; scope/custody drift ditolak. Pembayaran dan HPP tidak berubah, retensi POS tetap30hari, case tidak maju ke global COMPLETED.
+
+POS impacted10tes:8PASS/0FAIL/2SKIP (dua direct integration opsional bukan PASS); Member focused13PASS dan persistence impacted3PASS; paired native PostgreSQL18.6 exact PASS. Static/type/syntax checks PASS; tidak mengulang broad suite, menambah dependency/HTTP/scheduler atau memutasi data production. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED untuk kedua kandidat baru. Production POS current24c79c3/rollback6dfa182 tetap sehat, actual closure OFF. Batas: satu scope POS per case, kode lama hasil rotasi memerlukan rekonsiliasi, admission seluruh produk dan independently fresh journal/custody pada startup/restore/rollback belum aktif. Full Book/history/backup expiry dan Owner UAT tetap OPEN; BUSINESS_READY tidak diklaim.
+
 ## 2026-10-02 — Delivery fondasi POS, bukan aktivasi penghapusan
 
 `CONFIRMED`: POS `24c79c3691a47af76d908f46d98452cc79cce6aa` dipush dan aktif,

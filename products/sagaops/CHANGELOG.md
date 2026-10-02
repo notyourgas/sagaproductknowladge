@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-02 — Sambungkan stored-case Member ke preflight/readback POS
+
+`CONFIRMED`; Andreas meminta sambungan. Source POSb945ab5 dan Memberd6b3c45 menutup handwritten harness gap; scoped readonly receipt verification dan original-time retry/restart native PASS. Source/tests/docs berubah tanpa schema/dependency baru. LOCAL_VALIDATED, NOT_DEPLOYED; production24c79c3/closureOFF unchanged. Next: durable all-scope admission dan fresh independent recovery custody, legacy reconciliation, Book/history/backup scope. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Fondasi closure POS production, actual executor OFF
 
 - `CONFIRMED`; instruksi Andreas meneruskan sampai deploy. Before source lokal -> after exact24c79c3 dipush dan production-activated; rollback6dfa182.

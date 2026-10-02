@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Member stored-case closure coordinator lokal
+
+`CONFIRMED`; instruksi Andreas dan Memberd6b3c45/POSb945ab5. Manual callback harness diganti reusable coordinator; persisted freeze/intent, exact custody readback dan native lost-ACK/restart PASS. Source Member hanya LOCAL_VALIDATED/NOT_DEPLOYED; production closure OFF, backend Platform terpisah unchanged. Penghapusan semua produk/backup belum lengkap. [Detail](DOSSIER.md).
+
 ## 2026-09-30 — E2E-1 machine Reward scope lokal
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`; Platform `56f89fde527a04122e413d7fe03421ba9f38cfa8`. Quote dan lifecycle Reward POS kini mengikuti outlet kredensial; produksi menolak kredensial Reward tak berscope saat request. Backend 56 berkas dan POS 6/6 PASS lokal. Production tidak berubah; native PG, rekonsiliasi historis, machine read, iPhone/authenticated UAT dan release exact candidate OPEN; `BUSINESS_READY=false`.

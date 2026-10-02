@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Sambungan source ditutup; operational activation belum ditutup
+
+`CONFIRMED`: Memberd6b3c45/POSb945ab5 reusable stored-case coordinator dan native exact pairing PASS; tidak lagi hanya callback manual. Kedua kandidat baru NOT_DEPLOYED; POS24c79c3 sehat/closureOFF. OPEN: durable all-scope admission dan independent latest journal/key custody pada startup/restore/rollback, rotated-code legacy mapping, full Book/history/all-copy backup expiry dan Owner UAT. Tidak menganggap subset receipt sebagai global completion. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — Delivery POS ditutup, activation closure masih terpisah
 
 `CONFIRMED`: fondasi POS24c79c3 aktif, Owner/health/recovery PASS; tidak lagi

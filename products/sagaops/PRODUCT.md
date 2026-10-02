@@ -1,5 +1,9 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-02 — Sambungan trusted Member–POS tervalidasi lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: POS `b945ab5653b47435cc353bc7927e6ce2f9bf984a` menambah scoped preflight dan readback nonmutating; CustomerPlatform Member `d6b3c45f1bbb5e197692caedee7fc34cbced1125` menurunkan job dari kasus tersimpan sebelum erasure. Native PostgreSQL18.6 pasangan exact PASS untuk lost-ACK/restart/original timestamp dan fakta pembayaran/HPP utuh. Production tetap24c79c3 sehat; executor closure OFF. Ini koneksi source, bukan penghapusan global. Detail dan residual di [Dossier](DOSSIER.md).
+
 ## 2026-10-02 — Fondasi closure POS dirilis, executor tetap OFF
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: source

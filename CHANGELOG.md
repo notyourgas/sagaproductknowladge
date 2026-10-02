@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(sagaops): trusted Member–POS source coordinator
+
+`CONFIRMED`; instruksi Andreas dan source Memberd6b3c45/POSb945ab5 exact native paired PostgreSQL18.6 PASS. Before handwritten callback proof→after reusable stored-case coordinator+readonly POS custody readback, original-time lost-ACK/restart. Product/Dossier/Changelog kedua produk, Portfolio/Master/Gaps/Sync/root diperbarui pada main HEAD. Kedua kandidat NOT_DEPLOYED; POS24c79c3 sehat dan executorOFF. Operational journal/custody/all-scope admission/history/backup residual OPEN. [Detail](products/sagaops/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(sagaops): closure foundation delivered, activation held
 
 `CONFIRMED`; instruksi Andreas, exact POS24c79c3 push/production-activated dengan

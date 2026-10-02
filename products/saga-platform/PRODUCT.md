@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — CustomerPlatform dalam Member: coordinator closure POS lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source Memberd6b3c45 memiliki reusable coordinator dari stored deletion case, persisted intent/write freeze/original active timestamp, adapter POSb945ab5 preflight/close/readonly readback. Native exact paired PostgreSQL18.6 PASS untuk lost ACK/restart dengan pembayaran/HPP utuh. Akun ditutup oleh Platform Member, bukan POS; receipt association bukan global erasure. Worker production OFF; tidak mengubah source backend Platform terpisah. [Detail](DOSSIER.md).
+
 ## 2026-09-30 — E2E-1 scope Reward kasir lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Platform source `56f89fde527a04122e413d7fe03421ba9f38cfa8` mengikat quote dan siklus reservasi Reward mesin pada scope outlet kredensial; produksi menolak operasi Reward dari kredensial tanpa scope saat request. Backend 56 berkas dan POS outbox/cross-product 6/6 PASS lokal. Member/POS source dan production tidak berubah dalam slice ini; native PostgreSQL, rekonsiliasi historis, batas machine read, UAT iPhone autentik dan release pasangan final tetap OPEN. `BUSINESS_READY=false`.
