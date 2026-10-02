@@ -1,5 +1,13 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-03 — Wave 3 Self Photo Couple, penukaran kasir lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: cohort100 yang sama kini mempunyai jalur penerbitan dan penukaran voucher50% satu harga dasar Self Photo Couple; unit tambahan, Group dan add-on tetap dibayar, tidak stacking. Member menampilkan hak/status/validity dari Platform. Kasir/kiosk memakai binding cart authoritative dan lifecycle durable existing; retry respons hilang/restart tidak menggandakan redemption.
+
+Backend `14a6ca2ecb05c21c324d7dade6922c77b4b6d281` (`codex/member-registration-gifts-wave3-20261003`), Member `c798ff2c419002a43f3578db7c29697d84caa391` (`codex/member-registration-gifts-wave3-ui-20261003`), POS `4c87c69da362334b509c559b5cc5f61937aa88da` (`codex/registration-gifts-wave3-pos-20261003`). Source commit lokal bersih, belum push/PR/CI; BELUM DEPLOY, production tidak dimutasi.
+
+`NEEDS CONFIRMATION`: masa pakai foto; 720jam hanya fixture test, bukan keputusan Andreas. Cutoff00WIB tetap `ASSUMPTION`. Issuance defaultOFF, trusted constructor policy membutuhkan validity dan actual catalog/outlet admission. Online SagaBook discount belum ditambahkan; Book tetap authority booking/jadwal. OPEN: birthdayWave4, dashboardcampaign dan exact paired reader/writer/recovery/UAT/releaseWave5; older readers/writers belum boleh dipakai sesudah issuance. [Detail](DOSSIER.md).
+
 ## 2026-10-03 — Wave 2 voucher minuman, lokal terintegrasi
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend `33567ed0d72f6b82d4965e91bf5e2da42bb70080`, Member `84f21a812d8ee2253d587c9428368db7448c58c4`, POS `8b2b45062c139e8bf2f3a9f93c26a094d0950d3e`. Cohort100 Wave1 mendapat satu voucher minuman otomatis pada issuance yang diotorisasi; semua minuman standar, add-on berbayar, 30 hari sejak diterbitkan sesuai Andreas. Platform menjaga kuota/status; POS memakai satu harga dasar dari katalog dan Member hanya menampilkan hak. Native PostgreSQL/retry/restart/Rp0/kiosk serta mobile320–430 PASS. Source commit lokal belum push/PR/CI/deploy; production tidak dimutasi. Katalog/outlet nyata, Writer/reader kompatibel dan gate rilis pasangan masih diperlukan; fotoCouple Wave3/birthday Wave4/dashboard/release Wave5 belum aktif. [Detail](DOSSIER.md), [keputusan](../../DECISIONS.md#dec-227--voucher-minuman-standar-dan-masa-pakai).

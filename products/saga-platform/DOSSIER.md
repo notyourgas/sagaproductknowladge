@@ -1,5 +1,17 @@
 # Saga Platform Dossier
 
+## 2026-10-03 — Wave 3 Self Photo Couple, penukaran kasir lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: cohort100 yang sama kini mempunyai jalur penerbitan dan penukaran voucher50% satu harga dasar Self Photo Couple; unit tambahan, Group dan add-on tetap dibayar, tidak stacking. Member menampilkan hak/status/validity dari Platform. Kasir/kiosk memakai binding cart authoritative dan lifecycle durable existing; retry respons hilang/restart tidak menggandakan redemption.
+
+Backend `14a6ca2ecb05c21c324d7dade6922c77b4b6d281` (`codex/member-registration-gifts-wave3-20261003`), Member `c798ff2c419002a43f3578db7c29697d84caa391` (`codex/member-registration-gifts-wave3-ui-20261003`), POS `4c87c69da362334b509c559b5cc5f61937aa88da` (`codex/registration-gifts-wave3-pos-20261003`). Source commit lokal bersih, belum push/PR/CI; BELUM DEPLOY, production tidak dimutasi.
+
+Platform menghitung floor(50% satu base unit), POS memverifikasi productId/lineIndex/amount dan mengalokasikan hanya ke line itu. Field machine existing beverageCart juga membawa fakta Couple dari quote server, bukan harga browser. System gifts bukan generic Owner draft/public claimable offer. Paired claim links dan expiry tervalidasi saat restore; purge30hari membakar slot cohort tanpa reissuance. No new activation route/env mapping.
+
+Backend75berkas isolated PASS; Member612unit/static dan browser320/360/375/390/430+Axe/keyboard/200%text/reducedmotion/unavailable PASS; POS53regression+6native serta741module/TypeScript PASS. Ini synthetic lokal, bukan authenticated production/iPhone UAT, encrypted production backup restore, actual rollback atau BUSINESS_READY. Tidak ada dependency/shared-package/schema/provider/hardware baru.
+
+`NEEDS CONFIRMATION`: masa pakai foto; 720jam hanya fixture test, bukan keputusan Andreas. Cutoff00WIB tetap `ASSUMPTION`. Issuance defaultOFF, trusted constructor policy membutuhkan validity dan actual catalog/outlet admission. Online SagaBook discount belum ditambahkan; Book tetap authority booking/jadwal. OPEN: birthdayWave4, dashboardcampaign dan exact paired reader/writer/recovery/UAT/releaseWave5; older readers/writers belum boleh dipakai sesudah issuance.
+
 ## 2026-10-03 — Registration gifts Wave 2 beverage
 
 `CONFIRMED`: Andreas menetapkan semua minuman standar eligible, add-on tetap dibayar, dan masa pakai voucher minuman 30 hari sejak diterbitkan, bukan sejak daftar. Tidak otomatis menetapkan validity voucher foto. Sebelum Wave2 hak minuman belum bisa ditukar → setelah Wave2 trusted local admission menerbitkan satu existing Voucher claim per penerima cohort100. Tanggal issuance, claim link, expiry dan status tersimpan di Platform; retry/login/restart tidak memperpanjang validity atau menggandakan hak. Missing/corrupt claim/validity/scope ditolak sebelum restore; akun closing dilewati dan purge tidak membuka quota.

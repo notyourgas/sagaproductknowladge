@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-03 — Wave 3 Self Photo Couple, penukaran kasir lokal
+
+Wave3 counter redemption CLOSED lokal: first100pairedrights, singleCouplebase50%, cartbinding, retry/restart, Memberlifecycle/purge. Backend `14a6ca2ecb05c21c324d7dade6922c77b4b6d281` (`codex/member-registration-gifts-wave3-20261003`), Member `c798ff2c419002a43f3578db7c29697d84caa391` (`codex/member-registration-gifts-wave3-ui-20261003`), POS `4c87c69da362334b509c559b5cc5f61937aa88da` (`codex/registration-gifts-wave3-pos-20261003`). Source commit lokal bersih, belum push/PR/CI; BELUM DEPLOY, production tidak dimutasi.
+
+`NEEDS CONFIRMATION`: masa pakai foto; 720jam hanya fixture test, bukan keputusan Andreas. Cutoff00WIB tetap `ASSUMPTION`. Issuance defaultOFF, trusted constructor policy membutuhkan validity dan actual catalog/outlet admission. Online SagaBook discount belum ditambahkan; Book tetap authority booking/jadwal. OPEN: birthdayWave4, dashboardcampaign dan exact paired reader/writer/recovery/UAT/releaseWave5; older readers/writers belum boleh dipakai sesudah issuance. Backend75berkas isolated PASS; Member612unit/static dan browser320/360/375/390/430+Axe/keyboard/200%text/reducedmotion/unavailable PASS; POS53regression+6native serta741module/TypeScript PASS. Ini synthetic lokal, bukan authenticated production/iPhone UAT, encrypted production backup restore, actual rollback atau BUSINESS_READY. Tidak ada dependency/shared-package/schema/provider/hardware baru. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-03 — Wave 2 beverage CLOSED lokal; release dan hadiah lanjutan OPEN
 
 `CONFIRMED`: backend33567ed/Member84f21a8/POS8b2b450 menyelesaikan issued claim cohort100,30hari dari issuance, satu harga dasar minuman/add-on berbayar, Member projection dan durable POS cash/kiosk/retry/Rp0. Backend349/74, Member611+mobile320–430, POS44+native/static/TypeScript PASS. BELUM DEPLOY; source belum push/PR/CI, production unchanged. OPEN: actual complete beverage catalog/outlet admission, reader/writer kompatibel, encrypted candidate-bound restore/rollback/UAT dan issuance activation; Couple50%Wave3/birthdayWave4/Owner campaign dashboardWave5. Validity minuman bukan lagi proposal (DEC-227); validity foto belum ditetapkan dan cutoff00WIB tetap ASSUMPTION. [Detail](products/saga-platform/DOSSIER.md).
