@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: Member V1 Wave 5 preparation milestone
+
+`CONFIRMED`: Member86b9c7c/artifact03be636/runnere77cc82 local validated;605+140+14tests, actual worker rollback dan native15→15 restore/restart PASS. Eight affected Product/Dossier/Changelog/Master/Gaps/Portfolio/root/sync docs updated once on main HEAD. Source belum push/PR/CI/deploy; productionfrontend81fc/backendd8/contracts3279/POS/provider unchanged. IN_PROGRESS/BELUM DEPLOY; fresh recovery/Owner/lock/current dan authenticated/iPhone UAT OPEN. DEC-225 unchanged. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — accepted: Member V1 Wave 4 lokal
 
 `CONFIRMED`: source `f83d0343bd3c5f08136532799964d6da5b7ce9d9` commit lokal belum push/PR. Product/Dossier/Changelog/Master/Gaps/Portfolio/root/sync diperbarui terpisah setelah source provenance jelas. 605/605, browser6widths/core/read-only dan native PostgreSQL actual Owner→Member/persistence/previous-binary PASS. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/BELUM DEPLOY. Production/backend/schema/POS runtime/provider unchanged, DEC-225 unchanged. Wave 5 dan residual closure OPEN. [Detail](products/saga-platform/DOSSIER.md).

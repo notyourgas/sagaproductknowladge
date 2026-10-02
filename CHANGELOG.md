@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(saga-platform): Wave 5 candidate preparation
+
+`CONFIRMED`; sumber Andreas dan Member86b9c7c/runnere77cc82/artifact03be636. Before update/recovery belum terbukti → after immutable exact pair, worker baseline-update-rollback, native15→15 restore-restart dan605+140+14tests PASS_LOCAL. Delapan Product/Dossier/Changelog/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD. Source belum push/PR/CI/deploy; productionfrontend81fc/backendd8/contracts3279/POS/provider unchanged. Wave5 IN_PROGRESS; fresh production Owner/lock/recovery dan authenticated/iPhone UAT OPEN, bukan BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(saga-platform): Wave 4 Owner V1
 
 `CONFIRMED`; sumber permintaan Andreas dan source `f83d0343bd3c5f08136532799964d6da5b7ce9d9`. Before enam menu/eager reads → empat area/per-view loading, native Promo forms dan error recovery tanpa mengurangi kontrol Owner. 605/605 dan browser/native PostgreSQL synthetic regression PASS. Delapan dokumen Product/Dossier/Changelog/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD. Source belum push/PR/CI/deploy; production/backend/schema/POS runtime/provider unchanged. Wave 5 release/iPhone/autentik dan residual retention/recovery OPEN. [Detail](products/saga-platform/DOSSIER.md).

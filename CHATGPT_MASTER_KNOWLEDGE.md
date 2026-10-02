@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Member V1 Wave 5 siap lokal, belum tayang
+
+`CONFIRMED`: Member86b9c7c/artifact03be636 membawa tiga tab/kartu/XP/perjalanan/Promo dan empat area Owner, backendd8/contracts3279 tetap.605Member, worker update/rollback sintetis, PostgreSQL15→15 restore/restart dan140+14runner tests PASS. Local runnere77cc82 exact-pair tanpa membuka provider, belum installed. Wave5 IN_PROGRESS/BELUM DEPLOY; frontend production tetap81fc239. Fresh production Owner/lock/recovery serta authenticated kandidat/iPhone fisik OPEN. Jangan menyebut paket lokal sebagai production aktif/BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Owner Member V1 selesai lokal, belum production
 
 `CONFIRMED`: Wave 4 source `f83d0343bd3c5f08136532799964d6da5b7ce9d9` LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED. Ringkasan/Member/Promo/Pengaturan menggantikan enam menu; laporan/audit tetap tersedia sekunder. Formulir voucher/Reward terbuka saat perlu, error503 menutup tindakan dan sesi401 kembali login. 605/605 serta browser/native PostgreSQL tests PASS. Source belum push/PR/deploy; production unchanged. Wave 5 final paired release/iPhone/authenticated production UAT masih OPEN. Jangan menyebut UI lokal sebagai production aktif/BUSINESS_READY. [Detail](products/saga-platform/DOSSIER.md).

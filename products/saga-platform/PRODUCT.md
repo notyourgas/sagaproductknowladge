@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — Wave 5 kandidat V1 siap lokal, belum production
+
+`CONFIRMED / LOCAL_CANDIDATE_PREPARED / IN_PROGRESS / BELUM DEPLOY`. Member `86b9c7c299e0b8a8d1f015066dfe780dec1a28e3` membawa Wave1–4; immutable artifact `03be636bf3e1d2e36ad04cf3d3e40541cd57cad06f11d6c03fce4fa49d2ea680` memakai backendd8/contracts3279 tanpa perubahan schema/provider/POS.605Member, API lokal/mobile, production-worker upgrade/rollback sintetis dan PostgreSQL18.6 restore/restart15→15 PASS. Runner lokal exact-pair e77cc82/140+14tests PASS; belum installed. OPEN: fresh production recovery/Owner/lock/current dan authenticated kandidat/iPhone fisik. Production tetap frontend81fc239; bukan BUSINESS_READY. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Wave 4 Owner Member V1 selesai lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source Member `f83d0343bd3c5f08136532799964d6da5b7ce9d9` mengganti enam menu teknis menjadi Ringkasan/Member/Promo/Pengaturan dengan loading per area. Laporan/audit tetap reachable; voucher dan Reward dipisahkan, formulir dibuka saat perlu, kolom benefit relevan saja. Snapshot503 tidak mengizinkan tindakan,403 membersihkan data ditolak,401 kembali login. 605/605 unit/static, browser enam lebar/Axe/200% text dan actual Owner→API→PostgreSQL native restart/previous-binary roundtrip PASS. Source commit lokal belum push/PR, production/backend/schema/POS/provider tidak berubah. Wave 5 release/iPhone/autentik OPEN; bukan BUSINESS_READY. [Detail](DOSSIER.md).

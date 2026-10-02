@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Wave 5 preparation lokal CLOSED; activation OPEN
+
+`CONFIRMED`: Member86b9c7c/artifact03be636, actual worker compatibility dan native15→15 restore/restart PASS; local exact-pair runner admissione77cc82/140+14tests CLOSED. OPEN: installed runner/fresh current+sole lock+effective Owner, candidate-bound encrypted production recovery/rollback/monitoring, authenticated final Owner/Member serta genuine iPhone Safari/PWA. Checklist tersedia source docs/v1/WAVE5.md; belum diuji Andreas. Erasure/Book/POS/history/backup residual dan cross-device card sync tidak ditutup. Source belum push/PR/deploy/BUSINESS_READY. [Dossier](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Member V1 Wave 4 lokal CLOSED; rilis OPEN
 
 `CONFIRMED`: source `f83d0343bd3c5f08136532799964d6da5b7ce9d9` menutup empat area Owner/lazy reads/Promo progressive form dengan kasus/laporan/audit tetap reachable; actual local API/native PostgreSQL regression PASS. OPEN: Wave 5 immutable paired artifact, old-client/service-worker, recovery/rollback/monitoring, iPhone fisik dan authenticated production UAT. Personalisasi kartu tetap browser-local; residual erasure/Book/POS/history/backup belum ditutup. Tidak ada source push/deployment/BUSINESS_READY baru. [Dossier](products/saga-platform/DOSSIER.md).

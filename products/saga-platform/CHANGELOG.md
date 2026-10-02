@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Wave 5 preparation milestone lokal
+
+`CONFIRMED`; Andreas lanjut Wave5. Member86b9c7c/artifact03be636, backendd8/contracts3279 unchanged;605Member/actual worker rollback/native15→15 restore-restart dan140+14runner tests PASS_LOCAL. Runnere77cc82 menerima exact frontend delta/rollback, belum installed. Source belum push/PR/deploy; productionfrontend81fc unchanged. Fresh recovery/Owner/lock/current dan authenticated/iPhone UAT OPEN; IN_PROGRESS bukan BUSINESS_READY. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Wave 4 Owner V1 lokal
 
 `CONFIRMED`; permintaan Andreas lanjut Wave 4. Source `f83d0343bd3c5f08136532799964d6da5b7ce9d9`: empat area dan per-view loading, formulir Promo bertahap, legacy controls/laporan/audit tetap; error tidak membuka mutasi atau fallback. 605/605 serta browser/native PostgreSQL restart/previous-binary regression PASS. Source belum push/PR/deploy; production/backend/schema/POS/provider unchanged. Wave 5 tetap OPEN. [Detail](DOSSIER.md).

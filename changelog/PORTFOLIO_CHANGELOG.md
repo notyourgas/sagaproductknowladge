@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — Saga Member Wave 5 preparation lokal
+
+`CONFIRMED / LOCAL_CANDIDATE_PREPARED / IN_PROGRESS`. Member86b9c7c/artifact03be636, unchanged backendd8/contracts3279;605Member/worker update-rollback/native15→15 restore-restart dan140+14runner tests PASS. Local admissione77cc82 bukan installed runner. Productionfrontend81fc/POS/provider unchanged, source belum push/PR/BELUM DEPLOY. Fresh recovery/Owner/current/lock dan genuine iPhone/authenticated final UAT OPEN. [Dossier](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Saga Member Wave 4 Owner lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Member `f83d0343bd3c5f08136532799964d6da5b7ce9d9` menyederhanakan Owner menjadi empat area dan memuat endpoint per kebutuhan. Cases/audit/reports dan server-authoritative voucher/Reward tetap. 605/605 dan six-width/native PostgreSQL regression PASS; tidak mengubah backend/schema/POS runtime/provider/production atau mempublikasikan source. Wave 5 release/iPhone/UAT OPEN. [Dossier](../products/saga-platform/DOSSIER.md).
