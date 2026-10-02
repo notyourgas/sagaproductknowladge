@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(sagaops): scoped Member closure lokal
+
+`CONFIRMED`; instruksi Andreas, source lokal `24c79c3691a47af76d908f46d98452cc79cce6aa`.
+Before POS executor belum ada -> after admission, association scrub, receipt/cache,
+30day retention dan independent recovery/registered backup helper tervalidasi lokal.
+Product/Dossier/Changelog/Portfolio/Master/Gaps/Sync diperbarui, knowledge main HEAD
+terpisah. Tes22 PASS/2 SKIP dan8 PASS/2 SKIP nativePG18.6, check PASS. Executor OFF,
+NOT_DEPLOYED, current6dfa182/service active fresh. Freeze/receipt lintas produk,
+custody, fullbackupexpiry/combinedUAT OPEN; BUSINESS_READY tidak berubah. Tidak ada
+customer/business data/backup produksi dimutasi atau worker diaktifkan.
+
 ## 2026-10-02 — knowledge(sagaops): off-host recovery accepted
 
 `CONFIRMED`; instruksi Andreas, production source `6dfa182ab712b94fa09f3d066b9519dccc2e6535`

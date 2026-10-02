@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-02 — Penutupan asosiasi Member, source lokal
+
+`CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED`: source lokal
+`24c79c3691a47af76d908f46d98452cc79cce6aa` menambahkan admission transaksi Member,
+pemutusan tautan terisolasi, receipt retry/restart, retensi 30 hari dan replay jurnal
+independen. Platform Member tetap pemilik penutupan akun; POS tidak memiliki tombol
+hapus akun. Nominal transaksi, pembayaran, refund, kas dan stok dipertahankan.
+Regresi terfokus 22 PASS/0 FAIL/2 SKIP; native PostgreSQL18.6 8 PASS/0 FAIL/2 SKIP.
+Static/TypeScript PASS; 35 migrasi dan dependensi tidak berubah. Executor default
+OFF; tidak ada penghapusan akun/backup nyata atau deploy. Current produksi yang
+diverifikasi kembali tetap `6dfa182ab712b94fa09f3d066b9519dccc2e6535`, service active.
+Integrasi freeze/receipt Member–Book–POS, custody jurnal/kunci, inventaris lengkap
+backup/expiry dan rehearsal gabungan/UAT masih OPEN. Receipt asosiasi dan expiry
+copy terdaftar bukan bukti penghapusan global. BUSINESS_READY tidak berubah.
+
 ## 2026-10-02 — Recovery off-host Menu/Harga/Modifier diterima
 
 `CONFIRMED`: backup terenkripsi pada tujuan Windows yang disetujui Owner berhasil

@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Batas penutupan akun Member di POS
+
+`CONFIRMED`: Platform Member adalah pemilik account closure; SagaPOS hanya memutus
+asosiasi tanpa menghapus order/payment/refund/kas/stok. Source lokal
+`24c79c3691a47af76d908f46d98452cc79cce6aa` lulus22 tes terfokus dan8 tes nativePG18.6,
+dua direct Platform case masih SKIP. Executor OFF, NOT_DEPLOYED, bukan global erasure
+atau BUSINESS_READY. Freeze/receipt Member–Book–POS, custody jurnal/kunci, seluruh
+copy backup/expiry dan combined candidate UAT masih OPEN. Current POS tetap6dfa182,
+active saat refresh. [SagaOPS Product](products/sagaops/PRODUCT.md).
+
 ## 2026-10-02 — SagaPOS recovery Windows lulus
 
 `CONFIRMED`: recovery source `6dfa182ab712b94fa09f3d066b9519dccc2e6535` lulus

@@ -1,5 +1,20 @@
 # SagaOPS Dossier
 
+## 2026-10-02 — Pemutusan tautan Member tervalidasi lokal
+
+`CONFIRMED`: commit lokal `24c79c3691a47af76d908f46d98452cc79cce6aa`, belum
+dipush atau dideploy. Admission menahan payment/earn/refund/voucher/reward yang belum
+terkonfirmasi; mutasi bersamaan diuji pada PostgreSQL18.6. Pemutusan tautan tidak
+menghapus fakta keuangan/inventory, dan same-ID pada tenant lain tetap utuh.
+Receipt deterministik bertahan setelah restart; cache kiosk dibersihkan. Purge
+history 30 hari memerlukan otorisasi, sedangkan tombstone pseudonymous tetap untuk
+mencegah snapshot lama menghidupkan akun kembali. Jurnal memerlukan custody terpisah
+dan penghapusan backup hanya berlaku pada copy terdaftar/checksum yang diverifikasi.
+Ini bukan anonymization semua free-text atau global erasure proof. Executor OFF;
+freeze/receipt lintas produk, seluruh salinan backup, key custody dan candidate
+combined native/UAT harus diselesaikan sebelum aktivasi. Tes22 PASS/2 SKIP lokal,
+8 PASS/2 SKIP native, tidak ada fail; dua direct Platform case belum dijalankan.
+
 ## 2026-10-02 — Penutupan logical mismatch restore Windows
 
 `CONFIRMED`: recovery point release `6dfa182ab712b94fa09f3d066b9519dccc2e6535`

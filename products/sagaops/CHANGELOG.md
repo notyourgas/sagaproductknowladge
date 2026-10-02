@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-10-02 — Asosiasi Member: admission, scrub dan recovery lokal
+
+- `CONFIRMED`; instruksi Andreas dan source lokal `24c79c3691a47af76d908f46d98452cc79cce6aa`.
+- Before belum ada executor POS -> after empat komponen source lokal tersedia: admission, scoped association scrub, receipt/cache/retry, retention/journal/registered backup expiry.
+- Regresi22 PASS/0 FAIL/2 SKIP, native8 PASS/0 FAIL/2 SKIP, static/TypeScript PASS; 35 migrations/dependencies tetap.
+- `LOCAL_VALIDATED / NOT_DEPLOYED`; production current6dfa182/service active diverifikasi, tidak ada transaksi/backup/customer nyata dihapus. BUSINESS_READY tetap tidak diklaim.
+- Product/Dossier/Portfolio/Master/Gaps/Sync/root Changelog diperbarui. Owner account tetap Platform Member; Member/Book receipt/freeze, custody, full backup inventory dan paired candidate UAT masih OPEN.
+
 ## 2026-10-02 — Recovery off-host lulus, operator/perangkat masih terbuka
 
 - `CONFIRMED`; instruksi Andreas menutup residual, source production `6dfa182ab712b94fa09f3d066b9519dccc2e6535` dan native restore receipt2Oktober.

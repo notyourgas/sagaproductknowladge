@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-02 — SagaPOS Member association closure lokal
+
+`CONFIRMED`: source lokal `24c79c3691a47af76d908f46d98452cc79cce6aa` menjaga
+financial facts sambil memutus Member association, admission, cache/receipt/retry,
+retensi30hari dan independent journal. Platform Member mengendalikan account closure;
+POS executor OFF, tidak ada real erasure/deploy. Tes22 PASS/2 SKIP lokal dan8 PASS/2
+SKIP nativePG18.6; static PASS. Current produksi tetap6dfa182/service active. Freeze,
+receipt lintas produk, custody, full backup expiry dan combined UAT masih OPEN;
+tidak mengubah BUSINESS_READY atau skor fitur lain.
+
 ## 2026-10-02 — SagaPOS off-host restore PASS
 
 `CONFIRMED`: encrypted backup source `6dfa182ab712b94fa09f3d066b9519dccc2e6535`

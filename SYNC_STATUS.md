@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: POS Member closure source lokal
+
+`CONFIRMED`: source `24c79c3691a47af76d908f46d98452cc79cce6aa` tersimpan pada
+branch `codex/pos-member-closure-20261002`, clean; app source belum push/deploy.
+Delapan dokumen knowledge diperbarui pada `main HEAD` terpisah; immutable SHA
+dilaporkan setelah push. Tes22 PASS/2 SKIP lokal dan8 PASS/2 SKIP native, check PASS.
+Runtime fresh current6dfa182/service active; tidak berubah oleh implementasi ini.
+Cross-product freeze/receipt, custody, full backup expiry dan combined UAT OPEN;
+BUSINESS_READY tidak berubah. Tidak mengaktifkan worker/provider/payment.
+
 ## 2026-10-02 — accepted: SagaPOS native off-host restore
 
 | Field | Milestone recovery |

@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Closure Member: POS lokal bukan penghapusan lintas produk selesai
+
+`CONFIRMED`: POS source `24c79c3691a47af76d908f46d98452cc79cce6aa` lokal tervalidasi,
+executor OFF dan belum deploy. `NEEDS CONFIRMATION`: trusted freeze/receipt dari Member
+dan Book, custody jurnal/kunci independen, inventory semua backup/offsite/rollback/WAL
+dan expiry serta native combined candidate/Owner UAT belum selesai. Registered-copy
+expiry dan receipt association tidak boleh menggantikan bukti global erasure. Dua
+direct Platform tests SKIP. Produk tetap mempertahankan financial facts dan penutupan
+akun tidak dipindah ke POS; tidak ada data produksi dihapus.
+
 ## 2026-10-02 — Logical off-host restore ditutup; physical acceptance OPEN
 
 `CONFIRMED`: mismatch logical snapshot pada rehearsal Windows telah selesai dengan
