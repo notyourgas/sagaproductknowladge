@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — Wave 2 inti Member V1 selesai lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Wave 2 Member V1 source `378e48569f49a17f8adcc9df1e1db325733faf33` (`codex/member-v1-wave2-20261002`, commit lokal, belum push/PR): tiga tab Beranda/Promo/Akun; onboarding nama+consent; kartu dan personalisasi per akun di browser, Points/expiry/XP/perjalanan dari Platform. 598/598 unit/static PASS; browser synthetic terintegrasi320/360/375/390/430, 200% text, Axe critical/serious nol, card reload/storage failure/account-switch, stale503/offline recovery dan expired-session/return path PASS. Backend complete-profile contract1/1 PASS, fixture restart/reset PASS. Backend/database/POS/Owner/provider/production tidak berubah; bukan Google nyata/iPhone/Owner production UAT atau BUSINESS_READY. Wave 3 Promo/POS, Wave 4 Owner, Wave 5 release/UAT tetap berikutnya. Personalisasi tidak cross-device; hak lama tetap. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Scope Saga Member V1 dipersempit, Wave 1 lokal
 
 `CONFIRMED` keputusan Andreas; delivery **LOCAL_SPEC_VALIDATED / NOT_DEPLOYED**. Target Member tiga tab Beranda/Promo/Akun, tetap kartu + personalisasi, Points/expiry/riwayat, XP/perjalanan tier, voucher/Reward dan akses akun penting. Target Owner empat area Ringkasan/Member/Promo/Pengaturan. Explore, booking/Quest discovery baru, rekomendasi/SagaDay dan diagnostik disembunyikan; hak lama tetap reachable. Scope ini belum mengganti UI production. Source rancangan `7a76dda2aded9cd383287526305864b80a89bb59`; [rincian](DOSSIER.md), [keputusan](../../DECISIONS.md#dec-225--scope-member-v1-dan-penyederhanaan-owner).

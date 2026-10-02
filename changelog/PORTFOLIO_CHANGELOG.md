@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-02 — Saga Member Wave 2 V1 lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Wave 2 Member V1 source `378e48569f49a17f8adcc9df1e1db325733faf33` (`codex/member-v1-wave2-20261002`, commit lokal, belum push/PR): tiga tab Beranda/Promo/Akun; onboarding nama+consent; kartu dan personalisasi per akun di browser, Points/expiry/XP/perjalanan dari Platform. 598/598 unit/static PASS; browser synthetic terintegrasi320/360/375/390/430, 200% text, Axe critical/serious nol, card reload/storage failure/account-switch, stale503/offline recovery dan expired-session/return path PASS. Backend complete-profile contract1/1 PASS, fixture restart/reset PASS. Backend/database/POS/Owner/provider/production tidak berubah; bukan Google nyata/iPhone/Owner production UAT atau BUSINESS_READY. Wave 3 Promo/POS, Wave 4 Owner, Wave 5 release/UAT tetap berikutnya. Personalisasi tidak cross-device; hak lama tetap. [Saga Platform](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Saga Member V1: Wave 1 desain lokal
 
 `CONFIRMED`: Andreas menyederhanakan Member ke tiga tab dan Owner empat area, tetap kartu/personalisasi/XP/perjalanan serta benefit inti. Wave 1 scope/route/rights/wireframe `7a76dda2aded9cd383287526305864b80a89bb59` LOCAL_SPEC_VALIDATED/NOT_DEPLOYED; tidak mengubah production/integrasi POS. Hak lama dipertahankan, Wave 2–5 implementasi/UAT/rilis berikutnya. [Saga Platform](../products/saga-platform/DOSSIER.md).

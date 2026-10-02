@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge(saga-platform): Wave 2 inti Member V1
+
+`CONFIRMED`: source `378e48569f49a17f8adcc9df1e1db325733faf33` LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED; lima tab/onboarding panjang/global card preference → tiga tab/nama+consent/personalisasi terisolasi akun browser/Points+XP dari Platform. 598/598 unit dan loopback browser320–430/offline/stale/storage/session PASS. Delapan dokumen terdampak diperbarui pada main HEAD; source commit lokal tanpa push/PR, production/backend/database/Owner/POS/provider tidak berubah. Wave 3–5, physical iPhone/authenticated production UAT dan recovery/cache release gates tetap OPEN. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(saga-platform): keputusan V1 dan Wave 1
 
 `CONFIRMED`; sumber keputusan Andreas dan source `7a76dda2aded9cd383287526305864b80a89bb59`. Scope/display Member dan Owner disederhanakan tanpa mencabut hak lama; artefak rancangan lokal tervalidasi, bukan rilis UI. Product/Dossier/Changelog, Decision/Master/Gaps/Portfolio/Sync/root diperbarui pada main HEAD; production tidak berubah. Next implementasi Wave 2, residual persistence/Owner loading/UAT OPEN. [Detail](products/saga-platform/DOSSIER.md).

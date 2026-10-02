@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Member V1 Wave 2 lokal CLOSED; rilis tetap OPEN
+
+`CONFIRMED`: source `378e48569f49a17f8adcc9df1e1db325733faf33` menutup nav/login/card isolation/Points/XP Wave 2 dengan local integrated regression. Card preference tetap browser-local, tidak cross-device. OPEN: Wave 3 Promo/POS simplification/regression, Wave 4 Owner empat area/per-view loading/cases/audit, Wave 5 service-worker compatibility/exact release/physical iPhone/authenticated production UAT. Tidak menutup erasure/Book/POS/history/backup residual lama. [Dossier](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Member V1: scope tertutup, implementasi OPEN
 
 `CONFIRMED`: Wave 1 source `7a76dda2aded9cd383287526305864b80a89bb59` menutup scope/mapping/flow, bukan runtime. OPEN Wave 2 account-isolated kartu browser preference/jujur persistence, nav/login/Points/XP; Wave 3 voucher/Reward/POS regression; Wave 4 lazy-load Owner dan cases/audit tetap reachable; Wave 5 authenticated/iPhone UAT + release gates. Tidak ada capability erasure/provider baru dan tidak menutup residual Book/POS/history/backup lama. [Dossier](products/saga-platform/DOSSIER.md).

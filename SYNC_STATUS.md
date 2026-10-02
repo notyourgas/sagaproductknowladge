@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-02 — accepted: Member V1 Wave 2 lokal
+
+`CONFIRMED`: source `378e48569f49a17f8adcc9df1e1db325733faf33` di `codex/member-v1-wave2-20261002` LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED, commit lokal belum push/PR. Delapan dokumen Product/Dossier/Changelog/Master/Gaps/Portfolio/root/sync diperbarui terpisah dari source. 598/598 unit dan browser synthetic terintegrasi320–430/200% text/Axe/storage/account-switch/offline/session PASS. Contracts/backend/database/Owner/POS/provider/production tidak berubah; bukan iPhone/Google nyata/UAT production atau BUSINESS_READY. Wave 3–5 dan cross-device card sync tetap di luar delivery ini. DEC-225 tidak diubah. [Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — accepted: keputusan Member V1 dan Wave 1 lokal
 
 `CONFIRMED`: keputusan Andreas DEC-225 dan source scope/wireframe `7a76dda2aded9cd383287526305864b80a89bb59` disinkronkan terpisah dari source. Product/Dossier/Changelog, Decision/Master/Gaps/Portfolio/root/sync diperbarui; tidak mengubah status production sebelumnya. LOCAL_SPEC_VALIDATED/NOT_DEPLOYED; implementasi Wave 2–5 dan UAT tetap OPEN. [Detail](products/saga-platform/DOSSIER.md).

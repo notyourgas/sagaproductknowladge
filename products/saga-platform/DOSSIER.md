@@ -1,5 +1,11 @@
 # Saga Platform Dossier
 
+## 2026-10-02 — Wave 2 inti Member V1 terintegrasi lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Wave 2 Member V1 source `378e48569f49a17f8adcc9df1e1db325733faf33` (`codex/member-v1-wave2-20261002`, commit lokal, belum push/PR): tiga tab Beranda/Promo/Akun; onboarding nama+consent; kartu dan personalisasi per akun di browser, Points/expiry/XP/perjalanan dari Platform. 598/598 unit/static PASS; browser synthetic terintegrasi320/360/375/390/430, 200% text, Axe critical/serious nol, card reload/storage failure/account-switch, stale503/offline recovery dan expired-session/return path PASS. Backend complete-profile contract1/1 PASS, fixture restart/reset PASS. Backend/database/POS/Owner/provider/production tidak berubah; bukan Google nyata/iPhone/Owner production UAT atau BUSINESS_READY. Wave 3 Promo/POS, Wave 4 Owner, Wave 5 release/UAT tetap berikutnya. Personalisasi tidak cross-device; hak lama tetap.
+
+Before lima tab/onboarding panjang/global card choice → tiga tab/consent singkat/account-scoped card. Runtime terintegrasi memilih UI V1; public dummy mempertahankan showcase existing kecuali opt-in UI. Tidak membuat provider/formula loyalty baru. Dialog Points tidak menyebut data demo pada akun autentik; tombol tutup tidak terhalang judul. Kode reveal existing tetap sementara dan dibuang pada pergantian konteks. Browser tanpa storage tidak mengaku tersimpan. Source rollback revert slice tanpa migrasi; source tidak dipush agar tidak memicu deployment Vercel lama. Service-worker/old-client dan paired artifact/recovery tetap gate rilis. Residual erasure lintas produk sebelumnya tidak ditutup oleh Wave 2.
+
 ## 2026-10-02 — Wave 1 simplifikasi V1, bukan perubahan runtime
 
 `CONFIRMED`: Andreas menyetujui V1 inti, menambahkan personalisasi kartu/XP/perjalanan, lalu meminta Wave 1. Source Member `7a76dda2aded9cd383287526305864b80a89bb59`, baseline frontend `81fc23904c983c04efe2c40f49f9e723d5a55074`; artefak scope, route policy dan wireframe lokal tersedia di source. Semua 21 route lama/six Owner areas dipetakan; klaim, booking dan pesan penting lama tetap memiliki jalur. Member target Beranda/Promo/Akun, Owner target Ringkasan/Member/Promo/Pengaturan; bukan penghapusan domain/backend/data.

@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Member V1 inti sudah di source, belum production
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Wave 2 Member V1 source `378e48569f49a17f8adcc9df1e1db325733faf33` (`codex/member-v1-wave2-20261002`, commit lokal, belum push/PR): tiga tab Beranda/Promo/Akun; onboarding nama+consent; kartu dan personalisasi per akun di browser, Points/expiry/XP/perjalanan dari Platform. 598/598 unit/static PASS; browser synthetic terintegrasi320/360/375/390/430, 200% text, Axe critical/serious nol, card reload/storage failure/account-switch, stale503/offline recovery dan expired-session/return path PASS. Backend complete-profile contract1/1 PASS, fixture restart/reset PASS. Backend/database/POS/Owner/provider/production tidak berubah; bukan Google nyata/iPhone/Owner production UAT atau BUSINESS_READY. Wave 3 Promo/POS, Wave 4 Owner, Wave 5 release/UAT tetap berikutnya. Personalisasi tidak cross-device; hak lama tetap. [Rincian](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Target Member V1 disederhanakan; belum di production
 
 `CONFIRMED` Andreas: Member Beranda/Promo/Akun, kartu+personalisasi, Points, XP/perjalanan, voucher/Reward dan akun; Owner Ringkasan/Member/Promo/Pengaturan. Discovery/alat noninti hide, hak lama tetap. Wave 1 source `7a76dda2aded9cd383287526305864b80a89bb59` LOCAL_SPEC_VALIDATED/NOT_DEPLOYED, bukan implementasi nav atau perubahan backend/production. [Rincian](products/saga-platform/DOSSIER.md); DEC-225. Jangan menjual rancangan sebagai fitur baru aktif.
