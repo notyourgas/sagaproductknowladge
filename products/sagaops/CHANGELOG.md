@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-02 — Legacy retention fix production-activated
+
+`CONFIRMED`; Andreas requested deploy. POSfa5df6c/rollbackb945ab5 and Memberd8c060d4 activated; native4/4, encrypted recovery, public health/monitor/Owner read PASS. Scoped legacy retention/replay correction now deployed, schema/dependency unchanged. Executor OFF; global erasure/history/recovery custody remain OPEN. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Koreksi cakupan retensi legacy Member, source-only
 
 `CONFIRMED`; Andreas meminta melanjutkan bagian independen setelah storage ditunda. Before: cakupan retensi legacy belum lengkap; after: shared scrub/recovery mengikuti deadline asli untuk riwayat legacy, tanpa mengubah fakta keuangan atau outlet/member lain. Source `fa5df6cf7f1c19f79e5d1eb4a4c21b44e6787491`, focused4/4 dan static/OpenAPI/TypeScript PASS; native final NOT_RUN. LOCAL_VALIDATED, belum deploy/push; production b945ab5 tetap. Next: mapping lengkap, admission, full downstream/history dan independent recovery sebelum aktivasi. [Detail](DOSSIER.md).

@@ -1,5 +1,9 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-02 — Retensi legacy dirilis, penghapusan nyata belum aktif
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: POS `fa5df6cf7f1c19f79e5d1eb4a4c21b44e6787491`, rollback `b945ab5653b47435cc353bc7927e6ce2f9bf984a`; paired Member backend `d8c060d4a4dbca6156b60a9c155c8f97a3581e59` aktif. Native focused4/4, recovery kandidat, health/monitor dan Owner kasir/kiosk read smoke PASS; schema35 unchanged. Closure executor OFF, online custody/history/global erasure tetap belum selesai. Snapshot berikut adalah histori. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Retensi riwayat legacy diperbaiki pada source
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `fa5df6cf7f1c19f79e5d1eb4a4c21b44e6787491` memperluas cakupan retensi legacy Member pada batas 30 hari dan recovery jurnal. Empat tes focused serta static/OpenAPI/TypeScript PASS; tidak ada schema/dependency baru. Production masih b945ab5, executor OFF; storage online dan aktivasi global belum selesai. [Detail](DOSSIER.md).

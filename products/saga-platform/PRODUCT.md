@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-02 — CustomerPlatform Member history guard dirilis
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member backend `d8c060d4a4dbca6156b60a9c155c8f97a3581e59`, unchanged frontend81fc239/contracts3279, POSfa5df6c. Guard menolak completion riwayat yang belum terbukti; bukan aktivasi penghapusan SQL. Full72file tests/native artifact15→15, production recovery/rollback/reswitch and public authenticated Owner read PASS. Global erasure OFF; separate Platform backend unchanged. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — CustomerPlatform Member backend d6b3c45 aktif
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: backend `d6b3c45f1bbb5e197692caedee7fc34cbced1125`, frontend `81fc23904c983c04efe2c40f49f9e723d5a55074` unchanged, contracts3279a02; POSb945ab5 aktif. Stored-case coordinator tersedia pada source runtime, tetapi penghapusan nyata masih OFF. Recovery/rollback/reswitch, monitor dan public Owner login/session/dashboard read PASS. Backend Platform terpisah tidak berubah; BUSINESS_READY global closure tidak diklaim. Histori source-only di bawah mendahului rilis ini. [Detail](DOSSIER.md).

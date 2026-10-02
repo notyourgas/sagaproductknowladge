@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-02 — knowledge: ready-source pair production deployment
+
+`CONFIRMED`; Andreas authorized deploy and necessary bounded release work. POSfa5df6c/Memberd8c060d4 activated with preserved rollback/current provenance, native tests, encrypted recovery and public Owner read PASS. Eleven Product/Dossier/Changelog and portfolio/master/gaps/sync/root documents updated on main HEAD. No real erasure/new provider/online storage; global admission/custody/history/expiry and physical UAT OPEN. [POS](products/sagaops/DOSSIER.md), [Member](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — knowledge(sagaops): legacy retention source correction
 
 `CONFIRMED`; Andreas asked to continue independent work. Sourcefa5df6c improves scoped legacy retention/replay, focused4/4 and static PASS. LOCAL_VALIDATED/NOT_PUSHED/NOT_DEPLOYED; production unchanged/erasureOFF. Product/Dossier/Changelog, Portfolio/Master/Gaps/Sync/root synced on main HEAD. Full downstream/recovery/expiry remain OPEN; native release verification NOT_RUN. [Detail](products/sagaops/DOSSIER.md).

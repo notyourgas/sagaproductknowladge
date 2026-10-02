@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-02 — Ready-source deployment closed, global erasure open
+
+`CONFIRMED`: POSfa5df6c and Memberd8c060d4 production-activated after native/recovery/authenticated Owner verification; new-source delivery blocker CLOSED. Global erasure OFF. OPEN: authoritative full history attribution/physical SQL purge, full Book/all-product admission, independently latest journal/key custody/compatible recovery/all-copy expiry; genuine iPhone and physical printer/operator UAT. Online storage deferred. [POS](products/sagaops/DOSSIER.md), [Member](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — Retention coverage corrected locally, activation unchanged
 
 `CONFIRMED`: POSfa5df6c closes one local legacy-retention coverage gap, focused4/4/static PASS. It does not close complete rotated-identity mapping, all-product admission, full Book/history, independent latest journal/compatible rollback or all-copy expiry. Source not pushed/deployed, actualerasureOFF; native release and device/operator acceptance OPEN. [Detail](products/sagaops/DOSSIER.md).

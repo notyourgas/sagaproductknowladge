@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-02 — Ready-source Member–POS pair active
+
+`CONFIRMED`: production POSfa5df6c/rollbackb945ab5 and Memberd8c060d4/rollbackd6b3c45, unchanged Memberfrontend81fc239/contracts3279. Legacy retention fix and unproven history-completion guard deployed; native tests, exact recovery, public health/monitor/authenticated Owner read PASS. Closure production OFF; not global erasure/BUSINESS_READY. Online custody deferred; full Book/SQL purge/all-product admission/latest independent journal/all-copy expiry and device/iPhone UAT remain OPEN. [POS](products/sagaops/DOSSIER.md), [Member](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-02 — SagaPOS legacy retention source correction
 
 `CONFIRMED`: POSfa5df6c LOCAL_VALIDATED/NOT_DEPLOYED; focused4/4 and static/OpenAPI/TypeScript PASS for retention/recovery coverage with other members/outlets and financial facts preserved. ProductionPOSb945ab5/Memberd6b3c45 unchanged, erasureOFF; no new storage/provider, full downstream/recovery/expiry OPEN. [Detail](products/sagaops/DOSSIER.md).

@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-02 — Ready-source pair production milestone
+
+`CONFIRMED`: POSfa5df6c/rollbackb945ab5 aktif, artifact `07af97b50d8f0042bfa5787efe71eb2d9fb67617a87058dd20e10242d041bb6f`. Native PostgreSQL18.6 focused4/4 dan static733/OpenAPI/TypeScript PASS; schema35/dependency unchanged. Fresh encrypted backup/disposable restore, candidate→rollback→candidate boot, public Owner kasir/kiosk read and monitor PASS. Three restricted encrypted off-host copies checksum PASS; fresh off-host restore NOT_RUN. One storage guard failure resolved by removing verified unused build dependencies only, physical gain766234624bytes; source/runtime/data/backups preserved, thresholds unchanged.
+
+Memberd8c060d4 juga aktif dengan unchanged frontend81fc239/contracts3279; fresh recovery/actual authenticated rollback/reswitch/public Owner read PASS. POS key/executor OFF dan Member production erasure hard-deny tetap. Global all-product admission, full Book/SQL history, independently latest journal/key custody and all-copy expiry OPEN; no real erasure or new provider. Business-ready/device/operator acceptance tidak disahkan. Earlier delivery statements below are historical.
+
 ## 2026-10-02 — Koreksi retensi legacy pada source, bukan aktivasi erasure
 
 `CONFIRMED`: local commit `fa5df6cf7f1c19f79e5d1eb4a4c21b44e6787491`, base activated b945ab5, memperbaiki cakupan riwayat legacy Member pada shared scrub dan journal replay. Focused4/4 PASS mencakup deadline minus1ms/exact30hari, retry, instance restart, replay dan isolasi member/outlet. Static733modules/OpenAPI/TypeScript PASS; schema35 dan dependencies unchanged. Native target/release/production erasure NOT_RUN; commit belum dipush/deploy. Independent fresh custody, complete identity mapping, all-product admission, full downstream/history/all-copy expiry tetap OPEN. Tidak ada data/backup nyata dihapus atau provider/storage baru diaktifkan.

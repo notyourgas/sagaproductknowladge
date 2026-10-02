@@ -1,5 +1,13 @@
 # Saga Platform Dossier
 
+## 2026-10-02 — Member history admission guard production release
+
+`CONFIRMED`: release `20261002T065100Z-d8c060d-r0u`, backend `d8c060d4a4dbca6156b60a9c155c8f97a3581e59`, frontend81fc239/contracts3279 unchanged; artifact `2e72fb7fdee7e1e24006d2c9e195e914429932452012ce369d6583da85de084e`, bounded runner478e662 pushed. Before d6→after d8: dormant snapshot history purge retains anonymous quota and refuses unproven retained history completion; physical SQL purge remains NOT_IMPLEMENTED.
+
+Full72isolated files, focused5/nativeSQL tests, runner138Python+13Node and exact-artifact PostgreSQL18.6 unchanged15→15/restart/disposable recovery PASS. Fresh checksum-valid scoped target snapshot had no history checkpoints/counters before admitting old d6 rollback. Production encrypted recovery→Owner switch4.293s→actual rollbackd6→fresh recovery→Owner finalswitch2.379s PASS. State-bound rollback `20261002T043500Z-d6b3c45-r0u`; active backup/disposable restore, public API/PWA/monitor/services and Owner login/session/four reads/logout PASS, no business writes. Genuine iPhone UAT NOT_RUN.
+
+Registration remains permanent, existing Google/OTP/POS scope unchanged, privacy feature false/hard production denial retained. No real purge, keys/providers/payment/storage/timers activated. Full Book/SQL attribution and physical purge, all-product admission, independent latest journal/key custody/all-copy expiry OPEN; no global BUSINESS_READY. Separate Platform backend unchanged. Older entries below are historical.
+
 ## 2026-10-02 — Member backend deployed dengan rollback terverifikasi
 
 `CONFIRMED`: release `20261002T043500Z-d6b3c45-r0u`, backend `d6b3c45f1bbb5e197692caedee7fc34cbced1125`, frontend `81fc23904c983c04efe2c40f49f9e723d5a55074` unchanged, contracts `3279a02b6d06d3532190488f6abbcc59c312d120`, artifact `4757bb795c9732391950e14707f8d6edd2f2fd5d89d6bdb7b6989b915c1e3a67`. Source/runner pushed; runner98827e7 exact bounded pins. Before897366e→afterd6b3c45. Backend full71 isolated file processes, static38, runner102 adversarial plus12 migration/profile tests and exact-artifact native PostgreSQL18.6 15→15 recovery PASS. Fresh production encrypted backup/disposable restore and active backup PASS; no migration additions. Actual switch4.08s→rollback exact897366e/unchangedfrontend with fresh Owner proof→finalswitch3.133s PASS. Monitor/public health/services/timers PASS; public authenticated Owner login, secure cookie, session, four read surfaces and logout PASS, no business writes. Genuine iPhone UAT NOT_RUN.

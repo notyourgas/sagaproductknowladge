@@ -1,5 +1,9 @@
 # Saga Platform Changelog
 
+## 2026-10-02 — Member d8 history guard production-activated
+
+`CONFIRMED`; Andreas authorized deploy. Source d8c060d4/unchangedFE81/contracts3279 and pairedPOSfa5 deployed; full72files/native recovery/runner138+13/fresh production recovery/actual Owner rollback/reswitch/public read PASS. False completion now refused; physical SQL erasure and global closure OFF. Source/runner pushed; genuine iPhone/all-product recovery custody/history/expiry OPEN. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Member d6b3c45 backend release, closure activation held
 
 `CONFIRMED`; Andreas requested deployment. Memberd6b3c45/unchangedfrontend81fc239/contracts3279a02 and POSb945ab5 production-activated. Backend71 processes, runner102+12 tests, native artifact15→15 recovery, fresh production recovery/rollback/reswitch and public authenticated Owner read PASS. No real erasure, new provider, worker or separate Platform backend deployment. Residual all-scope custody/journal/history/backup and genuine iPhone UAT stay OPEN. [Detail](DOSSIER.md).
