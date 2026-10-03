@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-04 — Member remaining release holds
+
+`CONFIRMED`: kandidat backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`, Member
+`0c0b694bfeaee0da5eb4213fa60ecc0767585a19` dan contracts `9629ba8a748c2e402ff582a73c83bf3f82fca6cd`
+menutup implementation lokal Owner factor/recovery dan legacy/multi-tab flows.
+Owner enrollment production masih OPEN; TOTP bukan phishing-resistant;100akun bukan100orang unik.
+Full independent journal replay, physical SQL history/all-copy backup expiry, actual POS/Book scope/UAT,
+exact runtime, compatible release recovery dan physical iPhone masih pending.
+HTTPS timeout dari executor tidak membuktikan global outage. Source belum push/PR/CI;
+artifact/knowledge publication tidak berarti deployment/activation/BUSINESS_READY.
+
 ## 2026-10-03 — Member kontrol lokal; penutupan berikutnya
 
 `CONFIRMED`: source backend `2e2e1ef4f7dcffa84c32e188fd78c98c522a9dc0`, Member

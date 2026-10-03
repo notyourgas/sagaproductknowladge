@@ -1,5 +1,15 @@
 # Saga Platform Changelog
 
+## 2026-10-04 — Member account/recovery candidate
+
+`CONFIRMED`; Andreas meminta implementasi strategi. Backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`,
+Member `0c0b694bfeaee0da5eb4213fa60ecc0767585a19`, contracts `9629ba8a748c2e402ff582a73c83bf3f82fca6cd`:
+Owner factor/recovery, legacy completion, audited correction, multi-tab recovery dan admission
+pendaftaran bersama. Native encrypted disposable restore mempertahankan safety state;
+restore admission membutuhkan independent journal. Source lokal, bukan activation; kuota/hak lama tetap.
+Product/dossier/master/gaps/portfolio/status diperbarui. Production tidak berubah;
+replay/retention lintas produk, actual pairing, Owner/iPhone UAT dan guarded release masih pending.
+
 ## 2026-10-03 — Member kontrol lokal dan recovery synthetic
 
 `CONFIRMED`: atas permintaan Andreas mengerjakan strategi security, backend

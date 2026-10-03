@@ -1,5 +1,20 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-04 — Member: akun dan recovery, kandidat lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend
+`7406361d06c1930b0ff8136ae7698d9c1fb758a3`, Member
+`0c0b694bfeaee0da5eb4213fa60ecc0767585a19`, contracts
+`9629ba8a748c2e402ff582a73c83bf3f82fca6cd`. Owner authenticator dan single-use recovery,
+profil legacy yang belum lengkap, koreksi Owner yang diaudit, kontinuitas multi-tab,
+serta admission pendaftaran bersama diperkuat. Ranking/hak100 akun tetap; bukan jaminan100orang unik.
+Member620tes, contracts31tes/54operasi, API/proxy/browser responsive dan native PostgreSQL18
+encrypted restart/disposable restore lulus. Source belum push/PR/CI.
+Artifact lokal `7a3b039deb2957a6d37be152ff30795abb316c2cb455acdbad7a2b9a7e03aece`;
+packaging/dependency audit PASS bukan deployment. Mode recovery memerlukan jurnal independen;
+replay penuh, all-copy retention, actual Book/POS, enrollment Owner dan iPhone fisik tetap pending.
+Production unchanged/BELUM_DEPLOY; bukan BUSINESS_READY. Tidak ada migrasi/dependency/provider baru.
+
 ## 2026-10-03 — Member: penutupan kontrol lokal, belum rilis
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Customer Platform

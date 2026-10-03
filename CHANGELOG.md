@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Member account and recovery source milestone
+
+`CONFIRMED`; source `7406361d06c1930b0ff8136ae7698d9c1fb758a3` / `0c0b694bfeaee0da5eb4213fa60ecc0767585a19`
+dan contracts `9629ba8a748c2e402ff582a73c83bf3f82fca6cd`. Andreas meminta strategi penutupan dikerjakan;
+kontrol akun, profil dan recovery diperkuat tanpa mengubah authority/cohort/hak lama.
+Delapan dokumen product/dossier/changelog/portfolio/master/gaps/status ini disinkron;
+LOCAL_VALIDATED/NOT_PUSHED/NO_PR/CI_NOT_RUN/BELUM_DEPLOY untuk source. Artifact lokal PASS;
+actual runtime/paired UAT/full recovery-retention/enrollment/iPhone masih pending. Production tidak diubah.
+
 ## 2026-10-04 WIB — Refresh provenance dan packaging lokal Member
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: frontend candidate

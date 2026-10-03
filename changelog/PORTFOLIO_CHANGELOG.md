@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-04 — Member account/recovery lokal
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`,
+Member `0c0b694bfeaee0da5eb4213fa60ecc0767585a19`, contracts `9629ba8a748c2e402ff582a73c83bf3f82fca6cd`.
+Owner factor, legacy profile/correction, multi-tab dan registration admission diperkuat;
+620Member/31contracts tests serta native restore synthetic PASS. Artifact lokal
+`7a3b039deb2957a6d37be152ff30795abb316c2cb455acdbad7a2b9a7e03aece`; production unchanged.
+Authority/kuota/hak lama tidak berubah. Actual POS/Book, full recovery/retention,
+Owner enrollment/iPhone dan release gates tetap pending; source belum push/PR/CI.
+
 ## 2026-10-03 — Saga Member: kontrol lokal terverifikasi
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend

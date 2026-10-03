@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Sinkronisasi 2026-10-04 — Member account/recovery
+
+Status `partially accepted / CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Baseline clean origin/main `e38cbaeaa52079ca967874b4f9c76006e8cbf32b`; source backend
+`7406361d06c1930b0ff8136ae7698d9c1fb758a3`, Member `0c0b694bfeaee0da5eb4213fa60ecc0767585a19`,
+contracts `9629ba8a748c2e402ff582a73c83bf3f82fca6cd`. Source local committed/NOT_PUSHED/NO_PR/CI_NOT_RUN.
+Product/dossier/changelog/portfolio/master/gaps/root changelog/status diperbarui terpisah;
+knowledge final SHA resolve main HEAD setelah push. Artifact lokal PASS, production unchanged/BELUM_DEPLOY.
+Full recovery/retention, actual POS/Book, actual Owner enrollment/iPhone dan guarded release tetap pending.
+
 ## Sinkronisasi 2026-10-03 — Member kontrol lokal
 
 Status `partially accepted / CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

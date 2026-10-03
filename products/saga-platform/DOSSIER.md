@@ -1,5 +1,30 @@
 # Saga Platform Dossier
 
+## 2026-10-04 — Penutupan lanjutan Member, lokal saja
+
+- `CONFIRMED`: source backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`, Member
+  `0c0b694bfeaee0da5eb4213fa60ecc0767585a19`, contracts `9629ba8a748c2e402ff582a73c83bf3f82fca6cd`.
+- Before -> after: Owner mempunyai authenticator/recovery yang harus di-enroll sendiri;
+  profil legacy dapat melengkapi data kosong sekali, koreksi oleh Owner melalui kasus privasi;
+  tab lama tidak menghapus konteks tab baru atau menimpa versi profil.
+- Factor at rest terenkripsi; recovery sekali pakai. TOTP bukan phishing-resistant;
+  tidak tersedia password-only reset. Enrollment production belum dilakukan.
+- Admission pendaftaran bersama mempertahankan cohort/kuota/hak lama; tidak mengklaim unique-human.
+- Kontrak additive54operasi (Member28, machine14, partner7, Owner5), compatibility PASS.
+  Schema migration15berkas byte-identical; tidak ada migrasi/dependency baru.
+- Member620tes dan contracts31tes lulus; integrasi real local API/proxy/browser synthetic
+  membuktikan input denial, stale-tab recovery, koreksi dengan MFA/password, membership age,
+  mobile320–430/Owner1440, Axe,200%text dan reduced motion.
+- Native PostgreSQL18 encrypted dump/restart/disposable restore mempertahankan consumed recovery,
+  admission state, redeemed gift dan closed account. Whole pre-closure backup ditolak dengan
+  independent journal; mode restore tidak boleh menghilangkan jurnal.
+- Artifact lokal SHA256 `7a3b039deb2957a6d37be152ff30795abb316c2cb455acdbad7a2b9a7e03aece`;
+  safe extraction/inventory/dependency audit PASS. Recovery backend harus compatible dengan factor state;
+  rollback frontend bukan bukti rollback backend aman.
+- Masih pending: actual paired POS/Book UAT, replay setelah pre-closure backup, physical SQL history purge,
+  seluruh backup expiry, actual runtime, Owner enrollment, physical iPhone dan sole Release Lead gate.
+  Candidate source local committed/NOT_PUSHED/NO_PR/CI_NOT_RUN/BELUM_DEPLOY; bukan BUSINESS_READY.
+
 ## 2026-10-03 — Kontrol Member tervalidasi lokal
 
 - Klasifikasi `CONFIRMED`, delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — Member account/recovery candidate, belum production
+
+`CONFIRMED`: backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`, Member
+`0c0b694bfeaee0da5eb4213fa60ecc0767585a19`, contracts `9629ba8a748c2e402ff582a73c83bf3f82fca6cd`.
+Owner authenticator/recovery, legacy profile completion, audited correction dan multi-tab reliability
+diimplementasikan lokal; actual Owner enrollment belum dilakukan. Cohort100tetap akun, bukan unique-human.
+Member620tes/contracts31tes/browser/native restore synthetic PASS; artifact lokal tersedia.
+Actual POS/Book, full journal replay/all-copy expiry, runtime/iPhone dan guarded release belum tertutup.
+LOCAL_VALIDATED/NOT_PUSHED/NO_PR/CI_NOT_RUN/BELUM_DEPLOY; bukan BUSINESS_READY. Production tidak diubah.
+
 ## 2026-10-03 — Member: kontrol lokal, bukan deployment
 
 `CONFIRMED`: backend `2e2e1ef4f7dcffa84c32e188fd78c98c522a9dc0`, Member
