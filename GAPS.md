@@ -3,14 +3,15 @@
 ## 2026-10-03 — Member kontrol lokal; penutupan berikutnya
 
 `CONFIRMED`: source backend `2e2e1ef4f7dcffa84c32e188fd78c98c522a9dc0`, Member
-`de0a37f0c0370bade9460d7fe3c3453424881e76` telah commit lokal dan tervalidasi.
+`92d279c74cb6f6d1292bcb1d9f9a0f58aec78ba0` telah commit lokal dan tervalidasi.
 Backend82berkas,Member619tes serta native/mobile/Owner synthetic PASS; BELUM_DEPLOY.
 
 `NEEDS CONFIRMATION / TODO`: pilihan faktor tambahan Owner dan enrollment/recovery yang teruji;
 first100 berarti akun atau orang unik (email terverifikasi bukan unique-person proof);
 actual Studio/POS/Book pairing; physical iPhone dan authenticated production Owner;
 all-scope downstream erasure,30hari history/backup inventory+expiry+jurnal recovery;
-exact protected recovery/artifact dan deployment gates. Tidak semua120skenario selesai/live-PASS.
+exact protected recovery dan deployment gates. Immutable artifact/source-pair lokal sudah PASS;
+itu bukan recovery production atau runtime/UAT. Tidak semua120skenario selesai/live-PASS.
 Tidak ada aktivasi provider/hardware atau mutasi production/akun nyata dari implementasi ini.
 
 

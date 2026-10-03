@@ -4,7 +4,7 @@
 
 - Klasifikasi `CONFIRMED`, delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
   Source backend `2e2e1ef4f7dcffa84c32e188fd78c98c522a9dc0`, frontend
-  `de0a37f0c0370bade9460d7fe3c3453424881e76`, branch masing-masing
+  `92d279c74cb6f6d1292bcb1d9f9a0f58aec78ba0`, branch masing-masing
   `codex/member-security-closure-20261003` dan `codex/member-security-client-20261003`.
   Source commit lokal clean; belum push/PR atau CI. Knowledge disinkron terpisah.
 - Before -> after: kontinuitas login dan penerbitan hadiah diberi pengaman tambahan;
@@ -24,9 +24,18 @@
 - Production tidak dimutasi. `BELUM_DEPLOY`, activation belum dilakukan, BUSINESS_READY tidak diklaim.
   OPEN: pilihan/enrollment/recovery faktor tambahan Owner; first100 akun versus orang unik;
   actual Studio/POS/Book readback; iPhone; downstream erasure/30hari backup inventory+jurnal recovery;
-  exact artifact/protected recovery writer serta deployment gates.
+  exact protected recovery writer serta deployment gates.
 - Older writer data-readable bukan berarti kebijakan recovery aman. Pemulihan harus memakai kandidat
   exact yang mempertahankan pengaman baru. Tidak ada provider/hardware/public staging baru.
+
+- Refresh provenance 2026-10-04 WIB: frontend memperbarui baseline shared contract exact
+  `3279a02b6d06d3532190488f6abbcc59c312d120` (28 operasi, compatibility PASS).
+  Exact source-pair digest `31226cb29f30901cdc9915a151eb3349ee8567a181e7f630b478615268645215`.
+  Immutable artifact SHA256 `2c3e5fb45e9ba9432106fd60e7c865fda8c8c0541a0e4b9a4d2de3e7fd2454c5`,
+  22,531,790 bytes/1,584 files; safe extraction/inventory/production-dependency audit PASS,
+  high-confidence secret findings 0. High-entropy review tetap gate terpisah.
+  Bukan CI, bukti target runtime atau authenticated UAT. Pemeriksaan HTTPS terbatas dari host executor
+  belum memperoleh respons; bukan bukti downtime global. Source tetap belum push/PR/deploy.
 
 
 ## 2026-10-03 — Wave 5 kontrol hadiah Owner dan penutupan celah lokal
