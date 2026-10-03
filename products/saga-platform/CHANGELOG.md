@@ -1,5 +1,15 @@
 # Saga Platform Changelog
 
+## 2026-10-04 — Recovery/retensi SQL Member, local follow-up
+
+`CONFIRMED`: Andreas meminta sisa pekerjaan tercakup; backend
+`adc05074b8782c6fca6483694d6478a44d6240d5` menambahkan attribution durable,
+restricted30hari SQL history purge dan independent encrypted differential recovery.
+85backendfiles/3nativechecks PASS, migration16 additive; Member/contract unchanged.
+LOCAL_VALIDATED/NOT_PUSHED/NO_PR/CI_NOT_RUN/BELUM_DEPLOY; production unchanged.
+Product/dossier/master/gaps/portfolio/status/root diperbarui. Actual Book/POS/global-copy expiry,
+key custody/Owner enrollment/iPhone/target release gates tetapOPEN; bukan BUSINESS_READY.
+
 ## 2026-10-04 — Member account/recovery candidate
 
 `CONFIRMED`; Andreas meminta implementasi strategi. Backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`,

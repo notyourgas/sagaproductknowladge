@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — Member recovery/SQL retention follow-up, lokal
+
+`CONFIRMED`: backend terbaru `adc05074b8782c6fca6483694d6478a44d6240d5`;
+Member0c0b694/contracts9629ba8 unchanged. Recovery checkpoint state Member dan
+restricted SQL history purge30hari kini native-tested, bukan sekadar old-backup rejection.
+85backendfiles/3nativechecks PASS; migration16 additive. Ini bukan global provider/data replay.
+Source local committed/NOT_PUSHED/NO_PR/CI_NOT_RUN/BELUM_DEPLOY; production erasureOFF.
+Actual paired Book/POS, global backup expiry/custody, Owner enrollment/iPhone dan release gates OPEN.
+Catatan7406361 di bawah histori; bukan candidate terbaru atau BUSINESS_READY.
+
 ## 2026-10-04 — Member account/recovery candidate, belum production
 
 `CONFIRMED`: backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`, Member

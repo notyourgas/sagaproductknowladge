@@ -1,5 +1,22 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-04 — Member recovery dan retensi SQL, follow-up lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend
+`adc05074b8782c6fca6483694d6478a44d6240d5` menggantikan kandidat backend7406361.
+Member `0c0b694bfeaee0da5eb4213fa60ecc0767585a19` dan contracts
+`9629ba8a748c2e402ff582a73c83bf3f82fca6cd` tidak berubah.
+Attribution event, penghapusan history SQL yang terbatas per Member setelah30hari,
+dan recovery checkpoint terenkripsi terpisah diimplementasikan lokal.
+85berkas backend dan3tes native PostgreSQL18 PASS: whole-old-backup restore,
+state transaksi/voucher/autentikasi terbaru serta data Member lain tetap terjaga.
+Migration16 additive;15migration lama byte-identical. Tidak ada dependency/provider baru.
+Ini recovery state Member, bukan replay seluruh database/provider lintas produk.
+Production erasure tetapOFF; actual Book/POS/all-scope receipts, seluruhcopy backup expiry,
+custody checkpoint production, Owner enrollment dan iPhone fisik masih pending.
+Source commit lokal, belum push/PR/CI/deploy; production unchanged, bukan BUSINESS_READY.
+Bagian kandidat sebelumnya di bawah adalah histori, bukan status candidate terbaru.
+
 ## 2026-10-04 — Member: akun dan recovery, kandidat lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend

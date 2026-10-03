@@ -1,5 +1,23 @@
 # Saga Platform Dossier
 
+## 2026-10-04 — Follow-up recovery/retensi SQL Member
+
+- `CONFIRMED`: backend `adc05074b8782c6fca6483694d6478a44d6240d5`, Member/contract unchanged dari kandidat04Oktober.
+- Before -> after: journal closure-only belum dapat memulihkan mutasi lebih baru;
+  sekarang bounded encrypted differential checkpoint memulihkan state Member yang exact,
+  termasuk redemption, Points, closure dan recovery-code consumption setelah backup.
+- Ownership event kini durable; unknown legacy tetap ditahan, bukan guessed backfill.
+  Penghapusan SQL dibatasi subject/organization/checkpoint dan deadline30hari;
+  tidak memberi hak penghapusan umum dan tidak menghapus journal closure.
+- Native PostgreSQL18 whole-old-dump restore/replay, restricted purge,
+  completed-case recovery, foreign data preservation dan retry PASS;85berkas backend PASS.
+- Migration16 additive,15existing byte-identical; reader state terbaru diperlukan.
+  Code rollback frontend bukan rollback backend/database yang kompatibel.
+- Local validated/source committed, bukan production activation atau actual customer deletion.
+  Tidak mencakup normalized Partner/provider/external Book/POS database recovery.
+- Remaining: actual legacy provenance/downstream scope, global copy expiry/custody,
+  target-bound backup/restore/rollback, Owner enrollment dan authenticated iPhone/UAT.
+
 ## 2026-10-04 — Penutupan lanjutan Member, lokal saja
 
 - `CONFIRMED`: source backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`, Member

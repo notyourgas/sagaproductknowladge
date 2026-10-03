@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-04 — Member gap refresh sesudah native recovery
+
+`CONFIRMED`: backend `adc05074b8782c6fca6483694d6478a44d6240d5` menutup implementasi lokal
+event ownership, restricted SQL history purge dan bounded Member differential recovery;
+native whole-old-backup replay/reconciliation/restricted recovery PASS.
+`TODO`: actual unknown legacy ownership reconciliation, complete Book/POS scope/receipts,
+backup/WAL/archive/offsite inventory+expiry, latest independent recovery custody,
+normalized Partner/external database recovery, production Owner enrollment/iPhone dan guarded release.
+Jangan menganggap test receipt expiry sebagai expiry copy nyata. Production erasure tetapOFF.
+Fresh HTTPS timeout dari executor bukan global outage; exact runtime belum terverifikasi.
+Source belum push/PR/CI/deploy; bukan BUSINESS_READY. Histori blocker lokal sebelumnya superseded.
+
 ## 2026-10-04 — Member remaining release holds
 
 `CONFIRMED`: kandidat backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`, Member

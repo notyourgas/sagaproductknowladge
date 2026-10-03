@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Member native recovery/SQL retention follow-up
+
+`CONFIRMED`; sumber Andreas meminta sisa pekerjaan tercakup dan source backend
+`adc05074b8782c6fca6483694d6478a44d6240d5`. Durable attribution, restricted SQL purge30hari
+dan encrypted differential state recovery menutup blocker implementasi lokal;
+85backendfiles/3nativechecks PASS. Delapan dokumen product/dossier/changelog/portfolio/master/gaps/status diperbarui.
+LOCAL_VALIDATED/NOT_PUSHED/NO_PR/CI_NOT_RUN/BELUM_DEPLOY; production unchanged.
+Global backup expiry/custody, actual Book/POS/Owner/iPhone dan target release masihOPEN.
+
 ## 2026-10-04 — Member account and recovery source milestone
 
 `CONFIRMED`; source `7406361d06c1930b0ff8136ae7698d9c1fb758a3` / `0c0b694bfeaee0da5eb4213fa60ecc0767585a19`

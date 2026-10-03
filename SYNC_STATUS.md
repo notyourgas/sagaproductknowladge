@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Sinkronisasi 2026-10-04 — Member recovery/retensi SQL follow-up
+
+Status `partially accepted / CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Baseline clean origin/main `29e07fab6f8e0c2aa5d89e1ee9a54fbfff2ab8e2`;
+source backend `adc05074b8782c6fca6483694d6478a44d6240d5`, Member/contract unchanged.
+Delapan dokumen product/dossier/changelog/portfolio/master/gaps/root/status diperbarui.
+85backendfiles/3nativechecks PASS; migration16 additive, no production mutation.
+Source local commit/NOT_PUSHED/NO_PR/CI_NOT_RUN/BELUM_DEPLOY; final knowledge SHA main HEAD.
+Actual pair/global-copy expiry/custody/Owner/iPhone/guarded release pending; bukan BUSINESS_READY.
+
 ## Sinkronisasi 2026-10-04 — Member account/recovery
 
 Status `partially accepted / CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

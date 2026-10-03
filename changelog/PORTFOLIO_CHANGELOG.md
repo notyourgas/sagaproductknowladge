@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-04 — Member recovery dan retensi SQL, lokal saja
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: backend `adc05074b8782c6fca6483694d6478a44d6240d5`;
+Member/contract unchanged. Journal Member differential recovery dan restricted30hari SQL purge
+native-tested:85backendfiles/3nativechecks PASS, migration16 additive.
+Authority/kuota/hak lama dipertahankan. Tidak mengubah production/Book/POS/provider.
+Global-copy expiry/custody, actual paired scope/UAT dan Owner/iPhone/release gates tetap pending.
+Source belum push/PR/CI/deploy, bukan BUSINESS_READY. [Detail](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-04 — Member account/recovery lokal
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: backend `7406361d06c1930b0ff8136ae7698d9c1fb758a3`,
