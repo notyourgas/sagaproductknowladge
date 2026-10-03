@@ -1,5 +1,19 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-03 — Member: penutupan kontrol lokal, belum rilis
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Customer Platform
+`2e2e1ef4f7dcffa84c32e188fd78c98c522a9dc0` dan Member
+`de0a37f0c0370bade9460d7fe3c3453424881e76` memperkuat kontinuitas login,
+admission manfaat setelah profil/persetujuan selesai, permintaan privasi, kelengkapan
+ekspor milik sendiri dan ketahanan API. Authority, ranking/kuota serta hak lama dipertahankan.
+Backend82berkas, Member619tes, integrasi mobile/Owner dan PostgreSQL18 synthetic
+restart/restore lulus. Commit source lokal; belum push/PR/CI/deploy/activation/UAT production.
+Tidak ada migrasi, dependency, provider/hardware atau perubahan production.
+Faktor tambahan Owner/enrollment, aturan akun-versus-orang first100, actual Studio/POS,
+downstream/backup production dan iPhone fisik masih OPEN. Bukan BUSINESS_READY.
+Lihat entri dossier dan changelog tanggal yang sama.
+
 
 ## 2026-10-03 — Wave 5 kontrol hadiah Owner dan penutupan celah lokal
 

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-03 — Saga Member: kontrol lokal terverifikasi
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend
+`2e2e1ef4f7dcffa84c32e188fd78c98c522a9dc0`, Member
+`de0a37f0c0370bade9460d7fe3c3453424881e76`. Kontinuitas login, manfaat pasca
+onboarding/persetujuan, privasi dan ketahanan API diperkuat; authority/ranking/hak lama tetap.
+82berkas backend,619tes Member dan native/mobile/Owner synthetic PASS.
+Tidak ada source push/PR/CI/deployment/activation/provider/hardware mutation.
+POS/Book tidak diubah. Faktor tambahan Owner/policy/actual pairing/production recovery/iPhone OPEN.
+Detail [Saga Platform](../products/saga-platform/DOSSIER.md); bukan BUSINESS_READY.
+
 
 ## 2026-10-03 — Wave 5 kontrol hadiah Owner dan penutupan celah lokal
 

@@ -1,5 +1,33 @@
 # Saga Platform Dossier
 
+## 2026-10-03 — Kontrol Member tervalidasi lokal
+
+- Klasifikasi `CONFIRMED`, delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+  Source backend `2e2e1ef4f7dcffa84c32e188fd78c98c522a9dc0`, frontend
+  `de0a37f0c0370bade9460d7fe3c3453424881e76`, branch masing-masing
+  `codex/member-security-closure-20261003` dan `codex/member-security-client-20261003`.
+  Source commit lokal clean; belum push/PR atau CI. Knowledge disinkron terpisah.
+- Before -> after: kontinuitas login dan penerbitan hadiah diberi pengaman tambahan;
+  profil/persetujuan selesai sebelum hadiah baru diterbitkan. Ranking/kuota100 dan
+  hak yang telah terbit tidak dihapus/diurut ulang. Permintaan privasi aktif dideduplikasi,
+  ekspor menyertakan atribut onboarding milik sendiri, lifecycle auth dirapikan dan API dibatasi.
+- Contract pin, schema database, harga, paid reconciliation dan batas authority tetap.
+  Member projection; Platform authority; Book authority booking; POS authority pembayaran/cart.
+- Bukti: backend82berkas isolated PASS; frontend619 PASS tanpa skip; mobile320/360/375/390/430
+  dan Owner320/360/375/390/430/1440, Axe/keyboard/200%text/reduced-motion serta error/offline
+  sesuai harness PASS. Tiga native gift gates dijalankan terpisah (15tes,0skip).
+  Native PostgreSQL18 membuktikan context isolation/read-role denial, stale writer rejection,
+  restart dan encrypted full-dump disposable restore synthetic: revoked/closed/used state tidak pulih menjadi aktif.
+- Exact tracked-source scan tidak menemukan pola secret high-confidence; registry dependency audit0advisory.
+  Ini bukan full-history/high-entropy scan, bukti setiap grant/RLS production, backup production,
+  offsite expiry, provider nyata, physical iPhone atau authenticated production Owner.
+- Production tidak dimutasi. `BELUM_DEPLOY`, activation belum dilakukan, BUSINESS_READY tidak diklaim.
+  OPEN: pilihan/enrollment/recovery faktor tambahan Owner; first100 akun versus orang unik;
+  actual Studio/POS/Book readback; iPhone; downstream erasure/30hari backup inventory+jurnal recovery;
+  exact artifact/protected recovery writer serta deployment gates.
+- Older writer data-readable bukan berarti kebijakan recovery aman. Pemulihan harus memakai kandidat
+  exact yang mempertahankan pengaman baru. Tidak ada provider/hardware/public staging baru.
+
 
 ## 2026-10-03 — Wave 5 kontrol hadiah Owner dan penutupan celah lokal
 
