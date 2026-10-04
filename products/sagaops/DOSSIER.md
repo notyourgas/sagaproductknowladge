@@ -1,5 +1,29 @@
 # SagaOPS Dossier
 
+## 2026-10-04 — Release stock closing operasional
+
+`CONFIRMED`: Andreas meminta deploy setelah menyetujui preview lokal.
+Before: alur stock closing Gudang/Bar, waste dan review Owner hanya kandidat;
+after: source `149c0a54cc2f486d470b7f2fe109afe20eada6ae` aktif di production,
+rollback `154b29d0e7aa4db6125df0b1ac2572d5b083c104`. Form karyawan
+memilih kategori sebelum bahan, mencatat kemasan utuh dan satuan dasar sesuai
+bahan di Gudang/Bar, menyimpan draft, lalu mengirim hitungan. Owner dapat
+melihat selisih per tanggal, meninjau waste, meminta timbang ulang, dan
+memposting stok satu kali setelah persetujuan. Data tersimpan di PostgreSQL;
+tiga skema staff aditif dipasang sebelum aktivasi, 35 migrasi utama tetap.
+
+Source clean dan push, artifact immutable, backup terenkripsi/restore disposable,
+uji SQL native pada database disposable, boot kandidat→rollback→kandidat,
+authenticated Owner smoke sebelum/sesudah restart, monitor, dan UI Owner
+desktop 1440/mobile 390 PASS. Regresi relevan 38/38 PASS dan static/type PASS;
+suite seluruh repo tidak selesai karena browser POS lama macet, bukan diklaim
+lulus. Browser smoke generik lama gagal pada login form; pemeriksaan terarah
+Owner stock-closing lolos tanpa error atau overflow. Tidak ada order/payment
+nyata, stock count, atau waste production yang dibuat pada verifikasi ini.
+Gateway existing tetap GATEWAY, Order Meja tetap DEMO. UAT input oleh karyawan
+nyata, timbang fisik, review/posting Owner, dan restore off-host untuk snapshot
+ini masih OPEN; bukan BUSINESS_READY.
+
 ## 2026-10-02 — Ready-source pair production milestone
 
 `CONFIRMED`: POSfa5df6c/rollbackb945ab5 aktif, artifact `07af97b50d8f0042bfa5787efe71eb2d9fb67617a87058dd20e10242d041bb6f`. Native PostgreSQL18.6 focused4/4 dan static733/OpenAPI/TypeScript PASS; schema35/dependency unchanged. Fresh encrypted backup/disposable restore, candidate→rollback→candidate boot, public Owner kasir/kiosk read and monitor PASS. Three restricted encrypted off-host copies checksum PASS; fresh off-host restore NOT_RUN. One storage guard failure resolved by removing verified unused build dependencies only, physical gain766234624bytes; source/runtime/data/backups preserved, thresholds unchanged.

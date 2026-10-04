@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-04 — SagaPOS stock closing aktif
+
+`CONFIRMED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`: input fisik
+Gudang/Bar per kategori dan satuan bahan, laporan waste, serta review Owner
+per tanggal tersedia pada source `149c0a54cc2f486d470b7f2fe109afe20eada6ae`.
+Backup/restore, rehearsal, login Owner dan browser desktop/mobile PASS;
+UAT karyawan/stock count nyata belum. Gateway existing tidak diubah.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-04 — Member release recovery admission, lokal
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: runner `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`,

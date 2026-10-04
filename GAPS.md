@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-04 — Stock closing release: penerimaan operasional
+
+`CONFIRMED`: kandidat `149c0a54cc2f486d470b7f2fe109afe20eada6ae`
+aktif dan Owner review read-only lulus. `TODO`: karyawan melakukan satu
+closing fisik pada hari kerja nyata, Owner memeriksa waste/selisih lalu
+menyetujui atau mengembalikan; cocokkan saldo serta audit sesudah restart.
+Suite seluruh repo dan skrip browser generik tidak PASS pada run rilis;
+regresi relevan serta browser terarah lulus. Off-host restore snapshot baru
+belum diuji. Jangan mengklaim stock closing BUSINESS_READY sebelum UAT fisik.
+
 ## 2026-10-04 — Member release-access dan recovery checkpoint
 
 `CONFIRMED`: admission runner lokal ditutup, commit `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`;

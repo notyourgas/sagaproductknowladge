@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-04 — Stock closing production-activated
+
+`CONFIRMED`; Andreas menyetujui deploy. Source `149c0a54cc2f486d470b7f2fe109afe20eada6ae`
+aktif, rollback `154b29d0e7aa4db6125df0b1ac2572d5b083c104`. Draft hitung
+Gudang/Bar, satuan bahan, waste, serta review/posting Owner kini tersambung
+ke PostgreSQL. Regresi relevan38/38, disposable SQL/restore, rehearsal,
+authenticated restart, monitor, dan browser Owner 1440/390 PASS. Full repo
+suite dan generic browser script tidak PASS; UAT kerja karyawan dan posting
+fisik masih OPEN. Payment GATEWAY existing dan Table DEMO tidak berubah.
+`BUSINESS_READY=false`. [Detail](DOSSIER.md).
+
 ## 2026-10-02 — Legacy retention fix production-activated
 
 `CONFIRMED`; Andreas requested deploy. POSfa5df6c/rollbackb945ab5 and Memberd8c060d4 activated; native4/4, encrypted recovery, public health/monitor/Owner read PASS. Scoped legacy retention/replay correction now deployed, schema/dependency unchanged. Executor OFF; global erasure/history/recovery custody remain OPEN. [Detail](DOSSIER.md).

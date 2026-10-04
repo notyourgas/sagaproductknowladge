@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-04 — Stock closing karyawan dan review Owner aktif
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`:
+SagaPOS source `149c0a54cc2f486d470b7f2fe109afe20eada6ae` aktif dengan rollback
+`154b29d0e7aa4db6125df0b1ac2572d5b083c104`. Karyawan dapat menyimpan
+draft hitung fisik Gudang/Bar per kategori dengan satuan bahan dan melaporkan
+waste; Owner meninjau selisih per tanggal, mengembalikan hitungan, serta
+menyetujui posting stok sekali. Pembayaran Gateway existing, Order Meja DEMO,
+dan batas transaksi tidak diubah. Login Owner/read-only UI production lulus;
+input karyawan dan posting pada operasional nyata belum diterima Owner.
+[Detail](DOSSIER.md).
+
 ## 2026-10-02 — Retensi legacy dirilis, penghapusan nyata belum aktif
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: POS `fa5df6cf7f1c19f79e5d1eb4a4c21b44e6787491`, rollback `b945ab5653b47435cc353bc7927e6ce2f9bf984a`; paired Member backend `d8c060d4a4dbca6156b60a9c155c8f97a3581e59` aktif. Native focused4/4, recovery kandidat, health/monitor dan Owner kasir/kiosk read smoke PASS; schema35 unchanged. Closure executor OFF, online custody/history/global erasure tetap belum selesai. Snapshot berikut adalah histori. [Detail](DOSSIER.md).

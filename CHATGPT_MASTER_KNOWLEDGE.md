@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — SagaPOS stock closing dirilis
+
+`CONFIRMED`: source SagaPOS `149c0a54cc2f486d470b7f2fe109afe20eada6ae`
+production-activated, rollback `154b29d0e7aa4db6125df0b1ac2572d5b083c104`.
+Karyawan menghitung fisik Gudang/Bar per kategori dan satuan bahan serta
+melaporkan waste; Owner meninjau per tanggal sebelum koreksi stok diposting
+sekali. PostgreSQL menyimpan draft/audit. Backup/recovery dan Owner read-only
+browser lulus, tetapi uji karyawan/stock count nyata belum diterima.
+Gateway existing tetap, Table DEMO; bukan bukti BUSINESS_READY.
+
 ## 2026-10-04 — Member runner recovery admission
 
 `CONFIRMED`: runner `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`, 123 tes lokal PASS.
