@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-04 — CSV dan selisih stock closing SagaPOS, source-only
+
+Status `partially accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Source
+`7b760cad775c84df56ad8a990c64a1f6008c265e` menambah ringkasan baris
+berselisih dan ekspor CSV Owner-only. Tes terkait 10/10, static 747 modul/35
+migrasi, TypeScript dan diff check PASS. SSH VPS dan semua 12 surface link
+timeout pada pemeriksaan dari executor; exact live runtime belum dapat
+dipastikan dan tidak ada deploy. UAT stok fisik dan `BUSINESS_READY` terbuka.
+
 ## 2026-10-04 — Laporan stock closing SagaPOS, source-only
 
 Status `partially accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /

@@ -1,5 +1,23 @@
 # SagaOPS Dossier
 
+## 2026-10-04 — Finalisasi laporan stock closing, kandidat belum rilis
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Before: ringkasan Owner belum menunjukkan jumlah selisih dan belum ada
+unduhan hitungan/waste. After: source
+`7b760cad775c84df56ad8a990c64a1f6008c265e` menampilkan jumlah
+baris berselisih tanpa menjumlah gram dan mililiter, serta CSV Owner-only
+yang memisahkan HITUNGAN dari WASTE dan menjaga nol, tanda selisih, draft,
+tanggal, dan status review. Validasi tanggal kalender, batas hasil utuh,
+isolasi outlet, auth, CSV formula safety, session expiry, respons terlambat,
+mobile/desktop dan accessibility tercakup dalam regresi terkait 10/10.
+Static 747 modul/35 migrasi dan TypeScript lulus; schema/dependency tetap.
+
+Tidak ada mutasi stok/payment production. SSH VPS dan pemeriksa 12 surface
+publik timeout dari executor; status live production tidak dapat diverifikasi
+dan tidak ada deploy/aktivasi untuk source ini. UAT fisik karyawan, review
+Owner, restart/reconciliation production dan release recovery tetap gate.
+
 ## 2026-10-04 — Laporan stock closing Owner: ringkasan dan hasil utuh
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-04 — Laporan stock closing Owner: selisih dan CSV, source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `7b760cad775c84df56ad8a990c64a1f6008c265e` menambahkan jumlah
+baris bahan berselisih pada rentang tanggal dan ekspor CSV hitungan serta
+waste yang dipisah, dengan satuan per bahan dan batas laporan tetap. Owner
+tetap memutuskan posting; unduhan tidak mengubah stok. Regresi terkait 10/10
+dan static/TypeScript lulus. VPS serta 12 surface publik timeout pada
+verifikasi dari executor; production terbaru belum dapat dipastikan, tidak
+ada aktivasi pada perubahan ini. UAT hitung fisik tetap terbuka.
+[Detail](DOSSIER.md).
+
 ## 2026-10-04 — Ringkasan laporan stock closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

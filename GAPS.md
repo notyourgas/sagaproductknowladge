@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-04 — Laporan stock closing: rilis dan uji fisik terbuka
+
+- `CONFIRMED`: source `7b760cad775c84df56ad8a990c64a1f6008c265e` sudah push; regresi terkait 10/10 dan static/TypeScript PASS, tetapi belum aktif di production.
+- `TODO`: pulihkan akses/verifikasi live (SSH dan 12 surface timeout dari executor), periksa exact active/rollback, backup dan recovery kandidat, lalu authenticated smoke tanpa transaksi baru sebelum aktivasi.
+- `TODO`: karyawan menghitung bahan fisik pada akhir shift, Owner menguji review waste, koreksi atau posting sekali, lalu mencocokkan saldo/audit setelah restart. Jangan klaim `BUSINESS_READY` dari data sintetis.
+
 ## 2026-10-04 — Gate rilis voucher lintas produk
 
 - `CONFIRMED`: source kode voucher, pilihan otomatis/manual, independent Book gate, shared settlement dan native local persistence/Book restore telah diimplementasikan dan diuji; bukan runtime production baru.

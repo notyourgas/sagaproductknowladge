@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-04 — SagaPOS laporan stock closing: selisih dan CSV source-only
+
+`CONFIRMED`: source `7b760cad775c84df56ad8a990c64a1f6008c265e`
+menambahkan ringkasan baris berselisih serta CSV Owner-only untuk hitungan
+dan waste. Regresi 10/10 serta static/TypeScript PASS. `SOURCE_PUSHED /
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; SSH dan 12 surface live timeout,
+sehingga aktivasi dan UAT fisik belum dilakukan. [Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-04 — SagaPOS ringkasan stock closing source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — SagaPOS laporan stock closing tambahan belum diaktifkan
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `7b760cad775c84df56ad8a990c64a1f6008c265e` memberi Owner
+ringkasan jumlah baris berselisih dan CSV hitungan/waste terpisah. Satuan
+berbeda tidak dijumlah; waste menunggu bukan pengurangan stok. Regresi 10/10
+dan static/TypeScript lulus. Verifikasi live 12 surface dan SSH timeout;
+tidak ada deploy atau UAT fisik untuk perubahan ini. Runtime terkini tidak
+boleh disimpulkan dari snapshot lama. [SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-04 — Ringkasan stock closing SagaPOS belum diaktifkan
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

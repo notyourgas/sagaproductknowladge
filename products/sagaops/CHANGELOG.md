@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-04 — Selisih dan CSV laporan stock closing lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `7b760cad775c84df56ad8a990c64a1f6008c265e`; Owner mendapat jumlah baris berselisih dan CSV hitungan/waste terpisah, tanpa posting otomatis.
+- Regresi terkait 10/10, static/TypeScript PASS; SSH dan 12 URL SagaPOS timeout saat live check. Tidak ada deploy, stok atau payment production yang diubah. UAT fisik dan gate recovery masih terbuka. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Ringkasan laporan stock closing lokal
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `6aa6c8af8602ad465a1f3fa3d93a09156c11a29e`; ringkasan status rentang tanggal, hasil lama dibersihkan saat gagal, dan batas 100 hitungan/200 waste tidak lagi terpotong diam-diam.

@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Sinkronisasi CSV dan selisih stock closing SagaPOS
+
+- `CONFIRMED`: source `7b760cad775c84df56ad8a990c64a1f6008c265e` telah push; Owner report menampilkan baris berselisih dan CSV hitungan/waste terpisah. Regresi 10/10, static/TypeScript PASS.
+- Product/Dossier/Changelog SagaOPS, portfolio, master, gaps dan status sinkronisasi diperbarui. Production tidak berubah oleh task ini; akses live timeout dan UAT fisik tetap gate.
+
 ## 2026-10-04 — Sinkronisasi ringkasan stock closing SagaPOS
 
 - `CONFIRMED`: source `6aa6c8af8602ad465a1f3fa3d93a09156c11a29e` telah push; ringkasan filter Owner dan penolakan laporan terpotong tervalidasi lokal (9/9 tes terkait, static/TypeScript PASS).
