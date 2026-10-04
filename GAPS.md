@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-04 — Residual rilis laporan stock closing
+
+- `CONFIRMED`: akses VPS pulih dan source `60c77dcba62ff237fa78dec649949e5e7d91de43` sudah aktif; gate backup/restore, rehearsal, Owner read/restart, monitor, dan browser fitur 1440/390 lulus. Blokir koneksi/deploy pada entri lama di bawah telah teratasi.
+- `TODO`: perbaiki race login pada skrip browser generik lalu jalankan ulang, tanpa menurunkan assertion. Full suite dan off-host restore snapshot baru masih terbuka.
+- `TODO`: UAT nyata karyawan dan Owner untuk hitung fisik, waste, review, posting sekali, saldo, audit, serta restart; jangan klaim `BUSINESS_READY` sebelum hasilnya diterima.
+
 ## 2026-10-04 — Laporan stock closing: rilis dan uji fisik terbuka
 
 - `CONFIRMED`: source `7b760cad775c84df56ad8a990c64a1f6008c265e` sudah push; regresi terkait 10/10 dan static/TypeScript PASS, tetapi belum aktif di production.

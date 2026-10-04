@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-04 — SagaPOS laporan stock closing aktif
+
+`CONFIRMED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`: source
+`60c77dcba62ff237fa78dec649949e5e7d91de43` aktif dengan rollback
+`149c0a54cc2f486d470b7f2fe109afe20eada6ae`. Owner dapat memeriksa
+ringkasan, selisih, CSV, dan detail kartu berdasarkan tanggal. Recovery,
+Owner restart smoke, monitor, serta browser fitur 1440/390 lulus;
+browser generik race login dan UAT stok fisik tetap terbuka. Gateway
+existing tidak diubah. Status source-only berikut adalah riwayat.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-04 — SagaPOS stock closing: statistik bisa dibuka
 
 `CONFIRMED`: source `60c77dcba62ff237fa78dec649949e5e7d91de43`

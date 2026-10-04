@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Sinkronisasi aktivasi laporan stock closing SagaPOS
+
+- `CONFIRMED`: atas instruksi deploy Andreas, source `60c77dcba62ff237fa78dec649949e5e7d91de43` kini production-activated; rollback `149c0a54cc2f486d470b7f2fe109afe20eada6ae`. Ringkasan, selisih, CSV, dan detail statistik Owner tersedia; Gateway existing dan Order Meja DEMO tetap.
+- Product/Dossier/Changelog SagaOPS, portfolio, master, gaps, dan status sinkronisasi diperbarui. Recovery, Owner restart smoke, monitor, dan browser fitur lulus; generic browser race login, full suite, off-host restore baru, dan UAT fisik tetap terbuka. `BUSINESS_READY=false`.
+
 ## 2026-10-04 — Sinkronisasi desain statistik stock closing SagaPOS
 
 - `CONFIRMED`: Andreas meminta rincian statistik saat hover/tap dengan `bklit/bklit-ui` sebagai referensi; source `60c77dcba62ff237fa78dec649949e5e7d91de43` telah push. Lima kartu Owner kini menampilkan fakta terkait, termasuk empty state, tanpa mengganti data atau posting stok.

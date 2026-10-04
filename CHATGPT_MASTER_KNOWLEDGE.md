@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — Laporan stock closing SagaPOS production-activated
+
+`CONFIRMED`: SagaPOS `60c77dcba62ff237fa78dec649949e5e7d91de43`
+aktif, rollback `149c0a54cc2f486d470b7f2fe109afe20eada6ae`.
+Ringkasan Owner, selisih, CSV hitungan/waste, dan rincian statistik
+hover/tap/keyboard tersedia di Gudang. Filter memakai data server dan
+posting stok tetap memerlukan persetujuan. Recovery, authenticated Owner
+restart, monitor, dan browser terarah 1440/390 lulus. Generic browser
+smoke race login, UAT fisik, dan off-host restore terbaru terbuka;
+`BUSINESS_READY=false`. Gateway existing/Order Meja DEMO tetap.
+Status source-only di bawah adalah riwayat. [SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-04 — Rincian statistik stock closing SagaPOS masih source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

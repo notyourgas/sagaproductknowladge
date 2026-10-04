@@ -1,5 +1,27 @@
 # SagaOPS Dossier
 
+## 2026-10-04 — Aktivasi laporan stock closing Owner
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+Perintah Andreas untuk memeriksa koneksi, menguji, dan deploy bila siap
+ditutup pada source clean/pushed
+`60c77dcba62ff237fa78dec649949e5e7d91de43`; rollback
+`149c0a54cc2f486d470b7f2fe109afe20eada6ae`. Tiga commit laporan
+di atas runtime lama diaktivasi tanpa perubahan 35 migrasi, package lock,
+mode Gateway, atau transaksi pembayaran. Owner mendapat ringkasan rentang,
+baris selisih, CSV hitungan/waste, serta kartu dengan rincian hover/tap/keyboard.
+Saldo tetap berubah hanya lewat persetujuan Owner yang sudah ada.
+
+Regresi terfokus 23/23 dan static/TypeScript lulus; paket immutable dan
+target admission, backup terenkripsi dengan restore disposable, rehearsal
+kandidat-rollback-kandidat, aktivasi, health, authenticated Owner sebelum
+dan sesudah restart, monitor, serta 12 batas URL lulus. Browser terarah
+1440/390 memverifikasi tampilan laporan, dua filter tanggal, CSV, API 200,
+dan tanpa overflow. Skrip browser generik gagal karena balapan form login
+saat sesi pulih; ini tidak dihitung lulus. Suite seluruh repo dan UAT fisik
+karyawan/Owner belum dilakukan. Off-host restore snapshot baru belum diuji;
+`BUSINESS_READY` tetap false. Entri source-only di bawah adalah riwayat.
+
 ## 2026-10-04 — Detail statistik Owner dari hover, tap, dan keyboard
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

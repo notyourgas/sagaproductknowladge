@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-04 — Laporan stock closing Owner production-activated
+
+- `CONFIRMED`: source `60c77dcba62ff237fa78dec649949e5e7d91de43` aktif, rollback `149c0a54cc2f486d470b7f2fe109afe20eada6ae`. Ringkasan, selisih, CSV, dan rincian statistik kini tersedia di Gudang Owner; tidak ada posting stok otomatis.
+- Paket immutable, backup/restore, rehearsal, authenticated restart, monitor, 12 URL, dan browser terarah 1440/390 PASS. Smoke browser generik gagal karena race login; full suite dan UAT fisik belum lulus/dilakukan. Gateway existing tetap, transaksi verifikasi nol, `BUSINESS_READY=false`. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Kartu statistik stock closing interaktif
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `60c77dcba62ff237fa78dec649949e5e7d91de43`; rincian statistik Owner muncul lewat hover desktop dan tap/keyboard mobile, memakai data aktual dari rentang tanggal terpilih.

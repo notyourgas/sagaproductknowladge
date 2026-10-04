@@ -1,5 +1,19 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-04 — Laporan stock closing Owner aktif di production
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`:
+source `60c77dcba62ff237fa78dec649949e5e7d91de43` aktif, rollback
+`149c0a54cc2f486d470b7f2fe109afe20eada6ae`. Ringkasan tanggal,
+jumlah baris berselisih, CSV hitungan/waste, serta rincian kartu saat
+hover/tap/keyboard kini tersedia di Gudang Owner. Filter tidak menyajikan
+hasil lama atau terpotong sebagai lengkap. Backup/restore, rehearsal,
+authenticated restart, monitor, dan browser terarah 1440/390 lulus;
+skrip browser generik masih memiliki race login. UAT hitung fisik,
+review/posting nyata, dan off-host restore snapshot baru tetap terbuka.
+Gateway existing dan Order Meja DEMO tidak diubah. Entri source-only di
+bawah adalah status historis sebelum aktivasi ini. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Rincian statistik stock closing interaktif, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
