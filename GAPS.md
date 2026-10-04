@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-04 — Member release-access dan recovery checkpoint
+
+`CONFIRMED`: admission runner lokal ditutup, commit `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`;
+123 tes PASS. `TODO`: pulihkan jalur akses VPS; identifikasi exact active runtime/lock,
+siapkan compatible recovery pair, target backup/disposable restore dan UAT autentik.
+Jangan menyamakan migration inventory dengan bukti seluruh runtime kompatibel.
+Expiry/custody seluruh copy dan external Book/POS recovery tetap OPEN; production erasure OFF.
+Source produk/runner belum deploy; koneksi gagal sebelum login, bukan bukti password salah.
+
 ## 2026-10-04 — Member gap refresh sesudah native recovery
 
 `CONFIRMED`: backend `adc05074b8782c6fca6483694d6478a44d6240d5` menutup implementasi lokal

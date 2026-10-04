@@ -1,5 +1,17 @@
 # Saga Platform Dossier
 
+## 2026-10-04 — Admission recovery rilis
+
+- `CONFIRMED`: runner `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`, local only.
+- Sebelum: kecocokan skema saja belum cukup untuk mengakui recovery runtime terbaru.
+  Sesudah: admission konservatif sebelum mutasi rilis; 123 tes regression runner PASS.
+- Tidak membuktikan kompatibilitas seluruh runtime hanya dari inventory migration;
+  exact recovery candidate dan target-bound rehearsal tetap wajib.
+- Source backend/Member/contracts dan artifact adc0507 unchanged. Runner bukan package aplikasi baru.
+  Source runner belum push/PR/CI/deploy; tidak mengubah layanan/provider/data production.
+- Koneksi SSH gagal sebelum autentikasi dan HTTPS belum terjangkau dari executor.
+  Vault bukan blocker; password belum dapat dinilai. Global outage tidak diklaim.
+
 ## 2026-10-04 — Follow-up recovery/retensi SQL Member
 
 - `CONFIRMED`: backend `adc05074b8782c6fca6483694d6478a44d6240d5`, Member/contract unchanged dari kandidat04Oktober.

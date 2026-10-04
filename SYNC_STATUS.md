@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## Sinkronisasi 2026-10-04 — Member runner recovery admission
+
+Status `partially accepted / CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Baseline clean origin/main `05e2db80ccebb1dd2e1f3c5b4918c12d3809af76`;
+runner source `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`, 123 tes PASS.
+Delapan dokumen diperbarui; source aplikasi unchanged, source runner belum push/PR/CI/deploy.
+Knowledge final SHA main HEAD setelah push; production unchanged, bukan BUSINESS_READY.
+VPS access/recovery/UAT/retensi lintas produk pending.
+
 ## Sinkronisasi 2026-10-04 — Member recovery/retensi SQL follow-up
 
 Status `partially accepted / CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

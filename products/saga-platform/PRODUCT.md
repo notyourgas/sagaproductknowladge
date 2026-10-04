@@ -1,5 +1,15 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-04 — Pengaman recovery rilis Member, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: runner commit
+`d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8` menolak jalur recovery yang belum kompatibel
+sebelum mutasi layanan/rilis. 123 tes runner lulus; kandidat backend/Member/contracts tidak berubah.
+Source runner belum push/PR/CI/deploy. Akses jaringan VPS dari executor belum tersedia;
+ini bukan bukti password salah atau gangguan global. Recovery yang kompatibel, target-bound
+backup/restore, actual Book/POS, expiry/custody seluruh copy, Owner/iPhone tetap diperlukan.
+Production unchanged/BELUM_DEPLOY; bukan BUSINESS_READY.
+
 ## 2026-10-04 — Member recovery dan retensi SQL, follow-up lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend

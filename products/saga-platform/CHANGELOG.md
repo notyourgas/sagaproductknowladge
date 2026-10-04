@@ -1,5 +1,13 @@
 # Saga Platform Changelog
 
+## 2026-10-04 — Runner recovery admission, belum deploy
+
+`CONFIRMED`: permintaan Andreas untuk melanjutkan penutupan; source runner
+`d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`. Pengaman kompatibilitas diterapkan sebelum
+mutasi rilis; 123 tes runner PASS. Backend/Member/contracts unchanged, production unchanged.
+Product/dossier/root/portfolio/master/gaps/status disinkron. Source runner NOT_PUSHED/NO_PR/
+CI_NOT_RUN/BELUM_DEPLOY; actual target/recovery/UAT dan retensi lintas produk tetap pending.
+
 ## 2026-10-04 — Recovery/retensi SQL Member, local follow-up
 
 `CONFIRMED`: Andreas meminta sisa pekerjaan tercakup; backend

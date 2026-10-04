@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — Member runner recovery admission
+
+`CONFIRMED`: runner `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`, 123 tes lokal PASS.
+Pengaman kompatibilitas sebelum mutasi rilis; backend adc0507/Member0c0b694/contracts9629ba8 unchanged.
+Source runner belum push/PR/CI/deploy. Akses jaringan VPS belum tersedia dari executor;
+password salah maupun global outage tidak terbukti. Recovery/UAT/retensi production tetap OPEN.
+
 ## 2026-10-04 — Member recovery/SQL retention follow-up, lokal
 
 `CONFIRMED`: backend terbaru `adc05074b8782c6fca6483694d6478a44d6240d5`;

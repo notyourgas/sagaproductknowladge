@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-04 — Member release recovery admission, lokal
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: runner `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`,
+123 tes PASS; pengaman kompatibilitas sebelum mutasi rilis. Source produk/artifact unchanged;
+production unchanged/BELUM_DEPLOY. Akses VPS, exact recovery/UAT dan retensi lintas produk
+masih pending; bukan BUSINESS_READY. [Detail](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-04 — Member recovery dan retensi SQL, lokal saja
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED`: backend `adc05074b8782c6fca6483694d6478a44d6240d5`;

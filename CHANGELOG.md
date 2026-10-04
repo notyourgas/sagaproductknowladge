@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Member runner recovery admission
+
+`CONFIRMED`; permintaan Andreas melanjutkan penutupan, runner
+`d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`. Pengaman sebelum mutasi rilis; 123 tes lokal PASS.
+Delapan dokumen product/dossier/changelog/portfolio/master/gaps/status diperbarui.
+Source aplikasi unchanged; runner NOT_PUSHED/NO_PR/CI_NOT_RUN/BELUM_DEPLOY.
+Production unchanged. Akses VPS, compatible recovery pair dan actual UAT/retensi tetap pending.
+
 ## 2026-10-04 — Member native recovery/SQL retention follow-up
 
 `CONFIRMED`; sumber Andreas meminta sisa pekerjaan tercakup dan source backend
