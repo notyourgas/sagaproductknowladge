@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — Rincian statistik stock closing SagaPOS masih source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `60c77dcba62ff237fa78dec649949e5e7d91de43` membuat lima kartu
+Owner stock closing dapat dibuka rinciannya dengan hover desktop atau
+tap/keyboard mobile. Fakta berasal dari filter tanggal yang sama dan tidak
+menjumlah satuan berbeda. Regresi 10/10 serta static/TypeScript lulus;
+production dan status BUSINESS_READY tidak berubah oleh pekerjaan ini.
+[SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-04 — SagaPOS laporan stock closing tambahan belum diaktifkan
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

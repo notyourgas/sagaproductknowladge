@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-04 — SagaPOS stock closing: statistik bisa dibuka
+
+`CONFIRMED`: source `60c77dcba62ff237fa78dec649949e5e7d91de43`
+menambah rincian fakta pada kartu laporan Owner saat hover/tap/keyboard,
+berpola tooltip Bklit UI tanpa menyalin Studio atau menambah React.
+Browser/regresi 10/10 dan static/TypeScript PASS; source-only, belum
+production-deployed atau UAT stok fisik.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-04 — SagaPOS laporan stock closing: selisih dan CSV source-only
 
 `CONFIRMED`: source `7b760cad775c84df56ad8a990c64a1f6008c265e`

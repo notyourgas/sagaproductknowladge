@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Sinkronisasi desain statistik stock closing SagaPOS
+
+- `CONFIRMED`: Andreas meminta rincian statistik saat hover/tap dengan `bklit/bklit-ui` sebagai referensi; source `60c77dcba62ff237fa78dec649949e5e7d91de43` telah push. Lima kartu Owner kini menampilkan fakta terkait, termasuk empty state, tanpa mengganti data atau posting stok.
+- Product/Dossier/Changelog SagaOPS, portfolio, master, dan status sinkronisasi diperbarui. Regresi/browser 10/10, static/TypeScript PASS; tidak ada deployment/aktivasi production atau UAT fisik pada perubahan ini.
+
 ## 2026-10-04 — Sinkronisasi CSV dan selisih stock closing SagaPOS
 
 - `CONFIRMED`: source `7b760cad775c84df56ad8a990c64a1f6008c265e` telah push; Owner report menampilkan baris berselisih dan CSV hitungan/waste terpisah. Regresi 10/10, static/TypeScript PASS.

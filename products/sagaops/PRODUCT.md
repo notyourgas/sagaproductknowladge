@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-04 — Rincian statistik stock closing interaktif, source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `60c77dcba62ff237fa78dec649949e5e7d91de43` membuat lima kartu
+ringkasan Owner dapat diperiksa lebih rinci lewat hover desktop atau
+tap/keyboard di ponsel. Rincian hanya memakai data hitungan dan waste pada
+rentang terpilih; nilai kosong tetap dijelaskan, tidak dibuat-buat. Pola
+interaksi mengambil inspirasi dari chart tooltip Bklit UI tanpa membawa
+runtime React/Studio ke SagaPOS. Regresi terkait 10/10 dan static/TypeScript
+lulus; belum diaktivasi production atau diuji pada stok fisik nyata.
+[Detail](DOSSIER.md).
+
 ## 2026-10-04 — Laporan stock closing Owner: selisih dan CSV, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

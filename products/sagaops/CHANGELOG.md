@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-04 — Kartu statistik stock closing interaktif
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `60c77dcba62ff237fa78dec649949e5e7d91de43`; rincian statistik Owner muncul lewat hover desktop dan tap/keyboard mobile, memakai data aktual dari rentang tanggal terpilih.
+- Regresi terkait 10/10, browser 390/1440 dan Axe serious/critical 0, static/TypeScript PASS. Tidak ada dependency/schema/payment/stok production yang berubah; aktivasi dan UAT fisik belum dilakukan. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Selisih dan CSV laporan stock closing lokal
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `7b760cad775c84df56ad8a990c64a1f6008c265e`; Owner mendapat jumlah baris berselisih dan CSV hitungan/waste terpisah, tanpa posting otomatis.

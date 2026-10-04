@@ -1,5 +1,27 @@
 # SagaOPS Dossier
 
+## 2026-10-04 — Detail statistik Owner dari hover, tap, dan keyboard
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Sumber keputusan Andreas: statistik stock closing perlu rincian saat hover
+atau tap, dengan `bklit/bklit-ui` sebagai referensi. Before: lima angka
+ringkasan tampil statis. After: source
+`60c77dcba62ff237fa78dec649949e5e7d91de43` menampilkan hingga lima
+baris fakta yang mendasari tiap kartu, lalu mengarahkan ke daftar tanggal
+untuk sisanya. Desktop menampilkan preview hover; tap/keyboard membuka
+rincian yang tetap terlihat. Hari, menunggu Owner, sudah diposting, baris
+berselisih dan waste menunggu tetap mempunyai definisi berbeda; tidak ada
+chart atau jumlah berat campur satuan yang menyesatkan. Empty/error/filter
+tidak mempertahankan statistik lama.
+
+SagaPOS Owner memakai JavaScript/CSS biasa, sedangkan komponen Bklit UI
+berbasis React; implementasi ini mengadaptasi pola interaksi saja, tanpa
+dependency, perubahan API, schema, stok atau payment. Browser 390/1440,
+hover/tap/keyboard, empty state, respons terlambat dan Axe serious/critical 0
+tercakup dalam regresi terkait 10/10; static 747 modul/35 migrasi dan
+TypeScript lulus. Source belum diaktivasi production; UAT Owner di perangkat
+nyata dan UAT stock closing fisik tetap terbuka.
+
 ## 2026-10-04 — Finalisasi laporan stock closing, kandidat belum rilis
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

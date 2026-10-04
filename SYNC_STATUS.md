@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-04 — Detail statistik stock closing SagaPOS, source-only
+
+Status `partially accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Source
+`60c77dcba62ff237fa78dec649949e5e7d91de43` sudah push; Product,
+Dossier, Changelog SagaOPS, portfolio, master, root changelog dan status ini
+disinkronkan. Browser/regresi terkait 10/10, static 747 modul/35 migrasi,
+TypeScript dan diff check PASS. Tidak ada deploy atau UAT fisik dalam task
+ini; status runtime live terbaru tidak disimpulkan dari histori.
+
 ## 2026-10-04 — CSV dan selisih stock closing SagaPOS, source-only
 
 Status `partially accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
