@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-04 — Pengingat minimum stok SagaPOS, source-only
+
+Status `partially accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`. Source
+`1a60de56e41697d2ec35ba05f66f8bae16198152`; tes terkait 15/15,
+static/TypeScript, dan diff check lulus. Product/Dossier/Changelog SagaOPS,
+portfolio/master/decision/gaps/root changelog/status disinkronkan.
+Production tidak berubah (`60c77dcba62ff237fa78dec649949e5e7d91de43`).
+Batas minimum, UAT nyata Kepala Toko/stok fisik, serta release gate terbuka;
+`BUSINESS_READY=false`. Final SHA knowledge `main HEAD` setelah push.
+
 ## 2026-10-04 — Aktivasi laporan stock closing SagaPOS
 
 Status `accepted / CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;

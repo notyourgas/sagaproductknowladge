@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-04 — SagaPOS pengingat bahan perlu beli, source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `1a60de56e41697d2ec35ba05f66f8bae16198152` memberi Owner dan
+Kepala Toko daftar minimum stok dari closing, tanpa PO otomatis. Sebelum
+posting hasilnya perlu review; sesudahnya memakai stok resmi. Tes terkait
+15/15 dan static/TypeScript lulus. Production belum berubah, UAT fisik dan
+gate rilis masih terbuka. [Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-04 — SagaPOS laporan stock closing aktif
 
 `CONFIRMED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`: source

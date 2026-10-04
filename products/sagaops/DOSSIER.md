@@ -1,5 +1,27 @@
 # SagaOPS Dossier
 
+## 2026-10-04 — Pengingat minimum stok untuk Owner dan Kepala Toko
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Andreas meminta hasil stock closing menunjukkan bahan yang perlu di-order
+kepada Owner dan Kepala Toko. Source
+`1a60de56e41697d2ec35ba05f66f8bae16198152` memakai kebijakan minimum
+per bahan/outlet yang sudah ada, bukan ambang baru. Sebelum posting, jumlah
+fisik hasil closing hanya indikasi `perlu review`; sesudah posting, keputusan
+`perlu beli` mengikuti saldo resmi. Bahan tanpa batas atau saldo pasti
+ditandai terpisah, tidak dipalsukan sebagai aman. Owner melihat daftar pada
+laporan closing dan prioritas belanja di Gudang; akun staf native `manager`
+melihat kartu di beranda. Staf biasa tidak mendapat daftar tersebut. Tampilan
+dibaca saat halaman dibuka atau disegarkan manual, bukan push real-time.
+Tidak membuat PO, mengubah stok, atau menyetujui hitungan otomatis.
+
+Tes terkait 15/15 termasuk isolasi outlet/role, status provisional/resmi,
+browser mobile Owner/Manager, dan a11y dasar; static 747 modul, OpenAPI,
+35 migrasi dan TypeScript lulus. Tidak ada migrasi/dependency baru. Full suite,
+UAT fisik dan login nyata Kepala Toko belum selesai. Runtime production tetap
+`60c77dcba62ff237fa78dec649949e5e7d91de43`; rilis/recovery gate belum
+diulang untuk source ini. `BUSINESS_READY=false`.
+
 ## 2026-10-04 — Aktivasi laporan stock closing Owner
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.

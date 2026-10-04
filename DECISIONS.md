@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-229 — Pengingat stok kurang dari hasil closing
+
+- Tanggal: 2026-10-04. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: hasil stock closing yang mencapai atau berada di bawah batas minimum bahan/outlet ditampilkan sebagai kebutuhan belanja kepada Owner dan Kepala Toko. Hitungan belum diposting perlu review; saldo resmi setelah posting menentukan prioritas belanja.
+- Alasan: petugas yang bertanggung jawab dapat melihat apa yang kurang dan harus dipesan setelah tutup.
+- Alternatif: PO otomatis atau notifikasi push tanpa review; tidak dipilih pada implementasi ini.
+- Dampak: daftar in-app berscope outlet/role; tidak mengubah stok, tidak membuat pembelian, dan tidak mengubah hak persetujuan Owner.
+- Delivery: source `1a60de56e41697d2ec35ba05f66f8bae16198152` push dan local validated 15/15; belum production-deployed/activated, UAT nyata dan gate rilis terbuka.
+- Terkait: [SagaOPS](products/sagaops/DOSSIER.md), [Gaps](GAPS.md).
+
 ## DEC-228 — Pilihan voucher otomatis atau input kode lintas checkout
 
 - Tanggal:2026-10-04. Status:`CONFIRMED`; pemberi keputusan Andreas, permintaan mekanisme dan implementasi.

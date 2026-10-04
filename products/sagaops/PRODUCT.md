@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-04 — Pengingat belanja dari stock closing (source-only)
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `1a60de56e41697d2ec35ba05f66f8bae16198152` menampilkan bahan di
+bawah atau tepat pada batas minimum yang telah diatur Owner. Owner melihatnya
+di laporan stock closing; Kepala Toko dengan akun staf native `manager`
+melihat kartu pengingat pada beranda staf. Hitungan yang baru dikirim diberi
+label perlu review; stok resmi dipakai setelah posting Owner. Tidak ada PO
+otomatis atau push notification. Tes terkait 15/15 dan static/TypeScript
+lulus. Production masih pada `60c77dcba62ff237fa78dec649949e5e7d91de43`;
+pengaturan batas per bahan, UAT akun Kepala Toko, gate rilis, dan UAT stok fisik
+masih terbuka. `BUSINESS_READY=false`. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Laporan stock closing Owner aktif di production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`:

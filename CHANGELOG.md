@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Sinkronisasi pengingat belanja stock closing SagaPOS
+
+- `CONFIRMED`: atas permintaan Andreas, source `1a60de56e41697d2ec35ba05f66f8bae16198152` menampilkan stok di bawah batas kepada Owner dan Kepala Toko native `manager`, tanpa PO/push otomatis. Tes terkait 15/15 dan static/TypeScript PASS.
+- Product/Dossier/Changelog SagaOPS, portfolio, master, keputusan, gaps, dan status sinkronisasi diperbarui. Production tetap pada `60c77dcba62ff237fa78dec649949e5e7d91de43`; gate rilis dan UAT fisik/Kepala Toko terbuka, `BUSINESS_READY=false`.
+
 ## 2026-10-04 — Sinkronisasi aktivasi laporan stock closing SagaPOS
 
 - `CONFIRMED`: atas instruksi deploy Andreas, source `60c77dcba62ff237fa78dec649949e5e7d91de43` kini production-activated; rollback `149c0a54cc2f486d470b7f2fe109afe20eada6ae`. Ringkasan, selisih, CSV, dan detail statistik Owner tersedia; Gateway existing dan Order Meja DEMO tetap.

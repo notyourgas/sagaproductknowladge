@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-04 — Pengingat belanja stock closing, source-only
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152`; Owner dan Kepala Toko native `manager` mendapat daftar bahan di bawah batas minimum pada hasil closing, dengan status provisional sebelum posting dan resmi sesudahnya.
+- Tes terkait 15/15 serta static/TypeScript PASS. Tidak ada PO/push otomatis, perubahan stok, migrasi, atau deployment. Batas bahan, UAT Kepala Toko/stok fisik, dan gate rilis masih terbuka. Production tetap `60c77dcba62ff237fa78dec649949e5e7d91de43`; `BUSINESS_READY=false`. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Laporan stock closing Owner production-activated
 
 - `CONFIRMED`: source `60c77dcba62ff237fa78dec649949e5e7d91de43` aktif, rollback `149c0a54cc2f486d470b7f2fe109afe20eada6ae`. Ringkasan, selisih, CSV, dan rincian statistik kini tersedia di Gudang Owner; tidak ada posting stok otomatis.

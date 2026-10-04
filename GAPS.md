@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-04 — Pengingat stok rendah belum aktif
+
+- `CONFIRMED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152` telah push dan tes terkait 15/15 lulus, tetapi bukan runtime production. Kartu Kepala Toko memakai akun staf native `manager`, bukan Team & Access Manager yang masih nonaktif.
+- `TODO`: Owner mengatur batas minimum per bahan/outlet; lakukan UAT akun Kepala Toko dan satu closing fisik melalui review/posting, serta gate rilis/recovery sebelum aktivasi.
+- `TODO`: notifikasi push/di luar aplikasi dan pembuatan PO otomatis tidak termasuk perubahan ini; bila diperlukan, tetapkan kanal, penerima, frekuensi, hak persetujuan, serta pencegahan duplikasi.
+
 ## 2026-10-04 — Residual rilis laporan stock closing
 
 - `CONFIRMED`: akses VPS pulih dan source `60c77dcba62ff237fa78dec649949e5e7d91de43` sudah aktif; gate backup/restore, rehearsal, Owner read/restart, monitor, dan browser fitur 1440/390 lulus. Blokir koneksi/deploy pada entri lama di bawah telah teratasi.
