@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-04 — Penukaran voucher Member/POS/Book, lokal
+
+- `CONFIRMED`: canonical voucher codes dan pilihan otomatis/manual menghubungkan Member, POS/kiosk dan Book ke shared Platform reservation. Display bukan spending; identity dan payment proof tetap terpisah.
+- Source backend `b4d883db1d3c0c4503d682745bb7a5cf3d72da4a`, Member `685d74da2f4fb81e82583f967ca4b905ddd87bc4`, contracts `466ac94e09254782308b3a6979e240d114259655`, POS `cb6268bceb65f50f1173aa765343f7048666698a`, Book `5a5b2cc825f1c048a6768f0406cb88f9e69fd798`.
+- Focused/browser/native PostgreSQL dan MySQL tests, encrypted disposable Book restore PASS; source belum push/PR/CI/deploy. PHP dependency audit Book existing belum hijau; target mapping/grants, paired release recovery dan authenticated Owner/iPhone masih gate.
+- Production unchanged; NFC/provider baru OFF. Product/Dossier/Changelog ketiga produk, master/decision/gaps/sync/root changelog disinkronkan.
+
 ## 2026-10-04 — SagaPOS stock closing aktif
 
 `CONFIRMED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`: input fisik

@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-04 — Gate rilis voucher lintas produk
+
+- `CONFIRMED`: source kode voucher, pilihan otomatis/manual, independent Book gate, shared settlement dan native local persistence/Book restore telah diimplementasikan dan diuji; bukan runtime production baru.
+- `NEEDS CONFIRMATION`: exact target mapping/grant Book outlet/package, immutable paired candidate, target-bound encrypted backup/restore/rollback dan authenticated Owner/iPhone/operator UAT sebelum aktivasi.
+- `CONFIRMED`: audit dependency PHP Book existing belum hijau (4advisory); perlu remediasi bounded dan regression sebelum package production. Tidak memasukkan detail vulnerability ke knowledge publik. Npm audits nol, tidak ada dependency baru pada slice.
+- Book checkout source ini belum mempunyai origin; remote/publish source belum dilakukan untuk kelima repo. CI tidak dijalankan. NFC/provider baru tidak diaktifkan.
+- Admission voucher baru boleh ditutup saat recovery, tetapi pending reserve/settlement tetap harus direkonsiliasi; migration tabel hold forward-only. Tidak menandai seluruh rollout COMPLETE atau BUSINESS_READY.
+
 ## 2026-10-04 — Stock closing release: penerimaan operasional
 
 `CONFIRMED`: kandidat `149c0a54cc2f486d470b7f2fe109afe20eada6ae`

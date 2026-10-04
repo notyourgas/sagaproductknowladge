@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-10-04 — Voucher code lintas checkout, belum deploy
+
+- Klasifikasi `CONFIRMED`; sumber keputusan Andreas dan source/tests lokal. Backend `b4d883db1d3c0c4503d682745bb7a5cf3d72da4a`, Member `685d74da2f4fb81e82583f967ca4b905ddd87bc4`, contracts `466ac94e09254782308b3a6979e240d114259655`.
+- Menutup presentasi kode, copy, signed Book navigation dan independent Book voucher gate. Platform tetap authority; code tidak autentikasi dan display tidak spend.
+- Local validation PASS; source belum push/PR/CI/deploy/activation/UAT production. NFC/provider baru OFF. Gate target, paired recovery dan dependency PHP Book masih terbuka.
+- File terdampak: PRODUCT.md, DOSSIER.md, CHANGELOG.md; portfolio/master/decision/gaps/sync/root changelog. Production unchanged.
+
 ## 2026-10-04 — Runner recovery admission, belum deploy
 
 `CONFIRMED`: permintaan Andreas untuk melanjutkan penutupan; source runner

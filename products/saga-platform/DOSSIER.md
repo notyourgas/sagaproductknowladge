@@ -1,5 +1,15 @@
 # Saga Platform Dossier
 
+## 2026-10-04 — Kode voucher dan shared checkout
+
+- `CONFIRMED`: keputusan Andreas untuk pilihan voucher otomatis setelah identifikasi Member, atau input kode di POS/Book; kode bukan bukti login.
+- Before -> after: voucher terdaftar tetapi presentasi/input lintas checkout belum lengkap; sekarang Member menampilkan kode immutable, POS/kiosk memilih dari quote authoritative dan Book menerima kode dalam signed Member context.
+- Backend `b4d883db1d3c0c4503d682745bb7a5cf3d72da4a`; Member `685d74da2f4fb81e82583f967ca4b905ddd87bc4`; contracts `466ac94e09254782308b3a6979e240d114259655`. Branch source `codex/`, committed lokal, belum push/PR/CI/deploy.
+- Contract additive60operations, compatibility dan32tes PASS. Member622tes PASS, browser320/360/375/390/430, keyboard,200%text,reduced-motion,offline/error dan Axe focused PASS. Backend focused22tes PASS termasuk native PostgreSQL18 persistence/CAS; policy regression23tes PASS termasuk Book HTTP nyata ke Platform dengan POS gate OFF.
+- Gate Book memerlukan sagaBook+voucher serta grant outlet VOUCHER_READ/WRITE terpisah; tidak bergantung pada sagaPos. Harga dan eligibility tidak dihitung oleh Member. Signed handoff hanya navigasi authenticated, bukan voucher redemption.
+- Paid authoritative commits; terminal unpaid releases; timeout ambigu tetap held. Replay/restart tidak menggandakan penukaran; refund tidak otomatis menerbitkan ulang. Kedaluwarsa dan aturan campaign/birthday sebelumnya unchanged.
+- Production tidak diubah. Tap/NFC/provider eksternal baru OFF. Mapping/grant target nyata, immutable paired artifact, target-bound restore/rollback, authenticated Owner dan iPhone/UAT tetap gate rilis. Audit dependency PHP Book existing belum hijau; tidak mengklaim BUSINESS_READY.
+
 ## 2026-10-04 — Admission recovery rilis
 
 - `CONFIRMED`: runner `d0da6d0f1c57d82b80a1b5376b91ce0026cc5ca8`, local only.

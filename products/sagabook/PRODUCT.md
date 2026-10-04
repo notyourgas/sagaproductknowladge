@@ -1,5 +1,9 @@
 # SagaBook Product Knowledge
 
+## 2026-10-04 — Shared Member voucher checkout, belum deploy
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Book `5a5b2cc825f1c048a6768f0406cb88f9e69fd798`. Signed Member connection membuka daftar voucher eligible dan kode manual di review booking; harga Book database dan discount Platform authoritative. Reservasi durable, retry paid/unpaid dan closure retention terhubung. Migration MySQL8.4, encrypted backup/disposable restore dan local checkout tests PASS; mapping/grant target nyata belum diaktifkan. Source lokal tanpa origin, belum push/PR/CI/deploy. [Detail](DOSSIER.md).
+
 Updated: 21 September 2026 WIB
 Evidence status: SagaBook production tetap pada exact `bdef20a4ee2e4c8a699f88627c822e4c9164d5cb`. Companion Saga Campaign QR aktif terpisah pada exact `d9f1bc829345390f1b649a372242a857777ee9c2`, dengan public writes, kontrak fakta SagaBook, integrasi voucher, login Owner password-only, serta akun dan login Staff terpisah untuk redeem. Status companion `SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_STAFF_LOGIN_UAT_PASS / AUTHENTICATED_OWNER_PASSWORD_ONLY_UAT_PENDING / BUSINESS_READY=NEEDS_CONFIRMATION`.
 

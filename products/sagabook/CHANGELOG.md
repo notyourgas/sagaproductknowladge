@@ -1,5 +1,12 @@
 # SagaBook Changelog
 
+## 2026-10-04 — Penukaran voucher Member terintegrasi lokal
+
+- `CONFIRMED`, sumber Andreas dan source/tests; Book `5a5b2cc825f1c048a6768f0406cb88f9e69fd798`.
+- Signed context -> eligible options/code -> authoritative quote -> durable reservation -> paid commit/terminal unpaid release. Satu migration additive, native MySQL4tes dan encrypted disposable restore184tables PASS. PHP27tes dan UI320-430px PASS; production UAT tidak dijalankan.
+- Source lokal committed tanpa origin; belum push/PR/CI/deploy. Provider nyata dan grants/mapping tidak diaktifkan. Dependency PHP existing4advisory dan target-bound recovery/UAT tetap blocker rilis.
+- File knowledge: PRODUCT.md, DOSSIER.md, CHANGELOG.md, portfolio/master/decision/gaps/sync/root changelog. Production unchanged.
+
 ## 2026-09-21 - Login Staff Campaign QR terpisah
 
 - `/campaignqr/redeem/login` menyediakan password-only untuk tepat satu akun

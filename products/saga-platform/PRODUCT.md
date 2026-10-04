@@ -1,5 +1,9 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-04 — Penukaran voucher lintas Member/POS/Book, source lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: backend `b4d883db1d3c0c4503d682745bb7a5cf3d72da4a`, Member `685d74da2f4fb81e82583f967ca4b905ddd87bc4`, contracts `466ac94e09254782308b3a6979e240d114259655`. Voucher milik Member mempunyai kode unik yang dapat ditampilkan/disalin; membuka kode tidak memakai voucher. POS dan Book memilih voucher dari identitas Member terverifikasi atau input kode. Platform tetap authority eligibility, discount dan shared reserve/commit/release; Book mempunyai gate integrasi terpisah dari POS. Source committed lokal, belum push/PR/CI/deploy. NFC/provider baru tidak diaktifkan. [Detail dan gate rilis](DOSSIER.md).
+
 ## 2026-10-04 — Pengaman recovery rilis Member, lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: runner commit

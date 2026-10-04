@@ -1,5 +1,15 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-228 — Pilihan voucher otomatis atau input kode lintas checkout
+
+- Tanggal:2026-10-04. Status:`CONFIRMED`; pemberi keputusan Andreas, permintaan mekanisme dan implementasi.
+- Keputusan: setelah Member teridentifikasi, POS/kiosk dan Book menawarkan voucher eligible; alternatif input kode voucher. Kode dapat ditampilkan/disalin dari Member. Membuka kode bukan redemption dan kode tidak menggantikan identity proof.
+- Alasan: mempermudah penggunaan voucher yang sama tanpa double-spend lintas produk.
+- Alternatif: langsung consume saat membuka voucher atau menerima kode sebagai login; tidak dipilih.
+- Dampak: Platform shared reserve/commit/release, paid proof authoritative, terminal unpaid release, ambiguous hold/retry; eligibility dan harga tidak menjadi client authority. NFC/provider baru tetap OFF.
+- Delivery: source committed lokal dan local/native/browser validated, belum push/PR/CI/deploy. Grants/mapping target, dependency PHP Book dan paired recovery/authenticated UAT masih gate.
+- Terkait: [Platform](products/saga-platform/DOSSIER.md), [POS](products/sagaops/DOSSIER.md), [Book](products/sagabook/DOSSIER.md), [Gaps](GAPS.md).
+
 ## DEC-227 — Voucher minuman standar dan masa pakai
 
 - Tanggal: 2026-10-03. Status: `CONFIRMED`; pemberi keputusan Andreas melalui jawaban aturan Wave2.

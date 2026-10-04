@@ -1,5 +1,16 @@
 # SagaBook Dossier
 
+## 2026-10-04 — Voucher Member otomatis dan kode manual
+
+- `CONFIRMED`: source `5a5b2cc825f1c048a6768f0406cb88f9e69fd798`, branch `codex/member-voucher-code-book-20261004`; checkout ini belum mempunyai origin. Source lokal committed, bukan push/PR/CI/deploy/activation.
+- Before -> after: Book belum memakai shared Member voucher; sekarang signed Member context dan consent menentukan voucher options, input kode dan durable reserve sebelum booking. Price/package/add-on server-owned, exact outlet/package mapping; kode tidak menggantikan session atau consent.
+- Feature config default OFF; grants voucher outlet terpisah dari Book tenant handoff. Routes Book mempunyai sagaBook+voucher gate, POS activation tidak diperlukan. Legacy promo intact dan tidak ditumpuk dengan voucher Member.
+- Tambahan satu tabel voucher checkout menyimpan binding retry, reservasi/outcome dan Book reference. Paid durable commits; proven terminal unpaid releases; pending/received payment dan missing authority tetap held. Late paid setelah release tidak auto-confirm. Refund tidak otomatis reissue. Pending hold menahan privacy closure; history final dipurge setelah30hari tanpa menghapus fiscal booking records.
+- Focused PHP27tes/334assertions PASS; actual HTTP Book->Platform with GA policy PASS; Book UI synthetic automatic/manual320-430px dan console PASS. UI fixture bukan authenticated production UAT. Build PASS; typecheck critical existing bukan full-project TypeScript proof.
+- Native MySQL8.4.9 focused4tes/74assertions PASS, fresh+additive migration, encrypted backup/checksum/disposable restore184tables PASS termasuk pending voucher binding, closure fence dan encrypted Member link. Local-only synthetic database; tidak menguji production provider/payment atau tenant nyata.
+- Book PHP dependency audit existing menunjukkan4advisory; release gate belum hijau dan tidak disamarkan sebagai dependency PASS. Npm production audits nol; tidak menambah dependency. Target mapping/grant, immutable paired package/recovery dan authenticated Owner/iPhone/UAT masih terbuka.
+- Rollback forward-only: jangan drop tabel berisi hold, jangan restore saldo dari UI; tutup admission baru tanpa menghentikan settlement/reconciliation pending. Old code tanpa reconciler bukan rollback aman untuk hold yang masih ada.
+
 ## Tujuan dokumen
 
 Memberi konteks produk, pengalaman, bisnis, teknis, sales, dan konten SagaBook

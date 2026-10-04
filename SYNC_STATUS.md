@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-04 — Voucher checkout lintas produk, source only
+
+- Status: `partially accepted`; mekanisme Andreas `CONFIRMED`, implementation local validated; production gate belum ditutup.
+- Source backend `b4d883db1d3c0c4503d682745bb7a5cf3d72da4a`, Member `685d74da2f4fb81e82583f967ca4b905ddd87bc4`, contracts `466ac94e09254782308b3a6979e240d114259655`, POS `cb6268bceb65f50f1173aa765343f7048666698a`, Book `5a5b2cc825f1c048a6768f0406cb88f9e69fd798`.
+- Product/Dossier/Changelog saga-platform/sagaops/sagabook, portfolio/master/DEC-228/gaps/root changelog updated. Knowledge branch main; immutable final SHA melalui Git setelah commit/push. Source belum push/PR/CI/deploy; runtime production tidak diubah atau diverifikasi ulang pada slice ini.
+- Local contract/frontend/backend/browser/native PostgreSQL+MySQL/Book encrypted restore PASS. Remaining dependency PHP Book, grants/mapping target, paired artifact/recovery dan authenticated Owner/iPhone UAT. NFC/provider baru OFF; tidak mengklaim BUSINESS_READY.
+
 ## Sinkronisasi 2026-10-04 — SagaPOS stock closing release
 
 Status `accepted / CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`;

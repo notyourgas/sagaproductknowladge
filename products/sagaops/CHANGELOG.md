@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-10-04 — Input kode voucher Member, source lokal
+
+- `CONFIRMED`; Andreas meminta pilihan otomatis maupun kode manual. POS `cb6268bceb65f50f1173aa765343f7048666698a` menutup input kasir/kiosk -> scoped Platform quote -> durable canonical claim; identity tetap terpisah.
+- Native focused7tes, browser otomatis, static/TypeScript PASS. Source belum push/PR/CI/deploy; production/provider/NFC tidak berubah. Gate rilis pasangan dan UAT nyata belum ditutup.
+- File knowledge: PRODUCT.md, DOSSIER.md, CHANGELOG.md serta portfolio/master/decision/gaps/sync/root changelog.
+
 ## 2026-10-04 — Stock closing production-activated
 
 `CONFIRMED`; Andreas menyetujui deploy. Source `149c0a54cc2f486d470b7f2fe109afe20eada6ae`

@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Sinkronisasi implementasi shared voucher checkout
+
+- Informasi `CONFIRMED`: keputusan Andreas dan source/tests terverifikasi. Member code/copy, POS/kiosk automatic/manual quote dan Book durable shared reservation menutup gap penggunaan lintas checkout.
+- Source exact tercatat pada Product/Dossier ketiga produk serta master/portfolio/sync; knowledge main HEAD setelah commit/push. Product/Dossier/Changelog saga-platform/sagaops/sagabook, portfolio/master/DEC-228/gaps/sync/root changelog updated.
+- Local/browser/native database dan encrypted Book disposable restore PASS; source belum push/PR/CI/deploy/activation/UAT production. Production unchanged. Dependency PHP Book existing, target mapping/grants, paired release recovery dan authenticated Owner/iPhone masih gate; tidak ada pricing/expiry baru atau NFC/provider activation.
+
 ## 2026-10-04 — SagaPOS stock closing production
 
 `CONFIRMED`; instruksi deploy Andreas, source aktif

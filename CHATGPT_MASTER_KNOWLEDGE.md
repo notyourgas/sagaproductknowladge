@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — Source voucher checkout lintas produk
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Member kini mempunyai kode voucher unik dan copy; kasir/kiosk serta review Book dapat memilih voucher milik Member atau memeriksa kode setelah identity terverifikasi. Menampilkan kode tidak memakai voucher. Customer Platform tetap authority eligibility/value dan shared reserve/commit/release. Book price/payment/booking tetap authority Book; POS cash boundary tetap authority POS. Kode bukan autentikasi; NFC/provider baru OFF.
+
+Exact source backend `b4d883db1d3c0c4503d682745bb7a5cf3d72da4a`, Member `685d74da2f4fb81e82583f967ca4b905ddd87bc4`, contracts `466ac94e09254782308b3a6979e240d114259655`, POS `cb6268bceb65f50f1173aa765343f7048666698a`, Book `5a5b2cc825f1c048a6768f0406cb88f9e69fd798`. Focused/backend/browser/native PostgreSQL+MySQL, contract compatibility dan encrypted Book disposable restore PASS. Source committed lokal belum push/PR/CI/deploy/activation/production UAT; Book dependency PHP existing belum hijau, target grants/mapping, paired artifact/recovery dan authenticated Owner/iPhone gate masih terbuka. Tidak mengklaim BUSINESS_READY. [Platform](products/saga-platform/PRODUCT.md), [POS](products/sagaops/PRODUCT.md), [Book](products/sagabook/PRODUCT.md).
+
 ## 2026-10-04 — SagaPOS stock closing dirilis
 
 `CONFIRMED`: source SagaPOS `149c0a54cc2f486d470b7f2fe109afe20eada6ae`

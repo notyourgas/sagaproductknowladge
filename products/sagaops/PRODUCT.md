@@ -1,5 +1,9 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-04 — Pilihan voucher dan input kode POS/kiosk, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: POS `cb6268bceb65f50f1173aa765343f7048666698a`. Setelah identitas Member terverifikasi, kasir/kiosk dapat memilih voucher eligible atau memeriksa kode voucher; durable checkout tetap mengikat claim dan payment authority, bukan raw code. Native PostgreSQL kasir/kiosk E2E dan retry PASS; NFC/provider baru tidak diaktifkan. Source lokal belum push/PR/CI/deploy; snapshot production berikut adalah histori, bukan rilis voucher ini. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Stock closing karyawan dan review Owner aktif
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`:

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-10-04 — Voucher code terhubung ke shared Platform claim
+
+- `CONFIRMED`: POS `cb6268bceb65f50f1173aa765343f7048666698a`, branch `codex/member-voucher-code-pos-20261004`, committed lokal belum push/PR/CI/deploy.
+- Before -> after: pilihan claim tersedia tetapi input kode belum tersambung; kasir/kiosk kini resolve kode terhadap voucher milik Member terverifikasi dan quote server. Raw code tidak disimpan pada workspace kasir, tidak menjadi identity atau payment authority.
+- Source-local cash/cash-assisted boundaries retained; code-only durable checkout tanpa canonical claim ditolak sebelum mutasi. Kiosk stale cart/member response tidak mengganti pilihan terbaru. NFC/tap hardware dan provider baru tidak diaktifkan.
+- Native PostgreSQL18 focused7tes PASS: code, durable cashier retry, actual Member/Platform HTTP dan kasir/kiosk browser; automatic selection browser terpisah PASS pada320-430px dan Axe focused. Static743modules/35migration/TypeScript PASS; schema35 unchanged.
+- Paid commit, ACK-loss replay, restart, under-tender/wrong-role denial dan one-order behavior tested. Native bukan production outlet UAT. Target mapping/grants, paired artifact/recovery, authenticated Owner/iPhone dan dependency PHP Book gate masih terbuka.
+
 ## 2026-10-04 — Release stock closing operasional
 
 `CONFIRMED`: Andreas meminta deploy setelah menyetujui preview lokal.
