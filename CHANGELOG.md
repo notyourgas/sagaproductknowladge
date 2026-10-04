@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-04 — Sinkronisasi ringkasan stock closing SagaPOS
+
+- `CONFIRMED`: source `6aa6c8af8602ad465a1f3fa3d93a09156c11a29e` telah push; ringkasan filter Owner dan penolakan laporan terpotong tervalidasi lokal (9/9 tes terkait, static/TypeScript PASS).
+- Product/Dossier/Changelog SagaOPS, portfolio, master, dan status sinkronisasi diperbarui. Production activation untuk perubahan ini belum dilakukan; runtime live belum diverifikasi ulang. UAT stok fisik dan business readiness tetap terbuka.
+
 ## 2026-10-04 — Sinkronisasi implementasi shared voucher checkout
 
 - Informasi `CONFIRMED`: keputusan Andreas dan source/tests terverifikasi. Member code/copy, POS/kiosk automatic/manual quote dan Book durable shared reservation menutup gap penggunaan lintas checkout.

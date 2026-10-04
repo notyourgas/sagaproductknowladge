@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-04 — Ringkasan laporan stock closing lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `6aa6c8af8602ad465a1f3fa3d93a09156c11a29e`; ringkasan status rentang tanggal, hasil lama dibersihkan saat gagal, dan batas 100 hitungan/200 waste tidak lagi terpotong diam-diam.
+- Focused/regresi terkait 9/9 serta static 747 modul/35 migrasi/TypeScript PASS. Production tidak diaktivasi dalam pekerjaan ini; runtime live belum diverifikasi ulang. UAT hitung/posting fisik tetap terbuka. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Input kode voucher Member, source lokal
 
 - `CONFIRMED`; Andreas meminta pilihan otomatis maupun kode manual. POS `cb6268bceb65f50f1173aa765343f7048666698a` menutup input kasir/kiosk -> scoped Platform quote -> durable canonical claim; identity tetap terpisah.

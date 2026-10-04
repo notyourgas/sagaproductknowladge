@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-04 — SagaPOS ringkasan stock closing source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+Owner kini punya ringkasan per rentang tanggal dan laporan tidak menyamarkan
+hasil terpotong atau data lama saat filter gagal. Source SagaPOS
+`6aa6c8af8602ad465a1f3fa3d93a09156c11a29e`, 9/9 tes terkait PASS;
+production activation/UAT fisik belum dilakukan pada perubahan ini.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-04 — Penukaran voucher Member/POS/Book, lokal
 
 - `CONFIRMED`: canonical voucher codes dan pilihan otomatis/manual menghubungkan Member, POS/kiosk dan Book ke shared Platform reservation. Display bukan spending; identity dan payment proof tetap terpisah.

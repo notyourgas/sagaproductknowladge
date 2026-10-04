@@ -1,5 +1,23 @@
 # SagaOPS Dossier
 
+## 2026-10-04 — Laporan stock closing Owner: ringkasan dan hasil utuh
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Before: Owner melihat detail per tanggal tetapi tidak punya ringkasan rentang;
+hasil lebih dari 100 hitungan atau 200 waste terpotong diam-diam, dan laporan
+tanggal lama dapat tertinggal sewaktu filter baru gagal. After: source
+`6aa6c8af8602ad465a1f3fa3d93a09156c11a29e` menampilkan empat jumlah
+kejadian ringkas, mengosongkan hasil lama saat memuat/gagal, serta menolak
+rentang di atas batas dengan pesan untuk mempersempit tanggal. Tidak menjumlah
+gram, mililiter, kemasan, atau mengklaim selisih uang.
+
+Empat tes focused service/browser dan lima regresi terkait PASS; static
+747 modul/35 migrasi, TypeScript, diff check PASS. Tidak ada schema,
+dependency, transaksi, atau stok production yang diubah oleh pekerjaan ini.
+Production live tidak dapat diverifikasi ulang dari executor saat screening;
+rilis dan UAT fisik tetap pending. Riwayat aktivasi sebelumnya di bawah adalah
+snapshot terpisah, bukan bukti bahwa source ringkasan sudah aktif.
+
 ## 2026-10-04 — Voucher code terhubung ke shared Platform claim
 
 - `CONFIRMED`: POS `cb6268bceb65f50f1173aa765343f7048666698a`, branch `codex/member-voucher-code-pos-20261004`, committed lokal belum push/PR/CI/deploy.

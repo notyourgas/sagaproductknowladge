@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-04 — Ringkasan laporan stock closing, source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `6aa6c8af8602ad465a1f3fa3d93a09156c11a29e` menambahkan ringkasan
+hari tercatat, hitungan menunggu Owner, hitungan diposting, dan waste menunggu
+pada filter tanggal Owner. Hasil lama tidak ditampilkan saat filter baru memuat
+atau gagal; rentang yang melampaui batas 100 hitungan/200 waste ditolak, bukan
+ditampilkan terpotong. Ini jumlah kejadian, bukan penjumlahan berat lintas
+satuan. Belum diaktivasi production atau diuji dengan stok fisik nyata.
+[Detail](DOSSIER.md).
+
 ## 2026-10-04 — Pilihan voucher dan input kode POS/kiosk, lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: POS `cb6268bceb65f50f1173aa765343f7048666698a`. Setelah identitas Member terverifikasi, kasir/kiosk dapat memilih voucher eligible atau memeriksa kode voucher; durable checkout tetap mengikat claim dan payment authority, bukan raw code. Native PostgreSQL kasir/kiosk E2E dan retry PASS; NFC/provider baru tidak diaktifkan. Source lokal belum push/PR/CI/deploy; snapshot production berikut adalah histori, bukan rilis voucher ini. [Detail](DOSSIER.md).

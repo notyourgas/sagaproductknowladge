@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-04 — Ringkasan stock closing SagaPOS belum diaktifkan
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `6aa6c8af8602ad465a1f3fa3d93a09156c11a29e` menambahkan jumlah
+hari tercatat, hitungan menunggu/diposting, dan waste menunggu untuk filter
+Owner. Hasil terpotong dan hasil lama saat filter gagal tidak lagi disajikan
+sebagai laporan lengkap. Tes terkait 9/9 dan static/TypeScript PASS. Tidak
+ada aktivasi production atau UAT stok fisik untuk perubahan ini; runtime
+terbaru belum diverifikasi ulang. [SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-04 — Source voucher checkout lintas produk
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Member kini mempunyai kode voucher unik dan copy; kasir/kiosk serta review Book dapat memilih voucher milik Member atau memeriksa kode setelah identity terverifikasi. Menampilkan kode tidak memakai voucher. Customer Platform tetap authority eligibility/value dan shared reserve/commit/release. Book price/payment/booking tetap authority Book; POS cash boundary tetap authority POS. Kode bukan autentikasi; NFC/provider baru OFF.

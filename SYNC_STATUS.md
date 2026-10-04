@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-04 — Laporan stock closing SagaPOS, source-only
+
+Status `partially accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`: source `6aa6c8af8602ad465a1f3fa3d93a09156c11a29e`
+menambahkan ringkasan filter Owner dan menolak data terpotong/stale. Product,
+Dossier, Changelog SagaOPS, portfolio, master, root changelog, dan status ini
+disinkronkan. Tes service/browser/regresi 9/9, static 747 modul/35 migrasi,
+TypeScript dan diff check PASS. Production tidak diaktivasi oleh task ini;
+runtime live belum diverifikasi ulang. UAT fisik dan BUSINESS_READY masih OPEN.
+
 ## 2026-10-04 — Voucher checkout lintas produk, source only
 
 - Status: `partially accepted`; mekanisme Andreas `CONFIRMED`, implementation local validated; production gate belum ditutup.
