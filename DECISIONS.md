@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-232 — Website/form SagaPOS lebih dahulu, gaya Saga
+
+- Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: Sprint 1 fokus landing/form sederhana dengan navbar, animasi dan detail fitur, hitam/putih/orange; desain awal cukup sederhana bergaya SagaView/SagaDev.
+- Alasan: calon usaha perlu pintu pendaftaran yang mudah dipahami sebelum approval dan onboarding operasional.
+- Alternatif: menuntaskan seluruh onboarding/aktivasi dahulu; tidak dipilih untuk Sprint 1.
+- Dampak: source `adbe7807cff2cffbcff21393440fd00a96f80a7c` local validated dan pushed; pengiriman aplikasi/approval/login Platform Sprint 2, tidak ada deploy atau account creation.
+- Dokumen terkait: [SagaOPS](products/sagaops/DOSSIER.md), [Gaps](GAPS.md).
+
 ## DEC-231 — SagaPOS diarahkan menjadi SaaS multi-bisnis
 
 - Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.

@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-05 — SagaPOS website/form Sprint 1 source-only
+
+`accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`: source `adbe7807cff2cffbcff21393440fd00a96f80a7c`;
+tes terkait 14/14, check dan browser/a11y tiga viewport PASS. Preview lokal,
+tanpa pengiriman pengajuan, akun, transaksi atau deployment. Antrean aplikasi
+Platform/approval/login dan UAT awam masih terbuka. Knowledge `main HEAD`
+setelah push; tidak mengubah status production historis di bawah.
+
 ## 2026-10-05 — SagaPOS onboarding pemula source-only
 
 `accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /

@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — Sinkronisasi website/form SagaPOS Sprint 1 lokal
+
+- `CONFIRMED`; arahan Andreas untuk landing/form dahulu, hitam-putih-orange. Source `adbe7807cff2cffbcff21393440fd00a96f80a7c` pushed; tes terkait 14/14, browser/a11y tiga viewport dan check PASS.
+- PRODUCT/DOSSIER/CHANGELOG SagaOPS, portfolio/master/decision/gaps/status/root disinkronkan. Form belum mengirim ke Platform; approval/login Sprint 2. Production tidak diubah; bukan BUSINESS_READY.
+
 ## 2026-10-05 — Pratinjau onboarding SagaPOS source-only
 
 - `CONFIRMED`: source `f29748b` menambah wizard lokal empat langkah dan panduan operasional tujuh topik untuk pemula; route publik/production tetap tertutup.

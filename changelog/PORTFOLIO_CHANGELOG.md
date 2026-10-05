@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS website/form Sprint 1 source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `adbe7807cff2cffbcff21393440fd00a96f80a7c`; landing bergaya Saga dan
+form pengajuan lokal tervalidasi. Tes 14/14, browser tiga viewport dan
+static/TypeScript PASS; approval dan pengiriman Platform belum tersambung.
+Production tidak diubah; bukan signup aktif atau BUSINESS_READY.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS onboarding pemula source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

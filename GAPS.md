@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Batas website/form SagaPOS Sprint 1
+
+- `CONFIRMED`: source `adbe7807cff2cffbcff21393440fd00a96f80a7c` hanya landing dan form review lokal; data tidak dikirim, akun tidak dibuat. Tidak ada deployment.
+- `TODO`: server aplikasi ke antrean SagaDev Platform existing, validasi/deduplikasi, approval/rejection, provisioning/login, onboarding wajib dan UAT calon Owner awam. Pricing/trial bukan janji aktif.
+
 ## 2026-10-05 — Batas pratinjau onboarding SagaPOS
 
 - `CONFIRMED`: source `f29748b` hanya latihan lokal; user awam belum diuji langsung dan tidak ada bisnis/produk yang dibuat. Mode publik/production menolak route latihan.

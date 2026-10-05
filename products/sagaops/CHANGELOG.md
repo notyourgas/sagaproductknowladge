@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Website dan form pendaftaran Sprint 1 lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `adbe7807cff2cffbcff21393440fd00a96f80a7c`; navbar, animasi ringan, fitur/tab/FAQ dan form validasi/review hitam-putih-orange.
+- Tes terkait 14/14, browser tiga viewport, WCAG A/AA otomatis nol pelanggaran dan check PASS. Belum mengirim pengajuan atau membuat akun; Sprint 2 untuk Platform/approval. Production/pembayaran tidak diubah. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Pratinjau onboarding lokal untuk pemula
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `f29748b` menambah wizard empat langkah dan tujuh panduan harian; tanpa signup, data bisnis baru, atau pembayaran.

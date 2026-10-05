@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Website dan pengajuan akses Sprint 1
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Arahan Andreas: buat landing sederhana bergaya Saga, warna hitam/putih/orange,
+navbar, animasi, detail fitur, dan utamakan formulir dahulu.
+Source `adbe7807cff2cffbcff21393440fd00a96f80a7c`, branch
+`codex/sagapos-marketing-signup-sprint1-20261005`.
+Sebelum hanya latihan onboarding; sesudah ada landing lokal dan formulir
+review yang menjelaskan daftar → review SagaDev → setup → operasional.
+Data contoh meliputi usaha/jenis/kota dan kontak Owner; isian rahasia latihan
+dikosongkan setelah review, tanpa storage browser atau request write.
+Tab ilustrasi kasir/kiosk/KDS/closing mendukung keyboard, navbar mobile
+mendukung Escape, FAQ native, reduced motion dan ticker sekali empat detik.
+Tes terkait 14/14, static 751 modul/35 migrasi/TypeScript dan browser tiga
+viewport PASS; tidak ada overflow, asset gagal, error halaman, atau pelanggaran
+WCAG A/AA otomatis. Mode production/publik menolak preview. Tidak ada
+schema/dependency/payment/deployment berubah; bukan signup SaaS aktif.
+Next: antrean aplikasi pada Platform existing, validasi server/deduplikasi,
+approval, provisioning, login lalu onboarding wajib. Tarif/trial belum dijanjikan.
+UAT calon Owner awam dan penerimaan pengajuan nyata belum dilakukan.
+
 ## 2026-10-05 — Latihan onboarding dan panduan tugas inti
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

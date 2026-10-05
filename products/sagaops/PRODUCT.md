@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — Landing page dan formulir SagaPOS Sprint 1 lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `adbe7807cff2cffbcff21393440fd00a96f80a7c` menambah landing hitam/putih/orange,
+navbar, animasi ringan, enam area fitur, empat tab ilustrasi, FAQ, serta
+formulir pengajuan dengan validasi dan ringkasan lokal. Formulir belum
+mengirim data atau membuat akun; approval Platform direncanakan Sprint 2.
+Browser 390/768/1440, tes terkait 14/14, WCAG A/AA otomatis nol pelanggaran
+dan static/TypeScript PASS. Tidak ada deployment atau perubahan pembayaran.
+[Detail](DOSSIER.md).
+
 ## 2026-10-05 — Pratinjau onboarding ramah pemula, belum aktif
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
