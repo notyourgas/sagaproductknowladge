@@ -1,5 +1,17 @@
 # Saga Platform Dossier
 
+## 2026-10-05 — Reuse identity untuk operasi tenant SagaPOS lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: SagaPOS
+`4045cfb3b4bea355f13bd641521358e077887bec` memakai approval/provisioning/login
+existing dari Platform `45752bc8f3eea08446fe7db053290d70fa83eca2` unchanged.
+Tenant kini dapat menguji cash→KDS→ledger close, tidak memakai persona Kopi
+Saga. Assertion maksimum300detik dipertahankan, tanpa silent extension.
+`PROPOSAL`: trusted outbox consumer, lifecycle revocation/reconciliation,
+central refresh/re-exchange dan commercial plan/terms sebelum SaaS live.
+Regresi SagaPOS63/63 mencakup native local queue/access/restore; bukan rerun
+full Platform atau deploy produk lain. Fixture plan/trial bukan keputusan bisnis.
+
 ## 2026-10-05 — Approval/identity SagaPOS, reuse native kontrak
 
 `CONFIRMED`: SagaPOS `9ede3a808b97071d488aad09df59f4ac194df999` memakai source Platform

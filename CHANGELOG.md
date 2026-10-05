@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — Sinkronisasi SagaPOS Sprint 4 dan strategi penutupan
+
+- `CONFIRMED`; arahan Andreas, source `4045cfb3b4bea355f13bd641521358e077887bec` pushed. Before persiapan saja→tenant-scoped cash/KDS/closing lokal dari service existing. Tes63/63/check/browser/a11y/recovery PASS.
+- SagaOPS/Platform PRODUCT/DOSSIER/CHANGELOG, portfolio/master/gaps/decision/status/root diperbarui. Enam wave penutupan `PROPOSAL`; production unchanged, tanpa merchant/payment nyata, BUSINESS_READY belum. Source Platform unchanged. Provenance knowledge `main HEAD` setelah push.
+
 ## 2026-10-05 — Sinkronisasi SagaPOS Sprint 3 approval/onboarding lokal
 
 - `CONFIRMED`; sumber Andreas meminta Sprint3, source `9ede3a808b97071d488aad09df59f4ac194df999` pushed. Approval native→tenant isolated→identity login→onboarding persistent; sebelum hanya pending signup. Menu draft, no payment activation.

@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-235 — Selesaikan SagaPOS Sprint 4 dan strategi celah
+
+- Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: lanjut Sprint4 terakhir pada roadmap prototype, lalu petakan kekurangan/celah dan strateginya.
+- Alasan: pendaftar yang sudah onboarding perlu mencoba alur toko, bukan hanya mengisi wizard.
+- Alternatif implementasi ditolak: mesin transaksi kedua, menyalin Kopi Saga, mengaktifkan QR/provider dari pilihan form atau menyebut prototype sebagai business-ready.
+- Dampak: source `4045cfb3b4bea355f13bd641521358e077887bec` pushed/local validated; tenant scoped menu→shift→cash→KDS→ledger close. Enam wave lanjut adalah `PROPOSAL`, bukan keputusan pricing/deploy/provider otomatis.
+- Dokumen: [SagaOPS](products/sagaops/DOSSIER.md), [Gaps](GAPS.md). Production tidak diubah.
+
 ## DEC-234 — Lanjutkan SagaPOS Sprint 3
 
 - Tanggal: 2026-10-05. Topik: approval akun dan onboarding SaaS.

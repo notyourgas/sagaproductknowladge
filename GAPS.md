@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Penutupan setelah empat sprint SagaPOS lokal
+
+- `CONFIRMED`: source `4045cfb3b4bea355f13bd641521358e077887bec` menutup menu/shift/cash/KDS/closing hanya pada target sintetis; 63/63 tests PASS. Gap operasional dasar Sprint3 tertutup lokal, bukan seluruh staf/metode.
+- `TODO P0`: trusted production provisioning/lifecycle, central session refresh, durable command recovery setelah reload, scoped staff, multi-menu editor, closing variance maker/checker, native DB/migration/recovery, UAT awam dan guarded release.
+- `TODO P1`: ikat fitur single-tenant existing ke tenant baru: Kiosk/QR meja, inventory/resep/waste/closing, refund/void/remake, laporan/drilldown/export dan merchant settlement; jangan mengklaim semua fitur belum ada di seluruh produk.
+- `NEEDS CONFIRMATION`: commercial plan/pricing/trial/terms before public sale. Bank conditional dan merchant asli sebelum QRIS/Gateway aktif; cash lokal tidak membutuhkan keputusan bank/pricing.
+- `PROPOSAL`: enam wave di Dossier, pilot cash dahulu. Tidak ada payment production/provider/payout/production activation atau skor readiness baru.
+
 ## 2026-10-05 — Gate sesudah SagaPOS Sprint 3 lokal
 
 - `CONFIRMED`: source `9ede3a808b97071d488aad09df59f4ac194df999` menutup approval/provisioning/login/onboarding persisten hanya lokal. Gate Sprint 2 untuk slice tersebut ditutup di scope lokal, bukan production.

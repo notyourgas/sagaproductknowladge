@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — Empat sprint prototype SaaS SagaPOS lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `4045cfb3b4bea355f13bd641521358e077887bec` menghubungkan akun tenant
+ke publish menu, shift, cash sintetis server-priced, KDS terminal dan ledger
+closing. Tes63/63/check/browser/a11y/replay/restart/restore PASS. Batas: Owner,
+satu menu, cash-only, unknown HPP, approval selisih belum tersambung. Empat
+sprint selesai bukan SaaS siap jual; production unchanged/BUSINESS_READY belum.
+`PROPOSAL`: akun/sesi/recovery→pilot cash lengkap→guarded release→Kiosk/QR/stok
+→laporan/payment terverifikasi→paket/billing komersial. [SagaOPS](products/sagaops/DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS Sprint 3 akun pusat dan onboarding lokal
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

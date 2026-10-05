@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS Sprint 4 operasional tenant lokal
+
+`CONFIRMED`; arahan Andreas, source `4045cfb3b4bea355f13bd641521358e077887bec`
+pushed: setup→katalog→shift→cash sintetis→KDS→closing ledger. Sebelumnya hanya
+persiapan tersimpan. Tes63/63/static/type/browser/a11y/recovery PASS; Platform
+unchanged. SagaOPS/Platform/product/master/gaps/decision/status/changelog
+disinkronkan. Enam wave strategi lanjut `PROPOSAL`; native DB/akun staf/
+session refresh/recovery/merchant/UAT/release terbuka. Production tidak diubah.
+
 ## 2026-10-05 — SagaPOS Sprint 3, approval ke persiapan akun
 
 `CONFIRMED`; instruksi Andreas, source SagaPOS `9ede3a808b97071d488aad09df59f4ac194df999`

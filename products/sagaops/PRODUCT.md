@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — Sprint 4: siklus operasional tenant lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `4045cfb3b4bea355f13bd641521358e077887bec` menghubungkan persiapan ke
+menu terbit, shift, quote server, cash sintetis, KDS sampai diserahkan, dan
+closing authoritative ledger. Dua tenant/replay/restart/restore/availability
+negatives lulus; 63/63 tests, static/type/browser/a11y PASS. Semua tetap lokal:
+Owner saja, satu menu, cash latihan, tanpa merchant/pembayaran production.
+Empat sprint prototype selesai; enam wave penutupan SaaS masih proposal.
+[Detail dan celah](DOSSIER.md). Bukan BUSINESS_READY atau release production.
+
 ## 2026-10-05 — SagaPOS Sprint 3: akun disetujui dan persiapan tersimpan
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

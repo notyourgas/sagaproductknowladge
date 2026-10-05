@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Sprint 4 operasional cash/KDS/closing, lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; arahan Andreas, source `4045cfb3b4bea355f13bd641521358e077887bec`. Menutup gap persiapan→kasir dengan tenant-scoped existing catalog/aggregate/ledger/KDS/closing. Cash sintetis saja, bukan merchant live.
+- Tes63/63, static/type/browser/a11y/replay/restart/restore PASS. Gap dan enam wave penutupan didokumentasikan; native DB/staff/refresh/recovery/editor/approval/UAT/release belum selesai. Tidak deploy/activate/provider mutation. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Sprint 3 onboarding akun pusat, lokal
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; sumber arahan Andreas, source `9ede3a808b97071d488aad09df59f4ac194df999`: approval→tenant terisolasi→login→onboarding persisten. Menutup gap antara pengajuan dan persiapan; menu draft/pembayaran belum aktif.

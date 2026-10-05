@@ -1,5 +1,16 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Sprint 4 operasional lokal dan strategi penutupan
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: instruksi Andreas menyelesaikan Sprint 4 dan menyusun strategi celah. Branch `codex/sagapos-saas-operations-sprint4-20261005`, source `4045cfb3b4bea355f13bd641521358e077887bec`, baseline `9ede3a808b97071d488aad09df59f4ac194df999`.
+- Before → after: persiapan tersimpan tanpa kasir → tenant Owner sendiri menerbitkan produk yang sama, membuka shift, quote server, konfirmasi cash sintetis, order/payment/bill/cash ledger/outbox/KDS satu kali, ACK/PREPARING/READY/SERVED dan closing dari ledger. Tidak ada mesin POS kedua/dependency/migration produksi baru atau salinan Kopi Saga.
+- Adapter memakai account/permission server dan repo/catalog/closing existing; write account/outlet serialized, quote 60 detik actor/outlet-bound, recheck availability/pricing; replay accepted payment/close selamat setelah restart. Cookie tidak memberi akses operator seeded; public/production runner menolak seluruh entry Sprint 4.
+- Test final63/63 tanpa skip, static759modul/schema35/TypeScript/JS/diff PASS; tiga viewport390x844/768x900/1440x900, reduced-motion, nol page errors/overflow/automated axe violations. Browser mobile melakukan order kedua dan closing. Dua tenant/replay concurrency/underpayment/unavailable/expiry/auth/CSRF/field injection/audit/restart/disposable restore diuji. Batch paralel OOM host diulang serial tanpa melonggarkan assertion. Bukan full repository suite/native Postgres/human UAT.
+- HPP/resep belum dikonfigurasi: MISSING/UNVERIFIED, bukan laba nol; PREPARING tidak mengurangi stok yang belum dipetakan. Closing variance tetap membutuhkan approval. Laporan100order/20shift, Owner-only/satu-menu/cash-only, quote volatile dan sesi pusat300detik adalah batas lokal, bukan kontrak SaaS production.
+- `PROPOSAL`: enam wave berurutan: (1) trusted provisioning/lifecycle/session/role/native DB/recovery; (2) pilot cash lengkap editor/approval closing; (3) release pilot guarded + UAT awam; (4) Kiosk/QR meja/inventory; (5) authoritative reports/refund/payment terverifikasi; (6) paket/terms/billing/branding/support komersial. Jangan membangun semua tahap komersial sebelum pilot cash.
+- Gap prioritas: session refresh dan receipt recovery durable; staff scoped; katalog lebih dari satu; maker/checker selisih; transport provisioning/revoke; native DB multi-worker/migration/recovery; UAT awam. QRIS/Gateway/settlement/payout belum diaktifkan. Fitur single-tenant existing tidak otomatis terikat ke SaaS baru.
+- Source strategy `docs/SAGAPOS_SAAS_SPRINT4_AND_CLOSURE_STRATEGY_2026-10-05.md` berisi24gap,6wave,9kelompok skenario acceptance. Platform source `45752bc8f3eea08446fe7db053290d70fa83eca2` unchanged. Production tidak dimutasi/diperiksa ulang; tidak mengklaim active/rollback baru atau BUSINESS_READY.
+
 ## 2026-10-05 — Approval, tenant, login dan onboarding Sprint 3 lokal
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; instruksi Andreas melanjutkan Sprint 3. Branch `codex/sagapos-saas-approval-sprint3-20261005`, source `9ede3a808b97071d488aad09df59f4ac194df999`, baseline `3327dc2d4faef4245802f339b8e1f03ca9300716`.

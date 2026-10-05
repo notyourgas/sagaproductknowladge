@@ -1,5 +1,10 @@
 # Saga Platform Changelog
 
+## 2026-10-05 — SagaPOS Sprint 4 local account operations
+
+- `CONFIRMED`: source SagaPOS `4045cfb3b4bea355f13bd641521358e077887bec` menggunakan kontrak akun pusat existing untuk siklus cash/KDS/closing lokal. Source Platform tidak diubah/deploy.
+- Tes SagaPOS63/63 termasuk integrasi Platform lokal PASS; refresh/lifecycle/provisioning production tetap gap. Tidak mengaktifkan paket/provider atau tenant live. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS Sprint 3 memakai approval/session native, lokal
 
 - `CONFIRMED`; source SagaPOS `9ede3a808b97071d488aad09df59f4ac194df999`, Platform existing `45752bc8f3eea08446fe7db053290d70fa83eca2` unchanged: integration native review/provisioning/session assertion berhasil dalam target terisolasi.

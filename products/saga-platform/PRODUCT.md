@@ -1,5 +1,14 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-05 — SagaPOS Sprint 4 menggunakan akun pusat, lokal
+
+`CONFIRMED`: SagaPOS source `4045cfb3b4bea355f13bd641521358e077887bec`
+menghubungkan akun tenant hasil kontrak approval/identity existing ke uji
+cash/KDS/closing. Source Platform `45752bc8f3eea08446fe7db053290d70fa83eca2`
+tidak berubah; sesi tetap assertion-bounded, provisioning production/lifecycle
+dan refresh operasional belum terimplementasi dalam slice ini. Tes SagaPOS
+63/63 termasuk native local Platform integration PASS; bukan release Platform.
+
 ## 2026-10-05 — Kontrak existing dipakai SagaPOS Sprint 3 lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: SagaPOS source
