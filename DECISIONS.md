@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-233 — Lanjutkan SagaPOS Sprint 2
+
+- Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: lanjutkan Sprint 2 dan pastikan alur berjalan baik setelah landing/form Sprint 1.
+- Alasan: pendaftaran perlu tersimpan pada antrean approval Platform, tidak berhenti pada ringkasan frontend.
+- Alternatif implementasi: queue/identity produk kedua atau aktivasi paket fiktif; ditolak. Gunakan kontrak dan queue Platform existing, data sintetis untuk pengujian lokal.
+- Dampak: SagaPOS `3327dc2d4faef4245802f339b8e1f03ca9300716`/Platform `45752bc8f3eea08446fe7db053290d70fa83eca2` pushed dan local validated; tidak memberi izin pricing, signup production atau provider mutation baru.
+- Dokumen terkait: [SagaOPS](products/sagaops/DOSSIER.md), [Platform](products/saga-platform/DOSSIER.md), [Gaps](GAPS.md).
+
 ## DEC-232 — Website/form SagaPOS lebih dahulu, gaya Saga
 
 - Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.

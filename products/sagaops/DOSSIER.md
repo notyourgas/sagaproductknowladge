@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Form ke antrean identity Platform, Sprint 2 lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; arahan Andreas melanjutkan Sprint 2. Sebelum hanya review form; sesudah review → kirim → pending Owner approval dalam Platform lokal.
+- SagaPOS branch `codex/sagapos-marketing-signup-sprint1-20261005`, source `3327dc2d4faef4245802f339b8e1f03ca9300716`; paired Platform branch `codex/sagadev-sagapos-signup-sprint2-20261005`, source `45752bc8f3eea08446fe7db053290d70fa83eca2`.
+- Data mengalir dari form ke BFF validasi/session/CSRF/rate-limit, lalu kontrak HMAC identity signup existing untuk product `sagaops`. Platform tetap pemilik identity pending, password hash dan idempotency; tidak ada queue bisnis kedua. Browser hanya menerima receipt/status publik, tanpa identifier privat Platform.
+- Pilihan jenis usaha kini disimpan oleh enum controller Platform; error validasi internal API berbentuk JSON, bukan redirect. ULID native lowercase diterima tanpa mengubah nilai atau assertion pending. Tidak ada migration, dependency baru, provider mutation atau operasional tenant baru.
+- Tes SagaPOS20/20; native integration1/1 terhadap Laravel existing/disposable SQLite; paired identity/adapter/API-error40/40,373assertions; Pint, PHP syntax dan check755modul/TypeScript PASS. Tiga viewport390x844/768x900/1440x900: nol overflow/error/storage/WCAG A/AA otomatis. Lost-response retry, duplicate rejection, pending login denial, hash password, restart dan disposable backup/restore replay lulus; tiga pengajuan sintetis, nol outbox/payment/notification.
+- Production tidak dimutasi atau diverifikasi ulang pada sprint lokal ini. Harga/trial/terms tidak dikarang; fixture paket hanya pengujian. Live signup membutuhkan katalog komersial dan credential produk sah serta paired release. Approval/provisioning/login/onboarding operasional dan UAT awam tetap terbuka; SQLite bukan bukti DB production/concurrency. `BUSINESS_READY=false`.
+- Rollback source: revert commit terisolasi, tanpa perubahan runtime. Rincian runnable checks ada di source `docs/SAGAPOS_SAAS_SIGNUP_SPRINT2_2026-10-05.md`.
+
 ## 2026-10-05 — Polish landing sesuai arahan Andreas
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

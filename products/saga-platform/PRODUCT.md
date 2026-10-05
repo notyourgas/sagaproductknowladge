@@ -1,5 +1,15 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-05 — Profil jenis usaha signup SagaPOS, source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `45752bc8f3eea08446fe7db053290d70fa83eca2` menerima enum opsional
+jenis usaha pada signup existing dan memastikan error internal API berupa
+JSON. Regresi identity/adapter/API-error40/40 dan Pint PASS; SagaPOS memakai
+antrean existing dalam pengujian SQLite terisolasi. Tidak ada katalog/paket,
+credential, provider, tenant operasional atau production yang diaktifkan.
+[Detail](DOSSIER.md).
+
 ## 2026-10-05 — Typography/layout Member aktif production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: source Member

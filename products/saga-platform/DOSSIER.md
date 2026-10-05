@@ -1,5 +1,12 @@
 # Saga Platform Dossier
 
+## 2026-10-05 — Kontrak signup jenis usaha SagaPOS lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagadev-sagapos-signup-sprint2-20261005`, source `45752bc8f3eea08446fe7db053290d70fa83eca2`; consumer SagaPOS `3327dc2d4faef4245802f339b8e1f03ca9300716`.
+- Sebelum enum jenis usaha tidak lolos validated profile; sesudah enum coffeeshop/cafe/food/other disimpan oleh signup controller existing. Internal API validation kini JSON422, bukan redirect302. Auth/HMAC/approval/authority tetap, tanpa migrasi atau commercial plan baru.
+- Regresi40/40,373assertions dan Pint PASS. Integrasi consumer terhadap native Laravel/disposable SQLite lulus pending queue, hash password, deny login, deduplikasi/replay, restart/restore, tanpa external/provider call. Bukan bukti live Platform atau DB production.
+- Production tidak diubah; live SagaPOS signup menunggu paket/terms dan product-bound credential sah serta paired deployment. Approval/provisioning/login operasional masih terbuka. [SagaPOS](../sagaops/DOSSIER.md).
+
 ## 2026-10-05 — Deployment perapihan typography/layout Member
 
 - `CONFIRMED`; Andreas meminta deploy kandidat UI yang telah tervalidasi, bukan seluruh source pending.

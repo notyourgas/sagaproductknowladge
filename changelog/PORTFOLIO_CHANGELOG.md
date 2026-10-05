@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS Sprint 2, antrean signup Platform lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+SagaPOS `3327dc2d4faef4245802f339b8e1f03ca9300716`, Platform
+`45752bc8f3eea08446fe7db053290d70fa83eca2`: form ke antrean pending existing,
+jenis usaha tersimpan, retry/restart/restore tanpa duplikat, login pending
+ditolak. Tes20/20+native1/1+Platform40/40 dan check/Pint/a11y PASS. Production,
+provider dan pembayaran tidak dimutasi; gate live/approval/provisioning terbuka.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS landing visual polish source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

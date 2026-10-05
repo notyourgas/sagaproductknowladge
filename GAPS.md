@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Gate sesudah SagaPOS signup lokal Sprint 2
+
+- `CONFIRMED`: source SagaPOS `3327dc2d4faef4245802f339b8e1f03ca9300716` dan Platform `45752bc8f3eea08446fe7db053290d70fa83eca2` menutup pengiriman/validasi/deduplikasi pending dalam target lokal, bukan production.
+- `TODO`: approved commercial plan/terms dan product-bound identity credential; paired Platform/public marketing release; approval/rejection → provisioning → login → onboarding wajib. Jangan mengarang pricing/trial atau mengaktifkan pembayaran dari fixture.
+- `TODO`: DB production/concurrency, UAT awam dan operasi dua tenant; SQLite restart/restore sintetis bukan business readiness. Full suite tidak dijalankan pada slice ini; regresi terkait lulus.
+
 ## 2026-10-05 — Batas website/form SagaPOS Sprint 1
 
 - `CONFIRMED`: source `adbe7807cff2cffbcff21393440fd00a96f80a7c` hanya landing dan form review lokal; data tidak dikirim, akun tidak dibuat. Tidak ada deployment.

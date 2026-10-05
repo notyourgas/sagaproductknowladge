@@ -1,5 +1,10 @@
 # Saga Platform Changelog
 
+## 2026-10-05 — Enum signup SagaPOS dan JSON internal API
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `45752bc8f3eea08446fe7db053290d70fa83eca2`; field opsional jenis usaha disimpan, input tidak sah ditolak tanpa akun parsial, error internal JSON.
+- Regresi40/40 dan Pint PASS; paired SagaPOS native SQLite integration1/1 PASS. Tidak ada migration, paket/trial, provider, live signup atau deployment baru. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Typography/layout Member production-activated
 
 - `CONFIRMED`; permintaan deploy Andreas. Member `9fa7f3f1299abce7409eec332441c79001fdbb23`, release `20261005T031100Z-bf3baba-r0u`: perapihan typography/gap/tombol/ikon/login/onboarding/voucher/Akun kini aktif.

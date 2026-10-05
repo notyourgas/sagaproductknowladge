@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — SagaPOS bisa mengirim pengajuan, hanya lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source SagaPOS `3327dc2d4faef4245802f339b8e1f03ca9300716`, paired Platform
+`45752bc8f3eea08446fe7db053290d70fa83eca2`, mengikat form ke antrean signup
+native dalam SQLite terisolasi. Identitas pending/hash/idempotency dimiliki
+Platform; belum bisa login atau beroperasi sebelum approval/provisioning.
+Tes20/20+native1/1+Platform40/40 PASS. Tidak ada signup publik aktif, commercial
+plan/terms baru, transaksi atau deploy. [SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-05 — Landing SagaPOS diperhalus, tetap preview
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

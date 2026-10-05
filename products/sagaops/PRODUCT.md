@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — Pengajuan SagaPOS Sprint 2, antrean lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `3327dc2d4faef4245802f339b8e1f03ca9300716` menghubungkan review/kirim
+form ke antrean identity SagaDev Platform lokal terisolasi, dengan receipt
+menunggu approval. Retry sesudah respons hilang tidak menggandakan pengajuan;
+pending identity belum bisa login. Tes SagaPOS 20/20, integrasi native 1/1,
+Platform terkait 40/40 dan check PASS. Bukan signup production atau aktivasi
+tenant/pembayaran. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Polish visual landing SagaPOS lokal
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

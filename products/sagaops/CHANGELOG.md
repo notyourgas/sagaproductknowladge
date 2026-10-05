@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Pengajuan identity pending lokal Sprint 2
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `3327dc2d4faef4245802f339b8e1f03ca9300716`, paired Platform `45752bc8f3eea08446fe7db053290d70fa83eca2`; form → antrean existing → menunggu approval.
+- Tes20/20, native1/1, Platform40/40, check/Pint/a11y PASS; restart/restore dan retry tanpa duplikat lulus. Akun pending belum bisa login, tidak ada production signup/deploy/pembayaran. Gate katalog/terms/credential dan approval/provisioning tetap terbuka. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Background, foto AI, dropdown dan FAQ lokal
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: arahan Andreas memperhalus landing, source `b0eb2efd1359afb075f6acb1052518ca38f1d34b`; motion dapat dijeda, hover/transisi, foto AI, picker native dan FAQ 280 ms.
