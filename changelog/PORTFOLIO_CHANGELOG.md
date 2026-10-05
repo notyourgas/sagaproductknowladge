@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-05 — Beranda, Riwayat dan Akun Member aktif
+
+`CONFIRMED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`: Member
+`179603d8a39447045a6ebfb2354abd7790aa66b2`, release
+`20261005T013000Z-bf3baba-r0u`. Beranda editorial, empat tab, Riwayat penuh
+dan panel Akun tersedia; backend/database unchanged, POS/provider preserved.
+Recovery/monitor/Owner browser PASS; Member authenticated/iPhone fisik OPEN.
+[Detail](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS pengingat stok rendah aktif
 
 `CONFIRMED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`: source

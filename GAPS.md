@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Residual setelah rilis UI Member
+
+- `CONFIRMED`: Member `179603d8a39447045a6ebfb2354abd7790aa66b2`, release `20261005T013000Z-bf3baba-r0u`, production-activated dengan rollback exact2a29655; recovery/monitor/Owner browser/public UI PASS.
+- `TODO`: authenticated Member journey pada kandidat ini dan iPhone Safari/PWA fisik, termasuk keyboard panel Akun, safe-area, refresh dan offline/online. Synthetic WebKit bukan iPhone fisik; `BUSINESS_READY=false`.
+- Rilis UI ini tidak menutup backlog keamanan/recovery/retensi/voucher Book yang masih source lokal. Backendbf3baba/contracts3279/schema15 tetap; tidak ada aktivasi erasure/provider baru atau deploy POS/Book. Entri lokal lebih baru di bawah bukan runtime rilis ini.
+
 ## 2026-10-05 — Residual pengingat stok rendah setelah aktivasi
 
 - `CONFIRMED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152` aktif dengan rollback `60c77dcba62ff237fa78dec649949e5e7d91de43`; Owner API 200 `NO_CLOSING`, monitor lulus, Gateway existing tetap. Entri source-only 4 Oktober di bawah adalah histori, bukan status runtime kini.

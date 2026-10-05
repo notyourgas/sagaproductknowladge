@@ -1,5 +1,18 @@
 # Saga Platform Dossier
 
+## 2026-10-05 — Rilis UI Member di atas backend aktif
+
+- `CONFIRMED`; Andreas meminta Riwayat di navigasi bawah, Beranda lama yang menarik, lalu deploy.
+- Before -> after: Riwayat sekunder dan pengaturan Akun bertingkat menjadi empat tab utama, Beranda editorial, serta panel native edit profil/notifikasi. Sesi perangkat, pesan layanan dan bantuan dikelompokkan; API lama tetap dipakai.
+- Member branch `codex/member-home-history-release-20261005`, exact `179603d8a39447045a6ebfb2354abd7790aa66b2`. Kandidat dibentuk dari frontend production `2a2965558b8ece60f5a1442bd406eded65dc1f28`, bukan seluruh perubahan source pending.
+- Backend unchanged `bf3baba7cec2e2e936ce6b6e9d969b3dd4cd0729`, contracts unchanged `3279a02b6d06d3532190488f6abbcc59c312d120`; 15 migration unchanged, tanpa seed/data correction atau dependency baru.
+- Release aktif `20261005T013000Z-bf3baba-r0u`; artifact SHA256 `99947ae5ad04641edf311f045b489ac413a813c834c74d6a69200e373256e05d`. Rollback exact `20261003T075000Z-bf3baba-r0u`/Member2a29655 dipertahankan.
+- Runner source `6467345a2d09219be2b2ae147ae93d155c39ee0c`, installed LF SHA256 `3a117d6a2e00f573759e6e810a6dad61155938faad8bdb4653ea333a9b9ddec8`. Binding pasangan exact; gate hash/expected-current tidak dilemahkan. POS `1a60de56e41697d2ec35ba05f66f8bae16198152` dipertahankan sesudah delta stock-only diverifikasi; POS tidak dideploy oleh rilis Member.
+- Local check/628 Member tests, Chromium/WebKit320–430/Axe/200%text/reduced-motion/offline/error/cursor/filter/detail/account regression PASS. Worker upgrade/rollback/reswitch PASS. Runner123 Python/15 Node PASS; native PostgreSQL18 restore/restart15→15 PASS.
+- Production encrypted backup/checksum/disposable restore, fresh effective Owner, guarded switch→rollback→prepare→reswitch, active backup dan monitor PASS. Owner authenticated browser390/1440, session reload/CSRF/cookie/denial/Axe PASS; enam aset publik byte-identical dan login320/390/430 PASS. Tidak membuat transaksi bisnis.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`, source app/runner commit lokal, NOT_PUSHED/NO_PR/CI_NOT_RUN. Google/OTP dan provider existing tidak diperluas; Vercel/DNS/Book/hardware/erasure tidak diubah. Audit security mendalam NOT_REQUESTED.
+- Authenticated Member journey dan iPhone Safari/PWA fisik belum diuji pada kandidat ini; `BUSINESS_READY=false`. Source keamanan/recovery/voucher lintas Book yang lebih baru tetap IMPLEMENTED_NOT_DEPLOYED, tidak otomatis ikut rilis UI ini.
+
 ## 2026-10-04 — Kode voucher dan shared checkout
 
 - `CONFIRMED`: keputusan Andreas untuk pilihan voucher otomatis setelah identifikasi Member, atau input kode di POS/Book; kode bukan bukti login.

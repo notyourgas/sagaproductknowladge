@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-05 — Member Beranda/Riwayat/Akun production-activated
+
+`accepted / CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+BUSINESS_READY=false`: Member `179603d8a39447045a6ebfb2354abd7790aa66b2`,
+release `20261005T013000Z-bf3baba-r0u`, backend/contracts unchanged.
+Recovery, monitor, authenticated Owner dan public UI PASS; authenticated Member
+serta iPhone fisik OPEN. Semua dokumen terdampak tersinkron dari checkout bersih;
+source app/runner commit lokal, NO_PR/CI_NOT_RUN. Final SHA knowledge `main HEAD`
+setelah push; perubahan pending keamanan/voucher Book tidak termasuk rilis ini.
+
 ## 2026-10-05 — Pengingat stok rendah SagaPOS production-activated
 
 `accepted / CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /

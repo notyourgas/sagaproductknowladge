@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — Sinkronisasi rilis Beranda/Riwayat/Akun Member
+
+- `CONFIRMED`; Andreas meminta deploy. Member `179603d8a39447045a6ebfb2354abd7790aa66b2`, release `20261005T013000Z-bf3baba-r0u` kini production-activated. Riwayat menjadi tab utama, Beranda editorial dan pengaturan Akun ringkas memakai Platform existing.
+- Product/Dossier/Changelog Saga Platform, portfolio/master/decision/gaps/status/root diperbarui. Recovery/rollback/monitor/Owner browser PASS; Member authenticated/iPhone fisik OPEN, `BUSINESS_READY=false`. Source lokal NOT_PUSHED/CI_NOT_RUN; production berubah, backend/database/POS/provider tidak diperluas.
+
 ## 2026-10-05 — Sinkronisasi aktivasi pengingat stok rendah SagaPOS
 
 - `CONFIRMED`: atas instruksi deploy Andreas, source `1a60de56e41697d2ec35ba05f66f8bae16198152` aktif; rollback `60c77dcba62ff237fa78dec649949e5e7d91de43`. Owner/Kepala Toko melihat kebutuhan belanja berdasarkan closing dan minimum stok tanpa PO/push otomatis.

@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-230 — Riwayat utama dan Beranda editorial Member
+
+- Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: tambah Riwayat pada navigasi bawah dan gunakan kembali desain Beranda lama yang sederhana tetapi menarik; Andreas mengizinkan deploy bersama perbaikan Akun.
+- Alasan: riwayat penting lebih mudah ditemukan, Beranda tidak menjadi daftar fitur atau riwayat penuh, pengaturan singkat tidak memerlukan perpindahan halaman penuh.
+- Alternatif: Riwayat tetap sekunder atau membawa seluruh backlog source ke production; tidak dipilih.
+- Dampak: Beranda/Promo/Riwayat/Akun, editorial illustration dan panel Akun native; Platform tetap authority. Source `179603d8a39447045a6ebfb2354abd7790aa66b2`/release `20261005T013000Z-bf3baba-r0u` aktif; iPhone/Member authenticated UAT terpisah, bukan BUSINESS_READY.
+- Dokumen terkait: [Saga Platform](products/saga-platform/PRODUCT.md), [dossier](products/saga-platform/DOSSIER.md).
+
 ## DEC-229 — Pengingat stok kurang dari hasil closing
 
 - Tanggal: 2026-10-04. Status: `CONFIRMED`; pemberi keputusan Andreas.

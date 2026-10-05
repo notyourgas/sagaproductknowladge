@@ -1,5 +1,12 @@
 # Saga Platform Changelog
 
+## 2026-10-05 — Beranda/Riwayat/Akun Member production-activated
+
+- `CONFIRMED`; permintaan Andreas untuk navigasi Riwayat dan Beranda editorial lalu deploy. Source Member `179603d8a39447045a6ebfb2354abd7790aa66b2`, release `20261005T013000Z-bf3baba-r0u`.
+- Empat tab Beranda/Promo/Riwayat/Akun, Riwayat penuh dan panel pengaturan Akun memakai API existing. Backend/contracts/schema unchanged; pending keamanan/voucher Book tidak ikut rilis.
+- Source/local tests, immutable artifact, encrypted recovery/disposable restore, actual rollback/reswitch, monitor, Owner authenticated/public UI PASS. Member authenticated/iPhone fisik OPEN; `BUSINESS_READY=false`. App/runner NOT_PUSHED/NO_PR/CI_NOT_RUN; production berubah, POS/provider existing tetap.
+- Product/Dossier/Changelog, portfolio/master/decision/gaps/root/status disinkronkan; detail provenance di dossier.
+
 ## 2026-10-04 — Voucher code lintas checkout, belum deploy
 
 - Klasifikasi `CONFIRMED`; sumber keputusan Andreas dan source/tests lokal. Backend `b4d883db1d3c0c4503d682745bb7a5cf3d72da4a`, Member `685d74da2f4fb81e82583f967ca4b905ddd87bc4`, contracts `466ac94e09254782308b3a6979e240d114259655`.

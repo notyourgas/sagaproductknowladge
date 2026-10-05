@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — Navigasi dan Akun Member production-activated
+
+`CONFIRMED`: Member `179603d8a39447045a6ebfb2354abd7790aa66b2`, release
+`20261005T013000Z-bf3baba-r0u` aktif. Beranda editorial, tab Riwayat penuh,
+dan Akun ringkas dengan panel edit/notifikasi memakai Platform existing.
+Empat tab: Beranda, Promo, Riwayat, Akun. Backend/contracts/schema unchanged;
+pending keamanan/recovery/voucher Book tidak ikut deploy. Recovery, monitor
+dan Owner browser PASS; Member authenticated/iPhone fisik OPEN,
+`BUSINESS_READY=false`. [Saga Platform](products/saga-platform/PRODUCT.md).
+
 ## 2026-10-05 — Pengingat minimum stok SagaPOS production-activated
 
 `CONFIRMED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152`
