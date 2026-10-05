@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Polish landing sesuai arahan Andreas
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Source `b0eb2efd1359afb075f6acb1052518ca38f1d34b`, branch
+`codex/sagapos-marketing-signup-sprint1-20261005`.
+Sebelum: background datar, hero ilustrasi kecil, picker bergantung OS,
+dan FAQ langsung terbuka. Sesudah: background/headline bergerak lembut,
+hover warna/zoom, dua foto AI berlabel VISUAL AI, styling native customizable
+select dengan fallback browser, serta FAQ animasi tinggi 280 ms yang dapat
+berbalik saat klik berulang. Native keyboard, reduced motion dan tombol jeda
+tetap tersedia. Dua JPEG total 270.739 byte; gambar bar lazy-load.
+Built-in imagegen dipakai tanpa dependency tambahan; foto bukan screenshot
+produk atau bukti transaksi. Prompt tercatat di dokumentasi source.
+Check 751 modul PASS; tes marketing/server 13/13, browser 390x844/768x900/
+1440x900 PASS, nol pelanggaran WCAG A/AA otomatis dan nol network writes,
+storage, error halaman atau asset gagal. Hero dan picker ditinjau visual lokal.
+Tidak ada deploy, schema, akun, provider atau pembayaran berubah.
+Form pengajuan tetap review lokal; integrasi Platform/approval/login belum
+tersambung. Rollback: revert commit visual terisolasi, tanpa perubahan data.
+
 ## 2026-10-05 — Website dan pengajuan akses Sprint 1
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

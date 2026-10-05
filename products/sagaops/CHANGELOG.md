@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Background, foto AI, dropdown dan FAQ lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: arahan Andreas memperhalus landing, source `b0eb2efd1359afb075f6acb1052518ca38f1d34b`; motion dapat dijeda, hover/transisi, foto AI, picker native dan FAQ 280 ms.
+- Tes terkait 13/13, check dan browser/a11y tiga viewport PASS. Form masih lokal; production/pembayaran unchanged. Integrasi signup/approval masih terbuka. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Website dan form pendaftaran Sprint 1 lokal
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `adbe7807cff2cffbcff21393440fd00a96f80a7c`; navbar, animasi ringan, fitur/tab/FAQ dan form validasi/review hitam-putih-orange.

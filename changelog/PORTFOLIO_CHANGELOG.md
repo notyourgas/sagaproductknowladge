@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS landing visual polish source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `b0eb2efd1359afb075f6acb1052518ca38f1d34b` memperhalus background,
+hover, foto AI, dropdown dan FAQ sesuai arahan Andreas. Tes terkait 13/13,
+check dan browser/a11y tiga viewport PASS. Belum ada signup nyata atau deploy.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS website/form Sprint 1 source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

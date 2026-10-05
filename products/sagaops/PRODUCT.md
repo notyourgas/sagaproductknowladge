@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — Polish visual landing SagaPOS lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `b0eb2efd1359afb075f6acb1052518ca38f1d34b` menambah background animasi
+orange yang dapat dijeda, hover/transisi warna, dua foto editorial AI,
+dropdown native dengan font konsisten pada browser pendukung, dan FAQ smooth.
+Tes terkait 13/13, check 751 modul dan browser/a11y tiga viewport PASS.
+Form masih preview tanpa pengiriman atau akun; production tidak diubah.
+[Detail](DOSSIER.md).
+
 ## 2026-10-05 — Landing page dan formulir SagaPOS Sprint 1 lokal
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — Sinkronisasi polish landing SagaPOS
+
+- `CONFIRMED`; arahan Andreas memperbagus landing. Source `b0eb2efd1359afb075f6acb1052518ca38f1d34b` pushed, motion/hover/foto AI/picker/FAQ lokal; tes terkait 13/13, check dan browser/a11y PASS.
+- PRODUCT/DOSSIER/CHANGELOG SagaOPS, portfolio/master/status/root diperbarui. Form belum mengirim ke Platform dan production tidak berubah; bukan signup aktif atau BUSINESS_READY. Next: integrasi pengajuan/approval sesuai Sprint 2.
+
 ## 2026-10-05 — Sinkronisasi website/form SagaPOS Sprint 1 lokal
 
 - `CONFIRMED`; arahan Andreas untuk landing/form dahulu, hitam-putih-orange. Source `adbe7807cff2cffbcff21393440fd00a96f80a7c` pushed; tes terkait 14/14, browser/a11y tiga viewport dan check PASS.

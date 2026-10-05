@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — Landing SagaPOS diperhalus, tetap preview
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `b0eb2efd1359afb075f6acb1052518ca38f1d34b` menambah motion yang
+bisa dijeda, hover warna, foto AI, picker native dan FAQ smooth. Tes terkait
+13/13, check serta browser/a11y PASS. Foto bukan screenshot produk; formulir
+belum mengirim pengajuan atau membuat akun. Tidak ada deploy/pembayaran baru.
+[SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-05 — Website SagaPOS Sprint 1 masih lokal
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
