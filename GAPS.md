@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Batas pratinjau onboarding SagaPOS
+
+- `CONFIRMED`: source `f29748b` hanya latihan lokal; user awam belum diuji langsung dan tidak ada bisnis/produk yang dibuat. Mode publik/production menolak route latihan.
+- `TODO`: uji tugas tanpa bantuan pada calon Owner/kasir awam; baru kemudian ikat wizard ke identitas terverifikasi, konfigurasi tenant, dan satu siklus operasional dua bisnis. Full suite perlu mengisolasi tes browser kasir lama yang menggantung.
+
 ## 2026-10-05 — Gate SaaS SagaPOS
 
 - `CONFIRMED`: fondasi source `a64e467` bukan aktivasi SaaS; production masih single-tenant/schema35.

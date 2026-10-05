@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Pratinjau onboarding lokal untuk pemula
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `f29748b` menambah wizard empat langkah dan tujuh panduan harian; tanpa signup, data bisnis baru, atau pembayaran.
+- Tes terkait 13/13, browser tiga viewport, WCAG 2.1 AA dan static/TypeScript PASS; full suite menggantung pada tes browser kasir lama. Production tetap single-tenant/schema35/Gateway existing; UAT awam dan operasi dua tenant belum lulus. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Fondasi slug dan provisioning tenant source-only
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `a64e467` menambah slug unik, organisasi/outlet kosong, dan role Owner atomik untuk akun yang sudah terverifikasi. Draft migrasi tidak masuk manifest schema35 production.

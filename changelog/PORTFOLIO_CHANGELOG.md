@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS onboarding pemula source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `f29748b` memberi latihan empat langkah dan panduan tujuh tugas
+operasional tanpa membuat transaksi atau akun. Browser/a11y tiga viewport
+dan tes terkait 13/13 PASS; full suite belum konklusif. Production masih
+single-tenant, bukan signup SaaS atau `BUSINESS_READY`.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-05 — Typography/layout Member aktif
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member

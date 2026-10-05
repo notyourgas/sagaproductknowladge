@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — SagaPOS onboarding masih pratinjau lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `f29748b` menyediakan wizard pemula empat langkah dan panduan
+operasional tujuh topik, tanpa signup, write server, URL usaha aktif,
+atau pembayaran. Browser/a11y tiga viewport serta tes terkait 13/13 PASS;
+uji awam nyata dan multi-tenant belum lulus. Runtime production, schema35,
+dan Gateway existing tidak berubah. Jangan menyebut SagaPOS SaaS siap jual.
+[SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-05 — Typography/layout Member production-activated
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member

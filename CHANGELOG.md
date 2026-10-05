@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — Pratinjau onboarding SagaPOS source-only
+
+- `CONFIRMED`: source `f29748b` menambah wizard lokal empat langkah dan panduan operasional tujuh topik untuk pemula; route publik/production tetap tertutup.
+- Product/Dossier/Changelog SagaOPS, portfolio/master/gaps/status/root disinkronkan. Tes terkait 13/13, browser/a11y tiga viewport dan check PASS; full suite belum konklusif, UAT awam dan runtime dua tenant masih terbuka. Tidak ada deploy, perubahan Gateway, atau transaksi baru; `BUSINESS_READY=false`.
+
 ## 2026-10-05 — Sinkronisasi aktivasi layout rhythm Member
 
 - `CONFIRMED`; instruksi deploy Andreas. Member `9fa7f3f1299abce7409eec332441c79001fdbb23`, release `20261005T031100Z-bf3baba-r0u` aktif: teks, gap, alignment tombol/ikon/onboarding/voucher/Akun konsisten.

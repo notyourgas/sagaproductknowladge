@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Latihan onboarding dan panduan tugas inti
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Source `f29748b` pada `codex/sagapos-saas-onboarding-20261005` menyediakan
+wizard lokal empat layar: nama usaha dan alamat pendek, outlet pertama,
+menu/harga pertama, dan pemeriksaan isian. Contoh dan penjelasan istilah
+ditulis untuk pemula; draft hanya hidup di sesi tab. Tujuh panduan langkah
+demi langkah mencakup menu, buka shift, pesanan/pembayaran, KDS, stok/waste,
+tutup shift/laporan, dan akun staf. Tidak ada akun, organisasi, produk,
+order, atau pembayaran yang dibuat dari pratinjau; route dan aset 404 pada
+mode publik/production.
+
+Browser 390x844, 768x1024, 1440x900 tanpa overflow/write dan pelanggaran
+WCAG 2.1 AA pada tes ini; validasi isian, slug terlarang, pemulihan draft,
+serta tes backend terkait 13/13 PASS. Static/TypeScript PASS. Full suite
+tidak konklusif karena tes browser kasir lama menggantung, bukan bukti
+regresi hijau. Penilaian mesin belum mengganti UAT pemahaman dengan orang
+awam. Runtime/schema/payment production tidak berubah; langkah tenant
+per-request, signup terverifikasi, operasi dua bisnis, dan komersial masih
+terbuka.
+
 ## 2026-10-05 — Fondasi identitas bisnis untuk SaaS
 
 Andreas meminta SagaPOS dapat dipakai coffeeshop/usaha lain dengan slug

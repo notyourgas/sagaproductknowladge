@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — Pratinjau onboarding ramah pemula, belum aktif
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `f29748b` menambah latihan onboarding empat langkah (usaha, outlet,
+menu pertama, ringkasan) serta tujuh panduan tugas harian berurutan.
+Pratinjau hanya di server lokal dan tidak mengirim data bisnis; mode publik
+dan production menolaknya. Browser 390/768/1440, aksesibilitas WCAG 2.1 AA,
+dan tes terkait 13/13 lulus. Ini belum signup, menu aktif, atau operasi
+multi-tenant. Uji pemahaman dengan operator awam tetap diperlukan sebelum
+aktivasi komersial. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Fondasi SaaS multi-bisnis, belum aktif
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

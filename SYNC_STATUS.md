@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-05 — SagaPOS onboarding pemula source-only
+
+`accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED`: source `f29748b`; tes terkait 13/13,
+browser/a11y 390/768/1440 dan check PASS, full suite belum konklusif.
+Pratinjau lokal tidak menulis bisnis atau menerima pembayaran; production
+single-tenant/schema35/Gateway unchanged. UAT awam, runtime lintas tenant,
+dan komersial terbuka; `BUSINESS_READY=false`. Knowledge `main HEAD`
+setelah push.
+
 ## 2026-10-05 — Member layout rhythm production-activated
 
 `accepted / CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
