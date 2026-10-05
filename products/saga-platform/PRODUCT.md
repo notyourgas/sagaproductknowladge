@@ -1,5 +1,29 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-05 — SagaPOS lifecycle terurut, source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
+sumber arahan Andreas untuk melanjutkan urutan closure (DEC-236).
+SagaPOS `373cc8a3a89d2426bfd3edd6f2ea67ad33b83dc6`, Platform `3c34dc6a4dea12ac3d83c4077e15a51a838ac1f4`.
+Before: lifecycle belum diterapkan pada tenant lokal → after: event signed
+pusat mengubah akses account secara durable, dengan ordering installation,
+binding subscription, receipt hash dan audit existing. Suspend/arsip menolak
+baca/tulis; event lama/provisioning retry tidak membuka ulang. Restore arsip
+belum memberi akses, bahkan jika ada entitlement tetapi identity belum relink.
+Tes SagaPOS19/19 dan Platform63/63(817assertions), static/type/PHP/Pint/diff,
+restart/disposable restore dan browser/a11y tiga viewport PASS. Bukan full suite,
+native Postgres atau human UAT. Tidak ada payment/provider/payout mutation.
+Production active `4c07c06fd4427fb33aebf2d2959a19472fbf2ed9`, rollback
+`1a60de56e41697d2ec35ba05f66f8bae16198152`, service/DB/Nginx aktif,
+health ready/GATEWAY existing/Member PROVIDER/Kiosk static demo OFF; links12/12.
+Dua tabel SaaS tetap belum ada di live; manifest35, draft receipt hanya lokal.
+Production unchanged; artifact/recovery rehearsal/activation/smoke/monitor NOT_RUN.
+BUSINESS_READY belum; staff/closing approval, native role/multi-worker,
+paired schema/runtime integration, event outage/reconcile/crash lease dan UAT
+masih terbuka. Tidak mengklaim seluruh Wave1 atau semua sprint selesai.
+
+
+
 ## 2026-10-05 — Closure SagaPOS Wave 1/2 parsial, bukan deploy
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
