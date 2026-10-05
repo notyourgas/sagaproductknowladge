@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-05 — Stock closing ingress produksi
+
+`CONFIRMED`: tooling aktif `d818576`, source cleanup `919998f`;
+aplikasi aktif `4c07c06`, rollback `1a60de5`, staff UAT_PENDING.
+Sync dari checkout terisolasi bersih yang HEAD sama dengan origin/main;
+checkout main bersama sedang dirty dan dipertahankan. Produk, dossier,
+changelog, portfolio, master dan gaps diperbarui; normal fast-forward push
+ke main, tanpa force/Actions/PR. SHA knowledge final dilaporkan setelah push.
+
+
 ## 2026-10-05 — SagaPOS staf + approval closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

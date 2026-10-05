@@ -1,5 +1,22 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Fix stock closing ingress produksi
+
+`CONFIRMED / PRODUCTION_INGRESS_ACTIVATED`, atas permintaan Andreas.
+Tooling `d81857657cf4bd3a8e4ba1503b795dcfc4cdf513`; source cleanup follow-up
+`919998f`, branch `codex/sagapos-stock-ingress-fix-20261005`.
+Before stock form tidak dapat membaca data -> after routing authenticated
+katalog/today/waste/alerts tersambung. Runtime tetap `4c07c06`, rollback
+`1a60de5`; no migration/data/payment changes.
+Renderer, service dan browser mobile synthetic: 8 tests PASS; disposable
+config/rollback rehearsal dan nginx syntax PASS; 13 ingress postchecks PASS;
+Owner report/alerts authenticated 200; 12 surface links PASS.
+Cleanup PID tes sempat exit 1 setelah ACTIVATED; verifikasi independen memastikan
+live config terpasang, lalu file sementara dibersihkan dan source diperbaiki.
+CI_NOT_RUN sesuai SKIP GITHUB. Staff production submit UAT dan BUSINESS_READY
+masih pending; jangan mengklaim semua fitur operasional selesai.
+
+
 ## 2026-10-05 — SagaPOS staf + approval closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

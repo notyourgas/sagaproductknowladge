@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — SagaPOS stock closing ingress, bukan rilis SaaS
+
+`CONFIRMED`: konfigurasi routing stok staf produksi dipulihkan
+(`d818576`, source follow-up `919998f`; aplikasi tetap `4c07c06`).
+Owner laporan/alerts authenticated 200, auth boundary dan layanan lulus.
+Akun staf asli belum diuji mengirim closing fisik; BUSINESS_READY belum.
+SaaS Tim & Akses/closing kas 334d102 tetap local/source-only.
+
+
 ## 2026-10-05 — SagaPOS staf + approval closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

@@ -1,5 +1,14 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Koreksi kelengkapan rilis stok staf
+
+`CONFIRMED`: ingress stock closing aktif pada tooling `d818576`
+(runtime aplikasi tetap `4c07c06`); login dan scope existing dipertahankan.
+Before halaman tampil tetapi pembacaan stok ditolak -> after jalur data
+tersambung. Draft/submit/waste produksi dengan akun staf tetap UAT_PENDING.
+Ini perbaikan konfigurasi, bukan aktivasi SaaS atau koreksi saldo stok.
+
+
 ## 2026-10-05 — SagaPOS staf + approval closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

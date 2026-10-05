@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — Routing stock closing staf dipulihkan di produksi
+
+`CONFIRMED / PRODUCTION_INGRESS_ACTIVATED / STAFF_UAT_PENDING`.
+Routing produksi kini meneruskan katalog bahan, draft/kirim closing, waste dan
+notifikasi stok ke aplikasi dengan login/izin existing tetap wajib.
+Tooling aktif `d81857657cf4bd3a8e4ba1503b795dcfc4cdf513`; source follow-up
+`919998f` hanya memperbaiki cleanup tes, tidak mengubah konfigurasi aktif.
+Aplikasi tetap `4c07c06fd4427fb33aebf2d2959a19472fbf2ed9`, rollback
+`1a60de56e41697d2ec35ba05f66f8bae16198152`.
+Delapan focused tests PASS, 13 ingress postchecks PASS, Owner read-only laporan
+dan alerts 200. Staff submit fisik belum diuji; bukan BUSINESS_READY.
+Database, akun/izin, Gateway GATEWAY dan Member PROVIDER tidak diubah.
+Rilis SaaS lokal 334d102 di bawah tetap belum deployed.
+
+
 ## 2026-10-05 — SagaPOS staf + approval closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

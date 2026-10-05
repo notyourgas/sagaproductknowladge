@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS stock closing: routing produksi diperbaiki
+
+`CONFIRMED`: tooling `d818576` PRODUCTION_INGRESS_ACTIVATED; source `919998f`.
+Form stok staf sekarang mempunyai jalur data authenticated; runtime tetap
+`4c07c06` dan database/mode pembayaran tidak berubah. Focused 8 tests,
+13 ingress probes dan Owner report/alerts PASS. Staff submit UAT_PENDING,
+BUSINESS_READY=false; SaaS lokal tidak ikut dipromosikan.
+
+
 ## 2026-10-05 — SagaPOS staf + approval closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

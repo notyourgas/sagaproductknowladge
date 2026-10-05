@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Stock closing staf: blocker routing ditutup, UAT tetap terbuka
+
+`CONFIRMED`: routing stock closing produksi telah aktif (`d818576`);
+source follow-up `919998f`, aplikasi tetap `4c07c06`.
+Owner report/alerts 200 dan ingress postchecks PASS. Staff credential tidak
+tersedia untuk smoke; authenticated draft/submit dengan akun staf, timbang
+fisik dan approval/reconciliation operasional tetap TODO. Jangan menyamakan
+401 anonim yang benar dengan bukti staf sudah menyelesaikan closing.
+
+
 ## 2026-10-05 — SagaPOS staf + approval closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

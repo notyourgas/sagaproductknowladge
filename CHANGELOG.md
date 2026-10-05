@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — SagaPOS stock closing ingress repair
+
+`CONFIRMED`: atas permintaan Andreas, routing produksi diperbaiki pada
+tooling `d818576` (source follow-up `919998f`); aplikasi tetap `4c07c06`.
+Stock form terhubung tanpa perubahan stok/payment. Focused tests, ingress
+rehearsal/postchecks dan Owner report/alerts PASS; staff submit UAT_PENDING.
+Update produk/dossier/changelog/portfolio/master/gaps/sync; knowledge main HEAD.
+
+
 ## 2026-10-05 — SagaPOS staf + approval closing, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
