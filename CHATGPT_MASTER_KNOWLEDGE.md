@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — SagaPOS SaaS belum aktif
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+Andreas mengarahkan SagaPOS menjadi SaaS untuk usaha lain dengan slug sendiri
+dan onboarding tanpa data Kopi Saga. Source `a64e467` baru menyiapkan slug
+dan provisioning organisasi/outlet/Owner terpisah; schema35 production,
+runtime single-tenant, Gateway, dan transaksi tidak berubah. URL publik
+tenant, signup, onboarding menu, billing serta UAT lintas tenant belum ada.
+Jangan menjual atau menyebutnya `BUSINESS_READY`.
+[SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-05 — Layout Member konsisten, belum deploy
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source Member

@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — Fondasi SaaS multi-bisnis, belum aktif
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `a64e467` menyediakan slug unik global dan provisioning atomik untuk
+organisasi, outlet utama, serta scope Owner terpisah. Tes sintetis membuktikan
+dua bisnis tidak berbagi organisasi/outlet, slug duplikat gagal tanpa data
+parsial, dan tabel slug menolak akses anonim. Migrasi masih draft; manifest
+production tetap schema35. Belum ada signup publik, URL bisnis, branding per
+tenant, menu onboarding, billing, atau transaksi tenant baru. Production
+tetap single-tenant; bukan SaaS siap pakai atau `BUSINESS_READY`.
+[Detail](DOSSIER.md).
+
 ## 2026-10-05 — Pengingat stok rendah aktif di production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`:

@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS fondasi SaaS multi-bisnis source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `a64e467` menyiapkan slug unik dan organisasi/outlet kosong dengan
+Owner terikat dalam satu transaksi. Schema production tetap35, runtime
+tetap single-tenant, dan belum ada signup, URL tenant, billing atau
+pembayaran baru. Tes terkait 30/30 serta check PASS; `BUSINESS_READY=false`.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-05 — Typography dan layout Member konsisten, lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source

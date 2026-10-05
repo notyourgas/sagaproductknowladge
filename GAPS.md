@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Gate SaaS SagaPOS
+
+- `CONFIRMED`: fondasi source `a64e467` bukan aktivasi SaaS; production masih single-tenant/schema35.
+- `TODO`: signup dan bukti pemilik, resolver request+session per tenant, domain/slug publik yang tidak membocorkan tenant lain, branding dan katalog kosong, wizard menu/shift/stok, serta dua tenant sintetis end-to-end.
+- `TODO`: model paket/trial/billing memerlukan keputusan Andreas; jangan aktifkan provider atau penagihan dari UI saja.
+- `TODO`: migrasi draft memerlukan upgrade/recovery schema, backup/restore, authenticated UAT dan gate rilis sebelum production. Kiosk, QR meja, Gateway dan Kopi Saga existing tidak boleh regresi.
+
 ## 2026-10-05 — Residual setelah rilis UI Member
 
 - `CONFIRMED`: Member `179603d8a39447045a6ebfb2354abd7790aa66b2`, release `20261005T013000Z-bf3baba-r0u`, production-activated dengan rollback exact2a29655; recovery/monitor/Owner browser/public UI PASS.

@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — Fondasi SaaS SagaPOS source-only
+
+- `CONFIRMED`: permintaan Andreas untuk multi-bisnis dengan slug dan onboarding. Source `a64e467` ter-push; slug unik dan provisioning organisasi/outlet/Owner kosong tervalidasi, production tidak berubah.
+- Product/Dossier/Changelog SagaOPS, portfolio, master, keputusan, gaps, status, dan root disinkronkan. Tes terkait 30/30 serta check PASS; full suite setelah koreksi belum selesai, signup/runtime tenant/billing/UAT/release masih terbuka. `BUSINESS_READY=false`.
+
 ## 2026-10-05 — Sinkronisasi layout rhythm Member lokal
 
 - `CONFIRMED`; Andreas meminta typography/alignment/gap konsisten. Source `9fa7f3f1299abce7409eec332441c79001fdbb23`: teks, gutter, tombol/ikon, onboarding/voucher dan panel Akun dirapikan; source lokal NOT_PUSHED/NO_PR/CI_NOT_RUN.

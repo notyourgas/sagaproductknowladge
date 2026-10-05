@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Fondasi slug dan provisioning tenant source-only
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `a64e467` menambah slug unik, organisasi/outlet kosong, dan role Owner atomik untuk akun yang sudah terverifikasi. Draft migrasi tidak masuk manifest schema35 production.
+- Tes onboarding 1/1, regresi terkait 30/30, static/TypeScript PASS. Full suite setelah koreksi belum selesai; production/Gateway tidak berubah. Runtime masih single-tenant, `BUSINESS_READY=false`. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Pengingat stok rendah production-activated
 
 - `CONFIRMED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152` aktif; rollback `60c77dcba62ff237fa78dec649949e5e7d91de43`. Owner dan Kepala Toko native `manager` mendapat pengingat bahan di bawah minimum dari stock closing; tidak ada PO atau push otomatis.

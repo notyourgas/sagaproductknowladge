@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-231 — SagaPOS diarahkan menjadi SaaS multi-bisnis
+
+- Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: bisnis lain mempunyai identitas/slug dan onboarding sendiri, tidak mewarisi nama, menu, data atau kredensial Kopi Saga.
+- Alasan: SagaPOS harus dapat dioperasikan dan dijual ke coffeeshop/usaha lain secara terpisah.
+- Alternatif: menyalin instalasi Kopi Saga lalu mengganti logo/URL; ditolak karena scope data dan runtime tidak terisolasi.
+- Dampak: source `a64e467` baru fondasi slug/provisioning; signup, runtime tenant, paket/billing dan UAT terpisah belum selesai. Production tidak berubah; `BUSINESS_READY=false`.
+- Dokumen terkait: [SagaOPS](products/sagaops/DOSSIER.md), [Gaps](GAPS.md).
+
 ## DEC-230 — Riwayat utama dan Beranda editorial Member
 
 - Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.

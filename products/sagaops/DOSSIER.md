@@ -1,5 +1,24 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Fondasi identitas bisnis untuk SaaS
+
+Andreas meminta SagaPOS dapat dipakai coffeeshop/usaha lain dengan slug
+sendiri, onboarding, menu dan operasional tanpa menyalin Kopi Saga. Source
+`a64e467` (`codex/sagapos-saas-foundation-20261005`) menambah draft tabel
+slug unik global, provisioning yang mengikat akun Owner terverifikasi ke
+organisasi dan outlet baru dalam satu transaksi, serta resolver yang hanya
+membaca bisnis/outlet aktif. Katalog tenant baru kosong. Tabel slug memakai
+forced RLS; anonymous tidak mendapat baca.
+
+Tes onboarding 1/1, regresi terkait 30/30 dan static/TypeScript PASS. Full
+suite sempat menemukan assertion schema35 setelah migrasi didaftarkan; migrasi
+ditarik ke draft, manifest tetap35, dan regresi terdampak diulang PASS tanpa
+melonggarkan assertion. Suite penuh setelah koreksi belum selesai. Tidak ada
+deploy, migrasi production, signup/URL publik baru, payment atau transaksi.
+Runtime produksi masih satu organisasi/outlet; adapter tenant per request,
+autentikasi/signup, branding/menu, billing, UAT dua tenant dan gate
+upgrade/rollback schema wajib ditutup sebelum janji SaaS aktif.
+
 ## 2026-10-05 — Aktivasi pengingat stok rendah dari stock closing
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
