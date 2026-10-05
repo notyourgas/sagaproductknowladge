@@ -1,5 +1,10 @@
 # Saga Platform Changelog
 
+## 2026-10-05 — SagaPOS Sprint 3 memakai approval/session native, lokal
+
+- `CONFIRMED`; source SagaPOS `9ede3a808b97071d488aad09df59f4ac194df999`, Platform existing `45752bc8f3eea08446fe7db053290d70fa83eca2` unchanged: integration native review/provisioning/session assertion berhasil dalam target terisolasi.
+- Native regresi40/40, recovery/replay/integrasi SagaPOS PASS. Tidak ada deploy/source Platform baru, pricing/trial/payments/notifications real tetap di luar scope. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Enum signup SagaPOS dan JSON internal API
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `45752bc8f3eea08446fe7db053290d70fa83eca2`; field opsional jenis usaha disimpan, input tidak sah ditolak tanpa akun parsial, error internal JSON.

@@ -1,5 +1,16 @@
 # Saga Platform Dossier
 
+## 2026-10-05 — Approval/identity SagaPOS, reuse native kontrak
+
+`CONFIRMED`: SagaPOS `9ede3a808b97071d488aad09df59f4ac194df999` memakai source Platform
+`45752bc8f3eea08446fe7db053290d70fa83eca2` tanpa perubahan baru. Controller review
+native mencatat audit dan emits event; consumer lokal SagaPOS membuat tenant
+atomik lalu melaporkan readiness; login exchanges assertion HMAC product-bound.
+Pending/rejected/partially acknowledged tidak memberi akses onboarding.
+Regresi Platform40/40 (373 assertions), integrasi lost-ack/retry/restart/restore
+lulus; nol payment/notification fixture. Scope local SQLite/PGlite, bukan
+production consumer activation/pricing/approval Owner real. [SagaOPS](../sagaops/DOSSIER.md).
+
 ## 2026-10-05 — Kontrak signup jenis usaha SagaPOS lokal
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: branch `codex/sagadev-sagapos-signup-sprint2-20261005`, source `45752bc8f3eea08446fe7db053290d70fa83eca2`; consumer SagaPOS `3327dc2d4faef4245802f339b8e1f03ca9300716`.

@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-234 — Lanjutkan SagaPOS Sprint 3
+
+- Tanggal: 2026-10-05. Topik: approval akun dan onboarding SaaS.
+- Keputusan Andreas `CONFIRMED`: lanjut Sprint 3, pastikan berjalan baik setelah Sprint 2 lokal.
+- Alasan: menghubungkan pengajuan yang sudah tersedia ke persiapan toko sebelum operasional.
+- Alternatif ditolak dalam implementasi: akun/password kedua, approve browser palsu, menyalin Kopi Saga atau mengaktifkan payment otomatis.
+- Dampak: source `9ede3a808b97071d488aad09df59f4ac194df999` local validated/pushed, approval controller dan identity contract Platform existing dipakai ulang; bukan otorisasi production/pricing/provider baru.
+- Dokumen: [SagaOPS](products/sagaops/DOSSIER.md), [Gate tersisa](GAPS.md).
+
 ## DEC-233 — Lanjutkan SagaPOS Sprint 2
 
 - Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.

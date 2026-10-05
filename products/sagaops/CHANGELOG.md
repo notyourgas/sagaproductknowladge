@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Sprint 3 onboarding akun pusat, lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; sumber arahan Andreas, source `9ede3a808b97071d488aad09df59f4ac194df999`: approval→tenant terisolasi→login→onboarding persisten. Menutup gap antara pengajuan dan persiapan; menu draft/pembayaran belum aktif.
+- Tes39/39+integrasi2/2+Platform40/40, static/type/browser/a11y/restart/restore PASS; tanpa deploy/provider/akun production. Next: operasional tenant dan gate release. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Pengajuan identity pending lokal Sprint 2
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `3327dc2d4faef4245802f339b8e1f03ca9300716`, paired Platform `45752bc8f3eea08446fe7db053290d70fa83eca2`; form → antrean existing → menunggu approval.

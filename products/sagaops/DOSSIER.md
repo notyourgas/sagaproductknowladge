@@ -1,5 +1,16 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Approval, tenant, login dan onboarding Sprint 3 lokal
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; instruksi Andreas melanjutkan Sprint 3. Branch `codex/sagapos-saas-approval-sprint3-20261005`, source `9ede3a808b97071d488aad09df59f4ac194df999`, baseline `3327dc2d4faef4245802f339b8e1f03ca9300716`.
+- Before → after: antrean pending tanpa tenant → controller approval native Platform → event provisioning → tenant/outlet/Owner terisolasi → acknowledgment → session exchange bertanda tangan → onboarding tersimpan. Identitas/password tetap milik Platform, bukan akun kedua.
+- Platform source existing `45752bc8f3eea08446fe7db053290d70fa83eca2` tidak diubah. Draft migration hanya pada PGlite lokal; manifest production tetap 35. SQLite/PGlite single-connection bukan native Postgres concurrency acceptance.
+- Retry setelah acknowledgment hilang dan concurrency provisioning memakai satu tenant. Dua tenant terpisah; pending/rejected login ditolak, slug collision atomic rollback, revisi stale ditolak, menu draft tunggal dan database restart/restore lulus. Audit review menggunakan controller existing; tanpa HTTP approve publik.
+- Session hanya untuk onboarding, terpisah dari operator/Kiosk/KDS seeded. Form final menyimpan nama usaha/alamat/outlet/menu/harga/rencana pembayaran, bukan autosave langkah belum selesai. Tidak menyalin data Kopi Saga atau mengaktifkan merchant.
+- Regresi source 39/39; integrasi lokal Sprint 2 + Sprint 3 2/2; native Platform 40/40, 373 assertions; static 757 modul/TypeScript/syntax/diff PASS. Browser 390x844, 768x900, 1440x900: nol page error/overflow/axe violations. Bukan human UAT production.
+- Rerun sempat gagal ruang disk sementara; target disposable dipindahkan ke volume cukup ruang dan PASS tanpa penghapusan data pengguna. Nol payment/notification records dalam fixture. Fixture trial bawaan bukan persetujuan pricing/trial komersial.
+- Production tidak dimutasi maupun diverifikasi ulang; active/rollback tidak diklaim baru. Sprint 4: session tenant operasional, katalog terbit, akses petugas/outlet, shift dan verifikasi merchant. Release membutuhkan plan/terms approved, trusted consumer/lifecycle reconciliation, native DB dan gate deployment penuh.
+
 ## 2026-10-05 — Form ke antrean identity Platform, Sprint 2 lokal
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; arahan Andreas melanjutkan Sprint 2. Sebelum hanya review form; sesudah review → kirim → pending Owner approval dalam Platform lokal.

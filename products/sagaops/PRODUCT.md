@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — SagaPOS Sprint 3: akun disetujui dan persiapan tersimpan
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `9ede3a808b97071d488aad09df59f4ac194df999` menghubungkan approval Platform existing ke tenant
+lokal terisolasi, login akun pusat, dan onboarding lima langkah tersimpan.
+Retry tidak menggandakan toko/menu; menu masih draft, rencana pembayaran
+belum aktif. Tes terkait 39/39 + integrasi lokal 2/2 + Platform 40/40 PASS;
+restart/restore, browser tiga viewport dan a11y otomatis PASS.
+Belum operasional SaaS production atau BUSINESS_READY. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Pengajuan SagaPOS Sprint 2, antrean lokal
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

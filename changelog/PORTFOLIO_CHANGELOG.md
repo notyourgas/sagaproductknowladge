@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS Sprint 3, approval ke persiapan akun
+
+`CONFIRMED`; instruksi Andreas, source SagaPOS `9ede3a808b97071d488aad09df59f4ac194df999`
+pushed: tenant/outlet/Owner terisolasi setelah review Platform existing,
+login pusat, onboarding persisten. Source Platform existing tidak berubah.
+Tes39/39+integrasi2/2+Platform40/40 dan check/browser/recovery PASS.
+Production tidak berubah; operasional tenant/merchant dan release masih terbuka.
+[Detail SagaOPS](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS Sprint 2, antrean signup Platform lokal
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

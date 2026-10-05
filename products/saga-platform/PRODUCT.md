@@ -1,5 +1,13 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-05 — Kontrak existing dipakai SagaPOS Sprint 3 lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: SagaPOS source
+`9ede3a808b97071d488aad09df59f4ac194df999` memakai controller approval, provisioning-results,
+sessions/exchange Platform existing `45752bc8f3eea08446fe7db053290d70fa83eca2`.
+Tidak ada source/release Platform baru. Regresi40/40 dan integrasi SagaPOS lokal
+PASS; fixture trial bukan keputusan pricing baru. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Profil jenis usaha signup SagaPOS, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

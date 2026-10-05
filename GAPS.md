@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Gate sesudah SagaPOS Sprint 3 lokal
+
+- `CONFIRMED`: source `9ede3a808b97071d488aad09df59f4ac194df999` menutup approval/provisioning/login/onboarding persisten hanya lokal. Gate Sprint 2 untuk slice tersebut ditutup di scope lokal, bukan production.
+- `NEEDS CONFIRMATION`: pricing/plan/terms SagaPOS production belum diputuskan. Fixture plan/trial bukan otorisasi komersial.
+- `PROPOSAL`: Sprint 4 mengikat session tenant ke katalog/outlet/petugas/shift dan metode merchant terverifikasi. Trusted provisioning consumer, lifecycle revocation/reconciliation, native DB concurrency/migration/recovery dan release authenticated UAT belum terbukti.
+- Tidak mengklaim active/rollback production baru, payment aktif atau BUSINESS_READY.
+
 ## 2026-10-05 — Gate sesudah SagaPOS signup lokal Sprint 2
 
 - `CONFIRMED`: source SagaPOS `3327dc2d4faef4245802f339b8e1f03ca9300716` dan Platform `45752bc8f3eea08446fe7db053290d70fa83eca2` menutup pengiriman/validasi/deduplikasi pending dalam target lokal, bukan production.

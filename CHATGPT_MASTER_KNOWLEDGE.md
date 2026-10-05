@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — SagaPOS Sprint 3 akun pusat dan onboarding lokal
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+source `9ede3a808b97071d488aad09df59f4ac194df999` menutup approval→tenant terisolasi→login
+Platform→onboarding tersimpan. Tidak menggandakan akun/password, tidak menyalin
+Kopi Saga; katalog masih draft dan pembayaran belum diaktifkan. Tes39/39,
+integrasi2/2, Platform40/40 PASS. Bukan signup/operasional SaaS production
+atau BUSINESS_READY. [SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-05 — SagaPOS bisa mengirim pengajuan, hanya lokal
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

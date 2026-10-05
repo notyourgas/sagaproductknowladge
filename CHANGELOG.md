@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — Sinkronisasi SagaPOS Sprint 3 approval/onboarding lokal
+
+- `CONFIRMED`; sumber Andreas meminta Sprint3, source `9ede3a808b97071d488aad09df59f4ac194df999` pushed. Approval native→tenant isolated→identity login→onboarding persistent; sebelum hanya pending signup. Menu draft, no payment activation.
+- SagaOPS/Platform PRODUCT/DOSSIER/CHANGELOG, portfolio/master/decision/gaps/status/root diperbarui. Tes39/39+integrasi2/2+Platform40/40, static/type/browser/a11y/restart/restore PASS. Tidak deploy atau mengubah provider/production; next operasional tenant + release gate.
+
 ## 2026-10-05 — Sinkronisasi pengajuan SagaPOS Sprint 2 lokal
 
 - `CONFIRMED`; instruksi Andreas melanjutkan Sprint2. Source SagaPOS `3327dc2d4faef4245802f339b8e1f03ca9300716` dan Platform `45752bc8f3eea08446fe7db053290d70fa83eca2` pushed; form→antrean pending existing, enum jenis usaha dan JSON internal API.
