@@ -2,6 +2,8 @@
 
 ## DEC-236 — Implementasi strategi closure SagaPOS dan gated deploy
 
+- Kelanjutan 5 Oktober 2026: staf/closing approval teruji lokal pada SagaPOS `334d1024190a23fc73e16fa4e9a03133cb1e0145` (18 tes terkait, bukan native/full regression). Role/akun scoped, maker/checker berbeda dan ledger-bound grant; production unchanged. Native schema/runtime/RLS, central staff freshness, recovery dan guarded release/UAT masih terbuka. Ini penerapan DEC-236, bukan otorisasi/pricing/payment baru.
+
 - Kelanjutan 5 Oktober 2026: Andreas meminta urutan berikutnya; lifecycle signed/ordered/replay/restart ditutup lokal pada SagaPOS `373cc8a3a89d2426bfd3edd6f2ea67ad33b83dc6` dan Platform `3c34dc6a4dea12ac3d83c4077e15a51a838ac1f4`. Tes19/19 dan63/63(817assertions) PASS. Staff/closing approval, native schema/runtime/roles, reconciliation dan release/UAT masih terbuka; production unchanged, bukan BUSINESS_READY. Ini penerapan DEC-236, bukan perubahan pricing/trial/payment/otorisasi.
 
 - ID DEC-236; tanggal2026-10-05; pemberi keputusan Andreas; status `CONFIRMED`.

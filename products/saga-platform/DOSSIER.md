@@ -1,5 +1,9 @@
 # Saga Platform Dossier
 
+## 2026-10-05 — Boundary staf SagaPOS lokal
+
+`CONFIRMED`: integrasi staf/closing pada SagaPOS source `334d1024190a23fc73e16fa4e9a03133cb1e0145` LOCAL_VALIDATED, belum deployed. Platform source `3c34dc6a4dea12ac3d83c4077e15a51a838ac1f4` unchanged; assertion pusat tetap Owner-only. Akun staf tidak berubah menjadi Owner pusat: izin/credential lokal memakai TeamAccess org/outlet-scoped dan event lifecycle durable. Refresh entitlement pusat untuk staf/freshness saat delivery outage masih release gap. Ini kelanjutan DEC-236, bukan perubahan pricing/trial, provider atau izin pembayaran nyata; bukan BUSINESS_READY.
+
 ## 2026-10-05 — SagaPOS lifecycle terurut, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;

@@ -1,5 +1,42 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-05 — SagaPOS staf + approval closing, source-only
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Arahan Andreas melanjutkan closure (DEC-236); source SagaPOS
+`334d1024190a23fc73e16fa4e9a03133cb1e0145`,
+branch `codex/sagapos-saas-staff-closing-20261005`.
+Before Owner-only/selisih ditolak -> after Tim & Akses existing scoped toko,
+akun pribadi Kasir/Barista/kepala toko, izin UI/API live, mandatory password
+awal, revoke/reset/CAS dan audit. Closing berselisih: pengaju -> checker
+berbeda dengan izin eksplisit -> pengaju menyelesaikan satu kali; ledger berubah
+atau grant lewat 15 menit menolak eksekusi. Katalog publish tetap Owner-only;
+Manager tidak otomatis menjadi approver. Checkout/recovery terikat pelaksana.
+Reuse PostgreSQL TeamAccess/ESB approval/ledger/outbox/KDS, tanpa dependency baru.
+
+Tes terkait 18 tes berbeda PASS pada disk lokal (14 staf/TeamAccess/PGlite,
+2 operasi, 1 access, 1 lifecycle); bukan full regression/native PostgreSQL.
+Browser Owner management/Barista 390x844, 768x900, 1440x900:
+nol automated axe violations/page errors/overflow. Static 763 modules,
+35 migrations, 426 client files, nol retired references; TypeScript/diff PASS.
+Preview loopback diperbarui dan data latihan tetap ada. Fail sementara
+adapter permission, CSP test injection dan disposable disk dicatat pada ledger
+source; diperbaiki tanpa melonggarkan assertion atau CSP.
+
+Production unchanged: active `4c07c06fd4427fb33aebf2d2959a19472fbf2ed9`,
+rollback `1a60de56e41697d2ec35ba05f66f8bae16198152`; read-only health ready,
+Gateway GATEWAY/Member PROVIDER/Kiosk static demo OFF; link verifier 12/12.
+Artifact/recovery/activation/authenticated UAT NOT_RUN; bukan BUSINESS_READY.
+Gap: schema/runtime multi-tenant dari active SHA, native roles/RLS/multi-worker,
+central staff entitlement freshness/outage, reconciliation/consumer recovery,
+request rejection/withdrawal, lalu kandidat clean/recovery/smoke/operator UAT.
+Staf lokal memakai status/event durable, bukan refresh entitlement pusat tiap
+write; endpoint SaaS tetap ditolak oleh production/public runners. Tidak ada
+perubahan pricing/trial/payment/izin transaksi nyata atau skor readiness baru.
+Platform source `3c34dc6a4dea12ac3d83c4077e15a51a838ac1f4` unchanged.
+File source: SaaS access/operations, server/local runner, login/operasional
+UI/reuse TeamAccess UI, integration test; rujuk ledger closure source.
+
 ## 2026-10-05 — SagaPOS lifecycle terurut, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`;
