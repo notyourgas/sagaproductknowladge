@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-05 — Typography dan layout Member konsisten, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source
+`9fa7f3f1299abce7409eec332441c79001fdbb23` merapikan hierarki teks, spacing,
+alignment tombol/ikon, login/onboarding, voucher dan panel Akun. 628 unit,
+matrix 38 layar/state serta regresi synthetic Chromium/WebKit PASS. Source lokal
+NOT_PUSHED/NO_PR/CI_NOT_RUN; backend/database/provider/production unchanged;
+iPhone fisik NOT_TESTED, bukan BUSINESS_READY. [Detail](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-05 — Beranda, Riwayat dan Akun Member aktif
 
 `CONFIRMED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`: Member

@@ -1,5 +1,14 @@
 # Saga Platform Dossier
 
+## 2026-10-05 — Perapihan typography dan layout Member lokal
+
+- `CONFIRMED`; Andreas meminta audit/perbaikan setiap layar, tombol dan teks karena alignment serta gap tidak konsisten.
+- Before -> after: aturan CSS lama/baru menghasilkan ukuran judul, inset dan margin bertumpuk serta label navigasi hilang di Bantuan; sekarang V1 memakai gutter 16 px, gap section 24 px, hierarki judul/body dan tombol/ikon konsisten. Login/onboarding, kartu, Points/perjalanan, riwayat, voucher serta panel Akun dirapikan tanpa mengganti desain utama atau domain logic.
+- Source branch `codex/member-layout-rhythm-20261005`, exact `9fa7f3f1299abce7409eec332441c79001fdbb23`, berbasis frontend rilis `179603d8a39447045a6ebfb2354abd7790aa66b2`. Enam file CSS/harness; dependency/lockfile, backend/contracts/database dan provider unchanged.
+- 628 unit, static/accessibility contract, diff check PASS. Matrix synthetic 38 layar/state × tujuh viewport 320/360/375/390/430/768/1440 × 100/200% text = 532 checks per engine Chromium/WebKit PASS: overflow, clipping, centering, touch minimum, nav alignment; Axe serious/critical nol pada 390 px. Ini bukan sertifikasi WCAG atau iPhone fisik.
+- Regresi browser synthetic kedua engine PASS: edit/notifikasi/focus/Back, sesi perangkat/pesan, Points/tier dialogs, cursor/filter/detail, save/conflict/error/offline/reload dan session expiry. Tidak ada akun/transaksi/provider production diuji atau dimutasi oleh run ini.
+- `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PUSHED / NO_PR / CI_NOT_RUN / BUSINESS_READY=false`. Preview loopback saja. Production tidak diubah; gate deploy dan authenticated Member/iPhone UAT tetap terpisah.
+
 ## 2026-10-05 — Rilis UI Member di atas backend aktif
 
 - `CONFIRMED`; Andreas meminta Riwayat di navigasi bawah, Beranda lama yang menarik, lalu deploy.

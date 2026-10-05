@@ -1,5 +1,15 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-05 — Ritme typography/layout Member, lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Member
+`9fa7f3f1299abce7409eec332441c79001fdbb23` menyamakan ukuran judul/body,
+gutter, gap, tombol/ikon, login/onboarding, voucher dan panel Akun.
+38 layar/state lulus Chromium/WebKit pada 320–430/768/1440 px dan teks 200%;
+628 unit serta regresi interaksi synthetic lulus. Backend/contracts/database,
+provider dan production tidak dimutasi. Source lokal NOT_PUSHED/NO_PR/CI_NOT_RUN;
+iPhone fisik belum diuji, bukan BUSINESS_READY. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Beranda, Riwayat dan Akun Member aktif
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member

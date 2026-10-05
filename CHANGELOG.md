@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-05 — Sinkronisasi layout rhythm Member lokal
+
+- `CONFIRMED`; Andreas meminta typography/alignment/gap konsisten. Source `9fa7f3f1299abce7409eec332441c79001fdbb23`: teks, gutter, tombol/ikon, onboarding/voucher dan panel Akun dirapikan; source lokal NOT_PUSHED/NO_PR/CI_NOT_RUN.
+- Product/Dossier/Changelog Saga Platform, master/portfolio/status/root diperbarui. 628 unit, matrix 532 checks per Chromium/WebKit, Axe/regresi synthetic/static/diff PASS. Production tidak dimutasi; backend/database/provider unchanged, iPhone fisik NOT_TESTED dan BUSINESS_READY=false. Next: review visual lokal dan gate rilis terpisah.
+
 ## 2026-10-05 — Sinkronisasi rilis Beranda/Riwayat/Akun Member
 
 - `CONFIRMED`; Andreas meminta deploy. Member `179603d8a39447045a6ebfb2354abd7790aa66b2`, release `20261005T013000Z-bf3baba-r0u` kini production-activated. Riwayat menjadi tab utama, Beranda editorial dan pengaturan Akun ringkas memakai Platform existing.

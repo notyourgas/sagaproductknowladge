@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — Layout Member konsisten, belum deploy
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source Member
+`9fa7f3f1299abce7409eec332441c79001fdbb23` merapikan typography, alignment,
+spacing, tombol/ikon, login/onboarding/voucher serta Akun. 628 unit, 38 layar/state
+pada tujuh viewport dengan teks 100/200% di Chromium/WebKit dan regresi synthetic
+PASS. Source lokal NOT_PUSHED/CI_NOT_RUN; backend/database/provider/production
+tidak dimutasi, iPhone fisik NOT_TESTED, bukan BUSINESS_READY.
+[Detail](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-05 — Navigasi dan Akun Member production-activated
 
 `CONFIRMED`: Member `179603d8a39447045a6ebfb2354abd7790aa66b2`, release

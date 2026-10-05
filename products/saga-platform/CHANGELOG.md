@@ -1,5 +1,11 @@
 # Saga Platform Changelog
 
+## 2026-10-05 — Typography/layout Member lokal
+
+- `CONFIRMED`; source `9fa7f3f1299abce7409eec332441c79001fdbb23`, permintaan Andreas untuk typography/alignment/gap yang konsisten. Judul/body, gutter, tombol/ikon, onboarding/voucher dan panel Akun dirapikan; label nav Bantuan tidak lagi hilang di V1.
+- 628 unit, static/diff, matrix 532 checks per Chromium/WebKit, Axe dan regresi interaksi synthetic PASS. Source lokal NOT_PUSHED/NO_PR/CI_NOT_RUN; IMPLEMENTED_NOT_DEPLOYED, iPhone fisik NOT_TESTED, BUSINESS_READY=false. Backend/contracts/database/provider/production tidak diubah.
+- Product/Dossier/Changelog, portfolio/master/status/root diperbarui. Next: review visual lokal lalu kandidat deployment dengan gate terpisah.
+
 ## 2026-10-05 — Beranda/Riwayat/Akun Member production-activated
 
 - `CONFIRMED`; permintaan Andreas untuk navigasi Riwayat dan Beranda editorial lalu deploy. Source Member `179603d8a39447045a6ebfb2354abd7790aa66b2`, release `20261005T013000Z-bf3baba-r0u`.
