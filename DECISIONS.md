@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-236 — Implementasi strategi closure SagaPOS dan gated deploy
+
+- ID DEC-236; tanggal2026-10-05; pemberi keputusan Andreas; status `CONFIRMED`.
+- Keputusan: kerjakan strategi penyelesaian sprint, pastikan berjalan baik dan deploy setelah ready. Izin tidak membatalkan gate atau menetapkan harga/trial/provider baru.
+- Alasan: alur usaha perlu dapat dipakai, bukan wizard prototype saja.
+- Alternatif ditolak: bypass fixture/production guard, menimpa current dengan prototype lama, mesin identity/POS kedua atau menyebut tes lokal sebagai seluruh wave selesai.
+- Dampak: SagaPOS `cdfd73f9627f450b1e557c249e85874b4141c1b4`, Platform `57154a8931d7b7a415df5a523131e39d1ecac6d2`. Before→after: sesi300detik→refresh pusat dalam horizon absolut maksimal8jam; respons checkout hilang→durable attempt key+lookup order+konfirmasi terkunci sampai hasil diketahui; menu tunggal→Owner tambah/pilih menu immutable; harness direct→signed HTTP provisioning via existing outbox. Wave1/2 PARTIAL LOCAL, Wave3 BLOCKED native schema/runtime paired dan UAT/release, Wave4–6 belum selesai. Production read-only service/DB/health ready, paymentMode GATEWAY existing, Table DEMO/Kiosk static demo OFF; tidak diubah. Artifact/backup/rehearsal/activation/authenticated smoke/monitor NOT_RUN; bukan BUSINESS_READY.
+- Dokumen: [SagaOPS](products/sagaops/DOSSIER.md), [Platform](products/saga-platform/DOSSIER.md), [Gaps](GAPS.md). Pilot/pricing/terms tetap `NEEDS CONFIRMATION`.
+
 ## DEC-235 — Selesaikan SagaPOS Sprint 4 dan strategi celah
 
 - Tanggal: 2026-10-05. Status: `CONFIRMED`; pemberi keputusan Andreas.

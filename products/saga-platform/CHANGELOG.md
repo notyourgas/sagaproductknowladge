@@ -1,5 +1,10 @@
 # Saga Platform Changelog
 
+## 2026-10-05 — Closure SagaPOS Wave 1/2 parsial, bukan deploy
+
+- `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; Platform `57154a8931d7b7a415df5a523131e39d1ecac6d2`, paired SagaPOS `cdfd73f9627f450b1e557c249e85874b4141c1b4`; bounded central refresh dan dedicated outbox/no fallback, signed HTTP provisioning lokal.
+- Platform32/32,302assertions/Pint/PHP PASS. Native paired runtime/schema/lifecycle/UAT/release tetap gap; production unchanged. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS Sprint 4 local account operations
 
 - `CONFIRMED`: source SagaPOS `4045cfb3b4bea355f13bd641521358e077887bec` menggunakan kontrak akun pusat existing untuk siklus cash/KDS/closing lokal. Source Platform tidak diubah/deploy.

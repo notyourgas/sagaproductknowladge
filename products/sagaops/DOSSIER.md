@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Closure SagaPOS Wave 1/2 parsial, bukan deploy
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; instruksi Andreas implementasi strategi dan deploy setelah siap.
+SagaPOS `cdfd73f9627f450b1e557c249e85874b4141c1b4`, Platform `57154a8931d7b7a415df5a523131e39d1ecac6d2`.
+Branch source `codex/sagapos-saas-closure-wave1-20261005` dan paired
+`codex/sagadev-sagapos-session-refresh-20261005`; keduanya clean/pushed.
+
+- Before→after: sesi300detik→refresh pusat dalam horizon absolut maksimal8jam; respons checkout hilang→durable attempt key+lookup order+konfirmasi terkunci sampai hasil diketahui; menu tunggal→Owner tambah/pilih menu immutable; harness direct→signed HTTP provisioning via existing outbox.
+- Data flow: approval→outbox→signed consumer→persist account/hash→central ACK→identity exchange/refresh→setup→catalog→shift→server quote→cash aggregate/ledger/outbox/KDS→recovery→terminal KDS→ledger closing. Reuse existing identity/queue/POS services, stdlib/native form; tidak ada dependency baru.
+- Password tidak disimpan untuk refresh, bearer assertion server-only. Status pusat user/organization/installation/membership/link/entitlement dan revoke diperiksa sebelum write. Horizon absolut tidak bergeser. Local cookie hilang setelah restart tetap memerlukan login, sementara accepted order dapat dipulihkan.
+- Dedupe provisioning/replay tetap satu tenant; adapter SagaPOS kosong tidak fallback ke SagaBook. Catalog limit200menu, satu item/order, Owner-only, cash sintetis; belum editor kategori/modifier/station atau staff. HPP UNVERIFIED, bukan laba nol; closing variance tetap membutuhkan approval, tidak diabaikan.
+- Tes gabungan54/54, subset operasi final2/2, Platform32/32(302assertions), static/type/Pint/PHP/browser/a11y PASS. Subset tidak dijumlahkan sebagai tes unik. Browser390x844/768x900/1440x900 nol pageerrors/overflow/automatedaxe. Lost response setelah server commit dipulihkan lewat reload, tepat2tickets, tanpa second charge. Persistence/disposable restore/isolation/CSRF/auth/stale quote/concurrency/revoke/expiry diperiksa. Bukan full repository suite/nativePG18/humanUAT.
+- Wave1/2 PARTIAL LOCAL, Wave3 BLOCKED native schema/runtime paired dan UAT/release, Wave4–6 belum selesai. Production read-only service/DB/health ready, paymentMode GATEWAY existing, Table DEMO/Kiosk static demo OFF; tidak diubah. Artifact/backup/rehearsal/activation/authenticated smoke/monitor NOT_RUN; bukan BUSINESS_READY. Observed active `4c07c06fd4427fb33aebf2d2959a19472fbf2ed9`, rollback `1a60de56e41697d2ec35ba05f66f8bae16198152`, link verifier menu-public12/12 PASS. Kandidat prototype bukan descendant active; integrasi release tidak boleh menimpa current Member.
+- Lifecycle events/reconcile/dispatcher crash lease recovery, staff scoped, full menu/multi-item, maker/checker selisih, native multi-worker/role/isolation/schema/runtime, candidate-bound recovery dan human UAT tetap TODO. Wave4–6 masih binding fitur existing ke SaaS dan komersial.
+- `NEEDS CONFIRMATION`: pilot cash/manual approval/no subscription/newpayment atau public commercial signup setelah pricing/trial/terms. Fixture bukan keputusan komersial; tidak ada merchant/payment/provider/payout mutation baru.
+
 ## 2026-10-05 — Sprint 4 operasional lokal dan strategi penutupan
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: instruksi Andreas menyelesaikan Sprint 4 dan menyusun strategi celah. Branch `codex/sagapos-saas-operations-sprint4-20261005`, source `4045cfb3b4bea355f13bd641521358e077887bec`, baseline `9ede3a808b97071d488aad09df59f4ac194df999`.

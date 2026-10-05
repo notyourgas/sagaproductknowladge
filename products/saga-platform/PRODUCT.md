@@ -1,5 +1,16 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-05 — Closure SagaPOS Wave 1/2 parsial, bukan deploy
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:
+Platform `57154a8931d7b7a415df5a523131e39d1ecac6d2`, paired SagaPOS `cdfd73f9627f450b1e557c249e85874b4141c1b4`.
+Central refresh memperbarui assertion maksimum300detik dalam window absolut
+maksimal8jam tanpa password tersimpan; status user/membership/link/organization/
+installation/subscription/revoke diperiksa kembali. Dedicated SagaPOS adapter
+memakai dispatcher existing, tidak fallback ke SagaBook bila belum dikonfigurasi.
+Platform32/32(302assertions)/Pint/PHP PASS; signed HTTP provisioning lokal PASS.
+Belum release Platform/POS atau aktivasi tenant/paket/payment live.
+
 ## 2026-10-05 — SagaPOS Sprint 4 menggunakan akun pusat, lokal
 
 `CONFIRMED`: SagaPOS source `4045cfb3b4bea355f13bd641521358e077887bec`

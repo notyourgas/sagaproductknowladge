@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-05 — Closure SagaPOS Wave 1/2 parsial, bukan deploy
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; instruksi Andreas. SagaPOS `cdfd73f9627f450b1e557c249e85874b4141c1b4`, Platform `57154a8931d7b7a415df5a523131e39d1ecac6d2`.
+Before→after: sesi300detik→refresh pusat dalam horizon absolut maksimal8jam; respons checkout hilang→durable attempt key+lookup order+konfirmasi terkunci sampai hasil diketahui; menu tunggal→Owner tambah/pilih menu immutable; harness direct→signed HTTP provisioning via existing outbox.
+Tes gabungan54/54, subset operasi final2/2, Platform32/32(302assertions), static/type/Pint/PHP/browser/a11y PASS. Subset tidak dijumlahkan sebagai tes unik.
+Wave1/2 PARTIAL LOCAL, Wave3 BLOCKED native schema/runtime paired dan UAT/release, Wave4–6 belum selesai. Production read-only service/DB/health ready, paymentMode GATEWAY existing, Table DEMO/Kiosk static demo OFF; tidak diubah. Artifact/backup/rehearsal/activation/authenticated smoke/monitor NOT_RUN; bukan BUSINESS_READY.
+SagaOPS/Platform Product/Dossier/Changelog dan master/gaps/decision/status/root diperbarui.
+
 ## 2026-10-05 — SagaPOS Sprint 4 operasional tenant lokal
 
 `CONFIRMED`; arahan Andreas, source `4045cfb3b4bea355f13bd641521358e077887bec`

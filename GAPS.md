@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Closure SagaPOS Wave 1/2 parsial, bukan deploy
+
+- `CONFIRMED`: SagaPOS `cdfd73f9627f450b1e557c249e85874b4141c1b4`, Platform `57154a8931d7b7a415df5a523131e39d1ecac6d2`. Before→after: sesi300detik→refresh pusat dalam horizon absolut maksimal8jam; respons checkout hilang→durable attempt key+lookup order+konfirmasi terkunci sampai hasil diketahui; menu tunggal→Owner tambah/pilih menu immutable; harness direct→signed HTTP provisioning via existing outbox. Tes gabungan54/54, subset operasi final2/2, Platform32/32(302assertions), static/type/Pint/PHP/browser/a11y PASS. Subset tidak dijumlahkan sebagai tes unik.
+- `TODO P0`: lifecycle events/reconcile/crash lease recovery, staff scoped, full tenant catalog/multi-item, maker/checker selisih, native multi-worker/role/isolation/schema/runtime integration, candidate-bound recovery, authenticated human UAT dan guarded paired release. Wave1/2 PARTIAL LOCAL, Wave3 BLOCKED native schema/runtime paired dan UAT/release, Wave4–6 belum selesai. Production read-only service/DB/health ready, paymentMode GATEWAY existing, Table DEMO/Kiosk static demo OFF; tidak diubah. Artifact/backup/rehearsal/activation/authenticated smoke/monitor NOT_RUN; bukan BUSINESS_READY.
+- `TODO P1/P2`: Wave4–6 binding Kiosk/QR/stok/waste/reports/refund/payment existing ke SaaS, lalu pricing/billing/branding/support/exit. Existing fitur tidak otomatis SaaS-ready.
+- `NEEDS CONFIRMATION`: pilot pertama cash/manual approval/no subscription/newpayment atau commercial public signup setelah terms/pricing. Tidak mengarang nilai atau readiness berbobot.
+
 ## 2026-10-05 — Penutupan setelah empat sprint SagaPOS lokal
 
 - `CONFIRMED`: source `4045cfb3b4bea355f13bd641521358e077887bec` menutup menu/shift/cash/KDS/closing hanya pada target sintetis; 63/63 tests PASS. Gap operasional dasar Sprint3 tertutup lokal, bukan seluruh staf/metode.

@@ -1,5 +1,14 @@
 # Saga Platform Dossier
 
+## 2026-10-05 — Closure SagaPOS Wave 1/2 parsial, bukan deploy
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. SagaPOS `cdfd73f9627f450b1e557c249e85874b4141c1b4`, Platform `57154a8931d7b7a415df5a523131e39d1ecac6d2`.
+
+- Reuse identity/exchange; refresh SagaPOS memakai scope khusus dan tidak mengubah scope credential existing otomatis. Horizon absolut8jam tidak diperpanjang, assertion tetap maksimum300detik; revoked/inactive membership/user/org/install/link/subscription gagal tertutup. Password tidak ditahan pada produk.
+- Dedicated SagaPOS adapter pada outbox/retry/dead-letter existing; konfigurasi kosong tidak mengirim ke SagaBook. HTTP consumer local verifies signed envelope dan durable account/hash sebelum acknowledgment, retry tetap satu tenant.
+- Platform32/32,302assertions/Pint/PHP/diff PASS; paired SagaPOS54/54+subset2/2/static/type/browser PASS. SQLite/PGlite bukan native production concurrency proof. Lifecycle consumer/reconcile/crash lease recovery belum tertutup.
+- Production Platform/POS tidak diubah; paired schema/runtime/native acceptance dan guarded release wajib. Config/scopes/plan/terms live tidak dianggap aktif dari source/fixture; no provider/payment/payout mutation baru.
+
 ## 2026-10-05 — Reuse identity untuk operasi tenant SagaPOS lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: SagaPOS
