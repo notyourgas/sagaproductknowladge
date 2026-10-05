@@ -1,5 +1,18 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-05 — Typography/layout Member aktif production
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: source Member
+`9fa7f3f1299abce7409eec332441c79001fdbb23`, release
+`20261005T031100Z-bf3baba-r0u`, aktif di https://app.sagamember.site/member.
+Judul/body, gutter/gap, tombol/ikon, login/onboarding, voucher dan panel Akun
+kini konsisten. Backend/contracts/schema/POS/provider tetap versi aktif.
+Backup/disposable restore, actual rollback/reswitch, monitor, Owner authenticated,
+hash empat CSS publik dan login Chromium/WebKit320–430/200% PASS.
+Source app/runner lokal NOT_PUSHED/NO_PR/CI_NOT_RUN; authenticated Member dan
+iPhone fisik belum diuji pada kandidat ini, `BUSINESS_READY=false`.
+Entri lokal dan rilis sebelumnya di bawah adalah histori. [Detail](DOSSIER.md).
+
 ## 2026-10-05 — Ritme typography/layout Member, lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Member

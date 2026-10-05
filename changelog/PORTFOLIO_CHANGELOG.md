@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-05 — Typography/layout Member aktif
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member
+`9fa7f3f1299abce7409eec332441c79001fdbb23`, release
+`20261005T031100Z-bf3baba-r0u`, atas permintaan deploy Andreas.
+Perapihan typography/gap/tombol/ikon/Akun kini production; backend/database/POS
+dan provider unchanged. Backup/restore/rollback/monitor/Owner browser serta
+public asset/login PASS; Member authenticated/iPhone fisik OPEN,
+`BUSINESS_READY=false`. [Detail](../products/saga-platform/DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS fondasi SaaS multi-bisnis source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

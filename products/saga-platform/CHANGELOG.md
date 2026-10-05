@@ -1,5 +1,11 @@
 # Saga Platform Changelog
 
+## 2026-10-05 — Typography/layout Member production-activated
+
+- `CONFIRMED`; permintaan deploy Andreas. Member `9fa7f3f1299abce7409eec332441c79001fdbb23`, release `20261005T031100Z-bf3baba-r0u`: perapihan typography/gap/tombol/ikon/login/onboarding/voucher/Akun kini aktif.
+- Exact artifact, native PostgreSQL15→15, encrypted target backup/disposable restore, actual rollback/reswitch, monitor, Owner authenticated dan public asset/login checks PASS. Backend/contracts/database/POS/provider unchanged; tidak ada transaksi bisnis verifikasi.
+- Product/Dossier/Changelog, master/portfolio/status/root diperbarui; source lokal NOT_PUSHED/NO_PR/CI_NOT_RUN. Member authenticated/iPhone fisik OPEN, BUSINESS_READY=false. Entri lokal sebelumnya merupakan histori.
+
 ## 2026-10-05 — Typography/layout Member lokal
 
 - `CONFIRMED`; source `9fa7f3f1299abce7409eec332441c79001fdbb23`, permintaan Andreas untuk typography/alignment/gap yang konsisten. Judul/body, gutter, tombol/ikon, onboarding/voucher dan panel Akun dirapikan; label nav Bantuan tidak lagi hilang di V1.

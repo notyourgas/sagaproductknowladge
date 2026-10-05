@@ -1,5 +1,18 @@
 # Saga Platform Dossier
 
+## 2026-10-05 — Deployment perapihan typography/layout Member
+
+- `CONFIRMED`; Andreas meminta deploy kandidat UI yang telah tervalidasi, bukan seluruh source pending.
+- Before -> after: perapihan judul/body, gutter16px, gap24px, tombol/ikon dan panel Akun yang sebelumnya hanya lokal kini tersedia pada Member production; desain utama dan authority Platform dipertahankan.
+- Branch Member `codex/member-layout-rhythm-20261005`, exact `9fa7f3f1299abce7409eec332441c79001fdbb23`. Backend `bf3baba7cec2e2e936ce6b6e9d969b3dd4cd0729`, contracts `3279a02b6d06d3532190488f6abbcc59c312d120` unchanged; 15 migrations byte-identical.
+- Release aktif `20261005T031100Z-bf3baba-r0u`; immutable artifact SHA256 `77a409c02449d9391b89f72c8336e91f78a8ef07377d3d182113caf4d1ca576e`. Recovery target `20261005T013000Z-bf3baba-r0u`/Member `179603d8a39447045a6ebfb2354abd7790aa66b2` dipertahankan.
+- Runner `codex/member-layout-runner-20261005`, exact `64ef5a5eb30aa987f23680d0e1b85132f21d3ab5`, installed LF SHA256 `02efb8f2588954625259e08837007e10707246a550e6d7c1f10fcd025cf70272`; exact binding/predecessor dan shared release lock tetap wajib. 148 Python dan16 Node tests PASS.
+- Local Member628tes, matrix532checks per Chromium/WebKit, synthetic interaksi/Axe/static/diff PASS. Native PostgreSQL18 disposable old/candidate restore, restart persistence dan unchanged15→15 PASS. Artifact secret/dependency audit nol; production worker byte-identical/network-only dan28operasi shared contract PASS.
+- Target encrypted backup/checksum/disposable restore, effective Owner, switch→rollback→prepare→reswitch, active backup dan health/monitor PASS. Tidak ada migrasi/data correction atau transaksi bisnis untuk verifikasi.
+- Owner authenticated public browser390/1440, session/reload/logout, cookie/CSRF/denial, laporan/form dan Axe PASS. Empat CSS publik byte-identical dengan source; login320/360/375/390/430 pada Chromium/WebKit100/200% PASS tanpa overflow/error.
+- SagaPOS `1a60de56e41697d2ec35ba05f66f8bae16198152` dipertahankan; Book/Vercel/DNS/provider/hardware tidak dimutasi. Kandidat keamanan/recovery/voucher lintas Book yang masih lokal tidak ikut rilis ini.
+- `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_PUSHED / NO_PR / CI_NOT_RUN / BUSINESS_READY=false`. Authenticated Member journey dan iPhone Safari/PWA fisik tetap OPEN; knowledge disinkron setelah provenance/runtime terverifikasi.
+
 ## 2026-10-05 — Perapihan typography dan layout Member lokal
 
 - `CONFIRMED`; Andreas meminta audit/perbaikan setiap layar, tombol dan teks karena alignment serta gap tidak konsisten.

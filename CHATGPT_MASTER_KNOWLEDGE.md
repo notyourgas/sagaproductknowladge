@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — Typography/layout Member production-activated
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Member
+`9fa7f3f1299abce7409eec332441c79001fdbb23`, release
+`20261005T031100Z-bf3baba-r0u`, menggantikan frontend179603d.
+Typography, spacing, tombol/ikon, onboarding/voucher dan panel Akun konsisten;
+backend/contracts/schema/POS/provider unchanged. Recovery/rollback/monitor,
+Owner authenticated dan public asset/login Chromium/WebKit PASS.
+Source lokal NOT_PUSHED/CI_NOT_RUN; authenticated Member/iPhone fisik OPEN,
+`BUSINESS_READY=false`. Catatan lokal dan release lama di bawah adalah histori.
+[Saga Platform](products/saga-platform/DOSSIER.md).
+
 ## 2026-10-05 — SagaPOS SaaS belum aktif
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

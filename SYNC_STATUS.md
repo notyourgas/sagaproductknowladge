@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-05 — Member layout rhythm production-activated
+
+`accepted / CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+BUSINESS_READY=false`: Member `9fa7f3f1299abce7409eec332441c79001fdbb23`,
+release `20261005T031100Z-bf3baba-r0u`. Recovery/actual rollback/monitor,
+Owner authenticated/public asset/login PASS; backend/contracts/POS unchanged.
+Member authenticated/iPhone fisik OPEN, app/runner NOT_PUSHED/NO_PR/CI_NOT_RUN.
+Product/Dossier/Changelog, portfolio/master/status/root disinkron dari checkout
+bersih setelah provenance/runtime diverifikasi. Knowledge `main HEAD` setelah push.
+
 ## 2026-10-05 — SagaPOS SaaS foundation source-only
 
 `accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /
