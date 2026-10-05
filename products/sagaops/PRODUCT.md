@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-05 — Pengingat stok rendah aktif di production
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`:
+source `1a60de56e41697d2ec35ba05f66f8bae16198152` aktif, rollback
+`60c77dcba62ff237fa78dec649949e5e7d91de43`. Owner dan Kepala Toko
+native `manager` mendapat daftar bahan perlu beli dari stock closing sesuai
+batas minimum per bahan/outlet. API Owner terautentikasi merespons 200 dengan
+`NO_CLOSING` (belum ada closing yang dapat dibuktikan pada pemeriksaan ini).
+Gateway existing tidak berubah dan tidak ada transaksi verifikasi. Browser
+Owner produksi 390/1440 lulus setelah timeout jaringan sementara. UAT login
+Kepala Toko dan closing fisik masih terbuka; fitur ini belum BUSINESS_READY.
+[Detail](DOSSIER.md).
+
 ## 2026-10-04 — Pengingat belanja dari stock closing (source-only)
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

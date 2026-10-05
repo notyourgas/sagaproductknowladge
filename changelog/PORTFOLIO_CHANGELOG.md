@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-05 — SagaPOS pengingat stok rendah aktif
+
+`CONFIRMED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`: source
+`1a60de56e41697d2ec35ba05f66f8bae16198152` aktif untuk daftar bahan
+perlu beli dari closing pada Owner dan Kepala Toko. Browser Owner produksi
+390/1440 lulus; Gateway tetap, UAT fisik/Manager belum selesai.
+[Detail](../products/sagaops/DOSSIER.md).
+
 ## 2026-10-04 — SagaPOS pengingat bahan perlu beli, source-only
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-05 — Pengingat minimum stok SagaPOS production-activated
+
+`CONFIRMED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152`
+aktif untuk Owner dan Kepala Toko native `manager`; rollback
+`60c77dcba62ff237fa78dec649949e5e7d91de43`. Hasil closing yang belum
+diposting tetap perlu review, sedangkan saldo resmi menjadi dasar daftar beli
+sesudah posting. Tidak ada PO/push otomatis, perubahan Gateway, atau transaksi
+verifikasi. Browser Owner 390/1440 lulus; UAT fisik/Manager belum selesai;
+`BUSINESS_READY=false`. [SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-04 — Pengingat minimum stok SagaPOS belum aktif production
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`:

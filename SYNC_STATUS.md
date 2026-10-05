@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-05 — Pengingat stok rendah SagaPOS production-activated
+
+`accepted / CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+BUSINESS_READY=false`: source `1a60de56e41697d2ec35ba05f66f8bae16198152`
+aktif, rollback `60c77dcba62ff237fa78dec649949e5e7d91de43`.
+Owner authenticated API 200 `NO_CLOSING`; health/monitor dan release recovery
+lulus. Browser Owner 390/1440 lulus; Gateway tidak berubah, transaksi
+verifikasi nol. Manager/closing fisik, full suite, dan offsite restore terbuka.
+Final SHA knowledge
+adalah `main HEAD` setelah push.
+
 ## 2026-10-04 — Pengingat minimum stok SagaPOS, source-only
 
 Status `partially accepted / CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED /

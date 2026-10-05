@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-05 — Aktivasi pengingat stok rendah dari stock closing
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+Atas instruksi deploy Andreas, source pushed
+`1a60de56e41697d2ec35ba05f66f8bae16198152` diaktifkan dari
+`60c77dcba62ff237fa78dec649949e5e7d91de43`; SHA lama menjadi rollback.
+Artifact immutable SHA256
+`17ce16f721a03cacec843809c536fc55460d560a0862e06740d6c093bbc62db9`.
+Backup terenkripsi, disposable restore, kompatibilitas schema, rehearsal
+rollback/recovery, aktivasi atomik, health, authenticated Owner smoke setelah
+restart, dan monitor lulus. Smoke pertama sesaat setelah restart menemui race
+health; kelanjutan proof yang sama lulus tanpa melemahkan assertion. Tes
+terfokus 15/15 dan check/build lulus. Full suite tidak selesai karena satu
+tes browser lama menggantung. Cek browser produksi sempat timeout jaringan,
+kemudian lulus 390x844 dan 1440x900 tanpa overflow/error JavaScript. API
+Owner pengingat stok 200 `NO_CLOSING`, tanpa penulisan data.
+Tidak ada migrasi, transaksi pembayaran, perubahan mode Gateway, PO otomatis,
+atau push notification. Batas minimum per bahan, UAT closing fisik dan akun
+Kepala Toko serta offsite restore tetap terbuka.
+
 ## 2026-10-04 — Pengingat minimum stok untuk Owner dan Kepala Toko
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

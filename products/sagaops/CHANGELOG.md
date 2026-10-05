@@ -1,5 +1,10 @@
 # SagaOPS Changelog
 
+## 2026-10-05 — Pengingat stok rendah production-activated
+
+- `CONFIRMED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152` aktif; rollback `60c77dcba62ff237fa78dec649949e5e7d91de43`. Owner dan Kepala Toko native `manager` mendapat pengingat bahan di bawah minimum dari stock closing; tidak ada PO atau push otomatis.
+- Backup/restore, rehearsal, authenticated Owner smoke, browser Owner 390/1440 dan monitor lulus. API Owner 200 `NO_CLOSING`; UAT Manager/closing fisik, full suite dan offsite restore masih terbuka. Gateway tidak berubah; `BUSINESS_READY=false`. [Detail](DOSSIER.md).
+
 ## 2026-10-04 — Pengingat belanja stock closing, source-only
 
 - `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152`; Owner dan Kepala Toko native `manager` mendapat daftar bahan di bawah batas minimum pada hasil closing, dengan status provisional sebelum posting dan resmi sesudahnya.

@@ -7,7 +7,7 @@
 - Alasan: petugas yang bertanggung jawab dapat melihat apa yang kurang dan harus dipesan setelah tutup.
 - Alternatif: PO otomatis atau notifikasi push tanpa review; tidak dipilih pada implementasi ini.
 - Dampak: daftar in-app berscope outlet/role; tidak mengubah stok, tidak membuat pembelian, dan tidak mengubah hak persetujuan Owner.
-- Delivery: source `1a60de56e41697d2ec35ba05f66f8bae16198152` push dan local validated 15/15; belum production-deployed/activated, UAT nyata dan gate rilis terbuka.
+- Delivery: source `1a60de56e41697d2ec35ba05f66f8bae16198152` push, local validated 15/15, dan production-activated 2026-10-05; rollback `60c77dcba62ff237fa78dec649949e5e7d91de43`. UAT nyata Kepala Toko/stock closing dan browser produksi masih terbuka; `BUSINESS_READY=false`.
 - Terkait: [SagaOPS](products/sagaops/DOSSIER.md), [Gaps](GAPS.md).
 
 ## DEC-228 — Pilihan voucher otomatis atau input kode lintas checkout

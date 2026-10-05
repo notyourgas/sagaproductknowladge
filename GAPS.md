@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-05 — Residual pengingat stok rendah setelah aktivasi
+
+- `CONFIRMED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152` aktif dengan rollback `60c77dcba62ff237fa78dec649949e5e7d91de43`; Owner API 200 `NO_CLOSING`, monitor lulus, Gateway existing tetap. Entri source-only 4 Oktober di bawah adalah histori, bukan status runtime kini.
+- `TODO`: tetapkan batas minimum per bahan/outlet; UAT closing fisik sampai posting dan login Kepala Toko native `manager`. Browser Owner produksi 390/1440 akhirnya lulus setelah timeout jaringan sementara; full suite menggantung pada tes browser lama dan offsite restore belum divalidasi. `BUSINESS_READY=false`.
+
 ## 2026-10-04 — Pengingat stok rendah belum aktif
 
 - `CONFIRMED`: source `1a60de56e41697d2ec35ba05f66f8bae16198152` telah push dan tes terkait 15/15 lulus, tetapi bukan runtime production. Kartu Kepala Toko memakai akun staf native `manager`, bukan Team & Access Manager yang masih nonaktif.
