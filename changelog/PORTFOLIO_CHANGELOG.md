@@ -1,5 +1,25 @@
 # Portfolio Changelog
 
+## 2026-10-07 01:04 WIB — Finance/Reports mandiri aktif di production
+
+`CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Aktif `3ae866167cc816834ee654752cce5802c751cc7a` sejak01:04:11WIB;
+rollback `452f05525bda7b290c38a20a5aa854b8f9867af9`. Lima fileUI saja,
+backend/schema/auth/ops tetap. D35 Ringkasan keuangan, D36 Kas & closing,
+D37 Pencocokan pembayaran, D39 Direktori laporan dan D40 Penjualan:
+CSVstatus bertahan saat refresh, prefixRp/form settlement terkandung,
+error tanggal aksesibel dan filter desktop500px. Source branch pushed skipCI;
+GitHubActions tidak digunakan. Observasi production lama di bawah HISTORICAL.
+D40normalized source masih unavailable, UI menampilkan status tersebut;
+nativeCSV PASS bukan acceptance normalizedESB/provider. Limited lead review
+serta affected acceptance selesai; full49 tetapOPEN, bukan BUSINESS_READY.
+Broadc122 belum dirilis; exact100ordinary terhenti memoryfloor setelah15pass
+observasi, D09/D11/HRfullshell/WebKitBack OPEN. KDSLinux2/2 PASS. SaaScandidate
+3d3543e dari tasklain tetapstaged/notactivated; integrasi berikutnya wajib
+mulai dari currentbaru agar tidak menimpa rilisUI.
+
+Sumber: izinAndreas, sourcecommit, runnernative/checksum/recovery dan authenticated smokeproduction.
+
 ## 2026-10-07 01:02 WIB — Retry approval dan restore MySQL Platform terverifikasi
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
