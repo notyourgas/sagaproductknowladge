@@ -1,5 +1,30 @@
 # SagaOPS Changelog
 
+## 2026-10-06 — SagaPOS SaaS: kandidat terintegrasi, native gate belum lulus
+
+`CONFIRMED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`.
+Source checkpoint `ba4c10aaf197e50ae81d47cc5861697fd5a03c56` mengintegrasikan
+sebelas commit SaaS dari baseline production terbaru, mempertahankan Team UI
+dan sesi existing. Before bukti lokal saja -> after tersedia tes PostgreSQL 18
+disposable yang menemukan ketidaksesuaian kontrak izin; acceptance native FAIL.
+Delapan regresi lokal berbeda dan static/typecheck PASS; bukan full regression.
+KDS/closing/dump-restore native belum dicapai karena tes berhenti pada gate akses.
+
+Production unchanged: active `452f05525bda7b290c38a20a5aa854b8f9867af9`,
+rollback `03b4c343903ba22ea9c1978f17d3ed6de063512c`; layanan dan health ready,
+Gateway tetap GATEWAY. Tidak ada schema/data/provider/plan mutation produksi.
+Tim & Akses existing tetap aktif; SaaS baru tetap local-only, BUSINESS_READY=false.
+Source: instruksi Andreas melanjutkan dan deploy, Git provenance dan live
+read-only 6 Oktober 2026. Dokumen produk, dossier, changelog, master, gaps dan
+sync diperbarui; ini checkpoint blocker, bukan headline fitur baru.
+
+Next: tutup kontrak izin dan native runtime multi-tenant; integrasikan paired
+SagaDev adapter/provisioning/lifecycle; baru recovery dan guarded activation.
+`NEEDS CONFIRMATION`: model pilot gratis approval manual atau paket berbayar.
+Live SagaDev belum mempunyai active plan SagaPOS atau adapter produk tersebut;
+harga, terms, trial dan tagihan tidak dibuat otomatis. Izin deploy telah ada,
+keputusan komersial ini berbeda dari mengulangi izin rilis.
+
 ## 2026-10-06 — Tim & Akses aktif di production
 
 `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_BROWSER_UAT_PASS`.
