@@ -1,5 +1,44 @@
 # Saga Platform Dossier
 
+## 2026-10-07 — SagaPOS pilot gratis/manual: native PASS, rilis tertahan kapasitas
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Keputusan Andreas (DEC-237): pilot gratis dengan approval manual Owner SagaDev,
+tanpa tagihan otomatis atau masa trial/expiry buatan. Keputusan pricing yang
+sebelumnya NEEDS CONFIRMATION ditutup untuk pilot ini, bukan paket komersial lain.
+
+Source SagaPOS `191f2c25044ade84f88c7e35b4d6aaadb7127f08`; paired Platform
+`c18134c2a9baeaf936af8ffb2f327e45c144f822`, keduanya pushed.
+Before native gate FAIL → after native PostgreSQL runtime scoped tenant,
+staf, cash/KDS/closing, suspend/access-check dan atomic additive schema replay
+teruji. 20 regresi aplikasi + 3 native/staf PASS, tanpa skip; Platform 41 tes/
+519 assertions PASS pada SQLite. Static/typecheck PASS; browser 390/768/1440
+tanpa overflow/page error, axe violations 0. Bukan full suite semua produk.
+
+Immutable Linux artifact PASS, SHA256
+`972fa6542f34b3f0983a5f45664c88403f8cf8d56e4177f70ab725e1d22601b5`;
+Copy artifact off-host sudah checksum-verified PASS; bukan backup DB produksi.
+Gate sebelum staging BLOCKED: artifact 169789440 bytes, reserve 406687744
+bytes; proyeksi disk 85%, batas runner <85%. Tidak mengubah threshold,
+menghapus data/release/backup atau mengaktifkan kandidat.
+
+Produksi observasi 7 Oktober 00:19 WIB: SagaPOS active
+`452f05525bda7b290c38a20a5aa854b8f9867af9`, rollback
+`03b4c343903ba22ea9c1978f17d3ed6de063512c`; Platform active
+`aeb17ba9316252a6b2de0357cdcad6f7bd184589`. Owner read-only smoke dan 12
+surface probes PASS; Gateway existing tetap GATEWAY; QRIS merchant belum
+tersimpan. Tidak ada order, provider, payout, schema atau plan mutation produksi.
+
+Next: ruang staging/recovery yang aman; Linux encrypted restore/boot→rollback→
+reboot dan paired Platform MySQL/protected adapter/Platform-only activation;
+kemudian authenticated tenant UAT. Jalur credential sintetis rehearsal hanya
+disposable, bukan bukti SagaDev live. Toko baru pilot cash saja; kiosk,
+stock/HPP, QRIS/Gateway dan printer belum tersedia untuk toko baru.
+Izin deploy sudah ada, tidak memerlukan approval ulang; sisa teknis milik
+executor. CI_NOT_RUN sesuai SKIP_GITHUB. `BUSINESS_READY=false`.
+Source keputusan Andreas, source/tests dan preflight read-only terbaru.
+Entry native FAIL 6 Oktober di bawah adalah HISTORICAL, digantikan milestone ini.
+
 ## 2026-10-05 — Boundary staf SagaPOS lokal
 
 `CONFIRMED`: integrasi staf/closing pada SagaPOS source `334d1024190a23fc73e16fa4e9a03133cb1e0145` LOCAL_VALIDATED, belum deployed. Platform source `3c34dc6a4dea12ac3d83c4077e15a51a838ac1f4` unchanged; assertion pusat tetap Owner-only. Akun staf tidak berubah menjadi Owner pusat: izin/credential lokal memakai TeamAccess org/outlet-scoped dan event lifecycle durable. Refresh entitlement pusat untuk staf/freshness saat delivery outage masih release gap. Ini kelanjutan DEC-236, bukan perubahan pricing/trial, provider atau izin pembayaran nyata; bukan BUSINESS_READY.

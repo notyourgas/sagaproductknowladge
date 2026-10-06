@@ -1,6 +1,26 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-237 — SagaPOS pilot gratis dengan approval manual
+
+- Tanggal: 2026-10-07 WIB; pemberi keputusan Andreas; status `CONFIRMED`.
+- Keputusan: "Gratis approval manual, dan lakukan 3 step nya itu". Pilot
+  gratis, approval manual Owner SagaDev; bukan auto-billing/trial/expiry.
+- Alasan: tenant baru perlu dapat mulai setelah review, tanpa keputusan
+  komersial yang menghambat implementasi pilot.
+- Alternatif ditolak: memilih paket berbayar sendiri, auto-approval, atau
+  mengaktifkan pembayaran hanya karena formulir/UI tersedia.
+- Dampak: menutup pricing pilot NEEDS CONFIRMATION pada DEC-236; tidak
+  membatalkan gate deployment, isolasi tenant, atau izin provider transaksi.
+  SagaPOS source 191f2c25044ade84f88c7e35b4d6aaadb7127f08 dan Platform
+  c18134c2a9baeaf936af8ffb2f327e45c144f822 SOURCE_PUSHED/LOCAL_VALIDATED,
+  IMPLEMENTED_NOT_DEPLOYED; produksi tidak berubah, BUSINESS_READY=false.
+- Dokumen: [SagaOPS](products/sagaops/PRODUCT.md),
+  [Platform](products/saga-platform/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-236 — Implementasi strategi closure SagaPOS dan gated deploy
+
+- Commercial pilot unknown pada keputusan historis ini `DEPRECATED` oleh
+  DEC-237; approval/gate produk dan izin deploy tetap berlaku.
 
 - Kelanjutan 5 Oktober 2026: staf/closing approval teruji lokal pada SagaPOS `334d1024190a23fc73e16fa4e9a03133cb1e0145` (18 tes terkait, bukan native/full regression). Role/akun scoped, maker/checker berbeda dan ledger-bound grant; production unchanged. Native schema/runtime/RLS, central staff freshness, recovery dan guarded release/UAT masih terbuka. Ini penerapan DEC-236, bukan otorisasi/pricing/payment baru.
 
