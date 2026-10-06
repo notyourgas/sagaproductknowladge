@@ -1,5 +1,27 @@
 # SagaOPS Changelog
 
+## 2026-10-06 — Tim & Akses aktif di production
+
+`CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_BROWSER_UAT_PASS`.
+Production aktif `452f05525bda7b290c38a20a5aa854b8f9867af9`, rollback `03b4c343903ba22ea9c1978f17d3ed6de063512c`; 35 main migrations tetap.
+Tim & Akses ON dengan persistence PostgreSQL. Owner membuka menu menggunakan
+sesi dashboard existing; cookie dan CSRF tetap setelah pergantian versi.
+Owner mengelola role, akun staf dan izin melalui menu pengaturan yang sama.
+Bukti browser desktop1440/mobile390, API Owner, denial anonymous/CSRF, health
+ready dan monitor PASS. Akun staf nyata belum dibuat; operator trial masih pending.
+`BUSINESS_READY=false` untuk keseluruhan produk.
+
+Before Team OFF dan Owner melihat login terpisah -> after Team ON, sesi Owner
+dashboard langsung membuka menu. Andreas mengotorisasi strategi berurutan dan
+aktivasi; exact source `452f05525bda7b290c38a20a5aa854b8f9867af9` dan artifact `fd10f5340b5e1c5efefb0f38464da01ae305d6acce655231c8e9eba3e9220946` telah diverifikasi.
+Final backup/restore/native recovery/activation/authenticated smoke/monitor PASS.
+Checkpoint gagal sebelumnya di bawah merupakan histori yang superseded oleh rilis ini.
+Alasan: tutup blocker native concurrency dan duplikasi saat upgrade sesi durable.
+Produk terdampak: SagaOPS/SagaPOS. Dokumen: PRODUCT, DOSSIER, product/portfolio/root
+CHANGELOG, CHATGPT_MASTER_KNOWLEDGE, GAPS dan SYNC_STATUS.
+Next: role/account/checkbox acceptance oleh Andreas dan trial staf nyata;
+full regression/offsite/hardware/payment tidak diklaim selesai.
+
 ## 2026-10-06 — Tim & Akses: kandidat tersimpan, aktivasi tertahan
 
 `CONFIRMED / SOURCE_PUSHED / STAGED_NOT_ACTIVATED / ACTIVATION_BLOCKED`.

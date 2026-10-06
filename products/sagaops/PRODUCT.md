@@ -1,34 +1,15 @@
 # SagaOPS Product Knowledge
 
-## 2026-10-06 — Tim & Akses: kandidat tersimpan, aktivasi tertahan
+## 2026-10-06 — Tim & Akses aktif di production
 
-`CONFIRMED / SOURCE_PUSHED / STAGED_NOT_ACTIVATED / ACTIVATION_BLOCKED`.
-Andreas meminta modul Tim & Akses dapat dicoba pada production. Kandidat
-`a4d75c55832424adea694b6cd802dc11260bcd4b`, branch
-`codex/sagapos-team-production-20261005`, menyediakan reuse sesi Owner durable,
-flag modul, grant Tim yang lebih sempit, validasi schema sebelum service stop,
-dan recovery error dari shared Python launcher. Tidak ada dependency baru.
-
-Production tetap `4c07c06fd4427fb33aebf2d2959a19472fbf2ed9`, rollback
-`1a60de56e41697d2ec35ba05f66f8bae16198152`; health dan monitor PASS.
-Tim masih OFF (`503 team_access_disabled`), 35 main migrations tidak berubah.
-Routing stock closing yang telah dipulihkan tetap terpasang; rilis SaaS staf
-+ approval closing source-only sebelumnya tidak ikut dipromosikan.
-
-Focused sesi Owner/API/persistence/browser dan 15 frozen schema contract tests
-PASS; regresi nested Python failure recovery PASS. Native recovery kandidat
-sebelumnya lulus, tetapi aktivasi ditolak karena privilege compatibility;
-versi lama telah dipulihkan. Kandidat final kembali ditolak oleh native Team
-schema replay guard pada database disposable. Tidak ada receipt promosi final.
-Full regression lokal NOT_PASSED: V8 OOM/storage exhaustion, run dihentikan.
-Jangan memindahkan bukti native kandidat sebelumnya menjadi PASS kandidat final.
-
-Checkpoint disimpan setelah dua correction rounds. Next unblock: pisahkan
-penyebab transaksi grant/concurrency, pastikan serialisasi sebelum perubahan
-privilege, lalu ulang native proof pada kandidat yang dibekukan sebelum aktivasi.
-Production Owner Team browser UAT dan onboarding staf masih NOT_COMPLETED;
-bukan BUSINESS_READY. Tidak ada akun staf nyata yang dibuat atau perubahan
-payment/provider/customer messaging. Source dan knowledge dicatat terpisah.
+`CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / OWNER_BROWSER_UAT_PASS`.
+Production aktif `452f05525bda7b290c38a20a5aa854b8f9867af9`, rollback `03b4c343903ba22ea9c1978f17d3ed6de063512c`; 35 main migrations tetap.
+Tim & Akses ON dengan persistence PostgreSQL. Owner membuka menu menggunakan
+sesi dashboard existing; cookie dan CSRF tetap setelah pergantian versi.
+Owner mengelola role, akun staf dan izin melalui menu pengaturan yang sama.
+Bukti browser desktop1440/mobile390, API Owner, denial anonymous/CSRF, health
+ready dan monitor PASS. Akun staf nyata belum dibuat; operator trial masih pending.
+`BUSINESS_READY=false` untuk keseluruhan produk.
 
 ## 2026-10-05 — Routing stock closing staf dipulihkan di produksi
 
