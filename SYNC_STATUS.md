@@ -1,5 +1,37 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-07 00:38 WIB — Kapasitas pulih; kandidat tersimpan dan recovery Linux PASS
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Andreas mengizinkan arsip log sistem lama dan pembatasan retensi (DEC-238).
+Arsip terenkripsi dan pemulihan streaming/checksum serta salinan off-host PASS;
+746.2 MiB log lama dilepas, retensi maksimal 256 MiB/7 hari. Database,
+audit transaksi, backup dan release tetap utuh; aplikasi produksi tidak restart.
+Before proyeksi staging 85% BLOCKED → after 84% PASS tanpa melemahkan batas.
+
+Source SagaPOS terbaru `3d3543e17cfd5919f52bee09e172898dc3646084`;
+Platform tetap `c18134c2a9baeaf936af8ffb2f327e45c144f822`, keduanya pushed.
+Perbaikan runner menolak checksum schema kosong; tes Windows/Linux, static,
+type dan shell PASS. Artefak immutable/stage/off-host checksum PASS.
+Linux restore PG18 → schema apply/replay → boot kandidat → rollback-current
+boot → boot ulang PASS, order tidak berubah. Backup DB/kunci/media terenkripsi
+dan restore disposable PASS; salinan off-host checksum PASS.
+Credential pusat pada rehearsal tetap sintetis disposable, bukan integrasi live.
+Receipt sebelumnya untuk kandidat `191f2c2` ditolak karena checksum schema kosong,
+meski runner lama mencetak PASS. Bukti boot bukan izin untuk mengabaikan receipt.
+
+Produksi observasi 00:37 WIB tetap SagaPOS
+`452f05525bda7b290c38a20a5aa854b8f9867af9`, rollback
+`03b4c343903ba22ea9c1978f17d3ed6de063512c`; Platform
+`aeb17ba9316252a6b2de0357cdcad6f7bd184589`. Health/services PASS;
+Gateway existing tidak berubah. SaaS belum diaktifkan; `BUSINESS_READY=false`.
+Sisa: MySQL-target/runner khusus Platform; adapter/credential pusat terlindungi;
+dukungan activator SagaPOS untuk receipt/schema/flag SaaS dan rollback config;
+kemudian fresh authenticated UAT. Ini pekerjaan executor, bukan approval ulang.
+CI_NOT_RUN mengikuti SKIP_GITHUB. Entri kapasitas BLOCKED di bawah HISTORICAL.
+Sumber: keputusan Andreas, source pushed, arsip/checksum dan runner VPS aktual.
+
+
 ## 2026-10-07 — SagaPOS pilot gratis/manual: native PASS, rilis tertahan kapasitas
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

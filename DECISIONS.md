@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-238 — Arsip log sistem VPS dan pembatasan retensi
+
+- Tanggal: 7 Oktober 2026 WIB.
+- Klasifikasi/status: CONFIRMED / diterapkan, bukan aktivasi SaaS.
+- Pemberi keputusan: Andreas, jawaban "Boleh" atas scope arsip log lama.
+- Keputusan: arsip terenkripsi dan verifikasi salinan off-host sebelum native
+  vacuum journal; retensi maksimal 256 MiB dan umur maksimal 7 hari.
+- Alasan: menutup blocker kapasitas rilis tanpa menghapus data bisnis.
+- Alternatif ditolak: menghapus DB, audit transaksi, backup, release; melemahkan
+  batas disk; menyebut receipt rehearsal sebagai integrasi pusat live.
+- Dampak: 746.2 MiB journal dilepas secara recoverable; stage/recovery Linux PASS,
+  aplikasi live tetap utuh. SaaS belum activated/BUSINESS_READY.
+- Dokumen: SagaOPS dan Saga Platform PRODUCT/DOSSIER/CHANGELOG, GAPS,
+  master knowledge dan SYNC_STATUS; provenance SagaPOS 3d3543e17cfd5919f52bee09e172898dc3646084.
+
 ## DEC-237 — SagaPOS pilot gratis dengan approval manual
 
 - Tanggal: 2026-10-07 WIB; pemberi keputusan Andreas; status `CONFIRMED`.
