@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-10-07 01:02 WIB — Retry approval dan restore MySQL Platform terverifikasi
+
+`CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Paired Platform source `14d59da446270d1ebfba63c1389157cc2743a5b7`: retry approval diperbaiki; backup offsite terenkripsi dan restore MySQL kandidat PASS. Owner smoke SagaPOS PASS tanpa transaksi. Runtime tetap `452f05525bda7b290c38a20a5aa854b8f9867af9`, Gateway unchanged; SaaS NOT_ACTIVATED.
+Sumber: source pushed, regresi terfokus, native restore dan verifikasi live.
+
 ## 2026-10-07 00:38 WIB — Kapasitas pulih; kandidat tersimpan dan recovery Linux PASS
 
 `CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
