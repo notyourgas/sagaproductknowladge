@@ -1,5 +1,43 @@
 # SagaOPS Changelog
 
+## 2026-10-07 — Koreksi absensi native aktif di produksi SagaPOS
+
+`CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Source aktif `2d2b3434501d14a82fe8fb54549ea6fb355f2bac`; rollback
+`3ae866167cc816834ee654752cce5802c751cc7a`. Staf memilih shift terbit
+yang sudah mulai dalam 30 hari terakhir, waktu WIB dan keterangan 10–120
+karakter. Error tampil di dialog; isian tetap ada untuk pengiriman ulang.
+Owner dapat membuka pengajuan lupa masuk yang belum memiliki record absensi
+dan memeriksa koreksi masuk/pulang. Tidak ada persetujuan otomatis.
+
+Regresi terfokus 25/25 PASS, termasuk retry, review Owner, GPS/foto, PWA
+dan desktop/mobile sintetis. Linux static 926 modul/schema35 dan TypeScript
+PASS. Full regression belum selesai, bukan PASS. Provenance/artifact,
+backup terenkripsi dengan salinan off-host, disposable restore, recovery
+kandidat→rollback→kandidat dan guarded atomic activation lulus.
+Blocker kapasitas ditutup dengan pembersihan cache build lama yang diizinkan;
+source/perubahan lama diamankan dalam arsip terenkripsi sebelum dibersihkan.
+
+HTTPS exact-source health ready; Owner native state/report anonymous401,
+login staf200 dan native staff session anonymous401. Authenticated Owner
+smoke serta sesi setelah restart PASS tanpa transaksi; HR browser Owner
+desktop/mobile dan form publik terbaru PASS. Cek pertama tepat setelah
+restart sempat gagal saat layanan belum siap; resume bukti sesi yang sama
+lulus setelah health ready, tanpa restart kedua atau penghapusan proof paksa.
+Alias login staf308 ke route kanonik dan bridge lama410 tetap expected.
+
+Backend, schema35, permission, konfigurasi pembayaran, payroll preview,
+performance OFF dan lifecycle produksi permanen tidak berubah. Pengajuan
+koreksi staf nyata di production masih `NOT_VERIFIED`; tidak membuat staf
+atau mengubah catatan kerja nyata. `BUSINESS_READY` tidak diklaim.
+Alur tetap native di dashboard/staff SagaPOS, bukan runtime SagaWork.
+
+Sumber: laporan Andreas, persetujuan cleanup/deploy, exact pushed source,
+checksum artifact, runner recovery/activation, authenticated smoke dan browser.
+Dokumen terdampak: PRODUCT, DOSSIER, product/root/portfolio CHANGELOG,
+CHATGPT_MASTER_KNOWLEDGE, GAPS dan SYNC_STATUS.
+
+
 ## 2026-10-07 — Source koreksi absensi diperbaiki; rilis tertahan kapasitas
 
 `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`.
