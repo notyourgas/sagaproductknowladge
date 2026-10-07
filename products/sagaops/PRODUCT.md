@@ -1,5 +1,19 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-07 23:33 WIB — V3 native acceptance progress; deployment pending
+
+`CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `421d000d2e5957f9f5d216624342b1d7fd2cee4e`; qualified bounded UI candidate `ad24262b07169f3138c22a59e1dbb0001f3562eb` is IMPLEMENTED_NOT_DEPLOYED. Financial/fixture draft `241fe7bbf481e68ca2106c359d913f31568acca6` remains UNQUALIFIED and excluded from that UI candidate. Fresh production read confirms active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, HTTPS ready and zero restarts; no new activation or business writes.
+
+D49 Windows Chromium desktop/mobile2/2 complete PASS: all five domain and seven phase checklists, top/lower visibility, loading/503 retained source,403 clear,401 session boundary, accessibility and readonly state. Shared primary-button hover contrast fixed. This is local in-memory shell acceptance for that bounded contract, not full visual/native PostgreSQL/production UAT. Previous70 bounded cases/22 modules are retained separately; no new aggregate49/97 claim.
+
+Member native PostgreSQL18.6 multiconnection and complete UI prerequisites are proven. Latest authorized integration run completes5 cases:4 PASS/1 FAIL; backend durable checkout/restart/exactly-once and actual Owner/Member/Kiosk/redeemed/lost-ack/restart flow pass. Cashier fixture omitted opening the native Member disclosure; correction prepared, not rerun. D40 run completes6:5 PASS/1 FAIL; native report/payment replay reached, but fixture expected ASCII dash instead of the existing em-dash unknown-COGS contract. Corrected expectation prepared, not rerun; terminal report/CSV qualification remains open.
+
+Full acceptance0/49 remains OPEN. D19 real storage topology and unified durable stock authority are missing. Scoped D40 stored-line/cash parity is present, but modifier snapshots are nonempty and normalized bills absent; the conservative no-modifier bridge cannot qualify current source. No modifier suppression, backfill or provider/flag activation. Fresh effective Owner login, a newly authorized combined fixture-corrected run, shared capped browser/native zoom/original aggregate, remaining full reference/state contracts and human business UAT remain required. Cumulative budget851.08s; original floors/timeouts/caps preserved.
+
+Older dated entries below are historical and do not supersede this checkpoint.
+
+Readiness detail coverage and contrast improved locally; commercial positioning, pricing and production release remain unchanged. See [dossier](DOSSIER.md).
+
 ## 2026-10-07 21:40 WIB — V2 execution; bounded gates qualified, activation pending
 
 `CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `3eec3d0b4fb7ce79e10981975cc53b6603b80755`; application candidate `f677a2065b9b64cdbbe9b780c273c66275a59386`. Production remains `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`; no new activation/business write.
