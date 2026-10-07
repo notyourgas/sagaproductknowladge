@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-08 00:08 WIB — SagaPOS V4 integration and CSV lifetime milestone
+
+`CONFIRMED`. UI `f216d9a7498a65fbe8cf203822100d17d1670932` published/IMPLEMENTED_NOT_DEPLOYED; shared late CSV lifetime fix Windows12/12 and static PASS. Combined Member/D40 bounded disposable11/11 PASS; historical allocation, Linux/global/original97/full49/UAT remain open. Production activef05aea0/rollback93c4e85 unchanged; no business writes or BUSINESS_READY claim. Reason: fix obsolete download and close two corrected integration fixtures. See SagaOPS PRODUCT/DOSSIER for runtime/fixture limits and remaining gates.
+
+SagaPOS full acceptance remains0/49; Member/D40 local integration is separate from production business readiness. Historical source needs archival classification or an explicit prospective-only decision; Owner login is pending.
+
 ## 2026-10-07 23:33 WIB — V3 native acceptance progress; deployment pending
 
 `CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `421d000d2e5957f9f5d216624342b1d7fd2cee4e`; qualified bounded UI candidate `ad24262b07169f3138c22a59e1dbb0001f3562eb` is IMPLEMENTED_NOT_DEPLOYED. Financial/fixture draft `241fe7bbf481e68ca2106c359d913f31568acca6` remains UNQUALIFIED and excluded from that UI candidate. Fresh production read confirms active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, HTTPS ready and zero restarts; no new activation or business writes.

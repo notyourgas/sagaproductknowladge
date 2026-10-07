@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-08 00:08 WIB — SagaPOS V4 integration gates closed; CSV lifetime corrected
+
+`CONFIRMED / NOT_BUSINESS_READY`. UI candidate `f216d9a7498a65fbe8cf203822100d17d1670932` is published and IMPLEMENTED_NOT_DEPLOYED; it preserves qualified UIad24262 and excludes the financial draft. The shared downloader now discards late success/error responses when the initiating link, query or visible session changes. Final Windows scoped proof12/12 PASS across3 modules and static check PASS; actual native in-memory Finance desktop/mobile verifies delayed CSV after date/session change and exact unchanged-context bytes. This is not Linux/native PostgreSQL/production UAT or full-screen acceptance.
+
+The one approved combined Member/D40 run completes11/11 PASS with no fail/skip/cancel. Member5/5 covers actual local Platform/Member/Cashier/Kiosk with pinned backend162ee83/UI81fc239, native PG18.6 disposable, restart/lost-ACK/exactly-once. Money6/6 combines original embedded/pure cases with native PG18.6 exact stored-line persistence, closed-bill replay/drift, Owner report/detail/snapshot CSV and anonymous denial. Unknown COGS stays unknown. These bounded integration gates are closed; actual historical modifier qualification remains open.
+
+Production snapshot7 October23:49WIB remains activef05aea02ec86924c2c1eda73f504047e86f6fabd, rollback93c4e85bfb51dd3e064f73d1876b931a8149e41c, HTTPS ready/zero restart. No new activation or business data write. Full acceptance0/49, Staff separate. D19 actual topology/unified authority, historical D40 classification, global browser/native zoom/original97/final reference/state and operational UAT remain open. Existing isolated Linux CSV workflow dispatch returns HTTP500; no run observed, no test PASS/FAIL inferred. Effective Owner login remains required before production mutation. Original budget/floors/timeouts/caps preserved.
+
+Earlier dated entries below are historical and do not supersede V4.
+
 ## 2026-10-07 23:33 WIB — V3 native acceptance progress; deployment pending
 
 `CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `421d000d2e5957f9f5d216624342b1d7fd2cee4e`; qualified bounded UI candidate `ad24262b07169f3138c22a59e1dbb0001f3562eb` is IMPLEMENTED_NOT_DEPLOYED. Financial/fixture draft `241fe7bbf481e68ca2106c359d913f31568acca6` remains UNQUALIFIED and excluded from that UI candidate. Fresh production read confirms active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, HTTPS ready and zero restarts; no new activation or business writes.
