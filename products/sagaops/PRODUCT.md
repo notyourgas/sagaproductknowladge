@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-07 21:40 WIB — V2 execution; bounded gates qualified, activation pending
+
+`CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `3eec3d0b4fb7ce79e10981975cc53b6603b80755`; application candidate `f677a2065b9b64cdbbe9b780c273c66275a59386`. Production remains `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`; no new activation/business write.
+
+70 unique complete passing cases across22 bounded modules: Linux PG18 catalog/category/Staff23 and Windows47 inventory/purchasing/settings/HR. Final static/TypeScript PASS. This is not the original97-module aggregate or49/49 acceptance; Staff is outside49.
+
+Full acceptance0/49 remains OPEN. Promotion waits fresh effective Owner after401. Member extra reached300s limit; single-connection fixture incompatible with required independent race. D19 needs real storage topology/native authority; D40 normalized facts absent and existing legacy bridge dry-run UNVERIFIED. Global WebKit/native zoom/aggregate and operational qualifications remain OPEN.
+
+See [dossier](DOSSIER.md) for current qualification and source boundaries.
+
+Older dated entries below are historical and do not supersede this checkpoint.
+
+
 ## 2026-10-07 20:54 WIB — Eksekusi acceptance katalog dan Staff; kandidat belum deployed
 
 `CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `c17433b01a68acca9a61cc9983c9325568c12ce5`,

@@ -1,5 +1,20 @@
 # SagaOPS Dossier
 
+## 2026-10-07 21:40 WIB — V2 execution; bounded gates qualified, activation pending
+
+`CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `3eec3d0b4fb7ce79e10981975cc53b6603b80755`; application candidate `f677a2065b9b64cdbbe9b780c273c66275a59386` pushed. Production remains `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, ready on current read-only verification. No new production activation or business write.
+
+Approved V2 correction executed: existing isolated Linux PostgreSQL18 CI [run37634167114](https://github.com/notyourgas/sagaops/actions/runs/37634167114) completes23/23 catalog/category/Staff cases,0fail/skip/cancel. Windows bounded inventory19, purchasing6, settings/access10 and independent HR12 cases complete;70 unique complete passing cases across22 modules overall. This is not the original97 ordinary modules or full49-screen acceptance; Staff remains outside49. Final static/TypeScript check PASS. Original cumulative verification budget remains1051.86s without reset.
+
+Catalog optional-field validation and Staff empty-state copy are qualified locally; published-roster copy clarifies revision into a new draft only for an unused future period. Native period binding and Barista/Kitchen fixtures corrected with original assertions retained. Four runtime files differ from active; backend/schema/dependencies unchanged. Official packaging preparation completed locally, not executed; promotion waits for fresh effective Owner after authenticated session401.
+
+Member approved extra stops at original300s limit after2initial passes. Correct private backend/UI prerequisites were bound; standalone diagnosis confirms PGlite single-connection serialization is incompatible with the required independent transaction race. No full Member/provider acceptance; native PG18 prerequisites and renewed gate authorization required before another capped run.
+
+D19 functioning-transfer and D40 normalized-ESB targets are approved. D19 still needs real physical storage topology and one durable authority; shared-storage boundary remains. D40 current normalized facts are absent; read-only existing bridge dry-run remains UNVERIFIED for legacy line allocation/rounding. No fabricated locations/balances/backfill or flag/provider enablement. Full49 contracts/global WebKit/native zoom/required aggregate and operational qualification remain OPEN; acceptance0/49 and BUSINESS_READY=false.
+
+Older dated entries below are historical and do not supersede this checkpoint.
+
+
 ## 2026-10-07 20:54 WIB — Eksekusi acceptance katalog dan Staff; kandidat belum deployed
 
 `CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `c17433b01a68acca9a61cc9983c9325568c12ce5`,
