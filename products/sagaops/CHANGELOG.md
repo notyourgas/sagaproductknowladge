@@ -1,5 +1,29 @@
 # SagaOPS Changelog
 
+## 2026-10-07 15:28 WIB — Sesi Barista dan UAT baca SagaPOS terverifikasi
+
+`CONFIRMED / AUTHENTICATED_STAFF_READ_ONLY_UAT_PARTIAL`. Sumber: UAT browser
+aktual dan probe runtime7 Oktober2026; source checkpoint
+`354f337`, runtime candidate `2cb86be2f98cce9749d1893fdf9fce6da4a88979`.
+Sebelumnya akses/sesi Staff pending; kini sesi Barista, ganti password selesai,
+Beranda, jadwal harian/bulanan, riwayat absensi, daftar/form pengajuan dan stock
+catalog/review dapat dibaca. Endpoint Staff UI teramati200; hitungan kosong
+menahan kirim ke Owner, absen masuk tanpa jadwal disabled, receiving tanpa
+capability tersembunyi. Reflow320/390px diperiksa; tidak ada write bisnis UAT.
+Direct API penolakan akses manajer belum terbukti karena browser client menolak
+navigasi. Copy tanpa jadwal/header outlet/empty bulanan masih perlu review.
+
+Production15:27WIB tetap `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, rollback
+`5d418b44883df179898bae7db0b92fe805246584`, readytrue dan zero restart.
+Tidak ada package/stage/aktivasi baru. Full acceptance0/49; Staff di luar49 dan
+alur tulis/approval/absensi/payroll belum accepted; `NOT_BUSINESS_READY`.
+Budget test asli2379.91detik; D12/D33 extra0/2 masing-masing. Next action:
+pulihkan kapasitas, tutup residual acceptance serta recovery kandidat sebelum
+release. Akun/browser setup selesai; kapasitas, acceptance dan release gates
+masih terbuka. Harga, positioning dan provider tidak berubah. Dokumen terdampak:
+SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master, gaps dan sync/changelog.
+Snapshot sebelumnya historis; knowledge commit tercatat pada main HEAD.
+
 ## 2026-10-07 14:13 WIB — Checkpoint Beranda dan unblock acceptance SagaPOS
 
 `CONFIRMED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`. Source `80499781964ac05b196b5b798d8ef4942f9464a0`,
