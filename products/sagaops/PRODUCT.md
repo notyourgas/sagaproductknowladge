@@ -1,5 +1,42 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-07 18:26 WIB — Koreksi UI SagaPOS aktif; acceptance penuh tetap terbuka
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`.
+Source checkpoint `44a859ba578ee11464759270295807303d49ca02`; active release
+`f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback
+`93c4e85bfb51dd3e064f73d1876b931a8149e41c`. Sebelumnya koreksi chart/mobile,
+D12 date containment dan KDS belum live; kini lima file UI Owner/KDS aktif,
+termasuk label GPS/foto44px pada aturan kerja. KPI putih dan HR live dipertahankan.
+Backend, skema, dependency, runner, provider dan data bisnis tidak diubah.
+Artifact169287680byte, digest4714291d36f8f031fec31a9eb131d85df62c53daef4ddaab5b7d5c541513ea6a.
+Target/stage, encrypted backup/disposable restore, candidate/current rollback/
+candidate boot rehearsal, activation dan monitor PASS; disk stage proyeksi84percent.
+Public HTTPS readytrue dan lima aset cocok byte-for-byte dengan source aktif.
+Owner production_owner200; Chrome setelah refresh: label terkait44px dan KPI
+mobile390px tanpa overflow. Skema35/gateway GATEWAY/lifecycle UNCHANGED;
+probe18:25WIB zero restart. Encrypted off-host copy checksum verified; managed
+offsite tetap UNVERIFIED. Tab lama perlu ordinary refresh agar aset baru dimuat.
+
+Bukti koreksi Linux: D01 5/5, D12 finite5/5, KDS2/2, D33 2/2; input terkait
+byte-identical pada kandidat aktif. Windows: D12 16/16; D33 Chromium2/2+WebKit2/2;
+Sales reference/state Chromium+WebKit2/2, zero skip/fail. Ini scope koreksi,
+bukan full-suite49 PASS. D12/D33 extra2/2 masing-masing habis; budget asli
+remaining2199.54detik. Staff copy tanpa jadwal dan bulanan sourcefd0d5b8:
+Windows11/11 PASS, Linux berhenti unchanged memory floor; belum deployed.
+Member/voucher kini menunjukkan3 fixture-import failures dari source lama,
+bukan3 skip atau assertion bisnis gagal. Source benar162ee83d required imports
+PASS; tes berikutnya menunggu explicit extra round, tidak ada provider aktivasi.
+
+Full acceptance tetap0/49; Staff terpisah. B1/B2/B5 IN_PROGRESS; B3/B4/B6/B7 OPEN.
+Remaining: native zoom, Orders/global WebKit navigation, complete reference/state/
+write/recovery contracts, Staff writes/API-denial, Member native integration,
+D19 location/transfer authority dan D40 normalized ESB facts/reconcile. Fresh ESB
+write OFF/read LEGACY_V1, inventory reporting OFF; native CSV bukan normalized ESB.
+Pertanyaan scope bisnis D19/D40 pending. Keberhasilan rilis parsial ini tidak
+membuktikan semua49 screen atau BUSINESS_READY. Harga/positioning tidak berubah.
+Snapshot sebelumnya historis; status produksi/source/checkpoint dibedakan.
+
 ## 2026-10-07 15:28 WIB — Sesi Barista dan UAT baca SagaPOS terverifikasi
 
 `CONFIRMED / AUTHENTICATED_STAFF_READ_ONLY_UAT_PARTIAL`. Sumber: UAT browser
