@@ -1,5 +1,32 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-245 — Cleanup lokal unused-file dengan provenance dan proteksi data
+
+- Tanggal:7 Oktober2026; Andreas; klasifikasi CONFIRMED.
+- Keputusan: izinkan cleanup file sampah atau media/rollback/data yang memang
+  tidak terpakai di drive lokal, untuk membuka resource task.
+- Alasan: drive hampir penuh menahan acceptance/release.
+- Alternatif: menghapus media/source/recovery/data ambigu dari usia/nama saja
+  ditolak; hanya target disposable/recoverable yang dibuktikan boleh diproses.
+- Dampak: inspeksi menemukan arsip installer duplikat byte-identical dengan
+  seluruh20.383 file runtime. Automatic approval review menolak penghapusan
+  arsip dan tiga cache:blocked by policy. Tidak ada deletion/reclaimed baru;
+  tidak mencoba bypass. Manual exact-file cleanup diminta secara privat.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, GAPS, MASTER, SYNC_STATUS,
+  PORTFOLIO/root CHANGELOG; source8049978, production tetap93c4e85.
+
+## DEC-244 — Dua correction round tambahan D12/D33 setelah unblock
+
+- Tanggal:7 Oktober2026; Andreas; klasifikasi CONFIRMED.
+- Keputusan: izinkan maksimal dua ronde TAMBAHAN untuk masing-masing gate D12
+  dan D33 setelah resource/akar masalah diperbaiki. Saat checkpoint0/2 digunakan.
+- Alasan: batas dua ronde asli telah tercapai sebelum acceptance selesai.
+- Alternatif: retry tanpa unblock, reset budget atau mengganti nama gate ditolak.
+- Dampak: assertion, timeout, guard dan budget kumulatif asli tetap. Tidak
+  mengotorisasi aktivasi provider/transaksi/stock/payroll atau bypass review.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, GAPS, MASTER, SYNC_STATUS,
+  PORTFOLIO/root CHANGELOG; source8049978, production tetap93c4e85.
+
 ## DEC-243 — Jalankan tujuh batch acceptance SagaPOS dengan gate rilis tetap
 
 - Tanggal:7 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.

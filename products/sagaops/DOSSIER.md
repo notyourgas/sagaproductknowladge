@@ -1,5 +1,35 @@
 # SagaOPS Dossier
 
+## 2026-10-07 14:13 WIB — Beranda source-scaled dan kondisi unblock acceptance
+
+`CONFIRMED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`. Source checkpoint
+`80499781964ac05b196b5b798d8ef4942f9464a0`; runtime candidate `2cb86be2f98cce9749d1893fdf9fce6da4a88979`.
+Grafik Beranda kini memakai sumbu/label dari sumber; nol berbeda dari unavailable.
+Komposisi mobile diringkas dan KPI putih dipertahankan. Kesalahan encoding simbol
+yang ditemukan pada screenshot patch dikoreksi sebelum penutupan checkpoint.
+Linux exact-candidate overview: COMPLETE5/5 PASS, zero fail/skip/cancel, mencakup
+source/null/zero, responsive dan aksesibilitas. Windows source check1/1 PASS.
+Sales candidate sebelumnya: Chromium completed PASS, WebKit interrupted pada
+memory floor; bukan full-module PASS. Remaining budget asli2379.91detik.
+
+Andreas mengizinkan maksimal dua correction round TAMBAHAN untuk D12/D33 hanya
+setelah resource/akar masalah teratasi (DEC-244); belum dipakai. Guard/assertion/
+timeout dan budget asli dipertahankan. Cleanup unused-file lokal diotorisasi
+(DEC-245), tetapi automatic approval review menolak cache dan arsip installer
+duplikat dengan alasan blocked by policy. Tidak ada deletion atau reclaimed bytes
+baru. Runtime/database/source/media/recovery tetap dipertahankan.
+
+Production14:13WIB tetap `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, rollback
+`5d418b44883df179898bae7db0b92fe805246584`, ready true/zero restarts.
+Tidak ada package/stage/activation/provider/data bisnis baru; NOT_BUSINESS_READY.
+B1/B2 IN_PROGRESS; B3–B7 OPEN; full acceptance0/49, Staff terpisah.
+Blocker: storage/reserve dan Linux browser peak, browser permission/Owner QA Staff
+setup, residual Orders/navigation/D33, D19 native transfer authority dan D40
+normalized facts/reconciliation, serta candidate-bound recovery/release gates.
+Next: manual verified cleanup/resource admission dan Owner Staff session; lanjut
+kontrak batch serta guarded deploy setelah applicable gates selesai. Harga,
+positioning dan integrasi pembayaran/provider tidak berubah.
+
 ## 2026-10-07 13:30 WIB — Eksekusi tujuh batch: D12 source fix, acceptance tertahan
 
 `CONFIRMED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`. Andreas menyetujui

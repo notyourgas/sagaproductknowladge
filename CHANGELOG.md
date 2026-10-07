@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-07 14:13 WIB — Checkpoint Beranda dan unblock acceptance SagaPOS
+
+`CONFIRMED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`. Source `80499781964ac05b196b5b798d8ef4942f9464a0`,
+runtime candidate `2cb86be2f98cce9749d1893fdf9fce6da4a88979`. Beranda source-scaled/compact-mobile dan UTF-8
+corrected: Linux5/5 PASS. Sales Chromium completed/WebKit memory stop; bukan full
+module PASS. Original remaining2379.91detik; D12/D33 extra2 AFTER unblock diizinkan,
+0 digunakan (DEC-244). Cleanup diizinkan tetapi automatic review blocked by policy,
+0 deletion/reclaimed baru (DEC-245). Production93c4e85/rollback5d418b4 tetap ready;
+0/49 full acceptance, Staff UAT pending, B1/B2 in progress; tidak ada deploy baru.
+NOT_BUSINESS_READY. Detail sumber/risiko/next action: SagaOPS DOSSIER checkpoint
+14:13WIB; storage/browser/access/domain/recovery gates tetap OPEN. Harga/positioning
+serta provider tetap; snapshot sebelumnya historis.
+
 ## 2026-10-07 13:30 WIB — Checkpoint eksekusi tujuh batch SagaPOS
 
 - Klasifikasi: CONFIRMED; Andreas mengotorisasi tujuh batch (DEC-243).
