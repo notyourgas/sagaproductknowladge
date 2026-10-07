@@ -1,5 +1,34 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-07 — Source koreksi absensi diperbaiki; rilis tertahan kapasitas
+
+`CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`.
+Kandidat source `2d2b3434501d14a82fe8fb54549ea6fb355f2bac` memperbaiki
+formulir koreksi absensi native SagaPOS: staf memilih shift terbit yang sudah
+mulai dalam 30 hari terakhir, waktu WIB, keterangan maksimal 120 karakter,
+dan pesan gagal terlihat di dialog tanpa menghilangkan isi formulir.
+Owner dapat membuka serta memeriksa pengajuan lupa masuk yang belum memiliki
+catatan absensi; keputusan tidak otomatis disetujui. Tidak ada perubahan
+backend, schema, payroll, permission atau konfigurasi pembayaran.
+
+Regresi terfokus 25/25 PASS, termasuk pengiriman ulang, koreksi masuk/pulang,
+review Owner, GPS/foto, PWA dan viewport desktop/mobile dengan fixture sintetis.
+Full regression tidak selesai dan bukan PASS. Owner produksi dapat mengakses
+HR secara authenticated/read-only; pengiriman koreksi staf nyata di production
+belum diverifikasi. Tidak membuat staf nyata atau mengubah catatan kerja.
+
+Produksi tetap `3ae866167cc816834ee654752cce5802c751cc7a`; rilis kandidat
+belum aktif. Paket aplikasi awal lolos provenance/checksum, tetapi stage ditolak
+pengaman kapasitas sebelum aktivasi. Backup terenkripsi, disposable restore dan
+salinan off-host ber-checksum lulus. File transport/cache dependensi milik run
+ini dibuang; source, artifact dan backup dipertahankan. Masih perlu ruang VPS
+sebelum membuat paket final, rehearsal fresh dan guarded activation.
+Bukan `BUSINESS_READY`; alur tetap native SagaPOS, tidak memakai SagaWork.
+
+Sumber: laporan Andreas tentang formulir gagal dikirim, source commit pushed,
+regresi terfokus, authenticated Owner read-only, runner dan smoke live.
+
+
 ## 2026-10-07 01:04 WIB — Finance/Reports mandiri aktif di production
 
 `CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
