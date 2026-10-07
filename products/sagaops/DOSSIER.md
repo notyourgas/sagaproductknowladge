@@ -1,5 +1,60 @@
 # SagaOPS Dossier
 
+## 2026-10-07 12:45 WIB — Checklist actual49 dan verifikasi lanjutan redesign SagaPOS
+
+`CONFIRMED`. Production tetap93c4e85bfb51dd3e064f73d1876b931a8149e41c,
+rollback5d418b44883df179898bae7db0b92fe805246584; health dan Owner same-session
+PASS. KPI putih D01/D06 dari5d dipertahankan. Source checklist terbaru
+739940c729d715466fcb0dfba9b24b111b9aaea7 pushed; koreksi KDS54e9e17
+IMPLEMENTED_NOT_DEPLOYED. Bukan rilis luas c122 atau BUSINESS_READY.
+
+Checklist49: implementasi awal48/49 parsial+D19 boundary; review frame
+representatif49/49; route/reflow produksi49/49; acceptance penuh0/49 OPEN.
+Deployment KPI task ini menyentuh2/49, bukan acceptance dua screen penuh.
+Linux D09/D11+HR full-shell9/9, KDS2/2, Wave8 recovery/packaging9/9 PASS
+dalam scope masing-masing. Terminal97 tetap277 cases/271 PASS/3 FAIL/3 SKIP;
+supplemental corrections tidak mengubah receipt awal menjadi full PASS.
+Orders WebKit intermittent, native Back/Stay, D33 dan Staff UAT tetap terbuka.
+Cleanup satu bundle transport melepas sekitar138MB tetapi proyeksi stage masih85%.
+Copy dua folder ke drive lain hash-verified; final removal/junction diblokir
+automatic approval review. DEC-241/242. Harga, positioning dan provider tetap.
+
+D09 Produk dan D11 Varian & tambahan lulus delapan kasus Linux dengan
+timeout90s asli; satu kasus HR full-shell melengkapi9/9. Timeout historis
+tidak direproduksi, sehingga tidak ada klaim patch akar masalah aplikasi.
+KDS Linux320px overflow6px berasal dari tombol refresh yang menyusut pada
+varian komponen mandiri. Satu deklarasi flex-shrink menutupnya; dua modul
+Linux asli lulus. Shell produksi memakai varian header berbeda; tidak ada
+restart produksi hanya untuk penutupan fixture. Koreksi ikut paket UI berikut.
+
+Wave8 packaging/recovery yang semula ENOSPC lulus seluruh sembilan kasus
+setelah penempatan TMPDIR task di memory filesystem. Assertion, source frozen,
+timeout dan guard tidak dikurangi. Budget97 asli tersisa2556.10detik pada
+receipt terakhir; tidak direset. Orders WebKit1482 lulus diagnostic satu kasus,
+tetapi akar kegagalan intermittent tetap OPEN dan tidak disaring/diabaikan.
+Tiga native opt-in skip belum menjadi bukti PostgreSQL/Owner-to-device UAT.
+
+Native Playwright WebKit26.5 tanpa app SagaPOS juga kehilangan tujuan Back
+sesudah cancellation dan menuju about:blank; exact-key traversal tidak
+mencapai tujuan. Ini bukti keterbatasan engine yang direproduksi, bukan UAT
+shipping Safari atau penutupan seluruh Back/Forward/Close/dirty matrix.
+D33 tetap BLOCKED correction2/2. D19 transfer antar-lokasi unavailable adalah
+batas produk satu sumber bahan bersama; D40 normalized ESB/provider unavailable.
+
+D48 Tim & hak akses: font alias Jakarta memuat bundled Plus Jakarta Sans,
+38 svg Feather aktual dan sesi Owner yang sama terverifikasi. Penghitung lama
+memakai atribut yang tidak hadir; angka0 lama bukan bukti ikon hilang.
+Semua weight font/state dialog belum accepted. Profil QA Barista belum ada
+pada read-only check; setup Owner UI, positive Staff UAT dan suspend setelah
+UAT tetap pending (DEC-239). Tidak ada jadwal/tarif/transaksi QA dibuat.
+
+Sumber: keputusan Andreas, exact source, native runners dan authenticated
+read-only receipts7 Oktober2026. Bukti restricted tidak dipublikasikan.
+Artifact/backup/restore/rehearsal KPI5d tetap sah untuk kandidat tersebut;
+managed remote offsite masih UNVERIFIED. Roster HR93 adalah milestone task HR
+yang terpisah dan dipertahankan. Next: selesaikan matriks state per screen,
+Staff UAT setelah setup, residual WebKit/Orders dan kapasitas sebelum paket UI.
+
 ## 2026-10-07 — Perbaikan roster operasional native aktif di SagaPOS
 
 `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.

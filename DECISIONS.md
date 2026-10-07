@@ -1,5 +1,30 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-242 — Hapus satu bundle transport lama setelah verifikasi source recovery
+
+- Tanggal:7 Oktober2026; Andreas; keputusan CONFIRMED, tindakan selesai.
+- Keputusan: hapus hanya bundle transport aa5fb454 yang tidak dipakai setelah
+  exact bytes/hash, proses/alternate dan source lokal/GitHub diverifikasi.
+- Alasan: menutup ruang staging tambahan; file dapat dibangun ulang dari Git.
+- Alternatif: menghapus source/release aktif/rollback/data/secrets atau
+  menurunkan guard ditolak. Tidak memperluas enam pasangan cleanup sebelumnya.
+- Dampak:137961472 allocated bytes dilepas; current93/rollback5d/PID tetap;
+  fresh stage projection85% masih berhenti, bukan janji kapasitas84%.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, GAPS, MASTER, SYNC_STATUS;
+  source739940c729d715466fcb0dfba9b24b111b9aaea7, production tidak berubah.
+
+## DEC-241 — Pindahkan hanya dua folder task dengan full verification dan junction
+
+- Tanggal:7 Oktober2026; Andreas; keputusan CONFIRMED, final move BLOCKED.
+- Keputusan: pindahkan dua folder source/evidence milik task ke drive lain,
+  verifikasi seluruh file dan pertahankan junction pada lokasi asal.
+- Alasan: drive sistem hampir penuh; source/evidence tetap recoverable.
+- Alternatif: cleanup luas atau menghapus bukti/kandidat lain ditolak.
+- Dampak:3622 file/180408962 bytes copied/hash-verified. Automatic approval
+  review menolak penghapusan original: blocked by policy. Original tetap utuh,
+  junction belum dibuat; source/evidence kerja lanjut memakai salinan tujuan.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, GAPS, MASTER dan SYNC_STATUS.
+
 ## DEC-240 — Roster SagaPOS hanya untuk kru operasional
 
 - Tanggal: 7 Oktober 2026 WIB; pemberi keputusan Andreas; status `CONFIRMED`.

@@ -1,5 +1,24 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-07 12:45 WIB — Checklist actual49 dan verifikasi lanjutan redesign SagaPOS
+
+`CONFIRMED`. Production tetap93c4e85bfb51dd3e064f73d1876b931a8149e41c,
+rollback5d418b44883df179898bae7db0b92fe805246584; health dan Owner same-session
+PASS. KPI putih D01/D06 dari5d dipertahankan. Source checklist terbaru
+739940c729d715466fcb0dfba9b24b111b9aaea7 pushed; koreksi KDS54e9e17
+IMPLEMENTED_NOT_DEPLOYED. Bukan rilis luas c122 atau BUSINESS_READY.
+
+Checklist49: implementasi awal48/49 parsial+D19 boundary; review frame
+representatif49/49; route/reflow produksi49/49; acceptance penuh0/49 OPEN.
+Deployment KPI task ini menyentuh2/49, bukan acceptance dua screen penuh.
+Linux D09/D11+HR full-shell9/9, KDS2/2, Wave8 recovery/packaging9/9 PASS
+dalam scope masing-masing. Terminal97 tetap277 cases/271 PASS/3 FAIL/3 SKIP;
+supplemental corrections tidak mengubah receipt awal menjadi full PASS.
+Orders WebKit intermittent, native Back/Stay, D33 dan Staff UAT tetap terbuka.
+Cleanup satu bundle transport melepas sekitar138MB tetapi proyeksi stage masih85%.
+Copy dua folder ke drive lain hash-verified; final removal/junction diblokir
+automatic approval review. DEC-241/242. Harga, positioning dan provider tetap.
+
 ## 2026-10-07 — Perbaikan roster operasional native aktif di SagaPOS
 
 `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.

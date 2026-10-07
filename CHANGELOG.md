@@ -1,5 +1,22 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-07 12:45 WIB — Checklist actual49 dan verifikasi lanjutan redesign SagaPOS
+
+- Klasifikasi: CONFIRMED; sumber Andreas, exact source/runners dan read-only
+  authenticated production. Source739940c729d715466fcb0dfba9b24b111b9aaea7.
+- Alasan: mengganti denominator lama dengan checklist actual49, membedakan
+  koreksi fixture/penempatan dari runtime live dan gate yang masih gagal.
+- Runtime tidak berubah oleh sync ini: production93c4e85/rollback5d418b4;
+  KPI5d tetap live, KDS54e9e17 source-only. NOT_BUSINESS_READY.
+- Bukti:49 bounded routes, acceptance0/49; Linux catalog+HR9/9, KDS2/2,
+  Wave8 recovery9/9. Original97:277 cases/271PASS/3FAIL/3SKIP dipertahankan.
+- Resource: approved single transport bundle removed,138MB reclaimed, stage
+  projection still85%; approved two-folder copy verified but final move blocked.
+- Blocker/next: residual WebKit/Orders, D33, Owner Barista setup/UAT, full
+  state matrices dan capacity. Tidak ada budget reset atau GitHub Actions.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, MASTER, GAPS, SYNC_STATUS,
+  root/portfolio CHANGELOG dan DECISIONS; knowledge provenance main HEAD.
+
 ## 2026-10-07 — Perbaikan roster operasional native aktif di SagaPOS
 
 `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
