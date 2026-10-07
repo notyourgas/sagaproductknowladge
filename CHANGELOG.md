@@ -1,5 +1,38 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-07 20:54 WIB — Eksekusi acceptance katalog dan Staff; kandidat belum deployed
+
+`CONFIRMED / NOT_BUSINESS_READY`. Source checkpoint `c17433b01a68acca9a61cc9983c9325568c12ce5`,
+runtime candidate92a011ae239fe6c608e4a0afd12bc60f1099f342. Produksi tetap
+f05aea02ec86924c2c1eda73f504047e86f6fabd dengan rollback93c4e85b; public
+readytrue/zero restart terverifikasi pada checkpoint ini. Tidak ada perubahan
+produksi, data bisnis, skema, provider atau akun. Acceptance penuh tetap0/49.
+
+Editor produk kini memakai validator inline existing: nama/harga/alasan,
+whitespace, native bounds, nilai lain tetap, serta pembukaan bagian opsional
+invalid sebelum focus. Kandidat awalbb61 Windows9/9 PASS; Linux2 partial PASS
+lalu original1GiB RAM floor. Kandidat3f dengan application inputs identik92:
+Windows23cases22PASS/1FAIL/0SKIP, termasuk Staff11/11, kategori3/3 dan delapan
+katalog layout/recovery. Satu expanded case timeout8s akibat selector fixture;
+selector diperbaiki di92, belum diuji ulang setelah correction2/2. Kandidat baru
+belum qualified/deployed; ini bukan full acceptance dari22PASS.
+
+Staff memakai helper disposable PostgreSQL existing, PGlite default tetap.
+Native PostgreSQL18 Linux correction1 namespace assertion failed; runner kini
+UUID hex sesuai guard asli. Correction2 lima kasus PASS lalu memory-floor stop;
+cluster task dihentikan/dibersihkan, tanpa service production mutation. Staff
+correction2/2 habis; bukan native/full Staff certification. Static npm run check
+PASS; budget kumulatif asli remaining1843.07detik, tidak direset.
+
+D33 associated GPS/photo44px gate sudah CLOSED/ACTIVEf05; stale blocker pada
+ledger diperbaiki, broader work-rule acceptance tetap OPEN. D12/D33 authorized
+extras2/2 dan Sales/Member corrections2/2 sebelumnya tetap dipertahankan.
+Kontrak D19 transfer versus shared storage dan D40 normalized ESB versus native
+masih menunggu keputusan; satu Member extra dan satu catalog extra sudah diminta
+secara eksplisit. Staff perlu headroom Linux terukur serta izin extra tersendiri.
+D31 note native required <=200 dipertahankan. Tidak ada gate waiver atau rilis baru.
+Detail publik: source docs/sagapos-v2/SEVEN_BATCH_CHECKPOINT_20261007.md.
+
 ## 2026-10-07 18:26 WIB — Koreksi UI SagaPOS aktif; acceptance penuh tetap terbuka
 
 `CONFIRMED`. SagaPOS bounded UI correction release `44a859ba578ee11464759270295807303d49ca02` source checkpoint;
