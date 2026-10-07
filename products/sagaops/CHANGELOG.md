@@ -1,5 +1,43 @@
 # SagaOPS Changelog
 
+## 2026-10-07 — Perbaikan roster operasional native aktif di SagaPOS
+
+`CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
+Source aktif `93c4e85bfb51dd3e064f73d1876b931a8149e41c`; rollback
+`5d418b44883df179898bae7db0b92fe805246584`. Snapshot rilis sebelumnya tetap
+HISTORICAL. Keputusan Andreas: jadwal hanya untuk barista/kitchen aktif,
+bukan pengelola/HR/cashier/peran lain. Kalender, generator, penempatan manual,
+libur terjadwal dan validasi publikasi memakai scope yang sama.
+
+Aturan shift, jeda istirahat dan batas kerja tersimpan dipertahankan. Review
+bisa kembali ke draf untuk generate ulang; hasil otomatis yang belum dikunci
+dapat diganti, penempatan manual/salinan tetap. Perubahan aturan membutuhkan
+generasi baru sebelum publish. Revisi seluruh periode terbit hanya untuk
+periode mendatang yang belum digunakan; snapshot lama dibatalkan, bukan dihapus.
+Periode berjalan/lampau atau terkait absensi/pengajuan tetap terkunci.
+Tidak ada perubahan otomatis pada roster nyata, schema35, payroll atau gateway.
+
+Validasi Linux kandidat final: static/TypeScript926 dan focused backend/browser
+40/40 PASS; Windows focused sebelumnya59/59 serta affected22/22 terpetakan,
+bukan full-regression PASS. Tes tambahan Windows terhenti karena kapasitas lokal;
+kasus yang sama lulus Linux tanpa pelemahan assertion. Guard kapasitas stage
+sempat menolak; hanya clone build HR sementara yang bersih/idle dilepas setelah
+source remote/lokal diverifikasi. Backup terenkripsi/off-host dan disposable
+restore tetap; rehearsal kandidat→rollback→kandidat serta aktivasi atomik PASS.
+Owner authenticated smoke/persistence restart, read-only roster desktop/mobile,
+HTTPS exact-source ready dan negative auth PASS. Restart resume awal menunggu
+readiness lalu bukti sesi yang sama berhasil; tidak ada transaksi/roster uji nyata.
+
+Batas: `NOT_BUSINESS_READY`; positive Staff UAT dan penggunaan roster nyata belum
+terverifikasi. Konflik konfigurasi jumlah kru vs minimum shift tetap harus
+Owner sesuaikan eksplisit, tidak diturunkan diam-diam. Kegagalan broad97 dan
+acceptance49 dari milestone sebelumnya tetap OPEN, tidak ditutup slice HR ini.
+Sumber: keputusan Andreas dan release exact di atas; DEC-240. Dampak/dokumen:
+SagaOPS PRODUCT/DOSSIER/CHANGELOG, root CHANGELOG, portfolio, master, GAPS,
+SYNC_STATUS dan DECISIONS. Next action: Owner kembali ke draf, sesuaikan pola
+Tim aktual/kebutuhan shift, generate, tinjau konflik, lalu publish.
+
+
 ## 2026-10-07 12:01 WIB — KPI putih dirilis; checkpoint 97 modul selesai dengan kegagalan
 
 - Klasifikasi: CONFIRMED; sumber Andreas, source/runners dan authenticated proof.

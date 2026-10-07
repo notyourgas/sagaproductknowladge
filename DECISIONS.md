@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-240 — Roster SagaPOS hanya untuk kru operasional
+
+- Tanggal: 7 Oktober 2026 WIB; pemberi keputusan Andreas; status `CONFIRMED`.
+- Keputusan: barista dan kitchen aktif dijadwalkan; pengelola, HR, cashier dan
+  peran lain tidak masuk generator, kalender atau penempatan/libur manual.
+- Alasan: akun administrasi tidak membutuhkan shift dan mengacaukan kapasitas.
+- Alternatif: menjadwalkan semua akun atau diam-diam menurunkan kebutuhan/rest,
+  ditolak. Profil/akses administratif tetap tersedia pada fitur tim.
+- Dampak: saved rules tetap eksplisit; review kembali draf untuk generate ulang;
+  revisi publish hanya seluruh periode mendatang yang belum digunakan, riwayat utuh.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master knowledge, GAPS,
+  portfolio dan SYNC_STATUS. Source93c4e85bfb51dd3e064f73d1876b931a8149e41c,
+  production activated; bukan authenticated Staff UAT atau BUSINESS_READY.
+
 ## DEC-239 — Akun QA Barista melalui UI Owner
 
 - Tanggal/status: 7 Oktober 2026; CONFIRMED, setup/UAT masih pending.
