@@ -1,5 +1,54 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-07 12:01 WIB — KPI putih dirilis; checkpoint 97 modul selesai dengan kegagalan
+
+`CONFIRMED`. Cut-off runtime: 7 Oktober 2026, 12:01 WIB. Source aktif
+`5d418b44883df179898bae7db0b92fe805246584`; rollback
+`2d2b3434501d14a82fe8fb54549ea6fb355f2bac`. Observasi sebelumnya tentang
+current 2d2/3ae adalah HISTORICAL. D01 Beranda dan D06 Ringkasan penjualan
+menggunakan teks, ikon, dan subteks putih pada KPI Penjualan menu dengan
+latar #c54118 yang terbaca. Perubahan runtime hanya dua file CSS;
+rilis Finance/Reports dan koreksi absensi sebelumnya dipertahankan.
+
+Delivery: `PRODUCTION_DEPLOYED`. Aktivasi UI: `PRODUCTION_ACTIVATED`;
+lifecycle/payment/schema tidak berubah. Business readiness: `NOT_BUSINESS_READY`.
+Paket immutable, checksum, fresh encrypted backup, disposable restore,
+rehearsal kandidat→rollback→kandidat, aktivasi dan monitor PASS.
+Salinan tiga bagian backup terenkripsi diverifikasi di PC; status remote
+managed offsite tetap UNVERIFIED. GitHub Actions tidak dijalankan.
+KPI Chromium/WebKit Linux 2/2 PASS setelah satu koreksi race fixture;
+assertion warna/kontras tetap, fixture QA812f79e tidak mengubah runtime5d.
+Login Owner produksi dan Tim & hak akses dengan sesi yang sama PASS.
+49 route pada desktop/mobile diperiksa; ini route/reflow smoke, bukan
+acceptance seluruh state. D49 terus polling sehingga network-idle bukan
+penanda kesiapan halaman; h1/DOM/reflow diperiksa terpisah.
+
+Checklist aktual: implementasi awal48/49 parsial + D19 boundary;
+49 baris reference/frame/gap tersedia, acceptance penuh0/49 OPEN.
+HR full-shell populated, D09/D11 recovery dan Staff/stock-closing lulus
+lokal dalam scope fixture; belum membuktikan seluruh HR atau login Staff
+positif produksi. Setup akun Barista dilakukan Owner lewat UI, disuspend
+sesudah UAT, tanpa jadwal/tarif/transaksi tes (DEC-239).
+D19 transfer antar-lokasi adalah batas produk satu sumber bahan bersama,
+bukan fitur transfer yang selesai. D40 normalized ESB/provider unavailable;
+UI/CSV native tidak membuktikan integrasi normalized source.
+
+Exact97 ordinary modules pada QA1a8241b/runtimec122 telah seluruhnya
+invoked sampai terminal:277 cases,271 PASS,3 FAIL,3 SKIP,0 cancelled.
+Manifest29e80e78 tidak diganti; concurrency/assertion/timeout dan guard tetap.
+Gagal: KDS Linux320px overflow, Orders WebKit1482 pageerror, dan packaging
+fixture ENOSPC. Skip native opt-in tidak dihitung lulus. Full regression
+bukan PASS; broadc122 tetap tidak dirilis. Global WebKit repeated Back/Stay
+masih timeout; D33 gate correction2/2 tetap BLOCKED tanpa budget reset.
+Hanya satu dari enam pasangan release lama yang diotorisasi telah disalin,
+diverifikasi dan retired; lima lainnya dipertahankan. Browser test relocated
+dengan671-entry manifest match. Kapasitas lokal kembali menjadi blocker.
+
+Sumber: source commit/release, runner native, authenticated read-only browser
+proof, terminal checkpoint97 dan keputusan Andreas. Perbaikan HR lanjutan
+pada branch lain belum diklaim aktif oleh milestone ini. Harga, positioning,
+provider dan SaaS lifecycle tidak berubah.
+
 ## 2026-10-07 — Koreksi absensi native aktif di produksi SagaPOS
 
 `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.

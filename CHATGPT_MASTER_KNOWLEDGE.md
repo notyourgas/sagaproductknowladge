@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-07 12:01 WIB — KPI putih dirilis; checkpoint 97 modul selesai dengan kegagalan
+
+`CONFIRMED`. D01/D06 KPI putih dengan kontras terbaca sudah aktif pada
+source5d418b44883df179898bae7db0b92fe805246584, rollback2d2b3434.
+KPI Linux Chromium/WebKit2/2, recovery/activation/monitor dan Owner login
+PASS; Tim & hak akses tidak meminta login kedua. Snapshot live sebelumnya
+HISTORICAL. Checklist49 baris tersedia tetapi acceptance penuh0/49 OPEN.
+Exact97 ordinary invoked seluruhnya:277 cases/271 PASS/3 FAIL/3 SKIP,
+bukan97 tes dan bukan full PASS. Broadc122 tidak live; D19 transfer boundary,
+D40 normalized ESB unavailable, WebKit repeated Back, D33, serta positive
+Staff UAT tetap terbuka. GitHub Actions tidak dijalankan; NOT_BUSINESS_READY.
+Lihat SagaOPS DOSSIER untuk scope dan provenance. Harga/positioning tidak berubah.
+
 ## 2026-10-07 — Koreksi absensi native aktif di produksi SagaPOS
 
 `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.

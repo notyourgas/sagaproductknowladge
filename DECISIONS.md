@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-239 — Akun QA Barista melalui UI Owner
+
+- Tanggal/status: 7 Oktober 2026; CONFIRMED, setup/UAT masih pending.
+- Pemberi keputusan: Andreas, menyetujui dan melakukan setup lewat UI Owner.
+- Keputusan: satu profil QA Barista dengan hak minimum; tanpa jadwal, tarif
+  atau transaksi tes; setup password lewat UI; suspend sesudah UAT.
+- Alasan: positive Staff UAT perlu akun nyata; akun menambah roster/payroll.
+- Alternatif ditolak: password di chat, role Owner, akun tak disetujui.
+- Dampak: izin membuat profil tidak membuktikan akun sudah dibuat atau UAT lulus.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, GAPS, MASTER, SYNC_STATUS.
+
 ## DEC-238 — Arsip log sistem VPS dan pembatasan retensi
 
 - Tanggal: 7 Oktober 2026 WIB.

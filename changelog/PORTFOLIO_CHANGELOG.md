@@ -1,5 +1,21 @@
 # Portfolio Changelog
 
+## 2026-10-07 12:01 WIB — KPI putih dirilis; checkpoint 97 modul selesai dengan kegagalan
+
+- Klasifikasi: CONFIRMED; sumber Andreas, source/runners dan authenticated proof.
+- Produk: SagaOPS/SagaPOS. Perubahan: D01/D06 KPI putih terbaca aktif pada
+  `5d418b44883df179898bae7db0b92fe805246584`, rollback2d2b3434.
+- Alasan: menutup permintaan KPI yang sebelumnya gagal kontras; runtime duaCSS.
+- Validasi: Linux2/2, recovery/backup/checksum/rehearsal/activation/monitor,
+  Owner login dan same-session Team PASS; 49 route/reflow bounded.
+- Exact97 ordinary selesai invoked:277 cases/271 PASS/3 FAIL/3 SKIP.
+  Acceptance penuh0/49 OPEN; c122 tidak live; NOT_BUSINESS_READY.
+- Blocker/next: diagnosis tiga kegagalan, global WebKit Back, D33, Staff UAT,
+  dan kapasitas lokal. Tidak menaikkan guard/timeout atau mereset budget.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, MASTER, GAPS, SYNC_STATUS,
+  portfolio/root changelog, DECISIONS. Source QA812f79e test-only.
+- Production berubah: ya, UI saja. GitHub Actions tidak dijalankan.
+
 ## 2026-10-07 — Koreksi absensi native aktif di produksi SagaPOS
 
 `CONFIRMED / LOCAL_VALIDATED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`.
