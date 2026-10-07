@@ -1,5 +1,33 @@
 # SagaOPS Dossier
 
+## 2026-10-07 13:30 WIB — Eksekusi tujuh batch: D12 source fix, acceptance tertahan
+
+`CONFIRMED / SOURCE_PUSHED / IMPLEMENTED_NOT_DEPLOYED`. Andreas menyetujui
+pelaksanaan tujuh batch49 screen; DEC-243. Source checkpoint
+f8d65a76f1d01bd633f8f5f73d3ecba6c4f1436c, runtime candidate
+f82431392409ec60318d50a102dd56b7c2e0c0ce. B1 IN_PROGRESS; B2–B7 OPEN.
+Source D12 menutup akar overflow native date mobile melalui CSS scoped;
+lima finite cases retained dipulihkan tanpa mengubah assertion asli.
+
+Linux category/availability/publication COMPLETE13/13 PASS, zero fail/skip/cancel.
+D12 correction2/2 berhenti pada memory floor setelah12 completed PASS; tidak ada
+terminal summary atau full-module PASS. Navigation hanya4 partial Chromium PASS;
+native zoom200% dan expanded-view belum berjalan. Sisa budget asli2430.14detik.
+Full acceptance tetap0/49 OPEN; Staff di luar49; NOT_BUSINESS_READY.
+
+Resource lokal/runner dan akses browser menahan acceptance berikutnya. D33 tetap
+BLOCKED correction2/2. D19 shared-storage boundary membutuhkan authority/integrasi
+lokasi nyata; layanan transfer existing tidak otomatis terhubung ke dashboard.
+D40 normalized ESB mensyaratkan SHADOW_V1, sedangkan konfigurasi produksi aktual
+write OFF/read LEGACY_V1. Aktivasi flag tanpa authoritative facts/backfill dan
+rekonsiliasi tidak dilakukan. Native financial CSV tetap kontrak berbeda.
+
+Production probe13:29WIB:93c4e85bfb51dd3e064f73d1876b931a8149e41c,
+rollback5d418b44883df179898bae7db0b92fe805246584, ready true dan zero restarts.
+KPI putih dan roster HR dipertahankan. Tidak ada aktivasi/data/provider baru atau
+GitHub Actions. Next: resource/access unblock dan gate-owner review, lanjut kontrak
+batch, lalu guarded release hanya setelah mandatory gates lulus. Harga/positioning
+serta janji komersial tidak berubah; historical receipts tidak diubah menjadi PASS.
 ## 2026-10-07 12:45 WIB — Checklist actual49 dan verifikasi lanjutan redesign SagaPOS
 
 `CONFIRMED`. Production tetap93c4e85bfb51dd3e064f73d1876b931a8149e41c,
