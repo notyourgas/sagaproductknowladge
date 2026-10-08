@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-09 01:02 WIB — SagaPOS native full-refund original component facts
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 and0/49, Staff separate.
+
+Material milestone partially accepted: native original-refund facts implemented and bounded19/19+5/5+static/TS validated; activation and full acceptance remain blocked. Eight product/portfolio/master/gaps/sync/changelog files updated once; knowledge main HEAD after staged validator/public-safety/link validation and push.
+
+Production freshly observed9 October01:02WIB: activef05aea02ec86924c2c1eda73f504047e86f6fabd/rollback93c4e85bfb51dd3e064f73d1876b931a8149e41c, ready/zero restarts; unchanged, no package/stage/activation/business writes. Owner Chrome remains expired/login.
+
+Next: native partial completion/effects and fact-bound report readers, remaining reference/state/engine/history/zoom, schema37 compatible operational encrypted recovery, required97 accounting and final candidate/actual package peak, then authenticated UI UAT. Guard and release blockers remain.
+
+Source checkpoint `377eeabfa5f145a5ef70b94c038c50bd3e3d42f8` pushed on `codex/sagapos-redesign-continuation-20261007`; tested application `dd831e425f8079d0fd4d771fc3b2e473734cb40f`. [Existing B2 closure plan](https://github.com/notyourgas/sagaops/blob/377eeabfa5f145a5ef70b94c038c50bd3e3d42f8/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Earlier entries remain dated history.
+
 ## 2026-10-09 00:35 WIB — SagaPOS Orders: late snapshot reload race fixed locally
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance0/8 and0/49 remains open, Staff separate.

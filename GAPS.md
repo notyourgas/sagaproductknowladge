@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-09 01:02 WIB — SagaPOS native full-refund original component facts
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 and0/49, Staff separate.
+
+CLOSED_BOUNDED: new native full-cash refund original component lineage, live/restart preview, atomicity/replay and cash/report consistency.19/19 selected PASS; does not close prospective partial completion, reader attribution/effects or target-native fee/tax permutations.
+
+Next: native partial completion/effects and fact-bound report readers, remaining reference/state/engine/history/zoom, schema37 compatible operational encrypted recovery, required97 accounting and final candidate/actual package peak, then authenticated UI UAT. Guard and release blockers remain.
+
+General1–8 test balance500.90 after explicit Orders-scope transfer and90.10seconds charged. One permitted next native operation consumed; original97 remains separate/unreconciled.
+
+Source checkpoint `377eeabfa5f145a5ef70b94c038c50bd3e3d42f8` pushed on `codex/sagapos-redesign-continuation-20261007`; tested application `dd831e425f8079d0fd4d771fc3b2e473734cb40f`. [Existing B2 closure plan](https://github.com/notyourgas/sagaops/blob/377eeabfa5f145a5ef70b94c038c50bd3e3d42f8/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Earlier entries remain dated history.
+
 ## 2026-10-09 00:35 WIB — SagaPOS Orders: late snapshot reload race fixed locally
 
 `CONFIRMED`: duplicate-GET Orders regression reproduced in isolated Linux and fixed via shared request epoch/draft guard; exact WebKit1482 original case1/1, local5/5 and static928/37+TypeScript PASS. Whole119.80seconds, owned cleanup proved. No production activation/business writes; full0/8 and0/49 remains.
