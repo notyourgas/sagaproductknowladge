@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-09 02:30 WIB — SagaPOS restored Owner UI qualified; official pair prepared
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / OFFICIAL_ARTIFACTS_PREPARED / NOT_STAGED / NOT_ACTIVATED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall; these counts do not measure implementation percentage. Source checkpoint `81985226276b24532ad0024777c8b1876639f55e` changes documentation only relative to frozen candidate `89670b483763a9d033ef35dfdb775dafa1e3c002`; operational compatibility source `51602bd9f50c79801585c6fabab03dab96cf7b40` remains unchanged.
+
+The actual restored Owner refund journey now COMPLETE1/1 PASS on native PostgreSQL18.6 and Chromium1440/390: original history/detail/preview UI, exact money/fingerprint, lost response plus temporary recovery503, exactly one refund write and read-only recovery, axe without serious/critical findings. Earlier failing UI receipts are retained. The original encrypted logical restore/tamper, candidate/compatibility roundtrip, stock preservation, synthetic Member outbox, financial reports and closing assertions remain PASS. This is bounded native Windows fixture evidence, not production UI UAT or external-provider settlement.
+
+Both exact sources were packaged through the unchanged official Linux production-artifact builder. Candidate169707520bytes and compatibility169656320bytes; independent off-host size/SHA and official archive content/provenance/type/mode verification PASS. Prepared archives do not qualify runtime service, migrations or production recovery. No GitHub Actions was dispatched for this milestone. Fresh production currentf05aea0/rollback93c4e85/schema35 remains healthy with zero restarts and no stage, activation, provider, backfill or business-data write. Effective Owner HTTP context was verified; the Chrome Owner session is expired, so authenticated browser UAT remains OPEN.
+
+The conservative simultaneous pair staging projection is85%, with at least501MB additional verified disposable space needed before backup/rehearsal growth. One-artifact84% does not admit the pair. A budget audit corrects the earlier assumption of an independent original97 balance: historical continuation was forwarded into the same seven-batch book. Remaining known balance186.28seconds consists of general106.73 plus UI-only79.55; there is no second2759.92 allowance or reset. Native admission300seconds remains enforced. A finite+1800second request is pending for up to three serial operations after actual prerequisites, without changing correction caps/assertions/floors or spending restricted UI funds elsewhere.
+
+Next: resolve measured resource peak using proven disposable transport/cache only; qualify the actual Linux schema37 service/credential/grant/media/encrypted recovery and operational rollback through the existing runner; finish monetary/reference/state/engine/history/zoom/required97 contracts and fresh Owner/Barista UI UAT; then guarded stage/backup/activate/monitor. Full acceptance remains OPEN. Public knowledge excludes credentials, customer data, tenant/device identifiers and private evidence paths. No pricing, positioning or cross-product decision changed.
+
 ## 2026-10-09 02:00 WIB — SagaPOS schema37 bounded operational recovery
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall; these counts do not measure implementation percentage.
