@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-09 02:00 WIB — SagaPOS schema37 bounded operational recovery
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall; these counts do not measure implementation percentage.
+
+Native PostgreSQL18.6 operational source roundtrip and age logical restore now PASS locally, with KDS stock preservation and synthetic Member ACK/outbox effects. Compatibility source supports original checkout/full refund and reads existing partial completions. Static928/37 plus TypeScript PASS. Actual restored Owner UI extension FAIL on live-vs-history fixture; correction prepared, not rerun. Full Linux/systemd/artifact/offsite recovery is still OPEN.
+
+Preserved general test balance363.36 ->276.60 after86.76seconds including failures/setup/cleanup/static check. Runner admission requires300seconds; a finite +120seconds request for at most two prepared UI corrections remains pending, with no assumed budget increase/reset. Original97 verified outer charges840.08seconds correct the former phase-only total by1.01seconds; known-charge balance2759.92 remains separate and not admitted because initial setup/transport/accounting and stale pins still need reconciliation. Historical277/271PASS/3FAIL/3SKIP is retained.
+
+Fresh production9 October01:54WIB remainsf05aea02ec86924c2c1eda73f504047e86f6fabd, rollback93c4e85bfb51dd3e064f73d1876b931a8149e41c, schema35, ready/active/zero restarts and disk84percent. Owner Chrome still has expired login. No package/stage/activation/restart, production business transaction, provider activation or backfill. Final official artifact/peak admission, monetary/reference/state/engine/history/zoom/journeys/required qualification, Linux operational recovery and authenticated Owner/Kasir/Barista UAT/signoff remain OPEN.
+
+Source checkpoint `236ec6e46efa51eac559ea837c4ef28f598dbf9d` pushed on `codex/sagapos-redesign-continuation-20261007`; native domain PASS at47d5add, failed UI extension09982da, prepared correction208d99c, operational compatibility `51602bd9f50c79801585c6fabab03dab96cf7b40` pushed separately. [Same B2 closure plan](https://github.com/notyourgas/sagaops/blob/236ec6e46efa51eac559ea837c4ef28f598dbf9d/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Changes close a bounded local recovery blocker; previous entries remain dated history.
+
 ## 2026-10-09 01:30 WIB — SagaPOS bounded native partial refund and report completion
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance0/8 operational screens and0/49 overall remains OPEN; this is not an implementation percentage. Staff remains separate.
