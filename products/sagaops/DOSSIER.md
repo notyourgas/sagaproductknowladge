@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-09 01:30 WIB — SagaPOS bounded native partial refund and report completion
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance0/8 operational screens and0/49 overall remains OPEN; this is not an implementation percentage. Staff remains separate.
+
+Native partial refund is now available in source for one COMPLETE/PAID native bill and one full CASH payment with SUCCEEDED/CASH_ACCEPTED evidence and an open shift. Original bill-line component quantities/amounts are retained; cumulative history and completion sequence are validated before the next debit. Ambiguous/legacy payments remain guarded. Existing audit and deterministic CASH movement commit atomically; no new schema, completion store, repricing or backfill.
+
+ESB report readers recompute original native refund allocations and require matching persisted CASH completion proof. Partial amounts reach report/CSV, cumulative refunds stay within original bill components, and negative rounding remains valid. Native completion avoids duplicate legacy full inference; a snapshot before the last refund retains the earlier partial result. Incomplete refund COGS remains unknown/null, without invented inventory reversal or external Member settlement.
+
+Validation: pure/recovery/report/endpoint18/18 PASS, selected19/19 PASS (13 native PostgreSQL18.6 scenarios plus6 pure/adapter), static928modules/37migrations plus TypeScript PASS. Published VARIANT/MODIFIER quantity3 and60000 total -> partial20000 -> remaining40000; concurrent/replayed/restarted commands commit once, stale preview and corrupt evidence are denied, original bill lines stay unchanged, report/CSV net40000 then0, historical cutoff retains40000, cash160000 ->140000 ->100000 and closing variance0. The initial native run18/19 failed because its fixture tried to UPDATE an append-only money fact; the guard was preserved and correction1 asserts SQL denial plus mismatched read evidence. Earlier failed receipt remains recorded.
+
+This bounds single-CASH zero-tax/service native completion; nonzero fee/tax cumulative math is pure proof. Actual browser refund journey, full monetary permutations and HPP/Member effects, full reference/state/engine/history/zoom, compatible operational schema37 encrypted recovery, required97 accounting, final package/peak and authenticated UI UAT remain OPEN.
+
+Current tranche137.54seconds charged including failure/setup/cleanup/check, general balance500.90 ->363.36, no added funds/reset/pending reservations. Existing explicit future-correction authorization supported one concrete fixture correction. Original97 nominal2760.93 remains separately unreconciled, not spendable automatically. Owned native cluster and supervisor stopped.
+
+Fresh production observation9 October01:27WIB: active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, ready/active/zero restarts, disk84percent. No package/stage/activation, production business transaction, provider/backfill or restart. Owner Chrome still shows expired login despite unlocked vault; HTTP authentication does not qualify UI UAT. Final official artifact/peak admission remains required.
+
+Next: preserve bounded native proof on matching inputs, complete monetary/effect/browser and reference residuals, prepare compatible schema37 operational rollback and encrypted restore, reconcile required97 outer accounting/pins/allowances, freeze final candidate and qualify actual artifact/peak, then guarded release and authenticated Owner/Kasir/Barista signoff. No unlimited run or scope reset.
+
+Source checkpoint `da61edebf1a6458fdb7a3563262b825145b9fb32` pushed on `codex/sagapos-redesign-continuation-20261007`; tested source `ea9eb008a5585e2ee78cf99c916ece4b00427167`, application changes `c8f30b5ca844b7439eef8b206f890fa448666c82`. [Existing B2 closure plan](https://github.com/notyourgas/sagaops/blob/da61edebf1a6458fdb7a3563262b825145b9fb32/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). This latest bounded result supersedes the previous unimplemented partial-reader gap; earlier entries remain dated history.
+
 ## 2026-10-09 01:02 WIB — SagaPOS native full-refund original component facts
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 and0/49, Staff separate.
