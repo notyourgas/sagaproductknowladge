@@ -1,5 +1,21 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-08 — SagaPOS V8 continuation: authored choice to paid cashier and report qualified locally
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+
+Owner's server-published group/option identities now reach immutable native price-book variants, actual durable paid cashier checkout, separate VARIANT/MODIFIER bill lines and Owner report/detail/CSV. Re-publication of changed labels/prices preserves the same scoped variant identity and old transaction facts. Client prices/labels/kinds and authored metadata are not authoritative; foreign/duplicate/unavailable selections, stale menu drafts, invalid channel and disabled local channels fail closed. Bounded multi-group combinations keep the existing200-entry limit. The published choice contract uses the existing policy snapshot; no new migration or parallel pricing store.
+
+At application source `2ef431fac403da07d61223497192233a5534b453`, final12/12 PASS contains seven native PostgreSQL18.6 database cases and five pure quote/adapter cases. New integration proves actual paid checkout, replay with unchanged order/bill/payment counts, classified report rankings, fingerprint-bound detail/CSV, and rejection of later menu-price drift without rewriting the stored snapshot. Owned disposable databases removed and cluster stopped. Affected Owner form/history4/4 PASS contains one Chromium/PGlite HTTP UI case and three pure history cases; full menu publication, cashier denial and accessibility preserved. Static928modules/37migrations PASS. These results do not replace capped PRICE-01..10 or full browser/native/multi-surface acceptance.
+
+Existing native whole-operation admission now reserves300seconds including startup/supervision/cleanup and charges failure overhead. Unknown process/cluster cleanup blocks new admission; seven final controlled lifecycle fault checks PASS, separate from production/engine-crash certification. Authorized cleanup removed exactly eight verified reproducible local source transport bundles, about1GB, retaining complete local Git source, verified GitHub commits and evidence. Local browser admission recovered; VPS staging capacity is still unresolved. Seven-batch remaining571.81seconds; original97 accounting/allowances and capped gates remain separate.
+
+No new production package/stage/activation, business transaction, provider activation or historical backfill. No fresh authenticated VPS observation was obtained during this continuation because the local vault bridge was unavailable. Last remote observation remains8 October06:16UTC: active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, healthy/zero restarts, conservative minimum staging85percent. It is a dated observation, not a fresh promotion admission. QA Staff reload confirms login screen; authenticated operational UAT remains pending.
+
+Full acceptance0/49, Staff separate. Remaining: full editor UI and actual Kiosk/Table composition, applicable member/promo/split/lost-response journeys, prospective legacy-bridge rollout and operational schema37 rollback/encrypted restore, seven-batch whole references/states, final required97/engine/history/native zoom gates, capacity, official release and Owner/Staff UAT/signoff. Specific PRICE-01..10 extra is pending; generic strategy execution does not waive its cap. Shared-stock and prospective-only founder decisions remain unchanged. Independent UI candidate `04ea85caef65c4d32ae3b0862b27757e648bc9e0` remains separate and unactivated.
+
+Source and updated ledger/checkpoint committed/pushed at `67cd2baaaf8da58056a926621742107f3eddb1c9` on `codex/sagapos-redesign-continuation-20261007`; application inputs unchanged from the qualified source above. [Immutable execution checkpoint](https://github.com/notyourgas/sagaops/blob/67cd2baaaf8da58056a926621742107f3eddb1c9/docs/sagapos-v2/SEVEN_BATCH_CHECKPOINT_20261007.md). This update records execution and residual blockers; earlier dated entries below remain historical.
+
 ## 2026-10-08 — SagaPOS V8: variant catalog core and schema37 qualified locally
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
