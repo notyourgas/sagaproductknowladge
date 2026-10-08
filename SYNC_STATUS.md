@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall, Staff separate.
+
+Status sync: partially accepted. Closed bounded native pricing10/10 and static gate; approved resource recovery retained and old stage profile84percent. Source checkpoint54ca37c pushed; public knowledge main HEAD after this update. No new production package/stage/activation or business writes. Protected runtime last observed8 October16:56:26UTC activef05/rollback93 healthy/zero restarts; this dated snapshot is not a future promotion admission.
+
+OPEN: prospective refund completion/effects/readers, operational encrypted restore/compatible rollback, full reference/state/engine/final97, final artifact/peak and authenticated UI UAT. Orders Linux WebKit exact diagnostic stopped at RAM floor before result; scoped balance860.22seconds, next attempt requires concrete unblock. Earlier local evidence is reused only for matching inputs. No new positioning/pricing/trial/stock-authority or historical-backfill decision.
+
+Affected: product/dossier/product changelog/master/gaps/sync/portfolio/root changelog. Validator/link/public-safety/diff check required before commit and on staged state; terminal results and knowledge SHA reported after push. No current source conflict identified.
+
+Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` pada branch `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
+
 ## 2026-10-08 — SagaPOS B2: cash journey recovery and shift clock qualified locally
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

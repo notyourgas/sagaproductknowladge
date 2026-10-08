@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall, Staff separate.
+
+PRICE-01..10 now COMPLETE10/10 PASS on owned native PostgreSQL18.6. Coverage includes tax/service/discount order, inclusive treatment, Rupiah rounding/largest remainder, promo bounds/stacking/expiry, overnight business date, modifier constraints/untrusted prices, stored mixed selection snapshots, concurrent replay/conflict and detail/report/CSV. The first9/10 run exposed a report fixture reading at the excluded exact end instant; the correction reads after payment, normalizes the persisted date and strengthens the row assertion. No application money semantics or migration changed. Static928modules/37migrations and TypeScript PASS. Earlier B2 actual checkout acknowledgement recovery30/30 remains bounded unchanged-input evidence; PRICE10 itself does not inject lost acknowledgement.
+
+Verified recovery cleanup reclaimed about1GB; existing staging profile projection is now84percent below85guard. Final candidate artifact/peak admission is still open. Effective Owner access verified through a temporary HTTP session, then logged out; Chrome UI remains expired. Last protected production observation8 October16:56:26UTC: active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, healthy/zero restarts. No deployment, business transaction, provider activation, backfill or restart.
+
+Remaining: prospective partial-refund completion/effects and report readers, operational compatible rollback/encrypted restore, state/reference/engine/final97 gates and authenticated UI UAT. Exact Orders Linux WebKit1482 diagnostic stopped at the original RAM floor before a terminal result; this is a resource stop, not a PASS or proven app cause.
+
+Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` pada branch `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
+
 ## 2026-10-08 — SagaPOS B2: cash journey recovery and shift clock qualified locally
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

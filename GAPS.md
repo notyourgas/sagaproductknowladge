@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
+
+`CONFIRMED`: PRICE-01..10 native10/10 and static928/37+TypeScript now pass. The previous pricing blocker is closed for those ten existing cases only. Effective Owner HTTP access is verified, and approved recovery cleanup closes the measured old profile capacity guard at84percent. No production activation or business writes; activef05/rollback93 unchanged8 October16:56:26UTC.
+
+`CONFIRMED / OPEN`: final artifact/peak capacity, authenticated Owner/Staff UI UAT, prospective partial-refund completion/allocation/effects plus report readers, operational schema37-or-forward rollback/encrypted restore, required97 accounting and complete per-screen state/reference/engine/zoom/navigation remain unresolved. Exact Orders Linux WebKit1482 diagnostic interrupted at original RAM floor,10.89seconds whole, owned group stopped; no terminal acceptance or app root cause. Scoped budget860.22seconds and one further Orders attempt only after concrete unblock; no budget reset/transfer from historical97.
+
+Full acceptance0/8 and0/49, NOT_BUSINESS_READY. Next actions and affected callers/readers/recovery contracts are concrete in the same B2 plan; no new strategic cycle.
+
+Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` pada branch `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
+
 ## 2026-10-08 — SagaPOS B2: cash journey recovery and shift clock qualified locally
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall, Staff separate.
+
+Native pricing qualification at79df973: final10/10,0fail/skip/cancel, serial1, whole23.20seconds with300-second whole reserve, original assertions/floors and verified owned cluster/supervisor cleanup. PRICE10 half-open-period fixture correction retains all money/replay/report assertions and adds exactly-one-row verification. Static928modules/37migrations and TypeScript PASS41.55seconds. Application unchanged fromc26fc41; prior30/30 B2 composed runtime/actual Chromium/native checkout-KDS-report proof may be reused only for matching inputs.
+
+Three previously authorized release/artifact recovery pairs were retired after verified off-host canonical copies, expanded file/hash/link/reference checks, preserved metadata deltas and protected identities, both exclusive release locks and fresh effective Owner. Reclaim1,010,122,752bytes; recovery retained. Existing574,787,584-byte stage reserve projects84percent below85guard; actual final artifact/peak must be remeasured before promotion.8 October16:56:26UTC activef05/rollback93 unchanged, ready/zero restarts. No production business writes or new package/stage/activation.
+
+Effective Owner HTTP access is available; ephemeral session ended. Owner Chrome still displays expired session. Actual Owner/Kasir/Barista UI UAT and final signoff remain open. Scoped request/pageerror/timing instrumentation atd765f6 preserves the original empty-error assertion. Exact Orders live Linux WebKit1482 diagnostic RESOURCE_STOP memory floor before terminal acceptance/coverage, owned test process group stop verified. Whole10.89seconds including preparation/transport/cleanup charged. Missing interrupted coverage caused a secondary copy error; existing runner now copies case coverage only after completion. Whole-accounting/reservation and bounded transport/cleanup checks passed for this bounded stop path; successful browser and generic native lifecycle on the edited runner are not qualified by it.
+
+Seven-batch400.21 ->271.11 after129.10seconds; founder-authorized scoped600-second addition gives871.11, then diagnostic10.89 leaves860.22seconds. No reservations/pending admissions. One further Orders attempt remains only after a concrete root/resource fix, maximum300whole seconds. Extra time is scoped, not free budget for refund/recovery/full97; historical original97 accounting/pins remain unreconciled.
+
+Refund closure must reach repository/durable callers, immutable original MAIN/VARIANT/MODIFIER allocations, completion facts, single cash movement and applicable inventory/member effects, hydrate/detail/report/CSV/closing. Current exception schema supports REQUESTED/RECONCILIATION_PENDING and funds-returned false; current report rejects partially-refunded facts. A forward completion migration and compatible readers/effects require native concurrency/replay/restart/ACK-loss qualification before UI support can be enabled. Existing34/35 recovery is health-only; an operational reader/writer rollback for schema37 or prospective refund schema and encrypted disposable restore remain required. Do not enable a flag or expand a schema whitelist as a substitute.
+
+Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` pada branch `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
+
 ## 2026-10-08 — SagaPOS B2: cash journey recovery and shift clock qualified locally
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall, Staff separate.
+
+- Native PRICE-01..10 final10/10 PASS and static928/37+TypeScript PASS; repaired only a half-open report fixture, with stronger row assertion. Application unchangedc26fc41.
+- Verified off-host recovery cleanup reclaimed about1GB; old stage profile84percent, final artifact/peak admission still open. Effective Owner HTTP verified; UI session expired. Activef05/rollback93 unchanged at8 October16:56:26UTC.
+- Exact Linux WebKit Orders diagnostic RESOURCE_STOP original RAM floor; owned group stopped, whole10.89seconds charged, remaining scoped budget860.22. No application gate closure from this interrupted run.
+- No package/stage/activation/business writes. Next: resource-qualified Orders diagnosis, prospective refund completion/report/effects, operational recovery, final states/required97 and authenticated UAT.
+
+Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` pada branch `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
+
 ## 2026-10-08 — SagaPOS B2: cash journey recovery and shift clock qualified locally
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
