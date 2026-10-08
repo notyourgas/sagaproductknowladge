@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-10-08 — SagaPOS V8: variant catalog core and schema37 qualified locally
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+
+Explicit product/variant identity now survives draft, publication hash, server quote and variant-scoped free-price authorization. The catalog rejects invalid, inactive and foreign variants, stale hashes and cross-variant overrides while preserving base product prices. Migration37 retains the historical35-prefix and uses native NULLS NOT DISTINCT uniqueness for both identities, including nil UUID, with forced RLS. This is core API behavior for existing native variant records; the Owner legacy group editor and actual cart still lack the complete relational variant mapping.
+
+At implementation `a37653ab487794795473e39bba6a15cbf619c8ee`, final combined catalog/schema suite9/9 PASS contains seven native PostgreSQL18.6 database cases and two pure quote/HTTP guard cases. Current-manifest caller regressions47/47 PASS use PGlite/pure fixtures; static checks PASS with37 migrations. Initial failures and correction history are retained. Atomic35-to37 upgrade preserves published legacy rows and rolls back a failed transaction. Old35 recovery rejects37; encrypted restore, final candidate boot and compatible operational rollback remain open. Owned disposable databases were removed and the local cluster stopped.
+
+Production read8 October06:16UTC remains healthy on `f05aea02ec86924c2c1eda73f504047e86f6fabd`, with zero restarts. No new package, stage, activation or business writes. Fresh Owner same-session read is verified; Staff session expired and awaits login, so authenticated operational UAT is open. Stage-profile conservative lower bound still reaches85percent; historical artifacts have not been declared disposable. Seven-batch remaining670.84s; original97 remains separate, and no capped pricing/WebKit/history/zoom/Sales permission or budget is reset.
+
+Full acceptance0/49, Staff separate. Open work: actual variant authoring/publication/cart chain, prospective legacy-bridge rollout and recovery, required final/native/browser gates and five journeys, whole references, capacity, official release and authenticated UAT/signoff. The extra PRICE01–10 request is still pending; this catalog suite is not a replacement for that capped gate.
+
+Source/checkpoint/ledger committed and pushed on `codex/sagapos-redesign-continuation-20261007` at `5e2175b08a82434da46882256ff28e5bf3ab30df`. [V8 execution checkpoint](https://github.com/notyourgas/sagaops/blob/5e2175b08a82434da46882256ff28e5bf3ab30df/docs/sagapos-v2/SEVEN_BATCH_CHECKPOINT_20261007.md); independent UI candidate remains `04ea85caef65c4d32ae3b0862b27757e648bc9e0` and excludes the financial draft. Founder shared-stock/prospective-only decisions are unchanged. Earlier dated entries are historical.
+
 ## 2026-10-08 — SagaPOS V7 execution: bounded native/browser gates qualified, release blocked
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. D49 authoritative readonly readiness and Feather icons completed desktop/mobile Chromium Windows2/2 and Linux2/2 PASS. Linux [run37731376486](https://github.com/notyourgas/sagaops/actions/runs/37731376486) is exact-source547727a; full101-second job including container/setup/evidence/cleanup charged. D48 existing native PostgreSQL18.6 store/service/session checks PASS for CAS/concurrency, persistence, revocation, RLS, append-only audit and Owner-session upgrade. D19 shared-stock receipt/waste, wrong-location/outlet and transfer boundary, replay/runtime reload completed native1/1 PASS on the independent UI candidate `04ea85caef65c4d32ae3b0862b27757e648bc9e0`. These close bounded subcontracts; whole-reference/global/candidate/UAT acceptance remains open. Runtime reload is not an engine crash/recovery proof; shared pilot still has no physical inter-location transfer.
