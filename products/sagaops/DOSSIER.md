@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-09 00:35 WIB — SagaPOS Orders: late snapshot reload race fixed locally
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance0/8 and0/49 remains open, Staff separate.
+
+A stale in-flight dashboard snapshot could refetch Orders after a filter had already changed. The shared refresh now retains the Orders request revision and skips that late reload on a newer query, pending/draft/search edits or session change. Stable-context polling remains active. Local Orders5/5 and static928modules/37migrations plus TypeScript PASS. The exact original Linux WebKit26.5 live1482 case now COMPLETE1/1 PASS,0fail/skip/cancel, including single filter GET, Back/Forward/detail/focus, CSV recovery/context and401/403/503. This is embedded HTTP/synthetic UI evidence, not native PostgreSQL or production UAT.
+
+Low-RAM VPS diagnosis was moved to isolated Ubuntu24.04 using the existing workflow, with only WebKit installed and the unnecessary PG service disabled for this exact embedded case. Serial1, admission2.5GiB RAM, original1GiB RAM/disk floors,300-second whole ceiling and cleanup reserve retained. First CI37815778368 reproduced2GET!=1GET, with no pageerror; source fix preserves the original assertions. Corrected CI37817076500 passes all14steps,18 captures and21 hashed evidence files,29.52seconds test, min RAM6,555,250,688bytes, owned process group stopped. Filtered populated capture reviewed; whole approved-reference review remains open.
+
+Real-function local regression retains a positive unchanged-context case and proves no late Orders read on changed request/pending/draft/dirty/session. The earlier baseline unit accidentally executed before the edit is charged but is not proof of the fix. Native money/pricing inputs were not changed.
+
+Whole CI operations106.35 and119.80seconds include dispatch/queue/setup/test/post cleanup/evidence transport, both below300. Unit baseline0.52, fixed unit0.50, static42.05 also charged; total269.22,860.22 ->591.00seconds. No reservations/pending admissions. Remaining scope: original unrestricted271.11 and additional Orders319.89. Previously explicit future-correction permission used for one concrete bounded correction; stop/fail receipts and historical caps retained, no infinite retries/reset.
+
+PROPOSAL refinement: current repository already locks order/payment, replays immutable refund audit and writes deterministic CASH movement plus completion audit atomically. Reuse this completion path if native per-bill-line amounts/quantity/provenance and reader parity can be verified. Checkout adapter already links MAIN/VARIANT/MODIFIER to original orderItemId. A parallel money store or new completion migration is not presumed necessary; source/schema choice requires native proof. Partial-refund guard remains until allocations, quantity bounds, replay/concurrency/restart, full remaining, closing and applicable HPP/Member effects/report/CSV qualify. No refund implementation was enabled in this tranche.
+
+Fresh runtime observation8 October17:35:24UTC: active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, ready/zero restarts. No package/stage/activation, production business transaction, provider/backfill or restart. The financial continuation remains separate from UI04ea85 and is not a release artifact.
+
+Still OPEN: original access-control intermittent qualification, mobile/history/full-reference/zoom/global, prospective partial-refund allocations/completion/readers/effects, operational compatible rollback/encrypted restore, required97 accounting, final artifact/peak admission and authenticated UI UAT. One passed case closes the tested duplicate-GET regression, not full D03 or all screens. Native pricing10/10 inputs unchanged; prior B2 Chromium30/30 is not fresh UI qualification after this shared operator change.
+
+Source checkpoint `cc98fa7458830d7c10685f196fca82b72ae1571b` committed/pushed on `codex/sagapos-redesign-continuation-20261007`; tested application `d28af7b91c4c97620ade1917867a9e6a48f051a9`. [Existing B2 execution and closure plan](https://github.com/notyourgas/sagaops/blob/cc98fa7458830d7c10685f196fca82b72ae1571b/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Earlier dated entries remain historical.
+
 ## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall, Staff separate.

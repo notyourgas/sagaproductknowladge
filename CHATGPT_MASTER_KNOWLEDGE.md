@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-09 00:35 WIB — SagaPOS Orders: late snapshot reload race fixed locally
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance0/8 and0/49 remains open, Staff separate.
+
+A stale in-flight dashboard snapshot could refetch Orders after a filter had already changed. The shared refresh now retains the Orders request revision and skips that late reload on a newer query, pending/draft/search edits or session change. Stable-context polling remains active. Local Orders5/5 and static928modules/37migrations plus TypeScript PASS. The exact original Linux WebKit26.5 live1482 case now COMPLETE1/1 PASS,0fail/skip/cancel, including single filter GET, Back/Forward/detail/focus, CSV recovery/context and401/403/503. This is embedded HTTP/synthetic UI evidence, not native PostgreSQL or production UAT.
+
+Fresh runtime observation8 October17:35:24UTC: active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, ready/zero restarts. No package/stage/activation, production business transaction, provider/backfill or restart. The financial continuation remains separate from UI04ea85 and is not a release artifact.
+
+Original unrestricted budget271.11 and remaining Orders-scoped319.89 together591.00seconds, no reservation/pending admission. Refund plan now considers existing atomic audit/CASH completion and original bill-line lineage before creating another money store; this is a proposal, partial refund remains unavailable. Original intermittent, full states/reference/engine, financial recovery/final97, final artifact/peak and authenticated UAT remain blockers.
+
+Source checkpoint `cc98fa7458830d7c10685f196fca82b72ae1571b` committed/pushed on `codex/sagapos-redesign-continuation-20261007`; tested application `d28af7b91c4c97620ade1917867a9e6a48f051a9`. [Existing B2 execution and closure plan](https://github.com/notyourgas/sagaops/blob/cc98fa7458830d7c10685f196fca82b72ae1571b/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Earlier dated entries remain historical.
+
 ## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall, Staff separate.

@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-09 00:35 WIB — SagaPOS Orders: late snapshot reload race fixed locally
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance0/8 and0/49 remains open, Staff separate.
+
+Status sync: partially accepted. Material milestone: shared Orders late-snapshot race fixed and exact Linux original case qualified; local5/5 and static928/37+TypeScript PASS. Source/proof bound to d28af7b and committed checkpointcc98fa7. CI whole budgets/cleanup verified; balance591.00, no reservations/pending admissions. Refund architecture refinement is PROPOSAL, not implementation or activation.
+
+Production last observed8 October17:35:24UTC activef05/rollback93 healthy/zero restarts; no new package/stage/activation/business writes. Full acceptance and remaining state/reference/intermittent/refund/recovery/final97/actual capacity/UI UAT still open. Updated product/dossier/product changelog/master/gaps/sync/portfolio/root changelog; no new positioning/pricing/trial/stock-authority/historical-backfill decision. Validator, relative links, public safety and staged diff required before knowledge main commit/push; final SHA reported after push.
+
+Source checkpoint `cc98fa7458830d7c10685f196fca82b72ae1571b` committed/pushed on `codex/sagapos-redesign-continuation-20261007`; tested application `d28af7b91c4c97620ade1917867a9e6a48f051a9`. [Existing B2 execution and closure plan](https://github.com/notyourgas/sagaops/blob/cc98fa7458830d7c10685f196fca82b72ae1571b/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Earlier dated entries remain historical.
+
 ## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall, Staff separate.

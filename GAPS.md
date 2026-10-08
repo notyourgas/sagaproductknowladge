@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-09 00:35 WIB — SagaPOS Orders: late snapshot reload race fixed locally
+
+`CONFIRMED`: duplicate-GET Orders regression reproduced in isolated Linux and fixed via shared request epoch/draft guard; exact WebKit1482 original case1/1, local5/5 and static928/37+TypeScript PASS. Whole119.80seconds, owned cleanup proved. No production activation/business writes; full0/8 and0/49 remains.
+
+`OPEN`: historical access-control intermittent root/qualification, mobile/history/whole references/zoom/global, prospective refund allocation/completion/effects/report readers, compatible operational encrypted restore, original97 accounting, final artifact/peak and authenticated UI UAT. Shared operator changed, so native pricing inputs remain reusable but prior Chromium UI proof is not a fresh candidate qualification. Original unrestricted271.11 vs Orders319.89, cumulative591.00; no automatic scope transfer/reset.
+
+`PROPOSAL`: reuse existing atomic refund audit/CASH movement and original native bill-line IDs for prospective refund completion; only add forward schema if existing fact contract cannot carry immutable lineage correctly. Guard remains; no speculative refund writes/backfill.
+
+Source checkpoint `cc98fa7458830d7c10685f196fca82b72ae1571b` committed/pushed on `codex/sagapos-redesign-continuation-20261007`; tested application `d28af7b91c4c97620ade1917867a9e6a48f051a9`. [Existing B2 execution and closure plan](https://github.com/notyourgas/sagaops/blob/cc98fa7458830d7c10685f196fca82b72ae1571b/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Earlier dated entries remain historical.
+
 ## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
 
 `CONFIRMED`: PRICE-01..10 native10/10 and static928/37+TypeScript now pass. The previous pricing blocker is closed for those ten existing cases only. Effective Owner HTTP access is verified, and approved recovery cleanup closes the measured old profile capacity guard at84percent. No production activation or business writes; activef05/rollback93 unchanged8 October16:56:26UTC.

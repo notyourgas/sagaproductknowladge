@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-09 00:35 WIB — SagaPOS Orders: late snapshot reload race fixed locally
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance0/8 and0/49 remains open, Staff separate.
+
+SagaPOS Orders now prevents a stale snapshot from refetching a newer filter. Existing Linux workflow reproduces the duplicate-GET defect, then the corrected source passes the exact original WebKit1482 case; local5/5 and static928/37+TypeScript pass. Stable polling preserved. Evidence is scoped synthetic/embedded HTTP, with whole-budget/owned cleanup verification, not full acceptance or native PG/UAT.
+
+No production activation/business writes; activef05/rollback93 healthy/zero restarts8 October17:35:24UTC. Prospective refund original allocations/readers/effects and operational recovery/final states/required97/capacity/UI UAT remain open. Concrete plan refined to inspect existing atomic refund completion before adding another money store.
+
+Source checkpoint `cc98fa7458830d7c10685f196fca82b72ae1571b` committed/pushed on `codex/sagapos-redesign-continuation-20261007`; tested application `d28af7b91c4c97620ade1917867a9e6a48f051a9`. [Existing B2 execution and closure plan](https://github.com/notyourgas/sagaops/blob/cc98fa7458830d7c10685f196fca82b72ae1571b/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Earlier dated entries remain historical.
+
 ## 2026-10-09 WIB — SagaPOS B2: native pricing gate closed; release remains blocked
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Full acceptance remains0/8 operational screens and0/49 overall, Staff separate.
