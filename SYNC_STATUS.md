@@ -1,5 +1,21 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-08 — SagaPOS B2: cash journey recovery and shift clock qualified locally
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+
+POS and Operator UAT now use the injected runtime clock consistently for cash-shift opening, transactions and closing, preserving the cash movement window guard. Owner order detail no longer offers unsupported partial refunds on the new financial path and shows a clear unavailable reason. Legacy partial-refund behavior remains tested; new-path partial refunds are still an implementation gap.
+
+At application/test source `c26fc41e068ec8c7eef6dd46ec6151fdef87aeb4`, final selected30/30 PASS comprises one actual Chromium/native PostgreSQL18.6 HTTP UI case, seven native database/catalog cases and22 pure runtime/UAT/refund cases. Published menu -> cashier cash payment -> lost acknowledgement after commit -> status lookup/receipt reload creates only one checkout/order/paid bill. The same order reaches populated queue, all kitchen fulfillment states, completed history/detail and overview/sales/menu/payment views. Composed native runtime additionally verifies stored variants/modifiers, report/CSV, exact cash closing and runtime rehydration without duplicate facts. This is bounded local evidence, not engine crash recovery or production UAT.
+
+Eighteen synthetic screenshots include populated desktop/mobile queue, receipt recovery, kitchen queue and dashboard/history views. Selected dashboard overflow/axe checks and selected visual inspection passed; full approved-reference, browser, zoom, focus and scroll state contracts remain open. Static928modules/37migrations and TypeScript PASS. No new migration was introduced by this B2 tranche. Native owned database cleanup/cluster stop verified; setup, failures and cleanup charged. Seven-batch remaining400.21seconds from571.81seconds; original97 accounting and existing gate allowances were not reset.
+
+No package, staging, activation, production transaction, provider activation or historical backfill. Fresh authenticated remote observation was unavailable. Last remote observation remains8 October06:16:54UTC, active `f05aea02ec86924c2c1eda73f504047e86f6fabd`, rollback `93c4e85bfb51dd3e064f73d1876b931a8149e41c`, healthy/zero restarts; minimum staging projection85percent was unresolved. This dated snapshot is not fresh release admission. Independent UI candidate `04ea85caef65c4d32ae3b0862b27757e648bc9e0` remains separate and unactivated.
+
+Full acceptance0/8 for the selected operational scope and0/49 overall; Staff separate. Remaining: prospective new-path refund allocations/effects/replay, pricing/promo/member/approval/payment permutations, per-screen state/reference and late-export/navigation evidence, capped PRICE/WebKit/history/zoom/Sales gates, original required97 accounting, schema37 compatible operational rollback/encrypted restore, VPS capacity, official release and authenticated Owner/Staff UAT/signoff. Bounded checkout acknowledgement recovery is now proven locally; this does not close broader provider/settlement recovery. Founder shared-stock and prospective-only decisions remain unchanged.
+
+Source and scoped ledger/checkpoint committed/pushed at `f6b8546de7e8e56ae3fdec806a529ba25fe32a2d` on `codex/sagapos-redesign-continuation-20261007`, application/test inputs unchanged from the qualification above. [Execution and residual closure strategy](https://github.com/notyourgas/sagaops/blob/f6b8546de7e8e56ae3fdec806a529ba25fe32a2d/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Earlier dated entries remain historical.
+
 ## 2026-10-08 — SagaPOS V8 continuation: authored choice to paid cashier and report qualified locally
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
