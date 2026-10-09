@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-09 - SagaPOS selected choice and Kiosk/Table acceptance closure
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / ACTIVE_RUNTIME_UNCHANGED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Verification successor `732d9639ac5bab27e3657d126ed3e6192b3eeb19`; documentation `d209539d4f3c2e41426a2bf025f1d759d580ed57`. Active production application remains `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37, ready with zero automatic restarts. [Immutable selected evidence and remaining closure dependencies](https://github.com/notyourgas/sagaops/blob/d209539d4f3c2e41426a2bf025f1d759d580ed57/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+Selected V2 group required/minimum bounds and removed-source conflict/refresh/rejection now have isolated browser proof; invalid or removed choices do not write. Actual V2 Owner forms, reviewed fixture publication and Kiosk/Table consumers preserve published identity, prices, repeated defaults and cart reload. Exactly25000 total includes variant2000 and two extra-shot additions10000.
+
+Two distinct scenarios qualified: D11 PASS retained on unchanged inputs; affected D14 latest1/1 PASS. Three selected captures reviewed, no serious/critical axe findings in consumers, no orders/production writes. This adds acceptance evidence only; no new application release or pricing/role/provider change. Remaining six whole contracts OPEN: original reference pixels, wider source/role/consumer permutations and operator UAT. Full97 deferred and managed external offsite unverified.
+
 ## 2026-10-09 - SagaPOS catalog09-14 deployed; full acceptance remains open
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37; operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Documentation successor `fbe81811e89c03e0f42b3c73e7c4a30583ac1f87`; [immutable release evidence and remaining closure strategy](https://github.com/notyourgas/sagaops/blob/fbe81811e89c03e0f42b3c73e7c4a30583ac1f87/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).

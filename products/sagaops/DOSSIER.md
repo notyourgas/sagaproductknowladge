@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-10-09 - SagaPOS selected choice and Kiosk/Table acceptance closure
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / ACTIVE_RUNTIME_UNCHANGED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Verification successor `732d9639ac5bab27e3657d126ed3e6192b3eeb19`; documentation `d209539d4f3c2e41426a2bf025f1d759d580ed57`. Active production application remains `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37, ready with zero automatic restarts. [Immutable selected evidence and remaining closure dependencies](https://github.com/notyourgas/sagaops/blob/d209539d4f3c2e41426a2bf025f1d759d580ed57/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+D11 case proves required minimum0 and minimum>maximum reject without version changes, with long draft label retained at desktop/mobile. Synthetic second-writer removal yields409; authoritative refresh followed by404 cannot recreate the removed option. PASS at8018a7f with exact fixture/case prefix unchanged at732d963; no redundant rerun claim.
+
+D14 affected case1/1 PASS at732d963: actual V2 forms set modifier repeat/default2 and variant price; consumers retain previous published values before reviewed isolated publication. Actual Kiosk720/Table390 quote25000 with exact product/group/option identity, variant2000 and repeated additions10000. Cart survives reload; Table starts at menu and Review explicitly reopens its restored cart. Browser errors0, overflow0, no serious/critical axe findings, orders0 and fulfillment0. These are isolated in-memory app journeys, not native production UAT or activated consumer/payment devices.
+
+Initial new-test failures/two corrections retained; affected extra run uses Andreas' explicit forward extra-attempt permission, without resetting history. Defects were test bindings/flow assumptions, not runtime changes. Original assertions/action timeout and resource floors/caps retained; serial deadlines tightened120/90/75/50. Verified owned dependency links cleaned before exit. Selected mobile group/Kiosk/Table captures independently hash-bound and visually inspected.
+
+Same continued balance general641.52 plus restricted UI79.55. General includes474.04 unspent release-only grant, not transferred; pre-existing ordinary availability167.48 is below native admission300. No new allowance. Original30 final-reference pixels have not been located on this host; location clarification pending. Do not replace source references with render screenshots. D10 accepted visual scope and matching existing proof remain separate. Remaining whole reference/editor/source/role/history/applicable member/promo/split/lost-ack journeys and actual operator dispositions remain OPEN; full97 deferred, external managed offsite unverified.
+
 ## 2026-10-09 - SagaPOS catalog09-14 deployed; full acceptance remains open
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37; operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Documentation successor `fbe81811e89c03e0f42b3c73e7c4a30583ac1f87`; [immutable release evidence and remaining closure strategy](https://github.com/notyourgas/sagaops/blob/fbe81811e89c03e0f42b3c73e7c4a30583ac1f87/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).

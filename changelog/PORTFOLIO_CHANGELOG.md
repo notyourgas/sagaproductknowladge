@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-10-09 - SagaPOS selected choice and Kiosk/Table acceptance closure
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / ACTIVE_RUNTIME_UNCHANGED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Verification successor `732d9639ac5bab27e3657d126ed3e6192b3eeb19`; documentation `d209539d4f3c2e41426a2bf025f1d759d580ed57`. Active production application remains `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37, ready with zero automatic restarts. [Immutable selected evidence and remaining closure dependencies](https://github.com/notyourgas/sagaops/blob/d209539d4f3c2e41426a2bf025f1d759d580ed57/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+SagaPOS adds bounded proof for selected group validation/removed sources and actual V2 authored published Kiosk/Table quote identity/defaults/cart reload. Two distinct scenarios qualify through retained D11 and fresh affected D14 evidence. Production unchanged; no cross-product or pricing change. Whole catalog acceptance remains OPEN pending original references, remaining business permutations and operator UAT.
+
 ## 2026-10-09 - SagaPOS catalog09-14 deployed; full acceptance remains open
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37; operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Documentation successor `fbe81811e89c03e0f42b3c73e7c4a30583ac1f87`; [immutable release evidence and remaining closure strategy](https://github.com/notyourgas/sagaops/blob/fbe81811e89c03e0f42b3c73e7c4a30583ac1f87/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
