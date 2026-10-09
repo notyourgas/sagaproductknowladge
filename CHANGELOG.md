@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-09 - SagaPOS catalog09-14 deployed; full acceptance remains open
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37; operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Documentation successor `fbe81811e89c03e0f42b3c73e7c4a30583ac1f87`; [immutable release evidence and remaining closure strategy](https://github.com/notyourgas/sagaops/blob/fbe81811e89c03e0f42b3c73e7c4a30583ac1f87/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+Source: Andreas' affirmative continuation and exact committed release/terminal recovery, activation, monitor and test evidence on9 October2026. Before prepared030473c/pending budget; after production active030473c/schema37 and remaining acceptance separately OPEN. Guarded stage/encrypted backup/disposable restore/rehearsal/activation/monitor PASS; Owner12/12 read-only route checks and isolated editor1/1 scenario with23 fixture captures PASS. No production test transaction or provider activation.
+
+Affected files: products/sagaops/PRODUCT.md, DOSSIER.md, CHANGELOG.md; changelog/PORTFOLIO_CHANGELOG.md; CHATGPT_MASTER_KNOWLEDGE.md; GAPS.md; SYNC_STATUS.md; this changelog. Runtime production changed; existing founder deployment-priority decision unchanged. Whole-reference/state/consumer/operator closure, full97 and managed external offsite remain separately open/deferred. Public-safe provenance main HEAD. Earlier not-deployed/pending entries retained as historical evidence.
+
+## Historical milestones - superseded by the current release above
+
 ## 2026-10-09 - SagaPOS identical-schema37 recovery runner fixed; replacement prepared
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Replacement application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, documentation successor `fff085c991a4004b6fe7dfcdbe1ade44f5e3d285`; [immutable execution and concrete closure manifest](https://github.com/notyourgas/sagaops/blob/fff085c991a4004b6fe7dfcdbe1ade44f5e3d285/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md). Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`, ready/zero automatic restarts. Supersededcfc481c was staged only, never activated.

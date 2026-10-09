@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-10-09 - SagaPOS catalog09-14 deployed; full acceptance remains open
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37; operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Documentation successor `fbe81811e89c03e0f42b3c73e7c4a30583ac1f87`; [immutable release evidence and remaining closure strategy](https://github.com/notyourgas/sagaops/blob/fbe81811e89c03e0f42b3c73e7c4a30583ac1f87/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+Official artifact169799680bytes, SHA256 `19b4132c84a2376a218ef5f89b6d9fdbb74f7f7349abe13919bc499d4c418249`. Superseded never-activated task stage was retired only after complete off-host preservation,5561 matching regular files, metadata/reference checks and exclusive locks;348598272 allocated bytes reclaimed. Active/recovery/source/evidence preserved and official peak admitted below85percent.
+
+Fresh effective Owner preceded the official stage and activation. Encrypted DB/integrity/receipt-evidence backup and disposable PostgreSQL18 restore PASS; schema37 candidate -> compatibility -> candidate namespace rehearsal PASS as correction1, preserving earlier failed evidence. Three encrypted pieces independently copied and size/hash verified off-host; managed external offsite UNVERIFIED. Actual single-use receipt activation and final monitor PASS; gateway boundary retained, enabled HRPOS source pin follows active application, zero automatic restarts.
+
+Public admin.js/operator.js bytes match exact030473c. Anonymous operator state401; authenticated state/orders/report reads200. Actual live Owner route/reflow12/12 PASS at desktop/mobile, zero browser errors/business writes; own temporary session closed. Expanded isolated editor module1/1 PASS,0skip/fail captures23 states for product validation/uncertain save, conditional promotions/server preview and staff-limit conflict/unknown/mobile bounds. Product unknown and320 staff-limit frames reviewed. Existing42 Windows/26 Linux catalog tests and13 Linux recovery/controller checks retained on matching inputs; final5 browser reruns are a subset, not extra unique cases.
+
+Approved+600seconds was applied once to the same book; original assertions, floors, serial/deadlines and correction history retained. Remaining general730.79seconds plus restricted UI79.55, no reservations/reset. Full97 DEFERRED_NOT_PASS and consumed capped gates are not reopened. No production test transaction, catalog publication, provider activation, payout or backfill. All49 destinations share active package metadata; per-screen modes and full acceptance remain separate. Six catalog whole-screen contracts remain OPEN. Existing closure manifest prioritizes reference review, remaining role/source/editor/consumer cases and authentic operator UAT; do not redeploy absent an actual runtime delta. Earlier entries are historical.
+
+## Historical milestones - superseded by the current release above
+
 ## 2026-10-09 - SagaPOS identical-schema37 recovery runner fixed; replacement prepared
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Replacement application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, documentation successor `fff085c991a4004b6fe7dfcdbe1ade44f5e3d285`; [immutable execution and concrete closure manifest](https://github.com/notyourgas/sagaops/blob/fff085c991a4004b6fe7dfcdbe1ade44f5e3d285/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md). Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`, ready/zero automatic restarts. Supersededcfc481c was staged only, never activated.

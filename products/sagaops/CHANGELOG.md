@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-09 - SagaPOS catalog09-14 deployed; full acceptance remains open
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37; operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Documentation successor `fbe81811e89c03e0f42b3c73e7c4a30583ac1f87`; [immutable release evidence and remaining closure strategy](https://github.com/notyourgas/sagaops/blob/fbe81811e89c03e0f42b3c73e7c4a30583ac1f87/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+Before: the catalog recovery delta was prepared only and the existing35-base assumption blocked recovery against current37. After: shared exact35/37 verification qualified, official37-to37 rehearsal/activation completed and catalog guards served in production. Artifact SHA256 `19b4132c84a2376a218ef5f89b6d9fdbb74f7f7349abe13919bc499d4c418249`; ready, zero automatic restarts. Stage/backup/disposable restore/recovery/monitor PASS; fresh live Owner12/12 read-only routes PASS. Expanded editor1/1 scenario PASS with23 fixture captures, not23 independent cases.
+
+Reason: finish authorized catalog deployment while retaining guarded recovery and honest acceptance boundaries. No pricing, role, provider or business schema change. Whole six-screen acceptance OPEN; next reference/state/consumer review and operator UAT. Full97 deferred and managed external offsite unverified. Prior not-deployed/pending entries are historical.
+
+## Historical milestones - superseded by the current release above
+
 ## 2026-10-09 - SagaPOS identical-schema37 recovery runner fixed; replacement prepared
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Replacement application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, documentation successor `fff085c991a4004b6fe7dfcdbe1ade44f5e3d285`; [immutable execution and concrete closure manifest](https://github.com/notyourgas/sagaops/blob/fff085c991a4004b6fe7dfcdbe1ade44f5e3d285/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md). Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`, ready/zero automatic restarts. Supersededcfc481c was staged only, never activated.

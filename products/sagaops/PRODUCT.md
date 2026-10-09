@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-09 - SagaPOS catalog09-14 deployed; full acceptance remains open
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37; operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Documentation successor `fbe81811e89c03e0f42b3c73e7c4a30583ac1f87`; [immutable release evidence and remaining closure strategy](https://github.com/notyourgas/sagaops/blob/fbe81811e89c03e0f42b3c73e7c4a30583ac1f87/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+The catalog list recovery guards are now active: overlapping bulk actions and category reorder are blocked; uncertain or partial acknowledgement requires a source refresh before a new intent. Existing product identity is retained for photo-only retry. The shared recovery runner also supports exactly matching schema37 manifests, preserving compatibility and drift rejection. No dependency, business schema, pricing, role or provider change.
+
+Official stage, encrypted backup/disposable restore, candidate-bound recovery rehearsal, guarded activation and monitor PASS. Production ready, zero automatic restarts; exact served assets match active source. Fresh authenticated Owner desktop/mobile routes 12/12 PASS with zero business writes. A new isolated editor scenario passed and captured23 synthetic states; these are not23 independent cases or full operator UAT.
+
+Full acceptance remains OPEN for all six catalog destinations; overall0/49 completed whole-screen contracts is not an implementation percentage. Remaining work: complete reference/state review, applicable variant/Kiosk/Table consumers and operator business UAT. Full97 DEFERRED_NOT_PASS; managed external offsite UNVERIFIED. Previous prepared/pending entries below are historical and superseded for this release.
+
+## Historical milestones - superseded by the current release above
+
 ## 2026-10-09 - SagaPOS identical-schema37 recovery runner fixed; replacement prepared
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Replacement application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, documentation successor `fff085c991a4004b6fe7dfcdbe1ade44f5e3d285`; [immutable execution and concrete closure manifest](https://github.com/notyourgas/sagaops/blob/fff085c991a4004b6fe7dfcdbe1ade44f5e3d285/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md). Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`, ready/zero automatic restarts. Supersededcfc481c was staged only, never activated.

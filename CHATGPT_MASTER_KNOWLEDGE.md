@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-09 - SagaPOS catalog09-14 deployed; full acceptance remains open
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37; operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Documentation successor `fbe81811e89c03e0f42b3c73e7c4a30583ac1f87`; [immutable release evidence and remaining closure strategy](https://github.com/notyourgas/sagaops/blob/fbe81811e89c03e0f42b3c73e7c4a30583ac1f87/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+Answer current SagaPOS deployment questions with active030473c, not the previous8f or preparedcfc snapshots. Guarded stage/backup/restore/rehearsal/activation/monitor PASS; ready with zero automatic restarts. Fresh Owner12/12 desktop/mobile checks are read-only; editor1/1 scenario captured23 synthetic states. Neither establishes full operational UAT. Six catalog whole contracts and overall0/49 completed whole contracts remain OPEN; counts are not implementation percentages. Full97 DEFERRED_NOT_PASS; managed external offsite UNVERIFIED. Requested+600seconds was granted once without resetting caps or budgets. Existing deployment-priority decision remains unchanged. Use the linked closure manifest; do not propose another deployment without a concrete source/runtime delta. Earlier prepared/pending entries are historical.
+
+## Historical milestones - superseded by the current release above
+
 ## 2026-10-09 - SagaPOS identical-schema37 recovery runner fixed; replacement prepared
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Replacement application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, documentation successor `fff085c991a4004b6fe7dfcdbe1ade44f5e3d285`; [immutable execution and concrete closure manifest](https://github.com/notyourgas/sagaops/blob/fff085c991a4004b6fe7dfcdbe1ade44f5e3d285/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md). Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`, ready/zero automatic restarts. Supersededcfc481c was staged only, never activated.
