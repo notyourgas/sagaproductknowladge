@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-09 - SagaPOS identical-schema37 recovery runner fixed; replacement prepared
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Replacement application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, documentation successor `fff085c991a4004b6fe7dfcdbe1ade44f5e3d285`; [immutable execution and concrete closure manifest](https://github.com/notyourgas/sagaops/blob/fff085c991a4004b6fe7dfcdbe1ade44f5e3d285/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md). Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`, ready/zero automatic restarts. Supersededcfc481c was staged only, never activated.
+
+Partially accepted milestone: shared runner fix, original13/13 Linux checks, replacement official packaging/off-host archive, scoped capacity cleanup and prior encrypted backup/disposable restore confirmed. Production unchanged; fresh replacement rehearsal/activation, finite budget addition and whole acceptance pending. Eight affected documents updated; no new decision/pricing/positioning. Main synchronization uses public-safe aggregates/source hashes only, excludes private paths, identifiers, receipts, credentials and personal data. Final knowledge SHA is main HEAD after commit/push.
+
 ## 2026-10-09 - SagaPOS catalog09–14 recovery candidate qualified, not deployed
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Application candidate `cfc481c6e5fa4f32c9e65aabdd6ba68fc6072f06`; documentation successor `790b609245be9c1d9f376f85d7dac92b5da4d459`. Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Six catalog destinations already exist in that production baseline; the new recovery delta is not active. Source: [immutable execution checkpoint](https://github.com/notyourgas/sagaops/blob/790b609245be9c1d9f376f85d7dac92b5da4d459/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).

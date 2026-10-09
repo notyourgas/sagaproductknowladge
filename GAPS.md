@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-09 - SagaPOS identical-schema37 recovery runner fixed; replacement prepared
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Replacement application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, documentation successor `fff085c991a4004b6fe7dfcdbe1ade44f5e3d285`; [immutable execution and concrete closure manifest](https://github.com/notyourgas/sagaops/blob/fff085c991a4004b6fe7dfcdbe1ade44f5e3d285/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md). Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`, ready/zero automatic restarts. Supersededcfc481c was staged only, never activated.
+
+Concrete root cause fixed locally: recovery profile's35-only current-schema assumption. New13/13 Linux checks and official replacement artifact are confirmed; actual replacement native rehearsal/activation is still OPEN. Scoped obsolete candidate cleanup complete. Superseded own never-activated stage replacement is prepared with complete saved archive/reference qualification, not performed. Same general272.20s is below300s next admission; specific+600s request pending, not a reset. Whole per-screen source/reference/state/consumer/access/operator acceptance remains OPEN; no budget transfer or blanket capped-gate retry inferred.
+
 ## 2026-10-09 - SagaPOS catalog09–14 recovery candidate qualified, not deployed
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Application candidate `cfc481c6e5fa4f32c9e65aabdd6ba68fc6072f06`; documentation successor `790b609245be9c1d9f376f85d7dac92b5da4d459`. Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Six catalog destinations already exist in that production baseline; the new recovery delta is not active. Source: [immutable execution checkpoint](https://github.com/notyourgas/sagaops/blob/790b609245be9c1d9f376f85d7dac92b5da4d459/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).

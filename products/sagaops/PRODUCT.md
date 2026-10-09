@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-09 - SagaPOS identical-schema37 recovery runner fixed; replacement prepared
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Replacement application `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, documentation successor `fff085c991a4004b6fe7dfcdbe1ade44f5e3d285`; [immutable execution and concrete closure manifest](https://github.com/notyourgas/sagaops/blob/fff085c991a4004b6fe7dfcdbe1ade44f5e3d285/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md). Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`, ready/zero automatic restarts. Supersededcfc481c was staged only, never activated.
+
+Catalog recovery release continuation exposed a runner assumption: schema37 recovery accepted only a35-migration current release, although production already has37. The existing shared profile now also accepts exactly matching37 manifests/SQL while retaining lock/service/fixed-tail checks and rejecting drift. Linux13/13 original shell/controller/recovery checks PASS0skip; unchanged catalog UI tests are retained on matching inputs.
+
+Replacement officially packaged169799680bytes, SHA256 `19b4132c84a2376a218ef5f89b6d9fdbb74f7f7349abe13919bc499d4c418249`, complete off-host archive independently hashed. Previous staged candidate admission/backup/disposable restore PASS; rehearsal failed before activation. Three encrypted backup pieces copied/hash-verified off-host; managed external offsite UNVERIFIED. Approved obsolete candidate retirement freed about348MB preserving active/recovery/source/evidence. Fresh replacement rehearsal/activation remains pending finite budget addition and replacement of the superseded never-activated task stage. No schema, pricing, role, provider or production business-data change; whole six-screen acceptance still OPEN.
+
 ## 2026-10-09 - SagaPOS catalog09–14 recovery candidate qualified, not deployed
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Application candidate `cfc481c6e5fa4f32c9e65aabdd6ba68fc6072f06`; documentation successor `790b609245be9c1d9f376f85d7dac92b5da4d459`. Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Six catalog destinations already exist in that production baseline; the new recovery delta is not active. Source: [immutable execution checkpoint](https://github.com/notyourgas/sagaops/blob/790b609245be9c1d9f376f85d7dac92b5da4d459/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
