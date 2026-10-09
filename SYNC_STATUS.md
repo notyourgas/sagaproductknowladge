@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-09 - SagaPOS promo history fix validated; release pending
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Application candidate `55d6d4cb717acd46f944ff46b0d8f7ff656027c0`; documentation `fae74e865918c53fd9f53a5f19a21846dcee0d5a`. Active production remains `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37, operational rollback51602bd, ready with zero automatic restarts. [Immutable current correction and remaining release gates](https://github.com/notyourgas/sagaops/blob/fae74e865918c53fd9f53a5f19a21846dcee0d5a/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+Promo editor cancelled Back previously replaced its native history entry. A small admin-only change reuses existing history preservation and restores the edit/create trigger after discard renders. Chromium desktop/mobile2/2, WebKit mobile repeated Back/forward1/1 and affected Windows unit29/29 PASS. One synthetic HTTP case additionally verifies six catalog commands plus Owner state denied to anonymous/Cashier/Bar actors with unchanged source. These are bounded cases, not whole permission/UAT or full-suite acceptance; no monetary, dependency, schema, provider or permission change.
+Accepted source/local validation milestone; whole product acceptance partially accepted. Eight impacted existing documents synchronized against exact pushed source and fresh runtime/terminal proof. No production mutation or new founder product/pricing decision. Budget transfer pending; rebuild and capacity gate open. Public-safe aggregate/provenance only; knowledge main HEAD after separate validated commit/push.
+
+
 ## 2026-10-09 - SagaPOS selected choice and Kiosk/Table acceptance closure
 
 `CONFIRMED / LOCAL_VALIDATED_BOUNDED / ACTIVE_RUNTIME_UNCHANGED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Verification successor `732d9639ac5bab27e3657d126ed3e6192b3eeb19`; documentation `d209539d4f3c2e41426a2bf025f1d759d580ed57`. Active production application remains `030473ccfb9a9046c27d2015cad4a27fe7b6d0a4`, schema37, ready with zero automatic restarts. [Immutable selected evidence and remaining closure dependencies](https://github.com/notyourgas/sagaops/blob/d209539d4f3c2e41426a2bf025f1d759d580ed57/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
