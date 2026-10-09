@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-09 - SagaPOS catalog09–14 recovery candidate qualified, not deployed
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Application candidate `cfc481c6e5fa4f32c9e65aabdd6ba68fc6072f06`; documentation successor `790b609245be9c1d9f376f85d7dac92b5da4d459`. Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Six catalog destinations already exist in that production baseline; the new recovery delta is not active. Source: [immutable execution checkpoint](https://github.com/notyourgas/sagaops/blob/790b609245be9c1d9f376f85d7dac92b5da4d459/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+Products bulk actions and individual/multi-category ordering now share pending, version-receipt and uncertain-acknowledgement guards. An earlier category commit followed by a later failure requires source refresh instead of blind replay. Photo-only retry retains confirmed product identity; existing handlers and notices are reused. No dependency, schema, pricing, role or provider change.
+
+Windows42/42 and selected Linux26/26 PASS; final compact/visible feedback delta reran5/5 of those26. Fresh authenticated production Owner read-only route/reflow12/12 PASS across six screens desktop/mobile; no business writes. Full business/state UAT and whole-screen acceptance remain OPEN for6/6. Official artifact and independently hashed off-host copy complete. Staging projection85percent blocks promotion; specifically scoped obsolete candidate retirement awaits approval. Existing active/recovery data remain preserved.
+
 ## 2026-10-09 07:50 WIB - SagaPOS accumulated source deployed and schema37 activated
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`. Active source **8f02cefdb99353b572b86ecb9f68ef343dcce69a**, immutable artifact SHA256 **b859f96f4e7affd39d0d27ec1a5c3ad8107163777d0437209b1a34ac4ba3e4dc**, operational rollback **51602bd9f50c79801585c6fabab03dab96cf7b40**. Source documentation checkpoint `0de25db96af8c53d094e4f88f3d3c2a633cb8ca6` is a documentation successor, not the deployed application identity. This supersedes the04:05 packaging/capacity/activation blocker snapshot. Andreas explicitly prioritized guarded deployment now; remaining whole-screen acceptance is a separate follow-up under [DEC-246](../../DECISIONS.md#dec-246---sagapos-prioritaskan-guarded-deployment-terpisah-dari-full-acceptance).

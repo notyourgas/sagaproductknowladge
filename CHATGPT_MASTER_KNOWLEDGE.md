@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-09 - SagaPOS catalog09–14 recovery candidate qualified, not deployed
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / FINAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Application candidate `cfc481c6e5fa4f32c9e65aabdd6ba68fc6072f06`; documentation successor `790b609245be9c1d9f376f85d7dac92b5da4d459`. Production remains `8f02cefdb99353b572b86ecb9f68ef343dcce69a`, schema37, operational rollback `51602bd9f50c79801585c6fabab03dab96cf7b40`. Six catalog destinations already exist in that production baseline; the new recovery delta is not active. Source: [immutable execution checkpoint](https://github.com/notyourgas/sagaops/blob/790b609245be9c1d9f376f85d7dac92b5da4d459/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
+
+Catalog09–14 is implemented in active8f, with full acceptance OPEN. NewCfc candidate adds product bulk/reorder uncertain-response recovery and is packaged, not deployed. Windows42/42 and selected Linux26/26 PASS; affected5/5 rerun is a subset. Fresh production Owner read-only12/12 PASS is route/reflow evidence, not business/state UAT. Capacity approval is pending before guarded staging. Continue remaining reference/state/consumer/operator contracts without reopening passed gates absent input drift. DEC-246 deployment-priority policy remains unchanged.
+
 ## 2026-10-09 07:50 WIB - SagaPOS accumulated source deployed and schema37 activated
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`. Active source **8f02cefdb99353b572b86ecb9f68ef343dcce69a**, immutable artifact SHA256 **b859f96f4e7affd39d0d27ec1a5c3ad8107163777d0437209b1a34ac4ba3e4dc**, operational rollback **51602bd9f50c79801585c6fabab03dab96cf7b40**. Source documentation checkpoint `0de25db96af8c53d094e4f88f3d3c2a633cb8ca6` is a documentation successor, not the deployed application identity. This supersedes the04:05 packaging/capacity/activation blocker snapshot. Andreas explicitly prioritized guarded deployment now; remaining whole-screen acceptance is a separate follow-up under [DEC-246](DECISIONS.md#dec-246---sagapos-prioritaskan-guarded-deployment-terpisah-dari-full-acceptance).
