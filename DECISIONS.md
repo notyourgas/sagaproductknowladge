@@ -3359,3 +3359,17 @@ keputusan pengganti.
 | Pemberi keputusan | Andreas / founder |
 | Status | `CONFIRMED / PRODUCTION_ACTIVATED / COMMERCE_ACTIVE / READY_FOR_PUBLIC_ORDERS`; scope payment gateway dan shipping manual |
 | Dokumen terkait | [COYABAG Product](products/coyabag/PRODUCT.md), [COYABAG Dossier](products/coyabag/DOSSIER.md), [COYABAG Changelog](products/coyabag/CHANGELOG.md) |
+
+## DEC-246 - SagaPOS prioritaskan guarded deployment terpisah dari full acceptance
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-09 |
+| Topik | Rilis akumulasi pekerjaan SagaPOS |
+| Keputusan | Jalankan guarded deployment source yang telah committed/pushed memakai runner resmi dan validasi fungsi/recovery yang sesuai, lalu catat full-screen/97-module acceptance serta operator UAT sebagai tindak lanjut terpisah. |
+| Alasan | Andreas memberi keputusan eksplisit agar pekerjaan segera dideploy tanpa menambah proses audit atau persetujuan baru. |
+| Alternatif yang dipertimbangkan | Menunggu seluruh49 kontrak acceptance; mengaktifkan tanpa backup/restore/recovery/current/Owner/resource guards. |
+| Dampak | Source8f02cef aktif, schema37 dan operational rollback51602bd terverifikasi. Required97 tidak diulang atau dinyatakanPASS; batas keselamatan/integritas, budget historis, provider dan data boundary dipertahankan. Full acceptance/BUSINESS_READY tetapOPEN. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED / PRODUCTION_ACTIVATED; bukan persetujuan aktivasi provider, transaksi uji produksi, penghapusan backup atau restore destruktif |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md) |
