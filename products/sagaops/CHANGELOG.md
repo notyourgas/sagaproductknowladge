@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-10 - SagaPOS inventory15–22 qualified; D16 fix not deployed
+
+`CONFIRMED / LOCAL_VALIDATED_BOUNDED / IMPLEMENTED_NOT_DEPLOYED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Candidate `7dcf539f0ba636b543894d3f3ae30edd42f04a56`, documentation `d806d968a71dd25f27061349557f0fc81e829464`. Production still `55d6d4cb717acd46f944ff46b0d8f7ff656027c0`, schema37, operational rollback51602bd, ready with zero automatic restarts at the fresh inspection. [Immutable qualification and remaining strategy](https://github.com/notyourgas/sagaops/blob/d806d968a71dd25f27061349557f0fc81e829464/docs/sagapos-v2/B3_SCREENS_15_22_EXECUTION_CHECKPOINT_20261010.md).
+
+Before: advanced warehouse checks could turn unknown or malformed balances into zero and classify minimum status separately. After: advanced and main inventory views reuse the same existing stock model; unknown quantities, cost and valuation remain unavailable. Runtime delta is UI only; no API, schema, dependency, pricing, role or business calculation change.
+
+All93 affected tests PASS with zero skips on the candidate, including13 cases using owned disposable PostgreSQL18.6. Actual isolated workflows cover unit conversion, zero count, stale second writer, waste/reversal and immutable history, shared-transfer denial, incomplete-cost publish rejection, production, cash sale/KDS consumption, replay and reload. Recipe/production fixture callers, Windows Chromium/WebKit inventory browsers, dialog/focus/recovery and stockclosing checks passed. Two current captures inspected; these are bounded tests and review, not whole operator/reference acceptance.
+
+Release preparation stopped safely: original RAM floor, a bounded cache transfer timeout, and an executor guard that wrongly required duplicate Git packs. Corrected preparation now reuses the existing sparse checkout. All629 browser-cache files and metadata/digests are independently retained off-host; source cache still present pending relocation. No new candidate artifact completed, no stage/activation or production business write. Reason: Andreas-authorized finalization15–22; release operation allowance now awaits one explicit extension from its existing funded balance.
+
+Next: corrected official package, fresh capacity/Owner, encrypted restore and candidate-bound recovery, guarded activation and affected live verification. All eight whole acceptance contracts remain OPEN: original references, broader role/state/type permutations and operator UAT required. Physical transfer N/A for approved shared-stock pilot; full97 deferred, managed external offsite unverified. Production source above remains current; older dated sections retain history.
+
+
 ## 2026-10-10 - SagaPOS D12 history and focus correction active in production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AFFECTED_AUTHENTICATED_READONLY_PASS / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`. Active application `55d6d4cb717acd46f944ff46b0d8f7ff656027c0`, schema37, operational rollback51602bd, ready with zero automatic restarts. Official169861120-byte artifact SHA256 `2c03d23adf1ca7795a883e3685874266d5bcab751eab69b41b59c4d96cf27ca3`; documentation `441594e1b8203f65c55a5ba3067a8657470a32d2`. [Immutable deployment and affected live verification](https://github.com/notyourgas/sagaops/blob/441594e1b8203f65c55a5ba3067a8657470a32d2/docs/sagapos-v2/B1_SCREENS_09_14_FINALIZATION_CHECKPOINT_20261009.md).
