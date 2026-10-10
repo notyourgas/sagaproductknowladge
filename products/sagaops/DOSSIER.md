@@ -1,5 +1,20 @@
 # SagaOPS Dossier
 
+## 2026-10-10 - SagaPOS HR artifact qualified; staging time reserve stopped promotion
+
+`CONFIRMED / LOCAL_VALIDATED_SUBSET / OFFICIAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`.
+
+This current checkpoint supersedes earlier pending-GPS and pending-archive statuses. The existing static check and three affected attendance/full-shell browser tests PASS, with zero failures or skipped cases. Desktop/mobile capture inspection confirms missing coordinates display "Belum ada GPS", while actual zero coordinates/measurements and authoritative geofence statuses remain represented. Earlier overlapping recovery/domain/role/native proofs are retained within their unchanged input scope; no full-suite claim is made.
+
+The official immutable artifact binds source `b1e984ce0ad5dc1a231faa5cf47fa2c5c65f7ef9` and application candidate `0e1d9403118398376380c3b33874b8292a008044`: 170014720 bytes, SHA256 `4ad993d9d5d779b675cda5e80408602bfbe63eebf314a94797ad7e986157bff4`. Its independent off-host copy matches size/hash. Only the two specifically approved inactive transport tars were archived after exact retention and reader/active/rollback guards; final staging projection is84%, below the original85% stop threshold. Active/rollback, sidecars, source/releases, database/uploads/secrets/backups were preserved.
+
+The final whole operation used177.72 seconds and stopped before staging because its activation/recovery/verification reserve was insufficient. No failed application gate or activation is inferred. Eight of eight admitted HR operations used361.15 seconds;2038.85 seconds remain, but no further operation is authorized yet. A prepared resume reuses the same qualified artifact and proofs with the existing official stage/recovery/activation/live verification runners; it requires one specifically admitted extra operation <=300 seconds from the same balance, without new time, test/packaging repetition or weaker guards. Its syntax/self-check passed; it has not executed.
+
+Fresh production remains ready on `93f05e02825a79532a6a5c3208498f01ba81e3da`, schema37; service PID is unchanged and release locks were free. Candidate release has not staged or activated. No HR/payroll business write, production schema change or provider activation occurred.
+
+Remaining full-acceptance work: transaction-bound exact receipts for unkeyed Owner commands, a separate atomic policy/operation identity and version contract for filesystem policy, and remaining reference/state/role/operator acceptance. Payroll preview GET can persist revisions/audit, so live attendance verification excludes it. Full97 remains DEFERRED_NOT_PASS; all six HR whole contracts and all49 remain OPEN. No new feature, pricing or business-readiness promise. [Immutable source checkpoint](https://github.com/notyourgas/sagaops/blob/b1e984ce0ad5dc1a231faa5cf47fa2c5c65f7ef9/docs/sagapos-v2/HR_28_33_EXECUTION_CHECKPOINT_20261010.md).
+
+
 ## 2026-10-10 - SagaPOS HR scoped qualification progressed; release capacity decision pending
 
 `CONFIRMED / LOCAL_VALIDATED_SUBSET / IMPLEMENTED_NOT_DEPLOYED / FINAL_UI_CORRECTION_NOT_VALIDATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`.
