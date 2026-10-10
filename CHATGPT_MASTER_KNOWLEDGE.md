@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-10 - SagaPOS exact capacity archive approved; preparation stopped at Owner state timeout
+
+Classification: **CONFIRMED** for approval, retained failures and unchanged production; **PROPOSAL** for the unqualified helper correction and remaining promotion. Checkpoint `1b86745222dd41f29aeee3dba13cab32f7312d35` is committed/pushed. Runtime candidate remains `ef8c4cdfa8ef66a9e3fe6507925961c3cc94a2c7`; its prior local native/config2/2 and source checks remain retained, not broadened.
+
+The exact one-old-artifact capacity archive was affirmed with independent size/hash preservation, but has **not executed**. Both remaining preparation slots stopped before archive/packaging: login succeeded while the full dashboard state read exceeded the original12-second client timeout. Current resolved Owner identity can be checked through the existing session endpoint, preserving role/provider/system-Owner/account/scope/CSRF and production login/health binding. That correction and16 synthetic positive/negative contract cases are prepared and parse checked, **not runtime qualified**. Request timeouts and resource guards have not been relaxed. Dashboard-state latency remains a separate live acceptance issue.
+
+A fresh read-only reconciliation confirms production `b1e984ce0ad5dc1a231faa5cf47fa2c5c65f7ef9` ready with unchanged PID, the approved old artifact still retained, no candidate incoming/staged artifact and no reporting drop-in installed. The capacity projection remains85%. No deployment, service restart, reporting metadata/configuration, business transactions or expanded cleanup occurred. Sales40/reporting41-44 activation remains OPEN/OFF.
+
+The16-operation preparation cap is exhausted with the original remaining balance preserved. Two additional preparation slots from the same balance, aggregate<=600 seconds and each whole<=300, have been requested and are **NOT_ADMITTED**. Next: qualify the measured Owner-session correction within retained retry limits; execute the already approved exact archive; official packaging/off-host hash; candidate-bound encrypted restore/config rollback; then present a concrete activation decision and authenticated live/operator proof. Full97 remains **DEFERRED_NOT_PASS** and full49/**BUSINESS_READY remain OPEN**.
+
+Reason: preserve the actual preflight failure and prevent an approved archive from being mislabeled completed. Affected files: PRODUCT, DOSSIER, product/portfolio/root CHANGELOG, CHATGPT_MASTER_KNOWLEDGE, GAPS and SYNC_STATUS. Sources: direct founder continuation, retained bounded preflight receipts, source/server contract and fresh read-only runtime reconciliation. Production unchanged. Sync status: partially accepted; additional preparation-slot and later concrete activation decisions remain pending. Knowledge provenance: main HEAD after this separate sync.
+
 ## 2026-10-10 - SagaPOS native reporting preparation validated; capacity blocks promotion
 
 Classification: **CONFIRMED** for source/local proof and unchanged runtime; **PROPOSAL** for remaining artifact/recovery/activation. Candidate `ef8c4cdfa8ef66a9e3fe6507925961c3cc94a2c7` and checkpoint `86474d479bf722370eb828425e5b1d57c4b8dd20` are committed/pushed. This supersedes the prior runner/preparation-pending proposal; previous failed evidence and qualification boundaries remain retained.
