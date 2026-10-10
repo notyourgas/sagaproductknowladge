@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-10 - SagaPOS exact mobile-load gap; desktop observations completed
+
+Classification **CONFIRMED**. Documentation source **79dfbb60ea739f4aaaa3a45e3e31af2ca2244edf**; existing test source93ae14a and active production **df172c6843e406f5843e7fe12da193fb8815152b** remain distinct. Production runtime unchanged, ready/production true; no business/provider/account writes or activation replay.
+
+New combined read-only Owner run completed all five desktop1486 screen observations and screenshots for45-49, including48 without a second login. It then failed at mobile390 screen45, specifically document-load/page.goto under the original7-second bound. **Combined10-view acceptance remains NOT_PASS**. A separate cold-mobile diagnosis reached DOMContentLoaded at794.5ms and traversed45 to46; this is diagnosis only, not acceptance or a proven runtime fix. Private verifier exception classification, capture checkpoints and evidence retention were corrected; no customer-facing release was required. Prior48 local cases and overlapping native/fallback8-case qualification are unchanged.
+
+Next action: reproduce the five-desktop-to-fresh-mobile predecessor with completed/outstanding resource timing and bounded host observations, correct the demonstrated cause, then qualify the original full live matrix. Limited-role live UAT, required reference/device/operator proof, actual hardware/provider proof, prior finance/reporting gaps and full97/all49 BUSINESS_READY remain open. Current browser inspection found an Owner session, not verified QA access.
+
+Reason/source: Andreas requested strategy execution and a concrete closure plan for remaining gaps. Affected knowledge: PRODUCT, DOSSIER, product/portfolio/root CHANGELOG, MASTER, GAPS and SYNC_STATUS. Knowledge provenance main HEAD after separate sync. [Immutable updated checkpoint](https://github.com/notyourgas/sagaops/blob/79dfbb60ea739f4aaaa3a45e3e31af2ca2244edf/docs/sagapos-v2/SCREENS_45_49_EXECUTION_CHECKPOINT_20261010.md).
+
 ## 2026-10-10 - SagaPOS screens45-49 scoped qualification; full live acceptance remains open
 
 Classification: **CONFIRMED** for committed source, bounded qualification and observed production; **PROPOSAL** for the remaining closure steps. Status **partially accepted**. Source checkpoint `436516af1930354977980c2691bac077a1fb39e7` is committed/pushed; final test inputs `93ae14a39805c7ee39b23b511067eb80ad70995a`. Changes are tests/documentation only. Immutable production remains `df172c6843e406f5843e7fe12da193fb8815152b`, rollback `b1e984ce0ad5dc1a231faa5cf47fa2c5c65f7ef9`, **PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED**. No redundant application release or production business/provider mutation occurred.
