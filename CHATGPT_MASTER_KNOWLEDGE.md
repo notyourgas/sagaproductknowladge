@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-10 - SagaPOS HR qualified code release activated and affected live verification passed
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_ATTENDANCE_UAT_SUBSET / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`.
+
+This current milestone supersedes all earlier pending-resume and pending-archive statuses. Production now runs exact release `b1e984ce0ad5dc1a231faa5cf47fa2c5c65f7ef9`, application delta `0e1d9403118398376380c3b33874b8292a008044`: employee pay-rate/profile versions advance monotonically so stale forms cannot overwrite a close writer; failed filesystem policy saves retain the previous effective attendance policy; missing GPS is displayed honestly rather than reported as recorded, while valid zero coordinates/measurements remain supported. Policy file persistence and later database audit are still not atomic.
+
+Official artifact170014720 bytes, SHA256 `4ad993d9d5d779b675cda5e80408602bfbe63eebf314a94797ad7e986157bff4`, has an exact independent retained copy. Admission, staging, encrypted backup/disposable restore, candidate-bound schema37 recovery rehearsal, three encrypted off-host pieces with size/hash verification, activation and official monitor PASS. Schema37, existing payment boundary and other activation scope remain; compatible rollback `51602bd9f50c79801585c6fabab03dab96cf7b40` is retained. Service ready/production=true, zero restarts and HRPOS pin matches active; release locks free after completion. Managed external offsite remains UNVERIFIED.
+
+Static check and3/3 affected GPS/full-shell browser regressions PASS with no failures/skips. Earlier recovery14/14, corrected masters/roster/attendance28/28, corrected native PostgreSQL18.6/PGlite integrated workflow, and visual/state8/8 proofs retain their unchanged input scope; original setup/timeout failures remain recorded and overlapping groups are not a full-suite total. Fresh effective Owner, anonymous401 and exact public bytes for four affected assets PASS. Live attendance loaded actual state at1486px and390px with one source/rendered row, no overflow, browser errors or business mutations. No live missing-GPS row was present, so that case is established by isolated regressions rather than inferred from live data. Payroll preview GET was blocked because it can persist revisions/audit; no loaded production payroll business-UAT claim. Own ephemeral sessions were logged out and the shared vault bridge retained.
+
+Andreas's specific affirmative continuation approved the one further inactive452f055 transport tar archive after independent size/hash retention and reader/current/rollback guards. Only the previously approved7dcf539/93c4e85 and newly approved452f055 VPS tars were removed; sidecars, source/releases, active/rollback, database/uploads/secrets/backups were preserved. The resumed official operation reused qualified tests/artifact, completed in138.91 seconds <=300 with exit0, and retained every original guard. HR scope is9/9 operations,500.06 seconds charged,1899.94 seconds unused; unused time does not authorize another operation or reset correction limits. No production HR/payroll business write, schema change or provider activation occurred.
+
+Remaining strategy: transaction-bound exact safe receipts for unkeyed Owner command families; a separate atomic filesystem policy+operation identity/version contract; remaining reference/state/role/operator signoff and a genuinely read-only payroll live probe before broader UAT. All23 original HR reference hashes match, but whole contracts28-33/all49 remain OPEN and full97 DEFERRED_NOT_PASS. Deep security audit NOT_REQUESTED. No pricing, positioning or business-readiness promise changes.
+
+Source documentation checkpoint `93d156929f43a02ba5f06f84c0d5c7d565115ee3` is committed/pushed and changes only the two HR checkpoint/plan documents relative to deployedb1e984c; it is not a second runtime release. Reason/source: Andreas approved continuation, retained original candidate/budget evidence, official guarded activation receipts and affected authenticated public checks. [Immutable release checkpoint and remaining plan](https://github.com/notyourgas/sagaops/blob/93d156929f43a02ba5f06f84c0d5c7d565115ee3/docs/sagapos-v2/HR_28_33_EXECUTION_CHECKPOINT_20261010.md).
+
+
 ## 2026-10-10 - SagaPOS HR resume approved; fresh capacity archive decision pending
 
 `CONFIRMED / OFFICIAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`.
