@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-10 - SagaPOS screens34-44 execution baseline and reporting activation gap
+
+Classification: **CONFIRMED** for inspected source/runtime and the blocker; **PROPOSAL** for the closure steps. Source checkpoint `0a6af7fd57a99084304c48384d562356f3b16162` is committed/pushed. Production remains `b1e984ce0ad5dc1a231faa5cf47fa2c5c65f7ef9`; this milestone changed documentation only, with no application deployment, configuration activation or business write.
+
+Screens34-44 have existing Member/Finance/Sales/native-report UI, adapters and test fixtures. New qualification is prepared, not PASS. Native inventory reporting remains OFF: production context has no reporting configuration and the required inventory-location authority has not been initialized. Reporting credentials/tables and some current calendar/master/sales facts exist; their presence does not establish provider startup or complete operational reporting. Read-only inspection under the runtime role with the Owner auth context supersedes counts hidden by row isolation without that context.
+
+Next closure: qualify affected cases on disposable native PostgreSQL; prepare the existing domain command for one combined usable stock location, exact prospective calendar/config/worker intent, candidate-bound recovery and reporting metadata impact; then guarded activation and authenticated report/source/CSV acceptance. Do not invent stock/history, backfill unknown facts or equate UI deployment with reporting enabled. Historical periods require valid immutable authority. The proposed qualification-only scope transfer adds no time and remains pending a direct answer; exhausted previous operation allowances and retry history are retained. Full97 remains DEFERRED_NOT_PASS; complete screen acceptance and BUSINESS_READY remain OPEN. Existing HR activation/recovery evidence and payment/Member boundaries remain unchanged. Files: PRODUCT, DOSSIER, product/portfolio/root CHANGELOG, CHATGPT_MASTER_KNOWLEDGE, GAPS and SYNC_STATUS.
+
+
 ## 2026-10-10 - SagaPOS HR qualified code release activated and affected live verification passed
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_ATTENDANCE_UAT_SUBSET / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`.
