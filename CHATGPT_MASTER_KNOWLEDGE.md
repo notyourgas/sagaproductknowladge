@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-10 - SagaPOS HR resume approved; fresh capacity archive decision pending
+
+`CONFIRMED / OFFICIAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`.
+
+This update supersedes the earlier extra-operation permission status. Andreas's immediate affirmative continuation approved exactly one additional resume operation <=300 seconds from the retained2038.85 HR seconds: maximum9, completed8. No additional time, test/packaging replay, assertion/resource relaxation, HR/payroll business write or production migration was admitted; no resume operation has started.
+
+Fresh read-only preflight keeps current/ready production on `93f05e02825a79532a6a5c3208498f01ba81e3da`, schema37, unchanged service PID. Candidate `b1e984ce0ad5dc1a231faa5cf47fa2c5c65f7ef9` and its qualified official artifact remain unchanged. Root usage increased111718400 bytes relative to the prior package receipt; the unchanged staging projection reaches85%, so promotion stops before reservation or mutation. A prepared exact unblock proposes archiving one further inactive transport tar452f05525bda7b290c38a20a5aa854b8f9867af9,169093120 bytes, SHA256 `fd10f5340b5e1c5efefb0f38464da01ae305d6acce655231c8e9eba3e9220946`. Independent PC size/hash retention is verified, with no observed active reader and no current/rollback binding. Projected ceiling becomes84%, subject to fresh recomputation.
+
+The prior archive approval covered only two other specific tar files. Permission for this new target is pending and it has not been removed. Its guarded archive is prepared within the already approved one resume operation; source/release directories, sidecar, active/rollback, database/uploads/secrets/backups are retained. After approval and capacity admission, use the same existing official stage, encrypted disposable recovery, off-host verification, activation and affected public attendance verification runners. Whole HR/all49 acceptance remains OPEN, full97 DEFERRED_NOT_PASS, and unkeyed command/policy exact recovery plus remaining reference/role/operator acceptance retain their existing closure plan. Reason/source: Andreas continuation request, retained same-budget admission, independent artifact retention and fresh target preflight; no new runtime or business-readiness claim.
+
+
 ## 2026-10-10 - SagaPOS HR artifact qualified; staging time reserve stopped promotion
 
 `CONFIRMED / LOCAL_VALIDATED_SUBSET / OFFICIAL_ARTIFACT_PREPARED / NOT_STAGED / NOT_ACTIVATED / FULL_ACCEPTANCE_OPEN / NOT_BUSINESS_READY`.
