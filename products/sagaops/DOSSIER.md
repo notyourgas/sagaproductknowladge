@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-10-11 - SagaPOS Wave1 canonical modifier reporting fix; release blocked
+
+**CONFIRMED / IMPLEMENTED_NOT_DEPLOYED**: Wave1 inventory-reporting fix is pushed at **4942f809aa2bfa1fddd9e7588e9d9b29e6517f9b**, based on observed active **fa86a24d102f1766d30d5d48bbd493dca20b8c7e**. The shared reader now accepts canonical checkout modifier labels while retaining legacy aliases and strict text validation; no stored order correction, schema/dependency change or payment/provider activation.93 unique targeted cases pass, including portable disposable PostgreSQL and five responsive report/source/CSV browser journeys;947-module static/TypeScript checks pass. Full suite and production candidate boot are NOT_RUN.
+
+**CONFIRMED / release NO-GO**: read-only native diagnosis found current reporting STALE/invalidation UNAVAILABLE despite an empty queue. Existing rehearsal/activation requires current ready health; local artifact/recovery capacity is also insufficient. Final local SSH/public-route checks timed out, so latest production reachability and expected-current revalidation are UNVERIFIED, not a claim of VPS outage. No deployment, restart or business write occurred. Observed rollback **79dfbb60ea739f4aaaa3a45e3e31af2ca2244edf** is not asserted healthy. Source PASS does not close live refresh/restart or authenticated production parity. BUSINESS_READY=false.
+
+Source: Andreas authorized Wave1 implementation; current native read-only diagnostics and source regressions. [Immutable Wave1 checkpoint](https://github.com/notyourgas/sagaops/blob/4942f809aa2bfa1fddd9e7588e9d9b29e6517f9b/docs/sagapos-v2/WAVE1_REPORTING_CHECKPOINT_20261011.md). Next: resolve capacity, validate a narrowly scoped incident-recovery path without a general health bypass, then qualify/deploy and observe refresh/restart/live parity. Existing unrelated printer/SaaS/operator/offsite gaps remain. Public sync is **partially accepted**; production unchanged. No hosted CI, deep security audit or real payment was run.
+
 ## 2026-10-11 - SagaPOS printer commissioning pack prepared; unit unavailable
 
 **CONFIRMED / DOCUMENTATION_DELIVERED / PRODUCTION_UNCHANGED**: Andreas confirmed the unit cannot be connected yet. Current read-only checks confirm ready application **95ab58b583616426479f453d00bdf8012d456d51**, schema37 and hardware dispatch OFF. The inspected Windows PC has no detected iWare queue/present device; QZ was not detected in the installed-app/process inventory checked. Other PCs/portable installs are not verified. Existing B03/B04 software and B06-B08 foundation qualification remain scoped evidence; no application tests, activation, printer installation, production job/transaction or physical print were repeated.
