@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-10-14 - SaaS production activated; invited client access verified
+
+**CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / SCOPED_PRODUCTION_VALIDATED / NOT_BUSINESS_READY.** Andreas authorized one additional recovery correction and a task-specific suspension of the deployment guide. Original failures and the Linux qualification waiver remain historical evidence. V2 encrypted disposable restore, candidate boot, compatible rollback and candidate reboot PASS with production untouched during rehearsal. POS application runtime `95a6eda74593b731361a5c65c70f829276f33180` is now active with rollback `2a18c9d4d307844ae6061cd0100d73c4bdbd0c0d`; Platform stays `c794ed6b1fd5a5803c3c68496c8964660d4f89ac`. Gateway configuration/payment boundary preserved.
+
+Dedicated protected Platform/POS identity and event channels are active. Encrypted paired configuration restore comparison and separate-host checksum PASS. An initial web ingress attempt automatically reverted; operations `45e9a786386fc818fa3088ed13fb74c03ee963fb` fixes nested API matching, five affected tests PASS, and final external login200/registration200/anonymous-session401/foreign-host404/primary-fallback401 PASS. Operations revisions do not relabel the immutable app artifact. The Platform reporting-only correction remains source-only.
+
+The explicitly requested client Owner account was created by native invitation/claim and signed provisioning. Real production login/session/dashboard, cashier/team/operations and eight Owner workspace reads PASS. Personal workspace403 is the intended staff-only boundary; foreign tenant403 PASS. Chrome independently displays the authenticated client dashboard, and credential email was confirmed SENT through Gmail to the authorized recipient. Customer identifiers, email/password, sessions and raw receipts are excluded from this public repository.
+
+The client account is usable for product demonstration. **OPEN:** complete transaction/workday and full module workflows, actual employee role journeys, evidence retention/filesystem recovery and printer/camera/GPS/provider acceptance. No full feature or BUSINESS_READY claim; pricing/positioning unchanged. [Immutable application](https://github.com/notyourgas/sagaops/tree/95a6eda74593b731361a5c65c70f829276f33180), [release observation](https://github.com/notyourgas/sagaops/blob/68ce583badfa371ee2093c415eb78d9f48f60c11/ops/production/SAGAPOS_SAAS_RELEASE_20261013.md).
+
 ## 2026-10-14 - Platform onboarding deployed; POS recovery correction pending
 
 **CONFIRMED / PLATFORM: PRODUCTION_DEPLOYED / POS: IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.** Manual Chrome login and server-side effective permissions resolved the operator-access blocker. Platform runtime `c794ed6b1fd5a5803c3c68496c8964660d4f89ac` is now active in production. Independent verification confirms exact release commit/manifest, activation page200, missing-CSRF419, health200 and active services; adjacent product release pointers remain unchanged. The authenticated client-invitation page is visible and defaults to manual link delivery.
