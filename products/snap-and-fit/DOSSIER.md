@@ -1,5 +1,17 @@
 # Snap and Fit Dossier
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| event-photo-prototype | [Source](https://github.com/notyourgas/snap-and-fit/tree/source/current) | `219079bbac1ab5637bd2eb1f171edaca56bbb25f` | `SOURCE_PUSHED` |
+
+Source prototype `219079b` tersimpan pada ref kanonik. Status prototype, protected preview dan synthetic UAT tetap mengikuti catatan evidence; tidak ada provider, production atau payout baru yang diaktifkan.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## Tujuan dokumen
 
 Menjelaskan kontrak produk dan status evidence Snap and Fit tanpa mempublikasikan
@@ -394,3 +406,107 @@ fotografer desktop-optimized.
   diaudit.
 - Jangan menjanjikan face search production, instant HiRes, atau payout otomatis
   sebelum gate provider dan controlled pilot lulus.
+
+## Target pengguna
+
+Peserta pembeli foto, fotografer uploader dan organizer yang mengelola event, assignment, harga serta sales window.
+
+## Persona pengguna
+
+Peserta pembeli foto, fotografer uploader dan organizer yang mengelola event, assignment, harga serta sales window. Persona ini berbasis role, bukan profil customer nyata.
+
+## Value proposition
+
+Derivative preview/search dan verified HiRes request memisahkan transfer ringan dari fulfillment file original.
+
+## Use case
+
+Organizer membuat event/assignment -> fotografer mengirim derivative -> peserta search/preview -> transaksi terverifikasi -> HiRes request/fulfillment -> retention/settlement sesuai kontrak.
+
+## Fitur utama
+
+Event setup, resumable derivative upload, search/preview, cart/payment boundary, HiRes fulfillment, worker/lifecycle, privacy/retention dan actor-scoped controls; provider activation tetap terpisah.
+
+## Fitur MVP
+
+Event setup, resumable derivative upload, search/preview, cart/payment boundary, HiRes fulfillment, worker/lifecycle, privacy/retention dan actor-scoped controls; provider activation tetap terpisah. Scope yang belum diterima tidak disebut live hanya karena source tersedia.
+
+## Roadmap
+
+Source tetap prototype; synthetic/mock UAT, protected preview, real providers, independent staging/recovery, device/liveness dan payout readiness dibedakan. Urutan acceptance mengikuti Product/GAPS dan runner produk.
+
+## User journey
+
+Organizer membuat event/assignment -> fotografer mengirim derivative -> peserta search/preview -> transaksi terverifikasi -> HiRes request/fulfillment -> retention/settlement sesuai kontrak.
+
+## User flow
+
+Organizer membuat event/assignment -> fotografer mengirim derivative -> peserta search/preview -> transaksi terverifikasi -> HiRes request/fulfillment -> retention/settlement sesuai kontrak. Permission, error, uncertainty dan recovery tetap bagian kontrak source.
+
+## Business model
+
+Model peserta/fotografer/organizer dan sales window tercatat; harga/rate/provider/commercial activation tidak ditetapkan oleh sinkronisasi repository.
+
+## Pricing
+
+Tidak ada keputusan harga baru. Gunakan harga/scope yang sudah tercatat di [PRODUCT](PRODUCT.md) dan proposal/kontrak terkait. Angka yang belum dikunci tetap NEEDS CONFIRMATION.
+
+## Kompetitor
+
+NEEDS CONFIRMATION: belum ada benchmark kompetitor terkini yang disahkan pada milestone source ini. Tidak menambahkan klaim perbandingan atau rekomendasi vendor tanpa riset/bukti baru.
+
+## Diferensiasi produk
+
+Derivative preview/search dan verified HiRes request memisahkan transfer ringan dari fulfillment file original. Ini menjelaskan workflow source, bukan keunggulan bisnis yang telah diukur.
+
+## Brand positioning
+
+Platform event photo yang menghubungkan peserta, fotografer resmi dan organizer; preview ringan berbeda dari original HiRes. Positioning final tetap mengikuti keputusan founder yang tercatat.
+
+## Messaging
+
+Sampaikan fungsi yang mempunyai bukti scope dan tanggal. Source tetap prototype; synthetic/mock UAT, protected preview, real providers, independent staging/recovery, device/liveness dan payout readiness dibedakan.
+
+## FAQ
+
+Apakah repo lengkap berarti siap production? Tidak; source backup dan acceptance runtime berbeda. Apakah pricing/provider berubah? Tidak pada sinkronisasi ini. Source terbaru dibaca dari ref pada registry.
+
+## Integrasi
+
+Next web, Nest API, BullMQ worker, MySQL/Prisma, Redis dan private object storage menurut arsitektur source. Topologi prototype dan target staging harus dipilih dari receipt yang sesuai. Setiap provider/device mempunyai activation/acceptance tersendiri; identifier dan credential tidak masuk knowledge publik.
+
+## Data yang digunakan
+
+Role/workflow dan metadata produk sesuai source; media/attendance/financial data mengikuti izin dan retention kontrak. Knowledge ini tidak menyimpan customer data, credentials atau raw receipts.
+
+## Risiko dan asumsi
+
+Source tetap prototype; synthetic/mock UAT, protected preview, real providers, independent staging/recovery, device/liveness dan payout readiness dibedakan. Unknown tidak ditutup dengan label SOURCE_PUSHED.
+
+## KPI dan success metrics
+
+KPI teknis: source dapat ditelusuri ke repo/ref/SHA, critical journey selesai tepat sekali dan recovery mempunyai bukti. Target bisnis/conversion/adoption terukur belum ditetapkan oleh audit ini; source push bukan KPI omzet.
+
+## Ide konten pemasaran
+
+PROPOSAL: jelaskan satu workflow yang tercatat dan tunjukkan batas fitur/source versus activation; gunakan demo sintetis berlabel, tanpa mengarang customer/testimoni.
+
+## Contoh caption
+
+PROPOSAL: "Kenali alur snap-and-fit dan cek milestone yang sudah terverifikasi sebelum mulai operasional." Draft ini bukan keputusan campaign atau klaim seluruh produk siap.
+
+## Ide campaign
+
+PROPOSAL: edukasi workflow dan invitation demo sesuai status produk; real customer campaign hanya setelah acceptance dan scope publiknya jelas.
+
+## Sales talking points
+
+Derivative preview/search dan verified HiRes request memisahkan transfer ringan dari fulfillment file original. Jelaskan scope implementation, kebutuhan perangkat/provider dan gate yang masih terbuka sebelum memberi janji komersial.
+
+## Objection handling
+
+Source tersimpan bukan jaminan hardware/provider atau hasil usaha. Tunjukkan evidence yang cocok dengan source/release dan uraikan gate berikutnya; hindari janji ROI/SLA yang belum diputuskan.
+
+## Keputusan dan gap
+
+Lihat [PRODUCT](PRODUCT.md), [GAPS](../../GAPS.md) dan [source registry](../../docs/SOURCE_REGISTRY.md). Source tetap prototype; synthetic/mock UAT, protected preview, real providers, independent staging/recovery, device/liveness dan payout readiness dibedakan.

@@ -1,5 +1,18 @@
 # COYABAG Product Knowledge
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| storefront-and-backend-candidate | [Source](https://github.com/notyourgas/coyabag/tree/source/current) | `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a` | `SOURCE_PUSHED` |
+| credentialed-public-trust-candidate | [Source](https://github.com/notyourgas/coyabag/tree/source/credentialed-public-trust) | `983bdbeedc821189ae420b1695aa14e67f6a40bd` | `SOURCE_PUSHED` |
+
+Source kandidat J&T `24e65ee` serta kandidat public trust `983bdbe` dipertahankan pada ref berbeda; kandidat tersebut tidak berada pada satu garis ancestry. Adapter J&T tetap default-off/implemented-not-deployed sesuai milestone 20 September. Sinkronisasi source tidak mengubah order/provider atau live deployment.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 Updated: 20 September 2026
 Evidence status: production deployed + production activated + public orders open
 

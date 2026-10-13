@@ -1,5 +1,18 @@
 # SagaWork Dossier
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| hr-application | [Source](https://github.com/notyourgas/sagawork/tree/source/current) | `fda2cc753daef80ca673be6333e4d44f69d6e705` | `SOURCE_PUSHED` |
+| scheduling-correction-candidate | [Source](https://github.com/notyourgas/sagawork/tree/source/scheduling-correction) | `f8bfaf85724f434bc032e8c3bc98e69f8bf209b3` | `SOURCE_PUSHED` |
+
+Repository privat SagaWork kini tersedia. Source build `fda2cc7` dan kandidat scheduling correction `f8bfaf8` tersimpan pada ref terpisah karena bukan satu garis ancestry. Provider runtime `0b10496` pada catatan 8 September tidak diganti oleh sinkronisasi source. Real workforce/payout/performance dan business readiness tetap mengikuti gate lama.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## 2026-09-08 — SagaPOS Owner UAT terhadap provider lulus
 
 `CONFIRMED`: official-domain UAT mengakses HR dari satu sesi Owner SagaPOS, membuktikan integrated state dan read-only People, lalu mencabut delegated grant ketika logout. Browser tidak menerima credential atau token SagaWork dan tidak diminta login kedua; tidak ada mutasi HR maupun transaksi.
@@ -341,3 +354,119 @@ Reporting HR memakai satu canonical work-hours projection untuk searchable per-s
 Positioning sementara: workforce operations action-first dan evidence-based untuk tim shift Indonesia, bukan HRIS enterprise lengkap. Pricing/SLA `NEEDS CONFIRMATION`. Internal disposition tetap `PILOT_READY_CANDIDATE`; private source remote/hosted CI, external provider/DPA, offsite/key custody, legal/privacy, real-device install/update/GPS/camera behavior, company performance governance, incident alert, capacity mitigation, independent security verification, offboarding authority/rehire, employer-ordered overtime/holiday-rest scope, named pilot, willingness-to-pay, dan real signed admission receipt tetap blocker eksternal. Produk tidak boleh diklaim ASVS-certified, payroll compliant, performance-validated on real staff, closed-beta active, atau production-ready.
 
 `PROPOSAL` execution bridge menuju UAT Andreas terdiri dari Sprint 30–40 dengan 11 fail-closed gate. Rehearsal awal sekarang dapat memakai akun HR trial sintetis yang siap login langsung, lalu dua akun Staff uji; tepat 5 Staff internal baru masuk setelah HR bootstrap, location/policy, lifecycle, schedule, Android+iOS attendance, serta report reconciliation PASS. Temuan UAT dibekukan sebagai P0–P3, P0/P1 diperbaiki dan full-regression sebelum three-day canary. Direct-login trial sengaja menolak non-synthetic mode; akun pilot kelak wajib dibuat ulang pada topology, database, email, token, password, dan TOTP terpisah.
+
+## Overview produk
+
+Workforce/HR provider untuk Workspace/Cabang, staff lifecycle, jadwal, permohonan dan attendance; integrasi Owner SagaPOS memakai delegasi server-side.
+
+## Masalah yang diselesaikan
+
+Owner membutuhkan operasi HR tanpa login kedua, sementara Staff membutuhkan akses pribadi yang tidak membuka data organisasi lain.
+
+## Target pengguna
+
+Owner/HR yang mengelola tenaga kerja dan Staff yang membaca jadwal, mengirim request serta mencatat attendance miliknya.
+
+## Persona pengguna
+
+Owner/HR yang mengelola tenaga kerja dan Staff yang membaca jadwal, mengirim request serta mencatat attendance miliknya. Persona ini berbasis role, bukan profil customer nyata.
+
+## Value proposition
+
+Command-time permission/scope, durable request recovery dan delegasi sesi menghubungkan POS/HR tanpa membagikan token provider ke browser.
+
+## Use case
+
+Owner POS -> delegated HR state/People -> perubahan hanya dengan izin efektif; Staff -> own schedule/request/attendance -> HR review -> record/audit yang durable.
+
+## Fitur utama
+
+Staff lifecycle/import, Workspace, jadwal/note/swap/request, attendance, export/read boundaries dan provider delegation. Payroll/compliance/payout nyata tidak disamakan dengan engine/fixture.
+
+## Fitur MVP
+
+Staff lifecycle/import, Workspace, jadwal/note/swap/request, attendance, export/read boundaries dan provider delegation. Payroll/compliance/payout nyata tidak disamakan dengan engine/fixture. Scope yang belum diterima tidak disebut live hanya karena source tersedia.
+
+## Roadmap
+
+Dataset provider yang tercatat masih synthetic. Real employee onboarding, full workday/device/GPS/camera, recovery/provider/evidence dan payroll/payout acceptance tetap gate. Urutan acceptance mengikuti Product/GAPS dan runner produk.
+
+## User journey
+
+Owner POS -> delegated HR state/People -> perubahan hanya dengan izin efektif; Staff -> own schedule/request/attendance -> HR review -> record/audit yang durable.
+
+## User flow
+
+Owner POS -> delegated HR state/People -> perubahan hanya dengan izin efektif; Staff -> own schedule/request/attendance -> HR review -> record/audit yang durable. Permission, error, uncertainty dan recovery tetap bagian kontrak source.
+
+## Business model
+
+Workspace/Cabang dan role-scoped workforce workflow adalah operating model. Paket/harga publik dan kewajiban payroll nyata memerlukan keputusan serta bukti terpisah.
+
+## Pricing
+
+Tidak ada keputusan harga baru. Gunakan harga/scope yang sudah tercatat di [PRODUCT](PRODUCT.md) dan proposal/kontrak terkait. Angka yang belum dikunci tetap NEEDS CONFIRMATION.
+
+## Kompetitor
+
+NEEDS CONFIRMATION: belum ada benchmark kompetitor terkini yang disahkan pada milestone source ini. Tidak menambahkan klaim perbandingan atau rekomendasi vendor tanpa riset/bukti baru.
+
+## Diferensiasi produk
+
+Command-time permission/scope, durable request recovery dan delegasi sesi menghubungkan POS/HR tanpa membagikan token provider ke browser. Ini menjelaskan workflow source, bukan keunggulan bisnis yang telah diukur.
+
+## Brand positioning
+
+Workforce/HR provider untuk Workspace/Cabang, staff lifecycle, jadwal, permohonan dan attendance; integrasi Owner SagaPOS memakai delegasi server-side. Positioning final tetap mengikuti keputusan founder yang tercatat.
+
+## Messaging
+
+Sampaikan fungsi yang mempunyai bukti scope dan tanggal. Dataset provider yang tercatat masih synthetic. Real employee onboarding, full workday/device/GPS/camera, recovery/provider/evidence dan payroll/payout acceptance tetap gate.
+
+## FAQ
+
+Apakah repo lengkap berarti siap production? Tidak; source backup dan acceptance runtime berbeda. Apakah pricing/provider berubah? Tidak pada sinkronisasi ini. Source terbaru dibaca dari ref pada registry.
+
+## Technical overview
+
+Next.js workforce provider, MySQL dan signed server-to-server bridge; provider/source correction memiliki ref berbeda. SQLite/test fixture tidak disebut sebagai production engine.
+
+## Integrasi
+
+Next.js workforce provider, MySQL dan signed server-to-server bridge; provider/source correction memiliki ref berbeda. SQLite/test fixture tidak disebut sebagai production engine. Setiap provider/device mempunyai activation/acceptance tersendiri; identifier dan credential tidak masuk knowledge publik.
+
+## Data yang digunakan
+
+Role/workflow dan metadata produk sesuai source; media/attendance/financial data mengikuti izin dan retention kontrak. Knowledge ini tidak menyimpan customer data, credentials atau raw receipts.
+
+## Risiko dan asumsi
+
+Dataset provider yang tercatat masih synthetic. Real employee onboarding, full workday/device/GPS/camera, recovery/provider/evidence dan payroll/payout acceptance tetap gate. Unknown tidak ditutup dengan label SOURCE_PUSHED.
+
+## KPI dan success metrics
+
+KPI teknis: source dapat ditelusuri ke repo/ref/SHA, critical journey selesai tepat sekali dan recovery mempunyai bukti. Target bisnis/conversion/adoption terukur belum ditetapkan oleh audit ini; source push bukan KPI omzet.
+
+## Ide konten pemasaran
+
+PROPOSAL: jelaskan satu workflow yang tercatat dan tunjukkan batas fitur/source versus activation; gunakan demo sintetis berlabel, tanpa mengarang customer/testimoni.
+
+## Contoh caption
+
+PROPOSAL: "Kenali alur sagawork dan cek milestone yang sudah terverifikasi sebelum mulai operasional." Draft ini bukan keputusan campaign atau klaim seluruh produk siap.
+
+## Ide campaign
+
+PROPOSAL: edukasi workflow dan invitation demo sesuai status produk; real customer campaign hanya setelah acceptance dan scope publiknya jelas.
+
+## Sales talking points
+
+Command-time permission/scope, durable request recovery dan delegasi sesi menghubungkan POS/HR tanpa membagikan token provider ke browser. Jelaskan scope implementation, kebutuhan perangkat/provider dan gate yang masih terbuka sebelum memberi janji komersial.
+
+## Objection handling
+
+Source tersimpan bukan jaminan hardware/provider atau hasil usaha. Tunjukkan evidence yang cocok dengan source/release dan uraikan gate berikutnya; hindari janji ROI/SLA yang belum diputuskan.
+
+## Keputusan dan gap
+
+Lihat [PRODUCT](PRODUCT.md), [GAPS](../../GAPS.md) dan [source registry](../../docs/SOURCE_REGISTRY.md). Dataset provider yang tercatat masih synthetic. Real employee onboarding, full workday/device/GPS/camera, recovery/provider/evidence dan payroll/payout acceptance tetap gate.

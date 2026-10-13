@@ -1,5 +1,17 @@
 # SagaBio Dossier
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| application | [Source](https://github.com/notyourgas/sagabio/tree/source/current) | `80b25c15b5d59d3cf4c31cae02c2a8881fc3048b` | `SOURCE_PUSHED` |
+
+Source release `bdbf692a` merupakan ancestor ref kanonik yang memuat `80b25c1`. Main bootstrap lama bukan ref source terkini yang dipakai pada registry. Activation/customer authenticated UAT yang belum selesai pada release lama tidak dianggap lulus oleh sinkronisasi ini.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## Tujuan dokumen
 
 Mendefinisikan scope pilot, positioning, kebutuhan bisnis, dan batas teknis

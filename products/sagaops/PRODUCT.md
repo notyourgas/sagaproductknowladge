@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| pos-application-and-operations | [Source](https://github.com/notyourgas/sagaops/tree/source/current) | `68ce583badfa371ee2093c415eb78d9f48f60c11` | `SOURCE_PUSHED` |
+
+Source aplikasi dan operasi terkini telah tersedia pada ref kanonik `source/current`. Catatan aktivasi SaaS 14 Oktober di bawah tetap menjadi observasi runtime terbaru yang terdokumentasi; audit source ini tidak mengaktifkan rilis atau mengubah waiver/hasil gate sebelumnya. Public repository saga-pos adalah snapshot historis, bukan sumber aplikasi private terkini.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## 2026-10-14 - SaaS production activated; invited client access verified
 
 **CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / SCOPED_PRODUCTION_VALIDATED / NOT_BUSINESS_READY.** Andreas authorized one additional recovery correction and a task-specific suspension of the deployment guide. Original failures and the Linux qualification waiver remain historical evidence. V2 encrypted disposable restore, candidate boot, compatible rollback and candidate reboot PASS with production untouched during rehearsal. POS application runtime `95a6eda74593b731361a5c65c70f829276f33180` is now active with rollback `2a18c9d4d307844ae6061cd0100d73c4bdbd0c0d`; Platform stays `c794ed6b1fd5a5803c3c68496c8964660d4f89ac`. Gateway configuration/payment boundary preserved.

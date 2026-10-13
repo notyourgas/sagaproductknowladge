@@ -1,5 +1,17 @@
 # AOGTIVITY Dossier
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| archived-event-application | [Source](https://github.com/notyourgas/aogticvity/tree/source/archived) | `54fd00380e8001378accf19800e7bab4c1f80a0e` | `SOURCE_PUSHED` |
+
+Source event historis mempunyai ref archive yang terverifikasi. Status ARCHIVED/HOSTINGER_RUNTIME_RETIRED tetap mengikuti keputusan 26 Agustus; source backup tidak menyalakan layanan kembali.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## Tujuan dokumen
 
 Menjaga scope event-day operations, readiness, bisnis, teknis, sales, dan

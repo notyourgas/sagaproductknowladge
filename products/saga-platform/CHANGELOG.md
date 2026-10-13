@@ -1,5 +1,19 @@
 # Saga Platform Changelog
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| operator-onboarding | [Source](https://github.com/notyourgas/sagabook/tree/source/current-platform) | `d1a1a3bb482fb48514ceaeae0fee2b0ffe13da20` | `SOURCE_PUSHED` |
+| member-frontend | [Source](https://github.com/notyourgas/saga-member/tree/source/current) | `5291abaacde225c570ce89217781dcd49bb530e9` | `SOURCE_PUSHED` |
+| customer-platform | [Source](https://github.com/notyourgas/saga-customer-platform/tree/source/current) | `162ee83d1ee1a29c37443dbaccad52f16ce635e4` | `SOURCE_PUSHED` |
+
+Catatan release 14 Oktober dalam SagaOPS mencatat Platform runtime `c794ed6b1fd5a5803c3c68496c8964660d4f89ac`, POS runtime `95a6eda74593b731361a5c65c70f829276f33180`, provisioning native dan akses Owner demo yang terverifikasi. Ini menyelaraskan dokumen lintas produk dengan [observasi release](../sagaops/PRODUCT.md); bukan pemeriksaan runtime baru. Frontend Member `5291aba` dan Customer Platform `162ee83` kini mempunyai branch remote yang memuat source; sebelumnya catatan source lokal tidak membuktikan push. Full module/workday/employee/device/provider acceptance tetap terbuka.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## 2026-10-11 - SagaPOS Owner server printer preparation released; physical gates remain open
 
 **CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_SCOPED_UAT_PASS**: application **fa86a24d102f1766d30d5d48bbd493dca20b8c7e** is active/ready on schema37, reporting POSTGRES with worker READY and compatible operational rollback. This supersedes the prior03e35d8 active-runtime snapshot. Owner at **Kasir > Menu kasir > Pengaturan nota** can inspect and record server preparation for the current outlet/browser: USB/Bluetooth,58/80mm, model, Windows queue preference and footer. Optimistic revisions reject stale saves; existing device/audit tables persist preparation atomically. No new migration or dependency. Server preparation does not silently change manual local profiles. Browser reference is not an authenticated PC/driver/queue binding; all responses keep hardware dispatch OFF and physicalCommissioned/terminalAuthenticated false. The identified XH-80UL is USB/LAN; generic Bluetooth settings are not proof of Bluetooth hardware support.

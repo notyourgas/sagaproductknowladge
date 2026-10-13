@@ -1,5 +1,17 @@
 # Snap and Fit Product Knowledge
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| event-photo-prototype | [Source](https://github.com/notyourgas/snap-and-fit/tree/source/current) | `219079bbac1ab5637bd2eb1f171edaca56bbb25f` | `SOURCE_PUSHED` |
+
+Source prototype `219079b` tersimpan pada ref kanonik. Status prototype, protected preview dan synthetic UAT tetap mengikuti catatan evidence; tidak ada provider, production atau payout baru yang diaktifkan.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 Updated: 26 Agustus 2026
 Evidence status: `CONFIRMED / LOCAL_VALIDATED / PROTOTYPE_UAT_READY`
 

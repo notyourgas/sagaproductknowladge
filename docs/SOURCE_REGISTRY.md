@@ -2,54 +2,53 @@
 
 ## Tujuan
 
-Menjelaskan jenis source of truth dan provenance public-safe. Repository ini
-tidak mempublikasikan task ID, checkout lokal, worktree, atau private evidence
-path.
-
-Evidence cut-off: 3 September 2026
+Memetakan repo, surface dan immutable source yang benar untuk membaca atau mengembangkan produk Saga. Registry ini menyelesaikan ketidakjelasan URL source pada snapshot sebelumnya.
 
 ## Konteks
 
-Source lookup rinci tetap internal; dokumen publik hanya menyimpan kategori dan
-prioritas evidence.
+Diverifikasi 14 Oktober 2026. Repository aplikasi bersifat privat; tautan memerlukan akses yang diotorisasi. Knowledge portofolio tetap publik. Ref kanonik dapat berbeda dari main/default branch dan branch deployment. Source backup tidak menjadi izin deploy atau bukti BUSINESS_READY.
 
-| Produk | Source kategori | Knowledge kategori |
-|---|---|---|
-| SagaBook | Canonical source repository dan immutable production release | Product contract, changelog, release summary, runbook |
-| SagaView | Backend, Studio frontend, dan immutable production releases | Product contract, changelog, public-safe release evidence |
-| SagaBio | Canonical application source | Implementation package dan product docs |
-| SagaMenu | Canonical application source | Wave/sprint docs, changelog, release contract |
-| SagaFin | Canonical application/prototype source | PRD, decision log, release evidence |
-| COYABAG | Storefront dan operations backend source | Production readiness dan owner-approved catalog/policy |
-| AOGTICVITY | Canonical event application source | Product lock, backend handoff, UAT/release evidence |
-| Saga Platform | Control-plane source and product adapters | ADR, product contracts, migration/release evidence |
-| SagaOPS | Prototype/domain/backend source | Product contract, acceptance, outlet pilot evidence |
-| Saga AI | Knowledge/retrieval service source | ADR, evaluation, permission/tool contracts |
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| marketing | [Source](https://github.com/notyourgas/sagadevs-web/tree/main) | `cafb7ffa229c08040d58ef1f01cc283944177ca1` | `SOURCE_PUSHED` |
+| marketing | [Source](https://github.com/notyourgas/sagatech/tree/main) | `f8759a08acc8c12dfd952a641d8da318ab35047c` | `SOURCE_PUSHED` |
+| booking-candidate | [Source](https://github.com/notyourgas/sagabook/tree/source/current-book) | `c5a140075ead52fa11f045251fe87b9602582bce` | `SOURCE_PUSHED` |
+| public-booking-identity | [Source](https://github.com/notyourgas/sagabook/tree/source/current-booking-site) | `fc6915c4ace7aa2805adc67b69fe793bc7683cd7` | `SOURCE_PUSHED` |
+| operator-onboarding | [Source](https://github.com/notyourgas/sagabook/tree/source/current-platform) | `d1a1a3bb482fb48514ceaeae0fee2b0ffe13da20` | `SOURCE_PUSHED` |
+| member-frontend | [Source](https://github.com/notyourgas/saga-member/tree/source/current) | `5291abaacde225c570ce89217781dcd49bb530e9` | `SOURCE_PUSHED` |
+| customer-platform | [Source](https://github.com/notyourgas/saga-customer-platform/tree/source/current) | `162ee83d1ee1a29c37443dbaccad52f16ce635e4` | `SOURCE_PUSHED` |
+| pos-application-and-operations | [Source](https://github.com/notyourgas/sagaops/tree/source/current) | `68ce583badfa371ee2093c415eb78d9f48f60c11` | `SOURCE_PUSHED` |
+| studio | [Source](https://github.com/notyourgas/sagaview2/tree/source/current-studio) | `6b99cf0780dbe499cbc91b40742c536add7ff786` | `SOURCE_PUSHED` |
+| windows-and-control-plane | [Source](https://github.com/notyourgas/sagabooth/tree/source/current) | `0bdee15db0e0a9a6ebff55573655fe61cdec97ba` | `SOURCE_PUSHED` |
+| application | [Source](https://github.com/notyourgas/sagabio/tree/source/current) | `80b25c15b5d59d3cf4c31cae02c2a8881fc3048b` | `SOURCE_PUSHED` |
+| pilot-application-and-prototype | [Source](https://github.com/notyourgas/sagamenu/tree/main) | `2cd48139cea0f75d9a02b0a86d8f6ffe12ee2d58` | `SOURCE_PUSHED` |
+| application | [Source](https://github.com/notyourgas/SAGAFIN/tree/source/current) | `e775b5a0dccbd5eac82d82975c26b87499170f02` | `SOURCE_PUSHED` |
+| storefront-and-backend-candidate | [Source](https://github.com/notyourgas/coyabag/tree/source/current) | `24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a` | `SOURCE_PUSHED` |
+| archived-event-application | [Source](https://github.com/notyourgas/aogticvity/tree/source/archived) | `54fd00380e8001378accf19800e7bab4c1f80a0e` | `SOURCE_PUSHED` |
+| hr-application | [Source](https://github.com/notyourgas/sagawork/tree/source/current) | `fda2cc753daef80ca673be6333e4d44f69d6e705` | `SOURCE_PUSHED` |
+| scheduling-correction-candidate | [Source](https://github.com/notyourgas/sagawork/tree/source/scheduling-correction) | `f8bfaf85724f434bc032e8c3bc98e69f8bf209b3` | `SOURCE_PUSHED` |
+| event-photo-prototype | [Source](https://github.com/notyourgas/snap-and-fit/tree/source/current) | `219079bbac1ab5637bd2eb1f171edaca56bbb25f` | `SOURCE_PUSHED` |
+| planned-service | Belum ada implementasi independen terverifikasi | Tidak tersedia | `PLANNED` |
+| credentialed-public-trust-candidate | [Source](https://github.com/notyourgas/coyabag/tree/source/credentialed-public-trust) | `983bdbeedc821189ae420b1695aa14e67f6a40bd` | `SOURCE_PUSHED` |
+| dedicated-knowledge | [Knowledge](https://github.com/notyourgas/sagaview/tree/main) | `71ae784d59bb8ac2b3be5fbdb38d2295bd86227d` | `SOURCE_PUSHED` |
 
-## SagaView source manifest saat ini
 
-| Peran | Exact source | Status |
-|---|---|---|
-| Production backend S382 | `ceb33732144badbb929d212b0d5d7b3fd0e24474` | Release `20260903003542-ceb3373`; rollback `20260831080506-5f642d8` |
-| Production Studio S382 | `6bd8e54a0d472e700ec9acf00112f468656a0583` | Release `20260903005049-6bd8e54`; rollback `20260831081456-8257f49` |
+## Source machine-readable
 
-Manifest ini hanya mencatat exact source dan status public-safe. Tidak ada
-klaim physical UAT exact pair atau business readiness. Status pasangan
-`PRODUCTION_ACTIVATED / PHYSICAL_UAT_EVIDENCE_PENDING /
-BUSINESS_READY=false`.
+[SOURCE_REGISTRY.json](SOURCE_REGISTRY.json) menyimpan pasangan product/surface, repo, branch dan SHA; validator memeriksa cakupan semua direktori produk dan format provenance. Verifikasi remote dilakukan saat milestone, bukan oleh validator offline.
 
-## Internal source lookup
+## Surface pendamping
 
-`NEEDS CONFIRMATION`: public GitHub URL per source product belum lengkap.
-Agent internal harus resolve repository, checkout, branch, and junction at
-runtime; lokasi tersebut tidak disalin ke repository publik.
+- Multi-outlet finance: repo privat tersendiri, bukan SagaFin atau source POS.
+- Campaign QR: companion Book dengan release terpisah.
+- Member contracts: kontrak integrasi bersama.
+- saga-pos publik: snapshot historis; source aplikasi terkini adalah sagaops privat.
+- SagaView backend: module terikat source/release Book; source Studio dan knowledge khusus berbeda repository.
+
+## Kebijakan branch dan integrasi
+
+Branch source/current dan source/current-* adalah pointer source untuk clonning/handoff. Branch lama dan histori tetap dipertahankan. Main/default branch yang lebih lama tidak dijadikan provenance runtime terkini. Kandidat Book, Platform, SagaWork dan COYABAG tidak digabung buta ketika perubahan atau ancestry berbeda. Integrasi aplikasi memerlukan review fungsi dan gate releasenya sendiri; milestone ini hanya menyimpan seluruh kandidat dan menetapkan cara menemukannya.
 
 ## Source priority
 
-1. Keputusan terbaru Andreas.
-2. Active production release.
-3. Canonical decision log/contract.
-4. Source dan tests terbaru.
-5. Arsip lama yang sudah ditandai `DEPRECATED`.
-
-Jika ada konflik, catat di [GAPS](../GAPS.md) dan jangan memilih diam-diam.
+Keputusan Andreas terbaru, release/runtime evidence, kontrak produk, source/tests, histori dan proposal dibaca dengan prioritas UPDATE_PROTOCOL. Unknown tetap ditandai; Saga AI belum memiliki service independen terverifikasi.

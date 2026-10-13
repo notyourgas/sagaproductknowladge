@@ -1,5 +1,17 @@
 # SagaBooth Product Knowledge
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| windows-and-control-plane | [Source](https://github.com/notyourgas/sagabooth/tree/source/current) | `0bdee15db0e0a9a6ebff55573655fe61cdec97ba` | `SOURCE_PUSHED` |
+
+Repo privat dan source M1 `0bdee15` cocok dengan provenance knowledge sebelumnya. Semua source tersimpan pada ref kanonik. Customer kiosk, camera/printer hardware, QRIS, signed installer, control plane dan pilot tetap merupakan gate; backup GitHub tidak menutup gate tersebut.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 Updated: 16 Agustus 2026
 
 ## Tujuan dokumen
@@ -40,3 +52,11 @@ kiosk, Next/Nest/MySQL, SDK kamera, driver printer, integrasi QRIS, VPS/domain,
 signed installer, deployment, hardware qualification, pilot, atau business
 readiness. GitHub Actions belum dapat menjalankan job karena billing/spending
 limit akun, dan branch protection untuk repo private memerlukan GitHub Pro.
+
+## Ringkasan
+
+Software instant photobooth dengan aplikasi Windows lokal dan control plane web; berbeda dari self-photo workflow SagaView.
+
+## Status saat ini
+
+Source/ref terverifikasi pada [registry](../../docs/SOURCE_REGISTRY.md). Customer kiosk, SDK/driver, Canon/Sony/DNP qualification, QRIS, signed installer, control plane/VPS dan pilot belum ditutup. Print ambigu tidak otomatis diulang.

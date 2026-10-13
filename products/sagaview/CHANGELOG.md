@@ -1,5 +1,19 @@
 # SagaView Changelog
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| studio | [Source](https://github.com/notyourgas/sagaview2/tree/source/current-studio) | `6b99cf0780dbe499cbc91b40742c536add7ff786` | `SOURCE_PUSHED` |
+| dedicated-knowledge | [Knowledge](https://github.com/notyourgas/sagaview/tree/main) | `71ae784d59bb8ac2b3be5fbdb38d2295bd86227d` | `SOURCE_PUSHED` |
+
+
+Studio memiliki ref kanonik yang memuat source `6b99cf0`. Release aktif terakhir yang tercatat tetap aplikasi `6f28cfee` / `20260930021641-6f28cfe` dengan backend `ee3ddeee`; HEAD source tidak disamakan dengan runtime. Knowledge khusus notyourgas/sagaview direkonsiliasi dari catatan portofolio September, tanpa mengubah pricing/entitlement atau mengklaim cetak fisik.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## 2026-09-30 - Newspaper dan Passport Saga Studio aktif
 
 - `CONFIRMED / PRODUCTION_ACTIVATED`: Studio

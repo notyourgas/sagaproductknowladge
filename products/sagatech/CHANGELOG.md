@@ -1,5 +1,17 @@
 # SagaTech Changelog
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| marketing | [Source](https://github.com/notyourgas/sagatech/tree/main) | `f8759a08acc8c12dfd952a641d8da318ab35047c` | `SOURCE_PUSHED` |
+
+Source marketing yang sebelumnya berada pada umbrella repo kini disimpan di repository privat tersendiri dengan checksum source. Snapshot bukan bukti bahwa setiap file identik dengan deployment historis V23/V25; production tidak diubah dan validasi runtime tidak diulang.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## Tujuan dokumen
 
 Mencatat perubahan material SagaTech beserta provenance, gate, dan status

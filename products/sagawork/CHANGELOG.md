@@ -1,5 +1,18 @@
 # SagaWork Changelog
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| hr-application | [Source](https://github.com/notyourgas/sagawork/tree/source/current) | `fda2cc753daef80ca673be6333e4d44f69d6e705` | `SOURCE_PUSHED` |
+| scheduling-correction-candidate | [Source](https://github.com/notyourgas/sagawork/tree/source/scheduling-correction) | `f8bfaf85724f434bc032e8c3bc98e69f8bf209b3` | `SOURCE_PUSHED` |
+
+Repository privat SagaWork kini tersedia. Source build `fda2cc7` dan kandidat scheduling correction `f8bfaf8` tersimpan pada ref terpisah karena bukan satu garis ancestry. Provider runtime `0b10496` pada catatan 8 September tidak diganti oleh sinkronisasi source. Real workforce/payout/performance dan business readiness tetap mengikuti gate lama.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## 2026-09-08 — Owner production UAT untuk delegated HR PASS
 
 - `CONFIRMED`; SagaPOS Owner official-domain UAT memakai provider tanpa login HR kedua, dengan integrated state, read-only People dan logout revocation PASS.

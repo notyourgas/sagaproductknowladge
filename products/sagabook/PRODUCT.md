@@ -1,5 +1,18 @@
 # SagaBook Product Knowledge
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| booking-candidate | [Source](https://github.com/notyourgas/sagabook/tree/source/current-book) | `c5a140075ead52fa11f045251fe87b9602582bce` | `SOURCE_PUSHED` |
+| public-booking-identity | [Source](https://github.com/notyourgas/sagabook/tree/source/current-booking-site) | `fc6915c4ace7aa2805adc67b69fe793bc7683cd7` | `SOURCE_PUSHED` |
+
+Source voucher/commerce facts `c5a1400`, typed voucher `2b56868`, dependency/recovery candidate `e9e64df` dan booking identity `fc6915c4` kini tersimpan di GitHub. Kandidat Book dan Platform onboarding memiliki ref berbeda karena source yang tersedia mencakup perubahan berbeda; tidak dibuat merge aplikasi otomatis. Pernyataan belum push pada milestone lama merupakan histori yang digantikan untuk backup source saja. Status deployment/aktivasi setiap kandidat tetap mengikuti receipt releasenya.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## 2026-10-04 — Shared Member voucher checkout, belum deploy
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: Book `5a5b2cc825f1c048a6768f0406cb88f9e69fd798`. Signed Member connection membuka daftar voucher eligible dan kode manual di review booking; harga Book database dan discount Platform authoritative. Reservasi durable, retry paid/unpaid dan closure retention terhubung. Migration MySQL8.4, encrypted backup/disposable restore dan local checkout tests PASS; mapping/grant target nyata belum diaktifkan. Source lokal tanpa origin, belum push/PR/CI/deploy. [Detail](DOSSIER.md).

@@ -1,5 +1,18 @@
 # SagaBook Dossier
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| booking-candidate | [Source](https://github.com/notyourgas/sagabook/tree/source/current-book) | `c5a140075ead52fa11f045251fe87b9602582bce` | `SOURCE_PUSHED` |
+| public-booking-identity | [Source](https://github.com/notyourgas/sagabook/tree/source/current-booking-site) | `fc6915c4ace7aa2805adc67b69fe793bc7683cd7` | `SOURCE_PUSHED` |
+
+Source voucher/commerce facts `c5a1400`, typed voucher `2b56868`, dependency/recovery candidate `e9e64df` dan booking identity `fc6915c4` kini tersimpan di GitHub. Kandidat Book dan Platform onboarding memiliki ref berbeda karena source yang tersedia mencakup perubahan berbeda; tidak dibuat merge aplikasi otomatis. Pernyataan belum push pada milestone lama merupakan histori yang digantikan untuk backup source saja. Status deployment/aktivasi setiap kandidat tetap mengikuti receipt releasenya.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## 2026-10-04 — Voucher Member otomatis dan kode manual
 
 - `CONFIRMED`: source `5a5b2cc825f1c048a6768f0406cb88f9e69fd798`, branch `codex/member-voucher-code-book-20261004`; checkout ini belum mempunyai origin. Source lokal committed, bukan push/PR/CI/deploy/activation.

@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "verified_date": "2026-10-14",
+  "source_only": true,
+  "surfaces": [
+    {
+      "product": "sagadevs",
+      "surface": "marketing",
+      "repository": "https://github.com/notyourgas/sagadevs-web",
+      "private": true,
+      "branch": "main",
+      "commit": "cafb7ffa229c08040d58ef1f01cc283944177ca1",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagatech",
+      "surface": "marketing",
+      "repository": "https://github.com/notyourgas/sagatech",
+      "private": true,
+      "branch": "main",
+      "commit": "f8759a08acc8c12dfd952a641d8da318ab35047c",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagabook",
+      "surface": "booking-candidate",
+      "repository": "https://github.com/notyourgas/sagabook",
+      "private": true,
+      "branch": "source/current-book",
+      "commit": "c5a140075ead52fa11f045251fe87b9602582bce",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagabook",
+      "surface": "public-booking-identity",
+      "repository": "https://github.com/notyourgas/sagabook",
+      "private": true,
+      "branch": "source/current-booking-site",
+      "commit": "fc6915c4ace7aa2805adc67b69fe793bc7683cd7",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "saga-platform",
+      "surface": "operator-onboarding",
+      "repository": "https://github.com/notyourgas/sagabook",
+      "private": true,
+      "branch": "source/current-platform",
+      "commit": "d1a1a3bb482fb48514ceaeae0fee2b0ffe13da20",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "saga-platform",
+      "surface": "member-frontend",
+      "repository": "https://github.com/notyourgas/saga-member",
+      "private": true,
+      "branch": "source/current",
+      "commit": "5291abaacde225c570ce89217781dcd49bb530e9",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "saga-platform",
+      "surface": "customer-platform",
+      "repository": "https://github.com/notyourgas/saga-customer-platform",
+      "private": true,
+      "branch": "source/current",
+      "commit": "162ee83d1ee1a29c37443dbaccad52f16ce635e4",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagaops",
+      "surface": "pos-application-and-operations",
+      "repository": "https://github.com/notyourgas/sagaops",
+      "private": true,
+      "branch": "source/current",
+      "commit": "68ce583badfa371ee2093c415eb78d9f48f60c11",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagaview",
+      "surface": "studio",
+      "repository": "https://github.com/notyourgas/sagaview2",
+      "private": true,
+      "branch": "source/current-studio",
+      "commit": "6b99cf0780dbe499cbc91b40742c536add7ff786",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagabooth",
+      "surface": "windows-and-control-plane",
+      "repository": "https://github.com/notyourgas/sagabooth",
+      "private": true,
+      "branch": "source/current",
+      "commit": "0bdee15db0e0a9a6ebff55573655fe61cdec97ba",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagabio",
+      "surface": "application",
+      "repository": "https://github.com/notyourgas/sagabio",
+      "private": true,
+      "branch": "source/current",
+      "commit": "80b25c15b5d59d3cf4c31cae02c2a8881fc3048b",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagamenu",
+      "surface": "pilot-application-and-prototype",
+      "repository": "https://github.com/notyourgas/sagamenu",
+      "private": true,
+      "branch": "main",
+      "commit": "2cd48139cea0f75d9a02b0a86d8f6ffe12ee2d58",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagafin",
+      "surface": "application",
+      "repository": "https://github.com/notyourgas/SAGAFIN",
+      "private": true,
+      "branch": "source/current",
+      "commit": "e775b5a0dccbd5eac82d82975c26b87499170f02",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "coyabag",
+      "surface": "storefront-and-backend-candidate",
+      "repository": "https://github.com/notyourgas/coyabag",
+      "private": true,
+      "branch": "source/current",
+      "commit": "24e65ee4b0977c59966eab9bc5ffc64c3e3cce8a",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "aogticvity",
+      "surface": "archived-event-application",
+      "repository": "https://github.com/notyourgas/aogticvity",
+      "private": true,
+      "branch": "source/archived",
+      "commit": "54fd00380e8001378accf19800e7bab4c1f80a0e",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagawork",
+      "surface": "hr-application",
+      "repository": "https://github.com/notyourgas/sagawork",
+      "private": true,
+      "branch": "source/current",
+      "commit": "fda2cc753daef80ca673be6333e4d44f69d6e705",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagawork",
+      "surface": "scheduling-correction-candidate",
+      "repository": "https://github.com/notyourgas/sagawork",
+      "private": true,
+      "branch": "source/scheduling-correction",
+      "commit": "f8bfaf85724f434bc032e8c3bc98e69f8bf209b3",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "snap-and-fit",
+      "surface": "event-photo-prototype",
+      "repository": "https://github.com/notyourgas/snap-and-fit",
+      "private": true,
+      "branch": "source/current",
+      "commit": "219079bbac1ab5637bd2eb1f171edaca56bbb25f",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "saga-ai",
+      "surface": "planned-service",
+      "repository": null,
+      "private": null,
+      "branch": null,
+      "commit": null,
+      "source_status": "PLANNED_NO_INDEPENDENT_IMPLEMENTATION_VERIFIED",
+      "remote_verified_at": null,
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "coyabag",
+      "surface": "credentialed-public-trust-candidate",
+      "repository": "https://github.com/notyourgas/coyabag",
+      "private": true,
+      "branch": "source/credentialed-public-trust",
+      "commit": "983bdbeedc821189ae420b1695aa14e67f6a40bd",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagaview",
+      "surface": "dedicated-knowledge",
+      "repository": "https://github.com/notyourgas/sagaview",
+      "private": true,
+      "branch": "main",
+      "commit": "71ae784d59bb8ac2b3be5fbdb38d2295bd86227d",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "NOT_PERFORMED_BY_SOURCE_SYNC",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    }
+  ],
+  "related_repositories": [
+    {
+      "repository": "https://github.com/notyourgas/multi-outlet-finance",
+      "commit": "bf57446f82dd66b2f3f4ad00799aef8757de842a",
+      "role": "Private synthetic finance preview/staging; separate from SagaFin"
+    },
+    {
+      "repository": "https://github.com/notyourgas/saga-campaign-qr",
+      "commit": "03252de117155ddc16cc8fa4d5a38f42d4ee1f55",
+      "role": "SagaBook campaign companion; separate release surface"
+    },
+    {
+      "repository": "https://github.com/notyourgas/saga-member-contracts",
+      "commit": "892264b8471a76ecfa773d3d649dfa4ad7ba5205",
+      "role": "Shared integration contracts"
+    },
+    {
+      "repository": "https://github.com/notyourgas/saga-pos",
+      "commit": null,
+      "role": "Historical public snapshot; current private application source is sagaops"
+    }
+  ]
+}

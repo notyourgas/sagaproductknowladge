@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Sinkronisasi source dan pemetaan repo
+
+`CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
+
+| Surface | Repository/ref kanonik | Exact source | Status |
+|---|---|---|---|
+| pos-application-and-operations | [Source](https://github.com/notyourgas/sagaops/tree/source/current) | `68ce583badfa371ee2093c415eb78d9f48f60c11` | `SOURCE_PUSHED` |
+
+Source aplikasi dan operasi terkini telah tersedia pada ref kanonik `source/current`. Catatan aktivasi SaaS 14 Oktober di bawah tetap menjadi observasi runtime terbaru yang terdokumentasi; audit source ini tidak mengaktifkan rilis atau mengubah waiver/hasil gate sebelumnya. Public repository saga-pos adalah snapshot historis, bukan sumber aplikasi private terkini.
+
+Source/ref diverifikasi melalui Git remote pada 14 Oktober. Tidak ada deployment, migration, perubahan data/provider atau UAT runtime baru. Lihat [registry source](../../docs/SOURCE_REGISTRY.md) dan [ringkasan sinkronisasi](../../docs/SOURCE_SYNC_20261014.md). Pricing, positioning dan batas BUSINESS_READY tidak diubah.
+
 ## 2026-10-14 - SaaS production activated; invited client access verified
 
 **CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / SCOPED_PRODUCTION_VALIDATED / NOT_BUSINESS_READY.** The authorized extra correction passed V2 encrypted restore/boot/rollback/reboot. POS95a6eda is now production-active with rollback2a18c9d; Platform remainsc794ed6b. Protected paired configuration/restore and scoped web ingress PASS, including five affected routing cases. One authorized invited Owner account was provisioned and real login/dashboard/team/cashier/eight module reads verified; staff-only personal and foreign-tenant access correctly deny403. Chrome displays the authenticated dashboard. Gmail confirms the authorized credential email SENT. Earlier gate failures remain historical; Linux qualification remains USER_WAIVED. Full workday/module/employee/device/provider acceptance remains open, so demonstration access is verified but BUSINESS_READY is not claimed. Pricing/positioning unchanged. No customer identifiers/credential/raw evidence published. Source runtime95a6eda, operations45e9a78 and [release note68ce583](https://github.com/notyourgas/sagaops/blob/68ce583badfa371ee2093c415eb78d9f48f60c11/ops/production/SAGAPOS_SAAS_RELEASE_20261013.md); see SagaOPS PRODUCT/DOSSIER for scope. This supersedes the immediately preceding recovery hold and pending account/email status.

@@ -1,5 +1,9 @@
 # Saga Product Knowledge
 
+## 2026-10-14 - Cara menemukan source terbaru
+
+Mulai dari [registry source](docs/SOURCE_REGISTRY.md), [registry JSON](docs/SOURCE_REGISTRY.json) dan [laporan sync](docs/SOURCE_SYNC_20261014.md). Semua direktori produk masuk validator; ref source kanonik, default/main dan runtime dibedakan. Source privat tidak disalin ke knowledge publik.
+
 ## Tujuan repository
 
 Repository publik ini adalah single source of truth permanen untuk seluruh

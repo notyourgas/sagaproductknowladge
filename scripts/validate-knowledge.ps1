@@ -5,19 +5,8 @@ $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $PSScriptRoot
 $errors = [System.Collections.Generic.List[string]]::new()
 
-$products = @(
-    'sagadevs',
-    'sagabook',
-    'sagaview',
-    'sagabio',
-    'sagamenu',
-    'sagafin',
-    'coyabag',
-    'aogticvity',
-    'saga-platform',
-    'sagaops',
-    'saga-ai'
-)
+$products = @(Get-ChildItem -LiteralPath (Join-Path $repo 'products') -Directory | Sort-Object Name | ForEach-Object { $_.Name })
+if ($products.Count -lt 15) { $errors.Add('Product registry unexpectedly has fewer than 15 products') }
 
 $requiredFiles = @(
     'README.md',
@@ -32,6 +21,8 @@ $requiredFiles = @(
     'docs/STATUS_LEGEND.md',
     'docs/UPDATE_PROTOCOL.md',
     'docs/SOURCE_REGISTRY.md',
+    'docs/SOURCE_REGISTRY.json',
+    'docs/SOURCE_SYNC_20261014.md',
     'docs/CHATGPT_IMPORT_GUIDE.md',
     'docs/brand/BRAND_GUIDELINES.md',
     'docs/brand/TONE_OF_VOICE.md',
@@ -126,6 +117,21 @@ foreach ($product in $products) {
         }
     }
 }
+
+$sourceRegistryPath = Join-Path $repo 'docs/SOURCE_REGISTRY.json'
+try {
+    $sourceRegistry = Get-Content -LiteralPath $sourceRegistryPath -Raw -Encoding utf8 | ConvertFrom-Json
+    if ($sourceRegistry.source_only -ne $true) { $errors.Add('Source registry must declare source_only=true') }
+    foreach ($product in $products) {
+        if (-not @($sourceRegistry.surfaces | Where-Object { $_.product -eq $product }).Count) { $errors.Add("Missing source registry product: $product") }
+    }
+    foreach ($surface in $sourceRegistry.surfaces) {
+        if ($surface.product -notin $products) { $errors.Add("Unknown source registry product: $($surface.product)") }
+        if ($surface.source_status -eq 'PUSHED') {
+            if ($surface.commit -notmatch '^[0-9a-f]{40}$' -or $surface.repository -notmatch '^https://github.com/notyourgas/[A-Za-z0-9_.-]+$' -or [string]::IsNullOrWhiteSpace($surface.branch)) { $errors.Add("Invalid source provenance: $($surface.product)/$($surface.surface)") }
+        } elseif ($surface.source_status -ne 'PLANNED_NO_INDEPENDENT_IMPLEMENTATION_VERIFIED') { $errors.Add('Unknown source registry status') }
+    }
+} catch { $errors.Add('Source registry JSON could not be validated') }
 
 $decisionsPath = Join-Path $repo 'DECISIONS.md'
 if (Test-Path -LiteralPath $decisionsPath -PathType Leaf) {
