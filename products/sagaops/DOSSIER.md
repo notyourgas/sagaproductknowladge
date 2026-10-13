@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-10-13 — closing the daily-operations software slice
+
+`CONFIRMED`. Source `7f875cb229065de79d696f1512ccf2493fd436fa` covers the ordinary and reopen session writers with one shared outlet lock/active-session check. Conflict rejects before new facts and the cashier form gives explicit reload guidance. No migration, role expansion, real-stock correction or provider mutation. Read-only production observed unchanged at `2a18c9d`, ready with PostgreSQL reporting and Gateway mode preserved.
+
+The final 49-case scoped proof covers opening conflict/closed immutability/Owner QRIS boundary (7), stock receiving/waste/count/closing service and disposable persistence (24), money/operational-day/KDS/recovery plus tablet browser (18). The extended opening/reopen case is a rerun, not an extra distinct case. Static952 modules/37 migrations and final TypeScript PASS. PGlite has a single connection; no native multi-client claim. This does not certify all49 screens, actual staff accounts, original store quantities or physical devices.
+
+Delivery remains `IMPLEMENTED_NOT_DEPLOYED`, `BUSINESS_READY=false`. The isolated Linux builder and effective Owner access are not ready; new source-bound native qualification and encrypted restore/compatible rollback must precede activation. Do not retry packaging on the serving VPS, lower resource floors, invent balances or turn an unavailable historical period into current authority. Cashier count submission versus Owner finalization and manager stock review must be validated with actual granted permissions; no blanket Owner assignment. Physical printer and independently managed offsite recovery remain separate OPEN acceptance.
+
 ## 2026-10-13 - Invited client onboarding implementation strategy prepared
 
 **CONFIRMED documentation milestone:** Andreas requested strategy first. Source `c50702fba0cd044b8da99335b39be1920a17ed7e` is committed/pushed with [the implementation strategy](https://github.com/notyourgas/sagaops/blob/c50702fba0cd044b8da99335b39be1920a17ed7e/docs/STRATEGI_ONBOARDING_CLIENT_SAGAPOS.md). No feature code, production activation, real client account, invitation or email was executed in this strategy turn; no new runtime test claims.

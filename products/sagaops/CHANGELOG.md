@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-10-13 — scoped daily-operations qualification and shift guard
+
+- `CONFIRMED`; source `7f875cb229065de79d696f1512ccf2493fd436fa`, `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Baseline reproduced two accepted initial shifts; ordinary opening and reopening now share the same scoped transaction guard, with cashier recovery guidance. No business data, permission, schema, payment mode or production change.
+- Final 49 distinct focused cases PASS; static952/37 migrations and TypeScript PASS. Baseline reproduction and one corrected invalid-fingerprint fixture failure retained. PGlite/adapter/service plus tablet Chromium scope only; not native contention, all49-screen acceptance or human signoff.
+- Active production remains `2a18c9d` ready/reporting ready. Build/recovery/activation, actual-role operational pilot, supported historical-start UX, physical printer and managed offsite remain OPEN. Previous packaging failures/limits preserved; no hosted CI, PR or AppDeploy. Source checkpoint: `docs/sagapos-v2/OPERATIONS_CLOSURE_20261013.md`.
+
 ## 2026-10-13 - Invited client onboarding implementation strategy prepared
 
 **CONFIRMED documentation milestone:** Andreas requested strategy first. Source `c50702fba0cd044b8da99335b39be1920a17ed7e` is committed/pushed with [the implementation strategy](https://github.com/notyourgas/sagaops/blob/c50702fba0cd044b8da99335b39be1920a17ed7e/docs/STRATEGI_ONBOARDING_CLIENT_SAGAPOS.md). No feature code, production activation, real client account, invitation or email was executed in this strategy turn; no new runtime test claims.

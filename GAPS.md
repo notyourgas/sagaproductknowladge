@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-13 — SagaPOS operations source7f875cb release/acceptance gap
+
+`CONFIRMED / OPEN`: 49 scoped local cases and source7f875cb do not prove native multi-client first opening/reopening, actual-role whole-shift UAT, physical printer or managed offsite recovery. Production remains2a18c9d. Required closure: usable isolated Linux builder; native contention/legacy active-session inspection; effective Owner; source-bound immutable artifact/encrypted restore/compatible rollback/activation; operator stock/cash/KDS/report reconciliation and supported historical-start explanation. No data correction, permission expansion, provider activation or retry-limit reset is approved by these test results. These residual gates do not replace the separately confirmed full-module invited-client SaaS scope.
+
 ## 2026-10-13 - Invited client onboarding implementation strategy prepared
 
 **CONFIRMED documentation milestone:** Andreas requested strategy first. Source `c50702fba0cd044b8da99335b39be1920a17ed7e` is committed/pushed with [the implementation strategy](https://github.com/notyourgas/sagaops/blob/c50702fba0cd044b8da99335b39be1920a17ed7e/docs/STRATEGI_ONBOARDING_CLIENT_SAGAPOS.md). No feature code, production activation, real client account, invitation or email was executed in this strategy turn; no new runtime test claims.

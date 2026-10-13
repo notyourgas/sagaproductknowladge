@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-13 — SagaPOS shift opening/reopening qualification
+
+`CONFIRMED`; source `7f875cb229065de79d696f1512ccf2493fd436fa` adds shared outlet opening/reopening guard and cashier conflict recovery guidance. 49 focused cases, static952 and TypeScript PASS, scoped local evidence only. Production unchanged `2a18c9d`; release/native contention/operator/hardware gates OPEN. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. See SagaOPS Product/Dossier/Changelog; no payment, role or business-data mutation.
+
 ## 2026-10-13 - Invited client onboarding implementation strategy prepared
 
 **CONFIRMED documentation milestone:** Andreas requested strategy first. Source `c50702fba0cd044b8da99335b39be1920a17ed7e` is committed/pushed with [the implementation strategy](https://github.com/notyourgas/sagaops/blob/c50702fba0cd044b8da99335b39be1920a17ed7e/docs/STRATEGI_ONBOARDING_CLIENT_SAGAPOS.md). No feature code, production activation, real client account, invitation or email was executed in this strategy turn; no new runtime test claims.

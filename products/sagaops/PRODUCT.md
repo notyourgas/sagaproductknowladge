@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-13 — outlet shift opening/reopening guard qualified locally
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source `7f875cb229065de79d696f1512ccf2493fd436fa` serializes ordinary opening and authorized reopening through one outlet-scoped PostgreSQL transaction guard; cashier conflict guidance preserves the form and asks for reload instead of opening a second shift. No schema, dependency, role grant, business stock or payment/provider change. Final scoped qualification: 49 distinct cases PASS, static 952 modules/37 migrations and TypeScript PASS; tablet cash-count/conflict accessibility and no-mutation path PASS. These are PGlite/service/adapter/Chromium proofs, not native multi-connection, all49-screen or human UAT.
+
+Production remains `2a18c9d4d307844ae6061cd0100d73c4bdbd0c0d`, health/reporting ready and Gateway unchanged. No new artifact, stage, encrypted restore, rehearsal or activation for this source. Required next: isolated Linux builder, native opening/reopen contention qualification, fresh Owner/recovery and guarded release; actual-role stock/cash walkthrough, historical-start UX, printer and managed offsite acceptance remain OPEN. `BUSINESS_READY=false`.
+
 ## 2026-10-13 - Invited client onboarding implementation strategy prepared
 
 **CONFIRMED documentation milestone:** Andreas requested strategy first. Source `c50702fba0cd044b8da99335b39be1920a17ed7e` is committed/pushed with [the implementation strategy](https://github.com/notyourgas/sagaops/blob/c50702fba0cd044b8da99335b39be1920a17ed7e/docs/STRATEGI_ONBOARDING_CLIENT_SAGAPOS.md). No feature code, production activation, real client account, invitation or email was executed in this strategy turn; no new runtime test claims.

@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-13 — SagaPOS daily operations: local qualification, not activation
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `7f875cb229065de79d696f1512ccf2493fd436fa` protects ordinary shift opening and authorized reopening with one outlet-scoped guard and gives cashier conflict/reload guidance. Final49 distinct focused cases plus static952/37 migrations and TypeScript PASS; PGlite/service/adapter/tablet Chromium only, not native multi-client or whole49-screen/operator acceptance. Production remains `2a18c9d`, ready/reporting ready, Gateway unchanged. Isolated builder/effective Owner/native/recovery/activation, actual-role stock/cash walkthrough, historical-start UX, physical printer and managed offsite remain OPEN. No new payment/provider/role activation, migration or business-stock mutation; `BUSINESS_READY=false`. [Details](products/sagaops/PRODUCT.md).
+
 ## 2026-10-13 - Invited client onboarding implementation strategy prepared
 
 **CONFIRMED documentation milestone:** Andreas requested strategy first. Source `c50702fba0cd044b8da99335b39be1920a17ed7e` is committed/pushed with [the implementation strategy](https://github.com/notyourgas/sagaops/blob/c50702fba0cd044b8da99335b39be1920a17ed7e/docs/STRATEGI_ONBOARDING_CLIENT_SAGAPOS.md). No feature code, production activation, real client account, invitation or email was executed in this strategy turn; no new runtime test claims.
