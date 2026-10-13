@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-10-13 - Artifact Linux tersedia; qualification lambat dilewati atas instruksi founder
+
+**CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.** Andreas meminta melewati qualification Linux yang lambat dan melanjutkan deploy. Hasil timeout dan dua correction round sebelumnya tetap FAIL dalam histori; tidak diubah menjadi PASS. Keputusan ini hanya menggantikan gate qualification tersebut. Auth, isolasi tenant, integritas artifact, backup/restore dan rollback tetap berlaku.
+
+Artifact POS source `95a6eda74593b731361a5c65c70f829276f33180` berhasil dibuat oleh runner packaging kanonik pada Linux terisolasi,171417600byte. SHA256 `6fa4e99f3ee708ddc20180f65254b92006a3642dd6c99848fb258e39b2e43fcf`; tree digest `8378833669abdf055860de60eddd61581db5117eae2dc2392c34f2ebdf4f2f5a`. Canonical archive check, transfer checksum dan pemeriksaan archive independen pada host lulus. Belum staged/activated production; bukan Windows artifact atau klaim native Linux qualification lulus.
+
+Source Platform `c794ed6b1fd5a5803c3c68496c8964660d4f89ac` committed/pushed memperbaiki helper read-only agar menerima password12-128karakter yang valid, termasuk simbol, serta mengeluarkan fase kegagalan aman tanpa secret. AST/JS syntax lulus. Auth operator production belum berhasil; percobaan dengan credential yang tidak berubah dihentikan. Tidak ada reset password, account client atau email credential yang dibuat/dikirim.
+
+Backup terenkripsi/offsite dan disposable MySQL restore kandidat Platform final lulus, termasuk kedua migrasi. Rebind awal gagal menunggu MySQL ready saat builder aktif; koreksi1 setelah VM berhenti lulus dengan source/deadline tetap. Baseline POS online encrypted DB, signing-pair dan receipt-evidence restore lulus; service/PID production tidak berubah. Tiga archive terenkripsi tersimpan pada host terpisah dan checksum lulus; cloud-offsite POS tetap belum tervalidasi. Ini bukan candidate SaaS boot/reboot, rollback atau recovery attendance client.
+
+**OPEN:** akses operator aktif, fresh admission/stage, konfigurasi/addon/receipt-consumer/ingress SaaS, candidate recovery/compatible rollback dan authenticated client acceptance. Production tetap2a18c9d/Platformaeb17ba, alive/ready,GATEWAY; tidak ada aktivasi baru. Pricing/positioning tetap. [Source POS](https://github.com/notyourgas/sagaops/tree/95a6eda74593b731361a5c65c70f829276f33180), [source Platform](https://github.com/notyourgas/sagabook/tree/c794ed6b1fd5a5803c3c68496c8964660d4f89ac).
+
 ## 2026-10-13 - Undangan manual dan restore Platform; Linux qualification tertahan
 
 **CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.** Source Platform `68e09cdc9735e4709105c9ec81b7ce4547e2ba5f` dan POS `95a6eda74593b731361a5c65c70f829276f33180` telah committed/pushed. Operator kini bisa memasukkan email lalu menyalin tautan aktivasi sekali untuk dikirim sendiri. Client mengisi nama pemilik, bisnis, jenis bisnis, outlet dan password. Pengiriman manual tidak memanggil mailer dan tidak dianggap email terkirim; pengiriman otomatis masih membutuhkan provider. Tautan lama tidak ditampilkan di daftar; rotasi eksplisit membatalkannya.

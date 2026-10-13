@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-248 - Qualification Linux lambat dilewati; packaging dan pengaman production dipertahankan
+
+- Tanggal:13 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED; status ACTIVE.
+- Keputusan: lewati pengulangan qualification Linux yang timeout, lalu lanjutkan pekerjaan deploy yang diotorisasi. Histori gagal dan budget tetap tercatat; tidak diberi label PASS.
+- Alasan: mengurangi penundaan dari software emulation setelah bukti source Windows dan focused Linux tersedia.
+- Alternatif: mengulang native timeout tanpa perubahan, mengubah assertion/deadline atau menganggap paket Windows sebagai artifact Linux; tidak dipakai.
+- Dampak: artifact POS95a6eda kini berhasil dipackage secara kanonik di Linux dan diverifikasi. Backup/restore tetap dijalankan; auth/isolation/integrity/rollback tidak dihapus. Akses operator masih dibutuhkan sebelum aktivasi. Tidak ada deployment/account/email nyata dari keputusan ini.
+- Dokumen: PRODUCT/DOSSIER/CHANGELOG SagaOPS, portfolio/root changelog, MASTER, SYNC_STATUS dan GAPS. Source Platformc794ed6b memperbaiki helper authentication diagnostics; pricing/positioning tetap.
+
 ## DEC-247 — SagaPOS BIOS deferred; independent software and existing-builder discovery
 
 - Tanggal:13 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED; status ACTIVE.
