@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-247 — SagaPOS BIOS deferred; independent software and existing-builder discovery
+
+- Tanggal:13 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED; status ACTIVE.
+- Keputusan: tunda perubahan BIOS/restart terkait virtualisasi; lanjutkan pekerjaan software independen dan cari builder Linux yang sudah tersedia.
+- Alasan: unblock pengembangan tanpa menyulitkan Owner dengan perubahan BIOS sekarang.
+- Alternatif ditolak: memaksa BIOS/restart, mengulang packaging pada serving VPS, hosted GitHub job, layanan berbayar baru atau melemahkan gate. WSL1 hanya opsi riset, bukan builder siap atau izin setup/restart otomatis.
+- Dampak: satu reachable Linux host adalah production, sehingga tidak diterima sebagai builder terpisah. Proof native client disiapkan; timeout setup direkonsiliasi/fixture dihentikan, koreksi tertahan disk sebelum assertion. Tidak ada deploy/payment/stock/provider/permission mutation; budget dan failure history tetap.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio/root CHANGELOG, MASTER, GAPS dan SYNC_STATUS; source6e6aca7, current2a18c9d/rollback783017d. Business readiness tetap belum terverifikasi.
+
 ## 2026-10-08 — SagaPOS V7 founder decisions confirmed; setup guard qualified
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Andreas confirmed one shared stock balance for the current pilot. Separate/grouped location configuration belongs to the subsequent SaaS stage and is not available or activated by this decision. D19 physical inter-location transfer is not applicable to the explicitly shared pilot; source/UI/API explanation, retained history, stock integrity and UAT remain required. This replaces the unresolved current-pilot topology decision without claiming a functional transfer passed.
