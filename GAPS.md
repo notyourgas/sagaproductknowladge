@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-13 — historical explanation closed locally; exact coverage and activation OPEN
+
+`CONFIRMED`: source06aabc5 closes generic historical error handling and provides explicit authorized current-report recovery. Eight scoped cases/static/TypeScript PASS; production2a18c9d unchanged, no deploy. Exact earliest supported date is NOT implemented: server-derived immutable authority coverage needs timezone/cutoff, mid-day initialization, outlet/location change, COMPANY compatibility and tenant isolation tests. Linux builder, native independent-client opening/reopen qualification, effective Owner, source-bound artifact/encrypted restore/rollback/activation, actual-role full-shift UAT, printer and managed offsite acceptance remain OPEN. No budget/attempt reset or same-VPS packaging retry. Full invited-client SaaS requirements remain separate and OPEN; BUSINESS_READY=false.
+
 ## 2026-10-13 — SagaPOS operations source7f875cb release/acceptance gap
 
 `CONFIRMED / OPEN`: 49 scoped local cases and source7f875cb do not prove native multi-client first opening/reopening, actual-role whole-shift UAT, physical printer or managed offsite recovery. Production remains2a18c9d. Required closure: usable isolated Linux builder; native contention/legacy active-session inspection; effective Owner; source-bound immutable artifact/encrypted restore/compatible rollback/activation; operator stock/cash/KDS/report reconciliation and supported historical-start explanation. No data correction, permission expansion, provider activation or retry-limit reset is approved by these test results. These residual gates do not replace the separately confirmed full-module invited-client SaaS scope.

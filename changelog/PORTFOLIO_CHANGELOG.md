@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-13 — SagaPOS historical report recovery validated locally
+
+`CONFIRMED`: source06aabc5 adds specific historical denial guidance and explicit current recovery; scope retained, no guessed start/zero balance. Eight focused service/Chromium cases, static and TypeScript PASS. No deployment/activation, production2a18c9d healthy and Gateway unchanged. Exact historical coverage/native contention/builder/Owner/recovery/operator/device gates remain OPEN; BUSINESS_READY=false. Product/Dossier/product and root Changelogs/Master/Gaps/Sync Status synchronized; invited-client scope unchanged.
+
 ## 2026-10-13 — SagaPOS shift opening/reopening qualification
 
 `CONFIRMED`; source `7f875cb229065de79d696f1512ccf2493fd436fa` adds shared outlet opening/reopening guard and cashier conflict recovery guidance. 49 focused cases, static952 and TypeScript PASS, scoped local evidence only. Production unchanged `2a18c9d`; release/native contention/operator/hardware gates OPEN. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`. See SagaOPS Product/Dossier/Changelog; no payment, role or business-data mutation.

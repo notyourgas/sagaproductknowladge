@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-10-13 — report-history recovery source slice
+
+`CONFIRMED`. Source `06aabc5c4dd299ded104ce815da0d1d9a0d10cfc`: browser consumes only safe error codes paired with HTTP status. Missing-authority422, missing-location422 and authority-change409 show distinct guidance; 401/403 and unknown/non-JSON responses preserve denial/failure semantics. Draft dates and previous applied URL remain until explicit current recovery. No data, schema, dependency, permission, provider or payment change; current recovery retains COMPANY/OUTLET authorization and family. No earliest historical date is fabricated.
+
+Validation:8 focused cases PASS/0FAIL/0SKIP, static952 modules/37migrations and TypeScript PASS; Chromium1440/1024/390px filter no overflow and zero serious/critical Axe findings. Existing49-case source7f875 proof is not rerun or combined into a new whole-suite claim. Production freshly healthy2a18c9d with GATEWAY unchanged. IMPLEMENTED_NOT_DEPLOYED; BUSINESS_READY=false. [Source checkpoint and residual strategy](https://github.com/notyourgas/sagaops/blob/06aabc5c4dd299ded104ce815da0d1d9a0d10cfc/docs/sagapos-v2/OPERATIONS_CLOSURE_20261013.md).
+
+Residual exact-start metadata must derive from immutable calendar/location facts, with timezone/cutoff, mid-day initialization, outlet changes and tenant isolation acceptance; explanation/recovery is not that metadata. Native contention, isolated Linux artifact, effective Owner, encrypted restore/compatible rollback/activation, actual-role full shift, printer and managed offsite recovery remain OPEN. Do not supersede the separately confirmed invited-client full-module scope.
+
 ## 2026-10-13 — closing the daily-operations software slice
 
 `CONFIRMED`. Source `7f875cb229065de79d696f1512ccf2493fd436fa` covers the ordinary and reopen session writers with one shared outlet lock/active-session check. Conflict rejects before new facts and the cashier form gives explicit reload guidance. No migration, role expansion, real-stock correction or provider mutation. Read-only production observed unchanged at `2a18c9d`, ready with PostgreSQL reporting and Gateway mode preserved.

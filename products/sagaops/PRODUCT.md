@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-13 — historical report explanation and explicit recovery
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source `06aabc5c4dd299ded104ce815da0d1d9a0d10cfc` explains missing historical authority, unavailable stock location and in-period authority changes separately. Rejected dates remain unchanged; old figures/CSV are cleared. Explicit current-report recovery retains selected family and scope and must pass server authorization; no automatic fallback, zero balance, guessed supported-start date or raw server details.
+
+Eight focused service/Chromium cases PASS, static952/37migrations and TypeScript PASS; desktop/tablet/mobile filter a11y has zero serious/critical findings. No native database or actual-role full-shift acceptance claim. Fresh production remains2a18c9d, healthy/reporting ready, GATEWAY unchanged; no deploy or activation. Exact supported-history coverage metadata, Linux builder/native contention, Owner/recovery release gates, human UAT, printer and offsite recovery remain OPEN. Full invited-client SaaS scope remains separately tracked; BUSINESS_READY=false.
+
 ## 2026-10-13 — outlet shift opening/reopening guard qualified locally
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Source `7f875cb229065de79d696f1512ccf2493fd436fa` serializes ordinary opening and authorized reopening through one outlet-scoped PostgreSQL transaction guard; cashier conflict guidance preserves the form and asks for reload instead of opening a second shift. No schema, dependency, role grant, business stock or payment/provider change. Final scoped qualification: 49 distinct cases PASS, static 952 modules/37 migrations and TypeScript PASS; tablet cash-count/conflict accessibility and no-mutation path PASS. These are PGlite/service/adapter/Chromium proofs, not native multi-connection, all49-screen or human UAT.

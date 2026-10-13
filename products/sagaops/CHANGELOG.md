@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-13 — explain denied history without silently replacing the period
+
+`CONFIRMED`; source `06aabc5c4dd299ded104ce815da0d1d9a0d10cfc` committed/pushed. Before generic errors; after status/code-specific history guidance and explicit current-report recovery retaining scope/family. Eight focused cases/static/TypeScript PASS; no schema/data/permission/payment change. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production healthy2a18c9d unchanged. Exact history-start metadata, native/Owner/builder/recovery/UAT/device gates remain OPEN. BUSINESS_READY=false. Source: Andreas continuation and scoped source/browser evidence; [checkpoint](https://github.com/notyourgas/sagaops/blob/06aabc5c4dd299ded104ce815da0d1d9a0d10cfc/docs/sagapos-v2/OPERATIONS_CLOSURE_20261013.md).
+
 ## 2026-10-13 — scoped daily-operations qualification and shift guard
 
 - `CONFIRMED`; source `7f875cb229065de79d696f1512ccf2493fd436fa`, `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Baseline reproduced two accepted initial shifts; ordinary opening and reopening now share the same scoped transaction guard, with cashier recovery guidance. No business data, permission, schema, payment mode or production change.

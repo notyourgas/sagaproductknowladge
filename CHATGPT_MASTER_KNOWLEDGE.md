@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-13 — SagaPOS history recovery is source-only
+
+`CONFIRMED`: source `06aabc5c4dd299ded104ce815da0d1d9a0d10cfc` explains historical-authority/location/change failures without displaying unavailable data as zero. Only an explicit user action requests current data, retaining family and scope and server permission checks. Eight focused service/Chromium cases/static/TypeScript PASS; no native or human-UAT claim. Production remains healthy2a18c9d, GATEWAY unchanged; IMPLEMENTED_NOT_DEPLOYED, BUSINESS_READY=false. Exact first supported business-day metadata is still OPEN, as are builder/native/Owner/recovery/full-shift/printer/offsite gates. Separate invited-client full-module onboarding scope is not certified by this slice.
+
 ## 2026-10-13 — SagaPOS daily operations: local qualification, not activation
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`: source `7f875cb229065de79d696f1512ccf2493fd436fa` protects ordinary shift opening and authorized reopening with one outlet-scoped guard and gives cashier conflict/reload guidance. Final49 distinct focused cases plus static952/37 migrations and TypeScript PASS; PGlite/service/adapter/tablet Chromium only, not native multi-client or whole49-screen/operator acceptance. Production remains `2a18c9d`, ready/reporting ready, Gateway unchanged. Isolated builder/effective Owner/native/recovery/activation, actual-role stock/cash walkthrough, historical-start UX, physical printer and managed offsite remain OPEN. No new payment/provider/role activation, migration or business-stock mutation; `BUSINESS_READY=false`. [Details](products/sagaops/PRODUCT.md).

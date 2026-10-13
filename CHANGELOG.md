@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-13 — SagaOPS explicit historical report recovery
+
+`CONFIRMED`; source06aabc5: specific history/location/change guidance, dates preserved and explicit current recovery retaining authorization. Eight focused cases/static/TypeScript PASS. Product/Dossier/product and portfolio Changelogs/Master/Gaps/Sync Status updated; no price/positioning change. Production healthy2a18c9d and Gateway unchanged, IMPLEMENTED_NOT_DEPLOYED; exact coverage and release/UAT/hardware gates OPEN, BUSINESS_READY=false. Knowledge provenance main HEAD after push; no private evidence or identifiers published.
+
 ## 2026-10-13 — SagaOPS daily-operations source qualification
 
 `CONFIRMED`; sync Product, Dossier, product/portfolio changelogs, Master, Gaps and Sync Status for source `7f875cb229065de79d696f1512ccf2493fd436fa`. Shared outlet opening/reopen guard, cashier conflict guidance, final49 focused cases/static952/TypeScript PASS. Scoped local proof only; production unchanged `2a18c9d`, no new deploy, permission, business-data or provider change. Builder/native/Owner/recovery/operator/hardware gates remain OPEN; `BUSINESS_READY=false`. Knowledge provenance: main HEAD after push; no private evidence, credentials or identifiers published.
