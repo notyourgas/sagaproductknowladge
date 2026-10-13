@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-10-13 - Undangan manual dan restore Platform; Linux qualification tertahan
+
+**CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.** Source Platform `68e09cdc9735e4709105c9ec81b7ce4547e2ba5f` dan POS `95a6eda74593b731361a5c65c70f829276f33180` telah committed/pushed. Operator kini bisa memasukkan email lalu menyalin tautan aktivasi sekali untuk dikirim sendiri. Client mengisi nama pemilik, bisnis, jenis bisnis, outlet dan password. Pengiriman manual tidak memanggil mailer dan tidak dianggap email terkirim; pengiriman otomatis masih membutuhkan provider. Tautan lama tidak ditampilkan di daftar; rotasi eksplisit membatalkannya.
+
+Tes manual: 13 kasus PHP/98 assertion dan 1 kasus browser sintetis lulus. Profil runner Platform-only, migrasi undangan, replay dan batas resource juga tervalidasi. Backup production Platform terenkripsi/offsite, checksum dan disposable MySQL restore kandidat lulus, termasuk kedua migrasi. Ini tidak membuktikan recovery POS atau perjalanan client di production.
+
+Builder Linux lokal terisolasi berhasil menjalankan static check dan 18 focused cases. Dua perjalanan native PostgreSQL18 belum lulus: awal timeout180s, koreksi1 init60s gagal, koreksi2 timeout180s; batas dua koreksi telah terpakai tanpa melemahkan assertion/deadline. VM dihentikan dengan evidence dipertahankan. Artifact runtime belum dibuat dan rilis baru belum diaktifkan. Production lama tetap aktif; tidak ada undangan/email/account client nyata.
+
+**OPEN:** builder Linux cukup cepat, artifact terikat kandidat, konfigurasi/consumer receipt/ingress SaaS, recovery POS dan autentikasi operator production yang sah. Helper lama menolak format credential sebelum login; pemeriksaan alternatif ditolak automatic approval review. Pricing/positioning tetap. [Checkpoint source](https://github.com/notyourgas/sagabook/blob/68e09cdc9735e4709105c9ec81b7ce4547e2ba5f/docs/SAGAPOS_CLIENT_ONBOARDING_RELEASE_20261013.md).
+
 ## 2026-10-13 - Client staff requests recover lost responses
 
 **CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED:** Source `95a6eda74593b731361a5c65c70f829276f33180` committed/pushed; paired Platform remains `8ab3127acb6e7351c5df9754df8cc932f9ebbec4`. The client personal portal now offers leave, permission, sick leave, own schedule-change requests and hourly overtime. Request identity comes from the verified staff session. Submission requires personal.write, a mandatory operation key and whitelisted fields; status requires personal.view and is scoped to that employee. Missing/foreign schedules fail closed. A missing schedule FK is mapped after rollback to the same safe domain denial as ownership checks.

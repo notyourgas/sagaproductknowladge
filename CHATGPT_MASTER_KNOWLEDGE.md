@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-13 - Undangan manual dan restore Platform; Linux qualification tertahan
+
+**CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.** Source Platform `68e09cdc9735e4709105c9ec81b7ce4547e2ba5f` dan POS `95a6eda74593b731361a5c65c70f829276f33180` telah committed/pushed. Pengiriman tautan manual sekali pakai sudah diimplementasikan dan lolos 13 tes PHP/98 assertion serta 1 browser sintetis. Backup terenkripsi/offsite dan disposable restore kandidat Platform lulus. Linux static/18 focused cases lulus, tetapi native2 kasus timeout setelah batas dua koreksi; tidak ada artifact atau aktivasi baru. Production lama aktif, email/client nyata belum dibuat. Auth operator, konfigurasi/consumer/ingress SaaS dan recovery POS masih terbuka. [Checkpoint source](https://github.com/notyourgas/sagabook/blob/68e09cdc9735e4709105c9ec81b7ce4547e2ba5f/docs/SAGAPOS_CLIENT_ONBOARDING_RELEASE_20261013.md).
+
 ## 2026-10-13 - Client staff requests recover lost responses
 
 **CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED:** Source `95a6eda74593b731361a5c65c70f829276f33180` committed/pushed; paired Platform remains `8ab3127acb6e7351c5df9754df8cc932f9ebbec4`. The client personal portal now offers leave, permission, sick leave, own schedule-change requests and hourly overtime. Request identity comes from the verified staff session. Submission requires personal.write, a mandatory operation key and whitelisted fields; status requires personal.view and is scoped to that employee. Missing/foreign schedules fail closed. A missing schedule FK is mapped after rollback to the same safe domain denial as ownership checks.
