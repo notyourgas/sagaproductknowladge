@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Scoped Tahap0 closure and dynamic KDS/approval fix
+
+- Klasifikasi `CONFIRMED`; Andreas mengotorisasi strategi penutupan Tahap0.
+- Before -> after: separate foundation deltas are integrated; busy-rendered KDS/approval actions now recover with explicit grants, without changing server permissions or primary payment mode.
+- Source/checkpoint0e85bcb, runtime correction1489557, pushed same foundation branch. Final27focused PASS; native26cases/completed2SaaS journeys plus full cash-browser PASS mapped by unchanged relevant inputs. Static1084/type and changed syntax PASS with reuse boundaries.
+- Failed timeout/cleanup/fixture rounds retained; no full-suite/Linux/production/human UAT claim.441.49/450s aggregate, no added allowance or reset.
+- Storage blocker closed:16old source archives/1.206GiB relocated/hash verified and retained recoverably; no backup/DB/Codex/active source moved. Production95a6eda/GATEWAY unchanged at09.52WIB.
+- Status `SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Next:T1catalog/whole shift, release gates and actual devices. Pricing/positioning unchanged. [Ledger](https://github.com/notyourgas/sagaops/blob/0e85bcb87f23bda4e33f76d9b97208d0cae11c9a/docs/STAGE0_FOUNDATION_20261014.md).
+
 ## 2026-10-14 - Tahap0 foundation source checkpoint
 
 - Klasifikasi: `CONFIRMED`; Andreas meminta Tahap0 dan strategi kekurangan.

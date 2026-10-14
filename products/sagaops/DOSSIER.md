@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-14 - Tahap0 technical closure and remaining scope
+
+`CONFIRMED`: source0e85bcb closes scoped local foundation qualification. Before: KDS/approval actions rendered during busy remained disabled. After: explicit required grants govern dynamic controls both when busy begins and when it ends. Full local cash -> lost-response recovery -> KDS -> closing browser PASS onac4ef0f; runtime unchanged on1489557 except the mock test read grant. Final27focused cases PASS/0FAIL/0SKIP include immediate dynamic recovery without polling, permission revoke, profile-first/RBAC and report-context. Native26 opening/report cases and completed2SaaS PostgreSQL journeys are source-mapped on unchanged server inputs; native cleanup verified. Static1084/type plus changed syntax reused/delta-qualified, not full new check or Linux proof.
+
+Failed combined/diagnostic/correction receipts remain FAIL, with no assertion/deadline relaxation.16old archives/1.206GiB preserved through hash-verified relocation; no business source/backups/Codex deletion.441.49/450s aggregate including prior native attempt; old release failures/waiver remain historical. Status `SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`; production95a6eda healthy/GATEWAY unchanged. Next is T1 catalog choices/modifiers/policy and whole shift reconciliation, followed by guarded Linux/recovery release and actual-role/hardware UAT. [Evidence boundary and residual plan](https://github.com/notyourgas/sagaops/blob/0e85bcb87f23bda4e33f76d9b97208d0cae11c9a/docs/STAGE0_FOUNDATION_20261014.md).
+
 ## 2026-10-14 - Kandidat fondasi setelah rilis SaaS
 
 `CONFIRMED`: source44dabff mengintegrasikan delta Wave3 di atas baseline68ce583, bukan menimpa SaaS dengan branch lama. Opening/reopening lock, petunjuk current-settings history dan pemulihan konteks laporan berada dalam satu source. Migrasi/dependency dan critical SaaS runtime tetap tidak berubah. Helper native mempertahankan tambahan migrasi SaaS/drop database, menyediakan independent pools dan menutup pool sebelum drop.
