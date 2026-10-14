@@ -1,5 +1,24 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - W3-1 scoped requalification dan legacy closing approvals ditutup
+
+`CONFIRMED`; Owner continuation mengikuti one-reviewed-requalification proposal.
+Source `e2b72ea5672e52bf79c92298268ba7493a890427` pushed, testedec2179e.
+Final stock-write seal/workspace guidance/replay dan legacy dual-approval/current
+grant parity lulus103unique scoped cases,0FAIL/0SKIP; check1097/type PASS.
+Native PG18.6 independent writers prove one CAS winner/no partial loser, rejected
+late-write snapshot/audit identity and cold replay. Old failed gate history and
+full-workday ceilings tetap. No grant/schema/dependency/payment changes.
+
+Alasan: finalisasi dan perubahan stok tidak boleh membuka histori atau melewati
+persetujuan yang sama hanya karena memakai endpoint berbeda. Status
+SCOPED_LOCAL_AND_NATIVE_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY;
+production95a6eda/rollback2a18c9d ready/payment unchanged verified read-only.
+OPEN: all queued/offline/cutoff paths, immutable report/correction, form/alerts,
+full role/device/restart/restore/workday, Linux artifact/recovery/deploy/UAT.
+PRODUCT/DOSSIER/master/gaps/sync dan portfolio/root changelog diselaraskan;
+printer milestone sebelumnya tidak digabung atau diubah.
+
 ## 2026-10-15 - Status identitas printer kedaluwarsa dan berubah diperjelas
 
 `CONFIRMED`; receipt source `7e1435f73128fc06109840c204f7dda31380c443` pushed pada branch printer terpisah. Pemeriksaan identitas PC kini membedakan EXPIRED dan CONFIGURATION_STALE dari identitas terdaftar; UI desktop/mobile menunjukkan perlu daftar ulang. Pembacaan tidak mengubah credential, revisi, audit atau transaksi, dan tidak memberi izin cetak. Pendaftaran tetap default OFF; physical commissioning/hardware dispatch tetap OFF.

@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS scoped stock-seal PASS disinkronkan
+
+`CONFIRMED`; source `e2b72ea5672e52bf79c92298268ba7493a890427` pushed,
+testedec2179e:103unique focused/native PASS/0FAIL/0SKIP/check1097/type PASS.
+Stock final-period guard/pending-order guidance/replay dan legacy dual-approval
+parity now scoped validated, not full Wave3/release/UAT. Production95a6eda/
+rollback2a18c9d ready/GATEWAY/SaaS CASH unchanged. Eight product/master/gaps/sync/
+portfolio/root files updated from clean main=origin/main53b310b6; prior receipt
+milestone preserved. Validator/staged repeat/push/immutable readback required;
+final knowledge SHA is main HEAD. [Product](products/sagaops/PRODUCT.md).
+
 ## 2026-10-15 - Status identitas printer kedaluwarsa dan berubah diperjelas
 
 `CONFIRMED`; receipt source `7e1435f73128fc06109840c204f7dda31380c443` pushed pada branch printer terpisah. Pemeriksaan identitas PC kini membedakan EXPIRED dan CONFIGURATION_STALE dari identitas terdaftar; UI desktop/mobile menunjukkan perlu daftar ulang. Pembacaan tidak mengubah credential, revisi, audit atau transaksi, dan tidak memberi izin cetak. Pendaftaran tetap default OFF; physical commissioning/hardware dispatch tetap OFF.

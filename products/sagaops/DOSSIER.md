@@ -1,5 +1,30 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Scoped final-period integrity dan approval parity terverifikasi
+
+`CONFIRMED`; checkpoint `e2b72ea5672e52bf79c92298268ba7493a890427`, tested
+`ec2179e6f6ca4c79a5334ee90b726757bf8aa801`. Before: scoped attempt tertahan
+fixture invalid, generic Owner closing hanya memakai write permission. After:
+fixture negative retained dan valid reference dipakai, closing meminta inventory
+serta finance approval/current views dan rechecks revoke sebelum effects. Guard
+stok final mengunci fakta lama tetapi tidak mematikan transaksi periode berikut;
+pending-order list/guidance dan committed replay diuji. No migration/state-version/
+dependency/grant/payment/production-data changes.
+
+Approved reviewed requalification, same failed focused gate plus one narrow
+native slot: static56.59s/150s, native50.48s/90s,107.07s total; old failed attempts
+dan allowance dipertahankan.102focused+1native=103uniquePASS/0FAIL/0SKIP,
+current check1097/core37/client502/type PASS. PHP approval/PG18.6 actual fixture,
+distinct backend PIDs, atomic CAS close/write winner identity, immutable rejected
+late-write state,2periods/cold replay. One observed race schedule; fixture admin,
+not NOBYPASSRLS/service restart/restore/full day/device/operator acceptance.
+Windows tooling is not qualified Linux builder. Production95a6eda/rollback2a18c9d
+ready/payment unchanged verified read-only; IMPLEMENTED_NOT_DEPLOYED /
+NOT_BUSINESS_READY. Remaining strategy: known offline/delayed queues/cutoff→
+immutable versioned report/corrections→form/role/alerts parity→full native/UI/
+recovery→approved Linux artifact/activation→operator UAT. Separate printer remains
+unchanged by this executor. [Ledger](https://github.com/notyourgas/sagaops/blob/e2b72ea5672e52bf79c92298268ba7493a890427/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Status identitas printer kedaluwarsa dan berubah diperjelas
 
 `CONFIRMED`; receipt source `7e1435f73128fc06109840c204f7dda31380c443` pushed pada branch printer terpisah. Pemeriksaan identitas PC kini membedakan EXPIRED dan CONFIGURATION_STALE dari identitas terdaftar; UI desktop/mobile menunjukkan perlu daftar ulang. Pembacaan tidak mengubah credential, revisi, audit atau transaksi, dan tidak memberi izin cetak. Pendaftaran tetap default OFF; physical commissioning/hardware dispatch tetap OFF.

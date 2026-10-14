@@ -1,5 +1,25 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Stock seal scoped qualification ditutup; full Wave3 gates tetap open
+
+`CONFIRMED`; reviewed specific Owner continuation mengizinkan requalification
+yang sebelumnya pending. Sourcee2b72ea/testedec2179e:103unique scoped PASS,
+check1097/type PASS,107.07s of240s consumed, prior failed history retained.
+Fixture failure dan missing native runtime telah ditutup untuk scope ini;
+generic legacy closing approval parity juga terverifikasi. Jangan membawa klaim
+lama "current seal untested" ke milestone ini, atau memakai103PASS sebagai full
+workday/UAT. Remaining allowance tidak otomatis membuka retry gate lain.
+
+`PROPOSAL` ordered closure: queued/delayed/offline admissions dan trusted calendar
+cutoff→immutable final stock/cost/conversion/recipe snapshots+append-only reviewed
+corrections/original-adjusted CSV parity→actual-role/category/unit form dan
+approved-low-stock alert recipient/dedup→full relevant native isolation/device/
+a11y/workday/restart/restore→approved separate Linux builder/artifact/encrypted
+backup/compatible rollback rehearsal/expected-current/atomic activation→auth smoke
+monitoring/operator UAT. `NEEDS CONFIRMATION`: usable authorized Linux builder and
+actual full acceptance. No paid provisioning/serving VPS builder/BIOS/hosted CI.
+Production95a6eda/rollback2a18c9d ready unchanged; NOT_DEPLOYED/NOT_BUSINESS_READY.
+
 ## 2026-10-15 - Status identitas printer kedaluwarsa dan berubah diperjelas
 
 `CONFIRMED`; receipt source `7e1435f73128fc06109840c204f7dda31380c443` pushed pada branch printer terpisah. Pemeriksaan identitas PC kini membedakan EXPIRED dan CONFIGURATION_STALE dari identitas terdaftar; UI desktop/mobile menunjukkan perlu daftar ulang. Pembacaan tidak mengubah credential, revisi, audit atau transaksi, dan tidak memberi izin cetak. Pendaftaran tetap default OFF; physical commissioning/hardware dispatch tetap OFF.

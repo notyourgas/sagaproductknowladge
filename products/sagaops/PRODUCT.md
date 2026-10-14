@@ -1,5 +1,25 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Wave3 stock seal dan izin closing lulus scoped local/native
+
+`CONFIRMED / SCOPED_LOCAL_AND_NATIVE_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_BUSINESS_READY`. Source `e2b72ea5672e52bf79c92298268ba7493a890427` pushed;
+exact tested `ec2179e6f6ca4c79a5334ee90b726757bf8aa801`, closing docs-only.
+Guard stok final/reservasi sebelum cutoff, replay dan workspace guidance kini
+memiliki scoped proof. Endpoint Owner lama disamakan dengan kewajiban persetujuan
+stok dan keuangan, termasuk revoke sebelum effects; tidak mengubah grant nyata.
+
+102domain/HTTP/module-regression/mock-browser PASS, check1097/core37/client502
+dan TypeScript PASS. NativePHP/PG18.6:1casePASS, independent backend clients
+close-versus-write menghasilkan1commit/1CAS conflict/snapshot sesuai winner,
+post-close409 tidak mengubah audit, cold replay tanpa duplikasi. Total103unique,
+0FAIL/0SKIP pada input ini; old failures retained, bukan full workday/RLS/device/
+restart/restore qualification. Production95a6eda/rollback2a18c9d ready/GATEWAY/
+SaaS CASH verified read-only dan unchanged. OPEN: queued/offline/cutoff coverage,
+immutable report/corrections, role/form/alerts, full acceptance, separate Linux
+builder, recovery/artifact/activation/UAT. Printer scope tidak digabung.
+[Hasil dan penutupan](https://github.com/notyourgas/sagaops/blob/e2b72ea5672e52bf79c92298268ba7493a890427/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Status identitas printer kedaluwarsa dan berubah diperjelas
 
 `CONFIRMED`; receipt source `7e1435f73128fc06109840c204f7dda31380c443` pushed pada branch printer terpisah. Pemeriksaan identitas PC kini membedakan EXPIRED dan CONFIGURATION_STALE dari identitas terdaftar; UI desktop/mobile menunjukkan perlu daftar ulang. Pembacaan tidak mengubah credential, revisi, audit atau transaksi, dan tidak memberi izin cetak. Pendaftaran tetap default OFF; physical commissioning/hardware dispatch tetap OFF.
