@@ -8,6 +8,23 @@ Transport signed SENT menjadi SUBMITTED/CLIENT_REPORTED, bukan physical PRINTED.
 
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk komponen server; dispatcher browser/commissioning end-to-end masih OPEN. Certificate trust/loader, mode konfirmasi versus silent, cross-tab/reload send fence, current native permission locks, host recovery, reviewed full/320 unblock, authenticated Owner/physical/endurance/canary/pilot UAT belum selesai. Production95a6eda/service active diverifikasi read-only dan unchanged; tidak ada biaya, trust change, enrollment nyata, print, CI atau deployment. NOT_BUSINESS_READY; stock branch terbaru dipertahankan dan tidak digabung ke source printer. Pricing/provider/produk lain unchanged.
 
+## 2026-10-15 - Known queue closing gap ditutup, unknown capture bukan diasumsikan kosong
+
+`CONFIRMED`; stock sourceb461739/tested0c57ae7:known server queue/review admission
+lulus scoped44localTAP/8nativeTAP/check1098/type, overlap bukan52unique. Kedua
+jadwal enqueue-versus-close verified. Initial fixture failure retained, delta
+98.09s dari remainder132.93;34.84s tersisa bukan izin retry otomatis.
+`PROPOSAL`: W3-1 trusted businessDate/calendar/device-sync watermark dan inventory
+all unmapped/in-flight writers; W3-2 permissioned disposition review+append-only
+correction/immutable report original-adjusted CSV; W3-3 actual-role forms/units/
+alerts; W3-4 full native role/isolation/workday/restart/restore/browser+a11y;
+W3-5..7 qualified separate Linux artifact/encrypted restore/compatible rollback/
+expected-current/activation/auth smoke/UAT. Review tetap fail-closed sampai
+disposition tersedia, tidak otomatis dihapus/ditolak/diredating. Unknown perangkat
+belum upload tidak bisa disertifikasi oleh server queue check. Existing builder
+inventory belum menemukan Linux yang qualified; no paid/serving VPS/BIOS/hostedCI.
+Production95a6eda/rollback2a18c9d unchanged, NOT_DEPLOYED/NOT_BUSINESS_READY.
+
 ## 2026-10-15 - Stock seal scoped qualification ditutup; full Wave3 gates tetap open
 
 `CONFIRMED`; reviewed specific Owner continuation mengizinkan requalification

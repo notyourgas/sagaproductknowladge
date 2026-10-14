@@ -8,6 +8,17 @@ Transport signed SENT menjadi SUBMITTED/CLIENT_REPORTED, bukan physical PRINTED.
 
 LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk komponen server; dispatcher browser/commissioning end-to-end masih OPEN. Certificate trust/loader, mode konfirmasi versus silent, cross-tab/reload send fence, current native permission locks, host recovery, reviewed full/320 unblock, authenticated Owner/physical/endurance/canary/pilot UAT belum selesai. Production95a6eda/service active diverifikasi read-only dan unchanged; tidak ada biaya, trust change, enrollment nyata, print, CI atau deployment. NOT_BUSINESS_READY; stock branch terbaru dipertahankan dan tidak digabung ke source printer. Pricing/provider/produk lain unchanged.
 
+## 2026-10-15 - SagaPOS server-known offline queue ikut gate stock closing
+
+`CONFIRMED`; source `b4617394d443cad6786589d70ffd0589e40d1345`, tested0c57ae7.
+Before→after: pending/review stock events kini menahan closing; late capture
+durable review tanpa mengubah final stock/timestamp.44localTAP/8nativeTAP PASS,
+overlap/parent bukan52unique; dua race schedules, check1098/type. Initialfixture
+failure retained. Produk SagaPOS,8dokumen knowledge terkait diperbarui. No
+production/pricing/payment/printer change; IMPLEMENTED_NOT_DEPLOYED /
+NOT_BUSINESS_READY. Next:calendar/device reconciliation, corrections/reports,
+actual-role forms/alerts, full qualification/recovery/Linux/activation/UAT.
+
 ## 2026-10-15 - SagaPOS stock-period seal scoped proof diterima
 
 `CONFIRMED`; source `e2b72ea5672e52bf79c92298268ba7493a890427`, testedec2179e:
