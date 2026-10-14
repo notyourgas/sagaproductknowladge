@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Status identitas printer kedaluwarsa dan berubah diperjelas
+
+`CONFIRMED`; receipt source `7e1435f73128fc06109840c204f7dda31380c443` pushed pada branch printer terpisah. Pemeriksaan identitas PC kini membedakan EXPIRED dan CONFIGURATION_STALE dari identitas terdaftar; UI desktop/mobile menunjukkan perlu daftar ulang. Pembacaan tidak mengubah credential, revisi, audit atau transaksi, dan tidak memberi izin cetak. Pendaftaran tetap default OFF; physical commissioning/hardware dispatch tetap OFF.
+
+Current31tes unik Windows/PGlite PASS (19terminal/preparation/profile/mock-browser +10document/queue +2template persistence/API), check1096/core37/TypeScript PASS. Status, re-enrollment dan batas sesi HTTP diuji; screenshot sintetis desktop/mobile diperiksa. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, bukan native/Linux/full/physical acceptance. Production95a6eda/service active diverifikasi read-only, unchanged. Signer terbatas, status submission/UNKNOWN, fenced cashier-Team dispatcher, host recovery, reviewed full/320 unblock dan Owner/physical/canary UAT masih OPEN. Pilihan konfirmasi versus trusted-certificate silent printing belum dikonfirmasi; tidak ada biaya, trust change atau fallback otomatis. Preview persisten belum terikat source final. NOT_BUSINESS_READY; scope stock branch, pricing/provider dan produk lain tidak berubah.
+
 ## 2026-10-15 - Registry/UI terminal ditutup; keputusan mode cetak dan release tetap open
 
 `CONFIRMED`; receipt source `8c0830e21242edcc2e376c66342848f595d318c7` pushed pada branch printer terpisah. Identitas PC kasir kini dapat diperiksa, didaftarkan ulang dan dicabut Owner melalui API/UI; disimpan durable, scoped per outlet dan terikat revisi persiapan. Credential memakai hash server/cookie HttpOnly, bukan UUID localStorage sebagai authority. Expiry/rotation/revoke/config drift diuji; enrollment default OFF, revocation tetap tersedia, physical commissioning dan hardware dispatch tetap OFF. Tidak ada schema37/addon/grant/dependency/payment change.

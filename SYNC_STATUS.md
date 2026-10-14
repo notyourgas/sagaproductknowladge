@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-15 - Receipt enrollment lifecycle status correction
+
+`CONFIRMED`; isolated clean main ff-only dari f84b8a9f5a54c6f951e106b70e13ab0d21c40407, HEAD=origin/main sebelum edit. Delapan file mengikat source printer7e1435f73128fc06109840c204f7dda31380c443 dengan perbaikan status expiry/config drift;31unique local PASS/current check/type. Update stock branch dipertahankan. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY; production95a6eda unchanged. Tidak ada schema, trust, biaya, enrollment nyata, cetak atau deployment. Validator/link/public-safety/diff/staged-repeat/push/immutable readback wajib; final SHA main HEAD.
+
 ## 2026-10-15 - Receipt terminal enrollment local milestone
 
 `CONFIRMED`; isolated clean main ff-only dari d0e015b93ed669fcdd082db201b7203170b1e544, HEAD=origin/main sebelum edit. Delapan file merekonsiliasi receipt source `8c0830e21242edcc2e376c66342848f595d318c7`,28unique local PASS/current check/type dan Owner terminal UI/API defaultOFF. Update stock branch terbaru dipertahankan, bukan digabung ke candidate printer. Local identity milestone accepted; operational release partially accepted/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY, production95a6eda unchanged. Validator/link/public-safety/diff/staged-repeat/push/immutable-readback wajib; final SHA main HEAD.
