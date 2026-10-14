@@ -1,5 +1,9 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-14 - Receipt addon runner disiapkan; kualifikasi belum selesai
+
+`CONFIRMED`; source `22d03699135cde2ae2020d4a1b3849ff551dab54` pushed pada `codex/sagapos-raw-printer-20261014`, delivery `IMPLEMENTED_NOT_DEPLOYED`, acceptance partially accepted/NOT_BUSINESS_READY. Runner additive mengikuti pola existing: exact source/current/artifact/schema, release lock, encrypted backup dan owned disposable restore sebelum DDL; tidak switch/restart/payment/flag/dispatch. Paged digest menjaga seluruh versi/logo dan dokumen asli/salinan; restore grant hanya pada disposable, startup reject widened privileges/bypass role.11 affected PASS/0FAIL/2SKIP; Bash dan native PG18 dump/restore NOT_RUN. Static/type penuh tidak mulai karena C di bawah fixed1GiB floor;1089 proof d0381c3 bukan proof delta ini. Workflow native disiapkan, hosted/YAML delta belum qualified. Production95a6eda unchanged. OPEN: capacity, QZ manual control/support berizin, CI quota/registration, native/host recovery, flag-compatible release, physical canary dan authenticated UAT. Desain/pricing/provider/core37/SQL/lockfile tidak berubah.
+
 ## 2026-10-14 - Stok native minimal terverifikasi; rilis belum siap
 
 `CONFIRMED / SCOPED_NATIVE_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Source foundation clean/pushed `be0f8f6f0bdaba126fbd900402dc80d7990c3409`, tested input `3a12741fcbfb09ba2cb7bcefe7251d23fc395be8`. Diagnosis khusus membuka stok lulus1 tes/0fail/0skip dalam30.28s termasuk cleanup: realPHP approval/Owner login/nativePG18, asset dan inventoryGET200, formulir closing, histori2 hitungan, tiga lebar390/768/1440 dan stok tidak berubah. Ini menutup bukti bootstrap minimal, bukan seluruh workday atau perbaikan app; perilaku app tidak diubah.

@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Prepare guarded receipt addon installer dan native recovery fixture
+
+`CONFIRMED`; source `22d03699135cde2ae2020d4a1b3849ff551dab54` pushed. Alasan: addon template perlu installer/recovery yang terikat artifact dan bukti data versi/logo/salinan. Source runner, scoped admission/digest/restore grants dan least-privilege startup diperluas;11 affected PASS/2SKIP, Bash/native NOT_RUN, full static capacity-blocked. Bukan qualified installer atau deployment. Production95a6eda/flag OFF unchanged, desain/SQL/core37/price/provider unchanged. Capacity/QZ/CI/native/host recovery/release/physical/UAT open; PRODUCT/DOSSIER/master/gaps/portfolio/root/sync diperbarui dengan status parsial.
+
 ## 2026-10-14 - Native stock bootstrap PASS, failure historis tidak dihapus
 
 `CONFIRMED`; sumber Andreas continuation dan source `be0f8f6f0bdaba126fbd900402dc80d7990c3409`/test3a12741. Alasan: tiga deadline workday belum menunjukkan boundary penyebab. Diagnosis minimal realPHP/PG18/auth/API/form/history lulus1/0/0,30.28s termasuk cleanup; data stock read-only dan overflow390/768/1440 teruji. Tidak ada perubahan fitur/schema/payment atau production.

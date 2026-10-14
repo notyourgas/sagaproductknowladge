@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-14 - Receipt schema admission dan recovery source-prepared
+
+`CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Source pushed `22d03699135cde2ae2020d4a1b3849ff551dab54` menambah host installer bound candidate/current/artifact/SQL/core37/release-lock/health/PID, fresh encrypted backup dan named disposable restore. Native admission menolak host/port/database/engine/checksum lain; rollback grant repair hanya pada disposable, tidak live. Startup memeriksa append-only grants dan non-superuser/non-bypass. Paged read-only SHA digest mencakup semua template/bitmap dan frozen originals/copies, tanpa log data. Fault pada fase akhir wajib schema reconciliation, bukan klaim DB rollback. SQL/core37/renderer/lockfile unchanged, tidak ada host execution/activation.
+
+Local11PASS/0FAIL/2SKIP:101-version pagination dan mutation detection, DB/auth/Owner UI PASS. First attempt retained: missing hardcoded Bash; platform-aware split menjaga Bash mandatory pada Linux. Bash/native pg_dump-restore NOT_RUN; fixture Docker PG18 restore/regrant/role read-denial disiapkan namun belum dieksekusi. Static/type admission capacity-stopped sebelum run (C~0.4GiB <1GiB), prior1089 pada d0381c3 tidak dipromosikan ke delta. No gate/budget/protection reset, cleanup data atau serving-host build. Production pointer95a6eda fresh unchanged. Native/package/encrypted host recovery/flag rollout/full regression/QZ/physical/UAT tetap open.
+
 ## 2026-10-14 - Diagnosis native terbatas pada stock bootstrap
 
 `CONFIRMED`; source `be0f8f6f0bdaba126fbd900402dc80d7990c3409`, test3a12741, scope `SCOPED_NATIVE_LOCAL_VALIDATED / NOT_DEPLOYED`. Harness existing memakai real PHP approval dan PG18 disposable; satu bahan costed, opening baseline sah lalu cycle count, Owner session nyata, tanpa mocks/grant override.1PASS/0FAIL/0SKIP30.28s/90s dengan owned cleanup. Titik terukur dalam badan tes: database11.821s, fixture14.447s, login15.961s, asset20016.117s, inventory20016.198s, form16.341s, histori20016.471s, strict2rows/read-only16.548s. Overflow390/768/1440 PASS, bukan fullAxe/RLS/restart/restore/employee UAT. Stock snapshot identik setelah read.

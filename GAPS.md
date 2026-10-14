@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Receipt continuation tertahan kapasitas dan qualification surfaces
+
+`CONFIRMED`; source `22d03699135cde2ae2020d4a1b3849ff551dab54` pushed,11 affected PASS/2SKIP. C~0.4GiB <fixed1GiB menghentikan static/type admission sebelum run; tidak menghapus data/menurunkan floor. Bash tidak tersedia dan PG18/Linux native dump/restore belum jalan; prepare fixture bukan proof. Langkah unblock: kapasitas aman sebelum tes lanjut, manual QZ launch di Windows (request sebelumnya belum terjawab), keputusan compute/quota dan support permission; kemudian native/full relevant/host recovery/flag-compatible release/physical/UAT. Pemilik capacity/manual/biaya: Andreas; executor menjaga exact source dan gate. Production95a6eda unchanged, NOT_BUSINESS_READY.
+
 ## 2026-10-14 - SagaPOS full-workday deadline belum terdiagnosis
 
 `CONFIRMED`; stock-only diagnosis pada3a12741 lulus1PASS30.28s/nativePG18/PHP dengan cleanup, source closing `be0f8f6f0bdaba126fbd900402dc80d7990c3409`. Ini mengurangi unknown pada minimal stock bootstrap, bukan root cause seluruh workday. Tiga HistoryNative deadline tetap FAIL/correction limit; full relevant regression berhenti setelah21 subtests tanpa terminal summary. `NEEDS CONFIRMATION`: data-volume/setup/per-phase costs dan root cause workday, qualified existing separate Linux builder, integrated source ownership, encrypted restore/recovery dan operator/hardware UAT.

@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - Receipt ops candidate dan retained capacity stop
+
+`CONFIRMED`; sumber Andreas dan source pushed `22d03699135cde2ae2020d4a1b3849ff551dab54`. Alasan: mengikat addon installer/recovery dan status parsial11 PASS/2 SKIP; tidak mengangkat preparation ke native/host/production proof. PRODUCT/DOSSIER/product changelog/portfolio/master/gaps/sync mencatat capacity stop, QZ/CI/recovery/physical/UAT open. Production unchanged. Isolated clean main dari91637250 mempertahankan update stock; canonical checkout yang sedang berubah oleh chat lain tidak disentuh. Tidak menyalin identifier/data/receipt/evidence path atau URL source privat. Validator/link/public-safety/diff/push diperlukan sebelum klaim sync selesai.
+
 ## 2026-10-14 - SagaPOS stock bootstrap proof dan retained failure facts
 
 `CONFIRMED`; source `be0f8f6f0bdaba126fbd900402dc80d7990c3409`, tested3a12741, actual scoped native1PASS/0FAIL/0SKIP30.28s dengan cleanup. Alasan: membuka stok perlu bukti real engine/auth/UI; prior workday timeouts tidak boleh dianggap app defect tanpa diagnosis. Tidak ada fitur/schema/production/payment mutation. Static1092/type PASS119dc3e dan native3FAIL/incomplete relevant regression kini tersinkron dari facts held9d37abd, tanpa menghapus printerd0381c3 atau perubahan produk lain.
