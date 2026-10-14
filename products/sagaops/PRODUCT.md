@@ -1,5 +1,26 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Antrean stok offline ikut menahan finalisasi closing
+
+`CONFIRMED / SCOPED_LOCAL_AND_NATIVE_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_BUSINESS_READY`. Source `b4617394d443cad6786589d70ffd0589e40d1345` pushed,
+tested `0c57ae7aa7741514f5d03d3af488096077b10c53`; penutupan docs-only.
+Antrean offline yang sudah diterima server atau memerlukan peninjauan sebelum
+cutoff kini menahan closing. Transaksi lama yang tiba setelah final disimpan
+untuk peninjauan dengan waktu asli, tidak diam-diam mengubah stok/tanggal.
+Transaksi periode berikutnya tidak dibekukan. Pesan closing mempertahankan draft.
+
+44hasilTAP lokal dan8nativePG18.6 PASS/0FAIL/0SKIP; lima subkasus native overlap
+lokal, masing-masing file juga punya satu parent container, bukan52kasus unik.
+Dua jadwal race dengan backend terpisah dan penantian nyata terverifikasi.
+Check1098/core37/client502/TypeScript PASS; fixture failure awal dipertahankan.
+Tidak ada schema/dependency/grant/payment/data production berubah. Production
+95a6eda/rollback2a18c9d ready, GATEWAY/SaaS CASH unchanged. OPEN: perangkat yang
+belum upload/calendar authority, disposition koreksi berizin, immutable reports,
+role/forms/alerts, full-workday/recovery, qualified separate Linux builder dan
+activation/UAT. Scope printer terpisah dipertahankan.
+[Bukti dan strategi lanjutan](https://github.com/notyourgas/sagaops/blob/b4617394d443cad6786589d70ffd0589e40d1345/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Wave3 stock seal dan izin closing lulus scoped local/native
 
 `CONFIRMED / SCOPED_LOCAL_AND_NATIVE_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

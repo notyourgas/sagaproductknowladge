@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS server-known offline queue ikut gate stock closing
+
+`CONFIRMED`; source `b4617394d443cad6786589d70ffd0589e40d1345`, tested0c57ae7.
+Before→after: pending/review stock events kini menahan closing; late capture
+durable review tanpa mengubah final stock/timestamp.44localTAP/8nativeTAP PASS,
+overlap/parent bukan52unique; dua race schedules, check1098/type. Initialfixture
+failure retained. Produk SagaPOS,8dokumen knowledge terkait diperbarui. No
+production/pricing/payment/printer change; IMPLEMENTED_NOT_DEPLOYED /
+NOT_BUSINESS_READY. Next:calendar/device reconciliation, corrections/reports,
+actual-role forms/alerts, full qualification/recovery/Linux/activation/UAT.
+
 ## 2026-10-15 - SagaPOS stock-period seal scoped proof diterima
 
 `CONFIRMED`; source `e2b72ea5672e52bf79c92298268ba7493a890427`, testedec2179e:

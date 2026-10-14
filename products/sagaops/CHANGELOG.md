@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Closing memperhitungkan antrean offline yang sudah diterima server
+
+`CONFIRMED`; Andreas meminta melanjutkan strategi penutupan. Source
+`b4617394d443cad6786589d70ffd0589e40d1345` pushed/tested0c57ae7: pending/review
+sebelum cutoff menahan close; late arrival durable review, capture asli dan
+saldo final terjaga; future/tenant lain tidak dibekukan.44localTAP/8nativeTAP PASS,
+dua jadwal race actual backend terpisah; hasil overlap/parent tidak dijumlahkan
+sebagai52unique. Check1098/type PASS. InitialfixtureFAIL retained. No production,
+schema/grant/payment change. IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.
+PRODUCT/DOSSIER/MASTER/GAPS/PORTFOLIO/SYNC_STATUS/rootCHANGELOG diperbarui.
+Next:calendar/unuploaded reconciliation, immutable report/correction disposition,
+role/forms/alerts, full qualification/recovery/Linux artifact/activation/UAT.
+
 ## 2026-10-15 - W3-1 scoped requalification dan legacy closing approvals ditutup
 
 `CONFIRMED`; Owner continuation mengikuti one-reviewed-requalification proposal.

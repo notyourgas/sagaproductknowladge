@@ -1,5 +1,33 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Known offline queue/cutoff qualified, whole Wave3 tetap terbuka
+
+`CONFIRMED`; source `b4617394d443cad6786589d70ffd0589e40d1345`, tested
+`0c57ae7aa7741514f5d03d3af488096077b10c53`. Before: antrean yang diterima
+server belum ikut gate closing. After: pending/review dan collision belum selesai
+sebelum/tepat cutoff menahan finalisasi; data periode berikut/tenant lain tidak
+membekukan periode ini. Late arrival setelah final menjadi review durable,
+timestamp asli terjaga, audit/outbox atomik, tidak mengubah saldo final atau
+dianggap transaksi baru hari berikut. Exact replay tidak menggandakan fakta.
+
+Scoped44TAP lokal(43leaf+parent),8native(7subcases+parent), semuanya PASS0FAIL0SKIP;
+5kasus logis native mengulang lokal,2jadwal race tambahan diverifikasi memakai
+backend berbeda dan wait sebelum winner dilepas. Bukan52kasus unik. Check1098/
+core37/client502/zero retired refs/type PASS. InitialfixtureFAIL16.28s diperbaiki
+dengan receipt sintetis berbiaya, validator missing-cost tetap diuji. Correction
+PASS66.10s dan native15.71s;98.09s delta, aggregate approved240s kini205.16s consumed,
+34.84s remaining tanpa membuka retry otomatis. Native admin disposable bukan
+NOBYPASSRLS/PHP/full workday/service restart/backup restore/operator acceptance.
+Mock browser friendly409/draft/key/no retry bukan viewport/Axe matrix.
+
+No migration/state/dependency/grant/provider/printer/production mutation.
+SCOPED_LOCAL_AND_NATIVE_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY;
+production95a6eda/rollback2a18c9d active/ready/payment unchanged. Separate Linux
+builder belum qualified. `PROPOSAL`: trusted calendar/device reconciliation,
+permissioned review disposition/append-only corrections+immutable reports,
+actual-role forms/alerts, full relevant qualification/recovery, qualified artifact,
+guarded activation/authenticated smoke/UAT. Belum ada persentase readiness baru.
+
 ## 2026-10-15 - Scoped final-period integrity dan approval parity terverifikasi
 
 `CONFIRMED`; checkpoint `e2b72ea5672e52bf79c92298268ba7493a890427`, tested
