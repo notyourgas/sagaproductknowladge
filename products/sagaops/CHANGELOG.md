@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Update operasional QZ: permintaan diagnosis terkirim
+
+`CONFIRMED`; source `01eb6c0b220def398d5d957ac290ebe277daad19` unchanged. Before pending izin/draftUNSENT -> satu minimal support requestSENT/readback verified, vendor response pending. Alasan: menggerakkan blocker eksternal tanpa blind startup correction atau pengiriman raw data. Dispatcher contract diperjelas, tetap NOT_IMPLEMENTED; editor NOT_DEPLOYED dan production95a6eda unchanged/NOT_BUSINESS_READY. Tidak ada new test/CI/schema/activation/print, pembelian, credential/trust/protection change atau budget reset. Capacity stabil, diagnosis vendor, reviewed preview/full unblock, host/physical/Owner UAT masih wajib.
+
 ## 2026-10-14 - Navigasi nota qualified; full regression dan dispatcher masih terbuka
 
 `CONFIRMED`; source `01eb6c0b220def398d5d957ac290ebe277daad19`. Sebelumnya4navigation contracts masih49menu; kini50+D50href dan157navigation tests PASS,34native PASS/static1093/core37/type. Tiga recovery fixture flags dikoreksi/PASS pada bd55398. Alasan: menyelesaikan regresi terkait menu tanpa mengubah runtime bisnis. Fullbd55398 terminal3FAIL/5TIMEOUT shards/54observed failures, termasuk32missing-browser contexts dan embedded preview reset timeout; bukan full finalsource PASS.320pixels/QZ/host recovery/UAT tetap open; trusted real dispatcher NOT_IMPLEMENTED, editor IMPLEMENTED_NOT_DEPLOYED. Production95a6eda/pricing/payment unchanged; tidak deploy/DDL/print. NOT_BUSINESS_READY.

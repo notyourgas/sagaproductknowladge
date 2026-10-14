@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - QZ support: pending izin digantikan response pending
+
+`CONFIRMED`; satu minimal vendor request statusSENT/readback verified, belum ada balasan saat bounded thread check. Status UNSENT sebelumnya historis, bukan status kini. Source `01eb6c0b220def398d5d957ac290ebe277daad19` unchanged. Kapasitas di bawah floor, tidak ditemukan kandidat installer lama besar pada bounded Downloads metadata; unknown files tidak dipindah/dihapus. Tidak startup correction ketiga atau full-gate budget reset. QZ belum pulih, signer/trust/biaya belum disetujui, dispatcher NOT_IMPLEMENTED; full/preview/host/recovery/physical acceptance remain OPEN. Production95a6eda active unchanged/NO_GO/NOT_BUSINESS_READY. Next: kapasitas stabil dan input diagnosis vendor, kemudian reviewed software unblock serta implementasi/acceptance sesuai kontrak; tidak menjanjikan seluruh tahapan selesai dari pengiriman email.
+
 ## 2026-10-14 - Receipt: scoped gates lulus, full dan trusted dispatcher belum selesai
 
 `CONFIRMED`; finalsource `01eb6c0b220def398d5d957ac290ebe277daad19`,34native/157navigation PASS, fullbd55398 terminal3FAIL/5TIMEOUT/54observed failures (32missing-browser contexts). Browser dependency parity prepared saja; root-only fixture lane, baseline mapping dan hanging-file diagnosis belum qualified. Concurrent embedded receipt reset timeout dan320pixels remain OPEN; correction limits tidak direset. Real commissioned dispatcher NOT_IMPLEMENTED; perlu scoped/revocable terminal credential, server signer dan lease/payload fencing, lostACK=UNKNOWN tanpa auto-reprint. QZ startup belum pulih; minimal support draft UNSENT menunggu izin spesifik. C capacity di bawah fixed floor, tanpa cleanup unknown/protection bypass. Host restore/rollback, guarded rollout dan authenticated/physical UAT masih NO_GO; production95a6eda unchanged/NOT_BUSINESS_READY.
