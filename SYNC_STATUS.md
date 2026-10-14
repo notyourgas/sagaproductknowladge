@@ -1,5 +1,19 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-14 - Milestone knowledge Arkarupa
+
+| Field | Nilai |
+|---|---|
+| Waktu pembaruan terakhir | 2026-10-14 WIB |
+| Branch aktif | main, checkout kanonik bersih sebelum fast-forward dan edit |
+| Commit SHA terbaru | main HEAD; SHA final dilaporkan setelah push |
+| Informasi terakhir disinkronkan | Arkarupa: workflow lokal, restart terverifikasi dan paket UAT; source aplikasi a3c255e dan startup/UAT 85eb82d |
+| Status sinkronisasi | `UP TO DATE` untuk knowledge milestone; acceptance manusia/public tetap terbuka |
+| Konflik | Tidak ada konflik knowledge pada baseline; source Arkarupa bukan source marketing SagaDevs |
+| Error | Kontrol tab lokal tidak tersedia; tidak mengklaim authenticated browser acceptance baru |
+
+Dokumen terdampak: [proyek Arkarupa](products/sagadevs/ARKARUPA.md), PRODUCT/DOSSIER/CHANGELOG SagaDevs, master, gaps, portfolio, indeks dan root changelog. Ini melengkapi milestone lokal yang sebelumnya tertahan dirty checkout; bukan sync source proyek atau aktivasi production.
+
 ## 2026-10-14 - Historical stock closing anchor preserved beyond the recent window
 
 `CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `04d19e2247d06b3a62c0a62444e4b0290c9babe5` on `codex/sagapos-foundation-20261014`; runtime/test inputs `dc143b4ccdbbc858bccbbb4c7c265e381c5fea99`, closing documentation-only. Before: the last closed count could disappear outside the ten-count read window and block the next closing form. After: the server computes one compact continuation anchor from existing persisted facts; same scoped workspace/selector keeps the exact prior closing boundary, bounded recent list and wrong-anchor rejection. Visible accessible guidance distinguishes no counts, no new count and missing anchor. No schema/state-version/grant/dependency/provider change.

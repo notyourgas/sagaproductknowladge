@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-10-14 - Dokumentasi milestone Arkarupa dan kesiapan UAT
+
+`CONFIRMED`; sumber keputusan Andreas, commit aplikasi lokal `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8` dan startup/UAT `85eb82d41453c303929ea04135522120f349aba0`. Sebelumnya milestone workflow hanya tersimpan lokal; kini [catatan proyek](ARKARUPA.md), PRODUCT dan DOSSIER menjelaskan RAP ruangan, progres terverifikasi dan barang datang beserta batas bukti. Restart tanpa seed/reset terverifikasi HTTP/file/data; 12 skenario UAT siap, hasil manusia tetap OPEN. Production tidak berubah. Berikutnya UAT, review mapping, bukti visual dan target preview.
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.

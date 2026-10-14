@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - Knowledge Arkarupa melengkapi milestone demo lokal
+
+`CONFIRMED`; sumber Andreas, commit aplikasi lokal `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8`, startup/UAT `85eb82d41453c303929ea04135522120f349aba0` dan pemeriksaan restart HTTP/file/data 14 Oktober. Sebelumnya milestone workflow belum disinkronkan karena checkout kotor; setelah clean checkout dan fast-forward, ditambahkan [catatan proyek](products/sagadevs/ARKARUPA.md) serta pembaruan PRODUCT/DOSSIER/CHANGELOG SagaDevs, portfolio, master, gaps, sync dan indeks. Source proyek belum dipush; tidak dicampur dengan repository marketing. Production tidak berubah. Human UAT, bukti visual, review data lama dan target preview masih OPEN. Validator/public-safety/diff diperiksa sebelum commit/push knowledge terpisah; SHA final menggunakan main HEAD.
+
 ## 2026-10-14 - Historical stock closing anchor preserved beyond the recent window
 
 `CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `04d19e2247d06b3a62c0a62444e4b0290c9babe5` on `codex/sagapos-foundation-20261014`; runtime/test inputs `dc143b4ccdbbc858bccbbb4c7c265e381c5fea99`, closing documentation-only. Before: the last closed count could disappear outside the ten-count read window and block the next closing form. After: the server computes one compact continuation anchor from existing persisted facts; same scoped workspace/selector keeps the exact prior closing boundary, bounded recent list and wrong-anchor rejection. Visible accessible guidance distinguishes no counts, no new count and missing anchor. No schema/state-version/grant/dependency/provider change.

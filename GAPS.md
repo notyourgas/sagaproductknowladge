@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Arkarupa: human acceptance dan preview masih terbuka
+
+`NEEDS CONFIRMATION`; hasil 12 skenario UAT estimator/pelaksana/reviewer, keputusan QS/PM mengenai mapping data lama, serta target hosting/domain preview dan masa akses. Screenshot asli, zoom manual dan ponsel nyata belum diterima; kontrol browser lokal tidak tersedia pada pemeriksaan restart. Kapasitas drive sistem membatasi setup/restore besar; relokasi membutuhkan snapshot konsisten/restore/cutover, belum dilakukan. Kode aplikasi sudah lokal, data existing tetap; public/production tidak aktif. Source proyek lokal belum mempunyai remote terverifikasi dan tidak tercakup provenance marketing SagaDevs. [Rincian dan strategi](products/sagadevs/ARKARUPA.md). Catatan dirty-checkout knowledge lama tidak lagi menjadi blocker setelah prasyarat clean/main/sync terpenuhi pada milestone ini.
+
 ## 2026-10-14 - Historical stock closing anchor preserved beyond the recent window
 
 `CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `04d19e2247d06b3a62c0a62444e4b0290c9babe5` on `codex/sagapos-foundation-20261014`; runtime/test inputs `dc143b4ccdbbc858bccbbb4c7c265e381c5fea99`, closing documentation-only. Before: the last closed count could disappear outside the ten-count read window and block the next closing form. After: the server computes one compact continuation anchor from existing persisted facts; same scoped workspace/selector keeps the exact prior closing boundary, bounded recent list and wrong-anchor rejection. Visible accessible guidance distinguishes no counts, no new count and missing anchor. No schema/state-version/grant/dependency/provider change.

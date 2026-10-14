@@ -52,6 +52,8 @@ Indeks mencakup knowledge publik pada evidence cut-off 16 Agustus 2026 08:39 WIB
 
 ## Produk
 
+Proyek klien di bawah SagaDevs: [Arkarupa Dashboard — prototype kontraktor](products/sagadevs/ARKARUPA.md). Status lokal, human acceptance dan public preview dibedakan dari produk SaaS yang sudah berjalan.
+
 | Produk | Ringkasan | Dossier | Riwayat |
 |---|---|---|---|
 | SagaDevs | [PRODUCT](products/sagadevs/PRODUCT.md) | [DOSSIER](products/sagadevs/DOSSIER.md) | [CHANGELOG](products/sagadevs/CHANGELOG.md) |

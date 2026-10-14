@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-10-14 - Proyek klien Arkarupa
+
+`CONFIRMED`; [Arkarupa Dashboard](ARKARUPA.md) merupakan prototype kontraktor terpisah dengan survei → RAP per ruangan → penawaran → baseline → progres dan barang datang. Barang diterima tidak menaikkan progres fisik. Source aplikasi lokal `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8`, startup/paket UAT `85eb82d41453c303929ea04135522120f349aba0`; source belum memiliki remote terverifikasi. Demo lokal dilanjutkan pada 14 Oktober dengan HTTP/file/data cocok; human UAT dan akses publik belum selesai. Ini pembaruan portfolio delivery, tanpa perubahan pricing atau runtime website marketing.
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.

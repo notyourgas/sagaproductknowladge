@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-14 - Arkarupa Dashboard: proyek klien kontraktor
+
+`CONFIRMED`; [catatan proyek Arkarupa](products/sagadevs/ARKARUPA.md) berada di bawah knowledge SagaDevs, dengan source/runtime terpisah dari marketing. Survei → RAP per ruangan → penawaran → baseline → progres terverifikasi dan barang datang. Barang diterima bukan progres terpasang. Kode aplikasi lokal `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8`; startup/paket UAT `85eb82d41453c303929ea04135522120f349aba0`. Restart 14 Oktober terverifikasi HTTP/file/data; authenticated browser smoke berasal dari 13 Oktober. `LOCAL_DEPLOYED`, UAT manusia/public preview/production belum selesai; bukan BUSINESS_READY. Belum ada remote source proyek terverifikasi. Pricing/trial produk Saga tidak berubah.
+
 ## 2026-10-14 - Historical stock closing anchor preserved beyond the recent window
 
 `CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `04d19e2247d06b3a62c0a62444e4b0290c9babe5` on `codex/sagapos-foundation-20261014`; runtime/test inputs `dc143b4ccdbbc858bccbbb4c7c265e381c5fea99`, closing documentation-only. Before: the last closed count could disappear outside the ten-count read window and block the next closing form. After: the server computes one compact continuation anchor from existing persisted facts; same scoped workspace/selector keeps the exact prior closing boundary, bounded recent list and wrong-anchor rejection. Visible accessible guidance distinguishes no counts, no new count and missing anchor. No schema/state-version/grant/dependency/provider change.
