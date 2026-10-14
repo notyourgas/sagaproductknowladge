@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Count-time operational recipe formulas and revisions
+
+`CONFIRMED`; Andreas active Wave3 goal. Source0c36591/tested d792a74/ae81cea
+pushed. Base/publication, modifier/variant/NONE, takeaway and prep formulas/
+revisions retained across edits/replay; legacy absent preserved, HPP read scope
+retained.68unique local PASS0FAIL0SKIP, no correction; no new full/native/browser/
+operator claim. Eight knowledge files updated. Production/schema/grant/payment/
+printer unchanged. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY;
+native qualification/correction/CSV/workflow/recovery/Linux/behavioral rollback/
+activation/UAT remain OPEN.
+
+
 ## 2026-10-15 - Snapshot unit/kemasan historis dan izin baca biaya stok
 
 `CONFIRMED`; Andreas memulai goal penuntasan Wave3. Source2ab1520/app5e2d57c/

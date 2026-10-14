@@ -1,5 +1,24 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Revisi dan formula resep tersimpan bersama hitungan stok
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source `0c36591cfb4f4e4a53eaa7eb20b3d9d55a0e85fb`, exact tested d792a74,
+implementation ae81cea pushed; closing docs-only. Hitungan baru menyimpan formula/
+versi resep dasar, identitas publikasi yang cocok, modifier/varian termasuk NONE,
+bahan takeaway, dan input/output/toleransi resep prep. Edit berikutnya tidak
+mengubah konteks historis; snapshot lama tanpa konteks tidak diisi ulang.
+Konteks mengikuti pembatasan akses HPP dan tidak muncul pada ringkasan histori.
+68unique scoped local tests PASS0FAIL0SKIP(16snapshot+52HPP/prep/gudang).
+Bukan fresh full check/type/build/native/browser/operator acceptance. Snapshot
+konfigurasi saat observasi bukan bukti satu resep berlaku sepanjang periode.
+Production95a6eda/rollback2a18c9d ready unchanged02.09WIB,GATEWAY/SaaSCASH.
+No schema/dependency/grant/payment/printer mutation. Native allowance approval,
+actual roles/correction/CSV/workflow/alerts/reconcile/full recovery/Linux/compatible
+behavioral rollback/activation/UAT remain OPEN; GOAL ACTIVE.
+[Bukti](https://github.com/notyourgas/sagaops/blob/0c36591cfb4f4e4a53eaa7eb20b3d9d55a0e85fb/docs/T1_CATALOG_CHOICES_20261014.md).
+
+
 ## 2026-10-15 - Konteks kemasan closing dan pembatasan biaya stok
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

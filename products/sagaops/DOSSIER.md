@@ -1,5 +1,29 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Immutable operational recipe context, scoped local qualification
+
+`CONFIRMED`; source0c36591/tested d792a74/implementation ae81cea pushed.
+Count-time recipe context retains normalized ingredient quantities/base units and
+operational versions for base, product/variant-scoped modifiers, negative deltas,
+explicit NONE, takeaway fulfillment, and prep components/output/yield tolerance.
+Matching publication identity is frozen; direct edits are not mislabeled as the
+old publication. Context is optional v2, canonical-hashed, strictly validated and
+HPP-redacted. Legacy v1/v2 absent remains byte-identical without backfill.
+Before formulas could rely on current masters; after original formulas survive
+edit/cold replay/calendar binding. This does not prove a single recipe/calendar
+throughout the period or replace actual sale/prep snapshots.
+16snapshot PASS1.10s plus52distinct domain regression PASS1.72s,68unique current
+scope0FAIL0SKIP; coverage completion on identical candidate, no app correction.
+Old180s163.38consumed/16.62remaining(focused3.30/native13.32), no reset/new consent.
+Full check/type/build/native/browser/load/restart/restore/operator NOT_RUN.
+Production95a6eda/rollback2a18c9d active/ready unchanged02.09WIB,GATEWAY/SaaSCASH.
+Existing builder sandboxes0/sessions0; separate Linux unqualified. No schema,
+state-version, dependency, UI, grant, payment or printer mutation. GOAL ACTIVE,
+LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Bounded native funding,
+actual-role proof/corrections/CSV/daily alerts/device-calendar reconciliation and
+full behavioral recovery/release/UAT remain OPEN.
+
+
 ## 2026-10-15 - Count-time units/packages and current stock-read cost scope
 
 `CONFIRMED`; source2ab1520/app5e2d57c/packagefb21168/fixturef79265f pushed.

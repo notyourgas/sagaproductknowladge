@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS operational recipe history locally preserved
+
+`CONFIRMED`; source0c36591/tested d792a74/ae81cea pushed. Count snapshot includes
+base/publication, scoped modifier/variant/NONE, takeaway and prep formulas/
+revisions; old absent context not backfilled, HPP visibility retained.68unique
+scoped local PASS0FAIL0SKIP; not new full/native/browser/restore/operator proof.
+Goal ACTIVE/LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY.
+Production95a6eda/rollback2a18c9d ready unchanged02.09WIB,GATEWAY/SaaSCASH.
+No schema/grant/pricing/provider/payment/printer mutation. Native funding,
+actual roles/correction/CSV/daily alerts/device-calendar reconciliation/full
+qualification/separate Linux/behavioral rollback/activation/UAT remain OPEN.
+
+
 ## 2026-10-15 - SagaPOS historical package context, Wave3 goal active
 
 `CONFIRMED`; source2ab1520/app5e2d57c/packagefb21168/fixturef79265f. Count-time

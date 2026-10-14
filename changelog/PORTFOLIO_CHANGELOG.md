@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS count-time recipe history retained
+
+`CONFIRMED`; source0c36591/tested d792a74/ae81cea, Andreas Wave3 goal active.
+Base/publication/scoped modifier/variant/NONE/takeaway/prep formula context frozen;
+legacy not backfilled, HPP read scope retained.68unique scoped local PASS0FAIL0SKIP,
+not full/native/operator acceptance. Eight docs updated, production/pricing/
+schema/grant/payment/printer unchanged. IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY;
+native/corrections/report/workflow/recovery/Linux/behavioral rollback/UAT OPEN.
+
+
 ## 2026-10-15 - SagaPOS saved package context and shared stock cost visibility
 
 `CONFIRMED`; source2ab1520/app5e2d57c/packagefb21168/fixturef79265f, Andreas GOAL
