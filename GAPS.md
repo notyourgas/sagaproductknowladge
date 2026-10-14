@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - SagaPOS full-workday deadline belum terdiagnosis
+
+`CONFIRMED`; stock-only diagnosis pada3a12741 lulus1PASS30.28s/nativePG18/PHP dengan cleanup, source closing `be0f8f6f0bdaba126fbd900402dc80d7990c3409`. Ini mengurangi unknown pada minimal stock bootstrap, bukan root cause seluruh workday. Tiga HistoryNative deadline tetap FAIL/correction limit; full relevant regression berhenti setelah21 subtests tanpa terminal summary. `NEEDS CONFIRMATION`: data-volume/setup/per-phase costs dan root cause workday, qualified existing separate Linux builder, integrated source ownership, encrypted restore/recovery dan operator/hardware UAT.
+
+Executor berikutnya mengisolasi biaya fase tanpa fourth blind exhausted-gate retry; requalification butuh arah khusus dan kapasitas/budget sah. Kemudian cutoff/in-flight order/late receipt-waste-refund version corrections, immutable report, indexed history dan full daily module/role scenarios. Fixed C>=1GiB/RAM>=2.5GiB guards tidak diturunkan; BIOS/serving VPS build/paid provisioning/hosted GitHub tidak diaktifkan. Production95a6eda unchanged, NOT_BUSINESS_READY. Tidak perlu keputusan payment atau password baru untuk fakta scoped ini. [Ledger source](https://github.com/notyourgas/sagaops/blob/be0f8f6f0bdaba126fbd900402dc80d7990c3409/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt continuation: atomik lokal ditutup, transport/native masih open
 
 `CONFIRMED`; source `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87`,10 affected/static1089 PASS menutup atomic addon/admission lokal saja. QZ exception Java NIO kini terukur; manual Windows launch di luar automation atau support berizin masih diperlukan, bukan retry konfigurasi ketiga. GitHub billing API memerlukan akses tambahan yang belum diberikan; tidak mengubah OAuth/spending atau menjalankan compute. Pemilik: Andreas untuk batas biaya/manual launch/support permission, executor untuk qualification saat tersedia. Native PG18/Linux, migration runner/encrypted restore, full regression, physical matrix/endurance/canary/UAT open. Production95a6eda/flag OFF tetap, NOT_BUSINESS_READY.

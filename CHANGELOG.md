@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - SagaPOS stock bootstrap proof dan retained failure facts
+
+`CONFIRMED`; source `be0f8f6f0bdaba126fbd900402dc80d7990c3409`, tested3a12741, actual scoped native1PASS/0FAIL/0SKIP30.28s dengan cleanup. Alasan: membuka stok perlu bukti real engine/auth/UI; prior workday timeouts tidak boleh dianggap app defect tanpa diagnosis. Tidak ada fitur/schema/production/payment mutation. Static1092/type PASS119dc3e dan native3FAIL/incomplete relevant regression kini tersinkron dari facts held9d37abd, tanpa menghapus printerd0381c3 atau perubahan produk lain.
+
+Sepuluh dokumen produk/portfolio/master/gaps/sync/registry diperbarui dari fresh clean main4e1252c, validasi/public-safety/push terpisah. `SCOPED_NATIVE_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`; root cause fullworkday, builder/integrated release/recovery/full regression/operator UAT tetap open. SHA knowledge final adalah main HEAD, bukan source deployment. [Ledger source](https://github.com/notyourgas/sagaops/blob/be0f8f6f0bdaba126fbd900402dc80d7990c3409/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt atomic admission dan diagnostic checkpoint
 
 `CONFIRMED`; source `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87` pushed dan10 affected/static1089 PASS. PRODUCT/DOSSIER/CHANGELOG SagaOPS, portfolio/master/gaps/sync mencatat atomic lab schema/ledger, fail-closed startup dan QZ diagnostic/unresolved compute gate. Alasan: menutup rollback/admission lokal tanpa mengklaim native recovery atau production. Production tidak berubah/NOT_BUSINESS_READY. Enti receipt sebelumnya telah diintegrasikan pada main94d1d2ac dengan mempertahankan stock updates; tidak force-push atau menyalin data/path/identifier privat. Knowledge current milestone divalidasi/push terpisah.

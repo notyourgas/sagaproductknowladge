@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Native stock bootstrap PASS, failure historis tidak dihapus
+
+`CONFIRMED`; sumber Andreas continuation dan source `be0f8f6f0bdaba126fbd900402dc80d7990c3409`/test3a12741. Alasan: tiga deadline workday belum menunjukkan boundary penyebab. Diagnosis minimal realPHP/PG18/auth/API/form/history lulus1/0/0,30.28s termasuk cleanup; data stock read-only dan overflow390/768/1440 teruji. Tidak ada perubahan fitur/schema/payment atau production.
+
+Koreksi status yang sebelumnya held: static1092/core37/type PASS (119dc3e), nativefull3FAIL, relevant regression21 completed subtests PASS namun batch incomplete. Root cause full deadline masih unknown; scoped9 history lokal dan native minimal bukan full-product acceptance. `IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Produk/portfolio/master/gaps/sync/registry diperbarui dari clean latestmain, mempertahankan receipt dan histori. [Ledger source](https://github.com/notyourgas/sagaops/blob/be0f8f6f0bdaba126fbd900402dc80d7990c3409/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Atomic receipt addon admission
 
 `CONFIRMED`; alasan: DDL dan ledger lab sebelumnya terpisah sehingga kegagalan ledger bisa meninggalkan schema tanpa binding. Source pushed `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87` sekarang atomik, read-only idempotent dan reject drift/unregistered table, startup hanya verify.10 affected + static1089/core37 PASS; SQL/format/payment/dependency unchanged. QZ bounded no-print diagnostic memperoleh exception Java NIO; belum working bridge. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`, production unchanged. CI quota/registration/native, migration/recovery, full regression, physical canary/UAT tetap open. Delapan dokumen produk/portfolio/master/gaps/root/sync diperbarui terpisah dari source.

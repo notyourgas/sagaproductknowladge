@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-14 - SagaPOS stok: native minimal lulus, belum rilis baru
+
+`CONFIRMED`; foundation `be0f8f6f0bdaba126fbd900402dc80d7990c3409` clean/pushed, tested3a12741. Diagnosis actualPHP/nativePG18/Owner menunjukkan bootstrap stok, finalization form dan lazy history dua counts dapat dibaca tanpa perubahan stock,1PASS/0FAIL/0SKIP30.28s termasuk cleanup. `SCOPED_NATIVE_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Tidak mengubah perilaku app atau mengesahkan closed full-workday gate.
+
+Fakta qualification sebelumnya held kini dipublikasikan: static1092/core37/type PASS119dc3e, HistoryNative3 deadlineFAIL, regression21 completedPASS namun batch incomplete. Root cause full timeout tetap unknown; jangan menyebut semua fitur/production siap. Separate qualified Linux builder, cutoff/late adjustments/immutable report, full regression, integrated receipt/foundation candidate, recovery dan UAT masih open. Production95a6eda ready/GATEWAY/SaaS CASH unchanged; rollback2a18c9d historis. Receiptd0381c3 feature flag OFF tetap terpisah; pricing/provider tidak berubah. [Ledger source](https://github.com/notyourgas/sagaops/blob/be0f8f6f0bdaba126fbd900402dc80d7990c3409/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - SagaPOS receipt continuation masih belum production
 
 `CONFIRMED`; source `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87` melanjutkan editor nota dengan atomic addon DDL/ledger di lab dan startup verification read-only.10 affected tests/static1089/core37 PASS; SQL/format/calculation unchanged, bukan native/Linux/recovery/full-suite acceptance. QZ startup trace gagal di Java NIO; automation-context hypothesis perlu manual Windows control/vendor diagnosis, tidak dianggap printer rusak atau izin mematikan proteksi. CI manual exact-source Node22.22.1 prepared/NOT_RUN, quota/billing unknown. Production95a6eda unchanged, schema/flag belum diaktifkan, `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Migration/recovery, native/full regression dan physical canary/UAT tetap open.

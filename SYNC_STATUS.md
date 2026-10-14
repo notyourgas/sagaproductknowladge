@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-14 - Stock qualification direkonsiliasi tanpa mengganti histori
+
+`CONFIRMED`; checkout clean latestmain4e1252c/ff-only/HEAD=origin sebelum edit. Commit held9d37abd tetap disimpan pada checkout asal; fakta static/native/regression dibaca ulang dan diterapkan sebagai entri baru, bukan force/rebase/overwrite main. Source `be0f8f6f0bdaba126fbd900402dc80d7990c3409`, native input3a12741/scoped1PASS30.28s, production95a6eda unchanged. Perubahan receiptd0381c3 dan produk lain dipertahankan.
+
+Sepuluh dokumen: PRODUCT/DOSSIER/product changelog, portfolio/master/gaps/root/sync, registryMD/JSON candidate foundation saja. Milestone partially accepted: scoped native bootstrap lulus; full native deadline/regression/recovery/UAT open. `UP TO DATE` hanya untuk knowledge setelah validator/diff/staged repeat/push/readback PASS; runtime tetap NOT_DEPLOYED/NOT_BUSINESS_READY. Final SHA adalah main HEAD, dilaporkan setelah push. [Ledger source](https://github.com/notyourgas/sagaops/blob/be0f8f6f0bdaba126fbd900402dc80d7990c3409/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt continuation source provenance
 
 `CONFIRMED`; clean main/ff-only dari94d1d2ac sebelum edit; source pushed `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87`. Milestone atomik lokal accepted, qualification operational partially accepted; production unchanged. PRODUCT/DOSSIER/product changelog/portfolio/master/gaps/root/sync8 file diperbarui, validator/link/public-safety/diff/push wajib sebelum klaim UP TO DATE. Enti sebelumnya berhasil diintegrasikan ke public main tanpa menghapus stock updates; held commit lama tetap dipertahankan. Final SHA dilaporkan setelah push, native/QZ/recovery/CI/physical/UAT masih open.
