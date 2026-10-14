@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-15 - SagaPOS package/conversion snapshot and stock read scope
+
+`CONFIRMED`; clean main92cba444=origin/main before edit, printer entries kept.
+Source2ab1520/app5e2d57c/packagefb21168/fixturef79265f pushed. Eight docs align
+historical unit/package context and current HPP read scope;77snapshot and33read
+scoped PASS separately,syntax/type PASS,2native-fixture syntax only. Milestone
+accepted local, full-goal readiness partially accepted/NOT_BUSINESS_READY.
+Production95a6eda/rollback2a18c9d ready unchanged01.50WIB; no account/grant/payment/
+printer mutation. Native/bounded funding/recipe/correction/workflow/Linux/
+behavioral rollback/activation/UAT open. Validator/diff/public-safety/staged
+repeat/push/immutable readback required; final SHA main HEAD.
+
 ## 2026-10-15 - SagaPOS shared stock approval/cost policy
 
 `CONFIRMED`; clean mainc19e2b5b=origin/main before edit, printer entries preserved.

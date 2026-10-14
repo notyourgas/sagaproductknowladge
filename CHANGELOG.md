@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS Wave3 unit/package snapshot and read-scope proof
+
+`CONFIRMED`; Andreas initiated end-to-end goal. Source2ab1520/app5e2d57c/
+packagefb21168/fixturef79265f pushed:count-time unit/package context and shared
+current HPP stock-read visibility, legacy preserved.77snapshot and33read scoped
+PASS separately(no overlap sum),syntax/type PASS,2native fixture syntax only.
+Eight PRODUCT/DOSSIER/productCHANGELOG/MASTER/GAPS/SYNC_STATUS/PORTFOLIO/root docs
+updated. No production/pricing/grant/payment/printer change. Milestone accepted
+local, GOAL ACTIVE/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Bounded native
+funding and recipe/correction/report/workflow/recovery/Linux/behavioral rollback/
+deployment/operator UAT still open; final knowledge SHA main HEAD.
+
 ## 2026-10-15 - SagaPOS stock action permission parity synchronized
 
 `CONFIRMED`; Andreas requested next closure. Source6e24fdf/tested appeafb29b pushed,

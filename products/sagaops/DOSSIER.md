@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Count-time units/packages and current stock-read cost scope
+
+`CONFIRMED`; source2ab1520/app5e2d57c/packagefb21168/fixturef79265f pushed.
+Snapshot metadata v2 captures effective configured+standard conversion edges and
+current package dimensions(big/small/base), excluding supplier identity/barcode/
+reference prices/actor/reason. Later master edits and future conversions do not
+reinterpret a saved count; legacy v1/absent context remains unchanged. Strict
+shape/hash/time/revision/dimension checks reuse existing domain rules; calendar
+binding preserves metadata version. Shared read redaction now follows current
+execution HPP rights, not stale account rights, without mutating source state.
+77package regression and33read regression PASS0FAIL0SKIP separately, not110unique
+or whole-product acceptance; syntax/type PASS. Native fixture2syntax PASS only,
+actual PG/roles/full static/build/browser/recovery/operator tests NOT_RUN.
+Existing180s160.56 consumed/19.44remaining(focused6.12/native13.32); next180s
+request pending, no assumption/reset of old failed gates. LOCAL_VALIDATED/
+IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Production95a6eda/rollback2a18c9d
+ready unchanged01.50WIB; no schema/grant/payment/printer mutation. New metadata
+requires a compatible behavioral rollback target and rehearsal before activation.
+Goal active; recipe revisions, corrections/CSV/alerts/device/calendar reconcile,
+native/full qualification, separateLinux/artifact/recovery/UAT remain open.
+
 ## 2026-10-15 - Stock mutation permission parity, scoped local proof
 
 `CONFIRMED`; source6e24fdf/tested appeafb29b, penutupan docs-only, branch existing.

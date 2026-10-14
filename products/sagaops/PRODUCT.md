@@ -1,5 +1,23 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Konteks kemasan closing dan pembatasan biaya stok
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source `2ab1520c344cec537fb771be380091f4633114af` pushed; app5e2d57c,
+packagefb21168, fixture preparationf79265f; penutupan docs-only. Hitungan baru
+menyimpan konversi dan definisi kemasan besar/kecil/dasar saat observasi, bukan
+mengikuti master terbaru. Kalender server menjaga versi metadata; legacy v1/
+tanpa snapshot tidak diisi ulang. Pembacaan stok memakai pembatasan biaya HPP
+yang sama dan izin terkini; jumlah tetap dapat dibaca tanpa membuka biaya.
+77snapshot/HPP/warehouse scoped tests dan33module/Team scoped tests PASS0FAIL0SKIP,
+overlap tidak dijumlahkan; syntax/type PASS. Dua fixture native baru hanya lulus
+sintaks, PostgreSQL/full check/build/browser/operator qualification belum berjalan.
+Production95a6eda/rollback2a18c9d ready unchanged01.50WIB, GATEWAY/SaaSCASH tetap.
+No schema/dependency/grant/payment/printer change. OPEN:persetujuan qualification
+berbatas, role native, recipe context/corrections/CSV/workflow/alerts/reconcile,
+Linux builder dan behavioral rollback sebelum deploy/activation/UAT. Goal Wave3
+aktif, belum selesai. [Ledger](https://github.com/notyourgas/sagaops/blob/2ab1520c344cec537fb771be380091f4633114af/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Persetujuan aksi stok konsisten antarjalur aplikasi
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

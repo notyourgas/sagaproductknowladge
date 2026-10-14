@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS saved package context and shared stock cost visibility
+
+`CONFIRMED`; source2ab1520/app5e2d57c/packagefb21168/fixturef79265f, Andreas GOAL
+Wave3 active. Historical big/small/base conversions/packages saved; legacy not
+backfilled, current HPP rights control read costs.77snapshot and33read scoped
+PASS separately,syntax/type PASS,2native syntax only. Eight docs updated; no
+production/pricing/schema/grant/payment/printer change. IMPLEMENTED_NOT_DEPLOYED/
+NOT_BUSINESS_READY. Native/full/recipe/correction/CSV/workflow/recovery/Linux/
+behavioral rollback/operator UAT remain open, bounded next allowance pending.
+
 ## 2026-10-15 - SagaPOS consistent stock approval and HPP cost grants
 
 `CONFIRMED`; source6e24fdf/tested appeafb29b, requested by Andreas. Shared rule

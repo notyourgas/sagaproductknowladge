@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Snapshot unit/kemasan historis dan izin baca biaya stok
+
+`CONFIRMED`; Andreas memulai goal penuntasan Wave3. Source2ab1520/app5e2d57c/
+packagefb21168/fixturef79265f pushed. Before konteks kemasan belum tersimpan dan
+read scope berbeda; after count-time conversions/package dimensions+legacy
+preservation dan current HPP read redaction shared.77snapshot dan33read scoped
+PASS0FAIL0SKIP, overlap bukan penjumlahan; syntax/type PASS, native2syntax only.
+Eight knowledge files updated. No production/schema/grant/payment/printer change.
+LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY; bounded qualification,
+recipe/correction/report/workflow/recovery/Linux/behavioral rollback/UAT open.
+
 ## 2026-10-15 - Shared approval/cost policy for stock actions
 
 `CONFIRMED`; Andreas meminta penyelesaian berikutnya. Source6e24fdf/tested
