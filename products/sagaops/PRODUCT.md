@@ -1,5 +1,9 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-14 - Receipt static/type dan workflow guards selesai
+
+`CONFIRMED`; candidate receipt tetap `22d03699135cde2ae2020d4a1b3849ff551dab54`. Sesudah relokasi arsip tidak aktif berizin dan verifikasi SHA-256, kapasitas memenuhi admission untuk satu `npm run check`: static1092 modul/core37 dan TypeScript PASS. YAML latest candidate ter-parse dan guard manual-only/compute opt-in/exact SHA/Node/native recovery PASS; workflow hosted NOT_RUN. Ini menggantikan capacity stop untuk pemeriksaan tersebut saja, bukan full suite atau native/host acceptance. Historical11 affected PASS/2SKIP tetap scoped. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`: tidak menjalankan deploy/DDL/flag/print production. QZ manual control, compute/quota, Linux/native recovery, host recovery/rollback, full relevant regression, physical canary dan authenticated UAT masih open. Source/renderer/schema/dependency/pricing/provider tidak berubah.
+
 ## 2026-10-14 - Guard finalisasi stok stale ditulis; tes masih tertahan
 
 `CONFIRMED` untuk implementasi source, bukan keberhasilan runtime. Candidate `e7915cbdf206b0a87c764e520b3cbc89f3482c5c` clean/pushed pada `codex/sagapos-foundation-20261014`. Server kini menolak finalisasi bila hitungan akhir tertinggal oleh fakta stok yang dicatat belakangan; UI memberikan instruksi hitung ulang/pilih hitungan akhir baru tanpa otomatis mengubah stok atau mengulang submit. Kontrak approval inventory+finance, scope, CSRF, optimistic revision dan exact replay dipertahankan. Tidak ada schema/state-version/dependency/grant/payment change.

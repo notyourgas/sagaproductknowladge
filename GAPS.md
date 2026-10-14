@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Receipt capacity stop scoped ditutup; release gates masih open
+
+`CONFIRMED`; receipt `22d03699135cde2ae2020d4a1b3849ff551dab54` unchanged, terminal check static1092/core37/TypeScript dan latest YAML guards PASS setelah approved hash-verified relocation/fresh admission. Menggantikan blocker kapasitas untuk check ini, bukan semua task/masa depan. Historical11PASS/2SKIP tetap; Bash/native/hosted/host installer NOT_RUN. `NEEDS CONFIRMATION`: QZ manual Windows control dan compute/quota/support keputusan dari Andreas; executor kemudian qualify Linux/native restore, host recovery/rollback, full relevant regression, commissioned transport/physical canary dan authenticated UAT. Tidak menjalankan production mutation; `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+
 ## 2026-10-14 - Qualification guard stock closing tertahan kapasitas
 
 `CONFIRMED`; source `e7915cbdf206b0a87c764e520b3cbc89f3482c5c` menambah guard/HTTP409/UI guidance dengan15 new cases prepared/0run. Candidate `SOURCE_IMPLEMENTED_UNVALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY`. C pernah0 lalu tetap di bawah1GiB; safe Downloads documents/media hanya44MiB, tidak cukup untuk headroom, tidak dipindah/dihapus. Tidak menyentuh Codex/project/backup/OS cache atau menghentikan proses lain.

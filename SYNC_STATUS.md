@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-14 - Receipt scoped static qualification snapshot
+
+`CONFIRMED`; isolated clean main/ff-only dari `e76dee0679d7b879cce96ebb0b0609bc95ebb633`, receipt source unchanged `22d03699135cde2ae2020d4a1b3849ff551dab54`. Fresh static1092/core37/TypeScript/latest YAML guards PASS sesudah approved hash-verified capacity relocation. Delapan dokumen menyelaraskan scoped unblock tanpa menimpa update stock atau canonical checkout lain. Milestone static accepted, operational/release acceptance partially accepted: native/hosted/host installer/full/QZ/physical/UAT masih open, production mutation tidak dijalankan. Validator/link/public-safety/diff/staged repeat/push/readback wajib sebelum knowledge UP TO DATE; final SHA adalah main HEAD.
+
 ## 2026-10-14 - Stock stale-count candidate disinkron sebagai unvalidated
 
 `CONFIRMED`; clean main/ff-only/HEAD=origin f331a16 sebelum edit. Source `e7915cbdf206b0a87c764e520b3cbc89f3482c5c`, prepared15tests/0run, production unchanged95a6eda. Sepuluh file PRODUCT/DOSSIER/product changelog/portfolio/master/gaps/root/sync/registry menyelaraskan status `SOURCE_IMPLEMENTED_UNVALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY`; prior validation entries dan receipt22d0369 dipertahankan. Milestone partially accepted: source tersedia, qualification blocked capacity. Validator/diff/staged repeat/push/readback wajib sebelum knowledge `UP TO DATE`; final SHA adalah main HEAD sesudah push. [Ledger source](https://github.com/notyourgas/sagaops/blob/e7915cbdf206b0a87c764e520b3cbc89f3482c5c/docs/T1_CATALOG_CHOICES_20261014.md).
