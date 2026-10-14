@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-14 - Scoped dated stock history and workspace lifecycle locally validated
+
+Source/scoped test facts accepted; native release verification remains partially accepted.
+
+`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `f378198e9d231a4470edc8a3587f4526a884c72d` on `codex/sagapos-foundation-20261014`; runtime/test inputs `9473c0a2976ff1dce2d71f6fe1db05ee4e83830d`, closing docs-only. This supersedes the previous prepared history status for scoped acceptance only. Read-only stock history has WIB count/period filters, stable bounded cursor/high-water and fresh per-page permissions; workspace lifecycle now discards older reads across navigation/revocation and clears old form/state references. No schema/grant/dependency/payment change.
+
+First5PASS/0FAIL/0SKIP plus12syntax checks takes16.31s. A known name-filter coverage gap is retained explicitly: three pure date/negative cases were initially unselected. Coverage completion on the same candidate/gate runs full pure file plus existing closing-form browser regression,5PASS/0FAIL/0SKIP3.53s. Combined9unique cases, not10unique or full-product coverage. Tests include75tied counts/concurrent backdating, strict dates/query/facts/foreign-stale cursor/read-copy snapshot integrity, real in-memory Team/primaryHTTP auth/revoke/CSRF/no-store, mocked SaaS binding, lazy pagination/read failure/duplicate/denied-clear/late-response/navigation, keyboard and strictAxe390/768/1440. NativePG/PHP/RLS/restart persistence and fresh full static/type/build remain NOT_RUN. Historical native receipts remain separate.
+
+Capacity recovered externally above fixed guards; no files/processes moved/deleted/stopped.19.84s charged from42.00s,22.16s remains; no budget/gate reset. Additional150s proposal (native60 plus check/type/relevant regression90) is pending explicit Owner reply, only disposable targets without production effects. Production95a6eda ready/GATEWAY/SaaS CASH unchanged at fresh12.13WIB; rollback2a18c9d historical, no fresh SSH/deploy/activation/new human UAT. Separate Linux builder still unqualified, serving VPS not used for build. OPEN: native/full relevant acceptance, cutoff/late receipt-waste-refund/immutable adjustments, indexed large-history performance, actual multi-role workday/modules/devices and guarded artifact/restore/rollback release. No readiness percentage/pricing change. [Evidence and remaining strategy](https://github.com/notyourgas/sagaops/blob/f378198e9d231a4470edc8a3587f4526a884c72d/docs/T1_CATALOG_CHOICES_20261014.md).
+
+
 ## 2026-10-14 - Arkarupa recovery dan regresi terkini
 
 `CONFIRMED`; clean canonical main/ff-only sebelum edit. Source tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, docs `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`; aplikasi a3c255e tetap. Catatan proyek dan PRODUCT/DOSSIER/CHANGELOG SagaDevs, master, gaps, portfolio serta root changelog diperbarui untuk fresh full69/881 dan drill source/encrypted data restore lintas drive. `UP TO DATE` untuk milestone knowledge setelah validator dan push; human/public/production tetap terbuka. SHA final adalah main HEAD, dilaporkan setelah push. Tidak ada perubahan produk tetangga atau source hosting Arkarupa.
