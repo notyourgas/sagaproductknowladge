@@ -1,5 +1,9 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-14 - Nota: Linux/native terverifikasi, rilis tetap tertahan
+
+`CONFIRMED`; source `05ca56db02274f493796c2a3cd72a051bb506a7e` pushed. Sebelumnya Linux/native belum dijalankan; kini scope nota34PASS/0FAIL/0SKIP, static1093/core37/TypeScript PASS termasuk native PG18 dump/restore versi/logo/dokumen asli-salinan dan pembatasan grants. Pratinjau mempertahankan48kolom; desktop/390px diperiksa visual, screenshot320px masih bergeser meski tes gulir keyboard lulus. Full embedded regression pada input `e15e075e1864fcae0385109a952cd55141cbccbd` mencapai batas15menit dengan35 kegagalan tercatat, tanpa summary penuh; bukan PASS atau bukti same-source full qualification. QZ manual launch tanpa pesan terlihat, proses tidak aktif; penyebab belum terbukti. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`; production95a6eda unchanged, tidak ada DDL/flag/cetak baru. OPEN: diagnosis kegagalan/full regression, visual320, QZ commissioned transport, host recovery/rollback, physical canary dan authenticated UAT. Tidak mengubah pricing/payment.
+
 ## 2026-10-14 - Closing stale: domain dan HTTP teruji, qualification belum lengkap
 
 `CONFIRMED`; source checkpoint `37f16d8efb827278f52fe652dfb682235e20e785`, test inputs `921e954c0a6f88eb0d771a466af0e15bbebbb539`, app implementation `e7915cb` unchanged. Menggantikan status15prepared/0run sebelumnya untuk scope yang kini diuji saja: domain17PASS (13new +4regression), HTTP3PASS (1new +2regression),0FAIL/0SKIP pada input terkoreksi. Owner fixture memakai jalur Dashboard existing, bukan login staf; tidak mengubah auth/grant/schema/dependency/payment.14new freshness assertions teramati PASS; mock-browser dan native2cases belum dijalankan.

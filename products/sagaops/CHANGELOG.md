@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Receipt qualification Linux selesai untuk scope terfokus
+
+`CONFIRMED`; source `05ca56db02274f493796c2a3cd72a051bb506a7e`, backend base receipt22d0369. Test native adapter diperbaiki dan preview48kolom/mobile ditata;34PASS/0FAIL/0SKIP, static1093/core37/type dan PG18 dump/restore PASS. Desktop/390visual diterima,320capture residual. Full regression e15e075 terminal ceiling15menit/35observed failures/no full summary, bukan full PASS. Alasan: menutup blocker native nota sambil mempertahankan kegagalan dan provenance terpisah. QZ manual silent/nonrunning; host/full/physical/UAT open. Production95a6eda unchanged, NOT_DEPLOYED/NOT_BUSINESS_READY; tidak ada harga/payment/provider change.
+
 ## 2026-10-14 - Stock stale-count assertions maju; capacity kembali menghentikan qualification
 
 `CONFIRMED`; checkpoint `37f16d8efb827278f52fe652dfb682235e20e785`, tested921e954; app e7915cb unchanged. Domain17 dan corrected HTTP3 PASS/0FAIL/0SKIP;14new cases plus6regressions, bukan full gate. Initial Owner-login fixture failure retained; test uses existing Dashboard bridge, no authorization change. Combined correction FAIL continuous disk guard; UI/native/check/type NOT_RUN, native new case prepared only. Additional150s authorized9.36used/140.64remaining, no old budget/correction reset. Production unchanged95a6eda, payment boundary unchanged, receipt22d0369 separate. Reason: record actual delta evidence without promoting incomplete acceptance. [Ledger](https://github.com/notyourgas/sagaops/blob/37f16d8efb827278f52fe652dfb682235e20e785/docs/T1_CATALOG_CHOICES_20261014.md).

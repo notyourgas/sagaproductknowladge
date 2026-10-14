@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-14 - SagaPOS receipt: scoped Linux/native qualified
+
+`CONFIRMED`; source `05ca56db02274f493796c2a3cd72a051bb506a7e`. Nota34PASS/0FAIL/0SKIP, static1093/core37/type/native PG18 dump-restore PASS; desktop/390visual accepted,320capture pending. Full embedded run e15e075 terminal15minute ceiling dengan35observed failures, no terminal summary; QZ manual silent/nonrunning. Milestone qualification saja, bukan product launch. Production95a6eda/pricing/payment/produk lain unchanged; IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Diagnosis full suite, host recovery/rollback, commissioned printing dan authenticated/physical acceptance tetap open.
+
 ## 2026-10-14 - SagaPOS closing stale: partial domain/HTTP verification
 
 `CONFIRMED`; source `37f16d8efb827278f52fe652dfb682235e20e785` / tested921e954, app unchangede7915cb. Domain17/HTTP3 actual PASS,14new +6regression, combined runnerFAIL continuous capacity. UI/native/check/type/build not run; additional150s9.36used/140.64remaining, old limits retained. No pricing/provider/neighbor-product/production change; source partially validated, NOT_DEPLOYED/NOT_BUSINESS_READY. Stable capacity, remaining qualification and integrity/recovery/operator UAT gaps remain; receipt22d0369 facts preserved. [Ledger](https://github.com/notyourgas/sagaops/blob/37f16d8efb827278f52fe652dfb682235e20e785/docs/T1_CATALOG_CHOICES_20261014.md).

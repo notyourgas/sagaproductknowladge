@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Receipt scoped native selesai; full dan QZ belum lulus
+
+`CONFIRMED`; source `05ca56db02274f493796c2a3cd72a051bb506a7e`:34scoped PASS/native restore/static/type, tetapi320capture offset. Full embedded e15e075 terminal ceiling15menit dengan35observed failures/no total; klasifikasi baseline versus regression belum lengkap. Executor perlu exact-base diagnosis, mempertahankan assertions dan correction/resource budgets; proposed deterministic test partition belum dijalankan dan bukan izin reset batas. QZ manual silent/no process/no new log, bukan observed error dialog; vendor diagnosis/support-send perlu scope yang sesuai. Host installer/restore/rollback, commissioned signing, physical matrix/canary dan Owner UAT remain OPEN. Production95a6eda unchanged/NO_GO/NOT_BUSINESS_READY; tidak menurunkan perlindungan Windows atau memakai serving VPS sebagai builder.
+
 ## 2026-10-14 - Closing stale mendapat bukti domain/HTTP; admission tidak stabil
 
 `CONFIRMED`; source `37f16d8efb827278f52fe652dfb682235e20e785`, tested921e954.20unique completed scoped assertions PASS/0FAIL/0SKIP, combined correction FAIL continuous capacity guard;14new freshness cases observed, UI/native2cases prepared but not run. Current check/type/build/recovery/UAT NOT_RUN; no nativefull retry, no threshold/assertion/grant weakening, no production mutation. Additional150s charge9.36/remainder140.64 (static80.64/native60).

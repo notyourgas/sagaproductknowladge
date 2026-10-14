@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - SagaPOS receipt native qualification dan residual disinkronkan
+
+`CONFIRMED`; source `05ca56db02274f493796c2a3cd72a051bb506a7e`, actual scoped Linux34PASS/0FAIL/0SKIP/native PG18 restore/static1093/core37/type. Before nativeNOT_RUN -> scoped nativePASS, bukan full acceptance. Desktop/390visual PASS,320capture OPEN; full embedded e15e075 terminal15minute ceiling/35observed failures tanpa full summary. QZ manual silent/nonrunning, root cause unknown. Delapan dokumen product/dossier/changelogs/portfolio/master/gaps/sync diperbarui, sumber hasil runner dan klarifikasi Andreas; tidak memublikasikan private evidence/credential/customer/device data. Production95a6eda unchanged, IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY; remaining full/host/physical/UAT tetap blocker. Final knowledge provenance main HEAD setelah push.
+
 ## 2026-10-14 - SagaPOS stale-count partial results synchronized
 
 `CONFIRMED`; Andreas additional150s approval plus source `37f16d8efb827278f52fe652dfb682235e20e785` / tested921e954. Reason: replace prior wholly unexecuted delta with scoped domain/HTTP proof while retaining capacity failure.20unique assertions PASS/0FAIL/0SKIP, combined runnerFAIL, current browser/native/check/type NOT_RUN; native fixture prepared only. Product/dossier/changelogs/portfolio/master/gaps/sync/source registry updated without private paths/data. Production unchanged95a6eda, source-only/NOT_BUSINESS_READY, old failed gates retained. [Ledger](https://github.com/notyourgas/sagaops/blob/37f16d8efb827278f52fe652dfb682235e20e785/docs/T1_CATALOG_CHOICES_20261014.md).

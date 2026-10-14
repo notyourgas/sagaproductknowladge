@@ -1,5 +1,9 @@
 # SagaOPS Dossier
 
+## 2026-10-14 - Receipt native proof dan residual acceptance
+
+`CONFIRMED`; latest source `05ca56db02274f493796c2a3cd72a051bb506a7e`. Initial Linux31PASS/3FAIL berhenti pada penggunaan db.exec oleh test; tiga mutasi fixture diganti shared db.query tanpa mengubah assertions, lalu native34PASS/0FAIL/0SKIP. Latest candidate kembali34PASS dengan static1093/core37/type, PG18 dump/restore logo/version/frozen original/copy/role checks dan fixture cleanup. Preview no-wrap/fixed font menjaga kolom; desktop/390pixels diterima,320offset masih open. Full embedded run pada e15e075 berhenti pada ceiling15menit dengan35 failures:27 host Node provenance fixture,3 activation recovery fixture, copy-label,2 navigation count, catalog admin dan legacy ESB relation. Tidak semuanya dibuktikan baseline; host installer belum qualified. QZ manual launch tidak menampilkan error, shortcut benar tetapi proses/log baru absent, bukan diagnosis akar masalah. Semua run terminal; production unchanged95a6eda, release NO_GO/NOT_BUSINESS_READY. Recovery/rollback, commissioning, full regression dan Owner/physical UAT tetap wajib.
+
 ## 2026-10-14 - Bukti parsial guard closing stale, bukan full acceptance
 
 `CONFIRMED`; source `37f16d8efb827278f52fe652dfb682235e20e785`, tested921e954, behavior e7915cb unchanged. Domain13freshness+4warehouse and HTTP stale409/history/current inventory+finance approval total20unique completed assertions PASS/0FAIL/0SKIP; tidak menjumlah ulang initial/domain duplicate. Existing Owner Dashboard bridge memperbaiki fixture yang sebelumnya mengembalikan401 sebelum assertion. Penolakan menjaga snapshot/audit dan tidak memperluas izin. New guarded nativePHP/PG18 independent-backend/recount/replay test disiapkan, NOT_RUN; browser/check/type belum tercapai.
