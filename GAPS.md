@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Receipt continuation: atomik lokal ditutup, transport/native masih open
+
+`CONFIRMED`; source `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87`,10 affected/static1089 PASS menutup atomic addon/admission lokal saja. QZ exception Java NIO kini terukur; manual Windows launch di luar automation atau support berizin masih diperlukan, bukan retry konfigurasi ketiga. GitHub billing API memerlukan akses tambahan yang belum diberikan; tidak mengubah OAuth/spending atau menjalankan compute. Pemilik: Andreas untuk batas biaya/manual launch/support permission, executor untuk qualification saat tersedia. Native PG18/Linux, migration runner/encrypted restore, full regression, physical matrix/endurance/canary/UAT open. Production95a6eda/flag OFF tetap, NOT_BUSINESS_READY.
+
 ## 2026-10-14 - SagaPOS receipt commissioning dan kualifikasi Linux belum selesai
 
 `CONFIRMED`; source editor desain nota `34e292f6359c00103792567f6ef3dc492c4ef43b` terverifikasi scoped local, bukan production-ready. Satu TEST manual fisik diterima; QZ secure startup belum berjalan dan tidak boleh ditutup dengan retry buta/insecure fallback. Tindak lanjut: diagnosis terkontrol/vendor support berizin dan trusted signing/commissioning; lalu physical matrix/endurance/canary. Tidak ada builder Linux terpisah yang diketahui pengguna; workflow manual disiapkan/YAML guards PASS tetapi NOT_RUN. Periksa/otorisasi kuota-biaya dan registrasi workflow default branch sebelum exact-SHA native qualification. Tuntaskan migration/recovery runner, full regression yang gagal/terinterupsi, dan authenticated UAT sebelum flag production diaktifkan. Pemilik: executor untuk diagnosis/runner/tests, Andreas untuk biaya/support/UAT bila diperlukan. Production95a6eda/flag OFF tidak berubah, tidak ada bukti BUSINESS_READY.

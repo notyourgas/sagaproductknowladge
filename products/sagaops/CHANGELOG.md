@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Atomic receipt addon admission
+
+`CONFIRMED`; alasan: DDL dan ledger lab sebelumnya terpisah sehingga kegagalan ledger bisa meninggalkan schema tanpa binding. Source pushed `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87` sekarang atomik, read-only idempotent dan reject drift/unregistered table, startup hanya verify.10 affected + static1089/core37 PASS; SQL/format/payment/dependency unchanged. QZ bounded no-print diagnostic memperoleh exception Java NIO; belum working bridge. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`, production unchanged. CI quota/registration/native, migration/recovery, full regression, physical canary/UAT tetap open. Delapan dokumen produk/portfolio/master/gaps/root/sync diperbarui terpisah dari source.
+
 ## 2026-10-14 - Owner dapat menyiapkan desain nota versi per outlet
 
 `CONFIRMED`; Andreas mengotorisasi implementasi dan menerima hasil TEST bitmap/teks manual. Source `34e292f6359c00103792567f6ef3dc492c4ef43b` dipush pada `codex/sagapos-raw-printer-20261014`: editor D50, logo/header/footer/toggle visibility, draft/publish/restore, snapshot asli/salinan dan feed lokal. Alasan: operator perlu mengatur tampilan tanpa mengubah nilai finansial.25 tes terfokus +9 delta PASS dan static/type1088/core37 PASS; bukan full-suite/native/QZ acceptance. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`, production95a6eda unchanged, flag OFF. Sisa: secure commissioning, native qualification, migration/recovery, physical endurance/canary/UAT; opsi CI manual NOT_RUN menunggu kuota/biaya/registrasi. PRODUCT/DOSSIER/master/gaps/portfolio/root/sync diperbarui, tanpa data privat.
