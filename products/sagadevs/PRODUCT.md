@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-10-14 - Arkarupa: pemulihan source/data dan regresi terkini
+
+`CONFIRMED`; tooling lokal `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, panduan penutupan `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`. Workspace QA/backup berada pada drive terpisah, restore source dan snapshot utama ke database disposable lulus; fixture dikembalikan. Full69/881 PASS pada file aplikasi yang sama dengan runtime; data utama tetap. Database aktif masih pada drive sistem, backup belum offsite; human acceptance dan preview publik tetap OPEN. Ini validasi/pemulihan, bukan fitur atau aktivasi baru. [Detail Arkarupa](ARKARUPA.md).
+
 ## 2026-10-14 - Arkarupa: workflow kontraktor dan finalisasi demo lokal
 
 `CONFIRMED`; proyek klien Arkarupa memiliki RAP per ruangan, progres terverifikasi, riwayat barang datang, retur/penggantian, SPK jasa dan VO. Kode aplikasi `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8` terpasang lokal; startup tanpa seed/reset dan paket UAT 12 skenario ada pada source lokal `85eb82d41453c303929ea04135522120f349aba0`. Restart 14 Oktober memverifikasi HTTP login, file dan data tetap; bukan browser UAT baru. Tidak ada remote source proyek/public preview/production yang dinyatakan berhasil. UAT manusia, review data lama, bukti visual dan target hosting masih OPEN. Lihat [catatan proyek Arkarupa](ARKARUPA.md). Pricing/produk Saga lain tidak berubah.

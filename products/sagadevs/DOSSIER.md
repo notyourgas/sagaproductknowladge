@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-10-14 - Penutupan recovery Arkarupa
+
+`CONFIRMED`; [proyek Arkarupa](ARKARUPA.md) kini memiliki workspace QA dan snapshot terenkripsi pada drive lain, drill restore source/data ke target disposable serta full69/881 PASS. Source tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, dokumentasi `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`; aplikasi aktif tetap a3c255e. Fingerprint bisnis utama sama, fixture dipulihkan, server uji kembali aktif. Drive sistem/database masih sempit; salinan belum offsite dan human UAT/public preview belum ada. Tidak mengubah pricing, fitur bisnis atau runtime produk lain.
+
 ## 2026-10-14 - Proyek klien Arkarupa
 
 `CONFIRMED`; [Arkarupa Dashboard](ARKARUPA.md) merupakan prototype kontraktor terpisah dengan survei → RAP per ruangan → penawaran → baseline → progres dan barang datang. Barang diterima tidak menaikkan progres fisik. Source aplikasi lokal `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8`, startup/paket UAT `85eb82d41453c303929ea04135522120f349aba0`; source belum memiliki remote terverifikasi. Demo lokal dilanjutkan pada 14 Oktober dengan HTTP/file/data cocok; human UAT dan akses publik belum selesai. Ini pembaruan portfolio delivery, tanpa perubahan pricing atau runtime website marketing.

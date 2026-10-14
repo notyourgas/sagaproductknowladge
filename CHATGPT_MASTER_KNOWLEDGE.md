@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-14 - Arkarupa: validasi penuh dan pemulihan terkini
+
+`CONFIRMED`; [proyek kontraktor](products/sagadevs/ARKARUPA.md) memiliki full69/881 PASS baru pada workspace drive terpisah, snapshot terenkripsi direstore ke disposable, fixture dikembalikan, dan source bundle dipulihkan dengan integritas Git/exact source cocok. Tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, dokumen `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`; kode aplikasi aktif tetap a3c255e. Data utama tidak berubah. Drive sistem/database masih sempit; backup masih satu komputer. Human UAT, review mapping, bukti visual dan target preview tetap OPEN; tidak ada aktivasi production atau pricing baru.
+
 ## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
 
 This source preparation is not a customer-ready sales claim.

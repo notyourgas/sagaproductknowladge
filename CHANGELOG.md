@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - Arkarupa recovery milestone
+
+`CONFIRMED`; sumber Andreas dan source lokal tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, docs `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`. Fresh full69/881 serta pemulihan source dan snapshot terenkripsi pada disposable menggantikan bukti full-suite historis untuk kode aplikasi yang sama. Catatan proyek Arkarupa, PRODUCT/DOSSIER/CHANGELOG SagaDevs, master/gaps/sync/portfolio/root changelog diperbarui; validator/link/public-safety/diff diperiksa dan knowledge dipush terpisah. Production tidak berubah. UAT manusia, kapasitas database/custody di luar PC dan target preview belum ditutup. Tidak menyalin path bukti, data, atau credential privat.
+
 ## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
 
 Main HEAD knowledge records material source/blocker evidence separately from production.

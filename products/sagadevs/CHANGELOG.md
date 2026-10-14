@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-10-14 - Arkarupa: fresh full regression dan recovery lintas drive
+
+`CONFIRMED`; atas permintaan Andreas, runner existing mendukung workspace QA pada drive terpisah tanpa reset/serve. Source tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, docs `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`. Sebelumnya regresi penuh hanya historis; kini full69/881 PASS, snapshot utama direstore ke disposable, fixture dikembalikan dan source bundle dipulihkan dengan exact source/integritas cocok. PRODUCT/DOSSIER/catatan proyek/master/gaps/sync/portfolio/root changelog diperbarui. Production tidak berubah; UAT, kapasitas database, custody offsite dan target preview masih terbuka.
+
 ## 2026-10-14 - Dokumentasi milestone Arkarupa dan kesiapan UAT
 
 `CONFIRMED`; sumber keputusan Andreas, commit aplikasi lokal `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8` dan startup/UAT `85eb82d41453c303929ea04135522120f349aba0`. Sebelumnya milestone workflow hanya tersimpan lokal; kini [catatan proyek](ARKARUPA.md), PRODUCT dan DOSSIER menjelaskan RAP ruangan, progres terverifikasi dan barang datang beserta batas bukti. Restart tanpa seed/reset terverifikasi HTTP/file/data; 12 skenario UAT siap, hasil manusia tetap OPEN. Production tidak berubah. Berikutnya UAT, review mapping, bukti visual dan target preview.

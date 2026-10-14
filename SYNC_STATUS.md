@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-14 - Arkarupa recovery dan regresi terkini
+
+`CONFIRMED`; clean canonical main/ff-only sebelum edit. Source tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, docs `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`; aplikasi a3c255e tetap. Catatan proyek dan PRODUCT/DOSSIER/CHANGELOG SagaDevs, master, gaps, portfolio serta root changelog diperbarui untuk fresh full69/881 dan drill source/encrypted data restore lintas drive. `UP TO DATE` untuk milestone knowledge setelah validator dan push; human/public/production tetap terbuka. SHA final adalah main HEAD, dilaporkan setelah push. Tidak ada perubahan produk tetangga atau source hosting Arkarupa.
+
 ## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
 
 Source/blocker facts accepted; application verification remains partially accepted.

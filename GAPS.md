@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Arkarupa recovery: bagian yang sudah dan belum tertutup
+
+`CONFIRMED`; fresh full69/881, restore source dan encrypted snapshot ke disposable serta workspace QA drive terpisah selesai pada tooling7628b26/docsf2ff71a. Blocker setup pada drive sistem ditangani untuk workspace, tetapi database aktif masih berada pada drive sistem sempit. Salinan drive lain belum offsite, custody key/PC baru belum diterima, dan relokasi database perlu snapshot/restore/cutover terkontrol. `NEEDS CONFIRMATION`: lokasi permanen/custody terpisah, UAT manusia, keputusan mapping dan target preview. Screenshot/manual zoom/ponsel tetap terbuka. [Status proyek](products/sagadevs/ARKARUPA.md); tidak perlu wave fitur/regresi baru tanpa delta atau temuan UAT.
+
 ## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
 
 Capacity-safe validation remains the first owner-independent residual action.

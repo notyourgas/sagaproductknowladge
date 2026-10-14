@@ -6,6 +6,8 @@ Mencatat workflow dan status proyek klien yang dikerjakan melalui SagaDevs. Arka
 
 ## Konteks dan status bukti
 
+Pembaruan penutupan 14 Oktober: `CONFIRMED`, runner QA `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, dokumentasi pemulihan `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`. Workspace QA dan snapshot terenkripsi kini tersedia pada drive terpisah; snapshot utama benar-benar direstore ke database disposable lalu fixture dikembalikan. Row/file checksum, laporan dan relasi/izin RAP cocok. Source bundle histori lengkap telah dipulihkan dengan exact source dan integritas Git cocok. Regresi penuh terbaru **69 tes / 881 assertions PASS**, 84,48 detik; 17 file aplikasi identik dengan rilis aktif. Database aktif masih pada drive sistem yang sempit; backup drive lain masih satu komputer, bukan offsite/host baru. Demo utama tidak direset dan fingerprint 57 tabel bisnis tetap. Tidak ada browser UAT/deployment publik baru.
+
 `CONFIRMED`; diperiksa 14 Oktober 2026 berdasarkan source lokal dan runtime demo. Source aplikasi `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8`; source startup/paket UAT `85eb82d41453c303929ea04135522120f349aba0`. Source memiliki commit lokal, belum memiliki remote proyek yang terverifikasi. Tidak ada klaim SOURCE_PUSHED.
 
 Rilis lokal 13 Oktober memiliki authenticated functional smoke berbasis DOM. Pada 14 Oktober, database dan server demo yang berhenti dilanjutkan; login HTTP 200, 17 file aplikasi cocok artifact dan fingerprint 57 tabel bisnis sama dengan checkpoint. Tidak ada seed, reset atau koreksi data existing. Ini pemeriksaan restart/HTTP/file/data; bukan authenticated browser acceptance baru.
@@ -31,7 +33,7 @@ Stack: Laravel/Filament, PHP dan MySQL lokal. Akun dan akses tetap berbasis pera
 
 ## Validasi dan batas
 
-Milestone 13 Oktober: suite penuh 69 tes/872 assertions pada kandidat sebelumnya; focused follow-up 18 tes/173 assertions pada delta legacy/tanggal. Bukan suite penuh baru pada source follow-up. Backup terenkripsi/disposable restore, migrasi forward/retry, concurrency dan aturan scope memiliki bukti milestone privat yang dipakai sesuai inputnya.
+Histori 13 Oktober: suite penuh 69 tes/872 assertions pada kandidat sebelumnya; focused follow-up 18 tes/173 assertions pada delta legacy/tanggal. Pada 14 Oktober suite penuh terkini 69/881 lulus pada workspace drive terpisah dengan file aplikasi sama; snapshot terenkripsi/disposable restore terbaru juga lulus. Migrasi forward/retry, concurrency dan aturan scope memiliki bukti milestone privat yang dipakai sesuai inputnya. Durasi pengujian bukan SLA.
 
 Bukti browser terdahulu mencakup DOM, popup, keyboard, offline dan reflow CSS 320. Screenshot capture gagal; zoom manual Chrome dan ponsel nyata belum diterima. Koneksi browser saat pemeriksaan 14 Oktober tidak menyediakan tab lokal. Agent tidak mengisi sign-off manusia.
 

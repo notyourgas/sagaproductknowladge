@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-14 - Arkarupa local recovery validation
+
+`CONFIRMED`; permintaan Andreas dilanjutkan dengan tooling7628b26/docsf2ff71a, aplikasi a3c255e. Workspace QA/backup drive terpisah, fresh full69/881 PASS, encrypted snapshot utama direstore ke disposable, fixture kembali dan source bundle dapat dipulihkan dengan exact source/Git integrity cocok. Data utama tetap. Pembaruan knowledge menutup bukti regresi lama dan memperjelas recovery; database aktif masih pada drive sistem, backup belum offsite. Human UAT/mapping/visual/preview target tetap OPEN; production/pricing tidak berubah. [Detail](../products/sagadevs/ARKARUPA.md).
+
 ## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
 
 Scope limited to SagaOPS inventory source; other product release owners unchanged.
