@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-14 - Cutoff observation guard pada source stock closing
+
+`CONFIRMED`; source `e7915cbdf206b0a87c764e520b3cbc89f3482c5c` dipush. Guard domain menilai fakta stok setelah observasi fisik akhir sebelum mencatat finalisasi/audit; mencakup movement, receipt, accepted inspection, sale consumption, supplier return/replacement. Inspection rejection dan perubahan master/later-period tidak otomatis dianggap perubahan saldo historis. Rejection409 memiliki pesan aman di server dan Team UI untuk recount; tidak overwrite hitungan, menambah grant, mengulang submit, atau mengakui commit yang ditolak. Replay/CAS/tenant/CSRF tetap existing, schema/state-version tidak berubah.
+
+`SOURCE_IMPLEMENTED_UNVALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY`.13domain +1HTTP/auth/CSRF/scope +1mock-browser draft/key/retry assertions prepared,0executed; no runtime/new syntax/type/native proof. C capacity sempat nol dan kemudian masih di bawah1GiB, sehingga guard tidak diubah/dilewati. Prior bootstrap/test inputs3a12741 dan static119dc3e tidak qualify delta ini. Concurrency/native persistence/restore serta full regression wajib sebelum release. Penutupan late writes, in-flight orders dan versioned immutable reports masih next slices; jangan klaim full cutoff solved. [Ledger source](https://github.com/notyourgas/sagaops/blob/e7915cbdf206b0a87c764e520b3cbc89f3482c5c/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt schema admission dan recovery source-prepared
 
 `CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Source pushed `22d03699135cde2ae2020d4a1b3849ff551dab54` menambah host installer bound candidate/current/artifact/SQL/core37/release-lock/health/PID, fresh encrypted backup dan named disposable restore. Native admission menolak host/port/database/engine/checksum lain; rollback grant repair hanya pada disposable, tidak live. Startup memeriksa append-only grants dan non-superuser/non-bypass. Paged read-only SHA digest mencakup semua template/bitmap dan frozen originals/copies, tanpa log data. Fault pada fase akhir wajib schema reconciliation, bukan klaim DB rollback. SQL/core37/renderer/lockfile unchanged, tidak ada host execution/activation.

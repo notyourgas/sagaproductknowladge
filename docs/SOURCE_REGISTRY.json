@@ -93,10 +93,10 @@
       "repository": "https://github.com/notyourgas/sagaops",
       "private": true,
       "branch": "codex/sagapos-foundation-20261014",
-      "commit": "be0f8f6f0bdaba126fbd900402dc80d7990c3409",
+      "commit": "e7915cbdf206b0a87c764e520b3cbc89f3482c5c",
       "source_status": "PUSHED",
       "remote_verified_at": "2026-10-14",
-      "runtime_verification": "SCOPED_NATIVE_BOOTSTRAP_PASS_APP_STATIC_TYPE_PASS_FULL_NATIVE_FAILED_REGRESSION_INCOMPLETE_NOT_DEPLOYED",
+      "runtime_verification": "STALE_COUNT_GUARD_SOURCE_UNVALIDATED_CURRENT_TESTS_NOT_RUN_FULL_NATIVE_FAILED_NOT_DEPLOYED",
       "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
     },
     {

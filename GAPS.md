@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Qualification guard stock closing tertahan kapasitas
+
+`CONFIRMED`; source `e7915cbdf206b0a87c764e520b3cbc89f3482c5c` menambah guard/HTTP409/UI guidance dengan15 new cases prepared/0run. Candidate `SOURCE_IMPLEMENTED_UNVALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY`. C pernah0 lalu tetap di bawah1GiB; safe Downloads documents/media hanya44MiB, tidak cukup untuk headroom, tidak dipindah/dihapus. Tidak menyentuh Codex/project/backup/OS cache atau menghentikan proses lain.
+
+`NEEDS CONFIRMATION`: actual new positive/negative/runtime coverage, concurrent/native CAS/persistence, existing separate Linux builder and complete recovery/UAT. Urutan: pulihkan kapasitas aman tanpa mengurangi guard; qualify delta terfokus dan full relevant regression; lanjut post-close write seal, in-flight orders, immutable report/correction versions; integrated artifact/restore/rollback/activation/auth smoke. Nativefull correction limit tidak direset dan remaining stock-diagnostic allowance bukan budget untuk tes guard baru. Production/printer ownership terpisah. [Ledger source](https://github.com/notyourgas/sagaops/blob/e7915cbdf206b0a87c764e520b3cbc89f3482c5c/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt continuation tertahan kapasitas dan qualification surfaces
 
 `CONFIRMED`; source `22d03699135cde2ae2020d4a1b3849ff551dab54` pushed,11 affected PASS/2SKIP. C~0.4GiB <fixed1GiB menghentikan static/type admission sebelum run; tidak menghapus data/menurunkan floor. Bash tidak tersedia dan PG18/Linux native dump/restore belum jalan; prepare fixture bukan proof. Langkah unblock: kapasitas aman sebelum tes lanjut, manual QZ launch di Windows (request sebelumnya belum terjawab), keputusan compute/quota dan support permission; kemudian native/full relevant/host recovery/flag-compatible release/physical/UAT. Pemilik capacity/manual/biaya: Andreas; executor menjaga exact source dan gate. Production95a6eda unchanged, NOT_BUSINESS_READY.
