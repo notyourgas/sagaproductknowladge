@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Owner dapat menyiapkan desain nota versi per outlet
+
+`CONFIRMED`; Andreas mengotorisasi implementasi dan menerima hasil TEST bitmap/teks manual. Source `34e292f6359c00103792567f6ef3dc492c4ef43b` dipush pada `codex/sagapos-raw-printer-20261014`: editor D50, logo/header/footer/toggle visibility, draft/publish/restore, snapshot asli/salinan dan feed lokal. Alasan: operator perlu mengatur tampilan tanpa mengubah nilai finansial.25 tes terfokus +9 delta PASS dan static/type1088/core37 PASS; bukan full-suite/native/QZ acceptance. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`, production95a6eda unchanged, flag OFF. Sisa: secure commissioning, native qualification, migration/recovery, physical endurance/canary/UAT; opsi CI manual NOT_RUN menunggu kuota/biaya/registrasi. PRODUCT/DOSSIER/master/gaps/portfolio/root/sync diperbarui, tanpa data privat.
+
 ## 2026-10-14 - Scoped dated stock history and workspace lifecycle locally validated
 
 Delivery records lifecycle correction and exact nine-case local qualification.

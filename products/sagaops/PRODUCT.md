@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-14 - Desain nota per outlet terverifikasi lokal, belum di production
+
+`CONFIRMED`; delivery `SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Sebelumnya format nota belum memiliki editor versi server; source sekarang menyediakan Owner > Pengaturan > Desain Nota (D50), header/logo monokrom/footer custom, pilihan tampil diskon/pajak/layanan/pembulatan/nilai nol, pratinjau desktop/mobile, draft/publish/restore dan jarak sobek lokal. Toggle hanya mengubah tampilan, bukan nilai transaksi. Dokumen antrean asli membekukan versi/logo; salinan bernomor memakai versi yang sama.
+
+Source dipush pada `codex/sagapos-raw-printer-20261014`, commit `34e292f6359c00103792567f6ef3dc492c4ef43b`. Bukti:25 tes terfokus PASS,9 tes delta terakhir PASS, static/type1088 modul/core37 PASS; operator menerima satu TEST bitmap/header/footer fisik manual. Ini bukan QZ end-to-end atau full-suite PASS. Addon schema belum dipasang di production, feature flag OFF, production95a6eda tidak berubah. OPEN: QZ secure startup/signing/commissioning, native Linux DB, recovery/migration runner, regresi penuh, physical matrix/endurance/canary dan authenticated UAT. Workflow Linux manual disiapkan/YAML guard PASS, hosted run NOT_RUN; kuota/biaya dan registrasi default branch belum diselesaikan. Pricing/payment/positioning tidak berubah. [Provenance dan batas validasi](https://github.com/notyourgas/sagaops/blob/34e292f6359c00103792567f6ef3dc492c4ef43b/docs/sagapos-v2/RECEIPT_DESIGN_IMPLEMENTATION_20261014.md).
+
 ## 2026-10-14 - Scoped dated stock history and workspace lifecycle locally validated
 
 Operator history now has scoped local proof; native/production acceptance remains separate.
