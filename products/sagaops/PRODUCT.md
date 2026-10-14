@@ -1,5 +1,24 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Wave 3: penguncian periode stok disiapkan, qualification belum selesai
+
+`CONFIRMED / PARTIALLY_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source `4dd7732bfb11338fb19d484f64db13dcaca95933` pushed pada
+`codex/sagapos-foundation-20261014`. Penguncian periode final kini digunakan
+konsisten oleh penulis stok; finalisasi menolak reservasi sebelum cutoff yang
+masih aktif, sedangkan operasi periode berikutnya dan replay tersimpan dipertahankan.
+Workspace menyiapkan daftar pesanan tertunda dan panduan konflik tanpa perubahan
+schema, dependency, permission atau pembayaran.
+
+Tes terakhir pada `3368927242148a8df7a5a50f2837cbe72f0c1106`:46kasus,
+45PASS/1FAIL/0SKIP; kegagalan pada fixture nomor pesanan, bukan PASS seluruh batch.
+Fixture diperbaiki dengan negative assertion eksplisit, NOT_RERUN setelah batas
+koreksi. HTTP/browser/check/type/native delta NOT_RUN. Production dan rollback
+diverifikasi read-only, tetap95a6eda/2a18c9d, ready, GATEWAY/SaaS CASH. OPEN:
+reviewed requalification, builder Linux terpisah, snapshot/koreksi immutable,
+full workday/recovery/artifact dan UAT. Scope printer terpisah, tidak ikut rilis.
+[Ledger dan strategi penutupan](https://github.com/notyourgas/sagaops/blob/4dd7732bfb11338fb19d484f64db13dcaca95933/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Data nota dibekukan di server; pengiriman hardware belum aktif
 
 `CONFIRMED`; receipt source `fa0e5b5716367fc3c067ba5099e0f0259a599d39` pushed. Fondasi dispatcher kini membekukan paket data cetak di server bersama desain/logo, profil, jarak sobek dan nomor salinan; versi digest tahan perubahan urutan key JSONB. Paket yang tidak cocok ditolak saat dibaca, disalin atau masuk tahap percobaan. Dokumen lama tetap readable tanpa adopsi paket/cetak otomatis.13tes unik Windows/PGlite PASS/0FAIL/0SKIP19.20s, current static1094/core37/TypeScript PASS. Ini LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk data preparation, bukan authority perangkat, signer atau dispatcher end-to-end.

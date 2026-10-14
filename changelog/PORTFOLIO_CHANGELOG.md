@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS Wave3 stock closing source partial
+
+`CONFIRMED`; source `4dd7732bfb11338fb19d484f64db13dcaca95933` pushed:
+guard periode final diperluas ke penulis stok, reservasi sebelum cutoff menahan
+closing, dan workspace pending-order/guidance disiapkan.46scoped cases pada
+3368927 menghasilkan45PASS/1FAIL; fixture diperbaiki NOT_RERUN, remaining tests
+NOT_RUN dan failed-gate ceilings tetap. Bukan full Wave3 atau release PASS.
+Production95a6eda/rollback2a18c9d/ready/GATEWAY/SaaS CASH unchanged verified.
+Tidak ada schema/grant/payment/printer deployment. Remaining:
+reviewed requalification, separate Linux builder, immutable snapshot/correction,
+report/alert parity, full native/recovery/artifact dan operator UAT.
+[Detail](../products/sagaops/PRODUCT.md).
+
 ## 2026-10-14 - SagaPOS server-side receipt preparation teruji lokal
 
 `CONFIRMED`; receipt source `fa0e5b5716367fc3c067ba5099e0f0259a599d39` pushed. Fondasi dispatcher kini membekukan paket data cetak di server bersama desain/logo, profil, jarak sobek dan nomor salinan; versi digest tahan perubahan urutan key JSONB. Paket yang tidak cocok ditolak saat dibaca, disalin atau masuk tahap percobaan. Dokumen lama tetap readable tanpa adopsi paket/cetak otomatis.13tes unik Windows/PGlite PASS/0FAIL/0SKIP19.20s, current static1094/core37/TypeScript PASS. Ini LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk data preparation, bukan authority perangkat, signer atau dispatcher end-to-end.

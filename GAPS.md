@@ -1,5 +1,27 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Wave3 stock seal qualification dan release belum ditutup
+
+`CONFIRMED`; source4dd7732, final tested3368927 menghasilkan45PASS/1fixtureFAIL.
+Fixture sudah diperbaiki, belum re-run; focused correction ceiling dan old full
+HistoryNativeFAIL3 tetap berlaku. Time remaining bukan izin fourth attempt.
+`NEEDS CONFIRMATION`: persetujuan reviewed candidate-bound requalification
+beserta tambahan waktu terukur; nativePG runtime path perlu resolve ulang.
+`PROPOSAL` penutupan: final root-cause/fixture review→domain/HTTP/browser/check/
+type/native independent CAS dan actual role tests→semua delayed/offline order
+writers/cutoff→immutable snapshots/versioned corrections/report CSV→approved
+low-stock notifications→full workday/restart/restore→artifact/recovery/activation
+→operator UAT. Bounded scope tests tidak menggantikan full qualification.
+
+Builder Linux terpisah belum qualified: local WSL tanpa distro, Docker/Podman
+absent; named-sandbox list project SagaPOS kosong pada pemeriksaan read-only.
+Tidak provision paid compute atau memakai serving VPS. Production95a6eda dan
+rollback2a18c9d freshly verified read-only/ready/payment unchanged. Owner efektif,
+immutable artifact/encrypted backup/disposable restore/compatible rollback dan
+authenticated candidate smoke tetap wajib sebelum GO. Executor memegang source/
+tests/release; Andreas hanya keputusan qualification/infra bila diperlukan,
+serta penerimaan operator. NOT_DEPLOYED/NOT_BUSINESS_READY; pricing unchanged.
+
 ## 2026-10-14 - Data preparation ditutup; trusted dispatch dan release masih open
 
 `CONFIRMED`; receipt source `fa0e5b5716367fc3c067ba5099e0f0259a599d39` pushed. Fondasi dispatcher kini membekukan paket data cetak di server bersama desain/logo, profil, jarak sobek dan nomor salinan; versi digest tahan perubahan urutan key JSONB. Paket yang tidak cocok ditolak saat dibaca, disalin atau masuk tahap percobaan. Dokumen lama tetap readable tanpa adopsi paket/cetak otomatis.13tes unik Windows/PGlite PASS/0FAIL/0SKIP19.20s, current static1094/core37/TypeScript PASS. Ini LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk data preparation, bukan authority perangkat, signer atau dispatcher end-to-end.

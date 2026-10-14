@@ -1,5 +1,28 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Wave 3 stock-period seal: source partial, belum release
+
+`CONFIRMED`; source `4dd7732bfb11338fb19d484f64db13dcaca95933`, application
+`83248d8ea1faed939b4c6d525d378e5f53d9b6a5`, tested input
+`3368927242148a8df7a5a50f2837cbe72f0c1106`. Before: penguncian final belum
+dipakai konsisten oleh semua jalur stok. After: receipt/inspection/return/
+replacement/movement/transfer/count/reservation/consumption memakai guard
+existing; exact replay tetap read-only. ACTIVE reservations sebelum cutoff
+menahan finalisasi, tidak mematikan seluruh POS. Daftar bounded pesanan tertunda
+dan guidance409 disiapkan untuk workspace; tidak ada grant/schema/payment change.
+
+Qualification fail-closed:46unique cases45PASS/1FAIL/0SKIP (28new+17regression
+PASS). Fixture projection invalid diperbaiki tetapi NOT_RERUN; HTTP/browser/
+static/type/native delta belum dijalankan. Initial rejected invocation dan
+failed setup retained, total3.03s dari remainder existing; old full-workdayFAIL3
+tidak direset. Additional240s proposed, pending reply dan bukan automatic retry
+authority. Production23.54WIB14Okt ready/current95a6eda/rollback2a18c9d/
+GATEWAY/SaaS CASH verified read-only; NOT_DEPLOYED/NOT_BUSINESS_READY. Batches
+berikutnya: qualified separate builder/requalification, trusted cutoff semua
+delayed/offline writers, immutable snapshot/corrections/report/alert parity,
+full native/concurrency/recovery, artifact/activation dan role/operator UAT.
+[Source ledger](https://github.com/notyourgas/sagaops/blob/4dd7732bfb11338fb19d484f64db13dcaca95933/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Server document preparation implemented, not trusted commissioning
 
 `CONFIRMED`; receipt source `fa0e5b5716367fc3c067ba5099e0f0259a599d39` pushed. Fondasi dispatcher kini membekukan paket data cetak di server bersama desain/logo, profil, jarak sobek dan nomor salinan; versi digest tahan perubahan urutan key JSONB. Paket yang tidak cocok ditolak saat dibaca, disalin atau masuk tahap percobaan. Dokumen lama tetap readable tanpa adopsi paket/cetak otomatis.13tes unik Windows/PGlite PASS/0FAIL/0SKIP19.20s, current static1094/core37/TypeScript PASS. Ini LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk data preparation, bukan authority perangkat, signer atau dispatcher end-to-end.

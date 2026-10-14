@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS Wave3 checkpoint partial disinkronkan
+
+`CONFIRMED`; source `4dd7732bfb11338fb19d484f64db13dcaca95933` pushed,
+tested3368927:45PASS/1FAIL/0SKIP, fixture correction prepared NOT_RERUN.
+Guard stok final/pending-order guidance implemented partially validated;
+remaining tests/deploy/UAT open, old failures/allowance preserved.
+Production95a6eda/rollback2a18c9d ready/GATEWAY/SaaS CASH unchanged verified
+read-only. Delapan product/master/gaps/sync/root/portfolio documents updated
+from clean main=origin/main89b2782; no restricted data or other product rewrite.
+Historical diverged checkout preserved. Final knowledge SHA is main HEAD after
+validator/staged repeat/push/readback. [Product](products/sagaops/PRODUCT.md).
+
 ## 2026-10-14 - SagaPOS frozen-server-document milestone disinkronkan
 
 `CONFIRMED`; receipt source `fa0e5b5716367fc3c067ba5099e0f0259a599d39` pushed. Fondasi dispatcher kini membekukan paket data cetak di server bersama desain/logo, profil, jarak sobek dan nomor salinan; versi digest tahan perubahan urutan key JSONB. Paket yang tidak cocok ditolak saat dibaca, disalin atau masuk tahap percobaan. Dokumen lama tetap readable tanpa adopsi paket/cetak otomatis.13tes unik Windows/PGlite PASS/0FAIL/0SKIP19.20s, current static1094/core37/TypeScript PASS. Ini LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk data preparation, bukan authority perangkat, signer atau dispatcher end-to-end.
