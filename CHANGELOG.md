@@ -1,8 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - Receipt atomic admission dan diagnostic checkpoint
+
+`CONFIRMED`; source `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87` pushed dan10 affected/static1089 PASS. PRODUCT/DOSSIER/CHANGELOG SagaOPS, portfolio/master/gaps/sync mencatat atomic lab schema/ledger, fail-closed startup dan QZ diagnostic/unresolved compute gate. Alasan: menutup rollback/admission lokal tanpa mengklaim native recovery atau production. Production tidak berubah/NOT_BUSINESS_READY. Enti receipt sebelumnya telah diintegrasikan pada main94d1d2ac dengan mempertahankan stock updates; tidak force-push atau menyalin data/path/identifier privat. Knowledge current milestone divalidasi/push terpisah.
+
 ## 2026-10-14 - Sinkronisasi desain nota SagaPOS
 
 `CONFIRMED`; sumber Andreas, bounded physical acceptance dan source pushed `34e292f6359c00103792567f6ef3dc492c4ef43b`. Alasan: custom nota kini memiliki editor/versi server pada source, sementara status aktivasi tetap OFF. PRODUCT/DOSSIER/CHANGELOG SagaOPS, portfolio, master, gaps dan sync mencatat25 focused +9 delta/static1088 PASS, batas full-suite/native/QZ serta strategi sisa CI manual/recovery/physical/UAT. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`; production tidak berubah. Tidak menyalin foto, receipt, identifier atau path evidence privat. Knowledge divalidasi/dipush terpisah, final SHA adalah main HEAD setelah push.
+
+## 2026-10-14 - Scoped dated stock history and workspace lifecycle locally validated
+
+Knowledge main HEAD preserves the initial coverage omission and subsequent completion without relabeling older receipts.
+
+`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `f378198e9d231a4470edc8a3587f4526a884c72d` on `codex/sagapos-foundation-20261014`; runtime/test inputs `9473c0a2976ff1dce2d71f6fe1db05ee4e83830d`, closing docs-only. This supersedes the previous prepared history status for scoped acceptance only. Read-only stock history has WIB count/period filters, stable bounded cursor/high-water and fresh per-page permissions; workspace lifecycle now discards older reads across navigation/revocation and clears old form/state references. No schema/grant/dependency/payment change.
+
+First5PASS/0FAIL/0SKIP plus12syntax checks takes16.31s. A known name-filter coverage gap is retained explicitly: three pure date/negative cases were initially unselected. Coverage completion on the same candidate/gate runs full pure file plus existing closing-form browser regression,5PASS/0FAIL/0SKIP3.53s. Combined9unique cases, not10unique or full-product coverage. Tests include75tied counts/concurrent backdating, strict dates/query/facts/foreign-stale cursor/read-copy snapshot integrity, real in-memory Team/primaryHTTP auth/revoke/CSRF/no-store, mocked SaaS binding, lazy pagination/read failure/duplicate/denied-clear/late-response/navigation, keyboard and strictAxe390/768/1440. NativePG/PHP/RLS/restart persistence and fresh full static/type/build remain NOT_RUN. Historical native receipts remain separate.
+
+Capacity recovered externally above fixed guards; no files/processes moved/deleted/stopped.19.84s charged from42.00s,22.16s remains; no budget/gate reset. Additional150s proposal (native60 plus check/type/relevant regression90) is pending explicit Owner reply, only disposable targets without production effects. Production95a6eda ready/GATEWAY/SaaS CASH unchanged at fresh12.13WIB; rollback2a18c9d historical, no fresh SSH/deploy/activation/new human UAT. Separate Linux builder still unqualified, serving VPS not used for build. OPEN: native/full relevant acceptance, cutoff/late receipt-waste-refund/immutable adjustments, indexed large-history performance, actual multi-role workday/modules/devices and guarded artifact/restore/rollback release. No readiness percentage/pricing change. [Evidence and remaining strategy](https://github.com/notyourgas/sagaops/blob/f378198e9d231a4470edc8a3587f4526a884c72d/docs/T1_CATALOG_CHOICES_20261014.md).
+
 
 ## 2026-10-14 - Arkarupa recovery milestone
 

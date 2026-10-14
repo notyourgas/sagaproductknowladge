@@ -1,8 +1,23 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Receipt continuation: atomik lokal ditutup, transport/native masih open
+
+`CONFIRMED`; source `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87`,10 affected/static1089 PASS menutup atomic addon/admission lokal saja. QZ exception Java NIO kini terukur; manual Windows launch di luar automation atau support berizin masih diperlukan, bukan retry konfigurasi ketiga. GitHub billing API memerlukan akses tambahan yang belum diberikan; tidak mengubah OAuth/spending atau menjalankan compute. Pemilik: Andreas untuk batas biaya/manual launch/support permission, executor untuk qualification saat tersedia. Native PG18/Linux, migration runner/encrypted restore, full regression, physical matrix/endurance/canary/UAT open. Production95a6eda/flag OFF tetap, NOT_BUSINESS_READY.
+
 ## 2026-10-14 - SagaPOS receipt commissioning dan kualifikasi Linux belum selesai
 
 `CONFIRMED`; source editor desain nota `34e292f6359c00103792567f6ef3dc492c4ef43b` terverifikasi scoped local, bukan production-ready. Satu TEST manual fisik diterima; QZ secure startup belum berjalan dan tidak boleh ditutup dengan retry buta/insecure fallback. Tindak lanjut: diagnosis terkontrol/vendor support berizin dan trusted signing/commissioning; lalu physical matrix/endurance/canary. Tidak ada builder Linux terpisah yang diketahui pengguna; workflow manual disiapkan/YAML guards PASS tetapi NOT_RUN. Periksa/otorisasi kuota-biaya dan registrasi workflow default branch sebelum exact-SHA native qualification. Tuntaskan migration/recovery runner, full regression yang gagal/terinterupsi, dan authenticated UAT sebelum flag production diaktifkan. Pemilik: executor untuk diagnosis/runner/tests, Andreas untuk biaya/support/UAT bila diperlukan. Production95a6eda/flag OFF tidak berubah, tidak ada bukti BUSINESS_READY.
+
+## 2026-10-14 - Scoped dated stock history and workspace lifecycle locally validated
+
+Native and full relevant acceptance require sufficient allowance;150s proposal is awaiting reply.
+
+`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `f378198e9d231a4470edc8a3587f4526a884c72d` on `codex/sagapos-foundation-20261014`; runtime/test inputs `9473c0a2976ff1dce2d71f6fe1db05ee4e83830d`, closing docs-only. This supersedes the previous prepared history status for scoped acceptance only. Read-only stock history has WIB count/period filters, stable bounded cursor/high-water and fresh per-page permissions; workspace lifecycle now discards older reads across navigation/revocation and clears old form/state references. No schema/grant/dependency/payment change.
+
+First5PASS/0FAIL/0SKIP plus12syntax checks takes16.31s. A known name-filter coverage gap is retained explicitly: three pure date/negative cases were initially unselected. Coverage completion on the same candidate/gate runs full pure file plus existing closing-form browser regression,5PASS/0FAIL/0SKIP3.53s. Combined9unique cases, not10unique or full-product coverage. Tests include75tied counts/concurrent backdating, strict dates/query/facts/foreign-stale cursor/read-copy snapshot integrity, real in-memory Team/primaryHTTP auth/revoke/CSRF/no-store, mocked SaaS binding, lazy pagination/read failure/duplicate/denied-clear/late-response/navigation, keyboard and strictAxe390/768/1440. NativePG/PHP/RLS/restart persistence and fresh full static/type/build remain NOT_RUN. Historical native receipts remain separate.
+
+Capacity recovered externally above fixed guards; no files/processes moved/deleted/stopped.19.84s charged from42.00s,22.16s remains; no budget/gate reset. Additional150s proposal (native60 plus check/type/relevant regression90) is pending explicit Owner reply, only disposable targets without production effects. Production95a6eda ready/GATEWAY/SaaS CASH unchanged at fresh12.13WIB; rollback2a18c9d historical, no fresh SSH/deploy/activation/new human UAT. Separate Linux builder still unqualified, serving VPS not used for build. OPEN: native/full relevant acceptance, cutoff/late receipt-waste-refund/immutable adjustments, indexed large-history performance, actual multi-role workday/modules/devices and guarded artifact/restore/rollback release. No readiness percentage/pricing change. [Evidence and remaining strategy](https://github.com/notyourgas/sagaops/blob/f378198e9d231a4470edc8a3587f4526a884c72d/docs/T1_CATALOG_CHOICES_20261014.md).
+
 
 ## 2026-10-14 - Arkarupa recovery: bagian yang sudah dan belum tertutup
 

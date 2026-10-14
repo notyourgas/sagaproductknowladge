@@ -1,8 +1,23 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Atomic receipt addon admission
+
+`CONFIRMED`; alasan: DDL dan ledger lab sebelumnya terpisah sehingga kegagalan ledger bisa meninggalkan schema tanpa binding. Source pushed `d0381c341c2b8205f6a4ed03b66f4b3f4510ef87` sekarang atomik, read-only idempotent dan reject drift/unregistered table, startup hanya verify.10 affected + static1089/core37 PASS; SQL/format/payment/dependency unchanged. QZ bounded no-print diagnostic memperoleh exception Java NIO; belum working bridge. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`, production unchanged. CI quota/registration/native, migration/recovery, full regression, physical canary/UAT tetap open. Delapan dokumen produk/portfolio/master/gaps/root/sync diperbarui terpisah dari source.
+
 ## 2026-10-14 - Owner dapat menyiapkan desain nota versi per outlet
 
 `CONFIRMED`; Andreas mengotorisasi implementasi dan menerima hasil TEST bitmap/teks manual. Source `34e292f6359c00103792567f6ef3dc492c4ef43b` dipush pada `codex/sagapos-raw-printer-20261014`: editor D50, logo/header/footer/toggle visibility, draft/publish/restore, snapshot asli/salinan dan feed lokal. Alasan: operator perlu mengatur tampilan tanpa mengubah nilai finansial.25 tes terfokus +9 delta PASS dan static/type1088/core37 PASS; bukan full-suite/native/QZ acceptance. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`, production95a6eda unchanged, flag OFF. Sisa: secure commissioning, native qualification, migration/recovery, physical endurance/canary/UAT; opsi CI manual NOT_RUN menunggu kuota/biaya/registrasi. PRODUCT/DOSSIER/master/gaps/portfolio/root/sync diperbarui, tanpa data privat.
+
+## 2026-10-14 - Scoped dated stock history and workspace lifecycle locally validated
+
+Delivery records lifecycle correction and exact nine-case local qualification.
+
+`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `f378198e9d231a4470edc8a3587f4526a884c72d` on `codex/sagapos-foundation-20261014`; runtime/test inputs `9473c0a2976ff1dce2d71f6fe1db05ee4e83830d`, closing docs-only. This supersedes the previous prepared history status for scoped acceptance only. Read-only stock history has WIB count/period filters, stable bounded cursor/high-water and fresh per-page permissions; workspace lifecycle now discards older reads across navigation/revocation and clears old form/state references. No schema/grant/dependency/payment change.
+
+First5PASS/0FAIL/0SKIP plus12syntax checks takes16.31s. A known name-filter coverage gap is retained explicitly: three pure date/negative cases were initially unselected. Coverage completion on the same candidate/gate runs full pure file plus existing closing-form browser regression,5PASS/0FAIL/0SKIP3.53s. Combined9unique cases, not10unique or full-product coverage. Tests include75tied counts/concurrent backdating, strict dates/query/facts/foreign-stale cursor/read-copy snapshot integrity, real in-memory Team/primaryHTTP auth/revoke/CSRF/no-store, mocked SaaS binding, lazy pagination/read failure/duplicate/denied-clear/late-response/navigation, keyboard and strictAxe390/768/1440. NativePG/PHP/RLS/restart persistence and fresh full static/type/build remain NOT_RUN. Historical native receipts remain separate.
+
+Capacity recovered externally above fixed guards; no files/processes moved/deleted/stopped.19.84s charged from42.00s,22.16s remains; no budget/gate reset. Additional150s proposal (native60 plus check/type/relevant regression90) is pending explicit Owner reply, only disposable targets without production effects. Production95a6eda ready/GATEWAY/SaaS CASH unchanged at fresh12.13WIB; rollback2a18c9d historical, no fresh SSH/deploy/activation/new human UAT. Separate Linux builder still unqualified, serving VPS not used for build. OPEN: native/full relevant acceptance, cutoff/late receipt-waste-refund/immutable adjustments, indexed large-history performance, actual multi-role workday/modules/devices and guarded artifact/restore/rollback release. No readiness percentage/pricing change. [Evidence and remaining strategy](https://github.com/notyourgas/sagaops/blob/f378198e9d231a4470edc8a3587f4526a884c72d/docs/T1_CATALOG_CHOICES_20261014.md).
+
 
 ## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
 
