@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Historical stock closing anchor preserved beyond the recent window
+
+`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `04d19e2247d06b3a62c0a62444e4b0290c9babe5` on `codex/sagapos-foundation-20261014`; runtime/test inputs `dc143b4ccdbbc858bccbbb4c7c265e381c5fea99`, closing documentation-only. Before: the last closed count could disappear outside the ten-count read window and block the next closing form. After: the server computes one compact continuation anchor from existing persisted facts; same scoped workspace/selector keeps the exact prior closing boundary, bounded recent list and wrong-anchor rejection. Visible accessible guidance distinguishes no counts, no new count and missing anchor. No schema/state-version/grant/dependency/provider change.
+
+Focused qualification21PASS/0FAIL/0SKIP plus eight changed-file syntax checks ondc143b4. Native PostgreSQL/PHP and browser verify12intermediate counts displace the old anchor, next closing still uses its exact boundary, two periods persist on reload and synthetic cash120400/variance0 remains. Unit snapshot byte-identity/restore and compact metadata without cost/financial lines/raw note PASS; grants/revoke/auth/CSRF, lost-response/reload/keyboard and strict Axe390/768/1440 remain covered.46.13s charged from88.13s,42.00s remains; no retry/budget reset. Prior static1088/type proof on7f0b7f3 is delta-mapped, not a fresh full check; TypeScript input/dependency equality verified.
+
+Production95a6eda ready/GATEWAY/SaaS CASH unchanged at fresh11.31WIB observation; rollback2a18c9d is historical evidence, not fresh SSH. No deployment/activation or new real-employee UAT. OPEN: full history date/cursor pagination, cutoff/immutable reports/late adjustments, actual multi-role fullworkday and remaining module/device acceptance, qualified separate Linux builder and guarded artifact/restore/rollback release. This is continuation-anchor closure, not completion of the full historical-report feature. Pricing/positioning unchanged. [Evidence and revised remaining implementation strategy](https://github.com/notyourgas/sagaops/blob/04d19e2247d06b3a62c0a62444e4b0290c9babe5/docs/T1_CATALOG_CHOICES_20261014.md).
+
+
 ## 2026-10-14 - Daily stock closing continuity and recovery scoped locally validated
 
 `CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `0211c68ad63f31b29f822d5179befaac42e40260` on `codex/sagapos-foundation-20261014`; final UI/test inputs `7ccf12255ecce1635052becc5900f88832a2f2e0`, closing documentation-only. This checkpoint supersedes the previous open scoped stock-period acceptance status; historical FAIL receipts remain unchanged.
