@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - T1 implementation checkpoint; acceptance failed, no deployment
+
+`CONFIRMED / IMPLEMENTED_PARTIALLY_VALIDATED / T1_ACCEPTANCE_FAIL / NOT_DEPLOYED / NOT_BUSINESS_READY`. Source `2cb31cdb40922e857d685cbe886dc4c406feab65` (runtimefae0fd8) wires published choices through cashier/server pricing/recipe/KDS, corrects expanded-variant menu binding and pricing-policy publication identity. Final5PASS/1FAIL: prior cash/KDS/closing browser, dynamic controls and preservation pass; new native choice/stock journey fails at its restricted fixture's inventory permission boundary. Initial plus two corrections retained, no permission relaxation or retry reset. Static1086modules/37migrations and TypeScript PASS;225.90s used,657.92s remains. Fresh10.17WIB runtime95a6eda ready/GATEWAY/SaaS CASH,12/12 anonymous boundaries match; production unchanged. Rollback2a18c9d is last release evidence, not fresh SSH. Next: full-client disposable fixture/schema prerequisites and explicit additional bounded T1 round, whole workday/roles then qualified Linux/recovery release; hardware/provider remain OPEN. [Checkpoint and strategy](https://github.com/notyourgas/sagaops/blob/2cb31cdb40922e857d685cbe886dc4c406feab65/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - knowledge(sagaops): close scoped Tahap0
 
 `CONFIRMED`: sync source0e85bcb scoped integration/dynamic KDS+approval fix, final27focused/source-mapped native/cash/static/type evidence and storage recovery. Product/dossier/changelog, portfolio/master, gaps/sync and candidate registry updated. Failed receipts/deadlines/budgets retained; source-correction vs runtime/production boundaries explicit. `SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`; production95a6eda/GATEWAY unchanged. T1full-catalog/workday and guarded release/device gates remain. Knowledge provenance main HEAD; no pricing/positioning/adjacent-product change.

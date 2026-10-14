@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-14 - T1 catalog choices implemented; acceptance remains blocked
+
+`CONFIRMED / IMPLEMENTED_PARTIALLY_VALIDATED / T1_ACCEPTANCE_FAIL / NOT_DEPLOYED / NOT_BUSINESS_READY`. Source checkpoint `2cb31cdb40922e857d685cbe886dc4c406feab65` (runtime `fae0fd892c5d854599da2279dfe0135c07ccb1d0`) on `codex/sagapos-foundation-20261014` connects published variants/modifiers to cashier forms, server pricing, recipe snapshots and KDS; fixes base-menu binding across variant expansion and includes pricing settings in publication identity. Quick-add cannot overwrite rich choices/policy; unknown choice cost is rejected. No schema/dependency/provider/payment or production data change.
+
+Final regression5PASS/1FAIL: existing cash/KDS/closing browser with restart/lost-response/auth/CSRF/responsive/Axe, dynamic controls and preservation pass; new native choice/stock journey fails because its fixture uses the intentionally restricted cash/catalog feature profile. Initial plus two corrections retained; no further retry or permission relaxation. Static1086modules/37migrations and TypeScript PASS.225.90s charged,657.92s shared allowance remains. Fresh10.17WIB runtime95a6eda ready/GATEWAY/SaaS CASH;12/12 anonymous surface boundaries match. Rollback2a18c9d is last release evidence, not fresh SSH. Linux artifact, authenticated whole workday, devices and BUSINESS_READY remain OPEN.
+
+Next: prepare the existing full-client disposable fixture/schema/checksum prerequisites and obtain one explicitly bounded additional T1 round; then whole receiving/recipe/cash/KDS/waste/count/closing/report acceptance, followed by qualified Linux artifact/recovery/activation. Old Linux waiver is not PASS. [Checkpoint and residual strategy](https://github.com/notyourgas/sagaops/blob/2cb31cdb40922e857d685cbe886dc4c406feab65/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Tahap0 scoped local closed; dynamic action UI corrected
 
 `CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Final source/checkpoint `0e85bcb87f23bda4e33f76d9b97208d0cae11c9a` pada branch `codex/sagapos-foundation-20261014` menyatukan foundation Wave3 dan baseline SaaS terbaru. Runtime/test correction1489557 menutup dynamic KDS/approval buttons yang tertahan disabled setelah busy refresh. Explicit UI grants tetap diperiksa; backend/maker-checker/schema/dependency tidak berubah.27focused final PASS/0FAIL/0SKIP termasuk busy/recovery/revoke, profile-first/roles dan report-context. Full cash/KDS/closing browser pada correctionac4ef0f PASS dan dipetakan melalui unchanged runtime inputs; bukan mengubah failed aggregate menjadi PASS.
