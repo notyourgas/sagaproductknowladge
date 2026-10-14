@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-15 - Recorded baseline stock history date
+
+`CONFIRMED`; clean main ff-onlyc9a82ca4/HEAD=origin/main before edit; new printer
+milestone preserved. Source68dd92f/testedc0be5cd pushed;9scoped local/browser PASS,
+3viewports+Axe. Eight files align recorded-date fix and no full/native/type/build
+claim on new candidate. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY,
+production unchanged. Validator/public-safety/diff/staged repeat/push/immutable
+readback required; final knowledge SHA main HEAD. Next allowance180s PROPOSAL only.
+
 ## 2026-10-15 - Receipt attempt-bound signing local milestone
 
 `CONFIRMED`; isolated clean main ff-only dari7cf40052f818a68f23a2a82d7bb76b50ea8aaf87, HEAD=origin/main sebelum edit. Delapan file mengikat printer source039bd2125dbf9e80e7bf42c607ae4a671d6f918c,59unique local PASS/current check/type dengan constrained signing defaultOFF dan transport/physical separation. Stock scoped-native update terbaru dipertahankan, bukan digabung ke branch printer. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY; production95a6eda unchanged. Native/Linux/full/real QZ/certificate/worker/physical/canary qualification OPEN. Validator/link/public-safety/diff/staged-repeat/push/immutable readback wajib; final SHA main HEAD.

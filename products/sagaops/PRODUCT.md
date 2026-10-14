@@ -1,5 +1,19 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Tanggal stok awal tersimpan dibedakan dari waktu pencatatan
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source `68dd92fd9045b4499b37d4e9de9db94b9b5907ab`, testedc0be5cd, penutupan
+docs-only. Histori/filter stok awal kini mengikuti tanggal operasional tersimpan,
+ditampilkan terpisah dari waktu hitungan; data lama lain tetap memakai tanggal
+WIB. Tanggal invalid ditolak, pagination lama tidak dicampur dengan aturan baru.
+9scoped tests PASS0FAIL0SKIP, browser390/768/1440+Axe zero violations; bukan
+native/full check/type/build atau operator UAT pada kandidat ini. No fact backfill,
+schema/grant/payment/printer/production change. Production95a6eda/rollback2a18c9d
+active/ready unchanged. Kalender/cutoff per toko, immutable report/koreksi,
+workflow/full qualification/recovery/Linux builder/deploy/UAT tetap OPEN.
+[Bukti dan strategi](https://github.com/notyourgas/sagaops/blob/68dd92fd9045b4499b37d4e9de9db94b9b5907ab/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
 
 `CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.

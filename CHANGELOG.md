@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS recorded-date history proof disinkronkan
+
+`CONFIRMED`; source68dd92f/testedc0be5cd; Andreas meminta penyelesaian berikutnya.
+Tanggal stok awal tersimpan dihormati di filter/UI, timestamp asli tetap.9scoped
+local/browser PASS,3viewports+Axe; bukan full check/type/build/native qualification.
+Eight files PRODUCT/DOSSIER/productCHANGELOG/MASTER/GAPS/SYNC_STATUS/PORTFOLIO/
+rootCHANGELOG updated; printer milestone preserved. No production/grant/payment/
+schema change, IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Next allowance180s
+PROPOSAL only; calendar/snapshot/correction/workflow/recovery/Linux/activation/UAT OPEN.
+
 ## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
 
 `CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.

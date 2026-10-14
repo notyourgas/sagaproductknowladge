@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS recorded stock date tidak tertukar waktu pencatatan
+
+`CONFIRMED`; source68dd92f/testedc0be5cd,9local/browser PASS,390/768/1440+Axe.
+Histori/filter stok awal memakai tanggal tersimpan; timestamp asli/legacy WIB
+terjaga, no backfill/production/grant/payment/printer change. Eight docs align
+LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY; full check/type/build/
+native dan calendar/corrections/workflow/recovery/Linux/activation/UAT OPEN.
+
 ## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
 
 `CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.

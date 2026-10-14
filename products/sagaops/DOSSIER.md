@@ -1,5 +1,20 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Recorded baseline business date, bukan calendar certification
+
+`CONFIRMED`; source68dd92f/testedc0be5cd:before semua hitungan difilter dari
+timestamp WIB; after OPENING_BASELINE memakai tanggal operasional tersimpan
+yang valid, waktu hitungan/sort tetap asli. UI menampilkan keduanya; legacy cycle/
+period tetap WIB. No implicit04:00 assumption/new calendar service/backfill.
+9local projection/mock-browser PASS0FAIL0SKIP,390/768/1440+Axe zero violations,
+invalid-response retention/revoke/read-only pagination. Full check/type/build
+belum diulang pada kandidat ini; prior1098/type milik0c57ae7 saja. LOCAL_VALIDATED/
+IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. No production/payment/grant/schema/
+printer mutation. `PROPOSAL`: allowance180s90focused+90native untuk batch kalender/
+snapshot berikut, bukan izin baru atau reset full-workdayFAIL3. Existing240s
+consumed208.59,remaining31.41. Kalender authority, immutable correction/report,
+actual-role workflow/alerts, full recovery/Linux artifact/activation/UAT OPEN.
+
 ## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
 
 `CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.

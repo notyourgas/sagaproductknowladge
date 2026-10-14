@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Histori stok awal mengikuti tanggal operasional tersimpan
+
+`CONFIRMED`; Andreas melanjutkan strategi; source68dd92f/testedc0be5cd pushed.
+Filter/display memisahkan recorded baseline date dan capture time, invalid date
+fail-closed, legacy WIB dipertahankan tanpa backfill.9scoped local/browser tests
+PASS,3viewports+Axe; full/native/type/build belum diperbarui. No production/
+schema/grant/payment/printer mutation. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/
+NOT_BUSINESS_READY. Eight knowledge files diperbarui; next calendar/snapshots/
+correction/workflow/full qualification/Linux recovery/activation/UAT.
+
 ## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
 
 `CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.

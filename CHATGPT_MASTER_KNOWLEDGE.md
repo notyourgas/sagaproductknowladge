@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS recorded-date stock history scoped fix
+
+`CONFIRMED`; source68dd92f/testedc0be5cd:stok awal difilter/ditampilkan menurut
+tanggal operasional tersimpan, terpisah dari timestamp WIB.9focused tests PASS,
+browser390/768/1440+Axe, bukan full/native/check/type/build acceptance kandidat
+ini. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY; production
+95a6eda/rollback2a18c9d active/ready/payment unchanged. Kalender/cutoff authority
+per toko belum final; immutable correction/reports/workflow/alerts/full recovery/
+qualified separate Linux artifact/activation/UAT OPEN. Printer task dipertahankan.
+
 ## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
 
 `CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.

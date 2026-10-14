@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Recorded-date history ditutup, kalender authority belum final
+
+`CONFIRMED`; source68dd92f/testedc0be5cd,9local/browser PASS dan tiga viewport/Axe.
+Tanggal stok awal tak lagi digeser ke tanggal capture; legacy WIB tidak ditulis
+ulang. Full static/type/build/native acceptance kandidat ini belum dijalankan.
+`PROPOSAL`:180s reviewed allowance untuk next calendar/snapshot batch,90focused/
+check/type+90native, bukan reset failed full-workday atau izin spend otomatis.
+Existing240s kini208.59 consumed/31.41 remaining. Trusted outlet calendar revision/
+cutoff, immutable facts/report+append-only correction/disposition, unknown device
+sync, actual-role forms/alerts/full-workday/restart/restore/Linux artifact/activation/
+UAT tetap OPEN. Production unchanged, NOT_DEPLOYED/NOT_BUSINESS_READY.
+
 ## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
 
 `CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.
