@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS stock approval parity locally validated, not released
+
+`CONFIRMED`; source6e24fdf/tested appeafb29b pushed. Hitung/reversal/penyesuaian/
+closing dan biaya HPP memakai aturan persetujuan bersama, current grants tetap;
+waste biasa memakai hak tulis.32unique local module/Team tests incl.HTTP and
+3syntax+TypeScript PASS9.39s, bukan full/native-role/browser/release evidence.
+LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Production95a6eda/
+rollback2a18c9d ready unchanged01.17WIB, GATEWAY/SaaSCASH. Roles/direct/read-scope,
+conversions/recipes/corrections/CSV/workflow/alerts/device-calendar reconcile,
+full day/load/recovery/separate Linux behavioral rollback/activation/UAT remain
+OPEN. Existing builder sandboxes0/sessions0; no provisioning or BIOS workaround.
+Pricing, account grants, provider/payment mode and printer scope unchanged.
+
 ## 2026-10-15 - SagaPOS count snapshots bind saved calendar, scoped proof only
 
 `CONFIRMED`; source8ea12a6/app396826d/fixture74aad26. New count base-unit name/qty/

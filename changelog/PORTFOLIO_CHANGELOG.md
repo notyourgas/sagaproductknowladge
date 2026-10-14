@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS consistent stock approval and HPP cost grants
+
+`CONFIRMED`; source6e24fdf/tested appeafb29b, requested by Andreas. Shared rule
+aligns stock approval/cost rights across adapters while preserving ordinary
+waste entry and live authorization.32local module/Team incl.HTTP PASS0FAIL0SKIP,
+3syntax+TypeScript PASS,9.39s existing allowance. Eight docs updated. No full/
+native-role/browser/release inflation; no production/pricing/grant/payment/printer
+change. IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY; actual roles, conversions/
+recipes/corrections/CSV/workflow and full recovery/Linux/activation/UAT remain OPEN.
+
 ## 2026-10-15 - SagaPOS immutable base-unit count plus server calendar
 
 `CONFIRMED`; source8ea12a6/app396826d/fixture74aad26. Historical base name/qty/cost/

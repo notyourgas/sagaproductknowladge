@@ -1,5 +1,24 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Stock mutation permission parity, scoped local proof
+
+`CONFIRMED`; source6e24fdf/tested appeafb29b, penutupan docs-only, branch existing.
+Before aturan persetujuan/biaya antaradapter berbeda; after resolver existing
+bersama menjaga count/reversal/cycle/closing, hak biaya terpisah dan current
+feature views; waste tetap write.32unique module/Team tests PASS0FAIL0SKIP,
+termasuk pencabutan hak/scope/HTTP dan dispatch valid,3syntax+TypeScript PASS.
+9.39s dari focused34.56; aggregate calendar180 kini141.51 consumed/38.49remaining
+(focused25.17/native13.32), no reset/borrow. Tes sebelumnya tidak dijumlahkan.
+Full static/build/new browser/native low-privilege/final workday NOT_RUN untuk
+delta ini. Tidak mengubah UI/domain/schema/DB/akun/grant/payment/printer/production.
+Live01.17WIB active95a6eda/rollback2a18c9d ready, GATEWAY/SaaSCASH unchanged.
+Existing builder inventory sandboxes0/sessions0; separate Linux builder belum
+qualified. LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY, UAT not
+performed. Next:actual roles/direct/read boundaries, conversions/recipes,
+append-only corrections/CSV/daily workflow/alerts and device/calendar reconcile;
+review full-workday failure contract, realistic load/recovery/Linux behavioral
+rollback before guarded release. Pricing/positioning/provider scope unchanged.
+
 ## 2026-10-15 - Calendar-bound immutable base-unit count snapshot
 
 `CONFIRMED`; source8ea12a6/app396826d/qualified fixture74aad26. Before:historical

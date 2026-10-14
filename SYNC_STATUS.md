@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-15 - SagaPOS shared stock approval/cost policy
+
+`CONFIRMED`; clean mainc19e2b5b=origin/main before edit, printer entries preserved.
+Source6e24fdf/tested appeafb29b pushed;32unique local module/Team incl.HTTP PASS,
+3syntax+TypeScript PASS9.39s. Eight product/dossier/changelog/master/gaps/status/
+portfolio/root docs align before-after and residual strategy. No new native/full
+static/browser/UAT or production claim; production95a6eda/rollback2a18c9d ready
+unchanged01.17WIB. Milestone accepted; whole product partially accepted,
+IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Roles/conversion/recipe/correction/
+workflow/full recovery/Linux/behavioral rollback/UAT OPEN. Validator/diff/safety,
+staged repeat/push/immutable readback required; final knowledge SHA main HEAD.
+
 ## 2026-10-15 - SagaPOS calendar/base-unit snapshot scoped qualification
 
 `CONFIRMED`; clean main232a55f3/HEAD=origin/main before edit, printer entries kept.

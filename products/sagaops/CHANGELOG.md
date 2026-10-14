@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Shared approval/cost policy for stock actions
+
+`CONFIRMED`; Andreas meminta penyelesaian berikutnya. Source6e24fdf/tested
+appeafb29b pushed:persetujuan dan hak biaya stok konsisten antaradapter,
+current-grant checks tetap; waste tidak membutuhkan persetujuan tambahan.
+32unique module/Team local PASS0FAIL0SKIP,3syntax+TypeScript PASS,9.39s existing
+allowance. Eight knowledge files updated. No full static/build/native/browser
+or production qualification claimed. No production/grant/payment/printer change;
+LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Remaining roles,
+conversions/recipes/corrections/report/workflow/full recovery/Linux/UAT gates open.
+
 ## 2026-10-15 - Snapshot hitungan dasar dan kalender server qualified scoped
 
 `CONFIRMED`; Andreas melanjutkan proposal180s. Source8ea12a6/app396826d/fixture74aad26

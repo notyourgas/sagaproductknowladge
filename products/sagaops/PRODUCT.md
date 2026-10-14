@@ -1,5 +1,21 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Persetujuan aksi stok konsisten antarjalur aplikasi
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source `6e24fdfb87b51f04ceb33188da4b7eb8d4e46610` pushed; tested application
+`eafb29b06ae3d6eeba9bc8eaf6f60508ef2883ea`, closing docs-only. Aturan bersama
+menjaga persetujuan hitung/reversal/penyesuaian/closing dan hak biaya HPP;
+waste biasa tetap memakai hak tulis. Hak yang dicabut diperiksa sebelum aksi.
+32tes lokal module/Team termasuk regresi HTTP PASS0FAIL0SKIP,3syntax checks dan
+TypeScript PASS9.39s. Bukan full static/build/browser/native-role qualification.
+Production active95a6eda/rollback2a18c9d sehat pada01.17WIB dan tidak berubah;
+primaryGATEWAY/SaaSCASH tetap. No schema/dependency/grant/payment/printer mutation.
+OPEN:role native/direct-route/read-scope acceptance, snapshot konversi/resep,
+append-only correction/report CSV/workflow/alerts, full qualification/recovery,
+Linux builder dan behavioral rollback/activation/operator UAT. Tidak ada skor
+readiness total baru. [Bukti dan urutan penutupan](https://github.com/notyourgas/sagaops/blob/6e24fdfb87b51f04ceb33188da4b7eb8d4e46610/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Snapshot dasar hitungan dan kalender server tersimpan atomik
 
 `CONFIRMED / SCOPED_LOCAL_AND_NATIVE_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
