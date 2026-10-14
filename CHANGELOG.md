@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS Owner-terminal identity milestone disinkronkan
+
+`CONFIRMED`; receipt source `8c0830e21242edcc2e376c66342848f595d318c7` pushed pada branch printer terpisah. Identitas PC kasir kini dapat diperiksa, didaftarkan ulang dan dicabut Owner melalui API/UI; disimpan durable, scoped per outlet dan terikat revisi persiapan. Credential memakai hash server/cookie HttpOnly, bukan UUID localStorage sebagai authority. Expiry/rotation/revoke/config drift diuji; enrollment default OFF, revocation tetap tersedia, physical commissioning dan hardware dispatch tetap OFF. Tidak ada schema37/addon/grant/dependency/payment change.
+
+Current28tes unik Windows/PGlite PASS/0FAIL/0SKIP (17terminal/preparation/profile/browser +11document/queue/template regression), static1096/core37/TypeScript PASS. Desktop/mobile controls enabled/disabled dan screenshot sintetis diperiksa; raw-browser test memakai mock, bukan cetak fisik. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk identitas terminal; tidak ada PC asli didaftarkan atau credential nyata dipasang. Production95a6eda/service active unchanged dan NOT_BUSINESS_READY. Preview persisten belum memuat kandidat final; live Chrome TEST tertahan UI ekstensi. Native/Linux/full, constrained signer/status-submission/fenced cashier-Team integration, host recovery dan actual Owner/physical/canary UAT masih OPEN; correction ceilings lama tidak direset.
+
+Pilihan mode konfirmasi versus trusted-certificate silent printing diminta, belum ada pembelian/trust change atau fallback unsigned otomatis. Stock branch, pricing, provider dan produk lain unchanged. Sumber: exact code/test dan readonly production/Windows observation. Delapan dokumen product/dossier/changelogs/portfolio/master/gaps/sync diperbarui; tanpa raw credentials, account/device identifiers, private URL atau restricted evidence.
+
 ## 2026-10-15 - SagaPOS Wave3 checkpoint partial disinkronkan
 
 `CONFIRMED`; source `4dd7732bfb11338fb19d484f64db13dcaca95933` pushed,
