@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
+
+Operator selection is prepared in source, not operationally qualified.
+
+`CONFIRMED / SOURCE_PREPARED_UNVALIDATED / CAPACITY_BLOCKED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `62d3bced1bf3087eeec3e756349bbd5395b8895c`, branch `codex/sagapos-foundation-20261014`; runtime/test inputs `e396d4ce3ddf949abf5321c18be565d51317ed2d`, closing docs-only. Recent ten counts plus continuation anchor now have a source-level read-only history selector: COUNTS/PERIODS, inclusive WIB date filters, default20/max50, stable timestamp-plus-ID cursor, version high-water, immutable period references and fresh inventory.view/scope/catalog binding on primary/SaaS pages. Collapsed lazy UI has labeled filters, next-page, failed-read stale-row notice, denied-access clearing and abort/destroy/overlap safeguards. No schema/grant/dependency/payment/production-data change.
+
+All NEW syntax/unit/HTTP/SaaS-adapter/browser/native/static/type/build acceptance is NOT_RUN. Previous HistoryFlow21 PASS ondc143b4 remains historical scoped evidence, not this delta. Runtime launcher was not invoked because free system-drive space stayed below fixed1GiB floor, even after RAM recovered; shared42.00s remains unchanged, no gate reset/attempt consumed. No files/processes relocated/deleted/stopped. Existing scoped snapshot still scans/sorts in memory, NOT an indexed SQL read model; large-history performance unproven.
+
+Fresh12.07WIB health: production95a6eda ready/GATEWAY/SaaS CASH unchanged; rollback2a18c9d historical, no fresh SSH/new deploy/activation/authenticated human UAT. OPEN strategy: capacity-safe exact-source focused tests, native RLS/restart/full relevant regression with adequate allowance; cutoff/late receipts-waste-refunds/immutable corrections and actual multi-role workday; remaining modules/devices and separate qualified Linux builder plus guarded artifact/restore/rollback/authenticated release. No readiness percentage, pricing/positioning change, BIOS/payment permission inference. [Evidence and residual strategy](https://github.com/notyourgas/sagaops/blob/62d3bced1bf3087eeec3e756349bbd5395b8895c/docs/T1_CATALOG_CHOICES_20261014.md).
+
+
 ## 2026-10-14 - Historical stock closing anchor preserved beyond the recent window
 
 `CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `04d19e2247d06b3a62c0a62444e4b0290c9babe5` on `codex/sagapos-foundation-20261014`; runtime/test inputs `dc143b4ccdbbc858bccbbb4c7c265e381c5fea99`, closing documentation-only. Before: the last closed count could disappear outside the ten-count read window and block the next closing form. After: the server computes one compact continuation anchor from existing persisted facts; same scoped workspace/selector keeps the exact prior closing boundary, bounded recent list and wrong-anchor rejection. Visible accessible guidance distinguishes no counts, no new count and missing anchor. No schema/state-version/grant/dependency/provider change.

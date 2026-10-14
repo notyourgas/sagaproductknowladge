@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
+
+Scope limited to SagaOPS inventory source; other product release owners unchanged.
+
+`CONFIRMED / SOURCE_PREPARED_UNVALIDATED / CAPACITY_BLOCKED / IMPLEMENTED_NOT_DEPLOYED / AUTHENTICATED_UAT_PENDING / NOT_BUSINESS_READY`. Clean pushed source `62d3bced1bf3087eeec3e756349bbd5395b8895c`, branch `codex/sagapos-foundation-20261014`; runtime/test inputs `e396d4ce3ddf949abf5321c18be565d51317ed2d`, closing docs-only. Recent ten counts plus continuation anchor now have a source-level read-only history selector: COUNTS/PERIODS, inclusive WIB date filters, default20/max50, stable timestamp-plus-ID cursor, version high-water, immutable period references and fresh inventory.view/scope/catalog binding on primary/SaaS pages. Collapsed lazy UI has labeled filters, next-page, failed-read stale-row notice, denied-access clearing and abort/destroy/overlap safeguards. No schema/grant/dependency/payment/production-data change.
+
+All NEW syntax/unit/HTTP/SaaS-adapter/browser/native/static/type/build acceptance is NOT_RUN. Previous HistoryFlow21 PASS ondc143b4 remains historical scoped evidence, not this delta. Runtime launcher was not invoked because free system-drive space stayed below fixed1GiB floor, even after RAM recovered; shared42.00s remains unchanged, no gate reset/attempt consumed. No files/processes relocated/deleted/stopped. Existing scoped snapshot still scans/sorts in memory, NOT an indexed SQL read model; large-history performance unproven.
+
+Fresh12.07WIB health: production95a6eda ready/GATEWAY/SaaS CASH unchanged; rollback2a18c9d historical, no fresh SSH/new deploy/activation/authenticated human UAT. OPEN strategy: capacity-safe exact-source focused tests, native RLS/restart/full relevant regression with adequate allowance; cutoff/late receipts-waste-refunds/immutable corrections and actual multi-role workday; remaining modules/devices and separate qualified Linux builder plus guarded artifact/restore/rollback/authenticated release. No readiness percentage, pricing/positioning change, BIOS/payment permission inference. [Evidence and residual strategy](https://github.com/notyourgas/sagaops/blob/62d3bced1bf3087eeec3e756349bbd5395b8895c/docs/T1_CATALOG_CHOICES_20261014.md).
+
+
 ## 2026-10-14 - Arkarupa contractor prototype, local milestone
 
 `CONFIRMED`; proyek klien SagaDevs, aplikasi lokal `a3c255e694fe993fbb8ce9457c89ff6e9afa73e8`, startup/UAT `85eb82d41453c303929ea04135522120f349aba0`. RAP per ruangan, progres terverifikasi dan barang datang sudah diimplementasikan. Pemeriksaan restart 14 Oktober menjaga data existing dan file rilis; UAT 12 skenario disiapkan, human acceptance belum ada. Penambahan knowledge menjelaskan batas local/public dan keputusan tersisa; bukan peluncuran produk SaaS baru. Production/pricing tidak berubah. [Detail proyek](../products/sagadevs/ARKARUPA.md).
