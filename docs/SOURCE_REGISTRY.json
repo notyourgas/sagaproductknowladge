@@ -89,6 +89,18 @@
     },
     {
       "product": "sagaops",
+      "surface": "pos-foundation-candidate",
+      "repository": "https://github.com/notyourgas/sagaops",
+      "private": true,
+      "branch": "codex/sagapos-foundation-20261014",
+      "commit": "44dabffe6b2048e5b82f55cab50ef83ebbe02898",
+      "source_status": "PUSHED",
+      "remote_verified_at": "2026-10-14",
+      "runtime_verification": "PREPARED_UNVALIDATED_NOT_DEPLOYED",
+      "business_readiness": "NOT_ESTABLISHED_BY_SOURCE_SYNC"
+    },
+    {
+      "product": "sagaops",
       "surface": "pos-application-and-operations",
       "repository": "https://github.com/notyourgas/sagaops",
       "private": true,

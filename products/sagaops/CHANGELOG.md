@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Tahap0 foundation source checkpoint
+
+- Klasifikasi: `CONFIRMED`; Andreas meminta Tahap0 dan strategi kekurangan.
+- Before: delta Wave3 dan baseline SaaS berada pada branch terpisah. After: source44dabff memport delta ke baseline terbaru serta mempertahankan schema/dependency/critical SaaS source; bukan downgrade runtime.
+- Tambahan: helper conflict/cleanup ordering resolved in source, dua integration contracts prepared, satu ledger27fitur dan residual sequence.
+- Bukti: source diff-check/source preservation PASS; runtime/native/browser/static/type NOT_RUN, capacity below unchanged floor. Storage relocation berhenti pada izin; tidak ada source file dihapus.
+- Status: `SOURCE_INTEGRATED / PREPARED_UNVALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Production95a6eda/GATEWAY unchanged; prior qualification waiver bukan PASS.
+- Source: [44dabff](https://github.com/notyourgas/sagaops/tree/44dabffe6b2048e5b82f55cab50ef83ebbe02898). Next: resolve capacity/permission tanpa destructive cleanup, qualify integrated candidate dalam allowance existing, lalu T1 kasir. Pricing/positioning unchanged.
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
