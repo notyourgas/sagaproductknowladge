@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-14 - SagaPOS receipt: jangan menjanjikan cetak otomatis dahulu
+
+`CONFIRMED`; source `01eb6c0b220def398d5d957ac290ebe277daad19`:34scoped native dan157navigation tests PASS/0FAIL/0SKIP, static1093/core37/type;50menu desktop/mobile/layout proxy teruji. Fullbd55398 tetap gagal3shards/timeout5shards,54observed failures termasuk32missing-browser contexts; bukan full finalsource qualification. Embedded preview reset timeout dan320visual offset masih open. Editor IMPLEMENTED_NOT_DEPLOYED, trusted commissioned dispatcher NOT_IMPLEMENTED: preparation UUID/simulation bukan authority atau aktivasi hardware. QZ manual silent/nonrunning; terminal auth/revocation/signer/fencing, host restore/rollback dan authenticated/physical UAT diperlukan. Production95a6eda unchanged, tanpa DDL/deploy/aktivasi/cetak baru; NOT_BUSINESS_READY. Pricing/payment/stock branch tidak berubah.
+
 ## 2026-10-14 - SagaPOS nota: native proof maju, belum siap rilis
 
 `CONFIRMED`; receipt source `05ca56db02274f493796c2a3cd72a051bb506a7e` pushed. Scope Linux/native nota34PASS/0FAIL/0SKIP dan static1093/core37/type termasuk PG18 dump/restore PASS. Ini menggantikan NOT_RUN native sebelumnya saja. Desktop/390preview48kolom diterima,320capture open. Full embedded regression e15e075 mencapai ceiling15menit dengan35failures teramati, tanpa summary penuh; jangan menyebut full PASS. QZ manual launch tanpa pesan terlihat dan tidak aktif, penyebab belum terbukti. Production95a6eda unchanged/NOT_DEPLOYED/NOT_BUSINESS_READY; full diagnosis, host recovery/rollback, commissioned transport serta authenticated/physical UAT masih diperlukan. Source stock branch dan payment boundary tidak berubah oleh milestone ini.

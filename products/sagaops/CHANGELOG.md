@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Navigasi nota qualified; full regression dan dispatcher masih terbuka
+
+`CONFIRMED`; source `01eb6c0b220def398d5d957ac290ebe277daad19`. Sebelumnya4navigation contracts masih49menu; kini50+D50href dan157navigation tests PASS,34native PASS/static1093/core37/type. Tiga recovery fixture flags dikoreksi/PASS pada bd55398. Alasan: menyelesaikan regresi terkait menu tanpa mengubah runtime bisnis. Fullbd55398 terminal3FAIL/5TIMEOUT shards/54observed failures, termasuk32missing-browser contexts dan embedded preview reset timeout; bukan full finalsource PASS.320pixels/QZ/host recovery/UAT tetap open; trusted real dispatcher NOT_IMPLEMENTED, editor IMPLEMENTED_NOT_DEPLOYED. Production95a6eda/pricing/payment unchanged; tidak deploy/DDL/print. NOT_BUSINESS_READY.
+
 ## 2026-10-14 - Receipt qualification Linux selesai untuk scope terfokus
 
 `CONFIRMED`; source `05ca56db02274f493796c2a3cd72a051bb506a7e`, backend base receipt22d0369. Test native adapter diperbaiki dan preview48kolom/mobile ditata;34PASS/0FAIL/0SKIP, static1093/core37/type dan PG18 dump/restore PASS. Desktop/390visual diterima,320capture residual. Full regression e15e075 terminal ceiling15menit/35observed failures/no full summary, bukan full PASS. Alasan: menutup blocker native nota sambil mempertahankan kegagalan dan provenance terpisah. QZ manual silent/nonrunning; host/full/physical/UAT open. Production95a6eda unchanged, NOT_DEPLOYED/NOT_BUSINESS_READY; tidak ada harga/payment/provider change.
