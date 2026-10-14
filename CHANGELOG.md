@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
+
+`CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.
+
+Transport signed SENT menjadi SUBMITTED/CLIENT_REPORTED, bukan physical PRINTED. Physical NOT_VERIFIED dan status DB unknown tetap konservatif; versi metadata menjaga old-reader/rollback compatibility tanpa perubahan schema37/addon/grant. Signed NOT_SENT/recovery tidak otomatis resend.59tes unik Windows/PGlite PASS (38signing/document/queue/Team +19terminal/preparation/profile/mock-browser +2template API/persistence), check1098/core37/client511/TypeScript PASS. SDK vendored melaporkan2.2.6; kompatibilitas wire target Tray2.3.0 diuji dengan socket tiruan tanpa akses jaringan/printer. Ini bukan native/Linux/full/physical acceptance atau jaminan exactly-once kertas.
+
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk komponen server; dispatcher browser/commissioning end-to-end masih OPEN. Certificate trust/loader, mode konfirmasi versus silent, cross-tab/reload send fence, current native permission locks, host recovery, reviewed full/320 unblock, authenticated Owner/physical/endurance/canary/pilot UAT belum selesai. Production95a6eda/service active diverifikasi read-only dan unchanged; tidak ada biaya, trust change, enrollment nyata, print, CI atau deployment. NOT_BUSINESS_READY; stock branch terbaru dipertahankan dan tidak digabung ke source printer. Pricing/provider/produk lain unchanged.
+
 ## 2026-10-15 - SagaPOS scoped stock-seal PASS disinkronkan
 
 `CONFIRMED`; source `e2b72ea5672e52bf79c92298268ba7493a890427` pushed,
