@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-14 - Bukti parsial guard closing stale, bukan full acceptance
+
+`CONFIRMED`; source `37f16d8efb827278f52fe652dfb682235e20e785`, tested921e954, behavior e7915cb unchanged. Domain13freshness+4warehouse and HTTP stale409/history/current inventory+finance approval total20unique completed assertions PASS/0FAIL/0SKIP; tidak menjumlah ulang initial/domain duplicate. Existing Owner Dashboard bridge memperbaiki fixture yang sebelumnya mengembalikan401 sebelum assertion. Penolakan menjaga snapshot/audit dan tidak memperluas izin. New guarded nativePHP/PG18 independent-backend/recount/replay test disiapkan, NOT_RUN; browser/check/type belum tercapai.
+
+Combined operation FAIL capacity saat correction, bukan full-suite PASS. Additional150s charge9.36/remainder140.64, static80.64/native60; old1.81/stock diagnostic59.72 dan failed nativefull3 retained. Approved hash-verified installer relocation hanya memberi admission sementara; capacity lalu jatuh lagi dan guard tidak dilonggarkan. Hibernate NOT_PERFORMED; no installed-driver/history/database/backup/process/production mutation. Release NO_GO, partial source only, BUSINESS_READY=false. [Ledger](https://github.com/notyourgas/sagaops/blob/37f16d8efb827278f52fe652dfb682235e20e785/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt exact-source static qualification diperbarui
 
 `CONFIRMED`; source `22d03699135cde2ae2020d4a1b3849ff551dab54` tidak berubah. Approved inactive-archive relocation mempertahankan isi/SHA-256; fresh capacity admission lulus sebelum satu check. Terminal `npm run check` exit0:1092modul, OpenAPI3.1.0, core37, retired route references0 dan TypeScript PASS. YAML strict parsing/manual trigger/compute false by default/pinned action SHA/Node22.22.1/owned native recovery container/cleanup guards PASS. Hosted/Bash/native PG18 dump-restore/host installer NOT_RUN; YAML bukan execution proof. Capacity-stop historis tetap ditahan sebagai failure provenance, digantikan hanya untuk pemeriksaan ini. Tidak mengulang scoped11 PASS/2SKIP tanpa delta atau mengklaim full regression. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`; tidak ada production mutation, transport baru atau physical test baru. QZ/manual control, quota/compute, native/host recovery, flag-compatible release, full relevant regression/physical/UAT tetap wajib.

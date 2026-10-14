@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-14 - Stock stale-count partial qualification snapshot
+
+`CONFIRMED`; clean main ff-only frome4ce6f9334b3b2baf3e3fedea4f596e6aeeff035 before editing; source `37f16d8efb827278f52fe652dfb682235e20e785`, test921e954. Ten files reconcile20domain/HTTP assertions PASS with combined capacityFAIL and current UI/native/check/type NOT_RUN, preserving receipt22d0369 and old native failure/budgets. Product acceptance partially accepted, NOT_DEPLOYED/NOT_BUSINESS_READY; no private recovery paths/raw receipts/customer identifiers. Validator/link/public-safety/diff/staged repeat/push/readback required before sync complete; final SHA main HEAD.
+
 ## 2026-10-14 - Receipt scoped static qualification snapshot
 
 `CONFIRMED`; isolated clean main/ff-only dari `e76dee0679d7b879cce96ebb0b0609bc95ebb633`, receipt source unchanged `22d03699135cde2ae2020d4a1b3849ff551dab54`. Fresh static1092/core37/TypeScript/latest YAML guards PASS sesudah approved hash-verified capacity relocation. Delapan dokumen menyelaraskan scoped unblock tanpa menimpa update stock atau canonical checkout lain. Milestone static accepted, operational/release acceptance partially accepted: native/hosted/host installer/full/QZ/physical/UAT masih open, production mutation tidak dijalankan. Validator/link/public-safety/diff/staged repeat/push/readback wajib sebelum knowledge UP TO DATE; final SHA adalah main HEAD.

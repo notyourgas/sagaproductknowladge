@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - SagaPOS stale-count partial results synchronized
+
+`CONFIRMED`; Andreas additional150s approval plus source `37f16d8efb827278f52fe652dfb682235e20e785` / tested921e954. Reason: replace prior wholly unexecuted delta with scoped domain/HTTP proof while retaining capacity failure.20unique assertions PASS/0FAIL/0SKIP, combined runnerFAIL, current browser/native/check/type NOT_RUN; native fixture prepared only. Product/dossier/changelogs/portfolio/master/gaps/sync/source registry updated without private paths/data. Production unchanged95a6eda, source-only/NOT_BUSINESS_READY, old failed gates retained. [Ledger](https://github.com/notyourgas/sagaops/blob/37f16d8efb827278f52fe652dfb682235e20e785/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt fresh static/type qualification disinkronkan
 
 `CONFIRMED`; sumber persetujuan Andreas dan source receipt `22d03699135cde2ae2020d4a1b3849ff551dab54`. Alasan: approved hash-verified archive relocation menutup immediate capacity admission untuk satu check. Fresh static1092/core37/TypeScript dan YAML workflow guards PASS, tidak mempromosikan preparation ke native/full/host/production proof. Delapan dokumen PRODUCT/DOSSIER/product changelog/portfolio/master/gaps/root/sync diperbarui; prior stock/receipt history dipertahankan. Tidak ada source/product pricing/provider change atau production mutation. QZ/compute/native/recovery/full/physical/UAT open; public-safe tanpa evidence path/identifier/data. Validator/link/safety/diff/staged repeat/push wajib; final SHA main HEAD.

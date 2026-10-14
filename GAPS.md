@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-14 - Closing stale mendapat bukti domain/HTTP; admission tidak stabil
+
+`CONFIRMED`; source `37f16d8efb827278f52fe652dfb682235e20e785`, tested921e954.20unique completed scoped assertions PASS/0FAIL/0SKIP, combined correction FAIL continuous capacity guard;14new freshness cases observed, UI/native2cases prepared but not run. Current check/type/build/recovery/UAT NOT_RUN; no nativefull retry, no threshold/assertion/grant weakening, no production mutation. Additional150s charge9.36/remainder140.64 (static80.64/native60).
+
+`NEEDS CONFIRMATION`: stable capacity C>=1GiB/prefer2GiB or existing qualified separate builder; specific authority before changing Windows Hibernate, currently NOT_PERFORMED. Then executor finishes bounded delta tests, relevant full regression/native CAS/recovery, post-close writes/in-flight locks/immutable corrections and guarded integrated release/operator UAT. Old full-native FAIL3 and printer22d0369 independent ownership remain. [Ledger](https://github.com/notyourgas/sagaops/blob/37f16d8efb827278f52fe652dfb682235e20e785/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt capacity stop scoped ditutup; release gates masih open
 
 `CONFIRMED`; receipt `22d03699135cde2ae2020d4a1b3849ff551dab54` unchanged, terminal check static1092/core37/TypeScript dan latest YAML guards PASS setelah approved hash-verified relocation/fresh admission. Menggantikan blocker kapasitas untuk check ini, bukan semua task/masa depan. Historical11PASS/2SKIP tetap; Bash/native/hosted/host installer NOT_RUN. `NEEDS CONFIRMATION`: QZ manual Windows control dan compute/quota/support keputusan dari Andreas; executor kemudian qualify Linux/native restore, host recovery/rollback, full relevant regression, commissioned transport/physical canary dan authenticated UAT. Tidak menjalankan production mutation; `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

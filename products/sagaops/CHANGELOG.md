@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Stock stale-count assertions maju; capacity kembali menghentikan qualification
+
+`CONFIRMED`; checkpoint `37f16d8efb827278f52fe652dfb682235e20e785`, tested921e954; app e7915cb unchanged. Domain17 dan corrected HTTP3 PASS/0FAIL/0SKIP;14new cases plus6regressions, bukan full gate. Initial Owner-login fixture failure retained; test uses existing Dashboard bridge, no authorization change. Combined correction FAIL continuous disk guard; UI/native/check/type NOT_RUN, native new case prepared only. Additional150s authorized9.36used/140.64remaining, no old budget/correction reset. Production unchanged95a6eda, payment boundary unchanged, receipt22d0369 separate. Reason: record actual delta evidence without promoting incomplete acceptance. [Ledger](https://github.com/notyourgas/sagaops/blob/37f16d8efb827278f52fe652dfb682235e20e785/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - Receipt capacity unblock dan static qualification
 
 `CONFIRMED`; source tetap `22d03699135cde2ae2020d4a1b3849ff551dab54`. Alasan: kapasitas yang sebelumnya menghentikan check dipulihkan melalui relokasi berizin dengan hash verification. Fresh static1092/core37/TypeScript serta latest YAML/manual-compute-native guards PASS. Before capacity-blocked -> scoped static completed; bukan native/full-suite/host/production acceptance. Source/pricing/provider unchanged, tidak ada production deploy/DDL/flag/print. QZ, quota/compute, native/host recovery, full relevant regression, physical canary/UAT open. PRODUCT/DOSSIER/master/gaps/portfolio/root/sync diperbarui untuk satu milestone ini.

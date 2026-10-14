@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-14 - SagaPOS closing stale: partial domain/HTTP verification
+
+`CONFIRMED`; source `37f16d8efb827278f52fe652dfb682235e20e785` / tested921e954, app unchangede7915cb. Domain17/HTTP3 actual PASS,14new +6regression, combined runnerFAIL continuous capacity. UI/native/check/type/build not run; additional150s9.36used/140.64remaining, old limits retained. No pricing/provider/neighbor-product/production change; source partially validated, NOT_DEPLOYED/NOT_BUSINESS_READY. Stable capacity, remaining qualification and integrity/recovery/operator UAT gaps remain; receipt22d0369 facts preserved. [Ledger](https://github.com/notyourgas/sagaops/blob/37f16d8efb827278f52fe652dfb682235e20e785/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-14 - SagaPOS receipt static qualification setelah capacity unblock
 
 `CONFIRMED`; receipt source `22d03699135cde2ae2020d4a1b3849ff551dab54` unchanged. Relokasi arsip berizin/hash-verified memungkinkan fresh static1092/core37/TypeScript dan YAML workflow guards PASS. Hosted/native/full/host qualification tidak disimpulkan dari hasil ini; `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Tidak menjalankan production mutation atau mengubah pricing/provider/produk tetangga. QZ/manual control, compute/quota, Linux/native/host recovery, full relevant regression dan physical/UAT masih open. Delapan dokumen produk/portfolio/master/gaps/root/sync menyelaraskan milestone scoped.
