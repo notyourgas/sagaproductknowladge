@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS calendar count snapshot proof synchronized
+
+`CONFIRMED`; Andreas continued explicit180s proposal. Source8ea12a6/app396826d/
+fixture74aad26 pushed;112local/check1101/type PASS, native9retained+1corrected PASS,
+cleanup-only FAIL preserved. No full-suite/recovery/UAT claim. Base-unit snapshot/
+as-of server calendar and immutable history before→after documented in eight
+PRODUCT/DOSSIER/productCHANGELOG/MASTER/GAPS/SYNC_STATUS/PORTFOLIO/rootCHANGELOG files.
+Production/pricing/grant/provider/printer unchanged, IMPLEMENTED_NOT_DEPLOYED/
+NOT_BUSINESS_READY. Role parity/conversions/recipes/corrections/workflow/full
+recovery/Linux behavioral rollback/activation/UAT remain OPEN. Final SHA main HEAD.
+
 ## 2026-10-15 - SagaPOS recorded-date history proof disinkronkan
 
 `CONFIRMED`; source68dd92f/testedc0be5cd; Andreas meminta penyelesaian berikutnya.

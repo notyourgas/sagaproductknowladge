@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS immutable base-unit count plus server calendar
+
+`CONFIRMED`; source8ea12a6/app396826d/fixture74aad26. Historical base name/qty/cost/
+value/calendar captured atomically; no legacy backfill or history rewrite/delete.
+112local/check1101/type PASS, native9retained+1corrected PASS; cleanupFAIL preserved,
+same-app binding, not full-day/RLS/recovery/UAT. Eight docs updated; production/
+pricing/grant/payment/printer unchanged. IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY;
+remaining role/conversion/recipe/correction/workflow/full recovery/Linux/activation gates OPEN.
+
 ## 2026-10-15 - SagaPOS recorded stock date tidak tertukar waktu pencatatan
 
 `CONFIRMED`; source68dd92f/testedc0be5cd,9local/browser PASS,390/768/1440+Axe.

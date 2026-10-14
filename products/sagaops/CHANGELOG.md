@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Snapshot hitungan dasar dan kalender server qualified scoped
+
+`CONFIRMED`; Andreas melanjutkan proposal180s. Source8ea12a6/app396826d/fixture74aad26
+pushed:immutable base quantity/name/cost/value + server calendar, atomic response,
+history zone/cutoff, no legacy backfill and no rewrite/delete.112local/check1101/
+type PASS; native9 retained PASS + corrected1PASS after cleanup-only failure.
+Old failure preserved, app unchanged proof explicit, no full-day/RLS/restore/UAT.
+Eight knowledge files updated; no production/schema/grant/payment/printer change.
+IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Next:all-path role parity, conversion/
+recipe/report corrections/workflow, full recovery/Linux behavioral rollback/deploy/UAT.
+
 ## 2026-10-15 - Histori stok awal mengikuti tanggal operasional tersimpan
 
 `CONFIRMED`; Andreas melanjutkan strategi; source68dd92f/testedc0be5cd pushed.

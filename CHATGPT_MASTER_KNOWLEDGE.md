@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS count snapshots bind saved calendar, scoped proof only
+
+`CONFIRMED`; source8ea12a6/app396826d/fixture74aad26. New count base-unit name/qty/
+cost/value snapshot and server as-of calendar persist atomically; old facts cannot
+be rewritten/deleted, history uses saved closing observation zone/cutoff. No
+legacy backfill.112local/check1101/type PASS; native retained9PASS + corrected1PASS,
+initial cleanup hookFAIL kept. Same-app diff binding, not full-suite rerun.
+SCOPED_LOCAL_AND_NATIVE_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY;
+95a6eda/rollback2a18c9d ready/GATEWAY/SaaSCASH unchanged. Printer task preserved.
+All-path role parity/low-privilege proof, conversions/recipes/corrections/reports/
+actual-role workflow/alerts, mixed calendars/unuploaded devices, full day/restart/
+restore/load, qualified separate Linux artifact and behavioral rollback/UAT OPEN.
+
 ## 2026-10-15 - SagaPOS recorded-date stock history scoped fix
 
 `CONFIRMED`; source68dd92f/testedc0be5cd:stok awal difilter/ditampilkan menurut

@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Snapshot dasar qualified, whole Wave3 dan release masih terbuka
+
+`CONFIRMED`; source8ea12a6/app396826d/fixture74aad26,112local/check1101/type PASS;
+native retained9PASS + cleanup-corrected1PASS, originalFAIL retained.180s allowance
+spent132.12/remaining47.88, no old failed gate reset. Current scoped proof covers
+base-unit count snapshot/as-of server calendar/immutability, not full report.
+`PROPOSAL`:close generic stock action approval/cost parity and actual low-privilege
+roles; conversions/packages/recipes and append-only approved corrections/review
+disposition with original-adjusted CSV; actual-role forms/alerts; unknown-device/
+mixed-calendar reconciliation; realistic retained-data load/full day/restart/
+restore. Qualified Linux builder still missing. Behavioral calendar/stock-seal
+rollback must be proven, not inferred from unchanged schema37/parseable state.
+No production/grant/payment/printer mutation; NOT_DEPLOYED/NOT_BUSINESS_READY.
+
 ## 2026-10-15 - Recorded-date history ditutup, kalender authority belum final
 
 `CONFIRMED`; source68dd92f/testedc0be5cd,9local/browser PASS dan tiga viewport/Axe.

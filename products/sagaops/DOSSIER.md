@@ -1,5 +1,37 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Calendar-bound immutable base-unit count snapshot
+
+`CONFIRMED`; source8ea12a6/app396826d/qualified fixture74aad26. Before:historical
+interpretation could depend on current master/calendar. After:new counts retain
+base-unit quantity/name/value/unit-cost with canonical integrity digest; same
+transaction resolves existing reporting calendar fact as-of observation and
+serializes against settings change. No prior authority means explicit null/
+legacy, never current-settings backfill. Durable response reads committed snapshot
+inside transaction, cold restore validates digest/economics. Count/period rewrite
+or delete rejected; period refers to immutable closing count. History shows its
+zone/cutoff, no cost blob in summary; baseline recorded date remains explicit.
+
+Focused112uniqueTAP/check1101/core37/client503/type PASS53.72s on396826d.
+Native initial62.44s:9PASS/1FAIL hook55006 from fixture cleanup order, retained.
+Test-only correction runtime-diff allowlist:syntax+8snapshot tests PASS1.72s,
+native failed case alone PASS14.24s, cleanup true. Prior112/static/type/native9
+reused explicitly on identical application, not120local or a new full suite.
+Additional180s consumed132.12,remaining47.88; old budgets/gates unchanged.
+Actual native PG18.6/37migrations/distinct backend Lock wait, calendar revision
+change/master rename/cold replay/immutability/stale CAS/rollback tested. Admin
+fixture is not NOBYPASSRLS, full workday, service restart/restore or human UAT.
+
+No schema/state-version/dependency/grant/provider/printer/production change.
+SCOPED_LOCAL_AND_NATIVE_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY;
+production95a6eda/rollback2a18c9d active/ready payment unchanged. `PROPOSAL`:generic
+action approval parity+low-privilege proof; historical conversions/packages/recipe,
+append-only approved correction/disposition and original-adjusted CSV; actual-role
+forms/alerts, mixed-calendar/device reconciliation; realistic retained-data load,
+full-workday/restart/restore; separate qualified Linux artifact and schema AND
+behavior-compatible rollback rehearsal/Owner/activation/authsmoke/UAT. Digest is
+not a secret MAC; schema37 alone does not prove old reader preserves new semantics.
+
 ## 2026-10-15 - Recorded baseline business date, bukan calendar certification
 
 `CONFIRMED`; source68dd92f/testedc0be5cd:before semua hitungan difilter dari

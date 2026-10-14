@@ -1,5 +1,29 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Snapshot dasar hitungan dan kalender server tersimpan atomik
+
+`CONFIRMED / SCOPED_LOCAL_AND_NATIVE_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_BUSINESS_READY`. Source `8ea12a69c0e359860cd08e73c3b16e48c888fcb4` pushed;
+app396826d, fixture correction74aad26, closing docs-only. Hitungan baru menyimpan
+nama bahan, satuan dasar, jumlah, nilai dan biaya satuan; kalender diikat server
+ke riwayat pengaturan saat observasi dalam transaksi yang sama. Perubahan nama/
+kalender tidak menulis ulang snapshot lama; histori/closing memakai kalender
+hitungan akhir. Data legacy tidak diisi ulang dari master sekarang. Perubahan/
+penghapusan hitungan atau periode tersimpan ditolak. Ringkasan tidak membuka blob biaya.
+
+112scoped local tests/check1101/core37/client503/type PASS pada app396826d.
+Native:9TAP PASS dan1hook cleanup FAIL awal; koreksi fixture-only lulus1case PG18.6
+setelah urutan penutupan pool diperbaiki. App identik diverifikasi, hasil gagal
+dipertahankan; bukan penjumlahan rerun atau full-suite baru. Tiga viewport/Axe PASS.
+Native settings-versus-count lock, snapshot/cold replay, immutable history409,
+stale CAS/fault rollback terbukti pada fixture admin sintetis, bukan role/RLS/
+full-day/restore/operator acceptance. No schema/state-version/dependency/grant/
+provider/printer/production mutation. Production95a6eda/rollback2a18c9d unchanged.
+OPEN:approval parity seluruh jalur, konversi/resep final, reviewed corrections/
+CSV/workflow/alerts, mixed-calendar/device reconciliation, full recovery, qualified
+Linux builder dan behavioral rollback/activation/UAT.
+[Bukti dan strategi penutupan](https://github.com/notyourgas/sagaops/blob/8ea12a69c0e359860cd08e73c3b16e48c888fcb4/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Tanggal stok awal tersimpan dibedakan dari waktu pencatatan
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

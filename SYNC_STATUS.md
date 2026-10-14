@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-15 - SagaPOS calendar/base-unit snapshot scoped qualification
+
+`CONFIRMED`; clean main232a55f3/HEAD=origin/main before edit, printer entries kept.
+Source8ea12a6/app396826d/fixture74aad26 pushed;112local/check1101/type PASS plus
+retained native9PASS and corrected1PASS on identical app. Initial native cleanup
+failure retained, no full-suite/RLS/day/recovery/UAT inflation. Eight files align
+base snapshot/calendar/immutability and remaining role/conversion/correction/
+workflow/full recovery/Linux behavioral rollback/activation gates. No production,
+pricing/grant/provider/printer change. Milestone accepted; overall readiness
+partially accepted/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY. Validator/diff/
+safety/staged repeat/push/immutable readback required; final SHA main HEAD.
+
 ## 2026-10-15 - Recorded baseline stock history date
 
 `CONFIRMED`; clean main ff-onlyc9a82ca4/HEAD=origin/main before edit; new printer
