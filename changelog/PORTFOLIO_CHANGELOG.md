@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-10-14 - SagaPOS receipt design: scoped local, bukan rilis production
+
+`CONFIRMED`; source `34e292f6359c00103792567f6ef3dc492c4ef43b` dipush terpisah. Editor Owner per-outlet mengatur logo/header/footer dan tampil rincian; versi asli/salinan membekukan desain, nilai transaksi tetap.25 focused/9 delta/static1088 PASS dan bounded physical TEST diterima. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`; production unchanged, flag OFF. QZ/native/migration-recovery/full regression/physical canary/UAT open; manual Linux workflow NOT_RUN menunggu kuota/biaya/registrasi. Tidak mengubah pricing, provider atau produk lain. Dokumen SagaOPS PRODUCT/DOSSIER/CHANGELOG, master/gaps/root/sync disinkronkan.
+
 ## 2026-10-14 - Arkarupa local recovery validation
 
 `CONFIRMED`; permintaan Andreas dilanjutkan dengan tooling7628b26/docsf2ff71a, aplikasi a3c255e. Workspace QA/backup drive terpisah, fresh full69/881 PASS, encrypted snapshot utama direstore ke disposable, fixture kembali dan source bundle dapat dipulihkan dengan exact source/Git integrity cocok. Data utama tetap. Pembaruan knowledge menutup bukti regresi lama dan memperjelas recovery; database aktif masih pada drive sistem, backup belum offsite. Human UAT/mapping/visual/preview target tetap OPEN; production/pricing tidak berubah. [Detail](../products/sagadevs/ARKARUPA.md).

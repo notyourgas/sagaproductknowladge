@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-14 - Sinkronisasi desain nota SagaPOS
+
+`CONFIRMED`; sumber Andreas, bounded physical acceptance dan source pushed `34e292f6359c00103792567f6ef3dc492c4ef43b`. Alasan: custom nota kini memiliki editor/versi server pada source, sementara status aktivasi tetap OFF. PRODUCT/DOSSIER/CHANGELOG SagaOPS, portfolio, master, gaps dan sync mencatat25 focused +9 delta/static1088 PASS, batas full-suite/native/QZ serta strategi sisa CI manual/recovery/physical/UAT. `IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`; production tidak berubah. Tidak menyalin foto, receipt, identifier atau path evidence privat. Knowledge divalidasi/dipush terpisah, final SHA adalah main HEAD setelah push.
+
 ## 2026-10-14 - Arkarupa recovery milestone
 
 `CONFIRMED`; sumber Andreas dan source lokal tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, docs `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`. Fresh full69/881 serta pemulihan source dan snapshot terenkripsi pada disposable menggantikan bukti full-suite historis untuk kode aplikasi yang sama. Catatan proyek Arkarupa, PRODUCT/DOSSIER/CHANGELOG SagaDevs, master/gaps/sync/portfolio/root changelog diperbarui; validator/link/public-safety/diff diperiksa dan knowledge dipush terpisah. Production tidak berubah. UAT manusia, kapasitas database/custody di luar PC dan target preview belum ditutup. Tidak menyalin path bukti, data, atau credential privat.

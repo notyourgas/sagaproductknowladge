@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-14 - SagaPOS desain nota: sudah lokal, belum aktif production
+
+`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Commit `34e292f6359c00103792567f6ef3dc492c4ef43b` pada `codex/sagapos-raw-printer-20261014` menyediakan editor Owner D50 per outlet: header/logo monokrom/footer custom, toggle rincian/hide-zero, preview, draft/publish/restore dan desain beku pada asli/salinan bernomor. Toggle tampilan tidak mematikan kalkulasi pajak/biaya.25 focused +9 delta/static1088/core37 PASS; satu TEST manual fisik diterima, bukan QZ/full-suite/native proof. Production95a6eda unchanged, addon belum di-install, flag OFF. QZ secure commissioning/signing, native Linux, migration/recovery/full regression, physical canary dan authenticated UAT masih open. Workflow manual Linux baru opsi NOT_RUN, kuota/biaya/registrasi default branch belum ditutup. Jangan menjual fitur ini sebagai production-ready. [Batas implementasi](https://github.com/notyourgas/sagaops/blob/34e292f6359c00103792567f6ef3dc492c4ef43b/docs/sagapos-v2/RECEIPT_DESIGN_IMPLEMENTATION_20261014.md).
+
 ## 2026-10-14 - Arkarupa: validasi penuh dan pemulihan terkini
 
 `CONFIRMED`; [proyek kontraktor](products/sagadevs/ARKARUPA.md) memiliki full69/881 PASS baru pada workspace drive terpisah, snapshot terenkripsi direstore ke disposable, fixture dikembalikan, dan source bundle dipulihkan dengan integritas Git/exact source cocok. Tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, dokumen `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`; kode aplikasi aktif tetap a3c255e. Data utama tidak berubah. Drive sistem/database masih sempit; backup masih satu komputer. Human UAT, review mapping, bukti visual dan target preview tetap OPEN; tidak ada aktivasi production atau pricing baru.

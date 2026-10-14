@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-14 - Versioned receipt design dan batas commissioning
+
+`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Source `34e292f6359c00103792567f6ef3dc492c4ef43b` pada `codex/sagapos-raw-printer-20261014` menambah editor Owner D50 tanpa mengubah D01-D49, append-only outlet template revisions, optimistic conflict, publish/restore dan audit atomik. Auth/scope/CSRF, forced RLS dan validasi bitmap bounded diterapkan. Format menampilkan nilai committed; toggle bukan perubahan kalkulasi. Antrean asli membekukan template/logo, salinan bernomor mempertahankannya; pembacaan dokumen tersimpan berizin mendukung browser manual. Thermal dispatch dokumen tersimpan masih diblokir sampai adapter commissioned.
+
+Local PGlite/HTTP/browser25 PASS plus final delta9 PASS, static/type1088/core37 PASS, logo pixels/Axe/overflow desktop-mobile dan satu TEST fisik manual diterima. Full-suite attempt tidak selesai dengan PASS; dua kegagalan direproduksi pada baseline95a6eda, parallel ACK belum qualified meski isolated PASS. Native PostgreSQL18/Linux belum diuji. Addon DDL/checksum ledger disiapkan, tidak dipasang production; flag default OFF. QZ secure startup gagal, dua koreksi sebelumnya habis, tidak ada insecure fallback atau perlindungan Windows yang dinonaktifkan. Manual-only Linux qualification/YAML guard PASS adalah opsi NOT_RUN, bukan builder/release proof; biaya/kuota/registrasi default branch masih open. Migration/recovery, physical qualification/endurance, canary dan authenticated UAT wajib sebelum aktivasi. Production95a6eda tidak berubah. [Source scope](https://github.com/notyourgas/sagaops/blob/34e292f6359c00103792567f6ef3dc492c4ef43b/docs/sagapos-v2/RECEIPT_DESIGN_IMPLEMENTATION_20261014.md).
+
 ## 2026-10-14 - Read-only dated stock history prepared; capacity prevents qualification
 
 Technical boundary remains a scoped snapshot projection with bounded responses.
