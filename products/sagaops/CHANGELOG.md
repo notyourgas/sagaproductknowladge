@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-10-14 - Perbaikan jarak sobek nota asli dan salinan
+
+`CONFIRMED`; receipt source `1f1110d5e44ef83b7c4a65bdefb8d2c48bdba3c7` pushed. Jarak sobek0..20 kini ikut profil server/revisi persiapan dan snapshot/hash nota asli-salinan; salinan mempertahankan jarak asli, profil lama/default10 kompatibel.12 tes unik Windows/PGlite terfokus PASS/0FAIL/0SKIP termasuk HTTP dan desktop/mobile; static1092/core37/TypeScript PASS. Tidak ada schema/grant/dependency/payment change. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, bukan full atau native finalcandidate qualification.
+
+Alasan: field jarak sebelumnya dibuang saat profil dikirim ke server sehingga snapshot tidak mempertahankannya. Fresh14Okt23.38WIB: capacity admitted dan QZ signed existing process/secure loopback WebSocket lolos validasi sertifikat sistem tanpa bypass. Support resmi sudah membalas meminta console output; tidak mengirim log atau restart QZ yang sudah aktif. Ini menggantikan status capacity/QZ-nonrunning/vendor-response-pending sebelumnya saja; penyebab startup lama belum terbukti. Browser live TEST tertahan panel ekstensi Chrome, belum ada cetak baru. Dispatcher terpercaya NOT_IMPLEMENTED; full/preview320 correction ceilings tetap berlaku, host recovery/guarded release/physical matrix/canary/authenticated UAT OPEN. Production95a6eda/service active unchanged, NOT_BUSINESS_READY; tidak ada CI/purchase/trust/protection/production mutation. Branch receipt tetap terpisah dari stock-closing.
+
 ## 2026-10-14 - Stale-count scoped gate lulus setelah pemulihan kapasitas
 
 `CONFIRMED`; source checkpoint `e8eccdff6878eef6cb476a4095f1dfa44b194226`, exact tested `37f16d8efb827278f52fe652dfb682235e20e785`, app implementatione7915cb unchanged. Owner-authorized capacity recovery completed and fixed admission/continuous guards preserved. Final permitted static correction PASS62.57s:17domain/3HTTP/1mock-browser, current check1096modules/core37/client502 and TypeScript PASS. Native PHP approval/Owner/PG18 test1PASS29.94s including cleanup: stale409 leaves durable snapshot/audit unchanged, independent backendPID read, new count990, one CLOSED period, cold module rehydration and replay without duplication. Total22unique scoped cases (16new+6regression),0FAIL/0SKIP on current inputs; not full-product coverage.
