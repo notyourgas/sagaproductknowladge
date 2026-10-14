@@ -18,7 +18,7 @@ Diverifikasi 14 Oktober 2026. Repository aplikasi bersifat privat; tautan memerl
 | member-frontend | [Source](https://github.com/notyourgas/saga-member/tree/source/current) | `5291abaacde225c570ce89217781dcd49bb530e9` | `SOURCE_PUSHED` |
 | customer-platform | [Source](https://github.com/notyourgas/saga-customer-platform/tree/source/current) | `162ee83d1ee1a29c37443dbaccad52f16ce635e4` | `SOURCE_PUSHED` |
 | pos-application-and-operations | [Source](https://github.com/notyourgas/sagaops/tree/source/current) | `68ce583badfa371ee2093c415eb78d9f48f60c11` | `SOURCE_PUSHED` |
-| pos-foundation-candidate | [Source](https://github.com/notyourgas/sagaops/tree/codex/sagapos-foundation-20261014) | `ddc6bc033a55d38569c320fb84e6c5c2b9009b8d` | `SOURCE_PUSHED / PARTIALLY_VALIDATED / T1_ACCEPTANCE_FAIL / NOT_DEPLOYED` |
+| pos-foundation-candidate | [Source](https://github.com/notyourgas/sagaops/tree/codex/sagapos-foundation-20261014) | `dac9ed93cd46205d901b103fc19a960416119e05` | `SOURCE_PUSHED / SCOPED_LOCAL_PASSES / STOCK_PERIOD_GATE_FAIL / NOT_DEPLOYED` |
 | studio | [Source](https://github.com/notyourgas/sagaview2/tree/source/current-studio) | `6b99cf0780dbe499cbc91b40742c536add7ff786` | `SOURCE_PUSHED` |
 | windows-and-control-plane | [Source](https://github.com/notyourgas/sagabooth/tree/source/current) | `0bdee15db0e0a9a6ebff55573655fe61cdec97ba` | `SOURCE_PUSHED` |
 | application | [Source](https://github.com/notyourgas/sagabio/tree/source/current) | `80b25c15b5d59d3cf4c31cae02c2a8881fc3048b` | `SOURCE_PUSHED` |
