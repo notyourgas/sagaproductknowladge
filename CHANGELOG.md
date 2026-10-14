@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS original stock-flow source-bound proof synchronized
+
+`CONFIRMED`; Andreas Wave3 goal continued. Source012c3a7/tested48452b8 pushed:
+original stock activity follows captured revision/cutoff, pending waste preserves
+status at cutoff, legacy unverified and missing evidence held.5local pure/
+service-mock PASS0FAIL0SKIP. Eight PRODUCT/DOSSIER/productCHANGELOG/MASTER/GAPS/
+SYNC_STATUS/PORTFOLIO/root docs updated; no full/native/browser/operator inflation.
+Production/pricing/schema/grant/payment/printer unchanged. GOAL ACTIVE/
+LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY; native allowance and
+adjusted CSV/correction/workflow/recovery/Linux/behavioral rollback/UAT OPEN.
+Final knowledge SHA main HEAD.
+
+
 ## 2026-10-15 - SagaPOS operational recipe context proof synchronized
 
 `CONFIRMED`; Andreas Wave3 goal continued. Source0c36591/tested d792a74/ae81cea

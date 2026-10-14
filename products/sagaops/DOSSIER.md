@@ -1,5 +1,27 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Original stock-flow high-water and waste status at cutoff
+
+`CONFIRMED`; source012c3a7/tested48452b8 pushed, closing docs-only. Existing Owner
+flow service/report/UI path now applies saved submission source revision plus
+time cutoff to receipt/inspection/movement context. Activity appended later is
+excluded from the original report. Scoped waste review time reconstructs pending
+status at cutoff; inclusive review boundary retained. Expected/physical variance
+is still the frozen snapshot comparison, not a new balance calculation.
+Legacy revision absence is explicitly unverified; missing required source/review
+evidence holds report unavailable. Time policy remains explicit legacy WIB00.00.
+CSV still lists closing/waste status; original/as-adjusted CSV parity NOT_DONE.
+5unique pure/service-mock PASS0FAIL0SKIP1.13s, no correction. Old180s164.51 consumed/
+15.49remaining(focused2.17/native13.32), no reset/new consent; additional180 pending.
+No fresh full check/type/build/browser/native/actual DB/operator proof.
+Production95a6eda/rollback2a18c9d ready unchanged02.17WIB,GATEWAY/SaaSCASH.
+No schema/dependency/grant/business-data/payment/printer mutation. Ponytail reuses
+captured revision and report service rather than adding a parallel read model.
+GOAL ACTIVE/LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY.
+Append-only review/correction/adjusted CSV, role/daily alerts/reconcile and full
+native/recovery/Linux/compatible behavioral rollback/activation/UAT remain OPEN.
+
+
 ## 2026-10-15 - Immutable operational recipe context, scoped local qualification
 
 `CONFIRMED`; source0c36591/tested d792a74/implementation ae81cea pushed.

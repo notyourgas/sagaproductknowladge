@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS original stock activity remains cutoff-bound
+
+`CONFIRMED`; source012c3a7/tested48452b8. Original activity revision+cutoff and
+pending-waste status at cutoff retained; original physical/system comparison
+unchanged.5focused pure/service-mock PASS0FAIL0SKIP, not full/native/browser/UAT.
+Eight docs updated, production/pricing/schema/grant/payment/printer unchanged.
+GOAL ACTIVE/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY; adjusted report/CSV/
+corrections/daily alerts/reconcile/full native/recovery/Linux/activation/UAT OPEN.
+
+
 ## 2026-10-15 - SagaPOS count-time recipe history retained
 
 `CONFIRMED`; source0c36591/tested d792a74/ae81cea, Andreas Wave3 goal active.

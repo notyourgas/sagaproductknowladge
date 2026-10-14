@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS original stock activity respects submission revision
+
+`CONFIRMED`; source012c3a7/tested48452b8 pushed. Original activity bounded by saved
+submission revision and cutoff; later reviews do not erase pending waste as-of
+cutoff. Frozen expected/physical comparison unchanged; legacy/time policy explicit.
+5local pure/service-mock PASS0FAIL0SKIP, not full/native/browser/operator evidence.
+Production95a6eda/rollback2a18c9d ready unchanged02.17WIB,GATEWAY/SaaSCASH.
+GOAL ACTIVE/LOCAL_VALIDATED/IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY.
+No schema/grant/pricing/provider/payment/printer mutation. Funding for bounded
+native checks pending; adjusted report/CSV, corrections/daily alerts/reconcile,
+full qualification/recovery/separate Linux/behavioral rollback/activation/UAT OPEN.
+
+
 ## 2026-10-15 - SagaPOS operational recipe history locally preserved
 
 `CONFIRMED`; source0c36591/tested d792a74/ae81cea pushed. Count snapshot includes

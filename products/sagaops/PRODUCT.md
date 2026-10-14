@@ -1,5 +1,24 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Aktivitas laporan asli mengikuti revisi pengiriman
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source `012c3a772acd361c35efc8d04e783cac76b5cea5`, tested48452b8 pushed;
+closing docs-only. Aktivitas laporan asli memakai cut-off dan revisi source saat
+hitungan dikirim. Pencatatan belakangan tidak masuk ke laporan asli; waste yang
+ditinjau setelah cut-off tetap tercatat menunggu pada waktu cut-off. Snapshot
+fisik/sistem dan selisih tidak dihitung ulang atau dikurangi waste dua kali.
+Legacy tanpa revisi ditandai belum terverifikasi; bukti wajib yang hilang menahan
+laporan. Rentang aktivitas masih dinyatakan WIB00.00, bukan kalender toko baru.
+5focused pure/service-mock tests PASS0FAIL0SKIP; bukan native/full/browser/UAT.
+Production95a6eda/rollback2a18c9d ready unchanged02.17WIB,GATEWAY/SaaSCASH.
+No schema/grant/payment/printer mutation. Laporan setelah koreksi, CSV parity,
+approved append-only disposition/corrections, daily roles/alerts/reconcile,
+native/full recovery/Linux/behavioral rollback/activation/UAT remain OPEN.
+GOAL ACTIVE, bounded next test funding pending.
+[Bukti](https://github.com/notyourgas/sagaops/blob/012c3a772acd361c35efc8d04e783cac76b5cea5/docs/T1_CATALOG_CHOICES_20261014.md).
+
+
 ## 2026-10-15 - Revisi dan formula resep tersimpan bersama hitungan stok
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Original flow locally bounded; adjusted report parity still open
+
+`CONFIRMED`; source012c3a7/tested48452b8. Original activity now follows submission
+revision+cutoff and waste status at cutoff; legacy clearly unverified, missing
+required evidence unavailable.5focused pure/service-mock PASS0FAIL0SKIP.
+`PROPOSAL`:finish approved append-only offline disposition/correction and as-
+adjusted/original CSV parity, daily role/alert policy/reconcile, actual native
+roles/current candidate/full-day/load/restore, separate Linux artifact/compatible
+behavioral rollback/activation/UAT. Original flow still explicit WIB00.00; it
+does not certify configured/mixed outlet calendars. Existing focused2.17/native
+13.32 remain; additional180s question pending, no full-workday failure reset.
+GOAL ACTIVE/NOT_DEPLOYED/NOT_BUSINESS_READY, production/grant/payment unchanged.
+
+
 ## 2026-10-15 - Operational recipe context locally closed; qualification open
 
 `CONFIRMED`; source0c36591/tested d792a74/ae81cea. Base/publication/modifier/

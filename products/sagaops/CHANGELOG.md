@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Original activity frozen to submission source revision
+
+`CONFIRMED`; Andreas active Wave3 goal. Source012c3a7/tested48452b8 pushed.
+Before later-recorded activity could alter old report context; after original
+cutoff+source revision and waste status at cutoff are respected, legacy labeled.
+5focused pure/service-mock PASS0FAIL0SKIP; not native/browser/full/UAT. Eight docs
+updated. No production/schema/grant/payment/printer change. LOCAL_VALIDATED/
+IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY; adjusted report/CSV/correction/
+workflow/native recovery/Linux/behavioral rollback/UAT remain OPEN.
+
+
 ## 2026-10-15 - Count-time operational recipe formulas and revisions
 
 `CONFIRMED`; Andreas active Wave3 goal. Source0c36591/tested d792a74/ae81cea
