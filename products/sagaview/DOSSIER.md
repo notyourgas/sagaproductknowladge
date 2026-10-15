@@ -1,5 +1,26 @@
 # SagaView Dossier
 
+## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
+
+`CONFIRMED`: cleanup disposable berhasil dengan cmdlet native tanpa Force;
+policy/config tidak diubah. Fresh encrypted/offsite/disposable restore bound
+PASS. Backend/Owner `af6c139f4063258300e94f3f23a93a684c4de51b` aktif, 9.638 file
+artifact cocok, service/auth boundary/106 Ran/0 pending PASS, rollback b06780e.
+Studio 446c518 sempat deployed, lalu M3 General hydration FAIL dan guarded code
+rollback ke `c3170e0a5ae785d2164acb3ea0310c1591d2f188` PASS; kandidat/artifact dipertahankan.
+Pengganti Studio `afb3211730513c11b097b7830ce17d367a3fa76c`, branch
+codex/sagaview-access-ssr-20261016: dua file, pricing authority read-only konsisten
+saat SSR/hydration dan regresi baru; local quality366/6access/compiled desktop-mobile
+PASS, source/archive/mirror PASS. Hosted CI exact afb3211 PASS: Windows quality
+dan Linux browser 218/218, 0 skip/0 retry. Native final deployment gates/runtime
+afb3211 NOT_RUN.
+Untuk kandidat ini IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY. Exception Owner DEC-259 hanya 446/af6; panel exact afb/af6
+menunggu jawaban. Next action: penuhi gate exact-pair tersebut, lalu executor
+menjalankan native Studio dan runtime verification; izin deploy umum tetap sah.
+Pricing/provider/env/produk lain tidak berubah; tidak ada transaksi atau DB rollback.
+[Source, artifact, rollback, validasi dan gate](../../docs/releases/sagaview-policy-recovery-access-checkpoint-20261016.md).
+
 ## 2026-10-15 - SagaView: exception exact-pair sah, recovery tetap tertahan
 
 `CONFIRMED`: Andreas menjawab langsung dua keputusan tertunda: exception

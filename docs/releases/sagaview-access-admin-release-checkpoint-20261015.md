@@ -1,5 +1,9 @@
 # SagaView akses/admin: checkpoint deployment
 
+Pembaruan 16 Oktober: cleanup policy sudah selesai; backend baru aktif, Studio
+intermediate di-rollback, kandidat SSR pengganti disiapkan. Bagian di bawah
+adalah histori. [Checkpoint terbaru](sagaview-policy-recovery-access-checkpoint-20261016.md).
+
 ## 2026-10-15 - SagaView: exception exact-pair sah, recovery tetap tertahan
 
 `CONFIRMED`: Andreas menjawab langsung dua keputusan tertunda: exception

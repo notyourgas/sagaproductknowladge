@@ -16,6 +16,12 @@
 
 ## DEC-259 - Exception exact-pair akses/admin SagaView dan cleanup terbatas
 
+Pembaruan 16 Oktober 2026: cleanup authorized telah selesai tanpa Force dan tanpa
+mengubah policy. Exception tetap exact 446/af6; Studio tersebut di-rollback
+setelah M3 hydration FAIL. Source pengganti afb/af6 memerlukan keputusan exact
+baru, belum ada persetujuan. [Hasil dan next action](docs/releases/sagaview-policy-recovery-access-checkpoint-20261016.md).
+
+
 - Tanggal: 15 Oktober 2026; klasifikasi/status CONFIRMED; pemberi keputusan Andreas.
 - Keputusan: terima exception physical-UAT hanya exact Studio 446c518bf2e68b7ecadb54b779769a3ef465c25a
   + backend af6c139f4063258300e94f3f23a93a684c4de51b, dengan risiko perangkat/printer belum diuji.
