@@ -1,5 +1,44 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Wave 3: qualification kandidat exact di Linux lulus, deploy ditahan
+
+`CONFIRMED / LOCAL_LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED`.
+Kandidat `91f18c201fba0d5b51302c7d65eef6aec5a2796c` dan pasangan Platform
+`d1a1a3bb482fb48514ceaeae0fee2b0ffe13da20` lulus runner Linux kanonik unchanged.
+Ledger `4d7671ae5ce78da6ca774c30d2255462fe08eca9`, branch
+`codex/sagapos-foundation-20261014`, pushed; delta akhir ledger-only.
+Before builder baru terbukti runtime; after kandidat exact diuji dengan locked
+npm/Composer, Node22.22.1, PHP8.5.4, PostgreSQL18.6/nonroot dan Chromium.
+
+PASS: check1110modul/37migrasi/510clientfiles/0retiredrefs+TypeScript;
+35tes akses/SaaS;2alur native SaaS fixture-admin/NOBYPASSRLS(runtime), termasuk
+approval/cash/KDS/tenantisolation/dump-restore disposable;26tes native stok/
+collision/count/seal;14tes pure/browser/report/CSV pada390/1440+Axe0. Semua
+0fail/0skip. Jumlah TAP bertumpang tindih, bukan77skenario unik/full Wave3.
+Awal gagal65detik sebelum tes aplikasi karena redirect unduhan Chromium belum
+diizinkan. Bukti retained; koreksi1 hanya menambahkan host unduhan resmi yang
+teramati. Assertion, source, runner kanonik dan batas percobaan tidak dilonggarkan.
+
+Andreas mengizinkan satu sandbox Hobby gratis baru, maksimal15menit2vCPU/4GB,
+tanpa deploy/biaya tambahan. Session nonpersistent/tanpa port/snapshot dihentikan
+454.686detik, statusstopped terbaca independen; terminalqualificationexit0,
+source exact/clean dan cleanupPG/PHP terverifikasi, bukti PC checksum matched.
+Tidak ada upgrade, VM kedua, production credential/data, hosted Actions, packaging,
+artifact rilis, deploy atau aktivasi oleh run ini. Dump/restore sintetis bukan
+bukti encrypted production recovery. Sumber kebijakan biaya:
+[Vercel Hobby Sandbox](https://vercel.com/docs/sandbox/pricing).
+
+Production terpantau15.25.43WIB active`793dd760063de8f48f9d9a987f724d527796e483`,
+rollback`6e43822cd16ae3379d5ab5b03e0204278ec7ff48`,service/readytrue,
+GATEWAY/SaaSCASH tetap. Perubahan rilis berasal lane lain, bukan fitur stok ini.
+Sisa actual-role/alerts/device/calendar/fullworkday/load/restart/recovery dan
+operator UAT tetap OPEN; fullworkdayFAIL3 retained, BUSINESS_READY belum diterima.
+Next: tutup acceptance tersisa, review delta lane production/freeze kandidat,
+lalu packaging/encryptedrestore/compatible rollback; deploy tetap HOLD sesuai
+instruksi terbaru. Sumber: persetujuan Andreas, source/test/terminal/cleanup
+readbacks; sync partially accepted.
+[Ledger penutupan](https://github.com/notyourgas/sagaops/blob/4d7671ae5ce78da6ca774c30d2255462fe08eca9/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Fullscreen kiosk aktif dan terverifikasi di production
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk kontrol fullscreen.

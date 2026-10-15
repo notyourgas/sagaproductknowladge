@@ -1,5 +1,21 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-256 - Satu sandbox gratis baru untuk qualification kandidat, tanpa deploy
+
+- Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
+- Keputusan: gunakan satu sandbox gratis baru maksimal15menit2vCPU/4GB untuk
+  qualification kandidat SagaPOS, tanpa biaya tambahan atau deploy terlebih dahulu.
+- Alasan: lanjut dari kelayakan runtime DEC-253 ke bukti kandidat exact Linux.
+- Alternatif ditolak: upgrade berbayar, VM tambahan, production builder,
+  pengulangan BIOS/restart, melemahkan assertion atau langsung deploy dari localPASS.
+- Hasil: kandidat91f18c2+Platformd1a1a3b lulus canonical+W3 native/browser;
+  satu correction allowlist unduhan resmi, initialFAILretained. Sandbox
+  nonpersistent dihentikan454.686detik,cleanup/evidencechecksum terverifikasi.
+- Batas: tidak ada packaging/artifact/aktivasi/production mutation. Bukan full
+  Wave3, UAT operator, encrypted production recovery atau BUSINESS_READY.
+- Status: dilaksanakan; persetujuan satu session telah dipakai, deploy HOLD.
+- Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-255 - Pasang tombol fullscreen kiosk ke production
 
 - Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
