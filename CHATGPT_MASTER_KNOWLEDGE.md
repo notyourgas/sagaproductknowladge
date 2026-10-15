@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS: perbandingan hitungan koreksi lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source diuji`f7e544e8e9629986590254b1dc6bc3be59675a80`,ledger
+`4830bb0234142d29785ac88cacf456133d929110`,branch
+`codex/sagapos-foundation-20261014`,pushed. Owner kini dapat membandingkan
+snapshot hitungan asli vs hitung ulang dengan cut-off/revisi terpisah dan CSV
+fingerprint/stale409. Draft tidak disebut stok resmi; mixedunit/missing tidak
+dijadikan nol.12focused/browser390/1440/Axe dan1nativePG18 PASS; fullcheck/type
+dipakai hanya pada input app identik, bukan full operator/posting/RBAC acceptance.
+Dua nativeFAIL awal/temuan mobile dicatat dan dikoreksi tanpa melonggarkan gate.
+Production11.04WIB ready,active`95a6eda`,rollback`2a18c9d`,payment unchanged;
+tanpa artifact/deploy/activation/authenticatedUAT. Printer tetap terpisah.
+Ini bukan as-adjusted transaksi stok atau offline disposition. Keduanya serta
+actual role/lowstock/perangkat/calendar, final qualification/recovery/compatible
+rollback, builder Linux terpisah dan operatorUAT tetap OPEN.
+
 ## 2026-10-15 - SagaPOS: browser dahulu, bukan silent printing
 `CONFIRMED`: Andreas memilih dialog cetak browser (DEC-249). Source
 `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` memperbaiki paper/feed TEST dan

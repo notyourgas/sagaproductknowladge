@@ -1,5 +1,27 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - SagaPOS: perbandingan hitungan koreksi lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source diuji`f7e544e8e9629986590254b1dc6bc3be59675a80`,ledger
+`4830bb0234142d29785ac88cacf456133d929110`,branch
+`codex/sagapos-foundation-20261014`,pushed. Owner kini dapat membandingkan
+snapshot hitungan asli vs hitung ulang dengan cut-off/revisi terpisah dan CSV
+fingerprint/stale409. Draft tidak disebut stok resmi; mixedunit/missing tidak
+dijadikan nol.12focused/browser390/1440/Axe dan1nativePG18 PASS; fullcheck/type
+dipakai hanya pada input app identik, bukan full operator/posting/RBAC acceptance.
+Dua nativeFAIL awal/temuan mobile dicatat dan dikoreksi tanpa melonggarkan gate.
+Production11.04WIB ready,active`95a6eda`,rollback`2a18c9d`,payment unchanged;
+tanpa artifact/deploy/activation/authenticatedUAT. Printer tetap terpisah.
+Ini bukan as-adjusted transaksi stok atau offline disposition. Keduanya serta
+actual role/lowstock/perangkat/calendar, final qualification/recovery/compatible
+rollback, builder Linux terpisah dan operatorUAT tetap OPEN.
+
+TODO urutan penutupan:1.disposition/koreksi tertaut sebelum adjusted report;
+2.actual roles/alerts/device-calendar dan qualification final/recovery;
+3.separate authorized Linux builder/artifact lalu guarded activation/operatorUAT.
+Hitungan asli tetap immutable, fullworkdayFAIL3 tidak diulang dengan nama baru.
+
 ## 2026-10-15 - Pilihan browser selesai; driver/paper belum selesai
 `CONFIRMED`: keputusan Andreas DEC-249 menutup pilihan prioritas cetak: dialog
 browser dahulu. Source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385`,5tes terfokus

@@ -1,5 +1,36 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - SagaPOS membandingkan hitungan asli dan hitung ulang
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source diuji `f7e544e8e9629986590254b1dc6bc3be59675a80`, checkpoint ledger
+`4830bb0234142d29785ac88cacf456133d929110`, pushed pada
+`codex/sagapos-foundation-20261014`. Sebelumnya audit pengembalian menyimpan
+hitungan asli tetapi belum tersedia pembanding Owner. Kini laporan read-only
+membandingkan snapshot sebelum pengembalian pertama dengan hitungan terkini,
+memisahkan cut-off/revisi/nama/satuan serta status belum diposting vs resmi.
+Perubahan satuan/observasi hilang tidak dipaksakan menjadi delta atau nol.
+CSV mengikuti fingerprint laporan; perubahan setelah tampilan menghasilkan409.
+Riwayat/alasan tersedia tanpa private actor, submit key atau biaya HPP.
+
+12tes focused termasuk satu journey browser sintetis390/1440, download parity,
+filter/auth/stale response, label angka mobile dan Axe serious/critical0 PASS.
+Satu tes nativePG18 save/return/resubmit/coldread, fakta asli/audit tetap dan
+runtime-role read/revocation PASS. Ini bukan13journey operator, full role matrix
+atau proof canonical posting: metadata posting hanya fixture. Fullcheck1104/core37/
+client503/TypeScript PASS pada app identik; syntax nativefixture final diperiksa.
+Temuan label HP dan dua nativeFAIL awal dipertahankan; koreksi selesai, bukan reset.
+
+Production11.04WIB active`95a6eda`,rollback`2a18c9d`,ready;GATEWAY/SaaSCASH
+unchanged. Tidak ada artifact/deploy/activation/authenticatedUAT baru, perubahan
+stok/schema/grant production, atau penggabungan printer. Laporan ini hanya
+perbandingan observasi fisik, BUKAN laporan transaksi stok setelah koreksi atau
+penyelesaian offline conflict. Sisa:disposition append-only+koreksi tertaut,
+as-adjusted inventory/CSV, actual role/lowstock/device/calendar reconciliation,
+final qualification/load/restart/restore dan compatible rollback/Linux/UAT.
+Builder Linux terpisah belum tersedia/terverifikasi; tidak membuat resource
+berbayar, mengubah BIOS/restart, hosted CI atau memakai servingVPS sebagai builder.
+
 ## 2026-10-15 - Prioritas browser dan perbaikan logo/paper/feed
 `CONFIRMED`, Andreas DEC-249; source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385`
 pushed. TEST desain mengikuti paper/feed; browser menunggu logo dan mengecek sesi
