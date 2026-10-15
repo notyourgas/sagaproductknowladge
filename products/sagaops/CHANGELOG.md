@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Balasan vendor belum menutup trust driver
+`CONFIRMED`: support membalas dengan paket yang byte-identik. Ekstraksi statis
+ulang tanpa menjalankan setup mengonfirmasi XH-80UL/x64 cocok, tetapi trust katalog
+Windows gagal. Hasil teknis ditindaklanjuti dan berstatus disampaikan. Tidak ada
+instalasi, root import, protection bypass atau TEST kertas. Source71581bc/tes
+dan production tidak berubah; runtime fixture aktif. LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Sisa paket/prosedur berbeda yang lolos, lalu pemasangan aman dan satu TEST browser.
+
 ## 2026-10-15 - SagaPOS menautkan kejadian terlambat yang sudah tercakup hitungan final
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

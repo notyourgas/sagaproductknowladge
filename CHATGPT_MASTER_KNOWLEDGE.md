@@ -81,8 +81,9 @@ NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY, bukan cetak fisik.
 Update15Oktober: runtime fixture loopback source71581bc aktif, dashboard dimuat;
 browser80mm/feed15/rawOFF tersimpan lokal. Driver generik Microsoft valid tetapi
 masih Letter; installer resmi unduhan ulang tetap NotSigned. Unit USB kini
-terdeteksi OK, permintaan driver signed ke dukungan resmi sudah disampaikan;
-belum ada paket baru/balasan. Driver grafis/paper dan dialog native belum terverifikasi; tidak menekan
+terdeteksi OK. Vendor membalas dengan paket byte-identik; ekstraksi statis ulang
+mengonfirmasi model/x64 cocok tetapi trust katalog gagal. Tindak lanjut teknis
+sudah disampaikan, belum ada paket yang lolos. Driver grafis/paper dan dialog native belum terverifikasi; tidak menekan
 Cetak akhir atau menginstal driver. Production tidak dimutasi pada pekerjaan ini;
 penerimaan jalur teks bukan bukti logo via browser.
 Signed raw tetap OFF; tidak membeli certificate atau mengubah root/proteksi.

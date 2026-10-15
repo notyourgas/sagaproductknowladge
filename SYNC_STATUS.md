@@ -95,8 +95,9 @@ NOT_BUSINESS_READY. Production `95a6eda` active unchanged melalui read-only chec
 Update15Oktober: runtime fixture71581bc aktif loopback; HTTP/current asset dan
 dashboard Muat pengaturan lulus. Profil browser80mm/feed15/rawOFF tersimpan.
 Driver generik valid Microsoft tetapi Letter/HTML-logo belum lolos; installer
-resmi tetap NotSigned. USB kini terdeteksi OK dan permintaan driver signed ke
-dukungan resmi sudah disampaikan; belum balasan/paket baru. Tidak menekan Cetak akhir,
+resmi tetap NotSigned. USB kini terdeteksi OK. Vendor membalas dengan paket
+byte-identik; ekstraksi statis ulang mengonfirmasi kegagalan trust katalog dan
+tindak lanjut teknis sudah disampaikan. Belum ada paket yang lolos. Tidak menekan Cetak akhir,
 instalasi driver/proteksi atau mutasi production. Delapan dokumen diperbarui
 tanpa source delta/ulang5tes; stock provenance20f43d76 dipertahankan.
 Graphical driver/paper, Linux/recovery/UAT/canary belum selesai.

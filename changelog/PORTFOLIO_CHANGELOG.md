@@ -79,8 +79,9 @@ browser diperbaiki;5tes terfokus+check/type PASS. LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
 Update15Oktober: runtime fixture source71581bc aktif loopback dan dashboard dimuat;
 profil browser80mm/feed15/rawOFF tersimpan. Driver generik Microsoft valid,
-installer resmi masih NotSigned. USB kini terdeteksi OK; permintaan driver signed
-ke dukungan resmi sudah disampaikan, belum balasan/paket baru. Paper/graphical driver
+installer resmi masih NotSigned. USB kini terdeteksi OK; vendor membalas dengan
+paket byte-identik yang gagal trust katalog setelah ekstraksi statis ulang.
+Tindak lanjut sudah disampaikan, belum ada paket yang lolos. Paper/graphical driver
 belum lolos, tidak menekan Cetak akhir atau memutasi production pada pekerjaan ini;
 signed raw OFF. Produk lain, pricing, payment dan pekerjaan stok tidak berubah.
 

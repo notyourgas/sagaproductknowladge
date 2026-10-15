@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - Paket balasan iWare tetap gagal trust
+`CONFIRMED`: balasan vendor diterima, paket diunduh ulang dan byte-identik.
+Ekstraksi statis ulang membuktikan model/x64 cocok, tetapi katalog gagal trust
+Windows; tidak dijalankan atau dipasang. Tindak lanjut teknis sudah disampaikan.
+Delapan dokumen diperbarui, tanpa identifier perangkat/raw chat/evidence privat.
+Source printer71581bc/tes tidak berubah, runtime fixture aktif; tidak ada TEST
+kertas, perubahan proteksi atau mutasi production. LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Sisa paket/prosedur berbeda yang lolos verifikasi lalu satu TEST browser.
+Provenance produk lain dipertahankan; main HEAD adalah provenance knowledge.
+
 ## 2026-10-15 - SagaView: koreksi runner Linux, belum activation
 
 `CONFIRMED`: Studio final `dcb5d49a77ffb56d64ae5a3608e0e30f2b3b0661`

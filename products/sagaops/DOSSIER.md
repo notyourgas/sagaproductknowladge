@@ -83,9 +83,10 @@ Cetak akhir. Tidak ada klaim dialog/paper PASS. Katalog Generic/TextOnly valid
 Microsoft, konfigurasi masih Letter. Unduhan vendor identik dengan paket lama;
 installer NotSigned. Query model pada Microsoft Catalog tidak menemukan hasil,
 bukan bukti seluruh Windows Update habis diperiksa. Unit USB kini terdeteksi OK;
-permintaan teknis driver signed/model-matched ke kontak resmi berstatus
-disampaikan, belum ada balasan/paket baru. Tidak mengirim data privat/attachments
-atau mengulang permintaan. Driver grafis/physical TEST OPEN. Tidak mengimpor root atau menjalankan
+dukungan resmi membalas dengan paket byte-identik. Ekstraksi statis ulang cocok
+XH-80UL/NTamd64, tetapi katalog gagal trust Windows. Tindak lanjut teknis sudah
+disampaikan, menunggu paket/prosedur yang lolos. Tidak mengulang instalasi atau
+mengklaim tautan vendor sebagai trust PASS. Driver grafis/physical TEST OPEN. Tidak mengimpor root atau menjalankan
 installer. Tidak ada source delta/tes ulang atau mutasi production pada tahap ini.
 Production `95a6eda` active unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Prioritas berikut graphical
