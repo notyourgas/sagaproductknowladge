@@ -1,5 +1,32 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - SagaPOS memisahkan antrean offline server dari konsumsi tercatat
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source diuji `f399383c6a6a12878935778d591238cf5ee22df8`, checkpoint ledger
+`0bf65d1c15ca995e595d727dadca6cf7f4d07421`, pushed pada
+`codex/sagapos-foundation-20261014`. Read-only ringkasan antrean offline server
+kini mengikuti scope outlet pada dashboard, Team/SaaS dan readiness, terpisah
+dari konsumsi yang sudah masuk ledger. Pending/review, termasuk collision
+sesudah APPLIED, tidak hilang hanya karena konsumsi kosong. Adapter belum
+tersedia ditandai UNVERIFIED. CLEAR hanya untuk kejadian yang sudah diterima
+server; bukan bukti semua perangkat tersinkron. Tidak menambah penyelesaian
+review/koreksi, replay otomatis, atau mengubah fakta/grant/schema/payment.
+
+Correction1:44tes focused/browser390/1440/Axe serta fullcheck1101/core37/
+TypeScript PASS. InitialFAIL fixture29.40detik tetap disimpan. NativePG18:
+8subkasus+parent PASS, termasuk scope/coldread dan race penjagaan closing;
+bukan9journey baru atau full native role/operator acceptance. Batch270detik
+terpakai105.59, sisa164.41 dengan partition/correction/cleanup tetap terbatas.
+
+Production09.23WIB ready,active`95a6eda`,rollback`2a18c9d`;GATEWAY/SaaSCASH
+tidak berubah. Tidak ada artifact/deploy/activation/authenticatedUAT baru.
+Builder Linux terpisah belum tersedia/terverifikasi; resource berbayar tidak
+dibuat. Gate sisa:disposition/koreksi tertaut+as-adjusted CSV,role/notifikasi/
+rekonsiliasi perangkat, qualification final/load/restart/restore, artifact/
+rollback compatible dan operatorUAT. Pekerjaan printer terpisah tidak digabung.
+
+
 ## 2026-10-15 - Readiness teknis material signing nota
 `CONFIRMED`: source `d66c417512b6c26d8a56753d324b2435bc347790` pushed.
 Service kini memeriksa pasangan key-certificate, fingerprint dan masa berlaku
