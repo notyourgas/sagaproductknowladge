@@ -1,4 +1,11 @@
 # Portfolio Changelog
+## 2026-10-15 - SagaPOS panjang nota Windows: promotion ditahan
+
+CONFIRMED, source `bc1999535f55cba28ce31330f6450fc28f251d13`: actual file-only
+masih132newline setelah footer pada feed15; koreksi root tidak efektif dibatalkan.
+PDF lokal PASS tidak menggantikan gate ini. Tidak deploy/TEST fisik atau perubahan
+proteksi. Next: continuous80mm tepercaya atau RAW guarded qualification.
+
 ## 2026-10-15 - SagaPOS handoff stok dan integrasi release
 
 CONFIRMED: satu journey PG18 nyata+24tes lokal PASS, CSV UTC diperbaiki;

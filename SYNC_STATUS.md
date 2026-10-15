@@ -1,4 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
+## 2026-10-15 - SagaPOS actual Windows panjang halaman FAIL
+
+CONFIRMED / partially accepted: source branch printer
+`bc1999535f55cba28ce31330f6450fc28f251d13` pushed dengan merge produksi793dd76.
+File-only actual gagal targetfeed15; koreksi tidak efektif dibatalkan.
+Production793dd76/ready tidak berubah oleh task; physical/deploy NOT_RUN.
+Delta mencakup PRODUCT/DOSSIER/product changelog/master/GAPS/portfolio/root
+changelog. Tidak ada fakta pricing/payment atau governance baru.
+Next: trusted continuous80mm/guarded RAW qualification; BUSINESS_READY tetap OPEN.
+
 ## 2026-10-15 - SagaPOS native handoff dan kandidat release gabungan
 
 CONFIRMED source bd682399/42f7ab9e, satu journey PG18+24tes PASS lokal, CSV UTC,

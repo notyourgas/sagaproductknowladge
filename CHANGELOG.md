@@ -1,4 +1,14 @@
 # Saga Product Knowledge Changelog
+## 2026-10-15 - Sync kegagalan aktual panjang nota Windows
+
+CONFIRMED dari executor/tests dan source pushed
+`bc1999535f55cba28ce31330f6450fc28f251d13`; knowledge commit main HEAD.
+Sebelum actual Windows OPEN, kini FAIL:132newline sesudah footer/feed15;
+koreksi root dibatalkan. Production793dd76/ready tidak dimutasi, physical TEST
+tidak dikirim. Perbarui SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, GAPS,
+SYNC_STATUS dan portfolio. Blocker: media continuous80mm tepercaya/RAW guarded
+beserta actual output matrix sebelum promotion. Tidak ada pricing/payment baru.
+
 ## 2026-10-15 - Sync SagaPOS handoff dan kandidat Wave 3
 
 CONFIRMED dari source bd682399/42f7ab9e dan tes/runtime aktual. Produk, dossier,

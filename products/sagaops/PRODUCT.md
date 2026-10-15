@@ -1,4 +1,15 @@
 # SagaOPS Product Knowledge
+## 2026-10-15 - Panjang nota browser Windows belum lolos
+
+CONFIRMED: kualifikasi aplikasi aktual ke sink file-only masih menghasilkan
+dua halaman dan132newline setelah footer pada feed15. Headless PDF PASS tidak
+berarti jalur Windows PASS. Koreksi root print tidak efektif dan dibatalkan.
+Source `bc1999535f55cba28ce31330f6450fc28f251d13` pushed; mencakup rekonsiliasi
+rilis fullscreen, bukan deployment. Production tetap793dd76/ready saat dicek.
+Tidak ada TEST fisik tambahan atau perubahan driver/proteksi. Rilis panjang
+nota HOLD sampai media continuous80mm tepercaya atau RAW guarded lolos
+short/long/feed0/15; auto-cut yang diterima sebelumnya tetap fakta terpisah.
+
 ## 2026-10-15 - Wave 3: handoff native dan kandidat integrasi, deploy HOLD
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Perbaikan operasional

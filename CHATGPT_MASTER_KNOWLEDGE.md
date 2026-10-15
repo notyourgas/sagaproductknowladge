@@ -1,4 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
+## 2026-10-15 - SagaPOS: panjang nota Windows masih HOLD
+
+CONFIRMED: actual aplikasi/Chrome ke file-only sink gagal target feed15
+(132newline setelah footer); PDF lokal PASS bukan acceptance driver.
+Source `bc1999535f55cba28ce31330f6450fc28f251d13` pushed, belum deployed.
+Production793dd76 tetap ready saat dicek. Tidak ada TEST fisik, penggantian
+driver, bypass proteksi atau QZ activation. Perlu media continuous80mm
+tepercaya atau RAW guarded yang lolos actual output sebelum promotion.
+
 ## 2026-10-15 - SagaPOS Wave 3: handoff native dan kandidat integrasi
 
 CONFIRMED: handoff stok nyata+CSV UTC lulus lokal; kandidat42f7ab9e mempertahankan

@@ -1,4 +1,17 @@
 # SagaOPS Changelog
+## 2026-10-15 - Qualification panjang nota Windows gagal; deploy HOLD
+
+- CONFIRMED, sumber: uji aplikasi aktual dan source
+  `bc1999535f55cba28ce31330f6450fc28f251d13` pushed branch printer.
+- Sebelum: hanya PDF lokal PASS, actual Windows OPEN. Sesudah: file-only actual
+  FAIL dengan132newline sesudah footer pada feed15; koreksi root dibatalkan.
+- Runtime loopback berhasil; source merekonsiliasi fullscreen produksi dan
+ 13focused tests PASS. Tidak mengubah production793dd76/ready, payment/pricing,
+  driver/proteksi atau mengirim TEST fisik.
+- Dampak: jangan menjanjikan panjang nota tepat15baris pada browser driver ini.
+  Next: qualify continuous80mm tepercaya atau RAW guarded dan matrix output.
+- Terdampak: PRODUCT, DOSSIER, master, GAPS, SYNC_STATUS, portfolio/root changelog.
+
 ## 2026-10-15 - Handoff stok nyata, CSV UTC dan kandidat gabungan
 
 CONFIRMED: source bd682399 -> kandidat42f7ab9e pada branch release terpisah.

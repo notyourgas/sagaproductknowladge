@@ -1,4 +1,17 @@
 # SagaOPS Dossier
+## 2026-10-15 - Gate aktual Windows: panjang halaman FAIL
+
+CONFIRMED, sumber aplikasi/tests dan file-only qualification pada source
+`bc1999535f55cba28ce31330f6450fc28f251d13`: managed loopback runtime berhasil
+digunakan. Native Chrome dengan generic signed driver, Letter/no-break dan
+header/footer browser OFF menghasilkan2pages/713bytes/146LF/0FF,132LF setelah
+footer, walaupun profile80mm/feed15. Root min-height/page correction lulus
+3tests tetapi capture identik; koreksi dibatalkan. Sebelumnya merge produksi
+793dd76 dengan kandidat8d38ad5 lulus13focused tests. Ini gate FAIL, bukan
+perbaikan accepted. Tidak deploy/TEST fisik/aktivasi QZ/mutasi bisnis.
+Next: media continuous80mm tepercaya atau existing RAW guarded, output
+short/long/feed0/15 aktual sebelum promotion. Detail restricted tidak dipublikasi.
+
 ## 2026-10-15 - Handoff stok dan kandidat integrasi Wave 3
 
 CONFIRMED: handoff PG18 nyata dan perbaikan CSV UTC lulus lokal; kandidat gabungan

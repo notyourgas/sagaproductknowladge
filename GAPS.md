@@ -1,4 +1,13 @@
 # Gaps dan Keputusan Founder
+## 2026-10-15 - Blocker panjang nota kini actual Windows FAIL
+
+CONFIRMED: source `bc1999535f55cba28ce31330f6450fc28f251d13` mencatat actual
+Chrome/file-only2pages dan132newline setelah footer pada feed15. Koreksi root
+print tidak mengubah output dan dibatalkan. Tidak deploy atau TEST fisik.
+OPEN: media continuous80mm tepercaya atau existing RAW guarded perlu qualified
+short/long/feed0/15. Owner pekerjaan: printer executor; jangan mengganti syarat
+ini dengan PDF headless atau form pendek tetap. Cutter accepted tetap terpisah.
+
 ## 2026-10-15 - SagaPOS Wave 3 residual setelah handoff native
 
 CONFIRMED: native handoff+CSV UTC lulus; kandidat integrasi mempertahankan lane
