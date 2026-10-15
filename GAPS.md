@@ -1,5 +1,20 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - SagaView: koreksi runner Linux, belum activation
+
+`CONFIRMED`: Studio final `dcb5d49a77ffb56d64ae5a3608e0e30f2b3b0661`
+(`notyourgas/sagaview2`, `codex/sagaview-linux-npm-20261015`) menambahkan
+scoped npm pin runner/workflow; application dan lock unchanged dari `01bdf06`.
+Backend kandidat tetap `76e01c7`. 11 tes kontrak dan immutable archive binding
+455 file PASS. CI final **FAILURE; quality success; browser 177 PASS/24 FAIL/9 SKIP**; CI intermediate install FAIL.
+VPS disposable install/client build PASS, SSR heap FAIL; kapasitas terbatas.
+Source production tetap Studio `6f28cfee` dan backend `ee3ddeee`, service aktif.
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Browser Linux failure menjadi NO_GO; recovery execution/config/retensi juga
+belum siap. Gate physical UAT/Owner exception harus exact pasangan final; fresh recovery,
+kapasitas build aman dan runtime acceptance masih wajib. Pricing/provider/pilot
+tidak berubah. [Artifact, histori dan satu langkah berikutnya](docs/releases/sagaview-linux-runner-checkpoint-20261015.md).
+
 ## 2026-10-15 - SagaPOS: review terlambat dengan bukti hitungan final
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
