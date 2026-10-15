@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Tombol layar penuh kiosk selesai secara lokal
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Source `70c3a0a4ac748816f2a0615c349d446d0a160ed0`, branch
+`codex/sagapos-kiosk-fullscreen-20261015`, pushed. Atas permintaan Andreas,
+header kiosk memiliki tombol masuk/keluar layar penuh. Pergantian mode dan layar
+menjaga catatan, keranjang dan sesi; tanpa permintaan bisnis tambahan. Tombol
+bersembunyi saat browser tidak mendukung, dan penolakan browser memberi pesan.
+Header HP dirapikan dengan nama aksesibel tetap tersedia.
+
+28 tes browser kiosk PASS, termasuk tiga tes fullscreen serta25 regresi UI/UX.
+Native enter/exit, perubahan fullscreen dari luar tombol, draft/cart, layar390/
+720/1080, geometri sentuh56px, Axe serius/kritis0, penolakan/tidak didukung dan
+JavaScript syntax/diff PASS. Screenshot lokal diperiksa; bukan UAT perangkat fisik.
+Belum dirilis ke production: otorisasi patch ingress sebelumnya terpisah dari
+rilis aplikasi. Tidak ada perubahan backend/schema/stock/payment/dependency,
+pricing/positioning atau klaim BUSINESS_READY. Langkah berikutnya adalah rilis
+UI memakai runner dan gate produk yang berlaku setelah scope deployment jelas.
+[Catatan source](https://github.com/notyourgas/sagaops/blob/70c3a0a4ac748816f2a0615c349d446d0a160ed0/docs/KIOSK_FULLSCREEN_20261015.md).
+
 ## 2026-10-15 - Perbaikan format TEST browser aktif setelah arsip cache
 
 `CONFIRMED / PRODUCTION_DEPLOYED / NOT_BUSINESS_READY`. Source

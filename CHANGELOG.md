@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - Tombol fullscreen kiosk: local validated
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Source `70c3a0a`, branch perbaikan fullscreen pushed.28 tes browser PASS termasuk
+native fullscreen, draft/cart/session, layout390/720/1080 dan fallback. Tombol
+belum berada di production; pekerjaan ini tidak melakukan deployment/mutasi
+production. Product/Dossier/Changelog/Portfolio/Master/Gap/Sync diperbarui.
+Rilis UI dan acceptance perangkat tetap langkah terpisah; BUSINESS_READY tidak
+berubah. Milestone ingress pemulihan loading sebelumnya tetap dipertahankan.
+
 ## 2026-10-15 - Perbaikan format TEST browser aktif setelah arsip cache
 
 `CONFIRMED / PRODUCTION_DEPLOYED / NOT_BUSINESS_READY`. Source
