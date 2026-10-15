@@ -1,6 +1,27 @@
 # Saga Product Knowledge Changelog
 
 
+## 2026-10-15 - TEST fisik keluar, format belum diterima
+
+`CONFIRMED`: foto Andreas menunjukkan kertas TEST tercetak tetapi kolom menempel,
+simbol berubah dan blok tampak berulang. Ini bukti output fisik, BUKAN acceptance
+format/logo/feed. Driver tetap Generic/Text Only, media Windows Letter.
+Source `dc0e7dcbe471f0c5cdb722bb862b1f5dfacadb81` memperbaiki TEST bawaan yang
+sebelumnya mencetak HTML pratinjau layar. Kini memakai formatter nota ASCII
+32/48kolom dan newline feed yang sama dengan desain nota, tanpa teks petunjuk.
+3tes browser desktop/mobile dan check1102/core37/TypeScript PASS. Empat PDF uji
+58/80mm masing-masing1halaman/1header TEST; bukan proof perbaikan kertas/driver.
+Penyebab pengulangan fisik belum dipastikan; tidak otomatis kirim ulang.
+
+Fix `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; production tetap3cdea61 aktif.
+Preflight kapasitas memperkirakan perlu sekitar0.8GB tambahan untuk staging;
+belum membuat artifact/CI baru, tidak melemahkan ambang atau menghapus backup.
+Next: bebaskan minimal1GB melalui cache build yang terbukti aman, paketkan dan
+rilis terjaga, lalu satu TEST fisik dengan driver/prosedur yang diterima Windows.
+Trust vendor, server-template/QZ activation dan full acceptance tetap OPEN.
+
+
+
 ## 2026-10-15 - SagaPOS web dirilis untuk TEST cetak browser
 
 `CONFIRMED / PRODUCTION_DEPLOYED / NOT_BUSINESS_READY`. Atas permintaan langsung

@@ -13,6 +13,8 @@
   atau aktivasi schema/template. Driver grafis dan penyimpanan desain server OPEN.
 - Status: PRODUCTION_DEPLOYED; NOT_PRODUCTION_ACTIVATED untuk hardware;
   NOT_BUSINESS_READY. Histori gagal dan batas correction lama tetap.
+- Update fisik: kertas TEST keluar tetapi format belum diterima. Perbaikan
+  source dc0e7dc hanya LOCAL_VALIDATED, belum deployed; production tetap3cdea61.
 - Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
 
 ## DEC-250 - SagaView physical-UAT evidence exception exact pasangan Oktober
