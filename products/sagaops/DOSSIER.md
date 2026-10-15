@@ -1,4 +1,18 @@
 # SagaOPS Dossier
+## 2026-10-15 - Native RAW file-only qualification
+
+CONFIRMED, source `c40d573dee5ba2936af517a63151d9791da65c2e` pushed branch
+printer. Renderer cutMode NONE(default) menjaga bytes lama; GS_V_B_0 opt-in
+menambah satu cutter sesudah feed. Tidak ada aktivasi atau append setelah hash.
+Matrix36case58/80 x0/5/15 x6variasi memverifikasi satu terminator+feed, logo,
+footer/toggle dan isi panjang. Winspool RAW ke file-only nonshared mempertahankan
+semua byte/hash; queue diagnostic dibersihkan.26tests/check1105/core37/TS PASS.
+Actual QZ/physical NOT_RUN: listener semula terbuka lalu absent, handshake belum
+lulus; satu vendor-console diagnostic tanpa config change tidak mendapat
+exception usable. Manual-host comparison diminta. Jangan menyamakan transport
+fixture atau Windows file sink dengan acceptance bridge/paper. Berikutnya
+stableQZ/TLS, actualfilematrix, versionedcuttercommissioning, physical/canary/release.
+
 ## 2026-10-15 - Gate aktual Windows: panjang halaman FAIL
 
 CONFIRMED, sumber aplikasi/tests dan file-only qualification pada source

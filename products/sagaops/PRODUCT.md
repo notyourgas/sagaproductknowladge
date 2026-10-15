@@ -1,4 +1,14 @@
 # SagaOPS Product Knowledge
+## 2026-10-15 - RAW length bench lulus; transport masih HOLD
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: source
+`c40d573dee5ba2936af517a63151d9791da65c2e` menambahkan cutter opt-in eksplisit,
+default legacy tetap.36variasi RAW lolos byte/hash identity ke sink Windows
+file-only;26affected tests/check1105/core37/TypeScript PASS. Ini bukan realQZ
+atau kertas. QZ listener tidak stabil; kontrol manual/vendor masih diperlukan.
+Belum ada wiring cutter ke UI/profile/signed snapshots, TEST fisik atau deploy.
+Production793dd76 tetap ready. Browser/Letter length FAIL tidak berubah.
+
 ## 2026-10-15 - Panjang nota browser Windows belum lolos
 
 CONFIRMED: kualifikasi aplikasi aktual ke sink file-only masih menghasilkan

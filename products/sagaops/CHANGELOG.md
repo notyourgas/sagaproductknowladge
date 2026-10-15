@@ -1,4 +1,15 @@
 # SagaOPS Changelog
+## 2026-10-15 - RAW feed dan opt-in cutter teruji lokal
+
+CONFIRMED dari executor/test source
+`c40d573dee5ba2936af517a63151d9791da65c2e`, pushed branch printer.
+36case actual Winspool/file-only byte-identik;26affected tests dan static/types
+PASS. Default renderer/snapshot lama unchanged, cutter opt-in belum wired ke
+UI/profile/signer. Tidak deploy/physical TEST/driver/protection/payment change.
+Production793dd76 ready; QZ stability/TLS, actual transport, versionedcommissioning
+dan paper acceptance OPEN. Dampak pada PRODUCT/DOSSIER/master/GAPS/SYNC/portfolio
+dan root changelog. Next: manual-host/vendor control sebelum bridge qualification.
+
 ## 2026-10-15 - Qualification panjang nota Windows gagal; deploy HOLD
 
 - CONFIRMED, sumber: uji aplikasi aktual dan source

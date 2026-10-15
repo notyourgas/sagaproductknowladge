@@ -1,4 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
+## 2026-10-15 - SagaPOS RAW bench: byte preservation PASS
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED, source
+`c40d573dee5ba2936af517a63151d9791da65c2e`:36RAWcases lolos Windowsfile-only,
+26tests/check/types PASS. Explicit cutter opt-in belum diaktifkan pada UI/
+profile/signer; legacybytes tetap. QZ/TLS belum stabil, physical/deploy NOT_RUN.
+Browser/Letter defect tetap FAIL, production793dd76 ready tidak dimutasi.
+
 ## 2026-10-15 - SagaPOS: panjang nota Windows masih HOLD
 
 CONFIRMED: actual aplikasi/Chrome ke file-only sink gagal target feed15

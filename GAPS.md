@@ -1,4 +1,14 @@
 # Gaps dan Keputusan Founder
+## 2026-10-15 - RAW byte gate PASS, commissioned transport OPEN
+
+CONFIRMED: source `c40d573dee5ba2936af517a63151d9791da65c2e` menutup36case
+WindowsRAW/file-only byte/hash gate; cutter opsi eksplisit/defaultNONE. Tidak
+menutup actualQZ/physical acceptance. QZ listener hilang saat pemeriksaan;
+vendor meminta console, manualhostcomparison diminta sekali. OPEN berurutan:
+stableTLS/version, actualapp-QZfileonly, versionedcutterprofile/terminal/snapshot/
+signing, dedicatedRAWqueue tanpa drivercutter, physical/recovery/canary/release.
+Tidak mengulang CSS, mereset correction budget atau bypass Windows protections.
+
 ## 2026-10-15 - Blocker panjang nota kini actual Windows FAIL
 
 CONFIRMED: source `bc1999535f55cba28ce31330f6450fc28f251d13` mencatat actual

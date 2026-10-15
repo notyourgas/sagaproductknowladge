@@ -1,4 +1,14 @@
 # Saga Product Knowledge Changelog
+## 2026-10-15 - Sync native RAW length bench
+
+CONFIRMED dari executor/test source
+`c40d573dee5ba2936af517a63151d9791da65c2e` pushed; knowledge main HEAD.
+Sebelum RAW gate belum diukur; kini36case nativefile-only byte/hash PASS,
+26tests/check/types PASS. Opt-in cutter tidak mengubah bytes lama atau
+mengaktifkan UI/profile/signedsnapshot. Product/dossier/master/GAPS/SYNC/
+portfolio/changelog diperbarui. Production793dd76 ready tidak dimutasi;
+actualQZ/TLS/physical/release OPEN. Next: manualhost/vendor stability control.
+
 ## 2026-10-15 - Sync kegagalan aktual panjang nota Windows
 
 CONFIRMED dari executor/tests dan source pushed

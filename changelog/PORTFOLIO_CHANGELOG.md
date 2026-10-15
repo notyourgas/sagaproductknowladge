@@ -1,4 +1,11 @@
 # Portfolio Changelog
+## 2026-10-15 - SagaPOS RAW bench maju, rilis masih HOLD
+
+CONFIRMED source `c40d573dee5ba2936af517a63151d9791da65c2e`:36file-only RAW
+cases byte-identik,26tests/check PASS. Cutter opt-in defaultlegacyunchanged;
+belum UI/profile/signedsnapshot activation. ActualQZ/TLS dan paper OPEN;
+production793dd76 tidak berubah, tanpa TEST fisik atau protection bypass.
+
 ## 2026-10-15 - SagaPOS panjang nota Windows: promotion ditahan
 
 CONFIRMED, source `bc1999535f55cba28ce31330f6450fc28f251d13`: actual file-only
