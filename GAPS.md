@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - SagaBook: kandidat UI/UX tertahan gate release
+
+`CONFIRMED / PACKAGED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`: candidate SagaBook `ec704103` (implementation `0d6d1bc1`)
+sudah source-packaged, graph aplikasi identik; 3.101 canonical file cocok.
+CI exact SHA FAIL (13 feature test dan isolated dependency audit); dua pending
+production migration belum release/rollback allowlisted dan recovery belum
+fresh/bound. Runtime `2b56868` / `20261005125235-2b56868` sehat dan tidak berubah.
+NO_GO; human UAT/provider/perangkat tetap belum diterima. Source/push bukan release.
+[Laporan artifact, CI, migration dan langkah unblock](docs/releases/sagabook-uiux-deploy-checkpoint-20261015.md).
+
 ## 2026-10-15 - SagaView: checkpoint executor dan HTTPS
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /

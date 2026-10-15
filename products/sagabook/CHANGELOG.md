@@ -1,5 +1,25 @@
 # SagaBook Changelog
 
+## 2026-10-15 - SagaBook: kandidat UI/UX tertahan gate release
+
+`CONFIRMED`: candidate `ec7041032b83ef93c333fcafa5fcf80f242c1847`, branch
+`codex/sagabook-uiux-finalization-20261015`, repo `notyourgas/sagabook`,
+implementation `0d6d1bc1f9183de33c8b1b44e394b798de8ea1cb`. Selisih setelah
+implementation hanya dokumentasi/evidence. Source artifact `20261015042748-ec70410`
+siap dan 3.101 canonical file cocok; delivery PACKAGED_NOT_DEPLOYED,
+activation NOT_PRODUCTION_ACTIVATED, human UAT BELUM DILAKUKAN,
+BUSINESS_READY=false. Source candidate tetap utuh, tanpa merge atau deploy.
+
+Quality run38678280188 gagal: MySQL contract PASS, 13 feature test gagal dan
+audit dependency isolated service gagal; browser CI sesudahnya tidak berjalan.
+Production read-only tetap `2b5686820866f43694f9ec9595d3c39f638db3a6` /
+`20261005125235-2b56868`, health/service aktif; catatan source September di
+bawah adalah histori cutoff lama. 146 migration applied, seluruh checksum lama
+cocok. Dua pending aktual (commerce snapshot Member dan deadline DATETIME)
+belum release/rollback allowlisted; fresh recovery juga stale/wrong binding.
+Keputusan NO_GO; bukan aktivasi integrasi atau penerimaan operator/provider.
+[Laporan artifact, CI, migration dan langkah unblock](../../docs/releases/sagabook-uiux-deploy-checkpoint-20261015.md).
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
