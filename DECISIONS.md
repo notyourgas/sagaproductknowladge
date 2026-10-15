@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-257 - Exception physical UAT exact pasangan SagaView final
+
+- Tanggal: 15 Oktober 2026.
+- Klasifikasi/status: CONFIRMED.
+- Keputusan: Andreas sebagai Owner menerima exception evidence physical UAT
+  hanya Studio c3170e0a5ae785d2164acb3ea0310c1591d2f188 + backend
+  b06780e320b60efb3b27048f9099e39c07e61545 dan risiko perangkat/printer belum diuji.
+- Alasan: kandidat diperbaiki setelah CI/recovery/capacity gate; receipt exact
+  pasangan sebelumnya dipertahankan sebagai histori dan tidak diperluas.
+- Alternatif: menunggu canonical physical UAT exact pasangan sebelum rilis.
+- Dampak: gate teknis tetap wajib; runtime kini terverifikasi, physical UAT,
+  pilot dan BUSINESS_READY tetap belum diterima. Tidak mengaktifkan integrasi.
+- Pemberi keputusan: Andreas, jawaban langsung Owner pada chat deployment.
+- Dokumen terkait: [laporan rilis](docs/releases/sagaview-production-activation-20261015.md), products/sagaview/PRODUCT.md.
+
 ## DEC-256 - Satu sandbox gratis baru untuk qualification kandidat, tanpa deploy
 
 - Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
