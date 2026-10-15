@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS dialog browser dan logo/paper/feed
+`CONFIRMED`, Andreas DEC-249; source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385`.
+Before: signed material menjadi jalur berikut; TEST desain selalu80mm dan dialog
+tidak menunggu logo. After: prioritaskan browser terpisah, TEST mengikuti58/80mm
+serta feed dan dialog menunggu logo/current session.5tes terfokus+check/type PASS;
+bukan native/paper.9file product/dossier/changelog/portfolio/master/gaps/decision/
+sync/root diperbarui; main HEAD menyimpan provenance knowledge.
+Production `95a6eda` active unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Sisa runtime/graphical driver/paper,
+Linux/recovery/UAT/canary. Tidak ada perubahan produk lain atau lisensi/provider.
+
 ## 2026-10-15 - SagaPOS explicit certificate-bound connect sebelum dispatch
 `CONFIRMED`, source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6`, parent `ab045b4`.
 Client memakai public certificate/identity dan secure connect sebelum klaim job;

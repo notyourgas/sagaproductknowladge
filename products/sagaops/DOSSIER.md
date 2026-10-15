@@ -1,5 +1,22 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Kualifikasi dialog browser, bukan aktivasi printer
+`CONFIRMED`, keputusan Andreas DEC-249 dan source
+`71581bc0fba4ef6dcbafb91f14d03de89eb1e385`, parent `b5b7a08`.
+Helper browser bersama dipakai TEST, nota legacy dan dokumen tersimpan. Logo harus
+selesai decode dalam5detik, lalu sesi/percobaan diperiksa kembali; error/timeout
+tidak membuka dialog. HTML legacy mendapat feed; renderer template mempertahankan
+feed aslinya tanpa menggandakan. TEST desain kini mengikuti 32/48kolom58/80mm.
+5tes terfokus PASS, termasuk desktop1486/mobile390, feed0/5/15, logo tertunda/rusak/
+timeout, dialog ditutup, tanpa QZ/write bisnis/claim native. Snapshot tersimpan
+mempertahankan paper/feed/template walau profil PC berubah. Check/type PASS.
+Browser print di tes diganti counter; screenshot print-media bukan dialog native,
+PDF pagination, driver atau paper. Dua correction fixture selesai; batas full/320
+historis tidak direset. Tidak ada runtime interaktif, driver baru atau cetak nyata.
+Production `95a6eda` active unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Prioritas runtime sah dan graphical
+driver/TEST fisik; Linux/recovery/Owner UAT/canary tetap terpisah dan OPEN.
+
 ## 2026-10-15 - SagaPOS memisahkan antrean offline server dari konsumsi tercatat
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

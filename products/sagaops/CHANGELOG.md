@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Prioritas browser dan perbaikan logo/paper/feed
+`CONFIRMED`, Andreas DEC-249; source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385`
+pushed. TEST desain mengikuti paper/feed; browser menunggu logo dan mengecek sesi
+sebelum dialog.5tes terfokus+check/type PASS, bukan physical/native acceptance.
+Production `95a6eda` active unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Runtime/graphical driver/paper,
+Linux/recovery/UAT/canary OPEN. Tidak ada signing purchase/root/activation baru.
+
 ## 2026-10-15 - Secure connect terikat certificate sebelum klaim job
 `CONFIRMED`, source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6` pushed.
 Stored-receipt action kini explicit connect dengan binding sesi/fingerprint dan

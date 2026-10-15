@@ -1,5 +1,19 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Dialog cetak browser diprioritaskan
+`CONFIRMED`: Andreas memilih dialog cetak browser lebih dahulu, tanpa membeli
+material signing QZ. Source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` pushed
+pada branch printer. TEST desain mengikuti 58/80 mm dan feed terpilih; semua jalur
+browser menunggu logo, membatalkan saat sesi berubah, dan tidak memanggil QZ.
+Nota tersimpan tetap memakai snapshot asli, bukan profil terbaru.
+5tes terfokus Windows/PGlite/browser dan check1102/core37/TypeScript PASS;
+dua correction fixture dicatat, bukan full/native/paper acceptance.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Production `95a6eda` active unchanged. Runtime uji interaktif,
+driver grafis terpercaya untuk HTML/logo dan physical TEST tetap OPEN; jalur teks
+yang pernah diterima tidak membuktikan graphical printing. Signed raw tetap OFF,
+tidak ada fallback otomatis dari hasil UNKNOWN atau lisensi/root override.
+
 ## 2026-10-15 - SagaPOS memisahkan antrean offline server dari konsumsi tercatat
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

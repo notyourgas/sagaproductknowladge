@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-249 - SagaPOS prioritaskan dialog cetak browser tanpa signing QZ
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-15 |
+| Topik | Jalur cetak nota SagaPOS |
+| Keputusan | Prioritaskan dialog cetak browser karena kepemilikan certificate signing QZ belum diketahui. |
+| Alasan | Andreas memilih opsi browser agar pekerjaan tidak menunggu material signing atau pembelian. |
+| Alternatif | Melanjutkan signed QZ setelah sumber certificate resmi tersedia. |
+| Dampak | Source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` mengoreksi TEST paper/feed dan logo-ready guard;5tes terfokus+check/type PASS. Bukan izin unsigned fallback, root override, pembelian, perubahan profil outlet otomatis atau aktivasi printer. |
+| Pemberi keputusan | Andreas / founder, jawaban eksplisit prioritas dialog browser |
+| Status | CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY; production95a6eda active unchanged |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
+
 ## DEC-248 - Qualification Linux lambat dilewati; packaging dan pengaman production dipertahankan
 
 - Tanggal:13 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED; status ACTIVE.

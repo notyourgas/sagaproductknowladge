@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Pilihan browser selesai; driver/paper belum selesai
+`CONFIRMED`: keputusan Andreas DEC-249 menutup pilihan prioritas cetak: dialog
+browser dahulu. Source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385`,5tes terfokus
+dan check/type PASS. Signing material bukan prasyarat jalur browser ini, tetapi
+tetap dibutuhkan untuk melanjutkan signed dispatcher; raw tidak diaktifkan.
+`UNVERIFIED`: runtime interaktif, graphical driver untuk HTML/logo, dialog native,
+paper/feed fisik. Generic text-path acceptance tidak menutup gap graphical.
+TODO: runtime sah, trusted graphical driver atau tanggapi keterbatasan perangkat,
+satu TEST nonfinansial lalu physical/Owner UAT. Linux/recovery dan gate full/320
+historis tetap OPEN, tidak direset. Production `95a6eda` active unchanged;
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+
 ## 2026-10-15 - SagaPOS memisahkan antrean offline server dari konsumsi tercatat
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

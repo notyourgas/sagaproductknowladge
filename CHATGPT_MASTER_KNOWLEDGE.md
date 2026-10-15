@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS: browser dahulu, bukan silent printing
+`CONFIRMED`: Andreas memilih dialog cetak browser (DEC-249). Source
+`71581bc0fba4ef6dcbafb91f14d03de89eb1e385` memperbaiki paper/feed TEST dan
+logo-ready/session guard;5tes terfokus+check/type PASS. Nota tersimpan tetap
+menggunakan snapshot. Ini LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY, bukan cetak fisik.
+Production `95a6eda` active unchanged. Runtime interaktif dan graphical driver/
+paper belum terverifikasi; penerimaan jalur teks bukan bukti logo via browser.
+Signed raw tetap OFF; tidak membeli certificate atau mengubah root/proteksi.
+
 ## 2026-10-15 - SagaPOS memisahkan antrean offline server dari konsumsi tercatat
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

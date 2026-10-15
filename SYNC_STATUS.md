@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-15 - Prioritas dialog browser diterima
+`CONFIRMED`, accepted dalam scope lokal: Andreas DEC-249, source
+`71581bc0fba4ef6dcbafb91f14d03de89eb1e385` pushed, parent `b5b7a08`.
+5tes terfokus Windows/PGlite/browser dan static1102/core37/TypeScript PASS;
+dua correction fixture dicatat.9dokumen diperbarui. Tidak mengulang full/320.
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY. Production `95a6eda` active unchanged melalui read-only check.
+Runtime interaktif/graphical driver/paper, Linux/recovery/UAT/canary belum selesai.
+Tidak ada key provision, pembelian, root override, real print atau deploy baru.
+
 ## 2026-10-15 - SagaPOS memisahkan antrean offline server dari konsumsi tercatat
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

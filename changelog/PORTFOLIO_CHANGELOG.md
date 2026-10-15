@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS memprioritaskan dialog cetak browser
+`CONFIRMED`, keputusan Andreas DEC-249 dan source
+`71581bc0fba4ef6dcbafb91f14d03de89eb1e385`. Paper/feed TEST dan logo-ready guard
+browser diperbaiki;5tes terfokus+check/type PASS. LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Production `95a6eda` active unchanged. Belum paper/driver/runtime interaktif;
+signed raw OFF. Produk lain, pricing, payment dan pekerjaan stok tidak berubah.
+
 ## 2026-10-15 - SagaPOS certificate-bound connect lokal
 `CONFIRMED`, source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6`: explicit secure
 connect sebelum klaim,84tes/check PASS. Native permission tidak disetujui otomatis;
