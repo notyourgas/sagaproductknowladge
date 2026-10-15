@@ -1,5 +1,27 @@
 # SagaOPS Dossier
 
+
+## 2026-10-15 - SagaPOS web dirilis untuk TEST cetak browser
+
+`CONFIRMED / PRODUCTION_DEPLOYED / NOT_BUSINESS_READY`. Atas permintaan langsung
+Andreas, source printer `3cdea61f0bdfc932ec460e3987ab294aef8f821f` kini aktif;
+rollback `95a6eda74593b731361a5c65c70f829276f33180`. Delta dari71581bc hanya workflow
+packaging. Paket Linux immutable/checksum, encrypted backup/disposable restore,
+recovery boot-rollback-reboot, aktivasi expected-current dan monitor PASS.
+Sesi Owner aktual tetap masuk Kasir setelah rilis; profil80mm/feed15/QZOFF disimpan
+pada browser production. Satu TEST dipanggil dan dialog cetak Chrome dikonfirmasi
+Andreas; hasil kertas belum terkonfirmasi. Tidak ada kirim ulang/transaksi uji.
+
+Core37, GATEWAY, reporting dan SaaS tenant-scoped tetap. Ini rilis kode web,
+BUKAN commissioning printer. Driver grafis vendor masih gagal trust; tidak ada
+instalasi/root import/protection bypass. Penyimpanan desain nota di server masih
+OFF, tanpa DDL/aktivasi template. Langkah berikut: selesaikan dialog TEST dan
+verifikasi kertas/driver aman, lalu rilis schema+template melalui recovery khusus.
+Full/preview320 dan physical/UAT tetap OPEN; bukti5focused/check sebelumnya bukan
+full acceptance. Pekerjaan stok foundation tetap terpisah, tidak ikut dirilis.
+Entri printer terdahulu adalah histori sebelum rilis ini. Lihat DEC-251.
+
+
 ## 2026-10-15 - SagaPOS menautkan kejadian terlambat yang sudah tercakup hitungan final
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

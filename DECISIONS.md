@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-251 - SagaPOS deploy web terlebih dahulu untuk TEST cetak
+
+- Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
+- Keputusan: deploy jalur web agar TEST cetak browser dapat dicoba sekarang.
+- Alasan: memprioritaskan uji operator aktual setelah validasi source terfokus.
+- Alternatif: menunggu seluruh commissioning driver/QZ dan desain server selesai.
+- Dampak: kode web3cdea61 aktif, rollback95a6eda; packaging/recovery/monitor PASS.
+  Owner aktual masuk Kasir, profil80mm/feed15/QZOFF tersimpan dan dialog TEST
+  dikonfirmasi Andreas. Tidak ada transaksi uji atau perubahan payment/provider.
+- Batas: bukan waiver trust driver, proteksi Windows, hasil kertas, full acceptance
+  atau aktivasi schema/template. Driver grafis dan penyimpanan desain server OPEN.
+- Status: PRODUCTION_DEPLOYED; NOT_PRODUCTION_ACTIVATED untuk hardware;
+  NOT_BUSINESS_READY. Histori gagal dan batas correction lama tetap.
+- Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-250 - SagaView physical-UAT evidence exception exact pasangan Oktober
 
 - Tanggal: 15 Oktober 2026; pemberi keputusan Andreas / Owner; klasifikasi CONFIRMED.
@@ -28,7 +43,7 @@
 | Alternatif | Melanjutkan signed QZ setelah sumber certificate resmi tersedia. |
 | Dampak | Source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` mengoreksi TEST paper/feed dan logo-ready guard;5tes terfokus+check/type PASS. Bukan izin unsigned fallback, root override, pembelian, perubahan profil outlet otomatis atau aktivasi printer. |
 | Pemberi keputusan | Andreas / founder, jawaban eksplisit prioritas dialog browser |
-| Status | CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY; production95a6eda active unchanged |
+| Status | Historis71581bc LOCAL_VALIDATED; kode web kini PRODUCTION_DEPLOYED di3cdea61 sesuai DEC-251. Hardware NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY; penyimpanan desain server OFF. |
 | Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
 
 ## DEC-248 - Qualification Linux lambat dilewati; packaging dan pengaman production dipertahankan
