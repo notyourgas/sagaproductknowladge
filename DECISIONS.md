@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-255 - Pasang tombol fullscreen kiosk ke production
+
+- Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
+- Keputusan: langsung deploy tombol fullscreen dan verifikasi penggunaannya.
+- Alasan: kiosk perlu bisa memenuhi layar dari kontrol yang tersedia di aplikasi.
+- Alternatif: fitur tetap source-only/lokal atau memakai shortcut browser saja.
+- Hasil: source793dd76 aktif, rollback6e43822; browser Owner membuktikan fullscreen
+  masuk/perpindahan menu/keluar, tanpa order/payment baru. Desain nota tetap aktif.
+- Batas: tidak memberi izin transaksi nyata, perubahan stok/provider atau
+  mengabaikan recovery/capacity. Bukan OS kiosk lockdown atau UAT seluruh perangkat.
+- Status: PRODUCTION_ACTIVATED untuk kontrol fullscreen; BUSINESS_READY tidak berubah.
+- Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-254 - Aktifkan desain nota custom pada dashboard SagaPOS
 
 - Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.

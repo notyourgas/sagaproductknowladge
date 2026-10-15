@@ -1,5 +1,38 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Fullscreen kiosk aktif dan terverifikasi di production
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk kontrol fullscreen.
+Andreas meminta langsung dipasang dan dipastikan bisa dipakai. Source aktif
+`793dd760063de8f48f9d9a987f724d527796e483`, rollback
+`6e43822cd16ae3379d5ab5b03e0204278ec7ff48`. Rilis nota terbaru digabungkan dahulu;
+fitur template tetap enabled/POSTGRES, health ready=true, core schema dan GATEWAY
+serta ingress tetap. Tombol di header memakai fullscreen native; masuk/keluar dan
+perpindahan layar tidak memuat ulang sesi atau mengosongkan pesanan.
+
+Browser production Owner Chromium720x1280 PASS: masuk fullscreen -> pilih makan
+di tempat -> katalog tetap fullscreen -> keluar; tiga aset cocok persis dengan
+source,26 produk katalog, nol error JS/skrip dan nol permintaan order/payment.
+Satu bootstrap sesi sementara; akses anonim kiosk tetap401.28 tes UI sebelumnya
+serta tiga tes terfokus pada merge terbaru terikat input UI yang sama; lima tes
+schema/grant tambahan PASS. Pipeline Linux dan native PG18 restore/candidate/
+rollback/reboot serta guarded activation PASS.
+
+Native recovery awal9dec802 ditahan karena fixture grant umum menimpa sifat
+append-only addon nota. Koreksi terbatas pada helper grant restore, tidak
+menjalankan perubahan grant/schema pada database production. Kegagalan awal
+retained; correction1 native lulus pada source final. Gate kapasitas tidak
+bypassed: ekstrak kode lama idle dibersihkan setelah arsip immutable diverifikasi
+dan tetap dipertahankan; active/rollback dan backup database dilindungi. Fixture
+gagal milik run ini diarsipkan terenkripsi dan terkompresi, isi ekuivalen serta
+checksum salinan PC terverifikasi sebelum cleanup. Backup/restore dan salinan
+ciphertext PC terverifikasi; ini bukan full offsite DR acceptance.
+
+[Catatan source dan rilis](https://github.com/notyourgas/sagaops/blob/6fdd92af71c825d0a0a53f8463e7ed1661d5a5cf/docs/KIOSK_FULLSCREEN_20261015.md).
+Commit catatan6fdd92a hanya dokumentasi; runtime tetap793dd76. Status ini mengganti
+fullscreen lokal/belum-deploy sebelumnya saja. Hardware/non-Chromium/checkout
+nyata dan BUSINESS_READY tidak disimpulkan; pricing/positioning tidak berubah.
+
 ## 2026-10-15 - Desain nota custom aktif di dashboard Owner
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` hanya untuk modul desain
