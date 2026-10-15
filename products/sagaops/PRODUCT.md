@@ -1,5 +1,22 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Nota: auto-cut terbukti, kandidat panjang halaman lokal
+
+CONFIRMED: Andreas menerima auto-cut native partial-cut dan satu TEST browser,
+tetapi ekor nota tetap panjang setelah koreksi user/global no-break. Output
+Chrome ke sink file-only membuktikan81LF/0FF; menghapus form-feed bukan solusi.
+Source `8d38ad56bc1e03745cdeb2c543164d3125e4303e` pushed pada branch printer:
+tinggi halaman browser kini dihitung dari isi+feed lewat CSS eksternal, CSP tetap.
+Affected24tes PASS, extended browser3PASS, static1103/core37/typesPASS;
+8PDF satu halaman berlebar58/80mm PASS. TEST80/feed15 sekitar116-118mm,
+archive panjang238-258mm. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED saja;
+actual Chrome-driver sizing/feed15 dan BUSINESS_READY belum diterima.
+Tidak ada deploy aplikasi, transaksi, bypass proteksi/driver atau aktivasi QZ.
+Antrean file-only temporary dibersihkan; queue fisik/cutter dipertahankan.
+Next: reconcile fresh release, validasi aplikasi ke file-only untuk short/long/
+feed0/15 sebelum rilis dan TEST fisik berikut. Pricing/payment tetap. Sumber:
+[catatan source](https://github.com/notyourgas/sagaops/blob/8d38ad56bc1e03745cdeb2c543164d3125e4303e/docs/PRINTER_AUTOCUT_COMPATIBILITY_20261015.md).
+
 ## 2026-10-15 - Wave 3: qualification kandidat exact di Linux lulus, deploy ditahan
 
 `CONFIRMED / LOCAL_LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED`.
