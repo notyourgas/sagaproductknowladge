@@ -22,7 +22,10 @@ rollback, builder Linux terpisah dan operatorUAT tetap OPEN.
 `71581bc0fba4ef6dcbafb91f14d03de89eb1e385`. Paper/feed TEST dan logo-ready guard
 browser diperbaiki;5tes terfokus+check/type PASS. LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
-Production `95a6eda` active unchanged. Belum paper/driver/runtime interaktif;
+Update11.12WIB: runtime fixture source71581bc aktif loopback dan dashboard dimuat;
+profil browser80mm/feed15/rawOFF tersimpan. Driver generik Microsoft valid,
+installer resmi masih NotSigned; USB belum hadir saat cek. Paper/graphical driver
+belum lolos, tidak menekan Cetak akhir atau memutasi production pada pekerjaan ini;
 signed raw OFF. Produk lain, pricing, payment dan pekerjaan stok tidak berubah.
 
 ## 2026-10-15 - SagaPOS certificate-bound connect lokal

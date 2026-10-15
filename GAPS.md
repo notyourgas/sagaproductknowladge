@@ -27,9 +27,13 @@ Hitungan asli tetap immutable, fullworkdayFAIL3 tidak diulang dengan nama baru.
 browser dahulu. Source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385`,5tes terfokus
 dan check/type PASS. Signing material bukan prasyarat jalur browser ini, tetapi
 tetap dibutuhkan untuk melanjutkan signed dispatcher; raw tidak diaktifkan.
-`UNVERIFIED`: runtime interaktif, graphical driver untuk HTML/logo, dialog native,
+Update11.12WIB: runtime fixture loopback source71581bc aktif; HTTP/current asset
+dan dashboard Muat pengaturan lulus. Profil browser80mm/feed15/rawOFF tersimpan.
+Installer unduhan resmi masih NotSigned; katalog generik Microsoft valid tetapi
+konfigurasi Letter bukan HTML/logo acceptance. Unit USB belum hadir saat cek.
+`UNVERIFIED`: graphical driver untuk HTML/logo, dialog native,
 paper/feed fisik. Generic text-path acceptance tidak menutup gap graphical.
-TODO: runtime sah, trusted graphical driver atau tanggapi keterbatasan perangkat,
+TODO: unit menyala/USB hadir, trusted graphical driver atau tanggapi keterbatasan perangkat,
 satu TEST nonfinansial lalu physical/Owner UAT. Linux/recovery dan gate full/320
 historis tetap OPEN, tidak direset. Production `95a6eda` active unchanged;
 IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.

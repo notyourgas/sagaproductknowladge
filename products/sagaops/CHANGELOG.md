@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Runtime fixture cetak browser aktif, driver masih tertahan
+`CONFIRMED`, source printer `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` unchanged.
+Runtime loopback, asset current dan dashboard Muat pengaturan terverifikasi;
+profil80mm/feed15/rawOFF tersimpan lokal. Unduhan resmi identik, installer
+NotSigned. Driver generik valid Microsoft tetapi Letter/HTML-logo belum lolos;
+unit USB belum hadir saat cek. Tidak memasang driver/menekan Cetak akhir atau
+memutasi production. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Graphical driver/physical TEST OPEN.
+
 ## 2026-10-15 - SagaPOS membandingkan hitungan asli dan hitung ulang
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.

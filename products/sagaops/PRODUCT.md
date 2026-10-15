@@ -40,8 +40,14 @@ Nota tersimpan tetap memakai snapshot asli, bukan profil terbaru.
 5tes terfokus Windows/PGlite/browser dan check1102/core37/TypeScript PASS;
 dua correction fixture dicatat, bukan full/native/paper acceptance.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
-NOT_BUSINESS_READY`. Production `95a6eda` active unchanged. Runtime uji interaktif,
-driver grafis terpercaya untuk HTML/logo dan physical TEST tetap OPEN; jalur teks
+NOT_BUSINESS_READY`. Production `95a6eda` tidak dimutasi oleh pekerjaan printer.
+Update11.12WIB: runtime fixture sudah aktif di loopback pada source yang sama;
+HTTP/asset current serta login dan Muat pengaturan dashboard dikonfirmasi.
+Profil browser80mm/feed15/QZOFF tersimpan lokal. Driver generik memiliki katalog
+Microsoft valid, tetapi masih Letter dan bukan bukti HTML/logo. Paket resmi yang
+diunduh ulang identik; installer tetap NotSigned. Unit USB belum hadir, tidak ada
+instalasi driver atau penekanan Cetak akhir. Driver grafis dan physical TEST OPEN;
+jalur teks
 yang pernah diterima tidak membuktikan graphical printing. Signed raw tetap OFF,
 tidak ada fallback otomatis dari hasil UNKNOWN atau lisensi/root override.
 

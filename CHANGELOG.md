@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - Runtime uji browser aktif dan driver diperiksa ulang
+`CONFIRMED`: atas izin eksplisit Andreas, runtime fixture loopback source printer
+`71581bc0fba4ef6dcbafb91f14d03de89eb1e385` aktif; HTTP/current asset dan dashboard
+Muat pengaturan terverifikasi. Profil80mm/feed15/rawOFF disimpan lokal. Paket
+resmi identik, installer NotSigned; katalog generik Microsoft valid tetapi Letter
+dan HTML/logo belum terverifikasi. Unit USB belum hadir saat cek. Tidak menekan
+Cetak akhir, menginstal driver, mengubah trust atau memutasi production. Delapan
+file disinkronkan dari20f43d76; main HEAD menjadi provenance, source/tes tidak
+berubah. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY. Sisa unit hadir, trusted graphical driver dan satu physical
+TEST, kemudian UAT/recovery/canary sesuai scope. Produk/stok lain dipertahankan.
+
 ## 2026-10-15 - SagaPOS: perbandingan hitungan koreksi lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
