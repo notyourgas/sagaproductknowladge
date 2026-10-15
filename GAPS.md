@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Kiosk pulih dari layar menyiapkan menu
+
+`CONFIRMED`. Routing aset kiosk production sudah diperbaiki dan diverifikasi
+melalui browser Owner sampai daftar menu. Source fix `fe3490d`, laporan `e0a8b3f`,
+branch perbaikan sudah pushed. Aplikasi production tetap `3cdea61`, sehat dan
+GATEWAY; hanya ingress berubah dengan backup. Login Owner tetap wajib. Tidak ada
+order/payment/stock mutation, full checkout/hardware UAT atau BUSINESS_READY baru.
+Product, Dossier, product/portfolio/root changelog, Master, Gaps dan Sync diperbarui.
+Knowledge milestone ini diterima untuk defect startup; source renderer berikutnya
+harus membawa fix dari branch perbaikan. Milestone Wave3 lainnya tetap terpisah.
+
 ## 2026-10-15 - SagaPOS membaca bukti peninjauan offline yang sudah tersimpan
 
 `CONFIRMED`: explicit receipt read-back terbaru50 selesai lokal pada `517a3b3`;

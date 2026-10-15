@@ -1,5 +1,29 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Kiosk pulih dari layar menyiapkan menu
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk perbaikan
+routing aset kiosk saja. Andreas menyetujui penerapan dan verifikasi. Sebelumnya
+login Owner berhasil tetapi modul menu gagal dimuat; setelah patch, browser
+terautentikasi lulus halaman awal -> pilih makan di tempat -> daftar menu.
+Katalog berisi 26 produk; empat kartu kategori Classic terlihat pada uji720x1280,
+tanpa error JavaScript atau permintaan pesanan/pembayaran. Pemeriksaan sintaks
+Nginx lengkap, lima tes terfokus dan delapan kasus HTTP terisolasi PASS.
+
+Source fix `fe3490d363c2f003f4cd802cbb69dd196b1a1017`; catatan verifikasi
+`e0a8b3f04648c21d054aa17e01ccd83835c59bc2`, branch
+`codex/sagapos-kiosk-loading-20261015`, pushed. Hanya konfigurasi ingress
+production berubah; aplikasi tetap `3cdea61f0bdfc932ec460e3987ab294aef8f821f`,
+proses aplikasi tidak direstart, health ready=true dan GATEWAY tetap. Login Owner
+kiosk tetap wajib; aset tenant publik tetap tersedia. Cadangan konfigurasi
+tersimpan dan terikat checksum. Tidak ada migrasi, perubahan stok atau transaksi
+bisnis; uji browser hanya membuat satu sesi kiosk sementara.
+
+Perbaikan ini tidak membuktikan checkout nyata, acceptance perangkat fisik,
+seluruh Wave3 atau BUSINESS_READY. Source fix masih di branch perbaikan, sehingga
+penggabung source/renderer berikutnya perlu membawa commit tersebut. Pricing,
+positioning dan blocker lain tetap. [Catatan source](https://github.com/notyourgas/sagaops/blob/e0a8b3f04648c21d054aa17e01ccd83835c59bc2/docs/KIOSK_SHARED_UI_LOADING_FIX_20261015.md).
+
 ## 2026-10-15 - SagaPOS membaca bukti peninjauan offline yang sudah tersimpan
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
