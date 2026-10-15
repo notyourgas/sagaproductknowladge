@@ -1,5 +1,36 @@
 # Portfolio Changelog
 
+## 2026-10-15 - Perbaikan format TEST browser aktif setelah arsip cache
+
+`CONFIRMED / PRODUCTION_DEPLOYED / NOT_BUSINESS_READY`. Source
+`dc0e7dcbe471f0c5cdb722bb862b1f5dfacadb81` aktif, rollback
+`3cdea61f0bdfc932ec460e3987ab294aef8f821f`. Default TEST kini memakai formatter
+ASCII32/48kolom dengan pemisahan harga dan newline feed, bukan HTML preview layar
+atau teks petunjuk. Sebelumnya fix hanya lokal; blocker staging kini ditutup.
+
+Andreas mengizinkan arsip dahulu: konten cache dibandingkan dengan sumber,
+salinan terenkripsi di PC lolos checksum, lalu hanya cache idle terverifikasi
+dibersihkan, sekitar 1,06 GB pulih. Database, backup, release aktif/rollback dan
+shared Git dipertahankan. Tidak memakai servingVPS sebagai builder atau belanja
+kapasitas. Paket Linux exact-source, fresh encrypted backup/disposable restore,
+candidate boot-rollback-reboot, guarded activation dan monitor PASS. Schema/core37,
+GATEWAY dan SaaS tenant-scoped tetap; konfigurasi ingress kiosk tidak diubah.
+Public JS cocok exact source; actual Owner setelah reload tetap masuk Kasir,
+profil80mm/feed15/rawOFF terjaga. Perubahan stock/offline lane lain tidak ikut.
+
+Bukti source3focused browser/check dan4PDF sintetis dipertahankan, bukan full-suite
+PASS. Tidak ada TEST kertas baru dikirim. Hasil kertas sebelumnya belum diterima;
+pengulangan fisik belum dipastikan, Generic/TextOnly masih media Windows Letter,
+trust driver vendor/grafis/cutter dan acceptance perangkat tetap OPEN. Langkah
+berikut: satu TEST operator copies1, konfirmasi kolom/footer/ruang sobek di kertas.
+Server-template/header/logo/footer/toggle persistence dan signed QZ tetap OFF,
+memerlukan qualification schema/recovery serta Owner UAT terpisah. Full/preview320
+histori dan budget tetap; monitor offsite UNVERIFIED, bukan sertifikasi DR.
+Pricing/positioning/payment boundary tidak berubah. Sumber: persetujuan langsung
+Andreas, commit exact, native release receipts dan readback runtime/Owner aktual.
+Snapshot lama sebelum aktivasi di bawah bersifat historis untuk lane printer.
+
+
 ## 2026-10-15 - Kiosk pulih dari layar menyiapkan menu
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk perbaikan

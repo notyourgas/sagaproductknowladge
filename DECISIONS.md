@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-252 - Arsip cache terverifikasi sebelum cleanup staging SagaPOS
+
+- Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
+- Keputusan: arsipkan cache build lama ke PC, verifikasi dahulu, baru bersihkan
+  hanya cache terbukti tidak digunakan untuk memulihkan minimal sekitar1GB.
+- Batas: database, backup, release aktif/rollback dan shared Git tidak disentuh;
+  bukan izin belanja storage, servingVPSbuilder atau melemahkan guard/trust.
+- Hasil: arsip terenkripsi lolos content-compare dan checksum PC; sekitar1.06GB
+  pulih. Fresh package/backup-restore/recovery/guarded activation PASS. Source
+  dc0e7dc production, rollback3cdea61; format TEST browser diperbaiki.
+- Status: keputusan dilaksanakan. Tidak ada TEST baru; hardware, driver grafis,
+  template persistence dan signed QZ belum diaktifkan; NOT_BUSINESS_READY.
+- Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-251 - SagaPOS deploy web terlebih dahulu untuk TEST cetak
 
 - Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
@@ -14,7 +28,8 @@
 - Status: PRODUCTION_DEPLOYED; NOT_PRODUCTION_ACTIVATED untuk hardware;
   NOT_BUSINESS_READY. Histori gagal dan batas correction lama tetap.
 - Update fisik: kertas TEST keluar tetapi format belum diterima. Perbaikan
-  source dc0e7dc hanya LOCAL_VALIDATED, belum deployed; production tetap3cdea61.
+  source dc0e7dc kini PRODUCTION_DEPLOYED sesudah DEC-252, rollback3cdea61.
+  Belum ada TEST fisik baru pada rilis perbaikan; acceptance hardware tetap OPEN.
 - Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
 
 ## DEC-250 - SagaView physical-UAT evidence exception exact pasangan Oktober
@@ -45,7 +60,7 @@
 | Alternatif | Melanjutkan signed QZ setelah sumber certificate resmi tersedia. |
 | Dampak | Source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` mengoreksi TEST paper/feed dan logo-ready guard;5tes terfokus+check/type PASS. Bukan izin unsigned fallback, root override, pembelian, perubahan profil outlet otomatis atau aktivasi printer. |
 | Pemberi keputusan | Andreas / founder, jawaban eksplisit prioritas dialog browser |
-| Status | Historis71581bc LOCAL_VALIDATED; kode web kini PRODUCTION_DEPLOYED di3cdea61 sesuai DEC-251. Hardware NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY; penyimpanan desain server OFF. |
+| Status | Historis71581bc LOCAL_VALIDATED; kode web kini PRODUCTION_DEPLOYED di dc0e7dc sesuai DEC-251/252, rollback3cdea61. Hardware NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY; penyimpanan desain server OFF. |
 | Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
 
 ## DEC-248 - Qualification Linux lambat dilewati; packaging dan pengaman production dipertahankan
