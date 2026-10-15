@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS membaca bukti peninjauan offline yang sudah tersimpan
+
+`CONFIRMED / partially accepted`. Sinkronisasi receipt read-back SagaPOS terbaru50:
+before hasil tak pasti harus ditebak; after bukti durable dan form tahan read-back.
+Source `517a3b3`, ledger `8c601f2`, source pushed; knowledge checkpoint main HEAD.
+File: products/sagaops/PRODUCT.md, DOSSIER.md, CHANGELOG.md; Master Knowledge,
+GAPS.md, SYNC_STATUS.md dan Portfolio Changelog. Focused/static/type/browser PASS;
+native mapped only to unchanged inputs. Source-only, production printer unchanged,
+no Wave3 activation/UAT/BUSINESS_READY. Linux builder dan residual stock-impact/
+adjusted-report/operational acceptance tetap OPEN. Tidak memuat bukti privat.
+
+
 
 ## 2026-10-15 - TEST fisik keluar, format belum diterima
 

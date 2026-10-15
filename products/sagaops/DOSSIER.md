@@ -1,5 +1,42 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - SagaPOS membaca bukti peninjauan offline yang sudah tersimpan
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source final diuji `517a3b313d1e19ce4d8dfee6eabdfb92e094dfe8`, ledger
+`8c601f2b60fa5d3f54962e5452e486cc3e450fef`, branch
+`codex/sagapos-foundation-20261014`, pushed. Owner aktif pada outlet kini membaca
+bukti keputusan tersimpan: alasan, waktu, referensi review/hitungan dan sidik bukti.
+Respons hilang tidak lagi harus ditebak dari hilangnya kasus; tidak ada tambahan
+efek stok/pembayaran. Alasan tetap utuh ketika diketik selama read-back; revisi
+berubah meminta konfirmasi fisik ulang. Maksimal50 keputusan terbaru, bukan
+seluruh histori; tidak ditemukan bukan bukti sukses atau semua perangkat sinkron.
+
+Final4focused/pure/browser PASS, fullstatic1107/core37/client504/zero retiredrefs
+serta TypeScript PASS. Browser390/1440, Axe serious/critical0, lost-before/after
+commit, delayedGET, escaped text, cold reload/noautoPOST dan boundary HTTP PASS.
+NativePG18 pada `f14c8d30a9dc5c830a0d3ef34e69e1d5d6f078a3`:17TAP PASS,
+termasuk parent/pure/regresi, bukan17journey operator. Current runtime-role
+nonsuperuser/NOBYPASSRLS, foreign tenant/outlet, revoked role, immutable nextperiod,
+50/51window, transaction rollback dan independent concurrency PASS. Bukti native
+dipetakan ke final hanya untuk delta UI/browser/ledger; input native/domain/schema
+identik. Initial resourceFAIL dipertahankan, tidak melemahkan batas RAM/assertion.
+
+Production14.02WIB tetap active `3cdea61`, rollback `95a6eda`, readytrue,
+GATEWAY/SaaSCASH. Rilis printer adalah lane terpisah; perubahan stok ini TIDAK
+ikut terdeploy, tanpa artifact/aktivasi/authenticated UAT baru. Tidak ada perubahan
+schema/grant/data/payment production atau dependency. Deep security NOT_REQUESTED.
+
+Masih OPEN: koreksi stock-impact/collision dan laporan transaksi asli vs setelah
+koreksi/CSV; histori lengkap di luar50 terbaru; actualrole/lowstock/device/calendar;
+wholeworkday/load/restart/encryptedrestore/kompatibilitas rollback dan operatorUAT.
+Cloud existing dilaporkan offline/no shell; inventory existing SagaPOS Vercel
+project0named/0sessions. Belum ada Linux builder qualified. Node22 yang tersedia
+pada dokumentasi provider bukan bukti exact Node22.22.1/PHP8.5/PG18 atau izin biaya.
+Tidak provision resource, menjalankan hosted GitHub, memakai servingVPSbuilder,
+mengubah BIOS atau menggabungkan source printer. Tidak ada skor total baru.
+
+
 
 ## 2026-10-15 - TEST fisik keluar, format belum diterima
 
