@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Dispatcher nota browser tervalidasi lokal
+`CONFIRMED`: source `fe12a727c588964347cea7eb2b9a96cec8751f6a` pushed pada
+branch printer. Aksi nota tersimpan Kasir kini memakai dispatcher bertanda tangan
+dalam pengujian lokal saja, dengan penguncian dua tab dan penanda percobaan yang
+bertahan setelah reload. Status pengiriman langsung diperbarui; hasil belum pasti
+tidak dikirim ulang otomatis dan salinan tetap bernomor dengan pemeriksaan operator.
+67 tes terfokus Windows/PGlite dan static1100/core37/TypeScript PASS, termasuk
+browser desktop/mobile sintetis; bukan actual QZ, Linux, paper atau full-UAT.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Production `95a6eda` tetap active, read-only recheck.
+Certificate/trust/handshake nyata, qualification final dan physical canary masih
+terbuka; tidak ada impor certificate, biaya baru atau aktivasi printer production.
+
 ## 2026-10-15 - SagaPOS ekspor alur stok yang ditampilkan dan qualification terfokus
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.

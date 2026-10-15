@@ -1,5 +1,23 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Batas dispatcher nota bertanda tangan
+`CONFIRMED`, source `fe12a727c588964347cea7eb2b9a96cec8751f6a`.
+Alur nota tersimpan Kasir mengikat bytes dokumen, antrean persis, revisi terminal,
+lease dan attempt. Signature mencakup lookup printer serta print; callback hanya
+menerima permintaan tersebut sekali. Web Locks dan transaksi IndexedDB mencegah
+dua tab/reload mengirim job sama dari workflow ini. Tidak ada unsigned/browser
+fallback, drain job lama atau pengulangan pembayaran saat hasil tidak pasti.
+Pengiriman dilaporkan sebagai SUBMITTED, kertas tetap NOT_VERIFIED; UI memperbarui
+status dan menonaktifkan kirim ulang. Salinan memerlukan alasan dan cek operator.
+67 tes terfokus Windows/PGlite PASS serta check1100/core37/TypeScript PASS.
+Browser1486/390, socket SDK dan pemeriksaan aksesibilitas dialog memakai fixture,
+bukan perangkat/native trust atau authenticated Owner production.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Production `95a6eda` active dan tidak dimutasi.
+Sisa: pilihan mode/trust, loader key-certificate serta secure handshake nyata,
+qualification Linux/native/recovery, reviewed unblock gate lama, physical UAT,
+endurance dan canary. Issuance-once dan ledger browser bukan exactly-once kertas.
+
 ## 2026-10-15 - SagaPOS ekspor alur stok yang ditampilkan dan qualification terfokus
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.

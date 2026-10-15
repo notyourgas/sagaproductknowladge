@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS dispatcher nota masih lokal
+`CONFIRMED`: source `fe12a727c588964347cea7eb2b9a96cec8751f6a` menambahkan
+dispatcher bertanda tangan pada nota tersimpan Kasir, penguncian dua tab/reload
+dan UI pengiriman yang tidak menyamakan terkirim dengan kertas tercetak.
+67 tes terfokus lokal dan static1100/core37/TypeScript PASS; browser/socket sintetis
+bukan actual QZ/Linux/full-UAT. `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`.
+Production `95a6eda` active unchanged. Certificate/trust/handshake nyata,
+qualification final dan physical canary masih terbuka. Tidak mengubah pricing,
+provider pembayaran, posisi produk, produk lain atau kontrak stok yang dicatat terpisah.
+
 ## 2026-10-15 - SagaPOS ekspor alur stok yang ditampilkan dan qualification terfokus
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.

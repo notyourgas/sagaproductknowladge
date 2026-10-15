@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS dispatcher nota dan pencegahan kirim ganda
+`CONFIRMED`; sumber implementasi/tests `fe12a727c588964347cea7eb2b9a96cec8751f6a`.
+Sebelumnya signer server saja; kini alur nota tersimpan Kasir memiliki dispatcher
+lokal bertanda tangan, guard dua tab/reload dan status SUBMITTED terbarui.
+Alasan: mencegah workflow mengirim ulang hasil yang belum pasti tanpa mengubah uang.
+67 tes terfokus dan static1100/core37/TypeScript PASS; bukan native/paper/full-UAT.
+Impact: tiga dokumen sagaops, portfolio, master, gaps, sync dan root changelog.
+Production `95a6eda` unchanged; certificate/handshake, qualification final dan
+physical commissioning masih terbuka. Tidak ada keputusan founder/biaya baru.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Knowledge main HEAD sesudah push menjadi provenance sinkronisasi.
+
 ## 2026-10-15 - SagaPOS ekspor alur stok yang ditampilkan dan qualification terfokus
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.

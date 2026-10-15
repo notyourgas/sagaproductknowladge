@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Nota tersimpan memakai dispatcher lokal yang dibatasi
+`CONFIRMED`, source `fe12a727c588964347cea7eb2b9a96cec8751f6a` pushed.
+Integrasi Kasir menambah guard dua tab/reload, lookup+print bertanda tangan dan
+status terkirim terbarui tanpa retry otomatis atau pengulangan pembayaran.
+67 tes terfokus Windows/PGlite + check1100/core37/TypeScript PASS; fixture browser
+dan socket bukan paper/native/full acceptance. Production `95a6eda` unchanged.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Sisa trust/handshake nyata, qualification final, physical
+UAT/endurance dan canary; perlindungan Windows serta gate lama tetap dipertahankan.
+
 ## 2026-10-15 - SagaPOS ekspor alur stok yang ditampilkan dan qualification terfokus
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.

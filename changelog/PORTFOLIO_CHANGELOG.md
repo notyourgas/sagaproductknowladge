@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS dispatcher nota lokal
+`CONFIRMED`, source `fe12a727c588964347cea7eb2b9a96cec8751f6a`: nota tersimpan
+Kasir kini terhubung ke dispatcher pengujian bertanda tangan dan guard dua tab/reload.
+67 tes terfokus lokal/check PASS; belum actual QZ, Linux, paper atau full-UAT.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Production `95a6eda` tidak berubah.
+Dampak operator: status pengiriman terbarui, tidak auto-resend hasil tak pasti.
+Sisa trust/handshake, qualification final dan physical canary; pricing/provider/
+produk lain serta pekerjaan stok terpisah tidak berubah.
+
 ## 2026-10-15 - SagaPOS ekspor alur stok yang ditampilkan dan qualification terfokus
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.

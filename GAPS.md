@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - Sisa aktivasi cetak nota setelah dispatcher lokal
+`CONFIRMED`: dispatcher browser dan guard dua tab/reload telah diuji pada source
+`fe12a727c588964347cea7eb2b9a96cec8751f6a`; 67 tes terfokus lokal PASS.
+`NEEDS CONFIRMATION`: pilihan konfirmasi/silent/existing trusted certificate
+yang ditanyakan sebelumnya tetap belum terjawab, bukan izin biaya/root import.
+TODO executor: loader key-certificate/trust/expiry dan native handshake; Linux/native/
+restore/rollback qualification serta reviewed unblock gate full/320 yang lama.
+TODO operator: finalsource bench, secure TEST, physical matrix/endurance/Owner UAT
+dan satu-PC canary. Tombstone/signature tidak membuktikan exactly-once paper.
+Production `95a6eda` tetap active; printer production OFF dan NOT_BUSINESS_READY.
+Tidak ada certificate/paid capacity/CI/real enrollment/print atau deploy baru.
+
 ## 2026-10-15 - SagaPOS ekspor alur stok yang ditampilkan dan qualification terfokus
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.
