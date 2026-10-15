@@ -7,6 +7,22 @@ belum native trust/connection, Linux atau paper acceptance. Production `95a6eda`
 unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
 NOT_BUSINESS_READY. Sisa actual approved handshake, qualification dan commissioning.
 
+## 2026-10-15 - SagaPOS memisahkan antrean offline server dari konsumsi tercatat
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Antrean offline server kini dibaca secara scoped pada dashboard/Team/SaaS/
+readiness; konsumsi kosong tidak dianggap seluruh antrean selesai. Adapter
+absen UNVERIFIED, CLEAR hanya kejadian server yang tercatat.44tes+fullcheck/
+type dan8subkasus native+parent PASS setelah satu correction fixture;
+initialFAIL tetap dipertahankan, bukan full operator/native role acceptance.
+Source diuji`f399383c6a6a12878935778d591238cf5ee22df8`, ledger
+`0bf65d1c15ca995e595d727dadca6cf7f4d07421`, branch
+`codex/sagapos-foundation-20261014`, pushed. Production09.23WIB unchanged:
+active`95a6eda`,rollback`2a18c9d`,ready; tanpa deploy/activation/UAT baru.
+BuilderLinux, koreksi/as-adjusted CSV dan qualification/recovery/operator
+acceptance masih terbuka. Tidak mengubah transaksi, grant, schema atau printer.
+
+
 ## 2026-10-15 - Material signing diperiksa sebelum issuance
 `CONFIRMED`, source `d66c417512b6c26d8a56753d324b2435bc347790` pushed.
 Pair/fingerprint/expiry guard termasuk delayed lock/commit;76tes terfokus
