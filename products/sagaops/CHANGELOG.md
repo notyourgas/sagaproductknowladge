@@ -1,5 +1,34 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - SagaPOS ekspor alur stok yang ditampilkan dan qualification terfokus
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.
+Andreas menyetujui tambahan180detik; blocker allowance pending pada entri
+sebelumnya sudah dijawab, bukan waiver gate atau otorisasi transaksi/builder baru.
+Source appa5f29189cd8f9ed45be4cce6d1627095ad393828; checkpoint ledger
+065a6315485f20b4cec6d1636dd586e94ef9ee29 clean/pushed pada branch
+codex/sagapos-foundation-20261014. CSV alur stok kini memakai report yang sama
+dengan tampilan, tanggal/cutoff/revisi dan fingerprint; perubahan laporan menolak
+unduhan stale dan meminta muat ulang. Angka quantity tidak dihitung ulang, formula
+spreadsheet dilindungi; legacy tetap unverified. Bukan CSV setelah koreksi.
+
+Baseline0ab406c:106regresi PASS, static1101modul dan TypeScriptPASS;2skenario
+nativePostgreSQL PASS untuk snapshot/calendar/package/CAS/fault dan capability
+SaaS terbatas. DeltaCSV:7tes pure/service dan browserHTTP PASS,termasuk download
+dan auth/filter/stale guard. Bukan115uniquejourneys atau fullnative/operatorUAT.
+Browser sintetis bukan Ownerproduction; Axe finalempty-state saja, bukan audit
+aksesibilitas lengkap. New180s consumed135.03,remaining44.97(focused12.05/native32.92);
+batas correction/cleanup dan seluruh kegagalan lama tetap dipertahankan.
+
+Production tidak berubah:ready08.55WIB,active95a6eda74593b731361a5c65c70f829276f33180,
+rollback2a18c9d4d307844ae6061cd0100d73c4bdbd0c0d;primaryGATEWAY/SaaSCASH.
+Belum ada deploy/activation/authenticatedUAT/BUSINESS_READY. Prioritas tersisa:
+disposition/koreksi tertaut dan as-adjusted CSV,role/notifikasi/reconciliation,
+qualification native/perangkat/load/restart/restore/full-day yang ditinjau,
+builderLinux terpisah serta artifact/recovery/behavioralrollback sebelum rilis.
+Knowledge ini mengganti status allowance-pending historis, bukan menyatakan
+seluruh software atau acceptance Wave3 selesai.
+
 ## 2026-10-15 - SagaPOS Wave3 goal blocked pada qualification allowance
 
 `CONFIRMED / GOAL_BLOCKED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
