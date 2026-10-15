@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-16 - SagaPOS: keseluruhan belum100%
+
+CONFIRMED sourceaa0670a: baseline19keluarga dalam ledger existing, bukan score
+validated. Extra Kasir liveFAIL22.33s/90s; kontrak3/3PASS, follow-up source-only.
+Active42f7ab9e/rollback793dd760 tetapready, no new deploy/payment/grants.
+Absensi operationalReady=false/lokasi belumconfigured; Team/SaaS handoff,
+history/fullworkday dan operator/device UAT OPEN. BUSINESS_READY=false.
+
 ## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
 
 `CONFIRMED`: cleanup disposable berhasil dengan cmdlet native tanpa Force;

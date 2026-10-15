@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-16 - knowledge(sagapos): baseline goal dan retained cashier failure
+
+CONFIRMED / Andreas accepted whole-product goal dan extra Kasir exception.
+Sourceaa0670a3474ccef3342d539c1995a93fb5a6d2e7 pushed, active42f/rollback793
+freshready; production tidak berubah. LiveFAIL22.33s/90s, kontrak3/3PASS dan
+follow-up source-only.19keluarga acceptance dipetakan tanpa klaim100%.
+Files: SagaOPS Product/Dossier/Changelog, portfolio/master, GAPS, DECISIONS,
+SYNC_STATUS dan root changelog. Navigation/logout, history/fullworkday,
+lokasi dan operator/device UAT masihOPEN. Knowledge provenance: main HEAD.
+
 ## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
 
 File terdampak: product/dossier/product changelog, release checkpoint, master, GAPS,

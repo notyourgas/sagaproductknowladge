@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-16 - SagaPOS whole-product baseline dan extra Kasir FAIL
+
+CONFIRMED sourceaa0670a clean/pushed. Product/Dossier/Changelog, portfolio,
+master/GAPS/DECISIONS dan root changelog sinkron. Extra browserFAIL22.33s/90s,
+kontrak3/3PASS; follow-up source bukanlivequalification. App42f/rollback793
+tetap, no deploy/transaksi baru. Acceptance denominator/UAT belumfinal.
+
 ## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
 
 `CONFIRMED`: cleanup disposable berhasil dengan cmdlet native tanpa Force;

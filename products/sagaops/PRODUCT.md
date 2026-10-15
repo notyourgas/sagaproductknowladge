@@ -1,4 +1,16 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Goal seluruh produk dan extra gate Kasir
+
+CONFIRMED: source `aa0670a3474ccef3342d539c1995a93fb5a6d2e7` pushed,
+harness/ledger-only; tidak ada deployment baru. Satu extra browser attempt
+selesai22.33s/90s: kontrak3/3 PASS, live Kasir FAIL, logout tes belumverified.
+Follow-up diagnosis/cleanup source3/3 PASS bukan retry live atau penutupan gate.
+13modul publik linked tanpa eksekusi bukan browser/UAT. Tidak ada order/payment.
+Goal dipetakan ke19keluarga fitur dan registry49layar historis; denominator
+acceptance terbaru belum tervalidasi, tidak ada skor100% yang sah. Absensi live
+operationalReady=false/koordinat belumconfigured. Active42f7ab9e/rollback793dd760
+tetapready, Gateway/CASH SaaS tetap. Operator UAT pending; BUSINESS_READY=false.
+
 ## 2026-10-16 - Wave 3 aktif; verifikasi browser belum penuh
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: aplikasi

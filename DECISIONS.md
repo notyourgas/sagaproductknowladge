@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-261 - SagaPOS goal keseluruhan dan exception Kasir terbatas
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-16 |
+| Topik | Penutupan semua fitur dan browser Kasir |
+| Keputusan | Andreas menerima goal keseluruhan100% dan kebutuhan sesuai rekomendasi. Executor mempertahankan satu extra correction90s yang diajukan, tanpa order/payment/grant/business-data/builder/deploy. |
+| Alasan | Bukti technical/operational harus terpisah; deploy Wave3 bukan semua fitur accepted. |
+| Alternatif | Unlimited retry, resetFAIL3, score tanpa denominator, otomatis menganggap perangkat/providerPASS ditolak. |
+| Dampak | Extra liveFAIL22.33s/90s, logout belumverified; kontrak3/3PASS. Sourceaa0670a memetakan19keluarga; active42f/rollback793 tetap. |
+| Pemberi keputusan | Andreas / founder; batas eksekusi dikomunikasikan executor |
+| Status | CONFIRMED / SOURCE_ONLY_FOLLOWUP / OPERATOR_UAT_PENDING / BUSINESS_READY=false |
+| Dokumen terkait | [Produk](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
+
 ## DEC-260 - SagaPOS packaging gratis tambahan, guarded deploy dan retensi terverifikasi
 
 | Field | Isi |

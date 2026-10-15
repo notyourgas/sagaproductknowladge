@@ -1,4 +1,18 @@
 # SagaOPS Dossier
+## 2026-10-16 - Whole-product acceptance dan retained cashier exception
+
+CONFIRMED: [ledger source](https://github.com/notyourgas/sagaops/blob/aa0670a3474ccef3342d539c1995a93fb5a6d2e7/docs/T1_CATALOG_CHOICES_20261014.md)
+memetakan19keluarga technical/operational acceptance beserta dependency dan
+rollback. Historical49layar bukan denominator tervalidasi atau49kerusakan baru.
+Satu extra Kasir browser FAIL22.33s/90s; kontrak3/3 PASS,0skip; logout belum
+verified. Follow-up source bukan retry live.13public ESM linked tanpa evaluation
+hanya menyingkirkan dugaan modul hilang pada path publik; root cause navigation
+belum terbukti. Fixture responsive fresh NOT_RUN karena prasyarat lokal hilang.
+Next: fase diagnosis Kasir, native Team/SaaS supervisor/alerts, unknownoffline/
+cutoff, retained history/fullworkdayFAIL3 dan operator/device UAT sesuai gate.
+Absensi operationalReady=false/lokasi belumconfigured; printer lane terpisah.
+Active42f/rollback793 tetap; no deploy/business-data/grant/provider mutation.
+
 ## 2026-10-16 - Guarded Wave 3 activation dan batas penerimaan
 
 CONFIRMED. Before: Linux aplikasi terfokus lulus tetapi packaging tertahan full

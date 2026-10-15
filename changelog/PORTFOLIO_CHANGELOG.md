@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-16 - SagaPOS: whole-product baseline, Kasir belumaccepted
+
+CONFIRMED sourceaa0670a:19keluarga acceptance dipetakan; extra Kasir browser
+FAIL22.33s/90s, kontrak3/3PASS, follow-up source bukanlivePASS. No new deploy/
+transaksi; active42f/rollback793 dan Gateway/CASH SaaS tetap. Denominator dan
+operator/device UAT OPEN. [Produk](../products/sagaops/PRODUCT.md).
+
 ## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
 
 `CONFIRMED`: cleanup disposable berhasil dengan cmdlet native tanpa Force;

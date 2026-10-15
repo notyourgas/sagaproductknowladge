@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-16 - SagaPOS: extra Kasir FAIL dan denominator belumfinal
+
+CONFIRMED sourceaa0670a: extra browserFAIL22.33s/90s, logout belumverified.
+Kontrak3/3PASS, follow-up source-only;13public modules linked tidak mengganti
+livebrowser. Dugaan URL bukan root cause yang terbukti; jangan resetspent gate.
+19keluarga/49layar historis perlu exact-candidate criteria; UNKNOWN/PARTIAL/
+waiver bukanPASS. Lokasi absensi, Team/SaaS supervisor/alerts, unknownoffline/
+cutoff, retained history/fullworkdayFAIL3 dan operator/device/provider UAT OPEN.
+[Dossier](products/sagaops/DOSSIER.md).
+
 ## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
 
 `CONFIRMED`: cleanup disposable berhasil dengan cmdlet native tanpa Force;

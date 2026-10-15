@@ -1,4 +1,14 @@
 # SagaOPS Changelog
+## 2026-10-16 - Baseline keseluruhan dan extra Kasir FAIL dipertahankan
+
+- CONFIRMED / source-only `aa0670a3474ccef3342d539c1995a93fb5a6d2e7`.
+- Before: dugaan URL perantara; after: exact-source/final-state harness,
+  extra liveFAIL22.33s/90s, logout belumverified. Kontrak3/3PASS; follow-up3/3
+  bukan6unique tests atau livePASS. Root cause navigation belumconfirmed.
+- Dampak:19keluarga dipetakan di ledger sama; tidak ada klaim produk100%.
+  Active42f/rollback793 tetap, no deploy/order/payment/grants baru.
+- Team/SaaS handoff/alerts, history/fullworkday, lokasi dan operator/device UAT OPEN.
+
 ## 2026-10-16 - Wave 3 guarded activation, browser qualification parsial
 
 - CONFIRMED; sumber keputusan Andreas dan live readback00.18WIB.
