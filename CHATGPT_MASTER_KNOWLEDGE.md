@@ -1,5 +1,37 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - Desain nota custom aktif di dashboard Owner
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` hanya untuk modul desain
+nota; `NOT_BUSINESS_READY` untuk keseluruhan printer/produk. Andreas meminta
+aktivasi custom di dashboard. Source `6e43822cd16ae3379d5ab5b03e0204278ec7ff48`
+aktif, rollback `dc0e7dcbe471f0c5cdb722bb862b1f5dfacadb81`. Header, alamat/kontak,
+logo PNG/JPEG, footer dan toggle diskon/pajak/layanan/pembulatan dapat disimpan
+sebagai draft, diterapkan, serta dibaca ulang dari PostgreSQL. Toggle hanya
+mengatur tampilan; total dan fakta transaksi tidak diubah. TEST memakai origin
+Owner yang sama, bukan host berbeda yang meminta autentikasi tambahan.
+
+Dedicated mode pada runner existing mengikat addon SQL, replay/grants, flag dan
+fresh recovery receipt. Linux10/10 runner tests/Bash syntax, immutable package,
+native PG18 candidate-current-candidate recovery, addon installer, activation,
+exact public JS dan final monitor PASS. Core37, GATEWAY, SaaS dan ingress tetap;
+tidak membawa perubahan stok/offline lane lain. Backup terenkripsi sebelum dan
+setelah penerapan dipulihkan, disalin ke PC dan diverifikasi checksum. Arsip-first
+juga menutup kapasitas dari satu duplikat output build; canonical artifact,
+database, backup dan active/rollback dipertahankan. Offsite DR belum diverifikasi.
+
+Actual Owner LOAD/SAVE/PUBLISH/reload PASS, versi aktif2 memakai default yang sama.
+Toggle pajak terbukti menghapus baris preview lalu dikembalikan sebelum simpan;
+tidak membuat penjualan atau mengirim cetak. Logo/isi branding baru tidak dibuat-
+buat. Source13focused nonbrowser +3cashier browser PASS, static1103/core37/types
+PASS; histori full/preview320 dan budget lama tetap OPEN, bukan full-suite PASS.
+Driver vendor trust/grafis/media/cutter, physical TEST, device/workday/role dan
+signed QZ tetap terpisah; QZ OFF. Next: Owner pilih isi/logo final lalu satu TEST
+fisik copies1 tanpa bypass proteksi Windows. Pricing/payment boundary tetap.
+Sumber: permintaan langsung Andreas, exact commit dan native/runtime/Owner proof.
+Status template-server OFF pada snapshot printer terdahulu kini historis.
+
+
 ## 2026-10-15 - SagaView: recovery lulus dan dedicated backend dirilis
 
 `CONFIRMED`: backend exact `b06780e320b60efb3b27048f9099e39c07e61545`

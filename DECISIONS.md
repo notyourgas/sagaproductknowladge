@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-254 - Aktifkan desain nota custom pada dashboard SagaPOS
+
+- Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
+- Keputusan: lanjutkan aktivasi desain nota custom di dashboard dan catat strategi
+  penyelesaian residual. Bukan aktivasi otomatis QZ atau waiver trust Windows.
+- Alasan: Owner perlu mengatur header/logo/footer dan visibilitas rincian nota.
+- Alternatif: mempertahankan editor tanpa penyimpanan server; menunggu hardware.
+- Hasil: addon schema dan runtime POSTGRES aktif di6e43822, rollbackdc0e7dc;
+  recovery/native/monitor dan Owner save-publish-reload PASS. Default aktif2,
+  branding/pilihan awal tidak diganti. Toggle mengatur tampilan, bukan transaksi.
+- Batas: tidak ada TEST kertas baru, driver/sertifikat/payment baru; QZ OFF.
+  Full/preview320 dan physical/device/workday acceptance belum selesai.
+- Status: PRODUCTION_ACTIVATED untuk modul desain custom, NOT_BUSINESS_READY.
+- Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-253 - Satu sandbox gratis untuk kelayakan builder SagaPOS
 
 - Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
@@ -26,7 +41,8 @@
   pulih. Fresh package/backup-restore/recovery/guarded activation PASS. Source
   dc0e7dc production, rollback3cdea61; format TEST browser diperbaiki.
 - Status: keputusan dilaksanakan. Tidak ada TEST baru; hardware, driver grafis,
-  template persistence dan signed QZ belum diaktifkan; NOT_BUSINESS_READY.
+  signed QZ belum diaktifkan; template persistence kemudian aktif lewat DEC-254.
+  NOT_BUSINESS_READY untuk keseluruhan printer.
 - Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
 
 ## DEC-251 - SagaPOS deploy web terlebih dahulu untuk TEST cetak
@@ -75,7 +91,7 @@
 | Alternatif | Melanjutkan signed QZ setelah sumber certificate resmi tersedia. |
 | Dampak | Source `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` mengoreksi TEST paper/feed dan logo-ready guard;5tes terfokus+check/type PASS. Bukan izin unsigned fallback, root override, pembelian, perubahan profil outlet otomatis atau aktivasi printer. |
 | Pemberi keputusan | Andreas / founder, jawaban eksplisit prioritas dialog browser |
-| Status | Historis71581bc LOCAL_VALIDATED; kode web kini PRODUCTION_DEPLOYED di dc0e7dc sesuai DEC-251/252, rollback3cdea61. Hardware NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY; penyimpanan desain server OFF. |
+| Status | Kode web kini PRODUCTION_DEPLOYED di6e43822, rollbackdc0e7dc; desain server PRODUCTION_ACTIVATED sesuai DEC-254. Hardware NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY; QZ OFF. |
 | Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
 
 ## DEC-248 - Qualification Linux lambat dilewati; packaging dan pengaman production dipertahankan
