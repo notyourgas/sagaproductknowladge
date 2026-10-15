@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-15 - SagaPOS material signing belum berarti trust printer
+`CONFIRMED`: source `d66c417512b6c26d8a56753d324b2435bc347790` memeriksa
+pasangan certificate/key dan expiry transaksi,76tes terfokus lokal/check PASS.
+Belum ada secret provision, actual QZ trust/connection atau uji kertas baru.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`; production `95a6eda` active unchanged.
+Retrieval/trust/handshake nyata, Linux/native/recovery dan physical canary tetap
+terbuka. Kontrak stok terpisah, pricing/provider/produk lain tidak berubah.
+
 ## 2026-10-15 - SagaPOS dispatcher nota masih lokal
 `CONFIRMED`: source `fe12a727c588964347cea7eb2b9a96cec8751f6a` menambahkan
 dispatcher bertanda tangan pada nota tersimpan Kasir, penguncian dua tab/reload

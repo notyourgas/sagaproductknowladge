@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-15 - Readiness teknis material signing nota
+`CONFIRMED`: source `d66c417512b6c26d8a56753d324b2435bc347790` pushed.
+Service kini memeriksa pasangan key-certificate, fingerprint dan masa berlaku
+sebelum penerbitan signature, termasuk saat transaksi tertunda.76tes terfokus
+Windows/PGlite dan check1102/core37/TypeScript PASS.
+Ini validasi material di memori saja, bukan provision key, trust QZ atau uji fisik.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Production `95a6eda` active unchanged. Sisa retrieval/trust/
+handshake nyata, qualification Linux/recovery, physical UAT dan canary tetap terbuka.
+
 ## 2026-10-15 - Dispatcher nota browser tervalidasi lokal
 `CONFIRMED`: source `fe12a727c588964347cea7eb2b9a96cec8751f6a` pushed pada
 branch printer. Aksi nota tersimpan Kasir kini memakai dispatcher bertanda tangan

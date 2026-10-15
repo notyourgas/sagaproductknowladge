@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS validasi material signing di memori
+`CONFIRMED`; sumber implementasi/tests `d66c417512b6c26d8a56753d324b2435bc347790`.
+Sebelumnya signer memakai key fixture saja; kini import pasangan/fingerprint dan
+expiry saat lock/commit ikut diperiksa. Alasan: menahan signature material tidak
+cocok/kedaluwarsa tanpa membuka issuance ulang.76tes lokal/check PASS.
+Dampak:3dokumen sagaops,portfolio,master,gaps,sync dan root changelog. Production
+`95a6eda` unchanged; bukan provision/trust/native/physical proof. Sisa runner
+retrieval/handshake, qualification final dan commissioning.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Knowledge main HEAD setelah push; tidak ada keputusan baru.
+
 ## 2026-10-15 - SagaPOS dispatcher nota dan pencegahan kirim ganda
 `CONFIRMED`; sumber implementasi/tests `fe12a727c588964347cea7eb2b9a96cec8751f6a`.
 Sebelumnya signer server saja; kini alur nota tersimpan Kasir memiliki dispatcher

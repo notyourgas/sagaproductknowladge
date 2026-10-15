@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Material signing diperiksa sebelum issuance
+`CONFIRMED`, source `d66c417512b6c26d8a56753d324b2435bc347790` pushed.
+Pair/fingerprint/expiry guard termasuk delayed lock/commit;76tes terfokus
+Windows/PGlite dan check1102/core37/TypeScript PASS. Bukan certificate provision,
+trust QZ, native/Linux atau paper acceptance.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`; production `95a6eda` unchanged. Retrieval/trust/handshake,
+qualification final serta physical UAT/canary masih terbuka.
+
 ## 2026-10-15 - Nota tersimpan memakai dispatcher lokal yang dibatasi
 `CONFIRMED`, source `fe12a727c588964347cea7eb2b9a96cec8751f6a` pushed.
 Integrasi Kasir menambah guard dua tab/reload, lookup+print bertanda tangan dan

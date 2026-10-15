@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS readiness material signing lokal
+`CONFIRMED`, source `d66c417512b6c26d8a56753d324b2435bc347790`: pasangan key/
+certificate, fingerprint dan expiry transaksi diperiksa;76tes terfokus/check PASS.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`. Production `95a6eda` unchanged, tidak ada trust/key provision
+atau uji kertas baru. Sisa retrieval/handshake/qualification dan physical canary.
+Tidak mengubah produk lain, pricing, provider atau workflow stok terpisah.
+
 ## 2026-10-15 - SagaPOS dispatcher nota lokal
 `CONFIRMED`, source `fe12a727c588964347cea7eb2b9a96cec8751f6a`: nota tersimpan
 Kasir kini terhubung ke dispatcher pengujian bertanda tangan dan guard dua tab/reload.

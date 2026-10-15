@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-10-15 - Validasi material signing dan expiry transaksi
+`CONFIRMED`, source `d66c417512b6c26d8a56753d324b2435bc347790`, parent `fe12a72`.
+Importer di memori memeriksa PKCS8 RSA2048/X509, pasangan public-private key,
+fingerprint serta validity leaf/optional intermediate. Expiry saat menunggu lock
+atau sebelum commit menolak issuance; expiry sesudah commit menahan respons tanpa
+menerbitkan ulang. Audit hanya menambah fingerprint publik, bukan material rahasia.
+76tes terfokus Windows/PGlite PASS dan check1102/core37/TypeScript PASS.
+Tidak ada material nyata yang diprovision, certificate diimpor, trust QZ dibuktikan
+atau koneksi native dibuat. Pemeriksaan pasangan bukan validasi PKIX/CRL.
+`LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY`; production `95a6eda` active unchanged.
+Sisa runner retrieval/trust/handshake, current Linux/native/recovery dan physical
+UAT/endurance/canary. Tidak mengubah workflow pembayaran atau pricing.
+
 ## 2026-10-15 - Batas dispatcher nota bertanda tangan
 `CONFIRMED`, source `fe12a727c588964347cea7eb2b9a96cec8751f6a`.
 Alur nota tersimpan Kasir mengikat bytes dokumen, antrean persis, revisi terminal,
