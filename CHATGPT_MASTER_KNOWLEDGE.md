@@ -1,4 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
+
+## 2026-10-16 - SagaPOS Wave 3 production aktif, full acceptance belum selesai
+
+CONFIRMED: active42f7ab9e5a2aedad0073ccfb5d6bed0e07e2fdd2, rollback793dd760063de8f48f9d9a987f724d527796e483,
+ready=true00.18WIB. Packaging, encrypted restore/offhost checksum, recovery
+rehearsal dan guarded activation PASS; schema37/Gateway/SaaS CASH unchanged.
+Owner/restart dan12anonymous boundaries PASS. Browser berhenti pada cashier_login
+setelah dua koreksi; Dashboard/enam area katalog/availability/Admin teramati,
+tidak boleh menyebut full7-surface PASS. Operator UAT, role handoff/alerts,
+history/load dan offline edges OPEN. BUSINESS_READY=false. Lihat
+[SagaPOS](products/sagaops/PRODUCT.md); ledger543172203c4ea539dfda439db7f7fb7dc0821b8e.
 ## 2026-10-16 - SagaPOS editor nota v3 belum production
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED, source

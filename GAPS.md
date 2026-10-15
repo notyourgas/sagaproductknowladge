@@ -1,4 +1,16 @@
 # Gaps dan Keputusan Founder
+## 2026-10-16 - SagaPOS: packaging/recovery tertutup, browser handoff tetap OPEN
+
+CONFIRMED: packaging fullPython, production encrypted restore/offhost checksum
+dan code-only activation42f7ab9e PASS, menggantikan HOLD sebelumnya. Native
+Owner/restart PASS; cashier_login browser FAIL setelah dua koreksi, stop.
+Next scoped exception harus membuktikan final return-to-cashier dan Owner state,
+bukan sekadar menambah timeout atau mengganti nama gate. Source harness-only
+563d3a0/7aa6fcf; app artifact tetap42f, rollback793dd760, healthready00.18WIB.
+Team/SaaS handoff/alert dedupe/revocation, unknownoffline/cutoff,
+fullworkdayFAIL3/historyload dan operator UAT tetapOPEN. Readiness total tidak
+dihitung dari subset; BUSINESS_READY=false. [Status](products/sagaops/PRODUCT.md).
+
 ## 2026-10-16 - Editor nota selesai lokal; automatic-print gap tetap terbuka
 
 CONFIRMED source `d08e11815bf9d951f9e5a830537cad6636a12857`: editor/schema/

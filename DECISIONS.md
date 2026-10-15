@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-260 - SagaPOS packaging gratis tambahan, guarded deploy dan retensi terverifikasi
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-16 |
+| Topik | Menutup packaging blocker dan mengaktifkan source Wave 3 |
+| Keputusan | Andreas mengizinkan satu sesi packaging gratis maksimal10min/2vCPU4GB, guarded deployment, dan cleanup rilis lama yang terverifikasi. Ini menggantikan deploy HOLD DEC-258, bukan waiver recovery/access/payment. |
+| Alasan | Application-focused Linux qualification sudah ada pada exact source; full Python stdlib merupakan blocker packaging aktual. |
+| Alternatif | Membeli builder, memakai serving VPS sebagai builder, memotong guard, menghapus backup atau memaksakan business-ready ditolak. |
+| Dampak | VM stopped140008ms/Hobby, packaging32s PASS. Hanya12folder recoverable dibersihkan1.84GiB; semua artifact/backup retained. Active42f7ab9e, rollback793dd760, encrypted recovery/Owner-restart PASS. Browser cashier_login FAIL setelah dua koreksi tetapOPEN. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED / PRODUCTION_ACTIVATED / OPERATOR_UAT_PENDING / BUSINESS_READY=false; tanpa provider/transaksi nyata atau grant/schema correction |
+| Dokumen terkait | [SagaPOS Product](products/sagaops/PRODUCT.md), [SagaPOS Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
+
 ## DEC-259 - Exception exact-pair akses/admin SagaView dan cleanup terbatas
 
 - Tanggal: 15 Oktober 2026; klasifikasi/status CONFIRMED; pemberi keputusan Andreas.

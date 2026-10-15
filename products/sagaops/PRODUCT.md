@@ -1,4 +1,22 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Wave 3 aktif; verifikasi browser belum penuh
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: aplikasi
+42f7ab9e5a2aedad0073ccfb5d6bed0e07e2fdd2 aktif, rollback793dd760063de8f48f9d9a987f724d527796e483,
+ready=true saat00.18WIB. Packaging Linux canonical PASS pada source yang sama
+dengan qualification terfokus sebelumnya. Backup terenkripsi, restore disposable,
+salinan offhost checksum, candidate/rollback/candidate rehearsal dan activation
+guards PASS; schema37, Gateway dan SaaS CASH tetap. Tidak ada transaksi nyata.
+
+Smoke Owner/session setelah restart PASS setelah menunggu readiness;12boundary
+anonim PASS. Browser legacy gagal pada tab navigasi lama; perbaikan harness
+mengikuti enam tujuan navigasi canonical. Dua koreksi kemudian berhenti pada
+cashier_login; Dashboard/enam area katalog/availability/Admin teramati, bukan
+full7-surface PASS. Harness563d3a0/7aa6fcf source-only, artifact aktif tetap42f.
+Ledger543172203c4ea539dfda439db7f7fb7dc0821b8e memelihara seluruh kegagalan.
+Operator UAT, Team/SaaS handoff/alerts, unknown offline/cutoff dan history/load
+acceptance tetap OPEN; bukan Wave3 atau seluruh produk BUSINESS_READY100%.
+
 ## 2026-10-16 - Editor nota v3 tervalidasi lokal
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: source

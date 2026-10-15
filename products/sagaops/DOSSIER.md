@@ -1,4 +1,33 @@
 # SagaOPS Dossier
+## 2026-10-16 - Guarded Wave 3 activation dan batas penerimaan
+
+CONFIRMED. Before: Linux aplikasi terfokus lulus tetapi packaging tertahan full
+Python stdlib dan deployment HOLD. After: Andreas mengizinkan satu sesi gratis
+packaging10min/2vCPU4GB dan guarded deploy. Canonical packager unchanged,
+Node22.22.1/full isolated Python,32s PASS; VM berhenti140008ms, Hobby tetap.
+Artifact41a207101d30e29f9866000c0331e0d9c995aa64fbc9d408601ec4060d1bf695
+untuk42f7ab9e5a2aedad0073ccfb5d6bed0e07e2fdd2, immutable target digest cocok.
+
+Encrypted production DB/paired integrity keys/media backup dan disposable restore
+PASS;3encrypted offhost archives checksum cocok, tanpa plaintext export.
+Canonical monitor offsite field tetap UNVERIFIED; bukti copy berada terpisah.
+Private namespace rehearsal candidate -> current rollback -> candidate PASS
+tanpa mengubah production DB/PID. Scope code-only: schema37/grants/Gateway/SaaS
+CASH tetap, tidak ada provider atau transaksi nyata. Active42f, rollback793dd760,
+health/service/monitor timer PASS pada00.18WIB. Owner-approved cleanup hanya
+12folder rilis lama yang recoverable,1.84GiB; semua artifact dan backup retained.
+
+Native Owner/restart smoke PASS setelah startup readiness;12anonymous boundaries
+PASS. Browser initial FAIL legacy duplicated-tab contract; native navigation
+harness correction mengikuti existing acceptance, bukan assertion akses dilonggarkan.
+Correction1 login wait timeout; correction2 Dashboard/six destinations/availability/
+Admin teramati lalu FAIL cashier_login. Stop pada batas dua koreksi. Dugaan
+intermediate-redirect expectation perlu dibuktikan pada exception bounded berikutnya.
+Application artifact tetap42f; helper-only563d3a0/7aa6fcf tidak diaktifkan sebagai
+aplikasi baru. Source ledger543172203c4ea539dfda439db7f7fb7dc0821b8e.
+UAT operator, configured Team/SaaS/alerts, fullworkdayFAIL3/historyload dan
+unknown offline/cutoff tetapOPEN. Deploy tidak menyelesaikan full acceptance.
+
 ## 2026-10-16 - Receipt editor v3, local validated only
 
 CONFIRMED: source `d08e11815bf9d951f9e5a830537cad6636a12857` pada branch

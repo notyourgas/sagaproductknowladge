@@ -1,4 +1,15 @@
 # Saga Product Knowledge Changelog
+
+## 2026-10-16 - SagaPOS guarded activation dan residual browser
+
+CONFIRMED, dari Andreas dan production readback00.18WIB:42f7ab9e aktif dengan
+rollback793dd760. Packaging, encrypted production restore/offhost checksum dan
+recovery/activation PASS. Owner/restart dan anonymous boundaries PASS; browser
+cashier_login tetapFAIL sesudah dua koreksi, full acceptance/UAT/business OPEN.
+Source ledger5431722, helper-only563d3a0/7aa6fcf. Sembilan file: SagaOPS
+PRODUCT/DOSSIER/CHANGELOG, master, gaps, sync, decisions, portfolio, root changelog.
+Alasan: meluruskan HOLD/packaging blocker yang sudah tertutup tanpa menghapus
+kegagalan browser atau mengklaim seluruh Wave3 selesai. Knowledge SHA=main HEAD.
 ## 2026-10-16 - Sync receipt editor v3 local milestone
 
 CONFIRMED, Andreas meminta implementasi desain nota configurable end-to-end.

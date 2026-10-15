@@ -1,4 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
+
+## 2026-10-16 - SagaPOS activation dengan batas browser terpelihara
+
+CONFIRMED / partially accepted. Source app42f7ab9e5a2aedad0073ccfb5d6bed0e07e2fdd2
+production aktif/ready00.18WIB; rollback793dd760063de8f48f9d9a987f724d527796e483.
+Artifact/recovery/Owner-restart/anonymous boundaries PASS. Browser cashier_login
+FAIL setelah dua koreksi, operator UAT/business acceptance OPEN. Harness-only
+563d3a0/7aa6fcf dan ledger543172203c4ea539dfda439db7f7fb7dc0821b8e pushed;
+production tidak menjalankan helper source-only sebagai aplikasi baru.
+Scope gratis/cleanup terverifikasi dicatatDEC-260. Tidak ada public secret/PII/
+private evidence. Sembilan dokumen terdampak diperbarui; SHA knowledge=main HEAD.
 ## 2026-10-16 - Receipt editor v3, partially accepted
 
 CONFIRMED source `d08e11815bf9d951f9e5a830537cad6636a12857` pushed; knowledge

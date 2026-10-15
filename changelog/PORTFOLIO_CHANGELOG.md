@@ -1,4 +1,12 @@
 # Portfolio Changelog
+
+## 2026-10-16 - SagaPOS Wave 3 activated, acceptance parsial
+
+CONFIRMED: source42f7ab9e aktif, rollback793dd760/healthready00.18WIB.
+Packaging dan encrypted recovery gates PASS; Gateway/CASH tetap, tanpa
+transaksi nyata. Owner/restart+12anonymous boundaries PASS, browser cashier_login
+FAIL di batas dua koreksi. Operator/role/alerts/load/offline acceptance OPEN;
+bukan BUSINESS_READY. Ledger5431722; [rincian](../products/sagaops/PRODUCT.md).
 ## 2026-10-16 - SagaPOS receipt-design controls tervalidasi lokal
 
 CONFIRMED, source `d08e11815bf9d951f9e5a830537cad6636a12857`: kontrol

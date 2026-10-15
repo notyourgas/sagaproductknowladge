@@ -1,4 +1,16 @@
 # SagaOPS Changelog
+## 2026-10-16 - Wave 3 guarded activation, browser qualification parsial
+
+- CONFIRMED; sumber keputusan Andreas dan live readback00.18WIB.
+- Active42f7ab9e5a2aedad0073ccfb5d6bed0e07e2fdd2; rollback793dd760063de8f48f9d9a987f724d527796e483.
+- Full Python menutup packaging blocker; encrypted restore/offhost checksum,
+  disposable recovery rehearsal dan atomic activation PASS; Gateway/CASH unchanged.
+- Owner/restart smoke dan12anonymous boundaries PASS. Browser FAIL cashier_login
+  sesudah dua koreksi, bukan full7-surface PASS; operator UAT/business readiness OPEN.
+- Source-only harness563d3a0/7aa6fcf; ledger543172203c4ea539dfda439db7f7fb7dc0821b8e.
+- Produk/dossier/master/gaps/sync/decisions/portfolio/root changelog tersinkron;
+  bukan perubahan printer RAW yang masih terpisah dan belum diterima fisik.
+
 ## 2026-10-16 - Kontrol desain nota per bagian dan preset kafe
 
 - CONFIRMED, sumber instruksi Andreas dan commit
