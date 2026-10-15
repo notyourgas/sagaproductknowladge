@@ -30,10 +30,12 @@ tetap dibutuhkan untuk melanjutkan signed dispatcher; raw tidak diaktifkan.
 Update15Oktober: runtime fixture loopback source71581bc aktif; HTTP/current asset
 dan dashboard Muat pengaturan lulus. Profil browser80mm/feed15/rawOFF tersimpan.
 Installer unduhan resmi masih NotSigned; katalog generik Microsoft valid tetapi
-konfigurasi Letter bukan HTML/logo acceptance. Unit USB belum hadir saat cek.
+konfigurasi Letter bukan HTML/logo acceptance. Unit USB kini terdeteksi OK.
+Permintaan driver signed ke dukungan resmi sudah disampaikan; belum ada paket
+baru/balasan. Kontak vendor dan pemeriksaan USB tidak perlu diminta ulang.
 `UNVERIFIED`: graphical driver untuk HTML/logo, dialog native,
 paper/feed fisik. Generic text-path acceptance tidak menutup gap graphical.
-TODO: unit menyala/USB hadir, trusted graphical driver atau tanggapi keterbatasan perangkat,
+TODO: verifikasi paket balasan vendor, trusted graphical driver atau tanggapi keterbatasan perangkat,
 satu TEST nonfinansial lalu physical/Owner UAT. Linux/recovery dan gate full/320
 historis tetap OPEN, tidak direset. Production `95a6eda` active unchanged;
 IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.

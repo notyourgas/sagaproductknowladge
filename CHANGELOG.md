@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - USB printer pulih dan permintaan driver disampaikan
+`CONFIRMED`: setelah konfirmasi operator, USB unit terdeteksi OK dan runtime
+fixture tetap aktif. Atas izin kontak sebelumnya, satu permintaan teknis driver
+Windows11x64 signed/HTML-logo/80mm disampaikan ke dukungan resmi. Belum ada balasan
+atau paket baru; bukan driver/physical TEST PASS. Source71581bc/tes tetap,
+production tidak dimutasi;8dokumen diperbarui, main HEAD provenance knowledge.
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY. Sisa verifikasi paket vendor/driver lalu satu TEST browser;
+tidak ada monitoring otomatis, data privat, key/trust change atau produk lain.
+
 ## 2026-10-15 - Runtime uji browser aktif dan driver diperiksa ulang
 `CONFIRMED`: atas izin eksplisit Andreas, runtime fixture loopback source printer
 `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` aktif; HTTP/current asset dan dashboard

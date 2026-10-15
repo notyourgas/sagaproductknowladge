@@ -45,7 +45,9 @@ Update15Oktober: runtime fixture sudah aktif di loopback pada source yang sama;
 HTTP/asset current serta login dan Muat pengaturan dashboard dikonfirmasi.
 Profil browser80mm/feed15/QZOFF tersimpan lokal. Driver generik memiliki katalog
 Microsoft valid, tetapi masih Letter dan bukan bukti HTML/logo. Paket resmi yang
-diunduh ulang identik; installer tetap NotSigned. Unit USB belum hadir, tidak ada
+diunduh ulang identik; installer tetap NotSigned. Unit USB kini terdeteksi OK;
+permintaan driver signed ke kontak dukungan resmi sudah disampaikan, belum ada
+balasan/paket baru. Tidak ada
 instalasi driver atau penekanan Cetak akhir. Driver grafis dan physical TEST OPEN;
 jalur teks
 yang pernah diterima tidak membuktikan graphical printing. Signed raw tetap OFF,

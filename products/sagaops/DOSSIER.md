@@ -50,8 +50,10 @@ pratinjau native tidak dapat diverifikasi tool, tab TEST ditutup tanpa menekan
 Cetak akhir. Tidak ada klaim dialog/paper PASS. Katalog Generic/TextOnly valid
 Microsoft, konfigurasi masih Letter. Unduhan vendor identik dengan paket lama;
 installer NotSigned. Query model pada Microsoft Catalog tidak menemukan hasil,
-bukan bukti seluruh Windows Update habis diperiksa. Unit USB belum hadir saat
-cek; driver grafis/physical TEST tetap OPEN. Tidak mengimpor root atau menjalankan
+bukan bukti seluruh Windows Update habis diperiksa. Unit USB kini terdeteksi OK;
+permintaan teknis driver signed/model-matched ke kontak resmi berstatus
+disampaikan, belum ada balasan/paket baru. Tidak mengirim data privat/attachments
+atau mengulang permintaan. Driver grafis/physical TEST OPEN. Tidak mengimpor root atau menjalankan
 installer. Tidak ada source delta/tes ulang atau mutasi production pada tahap ini.
 Production `95a6eda` active unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Prioritas berikut graphical

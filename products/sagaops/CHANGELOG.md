@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - USB terdeteksi; permintaan driver ke vendor disampaikan
+`CONFIRMED`: unit terdeteksi OK, runtime fixture tetap aktif. Satu permintaan
+driver Windows11x64 signed/model-matched/HTML-logo/80mm dikirim ke kontak dukungan
+resmi dan berstatus disampaikan; belum ada balasan atau paket baru. Tidak
+mengirim data privat/attachment, memasang driver atau mencetak kertas. Source
+printer71581bc/tes tidak berubah, production tidak dimutasi. Driver/physical
+acceptance tetap OPEN; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+
 ## 2026-10-15 - Runtime fixture cetak browser aktif, driver masih tertahan
 `CONFIRMED`, source printer `71581bc0fba4ef6dcbafb91f14d03de89eb1e385` unchanged.
 Runtime loopback, asset current dan dashboard Muat pengaturan terverifikasi;
