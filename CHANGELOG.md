@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaView: recovery lulus dan dedicated backend dirilis
+
+`CONFIRMED`: backend exact `b06780e320b60efb3b27048f9099e39c07e61545`
+dirilis melalui S296; terminal exit 0, 9.630 file aktif/artifact cocok, shared
+storage/service/health/support boundary PASS, migration pending 0 dan tidak ada
+migration dijalankan. Fresh encrypted/offsite/disposable restore exact binding
+PASS. Previous/rollback backend `20260925094720-ee3ddee` tersedia.
+Studio kandidat `1e9655a` quality/focused 8 browser PASS; Linux 210 masih berjalan.
+Studio production tetap `6f28cfee`; exception lama tidak otomatis berlaku pada
+pasangan SHA baru. Human UAT/printer/pilot belum diterima, NOT_BUSINESS_READY.
+Alasan: menutup blocker recovery/kapasitas dan merilis dependency dedicated;
+scope SagaBook/platform/provider/pricing tidak berubah. Histori failure disimpan.
+[Source, artifact, validasi, batas dan next action](docs/releases/sagaview-recovery-backend-release-20261015.md).
+
 ## 2026-10-15 - Wave 3 koreksi stok lokal dan kelayakan builder gratis
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Native Owner dapat
