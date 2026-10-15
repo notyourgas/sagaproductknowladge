@@ -28,15 +28,20 @@ rollback compatible dan operatorUAT. Pekerjaan printer terpisah tidak digabung.
 
 
 ## 2026-10-15 - Readiness teknis material signing nota
-`CONFIRMED`: source `ab045b4976bb9a79eca856b75ed977ff18481bfa` pushed,
-melanjutkan material pair `d66c417512b6c26d8a56753d324b2435bc347790`.
+`CONFIRMED`: source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6` pushed,
+melanjutkan public certificate `ab045b4976bb9a79eca856b75ed977ff18481bfa`
+dan material pair `d66c417512b6c26d8a56753d324b2435bc347790`.
 Service kini memeriksa pasangan key-certificate, fingerprint dan masa berlaku
-sebelum penerbitan signature, termasuk saat transaksi tertunda.79tes terfokus
+sebelum penerbitan signature, termasuk saat transaksi tertunda.84tes terfokus
 Windows/PGlite dan check1102/core37/TypeScript PASS.
 Ini validasi material di memori saja, bukan provision key, trust QZ atau uji fisik.
 Pembacaan public certificate oleh browser kini tersedia hanya melalui sesi,
 izin dan terminal current dalam qualification lokal. Tidak mengirim private key,
-mengubah data atau membuka QZ. Kontrak OpenAPI signing/session/certificate tercatat.
+mengubah data; endpoint read sendiri tidak membuka QZ. Pada aksi cetak terpilih,
+client kini melakukan secure certificate-bound connect sebelum klaim job, hanya
+qualification lokal. Default source uji konfirmasi native, bukan silent atau
+persetujuan trust/lisensi. Timeout mengunci koneksi; hasil tak pasti tidak diulang.
+Kode handshake diuji dengan socket/certificate sintetis, belum native QZ/paper.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
 NOT_BUSINESS_READY`. Production `95a6eda` active unchanged. Sisa retrieval/trust/
 handshake nyata, qualification Linux/recovery, physical UAT dan canary tetap terbuka.

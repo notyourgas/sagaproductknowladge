@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS explicit certificate-bound connect sebelum dispatch
+`CONFIRMED`, source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6`, parent `ab045b4`.
+Client memakai public certificate/identity dan secure connect sebelum klaim job;
+timeout UNKNOWN/no resend.84tes lokal/check PASS;8dokumen disinkronkan karena
+alur koneksi berubah. Default source uji izin native bukan silent/trust approval.
+Production `95a6eda` unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Sisa actual material/runner/native,
+Linux/recovery/physical canary. Tidak ada lisensi/keputusan founder baru.
+Main HEAD setelah push menjadi provenance knowledge.
+
 ## 2026-10-15 - SagaPOS guarded public-certificate delivery
 `CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa`, parent `d66c417`.
 Pembacaan certificate publik dilengkapi untuk integrasi browser, tanpa private key,

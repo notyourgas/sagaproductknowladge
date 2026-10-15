@@ -18,10 +18,11 @@ acceptance masih terbuka. Tidak mengubah transaksi, grant, schema atau printer.
 
 ## 2026-10-15 - Sinkronisasi material signing nota
 `CONFIRMED`, accepted dalam scope lokal: source
-`ab045b4976bb9a79eca856b75ed977ff18481bfa` pushed, parent `d66c417`.
-79tes terfokus Windows/PGlite dan check1102/core37/TypeScript PASS;8dokumen
+`b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6` pushed, parent `ab045b4`.
+84tes terfokus Windows/PGlite dan check1102/core37/TypeScript PASS;8dokumen
 diperbarui. Provenance dispatcher/stok sebelumnya dipertahankan.
-Delta: guarded public-certificate API dan OpenAPI terkait; bukan native handshake.
+Delta: kode secure certificate-bound handshake pada aksi cetak; default uji izin
+native, bukan silent/auto-consent. Fixture membuktikan wire, bukan actual QZ trust.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
 NOT_BUSINESS_READY`; production `95a6eda` active unchanged.
 Main HEAD setelah push menjadi SHA sinkronisasi; trust/native/physical/release

@@ -28,8 +28,8 @@ rollback compatible dan operatorUAT. Pekerjaan printer terpisah tidak digabung.
 
 
 ## 2026-10-15 - Validasi material signing dan expiry transaksi
-`CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa`, parent
-`d66c417512b6c26d8a56753d324b2435bc347790`.
+`CONFIRMED`, source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6`, parent
+`ab045b4976bb9a79eca856b75ed977ff18481bfa`.
 Importer di memori memeriksa PKCS8 RSA2048/X509, pasangan public-private key,
 fingerprint serta validity leaf/optional intermediate. Expiry saat menunggu lock
 atau sebelum commit menolak issuance; expiry sesudah commit menahan respons tanpa
@@ -39,9 +39,14 @@ dan terminal guard yang sama. Response no-store berisi certificate/fingerprint,
 validity dan identitas qualification, bukan private key/credential/signature.
 DefaultOFF/key-only/expired/revoked/foreign scope ditolak; read tidak menulis
 job/audit/sales dan tidak memulai QZ. OpenAPI tiga endpoint terkait diperbarui.
-79tes terfokus Windows/PGlite PASS dan check1102/core37/TypeScript PASS.
+Client sekarang mengikat secure connect ke fingerprint/identity sebelum klaim;
+request hanya setelah aksi cetak terpilih, tanpa auto-consent atau trust override.
+Koneksi unmanaged ditolak, denial/timeout/stale ditutup hanya pada socket miliknya.
+Lookup/print dibatasi lease; timeout UNKNOWN dan perlu reload, bukan resend.
+84tes terfokus Windows/PGlite PASS dan check1102/core37/TypeScript PASS.
 Tidak ada material nyata yang diprovision, certificate diimpor, trust QZ dibuktikan
-atau koneksi native dibuat. Pemeriksaan pasangan bukan validasi PKIX/CRL.
+atau koneksi native nyata dibuat. Kode memakai default uji konfirmasi native;
+bukan pilihan lisensi/trust baru. Pemeriksaan pasangan bukan validasi PKIX/CRL.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
 NOT_BUSINESS_READY`; production `95a6eda` active unchanged.
 Sisa runner retrieval/trust/handshake, current Linux/native/recovery dan physical

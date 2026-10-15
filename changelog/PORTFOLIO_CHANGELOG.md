@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS certificate-bound connect lokal
+`CONFIRMED`, source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6`: explicit secure
+connect sebelum klaim,84tes/check PASS. Native permission tidak disetujui otomatis;
+uji masih fixture. Production `95a6eda` unchanged; LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Sisa actual material/native/Linux/recovery/physical canary; produk lain tetap.
+
 ## 2026-10-15 - SagaPOS public certificate lokal
 `CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa`: guarded read untuk
 browser dan kontrak OpenAPI,79tes/check PASS. Bukan provision/trust/connection QZ.

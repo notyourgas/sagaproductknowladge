@@ -17,12 +17,14 @@ acceptance masih terbuka. Tidak mengubah transaksi, grant, schema atau printer.
 
 
 ## 2026-10-15 - Material pair selesai lokal; trust dan commissioning terbuka
-`CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa`: pair/fingerprint/
-expiry dan guarded public-certificate read lokal PASS,79tes terfokus. Bukan
+`CONFIRMED`, source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6`: pair/fingerprint/
+expiry, certificate read dan explicit handshake lokal PASS,84tes terfokus. Bukan
 trusted-QZ certificate atau key loader
-runtime lengkap. `NEEDS CONFIRMATION`: pilihan mode/trust sebelumnya tetap pending.
-TODO executor: approved retrieval serta issuer/trust/CRL lifecycle dan secure
-handshake; endpoint public-certificate sudah tersedia, bukan koneksi native.
+runtime lengkap. Default source uji kini konfirmasi native tanpa auto-consent;
+pertanyaan mode sebelumnya bukan blocker coding, bukan izin silent/root/lisensi.
+`NEEDS CONFIRMATION`: sumber material/trust nyata. TODO executor: approved
+retrieval, runner wiring dan issuer/trust/CRL lifecycle. Endpoint dan kode handshake
+sudah tersedia, actual native/material qualification masih terbuka.
 TODO release/operator: Linux/native/restore/rollback qualification,
 reviewed unblock gate lama, final bench dan physical UAT/endurance/canary.
 Production `95a6eda` unchanged; hardware OFF, NOT_BUSINESS_READY.

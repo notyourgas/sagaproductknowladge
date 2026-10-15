@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Secure connect terikat certificate sebelum klaim job
+`CONFIRMED`, source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6` pushed.
+Stored-receipt action kini explicit connect dengan binding sesi/fingerprint dan
+batas timeout, tanpa auto-consent/fallback/resend.84tes lokal/check PASS; bukan
+actual QZ trust/native/paper. Production `95a6eda` unchanged; LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Sisa approved material/runner, native qualification, Linux/recovery dan canary.
+
 ## 2026-10-15 - Public certificate melalui guard kasir/terminal
 `CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa` pushed.
 API read-only serta OpenAPI melengkapi integrasi signing lokal.79tes/check PASS;

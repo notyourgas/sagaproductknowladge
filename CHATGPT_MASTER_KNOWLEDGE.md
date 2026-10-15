@@ -17,10 +17,13 @@ acceptance masih terbuka. Tidak mengubah transaksi, grant, schema atau printer.
 
 
 ## 2026-10-15 - SagaPOS material signing belum berarti trust printer
-`CONFIRMED`: source `ab045b4976bb9a79eca856b75ed977ff18481bfa` memeriksa
-pasangan certificate/key dan expiry transaksi,79tes terfokus lokal/check PASS.
+`CONFIRMED`: source `b5b7a08cc4ec3d1b24c784484fc68fe72589cfd6` memeriksa
+pasangan certificate/key dan expiry transaksi,84tes terfokus lokal/check PASS.
 Public certificate tersedia untuk browser dengan sesi/permission/terminal guard;
-tidak mengirim private key, menulis data atau memulai koneksi QZ.
+endpoint tidak mengirim private key, menulis data atau memulai koneksi QZ.
+Client pada aksi cetak kini menghubungkan socket secure yang terikat certificate
+sebelum klaim, default source uji konfirmasi native tanpa auto-consent. Timeout
+tetap UNKNOWN/no resend. Handshake hanya terbukti pada fixture, bukan QZ nyata.
 Belum ada secret provision, actual QZ trust/connection atau uji kertas baru.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
 NOT_BUSINESS_READY`; production `95a6eda` active unchanged.
