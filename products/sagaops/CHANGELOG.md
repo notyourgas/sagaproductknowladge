@@ -1,5 +1,37 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - SagaPOS menautkan kejadian terlambat yang sudah tercakup hitungan final
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
+Source diuji`6780e65ffa8a2f8df94667e9125174c82ac6fe6b`,ledger
+`f5e5f0bbd3e51094246839dc034c079db4527eed`,pushed pada
+`codex/sagapos-foundation-20261014`. Sebelumnya review kejadian offline tetap
+menghalangi meskipun pemakaian fisiknya sudah masuk hitungan final. Kini Owner
+aktif pada outlet dapat memeriksa bukti snapshot, memasukkan alasan dan
+mengonfirmasi cakupan fisik. Resolusi ditambahkan ke audit, terikat review asli,
+fingerprint kejadian dan hash hitungan. Replay tidak menjadi pemakaian stok kedua.
+Kejadian/review/periode asli tetap utuh; tanpa efek stok/cash/order baru.
+Collision lain, resep tidak lengkap atau bukti tidak cocok tetap diblokir.
+Antrean server kosong tetap bukan bukti semua perangkat sudah sinkron.
+
+14focused/regression+fullcheck1107/core37/client504/TypeScript PASS pada JS app
+identik; final delta CSS/nativefixture diperiksa syntax dan2browser tests390/1440,
+geometry/Axe0 serta screenshot. NativePG18:16TAP termasuk parent/old regressions,
+bukan16journey operator. Current runtime-role nonsuperuser/NOBYPASSRLS, revocation,
+foreignscope, cold/concurrent replay sekali, fault rollback dan nextperiod PASS.
+Dua focusedFAIL dan satu nativeFAIL fixture dipertahankan, bukan reset gate.
+Grant kanonik diterapkan hanya pada disposable, tidak mengubah izin production.
+
+Production11.34WIB ready,active`95a6eda`,rollback`2a18c9d`,GATEWAY/SaaSCASH
+unchanged; tidak ada artifact/deploy/activation/authenticatedUAT baru.
+Scope baru hanya disposition Owner primary untuk pemakaian yang tercakup count.
+Koreksi berdampak stok/collision, Team/SaaS disposition, laporan transaksi setelah
+koreksi, resolved-intent readback/history, actualrole/lowstock/device/calendar,
+final workday/load/restart/restore dan compatible rollback/Linux/UAT masih OPEN.
+Calon environment cloud existing ditemukan dari riwayat, belum diverifikasi kini;
+tidak ada pesan task/build/config/resource berbayar atau servingVPSbuilder dibuat.
+Pekerjaan printer tetap terpisah. Tidak menaikkan skor readiness keseluruhan.
+
 ## 2026-10-15 - USB terdeteksi; permintaan driver ke vendor disampaikan
 `CONFIRMED`: unit terdeteksi OK, runtime fixture tetap aktif. Satu permintaan
 driver Windows11x64 signed/model-matched/HTML-logo/80mm dikirim ke kontak dukungan
