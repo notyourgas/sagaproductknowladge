@@ -1,4 +1,17 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Editor nota v3 tervalidasi lokal
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: source
+`d08e11815bf9d951f9e5a830537cad6636a12857` pushed. Owner dapat mengatur
+visibilitas bagian nota, logo/header/footer/sosial, layout kafe ringkas dan
+feed tambahan nominal mm melalui draft/versioning existing. Nominal transaksi
+dan byte nota v2 tetap; snapshot RAW baru berversi. 69 tes terkait dan
+pemeriksaan statis (1106 modul, 37 migrasi, TypeScript) PASS; desktop/mobile diperiksa. Runtime lokal
+sintetis diuji, bukan aktivasi production atau TEST kertas. Production793dd76
+dibaca kembali ready, tidak dideploy pada milestone ini. Kalibrasi/QZ trusted,
+intent cetak atomik setelah pembayaran, consumer commissioned dan rilis masih OPEN.
+[Batas implementasi](https://github.com/notyourgas/sagaops/blob/d08e11815bf9d951f9e5a830537cad6636a12857/docs/RECEIPT_EDITOR_V3_IMPLEMENTATION_20261016.md).
+
 ## 2026-10-15 - RAW length bench lulus; transport masih HOLD
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: source

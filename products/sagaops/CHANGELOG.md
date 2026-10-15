@@ -1,4 +1,17 @@
 # SagaOPS Changelog
+## 2026-10-16 - Kontrol desain nota per bagian dan preset kafe
+
+- CONFIRMED, sumber instruksi Andreas dan commit
+  `d08e11815bf9d951f9e5a830537cad6636a12857`, pushed branch printer.
+- Sebelumnya kontrol ringkasan/header/footer terbatas; sekarang v3 menambah
+  visibilitas per-field, layout inline/rapat, logo/margin/section gap dan feed
+  nominal mm. SAVE/publish/restore existing; TEST dipin ke revisi/scope.
+- 69 tes terkait dan pemeriksaan statis (1106 modul, 37 migrasi, TypeScript) PASS; preview desktop/mobile
+  dan SAVE pada runtime sintetis diverifikasi. Tidak ada TEST fisik atau deploy.
+- IMPLEMENTED_NOT_DEPLOYED; byte v2, uang, auth dan hardware OFF tetap.
+  Production793dd76 read-back ready. Next: data projection yang kurang,
+  kalibrasi/trusted bridge, atomic intent/consumer, acceptance dan guarded release.
+
 ## 2026-10-15 - RAW feed dan opt-in cutter teruji lokal
 
 CONFIRMED dari executor/test source

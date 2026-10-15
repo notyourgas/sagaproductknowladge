@@ -1,4 +1,15 @@
 # Saga Product Knowledge Changelog
+## 2026-10-16 - Sync receipt editor v3 local milestone
+
+CONFIRMED, Andreas meminta implementasi desain nota configurable end-to-end.
+Source `d08e11815bf9d951f9e5a830537cad6636a12857` pushed; knowledge main HEAD.
+Produk SagaOPS/SagaPOS: editor v3 sekarang implemented/local validated,
+69 tes terkait tanpa skip dan pemeriksaan 1106 modul, 37 migrasi serta TypeScript PASS. Tidak mengubah uang,
+historical v2, production793dd76 atau aktivasi hardware. Fitur silent auto-print
+belum selesai; next data projection/calibration/trust/atomic intent/consumer/
+acceptance/release. PRODUCT, DOSSIER, product/portfolio/root changelog, master,
+GAPS dan SYNC_STATUS diselaraskan; pricing dan governance tidak berubah.
+
 
 ## 2026-10-15 - SagaView: exception exact-pair sah, recovery tetap tertahan
 

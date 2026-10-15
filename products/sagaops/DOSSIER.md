@@ -1,4 +1,22 @@
 # SagaOPS Dossier
+## 2026-10-16 - Receipt editor v3, local validated only
+
+CONFIRMED: source `d08e11815bf9d951f9e5a830537cad6636a12857` pada branch
+printer menambah kontrol per-field dan preset kafe tanpa framework/DDL baru.
+Draft v2 diklon ke v3 untuk edit dan harus SAVE sebelum TEST/publish; active
+dan dokumen historis tidak ditulis ulang. Total/identitas/marker/refund tetap
+terlindungi; toggle bukan pengaturan perhitungan biaya.
+
+RAW snapshot v2 mengikat template/feed-mode nominal mm dan byte final;
+snapshot/renderer v1 tetap kompatibel. Waktu nota adalah waktu penyusunan
+dokumen yang dibekukan, bukan bukti kertas tercetak. TEST dashboard mengikat
+revisi dan scope. 69 tes terkait PASS tanpa skip; 1106 modul, 37 migrasi dan TypeScript PASS.
+Preview 390 px muat; 320 px mempunyai scroll horizontal. Driver, trust dan production
+tidak berubah. Native Linux/QZ/file-only kandidat baru dan hardware belum diuji.
+Nama kasir/meja/antrean/bank tidak direkayasa; perlu projection authoritative
+sebelum toggle tambahan. Auto-payment intent dan commissioned consumer belum
+diimplementasikan. Production793dd76 ready pada read-back; bukan BUSINESS_READY.
+
 ## 2026-10-15 - Native RAW file-only qualification
 
 CONFIRMED, source `c40d573dee5ba2936af517a63151d9791da65c2e` pushed branch

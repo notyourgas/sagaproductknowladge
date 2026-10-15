@@ -1,4 +1,15 @@
 # Gaps dan Keputusan Founder
+## 2026-10-16 - Editor nota selesai lokal; automatic-print gap tetap terbuka
+
+CONFIRMED source `d08e11815bf9d951f9e5a830537cad6636a12857`: editor/schema/
+snapshot v3 dan 69 tes terkait PASS. OPEN: field kasir/meja/antrean/bank memerlukan
+snapshot data sah; final footer-to-cut distance memerlukan kalibrasi perangkat;
+bridge/trust/signing nyata belum qualified. Feed mm adalah nominal tambahan,
+bukan bukti ukuran fisik. Durable intent pada commit pembayaran dan consumer
+production belum diimplementasikan. Lanjutkan kontrak existing dan acceptance
+sebelum guarded release; jangan reset startup budget, flip simulation/hardware
+flag atau menyamakan mock/signature tests dengan silent print production.
+
 
 ## 2026-10-15 - SagaView: exception exact-pair sah, recovery tetap tertahan
 

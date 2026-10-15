@@ -1,4 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
+## 2026-10-16 - SagaPOS editor nota v3 belum production
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED, source
+`d08e11815bf9d951f9e5a830537cad6636a12857` pushed: Owner draft editor
+menawarkan toggle per bagian, custom branding/footer, preset kafe dan feed
+nominal mm. Nota lama/nominal tetap; 69 tes terkait, 1106 modul, 37 migrasi dan TypeScript
+PASS, desktop/mobile dan local synthetic SAVE diverifikasi. Production793dd76
+tetap ready pada read-back, tanpa deploy. Jangan menjualnya sebagai silent
+auto-print siap pakai: kalibrasi/trusted QZ, atomic paid-event intent,
+commissioned consumer, native/physical qualification dan rilis belum selesai.
+Pricing/payment scope tidak berubah; BUSINESS_READY tidak diklaim.
+
 
 ## 2026-10-15 - SagaView: exception exact-pair sah, recovery tetap tertahan
 

@@ -1,4 +1,12 @@
 # Portfolio Changelog
+## 2026-10-16 - SagaPOS receipt-design controls tervalidasi lokal
+
+CONFIRMED, source `d08e11815bf9d951f9e5a830537cad6636a12857`: kontrol
+per-field/preset kafe/feed mm dan snapshot versioning; 69 tes terkait dan pemeriksaan statis PASS.
+Berubah pada source/editor lokal, bukan production793dd76 yang tetap ready
+saat read-back. Bridge/calibration dan implementasi automatic paid-event
+intent/consumer belum selesai; no physical TEST/deploy/BUSINESS_READY claim.
+
 
 ## 2026-10-15 - SagaView: exception exact-pair sah, recovery tetap tertahan
 
