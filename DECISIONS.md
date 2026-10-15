@@ -1,5 +1,22 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-250 - SagaView physical-UAT evidence exception exact pasangan Oktober
+
+- Tanggal: 15 Oktober 2026; pemberi keputusan Andreas / Owner; klasifikasi CONFIRMED.
+- Keputusan: terima exception evidence physical UAT hanya untuk Studio
+  `dcb5d49a77ffb56d64ae5a3608e0e30f2b3b0661` + backend
+  `76e01c7f85064abcebcc3ea36ccf44286489d42b`, sesuai jawaban eksplisit Owner.
+- Alasan: Owner menerima risiko perangkat/printer belum diuji.
+- Alternatif: menyelesaikan physical UAT exact pasangan sebelum release.
+- Dampak: receipt v2 lulus validator native dan berlaku sampai 16 Oktober 2026 pukul 13.21 WIB.
+  Canonical UAT, pilot dan BUSINESS_READY belum diterima; source/test, recovery,
+  capacity, lock, runtime dan rollback tidak di-waive. Source baru perlu binding
+  exception yang sesuai. Tidak ada deployment/migration dari keputusan ini.
+- Status: approval CONFIRMED; release tetap NO_GO karena browser/recovery/capacity.
+- Dokumen: [status redacted](docs/releases/sagaview-owner-exception-status-20261015.md),
+  [SagaView Product](products/sagaview/PRODUCT.md), [Gaps](GAPS.md).
+
+
 ## DEC-249 - SagaPOS prioritaskan dialog cetak browser tanpa signing QZ
 
 | Field | Isi |

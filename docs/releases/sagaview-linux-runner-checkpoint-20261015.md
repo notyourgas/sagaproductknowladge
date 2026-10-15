@@ -1,5 +1,9 @@
 # SagaView: checkpoint Linux runner, 15 Oktober 2026
 
+> Update 15 Oktober 2026: exception Owner exact pasangan sudah diterima dan
+> validator native PASS; sampai 16 Oktober 2026 pukul 13.21 WIB. CI/recovery/capacity tetap NO_GO.
+> [Status terkini](sagaview-owner-exception-status-20261015.md). Bagian di bawah merupakan checkpoint sebelum approval diterima.
+
 ## Tujuan
 
 `CONFIRMED` untuk fakta source, hasil pemeriksaan dan blocker di bawah.

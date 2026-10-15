@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-15 - SagaView: exception Owner diterima, gate software/recovery tetap terbuka
+
+`CONFIRMED`: Andreas memberi exception physical-UAT evidence untuk exact Studio
+`dcb5d49a77ffb56d64ae5a3608e0e30f2b3b0661` + backend
+`76e01c7f85064abcebcc3ea36ccf44286489d42b`; receipt v2/native validator PASS,
+berlaku sampai 16 Oktober 2026 pukul 13.21 WIB. Source/branch/artifact/runtime tetap sama.
+PHYSICAL_UAT_EVIDENCE_WAIVED_BY_OWNER / UAT_EVIDENCE_NOT_VERIFIED.
+Browser CI 177 PASS/24 FAIL/9 SKIP, recovery executor dan kapasitas masih NO_GO.
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Alasan: blocker approval diperbarui berdasarkan jawaban langsung Owner; tidak
+me-waive test/recovery/runtime atau berlaku otomatis pada SHA pengganti.
+[Sumber keputusan, batas dan next action](docs/releases/sagaview-owner-exception-status-20261015.md).
+
 ## 2026-10-15 - SagaView: koreksi runner Linux, belum activation
 
 `CONFIRMED`: Studio final `dcb5d49a77ffb56d64ae5a3608e0e30f2b3b0661`
