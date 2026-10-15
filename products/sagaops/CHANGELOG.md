@@ -1,5 +1,44 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Wave 3: koreksi stok, collision dan transaksi asli/setelah koreksi
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+Source diuji `24cf6e131fc1e8ff32086e60c7835a5e84156678`, ledger
+`91f18c201fba0d5b51302c7d65eef6aec5a2796c`, branch
+`codex/sagapos-foundation-20261014`, clean/pushed. Native Owner dapat mencatat
+hitungan fisik sekarang atau mempertahankan fakta asli pada collision. Koreksi
+tertaut memakai mutasi domain existing dan satu transaksi stok/audit/outbox;
+retry tidak mengulang penjualan/pembayaran. Fakta asli dan periode final tetap.
+Laporan membedakan net aktivitas asli dari koreksi tertaut/reversal; CSV terikat
+fingerprint tampilan. Ini bukan saldo hari ini atau pengubahan periode historis.
+Primary Owner saja; tidak menambah akses Team/SaaS atau mengubah grant produksi.
+
+Bukti: 14 tes pure/browser pada 390/1440 dan Axe0, full check1109 modul/37migrasi/
+504clientfiles tanpa retired refs, TypeScriptPASS. Native PostgreSQL26tes/0fail/
+0skip mencakup runtime role/RLS, stale/revoked/scope, replay/coldread/lostACK,
+concurrency/fault rollback, nilai nol/plus/minus, original/adjusted/reversal/CSV.
+Final hanya memperbaiki tiga kunci fixture; seluruh input runtime/browser/check/
+types identik dengan kandidat focused yang lulus. Dua kegagalan awal retained,
+bukan dihapus; ini bukan full regression atau UAT operator.
+
+Satu sandbox gratis Hobby terotorisasi membuktikan runtime Linux terpisah:
+Node22.22.1 dengan checksum resmi, PHP8.5.4/PDO, PostgreSQL18.6, nonroot, dan
+restore/restart database sintetis. Dihentikan setelah326.074detik,2vCPU/4GB,
+nonpersistent/tanpa port publik, tanpa source/credential produksi. Ini hanya
+kelayakan runtime: belum npmci/Chromium/qualification produk/artifact atau deploy.
+Tidak ada pembelian, upgrade, BIOS/restart, hosted Actions atau VPS produksi builder.
+
+Production readback14.42.59WIB active `dc0e7dcbe471f0c5cdb722bb862b1f5dfacadb81`,
+rollback `3cdea61f0bdfc932ec460e3987ab294aef8f821f`, service/readytrue,
+GATEWAY dan SaaS CASH tetap; pergerakan rilis berasal lane printer terpisah,
+bukan deploy fitur stok ini. Wave3/UAT/operator/BUSINESS_READY belum selesai.
+Sisa: Linux qualification kandidat exact dan pasangan Platform; actual-role/
+lowstock/device/calendar/fullworkday/restart/load; encrypted restore serta
+behavioral rollback; artifact/expected-current/lock/atomic activation/authsmoke/
+monitoring dan penerimaan operator. FullworkdayFAIL3 tetap dipertahankan.
+Sumber: instruksi Andreas, commit/tests/runner dan readback runtime aktual.
+[Ledger dan strategi penutupan](https://github.com/notyourgas/sagaops/blob/91f18c201fba0d5b51302c7d65eef6aec5a2796c/docs/T1_CATALOG_CHOICES_20261014.md).
+
 ## 2026-10-15 - Tombol layar penuh kiosk selesai secara lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

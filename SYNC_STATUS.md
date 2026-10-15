@@ -1,5 +1,27 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-15 - Wave 3 koreksi stok lokal dan kelayakan builder gratis
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`. Native Owner dapat
+menyelesaikan collision dengan mempertahankan original atau memasukkan hitungan
+fisik terkini yang tertaut; transaksi asli/koreksi/reversal dan CSV dibedakan.
+Tidak mengulang sale/payment atau mengubah closing final. Source diuji
+`24cf6e131fc1e8ff32086e60c7835a5e84156678`, ledger
+`91f18c201fba0d5b51302c7d65eef6aec5a2796c`, branch
+`codex/sagapos-foundation-20261014`. Focused14/native26,check1109/37migrasi/
+TypeScript/browser390/1440+Axe0PASS, kegagalan awal retained; final fixture-only
+mapping mempertahankan input runtime yang diuji. Bukan full regression/UAT.
+Satu free Hobby Linux sandbox membuktikan Node22.22.1/PHP8.5.4/PG18.6/nonroot/
+synthetic restore+restart; dihentikan326.074detik tanpa snapshot/source/secrets.
+Belum product qualification/npmci/Chromium/artifact/deploy. Fresh14.42.59WIB
+production printer lane active`dc0e7dc`/rollback`3cdea61`,readytrue,
+GATEWAY/SaaSCASH tetap. Scope stok ini source-only, bukan aktivasi atau
+BUSINESS_READY. Next: bounded Linux qualification baru terotorisasi, sisa actual-role/
+lowstock/device/calendar/fullworkday/recovery lalu release gates+operator UAT.
+Alasan: menutup penanganan stok nyata tanpa mengubah fakta lama atau pembayaran.
+Sumber: Andreas, exact commits/tests/live; sync partially accepted.
+[Detail SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-15 - Tombol fullscreen kiosk: local validated
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.

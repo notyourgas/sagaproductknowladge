@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-253 - Satu sandbox gratis untuk kelayakan builder SagaPOS
+
+- Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
+- Keputusan: siapkan satu sandbox Linux sementara di akun Hobby terverifikasi,
+  maksimal15menit,2vCPU/4GB; gunakan kuota gratis dan berhenti bila habis.
+- Alasan: mencari builder terpisah tanpa BIOS/restart atau VPS serving sebagai builder.
+- Alternatif ditolak: upgrade/biaya baru, hosted GitHub packaging, source credentials
+  di VM, pemakaian production sebagai builder, dan menganggap persiapan sebagai deploy.
+- Batas: izin ini feasibility saja, tanpa deploy, tambahan kapasitas, atau sandbox kedua.
+- Hasil: runtime Node22.22.1/PHP8.5.4/PostgreSQL18.6/nonroot serta database sintetis
+  restore/restart berhasil; VM nonpersistent dihentikan setelah326.074detik,
+  tanpa source/secret/snapshot/port publik. Product qualification dan artifact belum.
+- Status: keputusan dilaksanakan; bukan izin sesi baru, aktivasi atau BUSINESS_READY.
+- Dokumen: [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-252 - Arsip cache terverifikasi sebelum cleanup staging SagaPOS
 
 - Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
