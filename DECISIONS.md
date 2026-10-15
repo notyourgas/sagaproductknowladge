@@ -1,4 +1,21 @@
 # Riwayat Keputusan Saga Product Knowledge
+
+## DEC-259 - Exception exact-pair akses/admin SagaView dan cleanup terbatas
+
+- Tanggal: 15 Oktober 2026; klasifikasi/status CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: terima exception physical-UAT hanya exact Studio 446c518bf2e68b7ecadb54b779769a3ef465c25a
+  + backend af6c139f4063258300e94f3f23a93a684c4de51b, dengan risiko perangkat/printer belum diuji.
+  Izinkan cleanup hanya restore disposable task ini yang telah disebutkan secara privat.
+- Sumber langsung: "Oke aku izinkan semuanya demi kebaikan dan deployment berjalan",
+  sebagai jawaban kontekstual atas kedua pertanyaan spesifik tersebut.
+- Alasan: menutup keputusan yang diperlukan untuk melanjutkan deployment yang sudah diotorisasi.
+- Alternatif: menunggu bukti physical UAT canonical; tidak membypass technical gates.
+- Dampak: receipt v2 validator PASS, tetapi recovery cleanup masih ditolak automatic
+  approval review; perintah tidak dijalankan, receipt restore ineligible. Production
+  tetap baseline; semua gate teknis dan batas provider/data/produk lain dipertahankan.
+- Human UAT, pilot dan BUSINESS_READY belum diterima. Exception lama tetap historis.
+- Dokumen terkait: [checkpoint](docs/releases/sagaview-access-admin-release-checkpoint-20261015.md),
+  [SagaView](products/sagaview/PRODUCT.md), [Gaps](GAPS.md).
 ## DEC-258 - Sandbox integrasi untuk packaging dan recovery sintetis, deploy HOLD
 
 - Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.

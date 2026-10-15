@@ -1,5 +1,35 @@
 # SagaView akses/admin: checkpoint deployment
 
+## 2026-10-15 - SagaView: exception exact-pair sah, recovery tetap tertahan
+
+`CONFIRMED`: Andreas menjawab langsung dua keputusan tertunda: exception
+physical-UAT untuk Studio `446c518bf2e68b7ecadb54b779769a3ef465c25a` + dedicated backend
+`af6c139f4063258300e94f3f23a93a684c4de51b`, serta cleanup hanya restore disposable milik task ini.
+Native validator receipt v2 PASS; PHYSICAL_UAT_EVIDENCE_WAIVED_BY_OWNER /
+UAT_EVIDENCE_NOT_VERIFIED. Risiko perangkat/printer belum diuji diterima;
+semua gate teknis tetap wajib. Ini memperbarui blocker keputusan pada checkpoint
+sebelumnya; bukan physical UAT PASS atau persetujuan produk/provider/data lain.
+Cleanup tetap ditolak automatic approval review: `blocked by policy`, bahkan
+setelah izin spesifik. Perintah tidak dijalankan; tidak dicoba lewat mekanisme
+lain. Data disposable dibatasi ke pengguna lokal dan SYSTEM, MySQL/listener
+berhenti; backup terenkripsi dipertahankan. Receipt restore tetap ineligible
+karena cleanup belum selesai, dan binding lama sudah lewat satu jam.
+Runtime diperiksa ulang 2026-10-15T16:46:08Z: Studio c3170e0/b06780e backend,
+service aktif, HTTPS health tersedia, rollback tersedia dan lock bebas.
+Sampel MemAvailable 1.096.752 KiB berada di bawah ambang build 1.126.400 KiB;
+kapasitas tetap harus diperiksa ulang tepat sebelum mutasi, tanpa menurunkan guard.
+Tidak ada deployment baru, migration atau switch current. Kedua kandidat tetap
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Next action: cleanup manual hanya direktori restore disposable yang disampaikan
+privat; executor kemudian membuktikan cleanup, membuat backup/restore baru yang
+fresh dan bound, memeriksa kapasitas/current/lock, lalu backend → Studio melalui
+runner existing. Tidak meminta ulang izin deployment umum.
+
+## Histori checkpoint sebelum jawaban Owner
+
+Bagian berikut dipertahankan sebagai histori pemeriksaan 14:35 UTC; status
+keputusan Owner dan next action telah digantikan pembaruan di atas.
+
 ## Tujuan
 
 Mencatat source dan validasi rilis serta gate yang harus diselesaikan sebelum aktivasi.
