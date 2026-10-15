@@ -1,4 +1,12 @@
 # Portfolio Changelog
+## 2026-10-15 - SagaPOS handoff stok dan integrasi release
+
+CONFIRMED: satu journey PG18 nyata+24tes lokal PASS, CSV UTC diperbaiki;
+kandidat42f7ab9e mempertahankan printer/kiosk. Linux aplikasi+31regresi gabungan
+dan recovery sintetis PASS; packaging BLOCKED, artifact belum ada. Ledger1b5b74d5,
+sandbox stopped780847ms, batas koreksi dipatuhi; deploy HOLD.
+Tidak deploy/mengubah payment atau produk lain. [Provenance dan residual](../products/sagaops/PRODUCT.md).
+
 
 ## 2026-10-15 - Nota: auto-cut terbukti, kandidat panjang halaman lokal
 

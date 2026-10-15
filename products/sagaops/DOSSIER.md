@@ -1,4 +1,11 @@
 # SagaOPS Dossier
+## 2026-10-15 - Handoff stok dan kandidat integrasi Wave 3
+
+CONFIRMED: handoff PG18 nyata dan perbaikan CSV UTC lulus lokal; kandidat gabungan
+mempertahankan printer/kiosk. Linux aplikasi PASS, recovery sintetis+old HPP
+reader PASS, packaging BLOCKED pada stdlib builder setelah batas koreksi.
+Deploy HOLD; bukan production recovery/UAT. Lihat [bukti dan batas terbaru](PRODUCT.md).
+
 
 ## 2026-10-15 - Nota: auto-cut terbukti, kandidat panjang halaman lokal
 

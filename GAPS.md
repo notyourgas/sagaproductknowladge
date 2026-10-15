@@ -1,4 +1,14 @@
 # Gaps dan Keputusan Founder
+## 2026-10-15 - SagaPOS Wave 3 residual setelah handoff native
+
+CONFIRMED: native handoff+CSV UTC lulus; kandidat integrasi mempertahankan lane
+printer/kiosk. OPEN: Team/SaaS handoff, notifikasi penerima/dedupe/revocation,
+unknown offline devices/cutoff, oldfullworkdayFAIL3/load. Linux aplikasi/recovery
+sintetis PASS pada42f7ab9e, tetapi packaging BLOCKED karena full Python stdlib belum
+tersedia pada builder; dua koreksi habis, artifact tidak ada. Tetap OPEN:
+encrypted production recovery/behavioral rollback dan operator UAT.
+Deploy HOLD, bukan kegagalan izin yang perlu diakali. [Batas bukti](products/sagaops/PRODUCT.md).
+
 
 ## 2026-10-15 - Nota: auto-cut terbukti, kandidat panjang halaman lokal
 

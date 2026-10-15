@@ -1,4 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
+## DEC-258 - Sandbox integrasi untuk packaging dan recovery sintetis, deploy HOLD
+
+- Tanggal:15 Oktober2026; pemberi keputusan Andreas; klasifikasi CONFIRMED.
+- Keputusan: satu sandbox gratis baru maksimal15menit2vCPU/4GB untuk tes kandidat
+  gabungan, packaging dan recovery sintetis/disposable. Sesi lama sudah ditutup.
+- Alasan: menyiapkan kandidat yang tidak menimpa fitur printer/kiosk aktif.
+- Alternatif ditolak: mengulang izin sesi lama, kapasitas berbayar, production
+  sebagai builder, backup data production atau deploy pada scope persiapan ini.
+- Dampak: sumber exact harus diuji ulang, failures retained dan allowance dibatasi;
+  artifact/restore sintetis tidak menggantikan recovery production atau UAT.
+- Dokumen terkait: [SagaPOS](products/sagaops/PRODUCT.md).
+
 
 ## DEC-257 - Exception physical UAT exact pasangan SagaView final
 

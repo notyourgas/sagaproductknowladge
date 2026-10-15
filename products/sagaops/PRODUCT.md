@@ -1,4 +1,44 @@
 # SagaOPS Product Knowledge
+## 2026-10-15 - Wave 3: handoff native dan kandidat integrasi, deploy HOLD
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Perbaikan operasional
+bd682399c86b6f0ccf1eff7ec637ec69a11b210f menormalkan angka CSV dan waktu ISO UTC.
+Barang masuk replay -> waste/review -> hitungan karton/ml -> recount -> posting
+sekali -> cold read -> laporan -> periode berikutnya lulus satu journey PG18;
+24 tes closing/Team lulus. Kueri staf memakai serving role/RLS; writer canonical
+fixture-admin, bukan bukti seluruh role SaaS. Tidak mengubah grant/data production.
+
+Kandidat gabungan 42f7ab9e5a2aedad0073ccfb5d6bed0e07e2fdd2 pada
+codex/sagapos-wave3-release-20261015 mempertahankan lane production793dd760,
+printer dan kiosk. Static1135modul/37migrasi/516clientfiles/0retiredrefs+TypeScript
+lulus pada input aplikasi identik. Review Windows sebelumnya FAIL deadline
+(18pass/4failed file processes/1Linux-only skip), bukan full PASS.
+Koreksi fixture printer hanya membekukan waktu sesudah sertifikat sintetis dibuat;
+validasi sertifikat production tidak dilonggarkan. Ledger final
+1b5b74d50eb28fa01fd28251a89e775f641aa360 adalah delta dokumentasi saja.
+
+Linux final pada exact42f7ab9e+Platformd1a1a3b PASS: static1136modul/37migrasi/
+523clientfiles/0retiredrefs+TypeScript,36tes akses/SaaS,2journey native SaaS,
+26tes native disposition/count/seal,1native staff handoff,14report/browser dan
+31regresi gabungan stok/printer/kiosk/release, semua0fail/0skip. Counts overlap,
+bukan full acceptance Wave3. Encrypted synthetic PG restore mempertahankan
+2count/1period/940stok; reader HPP source production793dd760 tetap membaca fakta.
+Bukan restored runtime-role grants atau behavioral rollback production.
+
+PACKAGING_BLOCKED: awal fixture waktu gagal, koreksi1 aplikasi lulus tetapi Python
+builder belum ada; koreksi2 Python minimal tidak memuat tarfile. Stop sesudah dua
+koreksi, failure retained, artifact/checksum rilis belum terbentuk. Butuh FULL
+python3/stdlib dan preflight import lewat helper terisolasi sebelum percobaan
+packaging baru yang diotorisasi; jangan bypass isolasi atau reset gate lama.
+Sandbox dihentikan780847ms dan statusstopped dicek independen, Hobby sebelum/
+sesudah, tanpa upgrade/VM tambahan/port/snapshot. Bukti unduhan checksum matched.
+
+Andreas mengizinkan satu sandbox gratis baru maksimal15menit2vCPU/4GB untuk tes,
+packaging dan recovery sintetis, tanpa deploy/backup production/biaya tambahan.
+Sisa: Team/SaaS handoff dan notifikasi role/dedupe, unknown devices/cutoff,
+fullworkdayFAIL3/load, encrypted production recovery/behavioral rollback dan
+operator UAT. Jangan menyamakan bukti sintetis atau artifact dengan BUSINESS_READY.
+
 
 ## 2026-10-15 - Nota: auto-cut terbukti, kandidat panjang halaman lokal
 

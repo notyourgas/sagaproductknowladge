@@ -1,4 +1,16 @@
 # SagaOPS Changelog
+## 2026-10-15 - Handoff stok nyata, CSV UTC dan kandidat gabungan
+
+CONFIRMED: source bd682399 -> kandidat42f7ab9e pada branch release terpisah.
+Before bukti stok staff masih mock dan CSV waktu lokal; after satu journey PG18
+nyata+24tes PASS, ISO UTC dan quantity konsisten. Production tidak berubah oleh
+pekerjaan ini; kandidat mempertahankan source printer/kiosk yang sudah aktif.
+Linux aplikasi+31regresi gabungan dan recovery sintetis/old reader PASS;
+packaging FAIL setelah dua koreksi (Python minimal tanpa tarfile), artifact
+belum ada. Sandbox stopped780847ms, checksum bukti matched. Ledger1b5b74d5,
+deploy HOLD, production recovery/UAT/BUSINESS_READY belum diterima.
+[Rincian, kegagalan retained dan residual](PRODUCT.md).
+
 
 ## 2026-10-15 - Nota: auto-cut terbukti, kandidat panjang halaman lokal
 
