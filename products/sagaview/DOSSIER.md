@@ -1,5 +1,26 @@
 # SagaView Dossier
 
+## 2026-10-15 - SagaView: artifact kandidat siap, HTTPS dipulihkan
+
+`CONFIRMED`: kandidat Studio `01bdf0648ce5ee80eca6a59c05099338b965f946`
+(`notyourgas/sagaview2`, `codex/sagaview-foundation-uiux-20261015`) dan backend
+`76e01c7f85064abcebcc3ea36ccf44286489d42b` (`notyourgas/sagabook`,
+`codex/sagaview-dependency-20261015`) sudah clean/immutable-packaged.
+354 unit/76 file, 210 browser unik, compiled SSR/CSP desktop/mobile,
+301 backend/7.406 assertions SQLite, runtime dependency audit dan target
+PHP 8.5/storage rehearsal PASS; hosted CI NOT_RUN. Ini LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+
+Runtime diverifikasi 15 Oktober 11:16 WIB tetap Studio `6f28cfee` /
+`20260930021641-6f28cfe`, backend `ee3ddeee` /
+`20260925094720-ee3ddee`. Rollback tersedia `20260925164446-fbc186a` dan
+`20260903003542-ceb3373`. HTTPS app/API dipulihkan sampai 13 Januari 2027;
+Card aktif, live-import nonaktif. Source aplikasi dan DNS tidak berubah.
+Promotion menunggu physical UAT exact pasangan atau exception Owner eksplisit,
+fresh encrypted backup/disposable restore binding, Linux Studio build dan
+runtime gates. Izin deploy umum bukan exception UAT; printer/pilot tetap terpisah.
+[Laporan artifact, source dan batas evidence](https://github.com/notyourgas/sagaview/blob/6c5fcdb7ba57e036b306ac11abcf0eb7493cc2fd/docs/deployment/sagaview-executor-checkpoint-2026-10-15.md).
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.

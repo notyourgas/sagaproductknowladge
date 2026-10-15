@@ -1,5 +1,19 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-15 - SagaView: checkpoint executor dan HTTPS
+
+`CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY`: kandidat Studio `01bdf06`
+dan backend `76e01c7` sudah immutable-packaged; 354 unit, 210 browser unik,
+301 backend test, compiled SSR/CSP dan target PHP/storage PASS. CI NOT_RUN.
+Source produksi tetap `6f28cfee` / `ee3ddeee`; HTTPS app/API pulih dengan
+sertifikat sampai 13 Januari 2027. Physical UAT exact pasangan/exception Owner,
+fresh backup/restore, Linux Studio dan runtime gates masih OPEN. Tidak ada
+perubahan source produksi, pricing/provider atau penerimaan printer/pilot.
+[Source/artifact/validasi dan gate](https://github.com/notyourgas/sagaview/blob/6c5fcdb7ba57e036b306ac11abcf0eb7493cc2fd/docs/deployment/sagaview-executor-checkpoint-2026-10-15.md).
+
+Accepted untuk fakta source/validasi/TLS; deployment keseluruhan partially accepted. Delapan dokumen diperbarui; raw log, credential, identitas customer/perangkat dan evidence restricted tidak dipublikasikan.
+
 ## 2026-10-15 - SagaPOS: perbandingan hitungan koreksi lokal
 
 `CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`.
