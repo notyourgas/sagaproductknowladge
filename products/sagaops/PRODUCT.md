@@ -41,7 +41,7 @@ Nota tersimpan tetap memakai snapshot asli, bukan profil terbaru.
 dua correction fixture dicatat, bukan full/native/paper acceptance.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
 NOT_BUSINESS_READY`. Production `95a6eda` tidak dimutasi oleh pekerjaan printer.
-Update11.12WIB: runtime fixture sudah aktif di loopback pada source yang sama;
+Update15Oktober: runtime fixture sudah aktif di loopback pada source yang sama;
 HTTP/asset current serta login dan Muat pengaturan dashboard dikonfirmasi.
 Profil browser80mm/feed15/QZOFF tersimpan lokal. Driver generik memiliki katalog
 Microsoft valid, tetapi masih Letter dan bukan bukti HTML/logo. Paket resmi yang

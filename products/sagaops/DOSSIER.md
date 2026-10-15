@@ -43,7 +43,7 @@ timeout, dialog ditutup, tanpa QZ/write bisnis/claim native. Snapshot tersimpan
 mempertahankan paper/feed/template walau profil PC berubah. Check/type PASS.
 Browser print di tes diganti counter; screenshot print-media bukan dialog native,
 PDF pagination, driver atau paper. Dua correction fixture selesai; batas full/320
-historis tidak direset. Update11.12WIB: runtime fixture source71581bc aktif pada
+historis tidak direset. Update15Oktober: runtime fixture source71581bc aktif pada
 loopback; asset browser guard current dan dashboard Muat pengaturan terverifikasi.
 Profil browser80mm/feed15/rawOFF disimpan lokal. Aksi TEST browser diminta sekali;
 pratinjau native tidak dapat diverifikasi tool, tab TEST ditutup tanpa menekan

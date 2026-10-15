@@ -23,7 +23,7 @@ rollback, builder Linux terpisah dan operatorUAT tetap OPEN.
 logo-ready/session guard;5tes terfokus+check/type PASS. Nota tersimpan tetap
 menggunakan snapshot. Ini LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
 NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY, bukan cetak fisik.
-Update11.12WIB: runtime fixture loopback source71581bc aktif, dashboard dimuat;
+Update15Oktober: runtime fixture loopback source71581bc aktif, dashboard dimuat;
 browser80mm/feed15/rawOFF tersimpan lokal. Driver generik Microsoft valid tetapi
 masih Letter; installer resmi unduhan ulang tetap NotSigned. Unit USB belum hadir
 saat cek. Driver grafis/paper dan dialog native belum terverifikasi; tidak menekan
