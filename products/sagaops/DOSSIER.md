@@ -1,12 +1,18 @@
 # SagaOPS Dossier
 
 ## 2026-10-15 - Validasi material signing dan expiry transaksi
-`CONFIRMED`, source `d66c417512b6c26d8a56753d324b2435bc347790`, parent `fe12a72`.
+`CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa`, parent
+`d66c417512b6c26d8a56753d324b2435bc347790`.
 Importer di memori memeriksa PKCS8 RSA2048/X509, pasangan public-private key,
 fingerprint serta validity leaf/optional intermediate. Expiry saat menunggu lock
 atau sebelum commit menolak issuance; expiry sesudah commit menahan respons tanpa
 menerbitkan ulang. Audit hanya menambah fingerprint publik, bukan material rahasia.
-76tes terfokus Windows/PGlite PASS dan check1102/core37/TypeScript PASS.
+Public certificate kini dibaca lewat current operator/Team permission, receipt
+dan terminal guard yang sama. Response no-store berisi certificate/fingerprint,
+validity dan identitas qualification, bukan private key/credential/signature.
+DefaultOFF/key-only/expired/revoked/foreign scope ditolak; read tidak menulis
+job/audit/sales dan tidak memulai QZ. OpenAPI tiga endpoint terkait diperbarui.
+79tes terfokus Windows/PGlite PASS dan check1102/core37/TypeScript PASS.
 Tidak ada material nyata yang diprovision, certificate diimpor, trust QZ dibuktikan
 atau koneksi native dibuat. Pemeriksaan pasangan bukan validasi PKIX/CRL.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /

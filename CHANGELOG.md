@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-15 - SagaPOS guarded public-certificate delivery
+`CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa`, parent `d66c417`.
+Pembacaan certificate publik dilengkapi untuk integrasi browser, tanpa private key,
+business writes atau koneksi QZ.79tes lokal/check PASS;8dokumen disinkronkan.
+Production `95a6eda` unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Sisa mode/trust, actual handshake,
+qualification Linux/recovery dan physical canary. Tidak ada keputusan/biaya baru;
+main HEAD setelah push menjadi provenance knowledge.
+
 ## 2026-10-15 - SagaPOS validasi material signing di memori
 `CONFIRMED`; sumber implementasi/tests `d66c417512b6c26d8a56753d324b2435bc347790`.
 Sebelumnya signer memakai key fixture saja; kini import pasangan/fingerprint dan

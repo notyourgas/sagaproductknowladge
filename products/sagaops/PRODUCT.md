@@ -1,11 +1,15 @@
 # SagaOPS Product Knowledge
 
 ## 2026-10-15 - Readiness teknis material signing nota
-`CONFIRMED`: source `d66c417512b6c26d8a56753d324b2435bc347790` pushed.
+`CONFIRMED`: source `ab045b4976bb9a79eca856b75ed977ff18481bfa` pushed,
+melanjutkan material pair `d66c417512b6c26d8a56753d324b2435bc347790`.
 Service kini memeriksa pasangan key-certificate, fingerprint dan masa berlaku
-sebelum penerbitan signature, termasuk saat transaksi tertunda.76tes terfokus
+sebelum penerbitan signature, termasuk saat transaksi tertunda.79tes terfokus
 Windows/PGlite dan check1102/core37/TypeScript PASS.
 Ini validasi material di memori saja, bukan provision key, trust QZ atau uji fisik.
+Pembacaan public certificate oleh browser kini tersedia hanya melalui sesi,
+izin dan terminal current dalam qualification lokal. Tidak mengirim private key,
+mengubah data atau membuka QZ. Kontrak OpenAPI signing/session/certificate tercatat.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
 NOT_BUSINESS_READY`. Production `95a6eda` active unchanged. Sisa retrieval/trust/
 handshake nyata, qualification Linux/recovery, physical UAT dan canary tetap terbuka.

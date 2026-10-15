@@ -1,11 +1,13 @@
 # Gaps dan Keputusan Founder
 
 ## 2026-10-15 - Material pair selesai lokal; trust dan commissioning terbuka
-`CONFIRMED`, source `d66c417512b6c26d8a56753d324b2435bc347790`: pair/fingerprint/
-expiry guards lokal PASS,76tes terfokus. Bukan trusted-QZ certificate atau key loader
+`CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa`: pair/fingerprint/
+expiry dan guarded public-certificate read lokal PASS,79tes terfokus. Bukan
+trusted-QZ certificate atau key loader
 runtime lengkap. `NEEDS CONFIRMATION`: pilihan mode/trust sebelumnya tetap pending.
 TODO executor: approved retrieval serta issuer/trust/CRL lifecycle dan secure
-handshake. TODO release/operator: Linux/native/restore/rollback qualification,
+handshake; endpoint public-certificate sudah tersedia, bukan koneksi native.
+TODO release/operator: Linux/native/restore/rollback qualification,
 reviewed unblock gate lama, final bench dan physical UAT/endurance/canary.
 Production `95a6eda` unchanged; hardware OFF, NOT_BUSINESS_READY.
 Tidak ada pembelian, import root/certificate, real enrollment/print atau deploy.

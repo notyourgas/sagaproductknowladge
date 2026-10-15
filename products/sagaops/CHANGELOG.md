@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-10-15 - Public certificate melalui guard kasir/terminal
+`CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa` pushed.
+API read-only serta OpenAPI melengkapi integrasi signing lokal.79tes/check PASS;
+belum native trust/connection, Linux atau paper acceptance. Production `95a6eda`
+unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
+NOT_BUSINESS_READY. Sisa actual approved handshake, qualification dan commissioning.
+
 ## 2026-10-15 - Material signing diperiksa sebelum issuance
 `CONFIRMED`, source `d66c417512b6c26d8a56753d324b2435bc347790` pushed.
 Pair/fingerprint/expiry guard termasuk delayed lock/commit;76tes terfokus

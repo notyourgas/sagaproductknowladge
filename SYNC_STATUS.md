@@ -2,9 +2,10 @@
 
 ## 2026-10-15 - Sinkronisasi material signing nota
 `CONFIRMED`, accepted dalam scope lokal: source
-`d66c417512b6c26d8a56753d324b2435bc347790` pushed, parent `fe12a72`.
-76tes terfokus Windows/PGlite dan check1102/core37/TypeScript PASS;8dokumen
+`ab045b4976bb9a79eca856b75ed977ff18481bfa` pushed, parent `d66c417`.
+79tes terfokus Windows/PGlite dan check1102/core37/TypeScript PASS;8dokumen
 diperbarui. Provenance dispatcher/stok sebelumnya dipertahankan.
+Delta: guarded public-certificate API dan OpenAPI terkait; bukan native handshake.
 `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED /
 NOT_BUSINESS_READY`; production `95a6eda` active unchanged.
 Main HEAD setelah push menjadi SHA sinkronisasi; trust/native/physical/release

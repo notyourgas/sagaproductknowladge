@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-15 - SagaPOS public certificate lokal
+`CONFIRMED`, source `ab045b4976bb9a79eca856b75ed977ff18481bfa`: guarded read untuk
+browser dan kontrak OpenAPI,79tes/check PASS. Bukan provision/trust/connection QZ.
+Production `95a6eda` unchanged; LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY. Mode/trust, native qualification
+dan physical canary masih terbuka; produk lain/pricing/provider tidak berubah.
+
 ## 2026-10-15 - SagaPOS readiness material signing lokal
 `CONFIRMED`, source `d66c417512b6c26d8a56753d324b2435bc347790`: pasangan key/
 certificate, fingerprint dan expiry transaksi diperiksa;76tes terfokus/check PASS.
