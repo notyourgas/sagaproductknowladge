@@ -19,7 +19,7 @@ Card aktif, live-import nonaktif. Source aplikasi dan DNS tidak berubah.
 Promotion menunggu physical UAT exact pasangan atau exception Owner eksplisit,
 fresh encrypted backup/disposable restore binding, Linux Studio build dan
 runtime gates. Izin deploy umum bukan exception UAT; printer/pilot tetap terpisah.
-[Laporan artifact, source dan batas evidence](https://github.com/notyourgas/sagaview/blob/6c5fcdb7ba57e036b306ac11abcf0eb7493cc2fd/docs/deployment/sagaview-executor-checkpoint-2026-10-15.md).
+[Laporan artifact, source dan batas evidence](../../docs/releases/sagaview-executor-checkpoint-20261015.md).
 
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 

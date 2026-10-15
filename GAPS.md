@@ -10,7 +10,7 @@ Source produksi tetap `6f28cfee` / `ee3ddeee`; HTTPS app/API pulih dengan
 sertifikat sampai 13 Januari 2027. Physical UAT exact pasangan/exception Owner,
 fresh backup/restore, Linux Studio dan runtime gates masih OPEN. Tidak ada
 perubahan source produksi, pricing/provider atau penerimaan printer/pilot.
-[Source/artifact/validasi dan gate](https://github.com/notyourgas/sagaview/blob/6c5fcdb7ba57e036b306ac11abcf0eb7493cc2fd/docs/deployment/sagaview-executor-checkpoint-2026-10-15.md).
+[Source/artifact/validasi dan gate](docs/releases/sagaview-executor-checkpoint-20261015.md).
 
 ## 2026-10-15 - SagaPOS: perbandingan hitungan koreksi lokal
 
