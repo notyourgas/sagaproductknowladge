@@ -9,7 +9,9 @@ serta immutable package PASS. Jeda header, produk, garis dan pembayaran terpisah
 Agent Windows outbound HTTPS disiapkan untuk nota lunas kasir/kios tanpa dialog;
 QZ dan proteksi Windows tidak diubah. IMPLEMENTED_NOT_DEPLOYED untuk agent/writer;
 desain aktif masihv2/revisi4, enrollment/dispatch OFF, physical TEST belum dikirim.
-Akses Owner perlu dibuka kembali sebelum aktivasi. Bukan BUSINESS_READY.
+Akses Owner perlu dibuka kembali sebelum aktivasi. Berkas kandidat sudah
+STAGED_VERIFIED dan fresh candidate/rollback/candidate recovery PASS tanpa
+mengubah production. Aktivasi dan commissioning belum selesai; bukan BUSINESS_READY.
 
 ## 2026-10-16 - Pengingat stok tidak menganggap data kosong sebagai nol
 

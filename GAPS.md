@@ -6,7 +6,9 @@ arsip terenkripsi/offhost, content/hash verification dan preservasi Git borrower
 Active readercf393044/rollback42f7ab9e sehat, core37/GATEWAY unchanged.
 Kandidat5148d790 Linux102/102/immutable artifactPASS, Windows file-port proofPASS.
 Tidak menutup actual printer: writer/agent belum deployed/enrolled, activev2r4,
-dispatchOFF. Akses vault/Owner perlu dibuka kembali; activation, finaldesign
+dispatchOFF. Berkas STAGED_VERIFIED/pair recoveryPASS, production untouched;
+terminal cleanup error staging tetap dicatat dan diverifikasi read-only. Akses
+vault/Owner perlu dibuka kembali; activation, finaldesign
 publish, HTTPS/PC TEST dan konfirmasi kertas matching masih OPEN. Credential30hari
 memerlukan maintenance renewal eksplisit. Bukan full/endurance/operator acceptance
 atau BUSINESS_READY. Entri snapshot production42f/resourceHOLD di bawah historis.

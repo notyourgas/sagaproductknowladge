@@ -8,7 +8,8 @@ static1142/core37/TypeScript dan immutable packagingPASS. Agent outbound HTTPS
 Windows memakai RAW spooler, existing paid outbox, local reservation/grant dan
 review UNKNOWN, bukan silent browser/QZ activation. Kios pending tidak mencetak.
 Writer/agent IMPLEMENTED_NOT_DEPLOYED; active templatev2/revisi4, enrollment dan
-dispatchOFF. Owner unlock diperlukan, lalu pair recovery/activation, finaldesign
+dispatchOFF. Berkas kandidat STAGED_VERIFIED dan pair recoveryPASS tanpa runtime
+switch. Owner unlock diperlukan, lalu fresh binding/activation, finaldesign
 publish dan actual PC/paper TEST sebelum ENABLE. Bukan BUSINESS_READY. Tidak ada
 perubahan transaksi asli, schema, provider, proteksi atau trust Windows.
 

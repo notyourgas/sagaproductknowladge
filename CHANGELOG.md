@@ -8,6 +8,8 @@
   templatev2r4/dispatchOFF sampai Owner unlock, recovery/activation dan paper TEST.
 - Dampak: Product/Dossier/produk changelog, master, portfolio, gaps dan sync.
 - Tidak ada transaksi/stock/provider/proteksi change; NOT_BUSINESS_READY.
+- Staging berkas diverifikasi/pair recoveryPASS tanpa runtime switch; terminal
+  transport-cleanup error tetap tercatat, activation/commissioning belum selesai.
 - Knowledge branchmain HEAD; source dan knowledge commit terpisah.
 
 

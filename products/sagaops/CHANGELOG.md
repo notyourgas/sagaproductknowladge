@@ -4,7 +4,8 @@
 CONFIRMED; keputusan Andreas: deploy layout final dan nota otomatis kasir/kios.
 Reader `cf393044` aktif/rollback42f7ab9e; kandidat writer/agent `5148d790`
 Linux102/102, static1142/core37 dan immutable packagePASS, belum activated.
-Desain masihv2/revisi4; commissioning dan dispatch OFF, akses Owner perlu unlock.
+Kandidat STAGED_VERIFIED dan pair recoveryPASS tanpa runtime switch. Desain
+masihv2/revisi4; commissioning dan dispatch OFF, akses Owner perlu unlock.
 Windows file-port bukan physical TEST; QZ/proteksi/payment boundary unchanged.
 Product, Dossier, master, gaps, sync dan portfolio diperbarui. NOT_BUSINESS_READY.
 
