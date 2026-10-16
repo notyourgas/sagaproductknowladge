@@ -1,4 +1,23 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Printer & nota website aktif di production
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source
+`b199db62c007bccff416df66938451cec158174b`, rollback
+`5148d790b58b96807a466deab83be0c83ce440e2`. Workspace Printer/Desain nota,
+empat kelompok editor, live preview dan kontrol konfirmasi kini tersedia pada
+Pengaturan > Printer & nota. Source768a7ba di bawah adalah milestone lokal
+sebelum deployment, bukan status delivery terbaru.
+
+Linux PostgreSQL18/Chromium104/104 tes terkait, static1144/core37/TypeScript,
+immutable artifact, backup terenkripsi/offhost, disposable restore dan pasangan
+candidate/rollback/candidate boot PASS. Canonical activation, fresh health,
+monitor dan enam aset publik exact-source PASS. Akses Owner API PASS; template
+aktifv3/revisi6 persis sama sebelum/sesudah. Tidak ada perubahan schema/GATEWAY,
+driver/proteksi, sale/payment/stock atau physical print. Native agent tetap
+enrolled tetapi dispatchOFF/uncommissioned, menunggu matching paper confirmation.
+Authenticated browser UAT menunggu login Owner; operator/endurance UAT dan
+renewal/new-device onboarding masih OPEN. Bukan BUSINESS_READY atau APK.
+
 ## 2026-10-16 - Printer & nota: UI website tervalidasi lokal
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source

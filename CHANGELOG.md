@@ -1,4 +1,18 @@
 # Saga Product Knowledge Changelog
+## 2026-10-16 - SagaPOS Printer & nota production release
+
+- CONFIRMED, sumber izin Andreas dan fresh source/runtime/API evidence.
+- Sourceb199db62c007bccff416df66938451cec158174b production-active/rollback5148d790;
+  workspace dua tab/empat kelompok desain/live preview kini deployed, bukan lagi
+  local-only. Parent UI768a7ba sama, child hanya memperluas qualification.
+- Linux104/104 tanpa fail/skip, static1144/core37/TypeScript, encrypted offhost
+  backup/disposable pair recovery/canonical activation/health/monitor/assets PASS.
+- Owner API dan templatev3r6 exact pre/post equality PASS. Tidak ada physical
+  TEST/enable/transaksi atau schema/GATEWAY/driver/proteksi change. DispatchOFF;
+  commissioning/browser visual UAT/endurance/renewal tetap OPEN, NOT_BUSINESS_READY.
+- Product/Dossier/changelog/master/gaps/sync/portfolio diperbarui; source dan
+  knowledge commit terpisah, main HEAD sesudah push. Produk lain tetap.
+
 ## 2026-10-16 - SagaPOS Printer & nota website UX
 
 - CONFIRMED; sumber Andreas meminta pengaturan printer/desain lebih mudah.

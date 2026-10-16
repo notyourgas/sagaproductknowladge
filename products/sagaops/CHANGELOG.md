@@ -1,4 +1,16 @@
 # SagaOPS Changelog
+## 2026-10-16 - Deploy Printer & nota website
+
+CONFIRMED, izin Andreas: deploy redesign. Sourceb199db6 production-active,
+rollback5148d790; UI768a7ba sama, pipeline menambah qualification workspace.
+104/104 Linux native checks/static1144/core37/TypeScript, encrypted offhost
+backup/disposable pair recovery/canonical activation/health/monitor/assets PASS.
+Desainv3r6 exact pre/post equality dan native config tetap. Tidak ada physical
+TEST/enable, transaksi, schema/GATEWAY, driver atau proteksi mutation.
+Product/Dossier/master/gaps/sync/portfolio/root changelog diperbarui. Browser
+visual UAT menunggu login Owner; commissioning/endurance/renewal OPEN,
+NOT_BUSINESS_READY. Status local-only di bawah adalah histori sebelum rilis.
+
 ## 2026-10-16 - Printer & nota UI lokal
 
 CONFIRMED, permintaan Andreas menyederhanakan pengaturan printer/desain website.

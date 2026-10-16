@@ -1,4 +1,25 @@
 # SagaOPS Dossier
+## 2026-10-16 - Printer workspace production release
+
+CONFIRMED: sourceb199db62c007bccff416df66938451cec158174b production-active,
+rollback5148d790. Child pipeline-only dari UI768a7ba menambahkan tes workspace
+ke qualification. Linux PostgreSQL18/Chromium104/104 tanpa gagal/skip dan
+static1144/core37/TypeScript PASS. Immutable checksum, readonly encrypted backup,
+offhost ciphertext hashes, disposable restore/candidate/rollback/candidate dan
+canonical code-only activation PASS. Fresh health/monitor/current/rollback dan
+enam aset publik exact Git blob PASS. Dedicated cashier/kiosk hosts tetap di
+gerbang HTTP Basic yang sudah ada; anonymous401 bukan gangguan release.
+
+Workspace Printer & nota dan editor empat kelompok sekarang deployed/activated.
+Protected Owner API menunjukkan active templatev3/revisi6 exact pre/post equality;
+native revision/status dan matching TEST tidak berubah, heartbeat tetap tersedia.
+Automatic paid dispatchOFF/uncommissioned; tidak ada print fisik, template publish,
+transaksi atau driver/proteksi/provider mutation. Browser Owner session expired,
+authenticated visual UAT menunggu login; jangan menyebut API readback sebagai
+browser UAT atau BUSINESS_READY. Existing commissioning, endurance, credential
+renewal dan new-device onboarding tetap terpisah. Snapshot local-only sebelumnya
+adalah histori. Scope APK, pricing dan produk lain tidak berubah.
+
 ## 2026-10-16 - Printer workspace website, belum production
 
 CONFIRMED: source768a7ba3f9afb40adcbbc0924cf47274de40cfa3 pushed;

@@ -1,4 +1,15 @@
 # Gaps dan Keputusan Founder
+## 2026-10-16 - Printer & nota sudah deploy; commissioning tetap terpisah
+
+CONFIRMED: gap rilis UI source768a7ba CLOSED oleh productionb199db6/rollback5148d790.
+Linux104/104, fresh recovery/activation/health/monitor/assets dan protected Owner
+API PASS; active templatev3r6 exact pre/post sama. Native dispatchOFF dan physical
+confirmation masih pending; tidak ada physical TEST atau enable pada deployment.
+OPEN: login Owner untuk authenticated browser visual UAT, matching paper/cut
+acceptance, operator/endurance UAT, renewal dan new-device onboarding. Jangan
+menyamakan deploy UI dengan auto-print aktif atau BUSINESS_READY. Status
+"redesign belum dirilis" di bawah adalah histori, bukan blocker rilis terbaru.
+
 ## 2026-10-16 - Redesign Printer & nota belum dirilis
 
 CONFIRMED: source768a7ba pushed/LOCAL_VALIDATED, workspace dan grouped editor
