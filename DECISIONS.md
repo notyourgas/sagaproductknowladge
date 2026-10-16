@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-262 - Finalisasi HR dan mobile karyawan dengan acceptance nyata
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-17 |
+| Topik | Finalisasi fitur existing HR/mobile SagaPOS |
+| Keputusan | Andreas mengotorisasi implementasi, tes, dokumentasi, packaging dan guarded deployment scope existing;36acceptance teknis/12operasional dibekukan dalam ledger. |
+| Alasan | Setiap role harus dapat menyelesaikan pekerjaan harian dengan uang, stok, jam kerja dan laporan yang konsisten. |
+| Alternatif | Rebuild, skor tanpa denominator, Owner menggantikan Staff UAT, fixture production dan reset budget/retry ditolak. |
+| Dampak | Source039b4e1/checkpoint66f2bb5 disiapkan tanpa mutasi HR production. Allowance HR120detik baru diminta, belum disetujui. Batas Kasir/history/fullworkday dan ownership printer dipertahankan. |
+| Pemberi keputusan | Andreas, prompt GOAL finalisasi HR/mobile17Oktober2026. |
+| Status | CONFIRMED untuk goal/otorisasi; executionIN_PROGRESS, candidateSOURCE_PREPARED_UNVALIDATED, NOT_BUSINESS_READY. |
+| Dokumen terkait | products/sagaops/PRODUCT.md; products/sagaops/CHANGELOG.md; GAPS.md; ledger source66f2bb5. |
+
 ## DEC-261 - SagaPOS goal keseluruhan dan exception Kasir terbatas
 
 | Field | Isi |

@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-17 - Finalisasi HR/mobile: acceptance dibekukan, kandidat belum diuji
+
+**CONFIRMED / SOURCE_PREPARED_UNVALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.** Andreas mengotorisasi finalisasi fitur existing HR/mobile dengan acceptance teknis dan operasional terpisah, tanpa menambah allowance, mereset retry atau mengubah batas data/perangkat/provider. Daftar v1 membekukan36kriteria teknis dan12operasional; ini denominator scope HR/mobile, bukan skor seluruh SagaPOS. Penerimaan final belum selesai sehingga tidak ada angka readiness final yang diterbitkan.
+
+Prepared source`039b4e1228435f7f20131fe41d6a1be7b53c5a5e`, checkpoint dokumen`66f2bb53a243110a9e1e52ecf129af24ae15b214`, branch`codex/sagapos-hr-mobile-finalization-20261017`. Kandidat dimulai dari exact activeb199db6, mempertahankan perubahan printer, membawa perbaikan angka stok existing dan menyiapkan konsistensi review/aktor audit HR serta keputusan atomik. Tes terfokus/regression disiapkan tetapiNOT_RUN: allowance HR120detik diminta terpisah dan masih menunggu keputusan. Sisa stok tidak dipinjam; batas Kasir/history/fullworkday tetap dipertahankan. Diff check PASS bukan validasi aplikasi.
+
+Read-only17Oktober sekitar01.10-01.18WIB: active`b199db62c007bccff416df66938451cec158174b`, rollback`5148d790b58b96807a466deab83be0c83ce440e2`, ready/core37/GATEWAY/SaaSCASH. Absensi storage ready tetapioperationalReady=false, koordinat belum dikonfigurasi; receiving/stock closing storage ready bukan staff UAT. Status OPERATIONAL_READY dalam dokumen September adalah histori. Tidak ada HR deploy, konfigurasi/lokasi/staf/grant/transaksi production yang diubah. Task printer tetap memiliki kandidat/ownership terpisah. Next: keputusan allowance HR dan akses Owner, qualification kandidat final dengan resource sah, recovery/deploy terkoordinasi, konfigurasi sah serta UAT nyata per role/perangkat dan periode berikutnya. Payroll payout tetapOFF, tanpa pesan eksternal/auto-PO. [Ledger acceptance](https://github.com/notyourgas/sagaops/blob/66f2bb53a243110a9e1e52ecf129af24ae15b214/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - Refinement printer Linux-qualified, aktivasi tertahan
 
 CONFIRMED / LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED: kandidat
