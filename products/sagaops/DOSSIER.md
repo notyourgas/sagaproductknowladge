@@ -1,4 +1,22 @@
 # SagaOPS Dossier
+## 2026-10-16 - Printer workspace website, belum production
+
+CONFIRMED: source768a7ba3f9afb40adcbbc0924cf47274de40cfa3 pushed;
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. D50/route receipts tetap, label
+Printer & nota. Dua tab memisahkan kontrol printer native dari desain nota.
+Editor dikelompokkan, draft lintas tab dipertahankan, refresh draft meminta
+konfirmasi, pratinjau desktop berdampingan/mobile bertab. Status heartbeat
+menyatakan PC terhubung, bukan paper success. TEST dan pause meminta konfirmasi;
+enable memerlukan matching submitted TEST dan tiga cek hasil kertas. Tidak ada
+write otomatis saat membuka tab, retry write, credential exposure atau bypass
+hasil uncertain. Legacy manual/QZ tetap tersembunyi di pengaturan lanjutan.
+40 focused checks PASS; UI akhir8/8, static1143/core37/TypeScript dan 18 grouped
+editor/preview views pada1486/768/390/320px PASS. Ini Windows/local harness,
+bukan Linux qualification, production UAT atau physical acceptance. Source aktif
+public health tetap5148d790; tidak ada mutation production, print fisik atau
+enable dispatch. Renewal, new-device onboarding dan unknown-job operator review
+tetap terpisah. APK ditunda; fokus operasional website Kopi Saga.
+
 ## 2026-10-16 - Final receipt release dan workstation commissioning
 
 CONFIRMED: runtime `5148d790b58b96807a466deab83be0c83ce440e2` production-active

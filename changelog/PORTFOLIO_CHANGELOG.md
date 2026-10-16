@@ -1,4 +1,14 @@
 # Portfolio Changelog
+## 2026-10-16 - SagaPOS printer/desain nota website dirapikan
+
+CONFIRMED, sumber permintaan Andreas dan source768a7ba pushed. Workspace dua tab
+dan editor empat kelompok mengganti kontrol tersebar; status/TEST/enable eksplisit,
+preview langsung dan draft/apply berbeda. LOCAL_VALIDATED:40 checks/UI akhir8/8,
+static1143/core37/TypeScript/18 editor views PASS. Product/Dossier/changelog/master/
+gaps/sync diperbarui. Belum deploy; fresh health production5148d790 unchanged,
+tanpa print fisik, enable, perubahan transaksi atau proteksi. Review/rilis/UAT
+OPEN, bukan BUSINESS_READY; APK/new-device onboarding terpisah.
+
 ## 2026-10-16 - SagaPOS layout final aktif dan agent terpasang
 
 CONFIRMED: production5148d790/rollbackcf393044, Owner desainv3/revisi6 aktif,

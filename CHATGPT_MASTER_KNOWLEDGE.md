@@ -1,4 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
+## 2026-10-16 - SagaPOS printer/desain nota website
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source768a7ba pushed.
+Printer & nota kini satu workspace dengan tab Printer/Desain nota; editor empat
+kelompok/live preview, draft/apply terpisah dan konfirmasi TEST/paper/enable.
+40 focused checks PASS; UI akhir8/8/static1143/core37/TypeScript dan18 editor views
+PASS. Tidak ada print fisik atau enable otomatis. Fresh public health tetap
+source5148d790, bukan deploy redesign ini. Review, qualification/release dan
+production UAT OPEN; bukan BUSINESS_READY. Fokus website Kopi Saga, bukan APK
+atau plug-and-play perangkat baru; renderer/payment/driver/proteksi unchanged.
+
 ## 2026-10-16 - SagaPOS final receipt release active
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source

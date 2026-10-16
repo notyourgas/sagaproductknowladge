@@ -1,4 +1,19 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Printer & nota: UI website tervalidasi lokal
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source
+`768a7ba3f9afb40adcbbc0924cf47274de40cfa3` pushed. Halaman Printer & nota
+memisahkan status PC printer/TEST/pengaktifan dari editor Identitas usaha,
+Isi nota, Jarak & ukuran dan Pesan penutup, dengan pratinjau langsung.
+Simpan draft berbeda dari Terapkan desain; cetak manual lama dilipat ke lanjutan.
+40 tes terkait PASS pada Windows/disposable local PostgreSQL harness; UI akhir
+8/8 PASS, static1143/core37/TypeScript, 18 tampilan editor/preview empat viewport
+tanpa overflow atau temuan axe serious/critical pada area yang diperiksa.
+Tidak mengubah byte renderer, transaksi, driver atau proteksi. Tidak ada TEST
+fisik, enable otomatis atau deploy; fresh public health tetap source5148d790.
+Review desain, kualifikasi/rilis dan authenticated production UAT masih OPEN.
+APK dan plug-and-play perangkat baru bukan cakupan milestone ini.
+
 ## 2026-10-16 - Layout final aktif; commissioning cetak otomatis
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source

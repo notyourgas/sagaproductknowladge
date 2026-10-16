@@ -1,4 +1,17 @@
 # Saga Product Knowledge Changelog
+## 2026-10-16 - SagaPOS Printer & nota website UX
+
+- CONFIRMED; sumber Andreas meminta pengaturan printer/desain lebih mudah.
+- Source768a7ba3f9afb40adcbbc0924cf47274de40cfa3 pushed. Kontrol tersebar/form
+  panjang menjadi workspace dua tab/empat kelompok, live preview, draft/apply
+  terpisah dan konfirmasi TEST/paper/enable. LOCAL_VALIDATED, belum deploy.
+- 40 focused checks PASS, UI akhir8/8, static1143/core37/TypeScript dan18 grouped
+  editor/preview views PASS. Windows/local harness, bukan Linux/production UAT.
+- Fresh public health5148d790 unchanged; tanpa print fisik, enable dispatch,
+  driver/proteksi atau transaksi mutation. Review/kualifikasi/release/UAT OPEN.
+- Product/Dossier/changelog/master/gaps/sync/portfolio diperbarui; main HEAD
+  sesudah push. Bukan BUSINESS_READY atau implementasi APK/device onboarding.
+
 ## 2026-10-16 - SagaPOS final receipt production activation
 
 - CONFIRMED, sumber izin Andreas dan fresh source/runtime/Owner/PC evidence.

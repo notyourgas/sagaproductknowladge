@@ -1,4 +1,15 @@
 # SagaOPS Changelog
+## 2026-10-16 - Printer & nota UI lokal
+
+CONFIRMED, permintaan Andreas menyederhanakan pengaturan printer/desain website.
+Source768a7ba pushed: sebelumnya koneksi/manual/desain tersebar dan form panjang;
+sekarang satu workspace dua tab, empat kelompok desain/live preview, draft/apply
+terpisah, status nyata dan konfirmasi eksplisit. LOCAL_VALIDATED, 40 focused
+checks PASS/UI akhir8/8/static1143 dan18 editor views. Tidak ada deploy/TEST
+fisik/enable, source production tetap5148d790 menurut fresh public health.
+Product/Dossier/master/gaps/sync/portfolio/root changelog disinkronkan. Review,
+kualifikasi/rilis dan production UAT OPEN; bukan BUSINESS_READY atau APK.
+
 ## 2026-10-16 - Final receipt layout production-active
 
 CONFIRMED, keputusan Andreas diteruskan setelah akses Owner tersedia. Source

@@ -1,4 +1,14 @@
 # Gaps dan Keputusan Founder
+## 2026-10-16 - Redesign Printer & nota belum dirilis
+
+CONFIRMED: source768a7ba pushed/LOCAL_VALIDATED, workspace dan grouped editor
+website selesai diuji lokal; production health masih5148d790 dan tidak dimutasi.
+OPEN: review desain, kualifikasi/package/release sumber baru, authenticated UAT.
+Tidak ada paper acceptance baru, commissioning/enable otomatis tidak dijalankan.
+Device onboarding/renewal dan peninjauan uncertain real jobs tetap terpisah;
+UX baru tidak menyelesaikan gap tersebut atau menghapus expiry/proteksi.
+APK ditunda; jangan menyebut redesign ini production-active atau BUSINESS_READY.
+
 ## 2026-10-16 - Receipt final aktif; physical activation gate tersisa
 
 CONFIRMED: Owner unlock closed. Final5148d790/rollbackcf393044 dan desainv3r6
