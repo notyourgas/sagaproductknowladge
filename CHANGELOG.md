@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-17 - SagaPOS HR scoped PASS dan lokasi native dikonfigurasi
+
+CONFIRMED / main HEAD. Sumber Andreas+source4921586/qualifieddd08a78 dan
+runtime0033753/rollbackb199db62/core37 pada01.47WIB. Approved HR120detik:
+94,52used/25,48left;9focused/28regression/4selectedroster/9PG18native PASS,
+dua adapter/typed contract mocks tetap dibatasi. Native policy2,radius100m dan
+outsideREVIEW kini tersimpan;coordinatesConfigured/operationalReadytrue.
+Tanpa fakta production palsu;HR appIMPLEMENTED_NOT_DEPLOYED,final acceptance
+1/36teknis/0/12operasional,NOT_BUSINESS_READY. Alasan: menutup gap konfigurasi
+dan merekam qualification aktual tanpa mengklaim deployment/UAT. Files:SagaOPS
+PRODUCT/DOSSIER/CHANGELOG,master,portfolio,GAPS,DECISIONS,SYNC_STATUS.
+Builder/final release dan real staff/device/day UAT OPEN;staf nyata ditunda.
+Tidak reset retry/allowance lama,pricing/positioning/provider tidak berubah.
+
 ## 2026-10-17 - SagaPOS printer UX refinement production activation
 
 - CONFIRMED; sumber: instruksi Andreas lanjut deploy setelah vault terbuka.

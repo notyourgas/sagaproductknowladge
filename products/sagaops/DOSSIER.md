@@ -1,5 +1,30 @@
 # SagaOPS Dossier
 
+## 2026-10-17 - HR qualification scoped dan policy native aktif
+
+CONFIRMED: [checkpoint4921586](https://github.com/notyourgas/sagaops/blob/492158634f39e4089d8a074b9afe4f08f6bdb925/docs/HR_MOBILE_FINALIZATION_20261017.md)
+memetakan UI/API/tabel/role/config/dependency serta36teknis/12operasional.
+HR source039b4e1/fixturedd08a78 lulus9focused+28affected regression+4selected
+roster;9nativePG18 lulus termasuk role/RLS,decision concurrency,audit rollback
+dan persistence/replay. Dua adapter/typed guard contract mocks tetap dibedakan.
+94,52/120detik digunakan setelah izin Andreas; guard/retry lama tetap.
+Reviewed merge active0033753 hanya tujuhfile printer/nota; HR inputs/dependency
+tetap identik, bukan full merged-candidate qualification.
+
+Pada01.47WIB active0033753/rollbackb199db62/core37 sehat. Owner mengonfigurasi
+lokasi yang disetujui,radius100m/REVIEW,policy2 di bawah shared release lock;
+readback semua field+health PASS,coordinatesConfigured/operationalReady=true.
+GPS/selfie tetap wajib,testmodefalse,payment unchanged,sesi sendiri logout.
+Tidak ada fakta HR/stok/uang sintetis production. Konfigurasi primary native
+tidak mengganti guard/policy SaaS. GPS bukan bukti hadir mutlak; REVIEW perlu
+keputusan independen. ATT01 PASS,35teknis dan12operasional NOT_RUN;1/36 dan0/12
+adalah final acceptance scope, bukan kualitas/implementasi seluruh SagaPOS.
+HR/low-stock IMPLEMENTED_NOT_DEPLOYED; actual Team/SaaS/typedSQL/browser,
+Linux artifact/recovery dan device/role workday UAT masih OPEN. Andreas menunda
+staf nyata; synthetic hanya disposable. Builder nol aktif; permintaan resource
+gratis berbatas pending. Tidak ada CI/PR,reset Kasir/history/fullworkday,payout,
+auto-PO,pesan eksternal,perubahan schema/grant atau build di servingVPS.
+
 ## 2026-10-17 - Printer usability refinement production-active
 
 CONFIRMED: Andreas membuka vault dan menginstruksikan lanjut deploy.

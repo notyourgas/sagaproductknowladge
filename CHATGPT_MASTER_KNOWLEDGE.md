@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-17 - SagaPOS HR scoped PASS, konfigurasi lokasi native aktif
+
+CONFIRMED: HR candidate4921586 mempertahankan reviewed printer active0033753;
+rollbackb199db62,core37/GATEWAY/SaaSCASH.9focused,28regression,4selectedroster
+dan9PG18native PASS pada HR inputsdd08a78; dua adapter/typed mocks bukan
+actual Team/SaaS acceptance. Izin120detik memakai94,52,sisa25,48.
+Owner approved outlet policy2,radius100m/outsideREVIEW sudah tersimpan dan
+readback01.47WIB;coordinatesConfigured/operationalReady=true,GPS/selfie wajib,
+testmodefalse. Scope primary native; tanpa staf/absensi/transaksi palsu production.
+HR code belum aktif. Final acceptance1/36teknis,0/12operasional bukan skor
+implementasi seluruh produk. Staf nyata ditunda,tes sintetis disposable saja.
+Builder Linux/final qualification/package/recovery,actual role/device/workday
+dan periode berikutnya masihOPEN; old Kasir/history/fullworkday limits tetap.
+NOT_BUSINESS_READY. [Ledger](https://github.com/notyourgas/sagaops/blob/492158634f39e4089d8a074b9afe4f08f6bdb925/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - SagaPOS pengaturan printer baru production-active
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source0033753,

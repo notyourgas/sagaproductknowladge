@@ -1,5 +1,19 @@
 # SagaOPS Changelog
 
+## 2026-10-17 - HR qualification scoped; lokasi absensi native dikonfigurasi
+
+CONFIRMED,Andreas: source4921586 berbasis reviewed active0033753; HR patch039b4e1
+qualifieddd08a78.9focused/28affected regression/4selectedroster dan9PG18native
+PASS; dua adapter/typed contract mocks terpisah.94,52/120detik terpakai.
+Sebelum koordinat belum tersedia; sesudah Owner approved policy2,radius100m,
+outsideREVIEW,coordinatesConfigured/operationalReady=true pada01.47WIB.
+Manfaat: konfigurasi lokasi siap untuk absensi nyata; GPS/selfie tetap wajib.
+Tidak membuat fakta bisnis sintetis. HR source belum deploy; active0033753,
+rollbackb199db62,core37/payment unchanged. Acceptance1/36teknis,0/12operasional;
+bukan skor implementasi produk. Builder/qualification final/recovery/role-device
+UAT masihOPEN,staf nyata ditunda. Files:PRODUCT,DOSSIER,master,GAPS,DECISIONS,
+portfolio,root changelog,SYNC_STATUS. [Bukti scope](https://github.com/notyourgas/sagaops/blob/492158634f39e4089d8a074b9afe4f08f6bdb925/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - Deploy refinement pengaturan printer
 
 CONFIRMED, Andreas membuka vault dan mengizinkan lanjut deploy.

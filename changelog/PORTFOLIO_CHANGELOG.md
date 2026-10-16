@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-10-17 - SagaPOS HR qualification dan native attendance policy
+
+CONFIRMED / HR_LOCAL_SCOPED_VALIDATED / HR_NOT_DEPLOYED / NOT_BUSINESS_READY.
+Source4921586,qualifiedHRinputsdd08a78;9focused+28regression+4selectedroster dan
+9PG18native PASS dengan batas bukti contract mocks.94,52/120detik terpakai.
+Primary native production policy2 kini memakai lokasi Owner,radius100m/REVIEW;
+operationalReadytrue pada01.47WIB,actual0033753/rollbackb199db62,core37/payment
+unchanged. Tidak ada business data sintetis. Final scope acceptance1/36teknis,
+0/12operasional; staf nyata ditunda,builder/final release/UAT tetapOPEN.
+Products/docs/master/gaps/decisions/sync diperbarui; sumber keputusan Andreas
+dan exact-source tests/runtime readback. [Provenance](https://github.com/notyourgas/sagaops/blob/492158634f39e4089d8a074b9afe4f08f6bdb925/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - SagaPOS printer refinement deployed
 
 CONFIRMED, instruksi Andreas lanjut setelah vault terbuka. Source0033753

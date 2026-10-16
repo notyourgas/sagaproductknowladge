@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-17 - HR scoped qualification dan policy native tersinkron
+
+Status: partially accepted,CONFIRMED. Source4921586/qualifiedHRinputsdd08a78;
+active0033753/rollbackb199db62/core37 readback17Okt01.47WIB.9focused,28regression,
+4selectedroster,9PG18native PASS dengan dua contract mocks;94,52/120detik.
+Approved native policy2/radius100m/REVIEW diterapkan;operationalReadytrue.
+HR appNOT_DEPLOYED;1/36teknis,0/12operasional final acceptance,NOT_BUSINESS_READY.
+Real staff deferred,builder/final release/actual role/device/workday UAT OPEN.
+Products,master,portfolio,gaps,DEC-263,root changelog diperbarui tanpa PII/secret/
+private evidence. Snapshot sebelumnya historis. Final validator/push dilaporkan
+setelah commit main HEAD; permintaan builder bukan otorisasi resource.
+
 ## 2026-10-17 - Refinement printer berhasil diaktifkan
 
 CONFIRMED / accepted untuk deployment printer UI: source0033753 production-active,

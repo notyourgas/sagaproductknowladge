@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-263 - Allowance HR terfokus dan kebijakan lokasi native
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-17 |
+| Topik | HR qualification serta konfigurasi absensi primary native SagaPOS |
+| Keputusan | Andreas menyetujui tes HR maksimal120detik total, lokasi outlet dari tautan yang diberikan,radius100meter dan di luar radius masuk REVIEW. Nama staf/reviewer nyata ditunda; akun buatan untuk tes hanya database disposable. |
+| Alasan | Review independen/audit perlu bukti aktual dan absensi memerlukan lokasi/kebijakan sah tanpa mengarang fakta usaha. |
+| Alternatif | GPS diasumsikan bukti mutlak,review dianggap otomatis hadir,staf/absensi production palsu,meminjam budget stok dan reset gate Kasir/history/fullworkday ditolak. |
+| Dampak |94,52detik terpakai/25,48tersisa;scoped focused/regression/native PASS. Policy2 tersimpan di active0033753 pada01.47WIB,operationalReadytrue;HR candidate4921586 belum deploy. |
+| Pemberi keputusan | Andreas melalui jawaban allowance dan kebijakan absensi17Oktober2026. |
+| Status | CONFIRMED;final acceptance1/36teknis,0/12operasional,NOT_BUSINESS_READY. Exception builder terpisah masih pending,tidak termasuk keputusan ini. |
+| Dokumen terkait | products/sagaops/PRODUCT.md;products/sagaops/DOSSIER.md;GAPS.md;source4921586 HR/mobile ledger. |
+
 ## DEC-262 - Finalisasi HR dan mobile karyawan dengan acceptance nyata
 
 | Field | Isi |

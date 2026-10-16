@@ -1,5 +1,32 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-17 - HR scoped qualification dan konfigurasi absensi disetujui
+
+**CONFIRMED / LOCAL_SCOPED_VALIDATED / HR_IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.**
+Kandidat`492158634f39e4089d8a074b9afe4f08f6bdb925` mempertahankan active printer
+`0033753a48bcdab1be8c3039b3b33f018513952b` setelah review diff. Rollback production
+`b199db62c007bccff416df66938451cec158174b`,core37,GATEWAY/SaaSCASH.
+Patch review/audit HR039b4e1 dan fixturedd08a78 lulus9focused,28affected regression,
+4selectedroster serta9PG18native; dua subtes adapter/typed guard adalah contract
+mocks. Bukan full Team/SaaS/typedSQL/browser acceptance. Allowance120detik
+disetujui;94,52terpakai/25,48tersisa,tanpa reset gate lama.
+
+Pada01.47WIB, lokasi outlet yang diberikan Andreas diterapkan melalui Owner API
+existing dan shared release lock: radius100meter,di luar radiusREVIEW,policy1→2,
+coordinatesConfigured/operationalReady=true. Field lain dipertahankan,GPS/selfie
+wajib,testmodefalse; tidak ada absensi/staf/transaksi sintetis production.
+REVIEW bukan pengesahan otomatis; GPS bukan bukti hadir mutlak. Scope primary
+native, bukan perubahan policy tenant SaaS.
+
+Finalization acceptance versi aktif **1/36teknis,0/12operasional**; ini penerimaan
+scope yang dibekukan, bukan persentase implementasi seluruh produk. Staf/reviewer
+nyata ditunda Andreas; akun tes hanya disposable. Full final candidate checks/
+browser/Linux/package/recovery/deploy HR dan UAT perangkat/hari kerja/periode
+berikutnya masih terbuka. Builder existing kosong; exception satu sandbox gratis
+berbatas baru diajukan, belum diotorisasi. Kasir/history/fullworkday dan batas
+retry tetap. [Ledger dan mapping](https://github.com/notyourgas/sagaops/blob/492158634f39e4089d8a074b9afe4f08f6bdb925/docs/HR_MOBILE_FINALIZATION_20261017.md).
+Snapshot sebelumnya dipertahankan sebagai histori, bukan status terbaru.
+
 ## 2026-10-17 - Refinement pengaturan printer aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED:

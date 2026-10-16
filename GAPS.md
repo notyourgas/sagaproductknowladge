@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-17 - HR test allowance dan lokasi CLOSED; release/UAT OPEN
+
+CONFIRMED: izin HR120detik diterima,94,52terpakai/25,48tersisa; scoped tests pada
+dd08a78 PASS. Lokasi approved native policy2/radius100m/REVIEW dan health
+operationalReadytrue readback01.47WIB,active0033753/rollbackb199db62. Gap lokasi
+dan izin scoped HR CLOSED. HR candidate4921586 belum Linux/package/recovery/
+deploy; actual Team/SaaS/typedSQL/browser belum diterima. Builder existing nol
+session; satu exception gratis berbatas diminta,pending bukan approval.
+Staf/reviewer nyata ditunda Andreas,synthetic hanya disposable; device/role/day
+dan periode berikutnya belum diterima. Final acceptance1/36teknis,0/12operasional;
+old Kasir/history/fullworkday/retry dipertahankan. Bukan BUSINESS_READY.
+[Scope/batas bukti](https://github.com/notyourgas/sagaops/blob/492158634f39e4089d8a074b9afe4f08f6bdb925/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - Akses deploy dan aktivasi printer CLOSED
 
 CONFIRMED: kandidat0033753 production-active/rollbackb199db6. Gap akses Owner
