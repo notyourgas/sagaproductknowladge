@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-17 - Kualifikasi rilis refinement printer
+
+CONFIRMED: Andreas meminta deploy kandidat0033753a48bcdab1be8c3039b3b33f018513952b.
+Satu workflow Linux selesaiSUCCESS: Ubuntu24.04/Node22.22.1/PostgreSQL18/
+Chromium,105/105 tes0fail/skip, static1144/core37/TypeScript dan immutable
+production artifact build PASS. Screenshot readiness desktop/mobile serta
+preview diperiksa; koneksi printer pada fixture bukan bukti perangkat nyata.
+Pemakaian termasuk kuota gratis; budget overage tidak dinaikkan.
+
+Encrypted online backup/disposable full restore dan3 ciphertext archives
+offhost dengan checksum cocok PASS. Production tetapb199db6/rollback5148d790,
+fresh public health readytrue/core37/GATEWAY. Browser production meminta login;
+akses Owner belum tersedia. LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED,
+tidak ada staging/activation/template publish/TEST fisik/enable/driver mutation.
+Next: effective Owner fresh, exact artifact staging, candidate/current/candidate
+recovery baru dan canonical activation, lalu authenticated UI UAT.
+Credential expiry, physical commissioning dan operational/endurance acceptance
+tetap berlaku. Source lokal-only di bawah sudah naik ke Linux-qualified,
+bukan berarti sudah production-active.
+
+
 ## 2026-10-16 - Refinement alur Printer & nota, belum deploy
 
 CONFIRMED: source0033753a48bcdab1be8c3039b3b33f018513952b pushed,

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-10-17 - SagaPOS printer lolos Linux, deployment belum aktif
+
+CONFIRMED, izin deploy Andreas. Source0033753:
+105/105 Linux PostgreSQL18/Chromium/static1144/core37/TypeScript/package PASS,
+encrypted backup/disposable restore/offhost checksum PASS.
+LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED; akses Owner belum tersedia,
+production masihb199db6/core37/GATEWAY sehat. Tidak ada stage/activation,
+TEST fisik/enable/template/driver/transaksi mutation. Product/Dossier/master/
+gaps/sync/changelog diperbarui. Next: Owner, exact stage/fresh recovery/activation
+dan authenticated UI UAT; physical commissioning tetap OPEN, bukan BUSINESS_READY.
+
+
 ## 2026-10-17 - SagaBook account/file candidate: package siap, gate release belum lulus
 
 `CONFIRMED`: candidate `ac59d789722e2bdd5e6ebb972078940504cdfbdc`, branch

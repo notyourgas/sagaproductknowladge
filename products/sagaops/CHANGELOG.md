@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-17 - Kandidat printer lolos Linux, menunggu akses Owner
+
+CONFIRMED, izin deploy Andreas. Source0033753 Linux-qualified:
+105/105 PostgreSQL18/Chromium, static1144/core37/TypeScript, package build,
+encrypted backup/disposable restore/offhost checksums PASS.
+Sebelumnya hanya validasi Windows; kini qualification selesai, tetapi akses
+Owner belum tersedia sehingga belum stage/activate. Production tetapb199db6,
+fresh health readytrue/core37/GATEWAY. Tidak ada physical TEST/enable, template,
+driver/proteksi atau sale mutation. Product/Dossier/master/gaps/sync/portfolio/
+root changelog disinkronkan. Next: Owner, exact stage/fresh recovery/activation,
+authenticated UI UAT; commissioning/endurance tetap OPEN, NOT_BUSINESS_READY.
+
+
 ## 2026-10-16 - Refinement kemudahan pengaturan printer
 
 CONFIRMED, permintaan Andreas memperbaiki lagi UI/UX dan pengaturan printer.

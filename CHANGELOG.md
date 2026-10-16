@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-17 - SagaPOS printer qualification dan activation blocker
+
+- CONFIRMED; sumber: izin deploy Andreas dan qualification exact source
+  0033753a48bcdab1be8c3039b3b33f018513952b.
+- Sebelumnya Windows-validated; sekarang105/105 Linux PostgreSQL18/Chromium,
+  static1144/core37/TypeScript dan immutable package build PASS.
+- Encrypted backup/disposable restore/offhost checksum PASS.
+- Product/Dossier/changelog/master/gaps/sync/portfolio diperbarui; main HEAD.
+- LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED. Akses Owner belum tersedia,
+  belum stage/activate; production tetapb199db6/core37/GATEWAY sehat.
+- Tidak ada physical TEST/enable/template/driver/proteksi/sale mutation.
+  Next: Owner, exact stage/fresh recovery/guarded activation dan browser UAT.
+  Physical commissioning/operator acceptance tetap terpisah, NOT_BUSINESS_READY.
+
+
 ## 2026-10-17 - SagaBook account/file candidate: package siap, gate release belum lulus
 
 `CONFIRMED`: candidate `ac59d789722e2bdd5e6ebb972078940504cdfbdc`, branch

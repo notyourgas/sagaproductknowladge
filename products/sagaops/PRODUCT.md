@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-17 - Refinement printer Linux-qualified, aktivasi tertahan
+
+CONFIRMED / LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED: kandidat
+`0033753a48bcdab1be8c3039b3b33f018513952b`, izin deploy Andreas.
+105/105 tes PostgreSQL18/Chromium pada Ubuntu24.04 PASS,0fail/skip,
+static1144/core37/TypeScript dan immutable package build PASS.
+Backup terenkripsi/disposable restore serta salinan offhost berchecksum PASS.
+Aktivasi belum dijalankan karena akses Owner belum tersedia dan sesi browser
+berakhir. Fresh public health tetap sourceb199db6/core37/GATEWAY, readytrue.
+Tidak ada staging/activation, template publish, TEST fisik, enable otomatis,
+driver/proteksi atau perubahan transaksi. Next: buka akses Owner, verify/stage
+paket exact, fresh candidate-bound recovery, guarded activation dan UI UAT.
+Bukan BUSINESS_READY; physical commissioning tetap gate terpisah.
+
+
 ## 2026-10-16 - Pengaturan printer lebih sederhana, kandidat lokal
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source
