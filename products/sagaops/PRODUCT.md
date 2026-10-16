@@ -1,4 +1,16 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Layout final nota dan kandidat agent Windows
+
+CONFIRMED: reader kompatibel `cf393044ce3dac13fda6f08afaa4ba2f2bb747e8`
+PRODUCTION_ACTIVATED, rollback `42f7ab9e`; schema37/GATEWAY tetap sehat.
+Kandidat gabungan `5148d790b58b96807a466deab83be0c83ce440e2` pushed dan
+102/102 tes PostgreSQL18/Chromium tanpa fail/skip, static1142/core37/TypeScript
+serta immutable package PASS. Jeda header, produk, garis dan pembayaran terpisah.
+Agent Windows outbound HTTPS disiapkan untuk nota lunas kasir/kios tanpa dialog;
+QZ dan proteksi Windows tidak diubah. IMPLEMENTED_NOT_DEPLOYED untuk agent/writer;
+desain aktif masihv2/revisi4, enrollment/dispatch OFF, physical TEST belum dikirim.
+Akses Owner perlu dibuka kembali sebelum aktivasi. Bukan BUSINESS_READY.
+
 ## 2026-10-16 - Pengingat stok tidak menganggap data kosong sebagai nol
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: kandidat

@@ -1,4 +1,23 @@
 # SagaOPS Dossier
+## 2026-10-16 - Final spacing dan consumer cetak native
+
+CONFIRMED: source `5148d790b58b96807a466deab83be0c83ce440e2` menggabungkan
+writer desainv3 dengan consumer Windows outbound HTTPS, scoped per outlet,
+credential expiring/DPAPI, reservasi durable sebelum spool dan grant sekali pakai.
+Existing atomic paid outbox menjadi intent; order kios pending tidak dicetak dan
+konfirmasi staff/manual QRIS tidak dilewati. History tidak dikuras. Hasil tidak
+pasti ditahan untuk review, bukan resend otomatis; SUBMITTED bukan bukti kertas.
+
+Linux102/102/core37/TypeScript/immutable packaging PASS. Windows file-port proof
+feed0/8/30, logo, long footer, byte/hash identity dan restart fence PASS, bukan USB.
+Reader `cf393044ce3dac13fda6f08afaa4ba2f2bb747e8` sudah aktif dengan rollback
+`42f7ab9e`. Writer/agent belum dideploy, template masihv2/revisi4, commissioning
+dan auto dispatch OFF. Akses Owner kedaluwarsa; reopen vault diperlukan untuk
+aktivasi dan satu TEST production-path. ENABLE wajib konfirmasi fisik TEST yang
+sama. Credential30hari memerlukan maintenance renewal eksplisit; expiry tidak
+dihapus. Tidak ada perubahan transaksi, schema, provider atau perlindungan Windows.
+Broader business/operator endurance UAT tetap OPEN, bukan BUSINESS_READY.
+
 ## 2026-10-16 - Low-stock unknown handling dan panduan per role
 
 CONFIRMED sourceef67dd6: projection minimum/saldo hanya menghitung angka sah,

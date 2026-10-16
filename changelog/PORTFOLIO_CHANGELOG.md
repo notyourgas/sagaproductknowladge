@@ -1,4 +1,13 @@
 # Portfolio Changelog
+## 2026-10-16 - SagaPOS final receipt candidate
+
+CONFIRMED: readercf393044 production-active, rollback42f7ab9e. Source5148d790
+menambah consumer Windows outbound HTTPS untuk paid cashier/kiosk dan spacing
+final;102/102 native/browser tests serta immutable packagePASS. Writer/agent
+belum dideploy; templatev2revisi4/auto dispatchOFF. Owner unlock, pair recovery,
+activation dan actual PC/paper commissioning masih diperlukan. Provider/schema
+dan Windows protections unchanged; bukan BUSINESS_READY atau rilis produk lain.
+
 
 ## 2026-10-16 - SagaView dan Platform: koneksi login dipulihkan
 

@@ -1,4 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
+## 2026-10-16 - SagaPOS final spacing / native auto-print candidate
+
+CONFIRMED: reader `cf393044ce3dac13fda6f08afaa4ba2f2bb747e8` sudah aktif,
+rollback42f7ab9e; core37/GATEWAY tetap. Kandidat gabungan
+`5148d790b58b96807a466deab83be0c83ce440e2` pushed, Linux102/102 tanpa skip,
+static1142/core37/TypeScript dan immutable packagingPASS. Agent outbound HTTPS
+Windows memakai RAW spooler, existing paid outbox, local reservation/grant dan
+review UNKNOWN, bukan silent browser/QZ activation. Kios pending tidak mencetak.
+Writer/agent IMPLEMENTED_NOT_DEPLOYED; active templatev2/revisi4, enrollment dan
+dispatchOFF. Owner unlock diperlukan, lalu pair recovery/activation, finaldesign
+publish dan actual PC/paper TEST sebelum ENABLE. Bukan BUSINESS_READY. Tidak ada
+perubahan transaksi asli, schema, provider, proteksi atau trust Windows.
+
 
 ## 2026-10-16 - SagaView: koneksi layanan akun pulih
 
