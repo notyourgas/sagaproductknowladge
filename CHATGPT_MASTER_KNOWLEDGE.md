@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-17 - Printer UI mengikuti design system SagaPOS
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source
+`b7d27df19abd12bf0851f85fc4e7c7b06ae310a2`, rollback
+`0033753a48bcdab1be8c3039b3b33f018513952b`, permintaan Andreas.
+Printer & nota kini memakai token oranye/netral, tombol gelap, Plus Jakarta
+Sans, kontrol44px, navigasi kategori dan form/preview tablet terpisah.
+105/105 scoped Linux/core37/TypeScript,18view lokal, artifact/recovery/
+activation/Owner API/health/monitor/exact aset PASS. Templatev3r6 dan native
+settings exact equality; tidak ada publish/physical TEST/enable/driver/
+proteksi Windows/transaksi mutation. GATEWAY/lifecycle unchanged.
+AutomaticOFF/PC offline; commissioning, endurance dan browser visual UAT
+OPEN, NOT_BUSINESS_READY. Status dan data HR/absensi lain dipertahankan.
+[Scope](https://github.com/notyourgas/sagaops/blob/b7d27df19abd12bf0851f85fc4e7c7b06ae310a2/docs/PRINTER_NOTA_UX.md).
+
 ## 2026-10-17 - SagaPOS HR/mobile BLOCKED, belum final
 
 CONFIRMED: sourcec202bc8 tersimpan;HR code belum deploy. Additional actual Team

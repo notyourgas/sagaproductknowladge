@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-17 - Sinkronisasi rilis visual Printer & nota
+
+CONFIRMED / accepted untuk rilis UI: sourceb7d27df production-active,
+rollback0033753. Permintaan konsistensi style Andreas diterapkan;105/105 scoped
+Linux/core37/TypeScript dan18view lokal PASS, termasuk tablet nonoverlap/
+usable-width dan48kolom. Immutable artifact, recovery, activation, Owner API,
+health/monitor/6aset PASS; templatev3r6/native state exact equality.
+Product/Dossier/changelog/master/gaps/portfolio/root disinkronkan.
+AutomaticOFF/PC offline, physical commissioning/endurance/browser visual UAT
+tetapOPEN, NOT_BUSINESS_READY. HR/mobile lane lain tidak dipromosikan.
+
 ## 2026-10-17 - HR blocker checkpoint synchronized
 
 Status partially accepted,CONFIRMED. Sourcec202bc8,active0033753/rollbackb199db62

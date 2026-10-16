@@ -1,5 +1,29 @@
 # SagaOPS Dossier
 
+## 2026-10-17 - Tampilan Printer & nota selaras dengan SagaPOS
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source
+`b7d27df19abd12bf0851f85fc4e7c7b06ae310a2`, rollback
+`0033753a48bcdab1be8c3039b3b33f018513952b`, atas permintaan Andreas.
+Warna memakai token dashboard: aksen oranye, tombol utama gelap dan netral
+bersama; font Plus Jakarta Sans, kontrol native44px dan radius10px.
+Langkah kesiapan lebih tenang, kategori desain ringkas, preview desktop
+terpisah; tablet/mobile memakai tab Pengaturan dan Pratinjau agar form tidak
+menyempit atau tertutup sidebar.
+
+105/105 scoped Linux PostgreSQL18/Chromium, static1144/core37/TypeScript,
+18view lokal di1486/768/390/320, font/warna/dimensi/hover, minimum lebar form,
+nonoverlap dan48kolom PASS. Exact artifact, encrypted backup/full disposable
+restore/offhost checksum, fresh candidate/current/candidate recovery, guarded
+activation, Owner API, health/monitor dan6aset exact-source PASS.
+Template aktifv3/revisi6 dan native settings identik sebelum/sesudah; tidak
+ada publish desain, TEST fisik, enable, perubahan driver/proteksi Windows
+atau transaksi. Schema37, GATEWAY dan lifecycle tetap. Cetak otomatisOFF,
+PC offline, commissioning/endurance dan browser Owner visual UAT tetapOPEN;
+rilis UI bukan BUSINESS_READY. HR/mobile dan konfigurasi absensi lane lain
+tidak ditimpa atau ikut dipromosikan.
+[Scope](https://github.com/notyourgas/sagaops/blob/b7d27df19abd12bf0851f85fc4e7c7b06ae310a2/docs/PRINTER_NOTA_UX.md).
+
 ## 2026-10-17 - Checkpoint blocker builder HR/mobile
 
 CONFIRMED: sourcec202bc8 clean/pushed; fixture actual Team HTTP/Postgres store/

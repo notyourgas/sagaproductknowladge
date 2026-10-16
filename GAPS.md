@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-17 - Konsistensi visual printer CLOSED, UAT operasional OPEN
+
+CONFIRMED: sourceb7d27df production-active/rollback0033753. Warna, font, tombol,
+langkah kesiapan dan layout Printer & nota kini memakai foundation SagaPOS.
+105/105 Linux dan18view lokal PASS; pemeriksaan lebar form/nonoverlap tablet
+dan48kolom ditambahkan. Artifact, recovery, activation, Owner API dan aset PASS.
+Templatev3r6/native settings tetap persis sama. Cetak otomatisOFF/PC offline;
+commissioning, endurance dan browser Owner visual UAT belum diterima.
+Tidak ada physical TEST/enable/driver/proteksi/transaksi mutation.
+Rilis UI bukan BUSINESS_READY dan tidak menutup blocker HR/mobile terpisah.
+
 ## 2026-10-17 - HR builder authorization remains BLOCKED
 
 CONFIRMED:02.01WIB fresh existing builder inventory zero,no live job,WSL/container
