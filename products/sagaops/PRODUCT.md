@@ -1,4 +1,20 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Pengingat stok tidak menganggap data kosong sebagai nol
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: kandidat
+`ef67dd617edf6b74a3ba2ae89e625b2552cbfbf9`, ledger/panduan
+`87391f372c91cc1b1d448320d8b84c291a6ca82b`, clean/pushed. Perhitungan bersama
+Owner dan manager native membedakan minimum/saldo belum diketahui dari nol
+yang sah. Angka desimal database, threshold equality dan saldo negatif tetap;
+tidak ada stok, PO, pembayaran, izin atau schema yang diubah.
+
+8/8 tes terfokus dan1/1journey PostgreSQL18/RLS/cold restart PASS,0skip;
+total tambahan33.10s memakai sisa allowance existing, bukan reset gate Kasir/
+fullworkday. Panduan existing diperbarui per role. Belum ada artifact Linux
+untuk kandidat ini atau deploy; active42f7ab9e/rollback793dd760 tetapready.
+Notifikasi akun Team/SaaS, Kasir live, fullworkday/history serta UAT nyata tetap
+OPEN. Subset ini bukan Production Ready atau Business Ready seluruh fitur100%.
+
 ## 2026-10-16 - Editor nota native-qualified; arsip cache terverifikasi
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: reader

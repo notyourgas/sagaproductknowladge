@@ -1,4 +1,15 @@
 # SagaOPS Changelog
+## 2026-10-16 - Low-stock unknown handling tervalidasi lokal
+
+- CONFIRMED: app sourceef67dd617edf6b74a3ba2ae89e625b2552cbfbf9;
+  ledger/panduan87391f372c91cc1b1d448320d8b84c291a6ca82b pushed.
+- Before: data kosong bisa tampil sebagai stok0; after: unknown ditandai
+  unavailable, hanya angka sah masuk perhitungan. Dampak: hindari belanja palsu.
+- Focused8/8 dan nativePG1/1PASS,0skip; memakai sisa allowance33.10s,
+  no reset. Native mencakup cold restart, audit/CSV, posting once dan next period.
+- Source-only; tidak deploy, membuat PO, mengubah stok/schema/grant/payment.
+  App42f/rollback793 tetapready. Kasir, Team/SaaS inbox dan operator UAT OPEN.
+
 ## 2026-10-16 - Receipt editor native-qualified, cache archive verified
 
 - CONFIRMED dari Andreas, source reader33415160b894a77de42aa52a38d22d837b314585,

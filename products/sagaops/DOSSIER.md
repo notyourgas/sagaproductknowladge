@@ -1,4 +1,27 @@
 # SagaOPS Dossier
+## 2026-10-16 - Low-stock unknown handling dan panduan per role
+
+CONFIRMED sourceef67dd6: projection minimum/saldo hanya menghitung angka sah,
+bukan coercion null/blank menjadi0. Unknown memakai warning existing; tidak
+menimbulkan rekomendasi belanja palsu. Nol sah dan angka desimal tetap diproses.
+Scope hanya projection Owner/native manager dan tes existing; bukan sistem
+inbox/dedupe/revoke akun Team/SaaS atau bukti penerima notifikasi aktual.
+
+Qualification: focused8/8PASS9.82s, native1/1PASS23.09s,0skip. Native memakai
+persisted closing, serving-role RLS dan actual cold-runtime balance, sambil
+mempertahankan receiving/waste/mixed units/replay/CSV/final period/next day.
+RED reproduction2FAIL dipertahankan; bukan kegagalan yang disembunyikan.
+Total original180s terpakai92.23117s, tersisa87.76883s, tanpa budget/gate reset.
+Full check/type/build/browser baru NOT_RUN; qualification Linux exact-candidate
+masih wajib sebelum packaging/guarded deployment. App42f/rollback793 tetap.
+
+[Ledger dan acceptance](https://github.com/notyourgas/sagaops/blob/87391f372c91cc1b1d448320d8b84c291a6ca82b/docs/T1_CATALOG_CHOICES_20261014.md)
+memisahkan5/7kriteria delta yang lulus dari seluruh fitur; bukan skor produk.
+[Panduan role](https://github.com/notyourgas/sagaops/blob/87391f372c91cc1b1d448320d8b84c291a6ca82b/docs/SAGA_POS_PILOT_RUNBOOK.md)
+mencakup Owner, kepala toko, kasir dan barista: opening, receiving/waste, stock
+closing, koreksi, recovery dan eskalasi. Panduan bukan penerimaan operator,
+perangkat, lokasi GPS atau izin transaksi nyata. Printer lane tetap terpisah.
+
 ## 2026-10-16 - Receipt v3: native qualification dan resource recovery
 
 CONFIRMED: source editor direkonsiliasi dengan production42f7ab9e, lalu dibuat

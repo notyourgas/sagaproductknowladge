@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-16 - SagaPOS: pengingat stok dan panduan operator
+
+CONFIRMED: sourceef67dd6/panduan87391f3 pushed. Data minimum/saldo kosong
+tidak lagi dianggap0 pada low-stock projection Owner/native manager;
+8focused+1PG18/RLS/restart journey PASS,0skip. Source-only, bukan rilis baru.
+Active42f7ab9e/rollback793dd760 tetapready/Gateway; Team/SaaS recipient inbox,
+Kasir browser, fullworkday/history dan operator/device UAT tetapOPEN.
+Readiness seluruh fitur belum punya denominator final; BUSINESS_READY=false.
+
 ## 2026-10-16 - SagaPOS receipt v3 native-qualified, resource HOLD
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: reader33415160b894a77de42aa52a38d22d837b314585

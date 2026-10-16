@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-16 - SagaPOS: low-stock unknown dibedakan dari nol
+
+CONFIRMED ef67dd6/87391f3: perhitungan shared Owner/native manager diperbaiki,
+8focused+1native journey PASS,0skip. Panduan per role diperbarui. Source-only;
+no new artifact/deploy/order/payment, active42f/rollback793 tetap. Account
+notification, browser Kasir dan UAT operator/perangkat tetapOPEN.
+[Status](../products/sagaops/PRODUCT.md).
+
 ## 2026-10-16 - SagaPOS receipt native qualification dan release resource HOLD
 
 CONFIRMED dari Andreas, source reader33415160b894a77de42aa52a38d22d837b314585,

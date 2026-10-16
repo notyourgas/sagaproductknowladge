@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-16 - knowledge(sagapos): unknown stock alerts dan role handbook
+
+CONFIRMED, mengikuti goal Andreas dalam scope existing. Sourceef67dd6 dan
+docs87391f3 pushed. Before: unknown bisa dianggap0; after: warning unavailable,
+angka sah tetap. Focused8/8 dan native1/1PASS,0skip, sisa allowance dipakai
+tanpa reset. Files: SagaOPS Product/Dossier/Changelog, portfolio/master,
+GAPS/SYNC_STATUS dan root changelog. Tidak deploy/ubahstok/PO/payment/grants;
+active42f/rollback793 tetapready. Artifact Linux, Kasir/Team-SaaS dan UAT
+operator/perangkat masihOPEN. Knowledge immutable SHA: main HEAD after push.
+
 ## 2026-10-16 - SagaPOS receipt qualification dan verified cache archive
 
 CONFIRMED dari instruksi Andreas/source/CI/live readback. Reader33415160b894a77de42aa52a38d22d837b314585
