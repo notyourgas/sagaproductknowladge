@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-16 - SagaView: koneksi layanan akun pulih
+
+`CONFIRMED / PRODUCTION_DEPLOYED`: gangguan TLS layanan akun pusat dipulihkan
+dengan pembaruan sertifikat dan renewal infra 99c33e3c. Uji login negatif
+browser PASS. Login akun nyata belum dikonfirmasi; ini tidak menutup physical UAT
+atau menjadikan produk BUSINESS_READY. Studio c3170e0/backend af6c139 tetap,
+pengganti Studio afb3211 belum dirilis.
+[Provenance](docs/releases/sagaview-login-tls-recovery-20261016.md).
+
 ## 2026-10-16 - SagaPOS: pengingat stok dan panduan operator
 
 CONFIRMED: sourceef67dd6/panduan87391f3 pushed. Data minimum/saldo kosong

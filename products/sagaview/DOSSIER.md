@@ -1,5 +1,14 @@
 # SagaView Dossier
 
+## 2026-10-16 - Insiden ketersediaan login
+
+`CONFIRMED`: halaman login tersedia tetapi koneksi ke layanan akun pusat gagal
+karena sertifikat kedaluwarsa. Sertifikat diperbarui dan jalur pembaruan otomatis
+diperbaiki. Uji integrasi bertanda tangan dan browser memakai akun fiktif
+menerima penolakan kredensial yang semestinya, tanpa password akun nyata.
+Login positif Andreas, perangkat dan physical UAT belum dibuktikan oleh insiden ini.
+[Laporan ringkas](../../docs/releases/sagaview-login-tls-recovery-20261016.md).
+
 ## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
 
 `CONFIRMED`: cleanup disposable berhasil dengan cmdlet native tanpa Force;

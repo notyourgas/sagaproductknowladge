@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-16 - knowledge(sagaview): pemulihan koneksi login dan renewal Platform
+
+`CONFIRMED` dari foto error Andreas, source infra 99c33e3c pushed dan pemeriksaan
+runtime. Before: layanan akun tidak tersedia akibat TLS kedaluwarsa; after:
+sertifikat baru aktif, koneksi dan login negatif browser PASS. Product/Changelog
+SagaView dan Platform, Dossier SagaView, portfolio/master/GAPS/SYNC_STATUS,
+laporan serta root changelog diperbarui. Production infra berubah; aplikasi,
+database, pricing dan provider tetap. Login positif/UAT belum dikonfirmasi.
+Knowledge immutable SHA: main HEAD setelah push.
+
 ## 2026-10-16 - knowledge(sagapos): unknown stock alerts dan role handbook
 
 CONFIRMED, mengikuti goal Andreas dalam scope existing. Sourceef67dd6 dan

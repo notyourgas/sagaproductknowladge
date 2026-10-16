@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-16 - SagaView dan Platform: koneksi login dipulihkan
+
+`CONFIRMED / PRODUCTION_DEPLOYED`: pembaruan sertifikat layanan akun pusat
+dan perbaikan renewal infra 99c33e3c memulihkan koneksi login. Uji negatif
+browser PASS; login positif pengguna dan UAT perangkat tetap belum diverifikasi.
+[Detail](../docs/releases/sagaview-login-tls-recovery-20261016.md).
+
 ## 2026-10-16 - SagaPOS: low-stock unknown dibedakan dari nol
 
 CONFIRMED ef67dd6/87391f3: perhitungan shared Owner/native manager diperbaiki,

@@ -1,5 +1,11 @@
 # Saga Platform Changelog
 
+## 2026-10-16 - Sertifikat layanan akun diperbarui
+
+`CONFIRMED / PRODUCTION_DEPLOYED`: pemulihan sertifikat dan renewal infra
+99c33e3c mengatasi gangguan koneksi login SagaView. Runtime aplikasi tetap.
+[Validasi dan batas](../../docs/releases/sagaview-login-tls-recovery-20261016.md).
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.

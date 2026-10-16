@@ -1,5 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-16 - SagaView: gangguan TLS tertutup, login positif belum diverifikasi
+
+`CONFIRMED`: koneksi layanan akun dan uji login negatif browser pulih setelah
+perbaikan infra 99c33e3c. `NEEDS CONFIRMATION`: Andreas login kembali pada
+perangkat terdampak. Pemulihan ini tidak menutup gate kandidat SSR afb3211,
+physical UAT, pilot atau BUSINESS_READY.
+
 ## 2026-10-16 - SagaPOS: low-stock numeric delta closed lokal, inbox tetapOPEN
 
 CONFIRMED ef67dd6/87391f3: unknown minimum/balance bukan nol,8focused+1native

@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-16 - SagaView/Platform: pemulihan koneksi login
+
+`CONFIRMED`: infra 99c33e3c pushed, sertifikat baru aktif, koneksi backend dan
+uji login negatif browser PASS. Product/Changelog kedua produk, Dossier SagaView,
+portfolio/master/GAPS dan root changelog diperbarui. Runtime aplikasi tetap;
+login pengguna dan gate UAT tetap terpisah. Knowledge main HEAD setelah push.
+
 ## 2026-10-16 - SagaPOS low-stock projection dan panduan per role
 
 CONFIRMED: sourceef67dd6 diuji lokal, ledger/panduan87391f3 clean/pushed;

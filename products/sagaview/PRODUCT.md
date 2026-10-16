@@ -1,5 +1,14 @@
 # SagaView Product Knowledge
 
+## 2026-10-16 - Pemulihan koneksi layanan login
+
+`CONFIRMED / PRODUCTION_DEPLOYED`: sertifikat layanan akun pusat diperbarui;
+error layanan tidak tersedia saat login berhasil direproduksi dan dipulihkan.
+Browser dengan akun fiktif kini menerima penolakan kredensial yang benar.
+Login akun Andreas dan operasional perangkat masih menunggu konfirmasi pengguna.
+Studio c3170e0 dan backend af6c139 tetap; kandidat afb3211 belum dirilis.
+[Provenance dan batas validasi](../../docs/releases/sagaview-login-tls-recovery-20261016.md).
+
 ## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
 
 `CONFIRMED`: cleanup disposable berhasil dengan cmdlet native tanpa Force;

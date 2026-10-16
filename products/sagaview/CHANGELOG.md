@@ -1,5 +1,12 @@
 # SagaView Changelog
 
+## 2026-10-16 - Koneksi login dipulihkan
+
+`CONFIRMED / PRODUCTION_DEPLOYED`: pemulihan TLS layanan akun pusat menghapus
+penyebab error login tidak tersedia. Source infra 99c33e3c; uji login negatif
+browser PASS, login akun nyata belum dikonfirmasi. Release aplikasi tetap.
+[Detail](../../docs/releases/sagaview-login-tls-recovery-20261016.md).
+
 ## 2026-10-16 - SagaView: policy cleanup selesai, backend aktif, Studio rollback dan kandidat SSR
 
 `CONFIRMED`: cleanup disposable berhasil dengan cmdlet native tanpa Force;

@@ -1,5 +1,12 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-16 - Pemulihan TLS layanan akun pusat
+
+`CONFIRMED / PRODUCTION_DEPLOYED`: sertifikat akun pusat diperbarui dan jalur
+renewal diperbaiki, memulihkan koneksi autentikasi SagaView. Perubahan infra
+99c33e3c pushed; source runtime aplikasi, database dan provider tidak diubah.
+[Batas validasi](../../docs/releases/sagaview-login-tls-recovery-20261016.md).
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.
