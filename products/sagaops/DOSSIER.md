@@ -1,4 +1,27 @@
 # SagaOPS Dossier
+## 2026-10-16 - Receipt v3: native qualification dan resource recovery
+
+CONFIRMED: source editor direkonsiliasi dengan production42f7ab9e, lalu dibuat
+reader33415160b894a77de42aa52a38d22d837b314585 yang membaca v3 tetapi membatasi
+writev2, serta writerab15dda882bbe3441e452214807355027b59e16c. Reader harus
+current sebelum writer; jangan memakai rollback pre-reader setelah v3 disimpan.
+CI38784622577/38785382035 masing-masing91/91PASS,0skip, static1138/core37/
+TypeScript dan canonical packagePASS. ZIP/TAR/provenance/checksum lokal match.
+Tes native mencakup frozen receipt, grants dan dump/restore; browser sintetis
+mencakup SAVE/PUBLISH/reload/restore desktop/mobile. Bukan full-product UAT.
+
+Owner API resmiPASS; active templatev2/revisi4 unchanged, browser Owner belum
+terverifikasi. Fresh encrypted online backup, disposable restore dan tiga
+offhost component hashesPASS. Andreas mengizinkan arsip/cache cleanup utama.
+Arsip cache dengan Git dependency closure lengkap sudah content-compared dan
+offhost hashPASS. Dua cache pendukung di luar folder izin awal memerlukan
+konfirmasi sebelum cleanup; cache asal belum dihapus. Own temporary transport
+copies removed setelah salinan lokal terverifikasi, bukan penghapusan recovery.
+Resource gate tidak dilonggarkan; stage/host rehearsal/activation NOT_RUN.
+Production42f7ab9e/rollback793dd76 active/ready unchanged, core37/Gateway tetap.
+No physical TEST/driver/trust/protection changes. Actual gap/cut, trusted QZ,
+signing, atomic paid intent/consumer dan broader acceptance tetapOPEN.
+
 ## 2026-10-16 - Whole-product acceptance dan retained cashier exception
 
 CONFIRMED: [ledger source](https://github.com/notyourgas/sagaops/blob/aa0670a3474ccef3342d539c1995a93fb5a6d2e7/docs/T1_CATALOG_CHOICES_20261014.md)

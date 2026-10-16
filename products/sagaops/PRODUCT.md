@@ -1,4 +1,24 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Editor nota native-qualified; arsip cache terverifikasi
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: reader
+`33415160b894a77de42aa52a38d22d837b314585` dan writer
+`ab15dda882bbe3441e452214807355027b59e16c` pushed, masing-masing91tes
+PostgreSQL18/Chromium0fail/0skip, static1138/core37/TypeScript dan immutable
+packagePASS. Kedua ZIP/TAR/checksum rilis juga cocok pada salinan lokal.
+Reader harus aktif dahulu agar rollback tetap membaca desain v3 yang tersimpan.
+
+Owner API production terverifikasi, desain aktif tetapv2/revisi4; bukan sesi
+browser Owner UAT. Backup terbaru encrypted/restore/offhost hashPASS. Izin
+arsip cache utama sudah diberikan; arsip terenkripsi beserta dependensi Git
+lolos content-compare dan hash offhost. Cleanup menunggu izin dua cache
+pendukung di luar folder utama agar tidak merusak referensi Git. Cache asal
+belum dihapus; file transfer sementara sendiri dirapikan setelah salinan aman.
+Stage/host rehearsal/activation NOT_RUN; production42f7ab9e/rollback793dd76
+tetapactive/ready. Tidak ada transaksi, physical TEST, protection/trust change
+atau silent-print activation. Kalibrasi/bridge/atomic paid intent dan broader
+business acceptance tetapOPEN; native qualification bukan BUSINESS_READY.
+
 ## 2026-10-16 - Goal seluruh produk dan extra gate Kasir
 
 CONFIRMED: source `aa0670a3474ccef3342d539c1995a93fb5a6d2e7` pushed,
