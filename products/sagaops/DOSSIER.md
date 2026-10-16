@@ -1,4 +1,28 @@
 # SagaOPS Dossier
+## 2026-10-16 - Final receipt release dan workstation commissioning
+
+CONFIRMED: runtime `5148d790b58b96807a466deab83be0c83ce440e2` production-active
+dengan readercf393044 sebagai rollback. Immutable artifact, Linux102/102/core37/
+TypeScript, fresh encrypted disposable restore/candidate/rollback/candidate dan
+canonical activation PASS. Fresh Owner protected SAVE/PUBLISH/readback menerapkan
+desainv3/revisi6 dengan authentic logo dan section spacing final. GATEWAY/schema
+dan sale/payment/stock facts tidak diubah.
+
+Agent qualified terpasang pada PC printer, scoped expiring credential memakai
+DPAPI/ACL, actual current-user startup launch/heartbeat PASS. Initial headless
+installer handle-wait ditutup secara terkontrol saat disabled/ledgerempty;
+tidak ada reenrollment atau pekerjaan yang diulang. Satu synthetic TEST dari
+production HTTPS melalui CLAIM/grant/RAW/RESULT menghasilkan server SUBMITTED
+dan local ACKED dengan hash sama. Itu client report, bukan paper acceptance.
+Transaksi otomatis masih OFF sampai matching TEST physical confirmation.
+
+Kasir/kios memakai authoritative paid event existing; pending cash/manual QRIS
+tidak dikonfirmasi otomatis. History tidak dikuras dan UNKNOWN tidak auto-resend.
+PC harus hidup/login/online, proteksi/TLS/QZ tidak dilonggarkan. Credential30hari
+memerlukan renewal/re-enrollment maintenance yang belum otomatis. Actual paid
+operator canary/endurance dan authenticated browser UAT masih OPEN; bukan
+BUSINESS_READY. Entri candidate/reader sebelumnya adalah histori.
+
 ## 2026-10-16 - Final spacing dan consumer cetak native
 
 CONFIRMED: source `5148d790b58b96807a466deab83be0c83ce440e2` menggabungkan

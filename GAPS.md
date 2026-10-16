@@ -1,4 +1,15 @@
 # Gaps dan Keputusan Founder
+## 2026-10-16 - Receipt final aktif; physical activation gate tersisa
+
+CONFIRMED: Owner unlock closed. Final5148d790/rollbackcf393044 dan desainv3r6
+production-active, fresh recovery/guarded activation PASS. Windows agent install,
+actual startup/heartbeat dan production-to-PC synthetic TEST SUBMITTED/ACKED/hash
+identity PASS. Itu bukan paper acceptance. Automatic paid dispatch OFF sampai
+konfirmasi fisik matching TEST. Tidak ada retry atau transaksi asli.
+OPEN: actual paper/cut, operator cashier/kiosk paid canary, endurance/browser UAT
+dan renewal credential30hari (belum otomatis). PC harus hidup/login/online;
+provider/proteksi tetap. NOT_BUSINESS_READY. Prior Owner/staged-only HOLD historis.
+
 ## 2026-10-16 - Native receipt commissioning dan Owner access
 
 CONFIRMED: resource cleanup yang sebelumnya tertahan sudah selesai setelah

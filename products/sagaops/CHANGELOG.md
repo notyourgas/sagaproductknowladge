@@ -1,4 +1,15 @@
 # SagaOPS Changelog
+## 2026-10-16 - Final receipt layout production-active
+
+CONFIRMED, keputusan Andreas diteruskan setelah akses Owner tersedia. Source
+5148d790 aktif/rollbackcf393044; fresh recovery/guarded activation PASS,
+core37/GATEWAY tetap. Owner desainv3/revisi6/logo/spacing readback PASS.
+Qualified Windows agent installed/startup/heartbeat dan satu production-path
+synthetic TEST SUBMITTED/ACKED, bukan transaksi atau physical acceptance.
+Automatic paid dispatch OFF menunggu matching paper confirmation; renewal dan
+operator/endurance UAT OPEN, NOT_BUSINESS_READY. Product/Dossier/master/gaps/sync/
+portfolio diperbarui; tidak ada driver/proteksi/provider/sale mutation.
+
 ## 2026-10-16 - Layout final dan kandidat cetak otomatis native
 
 CONFIRMED; keputusan Andreas: deploy layout final dan nota otomatis kasir/kios.

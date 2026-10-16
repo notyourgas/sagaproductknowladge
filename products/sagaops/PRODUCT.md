@@ -1,4 +1,21 @@
 # SagaOPS Product Knowledge
+## 2026-10-16 - Layout final aktif; commissioning cetak otomatis
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source
+`5148d790b58b96807a466deab83be0c83ce440e2`, rollback
+`cf393044ce3dac13fda6f08afaa4ba2f2bb747e8`. Fresh recovery dan guarded atomic
+activation PASS; core37/GATEWAY unchanged. Owner menerapkan desainv3/revisi6
+dengan logo dan jarak header/produk/garis/pembayaran terpisah; exact readback PASS.
+
+Agent Windows outbound HTTPS terpasang, credential scoped disimpan DPAPI dan
+startup current-user terverifikasi. Satu synthetic TEST melalui server production
+ke RAW spooler diakui server/lokal, bukan transaksi asli atau bukti kertas.
+Cetak otomatis transaksi masih OFF menunggu konfirmasi fisik TEST yang sama.
+Pending kiosk cash/manual QRIS tetap perlu konfirmasi staff. PC harus menyala,
+login dan online; credential30hari/renewal masih maintenance eksplisit. QZ dan
+proteksi Windows unchanged. Broader operator/endurance UAT OPEN, bukan BUSINESS_READY.
+Snapshot candidate/reader-only di bawah adalah histori sebelum aktivasi ini.
+
 ## 2026-10-16 - Layout final nota dan kandidat agent Windows
 
 CONFIRMED: reader kompatibel `cf393044ce3dac13fda6f08afaa4ba2f2bb747e8`

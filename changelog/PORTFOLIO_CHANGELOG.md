@@ -1,4 +1,13 @@
 # Portfolio Changelog
+## 2026-10-16 - SagaPOS layout final aktif dan agent terpasang
+
+CONFIRMED: production5148d790/rollbackcf393044, Owner desainv3/revisi6 aktif,
+fresh recovery/activation PASS. Agent Windows scoped/DPAPI/startup/heartbeat dan
+satu synthetic production-to-PC TEST SUBMITTED/ACKED tanpa dialog. Paper
+acceptance pending, automatic sales dispatch OFF; actual operator/endurance dan
+credential renewal OPEN. Core37/GATEWAY/proteksi Windows tetap, tanpa transaksi
+asli. Bukan BUSINESS_READY atau perubahan produk lain; snapshot sebelumnya historis.
+
 ## 2026-10-16 - SagaPOS final receipt candidate
 
 CONFIRMED: readercf393044 production-active, rollback42f7ab9e. Source5148d790
