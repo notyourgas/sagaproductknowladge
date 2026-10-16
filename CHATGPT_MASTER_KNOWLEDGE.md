@@ -1,4 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
+
+## 2026-10-16 - SagaPOS printer UX refinement lokal
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source0033753 pushed.
+Pengaturan printer dibuka dengan tiga status kesiapan dan tindakan kontekstual;
+profil browser lama dipisahkan dari printer otomatis outlet. Desain nota punya
+Simpan & gunakan satu aksi, Simpan draft, kontrol jarak ringkas dan preview.
+44 focused checks/static1143/core37/TypeScript serta18 visual views PASS.
+Production masihb199db6 sesuai fresh health; kandidat baru belum dirilis,
+tidak ada TEST fisik atau enable. Linux qualification/review/rilis dan physical
+commissioning/operator UAT tetap OPEN, bukan BUSINESS_READY atau plug-and-play.
+
 ## 2026-10-16 - SagaPOS Printer & nota website production-active
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: sourceb199db6,

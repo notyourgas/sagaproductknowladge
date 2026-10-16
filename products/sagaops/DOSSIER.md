@@ -1,4 +1,33 @@
 # SagaOPS Dossier
+
+## 2026-10-16 - Refinement alur Printer & nota, belum deploy
+
+CONFIRMED: source0033753a48bcdab1be8c3039b3b33f018513952b pushed,
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Tab Printer membaca status
+saat dibuka tanpa POST; tiga langkah membedakan PC online, TEST dikirim dan
+pengaktifan. Tindakan utama mengikuti kesiapan, tetapi TEST dan enable tetap
+memerlukan konfirmasi eksplisit serta matching physical acceptance.
+Detail antrean Windows dilipat, profil USB/Bluetooth/QZ lama diberi batas
+browser-local, dan pintasan jarak menuju template outlet yang sebenarnya.
+
+Editor mempertahankan semua field dan renderer. Simpan & gunakan menjalankan
+SAVE lalu PUBLISH dengan revision hasil SAVE; draft bersih cukup PUBLISH.
+Simpan draft tidak mengubah aktif. Scope/logout membatalkan langkah kedua;
+respons gagal/tidak valid memblokir write sampai status berhasil dimuat ulang.
+Draft yang sudah tersimpan tidak hilang saat penerapan gagal. Restore versi
+memerlukan konfirmasi. Kontrol angka dan logo lebih ringkas; desktop tetap
+memiliki preview, mobile memisahkan Pengaturan/Pratinjau tanpa kontrol menutupi isian.
+
+44 focused Windows/disposable PostgreSQL checks PASS, termasuk error503/409/403,
+malformed response, double-click, scope fencing, reader-first rollback,
+immutable receipt/spacing/cutter dan pembayaran. Static1143/core37/TypeScript
+PASS. 18 grouped editor/preview views pada1486/768/390/320 tanpa overflow,
+page error atau axe serious/critical pada area yang diperiksa.
+Fresh public health tetap productionb199db6/core37. Tidak ada deploy, physical
+TEST, template publish production, enable, driver/proteksi/sale mutation.
+Review pengguna, Linux release qualification dan deployment kandidat OPEN;
+physical commissioning dan operational/endurance UAT tidak digantikan tes UI.
+
 ## 2026-10-16 - Printer workspace production release
 
 CONFIRMED: sourceb199db62c007bccff416df66938451cec158174b production-active,

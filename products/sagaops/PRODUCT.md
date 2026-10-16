@@ -1,4 +1,20 @@
 # SagaOPS Product Knowledge
+
+## 2026-10-16 - Pengaturan printer lebih sederhana, kandidat lokal
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source
+`0033753a48bcdab1be8c3039b3b33f018513952b` pushed. Printer menjadi tab awal
+dengan tiga status kesiapan: sambungan PC, uji nota dan cetak otomatis.
+Detail Windows serta profil browser lama dipisahkan; pintasan jarak mengarah
+ke template outlet, bukan profil manual. Desain memakai tombol Simpan & gunakan,
+tetap menyediakan Simpan draft, kontrol jarak ringkas dan pratinjau langsung.
+44 tes terkait, static1143/core37/TypeScript dan 18 tampilan editor/preview
+Windows lokal PASS. Error penerapan memerlukan reload, tidak retry otomatis.
+Production tetap sourceb199db6 menurut fresh public health; tidak ada deploy,
+TEST fisik, aktivasi otomatis, driver/proteksi atau perubahan byte nota.
+Linux qualification, review pengguna dan rilis kandidat ini belum dilakukan.
+Commissioning kertas dan UAT operasional tetap terpisah, bukan BUSINESS_READY.
+
 ## 2026-10-16 - Printer & nota website aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source

@@ -1,4 +1,15 @@
 # Portfolio Changelog
+
+## 2026-10-16 - SagaPOS printer lebih mudah, kandidat lokal
+
+CONFIRMED, permintaan Andreas. Source0033753 pushed: tiga langkah kesiapan
+printer, profil manual dipisahkan, pintasan jarak, desain one-click
+Simpan & gunakan dan kontrol lebih ringkas. 44 focused checks/static1143/core37/
+TypeScript/18 visual views PASS. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED,
+production tetapb199db6; tidak ada hardware TEST/enable/driver/data mutation.
+Product/Dossier/master/gaps/sync/changelog diperbarui. Review, Linux qualification/
+rilis kandidat dan physical commissioning/UAT OPEN, bukan BUSINESS_READY.
+
 ## 2026-10-16 - SagaPOS Printer & nota deployed
 
 CONFIRMED, izin deploy Andreas. Sourceb199db6 production-active/rollback5148d790:

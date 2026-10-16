@@ -1,4 +1,18 @@
 # SagaOPS Changelog
+
+## 2026-10-16 - Refinement kemudahan pengaturan printer
+
+CONFIRMED, permintaan Andreas memperbaiki lagi UI/UX dan pengaturan printer.
+Source0033753 pushed: default Printer/tiga langkah kesiapan, primary action
+kontekstual, detail teknis terpisah, shortcut jarak, Simpan & gunakan satu aksi,
+kompak kontrol angka/logo dan konfirmasi restore. Sebelumnya save/apply dua
+langkah dan profil manual mudah tertukar dengan printer otomatis.
+44 focused tests/static1143/core37/TypeScript/18 visual views PASS.
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production tetapb199db6,
+tidak ada TEST fisik/enable atau perubahan renderer/driver/proteksi/data.
+Product/Dossier/master/gaps/sync/portfolio/root changelog diperbarui.
+Review, qualification/rilis dan physical commissioning/UAT tetap OPEN.
+
 ## 2026-10-16 - Deploy Printer & nota website
 
 CONFIRMED, izin Andreas: deploy redesign. Sourceb199db6 production-active,
