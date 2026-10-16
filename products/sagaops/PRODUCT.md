@@ -1,5 +1,21 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-17 - HR finalisasi terblokir otorisasi builder
+
+CONFIRMED / BLOCKED_BUILDER_AUTHORIZATION / HR_NOT_DEPLOYED / NOT_BUSINESS_READY.
+Checkpoint`c202bc88e1a7e58520bcd5432afde13a250f3421` tersimpan/pushed. Source HR
+dan dependency tidak berubah dari milestone qualified scoped; fixture tambahan
+actual Team HTTP/Postgres store/overtime SQL padae35e62b hanya syntaxPASS0,85s,
+behaviorNOT_RUN. Allowance HR kini95,37/120detik,sisa24,63; tanpa reset gate lama.
+Fresh02.01WIB active0033753/rollbackb199db62,ready/core37/GATEWAY,policy2
+operationalReadytrue. Builder existing nol aktif; exception satu sandbox gratis
+15menit/2vCPU4GB masih menunggu Andreas. Tidak ada job builder berjalan atau
+resource baru dibuat. Pekerjaan independen source/config/qualification scoped/
+mapping/runbook/provenance tersimpan; final checks/package/recovery/deploy HR
+belum accepted. Final acceptance1/36teknis PASS,1BLOCKED,34NOT_RUN;operasional
+0/12PASS,12NOT_RUN. Staf/perangkat nyata tetap ditunda. Goal HR/mobile terblokir,
+bukan selesai; seluruh SagaPOS tidak diklaim selesai. [Checkpoint](https://github.com/notyourgas/sagaops/blob/c202bc88e1a7e58520bcd5432afde13a250f3421/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - HR scoped qualification dan konfigurasi absensi disetujui
 
 **CONFIRMED / LOCAL_SCOPED_VALIDATED / HR_IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.**

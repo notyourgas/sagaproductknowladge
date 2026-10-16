@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-17 - HR builder authorization remains BLOCKED
+
+CONFIRMED:02.01WIB fresh existing builder inventory zero,no live job,WSL/container
+unavailable. One free bounded15min/2vCPU4GB sandbox exception awaits Andreas;
+older one-session permission consumed. No resource created or budget/retry reset.
+Checkpointc202bc8 saves independent work; actual Team HTTP/SQL fixture only
+syntaxPASS,behaviorNOT_RUN. HR95,37/120s used,24,63left;active0033753/rollback
+b199db62/core37/ready/GATEWAY,approved native policy2 operationalReadytrue.
+REL02 BLOCKED;1/36technicalPASS,34technicalNOT_RUN;0/12operationalPASS.
+Real staff/device/day UAT deferred. GoalHR/mobile BLOCKED after same barrier
+persisted three turns; not complete. Next: scoped approval+verify zero-cost,
+exact Linux qualification/package/recovery/guarded release,then real UAT.
+[Full checkpoint](https://github.com/notyourgas/sagaops/blob/c202bc88e1a7e58520bcd5432afde13a250f3421/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - HR test allowance dan lokasi CLOSED; release/UAT OPEN
 
 CONFIRMED: izin HR120detik diterima,94,52terpakai/25,48tersisa; scoped tests pada

@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-17 - SagaPOS HR builder authorization blocked
+
+CONFIRMED / BLOCKED / NOT_BUSINESS_READY: sourcec202bc8,active0033753/rollback
+b199db62/core37/GATEWAY ready02.01WIB,native policy2 operationalReadytrue.
+HR95,37/120s used,24,63left;additional HTTP/SQL fixture behaviorNOT_RUN despite
+syntaxPASS. Existing builders zero; bounded free15min/2vCPU4GB exception pending.
+No new resource/deploy/reset. Final acceptance1/36technicalPASS,1BLOCKED,
+34NOT_RUN;0/12operationalPASS,real staff UAT deferred. Source/config/role mapping/
+runbook/scoped evidence retained; next owner Andreas for builder authorization.
+Not whole SagaPOS completion. [Provenance](https://github.com/notyourgas/sagaops/blob/c202bc88e1a7e58520bcd5432afde13a250f3421/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - SagaPOS HR qualification dan native attendance policy
 
 CONFIRMED / HR_LOCAL_SCOPED_VALIDATED / HR_NOT_DEPLOYED / NOT_BUSINESS_READY.

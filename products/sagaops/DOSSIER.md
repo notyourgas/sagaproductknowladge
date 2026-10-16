@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-17 - Checkpoint blocker builder HR/mobile
+
+CONFIRMED: sourcec202bc8 clean/pushed; fixture actual Team HTTP/Postgres store/
+typed overtime SQL prepared, syntax-only0,85sPASS,behaviorNOT_RUN. Application
+inputs unchanged from prior scoped qualification. TotalHR95,37/120s,24,63left.
+Fresh02.01WIB active0033753/rollbackb199db62/core37/GATEWAY/ready; approved
+native policy2 operationalReadytrue. Builder inventory0sessions/0named sandboxes,
+WSL no distro/container unavailable; no live job to wait on. One bounded free
+15min/2vCPU4GB sandbox request pending; no new resource or old retry reset.
+Same external authorization blocker retained across three goal turns after
+independent work checkpoints. REL02 BLOCKED,1/36technicalPASS,34technicalNOT_RUN,
+0/12operationalPASS. Real staff/device/day UAT deferred; code HR not deployed.
+Next: bounded resource approval/zero-cost verification,existing runner final
+qualification/package+stop owned VM,then candidate-bound recovery/release and
+authorized real UAT. No whole-product completion. [Ledger](https://github.com/notyourgas/sagaops/blob/c202bc88e1a7e58520bcd5432afde13a250f3421/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - HR qualification scoped dan policy native aktif
 
 CONFIRMED: [checkpoint4921586](https://github.com/notyourgas/sagaops/blob/492158634f39e4089d8a074b9afe4f08f6bdb925/docs/HR_MOBILE_FINALIZATION_20261017.md)

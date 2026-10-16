@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-17 - HR builder blocker checkpoint
+
+CONFIRMED / BLOCKED / HR_NOT_DEPLOYED / NOT_BUSINESS_READY. Sourcec202bc8,
+active0033753/rollbackb199db62/core37/ready/GATEWAY at02.01WIB. Approved native
+policy2 operationalReadytrue unchanged. Additional HTTP/SQL acceptance fixture
+syntaxPASS0,85s butbehaviorNOT_RUN;HR allowance95,37/120s,24,63left. Builder
+inventory zero and bounded free sandbox authorization pending after three
+goal turns; no resource/deploy/retry reset. Acceptance1/36technicalPASS,
+1BLOCKED/34NOT_RUN;0/12operationalPASS. Reason: retain exact checkpoint without
+misrepresenting conversation wait as a live job. Product/master/gaps/portfolio/
+sync/root changelog updated; UAT real staff deferred. [Scope](https://github.com/notyourgas/sagaops/blob/c202bc88e1a7e58520bcd5432afde13a250f3421/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - HR qualification scoped; lokasi absensi native dikonfigurasi
 
 CONFIRMED,Andreas: source4921586 berbasis reviewed active0033753; HR patch039b4e1
