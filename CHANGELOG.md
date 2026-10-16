@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-17 - SagaPOS printer UX refinement production activation
+
+- CONFIRMED; sumber: instruksi Andreas lanjut deploy setelah vault terbuka.
+- Source0033753a48bcdab1be8c3039b3b33f018513952b production-active,
+  rollbackb199db62c007bccff416df66938451cec158174b. Akses Owner deployment
+  sebelumnya tertahan kini PASS, exact stage/fresh pair recovery/activation PASS.
+- 105/105 Linux PostgreSQL18/Chromium, static1144/core37/TypeScript,
+  encrypted backup/disposable restore/offhost checksum/health/monitor/6aset PASS.
+- Templatev3r6 dan native state exact equality. Tidak ada physical TEST/enable,
+  template publish/driver/proteksi/payment/stock/sale mutation.
+- Product/Dossier/changelog/master/gaps/sync/portfolio diperbarui; main HEAD.
+- Browser visual UAT tertahan panel ekstensi/login Chrome; PC offline,
+  automaticOFF/uncommissioned, commissioning/endurance OPEN. HR/mobile
+  kandidat terpisah tidak dipromosikan. NOT_BUSINESS_READY.
+
+
 ## 2026-10-17 - Finalisasi HR/mobile: acceptance dibekukan, kandidat belum diuji
 
 **CONFIRMED / SOURCE_PREPARED_UNVALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.** Goal HR/mobile Andreas kini memiliki36acceptance teknis dan12operasional pada ledger existing, tanpa reset allowance/retry atau skor seluruh produk. Source039b4e1/checkpoint66f2bb5 di branchcodex/sagapos-hr-mobile-finalization-20261017 menyiapkan konsistensi review/aktor audit HR, mempertahankan active printer lineage dan perbaikan angka stok existing; tesNOT_RUN menunggu keputusan allowance HR120detik. Diff checkPASS bukan application qualification. Read-only17Oktober01.10-01.18WIB activeb199db6/rollback5148d790, ready/core37/GATEWAY/SaaSCASH; absensioperationalReady=false dan koordinat belum dikonfigurasi. HR production tidak diubah. Gate Kasir/history/fullworkday, Linux artifact/recovery, authenticated role/device UAT dan hari/periode berikutnya tetapOPEN. Ownership printer terpisah; pricing/positioning unchanged, payoutOFF. [Scope dan provenance](https://github.com/notyourgas/sagaops/blob/66f2bb53a243110a9e1e52ecf129af24ae15b214/docs/HR_MOBILE_FINALIZATION_20261017.md). Sumber:instruksi GOAL Andreas17Oktober, exact pushed source dan read-only runtime.9dokumen terdampak termasuk keputusan founder.

@@ -1,5 +1,25 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-17 - Refinement pengaturan printer aktif di production
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED:
+`0033753a48bcdab1be8c3039b3b33f018513952b`, rollback
+`b199db62c007bccff416df66938451cec158174b`. Tiga langkah kesiapan printer,
+detail teknis terpisah, pintasan jarak dan Simpan & gunakan satu aksi kini
+tersedia di Pengaturan > Printer & nota. Akses Owner API berhasil diverifikasi;
+blocker akses deployment sebelumnya CLOSED. Canonical stage, fresh
+candidate/current/candidate recovery dan guarded activation PASS.
+
+105/105 Linux PostgreSQL18/Chromium, static1144/core37/TypeScript, encrypted
+backup/disposable restore/offhost checksum, health/monitor dan6aset exact-source
+PASS. Desain aktifv3/revisi6 serta konfigurasi native persis sama sebelum/sesudah.
+Schema/GATEWAY/lifecycle tidak berubah; tidak ada TEST fisik, template publish,
+enable, driver/proteksi atau transaksi mutation. Cetak otomatis tetapOFF,
+uncommissioned dan PC printer offline. Browser visual UAT masih tertahan
+panel ekstensi/login Chrome; physical commissioning/endurance tetap OPEN.
+Kandidat HR/mobile terpisah tidak ikut dipromosikan. Bukan BUSINESS_READY.
+
+
 ## 2026-10-17 - Finalisasi HR/mobile: acceptance dibekukan, kandidat belum diuji
 
 **CONFIRMED / SOURCE_PREPARED_UNVALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.** Andreas mengotorisasi finalisasi fitur existing HR/mobile dengan acceptance teknis dan operasional terpisah, tanpa menambah allowance, mereset retry atau mengubah batas data/perangkat/provider. Daftar v1 membekukan36kriteria teknis dan12operasional; ini denominator scope HR/mobile, bukan skor seluruh SagaPOS. Penerimaan final belum selesai sehingga tidak ada angka readiness final yang diterbitkan.

@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-17 - Refinement printer berhasil diaktifkan
+
+CONFIRMED / accepted untuk deployment printer UI: source0033753 production-active,
+rollbackb199db6;105/105 Linux checks/static1144/core37/TypeScript, exact artifact,
+backup/restore/offhost, fresh recovery/activation/health/monitor/6aset PASS.
+Templatev3r6/native state exact equality; tidak ada physical TEST/enable,
+driver/proteksi/transaksi mutation. Product/Dossier/changelog/master/gaps/
+portfolio/root disinkronkan. Owner API PASS, browser visual UAT masih tertahan
+panel ekstensi/login; automaticOFF/uncommissioned/PC offline. Commissioning dan
+operational/endurance OPEN, NOT_BUSINESS_READY. HR/mobile tidak ikut dipromosikan.
+
+
 ## 2026-10-17 - Finalisasi HR/mobile: acceptance dibekukan, kandidat belum diuji
 
 **CONFIRMED / SOURCE_PREPARED_UNVALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.** Goal HR/mobile Andreas kini memiliki36acceptance teknis dan12operasional pada ledger existing, tanpa reset allowance/retry atau skor seluruh produk. Source039b4e1/checkpoint66f2bb5 di branchcodex/sagapos-hr-mobile-finalization-20261017 menyiapkan konsistensi review/aktor audit HR, mempertahankan active printer lineage dan perbaikan angka stok existing; tesNOT_RUN menunggu keputusan allowance HR120detik. Diff checkPASS bukan application qualification. Read-only17Oktober01.10-01.18WIB activeb199db6/rollback5148d790, ready/core37/GATEWAY/SaaSCASH; absensioperationalReady=false dan koordinat belum dikonfigurasi. HR production tidak diubah. Gate Kasir/history/fullworkday, Linux artifact/recovery, authenticated role/device UAT dan hari/periode berikutnya tetapOPEN. Ownership printer terpisah; pricing/positioning unchanged, payoutOFF. [Scope dan provenance](https://github.com/notyourgas/sagaops/blob/66f2bb53a243110a9e1e52ecf129af24ae15b214/docs/HR_MOBILE_FINALIZATION_20261017.md). Syncpartially accepted:provenance source/preparation confirmed, technical dan business acceptance pending.

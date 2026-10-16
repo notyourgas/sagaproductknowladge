@@ -1,5 +1,36 @@
 # SagaOPS Dossier
 
+## 2026-10-17 - Printer usability refinement production-active
+
+CONFIRMED: Andreas membuka vault dan menginstruksikan lanjut deploy.
+Source0033753a48bcdab1be8c3039b3b33f018513952b kiniPRODUCTION_ACTIVATED,
+rollbackb199db62c007bccff416df66938451cec158174b. Immutable qualified package
+dipakai tanpa build ulang di VPS; exact hash, admission/stage, fresh isolated
+candidate/current/candidate recovery dan one-use guarded activation PASS.
+105/105 Linux PostgreSQL18/Chromium checks serta static1144/core37/TypeScript
+tetap terikat source/artifact ini. Backup terenkripsi dan disposable restore,
+3 ciphertext archives offhost dengan SHA cocok PASS. Monitor tidak didaftarkan
+ulang untuk attestasi offhost; bukti salinan manual tetap terpisah dari field monitor.
+
+Fresh effective Owner sebelum activation dan protected readback sesudah PASS.
+Template aktif/draftv3/revisi6 exact deep equality; native revision/status,
+matching TEST dan expiry juga persis sama. Source/pointers/service/monitor,
+public health dan6aset exact Git bytes PASS. Core37/GATEWAY/lifecycle unchanged.
+Tidak ada live template publish, TEST fisik, enable, driver/proteksi,
+payment/stock/sale atau HR/mobile candidate activation.
+
+Alur default Printer sekarang membaca status lalu menampilkan sambungan PC,
+uji nota dan cetak otomatis; detail antrean dan profil browser lama terpisah.
+Desain dapat disimpan dan digunakan satu aksi, tetap ada draft, guard respons
+gagal/reload, konfirmasi restore, kontrol jarak ringkas dan preview.
+Native otomatis tetapOFF/uncommissioned, heartbeat PC offline. Authenticated
+production browser visual UAT OPEN karena panel ekstensi/login Chrome; satu
+permintaan login telah disampaikan. API auth PASS bukan pengganti browser UAT.
+Matching physical commissioning, operational/endurance dan renewal/new-device
+onboarding tetap terpisah; NOT_BUSINESS_READY. Riwayat blocked di bawah sudah
+ditutup hanya untuk akses deployment dan aktivasi kandidat printer ini.
+
+
 ## 2026-10-17 - Finalisasi HR/mobile: acceptance dibekukan, kandidat belum diuji
 
 **CONFIRMED / SOURCE_PREPARED_UNVALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.** Andreas mengotorisasi finalisasi fitur existing HR/mobile dengan acceptance teknis dan operasional terpisah, tanpa menambah allowance, mereset retry atau mengubah batas data/perangkat/provider. Daftar v1 membekukan36kriteria teknis dan12operasional; ini denominator scope HR/mobile, bukan skor seluruh SagaPOS. Penerimaan final belum selesai sehingga tidak ada angka readiness final yang diterbitkan.

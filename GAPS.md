@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-17 - Akses deploy dan aktivasi printer CLOSED
+
+CONFIRMED: kandidat0033753 production-active/rollbackb199db6. Gap akses Owner
+deployment dan activation CLOSED setelah vault terbuka, fresh effective Owner,
+exact stage/pair recovery/guarded activation dan readback PASS.
+105/105 Linux checks/static1144/core37/TypeScript, backup/restore/offhost,
+health/monitor/6aset PASS. Templatev3r6 dan native config persis sama.
+Tidak ada TEST fisik/enable/template publish/driver/proteksi/data mutation.
+Authenticated browser visual UAT masihOPEN: panel ekstensi/login Chrome.
+PC printer offline, automaticOFF/uncommissioned; matching paper acceptance,
+operational/endurance, credential renewal/new-device onboarding tetapOPEN.
+Tidak mengubah allowance/status kandidat HR/mobile yang ownership-nya terpisah.
+
+
 ## 2026-10-17 - Finalisasi HR/mobile: acceptance dibekukan, kandidat belum diuji
 
 **CONFIRMED / SOURCE_PREPARED_UNVALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.** Goal HR/mobile Andreas kini memiliki36acceptance teknis dan12operasional pada ledger existing, tanpa reset allowance/retry atau skor seluruh produk. Source039b4e1/checkpoint66f2bb5 di branchcodex/sagapos-hr-mobile-finalization-20261017 menyiapkan konsistensi review/aktor audit HR, mempertahankan active printer lineage dan perbaikan angka stok existing; tesNOT_RUN menunggu keputusan allowance HR120detik. Diff checkPASS bukan application qualification. Read-only17Oktober01.10-01.18WIB activeb199db6/rollback5148d790, ready/core37/GATEWAY/SaaSCASH; absensioperationalReady=false dan koordinat belum dikonfigurasi. HR production tidak diubah. Gate Kasir/history/fullworkday, Linux artifact/recovery, authenticated role/device UAT dan hari/periode berikutnya tetapOPEN. Ownership printer terpisah; pricing/positioning unchanged, payoutOFF. [Scope dan provenance](https://github.com/notyourgas/sagaops/blob/66f2bb53a243110a9e1e52ecf129af24ae15b214/docs/HR_MOBILE_FINALIZATION_20261017.md). Konfigurasi lokasi, keputusan pengujian, akses Owner, final qualification/release serta penerimaan operasional masih terbuka; jangan menyebut calon perbaikan sudah aktif.
