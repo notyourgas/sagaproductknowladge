@@ -1,5 +1,23 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime
+SagaBook source `fb187164c87f3023b1165d7838c640bf388fcaf8`, release
+`20261016201901-fb18716`; previous/rollback6bd76eb, baseline2b56868 disimpan.
+Native terminal0, independent verifier/source/artifact/recovery/MySQL149/
+health/HTTPS/OTP422/wrong-origin403 PASS. Konfigurasi, private storage,
+historical deadline dan central terpisah tidak berubah; provider/DNS/credential/
+transaksi/pesan nyata tidak diaktifkan. CI aplikasi/browser dan MySQL PASS,
+isolated Saga AI audit FAIL di luar scope; PHP warnings tetap tercatat.
+Browser produksi desktop DOM terbatas; capture tidak tersedia/mobile OPEN
+karena pop-up ekstensi. Authenticated production/human UAT/real delivery OPEN,
+BUSINESS_READY=false. Next: tutup pop-up Chrome, lanjutkan mobile dan UAT sah.
+Product/Dossier/changelog/master/gaps/sync diperbarui dari evidence runtime;
+pricing/positioning/produk lain tetap. Checkpoint NO_GO lama tetap histori.
+
+[Laporan release teredaksi](docs/releases/sagabook-account-file-production-release-20261017.md).
+
 ## 2026-10-17 - Sinkronisasi rilis visual Printer & nota
 
 CONFIRMED / accepted untuk rilis UI: sourceb7d27df production-active,
@@ -63,6 +81,9 @@ Next: Owner, exact stage/fresh recovery/activation, authenticated UI UAT.
 
 
 ## 2026-10-17 - SagaBook account/file candidate: package siap, gate release belum lulus
+
+> DEPRECATED sebagai status terkini: snapshot sebelum koreksi dan aktivasi.
+> Kegagalan historis tetap sah; lihat milestone rilis aktif di atas.
 
 `CONFIRMED`: candidate `ac59d789722e2bdd5e6ebb972078940504cdfbdc`, branch
 `codex/sagabook-account-file-security-ux-20261015`, implementation

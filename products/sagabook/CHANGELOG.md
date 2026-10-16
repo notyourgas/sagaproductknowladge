@@ -1,6 +1,48 @@
 # SagaBook Changelog
 
+## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime software:
+source `fb187164c87f3023b1165d7838c640bf388fcaf8`, branch
+`codex/sagabook-account-release-fixes-20261017`, repo `notyourgas/sagabook`,
+release `20261016201901-fb18716`. Kandidat awal `ac59d789` tetap disimpan;
+source final mencakup koreksi minimum dependency, fixture/browser, runner,
+recovery/reconciliation dan routing OTP tanpa tenant. Main tidak di-merge.
+Previous/rollback `6bd76eb6328b010d3d2631a507bd0ab2ee4eb8e9` /
+`20261016195356-6bd76eb`; baseline awal `2b56868` juga dipertahankan.
+
+Native locked runner terminal exit0; independent verifier PASS, 1.097 file
+source aktif dan checksum archive/recovery bundle cocok. Backup terenkripsi,
+checksum/offsite dan disposable MySQL8.4 restore terikat exact final source
+PASS. Tiga migration sejak baseline awal telah diterapkan, total149;
+follow-up OTP tidak menambah migration. Historical deadline, konfigurasi,
+feature flags, private storage dan source central terpisah tetap sama.
+HTTPS/asset/font/cookie/header/anonymous denial PASS; OTP invalid payload422,
+wrong-origin403 tanpa pengiriman provider atau transaksi bisnis.
+
+CI exact [38960481578](https://github.com/notyourgas/sagabook/actions/runs/38960481578):
+aplikasi/browser dan MySQL8.4 PASS; isolated Saga AI dependency audit FAIL di
+luar surface ini, sehingga bukan full monorepo CI PASS. Job PHP menyelesaikan
+16.066 assertion dengan1.450 warning file_get_contents, bukan warning-free.
+Regresi scoped recovery/boundary48test/502assertion PASS; browser sintetis
+CI desktop/mobile PASS sesuai job, tidak dijumlahkan sebagai full produk.
+
+Browser produksi desktop recovery/method switch terverifikasi melalui DOM;
+mobile tertahan pop-up ekstensi Chrome dan capture native tidak tersedia.
+Authenticated production acceptance, human UAT, real IdP/provider delivery
+belum diterima; `BUSINESS_READY=false`. Next: tutup pop-up ekstensi Chrome,
+lanjutkan browser mobile dan acceptance manusia dengan akun yang sah.
+Tidak ada aktivasi provider, perubahan DNS/credential, pesan/pembayaran nyata,
+restore DB bisnis, migrate-down atau backfill finansial otomatis.
+Status NO_GO pada checkpoint lama adalah histori yang telah digantikan untuk
+runtime software ini; acceptance eksternal tetap OPEN.
+
+[Laporan release teredaksi](../../docs/releases/sagabook-account-file-production-release-20261017.md).
+
 ## 2026-10-17 - SagaBook account/file candidate: package siap, gate release belum lulus
+
+> DEPRECATED sebagai status terkini: snapshot sebelum koreksi dan aktivasi.
+> Kegagalan historis tetap sah; lihat milestone rilis aktif di atas.
 
 `CONFIRMED`: candidate `ac59d789722e2bdd5e6ebb972078940504cdfbdc`, branch
 `codex/sagabook-account-file-security-ux-20261015`, implementation
