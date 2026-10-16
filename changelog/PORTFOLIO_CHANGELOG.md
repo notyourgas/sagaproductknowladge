@@ -1,5 +1,37 @@
 # Portfolio Changelog
 
+## 2026-10-17 - SagaBook account/file candidate: package siap, gate release belum lulus
+
+`CONFIRMED`: candidate `ac59d789722e2bdd5e6ebb972078940504cdfbdc`, branch
+`codex/sagabook-account-file-security-ux-20261015`, implementation
+`7f8373c6aa09f9ab8d644d83b4de66dfb9a078b8`, repository `notyourgas/sagabook`.
+Source exact bersih dan remote cocok; delta implementation→candidate tidak
+mengubah application/dependency/migration. Paket immutable dan recovery bundle
+terverifikasi; 3.216 canonical source files cocok. Status
+`PACKAGED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / BUSINESS_READY=false`.
+
+Runtime produksi diperiksa ulang tetap `2b5686820866f43694f9ec9595d3c39f638db3a6`
+/ `20261005125235-2b56868`, source artifact/build manifest cocok; service dan
+HTTPS baseline sehat. Tidak ada deployment, migration, repair apply atau
+perubahan konfigurasi/produk lain. Human UAT belum dilakukan.
+
+CI exact candidate FAIL pada audit dependency dan satu expectation delivery
+sintetis; audit isolated service juga gagal dan tidak disebut produk SagaBook
+lulus. Produksi146/candidate149 migration: migration recovery handle sudah
+allowlisted, dua pending bawaan sebelumnya belum release/rollback allowlisted.
+Linux syntax/parser dan locked cancellation rehearsal PASS, rollback rehearsal
+fixture serta actual schema compatibility FAIL. Fresh candidate-bound recovery
+belum tersedia. Main pinning/ancestry valid; tidak ada merge/bypass.
+
+Bukti lokal149 migration,180 executions/1.484 assertions dan npm audit0 temuan
+tetap histori sintetis Windows, bukan hasil Linux/production baru. Next action:
+delta minimal untuk gate gagal, rehearsal upgrade restore disposable dan
+allowlist, exact SHA baru/recovery binding, lalu native locked release dan
+independent/runtime/browser verification. Scope BFF/central terpisah tetap
+harus dipetakan; tidak mengaktifkan provider atau pilot.
+
+[Checkpoint](../docs/releases/sagabook-account-file-deploy-checkpoint-20261017.md).
+
 ## 2026-10-16 - SagaPOS printer lebih mudah, kandidat lokal
 
 CONFIRMED, permintaan Andreas. Source0033753 pushed: tiga langkah kesiapan
