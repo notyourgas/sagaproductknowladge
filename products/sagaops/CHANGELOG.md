@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-10-17 - New-PC print onboarding disiapkan, installer belum dirilis
+
+CONFIRMED, sumber permintaan Andreas dan source `d471cb8e0b1874cd940ce50f90b27643969d6233`. Sebelum: pemindahan agent/driver memerlukan pekerjaan teknis manual. Sesudah pada source: UI pairing Owner, penggantian akses atomik, binding hardware/port dan TEST kesiapan sekali pakai; layout disetujui tidak berubah. 26 scoped + 13 final-delta tests dan static/TypeScript PASS. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; production b7d27df tidak berubah, bukan BUSINESS_READY. Sertifikat/installer trusted belum tersedia dan PC baru belum diakses. Langkah berikutnya: signed installer, clean-machine/target-engine qualification, release, lalu physical acceptance. [Detail](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).
+
 ## 2026-10-17 - Printer UI mengikuti design system SagaPOS
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source

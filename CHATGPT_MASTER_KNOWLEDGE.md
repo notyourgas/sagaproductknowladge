@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-17 - Batas fitur pemasangan printer Windows baru
+
+CONFIRMED: onboarding pemindahan printer ada pada source `d471cb8e0b1874cd940ce50f90b27643969d6233` (LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED), bukan fitur production satu-klik yang sudah tersedia. UI Owner/pairing dan TEST kesiapan mempertahankan desain/jarak nota; Windows signature/driver guards tidak mematikan proteksi. Sertifikat publisher belum tersedia/diketahui; installer distributable/download, clean-PC qualification dan PC tujuan/physical acceptance masih terbuka. 26 scoped + 13 final-delta tests PASS; produksi b7d27df tidak berubah, tidak ada TEST fisik/enable. NOT_BUSINESS_READY; jangan menjual klaim plug-and-play/zero-consent sebelum gate selesai. [Runbook](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).
+
 ## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime

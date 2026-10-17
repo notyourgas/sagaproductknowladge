@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-17 - Installer printer satu-klik BLOCKED, bukan masalah layout
+
+CONFIRMED: source `d471cb8e0b1874cd940ce50f90b27643969d6233` menutup persiapan pairing Owner dan guard pemindahan PC (26 scoped + 13 final-delta tests PASS); layout/RAW/auto-cut tetap. Installer tepercaya belum dirilis karena sertifikat publisher belum tersedia/diketahui. Paket Windows/prerequisite runtime, immutable download dan clean-machine/target-engine qualification masih OPEN, PC baru berbeda belum diakses. Production setup diblokir, b7d27df tetap aktif; tidak ada physical TEST/enable atau mutasi printer. Next: signing tepercaya tanpa bypass, package/qualification/release, satu TEST pada PC baru dan konfirmasi Owner. HR/mobile/produk lain tidak dipromosikan. [Rencana](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).
+
 ## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime

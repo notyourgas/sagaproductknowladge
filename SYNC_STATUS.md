@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-17 - Onboarding printer baru tersinkron sebagai source-only
+
+CONFIRMED / partially accepted: source `d471cb8e0b1874cd940ce50f90b27643969d6233` pushed; 26 scoped + 13 final-delta tests, static1145/core37/TypeScript PASS. Product/Dossier/changelog/master/gaps/portfolio/root diperbarui untuk pairing Owner, satu TEST kesiapan dan blocker signed installer; layout tidak berubah. Production b7d27df diperiksa read-only, tidak ada deploy/enable/cetak fisik. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, NOT_BUSINESS_READY. Signing/package/clean-machine/PC baru tetap OPEN. Histori SagaBook/HR dan pricing dipertahankan. [Scope](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).
+
 ## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime

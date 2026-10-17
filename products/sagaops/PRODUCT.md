@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-17 - Persiapan pemindahan printer ke Windows baru
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source `d471cb8e0b1874cd940ce50f90b27643969d6233`, atas permintaan Andreas. Source menambahkan UI Hubungkan PC baru, persetujuan kode oleh Owner, pencabutan akses PC lama secara atomik dan satu TEST setelah agent baru siap. Template aktif, layout/jarak, RAW dan auto-cut tidak diubah. Deteksi hardware/port aktual dan validasi driver inbox Microsoft disiapkan; bukan asumsi port lama.
+
+26 scoped tests dan 13 final-delta tests PASS, termasuk browser empat viewport, PowerShell parsing dan helper mocks tanpa mutasi Windows/cetak fisik; static1145/core37/TypeScript PASS. Ini bukan kualifikasi clean-machine atau native PostgreSQL baru. Installer satu-klik bertanda tangan dan download belum tersedia; sertifikat publisher belum tersedia/diketahui, PC tujuan berbeda belum diakses. Production setup tetap diblokir dan runtime masih b7d27df (read-only live check); tidak ada deploy/enable/TEST fisik. NOT_BUSINESS_READY. [Scope dan penyelesaian](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).
+
 ## 2026-10-17 - Tampilan Printer & nota selaras dengan SagaPOS
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source

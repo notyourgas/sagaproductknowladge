@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-10-17 - Windows printer onboarding, source-only
+
+CONFIRMED: source `d471cb8e0b1874cd940ce50f90b27643969d6233`, LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Alur persetujuan Owner mengikat kode PC baru, mencabut credential lama hanya setelah disetujui, memblokir hasil pengiriman yang belum pasti, mengirim credential sekali pakai dan menjadwalkan satu TEST setelah kesiapan lokal. Aktivasi transaksi tetap menunggu konfirmasi kertas. Template/layout/jarak/auto-cut dipertahankan; tidak ada transaksi historis yang dicetak ulang.
+
+Windows bootstrap masih source PowerShell7 x64, bukan installer distributable. Driver inbox Microsoft, deteksi perangkat/port, signature guards, DPAPI dan ledger existing dipakai; proteksi Windows tidak diubah. Scope awal runtime native satu outlet, bukan discovery SaaS lintas tenant. 26 scoped + 13 final-delta tests PASS; bukti Windows helper berupa mock/parse, bukan pemasangan atau hardware acceptance. Production tetap b7d27df, setup tidak dapat diaktifkan. Syarat lanjut: publisher signing tepercaya, installer/prerequisite runtime dan unduhan immutable, clean Windows11 serta Linux PostgreSQL qualification, guarded release, lalu PC baru dan TEST fisik/Owner confirmation. Tidak ada biaya signing/resource baru, deploy, mutasi printer, enable atau cetak fisik. [Runbook](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).
+
 ## 2026-10-17 - Tampilan Printer & nota selaras dengan SagaPOS
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source

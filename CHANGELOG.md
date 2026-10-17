@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-17 - SagaPOS new Windows printer onboarding, belum deploy
+
+CONFIRMED, sumber Andreas dan source `d471cb8e0b1874cd940ce50f90b27643969d6233`. Milestone source menyiapkan pairing Owner, pemindahan akses atomik, driver/port checks dan satu TEST kesiapan; layout tetap. 26 scoped + 13 final-delta tests/static/TypeScript PASS. Product, Dossier, product changelog, portfolio, master, gaps dan sync diperbarui; signing dan PC tujuan masih blocker. Production b7d27df tidak berubah; tidak ada physical print/enable. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY. Knowledge commit terpisah pada main HEAD. [Detail](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).
+
 ## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime
