@@ -1,5 +1,14 @@
 # SagaOPS Dossier
 
+## 2026-10-17 - Native print agent: persiapan jalur Store gratis
+
+CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`, setelah Andreas meminta prioritas gratis. Native agent dan paket MSIX draft dibuat lokal dengan alat Microsoft terverifikasi; biaya signing/builder tambahan tahap ini Rp0. 27/27 scoped tests, 3/3 final native-delta tests, MakeAppx, static1146/core37/TypeScript PASS. Fixture menguji RAW/hash/cut tetap sama, DPAPI dan restart tanpa kirim ulang, bukan TEST fisik atau paket Store terpasang.
+
+Native .NET Framework companion menyiapkan penghubungan Owner dan protokol consumer existing tanpa PowerShell pada PC pelanggan, server lokal atau renderer baru. Package trust/publisher dan integrity tetap dipertahankan; CLI fixture dipisahkan dari executable WinExe yang dikemas. Driver inbox Microsoft diverifikasi read-only pada PC pengembangan; driver/queue tidak diubah. Store menyediakan signing MSIX setelah sertifikasi, bukan signing EXE/MSI langsung; biaya Rp0 pada persiapan ini bukan janji semua jalur distribusi gratis.
+
+Store flow mencapai login, belum membuat akun/submit dokumen/menerima perjanjian/upload. Identitas resmi, legal/privacy/support listing, capability/Store certification, installed trust/UI/DPI/Startup/uninstall, target-engine release qualification dan satu TEST pada PC baru tetap OPEN. Existing template/layout/RAW/feed/cut dipertahankan. Jangan pasang draft unsigned atau mengimpor trust root untuk melewati gate. Tidak ada deployment oleh task ini; pointer produksi716cb91 teramati dari lane lain dan tidak diaudit ulang sebagai hasil printer. NOT_BUSINESS_READY; pricing pelanggan/lisensi source/produk lain tetap. [Detail](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).
+
+
 ## 2026-10-17 10.26WIB - HR publication diterima; gap foto historis FAIL
 
 CONFIRMED / PRODUCTION_ACTIVATED / PARTIAL_ACCEPTANCE / NOT_BUSINESS_READY.

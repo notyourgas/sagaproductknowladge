@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-17 - Native print agent: persiapan jalur Store gratis
+
+CONFIRMED, sumber Andreas dan source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`: prioritas gratis, native consumer/MSIX draft, 27 scoped + 3 final-delta tests/packaging/static PASS. LOCAL_VALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY. Delapan dokumen product/dossier/changelog/portfolio/master/gaps/sync/root diperbarui. Tidak ada cert purchase, open-source license change, final account signup, deploy atau TEST fisik. Blocker beralih ke publisher/Store qualification dan target PC, dengan driver Windows terpisah. Knowledge commit terpisah pada main HEAD. [Detail](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).
+
+
 ## 2026-10-17 10.26WIB - HR publication diterima; gap foto historis FAIL
 
 CONFIRMED / PRODUCTION_ACTIVATED / PARTIAL_ACCEPTANCE / NOT_BUSINESS_READY.

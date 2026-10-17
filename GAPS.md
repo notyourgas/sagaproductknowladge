@@ -1,5 +1,10 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-17 - Native print agent: persiapan jalur Store gratis
+
+CONFIRMED: prioritas gratis Andreas menghasilkan source native/MSIX `bf01e2acd1d49ad833b2f662b10e0f607b05c777`, bukan persetujuan membeli cert, mengubah lisensi atau publish aplikasi. 27 scoped + 3 final-delta tests dan packaging PASS; paid-cert bukan satu-satunya jalur lagi, tetapi Store login/verifikasi publisher/identitas, policy/listing/capability review, installed trust/Startup/UI dan target-PC acceptance tetap OPEN. MSIX tidak memasang driver. Guard produksi kandidat tidak dibuka, tidak ada deploy/enable/cetak fisik; active pointer716cb91 lane lain bukan bukti native Store activation. Next: Owner login/validasi resmi, identitas dan submission yang diizinkan, signed flight/qualification, guarded release lalu satu TEST PC baru. [Plan](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).
+
+
 ## 2026-10-17 10.26WIB - HR publication diterima; gap foto historis FAIL
 
 CONFIRMED / PRODUCTION_ACTIVATED / PARTIAL_ACCEPTANCE / NOT_BUSINESS_READY.

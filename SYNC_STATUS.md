@@ -1,5 +1,10 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-17 - Native print agent: persiapan jalur Store gratis
+
+CONFIRMED / partially accepted: source `bf01e2acd1d49ad833b2f662b10e0f607b05c777` pushed, native MSIX candidate LOCAL_VALIDATED / NOT_DEPLOYED. 27 scoped + 3 final native-delta tests, static1146/core37/TypeScript dan MakeAppx PASS; persiapan signing/builder Rp0. Product/Dossier/changelog/master/gaps/portfolio/root disinkronkan sekali. Source/paket belum beridentitas Store yang direservasi, belum tersertifikasi atau dipasang. Tidak ada deployment oleh task ini; pointer716cb91 lane lain teramati read-only. Login/verifikasi/Store/PC baru tetap OPEN; NOT_BUSINESS_READY. [Runbook](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).
+
+
 ## 2026-10-17 10.26WIB - HR publication diterima; gap foto historis FAIL
 
 CONFIRMED / PRODUCTION_ACTIVATED / PARTIAL_ACCEPTANCE / NOT_BUSINESS_READY.

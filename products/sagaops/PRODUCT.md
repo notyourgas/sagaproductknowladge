@@ -1,5 +1,12 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-17 - Native print agent: persiapan jalur Store gratis
+
+CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`, setelah Andreas meminta prioritas gratis. Native agent dan paket MSIX draft dibuat lokal dengan alat Microsoft terverifikasi; biaya signing/builder tambahan tahap ini Rp0. 27/27 scoped tests, 3/3 final native-delta tests, MakeAppx, static1146/core37/TypeScript PASS. Fixture menguji RAW/hash/cut tetap sama, DPAPI dan restart tanpa kirim ulang, bukan TEST fisik atau paket Store terpasang.
+
+Microsoft Store menjadi jalur gratis yang disiapkan, bukan rilis yang sudah disetujui. Login/verifikasi bisnis, reservasi identitas, privacy/support listing, capability review, Store-signed install/Startup/USB qualification serta PC tujuan masih OPEN. MSIX tidak memasang driver; driver inbox Microsoft disiapkan terpisah melalui Windows. Source/paket tetap unreserved dan nonaktif; tidak ada cert purchase, perubahan proteksi, publish, enable atau cetak fisik. Tugas ini tidak deploy; active pointer terbaru teramati716cb91 dari lane lain, bukan promotion kandidat printer. Scope awal private pilot Kopi Saga, bukan SaaS umum; NOT_BUSINESS_READY. [Runbook](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).
+
+
 ## 2026-10-17 10.26WIB - HR publication diterima; gap foto historis FAIL
 
 CONFIRMED / PRODUCTION_ACTIVATED / PARTIAL_ACCEPTANCE / NOT_BUSINESS_READY.
