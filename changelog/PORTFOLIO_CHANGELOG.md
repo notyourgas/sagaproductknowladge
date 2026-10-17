@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-17 - SagaView checkpoint kandidat native
+
+CONFIRMED, sumber source84e62a6/CI/runtime executor: paket/recovery dan focused
+compiled browser PASS; exact CI quality366 PASS, browser217PASS1FAIL. Native
+lokal366unit/218browser/audit0 PASS terminal0, wrapper belum dipanggil,
+Owner84/af6 OPEN; actual Studio c3170e0/backend af6c139
+tidak berubah. Tidak ada dampak pricing/provider/produk lain. Next: gate Owner
+exact lalu native/runtime verification; bukan BUSINESS_READY.
+[Detail](../docs/releases/sagaview-native-readiness-checkpoint-20261017.md).
+
 ## 2026-10-17 - Native print agent: persiapan jalur Store gratis
 
 CONFIRMED: SagaPOS native Store candidate source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`, LOCAL_VALIDATED / NOT_DEPLOYED. 27 scoped + 3 final-delta tests/MakeAppx/static/TypeScript PASS; Rp0 tambahan signing/builder, tanpa membeli cert atau membuka source. Publisher verification, Store certification dan new-PC acceptance OPEN; MSIX tidak memasang driver. Tidak ada deployment atau print dari task ini, bukan BUSINESS_READY. Produk lain/pricing tetap. [Runbook](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).

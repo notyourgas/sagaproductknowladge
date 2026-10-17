@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-17 - SagaView exact-pair Owner OPEN, cold CI FAIL dipertahankan
+
+CONFIRMED: exception Owner afb3211/af6c139 sah untuk pasangan itu. Kandidat final
+84e62a6/af6c139 belum memiliki receipt physical-UAT/exception exact. Native
+lokal canonical366unit/218browser/audit0 PASS terminal0; wrapper deployment
+belum dipanggil. Optional CI quality366 PASS/browser217PASS1FAIL
+tidak disamakan dengan PASS. Dua koreksi readiness telah dipakai; akar cold
+client-load CI belum tuntas. Next: jawab gate Owner final; executor lanjut native
+dan runtime verification bila seluruh gate wajib PASS, tanpa bypass atau ulang
+izin deploy umum. [Bukti dan batas](docs/releases/sagaview-native-readiness-checkpoint-20261017.md).
+
 ## 2026-10-17 - Native print agent: persiapan jalur Store gratis
 
 CONFIRMED: prioritas gratis Andreas menghasilkan source native/MSIX `bf01e2acd1d49ad833b2f662b10e0f607b05c777`, bukan persetujuan membeli cert, mengubah lisensi atau publish aplikasi. 27 scoped + 3 final-delta tests dan packaging PASS; paid-cert bukan satu-satunya jalur lagi, tetapi Store login/verifikasi publisher/identitas, policy/listing/capability review, installed trust/Startup/UI dan target-PC acceptance tetap OPEN. MSIX tidak memasang driver. Guard produksi kandidat tidak dibuka, tidak ada deploy/enable/cetak fisik; active pointer716cb91 lane lain bukan bukti native Store activation. Next: Owner login/validasi resmi, identitas dan submission yang diizinkan, signed flight/qualification, guarded release lalu satu TEST PC baru. [Plan](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).

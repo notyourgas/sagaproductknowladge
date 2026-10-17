@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-17 - SagaView native readiness dan batas exception
+
+CONFIRMED, source84e62a6 dan pemeriksaan executor. Sebelum kandidat afb belum
+dirilis; sesudah native afb gagal sebelum upload dan final84 siap paket, CI
+quality PASS/Linux217PASS1FAIL, gate lokal366unit/218browser/audit0 PASS terminal0;
+wrapper belum dipanggil. Produksi c317/af6 tetap.
+Perbarui Product/Dossier/changelog SagaView, portfolio/master/GAPS/DECISIONS/
+SYNC_STATUS dan laporan release untuk membedakan kandidat, runtime serta Owner
+exception exact-pair yang masih OPEN. Next: gate Owner final lalu native dan
+verifikasi. Branch main HEAD; source/knowledge terpisah, bukan BUSINESS_READY.
+[Provenance](docs/releases/sagaview-native-readiness-checkpoint-20261017.md).
+
 ## 2026-10-17 - Native print agent: persiapan jalur Store gratis
 
 CONFIRMED, sumber Andreas dan source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`: prioritas gratis, native consumer/MSIX draft, 27 scoped + 3 final-delta tests/packaging/static PASS. LOCAL_VALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY. Delapan dokumen product/dossier/changelog/portfolio/master/gaps/sync/root diperbarui. Tidak ada cert purchase, open-source license change, final account signup, deploy atau TEST fisik. Blocker beralih ke publisher/Store qualification dan target PC, dengan driver Windows terpisah. Knowledge commit terpisah pada main HEAD. [Detail](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).

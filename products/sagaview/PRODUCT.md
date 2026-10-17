@@ -1,5 +1,17 @@
 # SagaView Product Knowledge
 
+## 2026-10-17 - Kandidat native final; produksi belum beralih
+
+`CONFIRMED`: Studio candidate84e62a6 pushed/clean; actual c3170e0 dan dedicated
+backend af6c139 tetap. Exact CI quality366 PASS, Linux217 PASS/1 FAIL pada cold
+bootstrap; gate lokal canonical final366unit/218browser/audit0 PASS terminal0,
+CI bukan full PASS. Wrapper deployment belum dipanggil. Paket/source
+recovery checksum dan mirror disk terpisah PASS; belum upload/aktivasi. Exception
+Owner afb/af6 sah tetapi tidak mencakup84/af6, yang masih OPEN. Tidak ada
+migration/provider/pricing/data mutation. IMPLEMENTED_NOT_DEPLOYED /
+NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY untuk kandidat Studio baru.
+[Checkpoint, bukti dan langkah berikut](../../docs/releases/sagaview-native-readiness-checkpoint-20261017.md).
+
 ## 2026-10-16 - Pemulihan koneksi layanan login
 
 `CONFIRMED / PRODUCTION_DEPLOYED`: sertifikat layanan akun pusat diperbarui;

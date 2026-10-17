@@ -1,5 +1,16 @@
 # SagaView Dossier
 
+## 2026-10-17 - Native readiness checkpoint
+
+`CONFIRMED`: kandidat84e62a6 mencakup seluruh akses/admin, koreksi SSR terdahulu,
+patch dependency wajib dan helper browser; bukan cherry-pick sebagian produk.
+Studio actual c3170e0/backend af6c139, rollback tersedia; runtime03:25UTC sehat,
+lock/capacity PASS sebagai snapshot. CI quality PASS/browser217+1FAIL dipisahkan
+dari gate lokal canonical366unit/218browser/audit0 PASS terminal0. Wrapper
+deployment belum dipanggil. Gate Owner exact84/af6 OPEN; exception afb/af6
+tidak diperluas. Physical/human acceptance dan BUSINESS_READY tetap terbuka.
+[Source, recovery, validasi dan batas](../../docs/releases/sagaview-native-readiness-checkpoint-20261017.md).
+
 ## 2026-10-16 - Insiden ketersediaan login
 
 `CONFIRMED`: halaman login tersedia tetapi koneksi ke layanan akun pusat gagal

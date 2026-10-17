@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-17 - SagaView native checkpoint, belum aktivasi kandidat baru
+
+CONFIRMED: final84e62a6 pushed/clean, actual Studio c3170e0/backend af6c139.
+Immutable source/recovery/mirror PASS; CI quality366 PASS/Linux217PASS1FAIL,
+bukan full CI PASS. Gate lokal canonical366unit/218browser/audit0 PASS terminal0;
+wrapper belum dipanggil, exact Owner84/af6 OPEN,
+exception afb/af6 tidak dipindahkan. Production tidak berubah; kandidat Studio
+IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+[Checkpoint dan next action](docs/releases/sagaview-native-readiness-checkpoint-20261017.md).
+
 ## 2026-10-17 - Native print agent: persiapan jalur Store gratis
 
 CONFIRMED: source `bf01e2acd1d49ad833b2f662b10e0f607b05c777` menyiapkan alternatif native MSIX melalui Microsoft Store untuk mengutamakan biaya0. Kandidat unsigned/unreserved, LOCAL_VALIDATED / NOT_DEPLOYED, 27 scoped + 3 final-delta tests/MakeAppx/static PASS. Jangan menyebutnya installer satu-klik yang sudah tersedia: akun/publisher/Store review, Store-installed qualification dan PC baru masih OPEN. Driver harus disiapkan terpisah melalui Windows; template/spacing tetap. Tidak ada signing berbayar, deployment atau TEST fisik dari task ini. NOT_BUSINESS_READY; SaaS umum belum menjadi scope. [Batas delivery](https://github.com/notyourgas/sagaops/blob/bf01e2acd1d49ad833b2f662b10e0f607b05c777/docs/STORE_PRINT_AGENT_FREE_PATH_20261017.md).

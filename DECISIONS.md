@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-265 - Exception physical UAT SagaView hanya pasangan afb/af6
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-17 |
+| Topik | Penerimaan risiko belum diuji perangkat/printer |
+| Keputusan | Andreas sebagai Owner memberi exception physical UAT untuk exact Studio afb3211730513c11b097b7830ce17d367a3fa76c + backend af6c139f4063258300e94f3f23a93a684c4de51b dan menerima risiko perangkat/printer belum diuji. |
+| Alasan | Jawaban langsung Owner atas panel exact pasangan, terpisah dari izin deployment umum yang sudah berlaku. |
+| Alternatif yang dipertimbangkan | Receipt physical UAT canonical untuk pasangan tersebut; menunggu penerimaan perangkat. |
+| Dampak | Hanya missing canonical physical-UAT evidence yang dikecualikan, semua gate teknis tetap wajib. Percobaan afb gagal sebelum upload. Tidak meliputi kandidat final84e62a6/af6c139, yang gate Owner-nya masih OPEN. |
+| Pemberi keputusan | Andreas / Owner |
+| Status | CONFIRMED untuk afb/af6; physical UAT tidak diverifikasi, bukan BUSINESS_READY atau persetujuan provider/transaksi/pesan nyata. |
+| Dokumen terkait | [SagaView checkpoint](docs/releases/sagaview-native-readiness-checkpoint-20261017.md), [SagaView Product](products/sagaview/PRODUCT.md) |
+
 ## DEC-264 - Sandbox gratis dan kelanjutan aman berdasarkan rekomendasi
 
 | Field | Isi |
