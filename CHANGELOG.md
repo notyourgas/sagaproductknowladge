@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-17 - SagaPOS HR/mobile active release dan izin sandbox gratis
+
+CONFIRMED, sumber Andreas dan active716cb91/rollbackb7d27df; checkpointa176104.
+Before HR app belum deploy; after independent HR review/audit dan unknown-stock
+delta production-active, scoped Linux/immutable recovery/Owner smoke PASS.
+Final acceptance5/36teknis dan0/12operasional, bukan100%/seluruh produk siap.
+Product,Dossier,product/portfolio changelog,master,gaps,sync danDEC-264 diperbarui.
+Builder izin sebelumnya teratasi, initial timeout/library/verifier failures
+dipertahankan. Real Staff/device/day UAT, complete technical criteria dan foto
+historis masih terbuka; tidak ada fake production data atau payout. Knowledge
+commit terpisah pada main HEAD. [Detail](https://github.com/notyourgas/sagaops/blob/a17610428f2199683b39cdd7e999e7edf7f72688/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - SagaPOS new Windows printer onboarding, belum deploy
 
 CONFIRMED, sumber Andreas dan source `d471cb8e0b1874cd940ce50f90b27643969d6233`. Milestone source menyiapkan pairing Owner, pemindahan akses atomik, driver/port checks dan satu TEST kesiapan; layout tetap. 26 scoped + 13 final-delta tests/static/TypeScript PASS. Product, Dossier, product changelog, portfolio, master, gaps dan sync diperbarui; signing dan PC tujuan masih blocker. Production b7d27df tidak berubah; tidak ada physical print/enable. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY. Knowledge commit terpisah pada main HEAD. [Detail](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).

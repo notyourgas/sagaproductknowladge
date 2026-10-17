@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-264 - Sandbox gratis dan kelanjutan aman berdasarkan rekomendasi
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-17 |
+| Topik | Unblock qualified Linux HR/mobile SagaPOS |
+| Keputusan | Andreas mengizinkan sandbox gratis dan pekerjaan aman berikutnya sesuai rekomendasi executor tanpa meminta lanjut berulang. |
+| Alasan | Menutup blocker builder dan menyelesaikan qualification/release dengan bukti aktual. |
+| Alternatif | Builder serving VPS, kapasitas berbayar, BIOS/restart, unrestricted retry atau fixture bisnis production tidak dipakai. |
+| Dampak | Executor memilih satu15menit/2vCPU4GiB lalu mengomunikasikan satu sesi tambahan sama setelah setup timeout; total observed1719771/1800000ms, keduanya stopped/Hobby tanpa upgrade. Initial failure tetap, local HR95,37/120s dan gate Kasir/history/fullworkday tidak direset. Exact716cb91 qualified dan production-active; complete acceptance/UAT belum selesai. |
+| Pemberi keputusan | Andreas melalui izin sandbox gratis dan kelanjutan rekomendasi17Oktober2026; pemilihan sesi/batas operasional oleh executor. |
+| Status | CONFIRMED; bukan otorisasi biaya baru, destructive DB restore, payout, fake production facts atau reset gate exhausted. |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md). |
+
 ## DEC-263 - Allowance HR terfokus dan kebijakan lokasi native
 
 | Field | Isi |

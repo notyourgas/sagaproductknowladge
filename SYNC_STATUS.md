@@ -1,5 +1,20 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-17 - HR/mobile release tersinkron, acceptance parsial
+
+Status partially accepted, CONFIRMED. Source checkpointa176104, application
+active716cb91/rollbackb7d27df verified17Oktober10.19WIB. Linux qualification,
+immutable artifact, encrypted restore/offhost checksums, pair rehearsal,
+guarded activation dan Owner/asset/host/monitor smoke PASS. Perubahan produksi
+HR/unknown-stock aktif; printer onboarding baru tetap source-only.36teknis/
+12operasional tidak berubah,5/36PASS dan0/12PASS pada checkpoint source.
+Builder permission blocker superseded; prior FAIL/caps dan operator deferral
+dipertahankan. Product/Dossier/product changelog/portfolio/master/DECISIONS/
+GAPS/SYNC_STATUS/root changelog diperbarui; source dan knowledge terpisah.
+Knowledge validator/public-safety/diff dan main push wajib sebelum closure
+REL04; source ledger akan diikat ke publication receipt. Tidak ada perubahan
+pricing/positioning atau seluruh SagaPOS BUSINESS_READY. [Source](https://github.com/notyourgas/sagaops/blob/a17610428f2199683b39cdd7e999e7edf7f72688/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - Onboarding printer baru tersinkron sebagai source-only
 
 CONFIRMED / partially accepted: source `d471cb8e0b1874cd940ce50f90b27643969d6233` pushed; 26 scoped + 13 final-delta tests, static1145/core37/TypeScript PASS. Product/Dossier/changelog/master/gaps/portfolio/root diperbarui untuk pairing Owner, satu TEST kesiapan dan blocker signed installer; layout tidak berubah. Production b7d27df diperiksa read-only, tidak ada deploy/enable/cetak fisik. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, NOT_BUSINESS_READY. Signing/package/clean-machine/PC baru tetap OPEN. Histori SagaBook/HR dan pricing dipertahankan. [Scope](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).

@@ -1,5 +1,23 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-17 - HR builder CLOSED; complete acceptance dan UAT OPEN
+
+CONFIRMED: active716cb91/rollbackb7d27df, guarded qualification/artifact/
+encrypted recovery/activation/Owner smoke PASS. Builder authorization blocker
+historis sudah teratasi melalui izin sandbox gratis dan safe recommendations
+Andreas. Dua sesi bounded stopped; timeout/initial library FAIL tetap dicatat.
+Checkpoint acceptance5/36teknis,0/12operasional; knowledge publication REL04
+belum terikat ke source pada checkpoint ini. Sisa access/roster/attendance/
+request/payroll/receiving/closing/cash/recipient/report criteria tidak mendapat
+PASS dari subset tests. HR media recovery hanya policy; historical selfie
+availability belum diterima. Offhost PC checksums bukan managed offsite service.
+One specific90second read-only cashier exception diajukan, belum dijalankan;
+history/fullworkday retry caps tetap. Operator/reviewer/device/day/next-period
+UAT ditunda; jangan membuat production facts atau memperlemah staffing/payroll
+rules. Next: publish knowledge/checkpoint, close independent scoped gaps dengan
+bukti yang cocok, lalu UAT sah saat operator tersedia. Bukan100% readiness.
+[Provenance](https://github.com/notyourgas/sagaops/blob/a17610428f2199683b39cdd7e999e7edf7f72688/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - Installer printer satu-klik BLOCKED, bukan masalah layout
 
 CONFIRMED: source `d471cb8e0b1874cd940ce50f90b27643969d6233` menutup persiapan pairing Owner dan guard pemindahan PC (26 scoped + 13 final-delta tests PASS); layout/RAW/auto-cut tetap. Installer tepercaya belum dirilis karena sertifikat publisher belum tersedia/diketahui. Paket Windows/prerequisite runtime, immutable download dan clean-machine/target-engine qualification masih OPEN, PC baru berbeda belum diakses. Production setup diblokir, b7d27df tetap aktif; tidak ada physical TEST/enable atau mutasi printer. Next: signing tepercaya tanpa bypass, package/qualification/release, satu TEST pada PC baru dan konfirmasi Owner. HR/mobile/produk lain tidak dipromosikan. [Rencana](https://github.com/notyourgas/sagaops/blob/d471cb8e0b1874cd940ce50f90b27643969d6233/docs/WINDOWS_PRINTER_ONBOARDING_20261017.md).

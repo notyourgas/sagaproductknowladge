@@ -1,5 +1,40 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-17 - HR/mobile qualified dan aktif; acceptance masih parsial
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Application `716cb91a27fc4f95fa9dee9498aaddabd3292e66` aktif sekitar10.13WIB,
+rollback `b7d27df19abd12bf0851f85fc4e7c7b06ae310a2`; checkpoint source
+`a17610428f2199683b39cdd7e999e7edf7f72688`. HR reviewer separation/atomic
+audit dan unknown-stock delta kini aktif. Styling printer yang sudah aktif
+dipertahankan; onboarding PC baru source d471cb8 belum ikut dirilis.
+
+Linux static1146/core37/client527/TypeScript PASS;36access,2nativeSaaS,
+10review,18HRregression,17mobile-browser final TAP PASS0skip. Counts memuat
+parent/subcase dan bukan83fitur atau full-role UAT. Actual Team HTTP/cookie/
+CSRF/PostgreSQL serving-role/overtime SQL PASS; akun setup memakai fixture
+writer, bukan onboarding nyata. Initial builder timeout dan Chromium library
+FAIL dipertahankan. Dua sandbox gratis bounded dipilih executor sesuai izin
+lanjutan Andreas, keduanya stopped; tidak ada upgrade atau builder production.
+
+Immutable artifact, encrypted DB+filesystem disposable restore, empat encrypted
+offhost checksum, exact-pair recovery rehearsal dan guarded activation PASS.
+HR-media backup hanya policy; foto historis belum terbukti pulih. Monitor
+offsiteUNVERIFIED tetap dicatat, terpisah dari checksum salinan PC executor.
+Owner API/logout, health/monitor, enam asset/canonical HTML dan host boundaries
+PASS; dua awal verifier FAIL dicatat dan dikoreksi ke renderer/host existing.
+Policy native2/100meter/REVIEW, template dan native-printer config dipertahankan;
+37schema/GATEWAY/SaaS CASH tetap, tanpa fakta usaha/payout/physical print.
+
+Finalization denominator tetap36teknis/12operasional: **5/36PASS,31NOT_RUN;
+0/12PASS,12NOT_RUN** saat checkpoint source; REL04 menunggu publication knowledge.
+Ini acceptance lengkap, bukan skor implementasi seluruh produk. Local HR tetap
+95,37/120detik dan gate Kasir/history/fullworkday FAIL/retry tidak direset.
+Staf/reviewer/perangkat nyata ditunda Andreas; synthetic hanya disposable.
+Nama/lokasi/foto/secret/evidence restricted tidak dipublikasikan. Rilis ini
+menggantikan blocker builder02.01WIB, bukan penutupan goal. Pricing/positioning
+dan produk lain tidak berubah. [Ledger dan batas bukti](https://github.com/notyourgas/sagaops/blob/a17610428f2199683b39cdd7e999e7edf7f72688/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-17 - Persiapan pemindahan printer ke Windows baru
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source `d471cb8e0b1874cd940ce50f90b27643969d6233`, atas permintaan Andreas. Source menambahkan UI Hubungkan PC baru, persetujuan kode oleh Owner, pencabutan akses PC lama secara atomik dan satu TEST setelah agent baru siap. Template aktif, layout/jarak, RAW dan auto-cut tidak diubah. Deteksi hardware/port aktual dan validasi driver inbox Microsoft disiapkan; bukan asumsi port lama.
