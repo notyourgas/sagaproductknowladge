@@ -9,7 +9,7 @@ CONFIRMED, sumber Andreas dan source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`:
 
 CONFIRMED / PRODUCTION_ACTIVATED / PARTIAL_ACCEPTANCE / NOT_BUSINESS_READY.
 Active716cb91/rollbackb7d27df tetap; source checkpoint
-`5ae821cd192ad31b62a458890132abe4b03b9dc1`. Publication8cbea7bb sudah validator/
+`c7e17142dd15007bc21b412959cc7c4938cd1965`. Publication8cbea7bb sudah validator/
 links/public-safety/push/raw Product PASS, menutup REL04. Finalization kini
 **6/36teknis PASS,1FAIL,29NOT_RUN;0/12operasional PASS,12NOT_RUN**; denominator
 tetap. Per kelompok access0/4,HR0/4,attendance1/4,request/payroll0/4,stock0/4,
@@ -19,7 +19,8 @@ score atau seluruh SagaPOS ready.
 ATT03 FAIL: dua historical uploaded attendance evidence dalam retention window
 tidak ditemukan file/checksum pada lokasi saat ini atau bounded shared-runtime
 discovery. Kondisi sudah ada sebelum aktivasi. Backup HR saat ini policy-only;
-archive lama belum ditelusuri isinya, sebab kehilangan dan recoverability belum
+38selected encrypted receiving manifests tidak memuat object yang dicari;
+archive lain belum ditelusuri. Sebab kehilangan dan recoverability belum
 dipastikan. Jangan approve keputusan yang memerlukan bukti wajib belum tersedia,
 membuat foto pengganti, atau mengubah histori untuk meluluskan acceptance.
 Next: Release Lead menelusuri backup relevan secara terbatas dan mendokumentasi
@@ -27,7 +28,7 @@ recovery; Owner menerima gap/remediasi berdasarkan fakta. Production destructive
 restore tetap memerlukan izin dampak data. Gate Kasir exception masih pending,
 old retry caps dan staff/device deferral dipertahankan. Tidak ada deploy ulang,
 fakta usaha baru/payout/printer change atau pricing/positioning change.
-[Ledger, expected/actual dan batas bukti](https://github.com/notyourgas/sagaops/blob/5ae821cd192ad31b62a458890132abe4b03b9dc1/docs/HR_MOBILE_FINALIZATION_20261017.md).
+[Ledger, expected/actual dan batas bukti](https://github.com/notyourgas/sagaops/blob/c7e17142dd15007bc21b412959cc7c4938cd1965/docs/HR_MOBILE_FINALIZATION_20261017.md).
 
 ## 2026-10-17 - SagaPOS HR/mobile active release dan izin sandbox gratis
 
