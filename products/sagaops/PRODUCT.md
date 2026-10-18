@@ -1,5 +1,32 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
+
+CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED sekitar01.20WIB; rollback
+**a1e2cfdc11a4b8681def4a26af4564460bf82c9b**. Sebelumnya review koreksi/foto dan
+pengaturan tarif Team/SaaS belum tersambung; kini tersedia sesuai izin existing,
+tanpa tarif bawaan tenant. Logout native dan receipt recovery juga diperbaiki.
+Tarif kosong bukan nol; approval lama tidak ditulis ulang, gaji tidak dibayarkan.
+
+Linux scoped12files16PASS/0FAIL/0skip, static1160/core37/typePASS; unchanged
+core/domain evidence direuse sesuai inputs, bukan full repository rerun.
+Artifact3954d3359d5f8ddeab5ef000c979378eac206745ab23d61ab4ce607891b7abea,
+encrypted backup/full disposable restore/4offhostchecksums, exact-pair recovery,
+atomic activation, Owner-before/after, read-only browser1536/390, affected asset
+hashes dan monitor PASS. Business writes0; policy100m/REVIEW, printer/template,
+GATEWAY dan SaaS CASH tetap. Managed offsite UNVERIFIED; lane printer terpisah.
+
+ATT04/REQ01/REQ03 technical diterima melalui native/SaaS actual HTTP dan bukti
+shared engine. Native logout defect ditutup, tetapi ACC04 matrix Team/SaaS
+mobile tetap NOT_RUN. Setelah publication knowledge ini tervalidasi/pushed dan
+readback, REL04 ditutup: **17PASS/1FAIL/18NOT_RUN dari36teknis (47,22%)**;
+**0PASS/12NOT_RUN operasional**. Denominator36/12 tetap; NOT_BUSINESS_READY.
+Dua foto historis belum pulih, UAT HP/operator serta akses/mobile/laporan/stok/
+kas/inbox yang belum lengkap tetap terbuka. Cap/retry lama tidak direset.
+Sumber executor dan instruksi deploy Andreas; next: qualification gap yang masih
+diizinkan serta UAT/foto asli. [Checkpoint dan batas bukti](https://github.com/notyourgas/sagaops/blob/85f774ba3c8d6c48a753c30b46b068e586af8b8d/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-18 - Windows UI/recovery candidate0.2.2
 
 CONFIRMED: code de67e3da35aee7dd283993685ac4c9e1d1101a76/docs73c672c.
