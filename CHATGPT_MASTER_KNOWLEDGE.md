@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS HR/mobile aktif; acceptance software bertambah
+
+CONFIRMED: current **a1e2cfdc11a4b8681def4a26af4564460bf82c9b**, rollback
+**c7ba3d41a8d44599d08327c91a402bf5537d1baf**. Feedback ketersediaan93hari
+sudah production-active15.42WIB. Linux artifact/recovery/guarded activation,
+authenticated Owner desktop/mobile read-only dan monitor PASS; policy/template/
+printer/schema/provider tetap. Native actual Staff/Team HR/Owner HTTP proofs
+menutup ACC01/HR01/HR02/HR04/ATT02 secara teknis; SaaS reuse hanya input identik.
+Publication menutupREL04 setelah validator/push/raw readback; checkpoint13PASS/
+1FAIL/22NOT_RUN dari36,0PASS/12NOT_RUN operasional. Source pra-publication masih
+12PASS/1BLOCKED; receipt diikat balik ke ledger. Dua foto historis belum pulih;
+UAT/perangkat, review/swap/payroll, stok/kas/notifikasi/laporan tetap terbuka.
+Bukan BUSINESS_READY atau selesai seluruh SagaPOS. Lane MSIX/printer terpisah.
+[Acceptance](https://github.com/notyourgas/sagaops/blob/2d625c8bc5c9e42c70f8c1dced5073563db400e0/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-18 - SagaPOS aplikasi Windows: TEST fisik pada PC uji lulus
 
 CONFIRMED: docs18ae9609e37143429b7b9d2eadfffc47943de869/kode ed07797.

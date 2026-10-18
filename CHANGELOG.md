@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - Sync SagaPOS availability aktif dan actual-user qualification
+
+CONFIRMED; sumber Andreas dan verifikasi release/source2d625c8. Before:
+activeC7 menampilkan error tanggal generic, Owner-after pending dan acceptance
+7PASS/2FAIL/1BLOCKED/26NOT_RUN. After: activeA1/rollbackC7, feedback93hari jelas,
+Owner/browser/recovery/monitor PASS, actual native user proofs bertambah.
+Source sebelum publication12PASS/1FAIL/1BLOCKED/22NOT_RUN; publication ini
+menutupREL04 menjadi13PASS/1FAIL/22NOT_RUN setelah validator/push/raw readback.
+Operasional tetap0/12; foto/UAT/review/stok/kas/laporan belum selesai.
+File products/sagaops/{PRODUCT,DOSSIER,CHANGELOG},portfolio/master/gaps/sync/root
+changelog. Knowledge main HEAD terpisah; tanpa PII/secret/evidence restricted.
+Milestone MSIX/printer terbaru dipertahankan; tidak deploy produk lain.
+
 ## 2026-10-18 - Sync penerimaan TEST fisik aplikasi SagaPOS
 
 CONFIRMED: docs18ae960/kode ed07797. Before: MSIX terpasang, USB absen dan

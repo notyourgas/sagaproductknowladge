@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-18 - SagaPOS active availability dan actual-user proofs tersinkron
+
+CONFIRMED: source2d625c8bc5c9e42c70f8c1dced5073563db400e0, activeA1e2cfd,
+rollbackC7ba3d4. Owner/authenticated browser/monitor/recovery PASS; runtime
+policy/template/printer/provider/schema tetap, business smoke writes0.
+Source checkpoint12PASS/1FAIL/1BLOCKED/22NOT_RUN menunggu publicationREL04;
+publication ini setelah validator/push/raw readback menutupnya menjadi13PASS/
+1FAIL/22NOT_RUN dari36. O01–12 tetapNOT_RUN. Delapan dokumen product/dossier/
+changelogs/master/gaps/sync diperbarui bersama; source dan knowledge terpisah.
+Tidak memuat PII/foto/lokasi staf/credential/raw receipt atau path restricted.
+Milestone MSIX/printer dari lane lain dipertahankan tanpa menggabungkan release.
+
 ## 2026-10-18 - SagaPOS physical MSIX acceptance tersinkron
 
 CONFIRMED: docs18ae9609e37143429b7b9d2eadfffc47943de869 dan kode ed07797,

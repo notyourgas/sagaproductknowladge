@@ -1,5 +1,40 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Active availability dan actual-user qualification
+
+CONFIRMED: activeA1e2cfd/rollbackC7ba3d4, source acceptance2d625c8.
+Artifact173107200bytes/SHA25656b3549d20accdf388f26a141d2bc24ed42b76a009d3797cf66cb481f7e8eee6,
+tree40a30088bb015d8089d1563f97a083d31e77170c58f13e3cdff384b5ece16e0d.
+Base62 full106TAP dan final11affected/static/type PASS0skip/reuse terpetakan.
+Hobby builder stopped. Pair recovery candidate→current→candidate dan activation
+lulus sebelum authenticated Owner readback/UI1536/390/monitor. Tidak build
+pada serving VPS, mengubah schema37/provider atau membuat fakta usaha palsu.
+Encrypted backup serta offhost checksums terverifikasi; monitor managed
+offsite tetap UNVERIFIED, bukan klaim layanan retention baru.
+
+Native PostgreSQL runtime principal plus actual user HTTP membuktikan
+check-in concurrent satu row, jadwal wajib, telat15/work405/early60 pada shift
+lintas tengah malam, status sesudah fresh server/relogin dan duplicate-out409
+yang dipulihkan dari operasi asli. Foto/GPS adalah fixture disposable;
+perangkat nyata tetap gate terpisah. Login baru dapat memicu REVIEW karena
+session binding berubah; reason ini bukan bukti fisik pergantian perangkat.
+Team HR HTTP manual schedule/profile/rate, own schedule native200/foreign404,
+rate snapshot125000 tetap sesudah150000, Owner reset→temporary gate→change→
+login/logout serta revoke PASS. Owner native HTTP create/edit/state/outlet
+binding/foreign denial PASS setelah dua fixture failures yang dipertahankan.
+Administrative identity/grant setup tidak menggantikan write-path pengguna.
+Native SaaS claims/module/DB dan browser evidence tests direuse sesuai exact
+source compatibility; tidak diklaim semua clock actions melalui browser HTTP.
+
+Generator/publish adalah Owner native; Team/SaaS manual schedule berbeda.
+Archive/delete tetap pada existing Owner native scope, tanpa modul baru.
+Sesudah publication validator/push/readback diterima, acceptance13PASS/1FAIL/
+22NOT_RUN dari36 dan0/12operasional. Source checkpoint sebelum receipt masih
+12PASS/1FAIL/1BLOCKED/22NOT_RUN; publication menutup REL04. ATT03 recovery dua
+foto historis FAIL, bukan regresi baru atau izin mengganti bukti. Review/swap/
+payroll-policy, stok/kas/cutoff/recipient dan UAT manusia belum ditutup.
+[Bukti terikat ledger](https://github.com/notyourgas/sagaops/blob/2d625c8bc5c9e42c70f8c1dced5073563db400e0/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-18 - Penerimaan kertas dari aplikasi terpasang
 
 CONFIRMED: docs18ae9609e37143429b7b9d2eadfffc47943de869, kode ed07797.

@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS HR: batas tanggal jelas dan jalur pengguna terbukti
+
+CONFIRMED: activeA1e2cfd/rollbackC7ba3d4,15.42WIB. Feedback batas93hari kini
+aktif, menjaga aturan usaha dan input. Guarded recovery/activation serta actual
+Owner desktop/mobile/monitor PASS. Native Staff/Team HR/Owner proofs menambah
+penerimaan akses, profil, roster/snapshot dan absensi. Source2d625c8, tanpa
+fakta usaha sintetis. Setelah publicationREL04 tervalidasi:13PASS/1FAIL/
+22NOT_RUN dari36,0/12operasional; foto historis, UAT dan scope lain OPEN.
+Tidak menyatakan BUSINESS_READY, tidak menggabungkan lane printer/MSIX.
+
 ## 2026-10-18 - SagaPOS MSIX mencapai TEST fisik terkonfirmasi
 
 CONFIRMED: docs18ae960/kode ed07797, aplikasi internal0.1.1.0 pada PC uji
