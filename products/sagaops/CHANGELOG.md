@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Internal offline USB TEST packaged
+
+CONFIRMED; Andreas requested another route for immediate laptop printer testing.
+Code0ec0c95/docs94ae26b add native one-attempt TEST to internal0.2.1.0, preserving
+approved layout and existing no-resend engine.17+2 tests/package/install/identity
+PASS. Private ZIP checksum verified remotely; protection settings unchanged.
+No cloud release/payment mutation/auto-enable/physical TEST. USB absent on PC;
+new-laptop paper acceptance and operational automatic printing remain OPEN.
+
+
 ## 2026-10-18 16.29WIB - Kandidat integrasi HR Team/SaaS, belum aktif
 
 CONFIRMED: code31c625e6777fb6996fc9dd1c2a68e399f336f5e7, checkpoint

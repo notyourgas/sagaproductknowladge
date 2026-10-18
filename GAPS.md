@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Backend no longer blocks local hardware TEST
+
+CONFIRMED: source0ec0c95/docs94ae26b, internal0.2.1.0 supports one native offline
+USB TEST with approved frozen receipt and no operational authority. Packaging,
+current-PC install/identity and17+2 tests PASS. No new paper: USB unit absent.
+NEEDS CONFIRMATION: target-laptop installation and paper/footer/autocut. One
+printer-location question was asked; no repeated blind TEST or state deletion.
+Next operator action: install the private internal ZIP with USB connected, open
+native printer settings and confirm one local TEST. Stop if Windows blocks it.
+Linux/backend/Owner pairing/server-bound commissioning/payment UAT remain OPEN
+for automatic operation; local diagnostic acceptance cannot authorize ENABLE.
+
+
 ## 2026-10-18 16.29WIB - Kandidat integrasi HR Team/SaaS, belum aktif
 
 CONFIRMED: code31c625e6777fb6996fc9dd1c2a68e399f336f5e7, checkpoint

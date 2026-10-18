@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS Windows local USB TEST alternative
+
+CONFIRMED: source0ec0c95/docs94ae26b, internal0.2.1.0 package and current-PC
+installation validated. Local synthetic TEST bypasses no guard: no cloud/payment
+authority, one-attempt ledger and idle/unpaired restriction. Approved receipt
+bytes unchanged. Private laptop download prepared; USB absent, paper not sent.
+No backend deploy/auto-enable/paid compute. New laptop and operational gates OPEN.
+
+
 ## 2026-10-18 16.29WIB - Kandidat integrasi HR Team/SaaS, belum aktif
 
 CONFIRMED: code31c625e6777fb6996fc9dd1c2a68e399f336f5e7, checkpoint

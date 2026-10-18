@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS laptop TEST can be local, not operational activation
+
+CONFIRMED: source0ec0c95/docs94ae26b, internal MSIX0.2.1.0 adds native USB TEST
+without backend/login/pairing, using approved frozen revision6 synthetic receipt.
+One-attempt ledger and unpaired/idle/config guard remain.17+2 tests and current-PC
+installation/identity PASS with unchanged protections. Internal private package
+available, not public signed installer. USB absent means no new paper proof.
+Do not equate local TEST with cloud commissioning or automatic payments; new
+laptop, backend deploy and operational activation still OPEN. Auto remains OFF.
+
+
 ## 2026-10-18 16.29WIB - Kandidat integrasi HR Team/SaaS, belum aktif
 
 CONFIRMED: code31c625e6777fb6996fc9dd1c2a68e399f336f5e7, checkpoint

@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - Sync SagaPOS offline USB TEST alternative
+
+CONFIRMED; Andreas requested another safe route to try the new laptop. Before:
+internal0.2.0 awaited backend pairing for TEST. After: code0ec0c95/docs94ae26b,
+internal0.2.1.0 includes existing one-attempt local diagnostic, approved receipt
+unchanged, private laptop package and current-PC install/identity PASS.17+2 tests
+PASS; USB absent/no new paper. Eight affected knowledge files updated, protected
+settings unchanged, no production release or automatic activation. Source and
+knowledge separate, partially accepted; laptop/operational gates remain OPEN.
+
+
 ## 2026-10-18 16.29WIB - Kandidat integrasi HR Team/SaaS, belum aktif
 
 CONFIRMED: code31c625e6777fb6996fc9dd1c2a68e399f336f5e7, checkpoint

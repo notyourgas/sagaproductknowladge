@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - TEST USB lokal tidak perlu menunggu backend
+
+CONFIRMED: source0ec0c9523ea6c58a79cf520cc02c533722db8fd0/docs94ae26b.
+Internal MSIX0.2.1.0 menambahkan satu TEST USB lokal di pengaturan aplikasi,
+tanpa login/pairing cloud atau transaksi production. Memakai template revisi6
+yang telah disetujui dan dibekukan, bukan klaim template aktif baru. Guard
+menolak bila sudah pairing/worker/config operasional; ledger mencegah resend.
+17 desktop/layout dan2 metadata tests PASS; paket/instalasi PC uji/identitas
+dan proteksi tetap terverifikasi. USB tidak hadir, jadi belum ada kertas baru.
+Unduhan internal privat tersedia; instalasi/paper laptop baru dan operasional
+pembayaran otomatis tetap OPEN, auto OFF, bukan public signed distribution.
+
+
 ## 2026-10-18 16.29WIB - Kandidat integrasi HR Team/SaaS, belum aktif
 
 CONFIRMED: code31c625e6777fb6996fc9dd1c2a68e399f336f5e7, checkpoint

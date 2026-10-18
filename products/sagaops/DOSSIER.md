@@ -1,5 +1,22 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Offline USB diagnostic0.2.1.0
+
+CONFIRMED: code0ec0c9523ea6c58a79cf520cc02c533722db8fd0, evidence94ae26b.
+Native settings reuse LocalReceiptTest/Engine for one explicitly confirmed,
+fixed synthetic receipt without cloud authority. Exact approved revision6 RAW
+is preserved, including footer gap and one cutter. A separate diagnostic ledger,
+shared process lock and unpaired/idle/no-config guards prohibit automatic retry
+or collision with an operational worker. No browser RAW/print API is added.
+MSIX SHA25666dc3314dd027a83f7e2658ae473ed8f00529454d26b268e86d9559c7cc945b7;
+laptop ZIP SHA256106277fc7479239959105eff2d44e28798e808db3c569980aee1088853915bef.
+MakeAppx,17 desktop/layout/compiled guards and2 backend metadata tests PASS.
+Authorized-PC update0.2.0 to0.2.1 and installed identity PASS, protections unchanged.
+Installed USB inspection fails closed because the unit is absent; no TEST sent.
+Private internal draft delivery only, not public distribution. Laptop paper,
+guarded backend/pairing/commissioning and operational auto-print remain OPEN.
+
+
 ## 2026-10-18 16.29WIB - Kandidat integrasi HR Team/SaaS, belum aktif
 
 CONFIRMED: code31c625e6777fb6996fc9dd1c2a68e399f336f5e7, checkpoint
