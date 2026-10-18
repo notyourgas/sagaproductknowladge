@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS Windows desktop candidate, source-only
+
+CONFIRMED, sumber Andreas dan source `5a0722117ff043bf38ffad905f123f2cf945af43`:
+sebelum companion Store, sesudah host Kiosk/Kasir dan settings printer bawaan.
+17scopedPASS/1SKIP, final desktop4PASS/TS PASS; unsigned/release-disabled,
+NOT_DEPLOYED/NOT_BUSINESS_READY. Sembilan dokumen product/dossier/changelog/
+portfolio/master/gaps/decision/sync/root diperbarui, harga dan produk lain tetap.
+Tidak ada biaya/signing/protection change/driver install/print/enable. Next:
+direct trust, actual Windows UI/installer/backend qualification, hardware hadir,
+satu TEST lalu konfirmasi. Knowledge branch main HEAD terpisah dari source.
+[Provenance](https://github.com/notyourgas/sagaops/blob/5a0722117ff043bf38ffad905f123f2cf945af43/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-17 - SagaView native readiness dan batas exception
 
 CONFIRMED, source84e62a6 dan pemeriksaan executor. Sebelum kandidat afb belum

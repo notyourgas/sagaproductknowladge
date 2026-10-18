@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Desktop printer: direct trust dan physical acceptance OPEN
+
+CONFIRMED: kandidat `5a0722117ff043bf38ffad905f123f2cf945af43` compiled,
+17scopedPASS/1SKIP dan final desktop4PASS, tetapi tidak ada certificate publisher
+tepercaya, jalur signing langsung Rp0, released installer atau actual UI/install
+qualification. Driver provisioning, native manual-copy dan guarded backend
+release belum selesai. Proteksi/gate lama tidak dilewati dan production tidak
+berubah. Next executor: selesaikan delivery trust sebelum ekspansi rilis;
+physical TEST hanya setelah hardware hadir dan preflight lolos. Andreas mengubah
+prioritas uji ke PC executor; unit USB belum hadir saat inspeksi. Tidak ada
+cetakan yang dikirim, bukan diagnosa bahwa driver/printer rusak. Jangan meminta
+ulang sertifikat atau mengulang TEST buta. [Ledger source](https://github.com/notyourgas/sagaops/blob/5a0722117ff043bf38ffad905f123f2cf945af43/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-17 - SagaView exact-pair Owner OPEN, cold CI FAIL dipertahankan
 
 CONFIRMED: exception Owner afb3211/af6c139 sah untuk pasangan itu. Kandidat final

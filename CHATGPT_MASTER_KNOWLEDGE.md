@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS desktop Windows: kandidat belum siap dipasang
+
+CONFIRMED: Andreas memilih Kiosk/Kasir dengan printer bawaan dan cloud existing,
+distribusi langsung tanpa Store/layanan cetak terpisah, biaya diprioritaskan0.
+Source `5a0722117ff043bf38ffad905f123f2cf945af43` compiled/scoped tests PASS;
+17PASS/1StoreSKIP lalu final desktop4PASS/TS PASS. Paket UNSIGNED/nonaktif,
+bukan installer operasional, deployment atau physical commissioning. Signing
+langsung gratis belum terbukti; jangan menjanjikan tinggal unduh/colok USB.
+Production716cb91 lane lain dan desain nota tetap. PC executor diminta diuji
+dahulu tetapi unit USB belum hadir; laptop baru belum diterima. NOT_BUSINESS_READY.
+[Scope dan OPEN](https://github.com/notyourgas/sagaops/blob/5a0722117ff043bf38ffad905f123f2cf945af43/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-17 - SagaView native checkpoint, belum aktivasi kandidat baru
 
 CONFIRMED: final84e62a6 pushed/clean, actual Studio c3170e0/backend af6c139.

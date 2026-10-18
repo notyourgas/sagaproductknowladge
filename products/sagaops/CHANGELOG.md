@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Kandidat Kiosk/Kasir Windows dengan printer terintegrasi
+
+CONFIRMED, sumber Andreas dan commit `5a0722117ff043bf38ffad905f123f2cf945af43`.
+Sebelum hanya kandidat companion Store; sesudah ada host dua mode dan bridge
+pengaturan, memakai mesin RAW existing tanpa mengubah desain atau pembayaran.
+17scopedPASS/1SKIP, final desktop4/4/TS PASS; paket unsigned nonaktif, bukan rilis.
+Tidak ada production mutation, driver install, physical TEST atau enable.
+Distribusi langsung tepercaya, instalasi dan hardware acceptance masih OPEN;
+uji PC executor diminta dahulu dan menunggu USB fisik. NOT_BUSINESS_READY.
+[Detail](https://github.com/notyourgas/sagaops/blob/5a0722117ff043bf38ffad905f123f2cf945af43/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-17 - Native print agent: persiapan jalur Store gratis
 
 CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`, setelah Andreas meminta prioritas gratis. Native agent dan paket MSIX draft dibuat lokal dengan alat Microsoft terverifikasi; biaya signing/builder tambahan tahap ini Rp0. 27/27 scoped tests, 3/3 final native-delta tests, MakeAppx, static1146/core37/TypeScript PASS. Fixture menguji RAW/hash/cut tetap sama, DPAPI dan restart tanpa kirim ulang, bukan TEST fisik atau paket Store terpasang.

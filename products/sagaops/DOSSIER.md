@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Desktop terintegrasi: kandidat, bukan deployment
+
+CONFIRMED: `5a0722117ff043bf38ffad905f123f2cf945af43` memakai ulang UI cloud,
+Engine RAW, template aktif, approval Owner, DPAPI dan reserve-before-send ledger.
+Satu host/satu Windows user menangani dua mode melalui mutex/state lock.
+Bridge exact-origin/exact-settings hanya INSPECT/CONNECT; CONNECT membutuhkan
+respons setup Owner terautentikasi, nonce dan gate server. Cookie settings tidak
+disalin ke worker dan dihapus saat jendela settings ditutup. Driver/queue siap
+tetap dibuktikan, tidak diasumsikan dari status antrean Windows.
+
+Microsoft SDK DLL signature/hash terverifikasi; executable aplikasi sendiri
+UNSIGNED/Released=false/publisher UNCONFIGURED. Trust direct memerlukan identitas
+rilis, signature executable, pinned publisher serta dependency hashes; Store
+guard lama tidak dihapus.17scopedPASS/1StoreSKIP, final desktop4PASS/TS PASS,
+tambahan biaya0, bukan bukti true-positive trust atau native UI. OPEN: signed
+direct installation, UI/Owner callback nyata, driver/queue provisioning,
+Startup/uninstall/update, native manual-copy, PostgreSQL/recovery/guarded release,
+physical TEST dan aktivasi. Source tidak mengubah production716cb91 atau layout.
+Scope tetap satu outlet/perangkat pilot, bukan SaaS discovery/offline payments.
+[Runbook source](https://github.com/notyourgas/sagaops/blob/5a0722117ff043bf38ffad905f123f2cf945af43/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-17 - Native print agent: persiapan jalur Store gratis
 
 CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`, setelah Andreas meminta prioritas gratis. Native agent dan paket MSIX draft dibuat lokal dengan alat Microsoft terverifikasi; biaya signing/builder tambahan tahap ini Rp0. 27/27 scoped tests, 3/3 final native-delta tests, MakeAppx, static1146/core37/TypeScript PASS. Fixture menguji RAW/hash/cut tetap sama, DPAPI dan restart tanpa kirim ulang, bukan TEST fisik atau paket Store terpasang.

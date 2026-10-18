@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS Kiosk/Kasir desktop candidate
+
+CONFIRMED, source `5a0722117ff043bf38ffad905f123f2cf945af43`: satu host Windows
+dua mode, printer terintegrasi dan cloud existing, bukan dua backend baru.
+17scopedPASS/1SKIP, final desktop4PASS/TS PASS; additional cost0. Paket unsigned
+belum dirilis/diinstal/diaktifkan, signing gratis dan actual target acceptance
+OPEN. Tidak ada deployment, cetak fisik, perubahan layout/pricing/produk lain.
+Prioritas hardware berubah ke PC executor dahulu; USB belum hadir saat inspeksi.
+NOT_BUSINESS_READY. [Detail](https://github.com/notyourgas/sagaops/blob/5a0722117ff043bf38ffad905f123f2cf945af43/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-17 - SagaView checkpoint kandidat native
 
 CONFIRMED, sumber source84e62a6/CI/runtime executor: paket/recovery dan focused

@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-18 - SagaPOS Windows desktop source milestone
+
+CONFIRMED / PARTIALLY_ACCEPTED: source `5a0722117ff043bf38ffad905f123f2cf945af43`
+pushed; candidate host/bridge memakai existing UI dan engine.17scopedPASS/1SKIP,
+final desktop4PASS/TS PASS. Sembilan dokumen product/dossier/changelog/master/
+portfolio/gaps/decision/sync/root mencatat source-only, perubahan pilihan ke
+direct distribution, remaining signing/install/backend/hardware gates dan biaya0.
+Tidak ada deploy/physical TEST/enable; production716cb91 tetap. Knowledge
+publication terpisah; paket unsigned bukan unduhan operasional atau BUSINESS_READY.
+[Batas bukti](https://github.com/notyourgas/sagaops/blob/5a0722117ff043bf38ffad905f123f2cf945af43/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-17 - SagaView native checkpoint
 
 Partially accepted / CONFIRMED: source84e62a6 dan actual c317/af6 dipisahkan;

@@ -1,5 +1,24 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Kandidat aplikasi Kiosk/Kasir Windows, belum installer operasional
+
+CONFIRMED / IMPLEMENTED_CANDIDATE / LOCAL_VALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY:
+source `5a0722117ff043bf38ffad905f123f2cf945af43` menambahkan satu host Windows
+WebView2 untuk UI Kiosk/Kasir existing, pengaturan printer terintegrasi, profil
+Owner terpisah, dan satu consumer RAW/DPAPI/ledger existing. Andreas mengutamakan
+distribusi langsung tanpa Store, bukan PrintNode/QZ terpisah atau perubahan layout.
+Scoped17PASS/1SKIP (Store packaging tidak dijalankan), final desktop4/4 dan
+TypeScript PASS. Ini bukan native-UI/clean-install/physical acceptance.
+
+Paket kandidat unsigned sengaja menolak production sebelum state/network/USB;
+belum ada sertifikat publisher tepercaya atau jalur signing langsung Rp0 yang
+terbukti. Belum ada installer/download/driver provisioning/Startup/update/native
+manual-copy yang dirilis. Production tetap release independen716cb91, tidak
+dipromosikan dari branch printer lama. Biaya tambahan Rp0, proteksi Windows dan
+layout aktif tidak berubah. Andreas kemudian meminta uji PC executor dahulu;
+USB fisik belum hadir saat inspeksi, bukan bukti hardware rusak. Laptop baru
+tetap belum dikualifikasi. [Batas delivery dan pekerjaan tersisa](https://github.com/notyourgas/sagaops/blob/5a0722117ff043bf38ffad905f123f2cf945af43/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-17 - Native print agent: persiapan jalur Store gratis
 
 CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source `bf01e2acd1d49ad833b2f662b10e0f607b05c777`, setelah Andreas meminta prioritas gratis. Native agent dan paket MSIX draft dibuat lokal dengan alat Microsoft terverifikasi; biaya signing/builder tambahan tahap ini Rp0. 27/27 scoped tests, 3/3 final native-delta tests, MakeAppx, static1146/core37/TypeScript PASS. Fixture menguji RAW/hash/cut tetap sama, DPAPI dan restart tanpa kirim ulang, bukan TEST fisik atau paket Store terpasang.

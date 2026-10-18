@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-266 - SagaPOS desktop dengan printer bawaan dan distribusi langsung
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-18 |
+| Topik | Saga Kiosk dan Saga Kasir Windows |
+| Keputusan | Andreas meminta implementasi dua mode aplikasi memakai fondasi web/cloud dan mesin printer existing, tanpa ketergantungan Store/PrintNode/QZ terpisah; tool gratis diprioritaskan, biaya baru tidak diotorisasi. |
+| Alasan | Pengaturan printer ada dalam aplikasi dan penerimaan harus sampai kertas, bukan sekadar source/build. |
+| Alternatif | Browser printing/Store-only/layanan cetak berlangganan tidak menjadi jalur utama; unsigned/protection bypass tidak diterima. |
+| Dampak | Source5a07221 kandidat nonaktif; signed direct distribution/install/backend/hardware masih OPEN. Andreas kemudian meminta uji pada PC executor dahulu karena laptop baru belum dapat diakses; bukan penerimaan laptop baru. |
+| Pemberi keputusan | Andreas melalui GOAL dan balasan perubahan lokasi uji. |
+| Status | CONFIRMED; bukan bukti installer tersedia, deployment, physical TEST atau BUSINESS_READY. |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
+
 ## DEC-265 - Exception physical UAT SagaView hanya pasangan afb/af6
 
 | Field | Isi |
