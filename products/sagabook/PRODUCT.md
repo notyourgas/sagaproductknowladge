@@ -1,5 +1,20 @@
 # SagaBook Product Knowledge
 
+## 2026-10-18 - Perbaikan closing aktif di production, uji login menyusul
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk runtime software:
+source `8f9731a8babf123ea059fcb2b2e553f35118e3cb`, release
+`20261018063915-8f9731a`. Reset input Owner/Staff/Reports telah diperbaiki dan
+kode baru dilayani production. Native gates, backup/restore, verifier23/23
+serta source/HTTPS asset checks PASS; rollback `20261016201901-fb18716`
+tersedia dan kompatibel. Tidak ada dependency/API/schema baru.
+
+Authenticated wizard UAT OPEN: Andreas meminta deployment dulu dan browser
+menyusul. Enam browser sintetis PASS tidak menggantikan acceptance production.
+Reload penuh tetap memakai draft server, bukan autosave. Status ini menggantikan
+belum-deploy pada checkpoint lokal di bawah; BUSINESS_READY belum dinyatakan.
+[Bukti dan batas rilis](../../docs/releases/sagabook-closing-wizard-production-20261018.md).
+
 ## 2026-10-18 - Perbaikan reset input wizard closing, lokal tervalidasi
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source

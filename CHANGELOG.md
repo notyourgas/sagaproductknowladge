@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaBook closing fix dari lokal menjadi production aktif
+
+CONFIRMED, sumber Andreas dan terminal/live evidence: source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb`, release
+`20261018063915-8f9731a`. Sebelum IMPLEMENTED_NOT_DEPLOYED; sesudah software
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, recovery/native gates/verifier23/23
+dan source/HTTPS assets PASS. Sembilan dokumen product/dossier/changelog/
+portfolio/master/gaps/sync/root/report diperbarui. Authenticated wizard UAT
+masih OPEN sesuai Andreas yang meminta browser menyusul; BUSINESS_READY tidak
+diklaim. Main source tidak di-merge, provider/flag/schema/produk lain tetap.
+Knowledge main HEAD; next adalah uji wizard pada sesi login sah.
+
 ## 2026-10-18 13:44 WIB - Pemilihan foto SagaView aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: Studioba2d980,

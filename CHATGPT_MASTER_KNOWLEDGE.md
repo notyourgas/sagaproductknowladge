@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaBook closing fix deployed, uji login production OPEN
+
+CONFIRMED: source `8f9731a8babf123ea059fcb2b2e553f35118e3cb`, release
+`20261018063915-8f9731a` sudah PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED
+untuk software; verifier23/23 dan served-source/assets PASS. Perbaikan menjaga
+input stok/kas/catatan pada konteks yang sama, bukan autosave saat reload penuh.
+Enam browser sintetis PASS; jangan mengatakan wizard dengan akun production
+sudah diterima. Andreas meminta deployment dulu dan browser menyusul, sehingga
+authenticated UAT OPEN dan BUSINESS_READY tidak dinyatakan.
+[Bukti](docs/releases/sagabook-closing-wizard-production-20261018.md).
+
 ## 2026-10-18 13:44 WIB - Pemilihan foto SagaView aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: Studioba2d980,

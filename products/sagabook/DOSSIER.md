@@ -1,5 +1,17 @@
 # SagaBook Dossier
 
+## 2026-10-18 - Closing wizard production software aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb`, release
+`20261018063915-8f9731a`, compatible rollback `20261016201901-fb18716`.
+Native runner exit0, fresh encrypted/offsite backup dan disposable restore,
+verifier23/23 serta tiga source/dua HTTPS bundle checks PASS. Schema tetap149,
+0pending; tidak ada API/dependency/aturan submit baru. Main tidak di-merge.
+Enam browser closing sintetis PASS; authenticated wizard UAT masih OPEN karena
+browser menyusul atas arahan Andreas. Ini bukan autosave atau BUSINESS_READY.
+[Laporan teredaksi](../../docs/releases/sagabook-closing-wizard-production-20261018.md).
+
 ## 2026-10-18 - Closing mempertahankan input lokal saat refresh
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, source

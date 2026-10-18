@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-10-18 - Deploy perbaikan input wizard closing
+
+CONFIRMED, otorisasi Andreas dan terminal/runtime evidence: source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb` aktif sebagai
+`20261018063915-8f9731a`, menggantikan `20261016201901-fb18716` yang menjadi
+rollback kompatibel. Sebelum hanya local validated; sesudah runtime deployed
+dan activated, native gates/backup/restore/verifier23/23/HTTPS assets PASS.
+Source tiga frontend file memperbaiki reset stok/kas/catatan pada konteks sama;
+tidak ada schema/API/dependency baru. Dua kegagalan lingkungan sebelum upload
+dipertahankan sebagai histori, bukan kegagalan runtime aktif.
+Authenticated production wizard UAT tetap OPEN: browser menyusul sesuai Andreas.
+BUSINESS_READY tidak diklaim; tidak ada submit closing nyata untuk pengujian.
+[Bukti](../../docs/releases/sagabook-closing-wizard-production-20261018.md).
+
 ## 2026-10-18 - Cegah input closing ter-reset, belum deploy
 
 CONFIRMED, laporan Andreas dan source

@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaBook closing reset fix production aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb`, release
+`20261018063915-8f9731a`, native gates/recovery/verifier23/23/served-assets PASS.
+Owner/Staff/Reports memakai perbaikan input; authenticated wizard UAT menyusul
+sesuai Andreas. Tidak ada schema/flag/provider/produk lain yang diaktifkan;
+BUSINESS_READY tidak diklaim. [Detail](../docs/releases/sagabook-closing-wizard-production-20261018.md).
+
 ## 2026-10-18 13:44 WIB - Pemilihan foto SagaView aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: Studioba2d980,
