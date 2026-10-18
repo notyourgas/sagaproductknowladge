@@ -2,19 +2,21 @@
 
 ## 2026-10-18 - Unlock/promotion teratasi; foto dan acceptance operasional OPEN
 
-CONFIRMED: activeA1e2cfd/rollbackC7ba3d4; unlock/fresh Owner, capacity/stage/
-rehearsal/activation dan post-activation Owner/browser/monitor sudah PASS.
-HR02 tanggal kini PASS; ACC01/HR01/HR04/ATT02 bertambah dari actual user native
-proofs dan compatible SaaS reuse. PublicationREL04 harus lulus validator/push/
-raw readback sebelum13PASS/1FAIL/22NOT_RUN diterima dari36;operasional0/12.
-ATT03 dua foto historis belum memperoleh byte asli. Tidak dibuat bukti pengganti.
+CONFIRMED: activeA1e2cfd/rollbackC7ba3d4, source1eb9b06fa92d7512f0b79ae6df0f95680be5111a. Fresh Owner,
+capacity/stage/rehearsal/activation/readback/browser/monitor dan knowledge
+publication1a405e9f sudah PASS. ACC01/HR01/HR02/HR04/ATT02 sertaREQ02 bertambah
+dari actual native user proofs dan compatible SaaS reuse. Current14PASS/
+1FAIL/21NOT_RUN dari36;operasional0/12. ATT03 dua foto historis belum memiliki
+byte asli; jangan membuat bukti pengganti atau mengubah keputusan historis.
 
-22technical belum diterima: ACC02/04,ATT04,REQ01–04,STK01–04,CLS01–04,
-CASH01–04,NOT02–04. Permission-request native HTTP baru subkasusPASS.
-Kasir/history/fullworkday cap lama tetap; satu exception profil terakhir
-sudah dikonsumsi dan tidak membuka gate lain. Operator/custodian menutup UAT
-perangkat/fakta sah/foto asli; executor melengkapi bukti software yang tersedia.
-Staf/reviewer nyata ditunda, tidak diciptakan di production. NOT_BUSINESS_READY.
+21technical belum diterima: ACC02/04,ATT04,REQ01/03/04,STK01–04,CLS01–04,
+CASH01–04,NOT02–04. Request native permission/leave/sick/schedule_change kini
+memiliki actual own HTTP/Owner decision proofs, tetapi kategori/jalur lengkap
+belum ditutup. SaaS tidak menyediakan swap/peer command: N/A subfitur saja.
+Kasir/history/fullworkday cap lama tetap; exception profil terakhir sudah
+dikonsumsi dan tidak memberi retry lain. Operator/custodian menutup UAT/HP/
+fakta sah/foto asli; executor melengkapi software proof yang belum diterima.
+Nama staf/reviewer ditunda, tidak dibuat di production. NOT_BUSINESS_READY.
 
 ## 2026-10-18 - USB dan kertas MSIX PC uji diterima, operasional belum
 

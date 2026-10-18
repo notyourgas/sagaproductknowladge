@@ -4,25 +4,24 @@
 
 CONFIRMED: production **a1e2cfdc11a4b8681def4a26af4564460bf82c9b**,
 rollback **c7ba3d41a8d44599d08327c91a402bf5537d1baf**, aktif15.42WIB.
-Rentang ketersediaan berlebih kini mendapat penjelasan batas existing93hari,
-error terfokus dan input tetap tersimpan di form. Aturan staffing/rest tidak
-dilonggarkan. Immutable artifact Linux, encrypted restore/offhost, exact-pair
-rehearsal, guarded activation, authenticated Owner1536/390 dan monitor PASS.
-Policy/template/printer/provider/schema37 tetap, business smoke writes0.
+Rentang ketersediaan berlebih kini menjelaskan batas existing93hari, dengan
+focus/error/input recovery. Staffing/rest tidak dilonggarkan. Linux artifact,
+encrypted restore/offhost, exact-pair rehearsal, guarded activation,
+authenticated Owner1536/390 dan monitor PASS. Runtime policy/template/printer/
+provider/schema37 tetap, business smoke writes0.
 
-ACC01,HR01,HR02,HR04,ATT02 technical PASS: actual native Staff HTTP attendance/
-request recovery, Team HR schedule/rate/reset/password/logout dan Owner
-profile/state/outlet denial; native SaaS qualification direuse pada input
-identik. Tests/docs successor tidak mengubah app inputs atau memerlukan deploy.
-Fixture administratif, module action, mock dan real-device evidence dibedakan.
+Actual native Staff/Team HR/Owner HTTP dan compatible SaaS reuse menutup
+ACC01,HR01,HR02,HR04,ATT02. Tambahan15.58WIB menutupREQ02: maker→peer→HR Team
+independen, published roster/schedule/audit satu keputusan dan attendance-lock
+rollback. SaaS tidak menyediakan swap/peer command; tidak ditambahkan sebagai
+modul baru. REQ01/03 kategori lengkap, lembur dan koreksi belum diterima penuh.
 
-Checkpoint publication ini menutup REL04 hanya setelah validator/push/raw
-readback terverifikasi: **13PASS/1FAIL/22NOT_RUN dari36teknis**, operasional
-**0PASS/12NOT_RUN**; NOT_BUSINESS_READY. Source checkpoint masih12PASS dan
-1BLOCKED sebelum publication receipt diikat balik. Dua foto historis belum
-pulih; review kategori lengkap, stock/cash/notifikasi/laporan dan UAT nyata
-belum diterima. Batas gate lama dipertahankan; bukan seluruh SagaPOS selesai.
-[Ledger dan panduan](https://github.com/notyourgas/sagaops/blob/2d625c8bc5c9e42c70f8c1dced5073563db400e0/docs/HR_MOBILE_FINALIZATION_20261017.md).
+Current **14PASS/1FAIL/21NOT_RUN dari36teknis**, **0PASS/12NOT_RUN operasional**;
+NOT_BUSINESS_READY. REL04 sudah PASS dengan publication1a405e9f/validator/
+push/raw readback dan diikat balik ke ledger. Source proof terbaru1eb9b06fa92d7512f0b79ae6df0f95680be5111a;
+app inputs identik activeA1, successor hanya tests/docs. Dua foto historis,
+UAT/perangkat serta stok/kas/notifikasi/laporan masih terbuka; cap lama tetap.
+[Ledger dan panduan](https://github.com/notyourgas/sagaops/blob/1eb9b06fa92d7512f0b79ae6df0f95680be5111a/docs/HR_MOBILE_FINALIZATION_20261017.md).
 
 ## 2026-10-18 - TEST fisik aplikasi MSIX diterima pada PC uji
 

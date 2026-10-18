@@ -2,38 +2,46 @@
 
 ## 2026-10-18 - Active availability dan actual-user qualification
 
-CONFIRMED: activeA1e2cfd/rollbackC7ba3d4, source acceptance2d625c8.
+CONFIRMED: activeA1e2cfd/rollbackC7ba3d4, source acceptance1eb9b06fa92d7512f0b79ae6df0f95680be5111a.
 Artifact173107200bytes/SHA25656b3549d20accdf388f26a141d2bc24ed42b76a009d3797cf66cb481f7e8eee6,
 tree40a30088bb015d8089d1563f97a083d31e77170c58f13e3cdff384b5ece16e0d.
 Base62 full106TAP dan final11affected/static/type PASS0skip/reuse terpetakan.
-Hobby builder stopped. Pair recovery candidate→current→candidate dan activation
-lulus sebelum authenticated Owner readback/UI1536/390/monitor. Tidak build
-pada serving VPS, mengubah schema37/provider atau membuat fakta usaha palsu.
-Encrypted backup serta offhost checksums terverifikasi; monitor managed
-offsite tetap UNVERIFIED, bukan klaim layanan retention baru.
+Hobby builder stopped. Pair rehearsal dan guarded activation15.42WIB,
+Owner-after/policy-template-printer equality/browser1536/390/monitor PASS.
+Tidak build di serving VPS, mengubah schema/provider atau membuat fakta usaha
+production palsu. Encrypted offhost checksums terverifikasi, managed offsite
+pada monitor tetap UNVERIFIED; bukan klaim layanan retention baru.
 
-Native PostgreSQL runtime principal plus actual user HTTP membuktikan
-check-in concurrent satu row, jadwal wajib, telat15/work405/early60 pada shift
-lintas tengah malam, status sesudah fresh server/relogin dan duplicate-out409
-yang dipulihkan dari operasi asli. Foto/GPS adalah fixture disposable;
-perangkat nyata tetap gate terpisah. Login baru dapat memicu REVIEW karena
-session binding berubah; reason ini bukan bukti fisik pergantian perangkat.
-Team HR HTTP manual schedule/profile/rate, own schedule native200/foreign404,
-rate snapshot125000 tetap sesudah150000, Owner reset→temporary gate→change→
-login/logout serta revoke PASS. Owner native HTTP create/edit/state/outlet
-binding/foreign denial PASS setelah dua fixture failures yang dipertahankan.
-Administrative identity/grant setup tidak menggantikan write-path pengguna.
-Native SaaS claims/module/DB dan browser evidence tests direuse sesuai exact
-source compatibility; tidak diklaim semua clock actions melalui browser HTTP.
+Actual native Staff HTTP membuktikan check-in concurrent satu row, jadwal
+wajib, telat15/work405/early60 lintas tengah malam, server time dan status
+sesudah fresh server/relogin, duplicate-out409+recovery. Login baru dapat
+memicu REVIEW karena session binding; reason bukan bukti ganti HP fisik.
+Team HR HTTP manual profile/schedule/rate, own200/foreign404, old rate snapshot,
+Owner reset→temporary gate→change→login/logout dan revoke PASS. Owner native
+HTTP create/edit/state/server-bound outlet/redaction/foreign denial PASS;
+dua fixture failures dipertahankan dan final correction satu attempt selesai.
+Native SaaS claims/module/DB dan browser evidence proofs direuse sesuai exact
+compatibility; tidak diklaim seluruh clock actions melalui browser HTTP.
+Generator/publish serta archive/delete sesuai existing Owner native scope.
 
-Generator/publish adalah Owner native; Team/SaaS manual schedule berbeda.
-Archive/delete tetap pada existing Owner native scope, tanpa modul baru.
-Sesudah publication validator/push/readback diterima, acceptance13PASS/1FAIL/
-22NOT_RUN dari36 dan0/12operasional. Source checkpoint sebelum receipt masih
-12PASS/1FAIL/1BLOCKED/22NOT_RUN; publication menutup REL04. ATT03 recovery dua
-foto historis FAIL, bukan regresi baru atau izin mengganti bukti. Review/swap/
-payroll-policy, stok/kas/cutoff/recipient dan UAT manusia belum ditutup.
-[Bukti terikat ledger](https://github.com/notyourgas/sagaops/blob/2d625c8bc5c9e42c70f8c1dced5073563db400e0/docs/HR_MOBILE_FINALIZATION_20261017.md).
+Tambahan15.58WIB: actual Owner published roster→native maker/target peer→
+independent Team HR approval mengubah kedua jadwal+linked assignments/version
+sekali; audit aktor Team tepat, own-data terbatas dan replay tidak mengulang
+swap. Attendance prerequisite fixture memblokir swap berikutnya tanpa mengubah
+state/assignments/audit, lalu penolakan sah muncul di timeline. Existing
+staffing/rest/jam conflicts direuse pada input sama. Permission/leave/sick/
+schedule_change own submit/replay/detail/status/decisions juga PASS subkasus;
+overtime/correction/all-route applicability belum diterima penuh. SaaS
+personal whitelist tidak menyediakan shift_swap/peer: N/A subfitur, bukan
+penambahan modul atau N/A seluruh acceptance. Setup identitas/grant dan
+attendance-lock fact bersifat administratif disposable, tidak menggantikan
+write-path pengguna. Request fixtureFAIL detail.state→canonical.status tetap
+tersimpan; final actual Team input delta PASS0skip/cleanupPASS.
+
+Acceptance14PASS/1FAIL/21NOT_RUN dari36;0/12operasional. REL04 publication
+1a405e9f/validator/push/raw readback sudah PASS. ATT03 dua foto historis belum
+pulih; tidak membuat bukti pengganti. UAT manusia/perangkat serta scope
+review/payroll/stock/cash/cutoff/recipient belum ditutup. [Ledger](https://github.com/notyourgas/sagaops/blob/1eb9b06fa92d7512f0b79ae6df0f95680be5111a/docs/HR_MOBILE_FINALIZATION_20261017.md).
 
 ## 2026-10-18 - Penerimaan kertas dari aplikasi terpasang
 
