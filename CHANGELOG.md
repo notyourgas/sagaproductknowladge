@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - Sync SagaPOS internal payment pilot candidate/install
+
+CONFIRMED; source Andreas continuation, code535c4620916e5f1e82f13a001da3a54d07864376
+and installed evidence docs81f8bc8. Before: accepted fixed-paper MSIX0.1.1.0,
+operational host closed. After: explicit internal-payment pilot0.2.0.0 package,
+laptop ZIP and current-PC installation qualified locally, without layout or
+protection changes. Eight product/dossier/changelog/portfolio/master/gaps/sync
+documents synchronized. Production unchanged; auto OFF, native Linux/release,
+pairing/paper/payment UAT/laptop and self-service credential rotation OPEN.
+Source/knowledge separate, knowledge main HEAD, partially accepted.
+
+
 ## 2026-10-18 - Sync SagaPOS availability aktif dan actual-user qualification
 
 CONFIRMED; Andreas dan source/release verification1eb9b06fa92d7512f0b79ae6df0f95680be5111a. Before:

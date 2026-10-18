@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS Windows pilot0.2 installed, automatic operation not active
+
+CONFIRMED: source535c4620916e5f1e82f13a001da3a54d07864376/docs81f8bc8.
+Shared native Kiosk/Kasir internal MSIX0.2.0.0 and laptop ZIP are built; current-PC
+installed identity/driver preparation/protection equality and local tests PASS.
+No layout, menu, price or payment rule change. Unsigned internal-only, not public
+trusted publisher. No backend deploy/pairing/ENABLE/new physical TEST occurred.
+The earlier accepted0.1.1.0 paper is not new commissioning authority. Linux,
+guarded release, server-bound TEST, real-payment UAT and new laptop remain OPEN.
+Credential expiry stops printing safely; self-service rotation is not ready.
+Automatic printing remains OFF; do not promise plug-and-play SaaS readiness.
+
+
 ## 2026-10-18 - SagaPOS HR/mobile aktif; acceptance software bertambah
 
 CONFIRMED: current **a1e2cfdc11a4b8681def4a26af4564460bf82c9b**, rollback

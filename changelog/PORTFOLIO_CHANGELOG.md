@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS Windows internal payment pilot package
+
+CONFIRMED: code535c462/evidence81f8bc8, unsigned MSIX0.2.0.0 built and installed
+on authorized test PC; new-laptop ZIP prepared. Existing design/native engine,
+Owner pairing and verified-paid outbox reused. Local tests/identity/driver and
+unchanged protections PASS, not operational acceptance. Backend deployment,
+server-bound paper/auto-enable/payment UAT and new laptop OPEN. No production
+changes or paid service. NOT_BUSINESS_READY; other product releases preserved.
+
+
 ## 2026-10-18 - SagaPOS HR: batas tanggal jelas dan jalur pengguna terbukti
 
 CONFIRMED: activeA1e2cfd/rollbackC7ba3d4,15.42WIB; feedback93hari jelas,

@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Internal MSIX payment pilot qualified locally
+
+CONFIRMED: code535c4620916e5f1e82f13a001da3a54d07864376 and evidence81f8bc8.
+The independent active HR release is merged before the pilot delta. Exact
+server-declared internal package metadata, explicit backend flag and Owner
+approval guard pairing; existing signed/Store delivery guards are unchanged.
+The shared native engine uses DPAPI, ledger-before-spool and unknown-send review.
+It excludes historical/pending payments and requires a new bound TEST before
+ENABLE. No receipt renderer or business price/payment rule changes.
+MSIX0.2.0.0 SHA2566a869dbffe761dc34bc9468b148f69b0cbe77b190fc9aa15fc8c73fb96255cba;
+laptop ZIP SHA256ed9e2569d3d6207b5dd6524f39e5de629f05aeb5cf54fd9cbdb550c18089d91d.
+Installed-current-PC identity/driver preparation and unchanged protection checks
+passed. This is unsigned internal material, not verified public distribution.
+68 scoped tests PASS/4 environment skips;11 synthetic desktop tests and static
+checks PASS. Linux/native PG, release/recovery, new pairing/paper acceptance,
+real-payment UAT and new-laptop installation remain OPEN. Credentials expire
+after30days; self-service rotation on an already paired PC is not implemented.
+Production unchanged, auto OFF, NOT_BUSINESS_READY.
+
+
 ## 2026-10-18 - Active availability dan actual-user qualification
 
 CONFIRMED: activeA1e2cfd/rollbackC7ba3d4, source acceptance1eb9b06fa92d7512f0b79ae6df0f95680be5111a.

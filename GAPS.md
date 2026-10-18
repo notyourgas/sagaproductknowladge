@@ -1,5 +1,20 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Installed pilot does not close operational printing
+
+CONFIRMED: code535c462/docs81f8bc8, internal MSIX0.2.0.0 built/installed on the
+authorized PC, local tests and safe driver preparation passed. No backend
+deployment, operational pairing, new bound paper acceptance or ENABLE. Existing
+accepted fixed paper cannot be reused as commissioning for a new credential.
+NEEDS CONFIRMATION: Linux/nativePG/artifact/recovery release gate, Owner pairing
+and paper acceptance, genuine Kiosk/Kasir payment UAT, target-laptop install.
+Next executor action: use an authorized zero-cost separate Linux builder,
+qualify exact candidate and recovery, then guarded promotion and one paired
+TEST. No production fake sale or repeated blind TEST. Expired/revoked pilot
+credentials require controlled technical rotation; self-service recovery is
+not yet implemented and ledgers must not be deleted. NOT_BUSINESS_READY.
+
+
 ## 2026-10-18 - Unlock/promotion teratasi; foto dan acceptance operasional OPEN
 
 CONFIRMED: activeA1e2cfd/rollbackC7ba3d4, source1eb9b06fa92d7512f0b79ae6df0f95680be5111a. Fresh Owner,

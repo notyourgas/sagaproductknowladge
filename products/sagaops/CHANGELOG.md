@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Installed internal payment pilot, not production activation
+
+CONFIRMED; Andreas requested shared Kiosk/Kasir verified-payment automatic
+printing and a new-laptop package without layout/protection changes. Code535c462
+and evidence81f8bc8 deliver internal MSIX0.2.0.0, laptop ZIP, explicit server
+pilot gate and current-PC installation. 68 scoped/11 desktop tests PASS; Linux
+and operational gates remain OPEN. No production deploy, new paper, pairing or
+ENABLE. Driver preparation passed without weakening Windows. Self-service
+credential rotation remains a pilot limitation. Public signing remains OPEN.
+
+
 ## 2026-10-18 - Feedback ketersediaan production-active, actual-user proof bertambah
 
 CONFIRMED: activeA1e2cfd/rollbackC7ba3d4, guarded15.42WIB; feedback93hari,

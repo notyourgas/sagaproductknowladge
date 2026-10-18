@@ -1,5 +1,19 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Pilot Windows pembayaran otomatis: source dan instalasi lokal
+
+CONFIRMED: source535c4620916e5f1e82f13a001da3a54d07864376, bukti81f8bc8,
+MSIX unsigned internal0.2.0.0 dan paket laptop dibuat. Update aplikasi PC uji,
+identitas installed dan persiapan driver inbox Microsoft lolos; proteksi tidak
+diubah. Satu mesin native Kiosk/Kasir, pairing Owner dan gate pembayaran server
+memakai fondasi existing, tanpa perubahan layout/menu/harga. 68 scoped dan11
+desktop/WebView tests PASS; empat environment skips tetap terbuka.
+Backend belum di-deploy; pairing operasional, TEST server-bound, auto-enable,
+pembayaran nyata dan laptop baru OPEN. Kertas0.1.1.0 yang diterima bukan bukti
+otomatisasi0.2.0.0. Rotasi kredensial kedaluwarsa belum self-service.
+LOCAL_VALIDATED / INSTALLED_CURRENT_PC / NOT_DEPLOYED / NOT_BUSINESS_READY.
+
+
 ## 2026-10-18 - Ketersediaan HR aktif dan jalur pengguna diverifikasi
 
 CONFIRMED: production **a1e2cfdc11a4b8681def4a26af4564460bf82c9b**,
