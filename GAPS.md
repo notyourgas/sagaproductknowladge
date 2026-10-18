@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Owner/paper existing selesai; direct desktop delivery terhalang
+
+CONFIRMED: Owner login dan satu paper TEST existing sudah diterima Andreas
+(tercetak, jarak/autocut sesuai). Jangan meminta login/USB/TEST ulang tanpa
+pemicu baru. Native auto printing masih OFF. Full desktop goal belum tercapai:
+candidate unsigned, signing publisher tepercaya0, direct trusted distribution
+gratis tanpa Store belum established. Actual UI/installer/provisioning/manual-
+copy/backend release dan laptop baru belum qualified. Unblock membutuhkan
+jalur distribusi tepercaya/publisher yang berwenang serta akses target pada
+tahap penerimaan; tidak ada biaya baru atau protection bypass yang diotorisasi.
+
 ## 2026-10-18 - False-negative USB ditutup; Owner TEST masih OPEN
 
 CONFIRMED: source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` dan read-only

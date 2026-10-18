@@ -1,5 +1,18 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Penerimaan paper existing dipisahkan dari desktop goal
+
+CONFIRMED: Owner login sendiri, satu TEST desain aktif diminta melalui UI;
+ledger bertambah tepat satu, ACKED/SUBMITTED dan antrean kosong. Andreas
+mengonfirmasi tercetak, jarak dan autocut sesuai. Tidak ada transaksi atau
+perubahan template, Windows, production deployment maupun ENABLE. Scope hanya
+PC executor dan consumer existing; bukan installed desktop/new-laptop proof.
+Source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` dan runtime716cb91 dipisahkan.
+Fresh local signing inspection tetap nol sertifikat yang dapat dipakai;
+desktop candidate NotSigned/Released=false. Direct distribution gratis tanpa
+Store/protection bypass belum established; lifecycle/UI/manual-copy/backend/
+target-laptop stages masih OPEN. Jangan memperluas klaim dari paper TEST ini.
+
 ## 2026-10-18 - HardwareID bukan nama instance Windows
 
 CONFIRMED: source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` memperbaiki

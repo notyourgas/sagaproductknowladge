@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - TEST fisik existing PASS; desktop belum tersedia
+
+CONFIRMED: satu TEST melalui dashboard Owner dan agent existing di PC executor
+terkirim, ledger ACKED/SUBMITTED, antrean kosong. Andreas mengonfirmasi nota,
+jarak dan autocut sesuai. Ini penerimaan satu TEST jalur existing, bukan aplikasi
+Windows baru, laptop baru, atau BUSINESS_READY. Cetak otomatis tetap nonaktif;
+tidak ada transaksi, deployment, driver/queue atau protection change.
+Source discovery `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` tetap source-only;
+production716cb91 tetap. Desktop unsigned, publisher signing tidak tersedia;
+distribusi langsung tepercaya Rp0 belum terbukti. Installer/UI/manual-copy/
+backend/new-laptop qualification masih OPEN, tidak diselesaikan dengan bypass.
+
 ## 2026-10-18 - Deteksi iWare diperbaiki, preflight PC executor PASS
 
 CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source

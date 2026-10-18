@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS existing paper acceptance, bukan desktop release
+
+CONFIRMED, sumber satu UI TEST, sanitized local ledger dan Andreas: sebelum
+preflight-only, sesudah paper/jarak/autocut existing diterima. Delapan dokumen
+product/dossier/changelog/portfolio/master/gaps/sync/root diperbarui; source
+cf4a0c2/runtime716cb91 tetap. No ENABLE/deploy/driver/protection/business writes.
+Desktop candidate NotSigned; trusted direct distribution0 belum established.
+Next adalah unblock delivery dan remaining desktop/target qualification, bukan
+TEST ulang otomatis. Knowledge main HEAD; NOT_BUSINESS_READY.
+
 ## 2026-10-18 - SagaPOS USB discovery correction, no physical print
 
 CONFIRMED, source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` dan actual

@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-18 - Existing-path physical TEST accepted, desktop goal incomplete
+
+CONFIRMED / PARTIALLY_ACCEPTED: satu TEST UI existing dicatat ACKED/SUBMITTED
+dan user menerima kertas/jarak/autocut. Eight scoped knowledge documents
+memisahkan current-PC paper acceptance dari desktop/new-laptop release.
+Sourcecf4a0c2/runtime716cb91 tidak berubah; no ENABLE/deploy/business writes.
+Signing0/NotSigned membuat direct trusted delivery belum tersedia; remaining
+desktop stages OPEN. Knowledge main HEAD terpisah, NOT_BUSINESS_READY.
+
 ## 2026-10-18 - iWare USB discovery source correction
 
 CONFIRMED / PARTIALLY_ACCEPTED: source
