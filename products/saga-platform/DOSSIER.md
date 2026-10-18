@@ -1,5 +1,30 @@
 # Saga Platform Dossier
 
+## 2026-10-18 - Kontrak COYABAG aktif; penutupan recovery lokal OPEN
+
+`CONFIRMED / PRODUCTION_DEPLOYED / RUNTIME_VERIFIED / RECOVERY_CLEANUP_OPEN`.
+Platform kini memakai source `3a7ecda0606150ba9173965c0eb129d7dc9d4022`, release `20261018111126-3a7ecda`,
+menggantikan `a8b1818`. Identitas produk pada respons payment dipulihkan dan
+gate dependency/runner diperbaiki. Kandidat awal `084d7f9` tetap ancestor;
+source final di branch `codex/coyabag-release-gates-20261018`.
+
+Runner existing selesai exit0; 2.906 file source cocok, manifest valid,
+service/HTTPS dan signed product-read boundary PASS. Schema dan111 migration,
+221 aset frontend, environment/limit/callback/provider mode tetap.
+SagaBook `8f9731a` dan SagaView `ba2d980` + `af6c139` tetap aktif.
+CI MySQL Platform dan test-and-visual final PASS; aggregate FAIL hanya
+isolated Saga AI dependency audit yang tidak dirilis pada scope ini.
+Backup encrypted/offsite/checksum dan restore terikat candidate PASS,
+namun dua redo log disposable lokal belum dapat dibersihkan karena
+command approval review menolak penghapusan. Flag no-plaintext native receipt
+belum diterima sebagai bukti final; penutupan seluruh gate tetap OPEN.
+Next action: pembersihan dua file owned tersebut secara lokal dan read-back.
+Tidak perlu redeploy aplikasi untuk menutup cleanup. Human UAT/provider nyata/
+printer tidak diuji; tidak ada transaksi/pesan nyata, provider activation,
+credential/DNS change atau koreksi data bisnis. BUSINESS_READY tidak diklaim.
+
+[Laporan dan batas bukti](../../docs/releases/saga-platform-coyabag-contract-runtime-20261018.md).
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.

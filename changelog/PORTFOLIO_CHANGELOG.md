@@ -1,5 +1,27 @@
 # Portfolio Changelog
 
+## 2026-10-18 - Platform/COYABAG runtime terverifikasi; recovery cleanup OPEN
+
+CONFIRMED; source `3a7ecda0606150ba9173965c0eb129d7dc9d4022` / `20261018111126-3a7ecda` aktif melalui
+runner produk existing (exit0). Respons product identity dan gate dependency/
+transport dipulihkan; kandidat awal084d7f9 dipertahankan sebagai ancestor.
+Rollback a8b1818 tersedia; tidak ada migration atau perubahan konfigurasi/provider.
+MySQL Platform dan test-and-visual CI PASS; aggregate FAIL hanya isolated Saga AI.
+Source2906file, manifest, signed auth boundary, service, SSR/CSP dan enam browser
+entry desktop/mobile PASS. SagaBook8f9731a dan SagaViewba2d980/af6c139 tetap aktif.
+Encrypted/offsite backup/checksum dan candidate restore PASS, tetapi independent
+check menemukan dua redo file disposable lokal tersisa. Penghapusan rekursif
+maupun exact-file ditolak automatic command approval review: **RECOVERY_CLEANUP_OPEN**;
+flag native no-plaintext belum diterima sebagai penutupan final. Next: hapus dua
+file owned secara lokal dan read-back; runtime tidak memerlukan redeploy.
+Tidak ada pembayaran/pesan nyata, provider activation, credential/DNS atau data
+correction; human UAT/physical acceptance dan BUSINESS_READY tetap tidak diklaim.
+Sumber: otorisasi Andreas, exact source/runtime dan terminal/independent evidence
+executor. File terdampak: products/saga-platform dan products/coyabag PRODUCT,
+DOSSIER, CHANGELOG, laporan release, portfolio/master/GAPS/SYNC/root changelog.
+Sinkronisasi **partially accepted** untuk penutupan rilis; runtime fakta CONFIRMED.
+[Laporan](../docs/releases/saga-platform-coyabag-contract-runtime-20261018.md).
+
 ## 2026-10-18 17.46WIB - Qualification HR/mobile gagal; koreksi belum aktif
 
 CONFIRMED: Linux exact8d6727c09c96922c11c33b766116d9ba4e6badc9 mencapai
