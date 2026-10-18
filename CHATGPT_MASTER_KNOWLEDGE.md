@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS desktop UX improved, operational gaps explicit
+
+CONFIRMED: internal0.2.2 code de67e3d/docs73c672c adds GUI installer/recovery,
+clear native outlet login and startup feedback. Kiosk staff shortcuts removed,
+settings cookies clear at open, exact cashier Owner-return navigation admitted.
+20 scoped tests/visual previews/package/current-PC identity PASS. Installer
+distinguishes missing USB from app failure and reuses verified installation.
+Receipt/business UI unchanged; no production deploy/TEST/auto-enable. Unsigned
+trust, OS kiosk lock, Kiosk Owner-session entry, credential rotation and target
+laptop/login/payment/paper UAT remain OPEN. Never promise fully finalized SaaS.
+
+
 ## 2026-10-18 - Platform/COYABAG runtime terverifikasi; recovery cleanup OPEN
 
 CONFIRMED; source `3a7ecda0606150ba9173965c0eb129d7dc9d4022` / `20261018111126-3a7ecda` aktif melalui

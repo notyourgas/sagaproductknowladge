@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS native Windows UX candidate0.2.2
+
+CONFIRMED: de67e3d/docs73c672c, graphical installer and explicit printer recovery,
+clear outlet access/loading feedback and focused native boundary fixes.20 scoped
+tests, previews/package and current-PC identity PASS; absent USB remains a
+printer-review state, not full success. Private unsigned pilot, no backend deploy
+or physical TEST. Public Kiosk/auto-print/laptop UAT remain unaccepted; other
+products and the approved receipt layout are unchanged.
+
+
 ## 2026-10-18 - Platform/COYABAG runtime terverifikasi; recovery cleanup OPEN
 
 CONFIRMED; source `3a7ecda0606150ba9173965c0eb129d7dc9d4022` / `20261018111126-3a7ecda` aktif melalui

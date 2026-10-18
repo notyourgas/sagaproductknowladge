@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-18 - Native UX review and installed candidate synchronized
+
+CONFIRMED: code de67e3da35aee7dd283993685ac4c9e1d1101a76/docs73c672c.
+Eight affected documents updated after independent changes were pulled.20 scoped
+tests/previews/package/current-PC identity passed; actual USB recovery correctly
+reports printer review with protection equality, no physical send. Partial
+acceptance only: unsigned/OS lock/Kiosk entry/rotation/production/laptop UAT OPEN.
+No restricted path, private draft link, credential, identifier or raw receipt.
+
+
 ## 2026-10-18 - Platform/COYABAG runtime terverifikasi; recovery cleanup OPEN
 
 CONFIRMED; source `3a7ecda0606150ba9173965c0eb129d7dc9d4022` / `20261018111126-3a7ecda` aktif melalui

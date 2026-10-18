@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Native Windows UX and boundary review
+
+CONFIRMED: code de67e3da35aee7dd283993685ac4c9e1d1101a76/docs73c672c.
+Internal0.2.2 adds graphical installer states/sanitized reports, verified reuse
+of same-version installed files for USB recovery, clearer masked outlet access,
+loading/manual retry and persistent status. Denied CONNECT preserves USB facts.
+Kiosk has no staff-window shortcut; settings cookies clear at open/close. Only
+the exact HTTPS dashboard return-to-cashier login route is additionally allowed,
+not arbitrary dashboard navigation or native web printing.20 scoped tests and
+four non-mutating installer previews PASS. Package and current-PC installed
+identity PASS; two real helper reports show installed application but absent USB,
+the second reusing the same version without reinstall. Protections unchanged,
+no TEST/pairing/auto-enable. MSIX SHA256
+3281f8c4de3ee12d0605d086e70193392b687c2c87a937bb9e5243107d91f531;
+ZIP SHA2563ce904dbbb9aef4be26501025b16bde9f4d6f878aa88795551abff9bda60c567.
+Private draft only. Remaining: unsigned publisher trust, OS lockdown, Kiosk
+server-Owner redirect incompatibility, credential rotation, authenticated real
+login/payment UAT and laptop paper acceptance. This was not a deep security audit.
+
+
 ## 2026-10-18 17.46WIB - Qualification HR/mobile gagal; koreksi belum aktif
 
 CONFIRMED: Linux exact8d6727c09c96922c11c33b766116d9ba4e6badc9 mencapai

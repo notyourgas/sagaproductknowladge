@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Installer/login/start UX reviewed and improved
+
+CONFIRMED; Andreas requested UX finalization and gaps. Code de67e3d/docs73c672c
+deliver internal0.2.2 GUI installer/recovery, outlet-access form and native startup
+feedback, bounded cashier Owner return route and removal of Kiosk staff shortcuts.
+20 scoped tests/visual previews/package/install identity PASS. USB absent;
+recovery correctly reuses installed version. No receipt/business-rule changes,
+production deployment, TEST or automatic activation. Public distribution, OS
+lockdown, Kiosk entry and operational/laptop acceptance remain OPEN.
+
+
 ## 2026-10-18 17.46WIB - Qualification HR/mobile gagal; koreksi belum aktif
 
 CONFIRMED: Linux exact8d6727c09c96922c11c33b766116d9ba4e6badc9 mencapai

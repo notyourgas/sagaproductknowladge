@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - Sync SagaPOS Windows UX review and0.2.2 candidate
+
+CONFIRMED; Andreas requested installer/login/start polish and gaps. Before:
+console installer, ambiguous login, overwritten errors and Kiosk staff shortcuts.
+After: de67e3d/docs73c672c, GUI states/recovery, clearer login/loading/status,
+focused navigation/session fixes.20 scoped tests/previews/package/installed
+identity pass, absent USB correctly separated. Eight affected knowledge files
+updated; source/knowledge separate. No receipt change, backend promotion, TEST
+or auto-enable. Public trust/OS lock/Kiosk entry/rotation/laptop UAT remain OPEN.
+
+
 ## 2026-10-18 - Platform/COYABAG runtime terverifikasi; recovery cleanup OPEN
 
 CONFIRMED; source `3a7ecda0606150ba9173965c0eb129d7dc9d4022` / `20261018111126-3a7ecda` aktif melalui

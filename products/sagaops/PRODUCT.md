@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Windows UI/recovery candidate0.2.2
+
+CONFIRMED: code de67e3da35aee7dd283993685ac4c9e1d1101a76/docs73c672c.
+Installer berjendela membedakan aplikasi terpasang dari printer siap, menyediakan
+laporan dan pemeriksaan ulang tanpa reinstall. Login akses outlet diperjelas;
+loading/retry/status persisten ditambahkan. Kiosk tidak punya pintasan jendela
+petugas, cookie pengaturan dibersihkan, dan rute Owner kembali ke Kasir dibatasi
+secara eksplisit. Layout nota dan bisnis web tidak berubah.20 scoped tests dan
+preview PASS, paket/install/identitas PC uji terverifikasi; USB belum hadir.
+Unsigned internal-only, bukan OS kiosk lockdown. Kiosk Owner-login entry,
+backend auto-print, credential rotation dan target-laptop UAT masih OPEN.
+
+
 ## 2026-10-18 17.46WIB - Qualification HR/mobile gagal; koreksi belum aktif
 
 CONFIRMED: Linux exact8d6727c09c96922c11c33b766116d9ba4e6badc9 mencapai

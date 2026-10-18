@@ -1,5 +1,20 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Native UI review finds operational entry/lock gaps
+
+CONFIRMED: code de67e3d/docs73c672c fixes installer ambiguity, missing recovery
+feedback, Kiosk staff shortcuts and exact cashier Owner-login navigation.20 tests,
+preview/package/current-PC installed identity pass. USB absent; no paper sent.
+NEEDS CONFIRMATION: real cashier Owner-return UAT; Kiosk entry still fails when
+server demands a dashboard Owner session, because public Kiosk navigation is
+deliberately restricted. Backend owner must qualify a device-authorized Kiosk
+entry, not broadly permit Owner workspace or copy cookies. Windows lockdown,
+trusted publisher/public delivery,30-day credential rotation and target-laptop
+touch/DPI/paper acceptance remain OPEN. Next: resolve Kiosk entry in backend lane
+and actual-role UAT, then guarded payment-print commissioning. UI is not release
+authority, and no Windows policy or production data was changed.
+
+
 ## 2026-10-18 - Platform/COYABAG runtime terverifikasi; recovery cleanup OPEN
 
 CONFIRMED; source `3a7ecda0606150ba9173965c0eb129d7dc9d4022` / `20261018111126-3a7ecda` aktif melalui
