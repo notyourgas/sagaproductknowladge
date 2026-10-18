@@ -1,5 +1,17 @@
 # SagaBook Dossier
 
+## 2026-10-18 - Closing mempertahankan input lokal saat refresh
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb`: preflight tidak lagi mengosongkan
+model operasional pada refresh konteks yang sama. Hidrasi kas/catatan memakai
+nilai closing, sehingga objek dashboard identik yang dimuat ulang tidak
+menimpa edit lokal. Reports membersihkan draft pada pergantian cabang/tanggal.
+Build/TypeScript, 11 kontrak dan 6 browser sintetis desktop/mobile PASS.
+Reload penuh memakai draft server; deployment dan authenticated production UAT
+untuk delta ini OPEN. Tidak ada perubahan backend/schema/aturan submit.
+[Provenance dan batas validasi](https://github.com/notyourgas/sagabook/blob/8f9731a8babf123ea059fcb2b2e553f35118e3cb/docs/closing-wizard-draft-preservation-2026-10-18.md).
+
 ## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime software:

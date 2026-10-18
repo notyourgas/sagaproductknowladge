@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaBook closing tidak menimpa input saat refresh
+
+CONFIRMED, sumber Andreas dan source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb`: sebelum input lokal closing dapat
+ter-reset, sesudah dipertahankan pada cabang/tanggal sama. Delapan dokumen
+product/dossier/changelog/portfolio/master/gaps/sync/root diperbarui.
+Build/TypeScript, 11 kontrak dan 6 browser desktop/mobile PASS;
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Tidak ada mutasi production,
+schema, provider atau produk lain. Next: deployment dan UAT delta dalam scope
+yang diotorisasi. Knowledge main HEAD; BUSINESS_READY belum dinilai ulang.
+
 ## 2026-10-18 - SagaPOS printer confirmation freshness, belum deployed
 
 CONFIRMED, sumber observasi UI dan source

@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - SagaBook reset closing: validasi lokal selesai, rilis OPEN
+
+CONFIRMED: source `8f9731a8babf123ea059fcb2b2e553f35118e3cb`, draft PR110,
+menutup bug input reset secara lokal dengan build/TypeScript, 11 kontrak dan
+6 browser PASS. Deployment dan authenticated production UAT untuk delta ini
+belum dilakukan; production tidak diubah oleh task. Next: rilis melalui runner
+kanonik dalam scope yang diotorisasi, lalu acceptance closing pada sesi sah.
+Ini tidak mengubah gap BUSINESS_READY SagaBook lainnya.
+
 ## 2026-10-18 - Stale confirmation source gap ditutup, delivery masih OPEN
 
 CONFIRMED: `331b4554c2009015676f4ff99f4326d1525b46af` menutup silent click

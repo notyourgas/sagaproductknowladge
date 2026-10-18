@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaBook closing: input bertahan setelah refresh
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb` memperbaiki reset stok/kas/catatan
+Owner, Staff dan Reports. Build/TypeScript, 11 kontrak dan 6 browser PASS.
+Production tidak diubah, deployment/UAT delta OPEN; produk lain tidak berubah.
+[Detail](../products/sagabook/CHANGELOG.md).
+
 ## 2026-10-18 - SagaPOS printer confirmation freshness, source-only
 
 CONFIRMED: source `331b4554c2009015676f4ff99f4326d1525b46af` memperbaiki

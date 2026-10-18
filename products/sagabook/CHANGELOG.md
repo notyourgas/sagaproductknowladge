@@ -1,5 +1,18 @@
 # SagaBook Changelog
 
+## 2026-10-18 - Cegah input closing ter-reset, belum deploy
+
+CONFIRMED, laporan Andreas dan source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb` pada
+`codex/sagabook-closing-draft-reset`, baseline rilis `fb187164`:
+sebelum refresh preflight/objek dashboard dapat menimpa stok, kas dan catatan;
+sesudah edit lokal bertahan pada konteks yang sama dan Reports mereset konteks
+saat cabang/tanggal berganti. Build, TypeScript, 11 kontrak dan 6 browser
+desktop/mobile PASS; selector Owner awal dikoreksi mengikuti menu Aksi.
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, production tidak diubah oleh task.
+Deployment/UAT produksi OPEN; BUSINESS_READY belum dinilai ulang.
+[Detail source](https://github.com/notyourgas/sagabook/blob/8f9731a8babf123ea059fcb2b2e553f35118e3cb/docs/closing-wizard-draft-preservation-2026-10-18.md).
+
 ## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime software:

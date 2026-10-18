@@ -1,5 +1,22 @@
 # SagaBook Product Knowledge
 
+## 2026-10-18 - Perbaikan reset input wizard closing, lokal tervalidasi
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source
+`8f9731a8babf123ea059fcb2b2e553f35118e3cb`, branch
+`codex/sagabook-closing-draft-reset`, memperbaiki reset hitungan stok, kas fisik
+dan catatan saat wizard dibuka ulang atau dashboard disinkronkan pada cabang
+dan tanggal yang sama. Berlaku untuk Owner, Staff dan Reports; pergantian
+cabang/tanggal tetap memuat konteksnya sendiri. Reload penuh tetap memerlukan
+draft yang sudah disimpan ke server.
+
+Build, TypeScript UIUX, 11 tes kontrak dan 6 skenario browser desktop/mobile
+PASS. Tidak ada dependency, API, migration atau perubahan aturan submit.
+Production tidak berubah oleh task ini; deployment/UAT produksi perbaikan ini
+belum dilakukan, BUSINESS_READY belum dinilai ulang.
+[Source dan validasi](https://github.com/notyourgas/sagabook/blob/8f9731a8babf123ea059fcb2b2e553f35118e3cb/docs/closing-wizard-draft-preservation-2026-10-18.md),
+[draft PR 110](https://github.com/notyourgas/sagabook/pull/110).
+
 ## 2026-10-17 - SagaBook account/file: rilis koreksi aktif, UAT tetap terbuka
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk runtime software:

@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaBook closing draft: perbaikan lokal, belum aktif produksi
+
+CONFIRMED: source `8f9731a8babf123ea059fcb2b2e553f35118e3cb` menjaga input
+stok, kas dan catatan Owner/Staff/Reports ketika wizard dibuka ulang atau
+dashboard disinkronkan pada konteks yang sama. Build/TypeScript, 11 kontrak
+dan 6 browser desktop/mobile PASS. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED;
+deployment/UAT produksi delta ini OPEN. Reload penuh masih memerlukan draft
+server; jangan menjanjikan autosave atau perbaikan sudah live.
+[Provenance](products/sagabook/CHANGELOG.md).
+
 ## 2026-10-18 - SagaPOS printer: konfirmasi diperbarui, belum dirilis
 
 CONFIRMED: source `331b4554c2009015676f4ff99f4326d1525b46af` membaca status
