@@ -1,6 +1,23 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-272 - SagaPOS rolling menjadi preferensi pada konfigurasi empat staf
+
+| Field | Isi |
+|---|---|
+| Tanggal |2026-10-19|
+| Topik |Prioritas staffing dan jeda saat generate roster4staf|
+| Keputusan |Andreas menerima4staf1pagi/2sore Senin–Kamis dan2/2Jumat–Minggu, rolling2hari sebagai preferensi; rest11jam, max48jam/minggu dan6hari kerja berturut-turut tetap wajib.|
+| Alasan |Shift15–23 ke07–15 hanya menyediakan8jam; larangan lebih dari2hari sejenis bertentangan dengan kebutuhan semua4staf selama3hari peak.|
+| Alternatif |Tetapstrict dan menyatakan kebutuhan/jam saat ini tidak layak; tidak dipilih.|
+| Dampak |Source36d8024 aktif; preset baru4staf preferred, stored strict tetap eksplisit. Aturan disimpan dan draft107penempatan0konflik dibuat atas permintaan Owner; belumpublish atau UAT staf/perangkat.|
+| Pemberi keputusan |Andreas: persetujuan seluruh proposal dengan setting4staf, lalu satu correction90detik dalam sisa batas120detik.|
+| Status |CONFIRMED; kebutuhan staffingDEC-271 tetap berlaku; posisi rolling NEEDS CONFIRMATION pada checkpoint lama ditutup. Bukan waiver UAT, payroll/payout atau reset gate lain.|
+| Dokumen terkait |[Product](products/sagaops/PRODUCT.md),[Dossier](products/sagaops/DOSSIER.md),[Gaps](GAPS.md)|
+
 ## DEC-271 - SagaPOS kebutuhan tetap empat staf per shift
+
+Catatan19Okt: kebutuhan staffing tetapCONFIRMED. Keputusan rolling dan status
+rilis setelah checkpoint ini mengikuti[DEC-272](#dec-272---sagapos-rolling-menjadi-preferensi-pada-konfigurasi-empat-staf).
 
 | Field | Isi |
 |---|---|

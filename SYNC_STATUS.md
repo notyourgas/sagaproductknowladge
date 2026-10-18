@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - Snapshot aktivasi roster4staf02.03WIB
+
+CONFIRMED active `36d8024d2244b97a5e0951ddb023ba4c256a8f4d` /rollback14507c0,
+PRODUCTION_DEPLOYED/ACTIVATED sekitar02.00WIB.51LinuxPASS0skip +static1164/core37/
+type, recovery/backup/offhost4/Owner/readback/browser390/asset/monitorPASS.
+Production berubah: approved4staf1+2/2+2, rolling preferred/rest11/max48/6hari,
+draft107penempatan0konflik; tidakpublish, tidak mengubah histori terbit.
+Current17PASS/1FAIL/18NOT_RUN dari36teknis dan0/12operasional; HR02PASS,
+ATT03 fotoFAIL, denominator tetap. Native cap52,44/120s/cleanupPASS dan semua
+kegagalan historis dipertahankan. Sandbox stopped; managed offsiteUNVERIFIED.
+Knowledge main HEAD setelah validator/push/readback; bukan BUSINESS_READY.
+Milestone Windows/backend terpisah di bawah tidak dihapus atau ikut diaktifkan.
+
 ## 2026-10-19 - Snapshot koreksi roster HR/mobile
 
 CONFIRMED source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8`,18logika+1browser390PASS,

@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS roster4staf aktif; perbaikan generator diterima teknis
+
+CONFIRMED; source `36d8024d2244b97a5e0951ddb023ba4c256a8f4d` aktif sekitar02.00WIB,
+rollback14507c0. Aturan4staf1+2Senin–Kamis/2+2Jumat–Minggu/rolling preferred
+sesuai Andreas; rest11/max48/6hari wajib. Draft107penempatan0konflik, belumpublish.
+51LinuxPASS0FAIL0skip, recovery/backup/offhost/Owner/browser/monitorPASS; kegagalan
+historis dipertahankan. Current17/1/18 dari36teknis,0/12operasional; foto lama dan
+UAT tetap terbuka. GATEWAY/schema37/printer tetap. Rincian PRODUCT/DOSSIER/master/
+GAPS/SYNC/DECISIONS serta product/root changelog; lane Windows terpisah.
+
 ## 2026-10-19 - SagaPOS roster: kandidat perbaikan, production belum berubah
 
 CONFIRMED: Andreas menetapkan kebutuhan4staf1+2Senin–Kamis/2+2Jumat–Minggu.

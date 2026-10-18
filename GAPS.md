@@ -1,5 +1,23 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Roster4staf aktif; gate operasional tetap terbuka
+
+CONFIRMED active `36d8024d2244b97a5e0951ddb023ba4c256a8f4d` /rollback14507c0,
+51LinuxPASS0FAIL0skip, draft107penempatan0konflik. Keputusan rolling preferred
+sudah diterima; exception native90s dipakai24,04s, total52,44/120s, cleanupPASS.
+HR02 kembaliPASS, current17PASS/1FAIL/18NOT_RUN dari36teknis,0/12operasional.
+
+- Owner/HR: tinjau/publish roster yang benar-benar akan dipakai; konfirmasi
+  identitas staf/reviewer dan penerimaan jadwal. Draft/API/browser bukan O02PASS.
+- Staf/perangkat: UAT kehadiran, permission kamera/GPS dan satu hari nyata belum
+  diterima; tidak membuat kejadian palsu. Dua foto historis ATT03 tetapFAIL.
+- QA: ACC04 menyeluruh, stok/closing/kas/notifikasi terkait tetap sesuai ledger;
+  gate Kasir/history/fullworkday spent tidak dibuka oleh rilis roster.
+- Release Lead: managed offsiteUNVERIFIED; Windows/printer belum terintegrasi
+  otomatis ke source roster terbaru dan harus melalui review fresh-current.
+- Timeout transfer, source-prerequisite setupFAIL, native writerFAIL dan dua
+  timeout fixture browser dipertahankan; bukan disembunyikan atau budget direset.
+
 ## 2026-10-19 - SagaPOS HR02 dibuka kembali; roster4staf belum aktif
 
 CONFIRMED source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8`18logika+1browserPASS,

@@ -1,5 +1,19 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Deploy roster4staf dan tutup perbaikan HR02
+
+- CONFIRMED; keputusan Andreas4staf/rolling preferred dengan rest11/max48/6hari.
+- Active `36d8024d2244b97a5e0951ddb023ba4c256a8f4d`, rollback14507c0, sekitar02.00WIB.
+  Before: pola5staf/Jumat belum peak/19streak conflicts. After: draft107penempatan
+  tanpa konflik;1+2Senin–Kamis/2+2Jumat–Minggu. Draft belum dipublikasikan.
+-51LinuxPASS0FAIL0skip, static1164/core37/typePASS; native correctionPASS,
+  immutable artifact, encrypted/full restore/offhost4, recovery, atomic activation,
+  Owner/API/desktop/mobile390/asset/monitorPASS. FAIL/timeout historis tetap.
+- HR02PASS; current17/1/18 dari36teknis,0/12operasional, NOT_BUSINESS_READY.
+  Dua foto historis masihFAIL, managed offsiteUNVERIFIED, UAT staf/perangkat pending.
+- Schema/grants/provider/GATEWAY/SaaS CASH/printer/template tetap; tanpa payout.
+  PRODUCT/DOSSIER/product changelog, master/GAPS/SYNC/DECISIONS/portfolio/root diperbarui.
+
 ## 2026-10-19 - Perbaikan kandidat roster dan reopen HR02
 
 - CONFIRMED: Andreas menetapkan4staf; weekday Senin–Kamis1+2, peak Jumat–Minggu2+2.

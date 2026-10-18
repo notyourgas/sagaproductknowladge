@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): roster4staf aktif dan HR02PASS
+
+CONFIRMED; Andreas menyetujui4staf/rolling preferred, actual production/Owner
+readback19Okt02.00–02.03WIB. Source `36d8024d2244b97a5e0951ddb023ba4c256a8f4d` aktif,
+rollback14507c0; draft107penempatan0konflik belumpublish.51LinuxPASS0skip,
+recovery/backup/offhost4/Owner/browser/monitorPASS; current17/1/18 dari36teknis,
+0/12operasional. Histori/denominator/cap tetap; foto lama dan UAT masih terbuka.
+PRODUCT/DOSSIER/product changelog, portfolio/master/GAPS/SYNC/DECISIONS dan root
+ini diperbarui. Knowledge main HEAD setelah validator/push/readback; production
+berubah untuk HR roster, lane Windows/printer tetap terpisah, bukan BUSINESS_READY.
+
 ## 2026-10-19 - knowledge(sagaops): kandidat roster4staf dan reopen HR02
 
 CONFIRMED; sumber Andreas dan actual Owner read-only01.32WIB. Source

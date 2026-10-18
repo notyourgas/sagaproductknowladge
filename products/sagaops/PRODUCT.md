@@ -1,5 +1,34 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Roster4staf aktif; draft tanpa konflik
+
+CONFIRMED: **36d8024d2244b97a5e0951ddb023ba4c256a8f4d** sudah PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED sekitar02.00WIB; rollback **14507c0a7df3e830a9839e09a8f82cf63aa6aedc**.
+Andreas menerima konfigurasi4staf: Senin–Kamis1pagi/2sore dan Jumat–Minggu2/2,
+rolling2hari sebagai preferensi, rest11jam/max48jam per minggu/6hari kerja tetap
+wajib. Preset periode baru4staf preferred; strict tersimpan tetap eksplisit.
+
+Sebelumnya draft berlabel5staf/Jumat belum peak dan19konflik shift sejenis.
+Kini aturan disimpan dan draft Oktober untuk4profil aktif existing dibuat ulang:
+**107penempatan,0konflik**. Tetapdraft; histori terbit tidak berubah dan tidak ada
+jadwal baru dipublikasikan. Ini perencanaan atas permintaan Owner, bukan UAT
+staf/perangkat atau perekaman kehadiran/penjualan buatan.
+
+Linux9files **51PASS/0FAIL/0skip**, static1164/core37/typePASS. Local native
+correctionPASS; total52,44/120detik termasuk attemptFAIL terdahulu, cleanupPASS.
+Transfer timeout dan setup source-prerequisiteFAIL dipertahankan; diperbaiki
+dalam sandbox15menit yang sama, kemudian stopped. Artifact4496feec6855f07236cf18e67abc4571aa025bb70b16c5d0b33591841c46d2d7,
+encrypted/full disposable restore/4offhostchecksums, fresh exact-pair recovery,
+atomic activation, Owner/readback/affected asset/monitorPASS. Schema37/GATEWAY,
+SaaS CASH dan konfigurasi printer/template tetap; tidak ada grant/provider/payout baru.
+
+Owner desktop1536 substep selesai; mobile390 correction2PASS setelah tes membuka
+menu Tindakan jadwal. Dua timeout sebelumnya tetap tercatat; bukan perangkat
+nyata. HR02 kembaliPASS: **17PASS/1FAIL/18NOT_RUN dari36teknis(47,22%)**,
+**0PASS/12NOT_RUN operasional(0%)**, denominator tetap. ATT03 dua foto historis
+masihFAIL; ACC04 matrix keseluruhan dan penerimaan operator tetap terbuka.
+Managed offsiteUNVERIFIED. Whole HR/mobile dan SagaPOS belum BUSINESS_READY.
+
 ## 2026-10-19 - Kandidat perbaikan roster empat staf; belum aktif
 
 CONFIRMED: source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8` memperbaiki kandidat generator4staf,
