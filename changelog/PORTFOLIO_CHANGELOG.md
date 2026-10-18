@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS HR: guard aktif dan kandidat ketersediaan siap
+
+CONFIRMED: productionC7ba3d4/rollback02b4588; pengaman bukti absensi dan native
+qualification/recovery/monitor PASS. KandidatA1e2cfd menjelaskan batas existing
+93hari, qualified Linux dan immutable/incoming verified, belum diaktifkan.
+Authenticated readback, dua foto historis dan UAT nyata masih terbuka.
+Readiness acceptance36/12 tetap7PASS/2FAIL/1BLOCKED/26NOT_RUN dan0/12.
+Cap lama, printer lane, schema/provider dan produk lain tetap; NOT_BUSINESS_READY.
+
 ## 2026-10-18 - SagaPOS Windows installer source, belum rilis
 
 CONFIRMED: `c12e8de222e2ad9b554b1e7c564f4598466c0d37` menyediakan

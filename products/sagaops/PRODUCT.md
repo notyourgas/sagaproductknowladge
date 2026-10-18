@@ -1,5 +1,28 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Guard bukti absensi aktif; perbaikan ketersediaan siap rilis
+
+CONFIRMED: production current c7ba3d41a8d44599d08327c91a402bf5537d1baf,
+rollback02b4588f6977aca23278b5d1db0c275a782a5833. Pengaman integritas foto
+absensi saat baca/approval sudah diaktifkan melalui artifact Linux dan guarded
+recovery. Monitor, health dan batas akses anonymous PASS; authenticated Owner
+readback setelah aktivasi masih pending. Dua foto historis belum pulih.
+
+Kandidat a1e2cfdc11a4b8681def4a26af4564460bf82c9b menjelaskan batas existing
+93hari per aturan ketersediaan, menolak rentang berlebih sebelum submit,
+memfokuskan error dan menjaga input. Ini LINUX_QUALIFIED / IMMUTABLE_PACKAGED /
+INCOMING_VERIFIED, belum production-active. Tidak melonggarkan aturan usaha.
+Full106TAP pada base62c5221 dan final static/type+11affected tests PASS0skip,
+dengan reuse inputs yang identik; builder gratis sudah stopped.
+
+Acceptance teknis ACC03/HR03 diterima sesuai scope. Denominator36/12 tetap:
+7PASS/2FAIL/1BLOCKED/26NOT_RUN teknis,0/12operasional. NOT_BUSINESS_READY;
+HR02 feedback pada versi aktif dan ATT03 recovery foto masih FAIL, REL04
+menunggu authenticated readback. Generator adalah fitur Owner native;
+Team/SaaS manual schedule/own-data dinilai terpisah. UAT staf/perangkat/hari
+nyata dan cap Kasir/history/fullworkday tetap terbuka.
+[Panduan dan checkpoint](https://github.com/notyourgas/sagaops/blob/1721263af6c98735676a5ac666ae42809025eae1/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-18 - Installer Windows kandidat tersedia, bukan rilis operasional
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: source

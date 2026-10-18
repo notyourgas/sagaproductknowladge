@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Integritas absensi aktif, feedback ketersediaan qualified
+
+CONFIRMED: appC7ba3d4 production-active, rollback02b4588; artifact/recovery/
+activation/monitor PASS, authenticated Owner-after pending. Native sesi dan
+roster acceptance bertambah, tanpa data usaha sintetis. Perbaikan pesan rentang
+ketersediaan93hari ada pada kandidatA1e2cfd qualified/packaged/incoming verified,
+belum aktif. Source docs1721263af6c98735676a5ac666ae42809025eae1 merangkum bukti,
+reuse dan cap. HR/mobile7PASS/2FAIL/1BLOCKED/26NOT_RUN dari36,operasional0/12;
+UAT nyata, foto historis dan gate lama tetap terbuka. NOT_BUSINESS_READY.
+
 ## 2026-10-18 - Installer source dan kandidat biner, belum dapat dipasang
 
 CONFIRMED: `c12e8de222e2ad9b554b1e7c564f4598466c0d37`, sebelumnya ZIP

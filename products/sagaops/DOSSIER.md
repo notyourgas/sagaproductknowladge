@@ -1,5 +1,28 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Qualification HR dan batas versi aktif
+
+CONFIRMED: currentC7ba3d4/rollback02b4588 sudah melalui Linux qualification,
+immutable artifact, encrypted restore/offhost dan guarded activation. Perubahan
+menjaga bukti foto asli saat baca/approval. Keputusan dan data usaha historis
+tidak ditulis ulang. Dua referensi foto historis belum memperoleh salinan asli;
+health storage tidak diterjemahkan sebagai recovery foto.
+
+Database disposable PostgreSQL native dengan serving-role membuktikan revoke/reset/suspend→active dan
+archive→restore tidak menghidupkan sesi lama pada fresh server; roster
+availability/rest/manual-lock/publish/revision/own schedule/rate snapshot,
+concurrency/single audit/atomic rollback juga PASS. PGlite/UI mocks menjadi
+pelengkap yang disebutkan batasnya. UAT manusia dan perangkat tetap terpisah.
+
+Prepared sourceA1e2cfd memperjelas batas93hari existing dan feedback inline.
+Source62c5221 full106TAP PASS, finalA1 static1152/37/528+type dan2native/9Owner
+browser PASS0skip; unchanged remainder direuse. Artifact immutable173107200bytes,
+SHA25656b3549d20accdf388f26a141d2bc24ed42b76a009d3797cf66cb481f7e8eee6
+sudah diverifikasi saat download dan incoming. Belum stage/activate finalA1;
+fresh Owner, capacity/stage dan exact-pair rehearsal tetap gate berikutnya.
+Tidak ada migration/provider/printer atau fakta usaha production sintetis untuk tes.
+36/12 tetap7PASS/2FAIL/1BLOCKED/26NOT_RUN dan0/12; NOT_BUSINESS_READY.
+
 ## 2026-10-18 - Packaging Windows per-user, masih blocked candidate
 
 CONFIRMED: source `c12e8de222e2ad9b554b1e7c564f4598466c0d37`, Inno Setup
