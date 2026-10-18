@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Konfirmasi printer memeriksa status terbaru
+
+CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source
+`331b4554c2009015676f4ff99f4326d1525b46af` memperbaiki tombol TEST yang bisa
+diam saat badge sambungan masih hijau tetapi heartbeat cache kedaluwarsa.
+TEST/aktivasi membaca ulang status sebelum konfirmasi; error atau perubahan
+outlet/akun/navigasi membatalkan proses, bukan mengirim ulang. Konfirmasi kertas
+tetap eksplisit. 14 uji terarah dan TypeScript PASS. Production716cb91 tetap;
+tidak ada TEST fisik tambahan, ENABLE atau perubahan template/proteksi Windows.
+Penerimaan kertas existing tetap berlaku terpisah dari desktop/new-laptop.
+Trusted direct installer dan manual-copy native masih OPEN; NOT_BUSINESS_READY.
+[Batas bukti](https://github.com/notyourgas/sagaops/blob/331b4554c2009015676f4ff99f4326d1525b46af/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - TEST fisik existing PASS; desktop belum tersedia
 
 CONFIRMED: satu TEST melalui dashboard Owner dan agent existing di PC executor

@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Refresh sebelum konfirmasi TEST dan aktivasi
+
+CONFIRMED, source `331b4554c2009015676f4ff99f4326d1525b46af`: sebelumnya
+tombol dapat diam karena heartbeat cache tua; sekarang membaca status terbaru
+sebelum modal, tetap menunggu konfirmasi eksplisit. Scope/navigation/error dan
+stale confirmation fail closed tanpa retry write. 14 scoped tests/TypeScript
+PASS, IMPLEMENTED_NOT_DEPLOYED. No print/ENABLE/Windows mutation; production
+tetap716cb91. Trusted direct package, native manual-copy dan target acceptance
+tetap OPEN. NOT_BUSINESS_READY.
+
 ## 2026-10-18 - Satu TEST existing diterima Andreas
 
 CONFIRMED: sebelum hanya preflight; sesudah satu UI TEST desain aktif,

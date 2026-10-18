@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Stale confirmation source gap ditutup, delivery masih OPEN
+
+CONFIRMED: `331b4554c2009015676f4ff99f4326d1525b46af` menutup silent click
+saat cache heartbeat tua melalui refresh read-only sebelum konfirmasi; 14 uji
+terarah/TypeScript PASS. Belum deployed, tidak ada TEST fisik baru atau ENABLE.
+Executor masih perlu native manual original/copy yang menjaga snapshot/nomor/
+alasan dan tidak jatuh ke browser/QZ. Publisher/distribusi langsung tepercaya,
+installer/lifecycle/actual Windows UI/backend serta laptop baru tetap OPEN.
+Jangan melemahkan release guard, menduplikasi original atau menyebut candidate
+unsigned sebagai paket operasional. Production independen716cb91 tetap.
+
 ## 2026-10-18 - Owner/paper existing selesai; direct desktop delivery terhalang
 
 CONFIRMED: Owner login dan satu paper TEST existing sudah diterima Andreas

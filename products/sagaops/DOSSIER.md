@@ -1,5 +1,18 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Freshness konfirmasi printer diperbaiki di source
+
+CONFIRMED: source `331b4554c2009015676f4ff99f4326d1525b46af` menambahkan
+read-before-confirm untuk TEST/ENABLE. Heartbeat guard tidak dilonggarkan;
+konfirmasi lama tidak dapat submit setelah heartbeat kedaluwarsa. GET gagal,
+pergantian outlet/aktor dan meninggalkan tab membatalkan konfirmasi tertunda.
+Jeda tetap dapat dilakukan offline. 15 pemeriksaan browser sintetis, suite
+empat viewport dan regresi native menghasilkan 14 tests PASS; TypeScript PASS.
+Source-only, bukan qualification UI Windows atau rilis production. Template,
+RAW/feed/cut, driver, proteksi dan otomatisasi tidak berubah. Cetak ulang manual
+desktop masih memakai jalur web/QZ dan belum mendukung native; jangan menyebut
+paper existing sebagai bukti penutupan gap itu atau installer tepercaya.
+
 ## 2026-10-18 - Penerimaan paper existing dipisahkan dari desktop goal
 
 CONFIRMED: Owner login sendiri, satu TEST desain aktif diminta melalui UI;

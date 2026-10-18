@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS printer confirmation freshness, source-only
+
+CONFIRMED: source `331b4554c2009015676f4ff99f4326d1525b46af` memperbaiki
+silent stale-heartbeat click dengan read-before-confirm dan pembatalan lintas
+scope/navigasi; tidak mengirim TEST otomatis. 14 tests/TypeScript PASS, belum
+deployed. Production716cb91, template, pricing dan produk lain tetap. Tidak
+ada cetak fisik tambahan atau ENABLE; installer/native manual-copy masih OPEN.
+
 ## 2026-10-18 - SagaPOS satu paper TEST existing diterima
 
 CONFIRMED: Owner UI TEST -> ACKED/SUBMITTED -> Andreas menerima kertas, jarak

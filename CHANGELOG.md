@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS printer confirmation freshness, belum deployed
+
+CONFIRMED, sumber observasi UI dan source
+`331b4554c2009015676f4ff99f4326d1525b46af`: sebelum tombol hijau dapat diam
+setelah cache kedaluwarsa; sesudah membaca ulang sebelum konfirmasi. 14 tests/
+TypeScript PASS, no physical print/ENABLE/Windows mutation. Delapan dokumen
+product/dossier/changelog/portfolio/master/gaps/sync/root diperbarui. Production
+716cb91, template dan produk lain tetap; native manual-copy/trusted direct
+installer/target qualification OPEN. Next: selesaikan route native dan delivery
+tanpa bypass; knowledge main HEAD, IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY.
+
 ## 2026-10-18 - SagaPOS existing paper acceptance, bukan desktop release
 
 CONFIRMED, sumber satu UI TEST, sanitized local ledger dan Andreas: sebelum
