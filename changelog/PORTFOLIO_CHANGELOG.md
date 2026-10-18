@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS roster: kandidat perbaikan, production belum berubah
+
+CONFIRMED: Andreas menetapkan kebutuhan4staf1+2Senin–Kamis/2+2Jumat–Minggu.
+Source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8`18logika+1browser390PASS;
+matching libur, penempatan dengan backtracking dan konflik dari validator akhir.
+Native/LINUX/recovery/deployNOT_RUN. HR02 dibukaFAIL setelah actual Owner
+read-only draft membuktikan pola5staf/19streak conflicts;16/2/18 dari36teknis,
+0/12operasional. Rolling preferensi dan exception120s pending, rest/jam tetap.
+Active145/rollbackA1; printer/Windows terpisah, tidak ada mutasi production.
+Rincian pada products/sagaops/PRODUCT.md dan DOSSIER.md; GAPS/master/SYNC/
+DECISIONS dan changelog turut diperbarui, bukan klaim BUSINESS_READY.
+
 ## 2026-10-19 - SagaPOS Windows operational candidate 0.3.0
 
 CONFIRMED; sumber GOAL Andreas dan commit

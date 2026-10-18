@@ -1,5 +1,35 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Roster empat staf dan konsistensi konflik
+
+CONFIRMED: source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8` memperbaiki kandidat generator4staf,
+matching libur, konflik yang kedaluwarsa dan preset Senin–Kamis1pagi/2sore,
+Jumat–Minggu2pagi/2sore sesuai permintaan Andreas.18tes logika dan1browser390
+PASS, tanpa skip. Native PostgreSQL, Linux, artifact/recovery dan deployment
+kandidat **NOT_RUN**; bukan bukti operator atau perangkat nyata.
+
+Owner read-only pada active14507c0 menemukan4barista tetapi draft masih pola5staf,
+Jumat belum peak dan19konflik shift sejenis. Rest11jam dengan shift07–15/15–23
+bertentangan dengan maksimum2hari sejenis ketika seluruh staf dibutuhkan3hari
+berturut-turut. Proposal rolling2hari menjadi preferensi **NEEDS CONFIRMATION**;
+defaultstrict, rest11, max48jam dan6hari kerja tetap dijaga. Tidak ada perubahan
+jadwal, kebijakan rolling atau publish production.
+
+HR02 dibuka kembaliFAIL. Current16PASS/2FAIL/18NOT_RUN dari36teknis(44,44%),
+0PASS/12NOT_RUN operasional(0%). Denominator tetap; active14507c0/rollbackA1e2cfd,
+release gates existingPASS. Exception native120detik/satu attempt pending;
+cap historis tidak direset. Dua kegagalan fixture browser dipertahankan dan
+correction2 pada opsi UI sahPASS. Scope printer/Windows tetap terpisah.
+
+Generator kandidat mencoba penempatan lengkap dan dapat membatalkan pilihan
+hari sebelumnya; role/availability/approved leave/manual-lock/history/rest/jam
+tetap wajib. Search terbatas50.000node pada day-off plan terpilih; batas pencarian
+bukan bukti semua kemungkinan tidak layak. Generate/read/publish menggunakan
+validator hasil akhir yang sama, seluruh draft terlihat divalidasi ulang.
+Perlu keputusan rolling, native qualification dan release terjaga sebelum
+penerapan. Source backend printer474add78 belum mengintegrasikan delta roster
+ini; jangan menggabungkan/promote kedua lane tanpa review fresh-current.
+
 ## 2026-10-19 - Kandidat operasional Windows 0.3.0
 
 CONFIRMED; sumber Andreas melalui GOAL operasional dan commit

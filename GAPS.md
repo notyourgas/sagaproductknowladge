@@ -1,5 +1,21 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - SagaPOS HR02 dibuka kembali; roster4staf belum aktif
+
+CONFIRMED source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8`18logika+1browserPASS,
+IMPLEMENTED_NOT_DEPLOYED. Actual Owner read-only active145: draft pola5staf,
+Jumat belum peak/masih boleh libur dan19streak conflicts; HR02FAIL.
+Current16PASS/2FAIL/18NOT_RUN dari36teknis,0/12operasional.
+
+- Andreas: pilih rolling preferensi atau pertahankan strict dengan ketidaklayakan
+  kebutuhan/jam saat ini; defaultstrict tidak diubah diam-diam.
+- QA: exception native120s/satu attempt termasuk cleanup pending; fixture siap,
+  gate belum dijalankan, cap lama tidak direset.
+- Release Lead: Linux/artifact/exact-pair recovery/deploy belum dijalankan;
+  tidak memakai produksi sebagai builder atau menambah resource tanpa scope.
+- Owner/HR: roster sah dan UAT staff/perangkat tetapNOT_RUN. Tidak membuat
+  fakta production palsu. Active145/rollbackA1 dan lane printer tetap terpisah.
+
 ## 2026-10-19 - SagaPOS Windows 0.3.0 masih membutuhkan qualification
 
 CONFIRMED: source `66eba8ac1bfe4e35250ab3368a0cddbbf35539bc` dan paket

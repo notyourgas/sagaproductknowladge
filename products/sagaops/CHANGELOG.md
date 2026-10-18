@@ -1,5 +1,19 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Perbaikan kandidat roster dan reopen HR02
+
+- CONFIRMED: Andreas menetapkan4staf; weekday Senin–Kamis1+2, peak Jumat–Minggu2+2.
+- Source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8`: search complete-day, matching libur,
+  live validation draft dan shared final conflicts; default rollingstrict dipertahankan.
+-18tes logika+1browser390PASS. Dua browser fixture failures tetap tercatat;
+  native/LINUX/artifact/recovery/deploy baruNOT_RUN. IMPLEMENTED_NOT_DEPLOYED.
+- Actual Owner read-only active145 membuktikan draft masih pola5staf dan19streak
+  conflicts. HR02PASS→FAIL; current16/2/18 dari36teknis,0/12operasional.
+- Rolling preferensi NEEDS CONFIRMATION; exception native120s/satu attempt pending.
+  Tidak ada production write/publish, pelonggaran rest/jam atau cap lain.
+- File terdampak: PRODUCT/DOSSIER/CHANGELOG, master/GAPS/SYNC/DECISIONS,
+  portfolio/root changelog. Source/release dan business readiness tetap terpisah.
+
 ## 2026-10-19 - Windows satu aplikasi dan siklus kas durable
 
 - CONFIRMED; Andreas meminta satu aplikasi dua mode hingga operasional.

@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-271 - SagaPOS kebutuhan tetap empat staf per shift
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-19 |
+| Topik | Staffing roster weekday dan peak |
+| Keputusan |4staf; Senin–Kamis pagi1/sore2; Jumat–Minggu pagi2/sore2. Preset menggunakan jumlah tetap tersebut dan libur otomatis Senin–Kamis. |
+| Alasan | Menghindari kebutuhan harian yang rancu dan konflik akibat pola5staf pada tim4staf. |
+| Alternatif | Pola5staf dan Jumat belum peak digantikan untuk konfigurasi final yang akan diterapkan. |
+| Dampak | Kandidat5d3cfeb menyiapkan generator/validator/UI; production belum diubah. Rest11/max48/6hari tetap; rolling preferensi masih NEEDS CONFIRMATION dan bukan keputusan yang disahkan oleh entri ini. |
+| Pemberi keputusan | Andreas melalui permintaan pemeriksaan/perbaikan jadwal4staf. |
+| Status | CONFIRMED kebutuhan staffing; IMPLEMENTED_NOT_DEPLOYED; bukan publish roster atau BUSINESS_READY. |
+| Dokumen terkait | [Product](products/sagaops/PRODUCT.md),[Dossier](products/sagaops/DOSSIER.md),[Gaps](GAPS.md) |
+
 ## DEC-270 - SagaPOS Windows satu aplikasi dua mode operasional
 
 | Field | Isi |

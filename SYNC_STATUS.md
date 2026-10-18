@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - Snapshot koreksi roster HR/mobile
+
+CONFIRMED source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8`,18logika+1browser390PASS,
+IMPLEMENTED_NOT_DEPLOYED. Active14507c0/rollbackA1e2cfd ready pada Owner
+read-only01.32WIB; production tidak diubah. HR02 dibuka kembaliFAIL, sehingga
+current16PASS/2FAIL/18NOT_RUN dari36teknis dan0/12operasional. Denominator tetap.
+Rolling preferensi dan native exception120s/satu attempt pending; native/LINUX/
+artifact/recovery/deploy kandidatNOT_RUN. Validasi/push/readback knowledge
+menutup sinkronisasi dokumen, bukan acceptance software/operator atau biaya baru.
+Milestone Windows0.3.0/backend474add78 di bawah dipertahankan terpisah.
+
 ## 2026-10-19 - Snapshot Windows operational candidate 0.3.0
 
 | Field | Nilai |

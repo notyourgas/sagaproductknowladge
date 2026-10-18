@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): kandidat roster4staf dan reopen HR02
+
+CONFIRMED; sumber Andreas dan actual Owner read-only01.32WIB. Source
+`5d3cfeb9e0bb0993f9647eaed06eb240b76189b8` memperbaiki generator, libur, preset1+2/2+2
+serta validasi konflik;18logika+1browser390PASS. IMPLEMENTED_NOT_DEPLOYED;
+native/LINUX/recovery/deployNOT_RUN. HR02 dibukaFAIL,16/2/18 dari36teknis,
+0/12operasional. Rolling preferensi dan exception120s pending, cap tetap.
+Active145/rollbackA1, tanpa production write/publish. Sinkronisasi PRODUCT,
+DOSSIER, product/portfolio changelog, master/GAPS/SYNC/DECISIONS dan root ini;
+knowledge main HEAD setelah validator/push/readback. Printer lane dipertahankan.
+
 ## 2026-10-19 - knowledge(sagaops): Windows dua mode dan kas operasional
 
 CONFIRMED; informasi Andreas melalui GOAL dan source

@@ -1,5 +1,26 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaPOS roster4staf: perbaikan kandidat, gate tetap terbuka
+
+CONFIRMED: source `5d3cfeb9e0bb0993f9647eaed06eb240b76189b8` memperbaiki kandidat generator4staf,
+matching libur, konflik yang kedaluwarsa dan preset Senin–Kamis1pagi/2sore,
+Jumat–Minggu2pagi/2sore sesuai permintaan Andreas.18tes logika dan1browser390
+PASS, tanpa skip. Native PostgreSQL, Linux, artifact/recovery dan deployment
+kandidat **NOT_RUN**; bukan bukti operator atau perangkat nyata.
+
+Owner read-only pada active14507c0 menemukan4barista tetapi draft masih pola5staf,
+Jumat belum peak dan19konflik shift sejenis. Rest11jam dengan shift07–15/15–23
+bertentangan dengan maksimum2hari sejenis ketika seluruh staf dibutuhkan3hari
+berturut-turut. Proposal rolling2hari menjadi preferensi **NEEDS CONFIRMATION**;
+defaultstrict, rest11, max48jam dan6hari kerja tetap dijaga. Tidak ada perubahan
+jadwal, kebijakan rolling atau publish production.
+
+HR02 dibuka kembaliFAIL. Current16PASS/2FAIL/18NOT_RUN dari36teknis(44,44%),
+0PASS/12NOT_RUN operasional(0%). Denominator tetap; active14507c0/rollbackA1e2cfd,
+release gates existingPASS. Exception native120detik/satu attempt pending;
+cap historis tidak direset. Dua kegagalan fixture browser dipertahankan dan
+correction2 pada opsi UI sahPASS. Scope printer/Windows tetap terpisah.
+
 ## 2026-10-19 - SagaPOS Windows satu aplikasi, dua mode; belum aktif
 
 CONFIRMED: source `66eba8ac1bfe4e35250ab3368a0cddbbf35539bc` dan paket
