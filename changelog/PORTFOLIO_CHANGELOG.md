@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaView akses/admin aktif; UAT tetap terpisah
+
+CONFIRMED, source84e62a6/backendaf6c139/config-onlyb9144d69. Studio berubah
+c317→84 setelah native terminal0 dan runtime source/artifact/recovery/Linux/
+SSR/CSP/browser PASS. Customer entry loop ditutup. Owner exact-pair exception
+sah; physical/human UAT/printer/pilot/BUSINESS_READY belum diterima.0migration,
+provider/pricing/produk tetangga/data change; CI FAIL dipertahankan. Next: UAT
+fixture dan perangkat sah. [Detail](../docs/releases/sagaview-production-activation-20261018.md).
+
 ## 2026-10-18 - SagaBook closing: input bertahan setelah refresh
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: source

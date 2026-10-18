@@ -1,5 +1,18 @@
 # SagaView Product Knowledge
 
+## 2026-10-18 - Akses/admin Studio aktif terverifikasi
+
+`CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`: Studio84e62a6,
+release20261018053459-84e62a6, kini aktif dengan dedicated backend/Owneraf6c139.
+Runner native terminal0; artifact/source/custody/rollback, Linux build, service,
+SSR/CSP dan compiled browser desktop/mobile PASS. Config-onlyb9144d69 menutup
+loop customer entry dengan backup/syntax/lock/readiness guard; aplikasi tetap
+84/af6, produk tetangga dan DB tidak diubah. Card aktif/live-import nonaktif,
+estimate-only dan original lokal tetap. Owner exception DEC-267 hanya physical
+evidence; human/printer UAT dan BUSINESS_READY belum diverifikasi. CI FAIL
+historis tetap dicatat; photo-selectionba2d980 tetap source-only.
+[Source exact, checksum, runtime, rollback dan risiko](../../docs/releases/sagaview-production-activation-20261018.md).
+
 ## 2026-10-17 - Kandidat native final; produksi belum beralih
 
 `CONFIRMED`: Studio candidate84e62a6 pushed/clean; actual c3170e0 dan dedicated

@@ -1,5 +1,16 @@
 # SagaView Changelog
 
+## 2026-10-18 - Rilis akses/admin dan koreksi customer entry aktif
+
+CONFIRMED, sumber Owner exact-pair18Oktober dan native terminal0/runtime.
+Sebelumnya Studio c317; kini84e62a6 aktif, backendaf6 tetap. Perubahan akses,
+scope/expiry, PIN Owner-only dan form guards tersedia pada software; routing
+Nginxb914 menutup loop customer. Source/artifact/recovery/Linux/service/
+desktop-mobile PASS, rollback tetap;0migration/produk lain/provider/data change.
+CI FAIL tetap dilaporkan dan bukan klaim full CI PASS. Human/printer UAT serta
+BUSINESS_READY OPEN. Next: UAT fixture bersama Owner/operator/perangkat sah.
+[Detail](../../docs/releases/sagaview-production-activation-20261018.md).
+
 ## 2026-10-17 - Kandidat native final siap paket, belum diaktifkan
 
 `CONFIRMED`, sumber exact84e62a6/terminal CI/runtime executor. Percobaan afb

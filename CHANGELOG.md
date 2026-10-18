@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaView production activation dan routing customer
+
+CONFIRMED, sumber Owner DEC-267, source84/af6/configb914, native terminal0
+dan M3 runtime. Before Studio candidate belum aktif; after84 aktif dan
+customer entry loop selesai dengan guard/readiness, rollback/recovery tersedia.
+Perbarui Product/Dossier/changelogs/master/GAPS/SYNC_STATUS/DECISIONS serta
+laporan release. Produk/pricing/provider lain tetap;0migration/data correction.
+CI FAIL tetap, human/perangkat/printer UAT dan BUSINESS_READY OPEN. Next: UAT
+fixture bersama Owner/operator sah. Knowledge main HEAD, terpisah dari source.
+[Provenance](docs/releases/sagaview-production-activation-20261018.md).
+
 ## 2026-10-18 - SagaBook closing tidak menimpa input saat refresh
 
 CONFIRMED, sumber Andreas dan source

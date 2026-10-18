@@ -1,5 +1,18 @@
 # SagaView Dossier
 
+## 2026-10-18 - Production activation akses/admin
+
+CONFIRMED: source84e62a6 aktif dengan backendaf6c139. Semua file artifact465
+cocok,212client assets/server digest direkam, source recovery/mirror/custody
+PASS; rollback Studio c317/backendb067 tersedia. Native full gates dan Linux
+build bounded PASS, runtime PHP8.5.4/MySQL8.4.11/Node22.22.1 terverifikasi,
+0migration baru. Customer root loop diperbaiki melalui config-onlyb914,
+initial immediate-probe FAIL/guarded restore dipertahankan, readiness301→200
+dan post-routing desktop/mobile PASS.17vhost lain tetap. Auth proof/origin,
+nonce/cache, lock/lease/revocation dan local photo/draft boundary dipertahankan.
+Human UAT/printer/pilot/BUSINESS_READY tetap OPEN; photo ba2 terpisah belum aktif.
+[Laporan dan batas](../../docs/releases/sagaview-production-activation-20261018.md).
+
 ## 2026-10-17 - Native readiness checkpoint
 
 `CONFIRMED`: kandidat84e62a6 mencakup seluruh akses/admin, koreksi SSR terdahulu,

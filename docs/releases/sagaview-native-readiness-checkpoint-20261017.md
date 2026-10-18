@@ -1,5 +1,7 @@
 # SagaView native release checkpoint — 17 Oktober 2026
 
+Checkpoint historis. Dilanjutkan oleh [aktivasi terverifikasi18Oktober](sagaview-production-activation-20261018.md).
+
 ## Tujuan
 
 Melanjutkan rilis akses/admin SagaView melalui runner produk existing dengan

@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-267 - Exception physical UAT exact pasangan final SagaView
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-18 |
+| Topik | Gate physical UAT kandidat Studio84e62a6 dan backendaf6c139 |
+| Keputusan | Andreas sebagai Owner memberi exception physical UAT untuk exact Studio84e62a66f24405f58d3a0281b028636afc752915 + dedicated backendaf6c139f4063258300e94f3f23a93a684c4de51b, serta menerima risiko perangkat/printer belum diuji. |
+| Alasan | Jawaban langsung Owner atas panel exact pasangan final; izin deployment umum sudah berlaku. |
+| Alternatif yang dipertimbangkan | Receipt physical UAT canonical; menunggu penerimaan perangkat/printer. |
+| Dampak | Native schema-v2 validator PASS; hanya missing canonical physical-UAT evidence dikecualikan. Seluruh gate teknis tetap wajib dan native/runtime rilis84/af6 PASS. Photo-selectionba2 tidak termasuk exception ini. |
+| Pemberi keputusan | Andreas / Owner |
+| Status | CONFIRMED / PHYSICAL_UAT_EVIDENCE_WAIVED_BY_OWNER / UAT_EVIDENCE_NOT_VERIFIED; bukan physical UAT PASS, pilot atau BUSINESS_READY. Bukan izin provider/transaksi/pesan nyata, DNS, rotasi credential atau koreksi data bisnis. |
+| Dokumen terkait | [Aktivasi SagaView](docs/releases/sagaview-production-activation-20261018.md), [SagaView Product](products/sagaview/PRODUCT.md) |
+
 ## DEC-266 - SagaPOS desktop dengan printer bawaan dan distribusi langsung
 
 | Field | Isi |
@@ -23,7 +37,7 @@
 | Keputusan | Andreas sebagai Owner memberi exception physical UAT untuk exact Studio afb3211730513c11b097b7830ce17d367a3fa76c + backend af6c139f4063258300e94f3f23a93a684c4de51b dan menerima risiko perangkat/printer belum diuji. |
 | Alasan | Jawaban langsung Owner atas panel exact pasangan, terpisah dari izin deployment umum yang sudah berlaku. |
 | Alternatif yang dipertimbangkan | Receipt physical UAT canonical untuk pasangan tersebut; menunggu penerimaan perangkat. |
-| Dampak | Hanya missing canonical physical-UAT evidence yang dikecualikan, semua gate teknis tetap wajib. Percobaan afb gagal sebelum upload. Tidak meliputi kandidat final84e62a6/af6c139, yang gate Owner-nya masih OPEN. |
+| Dampak | Hanya missing canonical physical-UAT evidence yang dikecualikan, semua gate teknis tetap wajib. Percobaan afb gagal sebelum upload. Tidak meliputi kandidat final84e62a6/af6c139; gate final OPEN pada17Oktober lalu dipenuhi terpisah melalui DEC-267 pada18Oktober. |
 | Pemberi keputusan | Andreas / Owner |
 | Status | CONFIRMED untuk afb/af6; physical UAT tidak diverifikasi, bukan BUSINESS_READY atau persetujuan provider/transaksi/pesan nyata. |
 | Dokumen terkait | [SagaView checkpoint](docs/releases/sagaview-native-readiness-checkpoint-20261017.md), [SagaView Product](products/sagaview/PRODUCT.md) |
