@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-18 - SagaPOS physical MSIX acceptance tersinkron
+
+CONFIRMED: docs18ae9609e37143429b7b9d2eadfffc47943de869 dan kode ed07797,
+satu TEST aplikasi PC uji diterima manusia untuk kertas/jarak/autocut.
+Ledger/antrean bertahan setelah restart, tanpa TEST ulang. Auto OFF, no deploy;
+laptop baru/public distribution/payment automation OPEN. Delapan dokumen
+terdampak sinkron, tanpa raw fixture, credential atau device/tenant identifier.
+
 ## 2026-10-18 - SagaPOS MSIX internal installation milestone
 
 CONFIRMED: source ed07797a30f1332e7d1aed89e556bf62b55d0b07 pushed; install

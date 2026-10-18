@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Satu TEST fisik MSIX dikonfirmasi
+
+CONFIRMED: docs18ae960, kode ed07797. Fixed TEST dari aplikasi terpasang
+diterima Andreas: kertas, jarak dan autocut sesuai. USB blocker sebelumnya
+tertutup pada PC uji ini. Restart/ledger tersimpan, tidak ada cetak ulang.
+Auto OFF; laptop baru/payment automation/public distribution belum diterima.
+
 ## 2026-10-18 - Instalasi MSIX internal Rp0 terbukti
 
 CONFIRMED: source `ed07797a30f1332e7d1aed89e556bf62b55d0b07`, parent

@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - Sync penerimaan TEST fisik aplikasi SagaPOS
+
+CONFIRMED: docs18ae960/kode ed07797. Before: MSIX terpasang, USB absen dan
+TEST belum dikirim. After: USB siap, satu TEST aplikasi diterima Andreas untuk
+kertas, jarak dan autocut; restart mempertahankan satu ledger tanpa kirim ulang.
+Scope PC uji sekarang saja; auto/public distribution/laptop baru tetap OPEN.
+Tidak deploy backend atau membuat penjualan. Product/Dossier/changelogs/
+master/gaps/sync diperbarui bersama; bukan BUSINESS_READY.
+
 ## 2026-10-18 - Sync instalasi MSIX internal SagaPOS
 
 CONFIRMED; source ed07797. Before: kandidat installer tertutup, belum pernah

@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS aplikasi Windows: TEST fisik pada PC uji lulus
+
+CONFIRMED: docs18ae9609e37143429b7b9d2eadfffc47943de869/kode ed07797.
+Satu fixed TEST dari MSIX internal0.1.1.0 telah diterima Andreas untuk kertas,
+jarak dan autocut. Restart mempertahankan ledger/pilihan antrean tanpa kirim
+ulang. Ini aplikasi baru pada PC uji sekarang, bukan laptop baru. Cetak
+otomatis transaksi/pairing tetap belum aktif; distribusi publik dan full
+operational qualification OPEN. Jangan menyamakan ini dengan BUSINESS_READY.
+
 ## 2026-10-18 - SagaPOS Windows internal dapat dipasang, belum operasional
 
 CONFIRMED: source ed07797a30f1332e7d1aed89e556bf62b55d0b07. Jalur MSIX

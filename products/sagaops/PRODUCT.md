@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - TEST fisik aplikasi MSIX diterima pada PC uji
+
+CONFIRMED: kode `ed07797`, acceptance docs
+`18ae9609e37143429b7b9d2eadfffc47943de869`. Setelah USB tersambung,
+aplikasi MSIX internal0.1.1.0 mengirim satu fixed TEST sintetis. Andreas
+mengonfirmasi kertas tercetak, jarak bawah sesuai dan autocut bekerja.
+Restart mempertahankan satu ledger dan antrean tersimpan; tidak cetak ulang.
+Ini physical acceptance aplikasi pada PC uji sekarang, bukan agent lama atau
+laptop baru. Cetak otomatis transaksi/pairing/backend rollout tetap OFF/OPEN;
+bukan rilis publik signed atau BUSINESS_READY. Proteksi Windows tidak diubah.
+[Batas penerimaan](https://github.com/notyourgas/sagaops/blob/18ae9609e37143429b7b9d2eadfffc47943de869/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - MSIX internal gratis terpasang, TEST aplikasi menunggu USB
 
 CONFIRMED: source `ed07797a30f1332e7d1aed89e556bf62b55d0b07` menyediakan

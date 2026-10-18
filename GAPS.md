@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - USB dan kertas MSIX PC uji diterima, operasional belum
+
+CONFIRMED: docs18ae960/kode ed07797 menutup blocker USB dan satu TEST fisik
+aplikasi pada PC uji; Andreas menerima jarak/autocut. Tidak meminta TEST yang
+sama lagi. Auto tetap OFF. Release Lead melanjutkan native settings-click,
+lifecycle dan guarded backend/verified-payment automation; akses/instalasi
+laptop baru serta public distribution masih terpisah dan OPEN.
+
 ## 2026-10-18 - Gap install internal tertutup; USB dan operasional masih OPEN
 
 CONFIRMED: ed07797 membuktikan MSIX unsigned internal 0.1.1.0 terpasang,

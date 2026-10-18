@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Penerimaan kertas dari aplikasi terpasang
+
+CONFIRMED: docs18ae9609e37143429b7b9d2eadfffc47943de869, kode ed07797.
+USB dan satu antrean RAW yang memenuhi preflight tersedia; aplikasi MSIX
+internal0.1.1.0 mengirim satu TEST melalui Engine existing, bukan browser print
+atau consumer lama. Spool SUBMITTED dipisahkan dari konfirmasi manusia.
+Andreas menerima hasil kertas, jarak bawah dan autocut. Restart mempertahankan
+satu ledger ACKED dan pilihan antrean, tanpa TEST tambahan. Tidak ada penjualan,
+payment, pairing, driver/proteksi mutation, deploy atau aktivasi otomatis.
+Native settings-click/full lifecycle, verified-payment automation, laptop baru
+dan public distribution tetap OPEN. Penerimaan ini bukan BUSINESS_READY.
+
 ## 2026-10-18 - Jalur Windows unsigned internal, bukan rilis publik
 
 CONFIRMED: `ed07797a30f1332e7d1aed89e556bf62b55d0b07` membuktikan instalasi

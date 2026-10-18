@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS MSIX mencapai TEST fisik terkonfirmasi
+
+CONFIRMED: docs18ae960/kode ed07797, aplikasi internal0.1.1.0 pada PC uji
+berhasil mencetak satu nota sintetis; Andreas menerima jarak dan autocut.
+Restart mempertahankan ledger tanpa cetak ulang. Bukan penerimaan laptop baru,
+otomatisasi pembayaran atau rilis publik. No deploy/ENABLE/proteksi changes.
+
 ## 2026-10-18 - SagaPOS MSIX internal terpasang tanpa biaya signing
 
 CONFIRMED: ed07797 memberi jalur Windows 11 internal-test-only yang resmi,
