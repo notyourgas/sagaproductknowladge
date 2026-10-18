@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Owner dapat arsip, pulihkan dan hapus profil tanpa histori
+
+CONFIRMED: permintaan Andreas diimplementasikan sampai aktivasi app
+02b4588f6977aca23278b5d1db0c275a782a5833, rollback716cb91. Sebelumnya belum
+ada lifecycle ini; kini Akses akun menyediakan arsip/pulihkan dan hapus guarded
+dengan ID, revoke, histori/audit, replay dan concurrency protection. Linux
+qualification dan recovery/Owner read-only smoke PASS; production lifecycle
+write0. Documentation checkpoint3346b30fd50f9d23b01933a0805f8fe37730c440
+tidak mengubah app inputs atau memerlukan redeploy. Core37/provider/printer
+config tetap, Team/SaaS dan installer lane terpisah. NOT_BUSINESS_READY;
+acceptance HR/mobile dan UAT nyata tetap terbuka, tanpa reset cap lama.
+
 ## 2026-10-18 - Original dan salinan native terhubung pada source Kasir
 
 CONFIRMED, source `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158`: sebelumnya

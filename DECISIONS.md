@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-268 - Tambahkan arsip dan hapus karyawan SagaPOS
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-18 |
+| Topik | Lifecycle profil karyawan existing |
+| Keputusan | Andreas meminta fitur arsipkan dan hapus karyawan. Implementasi existing native memakai Owner-only, arsip/pulihkan, dan hapus profil archived tanpa histori dengan konfirmasi. |
+| Alasan | Mengelola karyawan yang tidak dipakai sambil mempertahankan histori usaha dan akses yang benar. |
+| Alternatif | Penghapusan cascade histori dan pemberian hak Owner untuk tes tidak digunakan; Team/SaaS tetap jalur terpisah. |
+| Dampak | App02b4588 production-active, rollback716cb91; qualification/recovery/read-only Owner smoke PASS. Tidak ada employee lifecycle write production untuk pengujian. |
+| Pemberi keputusan | Andreas melalui permintaan fitur; batas implementasi ditentukan executor sesuai kontrak integritas existing. |
+| Status | CONFIRMED; bukan persetujuan menghapus staf tertentu atau penutupan UAT/goal HR/mobile. |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
+
 ## DEC-267 - Exception physical UAT exact pasangan final SagaView
 
 | Field | Isi |

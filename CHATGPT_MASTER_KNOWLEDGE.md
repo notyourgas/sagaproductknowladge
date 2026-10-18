@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS karyawan: arsip/hapus native sudah production
+
+CONFIRMED: current app02b4588f6977aca23278b5d1db0c275a782a5833, rollback
+716cb91a27fc4f95fa9dee9498aaddabd3292e66. Owner → Karyawan → Lihat detail →
+Akses akun: arsip mencabut sesi dan menyimpan histori; pulihkan mempertahankan
+login suspended; hapus permanen hanya archived+tanpa riwayat+Employee ID.
+Team/SaaS terpisah. Linux/recovery/monitor dan Owner read-only desktop/mobile
+PASS; tidak ada employee write production untuk smoke. Policy/template/printer
+config, pembayaran dan core37 tetap. Source printer/installer baru tidak ikut.
+Keseluruhan HR/mobile masih6PASS/1FAIL/29NOT_RUN dari36teknis,0/12operasional;
+perangkat/operator nyata dan recovery bukti absensi historis tetap OPEN.
+
 ## 2026-10-18 - SagaPOS native manual/copy source, belum rilis aplikasi
 
 CONFIRMED: `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158` menghubungkan tombol

@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS native employee archive/delete production
+
+CONFIRMED, sumber permintaan Andreas dan actual source/runtime: app
+02b4588f6977aca23278b5d1db0c275a782a5833 aktif, rollback716cb91; docs3346b30.
+Sebelum tidak tersedia, sesudah Owner native dapat arsip/pulihkan dan hapus
+profil tanpa histori dengan konfirmasi. Linux qualification, encrypted recovery,
+guarded activation/monitor dan Owner desktop/mobile read-only PASS.0employee
+production writes untuk smoke; policy/template/printer/provider/core37 tetap.
+Sembilan dokumen product/dossier/changelog/portfolio/master/gaps/decision/sync/
+root diperbarui, knowledge main HEAD. PARTIALLY_ACCEPTED/NOT_BUSINESS_READY;
+HR/mobile6PASS/1FAIL/29NOT_RUN dari36teknis,0/12operasional. Next: UAT sah dan
+recovery bukti historis, tanpa reset retry atau perluasan lane printer/installer.
+
 ## 2026-10-18 - SagaPOS native manual original dan salinan, source-only
 
 CONFIRMED, source `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158`: sebelum manual

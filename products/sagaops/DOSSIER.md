@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Lifecycle karyawan native dan batas penerimaan
+
+CONFIRMED: app02b4588f6977aca23278b5d1db0c275a782a5833 menggantikan716cb91,
+yang kini rollback. Owner dapat arsip/pulihkan; credential dan sesi dicabut saat
+arsip, status kerja pulih tanpa otomatis membuka login. Profil harus archived
+dan tanpa seluruh relasi riwayat untuk dihapus, termasuk relasi CASCADE/SET NULL.
+Audit durable, trusted actor, versi profil dan operation key melindungi replay,
+respons hilang dan konflik. Arsip versus pekerjaan staf diserialisasi; attendance
+terbuka mencegah arsip. Team-managed identity ditolak di jalur native ini.
+
+UI memakai panel Akses supaya Profil existing desktop/mobile tetap utuh.
+36access,2nativeSaaS,12lifecycle,10review,18HRregression,17browser dan static/type
+lulus pada exact Linux candidate; jumlah TAP bukan jumlah fitur atau business
+acceptance. Failure fixture/UI/setup/regression/harness sebelumnya dipertahankan.
+Owner production1536/390 menguji baca/UI/status pemulihan dengan0business write;
+positive lifecycle write terbukti pada database disposable, bukan staf nyata.
+Encrypted restore/offhost4arsip dan exact-pair candidate→rollback→candidate
+recovery PASS. Policy/template/printer config tetap; tidak ada payout, cetak atau
+pesan eksternal. DenominatorHR/mobile36/12 tetap6PASS/1FAIL/29NOT_RUN dan0/12;
+UAT operator/perangkat serta recovery bukti absensi historis belum selesai.
+
 ## 2026-10-18 - Native manual admission dan salinan source-qualified
 
 CONFIRMED: `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158` memberi native job API

@@ -1,5 +1,24 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Arsip, pulihkan dan hapus karyawan native sudah aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: app source
+02b4588f6977aca23278b5d1db0c275a782a5833 aktif18Oktober sekitar13.27WIB,
+rollback716cb91a27fc4f95fa9dee9498aaddabd3292e66. Owner membuka Karyawan →
+Lihat detail → Akses akun (Owner). Arsip mencabut sesi/akses dan menjaga histori;
+filter Diarsipkan menampilkan arsip. Pulihkan mengaktifkan status kerja tetapi
+login tetap ditangguhkan sampai ditinjau Owner. Hapus permanen hanya untuk
+profil arsip tanpa riwayat, dengan konfirmasi Employee ID; audit tetap ada.
+
+Final Linux static/type dan36access/2nativeSaaS/12lifecycle/10review/18HR/
+17mobile-browser PASS0skip. Recovery terenkripsi/offhost, rehearsal pasangan,
+aktivasi/monitor dan Owner desktop/mobile read-only PASS. Tidak ada arsip/hapus
+staf production sebagai smoke. Schema37, dependency, pembayaran serta konfigurasi
+printer/absensi tetap. Lane installer/printer baru tidak digabung. Identitas
+Team/SaaS tetap jalur terpisah. HR/mobile keseluruhan6PASS/1FAIL/29NOT_RUN dari36,
+operasional0/12; NOT_BUSINESS_READY. UAT nyata dan recovery bukti absensi historis
+masih terbuka. [Panduan dan acceptance](https://github.com/notyourgas/sagaops/blob/3346b30fd50f9d23b01933a0805f8fe37730c440/docs/EMPLOYEE_LIFECYCLE_20261018.md).
+
 ## 2026-10-18 - Cetak manual Kasir masuk antrean native, source-only
 
 CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source

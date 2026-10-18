@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS employee lifecycle aktif, goal HR/mobile masih parsial
+
+CONFIRMED: app02b4588f6977aca23278b5d1db0c275a782a5833 production-active,
+rollback716cb91. Owner native dapat arsip/pulihkan dan hapus profil archived
+tanpa histori. Akses dicabut, audit/histori/replay dijaga. Final Linux dan
+guarded recovery/activation/Owner read-only smoke PASS, tanpa menghapus staf
+untuk tes. Schema/provider/printer config dan produk lain tetap. HR/mobile
+6PASS/1FAIL/29NOT_RUN dari36teknis,0/12operasional; NOT_BUSINESS_READY.
+
 ## 2026-10-18 - SagaPOS manual native printing source milestone
 
 CONFIRMED: `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158` menyatukan manual/
