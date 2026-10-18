@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Perbaikan respons Owner menutup synthetic-host failure
+
+CONFIRMED: source `b76692dd7a0790675a5057a3b82957d2be67d5a7`, host FAIL
+menjadi SYNTHETIC_HOST_PASS setelah diagnosis terukur dan perbaikan terarah.
+Lima desktop tests PASS tanpa skip, bukan installer atau physical acceptance.
+Tidak deploy/TEST fisik/ENABLE, template/driver/proteksi tetap. Next: publisher
+menetapkan distribusi tepercaya; release lead menguji lifecycle/backend/target
+setelah gate distribusi terpenuhi. Checkpoint FAIL lama dipertahankan sebagai histori.
+
 ## 2026-10-18 - Checkpoint host Windows FAIL, bukan rilis
 
 CONFIRMED, source `4fe9efa6c35b89a8d795545c5fba05c7352dbf43`: sebelumnya

@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS synthetic-host failure diperbaiki
+
+CONFIRMED, sumber terminal aktual dan source
+`b76692dd7a0790675a5057a3b82957d2be67d5a7`: host FAIL menjadi synthetic
+PASS, full desktop5PASS/0SKIP. Delapan dokumen produk/dossier/changelog/master/
+gaps/sync/portfolio/root diselaraskan tanpa menghapus histori FAIL atau klaim
+installer/target acceptance. Tidak deploy/TEST fisik/ENABLE; distribusi gratis
+tepercaya tetap OPEN. Knowledge main HEAD terpisah; produk lain dipertahankan.
+
 ## 2026-10-18 - SagaPOS native host FAIL checkpoint
 
 CONFIRMED, sumber terminal aktual dan source

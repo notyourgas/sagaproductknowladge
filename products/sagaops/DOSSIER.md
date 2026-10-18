@@ -1,5 +1,16 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Native Owner host gate dipulihkan pada uji sintetis
+
+CONFIRMED: `b76692dd7a0790675a5057a3b82957d2be67d5a7` setelah Andreas
+meminta lanjut dan eksperimen terisolasi menemukan respons browser belum
+dikonsumsi. Perbaikan tidak memakai hasil halaman sebagai otoritas: pemeriksaan
+native tetap berlaku. Full desktop suite5PASS/0SKIP, actual WebView2 positive,
+negative, busy/navigation/iframe dan cookie/pilot checks lulus. Tidak ada printer
+fisik, pembayaran atau production profile dipakai. Klaim FAIL host sebelumnya
+adalah histori, bukan status terbaru. Instalasi/lifecycle/distribusi/backend dan
+target paper/automatic acceptance masih OPEN; no deploy/ENABLE.
+
 ## 2026-10-18 - Batas kualifikasi native Windows
 
 CONFIRMED: source checkpoint `4fe9efa6c35b89a8d795545c5fba05c7352dbf43`

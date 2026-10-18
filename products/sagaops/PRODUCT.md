@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Host Windows sintetis lulus, installer belum dirilis
+
+CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source
+`b76692dd7a0790675a5057a3b82957d2be67d5a7` memperbaiki pembacaan respons
+Owner; kegagalan host pada checkpoint sebelumnya digantikan hasil5PASS/0SKIP.
+WebView2 aktual diuji dengan data sintetis dan printer stub, termasuk akses
+positif/negatif, isolasi profil dan dialog pilot. Ini bukan pemasangan atau TEST
+fisik aplikasi baru. Kandidat tetap unsigned/release-disabled; distribusi gratis
+tepercaya, lifecycle/target install, backend dan commissioning masih OPEN.
+Tidak deploy/ENABLE, perubahan template, driver atau proteksi. Release lain
+dipertahankan.
+[Batas bukti](https://github.com/notyourgas/sagaops/blob/b76692dd7a0790675a5057a3b82957d2be67d5a7/scripts/windows/desktop-app/QUALIFICATION.md).
+
 ## 2026-10-18 - Kandidat Windows belum lolos host, tidak dirilis
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: checkpoint source
