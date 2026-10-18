@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS Windows gagal host gate, tidak dipromosikan
+
+CONFIRMED: checkpoint `4fe9efa6c35b89a8d795545c5fba05c7352dbf43` menyimpan
+perubahan origin/pilot dan fixture WebView2 aktual. Gate Owner FAIL setelah dua
+koreksi; supporting4PASS tidak menggantikannya. Tidak deploy/TEST fisik/ENABLE,
+installer tetap unsigned. Diagnosis host dan distribusi tepercaya menjadi next
+action, tanpa mengubah harga/template/payment atau release produk lain.
+
 ## 2026-10-18 - SagaBook closing reset fix production aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: source

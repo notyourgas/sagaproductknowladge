@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Checkpoint host Windows FAIL, bukan rilis
+
+CONFIRMED, source `4fe9efa6c35b89a8d795545c5fba05c7352dbf43`: sebelumnya
+actual-host OPEN; kini percobaan aktual menunjukkan FAIL pada Owner approval.
+Origin/pilot handling dan proof disimpan sebagai kandidat, bukan fitur aktif.
+Empat supporting PASS tidak menutup failure; dua correction round habis.
+Tidak deploy/TEST fisik/ENABLE atau perubahan template/proteksi. Next:
+maintainer mendiagnosis respons native sebelum kualifikasi ulang; publisher
+menyelesaikan jalur distribusi tepercaya tanpa mengubah kebijakan Windows.
+
 ## 2026-10-18 - Owner printer recovery di source, bukan activation
 
 CONFIRMED, `72c93f357727c2768ed74f3b5f8e825259c37150`: sebelumnya service

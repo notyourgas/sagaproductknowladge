@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Kandidat Windows belum lolos host, tidak dirilis
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: checkpoint source
+`4fe9efa6c35b89a8d795545c5fba05c7352dbf43` membatasi origin per aplikasi
+dan mempertahankan gate private-pilot serta release guard. Uji WebView2 aktual
+gagal pada konfirmasi native Owner; empat tes pendukung PASS tidak menggantikan
+gate gagal. Kedua correction round sudah dipakai. Belum ada installer operasional,
+TEST aplikasi baru, atau ENABLE. Kertas jalur existing yang diterima Andreas
+bukan penerimaan aplikasi baru/laptop lain. Tidak ada deploy oleh lane ini;
+release produk lain dipertahankan. Distribusi gratis tepercaya tetap OPEN.
+[Gate dan langkah lanjut](https://github.com/notyourgas/sagaops/blob/4fe9efa6c35b89a8d795545c5fba05c7352dbf43/scripts/windows/desktop-app/QUALIFICATION.md).
+
 ## 2026-10-18 - Peninjauan antrean printer oleh Owner, source-only
 
 CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source

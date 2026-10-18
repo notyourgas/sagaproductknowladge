@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS native host FAIL checkpoint
+
+CONFIRMED, sumber terminal aktual dan source
+`4fe9efa6c35b89a8d795545c5fba05c7352dbf43`: actual-host OPEN menjadi FAIL
+pada Owner approval; empat supporting PASS dipisahkan. Delapan dokumen produk,
+dossier/changelog/master/gaps/sync/portfolio/root diperbarui agar tidak mengklaim
+installer/physical acceptance/production. Tidak ada deploy/ENABLE/TEST baru;
+dua koreksi habis, diagnosis maintainer serta distribusi tepercaya tetap OPEN.
+Knowledge branch main HEAD; publikasi SagaBook/SagaView dipertahankan.
+
 ## 2026-10-18 - SagaBook closing fix dari lokal menjadi production aktif
 
 CONFIRMED, sumber Andreas dan terminal/live evidence: source

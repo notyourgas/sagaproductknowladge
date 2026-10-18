@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Batas kualifikasi native Windows
+
+CONFIRMED: source checkpoint `4fe9efa6c35b89a8d795545c5fba05c7352dbf43`
+menambahkan origin per surface, dialog private-pilot dan fixture host aktual.
+Runtime/INSPECT/anonymous denial PASS, tetapi native Owner approval FAIL;
+assertion host berikutnya belum tercapai. Empat supporting tests PASS hanya
+source/compile/browser/core, bukan kelulusan host atau instalasi. Dua putaran
+koreksi habis: diagnosis reproduksi response-body oleh maintainer diperlukan
+sebelum siklus kualifikasi berikutnya. Release-disabled/unsigned, tidak deploy,
+tidak TEST fisik/ENABLE. Backend target-engine/recovery, distribusi tepercaya,
+instalasi/lifecycle dan target paper acceptance tetap OPEN.
+
 ## 2026-10-18 - Pemulihan uncertain print tanpa resend atau aktivasi
 
 CONFIRMED: `72c93f357727c2768ed74f3b5f8e825259c37150` memberi Owner daftar

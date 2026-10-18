@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS Windows belum siap dipasang
+
+CONFIRMED: source checkpoint `4fe9efa6c35b89a8d795545c5fba05c7352dbf43`,
+NOT_RELEASED / NOT_DEPLOYED. Host WebView2 aktual gagal mengonfirmasi Owner;
+empat tes pendukung lulus bukan host/install acceptance. Jangan menyebutnya
+aplikasi siap pakai atau mengganti bukti dengan TEST jalur existing. Tidak ada
+TEST baru, ENABLE atau deploy lane printer. Batas dua koreksi habis; diagnosis
+host dan distribusi gratis tepercaya masih diperlukan. Produk lain tetap.
+
 ## 2026-10-18 - SagaBook closing fix deployed, uji login production OPEN
 
 CONFIRMED: source `8f9731a8babf123ea059fcb2b2e553f35118e3cb`, release
