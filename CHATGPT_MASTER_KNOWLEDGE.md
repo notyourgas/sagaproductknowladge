@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS installer kandidat bukan aplikasi siap pakai
+
+CONFIRMED: `c12e8de222e2ad9b554b1e7c564f4598466c0d37`, kandidat installer
+Windows per-user sudah dibangun; desktop/packaging7PASS/0SKIP. Tetap unsigned
+dan menolak pemasangan; tidak membawa state atau menjalankan TEST/startup.
+Publisher/distribusi, real lifecycle/install, backend/target-paper/auto masih
+OPEN. No deploy/ENABLE/biaya tambahan atau perubahan template/proteksi.
+
 ## 2026-10-18 - SagaPOS host lulus sintetis, aplikasi belum operasional
 
 CONFIRMED: `b76692dd7a0790675a5057a3b82957d2be67d5a7`, full desktop

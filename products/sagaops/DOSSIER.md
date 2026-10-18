@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Packaging Windows per-user, masih blocked candidate
+
+CONFIRMED: source `c12e8de222e2ad9b554b1e7c564f4598466c0d37`, Inno Setup
+candidate dibangun dengan compiler/template vendor terverifikasi dan hash
+payload asal/staging. Program terpisah dari state; lifecycle mutex menyamakan
+guard aplikasi dan installer. Tidak ada startup/post-install print atau hapus
+ledger/kredensial. Combined7PASS/0SKIP + scoped2PASS sesudah stage-hash check.
+Tidak menjalankan installer unsigned. Real lifecycle/install/rollback acceptance
+belum diuji; publisher dan signed release masih diperlukan. No deploy/ENABLE.
+
 ## 2026-10-18 - Native Owner host gate dipulihkan pada uji sintetis
 
 CONFIRMED: `b76692dd7a0790675a5057a3b82957d2be67d5a7` setelah Andreas

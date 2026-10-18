@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Installer Windows kandidat tersedia, bukan rilis operasional
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: source
+`c12e8de222e2ad9b554b1e7c564f4598466c0d37` menambah resep installer
+per-user, dua shortcut dan lifecycle guard. Kompilasi aktual serta penolakan
+payload berubah lulus; combined7PASS/0SKIP. Kandidat unsigned menolak pemasangan,
+tidak startup/TEST otomatis atau membawa state perangkat. Compiler terverifikasi
+bukan identitas penerbit SagaPOS. Distribusi, install/upgrade/uninstall aktual,
+backend/target-paper/ENABLE tetap OPEN. Tidak deploy, membeli layanan atau
+mengubah driver/proteksi/template; production independen dipertahankan.
+[Batas kandidat](https://github.com/notyourgas/sagaops/blob/c12e8de222e2ad9b554b1e7c564f4598466c0d37/scripts/windows/desktop-app/QUALIFICATION.md).
+
 ## 2026-10-18 - Host Windows sintetis lulus, installer belum dirilis
 
 CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source

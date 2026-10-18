@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS installer preparation source milestone
+
+CONFIRMED, source `c12e8de222e2ad9b554b1e7c564f4598466c0d37`: ZIP-only
+menjadi resep/hasil kompilasi installer kandidat. Delapan dokumen product,
+dossier/changelog/master/gaps/sync/portfolio/root membatasi7PASS/0SKIP sebagai
+source/packaging, bukan install atau kertas. Kandidat tetap unsigned/closed,
+distribusi/target acceptance OPEN. Tidak deploy/TEST/ENABLE atau mengubah
+template/proteksi. Knowledge main HEAD terpisah, produk lain tetap.
+
 ## 2026-10-18 - SagaPOS synthetic-host failure diperbaiki
 
 CONFIRMED, sumber terminal aktual dan source

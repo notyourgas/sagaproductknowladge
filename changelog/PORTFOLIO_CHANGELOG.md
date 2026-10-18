@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS Windows installer source, belum rilis
+
+CONFIRMED: `c12e8de222e2ad9b554b1e7c564f4598466c0d37` menyediakan
+kandidat installer per-user selain ZIP, dengan guard/state isolation.7PASS/0SKIP
+termasuk compile aktual/hash refusal, bukan install/physical acceptance.
+No deploy/TEST/ENABLE/paid service; publisher/target qualification masih OPEN.
+
 ## 2026-10-18 - SagaPOS host source lulus uji sintetis
 
 CONFIRMED: `b76692dd7a0790675a5057a3b82957d2be67d5a7`, full desktop

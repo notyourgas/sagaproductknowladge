@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Gap source installer SagaPOS dipersempit, distribusi tetap OPEN
+
+CONFIRMED: source `c12e8de222e2ad9b554b1e7c564f4598466c0d37` sudah punya
+installer recipe dan kompilasi aktual7PASS/0SKIP, bukan ZIP-only. Kandidat
+unsigned tidak dijalankan dan menolak install. Publisher/Andreas: tetapkan
+distribusi tepercaya tanpa bypass Windows. Setelah itu release lead menguji
+real install/upgrade/uninstall dan commissioning. Belum ada deploy/TEST/ENABLE.
+
 ## 2026-10-18 - Gap synthetic host SagaPOS ditutup, distribusi tetap OPEN
 
 CONFIRMED: source `b76692dd7a0790675a5057a3b82957d2be67d5a7` menutup FAIL

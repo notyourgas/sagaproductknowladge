@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Installer source dan kandidat biner, belum dapat dipasang
+
+CONFIRMED: `c12e8de222e2ad9b554b1e7c564f4598466c0d37`, sebelumnya ZIP
+saja; kini installer candidate per-user dengan dual shortcut, lifecycle mutex,
+hash checks dan closed delivery.7scopedPASS/0SKIP; compiler aktual dipakai,
+candidate tidak dijalankan. Bukan operational installer; distribusi/target
+install dan physical acceptance OPEN. Tidak deploy/TEST/ENABLE/proteksi mutation.
+
 ## 2026-10-18 - Perbaikan respons Owner menutup synthetic-host failure
 
 CONFIRMED: source `b76692dd7a0790675a5057a3b82957d2be67d5a7`, host FAIL
