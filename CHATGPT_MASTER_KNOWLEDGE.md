@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS printer recovery masih source-only
+
+CONFIRMED: `72c93f357727c2768ed74f3b5f8e825259c37150` menambah UI Owner
+pause/review untuk hasil cetak belum pasti. Review butuh exact attempt, expiry,
+alasan dan pemeriksaan kertas/antrean; tidak resend/activate. Late ACK aman dan
+native expiry diperiksa sebelum spool.43scopedPASS/1unusedSKIP, TypeScript/a11y/
+viewport PASS. Candidate tetap unsigned/nonoperasional, no deploy/print/ENABLE.
+Production independen02b4588 lane lifecycle tetap, source printer belum digabung.
+Actual host/driver/install/backend/target acceptance dan trusted delivery OPEN.
+
 ## 2026-10-18 - SagaPOS karyawan: arsip/hapus native sudah production
 
 CONFIRMED: current app02b4588f6977aca23278b5d1db0c275a782a5833, rollback

@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Pemulihan uncertain print tanpa resend atau aktivasi
+
+CONFIRMED: `72c93f357727c2768ed74f3b5f8e825259c37150` memberi Owner daftar
+review yang dibatasi dan tanpa RAW/credential/lease. Server mewajibkan pause,
+exact attempt, alasan dan paper/queue checks; STARTED minimal30detik dan semua
+grant harus kedaluwarsa. Error/stale scope tidak retry; review tetap paused.
+TEST/ENABLE tidak melewati receipt unresolved. Late RESULT hanya menyelesaikan
+ledger ACK, tidak memulihkan authority atau klaim kertas. Reviewed TEST lama
+memakai audit tombstone berisi hash lease, bukan fake sale atau raw receipt.
+Revoked credential tidak dihidupkan kembali oleh review. Native C# mengecek
+expiry setelah preflight terakhir; deterministic fixture membuktikan0send/retry.
+Combined42PASS/1unusedStoreSKIP serta revoked-device1PASS, TypeScript/diff,
+a11y dan screenshot1486/768/390/320 PASS. PGlite/compiled fixture bukan actual
+WebView/native callbacks atau hardware acceptance. Source/layout/payment/driver
+production tidak dipromosikan; fresh current02b4588 lane lifecycle tetap utuh.
+Unsigned candidate0.1.0, SHA256
+`4c44432b9cf99d004ec2f9cd531320b2ed9a15bcf03fbe3de7a91bf1fed962c9`,
+Released=false, bukan installer rilis. Native UI/install/lifecycle/provisioning,
+trusted distribution, native PostgreSQL/rollback dan target acceptance OPEN.
+
 ## 2026-10-18 - Lifecycle karyawan native dan batas penerimaan
 
 CONFIRMED: app02b4588f6977aca23278b5d1db0c275a782a5833 menggantikan716cb91,

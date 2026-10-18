@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Peninjauan antrean printer oleh Owner, source-only
+
+CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source
+`72c93f357727c2768ed74f3b5f8e825259c37150` menambahkan alur jeda dan tinjau
+hasil cetak yang belum pasti, dengan alasan, pemeriksaan kertas/antrean, attempt
+yang tepat dan masa tunggu izin kirim. Peninjauan tidak mengirim ulang atau
+mengaktifkan otomatis. Late ACK tidak membatalkan review; core native memeriksa
+expiry lagi tepat sebelum spool. Combined42PASS/1unusedSKIP + focused1PASS,
+TypeScript/diff/a11y dan screenshot empat viewport PASS. Tidak ada TEST fisik,
+deploy, ENABLE, driver/proteksi atau template mutation. Candidate tetap unsigned,
+bukan installer operasional. Production independen02b4588 tetap beserta lane
+lifecycle karyawan; printer source belum digabung. Actual host/install/driver/
+PostgreSQL/guarded release dan target laptop masih OPEN, NOT_BUSINESS_READY.
+[Bukti dan batas](https://github.com/notyourgas/sagaops/blob/72c93f357727c2768ed74f3b5f8e825259c37150/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - Arsip, pulihkan dan hapus karyawan native sudah aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: app source

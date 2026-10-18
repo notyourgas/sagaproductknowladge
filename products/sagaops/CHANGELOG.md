@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Owner printer recovery di source, bukan activation
+
+CONFIRMED, `72c93f357727c2768ed74f3b5f8e825259c37150`: sebelumnya service
+review tidak punya alur UI dan bisa melepas antrean saat aktif; sesudah pause,
+expiry/attempt/paper checks dan alasan wajib, tidak resend/ENABLE. Late ACK
+aman untuk ledger reviewed, expiry dicek sebelum spool.43scopedPASS/1SKIP,
+TypeScript/diff/a11y/empat viewport PASS. No physical print/deploy/Windows/
+template change. Independent production02b4588 preserved, unsigned candidate
+belum operasional. Actual host/installer/backend/target gates OPEN.
+
 ## 2026-10-18 - Owner dapat arsip, pulihkan dan hapus profil tanpa histori
 
 CONFIRMED: permintaan Andreas diimplementasikan sampai aktivasi app
