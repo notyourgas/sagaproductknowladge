@@ -1,5 +1,30 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Windows 0.3.1 recovery dan review selisih
+
+- CONFIRMED; source6b9ecf2ad9b6db7baa22f512558a2127138263d6, committed/pushed,
+  meneruskan GOAL satu aplikasi dua mode tanpa perubahan layout/tarif/provider.
+- Before: upgrade/recovery lama dan UI variance belum lengkap; balanced close
+  dengan catatan kosong gagal. After: ledger dipertahankan, rekonsiliasi hasil
+  tanpa resend, recovery berotorisasi bersyarat, balanced close diperbaiki.
+  UI maker/checker mempertahankan Owner close, distinct checker dan stale/expiry
+  guards; persetujuan tidak menutup atau menciptakan pembayaran/nota.
+- Native24 PASS; cash/review/browser98 PASS; server/receipt46 PASS+1 Linux
+  Nginx aktual SKIP; static1177/37migrasi/type PASS. CI NOT_RUN, bukan full UAT.
+- MSIX/ZIP0.3.1.0 integritas terverifikasi, unsigned internal privat; checksum
+  di dossier. IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / TEST_NOT_SENT /
+  auto OFF / NOT_BUSINESS_READY. Production terbaru36d8024/rollback14507c0
+  dipertahankan, termasuk GATEWAY, roster dan seluruh grant existing.
+- Backend final e0aa0ea59f86662d354c327011220f1e97f38530 sudah mengintegrasikan
+  exact active36d8024;17 PASS/0 FAIL/2 native PostgreSQL SKIP, static1181/
+  37migrasi PASS. Native tidak berubah, paket tetap source6b9ecf2a.
+- Next: periksa ulang fresh-current, qualification Linux/recovery sesuai izin,
+  instalasi/commissioning laptop, pemeriksa kedua dan UAT operasional sah.
+  Resource builder tambahan pending; akses lama yang tidak memenuhi syarat
+  atau hasil cetak belum direkonsiliasi tetap review/fail-closed.
+- PRODUCT/DOSSIER/CHANGELOG, master/GAPS/DECISIONS/SYNC/portfolio/root diperbarui;
+  source0.3.0 tetap histori. Sinkronisasi knowledge terpisah dari source/release.
+
 ## 2026-10-19 - Deploy roster4staf dan tutup perbaikan HR02
 
 - CONFIRMED; keputusan Andreas4staf/rolling preferred dengan rest11/max48/6hari.

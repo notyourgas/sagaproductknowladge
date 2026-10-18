@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS Windows 0.3.1 siap qualification, belum operasional
+
+- CONFIRMED source6b9ecf2ad9b6db7baa22f512558a2127138263d6; satu aplikasi dua
+  mode mempertahankan layout, ledger dan proteksi Windows. Recovery upgrade/
+  perangkat bersyarat serta UI distinct maker/checker existing diperbaiki,
+  termasuk balanced close catatan kosong; bukan perubahan grant production.
+- Native24 PASS, cash/review/browser98 PASS; server/receipt46 PASS dan1 Linux
+  Nginx aktual SKIP, static1177/37migrasi/type PASS. Paket internal unsigned
+  0.3.1.0/checksum terverifikasi; CI NOT_RUN, bukan public trusted publisher.
+- IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / TEST_NOT_SENT / auto OFF /
+  NOT_BUSINESS_READY; production roster36d8024/rollback14507c0 dan GATEWAY tetap.
+  Backend e0aa0ea59f86662d354c327011220f1e97f38530 mengintegrasikan exact36d8024;
+  17 PASS/0 FAIL/2 native PostgreSQL SKIP, static1181/37migrasi PASS. Native
+  paket tetap6b9ecf2a. Resource/qualification Linux, fresh-current recheck, commissioning laptop
+  dan UAT sah dengan pemeriksa kedua belum selesai. Produk lain tidak berubah.
+- PRODUCT/DOSSIER/CHANGELOG SagaOPS, master/GAPS/DECISIONS/SYNC/portfolio/root
+  diperbarui; histori0.3.0 dipertahankan, bukan bukti fisik versi baru.
+
 ## 2026-10-19 - SagaPOS roster4staf aktif; perbaikan generator diterima teknis
 
 CONFIRMED; source `36d8024d2244b97a5e0951ddb023ba4c256a8f4d` aktif sekitar02.00WIB,

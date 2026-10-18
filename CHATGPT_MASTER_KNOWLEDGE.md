@@ -1,5 +1,30 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaPOS Windows 0.3.1 masih kandidat internal
+
+CONFIRMED source **6b9ecf2ad9b6db7baa22f512558a2127138263d6** memperbaiki
+upgrade/requalification satu aplikasi dua mode dengan ledger tetap, rekonsiliasi
+hasil tanpa resend, pemulihan perangkat berotorisasi setelah jeda panjang,
+closing seimbang tanpa catatan wajib, serta UI maker/checker selisih existing.
+Checker berbeda menyetujui sesuai izin finance/cash tanpa izin menulis kas;
+Owner tetap memilih dan menutup eksplisit. Tidak ada grant production baru,
+perubahan layout nota/tarif atau pelonggaran proteksi Windows.
+
+Native24 PASS; cash/review/browser98 PASS; server/receipt46 PASS+1 Nginx Linux
+SKIP; static1177/37migrasi/type PASS. Paket MSIX/ZIP0.3.1.0 nyata dan checksum
+terverifikasi, tetap unsigned uji privat; bukan public trusted distribution.
+CI NOT_RUN, IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / TEST_NOT_SENT,
+auto OFF, UAT nyata NOT_RUN, NOT_BUSINESS_READY. Akses lama atau rekonsiliasi
+yang tidak memenuhi syarat tetap memerlukan review, bukan bypass atau resend.
+Paket0.3.0 di bawah adalah histori. Production kanonik terbaru **36d8024**/
+rollback14507c0 dan GATEWAY tetap. Backend kandidat
+**e0aa0ea59f86662d354c327011220f1e97f38530** sudah mengintegrasikan exact36d8024;
+17 PASS/0 FAIL/2 native PostgreSQL SKIP, static1181/37migrasi PASS. Native/paket
+tetap6b9ecf2a tanpa perubahan; bukti terpisah, bukan full acceptance. Fresh-current
+recheck dan Linux/recovery,
+instalasi target, commissioning serta pemeriksa kedua masih gate tersendiri.
+[Detail dan checksum](products/sagaops/DOSSIER.md).
+
 ## 2026-10-19 - SagaPOS roster4staf sudah aktif; penerimaan parsial
 
 CONFIRMED: **36d8024d2244b97a5e0951ddb023ba4c256a8f4d** sudah PRODUCTION_DEPLOYED /

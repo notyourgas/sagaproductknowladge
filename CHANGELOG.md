@@ -1,5 +1,28 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): Windows 0.3.1 internal qualification
+
+- CONFIRMED; sumber GOAL Andreas dan commit6b9ecf2ad9b6db7baa22f512558a2127138263d6
+  committed/pushed. Upgrade mempertahankan ledger, rekonsiliasi hasil tanpa
+  resend, recovery perangkat bersyarat dan UI maker/checker existing tersedia;
+  bug balanced close catatan kosong ditutup. Tidak mengubah desain nota/RBAC.
+- Validasi native24 PASS, cash/review/browser98 PASS, server/receipt46 PASS+
+  1 Nginx Linux aktual SKIP; static1177/37migrasi/type PASS. CI NOT_RUN.
+  Paket0.3.1.0/checksum terverifikasi, unsigned privat, bukan verified publisher.
+- Production tidak dimutasi oleh milestone ini. Canonical current36d8024 dan
+  rollback14507c0 beserta GATEWAY dipertahankan. Backend kandidat final
+  e0aa0ea59f86662d354c327011220f1e97f38530 sudah mengintegrasikan exact current;
+  17 PASS/0 FAIL/2 native PostgreSQL SKIP, static1181/37migrasi PASS. Native
+  tidak berubah; paket tetap6b9ecf2a. Fresh-current recheck dan
+  qualification wajib sebelum promotion. NOT_DEPLOYED / NOT_INSTALLED /
+  TEST_NOT_SENT / auto OFF / UAT_NOT_RUN / NOT_BUSINESS_READY.
+- Blocker: resource Linux/recovery, instalasi/commissioning laptop, pemeriksa
+  kedua dan UAT nyata. Recovery lama yang tidak memenuhi syarat tetap review;
+  hasil cetak tidak pasti tidak diulang otomatis.
+- File: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, GAPS, DECISIONS, portfolio,
+  root changelog dan SYNC_STATUS. Knowledge main HEAD setelah validator/push/
+  readback; source/paket0.3.0 dan release HR independen tidak ditulis ulang.
+
 ## 2026-10-19 - knowledge(sagaops): roster4staf aktif dan HR02PASS
 
 CONFIRMED; Andreas menyetujui4staf/rolling preferred, actual production/Owner

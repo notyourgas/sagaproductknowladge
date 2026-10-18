@@ -1,5 +1,38 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Kandidat Windows 0.3.1: recovery dan review closing
+
+CONFIRMED: source **6b9ecf2ad9b6db7baa22f512558a2127138263d6** committed/pushed.
+Satu aplikasi Kiosk/Kasir kini mendukung upgrade/requalification yang menjaga
+ledger, rekonsiliasi hasil cetak tanpa pengiriman ulang, dan pemulihan perangkat
+berotorisasi setelah jeda lebih dari empat jam. Akses lama yang tidak memenuhi
+syarat tetap memerlukan review petugas; hasil cetak tidak pasti tidak diulang.
+Layout nota yang disetujui, harga, pembayaran dan proteksi Windows tetap.
+
+Closing seimbang menerima catatan kosong. Selisih memakai kebijakan existing:
+Owner mengajukan hitungan, pemeriksa berbeda dengan izin finance/cash yang
+sesuai menyetujui, lalu Owner memilih persetujuan dan menutup secara eksplisit.
+Pemeriksa tidak memerlukan izin menulis kas; persetujuan bukan closing atau
+pembayaran. Hitungan berubah/kedaluwarsa ditolak. Tidak ada grant production baru.
+
+Validasi lokal: native Windows 24 PASS; cash/review/browser 98 PASS tanpa skip;
+server/receipt 46 PASS dan 1 SKIP Nginx Linux aktual; static 1177 modul dan
+37 migrasi existing PASS. Paket **0.3.1.0** nyata dan integritas diperiksa,
+tetap **unsigned internal-only**, bukan trusted publisher. CI NOT_RUN.
+
+Backend kandidat **e0aa0ea59f86662d354c327011220f1e97f38530** sudah
+mengintegrasikan exact production36d8024; post-integration17 PASS/0 FAIL/2 SKIP
+untuk native PostgreSQL roster/mobile yang belum tersedia pada host Windows.
+Static1181 modul/37migrasi PASS. Native tidak berubah, provenance paket tetap
+6b9ecf2a. Ini integrasi source, bukan deployment atau full acceptance.
+
+IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED; TEST fisik versi baru NOT_SENT,
+auto OFF, UAT nyata belum dijalankan, NOT_BUSINESS_READY. Production kanonik
+tetap roster **36d8024**, rollback14507c0, GATEWAY existing; bukan diturunkan ke
+baseline printer lama. Pemeriksaan ulang fresh-current, qualification Linux/recovery,
+instalasi laptop, commissioning dan pemeriksa kedua production tetap gate.
+Milestone0.3.0 di bawah adalah histori, bukan paket sasaran terbaru.
+
 ## 2026-10-19 - Roster4staf aktif; draft tanpa konflik
 
 CONFIRMED: **36d8024d2244b97a5e0951ddb023ba4c256a8f4d** sudah PRODUCTION_DEPLOYED /

@@ -1,5 +1,31 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - Snapshot kandidat Windows 0.3.1
+
+CONFIRMED source **6b9ecf2ad9b6db7baa22f512558a2127138263d6** committed/pushed;
+paket0.3.1.0 unsigned internal privat nyata dan checksum diperiksa. Recovery
+upgrade/ledger, pelaporan hasil tanpa resend, pemulihan perangkat bersyarat,
+balanced close dan UI pemeriksaan selisih existing tersinkronkan. Native24 PASS,
+cash/review/browser98 PASS, server/receipt46 PASS+1 Nginx Linux aktual SKIP;
+static1177/37migrasi/type PASS. CI NOT_RUN.
+
+Backend kandidat **e0aa0ea59f86662d354c327011220f1e97f38530** sudah
+mengintegrasikan exact active36d8024. Post-integration17 PASS/0 FAIL/2 native
+PostgreSQL SKIP dan static1181/37migrasi PASS; native source/paket tetap6b9ecf2a
+tanpa perubahan. Scopes bukti tidak dijumlahkan sebagai full acceptance.
+
+IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / TEST_NOT_SENT / auto OFF /
+NOT_BUSINESS_READY. Production kanonik terbaru36d8024/rollback14507c0 dan
+GATEWAY tetap; history14507 serta native0.3.0 tidak dihapus atau disamakan dengan
+release aktif. Fresh-current recheck, qualification Linux/recovery,
+instalasi/commissioning laptop dan UAT nyata masih OPEN. Ketersediaan pemeriksa
+kedua production belum terkonfirmasi; tidak ada grant baru. Resource builder
+tambahan pending, bukan approval tersirat. Recovery lama yang tidak memenuhi
+syarat memerlukan review; tidak menjanjikan pemulihan semua perangkat.
+
+Knowledge main HEAD setelah validator/push/readback; SHA final dilaporkan
+terpisah. Tidak ada restricted path, tautan distribusi privat atau raw receipt.
+
 ## 2026-10-19 - Snapshot aktivasi roster4staf02.03WIB
 
 CONFIRMED active `36d8024d2244b97a5e0951ddb023ba4c256a8f4d` /rollback14507c0,

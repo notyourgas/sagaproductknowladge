@@ -1,5 +1,60 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Windows 0.3.1 qualification lokal dan batas operasional
+
+CONFIRMED; source **6b9ecf2ad9b6db7baa22f512558a2127138263d6** committed/pushed
+meneruskan fondasi satu aplikasi dua mode. Upgrade/requalification mempertahankan
+ledger dan memerlukan persetujuan petugas sesuai kewenangan. Rekonsiliasi hasil
+lama hanya melaporkan hasil yang sudah tercatat, bukan mengambil atau mengirim
+pekerjaan baru. Hasil tidak pasti tidak dikirim ulang otomatis. Pemulihan setelah
+jeda lebih dari empat jam tersedia untuk perangkat yang memenuhi otorisasi;
+akses lama yang belum memenuhi kontrak perlu review manual. Bila kredensial
+lama kedaluwarsa dan hasil cetak belum dapat direkonsiliasi, sistem gagal tertutup.
+Ini bukan janji pemulihan semua perangkat lama atau OS kiosk lockdown.
+
+Bug catatan kosong pada closing seimbang ditutup. UI pemeriksaan selisih memakai
+otoritas existing: Owner maker mengajukan, checker berbeda dengan izin
+`cash.view` dan `finance.approve` meninjau, maker secara eksplisit memilih
+persetujuan lalu menutup. Checker tidak memerlukan `cash.write` dan tidak
+menutup shift. Persetujuan tidak membuat pembayaran/penjualan/produksi/nota.
+Ledger berubah atau persetujuan kedaluwarsa memblokir close; grant dikonsumsi
+hanya oleh close yang cocok. Tidak ada perubahan role/grant production.
+
+Bukti terfokus lokal: native Windows 24 PASS; cash/review/browser 98 PASS,
+tanpa skip; server/receipt 46 PASS/1 SKIP untuk Nginx Linux aktual. Static
+1177 modul/37 migrasi existing dan TypeScript PASS. Journey browser disposable
+mencakup buka shift, pending Kiosk, autentikasi petugas, satu sumber pembayaran/
+produksi/nota, pengeluaran laci versus eksternal, Owner close dan counted handover;
+review maker/checker juga diuji aktual, termasuk stale dan expired. Dialog review
+720x1280 dan1280x800 terbaca tanpa overflow horizontal, isi dapat discroll.
+Ini fixture sintetis, bukan uang/produksi atau hasil kertas nyata. CI NOT_RUN.
+
+Paket0.3.1.0 dibuat dari source bersih: 14 file MSIX, 10 file distribusi
+terindeks dan integritas diperiksa. SHA256 MSIX
+`8d8f6dfe5d4ba3ef113cd2007591bdd737d0c221c246512b99988512ba443d5d`;
+ZIP `c6f415322d766faf4b4091f1fa6c85773ee753feede56839a84e8bd03fbe1455`.
+Tetap unsigned uji internal privat; checksum bukan bukti trusted publisher.
+Layout yang disetujui, logo/spacing/footer/feed/autocut tidak diubah.
+
+Backend kandidat final **e0aa0ea59f86662d354c327011220f1e97f38530** sudah
+mengintegrasikan exact production **36d8024d2244b97a5e0951ddb023ba4c256a8f4d**.
+Post-integration17 PASS/0 FAIL/2 SKIP; dua skip membutuhkan native PostgreSQL
+roster/mobile yang belum tersedia pada host Windows. Static1181 modul/37migrasi
+PASS. Source Windows tidak berubah terhadap6b9ecf2a, sehingga paket0.3.1.0
+tetap terikat commit native tersebut. Evidence scopes terpisah, bukan agregat
+full PASS atau pengganti Linux/Nginx/native PostgreSQL yang masih terbuka.
+
+IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / TEST_NOT_SENT / auto OFF /
+NOT_BUSINESS_READY. Private package tersedia, tidak dipublikasi umum. Production
+terbaru tetap **36d8024d2244b97a5e0951ddb023ba4c256a8f4d**, rollback14507c0,
+GATEWAY existing. Sebelum promotion, periksa ulang current dan loloskan
+qualification Linux/PostgreSQL/Nginx/recovery. Resource
+builder tambahan belum diotorisasi; tidak memakai production sebagai builder.
+Printer ada di laptop sasaran lain; instalasi/commissioning versi ini dan UAT
+operasional sah belum dilakukan. Pemeriksa kedua production belum terkonfirmasi.
+Histori0.3.0 berikut tetap dipertahankan; gap recovery/upgrade-nya kini ditangani
+di source0.3.1 secara bersyarat, bukan dibuktikan selesai pada perangkat nyata.
+
 ## 2026-10-19 - Aktivasi roster4staf dan batas penerimaan
 
 CONFIRMED: **36d8024d2244b97a5e0951ddb023ba4c256a8f4d** sudah PRODUCTION_DEPLOYED /

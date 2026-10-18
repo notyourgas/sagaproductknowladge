@@ -1,5 +1,35 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Windows 0.3.1: source gap ditutup, operasional belum lolos
+
+CONFIRMED source6b9ecf2ad9b6db7baa22f512558a2127138263d6 dan paket internal
+0.3.1.0 menggantikan0.3.0 sebagai kandidat sasaran. Upgrade/ledger, recovery
+berotorisasi setelah jeda panjang, blank-note balanced close dan UI selisih
+maker/checker telah diimplementasikan/diuji lokal. Gap source0.3.0 di bawah
+bersifat historis; bukan semuanya masih belum dikerjakan, juga bukan UAT PASS.
+
+- Release Lead: backend kandidat e0aa0ea59f86662d354c327011220f1e97f38530
+  sudah mengintegrasikan exact production36d8024, native/paket tetap6b9ecf2a.
+  Post-integration17 PASS/2 native PostgreSQL SKIP, static1181/37migrasi PASS.
+  Periksa ulang fresh-current sebelum promotion; Linux/PostgreSQL/Nginx/recovery
+  dan guarded promotion masih belum selesai. Nginx Linux aktual SKIP,
+  CI NOT_RUN; persetujuan resource builder pending.
+- Andreas/operator: pasang0.3.1 pada laptop sasaran, pilih printer aktual,
+  commissioning satu TEST dan konfirmasi kertas/layout/footer/autocut. Printer
+  belum pada PC executor; TEST baru NOT_SENT dan otomatisasi OFF.
+- Owner: pastikan pemeriksa production kedua memang berwenang dan tersedia.
+  Fixture distinct checker bukan bukti akun production; jangan membuat grant
+  atau melonggarkan Owner close untuk melewati gate ini.
+- Petugas: akses lama tanpa kontrak recovery yang sesuai membutuhkan review.
+  Kredensial lama kedaluwarsa dengan hasil cetak belum direkonsiliasi tetap
+  gagal tertutup; jangan menghapus ledger atau mengulang cetak otomatis.
+- QA/operator: UAT transaksi sah, gangguan perangkat dan siklus shift nyata
+  belum dilakukan. Tes sintetis bukan penerimaan operasional atau exactly-once
+  fisik. Paket unsigned privat bukan trusted publisher; proteksi tetap aktif.
+
+Status IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / NOT_BUSINESS_READY.
+Production roster36d8024/rollback14507c0 dan GATEWAY tetap, tidak dimutasi lane ini.
+
 ## 2026-10-19 - Roster4staf aktif; gate operasional tetap terbuka
 
 CONFIRMED active `36d8024d2244b97a5e0951ddb023ba4c256a8f4d` /rollback14507c0,

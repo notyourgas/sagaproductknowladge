@@ -40,7 +40,7 @@ rilis setelah checkpoint ini mengikuti[DEC-272](#dec-272---sagapos-rolling-menja
 | Keputusan | Andreas meminta satu aplikasi Windows dua mode, satu mesin printer, layout existing, alur buka shift sampai closing/serah terima, dan eksekusi mandiri dalam scope GOAL. |
 | Alasan | Mempermudah pekerjaan petugas dan pemakaian Kiosk tanpa memasang aplikasi printer berlangganan terpisah. |
 | Alternatif yang dipertimbangkan | Dua aplikasi operasional terpisah atau dialog print browser sebagai jalur utama tidak dipilih. |
-| Dampak | Native/paket66eba8ac0.3.0.0 dan backend kandidat474add78 yang mempertahankan HR terbaru tersedia; akses petugas/RBAC, ledger, pembayaran terverifikasi dan commissioning tetap wajib. Biaya tambahan Rp0, proteksi Windows tetap, tanpa transaksi production palsu. |
+| Dampak | Native/paket66eba8ac0.3.0.0 dan backend474add78 adalah histori. Native6b9ecf2a0.3.1.0 menambahkan recovery upgrade/ledger dan UI distinct maker/checker menurut kebijakan existing; bukan grant baru. Backend kandidat e0aa0ea5 mengintegrasikan exact production36d8024 tanpa mengubah native paket; belum promotion. Fresh-current recheck, akses petugas/RBAC, pembayaran terverifikasi, qualification dan commissioning tetap wajib; Rp0/proteksi Windows tetap, tanpa transaksi production palsu. |
 | Pemberi keputusan | Andreas melalui GOAL satu aplikasi dua mode. |
 | Status | CONFIRMED sebagai arah produk/izin scope; bukan persetujuan biaya, pelonggaran Owner, verified publisher, physical acceptance atau BUSINESS_READY. |
 | Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
