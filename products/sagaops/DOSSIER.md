@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Jalur Windows unsigned internal, bukan rilis publik
+
+CONFIRMED: `ed07797a30f1332e7d1aed89e556bf62b55d0b07` membuktikan instalasi
+dan update MSIX internal Windows 11 dengan OID khusus dan AllowUnsigned resmi.
+Kiosk/Kasir berbagi host; package identity/integrity dan hash terpasang diperiksa,
+salinan unpackaged ditolak. Store/direct signed-release guards tetap utuh.
+Tidak ada trust root, perubahan kebijakan/proteksi, startup atau layanan berbayar.
+Defender tetap aktif; SAC sudah Off sebelum pekerjaan, sehingga kompatibilitas
+PC managed/SAC-enforcing tidak diklaim. Jalur ini khusus uji internal.
+
+Versi0.1.1.0 menyertakan satu fixture sintetis dari template aktif revision6
+dan tiga menu katalog, memakai renderer serta Engine ledger existing. Tidak
+ada credential Owner disimpan, pairing, transaksi atau worker otomatis.
+Web message tidak dapat mengirim RAW; native controls memakai fixture paket.
+Ledger mendahului spool dan menolak pengiriman ulang setelah percobaan.
+17 tests PASS; installed identity/hash PASS. Unit USB tidak hadir saat akhir,
+sehingga paper/footer/autocut aplikasi NOT_TESTED. Next: sambungkan unit,
+satu TEST terpasang dan konfirmasi operator, lalu qualification native controls,
+lifecycle, backend guarded dan pembayaran terverifikasi. Laptop baru/public
+signing/auto masih OPEN; no deployment dan NOT_BUSINESS_READY.
+
 ## 2026-10-18 - Qualification HR dan batas versi aktif
 
 CONFIRMED: currentC7ba3d4/rollback02b4588 sudah melalui Linux qualification,

@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - Sync instalasi MSIX internal SagaPOS
+
+CONFIRMED; source ed07797. Before: kandidat installer tertutup, belum pernah
+dipasang. After: jalur resmi unsigned internal Windows11/Rp0 membuktikan
+install/update/launch/identity/hash,17scopedPASS. Fixed TEST siap dengan active
+revision6 tetapi USB absen, sehingga belum dikirim. Public signed distribution,
+payment automation dan laptop baru masih OPEN; no deploy/auto/proteksi changes.
+File: sagaops Product/Dossier/Changelog, portfolio/master/gaps/sync/root.
+Source dan knowledge commit terpisah; bukan BUSINESS_READY.
+
 ## 2026-10-18 - Sync SagaPOS HR integrity dan prepared availability
 
 CONFIRMED; sumber Andreas, source1721263, appC7ba3d4 aktif/rollback02b4588 dan

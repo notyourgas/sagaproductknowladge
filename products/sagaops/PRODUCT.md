@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - MSIX internal gratis terpasang, TEST aplikasi menunggu USB
+
+CONFIRMED: source `ed07797a30f1332e7d1aed89e556bf62b55d0b07` menyediakan
+paket unsigned internal 0.1.1.0 melalui jalur resmi Windows 11, bukan Store
+atau installer publik signed. Instalasi/update, pembukaan Kiosk/Kasir dan
+identitas/hash terpasang lulus di PC uji yang diizinkan; Rp0. Proteksi tidak
+diubah. Smart App Control pada PC ini sudah Off sebelumnya, bukan hasil task.
+17 scoped tests PASS; renderer existing memakai desain aktif revision6 dan
+satu cutter untuk TEST sintetis tiga menu, tanpa penjualan atau browser RAW.
+USB unit tidak hadir pada pemeriksaan akhir; TEST aplikasi belum dikirim.
+Pairing/payment automation, laptop baru dan public distribution tetap OPEN.
+Cetak otomatis OFF; bukan BUSINESS_READY. Penerimaan kertas agent lama tidak
+dianggap penerimaan aplikasi baru. Milestone ini tidak deploy backend/web.
+[Panduan](https://github.com/notyourgas/sagaops/blob/ed07797a30f1332e7d1aed89e556bf62b55d0b07/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - Guard bukti absensi aktif; perbaikan ketersediaan siap rilis
 
 CONFIRMED: production current c7ba3d41a8d44599d08327c91a402bf5537d1baf,

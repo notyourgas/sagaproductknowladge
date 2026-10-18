@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-18 - SagaPOS MSIX internal installation milestone
+
+CONFIRMED: source ed07797a30f1332e7d1aed89e556bf62b55d0b07 pushed; install
+dan update internal0.1.1.0/host launch/identity/hash PASS,17scopedPASS. TEST
+aplikasi belum dikirim karena unit USB absen; auto/public release/payment
+automation/laptop baru OPEN. Tidak deploy backend/web atau mengubah proteksi.
+Product/Dossier/changelogs/master/gaps sinkron bersama, tanpa raw fixture,
+credential, device/tenant identifier atau private evidence paths.
+
 ## 2026-10-18 - SagaPOS HR source/release dan prepared availability
 
 CONFIRMED: source docs1721263af6c98735676a5ac666ae42809025eae1; activeC7ba3d4,

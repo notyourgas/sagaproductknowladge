@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Gap install internal tertutup; USB dan operasional masih OPEN
+
+CONFIRMED: ed07797 membuktikan MSIX unsigned internal 0.1.1.0 terpasang,
+update/launch/identity/hash PASS tanpa biaya/proteksi mutation. Public signed
+distribution tetap OPEN; ini bukan kegagalan signing yang disamarkan.
+USB unit tidak hadir; Owner menyambungkan unit ke PC uji, lalu Release Lead
+menjalankan satu fixed TEST dan meminta konfirmasi kertas/footer/autocut.
+Belum ada TEST aplikasi. Native control/lifecycle/guarded backend/pembayaran
+terverifikasi/laptop baru masih perlu qualification terpisah; auto OFF.
+Tidak mengulang blind TEST atau menyamakan spool dengan kertas tercetak.
+
 ## 2026-10-18 - HR builder resolved; readback, foto dan UAT tetap OPEN
 
 CONFIRMED: izin sandbox gratis sudah menghasilkan qualification/package nyata;

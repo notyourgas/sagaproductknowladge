@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS MSIX internal terpasang tanpa biaya signing
+
+CONFIRMED: ed07797 memberi jalur Windows 11 internal-test-only yang resmi,
+bukan distribusi publik. Install/update/launch/identity PASS dan17scopedPASS;
+proteksi tidak diubah. Fixed TEST aktif revision6 siap, tetapi USB tidak hadir
+dan belum dikirim. Backend/web/produk lain tidak dideploy; paper/auto/laptop
+baru/public signing tetap OPEN. NOT_BUSINESS_READY.
+
 ## 2026-10-18 - SagaPOS HR: guard aktif dan kandidat ketersediaan siap
 
 CONFIRMED: productionC7ba3d4/rollback02b4588; pengaman bukti absensi dan native

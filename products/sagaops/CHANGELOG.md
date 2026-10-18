@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Instalasi MSIX internal Rp0 terbukti
+
+CONFIRMED: source `ed07797a30f1332e7d1aed89e556bf62b55d0b07`, parent
+1086d11, membuktikan paket internal unsigned terpasang/update dan host dua mode
+terbuka.17scopedPASS; identitas/hash installed PASS, proteksi tidak diubah.
+Satu fixed TEST memakai active revision6/renderer/ledger existing, tidak membuat
+penjualan. USB tidak hadir, belum ada TEST aplikasi. Bukan public signed release,
+deploy, laptop baru, payment automation atau BUSINESS_READY; otomatis OFF.
+
 ## 2026-10-18 - Integritas absensi aktif, feedback ketersediaan qualified
 
 CONFIRMED: appC7ba3d4 production-active, rollback02b4588; artifact/recovery/

@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS Windows internal dapat dipasang, belum operasional
+
+CONFIRMED: source ed07797a30f1332e7d1aed89e556bf62b55d0b07. Jalur MSIX
+unsigned uji internal Windows 11 resmi/Rp0 sudah dipasang dan diperbarui menjadi
+0.1.1.0 di PC uji, dua mode host terbuka dan hash/identity installed PASS.
+Ini menggantikan blocker instalasi internal, bukan menutup distribusi publik
+signed. Tidak mengubah proteksi; SAC sudah Off sebelumnya.17scopedPASS.
+TEST sintetis memakai desain aktif revision6/renderer/ledger existing; USB
+tidak hadir sehingga belum dikirim. Cetak otomatis OFF; backend/web unchanged
+oleh lane ini. Paper, laptop baru, lifecycle dan payment automation OPEN.
+Jangan menawarkan paket ini sebagai aplikasi production siap pakai.
+
 ## 2026-10-18 - SagaPOS HR/mobile checkpoint aktif dan prepared
 
 CONFIRMED: current c7ba3d41a8d44599d08327c91a402bf5537d1baf, rollback
