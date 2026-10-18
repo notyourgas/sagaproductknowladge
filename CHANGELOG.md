@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 17.46WIB - Qualification HR/mobile gagal; koreksi belum aktif
+
+CONFIRMED: Linux exact8d6727c09c96922c11c33b766116d9ba4e6badc9 mencapai
+static/type PASS, tetapi scoped12files menghasilkan16tests: **13PASS/3FAIL/
+0skip**. Artifact tidak dibuat, sandbox dihentikan dan production tidak berubah.
+Dua prasyarat fixture dan satu alur pemulihan mobile dikoreksi pada source
+**14507c0a7df3e830a9839e09a8f82cf63aa6aedc**, committed/pushed, syntaxPASS;
+functional successor **NOT_RUN**, IMPLEMENTED_NOT_DEPLOYED / NOT_QUALIFIED.
+Satu exception correction Linux terbatas diajukan; batas lama tidak direset.
+
+ActiveA1e2cfd/rollbackC7ba3d4; monitor37migration/paymentGATEWAY PASS17.37WIB.
+Fresh encrypted backup/full disposable restore dan4offhostchecksums PASS;
+managed offsite UNVERIFIED. Acceptance tetap **14PASS/2FAIL/20NOT_RUN dari36**,
+**0PASS/12NOT_RUN operasional**, NOT_BUSINESS_READY. Owner manual, dua foto
+historis, operator/HP dan acceptance stok/kas/laporan tetap terbuka. Lane printer
+terpisah. Next: qualify correction, package/recovery/guarded deploy bilaPASS,
+lalu penerimaan nyata. Sumber executor/kontrak Andreas;
+[checkpoint source](https://github.com/notyourgas/sagaops/blob/c2d0b1789ddf08eeb9451708eeb5aeb27e91f0ad/docs/HR_MOBILE_FINALIZATION_20261017.md).
+
 ## 2026-10-18 - Sync SagaPOS offline USB TEST alternative
 
 CONFIRMED; Andreas requested another safe route to try the new laptop. Before:
