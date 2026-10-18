@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Cetak manual Kasir masuk antrean native, source-only
+
+CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source
+`b274aef28dd1a883ff578f0a8e90ddd3c2c9a158` menyatukan nota asli manual dan
+otomatis, serta salinan bernomor dengan alasan/konfirmasi petugas, pada consumer
+native existing. Snapshot desain asli termasuk logo dipertahankan; pembayaran,
+scope, RBAC, origin, CSRF dan idempotency diperiksa server. Aplikasi tidak
+fallback ke browser/QZ saat API gagal. Legacy/native berbagi nomor salinan dan
+hasil native tidak pasti menahan jalur lama. Final 57 scoped tests/TypeScript
+PASS; compiled candidate tetap unsigned/Released=false, bukan installer rilis.
+Production716cb91, template dan otomatisasi tetap; tidak ada TEST fisik baru.
+Actual host/install/driver/backend recovery dan laptop baru masih OPEN.
+Distribusi langsung tepercaya Rp0 tanpa Store belum terbukti; tidak ada bypass
+atau pembelian. NOT_BUSINESS_READY. [Scope](https://github.com/notyourgas/sagaops/blob/b274aef28dd1a883ff578f0a8e90ddd3c2c9a158/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - Konfirmasi printer memeriksa status terbaru
 
 CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source

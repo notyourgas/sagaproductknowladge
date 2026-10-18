@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS native manual original dan salinan, source-only
+
+CONFIRMED, source `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158`: sebelum manual
+desktop kembali ke browser/QZ; sesudah structured native queue admission dengan
+single original, frozen numbered copies, current paid/scope/CSRF guards dan
+no-resend. Final57 scoped tests/TypeScript PASS; package tetap unsigned, bukan
+released installer. Delapan product/dossier/changelog/portfolio/master/gaps/sync/
+root docs diperbarui, independent product history dipertahankan. Production
+716cb91 dan layout tetap, no print/ENABLE/Windows/payment mutation. Next executor:
+actual host/lifecycle/provisioning/operator recovery/backend qualification;
+direct trusted distribution Rp0 dan target-laptop acceptance masih OPEN.
+Knowledge main HEAD; IMPLEMENTED_NOT_DEPLOYED/NOT_BUSINESS_READY.
+
 ## 2026-10-18 - SagaView production activation dan routing customer
 
 CONFIRMED, sumber Owner DEC-267, source84/af6/configb914, native terminal0

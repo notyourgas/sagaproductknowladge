@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - Native manual admission dan salinan source-qualified
+
+CONFIRMED: `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158` memberi native job API
+terstruktur tanpa RAW/profile/template dari client. Receipt permission dan Team
+adapter tetap berlaku. Manual dan automatic original berbagi satu identitas;
+legacy original tidak menghasilkan original kedua. Salinan membutuhkan source,
+alasan/review, memakai frozen receipt/template/logo dan nomor lintas transport.
+Queued job dengan konfigurasi berubah menjadi NOT_SENT, bukan hidup kembali;
+UNKNOWN/STARTED ditinjau operator. Paired cashier tidak pindah ke browser saat
+pause; error tidak memicu fallback/retry. API masih di balik closed delivery gate.
+Final57 tests PASS: PGlite concurrency/guards, desktop/mobile UI sintetis,
+legacy regression, RBAC dan compiled Windows candidate; TypeScript/diff PASS.
+Paket 0.1.0-candidate NotSigned/Released=false, SHA256
+`f666f6c1356dd5c7f6276a015d39326b65c62cb21084b864f591317d6c05117e`;
+ini bukan installer operasional atau bukti actual WebView/native callbacks.
+Tidak ada deploy/print/ENABLE/driver/protection/payment mutation. Runtime716cb91
+tetap. Trusted distribution, install/lifecycle/provisioning/operator recovery UI,
+native PostgreSQL/guarded rollback dan physical new-laptop acceptance OPEN.
+Rollback setelah native manual admission harus pause/reconcile; backend lama
+tidak boleh melanjutkan snapshot copy baru. Bukan exactly-once fisik.
+
 ## 2026-10-18 - Freshness konfirmasi printer diperbaiki di source
 
 CONFIRMED: source `331b4554c2009015676f4ff99f4326d1525b46af` menambahkan

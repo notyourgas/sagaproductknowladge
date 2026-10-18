@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Original dan salinan native terhubung pada source Kasir
+
+CONFIRMED, source `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158`: sebelumnya
+manual desktop masih browser/QZ; sesudah structured native admission memakai
+antrean/ledger existing, satu original, salinan frozen bernomor dengan alasan,
+RBAC/CSRF/idempotency dan no-resend. 57 scoped tests/TypeScript PASS, tanpa
+physical TEST baru, deploy atau ENABLE. Candidate unsigned/nonoperasional;
+actual host/install/backend/driver/laptop baru belum qualified. Production716cb91,
+template/menu/harga dan produk lain tetap. NOT_BUSINESS_READY.
+
 ## 2026-10-18 - Refresh sebelum konfirmasi TEST dan aktivasi
 
 CONFIRMED, source `331b4554c2009015676f4ff99f4326d1525b46af`: sebelumnya

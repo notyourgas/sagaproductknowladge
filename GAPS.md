@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - Native manual source gap ditutup, release belum terbukti
+
+CONFIRMED: source `b274aef28dd1a883ff578f0a8e90ddd3c2c9a158`, final57 scoped
+tests/TypeScript PASS, menutup native manual original/copy routing pada source;
+ini bukan deployed/native host/physical acceptance. Tidak ada cetak baru/ENABLE.
+Actual install/lifecycle/driver preparation/operator recovery UI, PostgreSQL dan
+guarded production rollback masih perlu executor. Publisher/direct distribution
+Rp0 tanpa Store belum terbukti; jangan mengubah lisensi, membeli layanan,
+menghapus download metadata atau menekan Run anyway. Official signing guidance
+menjelaskan unsigned dapat diblokir dan signature pun tidak menjamin bebas
+warning; bukan klaim semua Win32 wajib signed. Paket tetap release-disabled.
+Paper existing tetap diterima terpisah; target laptop baru belum dikualifikasi.
+
 ## 2026-10-18 - SagaView activation CLOSED; human UAT tetap OPEN
 
 CONFIRMED: Owner DEC-267 menutup gate exact84/af6, native terminal0 dan M3

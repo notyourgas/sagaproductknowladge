@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-18 - SagaPOS native manual/copy source milestone
+
+CONFIRMED / PARTIALLY_ACCEPTED: source
+`b274aef28dd1a883ff578f0a8e90ddd3c2c9a158` pushed; final57 scoped tests,
+TypeScript/diff PASS. Delapan scoped docs memisahkan native source route dan
+unsigned candidate dari released install/actual host/physical test. Production
+716cb91 tetap; no print/ENABLE/Windows mutation. Independent SagaBook/SagaView
+knowledge history dipertahankan. Knowledge main HEAD, NOT_BUSINESS_READY.
+
 ## 2026-10-18 - SagaView akses/admin aktif terverifikasi
 
 CONFIRMED / accepted untuk fakta software PRODUCTION_ACTIVATED84/af6,
