@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-18 - iWare USB discovery source correction
+
+CONFIRMED / PARTIALLY_ACCEPTED: source
+`cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` pushed;20helper mocks,
+targeted8PASS/1StoreSKIP, actual read-only hardware/catalog/RAW queue PASS.
+Product/dossier/changelogs/master/gaps/portfolio/sync memisahkan preflight,
+physical TEST dan desktop release. Production/Windows tetap, no print/enable.
+Knowledge main HEAD terpisah; signed delivery, Owner TEST dan laptop baru OPEN.
+[Detail](https://github.com/notyourgas/sagaops/blob/cf4a0c22a9bea95f0f8dc6794363a53b49d78a58/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - SagaPOS Windows desktop source milestone
 
 CONFIRMED / PARTIALLY_ACCEPTED: source `5a0722117ff043bf38ffad905f123f2cf945af43`

@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-18 - SagaPOS iWare preflight bukan bukti kertas
+
+CONFIRMED: source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` memperbaiki
+HardwareID-versus-instance-path false negative.20helper mocks dan8targeted tests
+PASS/1StoreSKIP; hardware, Microsoft catalog, dan RAW queue PC executor lolos
+read-only. Jangan menyebut printer offline hanya dari asumsi path lama. Belum
+ada physical TEST/enable/deployment dari milestone ini; login Owner diperlukan.
+Unsigned desktop candidate tetap nonoperasional; signed delivery/laptop baru
+OPEN. [Batas bukti](https://github.com/notyourgas/sagaops/blob/cf4a0c22a9bea95f0f8dc6794363a53b49d78a58/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - SagaPOS desktop Windows: kandidat belum siap dipasang
 
 CONFIRMED: Andreas memilih Kiosk/Kasir dengan printer bawaan dan cloud existing,

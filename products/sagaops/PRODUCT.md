@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-18 - Deteksi iWare diperbaiki, preflight PC executor PASS
+
+CONFIRMED / LOCAL_VALIDATED / NOT_DEPLOYED: source
+`cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` memisahkan HardwareID model dari
+nama instance Windows, tetap mewajibkan USB parent/port/binding dan driver valid.
+Sebelum unit sehat bisa ditolak; sesudah PowerShell dan compiled native inspector
+mengenali unit aktual. Helper20mock cases PASS; targeted8PASS/1StoreSKIP.
+Read-only hardware/catalog/RAW queue PASS, bukan paper atau aplikasi terpasang.
+Tidak ada driver/queue/config/proteksi/production yang diubah atau TEST dikirim.
+TEST existing menunggu login Owner; signed desktop delivery dan laptop baru OPEN.
+[Batas bukti](https://github.com/notyourgas/sagaops/blob/cf4a0c22a9bea95f0f8dc6794363a53b49d78a58/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - Kandidat aplikasi Kiosk/Kasir Windows, belum installer operasional
 
 CONFIRMED / IMPLEMENTED_CANDIDATE / LOCAL_VALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY:

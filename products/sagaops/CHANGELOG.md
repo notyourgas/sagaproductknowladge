@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-18 - Perbaikan false-negative USB iWare
+
+CONFIRMED, source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58`: HardwareID model
+dan instance path dipisahkan tanpa melonggarkan parent/port/queue/signature.
+Helper20mock/targeted8PASS1SKIP serta actual read-only RAW preflight PASS.
+Tidak ada TEST/enable/deploy atau Windows mutation. Login Owner dan distribusi
+desktop tepercaya masih OPEN; bukan penerimaan laptop baru atau BUSINESS_READY.
+[Scope](https://github.com/notyourgas/sagaops/blob/cf4a0c22a9bea95f0f8dc6794363a53b49d78a58/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - Kandidat Kiosk/Kasir Windows dengan printer terintegrasi
 
 CONFIRMED, sumber Andreas dan commit `5a0722117ff043bf38ffad905f123f2cf945af43`.

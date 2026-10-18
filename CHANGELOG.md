@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-18 - SagaPOS USB discovery correction, no physical print
+
+CONFIRMED, source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` dan actual
+hardware inspection: sebelum healthy unit ditolak karena instance path, sesudah
+HardwareID/parent/port diverifikasi dengan benar.20helper cases/8targetedPASS
+1StoreSKIP; read-only native preflight PASS, bukan native UI/paper/installer.
+Delapan dokumen diperbarui; production, pricing, template dan produk lain tetap.
+No mutation/print/enable. Next: Owner login untuk satu TEST existing, serta
+direct desktop delivery qualification terpisah. Knowledge main HEAD.
+[Provenance](https://github.com/notyourgas/sagaops/blob/cf4a0c22a9bea95f0f8dc6794363a53b49d78a58/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - SagaPOS Windows desktop candidate, source-only
 
 CONFIRMED, sumber Andreas dan source `5a0722117ff043bf38ffad905f123f2cf945af43`:

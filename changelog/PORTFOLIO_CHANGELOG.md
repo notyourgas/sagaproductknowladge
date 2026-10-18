@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-18 - SagaPOS iWare hardware preflight corrected
+
+CONFIRMED: `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` memisahkan model ID
+dan instance name; actual device/catalog/RAW preflight PASS.20helper mocks,
+8targetedPASS/1StoreSKIP, tanpa physical TEST/deploy/Windows mutation. Layout,
+pricing dan produk lain tetap; login Owner dan direct signed delivery masih
+OPEN. Bukan penerimaan desktop/laptop baru atau BUSINESS_READY.
+[Detail](https://github.com/notyourgas/sagaops/blob/cf4a0c22a9bea95f0f8dc6794363a53b49d78a58/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - SagaPOS Kiosk/Kasir desktop candidate
 
 CONFIRMED, source `5a0722117ff043bf38ffad905f123f2cf945af43`: satu host Windows

@@ -1,5 +1,18 @@
 # SagaOPS Dossier
 
+## 2026-10-18 - HardwareID bukan nama instance Windows
+
+CONFIRMED: source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` memperbaiki
+false-negative pada unit aktual. Deteksi membaca model HardwareID secara exact,
+memeriksa parent USB yang aktif dan port aktual; config syntax tidak lagi
+mengasumsikan nama model instance sama dengan HardwareID. Per-send binding
+dan publisher/driver guards tetap. PowerShell20mock cases dan targeted8PASS/
+1StoreSKIP; actual read-only native inspection menemukan satu antrean RAW siap
+dari dua antrean. Tidak membuktikan kertas/native UI/instalasi/commissioning.
+Deployment/layout/driver/config/proteksi tidak diubah; Owner login untuk TEST
+masih diperlukan. Signed delivery, native manual-copy/backend dan laptop baru
+tetap OPEN. [Detail](https://github.com/notyourgas/sagaops/blob/cf4a0c22a9bea95f0f8dc6794363a53b49d78a58/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - Desktop terintegrasi: kandidat, bukan deployment
 
 CONFIRMED: `5a0722117ff043bf38ffad905f123f2cf945af43` memakai ulang UI cloud,

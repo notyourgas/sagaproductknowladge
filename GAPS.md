@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-18 - False-negative USB ditutup; Owner TEST masih OPEN
+
+CONFIRMED: source `cf4a0c22a9bea95f0f8dc6794363a53b49d78a58` dan read-only
+hardware preflight menutup discovery defect pada PC executor setelah USB hadir.
+Yang tersisa bukan lagi meminta USB dipasang: sesi Owner telah berakhir dan
+user diminta login sendiri sekali. Jangan kirim TEST tanpa sesi/permintaan
+yang valid atau menganggap print lama sebagai penerimaan desktop baru.
+Direct signing/installer/native UI/manual-copy/backend dan actual laptop tetap
+OPEN; no paid/protection bypass. [Scope](https://github.com/notyourgas/sagaops/blob/cf4a0c22a9bea95f0f8dc6794363a53b49d78a58/docs/WINDOWS_DESKTOP_APP_20261018.md).
+
 ## 2026-10-18 - Desktop printer: direct trust dan physical acceptance OPEN
 
 CONFIRMED: kandidat `5a0722117ff043bf38ffad905f123f2cf945af43` compiled,
