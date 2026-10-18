@@ -1,5 +1,33 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Kandidat Windows 0.3.0: satu aplikasi, dua mode
+
+CONFIRMED: source **66eba8ac1bfe4e35250ab3368a0cddbbf35539bc** menyatukan
+Kiosk dan Kasir dalam satu pintu aplikasi Windows dan satu mesin printer.
+Perpindahan ke petugas memerlukan autentikasi baru; pesanan tersimpan untuk
+bantuan tunai/QRIS manual dapat diteruskan tanpa mengulang pembayaran. Mode
+tidak membuka/menutup shift. Pengeluaran laci, koreksi, closing dan serah terima
+kini terhubung ke ledger durable dengan guard Owner existing tetap berlaku.
+Layout nota, tarif, dan provider pembayaran tidak diubah.
+
+Kandidat backend **474add78a6875ef773fec5ebd05d643fb93d1392** kemudian
+mengintegrasikan release HR/mobile aktif **14507c0** tanpa mengubah source
+native paket. Regresi integrasi terfokus 61 PASS/0 FAIL/0 SKIP; syntax modul
+overlap, TypeScript dan diff PASS. Integrasi source bukan deployment.
+
+Validasi lokal: 144 PASS/0 FAIL/1 SKIP dari 145 tes; Nginx Linux aktual belum
+diuji. Regresi handover QRIS manual terpisah 1 PASS; static 1164 modul,
+TypeScript, YAML dan diff PASS. Paket MSIX/ZIP **0.3.0.0** nyata sudah dibuat
+dari source bersih dan checksum diperiksa; tetap **unsigned internal-only**,
+bukan penerbit Windows terverifikasi atau distribusi publik siap pakai.
+
+Status printer lane: IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED untuk versi baru;
+TEST fisik baru belum dikirim, otomatisasi OFF, NOT_BUSINESS_READY. Tidak ada
+perubahan production dari milestone ini; release HR/mobile terbaru di bawah
+tetap dipertahankan, termasuk GATEWAY. Sebelum promotion backend, periksa ulang
+current production dan loloskan Linux/PostgreSQL/Nginx, recovery, instalasi
+laptop sasaran, commissioning fisik, serta UAT pembayaran/shift yang sah.
+
 ## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
 
 CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah

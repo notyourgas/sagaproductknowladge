@@ -1,5 +1,26 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - Snapshot Windows operational candidate 0.3.0
+
+| Field | Nilai |
+|---|---|
+| Waktu pembaruan terakhir | 2026-10-19 WIB |
+| Branch aktif | main |
+| Commit SHA terbaru | main HEAD; SHA final dilaporkan setelah push |
+| Informasi terakhir disinkronkan | CONFIRMED native/paket66eba8ac1bfe4e35250ab3368a0cddbbf35539bc dan backend kandidat474add78a6875ef773fec5ebd05d643fb93d1392; satu aplikasi dua mode, kas durable dan integrasi HR terbaru; unsigned internal0.3.0.0 |
+| Status sinkronisasi | `UP TO DATE` untuk milestone source/paket setelah validator/push/readback; bukan kesiapan operasional |
+| Konflik | Baseline printer a1e2cfd bukan canonical current setelah HR/mobile14507c0; kandidat474add78 sudah mengintegrasikan release tersebut, fresh-current tetap wajib sebelum promotion |
+| Error | Tidak ada error sinkronisasi yang diketahui; Nginx Linux aktual masih SKIP, bukan PASS |
+
+Bukti lokal: 144 PASS/0 FAIL/1 SKIP dari 145 tes; QRIS manual terpisah
+1 PASS; static 1164 modul/type/YAML/diff PASS. Integrasi backend 61 tes PASS
+tanpa skip, syntax/type/diff PASS; native paket tidak berubah. Paket dibuat dari source bersih,
+integritas diperiksa, bukan penerbit publik terverifikasi. IMPLEMENTED_NOT_DEPLOYED /
+NOT_INSTALLED, TEST baru belum dikirim, auto OFF, NOT_BUSINESS_READY; production
+tidak diubah oleh milestone ini. Linux/resource approval, fresh-current gate,
+recovery, instalasi target, commissioning fisik dan UAT operasional masih OPEN.
+Pemulihan offline lama dan upgrade pairing dipertahankan sebagai gap.
+
 ## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
 
 CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah

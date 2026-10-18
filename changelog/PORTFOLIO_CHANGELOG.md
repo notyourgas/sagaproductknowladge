@@ -1,5 +1,26 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS Windows operational candidate 0.3.0
+
+CONFIRMED; sumber GOAL Andreas dan commit
+`66eba8ac1bfe4e35250ab3368a0cddbbf35539bc`. Satu aplikasi Kiosk/Kasir,
+mesin printer bersama, perpindahan petugas terlindungi dan siklus kas durable
+kini tersedia pada source. Layout nota dan kebijakan pembayaran existing tetap.
+Lokal 144 PASS/0 FAIL/1 SKIP dari 145 tes, QRIS manual terpisah 1 PASS,
+static/type/YAML/diff PASS. Paket internal 0.3.0.0 dibuat/checksum diperiksa,
+tetap unsigned privat, bukan verified publisher.
+
+Backend kandidat474add78a6875ef773fec5ebd05d643fb93d1392 sudah mengintegrasikan
+HR/mobile production14507c0; 61 tes integrasi PASS tanpa skip, syntax/type/diff
+PASS. Native Windows tidak berubah dan paket tetap provenance66eba8ac.
+
+IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED; TEST fisik baru belum dikirim,
+auto OFF, NOT_BUSINESS_READY. Production/produk lain tidak berubah oleh lane
+ini; HR/mobile terbaru tetap dipertahankan. Next: fresh-current gate,
+qualification Linux/recovery sesuai izin Rp0, instalasi/commissioning laptop
+dan UAT operasional sah. Pemulihan offline lama/upgrade pairing masih OPEN.
+Dokumen SagaOPS, master, GAPS, DECISIONS, root changelog dan sync diperbarui.
+
 ## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
 
 CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah

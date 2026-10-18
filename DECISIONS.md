@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-270 - SagaPOS Windows satu aplikasi dua mode operasional
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-19 |
+| Topik | Kiosk, Kasir dan siklus shift dalam satu aplikasi |
+| Keputusan | Andreas meminta satu aplikasi Windows dua mode, satu mesin printer, layout existing, alur buka shift sampai closing/serah terima, dan eksekusi mandiri dalam scope GOAL. |
+| Alasan | Mempermudah pekerjaan petugas dan pemakaian Kiosk tanpa memasang aplikasi printer berlangganan terpisah. |
+| Alternatif yang dipertimbangkan | Dua aplikasi operasional terpisah atau dialog print browser sebagai jalur utama tidak dipilih. |
+| Dampak | Native/paket66eba8ac0.3.0.0 dan backend kandidat474add78 yang mempertahankan HR terbaru tersedia; akses petugas/RBAC, ledger, pembayaran terverifikasi dan commissioning tetap wajib. Biaya tambahan Rp0, proteksi Windows tetap, tanpa transaksi production palsu. |
+| Pemberi keputusan | Andreas melalui GOAL satu aplikasi dua mode. |
+| Status | CONFIRMED sebagai arah produk/izin scope; bukan persetujuan biaya, pelonggaran Owner, verified publisher, physical acceptance atau BUSINESS_READY. |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
+
 ## DEC-269 - Exception physical UAT exact SagaView photo selection
 
 | Field | Isi |

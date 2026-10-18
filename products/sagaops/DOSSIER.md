@@ -1,5 +1,54 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Kandidat operasional Windows 0.3.0
+
+CONFIRMED; sumber Andreas melalui GOAL operasional dan commit
+**66eba8ac1bfe4e35250ab3368a0cddbbf35539bc**, committed/pushed. Sebelumnya
+dua pintasan Windows belum membentuk satu siklus petugas/customer. Kini satu
+aplikasi menawarkan Kiosk/Kasir, satu worker/ledger printer dan pengaturan yang
+sama. Akses customer terikat perangkat yang disetujui; akses petugas tetap
+terpisah dan memerlukan autentikasi baru. Ini bukan OS kiosk lockdown.
+
+Perpindahan mode tidak menutup shift atau menyetujui pembayaran. Handover hanya
+untuk pesanan bantuan tunai/QRIS manual yang sudah tersimpan dan diverifikasi
+ulang server; cart, mutasi berjalan dan hasil tidak pasti tetap terlindungi.
+Pembayaran terverifikasi memicu antrean native RAW existing; pending/histori
+tidak dicetak otomatis, hasil fisik tidak pasti tidak otomatis dikirim ulang.
+Layout aktif, logo, spacing, footer, feed dan autocut tidak diubah.
+
+Pengeluaran laci dan reversal tercatat atomik dalam ledger ESB; sumber dana
+eksternal tidak mengurangi laci. Closing memeriksa pending tender dan kesesuaian
+ledger, mempertahankan persetujuan Owner existing serta memisahkan settlement
+bank dari kas fisik. Serah terima memeriksa shift terakhir durable, bukan cache
+perangkat. Ketidakcocokan histori memerlukan review, bukan backfill otomatis.
+
+Integrasi backend selanjutnya committed/pushed sebagai
+**474add78a6875ef773fec5ebd05d643fb93d1392**, merge exact native **66eba8ac**
+dan production HR/mobile **14507c0a7df3e830a9839e09a8f82cf63aa6aedc**.
+Regresi integrasi 61 PASS/0 FAIL/0 SKIP; syntax tiga modul overlap,
+TypeScript/diff PASS. Source native Windows tidak berubah, sehingga provenance
+paket tetap **66eba8ac**. Ini kandidat backend, bukan promotion production.
+
+Bukti lokal: suite 145 tes menghasilkan 144 PASS/0 FAIL/1 SKIP; skip adalah
+Nginx Linux aktual, bukan acceptance. Regresi Chromium QRIS manual terpisah
+1 PASS; static 1164 modul, TypeScript, YAML dan diff PASS. MSIX internal
+0.3.0.0 berisi 14 file, dibuat dari source bersih. SHA256 MSIX
+`30a7b3d890c258564977911d3e797c84f3d5ef6f69bb62a8b72ff7588d1328d6`;
+ZIP internal 329595 byte, SHA256
+`d1400de75561820274e40c53cd59ad80e28ac39569c72e909e276c71aca5a939`.
+Checksum membuktikan integritas file, bukan identitas penerbit tepercaya.
+
+IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED; paket unsigned uji privat, tanpa
+menonaktifkan proteksi Windows. Belum ada TEST fisik versi baru atau aktivasi
+otomatis. Printer berada pada laptop sasaran lain; bukti kertas lama tidak
+dipakai ulang. Linux builder gratis memerlukan persetujuan resource yang masih
+tertunda; belum dijalankan. Pemulihan setelah offline lama dan commissioning
+ulang perangkat yang sudah dipasangkan pada versi lama masih perlu diselesaikan.
+NOT_BUSINESS_READY. Release HR/mobile production terbaru tetap kanonik; baseline
+printer yang pernah diperiksa bukan izin menimpa release lebih baru. Next:
+periksa ulang current production, qualification Linux/recovery, guarded deployment,
+instalasi target, satu TEST dan penerimaan kertas, lalu UAT operasional sah.
+
 ## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
 
 CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah

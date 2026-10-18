@@ -1,5 +1,27 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Windows satu aplikasi dan siklus kas durable
+
+- CONFIRMED; Andreas meminta satu aplikasi dua mode hingga operasional.
+- Source `66eba8ac1bfe4e35250ab3368a0cddbbf35539bc` menambah perpindahan
+  Kiosk/Kasir terlindungi, handover pending tersimpan, serta pengeluaran,
+  closing dan serah terima durable. Template nota/RBAC/provider dipertahankan.
+- Sebelumnya alur terpisah dan posting expense ESB diblokir; sekarang source
+  terintegrasi, bukan klaim sudah aktif. Lokal 144 PASS/0 FAIL/1 SKIP dari 145;
+  manual-QRIS handover terpisah 1 PASS; static/type/YAML/diff PASS.
+- MSIX/ZIP 0.3.0.0 dibangun dari source bersih dan checksum diperiksa; unsigned
+  uji internal privat, bukan verified publisher. Detail integritas di dossier.
+- Backend `474add78a6875ef773fec5ebd05d643fb93d1392` mengintegrasikan
+  production HR/mobile14507c0; 61 tes integrasi PASS tanpa skip, syntax/type/
+  diff PASS. Native paket tetap source66eba8ac, tanpa perubahan Windows.
+- IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED; TEST baru NOT_SENT, auto OFF,
+  NOT_BUSINESS_READY. Milestone ini tidak mengubah production atau release HR.
+- Next: periksa ulang production terbaru, qualification Linux/recovery sesuai
+  izin gratis, guarded release, instalasi/commissioning laptop dan UAT sah.
+  Pemulihan offline lama dan upgrade pairing tetap OPEN.
+- Dokumen: PRODUCT, DOSSIER, CHANGELOG produk, master, GAPS, DECISIONS,
+  portfolio, root CHANGELOG dan SYNC_STATUS diperbarui terpisah dari source.
+
 ## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
 
 CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah

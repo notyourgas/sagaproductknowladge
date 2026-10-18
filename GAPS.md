@@ -1,5 +1,36 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - SagaPOS Windows 0.3.0 masih membutuhkan qualification
+
+CONFIRMED: source `66eba8ac1bfe4e35250ab3368a0cddbbf35539bc` dan paket
+internal 0.3.0.0 tersedia; integrasi dua mode dan kas durable lolos tes lokal
+terbatas. Bukan deployment, installation, commissioning atau BUSINESS_READY.
+
+- Executor: qualification Linux/PostgreSQL/Nginx/recovery belum dilakukan;
+  builder gratis tersedia bersyarat, persetujuan resource tambahan masih
+  tertunda. Tidak memakai builder production atau mengaktifkan biaya.
+- Release Lead: source backend474add78a6875ef773fec5ebd05d643fb93d1392 sudah
+  mengintegrasikan HR/mobile14507c0 dengan 61 regresi PASS tanpa skip. Native
+  paket tetap66eba8ac; production belum berubah. Tetap periksa fresh-current
+  sebelum promotion; baseline lama bukan pengganti release yang lebih baru.
+  Provider GATEWAY tetap dipertahankan.
+- Executor dan petugas: selesaikan pemulihan sesi setelah offline lama serta
+  commissioning ulang upgrade yang menjaga ledger; jangan menghapus histori
+  atau mengulang pembayaran untuk memulihkan akses.
+- Andreas/operator: instalasi laptop sasaran dan satu TEST versi baru harus
+  mengonfirmasi layout, panjang, footer dan autocut sebelum auto diaktifkan.
+  Printer berada pada laptop lain; belum ada TEST baru yang dikirim.
+- Executor dan operator: buktikan siklus shift/pengeluaran/closing/handover
+  serta pembayaran sah. Histori kas yang tidak cocok memerlukan review,
+  bukan backfill/approval variance otomatis. Tidak membuat penjualan palsu.
+- Public distribution: paket tetap unsigned internal-only; checksum bukan
+  bukti trusted publisher. Windows protection tidak dinonaktifkan.
+
+Next konkret: periksa ulang current release dan selesaikan qualification yang
+diizinkan, lalu guarded release dan commissioning target. Rincian diteruskan
+di [SagaOPS Dossier](products/sagaops/DOSSIER.md); tidak ada gate dicatat PASS
+hanya karena paket tersedia.
+
 ## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
 
 CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah

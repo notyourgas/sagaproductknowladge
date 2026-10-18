@@ -1,5 +1,29 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaPOS Windows satu aplikasi, dua mode; belum aktif
+
+CONFIRMED: source `66eba8ac1bfe4e35250ab3368a0cddbbf35539bc` dan paket
+internal Windows 0.3.0.0 menyatukan Kiosk/Kasir, printer native bersama,
+perpindahan petugas terlindungi, handover pesanan tersimpan, serta ledger
+pengeluaran/closing/serah terima. Desain nota, harga, RBAC Owner dan provider
+existing dipertahankan. Lokal 144 PASS/0 FAIL/1 SKIP dari 145 tes; regresi
+QRIS manual terpisah 1 PASS; static/type/YAML/diff PASS. Nginx Linux aktual
+dan PostgreSQL target masih gate tersendiri, bukan diloloskan oleh fixture.
+
+Backend kandidat **474add78a6875ef773fec5ebd05d643fb93d1392** sudah
+mengintegrasikan production HR/mobile14507c0; 61 tes integrasi PASS tanpa skip,
+syntax/type/diff PASS. Source native paket tetap66eba8ac; tidak ada deployment
+atau perubahan production dari integrasi ini.
+
+Paket nyata/checksum terverifikasi, tetapi unsigned uji internal privat;
+bukan public trusted publisher. IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED,
+TEST fisik versi baru belum dilakukan, auto OFF, NOT_BUSINESS_READY.
+Production tidak diubah oleh lane ini; release HR/mobile terbaru dan GATEWAY
+tetap dipertahankan. Qualification gratis/resource approval, fresh-current gate,
+recovery, instalasi laptop, commissioning dan UAT nyata masih OPEN.
+Jangan menjanjikan plug-and-play operasional atau memindahkan bukti kertas lama
+ke versi/perangkat baru. [Detail SagaPOS](products/sagaops/DOSSIER.md).
+
 ## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
 
 CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah

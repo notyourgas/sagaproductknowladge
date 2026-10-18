@@ -1,5 +1,27 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): Windows dua mode dan kas operasional
+
+CONFIRMED; informasi Andreas melalui GOAL dan source
+`66eba8ac1bfe4e35250ab3368a0cddbbf35539bc`. Before: pintasan mode terpisah
+dan expense ESB belum terhubung. After: satu aplikasi dua mode dengan akses
+petugas terlindungi, handover pesanan tersimpan dan posting kas durable;
+layout, harga, persetujuan Owner dan provider existing tetap dipertahankan.
+Paket/checksum 0.3.0.0 tersedia, unsigned uji privat; lokal 144 PASS/0 FAIL/
+1 SKIP dari 145, manual-QRIS terpisah 1 PASS, static/type/YAML/diff PASS.
+
+Backend kandidat474add78a6875ef773fec5ebd05d643fb93d1392 mengintegrasikan
+production HR/mobile14507c0; 61 tes integrasi PASS/0 FAIL/0 SKIP dan syntax/
+type/diff PASS. Native paket tetap66eba8ac; bukan deployment baru.
+
+IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED, TEST baru belum dikirim, auto OFF,
+NOT_BUSINESS_READY. Production tidak diubah oleh milestone printer; update HR
+independen dipertahankan. Next: fresh-current gate, qualification
+Linux/recovery sesuai izin Rp0, commissioning laptop dan UAT sah. Retained gap:
+pemulihan offline lama dan upgrade pairing. File terdampak: PRODUCT/DOSSIER/
+CHANGELOG SagaOPS, master, GAPS, DECISIONS, portfolio, root dan SYNC_STATUS.
+Provenance knowledge: main HEAD; SHA final dilaporkan setelah push.
+
 ## 2026-10-19 - HR/mobile14507c0 aktif; penerimaan tetap parsial
 
 CONFIRMED: **14507c0a7df3e830a9839e09a8f82cf63aa6aedc** sudah
