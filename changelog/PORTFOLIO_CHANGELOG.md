@@ -1,5 +1,18 @@
 # Portfolio Changelog
 
+## 2026-10-18 13:44 WIB - Pemilihan foto SagaView aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: Studioba2d980,
+release20261018062409-ba2d980, aktif dengan dedicated backend/Owneraf6c139.
+Undo/redo,bulk confirmation,atomic swap,compare eksplisit,tray dan recovery
+termasuk source aktif. Native381unit/235canonical browser,artifact470,Linux
+build,SSR/CSP dan compiled selection/recovery desktop/tablet PASS. Previous/
+rollback84e62a6 terverifikasi; Card aktif/live-import nonaktif,original lokal,
+estimate-only dan Nginxb914 tetap. CI Windows1NTFS timeout tetap FAIL; Linux235
+PASS. Exception Owner exactba2/af6 hanya physical evidence; human/printer UAT,
+pilot dan BUSINESS_READY tetap OPEN. DB/produk lain tidak dimutasi.
+[Exact source/checksum/gates/runtime/rollback dan batas](../docs/releases/sagaview-photo-selection-activation-20261018.md).
+
 ## 2026-10-18 - SagaPOS operator printer recovery, source milestone
 
 CONFIRMED: source `72c93f357727c2768ed74f3b5f8e825259c37150` menghubungkan

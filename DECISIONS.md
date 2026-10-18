@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-269 - Exception physical UAT exact SagaView photo selection
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-18 |
+| Topik | Gate physical evidence ba2d980/af6c139 |
+| Keputusan | Andreas sebagai Owner memberi exception physical UAT untuk exact Studio ba2d980df3844a65afd7522cfbc16eda6af1136b dan backend af6c139f4063258300e94f3f23a93a684c4de51b serta menerima risiko perangkat/printer belum diuji. |
+| Alasan | Melanjutkan deployment software melalui runner existing dengan seluruh gate teknis wajib; exception84/af6 lama tidak mencakup source baru. |
+| Alternatif | Receipt physical UAT exact-pair; tidak membuat acceptance atau menggunakan exception lama. |
+| Dampak | Canonical validator v2 PASS, native terminal0 dan runtime source/artifact/rollback/browser PASS. Hanya missing canonical physical evidence dikecualikan. |
+| Pemberi keputusan | Andreas / Owner melalui jawaban langsung pada exact-pair question. |
+| Status | CONFIRMED / PHYSICAL_UAT_EVIDENCE_WAIVED_BY_OWNER / UAT_EVIDENCE_NOT_VERIFIED. Bukan human/printer UAT, pilot atau BUSINESS_READY, dan bukan izin transaksi/provider/pesan nyata/DNS/credential/data correction. |
+| Dokumen terkait | [Release](docs/releases/sagaview-photo-selection-activation-20261018.md),[SagaView Product](products/sagaview/PRODUCT.md) |
+
 ## DEC-268 - Tambahkan arsip dan hapus karyawan SagaPOS
 
 | Field | Isi |
