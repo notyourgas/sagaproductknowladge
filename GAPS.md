@@ -14,6 +14,9 @@ bersifat historis; bukan semuanya masih belum dikerjakan, juga bukan UAT PASS.
   Periksa ulang fresh-current sebelum promotion; Linux/PostgreSQL/Nginx/recovery
   dan guarded promotion masih belum selesai. Nginx Linux aktual SKIP,
   CI NOT_RUN; persetujuan resource builder pending.
+- Installer:0.3.1 berhasil dipasang dan membuka pengaturan pada PC executor;
+  StatusOk/SignatureNone,10 hash cocok, installed release verifier exit0,
+  WebView2 berjalan dan proteksi tidak diubah. Bukan bukti laptop sasaran.
 - Andreas/operator: pasang0.3.1 pada laptop sasaran, pilih printer aktual,
   commissioning satu TEST dan konfirmasi kertas/layout/footer/autocut. Printer
   belum pada PC executor; TEST baru NOT_SENT dan otomatisasi OFF.
@@ -27,7 +30,11 @@ bersifat historis; bukan semuanya masih belum dikerjakan, juga bukan UAT PASS.
   belum dilakukan. Tes sintetis bukan penerimaan operasional atau exactly-once
   fisik. Paket unsigned privat bukan trusted publisher; proteksi tetap aktif.
 
-Status IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / NOT_BUSINESS_READY.
+Status IMPLEMENTED_NOT_DEPLOYED / TARGET_NOT_INSTALLED / NOT_BUSINESS_READY.
+Alternatif builder Vercel2CPU/4GB tidak dipakai: akun Hobby aktif dibatasi
+[penggunaan personal nonkomersial](https://vercel.com/docs/plans/hobby).
+Tidak ada sandbox atau biaya baru. Persetujuan perluasan GitHub8GB tetap
+belum dijawab; Release Lead tidak boleh mengasumsikan izin atau kuota gratis.
 Production roster36d8024/rollback14507c0 dan GATEWAY tetap, tidak dimutasi lane ini.
 
 ## 2026-10-19 - Roster4staf aktif; gate operasional tetap terbuka

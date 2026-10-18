@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): bedakan installed lokal dan target pilot
+
+- CONFIRMED; sumber laporan Windows resmi dan installed runtime0.3.1.0,
+  source6b9ecf2ad9b6db7baa22f512558a2127138263d6; backend e0aa0ea5 tidak berubah.
+- Before: belum terpasang. After: PC executor installed/started,10 hash dan
+  installed verifier PASS, WebView2 hidup; proteksi unchanged dan tetap unsigned.
+  Laptop lain belum dipasang, TEST_NOT_SENT/auto OFF, NOT_BUSINESS_READY.
+- Vercel Hobby read-only screening tidak dilanjutkan karena batas personal
+  nonkomersial. GitHub8GB pending; Linux qualification/deploy/UAT tetap OPEN.
+  Production dan produk lain tidak diubah; tidak ada biaya/sandbox baru.
+- File: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master/GAPS/SYNC, portfolio/root.
+  Knowledge main HEAD sesudah validator/push/readback; tidak ada keputusan baru.
+
 ## 2026-10-19 - knowledge(sagaops): Windows 0.3.1 internal qualification
 
 - CONFIRMED; sumber GOAL Andreas dan commit6b9ecf2ad9b6db7baa22f512558a2127138263d6

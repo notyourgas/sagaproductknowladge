@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Windows 0.3.1 terpasang lokal, target tetap belum diterima
+
+- CONFIRMED; paket immutable source6b9ecf2ad9b6db7baa22f512558a2127138263d6
+  dan checksum existing, backend e0aa0ea59f86662d354c327011220f1e97f38530.
+- PC executor0.2.2.0 ->0.3.1.0 via jalur Windows resmi; StatusOk/SignatureNone,
+  10 hash payload cocok, installed verifier exit0, pengaturan dan WebView2 hidup.
+  Proteksi unchanged; layout/paket tidak diubah, tidak mengirim TEST/auto-enable.
+- Laptop sasaran, Linux qualification, deploy, commissioning dan UAT tetap OPEN.
+  Vercel Hobby disaring tetapi tidak dipakai karena batas personal nonkomersial;
+  izin GitHub8GB pending. Tidak ada biaya, sandbox atau production mutation.
+- PRODUCT/DOSSIER/master/GAPS/SYNC/portfolio/root disesuaikan agar instalasi
+  executor tidak disamakan dengan kesiapan laptop baru atau BUSINESS_READY.
+
 ## 2026-10-19 - Windows 0.3.1 recovery dan review selisih
 
 - CONFIRMED; source6b9ecf2ad9b6db7baa22f512558a2127138263d6, committed/pushed,

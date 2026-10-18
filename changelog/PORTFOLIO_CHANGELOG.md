@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS Windows 0.3.1 installed pada PC executor saja
+
+- CONFIRMED; native source6b9ecf2a/paket immutable dan backend e0aa0ea5 tetap.
+  Update Windows resmi0.2.2.0 ->0.3.1.0 berhasil;10 hash/installed verifier PASS,
+  pengaturan dan WebView2 berjalan. Tetap unsigned internal, proteksi unchanged.
+- Tidak ada TEST fisik, aktivasi otomatis, deploy atau instalasi laptop sasaran.
+  Linux/resource gate dan UAT tetap OPEN; bukan BUSINESS_READY. Alternatif
+  Vercel Hobby tidak dipakai karena batas penggunaan personal nonkomersial.
+
 ## 2026-10-19 - SagaPOS Windows 0.3.1 siap qualification, belum operasional
 
 - CONFIRMED source6b9ecf2ad9b6db7baa22f512558a2127138263d6; satu aplikasi dua

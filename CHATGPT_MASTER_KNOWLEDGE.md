@@ -13,7 +13,11 @@ perubahan layout nota/tarif atau pelonggaran proteksi Windows.
 Native24 PASS; cash/review/browser98 PASS; server/receipt46 PASS+1 Nginx Linux
 SKIP; static1177/37migrasi/type PASS. Paket MSIX/ZIP0.3.1.0 nyata dan checksum
 terverifikasi, tetap unsigned uji privat; bukan public trusted distribution.
-CI NOT_RUN, IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / TEST_NOT_SENT,
+Update lokal:0.3.1.0 sudah terpasang/terbuka pada PC executor, StatusOk dan tetap
+unsigned;10 payload hash cocok, installed release verifier exit0 dan WebView2
+berjalan. Proteksi tidak diubah, tidak mengirim TEST. Laptop sasaran belum
+dipasang; startup lokal bukan commissioning atau bukti cetak.
+CI NOT_RUN, IMPLEMENTED_NOT_DEPLOYED / TARGET_NOT_INSTALLED / TEST_NOT_SENT,
 auto OFF, UAT nyata NOT_RUN, NOT_BUSINESS_READY. Akses lama atau rekonsiliasi
 yang tidak memenuhi syarat tetap memerlukan review, bukan bypass atau resend.
 Paket0.3.0 di bawah adalah histori. Production kanonik terbaru **36d8024**/

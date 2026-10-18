@@ -26,7 +26,12 @@ untuk native PostgreSQL roster/mobile yang belum tersedia pada host Windows.
 Static1181 modul/37migrasi PASS. Native tidak berubah, provenance paket tetap
 6b9ecf2a. Ini integrasi source, bukan deployment atau full acceptance.
 
-IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED; TEST fisik versi baru NOT_SENT,
+Update lokal berikutnya: paket0.3.1.0 terpasang pada PC executor melalui jalur
+Windows resmi, StatusOk/SignatureNone;10 hash payload cocok, verifikasi release
+exit0, aplikasi responsif membuka pengaturan printer dengan WebView2. Proteksi
+tidak diubah. Bukan bukti laptop sasaran terpasang atau kertas tercetak.
+
+IMPLEMENTED_NOT_DEPLOYED / TARGET_NOT_INSTALLED; TEST fisik versi baru NOT_SENT,
 auto OFF, UAT nyata belum dijalankan, NOT_BUSINESS_READY. Production kanonik
 tetap roster **36d8024**, rollback14507c0, GATEWAY existing; bukan diturunkan ke
 baseline printer lama. Pemeriksaan ulang fresh-current, qualification Linux/recovery,

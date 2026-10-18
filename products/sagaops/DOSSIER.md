@@ -44,12 +44,22 @@ PASS. Source Windows tidak berubah terhadap6b9ecf2a, sehingga paket0.3.1.0
 tetap terikat commit native tersebut. Evidence scopes terpisah, bukan agregat
 full PASS atau pengganti Linux/Nginx/native PostgreSQL yang masih terbuka.
 
-IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / TEST_NOT_SENT / auto OFF /
+Update lokal: update0.2.2.0 ke0.3.1.0 pada PC executor berhasil memakai helper
+paket dan Add-AppxPackage resmi. StatusOk/SignatureNone,10 hash installed cocok,
+installed release verifier exit0, jendela pengaturan responsif dan WebView2 hidup.
+Laporan pemasangan menyatakan proteksi tidak berubah, TEST tidak dikirim dan
+otomatisasi OFF. Ini startup pada PC executor, bukan UI authenticated/UAT atau
+instalasi laptop lain. Paket/source/checksum tidak dibangun ulang.
+
+IMPLEMENTED_NOT_DEPLOYED / TARGET_NOT_INSTALLED / TEST_NOT_SENT / auto OFF /
 NOT_BUSINESS_READY. Private package tersedia, tidak dipublikasi umum. Production
 terbaru tetap **36d8024d2244b97a5e0951ddb023ba4c256a8f4d**, rollback14507c0,
 GATEWAY existing. Sebelum promotion, periksa ulang current dan loloskan
 qualification Linux/PostgreSQL/Nginx/recovery. Resource
 builder tambahan belum diotorisasi; tidak memakai production sebagai builder.
+Alternatif Vercel2CPU/4GB disaring read-only, tidak dipakai: akun yang tersedia
+Hobby aktif, sedangkan [aturan Hobby](https://vercel.com/docs/plans/hobby)
+membatasi penggunaan personal nonkomersial. Tidak ada sandbox/billing baru.
 Printer ada di laptop sasaran lain; instalasi/commissioning versi ini dan UAT
 operasional sah belum dilakukan. Pemeriksa kedua production belum terkonfirmasi.
 Histori0.3.0 berikut tetap dipertahankan; gap recovery/upgrade-nya kini ditangani

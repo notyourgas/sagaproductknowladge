@@ -14,7 +14,10 @@ mengintegrasikan exact active36d8024. Post-integration17 PASS/0 FAIL/2 native
 PostgreSQL SKIP dan static1181/37migrasi PASS; native source/paket tetap6b9ecf2a
 tanpa perubahan. Scopes bukti tidak dijumlahkan sebagai full acceptance.
 
-IMPLEMENTED_NOT_DEPLOYED / NOT_INSTALLED / TEST_NOT_SENT / auto OFF /
+Update lokal:0.3.1.0 installed pada PC executor, StatusOk/SignatureNone;
+10 hash cocok, installed verifier exit0 dan pengaturan/WebView2 terbuka.
+Laporan proteksi unchanged dan TEST_NOT_SENT; laptop lain belum dipasang.
+IMPLEMENTED_NOT_DEPLOYED / TARGET_NOT_INSTALLED / TEST_NOT_SENT / auto OFF /
 NOT_BUSINESS_READY. Production kanonik terbaru36d8024/rollback14507c0 dan
 GATEWAY tetap; history14507 serta native0.3.0 tidak dihapus atau disamakan dengan
 release aktif. Fresh-current recheck, qualification Linux/recovery,
