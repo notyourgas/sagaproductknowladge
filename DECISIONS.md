@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-275 - SagaPOS harga normal tanpa promo trial dan batas canary
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-19 |
+| Klasifikasi | CONFIRMED |
+| Topik | Harga normal dan pembayaran operasional SagaPOS |
+| Keputusan | Hapus TRIAL99 otomatis serta kuota, nominal, window, satu item dan pembatas perangkat canary; gunakan harga normal. |
+| Alasan | Andreas secara eksplisit mengonfirmasi harga normal tanpa batas trial/canary. |
+| Alternatif | Mempertahankan diskon99% sambil menghapus kuota tidak dipilih. |
+| Dampak | POSedce5a6c874e7d83676537dbb40ab4a99ec608ff, Platform690f56a170e6d9c17435026bc289ff9bfa372f68; source deployed, mode PRODUCTION dan limits=null, quote terautentikasi PASS. Paket/trial SaaS serta metode manual/cash tetap. |
+| Pemberi keputusan | Andreas. |
+| Status | CONFIRMED; menggantikan batas promo/canary DEC-146/DEC-209/DEC-210. QRIS nyata mode baru dan settlement UAT NOT_RUN; NOT_BUSINESS_READY. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Platform](products/saga-platform/PRODUCT.md), [Gaps](GAPS.md). |
+
 ## DEC-274 - SagaPOS rotasi wajib dua hari dan revisi Owner bulan berjalan
 
 | Field | Isi |
@@ -850,6 +865,10 @@ Delivery: V7 strategy, current acceptance ledger and checkpoint committed/pushed
 
 ## DEC-210 — Batas niat uji QRIS publik Kiosk dan Order Meja
 
+DEPRECATED untuk harga promo dan batas canary SagaPOS: digantikan DEC-275
+pada19Oktober2026. Keputusan dan bukti berikut dipertahankan sebagai histori;
+ini bukan aktivasi payment flow lain.
+
 - Tanggal: 2026-09-24. Status: `CONFIRMED` untuk batas Owner; pemberi keputusan Andreas.
 - Topik: uji publik diskon QRIS 99% terpisah dari canary privat.
 - Keputusan: target uji publik Kiosk/Order Meja, maksimum Rp100.000 **dibayar pelanggan** per transaksi, 100 transaksi, berakhir 1 Oktober 2026 pukul 23.59 WIB. Aktivasi hanya setelah kontrak gateway publik, batas subsidi, quota atomik, source dan release/payment gates lulus. Keputusan ini tidak memperpanjang canary privat atau mengizinkan transaksi otomatis.
@@ -858,6 +877,10 @@ Delivery: V7 strategy, current acceptance ledger and checkpoint committed/pushed
 - Terkait: [SagaOPS](products/sagaops/PRODUCT.md), [dossier](products/sagaops/DOSSIER.md), [gaps](GAPS.md), dan [status sinkronisasi](SYNC_STATUS.md).
 
 ## DEC-209 — Pertahankan gateway canary existing saat menyiapkan e-menu publik
+
+DEPRECATED untuk harga promo dan batas canary SagaPOS: digantikan DEC-275
+pada19Oktober2026. Keputusan dan bukti berikut dipertahankan sebagai histori;
+ini bukan aktivasi payment flow lain.
 
 - Tanggal: 2026-09-23. Status: `CONFIRMED`; pemberi keputusan Andreas.
 - Topik: rekonsiliasi kandidat e-menu read-only dengan mode pembayaran SagaPOS production yang sudah aktif.
@@ -1619,6 +1642,10 @@ keputusan pengganti.
 | Dokumen terkait | `products/saga-platform/PRODUCT.md`, `products/saga-platform/DOSSIER.md`, `products/saga-platform/CHANGELOG.md` |
 
 ## DEC-146 - Saga POS memakai production-direct controlled TRIAL99 canary
+
+DEPRECATED untuk harga promo dan batas canary SagaPOS: digantikan DEC-275
+pada19Oktober2026. Keputusan dan bukti berikut dipertahankan sebagai histori;
+ini bukan aktivasi payment flow lain.
 
 | Field | Nilai |
 |---|---|

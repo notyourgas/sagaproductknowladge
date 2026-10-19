@@ -1,5 +1,34 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
+
+CONFIRMED oleh Andreas: SagaPOS memakai harga normal tanpa TRIAL99 otomatis,
+kuota lima transaksi, batas Rp220 per pembayaran/Rp1.100 total, satu item,
+perangkat privat atau window canary. POS **edce5a6c874e7d83676537dbb40ab4a99ec608ff**
+deployed/sehat, rollback **5e4e982f6b5de854bac9d5e67b114d9e20410dbe**.
+Gateway pusat **690f56a170e6d9c17435026bc289ff9bfa372f68**, release
+**20261019110853-690f56a**, mode PRODUCTION aktif dan limits=null.
+
+Quote kasir Owner PASS: dua unit subtotal/total Rp26.000, diskon Rp0; signed
+readiness dan readiness aplikasi PASS. Tidak membuat pesanan, pembayaran atau
+transaksi provider untuk verifikasi. Harga katalog, promosi bisnis biasa,
+paket/trial SaaS dan metode manual/cash tetap. HMAC/RBAC, validasi nominal,
+idempotensi, pembatas laju dan kill switch tetap berlaku. QRIS nyata mode baru,
+settlement dan full operating-cycle UAT masih OPEN; NOT_BUSINESS_READY.
+
+Linux final375PASS/0FAIL/4SKIP. Seluruh langkah wajib pengujian, paket, cleanup
+dan unggah artifact SUCCESS; agregat runCANCELLED pada penutupan batas delapan
+menit. Penerimaan berdasarkan hasil terikat source dan checksum artifact,
+bukan klaim agregat CI hijau. Backup/restore terenkripsi, salinan PC terenkripsi,
+rehearsal candidate-current-candidate, guarded activation dan monitor PASS.
+Managed offsite POS tetap UNVERIFIED, berbeda dari salinan PC terverifikasi.
+Schema/core37, callback pusat, nota/printer dan PIN staf dipertahankan.
+
+Konfigurasi/control sebelumnya dicadangkan. Rollback ke source lama memerlukan
+pemulihan konfigurasi canary kompatibel terlebih dahulu; rollback live setelah
+mode normal aktif tidak dijalankan. Penerimaan kertas tunai sebelumnya bukan
+UAT QRIS normal baru.
+
 ## 2026-10-19 - PIN staf untuk penerimaan tunai langsung di Kiosk
 
 CONFIRMED5e4e982f6b5de854bac9d5e67b114d9e20410dbe deployed/healthy,

@@ -1,5 +1,23 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
+
+CONFIRMED source **690f56a170e6d9c17435026bc289ff9bfa372f68** aktif pada release
+**20261019110853-690f56a**, menggantikan **20261018111126-3a7ecda**.
+Pembayaran operasional SagaOPS memakai mode PRODUCTION tanpa window, kuota dan
+batas nominal canary; readiness mengembalikan limits=null. Harga normal dan
+penghapusan TRIAL99 otomatis ditangani source POS **edce5a6c874e7d83676537dbb40ab4a99ec608ff**.
+Autentikasi produk, signature callback, validasi nominal, idempotensi, pembatas
+laju dan kill switch tetap. Ini tidak mengaktifkan payment flow produk lain.
+
+Native runner exit0; manifest, backup terenkripsi/offsite/restore terikat
+kandidat, service dan boundary PASS. Schema, dependency dan aset tidak berubah.
+CI MySQL Platform serta test-and-visual PASS; agregat gagal hanya SagaAI
+terisolasi di luar runtime yang dirilis. Signed readiness dan quote kasir normal
+PASS tanpa transaksi provider nyata. Penutupan recovery lokal COYABAG sebelumnya
+tetap mengikuti entri historisnya, bukan dinyatakan selesai oleh milestone ini.
+Real-payment/settlement UAT mode baru OPEN; NOT_BUSINESS_READY.
+
 ## 2026-10-18 - Kontrak COYABAG aktif; penutupan recovery lokal OPEN
 
 `CONFIRMED / PRODUCTION_DEPLOYED / RUNTIME_VERIFIED / RECOVERY_CLEANUP_OPEN`.

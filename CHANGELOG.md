@@ -1,5 +1,27 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
+
+CONFIRMED oleh Andreas: SagaPOS memakai harga normal tanpa TRIAL99 otomatis,
+kuota lima transaksi, batas Rp220 per pembayaran/Rp1.100 total, satu item,
+perangkat privat atau window canary. POS **edce5a6c874e7d83676537dbb40ab4a99ec608ff**
+deployed/sehat, rollback **5e4e982f6b5de854bac9d5e67b114d9e20410dbe**.
+Gateway pusat **690f56a170e6d9c17435026bc289ff9bfa372f68**, release
+**20261019110853-690f56a**, mode PRODUCTION aktif dan limits=null.
+
+Quote kasir Owner PASS: dua unit subtotal/total Rp26.000, diskon Rp0; signed
+readiness dan readiness aplikasi PASS. Tidak membuat pesanan, pembayaran atau
+transaksi provider untuk verifikasi. Harga katalog, promosi bisnis biasa,
+paket/trial SaaS dan metode manual/cash tetap. HMAC/RBAC, validasi nominal,
+idempotensi, pembatas laju dan kill switch tetap berlaku. QRIS nyata mode baru,
+settlement dan full operating-cycle UAT masih OPEN; NOT_BUSINESS_READY.
+
+Klasifikasi CONFIRMED; pemberi keputusan Andreas,19Oktober2026. Production
+berubah pada POS dan adapter operasional Platform. Dua belas dokumen produk,
+dossier, changelog, keputusan/gap dan master/sync diselaraskan. Provenance
+knowledge mengikuti main HEAD setelah commit. Tidak memuat credential, PII,
+raw callback atau path evidence privat.
+
 ## 2026-10-19 - SagaOPS PIN Kiosk deployed, personal setup masih diperlukan
 
 CONFIRMED5e4e982 deployed/healthy, rollback4c8522b. Delapan dokumen mencatat
