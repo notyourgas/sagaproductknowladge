@@ -1,5 +1,21 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Roster Oktober terbit, retest absensi tetap terbuka
+
+- CONFIRMED; Andreas meminta publish dan retest. Active36d8024/rollback14507c0
+  tetap; source ledger/panduan35da154e619469ceebe5b38e97ac6e104dba26a8 pushed.
+- Before107draft/4staf/0konflik/v13→afterreview14/published15 pada10.06.49WIB.
+  Semua107links unik/locked, susunan1+2/2+2 dan histori tetap. Tidak regenerate.
+  Own Owner logout, relational mismatch0/audit1 dan monitorPASS.
+- RetestATT03 tetapFAIL:dua foto historis hilang;8660entries dan45verified
+  backup manifests0match,0skip/timeout; tanpa restore atau foto pengganti.
+  Native/browser gagal historis sudah dikoreksiPASS; cap/attempt tidak direset.
+-17PASS/1FAIL/18NOT_RUN dari36teknis;0/12operasional. O02Owner publish substep
+  PASS, konfirmasi karyawan/perangkatNOT_RUN; NOT_BUSINESS_READY. GATEWAY tetap,
+  tidak redeploy/builder/payout baru; lane printer terpisah dipertahankan.
+- PRODUCT/DOSSIER/master/GAPS/SYNC/product-portfolio-root changelogs disinkronkan;
+  alasan: operator perlu membedakan draft historis dengan roster yang kini terbit.
+
 ## 2026-10-19 - Linux pertama mengungkap bug klien tes, bukan promotion
 
 - CONFIRMED; source correction1a7ccf58583dc2bd6fc12988222bc525efac3c33 pushed.

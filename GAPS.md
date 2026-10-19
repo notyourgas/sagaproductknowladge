@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Publikasi roster selesai; konfirmasi staf dan foto tetap terbuka
+
+CONFIRMED: gap publish Oktober ditutup atas instruksi Andreas:107jadwal/4staf,
+0konflik/v15/107unique links/locked,10.06.49WIB. Active36d8024/rollback14507c0,
+sourceledger35da154e619469ceebe5b38e97ac6e104dba26a8,monitorPASS; tidak redeploy.
+O02 hanya substepOwnerPASS; karyawan belum mengonfirmasi akun/jadwal/perangkat.
+ATT03 retest tetapFAIL:2foto asli tidak ada pada root aktif/8660entries maupun
+45verified backup manifests. Semua856arsip/external backups belum diverifikasi;
+tidak ada restore atau bukti pengganti. ReleaseLead/Owner menelusuri sumber sah;
+operator menjalankan UAT saat tersedia. Native/browser failures sudah corrected
+PASS; bukan alasan reset cap/gate spent.17PASS/1FAIL/18NOT_RUN dari36teknis,
+0/12operasional, NOT_BUSINESS_READY; lane Windows/printer tetap terpisah.
+
 ## 2026-10-19 - Gate Linux koreksi terbuka, izin runner awal sudah dipakai
 
 CONFIRMED izin awal2CPU/8GB/15min/Rp0 sudah diberikan dan satu job selesai6m20s.

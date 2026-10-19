@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS roster Oktober dipublikasikan
+
+CONFIRMED, Andreas meminta publish/retest. Owner meninjau107draft/4staf dan
+memublikasikan107jadwal pada10.06.49WIB,version13→14→15,0konflik,107links unik/
+locked dan histori tetap. Aturan1+2Senin–Kamis/2+2Jumat–Minggu,preferred/rest11/
+max48/6hari tetap. Active36d8024/rollback14507c0 tidak berubah; ledger/runbook
+35da154e619469ceebe5b38e97ac6e104dba26a8 pushed, monitorPASS. Tidak redeploy.
+ATT03 retest tetapFAIL meski45verified backup manifests ditelusuri; dua foto
+asli belum ditemukan.17/1/18 dari36teknis,0/12operasional; konfirmasi staf/
+perangkatNOT_RUN, NOT_BUSINESS_READY. PRODUCT/DOSSIER/product/root changelogs,
+master/GAPS/SYNC diperbarui; checkpoint draft lama dan lane printer dipertahankan.
+
 ## 2026-10-19 - SagaPOS Linux gagal pada probe Host, koreksi belum promoted
 
 - CONFIRMED source1a7ccf58583dc2bd6fc12988222bc525efac3c33 test/workflow only.

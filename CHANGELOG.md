@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): publish roster Oktober dan catat retest
+
+CONFIRMED; sumber instruksi Andreas/publikasi Owner/active runtime. Before
+107draft→after107published untuk4staf pada10.06.49WIB,0konflik/107unique links/
+locked/version15/grid-history tetap. Active36d8024/rollback14507c0 tidak berubah,
+source ledger/panduan35da154e619469ceebe5b38e97ac6e104dba26a8 pushed; monitorPASS.
+ATT03retestFAIL setelah0match pada45verified backup manifests; foto asli belum
+dipulihkan.17/1/18 dari36teknis,0/12operasional; Ownerpublish substepPASS,
+UATstaf/perangkatNOT_RUN, NOT_BUSINESS_READY. Tidak redeploy/builder/payout baru.
+Alasan: menyamakan fakta draft historis, publikasi actual dan residual acceptance.
+Delapan file:products/sagaops/PRODUCT.md,DOSSIER.md,CHANGELOG.md;portfolio
+changelog,master,GAPS,SYNC_STATUS dan rootCHANGELOG. Knowledge main HEAD;
+lane printer/histori/cap tetap. Next:konfirmasi staf, sumber asli foto, UAToperasi.
+
 ## 2026-10-19 - knowledge(sagaops): retained Linux failure dan koreksi Host
 
 - CONFIRMED dari log job Linux terminal dan source1a7ccf58583dc2bd6fc12988222bc525efac3c33.

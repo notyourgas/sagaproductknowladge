@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaPOS: roster Oktober terbit, belum UAT staf
+
+CONFIRMED: Owner mempublikasikan roster Oktober atas instruksi Andreas pada
+10.06.49WIB:107penempatan/4staf/0konflik,version13→review14→published15;
+107links unik/locked, grid dan histori tetap. StaffingSenin–Kamis1pagi/2sore,
+Jumat–Minggu2/2;rolling preferred/rest11/max48/6hari tetap. Active36d8024d2244b97a5e0951ddb023ba4c256a8f4d/
+rollback14507c0; tidak redeploy. Sourceledger35da154e619469ceebe5b38e97ac6e104dba26a8
+pushed, relational107/4/mismatch0/audit1 dan monitorPASS; GATEWAY existing tetap.
+RetestATT03 tetapFAIL:dua foto absensi historis hilang, termasuk0match pada
+45verified backup manifests; tidak memalsukan/restore.17PASS/1FAIL/18NOT_RUN
+dari36teknis(47,22%),0/12operasional. O02Owner publishPASS, staf/perangkat belum
+mengonfirmasi; NOT_BUSINESS_READY. Draft sebelumnya adalah histori, Windows/
+printer kandidat terpisah; jangan mengklaim wholeSagaPOS selesai.
+
 ## 2026-10-19 - SagaPOS Linux qualification belum lolos
 
 CONFIRMED kandidat **1a7ccf58583dc2bd6fc12988222bc525efac3c33** memperbaiki

@@ -1,5 +1,28 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Jadwal Oktober empat staf sudah dipublikasikan
+
+CONFIRMED: atas permintaan Andreas, Owner memvalidasi ulang draft Oktober lalu
+meninjau dan mempublikasikannya pada **10.06.49WIB**. **107 penempatan untuk
+4 staf**, tanpa konflik sebelum terbit; versi13→review14→published15. Semua
+107 tautan jadwal unik dan terkunci; susunan serta histori terbit sebelumnya
+tetap. Senin–Kamis1pagi/2sore, Jumat–Minggu2/2, rolling preferred dengan
+rest11jam/max48jam per minggu/6hari kerja tetap wajib. Tidak generate ulang.
+
+Active **36d8024d2244b97a5e0951ddb023ba4c256a8f4d**, rollback14507c0 tetap;
+tidak ada redeploy/builder baru. Source ledger/panduan dipush pada
+**35da154e619469ceebe5b38e97ac6e104dba26a8**. Relational readback107jadwal/
+4staf/mismatch0/publication audit1 dan monitorPASS. GATEWAY existing tetap.
+
+Retest gap absensiATT03 tetapFAIL:dua foto historis tidak ditemukan pada
+penyimpanan aktif dan45manifest cadangan terverifikasi yang dipilih. Bukan
+pemeriksaan semua cadangan atau pemulihan foto. Tes generator/native/browser
+yang sempat gagal sudahPASS setelah koreksi; bukti accepted direuse, cap tetap.
+**17PASS/1FAIL/18NOT_RUN dari36teknis(47,22%);0PASS/12NOT_RUN operasional**.
+O02 bagian Owner publishPASS, konfirmasi karyawan/perangkatNOT_RUN; belum
+BUSINESS_READY. Bagian draft02.00 di bawah adalah checkpoint historis.
+Lane Windows/printer dan qualification kandidatnya tetap terpisah.
+
 ## 2026-10-19 - Qualification Linux awal gagal, koreksi siap diuji
 
 CONFIRMED: kandidat terbaru **1a7ccf58583dc2bd6fc12988222bc525efac3c33**,

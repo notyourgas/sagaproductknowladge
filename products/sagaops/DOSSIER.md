@@ -1,5 +1,38 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Publikasi roster Oktober dan retest gap absensi
+
+CONFIRMED; instruksi Andreas “Ok publishkan sekalian ulang tes yang gagal”.
+Before:107draft assignment untuk4profil aktif,version13,0conflicts. After:
+fresh Owner HTTP mengecek source36d8024,2template07–15/15–23,cohort4,semua31hari,
+staffing1+2Senin–Kamis/2+2Jumat–Minggu dan preferred/rest11/max48/6hari; kemudian
+review14→published15 pada19Oktober10.06.49WIB.107published schedule links unik,
+semua locked, grid/histori terbit sebelumnya tidak berubah. Tidak regenerate,
+replay atau membuat absensi/transaksi/payout untuk pengujian. Periodenya
+Oktober existing; bukan membuat roster periode berikutnya.
+
+Read-only relational check107jadwal/4staf/mismatch identitas-outlet-tanggal-jam0,
+publication audit1. Bukti ini memakai pembacaan privileged, bukan login
+karyawan atau UAT perangkat. Sesi Owner sendiri logoutPASS. Actual publish
+substep O02PASS, tetapi penerimaan jadwal pada akun/perangkat staf tetapNOT_RUN.
+Active36d8024d2244b97a5e0951ddb023ba4c256a8f4d/rollback14507c0 tetap,
+GATEWAY/schema/config existing tetap, monitorPASS; tidak redeploy/builder baru.
+Source ledger/runbook commit35da154e619469ceebe5b38e97ac6e104dba26a8 pushed.
+
+ATT03 retest tetapFAIL:2LINKED/uploaded dalamretention tanpa file/checksum,
+8660bounded entries0match;45checksum-verified receiving/HRbackup manifests,
+541480encrypted bytes,0match/0skip/0timeout.856encrypted archives diinventarisasi,
+bukan semuanya diperiksa; external backupsUNVERIFIED. Manifest dibaca sebagai
+stream tanpa mengekstrak foto/menulis decrypt/restore production. Recovery
+memerlukan byte asli atau cadangan sah; jangan membuat pengganti bukti.
+
+Native generator initialFAIL dan mobile selector timeout tetap historis;
+native correctionPASS24,04s/total52,44of120s serta51Linux/19localPASS accepted
+direuse pada inputs yang sama. Cap/attempt/gate Kasir-history-fullworkday tidak
+direset. Readiness tetap17PASS/1FAIL/18NOT_RUN dari36teknis,0/12operasional;
+O02overallNOT_RUN dan NOT_BUSINESS_READY. Next:konfirmasi staf, sumber sah foto,
+serta UAT hari operasional/periode berikutnya. Windows/printer tidak digabung.
+
 ## 2026-10-19 - Hasil Linux pertama dan koreksi virtual Host
 
 CONFIRMED source terbaru **1a7ccf58583dc2bd6fc12988222bc525efac3c33**,
