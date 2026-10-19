@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Perbaikan tunai dipromosikan ke production
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 deployed/healthy,
+rollbackff2806bc. Linux327PASS/4SKIP7m21s, qualified package, encrypted restore,
+off-host hashes, recovery/activation/HTTP/monitor PASS. Resep all-unmanaged tidak
+lagi menghalangi konfirmasi tunai; tidak mengarang stok. Kasir live mempertahankan
+percobaan lama; no payment/TEST oleh executor. Template6/v3/printer revision5
+tetap. Printer configured ON tetapi snapshot offline; operator perlu menjalankan
+layanan USB dan mencoba konfirmasi yang sama. Paid-to-paper UAT OPEN.
+
 ## 2026-10-19 - Konfirmasi tunai all-unmanaged diperbaiki di source
 
 CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659. Sebelumnya reservasi

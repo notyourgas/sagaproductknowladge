@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - SagaOPS cash fix deployed dengan nota/printer tetap
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 current,
+rollbackff2806bc; Linux327PASS/4SKIP7m21s, immutable package/recovery/activation/
+HTTP/monitor PASS. Kasir readback mempertahankan konfirmasi yang sama tanpa
+pelunasan atau TEST oleh executor. Template6/v3 dan pairing tetap. Snapshot
+printer offline; operator harus menjalankan layanan Chromebook dan mencoba
+konfirmasi tersimpan sekali. Paid-to-paper/failure UAT OPEN. Delapan dokumen
+diselaraskan dengan status production, tanpa mengklaim BUSINESS_READY atau HR UAT.
+
 ## 2026-10-19 - SagaOPS perbaikan tunai lokal, gate rilis terbuka
 
 CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659, 114 tes lokal/static/type

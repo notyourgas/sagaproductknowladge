@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Gate deploy tunai selesai; konfirmasi fisik terbuka
+
+CONFIRMED4c8522b8962a198d7cfba337327edc3d3ab6c659 deployed, rollbackff2806bc.
+Izin runner tambahan dipakai satu kali,7m21s,327PASS/4SKIP; packaging dan seluruh
+gate recovery/activation/HTTP/monitor PASS. Gate menunggu izin runner sebelumnya
+CLOSED. Cache build lama direlokasi setelah hash salinan cocok; tidak mengubah
+release aktif/rollback/database/backup. Template6/v3 dan konfigurasi printer tetap.
+OPEN: printer snapshot offline. Andreas menjalankan tab layanan pada Chromebook
+USB, lalu mencoba konfirmasi tersimpan sekali dan memeriksa kertas/autocut.
+Tidak membuat pembayaran baru atau reset attempt. Paid-to-paper/failure UAT dan
+penyiapan stok awal nyata oleh Owner tetap tindak lanjut; NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Deploy perbaikan konfirmasi tunai menunggu runner
 
 CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 memperbaiki kegagalan

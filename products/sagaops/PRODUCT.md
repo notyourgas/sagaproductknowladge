@@ -1,5 +1,23 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Perbaikan konfirmasi tunai deployed
+
+CONFIRMED **4c8522b8962a198d7cfba337327edc3d3ab6c659** kini deployed/healthy;
+rollback **ff2806bc6b678671aac2ba57023b175cdde921ee**. Linux327PASS/0FAIL/4SKIP,
+run7m21s dalam izin8menit Rp0. Paket/hash, encrypted restore, off-host checksum,
+pair-bound recovery, guarded activation,12HTTPfile dan3negative boundaries PASS.
+Core37/GATEWAY dan ingress tetap. Kasir production dimuat ulang dan percobaan
+konfirmasi yang sama tetap tersimpan, tanpa pelunasan oleh executor.
+
+Resep yang seluruh bahannya belum memiliki saldo terkelola dapat mengikuti
+UNMANAGED tanpa stok/aset buatan. Guard campuran/shift/tender/replay tetap;
+Owner perlu menyiapkan stok awal nyata untuk pengelolaan persediaan.
+Template6/v3 deep-equal; layout, spacing, feed, autocut dan pairing tetap.
+Printer revision5 enabled/commissioned dipertahankan tetapi snapshot terakhir
+offline. Operator harus menjalankan tab printer-service pada Chromebook USB
+sebelum mencoba konfirmasi pembayaran tersimpan sekali. Pembayaran sah ke kertas
+dan failure UAT OPEN; bukan BUSINESS_READY. HR/produk lain tidak dipromosikan.
+
 ## 2026-10-19 - Perbaikan konfirmasi tunai: source lokal, belum deployed
 
 CONFIRMED source **4c8522b8962a198d7cfba337327edc3d3ab6c659** memperbaiki

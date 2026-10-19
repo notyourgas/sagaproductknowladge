@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Rilis perbaikan tunai aktif, UAT kertas terbuka
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 production-deployed,
+rollbackff2806bc. Linux run39233305780 sukses7m21s:327PASS/4SKIP. Skip terdiri
+dari3Windows dan1independent paired-Platform HR, bukan acceptance baru untuknya.
+Artifact/checksum, full encrypted restore dan salinan off-host, candidate/current/
+candidate rehearsal, activation, HTTP integrity/negative gates dan monitor PASS.
+Ruang staging dipulihkan lewat relokasi input build lama yang salinannya sudah
+diverifikasi, tanpa menyentuh database, backup, release aktif atau rollback.
+
+Kasir live Chrome memakai versi baru dan mempertahankan konfirmasi tertunda.
+Executor tidak mengonfirmasi pembayaran atau mengirim TEST. Template aktif6/v3
+sama persis; printer revision5 enabled/commissioned tetap, snapshot offline dan
+tidak blocked. Operator perlu menjalankan layanan Chromebook, lalu mencoba satu
+konfirmasi yang sama. Paid-to-paper/failure UAT tetap OPEN; NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Penerimaan tunai dan stok belum terkelola
 
 CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659, LOCAL_VALIDATED,
