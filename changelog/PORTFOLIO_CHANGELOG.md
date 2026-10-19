@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaOPS PIN staf Kiosk production-deployed
+
+CONFIRMED5e4e982f6b5de854bac9d5e67b114d9e20410dbe sehat, rollback4c8522b.
+Penerimaan cash dapat dilakukan di Kiosk melalui akun/PIN staf yang wajib
+diganti dari PIN awal, tanpa membuka dashboard. Linux351PASS/0FAIL/4SKIP dan
+recovery/aktivasi/readback PASS; template dan printer tetap. Personal credential
+setup serta UAT PIN/payment/paper OPEN. Tidak merilis ulang produk lain,
+membuat pembayaran/TEST, atau mengklaim BUSINESS_READY.
+
 ## 2026-10-19 - SagaOPS pilot nota otomatis diterima Andreas
 
 CONFIRMED4c8522b8962a198d7cfba337327edc3d3ab6c659: konfirmasi tunai berhasil

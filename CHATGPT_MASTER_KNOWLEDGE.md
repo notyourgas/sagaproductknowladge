@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaOPS Kiosk dapat menerima tunai dengan PIN staf
+
+CONFIRMED5e4e982f6b5de854bac9d5e67b114d9e20410dbe deployed/healthy,
+rollback4c8522b. Tim & Akses menyiapkan PIN awal acak per akun; wajib diganti
+sebelum dipakai. Kiosk mengonfirmasi nominal aktual melalui akun/PIN tanpa sesi
+dashboard, tetap terikat RBAC/outlet/shift dan pesanan aktif. Lima PIN salah
+mengunci15menit; tidak ada default bersama. Native cash/paid receipt engine,
+layout/template6/v3 dan printer revision5 tidak berubah. Linux351PASS/0FAIL/
+4SKIP serta recovery/activation/readback PASS. Operator harus menyiapkan PIN
+pribadi dan memvalidasi pembayaran sah-ke-kertas; UAT fitur baru OPEN.
+Jangan menyamakan bukti fisik versi lama dengan UAT PIN atau BUSINESS_READY.
+
 ## 2026-10-19 - SagaOPS tunai ke nota otomatis pilot lolos fisik
 
 CONFIRMED Andreas: pembayaran lunas dan nota otomatis tercetak dengan layout,

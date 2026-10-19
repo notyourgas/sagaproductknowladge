@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - SagaOPS PIN Kiosk deployed, personal setup masih diperlukan
+
+CONFIRMED5e4e982 deployed/healthy, rollback4c8522b. Delapan dokumen mencatat
+forced PIN rotation, scoped assisted-cash confirmation dan durable lockout;
+Linux351PASS/0FAIL/4SKIP, paket/recovery/aktivasi/readback PASS. Nota/template
+dan printer tetap. Credential/payment/paper UAT baru masih OPEN; tidak ada
+mutasi finansial atau TEST oleh executor. NOT_BUSINESS_READY. Knowledge main
+HEAD setelah commit ini menjadi provenance pembaruan, bukan bukti UAT fisik.
+
 ## 2026-10-19 - SagaOPS acceptance nota otomatis pilot
 
 CONFIRMED Andreas: cash lunas dan nota otomatis dengan layout/jarak/autocut sesuai

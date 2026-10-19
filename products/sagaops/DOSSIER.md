@@ -1,5 +1,28 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - PIN staf untuk penerimaan tunai langsung di Kiosk
+
+CONFIRMED5e4e982f6b5de854bac9d5e67b114d9e20410dbe deployed/healthy,
+rollback4c8522b8962a198d7cfba337327edc3d3ab6c659. Owner provisions PIN awal
+acak per akun berizin cash; berlaku24jam dan wajib diganti. Bantuan Kiosk
+menyediakan pergantian PIN sebelum pesanan. Dialog tunai meminta akun/PIN,
+nominal aktual dan pengakuan uang diterima; server mengikat pembayaran ke
+pesanan aktif sesi Kiosk, dengan live RBAC/outlet/shift dan tender replay.
+Tidak membuat sesi operator. Hash salted scrypt disimpan privat di root state
+Tim, bukan serializer akun/audit; lima PIN salah mengunci outlet15menit secara
+durable. Reset password atau perubahan active/outlet membatalkan PIN sebelumnya.
+
+Core37 tetap; private JSON additive kompatibel rollback. Native PostgreSQL18,
+Nginx dan scoped355tests:351PASS/0FAIL/4SKIP, satu runner6m54s dalam izin8menit
+Rp0. Paket/checksum, encrypted restore/off-host copy, pair-bound recovery,
+guarded activation, endpoint/file/auth checks PASS. Template6/v3 sama persis,
+printer revision5 enabled/commissioned WEBUSB tetap; snapshot terakhir offline.
+Tidak ada commissioning ulang, TEST, penjualan, pelunasan atau credential baru
+oleh executor. Manusia harus menyiapkan/mengganti PIN, memakai akun personal
+berizin dan shift sesuai, menjalankan tab printer Chromebook serta memvalidasi
+cash-to-paper pada pembayaran sah. UAT PIN dan siklus lengkap OPEN,
+NOT_BUSINESS_READY; bukan physical exactly-once.
+
 ## 2026-10-19 - Acceptance fisik pembayaran tunai pilot
 
 CONFIRMED Andreas menerima nota otomatis setelah konfirmasi tunai pada runtime

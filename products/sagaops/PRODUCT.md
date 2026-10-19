@@ -1,5 +1,22 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Konfirmasi tunai Kiosk memakai PIN staf deployed
+
+CONFIRMED source **5e4e982f6b5de854bac9d5e67b114d9e20410dbe** deployed/healthy;
+rollback **4c8522b8962a198d7cfba337327edc3d3ab6c659**. Staf dapat mengonfirmasi
+uang aktual dan kembalian untuk pesanan tunai yang sedang tampil, tanpa masuk
+dashboard atau beralih ke Kasir. Owner menyiapkan PIN awal acak per akun melalui
+Tim & Akses; staf wajib menggantinya sebelum menerima pembayaran. Bukan PIN
+default bersama. Role, outlet, shift, tender dan audit tetap diberlakukan.
+
+Linux351PASS/0FAIL/4SKIP, core37/GATEWAY, paket/restore/rollback/aktivasi dan
+readback PASS. Template6/v3 deep-equal; printer revision5 tetap aktif dan
+commissioned, tanpa perubahan layout/jarak/feed/autocut/pairing. Tab printer
+Chromebook harus berjalan/terjaga. Penyiapan PIN pribadi dan UAT pembayaran sah
+melalui PIN masih OPEN; tidak ada PIN, transaksi atau TEST fisik production
+dibuat executor. Penerimaan kertas versi sebelumnya bukan UAT PIN baru.
+Full operating-cycle/failure UAT OPEN, NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Pilot tunai ke nota otomatis dikonfirmasi fisik
 
 CONFIRMED oleh Andreas: pembayaran lunas dan nota otomatis keluar dengan layout,

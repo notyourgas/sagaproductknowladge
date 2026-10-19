@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Konfirmasi tunai Kiosk via PIN staf dirilis
+
+CONFIRMED5e4e982 deployed/healthy, rollback4c8522b. PIN per akun wajib rotasi
+awal, durable lockout, RBAC/shift/order binding dan audit, tanpa sesi dashboard.
+Linux351PASS/0FAIL/4SKIP; paket/recovery/aktivasi/readback PASS. Nota/template dan
+konfigurasi WebUSB tetap. Penyiapan credential serta pembayaran sah-ke-kertas
+melalui PIN masih tugas operator/UAT OPEN; tidak ada mutasi finansial atau TEST
+oleh executor. NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Konfirmasi fisik nota otomatis pilot
 
 CONFIRMED Andreas: pembayaran lunas, nota otomatis tercetak, jarak dan autocut

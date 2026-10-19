@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - PIN Kiosk deployed; penyiapan manusia dan UAT terbuka
+
+CONFIRMED5e4e982 deployed/healthy dengan PIN per akun, forced initial rotation,
+live cash RBAC/shift dan order-session binding. Source/Linux351PASS/0FAIL/4SKIP,
+paket/recovery/deploy/readback PASS; printer/nota tidak diubah. Tersisa:
+Owner memilih/menyiapkan akun staf berizin, manusia membuat dan mengganti PIN
+pribadi, membuka shift sesuai, menjalankan layanan printer Chromebook dan
+mengonfirmasi hasil pembayaran sah-ke-kertas dari Kiosk. Tidak membuat akun,
+credential, transaksi atau TEST palsu untuk meloloskan gate. Fitur baru belum
+production UAT, broader failure/operating-cycle UAT OPEN, NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Gap konfirmasi tunai ke nota pilot ditutup
 
 CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659: Andreas mengonfirmasi

@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - SagaOPS Kiosk PIN deployed dengan UAT manusia terbuka
+
+CONFIRMED source5e4e982f6b5de854bac9d5e67b114d9e20410dbe production sehat,
+rollback4c8522b. Linux355total351PASS/0FAIL/4SKIP, static1202/core37, paket,
+encrypted restore/off-host checksum, paired recovery/aktivasi/readback PASS.
+PIN awal per akun wajib diganti; tidak ada default bersama atau sesi dashboard
+dari Kiosk. Template6/v3 dan printer revision5 tetap. Tidak memprovision PIN atau
+melakukan pembayaran/TEST production. Operator credential setup dan UAT PIN
+masih OPEN; full operating-cycle/failure UAT OPEN, NOT_BUSINESS_READY.
+Delapan dokumen diselaraskan; provenance knowledge mengikuti main HEAD sesudah
+commit ini. Tidak memasukkan credential/hash, identifier tenant/device atau
+private evidence path.
+
 ## 2026-10-19 - SagaOPS physical cash-to-paper pilot PASS
 
 CONFIRMED Andreas pada source4c8522b8962a198d7cfba337327edc3d3ab6c659:
