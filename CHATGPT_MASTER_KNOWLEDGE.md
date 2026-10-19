@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaOPS WebUSB deployed, TEST fisik baru diterima
+
+CONFIRMED backend73326cf6328726587a69db2f06ed411835e90257 aktif dengan rollback4e9e39b.
+Layanan `https://dashboard.sagapos.site/printer-service` memakai paid outbox/RAW
+existing tanpa installer Chromebook atau Owner terbuka saat operasional. Fresh
+recovery/guarded activation/Nginx dan13HTTP files/5anonymous denials PASS;
+core37/GATEWAY/template6/v3 tidak diganti. Source Linux282PASS/4SKIP tetap,
+tanpa builder baru. TEST staticbe56b9e yang sudah diterima tetap terpisah.
+Andreas mengonfirmasi server TEST baru: nota/layout/jarak/autocut sesuai,
+readback WebUSB SUBMITTED cocok. Physical OPERATOR_ACCEPTED; auto masihOFF,
+aktivasi layanan satu perangkat, pembayaran sah/failure UAT dan reviewed-copy Kiosk
+masih OPEN. Tab layanan tetap terbuka/Chromebook terjaga. Tidak membuat penjualan
+palsu atau menyatakan USB ACK sebagai physical exactly-once; NOT_BUSINESS_READY.
+HR/roster independen tidak berubah oleh rilis ini. Lihat products/sagaops/PRODUCT.md.
+
 ## 2026-10-19 - SagaOPS layanan WebUSB otomatis: qualified, belum deployed
 
 CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 committed/pushed.

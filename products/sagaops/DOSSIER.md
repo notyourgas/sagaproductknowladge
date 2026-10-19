@@ -1,5 +1,36 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - WebUSB server-backed deployed, physical diterima; operasi masih OPEN
+
+CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 sudah menjadi backend
+aktif, retained rollback4e9e39bade2fa5c7aeff832f84a23d6028dbd640. `/printer-service`
+live pada dashboard host. Immutable stage, fresh encrypted full disposable
+restore, candidate/current/candidate isolated boot dan guarded code-only
+activation PASS. Schema37/GATEWAY/lifecycle dan template6/v3 tidak berubah;
+publikasi desain/harga/pembayaran tidak dilakukan. Tidak memakai VPS sebagai builder.
+
+Nginx hanya menambah policy USBself pada dokumen layanan; frozen static TEST
+be56b9e dan host lain dipertahankan.13served files exact-source PASS,5negative
+anonymous boundaries PASS. Production HTML memiliki atribut production existing;
+header proteksi upstream/proxy yang identik dipertahankan. Pemeriksaan Owner,
+template deep equality, monitor/evidence dan browser live PASS; bukan paper UAT.
+Linux run39216726185 tetap282PASS/0FAIL/4SKIP, tanpa run tambahan.
+
+Andreas mengonfirmasi satu TEST server pada Chromebook aktual: nota keluar,
+layout/jarak/autocut sesuai. Readback WebUSB TEST SUBMITTED cocok, otomatis
+masih OFF dan tidak blocked. Physical OPERATOR_ACCEPTED, bukan USB ACK semata.
+Aktivasi layanan satu Chromebook masih menunggu langkah halaman: halaman
+menutup sesi Owner sebelum Mulai layanan. Kiosk/Kasir memakai layanan perangkat,
+bukan Owner terbuka. Tab/Chromebook tidur atau ditutup tidak menjamin cetak.
+Pembayaran sah/failure UAT dan reviewed-copy Kiosk masih OPEN; jangan membuat
+penjualan palsu atau menganggap USB ACK sebagai exactly-once fisik.
+
+Rollback aplikasi tetap perlu expected-current/Owner/lock dan reverse recovery
+sesuai boundary GATEWAY; bukan restore/downgrade DB atau legacy OFF-only runner.
+Tidak ada rollback yang diperlukan saat deploy ini. Paket Windows sebelumnya
+tidak dipasang pada Chromebook. NOT_BUSINESS_READY; HR/roster independen tidak
+digabung atau diaktifkan oleh milestone printer ini.
+
 ## 2026-10-19 - Layanan printer Chromebook: implementasi qualified
 
 CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 menambah consumer

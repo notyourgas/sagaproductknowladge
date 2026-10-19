@@ -1,5 +1,20 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - WebUSB deployed, otomatis tetap menunggu commissioning
+
+CONFIRMED, kelanjutan Andreas setelah unlock Owner. Source73326cf6328726587a69db2f06ed411835e90257
+deployed, rollback4e9e39b; stage/fresh encrypted recovery/guarded activation/Nginx
+PASS,13HTTP files/5negative boundaries PASS. Core37/GATEWAY/template6/v3 tetap.
+Alasan: layanan perangkat harian tanpa sesi Owner terbuka dan tanpa installer
+Windows. Source qualification282PASS/4SKIP dipertahankan, tidak ada CI baru.
+Production berubah hanya pada backend/printer service; tidak membuat penjualan,
+TEST fisik executor atau aktivasi otomatis. Operator memasangkan Chromebook dan
+mengonfirmasi TEST baru: nota/layout/jarak/autocut sesuai; readback WebUSB TEST
+SUBMITTED cocok. Physical OPERATOR_ACCEPTED; auto masihOFF, layanan berjalan/
+legitimate-payment/failure UAT OPEN.
+NOT_BUSINESS_READY. Dokumen produk/dossier/master/gaps/sync dan changelog
+portfolio/root diperbarui; lane HR dan histori kegagalan dipertahankan.
+
 ## 2026-10-19 - WebUSB paid-queue qualified; promotion masih OPEN
 
 CONFIRMED, Andreas meminta melanjutkan setelah TEST Chromebook fisik diterima.

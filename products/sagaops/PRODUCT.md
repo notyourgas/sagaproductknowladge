@@ -1,5 +1,28 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Layanan WebUSB deployed; TEST fisik baru diterima
+
+CONFIRMED: backend **73326cf6328726587a69db2f06ed411835e90257** sudah deployed,
+rollback **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** dipertahankan. Halaman
+`https://dashboard.sagapos.site/printer-service` live. Stage, backup terenkripsi/
+restore terisolasi, exact-pair code-only rehearsal, guarded activation dan
+Nginx/postchecks PASS. Core37/GATEWAY/lifecycle tidak berubah. Template aktif
+revisi6/v3 deep-equal sebelum/sesudah; menu, harga dan pembayaran tidak diganti.
+
+13file HTTP cocok dengan source yang dibekukan,5boundary anonim ditolak,
+USBself hanya pada dokumen layanan/pilot yang dimaksud, dashboard tetap deny.
+Owner efektif dan monitor sesudah deploy PASS. Linux282PASS/0FAIL/4SKIP dari
+run39216726185 tetap berbatas; tidak ada run/builder baru atau proteksi dilemahkan.
+
+Andreas mengonfirmasi TEST layanan baru pada Chromebook: nota keluar, layout/
+jarak dan autocut sesuai. Server cocok: transport WebUSB, TEST SUBMITTED;
+ini konfirmasi operator, bukan inferensi USB ACK. AutoOFF pada readback setelah
+TEST; aktivasi satu layanan/perangkat serta pembayaran sah/failure UAT masih
+OPEN. TEST baru ini terpisah dari staticbe56b9e. Setelah TEST sesuai: konfirmasi
+di halaman, logout Owner, Mulai layanan, lalu Kiosk/Kasir; tab harus tetap
+terbuka dan Chromebook terjaga. Copy Kiosk tetap gap terpisah. Tidak ada penjualan
+palsu atau klaim physical exactly-once; NOT_BUSINESS_READY. Lane HR dipertahankan.
+
 ## 2026-10-19 - Antrean WebUSB otomatis qualified, belum deployed
 
 CONFIRMED: source **73326cf6328726587a69db2f06ed411835e90257** committed/pushed
