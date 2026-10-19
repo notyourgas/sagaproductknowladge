@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - SagaOPS login lintas-mode sourceff2806b deployed
+
+CONFIRMED sourceff2806bc6b678671aac2ba57023b175cdde921ee current,
+rollback73326cf. Linux287PASS/4SKIP; backup/restore/recovery/activation/ingress,
+12HTTPfiles/8negative gates dan monitor PASS. Owner server UAT dan live Chrome
+Kasir tanpa login ulang PASS; Kiosk mencabut staff dan memakai izin pelanggan.
+Template6/v3 dan printer retained, no sales/payment/print mutation. Semua tab
+lama perlu reload. Printer enabled/commissioned tetap, snapshot offline;
+Chromebook-mode acceptance dan legitimate-payment/failure UAT OPEN,
+NOT_BUSINESS_READY. Histori dan lane HR dipertahankan. Validator/push/readback
+milestone ini diikat ke main HEAD berikutnya.
+
 ## 2026-10-19 - WebUSB source73326cf deployed; physical diterima, satu pilot autoON
 
 CONFIRMED current73326cf6328726587a69db2f06ed411835e90257/rollback4e9e39b.

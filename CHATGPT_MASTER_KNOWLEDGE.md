@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaOPS satu login dashboard, batas Kiosk tetap terpisah
+
+CONFIRMED backendff2806bc6b678671aac2ba57023b175cdde921ee deployed,
+rollback73326cf. Owner login sekali di dashboard.sagapos.site: Kasir pada host
+sama langsung terbuka; Kiosk memakai handoff satu-kali yang mencabut sesi
+petugas, tanpa berbagi Owner cookie. Kembali ke petugas tetap login. Muat ulang
+semua tab lama untuk guard baru dan selesaikan pending/formulir sebelum beralih.
+Linux287PASS/4SKIP, recovery/deploy/HTTP/Owner UAT/live Chrome Kasir PASS.
+Template6/v3/layout/antrean/USB/autocut tetap; tidak membuat penjualan atau TEST.
+Printer tetap enabled/commissioned, snapshot offline; layanan tab harus berjalan.
+Chromebook-mode acceptance, real-payment-to-paper dan failure UAT OPEN,
+NOT_BUSINESS_READY. HR/produk lain tidak dipromosikan. Lihat products/sagaops/PRODUCT.md.
+
 ## 2026-10-19 - SagaOPS WebUSB deployed, TEST fisik lolos dan pilot otomatis aktif
 
 CONFIRMED backend73326cf6328726587a69db2f06ed411835e90257 aktif dengan rollback4e9e39b.

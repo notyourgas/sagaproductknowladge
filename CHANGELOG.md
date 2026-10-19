@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - SagaOPS sesi dashboard untuk Kasir dan Kiosk terkunci
+
+CONFIRMED sourceff2806bc6b678671aac2ba57023b175cdde921ee production-deployed,
+rollback73326cf. Tambahan flow Kasir berbagi sesi, Kiosk customer-only mencabut
+staff; tidak membagikan credential printer sebagai akun. Linux287PASS/4SKIP,
+fresh recovery/activation/ingress/HTTP/Owner UAT dan live Chrome Kasir PASS.
+Reload client lama. Template/printer retained, no sales/payment/print writes.
+Snapshot printer offline; Chromebook-mode dan legitimate-payment/failure UAT
+OPEN, NOT_BUSINESS_READY. Produk/dossier/master/gaps/sync/changelog portfolio
+diperbarui; histori dan HR independen dipertahankan. Provenance main HEAD setelah
+validator, push dan readback terpisah.
+
 ## 2026-10-19 - SagaOPS operational WebUSB deployed, target acceptance OPEN
 
 CONFIRMED, Andreas melanjutkan setelah unlock Owner. Source73326cf6328726587a69db2f06ed411835e90257

@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Handoff login deployed; acceptance Chromebook dan operasi tetap terbuka
+
+CONFIRMED ff2806bc6b678671aac2ba57023b175cdde921ee deployed/healthy,
+rollback73326cf. Gap login dashboard -> Kasir CLOSED pada host sama; Kiosk
+customer-only dan staff revocation lolos server UAT, Kasir live Chrome tanpa
+login ulang. Linux287PASS/4SKIP, recovery/ingress/verifikasi PASS. Guard client
+baru membutuhkan reload tab petugas lama. Pending dan transaksi tidak disentuh.
+Template6/v3 dan konfigurasi printer tetap. Enabled/commissioned tidak berubah,
+tetapi snapshot terakhir offline: Andreas perlu memastikan Chromebook terjaga
+dan tab layanan berjalan, bukan mengulang TEST atau memasang driver Windows.
+Acceptance perpindahan mode di Chromebook, pembayaran sah ke kertas, failure/
+recovery dan reviewed-copy Kiosk OPEN. Tidak mengklaim physical exactly-once atau
+BUSINESS_READY. HR/roster independen dipertahankan.
+
 ## 2026-10-19 - WebUSB commissioning pilot lolos; transaksi nyata UAT masih OPEN
 
 CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 deployed/healthy, rollback4e9e39b.

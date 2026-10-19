@@ -1,5 +1,31 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Sesi Kasir bersama dan penguncian Kiosk
+
+CONFIRMED sourceff2806bc6b678671aac2ba57023b175cdde921ee production-deployed,
+rollback73326cf. Kasir memakai sesi dashboard host-only existing. Owner menekan
+Kiosk dan mengonfirmasi penguncian; tiket60detik satu-pakai ditukar melalui POST
+antar-host, tanpa token di URL/storage. Sesi petugas dicabut sebelum handoff;
+grant Kiosk HttpOnly/Secure/Strict terbatas outlet dan empat jam, bukan izin
+petugas atau printer. Lost/expired/replayed handoff fail-closed. Back/focus dan
+notifikasi tab pada client baru tidak mengembalikan hak petugas. Tab versi lama
+harus dimuat ulang; pending/formulir harus diselesaikan atau disimpan dahulu.
+
+Linux run39228426746 sukses7m3s:287PASS/4SKIP, actual Nginx dan isolated cross-host
+TLS PASS. Tiga skip Windows dan satu paired-Platform HR tidak menjadi acceptance.
+Fresh backup/full disposable restore, candidate/current/candidate recovery,
+atomic activation, ingress dan monitor PASS.12served files exact-source dan
+8anonymous denials PASS; verifier memodelkan substitusi serveStatic existing.
+UAT Owner production membuktikan sesi Kasir bersama, pencabutan, bootstrap
+pelanggan kosong dan penolakan API petugas/printer. Live Chrome Kasir langsung
+terbuka dari dashboard. Tidak ada checkout/payment/TEST yang dibuat executor.
+
+Template6/v3 sama sebelum/sesudah; konfigurasi printer revision tetap, enabled/
+commissioned tetap ON, tetapi snapshot onlinefalse. Tidak merekomisioning atau
+memaksa printer dari PC lain. Chromebook-mode acceptance, transaksi pelanggan sah
+ke kertas, field-recovery dan reviewed-copy Kiosk OPEN; NOT_BUSINESS_READY.
+HR dan produk tetangga dipertahankan.
+
 ## 2026-10-19 - WebUSB server-backed deployed, physical diterima; operasi masih OPEN
 
 CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 sudah menjadi backend

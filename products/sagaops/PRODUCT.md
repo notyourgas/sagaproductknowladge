@@ -1,5 +1,30 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Login dashboard ke Kasir/Kiosk deployed
+
+CONFIRMED: backend **ff2806bc6b678671aac2ba57023b175cdde921ee** deployed,
+rollback **73326cf6328726587a69db2f06ed411835e90257**. Login Owner di
+`https://dashboard.sagapos.site/dashboard` langsung dipakai Kasir pada host yang
+sama. Tombol Kiosk memakai tiket satu-kali ke host pelanggan setelah mencabut
+sesi petugas. Kembali ke dashboard/Kasir memerlukan login petugas kembali;
+tidak membagikan cookie Owner lintas subdomain atau izin printer sebagai akun.
+Formulir/pembayaran aktif di tab petugas baru memblokir perpindahan. Muat ulang
+semua tab dashboard/Kasir lama agar guard tampilan versi baru ikut berjalan.
+
+Linux287PASS/0FAIL/4SKIP; static/core37, encrypted restore, pair-bound recovery,
+guarded activation, ingress,12file HTTP dan8negative boundaries PASS. UAT server
+production memakai Owner efektif: Kasir berbagi sesi, sesi dicabut, Kiosk bisa
+bootstrap kosong dan API petugas/printer ditolak. Browser Chrome production juga
+membuka Kasir langsung dari dashboard tanpa login ulang. Tidak membuat penjualan,
+melunasi pesanan, mengirim TEST atau mengubah pembayaran yang menunggu.
+
+Template aktif6/v3 deep-equal; renderer, layout, spacing, feed, autocut, antrean
+dan pairing tidak diganti. Pilot printer tetap enabled/commissioned; snapshot
+terakhir offline, bukan bukti layanan Chromebook sedang berjalan. Tab layanan
+harus terbuka/terjaga; lanjutkan layanan bila berhenti. Acceptance alur mode pada
+Chromebook, pembayaran sah ke kertas, failure UAT dan copy Kiosk tetap OPEN.
+NOT_BUSINESS_READY; lane HR/roster dan produk lain tidak dipromosikan oleh rilis ini.
+
 ## 2026-10-19 - WebUSB deployed, TEST fisik lolos, satu pilot otomatis aktif
 
 CONFIRMED: backend **73326cf6328726587a69db2f06ed411835e90257** sudah deployed,

@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Login sekali ke Kasir, Kiosk mengunci petugas
+
+CONFIRMED sourceff2806bc6b678671aac2ba57023b175cdde921ee deployed/healthy,
+rollback73326cf. Dashboard Owner -> Kasir memakai sesi sama; -> Kiosk memakai
+tiket sekali-pakai/customer grant terpisah dan mencabut sesi petugas. Return
+ke petugas tetap login, unresolved work memblokir perpindahan di client baru.
+Muat ulang tab lama. Linux287PASS/4SKIP, fresh recovery/activation/ingress,
+HTTP integrity/negative gates, server Owner UAT dan live Chrome Kasir PASS.
+Template6/v3/layout/printer tidak diubah; no sales/payment/print writes oleh
+executor. Printer enabled/commissioned tetap, snapshot offline; Chromebook-mode
+dan legitimate-payment/failure UAT OPEN. NOT_BUSINESS_READY. Lane HR dipertahankan.
+
 ## 2026-10-19 - WebUSB deployed, physical diterima dan satu pilot otomatis aktif
 
 CONFIRMED, kelanjutan Andreas setelah unlock Owner. Source73326cf6328726587a69db2f06ed411835e90257

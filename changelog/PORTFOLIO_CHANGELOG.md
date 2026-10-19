@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaOPS dashboard ke Kasir/Kiosk tanpa login ulang masuk
+
+CONFIRMED ff2806bc6b678671aac2ba57023b175cdde921ee deployed, rollback73326cf.
+Kasir memakai sesi dashboard; Kiosk mencabut akses petugas dan menggunakan grant
+pelanggan, return tetap login. Linux287PASS/4SKIP, recovery/deploy/ingress,
+Owner UAT/live Chrome Kasir PASS. Reload tab lama; nota6/v3/USB/autocut/antrean
+tetap. No sales/payment/TEST dibuat. Printer configured ON tetapi snapshot
+offline; target Chromebook-mode dan real-payment/failure UAT OPEN.
+NOT_BUSINESS_READY; HR/produk lain tidak dipromosikan oleh rilis ini.
+
 ## 2026-10-19 - SagaOPS WebUSB service deployed; target gate OPEN
 
 CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 deployed, rollback4e9e39b,
