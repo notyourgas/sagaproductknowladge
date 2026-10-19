@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaOPS operasional kas source-only
+
+CONFIRMED source589e2c229f94bc0deb6a6edc2004149128781e53 menambah modal/
+pengeluaran/ringkasan Kasir dan hitungan staf untuk Owner, memakai ledger,
+scope dan closing guards existing. Modal bukan omzet, QRIS bukan uang laci,
+saldo shift tidak dijumlahkan sebagai pendapatan. Tidak mengubah nota/printer.
+Local72 tes utama,2 browser delta dan static PASS; bukan nativePG18 qualification.
+IMPLEMENTED_NOT_DEPLOYED, production579e479 tetap. Allowance baru8menit/Rp0,
+qualification/package/recovery/deploy dan UAT karyawan OPEN; belum siap bisnis.
+
 ## 2026-10-19 - SagaOPS Checker Bar deployed, menunggu TEST fisik
 
 CONFIRMED source/runtime579e47960e1c86b6557c3e3143d05f8a838beec8 sehat;

@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Cashier cash operations implemented, belum deployed
+
+CONFIRMED permintaan Andreas dan source589e2c229f94bc0deb6a6edc2004149128781e53.
+Tambah cash strip, ringkasan tanggal/per-shift, akses expense dan hitungan staf
+replay-safe untuk review Owner. Gunakan ulang ledger dan guard closing existing;
+nota/printer/harga tetap.72 tes implementasi +2 tes visual delta dan static PASS.
+IMPLEMENTED_NOT_DEPLOYED, production579e479 tetap. Allowance Linux baru8menit/Rp0,
+paket/recovery/deploy dan UAT operasional OPEN. NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Checker Bar deployed, customer-first
 
 CONFIRMED keputusan Andreas dan runtime579e47960e1c86b6557c3e3143d05f8a838beec8.

@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-278 - Modal, expense, ringkasan dan hitungan staf di Kasir
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-19 |
+| Klasifikasi | CONFIRMED |
+| Topik | Siklus operasional kas karyawan |
+| Keputusan | Gunakan fondasi modal/expense/closing existing; Kasir menampilkan ringkasan harian dan menerima hitungan staf untuk review Owner. |
+| Alasan | Andreas perlu mengetahui modal, omzet, pengeluaran, kas fisik dan serah terima tanpa pekerjaan harian di Back Office. |
+| Alternatif | Tidak membuka kewenangan close Owner ke semua staf atau menjumlahkan modal sebagai omzet. |
+| Dampak | Source589e2c229f94bc0deb6a6edc2004149128781e53, scope/RBAC existing; nota/printer/harga tetap. |
+| Pemberi keputusan | Andreas. |
+| Status | IMPLEMENTED_NOT_DEPLOYED; Linux/package/deploy dan UAT OPEN, allowance Rp0 menunggu jawaban. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md). |
+
 ## DEC-277 - Nota pelanggan sebelum Checker Bar
 
 | Field | Isi |

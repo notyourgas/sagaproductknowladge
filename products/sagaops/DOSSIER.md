@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Operasional kas terpadu pada source
+
+CONFIRMED589e2c229f94bc0deb6a6edc2004149128781e53: Kasir memakai fondasi modal,
+expense atomik, koreksi berjejak dan handover. Ringkasan memakai repeatable-read
+snapshot outlet, definisi pendapatan/refund existing, serta rincian per shift;
+saldo modal antarshift tidak dijumlahkan sebagai pemasukan. Hitungan staf
+idempoten tersimpan di audit existing dan bertahan setelah respons hilang.
+Owner memuat, memeriksa dan menutup eksplisit; tidak ada approval/close otomatis.
+Hak cash.view/cash.write diperiksa ulang, tanpa mengubah grant production.
+
+Tidak ada SQL baru, perubahan harga, gateway, layout/cut nota atau aktivasi
+printer.72 local tests pada implementasi utama dan2 browser pada delta final,
+static1209/core37 PASS. PGlite bukan nativePG18. IMPLEMENTED_NOT_DEPLOYED;
+Linux/paket/recovery/deploy menunggu allowance baru maksimal8menit/Rp0.
+UAT petugas dengan aktivitas sah tetap OPEN; production579e479 tidak berubah.
+
 ## 2026-10-19 - Checker Bar deployed pada layanan WebUSB bersama
 
 CONFIRMED source/runtime579e47960e1c86b6557c3e3143d05f8a838beec8, termasuk baseline

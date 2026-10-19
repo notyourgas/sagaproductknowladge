@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Operasional kas: source selesai, release/UAT OPEN
+
+CONFIRMED source589e2c229f94bc0deb6a6edc2004149128781e53 local validated,
+production579e479 tidak berubah. Penyebab gate: allowance Linux terdahulu sudah
+terpakai; run baru maksimal8menit/Rp0 sudah ditanyakan sekali, belum dijawab.
+Andreas: jawab izin run tersebut. Executor: nativePG18/Linux/paket, recheck
+kapasitas/current/Owner, backup/recovery dan guarded deploy. Kuota gratis cukup
+tidak menggantikan izin. VPS production bukan builder; batas storage tidak
+dilemahkan. Sesudah rilis, operator/Owner melakukan UAT sah buka shift, expense,
+hitungan, review/close dan handover; jangan membuat transaksi production palsu.
+
 ## 2026-10-19 - Checker Bar deployed; kertas dan aktivasi OPEN
 
 CONFIRMED runtime579e47960e1c86b6557c3e3143d05f8a838beec8 deployed/sehat;

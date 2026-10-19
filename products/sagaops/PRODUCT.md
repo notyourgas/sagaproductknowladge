@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Operasional kas karyawan, source tervalidasi
+
+CONFIRMED source589e2c229f94bc0deb6a6edc2004149128781e53 pushed: akses modal/
+pengeluaran/ringkasan kas di Kasir, laporan tanggal bisnis dan per shift,
+serta hitungan staf tersimpan untuk diperiksa dan ditutup eksplisit oleh Owner.
+Modal bukan omzet; nontunai dan sumber pengeluaran dipisah. Kewenangan existing
+dan template/printer tetap. Tidak ada migrasi atau grant production baru.
+
+IMPLEMENTED_NOT_DEPLOYED. Implementasi utama72 tes lokal PASS, delta tampilan
+final2 browser PASS dan static/TypeScript PASS. Linux/PG18/package/recovery/
+deploy belum dijalankan; allowance baru8menit/Rp0 menunggu jawaban Andreas.
+Production579e479 tetap, UAT karyawan OPEN; bukan BUSINESS_READY.
+
 ## 2026-10-19 - Checker Bar deployed, nota pelanggan lebih dahulu
 
 CONFIRMED source/runtime **579e47960e1c86b6557c3e3143d05f8a838beec8** sehat;

@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaOPS cash operations source validated
+
+CONFIRMED589e2c229f94bc0deb6a6edc2004149128781e53: ringkasan kas harian/per
+shift, expense shortcut dan hitungan staf untuk review Owner.72 tes utama dan
+2 browser delta/static PASS; belum Linux qualification atau rilis. Production
+579e479, printer dan nota tetap. Allowance run Rp0 baru dan UAT karyawan OPEN;
+IMPLEMENTED_NOT_DEPLOYED, bukan BUSINESS_READY.
+
 ## 2026-10-19 - SagaOPS Checker Bar deployed, belum diaktifkan
 
 CONFIRMED runtime579e47960e1c86b6557c3e3143d05f8a838beec8, rollbackedce5a6.
