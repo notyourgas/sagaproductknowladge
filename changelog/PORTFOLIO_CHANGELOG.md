@@ -1,5 +1,40 @@
 # Portfolio Changelog
 
+## 2026-10-19 - Rotasi dua hari wajib dan revisi Owner: kandidat belum aktif
+
+CONFIRMED: keputusan Andreas mengganti rolling preferred menjadi maksimal dua
+hari shift sejenis wajib, dengan jeda8jam khusus pergantian band shift yang
+diketahui dan berbeda. Jeda umum11jam,48jam/minggu,6hari kerja beruntun dan
+staffing empat orang1+2Senin–Kamis/2+2Jumat–Minggu tetap. DEC-274 menggantikan
+posisi rolling DEC-272; kebutuhan staffing DEC-271 tetap.
+
+Source **1a62d0ba78df5fa37d69f82ada20bb9a079c2e33** committed/pushed. Owner
+dapat menyiapkan revisi slot mendatang yang belum dipakai pada bulan berjalan;
+jadwal dimulai/terkait absensi atau pengajuan, ID dan snapshot tetap dilindungi.
+Draft konflik bisa diperbaiki, publish menolak konflik. Tidak ada migration,
+dependency atau grant baru. Scope juga membawa perbaikan privasi logout Team/SaaS
+yang sebelumnya locally qualified; belum aktif pada backend production.
+
+22regresi baruPASS;9pure/UI reuse dengan binding input identik.2nativePASS pada
+fe4285f masih memerlukan refresh kandidat akhir. Initial1nativeFAIL dan5regresi
+FAIL dipertahankan; total157,941/180detik termasuk cleanup,dua koreksi terpakai.
+Ini bukan33freshPASS/full suite/UAT perangkat. Linux/profile/package input
+PREPARED_NOT_EXECUTED; run gratis sebelumnya terhenti sebelum tes,box dimatikan
+dan key dicabut. Satu key/builder baru menunggu persetujuan spesifik, tanpa
+memperbarui allowance lokal atau gate Kasir/stok/self-review/full-workday.
+
+Fresh runtime19Okt14.31WIB tetap **4e9e39bade2fa5c7aeff832f84a23d6028dbd640**,
+rollback **36d8024d2244b97a5e0951ddb023ba4c256a8f4d**,ready/schema37/GATEWAY.
+Static WebUSBbe56b9e dan konfirmasi TEST Chromebook dipertahankan secara
+terpisah; bukan HR/mobile UAT. Production tidak berubah pada milestone ini.
+
+Ledger active36teknis/12operasional tetap:15PASS/2FAIL/0BLOCKED/19NOT_RUN
+(41,67%);0PASS/12NOT_RUN operasional(0%).HR02FAIL/aturan aktif masih lama,
+HR03NOT_RUN/revisi aktif belum diterima,ATT03FAIL/dua bukti foto asli belum
+pulih.225/225retained media manifests0match bukan pemeriksaan semua cadangan
+eksternal atau recovery. NOT_BUSINESS_READY. Langkah berikut: qualification
+Linux final→package/recovery/guarded activation→UAT akun/perangkat sah.
+
 ## 2026-10-19 - SagaPOS Chromebook WebUSB TEST pilot
 
 - CONFIRMED sourcebe56b9e44f0b3c16eb08365923d297f5fb6f6023 static deployed

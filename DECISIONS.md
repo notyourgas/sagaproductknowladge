@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-274 - SagaPOS rotasi wajib dua hari dan revisi Owner bulan berjalan
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-19 |
+| Klasifikasi | CONFIRMED |
+| Topik | Kontrak rotasi empat staf dan revisi jadwal yang sudah diterbitkan |
+| Keputusan | Maksimal dua hari shift sejenis wajib; jumping shift boleh dengan jeda8jam khusus pergantian shift. Owner dapat merevisi slot mendatang yang belum dipakai pada bulan berjalan, menjaga histori terbit. |
+| Alasan | Founder menolak streak empat hari dan meminta aturan generate serta konflik konsisten. |
+| Alternatif | Preferred dua hari dengan rest11jam sebelumnya diganti; mengubah jam shift belum dipilih. |
+| Dampak | Jeda umum11jam/max48jam/minggu/6hari dan staffingDEC-271 tetap. Source1a62d0b implemented/local regression; active4e9 masih policy lama, HR02FAIL danHR03NOT_RUN. |
+| Pemberi keputusan | Andreas; jawaban eksplisit: Jeda8jam untuk pergantian shift. |
+| Status | CONFIRMED; menggantikan rolling preferredDEC-272. IMPLEMENTED_NOT_DEPLOYED; bukan waiver histori/UAT atau reset allowance. |
+| Dokumen terkait | [Product](products/sagaops/PRODUCT.md),[Dossier](products/sagaops/DOSSIER.md),[Gaps](GAPS.md) |
+
 ## DEC-273 - SagaPOS mengualifikasi WebUSB karena target adalah Chromebook
 
 | Field | Isi |
@@ -14,6 +29,8 @@
 
 ## DEC-272 - SagaPOS rolling menjadi preferensi pada konfigurasi empat staf
 
+DEPRECATED untuk posisi rolling; diganti [DEC-274](#dec-274---sagapos-rotasi-wajib-dua-hari-dan-revisi-owner-bulan-berjalan). Histori rilis dipertahankan.
+
 | Field | Isi |
 |---|---|
 | Tanggal |2026-10-19|
@@ -23,7 +40,7 @@
 | Alternatif |Tetapstrict dan menyatakan kebutuhan/jam saat ini tidak layak; tidak dipilih.|
 | Dampak |Source36d8024 aktif; preset baru4staf preferred, stored strict tetap eksplisit. Aturan disimpan dan draft107penempatan0konflik dibuat atas permintaan Owner; belumpublish atau UAT staf/perangkat.|
 | Pemberi keputusan |Andreas: persetujuan seluruh proposal dengan setting4staf, lalu satu correction90detik dalam sisa batas120detik.|
-| Status |CONFIRMED; kebutuhan staffingDEC-271 tetap berlaku; posisi rolling NEEDS CONFIRMATION pada checkpoint lama ditutup. Bukan waiver UAT, payroll/payout atau reset gate lain.|
+| Status |DEPRECATED posisi rolling olehDEC-274; kebutuhan staffingDEC-271 tetap. Histori keputusan dan rilis dipertahankan; bukan waiver UAT atau reset gate.|
 | Dokumen terkait |[Product](products/sagaops/PRODUCT.md),[Dossier](products/sagaops/DOSSIER.md),[Gaps](GAPS.md)|
 
 ## DEC-271 - SagaPOS kebutuhan tetap empat staf per shift
