@@ -2,7 +2,7 @@
 
 ## 2026-10-20 - Jersey Jago belum design sign-off atau commerce
 
-CONFIRMED revisi 04 melengkapi pencarian/filter/recovery, ukuran kontekstual, zoom, undo wishlist serta alur bag; footer ringkas dan Latest Drop sejajar tetap. NEEDS CONFIRMATION: sign-off visual/iPhone fisik, foto asli termasuk belakang/label/cacat, data/kondisi nyata, model stok, kebijakan dan integrasi merchant/pengiriman. Galeri tetap depan/crop dari ilustrasi AI yang sama; bukan bukti originalitas. Tombol bag hanya simulasi. Tidak ada aktivasi toko produksi. [Scope dan bukti](products/sagadevs/JERSEY_JAGO.md).
+CONFIRMED revisi 05 menambah katalog mobile ringkas, pause/play, fallback storage, retry foto dan alternatif ready dari barang sold; pencarian/filter/recovery, ukuran kontekstual, zoom, undo wishlist serta alur bag revisi 04 tetap. Footer ringkas dan Latest Drop sejajar dipertahankan. Storage diblokir baru diuji unit; pengujian browser meliputi simulasi request foto gagal dan pemulihan, bukan jaringan seluler nyata. NEEDS CONFIRMATION: sign-off visual/iPhone fisik, foto asli termasuk belakang/label/cacat, data/kondisi nyata, model stok, kebijakan dan integrasi merchant/pengiriman. Galeri tetap depan/crop dari ilustrasi AI yang sama; bukan bukti originalitas. Tombol bag hanya simulasi. Tidak ada aktivasi toko produksi. [Scope dan bukti](products/sagadevs/JERSEY_JAGO.md).
 
 ## 2026-10-20 - Cash operations deployed; UAT nyata belum ditutup
 
