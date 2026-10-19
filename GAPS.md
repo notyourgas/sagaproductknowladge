@@ -2,7 +2,7 @@
 
 ## 2026-10-20 - Jersey Jago belum design sign-off atau commerce
 
-CONFIRMED revisi 02 prototype visual tersedia; NEEDS CONFIRMATION: sign-off Andreas terhadap revisi eksperimental/detail produk, foto asli termasuk belakang/label, data/kondisi nyata, model stok, kebijakan dan integrasi merchant/pengiriman. Galeri saat ini hanya depan/crop dari ilustrasi AI yang sama. CONFIRMED audit UX 20 Oktober: perapihan footer/teks, pemulihan state filter, pembedaan New Drop dan daftar wishlist belum dikerjakan; strategi perbaikan berstatus PROPOSAL pada catatan client. Tidak ada aktivasi toko produksi. [Scope dan bukti](products/sagadevs/JERSEY_JAGO.md).
+CONFIRMED revisi 03 mengimplementasikan footer/teks, state filter, subset New Drop, daftar wishlist lokal dan accordion halus. NEEDS CONFIRMATION: sign-off visual/iPhone fisik, foto asli termasuk belakang/label/cacat, data/kondisi nyata, model stok, kebijakan dan integrasi merchant/pengiriman. Galeri tetap depan/crop dari ilustrasi AI yang sama; bukan bukti originalitas. Tombol bag hanya simulasi. Tidak ada aktivasi toko produksi. [Scope dan bukti](products/sagadevs/JERSEY_JAGO.md).
 
 ## 2026-10-20 - Cash operations deployed; UAT nyata belum ditutup
 
