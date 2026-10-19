@@ -1,5 +1,23 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Qualification Linux awal gagal, koreksi siap diuji
+
+CONFIRMED: kandidat terbaru **1a7ccf58583dc2bd6fc12988222bc525efac3c33**,
+committed/pushed. Pengujian Linux pada induk e0aa0ea5 mencatat261 PASS/1 FAIL/
+4 SKIP, static1181/37migrasi/type PASS. Native PostgreSQL18 dump/restore dan
+roster/mobile benar-benar dijalankan; bukan lagi skip Windows pada scope itu.
+Kegagalan Nginx berasal dari klien tes yang mengganti virtual Host; koreksi
+transport mempertahankan assertion akses, tanpa mengubah aplikasi/layout.
+Lokal13 PASS/1 Linux Nginx SKIP; corrected Linux qualification belum dijalankan.
+Empat skip Linux mencakup tiga tes Windows dan satu journey SaaSHR dengan
+paired Platform yang belum tersedia; bukan full acceptance.
+
+Izin runner2CPU/8GB Rp0 maksimal15menit sudah diberikan. Job pertama6m20s
+selesai, container disposable dibersihkan; satu koreksi maksimal8menit masih
+menunggu izin tersendiri. Belum ada artifact backend/deploy/TEST fisik atau
+auto-enable. Paket Windows0.3.1/source6b9ecf2a tetap immutable dan terpasang
+hanya di PC executor; laptop sasaran belum diterima. NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Kandidat Windows 0.3.1: recovery dan review closing
 
 CONFIRMED: source **6b9ecf2ad9b6db7baa22f512558a2127138263d6** committed/pushed.

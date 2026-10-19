@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaPOS Linux qualification belum lolos
+
+CONFIRMED kandidat **1a7ccf58583dc2bd6fc12988222bc525efac3c33** memperbaiki
+klien tes virtual Host, bukan layout/aplikasi. Linux induk e0aa0ea5 menghasilkan
+261 PASS/1 FAIL/4 SKIP; nativePG18 recovery/roster/mobile berjalan, static/type
+PASS. Nginx gagal karena fetch mengganti Host; corrected probe lokal PASS,
+Linux corrected masih NOT_RUN. Tiga tes Windows dan satu paired-Platform
+SaaSHR journey tetap SKIP; bukan full acceptance. Runner awal2CPU/8GB disetujui,
+job6m20s berakhir dan container dibersihkan; satu koreksi8min/Rp0 pending izin.
+Tidak ada artifact backend/deploy/TEST/auto-enable. Windows0.3.1.0/source6b9ecf2a
+tetap immutable, installed executor saja; target/UAT/NOT_BUSINESS_READY tetap.
+Production read-only masih36d8024/GATEWAY, template6/nativeautoOFF dipertahankan.
+
 ## 2026-10-19 - SagaPOS Windows 0.3.1 masih kandidat internal
 
 CONFIRMED source **6b9ecf2ad9b6db7baa22f512558a2127138263d6** memperbaiki

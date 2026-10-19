@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Linux pertama mengungkap bug klien tes, bukan promotion
+
+- CONFIRMED; source correction1a7ccf58583dc2bd6fc12988222bc525efac3c33 pushed.
+- Job Linux induk e0aa0ea5 terminal6m20s:261 PASS/1FAIL/4SKIP, static/type PASS;
+  nativePG18 recovery/roster/mobile berjalan. Nginx401 disebabkan fetch mengganti
+  virtual Host. Probe node:http dan regression lokal diperbaiki tanpa bypass;
+ 13PASS/1LinuxSKIP. Corrected Linux/packaging NOT_RUN, correction8min pending izin.
+- Native/paket Windows0.3.1.0/source6b9ecf2a tetap; tidak mengubah layout/aturan
+  bisnis, production, template6/nativeautoOFF. Tidak ada TEST/auto-enable/UAT.
+- PRODUCT/DOSSIER/master/GAPS/DECISIONS/SYNC/portfolio/root menyimpan status
+  terpisah dan retained failure; source bukan artifact/deploy/BUSINESS_READY.
+
 ## 2026-10-19 - Windows 0.3.1 terpasang lokal, target tetap belum diterima
 
 - CONFIRMED; paket immutable source6b9ecf2ad9b6db7baa22f512558a2127138263d6

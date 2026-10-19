@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): retained Linux failure dan koreksi Host
+
+- CONFIRMED dari log job Linux terminal dan source1a7ccf58583dc2bd6fc12988222bc525efac3c33.
+  Before: Linux/nativePG gate belum dijalankan. After:261PASS/1FAIL/4SKIP;
+  nativePG18 recovery/roster/mobile berjalan, actual Nginx probe gagal karena
+  fetch mengganti Host. Klien tes diperbaiki tanpa melemahkan assertion atau app.
+- Lokal13PASS/1LinuxSKIP dan static/type PASS; correction Linux8min pending izin,
+  bukan artifact/deploy/BUSINESS_READY. Job awal2CPU/8GB disetujui dan selesai
+  6m20s, container cleanupPASS. Paket0.3.1/source6b9ecf2a/layout tidak berubah.
+- Production read-only36d8024/GATEWAY, template6/nativeautoOFF tetap; tidak ada
+  TEST/aktivasi otomatis atau transaksi palsu. File SagaOPS PRODUCT/DOSSIER/
+  CHANGELOG, master/GAPS/DECISIONS/SYNC/portfolio/root diperbarui; main HEAD
+  setelah validator/push/readback, tanpa restricted evidence atau credential.
+
 ## 2026-10-19 - knowledge(sagaops): bedakan installed lokal dan target pilot
 
 - CONFIRMED; sumber laporan Windows resmi dan installed runtime0.3.1.0,

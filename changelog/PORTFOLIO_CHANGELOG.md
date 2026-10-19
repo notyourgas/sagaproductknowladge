@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS Linux gagal pada probe Host, koreksi belum promoted
+
+- CONFIRMED source1a7ccf58583dc2bd6fc12988222bc525efac3c33 test/workflow only.
+  Linux induk261PASS/1FAIL/4SKIP, nativePG18 gates berjalan; probe virtual Host
+  diperbaiki lokal13PASS/1LinuxSKIP. Runner awal2CPU/8GB6m20s terminal dan bersih;
+  correction max8min/Rp0 pending izin. Tidak ada artifact backend/deploy baru.
+- Paket0.3.1/source6b9ecf2a/layout dan production36d8024/GATEWAY tidak berubah.
+  Target physical/UAT OPEN, autoOFF, NOT_BUSINESS_READY. Produk lain tetap.
+
 ## 2026-10-19 - SagaPOS Windows 0.3.1 installed pada PC executor saja
 
 - CONFIRMED; native source6b9ecf2a/paket immutable dan backend e0aa0ea5 tetap.

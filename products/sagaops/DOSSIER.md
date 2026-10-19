@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Hasil Linux pertama dan koreksi virtual Host
+
+CONFIRMED source terbaru **1a7ccf58583dc2bd6fc12988222bc525efac3c33**,
+delta hanya klien tes Nginx, kontrak workflow dan batas correction8menit.
+Windows/native, UI, aturan bisnis, layout dan paket0.3.1.0 tidak berubah.
+Induk e0aa0ea5 qualified Linux261 PASS/1 FAIL/4 SKIP; static1181/37migrasi/type
+PASS. Satu kegagalan401dari klien fetch yang mengirim host loopback, bukan
+virtual host. node:http probe serta regression Host/header lokal sudah PASS,
+tanpa melonggarkan assertion. Linux Nginx corrected dan artifact final NOT_RUN.
+Native PostgreSQL18 recovery/roster/mobile berjalan; tiga tes Windows dan
+journey SaaSHR paired-Platform tetap SKIP, tidak disamakan dengan full UAT.
+
+Runner awal2CPU/8GB disetujui, kuota dan budgetRp0 diverifikasi sebelum job;
+terminal6m20s/FAIL, container cleanup PASS, artifact tidak dibangun. Izin satu
+correction max8min menunggu; tidak ada rerun otomatis/reset allowance. Production
+fresh read-only tetap36d8024/rollback14507c0, readytrue/GATEWAY, template aktif6
+dan native enabledfalse/commissionedfalse. Tidak ada deploy/TEST/auto-enable.
+Paket Windows/source6b9ecf2a serta checksum di bawah tetap berlaku; status
+instalasi executor tidak menjadi bukti laptop sasaran atau BUSINESS_READY.
+
 ## 2026-10-19 - Windows 0.3.1 qualification lokal dan batas operasional
 
 CONFIRMED; source **6b9ecf2ad9b6db7baa22f512558a2127138263d6** committed/pushed

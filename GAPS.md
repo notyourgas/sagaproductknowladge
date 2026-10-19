@@ -1,5 +1,24 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Gate Linux koreksi terbuka, izin runner awal sudah dipakai
+
+CONFIRMED izin awal2CPU/8GB/15min/Rp0 sudah diberikan dan satu job selesai6m20s.
+Linux261 PASS/1 FAIL/4 SKIP; nativePG18 recovery/roster/mobile bukan skip lagi.
+Fail Nginx: klien fetch mengubah virtual Host. Koreksi1a7ccf58583dc2bd6fc12988222bc525efac3c33
+committed/pushed, probe/kontrak lokal13 PASS/1LinuxSKIP; assertion tidak dilonggarkan.
+Tiga Windows-only tes dan satu journey SaaSHR paired-Platform tetap SKIP.
+
+- Andreas: jawab satu permintaan correction runner max8min/Rp0; bukan membuka
+  kembali izin8GB awal yang sudah diberikan, bukan reset allowance.
+- Release Lead: corrected actual Nginx/full scoped Linux dan packaging belum
+  lolos. Jangan deploy kandidat atau menyebut artifact backend telah dibuat.
+- Operator: pemasangan laptop sasaran, commissioning fisik dan UAT tetap OPEN.
+  Paket0.3.1.0/source6b9ecf2a tidak berubah; installer executor bukan bukti target.
+
+Production read-only36d8024/GATEWAY, template aktif6, native enabledfalse dan
+commissionedfalse dipertahankan. Tidak ada TEST, auto-enable atau transaksi palsu.
+Catatan resource/qualification di bawah menggambarkan checkpoint sebelumnya.
+
 ## 2026-10-19 - Windows 0.3.1: source gap ditutup, operasional belum lolos
 
 CONFIRMED source6b9ecf2ad9b6db7baa22f512558a2127138263d6 dan paket internal

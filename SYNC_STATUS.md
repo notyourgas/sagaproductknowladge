@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - Snapshot Linux gagal dan kandidat koreksi
+
+CONFIRMED kandidat1a7ccf58583dc2bd6fc12988222bc525efac3c33 committed/pushed;
+induk e0aa0ea5 Linux261 PASS/1 FAIL/4 SKIP, static1181/37migrasi/type PASS.
+NativePG18 recovery/roster/mobile berjalan. Klien tes virtual Host diperbaiki,
+assertion tetap; lokal13 PASS/1LinuxSKIP, actual corrected Linux NOT_RUN.
+Job awal disetujui2CPU/8GB, terminal6m20s, container cleanup PASS. Corrective8min
+Rp0 pending izin; tidak ada artifact/deploy/TEST/auto-enable. Windows0.3.1.0 dan
+source6b9ecf2a immutable/installed executor, target belum. NOT_BUSINESS_READY.
+Production fresh read-only36d8024/GATEWAY, template6 dan nativeautoOFF tetap.
+Knowledge main HEAD setelah validator/push/readback; rincian milestone lama
+di bawah dipertahankan sebagai histori, bukan approval koreksi atau full UAT.
+
 ## 2026-10-19 - Snapshot kandidat Windows 0.3.1
 
 CONFIRMED source **6b9ecf2ad9b6db7baa22f512558a2127138263d6** committed/pushed;
