@@ -1,5 +1,17 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-273 - SagaPOS mengualifikasi WebUSB karena target adalah Chromebook
+
+| Field | Isi |
+| --- | --- |
+| Tanggal | 2026-10-19 |
+| Klasifikasi | CONFIRMED |
+| Sumber | Koreksi OS dan instruksi Andreas; source be56b9e44f0b3c16eb08365923d297f5fb6f6023; guarded static deploy dan Owner readback |
+| Keputusan | Gunakan fondasi web/RAW/template aktif untuk satu TEST WebUSB dahulu; layout, jarak dan autocut tidak diubah. Tidak memaksa Windows installer pada ChromeOS. |
+| Batas | Rp0; tidak menonaktifkan proteksi, tidak menciptakan penjualan; initial USB chooser memerlukan klik. |
+| Status | Halaman TEST deployed; Andreas mengonfirmasi nota keluar, layout/jarak sesuai dan autocut bekerja pada Chromebook. Payment auto-print belum aktif/selesai; NOT_BUSINESS_READY. |
+| Penyelesaian | Developer mengintegrasikan device-authorized paid queue existing dengan recovery dan single consumer; jangan meninggalkan sesi Owner pada public Kiosk. |
+
 ## DEC-272 - SagaPOS rolling menjadi preferensi pada konfigurasi empat staf
 
 | Field | Isi |

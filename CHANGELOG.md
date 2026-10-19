@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): Chromebook WebUSB TEST pilot deployed
+
+- CONFIRMED sourcebe56b9e44f0b3c16eb08365923d297f5fb6f6023 static deployed;
+  backend4e9e39b/template6 unchanged, Windows/roster lane preserved.
+- RAW TEST tanpa browser print dialog, Owner reads, USB chooser click,
+  ledger/lock/no-resend;35unique focused/regression PASS dan finalNginxPASS.
+- Andreas confirms physical Chromebook nota/layout/jarak/autocut PASS;
+  bukan exactly-once berdasarkan transfer. Payment auto-print
+  WebUSB belum selesai/aktif. Rp0/no builder, NOT_BUSINESS_READY.
+- PRODUCT/DOSSIER/product changelog/master/GAPS/DEC-273/SYNC/portfolio synced.
+
 ## 2026-10-19 - knowledge(sagaops): Windows backend dan ingress deployed
 
 - CONFIRMED source4e9e39bade2fa5c7aeff832f84a23d6028dbd640 dari job terminal:

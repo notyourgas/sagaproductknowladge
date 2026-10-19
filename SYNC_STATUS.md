@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - WebUSB static deployed dan fisik Chromebook lolos
+
+CONFIRMED sourcebe56b9e44f0b3c16eb08365923d297f5fb6f6023 committed/pushed,
+static `/printer-usb` deployed. Backend4e9e39b/schema/template6 unchanged;
+nativeOFF/revision3/uncommissioned.35unique focused/regressionPASS,
+10rerun koreksi reloadPASS; static1189/type PASS, archive/file integrity,
+actual Nginx/access/neighbor gates PASS. Initial404/rollback exact retained.
+Tidak ada builder baru/biaya/auto-enable. Owner data reads dan anonymous
+browser guard verified. Andreas mengonfirmasi TEST fisik Chromebook keluar,
+layout/jarak sesuai dan autocut bekerja; bukan exactly-once dari transfer.
+Operational WebUSB paid queue masih OPEN. NOT_BUSINESS_READY.
+Prior Windows/roster lane tidak ditimpa; snapshot di bawah adalah histori.
+
 ## 2026-10-19 - Snapshot deployment Windows backend dan native ingress
 
 CONFIRMED source4e9e39bade2fa5c7aeff832f84a23d6028dbd640 pushed clean;

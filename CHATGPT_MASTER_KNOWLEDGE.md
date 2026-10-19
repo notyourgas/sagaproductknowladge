@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaPOS target Chromebook dan TEST WebUSB
+
+CONFIRMED target perangkat ternyata ChromeOS, bukan Windows. Static pilot
+sourcebe56b9e44f0b3c16eb08365923d297f5fb6f6023 deployed:
+`https://dashboard.sagapos.site/printer-usb`. Backend4e9e39b dan template6/v3
+unchanged; Windows package tetap histori/lane terpisah. Owner membaca template
+aktif, memilih USB dengan klik, lalu satu TEST RAW tanpa browser print dialog.
+Ledger/lock menahan hasil tidak pasti dan tidak resend.20focused/15regression
+PASS,10rerun koreksi reloadPASS; artifact/Nginx/accessPASS, Rp0/no builder.
+CONFIRMED oleh Andreas: nota fisik keluar, layout/jarak sesuai dan autocut
+bekerja pada Chromebook. Ini bukan bukti exactly-once. Ini belum consumer
+antrean pembayaran WebUSB; autoOFF dan NOT_BUSINESS_READY. Jangan menjanjikan
+plug-and-play atau silent automatic payment printing sebelum commissioning.
+
 ## 2026-10-19 - SagaPOS backend Windows deployed; commissioning target belum
 
 CONFIRMED backend **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** pushed;

@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS Chromebook WebUSB TEST pilot
+
+- CONFIRMED sourcebe56b9e44f0b3c16eb08365923d297f5fb6f6023 static deployed
+  di dashboard `/printer-usb`, backend4e9e39b dan template6 tetap. RAW TEST,
+  shared renderer/ledger, tanpa browser print dialog. Rp0/no new builder.
+-35unique focused/regression PASS, actual Nginx/rollback/guard PASS.
+  Andreas mengonfirmasi nota Chromebook, layout/jarak dan autocut PASS.
+  Paid auto-print WebUSB
+  belum selesai/aktif, NOT_BUSINESS_READY. Windows/roster lane dipertahankan.
+
 ## 2026-10-19 - SagaPOS Windows backend dan native ingress deployed
 
 - CONFIRMED backend4e9e39bade2fa5c7aeff832f84a23d6028dbd640; final20PASS,

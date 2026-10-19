@@ -1,5 +1,32 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - WebUSB Chromebook qualification, bukan auto-payment release
+
+CONFIRMED sourcebe56b9e44f0b3c16eb08365923d297f5fb6f6023 static deployed pada
+dashboard `/printer-usb`; backend4e9e39b/schema/template6 tetap. Initial Chrome
+USB picker memerlukan klik. Read-only Owner APIs menahan TEST jika native
+aktif/uncertain. RAW binary/parity memakai renderer existing, sequential bulk
+OUT16KiB dan satu cutter; tidak menambahkan feed. Shared IndexedDB reserve
+sebelum transfer, Web Lock antar-tab, hasil partial/timeout/restart ditahan,
+tanpa retry atau reset UI. Konfirmasi fisik lokal tidak enroll/enable server.
+
+20focused dan15regression PASS;10focused rerun koreksi graceful reload PASS.
+Archive140KiB/checksums/actualNginx/deployment PASS, probe404 awal rollback PASS.
+Tidak memakai VPS builder, billing, driver override atau trust root. USBself
+hanya dokumen TEST; dashboard tetapdeny, protected APIs dan staff/admin tetap.
+Native tetapOFF/revision3/uncommissioned; template6/v3 deep-equal. Browser
+production anonymous menunjukkan login requirement dan TEST disabled.
+
+CONFIRMED operator Andreas: nota fisik Chromebook keluar, layout/jarak sesuai,
+autocut bekerja. Tidak menyebut spool/USB transfer sebagai bukti kertas atau
+exactly-once. Confirmation ini tidak enroll/activate consumer server.
+OPEN: integrasi device authorization/paid outbox. Hardware TEST telah lolos;
+langkah berikutnya bangun consumer existing outbox untuk device ChromeOS,
+uji verified payment/pending/history, renewal, cross-device ownership, crash
+dan uncertain reconciliation sebelum aktivasi satu pilot. Jika interface OS
+tidak dapat diklaim, gunakan host Windows existing dengan web Kiosk sebagai
+alternatif Rp0, bukan menurunkan proteksi. NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Final correction dan guarded native desktop release
 
 CONFIRMED backend **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** pushed clean.

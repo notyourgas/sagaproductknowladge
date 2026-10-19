@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Gate Chromebook: WebUSB TEST fisik lolos, auto masih OPEN
+
+CONFIRMED sourcebe56b9e44f0b3c16eb08365923d297f5fb6f6023 static deployed,
+backend4e9e39b/template6 unchanged.35unique focused/regression PASS; koreksi
+reload10rerunPASS, initial404 exact rollback dan finalNginxPASS. AutoOFF.
+CONFIRMED oleh Andreas: nota fisik Chromebook keluar, layout/jarak sesuai,
+autocut bekerja. Tidak mengirim TEST tambahan atau ke PC lama.
+Jika claim ditolak, developer memeriksa identity/interface/status aktual;
+tidak bypass Chrome. Alternatif: web Kiosk dan existing Windows print host.
+Developer mengintegrasikan consumer device/paid-outbox WebUSB berikutnya;
+login Owner tidak boleh ditinggalkan sebagai sesi Kiosk.
+Operasional payment automation dan siklus UAT tetap OPEN/NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Linux dan deployment tertutup; target/UAT tetap OPEN
 
 CONFIRMED source4e9e39bade2fa5c7aeff832f84a23d6028dbd640 final20PASS/0FAIL/0SKIP;

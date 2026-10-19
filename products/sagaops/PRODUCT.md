@@ -1,5 +1,35 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Target Chromebook: halaman TEST WebUSB deployed
+
+CONFIRMED: Andreas mengoreksi OS perangkat sasaran menjadi Chromebook dan
+meminta WebUSB dengan layout/jarak/autocut tetap. Source static
+**be56b9e44f0b3c16eb08365923d297f5fb6f6023** committed/pushed dan deployed di
+`https://dashboard.sagapos.site/printer-usb`. Backend tetap4e9e39bade2fa5c7aeff832f84a23d6028dbd640;
+tidak mengganti paket Windows atau backend produk lain. Paket static140KiB,
+checksum/file integrity dan actual Nginx gate PASS, tanpa builder/biaya baru.
+
+Halaman hanya membaca sesi Owner, template aktif dan status native yang OFF.
+TEST sintetis RAW memakai renderer existing serta template6/v3 yang terbukti
+deep-equal sebelum/sesudah. Tidak membuat transaksi atau mengaktifkan printer.
+Initial USB chooser tetap perlu klik petugas; pengiriman nota tanpa dialog
+print. Satu ledger sebelum transfer, cross-tab lock dan hasil UNKNOWN ditahan
+tanpa resend. Konfirmasi kertas lokal tidak mengaktifkan server commissioning.
+
+20focused PASS,15regression PASS;10focused diulang setelah koreksi reload gate.
+Static/type PASS; fixture bukan bukti kertas. Percobaan ingress pertama gagal
+karena probe saat graceful reload dan rollback exact PASS; koreksi kemudian
+deployed PASS. USB hanya diizinkan pada dokumen TEST, bukan dashboard umum;
+API tetap terlindungi dan host staff/admin tidak berubah.
+
+CONFIRMED melalui jawaban Andreas pada TEST halaman yang deployed: nota keluar,
+layout/jarak sesuai, dan autocut bekerja. Ini bukti konfirmasi operator pada
+Chromebook, bukan inferensi USB transfer atau bukti exactly-once fisik.
+Integrasi antrean pembayaran otomatis WebUSB belum diimplementasi/diaktifkan;
+auto tetapOFF, NOT_BUSINESS_READY. Langkah berikutnya integrasi consumer device
+ke paid outbox existing, dengan renewal/restart/uncertain-result UAT. Tidak perlu
+mengganti template, Windows agent, atau melemahkan Chrome untuk hasil TEST ini.
+
 ## 2026-10-19 - Backend Windows dua mode deployed; target/UAT masih OPEN
 
 CONFIRMED source **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** committed/pushed.

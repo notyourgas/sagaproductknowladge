@@ -1,5 +1,19 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Pilot WebUSB Chromebook untuk TEST nota
+
+- CONFIRMED sourcebe56b9e44f0b3c16eb08365923d297f5fb6f6023, static deployed
+  pada dashboard `/printer-usb`, backend4e9e39b tetap. Rp0 tanpa builder.
+- Owner-only data reads; synthetic TEST tanpa penjualan, memakai RAW renderer
+  dan template aktif6/v3 unchanged. Initial USB chooser manual; tidak ada
+  dialog print. Ledger sebelum transfer, shared browser lock, UNKNOWN held.
+-20focused/15regression PASS;10rerun setelah koreksi readiness reload. Probe
+  awal404/rollback exact PASS dipertahankan; finalNginx/route/access gatePASS.
+- Andreas mengonfirmasi nota fisik Chromebook keluar, layout/jarak sesuai dan
+  autocut bekerja. Operator acceptance, bukan exactly-once dari transfer.
+- Payment auto-print WebUSB
+  belum aktif/selesai; Windows existing dipertahankan, NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Correction Linux dan native desktop backend deployed
 
 - CONFIRMED source4e9e39bade2fa5c7aeff832f84a23d6028dbd640; dua bug tes
