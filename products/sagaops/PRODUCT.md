@@ -1,5 +1,19 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Perbaikan konfirmasi tunai: source lokal, belum deployed
+
+CONFIRMED source **4c8522b8962a198d7cfba337327edc3d3ab6c659** memperbaiki
+reservasi resep yang seluruh bahannya dikenal tetapi belum memiliki saldo stok
+terkelola. Biaya resep bukan bukti jumlah stok. Jalur penerimaan uang memberi
+status UNMANAGED tanpa membuat saldo/aset/pergerakan stok, disertai catatan audit
+dan pemberitahuan ke Kasir. Guard nominal, shift, replay, stok terkelola dan resep
+campuran tetap berlaku. Resep campuran perlu penyiapan stok awal nyata oleh Owner.
+114 tes lokal dan static/type check PASS; pengujian Linux, paket dan deploy masih
+OPEN menunggu izin tambahan runner terbatas Rp0. Production tetap **ff2806bc**;
+pembayaran asli belum dikonfirmasi oleh executor. Jangan membuat pesanan pengganti
+atau menghapus percobaan tersimpan. Template, layout dan printer tidak diubah.
+IMPLEMENTED_NOT_DEPLOYED, bukan penutupan UAT pembayaran sah atau BUSINESS_READY.
+
 ## 2026-10-19 - Login dashboard ke Kasir/Kiosk deployed
 
 CONFIRMED: backend **ff2806bc6b678671aac2ba57023b175cdde921ee** deployed,

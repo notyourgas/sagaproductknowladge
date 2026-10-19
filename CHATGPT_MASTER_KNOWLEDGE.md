@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaOPS bug konfirmasi tunai, source belum deployed
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 LOCAL_VALIDATED,
+114 tes lokal/static/type PASS. Reservasi resep yang semua bahannya belum memiliki
+saldo terkelola tidak lagi menghalangi penerimaan tunai; UNMANAGED eksplisit dan
+review audit tanpa stok/aset buatan. Guard shift/tender/replay dan stok campuran
+tetap. Production masih ff2806bc; Linux/paket/deploy OPEN menunggu izin runner
+tambahan Rp0. Pembayaran asli belum dikonfirmasi executor. Jangan reset percobaan
+atau buat penjualan pengganti. Nota/printer tidak berubah. NOT_BUSINESS_READY.
+
 ## 2026-10-19 - SagaOPS satu login dashboard, batas Kiosk tetap terpisah
 
 CONFIRMED backendff2806bc6b678671aac2ba57023b175cdde921ee deployed,

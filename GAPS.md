@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Deploy perbaikan konfirmasi tunai menunggu runner
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 memperbaiki kegagalan
+reservasi all-unmanaged, 114 tes lokal/static/type PASS. IMPLEMENTED_NOT_DEPLOYED;
+production ff2806bc tetap. Gate OPEN: izin satu run Linux tambahan maksimal8menit,
+2vCPU/8GB/Rp0 terverifikasi, paket immutable, fresh recovery dan guarded deploy.
+Executor menangani rilis setelah izin tersedia; operator kemudian mencoba kembali
+konfirmasi pembayaran yang sama, bukan membuat penjualan baru. Resep campuran
+tetap memerlukan penyiapan stok awal nyata oleh Owner. Pelunasan dan kertas asli
+belum diverifikasi pada versi ini. Layout dan printer tetap.
+
 ## 2026-10-19 - Handoff login deployed; acceptance Chromebook dan operasi tetap terbuka
 
 CONFIRMED ff2806bc6b678671aac2ba57023b175cdde921ee deployed/healthy,

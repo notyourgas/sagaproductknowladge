@@ -1,5 +1,19 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Penerimaan tunai dan stok belum terkelola
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659, LOCAL_VALIDATED,
+IMPLEMENTED_NOT_DEPLOYED. Diagnosis baca-saja dan reproduksi memori menemukan
+inventory_balance_not_found sebelum pembayaran tersimpan. Resep berbiaya valid
+yang seluruh bahannya belum terkelola kini mengikuti kebijakan UNMANAGED pada
+PREPARING tanpa mengarang kuantitas nol atau aset. Penerimaan tunai mencatat audit
+review stok. Kasir mempertahankan identitas/nominal konfirmasi saat pemulihan.
+Resep campuran, bahan tidak dikenal, periode tertutup dan reservasi ketat tetap
+fail-closed; Owner perlu membuat stok awal melalui workflow terkontrol existing.
+114 tes lokal, termasuk restart/idempotency/concurrency/browser recovery, serta
+static/type PASS. Linux/paket/deploy OPEN menunggu izin runner Rp0 tambahan.
+Production ff2806bc dan template/printer tetap; tidak ada pelunasan/TEST asli.
+
 ## 2026-10-19 - Sesi Kasir bersama dan penguncian Kiosk
 
 CONFIRMED sourceff2806bc6b678671aac2ba57023b175cdde921ee production-deployed,

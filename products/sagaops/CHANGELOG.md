@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Konfirmasi tunai all-unmanaged diperbaiki di source
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659. Sebelumnya reservasi
+stok menghalangi konfirmasi tunai meski semua bahan resep belum terkelola. Kini
+UNMANAGED eksplisit tanpa saldo/pergerakan stok buatan, audit dan pesan review.
+114 tes lokal/static/type PASS, Linux/paket/deploy OPEN. Production ff2806bc tetap;
+layout/printer dan pembayaran asli tidak disentuh. Guard stok campuran tetap;
+stok awal nyata menjadi tindak lanjut Owner. IMPLEMENTED_NOT_DEPLOYED.
+
 ## 2026-10-19 - Login sekali ke Kasir, Kiosk mengunci petugas
 
 CONFIRMED sourceff2806bc6b678671aac2ba57023b175cdde921ee deployed/healthy,

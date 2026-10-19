@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaOPS perbaikan tunai LOCAL_VALIDATED
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 memperbaiki all-unmanaged
+recipe reservation pada penerimaan tunai, tanpa stok/aset buatan. 114 tes lokal dan
+static/type PASS; Linux/paket/deploy OPEN menunggu izin runner Rp0 tambahan.
+Production ff2806bc, template dan printer tetap. Pembayaran asli/UAT belum ditutup.
+IMPLEMENTED_NOT_DEPLOYED; tidak mengubah status HR atau produk lain.
+
 ## 2026-10-19 - SagaOPS dashboard ke Kasir/Kiosk tanpa login ulang masuk
 
 CONFIRMED ff2806bc6b678671aac2ba57023b175cdde921ee deployed, rollback73326cf.

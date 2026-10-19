@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - SagaOPS perbaikan tunai lokal, gate rilis terbuka
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659, 114 tes lokal/static/type
+PASS; IMPLEMENTED_NOT_DEPLOYED. All-unmanaged recipe reservation tidak lagi
+menghalangi penerimaan tunai dan tidak membuat saldo stok buatan. Guard campuran,
+shift/tender/replay tetap. Linux/paket/deploy menunggu izin runner tambahan Rp0;
+production ff2806bc, nota/printer tetap. Pembayaran asli/UAT belum ditutup. Produk,
+dossier, master, gaps, sync dan changelog diselaraskan tanpa menimpa histori/HR.
+
 ## 2026-10-19 - SagaOPS sesi dashboard untuk Kasir dan Kiosk terkunci
 
 CONFIRMED sourceff2806bc6b678671aac2ba57023b175cdde921ee production-deployed,
