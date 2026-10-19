@@ -17,10 +17,12 @@ template deep equality, monitor/evidence dan browser live PASS; bukan paper UAT.
 Linux run39216726185 tetap282PASS/0FAIL/4SKIP, tanpa run tambahan.
 
 Andreas mengonfirmasi satu TEST server pada Chromebook aktual: nota keluar,
-layout/jarak/autocut sesuai. Readback WebUSB TEST SUBMITTED cocok, otomatis
-masih OFF dan tidak blocked. Physical OPERATOR_ACCEPTED, bukan USB ACK semata.
-Aktivasi layanan satu Chromebook masih menunggu langkah halaman: halaman
-menutup sesi Owner sebelum Mulai layanan. Kiosk/Kasir memakai layanan perangkat,
+layout/jarak/autocut sesuai. Readback awal WebUSB TEST SUBMITTED cocok dan
+autoOFF. Physical OPERATOR_ACCEPTED, bukan USB ACK semata. Andreas kemudian
+mengonfirmasi layanan berjalan menunggu pembayaran; fresh server readback
+enabled/commissioned/online true, blocked false. Satu Chromebook pilot aktif,
+tanpa TEST tambahan. Halaman menutup sesi Owner sebelum Mulai layanan.
+Kiosk/Kasir memakai layanan perangkat,
 bukan Owner terbuka. Tab/Chromebook tidur atau ditutup tidak menjamin cetak.
 Pembayaran sah/failure UAT dan reviewed-copy Kiosk masih OPEN; jangan membuat
 penjualan palsu atau menganggap USB ACK sebagai exactly-once fisik.

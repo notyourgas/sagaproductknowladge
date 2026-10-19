@@ -1,14 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
-## 2026-10-19 - WebUSB source73326cf deployed; physical diterima, auto belum aktif
+## 2026-10-19 - WebUSB source73326cf deployed; physical diterima, satu pilot autoON
 
 CONFIRMED current73326cf6328726587a69db2f06ed411835e90257/rollback4e9e39b.
 Layanan `/printer-service` live; fresh Owner/recovery/activation/Nginx/13file
 integrity/5negative boundaries dan monitor PASS. Core37/GATEWAY/template6/v3
 tetap; tidak menambah CI/builder/biaya atau melakukan penjualan/TEST fisik.
 Andreas mengonfirmasi server TEST Chromebook: nota/layout/jarak/autocut sesuai;
-readback WebUSB SUBMITTED cocok, physical OPERATOR_ACCEPTED. Auto masihOFF;
-aktivasi layanan/legitimate-payment/failure UAT dan copy Kiosk OPEN,
+readback WebUSB SUBMITTED cocok, physical OPERATOR_ACCEPTED. Setelah awalOFF,
+Andreas menjalankan layanan; enabled/commissioned/online true, blocked false.
+Satu pilot autoON; legitimate-payment/failure UAT dan copy Kiosk OPEN,
 NOT_BUSINESS_READY. Qualification282PASS/4SKIP dan staticbe56b9e physical
 acceptance tetap berbatas. Source HR/roster dan knowledge sebelumnya dipertahankan.
 Milestone ini memerlukan validator/public-safety/push/readback pada main HEAD.

@@ -1,6 +1,6 @@
 # SagaOPS Changelog
 
-## 2026-10-19 - WebUSB deployed, otomatis tetap menunggu commissioning
+## 2026-10-19 - WebUSB deployed, physical diterima dan satu pilot otomatis aktif
 
 CONFIRMED, kelanjutan Andreas setelah unlock Owner. Source73326cf6328726587a69db2f06ed411835e90257
 deployed, rollback4e9e39b; stage/fresh encrypted recovery/guarded activation/Nginx
@@ -10,8 +10,9 @@ Windows. Source qualification282PASS/4SKIP dipertahankan, tidak ada CI baru.
 Production berubah hanya pada backend/printer service; tidak membuat penjualan,
 TEST fisik executor atau aktivasi otomatis. Operator memasangkan Chromebook dan
 mengonfirmasi TEST baru: nota/layout/jarak/autocut sesuai; readback WebUSB TEST
-SUBMITTED cocok. Physical OPERATOR_ACCEPTED; auto masihOFF, layanan berjalan/
-legitimate-payment/failure UAT OPEN.
+SUBMITTED cocok. Physical OPERATOR_ACCEPTED. Setelah awalOFF, Andreas menjalankan
+layanan; readback enabled/commissioned/online true, blocked false. Satu pilot
+otomatis aktif; legitimate-payment/failure UAT tetap OPEN. Tidak ada TEST tambahan.
 NOT_BUSINESS_READY. Dokumen produk/dossier/master/gaps/sync dan changelog
 portfolio/root diperbarui; lane HR dan histori kegagalan dipertahankan.
 

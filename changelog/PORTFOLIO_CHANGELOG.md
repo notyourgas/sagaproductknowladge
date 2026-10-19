@@ -7,8 +7,9 @@ CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 deployed, rollback4e9e3
 activation/Nginx/13file integrity/5negative boundaries PASS; core37/GATEWAY dan
 desain aktif6/v3 tetap. Tidak ada run builder baru, transaksi palsu atau TEST
 executor. Andreas mengonfirmasi server TEST Chromebook baru: nota/layout/jarak/
-autocut sesuai; readback cocok. Physical OPERATOR_ACCEPTED, otomatis masihOFF;
-aktivasi layanan/pembayaran sah/failure UAT dan copy Kiosk masih OPEN.
+autocut sesuai; readback cocok. Physical OPERATOR_ACCEPTED. Setelah konfirmasi
+layanan berjalan, readback enabled/commissioned/online true, blocked false:
+satu pilot otomatis aktif. Pembayaran sah/failure UAT dan copy Kiosk masih OPEN.
 NOT_BUSINESS_READY; lane HR/roster independen dan produk lain tidak diubah.
 Sumber Andreas dan rilis exact-source; detail pada products/sagaops/PRODUCT.md.
 

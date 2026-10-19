@@ -1,6 +1,6 @@
 # Gaps dan Keputusan Founder
 
-## 2026-10-19 - WebUSB deploy gate tertutup; target commissioning masih OPEN
+## 2026-10-19 - WebUSB commissioning pilot lolos; transaksi nyata UAT masih OPEN
 
 CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 deployed/healthy, rollback4e9e39b.
 Owner/stage/fresh encrypted recovery/guarded activation/Nginx/13HTTP files/
@@ -8,8 +8,9 @@ Owner/stage/fresh encrypted recovery/guarded activation/Nginx/13HTTP files/
 baru setelah qualification282PASS/4SKIP. Blocker akses Owner sebelumnya CLOSED.
 Andreas mengonfirmasi satu TEST server Chromebook: nota/layout/jarak/autocut
 sesuai, readback cocok; physical OPERATOR_ACCEPTED. Tidak perlu TEST tambahan.
-Auto masihOFF pada readback. Konfirmasi halaman -> logout Owner ->
-Mulai layanan -> pilot satu perangkat -> pembayaran sah/failure UAT. Executor
+Awalnya autoOFF; Andreas kemudian mengonfirmasi layanan berjalan. Fresh readback
+enabled/commissioned/online true, blocked false; aktivasi satu pilot CLOSED/PASS.
+Remaining: pembayaran pelanggan sah/failure UAT. Executor
 memverifikasi state tanpa membuat transaksi palsu. Reviewed-copy Kiosk tetap
 OPEN; jangan menyamakan static TEST lama/spool/USB ACK dengan operasional baru.
 Tidur/penutupan tab tetap limit browser. NOT_BUSINESS_READY; lane HR tetap terpisah.

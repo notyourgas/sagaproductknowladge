@@ -7,8 +7,10 @@ production-deployed/current, rollback4e9e39b, `/printer-service` live. Guarded
 stage/fresh encrypted recovery/activation/Nginx/13HTTP files/5negative boundaries
 PASS; template6/v3/core37/GATEWAY tetap. Tidak ada builder baru atau transaksi palsu.
 Andreas mengonfirmasi satu TEST server Chromebook: nota/layout/jarak/autocut
-sesuai, readback cocok. Physical OPERATOR_ACCEPTED; otomatis masihOFF, layanan/
-legitimate-payment/failure UAT serta copy Kiosk OPEN, NOT_BUSINESS_READY.
+sesuai, readback cocok. Physical OPERATOR_ACCEPTED. Setelah awalOFF, Andreas
+mengonfirmasi layanan berjalan; fresh enabled/commissioned/online true, blocked
+false. Satu pilot otomatis aktif; legitimate-payment/failure UAT serta copy Kiosk
+OPEN, NOT_BUSINESS_READY. Tidak ada TEST tambahan atau transaksi yang dibuat executor.
 File: products/sagaops/PRODUCT.md,DOSSIER.md,CHANGELOG.md,portfolio/master/GAPS/
 SYNC_STATUS/root CHANGELOG. Histori dan HR independen dipertahankan. Provenance
 knowledge: main HEAD setelah validator/public-safety/push/readback terpisah.

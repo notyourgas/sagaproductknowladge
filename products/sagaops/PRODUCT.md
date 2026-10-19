@@ -1,6 +1,6 @@
 # SagaOPS Product Knowledge
 
-## 2026-10-19 - Layanan WebUSB deployed; TEST fisik baru diterima
+## 2026-10-19 - WebUSB deployed, TEST fisik lolos, satu pilot otomatis aktif
 
 CONFIRMED: backend **73326cf6328726587a69db2f06ed411835e90257** sudah deployed,
 rollback **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** dipertahankan. Halaman
@@ -16,12 +16,15 @@ run39216726185 tetap berbatas; tidak ada run/builder baru atau proteksi dilemahk
 
 Andreas mengonfirmasi TEST layanan baru pada Chromebook: nota keluar, layout/
 jarak dan autocut sesuai. Server cocok: transport WebUSB, TEST SUBMITTED;
-ini konfirmasi operator, bukan inferensi USB ACK. AutoOFF pada readback setelah
-TEST; aktivasi satu layanan/perangkat serta pembayaran sah/failure UAT masih
-OPEN. TEST baru ini terpisah dari staticbe56b9e. Setelah TEST sesuai: konfirmasi
-di halaman, logout Owner, Mulai layanan, lalu Kiosk/Kasir; tab harus tetap
+ini konfirmasi operator, bukan inferensi USB ACK. Readback awal setelah TEST
+autoOFF; Andreas kemudian mengonfirmasi layanan berjalan menunggu pembayaran.
+Fresh server readback: enabled/commissioned/online true dan blocked false.
+Satu pilot Chromebook kini aktif, bukan rollout semua perangkat. TEST baru
+terpisah dari staticbe56b9e. Alur halaman menutup sesi Owner sebelum layanan;
+operasional memakai Mulai layanan lalu Kiosk/Kasir. Tab harus tetap
 terbuka dan Chromebook terjaga. Copy Kiosk tetap gap terpisah. Tidak ada penjualan
-palsu atau klaim physical exactly-once; NOT_BUSINESS_READY. Lane HR dipertahankan.
+palsu atau klaim physical exactly-once. Pembayaran pelanggan sah/failure UAT
+masih OPEN; NOT_BUSINESS_READY. Lane HR dipertahankan.
 
 ## 2026-10-19 - Antrean WebUSB otomatis qualified, belum deployed
 
