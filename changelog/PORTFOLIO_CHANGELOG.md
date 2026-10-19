@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaPOS Windows backend dan native ingress deployed
+
+- CONFIRMED backend4e9e39bade2fa5c7aeff832f84a23d6028dbd640; final20PASS,
+  263PASS guarded exact-input reuse/4retainedSKIP, static/type/packagePASS.
+  Tiga job13m14s/Rp0; bukan fresh full suite. Native/layout0.3.1 tetap.
+- Backend4e9e39b/rollback36d8024 deployed/active; stage/recovery/monitor/native
+  ingress PASS, template6 persis sama, schema37/GATEWAY unchanged. Backup/restore
+  dan3encrypted salinan PC checksumPASS; managed offsiteUNVERIFIED.
+  Cache rebuildable diarsipkan/verified/cleaned. Target laptop/UAT OPEN, autoOFF,
+  TEST_NOT_SENT, NOT_BUSINESS_READY. Tidak merilis ulang produk lain.
+
 ## 2026-10-19 - SagaPOS roster Oktober dipublikasikan
 
 CONFIRMED, Andreas meminta publish/retest. Owner meninjau107draft/4staf dan

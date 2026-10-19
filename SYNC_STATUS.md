@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - Snapshot deployment Windows backend dan native ingress
+
+CONFIRMED source4e9e39bade2fa5c7aeff832f84a23d6028dbd640 pushed clean;
+Linux final20PASS/0FAIL/0SKIP, static/type/packagePASS.263PASS exact-input reuse
+dan4retainedSKIP bukan fresh full suite. Dua run gagal tetap tercatat; total3job
+13m14s, Rp0/batas15menit. Native/paket0.3.1/source6b9ecf2a tidak berubah.
+Production4e9e39bade2fa5c7aeff832f84a23d6028dbd640/rollback36d8024/GATEWAY active;
+artifact/stage/exact recovery/activation/monitor/ingress PASS. Encrypted backup/
+restore dan3checksum salinan PC terpisah PASS; managed offsiteUNVERIFIED.
+Cache rebuildable diarsipkan/verified/cleaned, bukan bypass kapasitas. Backend DEPLOYED,
+template6/autoOFF, TEST_NOT_SENT, laptoptarget/UAT OPEN, NOT_BUSINESS_READY.
+Knowledge main HEAD setelah validator/push/readback; snapshot lama adalah histori.
+
 ## 2026-10-19 - Snapshot publikasi roster Oktober10.08WIB
 
 CONFIRMED: actual Owner publish107jadwal/4staf/0konflik,version13→14→15,

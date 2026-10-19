@@ -1,5 +1,43 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Final correction dan guarded native desktop release
+
+CONFIRMED backend **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** pushed clean.
+Run pertama6m20s:261PASS/1FAIL/4SKIP, virtual Host probe salah. Run kedua4m37s:
+263PASS/1FAIL/4SKIP, actual NginxPASS tetapi computed font dibaca dari heading
+yang terlepas saat rerender. Kedua assertion diperbaiki tanpa mengubah aplikasi,
+UI/receipt/layout, RBAC, database atau paket Windows.
+
+Run final2m17s:20PASS/0FAIL/0SKIP serta static1184/37migrasi/type PASS dan package
+PASS. Total13m14s di bawah15menit/Rp0.263PASS reused hanya setelah baseline
+source/hash log cocok dan semua delta dibatasi5test/workflow/verifier files;
+4SKIP tetap terbuka/terpisah, bukan fresh full268PASS atau whole-product UAT.
+Artifact TAR SHA946c7002f8fd052709d3beaf0302c64f5f07df82130ee8842acc37c65b028da0.
+Windows scripts identik terhadap source6b9ecf2a; ZIP/MSIX0.3.1 tidak dibangun ulang.
+
+Production **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** deployed/active,
+rollback **36d8024d2244b97a5e0951ddb023ba4c256a8f4d**; schema37/GATEWAY/lifecycle
+UNCHANGED. Transfer integrity, stage, exact-candidate disposable recovery,
+activation dan monitor PASS. Native ingress aktif; browser Basic retained,
+invalid device/operator denied, staff/admin unchanged. Pilot feature flag ON
+bukan cetak otomatis ON. Owner read-back dan deep object comparison membuktikan
+template6/v3 persis sama; native revision3/enabledfalse/commissionedfalse.
+Fresh encrypted backup/disposable restore dan3encrypted checksum salinan PC
+terpisah PASS; managed offsite UNVERIFIED tetap.
+
+Single-stream transfer timeout; bounded ranges menghasilkan exact verified ZIP.
+Absolute builder sidecar path ditolak dahulu, lalu divalidasi secara persis dan
+dinormalisasi hanya pada transport sidecar; immutable TAR tidak berubah.
+Stage projected85 ditahan, cache rebuildable diarsipkan/verified sebelum cleanup;
+gate disk tidak diturunkan, database/backup/release lain tidak dihapus.
+Ingress attempt1 rollbackPASS karena probe langsung tidak membawa forwarded
+HTTPS. Koreksi command-record memakai header setara; r2 apply/postchecks PASS,
+tanpa melonggarkan auth atau mengubah aplikasi. Tidak ada production TEST.
+Target laptop/printer belum diakses; installed executor bukan penerimaan target.
+Installer unsigned internal, bukan trusted publisher. Dokumen status pendamping
+paket menjelaskan backend kini deployed tanpa mengubah ZIP0.3.1. Target physical
+dan satu siklus operator sah masih OPEN, autoOFF, NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Publikasi roster Oktober dan retest gap absensi
 
 CONFIRMED; instruksi Andreas “Ok publishkan sekalian ulang tes yang gagal”.

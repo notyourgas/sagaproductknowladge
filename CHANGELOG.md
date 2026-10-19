@@ -1,5 +1,20 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - knowledge(sagaops): Windows backend dan ingress deployed
+
+- CONFIRMED source4e9e39bade2fa5c7aeff832f84a23d6028dbd640 dari job terminal:
+  before Linux FAIL; after final20PASS/0FAIL/0SKIP,263PASS exact-input reuse dan
+  4retainedSKIP, static/type/packagePASS. Dua kegagalan tes tetap dicatat.
+- Total3job13m14s/Rp0; koreksi tidak mengubah UI/layout/native0.3.1. Backup
+  terenkripsi/disposable restore/3salinan PC checksumPASS; managed offsiteUNVERIFIED.
+  Backend4e9e39b/rollback36d8024 deployed/active, native ingress/stage/recovery/
+  monitorPASS; schema37/GATEWAY/template6 tetap, autoOFF, TEST_NOT_SENT.
+- Transfer/sidecar/storage/probe failures retained; hanya cache rebuildable
+  diarsipkan/verified/cleaned. Tidak menurunkan guard atau mengubah bisnis lain.
+- Dampak SagaOPS/SagaPOS PRODUCT/DOSSIER/product/portfolio/root changelogs,
+  master/GAPS/DECISIONS/SYNC; source bukan target installed/commissioned/UAT.
+  Laptop/UAT OPEN, NOT_BUSINESS_READY. Knowledge main HEAD setelah push.
+
 ## 2026-10-19 - knowledge(sagaops): publish roster Oktober dan catat retest
 
 CONFIRMED; sumber instruksi Andreas/publikasi Owner/active runtime. Before

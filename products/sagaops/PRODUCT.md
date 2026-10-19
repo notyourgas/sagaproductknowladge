@@ -1,5 +1,29 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Backend Windows dua mode deployed; target/UAT masih OPEN
+
+CONFIRMED source **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** committed/pushed.
+Koreksi tes virtual Host dan computed font tidak mengubah aplikasi atau nota.
+Linux final20PASS/0FAIL/0SKIP termasuk actual Nginx. Bukti263PASS yang inputnya
+identik dipakai ulang dengan guard exact-source, hash log dan whitelist delta;
+4SKIP tetap tercatat (3Windows-only dan1paired-Platform SaaSHR). Ini bukan
+pengujian penuh baru atau UAT operasional. Dua run gagal terdahulu dipertahankan.
+Tiga job total13m14s, di bawah izin15menit, Rp0 tanpa perubahan billing.
+
+Production **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** kini deployed/active,
+rollback **36d8024d2244b97a5e0951ddb023ba4c256a8f4d**, GATEWAY existing.
+Artifact integrity/stage/exact-candidate recovery/activation/monitor PASS.
+Native ingress aktif dengan browser gate tetap dan tiket tidak valid ditolak;
+staff/admin tidak berubah. Transfer timeout, sidecar-path rejection, storage85
+dan probe-HTTPS rollback dipertahankan sebagai histori, bukan disembunyikan.
+Cache rebuildable diarsipkan/disalin/verified sebelum dibersihkan; batas disk
+tidak diturunkan. Backup terenkripsi/disposable restore dan3checksum salinan
+PC terpisah PASS; managed offsite tetap UNVERIFIED.
+Template aktif6 tidak berubah; otomatis OFF, TEST fisik baru NOT_SENT.
+Paket Windows0.3.1.0/source6b9ecf2a tetap unsigned internal, installed executor
+saja. Laptop sasaran belum installed/commissioned dan UAT siklus nyata OPEN.
+NOT_BUSINESS_READY. Snapshot sebelumnya di bawah merupakan histori.
+
 ## 2026-10-19 - Jadwal Oktober empat staf sudah dipublikasikan
 
 CONFIRMED: atas permintaan Andreas, Owner memvalidasi ulang draft Oktober lalu

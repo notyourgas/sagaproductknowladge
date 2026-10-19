@@ -1,5 +1,26 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Linux dan deployment tertutup; target/UAT tetap OPEN
+
+CONFIRMED source4e9e39bade2fa5c7aeff832f84a23d6028dbd640 final20PASS/0FAIL/0SKIP;
+263PASS reused dengan exact-input guard,4SKIP retained. Artifact built, tiga job
+total13m14s/Rp0. Tidak perlu meminta izin runner yang sama lagi atau mereset batas.
+
+- Release Lead: artifact integrity/stage/exact recovery/backend activation/
+  native ingress/monitor PASS. Production4e9e39b/rollback36d8024, schema37/
+  GATEWAY unchanged; template6 deep-compare EXACT. Encrypted backup/restore/
+  3checksum salinan PC terpisah PASS; managed offsite tetap UNVERIFIED.
+- Maintenance: storage gate85 sempat menahan stage; hanya cache rebuildable
+  yang diarsipkan/verified/cleaned. Pertahankan monitoring kapasitas; jangan
+  menghapus backup/rollback atau memperluas kapasitas berbayar tanpa izin.
+- Andreas/operator: laptop baru belum terpasang/commissioned. Paket0.3.1 unsigned
+  internal tersedia; satu TEST dan konfirmasi layout/footer/autocut masih wajib.
+- Owner/petugas: pemeriksa kedua existing, transaksi sah dan UAT buka shift,
+  pembayaran/nota, pengeluaran, closing/handover masih OPEN. Auto tetap OFF.
+
+Tidak ada transaksi production palsu, grant atau proteksi Windows berubah.
+NOT_BUSINESS_READY. Catatan kegagalan/izin lama di bawah dipertahankan sebagai histori.
+
 ## 2026-10-19 - Publikasi roster selesai; konfirmasi staf dan foto tetap terbuka
 
 CONFIRMED: gap publish Oktober ditutup atas instruksi Andreas:107jadwal/4staf,

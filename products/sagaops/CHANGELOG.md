@@ -1,5 +1,20 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Correction Linux dan native desktop backend deployed
+
+- CONFIRMED source4e9e39bade2fa5c7aeff832f84a23d6028dbd640; dua bug tes
+  Host/font ditutup tanpa mengubah aplikasi/layout. Final20PASS/0FAIL/0SKIP,
+  263PASS exact-input reuse/4retainedSKIP; bukan fresh full acceptance.
+- Tiga job13m14s/Rp0, static1184/37/type/packagePASS. Windows0.3.1/source6b9ecf2a
+  tetap. Production4e9e39b/rollback36d8024 aktif; artifact/stage/exact recovery/
+  activation/monitor/native ingress PASS. Template6 deep-compare EXACT;
+  schema37/GATEWAY unchanged. Encrypted backup/restore/3salinan PC checksumPASS,
+  managed offsiteUNVERIFIED. Tidak ada TEST, auto-enable atau UAT nyata.
+- Transfer/sidecar-path/storage85/probeHTTPS failures retained. Hanya cache
+  rebuildable diarsipkan/verified/cleaned; tidak menurunkan guard atau auth.
+- PRODUCT/DOSSIER/master/GAPS/DECISIONS/SYNC/portfolio/root disinkronkan;
+  target laptop/commissioning OPEN dan NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Roster Oktober terbit, retest absensi tetap terbuka
 
 - CONFIRMED; Andreas meminta publish dan retest. Active36d8024/rollback14507c0

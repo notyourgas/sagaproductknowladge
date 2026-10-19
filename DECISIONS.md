@@ -34,10 +34,14 @@ rilis setelah checkpoint ini mengikuti[DEC-272](#dec-272---sagapos-rolling-menja
 ## DEC-270 - SagaPOS Windows satu aplikasi dua mode operasional
 
 Tambahan19Okt: Andreas mengizinkan runner GitHub2CPU/8GB maksimal15menit
-hanya jika Rp0 terverifikasi. Satu job6m20s telah selesaiFAIL dan dibersihkan;
-satu koreksi max8menit masih menunggu jawaban terpisah, tidak diotorisasi oleh
-catatan ini. Source koreksi1a7ccf5 hanya test/workflow; tidak mengubah arah
-produk, layout, proteksi, hak production atau batas commissioning/UAT.
+hanya jika Rp0 terverifikasi, kemudian mengizinkan koreksi8menit dan kelanjutan
+scope secara eksplisit. Tiga job selesai total13m14s; final20PASS,263baselinePASS
+exact-input reuse/4retainedSKIP, packagePASS. Bukan fresh full suite atau UAT.
+Source4e9e39b hanya koreksi test/workflow; arah produk, layout, proteksi, hak
+production dan batas commissioning/UAT tidak berubah. Tidak ada biaya/billing baru.
+Kelanjutan scope juga mencakup guarded deployment: backend4e9e39b dan native
+ingress kini deployed, rollback36d8024; template6 unchanged dan autoOFF.
+Paket Windows tetap6b9ecf2a/0.3.1 unsigned internal; penerimaan target bukan waiver.
 
 | Field | Isi |
 |---|---|

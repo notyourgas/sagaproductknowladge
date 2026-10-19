@@ -1,5 +1,23 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaPOS backend Windows deployed; commissioning target belum
+
+CONFIRMED backend **4e9e39bade2fa5c7aeff832f84a23d6028dbd640** pushed;
+final20PASS/0FAIL/0SKIP termasuk actual Nginx, static/type dan immutable package
+PASS.263PASS baseline reuse terikat source/hash log/whitelist delta;4SKIP tetap,
+bukan fresh full suite. Dua kegagalan terdahulu dicatat; tiga job13m14s di bawah
+izin15menit/Rp0. Koreksi hanya test/workflow, layout dan paket0.3.1/source6b9ecf2a
+tidak berubah. Paket installed executor saja, unsigned internal.
+
+Production kini **4e9e39bade2fa5c7aeff832f84a23d6028dbd640**, rollback36d8024,
+schema37/GATEWAY/lifecycle unchanged. Artifact/stage/exact recovery/activation/
+monitor/native ingress PASS. Browser gate tetap; invalid device ditolak, staff/
+admin tidak berubah. Cache rebuildable disalin/verified sebelum cleanup untuk
+melewati kapasitas tanpa menurunkan guard. Encrypted backup/disposable restore
+dan3checksum salinan PC terpisah PASS, managed offsite UNVERIFIED.
+Template6 terbukti persis sama, nativeautoOFF dipertahankan; TEST_NOT_SENT, laptop
+sasaran/UAT nyata OPEN, NOT_BUSINESS_READY. Catatan lama di bawah adalah histori.
+
 ## 2026-10-19 - SagaPOS: roster Oktober terbit, belum UAT staf
 
 CONFIRMED: Owner mempublikasikan roster Oktober atas instruksi Andreas pada
