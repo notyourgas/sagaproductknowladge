@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Checker Bar tersedia di kandidat, belum production
+
+CONFIRMED source **50c455456852e4a57254e80d57974e8f149d8ae8** menambahkan tiket
+produksi ringkas: nomor, nama panggilan opsional, waktu, jenis pesanan, item,
+opsi dan catatan, tanpa harga. Checker dan nota pelanggan memakai satu antrean
+WebUSB, identitas dokumen terpisah, urutan checker lalu nota dan satu cut per tiket.
+Ukuran teks/ruang potong, TEST, konfirmasi kertas, aktivasi dan salinan beralasan
+tersedia untuk Owner. Template nota pelanggan tidak diubah.
+
+IMPLEMENTED_NOT_DEPLOYED; checker default OFF. Production tetap **edce5a6** sehat;
+perubahan harga normal telah digabung ke kandidat, tidak ditimpa. Gate Linux/
+PostgreSQL dan paket/recovery/deploy baru belum dijalankan; allowance runner lama
+habis, tambahan delapan menit Rp0 menunggu keputusan. TEST kertas Chromebook,
+autocut dan aktivasi checker masih OPEN. Bukan BUSINESS_READY.
+
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 CONFIRMED oleh Andreas: SagaPOS memakai harga normal tanpa TRIAL99 otomatis,

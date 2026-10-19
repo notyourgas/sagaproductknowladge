@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Checker Bar source tersedia; qualification dan kertas OPEN
+
+CONFIRMED source50c455456852e4a57254e80d57974e8f149d8ae8, harga normal terbaru
+digabung. Productionedce5a6 tidak diubah. IMPLEMENTED_NOT_DEPLOYED, checker OFF.
+Penyebab tertahan: allowance run Linux sebelumnya terpakai; tidak boleh memakai
+VPS production sebagai builder atau membeli kapasitas. Andreas: putuskan satu
+allowance maksimal8menit2vCPU/8GB hanya setelah kuota gratis diverifikasi.
+Executor: qualification PG/Linux, paket, backup/recovery, guarded deploy dan
+verifikasi. Sesudah itu Andreas: satu TEST checker pada Chromebook, konfirmasi
+nama/isi/jarak/autocut sebelum aktivasi. Penerimaan nota pelanggan lama bukan
+bukti checker baru. Routing station/per-cup bukan scope versi ini.
+
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 CONFIRMED oleh Andreas: SagaPOS memakai harga normal tanpa TRIAL99 otomatis,

@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-19 - SagaOPS Checker Bar kandidat, belum rilis
+
+CONFIRMED50c455456852e4a57254e80d57974e8f149d8ae8: checker produksi setelah
+pembayaran terverifikasi melalui antrean WebUSB bersama, dengan pengaturan dan
+commissioning terpisah. Nota pelanggan/harga normal dipertahankan. Source saja;
+productionedce5a6 tidak diubah, Linux/package/recovery/deploy dan TEST kertas
+OPEN. Runner tambahan8menit/Rp0 menunggu keputusan; checker OFF, bukan siap bisnis.
+
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 CONFIRMED oleh Andreas: SagaPOS memakai harga normal tanpa TRIAL99 otomatis,

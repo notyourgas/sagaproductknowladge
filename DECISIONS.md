@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-276 - Checker Bar ringkas pada printer existing
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-19 |
+| Klasifikasi | CONFIRMED |
+| Topik | Tiket produksi sebagai fallback tanpa device KDS |
+| Keputusan | Satu checker per order setelah pembayaran terverifikasi, tanpa harga; antrean WebUSB yang sama, pengaturan dan penerimaan kertas terpisah. |
+| Alasan | Andreas membutuhkan identitas pelanggan, waktu/nomor dan rincian pesanan untuk staf bar. |
+| Alternatif | Routing station/per-cup dan printer baru ditunda; tidak memakai dialog cetak browser. |
+| Dampak | Source50c455456852e4a57254e80d57974e8f149d8ae8; nickname opsional Kiosk/Kasir, ledger dan salinan beralasan; nota pelanggan/harga normal tetap. |
+| Pemberi keputusan | Andreas. |
+| Status | IMPLEMENTED_NOT_DEPLOYED; default OFF; qualification Linux/PG, paket/recovery, deploy dan TEST kertas/aktivasi OPEN. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md). |
+
 ## DEC-275 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 | Field | Isi |

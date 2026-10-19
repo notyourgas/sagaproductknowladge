@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Kandidat Checker Bar pada layanan WebUSB bersama
+
+CONFIRMED source50c455456852e4a57254e80d57974e8f149d8ae8, termasuk baseline
+productionedce5a6. Satu checker untuk seluruh item satu order berbayar, tanpa
+routing per station atau label per gelas. Nama panggilan opsional masuk dari
+Kiosk/Kasir, tersimpan atomik pada intent BAR dalam tabel print jobs existing;
+WAITING_PAYMENT bukan izin kirim. Tidak ada migrasi database baru.
+
+Setelah server memverifikasi pembayaran, snapshot checker dan nota dibuat
+terpisah sebelum USB. Satu consumer/lock/ledger mengirim checker lalu nota;
+feed/cut hanya pada masing-masing RAW document. Pending/histori dikecualikan,
+UNKNOWN menahan printer, salinan eksplisit bernomor/beralasan. Cetak tidak
+mengubah status persiapan atau menyimpulkan kertas dari SUBMITTED.
+
+Pengaturan/TEST/commissioning checker independen, tidak reset pairing atau
+template pelanggan. Kandidat belum deployed; physical commissioning dan
+aktivasi OFF. Gate Linux/PG, paket/recovery serta UAT Chromebook masih OPEN;
+perlu allowance runner baru maksimal8menit, Rp0 terverifikasi. Production tidak
+berubah oleh milestone ini. NOT_BUSINESS_READY.
+
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 CONFIRMED oleh Andreas: SagaPOS memakai harga normal tanpa TRIAL99 otomatis,

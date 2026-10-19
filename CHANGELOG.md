@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - Kandidat Checker Bar, bukan rilis production
+
+CONFIRMED dari permintaan Andreas, source50c455456852e4a57254e80d57974e8f149d8ae8
+dan pemeriksaan runtimeedce5a6 sehat. Sembilan dokumen produk/dossier/changelog,
+master, keputusan, gap dan sync diperbarui. Tujuan: fallback bar tanpa device KDS;
+perubahan: checker ringkas dan penyiapan terpisah pada antrean WebUSB existing.
+Source pushed, IMPLEMENTED_NOT_DEPLOYED; production/printer/nota pelanggan tidak
+diubah. Allowance8menit/Rp0, Linux/PG, paket/recovery/deploy dan physical UAT
+masih OPEN. Tidak memuat customer PII, kredensial, raw receipt atau evidence privat.
+Provenance knowledge mengikuti main HEAD setelah commit.
+
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 CONFIRMED oleh Andreas: SagaPOS memakai harga normal tanpa TRIAL99 otomatis,

@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Checker Bar implemented, belum deployed
+
+CONFIRMED keputusan Andreas untuk tiket produksi sebagai fallback KDS.
+Source50c455456852e4a57254e80d57974e8f149d8ae8 menambah nama panggilan Kiosk/
+Kasir, format checker, pengaturan Owner, TEST terpisah, antrean WebUSB bersama,
+guard pembayaran/ketidakpastian dan salinan beralasan. Harga normal production
+digabung; layout nota pelanggan tetap. IMPLEMENTED_NOT_DEPLOYED, default OFF.
+Linux/PG/paket/recovery/deploy dan kertas/autocut belum lolos; allowance baru
+Rp0 menunggu keputusan. Productionedce5a6 tidak diubah. NOT_BUSINESS_READY.
+
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 CONFIRMED oleh Andreas: SagaPOS memakai harga normal tanpa TRIAL99 otomatis,
