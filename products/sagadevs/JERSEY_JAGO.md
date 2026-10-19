@@ -2,32 +2,32 @@
 
 ## Tujuan dokumen
 
-Mencatat scope dan bukti prototype visual client Jersey Jago dalam layanan SagaDevs, tanpa menyamakannya dengan toko produksi atau perubahan COYABAG.
+Mencatat prototype visual client Jersey Jago dan batas buktinya dalam layanan SagaDevs.
 
 ## Konteks dan status bukti
 
-Tanggal: 20 Oktober 2026. Klasifikasi: CONFIRMED berdasarkan arahan Andreas, source commit lokal `9e68ebd0e8824ac85bb3d0349e958b6e75371736`, build dan pemeriksaan browser pada prototype yang sama. Source ini terpisah dari source/runtime COYABAG dan website marketing SagaDevs. Source client belum dipush ke repository remote; hash lokal tidak diklaim dapat diakses publik.
+20 Oktober 2026. CONFIRMED: atas arahan Andreas, source lokal `5c050daad8585a869431d53768210091d65f5790` merevisi prototype client ke versi 02. Source terpisah dari COYABAG dan marketing SagaDevs; belum dipush ke source remote. Hash lokal bukan tautan repository publik.
 
-## Ringkasan
+## Arah visual revisi 02
 
-Prototype storefront jersey untuk review visual: streetwear minimalis, ivory/ink/emas matte, Plus Jakarta Sans untuk interface dan Anton untuk headline. Pilihan emas menggantikan lime sesuai arahan Andreas. Ini arah prototype, bukan persetujuan final desain atau penawaran komersial.
+Streetwear minimalis dengan komposisi editorial lebih eksperimental: headline bertumpuk, foto rail offset, stempel emas, culture strip bergerak, katalog asimetris, baris klub dan wordmark footer miring. Palette ivory/ink/emas dan Plus Jakarta Sans/Anton dipertahankan. Font sekarang memakai WOFF2 yang sesuai; Jakarta Sans variable mendukung bobot bold. Preferensi reduced motion mematikan animasi.
 
-## Fitur dan alur yang diperiksa
+## Detail produk dan alur
 
-Beranda editorial, katalog empat contoh ready dan dua sold, filter klub/ketersediaan, pencarian dan empty state, detail produk, zoom foto, menu mobile, wishlist dan bag simulasi per sesi. Filter Chelsea menampilkan dua contoh ready, pencarian tanpa kecocokan menampilkan empty state, bag menolak duplikasi SKU satuan dan barang sold.
+Hierarki visual mengikuti halaman detail Steal My Jersey yang diperiksa: foto besar di kiri, judul sans-serif tebal, harga, kondisi tersegmentasi, aksi utama, facts, pengukuran flat dan accordion. Katalog memiliki quick look yang membuka full details. Galeri depan/crop, zoom, wishlist dan bag simulasi tersedia. Mobile mempunyai aksi bag tetap; state SKU tersinkron di quick look/detail/tombol mobile. Skip-to-content mempertahankan halaman produk.
 
-## Source dan runtime
+## Validasi
 
-Build static menghasilkan delapan berkas yang diizinkan server. Pemeriksaan Node terfokus 3/3 PASS untuk filter, bag dan batas file statis. Browser desktop dan viewport mobile 390px diperiksa; pada viewport tersebut tidak ditemukan overflow horizontal. Halaman, foto dan font berhasil diakses melalui temporary tunnel HTTPS, tanpa error console pada pemeriksaan yang dilakukan. Endpoint konfigurasi/source/log yang diuji mengembalikan 404. Ini bukan audit keamanan menyeluruh atau acceptance perangkat fisik.
+Build statis delapan berkas; empat tes Node PASS untuk filter, SKU satuan, allowlist server dan format font. Browser desktop, 390px dan beranda 320px diperiksa tanpa overflow horizontal yang teramati. Quick look, full details, galeri, zoom, accordion, menu mobile, empty search, sold serta bag diperiksa. Grade 8.5 menampilkan setengah segmen. Delapan hash berkas publik cocok manifest; tiga path privat/source/config yang diuji mengembalikan 404. Tidak ada error console teramati. Ini pemeriksaan terfokus, bukan audit keamanan menyeluruh atau acceptance perangkat fisik.
 
 ## Data dan aset
 
-Seluruh harga, ukuran, kondisi dan stok adalah contoh. Foto katalog berasal dari screenshot referensi yang disediakan untuk prototype; hero adalah ilustrasi AI. Foto asli resolusi tinggi dan data produk aktual masih perlu disiapkan. Tidak ada order, pembayaran, reservasi stok, provider, customer account atau data produksi yang ditulis.
+Empat ready dan dua sold merupakan contoh. Harga, ukuran, kondisi dan ketersediaan adalah data ilustratif. Foto produk berasal dari screenshot yang diberikan; galeri menampilkan depan dan crop dari foto yang sama, bukan foto belakang/label yang dikarang. Hero merupakan ilustrasi AI. Foto asli resolusi tinggi, label dan catatan pemeriksaan setiap barang masih dibutuhkan. Tidak ada order/payment, reservasi stok, provider, customer account atau data produksi yang ditulis.
 
-## Status saat ini
+## Runtime dan status
 
-LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED. Belum toko production, belum implementasi commerce client dan belum BUSINESS_READY. URL tunnel bersifat sementara dan hanya disampaikan melalui task review; tidak dijadikan domain produksi atau tautan kanonik di knowledge publik. Preview bergantung pada proses lokal dan komputer tetap online. Source/runtime COYABAG tidak berubah.
+LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED. Temporary HTTPS tunnel untuk review HP tetap bergantung pada PC, server dan proses tunnel online. Kedua proses dijalankan terpisah dari shell peluncur; tidak ada service, autostart atau DNS produksi baru. URL sementara tidak menjadi domain kanonik di knowledge publik. Source/runtime COYABAG dan produksi lain tidak berubah; belum BUSINESS_READY.
 
-## Keputusan dan next action
+## Keputusan dan tindak lanjut
 
-Andreas mereview visual melalui HP; persetujuan desain belum diberikan. Setelah koreksi visual, tentukan aset asli dan model stok, lalu adaptasi kontrak katalog/admin/integrasi COYABAG secara terpisah. Scope saat ini tidak mengaktifkan pembayaran, pengiriman, buyback, konsinyasi, atau printing.
+Scope revisi dikonfirmasi Andreas; sign-off hasil revisi 02 masih OPEN. Berikutnya review visual dan aset/data nyata, lalu adaptasi katalog/admin/integrasi commerce COYABAG sebagai pekerjaan terpisah. Payment, shipping, buyback, konsinyasi dan printing belum diaktifkan.

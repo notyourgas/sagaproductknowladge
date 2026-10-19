@@ -2,7 +2,7 @@
 
 ## 2026-10-20 - Jersey Jago belum design sign-off atau commerce
 
-CONFIRMED prototype visual tersedia; NEEDS CONFIRMATION: review Andreas, foto produk asli, data/kondisi nyata, model stok, kebijakan dan integrasi merchant/pengiriman. Tidak ada aktivasi toko produksi. [Scope dan bukti](products/sagadevs/JERSEY_JAGO.md).
+CONFIRMED revisi 02 prototype visual tersedia; NEEDS CONFIRMATION: sign-off Andreas terhadap revisi eksperimental/detail produk, foto asli termasuk belakang/label, data/kondisi nyata, model stok, kebijakan dan integrasi merchant/pengiriman. Galeri saat ini hanya depan/crop dari referensi yang sama. Tidak ada aktivasi toko produksi. [Scope dan bukti](products/sagadevs/JERSEY_JAGO.md).
 
 ## 2026-10-20 - Cash operations deployed; UAT nyata belum ditutup
 

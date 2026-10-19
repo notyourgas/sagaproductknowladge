@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-280 - Jersey Jago revisi visual eksperimental
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 20 Oktober 2026 |
+| Topik | Revisi 02 prototype client |
+| Keputusan | UI/UX lebih eksperimental; style detail produk mengikuti referensi Steal My Jersey dengan identitas Jersey Jago |
+| Alasan | Permintaan koreksi visual Andreas setelah membuka preview |
+| Alternatif | Mempertahankan komposisi revisi 01 |
+| Dampak | Beranda editorial, quick look, PDP galeri/kondisi/ukuran/accordion dan aksi bag mobile; palette/font utama tetap |
+| Pemberi keputusan | Andreas |
+| Status | CONFIRMED untuk scope revisi; sign-off hasil revisi 02 OPEN |
+| Dokumen terkait | [Jersey Jago](products/sagadevs/JERSEY_JAGO.md) |
+
 ## DEC-279 - Jersey Jago memakai prototype streetwear minimalis emas
 
 | Field | Nilai |

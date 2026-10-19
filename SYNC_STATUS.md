@@ -2,7 +2,7 @@
 
 ## 2026-10-20 - Jersey Jago prototype visual tersinkron
 
-CONFIRMED source client lokal 9e68ebd0e8824ac85bb3d0349e958b6e75371736, belum source remote. Knowledge disiapkan dari checkout bersih main yang diperbarui dari origin/main; checkout kanonik yang divergen dipertahankan. Status preview sementara, bukan deployment production. Validator/diff/public-safety serta push/readback dicatat pada hasil run; UAT visual Andreas OPEN.
+CONFIRMED source client lokal 5c050daad8585a869431d53768210091d65f5790, revisi 02; belum source remote. Knowledge diperbarui dari checkout bersih main/origin-main yang sama. Status LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; empat tes PASS dan delapan hash aset publik cocok. Validator/diff/public-safety serta push/readback dicatat pada hasil run. Review revisi 02 Andreas OPEN; bukan toko produksi.
 
 ## 2026-10-20 - Cash operations deployed, bukan selesai UAT
 

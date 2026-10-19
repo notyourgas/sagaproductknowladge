@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-20 - Jersey Jago revisi 02: editorial eksperimental dan detail produk
+
+CONFIRMED, arahan Andreas; source lokal `5c050daad8585a869431d53768210091d65f5790`, belum source remote. Sebelumnya prototype streetwear dasar; kini headline bertumpuk, katalog asimetris, quick look, detail produk mengikuti hierarki Steal My Jersey, galeri depan/crop, ukuran, accordion dan aksi bag tetap di mobile. Jakarta Sans variable diperbaiki; build/4 tes PASS, browser desktop/390px/320px dan kecocokan delapan hash aset publik diperiksa. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; produksi dan COYABAG tidak berubah, transaksi tidak aktif, review visual revisi 02 OPEN. Data/foto asli dan sign-off menjadi langkah berikutnya.
+Dokumen terkait: PRODUCT/DOSSIER/catatan client, changelog, master, keputusan, gap dan sync. [Rincian](products/sagadevs/JERSEY_JAGO.md). Knowledge main HEAD; URL sementara dan evidence privat tidak dipublikasikan.
+
 ## 2026-10-20 - SagaDevs client commerce: Jersey Jago visual prototype
 
 CONFIRMED source lokal `9e68ebd0e8824ac85bb3d0349e958b6e75371736`: prototype terisolasi streetwear minimalis hitam/ivory/emas, Plus Jakarta Sans dan Anton. Beranda/katalog/filter/search/detail/zoom/menu/wishlist/bag contoh, build dan 3 tes terfokus PASS; desktop/390px dan temporary HTTPS preview diperiksa. Tidak ada transaksi atau provider aktif; COYABAG dan produksi lain tidak berubah. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; review HP Andreas OPEN, bukan BUSINESS_READY. [Catatan client](products/sagadevs/JERSEY_JAGO.md).

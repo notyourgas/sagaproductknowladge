@@ -2,7 +2,7 @@
 
 ## 2026-10-20 - Surface client Jersey Jago untuk review desain
 
-CONFIRMED: prototype statis terisolasi source lokal `9e68ebd0e8824ac85bb3d0349e958b6e75371736` memakai streetwear minimalis ivory/ink/emas, Plus Jakarta Sans dan Anton. Beranda, katalog/filter/search, detail, zoom, menu mobile, wishlist serta bag simulasi tersedia; build dan tiga tes terfokus PASS, browser desktop/390px dan temporary HTTPS preview diperiksa. Data produk contoh; hero ilustrasi AI; tidak ada order/payment/provider/data produksi. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED, bukan production atau BUSINESS_READY; review Andreas OPEN. Source/runtime COYABAG tetap. [Detail client](JERSEY_JAGO.md).
+CONFIRMED: revisi 02 prototype statis terisolasi source lokal `5c050daad8585a869431d53768210091d65f5790` memakai komposisi editorial eksperimental, ivory/ink/emas, Plus Jakarta Sans variable dan Anton. Beranda bertumpuk/asimetris, quick look, detail mengikuti hierarki referensi Steal My Jersey, galeri depan/crop, condition meter, ukuran flat, accordion dan aksi bag tetap di mobile. Build dan empat tes terfokus PASS; browser desktop, 390px dan 320px diperiksa; delapan hash aset publik cocok manifest. Data contoh dan hero ilustrasi AI; tanpa order/payment/provider/data produksi. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; review revisi 02 Andreas OPEN, bukan BUSINESS_READY. COYABAG tidak berubah. [Detail client](JERSEY_JAGO.md).
 
 ## 2026-10-14 - Penutupan recovery Arkarupa
 

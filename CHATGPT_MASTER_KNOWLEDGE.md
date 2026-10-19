@@ -2,7 +2,7 @@
 
 ## 2026-10-20 - SagaDevs client commerce: Jersey Jago visual prototype
 
-CONFIRMED source lokal `9e68ebd0e8824ac85bb3d0349e958b6e75371736`: prototype terisolasi streetwear minimalis hitam/ivory/emas, Plus Jakarta Sans dan Anton. Beranda/katalog/filter/search/detail/zoom/menu/wishlist/bag contoh, build dan 3 tes terfokus PASS; desktop/390px dan temporary HTTPS preview diperiksa. Tidak ada transaksi atau provider aktif; COYABAG dan produksi lain tidak berubah. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; review HP Andreas OPEN, bukan BUSINESS_READY. [Catatan client](products/sagadevs/JERSEY_JAGO.md).
+CONFIRMED: revisi 02 prototype statis terisolasi source lokal `5c050daad8585a869431d53768210091d65f5790` memakai komposisi editorial eksperimental, ivory/ink/emas, Plus Jakarta Sans variable dan Anton. Beranda bertumpuk/asimetris, quick look, detail mengikuti hierarki referensi Steal My Jersey, galeri depan/crop, condition meter, ukuran flat, accordion dan aksi bag tetap di mobile. Build dan empat tes terfokus PASS; browser desktop, 390px dan 320px diperiksa; delapan hash aset publik cocok manifest. Data contoh dan hero ilustrasi AI; tanpa order/payment/provider/data produksi. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; review revisi 02 Andreas OPEN, bukan BUSINESS_READY. COYABAG tidak berubah. [Catatan client](products/sagadevs/JERSEY_JAGO.md).
 
 ## 2026-10-20 - SagaOPS operasional kas deployed
 
