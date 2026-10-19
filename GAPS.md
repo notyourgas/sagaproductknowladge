@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - Gap konfirmasi tunai ke nota pilot ditutup
+
+CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659: Andreas mengonfirmasi
+lunas, nota otomatis/layout/jarak/autocut sesuai. Server readback cocok dan
+printer online. Gap pilot cash-payment-to-paper CLOSED. Broader failure recovery,
+jalur pembayaran lain dan full shift/expense/closing/handover UAT tetap OPEN.
+Tab layanan harus terbuka/terjaga; tidak mengklaim physical exactly-once atau
+BUSINESS_READY. Tidak memerlukan cetak ulang untuk mencatat konfirmasi ini.
+
 ## 2026-10-19 - Gate deploy tunai selesai; konfirmasi fisik terbuka
 
 CONFIRMED4c8522b8962a198d7cfba337327edc3d3ab6c659 deployed, rollbackff2806bc.

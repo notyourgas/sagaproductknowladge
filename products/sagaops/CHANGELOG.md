@@ -1,5 +1,12 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Konfirmasi fisik nota otomatis pilot
+
+CONFIRMED Andreas: pembayaran lunas, nota otomatis tercetak, jarak dan autocut
+sesuai. Runtime4c8522b8962a198d7cfba337327edc3d3ab6c659 sehat, printer online.
+Readback satu audit penerimaan/satu nota asli cocok; tidak mengirim TEST lagi.
+Pilot tunai-ke-kertas PASS, bukan physical exactly-once atau seluruh UAT selesai.
+
 ## 2026-10-19 - Perbaikan tunai dipromosikan ke production
 
 CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 deployed/healthy,

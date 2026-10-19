@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Pilot tunai ke nota otomatis dikonfirmasi fisik
+
+CONFIRMED oleh Andreas: pembayaran lunas dan nota otomatis keluar dengan layout,
+jarak serta autocut sesuai pada pilot Chromebook USB. Runtime4c8522b8962a198d7cfba337327edc3d3ab6c659
+tetap sehat; printer revision5 enabled/commissioned/online, tidak blocked.
+Baca-saja server cocok: satu penerimaan tunai dan satu nota asli SUBMITTED;
+bukti kertas berasal dari konfirmasi operator, bukan status kirim saja.
+Gate pilot pembayaran-ke-nota PASS. Tab layanan tetap terbuka dan perangkat
+terjaga. Failure UAT dan siklus operasional lengkap tetap OPEN; bukan BUSINESS_READY.
+
 ## 2026-10-19 - Perbaikan konfirmasi tunai deployed
 
 CONFIRMED **4c8522b8962a198d7cfba337327edc3d3ab6c659** kini deployed/healthy;

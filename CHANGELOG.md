@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - SagaOPS acceptance nota otomatis pilot
+
+CONFIRMED Andreas: cash lunas dan nota otomatis dengan layout/jarak/autocut sesuai
+pada4c8522b8962a198d7cfba337327edc3d3ab6c659. Server/printer readback cocok,
+pilot payment-to-paper PASS. Delapan dokumen diselaraskan; source/production
+tidak dimutasi executor. No TEST/reprint; broader failure/operating-cycle UAT OPEN,
+NOT_BUSINESS_READY. Provenance knowledge mengikuti main HEAD setelah commit ini.
+
 ## 2026-10-19 - SagaOPS cash fix deployed dengan nota/printer tetap
 
 CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 current,

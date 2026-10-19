@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Acceptance fisik pembayaran tunai pilot
+
+CONFIRMED Andreas menerima nota otomatis setelah konfirmasi tunai pada runtime
+4c8522b8962a198d7cfba337327edc3d3ab6c659, layout/jarak/autocut sesuai.
+Server sehat; printer revision5 online/aktif/commissioned dan tidak blocked.
+Baca-saja satu pembayaran lunas, satu audit penerimaan dan satu nota asli
+SUBMITTED cocok dengan konfirmasi manusia. Tidak menyatakan physical exactly-once.
+Tanpa TEST atau pelunasan oleh executor. Gate pilot tunai-ke-kertas PASS;
+failure/other-payment/full-operating-cycle UAT tetap OPEN, NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Rilis perbaikan tunai aktif, UAT kertas terbuka
 
 CONFIRMED source4c8522b8962a198d7cfba337327edc3d3ab6c659 production-deployed,
