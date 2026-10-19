@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-10-20 - Jersey Jago: susunan Latest Drop dipulihkan
+
+CONFIRMED; source lokal `7ebdb7a28d262a5d44e65d65e6871428f300fc57`. Koreksi Andreas 20 Oktober: bagian Latest Obsessions dikembalikan ke The Latest Drop dengan grid sejajar, empat kolom desktop dan dua kolom mobile. Hero, quick look dan detail produk revisi 02 tetap. Build dan browser delta desktop/390px PASS; delapan hash aset publik cocok. Empat tes baseline revisi 02 tidak diulang untuk perubahan tampilan ini. Produksi tidak berubah; review visual tetap OPEN. Alasan: koreksi visual Andreas. Dokumen client, PRODUCT/DOSSIER, master, sync serta changelog diselaraskan; knowledge main HEAD.
+
 ## 2026-10-20 - Jersey Jago revisi 02: editorial eksperimental dan detail produk
 
 CONFIRMED, arahan Andreas; source lokal `5c050daad8585a869431d53768210091d65f5790`, belum source remote. Sebelumnya prototype streetwear dasar; kini headline bertumpuk, katalog asimetris, quick look, detail produk mengikuti hierarki Steal My Jersey, galeri depan/crop, ukuran, accordion dan aksi bag tetap di mobile. Jakarta Sans variable diperbaiki; build/4 tes PASS, browser desktop/390px/320px dan kecocokan delapan hash aset publik diperiksa. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; produksi dan COYABAG tidak berubah, transaksi tidak aktif, review visual revisi 02 OPEN. Data/foto asli dan sign-off menjadi langkah berikutnya.

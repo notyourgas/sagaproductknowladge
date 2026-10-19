@@ -1,16 +1,20 @@
 # Jersey Jago — Client Visual Prototype
 
+## 2026-10-20 - Koreksi susunan Latest Drop
+
+Koreksi Andreas 20 Oktober: bagian Latest Obsessions dikembalikan ke The Latest Drop dengan grid sejajar, empat kolom desktop dan dua kolom mobile. Hero, quick look dan detail produk revisi 02 tetap. Build dan browser delta desktop/390px PASS; delapan hash aset publik cocok. Empat tes baseline revisi 02 tidak diulang untuk perubahan tampilan ini. Produksi tidak berubah; review visual tetap OPEN.
+
 ## Tujuan dokumen
 
 Mencatat prototype visual client Jersey Jago dan batas buktinya dalam layanan SagaDevs.
 
 ## Konteks dan status bukti
 
-20 Oktober 2026. CONFIRMED: atas arahan Andreas, source lokal `5c050daad8585a869431d53768210091d65f5790` merevisi prototype client ke versi 02. Source terpisah dari COYABAG dan marketing SagaDevs; belum dipush ke source remote. Hash lokal bukan tautan repository publik.
+20 Oktober 2026. CONFIRMED: atas arahan Andreas, source lokal `7ebdb7a28d262a5d44e65d65e6871428f300fc57` merevisi prototype client ke versi 02. Source terpisah dari COYABAG dan marketing SagaDevs; belum dipush ke source remote. Hash lokal bukan tautan repository publik.
 
 ## Arah visual revisi 02
 
-Streetwear minimalis dengan komposisi editorial lebih eksperimental: headline bertumpuk, foto rail offset, stempel emas, culture strip bergerak, katalog asimetris, baris klub dan wordmark footer miring. Palette ivory/ink/emas dan Plus Jakarta Sans/Anton dipertahankan. Font sekarang memakai WOFF2 yang sesuai; Jakarta Sans variable mendukung bobot bold. Preferensi reduced motion mematikan animasi.
+Streetwear minimalis dengan komposisi editorial lebih eksperimental: headline bertumpuk, foto rail offset, stempel emas, culture strip bergerak, katalog sejajar, baris klub dan wordmark footer miring. Palette ivory/ink/emas dan Plus Jakarta Sans/Anton dipertahankan. Font sekarang memakai WOFF2 yang sesuai; Jakarta Sans variable mendukung bobot bold. Preferensi reduced motion mematikan animasi.
 
 ## Detail produk dan alur
 

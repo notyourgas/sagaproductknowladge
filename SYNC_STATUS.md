@@ -1,8 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-20 - Koreksi susunan Latest Drop
+
+Koreksi Andreas 20 Oktober: bagian Latest Obsessions dikembalikan ke The Latest Drop dengan grid sejajar, empat kolom desktop dan dua kolom mobile. Hero, quick look dan detail produk revisi 02 tetap. Build dan browser delta desktop/390px PASS; delapan hash aset publik cocok. Empat tes baseline revisi 02 tidak diulang untuk perubahan tampilan ini. Produksi tidak berubah; review visual tetap OPEN.
+
 ## 2026-10-20 - Jersey Jago prototype visual tersinkron
 
-CONFIRMED source client lokal 5c050daad8585a869431d53768210091d65f5790, revisi 02; belum source remote. Knowledge diperbarui dari checkout bersih main/origin-main yang sama. Status LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; empat tes PASS dan delapan hash aset publik cocok. Validator/diff/public-safety serta push/readback dicatat pada hasil run. Review revisi 02 Andreas OPEN; bukan toko produksi.
+CONFIRMED source client lokal 7ebdb7a28d262a5d44e65d65e6871428f300fc57, revisi 02; belum source remote. Knowledge diperbarui dari checkout bersih main/origin-main yang sama. Status LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; empat tes PASS dan delapan hash aset publik cocok. Validator/diff/public-safety serta push/readback dicatat pada hasil run. Review revisi 02 Andreas OPEN; bukan toko produksi.
 
 ## 2026-10-20 - Cash operations deployed, bukan selesai UAT
 

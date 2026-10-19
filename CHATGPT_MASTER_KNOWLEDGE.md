@@ -1,8 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-20 - Koreksi susunan Latest Drop
+
+Koreksi Andreas 20 Oktober: bagian Latest Obsessions dikembalikan ke The Latest Drop dengan grid sejajar, empat kolom desktop dan dua kolom mobile. Hero, quick look dan detail produk revisi 02 tetap. Build dan browser delta desktop/390px PASS; delapan hash aset publik cocok. Empat tes baseline revisi 02 tidak diulang untuk perubahan tampilan ini. Produksi tidak berubah; review visual tetap OPEN.
+
 ## 2026-10-20 - SagaDevs client commerce: Jersey Jago visual prototype
 
-CONFIRMED: revisi 02 prototype statis terisolasi source lokal `5c050daad8585a869431d53768210091d65f5790` memakai komposisi editorial eksperimental, ivory/ink/emas, Plus Jakarta Sans variable dan Anton. Beranda bertumpuk/asimetris, quick look, detail mengikuti hierarki referensi Steal My Jersey, galeri depan/crop, condition meter, ukuran flat, accordion dan aksi bag tetap di mobile. Build dan empat tes terfokus PASS; browser desktop, 390px dan 320px diperiksa; delapan hash aset publik cocok manifest. Data contoh dan hero ilustrasi AI; tanpa order/payment/provider/data produksi. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; review revisi 02 Andreas OPEN, bukan BUSINESS_READY. COYABAG tidak berubah. [Catatan client](products/sagadevs/JERSEY_JAGO.md).
+CONFIRMED: revisi 02 prototype statis terisolasi source lokal `7ebdb7a28d262a5d44e65d65e6871428f300fc57` memakai komposisi editorial eksperimental, ivory/ink/emas, Plus Jakarta Sans variable dan Anton. Beranda bertumpuk/asimetris, quick look, detail mengikuti hierarki referensi Steal My Jersey, galeri depan/crop, condition meter, ukuran flat, accordion dan aksi bag tetap di mobile. Build dan empat tes terfokus PASS; browser desktop, 390px dan 320px diperiksa; delapan hash aset publik cocok manifest. Data contoh dan hero ilustrasi AI; tanpa order/payment/provider/data produksi. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; review revisi 02 Andreas OPEN, bukan BUSINESS_READY. COYABAG tidak berubah. [Catatan client](products/sagadevs/JERSEY_JAGO.md).
 
 ## 2026-10-20 - SagaOPS operasional kas deployed
 
