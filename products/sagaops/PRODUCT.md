@@ -1,5 +1,21 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-20 - Operasional kas karyawan deployed
+
+CONFIRMED source/runtime589e2c229f94bc0deb6a6edc2004149128781e53 aktif/sehat,
+rollback579e47960e1c86b6557c3e3143d05f8a838beec8. Kasir menampilkan modal,
+pengeluaran laci, kas seharusnya dan ringkasan tanggal/per shift. Staf mengirim
+hitungan fisik untuk review dan closing eksplisit Owner, memakai guard existing.
+Modal bukan omzet; QRIS bukan uang laci; dana di luar laci dipisahkan.
+
+Native Linux/PG18/Nginx dan paket PASS, run Rp0 disetujui selesai7m47s;
+393PASS/0FAIL/4SKIP gabungan. Backup/restore, recovery dan guarded activation
+PASS; API read-only Owner serta aset production terverifikasi. Template,
+printer WebUSB, harga normal/gateway dan schema37 tidak berubah. Tidak membuat
+transaksi, expense, hitungan kas atau TEST fisik production. PRODUCTION_DEPLOYED;
+browser Owner/UAT karyawan OPEN, checker tetap OFF/uncommissioned.
+Belum BUSINESS_READY; penerimaan fisik lama tidak menjadi UAT fitur kas baru.
+
 ## 2026-10-19 - Operasional kas karyawan, source tervalidasi
 
 CONFIRMED source589e2c229f94bc0deb6a6edc2004149128781e53 pushed: akses modal/

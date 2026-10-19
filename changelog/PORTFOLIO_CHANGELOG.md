@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-20 - SagaOPS cash operations production
+
+CONFIRMED589e2c229f94bc0deb6a6edc2004149128781e53 deployed/sehat, rollback579e479.
+Kasir memusatkan modal, expense, ringkasan dan hitungan staf untuk Owner tanpa
+grant baru. Linux/PG18/Nginx dan recovery/activation PASS;393PASS/0FAIL/4SKIP,
+run gratis7m47s. Nota/printer/harga/gateway tetap; tidak ada synthetic finance
+write production. PRODUCTION_DEPLOYED, browser Owner/UAT karyawan OPEN, checker
+OFF/uncommissioned. Bukan BUSINESS_READY.
+
 ## 2026-10-19 - SagaOPS cash operations source validated
 
 CONFIRMED589e2c229f94bc0deb6a6edc2004149128781e53: ringkasan kas harian/per

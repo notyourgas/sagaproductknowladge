@@ -12,7 +12,7 @@
 | Alternatif | Tidak membuka kewenangan close Owner ke semua staf atau menjumlahkan modal sebagai omzet. |
 | Dampak | Source589e2c229f94bc0deb6a6edc2004149128781e53, scope/RBAC existing; nota/printer/harga tetap. |
 | Pemberi keputusan | Andreas. |
-| Status | IMPLEMENTED_NOT_DEPLOYED; Linux/package/deploy dan UAT OPEN, allowance Rp0 menunggu jawaban. |
+| Status | PRODUCTION_DEPLOYED 2026-10-20 source589e2c2; run Rp0 disetujui7m47s, Linux/package/recovery PASS; browser Owner/UAT karyawan OPEN, bukan BUSINESS_READY. |
 | Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md). |
 
 ## DEC-277 - Nota pelanggan sebelum Checker Bar

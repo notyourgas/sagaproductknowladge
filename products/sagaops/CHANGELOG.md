@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-20 - Cash operations deployed, UAT karyawan terbuka
+
+CONFIRMED izin Andreas dan source/runtime589e2c229f94bc0deb6a6edc2004149128781e53,
+rollback579e479. Modal, expense shortcut, ringkasan harian/per shift dan hitungan
+staf untuk review Owner aktif di Kasir. Linux/PG18/Nginx/package, backup/restore,
+recovery dan guarded activation PASS;393PASS/0FAIL/4SKIP, run Rp0 selesai7m47s.
+Owner API readback/aset/auth boundary PASS. Template/printer, schema, harga dan
+gateway unchanged; tidak membuat finance writes atau TEST fisik production.
+PRODUCTION_DEPLOYED; authenticated browser/UAT karyawan dan checker commissioning
+OPEN, checker OFF. Belum BUSINESS_READY.
+
 ## 2026-10-19 - Cashier cash operations implemented, belum deployed
 
 CONFIRMED permintaan Andreas dan source589e2c229f94bc0deb6a6edc2004149128781e53.

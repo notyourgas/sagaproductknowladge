@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-20 - Cash operations deployed; UAT nyata belum ditutup
+
+CONFIRMED589e2c229f94bc0deb6a6edc2004149128781e53 aktif/sehat, rollback579e479.
+Izin run tambahan8menit/Rp0 diterima; Linux/PG18/package/recovery/deploy PASS,
+run7m47s, bukan lagi blocker allowance. Owner API dan aset terverifikasi;
+template/printer/harga/gateway unchanged. Tidak membuat finance writes/TEST
+production. Browser Owner session berakhir; login diminta sekali.
+
+Andreas/operator: login browser lalu gunakan aktivitas sah untuk UAT buka shift,
+expense, hitungan, review/close dan handover berikutnya. Executor: verifikasi
+hasil tanpa mengubah angka agar tes lolos. Checker tetap OFF menunggu TEST dan
+konfirmasi fisik terpisah. Managed offsite belum terverifikasi meski salinan
+backup terenkripsi PC/hash PASS. PRODUCTION_DEPLOYED, NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Operasional kas: source selesai, release/UAT OPEN
 
 CONFIRMED source589e2c229f94bc0deb6a6edc2004149128781e53 local validated,

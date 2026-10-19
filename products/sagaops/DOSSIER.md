@@ -1,5 +1,27 @@
 # SagaOPS Dossier
 
+## 2026-10-20 - Cash operations production code-only
+
+CONFIRMED runtime589e2c229f94bc0deb6a6edc2004149128781e53, rollback579e479;
+repeatable-read laporan kas dan count staf berjejak audit telah deployed dengan
+scope/cash.view/cash.write existing. Hitungan bukan approval/close. Owner tetap
+memeriksa dan menutup eksplisit, termasuk reviewer berbeda untuk selisih sesuai
+guard existing. Pendapatan, collections, refund, modal dan sumber expense tetap
+dibedakan; laporan bukan laba bersih atau bukti settlement bank.
+
+Run terpisah yang disetujui8menit/2vCPU/8GB/Rp0 selesai7m47s: scoped390PASS/
+0FAIL/4SKIP dan durable3PASS/0FAIL. Skip mencakup paired Platform HR dan helpers
+Windows, bukan jalur kas Chromebook. NativePG18/Nginx, immutable package,
+encrypted backup/disposable restore, kandidat/rollback recovery dan activation
+PASS. Serving VPS tidak dipakai builder. Owner API summary dan anonymous401
+terverifikasi; UI produksi authenticated masih menunggu sesi login browser.
+
+Tidak ada migrasi, grant, data keuangan sintetis atau TEST fisik production.
+Template revision aktif dan printer WebUSB tidak berubah secara struktural;
+gateway/pricing/Nginx tetap. Checker OFF; commissioning checker dan UAT karyawan
+buka shift/expense/count/Owner close/handover OPEN. Managed offsite belum
+terverifikasi, salinan backup terenkripsi PC sudah dicocokkan. NOT_BUSINESS_READY.
+
 ## 2026-10-19 - Operasional kas terpadu pada source
 
 CONFIRMED589e2c229f94bc0deb6a6edc2004149128781e53: Kasir memakai fondasi modal,
