@@ -30,6 +30,28 @@ promotion, satu server TEST pada Chromebook, lalu pilot pembayaran sah dan
 failure UAT. Copy Kiosk yang ditinjau tetap gap terpisah; tidak membuat penjualan
 palsu untuk pengujian/pemulihan. NOT_BUSINESS_READY; lane roster/HR tidak diganti.
 
+## 2026-10-19 - Qualification kandidat HR tertahan pada setup builder
+
+CONFIRMED source1a62d0ba78df5fa37d69f82ada20bb9a079c2e33 unchanged. Satu
+sandbox2CPU/2GiB diterima dan seluruh28bagian source terverifikasi. Setup apt
+FAIL karena repository NodeSource bawaan template tidak diperlukan oleh
+pinned Node22 dan tidak termasuk allowlist. Tes aplikasiNOT_RUN,artifact
+NOT_BUILT; tidak dinyatakan sebagai regresi kode atau qualificationPASS.
+Key sementara dicabut dan sandboxKILLED;218,726detik termasuk cleanup manual.
+Receipt kegagalan cleanup otomatis dipertahankan, cleanup manual diverifikasi.
+
+Koreksi profile/parser/syntax disiapkan untuk menonaktifkan hanya dedicated
+repository yang tidak dipakai, tanpa melonggarkan network/resource guard.
+Exception satu pengganti650detik diminta; belum dijalankan. Gabungan batas
+868,726detik<900detik, tanpa biaya/kartu/upgrade atau reset gate lain.
+22freshregresiPASS/9pureUIreuse dan2nativePASS kandidat sebelumnya tetap
+berbatas; final nativeLinux/package/deploy belum diterima. Active terakhir
+4e9e39b/rollback36d8024,staticWebUSBbe56 terpisah. Tidak ada perubahan produksi
+oleh HR pada milestone ini; lane printer punya kandidat baru yang tidak digabung
+atau ditimpa. Ledger tetap15/36teknisPASS,2FAIL/19NOT_RUN,0/12operasional,
+NOT_BUSINESS_READY. Berikutnya exception builder→qualification/release dengan
+expected-current/lock→UAT nyata. Keputusan strict2/8jam DEC-274 tetap berlaku.
+
 ## 2026-10-19 - Rotasi dua hari wajib dan revisi Owner: kandidat belum aktif
 
 CONFIRMED: keputusan Andreas mengganti rolling preferred menjadi maksimal dua
