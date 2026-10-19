@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-277 - Nota pelanggan sebelum Checker Bar
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-19 |
+| Klasifikasi | CONFIRMED |
+| Topik | Urutan dua dokumen pada printer yang sama |
+| Keputusan | Nota pelanggan dahulu lalu checker bar; masing-masing dipotong. |
+| Alasan | Andreas meminta checker setelah nota pelanggan dicetak. |
+| Alternatif | Urutan checker dahulu pada kandidat lama tidak digunakan. |
+| Dampak | Runtime579e47960e1c86b6557c3e3143d05f8a838beec8; checker menunggu hasil kirim pelanggan atau review operator; tidak mengklaim kertas dari USB. |
+| Pemberi keputusan | Andreas. |
+| Status | PRODUCTION_DEPLOYED; Linux/recovery PASS; checker OFF sampai satu TEST Chromebook diterima. Bukan BUSINESS_READY. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md). |
+
 ## DEC-276 - Checker Bar ringkas pada printer existing
 
 | Field | Isi |
@@ -12,7 +27,7 @@
 | Alternatif | Routing station/per-cup dan printer baru ditunda; tidak memakai dialog cetak browser. |
 | Dampak | Source50c455456852e4a57254e80d57974e8f149d8ae8; nickname opsional Kiosk/Kasir, ledger dan salinan beralasan; nota pelanggan/harga normal tetap. |
 | Pemberi keputusan | Andreas. |
-| Status | IMPLEMENTED_NOT_DEPLOYED; default OFF; qualification Linux/PG, paket/recovery, deploy dan TEST kertas/aktivasi OPEN. |
+| Status | Riwayat source-only; delivery diperbarui pada DEC-277. Scope checker tetap, urutan final customer-first. |
 | Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md). |
 
 ## DEC-275 - SagaPOS harga normal tanpa promo trial dan batas canary

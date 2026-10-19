@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - Checker Bar deployed, customer-first
+
+CONFIRMED keputusan Andreas dan runtime579e47960e1c86b6557c3e3143d05f8a838beec8.
+Nota pelanggan dahulu lalu checker dengan satu cut per dokumen. Template/printer
+pelanggan serta harga normal/gateway tidak berubah. Qualification Linux/PG18/
+Nginx, paket dan guarded backup/restore/recovery/activation PASS; rollbackedce5a6.
+Run Rp0 disetujui selesai6m07s,386PASS/0FAIL/4SKIP gabungan. PRODUCTION_DEPLOYED;
+checker OFF/uncommissioned, TEST Chromebook dan aktivasi OPEN. Belum BUSINESS_READY.
+
 ## 2026-10-19 - Checker Bar implemented, belum deployed
 
 CONFIRMED keputusan Andreas untuk tiket produksi sebagai fallback KDS.

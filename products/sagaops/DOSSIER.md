@@ -1,24 +1,27 @@
 # SagaOPS Dossier
 
-## 2026-10-19 - Kandidat Checker Bar pada layanan WebUSB bersama
+## 2026-10-19 - Checker Bar deployed pada layanan WebUSB bersama
 
-CONFIRMED source50c455456852e4a57254e80d57974e8f149d8ae8, termasuk baseline
+CONFIRMED source/runtime579e47960e1c86b6557c3e3143d05f8a838beec8, termasuk baseline
 productionedce5a6. Satu checker untuk seluruh item satu order berbayar, tanpa
 routing per station atau label per gelas. Nama panggilan opsional masuk dari
 Kiosk/Kasir, tersimpan atomik pada intent BAR dalam tabel print jobs existing;
 WAITING_PAYMENT bukan izin kirim. Tidak ada migrasi database baru.
 
 Setelah server memverifikasi pembayaran, snapshot checker dan nota dibuat
-terpisah sebelum USB. Satu consumer/lock/ledger mengirim checker lalu nota;
+terpisah sebelum USB. Satu consumer/lock/ledger mengirim nota pelanggan lalu checker;
 feed/cut hanya pada masing-masing RAW document. Pending/histori dikecualikan,
 UNKNOWN menahan printer, salinan eksplisit bernomor/beralasan. Cetak tidak
 mengubah status persiapan atau menyimpulkan kertas dari SUBMITTED.
 
-Pengaturan/TEST/commissioning checker independen, tidak reset pairing atau
-template pelanggan. Kandidat belum deployed; physical commissioning dan
-aktivasi OFF. Gate Linux/PG, paket/recovery serta UAT Chromebook masih OPEN;
-perlu allowance runner baru maksimal8menit, Rp0 terverifikasi. Production tidak
-berubah oleh milestone ini. NOT_BUSINESS_READY.
+Checker menunggu nota pelanggan SUBMITTED atau review operator eksplisit.
+NOT_SENT tidak melepaskan checker; salinan pelanggan eksplisit yang terkirim
+dapat membuka dependensi. UNKNOWN tetap menahan printer, tanpa kirim ulang otomatis.
+Pengaturan/TEST/commissioning checker independen; printer dan template pelanggan
+terbukti tetap. Linux/PG18/Nginx, paket, backup/restore dan recovery PASS;
+guarded code-only activation PASS, core37, rollbackedce5a6. Harga normal/gateway
+production dipertahankan. Checker OFF/uncommissioned; satu TEST fisik Chromebook
+dan konfirmasi Andreas diperlukan sebelum aktivasi. NOT_BUSINESS_READY.
 
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 

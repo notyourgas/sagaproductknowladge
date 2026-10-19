@@ -1,14 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-## 2026-10-19 - SagaOPS Checker Bar belum tersedia di production
+## 2026-10-19 - SagaOPS Checker Bar deployed, menunggu TEST fisik
 
-CONFIRMED kandidat50c455456852e4a57254e80d57974e8f149d8ae8 mengimplementasikan
-tiket ringkas bar: nama panggilan opsional, nomor/waktu/jenis order, item dan
-catatan tanpa harga. Satu printer WebUSB mencetak checker lalu nota pelanggan;
-pengaturan, TEST, penerimaan kertas dan salinan terpisah. Template pelanggan dan
-harga normal tetap. IMPLEMENTED_NOT_DEPLOYED; runtimeedce5a6 tetap sehat,
-checker OFF. Gate Linux/PG/paket/recovery/deploy, TEST Chromebook dan aktivasi
-OPEN; allowance baru8menit/Rp0 belum diterima. Jangan menjanjikan siap operasional.
+CONFIRMED source/runtime579e47960e1c86b6557c3e3143d05f8a838beec8 sehat;
+rollbackedce5a6. Sesuai keputusan Andreas, nota pelanggan dahulu lalu checker
+bar tanpa harga, satu cut per dokumen pada satu antrean WebUSB. Template dan
+pengaturan printer pelanggan tidak berubah; harga normal/gateway tetap.
+Linux/PG18/Nginx dan recovery/guarded activation PASS; run Rp0 selesai6m07s,
+386PASS/0FAIL/4SKIP gabungan. PRODUCTION_DEPLOYED, checker OFF/uncommissioned.
+Andreas perlu satu TEST checker pada Chromebook dan konfirmasi kertas/jarak/
+autocut sebelum aktivasi; belum BUSINESS_READY atau bukti cetak fisik baru.
 
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 

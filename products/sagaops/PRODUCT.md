@@ -1,19 +1,19 @@
 # SagaOPS Product Knowledge
 
-## 2026-10-19 - Checker Bar tersedia di kandidat, belum production
+## 2026-10-19 - Checker Bar deployed, nota pelanggan lebih dahulu
 
-CONFIRMED source **50c455456852e4a57254e80d57974e8f149d8ae8** menambahkan tiket
-produksi ringkas: nomor, nama panggilan opsional, waktu, jenis pesanan, item,
-opsi dan catatan, tanpa harga. Checker dan nota pelanggan memakai satu antrean
-WebUSB, identitas dokumen terpisah, urutan checker lalu nota dan satu cut per tiket.
-Ukuran teks/ruang potong, TEST, konfirmasi kertas, aktivasi dan salinan beralasan
-tersedia untuk Owner. Template nota pelanggan tidak diubah.
+CONFIRMED source/runtime **579e47960e1c86b6557c3e3143d05f8a838beec8** sehat;
+rollback **edce5a6c874e7d83676537dbb40ab4a99ec608ff**. Tiket bar ringkas berisi
+nomor, nama panggilan opsional, waktu, jenis pesanan, item/opsi/catatan tanpa
+harga. Satu antrean WebUSB mengirim nota pelanggan lalu checker, masing-masing
+satu feed/cut. Pengaturan Owner, TEST dan commissioning checker terpisah.
+Template pelanggan dan printer existing terverifikasi tidak berubah.
 
-IMPLEMENTED_NOT_DEPLOYED; checker default OFF. Production tetap **edce5a6** sehat;
-perubahan harga normal telah digabung ke kandidat, tidak ditimpa. Gate Linux/
-PostgreSQL dan paket/recovery/deploy baru belum dijalankan; allowance runner lama
-habis, tambahan delapan menit Rp0 menunggu keputusan. TEST kertas Chromebook,
-autocut dan aktivasi checker masih OPEN. Bukan BUSINESS_READY.
+Linux/PostgreSQL18/Nginx, paket immutable, backup/restore, recovery dan guarded
+activation PASS. Run Rp0 disetujui maksimal8menit selesai6m07s;386PASS/0FAIL/
+4SKIP gabungan suite utama dan targeted. PRODUCTION_DEPLOYED; checker OFF,
+belum commissioned. TEST kertas Chromebook dan aktivasi masih OPEN; bukan
+BUSINESS_READY. Respons USB bukan bukti hasil fisik.
 
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 

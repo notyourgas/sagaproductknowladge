@@ -1,14 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
-## 2026-10-19 - Checker Bar: source-only, production tetap
+## 2026-10-19 - Checker Bar deployed; customer-first, checker OFF
 
-CONFIRMED source50c455456852e4a57254e80d57974e8f149d8ae8 pushed pada kandidat
-SagaOPS, termasuk baseline productionedce5a6. Sembilan dokumen diselaraskan
-untuk checker ringkas, nickname opsional, pengaturan Owner/commissioning,
-paid-only/shared WebUSB/ledger dan salinan eksplisit. Tidak mengubah nota
-pelanggan, konfigurasi printer atau production. IMPLEMENTED_NOT_DEPLOYED;
-allowance baru8menit/Rp0 belum diterima, Linux/package/recovery/deploy serta
-TEST kertas/aktivasi OPEN. Knowledge bukan bukti BUSINESS_READY.
+CONFIRMED runtime579e47960e1c86b6557c3e3143d05f8a838beec8/rollbackedce5a6,
+monitor PASS/core37/GATEWAY. Sembilan dokumen diselaraskan dengan keputusan
+nota customer dahulu lalu checker. Linux/PG18/Nginx/package, restore/recovery,
+guarded activation dan readback template/printer unchanged PASS. Run Rp0 yang
+disetujui selesai6m07s,386PASS/0FAIL/4SKIP gabungan. Production berubah code-only;
+checker OFF/uncommissioned, TEST kertas dan aktivasi OPEN. Tidak ada transaksi
+atau TEST fisik dikirim executor. Knowledge bukan bukti BUSINESS_READY.
 
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 

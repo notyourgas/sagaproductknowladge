@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-19 - Checker Bar production dan urutan customer-first
+
+CONFIRMED permintaan Andreas, source/runtime579e47960e1c86b6557c3e3143d05f8a838beec8,
+monitor dan Owner readback. Sembilan dokumen produk/dossier/changelog, portfolio,
+master, DEC-277, gap dan sync diperbarui. Linux/PG18/Nginx/package/recovery dan
+guarded activation PASS. Production code berubah; template/printer pelanggan,
+harga normal serta gateway tidak berubah. Checker OFF, physical commissioning
+dan aktivasi OPEN; NOT_BUSINESS_READY. Tidak memuat PII/credential/raw receipt
+atau evidence privat. Provenance knowledge mengikuti main HEAD setelah commit.
+
 ## 2026-10-19 - Kandidat Checker Bar, bukan rilis production
 
 CONFIRMED dari permintaan Andreas, source50c455456852e4a57254e80d57974e8f149d8ae8
