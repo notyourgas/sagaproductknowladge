@@ -1,5 +1,35 @@
 # SagaOPS Dossier
 
+## 2026-10-19 - Layanan printer Chromebook: implementasi qualified
+
+CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 menambah consumer
+WebUSB server-backed, memakai satu native device/outbox/ledger dan renderer
+nota existing. Owner memasangkan printer aktual, mengesahkan satu TEST server,
+lalu logout; layanan harian memakai cookie host-only Secure/HttpOnly/Strict,
+bukan sesi Owner terbuka. Pengalihan mencabut credential transport lama secara
+atomik dan tidak menimpa pekerjaan operasional menunggu/tidak pasti.
+
+Ledger disimpan sebelum transfer; AUTHORIZE terikat job/hash/attempt dan masa
+berlaku. SUBMITTED bukan bukti kertas. ACK hilang hanya disinkronkan ulang;
+partial/timeout/crash ditahan untuk review, tanpa resend otomatis. SSE dan
+kunci USB ditahan selama layanan berjalan. Tidur/penutupan tab/USB lepas tetap
+bisa menghentikan layanan; tidak ada flag Chrome atau perlindungan yang dibypass.
+Cookie dapat diperbarui Owner sebelum kedaluwarsa tanpa menghapus ledger;
+cookie hilang bisa memerlukan pairing/commissioning baru yang eksplisit.
+
+Linux run39216726185 sukses6m56s,282PASS/0FAIL/4SKIP; tiga skip khusus Windows,
+satu HR memerlukan pasangan Platform. Actual Nginx, production cookie boundary,
+Owner logout, paid Kasir/Kiosk dan lost-ACK synthetic PASS. Paket immutable
+source yang sama dibangun pada runner terpisah dalam kuota gratis yang dicek,
+tanpa billing atau production builder. Ini bukan penerimaan fisik/operasional.
+
+Kandidat belum deployed/commissioned/activated. Backend4e9e39b dan static TEST
+be56b9e yang telah dikonfirmasi operator tetap baseline. Template6/v3 tidak
+diganti. Urutan berikut: transport integrity, Owner efektif, rehearsal/guarded
+promotion, satu server TEST pada Chromebook, lalu pilot pembayaran sah dan
+failure UAT. Copy Kiosk yang ditinjau tetap gap terpisah; tidak membuat penjualan
+palsu untuk pengujian/pemulihan. NOT_BUSINESS_READY; lane roster/HR tidak diganti.
+
 ## 2026-10-19 - Rotasi dua hari wajib dan revisi Owner: kandidat belum aktif
 
 CONFIRMED: keputusan Andreas mengganti rolling preferred menjadi maksimal dua

@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-19 - WebUSB paid-queue qualified; production belum berubah
+
+CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 committed/pushed,
+Linux39216726185 sukses6m56s,282PASS/0FAIL/4SKIP (Windows3/paired-Platform HR1),
+paket immutable off-host dibuat dalam allowance8menit/2vCPU/8GB/Rp0 yang dicek.
+Kandidat menghubungkan layanan WebUSB ke outbox/ledger/RAW existing dengan
+otorisasi perangkat terpisah. Backend masih4e9e39b, static TESTbe56b9e diterima
+tetap terpisah; template6/v3 tidak diganti dan autoOFF. Transport/promotion,
+commissioning versi baru, reviewed-copy Kiosk dan pembayaran sah/failure UAT
+OPEN. NOT_BUSINESS_READY. Sinkron ini mempertahankan milestone roster/HRf17c591;
+public safety/validator/push harus diselesaikan pada main HEAD.
+
 ## 2026-10-19 - Rotasi dua hari wajib dan revisi Owner: kandidat belum aktif
 
 CONFIRMED: keputusan Andreas mengganti rolling preferred menjadi maksimal dua

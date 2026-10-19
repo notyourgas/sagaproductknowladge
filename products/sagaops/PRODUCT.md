@@ -1,5 +1,29 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-19 - Antrean WebUSB otomatis qualified, belum deployed
+
+CONFIRMED: source **73326cf6328726587a69db2f06ed411835e90257** committed/pushed
+mengintegrasikan `/printer-service` dengan paid outbox, ledger dan renderer RAW
+existing untuk Chromebook. Penyiapan Owner -> USB -> TEST server -> konfirmasi
+kertas -> aktivasi -> logout Owner -> mulai layanan. Cookie perangkat terpisah
+tidak memberi hak karyawan/Owner; tidak memerlukan installer Windows/QZ/PrintNode.
+Pending dan histori sebelum aktivasi tidak otomatis dicetak; hasil tidak pasti
+ditahan, lost ACK hanya merekonsiliasi metadata tanpa mengirim ulang byte.
+
+Satu run Linux gratis **39216726185** sukses6m56s dalam batas8menit/2vCPU/8GB:
+282PASS/0FAIL/4SKIP, termasuk WebUSB browser/backend dan actual Nginx. Empat
+skip adalah3tes Windows dan1journey HR yang memerlukan pasangan Platform;
+bukan UAT Chromebook. Paket immutable dibangun off-host, bukan pada VPS serving.
+Layout/template aktif6/v3 dan satu lapisan feed/autocut dipertahankan.
+
+Status milestone: SOURCE_QUALIFIED/PACKAGED; kandidat belum deployed, perangkat
+belum commissioning dan autoOFF. Backend masih4e9e39b; static TESTbe56b9e yang
+telah diterima Andreas tetap terpisah. Runtime/tab harus terbuka dan perangkat
+tetap terjaga; bukan jaminan cetak saat ChromeOS tidur/ditutup. Berikutnya:
+integritas transport -> effective Owner/recovery/guarded deploy -> satu TEST
+Chromebook -> pilot pembayaran sah. Reviewed-copy Kiosk dan UAT gangguan tetap
+OPEN; NOT_BUSINESS_READY. Scope roster/revisi Owner independen dipertahankan.
+
 ## 2026-10-19 - Rotasi dua hari wajib dan revisi Owner: kandidat belum aktif
 
 CONFIRMED: keputusan Andreas mengganti rolling preferred menjadi maksimal dua

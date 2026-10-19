@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-19 - WebUSB paid-queue qualified; promotion masih OPEN
+
+CONFIRMED, Andreas meminta melanjutkan setelah TEST Chromebook fisik diterima.
+Source73326cf6328726587a69db2f06ed411835e90257 committed/pushed: layanan perangkat
+terpisah dari Owner, satu antrean Kasir/Kiosk, RAW template aktif dan recovery
+tanpa byte resend. Linux39216726185 sukses6m56s,282PASS/0FAIL/4SKIP, paket off-host
+immutable dibuat. Skip Windows3/paired-Platform HR1 dipertahankan secara eksplisit.
+Production backend4e9e39b/static TESTbe56b9e belum diganti; autoOFF, commissioning
+baru dan pembayaran sah UAT OPEN. Tidak ada transaksi production palsu, tarif,
+layout atau grant global baru. NOT_BUSINESS_READY; lane HR independen dipertahankan.
+Dokumen: PRODUCT/DOSSIER, master, GAPS, SYNC_STATUS dan changelog produk/portfolio/root.
+
 ## 2026-10-19 - Rotasi dua hari wajib dan revisi Owner: kandidat belum aktif
 
 CONFIRMED: keputusan Andreas mengganti rolling preferred menjadi maksimal dua

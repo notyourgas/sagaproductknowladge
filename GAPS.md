@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-19 - WebUSB operasional: source qualified, target gates terbuka
+
+CONFIRMED:73326cf6328726587a69db2f06ed411835e90257 memiliki paket dan bukti
+Linux39216726185 sukses6m56s,282PASS/0FAIL/4SKIP. Empat skip Windows3/paired-Platform
+HR1 bukan acceptance. TEST fisik staticbe56b9e diterima, tetapi tidak otomatis
+mengesahkan consumer paid-queue baru; production backend tetap4e9e39b/autoOFF.
+Executor: selesaikan integritas transport, fresh effective Owner dan rehearsal/
+guarded deploy. Andreas/operator Chromebook: satu TEST server, konfirmasi
+layout/ruang bawah/autocut, kemudian satu perangkat pilot dan pembayaran sah.
+Tidak menciptakan transaksi production demi gate. UAT background/restart/USB/
+jaringan/credential serta reviewed-copy Kiosk tetap OPEN. Cookie dihapus dapat
+memerlukan pairing baru; jangan menghapus ledger atau melonggarkan proteksi.
+Belum BUSINESS_READY dan bukan penutupan lane roster/HR/operasional lainnya.
+
 ## 2026-10-19 - Rotasi dua hari wajib dan revisi Owner: kandidat belum aktif
 
 CONFIRMED: keputusan Andreas mengganti rolling preferred menjadi maksimal dua

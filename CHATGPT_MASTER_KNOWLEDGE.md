@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-19 - SagaOPS layanan WebUSB otomatis: qualified, belum deployed
+
+CONFIRMED source73326cf6328726587a69db2f06ed411835e90257 committed/pushed.
+Chromebook kini memiliki kandidat consumer paid-queue Kasir/Kiosk melalui
+`/printer-service`, memakai renderer/ledger existing dan otorisasi perangkat
+tanpa sesi Owner terbuka. Template6/v3 tidak diganti; hasil tidak pasti ditahan,
+ACK dapat direkonsiliasi tanpa resend fisik. Tab layanan harus terbuka/perangkat
+terjaga; bukan layanan saat ChromeOS mati/tidur.
+Linux39216726185 sukses6m56s:282PASS/0FAIL/4SKIP, actual Nginx PASS; tiga tes
+Windows dan satu paired-Platform HR tidak dijalankan. Paket immutable off-host
+dibuat, tetapi transport/promotion/commissioning/autoaktivasi belum selesai.
+Backend4e9e39b dan static TESTbe56b9e yang diterima Andreas tetap baseline.
+AutoOFF, pembayaran sah UAT/copy Kiosk/gangguan OPEN; NOT_BUSINESS_READY.
+Source roster/HR independen tidak diganti. Lihat products/sagaops/PRODUCT.md.
+
 ## 2026-10-19 - Rotasi dua hari wajib dan revisi Owner: kandidat belum aktif
 
 CONFIRMED: keputusan Andreas mengganti rolling preferred menjadi maksimal dua
