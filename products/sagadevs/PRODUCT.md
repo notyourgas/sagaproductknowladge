@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-10-20 - Jersey Jago: prototype visual client
+
+CONFIRMED: prototype statis terisolasi source lokal `9e68ebd0e8824ac85bb3d0349e958b6e75371736` memakai streetwear minimalis ivory/ink/emas, Plus Jakarta Sans dan Anton. Beranda, katalog/filter/search, detail, zoom, menu mobile, wishlist serta bag simulasi tersedia; build dan tiga tes terfokus PASS, browser desktop/390px dan temporary HTTPS preview diperiksa. Data produk contoh; hero ilustrasi AI; tidak ada order/payment/provider/data produksi. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED, bukan production atau BUSINESS_READY; review Andreas OPEN. Source/runtime COYABAG tetap. [Detail client](JERSEY_JAGO.md).
+
 ## 2026-10-14 - Arkarupa: pemulihan source/data dan regresi terkini
 
 `CONFIRMED`; tooling lokal `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, panduan penutupan `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`. Workspace QA/backup berada pada drive terpisah, restore source dan snapshot utama ke database disposable lulus; fixture dikembalikan. Full69/881 PASS pada file aplikasi yang sama dengan runtime; data utama tetap. Database aktif masih pada drive sistem, backup belum offsite; human acceptance dan preview publik tetap OPEN. Ini validasi/pemulihan, bukan fitur atau aktivasi baru. [Detail Arkarupa](ARKARUPA.md).

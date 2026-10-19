@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-20 - SagaDevs client commerce: Jersey Jago visual prototype
+
+CONFIRMED source lokal `9e68ebd0e8824ac85bb3d0349e958b6e75371736`: prototype terisolasi streetwear minimalis hitam/ivory/emas, Plus Jakarta Sans dan Anton. Beranda/katalog/filter/search/detail/zoom/menu/wishlist/bag contoh, build dan 3 tes terfokus PASS; desktop/390px dan temporary HTTPS preview diperiksa. Tidak ada transaksi atau provider aktif; COYABAG dan produksi lain tidak berubah. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED; review HP Andreas OPEN, bukan BUSINESS_READY. [Catatan client](products/sagadevs/JERSEY_JAGO.md).
+Pemberi arahan: Andreas. Knowledge dipisahkan dari source client; branch main HEAD. Update mencakup produk/dossier/changelog SagaDevs, catatan client, indeks, master, keputusan, gap serta sync status. URL sementara dan path evidence lokal tidak dipublikasikan.
+
 ## 2026-10-20 - SagaOPS cash operations production delivery
 
 CONFIRMED izin Andreas dan runtime589e2c229f94bc0deb6a6edc2004149128781e53;

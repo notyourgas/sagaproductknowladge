@@ -1,5 +1,10 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-10-20 - Jersey Jago: prototype visual client
+
+CONFIRMED: prototype statis terisolasi source lokal `9e68ebd0e8824ac85bb3d0349e958b6e75371736` memakai streetwear minimalis ivory/ink/emas, Plus Jakarta Sans dan Anton. Beranda, katalog/filter/search, detail, zoom, menu mobile, wishlist serta bag simulasi tersedia; build dan tiga tes terfokus PASS, browser desktop/390px dan temporary HTTPS preview diperiksa. Data produk contoh; hero ilustrasi AI; tidak ada order/payment/provider/data produksi. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED, bukan production atau BUSINESS_READY; review Andreas OPEN. Source/runtime COYABAG tetap. [Detail client](JERSEY_JAGO.md).
+Alasan: Andreas meminta prototype visual dan akses dari HP. Klasifikasi CONFIRMED; belum merupakan design sign-off. File terkait: PRODUCT.md, DOSSIER.md, JERSEY_JAGO.md serta changelog/master portfolio.
+
 ## 2026-10-14 - Arkarupa: fresh full regression dan recovery lintas drive
 
 `CONFIRMED`; atas permintaan Andreas, runner existing mendukung workspace QA pada drive terpisah tanpa reset/serve. Source tooling `7628b26b84d65e35c26065b4ea4e6aeac1b2a415`, docs `f2ff71a018916a00a3d31c60c14fe41c5342ef7c`. Sebelumnya regresi penuh hanya historis; kini full69/881 PASS, snapshot utama direstore ke disposable, fixture dikembalikan dan source bundle dipulihkan dengan exact source/integritas cocok. PRODUCT/DOSSIER/catatan proyek/master/gaps/sync/portfolio/root changelog diperbarui. Production tidak berubah; UAT, kapasitas database, custody offsite dan target preview masih terbuka.

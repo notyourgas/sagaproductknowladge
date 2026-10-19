@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-20 - Jersey Jago belum design sign-off atau commerce
+
+CONFIRMED prototype visual tersedia; NEEDS CONFIRMATION: review Andreas, foto produk asli, data/kondisi nyata, model stok, kebijakan dan integrasi merchant/pengiriman. Tidak ada aktivasi toko produksi. [Scope dan bukti](products/sagadevs/JERSEY_JAGO.md).
+
 ## 2026-10-20 - Cash operations deployed; UAT nyata belum ditutup
 
 CONFIRMED589e2c229f94bc0deb6a6edc2004149128781e53 aktif/sehat, rollback579e479.

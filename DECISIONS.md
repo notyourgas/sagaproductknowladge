@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-279 - Jersey Jago memakai prototype streetwear minimalis emas
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 20 Oktober 2026 |
+| Topik | Arahan prototype visual client Jersey Jago |
+| Keputusan | Streetwear minimalis dengan aksen emas menggantikan lime, Plus Jakarta Sans untuk interface dan Anton untuk headline; prototype serta temporary tunnel untuk review HP |
+| Alasan | Mengikuti identitas brand dan referensi visual yang diberikan Andreas |
+| Alternatif yang dipertimbangkan | Aksen lime pada brief awal, ditinggalkan sesuai koreksi Andreas |
+| Dampak | Hanya prototype client terisolasi; tidak mengubah runtime COYABAG atau mengaktifkan transaksi |
+| Pemberi keputusan | Andreas |
+| Status | CONFIRMED untuk arah prototype; persetujuan desain final masih OPEN |
+| Dokumen terkait | [Jersey Jago](products/sagadevs/JERSEY_JAGO.md) |
+
 ## DEC-278 - Modal, expense, ringkasan dan hitungan staf di Kasir
 
 | Field | Isi |
