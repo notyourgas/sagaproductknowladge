@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-20 - Jersey Jago revisi15: batas penerimaan pengguna
+
+CONFIRMED source `89b777f` menambah enam interaksi native referensi Skiper tanpa mengubah Latest Drop. QA lokal desktop/HP simulasi/reduced-motion, native publish revisi15 dan pemeriksaan aset service-access selesai. HTML mendapat sisipan runtime hosting, sehingga hash mentah indeks tidak identik; batas verifikasi dicatat. NEEDS CONFIRMATION: UI hosted setelah login pemilik, HP fisik/Safari, gesture vertikal (probe alat timeout), screen reader dan tugas pembeli. Foto AI, data contoh dan bag simulasi tetap bukan bukti originalitas/stok atau toko siap transaksi. [Scope](products/sagadevs/JERSEY_JAGO.md).
+
 ## 2026-10-20 - SagaPOS offline commissioning available in production
 
 CONFIRMED Andreas-authorized source42d850fa36e73671338f997e236878bb1fc2fe46
