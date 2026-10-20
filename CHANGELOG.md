@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - Jersey Jago revisi16: React dan Skiper aktif pada preview tunnel
+
+CONFIRMED, Andreas mengotorisasi seluruh urutan migrasi. Source UI lokal `f74d16588528961cf2957ed4630e227bb432cdce`, delivery docs `befa5d82c81cf22639a193c97254b8213e010d26`. Seluruh halaman, shared layout, filter draft/URL, bag/wishlist, galeri dan dialog beralih ke React/Vite/TypeScript; fungsi katalog lama tetap dipakai. Skiper Free diadaptasi untuk link, nav roll, menu/panah, scroll fade dan Swiper kurator; accordion memakai port native+Motion tanpa source/pembelian Pro. Font/emas dan grid Latest Drop dipertahankan.
+
+Status `TEMPORARY_REACT_PREVIEW_VERIFIED`: build/typecheck dan22 tes PASS;36 kombinasi halaman/viewport pada tunnel final tanpa overflow horizontal/foto rusak. Filter, nested dialog Back/Forward, bag4barang/undo/wishlist, foto gagal/retry, accordion/reduced-motion dan carousel diuji terfokus; Strict Mode tanpa langkah dialog ganda.15hash lokal/publik cocok,5path privat404. Preview publik tanpa login memakai origin/tunnel baru; v15 dan Sites privat sebelumnya retained. Hostname baru tidak membawa storage origin lama. Pages tetap ditunda, PC/server/tunnel harus menyala.
+
+Produksi commerce/COYABAG, order/payment/stok/DNS/billing tidak berubah; bukan BUSINESS_READY. HP/iPhone fisik, keyboard virtual, screen reader, shopper acceptance, browser zoom200%, data/foto asli, kebijakan dan integrasi commerce tetap OPEN. Source `docs/react-migration-16.md` memuat hasil/batas dan rollback. Bundle utama berkurang melalui LazyMotion dibanding kandidat React awal, tanpa klaim Core Web Vitals atau jaringan HP. Next: review visual di HP dan kumpulkan data/kebijakan produk asli sebelum commerce production.
+
+Alasan: implementasi strategi React yang disetujui Andreas. Area/file: products/sagadevs/{JERSEY_JAGO,PRODUCT,DOSSIER,CHANGELOG}.md, CHATGPT_MASTER_KNOWLEDGE.md, SYNC_STATUS.md, CHANGELOG.md, changelog/PORTFOLIO_CHANGELOG.md, GAPS.md. Sumber: instruksi Andreas dan verifikasi source/runtime21 Oktober2026; knowledge main HEAD setelah push.
+
+
 ## 2026-10-21 - Jersey Jago: kembali ke tunnel lokal; strategi React disiapkan
 
 CONFIRMED, instruksi terbaru Andreas memilih localhost dan Quick Tunnel sementara untuk review HP. Preview revisi15 berhasil diakses tanpa login;14payload lokal dan14payload publik sesuai SHA256 serta3path privat404. Browser390px membuka beranda, detail produk dan filter lalu menutupnya, tanpa error console teramati. Ini smoke runtime; uji HP fisik/Safari dan screen reader tetap OPEN. Link sementara memerlukan PC/server/cloudflared hidup.
