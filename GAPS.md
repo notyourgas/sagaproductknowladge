@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-20 - Jersey Jago: preview PC-independent tersedia, UAT login masih OPEN
+
+CONFIRMED `HOSTED_PRIVATE_PREVIEW_DEPLOYED` pada https://jersey-jago-preview.lucky-eft-9288.chatgpt.site/#home, visual14/source UI `2fd701a` dan hosted source `a1fd3b57f6fbbaf0e5fa4213eaa1786546a32fe7`. Hosting tetap tersedia tanpa proses PC; akses owner-private memerlukan login ChatGPT pemilik. Native deployment succeeded dan gerbang login browser terverifikasi. NEEDS CONFIRMATION: UI setelah login dan HP fisik. Batas foto AI/data contoh, originalitas, kebijakan, stok/order/payment dan BUSINESS_READY tetap OPEN. [Scope dan riwayat](products/sagadevs/JERSEY_JAGO.md).
+
 ## 2026-10-20 - SagaPOS offline production activation remains OPEN
 
 CONFIRMED successor575b3b574f7046627620ee68ce6d8d567c4ecb50 qualified on the

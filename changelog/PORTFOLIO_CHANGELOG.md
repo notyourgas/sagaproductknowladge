@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-10-20 - Jersey Jago: preview hosted privat tanpa ketergantungan PC
+
+CONFIRMED, permintaan Andreas agar preview tetap bisa dibuka dari HP saat PC mati telah dipenuhi melalui hosting Sites, status native `succeeded`. URL tetap: https://jersey-jago-preview.lucky-eft-9288.chatgpt.site/#home. Audience owner-private dipertahankan; pengunjung perlu login ChatGPT dengan akun pemilik yang berhak. Ini menggantikan ketergantungan Quick Tunnel untuk review pribadi; tunnel lokal bukan alamat tetap.
+
+Snapshot visual revisi14 berasal dari UI source `2fd701ab5231fb6845f575c60471087eac0587b6`, dengan14 berkas statis cocok SHA256. Hosted source commit `a1fd3b57f6fbbaf0e5fa4213eaa1786546a32fe7` sudah pushed sebelum save/deploy; build remote dipakai karena pengemasan Bash lokal tidak tersedia. Browser mengonfirmasi gerbang login; UI hosted setelah autentikasi dan HP fisik belum diverifikasi karena sesi memerlukan login ulang pemilik. Status `HOSTED_PRIVATE_PREVIEW_DEPLOYED`, bukan BUSINESS_READY. Produksi hosting preview berubah; UI revisi14, COYABAG, backend, stok, order dan payment produksi tidak berubah. Foto AI/data contoh, foto/data/kebijakan asli serta UAT pembeli dan integrasi commerce tetap OPEN. Rollback memakai versi/snapshot terikat yang disimpan; tidak ada database yang diubah.
+
 ## 2026-10-20 - SagaPOS checker confirmed and guarded offline deployed
 
 CONFIRMED Andreas accepted online customer then checker/autocut, corroborated
