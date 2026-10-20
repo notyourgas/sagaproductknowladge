@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-20 - SagaPOS QRIS PIN now deployed; operator UAT open
+
+CONFIRMED active source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb after approved
+Rp0 Linux qualification392PASS/0FAIL/4SKIP plus durable3PASS, verified package,
+recovery rehearsal and atomic activation. This supersedes the earlier held gate.
+Kiosk merchant QRIS uses rotated staff PIN plus actual merchant-app funds,
+amount/reference check, not screenshot or automatic bank verification. Existing
+receipt layout/printer/QR asset unchanged, schema37/GATEWAY preserved. No fake
+production payment or physical TEST. Legitimate-payment/automatic-paper UAT
+remains OPEN; not BUSINESS_READY. Member shortcut paused, offline candidate held.
+
 ## 2026-10-20 - SagaPOS QRIS PIN is still not deployed
 
 CONFIRMED native qualification9d15ee4:390PASS/2FAIL/4SKIP, no package. Test-only

@@ -1,5 +1,21 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-20 - Kiosk QRIS staff PIN deployed
+
+CONFIRMED final source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb is now the
+active production release, replacing589e2c2 after guarded code-only activation
+and candidate/rollback recovery rehearsal. This supersedes the held-release
+snapshot below. Approved free Linux run:392PASS/0FAIL/4SKIP, durable payment3PASS;
+four skips concern Windows/paired-Platform HR, not QRIS confirmation.
+Staff can approve the current Kiosk merchant QRIS payment with their rotated
+personal PIN after checking actual merchant funds, exact amount and reference.
+Customer screenshots alone are insufficient; this is not bank auto-verification.
+Existing paid receipt queue, template, printer settings and merchant QR asset
+remain unchanged; QRIS does not add drawer cash. Owner/configuration/hash and
+health checks PASS, schema37/GATEWAY preserved. No production test sale or PIN
+provisioning performed. Operator legitimate-payment/automatic-paper UAT OPEN;
+not BUSINESS_READY. Member shortcut remains paused; offline release remains held.
+
 ## 2026-10-20 - QRIS PIN native qualification failed, corrections retained
 
 CONFIRMED qualification of source9d15ee4 completed390PASS/2FAIL/4SKIP in7m29s;

@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-20 - Manual QRIS confirmation in Kiosk
+
+CONFIRMED production source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb adds
+merchant QRIS approval through the existing scoped staff PIN dialog. Operator
+checks the merchant application, supplies exact received amount/reference and
+acknowledges the check before PIN confirmation. Temporary PIN must be rotated;
+live account/outlet/shift permissions and lockout remain enforced. This creates
+no general operator session. Pending orders remain unpaid until confirmation;
+uncertain responses retain the same payment/reference for guarded recovery.
+Existing durable payment/outbox and WebUSB receipt service are reused; keep the
+printer-service tab running/awake. QRIS never contributes to physical drawer
+cash or claims bank settlement. Template, spacing, feed/cut, QR asset and printer
+pairing are unchanged. Linux/native tests, immutable package, recovery rehearsal,
+activation and production invariants PASS. Human legitimate-payment/physical
+receipt acceptance remains OPEN; no fake production transactions were created.
+
 ## 2026-10-20 - Merchant QR asset production configuration
 
 CONFIRMED runtime589e2c229f94bc0deb6a6edc2004149128781e53. User-supplied

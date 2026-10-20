@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-20 - SagaPOS Kiosk QRIS staff PIN production release
+
+CONFIRMED Andreas-authorized source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb
+qualified on Linux392PASS/0FAIL/4SKIP plus durable3PASS; immutable package,
+pair recovery, atomic activation and production invariants PASS. Production
+changed589e2c2 -> fd2902b; QRIS staff PIN now deployed, not just source-ready.
+Actual merchant verification remains required; receipt/printer/QR assets remain
+unchanged. No financial/PIN/physical TEST mutations; human payment/paper UAT
+OPEN. Seven product/dossier/master/portfolio/changelog/status files updated.
+Knowledge main HEAD; source and readiness remain separately classified.
+
 ## 2026-10-20 - SagaPOS QRIS PIN qualification failure and corrected source
 
 CONFIRMED native390PASS/2FAIL/4SKIP on9d15ee4; no package/deployment. Tests/docs

@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-20 - QRIS staff PIN production activation
+
+CONFIRMED Andreas authorized the bounded free rerun and guarded deployment.
+Source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb: native392PASS/0FAIL/4SKIP,
+durable3PASS/static PASS; immutable package and pair-bound recovery PASS.
+Production now fd2902b, rollback589e2c2, schema37/GATEWAY unchanged. Kiosk staff
+can verify merchant funds/amount/reference and approve with a rotated PIN;
+existing receipt/printer/QR configuration hashes unchanged. No production sale,
+PIN provisioning or physical TEST. Legitimate-payment/paper UAT OPEN, not
+business-ready. Prior failed qualification remains historical evidence.
+
 ## 2026-10-20 - QRIS PIN release withheld after native failures
 
 CONFIRMED source9d15ee4 native390PASS/2FAIL/4SKIP, package skipped. Corrected

@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-20 - SagaPOS Kiosk QRIS PIN deployed
+
+CONFIRMED source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb active after free
+native392PASS/0FAIL/4SKIP, durable3PASS and guarded package/recovery activation.
+Current-payment merchant QRIS approval now reuses rotated staff PIN and the
+existing receipt queue. Merchant funds/amount/reference check remains mandatory;
+receipt/printer/QR configuration unchanged. Operator legitimate-payment/paper
+UAT OPEN; no fake production sale or business-ready claim. Member paused and
+offline held. Product/dossier/changelogs/master/status synchronized.
+
 ## 2026-10-20 - SagaPOS QRIS PIN release gate remains closed
 
 CONFIRMED native390PASS/2FAIL/4SKIP on9d15ee4, no package. Corrections source

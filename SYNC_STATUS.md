@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-20 - SagaPOS QRIS staff PIN production verified
+
+CONFIRMED active fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb; rollback589e2c2.
+Free bounded Linux392PASS/0FAIL/4SKIP, durable3PASS/static PASS, immutable package,
+recovery rehearsal and production activation/health/invariants PASS. QRIS PIN
+approval is deployed with mandatory merchant funds/amount/reference verification.
+Receipt layout, printer and QR asset unchanged. No production test sale, PIN
+provisioning or physical TEST; legitimate-payment/automatic-paper UAT OPEN.
+Seven public files updated without private identifiers/payload/evidence paths.
+Member shortcut still paused; unrelated offline release still held.
+
 ## 2026-10-20 - SagaPOS QRIS PIN failed gate recorded
 
 CONFIRMED corrected source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb local17PASS;
