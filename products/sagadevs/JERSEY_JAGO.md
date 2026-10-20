@@ -1,5 +1,13 @@
 # Jersey Jago — Client Visual Prototype
 
+## 2026-10-21 - Jersey Jago: kembali ke tunnel lokal; strategi React disiapkan
+
+CONFIRMED, instruksi terbaru Andreas memilih localhost dan Quick Tunnel sementara untuk review HP. Preview revisi15 berhasil diakses tanpa login;14payload lokal dan14payload publik sesuai SHA256 serta3path privat404. Browser390px membuka beranda, detail produk dan filter lalu menutupnya, tanpa error console teramati. Ini smoke runtime; uji HP fisik/Safari dan screen reader tetap OPEN. Link sementara memerlukan PC/server/cloudflared hidup.
+
+Persiapan Cloudflare Pages sekarang `DEFERRED_BY_USER_LOCAL_TUNNEL_SELECTED`, menggantikan next action menunggu login pada entri sebelumnya. Tidak ada Pages deploy atau project baru. Publikasi Sites privat sebelumnya retained. Source dokumen lokal `52d332963166ad0c8a23389631ab3599fc544717`, UI tetap `89b777f6822d42853a13bb654d8efc3d9ade2f02`. Produksi UI/commerce, COYABAG, order/payment/stok/DNS/billing tidak berubah; bukan BUSINESS_READY.
+
+PROPOSAL, `docs/react-skiper-migration-strategy.md` merekomendasikan kandidat Vite/React/TypeScript terpisah: parity layout, reuse domain katalog, migrasi filter/URL/dialog/bag, kemudian komponen Skiper terpilih dan QA sebelum cutover. Token brand dan grid Latest Drop dipertahankan; React dan handler DOM lama tidak berbagi subtree. Card swipe memakai Swiper/Motion; Bouncy Accordion Pro belum dibeli/diakses, opsi awal port native. Free memakai atribusi. Belum ada dependensi React atau migrasi UI yang diimplementasikan. Next: review strategi dan mulai kandidat ketika diminta; backend/data asli/UAT tetap lingkup terbuka.
+
 ## 2026-10-21 - Jersey Jago: paket Cloudflare publik siap, login pemilik menunggu
 
 CONFIRMED, Andreas meminta preview Cloudflare tanpa login ChatGPT dan tanpa ketergantungan PC. Source profil deployment `983fe2c50dc94599efa054e75cc05a42bc3b4dfb` menyiapkan Pages Direct Upload untuk UI revisi15/source `89b777f6822d42853a13bb654d8efc3d9ade2f02`. Paket ZIP16berkas berisi14payload statis yang cocok SHA256 ditambah404/headers khusus Pages; allowlist arsip dan index di root PASS. Tidak ada perubahan UI atau commerce. Scope/prosedur: source `docs/cloudflare-preview.md`.
