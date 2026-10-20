@@ -1,5 +1,25 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - UI printer ringkas dan TEST berulang sudah production
+
+CONFIRMED source `470314d449fe0765149f8dcae710e3ad71cd88d2` aktif di production,
+rollback `42d850f`. Alur harian Cari printer -> status USB/izin -> Tes print
+dapat diulang secara eksplisit; pengaturan lanjutan dipisahkan. Ledger tetap
+menahan hasil tidak pasti dan mendahulukan customer/checker. Template aktif,
+spacing/feed/autocut, konfigurasi printer/checker, QRIS dan GATEWAY tidak berubah.
+
+Run Linux `39477133603`: 214 PASS/0 FAIL/0 SKIP, job5m44s. Paket immutable,
+checksum, backup terenkripsi/disposable restore, candidate-current-candidate
+recovery dan aktivasi atomik PASS. Verifikasi Owner dan194aset publik PASS,
+tidak ada penjualan atau TEST fisik baru. Run pertama213PASS/1FAIL tetap tercatat;
+koreksi hanya menunggu aktivasi offline selesai sebelum memeriksa logout.
+
+PRODUCTION_DEPLOYED / PRODUCTION_VERIFIED, bukan penerimaan fisik Chromebook.
+Offline tetap tersedia untuk commissioning, belum activated/operational. Akses
+Chromebook masih ditunda; jangan hapus data browser atau mengulang TEST buta.
+Biaya Rp0, runner terpisah, tidak build di VPS serving atau mengubah proteksi.
+Otorisasi kesiapan/deploy berikutnya mengikuti [DEC-281](../../DECISIONS.md).
+
 ## 2026-10-21 - Printer harian lebih sederhana, TEST dapat diulang
 
 CONFIRMED source `951ed651fbe55e0010344284335979cc1ef962c5` sudah dipush:

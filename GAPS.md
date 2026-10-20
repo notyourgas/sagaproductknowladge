@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - SagaPOS printer UI: release gates closed, hardware OPEN
+
+CONFIRMED source470314d449fe0765149f8dcae710e3ad71cd88d2 deployed/verified,
+rollback42d850f. Gate Linux/paket/recovery/Owner dari kandidat951ed65 lokal kini
+selesai:214PASS/0FAIL/0SKIP,194aset/invariants PASS. NEEDS CONFIRMATION: perilaku
+fisik/power cycle/background pada Chromebook dan provenance lease commissioning
+offline. Andreas belum bisa mengakses perangkat; tidak diminta mencetak lagi.
+Executor menjaga source/layanan; Andreas memeriksa perangkat setelah akses ada.
+Tidak meloloskan offline activation/BUSINESS_READY dari hasil spool/fixture.
+Managed offsite backup masih UNVERIFIED. Readiness/deploy tidak lagi menunggu
+izin runner berulang selama tetap memenuhiDEC-281, Rp0 dan gate teknis.
+
 ## 2026-10-21 - Jersey Jago revisi16: React dan Skiper aktif pada preview tunnel
 
 CONFIRMED, Andreas mengotorisasi seluruh urutan migrasi. Source UI lokal `f74d16588528961cf2957ed4630e227bb432cdce`, delivery docs `befa5d82c81cf22639a193c97254b8213e010d26`. Seluruh halaman, shared layout, filter draft/URL, bag/wishlist, galeri dan dialog beralih ke React/Vite/TypeScript; fungsi katalog lama tetap dipakai. Skiper Free diadaptasi untuk link, nav roll, menu/panah, scroll fade dan Swiper kurator; accordion memakai port native+Motion tanpa source/pembelian Pro. Font/emas dan grid Latest Drop dipertahankan.

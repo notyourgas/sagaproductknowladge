@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-21 - SagaPOS printer UX terdeploy, perangkat tetap pending
+
+CONFIRMED release `470314d449fe0765149f8dcae710e3ad71cd88d2` aktif, rollback42d850f.
+Linux214/214 tanpa skip, immutable package, encrypted restore/recovery, guarded
+activation dan Owner/194aset PASS. Cari printer/status/Tes print berulang lebih
+ringkas, tanpa perubahan nota atau konfigurasi printer/checker/QRIS/GATEWAY.
+PRODUCTION_DEPLOYED/VERIFIED, bukan hardware/offline BUSINESS_READY. Chromebook
+tertunda; tidak ada TEST fisik atau transaksi palsu. Biaya Rp0 dan proteksi tetap.
+Standing authorization readiness/deploy SagaPOS dicatat diDEC-281, bukan bypass.
+
 ## 2026-10-21 - Jersey Jago revisi16: React dan Skiper aktif pada preview tunnel
 
 CONFIRMED, Andreas mengotorisasi seluruh urutan migrasi. Source UI lokal `f74d16588528961cf2957ed4630e227bb432cdce`, delivery docs `befa5d82c81cf22639a193c97254b8213e010d26`. Seluruh halaman, shared layout, filter draft/URL, bag/wishlist, galeri dan dialog beralih ke React/Vite/TypeScript; fungsi katalog lama tetap dipakai. Skiper Free diadaptasi untuk link, nav roll, menu/panah, scroll fade dan Swiper kurator; accordion memakai port native+Motion tanpa source/pembelian Pro. Font/emas dan grid Latest Drop dipertahankan.

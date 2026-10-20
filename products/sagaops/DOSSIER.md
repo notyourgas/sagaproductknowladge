@@ -1,5 +1,28 @@
 # SagaOPS Dossier
 
+## 2026-10-21 - Printer daily UX production delivery
+
+CONFIRMED release `470314d449fe0765149f8dcae710e3ad71cd88d2`, rollback42d850f,
+replaces the locally validated951ed65 status. Exact-source Linux run39477133603
+214/214 PASS, zero skip, job5m44s. The initial run's213PASS/1FAIL is retained:
+the fixture now waits for offline activation completion before asserting401,
+without relaxing logout or changing application code.
+
+Immutable package/integrity, encrypted backup/disposable restore, code-only
+candidate-current-candidate recovery and guarded activation PASS. Owner readback
+matched approved template, printer/checker, QRIS and payment mode;194 offline
+assets and protected anonymous routes matched release inputs. Read-only browser
+inspection saw the new controls, without selecting USB or sending TEST. Schema37
+and Nginx unchanged. Five unused historical TARs were encrypted, copied and
+hash/byte verified before relocation; releases, database and backups untouched.
+
+PRODUCTION_DEPLOYED / PRODUCTION_VERIFIED. Reusable diagnostics retain explicit
+intent/ledger, unknown-paper review and customer/checker priority. Root offline
+qualification is rebound to this successful exact-source run; this is availability
+only, not device activation. Chromebook physical/background and offline lease/UAT
+remain OPEN. Managed offsite service remains UNVERIFIED. Rp0 limits and Windows/
+browser protections remain; no synthetic production sale or physical print.
+
 ## 2026-10-21 - Repeatable WebUSB diagnostic dan UI harian
 
 CONFIRMED source `951ed651fbe55e0010344284335979cc1ef962c5` menyederhanakan

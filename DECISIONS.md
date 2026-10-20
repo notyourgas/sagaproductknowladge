@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-281 - Otorisasi mandiri kesiapan dan deploy SagaPOS
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 21 Oktober 2026 |
+| Klasifikasi | CONFIRMED |
+| Topik | Kualifikasi Linux dan deployment SagaPOS berikutnya |
+| Keputusan | Andreas mengizinkan kesiapan, Linux dan deploy dalam scope SagaPOS tanpa pertanyaan izin ulang; executor tetap memverifikasi kuota gratis, memakai run terpisah terbatas dan gate rilis yang sah. |
+| Alasan | Menghindari pekerjaan tertunda karena permintaan izin readiness yang berulang. |
+| Alternatif | Meminta persetujuan baru untuk setiap run, tidak dipakai lagi selama scope/batas tetap sama. |
+| Dampak | Rp0, proteksi Windows/browser, credential safety, least privilege, no production builder, backup/rollback, batas koreksi dan larangan transaksi palsu tetap berlaku. Tidak memberi izin layanan berbayar atau mengganti bukti commissioning fisik. |
+| Pemberi keputusan | Andreas |
+| Status | CONFIRMED; release470314d production verified, penerimaan Chromebook/offline tetap OPEN. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md), [Deployment governance](docs/UPDATE_PROTOCOL.md) |
+
 ## DEC-280 - Jersey Jago revisi visual eksperimental
 
 | Field | Nilai |

@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-21 - Deploy printer harian dan TEST koneksi berulang
+
+CONFIRMED atas otorisasi Andreas: source `470314d449fe0765149f8dcae710e3ad71cd88d2`
+production, rollback42d850f. Linux214PASS/0FAIL/0SKIP, paket/integritas,
+backup/restore/recovery/activation/monitor serta Owner/194aset PASS. Run awal
+gagal pada urutan fixture logout; koreksi tidak mengubah perilaku produk.
+UI harian ringkas dan TEST eksplisit berulang aktif pada source served. Nota,
+spacing/feed/cut, printer/checker, QRIS, GATEWAY dan schema37 dipertahankan.
+PRODUCTION_DEPLOYED/VERIFIED; fisik Chromebook dan commissioning offline OPEN.
+Tidak ada TEST fisik/penjualan palsu, biaya tambahan atau bypass proteksi.
+
 ## 2026-10-21 - UI printer ringkas dan TEST koneksi berulang
 
 CONFIRMED, permintaan Andreas untuk mengerjakan software tanpa Chromebook:

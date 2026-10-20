@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - SagaPOS printer UX production dan otorisasi readiness
+
+CONFIRMED Andreas mengotorisasi deploy dan Linux tanpa izin readiness berulang,
+tetap Rp0 dan gate teknis (DEC-281). Source
+`470314d449fe0765149f8dcae710e3ad71cd88d2` deployed/verified, rollback42d850f,
+Linux214/214 tanpa skip. Paket/restore/recovery/aktivasi/monitor/Owner/194aset PASS.
+UI printer harian dan TEST berulang aktif, nota/printer/checker/QRIS tetap.
+Chromebook/commissioning offline OPEN; tidak ada TEST fisik atau penjualan palsu.
+Dokumen terdampak: produk SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio, master,
+gaps, sync, DECISIONS dan root changelog. Knowledge diterima, status deployment
+lama superseded dengan histori tetap; produk lain tidak diubah.
+
 ## 2026-10-21 - Jersey Jago revisi16: React dan Skiper aktif pada preview tunnel
 
 CONFIRMED, Andreas mengotorisasi seluruh urutan migrasi. Source UI lokal `f74d16588528961cf2957ed4630e227bb432cdce`, delivery docs `befa5d82c81cf22639a193c97254b8213e010d26`. Seluruh halaman, shared layout, filter draft/URL, bag/wishlist, galeri dan dialog beralih ke React/Vite/TypeScript; fungsi katalog lama tetap dipakai. Skiper Free diadaptasi untuk link, nav roll, menu/panah, scroll fade dan Swiper kurator; accordion memakai port native+Motion tanpa source/pembelian Pro. Font/emas dan grid Latest Drop dipertahankan.
