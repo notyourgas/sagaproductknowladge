@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-20 - Ready-offline screen integration; Linux release gate failed
+
+CONFIRMED Andreas requested continued deployment. Source5a93808 integrated
+existing Cashier/Kiosk screens, scoped static cache, shared USB drain, drawer
+expense and ordered reconciliation; source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b
+corrects test fixtures only. Local59PASS/static PASS; native Linux187PASS/3FAIL,
+zero skipped, fixture correction19PASS locally. No failed gate was waived and
+no package was built. The single approved Rp0 run is consumed; another bounded
+run awaits approval and fresh quota. Effective Owner access also needs renewal.
+Current589e2c2, online printer and receipt layout remain unchanged. Offline
+activation still forbidden; paper/stock/recovery/physical gates remain OPEN.
+IMPLEMENTED_IN_PART / NOT_DEPLOYED / NOT_BUSINESS_READY.
+
 ## 2026-10-20 - Offline foundation committed, deployment NO-GO
 
 CONFIRMED Andreas requested offline implementation/deploy and approved one

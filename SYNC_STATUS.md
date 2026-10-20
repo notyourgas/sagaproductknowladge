@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-20 - SagaPOS offline integration, failed release gate retained
+
+CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed; existing
+screens/cache/common USB integration and local cash/expense journey now tested.
+Local59PASS/static PASS; native187PASS/3FAIL, then fixture correction19PASS
+locally without runtime changes. Eight knowledge documents distinguish source
+integration from qualified packaging, deployment, activation and real paper.
+Single bounded Rp0 allowance consumed; rerun and effective Owner access pending.
+Current589e2c2 unchanged; offline production fence retained. Paper/production/
+stock recovery and actual Chromebook commissioning remain OPEN. NOT_READY.
+
 ## 2026-10-20 - SagaPOS offline foundation, not deployed
 
 CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48; local70tests and

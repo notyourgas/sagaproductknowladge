@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-20 - SagaPOS guarded offline integration, not deployed
+
+CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed: existing
+Cashier/Kiosk offline entry/cache and shared USB journal integrated. Local59PASS
+and fixture correction19PASS/static PASS. Linux187PASS/3FAIL prevents packaging;
+no assertion waived, no second run dispatched. Current589e2c2 and online print
+remain unchanged. Production offline fence stays; audited paper/stock recovery,
+remaining regression and new Chromebook commissioning are OPEN. No paid
+resources, production transactions or physical TESTs. NOT_BUSINESS_READY.
+
 ## 2026-10-20 - SagaPOS offline foundation is not a release
 
 CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48: guarded offline

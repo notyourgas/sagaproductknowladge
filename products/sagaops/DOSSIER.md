@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-20 - Offline integration source, not an operational release
+
+CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b. Shared operational
+screens and receipt engine are reused; one ready-offline screen lock and one
+USB service serve the immutable local journal. No Owner/API responses are
+cached; no staff PIN/password is stored offline. Platform UV is required.
+Channel catalogs and prior versions are retained; new online checkout is
+blocked while an offline lease is unclosed. Setup/TEST acknowledgements recover
+without another TEST. Unknown print outcomes and unresolved tickets hold the
+service/seal, not an automatic resend. Cashier/Kiosk/expense/reconnect synthetic
+journey and affected local regression pass. Native Linux187PASS/3FAIL; fixture
+corrections19PASS locally do not replace native qualification. Package/deploy
+remain held, production589e2c2 unchanged. Complete audited paper/production/stock
+resolution, remaining writer/catalog/cache recovery coverage and new Chromebook
+UV/paper/feed/cut acceptance before removing the production fence.
+
 ## 2026-10-20 - Guarded offline journal foundation
 
 CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48, local70tests and

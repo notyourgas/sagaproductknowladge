@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-20 - SagaPOS offline integration is still release-held
+
+CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed. Existing
+Cashier/Kiosk now use explicit ready-offline entry, asset-only cache, platform
+user verification, local cash/expense ledger and the common USB service.
+Local59PASS, fixture correction19PASS, static PASS; Linux187PASS/3FAIL means no
+qualified package or deploy. Fixture corrections did not change runtime or
+weaken guards; native rerun needs another approved bounded Rp0 run. Current
+production589e2c2 and receipt layout/feed/cut remain unchanged. Offline is not
+enabled: audited uncertain-paper/production/stock resolution, remaining
+regressions and fresh Chromebook commissioning are still required.
+IMPLEMENTED_IN_PART / NOT_DEPLOYED / NOT_BUSINESS_READY.
+
 ## 2026-10-20 - SagaPOS offline status boundary
 
 CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48 contains an offline

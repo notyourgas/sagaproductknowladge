@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-20 - Guarded offline screens integrated, release held
+
+CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed. Existing
+Cashier/Kiosk screens now have explicit ready-offline entry, asset-only cache,
+device user verification, local cash/expense journal and common USB drain.
+Synthetic journeys cover pending Kiosk cash before staff confirmation, restart,
+reconnect and no repeated original. Local scoped59PASS, correction19PASS;
+static/TypeScript PASS. Approved receipt layout/feed/cut remain unchanged.
+Linux qualification187PASS/3FAIL, no skips; the three fixture incompatibilities
+were corrected without changing runtime or weakening guards, but native rerun
+is still pending. No qualified package or deployment. Current589e2c2 stays
+healthy; offline production activation remains forbidden. Uncertain-paper
+resolution, production/stock review, remaining exclusivity/catalog/cache tests
+and actual Chromebook commissioning are OPEN. NOT_BUSINESS_READY.
+
 ## 2026-10-20 - Offline cash foundation, not operational
 
 CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48 pushed:
