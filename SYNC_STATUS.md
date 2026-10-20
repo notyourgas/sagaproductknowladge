@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-21 - Jersey Jago: paket Cloudflare publik siap, login pemilik menunggu
+
+CONFIRMED, Andreas meminta preview Cloudflare tanpa login ChatGPT dan tanpa ketergantungan PC. Source profil deployment `983fe2c50dc94599efa054e75cc05a42bc3b4dfb` menyiapkan Pages Direct Upload untuk UI revisi15/source `89b777f6822d42853a13bb654d8efc3d9ade2f02`. Paket ZIP16berkas berisi14payload statis yang cocok SHA256 ditambah404/headers khusus Pages; allowlist arsip dan index di root PASS. Tidak ada perubahan UI atau commerce. Scope/prosedur: source `docs/cloudflare-preview.md`.
+
+Status `PREPARED_WAITING_CLOUDFLARE_LOGIN`, BELUM DEPLOYED ke Cloudflare: login pemilik diperlukan sebelum verifikasi account/project dan upload. Belum ada project Cloudflare atau URL publik yang dikonfirmasi; jangan mengarang alamat pages.dev. Owner-private Sites revisi15 tetap merupakan publikasi aktif sebelumnya, dengan URL/akses tidak berubah. Next action: pemilik login langsung di browser, lalu lanjutkan upload dan verifikasi anonim tanpa cookie/Authorization. Pengunjung target nantinya tidak perlu login. Produksi hosting belum berubah pada milestone persiapan ini; backend/order/payment/stok/DNS/billing tidak disentuh, bukan BUSINESS_READY.
+
 ## 2026-10-21 - SagaPOS printer UX lokal, produksi tidak berubah
 
 CONFIRMED source `951ed651fbe55e0010344284335979cc1ef962c5` dipush pada

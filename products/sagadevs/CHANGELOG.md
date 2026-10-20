@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-10-21 - Jersey Jago: paket Cloudflare publik siap, login pemilik menunggu
+
+CONFIRMED, Andreas meminta preview Cloudflare tanpa login ChatGPT dan tanpa ketergantungan PC. Source profil deployment `983fe2c50dc94599efa054e75cc05a42bc3b4dfb` menyiapkan Pages Direct Upload untuk UI revisi15/source `89b777f6822d42853a13bb654d8efc3d9ade2f02`. Paket ZIP16berkas berisi14payload statis yang cocok SHA256 ditambah404/headers khusus Pages; allowlist arsip dan index di root PASS. Tidak ada perubahan UI atau commerce. Scope/prosedur: source `docs/cloudflare-preview.md`.
+
+Status `PREPARED_WAITING_CLOUDFLARE_LOGIN`, BELUM DEPLOYED ke Cloudflare: login pemilik diperlukan sebelum verifikasi account/project dan upload. Belum ada project Cloudflare atau URL publik yang dikonfirmasi; jangan mengarang alamat pages.dev. Owner-private Sites revisi15 tetap merupakan publikasi aktif sebelumnya, dengan URL/akses tidak berubah. Next action: pemilik login langsung di browser, lalu lanjutkan upload dan verifikasi anonim tanpa cookie/Authorization. Pengunjung target nantinya tidak perlu login. Produksi hosting belum berubah pada milestone persiapan ini; backend/order/payment/stok/DNS/billing tidak disentuh, bukan BUSINESS_READY.
+
 ## 2026-10-20 - Jersey Jago revisi15: interaksi Skiper yang tetap mudah dipakai
 
 CONFIRMED, permintaan Andreas "kerjakan semua" menghasilkan source UI `89b777f6822d42853a13bb654d8efc3d9ade2f02`, hosted snapshot `68621c8665ef87ba18a67d7e8c74ff9baafca099`. Enam referensi Skiper diterapkan sebagai HTML/CSS/JavaScript native: underline link/footer, text roll navigasi desktop, ikon interaktif, accordion lebih tenang, hint/fade scroll filter dan bag, serta carousel kurator terpisah dengan tombol/keyboard/swipe dan satu slide aktif. Grid Latest Drop, gutter bersama, Jakarta Sans/Anton dan emas tetap. Tidak menambah React/Motion/Swiper, membeli Pro, atau menyalin kode Pro; credit referensi ada di footer. Kontrak: source `docs/motion-revision-15.md`.
