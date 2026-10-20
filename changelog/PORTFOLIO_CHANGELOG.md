@@ -1,5 +1,28 @@
 # Portfolio Changelog
 
+## 2026-10-20 - SagaPOS offline commissioning available in production
+
+CONFIRMED Andreas-authorized source42d850fa36e73671338f997e236878bb1fc2fe46
+qualified on one bounded Rp0 Linux run209PASS/0FAIL/0SKIP in5m37s, including
+native PostgreSQL, Nginx, production-origin Kiosk/Cashier, cache/UV/reconnect and
+ON-OFF-ON write exclusion. Immutable package, encrypted backup/restore, exact
+source-bound recovery and atomic code-only activation PASS. Active42d850f,
+rollback575b3b5, schema37/GATEWAY unchanged. Production verification matched194
+cache assets, protected anonymous routes and unchanged Owner/template/printer/
+checker/QRIS configuration. No fake sale, payment or physical TEST was created.
+
+Status PRODUCTION_DEPLOYED_COMMISSIONING_AVAILABLE, not offline device activation
+or BUSINESS_READY. The previous local-only successor status is superseded.
+Actual Chromebook platform UV/storage and one new offline paper/feed/cut TEST,
+then a legitimate cash/reconnect/reconciliation journey remain OPEN. Pilot is
+one prepared device/shift, cash-only for2hours; online money writers/QRIS stay
+held from preparation until review/reconciliation closes the session. No offline
+staff PIN verifier or Owner password is cached. Unknown paper never auto-resends;
+clearing browser data can lose unsynced cash facts. Approved online receipt
+layout, spacing/feed/cut, USB service and customer-then-checker behavior remain
+unchanged. Managed offsite backup remains UNVERIFIED; verified PC copies do not
+replace that separate gate.
+
 ## 2026-10-20 - SagaPOS offline activation successor locally validated
 
 CONFIRMED source42d850fa36e73671338f997e236878bb1fc2fe46 committed/pushed:
