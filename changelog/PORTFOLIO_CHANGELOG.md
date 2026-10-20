@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-20 - SagaPOS QRIS staff PIN locally validated
+
+CONFIRMED be2e38c779fb9f875aa7859028207ecd3ac5776b: Kiosk manual merchant QRIS
+staff PIN approval added with actual merchant amount/reference verification.
+Local50PASS/static PASS; source-only, not deployed. Current production589e2c2
+unchanged, native qualification awaits bounded free runner approval. Receipt and
+printer unchanged; legitimate payment/paper UAT OPEN. Member short lookup paused.
+
 ## 2026-10-20 - SagaPOS merchant QR configuration verified
 
 CONFIRMED user-authorized QR-only merchant image stored on existing runtime

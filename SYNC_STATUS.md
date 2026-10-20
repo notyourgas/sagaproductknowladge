@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-20 - SagaPOS QRIS staff PIN implementation only
+
+CONFIRMED source be2e38c779fb9f875aa7859028207ecd3ac5776b, local50PASS/static
+PASS. Current-session merchant QRIS staff PIN checks exact amount/reference,
+retains receipt/printer/payment outbox; no production financial mutation.
+Linux qualification/package/deploy OPEN pending one new bounded Rp0 allowance.
+Production589e2c2 unchanged; Member short lookup paused by Andreas. Six public
+knowledge files updated without credentials, customer data or merchant payload.
+
 ## 2026-10-20 - SagaPOS merchant QR production asset
 
 CONFIRMED runtime589e2c229f94bc0deb6a6edc2004149128781e53 plus user-authorized

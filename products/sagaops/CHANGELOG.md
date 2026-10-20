@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-20 - QRIS staff PIN implementation, release held
+
+CONFIRMED Andreas requested manual merchant QRIS confirmation in Kiosk using
+staff PIN and paused Member short lookup. Source be2e38c779fb9f875aa7859028207ecd3ac5776b
+reuses Team authorization and existing durable QRIS payment/outbox; staff checks
+merchant amount/reference, no Owner session opened or physical cash added.
+Local50PASS/static PASS, no schema/receipt/printer/gateway change. Linux/package/
+deploy OPEN pending one bounded Rp0 runner approval. Production589e2c2 unchanged;
+real payment/paper UAT OPEN. Synced product/master/portfolio/root/sync status.
+
 ## 2026-10-20 - User-supplied merchant QR installed
 
 CONFIRMED Andreas request and effective production Owner authorization. Existing

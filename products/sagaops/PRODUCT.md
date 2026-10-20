@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-20 - Kiosk merchant QRIS staff PIN source ready, not deployed
+
+CONFIRMED source be2e38c779fb9f875aa7859028207ecd3ac5776b adds current-session
+merchant QRIS confirmation through the existing rotated staff PIN flow. Staff
+checks funds in the merchant application and enters exact amount/reference;
+this is manual approval, not automatic bank verification. Local50PASS and
+static/type PASS; native Linux qualification/package/deploy remain OPEN pending
+one newly requested bounded free runner allowance. Production remains589e2c2.
+Receipt layout, printer and existing paid outbox unchanged; no real payment or
+physical TEST performed. Member short lookup paused by Andreas. Not business-ready.
+
 ## 2026-10-20 - QRIS merchant asset installed in production
 
 CONFIRMED Andreas supplied the merchant QR and authorized installation through

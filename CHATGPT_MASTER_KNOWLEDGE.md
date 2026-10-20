@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-20 - SagaPOS QRIS PIN source only; Member shortcut paused
+
+CONFIRMED Andreas paused short Member lookup and requested manual QRIS staff
+approval in Kiosk. Source be2e38c779fb9f875aa7859028207ecd3ac5776b locally passes
+50 scoped tests/static checks, preserving receipt/printer/gateway. Staff must
+check actual merchant funds/reference and use rotated PIN; no automatic bank
+verification claimed. Not deployed: Linux/package/activation await a newly
+requested bounded free runner allowance. Live589e2c2 unchanged, payment/paper UAT OPEN.
+
 ## 2026-10-20 - SagaPOS merchant QR now stored, manual approval retained
 
 CONFIRMED runtime589e2c229f94bc0deb6a6edc2004149128781e53: Andreas supplied

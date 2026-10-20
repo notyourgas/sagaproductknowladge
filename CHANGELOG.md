@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-20 - SagaPOS QRIS PIN source delivery, not production activation
+
+CONFIRMED source be2e38c779fb9f875aa7859028207ecd3ac5776b and Andreas request:
+manual merchant QRIS confirmation in Kiosk uses existing staff PIN boundary.
+Local50PASS/static PASS; no receipt/printer/gateway or production payment change.
+Native Linux/package/deploy pending bounded free runner allowance; live589e2c2
+unchanged. Member shortcut paused, real paper/payment UAT OPEN. Updated SagaOPS
+PRODUCT/CHANGELOG, portfolio, master knowledge and SYNC_STATUS. Knowledge main HEAD.
+
 ## 2026-10-20 - SagaPOS merchant QR installed through existing Owner API
 
 CONFIRMED user request and runtime589e2c229f94bc0deb6a6edc2004149128781e53:
