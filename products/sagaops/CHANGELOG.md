@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-20 - Checker acceptance and guarded offline production release
+
+CONFIRMED Andreas reported legitimate customer then bar checker output/autocut;
+live Owner readback confirms enabled/commissioned. Supersedes older OFF status.
+Source575b3b574f7046627620ee68ce6d8d567c4ecb50 merges deployed QRIS and adds
+audited offline paper/stock recovery, cash exclusivity, credential/catalog/cache
+recovery and incompatible-rollback guards. Approved free Linux203PASS/0FAIL/
+0SKIP/package PASS in5m22s. Prior202PASS/1fixtureFAIL retained, test-only fix.
+Guarded575b3b5 now production-deployed, rollbackfd2902b; encrypted restore,
+pair-bound recovery and post-deploy invariants/health PASS. Offline remains OFF,
+not activation. Existing receipt and printer unchanged. Feature-on recovery and real Chromebook
+offline UV/paper acceptance remain OPEN; no fake sale or new physical TEST.
+
 ## 2026-10-20 - QRIS staff PIN production activation
 
 CONFIRMED Andreas authorized the bounded free rerun and guarded deployment.

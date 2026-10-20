@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-20 - SagaPOS checker acceptance and offline qualification
+
+CONFIRMED Andreas's legitimate customer then checker/autocut acceptance matches
+live enabled/commissioned settings. Historical OFF status superseded. Source
+575b3b574f7046627620ee68ce6d8d567c4ecb50 qualified203PASS/0FAIL/0SKIP/package
+PASS after a test-only fixture correction; earlier failed run retained. Offline
+guarded production575b3b5 deployed/verified, rollbackfd2902b, offline OFF. Codex owns
+production feature-on recovery; actual Chromebook UV/paper acceptance remains
+OPEN. Eight product/dossier/master/portfolio/changelog/status/gaps documents
+updated, knowledge main HEAD. Layout/printer unchanged; NOT_BUSINESS_READY.
+
 ## 2026-10-20 - SagaPOS Kiosk QRIS staff PIN production release
 
 CONFIRMED Andreas-authorized source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb

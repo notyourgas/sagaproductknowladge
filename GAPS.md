@@ -1,5 +1,23 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-20 - SagaPOS offline production activation remains OPEN
+
+CONFIRMED successor575b3b574f7046627620ee68ce6d8d567c4ecb50 qualified on the
+final approved free Linux run203PASS/0FAIL/0SKIP/package PASS. Previous native
+202PASS/1fixtureFAIL remains failed; test-only correction retained. Guarded
+production575b3b5 deployed/verified; rollbackfd2902b. Codex owns
+source-bound production availability and feature-on recovery,
+including actual Dashboard/Kiosk origin behavior. Preparation/release is not
+offline activation. Andreas+Codex later commission actual Chromebook device UV
+and one new offline paper/feed/cut TEST before a legitimate offline cash journey.
+Do not reuse online PIN/paper acceptance as offline proof or clear unsynced data.
+
+CONFIRMED online checker gap CLOSED within its scope: live settings enabled/
+commissioned, and Andreas confirmed legitimate customer then checker/autocut.
+Historical OFF snapshots below are superseded, not evidence to reprint/re-enable.
+Whole shift/expense/closing/handover UAT and manual QRIS merchant-app payment
+acceptance remain separate. Layout/printer unchanged; NOT_BUSINESS_READY.
+
 ## 2026-10-20 - SagaPOS merchant QR physical/payment acceptance
 
 CONFIRMED QR-only asset installed and exact-readback verified on runtime589e2c2

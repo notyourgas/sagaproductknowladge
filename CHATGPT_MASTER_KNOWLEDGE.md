@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-20 - SagaPOS checker physical acceptance; offline still guarded
+
+CONFIRMED live customer/checker enabled and commissioned on fd2902b; Andreas
+confirmed legitimate customer then checker output with correct autocut. Older
+checker-OFF snapshots are historical. Approved receipt layout/printer unchanged.
+Offline candidate575b3b574f7046627620ee68ce6d8d567c4ecb50 merges deployed QRIS
+and closes local paper/stock review, exclusivity, credential/catalog/cache and
+release-transition gaps. Final bounded free Linux203PASS/0FAIL/0SKIP/package
+PASS; guarded production575b3b5/rollbackfd2902b verified after encrypted
+restore/recovery. Owner, receipt/printer/QR hashes and schema37/GATEWAY unchanged.
+Offline remains fenced/OFF, not an
+operational promise. Production feature-on/rollback and actual Kiosk-origin,
+Chromebook UV/offline paper acceptance remain OPEN. No fake sale/new physical
+TEST; Member shortcut paused; NOT_BUSINESS_READY.
+
 ## 2026-10-20 - SagaPOS QRIS PIN now deployed; operator UAT open
 
 CONFIRMED active source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb after approved

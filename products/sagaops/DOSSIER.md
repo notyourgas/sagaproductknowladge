@@ -1,5 +1,35 @@
 # SagaOPS Dossier
 
+## 2026-10-20 - Offline reconciliation and online checker acceptance
+
+CONFIRMED checker enabled/commissioned on current fd2902b; Andreas confirmed
+customer then checker output and autocut on a legitimate transaction. This is
+physical online acceptance only. Existing approved customer layout/template,
+spacing, footer/feed/cut and printer pairing were not changed.
+
+Qualified guarded source575b3b574f7046627620ee68ce6d8d567c4ecb50 retains QRIS
+staff-PIN behavior. Offline recovery persists cash facts before USB, synchronizes
+monotonic print telemetry without another original, and requires audited Owner
+review for unknown paper. Imported sales also require production/inventory
+review; managed ingredients need a completed physical-count snapshot covering
+their use. Review never deducts stock again or starts production twice. Final
+seal/shift close waits for reconciliation. This is a bounded physical-count
+pilot, not general offline inventory automation.
+
+Outlet money writers share the lease lock; expired/revoked identity facts stay
+reviewable. Credential recovery preserves lease/journal/TEST outcomes. Published
+catalog/HPP/native price-book history prevents repricing received cash. Asset
+digests reject mixed cache upgrades without clearing journals. Release runners
+reject incompatible targets while offline facts remain open, before and after
+stopping the service. Final Linux203PASS/0FAIL/0SKIP and package PASS; one prior
+test-fixture failure is retained. Guarded production575b3b5 is active with
+rollbackfd2902b after encrypted restore and candidate-current-candidate recovery.
+Post-deploy16served-file/3anonymous-boundary and Owner/configuration checks PASS;
+schema37/GATEWAY and receipt/printer/QR hashes unchanged. Offline remains
+OFF/fenced. Feature-on production/rollback, actual Kiosk-origin/UV and
+new Chromebook offline paper acceptance are still required. No fake production
+sale or physical send was performed. BUSINESS_READY=false.
+
 ## 2026-10-20 - Manual QRIS confirmation in Kiosk
 
 CONFIRMED production source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb adds

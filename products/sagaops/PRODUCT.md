@@ -1,5 +1,25 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-20 - Checker confirmed; guarded offline release deployed
+
+CONFIRMED live readback on fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb shows
+customer receipt and bar checker enabled/commissioned. Andreas confirmed both
+printed in order with correct autocut on a legitimate customer transaction.
+This supersedes historical checker-OFF snapshots, not broader operational UAT.
+No new physical TEST or sale was created by Codex; approved layout unchanged.
+
+Offline source575b3b574f7046627620ee68ce6d8d567c4ecb50 includes deployed QRIS
+and audited paper/stock review, immutable replay, shared cash-writer guards,
+credential recovery, historical pricing and cache-integrity recovery. Final
+approved free Linux qualification203PASS/0FAIL/0SKIP; immutable package built.
+Earlier202PASS/1fixtureFAIL remains failed; correction changed tests/docs only.
+Guarded production release575b3b5 is now active; rollbackfd2902b. Encrypted
+restore, pair-bound recovery, activation, Owner/configuration and served-byte
+verification PASS; schema37/GATEWAY unchanged. Offline remains OFF, not activated.
+The production fence remains; source-bound feature-on recovery, actual
+Kiosk/ingress/device-UV and physical offline commissioning remain OPEN.
+Member shortcut stays paused; NOT_BUSINESS_READY.
+
 ## 2026-10-20 - Kiosk QRIS staff PIN deployed
 
 CONFIRMED final source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb is now the

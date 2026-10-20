@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-20 - SagaPOS checker confirmed and guarded offline deployed
+
+CONFIRMED Andreas accepted online customer then checker/autocut, corroborated
+by live commissioned settings. Offline successor575b3b574f7046627620ee68ce6d8d567c4ecb50
+qualified203PASS/0FAIL/0SKIP on the final approved free Linux run; guarded
+package/recovery/deploy verified, active575b3b5/rollbackfd2902b. Offline remains fenced/OFF
+pending production feature-on recovery and actual Chromebook UV/paper gates.
+Layout/printer unchanged; no fake production sale. Product/dossier/master/
+changelogs/status/gaps updated; Member shortcut paused, not business-ready.
+
 ## 2026-10-20 - SagaPOS Kiosk QRIS PIN deployed
 
 CONFIRMED source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb active after free
