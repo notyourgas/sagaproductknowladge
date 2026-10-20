@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-20 - QRIS PIN native qualification failed, corrections retained
+
+CONFIRMED qualification of source9d15ee4 completed390PASS/2FAIL/4SKIP in7m29s;
+no deployable artifact was built. One QRIS fixture omitted its asset store and
+one existing receipt-editor scroll reset timed out. Corrected tests/docs source
+fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb pushed; local17PASS/0FAIL.
+Payment/UI/receipt runtime code unchanged by these corrections. One new bounded
+free rerun approval requested, not yet granted. Production589e2c2 remains healthy
+and unchanged. Encrypted recovery and off-host-copy checks passed; unused build
+cache relocation preserved active/rollback/database/backups. NOT_DEPLOYED;
+legitimate merchant-payment and automatic physical-paper acceptance OPEN.
+
 ## 2026-10-20 - Kiosk merchant QRIS staff PIN source ready, not deployed
 
 CONFIRMED source be2e38c779fb9f875aa7859028207ecd3ac5776b adds current-session

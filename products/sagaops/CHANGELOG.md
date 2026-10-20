@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-20 - QRIS PIN release withheld after native failures
+
+CONFIRMED source9d15ee4 native390PASS/2FAIL/4SKIP, package skipped. Corrected
+fixture activation and existing preview scroll-animation race in tests/docs only;
+source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb pushed, local17PASS. No payment,
+layout or printer behavior changed by corrections. Bounded free rerun approval
+pending; no automatic retry or failed-gate bypass. Recovery/encrypted copies and
+unused-cache relocation verified. Production589e2c2 unchanged/healthy; QRIS PIN
+not deployed, real payment/paper UAT OPEN. Updated product/master/portfolio/root/
+sync knowledge; no restricted identifiers or evidence copied publicly.
+
 ## 2026-10-20 - QRIS staff PIN implementation, release held
 
 CONFIRMED Andreas requested manual merchant QRIS confirmation in Kiosk using

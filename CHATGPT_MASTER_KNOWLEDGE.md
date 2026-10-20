@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-20 - SagaPOS QRIS PIN is still not deployed
+
+CONFIRMED native qualification9d15ee4:390PASS/2FAIL/4SKIP, no package. Test-only
+fixture/scroll corrections pushed as fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb,
+local17PASS; do not claim native qualification from PGlite. New bounded free
+rerun allowance requested, not granted. Production589e2c2 unchanged/healthy;
+layout/printer retained and physical-payment acceptance OPEN. Member shortcut
+still paused. Deployment permission exists but does not waive failed test gates.
+
 ## 2026-10-20 - SagaPOS QRIS PIN source only; Member shortcut paused
 
 CONFIRMED Andreas paused short Member lookup and requested manual QRIS staff

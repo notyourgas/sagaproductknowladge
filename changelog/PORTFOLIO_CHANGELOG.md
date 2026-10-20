@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-10-20 - SagaPOS QRIS PIN release gate remains closed
+
+CONFIRMED native390PASS/2FAIL/4SKIP on9d15ee4, no package. Corrections source
+fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb changes tests/docs only; local17PASS.
+Native rerun awaits new bounded Rp0 allowance. Production589e2c2 healthy and
+unchanged; receipt/printer preserved, legitimate payment/paper UAT OPEN.
+
 ## 2026-10-20 - SagaPOS QRIS staff PIN locally validated
 
 CONFIRMED be2e38c779fb9f875aa7859028207ecd3ac5776b: Kiosk manual merchant QRIS

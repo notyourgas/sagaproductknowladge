@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-20 - SagaPOS QRIS PIN failed gate recorded
+
+CONFIRMED corrected source fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb local17PASS;
+previous native9d15ee4 run390PASS/2FAIL/4SKIP, package NOT_BUILT. New bounded Rp0
+allowance pending. Production589e2c2 healthy/unchanged; no payment, PIN provision,
+print or configuration mutation. Six knowledge files updated, no restricted data.
+
 ## 2026-10-20 - SagaPOS QRIS staff PIN implementation only
 
 CONFIRMED source be2e38c779fb9f875aa7859028207ecd3ac5776b, local50PASS/static

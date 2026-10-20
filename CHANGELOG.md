@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-20 - SagaPOS QRIS PIN qualification failure and corrected source
+
+CONFIRMED native390PASS/2FAIL/4SKIP on9d15ee4; no package/deployment. Tests/docs
+corrected as fd2902b46fe6e12ddc1b38c06d9c55d7f7676bdb, local17PASS. New bounded
+free rerun permission pending; current589e2c2 healthy/unchanged. Recovery/copy/
+cache relocation validated without altering receipts, printer or business facts.
+Synced six product/master/portfolio/changelog/status files. Knowledge main HEAD.
+
 ## 2026-10-20 - SagaPOS QRIS PIN source delivery, not production activation
 
 CONFIRMED source be2e38c779fb9f875aa7859028207ecd3ac5776b and Andreas request:
