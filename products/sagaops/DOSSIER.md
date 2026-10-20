@@ -1,5 +1,20 @@
 # SagaOPS Dossier
 
+## 2026-10-20 - Guarded offline journal foundation
+
+CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48, local70tests and
+static/TypeScript1219modules PASS. Existing pricing/receipt logic is shared;
+cash facts are signed with device UV and journaled before future USB dispatch.
+Server staff PIN/password is not cached. Expiry/budget, ordered retries,
+crash rollback, captured HPP, expenses/counts, late sealing and shift-close
+guards have synthetic coverage; sync never sends USB or claims physical print.
+Production cannot enable this candidate. Missing operational UI/cache, online
+uncertainty barrier, channel/catalog refresh, shared USB integration, visible
+paper/stock review and setup recovery are Codex implementation work, not a
+request for another permission. Native Linux run, guarded release and new
+Chromebook commissioning follow those gates. No production data, template,
+printer, Windows protection or paid resource changed. NOT_DEPLOYED.
+
 ## 2026-10-20 - Cash operations production code-only
 
 CONFIRMED runtime589e2c229f94bc0deb6a6edc2004149128781e53, rollback579e479;

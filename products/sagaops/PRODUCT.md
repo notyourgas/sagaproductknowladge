@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-20 - Offline cash foundation, not operational
+
+CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48 pushed:
+bounded device lease, platform user-verification proof, IndexedDB cash journal,
+ordered replay, atomic money/expense/count import, print suppression and close
+guard. Local synthetic70PASS/0FAIL; static/TypeScript1219modules PASS.
+This is a guarded foundation, NOT a delivered offline Kiosk/Cashier feature.
+Production explicitly refuses activation; current589e2c2 and approved online
+receipt/WebUSB remain unchanged. UI/cache, uncertain online payment barrier,
+channel/menu refresh, USB drain/review, native Linux qualification, deployment
+and new physical commissioning remain OPEN. The new8minute/Rp0 allowance is
+unconsumed. IMPLEMENTATION_IN_PROGRESS / NOT_DEPLOYED / NOT_BUSINESS_READY.
+
 ## 2026-10-20 - Operasional kas karyawan deployed
 
 CONFIRMED source/runtime589e2c229f94bc0deb6a6edc2004149128781e53 aktif/sehat,

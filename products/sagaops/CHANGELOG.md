@@ -1,5 +1,19 @@
 # SagaOPS Changelog
 
+## 2026-10-20 - Offline foundation committed, deployment NO-GO
+
+CONFIRMED Andreas requested offline implementation/deploy and approved one
+additional <=8minute2vCPU/8GB Rp0 qualification run; it remains unconsumed.
+Source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48 adds a gated device cash lease,
+durable journal, ordered sync and atomic import with no replay print. Local70
+synthetic tests and static/TypeScript PASS; not native Linux or physical proof.
+Kiosk/Cashier UI/cache, unresolved-online-payment barrier, menu/channel refresh,
+USB integration and Owner paper/stock review are unfinished. Production589e2c2
+unchanged; activation is explicitly forbidden in this candidate. No finance
+writes, physical TEST or paid services. Codex owns remaining implementation;
+Andreas supplies later hardware confirmation. NOT_DEPLOYED / NOT_BUSINESS_READY.
+Files: PRODUCT, DOSSIER, this changelog, portfolio/master, GAPS and SYNC_STATUS.
+
 ## 2026-10-20 - Cash operations deployed, UAT karyawan terbuka
 
 CONFIRMED izin Andreas dan source/runtime589e2c229f94bc0deb6a6edc2004149128781e53,

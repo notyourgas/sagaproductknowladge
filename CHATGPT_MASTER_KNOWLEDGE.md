@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-20 - SagaPOS offline status boundary
+
+CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48 contains an offline
+cash foundation only: journal, device UV, ordered sync, atomic import/close guard.
+Local70synthetic tests and static PASS do not mean offline operation is ready.
+Kiosk/Cashier UI/cache, uncertain online payment handling, menu/channel refresh,
+USB/review, native Linux and new physical acceptance remain OPEN. Production
+589e2c2, approved receipt and online WebUSB are unchanged. Candidate explicitly
+refuses offline production activation. No paid run; new8minute/Rp0 allowance
+unconsumed. IMPLEMENTATION_IN_PROGRESS / NOT_DEPLOYED / NOT_BUSINESS_READY.
+
 ## 2026-10-20 - Jersey Jago revisi 14: layout dan alignment responsif
 
 CONFIRMED, source lokal `2fd701ab5231fb6845f575c60471087eac0587b6` (belum source remote) merapikan gutter bersama, nav desktop terpusat/menu tablet, baris heading mobile, kartu dengan panah sejajar harga dan badge terpisah dari hati, kolom klub/fakta, catatan galeri, footer dan toolbar sticky quick look. Judul hero berjarak24px dari foto; rotasi strip yang menyebabkan scrollbar horizontal1px dibuang. Padding paragraf/garis accordion dirapikan tanpa perubahan animasi atau logika commerce. Source `docs/layout-review-14.md` mencatat reproduksi dan batas. Build14 aset/20 tes Node PASS;12 kelompok assertion browser,54 kombinasi9halaman×6viewport320/390/640/768/1024/1440. Pemeriksaan akhir halaman menunjukkan nol overflow horizontal; harga kartu sejajar setelah animasi dan baseline subtitle/aksi mobile berselisih1px. Quick look/panduan, filter invalid, bag4barang/ringkasan diuji; barang pengujian dibersihkan.14 hash publik sesuai manifest,3 path privat404; tidak ada error console teramati. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED. Produksi/COYABAG tidak berubah; foto/data/kebijakan asli, integrasi commerce, uji pembeli/iPhone fisik/keyboard virtual/screen reader tetap OPEN.

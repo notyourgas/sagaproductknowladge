@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-20 - SagaPOS offline operational integration remains OPEN
+
+CONFIRMED source8dce408d3a8bbc05a257e8d957dbd9d9760fcf48 is a guarded local
+foundation, NOT_DEPLOYED. Codex must finish UI/cache, uncertain online payment
+barrier, channel-specific menu refresh, one USB drain and visible paper/stock
+review/setup recovery before native Linux qualification and guarded deployment.
+Fresh8minute/Rp0 run remains unconsumed; no serving VPS builder. NEEDS
+CONFIRMATION: platform UV on actual Chromebook and a new physical receipt/cut
+test. No cached staff PIN/password or promise that clearing browser data keeps
+unsynced cash safe. Production589e2c2/online printer remain unchanged.
+
 ## 2026-10-20 - Jersey Jago belum design sign-off atau commerce
 
 CONFIRMED revisi14 merapikan alignment/gutter, heading, kartu, fakta, galeri, footer dan toolbar quick look; overflow horizontal akibat rotasi strip ditutup. Pemeriksaan browser lokal mencakup54 kombinasi halaman/viewport dan panel terkait; bukan sign-off pembeli atau aksesibilitas penuh. Pencarian revisi13 dan Back dialog per lapisan revisi12 tetap. Frame dialog hanya hidup dalam dokumen yang sama; reload menutup panel/draft tetapi mempertahankan bag sesi. LOCAL_VALIDATED / TEMPORARY_PREVIEW_VERIFIED. NEEDS CONFIRMATION: iPhone/Safari fisik, edge gesture, keyboard virtual, screen reader dan uji tugas pembeli; foto asli termasuk belakang/label/cacat, data/kondisi/season nyata, grading/model stok, kontak/kebijakan dan integrasi commerce. Gambar AI depan/crop tetap bukan bukti originalitas. Bag simulasi dan transaksi produksi belum aktif. [Scope dan bukti](products/sagadevs/JERSEY_JAGO.md).
