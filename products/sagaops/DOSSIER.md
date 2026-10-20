@@ -1,5 +1,16 @@
 # SagaOPS Dossier
 
+## 2026-10-20 - Merchant QR asset production configuration
+
+CONFIRMED runtime589e2c229f94bc0deb6a6edc2004149128781e53. User-supplied
+merchant QR decoded and validated as static IDR QRIS, then rendered QR-only
+through the existing encoder and decoded again with identical payload. Existing
+Owner-only API stored it with expected-revision protection; downloaded production
+PNG matched exactly. Printer, approved receipt and payment-mode invariants stayed
+unchanged. No code release or real payment was used. Manual merchant verification
+is still mandatory; actual scan/payment acceptance and unrelated offline gates
+remain OPEN. Merchant identifiers/images/payload are not stored in this public repo.
+
 ## 2026-10-20 - Offline integration source, not an operational release
 
 CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b. Shared operational

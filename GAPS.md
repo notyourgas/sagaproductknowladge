@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-20 - SagaPOS merchant QR physical/payment acceptance
+
+CONFIRMED QR-only asset installed and exact-readback verified on runtime589e2c2
+through effective Owner access. Receipt/printer/payment mode unchanged; no real
+payment created. NEEDS CONFIRMATION: operator reloads Kiosk/Cashier, scans using
+the customer's payment app, verifies the merchant name/amount, and staff checks
+the merchant app before approval of a legitimate transaction. Static QR image is
+not proof of payment or settlement. Offline/native-release gates remain separate.
+
 ## 2026-10-20 - SagaPOS offline integration release hold
 
 CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b; local59PASS and

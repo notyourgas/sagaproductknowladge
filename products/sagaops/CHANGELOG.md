@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-20 - User-supplied merchant QR installed
+
+CONFIRMED Andreas request and effective production Owner authorization. Existing
+runtime589e2c229f94bc0deb6a6edc2004149128781e53 merchant-asset endpoint accepted
+one revision-protected QR-only PNG; exact byte/hash readback and decoded payload
+checks passed. Existing manual checkout is available; staff merchant-app approval
+remains required. Production asset configuration changed, not application source,
+printer, receipt layout or gateway mode. No real payment/fake sale was created.
+Real scan/payment UAT OPEN; offline release still held. Knowledge main HEAD.
+
 ## 2026-10-20 - Ready-offline screen integration; Linux release gate failed
 
 CONFIRMED Andreas requested continued deployment. Source5a93808 integrated

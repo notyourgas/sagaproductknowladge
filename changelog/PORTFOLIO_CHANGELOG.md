@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-20 - SagaPOS merchant QR configuration verified
+
+CONFIRMED user-authorized QR-only merchant image stored on existing runtime
+589e2c229f94bc0deb6a6edc2004149128781e53. Original/derived payload equality,
+CRC and production PNG readback passed. Existing manual approval remains;
+no gateway/receipt/printer changes, app deploy or synthetic production money.
+Actual merchant scan/payment acceptance remains OPEN; offline release unchanged.
+
 ## 2026-10-20 - SagaPOS guarded offline integration, not deployed
 
 CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed: existing

@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-20 - SagaPOS merchant QR production asset
+
+CONFIRMED runtime589e2c229f94bc0deb6a6edc2004149128781e53 plus user-authorized
+merchant asset configuration. Payload/CRC and exact PNG readback PASS; existing
+manual checkout available, staff merchant verification mandatory. No source deploy,
+printer/receipt/gateway change or production test sale. Eight knowledge docs updated
+without merchant identifiers/images/raw payload. Real scan/payment UAT OPEN;
+unrelated offline release still held.
+
 ## 2026-10-20 - SagaPOS offline integration, failed release gate retained
 
 CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed; existing

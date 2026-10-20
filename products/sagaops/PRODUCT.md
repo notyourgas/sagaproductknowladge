@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-20 - QRIS merchant asset installed in production
+
+CONFIRMED Andreas supplied the merchant QR and authorized installation through
+Owner access. On runtime589e2c229f94bc0deb6a6edc2004149128781e53, the existing
+merchant-asset API stored a QR-only PNG; exact production byte/hash readback
+passed. Decoded payload matched the supplied original and EMV CRC was valid.
+The existing manual merchant checkout lane reports available; staff must still
+verify funds in the merchant app. No automatic settlement/provider activation,
+fake payment, receipt/printer change or application deployment occurred.
+Real merchant-app scan/payment UAT remains OPEN. Offline release remains held.
+
 ## 2026-10-20 - Guarded offline screens integrated, release held
 
 CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed. Existing

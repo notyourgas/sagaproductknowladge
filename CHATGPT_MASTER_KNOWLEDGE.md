@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-20 - SagaPOS merchant QR now stored, manual approval retained
+
+CONFIRMED runtime589e2c229f94bc0deb6a6edc2004149128781e53: Andreas supplied
+merchant QR, Owner-only API stored its verified QR-only PNG, and exact production
+readback passed. Existing manual merchant checkout reports available. This is
+not automatic payment verification or bank settlement: staff still checks the
+merchant app. Receipt/printer/gateway settings unchanged, no app deploy or fake
+payment. Real scan/payment UAT OPEN. Unrelated offline release remains held.
+
 ## 2026-10-20 - SagaPOS offline integration is still release-held
 
 CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed. Existing

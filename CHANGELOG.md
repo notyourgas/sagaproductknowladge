@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-20 - SagaPOS merchant QR installed through existing Owner API
+
+CONFIRMED user request and runtime589e2c229f94bc0deb6a6edc2004149128781e53:
+verified QR-only merchant asset installed and exact production readback passed.
+Existing manual merchant verification retained; no app release, receipt/printer/
+gateway change or fake payment. Synced SagaOPS PRODUCT/DOSSIER/CHANGELOG,
+portfolio, master, GAPS and SYNC_STATUS. Real scan/payment acceptance OPEN;
+offline release status unchanged. Knowledge main HEAD.
+
 ## 2026-10-20 - SagaPOS offline integration release hold
 
 CONFIRMED source6e8b5af3f47dc773964079e3e15b9e6bde2ec24b pushed. Local59PASS,
