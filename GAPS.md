@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - SagaPOS printer UX: gate rilis dan perangkat masih terbuka
+
+CONFIRMED source `951ed651fbe55e0010344284335979cc1ef962c5` local validated,
+belum deployed; produksi tetap `42d850f`. Penyebab: allowance native Linux
+sebelumnya sudah dikonsumsi dan Chromebook tidak tersedia saat ini. Executor
+menyiapkan satu kualifikasi native kandidat setelah allowance Rp0 terverifikasi;
+deploy tetap memerlukan gate recovery/freshness yang sah. Andreas melakukan
+UAT perangkat setelah akses tersedia, tanpa mengulang TEST buta sekarang.
+Laporan kertas offline terdahulu belum cocok dengan lease commissioning;
+offline operational activation/BUSINESS_READY tetap OPEN, bukan PASS.
+
 ## 2026-10-20 - Jersey Jago revisi15: batas penerimaan pengguna
 
 CONFIRMED source `89b777f` menambah enam interaksi native referensi Skiper tanpa mengubah Latest Drop. QA lokal desktop/HP simulasi/reduced-motion, native publish revisi15 dan pemeriksaan aset service-access selesai. HTML mendapat sisipan runtime hosting, sehingga hash mentah indeks tidak identik; batas verifikasi dicatat. NEEDS CONFIRMATION: UI hosted setelah login pemilik, HP fisik/Safari, gesture vertikal (probe alat timeout), screen reader dan tugas pembeli. Foto AI, data contoh dan bag simulasi tetap bukan bukti originalitas/stok atau toko siap transaksi. [Scope](products/sagadevs/JERSEY_JAGO.md).

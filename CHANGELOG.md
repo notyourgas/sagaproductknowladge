@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - SagaPOS printer UX dan diagnostic TEST lokal
+
+CONFIRMED atas permintaan Andreas: source
+`951ed651fbe55e0010344284335979cc1ef962c5` dipush, menyederhanakan koneksi
+dan TEST berulang tanpa mengubah layout/antrean operasional. Check dan tes
+regresi lokal PASS; detail pada produk SagaOPS. IMPLEMENTED_NOT_DEPLOYED,
+produksi read-only tetap `42d850f`. Linux/recovery dan UAT Chromebook OPEN;
+runner lama sudah terpakai, tidak ada biaya/TEST fisik baru. Dokumen terdampak:
+PRODUCT/DOSSIER/CHANGELOG SagaOPS, portfolio changelog, master, gaps, sync status
+dan changelog ini. Tidak ada konflik/metadata privat baru; gate penerimaan
+offline lama tidak diloloskan dari laporan kertas yang belum cocok lease.
+
 ## 2026-10-20 - Jersey Jago revisi15: interaksi Skiper yang tetap mudah dipakai
 
 Area SagaDevs/Jersey Jago. Dokumen terdampak: `products/sagadevs/{JERSEY_JAGO,PRODUCT,DOSSIER,CHANGELOG}.md`, master knowledge, sync status, gaps, portfolio changelog dan changelog root. Sinkronisasi diterima; validator/link/public-safety dijalankan sebelum commit/push. Tidak ada konflik baru.

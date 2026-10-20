@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-21 - SagaPOS printer UX lokal, produksi tidak berubah
+
+CONFIRMED source `951ed651fbe55e0010344284335979cc1ef962c5` dipush pada
+branch kandidat. UI harian ringkas dan diagnostic TEST berulang lolos check,
+31 regresi printer, 2 journey offline, 3 kontrak statis dan 2 tes tambahan.
+Snapshot ini membedakan IMPLEMENTED_NOT_DEPLOYED dari produksi `42d850f`
+yang dibaca ulang. Tidak ada rilis, biaya atau cetak fisik baru. Native Linux,
+recovery dan UAT Chromebook OPEN. Dokumen produk/dossier/changelog, portfolio,
+master, gaps dan changelog root disinkronkan; tidak mengubah produk lain.
+
 ## 2026-10-20 - Jersey Jago revisi15: interaksi Skiper yang tetap mudah dipakai
 
 CONFIRMED, permintaan Andreas "kerjakan semua" menghasilkan source UI `89b777f6822d42853a13bb654d8efc3d9ade2f02`, hosted snapshot `68621c8665ef87ba18a67d7e8c74ff9baafca099`. Enam referensi Skiper diterapkan sebagai HTML/CSS/JavaScript native: underline link/footer, text roll navigasi desktop, ikon interaktif, accordion lebih tenang, hint/fade scroll filter dan bag, serta carousel kurator terpisah dengan tombol/keyboard/swipe dan satu slide aktif. Grid Latest Drop, gutter bersama, Jakarta Sans/Anton dan emas tetap. Tidak menambah React/Motion/Swiper, membeli Pro, atau menyalin kode Pro; credit referensi ada di footer. Kontrak: source `docs/motion-revision-15.md`.

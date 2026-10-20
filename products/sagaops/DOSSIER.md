@@ -1,5 +1,26 @@
 # SagaOPS Dossier
 
+## 2026-10-21 - Repeatable WebUSB diagnostic dan UI harian
+
+CONFIRMED source `951ed651fbe55e0010344284335979cc1ef962c5` menyederhanakan
+halaman printer serta tautannya di dashboard. USB actual diperiksa terpisah
+dari izin perangkat; normal power cycle tidak mengharuskan pairing ulang.
+TEST koneksi menggunakan template aktif dan ledger bersama, bukan renderer
+baru. Request key persisten menyelesaikan respons hilang ke TEST yang sama.
+Setelah hasil dikenal, klik eksplisit berikutnya dapat membuat TEST baru.
+TEST tidak menyela customer/checker atau antrean tunai offline; STARTED/UNKNOWN
+tetap memerlukan review. Layanan yang aktif dilanjutkan setelah diagnostik
+berhasil, tanpa mengganti revision, cutoff aktivasi atau hasil commissioning.
+Mulai layanan sekaligus mengunci sesi Owner. Guard rollback menolak runtime
+lama yang tidak memahami diagnostik pending/tidak pasti.
+
+Windows-local check/TypeScript, printer/browser/RAW/regresi offline dan kontrak
+rilis statis PASS. Fixture dan pratinjau lokal tidak mengakses USB fisik.
+IMPLEMENTED_NOT_DEPLOYED; native Linux/recovery baru belum diuji. Produksi
+read-only masih `42d850f`; tidak ada perubahan transaksi, harga atau printer.
+Chromebook tertunda atas arahan Andreas. Laporan kertas offline sebelumnya
+belum terikat provenance lease perangkat, bukan penerimaan operasional.
+
 ## 2026-10-20 - SagaPOS offline commissioning available in production
 
 CONFIRMED Andreas-authorized source42d850fa36e73671338f997e236878bb1fc2fe46

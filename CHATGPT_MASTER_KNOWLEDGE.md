@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-21 - SagaPOS printer harian disederhanakan, belum rilis
+
+CONFIRMED kandidat source `951ed651fbe55e0010344284335979cc1ef962c5` sudah
+dipush dan diuji lokal: status USB/izin/layanan jelas, Cari printer dan Tes
+print berulang, setup khusus dipisahkan. TEST eksplisit tetap idempotent saat
+respons hilang, tidak menyela antrean customer/checker dan tidak mengubah nota.
+Check/TypeScript, browser desktop/mobile/a11y, RAW dan regresi offline PASS.
+IMPLEMENTED_NOT_DEPLOYED; produksi read-only tetap `42d850f`. Native Linux,
+recovery dan UAT perangkat belum selesai; Chromebook sedang tidak tersedia.
+Jangan menganggap fixture, pratinjau, atau laporan offline tanpa lease cocok
+sebagai commissioning/aktivasi offline. Tidak ada biaya atau TEST fisik baru.
+
 ## 2026-10-20 - Jersey Jago revisi15: interaksi Skiper yang tetap mudah dipakai
 
 CONFIRMED, permintaan Andreas "kerjakan semua" menghasilkan source UI `89b777f6822d42853a13bb654d8efc3d9ade2f02`, hosted snapshot `68621c8665ef87ba18a67d7e8c74ff9baafca099`. Enam referensi Skiper diterapkan sebagai HTML/CSS/JavaScript native: underline link/footer, text roll navigasi desktop, ikon interaktif, accordion lebih tenang, hint/fade scroll filter dan bag, serta carousel kurator terpisah dengan tombol/keyboard/swipe dan satu slide aktif. Grid Latest Drop, gutter bersama, Jakarta Sans/Anton dan emas tetap. Tidak menambah React/Motion/Swiper, membeli Pro, atau menyalin kode Pro; credit referensi ada di footer. Kontrak: source `docs/motion-revision-15.md`.

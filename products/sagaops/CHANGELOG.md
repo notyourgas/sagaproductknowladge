@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-21 - UI printer ringkas dan TEST koneksi berulang
+
+CONFIRMED, permintaan Andreas untuk mengerjakan software tanpa Chromebook:
+source `951ed651fbe55e0010344284335979cc1ef962c5` menambah status koneksi yang
+jelas, kontrol harian ringkas dan TEST eksplisit berulang dengan ledger/guard
+ketidakpastian. Template nota dan printer operasional tidak diubah.
+Check/TypeScript, 31 regresi printer, 2 journey offline, 3 kontrak statis dan
+2 tes diagnostik tambahan PASS secara lokal; tidak ada TEST fisik.
+IMPLEMENTED_NOT_DEPLOYED; produksi read-only tetap `42d850f`. Native Linux,
+recovery dan UAT Chromebook kandidat ini OPEN. Executor menyiapkan kualifikasi
+baru setelah allowance Rp0 tersedia; Andreas memegang akses perangkat nanti.
+
 ## 2026-10-20 - SagaPOS offline commissioning available in production
 
 CONFIRMED Andreas-authorized source42d850fa36e73671338f997e236878bb1fc2fe46

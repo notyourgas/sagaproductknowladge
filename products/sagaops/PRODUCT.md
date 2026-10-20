@@ -1,5 +1,22 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - Printer harian lebih sederhana, TEST dapat diulang
+
+CONFIRMED source `951ed651fbe55e0010344284335979cc1ef962c5` sudah dipush:
+status koneksi USB/izin/layanan dipisahkan, penyiapan lanjutan disembunyikan,
+dan alur harian menjadi Cari printer -> Tes print -> Mulai layanan. TEST
+diagnostik eksplisit dapat diulang tanpa mengubah commissioning, cutoff cetak,
+template, spacing, feed/autocut atau checker. Intent persisten dan rekonsiliasi
+respons hilang mencegah retry diam-diam; nota pelanggan/checker tetap prioritas.
+Pengamanan hasil tidak pasti dan akses Owner untuk setup tetap berlaku.
+
+LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: check/TypeScript, 31 regresi printer,
+2 journey offline browser dan 3 kontrak rilis statis PASS; tambahan 2 tes review
+diagnostik PASS. Bukti lokal menggunakan USB sintetis, bukan cetak fisik baru.
+Produksi tetap `42d850f`, diverifikasi read-only. Chromebook belum dapat diakses
+oleh Andreas; kualifikasi Linux kandidat dan commissioning perangkat tetap OPEN.
+Izin runner sebelumnya habis, tidak ada run/billing tambahan atau deploy baru.
+
 ## 2026-10-20 - SagaPOS offline commissioning available in production
 
 CONFIRMED Andreas-authorized source42d850fa36e73671338f997e236878bb1fc2fe46
