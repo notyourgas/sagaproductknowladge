@@ -1,5 +1,24 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-20 - SagaPOS offline activation successor locally validated
+
+CONFIRMED source42d850fa36e73671338f997e236878bb1fc2fe46 committed/pushed:
+production-origin offline Kiosk/Cashier cache and UV journeys, historical menu
+refresh without repricing pending cash, and ON-OFF-ON write hold pass locally.
+Focused30/30 and unchanged print regression67/67 PASS; static/type1228/core37
+PASS. Offline-only assets reuse existing screens; online receipt/printer,
+spacing/feed/cut and checker renderer are unchanged. This is
+IMPLEMENTED_NOT_DEPLOYED, not Chromebook physical acceptance. Production remains
+575b3b5 guarded/OFF. Exact-source native Linux qualification needs a fresh bounded
+free-run allowance; then package/recovery/deploy and new Chromebook UV/paper
+commissioning. Availability is not device activation. Cash-only bounded lease,
+review/reconciliation and no automatic resend remain mandatory; QRIS stays online.
+
+Area SagaPOS; eight product/dossier/master/portfolio/changelog/status/gaps files
+updated at knowledge main HEAD. Source and local evidence, not a release receipt.
+Production unchanged; Codex owns native qualification and guarded release,
+Andreas+Codex own actual Chromebook UV/paper acceptance.
+
 ## 2026-10-20 - Jersey Jago: preview hosted privat tanpa ketergantungan PC
 
 Area: SagaDevs/Jersey Jago. Dokumen terdampak: `products/sagadevs/{JERSEY_JAGO,PRODUCT,DOSSIER,CHANGELOG}.md`, `CHATGPT_MASTER_KNOWLEDGE.md`, `SYNC_STATUS.md`, `GAPS.md`, `changelog/PORTFOLIO_CHANGELOG.md` dan changelog root ini. Milestone diterima; tidak ada konflik informasi baru.
