@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-21 - Kandidat HR menjaga rilis aktif; builder ditolak sebelum eksekusi
+
+CONFIRMED, Andreas meminta melanjutkan tes/deploy setelah akses builder tersedia.
+Source d6cf0d0 menjaga activef9539b4, refresh dua manifest cache, static194aset/
+syntax PASS. Checkpoint13a55ae mencatat automatic approval rejection sebelum
+controller berjalan (`blocked by policy`); tes aplikasiLinux/package/recovery/
+deploy NOT_RUN, tanpa sandbox/fakta usaha baru. Batas650s/no retry dan gate lama
+tetap. Rotasi2hari/8jam khusus pergantian/revisi Owner masih belum aktif;
+denominator36/12 dan real staff/device UAT tidak ditutup. BUSINESS_READY=false.
+Release Lead membutuhkan jalur builder yang diizinkan pengaman alat.
+
 ## 2026-10-21 - Uji Member menemukan celah pencatatan poin pembayaran staf
 
 CONFIRMED, permintaan Andreas untuk tes sintetis Kasir/Kiosk tanpa penjualan

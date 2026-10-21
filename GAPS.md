@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - SagaPOS HR/mobile builder execution blocked despite access
+
+CONFIRMED: credential availability is resolved; automatic approval review
+rejected the controller launch before execution (`blocked by policy`), with no
+more specific reason. No sandbox/test/package/deploy attempt ran. Candidate
+d6cf0d0/checkpoint13a55ae preserves activef9539b4 and has fresh cache integrity
+preparation, not Linux application qualification. Release Lead owns obtaining
+a permitted execution route and rechecking runtime/parallel lane before the
+single650s run. Do not repeat approval requests or reset spent gate budgets.
+Technical denominator36/operational12 remain; real UAT and historical evidence
+gaps persist. BUSINESS_READY=false; production unchanged by HR task.
+
 ## 2026-10-21 - Jersey Jago revisi17: hero editorial dan filter mobile
 
 CONFIRMED, Andreas meminta pemeriksaan ulang UI/UX React di HP dan hero yang lebih eksperimental. Source lokal `7829ad395cb64a40696788a7bf71e9313ddcdb70` mengganti hero menjadi komposisi ink/emas, judul besar dua baris, panel foto miring dan label kolektor; CTA jelajah mendahului foto di mobile. Font Jakarta/Anton dan grid Latest Drop dipertahankan. Filter memperoleh Batal eksplisit, label/input harga sejajar, draft harga invalid tetap invalid pada Forward, drawer masuk dengan latar solid, serta tombol sekunder setinggi44px pada landscape. Tidak ada dependensi baru.

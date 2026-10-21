@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - SagaPOS HR/mobile integration and execution gate checkpoint
+
+CONFIRMED from Andreas's continue/deploy instruction and current source/runtime
+checks. Source d6cf0d0/checkpoint13a55ae preserves activef9539b4, with generated
+mobile cache integrity refreshed. Static preparation PASS; automated approval
+blocked builder launch before execution. No new application test, artifact,
+recovery or HR deployment; no production mutation.650s/no retry, historical
+acceptance denominator36/12 and real staff/device UAT retained. Release Lead
+owns permitted builder execution and fresh guarded release gates.
+Files: SagaOPS product/dossier/changelog, portfolio, master, gaps, sync status
+and this changelog. No new founder policy or product promise; BUSINESS_READY=false.
+
 ## 2026-10-21 - Jersey Jago revisi17: hero editorial dan filter mobile
 
 CONFIRMED, Andreas meminta pemeriksaan ulang UI/UX React di HP dan hero yang lebih eksperimental. Source lokal `7829ad395cb64a40696788a7bf71e9313ddcdb70` mengganti hero menjadi komposisi ink/emas, judul besar dua baris, panel foto miring dan label kolektor; CTA jelajah mendahului foto di mobile. Font Jakarta/Anton dan grid Latest Drop dipertahankan. Filter memperoleh Batal eksplisit, label/input harga sejajar, draft harga invalid tetap invalid pada Forward, drawer masuk dengan latar solid, serta tombol sekunder setinggi44px pada landscape. Tidak ada dependensi baru.

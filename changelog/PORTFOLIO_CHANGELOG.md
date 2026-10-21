@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-21 - SagaPOS HR/mobile candidate refreshed; deployment not run
+
+CONFIRMED candidate d6cf0d0/checkpoint13a55ae preserves POSactivef9539b4 and
+refreshes mobile asset integrity; syntax/194asset preparation PASS. Builder
+credential availability is resolved, but automatic approval review blocks launch
+before execution. Linux qualification, immutable package, recovery and HR deploy
+NOT_RUN;650s/no retry and previous gates retained. No production mutation from
+this task. Operator/device acceptance and historical evidence remain OPEN;
+BUSINESS_READY=false. SagaOPS product/dossier/gaps/master/status synchronized.
+
 ## 2026-10-21 - Jersey Jago revisi17: hero editorial dan filter mobile
 
 CONFIRMED, Andreas meminta pemeriksaan ulang UI/UX React di HP dan hero yang lebih eksperimental. Source lokal `7829ad395cb64a40696788a7bf71e9313ddcdb70` mengganti hero menjadi komposisi ink/emas, judul besar dua baris, panel foto miring dan label kolektor; CTA jelajah mendahului foto di mobile. Font Jakarta/Anton dan grid Latest Drop dipertahankan. Filter memperoleh Batal eksplisit, label/input harga sejajar, draft harga invalid tetap invalid pada Forward, drawer masuk dengan latar solid, serta tombol sekunder setinggi44px pada landscape. Tidak ada dependensi baru.

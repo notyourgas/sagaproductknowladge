@@ -1,5 +1,24 @@
 # SagaOPS Dossier
 
+## 2026-10-21 - HR/mobile integration checkpoint; Linux not executed
+
+CONFIRMED candidate d6cf0d0 integrates the active f9539b4 source through reviewed
+merge65997ff. The remaining runtime delta is five HR/mobile files and two cache
+manifests regenerated for changed JS; no dependency/schema/grant/provider change.
+194asset integrity and syntax preparation PASS, not application qualification.
+Frozen Linux inputs bind d6cf0d0/currentf9539b4/paired Platformd1a1a3b and the
+existing HR/logout scope. Earlier1a62local22regressions and other historical
+substeps retain their source limits; they are not relabeled as fresh merged tests.
+
+Automatic approval review rejected launching the authorized650s controller
+before execution with no detail beyond `blocked by policy`. No alternate-route
+retry, sandbox creation or candidate deployment. Credentials stayed private.
+Source checkpoint13a55ae retains the36technical/12operational denominator;
+historical15PASS/2FAIL/19NOT_RUN is not a requalification of f9539b4 or d6cf0d0.
+Next: permitted builder execution after fresh runtime/parallel-lane checks,
+scoped qualification/package/recovery/guarded promotion, then real operator UAT.
+Owner revision protects started/used/history-linked schedules. BUSINESS_READY=false.
+
 ## 2026-10-21 - Staff-confirmed Member Points correction pending release
 
 CONFIRMED source1b9c4e5 adds the existing qualification event to the same database

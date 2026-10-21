@@ -1,5 +1,23 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - HR/mobile candidate refreshed; execution gate blocked
+
+CONFIRMED: HR/mobile candidate `d6cf0d0fb3dc3c5e758f5c3b319c76694cb4a6d4`
+preserves active POS `f9539b4` and refreshes offline asset integrity after the
+mobile scripts changed. Five HR/mobile files plus two generated cache manifests;
+syntax/diff and194asset integrity preparation PASS. Strict two-day rotation,
+eight-hour rest only between different known shift bands, and Owner revision
+of future unused assignments remain IMPLEMENTED_NOT_DEPLOYED.
+
+Builder access is available, but automatic approval review rejected controller
+launch before execution (`blocked by policy`). Linux application tests,
+packaging, candidate recovery and deployment NOT_RUN; no new sandbox or business
+data created by this task. One650s/no-retry ceiling and spent gates remain.
+At14:53WIB activef9539b4/rollback470314d ready/schema37/GATEWAY. Historical
+HR acceptance15/36technical and0/12operational is not fresh acceptance on this
+candidate or active release. Source checkpoint13a55ae; real staff/device UAT
+and missing historical evidence remain OPEN. BUSINESS_READY=false.
+
 ## 2026-10-21 - Member payment synthetic validation and pending fix
 
 CONFIRMED at Andreas's request to test without fake production sales: new

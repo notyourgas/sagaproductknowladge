@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-21 - SagaPOS HR/mobile current candidate and execution blocker
+
+CONFIRMED: HR/mobiled6cf0d0 (checkpoint13a55ae) integrates active POSf9539b4
+without removing current Kasir/Kiosk/Member/offline/printer features. Syntax
+and194asset preparation PASS. Rotation max2days, special8h shift change rest,
+and future-unused Owner revision are still IMPLEMENTED_NOT_DEPLOYED.
+Builder access exists; automatic approval rejected launch before execution.
+Linux tests/package/candidate recovery/deploy NOT_RUN. Active at14:53WIB
+f9539b4/rollback470314d ready/schema37/GATEWAY; no task production write.
+Historical15/36technical and0/12operational are not fresh candidate acceptance.
+Caps650s/no retry and spent gates persist; real staff/device UAT remains OPEN.
+Do not say HR/mobile or whole SagaPOS is complete or BUSINESS_READY.
+
 ## 2026-10-21 - Jersey Jago revisi17: hero editorial dan filter mobile
 
 CONFIRMED, Andreas meminta pemeriksaan ulang UI/UX React di HP dan hero yang lebih eksperimental. Source lokal `7829ad395cb64a40696788a7bf71e9313ddcdb70` mengganti hero menjadi komposisi ink/emas, judul besar dua baris, panel foto miring dan label kolektor; CTA jelajah mendahului foto di mobile. Font Jakarta/Anton dan grid Latest Drop dipertahankan. Filter memperoleh Batal eksplisit, label/input harga sejajar, draft harga invalid tetap invalid pada Forward, drawer masuk dengan latar solid, serta tombol sekunder setinggi44px pada landscape. Tidak ada dependensi baru.

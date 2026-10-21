@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-21 - SagaPOS HR/mobile source and blocked execution synchronized
+
+CONFIRMED candidate d6cf0d0/checkpoint13a55ae; activef9539b4/rollback470314d
+read-only14:53WIB ready/schema37/GATEWAY. Five HR/mobile deltas plus two generated
+offline cache manifests; syntax/194asset preparation PASS. Access exists, but
+automatic approval rejected launching the650s controller before execution.
+Linux qualification/package/recovery/deploy NOT_RUN. Historical acceptance is
+not promoted; real staff/device UAT and BUSINESS_READY remain OPEN/false.
+Updated SagaOPS product/dossier/changelog, portfolio, master, gaps and root
+changelog together. No credential, PII, private evidence path or raw receipt.
+
 ## 2026-10-21 - Jersey Jago revisi17: hero editorial dan filter mobile
 
 CONFIRMED, Andreas meminta pemeriksaan ulang UI/UX React di HP dan hero yang lebih eksperimental. Source lokal `7829ad395cb64a40696788a7bf71e9313ddcdb70` mengganti hero menjadi komposisi ink/emas, judul besar dua baris, panel foto miring dan label kolektor; CTA jelajah mendahului foto di mobile. Font Jakarta/Anton dan grid Latest Drop dipertahankan. Filter memperoleh Batal eksplisit, label/input harga sejajar, draft harga invalid tetap invalid pada Forward, drawer masuk dengan latar solid, serta tombol sekunder setinggi44px pada landscape. Tidak ada dependensi baru.
