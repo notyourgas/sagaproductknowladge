@@ -1,5 +1,19 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - HR/mobile preserves the new active baseline; launch unconfirmed
+
+CONFIRMED candidate6480377a116a03e0d48570e3b68bf7d8802b5a89/checkpoint4177522
+preserves active188fcc794015f04ca05f50af96cbfde66650cdab and its Member Points
+fix; rollbackf9539b4, health ready/schema37/GATEWAY at15:43WIB.194asset integrity
+preparation PASS, not Linux application qualification. The reported controller
+launch is not corroborated: no intent/progress/final receipt or visible controller
+process, and official read-only SDK list returns0matching builders. Actual manual
+preflight output remains unconfirmed; the prior baseline is stale. Updated manual
+handoff retains one650s/no-retry ceiling and cross-candidate attempt guards;
+no replacement run, budget reset or HR production mutation. Linux tests/package/
+recovery/deploy NOT_RUN. Historical36/12denominators and actual staff/device UAT
+remain; BUSINESS_READY=false. Release Lead continues only from verified gate results.
+
 ## 2026-10-21 - Member Points fix production-activated
 
 CONFIRMED after Andreas authorized Linux qualification then deployment:
