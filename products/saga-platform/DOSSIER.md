@@ -1,5 +1,30 @@
 # Saga Platform Dossier
 
+## 2026-10-21 - Saga Member Reward tidak lagi freeze saat dibuka
+
+CONFIRMED berdasarkan instruksi deploy Andreas dan pemeriksaan runtime serta
+browser terautentikasi pada 21 Oktober 2026. Frontend
+`eb96eb0327e3d77808ece2d77ae48d0e7739b631` aktif pada release
+`20261021T092428Z-c423884-r0u`; backend tetap
+`c4238845274e867d17e852f9012c67369c451861`. Daftar Reward yang belum tersedia
+kini diinisialisasi sebelum render. Promo, Penawaran, Milik saya, pembaruan
+katalog dan buka ulang setelah reload berhasil tanpa error baru. Status
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk perbaikan ini; bukti tersebut
+tidak menetapkan BUSINESS_READY seluruh produk.
+
+Source dan validasi: source frontend serta runner
+`2c160d90f98ca68448763371e41811da8cbed5ce` dipush terpisah. Seluruh 636 tes
+frontend dan static contract lulus; runner 157 tes Python dan 19 tes Node lulus.
+Artifact `46ad1341cc06bb1333298e389f3014f3836fb3bcbe0f93a3830476dd5150d7ab`
+memakai backend, contracts dan dependency Linux yang sama dengan baseline.
+PostgreSQL 18 disposable restore, 15 migrasi tetap, backup production terenkripsi,
+effective Owner, switch, rollback dan pemasangan ulang terverifikasi. Monitor
+customer/member/public sehat dan blob model publik cocok dengan source final.
+UAT hanya navigasi dan pembacaan katalog pada akun yang sudah login; tidak ada
+klaim atau penukaran Reward/voucher. Pricing, authority saldo, provider, schema
+dan produk lain tidak diubah. Tidak ada blocker tersisa untuk freeze ini;
+acceptance bisnis di luar scope tetap mengikuti gap produk sebelumnya.
+
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 CONFIRMED source **690f56a170e6d9c17435026bc289ff9bfa372f68** aktif pada release

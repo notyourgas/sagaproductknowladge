@@ -1,5 +1,17 @@
 # Saga Platform Product Knowledge
 
+## 2026-10-21 - Saga Member Reward tidak lagi freeze saat dibuka
+
+CONFIRMED berdasarkan instruksi deploy Andreas dan pemeriksaan runtime serta
+browser terautentikasi pada 21 Oktober 2026. Frontend
+`eb96eb0327e3d77808ece2d77ae48d0e7739b631` aktif pada release
+`20261021T092428Z-c423884-r0u`; backend tetap
+`c4238845274e867d17e852f9012c67369c451861`. Daftar Reward yang belum tersedia
+kini diinisialisasi sebelum render. Promo, Penawaran, Milik saya, pembaruan
+katalog dan buka ulang setelah reload berhasil tanpa error baru. Status
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk perbaikan ini; bukti tersebut
+tidak menetapkan BUSINESS_READY seluruh produk.
+
 ## 2026-10-19 - SagaPOS harga normal tanpa promo trial dan batas canary
 
 CONFIRMED source **690f56a170e6d9c17435026bc289ff9bfa372f68** aktif pada release
