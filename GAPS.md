@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - Jersey Jago revisi17: hero editorial dan filter mobile
+
+CONFIRMED, Andreas meminta pemeriksaan ulang UI/UX React di HP dan hero yang lebih eksperimental. Source lokal `7829ad395cb64a40696788a7bf71e9313ddcdb70` mengganti hero menjadi komposisi ink/emas, judul besar dua baris, panel foto miring dan label kolektor; CTA jelajah mendahului foto di mobile. Font Jakarta/Anton dan grid Latest Drop dipertahankan. Filter memperoleh Batal eksplisit, label/input harga sejajar, draft harga invalid tetap invalid pada Forward, drawer masuk dengan latar solid, serta tombol sekunder setinggi44px pada landscape. Tidak ada dependensi baru.
+
+Status `TEMPORARY_REACT_PREVIEW_VERIFIED`: typecheck/build dan23 tes PASS; matriks browser publik36 kombinasi halaman/viewport320/390/768/1440 tanpa overflow horizontal atau gambar selesai yang rusak. Filter M menghasilkan2produk, draft negatif/Back/Forward/Batal dan accordion rapid-toggle diperiksa; reduced-motion hero tidak beranimasi.15aset publik cocok hash manifest dan5path privat404. Satu koreksi tinggi tombol landscape selesai. Source `docs/mobile-review-17.md` mencatat scope dan batas. Artifact kandidat terpisah menjaga build/listener revisi16 untuk rollback; tunnel baru tanpa login sudah diverifikasi. Link sementara membutuhkan PC/server/tunnel aktif, storage origin lama tidak ikut pindah; Pages tetap ditunda.
+
+Produksi commerce/COYABAG, order/payment/stok/DNS/billing tidak berubah; bukan BUSINESS_READY. HP fisik/Safari, keyboard virtual, screen reader, zoom200%, shopper acceptance, foto/data/kondisi/kebijakan asli dan integrasi commerce tetap OPEN. Next: review visual pemilik lewat HP dan lengkapi input operasional sebelum peluncuran toko.
+
 ## 2026-10-21 - Member staff-confirmed Points source fix awaits release
 
 CONFIRMED productionf9539b4 omits Member qualification when Kiosk cash or manual
