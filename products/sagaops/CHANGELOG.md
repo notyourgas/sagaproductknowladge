@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-21 - Member native diagnosis closed and offline cache corrected
+
+CONFIRMED, Andreas authorized completing/deploying code-suffix lookup. Source
+POSf9539b4/Memberc423884/runner5c62b12 pushed. Earlier voucher stall was a
+single-connection PGlite deadlock; native11PASS, Linux Member82files/runner156/
+POS22PASS, native artifact recovery PASS. Overall CI failed at stale offline
+integrity manifest;194asset manifest/version regenerated and locally checked
+from LF source. No fourth CI retry; source fixed but NOT_DEPLOYED. Production
+470314d/6121d82, receipt/printer/checker and payments unchanged. Release Lead owns
+exact final offline/package qualification then fresh recovery/Owner promotion.
+No physical TEST, fake production sale or new provider activation.
+
 ## 2026-10-21 - Kandidat pencarian member singkat
 
 CONFIRMED source POS6729f61/Member5226360 committed/pushed, IMPLEMENTED_NOT_DEPLOYED.

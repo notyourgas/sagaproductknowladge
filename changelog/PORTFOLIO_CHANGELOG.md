@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-21 - SagaPOS Member tests advance; offline gate still blocks deploy
+
+CONFIRMED source POSf9539b4/Memberc423884/runner5c62b12 pushed. Native voucher
+diagnosis and Member/Linux/runner tests PASS, but overall run39544517757 failed
+on stale offline integrity manifest. Generated cache fix checked locally;
+exact final POS offline/package gate and paired recovery/Owner remain OPEN.
+No fourth blind CI, production mutation, print or sale. Code-suffix scope
+confirmed, not phone lookup. Production/printer and independent products retained;
+not BUSINESS_READY. Source evidence supersedes the earlier stalled-fixture gap.
+
 ## 2026-10-21 - SagaPOS Member pencarian singkat disiapkan
 
 CONFIRMED POS6729f61/Member5226360 committed/pushed. Local Member-code four-character

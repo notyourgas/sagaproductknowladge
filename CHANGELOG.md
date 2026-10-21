@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - SagaPOS Member native qualification and cache checkpoint
+
+CONFIRMED on Andreas's completion/deploy instruction: source POSf9539b4,
+Memberc423884, runner5c62b12 pushed. Voucher deadlock diagnosed/native tested;
+Linux Member82files, runner156, POS22PASS and native artifact recovery PASS.
+Overall job still FAIL at offline manifest; generated cache fix locally checked,
+not final Linux/package qualified. No further CI retry/deploy in this bounded
+sequence. Production470314d/6121d82 and existing nota/printer remain. Code suffix,
+not phone; input-kind blocker closed. Updated SagaOPS PRODUCT/DOSSIER/CHANGELOG,
+master, portfolio, gaps and sync; retained all historical failed evidence.
+Next action owned by Release Lead: final offline/package then paired guarded
+release. No BUSINESS_READY claim or private data; other products untouched.
+
 ## 2026-10-21 - SagaPOS Member shortcut source checkpoint
 
 CONFIRMED POS6729f61/Member5226360 source published with alphanumeric code-suffix

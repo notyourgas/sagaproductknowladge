@@ -1,5 +1,27 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - Member native gate closed; offline cache release gate open
+
+CONFIRMED latest pushed POS `f9539b4e953eb0b6c86e765cf6b13cca5f8a225c`,
+Member `c4238845274e867d17e852f9012c67369c451861`, runner5c62b12. Scope is
+four final alphanumeric Member-code characters, not phone lookup. The earlier
+input-kind question is no longer a blocker after the explicit explanation and
+Andreas's instruction to complete/deploy. Full code remains required for
+collision, vouchers and rewards; matching name must be confirmed.
+
+The old voucher stall was traced to PGlite single-connection transaction/SELECT
+deadlock. Native PostgreSQL18:11PASS without skip. Linux run39544517757 passed
+Member82files (existing environment skips retained), runner156tests and POS
+Member22tests without skip; immutable
+Member artifact admission and local native old/new write/restart/restore PASS.
+The overall job failed at the next gate: stale offline asset integrity manifest.
+Both generated cache files are refreshed from LF source; local exact-byte check
+PASS. No further CI retry or promotion after the bounded correction sequence.
+BLOCKED/NOT_DEPLOYED until exact final POS offline/Linux/package qualification,
+fresh paired recovery/Owner checks and guarded promotion. Production remains
+POS470314d/Member6121d82. Layout, printer/checker, payments and offline activation
+are unchanged; no physical print/sale or BUSINESS_READY claim.
+
 ## 2026-10-21 - Member shortcut resumed; candidate not deployed
 
 CONFIRMED Andreas resumed membership work. POS source `6729f61bcd31dc6186786be9fa3fcd9f7be01e40`

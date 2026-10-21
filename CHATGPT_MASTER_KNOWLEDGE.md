@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-21 - SagaPOS Member native tests pass, release still held
+
+CONFIRMED latest pushed POSf9539b4/Memberc423884/runner5c62b12. Four final
+alphanumeric Member-code characters (not phone) plus name confirmation; full
+code required for collisions/voucher/reward. Native voucher regression11PASS;
+Linux Member82files/runner156/POS Member22PASS. Overall run39544517757 failed at
+stale offline cache manifest; generated manifest/version locally corrected and
+checked from LF source. No further blind CI or deploy after bounded corrections.
+Remaining: final exact-source offline/Linux/package and paired recovery/Owner
+promotion. Production remains POS470314d/Member6121d82; approved receipt, printer,
+checker, PIN, payments and offline activation unchanged. Not BUSINESS_READY.
+
 ## 2026-10-21 - SagaPOS Member shortcut candidate, not production
 
 CONFIRMED Andreas resumed Member work; POS6729f61/Member5226360 committed/pushed.

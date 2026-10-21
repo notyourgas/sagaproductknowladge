@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - Member regression solved; final POS offline qualification remains
+
+CONFIRMED old voucher deadlock diagnosed and native11PASS; Linux Member82files,
+runner156 and POS Member22PASS at run39544517757. Input-kind blocker closed:
+four final alphanumeric code characters, not phone digits. Latest source
+POSf9539b4/Memberc423884/runner5c62b12 is pushed. Overall Linux job still FAIL:
+stale offline-assets.json detected before offline regression/package. Generated
+manifest/version refreshed from LF source and exact-byte check PASS. No further
+CI retry after the two correction rounds, no deployment. Owner: Release Lead/Codex.
+Next concrete action: qualify final POS source's offline/cache regression and
+immutable package before fresh paired recovery/Owner promotion. Production
+470314d/6121d82 and existing printer/payment configuration are untouched.
+
 ## 2026-10-21 - SagaPOS Member shortcut release blocked
 
 CONFIRMED POS6729f61/Member5226360 source committed/pushed; local new feature and

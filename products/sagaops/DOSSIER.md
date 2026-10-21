@@ -1,5 +1,32 @@
 # SagaOPS Dossier
 
+## 2026-10-21 - Member qualification continuation and remaining cache gate
+
+CONFIRMED final pushed sources POSf9539b4/Memberc423884/runner5c62b12 supersede
+the candidate checkpoint below; production stays470314d/6121d82. Four final
+alphanumeric code characters are the agreed implemented scope, not phone digits.
+No outstanding input-kind permission. Full-code authentication/redemption and
+named confirmation remain. No account, Member login or phone directory added.
+
+Static diagnosis proved a held commit transaction blocked its own recovery SELECT
+in single-connection PGlite. The existing native disposable PostgreSQL harness
+passes11tests without skip, preserving all concurrency/recovery assertions.
+Linux39544517757 passes full Member82files (existing environment skips retained),
+156 runner tests and22 POS Member/browser tests (0FAIL/0SKIP). Artifact admission
+and exact local PostgreSQL18 artifact backup/restore, old/new writes and restart
+PASS. Runtime frontend/contracts/migrations stay unchanged. Cross-platform audit
+helper now parses injected Windows paths with win32 methods; no provider changes.
+
+Three bounded CI jobs retained: initial private draft input403, second portable
+path helper failure, third Member gates PASS but stale offline manifest rejection.
+No fourth job or deployment. Latest POS changes only regenerate194asset integrity
+and worker version from LF source; exact-byte check PASS, new Linux offline suite
+and immutable POS package not yet qualified. Release Lead/Codex owns the remaining
+exact-source offline/package gate followed by paired recovery and effective Owner
+promotion. Historical failures are not relabeled PASS; source/cache preparation
+is not production activation. Printer, receipt/feed/cut, staff PIN, pricing,
+QRIS and device offline commissioning remain unchanged. Physical UAT remains OPEN.
+
 ## 2026-10-21 - POS Member suffix integration candidate
 
 CONFIRMED resumed implementation: POS6729f61 and Member5226360 derive from live
