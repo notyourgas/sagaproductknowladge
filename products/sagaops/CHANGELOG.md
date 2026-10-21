@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-21 - Deploy pencarian singkat Member Kiosk dan Kasir
+
+CONFIRMED atas instruksi deploy Andreas: POSf9539b4/Memberc423884 aktif,
+rollback470314d/6121d82; frontend Membercb88d4a tetap. Empat karakter akhir kode
+Member, konfirmasi nama, collision/full-code fallback; voucher/reward tetap kode
+lengkap. Linux39548437413, paket/integritas, encrypted restore/rollback,
+Owner/API/194aset/monitor PASS. Nota, spacing/feed/cut, printer/checker/QRIS,
+harga/PIN/provider dan commissioning offline tetap. Biaya dalam kuota gratis;
+tanpa penjualan palsu, Points/refund atau TEST fisik. UAT pelanggan Member nyata
+di Chromebook OPEN; PRODUCTION_ACTIVATED, bukan BUSINESS_READY.
+
 ## 2026-10-21 - Member native diagnosis closed and offline cache corrected
 
 CONFIRMED, Andreas authorized completing/deploying code-suffix lookup. Source

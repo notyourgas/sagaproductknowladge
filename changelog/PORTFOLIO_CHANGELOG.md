@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-21 - SagaPOS Member shortcut paired release activated
+
+CONFIRMED POSf9539b4/Memberc423884 production; frontend Member unchanged and
+rollback470314d/6121d82 retained. Linux39548437413, immutable packages,
+recovery/rollback/Owner/API/194assets/monitor PASS. Four code characters and name
+confirmation, full code for collisions/redemption; not phone lookup. Existing
+nota/printer/checker/payments preserved, independent products untouched. No fake
+sale/physical TEST or paid upgrade. Real Member Chromebook UAT OPEN; no
+BUSINESS_READY claim. This supersedes the release blocker checkpoint below.
+
 ## 2026-10-21 - SagaPOS Member tests advance; offline gate still blocks deploy
 
 CONFIRMED source POSf9539b4/Memberc423884/runner5c62b12 pushed. Native voucher

@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - Member release gate closed; real device/customer UAT remains
+
+CONFIRMED POSf9539b4/Memberc423884 deployed/activated; previous offline/cache/
+package blocker closed by Linux39548437413 SUCCESS, Member82files/runner156/
+POS22/offline214, recovery/rollback, Owner/read-only API and194asset verification.
+Receipt/printer/checker/QRIS/provider hashes preserved. Full Member-code fallback
+retained; no phone lookup. NEEDS CONFIRMATION: actual Member selection/payment
+journey on the already-paired Chromebook during legitimate operation. Andreas
+owns device/customer acceptance; Release Lead owns monitoring/recovery. Do not
+create sales or print just to satisfy UAT. Offline device commissioning and
+managed offsite readiness remain separate; not BUSINESS_READY.
+
 ## 2026-10-21 - Member regression solved; final POS offline qualification remains
 
 CONFIRMED old voucher deadlock diagnosed and native11PASS; Linux Member82files,

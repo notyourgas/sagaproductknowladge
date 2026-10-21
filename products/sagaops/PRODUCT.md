@@ -1,5 +1,25 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - Member shortcut deployed and technically verified
+
+CONFIRMED at Andreas's deployment instruction: POS
+`f9539b4e953eb0b6c86e765cf6b13cca5f8a225c` and Member backend
+`c4238845274e867d17e852f9012c67369c451861` are production-activated.
+Member frontend remainscb88d4a; POS rollback470314d, Member rollback6121d82.
+Kiosk/Kasir accept four final alphanumeric Member-code characters and require
+name confirmation. Unknown/collision fails closed; full code remains required
+for collisions, vouchers and rewards. This is not phone lookup or Member login.
+
+Linux39548437413 SUCCESS: Member82files (existing gated skips retained), runner156,
+POS Member22 and offline214PASS/0FAIL/0SKIP, immutable package/integrity. Both
+products passed recovery/rollback checks and production monitors. Owner/read-only
+API boundaries, cashier HTML,194 offline assets and unchanged receipt/printer/
+checker/QRIS/payment invariants PASS. Database schemas and provider scopes remain.
+Offline remains available for commissioning, not device-activated by this release.
+PRODUCTION_ACTIVATED / SCOPED_TECHNICAL_VERIFIED; real Member customer journey and
+Chromebook physical UAT OPEN, not BUSINESS_READY. No fake sale, Points/refund,
+physical TEST, new provider, protection bypass or additional paid service.
+
 ## 2026-10-21 - Member native gate closed; offline cache release gate open
 
 CONFIRMED latest pushed POS `f9539b4e953eb0b6c86e765cf6b13cca5f8a225c`,

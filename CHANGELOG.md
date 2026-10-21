@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - SagaPOS Member guarded production delivery
+
+CONFIRMED Andreas requested deployment continuation; POSf9539b4/Memberc423884
+are production-activated, rollbacks470314d/6121d82. Known offline-cache fix
+qualified on Linux39548437413; packages/integrity, encrypted recovery/rollback,
+Owner/API/194asset/monitor checks PASS. Receipt/printer/checker/QRIS/PIN/prices
+and provider scopes unchanged. Source/local versus production and remaining
+real Member Chromebook UAT distinguished; BUSINESS_READY=false. No fake sale,
+physical TEST, paid provider or protection bypass. Updated SagaOPS PRODUCT/
+DOSSIER/CHANGELOG, portfolio, master, GAPS and SYNC_STATUS; historical failures
+retained, no private data published, other products preserved.
+
 ## 2026-10-21 - SagaPOS Member native qualification and cache checkpoint
 
 CONFIRMED on Andreas's completion/deploy instruction: source POSf9539b4,

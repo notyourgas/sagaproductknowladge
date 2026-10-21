@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-21 - SagaPOS Member shortcut is production-activated
+
+CONFIRMED POSf9539b4/Memberc423884 deployed and scoped technically verified;
+rollbacks470314d/6121d82. Kiosk/Kasir accept four final alphanumeric Member-code
+characters with matched-name confirmation, not phone lookup or Member login.
+Collision/voucher/reward still require full code. Linux39548437413, immutable
+packages, encrypted recovery/rollback, Owner/API/194assets/monitors PASS; existing
+receipt/printer/checker/QRIS/PIN/prices/providers unchanged. No physical TEST or
+fake sale. Real Member journey on paired Chromebook remains OPEN; offline device
+commissioning and BUSINESS_READY are not established by this release.
+
 ## 2026-10-21 - SagaPOS Member native tests pass, release still held
 
 CONFIRMED latest pushed POSf9539b4/Memberc423884/runner5c62b12. Four final

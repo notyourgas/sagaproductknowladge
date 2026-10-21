@@ -1,5 +1,40 @@
 # SagaOPS Dossier
 
+## 2026-10-21 - Member code-suffix paired production release
+
+CONFIRMED POSf9539b4 and Memberc423884 activated; Member frontendcb88d4a and
+contracts3279a02 unchanged, runner5c62b12. POS rollback470314d, Member rollback6121d82.
+Four final code characters normalize letters without dropping leading zeroes;
+only an unambiguous ACTIVE member's limited public projection is returned.
+Named confirmation and signed quote binding remain. Full code required for
+collision or spending voucher/reward; legacy exact authentication is unchanged.
+
+After the previous checkpoint, Andreas explicitly requested guarded deployment.
+The known generated-cache correction was qualified on exact source, not a blind
+unchanged retry. Linux39548437413 completed5m34s: full Member82files (existing
+environment skips retained), runner156, native/browser POS22 and offline214PASS
+with0FAIL/0SKIP in both POS groups. Immutable POS artifact SHA256
+29f0316750ce0fa05bf6d19865a7fd40cb155f0ffee9205df5ffc314e2dc49dd;
+Member artifact9c934fc61826d03ce88b81b9f694bab2dd4d93e3a84f9160669cf427632ad966.
+
+Member encrypted backup/restore, actual switch/rollback/reswitch, active backup,
+current Owner proof and all three monitors PASS. Business/provider config and
+SagaBook environment hashes unchanged. POS encrypted restore, candidate/current/
+candidate isolated boots, guarded atomic activation and monitor PASS, schema37
+and GATEWAY preserved. Encrypted backups copied off-host and hashes verified;
+this is not an independently managed offsite disaster-recovery service. Only
+verified duplicate transports and one archived unreferenced historical TAR were
+relocated; active/rollback releases, databases and backups were not removed.
+
+Authenticated Owner/cashier HTML and194 served offline assets PASS; scoped API
+denies anonymous403, rejects invalid422 and returns unknown404 without business
+writes. Dashboard Kiosk assets remain403 and unpaired Kiosk host401 by design;
+positive shared UI bytes checked through the existing offline alias, not by
+bypassing device authorization. Real paired Chromebook Member UAT remains OPEN.
+Template, logo/spacing/feed/cut, printer/checker, QRIS, prices, PIN and offline
+commissioning unchanged. PRODUCTION_ACTIVATED / SCOPED_TECHNICAL_VERIFIED, not
+BUSINESS_READY; no fake sale, account, Points/refund or physical print.
+
 ## 2026-10-21 - Member qualification continuation and remaining cache gate
 
 CONFIRMED final pushed sources POSf9539b4/Memberc423884/runner5c62b12 supersede
