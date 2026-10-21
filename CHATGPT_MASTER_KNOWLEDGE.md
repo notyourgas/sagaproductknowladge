@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-21 - SagaPOS Member shortcut candidate, not production
+
+CONFIRMED Andreas resumed Member work; POS6729f61/Member5226360 committed/pushed.
+Four alphanumeric code-suffix lookup, masked identity/name confirmation and
+full-code collision/redemption fallback pass local feature/browser checks.
+The additional existing voucher/durable regression remains timeout-blocked after
+two bounded fixture corrections; no third attempt or deploy. Production remains
+POS470314d/Member6121d82; approved receipt/printer/checker and payments unchanged.
+Phone suffix is not implemented; input-kind question remains NEEDS CONFIRMATION.
+Release Lead owns traced fixture diagnosis then paired Linux/recovery release.
+
 ## 2026-10-21 - SagaPOS printer UX production verified
 
 CONFIRMED source `470314d449fe0765149f8dcae710e3ad71cd88d2` production, rollback42d850f.

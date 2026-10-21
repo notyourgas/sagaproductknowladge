@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - SagaPOS Member shortcut source checkpoint
+
+CONFIRMED POS6729f61/Member5226360 source published with alphanumeric code-suffix
+lookup, safe collision handling and name confirmation. Focused local tests PASS;
+shared voucher/durable gate remains timeout-blocked after two fixture corrections.
+Not deployed, no third retry, no production printer/payment changes. Source/local
+validation versus release/activation remain distinct. Phone lookup not implemented;
+input-kind confirmation open. Updated SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio,
+master, GAPS and SYNC_STATUS; independent product history preserved.
+
 ## 2026-10-21 - SagaPOS printer UX production dan otorisasi readiness
 
 CONFIRMED Andreas mengotorisasi deploy dan Linux tanpa izin readiness berulang,

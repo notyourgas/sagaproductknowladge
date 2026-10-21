@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-21 - SagaPOS Member pencarian singkat disiapkan
+
+CONFIRMED POS6729f61/Member5226360 committed/pushed. Local Member-code four-character
+lookup and Kiosk/cashier confirmation validated; not Member login or phone lookup.
+Release BLOCKED by an existing voucher/durable fixture timeout after two bounded
+corrections. No third run, Linux cost or deploy; production/printer/nota preserved.
+Input code-versus-phone remains NEEDS CONFIRMATION; no BUSINESS_READY claim.
+
 ## 2026-10-21 - SagaPOS printer UX terdeploy, perangkat tetap pending
 
 CONFIRMED release `470314d449fe0765149f8dcae710e3ad71cd88d2` aktif, rollback42d850f.

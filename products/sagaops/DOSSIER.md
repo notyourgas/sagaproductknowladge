@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-21 - POS Member suffix integration candidate
+
+CONFIRMED resumed implementation: POS6729f61 and Member5226360 derive from live
+POS470314d/Member6121d82. New machine-scoped lookup accepts exactly four ASCII
+letters/digits of the current Member code and returns one ACTIVE public member
+plus limited policy summary. No candidate list, raw code, email, credential or
+new identity copy. Unknown/colliding/inactive results fail closed; legacy exact
+resolve/summary remains unchanged. Kiosk shows the name before continue; cashier
+requires name confirmation. Signed quote identity binding is retained. Shortcut
+is not login, OTP or proof of ownership; full code required for reward/voucher.
+
+Local feature/browser24PASS, Member focused34PASS, Member isolated82files PASS
+with existing native/cross-product skips. Shared voucher/durable POS regression
+hung; bounded cleanup/restart fixture corrections both timed out45seconds.
+Two corrections consumed, no third attempt or native dispatch. Release remains
+BLOCKED/NOT_DEPLOYED pending a traced stalled operation and paired qualification,
+artifact/recovery/Owner gates. NEEDS CONFIRMATION: code versus phone suffix;
+only alphanumeric code lookup exists in this candidate. Current production and
+approved receipt/printer, prices/payment, PIN and offline contract unchanged.
+
 ## 2026-10-21 - Printer daily UX production delivery
 
 CONFIRMED release `470314d449fe0765149f8dcae710e3ad71cd88d2`, rollback42d850f,

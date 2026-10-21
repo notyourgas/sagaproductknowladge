@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-21 - Member shortcut candidate provenance synchronized
+
+CONFIRMED source POS `6729f61bcd31dc6186786be9fa3fcd9f7be01e40` and Member
+`5226360afc96e8717383d4bb40db6077efc2cfd6` committed/pushed. LOCAL_FEATURE_VALIDATED,
+not deployed: voucher/durable compatibility timeout after two fixture corrections
+blocks release. No third retry/runner/production changes. Code suffix implemented,
+phone suffix not implemented; requested input confirmation remains open. Source,
+local test and production statuses are separated across SagaOPS/master/gaps and
+changelogs; no private evidence path, credential or customer identifier included.
+
 ## 2026-10-21 - SagaPOS printer UX production delivered
 
 CONFIRMED source `470314d449fe0765149f8dcae710e3ad71cd88d2` active, rollback42d850f,

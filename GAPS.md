@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - SagaPOS Member shortcut release blocked
+
+CONFIRMED POS6729f61/Member5226360 source committed/pushed; local new feature and
+browser tests PASS. Existing actual voucher/durable compatibility fixture hangs;
+two bounded fixture cleanup corrections reached45s cancellation. No third retry,
+Linux dispatch, package or production mutation. Release Lead/Codex owns static
+await-chain diagnosis before a specific further diagnostic plan and paired
+qualification. Do not skip the gate or turn subset tests into release acceptance.
+Andreas was asked once whether input is Member-code or phone suffix; four
+alphanumeric code characters implemented, phone lookup NOT_IMPLEMENTED.
+Production POS470314d/Member6121d82, receipt/printer/checker/payment unchanged.
+
 ## 2026-10-21 - SagaPOS printer UI: release gates closed, hardware OPEN
 
 CONFIRMED source470314d449fe0765149f8dcae710e3ad71cd88d2 deployed/verified,

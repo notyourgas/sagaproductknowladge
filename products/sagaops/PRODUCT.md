@@ -1,5 +1,21 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - Member shortcut resumed; candidate not deployed
+
+CONFIRMED Andreas resumed membership work. POS source `6729f61bcd31dc6186786be9fa3fcd9f7be01e40`
+and Member backend `5226360afc96e8717383d4bb40db6077efc2cfd6` are committed/pushed.
+Candidate accepts four final alphanumeric Member-code characters, shows matched
+name, and requires full code on collision or voucher/reward spending. Kiosk has
+named-member continue; cashier requires staff name confirmation. Exact-code
+authentication, receipt/printer/checker/payment and offline behavior remain.
+Local POS feature/browser24PASS and Member focused34PASS; Member full isolated
+runner82files completed with existing environment skips. Additional shared-path
+voucher/durable regression timed out after two bounded fixture corrections;
+BLOCKED, not a passing release. No third retry/Linux dispatch/deploy occurred.
+Production remains POS470314d/Member6121d82. NEEDS CONFIRMATION: code suffix versus
+phone suffix; current candidate is code only, not phone lookup. Release Lead
+must isolate the stalled voucher await before paired qualification/release.
+
 ## 2026-10-21 - UI printer ringkas dan TEST berulang sudah production
 
 CONFIRMED source `470314d449fe0765149f8dcae710e3ad71cd88d2` aktif di production,

@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-21 - Kandidat pencarian member singkat
+
+CONFIRMED source POS6729f61/Member5226360 committed/pushed, IMPLEMENTED_NOT_DEPLOYED.
+Empat karakter akhir kode Member, collision/full-code fallback, konfirmasi nama
+Kiosk/Kasir; kode lengkap tetap wajib untuk voucher/reward. Local feature/browser
+dan Member checks PASS; regresi tambahan voucher/durable timeout dua koreksi,
+tidak diloloskan atau diulang ketiga kali. Linux/release belum berjalan, source
+produksi470314d/6121d82 dan nota/printer tetap. Nomor HP bukan scope kandidat;
+jenis input yang dimaksud Andreas masih menunggu konfirmasi satu pertanyaan.
+
 ## 2026-10-21 - Deploy printer harian dan TEST koneksi berulang
 
 CONFIRMED atas otorisasi Andreas: source `470314d449fe0765149f8dcae710e3ad71cd88d2`
