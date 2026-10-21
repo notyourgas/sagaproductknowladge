@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-21 - Member Points production release synchronized
+
+CONFIRMED POS188fcc7 active/rollbackf9539b4; Member backend/PWA unchanged.
+Linux39567558006, Member/POS25/operations214/runner156/Member82files with existing
+skips, package/static/typecheck, backup/recovery and Owner/monitor/auth/cache194
+checks PASS. Nota/printer/checker/QRIS/payment hashes preserved. Future staff
+cash/manual QRIS earns through the existing async worker; no historical backfill.
+No fake production transaction/Points or print. Real Member Chromebook UAT and
+offline commissioning OPEN; BUSINESS_READY=false. Independent HR/mobile lane
+remains separate and needs new baseline integration. No restricted data published.
+
 ## 2026-10-21 - SagaPOS HR/mobile source and blocked execution synchronized
 
 CONFIRMED candidate d6cf0d0/checkpoint13a55ae; activef9539b4/rollback470314d

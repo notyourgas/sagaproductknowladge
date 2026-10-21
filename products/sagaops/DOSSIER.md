@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-21 - Member staff-confirmed Points correction released
+
+CONFIRMED active POS188fcc7, rollbackf9539b4; Member backendc423884/PWAcb88d4a
+remain unchanged. The fix1b9c4e5 is packaged with a workflow-only inclusion of
+its regression test. Staff-confirmed Kiosk cash/manual QRIS atomically append the
+persisted member/amount qualification event; the existing outbox worker processes
+it asynchronously. No schema migration, price, permission, PIN, receipt, printer,
+checker, feed/cut or merchant QRIS change. No historical Points replay/backfill.
+
+Linux39567558006 completed5m51s on bounded2CPU/8GB within included quota and
+zero-overage block: Member/POS25, operations/offline214, runner156, Member82files
+(existing gated skips retained), static/typecheck/package PASS. Immutable TAR
+SHA256d6b7d7d11892d51d8fc3a7cac0bc7379c60a8953297d43fe1aec717e992bc6e3.
+Backup/encrypted off-host checksum, disposable restore/rollback boots, guarded
+activation, monitors/Owner/auth/cache194 and before/after operational hashes PASS.
+Offline qualification rebound to the successful exact source, device activation
+not performed. No fake production sale/payment/Points or print. Actual Member
+Chromebook UAT remains OPEN. Independent HR/mobile candidate must retain188fcc7
+when preparing its successor; its own blocked gates are not closed by this release.
+
 ## 2026-10-21 - HR/mobile integration checkpoint; Linux not executed
 
 CONFIRMED candidate d6cf0d0 integrates the active f9539b4 source through reviewed

@@ -1,5 +1,23 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - Member Points fix production-activated
+
+CONFIRMED after Andreas authorized Linux qualification then deployment:
+`188fcc794015f04ca05f50af96cbfde66650cdab` is active; rollbackf9539b4.
+Staff-confirmed Kiosk cash and manual QRIS now record Member qualification
+atomically with payment, reusing the existing asynchronous worker. Pending or
+invalid payments do not earn; replay/restart/lost acknowledgement do not duplicate
+Points in synthetic qualification. No historical backfill is included.
+
+Linux39567558006 SUCCESS: Member/POS25 and operational/offline214PASS without
+failure/skip, Member82 isolated files with existing gated skips retained, runner156,
+static/typecheck and immutable package PASS. Encrypted backup/disposable restore,
+candidate/current/candidate recovery, Owner/health/auth/cache194 and unchanged
+receipt/printer/checker/QRIS/payment hashes PASS. Member backend/PWA unchanged.
+Offline remains commissioning-required. No fake production transaction/Points or
+physical print; real Member Chromebook UAT OPEN, not BUSINESS_READY. Independent
+HR/mobile candidate is still not deployed and must refresh this active baseline.
+
 ## 2026-10-21 - HR/mobile candidate refreshed; execution gate blocked
 
 CONFIRMED: HR/mobile candidate `d6cf0d0fb3dc3c5e758f5c3b319c76694cb4a6d4`

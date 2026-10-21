@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - SagaPOS Member Points production deployment
+
+CONFIRMED, Andreas requested qualification then deploy on success. Source188fcc7
+active/rollbackf9539b4 fixes staff-confirmed Kiosk cash/manual QRIS qualification.
+Linux39567558006 (Member/POS25, operations214, runner156, Member82files with
+existing gated skips), package/static/typecheck, encrypted recovery/rollback and
+production Owner/monitor/auth/cache194/invariant checks PASS. Receipt/printer and
+Member backend/PWA unchanged. No fake sale/payment/Points, historical backfill or
+physical print. Actual Member device UAT/offline commissioning remain OPEN; not
+BUSINESS_READY. Updated SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, gaps, portfolio,
+sync status and this changelog; preserves parallel HR/other-product knowledge.
+Source/runtime provenance verified; knowledge provenance main HEAD after push.
+
 ## 2026-10-21 - SagaPOS HR/mobile integration and execution gate checkpoint
 
 CONFIRMED from Andreas's continue/deploy instruction and current source/runtime

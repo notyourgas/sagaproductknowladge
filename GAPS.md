@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - Member Points release gap closed; actual customer UAT remains
+
+CONFIRMED188fcc7 active/rollbackf9539b4, Linux39567558006 and package/recovery/
+guarded deployment gates PASS. Missing qualification events for staff-confirmed
+Kiosk cash/manual QRIS are fixed for future verified confirmations. No automatic
+historical Points backfill. If old missing Points require correction, Release
+Lead and Owner must reconcile them under separate authorization, not replay all
+orders. Actual Member Chromebook/customer payment UAT remains OPEN and must use
+legitimate operator transactions, not fake production sales. Offline commissioning
+remains required; not BUSINESS_READY. Independent HR/mobile candidate d6cf0d0
+must integrate active188fcc7 and rerun its own gates before any later promotion.
+
 ## 2026-10-21 - SagaPOS HR/mobile builder execution blocked despite access
 
 CONFIRMED: credential availability is resolved; automatic approval review

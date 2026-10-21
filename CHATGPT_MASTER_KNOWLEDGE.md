@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-21 - SagaPOS Member Points fix is production-active
+
+CONFIRMED POS188fcc7 active/rollbackf9539b4 after authorized Linux39567558006
+and guarded recovery/deploy. Staff-confirmed Kiosk cash/manual QRIS now queues
+Points with verified payment; existing worker remains asynchronous. Member/POS25,
+operations214, runner156, Member82files with existing skips, package/static and
+production Owner/monitor/auth/cache194 checks PASS. Receipt/printer/checker/QRIS/
+payment hashes unchanged; Member backend/PWA and schema37 unchanged. No fake
+production sale/Points, backfill or physical print. Offline device commissioning
+and real Member Chromebook UAT remain open; not BUSINESS_READY. HR/mobile lane
+is separate, not deployed, and must refresh to this new active baseline.
+
 ## 2026-10-21 - SagaPOS HR/mobile current candidate and execution blocker
 
 CONFIRMED: HR/mobiled6cf0d0 (checkpoint13a55ae) integrates active POSf9539b4

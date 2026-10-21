@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-21 - SagaPOS Member Points correction deployed
+
+CONFIRMED, Andreas authorized Linux qualification then deployment. POS188fcc7
+active, rollbackf9539b4; atomic Member event for staff-confirmed Kiosk cash/manual
+QRIS. Linux39567558006, immutable package, encrypted recovery/rollback and Owner/
+monitor/auth/cache194/invariant checks PASS. Receipt/printer/checker/QRIS/payment
+unchanged; no fake sales/Points, backfill or physical print. Actual Member device
+UAT and offline commissioning remain OPEN; not BUSINESS_READY. SagaOPS/master/
+gaps/status/changelogs updated; independent HR candidate is not included and must
+refresh to the new baseline. Other products and their historical entries preserved.
+
 ## 2026-10-21 - SagaPOS HR/mobile candidate refreshed; deployment not run
 
 CONFIRMED candidate d6cf0d0/checkpoint13a55ae preserves POSactivef9539b4 and

@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-21 - Deploy perbaikan poin pembayaran staf
+
+CONFIRMED atas instruksi Andreas: POS188fcc7 aktif, rollbackf9539b4. Poin tunai
+Kiosk/QRIS manual dicatat melalui event atomik setelah pembayaran terverifikasi;
+worker existing tetap asinkron. Linux39567558006: Member/POS25 dan operasi214
+PASS tanpa gagal/skip, Member82files dengan skip lama tetap, runner156 serta
+static/typecheck/package PASS. Backup/restore/recovery/Owner/monitor/cache194
+dan hash nota/printer/checker/QRIS/payment PASS. Schema37 dan Member backend/PWA
+tetap. Tidak ada transaksi production palsu, backfill poin, TEST fisik atau
+aktivasi offline perangkat. UAT Member Chromebook masih OPEN; bukan BUSINESS_READY.
+Kandidat HR terpisah belum dideploy dan harus menjaga baseline aktif baru.
+
 ## 2026-10-21 - Kandidat HR menjaga rilis aktif; builder ditolak sebelum eksekusi
 
 CONFIRMED, Andreas meminta melanjutkan tes/deploy setelah akses builder tersedia.
