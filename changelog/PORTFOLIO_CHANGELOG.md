@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-21 - SagaPOS Member payment source correction, not deployed
+
+CONFIRMED source1b9c4e5, native/API/browser24PASS and static/typecheck PASS. Testing
+requested by Andreas found missing Points events on staff-confirmed Kiosk cash/
+manual QRIS; atomic outbox fix is LOCAL_VALIDATED. Productionf9539b4 unchanged
+and still affected; Linux/release and real device UAT remain. No fake sales,
+payment/Points mutation, historical backfill or physical print. SagaOPS product,
+dossier/changelog, master, gaps and sync status updated; other products unchanged.
+
 ## 2026-10-21 - SagaPOS Member shortcut paired release activated
 
 CONFIRMED POSf9539b4/Memberc423884 production; frontend Member unchanged and

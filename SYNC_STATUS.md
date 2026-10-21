@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-21 - Member payment synthetic tests and pending fix recorded
+
+CONFIRMED source1b9c4e5 LOCAL_VALIDATED, NOT_DEPLOYED; native/API/browser24PASS,
+static/typecheck PASS. Productionf9539b4 unchanged and still lacks qualification
+events for staff-confirmed Kiosk cash/manual QRIS. Linux/release gate and actual
+Member Chromebook UAT OPEN; source fix is not operational acceptance. No fake
+production transaction/Points or historical backfill, no physical print, no
+receipt/printer change. Source provenance and public status synchronized without
+customer/credential/private evidence data. BUSINESS_READY=false.
+
 ## 2026-10-21 - Member paired release production verified
 
 CONFIRMED POSf9539b4/Memberc423884 production-activated, rollback470314d/6121d82;

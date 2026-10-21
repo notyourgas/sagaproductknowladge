@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-21 - SagaPOS Member payment test found pending production fix
+
+CONFIRMED synthetic native/API/browser24PASS on source1b9c4e5, LOCAL_VALIDATED
+not deployed. Four-character lookup and name confirmation work; testing found
+missing Point qualification events for staff-confirmed Kiosk cash/manual QRIS.
+Source now records these atomically and reuses the asynchronous worker. Production
+is stillf9539b4 and affected; Linux/release qualification and real Member device
+UAT remain open. No fake production sale/payment/Points, historical backfill or
+physical print. Receipt/printer unchanged; not BUSINESS_READY.
+
 ## 2026-10-21 - SagaPOS Member shortcut is production-activated
 
 CONFIRMED POSf9539b4/Memberc423884 deployed and scoped technically verified;

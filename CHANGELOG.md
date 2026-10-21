@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-21 - SagaPOS Member payment test evidence and release gap
+
+CONFIRMED, source1b9c4e5; Andreas requested synthetic Member lookup/name/Points
+validation without fake production sales. Native/API/browser24PASS and static/
+typecheck PASS. Source fixes absent qualification events in staff-confirmed
+Kiosk cash/manual QRIS; productionf9539b4 unchanged/affected, NOT_DEPLOYED.
+Updated SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, gaps, portfolio and sync status
+to qualify prior technical claims. Linux/release and real Member device UAT remain
+OPEN. No production Points backfill/mutation, physical print or layout/printer
+change. Knowledge provenance: main HEAD after push; no restricted data published.
+
 ## 2026-10-21 - SagaPOS Member guarded production delivery
 
 CONFIRMED Andreas requested deployment continuation; POSf9539b4/Memberc423884

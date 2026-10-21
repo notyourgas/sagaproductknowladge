@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-21 - Member payment synthetic validation and pending fix
+
+CONFIRMED at Andreas's request to test without fake production sales: new
+source `1b9c4e548203ad291816080741259e401d7d19d9` is LOCAL_VALIDATED, NOT_DEPLOYED.
+Native PostgreSQL18 + local Memberc423884 HTTP/browser:24PASS/0FAIL/0SKIP;
+short-code/name confirmation, paid/pending Points, replay/restart/lost ACK and
+staff PIN regressions. A concrete omission was found and fixed in source:
+Kiosk assisted cash and manual QRIS lacked the Member qualification event.
+The event now commits with payment; existing asynchronous worker awards Points.
+Production remainsf9539b4 and still needs this fix. Linux/release gate and real
+Member Chromebook UAT OPEN. No historical Points backfill, fake production
+sale/payment/Points or physical print; layout/printer/checker remain unchanged.
+
 ## 2026-10-21 - Member shortcut deployed and technically verified
 
 CONFIRMED at Andreas's deployment instruction: POS

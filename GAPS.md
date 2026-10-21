@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-21 - Member staff-confirmed Points source fix awaits release
+
+CONFIRMED productionf9539b4 omits Member qualification when Kiosk cash or manual
+QRIS is staff-confirmed. Source1b9c4e5 fixes atomic outbox recording and passes
+native/API/browser24 tests plus static/typecheck. NOT_DEPLOYED; previous scoped
+release checks did not prove all payment-to-Points paths. Owner: Release Lead.
+Next: qualify this exact fix on Linux/native and promote with normal recovery
+and rollback gates. Historical missing Points need separate authorized
+reconciliation, never an automatic blanket replay. Real customer/Chromebook UAT
+remains open. No production synthetic mutation or receipt/printer change.
+
 ## 2026-10-21 - Member release gate closed; real device/customer UAT remains
 
 CONFIRMED POSf9539b4/Memberc423884 deployed/activated; previous offline/cache/

@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-21 - Uji Member menemukan celah pencatatan poin pembayaran staf
+
+CONFIRMED, permintaan Andreas untuk tes sintetis Kasir/Kiosk tanpa penjualan
+production palsu. Source1b9c4e5 memperbaiki event poin tunai Kiosk/QRIS manual
+yang sebelumnya tidak tercatat. Native PostgreSQL18/API Member/browser24PASS,
+static/typecheck PASS. LOCAL_VALIDATED / NOT_DEPLOYED; productionf9539b4 tetap
+dan masih memerlukan rilis perbaikan. Gate Linux/rilis dan UAT Member Chromebook
+OPEN. Tidak ada backfill poin, penjualan/payment/Points palsu atau TEST fisik;
+nota/printer/checker tidak berubah. Release Lead menyiapkan kualifikasi rilis.
+
 ## 2026-10-21 - Deploy pencarian singkat Member Kiosk dan Kasir
 
 CONFIRMED atas instruksi deploy Andreas: POSf9539b4/Memberc423884 aktif,

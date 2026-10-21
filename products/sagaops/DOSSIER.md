@@ -1,5 +1,18 @@
 # SagaOPS Dossier
 
+## 2026-10-21 - Staff-confirmed Member Points correction pending release
+
+CONFIRMED source1b9c4e5 adds the existing qualification event to the same database
+transaction as Kiosk assisted-cash and manual-QRIS staff confirmation. Previously
+these paths could mark payment paid without enqueueing Points. Pending/invalid
+amounts remain ineligible; persisted member/total, replay guards and provider
+idempotency retain attribution and deduplication. No schema or historical backfill.
+Points use the existing periodic outbox worker, not an immediate payment promise.
+Local native/API/browser24PASS, static/typecheck PASS. NOT_DEPLOYED: production
+f9539b4 remains affected until Linux/package/recovery/promotion gates pass. No
+production synthetic mutation; actual customer/device UAT OPEN. Receipt and
+printer configuration unchanged. This qualifies earlier scoped technical claims.
+
 ## 2026-10-21 - Member code-suffix paired production release
 
 CONFIRMED POSf9539b4 and Memberc423884 activated; Member frontendcb88d4a and
