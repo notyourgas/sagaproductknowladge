@@ -33,8 +33,11 @@ merchant bersama SagaBook/COYABAG ditambahkan sesuai persetujuan Andreas;
 satu uji unpaid tambahan yang diotorisasi tetap ditolak tanpa QR, dan lookup
 referensi kembali tidak menemukan order. Whitelist belum terbukti sebagai
 akar penyebab. Tidak ada pembayaran, perubahan webhook, atau deploy aplikasi.
-Alasan penolakan internal provider masih OPEN; draft eskalasi sudah disiapkan
-dan belum dikirim. Next action: trace provider dan koreksi konkret sebelum
+Atas instruksi Andreas, eskalasi WhatsApp dikirim ke CS dari tautan dashboard
+resmi. CS membalas bahwa QRIS CUSTOM sedang mengalami kendala. Ini konfirmasi
+gangguan channel dari provider; mapping ke kode API, alasan internal, ETA dan
+kelayakan QRISREALTIME sebagai alternatif masih OPEN. Pertanyaan tindak lanjut
+sudah dikirim. Next action: konfirmasi provider dan koreksi konkret sebelum
 uji unpaid baru yang diotorisasi, lalu acceptance checkout SagaBook. Source
 tetap `6c533b2` belum deploy; runtime masih release `20261023034820-88e280a`.
 Files synced: PRODUCT, DOSSIER, product/portfolio/root CHANGELOG, master, GAPS,
