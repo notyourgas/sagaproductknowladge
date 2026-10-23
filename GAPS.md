@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-23 - Staff Admin deployed; UAT karyawan nyata OPEN
+
+CONFIRMED source6983408ad6e6470bb5d5b243535ff64ff5b52587 production-activated, rollback4c6b9cb. Native PostgreSQL18/recovery/Owner read-only dan196asset PASS. Gate migrasi/deploy pada checkpoint lokal Staff Admin telah ditutup.
+Andreas/HR menambahkan karyawan Staff Admin sah, menyimpan akses sementara, lalu staf mengganti password, melihat jadwal Admin WIB dan melakukan absensi GPS/foto sesuai aturan. Belum ada akun atau absensi fiktif dibuat sebagai smoke. Periksa tabel Staff Admin dan Barista serta rekapnya pada operasi nyata; bukan BUSINESS_READY.
+Rollback kode lama mempertahankan enum/data tetapi tidak mendukung login ADM; gunakan pemulihan kandidat untuk mengaktifkan kembali akses Admin. Pricing/payment/payout/printer tidak berubah oleh rilis ini.
+
 ## 2026-10-23 - Es-only aktif; keranjang lama dan UAT perangkat
 
 CONFIRMED data publikasi4/version63: tiga kopi khas hanya Es dan Hot lama

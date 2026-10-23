@@ -65,7 +65,7 @@
 | Alternatif | Mencampurkan absensi dan kategori staf tanpa pembeda tidak memenuhi permintaan. |
 | Dampak | Kategori staff_admin, kode akun baru ADM-, tabel/filter absensi dan jadwal Admin tersendiri; batas organisasi/outlet dan hak akses tetap. |
 | Pemberi keputusan | Andreas |
-| Status | Implementasi lokal source 28ec4ffaacc46cca30a71aa14e03eecf54ee6d30; belum deploy, native migration/recovery dan UAT OPEN. |
+| Status | PRODUCTION_ACTIVATED source 6983408ad6e6470bb5d5b243535ff64ff5b52587; migrasi/recovery/Owner PASS, UAT staf nyata OPEN dan bukan BUSINESS_READY. |
 | Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
 
 ## DEC-283 - Invitation Kiosk dan otorisasi PIN tanpa ID

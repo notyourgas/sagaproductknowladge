@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-23 - Staff Admin aktif di production SagaPOS
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, sesuai otorisasi deploy Andreas. Status ini menggantikan belum-deploy pada checkpoint Staff Admin lokal sebelumnya.
+
+Source [6983408](https://github.com/notyourgas/sagaops/commit/6983408ad6e6470bb5d5b243535ff64ff5b52587) aktif; rollback `4c6b9cbeb70638e5eca11fc9a21c3cd89a11eb18`. HR bersama Kopi Saga dan Saga Studio menyediakan kategori **Staff Admin**, kode akun baru `ADM-`, tabel absensi terpisah dari Barista, filter kategori/status dan jadwal Admin dalam WIB. Kode karyawan existing tetap; Admin tidak masuk generator roster Barista/Kitchen dan tidak mendapat hak Owner/kasir dari kategorinya.
+
+Linux [39989178303](https://github.com/notyourgas/sagaops/actions/runs/39989178303) lulus 96 tes, 0 gagal/0 skip:48 native/HR/release dan48 offline/PIN/ingress. Static1242modul/TypeScript PASS. Paket immutable dan source-bound offline196asset diverifikasi. Backup terenkripsi, disposable restore, salinan off-host dengan hash cocok, migrasi additive dua kali, kandidat/rollback/kandidat, aktivasi dan monitor PASS. Core schema37/fingerprint dan GATEWAY tetap; enum Staff Admin serta receipt native Staff ditambahkan. Percobaan runner pertama berhenti sebelum aktivasi, konfigurasi lama pulih; dispatcher diperbaiki dan bukti paket diterbitkan ulang untuk SHA final, tanpa rebind receipt lama.
+
+Postdeploy Owner efektif/HR read-only, schema read-back, penolakan anonim/CSRF,196asset offline dan16file utama PASS. Konfigurasi nota/printer/checker/QRIS serta produk lain tetap. Tidak membuat akun, absensi, pesanan, pembayaran atau TEST cetak fiktif. UAT akun Staff Admin dan absensi nyata masih OPEN; belum BUSINESS_READY. Jika rollback ke kode lama, data Admin dipertahankan tetapi login ADM tidak tersedia sampai kandidat dipulihkan.
+
 ## 2026-10-23 - SagaPOS batasi tiga kopi menjadi Es-only
 
 CONFIRMED Andreas, Es Kopi Saga/Saga Premiyum/Magnosiyum Es-only pada data
