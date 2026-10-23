@@ -1,5 +1,33 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-10-23 - Kontak WhatsApp Saga Studio dan Kopi Saga diperbarui
+
+`CONFIRMED`, instruksi Andreas 23 Oktober 2026: kontak bisnis publik kedua
+website menjadi **085173358113**, dengan tujuan `https://wa.me/6285173358113`.
+Nomor website sebelumnya `DEPRECATED` untuk kedua surface ini.
+
+Source Git lokal Saga Studio `37329b96991048f26a07a88642a90ac9b6ebe6eb`,
+release `20261023-37329b9-whatsapp`; Kopi Saga
+`c0552d82c9e05f636913693605851162d4920c10`, release
+`20261023-c0552d8-whatsapp`. Keduanya `PRODUCTION_DEPLOYED` dan
+`PRODUCTION_ACTIVATED` khusus tautan kontak di [Saga Studio](https://sagastudio.site/)
+dan [Kopi Saga](https://kopisaga.site/). Source memiliki commit lokal;
+push source ke remote tidak diklaim. Knowledge dipush terpisah ke `main`.
+
+Konfigurasi bersama Saga Studio memperbarui semua tombol kontak statis.
+Kopi Saga memperbarui konfigurasi JavaScript, fallback HTML dan versi URL
+konfigurasi untuk cache browser. Build/check 27 route dan 7 tes Studio PASS;
+sintaks JavaScript Kopi Saga serta diff PASS. Hash artifact/manifest cocok
+di server; browser mengonfirmasi kedua href baru. Sebanyak 22 route bio Studio
+memberi 200 dengan nomor baru; empat route Hiring tetap 200 tanpa tautan WhatsApp.
+Hiring dan Campaign QR tetap dapat dibuka. Versi sebelumnya retained untuk rollback.
+
+Produksi website berubah hanya pada nomor dan versi cache. Tidak ada perubahan
+layout, booking, payment, database, DNS, harga atau status buka. Tidak mengirim
+pesan uji WhatsApp; keterjangkauan akun penerima belum diuji. Tidak ada blocker
+baru pada scope tautan; status BUSINESS_READY produk tidak dinaikkan. Catatan
+ini berada di SagaDevs sebagai perubahan website bisnis dalam portofolio.
+
 ## 2026-10-21 - Jersey Jago revisi17: hero editorial dan filter mobile
 
 CONFIRMED, Andreas meminta pemeriksaan ulang UI/UX React di HP dan hero yang lebih eksperimental. Source lokal `7829ad395cb64a40696788a7bf71e9313ddcdb70` mengganti hero menjadi komposisi ink/emas, judul besar dua baris, panel foto miring dan label kolektor; CTA jelajah mendahului foto di mobile. Font Jakarta/Anton dan grid Latest Drop dipertahankan. Filter memperoleh Batal eksplisit, label/input harga sejajar, draft harga invalid tetap invalid pada Forward, drawer masuk dengan latar solid, serta tombol sekunder setinggi44px pada landscape. Tidak ada dependensi baru.

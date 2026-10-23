@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-286 - Kontak website Saga Studio dan Kopi Saga
+
+- Tanggal: 23 Oktober 2026.
+- Status: `CONFIRMED`; pemberi keputusan Andreas.
+- Keputusan: gunakan nomor bisnis publik 085173358113 pada website Saga Studio dan Kopi Saga.
+- Alasan: memperbarui tujuan kontak pengunjung sesuai nomor yang diberikan pemilik.
+- Alternatif: mempertahankan nomor lama; digantikan oleh instruksi terbaru.
+- Dampak: tautan WhatsApp kedua website; booking, transaksi dan status buka tetap.
+- Delivery: `PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED` untuk tautan kontak; pesan uji tidak dikirim dan BUSINESS_READY tidak dinaikkan.
+- Terkait: [produk](products/sagadevs/PRODUCT.md), [changelog](products/sagadevs/CHANGELOG.md).
+
 ## DEC-285 - Foto kopi AI dan arsip sementara menu belum tersedia
 
 | Field | Nilai |
