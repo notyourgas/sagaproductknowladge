@@ -27,6 +27,19 @@ belum ditetapkan. Next action: review/rilis kandidat melalui runner SagaBook
 dan selesaikan penolakan merchant/API provider sebelum acceptance checkout.
 [Kontrak perbaikan](https://github.com/notyourgas/sagabook/blob/6c533b25945d6392c468739b7a2fec82e2ef3ad5/docs/fixes/tokopay-order-rejection-20261023.md).
 
+Update diagnosis terautentikasi 23 Oktober: `CONFIRMED`. Dashboard merchant
+menunjukkan QRIS aktif dan webhook router pusat sudah benar. Whitelist IP
+merchant bersama SagaBook/COYABAG ditambahkan sesuai persetujuan Andreas;
+satu uji unpaid tambahan yang diotorisasi tetap ditolak tanpa QR, dan lookup
+referensi kembali tidak menemukan order. Whitelist belum terbukti sebagai
+akar penyebab. Tidak ada pembayaran, perubahan webhook, atau deploy aplikasi.
+Alasan penolakan internal provider masih OPEN; draft eskalasi sudah disiapkan
+dan belum dikirim. Next action: trace provider dan koreksi konkret sebelum
+uji unpaid baru yang diotorisasi, lalu acceptance checkout SagaBook. Source
+tetap `6c533b2` belum deploy; runtime masih release `20261023034820-88e280a`.
+Files synced: PRODUCT, DOSSIER, product/portfolio/root CHANGELOG, master, GAPS,
+dan SYNC_STATUS. Klasifikasi CONFIRMED berlaku pada observasi, bukan penyebab.
+
 
 ## 2026-10-23 - SagaBook Invitation (Free) aktif di production
 
