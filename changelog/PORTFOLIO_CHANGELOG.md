@@ -1,5 +1,37 @@
 # Portfolio Changelog
 
+## 2026-10-23 - SagaBook Invitation (Free) aktif di production
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, berdasarkan otorisasi
+deploy Andreas serta terminal runner dan verifikasi runtime pada 23 Oktober.
+Source `88e280a14ae4d20e0d005b61a1e6353b03195917` aktif sebagai release
+`20261023034820-88e280a`; rollback kompatibel
+`20261018063915-8f9731a` tetap tersedia. Status ini menggantikan belum-deploy
+pada checkpoint implementasi Invitation di bawah; bukan perubahan rilis lain.
+
+Manual Booking dan OTS kini menyediakan **Invitation (Free)** untuk sesi dan
+add-on awal gratis 100%, total Rp0 tanpa DP/tagihan atau penerimaan pembayaran.
+Add-on tertentu juga dapat digratiskan pada booking berbayar maupun saat sesi;
+tambahan berbayar berikutnya tetap tercatat sesuai metodenya. Harga katalog,
+kuantitas, snapshot dan audit dipertahankan. Tidak ada migration/dependency baru.
+
+Native full local gates, backup terenkripsi/offsite dan restore MySQL8.4 yang
+terikat kandidat PASS; data historis/zona waktu terjaga dan migrasi tetap149.
+Verifier independen PASS23/23;10 source runtime dan3 bundle HTTPS cocok hash.
+Dua percobaan tertahan lock sebelum perubahan production disimpan sebagai
+histori; percobaan terakhir lulus melalui runner locked setelah lock bebas.
+CI exact candidate: job aplikasi/browser dan kontrak MySQL PASS; audit
+production dependency Saga AI terpisah FAIL pada service yang tidak diubah.
+Karena itu keseluruhan workflow CI tidak dinyatakan PASS.
+
+UAT fitur production setelah login OPEN karena sesi browser masih di login;
+Andreas diminta login langsung, tanpa password di chat. Tidak dibuat booking,
+payment atau pesan customer nyata untuk pengujian. BUSINESS_READY belum
+ditetapkan. Next action: review tampilan Invitation melalui sesi login valid.
+Dokumen terdampak: PRODUCT/DOSSIER/CHANGELOG SagaBook, master knowledge,
+portfolio/root changelog dan SYNC_STATUS.
+[Source fitur](https://github.com/notyourgas/sagabook/commit/88e280a14ae4d20e0d005b61a1e6353b03195917).
+
 ## 2026-10-23 - SagaPOS Invitation Kasir production-activated
 
 CONFIRMED, permintaan Andreas untuk acara; source38e35f4 aktif/rollback188fcc7.
