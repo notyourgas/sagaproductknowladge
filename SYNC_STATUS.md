@@ -98,6 +98,13 @@ tetap `6c533b2` belum deploy; runtime masih release `20261023034820-88e280a`.
 Files synced: PRODUCT, DOSSIER, product/portfolio/root CHANGELOG, master, GAPS,
 dan SYNC_STATUS. Klasifikasi CONFIRMED berlaku pada observasi, bukan penyebab.
 
+Pembaruan checkpoint 24 Oktober: CS kemudian menyatakan layanan pulih, tetapi
+satu uji unpaid baru yang diminta Andreas pada akhir 23 Oktober tetap mendapat
+status provider 0 tanpa QR/link dan lookup tidak menemukan order. Klaim pulih
+belum terverifikasi untuk merchant/API SagaBook. Hasil terbaru sudah dikirim
+ke CS untuk trace spesifik; tidak ada pembayaran, pergantian channel, booking
+mutation atau deploy. QR acceptance tetap OPEN; tidak ada retry tambahan.
+
 
 ## 2026-10-23 - Media dan assortment SagaPOS tersinkron
 
