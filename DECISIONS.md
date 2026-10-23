@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-284 - HR bersama dengan kategori Staff Admin terpisah
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 23 Oktober 2026 |
+| Klasifikasi | CONFIRMED |
+| Topik | HR Kopi Saga dan Saga Studio |
+| Keputusan | Andreas meminta kategori Staff Admin dengan kode karyawan berbeda dan tabel absensi terpisah dari Barista pada HR bersama. |
+| Alasan | Membedakan pekerjaan administrasi dan operasional Barista dalam pengelolaan HR yang sama. |
+| Alternatif | Mencampurkan absensi dan kategori staf tanpa pembeda tidak memenuhi permintaan. |
+| Dampak | Kategori staff_admin, kode akun baru ADM-, tabel/filter absensi dan jadwal Admin tersendiri; batas organisasi/outlet dan hak akses tetap. |
+| Pemberi keputusan | Andreas |
+| Status | Implementasi lokal source 28ec4ffaacc46cca30a71aa14e03eecf54ee6d30; belum deploy, native migration/recovery dan UAT OPEN. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
+
 ## DEC-283 - Invitation Kiosk dan otorisasi PIN tanpa ID
 
 | Field | Nilai |

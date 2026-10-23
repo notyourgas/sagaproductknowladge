@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-23 - Staff Admin dan absensi terpisah pada HR bersama
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
+Keputusan Andreas: Kopi Saga dan Saga Studio memakai HR yang sama, dengan kategori Staff Admin dan tabel absensi terpisah dari Barista.
+
+Source [28ec4ff](https://github.com/notyourgas/sagaops/commit/28ec4ffaacc46cca30a71aa14e03eecf54ee6d30) pushed pada branch `codex/sagapos-staff-admin-20261023`, berbasis source rilis `4c6b9cbeb70638e5eca11fc9a21c3cd89a11eb18`.
+Tambah karyawan menyediakan Staff Admin; akun baru memakai kode unik `ADM-`, kategori lain tetap `STF-`. Kode lama tetap saat kategori diedit. HR Absensi menampilkan tabel Barista, Staff Admin dan tim lainnya; filter kategori/status serta KPI mengikuti pilihan. Jadwal Admin WIB diatur sendiri, tanpa masuk generator roster Barista/Kitchen. Kategori kerja tidak memberikan hak Owner/kasir atau akses lintas organisasi/outlet.
+
+33 kasus relevan lulus secara agregat: run gabungan 32/33 lalu satu fixture tanggal lama diperbaiki tanpa mengubah assertion dan diuji ulang PASS. Pemeriksaan statis/TypeScript PASS, 1240 modul. Bukti database memakai embedded PostgreSQL-compatible harness; UI sintetis 1440/390 mencakup pemisahan tabel, login/akun, jadwal, absensi sendiri, isolasi, CSRF dan aksesibilitas. Bukan native PostgreSQL production atau UAT staf nyata.
+
+Migrasi enum additive dan receipt checksum native Staff disiapkan; startup hanya memverifikasi, tidak menjalankan migrasi. Production tidak diubah oleh task ini. OPEN: migrasi/native PostgreSQL, backup/restore/rollback melalui runner, deploy dan UAT autentik. Rollback kode lama tidak mendukung login kode ADM; jangan mengubah/menghapus riwayat staf. Pricing, payment, payroll payout dan konfigurasi printer tidak berubah. [Handoff source](https://github.com/notyourgas/sagaops/blob/28ec4ffaacc46cca30a71aa14e03eecf54ee6d30/docs/hr-staff-admin-20261023.md).
+
 ## 2026-10-23 - Login Saga Member aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, berdasarkan otorisasi deploy Andreas dan terminal runner serta verifikasi publik pada 23 Oktober. Status ini menggantikan belum-deploy pada checkpoint login lokal di bawah.
