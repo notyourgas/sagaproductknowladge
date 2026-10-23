@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-23 - Es-only aktif; keranjang lama dan UAT perangkat
+
+CONFIRMED data publikasi4/version63: tiga kopi khas hanya Es dan Hot lama
+ditolak quote server. Harga/nota/printer unchanged. Local7PASS, quote production
+dan live e-menu PASS; UAT Chromebook aktual OPEN. Refresh online ketika idle,
+tinjau ulang pilihan Hot pada keranjang lama; jangan hapus ledger/browser atau
+ubah pembayaran. Produk baru memerlukan assignment Hot melalui authoring.
+Source test/docs74707aa pushed, runtime4c6b9cb unchanged, bukan BUSINESS_READY baru.
+
 ## 2026-10-23 - Empat bekas Mocktail sudah dipulihkan sebagai Soda
 
 CONFIRMED: Andreas telah memberi konfirmasi khusus untuk empat minuman;

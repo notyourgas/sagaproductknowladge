@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-23 - Hilangkan Hot dari tiga kopi khas
+
+CONFIRMED Andreas, Es Kopi Saga/Saga Premiyum/Magnosiyum Es-only, opsi Hot
+menu lain tetap. Data publikasi4/version63 aktif, test/docs74707aa pushed,
+binary4c6b9cb unchanged. Local7PASS, quote production negatif/positif serta
+live e-menu1280/768/390 PASS. Harga/gula/addon/foto/nota/printer unchanged;
+Soda6/22produk/bakery arsip tetap, tanpa transaksi/stok/cetakan. UAT Chromebook
+OPEN. Sinkron PRODUCT/DOSSIER, master/portfolio/root, DECISIONS/GAPS/SYNC_STATUS.
+
 ## 2026-10-23 - Pulihkan empat menu pada kategori Soda
 
 CONFIRMED Andreas: empat bekas Mocktail dipindah/dipulihkan ke Soda untuk

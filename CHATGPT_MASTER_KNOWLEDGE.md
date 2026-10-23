@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-23 - Kopi khas SagaPOS hanya Es
+
+CONFIRMED / PRODUCTION_ACTIVATED data publikasi4/version63: Es Kopi Saga,
+Saga Premiyum dan Magnosiyum tidak bisa Hot; Es tetap, menu lain tidak dibatasi
+ulang. Kiosk/Kasir/e-menu memakai publikasi sama. Test/docs74707aa pushed,
+runtime4c6b9cb tetap. Local7PASS, production quote3Hot ditolak/3Es diterima dan
+Cafe Latte Hot diterima, live e-menu1280/768/390 PASS. Harga/foto/gula/addon/
+nota/printer/QRIS unchanged; Soda6/22produk/bakery arsip tetap. Tanpa transaksi,
+stok/cetakan; UAT Chromebook OPEN. Keranjang lama perlu ditinjau bila memilih Hot.
+
 ## 2026-10-23 - SagaPOS mengembalikan empat minuman sebagai Soda
 
 CONFIRMED / PRODUCTION_ACTIVATED data publikasi3/version61. Brr Patabim,

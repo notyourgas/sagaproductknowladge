@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-23 - SagaPOS batasi tiga kopi menjadi Es-only
+
+CONFIRMED Andreas, Es Kopi Saga/Saga Premiyum/Magnosiyum Es-only pada data
+publikasi4/version63, menu Hot lain tetap. Source test/docs74707aa pushed,
+binary4c6b9cb unchanged; produk lain dipertahankan. Local7PASS/quote production/
+live e-menu1280/768/390 PASS, tanpa transaksi/stok/print. Nota/printer/harga tetap,
+UAT Chromebook OPEN. Dokumen SagaOPS dan master/portfolio/root/decision/gaps/sync
+disinkronkan dengan provenance publikasi data, bukan rilis binary baru.
+
 ## 2026-10-23 - SagaPOS koreksi kategori dan pulihkan Soda
 
 CONFIRMED Andreas, data publikasi3/version61 aktif: empat bekas Mocktail aktif

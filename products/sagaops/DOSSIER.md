@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-23 - Suhu tiga signature milk coffee dibatasi Es
+
+CONFIRMED Es Kopi Saga/Saga Premiyum/Magnosiyum tidak bisa Hot, permintaan
+Andreas. API Owner workspace membatasi scope opsi temperature/hot ke produk
+existing selain tiga tersebut; iced, required/min/max dan modifier lain tetap.
+Satu option update dan satu publish, version61->63/publication4, tanpa draft
+lain. Produk baru memerlukan assignment opsi suhu yang sesuai melalui authoring
+existing. Tidak ada exception kode atau Hot dinonaktifkan global.
+Harga/foto/varian produk lain, gula/addon, pricing/promo/ordering, nota/printer/
+checker/QRIS read-back unchanged. Production quote tanpa checkout:3Hot ditolak,
+3Es diterima, Cafe Latte Es/Hot diterima. Local7PASS termasuk persist/restart;
+live e-menu1280/768/390 menerima Es-only dan Caramel tetap Panas. Source74707aa
+test/docs pushed, binary4c6b9cb unchanged. Soda6/22produk, Bagel4 arsip tetap.
+Tidak ada transaksi/stok/cetakan. UAT Chromebook OPEN; refresh online saat idle,
+jangan hapus ledger/browser atau melanjutkan keranjang Hot lama tanpa tinjau ulang.
+
 ## 2026-10-23 - Koreksi kategori Soda dan pemulihan empat menu
 
 CONFIRMED permintaan terbaru Andreas menggantikan keputusan menyembunyikan

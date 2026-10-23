@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-23 - Tiga kopi khas hanya tersedia dingin
+
+CONFIRMED / PRODUCTION_ACTIVATED data publikasi4/version63, atas permintaan
+Andreas. Es Kopi Saga, Saga Premiyum dan Magnosiyum hanya memiliki pilihan Es;
+Hot/Panas tidak ditawarkan dan pilihan Hot lama ditolak saat quote server.
+Menu lain tetap mendapat Hot sesuai konfigurasi sebelumnya. Harga/foto/gula/
+extra-shot/nota/printer/QRIS tetap; Soda6/22produk dan bakery tersembunyi tetap.
+Source test/docs74707aa pushed, runtime4c6b9cb tidak diganti. Local7PASS,
+read-only production quote3Hot ditolak/3Es diterima/Cafe Latte Hot diterima,
+live e-menu1280/768/390 PASS, tanpa pesanan/pembayaran/stok/TEST cetak.
+Kiosk/Kasir/e-menu memakai publikasi sama; UAT Chromebook aktual tetap OPEN.
+
 ## 2026-10-23 - Empat menu dipulihkan ke Soda pada semua katalog
 
 CONFIRMED / PRODUCTION_ACTIVATED data katalog publikasi3/version61. Andreas

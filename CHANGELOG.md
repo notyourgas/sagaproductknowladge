@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-23 - Sinkron pilihan Es-only kopi khas SagaPOS
+
+CONFIRMED dari Andreas dan publication4/version63 production-activated:
+Es Kopi Saga/Saga Premiyum/Magnosiyum hanya Es, Hot menu lain tetap. Source
+test/docs74707aa pushed, runtime4c6b9cb unchanged. Local7PASS, production quote
+dan live e-menu1280/768/390 PASS; tanpa transaksi/stok/print. Nota/printer/harga/
+foto tetap, UAT Chromebook OPEN. File: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master,
+portfolio, DECISIONS/GAPS/SYNC_STATUS dan root; main HEAD. Baseline74dd800 dan
+pekerjaan/release independen produk lain dipertahankan.
+
 ## 2026-10-23 - Sinkron koreksi kategori Soda SagaPOS
 
 CONFIRMED sumber Andreas dan production read-back: empat bekas Mocktail
