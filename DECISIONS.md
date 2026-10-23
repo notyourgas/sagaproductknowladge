@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-283 - Invitation Kiosk dan otorisasi PIN tanpa ID
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 23 Oktober 2026 |
+| Klasifikasi | CONFIRMED |
+| Topik | Kiosk satu perangkat dan input sentuh |
+| Keputusan | Andreas meminta Invitation pada pembayaran Kiosk, otorisasi tunai/QRIS cukup PIN tanpa ID, kode awal untuk penyiapan, serta keyboard layar. |
+| Alasan | Mempermudah operasional perangkat sentuh dan kebutuhan acara undangan. |
+| Alternatif | Tetap mengharuskan ID staf atau hanya menyediakan Invitation di Kasir, tidak dipakai. |
+| Dampak | PIN unik mengikat staf/outlet dan izin kas; kode awal wajib rotasi dengan password akun sekali, tidak boleh operasional termasuk legacy. Bukti dana QRIS/nominal tetap, tanpa sesi Owner di Kiosk. Keyboard terbatas input SagaPOS. |
+| Pemberi keputusan | Andreas |
+| Status | PRODUCTION_ACTIVATED source4c6b9cb; UAT transaksi sah/Chromebook/fisik versi baru OPEN, bukan BUSINESS_READY. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
+
 ## DEC-282 - Prioritaskan Invitation dua minuman SagaPOS
 
 | Field | Nilai |

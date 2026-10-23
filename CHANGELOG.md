@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-23 - Sinkron deploy Kiosk Invitation, PIN-only dan keyboard
+
+CONFIRMED berdasarkan permintaan Andreas dan source/runtime terverifikasi.
+`4c6b9cbeb70638e5eca11fc9a21c3cd89a11eb18` production-activated/rollback38e35f4:
+Invitation Kiosk disetujui PIN staf, otorisasi tunai/QRIS tanpa ID, keyboard pada
+input SagaPOS. PIN awal wajib rotasi dengan password akun sekali, bukan untuk
+operasional; bukti pembayaran dan identitas staf tidak dihapus. Linux final
+275PASS/0FAIL/3skip lama/278cases, paket/recovery/Owner/quote read-only PASS.
+Production POS berubah; nota/printer/checker/QRIS dan release produk lain tetap.
+File: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, portfolio, DECISIONS, GAPS,
+SYNC_STATUS dan root changelog. Knowledge main HEAD. UAT sah/fisik Chromebook
+masih OPEN, bukan BUSINESS_READY; next action satu pesanan undangan sah tanpa
+bayar/cetak ulang buta. Tidak memuat secret/PII atau bukti privat.
+
 ## 2026-10-23 - Login Saga Member lebih ringkas; tervalidasi lokal
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, berdasarkan permintaan Andreas untuk merapikan login, mengurangi teks dan menambahkan logo Google.

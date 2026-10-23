@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-23 - Kiosk Invitation dan PIN tanpa ID tersinkron
+
+CONFIRMED / accepted untuk source4c6b9cb production-activated, rollback38e35f4.
+Sumber: Andreas, Linux39903223387 SUCCESS5m51s, immutable package, recovery,
+monitor, Owner dan quote production read-only.275PASS/0FAIL/3skip fixture Member
+lama,278cases. Kiosk Invitation memerlukan PIN staf, tunai/QRIS tanpa ID tetapi
+tetap memeriksa dana, serta keyboard input SagaPOS. Kode awal hanya setup dengan
+password akun sekali, bukan pembayaran. Nota/printer/checker/QRIS unchanged.
+UAT real Chromebook/transaksi sah/fisik versi baru OPEN; bukan BUSINESS_READY.
+Main HEAD, tanpa transaksi palsu atau data restricted. Perubahan SagaBook dan
+Saga Platform pada baseline2e3c852 dipertahankan.
+
 ## 2026-10-23 - Login Saga Member lebih ringkas; tervalidasi lokal
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, berdasarkan permintaan Andreas untuk merapikan login, mengurangi teks dan menambahkan logo Google.

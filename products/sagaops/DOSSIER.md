@@ -1,5 +1,37 @@
 # SagaOPS Dossier
 
+## 2026-10-23 - Pembayaran Kiosk dengan Invitation dan PIN staf
+
+CONFIRMED source4c6b9cb production-activated, rollback38e35f4. Alur customer:
+pilih menu, review pembayaran, pilih Invitation bila membawa undangan, lalu
+staf memeriksa dan menyetujui lewat PIN. Preview bukan hak checkout. Kalkulasi
+shared dengan Kasir: minimal dua gelas, tepat dua unit termurah gratis, makanan
+tidak gratis, tidak stacking. Jika total nol, metode none tanpa uang masuk;
+jika masih berbayar, tunai/QRIS tetap pending sampai dikonfirmasi sesuai existing.
+
+ID akun di dialog pembayaran dihapus. PIN menyelesaikan tepat satu identitas
+aktif dalam outlet; actor/credential version/PIN version dan izin kas diperiksa
+ulang pada eksekusi. PIN duplikat legacy tidak dipilih acak. Owner tetap mengelola
+akun/reset, kode awal wajib dirotasi dan tidak boleh dipakai operasional;
+rotasinya memerlukan password akun sekali, termasuk metadata legacy. Kode awal
+tidak dapat menghapus penghitung percobaan password gagal. Masa penyiapan24jam,
+penguncian15menit dan live revocation dipertahankan; PIN pribadi lain tidak direset.
+Legacy client login+PIN tetap kompatibel tanpa melemahkan guard kode awal.
+
+Keyboard layar pada input mendukung angka, teks, simbol, spasi, hapus, kolom
+berikut dan selesai. Dialog PIN tetap di atas keyboard pada desktop/mobile;
+konfirmasi dapat diklik saat keyboard terbuka tanpa perpindahan tengah sentuhan.
+Selesai tidak mengirim formulir/pembayaran. Hanya preferensi on/off disimpan,
+bukan isi input/PIN/password; fitur dibatasi halaman SagaPOS, bukan Chrome/OS.
+
+Final Linux39903223387/275PASS/0FAIL/3skip fixture Member lama,278cases. Native
+PostgreSQL18, HTTPS-host browser, actual nginx, restart/lost ACK/concurrency,
+customer-checker/cut, PIN/CSRF/isolation dan guard offline termasuk. Cache196,
+static/typecheck/37migrations/package/recovery PASS. Owner dan quote production
+read-only serta konfigurasi nota/printer/checker/QRIS unchanged; tidak ada
+transaksi/TEST fisik palsu. UAT actual Chromebook dan pesanan undangan sah OPEN.
+Per-person redemption/voucher umum ditunda; bukan BUSINESS_READY seluruh produk.
+
 ## 2026-10-23 - Alur Invitation sementara untuk acara
 
 CONFIRMED atas permintaan Andreas; source38e35f4 production-activated dengan

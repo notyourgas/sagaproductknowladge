@@ -1,5 +1,19 @@
 # SagaOPS Changelog
 
+## 2026-10-23 - Deploy Invitation Kiosk dan PIN tanpa ID
+
+CONFIRMED, permintaan Andreas: perluas Invitation Kasir ke Kiosk, sederhanakan
+otorisasi tunai/QRIS menjadi PIN, serta sediakan keyboard layar. Source4c6b9cb
+aktif/rollback38e35f4, schema37/GATEWAY tetap. Preview Invitation tidak memberi
+hak checkout tanpa staf; dua unit minuman termurah gratis, sisa tetap berbayar.
+Identitas/izin/lockout PIN dipertahankan; kode awal wajib diganti dengan password
+akun sekali dan tidak boleh operasional, termasuk legacy. Keyboard pada input
+berfungsi untuk angka/huruf/simbol dan dialog, tidak mengirim pembayaran otomatis.
+Linux39903223387 SUCCESS5m51s/275PASS/0FAIL/3skip lama; paket/backup/restore/
+recovery/Owner/quote read-only PASS. Nota/printer/checker/QRIS unchanged; tidak ada
+penjualan palsu atau TEST fisik. UAT Chromebook/nota sah dan single-use invitation
+tetap OPEN. Sinkron PRODUCT/DOSSIER, master, portfolio, decision, gaps, sync dan root.
+
 ## 2026-10-23 - Deploy Invitation dua minuman termurah
 
 CONFIRMED, sumber permintaan Andreas untuk acara; sebelum: belum ada tombol

@@ -1,5 +1,31 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-23 - Invitation Kiosk, PIN tanpa ID dan keyboard layar aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, atas permintaan Andreas.
+Source `4c6b9cbeb70638e5eca11fc9a21c3cd89a11eb18` aktif, rollback38e35f4;
+schema37/GATEWAY tetap. Kasir Invitation dan perbaikan Member sebelumnya tetap.
+
+Kiosk kini menampilkan preview Invitation pada pembayaran; checkout benefit
+wajib PIN staf terverifikasi, bukan hak yang dikirim pelanggan. Minimal dua gelas,
+dua unit minuman termurah gratis; tambahan/makanan dibayar biasa. Total nol
+selesai tanpa penerimaan uang fiktif; sisa tunai/QRIS tetap menunggu verifikasi.
+Otorisasi tunai/QRIS Kiosk cukup PIN tanpa ID, dengan actor/outlet dan hak kas
+tetap diperiksa. Nominal tunai dan bukti dana/referensi merchant tidak dihapus.
+
+PIN penyiapan hanya melalui reset Owner, wajib diganti dengan password akun
+sekali; kode awal tidak boleh dipakai bertransaksi walau metadata lama menyebut
+sudah diganti. PIN pribadi harus unik per outlet, duplikat lama ditolak aman;
+lockout persisten tetap. PIN pribadi lain tidak direset oleh deployment.
+Keyboard angka/huruf/simbol tersedia melalui tombol pada input di Kiosk, Kasir,
+dashboard dan layanan printer; bukan keyboard untuk seluruh situs Chrome.
+
+Linux39903223387 SUCCESS5m51s:275PASS/0FAIL/3skip fixture Member existing;
+paket immutable, backup/disposable restore, recovery dan Owner/quote read-only
+PASS. Tidak ada penjualan/pembayaran/TEST fisik palsu. Konfigurasi nota/printer/
+checker/QRIS tetap. UAT Chromebook/transaksi sah/nota fisik versi baru OPEN,
+bukan BUSINESS_READY. Undangan tetap diperiksa staf; belum single-use per orang.
+
 ## 2026-10-23 - Invitation dua minuman aktif di Kasir
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED berdasarkan permintaan

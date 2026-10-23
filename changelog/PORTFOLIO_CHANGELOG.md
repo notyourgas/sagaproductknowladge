@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-23 - SagaPOS perluas Invitation ke Kiosk
+
+CONFIRMED, Andreas meminta Invitation Kiosk/PIN tanpa ID/keyboard layar. Source
+4c6b9cb production-activated, rollback38e35f4; produk lain dipertahankan. Preview
+dua minuman gratis memerlukan PIN staf saat checkout; pembayaran sisa tetap
+terverifikasi. PIN awal hanya setup dengan password akun sekali, bukan operasional;
+keyboard terbatas halaman SagaPOS. Linux275PASS/0FAIL/3skip lama/278cases,
+paket/recovery/Owner dan quote read-only PASS. Nota/printer/checker/QRIS unchanged,
+tanpa transaksi/TEST fisik palsu. UAT Chromebook/nota sah OPEN, bukan BUSINESS_READY.
+Dokumen produk SagaOPS, master, decision, gaps, sync dan root changelog diperbarui.
+
 ## 2026-10-23 - Login Saga Member lebih ringkas; tervalidasi lokal
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, berdasarkan permintaan Andreas untuk merapikan login, mengurangi teks dan menambahkan logo Google.

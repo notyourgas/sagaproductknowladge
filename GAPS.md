@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-23 - Kiosk Invitation deployed; penerimaan perangkat tetap OPEN
+
+CONFIRMED source4c6b9cb active/rollback38e35f4, Linux/recovery/Owner dan quote
+read-only PASS tanpa penjualan palsu. Andreas/staf melakukan satu pesanan
+undangan sah di Chromebook untuk menerima keyboard/PIN/customer-checker serta
+jarak/cut versi baru. Jangan membuat penjualan fiktif atau mengulang pembayaran
+yang statusnya belum pasti. Template/config printer tidak diubah.
+PIN awal tidak boleh bertransaksi; Owner menyiapkan per akun, lalu pemilik akun
+mengganti dengan password akun sekali. PIN pribadi harus unik; duplikat legacy
+memerlukan reset terarah Owner, bukan memilih actor acak. Keyboard bukan OS/global
+Chrome. Undangan masih diperiksa staf, belum single-use per orang; voucher umum
+tetap ditunda. BUSINESS_READY=false; HR/mobile independen harus menjaga baseline
+4c6b9cb dan tidak mengembalikan source lama yang kini rollback.
+
 ## 2026-10-23 - Invitation deployed; UAT acara dan kontrol undangan masih manual
 
 CONFIRMED source38e35f4 production-activated/rollback188fcc7. Linux dan quote

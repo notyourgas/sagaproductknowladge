@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-23 - SagaPOS Kiosk Invitation, PIN-only dan touch keyboard
+
+CONFIRMED / PRODUCTION_ACTIVATED source4c6b9cb, rollback38e35f4. Atas permintaan
+Andreas, Kiosk mendapat preview dua minuman termurah gratis; checkout wajib PIN
+staf. Sisa tunai/QRIS tetap diverifikasi, total nol tanpa uang masuk fiktif.
+Dialog tunai/QRIS tidak lagi meminta ID staf; PIN unik mengikat actor/outlet.
+Kode awal hanya untuk setup/reset Owner, wajib dirotasi dengan password akun
+sekali dan tidak boleh operasional, termasuk legacy; PIN pribadi lain tetap.
+Keyboard angka/huruf/simbol melalui tombol input pada halaman SagaPOS, bukan
+global Chrome. Linux final275PASS/0FAIL/3skip lama,278cases; paket/recovery/Owner
+dan quote production read-only PASS. Cache196, nota/printer/checker/QRIS unchanged.
+Tanpa penjualan/TEST fisik palsu; UAT Chromebook/transaksi sah/fisik versi baru
+OPEN. Staf memeriksa undangan, belum single-use per orang; bukan BUSINESS_READY.
+
 ## 2026-10-23 - Login Saga Member lebih ringkas; tervalidasi lokal
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, berdasarkan permintaan Andreas untuk merapikan login, mengurangi teks dan menambahkan logo Google.
