@@ -1,5 +1,15 @@
 # Saga Platform Changelog
 
+## 2026-10-23 - Login Saga Member lebih ringkas; tervalidasi lokal
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, berdasarkan permintaan Andreas untuk merapikan login, mengurangi teks dan menambahkan logo Google.
+
+Judul dan ilustrasi lebih ringkas; Google tampil pertama saat aktif, memakai logo resmi yang di-host bersama aplikasi dan tombol putih. Form kode email tetap mengikuti flag runtime. Penjelasan akun dan privasi tersedia melalui “Akun & privasi”. Fokus awal tidak membuka keyboard email saat Google tersedia; state busy/error dan pembesaran teks tetap didukung. Provider, backend, pencatatan consent dan data tidak diubah.
+
+Source [38101d42fabd51745dc9a65aac7c971a0882c193](https://github.com/notyourgas/saga-member/commit/38101d42fabd51745dc9a65aac7c971a0882c193), branch `codex/member-login-ui-20261023`. Static check PASS, unit 637/637 PASS, serta 16 kasus browser pada lebar 320/375/390/430/1440px dan teks 100%/200% PASS: logo, aksesibilitas, overflow, provider gates dan viewport pendek. Ini bukti UI/fixture; autentikasi Google/email produksi belum divalidasi untuk kandidat.
+
+Production tidak berubah: pemeriksaan read-only 23 Oktober masih menunjukkan frontend `eb96eb0327e3d77808ece2d77ae48d0e7739b631`, release `20261021T092428Z-c423884-r0u`. Deployment kandidat dan authenticated UAT masih OPEN; milestone ini tidak mengubah BUSINESS_READY. [Catatan source](https://github.com/notyourgas/saga-member/blob/38101d42fabd51745dc9a65aac7c971a0882c193/docs/login-ui-20261023.md).
+
 ## 2026-10-21 - Saga Member Reward tidak lagi freeze saat dibuka
 
 CONFIRMED berdasarkan instruksi deploy Andreas dan pemeriksaan runtime serta
