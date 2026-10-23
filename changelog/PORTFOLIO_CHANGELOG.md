@@ -1,5 +1,32 @@
 # Portfolio Changelog
 
+## 2026-10-23 - SagaBook Invitation (Free), implementasi belum deploy
+
+CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
+Permintaan Andreas: sesi foto dan tambahan dapat gratis 100% melalui metode
+**Invitation (Free)** pada Manual Booking/OTS dan Tambah Add-on Saat Sesi.
+Source `88e280a14ae4d20e0d005b61a1e6353b03195917`, branch
+`codex/sagabook-invitation-free`, baseline `8f9731a8babf123ea059fcb2b2e553f35118e3cb`.
+
+Invitation sesi menggratiskan paket dan add-on awal, total Rp0 dan sesi
+terkonfirmasi tanpa DP/tagihan. Add-on tertentu dapat dipilih gratis pada
+booking berbayar, atau ditambahkan gratis saat sesi. Harga katalog, kuantitas,
+snapshot dan audit tetap disimpan; tambahan berbayar selanjutnya tetap masuk
+metode penerimaannya sendiri. Item gratis tidak menghasilkan penerimaan
+finance/ledger, payment session atau baris transaksi pembayaran invitation.
+Pilihan tersedia untuk admin sesuai hak akses existing, tanpa opsi gratis di
+checkout publik. Tidak ada dependency atau migration baru.
+
+Validasi: 47 feature tests / 452 assertions, TypeScript UIUX, build dan dua
+skenario browser desktop/mobile PASS. Mencakup booking manual/OTS, retry,
+nominal server Rp0, item gratis/berbayar campuran, laporan dan read-back.
+Production tidak diubah oleh task ini; runtime snapshot sebelumnya tidak
+diverifikasi ulang. Authenticated production UAT dan deployment belum dilakukan;
+BUSINESS_READY tidak ditetapkan. Next action: review exact candidate dan proses
+rilis terotorisasi. Dokumen terdampak: PRODUCT/DOSSIER/CHANGELOG SagaBook,
+master knowledge, portfolio/root changelog dan SYNC_STATUS.
+[Kontrak dan validasi source](https://github.com/notyourgas/sagabook/blob/88e280a14ae4d20e0d005b61a1e6353b03195917/docs/features/invitation-free-20261023.md).
+
 ## 2026-10-21 - Saga Member Reward tidak lagi freeze saat dibuka
 
 CONFIRMED berdasarkan instruksi deploy Andreas dan pemeriksaan runtime serta
