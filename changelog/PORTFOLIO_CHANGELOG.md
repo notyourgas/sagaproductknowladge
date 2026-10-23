@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-23 - SagaPOS memperbarui foto dan assortment katalog
+
+CONFIRMED permintaan Andreas: lima ilustrasi AI kopi, arsip sementara Mocktail
+dan Bagel sampai konfirmasi. Publikasi data2/version52 production-activated,
+asset592ef62 pushed, binary4c6b9cb unchanged.18 produk tampil, harga/varian dan
+nota/printer/QRIS tetap. Read-back dan preview PASS; UAT Chromebook/browser
+handoff OPEN. Tanpa penjualan atau stok palsu. Dokumen SagaOPS dan lintas produk
+disinkronkan; release independen HR/Member/Platform tidak ditimpa.
+
 ## 2026-10-23 - Staff Admin dan absensi terpisah pada HR bersama
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.

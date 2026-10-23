@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-285 - Foto kopi AI dan arsip sementara menu belum tersedia
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 23 Oktober 2026 |
+| Klasifikasi | CONFIRMED |
+| Topik | Katalog Kopi Saga untuk Kiosk/Kasir |
+| Keputusan | Andreas meminta Magnosiyum memakai gambar kopi susu, empat latte ilustrasi AI, dan Mocktail/bakery disembunyikan sampai konfirmasi berikutnya. |
+| Alasan | Menghindari gambar taro yang keliru dan pemesanan menu belum tersedia. |
+| Alternatif | Menghapus produk atau mengubah harga/resep, tidak dipakai. |
+| Dampak | Lima gambar, delapan produk dan dua kategori arsip yang bisa dipulihkan; katalog bersama18produk. Nota/printer tetap. |
+| Pemberi keputusan | Andreas |
+| Status | Publikasi data2/version52 aktif; asset592ef62 pushed, runtime4c6b9cb unchanged; UAT Chromebook OPEN. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
+
 ## DEC-284 - HR bersama dengan kategori Staff Admin terpisah
 
 | Field | Nilai |

@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-23 - Media kopi AI dan assortment sementara
+
+CONFIRMED, permintaan Andreas diterapkan melalui API Owner katalog existing,
+optimistic version dan satu publikasi2/version52; tidak ada draft lain yang
+ikut terbit. Magnosiyum kini kopi susu, bukan taro; empat latte mendapat gambar
+AI terpisah dengan gelas konsisten. Built-in image_gen, full-frame WebP512x768,
+alt text mengidentifikasi ilustrasi AI. Manifest checksum dan test berada pada
+source592ef62; runtime4c6b9cb tidak diganti. Harga/resep/varian/promo tidak diubah.
+Mocktail4 dan Bagel4 diarsipkan bersama kategori kosong; riwayat tetap, bukan
+penghapusan atau mutasi stok. Restore kategori lalu produk yang disetujui dan
+publikasikan hanya setelah Andreas mengonfirmasi. Kiosk dan Kasir berbagi katalog.
+Read-back production dan preview renderer1280/768/390 PASS; browser handoff
+otomatis belum diterima, UAT perangkat aktual OPEN. Tidak ada transaksi/print
+palsu; nota/printer/checker/QRIS tetap. Snapshot offline lama tidak dihapus paksa;
+perbarui online di luar pembayaran/sesi aktif sebelum menyiapkan snapshot baru.
+
 ## 2026-10-23 - Staff Admin dan absensi terpisah pada HR bersama
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.

@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-23 - Terbitkan gambar kopi dan sembunyikan menu belum tersedia
+
+CONFIRMED Andreas: Magnosiyum kopi susu, empat latte memakai ilustrasi AI;
+Mocktail dan bakery sementara tidak tampil sampai dikonfirmasi lagi. Data
+katalog publikasi2/version52 aktif, lima gambar/eight produk arsip/dua kategori
+arsip;18 produk tampil. Source asset592ef62 pushed, runtime4c6b9cb unchanged.
+Test media/archive serta read-back hash/harga/varian/nota/printer PASS, preview
+1280/768/390 PASS. UAT Chromebook dan browser handoff aktual OPEN. Tidak ada
+penjualan/pembayaran/stok/cetakan palsu. Produk dapat dipulihkan, tidak dihapus.
+PRODUCT/DOSSIER, master, portfolio, root changelog, decision/gaps/sync diperbarui.
+
 ## 2026-10-23 - Staff Admin dan absensi terpisah pada HR bersama
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.

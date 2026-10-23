@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-23 - Menu kopi aktif; penerimaan Chromebook masih terbuka
+
+CONFIRMED data katalog2/version52 aktif, lima gambar AI dan18 produk tampil.
+Preview memakai renderer existing dan data published, bukan authenticated Kiosk
+UAT: browser otomatis baru belum mencapai layar mulai. Owner read-back/harga/
+varian/nota/printer PASS; tanpa melemahkan auth atau membuat transaksi. Andreas
+memeriksa Chromebook saat idle dan online; jangan reload pembayaran aktif atau
+menghapus data offline. Mocktail/Bagel hanya dipulihkan atas konfirmasi Andreas.
+Ilustrasi AI belum menggantikan kebutuhan foto aktual; binary tetap4c6b9cb.
+
 ## 2026-10-23 - Aktivasi Staff Admin masih OPEN
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.

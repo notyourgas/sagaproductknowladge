@@ -1,5 +1,21 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-23 - Foto kopi dan pilihan menu sementara diperbarui
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk data katalog, publikasi2/version52.
+Atas permintaan Andreas, Magnosiyum diganti dari ilustrasi ungu/taro menjadi
+kopi susu. Caramel Latte, Butterscotch Latte, Salted Caramel Latte dan Vanilla
+Latte mendapat ilustrasi AI. Lima gambar512x768 transparan, bukan foto produk asli.
+Empat Mocktail dan empat Bagel beserta kategorinya diarsipkan sementara, tidak
+dihapus, dan hanya dimunculkan kembali setelah konfirmasi Andreas. Katalog bersama
+menerapkan perubahan pada Kiosk dan Kasir:26 menjadi18 produk yang tampil.
+Asset/docs/test source592ef62 pushed; runtime tetap4c6b9cb, bukan deploy binary
+baru. Read-back hash lima gambar, harga/varian serta konfigurasi nota/printer/QRIS
+PASS. Preview renderer asli1280/768/390 PASS; autentikasi Kiosk browser baru dan
+UAT Chromebook tetap OPEN. Tidak membuat pesanan, pembayaran, stok fisik atau
+TEST cetak. Publikasi sebelumnya1 disimpan sebagai acuan rollback yang harus
+ditinjau terhadap perubahan katalog berikutnya. Jangan menghapus data offline.
+
 ## 2026-10-23 - Staff Admin dan absensi terpisah pada HR bersama
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
