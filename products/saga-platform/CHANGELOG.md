@@ -1,5 +1,15 @@
 # Saga Platform Changelog
 
+## 2026-10-23 - Login Saga Member aktif di production
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, berdasarkan otorisasi deploy Andreas dan terminal runner serta verifikasi publik pada 23 Oktober. Status ini menggantikan belum-deploy pada checkpoint login lokal di bawah.
+
+Frontend [38101d42fabd51745dc9a65aac7c971a0882c193](https://github.com/notyourgas/saga-member/commit/38101d42fabd51745dc9a65aac7c971a0882c193) aktif pada release `20261023T051613Z-c423884-r0u`. Backend tetap `c4238845274e867d17e852f9012c67369c451861`; contracts tetap `3279a02b6d06d3532190488f6abbcc59c312d120`. Login memakai logo Google resmi, judul/ilustrasi lebih ringkas, pilihan email yang rapi dan disclosure “Akun & privasi”. Fokus awal tetap pada judul ketika Google tersedia. Konfigurasi provider dan fitur tetap; tidak ada perubahan data atau migrasi.
+
+Runner [ec4fa263e9f3861e0c11fa97993158c262be4c2c](https://github.com/notyourgas/saga-customer-platform/commit/ec4fa263e9f3861e0c11fa97993158c262be4c2c) mengikat artifact SHA-256 `52ab69297833add901413d537dde72d379b53d82196dc12a24638718f584152a`. Owner efektif, native PostgreSQL 18 recovery dua artifact dengan 15 migrasi tetap, backup terenkripsi/disposable restore produksi, switch, rollback, pemasangan ulang dan monitor PASS. Rollback terverifikasi ke `20261021T092428Z-c423884-r0u`. Maintenance switch final sekitar 2 detik. Frontend 637 unit test dan 16 kasus UI lokal PASS; runner 158 tes Python dan 20 tes Node PASS.
+
+Empat aset HTTPS cocok persis dengan source, service worker terikat release baru, dan halaman publik mobile 320/390px serta desktop 1440px menampilkan logo dan kedua tombol masuk tanpa horizontal overflow. Disclosure dapat dibuka/ditutup. Verifikasi ini bukan login Google/OTP akun nyata; authenticated Member UAT belum dijalankan untuk rilis ini dan BUSINESS_READY tidak disimpulkan. Hosted CI NOT_RUN; gate lokal/native digunakan. Tidak ada deploy produk tetangga atau aktivasi provider/transaksi baru.
+
 ## 2026-10-23 - Login Saga Member lebih ringkas; tervalidasi lokal
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, berdasarkan permintaan Andreas untuk merapikan login, mengurangi teks dan menambahkan logo Google.
