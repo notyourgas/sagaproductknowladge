@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-23 - Sinkron koreksi kategori Soda SagaPOS
+
+CONFIRMED sumber Andreas dan production read-back: empat bekas Mocktail
+dipindah/dipulihkan ke Soda, katalog bersama Kiosk/Kasir/e-menu kini22produk,
+Soda6, Bagel4 tetap arsip. Publikasi3/version61 aktif, source ae4dda8 test/docs
+pushed/runtime4c6b9cb unchanged. Local2PASS/live e-menu1280/768/390/detail PASS;
+nota/printer/harga tetap, stok fisik tidak berubah, tanpa transaksi. UAT
+Chromebook OPEN, bukan BUSINESS_READY. File: SagaOPS PRODUCT/DOSSIER/CHANGELOG,
+master, portfolio, DECISIONS/GAPS/SYNC_STATUS dan root changelog; main HEAD.
+Baseline4af245e dan release/knowledge produk lain dipertahankan.
+
 ## 2026-10-23 - Kontak WhatsApp Saga Studio dan Kopi Saga diperbarui
 
 `CONFIRMED`, instruksi Andreas 23 Oktober 2026: kontak bisnis publik kedua

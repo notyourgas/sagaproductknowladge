@@ -1,5 +1,18 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-23 - Empat menu dipulihkan ke Soda pada semua katalog
+
+CONFIRMED / PRODUCTION_ACTIVATED data katalog publikasi3/version61. Andreas
+mengoreksi kategori Brr Patabim, Tralalelow, Si Biyu dan Oyen Sunkist: dipindah
+dari Mocktail ke Soda dan dipulihkan. Soda kini6produk, keseluruhan22produk
+tampil di katalog bersama Kiosk/Kasir dan e-menu https://sagapos.site/menu
+yang ditautkan kopisaga.site. Mocktail kosong tetap arsip; Bagel4/bakery tetap
+tersembunyi sampai konfirmasi terpisah. ID/harga/foto/varian/nota/printer/QRIS
+tidak berubah, stok fisik tidak berubah. Source test/docs ae4dda8 pushed; runtime
+4c6b9cb tidak diganti. Local2PASS, read-back Owner/public dan live e-menu
+1280/768/390 serta detail kategori PASS, tanpa transaksi/pembayaran/TEST cetak.
+UAT Chromebook aktual tetap OPEN; tidak mengklaim BUSINESS_READY baru.
+
 ## 2026-10-23 - Foto kopi dan pilihan menu sementara diperbarui
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk data katalog, publikasi2/version52.

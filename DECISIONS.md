@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-287 - Pulihkan empat menu ke Soda, bakery tetap tersembunyi
+
+- Tanggal: 23 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: Brr Patabim, Tralalelow, Si Biyu dan Oyen Sunkist dipindah dari
+  Mocktail ke Soda, dimunculkan kembali di Kiosk/Kasir serta e-menu website.
+- Alasan: koreksi kategori, bukan menu yang belum tersedia.
+- Alternatif: tetap menyembunyikan atau menduplikasi produk, tidak dipakai.
+- Dampak: publikasi3/version61 aktif,6Soda/22produk; ID/harga/foto tetap,
+  Bagel4 tetap arsip. Menggantikan bagian Mocktail DEC-285, bukan bagian bakery.
+- Status: data PRODUCTION_ACTIVATED, test/docs ae4dda8 pushed, runtime4c6b9cb
+  unchanged; read-back/live e-menu PASS, UAT Chromebook OPEN.
+- Dokumen: [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-286 - Kontak website Saga Studio dan Kopi Saga
 
 - Tanggal: 23 Oktober 2026.

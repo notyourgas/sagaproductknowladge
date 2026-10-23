@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-23 - Koreksi kategori Soda tersinkron
+
+CONFIRMED / accepted untuk publikasi data3/version61 production-activated:
+empat minuman dipulihkan ke Soda, Bagel tetap arsip;22produk/Soda6. Test/docs
+ae4dda8 pushed, runtime4c6b9cb tetap. Local2PASS, Owner/public read-back dan
+live e-menu1280/768/390/detail PASS. Harga/foto/nota/printer unchanged, stok fisik
+tidak berubah, tanpa transaksi. UAT Chromebook OPEN. Main HEAD; pekerjaan
+independen SagaBook/SagaDevs/HR/Platform/Member pada baseline4af245e dipertahankan.
+
 ## 2026-10-23 - Kontak WhatsApp Saga Studio dan Kopi Saga diperbarui
 
 `CONFIRMED`, instruksi Andreas 23 Oktober 2026: kontak bisnis publik kedua

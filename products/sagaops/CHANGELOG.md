@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-23 - Pulihkan empat menu pada kategori Soda
+
+CONFIRMED Andreas: empat bekas Mocktail dipindah/dipulihkan ke Soda untuk
+Kiosk/Kasir/e-menu, Bagel tetap tersembunyi. Publikasi3/version61 aktif, Soda6,
+produk tampil22. Source test/docs ae4dda8 pushed, runtime4c6b9cb unchanged.
+Harga/foto/varian/printer/nota tetap; stok fisik tidak berubah. Local2PASS dan
+live e-menu1280/768/390/detail PASS, tanpa transaksi. UAT Chromebook OPEN.
+Sinkron PRODUCT/DOSSIER, master/portfolio/root, DECISIONS/GAPS/SYNC_STATUS.
+
 ## 2026-10-23 - Terbitkan gambar kopi dan sembunyikan menu belum tersedia
 
 CONFIRMED Andreas: Magnosiyum kopi susu, empat latte memakai ilustrasi AI;

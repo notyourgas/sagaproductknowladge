@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-23 - Empat bekas Mocktail sudah dipulihkan sebagai Soda
+
+CONFIRMED: Andreas telah memberi konfirmasi khusus untuk empat minuman;
+keputusan arsip sebelumnya tidak lagi berlaku pada empat produk tersebut.
+Publikasi3/version61, Kiosk/Kasir/e-menu22produk/Soda6; Bagel4 tetap memerlukan
+konfirmasi terpisah. Read-back dan browser e-menu PASS; tidak ada transaksi atau
+perubahan printer/stok. UAT Chromebook aktual dan refresh snapshot offline lama
+tetap OPEN; lakukan online saat idle, jangan hapus data/pembayaran. Binary4c6b9cb
+tidak diganti oleh update data ini, source test/docs ae4dda8 sudah pushed.
+
 ## 2026-10-23 - Pemulihan penolakan QRIS Tokopay, belum deploy
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

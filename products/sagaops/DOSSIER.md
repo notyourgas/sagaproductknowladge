@@ -1,5 +1,20 @@
 # SagaOPS Dossier
 
+## 2026-10-23 - Koreksi kategori Soda dan pemulihan empat menu
+
+CONFIRMED permintaan terbaru Andreas menggantikan keputusan menyembunyikan
+empat Mocktail saja, bukan bakery. Brr Patabim/Tralalelow/Si Biyu/Oyen Sunkist
+dipindah saat masih arsip, lalu dipulihkan melalui API existing sehingga metadata
+arsip dibersihkan. Urutan ditambahkan setelah dua Soda existing, satu publikasi
+3/version61 dari52, tanpa draft lain. Produk22 aktif, Soda6, Bagel4 tetap arsip.
+Website kopisaga.site menautkan sagapos.site/menu; API publik memakai
+SAGAPOS_PUBLISHED_CATALOG yang sama, bukan seed/database menu baru.
+Source ae4dda8 test/docs pushed, binary4c6b9cb unchanged. Test2PASS; read-back
+harga/foto/varian/pricing/promo/ordering/nota/printer/QRIS unchanged; live e-menu
+1280/768/390 dan detail Soda PASS. Tidak mengirim transaksi/TEST fisik. Publikasi2
+adalah acuan rollback setelah memeriksa revisi berikutnya. Kiosk Chromebook UAT
+tetap OPEN; snapshot offline lama jangan dihapus, refresh online saat idle.
+
 ## 2026-10-23 - Media kopi AI dan assortment sementara
 
 CONFIRMED, permintaan Andreas diterapkan melalui API Owner katalog existing,

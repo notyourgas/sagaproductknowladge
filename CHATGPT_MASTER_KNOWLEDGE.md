@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-23 - SagaPOS mengembalikan empat minuman sebagai Soda
+
+CONFIRMED / PRODUCTION_ACTIVATED data publikasi3/version61. Brr Patabim,
+Tralalelow, Si Biyu dan Oyen Sunkist bukan lagi kategori Mocktail; kini aktif
+di Soda bersama dua produk existing.22 produk tampil pada Kiosk/Kasir dan
+e-menu sagapos.site/menu yang memakai publikasi sama. Bagel4 tetap tersembunyi.
+Source ae4dda8 test/docs pushed, runtime4c6b9cb unchanged. Harga/foto/varian/
+nota/printer/QRIS tetap, stok fisik tidak berubah. Read-back dan live e-menu
+1280/768/390/detail PASS, tanpa transaksi. UAT Chromebook masih OPEN.
+
 ## 2026-10-23 - Kontak WhatsApp Saga Studio dan Kopi Saga diperbarui
 
 `CONFIRMED`, instruksi Andreas 23 Oktober 2026: kontak bisnis publik kedua

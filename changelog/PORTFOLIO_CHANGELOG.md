@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-23 - SagaPOS koreksi kategori dan pulihkan Soda
+
+CONFIRMED Andreas, data publikasi3/version61 aktif: empat bekas Mocktail aktif
+di Soda, kini6Soda/22produk pada Kiosk/Kasir/e-menu bersama. Bagel tetap arsip.
+Source test/docs ae4dda8 pushed, runtime4c6b9cb tidak diganti; produk lain tetap.
+Local2PASS/read-back/live e-menu1280/768/390/detail PASS, harga/foto/printer tetap,
+stok fisik tidak berubah dan tanpa transaksi. UAT Chromebook OPEN. Dokumen produk
+SagaOPS dan master/portfolio/root/decision/gaps/sync diperbarui.
+
 ## 2026-10-23 - Kontak WhatsApp Saga Studio dan Kopi Saga diperbarui
 
 `CONFIRMED`, instruksi Andreas 23 Oktober 2026: kontak bisnis publik kedua
