@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-23 - SagaPOS Invitation Kasir production-activated
+
+CONFIRMED, permintaan Andreas untuk acara; source38e35f4 aktif/rollback188fcc7.
+Kasir staf online menggratiskan dua unit minuman termurah per pesanan, tambahan
+dan makanan berbayar, default OFF. Linux final244PASS/0FAIL/3skip lama, paket,
+recovery, Owner dan quote production read-only PASS; tidak ada penjualan palsu.
+Nota/printer/checker/QRIS serta release produk lain dipertahankan. UAT sah/fisik
+versi baru OPEN; staf memeriksa undangan, belum per-person single-use.
+Voucher umum ditunda. Sinkron PRODUCT/DOSSIER/CHANGELOG SagaOPS, master, decision,
+gaps, sync dan root changelog; bukan BUSINESS_READY atau release SagaBook.
+
 ## 2026-10-23 - SagaBook Invitation (Free), implementasi belum deploy
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

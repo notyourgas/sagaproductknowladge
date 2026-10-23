@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-23 - Sinkron Invitation dua minuman SagaPOS
+
+CONFIRMED dari permintaan Andreas serta source/runtime terverifikasi. Release
+`38e35f41733486b4c5d017e02c262bd4a65467f8` production-activated, rollback188fcc7;
+Kasir staf kini memiliki Mode Invitation dua unit minuman termurah gratis per
+pesanan, bukan voucher umum/customer Kiosk. Linux final244PASS/0FAIL/3skip lama,
+paket immutable/recovery/Owner dan quote production read-only PASS. Nota/printer/
+checker/QRIS tidak berubah; transaksi sah dan nota fisik versi baru masih OPEN.
+Staf memeriksa undangan; belum pembatasan sekali per orang, BUSINESS_READY=false.
+File terdampak: produk SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, portfolio,
+DECISIONS, GAPS, SYNC_STATUS dan root changelog. Production POS berubah, Member
+dan produk lain tidak. Knowledge main HEAD; next action UAT sah sebelum acara.
+
 ## 2026-10-23 - SagaBook Invitation (Free), implementasi belum deploy
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-23 - SagaPOS Invitation sudah aktif di Kasir
+
+CONFIRMED / PRODUCTION_ACTIVATED source38e35f4, rollback188fcc7, atas permintaan
+Andreas untuk acara. Tombol staf Mode Invitation per pesanan: minimal dua unit
+minuman, dua termurah gratis, makanan/minuman tambahan berbayar; OFF pada pesanan
+baru. Online saja, tanpa stacking, tidak terbuka di Kiosk publik. Total nol
+dikonfirmasi tanpa uang masuk fiktif; sisa pembayaran tetap diverifikasi existing.
+Linux39895726085/244PASS/0FAIL/3skip fixture Member lama, immutable package,
+recovery dan Owner/quote production read-only PASS. Nota/printer/checker/QRIS
+tidak diubah, Member/produk lain dipertahankan. UAT transaksi sah/fisik versi baru
+OPEN, bukan BUSINESS_READY. Staf memeriksa undangan; belum sekali per orang.
+Voucher umum ditunda. Ini terpisah dari Invitation sesi foto SagaBook.
+
 ## 2026-10-23 - SagaBook Invitation (Free), implementasi belum deploy
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

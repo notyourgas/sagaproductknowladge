@@ -1,5 +1,27 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-23 - Invitation dua minuman aktif di Kasir
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED berdasarkan permintaan
+Andreas untuk acara undangan. Source `38e35f41733486b4c5d017e02c262bd4a65467f8`
+aktif, rollback `188fcc794015f04ca05f50af96cbfde66650cdab`; schema37/GATEWAY
+tetap. Kandidat HR/mobile independen tidak ikut dirilis dan harus menjaga baseline ini.
+
+Kasir staf memiliki tombol **Mode Invitation**, OFF untuk pesanan baru. Minimal
+dua unit minuman; tepat dua unit termurah gratis, termasuk dua gelas menu sama.
+Minuman tambahan dan makanan dibayar biasa. Harga ditentukan server; tidak
+ditumpuk dengan promo/voucher/reward atau diskon tier Member. Total Rp0 memakai
+konfirmasi Invitation tanpa penerimaan uang fiktif; sisa tagihan memakai alur
+pembayaran existing. Kiosk publik tidak dapat mengaktifkan benefit ini. Online wajib.
+
+Linux39895726085 SUCCESS5m28s:244PASS/0FAIL,3skip fixture Member existing;
+static/typecheck, paket immutable dan recovery PASS. Owner dan quote production
+read-only memverifikasi dua/tiga minuman, kuantitas dan harga normal tanpa
+pesanan/pembayaran palsu. Template/printer/checker/QRIS tidak berubah.
+UAT transaksi sah/nota fisik versi baru OPEN; bukan BUSINESS_READY seluruh produk.
+Staf memeriksa undangan secara langsung: belum ada pembatasan sekali per orang.
+Voucher umum ditunda sampai acara selesai.
+
 ## 2026-10-21 - HR/mobile preserves the new active baseline; launch unconfirmed
 
 CONFIRMED candidate6480377a116a03e0d48570e3b68bf7d8802b5a89/checkpoint4177522

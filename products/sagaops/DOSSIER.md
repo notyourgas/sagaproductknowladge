@@ -1,5 +1,30 @@
 # SagaOPS Dossier
 
+## 2026-10-23 - Alur Invitation sementara untuk acara
+
+CONFIRMED atas permintaan Andreas; source38e35f4 production-activated dengan
+rollback188fcc7, mempertahankan Member Points fix dan release produk lain.
+Satu tombol staf Kasir, bukan tombol hadiah customer Kiosk atau sistem voucher umum.
+
+Alur: buka shift seperti biasa, pilih pesanan satu undangan, aktifkan Mode
+Invitation, periksa ringkasan, lalu konfirmasi total Rp0 atau terima sisa tagihan
+melalui pembayaran existing. Staf tetap memeriksa undangan fisik. Minimal dua
+gelas; kalkulasi mengurutkan harga unit server setelah varian/tambahan, membatasi
+dua unit secara global, dan hanya mengalokasikan diskon pada unit terpilih.
+Makanan dikecualikan. Pajak/layanan/pembulatan memakai kebijakan outlet unchanged.
+Mode per pesanan, dipulihkan saat reload, tersimpan pada draft, kembali OFF pada
+pesanan baru/kosong. Invitation tidak didukung offline dan tidak boleh ditumpuk.
+
+Snapshot benefit menyimpan Invitation dan actor; total nol memakai metode none,
+bukan uang masuk fiktif. Idempotensi, persistence, konkurensi, restart dan
+customer-checker/cut diuji sintetis pada Linux final244PASS/0FAIL/3skip lama.
+Kualifikasi berhasil5m28s; paket immutable, encrypted backup/disposable restore,
+host-local candidate/current/candidate recovery dan guarded activation PASS.
+Quote production terautentikasi memverifikasi dua/tiga gelas dan harga normal
+tanpa membuat penjualan. Template/konfigurasi printer/checker/QRIS tetap sama.
+UAT kertas/transaksi sah versi baru belum dilakukan; keberhasilan fixture/spool
+bukan bukti fisik. Per-person redemption, voucher umum dan BUSINESS_READY tetap OPEN.
+
 ## 2026-10-21 - HR/mobile preserves the new active baseline; launch unconfirmed
 
 CONFIRMED candidate6480377a116a03e0d48570e3b68bf7d8802b5a89/checkpoint4177522

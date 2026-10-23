@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-23 - Invitation SagaPOS tersinkron ke rilis aktif
+
+CONFIRMED / accepted untuk source38e35f4 dan production activation, rollback188fcc7.
+Sumber: Andreas, Linux39895726085 SUCCESS, paket/recovery/monitor serta Owner
+dan quote production read-only; tanpa penjualan/pembayaran/TEST fisik palsu.
+Kasir staf online dua unit minuman termurah gratis per pesanan, OFF pada pesanan
+baru; bukan Kiosk publik atau voucher umum. Nota/printer/checker/QRIS unchanged.
+UAT transaksi sah/fisik versi baru dan pembatasan sekali per orang tetap OPEN;
+staf memeriksa undangan. BUSINESS_READY=false, tidak mengubah status HR/mobile
+independen atau produk lain. Sinkron main HEAD, tanpa data restricted.
+
 ## 2026-10-23 - SagaBook Invitation (Free), implementasi belum deploy
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

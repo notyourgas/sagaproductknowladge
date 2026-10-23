@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-282 - Prioritaskan Invitation dua minuman SagaPOS
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 23 Oktober 2026 |
+| Klasifikasi | CONFIRMED |
+| Topik | Benefit sementara untuk acara undangan |
+| Keputusan | Andreas meminta satu tombol Invitation; tepat dua unit minuman termurah gratis, sisanya dibayar. Implementasi sementara ditempatkan pada Kasir staf, default OFF per pesanan, online saja. |
+| Alasan | Kebutuhan acara terdekat lebih mendesak daripada sistem voucher umum. |
+| Alternatif | Voucher dashboard dan redemption umum ditunda sampai acara selesai; tidak membuka hadiah tanpa otorisasi di Kiosk publik. |
+| Dampak | Harga server, tanpa stacking dan tanpa penerimaan uang fiktif untuk total nol; template/printer/checker tetap. Staf memeriksa undangan, belum single-use per orang. |
+| Pemberi keputusan | Andreas |
+| Status | PRODUCTION_ACTIVATED source38e35f4; UAT transaksi sah/fisik versi baru OPEN, bukan BUSINESS_READY. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
+
 ## DEC-281 - Otorisasi mandiri kesiapan dan deploy SagaPOS
 
 | Field | Nilai |

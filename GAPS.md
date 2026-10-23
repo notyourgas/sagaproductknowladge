@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-23 - Invitation deployed; UAT acara dan kontrol undangan masih manual
+
+CONFIRMED source38e35f4 production-activated/rollback188fcc7. Linux dan quote
+production read-only PASS tanpa penjualan palsu; tidak ada TEST fisik versi baru.
+Staf/Andreas perlu memakai satu pesanan undangan sah untuk menerima hasil nota
+customer/checker, jarak dan autocut sebelum acara; layout/config tidak diubah.
+Benefit hanya staf Kasir online, minimal dua gelas, dua termurah gratis per
+pesanan. Belum mengikat identitas atau menolak undangan yang dipakai lagi pada
+pesanan lain: staf memeriksa undangan; voucher umum sesudah acara. Bukan
+BUSINESS_READY seluruh produk. Release Lead HR/mobile independen harus memakai
+baseline aktif38e35f4, bukan mengembalikan baseline188fcc7 yang kini rollback.
+
 ## 2026-10-21 - HR/mobile preserves the new active baseline; launch unconfirmed
 
 CONFIRMED candidate6480377a116a03e0d48570e3b68bf7d8802b5a89/checkpoint4177522

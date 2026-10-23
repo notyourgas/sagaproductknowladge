@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-23 - Deploy Invitation dua minuman termurah
+
+CONFIRMED, sumber permintaan Andreas untuk acara; sebelum: belum ada tombol
+Invitation. Sesudah: Kasir staf online dapat menggratiskan tepat dua unit minuman
+termurah per pesanan, sisanya dibayar, makanan tidak gratis. Mode default OFF,
+tanpa stacking atau uang masuk fiktif untuk total nol; Kiosk publik ditolak.
+Source38e35f4 aktif/rollback188fcc7, schema37/GATEWAY tetap. Linux39895726085
+SUCCESS5m28s/244PASS/0FAIL/3skip fixture Member existing; paket/recovery/Owner dan
+quote production read-only PASS. Tidak ada penjualan atau TEST fisik palsu.
+Nota/printer/checker/QRIS unchanged; UAT sah/fisik versi baru dan pencegahan
+pemakaian ulang per orang OPEN, staf wajib memeriksa undangan. Voucher umum ditunda.
+Dokumen: PRODUCT/DOSSIER, master, portfolio, decisions, gaps, sync dan root changelog.
+
 ## 2026-10-21 - HR/mobile preserves the new active baseline; launch unconfirmed
 
 CONFIRMED candidate6480377a116a03e0d48570e3b68bf7d8802b5a89/checkpoint4177522
