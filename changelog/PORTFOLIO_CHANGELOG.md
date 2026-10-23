@@ -1,5 +1,33 @@
 # Portfolio Changelog
 
+## 2026-10-23 - Pemulihan penolakan QRIS Tokopay, belum deploy
+
+CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
+Source [6c533b25945d6392c468739b7a2fec82e2ef3ad5](https://github.com/notyourgas/sagabook/commit/6c533b25945d6392c468739b7a2fec82e2ef3ad5), branch `codex/sagabook-payment-rejection-20261023`, baseline production `88e280a14ae4d20e0d005b61a1e6353b03195917`.
+
+Sebelumnya penolakan provider ikut terkunci sebagai `creation_unknown`.
+Kini penolakan hanya menjadi gagal jika tidak membawa bukti order/pembayaran
+dan cek referensi asli juga mengembalikan `Data Not Found`; booking tetap
+unpaid dan transfer manual mengikuti validasi/token existing. Error JSON API
+advanced dapat memakai fallback simple sekali dengan referensi yang sama.
+Timeout, lookup tidak pasti dan bukti order tetap terkunci; callback paid sah
+tidak ditimpa. Diagnostik baru hanya menyimpan kode/tahap/status/fingerprint,
+tanpa raw error, credential atau PII. Collection pending yang ditolak ditutup;
+tidak ada kredit settlement/payout. Tanpa dependency atau migration baru.
+
+Validasi: 87 tes / 745 assertions SQLite PASS; ulang native MySQL8.4.9
+23 tes / 186 assertions, fresh migrations dan cleanup disposable PASS.
+Ini bukan uji concurrent-worker nyata, full CI atau authenticated production UAT.
+Kode production dan booking lama tidak diubah; `creation_unknown` existing
+memerlukan rekonsiliasi referensi asli. Akses baca akun provider berhasil,
+tetapi uji order terkontrol tidak menghasilkan QR; alasan provider spesifik
+belum diketahui. Tidak ada pembayaran atau order production tambahan dari
+perbaikan source ini. QRIS production belum dinyatakan pulih; BUSINESS_READY
+belum ditetapkan. Next action: review/rilis kandidat melalui runner SagaBook
+dan selesaikan penolakan merchant/API provider sebelum acceptance checkout.
+[Kontrak perbaikan](https://github.com/notyourgas/sagabook/blob/6c533b25945d6392c468739b7a2fec82e2ef3ad5/docs/fixes/tokopay-order-rejection-20261023.md).
+
+
 ## 2026-10-23 - SagaPOS memperbarui foto dan assortment katalog
 
 CONFIRMED permintaan Andreas: lima ilustrasi AI kopi, arsip sementara Mocktail
