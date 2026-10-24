@@ -2,12 +2,13 @@
 
 ## 2026-10-25 - SagaBook reschedule sesi lewat dengan charge admin
 
-CONFIRMED source39ba815d3b13f8a1752bfb2caacf79eb61e0c09c pada branch
+CONFIRMED source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4 pada branch
 codex/sagabook-admin-late-reschedule-20261025, SOURCE_PUSHED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED. Biaya tetap Rp30.000, pindah jadwal langsung dan
-pembayaran charge paid/unpaid terpisah. Tes fitur14/105assertions, regresi30,
-browser desktop/mobile dan UI existing, build/TypeScript critical PASS;
-diagnostik komponen baseline57 tanpa tambahan. PRODUCT/DOSSIER/CHANGELOG,
+pembayaran charge paid/unpaid terpisah. Baseline production b96e4fdc digabung.
+Tes fitur/Invitation18/155assertions, regresi30/266assertions, empat skenario
+browser desktop/mobile dan UI existing, build/TypeScript UIUX/critical PASS.
+PRODUCT/DOSSIER/CHANGELOG,
 master/portfolio/keputusan/gaps/root changelog tersinkron. Production tidak
 berubah oleh pekerjaan ini; deployment dan UAT production OPEN.
 

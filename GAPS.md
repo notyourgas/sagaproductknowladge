@@ -2,12 +2,12 @@
 
 ## 2026-10-25 - SagaBook reschedule sesi lewat belum di production
 
-Source39ba815d sudah pushed dan tervalidasi lokal untuk reschedule admin
+Source7a575827 sudah pushed dan tervalidasi lokal untuk reschedule admin
 dengan charge Rp30.000 serta paid/unpaid terpisah. Production tidak diubah;
 deployment dan authenticated UAT operator masih OPEN. Pemilik tindak lanjut:
 executor rilis untuk rilis terotorisasi, Andreas/operator untuk UAT nyata.
-57 diagnostik TypeScript komponen sama dengan baseline; build dan pemeriksaan
-critical PASS. Ini tidak menutup blocker provider atau acceptance produk lain.
+Baseline production b96e4fdc telah digabung; build dan TypeScript UIUX/critical
+PASS. Ini tidak menutup blocker provider atau acceptance produk lain.
 
 ## 2026-10-24 - Promo gabungan tersedia; kampanye dan UAT aktual terpisah
 

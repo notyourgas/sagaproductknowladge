@@ -3,7 +3,7 @@
 ## 2026-10-25 - Reschedule admin sesudah waktu sesi
 
 CONFIRMED dari Andreas; source
-[39ba815d3b13f8a1752bfb2caacf79eb61e0c09c](https://github.com/notyourgas/sagabook/commit/39ba815d3b13f8a1752bfb2caacf79eb61e0c09c),
+[7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4](https://github.com/notyourgas/sagabook/commit/7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4),
 SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
 
 Booking Detail > Aksi lainnya > Bantu reschedule: pilih tanggal/jam, periksa
@@ -20,9 +20,10 @@ Transaksi finance/ledger tunggal per reschedule, audit dan versi data mencegah
 duplikasi/tab lama; unpaid dikeluarkan dari pemasukan dan closing yang sudah
 submitted/approved tidak bisa diubah. Kebijakan sebelum sesi tetap existing.
 
-14 tes fitur/105 assertions, 30 regresi backend reschedule, browser baru
-desktop/mobile, regresi UI existing, build dan TypeScript critical PASS.
-57 diagnostik pemeriksaan komponen sama dengan baseline, tanpa error baru.
+Baseline production b96e4fdc digabung, termasuk Invitation dan perbaikan closing.
+18 tes fitur/Invitation dengan 155 assertions, 30 regresi backend reschedule
+dengan 266 assertions, empat skenario browser desktop/mobile dan regresi UI
+existing, build dan TypeScript UIUX/critical PASS.
 Tidak ada migration/dependency baru. Production belum berubah oleh perubahan
 ini; deployment dan authenticated production UAT OPEN. Bukan BUSINESS_READY.
 

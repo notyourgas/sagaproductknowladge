@@ -4,7 +4,7 @@
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
 Sumber: instruksi Andreas 25 Oktober 2026 dan
-[39ba815d3b13f8a1752bfb2caacf79eb61e0c09c](https://github.com/notyourgas/sagabook/commit/39ba815d3b13f8a1752bfb2caacf79eb61e0c09c),
+[7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4](https://github.com/notyourgas/sagabook/commit/7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4),
 branch `codex/sagabook-admin-late-reschedule-20261025`.
 Admin dapat memindahkan sesi yang waktu mulainya sudah lewat, termasuk no-show,
 ke slot mendatang pada hari yang sama atau hari berikutnya. Jadwal langsung
@@ -14,10 +14,10 @@ Biaya terpisah dari pembayaran booking; pemasukan/closing hanya menghitung
 biaya lunas. Koreksi tidak menggandakan transaksi dan closing terkunci dijaga.
 Reschedule sebelum sesi tetap memakai kebijakan existing.
 
-Tes fitur 14/14 (105 assertions), regresi backend reschedule 30/30, browser
-desktop/mobile dan regresi UI existing PASS; build dan TypeScript critical PASS.
-Pemeriksaan komponen lebih luas memiliki 57 diagnostik baseline yang sama,
-tanpa diagnostik baru. Tanpa migration/dependency baru. Production tidak
+Baseline production b96e4fdc sudah digabung untuk menjaga fitur/perbaikan existing.
+Tes fitur/Invitation 18/18 (155 assertions), regresi backend reschedule 30/30
+(266 assertions), empat skenario browser desktop/mobile dan UI existing PASS;
+build dan TypeScript UIUX/critical PASS. Tanpa migration/dependency baru. Production tidak
 berubah oleh pekerjaan ini; deploy dan UAT production OPEN, BUSINESS_READY
 tidak diklaim. Next action: rilis terotorisasi dan UAT operator.
 
