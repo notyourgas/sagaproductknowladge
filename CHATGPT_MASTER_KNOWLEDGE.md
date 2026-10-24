@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-24 - Label kategori paket muat pada layar HP
+
+CONFIRMED / PRODUCTION_ACTIVATED / SCOPED_PUBLIC_UI_VERIFIED. Sesuai koreksi
+Andreas, tombol filter paket mempertahankan lebar mengikuti teks; baris kategori
+tetap dapat digeser mendatar. Tinggi target sentuh minimal 44 px tetap terjaga.
+Source [b96e4fdc4b037f834dc2ac81ad3ee0a49880b7c5](https://github.com/notyourgas/sagabook/commit/b96e4fdc4b037f834dc2ac81ad3ee0a49880b7c5), release `20261024032813-b96e4fd`, rollback `20261023034820-88e280a`.
+Zod yang terkunci pada 4.4.3 diperbarui ke 4.6.7 dalam constraint existing untuk menutup blocker
+audit npm runtime; percobaan awal berhenti sebelum upload, tanpa mutasi production.
+
+Gate native, backup terenkripsi/offsite dan disposable restore terikat kandidat
+final PASS. Regresi label/pilihan pada 320/390/430 dan lima preset pada 390/1440 PASS;
+public UI production pada 320/390/430 serta 23/23 cek verifikasi rilis PASS. Foto
+katalog, harga, durasi, kapasitas, relasi paket/background dan pengaturan
+pembayaran terverifikasi tetap. Tidak ada migration baru atau transaksi dari
+pemeriksaan browser. Safari iPhone fisik masih OPEN; ini bukan klaim
+BUSINESS_READY atau pemulihan QRIS/provider.
+
 ## 2026-10-24 - Nonkop premium SagaPOS Rp20000
 
 CONFIRMED / PRODUCTION_ACTIVATED data6/version71: Coklat Premium dan Matcha
