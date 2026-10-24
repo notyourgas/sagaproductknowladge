@@ -1,5 +1,24 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - Nama nota Kiosk dan Grand Opening20persen aktif
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, source/runtime
+fe61b52a9d762b44773f3568f302fa16d61ad1b4, rollback729f351. Kiosk mengisi default
+Nama pada nota dari display name Member; nonmember dapat mengisi nama panggilan.
+Nota customer otomatis menampilkan Atas nama dari snapshot yang sama dengan
+checker, termasuk saat checker dinonaktifkan. Dokumen historis tetap byte-identik;
+logo, font, spacing, footer, feed dan cutter tidak diganti.
+Grand Opening20persen diterbitkan pada katalog103/revisi9, KIOSK saja, otomatis
+tanpa keanggotaan, berlaku sampai1November2026 23:59:59WIB. Berhenti pada2November
+00:00WIB secara half-open. Satu voucher Member eligible boleh digabung: voucher
+dahulu,20persen atas sisa eligible. Voucher Kiosk tetap online/kode Member lengkap/
+tunai dengan PIN staf; tidak menjadi dukungan voucher QRIS/offline atau Invitation.
+Linux161PASS/0FAIL/0SKIP, backup terenkripsi/off-host/restore/recovery/activation/
+monitor PASS. Live UI1366/768/390 dan quote13000-2600=10400 PASS tanpa commerce.
+Harga/opsi/foto/template/printer/checker/QRIS tetap. Cetak fisik nama baru dan
+penukaran Member aktual UAT OPEN; bukan klaim seluruh produk BUSINESS_READY.
+Snapshot24Oktober yang menyatakan kampanye belum aktif digantikan aktivasi ini.
+
 ## 2026-10-24 - Promo umum dan voucher Member dapat digabung
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source/runtime

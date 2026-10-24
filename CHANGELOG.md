@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - Sinkronisasi aktivasi promo dan nama nota Kiosk
+
+CONFIRMED dari Andreas dan runtimefe61b52/rollback729f351, Linux161PASS/recovery/
+activation/live PASS. Production berubah: nama nota Kiosk Member/nonmember dan
+kampanye20persen103/revisi9 aktif sampai1November2026 23:59WIB, mengizinkan satu
+voucher eligible. Metadata baru tanpa mengganti template/font/spacing/feed/cut,
+harga atau QRIS/printer. Nol commerce/TEST fisik; operator UAT nama dan voucher
+asli masih OPEN. Sembilan dokumen SagaOPS/master/portfolio/decision/gaps/sync
+diselaraskan pada main HEAD; source/knowledge terpisah, produk lain dipertahankan.
+
 ## 2026-10-25 - SagaBook reschedule admin sesi lewat
 
 CONFIRMED dari instruksi Andreas dan source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4.

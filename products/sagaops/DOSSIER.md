@@ -1,5 +1,28 @@
 # SagaOPS Dossier
 
+## 2026-10-25 - Aktivasi promosi terbatas waktu dan nama nota
+
+CONFIRMED Andreas. Runtimefe61b52/rollback729f351, core37 tetap. Grand Opening20
+persen ACTIVE/PUBLISHED pada103/revisi9, hanya KIOSK, semua menu eligible tanpa
+minimum/cap tambahan. Berakhir eksklusif2026-11-01T17:00:00Z, termasuk seluruh
+tanggal1NovemberWIB; batas akhir diuji menggunakan rule tersimpan. Member voucher
+capabilitytrue; satu voucher eligible dahulu lalu20persen sisa eligible. Scope
+voucher tetap online/kode lengkap/assisted cash/PIN. Tidak mengubah harga pokok,
+tarif menu/pajak, entitlement voucher, Member backend atau metode pembayaran.
+Nama default Member dan nickname nonmember dikirim melalui checkout existing;
+intent checker menyimpan nama, worker membekukannya pada nota customer sebelum
+pengiriman. Marker renderer hanya pada dokumen baru bernama; snapshot lama tetap
+diverifikasi dengan byte lamanya. Header metadata mendapat Atas nama, tanpa
+mengubah template aktif, ukuran/font/logo, spacing, footer, feed atau autocut.
+Linux40115596513:158PASS/1FAIL karena locator label lama. Koreksi fixture saja;
+run40116063422:161PASS/0FAIL/0SKIP dalam3m52s, PostgreSQL native dan Member pinned.
+Nama, pending payment, restart, legacy bytes, checker serial, offline dan voucher
+gabungan lolos. Backup baru/off-host/checksum/disposable restore dan kandidat/
+current/kandidat recovery PASS; activation/monitor/live Owner/Kiosk1366/768/390
+PASS. Nol transaksi, pembayaran, pemakaian voucher atau TEST fisik production.
+Operator memeriksa nama dan benefit pada transaksi pelanggan sah berikutnya;
+UAT kertas/penukaran aktual OPEN. Prepared fixtures bukan bukti cetak fisik.
+
 ## 2026-10-24 - Kontrak promo publik + voucher Member
 
 CONFIRMED Andreas: satu promo umum dan satu voucher Member dapat dipakai bersama

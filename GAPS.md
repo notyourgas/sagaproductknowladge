@@ -9,18 +9,21 @@ executor rilis untuk rilis terotorisasi, Andreas/operator untuk UAT nyata.
 Baseline production b96e4fdc telah digabung; build dan TypeScript UIUX/critical
 PASS. Ini tidak menutup blocker provider atau acceptance produk lain.
 
-## 2026-10-24 - Promo gabungan tersedia; kampanye dan UAT aktual terpisah
+## 2026-10-25 - Kampanye aktif; UAT nama nota dan penukaran Member terbuka
 
-Runtime729f351 live; Linux108PASS dan Owner/Kiosk/quote verified. Belum ada periode
-Grand Opening yang ditentukan dan tidak ada kampanye20persen yang diaktifkan oleh
-agent. Penanggung jawab Andreas/Owner: buat promo otomatis, tetapkan20persen,
-kanal/menu/periode dan izinkan voucher bila diinginkan, lalu aktifkan/publish.
-Penanggung jawab operator: validasi satu transaksi pelanggan sah untuk dua
-potongan dan nota/checker; jangan menciptakan penjualan demi pengujian.
+CONFIRMED runtimefe61b52 live; Linux161PASS dan Owner/Kiosk/quote verified.
+Andreas sudah menetapkan periode: Grand Opening20persen Kiosk aktif sampai
+1November2026 23:59WIB pada103/revisi9 dan boleh digabung satu voucher eligible.
+Blocker aktivasi/periode kampanye pada24Oktober terselesaikan, bukan lagi aksi
+Owner yang tertunda. Penanggung jawab operator: validasi nama Member/nonmember,
+diskon gabungan dan kertas pada transaksi pelanggan sah; jangan menciptakan
+penjualan atau memakai voucher asli hanya untuk meloloskan tes teknis.
 Voucher Kiosk masih online/assisted cash/kode Member lengkap; QRIS/offline,
 reward poin, tier dan Invitation bukan tambahan benefit gabungan yang dirilis.
-Tidak ada perubahan layout atau commissioning printer baru; bukti fisik versi
-lama tidak dijadikan bukti penerimaan promo baru. BUSINESS_READY tetap terbuka.
+Tambahan metadata Atas nama tidak mengubah template/spacing/font/feed/cut atau
+commissioning printer. Bukti fisik lama bukan bukti kertas versi baru; UAT aktual
+dan BUSINESS_READY tetap terbuka. Nama pada jalur native online yang dirilis
+tidak menyatakan perluasan renderer/voucher tunai offline.
 
 ## 2026-10-24 - Copy aktif; resep varian dan validasi bahan belum lengkap
 

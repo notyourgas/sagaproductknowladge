@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaPOS Kiosk20persen aktif sampai1November
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED runtimefe61b52, rollback
+729f351. Grand Opening20persen otomatis tanpa Member, KIOSK saja, katalog103/
+revisi9. Berlaku sampai1November2026 23:59:59WIB, berhenti2November00:00WIB.
+Satu voucher Member eligible dapat digabung: voucher dahulu lalu20persen sisa
+eligible. Voucher tetap online/kode Member lengkap/tunai + PIN staf, bukan QRIS
+atau offline. Nama pada nota di Kiosk default display name Member, nonmember
+mengisi nickname; customer receipt memakai snapshot nama yang sama dengan checker.
+Template, logo/font/spacing/feed/autocut serta harga/QRIS/printer tidak berubah.
+Linux161PASS, guarded backup/off-host/restore/recovery/activation/monitor dan
+live UI/quote PASS; nol commerce/cetakan rekaan. UAT kertas nama baru dan voucher
+asli OPEN, bukan seluruh produk BUSINESS_READY. Ini menggantikan snapshot lama
+yang menyatakan kampanye belum diaktifkan; Member backend tidak dirilis ulang.
+
 ## 2026-10-25 - SagaBook reschedule admin sesi lewat, belum production
 
 CONFIRMED Andreas, source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4,

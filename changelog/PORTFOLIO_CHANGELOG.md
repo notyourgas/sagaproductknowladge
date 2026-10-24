@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaPOS Kiosk: nama nota dan20persen sampai1November
+
+CONFIRMED Andreas, runtimefe61b52/rollback729f351 deployed. Nama default Member
+atau nickname nonmember masuk nota customer; template, spacing, feed/cut dan
+printer/checker/QRIS tetap. Kampanye103/revisi9 KIOSK20persen aktif sampai
+1November2026 23:59WIB, voucher eligible boleh digabung lewat tunai/PIN existing.
+Linux161PASS/recovery/activation/live UI/quote PASS tanpa transaksi/cetakan
+rekaan; operator UAT kertas dan penukaran aktual OPEN. Member backend tidak
+dirilis ulang; dokumen produk dan portofolio disinkronkan pada main terpisah.
+
 ## 2026-10-25 - SagaBook reschedule admin sesi lewat
 
 CONFIRMED Andreas; source7a575827 SOURCE_PUSHED / LOCAL_VALIDATED /

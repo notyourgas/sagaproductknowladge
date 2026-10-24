@@ -1,5 +1,22 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-295 - Nama nota dan aktivasi Grand Opening sampai1November
+
+- Tanggal:25Oktober2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: Kiosk memakai nama Member atau nickname nonmember pada nota;
+  aktifkan voucher Member eligible dan diskon publik20persen sampai1November.
+- Alasan: identifikasi pelanggan pada nota dan promo pembukaan yang bisa dipakai
+  nonmember maupun digabung dengan satu voucher eligible.
+- Alternatif: diskon tanpa batas waktu, semua kanal, penggabungan tanpa syarat,
+  atau perubahan layout/printer, tidak diterapkan.
+- Dampak: katalog103/revisi9 KIOSK saja; akhir eksklusif2November2026 00:00WIB.
+  Voucher dahulu,20persen sisa eligible; batas voucher tunai/online/PIN tetap.
+  Metadata Atas nama baru tidak mengubah byte historis atau spacing/feed/cut.
+- Status: runtimefe61b52/rollback729f351 deployed; Linux161PASS/recovery/live
+  PASS, kampanye activated. UAT nama kertas dan penukaran aktual OPEN. Tidak ada
+  transaksi/pembayaran/cetakan production palsu atau perubahan produk lain.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, GAPS, portfolio dan sync.
+
 ## DEC-294 - Admin reschedule sesi lewat dengan biaya tetap Rp30.000
 
 - Tanggal: 25 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

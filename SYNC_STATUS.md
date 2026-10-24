@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaPOS nama nota dan kampanye terjadwal aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED source/runtimefe61b52,
+rollback729f351. Katalog103/revisi9; Grand Opening20persen otomatis Kiosk sampai
+1November2026 23:59WIB, voucher eligible boleh digabung melalui tunai/PIN existing.
+Nama customer nota default Member atau nickname nonmember, intent/frozen bytes
+existing. Linux40116063422:161PASS tanpa skip,3m52s; encrypted backup/off-host/
+restore/recovery/activation/monitor/live UI1366/768/390 PASS. Harga, template,
+printer/checker/QRIS tetap. Nol commerce/cetakan rekaan; actual paper/redemption
+UAT OPEN. Source/knowledge commit terpisah; produk lain dan Member ingress tetap.
+
 ## 2026-10-25 - SagaBook reschedule sesi lewat dengan charge admin
 
 CONFIRMED source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4 pada branch

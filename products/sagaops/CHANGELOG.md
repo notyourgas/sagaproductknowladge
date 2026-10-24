@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-25 - Aktifkan Grand Opening20persen dan nama nota Kiosk
+
+CONFIRMED Andreas; source/runtimefe61b52/rollback729f351. Katalog103/revisi9
+mengaktifkan20persen otomatis Kiosk sampai1November2026 23:59WIB, mengizinkan
+satu voucher Member eligible atas sisa nilai setelah voucher. Nama nota default
+Member atau nickname nonmember masuk ke customer receipt dan checker dari intent
+existing. Template/spacing/feed/cut, harga, QRIS dan konfigurasi printer tetap.
+Linux161PASS, backup/off-host/restore/recovery/activation/monitor dan live UI/
+quote PASS. Tidak ada commerce/TEST fisik; UAT nama kertas/penukaran aktual OPEN.
+Aktivasi ini menggantikan status kampanye belum aktif pada snapshot24Oktober.
+
 ## 2026-10-24 - Rilis penggabungan promo publik dan voucher Member
 
 CONFIRMED Andreas; source/runtime729f351, rollback7b97534. Promo otomatis tanpa
