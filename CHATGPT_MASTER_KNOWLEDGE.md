@@ -108,6 +108,12 @@ belum terverifikasi untuk merchant/API SagaBook. Hasil terbaru sudah dikirim
 ke CS untuk trace spesifik; tidak ada pembayaran, pergantian channel, booking
 mutation atau deploy. QR acceptance tetap OPEN; tidak ada retry tambahan.
 
+Uji ulang terbatas 24 Oktober pagi tetap ditolak tanpa QR. Keterangan provider
+yang kini tertangkap adalah `ERR #200. Please contact administrator`, berada
+pada field referensi sementara field error mengulang referensi uji. Makna
+internal kode ini belum diketahui; detail aman sudah dieskalasi ke CS.
+Ini bukan bukti pemulihan checkout; runtime dan kandidat source tetap sama.
+
 
 ## 2026-10-23 - Katalog SagaPOS: kopi AI dan menu sementara
 
