@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-24 - Sinkron Soda Es-only SagaPOS
+
+CONFIRMED Andreas dan production read-back:6Soda hanya Es pada data publikasi5/
+version65 aktif, tiga kopi khas/Hot menu lain tetap. Source test/docs9e6fbcb
+pushed, runtime terbaru6983408 dipertahankan. Local8PASS/production quote/live
+e-menu1280/768/390 PASS; harga/foto/nota/printer unchanged, stok fisik tidak berubah,
+tanpa transaksi/print. UAT Chromebook OPEN. File: SagaOPS PRODUCT/DOSSIER/CHANGELOG,
+master, portfolio, DECISIONS/GAPS/SYNC_STATUS dan root; main HEAD. Baseline196a345
+dan pekerjaan independen SagaBook/Staff Admin/produk lain dipertahankan.
+
 ## 2026-10-24 - Katalog pilot memakai foto studio asli
 
 CONFIRMED / PRODUCTION_CONTENT_UPDATED / SCOPED_PUBLIC_UI_VERIFIED.

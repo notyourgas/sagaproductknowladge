@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-24 - Seluruh Soda SagaPOS hanya Es
+
+CONFIRMED / PRODUCTION_ACTIVATED data5/version65. Semua6Soda tidak bisa Hot;
+tiga kopi khas tetap Es-only dan Hot menu lain tetap. Kiosk/Kasir/e-menu bersama,
+22produk/bakery arsip tidak berubah. Test/docs9e6fbcb pushed; runtime6983408
+tetap, rilis Staff Admin tidak ditimpa. Local8PASS, production quote6Hot ditolak/
+6Es diterima/Cafe Latte Hot diterima dan live e-menu1280/768/390 PASS. Harga/
+foto/modifier lain/nota/printer/QRIS unchanged; tanpa transaksi/stok/cetakan.
+UAT Chromebook OPEN; menu Soda baru perlu assignment Es-only saat authoring.
+
 ## 2026-10-24 - Katalog pilot memakai foto studio asli
 
 CONFIRMED / PRODUCTION_CONTENT_UPDATED / SCOPED_PUBLIC_UI_VERIFIED.

@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-24 - Semua menu Soda Es-only
+
+CONFIRMED Andreas, enam Soda hanya Es pada publikasi data5/version65 aktif.
+Tiga kopi Es-only dan Hot menu lain tetap; harga/foto/nota/printer unchanged,
+stok fisik tidak berubah. Test/docs9e6fbcb pushed, runtime6983408 dipertahankan.
+Local8PASS, production quote negatif/positif dan live e-menu1280/768/390 PASS,
+tanpa transaksi/cetakan. UAT Chromebook OPEN. Sinkron PRODUCT/DOSSIER, master,
+portfolio/root, DECISIONS/GAPS/SYNC_STATUS; bukan rilis binary baru.
+
 ## 2026-10-23 - Staff Admin aktif di production SagaPOS
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, sesuai otorisasi deploy Andreas. Status ini menggantikan belum-deploy pada checkpoint Staff Admin lokal sebelumnya.

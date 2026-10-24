@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-24 - Soda Es-only tersinkron
+
+CONFIRMED / accepted data publikasi5/version65 production-activated,6Soda hanya
+Es. Test/docs9e6fbcb pushed, runtime6983408 unchanged. Local8PASS, production
+quote/live e-menu1280/768/390 PASS. Hot menu lain/tiga kopi Es-only/harga/nota/
+printer tetap, tanpa transaksi/stok/cetakan. UAT Chromebook OPEN. Main HEAD;
+baseline196a345 dan rilis Staff Admin/SagaBook/produk lain dipertahankan.
+
 ## 2026-10-24 - Katalog pilot memakai foto studio asli
 
 CONFIRMED / PRODUCTION_CONTENT_UPDATED / SCOPED_PUBLIC_UI_VERIFIED.

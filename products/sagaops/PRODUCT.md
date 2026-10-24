@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-24 - Semua Soda hanya Es
+
+CONFIRMED / PRODUCTION_ACTIVATED data publikasi5/version65 atas permintaan
+Andreas. Mohito, Range Bliss, Brr Patabim, Tralalelow, Si Biyu dan Oyen Sunkist
+tidak menawarkan Hot/Panas, hanya Es. Tiga kopi khas tetap Es-only; pilihan Hot
+menu lain tidak berubah. Kiosk/Kasir/e-menu memakai publikasi sama, Soda6 dan
+22produk tetap, bakery tetap arsip. Local8PASS, read-only production6Hot ditolak/
+6Es diterima/Cafe Latte Hot diterima, live e-menu1280/768/390 PASS. Harga/foto/
+modifier lain/nota/printer/QRIS tetap, tanpa pesanan/pembayaran/stok/cetakan.
+Test/docs9e6fbcb pushed; runtime terbaru6983408 dipertahankan tanpa redeploy
+binary lama. UAT Chromebook aktual OPEN. Menu Soda baru perlu assignment Es-only.
+
 ## 2026-10-23 - Staff Admin aktif di production SagaPOS
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, sesuai otorisasi deploy Andreas. Status ini menggantikan belum-deploy pada checkpoint Staff Admin lokal sebelumnya.

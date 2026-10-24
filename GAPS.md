@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-24 - Semua Soda Es-only; snapshot dan produk baru
+
+CONFIRMED6Soda hanya Es pada data5/version65 aktif; production quote6Hot
+ditolak/6Es diterima, Hot Cafe Latte retained, live e-menu PASS. UAT Chromebook
+aktual OPEN; refresh online ketika idle dan tinjau keranjang Hot lama, jangan
+hapus ledger/browser atau interrupt pembayaran. Menu Soda baru perlu assignment
+Es-only saat authoring; update ini tidak menambah aturan kategori otomatis.
+Test/docs9e6fbcb pushed, runtime6983408 tetap, tanpa transaksi/stok/print atau
+klaim BUSINESS_READY baru. Nota/printer tidak berubah.
+
 ## 2026-10-23 - Staff Admin deployed; UAT karyawan nyata OPEN
 
 CONFIRMED source6983408ad6e6470bb5d5b243535ff64ff5b52587 production-activated, rollback4c6b9cb. Native PostgreSQL18/recovery/Owner read-only dan196asset PASS. Gate migrasi/deploy pada checkpoint lokal Staff Admin telah ditutup.

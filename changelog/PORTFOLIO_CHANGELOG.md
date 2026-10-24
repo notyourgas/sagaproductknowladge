@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-24 - SagaPOS seluruh Soda hanya dingin
+
+CONFIRMED Andreas, data5/version65 production-activated,6Soda hanya Es.
+Test/docs9e6fbcb pushed, runtime6983408/Staff Admin preserved, bukan binary
+deploy. Local8PASS/production quote/live e-menu1280/768/390 PASS. Hot menu lain,
+tiga kopi Es-only, harga/foto/nota/printer tetap; tanpa transaksi/stok/cetakan.
+UAT Chromebook OPEN. Dokumen SagaOPS/master/portfolio/root/decision/gaps/sync
+disinkronkan, produk lain tidak dimutasi.
+
 ## 2026-10-24 - Katalog pilot memakai foto studio asli
 
 CONFIRMED / PRODUCTION_CONTENT_UPDATED / SCOPED_PUBLIC_UI_VERIFIED.

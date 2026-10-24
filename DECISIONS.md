@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-289 - Semua menu Soda hanya dingin
+
+- Tanggal: 24 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: seluruh6menu kategori Soda tidak bisa Hot, hanya Es; pertahankan
+  tiga kopi Es-only dan pilihan Hot kategori lain.
+- Alasan: pilihan pelanggan harus sesuai penyajian outlet.
+- Alternatif: mematikan Hot global atau sekadar menyembunyikan tombol, tidak
+  dipakai. Gunakan scope opsi varian existing dan validasi quote server.
+- Dampak: data publikasi5/version65 aktif; harga/foto/nota/printer tetap.
+  Produk Soda baru perlu assignment yang sama; keranjang Hot lama perlu tinjau.
+- Status: test/docs9e6fbcb pushed, runtime6983408 dipertahankan; local8PASS,
+  production quote/live e-menu PASS, UAT Chromebook OPEN.
+- Dokumen: [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-288 - Es Kopi Saga, Saga Premiyum dan Magnosiyum hanya dingin
 
 - Tanggal: 23 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-24 - Perluasan Es-only ke seluruh Soda
+
+CONFIRMED semua6Soda tidak bisa Hot. Scope opsi temperature/hot existing
+dikurangi enam ID tanpa mengembalikan tiga kopi khas; iced/group limits/opsi
+lain tetap. Satu update dan publish, version63->65/publication5, draft lain0.
+Harga/foto/gula/addon/pricing/promo/ordering/nota/printer/checker/QRIS unchanged.
+Source test/docs9e6fbcb pushed, relevant policy/offline contract identik dengan
+runtime baru6983408 yang tetap aktif; tidak redeploy binary/source lama atas
+rilis Staff Admin. Local8PASS termasuk draft isolation/export-restore/9Es-only.
+Production quote6Hot rejected422/6Es accepted, Cafe Latte Hot retained; actual
+public e-menu1280/768/390 menampilkan Es tanpa Panas untuk enam Soda, PASS.
+Soda6/22produk/bakery arsip tetap; tanpa order/payment/stock/print. UAT Chromebook
+OPEN. Snapshot lama jangan dihapus; refresh online saat idle, tinjau Hot lama.
+Menu Soda baru perlu assignment opsi yang sama; tidak menambah aturan kategori
+otomatis di kode. Publikasi4 recovery target setelah meninjau perubahan berikutnya.
+
 ## 2026-10-23 - Staff Admin aktif di production SagaPOS
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, sesuai otorisasi deploy Andreas. Status ini menggantikan belum-deploy pada checkpoint Staff Admin lokal sebelumnya.
