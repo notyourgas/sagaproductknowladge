@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-24 - Menu premium aktif; resep/HPP belum diberikan
+
+CONFIRMED Coklat Premium/Matcha Premium Rp20000 Hot/Es aktif data6/version71,
+production quote/live e-menu PASS, regulars/printer unchanged. Resep/bahan/
+takaran dan biaya premium belum diberikan, inventory default untracked; jangan
+salin resep reguler atau menganggap HPP nol/laba bersih akurat. Penanggung jawab
+Andreas/Owner: berikan resep dan biaya riil, lalu isi/publikasikan HPP terpisah.
+Gambar masih representatif existing, bukan foto premium aktual. UAT Chromebook
+OPEN; refresh online saat idle, jangan hapus ledger/browser. Source test/docs
+7663183 pushed, runtime6983408 tetap; tanpa transaksi/stok/cetakan palsu.
+
 ## 2026-10-24 - Semua Soda Es-only; snapshot dan produk baru
 
 CONFIRMED6Soda hanya Es pada data5/version65 aktif; production quote6Hot

@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-24 - Tambah dua Nonkop premium Rp20000
+
+CONFIRMED Coklat Premium/Matcha Premium baru, bukan penggantian menu reguler.
+Duplicate check seluruh status katalog PASS;2create draft/2media/1Hot scope
+append/1publish, version65->71/publication6, draft lain0. Hot scope hanya menambah
+dua ID baru; iced unscoped tetap, sembilan Es-only tidak dibuka kembali. Nonkop5,
+24produk tampil; reguler Chocolate/Matcha Rp16000, Soda6 dan bakery arsip tetap.
+Foto representatif existing chocolate/matcha, tidak mengarang deskripsi/manfaat/
+resep/nutrisi/HPP. Inventory mode produk baru untracked; costing belum lengkap.
+Source test/docs7663183 pushed, binary6983408 tetap. Local9PASS, production
+quote4kombinasi Hot/Es masing-masing Rp20000, old product projections unchanged,
+live e-menu1280/768/390/gambar/detail PASS. Nota/printer/checker/QRIS tetap,
+tanpa order/payment/stock/print. UAT Chromebook dan resep/HPP nyata OPEN.
+Publikasi5 recovery target setelah meninjau revisi berikutnya; refresh online
+ketika idle tanpa menghapus ledger/browser atau mengganggu pembayaran aktif.
+
 ## 2026-10-24 - Perluasan Es-only ke seluruh Soda
 
 CONFIRMED semua6Soda tidak bisa Hot. Scope opsi temperature/hot existing

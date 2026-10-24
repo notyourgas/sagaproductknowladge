@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-24 - Sinkron Nonkop premium SagaPOS
+
+CONFIRMED Andreas dan production read-back: dua menu baru Coklat Premium/Matcha
+Premium Rp20000 Hot/Es, data6/version71 aktif. Source test/docs7663183 pushed,
+runtime6983408 unchanged. Local9PASS/4quote/live e-menu1280/768/390 PASS; existing
+prices/photos/options/nota/printer tetap, stok fisik tidak berubah. Foto
+representatif, recipe/HPP belum diberikan/untracked; UAT Chromebook OPEN.
+Tanpa transaksi/cetakan. File: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master,
+portfolio, DECISIONS/GAPS/SYNC_STATUS dan root; main HEAD, baseline2b77396
+dan pekerjaan/release produk lain dipertahankan.
+
 ## 2026-10-24 - Sinkron Soda Es-only SagaPOS
 
 CONFIRMED Andreas dan production read-back:6Soda hanya Es pada data publikasi5/

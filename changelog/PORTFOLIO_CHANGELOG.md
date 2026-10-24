@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-24 - SagaPOS tambah dua minuman premium Nonkop
+
+CONFIRMED Andreas, Coklat Premium/Matcha Premium Rp20000 Hot/Es, data6/version71
+aktif,24produk/Nonkop5, reguler unchanged. Test/docs7663183 pushed/runtime6983408
+tetap. Local9PASS/4quote production/live e-menu1280/768/390 PASS, nota/printer/
+QRIS tetap, tanpa transaksi/stok/cetakan. Foto representatif; resep/HPP belum
+diberikan/untracked, UAT Chromebook OPEN. Dokumen SagaOPS/master/portfolio/root/
+decision/gaps/sync diperbarui, produk lain dipertahankan.
+
 ## 2026-10-24 - SagaPOS seluruh Soda hanya dingin
 
 CONFIRMED Andreas, data5/version65 production-activated,6Soda hanya Es.

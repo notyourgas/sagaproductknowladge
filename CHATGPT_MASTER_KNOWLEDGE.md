@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-24 - Nonkop premium SagaPOS Rp20000
+
+CONFIRMED / PRODUCTION_ACTIVATED data6/version71: Coklat Premium dan Matcha
+Premium, keduanya Rp20000 Hot/Es, terpisah dari reguler Rp16000. Kiosk/Kasir/
+e-menu24produk/Nonkop5; sembilan Es-only/bakery arsip tetap. Gambar representatif
+existing; resep/HPP belum diberikan, inventory untracked, jangan anggap biaya0.
+Test/docs7663183 pushed, runtime6983408 unchanged. Local9PASS/production quote/
+live e-menu1280/768/390 PASS, old products/nota/printer/QRIS unchanged, tanpa
+transaksi/stok/cetakan. UAT Chromebook dan costing nyata tetap OPEN.
+
 ## 2026-10-24 - Seluruh Soda SagaPOS hanya Es
 
 CONFIRMED / PRODUCTION_ACTIVATED data5/version65. Semua6Soda tidak bisa Hot;

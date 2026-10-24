@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-290 - Coklat Premium dan Matcha Premium Rp20000 Hot/Es
+
+- Tanggal: 24 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: tambah dua menu, Coklat Premium dan Matcha Premium, masing-masing
+  Rp20000, bisa Hot maupun Es; tidak mengganti menu reguler.
+- Alasan: menambah pilihan Nonkop premium yang diminta outlet.
+- Alternatif: mengganti harga reguler atau mengarang resep/HPP, tidak dipakai.
+- Dampak: data6/version71 aktif,24produk/Nonkop5; foto representatif existing,
+  recipe/HPP belum diberikan dan untracked. Sembilan Es-only/printer tetap.
+- Status: test/docs7663183 pushed, runtime6983408 unchanged, local9PASS/
+  production quote/live e-menu PASS; UAT Chromebook dan costing nyata OPEN.
+- Dokumen: [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-289 - Semua menu Soda hanya dingin
 
 - Tanggal: 24 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

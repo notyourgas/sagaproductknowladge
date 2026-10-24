@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-24 - Dua Nonkop premium tersinkron
+
+CONFIRMED / accepted data6/version71 aktif, Coklat Premium/Matcha Premium
+Rp20000 Hot/Es. Test/docs7663183 pushed, runtime6983408 unchanged. Local9PASS,
+production quote dan live e-menu1280/768/390 PASS. Reguler/options/nota/printer
+unchanged, tanpa transaksi/stok/cetakan. Foto representatif; resep/HPP belum
+diberikan/untracked, UAT Chromebook OPEN. Main HEAD, baseline2b77396 dan
+pekerjaan Staff Admin/SagaBook/produk lain dipertahankan.
+
 ## 2026-10-24 - Soda Es-only tersinkron
 
 CONFIRMED / accepted data publikasi5/version65 production-activated,6Soda hanya

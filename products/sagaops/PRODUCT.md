@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-24 - Coklat Premium dan Matcha Premium aktif
+
+CONFIRMED / PRODUCTION_ACTIVATED data publikasi6/version71, Andreas meminta
+dua menu tambahan masing-masing Rp20000, Hot/Es. Coklat Premium dan Matcha
+Premium ditambahkan terpisah di Nonkop; Chocolate/Matcha reguler tetap Rp16000.
+Kiosk/Kasir/e-menu kini24produk, Nonkop5; sembilan Es-only dan bakery arsip tetap.
+Gambar representatif existing digunakan, bukan foto premium baru. Resep/HPP
+belum diberikan, inventory default untracked, bukan biaya nol atau costing lengkap.
+Test/docs7663183 pushed, runtime6983408 unchanged. Local9PASS,4production quote
+Hot/Es Rp20000 dan live e-menu1280/768/390 PASS, tanpa transaksi/stok/cetakan.
+Produk existing/foto/opsi/nota/printer/QRIS unchanged; UAT Chromebook OPEN.
+
 ## 2026-10-24 - Semua Soda hanya Es
 
 CONFIRMED / PRODUCTION_ACTIVATED data publikasi5/version65 atas permintaan

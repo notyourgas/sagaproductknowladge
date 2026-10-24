@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-24 - Terbitkan Coklat Premium dan Matcha Premium
+
+CONFIRMED Andreas, masing-masing Rp20000 Hot/Es di Nonkop; reguler tetap.
+Data publikasi6/version71 aktif,24produk/Nonkop5; test/docs7663183 pushed,
+runtime6983408 unchanged. Local9PASS/4production quote/live e-menu1280/768/390
+PASS, existing prices/photos/options/printer unchanged. Foto representatif,
+resep/HPP belum diberikan/untracked; stok fisik tidak berubah, tanpa transaksi/
+cetakan. UAT Chromebook OPEN. PRODUCT/DOSSIER/master/portfolio/root/decision/
+gaps/sync disinkronkan, bukan deploy binary baru.
+
 ## 2026-10-24 - Semua menu Soda Es-only
 
 CONFIRMED Andreas, enam Soda hanya Es pada publikasi data5/version65 aktif.
