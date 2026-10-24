@@ -1,5 +1,22 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-24 - SagaBook rekening dan QRIS statis pilot tersimpan
+
+CONFIRMED / PRODUCTION_CONFIGURED / SCOPED_READBACK_PASS. Sesuai instruksi
+Andreas, rekening transfer dan gambar QRIS statis asli pilot Saga Studio
+disimpan melalui form Owner existing. Read-back data booking publik, nilai
+rekening di Owner dan pemuatan gambar setelah sinkronisasi workspace PASS.
+Hanya enam field default bank/rekening/QR berubah; konfigurasi gateway tetap.
+
+Ini perubahan konfigurasi tenant di production, tanpa rilis kode baru. Runtime
+tetap source `b96e4fdc4b037f834dc2ac81ad3ee0a49880b7c5`, release
+`20261024032813-b96e4fd`. QR statis mengikuti transfer manual: pelanggan
+mengunggah bukti dan admin memverifikasi. Tidak membuat booking atau transaksi
+pembayaran, dan belum melakukan uji bayar nyata. Ini tidak menutup blocker
+QRIS otomatis/provider atau menetapkan BUSINESS_READY. Next action: acceptance
+pembayaran nyata yang diotorisasi. Detail rekening, QR, identitas privat dan
+bukti privat tidak dimasukkan ke knowledge publik.
+
 ## 2026-10-24 - SagaPOS harga tiga kopi khas data-only
 
 Sinkronisasi terikat publikasi katalog7/version75 dan runtime
