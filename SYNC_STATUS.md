@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-24 - SagaPOS harga tiga kopi khas data-only
+
+Sinkronisasi terikat publikasi katalog7/version75 dan runtime
+6983408ad6e6470bb5d5b243535ff64ff5b52587; tidak ada commit source/rilis binary
+baru untuk mutasi harga API existing. Tiga harga16000/18000/20000 terverifikasi
+domain sintetis,6quote read-only dan live e-menu1280/768/390. Knowledge mulai
+dari main ec80afb, mempertahankan perubahan SagaBook independen.24produk/
+opsi/foto/nota/printer/QRIS tetap; tanpa transaksi/stok/cetakan. UAT Chromebook OPEN.
+
 ## 2026-10-24 - Label kategori paket muat pada layar HP
 
 CONFIRMED / PRODUCTION_ACTIVATED / SCOPED_PUBLIC_UI_VERIFIED. Sesuai koreksi

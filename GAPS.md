@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-24 - Harga kopi baru aktif; verifikasi perangkat aktual terbuka
+
+Data7/version75 aktif Es Kopi Saga16000/Saga Premiyum18000/Magnosiyum20000;
+domain sintetis/6production quote/live e-menu PASS. UAT Chromebook/Kasir aktual
+belum dilakukan pada perubahan ini. Penanggung jawab operator: saat online dan
+tidak ada pembayaran aktif, muat ulang Kiosk/Kasir dan periksa harga tiga menu.
+Jangan hapus data browser/ledger; keranjang atau pending lama perlu tinjau quote,
+bukan mengubah harga histori. Printer/layout dan stok fisik tetap.
+
 ## 2026-10-24 - Menu premium aktif; resep/HPP belum diberikan
 
 CONFIRMED Coklat Premium/Matcha Premium Rp20000 Hot/Es aktif data6/version71,

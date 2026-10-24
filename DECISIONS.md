@@ -1,5 +1,17 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-291 - Harga tiga kopi khas Rp16000, Rp18000 dan Rp20000
+
+- Tanggal:24 Oktober2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: Es Kopi Saga Rp16000, Saga Premiyum Rp18000, Magnosiyum Rp20000.
+- Alasan: koreksi harga dasar outlet pada katalog bersama Kiosk/Kasir/e-menu.
+- Alternatif: mengganti produk/opsi atau redeploy binary lama, tidak dipakai.
+- Dampak: publikasi7/version75 aktif, runtime6983408 tetap; harga produk lain,
+  Es-only/modifier/foto/nota/printer/QRIS dan stok fisik tidak berubah.
+- Status: domain sintetis/6production quote/live e-menu PASS; UAT Chromebook
+  aktual OPEN, tanpa transaksi/cetakan. Histori tidak ditulis ulang.
+- Dokumen: [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-290 - Coklat Premium dan Matcha Premium Rp20000 Hot/Es
 
 - Tanggal: 24 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

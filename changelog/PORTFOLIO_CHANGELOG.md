@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-24 - SagaPOS harga tiga kopi khas aktif
+
+CONFIRMED / PRODUCTION_ACTIVATED data7/version75: Es Kopi Saga Rp16000, Saga
+Premiyum Rp18000, Magnosiyum Rp20000. Runtime6983408 tetap, bukan rilis binary.
+Domain sintetis/6quote read-only/live e-menu1280/768/390 PASS;24produk, harga
+lain/opsi/foto/nota/printer/QRIS tetap. Stok fisik tidak berubah, tanpa transaksi
+atau cetakan. UAT Chromebook aktual OPEN, tidak mengklaim BUSINESS_READY baru.
+
 ## 2026-10-24 - Label kategori paket muat pada layar HP
 
 CONFIRMED / PRODUCTION_ACTIVATED / SCOPED_PUBLIC_UI_VERIFIED. Sesuai koreksi

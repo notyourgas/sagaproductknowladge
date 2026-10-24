@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-24 - SagaPOS harga tiga kopi khas
+
+CONFIRMED / PRODUCTION_ACTIVATED data publikasi7/version75: Es Kopi Saga Rp16000,
+Saga Premiyum Rp18000, Magnosiyum Rp20000 pada Kiosk/Kasir/e-menu bersama.
+Runtime6983408 unchanged; produk lain, Es-only, modifier, gambar, nota/printer/
+checker/QRIS tetap. Domain sintetis/6production quote/live e-menu1280/768/390
+PASS, tanpa pesanan/pembayaran/stok/cetakan. UAT Chromebook aktual OPEN.
+Refresh online saat idle; jangan hapus ledger/browser atau menulis ulang histori.
+
 ## 2026-10-24 - Label kategori paket muat pada layar HP
 
 CONFIRMED / PRODUCTION_ACTIVATED / SCOPED_PUBLIC_UI_VERIFIED. Sesuai koreksi

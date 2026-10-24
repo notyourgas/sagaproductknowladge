@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-10-24 - Harga Es Kopi Saga, Saga Premiyum dan Magnosiyum
+
+CONFIRMED / PRODUCTION_ACTIVATED publikasi7/version75: Rp16000/Rp18000/Rp20000.
+Runtime6983408 tetap, data-only melalui API katalog existing, tanpa rilis binary.
+Domain sintetis/6quote read-only/live e-menu1280/768/390 PASS. Hanya tiga harga
+dasar berubah; produk lain/opsi/gambar/nota/printer/QRIS dan stok fisik tetap.
+Tanpa transaksi atau cetakan, UAT Chromebook OPEN. Knowledge disinkronkan.
+
 ## 2026-10-24 - Terbitkan Coklat Premium dan Matcha Premium
 
 CONFIRMED Andreas, masing-masing Rp20000 Hot/Es di Nonkop; reguler tetap.

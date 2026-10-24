@@ -1,5 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-24 - Harga tiga kopi khas diperbarui
+
+CONFIRMED / PRODUCTION_ACTIVATED data publikasi7/version75: Es Kopi Saga
+Rp16000, Saga Premiyum Rp18000, Magnosiyum Rp20000, sesuai Andreas. Katalog
+bersama Kiosk/Kasir/e-menu tetap24produk; harga produk lain, opsi Es-only,
+modifier, gambar, nota/printer/checker/QRIS tetap. Runtime6983408 dipertahankan,
+tanpa deployment binary. Self-check domain sintetis PASS,6quote production
+read-only PASS termasuk extra-shot, live e-menu1280/768/390 PASS. Tidak membuat
+pesanan/pembayaran/cetakan; stok fisik tidak berubah. UAT Chromebook aktual OPEN.
+Muat ulang online saat idle; jangan hapus data browser/ledger atau mengubah histori.
+
 ## 2026-10-24 - Coklat Premium dan Matcha Premium aktif
 
 CONFIRMED / PRODUCTION_ACTIVATED data publikasi6/version71, Andreas meminta

@@ -1,5 +1,17 @@
 # SagaOPS Dossier
 
+## 2026-10-24 - Publikasi harga tiga kopi khas
+
+Owner catalog API existing:3product update dan1publish, version71->75,
+publication6->7, draft awal0. Es Kopi Saga18000->16000, Saga Premiyum20000->18000,
+Magnosiyum22000->20000. Read-back membandingkan seluruh produk dan konfigurasi:
+hanya tiga harga dasar berubah.24produk, sembilan Es-only, Nonkop premium20000,
+media/modifier/promo/nota/printer/checker/QRIS tetap. Runtime6983408 unchanged.
+Self-check domain sintetis PASS: draft terisolasi, publish/restore konsisten,
+snapshot quote lama tetap.6quote production tanpa/dengan extra-shot PASS;
+live e-menu1280/768/390 kartu/detail/no overflow PASS. Tanpa checkout/payment/
+stock/physical TEST. UAT perangkat Chromebook OPEN; bukan BUSINESS_READY baru.
+
 ## 2026-10-24 - Tambah dua Nonkop premium Rp20000
 
 CONFIRMED Coklat Premium/Matcha Premium baru, bukan penggantian menu reguler.
