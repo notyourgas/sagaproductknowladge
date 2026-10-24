@@ -1,5 +1,25 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-24 - Katalog pilot memakai foto studio asli
+
+CONFIRMED / PRODUCTION_CONTENT_UPDATED / SCOPED_PUBLIC_UI_VERIFIED.
+Sesuai instruksi Andreas, gambar katalog pilot Saga Studio diperbarui melalui
+form Owner existing: empat galeri paket, empat background standar, dan sampul
+lokasi memakai foto sesi studio asli dengan variasi subjek dan pose. Sebelas
+background tematik yang belum memiliki foto asli sesuai memakai referensi
+warna berlabel bahwa foto asli belum tersedia. Seluruh pilihan gambar terisi
+sehingga fallback foto contoh bawaan tidak terpakai pada katalog pilot.
+
+Ini perubahan data konten tenant, tanpa rilis kode aplikasi. Runtime yang
+diperiksa tetap baseline `88e280a14ae4d20e0d005b61a1e6353b03195917`. Read-back
+publik dan pemuatan galeri/lokasi PASS. Harga, durasi, kapasitas, status, relasi
+paket/background, kuantitas cetak/packaging, jam cabang dan pengaturan pembayaran
+tetap; native save menaikkan versi metadata aturan konsumsi tanpa mengubah
+kuantitas. Tidak membuat booking atau transaksi. Ini tidak menutup blocker
+QRIS/provider maupun authenticated UAT operasional yang sudah tercatat dan
+tidak merupakan klaim BUSINESS_READY. Foto/aset customer, tautan bertanda
+tangan dan bukti privat tidak dipublikasikan ke repository knowledge.
+
 ## 2026-10-23 - Staff Admin aktif di production SagaPOS
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, sesuai otorisasi deploy Andreas. Status ini menggantikan belum-deploy pada checkpoint Staff Admin lokal sebelumnya.
