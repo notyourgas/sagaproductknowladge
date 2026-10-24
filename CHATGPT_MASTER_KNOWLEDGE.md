@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-24 - Pemulihan layar kosong sebelum login Saga Member
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk konfigurasi ingress Member, berdasarkan laporan Andreas dan pemeriksaan runtime 24 Oktober. Pengiriman JavaScript terpotong pada koneksi terbatas sehingga hanya header terlihat. Pengaturan proxy khusus Member dikoreksi dengan backup konfigurasi, shared release lock, validasi Nginx dan graceful reload.
+
+Uji TCP terbatas sebelum perbaikan menerima 192.512 dari 272.675 byte dan gagal; sesudahnya menerima seluruh 272.675 byte dengan hash sesuai source. Kompresi aset statis juga diaktifkan: 15 aset cocok dengan source setelah dekompresi, dengan transfer 232.193 dari 770.040 byte. Halaman login publik tampil tanpa error JavaScript; endpoint anonim tetap 401, layanan sehat, PID aplikasi dan state runner tetap, serta tidak ada error transport Member baru pada pemeriksaan sesudah perbaikan.
+
+Source operasional [657faf779667be1903fc7b85e3d10677aa12cb3a](https://github.com/notyourgas/saga-customer-platform/commit/657faf779667be1903fc7b85e3d10677aa12cb3a) memuat runbook dan regresi preservasi konfigurasi; empat tes Nginx relevan PASS. Ini bukan binary runner atau release aplikasi baru: runtime tetap frontend `38101d42fabd51745dc9a65aac7c971a0882c193`, backend `c4238845274e867d17e852f9012c67369c451861`, release `20261023T051613Z-c423884-r0u`. Tidak ada migrasi, perubahan akun/provider, atau transaksi. Refresh pertama pelapor masih tampak kosong; log menunjukkan pemuatan panjang sehingga kompresi ditambahkan. Konfirmasi ulang pada Safari iPhone setelah kompresi masih OPEN; login Google/OTP nyata dan BUSINESS_READY tidak disimpulkan. Hosted CI NOT_RUN untuk perbaikan ini.
+
 ## 2026-10-24 - SagaPOS copy rasa Kiosk aktif
 
 CONFIRMED / PRODUCTION_ACTIVATED:24menu memiliki copy pelanggan yang disetujui
