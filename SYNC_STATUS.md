@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-24 - SagaPOS penggabungan promo dan voucher
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE source/runtime729f351,
+rollback7b97534. Linux40099309923:108PASS, core37/recovery/activation/monitor
+PASS, live Owner/Kiosk1366/768/390 dan preview20persen PASS; konfigurasi katalog/
+nota/printer/checker/QRIS identik. Kampanye belum diaktifkan dan tidak ada
+penukaran/pembayaran/cetakan asli. Owner menetapkan tanggal/syarat lalu UAT
+transaksi sah; BUSINESS_READY tidak diklaim. Preserve Member ingress hotfix dan
+perubahan produk independen yang lebih baru; tidak redeploy runtime Member.
+
 ## 2026-10-24 - Pemulihan layar kosong sebelum login Saga Member
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk konfigurasi ingress Member, berdasarkan laporan Andreas dan pemeriksaan runtime 24 Oktober. Pengiriman JavaScript terpotong pada koneksi terbatas sehingga hanya header terlihat. Pengaturan proxy khusus Member dikoreksi dengan backup konfigurasi, shared release lock, validasi Nginx dan graceful reload.

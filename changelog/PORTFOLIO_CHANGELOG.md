@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-24 - SagaPOS: promo publik dapat digabung voucher Member
+
+CONFIRMED Andreas, source/runtime729f351/rollback7b97534 PRODUCTION_DEPLOYED.
+Non-Member mendapat promo otomatis; Owner mengatur kanal dan opt-in penggabungan
+voucher. Linux108PASS, guarded recovery/activation dan live UI/preview PASS.
+Nota/printer/checker/QRIS/harga tetap, tanpa commerce/cetakan asli. Kampanye belum
+diaktifkan; periode/syarat Owner dan UAT aktual masih OPEN. Dokumen SagaOPS,
+master, keputusan/gaps/sync dan changelog diperbarui, bukan rilis Member baru.
+
 ## 2026-10-24 - Pemulihan layar kosong sebelum login Saga Member
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk konfigurasi ingress Member, berdasarkan laporan Andreas dan pemeriksaan runtime 24 Oktober. Pengiriman JavaScript terpotong pada koneksi terbatas sehingga hanya header terlihat. Pengaturan proxy khusus Member dikoreksi dengan backup konfigurasi, shared release lock, validasi Nginx dan graceful reload.

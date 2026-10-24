@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-24 - Sinkronisasi promo publik + voucher SagaPOS
+
+CONFIRMED dari persetujuan Andreas dan bukti source/runtime729f351/rollback7b97534.
+Production berubah untuk fitur promo umum dan penggabungan voucher opt-in;
+Linux108PASS tanpa skip, recovery/activation dan live UI/preview PASS. Tidak ada
+aktivasi kampanye Grand Opening, transaksi, cetakan atau perubahan nota/printer.
+Dokumen SagaOPS PRODUCT/DOSSIER/CHANGELOG, portfolio/master/DECISIONS/GAPS/SYNC
+diselaraskan; dokumen perubahan produk lain dipertahankan. UAT aktual dan syarat
+kampanye menunggu Owner/operator; source/knowledge memiliki commit terpisah.
+
 ## 2026-10-24 - Pemulihan layar kosong sebelum login Saga Member
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk konfigurasi ingress Member, berdasarkan laporan Andreas dan pemeriksaan runtime 24 Oktober. Pengiriman JavaScript terpotong pada koneksi terbatas sehingga hanya header terlihat. Pengaturan proxy khusus Member dikoreksi dengan backup konfigurasi, shared release lock, validasi Nginx dan graceful reload.

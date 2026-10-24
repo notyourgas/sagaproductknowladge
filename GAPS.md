@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-24 - Promo gabungan tersedia; kampanye dan UAT aktual terpisah
+
+Runtime729f351 live; Linux108PASS dan Owner/Kiosk/quote verified. Belum ada periode
+Grand Opening yang ditentukan dan tidak ada kampanye20persen yang diaktifkan oleh
+agent. Penanggung jawab Andreas/Owner: buat promo otomatis, tetapkan20persen,
+kanal/menu/periode dan izinkan voucher bila diinginkan, lalu aktifkan/publish.
+Penanggung jawab operator: validasi satu transaksi pelanggan sah untuk dua
+potongan dan nota/checker; jangan menciptakan penjualan demi pengujian.
+Voucher Kiosk masih online/assisted cash/kode Member lengkap; QRIS/offline,
+reward poin, tier dan Invitation bukan tambahan benefit gabungan yang dirilis.
+Tidak ada perubahan layout atau commissioning printer baru; bukti fisik versi
+lama tidak dijadikan bukti penerimaan promo baru. BUSINESS_READY tetap terbuka.
+
 ## 2026-10-24 - Copy aktif; resep varian dan validasi bahan belum lengkap
 
 Data8/version100/runtime7b97534/ingress eeec150 active dan browser verified.

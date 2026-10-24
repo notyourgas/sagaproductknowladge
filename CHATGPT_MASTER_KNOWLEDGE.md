@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-24 - SagaPOS promo tanpa Member + voucher opsional
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE runtime729f351/rollback7b97534.
+Dashboard mendukung promo otomatis untuk non-Member, scope Kiosk/Kasir dan
+penggabungan satu voucher Member secara opt-in. Voucher dahulu, promo berikutnya
+atas sisa eligible; tidak ikut menumpuk tier/reward/manual/Invitation. Kiosk
+voucher tetap kode lengkap/online/assisted cash dengan PIN staf, termasuk saldo
+nol. Linux108PASS, recovery/activation/monitor dan live UI/quote PASS. Tidak ada
+perubahan katalog100/revisi8, harga, layout nota, printer, checker atau QRIS.
+Kampanye Grand Opening20persen BELUM diaktifkan; Owner menentukan periode/syarat
+dan publish. Penukaran aktual UAT OPEN, tanpa transaksi/cetakan rekaan; bukan
+BUSINESS_READY. Member backend tidak dirilis ulang.
+
 ## 2026-10-24 - Pemulihan layar kosong sebelum login Saga Member
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk konfigurasi ingress Member, berdasarkan laporan Andreas dan pemeriksaan runtime 24 Oktober. Pengiriman JavaScript terpotong pada koneksi terbatas sehingga hanya header terlihat. Pengaturan proxy khusus Member dikoreksi dengan backup konfigurasi, shared release lock, validasi Nginx dan graceful reload.

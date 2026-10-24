@@ -1,5 +1,23 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-24 - Promo umum dan voucher Member dapat digabung
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source/runtime
+729f3514fd35f98b0e87726564cd47b741a0bea4, rollback7b97534. Owner dapat membuat
+promo otomatis tanpa Member, membatasi Kiosk/Kasir dan menu, serta memilih
+"Boleh digabung dengan voucher Member" untuk diskon persen/rupiah. Default
+penggabungan OFF. Voucher server-authorized dikurangi dahulu, lalu promo atas
+sisa menu eligible; tier/reward/manual/Invitation tidak ikut ditumpuk. Rincian
+dua potongan tampil terpisah dan alokasinya dibekukan untuk audit/refund.
+Voucher Kiosk tetap kode Member lengkap, online, assisted-cash/PIN staf;
+saldo nol pun menunggu staf. Reservasi voucher tidak memakai total diskon gabungan.
+Linux108PASS/0FAIL/0SKIP dengan backend Member pinned, restart/crash/retry/refund;
+recovery dan activation PASS. Live Owner/Kiosk1366/768/390 PASS; katalog100/
+publikasi8, harga/nota/printer/checker/QRIS tidak berubah. Tidak membuat pesanan,
+pembayaran, penukaran asli atau cetakan. Grand Opening20persen belum diaktifkan:
+periode/syarat harus ditentukan Owner dan diterbitkan. UAT penukaran aktual OPEN,
+bukan BUSINESS_READY; deployment fitur tidak berarti kampanye sudah berjalan.
+
 ## 2026-10-24 - Copy rasa 24 menu terbaca di Kiosk
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED sesuai persetujuan

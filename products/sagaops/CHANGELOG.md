@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-24 - Rilis penggabungan promo publik dan voucher Member
+
+CONFIRMED Andreas; source/runtime729f351, rollback7b97534. Promo otomatis tanpa
+Member, scope Kiosk/Kasir dan opt-in penggabungan voucher; voucher dahulu, promo
+atas sisa eligible. Snapshot dua komponen, reservasi nilai voucher dan staff guard
+saldo nol diperbaiki. Linux108PASS tanpa skip; recovery/activation/monitor dan
+live Owner/Kiosk/preview PASS. Katalog100/revisi8 dan konfigurasi nota/printer/
+checker/QRIS tetap; tidak ada commerce atau TEST fisik. Fitur deployed, kampanye
+Grand Opening20persen belum aktif; jadwal/syarat Owner dan UAT aktual OPEN.
+
 ## 2026-10-24 - Terbitkan copy rasa menu dan tampilkan di Kiosk
 
 CONFIRMED Andreas:24deskripsi, ringkasan kartu, profil rasa dan catatan bahan;

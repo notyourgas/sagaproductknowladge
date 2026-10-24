@@ -1,5 +1,21 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-293 - Promo publik dapat digabung dengan voucher Member secara opt-in
+
+- Tanggal:24 Oktober2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: implementasikan sampai usable promo non-Member di Kiosk/Kasir dan
+  penggabungan satu voucher Member bila Owner mengizinkan per promo.
+- Alasan: promosi seperti Grand Opening tidak mensyaratkan keanggotaan dan
+  pelanggan Member tetap dapat memakai voucher yang eligible.
+- Alternatif: selalu eksklusif atau menumpuk semua benefit secara otomatis,
+  tidak dipakai. Default penggabungan tetap OFF.
+- Dampak: voucher dahulu, persen/rupiah atas sisa eligible, dua rincian/alokasi
+  tercatat; tier/reward/manual/Invitation tetap terpisah. Kiosk tunai/online/PIN.
+- Status: source/runtime729f351 deployed, rollback7b97534, Linux108PASS dan live
+  Owner/Kiosk/preview PASS. Kampanye belum aktif; tanggal/syarat Owner serta UAT
+  transaksi sah OPEN. Nota/printer/checker/QRIS/harga tidak diubah.
+- Dokumen: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, GAPS, portfolio dan sync.
+
 ## DEC-292 - Copy rasa pelanggan dari SOP pada Kiosk
 
 - Tanggal:24 Oktober2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

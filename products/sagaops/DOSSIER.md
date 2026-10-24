@@ -1,5 +1,28 @@
 # SagaOPS Dossier
 
+## 2026-10-24 - Kontrak promo publik + voucher Member
+
+CONFIRMED Andreas: satu promo umum dan satu voucher Member dapat dipakai bersama
+di kanal yang dipilih Owner. Source/runtime729f351, rollback7b97534; core37 tetap.
+Reuse catalog workspace, jadwal WIB, scope menu, minimum/cap, kuota, publikasi dan
+audit. allowMemberVoucher defaultfalse; salesChannels membatasi Kiosk/Cashier.
+Voucher dialokasikan sekali sesuai produk aslinya atau integer largest-remainder;
+diskon persen/rupiah berikutnya hanya atas sisa baris eligible. Total nonnegatif,
+snapshot komponen/alokasi disimpan sebelum pembayaran. Provider mereservasi hanya
+nilai voucher; binding kode/retry tetap server-owned. Kiosk memerlukan kode Member
+lengkap dan konfirmasi staf untuk assisted cash, termasuk total nol. Pending,
+acknowledgement hilang, restart dan refund tidak menggandakan penukaran.
+Linux40099309923 dalam2m53s:108PASS tanpa skip, Member backend pinnedc423884,
+tanpa deploy Member baru. Restore pertama ditolak antrean laporan backup yang
+sudah overdue; diagnosis namespace/disposable, backup baru dan rehearsal segera
+PASS tanpa melonggarkan health. Backup terenkripsi/offsite/checksum, candidate/
+current/candidate recovery, activation dan monitor PASS. Live UI Owner/Kiosk,
+preview20persen dan hash konfigurasi PASS; tanpa commerce/cetakan asli.
+Scope operasional sekarang online, Kiosk voucher assisted cash saja, tidak
+digabung tier/reward/manual/Invitation. Nota/printer/checker/QRIS/layout tetap.
+Tidak mengaktifkan kampanye atau mengarang tanggal. Owner menetapkan syarat,
+menerbitkan promo lalu operator memvalidasi pada transaksi sah berikutnya.
+
 ## 2026-10-24 - Copy operasional dari SOP dan perbaikan import Kiosk
 
 Persetujuan Andreas mencakup24copy menu dari SOP dan karakter Magic Milk;
