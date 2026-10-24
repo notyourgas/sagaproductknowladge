@@ -1,5 +1,19 @@
 # SagaBook Changelog
 
+## 2026-10-25 - Reschedule sesi lewat dan charge admin Rp30.000
+
+CONFIRMED Andreas. Source
+[39ba815d3b13f8a1752bfb2caacf79eb61e0c09c](https://github.com/notyourgas/sagabook/commit/39ba815d3b13f8a1752bfb2caacf79eb61e0c09c)
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Admin kini dapat
+memindahkan sesi lewat/no-show ke slot berikutnya dan mencatat biaya tetap
+Rp30.000 terpisah, dengan status Belum dibayar/Lunas yang bisa dikoreksi.
+Slot bentrok/lewat ditolak; finance/ledger dan closing mengikuti status biaya.
+14 tes fitur/105 assertions, 30 regresi reschedule, browser desktop/mobile,
+regresi UI existing, build dan TypeScript critical PASS. Diagnostik komponen
+baseline tetap 57 tanpa tambahan. Tanpa migration/dependency baru. Production
+tidak berubah; deploy/UAT operator OPEN. Dokumen PRODUCT/DOSSIER, master,
+keputusan, gaps, sync dan changelog diselaraskan.
+
 ## 2026-10-24 - SagaBook rekening dan QRIS statis pilot tersimpan
 
 CONFIRMED / PRODUCTION_CONFIGURED / SCOPED_READBACK_PASS. Sesuai instruksi

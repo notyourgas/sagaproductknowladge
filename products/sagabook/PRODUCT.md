@@ -1,5 +1,26 @@
 # SagaBook Product Knowledge
 
+## 2026-10-25 - Admin reschedule sesi lewat dengan biaya Rp30.000
+
+CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
+Sumber: instruksi Andreas 25 Oktober 2026 dan
+[39ba815d3b13f8a1752bfb2caacf79eb61e0c09c](https://github.com/notyourgas/sagabook/commit/39ba815d3b13f8a1752bfb2caacf79eb61e0c09c),
+branch `codex/sagabook-admin-late-reschedule-20261025`.
+Admin dapat memindahkan sesi yang waktu mulainya sudah lewat, termasuk no-show,
+ke slot mendatang pada hari yang sama atau hari berikutnya. Jadwal langsung
+dipindahkan dengan biaya tetap Rp30.000, awalnya belum dibayar. Admin dapat
+mencatat Lunas/Belum dibayar dan metode pembayaran melalui Riwayat reschedule.
+Biaya terpisah dari pembayaran booking; pemasukan/closing hanya menghitung
+biaya lunas. Koreksi tidak menggandakan transaksi dan closing terkunci dijaga.
+Reschedule sebelum sesi tetap memakai kebijakan existing.
+
+Tes fitur 14/14 (105 assertions), regresi backend reschedule 30/30, browser
+desktop/mobile dan regresi UI existing PASS; build dan TypeScript critical PASS.
+Pemeriksaan komponen lebih luas memiliki 57 diagnostik baseline yang sama,
+tanpa diagnostik baru. Tanpa migration/dependency baru. Production tidak
+berubah oleh pekerjaan ini; deploy dan UAT production OPEN, BUSINESS_READY
+tidak diklaim. Next action: rilis terotorisasi dan UAT operator.
+
 ## 2026-10-24 - SagaBook rekening dan QRIS statis pilot tersimpan
 
 CONFIRMED / PRODUCTION_CONFIGURED / SCOPED_READBACK_PASS. Sesuai instruksi

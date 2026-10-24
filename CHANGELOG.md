@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - SagaBook reschedule admin sesi lewat
+
+CONFIRMED dari instruksi Andreas dan source39ba815d3b13f8a1752bfb2caacf79eb61e0c09c.
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED: sesi lewat/no-show
+dapat dipindahkan ke slot mendatang, dengan charge Rp30.000 dan status biaya
+yang bisa dikoreksi admin. Mencatat kebutuhan operasional, alur, nominal,
+permission dan batas finance/closing pada SagaBook PRODUCT/DOSSIER/CHANGELOG,
+master, portfolio, DECISIONS, GAPS dan SYNC_STATUS. Tes fitur14/105assertions,
+regresi backend30, desktop/mobile dan regresi UI existing, build/TypeScript
+critical PASS;57diagnostik komponen sama dengan baseline. Production tidak
+berubah; rilis dan UAT production OPEN. Knowledge commit: main HEAD.
+
 ## 2026-10-24 - Sinkronisasi promo publik + voucher SagaPOS
 
 CONFIRMED dari persetujuan Andreas dan bukti source/runtime729f351/rollback7b97534.

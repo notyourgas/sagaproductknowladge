@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-294 - Admin reschedule sesi lewat dengan biaya tetap Rp30.000
+
+- Tanggal: 25 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: admin dapat memilih tanggal/jam berikutnya untuk sesi yang sudah
+  lewat, dengan charge Rp30.000 dan status pembayaran charge yang bisa diubah.
+- Alasan: operator perlu memindahkan sesi terlewat dan mencatat penerimaan biaya.
+- Alternatif: menolak no-show atau memakai persentase biaya sebelum sesi;
+  keputusan ini memakai nominal tetap khusus sesi lewat.
+- Dampak: slot tersedia dipindahkan langsung; biaya terpisah paid/unpaid,
+  finance/ledger tunggal, audit, batas cabang dan closing terkunci tetap dijaga.
+- Status: source39ba815d pushed/local validated; belum deploy, UAT production OPEN.
+- Dokumen: SagaBook PRODUCT/DOSSIER/CHANGELOG, master, GAPS dan SYNC_STATUS.
+
 ## DEC-293 - Promo publik dapat digabung dengan voucher Member secara opt-in
 
 - Tanggal:24 Oktober2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

@@ -1,5 +1,31 @@
 # SagaBook Dossier
 
+## 2026-10-25 - Reschedule admin sesudah waktu sesi
+
+CONFIRMED dari Andreas; source
+[39ba815d3b13f8a1752bfb2caacf79eb61e0c09c](https://github.com/notyourgas/sagabook/commit/39ba815d3b13f8a1752bfb2caacf79eb61e0c09c),
+SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
+
+Booking Detail > Aksi lainnya > Bantu reschedule: pilih tanggal/jam, periksa
+slot dan biaya, isi catatan lalu terapkan. Admin memerlukan assist_reschedule
+dan manage_change_requests. Timezone tenant menentukan apakah sesi sudah lewat;
+slot tujuan harus mendatang, tersedia dan sesuai jam buka. No-show boleh,
+checked-in/berlangsung/selesai/cancelled/refunded/voided tetap ditolak.
+
+Jadwal langsung confirmed dengan tagihan tetap Rp30.000 berstatus unpaid.
+Riwayat reschedule menyediakan Ubah pembayaran biaya: paid/unpaid, metode
+cash/EDC/transfer manual/QRIS dan catatan. Ini pencatatan oleh admin; tidak
+membuat tagihan gateway. Pembayaran booking utama dan add-on tidak diubah.
+Transaksi finance/ledger tunggal per reschedule, audit dan versi data mencegah
+duplikasi/tab lama; unpaid dikeluarkan dari pemasukan dan closing yang sudah
+submitted/approved tidak bisa diubah. Kebijakan sebelum sesi tetap existing.
+
+14 tes fitur/105 assertions, 30 regresi backend reschedule, browser baru
+desktop/mobile, regresi UI existing, build dan TypeScript critical PASS.
+57 diagnostik pemeriksaan komponen sama dengan baseline, tanpa error baru.
+Tidak ada migration/dependency baru. Production belum berubah oleh perubahan
+ini; deployment dan authenticated production UAT OPEN. Bukan BUSINESS_READY.
+
 ## 2026-10-23 - Pemulihan penolakan QRIS Tokopay, belum deploy
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

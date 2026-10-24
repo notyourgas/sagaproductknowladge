@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaBook reschedule admin sesi lewat
+
+CONFIRMED Andreas; source39ba815d SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED. Admin memilih slot mendatang dan jadwal langsung
+pindah dengan charge tetap Rp30.000; status biaya dapat diubah Belum dibayar/
+Lunas secara terpisah dari booking. Finance/ledger tunggal dan closing terkunci
+dijaga. Tes fitur14/105assertions, regresi reschedule30, browser desktop/mobile,
+regresi UI existing, build/TypeScript critical PASS;57diagnostik komponen sama
+dengan baseline. Dokumen SagaBook/master/keputusan/gaps/sync diperbarui.
+Production tidak berubah; rilis dan UAT operator OPEN, bukan BUSINESS_READY.
+
 ## 2026-10-24 - SagaPOS: promo publik dapat digabung voucher Member
 
 CONFIRMED Andreas, source/runtime729f351/rollback7b97534 PRODUCTION_DEPLOYED.

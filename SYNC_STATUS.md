@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaBook reschedule sesi lewat dengan charge admin
+
+CONFIRMED source39ba815d3b13f8a1752bfb2caacf79eb61e0c09c pada branch
+codex/sagabook-admin-late-reschedule-20261025, SOURCE_PUSHED / LOCAL_VALIDATED /
+IMPLEMENTED_NOT_DEPLOYED. Biaya tetap Rp30.000, pindah jadwal langsung dan
+pembayaran charge paid/unpaid terpisah. Tes fitur14/105assertions, regresi30,
+browser desktop/mobile dan UI existing, build/TypeScript critical PASS;
+diagnostik komponen baseline57 tanpa tambahan. PRODUCT/DOSSIER/CHANGELOG,
+master/portfolio/keputusan/gaps/root changelog tersinkron. Production tidak
+berubah oleh pekerjaan ini; deployment dan UAT production OPEN.
+
 ## 2026-10-24 - SagaPOS penggabungan promo dan voucher
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE source/runtime729f351,
