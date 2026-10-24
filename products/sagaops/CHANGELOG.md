@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-24 - Terbitkan copy rasa menu dan tampilkan di Kiosk
+
+CONFIRMED Andreas:24deskripsi, ringkasan kartu, profil rasa dan catatan bahan;
+koreksi copy gula aren/berry yang tidak sesuai SOP, nutrisi dummy dihapus.
+Publikasi8/version100 ACTIVE, runtime7b97534/rollback6983408. Linux59PASS,
+recovery/activation/monitor PASS. Ingress-source eeec150 memperbaiki import
+statis yang menyebabkan loading; nginx/protected-route/browser Kiosk/e-menu
+PASS. Harga/opsi/foto/nota/printer/checker/QRIS tetap; tanpa transaksi/stok/cetakan.
+Resep varian belum lengkap tetap konservatif; UAT Chromebook/taste/label OPEN.
+
 ## 2026-10-24 - Harga Es Kopi Saga, Saga Premiyum dan Magnosiyum
 
 CONFIRMED / PRODUCTION_ACTIVATED publikasi7/version75: Rp16000/Rp18000/Rp20000.

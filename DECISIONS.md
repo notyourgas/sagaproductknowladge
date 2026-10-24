@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-292 - Copy rasa pelanggan dari SOP pada Kiosk
+
+- Tanggal:24 Oktober2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: susun dan terbitkan copy seluruh menu aktif agar pelanggan Kiosk
+  memahami rasa; Magic Milk milky/gurih/silky/manis, tanpa membocorkan takaran.
+- Alasan: copy dummy gula aren/berry tidak sesuai resep dan beberapa menu kosong.
+- Alternatif: mengarang bahan/nutrisi atau mengubah harga/printer, tidak dipakai.
+- Dampak:24detail data8/version100, ringkasan/detail/profil rasa di Kiosk, nutrisi
+  dummy dihapus; varian dengan resep belum lengkap memakai deskripsi terbatas.
+- Status: runtime7b97534 dan ingress eeec150 active; Linux59PASS/nginx/recovery/
+  browser PASS. Harga/opsi/nota/printer tetap. UAT Chromebook/rasa/alergen OPEN.
+- Dokumen: [SagaOPS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md).
+
 ## DEC-291 - Harga tiga kopi khas Rp16000, Rp18000 dan Rp20000
 
 - Tanggal:24 Oktober2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

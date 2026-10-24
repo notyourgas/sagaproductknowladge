@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-24 - SagaPOS copy rasa Kiosk terikat rilis
+
+CONFIRMED: katalog publikasi8/version100, app runtime
+7b97534697038a357e5a17e5e50e151eb7c73ee3 dan rollback
+6983408ad6e6470bb5d5b243535ff64ff5b52587; ingress-only source
+eeec150520bb5cea26dc9d125c465597b85d333a. Source branch pushed/clean;
+ingress-only commit tidak disamarkan sebagai binary app aktif. Linux40065811625
+59PASS, backup/recovery/activation/monitor, nginx dan browser Kiosk/e-menu PASS.
+24copy active, harga/foto/opsi/nota/printer/QRIS tetap; tanpa transaksi/stok/cetakan.
+Knowledge mulai dari main71854c6, preserving SagaBook independen. UAT Chromebook,
+validasi rasa dan label alergen aktual OPEN; bukan klaim BUSINESS_READY baru.
+
 ## 2026-10-24 - SagaBook rekening dan QRIS statis pilot tersimpan
 
 CONFIRMED / PRODUCTION_CONFIGURED / SCOPED_READBACK_PASS. Sesuai instruksi

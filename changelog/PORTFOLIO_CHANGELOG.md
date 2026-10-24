@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-24 - SagaPOS deskripsi rasa Kiosk aktif
+
+CONFIRMED Andreas, data8/version100/24menu. Kiosk kini menampilkan ringkasan,
+deskripsi, profil rasa dan catatan bahan; copy dummy yang salah dikoreksi dan
+angka nutrisi dummy dihapus. Runtime7b97534, rollback6983408, ingress eeec150.
+Linux59PASS/recovery/monitor/nginx/browser Kiosk/e-menu PASS. Harga/opsi/gambar/
+nota/printer/QRIS tetap; tanpa transaksi/stok/cetakan. Varian tanpa resep lengkap
+memakai copy konservatif; UAT Chromebook dan review rasa/alergen aktual OPEN.
+
 ## 2026-10-24 - SagaBook rekening dan QRIS statis pilot tersimpan
 
 CONFIRMED / PRODUCTION_CONFIGURED / SCOPED_READBACK_PASS. Sesuai instruksi

@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-24 - SagaPOS copy rasa Kiosk aktif
+
+CONFIRMED / PRODUCTION_ACTIVATED:24menu memiliki copy pelanggan yang disetujui
+Andreas, ringkasan kartu dan detail/profil rasa di Kiosk; e-menu/Kasir berbagi
+publikasi8/version100. Magic Milk: susu racikan Saga, milky/gurih/manis/halus.
+Copy Es Kopi Saga cheesecake dan Magnosiyum kopi-cokelat dikoreksi; nutrisi dummy
+dihapus, alergen tidak diklaim lengkap. Resep varian yang belum lengkap memakai
+copy terbatas, bukan bahan rekaan. Runtime7b97534, rollback6983408; ingress
+eeec150 menutup401 import statis tanpa membuka API Owner. Linux59PASS, recovery/
+monitor/nginx dan browser Kiosk/e-menu PASS. Harga16/18/20ribu tiga kopi khas,
+opsi/foto/nota/printer/QRIS tetap; tanpa transaksi/stok/cetakan. UAT Chromebook
+dan rasa aktual OPEN. Muat ulang online saat idle, jangan hapus ledger/browser.
+
 ## 2026-10-24 - SagaBook rekening dan QRIS statis pilot tersimpan
 
 CONFIRMED / PRODUCTION_CONFIGURED / SCOPED_READBACK_PASS. Sesuai instruksi

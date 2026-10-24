@@ -1,5 +1,22 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-24 - Copy rasa 24 menu terbaca di Kiosk
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED sesuai persetujuan
+Andreas: ringkasan rasa pada kartu Kiosk, deskripsi lengkap/profil rasa/catatan
+bahan pada detail menu. Data publikasi8/version100 juga dipakai Kasir/e-menu.
+Magic Milk dijelaskan sebagai racikan susu khas Saga yang milky, gurih, manis,
+lembut dan halus. Es Kopi Saga kini cheesecake, bukan copy dummy gula aren;
+Magnosiyum kopi/cokelat/butterscotch/vanilla, bukan berry/taro. Nutrisi dummy
+dihapus dari24detail; susu diungkap bila diketahui, alergen lain belum diverifikasi.
+Resep empat varian belum lengkap dan pemetaan Orange belum pasti: copy terbatas,
+tanpa mengarang bahan. Harga16/18/20ribu tiga kopi khas dan produk/opsi/foto/
+nota/printer/checker/QRIS tetap, tanpa transaksi/stok/cetakan.
+Runtime7b97534 aktif, rollback6983408; ingress-source eeec150 memperbaiki
+dependensi statis offline yang memblokir fresh Kiosk, tanpa membuka API Owner.
+Linux59PASS, nginx/protected-route probes PASS, browser Kiosk berotorisasi dan
+e-menu PASS; UAT Chromebook aktual/taste review tetap OPEN, bukan BUSINESS_READY.
+
 ## 2026-10-24 - Harga tiga kopi khas diperbarui
 
 CONFIRMED / PRODUCTION_ACTIVATED data publikasi7/version75: Es Kopi Saga

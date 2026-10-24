@@ -1,5 +1,31 @@
 # SagaOPS Dossier
 
+## 2026-10-24 - Copy operasional dari SOP dan perbaikan import Kiosk
+
+Persetujuan Andreas mencakup24copy menu dari SOP dan karakter Magic Milk;
+tidak menerbitkan formulasi/takaran internal. Dua lapisan copy dan tiga profil
+rasa memakai catalogDetails existing.19menu memiliki dasar SOP/konfirmasi
+penyajian; Mohito/Range Bliss/Lychee Ti/Lemon Ti memakai deskripsi konservatif,
+Orange->Oyen belum dipastikan. Tidak mengarang mint/grapefruit/juice atau klaim
+sehat/bebas gula/kafein/alergen. NutritionEstimate null, bukan angka dummy final.
+Owner API24update/1publish,7/75->8/100; read-back hanya catalogDetails berubah.
+24quote harga read-only PASS, nama/status/media/varian/modifier/promo/ordering/
+receipt/printer/checker/QRIS tetap; stok fisik tidak berubah, tanpa checkout.
+Runtime7b97534697038a357e5a17e5e50e151eb7c73ee3, rollback6983408. Linux
+40065811625 SUCCESS1m54s/59PASS0FAIL0SKIP, static1243modul, offline196asset.
+Backup terenkripsi/disposable restore/off-host hash/recovery kandidat-lama-
+kandidat/activation/monitor PASS. Upaya rehearsal pertama berhenti sebelum
+aktivasi karena mode baca konfigurasi offline; dipulihkan dan dikoreksi tanpa
+mengubah paket. Hambatan kapasitas ditutup dengan arsip artefak lama terverifikasi;
+release aktif/rollback/DB/backup/produk lain dipertahankan.
+Fresh browser menemukan401 pada offline/client.js dari ingress lama. Source
+eeec150520bb5cea26dc9d125c465597b85d333a menambah tepat tujuh dependensi GET
+pada dua map existing; config berubah dua baris, nginx-t/probes positive/negative
+PASS, tanpa restart app. API offline/Owner/staf tidak dibuka oleh cookie customer.
+Kiosk berotorisasi1366/768/390 dan e-menu24detail1280/768/390 PASS; penyerahan
+ke Kiosk mencabut sesi Owner milik pengujian. UAT Chromebook/rasa/alergen label
+aktual OPEN. Tidak ada TEST fisik atau penerimaan printer baru pada milestone ini.
+
 ## 2026-10-24 - Publikasi harga tiga kopi khas
 
 Owner catalog API existing:3product update dan1publish, version71->75,

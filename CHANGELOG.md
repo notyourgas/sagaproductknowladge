@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-24 - SagaPOS copy rasa Kiosk dan perbaikan dependensi statis
+
+CONFIRMED / PRODUCTION_ACTIVATED, Andreas menyetujui24copy menu berbasis SOP.
+Data8/version100 dan runtime7b97534 aktif; ingress eeec150 memperbaiki loading
+Kiosk tanpa membuka API Owner. Linux59PASS/recovery/monitor/nginx/browser PASS;
+harga/nota/printer tetap. UAT Chromebook/rasa aktual OPEN. PRODUCT/DOSSIER/
+product changelog/master/portfolio/decision/gaps/sync disinkronkan dari bukti rilis.
+
 ## 2026-10-24 - SagaBook rekening dan QRIS statis pilot tersimpan
 
 CONFIRMED / PRODUCTION_CONFIGURED / SCOPED_READBACK_PASS. Sesuai instruksi

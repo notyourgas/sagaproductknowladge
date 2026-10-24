@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-24 - Copy aktif; resep varian dan validasi bahan belum lengkap
+
+Data8/version100/runtime7b97534/ingress eeec150 active dan browser verified.
+SOP kini tersedia untuk sebagian besar menu, tetapi resep khusus Mohito, Range
+Bliss, Lychee Ti, Lemon Ti serta mapping Orange->Oyen masih belum lengkap.
+Copy konservatif menghindari klaim bahan yang belum diketahui. Penanggung jawab
+Andreas/barista: cocokkan rasa dan identitas resep, lalu lengkapi copy lewat
+editor existing. Label bahan pabrikan/alergen belum diaudit menyeluruh; hanya
+susu yang diketahui diungkap, tidak menyatakan bebas alergen/gula/kafein.
+Nutrisi dummy dihapus, tidak diganti angka rekaan. SOP bukan bukti HPP/biaya
+premium sudah diterbitkan: inventory/HPP tidak diubah oleh task copy ini.
+UAT Chromebook aktual OPEN; muat ulang online saat tidak ada pesanan/pembayaran
+aktif. Jangan hapus browser/ledger atau memaksa pembaruan cache saat uang pending.
+
 ## 2026-10-24 - Harga kopi baru aktif; verifikasi perangkat aktual terbuka
 
 Data7/version75 aktif Es Kopi Saga16000/Saga Premiyum18000/Magnosiyum20000;
