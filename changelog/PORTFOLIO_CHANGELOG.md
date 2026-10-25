@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaPOS kandidat voucher suffix dan HPP restore
+
+CONFIRMED Andreas, sourcece2519d/CI40182792772 sukses; candidate/recovery HPP-only
+dibangun, IMPLEMENTED_NOT_DEPLOYED. Suffix unik membuka voucher Kiosk tanpa
+full-code ulang pada kandidat; server/PIN/payment/collision guards tetap.
+Patch UNMANAGED sah lolos snapshot live read-only; runtimec03e44e6/reporting stale
+tetap. Owner/host release/UAT pending; Invitation pelanggan belum terbukti pulih.
+Nota/printer/promo/katalog112 tetap; SagaOPS docs/master/GAPS/SYNC_STATUS/DEC300 updated.
+
 ## 2026-10-25 - SagaPOS Air Mineral 750 ml
 
 CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED, katalog112/

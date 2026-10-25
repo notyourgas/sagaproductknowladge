@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaPOS source voucher/HPP; belum deployed
+
+CONFIRMED sourcece2519d, CI40182792772 sukses; candidate/recovery2c02618 dibangun.
+SOURCE_CI_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; runtimec03e44e6/reporting stale.
+Snapshot HPP live read-only gagal pada current dan PASS dengan patch, tanpa
+mutasi data. Integritas download, Owner dan host release gates pending; request
+Invitation spesifik/UAT asli tidak diklaim. Produk/master/changelogs/GAPS/DEC300
+diselaraskan, nota/printer/promo/katalog112 tetap; bukan BUSINESS_READY.
+
 ## 2026-10-25 - SagaPOS publikasi menu Air Mineral
 
 CONFIRMED accepted scope: katalog112/publikasi10, runtimec03e44e6 unchanged.

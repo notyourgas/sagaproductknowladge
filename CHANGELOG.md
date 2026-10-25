@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - SagaPOS kandidat suffix-voucher dan HPP restore
+
+CONFIRMED sourcece2519d/CI40182792772 sukses, candidate/recovery HPP-only dibangun;
+IMPLEMENTED_NOT_DEPLOYED. Suffix unik Kiosk disetujui, guards/PIN tetap. Patch
+UNMANAGED sah lolos snapshot live read-only; runtimec03e44e6/reporting stale tetap.
+Owner/host release/UAT pending; Invitation spesifik tidak diklaim pulih.
+SagaOPS docs/master/changelogs/GAPS/SYNC_STATUS/DEC300 diperbarui; nota/printer/
+promo/katalog tetap. Tidak membuat transaksi palsu atau physical TEST.
+
 ## 2026-10-25 - SagaPOS menu Air Mineral aktif
 
 CONFIRMED Andreas: katalog112/publikasi10, runtimec03e44e6 unchanged, native

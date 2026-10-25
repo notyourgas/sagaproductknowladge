@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-25 - Kandidat voucher suffix dan HPP; belum production
+
+CONFIRMED Andreas: sourcece2519d, CI40182792772 sukses, candidate/recovery HPP-only
+2c02618 dibangun. Suffix unik membuka voucher Kiosk langsung; collision/server/
+PIN/payment tetap. Restore UNMANAGED sah diperbaiki, snapshot live read-only PASS
+dengan patch. Runtimec03e44e6/reporting stale tetap; Owner/host release/UAT pending.
+Tidak mengklaim Invitation pelanggan pulih atau BUSINESS_READY. Nota/printer/
+promo/katalog112 tetap. Kebijakan runtime full-code lama belum diganti aktivasi.
+
 ## 2026-10-25 - Tambah Air Mineral 750 ml
 
 CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED. Native Owner

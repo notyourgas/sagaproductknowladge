@@ -1,5 +1,21 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - Kandidat voucher empat karakter; belum deployed
+
+CONFIRMED Andreas / SOURCE_CI_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
+ce2519d38e5bbfb49ce251721f6a5543b1a565ee, Linux40182792772 sukses; paket
+candidate dan recovery HPP-only2c02618 dibangun. Lookup empat karakter unik
+membuka/memilih voucher Kiosk tanpa kode lengkap ulang. Nama Member tetap tampil;
+collision meminta full code. Server identity, ownership/outlet/expiry, online
+assisted cash, PIN, payment dan idempotency tetap; Kasir/reward tidak diperluas.
+Suffix bukan autentikasi kuat dan dapat ditebak; PIN pembayaran tidak membuatnya
+rahasia. Discovery tetap voucher POS-applicable milik Member, bukan seluruh wallet.
+Runtime masihc03e44e6: perilaku baru BELUM aktif. Bug restore HPP menolak
+UNMANAGED sah; patch satu kondisi lolos snapshot live read-only tanpa mutasi data.
+Reporting current stale; sebab/status request Invitation pelanggan spesifik
+belum terbukti. Owner preflight dan host release gates pending. Nota/printer/
+promo/katalog112/publikasi10 tetap. Penukaran voucher asli dan BUSINESS_READY OPEN.
+
 ## 2026-10-25 - Air Mineral 750 ml aktif
 
 CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED, katalog112/

@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaPOS kandidat voucher singkat belum deployed
+
+CONFIRMED Andreas / SOURCE_CI_VALIDATED / IMPLEMENTED_NOT_DEPLOYED:
+sourcece2519d, CI40182792772 sukses; candidate/HPP-only recovery2c02618 dibangun.
+Kiosk akan memakai voucher setelah suffix unik tanpa kode lengkap ulang;
+collision/server/PIN/payment tetap dan Kasir/reward tidak diperluas. Suffix
+bukan autentikasi kuat. Patch restore UNMANAGED sah lolos snapshot live read-only,
+tanpa mutasi production. Runtimec03e44e6/reporting stale tetap; Owner/host release/
+UAT pending. Invitation spesifik belum dikonfirmasi pulih. Nota/printer/promo/
+katalog112 tetap. Lihat SagaOPS PRODUCT/DOSSIER/GAPS; bukan BUSINESS_READY.
+
 ## 2026-10-25 - SagaPOS Air Mineral 750 ml
 
 CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED, katalog112/

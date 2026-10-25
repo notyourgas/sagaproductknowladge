@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - Deploy voucher dan pemulihan HPP pending
+
+CONFIRMED sourcece2519d/CI40182792772 sukses; paket candidate/recovery dibangun.
+Runtimec03e44e6/reporting stale tetap; snapshot HPP UNMANAGED sah gagal dibaca
+current dan PASS dengan patch read-only. NEEDS CONFIRMATION: request Invitation
+pelanggan tidak memiliki korelasi log; jangan menyimpulkan PIN salah, order tidak
+tersimpan atau membuat order pengganti. Andreas membuka sesi Owner/bridge resmi
+tanpa membagikan password; executor melanjutkan integritas download, staging,
+backup/off-host/restore/recovery/activation/monitor. Setelah deploy, UAT voucher
+pelanggan sah memakai suffix unik, cek nama/cart/PIN/paid proof tanpa order palsu.
+Keputusan baru belum aktif dan menggantikan syarat full-code hanya saat aktivasi.
+Nota/printer/katalog/promo tetap; whole-product BUSINESS_READY masih OPEN.
+
 ## 2026-10-25 - Referensi biaya dan foto Air Mineral belum diberikan
 
 CONFIRMED katalog112/publikasi10: Air Mineral750ml/Rp6000 dengan Dingin/Suhu

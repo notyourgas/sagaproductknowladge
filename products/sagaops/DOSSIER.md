@@ -1,5 +1,20 @@
 # SagaOPS Dossier
 
+## 2026-10-25 - Kandidat suffix-voucher dan restore UNMANAGED
+
+CONFIRMED sourcece2519d38e5bbfb49ce251721f6a5543b1a565ee, CI40182792772 sukses,
+IMPLEMENTED_NOT_DEPLOYED. Suffix unik membuka voucher Kiosk tanpa full-code ulang;
+collision/server/PIN/payment/idempotency tetap. Kasir/reward tidak diperluas.
+Kode singkat bukan autentikasi kuat. Batas discovery100produk/Rp1miliar dan
+scope online assisted cash tetap, bukan voucher QRIS/offline/Invitation baru.
+HPP-only recovery2c02618 mempertahankan Kiosk lama; kedua paket memperbaiki
+restore UNMANAGED sah tanpa melonggarkan guard zero-cost/no-movement. Snapshot
+live read-only gagal pada current dan PASS dengan exact patch di memori.
+Runtimec03e44e6/reporting stale tetap. Request Invitation spesifik tidak tercatat
+di log, status ordernya belum terbukti. Owner, staging, backup/off-host/restore,
+candidate/recovery/candidate boot, activation/monitor/live UAT masih pending.
+Nota/printer/promo/katalog112 tetap; tidak membuat transaksi atau physical TEST.
+
 ## 2026-10-25 - Air mineral sebagai menu kemasan
 
 CONFIRMED Andreas: Air Mineral750ml/Rp6000 di Nonkop, Bar, Kasir/Kiosk aktif
