@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaPOS laporan closing tersedia
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Runtimeb5daed2,
+rollbackfe61b52; kalkulator pecahan, pratinjau, closing final/intent atomik,
+rincian benefit/menu/dana dan explicit copy melalui Native/WebUSB existing.
+Owner/reviewer boundary, customer/checker, printer, harga, QRIS dan promo tetap.
+Linux217PASS, recovery/off-host/activation/monitor/live UI/API PASS tanpa mutasi
+bisnis atau cetakan. UAT kertas dan closing operasional sah OPEN; bukan BUSINESS_READY.
+
 ## 2026-10-25 - SagaBook rilis sapaan customer WhatsApp
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED atas izin deploy Andreas.

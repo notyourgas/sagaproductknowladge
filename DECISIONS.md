@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-297 - Closing staff dan laporan cetak tanpa mengubah nota customer
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-25 |
+| Topik | Finalisasi opening, pengeluaran, closing dan serah terima SagaPOS |
+| Keputusan | Gunakan fondasi existing, hitung modal nyata dan pengeluaran sesuai sumber, lalu simpan laporan/intent atomik pada closing yang sah. Cetak laporan lewat Native/WebUSB shared queue, bukan transaksi palsu. Pertahankan permission Owner/reviewer, layout customer/checker, printer, harga, QRIS dan promo. |
+| Alasan | Staf memerlukan rekonsiliasi kas dan laporan menu/benefit/biaya yang tetap terbaca walau printer atau jaringan bermasalah. |
+| Alternatif | Catat hitungan tanpa snapshot; samarkan laporan sebagai order; hitung ulang histori dengan harga terkini; kirim ulang otomatis saat hasil kertas belum pasti. |
+| Dampak | Runtimeb5daed2/rollbackfe61b52, Linux217PASS, recovery/backup/off-host/activation/monitor dan live API/UI PASS. Tidak ada core migration atau pelonggaran authority. Belum ada closing production atau cetak fisik untuk acceptance. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE; kertas closing dan actual operational UAT OPEN, bukan BUSINESS_READY |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md) |
+
 ## DEC-296 - Sapaan Kak sebelum nama customer pada template WhatsApp
 
 - Tanggal: 25 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

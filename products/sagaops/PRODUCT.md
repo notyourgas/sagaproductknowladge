@@ -1,5 +1,28 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - Closing shift tersimpan dan diantrekan ke printer
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source/runtime
+b5daed202cdf0989926f0a3c65188e4eedb2de62, rollbackfe61b52. Kasir menyediakan
+kalkulator pecahan opsional, pratinjau tanpa menutup shift, laporan final dan
+riwayat/status cetak. Closing sah menyimpan snapshot dan satu intent cetak secara
+atomik; laporan memakai pengelola printer Native/WebUSB existing, bukan pesanan
+atau pembayaran buatan. Staf tetap mengirim hitungan; kewenangan Owner/reviewer
+yang existing tidak dilonggarkan. Permintaan closing terikat shift asal.
+Laporan memisahkan modal, tunai net kembalian, QRIS, refund, sumber pengeluaran,
+varian/menu, promo publik, voucher Member, Invitation, uang fisik, selisih,
+kas ditinggalkan dan serah terima. Akumulasi tanggal usaha terpisah dari shift
+dan bukan tutup buku harian, laba bersih atau settlement bank.
+Snapshot tidak dihitung ulang dari harga/promo terbaru. Hasil kirim tidak pasti
+ditahan untuk pemeriksaan; salinan eksplisit bernomor tidak mengulang closing.
+Printer belum aktif saat closing tidak otomatis mencetak histori ketika aktif.
+Linux217PASS/0FAIL/0SKIP, backup terenkripsi/off-host/restore/rollback/activation/
+monitor PASS. Live Owner/API/UI1366/768/390 PASS tanpa mutasi bisnis atau cetakan.
+Katalog103/publikasi9, harga, promo, QRIS, template customer/checker dan printer
+tetap. Tidak ada migrasi core baru. UAT kertas laporan dan closing operasional
+nyata OPEN; bukan BUSINESS_READY seluruh produk. Laporan final versi ini mulai
+terbentuk pada closing sah berikutnya, bukan backfill/cetak ulang histori.
+
 ## 2026-10-25 - Nama nota Kiosk dan Grand Opening20persen aktif
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, source/runtime

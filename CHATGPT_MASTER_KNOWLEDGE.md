@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaPOS closing final dan laporan printer
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source/runtimeb5daed202cdf0989926f0a3c65188e4eedb2de62,
+rollbackfe61b52. Kasir menambah hitung pecahan, pratinjau baca-saja, snapshot
+closing sah dan satu intent native print atomik. Laporan mencakup sales/menu/
+varian, voucher/promo/Invitation, refund, sumber biaya, uang fisik/selisih/
+ditinggalkan/serah terima; akumulasi tanggal usaha bukan penutupan buku harian,
+laba bersih atau settlement. Staf mengirim hitungan; Owner/reviewer authority
+tetap. Queue Native/WebUSB existing, hasil tidak pasti ditinjau, salinan eksplisit;
+tidak mengulang pembayaran atau mencetak histori otomatis. Linux217PASS, recovery/
+backup/off-host/activation/monitor dan live Owner/API/UI1366/768/390 PASS. Core37,
+catalog103/publication9, harga/promo/QRIS/customer/checker/printer tidak diubah.
+Tidak ada transaksi/closing production palsu, penukaran atau cetakan TEST.
+UAT kertas laporan dan closing operasional sah OPEN, bukan BUSINESS_READY.
+
 ## 2026-10-25 - SagaBook sapaan Kak WhatsApp production activated
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED atas izin deploy Andreas.

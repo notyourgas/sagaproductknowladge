@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-25 - Rilis laporan closing dan antrean cetak terpisah
+
+CONFIRMED Andreas; source/runtimeb5daed202cdf0989926f0a3c65188e4eedb2de62,
+rollbackfe61b52. Opening/expense foundations dipertahankan; tambah pecahan,
+pratinjau, snapshot final atomik, rincian menu/benefit/dana, history dan explicit
+copy. Pengiriman purpose laporan memakai Native/WebUSB existing, tidak membuat
+order palsu atau mengubah printer/customer/checker. Referensi shift dan tanggal
+usaha diperketat; kewenangan Owner/reviewer tetap. Linux217PASS/0FAIL/0SKIP;
+backup/off-host/restore/recovery/activation/monitor serta live API/UI PASS.
+Katalog103/publikasi9, harga, promo, QRIS dan template tetap. Tidak ada bisnis
+production atau cetakan untuk pengujian. Laporan kertas/closing sah berikutnya
+menunggu operator UAT, bukan BUSINESS_READY atau backfill laporan histori.
+
 ## 2026-10-25 - Aktifkan Grand Opening20persen dan nama nota Kiosk
 
 CONFIRMED Andreas; source/runtimefe61b52/rollback729f351. Katalog103/revisi9

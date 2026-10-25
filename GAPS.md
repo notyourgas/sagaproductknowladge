@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - UAT closing fisik SagaPOS tetap terbuka
+
+CONFIRMED: source/runtimeb5daed2 deployed, Linux217PASS serta live protected
+report API/Owner UI PASS. Customer/checker, template/printer, harga/QRIS/promo
+tetap; tidak ada transaksi/closing production palsu atau cetakan untuk meloloskan
+pengujian. NEEDS CONFIRMATION: pada closing sah berikutnya, operator memeriksa
+angka laporan, menu/benefit/biaya, panjang, ruang bawah dan autocut di perangkat
+printer aktual. Printer service harus berjalan; sesi offline direkonsiliasi dulu.
+Staf count submission belum berarti final close; authority existing dipertahankan.
+Histori sebelum versi ini tidak di-backfill atau otomatis dicetak ulang. Hasil
+tidak pasti perlu operator review dan salinan eksplisit; bukan exactly-once fisik,
+bukti settlement atau whole-product BUSINESS_READY. Penanggung jawab: operator
+dan Andreas; langkah berikut: validasi satu closing operasional yang sah.
+
 ## 2026-10-25 - Deployment sapaan Kak tertutup, preview UAT terbuka
 
 CONFIRMED source fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9 aktif pada release

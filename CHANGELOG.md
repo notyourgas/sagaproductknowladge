@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - SagaPOS closing report native deployed
+
+- CONFIRMED, keputusan Andreas untuk finalisasi opening/closing staff; source/
+  runtimeb5daed202cdf0989926f0a3c65188e4eedb2de62, rollbackfe61b52.
+- Pecahan/pratinjau, closing snapshot/intent atomik, benefit/menu/expense/cash
+  reconciliation dan explicit copy memakai satu pengelola printer existing.
+- Linux217PASS/0FAIL/0SKIP; backup/off-host/restore/recovery/activation/monitor dan
+  live API/Owner UI PASS. Tidak mengubah template, printer, harga, QRIS atau promo.
+- Production berubah pada kode/UI laporan, bukan core schema/provider/RBAC atau
+  transaksi bisnis. Kertas closing dan operasi aktual UAT OPEN; bukan BUSINESS_READY.
+- File: SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, portfolio, gaps, sync, DEC297
+  dan root changelog. Knowledge provenance: main HEAD setelah commit/push.
+
 ## 2026-10-25 - Aktivasi sapaan Kak SagaBook
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED atas izin deploy Andreas.

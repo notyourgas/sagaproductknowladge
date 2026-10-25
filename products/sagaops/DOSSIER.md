@@ -1,5 +1,45 @@
 # SagaOPS Dossier
 
+## 2026-10-25 - Laporan closing final dan pengiriman native
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, sourceb5daed202cdf0989926f0a3c65188e4eedb2de62,
+rollbackfe61b52. Fondasi opening, biaya bersumber laci/dana eksternal, koreksi
+berjejak, pengajuan hitungan dan approval Owner/reviewer dipertahankan. Kasir
+menambah penghitung pecahan, pratinjau baca-saja, laporan final dan salinan.
+Snapshot laporan dan intent disimpan dalam ledger audit scoped yang existing
+bersamaan dengan penutupan sah, pada jalur legacy dan authoritative-ledger.
+Tidak mengaktifkan ESB authority, membuat transaksi palsu atau menambah core schema.
+
+Kontrak laporan: pembayaran applied bukan tendered; kas seharusnya = modal +
+tunai net kembalian - refund tunai - pengeluaran laci, dengan perbedaan buku kas
+ditampilkan terpisah. QRIS tidak menambah laci. Komponen voucher/promo dan
+Invitation tidak dikurangkan dua kali. Nama/varian, alokasi benefit dan jumlah
+Invitation memakai snapshot penjualan; rincian legacy yang tidak tersedia tidak
+dikarang. Noncash legacy tanpa shift memakai waktu pembayaran dengan atribusi
+yang tidak boleh mengulang order pada laporan shift berikutnya. Tanggal usaha
+tetap calendar DATE meskipun proses berjalan di UTC, Jakarta atau zona negatif.
+Shift lintas tengah malam dan akumulasi tanggal usaha ditampilkan terpisah;
+akumulasi adalah snapshot sampai closing, bukan approval buku harian atau laba.
+
+Purpose SHIFT_CLOSE memakai satu NativeReceiptAgent/WebUSB queue yang sama;
+customer/checker diprioritaskan. Snapshot aktif density/inset/ruang bawah dan
+satu feed/cut dipakai renderer laporan, tanpa mengubah renderer/konfigurasi nota
+customer atau checker. Printer harus sudah commissioned dan enabled ketika
+closing untuk antrean otomatis. NOT_READY tidak diam-diam menjadi kirim histori.
+STARTED/UNKNOWN menahan pengiriman bersama sampai pemeriksaan operator; salinan
+bernomor dengan alasan/operation key tidak mengulang pembayaran atau closing.
+Status SUBMITTED bukan bukti fisik. Closing tetap tersimpan jika printer gagal.
+Rollback manual setelah penggunaan laporan memerlukan jeda printer dan rekonsiliasi
+attempt yang belum pasti; source lama tidak mengonsumsi purpose laporan baru.
+
+Linux217PASS, native PostgreSQL18, snapshot/concurrency/restart/USB uncertainty,
+RBAC, UI1366/390 dan offline/receipt regressions. Backup terenkripsi/off-host dan
+candidate/current/candidate recovery, activation dan monitor PASS. Live protected
+API serta Owner UI1366/768/390 PASS; template/printer/checker/QRIS/catalog103/
+publication9/prices/promotion rules preserved. Tidak menciptakan penjualan,
+closing nyata, penukaran voucher atau TEST fisik. Operator paper/actual closing
+UAT OPEN; produk tidak dinyatakan BUSINESS_READY.
+
 ## 2026-10-25 - Aktivasi promosi terbatas waktu dan nama nota
 
 CONFIRMED Andreas. Runtimefe61b52/rollback729f351, core37 tetap. Grand Opening20
