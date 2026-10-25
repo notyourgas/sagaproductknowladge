@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - Sapaan Kak WhatsApp menunggu deployment
+
+CONFIRMED source fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9 telah dipush dan
+lulus tes PHP42/230 assertions, tooling1, browser2, TypeScript dan build.
+Gap implementasi ditutup; deployment dan UAT production perubahan sapaan
+masih OPEN. Pelaksana rilis menggunakan runner resmi saat diotorisasi;
+operator memeriksa pesan yang sah tanpa mengirim pesan customer untuk smoke.
+Tidak ada klaim BUSINESS_READY atau perubahan rilis reschedule aktif.
+
 ## 2026-10-25 - SagaBook reschedule aktif, UAT alur admin masih terbuka
 
 Source7a575827 aktif di release20261025013902-7a57582, rollback

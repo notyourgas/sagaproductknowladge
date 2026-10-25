@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-296 - Sapaan Kak sebelum nama customer pada template WhatsApp
+
+- Tanggal: 25 Oktober 2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.
+- Keputusan: template WhatsApp selalu memberi sapaan Kak sebelum nama customer.
+- Alasan: menjaga gaya komunikasi customer yang konsisten.
+- Alternatif: mengedit setiap template manual; dipilih formatter bersama agar
+  template existing dan preview mengikuti aturan yang sama.
+- Dampak: konfirmasi, pengingat, hasil foto, notifikasi pembayaran, parameter
+  provider dan pesan bantuan booking memakai satu sapaan Kak; nama tersimpan tetap.
+- Status: source fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9 pushed/local validated;
+  IMPLEMENTED_NOT_DEPLOYED. Production tidak berubah oleh pekerjaan ini.
+- Dokumen: SagaBook PRODUCT/DOSSIER/CHANGELOG, master, portfolio, GAPS dan sync.
+
 ## DEC-295 - Nama nota dan aktivasi Grand Opening sampai1November
 
 - Tanggal:25Oktober2026; klasifikasi CONFIRMED; pemberi keputusan Andreas.

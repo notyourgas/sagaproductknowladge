@@ -1,5 +1,22 @@
 # SagaBook Product Knowledge
 
+## 2026-10-25 - Sapaan Kak otomatis pada template WhatsApp
+
+CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
+Sumber: instruksi Andreas 25 Oktober 2026 dan
+[fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9](https://github.com/notyourgas/sagabook/commit/fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9),
+branch `codex/sagabook-whatsapp-kak-20261025`.
+Nama customer pada template WhatsApp kini diberi sapaan `Kak` otomatis.
+Template atau nama yang sudah diawali Kak tidak menghasilkan sapaan ganda.
+Berlaku pada konfirmasi booking, pengingat termasuk H-1/H-3, link hasil foto,
+notifikasi pembayaran, parameter nama provider, preview editor serta pesan
+bantuan/pembayaran dari halaman booking. Nama tersimpan tetap.
+Tes PHP 42/42 (230 assertions), tooling JavaScript 1/1, browser desktop/mobile
+2/2, TypeScript terarah dan build PASS. Tanpa migration/dependency baru dan
+tanpa mengirim pesan customer nyata. Production tidak diubah oleh pekerjaan
+ini; deployment sapaan dan UAT production masih OPEN. Rilis reschedule yang
+sudah aktif tidak diganti. BUSINESS_READY tidak diklaim.
+
 ## 2026-10-25 - Reschedule sesi lewat dan charge Rp30.000 aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, atas persetujuan
