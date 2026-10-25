@@ -1,6 +1,18 @@
 # SagaOPS Dossier
 
-## 2026-10-25 - Kandidat suffix-voucher dan restore UNMANAGED
+## 2026-10-25 - Rilis suffix-voucher dan pemulihan HPP
+
+CONFIRMED runtimece2519d38e5bbfb49ce251721f6a5543b1a565ee/rollback2c02618,
+PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Linux258PASS, exact-source packages,
+backup terenkripsi/off-host/checksum/disposable restore serta tiga boot recovery
+PASS. SSH code-release memakai izin founder existing dan guard Owner organisasi
+read-only, bukan sesi dashboard baru. Monitor/API health ready; config katalog112/
+publikasi10/template/printer/checker/QRIS/promo identik. Report source UNMANAGED
+sah kini terbaca, tanpa edit data stok. Aset active release sesuai source dan
+public Kiosk entry/API tetap menolak akses tanpa autentikasi. Authenticated live
+Member/Invitation UAT OPEN; tidak mengonfirmasi order pelanggan untuk tes.
+
+## 2026-10-25 - Kandidat suffix-voucher (riwayat sebelum deploy)
 
 CONFIRMED sourcece2519d38e5bbfb49ce251721f6a5543b1a565ee, CI40182792772 sukses,
 IMPLEMENTED_NOT_DEPLOYED. Suffix unik membuka voucher Kiosk tanpa full-code ulang;

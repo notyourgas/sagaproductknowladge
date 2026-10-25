@@ -1,6 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
-## 2026-10-25 - SagaPOS source voucher/HPP; belum deployed
+## 2026-10-25 - SagaPOS voucher/HPP production deployed
+
+CONFIRMED runtimece2519d38e5bbfb49ce251721f6a5543b1a565ee/rollback2c02618,
+Linux40182792772:258PASS/0FAIL/0SKIP. Packages/integrity/backup/off-host/restore/
+recovery/activation/monitor PASS; HPP/reporting ready. SSH runner memakai izin
+founder existing + Owner organization guard read-only; login dashboard tidak
+diperlukan untuk code release ini. Katalog112/nota/printer/checker/QRIS/promo tetap.
+API/public auth guards PASS, authenticated live Invitation/voucher UAT OPEN.
+Dokumen produk/master/changelogs/GAPS/DEC300 selaras, bukan BUSINESS_READY.
+
+## 2026-10-25 - SagaPOS source voucher/HPP (riwayat sebelum deploy)
 
 CONFIRMED sourcece2519d, CI40182792772 sukses; candidate/recovery2c02618 dibangun.
 SOURCE_CI_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; runtimec03e44e6/reporting stale.

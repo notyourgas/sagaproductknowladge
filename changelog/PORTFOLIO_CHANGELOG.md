@@ -1,6 +1,15 @@
 # Portfolio Changelog
 
-## 2026-10-25 - SagaPOS kandidat voucher suffix dan HPP restore
+## 2026-10-25 - SagaPOS voucher suffix dan HPP deployed
+
+CONFIRMED runtimece2519d/rollback2c02618, Linux258PASS/0FAIL/0SKIP, immutable pair/
+backup/off-host/restore/recovery/activation/monitor PASS. Reporting ready;
+katalog112/nota/printer/promo tetap. Approved SSH runner dan Owner guard read-only
+menggantikan hambatan login dashboard tambahan, tanpa bypass autentikasi.
+Invitation/voucher pelanggan sah UAT OPEN, tanpa fake sale atau physical TEST.
+SagaOPS docs/master/GAPS/SYNC_STATUS/DEC300 diperbarui; bukan BUSINESS_READY.
+
+## 2026-10-25 - SagaPOS kandidat voucher suffix/HPP (riwayat sebelum deploy)
 
 CONFIRMED Andreas, sourcece2519d/CI40182792772 sukses; candidate/recovery HPP-only
 dibangun, IMPLEMENTED_NOT_DEPLOYED. Suffix unik membuka voucher Kiosk tanpa

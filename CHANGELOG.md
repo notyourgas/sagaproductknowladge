@@ -1,6 +1,15 @@
 # Saga Product Knowledge Changelog
 
-## 2026-10-25 - SagaPOS kandidat suffix-voucher dan HPP restore
+## 2026-10-25 - SagaPOS rilis voucher suffix dan HPP
+
+CONFIRMED runtimece2519d/rollback2c02618, Linux258PASS, packages/integrity/backup/
+off-host/restore/recovery/activation/monitor PASS. HPP/reporting ready, katalog112/
+nota/printer/promo preserved. Hambatan login dashboard tambahan dikoreksi melalui
+approved SSH code-release runner + read-only Owner guard. Tidak bypass login atau
+mengonfirmasi transaksi pelanggan. Invitation/voucher asli UAT OPEN; SagaOPS docs/
+master/changelogs/GAPS/SYNC_STATUS/DEC300 diselaraskan, bukan BUSINESS_READY.
+
+## 2026-10-25 - SagaPOS kandidat suffix-voucher/HPP (riwayat sebelum deploy)
 
 CONFIRMED sourcece2519d/CI40182792772 sukses, candidate/recovery HPP-only dibangun;
 IMPLEMENTED_NOT_DEPLOYED. Suffix unik Kiosk disetujui, guards/PIN tetap. Patch

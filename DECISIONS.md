@@ -9,9 +9,9 @@
 | Keputusan | Suffix yang cocok tepat satu akun dapat membuka/memilih voucher POS milik Member. Cek nama; collision tetap meminta full code. Server ownership/outlet/expiry, assisted cash, PIN/payment/idempotency tetap. Kasir/reward tidak diperluas. |
 | Alasan | Andreas meminta penggunaan voucher langsung setelah login. |
 | Alternatif | Syarat full-code DEC298; memilih akun pertama saat collision; self-confirmed payment; memperluas semua benefit ke suffix. |
-| Dampak | Sourcece2519d/CI40182792772 sukses; paket candidate/HPP-only recovery dibangun. Suffix bisa ditebak, bukan autentikasi kuat. Patch HPP UNMANAGED sah dibuktikan read-only tanpa mutasi production. Runtimec03e44e6 tetap; keputusan baru BELUM aktif. |
+| Dampak | Runtimece2519d/rollback2c02618, Linux258PASS dan backup/off-host/restore/recovery/activation/monitor PASS. Suffix bisa ditebak, bukan autentikasi kuat. Patch HPP UNMANAGED sah aktif tanpa edit data stok. Nota/printer/promo/katalog112 tetap. Approved SSH code-release + read-only Owner guard tidak memerlukan login dashboard baru. |
 | Pemberi keputusan | Andreas / founder |
-| Status | CONFIRMED / SOURCE_CI_VALIDATED / IMPLEMENTED_NOT_DEPLOYED; Owner/host release/UAT pending, bukan BUSINESS_READY |
+| Status | CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE; Invitation spesifik dan voucher pelanggan UAT OPEN, bukan BUSINESS_READY |
 | Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md) |
 
 ## DEC-299 - Air Mineral 750 ml di Kasir dan Kiosk

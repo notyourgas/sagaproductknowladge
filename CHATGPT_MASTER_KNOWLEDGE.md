@@ -1,6 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
-## 2026-10-25 - SagaPOS kandidat voucher singkat belum deployed
+## 2026-10-25 - SagaPOS voucher singkat dan HPP sudah deployed
+
+CONFIRMED runtimece2519d/rollback2c02618, PRODUCTION_DEPLOYED / FEATURE_AVAILABLE.
+Linux258PASS/0FAIL/0SKIP, backup/off-host/restore/recovery/activation/monitor PASS.
+HPP/reporting ready; katalog112/publikasi10/nota/printer/promo tetap. Suffix unik
+Kiosk membuka/memilih voucher tanpa full-code ulang; collision/server/PIN/payment
+tetap, bukan perluasan Kasir/reward. Rilis memakai izin founder dan SSH runner
+dengan guard Owner read-only, tanpa login dashboard ulang/bypass autentikasi.
+Invitation pelanggan spesifik dan voucher asli UAT OPEN; bukan BUSINESS_READY.
+
+## 2026-10-25 - SagaPOS kandidat voucher singkat (riwayat sebelum deploy)
 
 CONFIRMED Andreas / SOURCE_CI_VALIDATED / IMPLEMENTED_NOT_DEPLOYED:
 sourcece2519d, CI40182792772 sukses; candidate/HPP-only recovery2c02618 dibangun.

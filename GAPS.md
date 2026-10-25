@@ -1,6 +1,18 @@
 # Gaps dan Keputusan Founder
 
-## 2026-10-25 - Deploy voucher dan pemulihan HPP pending
+## 2026-10-25 - Rilis HPP/voucher selesai; UAT pelanggan masih terbuka
+
+CONFIRMED runtimece2519d/rollback2c02618; Linux258PASS, backup/off-host/restore/
+recovery/activation/monitor dan config preservation PASS. Reporting/HPP ready.
+Hambatan login Owner tambahan dikoreksi: izin founder untuk code-release dan
+guard Owner organisasi pada SSH runner existing cukup; tidak memalsukan sesi
+atau mengubah akses dashboard. NEEDS CONFIRMATION Andreas/operator: periksa
+pesanan Invitation yang sama dan voucher milik pelanggan sah, jangan membuat
+order pengganti atau pembayaran/penukaran ulang untuk tes. Referensi error foto
+lama tidak memiliki korelasi log, jadi penyebab/status request spesifik belum
+dibuktikan. Printer/nota tidak diubah; hasil fisik dan whole-product UAT OPEN.
+
+## 2026-10-25 - Deploy voucher/HPP pending (riwayat sebelum deploy)
 
 CONFIRMED sourcece2519d/CI40182792772 sukses; paket candidate/recovery dibangun.
 Runtimec03e44e6/reporting stale tetap; snapshot HPP UNMANAGED sah gagal dibaca

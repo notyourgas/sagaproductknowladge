@@ -1,6 +1,21 @@
 # SagaOPS Product Knowledge
 
-## 2026-10-25 - Kandidat voucher empat karakter; belum deployed
+## 2026-10-25 - Voucher empat karakter dan restore HPP deployed
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtime
+ce2519d38e5bbfb49ce251721f6a5543b1a565ee, rollback HPP-only2c02618. Linux258PASS/
+0FAIL/0SKIP, immutable pair/checksum, encrypted backup/off-host copy/disposable
+restore dan candidate/recovery/candidate boot PASS. Approved code-release SSH
+runner memverifikasi Owner organisasi existing secara read-only; tidak membuat
+sesi Owner dashboard atau melemahkan login. Activation/monitor/public health dan
+auth denial PASS; HPP restore/reporting kini ready. Katalog112/publikasi10,
+template/customer/checker/printer/QRIS dan promo tidak berubah. Suffix unik Kiosk
+dapat langsung membuka/memilih voucher; collision/PIN/payment/idempotency tetap.
+UAT voucher asli dan konfirmasi Invitation pelanggan spesifik OPEN. Tidak membuat
+transaksi production palsu, mengonfirmasi pesanan pelanggan, atau physical TEST.
+Feature deployed tidak sama dengan whole-product BUSINESS_READY.
+
+## 2026-10-25 - Kandidat voucher empat karakter (riwayat sebelum deploy)
 
 CONFIRMED Andreas / SOURCE_CI_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
 ce2519d38e5bbfb49ce251721f6a5543b1a565ee, Linux40182792772 sukses; paket
