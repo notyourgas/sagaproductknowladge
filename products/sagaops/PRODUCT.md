@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - Ganti PIN Kiosk hanya lewat Bantuan
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtime
+eef035db80915d924045546d7b08d30f19644d82, rollback690d93e. Tombol ganti PIN
+dihapus dari pop-up konfirmasi tunai, QRIS dan Invitation. Akses existing tetap
+di Bantuan (?) atas layar → Staf · Ganti PIN Kiosk. Jika PIN awal ditolak, petunjuk
+mengarahkan staf menutup pop-up dan memakai Bantuan; pembayaran pending tetap
+tersimpan. Aturan verifikasi/ganti PIN tidak berubah. Linux95PASS, integrity,
+backup/off-host/restore/recovery/activation/monitor dan active-asset readback PASS.
+KDS tetap OFF; template/printer/checker/QRIS/katalog dan history tetap. Desktop/
+mobile synthetic browser PASS; authenticated Chromebook UI UAT belum diulang.
+
 ## 2026-10-25 - KDS dapat dijeda dan antrean lama disembunyikan
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Runtime

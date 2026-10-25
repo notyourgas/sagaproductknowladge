@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - PIN help-only sudah tersedia; Chromebook UAT terbuka
+
+CONFIRMED runtimeeef035d/rollback690d93e, Linux95PASS, backup/off-host/recovery/
+deploy/monitor/active-asset dan config/history read-back PASS. Popup konfirmasi
+tidak memiliki tombol ganti PIN; staf memakai Bantuan (?). Aturan PIN/payment,
+printer/nota dan KDS OFF tetap. NEEDS CONFIRMATION hanya tampilan pada Chromebook
+aktual setelah muat ulang saat tidak ada pesanan/input aktif. Tidak perlu
+mengganti PIN asli, membuat transaksi production palsu atau TEST cetak untuk
+memeriksa perubahan UI ini. Tidak mengklaim BUSINESS_READY seluruh produk.
+
 ## 2026-10-25 - KDS dinonaktifkan; workflow persiapan tetap terpisah
 
 CONFIRMED runtime690d93e/rollbackf60e293: KDS OFF dan visible queue0, history

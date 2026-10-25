@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-10-25 - Tombol ganti PIN keluar dari pop-up pembayaran
+
+CONFIRMED runtimeeef035d/rollback690d93e. Rotasi PIN hanya melalui Bantuan (?) →
+Staf · Ganti PIN Kiosk; popup tunai/QRIS/Invitation fokus pada konfirmasi.
+Initial-PIN guidance diperbarui, pending payment dipertahankan. Linux95PASS,
+package/backup/off-host/recovery/deploy/monitor/live-asset PASS. Verifikasi PIN,
+nota/printer/checker/QRIS/history dan KDS OFF tetap; Chromebook UI UAT OPEN.
+
 ## 2026-10-25 - KDS nonaktif sementara, history tersimpan
 
 CONFIRMED runtime690d93e/rollbackf60e293, KDS OFF dan antrean terlihat0. Owner

@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-303 - Ganti PIN Kiosk ditempatkan pada Bantuan staf
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-10-25 |
+| Keputusan | CONFIRMED: hapus tombol ganti PIN dari popup pembayaran; gunakan Bantuan (?) atas layar → Staf · Ganti PIN Kiosk. |
+| Alasan | Memisahkan pengaturan staf dari konfirmasi pembayaran pelanggan. |
+| Batas | Aturan PIN awal, otorisasi, merchant evidence, idempotency dan pending payment tetap. |
+| Pemberi keputusan | Andreas, instruksi langsung pada percakapan produk. |
+| Provenance | Runtimeeef035d/rollback690d93e, Linux95PASS dan production read-back. |
+| Residual | Synthetic desktop/mobile PASS; live Chromebook UI UAT OPEN. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md) |
+
 ## DEC-302 - Jeda KDS dan kosongkan antrean, simpan history transaksi
 
 | Field | Nilai |

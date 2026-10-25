@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaPOS PIN rotation hanya lewat Bantuan
+
+CONFIRMED runtimeeef035d/rollback690d93e: pop-up pembayaran tidak menampilkan
+tombol ganti PIN; existing menu Bantuan (?) tetap menyediakan akses staf. Pending
+payment dan verifikasi server tetap. Linux95PASS, release/recovery/live assets
+dan config/history readback PASS; nota/printer/checker/KDS OFF tetap. Chromebook
+authenticated UI UAT OPEN, bukan whole-product BUSINESS_READY.
+
 ## 2026-10-25 - SagaPOS KDS pause/clear activated
 
 CONFIRMED application690d93e/rollbackf60e293: KDS sementara OFF dan antrean lama

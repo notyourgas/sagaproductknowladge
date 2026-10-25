@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaPOS ganti PIN melalui Bantuan
+
+CONFIRMED / PRODUCTION_DEPLOYED, applicationeef035d/rollback690d93e. Tombol
+ganti PIN tidak muncul di pop-up tunai, QRIS maupun Invitation; staf memakai
+Bantuan (?) atas layar → Staf · Ganti PIN Kiosk. PIN awal tetap wajib diganti
+melalui verifikasi existing, pending payment tidak hilang. Linux95PASS, guarded
+recovery/deploy/monitor dan active-asset/config/history readback PASS. Nota,
+printer/checker/QRIS/katalog tetap dan KDS masih OFF. Physical print dan live
+authenticated Chromebook UI UAT tidak diulang; bukan BUSINESS_READY global.
+
 ## 2026-10-25 - SagaPOS KDS pause/clear tersedia dan sementara OFF
 
 CONFIRMED / PRODUCTION_ACTIVATED application690d93e/rollbackf60e293. Andreas

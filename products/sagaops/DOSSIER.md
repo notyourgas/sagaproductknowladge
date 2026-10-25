@@ -1,5 +1,21 @@
 # SagaOPS Dossier
 
+## 2026-10-25 - PIN staf: pisahkan pembayaran dan pengaturan
+
+CONFIRMED runtimeeef035d/rollback690d93e. Pop-up PIN tidak memuat tombol toggle
+ganti PIN, termasuk tunai, QRIS dan Invitation. Existing Bantuan (?) → Staf ·
+Ganti PIN Kiosk menjadi satu akses rotasi dari UI Kiosk. Pesan PIN awal memberi
+rute tersebut; menutup dialog dan membuka Bantuan mempertahankan pembayaran
+PENDING. Verifikasi PIN, kewajiban mengganti PIN awal, otorisasi server, merchant
+evidence dan idempotency tidak dilonggarkan. Tidak ada rotasi PIN production oleh
+agent. Offline cache manifest/version diperbarui; muat ulang saat tidak ada input
+aktif, tanpa menghapus data browser. Linux95PASS/0FAIL/0SKIP, immutable package,
+fresh encrypted backup/off-host/restore serta candidate/current/candidate boot
+PASS. Code-only activation menjaga schema37/reporting/payment boundary; live
+asset hashes sesuai source, config/history read-back PASS. Nota/customer/checker,
+printer/QRIS/katalog tetap, KDS OFF/revision tetap. Synthetic UI desktop/mobile
+lulus; live authenticated Chromebook UAT OPEN, bukan whole-product BUSINESS_READY.
+
 ## 2026-10-25 - KDS pause dan clear tanpa menghapus transaksi
 
 CONFIRMED / PRODUCTION_ACTIVATED, application690d93e/rollbackf60e293. Owner-only

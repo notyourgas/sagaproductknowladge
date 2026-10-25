@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaPOS PIN help-only production deployed
+
+CONFIRMED applicationeef035db80915d924045546d7b08d30f19644d82/rollback690d93e;
+Linux40193982595:95PASS/0FAIL/0SKIP. Package/integrity/backup/off-host/restore/
+recovery/activation/monitor/live assets dan configuration/history readback PASS.
+Ganti PIN hanya lewat Bantuan staf, pending payment dan aturan backend tetap;
+nota/printer/checker/QRIS/katalog serta KDS OFF dipertahankan. Product/dossier/
+changelogs/master/GAPS/DEC303 sinkron. Authenticated Chromebook UI UAT OPEN;
+knowledge main commit sebagai sync provenance, bukan source runtime lain.
+
 ## 2026-10-25 - SagaPOS KDS pause/clear production activated
 
 CONFIRMED application690d93e/operational rollbackf60e293; KDS OFF dan queue0,

@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - Sinkronisasi PIN Kiosk help-only
+
+CONFIRMED applicationeef035d/rollback690d93e. Product/dossier/changelogs/master,
+GAPS/DEC303 dan SYNC_STATUS selaras: tombol ganti PIN hanya di Bantuan staf,
+pending payment/aturan server tetap. Linux95PASS dan guarded release/readback
+PASS. Metadata publik saja, tanpa PIN, transaksi pelanggan atau private evidence.
+
 ## 2026-10-25 - SagaPOS KDS nonaktif dan retention history
 
 CONFIRMED: PRODUCT/DOSSIER/CHANGELOG SagaOPS, master/portfolio, GAPS, DEC302 dan
