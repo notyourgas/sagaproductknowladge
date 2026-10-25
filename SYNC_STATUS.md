@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaBook reschedule sesi lewat production activated
+
+CONFIRMED source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4,
+release20261025013902-7a57582, rollback20261024032813-b96e4fd.
+PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Gate native lengkap,
+backup/offsite/restore149migrations, data/timezone dan verifier23/23 PASS;
+source/JS HTTPS serta browser booking publik PASS. CI aplikasi/browser/MySQL
+PASS; audit dependency Saga AI terpisah gagal. PRODUCT/DOSSIER/CHANGELOG,
+master/portfolio/DECISIONS/GAPS/root changelog diselaraskan. Production berubah
+untuk fitur; UAT alur admin masih OPEN karena sesi berakhir, bukan BUSINESS_READY.
+
 ## 2026-10-25 - SagaPOS nama nota dan kampanye terjadwal aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED source/runtimefe61b52,

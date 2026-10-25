@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - Aktivasi reschedule admin sesi lewat SagaBook
+
+CONFIRMED dari izin deploy Andreas dan source/runtime
+7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4, release20261025013902-7a57582,
+rollback20261024032813-b96e4fd. PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk
+reschedule sesi lewat dengan charge Rp30.000 serta paid/unpaid manual terpisah.
+Gate native/recovery149migrations, verifier23/23, source/JS HTTPS dan browser
+booking publik PASS. Production berubah; tanpa migration/dependency baru.
+UAT alur admin OPEN karena sesi berakhir; BUSINESS_READY tidak diklaim.
+CI aplikasi/browser/MySQL PASS, audit dependency layanan Saga AI terpisah gagal.
+SagaBook PRODUCT/DOSSIER/CHANGELOG, master/portfolio/keputusan/gaps/sync
+diperbarui; perubahan produk lain dipertahankan. Knowledge commit: main HEAD.
+
 ## 2026-10-25 - Sinkronisasi aktivasi promo dan nama nota Kiosk
 
 CONFIRMED dari Andreas dan runtimefe61b52/rollback729f351, Linux161PASS/recovery/

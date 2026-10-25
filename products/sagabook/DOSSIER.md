@@ -1,5 +1,27 @@
 # SagaBook Dossier
 
+## 2026-10-25 - Aktivasi production reschedule admin sesi lewat
+
+CONFIRMED Andreas mengizinkan deploy; PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED.
+Source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4, release20261025013902-7a57582,
+rollback20261024032813-b96e4fd. Source branch fitur terverifikasi tersedia di
+remote; runner memakai pinned ancestor main sesuai kontrak existing.
+
+Fitur sesi lewat/no-show, pemilihan tanggal/jam mendatang, charge Rp30.000,
+paid/unpaid manual dan ledger tunggal kini berada pada runtime aktif.
+Gate native lengkap (suite PHP, build, persistensi dashboard, browser dan audit
+dependency runtime) PASS. Backup terenkripsi/offsite/checksum, restore MySQL
+disposable serta preservasi data/timezone dengan149migrations PASS. Verifikasi
+independen23/23, manifest, service, queue journal, migration, rollback dan smoke
+publik PASS. Source controller/service/komponen dan hash JS dashboard melalui
+HTTPS cocok; endpoint perubahan biaya menolak akses anonim403. Booking publik
+tampil tanpa error browser. Tidak ada schema/dependency baru pada delta fitur.
+
+CI aplikasi/browser dan kontrak MySQL PASS; agregat CI gagal pada audit dependency
+Saga AI yang terpisah. Sesi browser admin berakhir, sehingga authenticated UAT
+admin/reschedule/penerimaan biaya tetap OPEN. Tidak ada mutasi booking atau
+pembayaran customer untuk smoke; BUSINESS_READY belum ditetapkan.
+
 ## 2026-10-25 - Reschedule admin sesudah waktu sesi
 
 CONFIRMED dari Andreas; source

@@ -1,5 +1,18 @@
 # SagaBook Changelog
 
+## 2026-10-25 - Rilis reschedule sesi lewat dan charge admin aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED atas izin Andreas.
+Source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4, release20261025013902-7a57582,
+rollback20261024032813-b96e4fd. Admin dapat menjadwalkan ulang sesi terlewat
+dengan charge tetap Rp30.000 serta status pembayaran biaya terpisah.
+Gate native, backup/offsite/restore MySQL149migrations dan preservasi data PASS;
+verifier23/23, source/JS HTTPS, batas anonim dan browser booking publik PASS.
+Production berubah untuk fitur ini; tanpa migration/dependency baru.
+CI aplikasi/browser/MySQL PASS, audit dependency layanan Saga AI masih gagal.
+UAT admin production OPEN karena sesi berakhir; BUSINESS_READY tidak diklaim.
+Dokumen PRODUCT/DOSSIER/master/portfolio/keputusan/gaps/sync diselaraskan.
+
 ## 2026-10-25 - Reschedule sesi lewat dan charge admin Rp30.000
 
 CONFIRMED Andreas. Source

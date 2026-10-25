@@ -1,13 +1,15 @@
 # Gaps dan Keputusan Founder
 
-## 2026-10-25 - SagaBook reschedule sesi lewat belum di production
+## 2026-10-25 - SagaBook reschedule aktif, UAT alur admin masih terbuka
 
-Source7a575827 sudah pushed dan tervalidasi lokal untuk reschedule admin
-dengan charge Rp30.000 serta paid/unpaid terpisah. Production tidak diubah;
-deployment dan authenticated UAT operator masih OPEN. Pemilik tindak lanjut:
-executor rilis untuk rilis terotorisasi, Andreas/operator untuk UAT nyata.
-Baseline production b96e4fdc telah digabung; build dan TypeScript UIUX/critical
-PASS. Ini tidak menutup blocker provider atau acceptance produk lain.
+Source7a575827 aktif di release20261025013902-7a57582, rollback
+20261024032813-b96e4fd. Deployment/recovery, verifier23/23 dan browser booking
+publik PASS. Gap deployment tertutup. Sesi admin berakhir sehingga authenticated
+UAT reschedule serta pencatatan penerimaan biaya masih OPEN. Andreas/operator
+login sendiri dan melakukan acceptance operasional yang sah; jangan membuat
+booking/pembayaran customer demi smoke. CI aplikasi/browser/MySQL PASS,
+agregat gagal pada audit dependency Saga AI terpisah. Ini tidak menutup blocker
+provider atau menetapkan BUSINESS_READY maupun acceptance produk lain.
 
 ## 2026-10-25 - Kampanye aktif; UAT nama nota dan penukaran Member terbuka
 

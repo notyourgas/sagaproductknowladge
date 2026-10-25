@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaBook reschedule admin sesi lewat aktif di production
+
+CONFIRMED Andreas; source7a575827, release20261025013902-7a57582,
+rollback20261024032813-b96e4fd PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED.
+Admin memilih slot mendatang dan mencatat charge Rp30.000 paid/unpaid terpisah.
+Gate native lengkap, backup/offsite/restore149migrations dan verifier23/23 PASS;
+hash source/aset HTTPS dan browser booking publik PASS. Production berubah,
+tanpa migration/dependency baru. UAT admin OPEN karena sesi berakhir; bukan
+BUSINESS_READY. CI aplikasi/browser/MySQL PASS, audit Saga AI terpisah masih
+gagal. Dokumen SagaBook/master/keputusan/gaps/sync diperbarui.
+
 ## 2026-10-25 - SagaPOS Kiosk: nama nota dan20persen sampai1November
 
 CONFIRMED Andreas, runtimefe61b52/rollback729f351 deployed. Nama default Member

@@ -1,5 +1,25 @@
 # SagaBook Product Knowledge
 
+## 2026-10-25 - Reschedule sesi lewat dan charge Rp30.000 aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED, atas persetujuan
+Andreas untuk deploy. Source
+[7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4](https://github.com/notyourgas/sagabook/commit/7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4),
+release `20261025013902-7a57582`, rollback `20261024032813-b96e4fd`.
+Admin berizin dapat memindahkan sesi lewat/no-show ke slot mendatang pada hari
+yang sama atau hari berikutnya. Jadwal langsung dipindahkan; charge tetap
+Rp30.000 tercatat terpisah dan status Belum dibayar/Lunas dapat diubah admin
+melalui Riwayat reschedule. Pembayaran booking utama tetap terpisah.
+
+Gate native lengkap, backup terenkripsi/offsite, disposable MySQL restore dan
+preservasi data/timezone dengan 149 migrations PASS. Verifier independen 23/23
+PASS, hash source dan aset dashboard publik cocok, batas akses anonim terjaga,
+serta halaman booking publik tampil tanpa error browser. Tidak ada migration
+atau dependency baru untuk fitur ini. Hosted CI aplikasi/browser dan MySQL PASS;
+agregat CI masih gagal pada audit dependency layanan Saga AI yang terpisah.
+UAT alur admin di production masih OPEN karena sesi admin berakhir. Tidak
+membuat reschedule/pembayaran customer untuk smoke; BUSINESS_READY tidak diklaim.
+
 ## 2026-10-25 - Admin reschedule sesi lewat dengan biaya Rp30.000
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

@@ -1,5 +1,22 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaBook reschedule sesi lewat dan biaya Rp30.000 aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED atas izin Andreas.
+Source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4, release20261025013902-7a57582,
+rollback20261024032813-b96e4fd. Admin berizin dapat memindahkan sesi lewat/no-show
+ke tanggal/jam mendatang yang tersedia pada hari yang sama atau hari berikutnya.
+Charge tetap Rp30.000 terpisah dari pembayaran booking, dengan status Belum
+dibayar/Lunas yang diubah di Riwayat reschedule. Ledger dan closing mengikuti
+status biaya; sesi selesai/berlangsung tetap ditolak.
+
+Gate native lengkap, backup/offsite/restore149migrations, preservasi data dan
+verifier23/23 PASS. Hash source/aset dashboard HTTPS dan browser booking publik
+PASS. Production sudah berubah; tanpa migration/dependency baru untuk fitur.
+CI aplikasi/browser/MySQL PASS, audit dependency Saga AI terpisah masih gagal.
+Sesi admin berakhir sehingga UAT alur admin production OPEN; BUSINESS_READY
+tidak diklaim. Detail: SagaBook PRODUCT/DOSSIER/CHANGELOG.
+
 ## 2026-10-25 - SagaPOS Kiosk20persen aktif sampai1November
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED runtimefe61b52, rollback

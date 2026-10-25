@@ -27,7 +27,10 @@
   keputusan ini memakai nominal tetap khusus sesi lewat.
 - Dampak: slot tersedia dipindahkan langsung; biaya terpisah paid/unpaid,
   finance/ledger tunggal, audit, batas cabang dan closing terkunci tetap dijaga.
-- Status: source7a575827 pushed/local validated; belum deploy, UAT production OPEN.
+- Status: atas izin deploy Andreas, source7a575827 aktif pada release
+  20261025013902-7a57582, rollback20261024032813-b96e4fd. Gate native/recovery dan
+  verifier23/23 PASS. UAT alur admin production OPEN karena sesi berakhir;
+  BUSINESS_READY tidak diklaim.
 - Dokumen: SagaBook PRODUCT/DOSSIER/CHANGELOG, master, GAPS dan SYNC_STATUS.
 
 ## DEC-293 - Promo publik dapat digabung dengan voucher Member secara opt-in
