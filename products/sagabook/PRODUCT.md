@@ -1,5 +1,22 @@
 # SagaBook Product Knowledge
 
+## 2026-10-25 - Sapaan Kak WhatsApp aktif di production
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED atas izin deploy Andreas.
+Source [fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9](https://github.com/notyourgas/sagabook/commit/fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9),
+release `20261025033517-fdf821d`, rollback `20261025013902-7a57582`.
+Sapaan Kak otomatis sebelum nama customer kini aktif pada template WhatsApp,
+preview dan pesan bantuan/pembayaran booking; template atau nama yang sudah
+memuat sapaan Kak tidak menggandakannya. Nama customer tersimpan tetap.
+Gate native lengkap backend/build/persistence/browser/dependency runtime,
+backup terenkripsi/offsite, restore MySQL dengan 149 migrations dan preservasi
+data/timezone PASS. Verifier independen PASS; helper pada server, hash delapan
+file source serta empat aset JavaScript publik HTTPS cocok. Halaman login
+production tampil; sesi admin berakhir sehingga authenticated preview UAT
+masih OPEN. Tidak mengirim WhatsApp customer nyata; BUSINESS_READY tidak diklaim.
+CI aplikasi/browser dan MySQL PASS; agregat masih gagal pada audit dependency
+Saga AI terpisah. Tidak ada migration/dependency/configuration baru.
+
 ## 2026-10-25 - Sapaan Kak otomatis pada template WhatsApp
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

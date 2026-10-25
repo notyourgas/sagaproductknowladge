@@ -1,5 +1,25 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaBook sapaan Kak deployed dan activated
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED atas izin deploy Andreas.
+Source [fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9](https://github.com/notyourgas/sagabook/commit/fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9),
+release `20261025033517-fdf821d`, rollback `20261025013902-7a57582`.
+Sapaan Kak otomatis sebelum nama customer kini aktif pada template WhatsApp,
+preview dan pesan bantuan/pembayaran booking; template atau nama yang sudah
+memuat sapaan Kak tidak menggandakannya. Nama customer tersimpan tetap.
+Gate native lengkap backend/build/persistence/browser/dependency runtime,
+backup terenkripsi/offsite, restore MySQL dengan 149 migrations dan preservasi
+data/timezone PASS. Verifier independen PASS; helper pada server, hash delapan
+file source serta empat aset JavaScript publik HTTPS cocok. Halaman login
+production tampil; sesi admin berakhir sehingga authenticated preview UAT
+masih OPEN. Tidak mengirim WhatsApp customer nyata; BUSINESS_READY tidak diklaim.
+CI aplikasi/browser dan MySQL PASS; agregat masih gagal pada audit dependency
+Saga AI terpisah. Tidak ada migration/dependency/configuration baru.
+
+Source/knowledge commit terpisah; PRODUCT/DOSSIER/CHANGELOG SagaBook, master,
+portfolio, DECISIONS, GAPS dan root changelog disinkronkan.
+
 ## 2026-10-25 - SagaBook sapaan Kak source validated
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.

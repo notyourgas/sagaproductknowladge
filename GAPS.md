@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - Deployment sapaan Kak tertutup, preview UAT terbuka
+
+CONFIRMED source fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9 aktif pada release
+20261025033517-fdf821d, rollback20261025013902-7a57582. Gap deployment pada entri
+sebelumnya tertutup. Gate native/recovery/verifier dan helper server/asset
+publik PASS. Sesi admin berakhir; operator memeriksa preview template melalui
+login sendiri untuk menutup authenticated UAT. Tidak ada pesan customer nyata
+untuk smoke. Audit dependency Saga AI terpisah masih gagal; aplikasi/browser
+dan MySQL CI PASS. Tidak menetapkan BUSINESS_READY atau menutup gap provider.
+
 ## 2026-10-25 - Sapaan Kak WhatsApp menunggu deployment
 
 CONFIRMED source fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9 telah dipush dan

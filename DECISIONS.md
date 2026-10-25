@@ -9,8 +9,11 @@
   template existing dan preview mengikuti aturan yang sama.
 - Dampak: konfirmasi, pengingat, hasil foto, notifikasi pembayaran, parameter
   provider dan pesan bantuan booking memakai satu sapaan Kak; nama tersimpan tetap.
-- Status: source fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9 pushed/local validated;
-  IMPLEMENTED_NOT_DEPLOYED. Production tidak berubah oleh pekerjaan ini.
+- Status: atas izin deploy Andreas, source fdf821d0e7c044aeaf5109a52ec9cd42c7b963f9
+  PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada release20261025033517-fdf821d,
+  rollback20261025013902-7a57582. Gate native/recovery/verifier PASS; preview
+  UAT production masih OPEN karena sesi admin berakhir. Tidak mengirim pesan
+  customer nyata; BUSINESS_READY tidak diklaim.
 - Dokumen: SagaBook PRODUCT/DOSSIER/CHANGELOG, master, portfolio, GAPS dan sync.
 
 ## DEC-295 - Nama nota dan aktivasi Grand Opening sampai1November
