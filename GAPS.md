@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - SagaBook voucher tanggal sesi: akses dan aktivasi RESOLVED
+
+CONFIRMED: Owner login sah, penyimpanan rentang tanggal dan status aktif melalui
+dashboard, readback UI/database dan 8/8 pemeriksaan publik PASS. Blocker Owner
+serta aktivasi pilot pada checkpoint sebelumnya ditutup. Source aplikasi tetap
+ec440e5119f145dfe76318f1e81bb641c995ac63, release `20261025165636-ec440e5`.
+Tidak ada transaksi/provider order nyata; tidak mengubah kebijakan reschedule
+atau menyatakan BUSINESS_READY seluruh produk.
+
 ## 2026-10-26 - SagaBook voucher tanggal sesi: fitur live, aktivasi pilot menunggu Owner
 
 CONFIRMED: source ec440e5119f145dfe76318f1e81bb641c995ac63 / release

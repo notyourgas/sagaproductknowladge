@@ -1,5 +1,20 @@
 # SagaBook Dossier
 
+## 2026-10-26 - Owner UAT dan aktivasi voucher tanggal sesi selesai
+
+CONFIRMED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASS khusus fitur
+voucher tanggal sesi. Sumber aplikasi tetap
+[ec440e5119f145dfe76318f1e81bb641c995ac63](https://github.com/notyourgas/sagabook/commit/ec440e5119f145dfe76318f1e81bb641c995ac63),
+release `20261025165636-ec440e5`; tidak ada deploy tambahan.
+Akses Owner sah telah terverifikasi. Owner menyimpan rentang tanggal sesi,
+semua paket, diskon persentase, dan status aktif melalui dashboard existing;
+readback database dan UI sesuai. Delapan pemeriksaan endpoint publik PASS:
+empat paket menerima tanggal awal, tanggal akhir diterima, tanggal sebelum/
+sesudah rentang serta tanggal kosong ditolak. Kedua batas bersifat inklusif.
+Blocker akses dan aktivasi pilot pada checkpoint sebelumnya RESOLVED.
+Tidak membuat booking, provider order, pembayaran atau pesan customer nyata;
+BUSINESS_READY seluruh produk dan perubahan kebijakan reschedule tidak diklaim.
+
 ## 2026-10-26 - Batas tanggal sesi voucher aktif di SagaBook
 
 CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED.
