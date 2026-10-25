@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-26 - SagaBook: batas tanggal sesi voucher production aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source
+[ec440e5119f145dfe76318f1e81bb641c995ac63](https://github.com/notyourgas/sagabook/commit/ec440e5119f145dfe76318f1e81bb641c995ac63),
+release `20261025165636-ec440e5`, rollback `20261025033517-fdf821d`.
+Owner kini dapat membatasi tanggal sesi promo secara inklusif, terpisah dari
+periode penukaran. Validasi voucher dan checkout menolak sesi di luar rentang;
+promo lama serta scope paket/cabang/hari/jam tetap kompatibel. Akhir periode
+penukaran berupa tanggal mencakup akhir hari. Native gate, backup/offsite,
+restore MySQL dan verifier 23/23 PASS. Authenticated Owner UAT/aktivasi voucher
+pilot masih OPEN karena akses Owner sah belum tersedia; voucher tetap nonaktif,
+bukan BUSINESS_READY. Tidak membuat transaksi atau mengirim pesan customer.
+
 ## 2026-10-26 - Saga Clouds dan ilustrasi Oyen Sunkist aktif
 
 CONFIRMED: tiga Saga Clouds aktif Rp20.000/es saja; Oyen Sunkist tetap

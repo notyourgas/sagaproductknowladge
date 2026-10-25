@@ -1,5 +1,34 @@
 # SagaBook Product Knowledge
 
+## 2026-10-26 - Batas tanggal sesi voucher aktif di SagaBook
+
+CONFIRMED / SOURCE_PUSHED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED.
+Sumber: instruksi Andreas untuk menambah batas tanggal sesi dan mengaktifkan
+voucher; source [ec440e5119f145dfe76318f1e81bb641c995ac63](https://github.com/notyourgas/sagabook/commit/ec440e5119f145dfe76318f1e81bb641c995ac63),
+release `20261025165636-ec440e5`, rollback `20261025033517-fdf821d`.
+
+Sebelumnya periode penukaran, hari dalam minggu dan jam sesi belum membatasi
+rentang tanggal sesi. Kini owner dapat mengisi Tanggal sesi mulai/sampai;
+kedua batas termasuk, satu hari diperbolehkan, dan kosong berarti semua tanggal.
+Pemeriksaan voucher serta checkout memakai validasi server yang sama. Tanggal
+sesi kosong/tidak valid/di luar rentang ditolak; scope cabang/studio/paket,
+hari dan jam tetap berlaku. Update client lama mempertahankan rentang yang
+sudah tersimpan. Akhir periode penukaran berupa tanggal berlaku sampai akhir hari.
+
+Migrasi aditif menambah dua kolom DATE nullable; promo lama tanpa batas tanggal
+tetap kompatibel. Native full PHP/build/persistence/browser/dependency runtime
+lulus; tes terarah safety/release/rollback/tanggal 58/58 (664 assertions) PASS.
+Backup terenkripsi/offsite, restore MySQL dengan probe tanggal sesi, terminal
+aktivasi dan verifier independen 23/23 PASS. Rilis tidak membuat transaksi
+provider atau mengirim pesan customer.
+
+Authenticated Owner UAT dan aktivasi voucher pilot masih OPEN: akses tersimpan
+yang tersedia belum menghasilkan sesi Owner sah. Voucher pilot tetap nonaktif,
+belum diklaim siap digunakan. Konfigurasi tanggal/aktivasi dilakukan sesudah
+akses Owner valid tersedia. BUSINESS_READY tidak diklaim. Kebijakan reschedule
+booking yang sudah terkonfirmasi tetap existing; rollback kode setelah aktivasi
+harus lebih dahulu menonaktifkan promo yang menggunakan rentang tanggal baru.
+
 ## 2026-10-25 - Sapaan Kak WhatsApp aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED atas izin deploy Andreas.

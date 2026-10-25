@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - SagaBook voucher tanggal sesi: fitur live, aktivasi pilot menunggu Owner
+
+CONFIRMED: source ec440e5119f145dfe76318f1e81bb641c995ac63 / release
+`20261025165636-ec440e5` production aktif, native gate dan verifier 23/23 PASS.
+Rentang tanggal sesi kini tersedia dengan batas inklusif. OPEN: authenticated
+Owner UAT serta penyimpanan batas tanggal dan aktivasi voucher pilot; akses
+tersimpan yang tersedia ditolak, sehingga voucher dipertahankan nonaktif.
+Next action: akses Owner sah lalu konfigurasi/aktivasi dan readback eligibility
+public untuk kedua tanggal batas dan tanggal di luar rentang. Jangan mengubah
+password atau melewati auth sebagai bagian dari pekerjaan voucher.
+
 ## 2026-10-26 - Saga Clouds dan ilustrasi Oyen Sunkist aktif
 
 CONFIRMED: tiga Saga Clouds aktif Rp20.000/es saja; Oyen Sunkist tetap
