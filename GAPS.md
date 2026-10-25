@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - Ringkasan Harian deployed, batas rekonsiliasi tetap jelas
+
+CONFIRMED ef43989/rollback eef035d: Linux161PASS dan native read-only production
+reconciliation/backup/recovery/deploy/monitor/assets PASS. NEEDS CONFIRMATION:
+authenticated Owner/Chromebook UI UAT; sesi lokal sudah berakhir. QRIS
+terkonfirmasi staf tetap bukan saldo bank; biaya/net settlement tidak diklaim
+oleh ringkasan. Voucher refund-net memerlukan atribusi durable yang tepat;
+cloud tidak mengetahui transaksi offline yang belum tersinkron. Concurrent
+catalogue edits dicatat lewat audit native dan dipertahankan, tidak ditimpa
+oleh rilis report. Tidak ada perubahan printer/nota atau transaksi palsu.
+
 ## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
 
 CONFIRMED: akses Owner dan publikasi Strawberry/YuzuRp15000 selesai,

@@ -1,5 +1,40 @@
 # SagaOPS Dossier
 
+## 2026-10-25 - Kontrak Ringkasan Harian Owner
+
+CONFIRMED runtime ef439898c82bff69c78b8edb0ee64b9a72e5940a, rollback eef035d.
+`SAGAPOS_DAILY_OPERATIONS_V1` menyatukan laporan read-only pada
+`/dashboard#sales/summary`. Sales memakai tanggal bisnis penjualan asli;
+incoming payment/refund memakai tanggal kejadian dalam WIB. Pembayaran dari
+pesanan hari sebelumnya dapat muncul sebagai penerimaan hari ini. Pending dan
+demo dikecualikan. Refund tunai tercatat dikurangi pada tanggal pengembalian;
+refund manual pending belum dianggap dana dikembalikan.
+
+Benefit snapshot memisahkan promo umum, voucher member, Invitation dan diskon
+manual tanpa pengurangan ganda. Jumlah pesanan unik berbeda dari jumlah
+penggunaan manfaat; sumber tidak lengkap tetap unclassified. Nilai menu bersih
+per produk dan jumlah gratis Invitation membutuhkan alokasi item yang lengkap.
+Voucher-specific refund-net belum tersedia; tidak diturunkan dari total refund.
+QRIS statis hanya staff-confirmed POS receipt; saldo bank, biaya dan net
+settlement tidak dinyatakan tersedia oleh ringkasan ini.
+
+Cash tampil per masa shift lengkap, termasuk lintas tengah malam. Modal,
+kembalian, pengeluaran laci/sumber lain, refund, expected/actual, selisih,
+cash left dan handover dibedakan. Tidak ada penjumlahan modal berulang sebagai
+omzet/saldo harian. CSV Owner-only mengikuti tanggal/shift yang diizinkan
+server; parameter asing/duplikat ditolak dan formula spreadsheet dinetralisir.
+Laporan cloud belum dapat melihat transaksi offline yang belum tersinkron.
+
+Qualification Linux161PASS/0FAIL/0SKIP dan synthetic browser320–1366px PASS,
+termasuk restart durable, stack voucher/promo, Invitation0, cash change,
+late receipt/refund, date/shift, keyboard/accessibility, export/stale recovery.
+Native read-only projection pada data production, protected printing/history,
+immutable assets dan health PASS. Concurrent catalogue edits dipertahankan
+melalui atomic snapshot dan urutan CAS/audit; tidak membekukan data operasional
+menjadi identitas release. Backup/off-host/restore/recovery/activation PASS.
+Tidak ada schema, payment approval, stock/price correction atau physical print.
+Sesi Owner live berakhir; authenticated Chromebook UI UAT tetap OPEN.
+
 ## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus dua menu.

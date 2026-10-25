@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - Sinkronisasi Ringkasan Harian SagaPOS
+
+CONFIRMED Andreas/source ef43989/runtime ef43989, rollback eef035d. Satu halaman
+sales, payment events, stacked benefits, source-aware expenses dan per-shift
+cash/source details/CSV tersedia. Linux161PASS, guarded recovery/deploy dan
+native read-only production verification PASS. Sembilan dokumen SagaOPS/master/
+portfolio/governance diselaraskan, independen dari pembaruan katalog/resep.
+Nota/printer/history/KDS OFF terjaga; live UI UAT dan batas settlement/refund/
+offline tidak dinyatakan tuntas. Knowledge commit terpisah pada main HEAD.
+
 ## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
 
 CONFIRMED, native Owner duaTeaRp15000/version119/publication11 aktif,

@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaPOS satu halaman Ringkasan Harian
+
+CONFIRMED founder, source/runtime ef43989, rollback eef035d. Sales, pembayaran
+tunai/QRIS statis, promo/member voucher/Invitation/manual, expenses, cash per
+shift, menu dan CSV/source detail disatukan agar operator memahami penerimaan
+dan laci tanpa potongan/modal ganda. Linux161PASS; backup/off-host/restore/
+recovery/deploy/health/native read-only totals/active assets PASS. Printing,
+payment flow, history dan KDS OFF tetap; concurrent menu updates dipertahankan.
+QRIS bank settlement, voucher refund-net dan offline unsynced visibility bukan
+klaim baru. Live Owner/Chromebook UI UAT OPEN. Produk/master/dossier/changelog/
+GAPS/SYNC_STATUS/DECISIONS disinkronkan; tidak ada data pribadi atau raw receipt.
+
 ## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus dua menu.

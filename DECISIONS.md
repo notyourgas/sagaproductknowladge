@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-304 - Ringkasan Harian SagaPOS menyatukan penjualan dan uang diterima
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-25 |
+| Topik | Dashboard penjualan, pembayaran, promo/member voucher dan uang laci |
+| Keputusan | Owner memakai satu Ringkasan Harian dengan tanggal/shift, detail sumber dan CSV. Bedakan sales, payment-event receipts, cash change, modal/handover, refund dan sumber pengeluaran; pisahkan promo/voucher/Invitation/manual tanpa hitung ganda. |
+| Alasan | Andreas ingin memahami penjualan harian dan uang nyata tanpa berpindah banyak laporan. |
+| Alternatif | Panel terpencar; menjumlahkan tender/modal sebagai omzet; menyamakan QRIS POS dengan saldo bank. |
+| Dampak | Read-only report deployed ef43989/rollback eef035d, Linux161PASS serta native production reconciliation/recovery/monitor PASS. Printing, pembayaran, history dan KDS OFF tetap; independent catalogue edits dipertahankan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE; authenticated Owner/Chromebook UI UAT OPEN, bukan whole-product BUSINESS_READY. QRIS settlement/voucher refund-net/offline unsynced visibility tetap terpisah. |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Changelog](products/sagaops/CHANGELOG.md) |
+
 ## DEC-303 - Ganti PIN Kiosk ditempatkan pada Bantuan staf
 
 | Field | Nilai |

@@ -1,5 +1,25 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - Ringkasan Harian penjualan, pembayaran dan potongan
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtime
+ef439898c82bff69c78b8edb0ee64b9a72e5940a, rollback eef035d. Owner membuka
+Penjualan → Ringkasan Harian: penjualan sebelum/setelah diskon, pembayaran
+berdasarkan waktu konfirmasi WIB, tunai/QRIS statis, promo/voucher member/
+Invitation/manual, pengeluaran berdasarkan sumber, uang laci per shift,
+menu terjual, rincian sumber, filter tanggal/shift dan CSV dalam satu halaman.
+Tunai memakai nilai setelah kembalian; modal/serah terima bukan omzet dan
+saldo antarshift tidak dijumlahkan. QRIS terkonfirmasi di POS bukan saldo bank.
+Potongan gabungan dihitung sekali; atribusi refund-net voucher belum tersedia.
+Data lama yang belum lengkap tetap ditandai, bukan dianggap nol.
+
+Linux161PASS/0FAIL/0SKIP, immutable package, encrypted backup/off-host/restore,
+candidate/current/candidate recovery, activation, health/assets dan native
+read-only production reconciliation PASS. Nota/printer/checker/QRIS/history
+dan KDS OFF dipertahankan; pembaruan katalog dari pekerjaan lain tetap tersimpan
+dan ditelusuri melalui audit native. Tidak ada transaksi palsu atau TEST kertas.
+Authenticated Owner/Chromebook UI UAT OPEN; bukan whole-product BUSINESS_READY.
+
 ## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus dua menu.

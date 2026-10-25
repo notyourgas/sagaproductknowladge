@@ -1,5 +1,20 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaPOS Ringkasan Harian tersedia
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE runtime ef43989,
+rollback eef035d. Penjualan → Ringkasan Harian menyatukan sales, penerimaan
+tunai/QRIS statis, promo/voucher member/Invitation/manual, pengeluaran, uang
+laci per shift, menu, rincian sumber dan CSV; filter tanggal/shift tetap satu
+snapshot outlet berizin. Modal/handover bukan omzet, uang tunai setelah
+kembalian, QRIS bukan saldo bank. Sales mengikuti tanggal bisnis asli;
+penerimaan/refund mengikuti kejadian WIB. Voucher-specific refund-net dan
+transaksi offline yang belum tersinkron belum dapat dipastikan dari laporan.
+Linux161PASS, guarded backup/recovery/deploy/health/assets dan native read-only
+production reconciliation PASS. Nota/printer/checker/history/KDS OFF tetap;
+independent menu edits dipertahankan. Authenticated Chromebook UI UAT OPEN,
+bukan whole-product BUSINESS_READY. Lihat [SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus dua menu.

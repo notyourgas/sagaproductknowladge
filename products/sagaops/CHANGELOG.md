@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-10-25 - Ringkasan Harian terpadu deployed
+
+CONFIRMED Andreas, runtime ef43989/rollback eef035d. Penjualan, penerimaan tunai/
+QRIS statis, promo/voucher/Invitation/manual, pengeluaran, uang laci tiap shift,
+menu dan sumber transaksi/CSV disatukan. Penjualan versus receipt-event date,
+cash change, opening/handover, pending dan refund dipisahkan; QRIS bukan saldo
+bank dan voucher refund-net belum tersedia. Linux161PASS/0FAIL/0SKIP serta
+backup/off-host/recovery/deploy/live-assets/native read-only reconciliation PASS.
+Nota/printer/checker/history/KDS OFF tetap; concurrent menu edits terjaga.
+Owner/Chromebook UI UAT OPEN; tidak ada transaksi palsu/TEST fisik atau klaim
+whole-product BUSINESS_READY. Keputusan [DEC-304](../../DECISIONS.md).
+
 ## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus dua menu.
