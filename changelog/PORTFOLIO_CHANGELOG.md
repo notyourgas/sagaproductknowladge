@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-10-26 - SagaPOS compact daily financial dashboard deployed
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. SagaOPS9620e02/
+rollback ef43989: public-repo-informed hierarchy,4KPIs,5tabs and optional help;
+78%less default visible text on identical synthetic data. Existing stack and
+financial snapshot retained. Linux161PASS plus recovery/activation/live read-only
+verification PASS; receipt/printer/checker/QRIS/history and independent catalog
+updates remain. Authenticated Chromebook UI UAT and report-worker bootstrap
+hardening OPEN. Source and public knowledge are separate commits; no whole-product
+BUSINESS_READY claim. Product/dossier/changelog/master/GAPS/DECISIONS/SYNC_STATUS
+are aligned; other products unchanged.
+
 ## 2026-10-26 - Owner UAT dan aktivasi voucher tanggal sesi selesai
 
 CONFIRMED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASS khusus fitur

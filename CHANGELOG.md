@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-26 - SagaPOS compact daily dashboard release
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source9620e02,
+rollback ef43989. Ringkasan Harian now prioritizes four metrics and one tab panel
+at a time after public-repository research; existing finance and product styles
+retained. Linux161PASS, responsive/accessibility/keyboard and recovery/live
+read-only verification PASS;78%less default text measured with synthetic facts.
+Printer/receipt/checker/QRIS/history and independent catalog work remain. Product,
+dossier, product/portfolio changelogs, master, GAPS, DECISIONS and SYNC_STATUS
+updated on main HEAD separately from application source. Chromebook UI UAT and
+targeted report-worker bootstrap hardening OPEN; no whole-product readiness claim.
+
 ## 2026-10-26 - Owner UAT dan aktivasi voucher tanggal sesi selesai
 
 CONFIRMED / PRODUCTION_ACTIVATED / AUTHENTICATED_OWNER_UAT_PASS khusus fitur

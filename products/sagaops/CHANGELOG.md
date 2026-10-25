@@ -1,5 +1,18 @@
 # SagaOPS Changelog
 
+## 2026-10-26 - Ringkasan Harian UI disederhanakan
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Source9620e02,
+rollback ef43989. Public-repo research precedes implementation: four KPIs and
+five tabs replace simultaneous stacked detail; contextual help, date/shift,
+sources and CSV retain existing financial semantics. Default text78%less on
+identical synthetic facts; no new dependency. Linux161PASS, responsive/a11y/
+keyboard, package/backup/off-host/restore/recovery/activation/monitor and native
+production reconciliation PASS. Nota/printer/checker/QRIS/history/KDS OFF and
+independent catalog updates retained. Owner/Chromebook UI UAT OPEN. Report-job
+incident recovered canonically; bootstrap recovery hardening remains follow-up.
+Product/dossier/master/portfolio/GAPS/DECISIONS/SYNC_STATUS updated separately.
+
 ## 2026-10-26 - Saga Clouds dan ilustrasi Oyen Sunkist aktif
 
 CONFIRMED: tiga Saga Clouds aktif Rp20.000/es saja; Oyen Sunkist tetap

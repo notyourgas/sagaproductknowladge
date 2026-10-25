@@ -1,5 +1,22 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - SagaPOS compact dashboard live; device UAT and startup recovery follow-up
+
+CONFIRMED: source9620e02/rollback ef43989 deployed, Linux161PASS and native
+recovery/monitor/read-only financial reconciliation PASS. Default stacking
+resolved with4KPIs/5tabs and optional detail; density552→119words on identical
+synthetic facts. OPEN: authenticated Owner/Chromebook UI UAT. Owner/Andreas next
+action: open Ringkasan Harian when operational work allows; verify date/shift,
+tab readability and CSV on the actual Chromebook. No physical print is needed.
+
+Existing report-worker startup can reject an overdue lease before its timer
+reclaims it. One release-time report job was verified read-only and recovered
+through the canonical orchestrator; final runtime healthy. Owner: SagaPOS
+engineering. Next focused step: test an expired RUNNING report lease at startup
+and drain canonical recovery before readiness, without weakening guards, replaying
+payments, changing printer behavior or editing job rows directly. This incident
+does not alter financial data; durable bootstrap hardening is not claimed done.
+
 ## 2026-10-26 - SagaBook voucher tanggal sesi: akses dan aktivasi RESOLVED
 
 CONFIRMED: Owner login sah, penyimpanan rentang tanggal dan status aktif melalui

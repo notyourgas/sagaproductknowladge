@@ -1,5 +1,31 @@
 # SagaOPS Dossier
 
+## 2026-10-26 - Compact daily dashboard after public-repository research
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Source
+9620e0292cc918dc70722d86b28ece5c8879c35e / rollback ef43989; Linux161PASS/0FAIL/
+0SKIP and immutable-package/recovery/activation/monitor checks PASS. References:
+[shadcn/ui](https://github.com/shadcn-ui/ui) (MIT),
+[Tabler](https://github.com/tabler/tabler) (core MIT; bundled terms separate),
+[Tremor](https://github.com/tremorlabs/tremor) (Apache-2.0). Patterns informed
+information hierarchy only; no upstream code/assets, charts or dependencies
+copied. Existing vanilla renderer, Jakarta font, icons and brand remain.
+
+One header/date/export context, four persistent KPIs, one detail tab panel at
+a time. All financial facts come from the same existing snapshot. Native
+disclosures retain explanations/source details; opened detail survives refresh
+within the same date/shift. Keyboard Arrow/Home/End and small-screen tab scrolling
+are supported.552→119visible words on identical synthetic facts,78%reduction;
+this is a density measurement, not a production conversion/usability study.
+
+Native production read-only reconciliation, assets and retained business history
+PASS. Receipt/printer/checker/QRIS/KDS settings remain; catalog130 and independent
+publications preserved. During release, an existing memory-pressure/stale-lease
+report-worker incident was recovered through its canonical job mechanism;
+no payment replay, print retry, disabled reporting or direct job SQL correction.
+Focused bootstrap recovery hardening and authenticated Chromebook UI UAT remain
+OPEN. Final deployment is healthy; no whole-product BUSINESS_READY claim.
+
 ## 2026-10-26 - Saga Clouds dan ilustrasi Oyen Sunkist aktif
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus katalog.

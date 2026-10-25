@@ -1,5 +1,22 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-26 - Ringkasan Harian lebih ringkas
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source
+9620e0292cc918dc70722d86b28ece5c8879c35e, rollback ef43989. Empat angka utama
+tetap terlihat; rincian dibagi dalam tab Ringkasan, Pembayaran, Promo & voucher,
+Uang laci dan Menu terjual. Penjelasan panjang dibuka saat dibutuhkan; filter
+tanggal/shift, sumber transaksi, CSV, nilai belum tersedia dan batas QRIS POS
+versus rekening tetap. Style SagaPOS existing dipertahankan.
+
+Riset shadcn/ui, Tabler dan Tremor dipakai sebagai referensi pola; tanpa menyalin
+kode/aset atau memasang dependency. Default552→119kata pada fakta sintetis sama
+(78%lebih sedikit). Browser320/390/768/1366px, keyboard/accessibility, Linux161PASS,
+package/backup/off-host/restore/recovery/activation/monitor dan native read-only
+reconciliation PASS. Data katalog130 dan perubahan produk lain terjaga. Nota,
+printer/checker, pembayaran, history dan KDS OFF tidak diubah oleh fitur UI.
+Authenticated Owner/Chromebook UI UAT OPEN; bukan whole-product BUSINESS_READY.
+
 ## 2026-10-26 - Saga Clouds dan ilustrasi Oyen Sunkist aktif
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus katalog.
