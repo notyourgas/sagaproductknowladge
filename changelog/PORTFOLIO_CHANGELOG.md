@@ -1,5 +1,16 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaPOS voucher Kiosk mudah ditemukan
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtimec03e44e6,
+rollbackb5daed2. Daftar voucher milik Member yang POS-applicable tersedia setelah
+full-code login; akses kiri bawah tetap terlihat saat scroll, mendukung Gunakan,
+lepas dan refresh. Lookup empat karakter tidak diperluas hak vouchernya. Discovery
+baca-saja, diskon aktual/server/staff guards tetap. Linux168PASS dan live/recovery
+gates PASS; layout customer/checker, printer, promo/harga/QRIS/closing preserved.
+UAT voucher pelanggan/transaksi nyata OPEN. SagaOPS docs/master/changelogs,
+GAPS/SYNC_STATUS/DEC298 diperbarui; tidak ada penjualan palsu atau TEST fisik.
+
 ## 2026-10-25 - SagaPOS laporan closing tersedia
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Runtimeb5daed2,

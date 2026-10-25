@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - SagaPOS akses voucher Member Kiosk deployed
+
+- CONFIRMED Andreas; source/runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,
+  rollbackb5daed2, PRODUCTION_DEPLOYED / FEATURE_AVAILABLE.
+- Voucher saya setelah login full-code, dock kiri bawah menu, Gunakan/refresh/
+  lepas dan verifikasi kode lengkap dari short lookup. Server/cart/payment
+  authority, template/printer/customer/checker, promo/harga dan closing tetap.
+- Linux168PASS, recovery/backup/off-host/activation/monitor dan live Kiosk/API/
+  asset identity PASS; voucher pelanggan/transaksi nyata UAT OPEN, bukan
+  BUSINESS_READY. Tidak ada transaksi palsu atau cetak fisik untuk pengujian.
+- SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, root/portfolio changelog, GAPS,
+  SYNC_STATUS dan DEC298 disinkronkan terpisah dari source.
+
 ## 2026-10-25 - SagaPOS closing report native deployed
 
 - CONFIRMED, keputusan Andreas untuk finalisasi opening/closing staff; source/

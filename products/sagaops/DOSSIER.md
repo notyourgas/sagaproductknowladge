@@ -1,5 +1,32 @@
 # SagaOPS Dossier
 
+## 2026-10-25 - Akses voucher Kiosk menetap di menu
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,
+rollbackb5daed2. Voucher saya tersedia setelah full-code Member lookup dan pada
+dock kiri bawah menu; panel native mendukung Gunakan, kedaluwarsa/saran menu,
+lepas, refresh, pemulihan error, Escape/fokus dan layar kecil. Empat karakter
+tidak cukup untuk membaca atau memakai voucher: UI meminta kode lengkap.
+API derives Member dari sesi Kiosk, same-origin/CSRF dan limiter tersendiri;
+hasil terlambat tidak bertahan setelah identitas berubah/reset. Kode tidak
+ditambahkan ke browser storage. Provider error bukan daftar kosong; data lama
+tidak dapat dipilih saat gagal refresh.
+
+Discovery menggunakan kontrak VOUCHER_READ existing dengan preview satu unit
+setiap produk Kiosk yang dapat dipesan beserta base price published. Ini daftar
+voucher milik Member yang POS-applicable, bukan ekspor wallet Member atau klaim
+baru; hadiah layanan lain, paused, terpakai dan kedaluwarsa tidak ditampilkan.
+Tidak ada checkout/reserve/redeem pada discovery. Maksimal100produk/Rp1miliar
+preview; katalog lebih besar gagal eksplisit. Bila provider kelak menambah
+minimum belanja atau kondisi lintas produk, gunakan dedicated scoped wallet-read
+sebelum menjanjikan daftar entitlement cart-independent. Pemilihan awal tetap
+di-quote ulang terhadap keranjang sebenarnya dan dapat ditolak bila tidak cocok.
+Online assisted cash + PIN staf, reservation/idempotency, pembayaran dan stacking
+tetap existing; bukan perluasan voucher QRIS/offline/Invitation. Member backend,
+receipt/printer renderer dan core schema tidak berubah. Linux168PASS, empat
+viewport, actual Member API fixed/free beverage tanpa redemption, recovery dan
+live assets/auth guards PASS. UAT voucher pelanggan/transaksi nyata OPEN.
+
 ## 2026-10-25 - Laporan closing final dan pengiriman native
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, sourceb5daed202cdf0989926f0a3c65188e4eedb2de62,

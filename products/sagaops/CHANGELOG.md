@@ -1,5 +1,21 @@
 # SagaOPS Changelog
 
+## 2026-10-25 - Voucher saya tersedia di Kiosk
+
+CONFIRMED Andreas, source/runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,
+rollbackb5daed2; PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Full-code login kini
+menampilkan voucher POS-applicable dan akses menetap di kiri bawah menu dengan
+Gunakan/refresh/lepas. Short lookup tetap memerlukan verifikasi kode lengkap
+untuk voucher. Preview katalog tidak menukar voucher; aktual cart/server/staff
+payment guards tetap. Linux168PASS, recovery/backup/off-host/activation/monitor,
+live entry/auth guards dan byte identity aset PASS. Customer/checker/printer,
+harga, promo, QRIS dan closing tidak diubah. UAT voucher asli/transaksi nyata
+OPEN; tidak ada fake production sale atau TEST fisik.
+
+Dokumen terdampak: PRODUCT/DOSSIER/CHANGELOG SagaOPS, master, root/portfolio
+changelog, GAPS, SYNC_STATUS dan DEC298. Alasan: voucher sebelumnya tersembunyi
+di keranjang dan pembatasan lookup empat karakter belum cukup jelas pada UI.
+
 ## 2026-10-25 - Rilis laporan closing dan antrean cetak terpisah
 
 CONFIRMED Andreas; source/runtimeb5daed202cdf0989926f0a3c65188e4eedb2de62,

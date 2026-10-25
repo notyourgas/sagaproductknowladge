@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaPOS voucher Member Kiosk production deployed
+
+CONFIRMED / accepted scope knowledge. Source/runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,
+rollbackb5daed2. Linux168PASS/0FAIL/0SKIP dalam4m42s, immutable package/integritas,
+backup terenkripsi/off-host/restore/recovery/activation/monitor dan live Kiosk/
+asset identity/auth guards PASS. Voucher saya tersedia setelah full-code login
+dan di dock kiri bawah saat scroll; Gunakan/refresh/lepas tanpa hak short lookup
+baru atau redemption saat discovery. Nota/printer/promo/harga/QRIS/closing tetap.
+UAT voucher asli dan transaksi nyata OPEN; bukan BUSINESS_READY. Source/knowledge
+commit terpisah. SagaOPS PRODUCT/DOSSIER/CHANGELOG, master, root/portfolio changelog,
+GAPS dan DEC298 diperbarui tanpa mengubah entri produk lain.
+
 ## 2026-10-25 - SagaPOS closing report production deployed
 
 CONFIRMED / accepted scope knowledge. Source/runtimeb5daed202cdf0989926f0a3c65188e4eedb2de62,

@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-298 - Voucher Member mudah dipakai dari menu Kiosk
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-25 |
+| Topik | Voucher milik Member setelah login dan akses menetap di kiri bawah menu Kiosk |
+| Keputusan | Tampilkan voucher POS-applicable dengan Gunakan, lepas dan refresh. Short lookup tetap identity/points only; verifikasi kode lengkap untuk voucher. Discovery baca-saja dan aktual cart/server/payment guards dipertahankan. Jangan mengubah customer/checker layout atau printer. |
+| Alasan | Voucher sebelumnya hanya terlihat di keranjang dan batas empat karakter tidak cukup jelas di layar. |
+| Alternatif | Membuka redemption dari short lookup; menghabiskan voucher saat dipilih; menyamarkan provider error sebagai kosong; mengubah printer/layout untuk perubahan UI. |
+| Dampak | Runtimec03e44e6/rollbackb5daed2, Linux168PASS, recovery/backup/off-host/activation/monitor dan live entry/API/assets PASS. Member backend, core schema, harga/promo/QRIS dan closing unchanged. Tidak ada transaksi production palsu atau cetakan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE; voucher pelanggan/transaksi sah UAT OPEN, bukan BUSINESS_READY |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md) |
+
 ## DEC-297 - Closing staff dan laporan cetak tanpa mengubah nota customer
 
 | Field | Isi |

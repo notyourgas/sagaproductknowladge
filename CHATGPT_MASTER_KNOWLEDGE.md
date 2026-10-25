@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaPOS Kiosk Voucher saya tersedia
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,
+rollbackb5daed2; Member kode lengkap mendapat daftar voucher Kopi Saga dan tombol
+tetap kiri bawah menu untuk Gunakan/refresh/lepas. Empat karakter tetap untuk
+identitas/poin, dengan jalur verifikasi kode lengkap sebelum akses voucher.
+Daftar hanya milik Member dan POS-applicable; preview baca-saja bukan penukaran,
+diskon aktual tetap server quote dan konfirmasi staf existing. Member backend,
+harga/promo/QRIS, customer/checker layout, printer dan closing tidak berubah.
+Linux168PASS/0FAIL/0SKIP, browser1366/768/390/320, actual Member API, recovery/
+backup/off-host/activation/monitor dan live assets/auth guards PASS. Tidak membuat
+transaksi production palsu atau cetakan. Penukaran voucher asli/transaksi sah
+UAT OPEN; bukan BUSINESS_READY seluruh produk. Detail di SagaOPS PRODUCT/DOSSIER.
+
 ## 2026-10-25 - SagaPOS closing final dan laporan printer
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source/runtimeb5daed202cdf0989926f0a3c65188e4eedb2de62,

@@ -1,5 +1,25 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - Voucher Member terlihat setelah login Kiosk
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source/runtime
+c03e44e6b2ddc51eee98e49f4245e47cb0a1403e, rollbackb5daed2. Setelah kode Member
+lengkap diverifikasi, Kiosk menampilkan akses Voucher saya dan jumlah voucher
+Kopi Saga. Tombol tetap di kiri bawah saat menu digulir; panel menyediakan
+Gunakan, kedaluwarsa, saran menu bila tersedia, lepas dan perbarui voucher.
+Login empat karakter tetap untuk identitas/poin, bukan membuka hak voucher;
+panel menyediakan verifikasi kode lengkap. Daftar hanya voucher milik Member
+yang berlaku untuk katalog/outlet POS saat ini, bukan semua hadiah Saga Member.
+Penemuan memakai preview katalog baca-saja; tidak membuat pesanan atau reservasi.
+Pilihan dapat dibuat sebelum menambah menu, tetapi diskon tetap diperiksa ulang
+dari keranjang sebenarnya. Batas online/tunai dibantu staf, PIN dan promo stacking
+existing tidak dilonggarkan. Linux168PASS/0FAIL/0SKIP, actual pinned Member API,
+browser1366/768/390/320, backup/off-host/restore/recovery/activation/monitor PASS.
+Live Kiosk entry, API auth/CSRF/guest denial dan kesamaan aset PASS. Harga, promo,
+QRIS, customer/checker layout, printer dan closing tetap. Penukaran voucher asli
+dan transaksi nyata UAT OPEN; tidak ada transaksi palsu/cetakan fisik untuk tes,
+bukan BUSINESS_READY seluruh produk.
+
 ## 2026-10-25 - Closing shift tersimpan dan diantrekan ke printer
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source/runtime

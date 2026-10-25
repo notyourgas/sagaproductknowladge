@@ -1,5 +1,21 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - UAT voucher Member Kiosk pada pelanggan sah
+
+CONFIRMED runtimec03e44e6 deployed, Linux168PASS/0FAIL/0SKIP, actual Member API
+fixed/free beverage dan browser1366/768/390/320 PASS. Recovery/live assets/auth/
+CSRF/guest guards PASS; nota/printer/promo/QRIS/closing tetap. NEEDS CONFIRMATION:
+operator/Andreas mencoba kode Member lengkap milik pelanggan yang sah, membuka
+Voucher saya di kiri bawah, memilih voucher, memeriksa diskon actual cart, lalu
+konfirmasi pembayaran hanya bila benar diterima. Jangan menciptakan order palsu
+atau menukar voucher untuk tes. Hak voucher dari lookup empat karakter tidak ditambahkan;
+empat karakter tetap identity/points only dan perlu full code untuk voucher.
+Daftar bukan semua wallet hadiah: hanya yang berlaku untuk katalog/outlet POS
+saat ini. Future minimum-spend/cross-product voucher rules memerlukan dedicated
+scoped wallet-read; jangan memperluas catalog preview diam-diam. Penanggung jawab:
+Andreas/operator untuk UAT; executor untuk perubahan kontrak provider bila ada.
+Status belum whole-product BUSINESS_READY; kertas/closing UAT sebelumnya tetap.
+
 ## 2026-10-25 - UAT closing fisik SagaPOS tetap terbuka
 
 CONFIRMED: source/runtimeb5daed2 deployed, Linux217PASS serta live protected
