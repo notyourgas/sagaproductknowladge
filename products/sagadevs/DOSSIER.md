@@ -1,5 +1,27 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-10-25 - Empat resep Tea dan PDF terbaru live; penambahan menu POS menunggu akses
+
+CONFIRMED, pembaruan Andreas menambahkan Lychee Tea, Strawberry Tea,
+Lemon Tea dan Yuzu Tea pada [website resep](https://kopi-saga-recipe.pages.dev/).
+Koleksi33resep/7kategori; [PDF terbaru19halaman](https://kopi-saga-recipe.pages.dev/SOP_Kopi_Saga_Saga_Clouds_Tea_Update.pdf)
+dapat diunduh. Cover diperbarui,16halaman isi lama dipertahankan dan dua
+halaman Tea ditambahkan. Source lokal fd9c9efe3edaad4bc1763d5df9cc4e1031d6e965,
+deployment8db2dc38-ceaa-4930-8e2b-2b02fcdd9b02; rollback370dd856 retained.
+Status `PUBLIC_PROTOTYPE_VERIFIED`:16hash payload publik termasuk PDF cocok;
+data33resep, alias pencarian/filter Tea, mode bar/HP390 dan render PDF PASS.
+
+SagaPOS terpisah: read-only katalog publik mengonfirmasi Lychee Ti dan Lemon Ti
+sudah tersediaRp15000. Andreas meminta harga menu baru mengikuti Lychee.
+Kandidat hanya Strawberry Tea dan Yuzu Tea Rp15000/es saja, existing menu
+dipertahankan; simulasi lokal quote/preservasi PASS tanpa transaksi.
+`PREPARED_NOT_PUBLISHED`: akses Owner belum tersedia, belum ada mutasi POS.
+Stok fisik/resep produksi/HPP tetap; takaran/urutan SOP yang belum lengkap dan
+acceptance staf masih OPEN. Publik tanpa login tetap sesuai keputusan sebelumnya;
+noindex bukan kontrol akses. Ini bukan aktivasi SagaMenu atau BUSINESS_READY.
+Next: unlock akses Owner secara lokal, baca ulang katalog/draft/revisi, lalu
+publikasi dua menu yang memang belum ada dan read-back produksi.
+
 ## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
 
 CONFIRMED, Andreas meminta website prototype untuk mencari dan memperbesar

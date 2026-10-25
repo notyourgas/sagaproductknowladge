@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - Empat resep Tea dan PDF terbaru live; penambahan menu POS menunggu akses
+
+CONFIRMED, website/PDF Kopi Saga source lokal fd9c9ef dan deployment8db2dc38
+`PUBLIC_PROTOTYPE_VERIFIED`. Dokumen SagaDevs/master/changelog/GAPS sinkron pada
+scope ini; status `UP TO DATE`. SagaPOS penambahan dua menu masih
+`PREPARED_NOT_PUBLISHED` karena akses Owner belum tersedia. Tidak ada data
+produksi/HPP/stok fisik yang ditulis pada checkpoint ini.
+
 ## 2026-10-25 - SagaPOS PIN help-only production deployed
 
 CONFIRMED applicationeef035db80915d924045546d7b08d30f19644d82/rollback690d93e;

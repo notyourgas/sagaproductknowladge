@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - Empat resep Tea dan PDF terbaru live; penambahan menu POS menunggu akses
+
+CONFIRMED, source lokal fd9c9ef/deployment8db2dc38. Koleksi resep/PDF
+Kopi Saga diperbarui33resep/19halaman;16hash publik cocok. Dokumen produk
+SagaDevs/master/portfolio/GAPS/SYNC_STATUS selaras. SagaPOS hanya duplicate
+read-check dan kandidat lokal dua menuRp15000, belum dipublikasikan karena
+akses Owner belum tersedia. Stok fisik/HPP tidak berubah; bukan BUSINESS_READY.
+Knowledge terpisah main HEAD, tanpa PDF/source recipe/evidence privat.
+
 ## 2026-10-25 - Sinkronisasi PIN Kiosk help-only
 
 CONFIRMED applicationeef035d/rollback690d93e. Product/dossier/changelogs/master,

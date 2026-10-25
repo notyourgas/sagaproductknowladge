@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - Empat resep Tea dan PDF terbaru live; penambahan menu POS menunggu akses
+
+NEEDS CONFIRMATION: takaran es/air/urutan Tea dan staff acceptance.
+CONFIRMED: website/PDF33resep sudah live, menu Lychee/Lemon POS sudah adaRp15000.
+Penambahan Strawberry/Yuzu POS `PREPARED_NOT_PUBLISHED`, menunggu akses Owner
+manual lalu fresh duplicate/revision guard; belum ada perubahan stok/HPP.
+Lihat [catatan resep](products/sagadevs/KOPI_SAGA_RECIPES.md).
+
 ## 2026-10-25 - PIN help-only sudah tersedia; Chromebook UAT terbuka
 
 CONFIRMED runtimeeef035d/rollback690d93e, Linux95PASS, backup/off-host/recovery/
