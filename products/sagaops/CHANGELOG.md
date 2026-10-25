@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-25 - Tambah Air Mineral 750 ml
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED. Native Owner
+publish katalog112/revisi10 pada runtimec03e44e6, tanpa code deploy. Nonkop,
+Rp6000, Dingin/Suhu ruang delta0; tanpa panas/gula/topping. Live Kasir/Kiosk UI
+dan kedua quote PASS; promo20persen existing membuat KioskRp4800. Menu lama,
+promo/nota/printer tetap; stok fisik tidak berubah, HPP/foto belum diberikan.
+Alasan: menu baru diminta Andreas. PRODUCT/DOSSIER/master/changelog root dan
+portfolio, GAPS/SYNC_STATUS/DEC299 disinkronkan; tanpa transaksi palsu/cetakan.
+
 ## 2026-10-25 - Voucher saya tersedia di Kiosk
 
 CONFIRMED Andreas, source/runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,

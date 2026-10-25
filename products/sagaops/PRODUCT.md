@@ -1,5 +1,17 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - Air Mineral 750 ml aktif
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED, katalog112/
+publikasi10 pada runtimec03e44e6. Air Mineral750ml tersedia di Nonkop untuk Kasir
+dan Kiosk, harga dasarRp6000. Wajib pilih Dingin atau Suhu ruang, masing-masing
+tambahanRp0; tanpa panas, tingkat gula atau topping. Promo Kiosk20persen existing
+tetap berlaku sehingga quote saat iniRp4800, sedangkan KasirRp6000. Native Owner
+publish/read-back serta live UI/quote kedua pilihan PASS tanpa transaksi palsu.
+Perilaku menu lama, promo, nota customer/checker dan printer tetap. Stok fisik
+tidak berubah; HPP/harga beli dan foto produk belum diberikan. Tidak ada perubahan
+source aplikasi atau paket rilis baru untuk penambahan master menu ini.
+
 ## 2026-10-25 - Voucher Member terlihat setelah login Kiosk
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source/runtime

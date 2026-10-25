@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaPOS Air Mineral 750 ml
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED, katalog112/
+publikasi10, runtimec03e44e6 tetap. Kasir/Kiosk Nonkop menambah Air Mineral750ml
+harga dasarRp6000, wajib Dingin atau Suhu ruang tanpa surcharge/panas/gula/topping.
+Promo Kiosk20persen existing tetap memberi quoteRp4800; KasirRp6000. Native
+publish/read-back dan live UI/quote PASS, bukan penjualan/test payment. Tidak
+ada code deploy; menu lain/nota/printer/promo tetap, stok fisik tidak berubah.
+HPP/harga beli dan foto belum diberikan. Lihat SagaOPS PRODUCT/DOSSIER.
+
 ## 2026-10-25 - SagaPOS Kiosk Voucher saya tersedia
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,

@@ -1,5 +1,14 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaPOS Air Mineral 750 ml
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED, katalog112/
+publikasi10 pada runtimec03e44e6. Menu Nonkop Kasir/Kiosk Rp6000 dengan Dingin/
+Suhu ruang delta0; native publish/read-back/UI/quote PASS. Promo Kiosk20persen
+existing memberiRp4800. Tidak ada code deploy, fake sale atau cetakan; stok fisik
+tidak berubah dan HPP/foto belum diberikan. Menu lain, nota/printer/promo tetap.
+SagaOPS docs/master/changelogs/GAPS/SYNC_STATUS/DEC299 diperbarui.
+
 ## 2026-10-25 - SagaPOS voucher Kiosk mudah ditemukan
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtimec03e44e6,

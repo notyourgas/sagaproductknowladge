@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - Referensi biaya dan foto Air Mineral belum diberikan
+
+CONFIRMED katalog112/publikasi10: Air Mineral750ml/Rp6000 dengan Dingin/Suhu
+ruang sudah aktif di Kasir/Kiosk; live quote/UI PASS tanpa transaksi palsu.
+NEEDS CONFIRMATION hanya untuk harga beli/HPP, foto/merek aktual dan stok nyata
+bila akan dilacak. Jangan mengisi biaya nol atau membuat penerimaan stok demi
+melengkapi master. Penanggung jawab Andreas/operator: berikan data biaya/foto
+dan catat stok nyata melalui alur persediaan bila diperlukan. Harga dasar6000,
+promo Kiosk20persen existing tetap4800; tidak ada aturan promo baru.
+
 ## 2026-10-25 - UAT voucher Member Kiosk pada pelanggan sah
 
 CONFIRMED runtimec03e44e6 deployed, Linux168PASS/0FAIL/0SKIP, actual Member API

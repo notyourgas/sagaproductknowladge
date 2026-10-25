@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-299 - Air Mineral 750 ml di Kasir dan Kiosk
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-25 |
+| Topik | Menu Air Mineral 750 ml |
+| Keputusan | Tambahkan di POS dengan harga dasar Rp6000 dan pilihan Dingin/Suhu ruang tanpa tambahan harga. Gunakan native katalog, tanpa panas/gula/topping, perubahan printer atau stok palsu. |
+| Alasan | Permintaan menu tambahan langsung dari Andreas. |
+| Alternatif | Hanya draft; dua SKU terpisah; ikut memakai opsi kopi; mengarang HPP/stok/foto merek. |
+| Dampak | Katalog112/publikasi10 aktif di Kasir/Kiosk pada runtimec03e44e6. Native publish/read-back/UI/quote PASS; existing promo Kiosk20persen memberi Rp4800 dan Kasir Rp6000. Menu lama/nota/printer/promo tetap; stok fisik tidak berubah, HPP/foto belum diberikan. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED; tanpa code deploy atau transaksi uji production |
+| Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md) |
+
 ## DEC-298 - Voucher Member mudah dipakai dari menu Kiosk
 
 | Field | Isi |

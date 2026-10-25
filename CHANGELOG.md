@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - SagaPOS menu Air Mineral aktif
+
+CONFIRMED Andreas: katalog112/publikasi10, runtimec03e44e6 unchanged, native
+master-data publish. Air Mineral750ml/Rp6000 Nonkop, Dingin/Suhu ruang delta0,
+tanpa panas/gula/topping. Live UI/quote Kasir/Kiosk PASS; existing promo memberi
+KioskRp4800. Nota/printer/menu lama preserved, stok fisik tidak berubah, HPP/foto
+belum diberikan. SagaOPS PRODUCT/DOSSIER/CHANGELOG, master/root/portfolio changelog,
+GAPS/SYNC_STATUS/DEC299 updated; tidak membuat transaksi atau cetakan untuk tes.
+
 ## 2026-10-25 - SagaPOS akses voucher Member Kiosk deployed
 
 - CONFIRMED Andreas; source/runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,

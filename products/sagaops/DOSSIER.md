@@ -1,5 +1,18 @@
 # SagaOPS Dossier
 
+## 2026-10-25 - Air mineral sebagai menu kemasan
+
+CONFIRMED Andreas: Air Mineral750ml/Rp6000 di Nonkop, Bar, Kasir/Kiosk aktif
+pada katalog112/publikasi10, runtimec03e44e6. Penyajian wajib satu dari Dingin
+atau Suhu ruang dengan delta0; tanpa panas/gula/topping. Scope pilihan lama
+dipertahankan untuk produk existing dan tidak diterapkan ke air mineral. Synthetic
+native policy comparison serta live Owner publish/read-back/UI/quote PASS.
+Harga dasar/subtotalRp6000 untuk kedua opsi; promo KIOSK20persen yang tidak diubah
+memberikan totalRp4800, KasirRp6000. Tidak ada pesanan/pembayaran/TEST fisik dibuat.
+Stock untracked, stok fisik tidak berubah; tidak mengarang harga beli, HPP, merek,
+foto atau gizi. Nota/printer dan konfigurasi promo tetap. Ini publikasi data native,
+bukan deploy aplikasi baru atau perluasan whole-product BUSINESS_READY.
+
 ## 2026-10-25 - Akses voucher Kiosk menetap di menu
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,

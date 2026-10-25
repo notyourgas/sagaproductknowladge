@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaPOS publikasi menu Air Mineral
+
+CONFIRMED accepted scope: katalog112/publikasi10, runtimec03e44e6 unchanged.
+Native Owner publish/read-back serta live Kasir/Kiosk UI/dua quote PASS. Air
+Mineral750ml/Rp6000, Dingin/Suhu ruang delta0; existing Kiosk promo menghasilkan
+Rp4800. Tidak ada code deploy, transaksi palsu atau TEST fisik; menu/promo/nota/
+printer tetap dan stok fisik tidak berubah. HPP/foto belum diberikan. SagaOPS
+PRODUCT/DOSSIER/CHANGELOG, master/root/portfolio changelog, GAPS dan DEC299 sinkron.
+
 ## 2026-10-25 - SagaPOS voucher Member Kiosk production deployed
 
 CONFIRMED / accepted scope knowledge. Source/runtimec03e44e6b2ddc51eee98e49f4245e47cb0a1403e,
