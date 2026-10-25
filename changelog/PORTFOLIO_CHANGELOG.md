@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-25 - SagaPOS KDS pause/clear activated
+
+CONFIRMED application690d93e/rollbackf60e293: KDS sementara OFF dan antrean lama
+disembunyikan, history transaksi tetap. Owner dapat toggle/clear; resume hanya
+pesanan baru. Nota/printer/checker/QRIS/katalog112 tidak berubah. Linux308PASS,
+ops-runner repair c9aa362:63PASS; recovery/backup/activation/monitor PASS. Live
+Owner UI UAT dan whole-product BUSINESS_READY tidak diklaim.
+
 ## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
 
 CONFIRMED, Andreas meminta website prototype untuk mencari dan memperbesar

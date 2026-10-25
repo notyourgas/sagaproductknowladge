@@ -1,5 +1,23 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - KDS dapat dijeda dan antrean lama disembunyikan
+
+CONFIRMED Andreas / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Runtime
+690d93e0600d89ebb1fe1b62c5cb7691e1e0a067, rollback operasional f60e293.
+KDS sementara OFF; antrean terlihat nol, riwayat transaksi tetap tersimpan.
+Owner membuka Lihat KDS dari dashboard untuk aktif/nonaktif atau bersihkan
+antrean. Staf bar hanya melihat status; browser lama tidak dapat memajukan tiket
+saat dijeda. Pengaturan bertahan setelah restart dan diaudit. Aktif kembali
+menampilkan pesanan baru sejak aktivasi, tanpa backlog selama jeda. Nota customer,
+checker, layout, printer, QRIS dan katalog112 tetap. Linux308PASS serta pemeriksa
+rilis63PASS; backup/off-host/restore/recovery/monitor PASS. Admin pause diterapkan
+melalui perintah native terbatas yang diminta founder, tanpa sesi Owner buatan.
+Live Owner UI UAT belum diulang; bukan klaim whole-product BUSINESS_READY.
+
+Jeda tidak mengarang aksi PREPARING atau konsumsi stok. Produk yang konsumsi
+bahannya bergantung pada persiapan tetap membutuhkan workflow produksi tersebut;
+checker kertas sendiri bukan pencatatan konsumsi bahan.
+
 ## 2026-10-25 - Voucher empat karakter dan restore HPP deployed
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtime

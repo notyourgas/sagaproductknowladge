@@ -1,5 +1,16 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - SagaPOS KDS pause/clear production activated
+
+CONFIRMED application690d93e/operational rollbackf60e293; KDS OFF dan queue0,
+retained order/payment/cash facts serta konfigurasi nota/printer/checker/QRIS dan
+katalog112 read-back PASS. Linux40190792946:308PASS; admission runner control
+c9aa362 qualified40192716282:63PASS. Immutable aplikasi dan receipt rehearsal
+tidak ditambal/rebound. Backup terenkripsi/off-host/restore/recovery/activation/
+monitor PASS. Produk/dossier/changelogs/master/GAPS/DEC302 sinkron. Live Owner UI
+UAT OPEN, bukan whole-product BUSINESS_READY; knowledge main commit adalah
+provenance sync, bukan source runtime baru.
+
 ## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
 
 CONFIRMED, public prototype Kopi Saga source lokal c047582/deployment370dd856

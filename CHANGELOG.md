@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - SagaPOS KDS nonaktif dan retention history
+
+CONFIRMED: PRODUCT/DOSSIER/CHANGELOG SagaOPS, master/portfolio, GAPS, DEC302 dan
+SYNC_STATUS selaras dengan application690d93e/rollbackf60e293 serta ops control
+c9aa362. KDS OFF/queue0; history dan konfigurasi nota/printer tetap. Linux308+63
+PASS, verified backups/recovery/deploy/activation/monitor. Tanpa data pelanggan,
+raw receipt atau private evidence. Live Owner UI UAT OPEN; bukan BUSINESS_READY.
+
 ## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
 
 CONFIRMED, sinkronisasi milestone prototype resep Kopi Saga berdasarkan

@@ -1,5 +1,28 @@
 # SagaOPS Dossier
 
+## 2026-10-25 - KDS pause dan clear tanpa menghapus transaksi
+
+CONFIRMED / PRODUCTION_ACTIVATED, application690d93e/rollbackf60e293. Owner-only
+enable/pause/clear memakai revision CAS, outlet lock, CSRF dan audit. Clear
+mengatur batas waktu inklusif visibilitas; order, payment, kas, stock dan bukti
+command tidak dihapus/dibatalkan/diselesaikan. Resume memajukan batas ke waktu
+resume sehingga hanya pesanan berikutnya tampil. Stale writes diblokir pada
+runtime dan transaksi fulfillment; exact committed replay tetap dapat dibaca.
+Satu record existing menyimpan setelan tanpa migrasi baru. Rollback harus memahami
+pause/cutoff agar antrean lama tidak muncul lagi. KDS produksi OFF dan visible
+queue0; retention history serta template/customer/checker/printer/QRIS/katalog112
+read-back PASS. Tidak ada transaksi palsu atau TEST kertas pada milestone ini.
+
+Linux40190792946:308PASS/0FAIL/0SKIP, artifact integrity, fresh encrypted backup,
+off-host copies, disposable restore dan candidate/compatible/candidate boot PASS.
+Pemeriksa admission schema37 awal menimpa daftar field reporting; kontrol rilis
+c9aa362d81bb57b09832904b6647f0a0a8a4871c memperbaiki satu append, qualified
+Linux40192716282:63PASS. Aplikasi immutable690 tidak ditambal; executor ops
+terverifikasi memakai helper690, receipt tidak diubah/rebound. Migration37,
+POSTGRES reporting dan payment boundary dipertahankan. Authenticated live UI UAT
+OPEN; synthetic UI/RBAC/browser PASS. Stok yang bergantung aksi PREPARING tetap
+memerlukan aksi produksi sah, bukan otomatis dianggap dikonsumsi oleh checker.
+
 ## 2026-10-25 - Rilis suffix-voucher dan pemulihan HPP
 
 CONFIRMED runtimece2519d38e5bbfb49ce251721f6a5543b1a565ee/rollback2c02618,

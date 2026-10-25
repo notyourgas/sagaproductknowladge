@@ -1,5 +1,17 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - KDS dinonaktifkan; workflow persiapan tetap terpisah
+
+CONFIRMED runtime690d93e/rollbackf60e293: KDS OFF dan visible queue0, history
+transaksi utuh; template/printer/checker/QRIS/katalog112 tetap. SOURCE, Linux308PASS,
+scoped ops runner c9aa362:63PASS, backup/off-host/recovery/deploy/activation/monitor
+PASS. NEEDS CONFIRMATION: authenticated live UI UAT oleh Owner, tanpa perlu order
+palsu atau cetak ulang. Andreas dapat memuat ulang Lihat KDS saat tidak ada input
+aktif. KDS bukan satu-satunya bukti barang dibuat: checker kertas tidak otomatis
+menghasilkan PREPARING/konsumsi bahan. Untuk recipe tracked, operator tetap perlu
+workflow persiapan sah sebelum menganggap ledger bahan lengkap. Tidak mengklaim
+whole-product BUSINESS_READY atau commissioning printer baru.
+
 ## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
 
 NEEDS CONFIRMATION: takaran/urutan SOP yang belum ditetapkan, foto minuman

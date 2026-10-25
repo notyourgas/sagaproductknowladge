@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-302 - Jeda KDS dan kosongkan antrean, simpan history transaksi
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-10-25 |
+| Topik | KDS SagaPOS sementara nonaktif |
+| Keputusan | CONFIRMED: Owner dapat aktif/nonaktif/clear; saat ini KDS OFF dan antrean lama disembunyikan. |
+| Alasan | Perangkat KDS belum dipakai; bersihkan percobaan tanpa merusak laporan penjualan. |
+| Batas | Order, payment, kas, audit dan print jobs tidak dihapus, dibatalkan atau dibuat selesai. |
+| Resume | Hanya pesanan baru sejak diaktifkan kembali; backlog selama jeda tetap tersembunyi. |
+| Pemberi keputusan | Andreas, jawaban langsung: kosongkan KDS; simpan riwayat transaksi. |
+| Provenance | Application690d93e/rollbackf60e293; ops-runnerc9aa362, Linux308+63PASS dan production read-back. |
+| Residual | Live Owner UI UAT OPEN; checker bukan konsumsi bahan yang bergantung PREPARING; bukan whole-product BUSINESS_READY. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md) |
+
 ## DEC-301 - Prototype resep Kopi Saga sementara publik tanpa login
 
 | Field | Nilai |

@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-25 - SagaPOS KDS pause/clear tersedia dan sementara OFF
+
+CONFIRMED / PRODUCTION_ACTIVATED application690d93e/rollbackf60e293. Andreas
+memilih mengosongkan hanya antrean KDS dan menyimpan history transaksi. KDS OFF,
+visible queue0; Owner memiliki aktif/nonaktif dan clear pada Lihat KDS. Resume
+hanya pesanan baru, tidak membuka backlog selama jeda. Setelan persisten/audited,
+RBAC/CSRF/CAS dan stale-write guards aktif. Nota customer/checker, layout, printer,
+QRIS dan katalog112 tetap. Linux308PASS, ops admission repair c9aa362:63PASS,
+backup/off-host/restore/recovery/monitor PASS. Live Owner UI UAT OPEN, bukan
+whole-product BUSINESS_READY. Checker kertas tidak menciptakan konsumsi stok
+yang memerlukan transisi persiapan.
+
 ## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
 
 CONFIRMED, Andreas meminta website prototype untuk mencari dan memperbesar

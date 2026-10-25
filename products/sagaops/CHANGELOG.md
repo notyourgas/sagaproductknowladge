@@ -1,5 +1,16 @@
 # SagaOPS Changelog
 
+## 2026-10-25 - KDS nonaktif sementara, history tersimpan
+
+CONFIRMED runtime690d93e/rollbackf60e293, KDS OFF dan antrean terlihat0. Owner
+dapat aktif/nonaktif/clear; resume hanya pesanan baru. History order/payment/kas,
+nota/customer/checker/printer/QRIS dan katalog112 tetap. Linux308PASS dan scoped
+ops-runner c9aa362:63PASS; backup/off-host/restore/recovery/activation/monitor PASS.
+Tidak ada perubahan receipt historis atau aplikasi immutable untuk memperbaiki
+admission runner. Live Owner UI UAT OPEN; tanpa transaksi palsu/TEST kertas,
+bukan whole-product BUSINESS_READY. Konsumsi bahan berbasis PREPARING tetap
+memerlukan workflow produksi sah.
+
 ## 2026-10-25 - Deploy voucher singkat dan perbaikan restore HPP
 
 CONFIRMED runtimece2519d/rollback2c02618, Linux258PASS/0FAIL/0SKIP. Immutable pair,
