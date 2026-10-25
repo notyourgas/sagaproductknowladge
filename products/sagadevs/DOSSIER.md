@@ -1,5 +1,30 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-10-26 - Saga Clouds dan ilustrasi Oyen Sunkist aktif
+
+CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus katalog.
+Andreas menetapkan Cookie Cloud, Berry Cloud dan Choco Cloud Rp20.000; tiga
+menu baru tersedia Es saja pada kategori Saga Clouds. Oyen Sunkist mengikuti
+resep Orange, tetap kategori Soda/harga dasar Rp18.000. Empat gambar dibuat
+melalui built-in image_gen sesuai komposisi SOP, diberi label Ilustrasi AI dan
+catatan bahwa penyajian dapat berbeda; bukan foto produk aktual.
+
+Native Owner catalog119→130/publication11→12 pada runtime
+`ef439898c82bff69c78b8edb0ee64b9a72e5940a`. Source aset lokal
+`2bdaa74a8b96bac2a20a3cbd98271040d5161f6a`, prompt9a0ca81, ledgerd3ec184.
+Read-back Owner/cashier/kiosk dan hash empat gambar PASS. Quote kasir tiga
+Clouds20000/Oyen18000; kiosk16000/14400 karena promo20% existing. Browser
+[kategori Clouds](https://sagapos.site/menu?category=saga-clouds) dan detail
+Cookie/Oyen PASS. Produk lama, pilihan, promo/pricing/ordering serta
+printer/template dipertahankan. Stok fisik/HPP tidak berubah;0order/payment/print.
+
+Dua public-proxy timeout diselesaikan dengan read-back exact draft dan satu
+publish native API melalui SSH loopback, dengan Owner/CSRF/revision guard sama.
+Tidak mengulang batch atau deploy/restart aplikasi. Penyebab proxy timeout
+belum dipastikan. Website33resep/PDF19halaman tetap pada deployment8db2dc38.
+Staff/device UAT, takaran/urutan SOP final, foto aktual dan HPP tetapOPEN;
+bukan BUSINESS_READY seluruh produk. Gambar Tea masih placeholder.
+
 ## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus dua menu.

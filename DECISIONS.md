@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-305 - Harga Saga Clouds dan pemetaan Oyen Sunkist
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-26 |
+| Keputusan | Cookie Cloud, Berry Cloud, Choco Cloud masing-masing Rp20.000; Oyen Sunkist mengikuti resep Orange dan mempertahankan Rp18.000. Tambahkan menu yang belum ada ke kasir/kiosk dan buat gambar yang sesuai. |
+| Alasan | Menyamakan katalog jual dengan SOP dan instruksi harga Andreas. |
+| Alternatif | Membuat Orange duplikat; menebak harga; memakai gambar tanpa rujukan resep. |
+| Dampak | Native catalog130/publication12 aktif; empat ilustrasi AI diberi label. Promo kiosk20% existing tetap, harga dasarClouds20000. |
+| Pemberi keputusan | Andreas, instruksi dan konfirmasi langsung pada percakapan. |
+| Status | CONFIRMED / MASTER_DATA_PUBLISHED; stock fisik/HPP tidak berubah, staff/device UAT dan SOP final OPEN. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Kopi Saga Recipes](products/sagadevs/KOPI_SAGA_RECIPES.md) |
+
 ## DEC-304 - Ringkasan Harian SagaPOS menyatukan penjualan dan uang diterima
 
 | Field | Isi |
