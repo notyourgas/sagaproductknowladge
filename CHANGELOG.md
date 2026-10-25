@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
+
+CONFIRMED, sinkronisasi milestone prototype resep Kopi Saga berdasarkan
+source lokal c047582 dan deployment Pages terverifikasi. PRODUCT/DOSSIER/
+CHANGELOG SagaDevs, catatan KOPI_SAGA_RECIPES, master, portfolio, indeks,
+GAPS, DEC301 dan SYNC_STATUS diselaraskan. Public-safe metadata saja;
+takaran rinci/PDF/source privat tidak disalin ke knowledge. Production
+hosting berubah hanya pada project prototype baru. SOP final dan staff UAT
+OPEN; bukan BUSINESS_READY. Knowledge commit terpisah pada main HEAD.
+
 ## 2026-10-25 - SagaPOS rilis voucher suffix dan HPP
 
 CONFIRMED runtimece2519d/rollback2c02618, Linux258PASS, packages/integrity/backup/

@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-301 - Prototype resep Kopi Saga sementara publik tanpa login
+
+| Field | Nilai |
+|---|---|
+| Tanggal | 2026-10-25 |
+| Topik | Akses prototype resep operasional Kopi Saga |
+| Keputusan | CONFIRMED: publik tanpa login untuk sementara di Cloudflare Pages; menggantikan pilihan awal khusus staf pada sesi yang sama. |
+| Alasan | Memudahkan review prototype lewat link. |
+| Alternatif yang dipertimbangkan | Cloudflare Access dengan allowlist email staf. |
+| Dampak | Pengunjung dapat membaca resep; noindex tidak membatasi akses. Login staf belum diterapkan. |
+| Pemberi keputusan | Andreas, jawaban langsung 25 Oktober 2026. |
+| Status | CONFIRMED untuk prototype; SOP final dan BUSINESS_READY belum disahkan. |
+| Dokumen terkait | [Kopi Saga Recipe Book](products/sagadevs/KOPI_SAGA_RECIPES.md) |
+
+
 ## DEC-300 - Voucher Kiosk setelah lookup empat karakter unik
 
 | Field | Isi |

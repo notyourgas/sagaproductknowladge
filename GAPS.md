@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
+
+NEEDS CONFIRMATION: takaran/urutan SOP yang belum ditetapkan, foto minuman
+aktual dan acceptance staf pada perangkat fisik. CONFIRMED: prototype
+https://kopi-saga-recipe.pages.dev/ publik tanpa login untuk sementara;
+login staf belum diimplementasikan. Noindex bukan kontrol akses. Tidak ada
+perubahan takaran produksi/database/POS. [Detail](products/sagadevs/KOPI_SAGA_RECIPES.md).
+
 ## 2026-10-25 - Rilis HPP/voucher selesai; UAT pelanggan masih terbuka
 
 CONFIRMED runtimece2519d/rollback2c02618; Linux258PASS, backup/off-host/restore/

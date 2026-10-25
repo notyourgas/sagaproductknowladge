@@ -1,5 +1,11 @@
 # Indeks Saga Product Knowledge
 
+## 2026-10-25 - Kopi Saga Recipe Book prototype publik di Cloudflare Pages
+
+[Kopi Saga Recipe Book](products/sagadevs/KOPI_SAGA_RECIPES.md) adalah prototype
+resep operasional, di bawah portofolio website SagaDevs. Publik tanpa login
+atas pilihan Andreas; bukan produk SaaS SagaMenu atau integrasi SagaPOS.
+
 ## 2026-10-20 - Client prototype Jersey Jago
 
 [Catatan Jersey Jago](products/sagadevs/JERSEY_JAGO.md): prototype visual terisolasi dalam layanan SagaDevs; belum toko production atau commerce aktif.
