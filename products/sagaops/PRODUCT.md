@@ -1,5 +1,30 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
+
+CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus dua menu.
+Strawberry Tea dan Yuzu Tea masuk kategoriTea dengan harga dasarRp15000,
+mengikuti Lychee Ti sesuai instruksi Andreas. Lychee Ti dan Lemon Ti sudah
+ada dan tidak diduplikasi. Menu baru Es saja, dengan pilihan tingkat manis
+existing. Public catalog mengonfirmasi empatTea tersedia/PUBLISHED.
+
+Native Owner catalog112→119/publication10→11, source runtime teramati
+eef035db80915d924045546d7b08d30f19644d82. Dua quote Kasir15000 dan browser
+daftarTea/detailStrawberry PASS. Produk/pilihan/harga lama, promo/pricing/
+ordering serta printer/template tetap. Stok fisik tidak berubah; tidak ada
+transaksi/payment/print atau publikasi resep/HPP. Foto menu baru belum
+diberikan sehingga memakai placeholder. Tidak ada application deploy.
+
+Timeout pada satu write diselesaikan melalui read-back versi115 yang
+membuktikan hanya tiga perubahan awal tersimpan, lalu resume guarded dan
+satu publish. Tidak membuat duplikat atau mengulang seluruh batch. Status
+PREPARED_NOT_PUBLISHED/menunggu Owner pada entry sebelumnya sudah terselesaikan.
+[Website SOP33resep](https://kopi-saga-recipe.pages.dev/) dan
+[PDF19halaman](https://kopi-saga-recipe.pages.dev/SOP_Kopi_Saga_Saga_Clouds_Tea_Update.pdf)
+tetap live pada source lokal fd9c9ef/deployment8db2dc38.
+SOP final, kelengkapan takaran/urutan, foto aktual dan staff/device acceptance
+tetap OPEN; bukan BUSINESS_READY seluruh produk.
+
 ## 2026-10-25 - Ganti PIN Kiosk hanya lewat Bantuan
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, runtime

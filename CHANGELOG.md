@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
+
+CONFIRMED, native Owner duaTeaRp15000/version119/publication11 aktif,
+public catalog/dua quote Kasir/browser PASS. SagaOPS dan SagaDevs docs,
+master/portfolio/GAPS/SYNC_STATUS diselaraskan; status menunggu akses Owner
+ditutup. Source teramati eef035d, website fd9c9ef/deployment8db2dc38 tetap.
+Stok fisik/HPP tidak berubah; metadata public-safe saja, tanpa raw receipt/
+evidence/identifier privat. Knowledge commit terpisah main HEAD.
+
 ## 2026-10-25 - Empat resep Tea dan PDF terbaru live; penambahan menu POS menunggu akses
 
 CONFIRMED, source lokal fd9c9ef/deployment8db2dc38. Koleksi resep/PDF

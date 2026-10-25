@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
+
+CONFIRMED: native Owner data menuTea119/publication11 ACTIVE, public API,
+dua quote Kasir dan browser PASS. SagaOPS/SagaDevs/master/changelogs/GAPS
+sinkron; status `UP TO DATE` pada scope ini. Pending Owner sebelumnya selesai.
+Website33resep/PDF19halaman tetap. Stok fisik/HPP tidak berubah; SOP final,
+foto dan staff/device UAT tetapOPEN, bukan BUSINESS_READY seluruh produk.
+
 ## 2026-10-25 - Empat resep Tea dan PDF terbaru live; penambahan menu POS menunggu akses
 
 CONFIRMED, website/PDF Kopi Saga source lokal fd9c9ef dan deployment8db2dc38

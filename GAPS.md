@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-25 - Strawberry Tea dan Yuzu Tea aktif di SagaPOS
+
+CONFIRMED: akses Owner dan publikasi Strawberry/YuzuRp15000 selesai,
+catalog119/publication11; hambatan PREPARED_NOT_PUBLISHED sebelumnya ditutup.
+NEEDS CONFIRMATION: takaran/urutan SOP yang belum lengkap, foto aktual dua
+menu baru dan staff/device acceptance. Tidak ada publikasi recipe/HPP atau
+stock movement. [Detail](products/sagadevs/KOPI_SAGA_RECIPES.md).
+
 ## 2026-10-25 - Empat resep Tea dan PDF terbaru live; penambahan menu POS menunggu akses
 
 NEEDS CONFIRMATION: takaran es/air/urutan Tea dan staff acceptance.
