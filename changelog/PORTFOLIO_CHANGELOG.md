@@ -1,5 +1,36 @@
 # Portfolio Changelog
 
+## 2026-10-26 - Nota closing ringkas dan pilihan rincian terpisah
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [8ab7307](https://github.com/notyourgas/sagaops/commit/8ab730757a857f443b489a36e4cd0896e20cc26c),
+rollback 859571454908de236fc8d7498a9a615f59adb4eb. Perubahan staf independen tetap
+terbawa; schema 37, harga, promo, QRIS, nota customer dan checker tetap.
+
+Closing berikutnya otomatis mencetak laporan ringkas dengan kas fisik, selisih
+dan serah terima di awal; lalu penjualan, diskon, jumlah menu/gratis Invitation
+serta pengeluaran yang membedakan uang laci dan pembayaran Owner. Rekap harian
+tidak ditambahkan berulang ke laporan shift. Preview Kasir memakai ringkasan
+serta rincian yang bisa dibuka. Laporan closing & cetak menyediakan Closing
+ringkas, Rincian shift dan Rekap harian sampai waktu closing, sebagai salinan
+tercatat dengan alasan, pemeriksaan kertas dan operasi idempotent. Snapshot
+histori/antrean lama tetap memakai renderer versi lama; dokumen baru mengikat
+versi layout dan format. Modal bukan omzet, QRIS tidak menambah kas laci, dan
+benefit tidak dipotong dua kali. Rekap harian bukan settlement atau tutup buku.
+
+[Linux run 40298700947](https://github.com/notyourgas/sagaops/actions/runs/40298700947)
+SUCCESS: 220 PASS / 0 FAIL / 0 SKIP; static/type 1281 modul. Paket immutable,
+backup terenkripsi/off-host, restored-DB candidate/rollback/candidate rehearsal,
+aktivasi dan monitor PASS. Aset served cocok dengan source; konfigurasi printer,
+nota, QRIS, katalog, harga dan promo sama. UI production 1366/390 px lulus tanpa
+membuat transaksi atau cetakan untuk pengujian.
+
+UAT kertas closing versi baru di Chromebook masih OPEN; hasil fisik lama bukan
+bukti layout baru. Rollback ke kode sebelum layout V2 perlu peninjauan/drain job
+V2; jangan kirim ulang hasil tidak pasti atau restore DB untuk rollback UI.
+BUSINESS_READY menyeluruh tidak diklaim. Langkah operator: saat sepi muat ulang
+Kasir dan periksa satu closing berikutnya atau salinan ringkas yang eksplisit.
+
 ## 2026-10-26 - Tukar libur staf dengan persetujuan rekan dan Owner
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
