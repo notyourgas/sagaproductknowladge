@@ -1,5 +1,31 @@
 # SagaBook Dossier
 
+## 2026-10-26 - Bio Saga Studio memakai foto sesi asli
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk [bio Saga Studio](https://sagastudio.site/),
+berdasarkan instruksi Andreas memakai koleksi foto yang sebelumnya diberikan.
+Sebelas foto asli terkurasi mengganti gambar konsep pada homepage, empat
+paket, empat background Paper, galeri delapan foto, gambar pendukung dan
+social preview. Galeri menyediakan kategori Portraits dan Groups.
+Thunder Grey dan Slate Grey mengikuti pemetaan katalog yang telah dikoreksi.
+Sebelas background lain menampilkan keterangan foto asli belum tersedia;
+foto sesi tidak diklaim sebagai foto interior, produk cetak atau backdrop lain.
+
+Source Git lokal bio `10bc2f549768c4aba4cd3493a37a60f76085c6ec`, release
+`20261026-10bc2f5-photos`; rollback `20261026-bd80651-booking` tersedia.
+Pipeline existing menghasilkan 66 varian AVIF/WebP dari 11 foto, dengan
+nama netral dan metadata dihapus. Seluruh 98 varian artwork frame tetap identik.
+Build/check 27 route, 8/8 tes, 22 route publik sesuai artifact, checksum 25
+aset publik dan pemeriksaan browser PASS. Seluruh delapan foto galeri dimuat;
+tampilan mobile 390px dan cek overflow 320px PASS. Enam belas tautan booking
+masih menuju halaman Saga Studio di SagaBook.
+
+Production bio berubah. Runtime SagaBook tetap `20261025165636-ec440e5`;
+backend campaign/rekrutmen, harga, pembayaran, DB, DNS serta transaksi nyata
+tidak diubah. Tidak ada blocker rilis foto; kelengkapan foto untuk sebelas
+background masih OPEN. BUSINESS_READY seluruh studio tidak diklaim.
+Nama album/file asal, identitas orang dan pemetaan Drive disimpan privat.
+
 ## 2026-10-26 - Booking dari bio Saga Studio terhubung ke SagaBook
 
 CONFIRMED / PRODUCTION_ACTIVATED khusus tautan booking bio, berdasarkan
