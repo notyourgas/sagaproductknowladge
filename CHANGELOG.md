@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-26 - Pemulihan printer saat Kiosk idle sudah deployed
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. [6835830](https://github.com/notyourgas/sagaops/commit/683583011d74f089f0bb5a76479db45a852f68ee),
+rollback f104bd0: screen wake lock dan pemulihan WebUSB per tab, dengan Jeda/izin/ledger
+tetap dijaga. Linux173tes PASS, integritas paket, offhost backup/restore, rehearsal,
+aktivasi dan monitor PASS. Overall CI_UPLOAD_CONFLICT409 tetap dicatat; paket asli
+berhasil diunggah dan diverifikasi, control-plane87990d0 memperbaiki upload ganda
+tanpa perubahan runtime. Layout/printer/harga/promo tetap; UAT Chromebook OPEN.
+Rincian: [SagaOPS Product](products/sagaops/PRODUCT.md).
+
 ## 2026-10-26 - UI dan copy bio Saga Studio sesuai status sudah buka
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk [bio Saga Studio](https://sagastudio.site/),
