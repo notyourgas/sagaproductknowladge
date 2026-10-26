@@ -1,5 +1,36 @@
 # SagaOPS Dossier
 
+## 2026-10-27 - Jadwal Admin Studio dipindah ke Jadwal dan shift
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [41095e4](https://github.com/notyourgas/sagaops/commit/41095e4ca48c59990ec1fe7309af63060cdd4dcd),
+rollback terpilih 3d72045ebdf2a179d0b82c8b8fc4c4c704f156e6. Schema 37 tetap.
+
+Tim & HR -> Jadwal & shift kini memiliki navigasi Barista dan Admin Studio.
+Barista mempertahankan kalender, template, generate, tinjau dan publish semula.
+Admin Studio menampilkan jadwal terbaru/mendatang yang sudah tersimpan, dengan
+filter nama admin, tabel desktop, kartu pada HP dan tombol Tambah jadwal admin.
+Form jadwal admin dipindahkan dari Absensi ke halaman ini. Tabel absensi dan
+kategori karyawan tetap terpisah. Form/API admin, validasi, permission dan
+konversi WIB ke UTC tetap memakai mekanisme native yang sama.
+
+Perpindahan kategori tidak menulis jadwal. Pengaman form belum tersimpan dan
+operasi yang hasilnya belum diketahui tetap berlaku. Ini perubahan navigasi dan
+presentasi; generator roster Admin, histori lengkap/paginasi jadwal, edit massal
+dan penghapusan jadwal belum termasuk. Admin menggunakan snapshot jadwal terbaru
+dan mendatang dari dashboard Owner existing. Tidak ada migrasi/schema, akun,
+password, jadwal nyata, tarif, absensi, payroll, provider atau pengiriman pesan
+yang diubah saat verifikasi. Perbaikan printer yang sudah aktif tetap terbawa.
+
+[Linux run 40369478899](https://github.com/notyourgas/sagaops/actions/runs/40369478899):
+122 PASS / 0 FAIL / 0 SKIP pada PostgreSQL 18/Chromium, static/type 1284 modul.
+Mencakup Owner asli pada fixture, navigasi kategori, filter, simpan form admin,
+320/390/1280 layout, aksesibilitas tabel, absensi/roster dan regresi printer.
+Backup terenkripsi/off-host checksum dan candidate/rollback restored-DB rehearsal
+lulus. Runtime, aset, halaman Owner terautentikasi dan data terlindungi diverifikasi.
+Tidak ada jadwal nyata dibuat saat smoke. UAT HP Owner fisik masih OPEN;
+BUSINESS_READY menyeluruh tidak diklaim.
+
 ## 2026-10-27 - Pemulihan layanan printer Chromebook tanpa cetak ulang
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.

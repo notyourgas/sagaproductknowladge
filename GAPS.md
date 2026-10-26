@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-27 - Jadwal Admin Studio dipindah ke Jadwal dan shift
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [41095e4](https://github.com/notyourgas/sagaops/commit/41095e4ca48c59990ec1fe7309af63060cdd4dcd),
+rollback terpilih 3d72045ebdf2a179d0b82c8b8fc4c4c704f156e6. Schema 37 tetap.
+
+Jadwal Staff Admin sekarang dibuka melalui Jadwal & shift -> Admin Studio,
+bersebelahan dengan tombol Barista. Tabel desktop/kartu HP, filter admin dan form
+Tambah jadwal admin tersedia di sana; tombol/form dipindahkan dari Absensi.
+Jadwal tersimpan dan validasi native tetap dipakai. Kalender/generator Barista
+tetap sama; ini bukan generator Admin atau histori jadwal lengkap baru.
+
+UAT HP Owner fisik masih OPEN. Tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-27 - Pemulihan layanan printer Chromebook tanpa cetak ulang
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.

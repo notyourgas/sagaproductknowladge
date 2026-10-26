@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-27 - Jadwal Admin Studio dipindah ke Jadwal dan shift
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [41095e4](https://github.com/notyourgas/sagaops/commit/41095e4ca48c59990ec1fe7309af63060cdd4dcd),
+rollback terpilih 3d72045ebdf2a179d0b82c8b8fc4c4c704f156e6. Schema 37 tetap.
+
+Jadwal Staff Admin sekarang dibuka melalui Jadwal & shift -> Admin Studio,
+bersebelahan dengan tombol Barista. Tabel desktop/kartu HP, filter admin dan form
+Tambah jadwal admin tersedia di sana; tombol/form dipindahkan dari Absensi.
+Jadwal tersimpan dan validasi native tetap dipakai. Kalender/generator Barista
+tetap sama; ini bukan generator Admin atau histori jadwal lengkap baru.
+
+[Linux run 40369478899](https://github.com/notyourgas/sagaops/actions/runs/40369478899):
+122 PASS / 0 FAIL / 0 SKIP pada PostgreSQL 18/Chromium, static/type 1284 modul.
+Mencakup Owner asli pada fixture, navigasi kategori, filter, simpan form admin,
+320/390/1280 layout, aksesibilitas tabel, absensi/roster dan regresi printer.
+Backup terenkripsi/off-host checksum dan candidate/rollback restored-DB rehearsal
+lulus. Runtime, aset, halaman Owner terautentikasi dan data terlindungi diverifikasi.
+Tidak ada jadwal nyata dibuat saat smoke. UAT HP Owner fisik masih OPEN;
+BUSINESS_READY menyeluruh tidak diklaim.
+
 ## 2026-10-27 - Pemulihan layanan printer Chromebook tanpa cetak ulang
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.

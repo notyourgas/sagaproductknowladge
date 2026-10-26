@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-27 - Jadwal Admin Studio dipindah ke Jadwal dan shift
+
+ID: DEC-SAGAPOS-ADMIN-SCHEDULE-NAV-20261027-01. Tanggal: 27 Oktober 2026 WIB.
+Pemberi keputusan: Andreas. Status: CONFIRMED. Keputusan: pindahkan tabel/form
+jadwal Admin Studio ke Jadwal & shift dan sediakan tombol navigasi antara
+Barista dan Admin. Alasan: jadwal admin sulit ditemukan di Absensi. Alternatif
+tetap menaruh form di Absensi tidak dipilih. Dampak: lokasi pengaturan berubah;
+data, API dan pembatasan role sama. Dokumen: products/sagaops/PRODUCT.md dan
+products/sagaops/CHANGELOG.md.
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [41095e4](https://github.com/notyourgas/sagaops/commit/41095e4ca48c59990ec1fe7309af63060cdd4dcd),
+rollback terpilih 3d72045ebdf2a179d0b82c8b8fc4c4c704f156e6. Schema 37 tetap.
+
 ## 2026-10-26 - Tukar libur sukarela dengan peringatan hari beruntun
 
 ID: DEC-SAGAPOS-VOLUNTARY-DAY-OFF-20261026-01. Tanggal: 26 Oktober 2026.
