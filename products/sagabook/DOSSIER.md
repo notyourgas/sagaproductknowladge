@@ -1,5 +1,41 @@
 # SagaBook Dossier
 
+## 2026-10-26 - UI dan copy bio Saga Studio sesuai status sudah buka
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk [bio Saga Studio](https://sagastudio.site/),
+berdasarkan konfirmasi Andreas bahwa studio sudah buka dan promo semua paket
+berjalan hingga tanggal sesi 1 November 2026. Pemeriksaan read-only mengonfirmasi
+TRIALCUY aktif, diskon 50%, tanggal sesi 26 Oktober - 1 November 2026 inklusif.
+
+Source Git lokal bio `d94b4e7a2db0b97d5203e8e8b5fd7331f11223de`, release
+`20261026-d94b4e7-open-ux`; rollback `20261026-10bc2f5-photos` tersedia.
+Copy status, footer, FAQ, navigasi, pencarian, metadata dan gambar pratinjau
+berbagi tautan kini sesuai operasi studio. Konten pelanggan berbahasa Indonesia;
+tagline merek dipertahankan. Encoding jumlah orang diperbaiki; pemeriksaan
+build menolak karakter rusak serta klaim coming soon yang kedaluwarsa.
+
+TRIALCUY dijelaskan sebagai diskon paket untuk tanggal sesi, bukan sekadar
+tanggal pemesanan. Harga normal dan harga promo terlihat: Ber-Two/Ber-Tema
+Rp25.000, Ber-Ramai Rp75.000, Ber-Peleton Rp100.000. Biaya tambahan mengikuti
+checkout. Banner/harga promosi memakai batas tanggal Asia/Jakarta pada build
+dan browser, lalu kembali ke harga normal sesudah periode berakhir.
+
+Tipografi lebih terbaca: heading tidak terlalu rapat, deskripsi/FAQ16px,
+detail utama14-15px. Booking dipindahkan sebelum foto utama; menu, filter,
+pencarian dan penyimpanan kode referensi frame diperjelas. Foto/frame yang
+belum tersedia tetap diberi label jujur. Tidak menambahkan janji refund,
+pembatalan atau reschedule yang belum ditetapkan.
+
+Check27 route,11/11 tes termasuk batas tengah malam WIB,22 route publik,
+checksum26 aset publik, browser desktop/mobile, FAQ dan perbandingan harga PASS.
+178 file protected termasuk98 varian frame dan66 varian foto identik.
+Lima belas tautan booking tetap membuka SagaBook. Rilis pertama menunggu lock
+rilis bersama; dilanjutkan setelah pemegang lock selesai tanpa bypass.
+Production bio berubah; source/runtime SagaBook tetap `20261025165636-ec440e5`.
+Tidak mengubah DB, aturan voucher, pembayaran, DNS atau backend campaign/rekrutmen;
+tidak membuat booking/transaksi/pesan nyata. BUSINESS_READY seluruh produk
+bukan hasil audit UI ini. Tidak ada blocker untuk perubahan bio ini.
+
 ## 2026-10-26 - Bio Saga Studio memakai foto sesi asli
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk [bio Saga Studio](https://sagastudio.site/),
