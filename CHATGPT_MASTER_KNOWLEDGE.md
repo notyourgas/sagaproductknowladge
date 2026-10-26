@@ -1,5 +1,18 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-26 - SagaBook: koreksi stok langsung dari sesi Owner
+
+CONFIRMED, keputusan Andreas DEC-310: koreksi baru kertas foto/packaging oleh
+Owner langsung approved dan mengubah saldo sekali, tanpa persetujuan kedua.
+Peran lain tetap memakai pengajuan dan pemeriksa terpisah; restock sudah langsung.
+Histori, alasan, isolasi cabang, lock version dan idempotency tetap dipertahankan.
+Source [f866f92](https://github.com/notyourgas/sagabook/commit/f866f920ab99e26092ee0777f320f925c02dc01e);
+release `20261026073856-f866f92` PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED /
+FEATURE_AVAILABLE, rollback `20261025165636-ec440e5` kompatibel. Native gates dan
+verifier23/23 PASS; authenticated Owner UI read-only PASS. Tidak ada blocker fitur.
+Detail dan batas pengujian pada [SagaBook](products/sagabook/PRODUCT.md). Tidak mengubah stok nyata
+untuk UAT; BUSINESS_READY seluruh produk tidak dinyatakan.
+
 ## 2026-10-26 - Opening Saga Studio tersedia untuk Staff Admin
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk

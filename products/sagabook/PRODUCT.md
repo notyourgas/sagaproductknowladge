@@ -1,5 +1,37 @@
 # SagaBook Product Knowledge
 
+## 2026-10-26 - Koreksi stok Owner tanpa persetujuan kedua
+
+CONFIRMED: Andreas meminta sesi Owner dapat merevisi/koreksi kertas foto dan
+packaging tanpa meminta persetujuan dirinya sendiri. Server memakai role sesi
+yang terverifikasi. Koreksi baru Owner langsung approved dan memperbarui saldo
+sekali dalam transaksi yang sama; request, mutasi, pelaku dan alasan tetap
+tercatat. Manager/Admin Cabang tetap mengajukan koreksi untuk pemeriksa lain.
+Restock serta stok awal menggunakan simpan langsung existing. Pengajuan Owner
+lama dapat diproses eksplisit oleh Owner yang sama; tidak disetujui massal.
+
+Source [f866f92](https://github.com/notyourgas/sagabook/commit/f866f920ab99e26092ee0777f320f925c02dc01e).
+Lock version, idempotency, saldo nonnegatif, scope tenant/cabang dan reversal
+append-only dipertahankan. Field role dari body tidak memberi hak Owner.
+Tidak ada migrasi schema atau dependency baru. DEC-310 mengganti sebagian
+DEC-111 khusus pengecualian Owner; kebijakan peran lain dan histori tetap.
+
+Local PHP stok15tes/112assertion, release safety20tes/267assertion,
+TypeScript critical/UIUX, build dan browser desktop/mobile18/18 PASS.
+Backup terenkripsi/checksum dan disposable restore MySQL stock_admin PASS,
+terikat exact source; koreksi kedua bahan dan replay diuji pada cabang sintetis
+kemudian rollback. CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED /
+PRODUCTION_ACTIVATED / FEATURE_AVAILABLE. Native release
+`20261026073856-f866f92` aktif; rollback kode `20261025165636-ec440e5`
+tersedia dan kompatibel. Seluruh native gate lokal, public smoke dan verifier
+production independen23/23 PASS. CI hosted tidak dijalankan; memakai runner lokal
+kanonik. Authenticated Owner read-only PASS: kedua tombol Koreksi Stok dan dialog
+Koreksi stok langsung/Simpan koreksi terlihat; draft dibatalkan tanpa POST koreksi.
+Pengajuan lama tidak diproses massal. Tidak ada blocker untuk fitur ini;
+penerimaan mutasi stok asli oleh operator merupakan UAT operasional terpisah.
+Tidak mengoreksi/restock stok asli atau membuat transaksi customer untuk UAT.
+BUSINESS_READY seluruh produk tidak dinyatakan.
+
 ## 2026-10-26 - Saga Studio memakai transfer manual sementara
 
 CONFIRMED / PRODUCTION_CONFIG_ACTIVATED: atas instruksi Andreas, pilihan

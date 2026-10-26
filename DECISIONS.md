@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-310 - SagaBook Owner menyimpan koreksi stok langsung
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-26 |
+| Topik | Koreksi kertas foto dan packaging dari sesi Owner |
+| Keputusan | Owner tidak memerlukan persetujuan kedua untuk koreksi stok yang diajukan sendiri. Restock dan stok awal tetap simpan langsung. Pengajuan peran lain tetap diperiksa terpisah. |
+| Alasan | Pengaju dan pemberi keputusan pada sesi ini adalah Owner yang sama; langkah persetujuan ulang tidak diperlukan. |
+| Alternatif | Semua peran boleh mengoreksi langsung; mempertahankan persetujuan ulang untuk Owner. Keduanya tidak dipilih. |
+| Dampak | Role efektif server menentukan koreksi langsung; request dan movement tetap diaudit. Lock version, tenant/cabang, saldo nonnegatif dan idempotency dipertahankan. Pengajuan Owner lama dapat diproses eksplisit, tanpa persetujuan massal. |
+| Pemberi keputusan | Andreas, instruksi langsung dalam percakapan. |
+| Status | CONFIRMED; mengganti sebagian DEC-111 khusus pengecualian Owner. Status delivery mengikuti SagaBook PRODUCT. |
+| Dokumen terkait | [SagaBook](products/sagabook/PRODUCT.md), [Dossier](products/sagabook/DOSSIER.md), [Coverage](products/sagabook/FEATURE_COVERAGE_LEDGER.md) |
+
 ## 2026-10-26 - Opening Saga Studio tersedia untuk Staff Admin
 
 ID: DEC-SAGAPOS-STUDIO-OPENING-20261026-01. Tanggal: 26 Oktober 2026.
@@ -2620,7 +2634,7 @@ ini bukan aktivasi payment flow lain.
 | Alternatif yang dipertimbangkan | Edit saldo langsung tanpa histori; mengizinkan self-approval; menghapus movement lama; membalik movement closing dari halaman stok. |
 | Dampak | SagaBook menambah capability per role, optimistic lock, idempotency, correction request, approval/rejection, reversal append-only, PII-safe note, dan halaman Stok & Closing per cabang. |
 | Pemberi keputusan | Andreas / founder |
-| Status | `CONFIRMED / PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`; source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15; production dan business readiness tidak berubah |
+| Status | `DEPRECATED IN PART by DEC-310` khusus larangan self-approval Owner; pengajuan peran lain dan audit append-only tetap berlaku. Histori awal: source `c21d9378e0ea0bd0352cd59ffb63b4499154093a`, PR #15, saat itu IMPLEMENTED_NOT_DEPLOYED. |
 | Dokumen terkait | [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Dossier](products/sagabook/DOSSIER.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md), [SagaBook Ledger](products/sagabook/FEATURE_COVERAGE_LEDGER.md), [Gaps](GAPS.md) |
 
 ## DEC-108 - Workspace SagaWork adalah cabang operasional dalam Company
