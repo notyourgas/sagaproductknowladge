@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-26 - Penyelesaian dan deploy perbaikan HR serta laporan
+
+CONFIRMED Andreas: selesaikan semua perbaikan absensi/form dan penghambat rilis,
+pastikan jam shift revisi sesuai, lalu deploy. Dilaksanakan pada source f104bd0;
+HR FEATURE_AVAILABLE, reporting readiness pulih dengan audit/budget lama utuh.
+Jadwal/tarif tidak diubah ulang; uji HP staf asli tetap OPEN. Detail/provenance
+pada [SagaOPS](products/sagaops/PRODUCT.md). Ini tidak mengesahkan pembayaran,
+payroll, reset credential atau mutasi bisnis lain.
+
 ## 2026-10-26 - Pengajuan lupa absen harus jelas dan dapat dikirim
 
 CONFIRMED Andreas: perbaiki UI/UX form dan penyebab pengajuan gagal. Kandidat

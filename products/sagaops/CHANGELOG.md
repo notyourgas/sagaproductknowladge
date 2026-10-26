@@ -1,5 +1,38 @@
 # SagaOPS Changelog
 
+## 2026-10-26 - Perbaikan absensi aktif; penghambat laporan dipulihkan
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Aplikasi aktif
+[f104bd0](https://github.com/notyourgas/sagaops/commit/f104bd0cbca94fb4619183f65422c44926b8a500),
+rollback operasional b90cac2643aa4ebae4015d2c9c699c7b8fde0a4e. Status ini
+menggantikan checkpoint pra-rilis076c629/1b87819 yang dicatat di bagian historis.
+
+Check-in tetap dibuka60menit sebelum hingga60menit setelah mulai: shift08.00
+terbuka07.00-09.00WIB, shift15.00 terbuka14.00-16.00WIB. Keterlambatan wajib
+alasan10-500karakter, tersimpan bersama waktu server dan dapat dibaca Owner.
+Form lupa absen memperjelas shift/waktu/alasan, menormalisasi foto kamera tanpa
+EXIF, menyediakan preview/hapus foto opsional, dan mengonfirmasi pengiriman.
+Respons duplikat atau hilang diperiksa terhadap pengajuan milik staf sebelum
+retry; koreksi tetap melalui pemeriksaan Owner, bukan absensi otomatis.
+
+Jam tersimpan diverifikasi: Kopi Saga08.00-16.00/15.00-23.00 dan Saga Studio
+08.00-15.00/15.00-22.00WIB. Jadwal, tarif, kebijakan, nota/printer dan QRIS
+tetap sesuai snapshot Owner sebelum/sesudah rilis; tidak ada pengubahan jadwal
+atau transaksi uji di produksi pada deployment ini.
+
+Tiga pekerjaan laporan gagal tetap terminal dengan riwayat/budget3of3 utuh.
+Pemulihan memakai tiga pekerjaan terpisah dengan satu percobaan, query/sumber
+identik, proyeksi sukses terverifikasi serta audit append-only bertanda tangan.
+Total kegagalan historis tetap3, unresolved0; health/readiness dan monitor PASS.
+Core schema37 dan batas pembayaran tetap. Backup terenkripsi/off-host, restore
+disposable, kandidat-rollback-kandidat, aktivasi guarded serta byte aset HTTP PASS.
+
+[CI Linux final](https://github.com/notyourgas/sagaops/actions/runs/40267128275)
+meliputi batch56HR,51offline,48reporting,66runner dan2rollback; seluruhnya0FAIL/
+0SKIP (batch memiliki overlap, bukan jumlah tes unik). Static/type1268modul PASS.
+Owner read-only dan login seluler320/390px PASS. Uji absensi pada HP staf asli
+dengan GPS/kamera masih OPEN; bukan klaim whole-product BUSINESS_READY.
+
 ## 2026-10-26 - Kiosk tetap menyala dan layanan printer pulih tanpa mulai ulang manual
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source [5e30731](https://github.com/notyourgas/sagaops/commit/5e30731ad764250b34406ab2a5a6edf3b134e1d1) menambah screen wake lock

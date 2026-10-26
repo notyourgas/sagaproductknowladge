@@ -1,12 +1,46 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-26 - Perbaikan absensi aktif; penghambat laporan dipulihkan
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Aplikasi aktif
+[f104bd0](https://github.com/notyourgas/sagaops/commit/f104bd0cbca94fb4619183f65422c44926b8a500),
+rollback operasional b90cac2643aa4ebae4015d2c9c699c7b8fde0a4e. Status ini
+menggantikan checkpoint pra-rilis076c629/1b87819 yang dicatat di bagian historis.
+
+Check-in tetap dibuka60menit sebelum hingga60menit setelah mulai: shift08.00
+terbuka07.00-09.00WIB, shift15.00 terbuka14.00-16.00WIB. Keterlambatan wajib
+alasan10-500karakter, tersimpan bersama waktu server dan dapat dibaca Owner.
+Form lupa absen memperjelas shift/waktu/alasan, menormalisasi foto kamera tanpa
+EXIF, menyediakan preview/hapus foto opsional, dan mengonfirmasi pengiriman.
+Respons duplikat atau hilang diperiksa terhadap pengajuan milik staf sebelum
+retry; koreksi tetap melalui pemeriksaan Owner, bukan absensi otomatis.
+
+Jam tersimpan diverifikasi: Kopi Saga08.00-16.00/15.00-23.00 dan Saga Studio
+08.00-15.00/15.00-22.00WIB. Jadwal, tarif, kebijakan, nota/printer dan QRIS
+tetap sesuai snapshot Owner sebelum/sesudah rilis; tidak ada pengubahan jadwal
+atau transaksi uji di produksi pada deployment ini.
+
+Tiga pekerjaan laporan gagal tetap terminal dengan riwayat/budget3of3 utuh.
+Pemulihan memakai tiga pekerjaan terpisah dengan satu percobaan, query/sumber
+identik, proyeksi sukses terverifikasi serta audit append-only bertanda tangan.
+Total kegagalan historis tetap3, unresolved0; health/readiness dan monitor PASS.
+Core schema37 dan batas pembayaran tetap. Backup terenkripsi/off-host, restore
+disposable, kandidat-rollback-kandidat, aktivasi guarded serta byte aset HTTP PASS.
+
+[CI Linux final](https://github.com/notyourgas/sagaops/actions/runs/40267128275)
+meliputi batch56HR,51offline,48reporting,66runner dan2rollback; seluruhnya0FAIL/
+0SKIP (batch memiliki overlap, bukan jumlah tes unik). Static/type1268modul PASS.
+Owner read-only dan login seluler320/390px PASS. Uji absensi pada HP staf asli
+dengan GPS/kamera masih OPEN; bukan klaim whole-product BUSINESS_READY.
+
 ## 2026-10-26 - Kandidat pemulihan printer saat Kiosk idle
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. [5e30731](https://github.com/notyourgas/sagaops/commit/5e30731ad764250b34406ab2a5a6edf3b134e1d1): screen wake lock dan pemulihan
 layanan WebUSB per tab; Jeda, izin dan ledger tetap dijaga.31tes lokal PASS,
-fixture TLS memerlukan openssl dan Nginx Linux belum diuji. Produksi tetap9620e02;
-monitor gagal karena tiga job laporan dead-letter. Kualifikasi Linux, paket,
-deploy serta UAT Chromebook OPEN; layout nota/printer aktif tidak berubah.
+fixture TLS memerlukan openssl dan Nginx Linux belum diuji. Produksi kini f104bd0;
+monitor/readiness laporan PASS. Kandidat wake-lock5e30731 tetap NOT_DEPLOYED dan
+perlu integrasi source aktif sebelum Linux/paket/deploy serta UAT Chromebook.
+Layout nota/printer aktif tidak berubah.
 Rincian: [SagaOPS Product](products/sagaops/PRODUCT.md).
 
 ## 2026-10-26 - Booking dari bio Saga Studio terhubung ke SagaBook
@@ -29,32 +63,6 @@ perubahan DB/payment/DNS atau booking/pembayaran/pesan customer nyata.
 BUSINESS_READY seluruh studio/produk tidak dinyatakan. Tidak ada blocker
 untuk tautan ini; status pembukaan studio dan konten promo bio tetap terpisah.
 
-## 2026-10-26 - Form lupa absen dan pengiriman foto diperbaiki di source
-
-CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Kandidat gabungan
-[1b87819](https://github.com/notyourgas/sagaops/commit/1b8781957e64d67530f810561afdbe8ebddebc62)
-melanjutkan076c629: normalisasi foto kamera ke PNG berukuran terbatas sebelum
-unggah, tanpa melonggarkan validasi server. Diagnostik produksi memastikan
-penolakan metadata EXIF/format-dimensi serta pengajuan yang sudah terkirim
-namun tampak gagal ketika dicoba ulang.
-
-Form satu layar menampilkan ringkasan shift/WIB, pilihan masuk-pulang berdasarkan
-riwayat terbaru, penghitung alasan, preview/hapus foto opsional, tombol kirim
-terjangkau dan status proses. Kesalahan mempertahankan isian; respons duplikat
-dikenali sebagai sudah terkirim. Respons hilang diperiksa melalui daftar pengajuan
-milik staf yang sama sebelum retry manual. Tetap memerlukan pemeriksaan Owner.
-
-Uji lokal mereproduksi JPEG EXIF dan dimensi terlalu besar yang ditolak, lalu
-membuktikan foto yang dinormalisasi terkirim melalui HTTP staf hingga pemeriksaan
-Owner di database disposable. Layout320/390px, aksesibilitas/kontras, kirim ulang,
-duplikat dan lost-response-after-commit PASS. [Validasi Linux final](https://github.com/notyourgas/sagaops/actions/runs/40263336661)
-lulus107tes/0gagal/0skip, static/type1267modul serta immutable package PASS.
-Bukan aktivasi produksi. Tanpa schema/policy/history/payroll mutation.
-
-Produksi tetap9620e02 dan readiness laporan masih gagal pada tiga pekerjaan
-terminal insiden sebelumnya. Kedua perbaikan HR belum aktif; tidak melewati gate
-rilis atau mengulang budget pekerjaan laporan. Foto bersifat opsional pada form
-existing, sehingga pengajuan tanpa lampiran menjadi alternatif sementara.
 
 ## 2026-10-26 - Kopi Saga promo TRIAL OPENING30%
 
@@ -67,7 +75,7 @@ live2Kiosk quotes PASS, including mineral6000→4200/Americano13000→9100. Harg
 dasar/nota/printer/history tetap;0fake sales/payment/voucher consumption/print.
 Data-only activation, not new source deploy or whole-product BUSINESS_READY.
 
-## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
+## 2026-10-26 - Historis pra-rilis: alasan keterlambatan siap di source
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
 [076c629](https://github.com/notyourgas/sagaops/commit/076c629d9a204c44149e8820440f3b587e0ea841)
@@ -89,7 +97,7 @@ masih gagal akibat tiga pekerjaan terminal dari insiden sebelumnya. Batas percob
 serta audit dipertahankan. Kolom alasan baru belum tersedia di produksi;
 NO_PRODUCTION_MUTATION / NOT_BUSINESS_READY untuk kandidat ini.
 
-## 2026-10-26 - SagaPOS kembali dapat diakses; laporan belum sepenuhnya sehat
+## 2026-10-26 - Historis sebelum resolusi laporan: akses kembali pulih
 
 CONFIRMED: Dashboard dan portal staf kembali menampilkan login setelah batas
 memori layanan disesuaikan permanen tanpa restart. Konfigurasi
