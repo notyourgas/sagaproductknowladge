@@ -1,5 +1,35 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-27 - Kalender harian Admin Studio selesai, belum diaktifkan
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_ACTIVATION_PENDING.
+Source [d6aab1e](https://github.com/notyourgas/sagaops/commit/d6aab1eb327644ed58e381217dc83ea045625c1e).
+Production masih 41095e4ca48c59990ec1fe7309af63060cdd4dcd; tampilan aktif masih
+daftar jadwal Admin pada navigasi Jadwal & shift yang sudah dirilis sebelumnya.
+
+Permintaan Andreas: kalender Admin Studio serupa Barista untuk melihat siapa
+masuk dan libur per hari. Kandidat menampilkan kalender staf per tanggal di
+desktop serta kelompok Pagi, Sore, Libur / tanpa shift dan Izin / tidak tersedia
+di HP, default minggu berjalan, pilihan bulan/minggu, navigasi minggu dan filter.
+Endpoint Owner read-only membaca periode lengkap dengan scope organisasi/outlet
+dan role Admin, tanpa batas snapshot terbaru 150 jadwal. Form tulis native sama.
+Libur / tanpa shift adalah label bagi admin aktif tanpa penempatan pada tanggal
+yang sudah memiliki jadwal; tanggal seluruhnya kosong adalah Belum dijadwalkan.
+Label tidak membuat catatan libur, mengubah payroll atau menjadwalkan ulang staf.
+
+[Linux run 40374817694](https://github.com/notyourgas/sagaops/actions/runs/40374817694)
+lulus 122 tes / 0 gagal / 0 skip, static/type 1284 modul, PostgreSQL 18/Chromium.
+Layout 320/390/1280, kalender penuh di luar batas snapshot, role isolation,
+Pagi/Sore/libur/izin, tanggal kosong, filter/bulan/minggu, error/retry, aksesibilitas
+tabel, periode/query/anonymous rejection dan form simpan diuji pada fixture.
+Immutable candidate sudah staged, belum activated. Aktivasi tertahan batas
+penyimpanan rilis setelah proses backup lain; kandidat recovery/activation dan
+production UI verification belum lulus untuk pasangan final ini. Menunggu
+persetujuan cleanup satu versi eksekusi lama yang arsipnya sudah diverifikasi.
+Versi aktif/rollback dan semua backup dipertahankan. Tidak ada schema, jadwal
+nyata, rate, payroll, akun atau payment yang berubah dalam revisi ini.
+UAT HP Owner fisik OPEN. BUSINESS_READY tidak diklaim.
+
 ## 2026-10-27 - Jadwal Admin Studio dipindah ke Jadwal dan shift
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
