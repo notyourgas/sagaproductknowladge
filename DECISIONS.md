@@ -1,5 +1,22 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-26 - Opening Saga Studio tersedia untuk Staff Admin
+
+ID: DEC-SAGAPOS-STUDIO-OPENING-20261026-01. Tanggal: 26 Oktober 2026.
+Pemberi keputusan: Andreas. Status/klasifikasi: CONFIRMED. Masukkan checklist
+opening Saga Studio untuk Staff Admin, mengikuti 54 poin yang diberikan dan enam
+tambahan yang disepakati. Pertahankan delapan kelompok/urutan, ringkasan WA per
+kategori, jam otomatis, pemeriksa opsional, dan identitas akun sebagai paraf.
+Alasan: persiapan studio mudah ditelusuri tanpa antrean persetujuan. Alternatif:
+memakai template kopi atau menambahkan ACC; tidak dipilih. Dampak: Staff Admin
+memakai template dan riwayat Studio tersendiri, tanpa espresso dan batas jam.
+Dokumen terkait: products/sagaops/PRODUCT.md dan products/sagaops/CHANGELOG.md.
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk
+opening Studio. Source [028ff19](https://github.com/notyourgas/sagaops/commit/028ff1974a32b1fb7e1c217612df10b97c55745f),
+rollback terpilih a828b2b4215b685766d731558d7fb64e0193a6f6. Fitur Kopi Saga serta
+perbaikan HR, laporan, printer dan kiosk sebelumnya tetap terbawa.
+
 ## 2026-10-26 - Checklist opening dan closing Kopi Saga tersedia di portal staf
 
 ID: DEC-SAGAPOS-CHECKLIST-20261026-01. Tanggal: 26 Oktober 2026. Pemberi keputusan:

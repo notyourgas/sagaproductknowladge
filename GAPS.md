@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - Opening Saga Studio tersedia untuk Staff Admin
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk
+opening Studio. Source [028ff19](https://github.com/notyourgas/sagaops/commit/028ff1974a32b1fb7e1c217612df10b97c55745f),
+rollback terpilih a828b2b4215b685766d731558d7fb64e0193a6f6. Fitur Kopi Saga serta
+perbaikan HR, laporan, printer dan kiosk sebelumnya tetap terbawa.
+
+Fitur telah aktif dan validasi teknis lulus. UAT HP Staff Admin fisik dan pelaksanaan opening Studio nyata masih OPEN. Pemeriksa/ACC bukan syarat publish. Closing Studio belum termasuk scope. Tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-26 - Checklist opening dan closing Kopi Saga tersedia di portal staf
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk

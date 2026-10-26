@@ -1,5 +1,28 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-26 - Opening Saga Studio tersedia untuk Staff Admin
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk
+opening Studio. Source [028ff19](https://github.com/notyourgas/sagaops/commit/028ff1974a32b1fb7e1c217612df10b97c55745f),
+rollback terpilih a828b2b4215b685766d731558d7fb64e0193a6f6. Fitur Kopi Saga serta
+perbaikan HR, laporan, printer dan kiosk sebelumnya tetap terbawa.
+
+Staff Admin mendapat Opening Saga Studio dengan 60 poin/8 bagian berurutan,
+draft server, publish tanpa ACC/batas jam, dan ringkasan kategori siap salin ke WA.
+Jam mulai/selesai otomatis, pemeriksa opsional, identitas pemublikasi tercatat;
+tidak ada form espresso atau pengiriman pesan otomatis. Pilihan petugas dan
+riwayat terpisah dari Kopi Saga; Owner bisa melihat keduanya. Namespace tersendiri
+menjaga isolasi saat rollback, tanpa migrasi schema atau perubahan transaksi/HR.
+
+Validasi [Linux run 40283494370](https://github.com/notyourgas/sagaops/actions/runs/40283494370):
+47 PASS / 0 FAIL / 0 SKIP pada PostgreSQL 18 dan Chromium, static/type check,
+isolasi role/katalog/riwayat, draft, replay, publish terlambat, ringkasan dan
+320/390/768 layout, termasuk regresi Kopi/absensi/printer. Backup terenkripsi,
+off-host checksum dan restored-DB candidate/rollback rehearsal lulus. Runtime,
+aset production serta halaman Owner read-only diverifikasi sesuai source.
+UAT HP Admin fisik dan pelaksanaan SOP Studio nyata belum dilakukan;
+tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-26 - Checklist opening dan closing Kopi Saga tersedia di portal staf
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk

@@ -1,5 +1,43 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-26 - Opening Saga Studio tersedia untuk Staff Admin
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk
+opening Studio. Source [028ff19](https://github.com/notyourgas/sagaops/commit/028ff1974a32b1fb7e1c217612df10b97c55745f),
+rollback terpilih a828b2b4215b685766d731558d7fb64e0193a6f6. Fitur Kopi Saga serta
+perbaikan HR, laporan, printer dan kiosk sebelumnya tetap terbawa.
+
+Staff Admin kini mendapatkan Opening Saga Studio: 60 poin dalam delapan bagian
+berurutan, terdiri dari 54 poin SOP Andreas dan enam tambahan yang disepakati.
+Bagian meliputi pemeriksaan awal, kebersihan, area foto, device, aplikasi, tes
+foto/hasil, cetak/perlengkapan, serta pemeriksaan akhir sebelum buka. Tambahan
+mencakup layar sesi sebelumnya, penyimpanan PC, jam WIB, frame/layout hasil,
+tes upload Drive dan kesiapan tunai bila digunakan. Ini checklist pekerjaan
+manual, bukan integrasi otomatis atau bukti kamera/printer/Drive telah diuji.
+
+Draft tersimpan di server. Semua poin dan petugas Studio harus lengkap sebelum
+publish, tanpa form espresso, batas jam, atau ACC PIC/Owner. Jam mulai dan selesai
+tercatat otomatis, pemeriksa opsional, dan akun pemublikasi menggantikan paraf.
+Salin ringkasan menghasilkan delapan kategori, tanggal/petugas, waktu, catatan dan
+pemeriksa bila diisi untuk ditempel manual ke WhatsApp. Tidak ada pengiriman pesan.
+
+Akses, pilihan petugas, jadwal acuan dan riwayat Studio dipisah dari Barista/
+Pengelola Kopi Saga. Owner dapat membaca kedua jenis melalui Tim & HR -> Checklist
+operasional dengan label berbeda. Namespace jurnal Studio terpisah dari namespace
+Kopi lama sehingga rollback mempertahankan data Studio tanpa menampilkannya pada
+riwayat barista. Tidak ada migrasi schema atau perubahan credential, jadwal,
+tarif, absensi, payroll, saldo kas/stok, QRIS maupun provider. Opening dan closing
+Kopi Saga tetap tersedia; closing Studio belum masuk scope.
+
+Validasi [Linux run 40283494370](https://github.com/notyourgas/sagaops/actions/runs/40283494370):
+47 PASS / 0 FAIL / 0 SKIP pada PostgreSQL 18 dan Chromium, static/type check,
+isolasi role/katalog/riwayat, draft, replay, publish terlambat, ringkasan dan
+320/390/768 layout, termasuk regresi Kopi/absensi/printer. Backup terenkripsi,
+off-host checksum dan restored-DB candidate/rollback rehearsal lulus. Runtime,
+aset production serta halaman Owner read-only diverifikasi sesuai source.
+UAT HP Admin fisik dan pelaksanaan SOP Studio nyata belum dilakukan;
+tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-26 - Checklist opening dan closing Kopi Saga tersedia di portal staf
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk
