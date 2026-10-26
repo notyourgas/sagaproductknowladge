@@ -1,5 +1,42 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-26 - Tukar libur staf dengan persetujuan rekan dan Owner
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [8595714](https://github.com/notyourgas/sagaops/commit/859571454908de236fc8d7498a9a615f59adb4eb),
+rollback terpilih 028ff1974a32b1fb7e1c217612df10b97c55745f. Schema 37 tidak berubah.
+
+Portal Staf -> Pengajuan -> Buat pengajuan -> Tukar libur tersedia bagi
+Barista dan Staff Admin aktif. Staf memilih hari kerja yang ingin diliburkan,
+rekan dengan pola libur berlawanan, dan alasan. Pratinjau memperlihatkan hari
+libur/masuk kedua staf. Rekan menerima, lalu Owner mengambil keputusan di
+Tim & HR -> Permohonan & lembur. Pengajuan atau penerimaan rekan belum mengubah
+jadwal; persetujuan Owner memperbarui keduanya dalam satu transaksi.
+
+Implementasi awal mencocokkan kategori staf/outlet dan jam shift WIB yang sama,
+hanya Senin-Jumat, dengan pilihan jadwal 31 hari ke depan. Ini mempertahankan
+kebutuhan weekend serta jam shift part-time. Cuti, ketidaktersediaan lain,
+absensi terkait, benturan jadwal, istirahat dan aturan roster tetap diperiksa
+pada submit, penerimaan rekan dan persetujuan Owner. Jadwal yang berubah setelah
+pengajuan tidak dapat disetujui menggunakan data lama.
+
+Persetujuan menukar pemilik jadwal masa depan, penugasan roster terkait dan
+penanda libur manual yang tepat. Snapshot fee memakai tarif staf penerima;
+tarif profil, absensi dan payroll historis tidak ditulis ulang. Pengiriman ulang
+dan persetujuan ganda idempotent; respons hilang memakai pemulihan status existing.
+Namespace jurnal terpisah menjaga isolasi rollback. Tidak ada DDL, dependency,
+perubahan akun/password, payout, stok, QRIS, provider atau pengiriman WhatsApp.
+Tidak ada pertukaran staf nyata dibuat saat smoke deployment.
+
+Validasi [Linux run 40291992026](https://github.com/notyourgas/sagaops/actions/runs/40291992026):
+87 PASS / 0 FAIL / 0 SKIP di PostgreSQL 18/Chromium, static/type check 1280 modul.
+Mencakup Staff/peer/Owner kedua kategori, pemulihan respons hilang, konflik,
+rollback transaksi, persetujuan konkuren, roster terbit, absensi dan checklist.
+Backup terenkripsi, off-host checksum serta restored-DB candidate/rollback
+rehearsal lulus. Runtime, aset dan Owner read-only UI production diverifikasi.
+UAT HP staf fisik dan pertukaran jadwal operasional nyata masih OPEN;
+BUSINESS_READY menyeluruh tidak diklaim.
+
 ## 2026-10-26 - Opening Saga Studio tersedia untuk Staff Admin
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk

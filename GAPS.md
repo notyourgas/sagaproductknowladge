@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - Tukar libur staf dengan persetujuan rekan dan Owner
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [8595714](https://github.com/notyourgas/sagaops/commit/859571454908de236fc8d7498a9a615f59adb4eb),
+rollback terpilih 028ff1974a32b1fb7e1c217612df10b97c55745f. Schema 37 tidak berubah.
+
+UAT HP staf fisik serta pertukaran jadwal nyata masih OPEN. Batas awal: weekday, sesama kategori/outlet, jam shift sama dan pilihan 31 hari. Penerimaan rekan serta persetujuan Owner wajib sebelum perubahan. Tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-26 - Opening Saga Studio tersedia untuk Staff Admin
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk

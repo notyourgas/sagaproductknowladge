@@ -1,5 +1,21 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-26 - Tukar libur staf dengan persetujuan rekan dan Owner
+
+ID: DEC-SAGAPOS-DAY-OFF-SWAP-20261026-01. Tanggal: 26 Oktober 2026.
+Pemberi permintaan: Andreas. Status/klasifikasi: CONFIRMED untuk permintaan fitur
+Tukar libur; batas awal adalah keputusan implementasi executor. Alasan: perubahan
+libur perlu kesepakatan kedua staf dan keputusan Owner sebelum perubahan jadwal.
+Implementasi memakai permohonan existing, kategori/outlet sama, weekday dan jam
+shift sama. Alternatif: pertukaran tanpa persetujuan atau lintas kategori; tidak
+diterapkan. Dampak: jadwal masa depan, roster dan penanda libur berubah atomik
+setelah ACC; fee mengikuti tarif penerima. Dokumen:products/sagaops/PRODUCT.md dan
+products/sagaops/CHANGELOG.md. UAT operasional nyata masih terbuka.
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [8595714](https://github.com/notyourgas/sagaops/commit/859571454908de236fc8d7498a9a615f59adb4eb),
+rollback terpilih 028ff1974a32b1fb7e1c217612df10b97c55745f. Schema 37 tidak berubah.
+
 ## DEC-310 - SagaBook Owner menyimpan koreksi stok langsung
 
 | Field | Isi |

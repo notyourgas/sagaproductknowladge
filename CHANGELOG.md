@@ -1,5 +1,26 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-26 - Tukar libur staf dengan persetujuan rekan dan Owner
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [8595714](https://github.com/notyourgas/sagaops/commit/859571454908de236fc8d7498a9a615f59adb4eb),
+rollback terpilih 028ff1974a32b1fb7e1c217612df10b97c55745f. Schema 37 tidak berubah.
+
+Tukar libur tersedia di Pengajuan Staf: pilih hari/rekan, lihat hasil, persetujuan
+rekan lalu Owner. Terbatas sesama kategori/outlet, weekday dan jam shift sama,
+pilihan 31 hari ke depan. Jadwal, penanda libur dan roster diperbarui atomik setelah
+ACC; snapshot fee mengikuti staf penerima. Replay/recovery dan konflik tervalidasi.
+Tidak ada pertukaran jadwal nyata dibuat sebagai uji deployment.
+
+Validasi [Linux run 40291992026](https://github.com/notyourgas/sagaops/actions/runs/40291992026):
+87 PASS / 0 FAIL / 0 SKIP di PostgreSQL 18/Chromium, static/type check 1280 modul.
+Mencakup Staff/peer/Owner kedua kategori, pemulihan respons hilang, konflik,
+rollback transaksi, persetujuan konkuren, roster terbit, absensi dan checklist.
+Backup terenkripsi, off-host checksum serta restored-DB candidate/rollback
+rehearsal lulus. Runtime, aset dan Owner read-only UI production diverifikasi.
+UAT HP staf fisik dan pertukaran jadwal operasional nyata masih OPEN;
+BUSINESS_READY menyeluruh tidak diklaim.
+
 ## 2026-10-26 - SagaBook: koreksi stok langsung dari sesi Owner
 
 CONFIRMED, keputusan Andreas DEC-310: koreksi baru kertas foto/packaging oleh
