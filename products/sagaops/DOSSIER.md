@@ -1,5 +1,41 @@
 # SagaOPS Dossier
 
+## 2026-10-26 - Tukar libur sukarela dengan peringatan hari beruntun
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [5637158](https://github.com/notyourgas/sagaops/commit/56371581e67c3f509bd5f2d55971d097bcb5e40b),
+rollback terpilih 8ab730757a857f443b489a36e4cd0896e20cc26c. Schema 37 tetap.
+
+Andreas mengonfirmasi bahwa staf boleh menerima risiko tambahan hari kerja
+berturut-turut ketika menukar libur secara sukarela. Khusus Tukar libur,
+pelampauan target hari kerja beruntun kini menjadi peringatan yang terlihat oleh
+pemohon, rekan penerima dan Owner. Pengajuan dapat dikirim, rekan harus menerima,
+lalu Owner menyetujui sebelum jadwal berubah. Tidak ada persetujuan otomatis.
+
+Rilis ini mempertahankan perbaikan struk closing yang sudah lebih dahulu aktif.
+
+Aturan penyusunan roster dan tukar shift biasa tetap mempertahankan batas hari
+beruntun semula. Pada Tukar libur, benturan waktu, jadwal ganda, cuti/izin atau
+ketidaktersediaan lain, minimum istirahat dan batas jam mingguan tetap menolak
+pertukaran. Pemeriksaan ulang saat submit, penerimaan rekan dan ACC tetap berlaku.
+
+Pilihan rekan kini diperiksa melalui validasi read-only yang sama sebelum form
+dikirim. Pasangan dengan benturan yang memblokir tidak bisa dipilih; alasannya
+ditampilkan menurut peserta dan aturan yang dilanggar. Respons submit yang
+ditolak juga menjelaskan benturan spesifik, dengan form tetap bisa diperbaiki.
+Target peringatan hari beruntun ditampilkan sesuai aturan roster yang tersimpan.
+Tidak ada perubahan DDL, akun, password, jadwal staf nyata, tarif, absensi,
+payroll, pembayaran, stok, printer atau pesan WhatsApp selama verifikasi rilis.
+
+[Linux run 40302618047](https://github.com/notyourgas/sagaops/actions/runs/40302618047):
+104 PASS / 0 FAIL / 0 SKIP pada PostgreSQL 18/Chromium, static/type 1281 modul.
+Regresi mencakup pertukaran tujuh hari beruntun sampai ACC, peringatan ketiga
+peserta, read-only tanpa mutation/lock, dan tetap menolak konflik lain.
+Backup terenkripsi, checksum off-host dan restored-DB candidate/rollback
+rehearsal lulus. Runtime/aset, Owner UI dan data terlindungi diverifikasi.
+Tidak ada pertukaran nyata dijalankan untuk smoke. UAT perangkat staf fisik
+dan penerimaan operasional pertukaran nyata masih OPEN; BUSINESS_READY tidak diklaim.
+
 ## 2026-10-26 - Nota closing ringkas dan pilihan rincian terpisah
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.

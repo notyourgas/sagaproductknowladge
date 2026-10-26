@@ -1,5 +1,26 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-26 - Tukar libur sukarela dengan peringatan hari beruntun
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [5637158](https://github.com/notyourgas/sagaops/commit/56371581e67c3f509bd5f2d55971d097bcb5e40b),
+rollback terpilih 8ab730757a857f443b489a36e4cd0896e20cc26c. Schema 37 tetap.
+
+Atas keputusan Andreas, Tukar libur sukarela boleh melewati target hari kerja
+berturut-turut dengan peringatan untuk pemohon/rekan/Owner. Persetujuan rekan dan
+ACC Owner tetap wajib. Jadwal ganda, cuti, minimum istirahat dan jam mingguan tetap
+memblokir; roster dan tukar shift biasa mempertahankan batas semula. Pilihan form
+menyaring benturan yang memblokir dan menjelaskan penyebabnya lebih awal.
+
+[Linux run 40302618047](https://github.com/notyourgas/sagaops/actions/runs/40302618047):
+104 PASS / 0 FAIL / 0 SKIP pada PostgreSQL 18/Chromium, static/type 1281 modul.
+Regresi mencakup pertukaran tujuh hari beruntun sampai ACC, peringatan ketiga
+peserta, read-only tanpa mutation/lock, dan tetap menolak konflik lain.
+Backup terenkripsi, checksum off-host dan restored-DB candidate/rollback
+rehearsal lulus. Runtime/aset, Owner UI dan data terlindungi diverifikasi.
+Tidak ada pertukaran nyata dijalankan untuk smoke. UAT perangkat staf fisik
+dan penerimaan operasional pertukaran nyata masih OPEN; BUSINESS_READY tidak diklaim.
+
 ## 2026-10-26 - Nota closing ringkas dan pilihan rincian terpisah
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.

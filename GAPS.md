@@ -1,5 +1,19 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - Tukar libur sukarela dengan peringatan hari beruntun
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [5637158](https://github.com/notyourgas/sagaops/commit/56371581e67c3f509bd5f2d55971d097bcb5e40b),
+rollback terpilih 8ab730757a857f443b489a36e4cd0896e20cc26c. Schema 37 tetap.
+
+Atas keputusan Andreas, Tukar libur sukarela boleh melewati target hari kerja
+berturut-turut dengan peringatan untuk pemohon/rekan/Owner. Persetujuan rekan dan
+ACC Owner tetap wajib. Jadwal ganda, cuti, minimum istirahat dan jam mingguan tetap
+memblokir; roster dan tukar shift biasa mempertahankan batas semula. Pilihan form
+menyaring benturan yang memblokir dan menjelaskan penyebabnya lebih awal.
+
+UAT HP staf fisik serta pertukaran jadwal nyata masih OPEN. Tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-26 - Nota closing ringkas dan pilihan rincian terpisah
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.

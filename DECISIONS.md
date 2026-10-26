@@ -1,5 +1,20 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-26 - Tukar libur sukarela dengan peringatan hari beruntun
+
+ID: DEC-SAGAPOS-VOLUNTARY-DAY-OFF-20261026-01. Tanggal: 26 Oktober 2026.
+Pemberi keputusan: Andreas. Status: CONFIRMED. Keputusan: boleh melewati target
+hari kerja berturut-turut ketika staf bertukar libur secara sukarela; Andreas
+menerima bahwa ini risiko yang dipilih staf. Alternatif menolak otomatis tidak
+dipilih. Dampak: khusus Tukar libur, tampilkan peringatan dan tetap wajibkan
+penerimaan rekan serta ACC Owner. Benturan jadwal, cuti, minimum istirahat dan
+batas jam mingguan tetap memblokir; aturan roster/tukar shift biasa tetap sama.
+Dokumen terkait: products/sagaops/PRODUCT.md dan products/sagaops/CHANGELOG.md.
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [5637158](https://github.com/notyourgas/sagaops/commit/56371581e67c3f509bd5f2d55971d097bcb5e40b),
+rollback terpilih 8ab730757a857f443b489a36e4cd0896e20cc26c. Schema 37 tetap.
+
 ## 2026-10-26 - Tukar libur staf dengan persetujuan rekan dan Owner
 
 ID: DEC-SAGAPOS-DAY-OFF-SWAP-20261026-01. Tanggal: 26 Oktober 2026.
