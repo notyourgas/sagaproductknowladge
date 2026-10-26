@@ -1,5 +1,14 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-26 - Pengajuan lupa absen harus jelas dan dapat dikirim
+
+CONFIRMED Andreas: perbaiki UI/UX form dan penyebab pengajuan gagal. Kandidat
+1b87819 menormalisasi foto kamera yang ditolak karena EXIF/ukuran; bukan menghapus
+validasi bukti. Foto tetap opsional, waktu WIB/shift/alasan terlihat, status
+pengiriman terkonfirmasi dan pengajuan duplikat tidak dianggap gagal. Pengajuan
+hanya diterapkan setelah pemeriksaan Owner. LOCAL_VALIDATED, Linux107tesPASS,
+IMPLEMENTED_NOT_DEPLOYED karena readiness laporan produksi belum sehat.
+
 ## DEC-307 - Kopi Saga TRIAL OPENING30% semua menu
 
 | Field | Isi |

@@ -1,5 +1,32 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - Form lupa absen dan pengiriman foto diperbaiki di source
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Kandidat gabungan
+[1b87819](https://github.com/notyourgas/sagaops/commit/1b8781957e64d67530f810561afdbe8ebddebc62)
+melanjutkan076c629: normalisasi foto kamera ke PNG berukuran terbatas sebelum
+unggah, tanpa melonggarkan validasi server. Diagnostik produksi memastikan
+penolakan metadata EXIF/format-dimensi serta pengajuan yang sudah terkirim
+namun tampak gagal ketika dicoba ulang.
+
+Form satu layar menampilkan ringkasan shift/WIB, pilihan masuk-pulang berdasarkan
+riwayat terbaru, penghitung alasan, preview/hapus foto opsional, tombol kirim
+terjangkau dan status proses. Kesalahan mempertahankan isian; respons duplikat
+dikenali sebagai sudah terkirim. Respons hilang diperiksa melalui daftar pengajuan
+milik staf yang sama sebelum retry manual. Tetap memerlukan pemeriksaan Owner.
+
+Uji lokal mereproduksi JPEG EXIF dan dimensi terlalu besar yang ditolak, lalu
+membuktikan foto yang dinormalisasi terkirim melalui HTTP staf hingga pemeriksaan
+Owner di database disposable. Layout320/390px, aksesibilitas/kontras, kirim ulang,
+duplikat dan lost-response-after-commit PASS. [Validasi Linux final](https://github.com/notyourgas/sagaops/actions/runs/40263336661)
+lulus107tes/0gagal/0skip, static/type1267modul serta immutable package PASS.
+Bukan aktivasi produksi. Tanpa schema/policy/history/payroll mutation.
+
+Produksi tetap9620e02 dan readiness laporan masih gagal pada tiga pekerjaan
+terminal insiden sebelumnya. Kedua perbaikan HR belum aktif; tidak melewati gate
+rilis atau mengulang budget pekerjaan laporan. Foto bersifat opsional pada form
+existing, sehingga pengajuan tanpa lampiran menjadi alternatif sementara.
+
 ## 2026-10-26 - TRIAL OPENING30% active; scope remains Kiosk
 
 CONFIRMED: request to raise/name the existing campaign completed at catalog133/
