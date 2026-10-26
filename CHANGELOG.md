@@ -1,5 +1,27 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
+[076c629](https://github.com/notyourgas/sagaops/commit/076c629d9a204c44149e8820440f3b587e0ea841)
+menambahkan alasan wajib10–500karakter saat check-in terlambat, penyimpanan
+bersama waktu server/menit terlambat, dan tampilan alasan di detail Owner.
+Check-in tepat waktu tidak memerlukan alasan; checkout mempertahankannya.
+
+Kebijakan produksi yang dibaca sudah membuka check-in60menit sebelum sampai
+60menit setelah mulai: shift08.00 terbuka07.00–09.00WIB. Kandidat mempertahankan
+batas tersebut, GPS/selfie, isolasi staf, replay protection dan jalur koreksi
+Owner setelah jendela berakhir. Tanpa migration, edit riwayat atau perubahan payroll.
+Uji lokal mencakup batas waktu tepat, validasi alasan, readback Owner dan dialog HP.
+[Validasi Linux](https://github.com/notyourgas/sagaops/actions/runs/40260278242)
+lulus105tes/0gagal/0skip; static/type1266modul dan immutable package PASS.
+Bukti ini bukan aktivasi produksi.
+
+Aplikasi aktif tetap9620e02. Rilis ditahan oleh readiness laporan inventori yang
+masih gagal akibat tiga pekerjaan terminal dari insiden sebelumnya. Batas percobaan
+serta audit dipertahankan. Kolom alasan baru belum tersedia di produksi;
+NO_PRODUCTION_MUTATION / NOT_BUSINESS_READY untuk kandidat ini.
+
 ## 2026-10-26 - SagaPOS memory incident and availability recovery
 
 CONFIRMED Andreas repair request; runtime configuration source44631c1 applied

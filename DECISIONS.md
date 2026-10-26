@@ -1,5 +1,13 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-26 - Alasan terlambat tidak menghapus keterlambatan
+
+CONFIRMED Andreas: shift08.00 tetap menerima absen07.00–09.00 dan staf yang
+terlambat menjelaskan kendalanya. Kandidat076c629 mewajibkan alasan10–500karakter,
+menyimpan waktu server asli dan menit keterlambatan untuk Owner. Kebijakan waktu
+sudah aktif; kolom alasan IMPLEMENTED_NOT_DEPLOYED, Linux105tesPASS dan menunggu
+pemulihan readiness laporan. Tidak mengubah GPS/selfie, riwayat atau payroll.
+
 ## DEC-306 - Ringkasan Harian SagaPOS mengurangi teks bertumpuk
 
 | Field | Isi |
