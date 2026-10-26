@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-26 - SagaPOS memory incident and availability recovery
+
+CONFIRMED Andreas repair request; runtime configuration source44631c1 applied
+persistently without restarting application9620e02. Dashboard/Staff login and
+public menu restored after memory throttling; native settings, auth denials and
+adjacent sites verified. Three exhausted report jobs retained; aggregate health
+still not ready. Canonical audit-preserving resolution and authenticated UAT OPEN,
+NOT_BUSINESS_READY. Source and knowledge commits remain separate; knowledge
+main HEAD. Updated product, dossier, product/portfolio/root changelogs, master,
+GAPS and SYNC_STATUS. No payment, printer, catalog or transaction mutations.
+
 ## 2026-10-26 - SagaPOS compact daily dashboard release
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source9620e02,

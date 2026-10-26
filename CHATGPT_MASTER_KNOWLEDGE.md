@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-26 - SagaPOS kembali dapat diakses; laporan belum sepenuhnya sehat
+
+CONFIRMED: Dashboard dan portal staf kembali menampilkan login setelah batas
+memori layanan disesuaikan permanen tanpa restart. Konfigurasi
+[44631c1](https://github.com/notyourgas/sagaops/commit/44631c1ecd664ddfddc4040043a0eebb3085bc33),
+aplikasi aktif tetap9620e02. Proyeksi baru segar, tetapi tiga pekerjaan laporan
+yang kehabisan percobaan masih membuat readiness/monitor gagal. Resolusi audit
+dead-letter dan authenticated UAT OPEN; NOT_BUSINESS_READY. Pemulihan akses ini
+tidak membuktikan transaksi/payment/printer end-to-end dan tidak mengubah data
+bisnis. Snapshot ini menggantikan klaim kesehatan runtime pada checkpoint awal
+rilis Ringkasan Harian di bawah; riwayat rilis tetap dipertahankan.
+
 ## 2026-10-26 - SagaPOS Ringkasan Harian lebih ringkas
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE:

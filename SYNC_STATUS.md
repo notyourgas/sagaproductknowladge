@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-26 - SagaPOS availability restored; reporting health unresolved
+
+CONFIRMED / PRODUCTION_DEPLOYED for persistent runtime configuration44631c1;
+active application9620e02 unchanged, no restart. Native systemd/effective-property
+validation and browser Dashboard/Staff login PASS; menu and protected-route
+smokes PASS. Three exhausted report jobs retained, so readiness/monitor remain
+failed. Canonical audited resolution and authenticated UAT OPEN;
+NOT_BUSINESS_READY. Product/dossier/changelogs/master/GAPS synchronized once.
+Source branch pushed separately; knowledge main HEAD. No business-data changes.
+
 ## 2026-10-26 - SagaPOS compact Ringkasan Harian production deployed
 
 CONFIRMED runtime9620e0292cc918dc70722d86b28ece5c8879c35e/rollback ef43989.

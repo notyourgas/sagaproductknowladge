@@ -1,5 +1,15 @@
 # SagaOPS Changelog
 
+## 2026-10-26 - Gangguan akses akibat batas memori dipulihkan
+
+CONFIRMED Andreas: persistent runtime memory adjustment applied without restart;
+Dashboard/Staff browser login and public menu restored. Configuration44631c1,
+application9620e02 unchanged. Native unit/effective limits/protected routes and
+adjacent public sites verified. Three exhausted report jobs remain terminal;
+readiness/monitor reporting still fail. Preserve audit/attempt budgets; canonical
+resolution and authenticated UAT OPEN. NOT_BUSINESS_READY. No business data,
+payment/provider, printer or release-pointer changes. Knowledge main HEAD.
+
 ## 2026-10-26 - Ringkasan Harian UI disederhanakan
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Source9620e02,

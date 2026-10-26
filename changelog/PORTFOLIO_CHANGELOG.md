@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-26 - SagaPOS: akses pulih, resolusi laporan OPEN
+
+CONFIRMED Andreas: konfigurasi memori44631c1 diterapkan permanen tanpa restart
+pada aplikasi9620e02. Dashboard/Staff login dan public menu kembali merespons;
+akses kasir/kiosk tetap terlindungi, situs tetangga terverifikasi. Tiga pekerjaan
+laporan kehabisan percobaan tetap tercatat; readiness/monitor belum lulus.
+Resolusi audit dead-letter dan authenticated UAT OPEN; NOT_BUSINESS_READY.
+Data bisnis/provider/printer dipertahankan. Product/dossier/changelogs/master/
+GAPS/SYNC_STATUS diselaraskan pada knowledge main HEAD terpisah dari source.
+
 ## 2026-10-26 - SagaPOS compact daily financial dashboard deployed
 
 CONFIRMED Andreas / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. SagaOPS9620e02/

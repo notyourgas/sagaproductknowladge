@@ -1,5 +1,18 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - SagaPOS: terminal reporting-job resolution OPEN
+
+CONFIRMED: memory configuration44631c1 restored availability on application
+9620e02 without restart. Browser Dashboard/Staff login and fresh projections
+resume, but three jobs exhausted existing retries after expired worker leases.
+Current canonical persistence has no dead-letter resolution transition; aggregate
+readiness and the monitor still fail. Preserve signed state, attempt budgets and
+audit history; do not reset jobs, disable reporting or weaken readiness.
+Owner: SagaPOS engineering. Next action: implement and qualify canonical audited
+resolution for exhausted reporting work, with explicit scope and native recovery
+validation. Authenticated Owner/Staff UAT remains OPEN; NOT_BUSINESS_READY.
+This is separate from the startup stale-lease hardening already recorded below.
+
 ## 2026-10-26 - SagaPOS compact dashboard live; device UAT and startup recovery follow-up
 
 CONFIRMED: source9620e02/rollback ef43989 deployed, Linux161PASS and native

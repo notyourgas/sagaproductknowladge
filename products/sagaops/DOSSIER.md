@@ -1,5 +1,22 @@
 # SagaOPS Dossier
 
+## 2026-10-26 - Runtime availability recovery; reporting health OPEN
+
+CONFIRMED: memory throttling caused internal health and Dashboard/Staff timeouts.
+Persistent service limits were adjusted without restarting or replacing source
+9620e0292cc918dc70722d86b28ece5c8879c35e. Configuration provenance:
+[44631c1](https://github.com/notyourgas/sagaops/commit/44631c1ecd664ddfddc4040043a0eebb3085bc33).
+Native systemd validation and effective-setting read-back PASS; Dashboard and
+Staff login rendered in browser, public menu responded, and unauthenticated
+Cashier/Kiosk remained denied. Recent process memory pressure fell to zero.
+
+Three report jobs exhausted existing attempts during the outage. Worker and
+freshness resume, but aggregate readiness/monitor remain failed while terminal
+dead-letter records persist. Existing persistence has no resolution transition;
+no direct state edit, attempt reset, reporting disablement or relaxed health
+guard was used. Canonical audited resolution and authenticated UAT remain OPEN.
+PRODUCTION_DEPLOYED applies to the runtime configuration only; NOT_BUSINESS_READY.
+
 ## 2026-10-26 - Compact daily dashboard after public-repository research
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Source

@@ -1,5 +1,19 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-26 - Akses pulih setelah penyesuaian memori
+
+CONFIRMED / PRODUCTION_DEPLOYED khusus konfigurasi runtime. Dashboard dan
+portal staf kembali menampilkan login; menu publik merespons dan akses kasir/
+kiosk tetap terlindungi. Batas memori layanan dinaikkan secara permanen tanpa
+restart. Konfigurasi ditelusuri ke [44631c1](https://github.com/notyourgas/sagaops/commit/44631c1ecd664ddfddc4040043a0eebb3085bc33);
+aplikasi aktif tetap 9620e0292cc918dc70722d86b28ece5c8879c35e.
+
+Tiga pekerjaan laporan telah kehabisan percobaan karena lease kedaluwarsa saat
+gangguan. Proyeksi baru kembali segar, tetapi status readiness dan monitor
+laporan masih gagal; resolusi dead-letter yang mempertahankan audit OPEN.
+Riwayat dan batas percobaan dipertahankan. Authenticated UAT belum dijalankan;
+NOT_BUSINESS_READY. Data transaksi, katalog, provider dan printer tidak diubah.
+
 ## 2026-10-26 - Ringkasan Harian lebih ringkas
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE, source
