@@ -1,5 +1,14 @@
 # SagaOPS Changelog
 
+## 2026-10-26 - Grand Opening20% menjadi TRIAL OPENING30%
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED. Semua menu
+Kiosk otomatis30%, akhir tetap1November2026 WIB dan Member voucher stacking
+tetap. Native catalog133/publication13, source9620e02 unchanged; native30menu
+dan live2Kiosk quotes PASS, protected menu/printer/nota/history retained.
+No fake transaction, voucher consumption or print; no application deploy.
+Product/dossier/master/portfolio/GAPS/DECISIONS/SYNC_STATUS aligned separately.
+
 ## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source

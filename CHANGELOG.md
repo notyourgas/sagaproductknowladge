@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-26 - Kopi Saga TRIAL OPENING30% published
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus promo.
+Grand Opening20%→TRIAL OPENING30%, all Kiosk menus, through1November2026 WIB;
+Member voucher stacking/channel/base prices unchanged. Catalog133/publication13,
+app9620e02 unchanged; native30menu and live2Kiosk quotes PASS. No fake business
+transaction or print. Product/dossier/changelogs/master/GAPS/DECISIONS/SYNC_STATUS
+updated separately on main HEAD; unrelated product/health work preserved.
+
 ## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source

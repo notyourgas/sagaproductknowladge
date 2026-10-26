@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-26 - Kopi Saga TRIAL OPENING30% activated
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED: existing public
+Kiosk promotion20%→30%, name TRIAL OPENING, all menus through1November2026 WIB.
+Member voucher combination retained. Catalog133/publication13, app9620e02 stays;
+native30menu/live2Kiosk price quotes PASS, zero sales/payment/print or stock/HPP
+mutation. Nota/printer and other product work retained. No application deploy;
+public knowledge updated on separate main HEAD. Reporting-health gap remains
+separate; no whole-product readiness claim.
+
 ## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source

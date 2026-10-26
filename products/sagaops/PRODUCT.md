@@ -1,5 +1,20 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-26 - TRIAL OPENING 30% aktif untuk semua menu Kiosk
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED. Promo existing
+Grand Opening20% diganti menjadi **TRIAL OPENING30%** otomatis untuk semua menu
+Kiosk, tanpa wajib member. Berlaku sampai seluruh1November2026 WIB (akhir
+eksklusif2November00:00WIB). Kanal Kiosk existing dipertahankan; bukan perluasan
+promo ke Kasir manual. Voucher Member tetap boleh digabung sesuai kelayakan;
+voucher dikurangi dahulu, lalu30% pada sisa nilai yang memenuhi syarat.
+
+Native catalog133/publication13, application source9620e02 tetap.30menu tersedia
+lolos pemeriksaan harga read-only; live Kiosk Americano13000→9100 dan Air Mineral
+6000→4200. Harga dasar, menu/modifier, nota/printer/checker/QRIS dan history tetap.
+Tidak ada transaksi uji palsu, redemption voucher atau TEST kertas. Perubahan data
+promo, bukan application deploy; gap laporan stok terpisah tetap dicatat.
+
 ## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source

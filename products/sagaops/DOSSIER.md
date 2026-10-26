@@ -1,5 +1,24 @@
 # SagaOPS Dossier
 
+## 2026-10-26 - Kampanye TRIAL OPENING 30%
+
+CONFIRMED Andreas / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus promo.
+Nama kampanye persis TRIAL OPENING; persentase3000basis points, otomatis seluruh
+produk/kategori tanpa pengecualian, minimum atau cap. Menggantikan20% existing,
+bukan menambah promo kedua. Identitas internal tetap untuk menjaga histori.
+Kanal tetap Kiosk; izin gabungan satu voucher Member tetap. Tanggal mulai
+existing dipertahankan, akhir eksklusif2026-11-01T17:00:00Z mencakup1November WIB.
+
+Owner-authenticated draft/status, canonical native Owner publication dengan
+CAS/audit dan readback catalog133/publication13 PASS. Stale server cache dipulihkan
+melalui native409 conflict hydration tanpa penulisan ulang. Native read-only
+quotes30menu dan dua live authenticated Kiosk quotes PASS; Americano13000−3900=
+9100, Air Mineral6000−1800=4200, native Es Kopi Saga16000−4800=11200. Product
+prices/options, ordering, other campaigns, receipt/printer/checker/QRIS hashes
+tetap.0order/payment/voucher consumption/print. Source aplikasi tetap9620e02,
+tidak build/deploy/restart atau perubahan proteksi. Existing reporting-health gap
+independen tidak dinyatakan selesai oleh aktivasi kampanye ini.
+
 ## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source

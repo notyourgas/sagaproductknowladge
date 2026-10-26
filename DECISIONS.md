@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-307 - Kopi Saga TRIAL OPENING30% semua menu
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-26 |
+| Keputusan | Naikkan promo Kopi Saga existing20% menjadi30% semua menu, nama persis TRIAL OPENING. |
+| Alasan | Instruksi langsung Andreas untuk kampanye pembukaan. |
+| Batas | Tanggal akhir tetap1November2026 WIB; kanal tetap Kiosk, Member voucher stacking dan identitas histori retained. Tidak mengubah harga dasar atau nota/printer. |
+| Dampak | Native catalog133/publication13 ACTIVE; native30menu/live2Kiosk quotes PASS,0fake sales/payment/print. Application9620e02 tetap, tanpa deploy baru. |
+| Pemberi keputusan | Andreas, instruksi langsung pada percakapan. |
+| Status | CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus kampanye; reporting-health follow-up terpisah. |
+| Dokumen terkait | [SagaOPS](products/sagaops/PRODUCT.md), [Dossier](products/sagaops/DOSSIER.md), [Gaps](GAPS.md) |
+
 ## 2026-10-26 - Alasan terlambat tidak menghapus keterlambatan
 
 CONFIRMED Andreas: shift08.00 tetap menerima absen07.00–09.00 dan staf yang

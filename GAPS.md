@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - TRIAL OPENING30% active; scope remains Kiosk
+
+CONFIRMED: request to raise/name the existing campaign completed at catalog133/
+publication13. All menus,30%, through1November2026 WIB; existing Member stacking
+retained. Native30menu/live2Kiosk quotes PASS. No campaign activation blocker;
+not an authorization to expand to manual Cashier, create fake sales, consume
+real vouchers or alter receipts/printers. Existing stock-reporting health gap
+below remains independent and unresolved by this catalog-only operation.
+
 ## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source

@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-26 - Kopi Saga promo TRIAL OPENING30%
+
+CONFIRMED / PRODUCTION_ACTIVATED khusus kampanye. Grand Opening20% diganti
+TRIAL OPENING30% seluruh menu Kiosk, otomatis tanpa wajib member, hingga seluruh
+1November2026 WIB. Tidak memperluas kanal ke Kasir manual. Voucher Member
+tetap bisa digabung sesuai syarat existing: voucher dulu lalu30% sisa eligible.
+Native catalog133/publication13; application9620e02 unchanged. Native30menu and
+live2Kiosk quotes PASS, including mineral6000→4200/Americano13000→9100. Harga
+dasar/nota/printer/history tetap;0fake sales/payment/voucher consumption/print.
+Data-only activation, not new source deploy or whole-product BUSINESS_READY.
+
 ## 2026-10-26 - SagaPOS: alasan keterlambatan siap di source, belum aktif
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
