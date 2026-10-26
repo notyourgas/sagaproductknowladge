@@ -1,5 +1,25 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-10-26 - Google Maps bersama Kopi Saga dan Saga Studio
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED khusus tautan lokasi.
+Atas instruksi Andreas, [Kopi Saga](https://kopisaga.site/) dan
+[Saga Studio](https://sagastudio.site/) memakai
+[pin Kopi SAGA & SAGA Studio](https://maps.app.goo.gl/DDcpJm8HsEcLXbbK8?g_st=ic),
+Jl. Salak No.58, Madiun. Pin lama diganti; label pin sementara Kopi dihapus.
+
+Source Git lokal Studio `249ea2d0333721b28bac1a41a50d4784c985154c`, release
+`20261026-249ea2d-maps`; Kopi `f8daa024875853c703ff34ea6a64d4ce26861439`,
+release `20261026-f8daa02-maps`. Rollback masing-masing
+`20261026-d94b4e7-open-ux` dan `20261023-c0552d8-whatsapp` tersedia.
+Build/check27 route dan11tes Studio PASS;22halaman publik serta browser kedua
+situs mengonfirmasi URL baru. Delta Studio hanya28HTML mengganti URL, aset lain
+identik; Kopi3file memperbarui fallback/config/label dan versi cache. Guarded
+activation, manifest/checksum dan public bytes PASS. Production kedua bio berubah;
+booking/payment, database, kontak, harga/promo dan status buka tetap. Source push
+GitHub/hosted CI dan uji perjalanan langsung NOT_RUN; BUSINESS_READY tidak dinilai.
+Tidak ada konflik atau input menunggu konfirmasi dalam scope Maps.
+
 ## 2026-10-26 - Saga Clouds dan ilustrasi Oyen Sunkist aktif
 
 CONFIRMED / MASTER_DATA_PUBLISHED / PRODUCTION_ACTIVATED khusus katalog.

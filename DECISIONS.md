@@ -4296,3 +4296,17 @@ ini bukan aktivasi payment flow lain.
 | Pemberi keputusan | Andreas / founder |
 | Status | CONFIRMED / PRODUCTION_ACTIVATED; bukan persetujuan aktivasi provider, transaksi uji produksi, penghapusan backup atau restore destruktif |
 | Dokumen terkait | [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Dossier](products/sagaops/DOSSIER.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md) |
+
+## DEC-308 - Satu pin Maps publik untuk Kopi Saga dan Saga Studio
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-26 |
+| Topik | Tujuan tombol lokasi kedua website bio |
+| Keputusan | Gunakan [pin Kopi SAGA & SAGA Studio](https://maps.app.goo.gl/DDcpJm8HsEcLXbbK8?g_st=ic) pada kedua situs. |
+| Alasan | Andreas memberikan tautan Google Maps pengganti. |
+| Alternatif yang dipertimbangkan | Mempertahankan pin lama dan label sementara; digantikan instruksi terbaru. |
+| Dampak | Kedua website production memakai pin yang sama; label sementara Kopi diperbarui. Tidak mengubah status buka, kontak atau transaksi. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED / PRODUCTION_ACTIVATED khusus Maps; bukan BUSINESS_READY |
+| Dokumen terkait | [SagaDevs Product](products/sagadevs/PRODUCT.md), [Changelog](products/sagadevs/CHANGELOG.md) |
