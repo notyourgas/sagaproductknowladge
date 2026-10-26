@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-26 - Kandidat pemulihan printer saat Kiosk idle
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. [5e30731](https://github.com/notyourgas/sagaops/commit/5e30731ad764250b34406ab2a5a6edf3b134e1d1): screen wake lock dan pemulihan
+layanan WebUSB per tab; Jeda, izin dan ledger tetap dijaga.31tes lokal PASS,
+fixture TLS memerlukan openssl dan Nginx Linux belum diuji. Produksi tetap9620e02;
+monitor gagal karena tiga job laporan dead-letter. Kualifikasi Linux, paket,
+deploy serta UAT Chromebook OPEN; layout nota/printer aktif tidak berubah.
+Rincian: [SagaOPS Product](products/sagaops/PRODUCT.md).
+
 ## 2026-10-26 - Booking dari bio Saga Studio terhubung ke SagaBook
 
 CONFIRMED / PRODUCTION_ACTIVATED khusus tautan booking bio, berdasarkan

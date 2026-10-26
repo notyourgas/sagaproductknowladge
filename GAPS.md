@@ -1,5 +1,25 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - Kiosk tetap menyala dan layanan printer pulih tanpa mulai ulang manual
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source [5e30731](https://github.com/notyourgas/sagaops/commit/5e30731ad764250b34406ab2a5a6edf3b134e1d1) menambah screen wake lock
+untuk Kiosk terlihat dan layanan WebUSB aktif, serta menyimpan pilihan berjalan
+per tab agar reload, USB tersambung kembali dan jaringan pulih dapat diperiksa
+otomatis. Jeda eksplisit, izin kedaluwarsa, akses Owner dan hasil cetak tidak pasti
+tetap dihormati; ACK disinkronkan tanpa mengirim kertas ulang. Layout/feed/autocut
+dan konfigurasi printer aktif tidak berubah.
+
+Uji Windows:31PASS,1gagal prasyarat openssl fixture TLS,1skip Nginx Linux;
+bukan full Linux qualification atau bukti Chromebook/kertas. Static/type dan
+integritas cache PASS. Produksi tetap9620e02; monitor kanonik gagal karena tiga
+pekerjaan inventory-reporting dead-letter. Engineering perlu memulihkan laporan
+melalui jalur kanonik hingga monitor PASS, kemudian kualifikasi/paket/rilis kandidat.
+Tidak ada restart, transaksi/payment/TEST fisik atau mutasi printer produksi.
+
+Webpage tidak dapat menjamin operasi saat Chrome ditutup, Chromebook tidur/terkunci
+atau tab dibuang OS. Interim: keep display on saat charger terpasang; Kiosk terlihat
+dan tab printer-service tetap terbuka. UAT Chromebook setelah deploy masih OPEN.
+
 ## 2026-10-26 - Form lupa absen dan pengiriman foto diperbaiki di source
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Kandidat gabungan
