@@ -1,5 +1,48 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-27 - Kiosk menunggu layanan printer sebelum pemesanan
+
+CONFIRMED / SOURCE_IMPLEMENTED / LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED.
+Source [38f9acf](https://github.com/notyourgas/sagaops/commit/38f9acf031702770ab1ee5084cd138e6fd577965),
+production masih 41095e4ca48c59990ec1fe7309af63060cdd4dcd, rollback 3d72045ebdf2a179d0b82c8b8fc4c4c704f156e6. Schema 37 tetap; navigasi jadwal
+Admin, closing ringkas dan pemulihan printer dari rilis independen tetap terbawa.
+
+Kandidat sesuai permintaan Andreas membuat Kiosk pada outlet WebUSB terkunci dengan pesan tengah
+"Layanan printer belum dimulai" jika tab layanan belum berjalan. Tombol staf
+membuka ulang tab layanan yang sama; Kiosk terbuka otomatis setelah sinyal lokal
+siap diterima. Gangguan USB, jeda, pemulihan atau review kertas menahan interaksi.
+Key kanal terikat outlet, tanpa kredensial atau isi nota. Probe dua detik dan
+kedaluwarsa delapan detik mencegah memakai status lama; tab kedua yang dijeda
+tidak menimpa writer aktif. Ini pengunci UX, bukan izin cetak atau bukti kertas.
+
+Popup idle "Lanjutkan Pesanan" dihapus. Sesi sebelum pembayaran tetap dibersihkan
+otomatis setelah tiga menit. Keranjang tidak dihapus saat printer baru terhenti,
+dan pembayaran pending/uncertain tidak diulang atau dibersihkan oleh idle.
+Offline memakai scope lease yang sama; Windows native dan menu demo tetap pada
+jalur existing. Tidak ada perubahan harga, uang, template, logo, jarak, feed,
+autocut, checker, maupun otorisasi/ledger pengiriman.
+
+[Linux run 40374851623](https://github.com/notyourgas/sagaops/actions/runs/40374851623)
+lulus 241/241, tanpa gagal/dilewati, PostgreSQL 18 dan Chromium, static/type 1286
+modul. Cakupan termasuk gate, scope/tab ganda, stale presence, jeda printer saat
+keranjang/pembayaran, privacy reset, service native, offline origin produksi,
+nota, checker, closing dan pembayaran. Paket/checksum, backup terenkripsi dan
+off-host serta disposable restore lulus. Rehearsal dan aktivasi kandidat belum
+dilakukan: batas kapasitas 85% menahan staging tiga kandidat rilis bersamaan.
+Versi aktif/rollback, database, backup dan paket rilis task lain dipertahankan.
+Koordinasi Release Lead menunggu izin eksplisit untuk pesan lintas task.
+Tidak ada penjualan, konfirmasi pembayaran atau TEST fisik dibuat saat verifikasi.
+Biaya tambahan Rp0; update knowledge mencakup delapan dokumen produk/lintas produk.
+
+Setelah kandidat benar-benar diaktifkan, muat ulang layanan printer dan Kiosk saat tidak ada
+proses cetak/pembayaran aktif, lalu mulai layanan jika diminta. Jangan pairing
+ulang atau menghapus data situs; sesi offline aktif harus disinkronkan dahulu.
+Keduanya perlu berada di Chrome/profil/origin yang sama. Browser tetap terbuka
+dan Chromebook menyala. Kandidat belum tersedia untuk operasional. UAT warning/pemulihan pada Chromebook fisik masih OPEN,
+penanggung jawab Andreas; langkah berikut memeriksa layar terkunci ketika layanan
+dijeda dan terbuka ketika dimulai, tanpa membuat penjualan TEST.
+BUSINESS_READY menyeluruh dan exactly-once fisik tidak diklaim.
+
 ## 2026-10-27 - Kalender harian Admin Studio selesai, belum diaktifkan
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / PRODUCTION_ACTIVATION_PENDING.
