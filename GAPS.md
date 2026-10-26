@@ -1,5 +1,14 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - Checklist opening dan closing Kopi Saga tersedia di portal staf
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk
+checklist operasional. Source aktif [a828b2b](https://github.com/notyourgas/sagaops/commit/a828b2b4215b685766d731558d7fb64e0193a6f6),
+rollback terpilih 683583011d74f089f0bb5a76479db45a852f68ee. Rilis ini mempertahankan
+perbaikan HR, laporan, printer dan kiosk sebelumnya.
+
+Fitur telah aktif dan validasi teknis lulus. UAT HP staf fisik serta pelaksanaan opening/closing nyata masih OPEN. PIC/Owner approval bukan blocker atau bagian dari alur fitur ini. Tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-26 - Saga Studio: gateway off, batas jam transfer manual tetap
 
 CONFIRMED: keputusan Andreas DEC-309 sudah diterapkan melalui Owner dan checkout

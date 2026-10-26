@@ -1,5 +1,23 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-26 - Checklist opening dan closing Kopi Saga tersedia di portal staf
+
+ID: DEC-SAGAPOS-CHECKLIST-20261026-01. Tanggal: 26 Oktober 2026. Pemberi keputusan:
+Andreas. Status/klasifikasi: CONFIRMED. Keputusan: checklist operasional staf
+langsung dipublikasikan setelah isian lengkap, tanpa ACC PIC/Owner dan tanpa jam
+maksimal. Kalibrasi espresso berupa Time/Yield/Dose; ringkasan WA menggunakan
+kategori, nama petugas dan tanggal. Staf menyalin lalu mengirim sendiri.
+Alasan: alur harian mudah dikerjakan dan laporan grup tetap singkat. Alternatif
+yang diganti: antrean pemeriksaan/ACC serta batas waktu publikasi. Dampak: status
+Draft -> Dipublikasikan, riwayat revisi, pemeriksaan Owner hanya membaca laporan.
+Implementasi dan deploy telah diotorisasi Andreas dalam thread fitur checklist.
+Dokumen terkait: products/sagaops/PRODUCT.md dan products/sagaops/CHANGELOG.md.
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk
+checklist operasional. Source aktif [a828b2b](https://github.com/notyourgas/sagaops/commit/a828b2b4215b685766d731558d7fb64e0193a6f6),
+rollback terpilih 683583011d74f089f0bb5a76479db45a852f68ee. Rilis ini mempertahankan
+perbaikan HR, laporan, printer dan kiosk sebelumnya.
+
 ## DEC-309 - Saga Studio transfer manual sementara
 
 | Field | Isi |

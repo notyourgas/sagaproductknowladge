@@ -1,5 +1,27 @@
 # Portfolio Changelog
 
+## 2026-10-26 - Checklist opening dan closing Kopi Saga tersedia di portal staf
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE untuk
+checklist operasional. Source aktif [a828b2b](https://github.com/notyourgas/sagaops/commit/a828b2b4215b685766d731558d7fb64e0193a6f6),
+rollback terpilih 683583011d74f089f0bb5a76479db45a852f68ee. Rilis ini mempertahankan
+perbaikan HR, laporan, printer dan kiosk sebelumnya.
+
+Opening/closing kini dapat diisi bersama melalui portal staf, disimpan sebagai
+draft, dipublikasikan tanpa ACC/batas jam, dan disalin sebagai ringkasan kategori
+untuk WhatsApp. Opening memuat 32 poin serta form Time/Yield/Dose; closing 24 poin
+merujuk proses kas/stok existing. Owner dapat melihat riwayat tanpa persetujuan.
+Tidak ada pengiriman pesan otomatis, migrasi schema, atau perubahan transaksi/HR.
+
+Validasi [Linux run 40278945803](https://github.com/notyourgas/sagaops/actions/runs/40278945803):
+45 PASS / 0 FAIL / 0 SKIP pada PostgreSQL 18 dan Chromium, static/type check,
+320/390/768 mobile layout, persistence/restart, concurrency, publish terlambat,
+lost-response replay, ringkasan, serta regresi absensi/stok/printer/navigasi.
+Backup terenkripsi dengan off-host checksum dan restored-DB candidate/rollback
+rehearsal lulus. Runtime dan aset production sesuai source; halaman Owner telah
+diuji dalam sesi Owner sah secara read-only. UAT HP staf fisik serta pelaksanaan
+opening/closing nyata belum dilakukan; tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-26 - SagaBook: Saga Studio memakai transfer manual sementara
 
 CONFIRMED / PRODUCTION_CONFIG_ACTIVATED, instruksi Andreas DEC-309. Pilihan
