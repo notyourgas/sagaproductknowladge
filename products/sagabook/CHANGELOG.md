@@ -1,5 +1,13 @@
 # SagaBook Changelog
 
+## 2026-10-26 - Pilihan gateway Saga Studio dimatikan sementara
+
+- CONFIRMED, instruksi Andreas: arahkan booking baru Saga Studio Madiun ke transfer manual selama gangguan gateway.
+- PRODUCTION_CONFIG_ACTIVATED melalui Owner: gateway off, manual on. Checkout publik hanya menampilkan transfer manual; pilihan dan tombol lanjut PASS tanpa submit booking/order/pembayaran.
+- Pengaturan lain identik; manual tetap mengikuti jam cabang 09.00-21.00 WIB dan verifikasi bukti oleh studio. Di luar jam itu metode bayar tidak tersedia selama gateway off.
+- Runtime `20261025165636-ec440e5` / source `ec440e5119f145dfe76318f1e81bb641c995ac63` tetap. Production konfigurasi berubah, tidak ada deploy aplikasi.
+- Dokumen terdampak: PRODUCT, DOSSIER, master knowledge, keputusan DEC-309, GAPS, changelog portfolio/root dan SYNC_STATUS. Pemulihan provider serta pembayaran nyata OPEN; BUSINESS_READY tidak dinyatakan.
+
 ## 2026-10-26 - UI dan copy bio Saga Studio sesuai status sudah buka
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk [bio Saga Studio](https://sagastudio.site/),

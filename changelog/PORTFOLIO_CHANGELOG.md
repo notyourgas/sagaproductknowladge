@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-10-26 - SagaBook: Saga Studio memakai transfer manual sementara
+
+CONFIRMED / PRODUCTION_CONFIG_ACTIVATED, instruksi Andreas DEC-309. Pilihan
+gateway booking baru Saga Studio Madiun dimatikan melalui Owner; manual tetap
+aktif 09.00-21.00 WIB dengan verifikasi bukti. Checkout publik hanya-manual PASS,
+tanpa submit booking atau pembayaran. Pengaturan lain identik dan runtime
+`20261025165636-ec440e5` tetap; konfigurasi production berubah tanpa deploy.
+Pemulihan provider/real payment OPEN; di luar jam cabang tidak ada metode bayar
+selama gateway off. [Fakta dan provenance](../products/sagabook/PRODUCT.md).
+
 ## 2026-10-26 - Google Maps bersama Kopi Saga dan Saga Studio
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED khusus tautan lokasi.

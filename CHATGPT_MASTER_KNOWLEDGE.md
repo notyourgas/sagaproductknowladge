@@ -1,5 +1,16 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-26 - Saga Studio sementara hanya transfer manual
+
+CONFIRMED / PRODUCTION_CONFIG_ACTIVATED: keputusan Andreas DEC-309 menonaktifkan
+pilihan gateway untuk booking baru Saga Studio Madiun. Owner/DB/public readback
+dan checkout hanya-manual PASS. Transfer manual mengikuti jam 09.00-21.00 WIB
+dan verifikasi bukti oleh studio; di luar jam tersebut tidak ada metode bayar
+yang tersedia selama gateway off. Pengaturan lain identik; runtime
+`20261025165636-ec440e5` tetap, tanpa deploy aplikasi. Tidak membuat booking,
+order provider atau pembayaran. Ini bukan konfirmasi pemulihan Tokopay atau
+BUSINESS_READY. Rincian: [SagaBook](products/sagabook/PRODUCT.md).
+
 ## 2026-10-26 - Google Maps bersama Kopi Saga dan Saga Studio
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED khusus tautan lokasi.

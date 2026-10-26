@@ -1,5 +1,22 @@
 # SagaBook Product Knowledge
 
+## 2026-10-26 - Saga Studio memakai transfer manual sementara
+
+CONFIRMED / PRODUCTION_CONFIG_ACTIVATED: atas instruksi Andreas, pilihan
+QRIS / Payment Gateway pada booking baru [Saga Studio Madiun](https://sagabook.store/saga)
+dinonaktifkan melalui pengaturan Owner. Transfer manual tetap aktif; checkout
+publik hanya menampilkan transfer manual dan tombol lanjutnya dapat dipilih.
+Customer tetap mengirim bukti transfer untuk verifikasi studio. Jam pembayaran
+manual mengikuti cabang, 09.00-21.00 WIB; di luar jam itu checkout tidak memiliki
+metode pembayaran yang tersedia selama gateway dimatikan.
+
+Readback Owner, database dan booking publik PASS. Seluruh nilai pengaturan lain
+identik sebelum/sesudah. Runtime tetap `20261025165636-ec440e5`, source
+`ec440e5119f145dfe76318f1e81bb641c995ac63`; tidak memerlukan deploy aplikasi.
+Pemeriksaan berhenti sebelum submit booking, tanpa order provider atau pembayaran.
+Pemulihan Tokopay dan penerimaan pembayaran nyata belum terverifikasi;
+BUSINESS_READY tidak dinyatakan. Lihat [keputusan](../../DECISIONS.md#dec-309---saga-studio-transfer-manual-sementara).
+
 ## 2026-10-26 - UI dan copy bio Saga Studio sesuai status sudah buka
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk [bio Saga Studio](https://sagastudio.site/),

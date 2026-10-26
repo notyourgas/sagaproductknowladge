@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-26 - SagaBook transfer manual sementara Saga Studio
+
+Accepted / CONFIRMED / PRODUCTION_CONFIG_ACTIVATED khusus pilihan pembayaran
+booking baru Saga Studio Madiun, keputusan Andreas DEC-309. Owner/DB/public
+readback dan checkout hanya-manual PASS, seluruh pengaturan lain identik.
+Manual tetap 09.00-21.00 WIB; di luar jam itu metode bayar tidak tersedia selama
+gateway off. Runtime `20261025165636-ec440e5`, source
+`ec440e5119f145dfe76318f1e81bb641c995ac63` tetap; tidak memerlukan deploy aplikasi.
+Tidak membuat booking/order/pembayaran. Pemulihan provider dan real payment OPEN;
+BUSINESS_READY tidak dinyatakan. Sembilan dokumen terkait disinkronkan pada main
+HEAD dengan validasi knowledge/link/public-safety/diff sebelum commit/push.
+
 ## 2026-10-26 - Google Maps bersama Kopi Saga dan Saga Studio
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED khusus tautan lokasi.

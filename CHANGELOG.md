@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-26 - Saga Studio sementara hanya memakai transfer manual
+
+Accepted / CONFIRMED, sumber instruksi langsung Andreas DEC-309 dan verifikasi
+production Owner/DB/checkout. Pilihan gateway booking baru dimatikan; manual
+tetap aktif 09.00-21.00 WIB dengan verifikasi bukti. Pengaturan lain identik;
+di luar jam tersebut tidak ada metode bayar tersedia selama gateway off.
+Runtime `20261025165636-ec440e5` / source `ec440e5119f145dfe76318f1e81bb641c995ac63`
+tetap. Production konfigurasi berubah tanpa deploy aplikasi dan tanpa membuat
+booking/order/pembayaran. Provider recovery/real payment/BUSINESS_READY OPEN.
+File: SagaBook PRODUCT/DOSSIER/CHANGELOG, master, portfolio, DECISIONS, GAPS,
+SYNC_STATUS dan root changelog. Branch main HEAD; tidak ada konflik untuk scope
+perubahan ini. Detail pada [SagaBook](products/sagabook/PRODUCT.md).
+
 ## 2026-10-26 - Google Maps bersama Kopi Saga dan Saga Studio
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED khusus tautan lokasi.

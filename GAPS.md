@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - Saga Studio: gateway off, batas jam transfer manual tetap
+
+CONFIRMED: keputusan Andreas DEC-309 sudah diterapkan melalui Owner dan checkout
+publik hanya menampilkan transfer manual. Jam 09.00-21.00 WIB tetap; di luar jam
+itu checkout tidak memiliki metode pembayaran tersedia selama gateway off.
+Tidak ada konflik/input tertunda untuk menonaktifkan pilihan gateway.
+Pemulihan Tokopay dan penerimaan pembayaran nyata masih OPEN. Gateway belum
+boleh dianggap pulih atau diaktifkan kembali hanya dari konektivitas/status
+merchant. Runtime `20261025165636-ec440e5` tetap. Detail [SagaBook](products/sagabook/PRODUCT.md).
+
 ## 2026-10-26 - Kiosk tetap aktif dan layanan printer pulih otomatis: sudah deployed
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Source aktif

@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-309 - Saga Studio transfer manual sementara
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-10-26 |
+| Keputusan | Matikan pilihan payment gateway untuk booking baru Saga Studio Madiun dan pertahankan transfer manual. |
+| Alasan | Instruksi langsung Andreas agar customer memakai transfer manual selama gangguan gateway. |
+| Alternatif | Menunggu pemulihan provider dengan pilihan gateway tetap tampil; tidak dipilih. |
+| Batas dan dampak | Scope studio yang diminta; rekening, QR statis, integrasi bersama dan pengaturan lain tetap. Manual 09.00-21.00 WIB; di luar jam itu tidak ada metode bayar tersedia selama gateway off. Bukti transfer diverifikasi studio. |
+| Pemberi keputusan | Andreas, percakapan langsung. |
+| Status | CONFIRMED / PRODUCTION_CONFIG_ACTIVATED; Owner/DB/public readback dan checkout PASS tanpa membuat booking/order/pembayaran. |
+| Provenance | Runtime tetap 20261025165636-ec440e5, source ec440e5119f145dfe76318f1e81bb641c995ac63; tanpa deploy aplikasi. |
+| Dokumen terkait | [SagaBook](products/sagabook/PRODUCT.md), [Dossier](products/sagabook/DOSSIER.md), [Gaps](GAPS.md) |
+
 ## 2026-10-26 - Penyelesaian dan deploy perbaikan HR serta laporan
 
 CONFIRMED Andreas: selesaikan semua perbaikan absensi/form dan penghambat rilis,

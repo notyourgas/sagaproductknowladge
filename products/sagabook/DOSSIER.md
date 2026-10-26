@@ -1,5 +1,20 @@
 # SagaBook Dossier
 
+## 2026-10-26 - Operasi transfer manual sementara Saga Studio
+
+CONFIRMED / PRODUCTION_CONFIG_ACTIVATED, keputusan Andreas DEC-309.
+Booking baru Saga Studio Madiun hanya menawarkan transfer manual setelah
+pengaturan Owner `qrisEnabled=false`, `manualTransfer=true` tersimpan.
+Jam manual tetap 09.00-21.00 WIB; di luar jam tersebut tidak ada metode bayar
+yang tersedia selama gateway dinonaktifkan. Bukti transfer diverifikasi studio.
+
+Readback Owner/DB/public dan pemilihan manual di checkout PASS; pemeriksaan
+tidak menekan tombol yang membuat booking. Hash seluruh kolom pengaturan selain
+flag gateway/waktu pembaruan identik. Kredensial provider dan integrasi bersama
+tetap; ini pengaturan pilihan checkout khusus studio, bukan pemulihan Tokopay.
+Runtime `20261025165636-ec440e5`, source `ec440e5119f145dfe76318f1e81bb641c995ac63`
+tetap, tanpa deploy aplikasi. Uji pembayaran nyata dan BUSINESS_READY OPEN.
+
 ## 2026-10-26 - UI dan copy bio Saga Studio sesuai status sudah buka
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk [bio Saga Studio](https://sagastudio.site/),
