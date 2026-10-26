@@ -1,5 +1,25 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-26 - Booking dari bio Saga Studio terhubung ke SagaBook
+
+CONFIRMED / PRODUCTION_ACTIVATED khusus tautan booking bio, berdasarkan
+instruksi Andreas dan pemeriksaan runtime. Semua 16 tombol booking pada
+15 halaman [bio Saga Studio](https://sagastudio.site/) kini membuka
+[booking Saga Studio di SagaBook](https://app.sagabook.store/saga).
+Sebelumnya tombol nonaktif dengan alamat lama; konfigurasi bersama kini
+aktif dan keterangan booking/FAQ yang bertentangan sudah disesuaikan.
+Pemilihan paket/frame di bio belum diteruskan sebagai deep link.
+
+Source Git lokal bio `bd80651694e2e1f5a15fd43b17c24fd4b3e882ee`, release
+`20261026-bd80651-booking`; rollback `20261023-37329b9-whatsapp` tersedia.
+Build/check 27 route dan 7/7 tes PASS; assertion 16 tautan, checksum artifact,
+manifest file, 22 route publik dan browser click-through ke empat paket PASS.
+235 file artifact lainnya identik dengan baseline. Production bio berubah;
+source/runtime SagaBook tetap release `20261025165636-ec440e5`. Tidak ada
+perubahan DB/payment/DNS atau booking/pembayaran/pesan customer nyata.
+BUSINESS_READY seluruh studio/produk tidak dinyatakan. Tidak ada blocker
+untuk tautan ini; status pembukaan studio dan konten promo bio tetap terpisah.
+
 ## 2026-10-26 - Form lupa absen dan pengiriman foto diperbaiki di source
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Kandidat gabungan
