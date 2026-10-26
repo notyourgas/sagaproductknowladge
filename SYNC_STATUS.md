@@ -1,5 +1,35 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-27 - Pemulihan layanan printer Chromebook tanpa cetak ulang
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [3d72045](https://github.com/notyourgas/sagaops/commit/3d72045ebdf2a179d0b82c8b8fc4c4c704f156e6),
+rollback terpilih 56371581e67c3f509bd5f2d55971d097bcb5e40b. Schema 37 tetap.
+Perbaikan closing ringkas dan tukar libur sukarela yang sudah aktif tetap terbawa.
+
+[Linux run 40365715750](https://github.com/notyourgas/sagaops/actions/runs/40365715750)
+lulus 238/238, tanpa gagal/dilewati, PostgreSQL 18 dan Chromium; static/type
+1283 modul. Cakupan termasuk HTTP terstruktur/HTML upstream, Retry-After, USB
+sebelum transfer, timeout yang selesai terlambat, koneksi diam, drain transfer,
+dua tab, jeda manual, Owner, lost ACK, unknown hold, offline dan kontrak nota.
+Paket immutable, backup terenkripsi/off-host, disposable restore, rehearsal
+candidate/rollback/candidate dan native activation lulus. Monitor, Owner read-only,
+konfigurasi terlindungi dan aset yang dilayani diverifikasi. Tidak ada transaksi
+production atau TEST fisik dibuat untuk verifikasi. Biaya tambahan Rp0.
+
+Jeda manual, izin tidak sah dan hasil cetak yang tidak pasti tetap menghentikan
+pengiriman; tidak ada TEST, otorisasi ulang atau replay otomatis sebagai pemulihan.
+Timeout USB menahan handle sampai sambungan fisik dilepas dan dipasang kembali.
+Ledger, template aktif, logo, spacing, panjang, footer dan autocut customer/checker/
+closing, harga, promo, QRIS serta jalur pembayaran tidak diubah.
+
+UAT idle/pemulihan pada Chromebook fisik masih OPEN, penanggung jawab Andreas.
+Langkah berikut: muat ulang satu tab layanan saat tidak ada pengiriman aktif,
+mulai sekali bila diminta, lalu periksa pemulihan pada pemakaian sah tanpa membayar
+atau mencetak ulang. Halaman tetap perlu terbuka dan Chromebook menyala; browser
+ditutup atau OS tidur bukan kondisi yang dijanjikan terus mencetak.
+BUSINESS_READY menyeluruh dan exactly-once fisik tidak diklaim.
+
 ## 2026-10-26 - Tukar libur sukarela dengan peringatan hari beruntun
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.

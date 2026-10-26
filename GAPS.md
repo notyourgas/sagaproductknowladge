@@ -1,5 +1,32 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-27 - Pemulihan layanan printer Chromebook tanpa cetak ulang
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [3d72045](https://github.com/notyourgas/sagaops/commit/3d72045ebdf2a179d0b82c8b8fc4c4c704f156e6),
+rollback terpilih 56371581e67c3f509bd5f2d55971d097bcb5e40b. Schema 37 tetap.
+Perbaikan closing ringkas dan tukar libur sukarela yang sudah aktif tetap terbawa.
+
+Sesuai permintaan Andreas agar layanan tidak berhenti pada gangguan sementara,
+pemulihan WebUSB kini mempertahankan niat berjalan, memakai backoff/Retry-After,
+memeriksa koneksi diam, menunggu transfer aktif, dan membedakan status gangguan.
+Tab layanan dipakai ulang dan diagnostik lokal dibatasi tanpa data sensitif.
+Jeda manual, otorisasi dan hasil kertas tidak pasti tetap ditahan. Layout nota,
+printer, checker, closing, tarif dan pembayaran tidak diubah.
+
+Jeda manual, izin tidak sah dan hasil cetak yang tidak pasti tetap menghentikan
+pengiriman; tidak ada TEST, otorisasi ulang atau replay otomatis sebagai pemulihan.
+Timeout USB menahan handle sampai sambungan fisik dilepas dan dipasang kembali.
+Ledger, template aktif, logo, spacing, panjang, footer dan autocut customer/checker/
+closing, harga, promo, QRIS serta jalur pembayaran tidak diubah.
+
+UAT idle/pemulihan pada Chromebook fisik masih OPEN, penanggung jawab Andreas.
+Langkah berikut: muat ulang satu tab layanan saat tidak ada pengiriman aktif,
+mulai sekali bila diminta, lalu periksa pemulihan pada pemakaian sah tanpa membayar
+atau mencetak ulang. Halaman tetap perlu terbuka dan Chromebook menyala; browser
+ditutup atau OS tidur bukan kondisi yang dijanjikan terus mencetak.
+BUSINESS_READY menyeluruh dan exactly-once fisik tidak diklaim.
+
 ## 2026-10-26 - Tukar libur sukarela dengan peringatan hari beruntun
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
