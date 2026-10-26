@@ -1,5 +1,38 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-26 - Kiosk tetap aktif dan layanan printer pulih otomatis: sudah deployed
+
+CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Source aktif
+[6835830](https://github.com/notyourgas/sagaops/commit/683583011d74f089f0bb5a76479db45a852f68ee),
+rollback terpilih f104bd0cbca94fb4619183f65422c44926b8a500. Menggantikan checkpoint
+belum-deploy5e30731; perbaikan absensi dan pemulihan laporan f104bd0 tetap terbawa.
+
+Kiosk terlihat meminta layar tetap menyala. Layanan WebUSB yang sudah dimulai
+menyimpan pilihan berjalan per tab, memeriksa USB/izin/ledger kembali setelah reload,
+USB tersambung atau jaringan pulih. Jeda eksplisit tetap berlaku; izin berakhir,
+pencabutan izin dan hasil fisik tidak pasti tetap menahan pengiriman. ACK dapat
+disinkronkan tanpa mengirim kertas ulang. Tidak ada perubahan layout/feed/autocut,
+commissioning, printer, harga, promo, QRIS atau riwayat transaksi.
+
+[Run Linux](https://github.com/notyourgas/sagaops/actions/runs/40271991414):173PASS/0FAIL/0SKIP,
+build paket immutable dan upload pertama PASS. Status keseluruhan CI tetap
+CI_UPLOAD_CONFLICT karena upload artefak kedua409, bukan dinyatakan green. Paket
+asli diverifikasi checksum dan source; tidak dibangun ulang atau diikat ke bukti lain.
+[87990d0](https://github.com/notyourgas/sagaops/commit/87990d0ca39b84f6f55f7ba168534775050b1f73)
+memperbaiki routing upload, uji lokal1/1PASS, tanpa delta runtime aplikasi.
+
+Backup terenkripsi/offhost dan disposable restore, boot kandidat-rollback-kandidat,
+aktivasi guarded, monitor produksi, delapan aset HTTP sesuai source dan verifikasi
+Owner/native read-only PASS. UI printer1366/390px tanpa overflow/JS error. Source
+mempertahankan schema37, pembayaran terverifikasi server dan perbaikan laporan;
+tidak membuat transaksi/pembayaran/TEST fisik.
+
+Saat sepi: reload Kiosk dan printer-service sekali, Mulai layanan sekali, biarkan
+tab printer terbuka dan Kiosk terlihat. Jangan pairing ulang atau hapus data browser;
+selesaikan/sinkronkan sesi offline sebelum reload. Browser tetap tunduk pada baterai,
+kebijakan daya, sleep/lock, Chrome ditutup dan tab dibuang OS. UAT idle/pemulihan
+fisik Chromebook oleh Andreas OPEN; bukan seluruh produk BUSINESS_READY.
+
 ## 2026-10-26 - Perbaikan absensi aktif; penghambat laporan dipulihkan
 
 CONFIRMED / PRODUCTION_DEPLOYED / FEATURE_AVAILABLE. Aplikasi aktif
