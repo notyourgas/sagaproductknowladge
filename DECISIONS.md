@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-27 - Kalender harian Admin Studio menampilkan masuk dan libur
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [d6aab1e](https://github.com/notyourgas/sagaops/commit/d6aab1eb327644ed58e381217dc83ea045625c1e),
+rollback terpilih 41095e4ca48c59990ec1fe7309af63060cdd4dcd. Schema 37 tetap.
+
+ID: DEC-SAGAPOS-ADMIN-DAILY-CALENDAR-20261027-01. Tanggal: 27 Oktober 2026 WIB.
+Pemberi keputusan: Andreas. Status: CONFIRMED. Keputusan: tampilan jadwal Admin
+Studio serupa Barista agar per hari terlihat siapa masuk dan siapa libur. Alasan:
+daftar shift per orang sulit dipakai membaca pembagian harian. Alternatif tetap
+memakai daftar ditinggalkan. Dampak: kalender dan pembacaan periode ditambahkan;
+form tulis, data tersimpan, payroll dan kalender Barista tetap. Dokumen:
+products/sagaops/PRODUCT.md dan products/sagaops/CHANGELOG.md.
+
 ## 2026-10-27 - Jadwal Admin Studio dipindah ke Jadwal dan shift
 
 ID: DEC-SAGAPOS-ADMIN-SCHEDULE-NAV-20261027-01. Tanggal: 27 Oktober 2026 WIB.

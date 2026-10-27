@@ -1,5 +1,46 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-27 - Kalender harian Admin Studio menampilkan masuk dan libur
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
+Source [d6aab1e](https://github.com/notyourgas/sagaops/commit/d6aab1eb327644ed58e381217dc83ea045625c1e),
+rollback terpilih 41095e4ca48c59990ec1fe7309af63060cdd4dcd. Schema 37 tetap.
+
+Tim & HR -> Jadwal & shift -> Admin Studio menampilkan kalender staf per tanggal
+di desktop dan rincian harian Pagi, Sore, Libur / tanpa shift serta Izin / tidak
+tersedia di HP. Default minggu berjalan; tersedia pilihan Bulan/Minggu, navigasi
+minggu, filter admin, dan form Tambah jadwal admin yang sama. Kalender Barista
+tetap terpisah. Label Libur / tanpa shift mengacu pada tidak adanya penempatan
+pada tanggal yang sudah memiliki jadwal; tanggal kosong adalah Belum dijadwalkan.
+
+Tampilan menggantikan daftar shift per orang menjadi kalender serupa Barista.
+Owner dapat membaca siapa yang masuk dan tidak ditempatkan pada setiap hari.
+Endpoint GET admin-schedules membaca satu periode terbatas dari database dengan
+scope organisasi/outlet/Staff Admin. Jadwal dibatalkan dikecualikan; approved
+absence dan ketidaktersediaan dibaca terpisah. Pembacaan tidak lagi bergantung
+pada snapshot terbaru/mendatang yang dibatasi 150 jadwal seluruh tim.
+
+Hari tanpa penempatan tidak otomatis menjadi catatan libur resmi. Untuk jadwal
+manual lama, Libur / tanpa shift adalah label tampilan bagi admin aktif tanpa
+penempatan ketika tanggal itu sudah memiliki shift. Tanggal sebelum pembuatan
+akun serta staf nonaktif tanpa shift tidak disimpulkan libur. Tanggal seluruhnya
+kosong ditandai Belum dijadwalkan. Tidak ada perubahan absensi/payroll atau
+pembuatan catatan libur dari label ini. Jadwal/perubahan tersimpan tetap memakai
+form dan validasi native; tidak ada generator Admin baru atau migrasi schema.
+Respons bulan lama diabaikan jika pilihan/scope berubah. Gagal membaca periode
+menampilkan error dan Coba lagi tanpa menampilkan bulan lain sebagai periode itu.
+
+[Linux run 40374817694](https://github.com/notyourgas/sagaops/actions/runs/40374817694):
+122 PASS / 0 FAIL / 0 SKIP, PostgreSQL 18/Chromium dan static/type 1284 modul.
+Mencakup kalender penuh di luar batas snapshot 150 jadwal, isolasi role,
+Pagi/Sore/libur/izin, tanggal kosong, filter, bulan/minggu, error/retry,
+320/390/1280 layout, aksesibilitas tabel, validasi periode/query serta anonymous
+rejection, form simpan dan preservasi jadwal sebelumnya. Rehearsal backup
+terenkripsi mem-boot kandidat dan rollback pada database hasil restore disposable.
+Bloker kapasitas dan persetujuan cleanup sebelumnya sudah ditutup; batas kapasitas lulus tanpa bypass. Production Owner UI/health/aset/auth boundary serta invariants data lulus secara
+read-only. Tidak membuat jadwal nyata saat smoke. UAT HP Owner fisik masih OPEN;
+tidak ada klaim BUSINESS_READY seluruh produk.
+
 ## 2026-10-27 - Kiosk menunggu layanan printer sebelum pemesanan
 
 CONFIRMED / SOURCE_IMPLEMENTED / LINUX_QUALIFIED / IMPLEMENTED_NOT_DEPLOYED.
