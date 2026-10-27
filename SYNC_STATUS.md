@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-27 - Checkpoint 3ee: aplikasi aktif, menu Coming Soon belum terbit
+
+CONFIRMED. Source3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED, Linux40447479311 lulus97tes/0fail/0skip, static1291/schema37. Native pemulihan dan aktivasi GATEWAY lulus. Relay printer dan HR sama dengan fe51; pemeriksaan browser produksi printer lintas alamat pada3ee serta konfigurasi printer/template/checker/QRIS lulus. UAT fisik dan pengamatan bootstrap sebelumnya tetap terbuka; bukan BUSINESS_READY seluruh produk.
+
+Publikasi Bagel/Cake Coming Soon BELUM TERBIT. Pelanggan tetap melihat publikasi13. Workspace134 berisi satu draf kategori yang belum diterbitkan; keempat produk Bagel masih archived, Cake belum dibuat. Penulisan produk gagal dan read-back memastikan tidak ada duplikasi atau perubahan stok fisik/HPP/order/payment/print dari task ini.
+
+Source menggunakan kompresi lossless LZ4 khusus transaksi JSONB, dengan waktu statement45detik dan tunggu kunci3detik. Nativefixture memastikan isi riwayat, konflik, rollback dan pengembalian setting tetap benar. Namun fixture1GiB tidak membuktikan kecukupan batas memori PostgreSQL produksi256MiB soft/384MiB hard. Observasi aktual membuktikan proses tertahan pada mem_cgroup_handle_over_high. Percobaan burst singkat di dalam hardlimit384MiB memicu OOM dan restart otomatis database, disusul satu restart aplikasi. Penulisan dihentikan; tidak ada restore database dari backup.
+
+Batas semula256/384MiB dan CPU dipulihkan. Native monitor pascapemulihan lulus pada source3ee/readytrue/schema37/GATEWAY, dengan read-back katalog tetap134/draft1/publikasi13. Proposal memakai sementara hardlimit1GiB selama maksimal5menit, lalu mengembalikannya, MENUNGGU PERSETUJUAN ANDREAS. Belum dijalankan. Tidak membeli kapasitas atau mengubah batas aplikasi. Riwayat kegagalan dipertahankan; tidak ada izin untuk mencoba ulang tanpa keputusan batas kapasitas ini.
+
+Rollback terpilihfe51 dan fallback tambahanD6 tetap disimpan; rujukan pemulihan yang dipin tetap dilindungi. Checkpoint ini menggantikan dugaan bahwa batas waktu atau kompresi saja sudah menutup blocker publikasi.
+
 ## 2026-10-27 - Checkpoint HR dan printer aktif, publikasi Coming Soon tertahan
 
 CONFIRMED. Source fe5187351ffac7906fc6a04f4dd2eb0eacc16f05 sudah PRODUCTION_DEPLOYED dan PRODUCTION_ACTIVATED. Linux40444406427 lulus97tes/0fail/0skip; pemulihan native dan aktivasi GATEWAY/schema37 lulus. HR harian Staff dan kalender Admin dipertahankan;13aset HR dan pemeriksaan Owner/mobile lulus tanpa perubahan jadwal, rate atau policy.
