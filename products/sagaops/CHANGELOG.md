@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-10-27 - Batas tukar shift biasa Staff Admin terkonfirmasi
+
+CONFIRMED / SOURCE_VERIFIED / DISPOSABLE_VALIDATED pada source3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e. Tukar libur Barista dan Staff Admin serta tukar shift biasa Barista lolos enam pengujian disposable yang dilaporkan task HR. Jadwal dan roster yang terkait baru berubah setelah rekan menerima dan Owner menyetujui; sebelum kedua persetujuan itu jadwal asli tetap. Tampilan Staff perlu refresh untuk memuat perubahan server.
+
+Tukar shift biasa antar Staff Admin BELUM BERFUNGSI sampai persetujuan akhir. Pengajuan dan penerimaan rekan dapat berhasil, tetapi Owner ACC ditolak dengan swap_staff_ineligible. Satu pengujian disposable tambahan direproduksi secara independen dan memastikan kedua jadwal tidak berubah. Penyebab pada src/services/native-staff.mjs: applyScheduleSwap(dayOff=false) masih memakai rosterRoles untuk barista/kitchen; jalur day_off_swap terpisah sudah mencakup staff_admin. Jangan menyamakan dukungan tukar libur Admin dengan dukungan tukar shift biasa Admin.
+
+Ini pencatatan keterbatasan, bukan perbaikan atau rilis fitur baru. Tidak ada persetujuan pengajuan produksi, perubahan data/source/runtime, atau perubahan batas memori. Pencatatan ini tidak mengubah status publikasi Bagel/Cake yang masih menunggu penyelesaian blocker kapasitas. UAT pertukaran jadwal nyata/perangkat Staff tetap OPEN.
+
 ## 2026-10-27 - Checkpoint 3ee: aplikasi aktif, menu Coming Soon belum terbit
 
 CONFIRMED. Source3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED, Linux40447479311 lulus97tes/0fail/0skip, static1291/schema37. Native pemulihan dan aktivasi GATEWAY lulus. Relay printer dan HR sama dengan fe51; pemeriksaan browser produksi printer lintas alamat pada3ee serta konfigurasi printer/template/checker/QRIS lulus. UAT fisik dan pengamatan bootstrap sebelumnya tetap terbuka; bukan BUSINESS_READY seluruh produk.
