@@ -1,5 +1,33 @@
 # Portfolio Changelog
 
+## 2026-10-27 - Selisih kertas closing mengikuti pemakaian manual
+
+CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Andreas meminta selisih kertas
+langsung berubah setelah input rusak/gagal atau pemakaian manual diubah.
+Contoh: sisa sistem100, fisik97, rusak2 menghasilkan selisih-1; tambahan
+Invitation manual1 menghasilkan0. Menghapus input mengembalikan selisih.
+
+Source [34dcf2a](https://github.com/notyourgas/sagabook/commit/34dcf2af0dd11b0f4db150be6c88e2cd44fa6362).
+Form Owner/Staff dan Laporan, validasi alasan selisih, penjagaan saldo nonnegatif,
+serta preview teks/gambar memakai perubahan jumlah manual terhadap snapshot
+server. Jumlah manual yang sudah tersimpan tidak dihitung dua kali. Booking
+Invitation selesai tetap masuk konsumsi otomatis menurut aturan paket/add-on;
+kolom Invitation manual hanya untuk pemakaian tambahan di luar booking tersebut.
+Packaging dan perhitungan keuangan tetap. Tidak ada perubahan backend, schema
+atau dependency; server tetap menghitung ulang dan mencatat ledger saat submit.
+
+17 tes kontrak, TypeScript UIUX, build dan12/12 skenario browser sintetis
+desktop/mobile Owner, Staff dan Laporan PASS, termasuk buka ulang, sinkronisasi
+serta pindah tanggal. Belum mengubah stok asli atau submit closing asli.
+Native release `20261027054325-34dcf2a` aktif; rollback kode
+`20261026073856-f866f92` tersedia dan kompatibel. Backup terenkripsi/offsite,
+checksum, disposable restore MySQL, native gate wajib dan public smoke PASS.
+Verifier independen23/23 PASS; hash source terkait dan aset closing publik cocok
+dengan release aktif. CI hosted tidak dijalankan; memakai runner lokal kanonik.
+Closing Operasional cabang yang dilaporkan teramati aktif; task ini tidak mengubah
+feature flag. UAT form production berlogin OPEN karena sesi browser lokal
+kedaluwarsa; penerimaan closing asli tetap terpisah. Bukan BUSINESS_READY.
+
 ## 2026-10-27 - Checkpoint 3ee: aplikasi aktif, menu Coming Soon belum terbit
 
 CONFIRMED. Source3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e PRODUCTION_DEPLOYED/PRODUCTION_ACTIVATED, Linux40447479311 lulus97tes/0fail/0skip, static1291/schema37. Native pemulihan dan aktivasi GATEWAY lulus. Relay printer dan HR sama dengan fe51; pemeriksaan browser produksi printer lintas alamat pada3ee serta konfigurasi printer/template/checker/QRIS lulus. UAT fisik dan pengamatan bootstrap sebelumnya tetap terbuka; bukan BUSINESS_READY seluruh produk.

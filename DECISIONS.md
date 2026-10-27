@@ -1,5 +1,16 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## 2026-10-27 - Selisih kertas closing dihitung ulang saat input manual berubah
+
+ID: DEC-SAGABOOK-CLOSING-LIVE-VARIANCE-20261027-01. CONFIRMED, Andreas.
+Selisih menampilkan sisa yang belum dijelaskan: kekurangan3 dan rusak2 menjadi
+kekurangan1; Invitation manual1 lagi menjadi0. Preview dan validasi mengikuti
+angka tersebut tanpa menunggu simpan/submit. Jumlah manual tersimpan serta
+pemakaian booking selesai tidak dihitung dua kali. Keputusan ini tidak mengubah
+aturan konsumsi paket, hak akses, approval, stok asli atau activation cabang.
+Implementasi source [34dcf2a](https://github.com/notyourgas/sagabook/commit/34dcf2af0dd11b0f4db150be6c88e2cd44fa6362),
+LOCAL_VALIDATED; status rilis mengikuti products/sagabook/PRODUCT.md.
+
 ## 2026-10-27 - Kalender harian Admin Studio menampilkan masuk dan libur
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
