@@ -1,5 +1,30 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-27 - Perbaikan pertukaran shift Staff Admin siap rilis
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `5e11a49ab6d3fca5dbf1387a41a0affc52d74f16` memperbaiki
+penolakan `swap_staff_ineligible` untuk pertukaran shift biasa sesama Staff Admin.
+Jadwal dan roster terkait berpindah atomik setelah rekan menerima dan Owner
+menyetujui; sebelum itu jadwal tetap. Fee mengikuti staf masing-masing, dan
+pilihan rekan terpisah antara Admin dan Barista. Role generator roster Barista,
+batas waktu/konflik, serta persetujuan independen tetap dipertahankan.
+
+Exact-source Linux PostgreSQL18/Chromium run40482212777 SUCCESS:112 PASS,
+0 FAIL,0 SKIP, termasuk pertukaran Admin satu hari/beda hari, fee, isolasi tim,
+roster terpublikasi, dan rollback transaksi saat audit gagal.
+[Source perbaikan](https://github.com/notyourgas/sagaops/commit/5e11a49ab6d3fca5dbf1387a41a0affc52d74f16)
+dan [kualifikasi](https://github.com/notyourgas/sagaops/actions/runs/40482212777).
+
+Runtime masih `3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e`; perbaikan Admin
+BELUM AKTIF. Deploy tertahan kapasitas storage85 dan menunggu izin eksplisit
+arsip/pembersihan bahan lama; pengaman kapasitas tidak dilewati. Katalog142/
+publikasi14, printer, aturan absensi, serta batas resource tetap dipertahankan.
+Koreksi jadwal/libur dan absensi operasional yang diminta Owner telah diterapkan
+terpisah dengan audit, jam kedatangan yang dikonfirmasi, dan read-back Owner API;
+koreksi langsung Owner ini bukan bukti penerimaan rekan di alur Staff.
+UAT HP staf fisik dan pertukaran Admin nyata setelah rilis tetap OPEN.
+Tidak ada klaim BUSINESS_READY menyeluruh.
+
 ## 2026-10-27 - Rilis gabungan Coming Soon, pengaman printer dan absensi hari ini
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED khusus katalog.
