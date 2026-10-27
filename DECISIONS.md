@@ -1,5 +1,22 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-312 - Memori database sementara untuk publikasi menu
+
+CONFIRMED. Andreas, 27 Oktober 2026, memberi persetujuan langsung untuk
+menaikkan sementara maksimum database dari384MiB ke1GiB selama maksimal5menit,
+lalu mengembalikannya. Eksekusi aktual262detik, soft256MiB/hard384MiB kembali
+berlaku, CPU dan batas aplikasi tetap. Tidak membeli kapasitas baru.
+Persetujuan ini tidak mengizinkan kenaikan permanen atau penghapusan folder lama.
+Publikasi katalog14 berhasil pada source3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e.
+
+## DEC-311 - Bagel dan Cake Coming Soon
+
+CONFIRMED. Andreas, 27 Oktober 2026: munculkan Bagel dan Cake pada Kiosk,
+Kasir dan e-menu; Cake berisi Cheesecake dan Tiramisu Cake, semuanya masih
+Coming Soon. Menu terlihat tetapi tidak bisa dipesan; harga Cake belum
+ditetapkan. Source 3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e, katalog 142/publikasi
+14. Tidak ada perubahan stok fisik/HPP.
+
 ## 2026-10-27 - Selisih kertas closing dihitung ulang saat input manual berubah
 
 ID: DEC-SAGABOOK-CLOSING-LIVE-VARIANCE-20261027-01. CONFIRMED, Andreas.

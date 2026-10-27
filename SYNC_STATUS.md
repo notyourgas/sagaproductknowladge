@@ -1,5 +1,82 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-27 - Rilis gabungan Coming Soon, pengaman printer dan absensi hari ini
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED khusus katalog.
+Bagel kembali tampil dengan empat varian existing. Kategori Cake berisi
+Cheesecake dan Tiramisu Cake. Keenam produk ditampilkan konsisten di Kiosk,
+Kasir dan e-menu dengan tulisan Coming Soon, tanpa harga pada kartu dan
+belum dapat dipesan. Harga Cake belum ditetapkan; nilai internal nol hanya
+merepresentasikan harga belum diisi pada status ini, bukan harga jual gratis.
+Validasi server menolak pemesanan dan aktivasi tanpa harga yang sah.
+
+Source `3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e`, katalog 142, publikasi
+14. Linux 97 pengujian PASS (run40447479311); publikasi, pemulihan state,
+penolakan pemesanan/aktivasi tanpa harga, dan Chromium pada tiga layar fixture PASS.
+Browser produksi Kiosk1366/720 dan e-menu untuk Bagel4/Cake2 serta detailCake
+lulus. Kasir diverifikasi melalui API produksi; browser Kasir termasuk fixture
+kualifikasi, bukan klaim UAT browser Kasir produksi.
+Read-back katalog Kiosk, Kasir dan e-menu aktif PASS. Harga/menu lain dan
+promo dipertahankan. Stok fisik dan HPP tidak berubah; tidak membuat order,
+pembayaran atau print TEST. Bukan penilaian BUSINESS_READY seluruh produk;
+foto Cake dan kesiapan penjualan Cake masih belum ditetapkan.
+
+Absensi beranda Staff kini mengikuti hari Asia/Jakarta yang sedang berjalan,
+untuk Barista dan Admin. Shift hari ini tetap ditampilkan saat jendela check-in
+terlewat; absensi selesai tetap selesai; tanpa jadwal hari ini menampilkan
+Tidak ada jadwal hari ini. Selamat berlibur. Jadwal tanggal lain dapat dibuka
+melalui pintasan kalender. Kembali ke aplikasi dan pergantian hari memperbarui
+tampilan; absensi lama yang belum ditutup tetap memerlukan koreksi oleh Owner.
+Aturan jam, policy, pay-rate dan fakta absensi tidak diubah oleh rilis ini.
+
+Kiosk yang sudah dipasangkan ke WebUSB menahan interaksi saat layanan lokal
+pada Chrome/profile dan outlet yang sama belum siap. Status dari layanan Dashboard
+ke alamat Kiosk diteruskan lewat relay pasif yang dibatasi pada dua alamat resmi.
+Uji lintas alamat, status aktif/jeda/scope salah/kedaluwarsa serta Nginx PASS. Peringatan terpusat
+menggantikan popup idle. Keranjang/pembayaran pending atau belum pasti tetap
+dipertahankan; reset privasi sebelum pembayaran tetap berjalan. Layout nota,
+RAW, spacing, feed dan cut tidak berubah. Layanan printer dan Kiosk perlu satu
+kali reload tenang; tidak memerlukan pairing ulang atau print TEST. Ini bukti
+fitur, bukan bukti kertas/hardware; UAT Chromebook/fisik dan HP pelapor masih OPEN.
+
+Andreas telah menyetujui kenaikan sementara batas memori database untuk
+menyelesaikan publikasi. Maksimum1GiB digunakan262detik (4menit22detik), lalu
+dikembalikan ke soft256MiB/hard384MiB; CPU dan batas aplikasi512/768MiB tetap.
+Reklamasi cache file kernel dipakai sebelum penurunan hardlimit, tanpa restart
+baru, penghapusan data database atau restore dari backup. Tidak ada kenaikan
+kapasitas berbayar atau kebijakan memori permanen. Kebutuhan kapasitas untuk
+penulisan katalog besar berikutnya tetap perlu ditangani; burst sekali ini
+bukan perbaikan permanen atas batas memori produksi.
+
+Health source3ee/readytrue/schema37/GATEWAY lulus setelah pemulihan batas.
+Monitor kanonik pascapublikasi masih memberi blocker ruang disk85persen;
+ini OPEN untuk promotion berikutnya, bukan klaim semua gate produksi lulus.
+Salinan lengkap kode lama41095 beserta metadata sudah disimpan dan diverifikasi
+di luar server, tetapi folder execution server tetap dipertahankan karena
+belum ada otorisasi penghapusan folder tersebut. Database/backup tidak dihapus.
+Keterbatasan tukar shift biasa Staff Admin pada checkpoint3ee tetap OPEN;
+rilis menu ini tidak memperbaiki atau menguji ulang pertukaran nyata HR.
+Pengamatan bootstrap awal pada rilis sebelumnya belum punya penyebab yang
+dipastikan, meskipun uji lintas alamat terbaru lulus.
+
+Source gabungan mempertahankan kalender Admin D6 yang sudah aktif dan
+menggabungkan input menu c351f27, printer38f9 serta Staff harian cd0b0ce4.
+Koreksi printer ef249 menutup regresi lintas alamat yang ditemukan pada9c;
+9c sempat aktif namun katalog belum diterbitkan. Pemulihan reverse keD6 gagal
+dan runner memulihkan9c; histori gagal tetap dipertahankan. Kandidat akhir
+menggunakan pemulihan baru yang terikat pada pasangan source yang sebenarnya.
+Penyimpanan katalog besar memakai kompresi LZ4 lossless khusus transaksi,
+tanpa mengubah format JSONB atau menulis ulang histori. Batas45detik tetap khusus transaksi riwayat,
+dengan batas tunggu kunci3detik. Uji native20MB, konflik versi, pembatalan
+riwayat dan pengembalian batas waktu koneksi PASS; trigger audit tetap aktif.
+Dua tes browser legacy dikoreksi lewat3c6dedf8 tanpa mengurangi assertion.
+Review terpisah HR dan printer PASS pada blob aplikasi yang sama; perubahan test fixture koneksi tidak mengubah aplikasi.
+Native
+pemulihan candidate/rollback/candidate dan aktivasi kanonik PASS. Milestone ini
+menggantikan status belum ter-deploy pada checkpoint source-only sebelumnya
+untuk ketiga perubahan tersebut. Bukan audit keamanan mendalam atau penilaian
+BUSINESS_READY seluruh produk.
+
 ## 2026-10-27 - Batas tukar shift biasa Staff Admin terkonfirmasi
 
 CONFIRMED / SOURCE_VERIFIED / DISPOSABLE_VALIDATED pada source3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e. Tukar libur Barista dan Staff Admin serta tukar shift biasa Barista lolos enam pengujian disposable yang dilaporkan task HR. Jadwal dan roster yang terkait baru berubah setelah rekan menerima dan Owner menyetujui; sebelum kedua persetujuan itu jadwal asli tetap. Tampilan Staff perlu refresh untuk memuat perubahan server.
