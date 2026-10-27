@@ -1,5 +1,37 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-27 - Pertukaran shift biasa Staff Admin aktif di production
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source
+`5e11a49ab6d3fca5dbf1387a41a0affc52d74f16`; rollback kode
+`3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e` tersedia. Catatan
+IMPLEMENTED_NOT_DEPLOYED dan blocker kapasitas rilis ini pada checkpoint
+sebelumnya menjadi histori, digantikan hasil aktivasi ini.
+
+Tukar shift biasa sesama Staff Admin kini dapat melewati ACC Owner. Setelah
+rekan menerima dan Owner menyetujui, kedua jadwal dan roster terkait berpindah
+atomik; fee tetap mengikuti staf masing-masing. Pilihan rekan dipisahkan dari
+Barista. Pergantian ditampilkan saat data Staff dimuat ulang. Generator roster
+Barista, pemeriksaan jadwal mulai/absensi/konflik dan persetujuan independen
+tetap dipertahankan.
+
+Exact-source Linux PostgreSQL18/Chromium:112 PASS,0 FAIL,0 SKIP
+([run40482212777](https://github.com/notyourgas/sagaops/actions/runs/40482212777)).
+Native admission/stage, uji pemulihan candidate/rollback/candidate dari backup
+terenkripsi pada database disposable, aktivasi dan monitor akhir PASS.
+Health source aktif/schema37/GATEWAY siap. Owner read-back, UI jadwal Admin390px,
+jam kerja, fee, aturan absensi, printer, template nota dan QRIS PASS/terjaga;
+katalog142/publikasi14 serta status Coming Soon tetap dipertahankan.
+
+Penghambat kapasitas rilis ini ditutup melalui arsip offhost terverifikasi dan
+pembersihan dua bahan lama yang disetujui Owner. Batas resource tetap semula;
+aplikasi aktif, rollback dan seluruh backup database dipertahankan. Ini tidak
+mengesahkan kapasitas untuk operasi katalog besar di masa depan.
+Koreksi jadwal/absensi operasional Owner tetap tersimpan; tidak membuat
+persetujuan rekan atau pertukaran Admin produksi fiktif untuk pengujian.
+UAT HP staf dan pertukaran Admin nyata tetap OPEN; BUSINESS_READY menyeluruh
+tidak diklaim. Lihat [source](https://github.com/notyourgas/sagaops/commit/5e11a49ab6d3fca5dbf1387a41a0affc52d74f16).
+
 ## 2026-10-27 - Perbaikan pertukaran shift Staff Admin siap rilis
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `5e11a49ab6d3fca5dbf1387a41a0affc52d74f16` memperbaiki
