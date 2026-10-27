@@ -1,5 +1,15 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-27 - Checkpoint HR dan printer aktif, publikasi Coming Soon tertahan
+
+CONFIRMED. Source fe5187351ffac7906fc6a04f4dd2eb0eacc16f05 sudah PRODUCTION_DEPLOYED dan PRODUCTION_ACTIVATED. Linux40444406427 lulus97tes/0fail/0skip; pemulihan native dan aktivasi GATEWAY/schema37 lulus. HR harian Staff dan kalender Admin dipertahankan;13aset HR dan pemeriksaan Owner/mobile lulus tanpa perubahan jadwal, rate atau policy.
+
+Pengaman printer Kiosk dan relay pasif Dashboard ke alamat Kiosk aktif. Uji browser produksi lintas alamat untuk siap/jeda/scope salah/publisher kedaluwarsa lulus tanpa checkout, pembayaran atau print. Konfigurasi printer/checker/template/QRIS sama dengan baseline sebelum rilis. Satu pengamatan bootstrap awal tidak tersedia masih belum dijelaskan; pengujian terbatas berikutnya lulus. UAT perangkat fisik/Chromebook/HP pelapor tetap OPEN, bukan BUSINESS_READY seluruh produk.
+
+Bagel dan Cake Coming Soon sudah IMPLEMENTED tetapi BELUM DITERBITKAN. Publikasi pelanggan tetap13; workspace134 berisi satu perubahan kategori yang belum terbit. Perubahan produk berikutnya dibatalkan setelah timeout pencatatan riwayat; read-back memastikan produk belum berubah dan tidak ada duplikasi publikasi. Stok fisik/HPP tidak berubah. Koreksi kompresi lossless khusus transaksi pada source3ee0a1bd9a0847ee7c4be952b4d83bc4d9afd26e sedang menjalani kualifikasi exact; bukan status deployed atau hasil yang sudah diterima. Riwayat audit tetap dipertahankan.
+
+Rollback terpilih9c memiliki keterbatasan printer lintas alamat yang sudah diketahui. Paket dan execution D6 tetap disimpan sebagai fallback tambahan sebelum pengaman tersebut; rujukan pemulihan lain yang dipin tetap dilindungi. Kegagalan historis tidak diganti dengan bukti baru atau dinyatakan lulus.
+
 ## 2026-10-27 - Kalender harian Admin Studio menampilkan masuk dan libur
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED / FEATURE_AVAILABLE.
