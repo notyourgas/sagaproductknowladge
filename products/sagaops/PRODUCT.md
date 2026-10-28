@@ -1,5 +1,44 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-28 - QRIS PIN Kiosk dan perbaikan jadwal aktif di production
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source
+`a759f0303b984662639432ef6bf2e9c7857ff266`, rollback kode
+`5e11a49ab6d3fca5dbf1387a41a0affc52d74f16`. Checkpoint SOURCE_ONLY sebelumnya
+untuk QRIS dan HR3047 menjadi histori dan digantikan status aktivasi ini.
+QRIS Kiosk mengisi nominal dari total nota, menyediakan edit opsional, serta
+cukup PIN staf dan konfirmasi tanpa input referensi atau checklist QRIS.
+Selisih nominal tetap ditolak; konfirmasi manual bukan settlement bank otomatis.
+
+Rilis gabungan mempertahankan kalender Admin harian dan kewenangan persetujuan
+konflik Owner setelah rekan menerima, beserta audit dan keutuhan data. Pengaturan
+nota/printer/checker/gambar QRIS identik sebelum-sesudah; RAW, spacing, feed,
+autocut, menu dan harga tidak diubah oleh rilis ini. Jadwal, tarif staf dan aturan
+absensi juga lolos pembandingan sebelum tindakan HR sah yang terpisah.
+
+[Native Linux PostgreSQL18/Chromium run40649346727](https://github.com/notyourgas/sagaops/actions/runs/40649346727)
+159PASS/0FAIL/0SKIP. Uji pemulihan kandidat/versi lama/kandidat pada database
+terisolasi, aktivasi native, monitor, schema37/GATEWAY dan health PASS.
+Pemeriksaan aktual browser Kiosk1366/720, form QRIS dan modul tersaji cocoksource;
+pengunci printer lintas-origin PASS dengan sinyal sintetis, bukan bukti kertas.
+Owner jadwal390px,13aset HR dan batas akses PASS. Tidak ada transaksi palsu,
+pembayaran, atau TEST fisik produksi dibuat oleh task QRIS.
+
+Andreas memberi instruksi langsung untuk melanjutkan deploy setelah blocker
+kapasitas. Dua versi lama beserta paketnya baru dibersihkan setelah arsip lengkap
+terenkripsi diverifikasi hash dan dibandingkan ulang dengan server. Versi aktif,
+rollback, database dan backup dipertahankan. Gate kapasitas normal kemudian
+lolos tanpa mengubah ambang. Media84% tetap dekat batas85%; kebutuhan kapasitas
+rilis berikutnya tetap harus diperiksa. UAT pembayaran sah/Chromebook fisik untuk
+versi baru masih OPEN; BUSINESS_READY seluruh produk tidak diklaim.
+
+Task HR kemudian memverifikasi dan menyetujui satu pengajuan produksi sah yang
+sudah diterima rekan. Pertukaran jadwal atomik, snapshot tarif mengikuti staf,
+peringatan konflik dan actor Owner tercatat, serta hasil API/SQL/kalender
+390/1280px PASS. Tidak membuat pengajuan, persetujuan rekan, atau absensi palsu.
+UAT HP staf fisik tetap OPEN; detail personal pengajuan tidak dipublikasikan.
+
+
 ## 2026-10-28 - Konfirmasi QRIS Kiosk mengikuti nota dan PIN staf
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Atas permintaan Andreas, form QRIS manual

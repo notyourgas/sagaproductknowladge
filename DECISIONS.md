@@ -12,6 +12,11 @@ Alternatif wajib mengetik nominal/referensi dan checklist digantikan untuk
 mengurangi pekerjaan berulang. Source `a759f0303b984662639432ef6bf2e9c7857ff266`,
 IMPLEMENTED_NOT_DEPLOYED; Linux159PASS, kapasitas/aktivasi mengikuti PRODUCT.
 Tidak mengubah layout nota atau printer; keputusan HR DEC-313 tetap berlaku.
+Pembaruan eksekusi28Oktober2026: dicakup source gabungan
+`a759f0303b984662639432ef6bf2e9c7857ff266`, PRODUCTION_ACTIVATED,
+Linux159PASS dan verifikasi native/Owner/browser PASS. Status
+IMPLEMENTED_NOT_DEPLOYED di atas adalah checkpoint historis sebelum aktivasi.
+
 
 ## DEC-313 - Owner dapat menerima konflik pertukaran yang disepakati staf
 
@@ -25,6 +30,15 @@ Dampak: keputusan dan pengalaman persetujuan HR serta kalender Admin diperbaiki.
 Source3047ccbcae9559a98f9f50f18e771b71c2127f6e/NATIVE_VALIDATED147PASS,
 IMPLEMENTED_NOT_DEPLOYED. Status aktivasi mengikuti products/sagaops/PRODUCT.md.
 Dokumen: products/sagaops/PRODUCT.md, products/sagaops/CHANGELOG.md, GAPS.md.
+Pembaruan eksekusi28Oktober2026: dicakup source gabungan
+`a759f0303b984662639432ef6bf2e9c7857ff266`, PRODUCTION_ACTIVATED,
+Linux159PASS dan verifikasi native/Owner/browser PASS. Status
+IMPLEMENTED_NOT_DEPLOYED di atas adalah checkpoint historis sebelum aktivasi.
+
+Validasi Owner pada satu pengajuan produksi sah setelah penerimaan rekan
+PASS: pertukaran atomik, kepemilikan tarif, peringatan audit, readback API/SQL
+dan kalender390/1280. Tidak membuat persetujuan rekan atau absensi palsu.
+
 
 ## DEC-312 - Memori database sementara untuk publikasi menu
 

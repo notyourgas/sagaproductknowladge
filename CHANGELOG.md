@@ -1,5 +1,21 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-28 - Aktivasi QRIS PIN Kiosk dan jadwal Admin
+
+CONFIRMED / PRODUCTION_ACTIVATED: `a759f0303b984662639432ef6bf2e9c7857ff266`,
+rollback5e11a49. QRIS Kiosk memakai nominal nota otomatis/edit opsional,
+PIN+konfirmasi, tanpa kolom referensi/checklist. HR3047 ikut aktif; nota, printer,
+checker, menu dan tarif tetap. Linux159PASS, recovery/activation/monitor dan
+pemeriksaan browser/form/aset/invariants PASS. Catatan SOURCE_ONLY sebelumnya
+historis. Kapasitas saat ini lolos setelah pengarsipan lengkap dua versi lama;
+media84% tetap dipantau. UAT pembayaran nyata/fisik versi baru OPEN, bukan
+BUSINESS_READY seluruh produk. Detail: products/sagaops/PRODUCT.md.
+
+HR juga menutup satu persetujuan Owner pada pengajuan sah yang sudah disepakati
+rekan: perubahan atomik, kepemilikan tarif dan peringatan audit terverifikasi,
+kalender390/1280PASS. UAT HP staf fisik tetap OPEN.
+
+
 ## 2026-10-28 - QRIS Kiosk: total nota otomatis, konfirmasi PIN
 
 CONFIRMED, keputusan Andreas28Oktober. Source `a759f0303b984662639432ef6bf2e9c7857ff266`
