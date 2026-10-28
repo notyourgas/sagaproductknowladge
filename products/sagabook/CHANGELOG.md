@@ -1,5 +1,15 @@
 # SagaBook Changelog
 
+## 2026-10-28 - Uji ulang QRIS masih belum menghasilkan QR
+
+CONFIRMED, permintaan Andreas untuk memastikan pemulihan provider. Satu uji
+Rp10.000 tanpa dibayar pada 10.42 WIB gagal dengan status0, tanpa QR/link bayar/
+ID transaksi; lookup sebelum/sesudah negatif. Gateway tetap off/manual on,
+tanpa booking, konfigurasi berubah atau deploy. Runtime `20261027054325-34dcf2a`.
+PROVIDER_QR_ACCEPTANCE_OPEN; akar masalah provider belum terverifikasi. Izin uji
+terkonsumsi, tanpa retry otomatis. PRODUCT/DOSSIER, master, GAPS, portfolio/root
+changelog dan SYNC_STATUS diperbarui; BUSINESS_READY tetap OPEN.
+
 ## 2026-10-27 - Selisih kertas closing mengikuti pemakaian manual
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Andreas meminta selisih kertas

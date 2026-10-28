@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-28 - SagaBook: sinkronisasi uji QRIS belum pulih
+
+Accepted / CONFIRMED: uji tunggal Rp10.000 tanpa dibayar yang diminta Andreas,
+10.42 WIB, gagal tanpa QR/link bayar/ID transaksi dan lookup sebelum/sesudah
+negatif. Runtime `20261027054325-34dcf2a`; gateway tetap off/manual on, tanpa
+booking, perubahan pengaturan atau deploy. Provider recovery/penyebab internal
+dan BUSINESS_READY OPEN; tanpa retry otomatis. Delapan dokumen terdampak pada
+main HEAD; validasi knowledge/link/public-safety/diff sebelum commit/push.
+
 ## 2026-10-27 - Pertukaran shift biasa Staff Admin aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source

@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-28 - QRIS SagaBook belum pulih pada uji baru
+
+CONFIRMED: satu uji QRIS Rp10.000 tanpa dibayar atas permintaan Andreas pada
+10.42 WIB gagal, tanpa QR/link bayar/ID transaksi; lookup sebelum/sesudah negatif.
+Gateway booking tetap off/manual on. Runtime `20261027054325-34dcf2a`, tanpa
+booking, perubahan pengaturan atau deploy. Pemulihan/penyebab internal provider
+dan BUSINESS_READY OPEN; tidak ada retry otomatis. [Bukti status](products/sagabook/PRODUCT.md).
+
 ## 2026-10-27 - Pertukaran shift biasa Staff Admin aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source

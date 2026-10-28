@@ -1,5 +1,15 @@
 # SagaBook Dossier
 
+## 2026-10-28 - Bukti order API QRIS masih gagal
+
+CONFIRMED, uji baru yang diminta Andreas: tepat satu permintaan QRIS Rp10.000
+pada 10.42 WIB, tanpa pembayaran, memakai kredensial production dalam memori.
+Lookup referensi baru negatif sebelum/sesudah; provider status0 dan tidak ada
+QR/link bayar/ID transaksi. Pesan internal penyebab belum terverifikasi dan
+tidak diasumsikan sama dengan error historis. PROVIDER_QR_ACCEPTANCE_OPEN.
+Runtime `20261027054325-34dcf2a`; gateway booking tetap off/manual on. Tidak ada
+booking, pembayaran, perubahan pengaturan atau deploy; tidak ada retry otomatis.
+
 ## 2026-10-27 - Selisih kertas closing mengikuti pemakaian manual
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Andreas meminta selisih kertas

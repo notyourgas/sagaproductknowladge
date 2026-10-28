@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-10-28 - SagaBook: QRIS masih gagal pada uji baru
+
+CONFIRMED, satu uji Rp10.000 tanpa dibayar atas permintaan Andreas, 10.42 WIB:
+status0, tanpa QR/link bayar/ID transaksi dan lookup sebelum/sesudah negatif.
+Gateway tetap off/manual on; tanpa booking, perubahan pengaturan atau deploy.
+Runtime `20261027054325-34dcf2a`; provider recovery dan BUSINESS_READY OPEN.
+Tidak ada retry otomatis. [Detail](../products/sagabook/PRODUCT.md).
+
 ## 2026-10-27 - Pertukaran shift biasa Staff Admin aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source

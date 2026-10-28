@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-28 - QRIS SagaBook: uji baru gagal, provider recovery OPEN
+
+CONFIRMED: satu uji QRIS Rp10.000 tanpa dibayar yang diminta Andreas pada
+10.42 WIB tetap tidak menghasilkan QR/link bayar/ID transaksi; status0 dan
+lookup sebelum/sesudah negatif. Hasil terbaru tidak menetapkan penyebab internal
+atau menyamakan error dengan histori. Gateway tetap off/manual on, tanpa deploy
+atau perubahan pengaturan pada runtime `20261027054325-34dcf2a`.
+Next action: penjelasan/koreksi provider sebelum evaluasi aktivasi; izin uji ini
+terkonsumsi, tanpa retry otomatis. [SagaBook](products/sagabook/PRODUCT.md).
+
 ## 2026-10-27 - Pertukaran shift biasa Staff Admin aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source

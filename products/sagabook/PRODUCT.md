@@ -1,5 +1,17 @@
 # SagaBook Product Knowledge
 
+## 2026-10-28 - Uji QRIS terbaru belum memulihkan gateway
+
+CONFIRMED / PROVIDER_QR_ACCEPTANCE_OPEN. Atas permintaan Andreas, satu uji
+QRIS Rp10.000 tanpa dibayar pada 10.42 WIB kembali gagal: provider status0,
+tanpa QR/link pembayaran/ID transaksi; lookup sebelum dan sesudah tidak menemukan
+order. Ini hasil order API, bukan sekadar status dashboard. Penyebab internal
+provider tetap belum terverifikasi; jangan menganggap kode error lama terulang.
+Gateway booking Saga Studio tetap off, transfer manual on. Tidak membuat booking,
+membayar, mengubah konfigurasi atau deploy aplikasi. Runtime saat pemeriksaan
+`20261027054325-34dcf2a`. Uji ini menghabiskan satu izin yang diberikan; tidak ada
+retry otomatis. Pemulihan provider dan BUSINESS_READY masih OPEN.
+
 ## 2026-10-27 - Selisih kertas closing mengikuti pemakaian manual
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Andreas meminta selisih kertas

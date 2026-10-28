@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-28 - SagaBook: uji ulang QRIS belum berhasil
+
+Accepted / CONFIRMED, sumber permintaan langsung Andreas dan uji order API
+production pada 10.42 WIB. Satu uji Rp10.000 tanpa dibayar menghasilkan status0,
+tanpa QR/link bayar/ID transaksi; lookup sebelum/sesudah negatif. Gateway tetap
+off/manual on. Runtime `20261027054325-34dcf2a`, tanpa booking, perubahan
+pengaturan atau deploy. Provider recovery/penyebab internal dan BUSINESS_READY
+OPEN; tanpa retry otomatis. Delapan file: SagaBook PRODUCT/DOSSIER/CHANGELOG,
+master, GAPS, portfolio changelog, SYNC_STATUS dan root changelog; main HEAD.
+
 ## 2026-10-27 - Pertukaran shift biasa Staff Admin aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source
