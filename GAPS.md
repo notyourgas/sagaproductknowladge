@@ -1,5 +1,15 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-28 - QRIS Kiosk: total nota otomatis, konfirmasi PIN
+
+CONFIRMED, keputusan Andreas28Oktober. Source `a759f0303b984662639432ef6bf2e9c7857ff266`
+menyederhanakan form QRIS Kiosk: nominal nota otomatis, edit opsional, tanpa
+referensi/checklist pelanggan. PIN/audit/idempotensi bertahan; bukan settlement
+bank. IMPLEMENTED_NOT_DEPLOYED; native Linux159PASS/0FAIL/0SKIP pada
+[run40649346727](https://github.com/notyourgas/sagaops/actions/runs/40649346727), capacity gate85%
+memblokir staging. Production5e tetap, printer/layout/menu/HR dipertahankan.
+Fakta utama: products/sagaops/PRODUCT.md dan products/sagaops/DOSSIER.md.
+
 ## 2026-10-28 - Jadwal harian terbaca dan persetujuan konflik Owner siap rilis
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED pada source

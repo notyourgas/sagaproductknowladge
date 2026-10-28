@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-314 - QRIS Kiosk memakai total nota dan konfirmasi PIN staf
+
+CONFIRMED. Andreas,28Oktober2026: nominal QRIS diisi otomatis dari total nota;
+edit oleh staf tetap tersedia. Hapus input referensi merchant dan checklist
+QRIS dari pop-up. Staf memeriksa pembayaran lalu memasukkan PIN dan konfirmasi;
+bukti operasional dikelola staf di luar POS. Integrasi pengiriman WhatsApp
+baru tidak termasuk scope ini. PIN, atribusi, guard pembayaran, audit dan
+idempotensi bertahan; pembayaran manual bukan settlement otomatis.
+Alternatif wajib mengetik nominal/referensi dan checklist digantikan untuk
+mengurangi pekerjaan berulang. Source `a759f0303b984662639432ef6bf2e9c7857ff266`,
+IMPLEMENTED_NOT_DEPLOYED; Linux159PASS, kapasitas/aktivasi mengikuti PRODUCT.
+Tidak mengubah layout nota atau printer; keputusan HR DEC-313 tetap berlaku.
+
 ## DEC-313 - Owner dapat menerima konflik pertukaran yang disepakati staf
 
 Tanggal28Oktober2026. CONFIRMED. Pemberi keputusan: Andreas. Setelah kedua staf

@@ -1,5 +1,25 @@
 # SagaOPS Dossier
 
+## 2026-10-28 - Konfirmasi QRIS Kiosk mengikuti nota dan PIN staf
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Atas permintaan Andreas, form QRIS manual
+Kiosk otomatis mengisi nominal sesuai tagihan server. Staf cukup memasukkan PIN
+lalu menekan konfirmasi; opsi Ubah nominal diterima tersedia bila diperlukan.
+Input referensi merchant dan checklist QRIS di pop-up dihapus. Selisih nominal
+tetap ditolak dan tidak mengubah harga/tagihan. PIN pribadi, atribusi staf,
+scope sesi, CSRF, pembatasan percobaan, audit, dan pemulihan tanpa bayar ulang
+bertahan. Kunci internal konfirmasi bukan nomor referensi bank; konfirmasi
+manual tidak membuktikan settlement bank atau verifikasi provider otomatis.
+Alur tunai/Kasir, menu, template nota, spacing, checker, feed dan autocut tetap.
+
+Source `a759f0303b984662639432ef6bf2e9c7857ff266` mempertahankan HR3047 dan perubahan produk sebelumnya.
+Native Linux PostgreSQL18/Chromium run40649346727 SUCCESS:159PASS,0FAIL,0SKIP.
+[Hasil kualifikasi](https://github.com/notyourgas/sagaops/actions/runs/40649346727). Production tetap5e11a49, bukan kandidat ini. Native pemeriksaan kapasitas
+memproyeksikan85%, sehingga belum ada staging/aktivasi. Penyelesaian ruang oleh
+executor berwenang diperlukan; versi aktif, rollback dan backup tidak dihapus.
+UAT QRIS pelanggan sah dan Chromebook fisik tetap OPEN; BUSINESS_READY tidak
+diklaim. Tidak ada penjualan/pembayaran/cetakan produksi dibuat untuk pengujian.
+
 ## 2026-10-28 - Jadwal harian terbaca dan persetujuan konflik Owner siap rilis
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED pada source
