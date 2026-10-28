@@ -1,5 +1,33 @@
 # SagaOPS Changelog
 
+## 2026-10-28 - Jadwal harian terbaca dan persetujuan konflik Owner siap rilis
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED pada source
+`3047ccbcae9559a98f9f50f18e771b71c2127f6e`. Kalender Admin Studio kini memakai
+baris per tanggal pada desktop dan kartu harian ringkas pada HP: nama staf,
+nama/jam shift pagi-sore, libur dan izin dipisahkan jelas. Tersedia filter
+bulan/minggu/staf, navigasi kategori dan tombol Hari ini. Tanggal kosong tidak
+ditampilkan sebagai libur atau angka0masuk yang menyesatkan.
+
+Koreksi lupa absen yang disetujui tidak lagi diklasifikasikan sebagai cuti/izin
+pada kalender atau pemeriksaan konflik. Shift yang benar tetap terlihat.
+Sesuai keputusan Andreas28Oktober, pengajuan yang sudah diterima rekan dapat
+disetujui Owner meski ada bentrok waktu, cuti/ketersediaan, istirahat, jam mingguan
+atau hari kerja beruntun. Peringatan dan keputusan Owner tetap tercatat pada
+audit. Pemeriksaan kepemilikan/keutuhan data, jadwal yang sudah dimulai dan
+absensi historis tetap berlaku; aturan pembuatan roster otomatis tetap.
+
+[Native Linux PostgreSQL18/Chromium run40630580863](https://github.com/notyourgas/sagaops/actions/runs/40630580863)
+SUCCESS:147PASS,0FAIL,0SKIP. Validasi layout320/390/1280, akses, fee, peer/Owner,
+rollback transaksi dan regresi roster/menu/printer/absensi PASS.
+[Source](https://github.com/notyourgas/sagaops/commit/3047ccbcae9559a98f9f50f18e771b71c2127f6e).
+Runtime masih `5e11a49ab6d3fca5dbf1387a41a0affc52d74f16`; fitur baru BELUM AKTIF.
+Penerapan menunggu izin khusus membersihkan dua versi lama setelah arsip
+terenkripsi/fullcompare terverifikasi. Versi aktif, rollback dan semua backup
+DB dipertahankan. Persetujuan pengajuan produksi yang dimaksud Owner belum
+dijalankan pada runtime lama. UAT HP staf dan penerimaan operasional masih OPEN;
+BUSINESS_READY menyeluruh tidak diklaim.
+
 ## 2026-10-27 - Pertukaran shift biasa Staff Admin aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source

@@ -1,5 +1,18 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-313 - Owner dapat menerima konflik pertukaran yang disepakati staf
+
+Tanggal28Oktober2026. CONFIRMED. Pemberi keputusan: Andreas. Setelah kedua staf
+sepakat melalui pengajuan/penerimaan rekan, Owner dapat menyetujui pertukaran
+meski ada bentrok jadwal, cuti atau jeda istirahat; risiko operasional diterima
+staf dan Owner. Konflik dicatat pada audit, tidak menjadi penolakan otomatis
+untuk keputusan Owner. Batas keutuhan data/akses dan aturan generator roster
+tetap. Alternatif penolakan otomatis seluruh konflik pada tahapOwner digantikan.
+Dampak: keputusan dan pengalaman persetujuan HR serta kalender Admin diperbaiki.
+Source3047ccbcae9559a98f9f50f18e771b71c2127f6e/NATIVE_VALIDATED147PASS,
+IMPLEMENTED_NOT_DEPLOYED. Status aktivasi mengikuti products/sagaops/PRODUCT.md.
+Dokumen: products/sagaops/PRODUCT.md, products/sagaops/CHANGELOG.md, GAPS.md.
+
 ## DEC-312 - Memori database sementara untuk publikasi menu
 
 CONFIRMED. Andreas, 27 Oktober 2026, memberi persetujuan langsung untuk
