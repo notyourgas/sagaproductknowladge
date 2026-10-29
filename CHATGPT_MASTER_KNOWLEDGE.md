@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-29 - Hotfix tunai Rp0 Kiosk sudah aktif
+
+CONFIRMED / PRODUCTION_ACTIVATED: aplikasi
+`4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`, rollback `bdfecfedf5dd52c2732eff3a5c8dd752eca61ed9`.
+Input QRIS tersembunyi tidak lagi memblokir konfirmasi tunai Rp0. Linux285PASS;
+pemulihan laporan, backup/offhost/restore, fresh recovery dan monitor PASS.
+Layout nota, printer/checker, QRIS dan data staf tetap. Pengujian modul production
+menggunakan callback sintetis tanpa pembayaran atau cetakan nyata. Physical UAT
+versi baru OPEN; bukan BUSINESS_READY. Detail: products/sagaops/PRODUCT.md.
+
 ## 2026-10-29 - Relokasi backup selesai; hotfix tunai masih tertahan laporan
 
 CONFIRMED. Andreas mengizinkan relokasi tiga grup backup historis terenkripsi.

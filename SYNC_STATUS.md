@@ -1,5 +1,17 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-29 - Sinkronisasi hotfix Kiosk production
+
+Status sinkronisasi: accepted / CONFIRMED. Source aplikasi production
+`4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`; rollback `bdfecfedf5dd52c2732eff3a5c8dd752eca61ed9`.
+Control-plane maintenance `b66958da76c6c22ebaea1a0edcbad95a0787d189` dilaporkan
+terpisah. Linux285PASS untuk aplikasi, matriks guard Linux terpisah PASS; native
+recovery/activation/monitor, actual-origin form/aset/UI dan protected hashes PASS.
+Nota/printer tidak berubah; tidak ada pembayaran/cetakan production dibuat.
+Delapan dokumen diperbarui pada main HEAD; validator/link/public-safety dan raw
+read-back diperiksa sebelum penutupan. UAT pembayaran nyata/kertas masih OPEN.
+Sumber: permintaan deploy Andreas29Oktober dan verifikasi runtime executor.
+
 ## 2026-10-29 - Relokasi backup selesai; hotfix tunai masih tertahan laporan
 
 CONFIRMED. Andreas mengizinkan relokasi tiga grup backup historis terenkripsi.

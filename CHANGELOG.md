@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-29 - Konfirmasi tunai Rp0 Kiosk pulih di production
+
+CONFIRMED. Sumber: otorisasi Andreas dan verifikasi langsung executor. Aplikasi
+`4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1` aktif, rollback `bdfecfedf5dd52c2732eff3a5c8dd752eca61ed9`.
+Linux285PASS dan recovery/activation/health/Owner/form production PASS. Layout
+nota, printer dan data staf tetap; UAT pembayaran nyata serta kertas masih OPEN.
+Alasan: input metode nonaktif memblokir validasi tunai Rp0. Blocker laporan
+terselesaikan melalui pemulihan berjejak, tanpa menghapus riwayat bisnis.
+
+File terdampak: products/sagaops/PRODUCT.md, products/sagaops/DOSSIER.md,
+products/sagaops/CHANGELOG.md, changelog/PORTFOLIO_CHANGELOG.md,
+CHATGPT_MASTER_KNOWLEDGE.md, GAPS.md, SYNC_STATUS.md, CHANGELOG.md.
+Knowledge pada main HEAD; bukan klaim BUSINESS_READY seluruh produk.
+
 ## 2026-10-29 - Relokasi backup selesai; hotfix tunai masih tertahan laporan
 
 CONFIRMED. Andreas mengizinkan relokasi tiga grup backup historis terenkripsi.

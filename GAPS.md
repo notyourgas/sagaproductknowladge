@@ -1,5 +1,20 @@
 # Gaps dan Keputusan Founder
 
+## 2026-10-29 - Blocker rilis tunai Rp0 selesai; UAT fisik tetap terbuka
+
+CONFIRMED: aplikasi `4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1` aktif dan sehat,
+rollback operasional `bdfecfedf5dd52c2732eff3a5c8dd752eca61ed9`. Blocker ruang,
+backup dan pekerjaan laporan sudah terselesaikan dengan bukti terverifikasi;
+checkpoint IMPLEMENTED_NOT_DEPLOYED sebelumnya adalah histori. Linux285PASS,
+modul form production Rp0, auth/aset/UI dan konfigurasi terlindungi PASS.
+
+Tersisa: Andreas/operator mencoba pembayaran pelanggan yang sah pada versi baru
+dan mengonfirmasi kertas sesuai. Tidak membuat transaksi production palsu,
+mengonfirmasi pembayaran pengguna dari tooling, atau mengirim TEST buta. Memuat
+ulang Kiosk saat aman dan memeriksa status pesanan yang sama mencegah pembayaran
+ulang. Tidak menyimpulkan kesiapan seluruh produk dari hotfix ini. Detail:
+products/sagaops/PRODUCT.md.
+
 ## 2026-10-29 - Relokasi backup selesai; hotfix tunai masih tertahan laporan
 
 CONFIRMED. Andreas mengizinkan relokasi tiga grup backup historis terenkripsi.

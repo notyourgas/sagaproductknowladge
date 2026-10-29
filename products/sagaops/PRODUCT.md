@@ -1,5 +1,45 @@
 # SagaOPS Product Knowledge
 
+## 2026-10-29 - Hotfix konfirmasi tunai Rp0 Kiosk aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED: aplikasi
+`4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`, rollback operasional
+`bdfecfedf5dd52c2732eff3a5c8dd752eca61ed9`. Checkpoint source-only dan blocker
+sebelumnya menjadi histori; runtime bukan source control-plane terbaru.
+
+Form Kiosk menonaktifkan input metode pembayaran yang tidak sedang digunakan,
+termasuk sesudah respons gagal dan percobaan ulang. Kolom QRIS tersembunyi tidak
+lagi memblokir konfirmasi tunai Rp0. PIN, validasi metode aktif, pengosongan PIN,
+nominal serta identitas percobaan pembayaran dipertahankan. QRIS tetap memakai
+nominal nota dengan edit opsional, tanpa referensi atau checklist QRIS.
+
+[Linux PostgreSQL18/Chromium run40829335286](https://github.com/notyourgas/sagaops/actions/runs/40829335286)
+lulus 285 tes tanpa gagal atau skip. Pemulihan laporan yang menahan rilis selesai
+melalui rebuild terverifikasi: pekerjaan lama dan tiga percobaannya tetap utuh,
+satu rebuild dan satu bukti resolusi audit tersimpan; tidak ada penjualan atau
+pembayaran yang diubah oleh pemulihan ini. Koreksi kontrol penghentian layanan
+bersumber `b66958da76c6c22ebaea1a0edcbad95a0787d189`,
+[run40833339624](https://github.com/notyourgas/sagaops/actions/runs/40833339624),
+lulus matriks guard terpisah dan verifikasi langsung. Pemulihan mensyaratkan versi
+asal/fallback yang dikenali serta aplikasi berhenti dengan PID0. Ini maintenance
+terverifikasi, bukan klaim aplikasi production memakai source control-plane itu.
+
+Backup terenkripsi, salinan di luar server, disposable restore, fresh rehearsal
+candidate/rollback/candidate, aktivasi dan monitor PASS. Runtime sehat, schema37,
+pembayaran GATEWAY; antrean kegagalan laporan nol. Biaya tambahan Rp0, proteksi
+dan batas resource tetap. Satu versi aplikasi lama telah diarsipkan lengkap dan
+terverifikasi untuk ruang staging; current, rollback terpilih, database dan backup
+terbaru dipertahankan. Riwayat/data transaksi tidak dihapus.
+
+Read-back Owner membuktikan template/logo/jarak nota, konfigurasi printer/checker,
+gambar QRIS, jadwal/tarif/policy staf sama dengan sebelum rilis. Aset served cocok
+dengan Git, batas akses anonim tetap, UI Owner390 dan Kiosk1366/720 lulus. Form
+Rp0 diuji pada modul production dengan callback sintetis; tidak memanggil API
+pembayaran atau mengirim cetakan. Operator memuat ulang Kiosk saat aman, memeriksa
+status pesanan yang sama, dan tidak membayar ulang pesanan lunas. UAT pembayaran
+pelanggan sah dan kertas pada versi baru masih OPEN; bukan BUSINESS_READY seluruh
+produk. Tidak menganggap keberhasilan spool atau fixture sebagai bukti cetak.
+
 ## 2026-10-29 - Relokasi backup selesai; hotfix tunai masih tertahan laporan
 
 CONFIRMED. Andreas mengizinkan relokasi tiga grup backup historis terenkripsi.
