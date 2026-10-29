@@ -1,5 +1,33 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-29 - Pencegahan timeout aktif dan readiness laporan pulih
+
+CONFIRMED / PRODUCTION_ACTIVATED / TECHNICAL_HEALTH_RESTORED. Aplikasi tetap
+`4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`; paket kontrol pencegahan terpisah
+`f0716d35685a3fe69d85c88d0cc9c016d617a0c6` sudah aktif. Dokumentasi penerimaan
+`010ceac97d1efe8901b29deaacc3cd9da7e39a37` bukan versi aplikasi deployed baru.
+
+Monitor satu menit memeriksa anggaran dan tekanan memori aplikasi/database,
+respons database read-only, HTTP serta katalog; validator readiness, backup dan
+bukti nota existing tetap berlaku. Konfigurasi permanen telah diperbaiki agar
+batas memori database tidak kembali ke nilai lama saat systemd dimuat ulang.
+Monitor hanya memeriksa dan mencatat peringatan di jurnal server, tanpa restart,
+pengiriman ulang pembayaran/cetakan, atau pesan eksternal otomatis.
+
+[Linux run40884841582](https://github.com/notyourgas/sagaops/actions/runs/40884841582)
+lulus 22 pemeriksaan termasuk regresi systemd nyata dalam31detik. Dua laporan
+gagal pulih melalui masing-masing satu rebuild dan resolusi audit bertanda;
+seluruh enam riwayat terminal dan percobaan aslinya tetap utuh. Salinan terenkripsi
+tabel laporan diverifikasi di luar server sebelum pemulihan. Readiness kini true,
+antrean kegagalan laporan nol; siklus timer otomatis dan API authenticated lulus.
+
+Tidak ada restart aplikasi/database atau penulisan fakta penjualan, pembayaran,
+shift maupun HR oleh pemeliharaan ini. Hash template nota/printer/checker/QRIS
+sama dengan konfigurasi terlindungi sebelumnya. Biaya tambahan Rp0. Retensi
+memori jangka panjang dan beban baru masih perlu observasi; pembayaran/cetak
+fisik tidak diuji pada slice ini. Bukan klaim BUSINESS_READY seluruh produk.
+Sumber: otorisasi pencegahan Andreas, source, Linux qualification dan runtime.
+
 ## 2026-10-29 - Akses Chrome pulih setelah pemulihan aplikasi dan database
 
 CONFIRMED / AUTHENTICATED_ACCESS_RESTORED / REPORTING_HEALTH_OPEN. Pemulihan
