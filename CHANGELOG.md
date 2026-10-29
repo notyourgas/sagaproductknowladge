@@ -1,5 +1,23 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-29 - Gateway pulih; readiness laporan masih terbuka
+
+CONFIRMED / AVAILABILITY_RESTORED / REPORTING_HEALTH_OPEN. Tekanan batas memori
+lunak membuat proses aplikasi hidup tetapi tidak menjawab HTTP. Penyesuaian
+terbatas memulihkan respons tanpa restart; batas memori maksimum, versi aplikasi,
+transaksi, template nota dan pengaturan printer tidak diubah. Biaya tambahan Rp0.
+
+Aplikasi tetap `4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`; provenance pemulihan
+`9c5782b01b9297fdc0c970d27b6a0c9550302fa7` adalah dokumentasi operasional, bukan
+release aplikasi baru. Dashboard/Kasir kembali menjawab; dua pekerjaan laporan
+kehabisan percobaan saat outage dan riwayatnya dipertahankan. Readiness global
+masih false. Penanggung jawab: pemeliharaan SagaPOS; langkah berikutnya rebuild
+laporan terverifikasi melalui API kanonik tanpa reset/hapus histori. Penyebab
+pertumbuhan memori jangka panjang dan UAT transaksi/cetak masih OPEN.
+
+Sumber: laporan gateway timeout Andreas dan verifikasi langsung executor.
+Status ini memperbarui snapshot sehat sebelumnya; bukan BUSINESS_READY.
+
 ## 2026-10-29 - Konfirmasi tunai Rp0 Kiosk pulih di production
 
 CONFIRMED. Sumber: otorisasi Andreas dan verifikasi langsung executor. Aplikasi
