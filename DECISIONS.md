@@ -1,5 +1,19 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-315 - Relokasi terbatas backup historis setelah salinan terverifikasi
+
+Tanggal29Oktober2026. CONFIRMED. Pemberi keputusan: Andreas. Tiga grup backup
+historis terenkripsi boleh dipindahkan ke penyimpanan lokal, dan file asal server
+baru dilepas setelah seluruh ukuran danSHA256 sesuai. Backup terbaru, database
+aktif, release aktif dan rollback wajib tetap tersedia. Alternatif menghapus
+cadangan tanpa salinan atau memperluas izin pengarsipan aplikasi ditolak.
+Dampak:18file historis berhasil direlokasi, backup terbaru dan uji pemulihan serta
+salinan terenkripsi di luar server PASS. Ini izin satu kali untuk grup yang
+disetujui, bukan izin penghapusan backup lain atau pemulihan database produksi.
+Hotfix0ed0016 masih IMPLEMENTED_NOT_DEPLOYED karena blocker laporan terpisah;
+izin ini tidak menonaktifkan health, readiness atau gate recovery. Sumber:
+konfirmasi langsung Andreas dan bukti verifikasi executor. Dokumen terkait:
+products/sagaops/PRODUCT.md, products/sagaops/CHANGELOG.md, GAPS.md, SYNC_STATUS.md.
 ## DEC-314 - QRIS Kiosk memakai total nota dan konfirmasi PIN staf
 
 CONFIRMED. Andreas,28Oktober2026: nominal QRIS diisi otomatis dari total nota;

@@ -1,5 +1,29 @@
 # Portfolio Changelog
 
+## 2026-10-29 - Relokasi backup selesai; hotfix tunai masih tertahan laporan
+
+CONFIRMED. Andreas mengizinkan relokasi tiga grup backup historis terenkripsi.
+Seluruh18file cocok ukuran danSHA256 di penyimpanan lokal sebelum salinan asal
+server dilepas. Backup terbaru, database aktif, release aktif dan rollback
+bertahan. Backup baru, uji pemulihan disposable, pemeriksaan keutuhan dan salinan
+terenkripsi di luar server berhasil, mencakup data staf terbaru. Tidak ada biaya
+tambahan; batas kapasitas/freshness dan proteksi tidak dilonggarkan.
+
+Kandidat tunai Rp0 `0ed0016e0e3197506a2c5e4a2e2474806795e7ca` tetap
+IMPLEMENTED_NOT_DEPLOYED; Linux160PASS/0FAIL/0SKIP berlaku untuk source tersebut.
+Production masih `a759f0303b984662639432ef6bf2e9c7857ff266`, rollback5e11a49.
+Pemeriksaan setelah backup menemukan satu pekerjaan laporan turunan gagal akibat
+query dibatalkan. Worker dan laporan terbaru masih berjalan, tetapi readiness
+laporan menahan promotion. Jalur pemulihan terverifikasi existing belum mendukung
+jenis kegagalan ini. Riwayat kegagalan tidak dihapus atau diubah agar gate lolos.
+
+Read-back Owner membuktikan jadwal/tarif/policy staf, konfigurasi printer,
+template nota dan gambar QRIS sama dengan sebelum backup. Tidak ada pembayaran,
+penjualan atau cetakan produksi dibuat oleh pekerjaan ini. Penanggung jawab
+sisa: task perbaikan SagaPOS. Langkah berikut: kualifikasikan recovery laporan
+terarah dengan rebuild terverifikasi dan riwayat tetap utuh, lalu guarded deploy
+hotfix. Belum staging, aktivasi atau UAT pembayaran/kertas versi hotfix;
+BUSINESS_READY tidak diklaim. DEC-315 mencatat batas izin relokasi.
 ## 2026-10-29 - Hotfix konfirmasi tunai Rp0 terkualifikasi, belum aktif
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: source
