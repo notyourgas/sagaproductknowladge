@@ -1,22 +1,26 @@
 # SagaOPS Changelog
 
-## 2026-10-29 - Gateway pulih; readiness laporan masih terbuka
+## 2026-10-29 - Akses Chrome pulih setelah pemulihan aplikasi dan database
 
-CONFIRMED / AVAILABILITY_RESTORED / REPORTING_HEALTH_OPEN. Tekanan batas memori
-lunak membuat proses aplikasi hidup tetapi tidak menjawab HTTP. Penyesuaian
-terbatas memulihkan respons tanpa restart; batas memori maksimum, versi aplikasi,
-transaksi, template nota dan pengaturan printer tidak diubah. Biaya tambahan Rp0.
+CONFIRMED / AUTHENTICATED_ACCESS_RESTORED / REPORTING_HEALTH_OPEN. Pemulihan
+HTTP awal belum cukup: API data masih timeout karena database juga tertahan
+batas memori lunak. Penyesuaian terbatas pada aplikasi dan database memulihkan
+akses tanpa restart, kenaikan batas memori maksimum, atau kapasitas berbayar.
+Login serta API dashboard, admin, data staf, template nota dan printer berhasil.
+Chrome milik Andreas benar-benar menampilkan Dashboard Owner dan Kasir dengan
+data server terbaru; bukan hanya bukti HTTP200 atau fixture.
 
-Aplikasi tetap `4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`; provenance pemulihan
-`9c5782b01b9297fdc0c970d27b6a0c9550302fa7` adalah dokumentasi operasional, bukan
-release aplikasi baru. Dashboard/Kasir kembali menjawab; dua pekerjaan laporan
-kehabisan percobaan saat outage dan riwayatnya dipertahankan. Readiness global
-masih false. Penanggung jawab: pemeliharaan SagaPOS; langkah berikutnya rebuild
-laporan terverifikasi melalui API kanonik tanpa reset/hapus histori. Penyebab
-pertumbuhan memori jangka panjang dan UAT transaksi/cetak masih OPEN.
+Aplikasi tetap `4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`; dokumentasi pemulihan
+`2ce83692839117fc6b7508cba646ea78845d0322` bukan release aplikasi baru.
+Pemulihan tidak menulis fakta transaksi, mengonfirmasi pembayaran, menutup shift,
+atau mengirim cetakan; template nota serta pengaturan printer tidak diubah.
+Dua pekerjaan laporan kehabisan percobaan saat outage tetap tersimpan; readiness
+global belum lolos. Penanggung jawab: pemeliharaan SagaPOS; langkah berikutnya
+rebuild laporan terverifikasi melalui API kanonik tanpa reset/hapus histori.
+Penyebab pertumbuhan memori jangka panjang dan UAT pembayaran/cetak masih OPEN.
 
-Sumber: laporan gateway timeout Andreas dan verifikasi langsung executor.
-Status ini memperbarui snapshot sehat sebelumnya; bukan BUSINESS_READY.
+Sumber: laporan lanjutan Andreas, diagnosis runtime, API authenticated, dan
+verifikasi langsung di Chrome. Bukan klaim BUSINESS_READY seluruh produk.
 
 ## 2026-10-29 - Hotfix konfirmasi tunai Rp0 Kiosk aktif
 
