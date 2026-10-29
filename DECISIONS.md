@@ -1,5 +1,17 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-316 - Harga tiga Cake dan pengecualian Trial Opening
+
+Tanggal29Oktober2026. CONFIRMED. Pemberi keputusan: Andreas. Menu/Kiosk memakai
+BURNT CHEESECAKE Rp22.000, BROWN CHEESE Rp23.000 dan ICEBERG CHEESECAKE
+Rp25.000; ketiganya dikecualikan dari diskon TRIAL OPENING. Alasan: instruksi
+harga dan pengecualian produk langsung dari pemilik. Alternatif diskon semua
+produk tidak berlaku untuk ketiganya. Dampak: pricing dan aturan promo Cake;
+stok fisik/HPP tidak berubah. Status implementasi: dua draf tersimpan,
+publikasi BLOCKED pada batas memori, belum tampil aktif kepada pelanggan.
+Dokumen terkait: products/sagaops/PRODUCT.md, products/sagaops/CHANGELOG.md,
+CHATGPT_MASTER_KNOWLEDGE.md, GAPS.md dan SYNC_STATUS.md.
+
 ## DEC-315 - Relokasi terbatas backup historis setelah salinan terverifikasi
 
 Tanggal29Oktober2026. CONFIRMED. Pemberi keputusan: Andreas. Tiga grup backup

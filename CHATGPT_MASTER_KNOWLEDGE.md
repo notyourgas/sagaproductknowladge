@@ -1,5 +1,29 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-29 - Tiga Cake diminta aktif, publikasi tertahan memori
+
+CONFIRMED. Andreas menetapkan BURNT CHEESECAKE Rp22.000, BROWN CHEESE
+Rp23.000, dan ICEBERG CHEESECAKE Rp25.000 untuk menu/Kiosk, dengan
+pengecualian dari TRIAL OPENING 30%. Placeholder Cheesecake digunakan untuk
+Burnt; Tiramisu Cake dan empat Bagel tetap Coming Soon. Implementasi pricing
+dan pengecualian lulus uji lokal, termasuk keranjang tiga Cake + Es Kopi Saga:
+subtotal Rp86.000, diskon kopi Rp4.800, total Rp81.200.
+
+Status aktual: BLOCKED, belum diterbitkan. Runtime aplikasi tetap
+`4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`; katalog pelanggan tetap publikasi14.
+Workspace144 menyimpan dua draf: Burnt Rp22.000 dan Brown Rp23.000. Iceberg dan
+pengecualian promo belum tersimpan. Penulisan berikutnya timeout dan database
+mencapai batas memori384MiB; service database/aplikasi dipulihkan, API Owner
+serta e-menu200 kembali terverifikasi. Tidak ada perubahan batas memori atau
+restore database. Burst maksimum1GiB/5menit membutuhkan izin baru Andreas.
+
+Produksi berubah pada draf dan pemulihan service, belum pada menu pelanggan.
+Tidak ada order, pembayaran, voucher, cetakan, stok fisik atau HPP yang ditulis
+oleh task ini. UAT harga dan diskon production masih OPEN; bukan BUSINESS_READY.
+Sumber: instruksi Andreas29Oktober2026, journal ACK dan read-back authenticated.
+Next action: setelah izin resource, lanjutkan hanya perubahan yang belum
+tersimpan dengan expected-version144, publish dan verifikasi quote Kiosk.
+
 ## 2026-10-29 - Pencegahan timeout aktif dan readiness laporan pulih
 
 CONFIRMED / PRODUCTION_ACTIVATED / TECHNICAL_HEALTH_RESTORED. Aplikasi tetap
