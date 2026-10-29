@@ -1,5 +1,31 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-10-29 - Hotfix konfirmasi tunai Rp0 terkualifikasi, belum aktif
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED: source
+`0ed0016e0e3197506a2c5e4a2e2474806795e7ca`. Regresi pada versi aktif a759:
+input nominal QRIS tersembunyi terisi0/minimum1 saat konfirmasi tunai Rp0;
+Chrome menolak validasi sebelum HTTP dan tombol tampak tidak bereaksi.
+Hotfix menonaktifkan input pada bagian form yang tidak aktif, termasuk setelah
+respons gagal/percobaan ulang. PIN, validasi metode aktif, payload retry,
+backend, nota, printer, menu, data dan jadwal staf tidak diubah.
+
+[Linux PostgreSQL18/Chromium run40822465186](https://github.com/notyourgas/sagaops/actions/runs/40822465186)
+160PASS/0FAIL/0SKIP; reproduksi sebelum fix gagal tepat pada validasi tersembunyi,
+17 regresi lokal setelah fix PASS. Production masih a759, bukan hotfix ini.
+Pesanan terdampak dapat diperiksa/ditangani staf berwenang dari antrean Kasir
+existing dengan nominal sebenarnya; jangan membuat order atau pembayaran ulang.
+Tidak ada pembayaran/cetakan produksi dikirim oleh pengujian hotfix.
+
+Deploy memerlukan backup baru karena cadangan server terakhir melewati48jam,
+serta ruang untuk backup dan staging. Tiga grup backup historis terenkripsi sudah
+disalin ke penyimpanan lokal dan seluruh18file cocok ukuran/SHA256; semua asli
+server tetap utuh. Relokasi asal server menunggu izin khusus manusia, terpisah
+dari izin mengarsipkan rilis aplikasi lama. Database, backup terakhir, current,
+rollback, jadwal/tarif/absensi tetap dilindungi. Data staf terbaru harus tercakup
+pada backup baru sebelum promotion. Tidak mengubah batas kapasitas/umur backup.
+UAT pembayaran/kertas versi hotfix masih OPEN; BUSINESS_READY tidak diklaim.
+
 ## 2026-10-28 - QRIS PIN Kiosk dan perbaikan jadwal aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada source
