@@ -1,5 +1,29 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-30 - Halaman pembuka Kiosk dan menu perangkat
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source privat
+`6147a44100e124bacc906a96fe9b13f3ef35917d` memakai artwork self-service
+Kopi Saga yang diberikan Andreas, tombol Order Now aktif, dan susunan portrait
+serta landscape. Menu titik tiga mengelompokkan fullscreen, cek koneksi printer
+read-only, halaman layanan printer, bantuan dan penggantian PIN staf existing.
+Saat printer belum siap, alat fullscreen/koneksi tetap tersedia tetapi pemesanan
+terkunci. Pemeriksaan koneksi tidak mengirim TEST atau mengubah otorisasi.
+
+Sebelas tes browser terarah lulus pada empat ukuran layar, termasuk touch,
+aksesibilitas, fallback gambar, fokus dan perlindungan order. TypeScript serta
+manifest offline lulus; JPG asli masuk cache offline. Satu fixture member lama
+pada rangkaian tambahan masih gagal karena encoding kode tersamar yang sudah
+ada pada baseline; tidak disembunyikan dengan mengubah backend/assertion.
+
+Produksi tidak berubah oleh task UI ini. Health publik masih ready dengan
+aplikasi `4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`. Katalog Cake terbaru,
+transaksi, pembayaran, template nota, RAW, feed, autocut dan layanan printer
+tidak dimutasi. Tidak ada penjualan/cetakan fisik uji. Berikutnya: kualifikasi
+rilis yang terikat kandidat dan promotion melalui runner native sebelum
+menyebut tampilan ini deployed; bukan BUSINESS_READY. Sumber: permintaan
+referensi Andreas30Oktober2026, commit source, tes dan health publik.
+
 ## 2026-10-30 - Tiga Cake aktif dan dikecualikan dari Trial Opening
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk perubahan katalog ini. BURNT CHEESECAKE
