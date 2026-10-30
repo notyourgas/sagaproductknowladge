@@ -1,5 +1,19 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-30 - Koreksi logo cokelat dan pembuka portrait
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Andreas menetapkan
+logo Kopi Saga berwarna cokelat dan halaman pembuka vertikal untuk perangkat
+portrait. Source `d553333a45aaae842fd34762a0eb355ccff013e0` menggantikan
+komposisi landscape pada kandidat sebelumnya: satu kolom tetap vertikal,
+proporsi portrait di layar lebar, dengan preview720x1280. Logo ditampilkan
+cokelat melalui SVG blend; file artwork asli tetap utuh. Kedua tes browser menu
+perangkat lulus ulang di empat viewport, termasuk urutan bagian dan lebar
+kolom; typecheck dan manifest offline lulus. Menu titik tiga, autentikasi,
+transaksi, layout nota serta printer tidak diubah. Production tidak dimutasi;
+kualifikasi dan promotion native masih diperlukan sebelum deployed. Bukan
+BUSINESS_READY. Sumber: koreksi Andreas30Oktober2026, source dan bukti lokal.
+
 ## 2026-10-30 - Halaman pembuka Kiosk dan menu perangkat
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source privat
