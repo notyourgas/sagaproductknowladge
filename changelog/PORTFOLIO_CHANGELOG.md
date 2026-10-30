@@ -1,5 +1,23 @@
 # Portfolio Changelog
 
+## 2026-10-30 - Indikator kesiapan printer di pembuka Kiosk
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
+`f6c47d0571748f7c37ec0790f033e3911ef56db0` menambahkan status di sebelah menu
+titik tiga: hijau bila perangkat terkonfigurasi dan heartbeat layanan siap;
+merah bila belum disiapkan, layanan dijeda, koneksi hilang atau heartbeat usang.
+Status mengikuti watcher ber-scope existing, tanpa poller baru, cetakan TEST,
+perubahan otorisasi atau retry pembayaran/cetak. Hijau bukan bukti kertas keluar.
+Pada layar kecil badge menjadi titik dengan teks aksesibel dan tooltip.
+
+Tujuh tes terarah lulus, termasuk transisi siap/jeda/pulih/kedaluwarsa, isolasi
+outlet dan relay lintas-origin, keranjang tetap tersimpan, preview belum
+terkonfigurasi tetap merah, serta UI aksesibel. Typecheck dan manifest offline
+lulus. Preview portrait diperbarui; produksi, layout nota dan layanan printer
+yang berjalan tidak dimutasi. Promotion native dan penerimaan perangkat nyata
+masih diperlukan sebelum deployed; bukan BUSINESS_READY. Sumber: permintaan
+Andreas30Oktober2026, commit source dan bukti pengujian lokal.
+
 ## 2026-10-30 - Koreksi logo cokelat dan pembuka portrait
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Andreas menetapkan
