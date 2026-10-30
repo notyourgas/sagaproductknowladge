@@ -1,5 +1,17 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-317 - Burst sementara untuk menyelesaikan publikasi Cake
+
+Tanggal30Oktober2026. CONFIRMED. Andreas menjawab "Ya, naikkan sementara"
+untuk batas database1GiB, maksimal5menit, lalu dikembalikan. Alasan: penulisan
+katalog sebelumnya mencapai batas384MiB. Alternatif menunda publikasi tidak
+dipilih. Scope satu kali: selesaikan tiga Cake dan pengecualian Trial Opening;
+tidak mengizinkan kenaikan permanen atau pembelian kapasitas. Dampak aktual:
+47detik, batas352/384MiB kembali, CPU tetap, tanpa restart pada penyelesaian.
+Publikasi15 dan read-back production lulus. Dokumen terkait:
+products/sagaops/PRODUCT.md, products/sagaops/CHANGELOG.md, GAPS.md dan
+SYNC_STATUS.md. Sumber: jawaban langsung Andreas serta verifikasi executor.
+
 ## DEC-316 - Harga tiga Cake dan pengecualian Trial Opening
 
 Tanggal29Oktober2026. CONFIRMED. Pemberi keputusan: Andreas. Menu/Kiosk memakai
@@ -7,8 +19,9 @@ BURNT CHEESECAKE Rp22.000, BROWN CHEESE Rp23.000 dan ICEBERG CHEESECAKE
 Rp25.000; ketiganya dikecualikan dari diskon TRIAL OPENING. Alasan: instruksi
 harga dan pengecualian produk langsung dari pemilik. Alternatif diskon semua
 produk tidak berlaku untuk ketiganya. Dampak: pricing dan aturan promo Cake;
-stok fisik/HPP tidak berubah. Status implementasi: dua draf tersimpan,
-publikasi BLOCKED pada batas memori, belum tampil aktif kepada pelanggan.
+stok fisik/HPP tidak berubah. Status awal dua draf/BLOCKED telah digantikan
+pada30Oktober2026: publikasi15 aktif, tiga harga dan pengecualian diskon
+terverifikasi pada katalog/quote Kiosk production.
 Dokumen terkait: products/sagaops/PRODUCT.md, products/sagaops/CHANGELOG.md,
 CHATGPT_MASTER_KNOWLEDGE.md, GAPS.md dan SYNC_STATUS.md.
 

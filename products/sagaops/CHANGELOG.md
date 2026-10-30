@@ -1,6 +1,42 @@
 # SagaOPS Changelog
 
+## 2026-10-30 - Tiga Cake aktif dan dikecualikan dari Trial Opening
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk perubahan katalog ini. BURNT CHEESECAKE
+Rp22.000, BROWN CHEESE Rp23.000 dan ICEBERG CHEESECAKE Rp25.000 sudah aktif
+di kategori Cake pada Kiosk, katalog Kasir dan e-menu. Placeholder Cheesecake
+dipakai sebagai Burnt sehingga tidak muncul menu ganda. Tiramisu Cake dan
+empat Bagel tetap Coming Soon. Ketiga Cake dikecualikan per produk dari
+TRIAL OPENING30%; jadwal, kanal promo dan pengaturan voucher Member tetap.
+Detail menu menyatakan tidak berlaku diskon Trial Opening.
+
+Runtime aplikasi tetap `4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`, bukan
+deployment source baru. Native catalog version144->150, publication14->15,
+draf0. API authenticated dan quote Kiosk production memverifikasi total
+Rp22.000/Rp23.000/Rp25.000 dengan diskon0; tiga Cake berjumlah Rp70.000.
+Keranjang tiga Cake + Es Kopi Saga Rp16.000 menghasilkan subtotal Rp86.000,
+diskon kopi Rp4.800 dan total Rp81.200. Browser e-menu menampilkan22K/23K/25K
+serta keterangan pengecualian. Produk lama selain placeholder dan konfigurasi
+variant/modifier/pricing/ordering dipertahankan.
+
+Andreas menyetujui burst database maksimum1GiB selama maksimal5menit.
+Pelaksanaan47detik, lalu batas dikembalikan ke MemoryHigh352MiB/MemoryMax384MiB;
+CPU tetap dan tidak ada restart pada penyelesaian ini. Service, readiness,
+source dan shared lock telah diverifikasi setelah pemulihan batas. Biaya
+kapasitas tambahan Rp0. Ini izin satu kali, bukan kenaikan permanen.
+
+Produksi berubah: katalog pelanggan dan pengecualian promo. Stok fisik/HPP
+tidak berubah; task tidak membuat order, payment atau print. UAT browser
+Kiosk fisik dan checkout nyata tidak dilakukan; bukan BUSINESS_READY seluruh
+produk. Kapasitas katalog pada batas normal tetap risiko operasional untuk
+perubahan berikutnya, bukan izin mengulangi burst. Sumber: instruksi harga
+Andreas29Oktober2026, izin30Oktober2026, publikasi native dan read-back produksi.
+Blocker publikasi Cake sebelumnya CLOSED; tidak ada blocker untuk scope ini.
+
 ## 2026-10-29 - Tiga Cake diminta aktif, publikasi tertahan memori
+
+DEPRECATED untuk status saat ini: blocker publikasi ditutup30Oktober2026
+oleh publikasi15 dan verifikasi di entri terbaru. Berikut histori sebelum izin.
 
 CONFIRMED. Andreas menetapkan BURNT CHEESECAKE Rp22.000, BROWN CHEESE
 Rp23.000, dan ICEBERG CHEESECAKE Rp25.000 untuk menu/Kiosk, dengan
