@@ -1,5 +1,18 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-31 - Foto utama latte dan espresso untuk Kiosk
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
+`4fe1f1595ba94f34286dc3c8d234e56c27e5d120` memakai foto latte, espresso dan
+peralatan kopi yang diberikan Andreas sebagai gambar utama pembuka Kiosk.
+JPG asli disalin dengan hash cocok, masuk manifest offline, dan ditampilkan
+dengan fokus minuman. Masthead, logo cokelat, susunan portrait, tombol pesan,
+indikator printer dan perilaku transaksi tetap. Empat tes browser terkait,
+typecheck dan diff check lulus; preview diperbarui. Tidak ada promotion
+production, transaksi atau cetakan fisik. Kualifikasi dan runner native masih
+diperlukan sebelum deployed; bukan BUSINESS_READY. Sumber: foto dan instruksi
+Andreas31Oktober2026, source commit dan verifikasi lokal.
+
 ## 2026-10-30 - Indikator kesiapan printer di pembuka Kiosk
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
