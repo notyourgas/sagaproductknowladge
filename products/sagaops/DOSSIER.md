@@ -1,5 +1,31 @@
 # SagaOPS Dossier
 
+## 2026-10-31 - Pembuka Kiosk portrait dan indikator printer sudah aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk scope UI Kiosk.
+Aplikasi aktif `78b905bdaf89cad43c144c167217fe9b56498613`, rollback terpilih
+`4f3cb678ee4ebb57208bbe95aa499b1d467e9ad1`. Status kandidat lokal pada entri
+sebelumnya kini menjadi histori. Pembuka memakai foto latte/espresso Andreas,
+logo cokelat, satu kolom portrait dan tombol Order Now. Menu titik tiga memuat
+fullscreen, cek koneksi, layanan printer dan bantuan petugas existing. Badge
+hijau mengikuti heartbeat layanan siap; merah saat belum siap, dijeda atau usang.
+Hijau bukan bukti kertas keluar dan tidak melewati pengunci Kiosk.
+
+Kualifikasi Linux41104346268 lulus127 tes, pemeriksaan source/manifest dan
+paket immutable. Backup terenkripsi baru lolos restore disposable dan checksum
+salinan di luar server. Rehearsal native kandidat-current-kandidat lulus sebelum
+aktivasi code-only. Tiga grup backup historis dipindahkan dengan verifikasi
+18 ukuran/hash; backup terbaru dan rollback tetap di server. Pemeriksaan Owner,
+health dan UI production720x1280/1080x1920 lulus; foto served cocok byte-for-byte.
+
+Backend,37 migrasi, Nginx dan batas memori tetap. Hash konfigurasi nota, printer,
+checker, QRIS, jadwal staf, tarif staf dan kebijakan absensi cocok sebelum/sesudah.
+Metadata kualifikasi offline diikat ke kandidat baru melalui rilis; kebijakan
+serta commissioning existing tetap. Tidak membuat transaksi atau cetakan TEST;
+UAT fisik Chromebook tidak diulang dan bukan BUSINESS_READY seluruh produk.
+Sumber: izin deploy Andreas31Oktober2026, source, Linux qualification,
+backup/recovery, terminal activation dan verifikasi production.
+
 ## 2026-10-31 - Foto utama latte dan espresso untuk Kiosk
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED. Source
