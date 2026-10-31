@@ -1,5 +1,16 @@
 # SagaBook Changelog
 
+## 2026-10-31 - Kandidat migrasi DOKU QRIS dan Virtual Account
+
+CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PACKAGED_NOT_DEPLOYED.
+Atas arahan Andreas, kandidat DOKU Checkout disiapkan untuk booking/biaya perubahan SagaBook dan subscription SagaDev. Pilihan QRIS dan VA dibuka melalui checkout provider sesuai channel merchant; ini belum merupakan aktivasi channel production.
+
+Source SagaBook [f74201f](https://github.com/notyourgas/sagabook/commit/f74201f5edfa062b916b65fc643d69160ab5a5ca) dan kandidat control plane [ee55115](https://github.com/notyourgas/sagabook/commit/ee551150a87460ace008bc867d3d33096b0d22ab) dipisahkan dari baseline runtime masing-masing. Super admin dapat memilih provider; notification, inquiry, validasi nominal, idempotency dan pencatatan pembayaran dipisahkan per domain. Kegagalan satu metode DOKU Checkout tetap pending, hasil create tidak pasti tidak diulang otomatis, dan pembayaran setelah booking expired masuk rekonsiliasi operator. Credential TokoPay asal tetap dapat menyelesaikan transaksi lama; alur operational SagaPOS dan order-payment platform tetap dipertahankan pada TokoPay.
+
+Backend SagaBook: 1.534 tes lulus, 2 skipped dari 1.536; focused platform52/52, TypeScript UIUX SagaBook, build kedua kandidat, serta10 skenario browser lokal desktop/mobile PASS. Source-only package SagaBook dan paket Platform dengan UI prebuilt terikat commit/checksum telah diperiksa. Mode packaging tidak melakukan deploy, migration atau aktivasi provider. Pemeriksaan sintaks runner/profil recovery bukan disposable restore production; backup/restore fresh tetap wajib sebelum promotion.
+
+Credential DOKU belum tersedia pada pemeriksaan vault yang diotorisasi. Channel bank/QRIS, skema banyak studio, biaya dan settlement akun belum diverifikasi. Callback payment tidak dianggap bukti fee/net/dana tersedia; collection ditahan dari payout sampai rekonsiliasi statement provider. Tidak ada perubahan pricing/surcharge, transaksi provider, payout, atau deploy dalam pekerjaan ini. Runtime tetap SagaBook34dcf2a dan Platform690f56a, terverifikasi ulang read-only; provider production belum dialihkan. PROVIDER_ACCEPTANCE_OPEN dan BUSINESS_READY tetap OPEN.
+
 ## 2026-10-28 - Uji ulang QRIS masih belum menghasilkan QR
 
 CONFIRMED, permintaan Andreas untuk memastikan pemulihan provider. Satu uji
