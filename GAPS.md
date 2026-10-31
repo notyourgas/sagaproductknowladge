@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-01 - Aktivasi VA langsung SNAP dan pemeriksaan iPhone masih terbuka
+
+NEEDS CONFIRMATION / OPEN. Kode form HP dan UI VA langsung berada pada SagaBook source `97d2a3883b69827ccb617df4ec343df617c9a73c`, production release `20261031182719-97d2a38`, independent verifier 23/23 PASS. VA Checkout pusat tetap aktif; VA langsung belum diaktifkan. Perlu registrasi public key merchant, public key resmi DOKU, BIN bank dan konfigurasi notifikasi SNAP yang tidak mengganggu Checkout/subscription lama. Masih diperlukan create VA production, callback/inquiry paid dan settlement nyata. Browser production memerlukan popup ekstensi ditutup; keyboard iPhone fisik belum diuji. Fixture WebKit/Chromium dan deployment tidak menutup acceptance merchant atau BUSINESS_READY.
+
 ## 2026-10-31 - DOKU VA aktif, acceptance paid dan settlement masih terbuka
 
 NEEDS CONFIRMATION / OPEN untuk pembayaran lunas, callback/inquiry paid, laporan akhir dan fee/net/funds tersedia. Provider DOKU VA sudah aktif di kedua runtime dengan 11 metode dan credential aligned; create checkout serta inquiry pending production lulus. Persetujuan model merchant untuk studio mitra telah dikonfirmasi Andreas. QRIS masih UPDATING dan dikecualikan; Maybank Checkout belum terkonfirmasi. Belum ada pembayaran/refund/payout yang dieksekusi agent. Jangan menyebut BUSINESS_READY dari checkout unpaid, memperkirakan net sebagai fakta, atau membuka payout sebelum rekonsiliasi terpercaya. Konfigurasi metode otomatis per Owner tetap dihormati.

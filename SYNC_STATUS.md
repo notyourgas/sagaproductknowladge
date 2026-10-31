@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-01 - Sinkron perbaikan form HP dan persiapan VA langsung
+
+CONFIRMED: SagaBook source `97d2a3883b69827ccb617df4ec343df617c9a73c`, release `20261031182719-97d2a38`, PRODUCTION_ACTIVATED untuk perbaikan form dan pilihan metode pembayaran; independent verifier 23/23 PASS. Kode VA langsung SNAP sudah dirilis tetapi credential/merchant activation masih OPEN. DOKU Checkout 11 VA tetap aktif; QRIS dikecualikan. Product/Dossier/Changelog SagaBook, master, portfolio/root changelog dan GAPS diselaraskan. Paid/settlement serta iPhone fisik OPEN; tidak ada claim BUSINESS_READY.
+
 ## 2026-10-31 - Sinkron aktivasi DOKU VA production
 
 CONFIRMED: gateway pusat kedua runtime sudah DOKU production/aligned, 11 metode VA, QRIS tidak diizinkan. Source tetap SagaBook `22c72666dad83cc0da4b1a820ca3883dc7aaadca` dan Platform `6677c66b8783a3b6a55b97686293b2b54e5cf2d3`. Checkout unpaid HTTP 200 dan inquiry HTTP 200/PENDING; tidak ada pembayaran/refund/payout agent. Persetujuan skema studio mitra dikonfirmasi Andreas. Product/Dossier/Changelog kedua produk, master, portfolio/root changelog dan GAPS diselaraskan. Paid acceptance serta settlement OPEN, BUSINESS_READY tidak diklaim. Snapshot provider belum dialihkan sebelumnya adalah histori.

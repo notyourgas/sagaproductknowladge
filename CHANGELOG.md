@@ -1,5 +1,17 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-01 - Form HP diperbaiki, VA langsung menunggu aktivasi SNAP
+
+CONFIRMED / PRODUCTION_DEPLOYED dan PRODUCTION_ACTIVATED untuk perbaikan form serta pemisahan pilihan QRIS/VA. Source SagaBook [97d2a38](https://github.com/notyourgas/sagabook/commit/97d2a3883b69827ccb617df4ec343df617c9a73c), release `20261031182719-97d2a38`; Platform tetap pada source `6677c66b8783a3b6a55b97686293b2b54e5cf2d3`. Tidak ada perubahan schema, dependency, harga atau payout.
+
+Input perangkat sentuh memakai caret native dan field detail minimal 16px agar teks/fokus stabil saat mengetik dan mengurangi zoom otomatis Safari. Pilihan QRIS dan Virtual Account dipisahkan; allowlist DOKU Checkout production tetap 11 VA dan QRIS tetap dikecualikan.
+
+Alur VA langsung sudah diimplementasikan dalam kode dan dirilis dengan aktivasi merchant terpisah: pilih bank, tampilkan nomor VA/nama bank/nominal/batas waktu, lalu salin nomor di SagaBook. Integrasi memakai DOKU Direct API SNAP. Produksi belum menampilkan dropdown bank langsung karena credential SNAP belum diaktifkan; checkout existing tetap memakai alur asal. Registrasi public key merchant, public key DOKU, BIN bank per akun dan routing notification SNAP masih harus diverifikasi. Jangan menjanjikan alur VA langsung sudah tersedia untuk pelanggan dari deployment kode saja.
+
+Uji lokal mencakup token/signature/nominal/reference, penolakan bank tidak tersedia, sesi lama tetap dipakai saat bank berubah, replay callback, respons tidak pasti tidak dibuat ulang, serta pemeliharaan nomor VA. Browser Chromium desktop/mobile dan WebKit mobile memakai fixture sintetis; input tema Elegant Cream Brown lulus uji mengetik, mengedit dan perubahan viewport. Seluruh gate rilis native, backup terenkripsi/offsite dan disposable restore lulus; independent production verifier 23/23 serta source/health terverifikasi. Pemeriksaan interaksi form di browser production terhalang popup ekstensi Chrome; keyboard iPhone fisik belum diverifikasi.
+
+PAID_ACCEPTANCE_OPEN / SETTLEMENT_ACCEPTANCE_OPEN. Belum ada create VA SNAP production atau pembayaran baru oleh agent untuk perubahan ini. Handler lama dan pengaturan gateway pusat dipertahankan. Sesudah ada transaksi SNAP, pemulihan harus mempertahankan handler/token/credential SNAP; jangan kembali ke rilis yang hanya mendukung Checkout lama. BUSINESS_READY tidak diklaim.
+
 ## 2026-10-31 - DOKU Virtual Account aktif pada gateway pusat
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk provider DOKU VA. PAID_ACCEPTANCE_OPEN dan SETTLEMENT_ACCEPTANCE_OPEN; BUSINESS_READY tidak diklaim.
