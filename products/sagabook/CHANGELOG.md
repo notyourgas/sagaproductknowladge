@@ -1,5 +1,15 @@
 # SagaBook Changelog
 
+## 2026-10-31 - Kode kompatibilitas DOKU dirilis, provider belum dialihkan
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk kode kompatibilitas. PROVIDER_ACCEPTANCE_OPEN; BUSINESS_READY tidak diklaim.
+
+Atas otorisasi Andreas, kode SagaBook [22c7266](https://github.com/notyourgas/sagabook/commit/22c72666dad83cc0da4b1a820ca3883dc7aaadca) dan Platform [6677c66](https://github.com/notyourgas/sagabook/commit/6677c66b8783a3b6a55b97686293b2b54e5cf2d3) sudah aktif pada runtime masing-masing. Rilis SagaBook `20261031084456-22c7266` dan Platform `20261031090338-6677c66` dibaca ulang; target rollback dipertahankan. Pilihan DOKU Checkout QRIS/VA terlihat pada super admin production. Provider aktif kedua runtime tetap TokoPay dan credential tersinkron; credential DOKU dari vault belum dimasukkan atau diaktifkan dalam run ini.
+
+Full PHP dan gate rilis native SagaBook PASS; independent verifier23/23 PASS. Platform33/33 focused PHP,7/7 tes perilaku runner, build dan4/4 browser DOKU desktop/mobile PASS setelah koreksi dependency terarah. Validasi awal fitur tetap tercatat di histori; full suite Platform dan paid UAT tidak diklaim. Fresh backup terenkripsi/offsite serta disposable restore masing-masing exact candidate PASS. Frontend dibangun lokal. Kedua health200, layanan terkait active, endpoint notification DOKU menolak GET dengan405. Ini pemeriksaan runtime dan authenticated readback, bukan bukti callback provider asli.
+
+Client ID/Secret Key production telah terbaca lengkap secara aman dari vault. Inquiry read-only pada reference sintetis tidak membuat order/pembayaran dan belum membuktikan provider acceptance. Andreas memeriksa status Checkout, QRIS/bank VA, biaya, settlement dan kesesuaian merchant untuk beberapa studio. Allowlist channel, konfigurasi credential/notification, acceptance create/callback/inquiry serta fee/net/funds tersedia tetap OPEN. Tidak ada pembayaran, payout, perubahan pricing/surcharge atau order DOKU baru yang dieksekusi pada run ini. TokoPay historis dipertahankan; transaksi tidak pasti tidak dibuat ulang. Collection DOKU tidak menjadi siap payout hanya dari callback payment.
+
 ## 2026-10-31 - Kandidat migrasi DOKU QRIS dan Virtual Account
 
 CONFIRMED / SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / PACKAGED_NOT_DEPLOYED.

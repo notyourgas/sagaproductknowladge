@@ -1,8 +1,8 @@
 # Gaps dan Keputusan Founder
 
-## 2026-10-31 - DOKU provider acceptance belum tersedia
+## 2026-10-31 - Aktivasi dan provider acceptance DOKU masih terbuka
 
-NEEDS CONFIRMATION / OPEN. Kandidat migrasi QRIS+VA sudah diimplementasikan, diuji lokal dan dipaketkan, belum dideploy. Input berikutnya adalah credential melalui vault; channel aktif, kesesuaian model banyak studio, biaya, callback/inquiry provider asli serta settlement nyata tetap harus diverifikasi. Tidak mengaktifkan gateway atau menyimpulkan BUSINESS_READY dari mock test dan packaging. Transaksi TokoPay lama tidak dibuat ulang saat migrasi.
+NEEDS CONFIRMATION / OPEN. Kode kompatibilitas QRIS/VA sudah dirilis di SagaBook22c7266 dan Platform6677c66; provider aktif tetap TokoPay dan tersinkron. Credential DOKU telah tersedia di vault, sehingga permintaan key bukan lagi blocker. Andreas memeriksa Checkout, channel bank/QRIS, kesesuaian merchant untuk beberapa studio, biaya serta settlement. Berikutnya: allowlist dan konfigurasi credential/notification, acceptance provider asli, lalu fee/net/funds tersedia dari statement terpercaya. Read-only inquiry, mock test, code deployment dan HTTP200 bukan BUSINESS_READY. Belum ada pembayaran atau payout DOKU baru; transaksi TokoPay tidak pasti tidak dibuat ulang.
 
 ## 2026-10-30 - Tiga Cake aktif dan dikecualikan dari Trial Opening
 
