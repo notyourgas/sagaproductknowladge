@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-31 - Sinkron aktivasi DOKU VA production
+
+CONFIRMED: gateway pusat kedua runtime sudah DOKU production/aligned, 11 metode VA, QRIS tidak diizinkan. Source tetap SagaBook `22c72666dad83cc0da4b1a820ca3883dc7aaadca` dan Platform `6677c66b8783a3b6a55b97686293b2b54e5cf2d3`. Checkout unpaid HTTP 200 dan inquiry HTTP 200/PENDING; tidak ada pembayaran/refund/payout agent. Persetujuan skema studio mitra dikonfirmasi Andreas. Product/Dossier/Changelog kedua produk, master, portfolio/root changelog dan GAPS diselaraskan. Paid acceptance serta settlement OPEN, BUSINESS_READY tidak diklaim. Snapshot provider belum dialihkan sebelumnya adalah histori.
+
 ## 2026-10-31 - Sinkron rilis kode DOKU tanpa aktivasi provider
 
 CONFIRMED: SagaBook22c72666dad83cc0da4b1a820ca3883dc7aaadca dan Platform6677c66b8783a3b6a55b97686293b2b54e5cf2d3 sudah production-deployed dan dibaca ulang. Recovery masing-masing kandidat, native gates, health serta authenticated super admin readback PASS; TokoPay tetap provider aktif dan tersinkron. Credential DOKU tersedia di vault tetapi belum dipasang pada run ini. Aktivasi channel, provider acceptance dan settlement tetap OPEN; BUSINESS_READY tidak diklaim. Product kedua produk, changelog produk/portfolio/root, master dan GAPS diselaraskan. Snapshot persiapan sebelumnya adalah histori.

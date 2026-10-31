@@ -1,8 +1,8 @@
 # Gaps dan Keputusan Founder
 
-## 2026-10-31 - Aktivasi dan provider acceptance DOKU masih terbuka
+## 2026-10-31 - DOKU VA aktif, acceptance paid dan settlement masih terbuka
 
-NEEDS CONFIRMATION / OPEN. Kode kompatibilitas QRIS/VA sudah dirilis di SagaBook22c7266 dan Platform6677c66; provider aktif tetap TokoPay dan tersinkron. Credential DOKU telah tersedia di vault, sehingga permintaan key bukan lagi blocker. Andreas memeriksa Checkout, channel bank/QRIS, kesesuaian merchant untuk beberapa studio, biaya serta settlement. Berikutnya: allowlist dan konfigurasi credential/notification, acceptance provider asli, lalu fee/net/funds tersedia dari statement terpercaya. Read-only inquiry, mock test, code deployment dan HTTP200 bukan BUSINESS_READY. Belum ada pembayaran atau payout DOKU baru; transaksi TokoPay tidak pasti tidak dibuat ulang.
+NEEDS CONFIRMATION / OPEN untuk pembayaran lunas, callback/inquiry paid, laporan akhir dan fee/net/funds tersedia. Provider DOKU VA sudah aktif di kedua runtime dengan 11 metode dan credential aligned; create checkout serta inquiry pending production lulus. Persetujuan model merchant untuk studio mitra telah dikonfirmasi Andreas. QRIS masih UPDATING dan dikecualikan; Maybank Checkout belum terkonfirmasi. Belum ada pembayaran/refund/payout yang dieksekusi agent. Jangan menyebut BUSINESS_READY dari checkout unpaid, memperkirakan net sebagai fakta, atau membuka payout sebelum rekonsiliasi terpercaya. Konfigurasi metode otomatis per Owner tetap dihormati.
 
 ## 2026-10-30 - Tiga Cake aktif dan dikecualikan dari Trial Opening
 

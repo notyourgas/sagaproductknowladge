@@ -1,5 +1,19 @@
 # Saga Product Knowledge Changelog
 
+## 2026-10-31 - DOKU Virtual Account aktif pada gateway pusat
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk provider DOKU VA. PAID_ACCEPTANCE_OPEN dan SETTLEMENT_ACCEPTANCE_OPEN; BUSINESS_READY tidak diklaim.
+
+Gateway pusat Platform dan SagaBook telah beralih dari TokoPay ke DOKU Checkout production, dengan credential terenkripsi tersinkron. Source/runtime tetap SagaBook [22c7266](https://github.com/notyourgas/sagabook/commit/22c72666dad83cc0da4b1a820ca3883dc7aaadca) dan Platform [6677c66](https://github.com/notyourgas/sagabook/commit/6677c66b8783a3b6a55b97686293b2b54e5cf2d3); aktivasi ini mengubah konfigurasi, bukan merilis source baru. Credential TokoPay lama dipertahankan tanpa perubahan untuk callback/inquiry transaksi asal dan modul operational yang tetap memakai TokoPay. Order tidak pasti tidak dibuat ulang.
+
+Allowlist production kedua runtime membatasi checkout ke 11 VA: BNI, BRI, BSI, CIMB, Permata, Danamon, BTN, BNC, BSS, Sinarmas dan DOKU. Daftar layanan merchant menunjukkan QRIS masih UPDATING; QRIS tidak dimasukkan ke allowlist. BCA, Mandiri dan BJB belum dikonfirmasi aktif. Maybank aktif pada layanan VA SNAP tetapi belum tercantum pada daftar DOKU Checkout yang diperiksa, sehingga belum dimasukkan. Nilai metode dicocokkan dengan [dokumentasi DOKU Checkout](https://developers.doku.com/accept-payments/doku-checkout/configuration/supported-payment-methods).
+
+Andreas mengonfirmasi bahwa DOKU telah menyetujui penggunaan merchant untuk menerima dana booking studio mitra/pelanggan SagaBook. Satu checkout uji tanpa pembayaran berhasil dibuat melalui adapter yang sudah dirilis: HTTP 200 dan URL valid, lalu satu inquiry HTTP 200/PENDING. Uji ini tidak membuat booking pelanggan atau pembayaran, dan tidak membuktikan setiap bank, callback paid, lisensi setelah paid, atau settlement nyata. Label kelengkapan credential pada UI tetap dibedakan dari provider acceptance.
+
+Readback production menunjukkan DOKU configured dan credential aligned di kedua runtime; health kedua aplikasi 200 dan layanan terkait active. Proyeksi publik profil gateway pusat mengikuti DOKU. Pilihan Owner yang menonaktifkan metode otomatis tidak diubah. Tidak ada perubahan harga/surcharge, refund atau payout. Otomatisasi payout DOKU tidak diaktifkan; fee/net/dana tersedia tetap memerlukan statement terpercaya.
+
+Pemulihan harus mempertahankan kode handler DOKU/TokoPay saat menghentikan order DOKU baru. Sesudah terdapat order DOKU, jangan otomatis rollback ke kode lama yang kehilangan handler, mengalihkan order tidak pasti ke provider lain, atau restore database. Transfer manual mengikuti konfigurasi Owner yang sudah diverifikasi; TokoPay tidak dianggap kembali sehat hanya karena credential historis tersedia.
+
 ## 2026-10-31 - Kode kompatibilitas DOKU dirilis, provider belum dialihkan
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk kode kompatibilitas. PROVIDER_ACCEPTANCE_OPEN; BUSINESS_READY tidak diklaim.
