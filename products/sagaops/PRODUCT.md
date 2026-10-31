@@ -1425,7 +1425,7 @@ ditinjau terhadap perubahan katalog berikutnya. Jangan menghapus data offline.
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
 Keputusan Andreas: Kopi Saga dan Saga Studio memakai HR yang sama, dengan kategori Staff Admin dan tabel absensi terpisah dari Barista.
 
-Source [28ec4ff](https://github.com/notyourgas/sagaops/commit/28ec4ffaacc46cca30a71aa14e03eecf54ee6d30) pushed `codex/sagapos-staff-admin-20261023`, berbasis source rilis `4c6b9cbeb70638e5eca11fc9a21c3cd89a11eb18`.
+Source [28ec4ff](https://github.com/notyourgas/sagaops/commit/28ec4ffaacc46cca30a71aa14e03eecf54ee6d30) pushed pada branch `codex/sagapos-staff-admin-20261023`, berbasis source rilis `4c6b9cbeb70638e5eca11fc9a21c3cd89a11eb18`.
 Tambah karyawan menyediakan Staff Admin; akun baru memakai kode unik `ADM-`, kategori lain tetap `STF-`. Kode lama tetap saat kategori diedit. HR Absensi menampilkan tabel Barista, Staff Admin dan tim lainnya; filter kategori/status serta KPI mengikuti pilihan. Jadwal Admin WIB diatur sendiri, tanpa masuk generator roster Barista/Kitchen. Kategori kerja tidak memberikan hak Owner/kasir atau akses lintas organisasi/outlet.
 
 33 kasus relevan lulus secara agregat: run gabungan 32/33 lalu satu fixture tanggal lama diperbaiki tanpa mengubah assertion dan diuji ulang PASS. Pemeriksaan statis/TypeScript PASS, 1240 modul. Bukti database memakai embedded PostgreSQL-compatible harness; UI sintetis 1440/390 mencakup pemisahan tabel, login/akun, jadwal, absensi sendiri, isolasi, CSRF dan aksesibilitas. Bukan native PostgreSQL production atau UAT staf nyata.
@@ -2993,7 +2993,7 @@ operator UAT. Jangan menyamakan bukti sintetis atau artifact dengan BUSINESS_REA
 CONFIRMED: Andreas menerima auto-cut native partial-cut dan satu TEST browser,
 tetapi ekor nota tetap panjang setelah koreksi user/global no-break. Output
 Chrome ke sink file-only membuktikan81LF/0FF; menghapus form-feed bukan solusi.
-Source `8d38ad56bc1e03745cdeb2c543164d3125e4303e` pushed printer:
+Source `8d38ad56bc1e03745cdeb2c543164d3125e4303e` pushed pada branch printer:
 tinggi halaman browser kini dihitung dari isi+feed lewat CSS eksternal, CSP tetap.
 Affected24tes PASS, extended browser3PASS, static1103/core37/typesPASS;
 8PDF satu halaman berlebar58/80mm PASS. TEST80/feed15 sekitar116-118mm,
@@ -3445,7 +3445,7 @@ CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.
 Andreas menyetujui tambahan180detik; blocker allowance pending pada entri
 sebelumnya sudah dijawab, bukan waiver gate atau otorisasi transaksi/builder baru.
 Source appa5f29189cd8f9ed45be4cce6d1627095ad393828; checkpoint ledger
-065a6315485f20b4cec6d1636dd586e94ef9ee29 clean/pushed
+065a6315485f20b4cec6d1636dd586e94ef9ee29 clean/pushed pada branch
 codex/sagapos-foundation-20261014. CSV alur stok kini memakai report yang sama
 dengan tampilan, tanggal/cutoff/revisi dan fingerprint; perubahan laporan menolak
 unduhan stale dan meminta muat ulang. Angka quantity tidak dihitung ulang, formula
@@ -3600,7 +3600,7 @@ workflow/full qualification/recovery/Linux builder/deploy/UAT tetap OPEN.
 
 ## 2026-10-15 - Otorisasi tanda tangan nota per percobaan lulus lokal
 
-`CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.
+`CONFIRMED`; receipt source `039bd2125dbf9e80e7bf42c607ae4a671d6f918c` pushed pada branch printer terpisah. Server/API kini menerbitkan otorisasi hanya untuk nota tersimpan, lease/attempt dan identitas/revisi PC yang masih berlaku; input command, bytes, printer atau toSign arbitrer ditolak. Permission Tim memakai guard existing. Issuance per attempt disimpan sekali tanpa signature/credential/key dalam audit; rollback, respons hilang, revoke/config drift dan batas waktu diuji. Signing default OFF dan enabled signing masih ditolak pada seluruh release surfaces; tidak ada runner atau sertifikat nyata diaktifkan.
 
 Transport signed SENT menjadi SUBMITTED/CLIENT_REPORTED, bukan physical PRINTED. Physical NOT_VERIFIED dan status DB unknown tetap konservatif; versi metadata menjaga old-reader/rollback compatibility tanpa perubahan schema37/addon/grant. Signed NOT_SENT/recovery tidak otomatis resend.59tes unik Windows/PGlite PASS (38signing/document/queue/Team +19terminal/preparation/profile/mock-browser +2template API/persistence), check1098/core37/client511/TypeScript PASS. SDK vendored melaporkan2.2.6; kompatibilitas wire target Tray2.3.0 diuji dengan socket tiruan tanpa akses jaringan/printer. Ini bukan native/Linux/full/physical acceptance atau jaminan exactly-once kertas.
 
@@ -3649,13 +3649,13 @@ builder, recovery/artifact/activation/UAT. Printer scope tidak digabung.
 
 ## 2026-10-15 - Status identitas printer kedaluwarsa dan berubah diperjelas
 
-`CONFIRMED`; receipt source `7e1435f73128fc06109840c204f7dda31380c443` pushed printer terpisah. Pemeriksaan identitas PC kini membedakan EXPIRED dan CONFIGURATION_STALE dari identitas terdaftar; UI desktop/mobile menunjukkan perlu daftar ulang. Pembacaan tidak mengubah credential, revisi, audit atau transaksi, dan tidak memberi izin cetak. Pendaftaran tetap default OFF; physical commissioning/hardware dispatch tetap OFF.
+`CONFIRMED`; receipt source `7e1435f73128fc06109840c204f7dda31380c443` pushed pada branch printer terpisah. Pemeriksaan identitas PC kini membedakan EXPIRED dan CONFIGURATION_STALE dari identitas terdaftar; UI desktop/mobile menunjukkan perlu daftar ulang. Pembacaan tidak mengubah credential, revisi, audit atau transaksi, dan tidak memberi izin cetak. Pendaftaran tetap default OFF; physical commissioning/hardware dispatch tetap OFF.
 
 Current31tes unik Windows/PGlite PASS (19terminal/preparation/profile/mock-browser +10document/queue +2template persistence/API), check1096/core37/TypeScript PASS. Status, re-enrollment dan batas sesi HTTP diuji; screenshot sintetis desktop/mobile diperiksa. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED, bukan native/Linux/full/physical acceptance. Production95a6eda/service active diverifikasi read-only, unchanged. Signer terbatas, status submission/UNKNOWN, fenced cashier-Team dispatcher, host recovery, reviewed full/320 unblock dan Owner/physical/canary UAT masih OPEN. Pilihan konfirmasi versus trusted-certificate silent printing belum dikonfirmasi; tidak ada biaya, trust change atau fallback otomatis. Preview persisten belum terikat source final. NOT_BUSINESS_READY; scope stock branch, pricing/provider dan produk lain tidak berubah.
 
 ## 2026-10-15 - Identitas terminal Owner terimplementasi; cetak hardware belum aktif
 
-`CONFIRMED`; receipt source `8c0830e21242edcc2e376c66342848f595d318c7` pushed printer terpisah. Identitas PC kasir kini dapat diperiksa, didaftarkan ulang dan dicabut Owner melalui API/UI; disimpan durable, scoped per outlet dan terikat revisi persiapan. Credential memakai hash server/cookie HttpOnly, bukan UUID localStorage sebagai authority. Expiry/rotation/revoke/config drift diuji; enrollment default OFF, revocation tetap tersedia, physical commissioning dan hardware dispatch tetap OFF. Tidak ada schema37/addon/grant/dependency/payment change.
+`CONFIRMED`; receipt source `8c0830e21242edcc2e376c66342848f595d318c7` pushed pada branch printer terpisah. Identitas PC kasir kini dapat diperiksa, didaftarkan ulang dan dicabut Owner melalui API/UI; disimpan durable, scoped per outlet dan terikat revisi persiapan. Credential memakai hash server/cookie HttpOnly, bukan UUID localStorage sebagai authority. Expiry/rotation/revoke/config drift diuji; enrollment default OFF, revocation tetap tersedia, physical commissioning dan hardware dispatch tetap OFF. Tidak ada schema37/addon/grant/dependency/payment change.
 
 Current28tes unik Windows/PGlite PASS/0FAIL/0SKIP (17terminal/preparation/profile/browser +11document/queue/template regression), static1096/core37/TypeScript PASS. Desktop/mobile controls enabled/disabled dan screenshot sintetis diperiksa; raw-browser test memakai mock, bukan cetak fisik. LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED untuk identitas terminal; tidak ada PC asli didaftarkan atau credential nyata dipasang. Production95a6eda/service active unchanged dan NOT_BUSINESS_READY. Preview persisten belum memuat kandidat final; live Chrome TEST tertahan UI ekstensi. Native/Linux/full, constrained signer/status-submission/fenced cashier-Team integration, host recovery dan actual Owner/physical/canary UAT masih OPEN; correction ceilings lama tidak direset.
 
@@ -3813,13 +3813,13 @@ Next: prepare the existing full-client disposable fixture/schema/checksum prereq
 
 ## 2026-10-14 - Tahap0 scoped local closed; dynamic action UI corrected
 
-`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Final source/checkpoint `0e85bcb87f23bda4e33f76d9b97208d0cae11c9a` `codex/sagapos-foundation-20261014` menyatukan foundation Wave3 dan baseline SaaS terbaru. Runtime/test correction1489557 menutup dynamic KDS/approval buttons yang tertahan disabled setelah busy refresh. Explicit UI grants tetap diperiksa; backend/maker-checker/schema/dependency tidak berubah.27focused final PASS/0FAIL/0SKIP termasuk busy/recovery/revoke, profile-first/roles dan report-context. Full cash/KDS/closing browser pada correctionac4ef0f PASS dan dipetakan melalui unchanged runtime inputs; bukan mengubah failed aggregate menjadi PASS.
+`CONFIRMED / SCOPED_LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY`. Final source/checkpoint `0e85bcb87f23bda4e33f76d9b97208d0cae11c9a` pada branch `codex/sagapos-foundation-20261014` menyatukan foundation Wave3 dan baseline SaaS terbaru. Runtime/test correction1489557 menutup dynamic KDS/approval buttons yang tertahan disabled setelah busy refresh. Explicit UI grants tetap diperiksa; backend/maker-checker/schema/dependency tidak berubah.27focused final PASS/0FAIL/0SKIP termasuk busy/recovery/revoke, profile-first/roles dan report-context. Full cash/KDS/closing browser pada correctionac4ef0f PASS dan dipetakan melalui unchanged runtime inputs; bukan mengubah failed aggregate menjadi PASS.
 
 Native opening/report SQL26cases serta dua completed native SaaS journeys terikat source44dabff, dengan terminal owned cleanup verified dan unchanged server-input mapping. Full static1084modules/37migrations dan TypeScript pada44dabff dipetakan bersama changed-syntax PASS; tidak dianggap full suite/Linux qualification. Timeout, initial cleanup mismatch dan mock missing-read-grant failures retained. Administrative storage unblock memindah16old source archives/1.206GiB recoverably dengan independent hash readback; backup/DB/Codex/active source tidak dipindahkan. Aggregate allowance441.49/450s; no reset/additional time. Fresh09.52WIB production95a6eda ready/GATEWAY/SaaS CASH unchanged.27feature ledger dan residual T1 tersedia; packaging/release/real-role/device/business gate tetap OPEN. [Closing ledger](https://github.com/notyourgas/sagaops/blob/0e85bcb87f23bda4e33f76d9b97208d0cae11c9a/docs/STAGE0_FOUNDATION_20261014.md).
 
 ## 2026-10-14 - Tahap0: fondasi terintegrasi, qualification masih ditahan
 
-`CONFIRMED / SOURCE_INTEGRATED / PREPARED_UNVALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Source `44dabffe6b2048e5b82f55cab50ef83ebbe02898` telah committed/pushed `codex/sagapos-foundation-20261014`, di atas baseline SaaS68ce583. Delta Wave3 opening/reopening dan konteks histori laporan kini berada dalam satu kandidat tanpa mengganti modul SaaS/schema/dependency terbaru. Konflik helper tes diselesaikan dengan mempertahankan migrasi SaaS, cleanup database dan koneksi native independen; cleanup menutup pool sebelum drop database. Dua kontrak integrasi dipersiapkan, belum dijalankan.
+`CONFIRMED / SOURCE_INTEGRATED / PREPARED_UNVALIDATED / NOT_DEPLOYED / NOT_BUSINESS_READY`. Source `44dabffe6b2048e5b82f55cab50ef83ebbe02898` telah committed/pushed pada branch `codex/sagapos-foundation-20261014`, di atas baseline SaaS68ce583. Delta Wave3 opening/reopening dan konteks histori laporan kini berada dalam satu kandidat tanpa mengganti modul SaaS/schema/dependency terbaru. Konflik helper tes diselesaikan dengan mempertahankan migrasi SaaS, cleanup database dan koneksi native independen; cleanup menutup pool sebelum drop database. Dua kontrak integrasi dipersiapkan, belum dijalankan.
 
 Ledger memetakan27fitur, kontrak data/izin/retry dan urutan penutupan. Diff-check serta diff baseline critical source PASS; runtime/native/browser/static/TypeScript regresi gabungan NOT_RUN karena kapasitas sistem di bawah floor yang tidak diturunkan. Relokasi arsip sementara tertahan izin destination; tidak ada file source dihapus. Histori koreksi/budget terdahulu tetap disimpan. Live read-only health ready/runtime95a6eda/GATEWAY/SaaS cash unchanged; rollback2a18c9d berasal dari bukti rilis terakhir, tidak dicek ulang via SSH pada run ini. Tidak menaikkan skor readiness atau menganggap qualification rilis lama yang di-waive sebagai PASS. [Ledger dan strategi residual](https://github.com/notyourgas/sagaops/blob/44dabffe6b2048e5b82f55cab50ef83ebbe02898/docs/STAGE0_FOUNDATION_20261014.md).
 
@@ -4679,7 +4679,7 @@ Verified recovery cleanup reclaimed about1GB; existing staging profile projectio
 
 Remaining: prospective partial-refund completion/effects and report readers, operational compatible rollback/encrypted restore, state/reference/engine/final97 gates and authenticated UI UAT. Exact Orders Linux WebKit1482 diagnostic stopped at the original RAM floor before a terminal result; this is a resource stop, not a PASS or proven app cause.
 
-Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
+Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` pada branch `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
 
 ## 2026-10-08 — SagaPOS B2: cash journey recovery and shift clock qualified locally
 
@@ -5588,7 +5588,7 @@ bukan PASS. Pengaman tidak diturunkan; database production tidak dimutasi.
 
 ## 2026-09-30 — UI/UX Wave 1–3 aktif di SagaPOS production
 
-`CONFIRMED / PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Atas instruksi Andreas, tiga gelombang UI/UX Owner, Kasir dan Kiosk disatukan dari runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ke `d8aa4c60ca2172e5e5915b96eb6956437e38134a`, lalu hotfix navigasi Owner dari kasir aktif sebagai source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` `codex/sagapos-cashier-owner-login-hotfix-20260930`; rollback menunjuk d8aa. Runner code-only mendukung transisi schema 35→35; migrasi, lockfile, service unit, transaksi dan mode provider tidak berubah. Kandidat POS–Member reward/outbox dan AP terpisah tidak ikut.
+`CONFIRMED / PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Atas instruksi Andreas, tiga gelombang UI/UX Owner, Kasir dan Kiosk disatukan dari runtime `64dc78e347204ba7823fef8283f0ee881f3e4ff5` ke `d8aa4c60ca2172e5e5915b96eb6956437e38134a`, lalu hotfix navigasi Owner dari kasir aktif sebagai source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` pada branch `codex/sagapos-cashier-owner-login-hotfix-20260930`; rollback menunjuk d8aa. Runner code-only mendukung transisi schema 35→35; migrasi, lockfile, service unit, transaksi dan mode provider tidak berubah. Kandidat POS–Member reward/outbox dan AP terpisah tidak ikut.
 
 QA independen hotfix menerima lima tes terfokus, static 674 modul/schema 35 dan sintaks. Artifact exact-source, Owner autentik, backup terenkripsi/disposable restore, rehearsal kandidat 35→35 dan expected-current switch lulus. HTTPS health/monitor production ready pada c0dfa. Browser live membuktikan kasir → login Owner → aplikasi kasir; runner browser eksternal yang dikoreksi pada commit test-only `b3d1ea356b0258db3cdd9b053b55d1ef08d108be` lulus tujuh surface tanpa transaksi/error. Smoke pembayaran tetap PARTIAL karena canary sengaja belum diaktifkan dan mutasi pembayaran tertutup. UAT sentuh Kiosk 32 inci dan bisnis nyata tetap terbuka; `BUSINESS_READY=false`.
 
@@ -5679,7 +5679,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 - CONFIRMED / SOURCE_ACCEPTED / IMPLEMENTED_NOT_DEPLOYED: clean pushed source cb06fd88e0f290996537f4b8e947055bf012ad7c, branch codex/sagapos-coverage-release-20260928, direct parent 94a30f966da139a5817743e55d50c16739d2c9a0. Hanya dua file guard/test dari accepted leaf a35dcd274e93427d691dbb05da6157e77015e0cc diintegrasikan; seluruh 13 file kandidat94 dipertahankan. UI AP terpisah dan patch cash closing berikutnya belum termasuk.
 - Sebelum: cakupan posting belum membatasi semua bentuk penerimaan yang dapat dilayani alokasi nilai yang ada. Sesudah pada source: posting baru menolak cakupan parsial/pemeriksaan atau penerimaan yang belum didukung sebelum perubahan finansial. Ini pengaman kompatibilitas; dukungan akuntansi parsial/pemeriksaan dan koreksi data lama belum ditambahkan. Finance approval, Owner posting, pemisahan actor, CAS dan exact replay tetap. Kasus full ordinary/bonus, pecahan, multi-bahan, Finance-approved price variance dan fee tetap didukung pada kasus yang diuji.
-- Bukti guard source: FAIL-before 15 total / 5 PASS / 10 FAIL / exit1; setelah guard satu run 19 focused + 33 HPP = 52/52 PASS, 0 SKIP, actual exit0. Source dan integrasi beku ditinjau independen. Angka ini bukan fresh full/native kandidatcb06. Existing UI pure10/10 asal adalah bukti tambahan terpisah; UI AP tersebut tidak dibawa ke kandidat.
+- Bukti guard source: FAIL-before 15 total / 5 PASS / 10 FAIL / exit1; setelah guard satu run 19 focused + 33 HPP = 52/52 PASS, 0 SKIP, actual exit0. Source dan integrasi beku ditinjau independen. Angka ini bukan fresh full/native kandidatcb06. Existing UI pure10/10 pada branch asal adalah bukti tambahan terpisah; UI AP tersebut tidak dibawa ke kandidat.
 - Produksi tetap bbd4567eec1898b2dc55c6b75bc37a56374c06d3, rollback 3804f5b5729da90f0ab63cc1c25a13d5c61acc1a. Read-only current/health diverifikasi 28 September 13.42 WIB, ready/schema34/Gateway existing, reporting OFF dan Order Meja DEMO. Guard source belum live; BUSINESS_READY=false. Provider, Member/pilot, credential dan data bisnis nyata tidak berubah.
 - Next: fresh full dengan actual exit0 pada exact kandidat final, native rejection/positive/replay/rollback/restart/restore guard, immutable artifact serta fresh Owner/recovery/admission/activation/read-only smoke/monitor. Full94 sebelumnya mencatat 1731 PASS / 0 FAIL / 73 SKIP tetapi actual exitcode hilang, sehingga gate HOLD. Native94 lulus sebagai bukti historis, bukan native PASS kandidat baru. Cash closing masih source terpisah, belum commit rilis. UAT operator/perangkat/QRIS/stock/closing dan offsite recovery tetap terbuka.
 
@@ -5788,9 +5788,9 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-28 — Recovery antrean kasir aktif di production
 
-- `CONFIRMED / PRODUCTION_ACTIVATED`: source `f80146bb0bd6c67235914df2ba188cb551795b78` `codex/sagapos-cashier-queue-release-20260928` kini aktif; rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`. Kasir dapat memilih **Perbarui antrean**, melihat waktu pemeriksaan, dan mencoba ulang tanpa reload. Koneksi gagal menahan konfirmasi dari snapshot lama; status pembayaran/KDS tetap server-authoritative.
+- `CONFIRMED / PRODUCTION_ACTIVATED`: source `f80146bb0bd6c67235914df2ba188cb551795b78` pada branch `codex/sagapos-cashier-queue-release-20260928` kini aktif; rollback `b4e79a028ce48f369f983955bfefa19b2ed44763`. Kasir dapat memilih **Perbarui antrean**, melihat waktu pemeriksaan, dan mencoba ulang tanpa reload. Koneksi gagal menahan konfirmasi dari snapshot lama; status pembayaran/KDS tetap server-authoritative.
 - Artifact SHA-256 `7ce2188d006c858ca6caa29e9439032592281a3d037dad460abc1a2f003f2d0c`, admission, backup terenkripsi/restore disposable, serta rehearsal kandidat–rollback–kandidat lulus. Owner smoke, browser tujuh surface, recovery live normal/offline/retry/keyboard pada 390/1024/1440, monitor dan link verifier lulus; transaksi dibuat oleh verifikasi: 0.
-- Rilis code-only tidak mengubah 34 migrasi, provider, atau mode Gateway existing. Kiosk tetap `CASH_ASSISTED`; QRIS statis belum tersedia karena aset merchant belum dikonfigurasi, Order Meja tetap DEMO. Source lain pengembangan tidak ikut dirilis. Ini authenticated release smoke, bukan UAT pembayaran nyata; offsite restore belum terverifikasi, `BUSINESS_READY=false`.
+- Rilis code-only tidak mengubah 34 migrasi, provider, atau mode Gateway existing. Kiosk tetap `CASH_ASSISTED`; QRIS statis belum tersedia karena aset merchant belum dikonfigurasi, Order Meja tetap DEMO. Source lain pada branch pengembangan tidak ikut dirilis. Ini authenticated release smoke, bukan UAT pembayaran nyata; offsite restore belum terverifikasi, `BUSINESS_READY=false`.
 
 ## 2026-09-28 — Master supplier di Pembelian Owner, source-only
 
@@ -5963,7 +5963,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-24 — Pengaman metode QRIS source-only dan QR meja demo terbatas
 
-- `CONFIRMED`: source `0567e7a64fe05265b5201430333c2980de29bf45` `codex/sagapos-trial99-method-guard-20260924` menolak penggunaan diskon canary privat pada metode selain QRIS, termasuk context override. Source ter-push tetapi belum dideploy; runtime tetap `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
+- `CONFIRMED`: source `0567e7a64fe05265b5201430333c2980de29bf45` pada branch `codex/sagapos-trial99-method-guard-20260924` menolak penggunaan diskon canary privat pada metode selain QRIS, termasuk context override. Source ter-push tetapi belum dideploy; runtime tetap `8dc83caa0e211cd235415fe8f267712a23117171`, rollback `1ca225cbe1b219f5667eac1a7508f7c95c178e2a`.
 - Satu QR meja bertanda tangan berdurasi 24 jam diterbitkan untuk uji **DEMO** dan bootstrap publik lulus HTTP 200. Bearer URL tidak disimpan dalam knowledge publik. Order Meja/Kiosk tetap simulator; QRIS riil, promo publik 99%, dan fakta keuangan production tidak diaktifkan. Regresi terfokus lulus, tetapi regresi penuh lokal tidak hijau pada host uji sehingga release ditahan. `IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
 ## 2026-09-24 — Kandidat integrasi ditarik kembali setelah gate gagal
@@ -6011,7 +6011,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## Source 2026-09-23 — public e-menu diselaraskan dengan gateway aktif, belum deploy
 
-- `CONFIRMED`: commit `c8a811dbf90574c14b957e2668ddb0e22ce2d964` terisolasi menambahkan renderer fail-closed untuk delapan route katalog GET/HEAD tepat pada host `sagapos.site`. Kontrak preview tetap baca-saja, tanpa cart, quote, checkout, pembayaran, identitas meja, atau dispatch KDS.
+- `CONFIRMED`: commit `c8a811dbf90574c14b957e2668ddb0e22ce2d964` pada branch terisolasi menambahkan renderer fail-closed untuk delapan route katalog GET/HEAD tepat pada host `sagapos.site`. Kontrak preview tetap baca-saja, tanpa cart, quote, checkout, pembayaran, identitas meja, atau dispatch KDS.
 - Pemeriksaan statis/type 612 modul, tes terfokus, browser katalog, regresi penuh lokal dengan exit 0 pada host test yang mendukung hard-link, dan audit dependency production nol vulnerability. Kandidat konfigurasi lulus `nginx -t` secara terisolasi; Nginx production tidak diubah.
 - Production tetap pada source `9c364ff2359940f73d52985fd752101d5d94b84b`, dengan SagaDev Gateway controlled canary existing tetap ON atas izin Owner. Order Meja/Kiosk tetap simulator. Anonymous `https://sagapos.site/menu` masih 401; `https://order.sagapos.site/` belum tersedia. Artifact rilis, runner gateway-aware, recovery, Owner gate dan authenticated smoke masih pending. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 - Entri ingress `1298fc...` di bawah adalah histori kandidat lama dengan asumsi payment OFF; jangan mempromosikannya di atas release gateway aktif.
@@ -6025,20 +6025,20 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## Source 2026-09-23 — ingress e-menu Kopi Saga publik baca-saja, belum aktif
 
-- `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` `codex/sagapos-public-menu-ingress-20260923` menyiapkan delapan lokasi Nginx tepat untuk `sagapos.site`: tiga halaman e-menu, API katalog baca-saja, dan empat aset entry CSS/JS. Host lain ditolak, hanya GET/HEAD diterima, dan credential/cookie tidak diteruskan ke backend.
+- `CONFIRMED`: source `1298fc375ab5134ed88729dd445845880f146dbf` pada branch `codex/sagapos-public-menu-ingress-20260923` menyiapkan delapan lokasi Nginx tepat untuk `sagapos.site`: tiga halaman e-menu, API katalog baca-saja, dan empat aset entry CSS/JS. Host lain ditolak, hanya GET/HEAD diterima, dan credential/cookie tidak diteruskan ke backend.
 - Kontrak katalog tetap `CATALOG_PREVIEW` dan `readOnly=true`, tanpa cart, quote, checkout, payment, identitas meja, atau dispatch KDS. Signed Order Meja, Kiosk, Owner Dashboard, dan KDS tidak dibuka oleh ingress ini. Static/type 603 modul dan regresi relevan 19 pass/0 fail/1 skip host Firefox lulus; audit dependency production 0 temuan.
 - Production belum berubah: `/menu` masih 401 secara anonim, active/rollback `758eb8f02cffa38a294c0fa91420074b06e4d981` / `c2440a2e938317332977f9d0912d986b9a502df6`, payment/gateway nyata `OFF`. Candidate masih memerlukan rekonsiliasi dengan branch release lain, artifact/recovery, aktivasi ingress, public/auth negative smoke, dan monitoring. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
 ## Source 2026-09-23 — Phase 8B SagaDev Gateway candidate, belum dideploy
 
-- `CONFIRMED`: commit source `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` `codex/sagapos-phase8b-sagadev-gateway` mengimplementasikan boundary pembayaran SagaDev Gateway untuk product `sagaops`, contract `1.0`, dan delivery `signed_status_polling`. Provider callback tetap berhenti di gateway pusat; SagaPOS tidak menerima callback provider langsung dan tidak menyimpan central merchant secret.
+- `CONFIRMED`: commit source `601db9f4b5afeab676fb5be3fcd32ea8db52fa5d` pada branch `codex/sagapos-phase8b-sagadev-gateway` mengimplementasikan boundary pembayaran SagaDev Gateway untuk product `sagaops`, contract `1.0`, dan delivery `signed_status_polling`. Provider callback tetap berhenti di gateway pusat; SagaPOS tidak menerima callback provider langsung dan tidak menyimpan central merchant secret.
 - Runtime production default tetap `OFF/OFF`. Mode gateway hanya dapat dimulai dengan pasangan `gateway/production`, credential systemd yang dipisah antara konfigurasi non-secret dan outbound secret, marker controlled canary, serta Owner readiness fail-closed. Readiness tidak mengeksekusi transaksi dan `paymentMutationAllowed` tetap `false`.
 - Validasi source: static/type 607 modul, focused final 33/33, dan durable production QRIS gateway 1/1 lulus. Full repository run tidak diterima sebagai bukti release karena kapasitas disk/OOM host; setelah satu ekspektasi source diperbaiki, sepuluh failure tersisa berasal dari admission/temp-write/Node OOM dan harus diulang pada host sehat.
 - Candidate ini berasal dari baseline Phase 8A `420c407d92a8055d5bd8fcaa6605704f23195bbe`, sehingga wajib direkonsiliasi ke release aktif dan branch Phase 8A terkini sebelum packaging. Belum ada artifact, credential provisioning, backup/restore, rehearsal, activation window, authenticated Owner production UAT, pembayaran uang nyata, atau settlement reconciliation. Production tetap pada `758eb8f02cffa38a294c0fa91420074b06e4d981`, payment/gateway `OFF`; status `SOURCE_PUSHED / LOCAL_VALIDATED_FOCUSED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
 ## Source 2026-09-23 — Phase 8A diselaraskan ke release aktif, belum dideploy
 
-- `CONFIRMED`: commit source `93595a56e38efef43aa125e5fa69c503a5836075` `codex/sagapos-phase8a-aligned-20260923` membawa Phase 8A ke baseline production `758eb8f02cffa38a294c0fa91420074b06e4d981` tanpa mengganti Kiosk/Table Order stream. Pemeriksaan statis/type dan regresi penuh lulus: 1.600 pass, 0 fail, 73 skip.
+- `CONFIRMED`: commit source `93595a56e38efef43aa125e5fa69c503a5836075` pada branch `codex/sagapos-phase8a-aligned-20260923` membawa Phase 8A ke baseline production `758eb8f02cffa38a294c0fa91420074b06e4d981` tanpa mengganti Kiosk/Table Order stream. Pemeriksaan statis/type dan regresi penuh lulus: 1.600 pass, 0 fail, 73 skip.
 - Production tetap pada `758eb8f02cffa38a294c0fa91420074b06e4d981` dengan rollback `c2440a2e938317332977f9d0912d986b9a502df6`; inventory reporting dan pembayaran nyata `OFF`. Tidak ada artifact/rehearsal/aktivasi untuk commit baru ini, dan branch release paralel perlu direkonsiliasi sebelum rilis. Status `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
 ## Production 2026-09-23 — Kiosk dan QR meja memakai status stream aktif
@@ -6058,7 +6058,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## Source 2026-09-23 — Status Kiosk tersinkron melalui stream, belum dideploy
 
-- `CONFIRMED`: commit `1491cd0` source khusus sudah ter-push. Kiosk memakai event stream sesi yang sama dengan QR meja untuk snapshot order, pembayaran demo, dan status KDS; polling tetap 4 detik dihapus. Reconnect dibatasi dengan backoff, status stale terlihat, dan tersedia refresh manual.
+- `CONFIRMED`: commit `1491cd0` pada branch source khusus sudah ter-push. Kiosk memakai event stream sesi yang sama dengan QR meja untuk snapshot order, pembayaran demo, dan status KDS; polling tetap 4 detik dihapus. Reconnect dibatasi dengan backoff, status stale terlihat, dan tersedia refresh manual.
 - Replay idempoten tidak mengirim notifikasi status baru. Harga, pembayaran, dan status tetap ditetapkan server; payment nyata tetap `OFF` dan order demo tetap terisolasi dari fakta bisnis.
 - Validasi lokal: focused Kiosk/Table 17/17, full regression serial 1.588 pass/0 fail/73 skip dari 1.661 tes, static/type/build lulus, dependency production audit nol vulnerability. Run paralel sebelumnya gagal satu tes akibat batas buffer jaringan host, bukan dipakai sebagai bukti lulus.
 - Saat source-only, delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`; catatan ini telah disupersesi oleh rilis gabungan `758eb8f02cffa38a294c0fa91420074b06e4d981` di atas. Hostname khusus Order Meja tetap belum resolve DNS.
@@ -6745,7 +6745,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-07 — HR langsung dari sesi Owner SagaPOS production
 
-- `CONFIRMED`; exact SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` `codex/sagapos-production-release-50b3` sudah dipush dan aktif di `dashboard.sagapos.site`.
+- `CONFIRMED`; exact SagaPOS source `614be99927802e329705f5c7575dd6813a83bac6` pada branch `codex/sagapos-production-release-50b3` sudah dipush dan aktif di `dashboard.sagapos.site`.
 - Owner cukup login sekali ke SagaPOS. Halaman `/hr` memakai sesi Owner yang sama dan membuat delegasi server-to-server berumur pendek ke SagaWork; tidak ada form atau login SagaWork kedua di browser.
 - Integrasi memakai exact organization/owner binding, HMAC plus nonce, token terenkripsi server-side, per-command permission refresh, revocation, anonymous denial dan role grant `hr` least-privilege.
 - PASS SagaPOS full394, SagaWork full1085, type/lint/build/OpenAPI, dependency audit high0, encrypted backup plus disposable restore pada kedua runtime, end-to-end delegated read, monitor dan rollback/reactivation drill. Pengujian tidak membuat order atau payment.
@@ -6918,7 +6918,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-06 — Full inventory count atomik
 
-- Klasifikasi `CONFIRMED`; source final `87e878f06d383fc851684cdc171744d1abf691cb` Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Klasifikasi `CONFIRMED`; source final `87e878f06d383fc851684cdc171744d1abf691cb` pada branch Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 - Owner Admin kini memiliki full-count terpisah dari cycle count: seluruh bahan dengan saldo terkelola wajib diisi dari hasil fisik yang sengaja tidak diprefill, lalu direview dan dikonfirmasi. Sesi selesai menyimpan coverage, before/after, delta nilai, actor, alasan, waktu, dan movement terhubung.
 - Domain menolak bahan hilang/duplikat, payload berubah pada idempotency key yang sama, version conflict, orphan movement, urutan sesi rusak, dan state tampered. Satu kegagalan commit Postgres membatalkan memory dan database bersama; retry bersih menghasilkan satu sesi.
 - Evidence exact source: focused domain/browser/durable 29/29, full regression 332/332 concurrency 2, static/type/OpenAPI 169 modul/12 migrasi, Admin 390/1440 reduced-motion dengan Axe serious/critical 0, touch target/keyboard/overflow dan visual review lulus; dependency production 0 dan added-line secret heuristic 0.
@@ -6930,7 +6930,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-06 — Pemakaian bahan teoretis dari menu paid
 
-- Klasifikasi `CONFIRMED`; source `916bac28dd994966b607d629aebbd6741524419f` pushed Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Klasifikasi `CONFIRMED`; source `916bac28dd994966b607d629aebbd6741524419f` pushed pada branch Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 - Owner Dashboard kini menghitung kuantitas bahan teoretis dari snapshot resep immutable × quantity menu `PAID/COMPLETED` per tanggal bisnis WIB, menampilkan sumber menu, cost snapshot, coverage tertimbang quantity, resep yang belum lengkap, dan CSV owner-only.
 - Coverage parsial dipromosikan ke `Perlu ditindak`; verified subset tidak pernah disebut total seluruh penjualan. Actual usage tetap unavailable sampai ada stock count pembuka/penutup. Resep modifier, packaging dan stock-mutating sale consumption belum diimplementasikan.
 - Validasi final: focused 30/30 lalu 19/19, full 330/330 concurrency 2, static/type/OpenAPI 169 modul/12 migrasi, restart PostgreSQL, 390/1440 browser, Axe serious/critical 0, no overflow, internal touch-scroll, dependency audit 0 dan added-line secret heuristic 0. Tidak ada dependency/migrasi/payment/HR/provider baru.
@@ -6938,7 +6938,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-06 — Cycle count, waste ledger, dan Dashboard stok
 
-- Klasifikasi `CONFIRMED`; source final `17d57a281da53fe3be3882b37af9acd00316d09e` Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Klasifikasi `CONFIRMED`; source final `17d57a281da53fe3be3882b37af9acd00316d09e` pada branch Saga POS. Scope hanya Kopi Saga F&B; delivery `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 - Owner Admin kini dapat menyimpan saldo fisik absolut melalui cycle count atau mengurangi saldo dengan alasan basi/kedaluwarsa, waste produksi, rusak, pemakaian internal, sampel/promosi, dan hilang/pencurian. Mutasi owner-only, versioned, idempotent, beralasan dan menolak stok negatif.
 - Ledger menampilkan kuantitas sebelum/sesudah, delta nilai HPP, actor dan waktu. HPP state v3 memutar ulang receipt serta movement menurut versi dan gagal tertutup bila fingerprint, delta, saldo atau ingredient cost tidak cocok. Count nol mempertahankan unit cost terakhir tanpa menyisakan nilai persediaan.
 - Owner Dashboard menampilkan nilai bahan diterima dan waste/pengurangan pada tanggal bisnis WIB yang dipilih; selisih cycle count tidak diam-diam diklasifikasikan sebagai waste. Snapshot HPP transaksi lama tetap immutable.
@@ -6947,7 +6947,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-06 — Penerimaan pembelian dan moving-average HPP
 
-- Klasifikasi `CONFIRMED`; source final `a742d5f98608c3729b7e80f523a450346499295d` Saga POS. Scope hanya Kopi Saga F&B dan status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
+- Klasifikasi `CONFIRMED`; source final `a742d5f98608c3729b7e80f523a450346499295d` pada branch Saga POS. Scope hanya Kopi Saga F&B dan status `LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED`.
 - Owner/Admin kini dapat mencatat penerimaan supplier per bahan dengan kuantitas kemasan, konversi ke gram/ml/pcs dan total biaya. Server memperbarui saldo kuantitas/nilai serta moving-average biaya satuan secara idempotent; recipe HPP memakai biaya tersebut tanpa menulis ulang snapshot transaksi lama.
 - Persistence HPP v2 pulih setelah restart dan memverifikasi ulang fingerprint kanonik, total, konversi, waktu serta alasan. Base unit dan biaya purchase-managed tidak dapat diedit diam-diam setelah receipt.
 - Moving-average mempertahankan presisi sampai enam desimal per base unit; pembulatan Rupiah baru dilakukan pada total line resep. Batas quantity receipt dan saldo diselaraskan agar nilai maksimum yang diterima tetap restart-safe. Validasi: focused 31/31, full regression 320/320, static/type/OpenAPI 166 modul/12 migrasi, Admin 390/1440px dengan Axe serious/critical 0, touch minimal 44px, tanpa overflow, audit dependency 0 dan scan restricted-data 0.
@@ -6962,7 +6962,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-06 — SagaOPS owner recipe dan HPP authoring guard
 
-- Klasifikasi `CONFIRMED`; source implementasi `ca945a539a36231066b0be7b3c4696d9f62b5ba3`, dokumentasi `f90f8f75a13e78e3bb2b8cef3de36ef6df89f32c`, pushed Saga POS. Scope hanya F&B Kopi Saga; bukti dari source, test dan laporan HPP kanonik.
+- Klasifikasi `CONFIRMED`; source implementasi `ca945a539a36231066b0be7b3c4696d9f62b5ba3`, dokumentasi `f90f8f75a13e78e3bb2b8cef3de36ef6df89f32c`, pushed pada branch Saga POS. Scope hanya F&B Kopi Saga; bukti dari source, test dan laporan HPP kanonik.
 - Before: snapshot biaya telah aman tetapi katalog aktif belum memiliki workflow untuk mengisi bahan/resep atau menahan minuman yang belum lengkap. After: Owner Admin memiliki empat tahap untuk master bahan dalam gram/ml/pcs, komponen resep, audit HPP/margin/harga saran per menu, dan gate completeness minuman yang diaktifkan terpisah. Biaya kosong tetap `INCOMPLETE`, bukan Rp0.
 - Mutasi owner membutuhkan CSRF, reason dan expected version; state disimpan per organisasi/outlet dengan PostgreSQL CAS, RLS serta audit. Snapshot checkout tetap immutable. Gate hanya dapat aktif ketika semua minuman aktif lengkap dan setelah aktif menolak perubahan atau checkout yang merusak coverage. Tidak ada biaya supplier/resep bisnis yang dikarang.
 - Validasi lokal: focused domain/durable/finance 25/25, browser terkait 5/5, full regression 312/312, static/type/OpenAPI 163 modul/12 migrasi, Owner 390/1440px dengan Axe serious/critical 0, touch target minimal 44px dan tanpa overflow; dependency audit serta scan credential/private-key 0. Regresi scroll keyboard ditemukan oleh full suite, diperbaiki, lalu assertion asli tetap hijau.
@@ -6971,7 +6971,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-06 — SagaOPS historical HPP snapshot truth
 
-- Klasifikasi `CONFIRMED`; source implementasi `7fdbc158b010efd3db66d7303e2712224be2b0d2`, dokumentasi `abdc1132fd012ed7e2172f5424436ee5ec33aa88`, pushed Saga POS. Bukti utama: source/test dan `docs/SAGA_POS_HPP_SNAPSHOT_TRUTH_2026-09-06.md`. Scope hanya F&B Kopi Saga.
+- Klasifikasi `CONFIRMED`; source implementasi `7fdbc158b010efd3db66d7303e2712224be2b0d2`, dokumentasi `abdc1132fd012ed7e2172f5424436ee5ec33aa88`, pushed pada branch Saga POS. Bukti utama: source/test dan `docs/SAGA_POS_HPP_SNAPSHOT_TRUTH_2026-09-06.md`. Scope hanya F&B Kopi Saga.
 - Before: item order hanya memiliki angka biaya placeholder sehingga Rp0 tidak dapat dibedakan dari biaya yang hilang. After: checkout membekukan versi resep, kuantitas/unit/biaya bahan dan status `VERIFIED/INCOMPLETE`; produk resep yang belum lengkap diblokir kecuali eksplisit diizinkan sementara. Order lama/simulator tetap `UNVERIFIED`, bukan direkayasa sebagai biaya nol.
 - Owner/Admin dan CSV menampilkan coverage, order terverifikasi/dikecualikan, subset penjualan/HPP dan produk yang perlu dilengkapi. Total HPP teoretis serta laba kotor hanya muncul pada coverage 100%. HPP aktual dan laba bersih tetap tidak tersedia sampai pembelian, stock count, waste/adjustment, fee dan biaya operasional mempunyai fakta otoritatif.
 - PostgreSQL menyimpan snapshot JSON/version/status immutable dan mempertahankan RLS. Validasi lokal: static/type/OpenAPI 160 modul/11 migrasi PASS; focused 32/32 dan full 307/307 PASS; owner 390/1440px, Axe serious/critical 0, overflow/touch/keyboard serta visual review PASS; dependency audit 0 dan high-confidence secret scan 0.
@@ -6981,7 +6981,7 @@ Production **tidak berubah**; health SagaPOS22:36WIB ready=true pada `64dc78e347
 
 ## 2026-09-06 — SagaOPS permohonan pribadi staf terintegrasi lokal
 
-- CONFIRMED; source `f79a773259f6a1fd2c8ef893cab02d29bdd3e855`, pushed `codex/saga-pos-vs01-kiosk-kds-dashboard`. Bukti: source/tests dan `docs/HRPOS_STAFF_OWN_REQUEST_POS_2026-09-06.md`. Hanya F&B Kopi Saga.
+- CONFIRMED; source `f79a773259f6a1fd2c8ef893cab02d29bdd3e855`, pushed pada branch `codex/saga-pos-vs01-kiosk-kds-dashboard`. Bukti: source/tests dan `docs/HRPOS_STAFF_OWN_REQUEST_POS_2026-09-06.md`. Hanya F&B Kopi Saga.
 - Before: portal POS hanya membaca jadwal. After: staf berizin dapat membaca permohonan pribadi, sembilan filter status, pagination manual 20 baris, detail inline, alasan/riwayat/tahap persetujuan. Tidak ada create/edit/approve/payroll action. Akses permohonan tidak mensyaratkan izin jadwal; role HR tidak menjadi jalan pintas.
 - Integrasi: dua fixed own-read operations, strict input/output projection, active-role/CSRF/same-origin dan re-introspection. Cursor body-only, null menit disetujui bukan nol; konten privat dibersihkan saat hide/close/logout/revocation. POS mengenali 23 operasi, bukan seluruh 69 capability provider. Kontrak provider `c6cd3007c5f52cab33ac507d56ab93414033f73e` unchanged; increment portal provider berikutnya bukan dependency.
 - Validasi lokal final: Chromium 304/304, WebKit 14/14, focused DTO/transport 5/5, static/type/diff, Axe 0 pada 390/1440px, overflow/touch/keyboard/recovery dan 20 baris panjang PASS; dependency audit 0 dan high-confidence staged secret signatures 0. Actual BFF memakai provider sintetis dan PGlite, bukan joint native MySQL/PostgreSQL.
