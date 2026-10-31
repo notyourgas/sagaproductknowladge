@@ -1,5 +1,35 @@
 # Portfolio Changelog
 
+## 2026-10-31 - Kartu promo Kiosk 4:5 aktif di production
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk UI promo Kiosk.
+Aplikasi `69b3f5e4255aa6c588201dfaf4d0050a4710dff1`; rollback
+`78b905bdaf89cad43c144c167217fe9b56498613`. Entri validasi lokal sebelumnya
+menjadi histori. Order Now menampilkan poster asli Kopi Saga dan Saga Studio
+dalam kartu melayang compact 4:5, dengan navigasi dan Lanjut pesan tanpa waktu
+tunggu wajib. Poster tidak dipotong. Catatan Cake tidak termasuk tetap tampil;
+TRIALCUY hanya informasi booking Studio. Tampilan dijadwalkan sampai
+1 November 2026 WIB. Harga, kelayakan promo dan verifikasi pembayaran tetap
+mengikuti server; tampilan poster tidak mengaktifkan benefit tambahan.
+
+Kualifikasi Linux41173977333 lulus132 tes, termasuk offline/native PostgreSQL,
+nota dan printer. Paket dan bukti kualifikasi diverifikasi checksum-nya.
+Backup terenkripsi baru lolos restore disposable dan verifikasi salinan di luar
+server; rehearsal native kandidat-current-kandidat lulus sebelum aktivasi.
+Satu grup backup historis dan tiga artefak historis dipindahkan setelah seluruh
+ukuran/hash cocok; backup terbaru, rollback dan direktori release dipertahankan.
+Pemeriksaan Owner, health dan aset promo production cocok byte-for-byte. UI
+portrait production menjaga pengunci printer; interaksi kartu lulus di CI.
+
+Backend,37 migrasi dan Nginx tetap. Hash konfigurasi nota, printer, checker,
+QRIS, jadwal/tarif staf dan kebijakan absensi cocok sebelum/sesudah.
+Kualifikasi offline diikat ulang ke kandidat tanpa mengubah kebijakannya.
+Tidak membuat transaksi atau mencetak TEST. UAT fisik Chromebook tidak diulang;
+ini bukan BUSINESS_READY seluruh produk. Sumber: izin deploy Andreas,
+source/paket immutable, CI, backup/recovery dan verifikasi production.
+File terdampak: PRODUCT, DOSSIER, changelog produk/portfolio/root,
+CHATGPT_MASTER_KNOWLEDGE dan SYNC_STATUS. Tidak ada blocker rilis scope ini.
+
 ## 2026-10-31 - Kartu promo Kiosk compact 4:5, validasi lokal
 
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
