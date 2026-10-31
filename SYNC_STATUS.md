@@ -1,5 +1,29 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-10-31 - Kartu promo Kiosk compact 4:5, validasi lokal
+
+CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.
+Source `69b3f5e4255aa6c588201dfaf4d0050a4710dff1`
+sudah dipush. Sesudah Order Now,
+Kiosk menampilkan dua poster asli Andreas dalam dialog melayang compact 4:5,
+tanpa crop atau waktu tunggu wajib; pelanggan dapat geser, memilih kartu,
+melewati promo, atau langsung lanjut pesan. Catatan Cake tidak termasuk
+ditampilkan untuk Kopi Saga. Kode TRIALCUY hanya informasi booking Studio.
+Tampilan dijadwalkan sampai 1 November 2026 WIB; aturan finansial server tetap.
+
+Lima tes promo dan satu kontrak workflow lolos, ditambah 15 regresi pembayaran/
+PIN/fullscreen serta lima tes welcome/printer sebelumnya. Empat viewport,
+aksesibilitas, expiry, gambar gagal, printer terputus dan manifest offline
+sudah diperiksa. Dua uji offline end-to-end masih memerlukan Linux native:
+fixture Windows terkendala lz4/openssl; assertion tidak dilonggarkan.
+Layout nota, printer, harga dan pembayaran tidak berubah. Production tetap
+pada rilis welcome `78b905bdaf89cad43c144c167217fe9b56498613`;
+kartu promo belum deployed/activated dan bukan klaim BUSINESS_READY.
+Sumber: desain dan arahan ukuran Andreas, source commit serta tes lokal.
+Langkah berikutnya: kualifikasi Linux dan rilis guarded sebelum aktivasi.
+File knowledge terdampak: PRODUCT, DOSSIER, changelog produk/portfolio/root,
+CHATGPT_MASTER_KNOWLEDGE dan SYNC_STATUS.
+
 ## 2026-10-31 - Pembuka Kiosk portrait dan indikator printer sudah aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk scope UI Kiosk.
@@ -1230,7 +1254,7 @@ UAT OPEN. Source/knowledge commit terpisah; produk lain dan Member ingress tetap
 
 ## 2026-10-25 - SagaBook reschedule sesi lewat dengan charge admin
 
-CONFIRMED source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4 pada branch
+CONFIRMED source7a575827dac3630dd7bbc3c2d4305a1f1b00d9b4
 codex/sagabook-admin-late-reschedule-20261025, SOURCE_PUSHED / LOCAL_VALIDATED /
 IMPLEMENTED_NOT_DEPLOYED. Biaya tetap Rp30.000, pindah jadwal langsung dan
 pembayaran charge paid/unpaid terpisah. Baseline production b96e4fdc digabung.
@@ -1476,7 +1500,7 @@ independen dipertahankan. Main HEAD; bukan penerimaan operasional perangkat baru
 CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_PRODUCTION_ACTIVATED / NOT_BUSINESS_READY.
 Keputusan Andreas: Kopi Saga dan Saga Studio memakai HR yang sama, dengan kategori Staff Admin dan tabel absensi terpisah dari Barista.
 
-Source [28ec4ff](https://github.com/notyourgas/sagaops/commit/28ec4ffaacc46cca30a71aa14e03eecf54ee6d30) pushed pada branch `codex/sagapos-staff-admin-20261023`, berbasis source rilis `4c6b9cbeb70638e5eca11fc9a21c3cd89a11eb18`.
+Source [28ec4ff](https://github.com/notyourgas/sagaops/commit/28ec4ffaacc46cca30a71aa14e03eecf54ee6d30) pushed `codex/sagapos-staff-admin-20261023`, berbasis source rilis `4c6b9cbeb70638e5eca11fc9a21c3cd89a11eb18`.
 Tambah karyawan menyediakan Staff Admin; akun baru memakai kode unik `ADM-`, kategori lain tetap `STF-`. Kode lama tetap saat kategori diedit. HR Absensi menampilkan tabel Barista, Staff Admin dan tim lainnya; filter kategori/status serta KPI mengikuti pilihan. Jadwal Admin WIB diatur sendiri, tanpa masuk generator roster Barista/Kitchen. Kategori kerja tidak memberikan hak Owner/kasir atau akses lintas organisasi/outlet.
 
 33 kasus relevan lulus secara agregat: run gabungan 32/33 lalu satu fixture tanggal lama diperbaiki tanpa mengubah assertion dan diuji ulang PASS. Pemeriksaan statis/TypeScript PASS, 1240 modul. Bukti database memakai embedded PostgreSQL-compatible harness; UI sintetis 1440/390 mencakup pemisahan tabel, login/akun, jadwal, absensi sendiri, isolasi, CSRF dan aksesibilitas. Bukan native PostgreSQL production atau UAT staf nyata.
@@ -2926,7 +2950,7 @@ Tidak ada klaim operator UAT/BUSINESS_READY. [Rincian](products/sagaops/PRODUCT.
 CONFIRMED: Andreas menerima auto-cut native partial-cut dan satu TEST browser,
 tetapi ekor nota tetap panjang setelah koreksi user/global no-break. Output
 Chrome ke sink file-only membuktikan81LF/0FF; menghapus form-feed bukan solusi.
-Source `8d38ad56bc1e03745cdeb2c543164d3125e4303e` pushed pada branch printer:
+Source `8d38ad56bc1e03745cdeb2c543164d3125e4303e` pushed printer:
 tinggi halaman browser kini dihitung dari isi+feed lewat CSS eksternal, CSP tetap.
 Affected24tes PASS, extended browser3PASS, static1103/core37/typesPASS;
 8PDF satu halaman berlebar58/80mm PASS. TEST80/feed15 sekitar116-118mm,
@@ -3332,7 +3356,7 @@ CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / NOT_BUSINESS_READY.
 Andreas menyetujui tambahan180detik; blocker allowance pending pada entri
 sebelumnya sudah dijawab, bukan waiver gate atau otorisasi transaksi/builder baru.
 Source appa5f29189cd8f9ed45be4cce6d1627095ad393828; checkpoint ledger
-065a6315485f20b4cec6d1636dd586e94ef9ee29 clean/pushed pada branch
+065a6315485f20b4cec6d1636dd586e94ef9ee29 clean/pushed
 codex/sagapos-foundation-20261014. CSV alur stok kini memakai report yang sama
 dengan tampilan, tanggal/cutoff/revisi dan fingerprint; perubahan laporan menolak
 unduhan stale dan meminta muat ulang. Angka quantity tidak dihitung ulang, formula
@@ -4481,7 +4505,7 @@ OPEN: prospective refund completion/effects/readers, operational encrypted resto
 
 Affected: product/dossier/product changelog/master/gaps/sync/portfolio/root changelog. Validator/link/public-safety/diff check required before commit and on staged state; terminal results and knowledge SHA reported after push. No current source conflict identified.
 
-Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` pada branch `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
+Sumber Andreas dan committed/pushed source `54ca37c632d13c86c42b8b05249ef668909480f4` `codex/sagapos-redesign-continuation-20261007`; tested source `79df97391c3cf8f760dd224ff8761a4b76eab937`, application inputs unchanged from `c26fc41`. [Execution and residual closure plan](https://github.com/notyourgas/sagaops/blob/54ca37c632d13c86c42b8b05249ef668909480f4/docs/sagapos-v2/B2_SCREENS_01_08_FINALIZATION_PLAN_20261008.md). Prior dated entries remain historical.
 
 ## 2026-10-08 — SagaPOS B2: cash journey recovery and shift clock qualified locally
 
@@ -5414,7 +5438,7 @@ disinkronkan dari worktree bersih. Physical UAT belum diverifikasi;
 
 ## 2026-09-30 — accepted: SagaPOS UI/UX tunggal production deployed
 
-`CONFIRMED`. Source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` pada branch `codex/sagapos-cashier-owner-login-hotfix-20260930` menggabungkan Wave 1–3 melalui d8aa dan memperbaiki tautan Owner kasir; rollback d8aa. QA independen, static/schema, Owner, artifact, backup/restore, rehearsal, switch, health/monitor dan browser tujuh surface lulus tanpa transaksi. Runner eksternal test-only `b3d1ea3` lulus; aplikasi production tetap c0dfa. `PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Smoke pembayaran PARTIAL pada canary yang sengaja tidak aktif; UAT operator/Kiosk fisik dan offsite backup OPEN. Dokumen SagaOPS Product/Dossier/Changelog, Portfolio, Master, Gaps, root Changelog diperbarui; histori lokal sebelumnya dipertahankan.
+`CONFIRMED`. Source production `c0dfa014b48c09a1637eda432826bc8fd13afaff` `codex/sagapos-cashier-owner-login-hotfix-20260930` menggabungkan Wave 1–3 melalui d8aa dan memperbaiki tautan Owner kasir; rollback d8aa. QA independen, static/schema, Owner, artifact, backup/restore, rehearsal, switch, health/monitor dan browser tujuh surface lulus tanpa transaksi. Runner eksternal test-only `b3d1ea3` lulus; aplikasi production tetap c0dfa. `PRODUCTION_DEPLOYED / CI_NOT_RUN / BUSINESS_READY=false`. Smoke pembayaran PARTIAL pada canary yang sengaja tidak aktif; UAT operator/Kiosk fisik dan offsite backup OPEN. Dokumen SagaOPS Product/Dossier/Changelog, Portfolio, Master, Gaps, root Changelog diperbarui; histori lokal sebelumnya dipertahankan.
 
 ## 2026-09-30 — accepted: E2E-1 scope Reward lokal
 
@@ -6265,7 +6289,7 @@ Status sinkronisasi: `accepted`; perubahan preview terverifikasi, batas backend 
 ## 2026-09-23 — SagaPOS Phase 8A source selaras release aktif
 
 - Status `partially accepted`: source/test `CONFIRMED`; deployment, public e-menu, offsite restore, real-device UAT, dan business acceptance `NEEDS CONFIRMATION`.
-- Source `93595a56e38efef43aa125e5fa69c503a5836075` ter-push pada branch terisolasi di atas active `758eb8f02cffa38a294c0fa91420074b06e4d981`. Static/type pass; focused 44/44; full serial 1.600 pass, 0 fail, 73 skip; audit dependency production 0 temuan, dua advisory moderate development terbuka.
+- Source `93595a56e38efef43aa125e5fa69c503a5836075` ter-push terisolasi di atas active `758eb8f02cffa38a294c0fa91420074b06e4d981`. Static/type pass; focused 44/44; full serial 1.600 pass, 0 fail, 73 skip; audit dependency production 0 temuan, dua advisory moderate development terbuka.
 - Production tidak berubah; rollback `c2440a2e938317332977f9d0912d986b9a502df6`, payment dan inventory reporting nyata `OFF`, Table Order tetap simulator. Candidate belum punya artifact/rehearsal/UAT production dan belum melewati rekonsiliasi branch release paralel. Delivery `SOURCE_PUSHED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED / BUSINESS_READY=false`.
 
 ## 2026-09-23 — SagaPOS Kiosk status stream production
@@ -7763,7 +7787,7 @@ Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY
 
 ## 2026-09-06 — SagaOPS owner recipe dan HPP authoring guard
 
-- Klasifikasi `CONFIRMED`; source implementasi `ca945a539a36231066b0be7b3c4696d9f62b5ba3`, dokumentasi `f90f8f75a13e78e3bb2b8cef3de36ef6df89f32c`, pushed pada branch Saga POS. Scope hanya F&B Kopi Saga; bukti dari source, test dan laporan HPP kanonik.
+- Klasifikasi `CONFIRMED`; source implementasi `ca945a539a36231066b0be7b3c4696d9f62b5ba3`, dokumentasi `f90f8f75a13e78e3bb2b8cef3de36ef6df89f32c`, pushed Saga POS. Scope hanya F&B Kopi Saga; bukti dari source, test dan laporan HPP kanonik.
 - Before: snapshot biaya telah aman tetapi katalog aktif belum memiliki workflow untuk mengisi bahan/resep atau menahan minuman yang belum lengkap. After: Owner Admin memiliki empat tahap untuk master bahan dalam gram/ml/pcs, komponen resep, audit HPP/margin/harga saran per menu, dan gate completeness minuman yang diaktifkan terpisah. Biaya kosong tetap `INCOMPLETE`, bukan Rp0.
 - Mutasi owner membutuhkan CSRF, reason dan expected version; state disimpan per organisasi/outlet dengan PostgreSQL CAS, RLS serta audit. Snapshot checkout tetap immutable. Gate hanya dapat aktif ketika semua minuman aktif lengkap dan setelah aktif menolak perubahan atau checkout yang merusak coverage. Tidak ada biaya supplier/resep bisnis yang dikarang.
 - Validasi lokal: focused domain/durable/finance 25/25, browser terkait 5/5, full regression 312/312, static/type/OpenAPI 163 modul/12 migrasi, Owner 390/1440px dengan Axe serious/critical 0, touch target minimal 44px dan tanpa overflow; dependency audit serta scan credential/private-key 0. Regresi scroll keyboard ditemukan oleh full suite, diperbaiki, lalu assertion asli tetap hijau.
@@ -7781,7 +7805,7 @@ Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY
 
 ## 2026-09-06 — SagaOPS historical HPP snapshot truth
 
-- Klasifikasi `CONFIRMED`; source implementasi `7fdbc158b010efd3db66d7303e2712224be2b0d2`, dokumentasi `abdc1132fd012ed7e2172f5424436ee5ec33aa88`, pushed pada branch Saga POS. Bukti utama: source/test dan `docs/SAGA_POS_HPP_SNAPSHOT_TRUTH_2026-09-06.md`. Scope hanya F&B Kopi Saga.
+- Klasifikasi `CONFIRMED`; source implementasi `7fdbc158b010efd3db66d7303e2712224be2b0d2`, dokumentasi `abdc1132fd012ed7e2172f5424436ee5ec33aa88`, pushed Saga POS. Bukti utama: source/test dan `docs/SAGA_POS_HPP_SNAPSHOT_TRUTH_2026-09-06.md`. Scope hanya F&B Kopi Saga.
 - Before: item order hanya memiliki angka biaya placeholder sehingga Rp0 tidak dapat dibedakan dari biaya yang hilang. After: checkout membekukan versi resep, kuantitas/unit/biaya bahan dan status `VERIFIED/INCOMPLETE`; produk resep yang belum lengkap diblokir kecuali eksplisit diizinkan sementara. Order lama/simulator tetap `UNVERIFIED`, bukan direkayasa sebagai biaya nol.
 - Owner/Admin dan CSV menampilkan coverage, order terverifikasi/dikecualikan, subset penjualan/HPP dan produk yang perlu dilengkapi. Total HPP teoretis serta laba kotor hanya muncul pada coverage 100%. HPP aktual dan laba bersih tetap tidak tersedia sampai pembelian, stock count, waste/adjustment, fee dan biaya operasional mempunyai fakta otoritatif.
 - PostgreSQL menyimpan snapshot JSON/version/status immutable dan mempertahankan RLS. Validasi lokal: static/type/OpenAPI 160 modul/11 migrasi PASS; focused 32/32 dan full 307/307 PASS; owner 390/1440px, Axe serious/critical 0, overflow/touch/keyboard serta visual review PASS; dependency audit 0 dan high-confidence secret scan 0.
@@ -7799,7 +7823,7 @@ Delivery `LOCAL_VALIDATED / PROVIDER_NATIVE_SYNTHETIC_VALIDATED`, **BELUM DEPLOY
 
 ## 2026-09-06 — SagaOPS permohonan pribadi staf terintegrasi lokal
 
-- CONFIRMED; source `f79a773259f6a1fd2c8ef893cab02d29bdd3e855`, pushed pada branch `codex/saga-pos-vs01-kiosk-kds-dashboard`. Bukti: source/tests dan `docs/HRPOS_STAFF_OWN_REQUEST_POS_2026-09-06.md`. Hanya F&B Kopi Saga.
+- CONFIRMED; source `f79a773259f6a1fd2c8ef893cab02d29bdd3e855`, pushed `codex/saga-pos-vs01-kiosk-kds-dashboard`. Bukti: source/tests dan `docs/HRPOS_STAFF_OWN_REQUEST_POS_2026-09-06.md`. Hanya F&B Kopi Saga.
 - Before: portal POS hanya membaca jadwal. After: staf berizin dapat membaca permohonan pribadi, sembilan filter status, pagination manual 20 baris, detail inline, alasan/riwayat/tahap persetujuan. Tidak ada create/edit/approve/payroll action. Akses permohonan tidak mensyaratkan izin jadwal; role HR tidak menjadi jalan pintas.
 - Integrasi: dua fixed own-read operations, strict input/output projection, active-role/CSRF/same-origin dan re-introspection. Cursor body-only, null menit disetujui bukan nol; konten privat dibersihkan saat hide/close/logout/revocation. POS mengenali 23 operasi, bukan seluruh 69 capability provider. Kontrak provider `c6cd3007c5f52cab33ac507d56ab93414033f73e` unchanged; increment portal provider berikutnya bukan dependency.
 - Validasi lokal final: Chromium 304/304, WebKit 14/14, focused DTO/transport 5/5, static/type/diff, Axe 0 pada 390/1440px, overflow/touch/keyboard/recovery dan 20 baris panjang PASS; dependency audit 0 dan high-confidence staged secret signatures 0. Actual BFF memakai provider sintetis dan PGlite, bukan joint native MySQL/PostgreSQL.
@@ -8187,7 +8211,7 @@ Validation: full local regression 258/258 PASS; final focused durable rerun 9/9;
 
 - CONFIRMED: source `0078b0f40cb7da34d6abb254211152c507539a1b`, draft PR #65 di repository saga-member, mengimplementasikan loading/error/retry gambar kartu, decode sebelum tampil, Apply menunggu gambar siap, bantuan yang mengikuti pembesaran teks, serta batas waktu unduhan tanpa menghasilkan kartu kosong. Browsing tetap hanya preview; kartu aktif tidak berubah tanpa Apply.
 - Local: 224 unit tests PASS; regresi penuh dan uji artwork lima viewport/error/retry/timeout/export/zoom/offline lulus sebelum perluasan uji sentuh. Uji tambahan swipe lalu tap kategori masih RED dalam simulasi Chromium CPU4x. Gejala sama direproduksi pada Production lama; belum dipastikan apakah akar penyebab berada pada harness input atau aplikasi. Jangan menyebut semua UAT atau CI PASS.
-- Status `IMPLEMENTED_NOT_DEPLOYED`; PR masih draft, belum merge dan belum Preview UAT. Production sehat sebelumnya tetap `dpl_62S5sGbHV3moHCyx51JH24ESQvGk` / source `92c93da151a149260e9ae258727002910a1acd6d` pada https://saga-member-platform.vercel.app . Next: selesaikan satu regresi sentuh ini pada branch yang sama, lalu ulangi seluruh gate sebelum release.
+- Status `IMPLEMENTED_NOT_DEPLOYED`; PR masih draft, belum merge dan belum Preview UAT. Production sehat sebelumnya tetap `dpl_62S5sGbHV3moHCyx51JH24ESQvGk` / source `92c93da151a149260e9ae258727002910a1acd6d` pada https://saga-member-platform.vercel.app . Next: selesaikan satu regresi sentuh ini yang sama, lalu ulangi seluruh gate sebelum release.
 - Tanpa dependency atau biaya baru. Riset heuristic memakai MDN image.decode https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decode ; bukan survei/perangkat fisik. PUBLIC_DUMMY_DEMO; backend/provider/data nyata tetap OFF; PRODUCTION_ACTIVATED=false; BUSINESS_READY=false.
 
 
@@ -13585,7 +13609,7 @@ File ini berada di dalam commit yang sedang dijelaskan. Karena commit tidak dapa
 
 ## SagaView S336 draft non-blocking dan frame-capacity recovery
 
-- Exact source `98f13a8d50f4ae0b97d787f1ab5e0896296007ec` pada branch
+- Exact source `98f13a8d50f4ae0b97d787f1ab5e0896296007ec`
   `codex/s336-sagaview-draft-console-recovery` sudah dipush.
 - Draft tidak menghalangi Studio Console. Owner melihat kapasitas dan dapat
   archive/restore frame tanpa kehilangan aset, versi, draft, profile item,
