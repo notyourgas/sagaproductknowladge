@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-01 - VA Multiple Banks aktif pada pilot studio
+
+CONFIRMED: blocker login/konfigurasi dua belas kanal ditutup; source5ffda40 / release20261101095852-5ffda40 aktif, dua belas pilihan publik pada satu studio, nol di luar pilot dan health200. NEEDS CONFIRMATION / OPEN: transaksi create/paid live masing-masing bank, inquiry paid, settlement dan keyboard iPhone fisik. Mandiri/BCA/BJB belum terkonfigurasi pada daftar SNAP akun yang diperiksa. Tidak ada transaksi baru oleh agent atau klaim BUSINESS_READY. Snapshot sebelumnya yang menunggu login adalah histori.
+
 ## 2026-11-01 - Pemilih bank mengikuti tema studio
 
 CONFIRMED: pemilih bank bertema sudah dirilis pada source6f0c012 / release20261101060150-6f0c012 dan verifier production PASS. NEEDS CONFIRMATION / OPEN: perluasan semua bank menunggu login ulang DOKU, pemeriksaan status/routing per bank dan kecocokan kanal SNAP; production tetap BRI satu studio. Satu sesi SNAP pending teramati dan Andreas melaporkan booking berhasil. Paid/settlement dan keyboard iPhone fisik masih OPEN; tidak ada bukti semua bank aktif atau BUSINESS_READY.
