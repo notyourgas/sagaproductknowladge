@@ -1,5 +1,30 @@
 # SagaOPS Dossier
 
+## 2026-11-02 - Jam welcome Kiosk 09.00-22.00
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk tampilan jam Kiosk.
+Source `a6a60bd581d1d684dff50dc94fe770b74f7c4a49`; rollback
+`8d1ed57f51b0e3b8b69519293c2f6494977dcd40`. Sesuai arahan Andreas,
+DAILY BREWS pada welcome berubah dari08.00-00.00 menjadi09.00-22.00.
+Ini informasi tampilan; tidak menambahkan pembatasan pemesanan atau mengubah
+jadwal, tarif, absensi, pembayaran, harga, template nota maupun printer.
+Manifest offline diperbarui agar cache memakai teks yang sama.
+
+Kualifikasi Linux41334892176 lulus133 tes. Profil UI sekarang membandingkan
+backend dengan rilis HR aktif8d1ed57 dan memverifikasi ancestry; tes reporting
+historis serta byte runner HR aktif tetap diperiksa terpisah. Runner production
+sendiri tidak berubah. Paket/checksum, backup terenkripsi/restore disposable,
+salinan di luar server dan rehearsal kandidat-current-kandidat lulus.
+Aset served cocok byte-for-byte; jam09.00-22.00 diverifikasi pada dua viewport
+portrait production, dengan pengunci printer tetap berfungsi. Health/monitor
+READY; core37 dan ledger addon HR serta konfigurasi nota/printer/QRIS/jadwal/
+tarif/kebijakan HR tetap. Satu grup backup historis yang tidak dipakai dipindahkan
+setelah salinan lama di luar server diverifikasi ulang; backup terbaru dan
+rollback dipertahankan. Tidak membuat transaksi atau cetakan TEST; bukan
+BUSINESS_READY seluruh produk. Sumber: instruksi Andreas, source, CI dan bukti
+rilis/verifikasi production. File: PRODUCT, DOSSIER, changelog produk/portfolio/
+root, CHATGPT_MASTER_KNOWLEDGE dan SYNC_STATUS. Blocker scope ini: tidak ada.
+
 ## 2026-11-01 - Pemulihan absensi dan payroll aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk scope native Staff dan payroll. Source [8d1ed57](https://github.com/notyourgas/sagaops/commit/8d1ed57f51b0e3b8b69519293c2f6494977dcd40) aktif; rollback69b3 dipertahankan. Catatan sebelumnya yang tertahan kapasitas adalah histori dan blocker tersebut sudah ditutup setelah izin Owner serta verifikasi arsip di luar server. Disk turun ke83% dengan sekitar18GB kosong. Hanya versi/build/paket tidak aktif dan cache unduhan yang dibersihkan; database, seluruh backup database, versi aktif dan rollback dipertahankan.
