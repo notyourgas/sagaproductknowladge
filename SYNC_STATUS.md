@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-01 - Kebijakan booking satu studio dipublikasikan
+
+CONFIRMED: publikasi data kebijakan booking satu studio selesai, bukan deployment source baru. Guard dua field, digest pengaturan lain, gateway projection, admin/public readback dan dialog UI pelanggan PASS. Source8130fac / release20261101020512-8130fac tetap; booking dan pilot BRI satu studio aktif. Product/Dossier/Changelog SagaBook, master, portfolio/root changelog, DECISIONS dan GAPS diselaraskan. Uji mandiri pengguna menjadi langkah berikutnya; create VA, paid, settlement dan iPhone fisik OPEN, BUSINESS_READY tidak diklaim.
+
 ## 2026-11-01 - Sinkron pilot BRI SNAP
 
 CONFIRMED: SagaBook source `8130facb5307974e0becb857b8c50c786ca6bd62`, release `20261101020512-8130fac`, native release terminal exit0 dan independent verifier 23/23 PASS. Prefix DGPC dan batas pilot studio terpasang. Registrasi key, autentikasi B2B serta konfigurasi URL token/notifikasi terverifikasi; private runtime configuration terenkripsi. BRI direct aktif pada satu studio, nol di luar pilot; belum ada booking/order SNAP baru pada checkpoint ini. Product/Dossier/Changelog SagaBook, master, portfolio/root changelog dan GAPS diselaraskan. CREATE_VA/PAID/SETTLEMENT acceptance dan iPhone fisik OPEN; BUSINESS_READY tidak diklaim. Platform tidak dirilis ulang, harga/schema/dependency/payout tidak diubah.

@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-318 - Publikasi rekomendasi kebijakan booking satu studio
+
+Tanggal 1 November 2026. CONFIRMED. Pemberi keputusan: Andreas. Instruksi: sesuaikan kebijakan mengikuti rekomendasi dan aktifkan agar pemilik dapat mencoba booking sendiri. Scope satu studio milik founder. Keputusan: selaraskan teks reschedule dengan aturan efektif 24 jam dan satu kali gratis; jelaskan review pembatalan/refund, transparansi pembayaran serta persetujuan promo/foto terpisah. Alasan: teks lama 48 jam tidak sesuai aturan aktif dan pelanggan memerlukan ketentuan jelas sebelum booking. Alternatif mengubah angka aturan atau memberlakukan kebijakan ke seluruh studio tidak dipilih. Dampak: dua field kebijakan terpublikasi dan terbaca di UI; angka finansial, studio lain dan booking lama tidak diubah. Source8130fac / release20261101020512-8130fac tetap. Booking publik dan pilot BRI satu studio aktif, uji create/paid/settlement serta iPhone fisik tetap OPEN. Dokumen terkait: products/sagabook/PRODUCT.md, products/sagabook/DOSSIER.md, products/sagabook/CHANGELOG.md, CHATGPT_MASTER_KNOWLEDGE.md, GAPS.md dan SYNC_STATUS.md.
+
 ## DEC-317 - Burst sementara untuk menyelesaikan publikasi Cake
 
 Tanggal30Oktober2026. CONFIRMED. Andreas menjawab "Ya, naikkan sementara"

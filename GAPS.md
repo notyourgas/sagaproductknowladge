@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-01 - Kebijakan booking satu studio dipublikasikan
+
+CONFIRMED: kesenjangan teks reschedule 48 jam terhadap aturan efektif 24 jam ditutup pada satu studio. Kedua kebijakan terpublikasi dan dibaca ulang di UI pelanggan; angka aturan/refund existing tidak berubah. Andreas melanjutkan uji booking sendiri dari awal. Agent tidak membuat booking atau menerima persetujuan pelanggan. NEEDS CONFIRMATION / OPEN tetap untuk create VA BRI production, callback/inquiry paid, settlement dan keyboard iPhone fisik; bukan BUSINESS_READY. Source `8130facb5307974e0becb857b8c50c786ca6bd62` / release `20261101020512-8130fac` tetap.
+
 ## 2026-11-01 - Acceptance pilot BRI dan pemeriksaan iPhone masih terbuka
 
 NEEDS CONFIRMATION / OPEN untuk create VA SNAP production, callback/inquiry paid, settlement dan keyboard iPhone fisik. Source `8130facb5307974e0becb857b8c50c786ca6bd62`, release `20261101020512-8130fac`, native gates dan independent verifier 23/23 PASS. Merchant public key terdaftar, autentikasi B2B berhasil, BIN/prefix BRI dikonfirmasi pada dashboard dan URL token/notifikasi tersimpan. Pilot BRI aktif hanya pada satu studio milik founder; nol studio di luar cakupan mendapat opsi langsung. Uji booking belum dikirim pada checkpoint ini. Tidak ada bukti live create/paid/settlement dan tidak ada klaim BUSINESS_READY; bank lain belum dibuka untuk direct VA.

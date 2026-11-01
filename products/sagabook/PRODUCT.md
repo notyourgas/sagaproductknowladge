@@ -1,5 +1,15 @@
 # SagaBook Product Knowledge
 
+## 2026-11-01 - Kebijakan booking satu studio dipublikasikan
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk publikasi teks kebijakan pada satu studio milik founder, atas instruksi Andreas agar pelanggan bisa mencoba booking sendiri. Teks lama reschedule gratis lebih dari 48 jam diselaraskan dengan aturan efektif: minimal 24 jam, satu kali gratis per booking; permintaan berikutnya atau dekat jadwal melalui admin. Pembatalan sukarela memakai acuan refund layanan 100% pada minimal 48 jam dan 50% pada 24 hingga kurang dari 48 jam, dengan verifikasi dan persetujuan operator. Kondisi mendesak, ketidakhadiran dan kegagalan layanan studio mendapat peninjauan; tidak ada larangan refund menyeluruh. Potongan provider harus aktual, terverifikasi dan diinformasikan.
+
+Syarat booking menjelaskan konfirmasi setelah verifikasi pembayaran, nominal/batas bayar sesuai tagihan, penanganan pembayaran ganda atau status tertunda, kedatangan 10 menit sebelum sesi, serta persetujuan promo dan publikasi foto yang opsional dan terpisah. Kebijakan bertanggal 1 November 2026 berlaku untuk booking baru yang menyetujuinya; bukan perubahan perjanjian booking lama secara otomatis.
+
+Perubahan data melalui layanan pengaturan existing terbatas pada dua field kebijakan. Kandidat dan readback admin/publik identik; digest pengaturan lain serta proyeksi gateway tetap sama. Kedua dialog kebijakan dibaca ulang pada UI pelanggan dan dialog panjang dapat digulir. Source tetap [8130fac](https://github.com/notyourgas/sagabook/commit/8130facb5307974e0becb857b8c50c786ca6bd62), release `20261101020512-8130fac`; tidak ada rilis kode baru, perubahan harga, angka aturan finansial, studio lain, booking, refund atau payout oleh agent.
+
+Booking publik aktif dan BRI direct tetap CONTROLLED_PILOT_ENABLED hanya pada studio tersebut. Halaman dikembalikan ke awal untuk uji mandiri; formulir kontak kosong dan persetujuan tidak dicentang agent. CREATE_VA_ACCEPTANCE_OPEN / PAID_ACCEPTANCE_OPEN / SETTLEMENT_ACCEPTANCE_OPEN serta keyboard iPhone fisik OPEN. Publikasi kebijakan bukan bukti pembayaran/settlement atau BUSINESS_READY. Sumber: instruksi Andreas, implementasi aturan existing, guarded production readback dan UI pelanggan.
+
 ## 2026-11-01 - Pilot BRI SNAP pada satu studio
 
 CONFIRMED / PRODUCTION_DEPLOYED untuk SagaBook source [8130fac](https://github.com/notyourgas/sagabook/commit/8130facb5307974e0becb857b8c50c786ca6bd62), release `20261101020512-8130fac`. CONTROLLED_PILOT_ENABLED untuk VA BRI langsung pada satu studio milik founder; readback menunjukkan satu studio mendapat opsi bank langsung dan nol studio di luar pilot. Platform tetap pada source `6677c66b8783a3b6a55b97686293b2b54e5cf2d3`; alur Checkout pusat dan pilihan Owner lain dipertahankan.
