@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-01 - Pemulihan absensi dan payroll lolos kualifikasi native
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source [8d1ed57](https://github.com/notyourgas/sagaops/commit/8d1ed57f51b0e3b8b69519293c2f6494977dcd40) sudah dipush. CI Linux/PostgreSQL18 run41298191412 lulus85/85 tes tanpa skip, termasuk HTTP/session, koreksi, payroll/report, formulir mobile dan kehilangan respons. Production masih source69b3; aturan baru serta pin outlet belum diaktifkan. Pemakaian disk sesudah backup baru melewati guard85%, sehingga aktivasi ditahan. Arsip terenkripsi salinan versi/build lama telah diverifikasi di luar server; pembersihan salinan server memerlukan keputusan Owner untuk folder lintas produk. Versi aktif, rollback dan seluruh backup database dipertahankan.
+
+Checkout normal dibuka30 menit sebelum akhir shift; waktu aktual tetap dicatat. Sesi lupa pulang ditutup administratif tanpa membuat timestamp pulang, sehingga absensi hari berikutnya dapat dipakai. Koreksi waktu yang dinyatakan staf dapat diterima otomatis bila check-in/evidence valid, tidak bertumpuk, durasi wajar, waktu pulang dalam toleransi, diajukan dalam7 hari dan maksimal2 koreksi otomatis/30 hari. Pengecualian tetap direview. Pergantian sesi login tidak lagi dianggap bukti pergantian perangkat; binding challenge per percobaan tetap wajib. Worker memeriksa ulang false positive hanya dengan dua foto utuh, GPS sesuai pin dan waktu tanpa konflik.
+
+Addon native menambah penutupan sesi dan indeks sesi aktif; ledger inti37 tidak berubah. Laporan memisahkan koreksi kehadiran dari cuti/izin. Worker payroll existing menghitung revisi dari absensi diterima; tarif per shift penuh, per jam sesuai menit valid. Tidak menambah denda/lembur, payout, persetujuan final payroll, atau menulis ulang slip terbit. Jadwal dan tarif staf dipertahankan. Backup terenkripsi lolos restore disposable dan verifikasi offsite; addon/candidate recovery serta aktivasi tetap harus lulus setelah kapasitas tersedia. UAT GPS/kamera pada HP staf nyata belum dilakukan; bukan BUSINESS_READY seluruh produk.
+
 ## 2026-11-01 - VA Multiple Banks aktif pada pilot studio
 
 CONFIRMED: blocker login/konfigurasi dua belas kanal ditutup; source5ffda40 / release20261101095852-5ffda40 aktif, dua belas pilihan publik pada satu studio, nol di luar pilot dan health200. NEEDS CONFIRMATION / OPEN: transaksi create/paid live masing-masing bank, inquiry paid, settlement dan keyboard iPhone fisik. Mandiri/BCA/BJB belum terkonfigurasi pada daftar SNAP akun yang diperiksa. Tidak ada transaksi baru oleh agent atau klaim BUSINESS_READY. Snapshot sebelumnya yang menunggu login adalah histori.
