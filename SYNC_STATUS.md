@@ -1,8 +1,8 @@
 # Status Sinkronisasi Saga Product Knowledge
 
-## 2026-11-01 - Sinkron perbaikan form HP dan persiapan VA langsung
+## 2026-11-01 - Sinkron pilot BRI SNAP
 
-CONFIRMED: SagaBook source `97d2a3883b69827ccb617df4ec343df617c9a73c`, release `20261031182719-97d2a38`, PRODUCTION_ACTIVATED untuk perbaikan form dan pilihan metode pembayaran; independent verifier 23/23 PASS. Kode VA langsung SNAP sudah dirilis tetapi credential/merchant activation masih OPEN. DOKU Checkout 11 VA tetap aktif; QRIS dikecualikan. Product/Dossier/Changelog SagaBook, master, portfolio/root changelog dan GAPS diselaraskan. Paid/settlement serta iPhone fisik OPEN; tidak ada claim BUSINESS_READY.
+CONFIRMED: SagaBook source `8130facb5307974e0becb857b8c50c786ca6bd62`, release `20261101020512-8130fac`, native release terminal exit0 dan independent verifier 23/23 PASS. Prefix DGPC dan batas pilot studio terpasang. Registrasi key, autentikasi B2B serta konfigurasi URL token/notifikasi terverifikasi; private runtime configuration terenkripsi. BRI direct aktif pada satu studio, nol di luar pilot; belum ada booking/order SNAP baru pada checkpoint ini. Product/Dossier/Changelog SagaBook, master, portfolio/root changelog dan GAPS diselaraskan. CREATE_VA/PAID/SETTLEMENT acceptance dan iPhone fisik OPEN; BUSINESS_READY tidak diklaim. Platform tidak dirilis ulang, harga/schema/dependency/payout tidak diubah.
 
 ## 2026-10-31 - Sinkron aktivasi DOKU VA production
 

@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-01 - Pilot BRI SNAP pada satu studio
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk SagaBook source [8130fac](https://github.com/notyourgas/sagabook/commit/8130facb5307974e0becb857b8c50c786ca6bd62), release `20261101020512-8130fac`. CONTROLLED_PILOT_ENABLED untuk VA BRI langsung pada satu studio milik founder; readback menunjukkan satu studio mendapat opsi bank langsung dan nol studio di luar pilot. Platform tetap pada source `6677c66b8783a3b6a55b97686293b2b54e5cf2d3`; alur Checkout pusat dan pilihan Owner lain dipertahankan.
+
+Payload DGPC kini memakai prefix Sub-BIN merchant yang terverifikasi, dengan pemeriksaan konsistensi BIN/prefix/nomor VA dan pembatasan studio pada proyeksi publik maupun pembuatan transaksi. Public key merchant sudah terdaftar dan cocok dengan vault; satu autentikasi B2B production berhasil. Konfigurasi runtime tersimpan terenkripsi; Token URL dan notification BRI SNAP tersimpan serta dibaca ulang pada DOKU. Tidak ada credential atau metadata routing akun di knowledge publik.
+
+Focused PHP 17/17 dengan 86 assertions PASS; semua gate native release dan independent verifier 23/23 PASS. Fresh backup terenkripsi/offsite dan disposable restore exact-candidate PASS. Tidak ada perubahan schema, dependency, harga atau aktivasi payout. Perbaikan caret native dan field detail 16px dari rilis sebelumnya tetap berlaku.
+
+CREATE_VA_ACCEPTANCE_OPEN / PAID_ACCEPTANCE_OPEN / SETTLEMENT_ACCEPTANCE_OPEN. Belum ada booking/order SNAP baru atau pembayaran pada checkpoint ini; uji end-to-end dan keyboard iPhone fisik masih terbuka. Pilot bukan pembukaan semua bank/studio dan bukan BUSINESS_READY. Saat menghentikan pembuatan VA baru, pertahankan handler serta key untuk transaksi asal; jangan mengembalikan pilot aktif ke kode yang belum memahami batas studio.
+
 ## 2026-11-01 - Form HP diperbaiki, VA langsung menunggu aktivasi SNAP
 
 CONFIRMED / PRODUCTION_DEPLOYED dan PRODUCTION_ACTIVATED untuk perbaikan form serta pemisahan pilihan QRIS/VA. Source SagaBook [97d2a38](https://github.com/notyourgas/sagabook/commit/97d2a3883b69827ccb617df4ec343df617c9a73c), release `20261031182719-97d2a38`; Platform tetap pada source `6677c66b8783a3b6a55b97686293b2b54e5cf2d3`. Tidak ada perubahan schema, dependency, harga atau payout.

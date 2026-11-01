@@ -1,8 +1,8 @@
 # Gaps dan Keputusan Founder
 
-## 2026-11-01 - Aktivasi VA langsung SNAP dan pemeriksaan iPhone masih terbuka
+## 2026-11-01 - Acceptance pilot BRI dan pemeriksaan iPhone masih terbuka
 
-NEEDS CONFIRMATION / OPEN. Kode form HP dan UI VA langsung berada pada SagaBook source `97d2a3883b69827ccb617df4ec343df617c9a73c`, production release `20261031182719-97d2a38`, independent verifier 23/23 PASS. VA Checkout pusat tetap aktif; VA langsung belum diaktifkan. Perlu registrasi public key merchant, public key resmi DOKU, BIN bank dan konfigurasi notifikasi SNAP yang tidak mengganggu Checkout/subscription lama. Masih diperlukan create VA production, callback/inquiry paid dan settlement nyata. Browser production memerlukan popup ekstensi ditutup; keyboard iPhone fisik belum diuji. Fixture WebKit/Chromium dan deployment tidak menutup acceptance merchant atau BUSINESS_READY.
+NEEDS CONFIRMATION / OPEN untuk create VA SNAP production, callback/inquiry paid, settlement dan keyboard iPhone fisik. Source `8130facb5307974e0becb857b8c50c786ca6bd62`, release `20261101020512-8130fac`, native gates dan independent verifier 23/23 PASS. Merchant public key terdaftar, autentikasi B2B berhasil, BIN/prefix BRI dikonfirmasi pada dashboard dan URL token/notifikasi tersimpan. Pilot BRI aktif hanya pada satu studio milik founder; nol studio di luar cakupan mendapat opsi langsung. Uji booking belum dikirim pada checkpoint ini. Tidak ada bukti live create/paid/settlement dan tidak ada klaim BUSINESS_READY; bank lain belum dibuka untuk direct VA.
 
 ## 2026-10-31 - DOKU VA aktif, acceptance paid dan settlement masih terbuka
 

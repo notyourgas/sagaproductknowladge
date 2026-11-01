@@ -1,16 +1,14 @@
 # SagaBook Dossier
 
-## 2026-11-01 - Form HP diperbaiki, VA langsung menunggu aktivasi SNAP
+## 2026-11-01 - Pilot BRI SNAP pada satu studio
 
-CONFIRMED / PRODUCTION_DEPLOYED dan PRODUCTION_ACTIVATED untuk perbaikan form serta pemisahan pilihan QRIS/VA. Source SagaBook [97d2a38](https://github.com/notyourgas/sagabook/commit/97d2a3883b69827ccb617df4ec343df617c9a73c), release `20261031182719-97d2a38`; Platform tetap pada source `6677c66b8783a3b6a55b97686293b2b54e5cf2d3`. Tidak ada perubahan schema, dependency, harga atau payout.
+CONFIRMED / PRODUCTION_DEPLOYED untuk SagaBook source [8130fac](https://github.com/notyourgas/sagabook/commit/8130facb5307974e0becb857b8c50c786ca6bd62), release `20261101020512-8130fac`. CONTROLLED_PILOT_ENABLED untuk VA BRI langsung pada satu studio milik founder; readback menunjukkan satu studio mendapat opsi bank langsung dan nol studio di luar pilot. Platform tetap pada source `6677c66b8783a3b6a55b97686293b2b54e5cf2d3`; alur Checkout pusat dan pilihan Owner lain dipertahankan.
 
-Input perangkat sentuh memakai caret native dan field detail minimal 16px agar teks/fokus stabil saat mengetik dan mengurangi zoom otomatis Safari. Pilihan QRIS dan Virtual Account dipisahkan; allowlist DOKU Checkout production tetap 11 VA dan QRIS tetap dikecualikan.
+Payload DGPC kini memakai prefix Sub-BIN merchant yang terverifikasi, dengan pemeriksaan konsistensi BIN/prefix/nomor VA dan pembatasan studio pada proyeksi publik maupun pembuatan transaksi. Public key merchant sudah terdaftar dan cocok dengan vault; satu autentikasi B2B production berhasil. Konfigurasi runtime tersimpan terenkripsi; Token URL dan notification BRI SNAP tersimpan serta dibaca ulang pada DOKU. Tidak ada credential atau metadata routing akun di knowledge publik.
 
-Alur VA langsung sudah diimplementasikan dalam kode dan dirilis dengan aktivasi merchant terpisah: pilih bank, tampilkan nomor VA/nama bank/nominal/batas waktu, lalu salin nomor di SagaBook. Integrasi memakai DOKU Direct API SNAP. Produksi belum menampilkan dropdown bank langsung karena credential SNAP belum diaktifkan; checkout existing tetap memakai alur asal. Registrasi public key merchant, public key DOKU, BIN bank per akun dan routing notification SNAP masih harus diverifikasi. Jangan menjanjikan alur VA langsung sudah tersedia untuk pelanggan dari deployment kode saja.
+Focused PHP 17/17 dengan 86 assertions PASS; semua gate native release dan independent verifier 23/23 PASS. Fresh backup terenkripsi/offsite dan disposable restore exact-candidate PASS. Tidak ada perubahan schema, dependency, harga atau aktivasi payout. Perbaikan caret native dan field detail 16px dari rilis sebelumnya tetap berlaku.
 
-Uji lokal mencakup token/signature/nominal/reference, penolakan bank tidak tersedia, sesi lama tetap dipakai saat bank berubah, replay callback, respons tidak pasti tidak dibuat ulang, serta pemeliharaan nomor VA. Browser Chromium desktop/mobile dan WebKit mobile memakai fixture sintetis; input tema Elegant Cream Brown lulus uji mengetik, mengedit dan perubahan viewport. Seluruh gate rilis native, backup terenkripsi/offsite dan disposable restore lulus; independent production verifier 23/23 serta source/health terverifikasi. Pemeriksaan interaksi form di browser production terhalang popup ekstensi Chrome; keyboard iPhone fisik belum diverifikasi.
-
-PAID_ACCEPTANCE_OPEN / SETTLEMENT_ACCEPTANCE_OPEN. Belum ada create VA SNAP production atau pembayaran baru oleh agent untuk perubahan ini. Handler lama dan pengaturan gateway pusat dipertahankan. Sesudah ada transaksi SNAP, pemulihan harus mempertahankan handler/token/credential SNAP; jangan kembali ke rilis yang hanya mendukung Checkout lama. BUSINESS_READY tidak diklaim.
+CREATE_VA_ACCEPTANCE_OPEN / PAID_ACCEPTANCE_OPEN / SETTLEMENT_ACCEPTANCE_OPEN. Belum ada booking/order SNAP baru atau pembayaran pada checkpoint ini; uji end-to-end dan keyboard iPhone fisik masih terbuka. Pilot bukan pembukaan semua bank/studio dan bukan BUSINESS_READY. Saat menghentikan pembuatan VA baru, pertahankan handler serta key untuk transaksi asal; jangan mengembalikan pilot aktif ke kode yang belum memahami batas studio.
 
 ## 2026-10-31 - DOKU Virtual Account aktif pada gateway pusat
 
