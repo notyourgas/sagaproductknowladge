@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-11-01 - Pemilih bank mengikuti tema studio
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk source [6f0c012](https://github.com/notyourgas/sagabook/commit/6f0c0120a42c9df2ba2c7c82a8253f376895ccfc), release `20261101060150-6f0c012`. Dropdown bawaan browser diganti pemilih bank dengan font, warna, radius, fokus dan penanda pilihan yang mengikuti tema booking studio. Daftar panjang dapat digulir; touch target, navigasi keyboard, typeahead dan Escape dipertahankan. Komponen dipakai bersama pada langkah Bayar dan halaman VA. Deskripsi metode menjelaskan nomor tampil di SagaBook ketika bank langsung tersedia.
+
+Typecheck UIUX, build dan lima skenario browser desktop/mobile PASS, satu kasus khusus mobile sengaja dilewati pada desktop. Fixture sebelas bank membuktikan perilaku daftar panjang dan pewarisan tema, bukan aktivasi sebelas bank merchant. Pemeriksaan native release, backup terenkripsi/offsite, disposable restore exact-candidate dan verifier production independen PASS. Tidak ada dependency, backend, schema, harga atau kebijakan booking yang berubah pada rilis ini; rollback source `8130facb5307974e0becb857b8c50c786ca6bd62` tersedia.
+
+Andreas melaporkan booking berhasil; readback agregat menunjukkan satu sesi SNAP menunggu pembayaran. Ini mendukung penerimaan alur BRI dan tidak membuktikan paid atau settlement. Pilihan langsung production tetap BRI pada satu studio milik founder. Permintaan perluasan semua bank masih OPEN: sesi DOKU kedaluwarsa, hanya metadata BRI tersedia di vault/runtime, dan login ulang diperlukan untuk membaca status, BIN/prefix serta notifikasi tiap bank. Perbedaan kode kanal Checkout/SNAP juga harus dicocokkan sebelum bank tambahan diaktifkan. Tidak ada bank tambahan atau perluasan studio yang diaktifkan oleh rilis UI ini. Paid/settlement dan keyboard iPhone fisik tetap OPEN; BUSINESS_READY tidak diklaim. Sumber: instruksi/laporan Andreas, source, browser fixture dan runtime verification.
+
 ## 2026-11-01 - Kebijakan booking satu studio dipublikasikan
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk publikasi teks kebijakan pada satu studio milik founder, atas instruksi Andreas agar pelanggan bisa mencoba booking sendiri. Teks lama reschedule gratis lebih dari 48 jam diselaraskan dengan aturan efektif: minimal 24 jam, satu kali gratis per booking; permintaan berikutnya atau dekat jadwal melalui admin. Pembatalan sukarela memakai acuan refund layanan 100% pada minimal 48 jam dan 50% pada 24 hingga kurang dari 48 jam, dengan verifikasi dan persetujuan operator. Kondisi mendesak, ketidakhadiran dan kegagalan layanan studio mendapat peninjauan; tidak ada larangan refund menyeluruh. Potongan provider harus aktual, terverifikasi dan diinformasikan.

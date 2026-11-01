@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-01 - Pemilih bank mengikuti tema studio
+
+CONFIRMED: source6f0c0120a42c9df2ba2c7c82a8253f376895ccfc / release20261101060150-6f0c012 aktif; native gates, recovery exact-candidate dan independent production verifier PASS. Product/Dossier/Changelog SagaBook, master, portfolio/root changelog, DECISIONS dan GAPS selaras. UI bank berubah; bank aktif tetap BRI satu studio, ekspansi bank menunggu akses DOKU dan verifikasi metadata. Tidak ada perubahan backend/schema/dependency/pricing/kebijakan atau transaksi agent; paid/settlement/iPhone fisik OPEN.
+
 ## 2026-11-01 - Kebijakan booking satu studio dipublikasikan
 
 CONFIRMED: publikasi data kebijakan booking satu studio selesai, bukan deployment source baru. Guard dua field, digest pengaturan lain, gateway projection, admin/public readback dan dialog UI pelanggan PASS. Source8130fac / release20261101020512-8130fac tetap; booking dan pilot BRI satu studio aktif. Product/Dossier/Changelog SagaBook, master, portfolio/root changelog, DECISIONS dan GAPS diselaraskan. Uji mandiri pengguna menjadi langkah berikutnya; create VA, paid, settlement dan iPhone fisik OPEN, BUSINESS_READY tidak diklaim.

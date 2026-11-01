@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-01 - Pemilih bank mengikuti tema studio
+
+CONFIRMED: pemilih bank bertema sudah dirilis pada source6f0c012 / release20261101060150-6f0c012 dan verifier production PASS. NEEDS CONFIRMATION / OPEN: perluasan semua bank menunggu login ulang DOKU, pemeriksaan status/routing per bank dan kecocokan kanal SNAP; production tetap BRI satu studio. Satu sesi SNAP pending teramati dan Andreas melaporkan booking berhasil. Paid/settlement dan keyboard iPhone fisik masih OPEN; tidak ada bukti semua bank aktif atau BUSINESS_READY.
+
 ## 2026-11-01 - Kebijakan booking satu studio dipublikasikan
 
 CONFIRMED: kesenjangan teks reschedule 48 jam terhadap aturan efektif 24 jam ditutup pada satu studio. Kedua kebijakan terpublikasi dan dibaca ulang di UI pelanggan; angka aturan/refund existing tidak berubah. Andreas melanjutkan uji booking sendiri dari awal. Agent tidak membuat booking atau menerima persetujuan pelanggan. NEEDS CONFIRMATION / OPEN tetap untuk create VA BRI production, callback/inquiry paid, settlement dan keyboard iPhone fisik; bukan BUSINESS_READY. Source `8130facb5307974e0becb857b8c50c786ca6bd62` / release `20261101020512-8130fac` tetap.
