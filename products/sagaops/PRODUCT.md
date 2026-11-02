@@ -1,5 +1,14 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-02 - Foto Cake siap; publikasi media tertahan kapasitas memori
+
+CONFIRMED / ASSETS_READY / PRODUCTION_PUBLICATION_BLOCKED. Tiga foto produk asli untuk Original, Brownies dan Iceberg sudah diretouch menjadi cutout transparan, diperiksa lapisannya, dan diekspor ke WebP768x768 berukuran kurang dari150KB per foto. Prompt, file asli dan checksum disimpan dalam bukti privat.
+
+Runtime tetap `62e0a27457c2ceff7fb91bd671d3879cfbb0fff1`. Satu media Brownies tersimpan sebagai draft katalog154; publikasi tetap16, sehingga tiga foto baru belum aktif pada Kiosk. Penyimpanan media berikutnya mencapai heap Node dan kemudian batas memori PostgreSQL. Layanan dipulihkan, perubahan heap sementara dikembalikan, batas RAM asli dipertahankan, healthREADY dan lock bebas. Tidak mengirim ulang mutasi yang statusnya belum diperiksa. Harga jual, aturan promo dan konfigurasi menu cocok baseline; tidak ada perintah perubahan HPP/stok, penjualan, pembayaran atau cetak.
+
+Pekerjaan tersisa milik Codex: perbaiki dan kualifikasi jalur penyimpanan media agar tidak menggandakan gambar pada snapshot penuh, lalu simpan hanya dua media yang belum tersimpan, publikasikan tiga perubahan dengan guard versi, dan verifikasi tampilan Kiosk/Kasir. Jangan mengklaim foto production aktif atau mengulang unggahan sebelum blocker tersebut ditangani.
+
+
 ## 2026-11-02 - HPP referensi per slice untuk tiga Cake
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk pembaruan data HPP. Tiga varian Cake memakai bahan siap jual dengan satuan dasar per slice, kemasan pembelian utuh dan jumlah potongan yang diberikan Andreas. Harga supplier dibagi hasil slice; kalkulasi menyimpan presisi biaya satuan dan membulatkan HPP tampilan ke rupiah. Resep HPP ketiganya sudah dipublikasikan, bukan draft, dan diverifikasi melalui baca ulang berotorisasi pada revisi inventory219.
