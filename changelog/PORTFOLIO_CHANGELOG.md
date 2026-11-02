@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-11-02 - HPP referensi per slice untuk tiga Cake
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk pembaruan data HPP. Tiga varian Cake memakai bahan siap jual dengan satuan dasar per slice, kemasan pembelian utuh dan jumlah potongan yang diberikan Andreas. Harga supplier dibagi hasil slice; kalkulasi menyimpan presisi biaya satuan dan membulatkan HPP tampilan ke rupiah. Resep HPP ketiganya sudah dipublikasikan, bukan draft, dan diverifikasi melalui baca ulang berotorisasi pada revisi inventory219.
+
+Provenance runtime `62e0a27457c2ceff7fb91bd671d3879cfbb0fff1`; tidak ada rilis kode atau perubahan katalog/harga jual. Bahan lama, HPP menu lain dan stok fisik cocok sebelum-sesudah. Ini biaya acuan supplier untuk cake saja, bukan penerimaan stok atau biaya aktual moving-average; komponen tambahan yang belum diberikan tidak diada-adakan. Nilai komersial supplier dan identitas operasional disimpan hanya dalam bukti privat. Tidak membuat transaksi penjualan atau cetakan untuk verifikasi ini.
+
+
 ## 2026-11-02 - Daily Dose Rp12.000 dan promo November Kiosk
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk scope ini. Source `62e0a27457c2ceff7fb91bd671d3879cfbb0fff1`, rollback `b6b6fe93a1abefbc4575d321a91f90a6f462be41`. Andreas menegaskan harga akhir dasar menu Rp12.000 sesuai poster. Daily Dose terbit pada katalog versi153/revisi16: setiap hari 2-14 November2026, pukul09.00 inklusif sampai14.00 eksklusif WIB, untuk Americano, Cafe Latte, Cappucino, Es Kopi Saga dan Saga Premiyum, dine-in maupun takeaway.
