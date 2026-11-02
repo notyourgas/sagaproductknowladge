@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-02 - Penyimpanan media: source siap, kualifikasi belum lolos
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / QUALIFICATION_FAILED. Perbaikan source pada `39897f73a44a4ab3edcde2b4468e1ab3bfb8a0da`, checkpoint `dfc90f4`, mengurangi duplikasi snapshot publikasi, mempertahankan hash/isi histori, membatasi ukuran penulisan dan mengirim delta katalog dengan guard versi/outlet. Pemeriksaan lokal serta profil regresi parsial lulus; kualifikasi native Linux belum lulus pada konversi awal data lama. Ini bukan perbaikan production yang sudah selesai.
+
+Runtime tetap `62e0a27457c2ceff7fb91bd671d3879cfbb0fff1`. Backup/restore terbaru tidak lolos; layanan pulih dan health/monitor kemudian lulus. Salinan database disposable milik percobaan dibersihkan setelah tidak memiliki koneksi, arsip yang belum terverifikasi dipisahkan dari pemilihan backup, dan backup terpilih serta rollback dipertahankan. Relokasi arsip historis hanya setelah salinan di luar server cocok ukuran/SHA256. Batas sumber daya production tetap seperti semula.
+
+TODO milik Codex: kualifikasi konversi awal secara terpisah, recovery terbaru, paket/deploy guarded, lalu rekonsiliasi dua draft media yang belum tersimpan dan publikasi/read-back tiga foto Cake. Proposal pemeliharaan terbatas masih menunggu keputusan Andreas, bukan izin yang sudah diberikan. Foto baru belum aktif di Kiosk; nota/printer, harga, HPP dan transaksi tidak diubah oleh kandidat ini. Tidak membuat penjualan/pembayaran atau cetakan uji. Sumber: instruksi Andreas, source/checkpoint, kegagalan native dan pemeriksaan runtime; BUSINESS_READY tidak diklaim.
+
 ## 2026-11-01 - Pemulihan absensi dan payroll aktif di production
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk scope native Staff dan payroll. Source [8d1ed57](https://github.com/notyourgas/sagaops/commit/8d1ed57f51b0e3b8b69519293c2f6494977dcd40) aktif; rollback69b3 dipertahankan. Catatan sebelumnya yang tertahan kapasitas adalah histori dan blocker tersebut sudah ditutup setelah izin Owner serta verifikasi arsip di luar server. Disk turun ke83% dengan sekitar18GB kosong. Hanya versi/build/paket tidak aktif dan cache unduhan yang dibersihkan; database, seluruh backup database, versi aktif dan rollback dipertahankan.
