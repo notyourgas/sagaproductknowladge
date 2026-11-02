@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-11-02 - Daily Dose Rp12.000 dan promo November Kiosk
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk scope ini. Source `62e0a27457c2ceff7fb91bd671d3879cfbb0fff1`, rollback `b6b6fe93a1abefbc4575d321a91f90a6f462be41`. Andreas menegaskan harga akhir dasar menu Rp12.000 sesuai poster. Daily Dose terbit pada katalog versi153/revisi16: setiap hari 2-14 November2026, pukul09.00 inklusif sampai14.00 eksklusif WIB, untuk Americano, Cafe Latte, Cappucino, Es Kopi Saga dan Saga Premiyum, dine-in maupun takeaway.
+
+Kategori Daily Dose tampil paling atas di Kiosk/Kasir selama jadwal aktif; Semua/pencarian tidak menggandakan produk. Server menghitung harga per menu/kuantitas, bukan satu harga untuk seluruh keranjang. Harga normal, opsi suhu yang sudah berlaku, serta biaya tambahan tetap. Checkout lintas batas waktu meminta harga baru; pembayaran pending yang sudah dibuat mempertahankan jumlahnya. Tidak mengaktifkan kebijakan gabungan voucher baru. Tiga poster asli Daily Dose, Free Self Express dan School Fiesta memakai carousel ringkas4:5 pada awal Kiosk. Poster Studio bersifat informasi; tidak mengaktifkan penukaran atau aturan finansial Studio.
+
+Publikasi sempat tertahan memori PostgreSQL setelah draft tersimpan. Layanan dipulihkan dan perubahan dilanjutkan dari draft yang terbukti ada, tanpa mengirim ulang pembuatan draft. Penyimpanan katalog sekarang memilih satu INSERT atau UPDATE, mempertahankan guard versi/outlet, dan melepas koneksi penulis besar setelah commit/rollback. Tidak menghapus histori/media atau menaikkan batas memori. Normal pooling transaksi lain tetap.
+
+Linux/PostgreSQL18 run41381769987 lulus189 tes tanpa skip. Paket/checksum, backup terenkripsi terbaru, restore disposable, salinan di luar server dan rehearsal kandidat-current-kandidat lulus. Quote server aktual: lima menu Rp60.000 dengan diskon Rp17.000; keranjang campuran membuktikan tambahan tetap dibayar dan menu nonpromo tidak mendapat diskon. Kategori teratas/lima harga diverifikasi pada Kasir production; aset dan metadata Kiosk serta dua viewport portrait lolos, dengan pengunci printer tetap. Core37/addon HR dan konfigurasi nota/printer/checker/QRIS/jadwal/tarif/policy cocok sebelum-sesudah. Health/monitor READY. Tidak membuat penjualan/pembayaran atau cetakan fisik untuk pengujian ini; UAT fisik Chromebook tidak diulang dan bukan BUSINESS_READY seluruh produk.
+
+Sumber: konfirmasi harga Andreas, source/CI, publikasi guarded dan read-back production. Arsip historis hanya direlokasi setelah salinan terenkripsi/ukuran/SHA256 diverifikasi; backup terbaru, data aktif dan rollback dipertahankan.
+
 ## 2026-11-02 - Jam welcome Kiosk 09.00-22.00
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk tampilan jam Kiosk.
