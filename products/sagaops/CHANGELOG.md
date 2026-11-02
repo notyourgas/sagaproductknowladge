@@ -1,5 +1,13 @@
 # SagaOPS Changelog
 
+## 2026-11-02 - Jalur pemeliharaan media belum lolos; production dipertahankan
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / QUALIFICATION_FAILED. Izin pemeliharaan terbatas dari Andreas telah diterima, menggantikan status menunggu izin pada checkpoint sebelumnya. Jendela tersebut belum dimulai karena uji terisolasi masih gagal. Konversi awal selesai pada kapasitas sementara dan proses konversinya benar-benar ditutup; database uji kemudian terputus ketika kembali ke batas normal. Jadi kenaikan kapasitas sementara belum terbukti menyelesaikan jalur penyimpanan ini. Tidak menerbitkan paket gagal atau mengulang gate yang sama tanpa batas.
+
+Source implementasi `ec7f820cff2f128e67c10a2502023ac5512051f0`, koreksi fixture `4bed455`, checkpoint `92dff67e357186b968cbc15dfdd275352714f473`; run native terakhir41401968524 gagal. Runtime production tetap `62e0a27457c2ceff7fb91bd671d3879cfbb0fff1`, health/monitor lulus dan batas normal dipertahankan. Tidak menjalankan konversi/backup baru, memasang watchdog pemeliharaan, memublikasikan foto, mengubah harga/HPP/transaksi/nota/printer atau mengirim cetakan fisik pada tahap ini. Tiga foto Cake masih belum aktif di Kiosk.
+
+TODO milik Codex: pisahkan badan media dan arsip publikasi immutable dari snapshot katalog/rekap yang sering ditulis ulang, sambil mempertahankan isi/hash historis, isolasi, pembacaan dan rollback; kualifikasi jalur yang berbeda itu sebelum konversi production. Memindahkan foto aktif saja sementara seluruh histori tetap disalin tidak cukup. Sumber: persetujuan Andreas, source, hasil native terisolasi dan pemeriksaan production. Sinkronisasi partially accepted; BUSINESS_READY tidak diklaim. Bukti rinci tetap privat.
+
 ## 2026-11-02 - Penyimpanan media: source siap, kualifikasi belum lolos
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / QUALIFICATION_FAILED. Perbaikan source pada `39897f73a44a4ab3edcde2b4468e1ab3bfb8a0da`, checkpoint `dfc90f4`, mengurangi duplikasi snapshot publikasi, mempertahankan hash/isi histori, membatasi ukuran penulisan dan mengirim delta katalog dengan guard versi/outlet. Pemeriksaan lokal serta profil regresi parsial lulus; kualifikasi native Linux belum lulus pada konversi awal data lama. Ini bukan perbaikan production yang sudah selesai.
