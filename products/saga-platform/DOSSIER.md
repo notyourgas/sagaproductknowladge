@@ -1,5 +1,13 @@
 # Saga Platform Dossier
 
+## 2026-11-02 — Voucher minuman Member: Salted Caramel dan katalog standar
+
+`CONFIRMED / PRODUCTION_ACTIVATED` untuk koreksi konfigurasi dan mapping voucher, bukan rilis artifact aplikasi baru. Voucher hadiah pendaftaran masih memakai daftar 18 minuman awal sehingga Salted Caramel Latte dan lima menu standar baru ditolak meskipun claim masih berlaku. Mapping kini mencakup 24 minuman: tambahan Butterscotch Latte, Caramel Latte, Salted Caramel Latte, Strawberry Tea, Vanilla Latte dan Yuzu Tea. Kebijakan DEC-227 tetap satu harga dasar minuman; add-on berbayar, expiry dan status redeemed tetap dipertahankan. Makanan, minuman premium dan voucher Studio tidak diperluas.
+
+Sumber koreksi: [Customer Platform `ccba12e5`](https://github.com/notyourgas/saga-customer-platform/commit/ccba12e5c4aea740b81aba9ef3e054be8208fe13), branch `codex/member-standard-voucher-catalog-20261102`, sudah dipush. Backend aplikasi tetap `c4238845274e867d17e852f9012c67369c451861`, frontend tetap `38101d42fabd51745dc9a65aac7c971a0882c193`, release tetap `20261023T051613Z-c423884-r0u`; artifact POS tidak berubah. Koreksi memakai R0 locks, fresh effective Owner proof, native snapshot repository/CAS, validasi seluruh snapshot, config digest dan inverse recovery terfokus.
+
+Validasi: tiga tes regresi PASS (scope, retry/recovery, satu harga dasar/add-on, expired/redeemed/outlet negatif), native detached snapshot restore dan inverse PASS; seluruh voucher minuman belum terpakai lolos Salted Caramel serta lima tambahan, sedangkan cheesecake dan Matcha Premium tetap ditolak. Endpoint voucher authoritative yang dipakai kasir mengonfirmasi diskon Salted Caramel Rp18.000. Setelah koreksi, runtime mencatat penukaran Salted Caramel committed; pengujian agent sendiri tidak menukar voucher atau membuat pembayaran/penjualan/stok. Customer/member/public health dan encrypted backup/disposable restore sebelum serta sesudah koreksi PASS. Hosted CI tidak dijalankan; ini bukan BUSINESS_READY seluruh produk. Tidak ada blocker tersisa pada penolakan Salted Caramel; menu baru berikutnya tetap memerlukan admission katalog voucher yang eksplisit.
+
 ## 2026-10-31 - DOKU Virtual Account aktif pada gateway pusat
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk provider DOKU VA. PAID_ACCEPTANCE_OPEN dan SETTLEMENT_ACCEPTANCE_OPEN; BUSINESS_READY tidak diklaim.
