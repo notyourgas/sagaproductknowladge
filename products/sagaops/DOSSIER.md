@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-11-03 - Tujuh foto Tea dan Nonkop dari Drive aktif
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk pembaruan media katalog. Katalog169/publikasi19 pada release existing `a2c0867e9320fc48696faf2b29e0521887f60115` menampilkan gambar kiriman Andreas untuk Lemon Ti, Yuzu Tea, Strawberry Tea, Lychee Ti, Matcha, Chocolate dan Red Velvet pada Kiosk, Kasir dan e-menu. Dua gambar beririsan lemon dipetakan sesuai arahan Andreas: gambar pertama untuk Lemon Ti, kedua untuk Yuzu Tea. Varian Premium dan media menu lain tetap seperti sebelumnya.
+
+Tujuh PNG sumber disimpan utuh, diverifikasi ukuran/SHA256 lalu dioptimalkan menjadi JPEG1254x1254 sekitar130-185KB tanpa crop atau generasi gambar ulang. Logo, komposisi dan latar dipertahankan; metadata file dibersihkan. File/organisasi/sharing Drive tidak diubah. Harga, HPP, promo, opsi menu, data stok dan template nota cocok baseline sebelum/sesudah. Tidak membuat penjualan, pembayaran atau cetakan fisik.
+
+Validasi format/ukuran lokal serta read-back Owner/Kasir/katalog Kiosk lulus untuk tujuh gambar persis; e-menu kategori Tea dan Nonkop diperiksa di Chrome pada publikasi19. Marker penyimpanan format1 tetap aktif sesudah penulisan/publikasi, dengan JSON katalog212055 byte dan healthREADY. Publikasi memakai expected-version guard dan hanya tujuh draft milik perubahan ini. Catatan publikasi yang terlalu panjang ditolak, kemudian diperpendek; draft yang sudah tersimpan tidak diunggah ulang. Tidak ada perubahan source, migrasi, pemasangan paket atau rilis backend baru. Provenance: keputusan Andreas, sumber Drive, release existing, publikasi katalog dan read-back live; bukti rinci privat. BUSINESS_READY seluruh produk tidak diklaim.
+
 ## 2026-11-03 - Penyimpanan media katalog dan enam foto Cake/Cloud aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk scope media katalog. Source `a2c0867e9320fc48696faf2b29e0521887f60115`, rollback pembaca kompatibel `e08950ec790a02ececa358631bf90325ba612c85`. Katalog versi161/publikasi18: foto Original/Brownies/Iceberg Cheesecake dan Cookie/Berry/Choco Cloud telah diterbitkan, dibaca ulang melalui Owner/Kasir/katalog Kiosk, serta diperiksa pada e-menu live. Foto Cloud memakai gambar kiriman Andreas; metadata file dibuang tanpa mengubah data piksel terkompresi. Latar bersih dan logo dipertahankan.

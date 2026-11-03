@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-03 - Tujuh foto Tea dan Nonkop dari Drive aktif
+
+CONFIRMED / PRODUCTION_ACTIVATED. Tujuh gambar dari Drive Andreas sudah terbit pada katalog169/publikasi19 untuk Lemon Ti, Yuzu Tea, Strawberry Tea, Lychee Ti, Matcha, Chocolate dan Red Velvet. Gambar lemon pertama untuk Lemon Ti, kedua untuk Yuzu Tea. Original Drive tetap utuh; ekspor JPEG1254x1254 ringan mempertahankan komposisi/logo. Varian Premium, media lain, harga/HPP/promo/stok/nota/printer tetap. Validasi dan read-back Kiosk/Kasir/e-menu, visual Tea/Nonkop di Chrome, format storage1 serta healthREADY lulus. Source backend tidak berubah: `a2c0867e9320fc48696faf2b29e0521887f60115`. Tidak ada penjualan, pembayaran, cetak TEST atau deployment backend baru. Sumber: instruksi Andreas, file Drive, publikasi dan verifikasi live. Bukti rinci privat; BUSINESS_READY seluruh produk tidak diklaim.
+
+Sinkronisasi konten production dari main bersih; source release existing dan revisi katalog menjadi provenance terpisah.
+
 ## 2026-11-03 - Penyimpanan media katalog dan enam foto Cake/Cloud aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Source `a2c0867e9320fc48696faf2b29e0521887f60115`, rollback pembaca kompatibel `e08950ec790a02ececa358631bf90325ba612c85`. Katalog161/publikasi18 memuat enam foto Cake/Cloud dari Andreas. Foto Cloud dibersihkan metadatanya tanpa mengubah piksel. Penyimpanan katalog PostgreSQL memakai referensi objek immutable; JSON aktif204280 byte dan35 objek, dengan isi/hash publikasi lama tetap. Harga/HPP/promo/stok/nota/printer dipertahankan, tanpa penjualan/pembayaran/cetak TEST.77 tes penyimpanan/native PASS; bukti offline285 PASS/3 skip berlaku pada byte aplikasi identik. Backup/offsite, rehearsal, rollback, marker database dan health/monitor lulus pada batas normal PostgreSQL384MiB. Blocker media sebelumnya ditutup; BUSINESS_READY seluruh produk tidak diklaim. Sumber: instruksi Andreas, source/CI/receipt dan read-back live. Bukti rinci privat; tidak memuat kredensial, data customer atau harga supplier.
