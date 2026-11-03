@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-03 - Penyimpanan media katalog dan enam foto Cake/Cloud aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Source `a2c0867e9320fc48696faf2b29e0521887f60115`, rollback pembaca kompatibel `e08950ec790a02ececa358631bf90325ba612c85`. Katalog161/publikasi18 memuat enam foto Cake/Cloud dari Andreas. Foto Cloud dibersihkan metadatanya tanpa mengubah piksel. Penyimpanan katalog PostgreSQL memakai referensi objek immutable; JSON aktif204280 byte dan35 objek, dengan isi/hash publikasi lama tetap. Harga/HPP/promo/stok/nota/printer dipertahankan, tanpa penjualan/pembayaran/cetak TEST.77 tes penyimpanan/native PASS; bukti offline285 PASS/3 skip berlaku pada byte aplikasi identik. Backup/offsite, rehearsal, rollback, marker database dan health/monitor lulus pada batas normal PostgreSQL384MiB. Blocker media sebelumnya ditutup; BUSINESS_READY seluruh produk tidak diklaim. Sumber: instruksi Andreas, source/CI/receipt dan read-back live. Bukti rinci privat; tidak memuat kredensial, data customer atau harga supplier.
+
+RESOLVED: kegagalan konversi/unggah media dan foto tertunda pada checkpoint2 November. Kegagalan lama tidak ditafsir ulang sebagai PASS. Tidak ada blocker tersisa untuk publikasi enam foto ini; verifikasi fisik baru berada di luar scope perubahan media.
+
 ## 2026-11-02 — Voucher minuman Member: Salted Caramel dan katalog standar
 
 `CONFIRMED / PRODUCTION_ACTIVATED` untuk koreksi konfigurasi dan mapping voucher, bukan rilis artifact aplikasi baru. Voucher hadiah pendaftaran masih memakai daftar 18 minuman awal sehingga Salted Caramel Latte dan lima menu standar baru ditolak meskipun claim masih berlaku. Mapping kini mencakup 24 minuman: tambahan Butterscotch Latte, Caramel Latte, Salted Caramel Latte, Strawberry Tea, Vanilla Latte dan Yuzu Tea. Kebijakan DEC-227 tetap satu harga dasar minuman; add-on berbayar, expiry dan status redeemed tetap dipertahankan. Makanan, minuman premium dan voucher Studio tidak diperluas.

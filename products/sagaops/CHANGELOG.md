@@ -1,5 +1,9 @@
 # SagaOPS Changelog
 
+## 2026-11-03 - Penyimpanan media katalog dan enam foto Cake/Cloud aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Source `a2c0867e9320fc48696faf2b29e0521887f60115`, rollback pembaca kompatibel `e08950ec790a02ececa358631bf90325ba612c85`. Katalog161/publikasi18 memuat enam foto Cake/Cloud dari Andreas. Foto Cloud dibersihkan metadatanya tanpa mengubah piksel. Penyimpanan katalog PostgreSQL memakai referensi objek immutable; JSON aktif204280 byte dan35 objek, dengan isi/hash publikasi lama tetap. Harga/HPP/promo/stok/nota/printer dipertahankan, tanpa penjualan/pembayaran/cetak TEST.77 tes penyimpanan/native PASS; bukti offline285 PASS/3 skip berlaku pada byte aplikasi identik. Backup/offsite, rehearsal, rollback, marker database dan health/monitor lulus pada batas normal PostgreSQL384MiB. Blocker media sebelumnya ditutup; BUSINESS_READY seluruh produk tidak diklaim. Sumber: instruksi Andreas, source/CI/receipt dan read-back live. Bukti rinci privat; tidak memuat kredensial, data customer atau harga supplier.
+
 ## 2026-11-02 - Jalur pemeliharaan media belum lolos; production dipertahankan
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / QUALIFICATION_FAILED. Izin pemeliharaan terbatas dari Andreas telah diterima, menggantikan status menunggu izin pada checkpoint sebelumnya. Jendela tersebut belum dimulai karena uji terisolasi masih gagal. Konversi awal selesai pada kapasitas sementara dan proses konversinya benar-benar ditutup; database uji kemudian terputus ketika kembali ke batas normal. Jadi kenaikan kapasitas sementara belum terbukti menyelesaikan jalur penyimpanan ini. Tidak menerbitkan paket gagal atau mengulang gate yang sama tanpa batas.

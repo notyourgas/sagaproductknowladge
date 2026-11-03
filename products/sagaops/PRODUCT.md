@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-03 - Penyimpanan media katalog dan enam foto Cake/Cloud aktif
+
+CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED untuk scope media katalog. Source `a2c0867e9320fc48696faf2b29e0521887f60115`, rollback pembaca kompatibel `e08950ec790a02ececa358631bf90325ba612c85`. Katalog versi161/publikasi18: foto Original/Brownies/Iceberg Cheesecake dan Cookie/Berry/Choco Cloud telah diterbitkan, dibaca ulang melalui Owner/Kasir/katalog Kiosk, serta diperiksa pada e-menu live. Foto Cloud memakai gambar kiriman Andreas; metadata file dibuang tanpa mengubah data piksel terkompresi. Latar bersih dan logo dipertahankan.
+
+Foto dan badan arsip publikasi kini disimpan sebagai objek immutable beralamat hash di PostgreSQL; JSON katalog aktif memakai referensi tervalidasi. Observasi langsung setelah konversi menunjukkan format1, 35 objek dan JSON aktif204280 byte, dari20093787 byte pada versi/publikasi yang sama. Ini bukan ukuran seluruh database. Isi/hash publikasi lama dipertahankan; tidak menghapus histori. Harga, HPP, promo, konfigurasi menu, stok dan template nota cocok pemeriksaan sebelum/sesudah. Tidak membuat penjualan, pembayaran atau cetakan fisik.
+
+Validasi:77 tes penyimpanan/native PostgreSQL18 PASS; bukti offline285 PASS/3 skip kondisional berlaku pada byte aplikasi yang identik. Backup/offsite, rehearsal, rollback, marker database dan health/monitor lulus pada batas normal PostgreSQL384MiB. Blocker media sebelumnya ditutup; BUSINESS_READY seluruh produk tidak diklaim. Sumber: instruksi Andreas, source/CI/receipt serta read-back live; bukti rinci privat.
+
 ## 2026-11-02 - Jalur pemeliharaan media belum lolos; production dipertahankan
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / QUALIFICATION_FAILED. Izin pemeliharaan terbatas dari Andreas telah diterima, menggantikan status menunggu izin pada checkpoint sebelumnya. Jendela tersebut belum dimulai karena uji terisolasi masih gagal. Konversi awal selesai pada kapasitas sementara dan proses konversinya benar-benar ditutup; database uji kemudian terputus ketika kembali ke batas normal. Jadi kenaikan kapasitas sementara belum terbukti menyelesaikan jalur penyimpanan ini. Tidak menerbitkan paket gagal atau mengulang gate yang sama tanpa batas.
