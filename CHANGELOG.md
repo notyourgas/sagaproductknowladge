@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-04 - Sebelas foto kopi dan latte dari Drive aktif
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk media katalog185/publikasi22. Sebelas foto kiriman Andreas dipasang ke Americano, Butterscotch Latte, Cafe Latte, Cappucino, Caramel Latte, Es Kopi Saga, Moccacino, Saga Premiyum, Salted Caramel Latte, Vanilla Latte dan Magnosiyum. Sepuluh foto terbit pada publikasi21, lalu Magnosiyum pada publikasi22 setelah Andreas mengonfirmasi identitas fotonya. Subfolder teh yang sudah terbit tidak diunggah ulang; dua foto Matcha/Coklat Premium yang baru dipasang tetap.
+
+PNG sumber disimpan utuh dan diverifikasi ukuran/SHA256; ekspor JPEG1122x1402 sekitar163-213KiB tanpa crop atau upscale, metadata dibersihkan. Sumber merupakan retouch generatif sebelumnya, bukan master kamera, dan alt menyebut ilustrasi. Validasi uploader existing serta read-back persis Owner/Kasir/katalog Kiosk/e-menu lulus; preview sumber dan beberapa ekspor diperiksa lokal, browser live baru tidak diuji. Setelah publikasi21, pemeriksaan daftar riwayat menemukan batas tampilan API20 entri; seluruh22 metadata/hash publikasi tersimpan kemudian diverifikasi langsung secara read-only tanpa mengulang unggahan. Storage format1 tetap aktif, JSON katalog223512 byte dan healthREADY.
+
+Harga, HPP, promo, opsi menu, stok, nota serta printer cocok pemeriksaan sebelum/sesudah. Tidak membuat transaksi, pembayaran atau cetak TEST. Source backend tetap `a2c0867e9320fc48696faf2b29e0521887f60115`; tidak ada rilis kode, migrasi atau paket baru. Sumber: instruksi/konfirmasi Andreas, file Drive, publikasi dan verifikasi live; bukti rinci privat. BUSINESS_READY seluruh produk tidak diklaim.
+
 ## 2026-11-04 - Foto Matcha Premium dan Coklat Premium diperbarui
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk media katalog172/publikasi20. Mengikuti arahan Andreas, foto Matcha Premium memakai warna hijau muda merata dan Coklat Premium cokelat merata sedikit lebih gelap, dengan gaya foto menu reguler. Dua aset hasil edit AI disimpan sebagai JPEG1254x1254, lolos validator media existing, dan memakai alt yang menyebut ilustrasi. Foto reguler dan menu lain dipertahankan.
