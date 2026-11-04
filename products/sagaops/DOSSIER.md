@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-11-04 - Foto Matcha Premium dan Coklat Premium diperbarui
+
+CONFIRMED / PRODUCTION_ACTIVATED untuk media katalog172/publikasi20. Mengikuti arahan Andreas, foto Matcha Premium memakai warna hijau muda merata dan Coklat Premium cokelat merata sedikit lebih gelap, dengan gaya foto menu reguler. Dua aset hasil edit AI disimpan sebagai JPEG1254x1254, lolos validator media existing, dan memakai alt yang menyebut ilustrasi. Foto reguler dan menu lain dipertahankan.
+
+Publikasi melalui Owner terverifikasi dan expected-version guard; read-back persis media/alt pada Owner, Kasir serta katalog Kiosk/e-menu lulus. Harga kedua menu tetap Rp20.000; HPP, promo, opsi menu, stok, template nota dan hash publikasi lama cocok baseline. Inspeksi visual aset dilakukan lokal; pemeriksaan browser live baru tidak dijalankan. Tidak membuat transaksi, pembayaran atau cetak TEST. Source backend tetap `a2c0867e9320fc48696faf2b29e0521887f60115`, healthREADY; tidak ada rilis kode, migrasi atau paket baru. Sumber: instruksi Andreas, aset edit, publikasi dan verifikasi live; bukti rinci privat. BUSINESS_READY seluruh produk tidak diklaim.
+
 ## 2026-11-03 - Tujuh foto Tea dan Nonkop dari Drive aktif
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk pembaruan media katalog. Katalog169/publikasi19 pada release existing `a2c0867e9320fc48696faf2b29e0521887f60115` menampilkan gambar kiriman Andreas untuk Lemon Ti, Yuzu Tea, Strawberry Tea, Lychee Ti, Matcha, Chocolate dan Red Velvet pada Kiosk, Kasir dan e-menu. Dua gambar beririsan lemon dipetakan sesuai arahan Andreas: gambar pertama untuk Lemon Ti, kedua untuk Yuzu Tea. Varian Premium dan media menu lain tetap seperti sebelumnya.
