@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-05 - Jersey Jago r70: 499 foto katalog lebih terang
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis Jersey Jago. Sebanyak 122 set baru dengan 499 foto lebih terang (254 foto katalog dan 245 crop detail) menambah katalog dari 42 menjadi 164 pilihan. Galeri membedakan depan, belakang, alternatif, dan detail. Harga, ukuran, stok, originalitas, serta kondisi fisik belum dikonfirmasi; pembelian tetap nonaktif.
+
+Publikasi r70 pada https://jersey-jago-prototype.pages.dev/ terikat deployment `23dae8c6-5d29-464f-b2dd-613cc1e094b8`. Seluruh 613 berkas publik, termasuk 499 foto baru, cocok ukuran dan SHA256. Header noindex/security dan batas 404 lulus; source tests 350/350, typecheck/build serta galeri pada viewport simulasi 320/390/1440 lulus. Rilis diturunkan dari artifact r69 yang terverifikasi agar perubahan lokal owner UI lain tidak ikut tayang. Tidak ada Functions, D1, pembayaran, order atau inventory activation; BUSINESS_READY tidak diklaim.
+
+Paket statis r70 SHA256 `6cb4870f7244fa21e2d541a3037db903d0d67fbc2a56e0129653eb4de4f8af62`; source snapshot SHA256 `a5f3fc34f31fa55bfa1c2e27d4e5f53d59115a7e35f9cc08ec2bb7c5df34f68d`. Source base Git historis `c26607a` tidak disamakan dengan commit seluruh r70. Rollback adalah deployment r69 `718392c5-1d17-46bb-983b-dd21bc9d0c82` dan paket retained. Tidak ada source push baru yang diklaim. Sumber: instruksi Andreas, aset foto, ledger release dan verifikasi publik.
+
 ## 2026-11-04 - Sebelas foto kopi dan latte dari Drive aktif
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk media katalog185/publikasi22. Sebelas foto kiriman Andreas dipasang ke Americano, Butterscotch Latte, Cafe Latte, Cappucino, Caramel Latte, Es Kopi Saga, Moccacino, Saga Premiyum, Salted Caramel Latte, Vanilla Latte dan Magnosiyum. Sepuluh foto terbit pada publikasi21, lalu Magnosiyum pada publikasi22 setelah Andreas mengonfirmasi identitas fotonya. Subfolder teh yang sudah terbit tidak diunggah ulang; dua foto Matcha/Coklat Premium yang baru dipasang tetap.

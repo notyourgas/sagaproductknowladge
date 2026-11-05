@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-05 - Jersey Jago r70: 499 foto katalog lebih terang
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis Jersey Jago. Sebanyak 122 set baru dengan 499 foto lebih terang (254 foto katalog dan 245 crop detail) menambah katalog dari 42 menjadi 164 pilihan. Galeri membedakan depan, belakang, alternatif, dan detail. Harga, ukuran, stok, originalitas, serta kondisi fisik belum dikonfirmasi; pembelian tetap nonaktif.
+
+OPEN: verifikasi barang fisik, data jual, iPhone/Safari fisik dan acceptance pembeli. Drive versi terang terverifikasi 384/499 foto; 115 crop detail masih tertunda karena penolakan provider/batas unggahan. Seluruh 499 sudah tersedia di website; status pengiriman Drive tidak disamakan dengan publikasi website.
+
+Hosting publik sudah aktif pada alias Pages yang tercantum; catatan lama tentang menunggu login, tunnel atau penundaan Pages adalah histori dan tidak menggantikan status r70 ini. Commerce production dan BUSINESS_READY tetap OPEN.
+
 ## 2026-11-03 - Penyimpanan media katalog dan enam foto Cake/Cloud aktif
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Source `a2c0867e9320fc48696faf2b29e0521887f60115`, rollback pembaca kompatibel `e08950ec790a02ececa358631bf90325ba612c85`. Katalog161/publikasi18 memuat enam foto Cake/Cloud dari Andreas. Foto Cloud dibersihkan metadatanya tanpa mengubah piksel. Penyimpanan katalog PostgreSQL memakai referensi objek immutable; JSON aktif204280 byte dan35 objek, dengan isi/hash publikasi lama tetap. Harga/HPP/promo/stok/nota/printer dipertahankan, tanpa penjualan/pembayaran/cetak TEST.77 tes penyimpanan/native PASS; bukti offline285 PASS/3 skip berlaku pada byte aplikasi identik. Backup/offsite, rehearsal, rollback, marker database dan health/monitor lulus pada batas normal PostgreSQL384MiB. Blocker media sebelumnya ditutup; BUSINESS_READY seluruh produk tidak diklaim. Sumber: instruksi Andreas, source/CI/receipt dan read-back live. Bukti rinci privat; tidak memuat kredensial, data customer atau harga supplier.

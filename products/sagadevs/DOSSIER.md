@@ -1,5 +1,15 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-05 - Jersey Jago r70: 499 foto katalog lebih terang
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis Jersey Jago. Sebanyak 122 set baru dengan 499 foto lebih terang (254 foto katalog dan 245 crop detail) menambah katalog dari 42 menjadi 164 pilihan. Galeri membedakan depan, belakang, alternatif, dan detail. Harga, ukuran, stok, originalitas, serta kondisi fisik belum dikonfirmasi; pembelian tetap nonaktif.
+
+JPEG tetap 1120 x 1400, sRGB, latar abu-abu dan whitespace. Revisi menerangkan tonal tanpa menggambar ulang bahan/sablon atau menghapus defect. Tiga kancing pada Neymar kuning adalah edit digital yang diminta, disertai crop leher sebelum perbaikan dan catatan bahwa barang fisik belum dinyatakan diperbaiki. Nama set adalah identifikasi foto, bukan verifikasi produk. Versi sebelumnya dipertahankan.
+
+Publikasi r70 pada https://jersey-jago-prototype.pages.dev/ terikat deployment `23dae8c6-5d29-464f-b2dd-613cc1e094b8`. Seluruh 613 berkas publik, termasuk 499 foto baru, cocok ukuran dan SHA256. Header noindex/security dan batas 404 lulus; source tests 350/350, typecheck/build serta galeri pada viewport simulasi 320/390/1440 lulus. Rilis diturunkan dari artifact r69 yang terverifikasi agar perubahan lokal owner UI lain tidak ikut tayang. Tidak ada Functions, D1, pembayaran, order atau inventory activation; BUSINESS_READY tidak diklaim.
+
+OPEN: verifikasi barang fisik, data jual, iPhone/Safari fisik dan acceptance pembeli. Drive versi terang terverifikasi 384/499 foto; 115 crop detail masih tertunda karena penolakan provider/batas unggahan. Seluruh 499 sudah tersedia di website; status pengiriman Drive tidak disamakan dengan publikasi website.
+
 ## 2026-10-26 - Google Maps bersama Kopi Saga dan Saga Studio
 
 CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED khusus tautan lokasi.
