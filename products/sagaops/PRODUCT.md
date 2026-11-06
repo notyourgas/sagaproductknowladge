@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-06 - Harga Ojol terpisah dan Premium final Rp25.000, belum deploy
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `352970b3990372203ab6ac0da9aa114b6788407e` sudah push. Daftar versi `SAGA_OJOL_20261106_V1` memuat 28 harga dari foto dan konfirmasi Andreas untuk ShopeeFood/GrabFood/GoFood. Matcha Premium dan Coklat Premium final masing-masing Rp25.000, menggantikan arahan sementara Rp23.000; harga outlet keduanya tetap Rp20.000. Dua puluh tujuh produk cocok katalog existing. Es Batu Saga Rp6.500 khusus Ojol sudah didukung source, belum dibuat/dipublikasikan di production. Sumber: foto dan koreksi harga Andreas, source/tests dan health read-only.
+
+Pemilihan Ojol mengubah harga dasar, mempertahankan tambahan berbayar, nilai penjualan dan tagihan outlet Rp0. Harga outlet/HPP/media tetap; promo/voucher outlet tidak diterapkan ke harga aplikasi. Menu tanpa harga Ojol ditahan. Source menyembunyikan Es Batu dari tampilan regular/e-menu dan menolak non-Ojol; sebelum rollback ke reader lama, arsipkan/publish hanya produk ini dengan guard atau gunakan recovery reader kompatibel.
+
+64 tes regresi lokal lulus sebelum koreksi Premium terakhir; enam tes harga final diulang dan lulus. Static/TypeScript, cache dan penjagaan nota/printer lulus pada delta relevan. Linux/paket immutable, backup/recovery segar, guarded deploy, publikasi Es Batu dan UAT masih OPEN; kuota runner gratis belum terbaca. Production tetap sehat pada `a2c0867e9320fc48696faf2b29e0521887f60115`. Tidak membuat transaksi/pembayaran/cetak production; BUSINESS_READY Ojol tidak diklaim. Codex menangani qualification/release setelah pembacaan kuota Rp0 tersedia; Andreas menangani akses kuota dan acceptance transaksi sah.
+
 ## 2026-11-06 - Ojol Kiosk/Kasir selesai di source, belum production
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `cdee4f6e74042f7071fc991def1ca5d87aa1d415` pada branch `codex/ojol-payment-20261106` sudah didorong ke remote. Mengikuti permintaan Andreas, Kiosk/Kasir memiliki pilihan Ojol dengan dropdown ShopeeFood, GrabFood, GoFood. Tagihan di outlet Rp0; nilai penjualan tetap utuh, tidak menjadi diskon/Invitation. Kiosk memakai PIN staf pribadi existing; Kasir memakai autentikasi staf existing. Membutuhkan shift terbuka dan koneksi online. Laporan memisahkan tiga platform; settlement/biaya platform belum direkonsiliasi dan tidak ada integrasi API platform berbayar.
