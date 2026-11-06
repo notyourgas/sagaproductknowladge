@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-06 - Ojol Kiosk/Kasir selesai di source, belum production
+
+CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `cdee4f6e74042f7071fc991def1ca5d87aa1d415` pada branch `codex/ojol-payment-20261106` sudah didorong ke remote. Mengikuti permintaan Andreas, Kiosk/Kasir memiliki pilihan Ojol dengan dropdown ShopeeFood, GrabFood, GoFood. Tagihan di outlet Rp0; nilai penjualan tetap utuh, tidak menjadi diskon/Invitation. Kiosk memakai PIN staf pribadi existing; Kasir memakai autentikasi staf existing. Membutuhkan shift terbuka dan koneksi online. Laporan memisahkan tiga platform; settlement/biaya platform belum direkonsiliasi dan tidak ada integrasi API platform berbayar.
+
+Validasi lokal: 30 tes terfokus lulus, lalu enam tes persistensi/platform diulang setelah perbaikan pemulihan lost acknowledgement dan validasi input terakhir, semuanya lulus. Browser Kiosk/Kasir, restart, idempotency, concurrency, nol kas laci, exact-byte renderer closing historis, spacing/cutter dan asset cache lulus. Static check/TypeScript lulus (1322 modul, 37 migrasi; tidak menambah migrasi). Sebagian regresi existing di Windows membutuhkan PostgreSQL native/LZ4 dan OpenSSL, sehingga kelulusan Linux belum diklaim.
+
+OPEN: kuota gratis runner belum terbaca karena kontrol Chrome tidak tersedia dan CLI existing tidak memiliki scope billing; tidak memperluas scope atau menaikkan budget Rp0. Kualifikasi Linux/paket immutable, backup/recovery segar, guarded deploy dan UAT Ojol belum dilakukan. Production diperiksa tetap sehat pada `a2c0867e9320fc48696faf2b29e0521887f60115`. Tidak membuat transaksi/pembayaran/cetakan production; harga/HPP/media dan konfigurasi/layout printer existing dipertahankan. Owner tindak lanjut: Codex menyelesaikan qualification/release setelah verifikasi kuota gratis, Andreas menyediakan pembacaan kuota dan acceptance transaksi sah. BUSINESS_READY fitur Ojol tidak diklaim. Sumber: permintaan Andreas, exact source, tes lokal dan health read-only; rincian bukti disimpan privat.
+
 ## 2026-11-04 - Sebelas foto kopi dan latte dari Drive aktif
 
 CONFIRMED / PRODUCTION_ACTIVATED untuk media katalog185/publikasi22. Sebelas foto kiriman Andreas dipasang ke Americano, Butterscotch Latte, Cafe Latte, Cappucino, Caramel Latte, Es Kopi Saga, Moccacino, Saga Premiyum, Salted Caramel Latte, Vanilla Latte dan Magnosiyum. Sepuluh foto terbit pada publikasi21, lalu Magnosiyum pada publikasi22 setelah Andreas mengonfirmasi identitas fotonya. Subfolder teh yang sudah terbit tidak diunggah ulang; dua foto Matcha/Coklat Premium yang baru dipasang tetap.
