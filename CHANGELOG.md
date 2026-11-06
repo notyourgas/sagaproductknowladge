@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-06 - Ojol aktif di Kiosk/Kasir dan Es Batu khusus Ojol terbit
+
+CONFIRMED / PRODUCTION_ACTIVATED. Source `a264c7355ee430b133569177cced802fba729add` aktif, rollback `a2c0867e9320fc48696faf2b29e0521887f60115`; katalog187/publikasi23, draft0. ShopeeFood/GrabFood/GoFood memakai daftar harga `SAGA_OJOL_20261106_V1`, nilai penjualan tetap penuh dan tagihan outlet Rp0. Konfirmasi Kiosk memakai PIN staf existing; Kasir memakai autentikasi staf existing. Harga outlet, media, pajak, promo/voucher reguler dan template nota dipertahankan. Matcha/Coklat Premium masing-masing Rp25.000 untuk Ojol; Es Batu Saga Rp6.500 khusus Ojol sudah dipublikasikan dan tidak tampil di e-menu biasa. Tidak mengisi HPP baru Es Batu atau menambah stok fisik.
+
+Gate rilis lolos: 282 tes Linux tanpa gagal/dilewati; paket immutable dan SHA256; backup terenkripsi terbaru, restore terpisah dan checksum salinan offhost; rehearsal membuka kandidat, rollback lalu kandidat lagi; aktivasi runner resmi serta monitor internal/publik. Empat bundle backup lama direlokasi setelah salinan offhost diverifikasi; dua backup terbaru tetap di server dan riwayat/transaksi tidak dihapus. Batas RAM database tidak diubah. Monitor akhir: health READY, schema37 tetap, offline tersedia, payment boundary GATEWAY tetap. Tidak memakai VPS production untuk build atau mengaktifkan biaya tambahan.
+
+Read-back Owner production: Americano Ojol Rp16.500, dua Premium Rp50.000, Es Batu Rp6.500; template nota cocok hash baseline. Publikasi Es Batu mempertahankan seluruh menu lain, konfigurasi harga, HPP existing dan modifier. API/aset Kiosk/Kasir HTTP200. Tidak membuat order/pembayaran/cetakan production untuk tes. OPEN: acceptance pesanan Ojol sah dan nota/checker fisik; settlement/biaya platform tetap belum direkonsiliasi. BUSINESS_READY Ojol belum diklaim. Sebelum fallback ke reader lama, arsipkan dan publish hanya Es Batu dengan expected-version guard; jangan rollback seluruh katalog. Sumber: instruksi/izin pembersihan dan deploy Andreas, exact source/artifact, receipt recovery/activation serta verifikasi live; rincian bukti privat.
+
 ## 2026-11-06 - Ojol lolos Linux dan paket immutable; aktivasi masih tertahan
 
 CONFIRMED / LINUX_VALIDATED / PACKAGED_NOT_DEPLOYED. Source `a264c7355ee430b133569177cced802fba729add` sudah push. Jalur alternatif Vercel Sandbox pada Hobby aktif dipakai Rp0, terpisah dari VPS production, dengan batas tiap run 2 vCPU/4 GB dan delapan menit. Run final menjalankan Node22.22.1, PostgreSQL18 asli, Chromium serta Nginx: 282 tes lulus, nol gagal/dilewati. Karakter UTF-8 rusak pada dua label Ojol di HTML Kasir diperbaiki; cache offline diregenerasi tanpa perubahan aturan pembayaran atau layout nota.
