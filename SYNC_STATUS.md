@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-06 - Ojol lolos Linux dan paket immutable; aktivasi masih tertahan
+
+CONFIRMED / LINUX_VALIDATED / PACKAGED_NOT_DEPLOYED. Source `a264c7355ee430b133569177cced802fba729add` sudah push. Jalur alternatif Vercel Sandbox pada Hobby aktif dipakai Rp0, terpisah dari VPS production, dengan batas tiap run 2 vCPU/4 GB dan delapan menit. Run final menjalankan Node22.22.1, PostgreSQL18 asli, Chromium serta Nginx: 282 tes lulus, nol gagal/dilewati. Karakter UTF-8 rusak pada dua label Ojol di HTML Kasir diperbaiki; cache offline diregenerasi tanpa perubahan aturan pembayaran atau layout nota.
+
+Paket dibangun runner produk dari exact source; unduhan dan SHA256 diverifikasi. Artifact SHA256 `0162ed630f3fa2efdd9f50d7626e5797a5d5efa1af2cb8ad717323a5da641ced`. Hambatan akses billing GitHub bukan lagi next action. Verifikasi Owner dan health tetap menunjuk production `a2c0867e9320fc48696faf2b29e0521887f60115`, katalog185/publikasi22; hash template nota cocok baseline.
+
+OPEN: kapasitas server masih85% dan backup terakhir melewati48jam. Dua TAR historis yang tidak dipakai sudah direlokasi setelah salinan offhost diverifikasi; active/rollback dipertahankan. Tiga bundle backup lama sudah tersalin dan terverifikasi, tetapi salinan server tetap disimpan sambil menunggu izin khusus relokasi. Codex melanjutkan backup terbaru, offhost/restore, rehearsal dan guarded deployment setelah ruang tersedia. Publikasi Es Batu khusus Ojol dan UAT transaksi sah/cetak fisik tetap pending. Tidak ada transaksi/pembayaran/cetakan production dibuat; BUSINESS_READY Ojol tidak diklaim. Sumber: permintaan Andreas, exact commit, tes Linux, paket/checksum serta preflight live; bukti rinci privat.
+
 ## 2026-11-06 - Jersey Jago r72: koreksi kerah dan tepi kain yang terpotong
 
 Deployment `a0a3bee4-78ce-42f5-b7a0-6cc361d948e7` pada [Jersey Jago](https://jersey-jago-prototype.pages.dev/) / [artifact r72](https://a0a3bee4.jersey-jago-prototype.pages.dev/). Sebanyak 29 berkas baru/berubah; seluruh 506 entri aktif yang diverifikasi (499 foto, enam skrip dan index) cocok ukuran dan SHA256 publik. Sebanyak 1117 entri baseline dipertahankan identik byte secara lokal. Header dan 404 publik/API/privat lulus. Typecheck/build, 14 tes terfokus dan smoke browser desktop/390px lulus, termasuk framing lengkap Chelsea dan navigasi ke detail sumber.

@@ -1,5 +1,13 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-06 - Ojol lolos Linux dan paket immutable; aktivasi masih tertahan
+
+CONFIRMED / LINUX_VALIDATED / PACKAGED_NOT_DEPLOYED. Source `a264c7355ee430b133569177cced802fba729add` sudah push. Jalur alternatif Vercel Sandbox pada Hobby aktif dipakai Rp0, terpisah dari VPS production, dengan batas tiap run 2 vCPU/4 GB dan delapan menit. Run final menjalankan Node22.22.1, PostgreSQL18 asli, Chromium serta Nginx: 282 tes lulus, nol gagal/dilewati. Karakter UTF-8 rusak pada dua label Ojol di HTML Kasir diperbaiki; cache offline diregenerasi tanpa perubahan aturan pembayaran atau layout nota.
+
+Paket dibangun runner produk dari exact source; unduhan dan SHA256 diverifikasi. Artifact SHA256 `0162ed630f3fa2efdd9f50d7626e5797a5d5efa1af2cb8ad717323a5da641ced`. Hambatan akses billing GitHub bukan lagi next action. Verifikasi Owner dan health tetap menunjuk production `a2c0867e9320fc48696faf2b29e0521887f60115`, katalog185/publikasi22; hash template nota cocok baseline.
+
+OPEN: kapasitas server masih85% dan backup terakhir melewati48jam. Dua TAR historis yang tidak dipakai sudah direlokasi setelah salinan offhost diverifikasi; active/rollback dipertahankan. Tiga bundle backup lama sudah tersalin dan terverifikasi, tetapi salinan server tetap disimpan sambil menunggu izin khusus relokasi. Codex melanjutkan backup terbaru, offhost/restore, rehearsal dan guarded deployment setelah ruang tersedia. Publikasi Es Batu khusus Ojol dan UAT transaksi sah/cetak fisik tetap pending. Tidak ada transaksi/pembayaran/cetakan production dibuat; BUSINESS_READY Ojol tidak diklaim. Sumber: permintaan Andreas, exact commit, tes Linux, paket/checksum serta preflight live; bukti rinci privat.
+
 ## 2026-11-06 - Harga Ojol terpisah dan Premium final Rp25.000, belum deploy
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `352970b3990372203ab6ac0da9aa114b6788407e` sudah push. Daftar versi `SAGA_OJOL_20261106_V1` memuat 28 harga dari foto dan konfirmasi Andreas untuk ShopeeFood/GrabFood/GoFood. Matcha Premium dan Coklat Premium final masing-masing Rp25.000, menggantikan arahan sementara Rp23.000; harga outlet keduanya tetap Rp20.000. Dua puluh tujuh produk cocok katalog existing. Es Batu Saga Rp6.500 khusus Ojol sudah didukung source, belum dibuat/dipublikasikan di production. Sumber: foto dan koreksi harga Andreas, source/tests dan health read-only.
