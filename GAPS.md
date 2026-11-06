@@ -1,5 +1,13 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-06 - Jersey Jago r71: hanger dihapus dari foto katalog
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Hanger dihapus pada 238 foto utama/alternatif; 16 foto utama yang sudah bersih dipertahankan. Galeri tetap 499 foto untuk 122 set batch ketiga, dan katalog tetap 164 pilihan. Seluruh foto aktif memakai referensi revisi tanpa hanger. Format 1120 x 1400, sRGB, latar abu-abu dan whitespace dipertahankan.
+
+OPEN: inspeksi barang fisik/data jual, penerimaan visual pemilik dan uji iPhone/Safari fisik. Website r71 sudah diverifikasi; pengiriman Drive adalah pekerjaan terpisah dan tidak dinyatakan selesai oleh rilis ini. Checkpoint Drive versi terang sebelumnya masih 384/499, dengan 115 crop detail tertunda; r71 belum diklaim terkirim ke Drive.
+
+Rilis diturunkan dari artifact r70 terverifikasi agar owner UI lokal lain tidak ikut tayang. Tidak ada Functions, D1, auth, order, payment atau inventory activation. Harga, ukuran, originalitas, stok dan kondisi fisik tetap belum dikonfirmasi; pembelian nonaktif dan BUSINESS_READY tidak diklaim.
+
 ## 2026-11-06 - Ojol Kiosk/Kasir selesai di source, belum production
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `cdee4f6e74042f7071fc991def1ca5d87aa1d415` pada branch `codex/ojol-payment-20261106` sudah didorong ke remote. Mengikuti permintaan Andreas, Kiosk/Kasir memiliki pilihan Ojol dengan dropdown ShopeeFood, GrabFood, GoFood. Tagihan di outlet Rp0; nilai penjualan tetap utuh, tidak menjadi diskon/Invitation. Kiosk memakai PIN staf pribadi existing; Kasir memakai autentikasi staf existing. Membutuhkan shift terbuka dan koneksi online. Laporan memisahkan tiga platform; settlement/biaya platform belum direkonsiliasi dan tidak ada integrasi API platform berbayar.

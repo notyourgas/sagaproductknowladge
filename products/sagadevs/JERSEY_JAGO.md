@@ -1,5 +1,19 @@
 # Jersey Jago — Client Visual Prototype
 
+## 2026-11-06 - Jersey Jago r71: hanger dihapus dari foto katalog
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Hanger dihapus pada 238 foto utama/alternatif; 16 foto utama yang sudah bersih dipertahankan. Galeri tetap 499 foto untuk 122 set batch ketiga, dan katalog tetap 164 pilihan. Seluruh foto aktif memakai referensi revisi tanpa hanger. Format 1120 x 1400, sRGB, latar abu-abu dan whitespace dipertahankan.
+
+Penghapusan memakai perapian mask hanger/latar, termasuk pembukaan area kerah ke latar polos; tidak menggunakan hasil generatif seluruh baju. Logo, nameset, noda dan sablon aus di luar area mask dipertahankan. Sebanyak 244 crop detail tetap identik byte; satu crop leher Neymar diperketat di bawah hanger agar kondisi sebelum perbaikan kancing tetap terlihat. Tiga kancing Neymar tetap merupakan edit digital dengan disclaimer barang fisik. Catatan foto kini mencakup penghapusan hanger.
+
+Deployment `51771157-f615-4f2e-8712-12fb223669be` pada [Jersey Jago](https://jersey-jago-prototype.pages.dev/) / [artifact r71](https://51771157.jersey-jago-prototype.pages.dev/). Sebanyak 506 berkas berubah, termasuk seluruh 499 foto aktif, cocok ukuran dan SHA256 setelah unggah; 612 entri baseline dipertahankan identik byte secara lokal. Header dan batas 404 publik/API/privat lulus. Typecheck/build, 14 tes terfokus dan smoke browser desktop/390px lulus; pemeriksaan foto mencakup seluruh 254 bagian leher batch terbaru dan 82 foto katalog lama.
+
+Rilis diturunkan dari artifact r70 terverifikasi agar owner UI lokal lain tidak ikut tayang. Tidak ada Functions, D1, auth, order, payment atau inventory activation. Harga, ukuran, originalitas, stok dan kondisi fisik tetap belum dikonfirmasi; pembelian nonaktif dan BUSINESS_READY tidak diklaim.
+
+Paket r71 SHA256 `34ac743b7e12bad2b6cbce853089130c1db69814b6e9befc4d17626353b0859a`; final source snapshot SHA256 `75f15bc2cec283b7509341bf8a3856beaf09db31174cd6f167b425020400c326`. Source base `c26607a` adalah histori, bukan commit semua perubahan r71. Delapan delta source/test/manifest dan 499 aset disimpan dengan guard baseline; tidak mengklaim source commit/push baru. Rollback langsung: r70 deployment `23dae8c6-5d29-464f-b2dd-613cc1e094b8` dan paket retained. Sumber: instruksi Andreas, hasil foto, ledger artifact dan verifikasi publik.
+
+OPEN: inspeksi barang fisik/data jual, penerimaan visual pemilik dan uji iPhone/Safari fisik. Website r71 sudah diverifikasi; pengiriman Drive adalah pekerjaan terpisah dan tidak dinyatakan selesai oleh rilis ini. Checkpoint Drive versi terang sebelumnya masih 384/499, dengan 115 crop detail tertunda; r71 belum diklaim terkirim ke Drive.
+
 ## 2026-11-05 - Jersey Jago r70: 499 foto katalog lebih terang
 
 CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis Jersey Jago. Sebanyak 122 set baru dengan 499 foto lebih terang (254 foto katalog dan 245 crop detail) menambah katalog dari 42 menjadi 164 pilihan. Galeri membedakan depan, belakang, alternatif, dan detail. Harga, ukuran, stok, originalitas, serta kondisi fisik belum dikonfirmasi; pembelian tetap nonaktif.

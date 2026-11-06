@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-06 - Jersey Jago r71: hanger dihapus dari foto katalog
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Hanger dihapus pada 238 foto utama/alternatif; 16 foto utama yang sudah bersih dipertahankan. Galeri tetap 499 foto untuk 122 set batch ketiga, dan katalog tetap 164 pilihan. Seluruh foto aktif memakai referensi revisi tanpa hanger. Format 1120 x 1400, sRGB, latar abu-abu dan whitespace dipertahankan.
+
+Rilis diturunkan dari artifact r70 terverifikasi agar owner UI lokal lain tidak ikut tayang. Tidak ada Functions, D1, auth, order, payment atau inventory activation. Harga, ukuran, originalitas, stok dan kondisi fisik tetap belum dikonfirmasi; pembelian nonaktif dan BUSINESS_READY tidak diklaim.
+
+Rilis aktif r71 menggantikan snapshot r70 di bawah. Detail provenance dan pemeriksaan: [Jersey Jago](JERSEY_JAGO.md).
+
 ## 2026-11-05 - Jersey Jago r70: 499 foto katalog lebih terang
 
 CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis Jersey Jago. Sebanyak 122 set baru dengan 499 foto lebih terang (254 foto katalog dan 245 crop detail) menambah katalog dari 42 menjadi 164 pilihan. Galeri membedakan depan, belakang, alternatif, dan detail. Harga, ukuran, stok, originalitas, serta kondisi fisik belum dikonfirmasi; pembelian tetap nonaktif.

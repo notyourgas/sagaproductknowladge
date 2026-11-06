@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-06 - Jersey Jago r71: hanger dihapus dari foto katalog
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Hanger dihapus pada 238 foto utama/alternatif; 16 foto utama yang sudah bersih dipertahankan. Galeri tetap 499 foto untuk 122 set batch ketiga, dan katalog tetap 164 pilihan. Seluruh foto aktif memakai referensi revisi tanpa hanger. Format 1120 x 1400, sRGB, latar abu-abu dan whitespace dipertahankan.
+
+Deployment `51771157-f615-4f2e-8712-12fb223669be` pada [Jersey Jago](https://jersey-jago-prototype.pages.dev/) / [artifact r71](https://51771157.jersey-jago-prototype.pages.dev/). Sebanyak 506 berkas berubah, termasuk seluruh 499 foto aktif, cocok ukuran dan SHA256 setelah unggah; 612 entri baseline dipertahankan identik byte secara lokal. Header dan batas 404 publik/API/privat lulus. Typecheck/build, 14 tes terfokus dan smoke browser desktop/390px lulus; pemeriksaan foto mencakup seluruh 254 bagian leher batch terbaru dan 82 foto katalog lama.
+
+Paket r71 SHA256 `34ac743b7e12bad2b6cbce853089130c1db69814b6e9befc4d17626353b0859a`; final source snapshot SHA256 `75f15bc2cec283b7509341bf8a3856beaf09db31174cd6f167b425020400c326`. Source base `c26607a` adalah histori, bukan commit semua perubahan r71. Delapan delta source/test/manifest dan 499 aset disimpan dengan guard baseline; tidak mengklaim source commit/push baru. Rollback langsung: r70 deployment `23dae8c6-5d29-464f-b2dd-613cc1e094b8` dan paket retained. Sumber: instruksi Andreas, hasil foto, ledger artifact dan verifikasi publik.
+
 ## 2026-11-05 - Jersey Jago r70: 499 foto katalog lebih terang
 
 CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis Jersey Jago. Sebanyak 122 set baru dengan 499 foto lebih terang (254 foto katalog dan 245 crop detail) menambah katalog dari 42 menjadi 164 pilihan. Galeri membedakan depan, belakang, alternatif, dan detail. Harga, ukuran, stok, originalitas, serta kondisi fisik belum dikonfirmasi; pembelian tetap nonaktif.

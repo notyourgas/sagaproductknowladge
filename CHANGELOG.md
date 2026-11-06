@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-06 - Jersey Jago r71: hanger dihapus dari foto katalog
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Hanger dihapus pada 238 foto utama/alternatif; 16 foto utama yang sudah bersih dipertahankan. Galeri tetap 499 foto untuk 122 set batch ketiga, dan katalog tetap 164 pilihan. Seluruh foto aktif memakai referensi revisi tanpa hanger. Format 1120 x 1400, sRGB, latar abu-abu dan whitespace dipertahankan.
+
+Deployment `51771157-f615-4f2e-8712-12fb223669be` pada [Jersey Jago](https://jersey-jago-prototype.pages.dev/) / [artifact r71](https://51771157.jersey-jago-prototype.pages.dev/). Sebanyak 506 berkas berubah, termasuk seluruh 499 foto aktif, cocok ukuran dan SHA256 setelah unggah; 612 entri baseline dipertahankan identik byte secara lokal. Header dan batas 404 publik/API/privat lulus. Typecheck/build, 14 tes terfokus dan smoke browser desktop/390px lulus; pemeriksaan foto mencakup seluruh 254 bagian leher batch terbaru dan 82 foto katalog lama.
+
 ## 2026-11-06 - Ojol Kiosk/Kasir selesai di source, belum production
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `cdee4f6e74042f7071fc991def1ca5d87aa1d415` pada branch `codex/ojol-payment-20261106` sudah didorong ke remote. Mengikuti permintaan Andreas, Kiosk/Kasir memiliki pilihan Ojol dengan dropdown ShopeeFood, GrabFood, GoFood. Tagihan di outlet Rp0; nilai penjualan tetap utuh, tidak menjadi diskon/Invitation. Kiosk memakai PIN staf pribadi existing; Kasir memakai autentikasi staf existing. Membutuhkan shift terbuka dan koneksi online. Laporan memisahkan tiga platform; settlement/biaya platform belum direkonsiliasi dan tidak ada integrasi API platform berbayar.
