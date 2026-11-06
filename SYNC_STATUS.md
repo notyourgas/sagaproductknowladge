@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-06 - Jersey Jago r72: koreksi kerah dan tepi kain yang terpotong
+
+Deployment `a0a3bee4-78ce-42f5-b7a0-6cc361d948e7` pada [Jersey Jago](https://jersey-jago-prototype.pages.dev/) / [artifact r72](https://a0a3bee4.jersey-jago-prototype.pages.dev/). Sebanyak 29 berkas baru/berubah; seluruh 506 entri aktif yang diverifikasi (499 foto, enam skrip dan index) cocok ukuran dan SHA256 publik. Sebanyak 1117 entri baseline dipertahankan identik byte secara lokal. Header dan 404 publik/API/privat lulus. Typecheck/build, 14 tes terfokus dan smoke browser desktop/390px lulus, termasuk framing lengkap Chelsea dan navigasi ke detail sumber.
+
+Paket r72 SHA256 `347d7d561871e552ff0ef20f533d369b05aabee5a75309a601778dc7ab407488`; final source snapshot SHA256 `876c36b4c6a703892e9da38abda97533a3a6f7cc99e87cbe4e1b9a087138cd3d`. Source base `c26607a` adalah histori, bukan commit semua perubahan r72. Enam delta source/test/manifest dan 22 aset disimpan dengan guard baseline; tidak mengklaim source commit/push baru. Rollback langsung: r71 deployment `51771157-f615-4f2e-8712-12fb223669be` dan paket retained. Sumber: instruksi Andreas, perbandingan foto sumber, ledger artifact dan verifikasi publik.
+
+Status accepted untuk prototype statis; knowledge dipush terpisah setelah validator. Entri r71 di bawah adalah histori.
+
 ## 2026-11-06 - Harga Ojol terpisah dan Premium final Rp25.000, belum deploy
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `352970b3990372203ab6ac0da9aa114b6788407e` sudah push. Daftar versi `SAGA_OJOL_20261106_V1` memuat 28 harga dari foto dan konfirmasi Andreas untuk ShopeeFood/GrabFood/GoFood. Matcha Premium dan Coklat Premium final masing-masing Rp25.000, menggantikan arahan sementara Rp23.000; harga outlet keduanya tetap Rp20.000. Dua puluh tujuh produk cocok katalog existing. Es Batu Saga Rp6.500 khusus Ojol sudah didukung source, belum dibuat/dipublikasikan di production. Sumber: foto dan koreksi harga Andreas, source/tests dan health read-only.

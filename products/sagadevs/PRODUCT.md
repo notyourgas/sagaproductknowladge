@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-06 - Jersey Jago r72: koreksi kerah dan tepi kain yang terpotong
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Mask penghapusan hanger r71 ikut menghapus sebagian kain kerah. r72 memperbaiki 22 foto pada 20 set; framing tetap 1120 x 1400 dengan latar abu-abu dan whitespace. Galeri tetap 499 foto untuk 122 set batch ketiga; total katalog 164 pilihan.
+
+Artifact diturunkan dari r71 terverifikasi agar pending owner UI lain tidak ikut tayang. Tidak ada Functions, D1, auth, order, payment atau inventory activation. Harga, ukuran, originalitas, stok dan kondisi fisik belum dikonfirmasi; pembelian nonaktif dan BUSINESS_READY tidak diklaim.
+
+Rilis aktif r72 menggantikan snapshot r71 di bawah. Detail: [Jersey Jago](JERSEY_JAGO.md).
+
 ## 2026-11-06 - Jersey Jago r71: hanger dihapus dari foto katalog
 
 CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Hanger dihapus pada 238 foto utama/alternatif; 16 foto utama yang sudah bersih dipertahankan. Galeri tetap 499 foto untuk 122 set batch ketiga, dan katalog tetap 164 pilihan. Seluruh foto aktif memakai referensi revisi tanpa hanger. Format 1120 x 1400, sRGB, latar abu-abu dan whitespace dipertahankan.

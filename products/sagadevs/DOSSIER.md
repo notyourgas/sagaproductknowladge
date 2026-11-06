@@ -1,5 +1,17 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-06 - Jersey Jago r72: koreksi kerah dan tepi kain yang terpotong
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Mask penghapusan hanger r71 ikut menghapus sebagian kain kerah. r72 memperbaiki 22 foto pada 20 set; framing tetap 1120 x 1400 dengan latar abu-abu dan whitespace. Galeri tetap 499 foto untuk 122 set batch ketiga; total katalog 164 pilihan.
+
+Donor generatif dipakai hanya pada mask lokal di area leher; gambar seluruh baju hasil generasi tidak dipublikasikan. Label/pola sumber yang terlihat dilindungi. Dua perbaikan mask lengan Ajax/Arsenal mengembalikan piksel foto sumber. Komposit sebelum encoding identik di luar mask, lalu JPEG dikompresi ulang. Rekonstruksi area tertutup merupakan inferensi digital, bukan bukti kondisi atau perbaikan barang fisik. Disclaimer diperbarui; 477 foto lain dan seluruh 245 crop detail sumber tetap identik. Noda dan sablon aus di luar area koreksi serta tiga kancing digital Neymar dipertahankan.
+
+Deployment `a0a3bee4-78ce-42f5-b7a0-6cc361d948e7` pada [Jersey Jago](https://jersey-jago-prototype.pages.dev/) / [artifact r72](https://a0a3bee4.jersey-jago-prototype.pages.dev/). Sebanyak 29 berkas baru/berubah; seluruh 506 entri aktif yang diverifikasi (499 foto, enam skrip dan index) cocok ukuran dan SHA256 publik. Sebanyak 1117 entri baseline dipertahankan identik byte secara lokal. Header dan 404 publik/API/privat lulus. Typecheck/build, 14 tes terfokus dan smoke browser desktop/390px lulus, termasuk framing lengkap Chelsea dan navigasi ke detail sumber.
+
+Artifact diturunkan dari r71 terverifikasi agar pending owner UI lain tidak ikut tayang. Tidak ada Functions, D1, auth, order, payment atau inventory activation. Harga, ukuran, originalitas, stok dan kondisi fisik belum dikonfirmasi; pembelian nonaktif dan BUSINESS_READY tidak diklaim.
+
+Paket r72 SHA256 `347d7d561871e552ff0ef20f533d369b05aabee5a75309a601778dc7ab407488`; final source snapshot SHA256 `876c36b4c6a703892e9da38abda97533a3a6f7cc99e87cbe4e1b9a087138cd3d`. Source base `c26607a` adalah histori, bukan commit semua perubahan r72. Enam delta source/test/manifest dan 22 aset disimpan dengan guard baseline; tidak mengklaim source commit/push baru. Rollback langsung: r71 deployment `51771157-f615-4f2e-8712-12fb223669be` dan paket retained. Sumber: instruksi Andreas, perbandingan foto sumber, ledger artifact dan verifikasi publik.
+
 ## 2026-11-06 - Jersey Jago r71: hanger dihapus dari foto katalog
 
 CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Hanger dihapus pada 238 foto utama/alternatif; 16 foto utama yang sudah bersih dipertahankan. Galeri tetap 499 foto untuk 122 set batch ketiga, dan katalog tetap 164 pilihan. Seluruh foto aktif memakai referensi revisi tanpa hanger. Format 1120 x 1400, sRGB, latar abu-abu dan whitespace dipertahankan.

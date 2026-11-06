@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-11-06 - Jersey Jago r72: koreksi kerah dan tepi kain yang terpotong
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Mask penghapusan hanger r71 ikut menghapus sebagian kain kerah. r72 memperbaiki 22 foto pada 20 set; framing tetap 1120 x 1400 dengan latar abu-abu dan whitespace. Galeri tetap 499 foto untuk 122 set batch ketiga; total katalog 164 pilihan.
+
+Deployment `a0a3bee4-78ce-42f5-b7a0-6cc361d948e7` pada [Jersey Jago](https://jersey-jago-prototype.pages.dev/) / [artifact r72](https://a0a3bee4.jersey-jago-prototype.pages.dev/). Sebanyak 29 berkas baru/berubah; seluruh 506 entri aktif yang diverifikasi (499 foto, enam skrip dan index) cocok ukuran dan SHA256 publik. Sebanyak 1117 entri baseline dipertahankan identik byte secara lokal. Header dan 404 publik/API/privat lulus. Typecheck/build, 14 tes terfokus dan smoke browser desktop/390px lulus, termasuk framing lengkap Chelsea dan navigasi ke detail sumber.
+
+Artifact diturunkan dari r71 terverifikasi agar pending owner UI lain tidak ikut tayang. Tidak ada Functions, D1, auth, order, payment atau inventory activation. Harga, ukuran, originalitas, stok dan kondisi fisik belum dikonfirmasi; pembelian nonaktif dan BUSINESS_READY tidak diklaim.
+
 ## 2026-11-06 - Harga Ojol terpisah dan Premium final Rp25.000, belum deploy
 
 CONFIRMED / IMPLEMENTED_NOT_DEPLOYED. Source `352970b3990372203ab6ac0da9aa114b6788407e` sudah push. Daftar versi `SAGA_OJOL_20261106_V1` memuat 28 harga dari foto dan konfirmasi Andreas untuk ShopeeFood/GrabFood/GoFood. Matcha Premium dan Coklat Premium final masing-masing Rp25.000, menggantikan arahan sementara Rp23.000; harga outlet keduanya tetap Rp20.000. Dua puluh tujuh produk cocok katalog existing. Es Batu Saga Rp6.500 khusus Ojol sudah didukung source, belum dibuat/dipublikasikan di production. Sumber: foto dan koreksi harga Andreas, source/tests dan health read-only.
