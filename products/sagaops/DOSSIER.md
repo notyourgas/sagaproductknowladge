@@ -1,5 +1,15 @@
 # SagaOPS Dossier
 
+## 2026-11-09 - Ojol tersedia di pilihan tipe pesanan Kiosk
+
+CONFIRMED / PRODUCTION_ACTIVATED. Di Kiosk, Mulai Pesan menampilkan Ojol bersama Makan di Sini dan Bawa Pulang. Katalog langsung memakai harga aplikasi, termasuk Es Batu Saga Rp6.500, dan keranjang mempertahankan mode Ojol saat halaman dimuat ulang. Jalur Ojol di layar pembayaran tetap tersedia.
+
+Dengan internet dan shift kasir aktif, staf memilih ShopeeFood, GrabFood atau GoFood di pembayaran dan mengonfirmasi dengan PIN staf. Tagihan di outlet Rp0. Harga outlet dan revisi katalog tetap. Hash template nota produksi cocok dengan baseline.
+
+Source aktif `c88bd319506e92b9ee37b44fb58f9be3b59037f1`, rollback `a264c7355ee430b133569177cced802fba729add`, paket SHA-256 `7e63d15507660d394e2cb75225266e319d4bea8f98527098af54d350eff72dfd`. Uji lokal 26 lulus dan Linux 295 lulus. Backup terenkripsi, restore terpisah, checksum salinan offhost, rehearsal rollback, monitor, read-back Owner dan verifikasi aset Kiosk production melalui akses Owner lulus.
+
+OPEN. Andreas atau operator mengonfirmasi alur pada Chromebook dan nota/checker fisik saat pesanan Ojol sah berikutnya. Rilis ini diuji tanpa membuat transaksi production. Rekonsiliasi payout platform tetap di luar scope.
+
 ## 2026-11-06 - Ojol aktif di Kiosk/Kasir dan Es Batu khusus Ojol terbit
 
 CONFIRMED / PRODUCTION_ACTIVATED. Source `a264c7355ee430b133569177cced802fba729add` aktif, rollback `a2c0867e9320fc48696faf2b29e0521887f60115`; katalog187/publikasi23, draft0. ShopeeFood/GrabFood/GoFood memakai daftar harga `SAGA_OJOL_20261106_V1`, nilai penjualan tetap penuh dan tagihan outlet Rp0. Konfirmasi Kiosk memakai PIN staf existing; Kasir memakai autentikasi staf existing. Harga outlet, media, pajak, promo/voucher reguler dan template nota dipertahankan. Matcha/Coklat Premium masing-masing Rp25.000 untuk Ojol; Es Batu Saga Rp6.500 khusus Ojol sudah dipublikasikan dan tidak tampil di e-menu biasa. Tidak mengisi HPP baru Es Batu atau menambah stok fisik.

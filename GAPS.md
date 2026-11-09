@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-09 - Ojol tersedia di pilihan tipe pesanan Kiosk
+
+OPEN. Andreas atau operator mengonfirmasi alur pada Chromebook dan nota/checker fisik saat pesanan Ojol sah berikutnya. Rilis ini diuji tanpa membuat transaksi production. Rekonsiliasi payout platform tetap di luar scope.
+
 ## 2026-11-06 - Ojol aktif di Kiosk/Kasir dan Es Batu khusus Ojol terbit
 
 CONFIRMED / PRODUCTION_ACTIVATED. Source `a264c7355ee430b133569177cced802fba729add` aktif, rollback `a2c0867e9320fc48696faf2b29e0521887f60115`; katalog187/publikasi23, draft0. ShopeeFood/GrabFood/GoFood memakai daftar harga `SAGA_OJOL_20261106_V1`, nilai penjualan tetap penuh dan tagihan outlet Rp0. Konfirmasi Kiosk memakai PIN staf existing; Kasir memakai autentikasi staf existing. Harga outlet, media, pajak, promo/voucher reguler dan template nota dipertahankan. Matcha/Coklat Premium masing-masing Rp25.000 untuk Ojol; Es Batu Saga Rp6.500 khusus Ojol sudah dipublikasikan dan tidak tampil di e-menu biasa. Tidak mengisi HPP baru Es Batu atau menambah stok fisik.

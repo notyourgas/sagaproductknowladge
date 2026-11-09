@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-11-09 - Ojol tersedia di pilihan tipe pesanan Kiosk
+
+CONFIRMED / PRODUCTION_ACTIVATED. Di Kiosk, Mulai Pesan menampilkan Ojol bersama Makan di Sini dan Bawa Pulang. Katalog langsung memakai harga aplikasi, termasuk Es Batu Saga Rp6.500, dan keranjang mempertahankan mode Ojol saat halaman dimuat ulang. Jalur Ojol di layar pembayaran tetap tersedia.
+
+Dengan internet dan shift kasir aktif, staf memilih ShopeeFood, GrabFood atau GoFood di pembayaran dan mengonfirmasi dengan PIN staf. Tagihan di outlet Rp0. Harga outlet dan revisi katalog tetap. Hash template nota produksi cocok dengan baseline.
+
+Source aktif `c88bd319506e92b9ee37b44fb58f9be3b59037f1`, rollback `a264c7355ee430b133569177cced802fba729add`, paket SHA-256 `7e63d15507660d394e2cb75225266e319d4bea8f98527098af54d350eff72dfd`. Uji lokal 26 lulus dan Linux 295 lulus. Backup terenkripsi, restore terpisah, checksum salinan offhost, rehearsal rollback, monitor, read-back Owner dan verifikasi aset Kiosk production melalui akses Owner lulus.
+
+OPEN. Andreas atau operator mengonfirmasi alur pada Chromebook dan nota/checker fisik saat pesanan Ojol sah berikutnya. Rilis ini diuji tanpa membuat transaksi production. Rekonsiliasi payout platform tetap di luar scope.
+
 ## 2026-11-07 — Voucher terpakai disembunyikan dari tampilan Member
 
 `CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED`. Sesuai permintaan Andreas, voucher berstatus authoritative `REDEEMED` disaring dari daftar Member, termasuk hadiah minuman, foto, ulang tahun dan voucher nominal. Voucher aktif dan status belum terpakai lain tetap mengikuti data Platform. Tab Milik saya menampilkan empty state ketika seluruh voucher sudah dipakai; loading/error memakai penyaringan yang sama. Perubahan hanya presentasi dan tidak menghapus claim, expiry atau histori penukaran di backend.
