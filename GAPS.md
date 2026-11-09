@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-09 - SagaPOS browser mempertahankan sesi selama operasional
+
+OPEN. Uji idle pada Chromebook outlet oleh Andreas atau staf saat perangkat tersedia. Validasi production memakai sesi sementara tanpa membuat order, pembayaran atau pekerjaan cetak.
+
 ## 2026-11-09 - Ojol tersedia di pilihan tipe pesanan Kiosk
 
 OPEN. Andreas atau operator mengonfirmasi alur pada Chromebook dan nota/checker fisik saat pesanan Ojol sah berikutnya. Rilis ini diuji tanpa membuat transaksi production. Rekonsiliasi payout platform tetap di luar scope.

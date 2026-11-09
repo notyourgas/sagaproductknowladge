@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-11-09 - SagaPOS browser mempertahankan sesi selama operasional
+
+CONFIRMED / PRODUCTION_ACTIVATED. Link Kiosk dan Kasir yang membutuhkan autentikasi sekarang mengarahkan browser ke SagaPOS. Permintaan latar belakang yang kehilangan izin tidak meminta kredensial lewat dialog Chrome. Sesi baru Kiosk, Kasir dan login Dashboard yang dipakai bersama Kasir berlaku maksimal 16 jam sejak dibuat.
+
+Login Dashboard yang valid langsung bisa membuka Kasir. Kiosk memakai izin pelanggan terpisah dan perpindahan ke Kiosk mencabut akses staf di browser tersebut. Petugas masuk lagi saat kembali dari Kiosk, setelah logout, atau ketika sesi kedaluwarsa. Sesi lama mengambil durasi baru saat perangkat dibuka kembali dengan login baru.
+
+Source aktif `4a1d75baa73948b2ac6095ec291e7e146c394390`, rollback aplikasi `c88bd319506e92b9ee37b44fb58f9be3b59037f1`, paket SHA-256 `7485b20d2d3efc8772fe8e4464020f087cbbec9edeef4204cc62621163e00a9d`. Kualifikasi Linux dengan PostgreSQL, Chromium dan Nginx lulus 81 tes. Recovery, monitor, respons tanpa tantangan Basic, pergantian mode di production dan hash template nota diverifikasi.
+
+OPEN. Uji idle pada Chromebook outlet oleh Andreas atau staf saat perangkat tersedia. Validasi production memakai sesi sementara tanpa membuat order, pembayaran atau pekerjaan cetak.
+
 ## 2026-11-09 - Ojol tersedia di pilihan tipe pesanan Kiosk
 
 CONFIRMED / PRODUCTION_ACTIVATED. Di Kiosk, Mulai Pesan menampilkan Ojol bersama Makan di Sini dan Bawa Pulang. Katalog langsung memakai harga aplikasi, termasuk Es Batu Saga Rp6.500, dan keranjang mempertahankan mode Ojol saat halaman dimuat ulang. Jalur Ojol di layar pembayaran tetap tersedia.
