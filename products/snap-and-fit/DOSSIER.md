@@ -1,5 +1,11 @@
 # Snap and Fit Dossier
 
+## 2026-11-10 — Prototipe Snap-and-Fit dipensiunkan dari VPS
+
+**CONFIRMED / VPS_PROTOTYPE_RETIRED.** Andreas menyetujui penghentian prototipe di VPS bersama agar kapasitas tersedia bagi proyek lain. Runtime API, web, worker, database prototipe, dan antrean milik proyek sudah dilepas. Alamat API prototipe mengembalikan HTTP 410. Source terakhir yang tercatat pada VPS adalah `fa6465fc9edab6619ea13daa8177d0067092ade4`.
+
+Paket pemulihan terenkripsi dipertahankan. Pemulihan database ke lingkungan sementara lulus untuk 53 tabel dan 19 migrasi. Source prototipe tetap tersedia melalui registry source. Aktivasi berikutnya membutuhkan keputusan Andreas dan pemeriksaan rilis baru.
+
 ## 2026-10-14 - Sinkronisasi source dan pemetaan repo
 
 `CONFIRMED / SOURCE_SYNC_VERIFIED`; scope hanya backup source, ref dan dokumentasi.

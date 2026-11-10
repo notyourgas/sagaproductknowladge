@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-322 — Pensiunkan prototipe Snap-and-Fit dari VPS bersama
+
+10 November 2026. CONFIRMED. Andreas memilih memensiunkan prototipe untuk memberi ruang bagi proyek baru. Pemulihan database dan verifikasi arsip mendahului pelepasan runtime. Alamat API prototipe mengembalikan HTTP 410. Riwayat dan status source tercatat pada produk Snap-and-Fit.
+
 ## DEC-321 - Pisahkan visibilitas website dari status aktif paket SagaBook
 
 Tanggal 2 November 2026. CONFIRMED. Pemberi keputusan: Andreas. Paket dapat disembunyikan dari website booking sambil tetap aktif untuk booking manual admin dan QR/link manual, dengan harga katalog server. Alasan: menyediakan paket operasional tertentu tanpa menawarkannya pada katalog website. Alternatif menyembunyikan dengan Draft menghentikan booking manual sehingga tidak memenuhi workflow. Dampak: kontrol visibilitas tersendiri, validasi booking publik dan schema aditif default tampil, dengan akses booking lama tetap didukung. Aktivasi production diminta secara eksplisit dan selesai pada source ce07e76f / release 20261102101058-ce07e76, independent verification 23/23 PASS. Konfigurasi katalog studio yang diminta disimpan dan dibaca ulang melalui Owner; rinciannya tetap restricted. Authenticated UI/manual/QR readback lulus tanpa booking/pembayaran baru. Rollback wajib mempertahankan batas visibilitas. BUSINESS_READY seluruh produk tetap mengikuti acceptance terpisah. Dokumen terkait: products/sagabook/PRODUCT.md, products/sagabook/DOSSIER.md, products/sagabook/CHANGELOG.md, changelog/PORTFOLIO_CHANGELOG.md, CHANGELOG.md, CHATGPT_MASTER_KNOWLEDGE.md dan SYNC_STATUS.md.
