@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-10 — Pemangkasan VPS 10 November
+
+**CONFIRMED.** Retensi SagaPOS production dan STHANA kini menyimpan satu rilis aktif dan dua target pemulihan. SagaPOS production memakai source `4a1d75baa73948b2ac6095ec291e7e146c394390` pada saat pemeriksaan. Target pemulihan yang dipertahankan adalah `c88bd319506e92b9ee37b44fb58f9be3b59037f1` dan `a264c7355ee430b133569177cced802fba729add`.
+
+Backup historis SagaPOS dipindahkan setelah dua salinan terenkripsi cocok dan pemulihan sampel pada database sementara lulus. Backup terbaru tetap tersedia pada VPS. Pemeriksaan sesudah pembersihan menunjukkan endpoint Dashboard dan Staff merespons HTTP 200. Status ini mencatat kapasitas dan pemulihan operasional.
+
 ## 2026-11-09 - SagaPOS browser mempertahankan sesi selama operasional
 
 CONFIRMED / PRODUCTION_ACTIVATED. Link Kiosk dan Kasir yang membutuhkan autentikasi sekarang mengarahkan browser ke SagaPOS. Permintaan latar belakang yang kehilangan izin tidak meminta kredensial lewat dialog Chrome. Sesi baru Kiosk, Kasir dan login Dashboard yang dipakai bersama Kasir berlaku maksimal 16 jam sejak dibuat.

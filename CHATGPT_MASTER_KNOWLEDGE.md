@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-10 — Pemangkasan VPS 10 November
+
+**CONFIRMED.** Ruang kosong VPS bersama naik dari sekitar 23,2 GiB menjadi 40,5 GiB. Cleanup berdasarkan daftar tervalidasi menata lima keluarga rilis yang berlebih menjadi satu rilis aktif dan dua target pemulihan, termasuk SagaPOS dan Saga Member. Backup historis SagaPOS serta Saga Studio Hiring dipindahkan setelah checksum kedua salinan dan uji pemulihan diverifikasi. Paket build COYABAG staging yang berlebih diarsipkan. Endpoint utama produk yang masih melayani lulus pemeriksaan.
+
+Prototipe Snap-and-Fit dipensiunkan dari VPS berdasarkan keputusan Andreas. Rincian status pemulihannya tercatat pada produk Snap-and-Fit. Timer retensi mencakup sembilan keluarga yang terdaftar. Pembersihan keluarga tambahan dilakukan melalui daftar tervalidasi pada eksekusi ini.
+
 ## 2026-11-10 — Prototipe Snap-and-Fit dipensiunkan dari VPS
 
 **CONFIRMED / VPS_PROTOTYPE_RETIRED.** Andreas menyetujui penghentian prototipe di VPS bersama agar kapasitas tersedia bagi proyek lain. Runtime API, web, worker, database prototipe, dan antrean milik proyek sudah dilepas. Alamat API prototipe mengembalikan HTTP 410. Source terakhir yang tercatat pada VPS adalah `fa6465fc9edab6619ea13daa8177d0067092ade4`.

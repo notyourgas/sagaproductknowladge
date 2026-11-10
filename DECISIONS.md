@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-323 — Batasi rollback dan relokasi backup historis VPS
+
+10 November 2026. CONFIRMED. Andreas menetapkan maksimal dua rollback untuk tiap keluarga rilis, selain versi aktif. Pemangkasan VPS 10 November memakai target pemulihan yang dicocokkan dengan riwayat rilis dan salinan arsip yang bisa dibaca. Backup historis yang disetujui boleh dilepas dari VPS setelah dua salinan terenkripsi dan uji pemulihan diverifikasi. Simpan bukti pemulihan dan backup terbaru. Terapkan pemeriksaan yang sama saat retensi diperluas ke keluarga lain.
+
 ## DEC-322 — Pensiunkan prototipe Snap-and-Fit dari VPS bersama
 
 10 November 2026. CONFIRMED. Andreas memilih memensiunkan prototipe untuk memberi ruang bagi proyek baru. Pemulihan database dan verifikasi arsip mendahului pelepasan runtime. Alamat API prototipe mengembalikan HTTP 410. Riwayat dan status source tercatat pada produk Snap-and-Fit.
