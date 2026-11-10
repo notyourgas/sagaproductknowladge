@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-10 - SagaPOS menyiapkan perbaikan Riwayat Pesanan harian
+
+**CONFIRMED / IMPLEMENTED_NOT_DEPLOYED.** Filter Riwayat Pesanan dapat melewatkan pesanan Kiosk dan Kasir yang baru dibuat. Database menyimpan outlet yang benar, sedangkan pesanan di memori masih memakai outlet bawaan sampai dimuat ulang dari database. Kandidat memastikan pesanan baru menggunakan cakupan outlet aktif sejak dibuat. Filter tanggal bisnis dan batas akses Owner tetap berlaku.
+
+Source kandidat `7944835e0ea597eb514ac2b4599793da41124e92` lulus 50 tes terfokus Linux dengan PostgreSQL 18 dan Chromium, serta 12 tes tampilan lokal di Chromium dan WebKit. Rilis aktif saat pemeriksaan masih `4a1d75baa73948b2ac6095ec291e7e146c394390`. Verifikasi akses Owner sebelum deploy dan pembacaan Riwayat setelah rilis masih terbuka. Sumber verifikasi mencakup reproduksi terisolasi, pembacaan agregat database, serta health production.
+
 ## 2026-11-10 — Pemangkasan VPS 10 November
 
 **CONFIRMED.** Ruang kosong VPS bersama naik dari sekitar 23,2 GiB menjadi 40,5 GiB. Cleanup berdasarkan daftar tervalidasi menata lima keluarga rilis yang berlebih menjadi satu rilis aktif dan dua target pemulihan, termasuk SagaPOS dan Saga Member. Backup historis SagaPOS serta Saga Studio Hiring dipindahkan setelah checksum kedua salinan dan uji pemulihan diverifikasi. Paket build COYABAG staging yang berlebih diarsipkan. Endpoint utama produk yang masih melayani lulus pemeriksaan.
