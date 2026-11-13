@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-13 - Pengajuan Tukar Libur yang lewat otomatis kedaluwarsa
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** SagaPOS menandai pengajuan Tukar Libur yang masih menunggu rekan atau Owner sebagai **Kedaluwarsa** saat shift yang lebih awal dimulai. Staf dan Owner tetap dapat melihatnya di riwayat. Pengajuan kedaluwarsa keluar dari antrean persetujuan, melepaskan jadwal mendatang untuk pengajuan baru, dan tidak mengubah jadwal, absensi, atau payroll. Izin dan Cuti tetap dapat diajukan dari menu Pengajuan.
+
+Source `9c7c24e694019610e621f19cc474cfea4ce1e936` lulus 137 tes HR pada PostgreSQL 18 dan Chromium. Kualifikasi operasional/offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Paket SHA-256 `8612161f20d68937832b38d85445e696b528eba50339e35c6139bf66758ddc55` aktif di production. Pemulihan backup pada database terpisah, boot versi pemulihan, aktivasi, monitor production, pembacaan data dengan akun Owner, dan aset Staff production terverifikasi. Uji pertukaran kedaluwarsa memakai data uji. UAT di perangkat staf tetap OPEN.
+
 ## 2026-11-10 - SagaPOS menyiapkan perbaikan Riwayat Pesanan harian
 
 **CONFIRMED / IMPLEMENTED_NOT_DEPLOYED.** Filter Riwayat Pesanan dapat melewatkan pesanan Kiosk dan Kasir yang baru dibuat. Database menyimpan outlet yang benar, sedangkan pesanan di memori masih memakai outlet bawaan sampai dimuat ulang dari database. Kandidat memastikan pesanan baru menggunakan cakupan outlet aktif sejak dibuat. Filter tanggal bisnis dan batas akses Owner tetap berlaku.
