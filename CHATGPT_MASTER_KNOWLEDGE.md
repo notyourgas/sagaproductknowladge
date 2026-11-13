@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-13 - Rincian penerimaan dan ekspor lengkap SagaPOS
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** CSV Ringkasan Harian memuat metode, ID pembayaran, nomor pesanan, tanggal penjualan, waktu pembayaran, dan nominal. Ekspor settlement dan umur utang mencakup seluruh hasil yang sesuai filter. CSV kas memuat pengeluaran laci dan pengeluaran dari sumber lain. Pesanan baru Kiosk dan Kasir memakai cakupan outlet aktif sejak dibuat.
+
+Source `ea45bf60ec64875f845a8d305d67a5e43288feaf`. Paket SHA-256 `5e56b0edc44de2fa4978050500f60a858eb4dc8801f6187f1d8b74b79979832d`. Kandidat lulus 54 tes Windows dan 79 tes Linux dengan PostgreSQL 18 dan Chromium. Simulasi pemulihan lulus. Akun Owner membaca kembali Riwayat dan CSV produksi serta menemukan rincian penerimaan. Validasi ini mencakup laporan dan ekspor. Uji perangkat fisik dan rekonsiliasi dengan provider masih terbuka.
+
 ## 2026-11-13 - Absen sebelum shift menjadi kandidat lembur
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** SagaPOS menghitung kandidat lembur dari menit utuh absensi sebelum shift terjadwal dan sesudah shift. Staf dapat memakai Pengajuan → Lembur setelah mencatat kepulangan. Rentang yang mencakup kedua sisi menjumlahkan menit di luar shift. Owner atau HR berwenang tetap menyetujui menit. Payroll menggunakan tarif per jam tersimpan saat persetujuan. Histori slip dan absensi tidak dihitung ulang secara massal.
