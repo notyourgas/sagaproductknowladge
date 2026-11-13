@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-14 - Arkarupa: satuan sumber daya AHSP di katalog dan estimasi
+
+CONFIRMED / LOCAL_VALIDATED. Estimator kini dapat memilih OJ, hari, lembar dan batang di katalog sumber daya dan estimasi per ruangan. Fixture menguji persetujuan harga dasar sintetis, salin template AHSP, kebutuhan pengadaan dan unduhan PDF RAP. MySQL disposable lulus 79 tes dan 1.081 asersi pada commit lokal 521d4b6eda2c1b25532cb0d1863a61e451faeb1b. Katalog indeks tetap Referensi. Verifikasi harga kontrak, staging, UAT dan pilot nyata masih terbuka.
+
 ## 2026-11-14 - Arkarupa: dukungan satuan AHSP unit
 
 CONFIRMED / LOCAL_VALIDATED. Kalkulator sebelumnya menolak keluaran unit untuk AC dan tangki. Kandidat Laravel kini mendukung satuan unit di katalog, estimasi, BUP hitung jumlah, dan PDF RAP serta penawaran. Fixture AC Split Duct dan tangki fiberglass memakai HSD sintetis. Suite MySQL disposable lulus 78 tes dan 1.049 asersi pada source lokal 939b76e0b4ce76bf8615efa8b39be418fdf9df28. Entri indeks tetap Referensi selama koefisien dan HSD kontrak ditinjau. Demo publik tetap sintetis. Staging, UAT, dan kesiapan pilot nyata masih terbuka.
