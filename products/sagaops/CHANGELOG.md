@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-11-13 - Absen sebelum shift menjadi kandidat lembur
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** SagaPOS menghitung kandidat lembur dari menit utuh absensi sebelum shift terjadwal dan sesudah shift. Staf dapat memakai Pengajuan → Lembur setelah mencatat kepulangan. Rentang yang mencakup kedua sisi menjumlahkan menit di luar shift. Owner atau HR berwenang tetap menyetujui menit. Payroll menggunakan tarif per jam tersimpan saat persetujuan. Histori slip dan absensi tidak dihitung ulang secara massal.
+
+Source `6fc1e6b61a0a73e20c6875c3aaff6edc55295c79`. Aktif di production dengan paket SHA-256 `65b1f13895182bd14026004950fb36efcf2073305491d5985848fc4198e79bb6`. PostgreSQL 18 dan Chromium lulus 176 tes HR. Kualifikasi operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Simulasi pemulihan, ledger V7, monitor, pembacaan Owner, dan aset Staff production terverifikasi. Tarif lembur per jam masih perlu diatur oleh Owner sebelum persetujuan dapat menghasilkan nominal. Uji perangkat staf tetap OPEN.
+
 ## 2026-11-13 - Pengajuan Tukar Libur yang lewat otomatis kedaluwarsa
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** SagaPOS menandai pengajuan Tukar Libur yang masih menunggu rekan atau Owner sebagai **Kedaluwarsa** saat shift yang lebih awal dimulai. Staf dan Owner tetap dapat melihatnya di riwayat. Pengajuan kedaluwarsa keluar dari antrean persetujuan, melepaskan jadwal mendatang untuk pengajuan baru, dan tidak mengubah jadwal, absensi, atau payroll. Izin dan Cuti tetap dapat diajukan dari menu Pengajuan.
