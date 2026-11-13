@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-14 - Arkarupa: pembayaran upah parsial
+
+CONFIRMED / LOCAL_VALIDATED. Finance dapat mengajukan kewajiban dari biaya tenaga yang disetujui dan mencatat pembayaran parsial melalui alokasi kas. Pengujian sintetis Rp250.000 dibayar Rp200.000 menyisakan Rp50.000 dengan biaya tetap, dan pembalikan mengembalikan saldo. Suite MySQL disposable lulus 75 tes dan 962 assertions pada commit lokal 212d9a0391270bff3f4f300c4cda759b50f6880b. Staging, UAT operator dan pilot nyata masih terbuka.
+
 ## 2026-11-14 - Arkarupa: pencatatan pemakaian material
 
 CONFIRMED / LOCAL_VALIDATED. Pelaksana mencatat pemakaian pada baris penerimaan dan melihat saldo stok sesudah retur dan pemakaian. Contoh sintetis 52 menjadi 50 dengan biaya, kas, dan progres fisik tetap. Suite MySQL disposable lulus 74 tes dan 938 assertions pada commit lokal 48c65297a64fde92b9ed6bc68cf32187c254d373. Pembayaran upah parsial, saldo stok pembuka, serta review operator dan aktivasi pilot masih terbuka.
