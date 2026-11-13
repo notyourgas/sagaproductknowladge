@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa: fondasi kandidat pilot
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel mempunyai workspace kosong, penugasan proyek untuk akun operasional, AHSP multi-komponen, BUP dari dimensi, Portal Klien dengan laporan terbit dan Change Log. Indeks 2.841 kode Lampiran VI tersedia sebagai Referensi untuk peninjauan detail. Proyek nyata serta UAT operator/klien masih terbuka.
+
+Source commit lokal d6d5df3541b83a9f8118f7443a968b925cf0b094. Suite MySQL disposable lulus 73 tes dan 926 assertions. Pemeriksaan desktop dan viewport HP mencakup login portal, pencarian katalog dan Change Log. Status ini mencakup kandidat lokal dengan data sintetis. Demo publik memiliki riwayat rilis tersendiri. [Detail Arkarupa](products/sagadevs/ARKARUPA.md).
+
 ## 2026-11-14 - Arkarupa V1: prototype publik dua proyek
 
 CONFIRMED. Rilis publik demo sintetis Arkarupa V1 diverifikasi. Ringkasan produk, detail proyek, master knowledge, keputusan, gap dan changelog ditautkan dengan manifest dan deployment publik. [Detail](products/sagadevs/ARKARUPA.md).

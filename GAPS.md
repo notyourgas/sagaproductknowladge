@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-14 - Arkarupa: fondasi kandidat pilot
+
+NEEDS CONFIRMATION. Proyek nyata, kontrak/BOQ, HSD setempat, tim dan cut-off belum ditentukan. Rekonsiliasi, pemulihan staging, penggunaan stok dan pembayaran upah, verifikasi detail Lampiran VI serta UAT tetap terbuka. [Detail Arkarupa](products/sagadevs/ARKARUPA.md).
+
 ## 2026-11-14 - Arkarupa V1: prototype publik dua proyek
 
 NEEDS CONFIRMATION. UAT klien dan pemakaian perangkat fisik masih perlu bukti terpisah. Katalog demo memuat tujuh kode terverifikasi. Semua kode PDF adalah cakupan perluasan katalog. [Demo publik dan konteks](products/sagadevs/ARKARUPA.md).

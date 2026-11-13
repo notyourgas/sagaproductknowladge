@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-14 - Arkarupa: fondasi kandidat pilot
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel mempunyai workspace kosong, penugasan proyek untuk akun operasional, AHSP multi-komponen, BUP dari dimensi, Portal Klien dengan laporan terbit dan Change Log. Indeks 2.841 kode Lampiran VI tersedia sebagai Referensi untuk peninjauan detail. Proyek nyata serta UAT operator/klien masih terbuka. [Detail Arkarupa](ARKARUPA.md).
+
 ## 2026-11-14 - Arkarupa V1: prototype publik dua proyek
 
 CONFIRMED / PRODUCTION_DEPLOYED untuk demo publik sintetis. [Arkarupa V1](https://arkarupa-prototype.pages.dev/) membuka dua proyek tanpa login dengan 13 modul. Alur AHSP, BUV, RAP/RAB, Kurva S, BUP, biaya, termin dan Portal Klien dapat dicoba. Percobaan tersimpan per proyek di browser. Change Log menampilkan sebelum/sesudah rilis dan aktivitas lokal. Katalog awal berisi tujuh kode Lampiran VI yang telah diperiksa. Katalog lengkap mengikuti tahap perluasan.
