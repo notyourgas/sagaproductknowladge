@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa V1: prototype publik dua proyek
+
+CONFIRMED. Rilis publik demo sintetis Arkarupa V1 diverifikasi. Ringkasan produk, detail proyek, master knowledge, keputusan, gap dan changelog ditautkan dengan manifest dan deployment publik. [Detail](products/sagadevs/ARKARUPA.md).
+
 ## 2026-11-13 - Rincian penerimaan dan ekspor lengkap SagaPOS
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** CSV Ringkasan Harian memuat metode, ID pembayaran, nomor pesanan, tanggal penjualan, waktu pembayaran, dan nominal. Ekspor settlement dan umur utang mencakup seluruh hasil yang sesuai filter. CSV kas memuat pengeluaran laci dan pengeluaran dari sumber lain. Pesanan baru Kiosk dan Kasir memakai cakupan outlet aktif sejak dibuat.

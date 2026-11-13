@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-324 — Demo publik Arkarupa dan Change Log
+
+14 November 2026. CONFIRMED. Andreas memilih prototype publik tanpa login berisi proyek terisi dan proyek kosong, dengan Plus Jakarta Sans, monokrom dan Change Log sebelum/sesudah. Penyimpanan browser memberi percobaan yang terpisah per proyek. Gunakan tujuh kode awal terverifikasi dan data fiktif. Katalog lengkap menyusul sebagai referensi bersama. [Detail rilis](products/sagadevs/ARKARUPA.md).
+
 ## DEC-323 — Batasi rollback dan relokasi backup historis VPS
 
 10 November 2026. CONFIRMED. Andreas menetapkan maksimal dua rollback untuk tiap keluarga rilis, selain versi aktif. Pemangkasan VPS 10 November memakai target pemulihan yang dicocokkan dengan riwayat rilis dan salinan arsip yang bisa dibaca. Backup historis yang disetujui boleh dilepas dari VPS setelah dua salinan terenkripsi dan uji pemulihan diverifikasi. Simpan bukti pemulihan dan backup terbaru. Terapkan pemeriksaan yang sama saat retensi diperluas ke keluarga lain.

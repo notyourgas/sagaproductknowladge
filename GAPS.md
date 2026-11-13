@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-14 - Arkarupa V1: prototype publik dua proyek
+
+NEEDS CONFIRMATION. UAT klien dan pemakaian perangkat fisik masih perlu bukti terpisah. Katalog demo memuat tujuh kode terverifikasi. Semua kode PDF adalah cakupan perluasan katalog. [Demo publik dan konteks](products/sagadevs/ARKARUPA.md).
+
 ## 2026-11-10 - SagaPOS menyiapkan perbaikan Riwayat Pesanan harian
 
 **CONFIRMED / IMPLEMENTED_NOT_DEPLOYED.** Filter Riwayat Pesanan dapat melewatkan pesanan Kiosk dan Kasir yang baru dibuat. Database menyimpan outlet yang benar, sedangkan pesanan di memori masih memakai outlet bawaan sampai dimuat ulang dari database. Kandidat memastikan pesanan baru menggunakan cakupan outlet aktif sejak dibuat. Filter tanggal bisnis dan batas akses Owner tetap berlaku.

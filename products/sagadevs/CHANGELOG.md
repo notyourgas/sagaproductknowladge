@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-14 - Arkarupa V1: prototype publik dua proyek
+
+CONFIRMED / PRODUCTION_DEPLOYED untuk demo publik sintetis. [Arkarupa V1](https://arkarupa-prototype.pages.dev/) membuka dua proyek tanpa login dengan 13 modul. Alur AHSP, BUV, RAP/RAB, Kurva S, BUP, biaya, termin dan Portal Klien dapat dicoba. Percobaan tersimpan per proyek di browser. Change Log menampilkan sebelum/sesudah rilis dan aktivitas lokal. Katalog awal berisi tujuh kode Lampiran VI yang telah diperiksa. Katalog lengkap mengikuti tahap perluasan.
+
+Provenance: source lokal `d29c8c52eec70a7ca89af9bee7e1d39b7fb9171a` terverifikasi identik dengan manifest aset SHA-256 `6c7a051aac64cc5e5b817e3ab790c826ef3d57a1f58c6fd235190097de573601`. Deployment `0a7d02fe-5442-4cd3-ac40-693f1561df2e`. Pemeriksaan browser 1440 px dan viewport mobile 390 px lulus pada URL publik, termasuk proyek kosong sampai laporan terbit, reset terisolasi dan Change Log. Ini adalah frontend demo tersendiri. UAT klien dan kesiapan operasional berada di luar bukti rilis ini.
+
 ## 2026-11-06 - Jersey Jago r72: koreksi kerah dan tepi kain yang terpotong
 
 CONFIRMED / PRODUCTION_DEPLOYED untuk prototype statis. Mask penghapusan hanger r71 ikut menghapus sebagian kain kerah. r72 memperbaiki 22 foto pada 20 set; framing tetap 1120 x 1400 dengan latar abu-abu dan whitespace. Galeri tetap 499 foto untuk 122 set batch ketiga; total katalog 164 pilihan.
