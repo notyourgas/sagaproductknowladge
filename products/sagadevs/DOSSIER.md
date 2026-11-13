@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-14 - Arkarupa: dukungan satuan AHSP unit
+
+CONFIRMED / LOCAL_VALIDATED. Kalkulator sebelumnya menolak keluaran unit untuk AC dan tangki. Kandidat Laravel kini mendukung satuan unit di katalog, estimasi, BUP hitung jumlah, dan PDF RAP serta penawaran. Fixture AC Split Duct dan tangki fiberglass memakai HSD sintetis. Suite MySQL disposable lulus 78 tes dan 1.049 asersi pada source lokal 939b76e0b4ce76bf8615efa8b39be418fdf9df28. Entri indeks tetap Referensi selama koefisien dan HSD kontrak ditinjau. Demo publik tetap sintetis. Staging, UAT, dan kesiapan pilot nyata masih terbuka.
+
 ## 2026-11-14 - Arkarupa: tautan detail katalog AHSP
 
 CONFIRMED / LOCAL_VALIDATED. Semua 2.841 kode indeks Lampiran VI kini punya halaman detail kandidat, termasuk 24 baris dengan kode tabel yang berbeda dari ejaan indeks. Tampilan Referensi memperlihatkan kedua kode bila berbeda. Definisi yang sudah diverifikasi dipertahankan saat impor. Seluruh 77 tes MySQL disposable lulus pada commit lokal 4d1351644f65ae5f785730be06a775a08e23713a. Review unit dan koefisien penuh, staging serta UAT masih terbuka.
