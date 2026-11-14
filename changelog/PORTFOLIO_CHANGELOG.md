@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Arkarupa: cari berkas di Document Center
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel a168ca8d39aa326a707fb4b00df7e65674bfca36 menampilkan jumlah hasil pada enam kategori dan pencarian judul atau kode berkas dengan filter versi. Hasil dibatasi menurut proyek, daftar laporan tetap tersedia, dan PDF versi lama dapat diunduh oleh klien yang masih memiliki akses. Chrome 390 dan 1440 px serta uji MySQL terfokus lulus. Restore VPS lulus untuk 16 migrasi disposable. DEMO_PUBLIC. Change Log Pages tersedia di https://f81a98ef.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127, promosi menunggu akun demo sintetis berwenang. Delegasi penerbit, hak kategori, penarikan dokumen, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: filter versi Document Center
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 01c8302c1b037c9e8543846cb497d5d376c3a095 menampilkan kartu aktif dan arsip yang mudah dibedakan dan filter untuk membaca versi aktif atau terdahulu. Laporan proyek tetap tersedia. Chrome 390 dan 1440 px membuktikan pratinjau PDF aktif dan unduh PDF lama dengan filter. Uji MySQL memeriksa isolasi proyek dan pencabutan akses. Restore VPS lulus untuk 16 migrasi disposable. DEMO_PUBLIC. Change Log Pages v1.2 tersedia di https://11ce5a21.arkarupa-prototype.pages.dev/#/changes. Laravel aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Delegasi penerbit, hak kategori, penarikan dokumen, staging, UAT dan PILOT_READY masih terbuka.
