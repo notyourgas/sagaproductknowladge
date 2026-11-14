@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-15 - Arkarupa: unduh PDF tagihan di Portal Klien
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 3e7a872e8abc5230a6324597266a33fc2cd97d25 menambahkan unduhan PDF untuk tagihan terposting yang dibagikan pada laporan Portal terbaru. Klien dapat melihat status ketersediaan dan memakai keyboard untuk mengunduh. Chrome 390 dan 1440 px serta 107 tes MySQL dengan 1.889 asersi lulus, termasuk isolasi proyek dan pencabutan akses. Jadwal bertanggal, pengaitan milestone, penjadwalan ulang, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: tinjau pembagian termin kontrak
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 778f2b6327e5df82c8ea46e9074e913615cd17e7 menampilkan persentase dan nominal termin di Keuangan dengan pintasan keyboard ke sertifikasi. Kontrak sintetis Rp100 juta menghasilkan rencana Rp30 juta, Rp50 juta, dan Rp20 juta. Chrome 390 dan 1440 px serta 106 tes MySQL dengan 1.866 asersi lulus. Jadwal bertanggal, pengaitan milestone, reschedule, keluaran Portal, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
