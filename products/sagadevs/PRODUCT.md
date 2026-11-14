@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Kurva S dan tabel periode
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 72aa3dd663d9836cdca767b0cb0d2d5465343eab menandai periode terakhir dengan aktual dan menambahkan Baca tabel periode untuk pengguna keyboard. Chrome 390 dan 1440 px, rekonsiliasi CSV, izin ekspor, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Versi Pages menerbitkan tampilan, pintasan keyboard dan selisih per periode pada https://b7d46ea2.arkarupa-prototype.pages.dev/#/renovasi-demo/progres. Change Log tersedia di https://b7d46ea2.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Dasar proyeksi dan format laporan berkala, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: tinjauan hasil pembacaan PDF nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 5ba8ad6f1a77772e79847816f01f2131bbc58c43 memperjelas status baris dan perbandingan subtotal dari PDF berteks. Saat pembacaan gagal, pengguna dapat melanjutkan pengisian draf dengan keyboard. Chrome 390 dan 1440 px, akses lampiran privat, regresi MySQL disposable dan restore 16 migrasi disposable lulus. DEMO_PUBLIC. Change Log tersedia di https://43901b6e.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Dukungan OCR gambar dan retensi, staging, UAT serta PILOT_READY masih terbuka.
