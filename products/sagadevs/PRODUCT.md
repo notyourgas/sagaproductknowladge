@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: pencarian nomor tagihan Portal
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 1645b77f94d9ec7e474b439ea4f432c1a4ffcd7f memisahkan nilai tagihan, pembayaran dan penyesuaian, serta mendukung pencarian nomor tagihan yang sudah dibagikan. Pencarian mempertahankan konteks laporan, hak akses PDF dan saldo. Chrome 390 dan 1440 px serta regresi MySQL disposable lulus. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://fd5098eb.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Keputusan aturan tanggal, milestone dan penjadwalan ulang, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: pencarian pekerja di absensi
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel c03a00410d7e62789104a6cab8e7917522529e4b menonjolkan status absensi aktif dan menambahkan pencarian nama atau kode pekerja dalam proyek berizin serta tanggal yang dipilih. Chrome 390 dan 1440 px dan regresi MySQL disposable lulus. Filter mempertahankan jumlah harian dan rekap lintas modul. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://3e28392d.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Aturan konversi OH dan kaitan upah, staging, UAT serta PILOT_READY masih terbuka.
