@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-14 - Arkarupa: ringkasan proyek dan periode progres
+
+CONFIRMED / LOCAL_VALIDATED. Ringkasan memisahkan Aktual, Rencana dan tanggal cut-off. PM bisa kembali ke bulan ini tanpa memilih ulang proyek. Tautan menuju Lapangan membawa tanggal yang sama, dan antrean BUP diberi label sebagai jumlah yang menunggu verifikasi saat ini. Chrome 390 px dan MySQL disposable lulus 89 tes dan 1.382 asersi pada kandidat b3f93ad5577889c5cf7305524bf373cb5016ea22. Demo Pages v1.1. Staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: ringkasan progres dan pemulihan cut-off
 
 CONFIRMED / LOCAL_VALIDATED. Layar pekerjaan menampilkan Aktual, Rencana dan Selisih pada kartu terpisah. Operator dapat memulihkan tanggal kosong dan kembali ke progres hari ini dengan keyboard. Volume dan tanggal pembaruan memakai baris BUP terverifikasi yang sama. Chrome 390 px dan MySQL disposable lulus 88 tes dan 1.369 asersi pada kandidat 75261576a615f7540511347772b61b0cd608f4d2. Demo Pages v1.1. Staging dan UAT masih terbuka.
