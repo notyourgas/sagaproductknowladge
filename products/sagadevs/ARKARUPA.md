@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: konfirmasi kaitan katalog dari PDF nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 2771792350ad3287e5cb3ed3ba5cfd6767850618 menampilkan kandidat katalog ketika nama atau kode material dan satuannya cocok. Operator memilih kaitan saat memasukkan baris ke draf dan dapat melepasnya. Chrome 390 dan 1440 px serta 105 tes MySQL dengan 1.855 asersi lulus. OCR foto dan hasil pindai, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: tinjau barang dan nominal PDF nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat a6eec6ab4b5e08874775800f4587b867dbcc9180 menampilkan barang dan nominal dari PDF berteks dengan struktur yang dikenali. Operator dapat menambahkan ke draf baris yang subtotalnya cocok dan memeriksa selisih secara manual. Chrome 390 dan 1440 px serta 104 tes MySQL dengan 1.835 asersi lulus. Pencocokan katalog, OCR foto dan pindai, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
