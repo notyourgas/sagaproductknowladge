@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: koreksi status absensi dengan jejak audit
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 1ba76f59a227058b9e09d7b6c93e9c30a63a0add memberi Owner dan PM koreksi status absensi dengan alasan, penanda revisi dan audit sebelum–sesudah. Validasi menolak konflik revisi dan menjaga identitas pekerja, tanggal dan penugasan. Chrome 390/1440 px dan 113 tes MySQL dengan 2.029 asersi lulus. Restore VPS mencocokkan 61 tabel bisnis, 10 berkas dan 16 migrasi pada salinan disposable. Demo Laravel masih b8ab127 karena verifikasi rilis memerlukan login akun demo sintetis yang berwenang. DEMO_PUBLIC. Entri koreksi tersedia pada Pages v1.2 di https://arkarupa-prototype.pages.dev/#/changes. Definisi OH, staging privat, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: saring daftar absensi dan rapikan tampilan HP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel c946411 menampilkan daftar absensi sebagai kartu pada HP dan tabel pada desktop. Filter status bertahan setelah reload dan menyediakan pemulihan hasil kosong. Chrome 390 dan 1440 px serta 112 tes MySQL dengan 2.011 asersi lulus. Paket 7b73156 lulus restore VPS dan 15 migrasi disposable, termasuk uji pointer atomik terisolasi. Promosi aktual menunggu akses ke akun demo sintetis untuk verifikasi login. Laravel aktif b8ab127. DEMO_PUBLIC. Catatan perubahan tersedia di https://arkarupa-prototype.pages.dev/#/changes. Staging privat, UAT dan PILOT_READY masih terbuka.
