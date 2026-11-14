@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-14 - Arkarupa: urutan dan navigasi tagihan Portal
+
+CONFIRMED / LOCAL_VALIDATED. Portal menempatkan tagihan bersaldo terlebih dahulu, membatasi tiap kartu, dan menyediakan tautan dari ringkasan. Chrome 390 px lulus uji fokus. Regresi MySQL lulus 87 tes dan 1.334 asersi pada kandidat 865d687f20445e25004a4eb84ef689e77d1e8ac5, termasuk pergeseran urutan setelah pelunasan dan pembalikan. Demo Pages tetap v1.1. Staging dan UAT terbuka.
+
 ## 2026-11-14 - Arkarupa: tagihan lunas dan Portal kosong
 
 CONFIRMED / LOCAL_VALIDATED. Portal membedakan status Lunas dan menampilkan akses periksa laporan pada proyek kosong. Chrome 390 px lulus. Uji memastikan pembalikan pembayaran membuka kembali sisa tagihan pada laporan historis. MySQL disposable lulus 87 tes dan 1.329 asersi pada kandidat ab9eed395aca228157b684c793ede2882fd7b2fb. Demo Pages tetap v1.1. Staging dan UAT terbuka.
