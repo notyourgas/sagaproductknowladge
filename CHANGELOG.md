@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-14 - Arkarupa: rail desktop dan dock HP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 039fc46ed849faed48fd02585c27f93cdd208e6b menyediakan rail desktop 216/61 px dan dock Menu, Dashboard, dan Proyek di bawah 1024 px. Drawer memulihkan fokus setelah Escape. Chrome 390, 900, 1024 dan 1440 px membuktikan navigasi serta hak akses. MySQL disposable lulus 95 tes dan 1.486 asersi. Aksi cepat, perangkat fisik dan pembaca layar masih terbuka. Demo Pages v1.1. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-14 - Arkarupa: daftar proyek responsif dan konteks periode
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat ae9286040606a738e1dfe85368540d330c8a9a5b menampilkan progres aktual, rencana dan selisih di tabel desktop dan daftar satu kolom pada HP. Tautan keyboard mempertahankan filter ke Dokumen Proyek dan cut-off ke Lapangan. Chrome 390/1440 px membuktikan fixture 25% aktual terhadap 50% rencana, keadaan tanpa baseline, dan cakupan akses pelaksana. Demo Pages v1.1. Staging, UAT dan PILOT_READY masih terbuka.
