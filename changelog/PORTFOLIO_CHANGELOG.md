@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Arkarupa: sumber volume dan absensi per tim
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel fea161f639c4965755d78c7a808f385fa5aa9aa4 menyandingkan volume BUP kumulatif dengan jumlah catatan hadir, izin, sakit, dan alpa per penugasan pada tanggal cut-off. Pintasan membawa pengguna berizin ke proyek dan tanggal yang sama. Chrome 390/1440 px serta 113 tes MySQL dengan 2.052 asersi lulus. Restore VPS lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Pages v1.2 menampilkan Change Log di https://35934a96.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi menunggu akses akun demo sintetis berwenang. Definisi OH, kaitan upah, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: rekap volume terverifikasi per tim
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel e526c206bf542ed42c1a3656e831caacb0a30811 menampilkan volume BUP awal, koreksi dan neto per tim, pekerjaan, lokasi dan satuan pada cut-off. Hanya peran internal berizin yang dapat membuka rekap. Chrome 390/1440 px dan 113 tes MySQL dengan 2.038 asersi lulus. Restore VPS membuktikan 61 tabel bisnis, 10 berkas dan 16 migrasi pada salinan disposable. DEMO_PUBLIC. Pages v1.2 menampilkan Change Log pada https://160a49b9.arkarupa-prototype.pages.dev/#/changes. Laravel publik masih b8ab127 karena promosi memerlukan akun demo sintetis yang berwenang. OH, staging, UAT dan PILOT_READY masih terbuka.
