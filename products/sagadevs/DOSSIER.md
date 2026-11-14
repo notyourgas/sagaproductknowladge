@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-14 - Arkarupa: satuan set untuk pekerjaan AHSP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel kini membawa satuan set dari estimasi dan baseline ke laporan lapangan dan PDF RAP serta penawaran. Empat tabel RISHA bersatuan set lulus fixture kalkulasi, pengadaan dan PDF. Suite MySQL disposable lulus 80 tes dan 1.100 asersi pada commit lokal 8f9ad1f2aede6690f49b8e477a876f9b8c18cfc0. Entri indeks tetap Referensi. Tiga analisis produksi bertingkat, pemetaan harga kontrak, staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: satuan sumber daya AHSP di katalog dan estimasi
 
 CONFIRMED / LOCAL_VALIDATED. Estimator kini dapat memilih OJ, hari, lembar dan batang di katalog sumber daya dan estimasi per ruangan. Fixture menguji persetujuan harga dasar sintetis, salin template AHSP, kebutuhan pengadaan dan unduhan PDF RAP. MySQL disposable lulus 79 tes dan 1.081 asersi pada commit lokal 521d4b6eda2c1b25532cb0d1863a61e451faeb1b. Katalog indeks tetap Referensi. Verifikasi harga kontrak, staging, UAT dan pilot nyata masih terbuka.
