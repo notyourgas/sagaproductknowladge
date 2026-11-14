@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-14 - Arkarupa: tinjau identitas dari PDF nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 03ba823d137a4350dcad6dba0a59d61a29666aec membaca identitas dari PDF berteks melalui konfigurasi lokal. Operator meninjau supplier, nomor, tanggal dan kemungkinan duplikat sebelum mengisi draf. Chrome 390 dan 1440 px serta 103 tes MySQL dengan 1.829 asersi lulus. Pembacaan baris, OCR gambar, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: rekonsiliasi nota di Keuangan
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 857bde8e6a9db103719a60855742bbbbabf4de06 menampilkan kuantitas dan selisih nilai nota terhadap sumber penerimaan. Pengguna berwenang dapat membuka form tagihan dengan satu sumber terisi. Membuka form belum mencatat utang atau kas. Chrome 390 dan 1440 px serta 103 tes MySQL dengan 1.823 asersi lulus. Tagihan gabungan, aturan pajak dan diskon, pembayaran, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
