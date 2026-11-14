@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Arkarupa: ringkasan dan filter tagihan Portal
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 7fccd0b918014f61f1e1425bd6cae16b61cd19d1 menampilkan sisa seluruh tagihan yang dibagikan dan filter Belum lunas atau Lunas. Filter mempertahankan laporan historis. Saldo berasal dari alokasi dan penyesuaian Finance, sementara akses PDF tetap mengikuti pembagian pada laporan terbaru. Chrome 390/1440 px, uji MySQL terfokus dan restore VPS dengan 16 migrasi disposable lulus. DEMO_PUBLIC. Change Log Pages tersedia di https://4fea955e.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi menunggu akun demo sintetis berwenang. Jadwal termin bertanggal, milestone, penjadwalan ulang, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: cari berkas di Document Center
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel a168ca8d39aa326a707fb4b00df7e65674bfca36 menampilkan jumlah hasil pada enam kategori dan pencarian judul atau kode berkas dengan filter versi. Hasil dibatasi menurut proyek, daftar laporan tetap tersedia, dan PDF versi lama dapat diunduh oleh klien yang masih memiliki akses. Chrome 390 dan 1440 px serta uji MySQL terfokus lulus. Restore VPS lulus untuk 16 migrasi disposable. DEMO_PUBLIC. Change Log Pages tersedia di https://f81a98ef.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127, promosi menunggu akun demo sintetis berwenang. Delegasi penerbit, hak kategori, penarikan dokumen, staging, UAT dan PILOT_READY masih terbuka.
