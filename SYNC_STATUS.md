@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa: aksi cepat HP sesuai peran dan proyek
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat f9869eda18f33c15a1c738ffe52661faccbc0ffe menyediakan akses cepat ke BUP, permintaan material dan pembayaran sesuai peran dan proyek yang sedang dipilih. Chrome 320/390 px membuktikan fokus dan pergantian proyek tanpa reload. MySQL disposable lulus 95 tes dan 1.490 asersi. Draf nota, perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: rail desktop dan dock HP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 039fc46ed849faed48fd02585c27f93cdd208e6b menyediakan rail desktop 216/61 px dan dock Menu, Dashboard, dan Proyek di bawah 1024 px. Drawer memulihkan fokus setelah Escape. Chrome 390, 900, 1024 dan 1440 px membuktikan navigasi serta hak akses. MySQL disposable lulus 95 tes dan 1.486 asersi. Aksi cepat, perangkat fisik dan pembaca layar masih terbuka. Demo Pages v1.1. Staging, UAT dan PILOT_READY masih terbuka.
