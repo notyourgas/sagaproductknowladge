@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-14 - Arkarupa: progres kumulatif mingguan dan bulanan
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 67cb9edcffde293d4b510df76eaf92e348009687 menampilkan rekap 12 periode mingguan atau bulanan dengan angka kumulatif, deviasi dan versi baseline. Aktual berasal dari BUP terverifikasi dan ditampilkan sampai tanggal berlaku. Chrome 390 px lulus perpindahan periode dengan keyboard. MySQL disposable lulus 92 tes dengan 1.439 asersi. Grafik Kurva S, staging dan UAT masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: pengukuran volume BUP berdasarkan baseline
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 40b7aab7f0afed6681dd97030df4601c4c632565 menampilkan pratinjau dimensi pada BUP dan mencatat metode serta satuan asli untuk input langsung, termasuk berat dan LS. Riwayat menjaga dasar ukur dan koreksi bertaut. MySQL disposable lulus 91 tes dengan 1.427 asersi dan uji terfokus lanjutan. Uji HP fisik, staging dan UAT masih terbuka.
