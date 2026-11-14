@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-14 - Arkarupa: tanggal stok ditutup setelah opname
+
+CONFIRMED / LOCAL_VALIDATED. Penerimaan, retur, pemakaian dan pembalikan baru ditolak pada atau sebelum cut-off disetujui. Retry transaksi lama mengembalikan catatan semula. Fixture menjaga 57 m³ pada cut-off dan 67 m³ pada periode terbuka. MySQL disposable lulus 86 tes dan 1.252 asersi pada kandidat a693e64ecdbd0ecaaa58504563e5d508cc5300e6. Kebijakan bukti terlambat, staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: pembalikan pemakaian saldo pembuka
 
 CONFIRMED / LOCAL_VALIDATED. Owner atau PM dapat membalik pemakaian saldo pembuka aktif sekali dari riwayat. Fixture memulihkan 6 m³ menjadi 8,125 m³ dan menyimpan catatan awal serta koreksinya. MySQL disposable lulus 85 tes dan 1.234 asersi pada kandidat 027d7e0cc211d82955c8ff212f55b86108eefa4a. Kebijakan transaksi bertanggal mundur, staging dan UAT masih terbuka.
