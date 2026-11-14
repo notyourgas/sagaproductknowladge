@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-14 - Arkarupa: arus kas dashboard, antrean review dan fokus dialog
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 81a412b5e5a1ef4ecdb4bab06057ae64dbc40430 menampilkan kas masuk dan keluar terposting tanpa transfer internal, serta panel Perlu perhatian dari antrean review yang berizin. Escape dan Tutup mengembalikan fokus ke tombol pembuka. Chrome 390/1440 px menguji proyek terisi, proyek kosong dan hak akses. MySQL disposable lulus 95 tes dan 1.484 asersi. Demo Pages v1.1. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-14 - Arkarupa: kartu dashboard responsif dan pintasan status proyek
 
 CONFIRMED / LOCAL_VALIDATED untuk kartu dan pintasan. Kandidat a58e5248f810b93aaccf8a6542a64958e494ff5b menata KPI portofolio dalam dua kolom di HP dan empat di desktop, menonjolkan piutang bagi peran berizin, serta menyediakan pintasan keyboard ke status proyek. Chrome menguji 320, 390, 900 dan 1440 px. MySQL disposable lulus 95 tes dan 1.477 asersi. Pemulihan fokus dialog sumber masih terbuka. Demo Pages v1.1. Staging, UAT dan PILOT_READY masih terbuka.
