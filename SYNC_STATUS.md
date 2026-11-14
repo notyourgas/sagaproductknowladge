@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-15 - Arkarupa: status dan tanggapan revisi Portal
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 047e76dcae46ed69df59a143c7938acc7e7a3327 menampilkan status di daftar revisi dan menempatkan pintasan ke formulir pada VO yang masih menerima tanggapan. Status indeks dan lembar memakai snapshot serta tanggapan yang sama. Chrome 390/1440 px dan uji Commercial lulus, termasuk riwayat keputusan, lampiran privat dan penjagaan baseline. Restore VPS lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://12f0c154.arkarupa-prototype.pages.dev/#/changes. Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Delegasi penerbit, verifikasi UAT, staging dan PILOT_READY terbuka.
+
 ## 2026-11-15 - Arkarupa: ringkasan dan filter tagihan Portal
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 7fccd0b918014f61f1e1425bd6cae16b61cd19d1 menampilkan sisa seluruh tagihan yang dibagikan dan filter Belum lunas atau Lunas. Filter mempertahankan laporan historis. Saldo berasal dari alokasi dan penyesuaian Finance, sementara akses PDF tetap mengikuti pembagian pada laporan terbaru. Chrome 390/1440 px, uji MySQL terfokus dan restore VPS dengan 16 migrasi disposable lulus. DEMO_PUBLIC. Change Log Pages tersedia di https://4fea955e.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi menunggu akun demo sintetis berwenang. Jadwal termin bertanggal, milestone, penjadwalan ulang, staging, UAT dan PILOT_READY masih terbuka.
