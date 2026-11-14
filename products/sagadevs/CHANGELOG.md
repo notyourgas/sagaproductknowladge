@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-14 - Arkarupa: rekap stok pada cut-off
+
+CONFIRMED / LOCAL_VALIDATED. Lapangan menampilkan stok per material dan satuan pada tanggal pilihan dari penerimaan baik, retur dan pemakaian neto. Fixture merekonsiliasi 52 m³ pada cut-off dan 71 m³ setelah penerimaan, retur dan pembalikan hari berikutnya. Rekap baca-saja. Regresi MySQL disposable lulus 83 tes dan 1.146 asersi pada kandidat c548d8883dd8ad901b0e3918cb34361c48f8e492. Pilot nyata, penetapan saldo fisik dan UAT menunggu proyek serta cut-off.
+
 ## 2026-11-14 - Arkarupa: Change Log demo publik v1.1
 
 CONFIRMED / DEMO_PUBLIC. [Change Log publik](https://arkarupa-prototype.pages.dev/#/changes) menampilkan 20 riwayat pengembangan kandidat pilot dengan tanggal, sebelum–sesudah dan hasil uji sintetis. Tiga catatan rilis awal tetap tersedia. Kedua proyek demo menyimpan percobaan di browser. Deployment Pages f13d70ca lulus uji Chrome desktop dan HP serta verifikasi 10 aset publik. Source lokal d0abcc5aaa89d647ac9bfdc27128f1f0150bf4b3. Staging, UAT dan pemilihan proyek nyata tetap terbuka.
