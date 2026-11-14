@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-15 - Arkarupa: ekspor progres per periode
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 6a073aeb637b753e983ffe4df404bf65e3ceadd7 menandai selisih negatif di tabel progres dan menyediakan CSV internal mingguan atau bulanan dari halaman yang sedang dibaca. Ekspor memuat versi baseline dan mempertahankan aktual mendatang kosong. Chrome 390/1440 px dan empat tes terfokus MySQL lulus, termasuk kesesuaian isi CSV, perpindahan riwayat dan pembatasan peran. DEMO_PUBLIC. Change Log Pages v1.2 tayang di https://5a56af81.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi masih menunggu akun demo sintetis berwenang. Proyeksi penyelesaian, format laporan berkala, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: progres Gantt pada tanggal pilihan
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 640843055a2b86409648712c1ebf32c588efdd3b menampilkan aktual, rencana, selisih, dan peringatan Gantt pada cut-off yang dipilih. Ringkasan memakai baseline yang berlaku pada tanggal tersebut dan sumber yang sama dengan Progres Resmi serta Kurva S laporan terbit. Chrome 390/1440 px memverifikasi pemulihan tanggal dengan keyboard. Restore VPS lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Pages v1.2 menayangkan Change Log pada https://74672768.arkarupa-prototype.pages.dev/#/changes. Demo Laravel masih b8ab127 dan promosi menunggu akun demo sintetis berwenang. Proyeksi penyelesaian, format laporan berkala, staging, UAT dan PILOT_READY masih terbuka.
