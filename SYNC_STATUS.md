@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa: rekap dari saldo awal disetujui
+
+CONFIRMED / LOCAL_VALIDATED. Rekap stok kandidat memakai hasil opname yang disetujui dan pergerakan setelah cut-off. Fixture menghasilkan 71,25 m³ dan menjaga 8,125 m³ untuk bahan tanpa riwayat. Rekap baca-saja. Pengurangan dari saldo pembuka tanpa penerimaan masih terbuka. MySQL disposable lulus 85 tes dan 1.205 asersi pada kandidat e54f5deda901f06c9bfeb66af5f1af2b3352d56a. Staging dan UAT menunggu.
+
 ## 2026-11-14 - Arkarupa: review saldo stok pembuka
 
 CONFIRMED / LOCAL_VALIDATED. Finance atau Owner mengajukan hasil hitung fisik. PM atau Owner lain mencatat keputusan dan alasannya. Riwayat sumber yang berubah sebelum persetujuan memerlukan review ulang. Snapshot disetujui disimpan tanpa posting stok atau biaya. Regresi MySQL disposable lulus 85 tes dan 1.192 asersi pada kandidat d265fba7ea0403ab743a642d49bf790205532a9b. Penerapan saldo pada stok operasional, staging dan UAT masih terbuka.
