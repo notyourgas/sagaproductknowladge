@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: pengukuran volume BUP berdasarkan baseline
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 40b7aab7f0afed6681dd97030df4601c4c632565 menampilkan pratinjau dimensi pada BUP dan mencatat metode serta satuan asli untuk input langsung, termasuk berat dan LS. Riwayat menjaga dasar ukur dan koreksi bertaut. MySQL disposable lulus 91 tes dengan 1.427 asersi dan uji terfokus lanjutan. Uji HP fisik, staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: tindak lanjut proyek dan pencarian BUP
 
 CONFIRMED / LOCAL_VALIDATED. Pekerjaan berikutnya memakai progres hari ini untuk rekomendasi baseline dan BUP saat Ringkasan dibuka pada cut-off historis. Tenggat tampil terpisah dan pencarian kosong dapat dipulihkan dengan keyboard. Chrome 390 px lulus uji navigasi dan MySQL disposable lulus 89 tes dengan 1.401 asersi pada kandidat 0005feec69818f6051dbac6997f3f4efd22b85cd. Demo Pages v1.1. Staging dan UAT masih terbuka.
