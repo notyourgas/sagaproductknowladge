@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-14 - Arkarupa: tinjau barang dan nominal PDF nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat a6eec6ab4b5e08874775800f4587b867dbcc9180 menampilkan barang dan nominal dari PDF berteks dengan struktur yang dikenali. Operator dapat menambahkan ke draf baris yang subtotalnya cocok dan memeriksa selisih secara manual. Chrome 390 dan 1440 px serta 104 tes MySQL dengan 1.835 asersi lulus. Pencocokan katalog, OCR foto dan pindai, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: tinjau identitas dari PDF nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 03ba823d137a4350dcad6dba0a59d61a29666aec membaca identitas dari PDF berteks melalui konfigurasi lokal. Operator meninjau supplier, nomor, tanggal dan kemungkinan duplikat sebelum mengisi draf. Chrome 390 dan 1440 px serta 103 tes MySQL dengan 1.829 asersi lulus. Pembacaan baris, OCR gambar, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
