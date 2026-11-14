@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Arkarupa: saring daftar absensi dan rapikan tampilan HP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel c946411 menampilkan daftar absensi sebagai kartu pada HP dan tabel pada desktop. Filter status bertahan setelah reload dan menyediakan pemulihan hasil kosong. Chrome 390 dan 1440 px serta 112 tes MySQL dengan 2.011 asersi lulus. Paket 7b73156 lulus restore VPS dan 15 migrasi disposable, termasuk uji pointer atomik terisolasi. Promosi aktual menunggu akses ke akun demo sintetis untuk verifikasi login. Laravel aktif b8ab127. DEMO_PUBLIC. Catatan perubahan tersedia di https://arkarupa-prototype.pages.dev/#/changes. Staging privat, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: catat absensi tim per proyek
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 39fa6e3625af3660e0e6fdce4bbb70457a2e9ece menampilkan empat status absensi per hari dan menyimpan kode pekerja, mandor serta divisi. Pelaksana dapat mencatat, Finance dapat membaca. Chrome 390 dan 1440 px serta 112 tes MySQL dengan 2.005 asersi lulus. Perhitungan OH dan alokasi upah menunggu definisi penerimaan. Runner menuntaskan latihan VPS pada salinan disposable dengan 15 migrasi baru serta pemeriksaan backup terenkripsi terhadap 61 tabel bisnis dan 10 berkas. Runtime Laravel publik masih b8ab127 dengan promosi dan rollback kode terbuka. DEMO_PUBLIC. Change Log Pages v1.2 menyertakan catatan REV-009 pada https://arkarupa-prototype.pages.dev/#/changes. Staging privat, UAT dan PILOT_READY masih terbuka.
