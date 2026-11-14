@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa: pemilihan foto sebelum laporan terbit
+
+CONFIRMED / LOCAL_VALIDATED. Workspace memperjelas kartu pemilihan foto dan menampilkan status saat cut-off berubah. Judul tetap tersedia dan pilihan foto disegarkan. Laporan baru ditahan jika berkas foto terpilih hilang. Retry laporan yang sudah terbit mengembalikan ID yang sama. Chrome 390 px lulus uji keyboard dan MySQL lulus 87 tes dengan 1.360 asersi pada kandidat 95ae9267b999483cd18a7b621082e476e6041e37. Demo Pages v1.1. Staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: riwayat dan foto Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED. Riwayat menandai laporan yang sedang dibuka. Klien dapat melihat foto penuh melalui tautan privat di tab baru. Bila semua foto terpilih sedang hilang, Portal menampilkan status ketersediaannya dan tetap menampilkan laporan. Chrome 390 px lulus uji keyboard. Regresi MySQL lulus 87 tes dan 1.348 asersi pada kandidat 7338b42f15fd18b3c7aa05d4f377f4f93afb5cc0, termasuk cakupan izin foto dan pencabutan akses. Demo Pages v1.1. Staging dan UAT masih terbuka.
