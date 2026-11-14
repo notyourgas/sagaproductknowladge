@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: kaitkan kewajiban upah ke mandor dan divisi
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat d52c88450e43c3a281b37a3db0d8595e62db933e memungkinkan Finance memilih penugasan mandor saat mengajukan kewajiban dari biaya terverifikasi. Kartu upah dan pemilih pembayaran menunjukkan divisi. Chrome 390 dan 1440 px serta 110 tes MySQL dengan 1.965 asersi lulus, termasuk saldo dua divisi dan pembayaran parsial. Pengaitan BUP, absensi, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-15 - Arkarupa: daftarkan mandor dan divisi per proyek
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 190e708adece8becfedda9a6f8e061c47a99eeeb menampilkan daftar mandor dan divisi di Keuangan. Finance dapat menambah beberapa divisi untuk satu mandor dengan validasi duplikat dan audit per proyek. Chrome 390 dan 1440 px, 109 tes MySQL dengan 1.940 asersi, serta restore sintetis lulus. Pengaitan sumber upah dan BUP, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
