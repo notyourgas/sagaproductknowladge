@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-14 - Arkarupa: pemakaian stok pembuka tanpa riwayat
+
+CONFIRMED / LOCAL_VALIDATED. Pelaksana dapat mencatat material dari saldo pembuka aktif ketika riwayat penerimaan belum tersedia. Fixture menyisakan 6 m³ dari 8,125 m³ setelah pemakaian 2,125 m³ dan menjaga nilai historis. MySQL disposable lulus 85 tes dan 1.218 asersi pada kandidat 7ecc08b809d0c0e93159e82aa53174563770933e. Pembalikan pemakaian ini, staging, dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: rekap dari saldo awal disetujui
 
 CONFIRMED / LOCAL_VALIDATED. Rekap stok kandidat memakai hasil opname yang disetujui dan pergerakan setelah cut-off. Fixture menghasilkan 71,25 m³ dan menjaga 8,125 m³ untuk bahan tanpa riwayat. Rekap baca-saja. Pengurangan dari saldo pembuka tanpa penerimaan masih terbuka. MySQL disposable lulus 85 tes dan 1.205 asersi pada kandidat e54f5deda901f06c9bfeb66af5f1af2b3352d56a. Staging dan UAT menunggu.
