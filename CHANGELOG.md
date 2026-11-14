@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-14 - Arkarupa: tindak lanjut proyek dan pencarian BUP
+
+CONFIRMED / LOCAL_VALIDATED. Pekerjaan berikutnya memakai progres hari ini untuk rekomendasi baseline dan BUP saat Ringkasan dibuka pada cut-off historis. Tenggat tampil terpisah dan pencarian kosong dapat dipulihkan dengan keyboard. Chrome 390 px lulus uji navigasi dan MySQL disposable lulus 89 tes dengan 1.401 asersi pada kandidat 0005feec69818f6051dbac6997f3f4efd22b85cd. Demo Pages v1.1. Staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: pencarian dokumen proyek
 
 CONFIRMED / LOCAL_VALIDATED. Indeks dokumen memperjelas kontrol pencarian dan buka berkas pada HP, menyediakan pemulihan saat hasil kosong, dan mencari karakter nama secara literal. MySQL disposable lulus 89 tes dan 1.394 asersi pada kandidat dadf9360a29a33ace80f380c5c1be2214f830136. Browser 390 px lulus uji penghapusan pencarian dengan keyboard dan akses foto berizin. Demo Pages v1.1. Staging dan UAT masih terbuka.
