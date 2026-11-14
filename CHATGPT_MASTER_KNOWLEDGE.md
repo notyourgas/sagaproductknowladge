@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-15 - Arkarupa: progres Gantt pada tanggal pilihan
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 640843055a2b86409648712c1ebf32c588efdd3b menampilkan aktual, rencana, selisih, dan peringatan Gantt pada cut-off yang dipilih. Ringkasan memakai baseline yang berlaku pada tanggal tersebut dan sumber yang sama dengan Progres Resmi serta Kurva S laporan terbit. Chrome 390/1440 px memverifikasi pemulihan tanggal dengan keyboard. Restore VPS lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Pages v1.2 menayangkan Change Log pada https://74672768.arkarupa-prototype.pages.dev/#/changes. Demo Laravel masih b8ab127 dan promosi menunggu akun demo sintetis berwenang. Proyeksi penyelesaian, format laporan berkala, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: sumber volume dan absensi per tim
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel fea161f639c4965755d78c7a808f385fa5aa9aa4 menyandingkan volume BUP kumulatif dengan jumlah catatan hadir, izin, sakit, dan alpa per penugasan pada tanggal cut-off. Pintasan membawa pengguna berizin ke proyek dan tanggal yang sama. Chrome 390/1440 px serta 113 tes MySQL dengan 2.052 asersi lulus. Restore VPS lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Pages v1.2 menampilkan Change Log di https://35934a96.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi menunggu akses akun demo sintetis berwenang. Definisi OH, kaitan upah, staging, UAT dan PILOT_READY masih terbuka.
