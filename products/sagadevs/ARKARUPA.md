@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: review saldo stok pembuka
+
+CONFIRMED / LOCAL_VALIDATED. Finance atau Owner mengajukan hasil hitung fisik. PM atau Owner lain mencatat keputusan dan alasannya. Riwayat sumber yang berubah sebelum persetujuan memerlukan review ulang. Snapshot disetujui disimpan tanpa posting stok atau biaya. Regresi MySQL disposable lulus 85 tes dan 1.192 asersi pada kandidat d265fba7ea0403ab743a642d49bf790205532a9b. Penerapan saldo pada stok operasional, staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: latihan rekonsiliasi saldo fisik
 
 CONFIRMED / LOCAL_VALIDATED. Perintah lokal membandingkan CSV hitung fisik dengan rekap stok hingga cut-off. Fixture menunjukkan selisih 1,75 m³ dan 8,125 m³ tanpa riwayat pada material lain. Hasil baca-saja. Regresi MySQL disposable lulus 84 tes dan 1.169 asersi pada kandidat 60a029905e12bdcfcfbf6b80f84ec2fa4c0c3b48. Saldo nyata menunggu proyek, dokumen opname, cut-off dan persetujuan. Demo Pages tetap v1.1.
