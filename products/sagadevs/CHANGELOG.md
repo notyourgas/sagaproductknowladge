@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: rilis demo v1.2 dan hubungkan tim BUP
+
+CONFIRMED / DEMO_PUBLIC. Cloudflare Pages v1.2 menggunakan source 520903df dan deployment 931bd5a2-0dc0-4511-856f-c0e2f2db0630. Empat KPI portofolio, dock HP dan 58 entri kandidat tambahan tersedia pada https://arkarupa-prototype.pages.dev/ dan https://arkarupa-prototype.pages.dev/#/changes. Chrome 320, 390 dan 1440 px serta checksum aset lulus. LOCAL_VALIDATED. Kandidat Laravel b5cacccae65ac159d2058337ad6f0b2c289a63d5 mencatat mandor dan divisi pada BUP internal. Koreksi mengikuti penugasan laporan asal. Chrome 390/1440 px dan 111 tes MySQL dengan 1.984 asersi lulus. Upgrade 14 migrasi pada restore sintetis berhasil, sedangkan upgrade demo Laravel membutuhkan runner VPS untuk instance existing. Staging privat, UAT klien dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: kaitkan kewajiban upah ke mandor dan divisi
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat d52c88450e43c3a281b37a3db0d8595e62db933e memungkinkan Finance memilih penugasan mandor saat mengajukan kewajiban dari biaya terverifikasi. Kartu upah dan pemilih pembayaran menunjukkan divisi. Chrome 390 dan 1440 px serta 110 tes MySQL dengan 1.965 asersi lulus, termasuk saldo dua divisi dan pembayaran parsial. Pengaitan BUP, absensi, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
