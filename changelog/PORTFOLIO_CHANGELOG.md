@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Arkarupa: alokasi dan pencarian upah
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 1e944f7ab295359bae160d3d4cd014a08fba50f7 memisahkan pembayaran teralokasi, penyesuaian dan sisa upah. Finance dapat mencari mandor, nomor atau divisi di dalam status terpilih. Chrome 390 dan 1440 px, rekonsiliasi upah, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menerbitkan pencarian uraian dan penanda sisa upah pada https://8fb7d7d0.arkarupa-prototype.pages.dev/#/renovasi-demo/upah. Change Log tersedia di https://8fb7d7d0.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Aturan OH dan tautan absensi, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Kurva S dan tabel periode
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 72aa3dd663d9836cdca767b0cb0d2d5465343eab menandai periode terakhir dengan aktual dan menambahkan Baca tabel periode untuk pengguna keyboard. Chrome 390 dan 1440 px, rekonsiliasi CSV, izin ekspor, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Versi Pages menerbitkan tampilan, pintasan keyboard dan selisih per periode pada https://b7d46ea2.arkarupa-prototype.pages.dev/#/renovasi-demo/progres. Change Log tersedia di https://b7d46ea2.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Dasar proyeksi dan format laporan berkala, staging, UAT serta PILOT_READY masih terbuka.
