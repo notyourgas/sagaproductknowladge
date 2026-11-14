@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-14 - Arkarupa: ringkasan nilai proyek di Portal Klien
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat d8a6f636899b3ed178f655747417d6b23c6a1173 menampilkan nilai baseline, pekerjaan terverifikasi, sisa pekerjaan dan kas pembayaran teralokasi. Snapshot pekerjaan mengikuti baseline laporan yang diterbitkan. Chrome 390 dan 1440 px serta 97 tes MySQL dengan 1.663 asersi lulus. Basis bisnis kas dan RAB, Kurva S Portal, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: ringkasan lampiran dan validasi balasan Owner
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 149ce2759c7138e2a020bd0e71af88bd0a6b4754 menampilkan jumlah dan nama lampiran terpilih sebelum VO terbit dan mengaitkan kesalahan balasan dengan kolom VO. Chrome membuktikan publikasi dan balasan dari sesi Owner sintetis. Klien melihat balasan dan hanya lampiran terpilih pada 390 dan 1440 px. Regresi Commercial lulus 10 tes dan 234 asersi. Staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
