@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa: rekonsiliasi nota di Keuangan
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 857bde8e6a9db103719a60855742bbbbabf4de06 menampilkan kuantitas dan selisih nilai nota terhadap sumber penerimaan. Pengguna berwenang dapat membuka form tagihan dengan satu sumber terisi. Membuka form belum mencatat utang atau kas. Chrome 390 dan 1440 px serta 103 tes MySQL dengan 1.823 asersi lulus. Tagihan gabungan, aturan pajak dan diskon, pembayaran, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: pencocokan barang penerimaan pada nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 8843434f150bc0a66dc4473d5a04839e11eb3016 menyimpan pencocokan tiap baris nota dengan barang baik dari penerimaan tertaut. Kuantitas neto mengikuti retur. Validasi menjaga satuan, kuantitas dan pemakaian tunggal. Chrome 390 dan 1440 px, 102 tes MySQL dengan 1.803 asersi, dan pemulihan dua draf sintetis lulus. Penerbitan tagihan, pembayaran, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
