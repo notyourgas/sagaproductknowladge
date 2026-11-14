@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa: pencarian dokumen proyek
+
+CONFIRMED / LOCAL_VALIDATED. Indeks dokumen memperjelas kontrol pencarian dan buka berkas pada HP, menyediakan pemulihan saat hasil kosong, dan mencari karakter nama secara literal. MySQL disposable lulus 89 tes dan 1.394 asersi pada kandidat dadf9360a29a33ace80f380c5c1be2214f830136. Browser 390 px lulus uji penghapusan pencarian dengan keyboard dan akses foto berizin. Demo Pages v1.1. Staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: ringkasan proyek dan periode progres
 
 CONFIRMED / LOCAL_VALIDATED. Ringkasan memisahkan Aktual, Rencana dan tanggal cut-off. PM bisa kembali ke bulan ini tanpa memilih ulang proyek. Tautan menuju Lapangan membawa tanggal yang sama, dan antrean BUP diberi label sebagai jumlah yang menunggu verifikasi saat ini. Chrome 390 px dan MySQL disposable lulus 89 tes dan 1.382 asersi pada kandidat b3f93ad5577889c5cf7305524bf373cb5016ea22. Demo Pages v1.1. Staging dan UAT masih terbuka.
