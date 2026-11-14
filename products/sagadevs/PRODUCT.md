@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-14 - Arkarupa: publikasi dan versi berkas Portal Klien
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat f756b6d6feabb9e3f8bbf48a1cd0e7edcd575239 memberi Owner alur menerbitkan lampiran proyek dan menandai versi sebelumnya Superseded. Chrome 390/1440 px membuktikan pratinjau versi aktif dan unduh versi arsip. MySQL disposable lulus 96 tes dan 1.537 asersi termasuk isolasi proyek dan pencabutan akses. Delegasi penerbit, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: Document Center Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED untuk halaman Document Center. Kandidat a097ba65ca715c49520c5243cd8733b789401f2c membuka enam kategori dan memuat indeks laporan yang telah diterbitkan untuk proyek yang diizinkan. Chrome 390/1440 px membuktikan navigasi keyboard, laporan historis dan isolasi proyek. MySQL disposable lulus 95 tes dan 1.507 asersi. Publikasi berkas, preview, unduh, versi dokumen, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
