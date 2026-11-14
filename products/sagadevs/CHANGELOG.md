@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-14 - Arkarupa: rincian saldo dan pemulihan masuk Portal
+
+CONFIRMED / LOCAL_VALIDATED. Portal menonjolkan sisa tagihan, mencantumkan pembayaran dan penyesuaian terpisah, serta menjaga email dan memfokuskan kata sandi setelah gagal masuk. Chrome 390 px lulus. Setelah pencabutan akses, laporan lama dan foto ditolak. Kandidat 57838a8842c46a3ed89e8db2188348fb722df868 lulus 87 tes dan 1.305 asersi. Demo Pages tetap v1.1. Staging dan UAT terbuka.
+
 ## 2026-11-14 - Arkarupa: navigasi Portal dan pemulihan proyek kosong
 
 CONFIRMED / LOCAL_VALIDATED. Portal menunjukkan Aktual dan Target dalam kartu dan memberi tautan dari laporan historis ke laporan terbaru. Paginasi menjaga laporan yang dipilih. Kandidat 59f34389c4f85b729cbe4aff1417f262ad525d19 lulus 87 tes dan 1.294 asersi pada MySQL disposable. Pemulihan proyek sintetis mulai kosong mencocokkan 68 tabel dan lima berkas privat dengan 45 asersi baca ulang. Staging dan UAT masih terbuka.
