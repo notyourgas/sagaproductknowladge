@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: bagikan rencana termin di Portal Klien
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat edcdc91f28fc8facf805bae7e28e5ec384532ffb menampilkan rencana termin saat PM memilihnya pada laporan. Persentase dan nilai kontrak awal disimpan saat penerbitan, sedangkan akses mengikuti pilihan pada laporan terbaru. Chrome 390 dan 1440 px serta 108 tes MySQL dengan 1.916 asersi lulus. Jadwal bertanggal, pengaitan milestone, penjadwalan ulang, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-15 - Arkarupa: unduh PDF tagihan di Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 3e7a872e8abc5230a6324597266a33fc2cd97d25 menambahkan unduhan PDF untuk tagihan terposting yang dibagikan pada laporan Portal terbaru. Klien dapat melihat status ketersediaan dan memakai keyboard untuk mengunduh. Chrome 390 dan 1440 px serta 107 tes MySQL dengan 1.889 asersi lulus, termasuk isolasi proyek dan pencabutan akses. Jadwal bertanggal, pengaitan milestone, penjadwalan ulang, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
