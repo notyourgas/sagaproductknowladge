@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: pengukuran dan draf BUP di HP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 7180f5ce1ea75c6431097d0e2973c1f8befc213d memulihkan fokus pemilih item, memperbarui hasil ukuran saat pindah kolom, dan menampilkan pintasan ke draf BUP terakhir milik pengguna. Chrome 390 px membuktikan pengukuran 2,4 m³, simpan, dan pemulihan dimensi serta catatan. Progres terverifikasi tetap 25% selama BUP masih draf. Uji perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: aksi cepat HP sesuai peran dan proyek
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat f9869eda18f33c15a1c738ffe52661faccbc0ffe menyediakan akses cepat ke BUP, permintaan material dan pembayaran sesuai peran dan proyek yang sedang dipilih. Chrome 320/390 px membuktikan fokus dan pergantian proyek tanpa reload. MySQL disposable lulus 95 tes dan 1.490 asersi. Draf nota, perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
