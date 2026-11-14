@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa: perbandingan VO dan bukti persetujuan
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat a193b274c3d4c475b5001663ee5eda1360e125d0 menampilkan perbandingan perubahan pekerjaan dari baseline kontrak asal serta menyediakan formulir bukti persetujuan internal per VO. Chrome lulus pada 390 dan 1440 px. MySQL disposable lulus 96 tes dan 1.552 asersi, termasuk penerapan baseline satu kali. Publikasi dan keputusan langsung klien di Portal, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: publikasi dan versi berkas Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat f756b6d6feabb9e3f8bbf48a1cd0e7edcd575239 memberi Owner alur menerbitkan lampiran proyek dan menandai versi sebelumnya Superseded. Chrome 390/1440 px membuktikan pratinjau versi aktif dan unduh versi arsip. MySQL disposable lulus 96 tes dan 1.537 asersi termasuk isolasi proyek dan pencabutan akses. Delegasi penerbit, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
