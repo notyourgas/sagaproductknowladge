@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: riwayat laporan Portal
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 03cbe330b916ae27d93b3f161a9e0bfce7240d86 membedakan tanggal cut-off dan waktu terbit di riwayat Portal. Klien bisa mencari judul, menghapus pencarian dan langsung membuka laporan dari hasil. Pencarian hanya menyaring daftar proyek yang sedang dibuka. Chrome 390/1440 px, uji MySQL terfokus dan restore VPS dengan 16 migrasi disposable lulus. DEMO_PUBLIC. Change Log tersedia di https://b09dbc18.arkarupa-prototype.pages.dev/#/changes. Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Basis nilai pekerjaan, cakupan kas, staging, UAT dan PILOT_READY tetap terbuka.
+
 ## 2026-11-15 - Arkarupa: status dan tanggapan revisi Portal
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 047e76dcae46ed69df59a143c7938acc7e7a3327 menampilkan status di daftar revisi dan menempatkan pintasan ke formulir pada VO yang masih menerima tanggapan. Status indeks dan lembar memakai snapshot serta tanggapan yang sama. Chrome 390/1440 px dan uji Commercial lulus, termasuk riwayat keputusan, lampiran privat dan penjagaan baseline. Restore VPS lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://12f0c154.arkarupa-prototype.pages.dev/#/changes. Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Delegasi penerbit, verifikasi UAT, staging dan PILOT_READY terbuka.
