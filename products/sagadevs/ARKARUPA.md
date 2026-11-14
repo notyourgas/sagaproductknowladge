@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: publikasi perubahan pekerjaan di Portal Klien
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 07dd76d00cc5f3bb9eec59a4056bae0d338a6673 memberi Owner konfirmasi publikasi perubahan pekerjaan yang disetujui internal. Klien yang mempunyai akses proyek melihat lembar terbit tanpa data biaya internal. Chrome 390 dan 1440 px, 96 tes MySQL dengan 1.581 asersi, serta restore sintetis lulus. Tanggapan langsung klien, lampiran privat khusus VO, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: perbandingan VO dan bukti persetujuan
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat a193b274c3d4c475b5001663ee5eda1360e125d0 menampilkan perbandingan perubahan pekerjaan dari baseline kontrak asal serta menyediakan formulir bukti persetujuan internal per VO. Chrome lulus pada 390 dan 1440 px. MySQL disposable lulus 96 tes dan 1.552 asersi, termasuk penerapan baseline satu kali. Publikasi dan keputusan langsung klien di Portal, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
