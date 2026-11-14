@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-14 - Arkarupa: tinjau pembagian termin kontrak
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 778f2b6327e5df82c8ea46e9074e913615cd17e7 menampilkan persentase dan nominal termin di Keuangan dengan pintasan keyboard ke sertifikasi. Kontrak sintetis Rp100 juta menghasilkan rencana Rp30 juta, Rp50 juta, dan Rp20 juta. Chrome 390 dan 1440 px serta 106 tes MySQL dengan 1.866 asersi lulus. Jadwal bertanggal, pengaitan milestone, reschedule, keluaran Portal, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: konfirmasi kaitan katalog dari PDF nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 2771792350ad3287e5cb3ed3ba5cfd6767850618 menampilkan kandidat katalog ketika nama atau kode material dan satuannya cocok. Operator memilih kaitan saat memasukkan baris ke draf dan dapat melepasnya. Chrome 390 dan 1440 px serta 105 tes MySQL dengan 1.855 asersi lulus. OCR foto dan hasil pindai, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
