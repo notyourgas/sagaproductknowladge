@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-15 - Arkarupa: tinjauan hasil pembacaan PDF nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 5ba8ad6f1a77772e79847816f01f2131bbc58c43 memperjelas status baris dan perbandingan subtotal dari PDF berteks. Saat pembacaan gagal, pengguna dapat melanjutkan pengisian draf dengan keyboard. Chrome 390 dan 1440 px, akses lampiran privat, regresi MySQL disposable dan restore 16 migrasi disposable lulus. DEMO_PUBLIC. Change Log tersedia di https://43901b6e.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Dukungan OCR gambar dan retensi, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: pencarian nomor tagihan Portal
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 1645b77f94d9ec7e474b439ea4f432c1a4ffcd7f memisahkan nilai tagihan, pembayaran dan penyesuaian, serta mendukung pencarian nomor tagihan yang sudah dibagikan. Pencarian mempertahankan konteks laporan, hak akses PDF dan saldo. Chrome 390 dan 1440 px serta regresi MySQL disposable lulus. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://fd5098eb.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Keputusan aturan tanggal, milestone dan penjadwalan ulang, staging, UAT serta PILOT_READY masih terbuka.
