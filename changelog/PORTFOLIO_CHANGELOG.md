@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-14 - Arkarupa: jalur kritis dan cadangan hari kerja
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 1dc97e7cd8746fc2ddf2a5aee6cbda262bd8c43a menandai aktivitas bercadangan nol pada Gantt. Cadangan memakai jadwal tersimpan, kalender dan dependensi finish-to-start pada versi terpilih. Filter diuji dengan keyboard di Chrome 390 px. MySQL disposable lulus 95 tes dan 1.473 asersi. Proyeksi, laporan berkala, staging dan UAT masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: peringatan Gantt pada baseline aktif
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 92d02f373555f2a7787854248ffcfbe3de4db5fa menandai pekerjaan di bawah target atau lewat tenggat dari volume BUP terverifikasi pada baseline aktif. Operator dapat menyaring aktivitas yang perlu perhatian. Chrome 390 px dan MySQL disposable lulus 94 tes dan 1.467 asersi. Milestone tanpa volume masih ditinjau manual. Jalur kritis, staging dan UAT masih terbuka. Demo Pages v1.1.
