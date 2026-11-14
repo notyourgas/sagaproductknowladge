@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-14 - Arkarupa: lampiran privat draf nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 6dfa59d2ddd3a6582dd5900f3f95f79224a98fb0 menambahkan unggah, riwayat dan unduh foto/PDF privat pada draf nota. Izin proyek, tipe isi, batas ukuran, deduplikasi dan integritas berkas diverifikasi. Chrome 390 dan 1440 px, 99 tes MySQL dengan 1.735 asersi, dan restore empat lampiran sintetis lulus. Mapping nota, penerimaan, pembayaran, retensi, OCR, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: draf nota pembelian
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat a58a9a3b6967cdd657b7dba38ed58a59cdb1dd19 menambahkan form dan riwayat draf nota multibaris dengan supplier, total otomatis, revisi dan audit. Simpan draf tidak memicu penerimaan, pemakaian, biaya, tagihan atau kas. Chrome 390 dan 1440 px, 98 tes MySQL dengan 1.708 asersi, restore dua draf sintetis dan latihan migrasi lulus. Lampiran serta hubungan nota ke penerimaan dan Finance masih terbuka. Demo Pages v1.1 dan kandidat Laravel lokal. Staging, UAT dan PILOT_READY terbuka.
