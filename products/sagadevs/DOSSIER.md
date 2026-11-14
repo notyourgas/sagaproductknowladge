@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-14 - Arkarupa: tujuan biaya per baris nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat f3d3db8e07b3da0f6b36e8db22d66b09752a6dc5 menambahkan pencarian item RAP aktif atau biaya umum proyek per baris nota. Draf menyimpan referensi dan versi RAP. Pilihan lama tetap terlihat dan perlu diperiksa bila versi aktif berganti. Chrome 390 dan 1440 px, 100 tes MySQL dengan 1.756 asersi dan restore dua draf sintetis lulus. Penerimaan, stok, biaya aktual dan pembayaran memakai alur terpisah. Integrasi nota, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: lampiran privat draf nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 6dfa59d2ddd3a6582dd5900f3f95f79224a98fb0 menambahkan unggah, riwayat dan unduh foto/PDF privat pada draf nota. Izin proyek, tipe isi, batas ukuran, deduplikasi dan integritas berkas diverifikasi. Chrome 390 dan 1440 px, 99 tes MySQL dengan 1.735 asersi, dan restore empat lampiran sintetis lulus. Mapping nota, penerimaan, pembayaran, retensi, OCR, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
