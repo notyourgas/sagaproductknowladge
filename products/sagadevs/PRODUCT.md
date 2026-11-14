@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: daftarkan mandor dan divisi per proyek
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 190e708adece8becfedda9a6f8e061c47a99eeeb menampilkan daftar mandor dan divisi di Keuangan. Finance dapat menambah beberapa divisi untuk satu mandor dengan validasi duplikat dan audit per proyek. Chrome 390 dan 1440 px, 109 tes MySQL dengan 1.940 asersi, serta restore sintetis lulus. Pengaitan sumber upah dan BUP, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-15 - Arkarupa: bagikan rencana termin di Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat edcdc91f28fc8facf805bae7e28e5ec384532ffb menampilkan rencana termin saat PM memilihnya pada laporan. Persentase dan nilai kontrak awal disimpan saat penerbitan, sedangkan akses mengikuti pilihan pada laporan terbaru. Chrome 390 dan 1440 px serta 108 tes MySQL dengan 1.916 asersi lulus. Jadwal bertanggal, pengaitan milestone, penjadwalan ulang, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
