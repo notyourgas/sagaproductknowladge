@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: Gantt jadwal dan baseline aktif
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 6e72d5079eca82fbe2ec46616a400e9cc190efc7 menampilkan Gantt versi jadwal terpilih dengan skala mingguan/bulanan, durasi, bobot kontrak, milestone dan dependensi. Operator dapat kembali ke baseline aktif sambil mempertahankan skala. Chrome 390 px serta MySQL disposable lulus 93 tes dan 1.458 asersi. Jalur kritis, staging dan UAT masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: Kurva S internal dan navigasi periode
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 61749d6bf48cd1ba74c87d28c385bf1cc92ceafd menampilkan Kurva S internal dari periode dan angka yang sama dengan tabel. Operator dapat berpindah rentang lama dan baru dengan keyboard sambil mempertahankan cut-off utama. Chrome 390 px dan MySQL disposable lulus 92 tes dan 1.446 asersi. Grafik Portal, Gantt, staging dan UAT masih terbuka. Demo Pages v1.1.
