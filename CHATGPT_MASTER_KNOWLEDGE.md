@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-14 - Arkarupa: Document Center Portal Klien
+
+CONFIRMED / LOCAL_VALIDATED untuk halaman Document Center. Kandidat a097ba65ca715c49520c5243cd8733b789401f2c membuka enam kategori dan memuat indeks laporan yang telah diterbitkan untuk proyek yang diizinkan. Chrome 390/1440 px membuktikan navigasi keyboard, laporan historis dan isolasi proyek. MySQL disposable lulus 95 tes dan 1.507 asersi. Publikasi berkas, preview, unduh, versi dokumen, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: pengukuran dan draf BUP di HP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 7180f5ce1ea75c6431097d0e2973c1f8befc213d memulihkan fokus pemilih item, memperbarui hasil ukuran saat pindah kolom, dan menampilkan pintasan ke draf BUP terakhir milik pengguna. Chrome 390 px membuktikan pengukuran 2,4 m³, simpan, dan pemulihan dimensi serta catatan. Progres terverifikasi tetap 25% selama BUP masih draf. Uji perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
