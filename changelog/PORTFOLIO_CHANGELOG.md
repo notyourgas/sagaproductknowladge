@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-14 - Arkarupa: Kurva S internal dan navigasi periode
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 61749d6bf48cd1ba74c87d28c385bf1cc92ceafd menampilkan Kurva S internal dari periode dan angka yang sama dengan tabel. Operator dapat berpindah rentang lama dan baru dengan keyboard sambil mempertahankan cut-off utama. Chrome 390 px dan MySQL disposable lulus 92 tes dan 1.446 asersi. Grafik Portal, Gantt, staging dan UAT masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: progres kumulatif mingguan dan bulanan
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 67cb9edcffde293d4b510df76eaf92e348009687 menampilkan rekap 12 periode mingguan atau bulanan dengan angka kumulatif, deviasi dan versi baseline. Aktual berasal dari BUP terverifikasi dan ditampilkan sampai tanggal berlaku. Chrome 390 px lulus perpindahan periode dengan keyboard. MySQL disposable lulus 92 tes dengan 1.439 asersi. Grafik Kurva S, staging dan UAT masih terbuka. Demo Pages v1.1.
