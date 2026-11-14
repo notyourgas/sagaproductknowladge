@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-15 - Arkarupa: pencarian pekerja di absensi
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel c03a00410d7e62789104a6cab8e7917522529e4b menonjolkan status absensi aktif dan menambahkan pencarian nama atau kode pekerja dalam proyek berizin serta tanggal yang dipilih. Chrome 390 dan 1440 px dan regresi MySQL disposable lulus. Filter mempertahankan jumlah harian dan rekap lintas modul. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://3e28392d.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Aturan konversi OH dan kaitan upah, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: rekap volume menurut lokasi
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 4f7aea63f81bfbe64df1758001a767596f7815cd menonjolkan volume neto dan koreksi pada rekap internal. PM dapat menyaring berdasarkan lokasi pada cut-off. Koreksi memakai pengelompokan sumber. Chrome 390 dan 1440 px dan regresi MySQL disposable lulus. Fixture dua lokasi menjaga neto 9 m³ dan rincian tim tetap terbatas pada akses internal. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://d861cc21.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Definisi OH, staging, UAT serta PILOT_READY masih terbuka.
