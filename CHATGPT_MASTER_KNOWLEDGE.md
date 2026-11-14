@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-15 - Arkarupa: rekap volume terverifikasi per tim
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel e526c206bf542ed42c1a3656e831caacb0a30811 menampilkan volume BUP awal, koreksi dan neto per tim, pekerjaan, lokasi dan satuan pada cut-off. Hanya peran internal berizin yang dapat membuka rekap. Chrome 390/1440 px dan 113 tes MySQL dengan 2.038 asersi lulus. Restore VPS membuktikan 61 tabel bisnis, 10 berkas dan 16 migrasi pada salinan disposable. DEMO_PUBLIC. Pages v1.2 menampilkan Change Log pada https://160a49b9.arkarupa-prototype.pages.dev/#/changes. Laravel publik masih b8ab127 karena promosi memerlukan akun demo sintetis yang berwenang. OH, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: koreksi status absensi dengan jejak audit
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 1ba76f59a227058b9e09d7b6c93e9c30a63a0add memberi Owner dan PM koreksi status absensi dengan alasan, penanda revisi dan audit sebelum–sesudah. Validasi menolak konflik revisi dan menjaga identitas pekerja, tanggal dan penugasan. Chrome 390/1440 px dan 113 tes MySQL dengan 2.029 asersi lulus. Restore VPS mencocokkan 61 tabel bisnis, 10 berkas dan 16 migrasi pada salinan disposable. Demo Laravel masih b8ab127 karena verifikasi rilis memerlukan login akun demo sintetis yang berwenang. DEMO_PUBLIC. Entri koreksi tersedia pada Pages v1.2 di https://arkarupa-prototype.pages.dev/#/changes. Definisi OH, staging privat, UAT dan PILOT_READY masih terbuka.
