@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: validasi ukuran BUP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 238d2fdc7b5077b82358deb766b7cc7107d7cae7 membedakan dimensi laporan yang belum lengkap, ukuran yang perlu diperiksa, dan hasil sesuai satuan baseline. Pelaksana melihat format angka sebelum simpan dan dapat mengoreksi masukan tanpa kehilangan dimensi lain. Chrome 390 dan 1440 px dan regresi MySQL disposable lulus. Koreksi terverifikasi dan pengulangan tidak menggandakan volume. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://e637eb73.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Validasi ponsel fisik, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: riwayat draf nota pembelian
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 417a579988d8c87b25205aa3b22461013cea5cb5 menyajikan supplier, tanggal, revisi dan total pada kartu draf nota. Tim pengadaan berizin dapat mencari nomor nota atau supplier dan melanjutkan isian editor. Chrome 390 dan 1440 px serta 114 tes MySQL disposable lulus. Regresi penerimaan, stok dan Finance lulus. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://c2a5eed9.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Aturan diskon, pajak, dan pembayaran, staging, UAT serta PILOT_READY masih terbuka, sesuai jadwal pilot Andreas.
