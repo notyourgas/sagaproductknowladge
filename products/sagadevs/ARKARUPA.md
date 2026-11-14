@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: lampiran privat pada VO terbit
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 593be3889a04c47d3d8edd061384d85233146a78 menautkan PDF atau foto proyek yang dipilih Owner saat publikasi. Portal memeriksa keanggotaan, kaitan lampiran dengan VO dan checksum berkas. Klien sintetis membuka pratinjau dan unduh di Chrome 390 dan 1440 px. Uji browser atas formulir Owner, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: tanggapan VO dari Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat cca034e006a9b8a1f7ce395960f738bdc745e601 memungkinkan anggota proyek memberi tanggapan Setuju, Tolak atau Minta klarifikasi pada VO terbit. Riwayat mencatat aktor dan waktu. Verifikasi Owner diperlukan sebelum perubahan diterapkan ke baseline. Chrome 390 dan 1440 px serta 97 tes MySQL dengan 1.613 asersi lulus. Lampiran privat VO, staging, UAT dan PILOT_READY masih terbuka. Pages publik v1.1.
