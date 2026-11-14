@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-14 - Arkarupa: pencocokan barang penerimaan pada nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 8843434f150bc0a66dc4473d5a04839e11eb3016 menyimpan pencocokan tiap baris nota dengan barang baik dari penerimaan tertaut. Kuantitas neto mengikuti retur. Validasi menjaga satuan, kuantitas dan pemakaian tunggal. Chrome 390 dan 1440 px, 102 tes MySQL dengan 1.803 asersi, dan pemulihan dua draf sintetis lulus. Penerbitan tagihan, pembayaran, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: tautan nota ke penerimaan
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 3b4e7417ef8e730a1aa610d84cd1e34d83dd079b mengaitkan satu draf nota dengan beberapa penerimaan proyek dan supplier yang sama, dengan audit serta pintasan ke dokumen sumber. Biaya dan stok tetap mengikuti penerimaan yang sudah tercatat. Chrome 390 dan 1440 px, 101 tes MySQL dengan 1.777 asersi dan restore dua tautan sintetis lulus. Pencocokan baris, tagihan, pembayaran, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
