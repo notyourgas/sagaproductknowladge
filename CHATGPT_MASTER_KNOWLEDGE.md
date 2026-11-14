@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-14 - Arkarupa: Kurva S di Portal Klien
+
+CONFIRMED / LOCAL_VALIDATED. Pada kandidat 5a480602992876e8400ab4f2b40648e6ef3be50f, Portal Klien menampilkan Kurva S rencana dan aktual dengan tabel yang bisa dibuka melalui keyboard. Laporan baru menyimpan seri bersama baseline dan cut-off saat terbit. Laporan arsip tanpa seri tetap bisa dibuka. Chrome 390 dan 1440 px, 97 tes MySQL dengan 1.679 asersi, serta restore snapshot sintetis lulus. Demo Pages aktif v1.1. Pengesahan basis RAB dan cakupan kas, staging, UAT, dan PILOT_READY masih terbuka.
+
 ## 2026-11-14 - Arkarupa: ringkasan nilai proyek di Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat d8a6f636899b3ed178f655747417d6b23c6a1173 menampilkan nilai baseline, pekerjaan terverifikasi, sisa pekerjaan dan kas pembayaran teralokasi. Snapshot pekerjaan mengikuti baseline laporan yang diterbitkan. Chrome 390 dan 1440 px serta 97 tes MySQL dengan 1.663 asersi lulus. Basis bisnis kas dan RAB, Kurva S Portal, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
