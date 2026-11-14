@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-14 - Arkarupa: balasan klarifikasi VO
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 23d096ef4dece9048a6c6bc00c9a86e1ec4391e9 memberi Owner formulir balasan klarifikasi dari Kontrak. Klien melihat status, balasan, dan nomor pertanyaan pada Portal. Chrome 390 dan 1440 px, MySQL 97 tes dengan 1.656 asersi, dan uji migrasi disposable lulus. Uji browser Owner, staging, UAT, serta PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: lampiran privat pada VO terbit
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 593be3889a04c47d3d8edd061384d85233146a78 menautkan PDF atau foto proyek yang dipilih Owner saat publikasi. Portal memeriksa keanggotaan, kaitan lampiran dengan VO dan checksum berkas. Klien sintetis membuka pratinjau dan unduh di Chrome 390 dan 1440 px. Uji browser atas formulir Owner, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
