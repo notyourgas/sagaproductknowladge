@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-15 - Arkarupa: rekap volume menurut lokasi
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 4f7aea63f81bfbe64df1758001a767596f7815cd menonjolkan volume neto dan koreksi pada rekap internal. PM dapat menyaring berdasarkan lokasi pada cut-off. Koreksi memakai pengelompokan sumber. Chrome 390 dan 1440 px dan regresi MySQL disposable lulus. Fixture dua lokasi menjaga neto 9 m³ dan rincian tim tetap terbatas pada akses internal. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://d861cc21.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Definisi OH, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: saldo dan filter upah
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b67004c66a63368ac35eed21f9837cac9e93f186 menampilkan nilai kewajiban, sisa upah dan status per divisi serta filter untuk Finance. Filter menggunakan saldo dokumen Finance yang sudah disetujui. Chrome 390 dan 1440 px dan regresi MySQL disposable lulus. Pembayaran dua divisi dan biaya asal tetap cocok pada fixture. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://b9fe0080.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Kesepakatan bukti penerima, staging, UAT serta PILOT_READY masih terbuka.
