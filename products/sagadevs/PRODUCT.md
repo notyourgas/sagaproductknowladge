@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: riwayat draf nota pembelian
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 417a579988d8c87b25205aa3b22461013cea5cb5 menyajikan supplier, tanggal, revisi dan total pada kartu draf nota. Tim pengadaan berizin dapat mencari nomor nota atau supplier dan melanjutkan isian editor. Chrome 390 dan 1440 px serta 114 tes MySQL disposable lulus. Regresi penerimaan, stok dan Finance lulus. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://c2a5eed9.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Aturan diskon, pajak, dan pembayaran, staging, UAT serta PILOT_READY masih terbuka, sesuai jadwal pilot Andreas.
+
 ## 2026-11-15 - Arkarupa: riwayat laporan Portal
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 03cbe330b916ae27d93b3f161a9e0bfce7240d86 membedakan tanggal cut-off dan waktu terbit di riwayat Portal. Klien bisa mencari judul, menghapus pencarian dan langsung membuka laporan dari hasil. Pencarian hanya menyaring daftar proyek yang sedang dibuka. Chrome 390/1440 px, uji MySQL terfokus dan restore VPS dengan 16 migrasi disposable lulus. DEMO_PUBLIC. Change Log tersedia di https://b09dbc18.arkarupa-prototype.pages.dev/#/changes. Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Basis nilai pekerjaan, cakupan kas, staging, UAT dan PILOT_READY tetap terbuka.
