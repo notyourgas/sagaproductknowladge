@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-14 - Arkarupa: navigasi Portal dan pemulihan proyek kosong
+
+CONFIRMED / LOCAL_VALIDATED. Portal menunjukkan Aktual dan Target dalam kartu dan memberi tautan dari laporan historis ke laporan terbaru. Paginasi menjaga laporan yang dipilih. Kandidat 59f34389c4f85b729cbe4aff1417f262ad525d19 lulus 87 tes dan 1.294 asersi pada MySQL disposable. Pemulihan proyek sintetis mulai kosong mencocokkan 68 tabel dan lima berkas privat dengan 45 asersi baca ulang. Staging dan UAT masih terbuka.
+
 ## 2026-11-14 - Arkarupa: rekap stok dan pemulihan kandidat
 
 CONFIRMED / LOCAL_VALIDATED. Rekap stok menampilkan Sisa di samping Material dan menyediakan kembali ke stok hari ini. Chrome 390 px lulus cek posisi kolom dan keyboard. Kandidat menolak pengajuan opname lama setelah cut-off lebih baru disetujui. MySQL disposable lulus 87 tes dan 1.285 asersi pada kandidat 6bf4b517e8a776c836cb5886de2619c3be90c907. Pemulihan sintetis proyek terisi mencocokkan 68 tabel dan tiga lampiran. Staging dan UAT masih terbuka.
