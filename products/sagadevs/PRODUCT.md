@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-14 - Arkarupa: tautan nota ke penerimaan
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 3b4e7417ef8e730a1aa610d84cd1e34d83dd079b mengaitkan satu draf nota dengan beberapa penerimaan proyek dan supplier yang sama, dengan audit serta pintasan ke dokumen sumber. Biaya dan stok tetap mengikuti penerimaan yang sudah tercatat. Chrome 390 dan 1440 px, 101 tes MySQL dengan 1.777 asersi dan restore dua tautan sintetis lulus. Pencocokan baris, tagihan, pembayaran, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: tujuan biaya per baris nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat f3d3db8e07b3da0f6b36e8db22d66b09752a6dc5 menambahkan pencarian item RAP aktif atau biaya umum proyek per baris nota. Draf menyimpan referensi dan versi RAP. Pilihan lama tetap terlihat dan perlu diperiksa bila versi aktif berganti. Chrome 390 dan 1440 px, 100 tes MySQL dengan 1.756 asersi dan restore dua draf sintetis lulus. Penerimaan, stok, biaya aktual dan pembayaran memakai alur terpisah. Integrasi nota, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
