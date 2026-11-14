@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: peringatan Gantt pada baseline aktif
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 92d02f373555f2a7787854248ffcfbe3de4db5fa menandai pekerjaan di bawah target atau lewat tenggat dari volume BUP terverifikasi pada baseline aktif. Operator dapat menyaring aktivitas yang perlu perhatian. Chrome 390 px dan MySQL disposable lulus 94 tes dan 1.467 asersi. Milestone tanpa volume masih ditinjau manual. Jalur kritis, staging dan UAT masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: Gantt jadwal dan baseline aktif
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 6e72d5079eca82fbe2ec46616a400e9cc190efc7 menampilkan Gantt versi jadwal terpilih dengan skala mingguan/bulanan, durasi, bobot kontrak, milestone dan dependensi. Operator dapat kembali ke baseline aktif sambil mempertahankan skala. Chrome 390 px serta MySQL disposable lulus 93 tes dan 1.458 asersi. Jalur kritis, staging dan UAT masih terbuka. Demo Pages v1.1.
