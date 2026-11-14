@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-14 - Arkarupa: dashboard dan navigasi kandidat demo
+
+CONFIRMED / LOCAL_VALIDATED. Prototype sintetis v1.2 kandidat f6e6b863b9bb48196c7b8b4dbba20969ef6af50c memiliki empat kartu portofolio, panel Perlu perhatian dan dock navigasi HP. Artefak diuji di Chrome pada 390 dan 1440 px serta tanpa overflow pada 320 px. Alur dua proyek, 13 modul dan penyimpanan browser lulus regresi. Pages publik masih v1.1. Staging Laravel, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-14 - Arkarupa: publikasi perubahan pekerjaan di Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 07dd76d00cc5f3bb9eec59a4056bae0d338a6673 memberi Owner konfirmasi publikasi perubahan pekerjaan yang disetujui internal. Klien yang mempunyai akses proyek melihat lembar terbit tanpa data biaya internal. Chrome 390 dan 1440 px, 96 tes MySQL dengan 1.581 asersi, serta restore sintetis lulus. Tanggapan langsung klien, lampiran privat khusus VO, staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
