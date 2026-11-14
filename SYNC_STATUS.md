@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-14 - Arkarupa: kartu dashboard responsif dan pintasan status proyek
+
+CONFIRMED / LOCAL_VALIDATED untuk kartu dan pintasan. Kandidat a58e5248f810b93aaccf8a6542a64958e494ff5b menata KPI portofolio dalam dua kolom di HP dan empat di desktop, menonjolkan piutang bagi peran berizin, serta menyediakan pintasan keyboard ke status proyek. Chrome menguji 320, 390, 900 dan 1440 px. MySQL disposable lulus 95 tes dan 1.477 asersi. Pemulihan fokus dialog sumber masih terbuka. Demo Pages v1.1. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-14 - Arkarupa: jalur kritis dan cadangan hari kerja
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 1dc97e7cd8746fc2ddf2a5aee6cbda262bd8c43a menandai aktivitas bercadangan nol pada Gantt. Cadangan memakai jadwal tersimpan, kalender dan dependensi finish-to-start pada versi terpilih. Filter diuji dengan keyboard di Chrome 390 px. MySQL disposable lulus 95 tes dan 1.473 asersi. Proyeksi, laporan berkala, staging dan UAT masih terbuka. Demo Pages v1.1.
