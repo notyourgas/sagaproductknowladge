@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Arkarupa: saldo dan filter upah
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b67004c66a63368ac35eed21f9837cac9e93f186 menampilkan nilai kewajiban, sisa upah dan status per divisi serta filter untuk Finance. Filter menggunakan saldo dokumen Finance yang sudah disetujui. Chrome 390 dan 1440 px dan regresi MySQL disposable lulus. Pembayaran dua divisi dan biaya asal tetap cocok pada fixture. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://b9fe0080.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Kesepakatan bukti penerima, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: validasi ukuran BUP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 238d2fdc7b5077b82358deb766b7cc7107d7cae7 membedakan dimensi laporan yang belum lengkap, ukuran yang perlu diperiksa, dan hasil sesuai satuan baseline. Pelaksana melihat format angka sebelum simpan dan dapat mengoreksi masukan tanpa kehilangan dimensi lain. Chrome 390 dan 1440 px dan regresi MySQL disposable lulus. Koreksi terverifikasi dan pengulangan tidak menggandakan volume. Backup terenkripsi dan restore lulus dengan 16 migrasi disposable. DEMO_PUBLIC. Change Log tersedia di https://e637eb73.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Validasi ponsel fisik, staging, UAT serta PILOT_READY masih terbuka.
