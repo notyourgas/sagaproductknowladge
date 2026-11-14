@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-14 - Arkarupa: Change Log demo publik v1.1
+
+CONFIRMED / DEMO_PUBLIC. [Change Log publik](https://arkarupa-prototype.pages.dev/#/changes) menampilkan 20 riwayat pengembangan kandidat pilot dengan tanggal, sebelum–sesudah dan hasil uji sintetis. Tiga catatan rilis awal tetap tersedia. Kedua proyek demo menyimpan percobaan di browser. Deployment Pages f13d70ca lulus uji Chrome desktop dan HP serta verifikasi 10 aset publik. Source lokal d0abcc5aaa89d647ac9bfdc27128f1f0150bf4b3. Staging, UAT dan pemilihan proyek nyata tetap terbuka.
+
 ## 2026-11-14 - Arkarupa: koreksi pemakaian stok dan riwayat pilot
 
 CONFIRMED / LOCAL_VALIDATED. Owner atau PM dapat membalik pemakaian stok dengan alasan dan jejak audit. Pada fixture, saldo 57 kembali ke 60 dengan satu efek saat retry. Biaya aktual, kas dan progres fisik tetap. Tab Change Log kandidat memuat 19 entri historis dan pembaruan ini. MySQL disposable lulus 82 tes dan 1.123 asersi. Uji akhir terfokus lulus 3 tes dan 35 asersi pada commit kandidat a4f96a6379913db3c202e1fed485e391acb4ccdb. Staging dan UAT masih terbuka. Proyek nyata dan saldo pembukanya menunggu penetapan.
