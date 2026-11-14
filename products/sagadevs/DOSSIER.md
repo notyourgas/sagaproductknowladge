@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-14 - Arkarupa: draf nota pembelian
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat a58a9a3b6967cdd657b7dba38ed58a59cdb1dd19 menambahkan form dan riwayat draf nota multibaris dengan supplier, total otomatis, revisi dan audit. Simpan draf tidak memicu penerimaan, pemakaian, biaya, tagihan atau kas. Chrome 390 dan 1440 px, 98 tes MySQL dengan 1.708 asersi, restore dua draf sintetis dan latihan migrasi lulus. Lampiran serta hubungan nota ke penerimaan dan Finance masih terbuka. Demo Pages v1.1 dan kandidat Laravel lokal. Staging, UAT dan PILOT_READY terbuka.
+
 ## 2026-11-14 - Arkarupa: Kurva S di Portal Klien
 
 CONFIRMED / LOCAL_VALIDATED. Pada kandidat 5a480602992876e8400ab4f2b40648e6ef3be50f, Portal Klien menampilkan Kurva S rencana dan aktual dengan tabel yang bisa dibuka melalui keyboard. Laporan baru menyimpan seri bersama baseline dan cut-off saat terbit. Laporan arsip tanpa seri tetap bisa dibuka. Chrome 390 dan 1440 px, 97 tes MySQL dengan 1.679 asersi, serta restore snapshot sintetis lulus. Demo Pages aktif v1.1. Pengesahan basis RAB dan cakupan kas, staging, UAT, dan PILOT_READY masih terbuka.
