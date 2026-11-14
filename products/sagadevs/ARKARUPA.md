@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-14 - Arkarupa: ringkasan lampiran dan validasi balasan Owner
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat 149ce2759c7138e2a020bd0e71af88bd0a6b4754 menampilkan jumlah dan nama lampiran terpilih sebelum VO terbit dan mengaitkan kesalahan balasan dengan kolom VO. Chrome membuktikan publikasi dan balasan dari sesi Owner sintetis. Klien melihat balasan dan hanya lampiran terpilih pada 390 dan 1440 px. Regresi Commercial lulus 10 tes dan 234 asersi. Staging, UAT dan PILOT_READY masih terbuka. Demo Pages v1.1.
+
 ## 2026-11-14 - Arkarupa: balasan klarifikasi VO
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat 23d096ef4dece9048a6c6bc00c9a86e1ec4391e9 memberi Owner formulir balasan klarifikasi dari Kontrak. Klien melihat status, balasan, dan nomor pertanyaan pada Portal. Chrome 390 dan 1440 px, MySQL 97 tes dengan 1.656 asersi, dan uji migrasi disposable lulus. Uji browser Owner, staging, UAT, serta PILOT_READY masih terbuka. Demo Pages v1.1.
