@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: filter versi Document Center
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 01c8302c1b037c9e8543846cb497d5d376c3a095 menampilkan kartu aktif dan arsip yang mudah dibedakan dan filter untuk membaca versi aktif atau terdahulu. Laporan proyek tetap tersedia. Chrome 390 dan 1440 px membuktikan pratinjau PDF aktif dan unduh PDF lama dengan filter. Uji MySQL memeriksa isolasi proyek dan pencabutan akses. Restore VPS lulus untuk 16 migrasi disposable. DEMO_PUBLIC. Change Log Pages v1.2 tersedia di https://11ce5a21.arkarupa-prototype.pages.dev/#/changes. Laravel aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Delegasi penerbit, hak kategori, penarikan dokumen, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: ekspor progres per periode
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 6a073aeb637b753e983ffe4df404bf65e3ceadd7 menandai selisih negatif di tabel progres dan menyediakan CSV internal mingguan atau bulanan dari halaman yang sedang dibaca. Ekspor memuat versi baseline dan mempertahankan aktual mendatang kosong. Chrome 390/1440 px dan empat tes terfokus MySQL lulus, termasuk kesesuaian isi CSV, perpindahan riwayat dan pembatasan peran. DEMO_PUBLIC. Change Log Pages v1.2 tayang di https://5a56af81.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi masih menunggu akun demo sintetis berwenang. Proyeksi penyelesaian, format laporan berkala, staging, UAT dan PILOT_READY masih terbuka.
