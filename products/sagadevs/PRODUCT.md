@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Lencana koreksi dan fokus reset absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel a03f93ec2dea89c65ceb1abe8e6243ab07b9e9e4 menonjolkan lencana Dikoreksi dan mengembalikan fokus ke Semua setelah hasil filter kosong. Tanggal dan pencarian bertahan pada fixture Chrome. Fixture MySQL merekonsiliasi Izin revisi 2 ke Struktur dan Hadir ke Finishing serta membuktikan Finance bisa menyaring dan membaca tanpa izin koreksi. Regresi lulus 116 tes dan 2.343 asersi. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36 pemeriksaan. Keputusan OH dan upah, uji perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada a03f93ec2dea89c65ceb1abe8e6243ab07b9e9e4. Rute Absensi, filter keyboard, stylesheet dan tata letak terverifikasi setelah login Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Aksi lampiran dan pesan validasi nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 20d608a1f488e613cff3773f569bb95537595019 mengelompokkan aksi Baca dan Unduh pada PDF serta menautkan pesan validasi ke pemilih berkas. Uji fixture Chrome dan Livewire membuktikan penolakan unggahan mempertahankan PDF asli, draf dan izin. Demo publik memuat panel dan aset pada 390 serta 1.440 px. Akun PM sintetis tidak memiliki draf untuk pemeriksaan unggah. Regresi MySQL lulus 116 tes dan 2.343 asersi. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36 pemeriksaan. OCR foto, perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 20d608a1f488e613cff3773f569bb95537595019. Panel Lampiran privat, stylesheet dan reflow terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
