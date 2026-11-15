@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Status progres dan fokus ringkasan angka proyek
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 969dce263880c95e99318dbbe99f70611693289d pada UI-03.2, UI-03.3 dan UI-09.2 memberi label Belum tersedia pada target dan aktual yang kosong di Workspace. Tautan Ringkasan angka & sumber memfokuskan Posisi proyek di Dashboard. Proyek dan periode tetap dan Back memulihkan Workspace. Browser pada 390/1440 px serta Pelaksana pada 320 px lulus. Regresi terfokus Workspace, sumber progres, PDF privat, batas peran dan pemulihan disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/. Demo Pages c6baa67a memerlukan autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Periode hasil dan pintasan filter Dashboard
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 71882367cb9c9c7845bf69b294bf1ad61bcf01ef pada UI-01.2, UI-01.4 dan UI-09.2 menampilkan periode efektif Dashboard dan mengembalikan fokus dari status proyek ke filter. Proyek dan tanggal dipertahankan. Ketika rentang tidak valid, hasil menjelaskan penggunaan bulan ini dan input tetap dapat dikoreksi. Uji Chrome mencakup batas Pelaksana, rekonsiliasi saldo dan arus periode, serta tampilan publik 390/1440 px. Regresi terfokus Dashboard serta pemulihan disposable lulus. Holsite 26/36, UAT fisik dan staging privat terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
