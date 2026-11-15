@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: metadata dan kategori berkas
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 579b012dfd6f0bb95a6f4077aae8776d060dd0a8 mengelompokkan kode, versi dan waktu terbit per dokumen klien. Filter kategori berpadu dengan pencarian dan status versi di dalam proyek. Laporan tetap tersedia. Chrome 390/1.440 px, pengunduhan PDF arsip, uji MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://887868ff.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Delegasi penerbit, izin kategori dan prosedur penarikan menunggu keputusan Owner dan PM sebelum staging/UAT. PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: status pencocokan dan sumber stok
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel a630239da69c9036ec0ea6e45c24f005a5fc1566 menampilkan status kecocokan jumlah barang per baris nota, menyaring baris belum lengkap, dan mengembalikan filter saat berpindah nota. Chrome 390 dan 1.440 px, 115 tes MySQL disposable serta restore 16 migrasi lulus. DEMO_PUBLIC. Di https://a96fc812.arkarupa-prototype.pages.dev/#/renovasi-demo/belanja, tombol Lihat penerimaan menyaring riwayat stok, memusatkan fokus pada referensi sumber, dan menjaga isian draf. Change Log tersedia di https://a96fc812.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Pengadaan dan Finance masih menyepakati pajak, diskon, serta metode bayar untuk UAT nota. Staging, UAT dan PILOT_READY masih terbuka.
