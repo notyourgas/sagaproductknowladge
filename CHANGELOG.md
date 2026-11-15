@@ -6,6 +6,10 @@
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-15 - Arkarupa: Aksi absensi dan bantuan cut-off tim
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 74a44d00a0c33e019a1b0b8e31dfd34329a382f7 menonjolkan kontrol Catat kehadiran dan menghubungkan pesan cut-off yang ditolak dengan kolom tanggal di Rekap tim. Uji sintetis meliputi keyboard, batas akses peran, dan rekonsiliasi absensi antardivisi. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-09.2 parsial. Demo publik Laravel aktif pada 74a44d00a0c33e019a1b0b8e31dfd34329a382f7. Pesan cut-off dan pemulihan tanggal Rekap tim terverifikasi pada Chrome 390 dan 1.440 px. Status penugasan absensi mengikuti fixture demo. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Aksi PDF dan fokus Pustaka laporan
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel dafab91ff2abb178049682bffa971b1cfbc618a4 membedakan nomor dokumen dari aksi Unduh PDF serta memfokuskan Progres proyek ketika pilihan proyek diterapkan. Uji sintetis meliputi fokus, pembatasan peran, integritas PDF PO, dan rekonsiliasi stok. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-09.2 parsial. Demo publik Laravel aktif pada dafab91ff2abb178049682bffa971b1cfbc618a4. Fokus hasil dan status kosong Pustaka terverifikasi pada Chrome 390 dan 1.440 px. Unduh PDF PO diverifikasi pada fixture lokal. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
