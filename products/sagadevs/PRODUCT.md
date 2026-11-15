@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Jumlah review dan pintasan BUP menunggu
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 1886177a4f7919c519374b9010998c41761a6a91 menampilkan jumlah antrean dalam lencana kontras di Dashboard Utama. Enter pada tautan Harian membuka BUP dengan filter Menunggu pada proyek tujuan. Pada fixture, jumlah antrean cocok dengan laporan diajukan dan rekap terverifikasi mengecualikan volume yang masih menunggu. PM dapat memverifikasi sesuai izin proyek, sementara Purchasing tidak mendapat tindakan review. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 1886177a4f7919c519374b9010998c41761a6a91. Lencana antrean dan pintasan ke BUP Menunggu lulus pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Pemisah PDF dan pintasan kategori Pustaka
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel fd7c297c35de4f0f4a75baef685254e02db29f80 memisahkan baris PDF Pustaka dengan bingkai dan menambahkan pintasan ke tiap kategori yang diizinkan. Enter memfokuskan judul kategori, dan Tab mencapai unduhan pertama dengan proyek yang sama. Nomor, proyek dan checksum PDF Finance cocok pada fixture. Purchasing mendapat kategori pengadaan sesuai izin. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada fd7c297c35de4f0f4a75baef685254e02db29f80. Baris PDF dan navigasi kategori lulus pada Chrome 390 dan 1.440 px. Unduhan PDF demo lulus pada 390 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
