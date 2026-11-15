@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: Cut-off dan pemulihan filter Dashboard
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 9e4ee014320461f3516f88bbe52dc11bf7888183 memperjelas cut-off pada tabel progres Dashboard dan mengaitkan pesan penolakan rentang ke kolom tanggal. Keyboard dapat membuka pesan lalu menuju kolom. Proyek dan periode dibawa ke Workspace pada dua fixture sintetis, dan reset periode menyimpan konteks proyek. Regresi lulus 116 tes dan 2.343 assertion. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-02.2 dan UI-09.2 belum tuntas. Uji Android dan iPhone fisik masih terbuka. Demo publik Laravel aktif pada 9e4ee014320461f3516f88bbe52dc11bf7888183. Tampilan cut-off dan pemulihan filter tanggal Dashboard terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Fokus menu aktif di rail dan drawer
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel d90bd738e8c2bb472c6f4506bcaad00fbadbeff8 menjelaskan posisi fokus pada menu aktif di rail dan drawer. Tombol Menu pada dock mengarahkan fokus ke halaman aktif saat drawer terbuka, dan Escape mengembalikannya ke tombol Menu. Uji sintetis membuktikan dua konteks proyek, batas menu untuk Pelaksana, animasi normal dan reduced motion. Regresi lulus 116 tes dan 2.343 assertion. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-02.2 dan UI-09.2 belum tuntas. Uji Android dan iPhone fisik masih terbuka. Demo publik Laravel aktif pada d90bd738e8c2bb472c6f4506bcaad00fbadbeff8. Fokus menu aktif Keuangan terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
