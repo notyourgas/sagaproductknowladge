@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-15 - Arkarupa: saldo dan penelusuran stok
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 64522db540bfc31067d6e6ead61b45991c8f882e menampilkan saldo bersama satuan dan pencarian material pada cut-off. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Di https://d43d3860.arkarupa-prototype.pages.dev/#/renovasi-demo/belanja, Pages menonjolkan stok tersisa dan menyaring penerimaan atau pemakaian tanpa perubahan saldo atau draf input. Change Log tersedia di https://d43d3860.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Keputusan pajak, diskon dan metode bayar nota, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: rincian dan fokus ukuran BUP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 9e8305d5c8e1f15a5597b084d51e5008b349cab1 menampilkan rincian ukuran yang membentuk hasil BUP dan mengarahkan fokus ke kolom yang relevan saat cara ukur diganti. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menampilkan hasil ukuran sebelum pengajuan di https://56eb3038.arkarupa-prototype.pages.dev/#/renovasi-demo/bup. Pengajuan belum terverifikasi tidak mengubah progres. Change Log tersedia di https://56eb3038.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan memerlukan akun demo sintetis berwenang untuk promosi. Uji perangkat fisik, staging, UAT serta PILOT_READY masih terbuka.
