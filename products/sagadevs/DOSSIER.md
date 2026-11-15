@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Rincian penyelesaian dan kembali ke invoice
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 168796244a98aff12d3061072d7ea4e8136febb1 pada REV-007, UI-07.1 dan UI-09.2 menunjukkan kas teralokasi dan penyesuaian tercatat sebagai nilai terpisah pada invoice. Tautan dari rincian sumber memfokuskan invoice yang sama. Fixture lokal membuktikan kredit memengaruhi piutang tanpa posting kas dan PDF tetap sesuai checksum. Chrome 320/390/1440, hak akses PDF dan regresi MySQL lulus. Demo membuktikan rincian saldo serta fokus pada invoice terbit. Restore disposable lulus. Holsite 26/36. Finance dan PM melanjutkan aturan milestone dan reschedule. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Lingkup lokasi dan pemulihan filter volume tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel d63d32ba587fd436ef41dbf9c28429becfd02ab4 pada REV-010, UI-07.4 dan UI-09.2 menunjukkan cut-off dan lokasi di rekap BUP terverifikasi. Hapus filter lokasi memfokuskan hasil dan mempertahankan tanggal. Fixture lokal membuktikan cut-off historis, hubungan ke Absensi serta izin QS dan Pelaksana. Chrome 320/390/1440 dan regresi MySQL lulus. Demo membuktikan dua hasil, satu lokasi tersaring dan pemulihan fokus. Restore disposable lulus. Holsite 26/36. Field dan Finance melanjutkan definisi OH serta upah. PM melanjutkan dasar rework dan kecukupan kohort. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
