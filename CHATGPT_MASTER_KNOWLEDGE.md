@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Identitas material dan nama tabel RAP
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel f82929f32ec86723cf60783ce8e77f7f8654e769 pada UI-08.2, UI-09.2 dan UI-09.3 menjaga kolom identitas material saat tabel pembelian RAP bergulir di HP. Tabel pekerjaan dan kebutuhan memiliki nama aksesibel berbeda. Kedua nama diverifikasi lokal. Demo publik memverifikasi tabel pembelian terisi pada 390 dan 1.440 px serta gulir di HP. Regresi MySQL menguji konversi unit, pembulatan pembelian, penerimaan dan PDF RAP multipart dengan pembatasan peran serta checksum. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Prioritas review dan fokus baris PDF nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel a7d09fa46a775796cf3ca9a0cead15c5a64b2532 pada REV-006, UI-06.4 dan UI-09.2 menonjolkan jumlah baris yang perlu diperiksa dan menahan fokus pada barang PDF yang baru ditambahkan. Tab mencapai barang berikutnya. Fixture lokal membuktikan verifikasi subtotal, penambahan dua barang tanpa duplikasi, retry dan checksum PDF privat tanpa posting sumber bisnis. Demo publik membuktikan fallback input manual dan stylesheet baru. Pembaca PDF berteks diuji secara lokal. Restore disposable lulus. Holsite 26/36. OCR foto dan retensi menunggu Procurement serta Product. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
