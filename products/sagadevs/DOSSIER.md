@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-15 - Arkarupa: grafik kas dan navigasi tablet
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b11acb4d2e029659215bdd7be1c48b15d7b78198 menyajikan grafik arus kas dan tabel rincian harian atau bulanan, menampilkan rail mulai 900 px, memulihkan fokus saat layar berubah, dan menyimpan pencarian Proyek pada tautan. Chrome HP–desktop dan MySQL disposable lulus. Runner membuktikan restore 16 migrasi tertunda. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://b57308d4.arkarupa-prototype.pages.dev/#/changes. Laravel aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Matriks UI/UX, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: jatuh tempo dan pemulihan pencarian upah
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 81f0d71f42cdbd371f377a579f92f38700d3031a memisahkan nomor kewajiban dan jatuh tempo. Pada hasil kosong, satu tindakan membersihkan pencarian dan filter serta mengembalikan fokus tanpa mengubah urutan. Chrome HP dan desktop, MySQL disposable dan restore 16 migrasi lulus. Saldo serta alokasi pembayaran per divisi konsisten dengan fixture. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://63514064.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Field dan Finance mengesahkan konversi OH dan kaitan ke upah sebelum UAT. Staging dan PILOT_READY masih terbuka.
