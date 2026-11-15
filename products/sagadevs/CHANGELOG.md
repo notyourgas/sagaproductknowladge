@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: urutan fokus drawer di HP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 026b0acccab735ce2c47d0612ae4c6f77a3cee8d memperbaiki urutan Tab pada drawer HP agar perpindahan fokus hanya memakai kontrol yang terlihat. Chrome dan regresi MySQL 115 tes lulus. Change Log Pages https://b57308d4.arkarupa-prototype.pages.dev/#/changes mencatat irisan Dashboard dan navigasi. Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Matriks UI/UX, staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: grafik kas dan navigasi tablet
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b11acb4d2e029659215bdd7be1c48b15d7b78198 menyajikan grafik arus kas dan tabel rincian harian atau bulanan, menampilkan rail mulai 900 px, memulihkan fokus saat layar berubah, dan menyimpan pencarian Proyek pada tautan. Chrome HP–desktop dan MySQL disposable lulus. Runner membuktikan restore 16 migrasi tertunda. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://b57308d4.arkarupa-prototype.pages.dev/#/changes. Laravel aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Matriks UI/UX, staging, UAT dan PILOT_READY masih terbuka.
