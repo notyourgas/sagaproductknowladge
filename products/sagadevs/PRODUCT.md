@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Fokus menu aktif di rail dan drawer
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel d90bd738e8c2bb472c6f4506bcaad00fbadbeff8 menjelaskan posisi fokus pada menu aktif di rail dan drawer. Tombol Menu pada dock mengarahkan fokus ke halaman aktif saat drawer terbuka, dan Escape mengembalikannya ke tombol Menu. Uji sintetis membuktikan dua konteks proyek, batas menu untuk Pelaksana, animasi normal dan reduced motion. Regresi lulus 116 tes dan 2.343 assertion. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-02.2 dan UI-09.2 belum tuntas. Uji Android dan iPhone fisik masih terbuka. Demo publik Laravel aktif pada d90bd738e8c2bb472c6f4506bcaad00fbadbeff8. Fokus menu aktif Keuangan terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Hierarki saldo dan validasi tanggal upah
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 5d322516d46f2c4aeac4210b561286059082656a memperjelas urutan label dan nominal saldo Upah pada HP dan desktop. Kolom Jatuh tempo mengaitkan petunjuk dan pesan server serta mempertahankan input ketika pengajuan ditolak. Uji sintetis mencakup akses Finance/PM, keyboard, pohon aksesibilitas Chrome dan rekonsiliasi tanpa posting baru. Regresi lulus 116 tes dan 2.343 assertion. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-09.2 parsial. Demo publik Laravel aktif pada 5d322516d46f2c4aeac4210b561286059082656a. Tata letak saldo, kondisi kosong dan petunjuk dialog Finance terverifikasi pada Chrome 390 dan 1.440 px. Penolakan tanggal diperiksa pada fixture lokal terisi. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
