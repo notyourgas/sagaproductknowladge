@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Koreksi nama Rekap dan Master AHSP
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 7c7a7c6452e410cccadf8b260d397bceb80f88c5 mengoreksi nama sesuai Andreas. Rekap AHSP menampilkan daftar kode dan pekerjaan. Master AHSP menampilkan koefisien, HSD dan biaya item. Uji fixture sintetis membuka rincian untuk kode yang sama dari hasil pencarian. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 7c7a7c6452e410cccadf8b260d397bceb80f88c5. Judul Rekap dan Master AHSP serta petunjuk detail lulus pada Chrome 390 dan 1.440 px. Demo Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes masih memakai nama lama. Paket koreksi telah lulus uji lokal dan publikasi menunggu autentikasi Wrangler.
+
 ## 2026-11-15 - Arkarupa: Jumlah hasil dan pemulihan pencarian proyek
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel bde93886ea75a6dbde5137b15cf030fda1352714 menampilkan jumlah hasil pencarian Proyek sebagai lencana status. Ubah pencarian memfokuskan kolom dan menyeleksi kata kunci lama ketika hasil kosong. Uji 320 px dengan sentuh emulasi membuktikan konteks pencarian kembali dari Workspace. Pencarian nomor proyek mengikuti lingkup penugasan pada fixture yang mewajibkan penugasan. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada bde93886ea75a6dbde5137b15cf030fda1352714. Lencana jumlah hasil dan pemulihan pencarian Proyek lulus pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
