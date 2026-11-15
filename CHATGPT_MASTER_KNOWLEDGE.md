@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Identitas tim BUP dan pemulihan filter laporan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel cc2bad08332e7275162367c4dab7d7d5e696be51 pada REV-011, UI-04.2, UI-04.4 dan UI-09.2 menampilkan mandor dan divisi pada metadata kartu BUP serta label Belum tercatat pada laporan tanpa tim. Tindakan Tampilkan semua laporan memulihkan daftar dan fokus Semua setelah filter kosong. Fixture sintetis merekonsiliasi koreksi pada penugasan asal dan progres terverifikasi, dengan laporan menunggu tetap dikecualikan. Regresi Portal membuktikan batas publikasi foto privat dan progres, dan emulasi 320 px membuktikan batas Pelaksana. Demo Laravel https://arkarupa-dashboard.vercel.app/ dan pemulihan disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Subtotal area RAP dan navigasi bukti item
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 50d82b56fbb16c29f5ab6c3540b82faee9653c5c pada UI-08.2 dan UI-09.2 menjelaskan bahwa subtotal per area mencakup alokasi overhead dan cadangan. Rekap menunjukkan biaya langsung, overhead dan cadangan serta tautan dua arah yang memfokuskan judul rekap dan bukti item. Fixture sintetis merekonsiliasi subtotal area dan total RAP. Uji Browser 390/1440 px, sentuhan QS 320 px, batas akses Pelaksana, snapshot dan checksum PDF, serta pemulihan disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY masih terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/. Demo Pages c6baa67a memerlukan autentikasi publikasi koreksi AHSP.
