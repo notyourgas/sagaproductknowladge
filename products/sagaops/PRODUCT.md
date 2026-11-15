@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-15 - Pemulihan pengajuan Staff setelah formulir terhapus
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Setelah server mengonfirmasi bahwa pengajuan lama belum tercatat dan draf tidak tersedia, SagaPOS Staff menampilkan tindakan **Buat pengajuan baru**. Tindakan itu memeriksa ulang status lama, lalu membuka pemilihan formulir jika pengajuan masih belum tercatat. Kiriman yang sudah diterima dipulihkan dari server. Saat status belum pasti, identitas pengiriman dipertahankan.
+
+Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
+
 ## 2026-11-13 - Rincian penerimaan dan ekspor lengkap SagaPOS
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** CSV Ringkasan Harian memuat metode, ID pembayaran, nomor pesanan, tanggal penjualan, waktu pembayaran, dan nominal. Ekspor settlement dan umur utang mencakup seluruh hasil yang sesuai filter. CSV kas memuat pengeluaran laci dan pengeluaran dari sumber lain. Pesanan baru Kiosk dan Kasir memakai cakupan outlet aktif sejak dibuat.

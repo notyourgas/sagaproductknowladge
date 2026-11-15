@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Pemulihan pengajuan Staff setelah formulir terhapus
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Setelah server mengonfirmasi bahwa pengajuan lama belum tercatat dan draf tidak tersedia, SagaPOS Staff menampilkan tindakan **Buat pengajuan baru**. Tindakan itu memeriksa ulang status lama, lalu membuka pemilihan formulir jika pengajuan masih belum tercatat. Kiriman yang sudah diterima dipulihkan dari server. Saat status belum pasti, identitas pengiriman dipertahankan.
+
+Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
+
 ## 2026-11-15 - Arkarupa: Aksi Workspace, tabel PO dan validasi Portal
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 158d2e64e145b64cc82bdc805e9d624bb123c611 membedakan aksi utama Workspace, membuat tabel PO bisa difokuskan dan digulir dengan keyboard, serta mengaitkan pesan validasi Portal dengan kolomnya. Uji sintetis mencakup akses PDF, validasi Portal dan rekonsiliasi PO dengan saldo stok. Holsite tercatat 25 dari 36 pemeriksaan, dengan UI-09.2 parsial. Demo publik Laravel aktif pada 158d2e64e145b64cc82bdc805e9d624bb123c611. Aksi Workspace, validasi Portal dan tabel PO terverifikasi melalui Chrome pada 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
