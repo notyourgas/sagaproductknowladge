@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Hierarki saldo dan validasi tanggal upah
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 5d322516d46f2c4aeac4210b561286059082656a memperjelas urutan label dan nominal saldo Upah pada HP dan desktop. Kolom Jatuh tempo mengaitkan petunjuk dan pesan server serta mempertahankan input ketika pengajuan ditolak. Uji sintetis mencakup akses Finance/PM, keyboard, pohon aksesibilitas Chrome dan rekonsiliasi tanpa posting baru. Regresi lulus 116 tes dan 2.343 assertion. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-09.2 parsial. Demo publik Laravel aktif pada 5d322516d46f2c4aeac4210b561286059082656a. Tata letak saldo, kondisi kosong dan petunjuk dialog Finance terverifikasi pada Chrome 390 dan 1.440 px. Penolakan tanggal diperiksa pada fixture lokal terisi. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Aksi upah dan fokus hasil pencarian
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel da3da0a16ddca00311f668f0be4657002f3e1928 menonjolkan aksi pembayaran kewajiban terbuka dan memindah fokus ke status hasil saat Enter ditekan di kolom cari Upah. Uji sintetis meliputi keyboard, pemisahan proyek dan rekonsiliasi kewajiban antardivisi. Validasi jatuh tempo masih dalam penelusuran dialog. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-09.2 parsial. Demo publik Laravel aktif pada da3da0a16ddca00311f668f0be4657002f3e1928. Halaman Upah dan keadaan data demo terverifikasi pada Chrome 390 dan 1.440 px. Bukti tombol dan fokus pencarian memakai fixture lokal. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
