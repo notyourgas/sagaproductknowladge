@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-15 - Arkarupa: status pencocokan dan sumber stok
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel a630239da69c9036ec0ea6e45c24f005a5fc1566 menampilkan status kecocokan jumlah barang per baris nota, menyaring baris belum lengkap, dan mengembalikan filter saat berpindah nota. Chrome 390 dan 1.440 px, 115 tes MySQL disposable serta restore 16 migrasi lulus. DEMO_PUBLIC. Di https://a96fc812.arkarupa-prototype.pages.dev/#/renovasi-demo/belanja, tombol Lihat penerimaan menyaring riwayat stok, memusatkan fokus pada referensi sumber, dan menjaga isian draf. Change Log tersedia di https://a96fc812.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Pengadaan dan Finance masih menyepakati pajak, diskon, serta metode bayar untuk UAT nota. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: saldo hasil dan urutan upah
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 1c1a0427def9c40e4d0b45790fc5695bf96444af menampilkan subtotal sisa untuk hasil pencarian atau filter status dan mengurutkan kewajiban upah dari saldo terbesar. Pengajuan yang belum disetujui tetap terlihat pada statusnya dan dikeluarkan dari subtotal saldo terbuka. Chrome 390 dan 1440 px, MySQL disposable serta restore 16 migrasi lulus. DEMO_PUBLIC. Di https://7e2ba9b8.arkarupa-prototype.pages.dev/#/renovasi-demo/upah, Pages memiliki subtotal hasil dan pengurutan saldo yang mempertahankan draf input. Change Log tersedia di https://7e2ba9b8.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Field dan Finance masih menyepakati aturan OH serta kaitan absensi dan upah. Staging, UAT dan PILOT_READY masih terbuka.
