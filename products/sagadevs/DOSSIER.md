@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-15 - Arkarupa: Volume neto dan fokus tutup rekap tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 86bfc82d17086a4c634fef8084457bd0eb107746 memberi volume neto satu baris penuh pada HP dan mengembalikan fokus ke Buka rekap tim saat ditutup. Fixture MySQL merekonsiliasi 4 dikurangi koreksi 1 menjadi 3 m2 di lokasi Struktur serta 6 m2 Finishing. Volume menunggu review dikecualikan. QS dapat kembali dari cut-off tidak valid dengan hak absensi tetap dibatasi. Regresi 116 tes dan 2.343 asersi lulus, dengan backup dan restore disposable pada 28 migrasi. Holsite 26 dari 36. Basis rework, kecukupan pembanding, OH, perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 86bfc82d17086a4c634fef8084457bd0eb107746. Buka dan tutup rekap lewat Enter, stylesheet dan tata letak terverifikasi setelah login Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Lencana koreksi dan fokus reset absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel a03f93ec2dea89c65ceb1abe8e6243ab07b9e9e4 menonjolkan lencana Dikoreksi dan mengembalikan fokus ke Semua setelah hasil filter kosong. Tanggal dan pencarian bertahan pada fixture Chrome. Fixture MySQL merekonsiliasi Izin revisi 2 ke Struktur dan Hadir ke Finishing serta membuktikan Finance bisa menyaring dan membaca tanpa izin koreksi. Regresi lulus 116 tes dan 2.343 asersi. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36 pemeriksaan. Keputusan OH dan upah, uji perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada a03f93ec2dea89c65ceb1abe8e6243ab07b9e9e4. Rute Absensi, filter keyboard, stylesheet dan tata letak terverifikasi setelah login Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
