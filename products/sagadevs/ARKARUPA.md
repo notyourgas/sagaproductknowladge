@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: Aksi lampiran dan pesan validasi nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 20d608a1f488e613cff3773f569bb95537595019 mengelompokkan aksi Baca dan Unduh pada PDF serta menautkan pesan validasi ke pemilih berkas. Uji fixture Chrome dan Livewire membuktikan penolakan unggahan mempertahankan PDF asli, draf dan izin. Demo publik memuat panel dan aset pada 390 serta 1.440 px. Akun PM sintetis tidak memiliki draf untuk pemeriksaan unggah. Regresi MySQL lulus 116 tes dan 2.343 asersi. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36 pemeriksaan. OCR foto, perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 20d608a1f488e613cff3773f569bb95537595019. Panel Lampiran privat, stylesheet dan reflow terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Progres dan nama tindakan daftar Proyek
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel da73d970b1ee8f4629028d5d74f93777d5902825 memberi angka progres daftar Proyek ukuran 20 px dan nama aksesibel yang menyebut nama serta nomor proyek pada kedua tautan. Livewire Pelaksana membuktikan pembatasan proyek dan nilai kontrak. Bukti Chrome fixture dan demo publik mencakup 390 serta 1.440 px. Regresi MySQL lulus 116 tes dan 2.343 asersi. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36 pemeriksaan. Uji perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada da73d970b1ee8f4629028d5d74f93777d5902825. Daftar Proyek, nama tautan dan Enter ke workspace terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
