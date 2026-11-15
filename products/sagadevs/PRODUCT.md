@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Pemisah PDF dan pintasan kategori Pustaka
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel fd7c297c35de4f0f4a75baef685254e02db29f80 memisahkan baris PDF Pustaka dengan bingkai dan menambahkan pintasan ke tiap kategori yang diizinkan. Enter memfokuskan judul kategori, dan Tab mencapai unduhan pertama dengan proyek yang sama. Nomor, proyek dan checksum PDF Finance cocok pada fixture. Purchasing mendapat kategori pengadaan sesuai izin. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada fd7c297c35de4f0f4a75baef685254e02db29f80. Baris PDF dan navigasi kategori lulus pada Chrome 390 dan 1.440 px. Unduhan PDF demo lulus pada 390 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Status pembaca PDF dan isian manual nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 8c468267e5ecde1515170c6cd24c3765188db561 menampilkan status ketika pembaca PDF belum tersedia dan menyediakan tindakan yang mengarahkan fokus ke Supplier. Fixture draf mempertahankan input, dua PDF asli dan total Rp180.000 dengan nol posting. Pembaca PDF berteks lokal diuji saat diaktifkan. Regresi lengkap belum selesai. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Penyedia dan retensi OCR foto, perangkat fisik, staging, UAT, dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 8c468267e5ecde1515170c6cd24c3765188db561. Pesan status dan fokus menuju Supplier terverifikasi pada draf baru di Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
