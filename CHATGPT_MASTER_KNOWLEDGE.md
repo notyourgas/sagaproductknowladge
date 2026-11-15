@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-15 - Arkarupa: Aksi Workspace, tabel PO dan validasi Portal
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 158d2e64e145b64cc82bdc805e9d624bb123c611 membedakan aksi utama Workspace, membuat tabel PO bisa difokuskan dan digulir dengan keyboard, serta mengaitkan pesan validasi Portal dengan kolomnya. Uji sintetis mencakup akses PDF, validasi Portal dan rekonsiliasi PO dengan saldo stok. Holsite tercatat 25 dari 36 pemeriksaan, dengan UI-09.2 parsial. Demo publik Laravel aktif pada 158d2e64e145b64cc82bdc805e9d624bb123c611. Aksi Workspace, validasi Portal dan tabel PO terverifikasi melalui Chrome pada 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Aksi BUP dan umpan balik Forecast
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel c74c42c14fd56663c17ea423e93d9a98a25db82a meningkatkan ukuran aksi Laporan baru menjadi 44 px dan mengembalikan fokus setelah dialog BUP ditutup. Pesan seperti syarat RAP tampil sebagai teks di dialog Forecast. Pesan yang memiliki kolom tetap mendukung Enter. Uji sintetis mencakup verifikasi akses dan integritas draf. Holsite tercatat 25 dari 36 pemeriksaan, dengan UI-09.2 parsial. Demo publik Laravel aktif pada c74c42c14fd56663c17ea423e93d9a98a25db82a. Aksi BUP dan dialog Forecast terverifikasi melalui Chrome pada 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
