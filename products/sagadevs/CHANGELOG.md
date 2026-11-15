@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: Status manual dan fokus checklist penutupan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 5fd1abe39b495aaf0d8a036f081547f900c02ac8 membedakan Konfirmasi manual di Workspace dengan garis putus-putus kontras. Enter pada Penutupan memfokuskan judul dan Tab berikutnya mencapai tautan yang menyebut pemeriksaan sumber. Pada fixture, checklist tetap membaca laporan terbuka, saldo Finance dan retensi manual sesuai sumber. Purchasing melihat status manual tanpa kewenangan pengajuan atau saldo Finance. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 5fd1abe39b495aaf0d8a036f081547f900c02ac8. Status dan pintasan checklist Workspace lulus pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Jumlah review dan pintasan BUP menunggu
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 1886177a4f7919c519374b9010998c41761a6a91 menampilkan jumlah antrean dalam lencana kontras di Dashboard Utama. Enter pada tautan Harian membuka BUP dengan filter Menunggu pada proyek tujuan. Pada fixture, jumlah antrean cocok dengan laporan diajukan dan rekap terverifikasi mengecualikan volume yang masih menunggu. PM dapat memverifikasi sesuai izin proyek, sementara Purchasing tidak mendapat tindakan review. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 1886177a4f7919c519374b9010998c41761a6a91. Lencana antrean dan pintasan ke BUP Menunggu lulus pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
