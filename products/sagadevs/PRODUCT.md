@@ -2,6 +2,10 @@
 
 ## 2026-11-15 - Arkarupa: verifikasi tagihan dan termin Portal
 
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 6867160c3f735195f591b61140c7e404aae1968f menampilkan panel pemulihan PDF nota dengan identitas lampiran, fokus dan tindakan baca ulang. Chrome HP dan desktop membuktikan pemulihan draf dan hak akses lampiran. Fixture membuktikan dua PDF tetap tersimpan tanpa posting persediaan atau kas saat membaca ulang atau menyimpan draf. UI-06.4 masih terbuka untuk OCR foto. UI-06.2 lulus pada fixture stok, biaya, dua pembayaran dan sisa utang. 21 dari 36 pemeriksaan tercatat. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
+
+## 2026-11-15 - Arkarupa: verifikasi tagihan dan termin Portal
+
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel e7883d73c05fb40c0c24f96e83908ef81ade4b02 memisahkan jatuh tempo pada kartu tagihan dan menyediakan navigasi dua arah ke rencana termin. Uji sintetis membuktikan rencana 30/50/20, tagihan Rp50 juta, alokasi Rp20 juta, sisa Rp30 juta dan PDF terbit berdasarkan izin. UI-05.4 lulus, 20 dari 36 pemeriksaan. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Rilis menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
 
 ## 2026-11-15 - Arkarupa: keputusan Portal dan verifikasi Document Center
