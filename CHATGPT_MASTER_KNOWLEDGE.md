@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-15 - Arkarupa: konteks tanggal ukur BUP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 74ac53f7540967eefe4edc87ddcb8c3dcec2710c menampilkan versi baseline dan tanggal ukur, mempertahankan dimensi selama tanggal dikoreksi, serta mengosongkan ukuran saat satuan baru tidak kompatibel. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Di https://2b42f07a.arkarupa-prototype.pages.dev/#/renovasi-demo/bup, Pages menampilkan volume rencana item dan memulihkan tanggal proyek tanpa mengubah ukuran atau catatan. Change Log tersedia di https://2b42f07a.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Field dan QA masih menyiapkan uji ponsel fisik. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: cut-off jadwal dan progres
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b67c73a49a5adebf0cb2612b3f9d33165b24d66f membedakan baseline pada cut-off dan rencana tersimpan serta membuka progres resmi pada proyek dan tanggal yang sama. Chrome 390 dan 1440 px, CSV, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Di https://f7ea9951.arkarupa-prototype.pages.dev/#/renovasi-demo/progres, Pages meninjau tanggal terdahulu pada jadwal aktif dan mengembalikan tanggal terbaru tanpa mengubah data. Change Log tersedia di https://f7ea9951.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. PM dan reviewer masih menetapkan kalender, proyeksi keterlambatan dan format laporan. Staging, UAT dan PILOT_READY masih terbuka.
