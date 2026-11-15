@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Safe area drawer dan fokus pembaca layar
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 2409170eb7e12589f4a0ead7e6dbe78e5c6de181 pada UI-02.2 dan UI-09.2 mengikuti safe area portrait dan landscape pada drawer mobile. Saat menu terbuka, konten latar tidak menerima fokus dan tidak tampil dalam pohon aksesibilitas Chrome. Escape dan Tutup menu mengembalikan konten dan fokus menu. Uji sentuh dan transisi rail 899–900 px menjaga cut-off Workspace. Uji laporan fixture mempertahankan proyeksi enam peran. Regresi lengkap lulus 116 tes dan 2343 asersi. Backup dan pemulihan disposable lulus pada 28 migrasi. Holsite 26/36. Uji perangkat fisik dan staging privat, UAT serta PILOT_READY terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/ terverifikasi pada 390, 768, dan 1.440 px. Pages c6baa67a masih memerlukan autentikasi Wrangler untuk koreksi penamaan AHSP.
+
 ## 2026-11-16 - Arkarupa: Identitas material dan navigasi riwayat penerimaan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 8d07abd75c615c7ee56b1c066248e619402ad9be pada REV-005 dan UI-06.2 memisahkan nama material dan kode pada tabel saldo. Tautan saldo dan riwayat memfokuskan judul. Proyek, cut-off, tujuan dan pencarian tetap saat berpindah. Riwayat menjelaskan bahwa cakupan tanggalnya berbeda dari saldo. Fixture sintetik merekonsiliasi proyeksi stok. Uji publik pada 390 dan 1.440 px mengonfirmasi fokus serta tujuan terpilih memakai akun PM sintetis. Regresi lengkap lulus 116 tes dan 2343 asersi. Pemulihan disposable lulus dan skema tetap 28 migrasi. Holsite 26 dari 36. Audit aksesibilitas lintas modul, perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=barang#stock-cutoff-heading tersedia untuk presentasi. Demo Pages c6baa67a menggunakan penamaan AHSP lama sambil menunggu autentikasi publikasi koreksi.
