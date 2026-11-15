@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Identitas material dan navigasi riwayat penerimaan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 8d07abd75c615c7ee56b1c066248e619402ad9be pada REV-005 dan UI-06.2 memisahkan nama material dan kode pada tabel saldo. Tautan saldo dan riwayat memfokuskan judul. Proyek, cut-off, tujuan dan pencarian tetap saat berpindah. Riwayat menjelaskan bahwa cakupan tanggalnya berbeda dari saldo. Fixture sintetik merekonsiliasi proyeksi stok. Uji publik pada 390 dan 1.440 px mengonfirmasi fokus serta tujuan terpilih memakai akun PM sintetis. Regresi lengkap lulus 116 tes dan 2343 asersi. Pemulihan disposable lulus dan skema tetap 28 migrasi. Holsite 26 dari 36. Audit aksesibilitas lintas modul, perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=barang#stock-cutoff-heading tersedia untuk presentasi. Demo Pages c6baa67a menggunakan penamaan AHSP lama sambil menunggu autentikasi publikasi koreksi.
+
 ## 2026-11-16 - Arkarupa: Status kosong dan navigasi penugasan upah
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel e3f0ea31bcb382815a9e57431527374d5add455c pada REV-008 menampilkan panel ketika daftar upah kosong dan menghubungkan Upah Tenaga Kerja dengan Mandor dan divisi. Enter memfokuskan judul dan mempertahankan proyek serta pencarian. Saldo dipisahkan per penugasan. PM tetap mendapat akses baca. Regresi lengkap masih terbuka. Backup dan pemulihan disposable lulus. Holsite 26 dari 36. Perangkat fisik, staging privat, UAT dan PILOT_READY masih terbuka. Demo Laravel aktif pada e3f0ea31bcb382815a9e57431527374d5add455c. PM sintetis lulus panel kosong dan navigasi dua arah pada 390 dan 1440 px. Retensi pencarian upah diuji pada fixture lokal. Demo Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes masih memakai label AHSP lama dan publikasi koreksi menunggu autentikasi Wrangler.
