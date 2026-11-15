@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Penyesuaian biaya dan fokus diskon nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel b56f00aca0e2cbf8d6b8ad42a4294c48786ac0e5 pada REV-005, UI-06.1 dan UI-09.2 memperlihatkan tanda diskon, pajak dan biaya tambahan di Draf nota. Pintasan memfokuskan Diskon dan menjaga isian draf. Chrome 320/390/1440 dan regresi MySQL membuktikan nominal, penolakan diskon melebihi subtotal serta pemulihan isian di fixture lokal. Demo membuktikan pintasan dan isian yang bertahan di draf kosong. Restore disposable lulus. Holsite 26/36. Procurement dan Finance melanjutkan pilihan metode bayar. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Identitas versi dan pintasan tabel Gantt
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 9815aba75a2e087de641b489a6b45e4ee066afff pada REV-012, UI-04.3 dan UI-09.2 membedakan versi jadwal dan kontrak pada header. Pintasan memfokuskan tabel dengan versi dan cut-off tetap. Fixture sintetis memverifikasi dua keadaan filter dan mencocokkan unduhan CSV dengan data pada cut-off. Chrome 390/1440 dan regresi MySQL lulus. Demo memverifikasi lencana dan pintasan pada Gantt terisi. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
