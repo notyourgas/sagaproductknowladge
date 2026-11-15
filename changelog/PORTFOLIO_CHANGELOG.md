@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Hierarki EAC dan perlindungan isian ETC
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 472db15b0238deb18a024924bd7e331bed0319fd pada UI-09.1 dan UI-09.2 memperjelas EAC, status review dan nilai ETC. Mengisi ETC dari komitmen hanya melengkapi kolom kosong dan mempertahankan nilai nol maupun alasan review. Chrome lokal membuktikan alur dengan forecast sintetis yang disetujui. Demo publik diverifikasi dengan akun PM sintetis dan keadaan EAC belum tersedia. Regresi menjaga perhitungan aktual dan komitmen, validasi persetujuan, hak akses serta PDF klien. Pemulihan disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Total draf nota dan fokus barang baru
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel e39a87fbbeebf4cf9acc966f0fa5a4e8996b7211 pada REV-005, UI-06.1 dan UI-09.2 memperjelas total draf nota serta memfokuskan nama barang yang baru ditambahkan. Isian tetap bertahan setelah menambah atau menghapus baris. Fixture sintetis merekonsiliasi subtotal, diskon, pajak, biaya tambahan dan total, tanpa posting stok, biaya atau kas. Regresi mencakup retur dan hak akses lampiran privat. Demo publik memverifikasi fokus barang baru dengan sesi PM sintetis tanpa menyimpan nota. Pemulihan disposable lulus. Holsite 26/36. Metode bayar menunggu Finance dan Procurement. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
