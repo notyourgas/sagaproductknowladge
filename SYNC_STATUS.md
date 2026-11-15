@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-15 - Arkarupa: keputusan Portal dan verifikasi Document Center
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 3bb6b85d33606086becfa4374e7bb583add4729d memisahkan volume serta nilai item pada lembar revisi dan mengarahkan fokus ke Catatan saat validasi gagal. Uji sintetis membuktikan satu keputusan klien dan satu perubahan baseline setelah verifikasi internal. Enam kategori Document Center, versi, unduhan dan pencabutan akses lulus. UI-05.2 dan UI-05.3 lulus, 19 dari 36 pemeriksaan. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Rilis menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: status dan riwayat review BUP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f9e3821e0cb446612e33abee6c9e1647a301a10a memisahkan metadata BUP dan memulihkan fokus setelah pengajuan, review serta publikasi. Pelaksana pemilik dan reviewer dapat menelusuri aktor, waktu dan alasan. Foto tetap dibatasi sesuai pemilihan PM. UI-04.4 dan UI-02.4 lulus, 17 dari 36 pemeriksaan. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Rilis menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
