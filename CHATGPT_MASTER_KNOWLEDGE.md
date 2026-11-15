@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-15 - Arkarupa: Rekapitulasi dan jejak item RAP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b3203158961566e379d7661611f2a412d649fc25 menampilkan subtotal RAP per area dan pintasan dari item ke BUV serta pecah bahan berdasarkan versi yang sedang dilihat. Fixture sintetis merekonsiliasi 10 m3 neto, Rp1.420.000 untuk item, dan total RAP Rp1.620.000. Revisi draf terpisah sementara PDF baseline mempertahankan checksum dan sumber. UI-08.2 lulus, 23 dari 36 pemeriksaan. Laravel demo aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Master dan Rekap AHSP
 
 CONFIRMED. Uji browser dan integrasi AHSP lulus lokal. Regresi penuh masih terbuka. Kandidat Laravel 1b630582eeef80e05f05331c6c1d74861367d434 memberi label satuan, status koefisien dan versi pada Master. Pencarian kode dan kata kunci membuka Rekap AHSP dengan HSD aktif dan sumber per komponen. Referensi dan HSD belum lengkap menahan harga satuan. Fixture Rp142.000 per m3 menghasilkan RAP Rp1.420.000 untuk 10 m3. Perubahan HSD memperbarui Rekap sementara snapshot dan PDF RAP yang disetujui mempertahankan nilainya. UI-08.1 lulus, 22 dari 36 pemeriksaan. Laravel demo aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
