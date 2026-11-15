@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Prioritas review dan fokus baris PDF nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel a7d09fa46a775796cf3ca9a0cead15c5a64b2532 pada REV-006, UI-06.4 dan UI-09.2 menonjolkan jumlah baris yang perlu diperiksa dan menahan fokus pada barang PDF yang baru ditambahkan. Tab mencapai barang berikutnya. Fixture lokal membuktikan verifikasi subtotal, penambahan dua barang tanpa duplikasi, retry dan checksum PDF privat tanpa posting sumber bisnis. Demo publik membuktikan fallback input manual dan stylesheet baru. Pembaca PDF berteks diuji secara lokal. Restore disposable lulus. Holsite 26/36. OCR foto dan retensi menunggu Procurement serta Product. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Nilai kontrak dan kembali ke revisi yang sama
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 2f820aa4b395a5c4c97ee3c7204868501437c426 pada REV-003, UI-05.2 dan UI-09.2 menonjolkan nilai kontrak sesudah pada lembar revisi. Kembali ke daftar memfokuskan tautan VO yang sedang dibaca dan mempertahankan isian tanggapan. Fixture sintetis pada 390 dan 1.440 px membuktikan alur, pemisahan berkas terbit dari lampiran privat, serta penerapan nilai tepat satu kali. Demo publik membuktikan pengalihan ke login, penolakan peran internal dan stylesheet baru. Tampilan terisi dan tanggapan klien diverifikasi lokal. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
