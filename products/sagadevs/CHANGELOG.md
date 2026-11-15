@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: Pulihkan draf BUP dan Forecast
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel d7496038cfe9be77aa403ee33de9224a67698f85 membedakan status simpan draf BUP dan Forecast, menyediakan Simpan ulang teks setelah koneksi kembali, dan memulihkan isian pada sesi browser baru. Uji sintetis membuktikan satu perubahan draf per isian dan pemisahan akses per akun. Uji nota, validasi, konflik, akses dan laporan kosong diulang pada kandidat yang sama. UI-09.1 lulus, 25 dari 36 pemeriksaan terverifikasi. Demo publik Laravel aktif pada d7496038cfe9be77aa403ee33de9224a67698f85. Login dan alur status draf BUP serta Forecast lulus di Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Status form dan pemulihan simpan
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 4d8bedcab37e8e966349f126783e7d06f7ad5f19 menampilkan status simpan dan petunjuk pemulihan di form. Uji sintetis pada draf nota membuktikan isian bertahan saat koneksi putus, pengguna mengirim ulang secara eksplisit, konflik revisi memberi pesan dan jumlah 0 ditolak dekat field. Regresi MySQL mencakup 116 tes dan 2.343 asersi. UI-09.1 parsial, 24 dari 36 pemeriksaan dengan pembuktian lintas modul masih terbuka. Demo publik Laravel aktif pada 4d8bedcab37e8e966349f126783e7d06f7ad5f19. Login dan status form Pengadaan lulus di Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
