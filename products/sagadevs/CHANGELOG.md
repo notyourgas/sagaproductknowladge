@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: Aksi upah dan fokus hasil pencarian
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel da3da0a16ddca00311f668f0be4657002f3e1928 menonjolkan aksi pembayaran kewajiban terbuka dan memindah fokus ke status hasil saat Enter ditekan di kolom cari Upah. Uji sintetis meliputi keyboard, pemisahan proyek dan rekonsiliasi kewajiban antardivisi. Validasi jatuh tempo masih dalam penelusuran dialog. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-09.2 parsial. Demo publik Laravel aktif pada da3da0a16ddca00311f668f0be4657002f3e1928. Halaman Upah dan keadaan data demo terverifikasi pada Chrome 390 dan 1.440 px. Bukti tombol dan fokus pencarian memakai fixture lokal. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Aksi absensi dan bantuan cut-off tim
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 74a44d00a0c33e019a1b0b8e31dfd34329a382f7 menonjolkan kontrol Catat kehadiran dan menghubungkan pesan cut-off yang ditolak dengan kolom tanggal di Rekap tim. Uji sintetis meliputi keyboard, batas akses peran, dan rekonsiliasi absensi antardivisi. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-09.2 parsial. Demo publik Laravel aktif pada 74a44d00a0c33e019a1b0b8e31dfd34329a382f7. Pesan cut-off dan pemulihan tanggal Rekap tim terverifikasi pada Chrome 390 dan 1.440 px. Status penugasan absensi mengikuti fixture demo. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
