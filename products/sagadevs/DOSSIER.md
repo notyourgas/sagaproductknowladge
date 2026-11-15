@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-15 - Arkarupa: Aksi Katalog dan pemulihan filter
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel a378bc31440ee41470d98f4aca86c5e9c2518798 membuat Detail / Histori Katalog menjadi tombol setinggi 44 px dan mengembalikan fokus ke kolom Cari resource saat filter direset. Uji sintetis mencakup akses PDF RAP, data harga dan reflow. Holsite mencatat 26 dari 36 pemeriksaan. UI-09.3 lulus pada 84 kombinasi halaman dan lebar/zoom, termasuk pemeriksaan reduced motion. UI-09.2 masih parsial. Demo publik Laravel aktif pada a378bc31440ee41470d98f4aca86c5e9c2518798. Aksi dan pemulihan filter Katalog terverifikasi melalui Chrome pada 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Aksi Workspace, tabel PO dan validasi Portal
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 158d2e64e145b64cc82bdc805e9d624bb123c611 membedakan aksi utama Workspace, membuat tabel PO bisa difokuskan dan digulir dengan keyboard, serta mengaitkan pesan validasi Portal dengan kolomnya. Uji sintetis mencakup akses PDF, validasi Portal dan rekonsiliasi PO dengan saldo stok. Holsite tercatat 25 dari 36 pemeriksaan, dengan UI-09.2 parsial. Demo publik Laravel aktif pada 158d2e64e145b64cc82bdc805e9d624bb123c611. Aksi Workspace, validasi Portal dan tabel PO terverifikasi melalui Chrome pada 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
