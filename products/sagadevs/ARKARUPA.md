@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: rincian dan fokus ukuran BUP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 9e8305d5c8e1f15a5597b084d51e5008b349cab1 menampilkan rincian ukuran yang membentuk hasil BUP dan mengarahkan fokus ke kolom yang relevan saat cara ukur diganti. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menampilkan hasil ukuran sebelum pengajuan di https://56eb3038.arkarupa-prototype.pages.dev/#/renovasi-demo/bup. Pengajuan belum terverifikasi tidak mengubah progres. Change Log tersedia di https://56eb3038.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan memerlukan akun demo sintetis berwenang untuk promosi. Uji perangkat fisik, staging, UAT serta PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: alokasi dan pencarian upah
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 1e944f7ab295359bae160d3d4cd014a08fba50f7 memisahkan pembayaran teralokasi, penyesuaian dan sisa upah. Finance dapat mencari mandor, nomor atau divisi di dalam status terpilih. Chrome 390 dan 1440 px, rekonsiliasi upah, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menerbitkan pencarian uraian dan penanda sisa upah pada https://8fb7d7d0.arkarupa-prototype.pages.dev/#/renovasi-demo/upah. Change Log tersedia di https://8fb7d7d0.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Aturan OH dan tautan absensi, staging, UAT serta PILOT_READY masih terbuka.
