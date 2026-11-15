@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Arkarupa: saldo hasil dan urutan upah
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 1c1a0427def9c40e4d0b45790fc5695bf96444af menampilkan subtotal sisa untuk hasil pencarian atau filter status dan mengurutkan kewajiban upah dari saldo terbesar. Pengajuan yang belum disetujui tetap terlihat pada statusnya dan dikeluarkan dari subtotal saldo terbuka. Chrome 390 dan 1440 px, MySQL disposable serta restore 16 migrasi lulus. DEMO_PUBLIC. Di https://7e2ba9b8.arkarupa-prototype.pages.dev/#/renovasi-demo/upah, Pages memiliki subtotal hasil dan pengurutan saldo yang mempertahankan draf input. Change Log tersedia di https://7e2ba9b8.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Field dan Finance masih menyepakati aturan OH serta kaitan absensi dan upah. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: konteks tanggal ukur BUP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 74ac53f7540967eefe4edc87ddcb8c3dcec2710c menampilkan versi baseline dan tanggal ukur, mempertahankan dimensi selama tanggal dikoreksi, serta mengosongkan ukuran saat satuan baru tidak kompatibel. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Di https://2b42f07a.arkarupa-prototype.pages.dev/#/renovasi-demo/bup, Pages menampilkan volume rencana item dan memulihkan tanggal proyek tanpa mengubah ukuran atau catatan. Change Log tersedia di https://2b42f07a.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Field dan QA masih menyiapkan uji ponsel fisik. Staging, UAT dan PILOT_READY masih terbuka.
