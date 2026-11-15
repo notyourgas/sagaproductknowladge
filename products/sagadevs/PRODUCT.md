@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Tanggal rekap dan fokus setelah koreksi absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 6dbce305442157424d36b9aba75277a215652436 pada REV-009, UI-07.3 dan UI-09.2 menampilkan tanggal pada rekap dan menahan konteks keyboard setelah koreksi. Fokus kembali ke aksi baris atau filter aktif bila baris hilang dari hasil. MySQL disposable membuktikan revisi v2 dan penugasan tetap, tanpa transaksi upah baru. Demo publik memverifikasi tanggal dan filter pada 390 serta 1.440 px. Koreksi disimpan pada fixture lokal. Restore disposable lulus. Holsite 26/36. Field dan Finance masih menetapkan konversi OH dan kaitannya ke upah. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Identitas invoice dan akses rincian sumber
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 53db5259d10656454783afe991717e08b655c3d8 pada REV-007, UI-07.1 dan UI-09.2 memisahkan nomor, status, dan pihak pada kartu invoice. Rincian sumber kini membuka isi pada kartu dan mempertahankan fokus. Alur dua lebar dibuktikan dengan fixture lokal dan PM sintetis pada demo publik. Uji MySQL memverifikasi saldo parsial dan pembatasan PDF sesuai laporan terbit terbaru. Restore disposable lulus. Holsite 26/36. Aturan milestone dan reschedule menunggu Finance dan PM. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
