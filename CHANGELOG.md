@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-15 - Arkarupa: verifikasi tagihan dan termin Portal
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel e7883d73c05fb40c0c24f96e83908ef81ade4b02 memisahkan jatuh tempo pada kartu tagihan dan menyediakan navigasi dua arah ke rencana termin. Uji sintetis membuktikan rencana 30/50/20, tagihan Rp50 juta, alokasi Rp20 juta, sisa Rp30 juta dan PDF terbit berdasarkan izin. UI-05.4 lulus, 20 dari 36 pemeriksaan. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Rilis menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: keputusan Portal dan verifikasi Document Center
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 3bb6b85d33606086becfa4374e7bb583add4729d memisahkan volume serta nilai item pada lembar revisi dan mengarahkan fokus ke Catatan saat validasi gagal. Uji sintetis membuktikan satu keputusan klien dan satu perubahan baseline setelah verifikasi internal. Enam kategori Document Center, versi, unduhan dan pencabutan akses lulus. UI-05.2 dan UI-05.3 lulus, 19 dari 36 pemeriksaan. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Rilis menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
