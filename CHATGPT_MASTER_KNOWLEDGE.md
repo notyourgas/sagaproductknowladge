@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-15 - Arkarupa: dampak kontrak dan kembali ke daftar revisi
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel d1c23e9029f496fca7db2ba859dda01fa330a9c2 menampilkan kartu nilai kontrak sebelum, sesudah dan perubahan durasi pada revisi. Tautan kembali mengarahkan fokus ke daftar dan mempertahankan isian draf. Chrome 390/1.440 px, validasi klarifikasi, MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://630bf269.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi membutuhkan akun demo sintetis berwenang. Andreas, PM dan perwakilan klien menetapkan peran penerbit dan pemeriksa keputusan sebelum UAT. Staging dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: metadata dan kategori berkas
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 579b012dfd6f0bb95a6f4077aae8776d060dd0a8 mengelompokkan kode, versi dan waktu terbit per dokumen klien. Filter kategori berpadu dengan pencarian dan status versi di dalam proyek. Laporan tetap tersedia. Chrome 390/1.440 px, pengunduhan PDF arsip, uji MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://887868ff.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Delegasi penerbit, izin kategori dan prosedur penarikan menunggu keputusan Owner dan PM sebelum staging/UAT. PILOT_READY masih terbuka.
