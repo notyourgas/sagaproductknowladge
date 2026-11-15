@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: pembacaan divisi dan fokus koreksi absensi
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b19bd635246f1614998231da4711101c3f86b168 menampilkan mandor dan divisi terpisah pada Absensi. Batal koreksi mengembalikan fokus ke tindakan pekerja atau judul Absensi tim bila filter menyembunyikan barisnya. Chrome HP dan desktop, MySQL disposable dan restore 16 migrasi lulus. Pembatalan tidak mengubah status, revisi atau transaksi fixture. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://cf62caab.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Field dan Finance mengesahkan konversi OH dan kaitan ke upah sebelum UAT. Staging dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: tanggal PDF dan fokus isian nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 0a0d178ff088e5cb014b15ecbca90fee3ba499f4 membaca tanggal nota PDF berteks dengan akhir baris CRLF dan menampilkan tanggal dalam format Indonesia. Setelah operator menerapkan identitas, fokus menuju kolom tanggal. Tanggal PDF tidak valid mempertahankan nilai sebelumnya. Chrome HP/desktop, MySQL disposable dan restore 16 migrasi lulus tanpa perubahan draf atau transaksi. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://61b9c1a5.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Interpreter PDF perlu diuji di staging. Procurement dan Release Lead menetapkan OCR foto/pindai dan retensi bersama Andreas. UAT dan PILOT_READY masih terbuka.
