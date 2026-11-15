@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-15 - Jadwal Admin Studio menampilkan shift Middle
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Dashboard Owner → Jadwal & Shift → Admin Studio menampilkan shift bernama Middle di kolom tersendiri di desktop dan bagian tersendiri per hari di HP. Shift Admin Middle pukul 13.00–20.00 WIB memakai kategori tersebut. Perubahan berlaku pada pengelompokan tampilan kalender dan menggunakan jadwal Studio yang sudah tersimpan.
+
+Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 177 tes lulus. Rilis aktif setelah uji pemulihan dan verifikasi dashboard sebagai Owner di desktop dan HP. Empat jadwal Middle tampil dengan benar. Pemeriksaan ini mencakup kalender Admin Studio.
+
 ## 2026-11-15 - Pemulihan pengajuan Staff setelah formulir terhapus
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Setelah server mengonfirmasi bahwa pengajuan lama belum tercatat dan draf tidak tersedia, SagaPOS Staff menampilkan tindakan **Buat pengajuan baru**. Tindakan itu memeriksa ulang status lama, lalu membuka pemilihan formulir jika pengajuan masih belum tercatat. Kiriman yang sudah diterima dipulihkan dari server. Saat status belum pasti, identitas pengiriman dipertahankan.
