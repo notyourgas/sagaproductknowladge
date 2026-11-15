@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: saldo dan alokasi pembayaran
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 509962ca8e026de9dc33c816ee2d7b9c3b951246 memperjelas saldo terbuka dan dapat menyalin nominal kas ke satu alokasi. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Di https://c0706466.arkarupa-prototype.pages.dev/#/renovasi-demo/termin, Pages menampilkan sisa tagihan terpilih, mengisi nominal saat diminta dan menolak pembayaran melebihi sisa. Change Log tersedia di https://c0706466.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Finance dan PM masih menetapkan tanggal, milestone, dan prosedur penjadwalan ulang. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: konteks laporan Portal
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f92a5caf4ed949a54df0eb5fd9b5f80f7f5dfa6c menandai laporan terbaru dan historis, memisahkan cut-off dan waktu terbit, dan mempertahankan filter saat kembali ke laporan terbaru. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Di https://26b62e98.arkarupa-prototype.pages.dev/#/renovasi-demo/portal, Pages menampilkan status laporan dan tombol kembali ke laporan terbaru. Change Log tersedia di https://26b62e98.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Finance dan PM masih perlu mengesahkan basis RAB, cakupan kas dan pembulatan. Staging, UAT dan PILOT_READY masih terbuka.
