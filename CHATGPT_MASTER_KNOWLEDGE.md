@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Penanda tanggapan dan akses dampak VO
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel a35dc00f48b809d952a1c5a68609458fa3de7d99 pada REV-003, UI-05.2 dan UI-09.2 menyamakan lencana revisi yang bisa ditanggapi antara daftar dan detail. Tautan Tinjau dampak revisi memfokuskan judul VO yang sama dan mempertahankan pilihan serta catatan. Chrome 390/1440 membuktikan perubahan pada fixture sintetis. Demo memverifikasi login, batas akses PM dan stylesheet. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Subtotal barang dan fokus setelah hapus nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel acb0336133386c1a2f40f8c9f435019c3f80eb60 pada REV-005, UI-06.1 dan UI-09.2 memperjelas subtotal tiap barang serta mengembalikan fokus ke nama barang terdekat setelah penghapusan di draf. Chrome 390/1440 dan regresi MySQL pada fixture sintetis lulus. Demo memverifikasi tambah dan hapus pada draf yang belum disimpan. Restore disposable lulus. Holsite 26/36. Procurement dan Finance masih perlu mengesahkan format metode bayar dan relasinya ke pembayaran. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
