@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-15 - Arkarupa: konteks progres workspace
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 130988cdcae3f5bb95d0955ebcaa476bab3adb75 mempertahankan cut-off, tanggal dan konteks saat berpindah dari Dashboard ke Workspace atau Lapangan. Workspace menyajikan baseline, target dan aktual. Tautan kembali memulihkan filter, scope dan fokus. Chrome HP/desktop, isolasi Portal dan MySQL lulus. Change Log Pages https://2ae56c05.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: urutan fokus drawer di HP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 026b0acccab735ce2c47d0612ae4c6f77a3cee8d memperbaiki urutan Tab pada drawer HP agar perpindahan fokus hanya memakai kontrol yang terlihat. Chrome dan regresi MySQL 115 tes lulus. Change Log Pages https://b57308d4.arkarupa-prototype.pages.dev/#/changes mencatat irisan Dashboard dan navigasi. Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Matriks UI/UX, staging, UAT dan PILOT_READY masih terbuka.
