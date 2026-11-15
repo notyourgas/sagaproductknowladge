@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-15 - Arkarupa: Penanda periode dan navigasi balik Kurva S
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel d93ce221dc60506b01398a8650abd8387544e5cc menonjolkan Periode terakhir di tabel dan memberi tindakan kembali ke judul grafik tanpa mengubah cut-off atau pilihan Bulanan. CSV sebelum dan sesudah identik dan cocok dengan kurva laporan pada cut-off fixture. Pelaksana dapat membaca tabel dan menggunakan navigasi balik, dengan izin ekspor tetap terbatas. Regresi 116 tes dan 2.343 asersi lulus, dengan backup dan restore disposable pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, ketentuan UAT operasional, staging dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada d93ce221dc60506b01398a8650abd8387544e5cc. Tabel terisi, penanda periode, navigasi balik dan retensi cut-off Bulanan terverifikasi setelah login Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Volume neto dan fokus tutup rekap tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 86bfc82d17086a4c634fef8084457bd0eb107746 memberi volume neto satu baris penuh pada HP dan mengembalikan fokus ke Buka rekap tim saat ditutup. Fixture MySQL merekonsiliasi 4 dikurangi koreksi 1 menjadi 3 m2 di lokasi Struktur serta 6 m2 Finishing. Volume menunggu review dikecualikan. QS dapat kembali dari cut-off tidak valid dengan hak absensi tetap dibatasi. Regresi 116 tes dan 2.343 asersi lulus, dengan backup dan restore disposable pada 28 migrasi. Holsite 26 dari 36. Basis rework, kecukupan pembanding, OH, perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 86bfc82d17086a4c634fef8084457bd0eb107746. Buka dan tutup rekap lewat Enter, stylesheet dan tata letak terverifikasi setelah login Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
