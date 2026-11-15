@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: jatuh tempo dan pemulihan pencarian upah
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 81f0d71f42cdbd371f377a579f92f38700d3031a memisahkan nomor kewajiban dan jatuh tempo. Pada hasil kosong, satu tindakan membersihkan pencarian dan filter serta mengembalikan fokus tanpa mengubah urutan. Chrome HP dan desktop, MySQL disposable dan restore 16 migrasi lulus. Saldo serta alokasi pembayaran per divisi konsisten dengan fixture. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://63514064.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Field dan Finance mengesahkan konversi OH dan kaitan ke upah sebelum UAT. Staging dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: pembacaan divisi dan fokus koreksi absensi
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b19bd635246f1614998231da4711101c3f86b168 menampilkan mandor dan divisi terpisah pada Absensi. Batal koreksi mengembalikan fokus ke tindakan pekerja atau judul Absensi tim bila filter menyembunyikan barisnya. Chrome HP dan desktop, MySQL disposable dan restore 16 migrasi lulus. Pembatalan tidak mengubah status, revisi atau transaksi fixture. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://cf62caab.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Field dan Finance mengesahkan konversi OH dan kaitan ke upah sebelum UAT. Staging dan PILOT_READY masih terbuka.
