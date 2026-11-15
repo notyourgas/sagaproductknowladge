@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-15 - Arkarupa: Status pembaca PDF dan isian manual nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 8c468267e5ecde1515170c6cd24c3765188db561 menampilkan status ketika pembaca PDF belum tersedia dan menyediakan tindakan yang mengarahkan fokus ke Supplier. Fixture draf mempertahankan input, dua PDF asli dan total Rp180.000 dengan nol posting. Pembaca PDF berteks lokal diuji saat diaktifkan. Regresi lengkap belum selesai. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Penyedia dan retensi OCR foto, perangkat fisik, staging, UAT, dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 8c468267e5ecde1515170c6cd24c3765188db561. Pesan status dan fokus menuju Supplier terverifikasi pada draf baru di Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Nominal termin dan navigasi balik sertifikasi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 9d93a2516bf350eb0211fa633550936d75e7f3f6 menonjolkan nominal termin internal dan memberi navigasi balik dari sertifikasi ke rencana termin pada proyek yang sama. Fixture kontrak Rp100 juta merekonsiliasi termin Rp30/50/20 juta serta invoice Rp50 juta dengan saldo Rp30 juta setelah alokasi Rp20 juta. PDF sebelum dan sesudah identik, akses PM dan Pelaksana mengikuti peran. Regresi 116 tes dan 2.343 asersi lulus, dengan backup dan restore disposable pada 28 migrasi. Holsite 26 dari 36. Aturan milestone dan reschedule, perangkat fisik, staging, UAT, dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 9d93a2516bf350eb0211fa633550936d75e7f3f6. Kartu termin terisi, nominal 22 px dan navigasi keyboard pada tahap Tagihan terverifikasi pada Chrome 390 serta 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
