@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Identitas invoice dan akses rincian sumber
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 53db5259d10656454783afe991717e08b655c3d8 pada REV-007, UI-07.1 dan UI-09.2 memisahkan nomor, status, dan pihak pada kartu invoice. Rincian sumber kini membuka isi pada kartu dan mempertahankan fokus. Alur dua lebar dibuktikan dengan fixture lokal dan PM sintetis pada demo publik. Uji MySQL memverifikasi saldo parsial dan pembatasan PDF sesuai laporan terbit terbaru. Restore disposable lulus. Holsite 26/36. Aturan milestone dan reschedule menunggu Finance dan PM. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Identitas material dan nama tabel RAP
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel f82929f32ec86723cf60783ce8e77f7f8654e769 pada UI-08.2, UI-09.2 dan UI-09.3 menjaga kolom identitas material saat tabel pembelian RAP bergulir di HP. Tabel pekerjaan dan kebutuhan memiliki nama aksesibel berbeda. Kedua nama diverifikasi lokal. Demo publik memverifikasi tabel pembelian terisi pada 390 dan 1.440 px serta gulir di HP. Regresi MySQL menguji konversi unit, pembulatan pembelian, penerimaan dan PDF RAP multipart dengan pembatasan peran serta checksum. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
