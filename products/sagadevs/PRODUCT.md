@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Pustaka laporan per proyek dan peran
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 2718ffcee286d10b6de2f473d749ed3decd7aed7 mengelompokkan Laporan, Master Data dan Pengaturan. Pustaka menggunakan konteks proyek pada URL untuk membuka progres, formulir laporan Portal dan PDF RAP, Penawaran, PO atau Finance sesuai peran. Uji sintetis membuktikan pemulihan pilihan proyek, ruang lingkup formulir dan checksum unduhan. UI-08.3 lulus, 24 dari 36 pemeriksaan. Laravel demo aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Rekapitulasi dan jejak item RAP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b3203158961566e379d7661611f2a412d649fc25 menampilkan subtotal RAP per area dan pintasan dari item ke BUV serta pecah bahan berdasarkan versi yang sedang dilihat. Fixture sintetis merekonsiliasi 10 m3 neto, Rp1.420.000 untuk item, dan total RAP Rp1.620.000. Revisi draf terpisah sementara PDF baseline mempertahankan checksum dan sumber. UI-08.2 lulus, 23 dari 36 pemeriksaan. Laravel demo aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
