@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: konteks laporan Portal
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f92a5caf4ed949a54df0eb5fd9b5f80f7f5dfa6c menandai laporan terbaru dan historis, memisahkan cut-off dan waktu terbit, dan mempertahankan filter saat kembali ke laporan terbaru. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Di https://26b62e98.arkarupa-prototype.pages.dev/#/renovasi-demo/portal, Pages menampilkan status laporan dan tombol kembali ke laporan terbaru. Change Log tersedia di https://26b62e98.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Finance dan PM masih perlu mengesahkan basis RAB, cakupan kas dan pembulatan. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: saldo dan penelusuran stok
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 64522db540bfc31067d6e6ead61b45991c8f882e menampilkan saldo bersama satuan dan pencarian material pada cut-off. Chrome 390 dan 1440 px, regresi MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Di https://d43d3860.arkarupa-prototype.pages.dev/#/renovasi-demo/belanja, Pages menonjolkan stok tersisa dan menyaring penerimaan atau pemakaian tanpa perubahan saldo atau draf input. Change Log tersedia di https://d43d3860.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi memerlukan akun demo sintetis berwenang. Keputusan pajak, diskon dan metode bayar nota, staging, UAT dan PILOT_READY masih terbuka.
