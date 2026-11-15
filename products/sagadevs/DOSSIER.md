@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-15 - Arkarupa: Aksi BUP dan umpan balik Forecast
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel c74c42c14fd56663c17ea423e93d9a98a25db82a meningkatkan ukuran aksi Laporan baru menjadi 44 px dan mengembalikan fokus setelah dialog BUP ditutup. Pesan seperti syarat RAP tampil sebagai teks di dialog Forecast. Pesan yang memiliki kolom tetap mendukung Enter. Uji sintetis mencakup verifikasi akses dan integritas draf. Holsite tercatat 25 dari 36 pemeriksaan, dengan UI-09.2 parsial. Demo publik Laravel aktif pada c74c42c14fd56663c17ea423e93d9a98a25db82a. Aksi BUP dan dialog Forecast terverifikasi melalui Chrome pada 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Fokus dan pesan kesalahan nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel e3b27daed3e8cd7224c97d47baec3f4c0082a103 menampilkan ringkasan kesalahan di draf nota dan menghubungkan pesan harga serta penyesuaian ke kolom. Aksi ringkasan minimal 44 px, dan Enter memindahkan fokus ke kolom yang salah. Uji browser juga memeriksa fokus ringkasan di dalam dialog Forecast serta pemisahan izin. Cakupan Holsite 25 dari 36 pemeriksaan. UI-09.2 parsial dengan audit aksesibilitas lintas modul masih terbuka. Demo publik Laravel aktif pada e3b27daed3e8cd7224c97d47baec3f4c0082a103. Login dan asosiasi kolom serta fokus keyboard di Pengadaan lulus di Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
