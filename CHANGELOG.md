@@ -1,5 +1,9 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-15 - Arkarupa: saldo dan navigasi invoice termin
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f9f2792aa2afb5954cff4ed413c0578b4b303aa2 memisahkan total invoice, sisa dan jatuh tempo serta memberi navigasi keyboard dua arah antara rencana termin dan daftar invoice. Pengajuan belum menjadi piutang. Chrome dan MySQL sintetis membuktikan invoice Rp50 juta, pembayaran Rp20 juta, saldo Rp30 juta, PDF berdasarkan izin dan penolakan penagihan ganda. UI-07.1 menunggu keputusan milestone, tanggal dan persetujuan reschedule. Matriks Holsite mencatat 21 dari 36 pemeriksaan lulus. Demo Laravel aktif b8ab127 menunggu akun sintetis berwenang untuk promosi. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: pemulihan pembacaan PDF nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 6867160c3f735195f591b61140c7e404aae1968f menampilkan panel pemulihan PDF nota dengan identitas lampiran, fokus dan tindakan baca ulang. Chrome HP dan desktop membuktikan pemulihan draf dan hak akses lampiran. Fixture membuktikan dua PDF tetap tersimpan tanpa posting persediaan atau kas saat membaca ulang atau menyimpan draf. UI-06.4 masih terbuka untuk OCR foto. UI-06.2 lulus pada fixture stok, biaya, dua pembayaran dan sisa utang. 21 dari 36 pemeriksaan tercatat. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
