@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-15 - Arkarupa: Fokus dan pesan kesalahan nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel e3b27daed3e8cd7224c97d47baec3f4c0082a103 menampilkan ringkasan kesalahan di draf nota dan menghubungkan pesan harga serta penyesuaian ke kolom. Aksi ringkasan minimal 44 px, dan Enter memindahkan fokus ke kolom yang salah. Uji browser juga memeriksa fokus ringkasan di dalam dialog Forecast serta pemisahan izin. Cakupan Holsite 25 dari 36 pemeriksaan. UI-09.2 parsial dengan audit aksesibilitas lintas modul masih terbuka. Demo publik Laravel aktif pada e3b27daed3e8cd7224c97d47baec3f4c0082a103. Login dan asosiasi kolom serta fokus keyboard di Pengadaan lulus di Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Pulihkan draf BUP dan Forecast
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel d7496038cfe9be77aa403ee33de9224a67698f85 membedakan status simpan draf BUP dan Forecast, menyediakan Simpan ulang teks setelah koneksi kembali, dan memulihkan isian pada sesi browser baru. Uji sintetis membuktikan satu perubahan draf per isian dan pemisahan akses per akun. Uji nota, validasi, konflik, akses dan laporan kosong diulang pada kandidat yang sama. UI-09.1 lulus, 25 dari 36 pemeriksaan terverifikasi. Demo publik Laravel aktif pada d7496038cfe9be77aa403ee33de9224a67698f85. Login dan alur status draf BUP serta Forecast lulus di Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
