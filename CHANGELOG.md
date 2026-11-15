@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Lingkup lokasi dan pemulihan filter volume tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel d63d32ba587fd436ef41dbf9c28429becfd02ab4 pada REV-010, UI-07.4 dan UI-09.2 menunjukkan cut-off dan lokasi di rekap BUP terverifikasi. Hapus filter lokasi memfokuskan hasil dan mempertahankan tanggal. Fixture lokal membuktikan cut-off historis, hubungan ke Absensi serta izin QS dan Pelaksana. Chrome 320/390/1440 dan regresi MySQL lulus. Demo membuktikan dua hasil, satu lokasi tersaring dan pemulihan fokus. Restore disposable lulus. Holsite 26/36. Field dan Finance melanjutkan definisi OH serta upah. PM melanjutkan dasar rework dan kecukupan kohort. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Penyesuaian biaya dan fokus diskon nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel b56f00aca0e2cbf8d6b8ad42a4294c48786ac0e5 pada REV-005, UI-06.1 dan UI-09.2 memperlihatkan tanda diskon, pajak dan biaya tambahan di Draf nota. Pintasan memfokuskan Diskon dan menjaga isian draf. Chrome 320/390/1440 dan regresi MySQL membuktikan nominal, penolakan diskon melebihi subtotal serta pemulihan isian di fixture lokal. Demo membuktikan pintasan dan isian yang bertahan di draf kosong. Restore disposable lulus. Holsite 26/36. Procurement dan Finance melanjutkan pilihan metode bayar. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
