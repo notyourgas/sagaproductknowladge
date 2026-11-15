@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Periode hasil dan pintasan filter Dashboard
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 71882367cb9c9c7845bf69b294bf1ad61bcf01ef pada UI-01.2, UI-01.4 dan UI-09.2 menampilkan periode efektif Dashboard dan mengembalikan fokus dari status proyek ke filter. Proyek dan tanggal dipertahankan. Ketika rentang tidak valid, hasil menjelaskan penggunaan bulan ini dan input tetap dapat dikoreksi. Uji Chrome mencakup batas Pelaksana, rekonsiliasi saldo dan arus periode, serta tampilan publik 390/1440 px. Regresi terfokus Dashboard serta pemulihan disposable lulus. Holsite 26/36, UAT fisik dan staging privat terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Safe area drawer dan fokus pembaca layar
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 2409170eb7e12589f4a0ead7e6dbe78e5c6de181 pada UI-02.2 dan UI-09.2 mengikuti safe area portrait dan landscape pada drawer mobile. Saat menu terbuka, konten latar tidak menerima fokus dan tidak tampil dalam pohon aksesibilitas Chrome. Escape dan Tutup menu mengembalikan konten dan fokus menu. Uji sentuh dan transisi rail 899–900 px menjaga cut-off Workspace. Uji laporan fixture mempertahankan proyeksi enam peran. Regresi lengkap lulus 116 tes dan 2343 asersi. Backup dan pemulihan disposable lulus pada 28 migrasi. Holsite 26/36. Uji perangkat fisik dan staging privat, UAT serta PILOT_READY terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/ terverifikasi pada 390, 768, dan 1.440 px. Pages c6baa67a masih memerlukan autentikasi Wrangler untuk koreksi penamaan AHSP.
