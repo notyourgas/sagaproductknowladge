@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Subtotal area RAP dan navigasi bukti item
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 50d82b56fbb16c29f5ab6c3540b82faee9653c5c pada UI-08.2 dan UI-09.2 menjelaskan bahwa subtotal per area mencakup alokasi overhead dan cadangan. Rekap menunjukkan biaya langsung, overhead dan cadangan serta tautan dua arah yang memfokuskan judul rekap dan bukti item. Fixture sintetis merekonsiliasi subtotal area dan total RAP. Uji Browser 390/1440 px, sentuhan QS 320 px, batas akses Pelaksana, snapshot dan checksum PDF, serta pemulihan disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY masih terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/. Demo Pages c6baa67a memerlukan autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Status progres dan fokus ringkasan angka proyek
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 969dce263880c95e99318dbbe99f70611693289d pada UI-03.2, UI-03.3 dan UI-09.2 memberi label Belum tersedia pada target dan aktual yang kosong di Workspace. Tautan Ringkasan angka & sumber memfokuskan Posisi proyek di Dashboard. Proyek dan periode tetap dan Back memulihkan Workspace. Browser pada 390/1440 px serta Pelaksana pada 320 px lulus. Regresi terfokus Workspace, sumber progres, PDF privat, batas peran dan pemulihan disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Laravel https://arkarupa-dashboard.vercel.app/. Demo Pages c6baa67a memerlukan autentikasi publikasi koreksi AHSP.
