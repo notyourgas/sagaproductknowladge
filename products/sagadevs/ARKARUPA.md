@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: status dan riwayat review BUP
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f9e3821e0cb446612e33abee6c9e1647a301a10a memisahkan metadata BUP dan memulihkan fokus setelah pengajuan, review serta publikasi. Pelaksana pemilik dan reviewer dapat menelusuri aktor, waktu dan alasan. Foto tetap dibatasi sesuai pemilihan PM. UI-04.4 dan UI-02.4 lulus, 17 dari 36 pemeriksaan. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Rilis menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: legenda Gantt dan cut-off historis
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 00a3ea683815f15bec7563efca5476a8bbbf71d4 memberi legenda Gantt dan tautan dua arah antara Gantt dan Progres resmi pada baseline serta cut-off yang sama. Gantt, Kurva S, tabel, laporan, snapshot Portal dan CSV cocok pada dua cut-off sintetis. UI-04.3 lulus dan matriks proyek mencatat 15 dari 36 pemeriksaan. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Laravel demo aktif b8ab127. Promosi menunggu akun demo sintetis berwenang. Staging, UAT dan PILOT_READY masih terbuka.
