@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-15 - Arkarupa: tanggal PDF dan fokus isian nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel 0a0d178ff088e5cb014b15ecbca90fee3ba499f4 membaca tanggal nota PDF berteks dengan akhir baris CRLF dan menampilkan tanggal dalam format Indonesia. Setelah operator menerapkan identitas, fokus menuju kolom tanggal. Tanggal PDF tidak valid mempertahankan nilai sebelumnya. Chrome HP/desktop, MySQL disposable dan restore 16 migrasi lulus tanpa perubahan draf atau transaksi. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://61b9c1a5.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi memerlukan akun demo sintetis berwenang. Interpreter PDF perlu diuji di staging. Procurement dan Release Lead menetapkan OCR foto/pindai dan retensi bersama Andreas. UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: identitas PDF dan filter selisih nota
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f1c4f10ba321a69508ed2e77d221421a5e30b32d menampilkan supplier, nomor dan tanggal dari PDF berteks dalam kartu terpisah. Purchasing bisa menyaring baris yang perlu diperiksa. Peringatan duplikat dan pembacaan ulang lulus pada Chrome HP dan desktop tanpa perubahan draf tersimpan atau transaksi. MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://cb68a924.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi membutuhkan akun demo sintetis berwenang. Interpreter pembacaan PDF perlu disiapkan di staging. Procurement dan Release Lead menunggu keputusan OCR foto/pindai dan retensi sebelum UAT. PILOT_READY masih terbuka.
