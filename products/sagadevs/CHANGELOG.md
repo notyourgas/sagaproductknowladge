@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Waktu kas dan kembali dari Kurva S
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel df80fd132d30ecbe00db3eaf460806ac77ffb4e1 pada REV-002, UI-05.1 dan UI-09.2 menandai kas yang dibaca saat halaman dibuka. Tautan dari Kurva S memfokuskan ringkasan nilai tanpa mengubah laporan atau filter tagihan. Regresi MySQL 117 tes dan Chrome 390/1440 pada fixture sintetis lulus. Fixture Rp100 juta baseline, Rp40 juta pekerjaan, Rp60 juta sisa dan Rp30 juta kas terverifikasi pada Portal lokal. Demo memverifikasi login, batas akses PM dan stylesheet. Tampilan terisi dibuktikan lokal. Restore disposable lulus. Holsite 26/36. Finance dan PM masih perlu mengesahkan basis nilai pekerjaan dan kas. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Identitas divisi dan pemulihan filter upah
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel edf59a1a145d6018a44ad26424fdee778a4d50a7 pada REV-008, UI-07.2 dan UI-09.2 menonjolkan divisi dan mempertahankan nama serta kode mandor. Tampilkan semua status memulihkan hasil tanpa membuang kata kunci atau urutan. Regresi MySQL dan Chrome 390/1440 pada fixture sintetis lulus. Demo memverifikasi halaman Upah tanpa kewajiban serta stylesheet. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
