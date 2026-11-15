@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Satuan harga dan kembali ke pekerjaan AHSP
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 86bf1b31d9d69d323c91cef2e8d67fdd820ce8f9 pada UI-08.1 dan UI-09.2 memperjelas harga per satuan pada Master AHSP. Tautan kembali memfokuskan pekerjaan yang sama di Rekap AHSP atau kolom pencarian bila hasil sudah berganti. Chrome 390/1440 dan regresi MySQL pada fixture sintetis lulus. Demo membuktikan nama modul, keadaan awal dan stylesheet. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Penanda tanggapan dan akses dampak VO
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel a35dc00f48b809d952a1c5a68609458fa3de7d99 pada REV-003, UI-05.2 dan UI-09.2 menyamakan lencana revisi yang bisa ditanggapi antara daftar dan detail. Tautan Tinjau dampak revisi memfokuskan judul VO yang sama dan mempertahankan pilihan serta catatan. Chrome 390/1440 membuktikan perubahan pada fixture sintetis. Demo memverifikasi login, batas akses PM dan stylesheet. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
