@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Total draf nota dan fokus barang baru
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel e39a87fbbeebf4cf9acc966f0fa5a4e8996b7211 pada REV-005, UI-06.1 dan UI-09.2 memperjelas total draf nota serta memfokuskan nama barang yang baru ditambahkan. Isian tetap bertahan setelah menambah atau menghapus baris. Fixture sintetis merekonsiliasi subtotal, diskon, pajak, biaya tambahan dan total, tanpa posting stok, biaya atau kas. Regresi mencakup retur dan hak akses lampiran privat. Demo publik memverifikasi fokus barang baru dengan sesi PM sintetis tanpa menyimpan nota. Pemulihan disposable lulus. Holsite 26/36. Metode bayar menunggu Finance dan Procurement. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Identitas tim BUP dan pemulihan filter laporan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel cc2bad08332e7275162367c4dab7d7d5e696be51 pada REV-011, UI-04.2, UI-04.4 dan UI-09.2 menampilkan mandor dan divisi pada metadata kartu BUP serta label Belum tercatat pada laporan tanpa tim. Tindakan Tampilkan semua laporan memulihkan daftar dan fokus Semua setelah filter kosong. Fixture sintetis merekonsiliasi koreksi pada penugasan asal dan progres terverifikasi, dengan laporan menunggu tetap dikecualikan. Regresi Portal membuktikan batas publikasi foto privat dan progres, dan emulasi 320 px membuktikan batas Pelaksana. Demo Laravel https://arkarupa-dashboard.vercel.app/ dan pemulihan disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
