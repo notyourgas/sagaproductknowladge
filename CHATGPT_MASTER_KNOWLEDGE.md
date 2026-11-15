@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Identitas versi dan pintasan tabel Gantt
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 9815aba75a2e087de641b489a6b45e4ee066afff pada REV-012, UI-04.3 dan UI-09.2 membedakan versi jadwal dan kontrak pada header. Pintasan memfokuskan tabel dengan versi dan cut-off tetap. Fixture sintetis memverifikasi dua keadaan filter dan mencocokkan unduhan CSV dengan data pada cut-off. Chrome 390/1440 dan regresi MySQL lulus. Demo memverifikasi lencana dan pintasan pada Gantt terisi. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Satuan harga dan kembali ke pekerjaan AHSP
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 86bf1b31d9d69d323c91cef2e8d67fdd820ce8f9 pada UI-08.1 dan UI-09.2 memperjelas harga per satuan pada Master AHSP. Tautan kembali memfokuskan pekerjaan yang sama di Rekap AHSP atau kolom pencarian bila hasil sudah berganti. Chrome 390/1440 dan regresi MySQL pada fixture sintetis lulus. Demo membuktikan nama modul, keadaan awal dan stylesheet. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
