@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: Jumlah hasil dan pemulihan pencarian proyek
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel bde93886ea75a6dbde5137b15cf030fda1352714 menampilkan jumlah hasil pencarian Proyek sebagai lencana status. Ubah pencarian memfokuskan kolom dan menyeleksi kata kunci lama ketika hasil kosong. Uji 320 px dengan sentuh emulasi membuktikan konteks pencarian kembali dari Workspace. Pencarian nomor proyek mengikuti lingkup penugasan pada fixture yang mewajibkan penugasan. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada bde93886ea75a6dbde5137b15cf030fda1352714. Lencana jumlah hasil dan pemulihan pencarian Proyek lulus pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
+
 ## 2026-11-15 - Arkarupa: Status manual dan fokus checklist penutupan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 5fd1abe39b495aaf0d8a036f081547f900c02ac8 membedakan Konfirmasi manual di Workspace dengan garis putus-putus kontras. Enter pada Penutupan memfokuskan judul dan Tab berikutnya mencapai tautan yang menyebut pemeriksaan sumber. Pada fixture, checklist tetap membaca laporan terbuka, saldo Finance dan retensi manual sesuai sumber. Purchasing melihat status manual tanpa kewenangan pengajuan atau saldo Finance. Regresi 116 tes dan 2.343 asersi lulus. Backup dan restore disposable lulus pada 28 migrasi. Holsite 26 dari 36. Perangkat fisik, staging, UAT dan PILOT_READY masih terbuka. Demo publik Laravel aktif pada 5fd1abe39b495aaf0d8a036f081547f900c02ac8. Status dan pintasan checklist Workspace lulus pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi.
