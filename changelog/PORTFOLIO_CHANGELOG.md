@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-15 - Arkarupa: identitas PDF dan filter selisih nota
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f1c4f10ba321a69508ed2e77d221421a5e30b32d menampilkan supplier, nomor dan tanggal dari PDF berteks dalam kartu terpisah. Purchasing bisa menyaring baris yang perlu diperiksa. Peringatan duplikat dan pembacaan ulang lulus pada Chrome HP dan desktop tanpa perubahan draf tersimpan atau transaksi. MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://cb68a924.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127. Promosi membutuhkan akun demo sintetis berwenang. Interpreter pembacaan PDF perlu disiapkan di staging. Procurement dan Release Lead menunggu keputusan OCR foto/pindai dan retensi sebelum UAT. PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: dampak kontrak dan kembali ke daftar revisi
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel d1c23e9029f496fca7db2ba859dda01fa330a9c2 menampilkan kartu nilai kontrak sebelum, sesudah dan perubahan durasi pada revisi. Tautan kembali mengarahkan fokus ke daftar dan mempertahankan isian draf. Chrome 390/1.440 px, validasi klarifikasi, MySQL disposable dan restore 16 migrasi lulus. DEMO_PUBLIC. Pages menerbitkan entri Change Log di https://630bf269.arkarupa-prototype.pages.dev/#/changes. Demo Laravel aktif b8ab127 dan promosi membutuhkan akun demo sintetis berwenang. Andreas, PM dan perwakilan klien menetapkan peran penerbit dan pemeriksa keputusan sebelum UAT. Staging dan PILOT_READY masih terbuka.
