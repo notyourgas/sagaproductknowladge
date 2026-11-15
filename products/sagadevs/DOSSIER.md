@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Jumlah versi dan hapus pencarian Document Center
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 5593fc24c42ef41d14d1ce8247314775d92c3f43 pada REV-004, UI-05.3 dan UI-09.2 menonjolkan jumlah hasil dan memberi tindakan Hapus pencarian pada hasil kosong. Filter kategori dan versi dipertahankan serta fokus kembali ke input. Fixture sintetis lokal memverifikasi versi terbit/arsip, checksum pratinjau dan unduhan, serta penolakan setelah akses dicabut. Demo memverifikasi pengalihan ke login, batas akses PM, dan stylesheet. Tampilan terisi diverifikasi lokal karena runtime publik belum memiliki akun Klien sintetis. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Tanggal rekap dan fokus setelah koreksi absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 6dbce305442157424d36b9aba75277a215652436 pada REV-009, UI-07.3 dan UI-09.2 menampilkan tanggal pada rekap dan menahan konteks keyboard setelah koreksi. Fokus kembali ke aksi baris atau filter aktif bila baris hilang dari hasil. MySQL disposable membuktikan revisi v2 dan penugasan tetap, tanpa transaksi upah baru. Demo publik memverifikasi tanggal dan filter pada 390 serta 1.440 px. Koreksi disimpan pada fixture lokal. Restore disposable lulus. Holsite 26/36. Field dan Finance masih menetapkan konversi OH dan kaitannya ke upah. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
