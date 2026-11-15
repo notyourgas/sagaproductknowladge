@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Nilai kontrak dan kembali ke revisi yang sama
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 2f820aa4b395a5c4c97ee3c7204868501437c426 pada REV-003, UI-05.2 dan UI-09.2 menonjolkan nilai kontrak sesudah pada lembar revisi. Kembali ke daftar memfokuskan tautan VO yang sedang dibaca dan mempertahankan isian tanggapan. Fixture sintetis pada 390 dan 1.440 px membuktikan alur, pemisahan berkas terbit dari lampiran privat, serta penerapan nilai tepat satu kali. Demo publik membuktikan pengalihan ke login, penolakan peran internal dan stylesheet baru. Tampilan terisi dan tanggapan klien diverifikasi lokal. Restore disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Hierarki EAC dan perlindungan isian ETC
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 472db15b0238deb18a024924bd7e331bed0319fd pada UI-09.1 dan UI-09.2 memperjelas EAC, status review dan nilai ETC. Mengisi ETC dari komitmen hanya melengkapi kolom kosong dan mempertahankan nilai nol maupun alasan review. Chrome lokal membuktikan alur dengan forecast sintetis yang disetujui. Demo publik diverifikasi dengan akun PM sintetis dan keadaan EAC belum tersedia. Regresi menjaga perhitungan aktual dan komitmen, validasi persetujuan, hak akses serta PDF klien. Pemulihan disposable lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Demo Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
