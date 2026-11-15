@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-15 - Arkarupa: Hierarki saldo dan aksi unduh invoice
+
+CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f911f2ae731d6580bd051d3271530e090709c9ef membedakan sisa piutang aktif dari rincian invoice dan memberi tautan PDF setinggi 44 px dengan nomor invoice. Enter mengunduh PDF yang sama pada fixture sintetis. Finance dan PM masih perlu menetapkan milestone, tanggal, dan persetujuan penjadwalan ulang REV-007. Regresi lulus 116 tes dan 2.343 assertion. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-02.2 dan UI-09.2 belum tuntas. Uji Android dan iPhone fisik masih terbuka. Demo publik Laravel aktif pada f911f2ae731d6580bd051d3271530e090709c9ef. Halaman Termin & Invoice, stylesheet saldo dan reflow terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Status HSD dan pemulihan pencarian AHSP
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel b804e43c8ef9e1624d323cff283036fcc3dbb7f7 menonjolkan peringatan harga satuan belum lengkap pada Rekap AHSP. Hapus pencarian memulihkan daftar, fokus dan rekap terpilih. Uji sintetis memeriksa HSD yang hilang, satuan berbeda, harga lengkap dan referensi tanpa koefisien. Regresi lulus 116 tes dan 2.343 assertion. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-02.2 dan UI-09.2 belum tuntas. Uji Android dan iPhone fisik masih terbuka. Demo publik Laravel aktif pada b804e43c8ef9e1624d323cff283036fcc3dbb7f7. Pemulihan fokus pencarian AHSP dan stylesheet peringatan terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
