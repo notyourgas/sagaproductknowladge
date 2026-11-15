@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-15 - Arkarupa: Identitas material dan fokus cut-off stok
+
+CONFIRMED / LOCAL_VALIDATED (browser dan rekonsiliasi). Kandidat Laravel 4ba49406ef3862644cc2c632864f7193bc077e01 mempertahankan nama material saat tabel Saldo stok digulir pada HP. Enter pada Kembali ke stok hari ini mengembalikan fokus ke input tanggal. Fixture sintetis merekonsiliasi 60 buah saldo pembuka, 8 buah terpakai, dan 52 buah tersedia pada tanggal hari ini. Tanggal historis hanya memuat kejadian sampai cut-off. Regresi MySQL penuh dan promosi menunggu. Refresh skema disposable melampaui jendela pengujian. Demo publik Laravel terverifikasi pada f911f2ae731d6580bd051d3271530e090709c9ef. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-02.2 dan UI-09.2 belum tuntas. Uji Android dan iPhone fisik masih terbuka. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
+
 ## 2026-11-15 - Arkarupa: Hierarki saldo dan aksi unduh invoice
 
 CONFIRMED / LOCAL_VALIDATED. Kandidat Laravel f911f2ae731d6580bd051d3271530e090709c9ef membedakan sisa piutang aktif dari rincian invoice dan memberi tautan PDF setinggi 44 px dengan nomor invoice. Enter mengunduh PDF yang sama pada fixture sintetis. Finance dan PM masih perlu menetapkan milestone, tanggal, dan persetujuan penjadwalan ulang REV-007. Regresi lulus 116 tes dan 2.343 assertion. Holsite tercatat 26 dari 36 pemeriksaan dengan UI-02.2 dan UI-09.2 belum tuntas. Uji Android dan iPhone fisik masih terbuka. Demo publik Laravel aktif pada f911f2ae731d6580bd051d3271530e090709c9ef. Halaman Termin & Invoice, stylesheet saldo dan reflow terverifikasi setelah login pada Chrome 390 dan 1.440 px. Change Log Pages https://c6baa67a.arkarupa-prototype.pages.dev/#/changes terverifikasi. Staging, UAT dan PILOT_READY masih terbuka.
