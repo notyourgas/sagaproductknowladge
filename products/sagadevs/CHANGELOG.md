@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Laporan aktif dan pulih dari halaman kosong
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 73c1f18cce2b86fb0b5f4b0ad50aaa73b690a68d menandai laporan yang sedang dibuka dan memulihkan halaman riwayat di luar jangkauan dengan filter tetap. Alur klien lulus pada fixture lokal. Demo publik memverifikasi login Portal, pembatasan akses PM dan versi aset. Holsite 27/36. UI-05.1 menunggu persetujuan basis realisasi dan kas. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Porsi termin dan navigasi daftar invoice
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 4c1d9cb933ed11b14cbd97e8564d8dc3fbdab727 memperlihatkan porsi masing-masing termin Finance dan memberi jalur keyboard dari panel tanpa kontrak ke daftar invoice. Fixture sintetis dan Chrome demo lulus. Holsite 27/36. UI-07.1 menunggu keputusan Finance dan PM tentang pemicu milestone, tanggal dan persetujuan perubahan jadwal. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
