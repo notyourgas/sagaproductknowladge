@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Keadaan kosong invoice dan kembali ke termin
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b6a804136f968caba4069e742ab7f5599f51fabc menampilkan panel kosong daftar invoice dan aksi keyboard dalam panel menuju rencana termin proyek yang sama. Chrome memverifikasi kondisi kosong dan alur rincian invoice terisi. Fixture kontrak, sertifikat, alokasi, saldo dan kas cocok. Holsite 27/36. Pemicu milestone dan persetujuan reschedule UI-07.1, staging privat, UAT operator dan PILOT_READY masih terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Nilai draf dan akses total nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ea649390105c90cf829318d9001aa27063be86d0 menandai total nota sebagai nilai draf dan menyediakan pintasan keyboard ke ringkasan. Chrome pada fixture sintetis membuktikan retensi isian dan pemulihan diskon. Demo publik mengonfirmasi fokus pintasan. Nilai draf, metadata PDF, dan hitungan terkait stok, biaya, Finance dan kas tetap cocok. Holsite 27/36. Metode bayar dan dampak jurnal UI-06.1, staging privat, UAT operator dan PILOT_READY masih terbuka. Demo statis c6baa67a.
