@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Periode dan fokus Ringkasan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel e25aec102b4895882e62b9da648ff06fec6ec337 menampilkan periode hasil dan sumber saldo kumulatif dalam satu panel dengan label terpisah. Filter yang berhasil memfokuskan Posisi proyek. Verifikasi browser, pemulihan rentang terbalik, rekonsiliasi kas sintetis, regresi dan restore disposable lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Ringkasan dan navigasi penutupan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 5a956253a9e69d342c4a420aa7f8c99411aa4d38 menampilkan ringkasan status penutupan berdasarkan checklist yang terlihat untuk peran aktif. Tautan kembali memfokuskan tahap Penutupan dan menjaga konteks proyek. Verifikasi browser, pembatasan peran, rekonsiliasi sintetis, regresi dan restore disposable lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
