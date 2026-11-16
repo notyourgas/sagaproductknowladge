@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Penanda saldo nol dan pemulihan tujuan penerimaan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel f0bf5d4923d71c428354b063289fb63e68fded7a pada REV-005, UI-06.2 dan UI-09.2 menandai saldo nol pada cut-off serta memulihkan riwayat dari tujuan kosong dengan fokus yang jelas. Fixture membuktikan keadaan sebelum penerimaan, saldo nol dan saldo setelah pembalikan. Pencarian stok dan cut-off tetap saat tujuan dikosongkan. Catatan penerimaan, stok, biaya, utang dan kas konsisten. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Procurement dan Finance masih perlu mengesahkan metode bayar nota. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Jatuh tempo lewat dan tautan balik ke sertifikat
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 295f371acb360d77c84eb91540fcd8d7de7957ec pada REV-007, UI-07.1 dan UI-09.2 menandai invoice bersaldo yang lewat tanggal WIB dan menautkan invoice terbit ke sertifikat sumber. Fixture membuktikan pemisahan jatuh tempo hari ini, tautan dua arah, checksum PDF Finance dan PM, dan ledger piutang yang sama. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. PM dan Finance masih perlu mengesahkan milestone, tanggal dan persetujuan reschedule. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
