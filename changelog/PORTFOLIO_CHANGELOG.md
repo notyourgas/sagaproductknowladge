@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Hasil kosong dan koreksi pencarian Rekap AHSP
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b5a241bf830ba4dba51b620bdb964599c18994b0 menandai hasil kosong Rekap AHSP dan menyediakan aksi untuk memfokuskan sekaligus menyeleksi istilah pencarian. QS menguji pemulihan menuju Master AHSP pada fixture. PM sintetis menguji batas filter dan fokus pada demo publik. Nilai lengkap Rp142.000/m³ dan HSD yang belum lengkap cocok pada fixture. Holsite 27/36. Staging privat, UAT perangkat dan PILOT_READY terbuka. Demo statis c6baa67a masih menunggu autentikasi Wrangler untuk koreksi label terpisah.
+
 ## 2026-11-17 - Arkarupa: Kolom aktual dan fokus rincian Kurva S
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f53fd2e37e5a583134fed6b395daa194704d3cad membedakan kolom Aktual pada rincian Kurva S dan menyediakan tautan ke kontrol rincian. Browser klien pada fixture menguji fokus, penutupan tabel, pembatasan proyek dan PDF terbit. Template dan stylesheet demo publik cocok, dengan login dan batas akses diuji terpisah. Holsite 27/36. Dasar harga, kas dan pembulatan UI-05.1, staging privat, UAT dan PILOT_READY terbuka. Demo statis c6baa67a.
