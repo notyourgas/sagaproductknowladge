@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Safe area dan gulir Aksi cepat
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7523e10afc9fe5bb68aca85fe2e73d29f2161c05 menahan Aksi cepat Workspace di safe area dan mengunci gulir halaman saat dialog terbuka. Gulir isi dialog pada lanskap pendek dan pemulihan fokus lulus di Chrome dengan fixture sintetis. Demo Workspace memverifikasi perubahan. Holsite 27/36. UI-02.2 dan UI-09.4 menunggu perangkat fisik. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Kontras pilihan dan fokus pemilih keyboard
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel f2c703dbd5908560535d41f5eba3f031278ced5d menonjolkan pilihan aktif dengan kontras monokrom. Enter dan Spasi membawa fokus ke pencarian pemilih. Escape atau pemilihan mengembalikan fokus. Fixture sintetis dan demo Barang Datang lulus. Holsite 27/36 berdasarkan matriks penerimaan. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.

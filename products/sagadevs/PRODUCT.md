@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Safe area dan gulir Aksi cepat
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7523e10afc9fe5bb68aca85fe2e73d29f2161c05 menahan Aksi cepat Workspace di safe area dan mengunci gulir halaman saat dialog terbuka. Gulir isi dialog pada lanskap pendek dan pemulihan fokus lulus di Chrome dengan fixture sintetis. Demo Workspace memverifikasi perubahan. Holsite 27/36. UI-02.2 dan UI-09.4 menunggu perangkat fisik. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Kontras pilihan dan fokus pemilih keyboard
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel f2c703dbd5908560535d41f5eba3f031278ced5d menonjolkan pilihan aktif dengan kontras monokrom. Enter dan Spasi membawa fokus ke pencarian pemilih. Escape atau pemilihan mengembalikan fokus. Fixture sintetis dan demo Barang Datang lulus. Holsite 27/36 berdasarkan matriks penerimaan. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
