@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Jumlah hasil dan kembali ke rekap absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6b91077cfb062e5a6bec4f98f52dda5ce58544fd memperjelas jumlah hasil absensi dan menambah navigasi keyboard dari daftar ke rekap harian. Finance menguji pemulihan pencarian serta hak baca pada fixture, dan PM sintetis memverifikasi jumlah, fokus dan retensi tanggal pada demo publik. Hitungan dua hari dan sidik data sumber cocok. Holsite 27/36. Dasar OH dan kaitan upah UI-07.3, staging privat, UAT perangkat dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Jumlah lampiran dan kembali ke editor nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 893346aa63a4f3227033a72f4bcbec0ca0e1110c memperjelas kapasitas terpakai pada Lampiran privat dan menambahkan pintasan keyboard ke editor. Fixture membuktikan retensi masukan, pemulihan kegagalan unggah sementara, checksum PDF asli dan draf Rp180.000 tetap cocok. PM sintetis memverifikasi hitungan serta tautan pada demo publik. Holsite 27/36. Pilihan OCR foto, retensi, staging privat, UAT perangkat dan PILOT_READY terbuka. Demo statis c6baa67a.
