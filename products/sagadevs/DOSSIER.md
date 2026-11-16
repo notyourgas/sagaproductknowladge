@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Cakupan alokasi dan pemulihan pihak pembayaran
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-007, UI-07.1 dan UI-09.2, kandidat Laravel dd630a1b7476d1cee380aef24512cbe614bb82fe menampilkan pihak dan jumlah dokumen terbuka pada panel alokasi. Dari hasil kosong, Finance dapat mengembalikan fokus ke pemilih sambil mempertahankan nominal dan referensi. Fixture merekonsiliasi saldo Rp31 juta dan jumlah transaksi tetap. Regresi, restore disposable dan smoke Finance sintetis lulus. Matriks Holsite 26/36. PM dan Finance masih menetapkan milestone, tanggal dan persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Identitas nota dan koreksi tanggal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-005, UI-06.1 dan UI-09.2, kandidat Laravel 6f73baf6f05f150b019004fdeb0fbca131ed91fd mengelompokkan identitas nota dan menghubungkan pesan supplier dan tanggal berbahasa Indonesia ke kolom terkait. Pengguna dapat memperbaiki tanggal dengan nomor nota tetap terisi. Fixture mengonfirmasi hash draf, metadata lampiran dan catatan transaksi tetap. Regresi, restore disposable dan smoke PM sintetis lulus. Matriks Holsite 26/36. Procurement dan Finance masih menetapkan metode bayar. Staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
