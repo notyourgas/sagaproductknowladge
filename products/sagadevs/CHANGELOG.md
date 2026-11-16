@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Status lampiran dan fokus simpan draf
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b78cdb113e4af200b93941a44831eff7b1b1bd75 menonjolkan prasyarat simpan sebelum unggah lampiran. Pintasan memfokuskan tombol simpan dan mempertahankan isian sementara. Demo publik dan fixture lokal memverifikasi alur. Holsite 27/36. UI-06.1 menunggu metode bayar dan aturan pembukuan. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Penanda arsip dan tautan Kurva S terbaru
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel da9e2728f262480333cb1634a3b82d8c628d2d42 menonjolkan status arsip dan menautkan Kurva S terbaru saat data arsip kosong. Fixture memverifikasi navigasi, filter tagihan, PDF, dan izin klien. Demo publik memverifikasi jalur login dan pembatasan akses. Holsite 27/36. UI-05.1 menunggu pengesahan basis nilai pekerjaan dan kas. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
