@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Kontras dan pesan pemilih bersama
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-001, REV-005 dan UI-09.2, kandidat Laravel b29e8e7cae7106bc290fefb0da52fcede3ac106f menampilkan label pilihan, penanda invalid dan keterangan yang dibaca kontrol keyboard. Pesan item BUP memakai bahasa Indonesia. Fixture memastikan volume resmi dan jumlah catatan tetap serta memeriksa pemilih stok dan Dashboard. Regresi, restore disposable dan smoke PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Jumlah hasil dan pemulihan pencarian pekerjaan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-01.2, UI-03.2 dan UI-09.2, kandidat Laravel d5a1a50f387437984c4e4c56819e3e3cc04cbf4a membedakan hasil dan total tindak lanjut pada Dashboard Utama dan Workspace. Aksi pada hasil kosong mengembalikan fokus ke pencarian dengan proyek dan periode tetap. Fixture mengonfirmasi daftar sumber yang sama dan alur Pelaksana ke laporan harian sesuai izin. Regresi, restore disposable dan smoke PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
