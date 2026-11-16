@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Identitas PDF dan fokus lampiran sumber
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 59bd378710cdedc1a089b170ff5aac335419609c menandai PDF nota aktif dan mengembalikan fokus ke lampiran sumber. Fixture lokal memverifikasi dua PDF dan checksum. Demo publik memverifikasi jalur isi manual. Holsite 27/36. UI-06.4 menunggu keputusan OCR foto dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Jenis invoice dan tutup rincian sumber
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 79d6874f31ba981734c415af88610d8ea1e2915f menampilkan jenis invoice dan menutup rincian sumber saat kembali ke dokumen. Fixture lokal memverifikasi PDF, pemisahan dua panel dan pencatatan kas. Demo publik memverifikasi Termin dan fokus invoice asal. Holsite 27/36. UI-07.1 menunggu keputusan milestone, tanggal dan persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
