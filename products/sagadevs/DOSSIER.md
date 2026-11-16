@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Penanda revisi dan pintasan pencarian draf
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 4d1a9bf205a21871cc51fc27b4908848086cab14 pada REV-005, UI-06.1 dan UI-09.2 memisahkan tanggal dari lencana revisi dan memfokuskan pencarian draf dengan isian editor tetap terjaga. Chrome 320/390/1440, rekonsiliasi draf Rp170 ribu, pencarian terisolasi per proyek, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi pintasan dan fokus. Holsite 26/36. Procurement dan Finance masih perlu menyetujui metode bayar dan kaitan pembayaran. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Status daftar dan pintasan ringkasan invoice
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 04758e38e342c5ff410c7ac808219104244c6d27 pada REV-007, UI-07.1 dan UI-09.2 menampilkan keadaan daftar invoice kosong. Pintasan menuju ringkasan pada proyek berkontrak dan rencana termin pada proyek tanpa kontrak. Chrome 320/390/1440, termin Rp30/50/20 juta, saldo Rp30 juta, izin dan checksum PDF, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi pintasan dan peran baca PM. Holsite 26/36. Finance dan PM masih perlu menyetujui milestone, tanggal serta reschedule. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
