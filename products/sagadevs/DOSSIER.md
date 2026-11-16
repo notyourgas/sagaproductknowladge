@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Prioritas checklist penutupan Workspace
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 66304809cd16080c26e647d404e2dea556d05e70 menonjolkan jumlah pemeriksaan penutupan yang perlu ditinjau. Pintasan memfokuskan pemeriksaan pertama dan menjaga rentang laporan Workspace. Demo publik dan fixture lokal memverifikasi alur. Holsite 27/36. UI-06.1 menunggu metode bayar dan aturan pembukuan. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Status lampiran dan fokus simpan draf
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b78cdb113e4af200b93941a44831eff7b1b1bd75 menonjolkan prasyarat simpan sebelum unggah lampiran. Pintasan memfokuskan tombol simpan dan mempertahankan isian sementara. Demo publik dan fixture lokal memverifikasi alur. Holsite 27/36. UI-06.1 menunggu metode bayar dan aturan pembukuan. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
