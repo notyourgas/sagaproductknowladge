@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Status dokumen dan pintasan indeks Workspace
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 7cab47e2d92012cf06429ea420ef2d8f3811701a pada REV-004, UI-03.4 dan UI-09.2 memisahkan lencana status dan waktu di indeks dokumen internal. Pintasan jenis yang tersedia memfokuskan judul dan menjaga kata kunci Workspace dan Dashboard. Fixture membuktikan paginasi 21 lampiran, isolasi proyek dan hak akses PDF PO. Chrome 320/390/1440, regresi MySQL, dan restore lulus. Demo memverifikasi status dan fokus pada Workspace dan Dashboard. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Kas neto dan fokus tutup rincian Dashboard
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel afe880782637c5d881b289fe6f262a4919020717 pada UI-01.3 dan UI-09.2 menampilkan kas neto tanpa transfer pada Dashboard. Tombol di bawah tabel menutup rincian serta mengembalikan fokus ke pemicu. Demo memverifikasi angka dan fokus pada 390/1440. Fixture disposable merekonsiliasi periode harian, bulanan, transfer internal dan izin Pelaksana. Regresi MySQL dan restore lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Finance dan PM melanjutkan keputusan dasar nilai Portal. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
