@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Ringkasan dan navigasi penutupan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 5a956253a9e69d342c4a420aa7f8c99411aa4d38 menampilkan ringkasan status penutupan berdasarkan checklist yang terlihat untuk peran aktif. Tautan kembali memfokuskan tahap Penutupan dan menjaga konteks proyek. Verifikasi browser, pembatasan peran, rekonsiliasi sintetis, regresi dan restore disposable lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Navigasi pada dialog formulir
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-02.2 dan UI-09.2, Laravel 9ad9f846d690edf69910b820f4dc3107fd9cc6d7 menata tiga tombol footer dalam satu baris pada HP, menyembunyikan navigasi bawah saat dialog modal aktif dan memfokuskan pengantar saat formulir dibuka. Verifikasi dialog BUP, keyboard survei, rekonsiliasi sintetis, regresi dan restore disposable lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
