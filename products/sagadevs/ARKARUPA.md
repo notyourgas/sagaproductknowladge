@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Paginasi AHSP dan fokus hasil
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-08.1 dan UI-09.2, Laravel d9fe1600b51b1932853ee1812ccd1717a94a89c0 menandai halaman AHSP aktif dan memfokuskan pekerjaan pertama ketika pengguna berpindah halaman. Uji dua halaman lulus pada fixture lokal. Demo satu halaman memverifikasi kedua kontrol nonaktif. Regresi dan restore disposable lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Cut-off dan navigasi daftar proyek
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel bc072290700ea4a37696612a91deedadbe0b6a87 menampilkan cut-off progres di daftar proyek. Ke hasil proyek memfokuskan jumlah hasil dengan kata kunci tetap terisi. Verifikasi browser, pencarian kosong sesuai izin, rekonsiliasi progres sintetis, regresi dan restore disposable lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
