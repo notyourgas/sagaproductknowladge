@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Status volume kosong dan pintasan absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 6525fb5d06adc39f4b2419200f87266a3fa82743 pada REV-010, UI-07.4 dan UI-09.2 memperjelas volume kosong dan memfokuskan ringkasan absensi sambil mempertahankan cut-off dan filter volume. Hasil BUP 9 m² cocok dengan progres. Absensi dua tim tetap terpisah per tanggal. Chrome 320/390/1440, izin QS/PM, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi panel kosong dan fokus ringkasan. Holsite 26/36. Keputusan OH, biaya, rework dan pembanding masih terbuka. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Penanda revisi dan pintasan pencarian draf
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 4d1a9bf205a21871cc51fc27b4908848086cab14 pada REV-005, UI-06.1 dan UI-09.2 memisahkan tanggal dari lencana revisi dan memfokuskan pencarian draf dengan isian editor tetap terjaga. Chrome 320/390/1440, rekonsiliasi draf Rp170 ribu, pencarian terisolasi per proyek, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi pintasan dan fokus. Holsite 26/36. Procurement dan Finance masih perlu menyetujui metode bayar dan kaitan pembayaran. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
