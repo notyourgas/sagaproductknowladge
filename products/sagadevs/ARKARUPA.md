@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Drawer lanskap dan gulir latar
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f30bcf04172c3dbb6d329a3ce9352f8ff3e27bb5 memakai satu area gulir pada drawer lanskap pendek dan menahan gulir halaman di belakangnya. Chrome dengan safe area simulasi memverifikasi tombol Tutup, Escape dan perpindahan breakpoint. Holsite 27/36. UI-02.2 dan UI-09.4 menunggu HP fisik. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Arah koreksi dan fokus cut-off volume
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 11f4c29e8d0a6f1b3f534d9dfbb72e445f029e95 memberi label pengurangan pada koreksi volume tim dan memulihkan fokus cut-off dengan lokasi tetap. Fixture lokal membuktikan volume dan akses QS. Demo publik memverifikasi keyboard setelah reset tanggal. Holsite 27/36. UI-07.4 menunggu keputusan OH, biaya, rework dan pembanding. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
