@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Tanggal pencatatan dan buka form absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ef8d822f10cfe8e5cf24bc3fe2cf16553f1af347 menonjolkan tanggal pencatatan dan memfokuskan kode pekerja dari hasil kosong. Fixture lokal memverifikasi izin Finance dan rekonsiliasi dua divisi. Demo publik memverifikasi pemulihan tanggal. Holsite 27/36. UI-07.3 menunggu konversi OH dan kaitannya dengan upah. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Identitas PDF dan fokus lampiran sumber
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 59bd378710cdedc1a089b170ff5aac335419609c menandai PDF nota aktif dan mengembalikan fokus ke lampiran sumber. Fixture lokal memverifikasi dua PDF dan checksum. Demo publik memverifikasi jalur isi manual. Holsite 27/36. UI-06.4 menunggu keputusan OCR foto dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
