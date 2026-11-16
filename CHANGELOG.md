@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Ringkasan dan navigasi Pustaka PDF
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-007, UI-08.3 dan UI-09.2, Laravel b02327c795597b3c3574055d9d25d74b965f60b1 menampilkan jumlah PDF terbit pada kategori yang memiliki dokumen. Kembali ke kategori mengembalikan fokus dan menjaga proyek. Fixture membuktikan PDF invoice yang sama dan izin Purchasing. Regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Navigasi dialog formulir
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-001 dan UI-09.2, Laravel 094a893e2d111e9f669cda15261393bc0eb71b55 menampilkan petunjuk draf secara terpisah di footer. Ke awal formulir menempatkan fokus pada pengantar dan Tab meneruskan ke isian. Catatan draf tetap terisi. Uji dialog baca-saja, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
