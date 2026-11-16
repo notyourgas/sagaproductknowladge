@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Pilihan berbagi dan tinjau judul Portal
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel dfb0c34a75f37e5e46685a00215c339a15cb6b96 memisahkan opsi berbagi tagihan dan termin pada Workspace dan menambahkan pintasan peninjauan judul. Demo publik memverifikasi pengisian tanpa publikasi. Fixture lokal memverifikasi integritas laporan, alokasi dan hak Finance. Holsite 27/36. UI-05.1 menunggu pengesahan basis nilai pekerjaan, kas dan pembulatan. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Hari rekap dan pintasan hasil absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 8bdc219e2794f6b315b92d05d53a4589a91764d8 menambahkan nama hari pada rekap absensi dan menautkan rekap langsung ke hasil. Demo publik memverifikasi tanggal serta filter yang bertahan. Fixture lokal memverifikasi pemulihan hasil Finance dan sumber dua tanggal. Holsite 27/36. UI-07.3 menunggu konversi OH dan keterkaitannya dengan upah. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
