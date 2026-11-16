@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Bedakan subtotal dan baris PDF manual
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6ed834fb7e3d2f9775b4cc87e070a59be8277a0d memisahkan selisih subtotal dari baris isi manual. Barang yang terbaca tetap tampil ketika PDF hanya perlu input manual. Fixture lokal memverifikasi filter, input sementara dan checksum asli. Demo publik memverifikasi jalur manual. Holsite 27/36. UI-06.3 menunggu penyedia OCR foto/pindai dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Drawer lanskap dan gulir latar
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f30bcf04172c3dbb6d329a3ce9352f8ff3e27bb5 memakai satu area gulir pada drawer lanskap pendek dan menahan gulir halaman di belakangnya. Chrome dengan safe area simulasi memverifikasi tombol Tutup, Escape dan perpindahan breakpoint. Holsite 27/36. UI-02.2 dan UI-09.4 menunggu HP fisik. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
