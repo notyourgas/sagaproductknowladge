@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Status OH dan pintasan filter absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2fbc2a71d09a3c031d2eaec147ae88484cbc9f38 menandai bahwa orang-hari belum dihitung dan memberi pintasan fokus ke filter absensi aktif. Browser lokal memverifikasi tanggal, status, pencarian serta akses baca Finance. PM sintetis memverifikasi fokus dan status pada demo publik. Data absensi, biaya, Finance, kas dan laporan cocok sebelum dan sesudah. Holsite 27/36. Dasar OH dan kaitannya dengan upah UI-07.3, staging privat, UAT operator dan PILOT_READY masih terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cakupan nilai laporan dan pintasan ringkasan Portal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7d4ffdb2950f834db940bc9ff91ac4512f3bfa68 menandai nilai pekerjaan per cut-off dan memfokuskan ringkasan Portal dari laporan terbit. Fixture lokal membuktikan konteks laporan historis, filter tagihan, checksum PDF dan penolakan akses lintas proyek. Demo publik memverifikasi template, CSS dan batas akses. UI klien terautentikasi diuji lokal karena demo publik belum memiliki akun klien aktif. Holsite 27/36. Basis harga, kas dan pembulatan UI-05.1, staging privat, UAT operator serta PILOT_READY masih terbuka. Demo statis c6baa67a.
