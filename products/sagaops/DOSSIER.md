@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-11-16 - SagaPOS memperpanjang Daily Dose sampai 30 November
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Periode Daily Dose yang semula berakhir 14 November diperpanjang sampai 30 November 2026. Setiap hari pukul 09.00 hingga sebelum 14.00 WIB, harga dasar Americano, Cafe Latte, Cappuccino, Es Kopi Saga, dan Saga Premiyum menjadi Rp12.000 per minuman di Kiosk dan Kasir, untuk makan di tempat dan bawa pulang. Kategori promo mengikuti jadwal tersebut.
+
+Katalog produksi versi 192, revisi 25, memakai source `baca30b712a65054fc3be0a660e3808e0be8e3e5`. Simulasi harga di Kasir dan Kiosk masing-masing menghasilkan Rp60.000 untuk kelima menu tanpa membuat pesanan. Lima uji batas waktu lulus. Perpanjangan mencakup aturan harga dan kategori Daily Dose.
+
 ## 2026-11-15 - Jadwal Admin Studio menampilkan shift Middle
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Dashboard Owner → Jadwal & Shift → Admin Studio menampilkan shift bernama Middle di kolom tersendiri di desktop dan bagian tersendiri per hari di HP. Shift Admin Middle pukul 13.00–20.00 WIB memakai kategori tersebut. Perubahan berlaku pada pengelompokan tampilan kalender dan menggunakan jadwal Studio yang sudah tersimpan.
