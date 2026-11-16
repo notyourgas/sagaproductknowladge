@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Penekanan progres aktual dan kembali ke Workspace
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 09286544ce30f53298791e44ebfb56461324d12e pada UI-03.2, UI-03.3 dan UI-09.2 menonjolkan aktual terverifikasi dan membawa pengguna kembali dari Lapangan ke Workspace dengan proyek, awal periode, cut-off dan fokus. Fixture membuktikan perbandingan dengan sumber, keadaan sebelum baseline dan pemisahan konteks setelah ganti proyek. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Cakupan antrean dan tujuan review Harian
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel f45d189210b6288d505b8b3b2082994928e2d5f3 pada UI-01.3 dan UI-09.2 menampilkan cakupan Perlu perhatian. Antrean Harian dibagi per proyek dan tautan menuju daftar laporan Menunggu dengan fokus pada judul tujuan. Fixture membuktikan jumlah tiap proyek, cakupan Owner dan PM, akses Purchasing serta volume resmi tim tetap. Regresi MySQL 117 tes, rehearsal restore dan smoke login demo publik lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Uji pembaca layar pada perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
