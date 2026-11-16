@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Status aktif dock dan navigasi panah drawer
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel a2e78c7c3e61c800a14987dc5f68d52a3f7877b1 membedakan halaman aktif dan tombol pembuka menu di dock HP. Panah atas dan bawah memindahkan fokus di dalam drawer, dan Escape mengembalikannya ke pemicu. QA lokal membuktikan pemulihan fokus saat pindah ukuran dan indikator Katalog. PM sintetis memverifikasi dock, panah dan retensi proyek pada demo publik. Holsite 27/36. Safe area perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Jumlah hasil dan kembali ke rekap absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6b91077cfb062e5a6bec4f98f52dda5ce58544fd memperjelas jumlah hasil absensi dan menambah navigasi keyboard dari daftar ke rekap harian. Finance menguji pemulihan pencarian serta hak baca pada fixture, dan PM sintetis memverifikasi jumlah, fokus dan retensi tanggal pada demo publik. Hitungan dua hari dan sidik data sumber cocok. Holsite 27/36. Dasar OH dan kaitan upah UI-07.3, staging privat, UAT perangkat dan PILOT_READY terbuka. Demo statis c6baa67a.
