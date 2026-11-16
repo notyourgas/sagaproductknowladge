@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Status total dan fokus isian nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel cbc55949c96f0da5df5ed1b88beda6b7b28d38d6 menampilkan status total nota dan menautkan kolom penyebab hitungan terhenti. Fixture lokal memverifikasi harga, diskon, jumlah, dan draf tetap. Demo publik memverifikasi fokus harga kosong pada draf baru. Holsite 27/36. UI-06.1 menunggu keputusan metode pembayaran. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Bedakan subtotal dan baris PDF manual
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6ed834fb7e3d2f9775b4cc87e070a59be8277a0d memisahkan selisih subtotal dari baris isi manual. Barang yang terbaca tetap tampil ketika PDF hanya perlu input manual. Fixture lokal memverifikasi filter, input sementara dan checksum asli. Demo publik memverifikasi jalur manual. Holsite 27/36. UI-06.3 menunggu penyedia OCR foto/pindai dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.

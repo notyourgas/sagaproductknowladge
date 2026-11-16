@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Status total dan fokus isian nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel cbc55949c96f0da5df5ed1b88beda6b7b28d38d6 menampilkan status total nota dan menautkan kolom penyebab hitungan terhenti. Fixture lokal memverifikasi harga, diskon, jumlah, dan draf tetap. Demo publik memverifikasi fokus harga kosong pada draf baru. Holsite 27/36. UI-06.1 menunggu keputusan metode pembayaran. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Bedakan subtotal dan baris PDF manual
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6ed834fb7e3d2f9775b4cc87e070a59be8277a0d memisahkan selisih subtotal dari baris isi manual. Barang yang terbaca tetap tampil ketika PDF hanya perlu input manual. Fixture lokal memverifikasi filter, input sementara dan checksum asli. Demo publik memverifikasi jalur manual. Holsite 27/36. UI-06.3 menunggu penyedia OCR foto/pindai dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
