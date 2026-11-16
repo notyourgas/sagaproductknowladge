@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Ringkasan dan navigasi survei
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 1abddc12e8484e2ee2a807479d4d1ee4bc5d4506 menampilkan ringkasan identitas calon proyek. Enter pada daftar memfokuskan ringkasan, lalu editor dibuka dari Ubah survei. Uji ruang lingkup PM, data survei sintetis, regresi, restore disposable dan uji demo lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Hierarki dan fokus hasil kalkulator
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 48396cb5486f57c2c367ea7c2efd3480ab8a8253 menggabungkan angka dan label kemasan di Kalkulator Satuan. Hitung yang berhasil memfokuskan hasil. Uji satuan tidak kompatibel, perhitungan fixture, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
