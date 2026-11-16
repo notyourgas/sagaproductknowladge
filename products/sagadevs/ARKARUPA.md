@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Ringkasan invoice dan akses daftar saldo
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 130f58bcb63fd6aa57b47be32dbad8ce5e8f38ea pada REV-007, UI-07.1 dan UI-09.2 memisahkan gross pekerjaan, DP diterima, saldo DP dan retensi pada ringkasan invoice. Pintasan keyboard dua arah mempertahankan proyek dan tab. Fixture Rp100 juta merekonsiliasi rencana termin, invoice dan saldo, PDF, serta snapshot laporan. Smoke publik memeriksa nominal yang sama sebelum dan sesudah serta fokus dua arah. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. PM dan Finance masih perlu mengesahkan pemicu milestone, tanggal dan persetujuan penjadwalan ulang. QA melanjutkan uji perangkat fisik. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Tanggal absensi dan kembali ke volume tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 7c999444cb516e85f800168e066f60050ca09a56 pada REV-010, UI-07.4 dan UI-09.2 menampilkan tanggal absensi harian dan status OH belum dihitung di rekap tim. Kembali ke hasil volume memfokuskan daftar dengan proyek, cut-off dan lokasi yang sama. Fixture sintetis merekonsiliasi neto 9 m² dan absensi dua tim serta memeriksa izin QS yang terpisah. Smoke publik memeriksa tanggal dan pintasan pada ringkasan absensi kosong. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Field dan Finance masih perlu mengesahkan OH, biaya dan hubungan upah. PM masih perlu menetapkan dasar rework dan kecukupan pembanding. QA melanjutkan uji perangkat fisik. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
