@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Skala arus kas dan pemulihan periode kosong
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3c17249da315d2ced9bef3fb418a9ee35c9dc0da menampilkan skala Harian atau Bulanan pada grafik kas Dashboard Utama. Dari periode kosong, pintasan memfokuskan tanggal awal dan menjaga periode serta proyek. Demo publik dan fixture lokal memverifikasi alur. Holsite 27/36. UI-06.1 menunggu metode bayar dan aturan pembukuan. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Prioritas checklist penutupan Workspace
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 66304809cd16080c26e647d404e2dea556d05e70 menonjolkan jumlah pemeriksaan penutupan yang perlu ditinjau. Pintasan memfokuskan pemeriksaan pertama dan menjaga rentang laporan Workspace. Demo publik dan fixture lokal memverifikasi alur. Holsite 27/36. UI-06.1 menunggu metode bayar dan aturan pembukuan. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
