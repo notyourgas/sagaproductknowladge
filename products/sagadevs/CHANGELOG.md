@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Konteks filter dan pemulihan pencarian absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel d46e014c99749889fe68e64d0791c06544425769 pada REV-009, UI-07.3 dan UI-09.2 menampilkan status serta kata kunci aktif pada hasil absensi. Dari hasil kosong, Hapus pencarian memfokuskan kolom pencarian sambil menjaga tanggal dan status. Rekonsiliasi tiga catatan pada dua hari dan dua divisi lulus pada fixture. Pelaksana bisa memulihkan filter sesuai akses baca dan pencatatan. Smoke publik memeriksa label status serta fokus tanggal pada rekap kosong. Pemulihan hasil pencarian dengan data dibuktikan di fixture lokal. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Field dan Finance masih perlu mengesahkan konversi OH serta hubungan absensi ke upah. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Lokasi pekerjaan dan pemulihan cut-off rekap tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel bf418ccaf3d2ebe2e58adbe9eeb0a8b3a7b61751 pada REV-011, UI-04.2 dan UI-09.2 memisahkan label lokasi dari pekerjaan dan memfokuskan tanggal dari rekap tim kosong dengan lokasi tetap dipilih. Fixture dua tim membuktikan koreksi tetap pada lokasi sumber, volume neto yang sama dan hak baca QS terpisah dari absensi. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Field dan Finance masih perlu mengesahkan konversi OH serta hubungan absensi ke upah. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
