@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Jatuh tempo lewat dan tautan balik ke sertifikat
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 295f371acb360d77c84eb91540fcd8d7de7957ec pada REV-007, UI-07.1 dan UI-09.2 menandai invoice bersaldo yang lewat tanggal WIB dan menautkan invoice terbit ke sertifikat sumber. Fixture membuktikan pemisahan jatuh tempo hari ini, tautan dua arah, checksum PDF Finance dan PM, dan ledger piutang yang sama. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. PM dan Finance masih perlu mengesahkan milestone, tanggal dan persetujuan reschedule. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Rentang CSV dan kembali ke periode terbaru
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 4591df0eb75ddd614bf89a892e583c5428a5a7dc pada REV-012, UI-04.3 dan UI-09.2 memperlihatkan rentang tanggal ekspor periode serta pintasan ke periode terbaru tanpa kehilangan skala, cut-off atau fokus. CSV sebelum dan sesudah identik pada dua rentang fixture. Pelaksana dapat menggunakan riwayat dengan izin ekspor tetap terbatas. Regresi MySQL 117 tes, rehearsal restore dan smoke panel serta CSV PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. PM dan reviewer masih perlu mengesahkan kalender kerja, proyeksi keterlambatan dan laporan bulanan. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
