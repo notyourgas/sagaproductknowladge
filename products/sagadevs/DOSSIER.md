@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Dasar saldo invoice dan pintasan pembayaran
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ef8637edde4862cd5d95dee0660c87230c509c88 memperjelas dasar sisa tagihan pada halaman Termin dan Invoice. Pintasan membuka Kas dan alokasi pembayaran pada proyek yang sama. Fixture mencocokkan rencana termin, saldo dan kas. PM sintetis memverifikasi penjelasan dan navigasi pada demo publik. Holsite 27/36. Milestone, tanggal dan persetujuan penjadwalan ulang, staging privat, UAT operator serta PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Panduan PDF manual dan pintasan tanggal nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 5a7d8bd30da1239e56f24f1878dad385e66d4885 membedakan penyimpanan bukti dari isian nota saat pembacaan PDF berteks belum tersedia. Pintasan memfokuskan Tanggal nota sambil menjaga isian. QA lokal membuktikan PDF pindai utuh dan batas akses unduhan. PM sintetis memverifikasi panduan dan fokus tanggal di demo publik. Holsite 27/36. Penyedia OCR foto, retensi, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
