@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Cakupan saldo dan fokus cut-off stok
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-005, UI-06.2 dan UI-09.2, Laravel 1b070313fbc8961bb5a82db6124c742a6e1370da membedakan saldo semua lokasi dari filter tujuan riwayat penerimaan. Ubah cut-off stok mengembalikan fokus tanpa menghapus kata kunci atau tujuan. Peralihan tanggal dari hasil kosong, rekonsiliasi stok, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Jumlah dan fokus hasil AHSP
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-08.1 dan UI-09.2, Laravel 2ad161b018320bfad0a2462f219f5c307f5804cd menampilkan rentang dan total pencarian Rekap AHSP. Pintasan menuju judul hasil pertama pada halaman aktif. Fixture membuktikan halaman kedua, HSD aktif dan HSD belum lengkap. Regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
