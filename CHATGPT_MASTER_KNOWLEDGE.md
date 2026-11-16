@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Status rekonsiliasi dan tautan penerimaan nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 6976d79a65d99bf9cab7b354b97a22d152ef954f pada REV-005, UI-06.1, UI-06.2 dan UI-09.2 menandai keadaan tanpa nota terpilih dan membuka sumber penerimaan di tab baru dengan konteks review tetap. Fixture dua nota membuktikan pencocokan PO dan penerimaan, selisih, akses baca PM, serta nol tagihan dan pembayaran baru. Uji terfokus browser dan data MySQL, pengulangan regresi 117 tes, restore disposable serta smoke publik pada panel kosong dan halaman penerimaan lulus. Holsite 26/36. Procurement dan Finance masih mengesahkan metode bayar dan aturan posting. Staging privat, UAT perangkat dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Cakupan rekap dan pintasan tanggal absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel fe8b57a6d44a833839cd0a44b5ef46a6de027e4c pada REV-009, UI-07.3 dan UI-09.2 memperjelas bahwa rekap absensi mencakup semua catatan pada tanggal terpilih. Tautan dari hasil memfokuskan tanggal dengan status dan pencarian tetap. Fixture merekonsiliasi empat status pada dua divisi, koreksi hanya pada tanggal sumber serta nol posting baru. Regresi MySQL 117 tes, restore disposable, serta smoke publik 390/1440 lulus. Holsite 26/36. Field dan Finance masih mengesahkan konversi OH dan kaitan upah. Staging privat, UAT perangkat dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
