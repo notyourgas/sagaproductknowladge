@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Jumlah dan pintasan hasil volume tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel bb72d9f3d306740a840227c4ae413ebfa591ca34 menonjolkan jumlah baris volume dan menautkan filter langsung ke hasil. Demo publik memverifikasi kondisi nol. Fixture lokal memverifikasi volume, validasi cut-off dan batas akses. Holsite 27/36. UI-07.4 menunggu definisi OH, biaya, dan aturan pembanding. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Dasar nilai termin dan pintasan kontrak sumber
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2d69937065dc6dfd31a67684f96c4e600426f074 menonjolkan dasar nilai atau status rencana termin dan membuka sumber kontrak di tab baru. Demo publik memverifikasi navigasi. Fixture lokal memverifikasi pembagian 30/50/20, saldo dan batas akses. Holsite 27/36. UI-07.1 menunggu pemicu milestone serta persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
