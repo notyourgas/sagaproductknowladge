@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Lokasi pekerjaan dan pemulihan cut-off rekap tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel bf418ccaf3d2ebe2e58adbe9eeb0a8b3a7b61751 pada REV-011, UI-04.2 dan UI-09.2 memisahkan label lokasi dari pekerjaan dan memfokuskan tanggal dari rekap tim kosong dengan lokasi tetap dipilih. Fixture dua tim membuktikan koreksi tetap pada lokasi sumber, volume neto yang sama dan hak baca QS terpisah dari absensi. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Field dan Finance masih perlu mengesahkan konversi OH serta hubungan absensi ke upah. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Penanda saldo nol dan pemulihan tujuan penerimaan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel f0bf5d4923d71c428354b063289fb63e68fded7a pada REV-005, UI-06.2 dan UI-09.2 menandai saldo nol pada cut-off serta memulihkan riwayat dari tujuan kosong dengan fokus yang jelas. Fixture membuktikan keadaan sebelum penerimaan, saldo nol dan saldo setelah pembalikan. Pencarian stok dan cut-off tetap saat tujuan dikosongkan. Catatan penerimaan, stok, biaya, utang dan kas konsisten. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Procurement dan Finance masih perlu mengesahkan metode bayar nota. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
