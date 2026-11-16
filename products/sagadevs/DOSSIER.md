@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Penanda Proyek dan fokus menu sentuh
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-02.2 dan UI-09.2, Laravel 83ddf41b089c2f3afe12f1f6cdda7692802c27fe menandai Proyek pada rail, drawer dan dock ketika Workspace terbuka. Fokus masuk ke Proyek meski aktivasi Menu tidak memfokuskan tombol terlebih dahulu. Chrome lokal dan demo publik membuktikan penanda, fokus dan konteks Workspace. Regresi MySQL dan restore disposable lulus. Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Upah dibayar sebagian dan fokus hasil filter
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-008, UI-07.2 dan UI-09.2, Laravel a590f637d9031f75eccb5c21618f81b27f42ed03 menandai upah dibayar sebagian jika alokasi positif dan saldo tersisa. Filter status memfokuskan hasil sesudah diperbarui sambil mempertahankan pencarian dan urutan. Fixture lokal membuktikan dua divisi, pemulihan filter dan batas peran PM. Demo publik membuktikan halaman upah kosong dan bingkai fokus setelah login. Regresi MySQL dan restore disposable lulus. Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
