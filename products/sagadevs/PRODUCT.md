@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Nilai draf dan akses total nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ea649390105c90cf829318d9001aa27063be86d0 menandai total nota sebagai nilai draf dan menyediakan pintasan keyboard ke ringkasan. Chrome pada fixture sintetis membuktikan retensi isian dan pemulihan diskon. Demo publik mengonfirmasi fokus pintasan. Nilai draf, metadata PDF, dan hitungan terkait stok, biaya, Finance dan kas tetap cocok. Holsite 27/36. Metode bayar dan dampak jurnal UI-06.1, staging privat, UAT operator dan PILOT_READY masih terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Status OH dan pintasan filter absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2fbc2a71d09a3c031d2eaec147ae88484cbc9f38 menandai bahwa orang-hari belum dihitung dan memberi pintasan fokus ke filter absensi aktif. Browser lokal memverifikasi tanggal, status, pencarian serta akses baca Finance. PM sintetis memverifikasi fokus dan status pada demo publik. Data absensi, biaya, Finance, kas dan laporan cocok sebelum dan sesudah. Holsite 27/36. Dasar OH dan kaitannya dengan upah UI-07.3, staging privat, UAT operator dan PILOT_READY masih terbuka. Demo statis c6baa67a.
