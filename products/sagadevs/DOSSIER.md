@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Arah koreksi dan fokus cut-off volume
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 11f4c29e8d0a6f1b3f534d9dfbb72e445f029e95 memberi label pengurangan pada koreksi volume tim dan memulihkan fokus cut-off dengan lokasi tetap. Fixture lokal membuktikan volume dan akses QS. Demo publik memverifikasi keyboard setelah reset tanggal. Holsite 27/36. UI-07.4 menunggu keputusan OH, biaya, rework dan pembanding. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Identitas koreksi dan pulih dari tanggal kosong
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 40786eed8eced333326cee0c20f182d61d168af0 menampilkan kode pekerja, status dan tanggal saat membuka koreksi absensi. Pengguna dapat kembali ke hari ini dari tanggal historis kosong. Fixture lokal membuktikan rekap dan akses baca Finance. Demo publik memverifikasi fokus dan tanggal rekap. Holsite 27/36. UI-07.3 menunggu keputusan OH dan kaitan upah. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
