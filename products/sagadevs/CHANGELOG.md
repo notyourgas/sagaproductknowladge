@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Jumlah hasil dan pemulihan pencarian pekerjaan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-01.2, UI-03.2 dan UI-09.2, kandidat Laravel d5a1a50f387437984c4e4c56819e3e3cc04cbf4a membedakan hasil dan total tindak lanjut pada Dashboard Utama dan Workspace. Aksi pada hasil kosong mengembalikan fokus ke pencarian dengan proyek dan periode tetap. Fixture mengonfirmasi daftar sumber yang sama dan alur Pelaksana ke laporan harian sesuai izin. Regresi, restore disposable dan smoke PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Cakupan alokasi dan pemulihan pihak pembayaran
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-007, UI-07.1 dan UI-09.2, kandidat Laravel dd630a1b7476d1cee380aef24512cbe614bb82fe menampilkan pihak dan jumlah dokumen terbuka pada panel alokasi. Dari hasil kosong, Finance dapat mengembalikan fokus ke pemilih sambil mempertahankan nominal dan referensi. Fixture merekonsiliasi saldo Rp31 juta dan jumlah transaksi tetap. Regresi, restore disposable dan smoke Finance sintetis lulus. Matriks Holsite 26/36. PM dan Finance masih menetapkan milestone, tanggal dan persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
