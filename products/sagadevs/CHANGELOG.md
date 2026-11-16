@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Jenis lampiran dan fokus pemilih nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel d4ebd82fca342aab90e7d078978c8fd952cf5e29 pada REV-006, UI-06.3, UI-06.4 dan UI-09.2 menampilkan Foto/PDF terpisah dari nama dan ukuran. Kosongkan pilihan mengembalikan fokus ke pemilih dan mempertahankan isian draf. Fixture dibuktikan di Chrome 320/390/1440, meliputi pengunduhan privat dan deduplikasi ulang dengan SHA-256 tetap. Regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi panduan input manual pada 390/1440. Holsite 26/36, retensi bukti dan provider OCR masih memerlukan keputusan. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Status dokumen dan pintasan indeks Workspace
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 7cab47e2d92012cf06429ea420ef2d8f3811701a pada REV-004, UI-03.4 dan UI-09.2 memisahkan lencana status dan waktu di indeks dokumen internal. Pintasan jenis yang tersedia memfokuskan judul dan menjaga kata kunci Workspace dan Dashboard. Fixture membuktikan paginasi 21 lampiran, isolasi proyek dan hak akses PDF PO. Chrome 320/390/1440, regresi MySQL, dan restore lulus. Demo memverifikasi status dan fokus pada Workspace dan Dashboard. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
