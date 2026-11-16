@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Dasar nilai termin dan pintasan kontrak sumber
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2d69937065dc6dfd31a67684f96c4e600426f074 menonjolkan dasar nilai atau status rencana termin dan membuka sumber kontrak di tab baru. Demo publik memverifikasi navigasi. Fixture lokal memverifikasi pembagian 30/50/20, saldo dan batas akses. Holsite 27/36. UI-07.1 menunggu pemicu milestone serta persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Kapasitas dan pintasan lampiran nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 675b6a405edbf90fc864488a5991cca56c04cd88 menjelaskan batas lampiran nota serta menunjukkan sisa atau kondisi penuh pada draf tersimpan. Pintasan memfokuskan pemilih atau daftar tersimpan. Demo publik memverifikasi draf baru. Fixture lokal memverifikasi kapasitas dan unduhan. Holsite 27/36. UI-06.3 menunggu provider OCR foto dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.

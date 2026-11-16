@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Dasar nilai termin dan pintasan kontrak sumber
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2d69937065dc6dfd31a67684f96c4e600426f074 menonjolkan dasar nilai atau status rencana termin dan membuka sumber kontrak di tab baru. Demo publik memverifikasi navigasi. Fixture lokal memverifikasi pembagian 30/50/20, saldo dan batas akses. Holsite 27/36. UI-07.1 menunggu pemicu milestone serta persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Kapasitas dan pintasan lampiran nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 675b6a405edbf90fc864488a5991cca56c04cd88 menjelaskan batas lampiran nota serta menunjukkan sisa atau kondisi penuh pada draf tersimpan. Pintasan memfokuskan pemilih atau daftar tersimpan. Demo publik memverifikasi draf baru. Fixture lokal memverifikasi kapasitas dan unduhan. Holsite 27/36. UI-06.3 menunggu provider OCR foto dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
