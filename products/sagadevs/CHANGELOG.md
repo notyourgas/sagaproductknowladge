@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Kontras pilihan dan fokus pemilih keyboard
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel f2c703dbd5908560535d41f5eba3f031278ced5d menonjolkan pilihan aktif dengan kontras monokrom. Enter dan Spasi membawa fokus ke pencarian pemilih. Escape atau pemilihan mengembalikan fokus. Fixture sintetis dan demo Barang Datang lulus. Holsite 27/36 berdasarkan matriks penerimaan. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Selisih jual dan akses dampak VO internal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-003, UI-05.2 dan UI-09.2, Laravel 16bb6479a19a80dc79521b1fae43c03542a77f3d menonjolkan selisih jual dalam kartu dampak VO internal. Ke dampak VO memfokuskan revisi yang dipilih sambil mempertahankan proyek. Fixture lokal membuktikan kartu, fokus, batas izin, dan perbandingan serta PDF pada Portal Klien. Demo publik memverifikasi halaman Komersial kosong dan aset CSS yang cocok. Regresi MySQL dan restore disposable lulus. Holsite 26/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
