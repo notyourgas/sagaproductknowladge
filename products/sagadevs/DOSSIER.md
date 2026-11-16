@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Jumlah lampiran dan kembali ke editor nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 893346aa63a4f3227033a72f4bcbec0ca0e1110c memperjelas kapasitas terpakai pada Lampiran privat dan menambahkan pintasan keyboard ke editor. Fixture membuktikan retensi masukan, pemulihan kegagalan unggah sementara, checksum PDF asli dan draf Rp180.000 tetap cocok. PM sintetis memverifikasi hitungan serta tautan pada demo publik. Holsite 27/36. Pilihan OCR foto, retensi, staging privat, UAT perangkat dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Hasil kosong dan koreksi pencarian Rekap AHSP
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b5a241bf830ba4dba51b620bdb964599c18994b0 menandai hasil kosong Rekap AHSP dan menyediakan aksi untuk memfokuskan sekaligus menyeleksi istilah pencarian. QS menguji pemulihan menuju Master AHSP pada fixture. PM sintetis menguji batas filter dan fokus pada demo publik. Nilai lengkap Rp142.000/m³ dan HSD yang belum lengkap cocok pada fixture. Holsite 27/36. Staging privat, UAT perangkat dan PILOT_READY terbuka. Demo statis c6baa67a masih menunggu autentikasi Wrangler untuk koreksi label terpisah.
