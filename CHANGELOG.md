@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Status Kurva S dan pintasan riwayat Portal
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 77f2c5d8979d9ff14b2c56bcbd2b56a024de4dd3 pada REV-002, UI-05.1 dan UI-09.2 menampilkan panel untuk laporan tanpa Kurva S dan pintasan riwayat yang menjaga laporan serta pencarian saat fokus berpindah. Chrome 320/390/1440, snapshot historis dan terbaru, PDF sesuai izin, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi CSS baru dan akses Portal. Fixture autentikasi klien diverifikasi lokal. Holsite 26/36. Finance dan PM masih perlu mengesahkan dasar nilai dan kas. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Status kosong dan fokus catat absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 2faa8bd978c42239f099200573440d17f3416fd5 pada REV-009, UI-07.3 dan UI-09.2 menampilkan panel tanggal tanpa catatan. Seusai simpan, form tetap terbuka dengan fokus di kode pekerja kosong pada tanggal yang sama. Kode duplikat mempertahankan isian untuk koreksi. Chrome 320/390/1440, rekonsiliasi per tim, audit, izin baca Finance, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi panel kosong dan filter pada 390/1440. Holsite 26/36. Field dan Finance masih perlu mengesahkan OH dan kaitan upah. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
