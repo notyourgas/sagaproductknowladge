@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Status pencarian dan koreksi riwayat nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e6292834fae850e3cc5908a94e424812758bc988 menonjolkan hasil pencarian Draf nota dan memberi cara untuk menyeleksi kata kunci saat hasil kosong. QA lokal membuktikan koreksi, karakter khusus, pemulihan daftar dan unduhan PDF. PM sintetis memverifikasi hasil nol, fokus dan retensi input di demo publik. Holsite 27/36. Keputusan metode bayar, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Dasar saldo invoice dan pintasan pembayaran
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ef8637edde4862cd5d95dee0660c87230c509c88 memperjelas dasar sisa tagihan pada halaman Termin dan Invoice. Pintasan membuka Kas dan alokasi pembayaran pada proyek yang sama. Fixture mencocokkan rencana termin, saldo dan kas. PM sintetis memverifikasi penjelasan dan navigasi pada demo publik. Holsite 27/36. Milestone, tanggal dan persetujuan penjadwalan ulang, staging privat, UAT operator serta PILOT_READY terbuka. Demo statis c6baa67a.
