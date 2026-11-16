@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Penanda arsip dan tautan Kurva S terbaru
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel da9e2728f262480333cb1634a3b82d8c628d2d42 menonjolkan status arsip dan menautkan Kurva S terbaru saat data arsip kosong. Fixture memverifikasi navigasi, filter tagihan, PDF, dan izin klien. Demo publik memverifikasi jalur login dan pembatasan akses. Holsite 27/36. UI-05.1 menunggu pengesahan basis nilai pekerjaan dan kas. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cut-off dan pemulihan lokasi volume
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 0cfbacacbfb7561413bfe3ff4365f01596511f05 menonjolkan tanggal cut-off dan memfokuskan pemilih lokasi dari hasil kosong. Fixture lokal memverifikasi pemulihan volume dan izin QS. Demo publik memverifikasi label dan fokus pemilih. Holsite 27/36. UI-07.4 menunggu basis OH, biaya, rework dan pembanding. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
