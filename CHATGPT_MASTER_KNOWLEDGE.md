@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Hasil filter dan pemulihan Gantt
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-012, UI-04.3 dan UI-09.2, kandidat Laravel 94e211f4893027e30b53df816ad4e1d679211134 membedakan jumlah hasil dan peringatan Gantt. Aksi pada keadaan kosong memulihkan fokus tabel serta mempertahankan proyek, cut-off, dan skala. Fixture dua cut-off, izin ekspor, kecocokan CSV, regresi MySQL dan restore disposable lulus. PM sintetis memeriksa filter dan fokus pada demo. Matriks Holsite 26/36. Pengujian perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. PM dan reviewer masih menetapkan kalender, proyeksi, dan format bulanan. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Ringkasan dan akses riwayat BUP
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-001, UI-04.4 dan UI-09.2, kandidat Laravel 12c39d32a665182f1535721c62331dec8adff018 menampilkan asal volume langsung, hasil ukuran atau koreksi bertaut pada kartu BUP. Pintasan keyboard memfokuskan daftar dengan proyek dan filter tetap. Fixture progres merekonsiliasi 9 m² terverifikasi. Draf ukuran 3 m² dan 2 m² menunggu verifikasi dikecualikan. Regresi MySQL 117 tes, restore disposable, serta smoke demo PM sintetis lulus. Matriks Holsite 26/36. Uji perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
