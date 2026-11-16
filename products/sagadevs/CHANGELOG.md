@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Jumlah dan fokus hasil AHSP
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-08.1 dan UI-09.2, Laravel 2ad161b018320bfad0a2462f219f5c307f5804cd menampilkan rentang dan total pencarian Rekap AHSP. Pintasan menuju judul hasil pertama pada halaman aktif. Fixture membuktikan halaman kedua, HSD aktif dan HSD belum lengkap. Regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Pemulihan tanggal absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-009, UI-07.3 dan UI-09.2, Laravel a6665398bc06b36dbec527a1f606179383b086fa menampilkan panel untuk tanggal absensi di luar batas. Gunakan tanggal hari ini memulihkan rekap dan fokus, serta menjaga proyek dan filter. Bukti Finance historis, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Dasar OH dan hubungan ke upah, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
