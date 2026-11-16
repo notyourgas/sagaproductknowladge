@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Status kosong dan fokus catat absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 2faa8bd978c42239f099200573440d17f3416fd5 pada REV-009, UI-07.3 dan UI-09.2 menampilkan panel tanggal tanpa catatan. Seusai simpan, form tetap terbuka dengan fokus di kode pekerja kosong pada tanggal yang sama. Kode duplikat mempertahankan isian untuk koreksi. Chrome 320/390/1440, rekonsiliasi per tim, audit, izin baca Finance, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi panel kosong dan filter pada 390/1440. Holsite 26/36. Field dan Finance masih perlu mengesahkan OH dan kaitan upah. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Jenis lampiran dan fokus pemilih nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel d4ebd82fca342aab90e7d078978c8fd952cf5e29 pada REV-006, UI-06.3, UI-06.4 dan UI-09.2 menampilkan Foto/PDF terpisah dari nama dan ukuran. Kosongkan pilihan mengembalikan fokus ke pemilih dan mempertahankan isian draf. Fixture dibuktikan di Chrome 320/390/1440, meliputi pengunduhan privat dan deduplikasi ulang dengan SHA-256 tetap. Regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi panduan input manual pada 390/1440. Holsite 26/36, retensi bukti dan provider OCR masih memerlukan keputusan. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
