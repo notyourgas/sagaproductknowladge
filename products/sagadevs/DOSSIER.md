@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Hitungan status dan fokus pencarian upah
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b279697594914a808561ec360ced3ce9fc45454f menampilkan jumlah per status untuk kata kunci upah aktif. Enter memfokuskan hasil yang telah diperbarui. Fixture lokal memverifikasi tampilan dan saldo dua divisi. Demo publik memverifikasi kondisi daftar kosong dan fokus. Holsite 27/36. UI-07.3 menunggu keputusan hubungan OH dengan upah. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Status total dan fokus isian nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel cbc55949c96f0da5df5ed1b88beda6b7b28d38d6 menampilkan status total nota dan menautkan kolom penyebab hitungan terhenti. Fixture lokal memverifikasi harga, diskon, jumlah, dan draf tetap. Demo publik memverifikasi fokus harga kosong pada draf baru. Holsite 27/36. UI-06.1 menunggu keputusan metode pembayaran. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
