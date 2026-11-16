@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Ringkasan validasi dan fokus formulir
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-001 dan UI-09.2, kandidat Laravel 6a7d9037f610b3a4a08675f426b74c03676b9c1c menampilkan jumlah isian bermasalah pada ringkasan. Enter memfokuskan isian pertama dan mempertahankan catatan di draf BUP. Uji tanggal Dashboard, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Kontras dan pesan pemilih bersama
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-001, REV-005 dan UI-09.2, kandidat Laravel b29e8e7cae7106bc290fefb0da52fcede3ac106f menampilkan label pilihan, penanda invalid dan keterangan yang dibaca kontrol keyboard. Pesan item BUP memakai bahasa Indonesia. Fixture memastikan volume resmi dan jumlah catatan tetap serta memeriksa pemilih stok dan Dashboard. Regresi, restore disposable dan smoke PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
