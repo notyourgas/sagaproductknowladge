@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Ruang dock dan fokus awal–akhir Menu
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 8db66f1ebdf37ea91662514a81a75a0a78493820 pada UI-02.2 dan UI-09.2 mencegah dock menutupi Aksi cepat pada viewport sempit dengan inset samping. Home dan End memfokuskan kontrol awal atau akhir Menu. Chrome emulasi 320/390/768, rail desktop, alur BUP dua proyek, regresi MySQL 117 tes dan restore disposable lulus. Demo membuktikan lebar dock dan keyboard Menu. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Status volume kosong dan pintasan absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 6525fb5d06adc39f4b2419200f87266a3fa82743 pada REV-010, UI-07.4 dan UI-09.2 memperjelas volume kosong dan memfokuskan ringkasan absensi sambil mempertahankan cut-off dan filter volume. Hasil BUP 9 m² cocok dengan progres. Absensi dua tim tetap terpisah per tanggal. Chrome 320/390/1440, izin QS/PM, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi panel kosong dan fokus ringkasan. Holsite 26/36. Keputusan OH, biaya, rework dan pembanding masih terbuka. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
