@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Identitas koreksi dan pulih dari tanggal kosong
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 40786eed8eced333326cee0c20f182d61d168af0 menampilkan kode pekerja, status dan tanggal saat membuka koreksi absensi. Pengguna dapat kembali ke hari ini dari tanggal historis kosong. Fixture lokal membuktikan rekap dan akses baca Finance. Demo publik memverifikasi fokus dan tanggal rekap. Holsite 27/36. UI-07.3 menunggu keputusan OH dan kaitan upah. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Aksi lampiran dan unduh PDF saat gagal baca
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel de85c9b2e10fec8fb7618daf35e3dd1c1d82a96e merapikan aksi lampiran nota dan menautkan PDF asli langsung dari panel gagal baca. Fixture lokal memverifikasi checksum unduhan, draf tetap, dan izin. Demo publik memverifikasi jalur manual karena pembaca PDF berteks belum diaktifkan. Holsite 27/36. UI-06.4 menunggu keputusan OCR foto/pindai dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
