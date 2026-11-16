@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-16 - Arkarupa: Cakupan saldo upah dan akses daftar kewajiban
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 9b4e4e5f755fe0f214675cd72b877abeef78c55d pada REV-008, UI-07.2 dan UI-09.2 membedakan saldo upah proyek dari hasil filter. Pintasan memfokuskan status daftar dengan proyek dan filter tetap. Fixture dua divisi merekonsiliasi saldo Rp50.000 dan hasil Lunas Rp0. Uji PM memeriksa pesan kosong pada pohon aksesibilitas. Smoke publik membuktikan cakupan dan fokus saat daftar kosong pada dua viewport. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Field dan Finance masih perlu mengesahkan hubungan OH, absensi dan upah pada UI-07.3. QA melanjutkan uji perangkat fisik. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Identitas penerimaan dan fokus tujuan barang
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel ed64ade980ac80ae331cbe7be3c842f6b37fc0ac pada REV-005, UI-06.2 dan UI-09.2 memisahkan tanggal, PO, nomor penerimaan dan tujuan pada kartu riwayat. Ubah tujuan penerimaan memfokuskan pemilih dari daftar terisi maupun kosong dengan proyek, cut-off dan pencarian material tetap. Fixture H11 merekonsiliasi 2, 0 dan 2 m³ serta izin Pengadaan. Smoke publik membuktikan identitas penerimaan tetap dan navigasi keyboard pada dua viewport. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Procurement dan Finance masih perlu mengesahkan metode bayar nota. QA melanjutkan uji perangkat fisik. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
