@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Hierarki dan fokus hasil kalkulator
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 48396cb5486f57c2c367ea7c2efd3480ab8a8253 menggabungkan angka dan label kemasan di Kalkulator Satuan. Hitung yang berhasil memfokuskan hasil. Uji satuan tidak kompatibel, perhitungan fixture, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Pesan kosong dan pemulihan pemilih
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 9ca375ab7b10d81ed081e8215782b09d69472fd6 menampilkan status ketika pencarian pemilih kosong. Hapus pencarian pilihan memulihkan daftar dan fokus dengan pilihan tetap. Bukti Barang datang dan Dashboard, rekonsiliasi stok, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.

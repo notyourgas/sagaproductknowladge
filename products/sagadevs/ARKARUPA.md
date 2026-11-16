@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Hierarki dan fokus hasil kalkulator
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 48396cb5486f57c2c367ea7c2efd3480ab8a8253 menggabungkan angka dan label kemasan di Kalkulator Satuan. Hitung yang berhasil memfokuskan hasil. Uji satuan tidak kompatibel, perhitungan fixture, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Pesan kosong dan pemulihan pemilih
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 9ca375ab7b10d81ed081e8215782b09d69472fd6 menampilkan status ketika pencarian pemilih kosong. Hapus pencarian pilihan memulihkan daftar dan fokus dengan pilihan tetap. Bukti Barang datang dan Dashboard, rekonsiliasi stok, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
