@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Kas neto dan fokus tutup rincian Dashboard
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel afe880782637c5d881b289fe6f262a4919020717 pada UI-01.3 dan UI-09.2 menampilkan kas neto tanpa transfer pada Dashboard. Tombol di bawah tabel menutup rincian serta mengembalikan fokus ke pemicu. Demo memverifikasi angka dan fokus pada 390/1440. Fixture disposable merekonsiliasi periode harian, bulanan, transfer internal dan izin Pelaksana. Regresi MySQL dan restore lulus. Holsite 26/36. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Finance dan PM melanjutkan keputusan dasar nilai Portal. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Lingkup stok dan pemulihan hasil pencarian
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 080f2cc3f0185652c7f033590178c5d08fc716b4 pada REV-005, UI-06.2 dan UI-09.2 memperlihatkan cut-off serta cakupan seluruh lokasi untuk stok, terpisah dari filter tujuan riwayat penerimaan. Hapus pencarian di area hasil mengembalikan fokus dan daftar. Chrome 320/390/1440 dan regresi MySQL lulus. Fixture membuktikan perbedaan antara riwayat kosong, saldo nol dan pembalikan pada tanggal berikutnya serta izin pelaksana. Demo memverifikasi cakupan serta reset. Restore disposable lulus. Holsite 26/36. Procurement dan Finance melanjutkan keputusan metode bayar. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
