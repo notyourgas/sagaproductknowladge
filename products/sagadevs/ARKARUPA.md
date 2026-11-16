@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Porsi termin dan navigasi daftar invoice
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 4c1d9cb933ed11b14cbd97e8564d8dc3fbdab727 memperlihatkan porsi masing-masing termin Finance dan memberi jalur keyboard dari panel tanpa kontrak ke daftar invoice. Fixture sintetis dan Chrome demo lulus. Holsite 27/36. UI-07.1 menunggu keputusan Finance dan PM tentang pemicu milestone, tanggal dan persetujuan perubahan jadwal. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Safe area dan gulir Aksi cepat
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7523e10afc9fe5bb68aca85fe2e73d29f2161c05 menahan Aksi cepat Workspace di safe area dan mengunci gulir halaman saat dialog terbuka. Gulir isi dialog pada lanskap pendek dan pemulihan fokus lulus di Chrome dengan fixture sintetis. Demo Workspace memverifikasi perubahan. Holsite 27/36. UI-02.2 dan UI-09.4 menunggu perangkat fisik. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
