@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Pesan kosong dan pemulihan pemilih
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-09.2, Laravel 9ca375ab7b10d81ed081e8215782b09d69472fd6 menampilkan status ketika pencarian pemilih kosong. Hapus pencarian pilihan memulihkan daftar dan fokus dengan pilihan tetap. Bukti Barang datang dan Dashboard, rekonsiliasi stok, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Rentang dan fokus skala Gantt
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-012, UI-04.3 dan UI-09.2, Laravel 429eaf889b2bf6cca9e3ad3c557e727f5acdc4af menampilkan rentang rencana di Gantt dan pintasan ke skala aktif. Tombol panah mengganti skala sambil menjaga proyek, cut-off dan filter. Baseline, BUP, CSV Progres, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
