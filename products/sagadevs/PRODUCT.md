@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Cakupan termin dan jadwal proyek
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel c6d0ca3126b36174c3984e1bf839574159257135 memperjelas status rencana termin dan membuka Baseline & revisi dalam tab baru. Browser lokal menguji proyek dengan tiga termin dan proyek tanpa kontrak aktif. PM sintetis memverifikasi tautan pada demo publik. Finance memiliki akses baca jadwal. Rekonsiliasi data jadwal, kontrak, sertifikat, invoice, alokasi dan kas lulus. Holsite 27/36. UI-07.1 menunggu pemicu, tanggal dan persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Bukti PDF dan pintasan barang nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3606a6820fe9a3d95a8f2044fcfd645afa8aac14 menandai Mode manual pada pemulihan PDF serta memberi pintasan keyboard ke nama barang pertama. Demo publik memverifikasi jalur manual dan pemulihan fokus pada dua lebar. Fixture lokal memverifikasi PDF pindai, checksum asli, draf dan jumlah baris penerimaan, biaya serta kas. Holsite 27/36. UI-06.4 menunggu penyedia OCR foto, izin sampel dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
