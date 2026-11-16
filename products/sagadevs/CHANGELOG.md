@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Navigasi dialog formulir
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-001 dan UI-09.2, Laravel 094a893e2d111e9f669cda15261393bc0eb71b55 menampilkan petunjuk draf secara terpisah di footer. Ke awal formulir menempatkan fokus pada pengantar dan Tab meneruskan ke isian. Catatan draf tetap terisi. Uji dialog baca-saja, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Ringkasan validasi dan fokus formulir
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-001 dan UI-09.2, kandidat Laravel 6a7d9037f610b3a4a08675f426b74c03676b9c1c menampilkan jumlah isian bermasalah pada ringkasan. Enter memfokuskan isian pertama dan mempertahankan catatan di draf BUP. Uji tanggal Dashboard, regresi, restore disposable dan uji PM sintetis lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
