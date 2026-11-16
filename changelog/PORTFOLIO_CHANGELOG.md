@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Lokasi aktif dan pintasan filter volume tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 558a59a13034ebacb180dde954bfc9688e4ae2fb menandai lokasi yang diterapkan dan memberi pintasan menuju pemilih lokasi dari hasil rekap volume tim. Chrome membuktikan fokus dan retensi tanggal. PM sintetis memverifikasi alur demo publik. Volume Struktur 3 m² dan Finishing 6 m², sumber BUP dan absensi cocok sebelum dan sesudah. Holsite 27/36. Dasar OH, biaya, rework dan pembanding UI-07.4, staging privat, UAT dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Keadaan kosong invoice dan kembali ke termin
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b6a804136f968caba4069e742ab7f5599f51fabc menampilkan panel kosong daftar invoice dan aksi keyboard dalam panel menuju rencana termin proyek yang sama. Chrome memverifikasi kondisi kosong dan alur rincian invoice terisi. Fixture kontrak, sertifikat, alokasi, saldo dan kas cocok. Holsite 27/36. Pemicu milestone dan persetujuan reschedule UI-07.1, staging privat, UAT operator dan PILOT_READY masih terbuka. Demo statis c6baa67a.
