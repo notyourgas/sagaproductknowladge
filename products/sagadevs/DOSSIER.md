@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Status daftar dan pintasan ringkasan invoice
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 04758e38e342c5ff410c7ac808219104244c6d27 pada REV-007, UI-07.1 dan UI-09.2 menampilkan keadaan daftar invoice kosong. Pintasan menuju ringkasan pada proyek berkontrak dan rencana termin pada proyek tanpa kontrak. Chrome 320/390/1440, termin Rp30/50/20 juta, saldo Rp30 juta, izin dan checksum PDF, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi pintasan dan peran baca PM. Holsite 26/36. Finance dan PM masih perlu menyetujui milestone, tanggal serta reschedule. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Status Kurva S dan pintasan riwayat Portal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 77f2c5d8979d9ff14b2c56bcbd2b56a024de4dd3 pada REV-002, UI-05.1 dan UI-09.2 menampilkan panel untuk laporan tanpa Kurva S dan pintasan riwayat yang menjaga laporan serta pencarian saat fokus berpindah. Chrome 320/390/1440, snapshot historis dan terbaru, PDF sesuai izin, regresi MySQL 117 tes dan restore disposable lulus. Demo memverifikasi CSS baru dan akses Portal. Fixture autentikasi klien diverifikasi lokal. Holsite 26/36. Finance dan PM masih perlu mengesahkan dasar nilai dan kas. Perangkat fisik, staging privat, UAT dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
