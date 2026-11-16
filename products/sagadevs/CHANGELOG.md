@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Upah dibayar sebagian dan fokus hasil filter
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-008, UI-07.2 dan UI-09.2, Laravel a590f637d9031f75eccb5c21618f81b27f42ed03 menandai upah dibayar sebagian jika alokasi positif dan saldo tersisa. Filter status memfokuskan hasil sesudah diperbarui sambil mempertahankan pencarian dan urutan. Fixture lokal membuktikan dua divisi, pemulihan filter dan batas peran PM. Demo publik membuktikan halaman upah kosong dan bingkai fokus setelah login. Regresi MySQL dan restore disposable lulus. Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Draf aktif dan fokus hasil riwayat nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-005, UI-06.1 dan UI-09.2, Laravel ebcf70027ed4bc0aa9ebc3cc8cb47fd1feb68d6c menandai draf yang sedang dibuka. Cari memindahkan fokus ke jumlah hasil atau pesan kosong dan mempertahankan isian editor. Pengujian kartu draf berlangsung pada fixture lokal. Demo publik membuktikan alur pencarian kosong dan pemulihan fokus. Regresi MySQL dan restore disposable lulus. Metode bayar, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 26/36. Pages c6baa67a menunggu rilis koreksi AHSP.
