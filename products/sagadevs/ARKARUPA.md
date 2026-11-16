@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Kartu dan tautan per entri Change Log
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6b29d8f6c416a68ab125fbab0fa46ede34cb0fd4 menampilkan panel Sebelum dan Sesudah serta tautan per entri Change Log. Tampilan Owner lulus pada kandidat lokal. Template, aset dan batas akses tamu serta PM terverifikasi di demo publik. Dua entri dibaca balik di kedua Change Log, termasuk pemicu tertunda 16 November pukul 00.27 WIB. Holsite 27/36. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Pilihan berbagi dan tinjau judul Portal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel dfb0c34a75f37e5e46685a00215c339a15cb6b96 memisahkan opsi berbagi tagihan dan termin pada Workspace dan menambahkan pintasan peninjauan judul. Demo publik memverifikasi pengisian tanpa publikasi. Fixture lokal memverifikasi integritas laporan, alokasi dan hak Finance. Holsite 27/36. UI-05.1 menunggu pengesahan basis nilai pekerjaan, kas dan pembulatan. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
