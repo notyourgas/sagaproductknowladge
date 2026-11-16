@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Bukti PDF dan pintasan barang nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3606a6820fe9a3d95a8f2044fcfd645afa8aac14 menandai Mode manual pada pemulihan PDF serta memberi pintasan keyboard ke nama barang pertama. Demo publik memverifikasi jalur manual dan pemulihan fokus pada dua lebar. Fixture lokal memverifikasi PDF pindai, checksum asli, draf dan jumlah baris penerimaan, biaya serta kas. Holsite 27/36. UI-06.4 menunggu penyedia OCR foto, izin sampel dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Kartu dan tautan per entri Change Log
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6b29d8f6c416a68ab125fbab0fa46ede34cb0fd4 menampilkan panel Sebelum dan Sesudah serta tautan per entri Change Log. Tampilan Owner lulus pada kandidat lokal. Template, aset dan batas akses tamu serta PM terverifikasi di demo publik. Dua entri dibaca balik di kedua Change Log, termasuk pemicu tertunda 16 November pukul 00.27 WIB. Holsite 27/36. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
