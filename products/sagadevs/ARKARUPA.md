@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Kembali dari absensi ke rekap tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-009, UI-07.3 dan UI-09.2, Laravel dcb6d8f66312da5bf99abbb746c5ed8e736df5b4 menampilkan konteks rekap volume saat membuka Absensi dan memulihkan proyek, cut-off, lokasi serta fokus saat kembali sesuai izin. Verifikasi publik, uji peran sintetis, regresi dan restore disposable lulus. Definisi OH dan relasi ke upah masih terbuka. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Paginasi AHSP dan fokus hasil
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-08.1 dan UI-09.2, Laravel d9fe1600b51b1932853ee1812ccd1717a94a89c0 menandai halaman AHSP aktif dan memfokuskan pekerjaan pertama ketika pengguna berpindah halaman. Uji dua halaman lulus pada fixture lokal. Demo satu halaman memverifikasi kedua kontrol nonaktif. Regresi dan restore disposable lulus. Matriks Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
