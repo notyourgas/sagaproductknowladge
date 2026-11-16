@@ -12,6 +12,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Alasan duplikat dan pintasan riwayat PDF nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel f6c3839c3aea511ba3096b2124549e3197a11484 pada REV-006, UI-06.3, UI-06.4 dan UI-09.2 membedakan sinyal supplier dan nomor nota yang sama dari checksum PDF yang sama. Pintasan ke riwayat draf menjaga fokus, proyek dan isian. Fixture Chrome 320/390/1440, isolasi proyek, checksum, regresi MySQL 117 tes dan restore disposable lulus. Rilis publik memverifikasi CSS dan jalur manual nota. Holsite 26/36. Procurement dan Product masih mengesahkan provider OCR foto dan retensi. Staging privat, UAT perangkat dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Cakupan saldo dan pemulihan pencarian tagihan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 83d39ee6bc61766501e4a633264ff08eeb01980f pada REV-002, UI-05.1 dan UI-09.2 menandai cakupan saldo Portal saat tagihan disaring. Hasil kosong menyediakan pemulihan pencarian dengan fokus dan konteks laporan tetap. Fixture klien di Chrome 320/390/1440 membuktikan saldo setelah pembayaran, hak baca PDF dan snapshot laporan tetap. Regresi MySQL 117 tes dan restore disposable lulus. Pemeriksaan publik mencakup versi aktif, CSS serta batas login dan akses Portal. Holsite 26/36. Finance dan PM masih mengesahkan basis nilai. Staging privat, UAT perangkat dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.

@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Alasan duplikat dan pintasan riwayat PDF nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel f6c3839c3aea511ba3096b2124549e3197a11484 pada REV-006, UI-06.3, UI-06.4 dan UI-09.2 membedakan sinyal supplier dan nomor nota yang sama dari checksum PDF yang sama. Pintasan ke riwayat draf menjaga fokus, proyek dan isian. Fixture Chrome 320/390/1440, isolasi proyek, checksum, regresi MySQL 117 tes dan restore disposable lulus. Rilis publik memverifikasi CSS dan jalur manual nota. Holsite 26/36. Procurement dan Product masih mengesahkan provider OCR foto dan retensi. Staging privat, UAT perangkat dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Cakupan saldo dan pemulihan pencarian tagihan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 83d39ee6bc61766501e4a633264ff08eeb01980f pada REV-002, UI-05.1 dan UI-09.2 menandai cakupan saldo Portal saat tagihan disaring. Hasil kosong menyediakan pemulihan pencarian dengan fokus dan konteks laporan tetap. Fixture klien di Chrome 320/390/1440 membuktikan saldo setelah pembayaran, hak baca PDF dan snapshot laporan tetap. Regresi MySQL 117 tes dan restore disposable lulus. Pemeriksaan publik mencakup versi aktif, CSS serta batas login dan akses Portal. Holsite 26/36. Finance dan PM masih mengesahkan basis nilai. Staging privat, UAT perangkat dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
