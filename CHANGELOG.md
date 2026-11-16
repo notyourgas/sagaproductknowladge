@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Sumber BUP terverifikasi dari rekap tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e89910b3cd65547abbcfeda081a3eb407bb07456 menandai volume kumulatif dan membuka daftar BUP terverifikasi pada proyek yang sama. Browser lokal membuktikan konteks rekap asal dan akses baca QS. PM sintetis memverifikasi tautan dari kondisi kosong pada demo publik. Data BUP dan volume cocok sebelum dan sesudah. Holsite 27/36. Basis OH, biaya, rework dan pembanding UI-07.4 masih terbuka. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cakupan termin dan jadwal proyek
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel c6d0ca3126b36174c3984e1bf839574159257135 memperjelas status rencana termin dan membuka Baseline & revisi dalam tab baru. Browser lokal menguji proyek dengan tiga termin dan proyek tanpa kontrak aktif. PM sintetis memverifikasi tautan pada demo publik. Finance memiliki akses baca jadwal. Rekonsiliasi data jadwal, kontrak, sertifikat, invoice, alokasi dan kas lulus. Holsite 27/36. UI-07.1 menunggu pemicu, tanggal dan persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.

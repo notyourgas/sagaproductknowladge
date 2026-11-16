@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Sumber BUP terverifikasi dari rekap tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e89910b3cd65547abbcfeda081a3eb407bb07456 menandai volume kumulatif dan membuka daftar BUP terverifikasi pada proyek yang sama. Browser lokal membuktikan konteks rekap asal dan akses baca QS. PM sintetis memverifikasi tautan dari kondisi kosong pada demo publik. Data BUP dan volume cocok sebelum dan sesudah. Holsite 27/36. Basis OH, biaya, rework dan pembanding UI-07.4 masih terbuka. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cakupan termin dan jadwal proyek
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel c6d0ca3126b36174c3984e1bf839574159257135 memperjelas status rencana termin dan membuka Baseline & revisi dalam tab baru. Browser lokal menguji proyek dengan tiga termin dan proyek tanpa kontrak aktif. PM sintetis memverifikasi tautan pada demo publik. Finance memiliki akses baca jadwal. Rekonsiliasi data jadwal, kontrak, sertifikat, invoice, alokasi dan kas lulus. Holsite 27/36. UI-07.1 menunggu pemicu, tanggal dan persetujuan penjadwalan ulang. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
