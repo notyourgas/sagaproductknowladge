@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Kapasitas dan pintasan lampiran nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 675b6a405edbf90fc864488a5991cca56c04cd88 menjelaskan batas lampiran nota serta menunjukkan sisa atau kondisi penuh pada draf tersimpan. Pintasan memfokuskan pemilih atau daftar tersimpan. Demo publik memverifikasi draf baru. Fixture lokal memverifikasi kapasitas dan unduhan. Holsite 27/36. UI-06.3 menunggu provider OCR foto dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Skala arus kas dan pemulihan periode kosong
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3c17249da315d2ced9bef3fb418a9ee35c9dc0da menampilkan skala Harian atau Bulanan pada grafik kas Dashboard Utama. Dari periode kosong, pintasan memfokuskan tanggal awal dan menjaga periode serta proyek. Demo publik dan fixture lokal memverifikasi alur. Holsite 27/36. UI-06.1 menunggu metode bayar dan aturan pembukuan. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
