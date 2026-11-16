@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Hari rekap dan pintasan hasil absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 8bdc219e2794f6b315b92d05d53a4589a91764d8 menambahkan nama hari pada rekap absensi dan menautkan rekap langsung ke hasil. Demo publik memverifikasi tanggal serta filter yang bertahan. Fixture lokal memverifikasi pemulihan hasil Finance dan sumber dua tanggal. Holsite 27/36. UI-07.3 menunggu konversi OH dan keterkaitannya dengan upah. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Jumlah dan pintasan hasil volume tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel bb72d9f3d306740a840227c4ae413ebfa591ca34 menonjolkan jumlah baris volume dan menautkan filter langsung ke hasil. Demo publik memverifikasi kondisi nol. Fixture lokal memverifikasi volume, validasi cut-off dan batas akses. Holsite 27/36. UI-07.4 menunggu definisi OH, biaya, dan aturan pembanding. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
