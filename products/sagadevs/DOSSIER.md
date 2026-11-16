@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Ringkasan dan akses riwayat BUP
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-001, UI-04.4 dan UI-09.2, kandidat Laravel 12c39d32a665182f1535721c62331dec8adff018 menampilkan asal volume langsung, hasil ukuran atau koreksi bertaut pada kartu BUP. Pintasan keyboard memfokuskan daftar dengan proyek dan filter tetap. Fixture progres merekonsiliasi 9 m² terverifikasi. Draf ukuran 3 m² dan 2 m² menunggu verifikasi dikecualikan. Regresi MySQL 117 tes, restore disposable, serta smoke demo PM sintetis lulus. Matriks Holsite 26/36. Uji perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Cakupan saldo upah dan akses daftar kewajiban
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 9b4e4e5f755fe0f214675cd72b877abeef78c55d pada REV-008, UI-07.2 dan UI-09.2 membedakan saldo upah proyek dari hasil filter. Pintasan memfokuskan status daftar dengan proyek dan filter tetap. Fixture dua divisi merekonsiliasi saldo Rp50.000 dan hasil Lunas Rp0. Uji PM memeriksa pesan kosong pada pohon aksesibilitas. Smoke publik membuktikan cakupan dan fokus saat daftar kosong pada dua viewport. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Field dan Finance masih perlu mengesahkan hubungan OH, absensi dan upah pada UI-07.3. QA melanjutkan uji perangkat fisik. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
