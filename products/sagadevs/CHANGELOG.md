@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-16 - Arkarupa: Rentang CSV dan kembali ke periode terbaru
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 4591df0eb75ddd614bf89a892e583c5428a5a7dc pada REV-012, UI-04.3 dan UI-09.2 memperlihatkan rentang tanggal ekspor periode serta pintasan ke periode terbaru tanpa kehilangan skala, cut-off atau fokus. CSV sebelum dan sesudah identik pada dua rentang fixture. Pelaksana dapat menggunakan riwayat dengan izin ekspor tetap terbatas. Regresi MySQL 117 tes, rehearsal restore dan smoke panel serta CSV PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. PM dan reviewer masih perlu mengesahkan kalender kerja, proyeksi keterlambatan dan laporan bulanan. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Penekanan progres aktual dan kembali ke Workspace
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 09286544ce30f53298791e44ebfb56461324d12e pada UI-03.2, UI-03.3 dan UI-09.2 menonjolkan aktual terverifikasi dan membawa pengguna kembali dari Lapangan ke Workspace dengan proyek, awal periode, cut-off dan fokus. Fixture membuktikan perbandingan dengan sumber, keadaan sebelum baseline dan pemisahan konteks setelah ganti proyek. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
