@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Kolom aktual dan fokus rincian Kurva S
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f53fd2e37e5a583134fed6b395daa194704d3cad membedakan kolom Aktual pada rincian Kurva S dan menyediakan tautan ke kontrol rincian. Browser klien pada fixture menguji fokus, penutupan tabel, pembatasan proyek dan PDF terbit. Template dan stylesheet demo publik cocok, dengan login dan batas akses diuji terpisah. Holsite 27/36. Dasar harga, kas dan pembulatan UI-05.1, staging privat, UAT dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Lokasi aktif dan pintasan filter volume tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 558a59a13034ebacb180dde954bfc9688e4ae2fb menandai lokasi yang diterapkan dan memberi pintasan menuju pemilih lokasi dari hasil rekap volume tim. Chrome membuktikan fokus dan retensi tanggal. PM sintetis memverifikasi alur demo publik. Volume Struktur 3 m² dan Finishing 6 m², sumber BUP dan absensi cocok sebelum dan sesudah. Holsite 27/36. Dasar OH, biaya, rework dan pembanding UI-07.4, staging privat, UAT dan PILOT_READY terbuka. Demo statis c6baa67a.
