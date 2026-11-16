@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Aksi lampiran dan unduh PDF saat gagal baca
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel de85c9b2e10fec8fb7618daf35e3dd1c1d82a96e merapikan aksi lampiran nota dan menautkan PDF asli langsung dari panel gagal baca. Fixture lokal memverifikasi checksum unduhan, draf tetap, dan izin. Demo publik memverifikasi jalur manual karena pembaca PDF berteks belum diaktifkan. Holsite 27/36. UI-06.4 menunggu keputusan OCR foto/pindai dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Laporan aktif dan pulih dari halaman kosong
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 73c1f18cce2b86fb0b5f4b0ad50aaa73b690a68d menandai laporan yang sedang dibuka dan memulihkan halaman riwayat di luar jangkauan dengan filter tetap. Alur klien lulus pada fixture lokal. Demo publik memverifikasi login Portal, pembatasan akses PM dan versi aset. Holsite 27/36. UI-05.1 menunggu persetujuan basis realisasi dan kas. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.

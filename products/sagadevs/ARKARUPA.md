@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Aksi lampiran dan unduh PDF saat gagal baca
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel de85c9b2e10fec8fb7618daf35e3dd1c1d82a96e merapikan aksi lampiran nota dan menautkan PDF asli langsung dari panel gagal baca. Fixture lokal memverifikasi checksum unduhan, draf tetap, dan izin. Demo publik memverifikasi jalur manual karena pembaca PDF berteks belum diaktifkan. Holsite 27/36. UI-06.4 menunggu keputusan OCR foto/pindai dan retensi. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-16 - Arkarupa: Laporan aktif dan pulih dari halaman kosong
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 73c1f18cce2b86fb0b5f4b0ad50aaa73b690a68d menandai laporan yang sedang dibuka dan memulihkan halaman riwayat di luar jangkauan dengan filter tetap. Alur klien lulus pada fixture lokal. Demo publik memverifikasi login Portal, pembatasan akses PM dan versi aset. Holsite 27/36. UI-05.1 menunggu persetujuan basis realisasi dan kas. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
