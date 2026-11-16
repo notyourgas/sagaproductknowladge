@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Sumber PDF nota dan kembali ke lampiran
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 38517170b29ce1ae33d936366a786db88de56db3 pada REV-006, UI-06.4 dan UI-09.2 memberi nama dan unduhan PDF sumber pada hasil baca nota. Ke lampiran privat memfokuskan judul lampiran sambil menjaga isian. Fixture sintetis merekonsiliasi draf Rp180.000 dan dua checksum berkas serta menguji gagal baca PDF tanpa teks, retry dan akses QS. Smoke publik memeriksa pintasan dan fokus Supplier pada jalur manual. Pembaca PDF berteks baru diuji secara lokal. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. QA dan Release Lead menyiapkan staging pembaca PDF. Procurement dan Product menetapkan OCR foto dan retensi. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Konteks filter dan pemulihan pencarian absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel d46e014c99749889fe68e64d0791c06544425769 pada REV-009, UI-07.3 dan UI-09.2 menampilkan status serta kata kunci aktif pada hasil absensi. Dari hasil kosong, Hapus pencarian memfokuskan kolom pencarian sambil menjaga tanggal dan status. Rekonsiliasi tiga catatan pada dua hari dan dua divisi lulus pada fixture. Pelaksana bisa memulihkan filter sesuai akses baca dan pencatatan. Smoke publik memeriksa label status serta fokus tanggal pada rekap kosong. Pemulihan hasil pencarian dengan data dibuktikan di fixture lokal. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Field dan Finance masih perlu mengesahkan konversi OH serta hubungan absensi ke upah. Uji perangkat fisik berikutnya. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
