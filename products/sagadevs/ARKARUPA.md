@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-16 - Arkarupa: Status sertifikat dan tautan invoice terbit
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 3fc565ff1bdfb22d5fd8df891ef325cc50d5fd1d pada REV-007, UI-07.1 dan UI-09.2 memisahkan status serta nominal sertifikat progres dan menautkan invoice terbit yang terkait. Fixture dua invoice membuktikan alokasi kas hanya mengurangi saldo target dan kedua tautan memfokuskan invoice yang benar. Regresi MySQL 117 tes, restore disposable, serta smoke publik 390/1440 lulus. Holsite 26/36. PM dan Finance masih mengesahkan milestone, tanggal dan reschedule. Staging privat, UAT serta PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Alasan duplikat dan pintasan riwayat PDF nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel f6c3839c3aea511ba3096b2124549e3197a11484 pada REV-006, UI-06.3, UI-06.4 dan UI-09.2 membedakan sinyal supplier dan nomor nota yang sama dari checksum PDF yang sama. Pintasan ke riwayat draf menjaga fokus, proyek dan isian. Fixture Chrome 320/390/1440, isolasi proyek, checksum, regresi MySQL 117 tes dan restore disposable lulus. Rilis publik memverifikasi CSS dan jalur manual nota. Holsite 26/36. Procurement dan Product masih mengesahkan provider OCR foto dan retensi. Staging privat, UAT perangkat dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
