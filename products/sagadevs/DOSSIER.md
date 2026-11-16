@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Cakupan nilai laporan dan pintasan ringkasan Portal
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7d4ffdb2950f834db940bc9ff91ac4512f3bfa68 menandai nilai pekerjaan per cut-off dan memfokuskan ringkasan Portal dari laporan terbit. Fixture lokal membuktikan konteks laporan historis, filter tagihan, checksum PDF dan penolakan akses lintas proyek. Demo publik memverifikasi template, CSS dan batas akses. UI klien terautentikasi diuji lokal karena demo publik belum memiliki akun klien aktif. Holsite 27/36. Basis harga, kas dan pembulatan UI-05.1, staging privat, UAT operator serta PILOT_READY masih terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Sumber BUP terverifikasi dari rekap tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e89910b3cd65547abbcfeda081a3eb407bb07456 menandai volume kumulatif dan membuka daftar BUP terverifikasi pada proyek yang sama. Browser lokal membuktikan konteks rekap asal dan akses baca QS. PM sintetis memverifikasi tautan dari kondisi kosong pada demo publik. Data BUP dan volume cocok sebelum dan sesudah. Holsite 27/36. Basis OH, biaya, rework dan pembanding UI-07.4 masih terbuka. Staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
