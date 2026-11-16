@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-16 - Arkarupa: Selisih jual dan akses dampak VO internal
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada REV-003, UI-05.2 dan UI-09.2, Laravel 16bb6479a19a80dc79521b1fae43c03542a77f3d menonjolkan selisih jual dalam kartu dampak VO internal. Ke dampak VO memfokuskan revisi yang dipilih sambil mempertahankan proyek. Fixture lokal membuktikan kartu, fokus, batas izin, dan perbandingan serta PDF pada Portal Klien. Demo publik memverifikasi halaman Komersial kosong dan aset CSS yang cocok. Regresi MySQL dan restore disposable lulus. Holsite 26/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Penanda Proyek dan fokus menu sentuh
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Pada UI-02.2 dan UI-09.2, Laravel 83ddf41b089c2f3afe12f1f6cdda7692802c27fe menandai Proyek pada rail, drawer dan dock ketika Workspace terbuka. Fokus masuk ke Proyek meski aktivasi Menu tidak memfokuskan tombol terlebih dahulu. Chrome lokal dan demo publik membuktikan penanda, fokus dan konteks Workspace. Regresi MySQL dan restore disposable lulus. Holsite 26/36. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Pages c6baa67a menunggu rilis koreksi AHSP.
