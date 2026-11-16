@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Identitas penerimaan dan fokus tujuan barang
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel ed64ade980ac80ae331cbe7be3c842f6b37fc0ac pada REV-005, UI-06.2 dan UI-09.2 memisahkan tanggal, PO, nomor penerimaan dan tujuan pada kartu riwayat. Ubah tujuan penerimaan memfokuskan pemilih dari daftar terisi maupun kosong dengan proyek, cut-off dan pencarian material tetap. Fixture H11 merekonsiliasi 2, 0 dan 2 m³ serta izin Pengadaan. Smoke publik membuktikan identitas penerimaan tetap dan navigasi keyboard pada dua viewport. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. Procurement dan Finance masih perlu mengesahkan metode bayar nota. QA melanjutkan uji perangkat fisik. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Ringkasan invoice dan akses daftar saldo
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 130f58bcb63fd6aa57b47be32dbad8ce5e8f38ea pada REV-007, UI-07.1 dan UI-09.2 memisahkan gross pekerjaan, DP diterima, saldo DP dan retensi pada ringkasan invoice. Pintasan keyboard dua arah mempertahankan proyek dan tab. Fixture Rp100 juta merekonsiliasi rencana termin, invoice dan saldo, PDF, serta snapshot laporan. Smoke publik memeriksa nominal yang sama sebelum dan sesudah serta fokus dua arah. Regresi MySQL 117 tes, rehearsal restore dan smoke demo PM sintetis lulus. Holsite 26/36. Staging privat, UAT operator dan PILOT_READY terbuka. PM dan Finance masih perlu mengesahkan pemicu milestone, tanggal dan persetujuan penjadwalan ulang. QA melanjutkan uji perangkat fisik. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
