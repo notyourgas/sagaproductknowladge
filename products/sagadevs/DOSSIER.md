@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-16 - Arkarupa: Cakupan rekap dan pintasan tanggal absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel fe8b57a6d44a833839cd0a44b5ef46a6de027e4c pada REV-009, UI-07.3 dan UI-09.2 memperjelas bahwa rekap absensi mencakup semua catatan pada tanggal terpilih. Tautan dari hasil memfokuskan tanggal dengan status dan pencarian tetap. Fixture merekonsiliasi empat status pada dua divisi, koreksi hanya pada tanggal sumber serta nol posting baru. Regresi MySQL 117 tes, restore disposable, serta smoke publik 390/1440 lulus. Holsite 26/36. Field dan Finance masih mengesahkan konversi OH dan kaitan upah. Staging privat, UAT perangkat dan PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
+
 ## 2026-11-16 - Arkarupa: Status sertifikat dan tautan invoice terbit
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Kandidat Laravel 3fc565ff1bdfb22d5fd8df891ef325cc50d5fd1d pada REV-007, UI-07.1 dan UI-09.2 memisahkan status serta nominal sertifikat progres dan menautkan invoice terbit yang terkait. Fixture dua invoice membuktikan alokasi kas hanya mengurangi saldo target dan kedua tautan memfokuskan invoice yang benar. Regresi MySQL 117 tes, restore disposable, serta smoke publik 390/1440 lulus. Holsite 26/36. PM dan Finance masih mengesahkan milestone, tanggal dan reschedule. Staging privat, UAT serta PILOT_READY terbuka. Pages c6baa67a menunggu autentikasi publikasi koreksi AHSP.
