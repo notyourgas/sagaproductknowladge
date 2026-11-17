@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Penugasan dan validasi koreksi absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel c9d996802c7887c98b8428f0f0bdcab8ae8b3729 menampilkan mandor dan divisi saat koreksi absensi dan meminta operator memilih status baru sebelum menyimpan alasan. Chrome dengan fixture disposable membuktikan validasi mencegah pengiriman saat status kosong, alasan tetap terisi, dan Finance dapat membaca absensi kedua divisi sesuai perannya. Demo publik memverifikasi akses halaman dan fokus ubah tanggal pada kondisi absensi kosong. Holsite 27/36. Uji HP fisik, keputusan pemakaian OH dan upah, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Label Aksi Cepat dan fokus
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e16330981b3771756ac7e0fbc472916dc4ccb9e5 menampilkan label Aksi pada tombol Aksi Cepat. Fokus di celah antara dua kendali bawah mempertahankan posisi halaman, dengan jarak untuk kontrol yang tertutup dock atau Aksi. Fixture disposable membuktikan akses QS dan konteks proyek Catat BUP. Demo publik memeriksa label dan pergeseran pada Chrome HP serta lanskap. Perangkat fisik masih menunggu QA. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
