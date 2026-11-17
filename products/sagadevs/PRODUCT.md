@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Porsi termin dan fokus kontrak sumber
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 651cc04be27eee53c4f10af9e4356c2d48ae5e96 memberi lencana persentase pada kartu termin Keuangan dan Portal. Tautan Keuangan memfokuskan kontrak sumber di proyek yang sama, termasuk keadaan tanpa kontrak. Fixture lokal memverifikasi porsi 30/50/20 dan izin PDF Portal. Demo publik membuktikan fokus pada keadaan tanpa kontrak. Pemicu milestone dan persetujuan reschedule masih menunggu keputusan. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Status bukti dan pintasan lampiran nota manual
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 77c6e512bb8d0d81e9ff03cfbf42b127a25ce61d menampilkan jumlah bukti tersimpan dalam mode nota manual. Pintasan menuju bukti tersimpan, pemilih berkas atau Simpan draf sesuai keadaan, dengan isian tetap terjaga. Chrome fixture disposable dan demo publik memverifikasi alur. Penyedia OCR dan retensi masih menunggu keputusan. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
