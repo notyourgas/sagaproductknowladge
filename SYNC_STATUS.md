@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Tanggal cut-off dan fokus ke progres resmi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 9ef5c6b09b4681829d01af2e4f190038904ea447 menampilkan cut-off progres sebagai tanggal hari/bulan/tahun. Detail progres memfokuskan judul Progres resmi. Tautan kembali memulihkan periode, halaman dan fokus tautan sumber. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis lulus pada 390 dan 1.440 px. Android/iPhone fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Konteks proyek dan ganti proyek dari Aksi cepat
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ee0d3218206ed679dc9b101d58a767814e7db2a0 menampilkan label Proyek aktif di Aksi cepat. Ganti proyek membuka direktori dan Catat BUP mengikuti proyek baru. Chrome lokal memverifikasi alur penuh pada 320, 390 dan 740 px. Demo publik PM sintetis memverifikasi dialog dan tautan pada 390 dan 740 px. Android/iPhone fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
