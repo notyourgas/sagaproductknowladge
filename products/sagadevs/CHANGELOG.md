@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Dasar sertifikat dan fokus kembali dari invoice
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 68b87773493879425cbfaa1128abf4347e294895 menampilkan dasar dan tanggal pengajuan sertifikat. Tombol Susun invoice memuat sertifikat serta sisa lingkup dan menerima fokus saat dialog ditutup. Fixture disposable merekonsiliasi termin, tagihan dan saldo tanpa posting baru. Demo sintetis memverifikasi kartu dan izin baca PM. Milestone, penjadwalan ulang, uji HP fisik, staging privat, UAT operator dan PILOT_READY masih terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Pemulihan unggahan lampiran nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ad514b238eff0a74f090c5cec319fee29a7cc794 menampilkan panel pemulihan saat unggahan lampiran nota terputus. Pilih ulang berkas mengosongkan dan memfokuskan pemilih, lalu simpan aktif setelah pilihan berhasil. Fixture disposable membuktikan dua lampiran asli, nilai draf dan posting tetap utuh. Demo sintetis memverifikasi panel Lampiran privat dan prasyarat simpan draf. Provider dan retensi OCR foto, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
