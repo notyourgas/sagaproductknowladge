@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-18 - Arkarupa: ringkasan penerimaan dan keputusan terbuka
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source Laravel `3ce77e74fda58520639befda45ca9b7c92050aa1` menampilkan snapshot penerimaan bertanggal **29/36 (80,6%)** pada Change Log Owner. Sebelumnya pengguna membaca riwayat panjang untuk menemukan progres dan keputusan. Kini kartu monokrom menyatakan batas data sintetis dan belum PILOT_READY; disclosure keyboard membuka tujuh ID, keputusan dan PIC.
+
+Chrome lokal 320/390/1440 serta tes Change Log 1/1 lulus. Demo publik memverifikasi penolakan PM pada Foundation, akses Kas, versi aktif dan hash template/CSS; sesi Owner publik belum diuji. Draf, tiga bukti asli dan sumber posting identik, nol posting baru. Backup/restore disposable 28 migrasi/73 tabel lulus. Suite penuh 119 tes/2.472 assertion adalah bukti historis `9170480`, tidak diulang untuk panel ini. Tidak ada perubahan schema, izin, aturan bisnis, pricing, akun nyata atau data klien.
+
+Tujuh ID **UI-05.1/06.3/06.4/07.1/07.3/07.4/09.4** tetap terbuka: Finance/PM menetapkan basis nilai dan termin; Procurement/Product OCR foto dan retensi; Field/Finance OH serta upah; PM rework/pembanding; QA/Andreas perangkat fisik dan pilihan proyek pilot. Staging privat, UAT operator dan PILOT_READY belum selesai. Demo statis terakhir `c6baa67a` tidak dirilis ulang. [Ringkasan Owner](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#pilot-acceptance-snapshot).
+
+Sumber: arahan Andreas dan verifikasi kandidat 18 November 2026. Sinkronisasi yang tertunda dilanjutkan dari checkout bersih yang sama dengan origin/main; histori lokal dipertahankan. Ini pembaruan knowledge atas milestone panel penerimaan, tanpa klaim penambahan pemeriksaan lulus.
+
 ## 2026-11-17 - COYABAG memverifikasi empat API J&T di sandbox
 
 **CONFIRMED / SANDBOX_VERIFIED / IMPLEMENTED_NOT_DEPLOYED.** J&T mengonfirmasi cek ongkir EZ, pembuatan resi, tracking, dan pembatalan kiriman sintetis dari server COYABAG. Aktivasi produksi menunggu akses produksi dari J&T, mapping gudang Madiun dan kecamatan, serta uji alur checkout dan fulfillment. Source `160e98dfb396bc8ff5e58ea69ce531dfd753835d` pada branch `codex/coyabag-jnt-account-contract`. Sinkronisasi mencakup product knowledge, dossier, changelog, master knowledge, dan status blocker.
