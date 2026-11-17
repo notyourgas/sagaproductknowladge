@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Pemulihan PDF saat lampiran penuh
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e026f1b26d017c50202b3cbdfd37e3c582e2afdf menampilkan kapasitas bukti pada galat PDF ketika lampiran penuh dan memfokuskan PDF tersimpan lain bila ada. Jika hanya ada satu PDF, pengguna dapat melanjutkan isian manual. Chrome lokal membuktikan slot penuh, slot tersedia, dan akses bukti. Demo publik memverifikasi jalur manual dan SHA aktif. Interpreter staging, OCR foto, retensi, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Dasar sisa nilai dan ringkasan laporan terbaru
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 5e7dbdfe5fe4a741a372323dbcc4c1be8891d6b6 menampilkan nominal baseline dan pekerjaan terverifikasi sebagai dasar sisa nilai Portal. Pintasan dari laporan historis menuju ringkasan terbaru mempertahankan konteks pencarian dan filter. Klien sintetis menguji perilaku secara lokal. Demo publik memverifikasi akses Portal dan hash templat aktif. Finance, PM dan Andreas masih mengesahkan basis nilai. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
