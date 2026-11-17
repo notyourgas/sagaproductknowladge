@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Jumlah riwayat review BUP dan kembali ke laporan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 96e332d7df377d6f0875706e8caa8b288f1c7170 menampilkan jumlah catatan riwayat review BUP. Kembali ke laporan ini memfokuskan judul BUP yang sama dengan filter dan cut-off lokal tetap aktif. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis memverifikasi lencana dan fokus pada 390 dan 1.440 px. Hak baca audit dan angka rekap tetap sesuai sumber. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Penyesuaian nota dan fokus total draf
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b7ea6e274fe7f450aec6bc16d72c0df8b0da1f7e mengelompokkan diskon, pajak dan biaya tambahan. Tinjau total nota memfokuskan hasil baru dengan isian tetap terisi. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis memverifikasi judul dan fokus pada 390 dan 1.440 px. Metode bayar, format nomor nota, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
