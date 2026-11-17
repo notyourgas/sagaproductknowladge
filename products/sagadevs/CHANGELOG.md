@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Konteks proyek dan ganti proyek dari Aksi cepat
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ee0d3218206ed679dc9b101d58a767814e7db2a0 menampilkan label Proyek aktif di Aksi cepat. Ganti proyek membuka direktori dan Catat BUP mengikuti proyek baru. Chrome lokal memverifikasi alur penuh pada 320, 390 dan 740 px. Demo publik PM sintetis memverifikasi dialog dan tautan pada 390 dan 740 px. Android/iPhone fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Identitas alokasi dan kembali ke nominal kas
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 58cd320b9aac0eae9377a71d6ead4e0f3bf25803 menampakkan nomor dokumen dan saldo terbuka pada alokasi pembayaran. Pintasan kembali ke nominal mempertahankan isian alokasi. Chrome dan fixture Finance lokal membuktikan fokus, hak akses PDF dan kecocokan sumber tanpa posting baru. Demo publik memverifikasi halaman Kas sesuai izin PM. Milestone, penjadwalan ulang, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
