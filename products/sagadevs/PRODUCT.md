@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Waktu saldo tagihan dan fokus kembali ke kas Portal
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7781ead983e447b05e42f455b285926d448278a8 memisahkan label saldo dan jam WIB dari tanggal cut-off laporan, serta menambahkan pintasan dari tagihan ke kas diterima dengan laporan dan filter tetap. Fixture klien sintetis memverifikasi nilai, fokus dan izin PDF. Demo publik memverifikasi login dan penolakan PM. Basis nilai dan kas, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Penanda versi koreksi dan fokus ke absensi yang diperbarui
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel de5f1ac657becac77851e1e2dd179c572a36d673 menampilkan revisi yang tercatat sebelum koreksi absensi. Jika filter aktif sesuai status lama, simpan mengarahkan pemeriksa ke status baru dan kembali ke baris pekerja yang sama. Tanggal serta pencarian tetap. Fixture sintetis memverifikasi audit, akses Finance dan tidak ada posting upah. Demo publik memverifikasi halaman absensi serta fokus tanggal. Basis OH, uji perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
