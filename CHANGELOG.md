@@ -22,6 +22,11 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-18 - Arkarupa: Cakupan CSV dan pencarian yang belum diterapkan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 5c5e1220766d2b8368eb43a0c23394d05cc63236 menampilkan tanggal, jumlah, status, UTF-8 dan delapan kolom pada cakupan CSV absensi. Kata kunci yang belum diterapkan menahan unduhan di browser dan server. Terapkan pencarian memulihkan fokus ke hasil; hasil kosong tetap menahan ekspor dan Hapus pencarian memulihkan fokus. Fixture disposable membuktikan CSV sesuai pencarian, formula terlindungi serta sumber tanpa posting biaya/upah. PM publik memverifikasi panel cakupan dan guard tanggal kosong. Holsite 28/36. OH/upah, perangkat fisik, staging privat, UAT operator dan PILOT_READY tetap terbuka. Demo statis c6baa67a.
+
+
 ## 2026-11-17 - Arkarupa: Identitas penugasan dan ekspor CSV absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3cdd8d9c93fab1a2f9f1e75422abcf518b6a8bb1 memisahkan mandor dan divisi pada rekap tim. CSV absensi mengikuti tanggal, status dan pencarian, memakai UTF-8 BOM dan melindungi sel formula. Filter dan fokus tombol bertahan sesudah unduhan. Fixture disposable membuktikan isi CSV, akses Finance, guard hasil kosong dan sumber tanpa posting biaya/upah. PM publik memverifikasi tombol nonaktif pada tanggal kosong dan fokus tanggal; ekspor berisi data diuji lokal. Holsite 28/36. Field/Finance menetapkan OH dan kaitan upah. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
