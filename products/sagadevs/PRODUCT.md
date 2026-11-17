@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Cut-off Kurva S dan tutup rincian
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f963796778ddca78e6bb6cfe710f342089f661d1 menampilkan cut-off aktual dalam lencana Portal. Tutup rincian Kurva S melipat tabel dan memulihkan fokus dengan laporan, filter dan angka yang sama. Fixture klien lokal membuktikannya pada Chrome 320, 390 dan 1.440 px. Demo publik memverifikasi template dan batas akses. Finance/PM, perangkat fisik, staging privat, UAT operator serta PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Tanggal cut-off dan fokus ke progres resmi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 9ef5c6b09b4681829d01af2e4f190038904ea447 menampilkan cut-off progres sebagai tanggal hari/bulan/tahun. Detail progres memfokuskan judul Progres resmi. Tautan kembali memulihkan periode, halaman dan fokus tautan sumber. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis lulus pada 390 dan 1.440 px. Android/iPhone fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
