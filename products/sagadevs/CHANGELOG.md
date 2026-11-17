@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Identitas alokasi dan kembali ke nominal kas
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 58cd320b9aac0eae9377a71d6ead4e0f3bf25803 menampakkan nomor dokumen dan saldo terbuka pada alokasi pembayaran. Pintasan kembali ke nominal mempertahankan isian alokasi. Chrome dan fixture Finance lokal membuktikan fokus, hak akses PDF dan kecocokan sumber tanpa posting baru. Demo publik memverifikasi halaman Kas sesuai izin PM. Milestone, penjadwalan ulang, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cakupan sumber BUP dan kembali ke rekap volume
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 0aede8b63c9c9eb315be70da050bf6171ed2dfca membedakan lokasi rekap dari cakupan sumber BUP. Tab BUP membawa konteks dan pintasan kembali ke hasil rekap. Browser lokal dan demo publik memverifikasi navigasi. Fixture sintetis memverifikasi cut-off dan angka volume. Dasar OH, upah dan rework, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
