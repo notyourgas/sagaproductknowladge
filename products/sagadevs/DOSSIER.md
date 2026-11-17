@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Halaman aktif drawer dan navigasi panah dock
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7ab423d84da6b16844642d23115f10339f0bf2e0 menampilkan bagian aktif di header drawer HP. Panah kiri dan kanan pada dock memindahkan fokus di antara Menu, Utama dan Proyek. Keadaan aktif, Tab, pemulihan fokus dan konteks proyek teruji pada Chrome sintetis. Demo memverifikasi alur pada potret 390 px dan lanskap pendek 740 px. Android dan iPhone fisik, pembaca layar, staging privat, UAT operator dan PILOT_READY masih terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Status pelunasan dan sumber kas per invoice
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f6f267225977784bac9b4b966bae0c3c47d874ff menampilkan status penyelesaian invoice dan nominal kas teralokasi per transaksi. Tautan menuju pembayaran terposting pada proyek yang sama. Pembayaran yang dibalik tetap ada di riwayat Kas dan dikecualikan dari alokasi aktif. Fixture sintetis lulus Chrome 320, 390 dan 1.440 px, termasuk alokasi lintas invoice dan batas akses. Demo menguji dua tautan sumber secara terautentikasi. Finance dan PM masih mengesahkan milestone, tanggal dan persetujuan penjadwalan ulang. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
