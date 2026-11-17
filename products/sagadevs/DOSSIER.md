@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Status tanpa proyek dan fokus pemilih Aksi cepat
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2211526db8cf99dbb15bbebe46d7f5615b6392b7 menandai kondisi tanpa proyek pada Aksi cepat dan memfokuskan hasil direktori saat proyek dipilih. Catat BUP mengikuti proyek hasil pilihan. PM sintetis lulus di Chrome 320, 390 dan 740 px pada fixture, dan di 390 serta 740 px pada demo. Uji Android dan iPhone fisik untuk UI-02.2 masih terbuka. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Identitas lampiran dan fokus bukti revisi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 10126de0f50792f02e6ffebffc90db4bfb2f024f menampilkan jumlah lampiran pada revisi terbit. Tautan dari formulir ke bukti dan kembali memindahkan fokus serta menjaga isian. Fixture klien lokal lulus di Chrome 320, 390 dan 1.440 px. Demo memverifikasi batas login Portal dan kecocokan kode template aktif. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
