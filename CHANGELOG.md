@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Lingkup sertifikat dan invoice
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel dbe618463c6297473c450d0451d184b9b7d46808 menampilkan sisa lingkup sertifikat setelah invoice terposting. Jika sisa nol, tindakan beralih ke sumber invoice dan permintaan lama tidak membuka formulir baru. Fixture disposable membuktikan sisa positif dan nol serta baca saja PM. Demo publik membuktikan jalur Tagihan pada proyek sintetis tanpa sertifikat. Milestone, jatuh tempo serta penjadwalan ulang tetap menunggu Finance dan PM. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Pencarian riwayat Portal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel aa3f7b0a6ad56a533ffd126d0b0160a737c44ddf menampilkan jumlah hasil pencarian riwayat Portal dan pilihan Ubah kata kunci saat hasil nol. Uji klien disposable membuktikan fokus keyboard, kata kunci lama, laporan arsip dan filter tagihan. Login Portal dan batas peran PM diverifikasi di demo publik. Basis nilai pekerjaan dan cakupan kas masih menunggu Finance dan PM. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.

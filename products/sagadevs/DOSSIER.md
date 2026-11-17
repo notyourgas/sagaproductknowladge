@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Lingkup sertifikat dan invoice
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel dbe618463c6297473c450d0451d184b9b7d46808 menampilkan sisa lingkup sertifikat setelah invoice terposting. Jika sisa nol, tindakan beralih ke sumber invoice dan permintaan lama tidak membuka formulir baru. Fixture disposable membuktikan sisa positif dan nol serta baca saja PM. Demo publik membuktikan jalur Tagihan pada proyek sintetis tanpa sertifikat. Milestone, jatuh tempo serta penjadwalan ulang tetap menunggu Finance dan PM. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Pencarian riwayat Portal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel aa3f7b0a6ad56a533ffd126d0b0160a737c44ddf menampilkan jumlah hasil pencarian riwayat Portal dan pilihan Ubah kata kunci saat hasil nol. Uji klien disposable membuktikan fokus keyboard, kata kunci lama, laporan arsip dan filter tagihan. Login Portal dan batas peran PM diverifikasi di demo publik. Basis nilai pekerjaan dan cakupan kas masih menunggu Finance dan PM. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
