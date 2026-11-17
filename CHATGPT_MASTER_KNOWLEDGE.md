@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Pemulihan unggahan lampiran nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ad514b238eff0a74f090c5cec319fee29a7cc794 menampilkan panel pemulihan saat unggahan lampiran nota terputus. Pilih ulang berkas mengosongkan dan memfokuskan pemilih, lalu simpan aktif setelah pilihan berhasil. Fixture disposable membuktikan dua lampiran asli, nilai draf dan posting tetap utuh. Demo sintetis memverifikasi panel Lampiran privat dan prasyarat simpan draf. Provider dan retensi OCR foto, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cut-off tahapan Workspace dan tautan Gantt
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 5de6bcebb8ff61c4bc0fe91c6bae0492f73b56dc memakai satu cut-off pada header dan tahapan Workspace, membuka Gantt yang sesuai bila baseline tersedia, lalu mengembalikan fokus ke tautan sumber. Fixture disposable merekonsiliasi Workspace, Gantt, Dashboard dan BUP. Demo sintetis memverifikasi alur dua arah di proyek yang ditugaskan. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
