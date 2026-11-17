@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Status baseline dan fokus halaman proyek
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3d16dc3920a8870064f4e312abee1c826cec2e8c menonjolkan baseline yang belum tersedia pada cut-off terpilih. Pergantian halaman memindahkan fokus ke judul Progres & sumber proyek dan mempertahankan periode. Fixture disposable membuktikan 8 proyek terbagi 6 dan 2 tanpa mengubah total portofolio atau cakupan izin. Demo sintetis memverifikasi lencana dan tautan progres bertanggal. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Total tersimpan dan fokus riwayat draf nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6bb36aa3feb189b420a73e25d4f9520a83fab088 membedakan total tersimpan pada riwayat nota dan nilai yang sedang diedit. Pintasan mengembalikan fokus ke aksi draf yang sama atau ke pencarian jika hasil menyembunyikan draf. Fixture disposable membuktikan nilai Rp26.000 tersimpan, nilai Rp27.200 sementara, dan stok serta Finance tetap konsisten. Demo sintetis memverifikasi riwayat nota dan pencarian. Metode bayar, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
