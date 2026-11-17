@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Koneksi terputus dan pemulihan simpan nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel db4be523591dba4f4b03464a4f999b50d129b3d8 menjelaskan kondisi koneksi terputus pada nota. Tombol simpan draf dan lampiran menunggu koneksi kembali. Nomor nota, pilihan lampiran dan PDF asli bertahan pada fixture Chrome 320, 390 dan 1.440 px. Editor nota baru pada demo PM sintetis lulus pada 390 dan 1.440 px. Keputusan provider OCR dan retensi masih terbuka. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Status draf dan fokus catatan BUP
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel fde93ba19d3d1fba410b8d541976bf7baccffcda menampilkan tanggal kejadian dan status pada kartu draf BUP. Ke catatan dan bukti memfokuskan isian catatan tanpa kehilangan isian. Draf teruji pada fixture Chrome 320, 390 dan 1.440 px. Laporan baru di demo PM sintetis lulus pada 390 dan 1.440 px. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
