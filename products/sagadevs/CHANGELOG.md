@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Dasar sisa nilai dan ringkasan laporan terbaru
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 5e7dbdfe5fe4a741a372323dbcc4c1be8891d6b6 menampilkan nominal baseline dan pekerjaan terverifikasi sebagai dasar sisa nilai Portal. Pintasan dari laporan historis menuju ringkasan terbaru mempertahankan konteks pencarian dan filter. Klien sintetis menguji perilaku secara lokal. Demo publik memverifikasi akses Portal dan hash templat aktif. Finance, PM dan Andreas masih mengesahkan basis nilai. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Tanggal kejadian BUP dan pintasan alasan review
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 4e3e0d59cbc373f59b8bbeec68163f22911c4fa6 melabeli tanggal kejadian BUP dengan format Indonesia dan memberi reviewer pintasan dari kartu yang menunggu ke kolom alasan. QA memverifikasi hak reviewer, filter dan rekap tersendiri berdasarkan cut-off. Demo publik memverifikasi tanggal dan fokus dalam Chrome. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
