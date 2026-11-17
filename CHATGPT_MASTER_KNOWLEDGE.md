@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: PDF sumber dan fokus isian nota manual
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel bc223ce85559fc416c2069216a9c1617994d44d8 menandai PDF sumber pada hasil pembacaan yang gagal dan mengarahkan tindakan isi manual ke kolom identitas pertama yang perlu diisi. Fixture lokal memverifikasi batas halaman, file terkunci, isian yang bertahan dan hak unduh. Demo publik memverifikasi alur manual. Interpreter PDF publik, provider OCR foto, retensi, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Jarak dock dari cutout dan lompatan fokus
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ff2fe45356b43a999fe22eaa86b4ddea92040b88 memberi ruang dari batas cutout untuk dock dan Aksi cepat pada layar lanskap. Home menuju Menu dan End menuju Proyek pada dock tanpa mengubah konteks proyek. Chrome menguji safe area emulasi dan penyerahan fokus ke rail pada 900 px. Pemeriksaan demo membaca halaman Tagihan dan mencocokkan versi aktif. Safe area Android/iPhone fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
