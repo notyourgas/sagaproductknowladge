@@ -1,5 +1,10 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-18 - Arkarupa: Pemulihan nota dan bukti tersimpan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f32733f8dd3ff88db8da26e5e8175444c11b31f0 selalu memperlihatkan jumlah lampiran tersimpan ketika pembacaan PDF gagal. Jalur manual menuju isian barang yang belum lengkap sesudah identitas nota valid. Sebelumnya jumlah bukti hanya terlihat saat kapasitas penuh dan fokus kembali ke supplier. Browser disposable 320/390/1440 px membuktikan fokus kuantitas, retensi isian serta tiga lampiran asli. Kegagalan extractor PDF terkontrol lalu retry pembaca asli mempertahankan isian; checksum sumber cocok, akses Finance ditolak dan tidak ada posting baru. Regresi penuh 119 tes/2464 assertion. PM publik memverifikasi fokus manual di 390/1440 px; pembaca PDF diuji lokal. Backup/restore disposable 28 migrasi/73 tabel lulus. Holsite tetap 28/36 (77,8%); UI-06.4 belum ditutup karena kegagalan OCR foto belum terbukti. Provider/retensi OCR, perangkat fisik, staging privat, UAT operator, pilihan proyek pilot serta PILOT_READY terbuka. Demo statis terakhir c6baa67a, tidak dirilis ulang. Sumber: arahan Andreas dan bukti kandidat 18 November 2026; perubahan UI/UX nota, tanpa perubahan schema, akun nyata atau data klien.
+
+
 ## 2026-11-18 - Arkarupa: Cakupan CSV dan pencarian yang belum diterapkan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 5c5e1220766d2b8368eb43a0c23394d05cc63236 menampilkan tanggal, jumlah, status, UTF-8 dan delapan kolom pada cakupan CSV absensi. Kata kunci yang belum diterapkan menahan unduhan di browser dan server. Terapkan pencarian memulihkan fokus ke hasil; hasil kosong tetap menahan ekspor dan Hapus pencarian memulihkan fokus. Fixture disposable membuktikan CSV sesuai pencarian, formula terlindungi serta sumber tanpa posting biaya/upah. PM publik memverifikasi panel cakupan dan guard tanggal kosong. Holsite 28/36. OH/upah, perangkat fisik, staging privat, UAT operator dan PILOT_READY tetap terbuka. Demo statis c6baa67a.
