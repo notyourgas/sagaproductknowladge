@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Cakupan PDF nota dan pemulihan hasil pembacaan
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 48c41e1517c7380c4158a77b2ceeef572355920d enforces the five-page limit for the configured receipt PDF reader and explains longer or password-protected documents with a path to another attachment or manual entry. Chrome synthetic flows passed at 320, 390 and 1,440 px with the reader configured locally. The public demo verified manual mode while the PDF interpreter is disabled there. The OCR provider and retention decision for photos/scanned PDFs and the staging PHP-FPM interpreter are open. Physical devices, private staging, operator UAT and PILOT_READY remain open. Holsite 27/36. Static demo c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cakupan lokasi dan sumber BUP rekap tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2e5566d8f06c5f0d7f962b68c234dffe6aae267c membuka BUP terverifikasi sesuai lokasi rekap volume tim dan tanggal cut-off. Koreksi mengikuti lokasi laporan asal yang memenuhi cut-off. Chrome pada fixture sintetis lulus pada 320, 390 dan 1.440 px serta demo menguji cakupan, keadaan kosong, dan kembali ke hasil rekap. Field dan Finance masih mengesahkan OH, biaya dan kaitannya dengan upah. PM menetapkan rework dan baseline. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
