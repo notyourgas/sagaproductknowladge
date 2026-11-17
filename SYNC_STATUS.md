@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Total tersimpan dan fokus riwayat draf nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6bb36aa3feb189b420a73e25d4f9520a83fab088 membedakan total tersimpan pada riwayat nota dan nilai yang sedang diedit. Pintasan mengembalikan fokus ke aksi draf yang sama atau ke pencarian jika hasil menyembunyikan draf. Fixture disposable membuktikan nilai Rp26.000 tersimpan, nilai Rp27.200 sementara, dan stok serta Finance tetap konsisten. Demo sintetis memverifikasi riwayat nota dan pencarian. Metode bayar, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Penanda dan fokus komponen HSD belum lengkap
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 30fb4c60a491f698b23b0dfabdd0b4e33204bb79 menandai alasan harga komponen AHSP belum lengkap. Pintasan mengarahkan fokus ke komponen pertama dan mempertahankan pencarian. Fixture disposable membuktikan kasus HSD kosong, unit berbeda, nilai lengkap dan isolasi tenant. Demo sintetis memverifikasi akses Katalog dan keadaan awal Master AHSP. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
