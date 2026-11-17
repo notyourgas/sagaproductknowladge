@@ -2,7 +2,7 @@
 
 ## 2026-11-17 - COYABAG memverifikasi empat API J&T di sandbox
 
-**CONFIRMED / SANDBOX_VERIFIED / IMPLEMENTED_NOT_DEPLOYED.** J&T mengonfirmasi cek ongkir EZ, pembuatan resi, tracking, dan pembatalan kiriman sintetis dari server COYABAG. Aktivasi produksi menunggu akses produksi dari J&T, mapping gudang Madiun dan kecamatan, serta uji alur checkout dan fulfillment. Source `96ff1fe074da6b64e7d617ca530946a8407d6c31` pada branch `codex/coyabag-jnt-account-contract`. Lihat [knowledge COYABAG](products/coyabag/PRODUCT.md).
+**CONFIRMED / SANDBOX_VERIFIED / IMPLEMENTED_NOT_DEPLOYED.** J&T mengonfirmasi cek ongkir EZ, pembuatan resi, tracking, dan pembatalan kiriman sintetis dari server COYABAG. Aktivasi produksi menunggu akses produksi dari J&T, mapping gudang Madiun dan kecamatan, serta uji alur checkout dan fulfillment. Source `1d082e58a82503868aef384c7acb9f98e350c1aa` pada branch `codex/coyabag-jnt-account-contract`. Lihat [knowledge COYABAG](products/coyabag/PRODUCT.md).
 
 ## 2026-11-16 - SagaPOS memperpanjang Daily Dose sampai 30 November
 

@@ -2,7 +2,7 @@
 
 ## 2026-11-17 - COYABAG memverifikasi empat API J&T di sandbox
 
-**NEEDS CONFIRMATION.** Kandidat J&T COYABAG telah lolos empat panggilan sandbox. J&T perlu mengonfirmasi hasil tes dan membuka akses produksi serta menyediakan kode asal gudang dan mapping kecamatan. Uji checkout dan fulfillment COYABAG melalui API produksi masih terbuka. Source `96ff1fe074da6b64e7d617ca530946a8407d6c31` pada branch `codex/coyabag-jnt-account-contract`.
+**NEEDS CONFIRMATION.** Kandidat J&T COYABAG telah lolos empat panggilan sandbox. J&T perlu mengonfirmasi hasil tes dan membuka akses produksi serta menyediakan kode asal gudang dan mapping kecamatan. Uji checkout dan fulfillment COYABAG melalui API produksi masih terbuka. Source `1d082e58a82503868aef384c7acb9f98e350c1aa` pada branch `codex/coyabag-jnt-account-contract`.
 
 ## 2026-11-14 - Arkarupa: fondasi kandidat pilot
 

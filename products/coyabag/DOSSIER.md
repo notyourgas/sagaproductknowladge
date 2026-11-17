@@ -4,7 +4,7 @@
 
 **CONFIRMED / SANDBOX_VERIFIED / IMPLEMENTED_NOT_DEPLOYED.** J&T mengonfirmasi cek ongkir EZ, pembuatan resi, tracking, dan pembatalan kiriman sintetis dari server COYABAG. Aktivasi produksi menunggu akses produksi dari J&T, mapping gudang Madiun dan kecamatan, serta uji alur checkout dan fulfillment.
 
-Source `96ff1fe074da6b64e7d617ca530946a8407d6c31` pada branch `codex/coyabag-jnt-account-contract`. Laravel lulus 713 tes dengan satu tes dilewati. Tarif dihitung dari mapping aktif. Pembuatan resi memerlukan paket siap kirim. Pembatalan memerlukan hasil sukses pada order yang sama, dan tracking membedakan paket yang diterima J&T dari paket yang diterima pelanggan. Uji vendor memakai data sintetis dan tujuan referensi sandbox.
+Source `1d082e58a82503868aef384c7acb9f98e350c1aa` pada branch `codex/coyabag-jnt-account-contract`. Laravel lulus 714 tes dengan satu tes dilewati. Tarif dihitung dari mapping aktif. Pembuatan resi memerlukan paket siap kirim. Pembatalan memerlukan hasil sukses pada order yang sama, dan tracking membedakan paket yang diterima J&T dari paket yang diterima pelanggan. Uji vendor memakai data sintetis dan tujuan referensi sandbox.
 
 ## 2026-10-18 - Kontrak COYABAG aktif; penutupan recovery lokal OPEN
 
