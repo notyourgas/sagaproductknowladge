@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Rekap absensi per penugasan dan pintasan pencarian
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 4e71d33328f4a1e1ac7c676a4868a316446cd3c4 menampilkan Hadir, Izin, Sakit, dan Alpa per penugasan. Pintasan di akhir hasil memfokuskan pencarian dengan tanggal dan filter aktif. Chrome lokal dan fixture MySQL memverifikasi dua penugasan serta hak baca Finance. Demo publik memverifikasi kondisi tanggal kosong, fokus tanggal, dan SHA aktif. Definisi OH dan kaitan upah, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Pemulihan PDF saat lampiran penuh
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e026f1b26d017c50202b3cbdfd37e3c582e2afdf menampilkan kapasitas bukti pada galat PDF ketika lampiran penuh dan memfokuskan PDF tersimpan lain bila ada. Jika hanya ada satu PDF, pengguna dapat melanjutkan isian manual. Chrome lokal membuktikan slot penuh, slot tersedia, dan akses bukti. Demo publik memverifikasi jalur manual dan SHA aktif. Interpreter staging, OCR foto, retensi, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.

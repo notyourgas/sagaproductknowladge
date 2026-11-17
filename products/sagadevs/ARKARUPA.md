@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Rekap absensi per penugasan dan pintasan pencarian
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 4e71d33328f4a1e1ac7c676a4868a316446cd3c4 menampilkan Hadir, Izin, Sakit, dan Alpa per penugasan. Pintasan di akhir hasil memfokuskan pencarian dengan tanggal dan filter aktif. Chrome lokal dan fixture MySQL memverifikasi dua penugasan serta hak baca Finance. Demo publik memverifikasi kondisi tanggal kosong, fokus tanggal, dan SHA aktif. Definisi OH dan kaitan upah, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Pemulihan PDF saat lampiran penuh
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e026f1b26d017c50202b3cbdfd37e3c582e2afdf menampilkan kapasitas bukti pada galat PDF ketika lampiran penuh dan memfokuskan PDF tersimpan lain bila ada. Jika hanya ada satu PDF, pengguna dapat melanjutkan isian manual. Chrome lokal membuktikan slot penuh, slot tersedia, dan akses bukti. Demo publik memverifikasi jalur manual dan SHA aktif. Interpreter staging, OCR foto, retensi, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
