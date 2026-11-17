@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Cut-off ringkasan dan pemulihan Kurva S kosong
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel c2df0d9694551caca6fe2e0ca7074c8671a06f28 menampilkan tanggal cut-off pada judul Ringkasan nilai proyek. Pada Kurva S kosong, tautan Cari laporan lain mengarahkan fokus ke judul pencarian dan menjaga filter serta laporan yang sedang dilihat. Fixture lokal membuktikan jalur ke Kurva S terbaru, snapshot, alokasi kas dan lingkup PDF. Demo membuktikan gerbang masuk, batas PM, dan template Portal cocok dengan kandidat. Finance dan PM masih perlu mengesahkan basis nilai, kas dan pembulatan. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Status sumber PDF dan kembali ke lampiran gagal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 10e3ab9c78dc39cfeadbf7706877e19c7b9961b2 menandai PDF nota yang gagal dibaca dan menyediakan fokus balik ke tombol Baca PDF milik berkas yang sama. Uji fixture membuktikan penanda berpindah saat sumber diganti, unduhan mempertahankan berkas asli dan nomor nota tetap terisi. Demo memverifikasi mode manual dan akses lampiran privat. Provider OCR, retensi, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
