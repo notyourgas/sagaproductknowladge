@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Nomor potensi duplikat PDF dan pencarian draf pembanding
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel a5336760f72897440d6baf6217e84fbf7fcb2602 menampilkan nomor pada peringatan PDF duplikat dan menjalankan pencarian draf ketika supplier dan nomor cocok. Fokus hasil dan retensi isian teruji pada fixture lokal, tanpa posting baru. Demo publik memverifikasi editor. Provider foto dan hasil scan, retensi bukti, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Waktu saldo tagihan dan fokus kembali ke kas Portal
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7781ead983e447b05e42f455b285926d448278a8 memisahkan label saldo dan jam WIB dari tanggal cut-off laporan, serta menambahkan pintasan dari tagihan ke kas diterima dengan laporan dan filter tetap. Fixture klien sintetis memverifikasi nilai, fokus dan izin PDF. Demo publik memverifikasi login dan penolakan PM. Basis nilai dan kas, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
