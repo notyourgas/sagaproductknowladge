@@ -22,6 +22,11 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Identitas penugasan dan ekspor CSV absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3cdd8d9c93fab1a2f9f1e75422abcf518b6a8bb1 memisahkan mandor dan divisi pada rekap tim. CSV absensi mengikuti tanggal, status dan pencarian, memakai UTF-8 BOM dan melindungi sel formula. Filter dan fokus tombol bertahan sesudah unduhan. Fixture disposable membuktikan isi CSV, akses Finance, guard hasil kosong dan sumber tanpa posting biaya/upah. PM publik memverifikasi tombol nonaktif pada tanggal kosong dan fokus tanggal; ekspor berisi data diuji lokal. Holsite 28/36. Field/Finance menetapkan OH dan kaitan upah. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
+
 ## 2026-11-17 - Arkarupa: Pratinjau foto nota dan fokus pengisian manual
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3e49601f0bad2eea228d32776ff2065c67b3d4b5 menampilkan foto privat pada daftar bukti serta menyediakan retry saat gambar gagal dimuat. Isi nota dari foto memfokuskan isian pertama yang perlu dilengkapi, termasuk metode bayar. Fixture lokal membuktikan preview, retry, integritas PNG/PDF serta batas akses Finance. PM memverifikasi fokus manual di demo. Holsite 28/36. Provider OCR foto dan retensi, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
