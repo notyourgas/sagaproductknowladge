@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Pulihkan koreksi absensi saat revisi berubah
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel d44e7a04aa33b16356e02c2123a8e2ac485be0bc menampilkan revisi absensi terbaru ketika dua operator mengoreksi baris yang sama. Operator dapat memuat revisi terbaru, melanjutkan dengan alasan yang sudah diisi dan memeriksa kembali pilihan status. Fixture lokal membuktikan pemulihan fokus dan satu audit per baris tanpa posting tambahan. Pemeriksaan demo publik membaca halaman absensi dan mencocokkan versi aktif. Field dan Finance perlu menetapkan definisi OH dan kaitan ke upah. Uji perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Pembanding nomor nota manual
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ad364697feefcf9d183b427dcb0b99fe555abc7c menampilkan pembanding draf tersimpan saat supplier dan nomor nota manual bentrok. Operator dapat membaca identitas dan nilai tersimpan serta nilai isian, lalu kembali ke kolom nomor tanpa mengganti isian. MySQL disposable membuktikan draf, bukti dan posting sama sebelum dan sesudah. Demo publik memverifikasi editor dan versi, sedangkan benturan diuji pada fixture lokal. Metode bayar dan kaitan kas perlu keputusan Procurement dan Finance. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
