@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Tanggal hasil absensi dan fokus pencarian aktif
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b9540b44e8a561c2fae7cf9a42b2d00657d47f39 menampilkan tanggal pada Hasil absensi. Pada hasil yang cocok, Ubah pencarian aktif memfokuskan dan menyeleksi kata kunci dengan status serta tanggal tetap terjaga. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo memverifikasi tanggal hasil dan fokus tanggal pada 390 dan 1.440 px. Aturan OH dan upah, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Jumlah riwayat review BUP dan kembali ke laporan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 96e332d7df377d6f0875706e8caa8b288f1c7170 menampilkan jumlah catatan riwayat review BUP. Kembali ke laporan ini memfokuskan judul BUP yang sama dengan filter dan cut-off lokal tetap aktif. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis memverifikasi lencana dan fokus pada 390 dan 1.440 px. Hak baca audit dan angka rekap tetap sesuai sumber. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
