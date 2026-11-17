@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Label dock dan jarak fokus
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 886e15627570e352ee382f160d4102f7ab025d83 memperbesar label Menu, Utama, dan Proyek dari 11 ke 12 px. Kontrol konten yang mendapat fokus sekarang bergulir di atas dock bila tertutup. Chrome fixture lokal dan demo publik membuktikan gaya dan fokus. Pengujian safe area, rotasi dan pembaca layar pada perangkat fisik terbuka. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Penanda koreksi dan tautan laporan BUP sumber
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 1ac2a2bdbe9155d28afd7fba58692db1b0e5a22f menandai koreksi BUP dengan lencana. Bila sumber ada pada daftar, pintasan memfokuskan laporan asal. Saat sumber terfilter atau berada di halaman lain, nomor sumber tetap tersedia. Fixture lokal membuktikan rekap dan izin QS. Demo publik membuktikan versi, checksum template serta navigasi BUP tanpa contoh koreksi. Dasar OH, biaya dan pembanding tetap terbuka. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
