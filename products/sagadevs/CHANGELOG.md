@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Penanda kas dan akses semua tagihan sumber
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 00fec13047ac272280fb40fd323425e7bd281f62 memperjelas penanda kas kini di Portal. Pintasan semua tagihan sumber menghapus filter dan pencarian tagihan serta mempertahankan laporan yang sedang dibaca. Fixture lokal membuktikan fokus, PDF dan batas akses. Demo publik membuktikan versi, checksum template dan batas login/role. Basis nilai pekerjaan, cakupan kas dan pembulatan menunggu keputusan. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Porsi termin dan fokus kontrak sumber
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 651cc04be27eee53c4f10af9e4356c2d48ae5e96 memberi lencana persentase pada kartu termin Keuangan dan Portal. Tautan Keuangan memfokuskan kontrak sumber di proyek yang sama, termasuk keadaan tanpa kontrak. Fixture lokal memverifikasi porsi 30/50/20 dan izin PDF Portal. Demo publik membuktikan fokus pada keadaan tanpa kontrak. Pemicu milestone dan persetujuan reschedule masih menunggu keputusan. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
