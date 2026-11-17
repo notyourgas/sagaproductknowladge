@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Identitas lampiran dan fokus bukti revisi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 10126de0f50792f02e6ffebffc90db4bfb2f024f menampilkan jumlah lampiran pada revisi terbit. Tautan dari formulir ke bukti dan kembali memindahkan fokus serta menjaga isian. Fixture klien lokal lulus di Chrome 320, 390 dan 1.440 px. Demo memverifikasi batas login Portal dan kecocokan kode template aktif. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Koneksi terputus dan pemulihan simpan nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel db4be523591dba4f4b03464a4f999b50d129b3d8 menjelaskan kondisi koneksi terputus pada nota. Tombol simpan draf dan lampiran menunggu koneksi kembali. Nomor nota, pilihan lampiran dan PDF asli bertahan pada fixture Chrome 320, 390 dan 1.440 px. Editor nota baru pada demo PM sintetis lulus pada 390 dan 1.440 px. Keputusan provider OCR dan retensi masih terbuka. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
