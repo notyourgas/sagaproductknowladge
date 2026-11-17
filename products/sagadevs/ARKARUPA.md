@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Tanggal kejadian BUP dan pintasan alasan review
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 4e3e0d59cbc373f59b8bbeec68163f22911c4fa6 melabeli tanggal kejadian BUP dengan format Indonesia dan memberi reviewer pintasan dari kartu yang menunggu ke kolom alasan. QA memverifikasi hak reviewer, filter dan rekap tersendiri berdasarkan cut-off. Demo publik memverifikasi tanggal dan fokus dalam Chrome. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Antrean sertifikasi dan pintasan termin
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 29d7a3e7ca1064580b32132262011aef9c93bd17 menampilkan jumlah sertifikat dan yang menunggu di halaman Tagihan. Dari rencana termin, pengguna dapat berfokus pada sertifikat menunggu terbaru saat tersedia, dengan konteks proyek yang sama. Fixture lokal memverifikasi antrean, jumlah termin dan saldo serta isolasi proyek. Demo publik memverifikasi jumlah dan navigasi ke sertifikasi. Aturan milestone, tanggal dan persetujuan reschedule menunggu PM dan Finance. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
