@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Penanda koreksi dan perlindungan tanggal absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 912bd0a5a90d6f0d34fb8de914ede4ba91bfd9d0 memberi label pada baris yang sedang dikoreksi, menahan perubahan tanggal hingga koreksi selesai, dan mengembalikan fokus melalui Lanjutkan koreksi. Chrome pada fixture disposable membuktikan retensi alasan. Demo publik membuktikan navigasi tanggal dengan tanggal tanpa catatan dan kecocokan versi aktif. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Penanda tutup drawer dan Aksi Cepat lanskap
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel bebe8f6221b95c73e54f2957b970118309ddf1e1 memperjelas tombol Tutup pada drawer dan membuat Tutup Aksi Cepat langsung dapat diketuk di lanskap pendek. Isi panel tetap bisa digulir dan fokus kembali ke pemicu. Bukti emulasi Chrome dan demo publik terverifikasi. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
