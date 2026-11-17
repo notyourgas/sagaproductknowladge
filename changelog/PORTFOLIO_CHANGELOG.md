@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Cakupan sumber BUP dan kembali ke rekap volume
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 0aede8b63c9c9eb315be70da050bf6171ed2dfca membedakan lokasi rekap dari cakupan sumber BUP. Tab BUP membawa konteks dan pintasan kembali ke hasil rekap. Browser lokal dan demo publik memverifikasi navigasi. Fixture sintetis memverifikasi cut-off dan angka volume. Dasar OH, upah dan rework, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Nomor potensi duplikat PDF dan pencarian draf pembanding
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel a5336760f72897440d6baf6217e84fbf7fcb2602 menampilkan nomor pada peringatan PDF duplikat dan menjalankan pencarian draf ketika supplier dan nomor cocok. Fokus hasil dan retensi isian teruji pada fixture lokal, tanpa posting baru. Demo publik memverifikasi editor. Provider foto dan hasil scan, retensi bukti, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.

@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Cakupan sumber BUP dan kembali ke rekap volume
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 0aede8b63c9c9eb315be70da050bf6171ed2dfca membedakan lokasi rekap dari cakupan sumber BUP. Tab BUP membawa konteks dan pintasan kembali ke hasil rekap. Browser lokal dan demo publik memverifikasi navigasi. Fixture sintetis memverifikasi cut-off dan angka volume. Dasar OH, upah dan rework, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Nomor potensi duplikat PDF dan pencarian draf pembanding
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel a5336760f72897440d6baf6217e84fbf7fcb2602 menampilkan nomor pada peringatan PDF duplikat dan menjalankan pencarian draf ketika supplier dan nomor cocok. Fokus hasil dan retensi isian teruji pada fixture lokal, tanpa posting baru. Demo publik memverifikasi editor. Provider foto dan hasil scan, retensi bukti, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
