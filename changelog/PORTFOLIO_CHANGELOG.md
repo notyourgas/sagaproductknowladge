@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Kejelasan dan validasi tanggal invoice
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 833f98ad54529e283aacfabae921e064c9fe47ee menjelaskan hubungan tanggal invoice dan jatuh tempo pada formulir Finance. Browser memvalidasi batas tanggal dan memfokuskan jatuh tempo sambil menjaga input yang sudah diisi. Fixture disposable dan akun Finance sintetis membuktikan tidak ada pengiriman saat tanggal tidak valid. PM tetap dapat membaca daftar sesuai peran. Milestone dan persetujuan penjadwalan ulang, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Ringkasan pencocokan dan pemulihan satuan nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel d8337cf8c6f2a34a63339eaa8cc5980157695643 menampilkan kuantitas cocok pada judul rincian penerimaan nota. Pencocokan diperbarui saat keluar dari kolom satuan. Bila satuan tak sesuai, tautan mengembalikan fokus ke baris yang sama. Fixture lokal membuktikan pemulihan pilihan tanpa posting baru serta akses baca rekonsiliasi Finance. Demo sintetis memverifikasi editor dan target fokus pada dua lebar. Metode bayar dan dampak jurnal, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
