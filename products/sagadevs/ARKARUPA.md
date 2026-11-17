@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Cut-off tahapan Workspace dan tautan Gantt
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 5de6bcebb8ff61c4bc0fe91c6bae0492f73b56dc memakai satu cut-off pada header dan tahapan Workspace, membuka Gantt yang sesuai bila baseline tersedia, lalu mengembalikan fokus ke tautan sumber. Fixture disposable merekonsiliasi Workspace, Gantt, Dashboard dan BUP. Demo sintetis memverifikasi alur dua arah di proyek yang ditugaskan. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Status baseline dan fokus halaman proyek
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 3d16dc3920a8870064f4e312abee1c826cec2e8c menonjolkan baseline yang belum tersedia pada cut-off terpilih. Pergantian halaman memindahkan fokus ke judul Progres & sumber proyek dan mempertahankan periode. Fixture disposable membuktikan 8 proyek terbagi 6 dan 2 tanpa mengubah total portofolio atau cakupan izin. Demo sintetis memverifikasi lencana dan tautan progres bertanggal. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
