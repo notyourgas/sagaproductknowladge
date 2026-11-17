@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Penanda dan fokus komponen HSD belum lengkap
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 30fb4c60a491f698b23b0dfabdd0b4e33204bb79 menandai alasan harga komponen AHSP belum lengkap. Pintasan mengarahkan fokus ke komponen pertama dan mempertahankan pencarian. Fixture disposable membuktikan kasus HSD kosong, unit berbeda, nilai lengkap dan isolasi tenant. Demo sintetis memverifikasi akses Katalog dan keadaan awal Master AHSP. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Jumlah filter dan pemulihan pencarian absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e7a375512cd1dafb8b114f56c5927bed17518974 menampilkan jumlah harian pada filter status absensi. Dari hasil kosong, Ubah kata kunci memfokuskan dan menyeleksi teks sementara tanggal dan status dipertahankan. Fixture disposable membuktikan pemulihan hasil, izin baca Finance dan kesetaraan data. Demo sintetis memverifikasi jumlah filter, status aktif dan fokus tanggal pada HP. Dasar OH serta kaitan upah, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
