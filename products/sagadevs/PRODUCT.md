@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Cut-off sumber BUP
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel efa0ca7f3a534e543d8a6878c9eb5520fe4663d7 menunjukkan tanggal dan lokasi daftar sumber pada rekap tim. Tautan membawa cut-off yang sama ke BUP terverifikasi. Daftar dan rekap memakai tanggal laporan serta waktu verifikasi sampai akhir hari WIB. Rekonsiliasi sintetis dan navigasi demo publik lulus. Field dan Finance masih perlu menetapkan OH dan biaya, serta PM menetapkan rework dan pembanding. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Bukti nota manual
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel af1f17a31901e836ea3708b136c801fc6188f59e memberi lencana pada lampiran siap simpan dan tautan untuk kembali ke pemilih setelah validasi. Fixture disposable Chrome membuktikan fokus, nomor nota tetap terisi dan satu PDF asli setelah retry. Demo publik menguji jalur Simpan draf karena belum memiliki draf. Provider OCR foto/pindai dan retensi masih menunggu keputusan. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
