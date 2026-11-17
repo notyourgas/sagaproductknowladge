@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Penanda versi koreksi dan fokus ke absensi yang diperbarui
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel de5f1ac657becac77851e1e2dd179c572a36d673 menampilkan revisi yang tercatat sebelum koreksi absensi. Jika filter aktif sesuai status lama, simpan mengarahkan pemeriksa ke status baru dan kembali ke baris pekerja yang sama. Tanggal serta pencarian tetap. Fixture sintetis memverifikasi audit, akses Finance dan tidak ada posting upah. Demo publik memverifikasi halaman absensi serta fokus tanggal. Basis OH, uji perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Keterbacaan penerimaan dan inspeksi tanpa meninggalkan draf
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 99167d51921c4dc5f5eb901af95d9339acb94aba menampilkan tanggal lokal, nomor PO dan jumlah baris pada penerimaan terkait. Penerimaan membuka tab baru sehingga isian sementara di nota tetap dapat diteruskan. Browser lokal sintetis memverifikasi fokus, data tetap dan batas akses Finance. Demo publik memverifikasi editor dan versi rilis. Ketentuan metode bayar, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
