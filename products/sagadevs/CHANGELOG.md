@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-17 - Arkarupa: Cakupan lokasi dan sumber BUP rekap tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2e5566d8f06c5f0d7f962b68c234dffe6aae267c membuka BUP terverifikasi sesuai lokasi rekap volume tim dan tanggal cut-off. Koreksi mengikuti lokasi laporan asal yang memenuhi cut-off. Chrome pada fixture sintetis lulus pada 320, 390 dan 1.440 px serta demo menguji cakupan, keadaan kosong, dan kembali ke hasil rekap. Field dan Finance masih mengesahkan OH, biaya dan kaitannya dengan upah. PM menetapkan rework dan baseline. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cakupan kas dan akses Kurva S dari nilai pekerjaan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 20cad8f87beea91e4d6fff14908c89b1496d7757 mencantumkan cut-off laporan sumber tagihan di kartu kas saat ini. Nilai pekerjaan menautkan Kurva S laporan yang sama selama tersedia. Chrome klien sintetis lulus pada 320, 390 dan 1.440 px. Demo memverifikasi batas login Portal dan template aktif. Pengesahan Finance dan PM untuk basis UI-05.1 masih terbuka. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
