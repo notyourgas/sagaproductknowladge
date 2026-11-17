@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Status bukti dan pintasan lampiran nota manual
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 77c6e512bb8d0d81e9ff03cfbf42b127a25ce61d menampilkan jumlah bukti tersimpan dalam mode nota manual. Pintasan menuju bukti tersimpan, pemilih berkas atau Simpan draf sesuai keadaan, dengan isian tetap terjaga. Chrome fixture disposable dan demo publik memverifikasi alur. Penyedia OCR dan retensi masih menunggu keputusan. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Penanda dan pintasan entri terbaru Change Log
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6d5e397b0ad5e29390f719c6f30c399a9eecf46d memberi lencana Terbaru dan pintasan yang membuka riwayat serta memindahkan fokus ke entri. Uji Chrome pada fixture disposable memverifikasi riwayat. Demo publik membuktikan versi aktif dan pembatasan tab Owner bagi PM. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
