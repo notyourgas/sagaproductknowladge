@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Status baseline dan fokus progres Workspace
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel a571e82cb12f238303d7cf4237594e65488f4db0 menampilkan versi baseline dalam lencana dan memakai garis putus-putus ketika baseline belum tersedia. Detail progres dari Workspace memfokuskan Progres resmi. Tautan kembali memulihkan proyek, periode dan fokus. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis lulus pada 390 dan 1.440 px. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Ringkasan nominal dan pintasan riwayat pembayaran
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 2321a13e054838146eba1ed866655bb6641d0285 menampilkan nominal, kas belum dialokasikan dan status pada riwayat pembayaran. Pintasan dari ringkasan Kas memfokuskan judul riwayat pada proyek yang sama. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis lulus pada 390 dan 1.440 px. Ledger sintetis dan izin tetap sesuai sumber. Keputusan milestone, jatuh tempo, reschedule, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
