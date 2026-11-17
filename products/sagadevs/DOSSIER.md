@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Bukti nota manual
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel af1f17a31901e836ea3708b136c801fc6188f59e memberi lencana pada lampiran siap simpan dan tautan untuk kembali ke pemilih setelah validasi. Fixture disposable Chrome membuktikan fokus, nomor nota tetap terisi dan satu PDF asli setelah retry. Demo publik menguji jalur Simpan draf karena belum memiliki draf. Provider OCR foto/pindai dan retensi masih menunggu keputusan. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Label dock dan jarak fokus
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 886e15627570e352ee382f160d4102f7ab025d83 memperbesar label Menu, Utama, dan Proyek dari 11 ke 12 px. Kontrol konten yang mendapat fokus sekarang bergulir di atas dock bila tertutup. Chrome fixture lokal dan demo publik membuktikan gaya dan fokus. Pengujian safe area, rotasi dan pembaca layar pada perangkat fisik terbuka. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
