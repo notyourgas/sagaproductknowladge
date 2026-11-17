@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Pencarian riwayat Portal
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel aa3f7b0a6ad56a533ffd126d0b0160a737c44ddf menampilkan jumlah hasil pencarian riwayat Portal dan pilihan Ubah kata kunci saat hasil nol. Uji klien disposable membuktikan fokus keyboard, kata kunci lama, laporan arsip dan filter tagihan. Login Portal dan batas peran PM diverifikasi di demo publik. Basis nilai pekerjaan dan cakupan kas masih menunggu Finance dan PM. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cut-off sumber BUP
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel efa0ca7f3a534e543d8a6878c9eb5520fe4663d7 menunjukkan tanggal dan lokasi daftar sumber pada rekap tim. Tautan membawa cut-off yang sama ke BUP terverifikasi. Daftar dan rekap memakai tanggal laporan serta waktu verifikasi sampai akhir hari WIB. Rekonsiliasi sintetis dan navigasi demo publik lulus. Field dan Finance masih perlu menetapkan OH dan biaya, serta PM menetapkan rework dan pembanding. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
