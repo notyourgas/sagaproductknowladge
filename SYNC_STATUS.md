@@ -20,7 +20,7 @@ Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714
 
 ## 2026-11-17 - Arkarupa: Cut-off ringkasan dan pemulihan Kurva S kosong
 
-CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel c2df0d9694551caca6fe2e0ca7074c8671a06f28 menampilkan tanggal cut-off pada judul Ringkasan nilai proyek. Pada Kurva S kosong, tautan Cari laporan lain mengarahkan fokus ke judul pencarian dan menjaga filter serta laporan yang sedang dilihat. Fixture lokal membuktikan jalur ke Kurva S terbaru, snapshot, alokasi kas dan lingkup PDF. Demo membuktikan gerbang masuk, batas PM, dan template Portal cocok dengan kandidat. Finance dan PM masih perlu mengesahkan basis nilai, kas dan pembulatan. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel a858360d706774b8c81fb78a609329c286ce81f8 menampilkan tanggal cut-off pada judul Ringkasan nilai proyek. Pada Kurva S kosong, tautan Cari laporan lain mengarahkan fokus ke judul pencarian dan menjaga filter serta laporan yang sedang dilihat. Fixture lokal membuktikan jalur ke Kurva S terbaru, snapshot, alokasi kas dan lingkup PDF. Demo membuktikan gerbang masuk, batas PM, dan template Portal cocok dengan kandidat. Finance dan PM masih perlu mengesahkan basis nilai, kas dan pembulatan. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
 
 ## 2026-11-17 - Arkarupa: Status sumber PDF dan kembali ke lampiran gagal
 
