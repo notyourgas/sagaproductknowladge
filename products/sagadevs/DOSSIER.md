@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Ringkasan pencocokan dan pemulihan satuan nota
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel d8337cf8c6f2a34a63339eaa8cc5980157695643 menampilkan kuantitas cocok pada judul rincian penerimaan nota. Pencocokan diperbarui saat keluar dari kolom satuan. Bila satuan tak sesuai, tautan mengembalikan fokus ke baris yang sama. Fixture lokal membuktikan pemulihan pilihan tanpa posting baru serta akses baca rekonsiliasi Finance. Demo sintetis memverifikasi editor dan target fokus pada dua lebar. Metode bayar dan dampak jurnal, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Validasi dan pintasan cut-off volume tim
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ed2300c4041bd24847acb9de33911e48fb19ea33 menempatkan pesan tanggal cut-off di bawah isian dan menyediakan Ubah cut-off volume dari rekap tim terisi maupun kosong. Fixture disposable membuktikan fokus, lokasi, proyek, neto BUP dan batas akses absensi untuk QS. Demo sintetis memverifikasi validasi, fokus, dan pemulihan tanggal. Dasar OH, upah, biaya, rework dan pembanding, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
