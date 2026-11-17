@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Jarak dock dari cutout dan lompatan fokus
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ff2fe45356b43a999fe22eaa86b4ddea92040b88 memberi ruang dari batas cutout untuk dock dan Aksi cepat pada layar lanskap. Home menuju Menu dan End menuju Proyek pada dock tanpa mengubah konteks proyek. Chrome menguji safe area emulasi dan penyerahan fokus ke rail pada 900 px. Pemeriksaan demo membaca halaman Tagihan dan mencocokkan versi aktif. Safe area Android/iPhone fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Pulihkan koreksi absensi saat revisi berubah
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel d44e7a04aa33b16356e02c2123a8e2ac485be0bc menampilkan revisi absensi terbaru ketika dua operator mengoreksi baris yang sama. Operator dapat memuat revisi terbaru, melanjutkan dengan alasan yang sudah diisi dan memeriksa kembali pilihan status. Fixture lokal membuktikan pemulihan fokus dan satu audit per baris tanpa posting tambahan. Pemeriksaan demo publik membaca halaman absensi dan mencocokkan versi aktif. Field dan Finance perlu menetapkan definisi OH dan kaitan ke upah. Uji perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
