@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Pembanding nomor nota manual
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ad364697feefcf9d183b427dcb0b99fe555abc7c menampilkan pembanding draf tersimpan saat supplier dan nomor nota manual bentrok. Operator dapat membaca identitas dan nilai tersimpan serta nilai isian, lalu kembali ke kolom nomor tanpa mengganti isian. MySQL disposable membuktikan draf, bukti dan posting sama sebelum dan sesudah. Demo publik memverifikasi editor dan versi, sedangkan benturan diuji pada fixture lokal. Metode bayar dan kaitan kas perlu keputusan Procurement dan Finance. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Halaman aktif drawer dan navigasi panah dock
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 7ab423d84da6b16844642d23115f10339f0bf2e0 menampilkan bagian aktif di header drawer HP. Panah kiri dan kanan pada dock memindahkan fokus di antara Menu, Utama dan Proyek. Keadaan aktif, Tab, pemulihan fokus dan konteks proyek teruji pada Chrome sintetis. Demo memverifikasi alur pada potret 390 px dan lanskap pendek 740 px. Android dan iPhone fisik, pembaca layar, staging privat, UAT operator dan PILOT_READY masih terbuka. Holsite 27/36. Demo statis c6baa67a.
