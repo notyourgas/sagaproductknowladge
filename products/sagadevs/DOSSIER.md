@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Antrean sertifikasi dan pintasan termin
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 29d7a3e7ca1064580b32132262011aef9c93bd17 menampilkan jumlah sertifikat dan yang menunggu di halaman Tagihan. Dari rencana termin, pengguna dapat berfokus pada sertifikat menunggu terbaru saat tersedia, dengan konteks proyek yang sama. Fixture lokal memverifikasi antrean, jumlah termin dan saldo serta isolasi proyek. Demo publik memverifikasi jumlah dan navigasi ke sertifikasi. Aturan milestone, tanggal dan persetujuan reschedule menunggu PM dan Finance. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: PDF sumber dan fokus isian nota manual
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel bc223ce85559fc416c2069216a9c1617994d44d8 menandai PDF sumber pada hasil pembacaan yang gagal dan mengarahkan tindakan isi manual ke kolom identitas pertama yang perlu diisi. Fixture lokal memverifikasi batas halaman, file terkunci, isian yang bertahan dan hak unduh. Demo publik memverifikasi alur manual. Interpreter PDF publik, provider OCR foto, retensi, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
