@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Validasi dan pintasan cut-off volume tim
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel ed2300c4041bd24847acb9de33911e48fb19ea33 menempatkan pesan tanggal cut-off di bawah isian dan menyediakan Ubah cut-off volume dari rekap tim terisi maupun kosong. Fixture disposable membuktikan fokus, lokasi, proyek, neto BUP dan batas akses absensi untuk QS. Demo sintetis memverifikasi validasi, fokus, dan pemulihan tanggal. Dasar OH, upah, biaya, rework dan pembanding, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cut-off ringkasan dan pemulihan Kurva S kosong
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel a858360d706774b8c81fb78a609329c286ce81f8 menampilkan tanggal cut-off pada judul Ringkasan nilai proyek. Pada Kurva S kosong, tautan Cari laporan lain mengarahkan fokus ke judul pencarian dan menjaga filter serta laporan yang sedang dilihat. Fixture lokal membuktikan jalur ke Kurva S terbaru, snapshot, alokasi kas dan lingkup PDF. Demo membuktikan gerbang masuk, batas PM, dan template Portal cocok dengan kandidat. Finance dan PM masih perlu mengesahkan basis nilai, kas dan pembulatan. Uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
