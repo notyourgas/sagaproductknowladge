@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Penanda tutup drawer dan Aksi Cepat lanskap
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel bebe8f6221b95c73e54f2957b970118309ddf1e1 memperjelas tombol Tutup pada drawer dan membuat Tutup Aksi Cepat langsung dapat diketuk di lanskap pendek. Isi panel tetap bisa digulir dan fokus kembali ke pemicu. Bukti emulasi Chrome dan demo publik terverifikasi. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Status pencarian dan koreksi riwayat nota
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e6292834fae850e3cc5908a94e424812758bc988 menonjolkan hasil pencarian Draf nota dan memberi cara untuk menyeleksi kata kunci saat hasil kosong. QA lokal membuktikan koreksi, karakter khusus, pemulihan daftar dan unduhan PDF. PM sintetis memverifikasi hasil nol, fokus dan retensi input di demo publik. Holsite 27/36. Keputusan metode bayar, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
