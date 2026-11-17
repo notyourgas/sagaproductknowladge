@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Status draf dan fokus catatan BUP
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel fde93ba19d3d1fba410b8d541976bf7baccffcda menampilkan tanggal kejadian dan status pada kartu draf BUP. Ke catatan dan bukti memfokuskan isian catatan tanpa kehilangan isian. Draf teruji pada fixture Chrome 320, 390 dan 1.440 px. Laporan baru di demo PM sintetis lulus pada 390 dan 1.440 px. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Sumber HSD dan fokus ke komponen AHSP
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel fe23a8ca29472aa4deb2c1aa5ba6fa6dc31f8858 menampilkan wilayah, jenis sumber dan tanggal observasi untuk HSD. Pintasan Ke komponen HSD memfokuskan tabel dan tautan kembali memulihkan pencarian. Rincian terisi lulus pada fixture lokal Chrome 320, 390 dan 1.440 px. Katalog demo PM sintetis lulus pada 390 dan 1.440 px dalam kondisi Master AHSP kosong. Perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
