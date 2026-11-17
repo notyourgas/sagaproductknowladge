@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-17 - Arkarupa: Jumlah filter dan pemulihan pencarian absensi
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel e7a375512cd1dafb8b114f56c5927bed17518974 menampilkan jumlah harian pada filter status absensi. Dari hasil kosong, Ubah kata kunci memfokuskan dan menyeleksi teks sementara tanggal dan status dipertahankan. Fixture disposable membuktikan pemulihan hasil, izin baca Finance dan kesetaraan data. Demo sintetis memverifikasi jumlah filter, status aktif dan fokus tanggal pada HP. Dasar OH serta kaitan upah, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Kejelasan dan validasi tanggal invoice
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 833f98ad54529e283aacfabae921e064c9fe47ee menjelaskan hubungan tanggal invoice dan jatuh tempo pada formulir Finance. Browser memvalidasi batas tanggal dan memfokuskan jatuh tempo sambil menjaga input yang sudah diisi. Fixture disposable dan akun Finance sintetis membuktikan tidak ada pengiriman saat tanggal tidak valid. PM tetap dapat membaca daftar sesuai peran. Milestone dan persetujuan penjadwalan ulang, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
