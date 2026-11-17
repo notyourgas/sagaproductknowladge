@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Keterbacaan penerimaan dan inspeksi tanpa meninggalkan draf
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 99167d51921c4dc5f5eb901af95d9339acb94aba menampilkan tanggal lokal, nomor PO dan jumlah baris pada penerimaan terkait. Penerimaan membuka tab baru sehingga isian sementara di nota tetap dapat diteruskan. Browser lokal sintetis memverifikasi fokus, data tetap dan batas akses Finance. Demo publik memverifikasi editor dan versi rilis. Ketentuan metode bayar, HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Keterbacaan rencana termin dan penelusuran invoice
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b1a7d66fb26948b14b0fc22ec168159f986c6356 menyelaraskan nominal dan porsi rencana termin pada desktop serta menyediakan pintasan yang memfokuskan invoice terbit pertama dengan saldo terbuka. Chrome lokal dan demo publik memverifikasi fokus invoice. Sintetis MySQL memverifikasi nilai termin, alokasi dan saldo. Persetujuan milestone, tanggal dan penjadwalan ulang, uji perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
