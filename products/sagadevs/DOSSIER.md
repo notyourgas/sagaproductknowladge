@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-17 - Arkarupa: Penyesuaian nota dan fokus total draf
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b7ea6e274fe7f450aec6bc16d72c0df8b0da1f7e mengelompokkan diskon, pajak dan biaya tambahan. Tinjau total nota memfokuskan hasil baru dengan isian tetap terisi. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis memverifikasi judul dan fokus pada 390 dan 1.440 px. Metode bayar, format nomor nota, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cut-off Kurva S dan tutup rincian
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f963796778ddca78e6bb6cfe710f342089f661d1 menampilkan cut-off aktual dalam lencana Portal. Tutup rincian Kurva S melipat tabel dan memulihkan fokus dengan laporan, filter dan angka yang sama. Fixture klien lokal membuktikannya pada Chrome 320, 390 dan 1.440 px. Demo publik memverifikasi template dan batas akses. Finance/PM, perangkat fisik, staging privat, UAT operator serta PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.

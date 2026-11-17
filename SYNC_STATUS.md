@@ -22,6 +22,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Penyesuaian nota dan fokus total draf
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b7ea6e274fe7f450aec6bc16d72c0df8b0da1f7e mengelompokkan diskon, pajak dan biaya tambahan. Tinjau total nota memfokuskan hasil baru dengan isian tetap terisi. Chrome lokal lulus pada 320, 390 dan 1.440 px. Demo PM sintetis memverifikasi judul dan fokus pada 390 dan 1.440 px. Metode bayar, format nomor nota, perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Cut-off Kurva S dan tutup rincian
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel f963796778ddca78e6bb6cfe710f342089f661d1 menampilkan cut-off aktual dalam lencana Portal. Tutup rincian Kurva S melipat tabel dan memulihkan fokus dengan laporan, filter dan angka yang sama. Fixture klien lokal membuktikannya pada Chrome 320, 390 dan 1.440 px. Demo publik memverifikasi template dan batas akses. Finance/PM, perangkat fisik, staging privat, UAT operator serta PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
