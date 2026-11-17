@@ -18,6 +18,10 @@ Source baca30b712a65054fc3be0a660e3808e0be8e3e5. Pemeriksaan HR native mencatat 
 
 Source `e0a76eb3f140a90cb10099f7cbbe4aa79b7f0df1`. Paket SHA-256 f5a8d030a32f714359fffc348e39a85ad248aa9e1382d6e47d7bc42bd7b989f7 aktif di production. Kualifikasi HR PostgreSQL dan Chromium lulus 177 tes. Operasional dan offline lulus 285 tes dengan tiga skenario Member kondisional dilewati. Pemulihan versi sebelumnya, monitor, Owner readback, dan aset Staff production terverifikasi. Uji pada perangkat staf tetap OPEN.
 
+## 2026-11-17 - Arkarupa: Keterbacaan rencana termin dan penelusuran invoice
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel b1a7d66fb26948b14b0fc22ec168159f986c6356 menyelaraskan nominal dan porsi rencana termin pada desktop serta menyediakan pintasan yang memfokuskan invoice terbit pertama dengan saldo terbuka. Chrome lokal dan demo publik memverifikasi fokus invoice. Sintetis MySQL memverifikasi nilai termin, alokasi dan saldo. Persetujuan milestone, tanggal dan penjadwalan ulang, uji perangkat fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Tanggal foto dan navigasi bukti laporan
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 070b622a1482d4448f51a9f7b9c1dc7951438a50 membedakan area dan tanggal foto laporan. Pintasan muncul pada laporan yang mempunyai foto dan memulihkan fokus saat kembali. Fixture klien sintetis membuktikan JPEG asli, pembatasan arsip dan rekonsiliasi nilai terbit. Demo publik memverifikasi login dan batas akses PM. Basis nilai Finance, uji HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Holsite 27/36. Demo statis c6baa67a.
