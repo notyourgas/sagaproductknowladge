@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-17 - COYABAG memverifikasi empat API J&T di sandbox
+
+**CONFIRMED / SANDBOX_VERIFIED / IMPLEMENTED_NOT_DEPLOYED.** J&T mengonfirmasi cek ongkir EZ, pembuatan resi, tracking, dan pembatalan kiriman sintetis dari server COYABAG. Aktivasi produksi menunggu akses produksi dari J&T, mapping gudang Madiun dan kecamatan, serta uji alur checkout dan fulfillment. Source `96ff1fe074da6b64e7d617ca530946a8407d6c31` pada branch `codex/coyabag-jnt-account-contract`. Lihat [knowledge COYABAG](products/coyabag/PRODUCT.md).
+
 ## 2026-11-16 - SagaPOS memperpanjang Daily Dose sampai 30 November
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Periode Daily Dose yang semula berakhir 14 November diperpanjang sampai 30 November 2026. Setiap hari pukul 09.00 hingga sebelum 14.00 WIB, harga dasar Americano, Cafe Latte, Cappuccino, Es Kopi Saga, dan Saga Premiyum menjadi Rp12.000 per minuman di Kiosk dan Kasir, untuk makan di tempat dan bawa pulang. Kategori promo mengikuti jadwal tersebut.
