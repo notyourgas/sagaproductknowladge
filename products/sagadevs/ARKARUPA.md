@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-17 - Arkarupa: Penanda dan pintasan entri terbaru Change Log
+
+CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 6d5e397b0ad5e29390f719c6f30c399a9eecf46d memberi lencana Terbaru dan pintasan yang membuka riwayat serta memindahkan fokus ke entri. Uji Chrome pada fixture disposable memverifikasi riwayat. Demo publik membuktikan versi aktif dan pembatasan tab Owner bagi PM. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
+
 ## 2026-11-17 - Arkarupa: Penanda koreksi dan perlindungan tanggal absensi
 
 CONFIRMED / DEMO_PUBLIC_VERIFIED. Laravel 912bd0a5a90d6f0d34fb8de914ede4ba91bfd9d0 memberi label pada baris yang sedang dikoreksi, menahan perubahan tanggal hingga koreksi selesai, dan mengembalikan fokus melalui Lanjutkan koreksi. Chrome pada fixture disposable membuktikan retensi alasan. Demo publik membuktikan navigasi tanggal dengan tanggal tanpa catatan dan kecocokan versi aktif. Holsite 27/36. HP fisik, staging privat, UAT operator dan PILOT_READY terbuka. Demo statis c6baa67a.
