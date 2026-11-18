@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-18 - Preview redesign Saga Member di Cloudflare Pages
+
+**CONFIRMED.** [Preview Saga Member](https://saga-member-preview.pages.dev/) sudah diverifikasi sebagai demo sintetis yang terpisah per browser. Daily check-in, poin, reward, booking dan pairing pada preview belum terhubung ke akun, ledger atau POS produksi. Integrasi produksi, pairing lintas perangkat, kamera/perangkat fisik dan UAT pelanggan tetap pekerjaan terpisah. Ini tidak membatalkan bukti rilis produksi yang sudah ada dan tidak menyatakan produk keseluruhan BUSINESS_READY.
+
 ## 2026-11-18 - Arkarupa: ringkasan penerimaan dan keputusan terbuka
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source Laravel `3ce77e74fda58520639befda45ca9b7c92050aa1` menampilkan snapshot penerimaan bertanggal **29/36 (80,6%)** pada Change Log Owner. Sebelumnya pengguna membaca riwayat panjang untuk menemukan progres dan keputusan. Kini kartu monokrom menyatakan batas data sintetis dan belum PILOT_READY; disclosure keyboard membuka tujuh ID, keputusan dan PIC.

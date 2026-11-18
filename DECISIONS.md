@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-325 — Preview redesign dan daily check-in Saga Member
+
+Tanggal: 18 November 2026. Pemberi keputusan: Andreas. Status: **CONFIRMED** untuk desain/preview. Keputusan: memakai Instrument Serif + Plus Jakarta Sans dan palet coklat/hitam/ivory; member memindai QR di layar kiosk; daily check-in 1 poin per tanggal WIB dengan bonus 10 poin setelah tujuh hari berturut-turut (total 17), tanpa XP. Preview dipublikasikan di proyek Cloudflare Pages tersendiri untuk review, dengan data sintetis terpisah per browser. Alasan: mengevaluasi UI/UX, motion dan fitur sebelum integrasi. Alternatif total mingguan 10 poin tidak dipilih. Dampak: belum menjadi aktivasi loyalty/QR produksi. Dokumen terkait: products/saga-platform/PRODUCT.md, products/saga-platform/CHANGELOG.md, CHATGPT_MASTER_KNOWLEDGE.md, GAPS.md dan SYNC_STATUS.md.
+
 ## DEC-324 — Demo publik Arkarupa dan Change Log
 
 14 November 2026. CONFIRMED. Andreas memilih prototype publik tanpa login berisi proyek terisi dan proyek kosong, dengan Plus Jakarta Sans, monokrom dan Change Log sebelum/sesudah. Penyimpanan browser memberi percobaan yang terpisah per proyek. Gunakan tujuh kode awal terverifikasi dan data fiktif. Katalog lengkap menyusul sebagai referensi bersama. [Detail rilis](products/sagadevs/ARKARUPA.md).

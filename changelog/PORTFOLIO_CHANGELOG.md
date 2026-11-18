@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-11-18 - Preview redesign Saga Member di Cloudflare Pages
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Atas arahan Andreas, preview redesign Saga Member tersedia di [Cloudflare Pages](https://saga-member-preview.pages.dev/). Visual memakai Instrument Serif regular/italic bersama Plus Jakarta Sans, dengan coklat, hitam, dan ivory. Beranda, kartu interaktif, reward, level/aktivitas, Studio dan animasi photostrip dapat dieksplorasi.
+
+Daily check-in pada preview memberi 1 poin per tanggal WIB; 7 hari berturut-turut mendapat bonus 10 poin, sehingga total satu rangkaian 17 poin. Hari terlewat mengulang rangkaian tanpa menghapus poin sebelumnya; check-in tidak menambah XP. Ini aturan yang dikonfirmasi untuk eksplorasi, belum aktivasi program loyalty produksi. Simulasi QR kiosk memakai tab dalam browser yang sama; bukan integrasi mesin POS fisik.
+
+Data sintetis tersimpan terpisah per browser melalui IndexedDB, tanpa login, kredensial pelanggan, API produksi, atau database shared. Reset/penghapusan data browser menghapus percobaan. Live artifact cocok dengan manifest; check-in/reload, klaim/penggunaan/riwayat, sinkronisasi antartab, isolasi pengunjung dan check-in bersamaan lulus tanpa error JavaScript atau request API ke backend. Tiga belas unit test lulus. Kamera fisik, pairing lintas perangkat dan UAT akun pelanggan belum dibuktikan. Rilis ini tidak mengubah aplikasi Member, Customer Platform, POS, saldo, atau transaksi produksi.
+
+Provenance: release `saga-member-design-20261118-r4`, deployment `2a48bccf-d69f-4c3f-8686-7401df7f9e12`, artifact ZIP SHA-256 `2e450559837c4ac3144548d044dd74e81c46a7f1da3b403fa0749e442253c935`. Direct Upload pada proyek Pages khusus preview; tidak ada predecessor pada rilis pertama. Hosted CI NOT_RUN; validasi lokal dan publik dicatat terpisah dari kesiapan operasional. Next: Andreas menilai desain/flow sebelum integrasi produksi. Sinkronisasi knowledge diterbitkan terpisah pada main HEAD.
+
 ## 2026-11-18 - Saga Member tetap masuk setelah browser ditutup
 
 **CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED.** Sesuai permintaan Andreas, sesi pelanggan Google dan OTP yang sebelumnya berakhir setelah satu jam kini disimpan melalui cookie persisten HttpOnly/Secure selama 90 hari sejak penggunaan terautentikasi terakhir. Membuka ulang browser atau PWA tidak memerlukan login selama cookie dan sesi masih valid. Logout tetap menghapus cookie dan mencabut sesi; pencabutan sesi dari server tetap berlaku. Sesi lama yang masih valid diperpanjang saat digunakan; sesi yang sudah kedaluwarsa memerlukan login sekali lagi. Kebijakan Owner tetap 60 menit. Penghapusan data browser atau mode privat dapat mengharuskan login kembali.
