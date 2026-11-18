@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-11-18 - Hierarki poin dan XP di Beranda Saga Member
+
+**CONFIRMED / LOCAL_VALIDATED.** Andreas meminta saldo poin berjumlah ribuan tetap mudah dibaca dan aksi Reward lebih jelas. Beranda menempatkan saldo di atas tombol Lihat reward dan Riwayat poin. Ukuran angka menyesuaikan panjang saldo dengan format Indonesia. Bagian Progres level menampilkan total XP, bar progres, serta sisa XP ke level berikutnya.
+
+Source `32b487e815995df8ba1b17d409fccaf4c4f5e0d5` di branch `codex/member-home-points-20261118`. Sebanyak 643 tes frontend lulus. WebKit dan Chromium memverifikasi saldo besar dan ketiga tujuan navigasi pada 320, 390, 430, dan 1440 px. Status publikasi fitur: kandidat source. Rilis produksi yang terverifikasi saat validasi adalah `20261118T111112Z-6a9977e-r0u`.
+
 ## 2026-11-18 - Arkarupa: bulan dan porsi volume matriks
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1c98c8cf4982b23acb5ff38ad74ec0d0c21f9a93` menambahkan header bulan sesuai tanggal awal periode dan rincian yang membedakan persentase volume item dari kontribusi terhadap proyek. Minggu lintas bulan tetap menampilkan rentang tanggal sebenarnya. Pembagi nol dan target kosong tidak menghasilkan angka palsu. Izin existing `view-internal` tetap berlaku; Pelaksana mempertahankan Gantt tanpa matriks nilai internal. Regresi MySQL disposable122tes/2497asersi, fokus proyeksi/izin3tes/25asersi, serta browser lokal320/1440 dan publik390/1440 lulus. Hash source/CSS dan backup/restore disposable diverifikasi. Tidak ada perubahan schema, baseline, aktual, kas, data klien atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat, editor baru dan ekspor matriks masih terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-180009).

@@ -1,5 +1,11 @@
 # Saga Platform Changelog
 
+## 2026-11-18 - Hierarki poin dan XP di Beranda Saga Member
+
+**CONFIRMED / LOCAL_VALIDATED.** Andreas meminta saldo poin berjumlah ribuan tetap mudah dibaca dan aksi Reward lebih jelas. Beranda menempatkan saldo di atas tombol Lihat reward dan Riwayat poin. Ukuran angka menyesuaikan panjang saldo dengan format Indonesia. Bagian Progres level menampilkan total XP, bar progres, serta sisa XP ke level berikutnya.
+
+Source `32b487e815995df8ba1b17d409fccaf4c4f5e0d5` di branch `codex/member-home-points-20261118`. Sebanyak 643 tes frontend lulus. WebKit dan Chromium memverifikasi saldo besar dan ketiga tujuan navigasi pada 320, 390, 430, dan 1440 px. Status publikasi fitur: kandidat source. Rilis produksi yang terverifikasi saat validasi adalah `20261118T111112Z-6a9977e-r0u`.
+
 ## 2026-11-18 - Perbaikan Safari dan koleksi desain Saga Member
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Menindaklanjuti laporan Andreas dari iPhone, label Hari 1–7 pada Daily Check-in kini punya jarak dari tombol klaim, navigasi bawah memakai latar solid, dan sisi depan serta belakang kartu terbaca saat dibalik. Aksi Lihat kartu dan Scan QR Kiosk tetap berdampingan sepanjang lebar kartu. [Saga Member produksi](https://app.sagamember.site/member).
