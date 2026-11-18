@@ -18,9 +18,9 @@ SagaPOS memakai source `9942cf49951d12256365490decf51fe119263f71`. Saga Member m
 
 ## 2026-11-18 - Hierarki poin dan XP di Beranda Saga Member
 
-**CONFIRMED / LOCAL_VALIDATED.** Andreas meminta saldo poin berjumlah ribuan tetap mudah dibaca dan aksi Reward lebih jelas. Beranda menempatkan saldo di atas tombol Lihat reward dan Riwayat poin. Ukuran angka menyesuaikan panjang saldo dengan format Indonesia. Bagian Progres level menampilkan total XP, bar progres, serta sisa XP ke level berikutnya.
+**CONFIRMED / LOCAL_VALIDATED.** Andreas memilih ikon P yang lebih besar dan angka saldo di sebelahnya pada sisi kiri. Dua aksi disusun vertikal di sisi kanan dengan Lihat reward di atas Riwayat poin. Saldo memakai format Indonesia dan ukuran angka menyesuaikan panjangnya. Progres level menampilkan total dan target XP di bagian bawah.
 
-Source `32b487e815995df8ba1b17d409fccaf4c4f5e0d5` di branch `codex/member-home-points-20261118`. Sebanyak 643 tes frontend lulus. WebKit dan Chromium memverifikasi saldo besar dan ketiga tujuan navigasi pada 320, 390, 430, dan 1440 px. Status publikasi fitur: kandidat source. Rilis produksi yang terverifikasi saat validasi adalah `20261118T111112Z-6a9977e-r0u`.
+Source `94485422784ae837e749dba6b186337c3b4bce2d` di branch `codex/member-home-points-stack-20261118`. Sebanyak 643 tes frontend lulus. WebKit dan Chromium memverifikasi tata letak, saldo besar, dan tujuan ketiga aksi pada 320, 390, 430, dan 1440 px. Tampilan ini berstatus kandidat rilis. Rilis produksi yang terverifikasi saat validasi adalah `20261118T122337Z-807c295-r0u`.
 
 ## 2026-11-18 - Arkarupa: bulan dan porsi volume matriks
 
