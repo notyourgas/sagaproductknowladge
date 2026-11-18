@@ -1,8 +1,12 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-18 - Redesign Saga Member, check-in, dan QR Kiosk
+
+**CONFIRMED.** Redesign Saga Member, check-in, dan integrasi QR sudah aktif. Uji fisik memerlukan HP, layar kiosk Kopi Saga dan akun uji yang disetujui. Cakupan penerimaan fisik mencakup QR dari layar kiosk, konfirmasi akun di HP, pembayaran uji dan kecocokan struk serta saldo pada Riwayat.
+
 ## 2026-11-18 - Preview redesign Saga Member di Cloudflare Pages
 
-**CONFIRMED.** [Preview Saga Member](https://saga-member-preview.pages.dev/) sudah diverifikasi sebagai demo sintetis yang terpisah per browser. Daily check-in, poin, reward, booking dan pairing pada preview belum terhubung ke akun, ledger atau POS produksi. Integrasi produksi, pairing lintas perangkat, kamera/perangkat fisik dan UAT pelanggan tetap pekerjaan terpisah. Ini tidak membatalkan bukti rilis produksi yang sudah ada dan tidak menyatakan produk keseluruhan BUSINESS_READY.
+**CONFIRMED.** [Preview Saga Member](https://saga-member-preview.pages.dev/) tetap memakai data sintetis yang terpisah per browser. Saat preview dipublikasikan, integrasi ke akun, ledger dan POS produksi masih dalam persiapan. Status integrasi produksi kini tercatat di entri redesign di atas.
 
 ## 2026-11-18 - Arkarupa: ringkasan penerimaan dan keputusan terbuka
 

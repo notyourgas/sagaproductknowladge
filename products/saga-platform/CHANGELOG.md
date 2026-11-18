@@ -1,5 +1,17 @@
 # Saga Platform Changelog
 
+## 2026-11-18 - Redesign Saga Member, check-in, dan QR Kiosk
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Andreas mengesahkan aktivasi redesign di produksi. [Saga Member produksi](https://app.sagamember.site/member) memakai Instrument Serif dan palet coklat, hitam, dan ivory. Beranda menempatkan Lihat kartu dan Scan QR Kiosk sejajar sepanjang kartu. Kartu bisa dibalik dan kode kasir dibuka lewat aksi khusus. Reward dan Akun menempatkan poin, voucher, dan riwayat di jalur yang mudah ditemukan.
+
+Riwayat poin bisa dibuka dari Beranda, Reward, atau Akun. Riwayat memakai ledger server dan menampilkan waktu WIB, poin masuk atau keluar, saldo, dan rincian pesanan bila POS mengirim struk. Check-in memberi 1 poin per tanggal WIB dan 10 poin bonus setelah 7 hari berturut-turut, total 17 poin, tanpa XP. Member memindai QR sementara dari layar kiosk, melihat outlet dan mengonfirmasi hubungan akun. Setelah POS menyatakan pesanan lunas, struk dan alokasi poin mengikuti transaksi tersebut.
+
+Rilis Member `20261118T101948Z-6a9977e-r0u`, frontend `3724a76bef2c652eeb50f0983c18633657b31245`, Customer Platform `6a9977eca8d910a7dbb2c17d8291e21f6347b8f4`, SagaPOS `4338770705845f24ce18143f8c84f9fb562fec83`. Runner native memverifikasi backup terenkripsi, restore terpisah, rollback, dan monitor produksi. Skema tetap 15 migrasi di Customer Platform dan 37 di SagaPOS.
+
+Validasi kandidat final mencakup 638 tes frontend, tiga ukuran layar, basis data PostgreSQL 18, serta alur QR kiosk, pesanan pending, konfirmasi kasir, pengiriman struk sekali, dan isolasi akun pada lingkungan uji. Kualifikasi POS Linux lulus dengan 285 tes berhasil, tiga dilewati, dan nol gagal. Domain produksi melayani aset yang cocok dengan paket rilis. Browser pada domain produksi membaca QR dari kamera simulasi, dan kredensial mesin POS membuka dan membatalkan sesi QR sintetis dengan pembatasan sesi yang benar. UAT kamera HP dan penyelesaian satu pesanan di perangkat fisik Kopi Saga masih terbuka. Status BUSINESS_READY keseluruhan menunggu bukti UAT.
+
+SHA-256 paket Member `7216ebc7915261cabce2bf01cb433c06a77b3a210b54f23dd5e7e5bde5c2fc9a` dan POS `98c7df5bd53b1aef73abb26c2253b557783eba42ce0cbd33d37293bebb0d24f3`. [Kualifikasi POS](https://github.com/notyourgas/sagaops/actions/runs/44279297587).
+
 ## 2026-11-18 - Kartu dan Akun preview Saga Member
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED.** Atas arahan Andreas, [preview Saga Member](https://saga-member-preview.pages.dev/) menempatkan Tunjukkan kode ke kasir dan Scan QR Kiosk sejajar di bawah kartu. Kode tampil besar dalam panel kasir. Kontrol warna dan balik kartu tetap tersedia. Akun menonjolkan Riwayat poin, Voucherku dan Pesanan saya, diikuti tautan Kartu member, Level & benefit dan Momen Studio. Animasi perpindahan kartu dan saldo mengikuti preferensi kurangi gerakan.

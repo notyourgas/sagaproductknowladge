@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-326 — Aktivasi redesign Saga Member
+
+18 November 2026. **CONFIRMED.** Andreas menyetujui implementasi dan aktivasi redesign Saga Member pada aplikasi produksi, mengikuti visual dan aturan check-in pada DEC-325. Alasan keputusan adalah menyelesaikan alur yang sudah ditinjau pada preview dan menghubungkannya ke akun, ledger, dan kiosk yang sebenarnya. Scope meliputi Beranda, Reward, Kartu, Akun, Riwayat, daily check-in dan QR kiosk. Kopi Saga dengan akun uji dipilih untuk UAT fisik. Bukti release ada pada changelog Saga Platform.
+
 ## DEC-325 — Preview redesign dan daily check-in Saga Member
 
 Tanggal: 18 November 2026. Pemberi keputusan: Andreas. Status: **CONFIRMED** untuk desain/preview. Keputusan: memakai Instrument Serif + Plus Jakarta Sans dan palet coklat/hitam/ivory; member memindai QR di layar kiosk; daily check-in 1 poin per tanggal WIB dengan bonus 10 poin setelah tujuh hari berturut-turut (total 17), tanpa XP. Preview dipublikasikan di proyek Cloudflare Pages tersendiri untuk review, dengan data sintetis terpisah per browser. Alasan: mengevaluasi UI/UX, motion dan fitur sebelum integrasi. Alternatif total mingguan 10 poin tidak dipilih. Dampak: belum menjadi aktivasi loyalty/QR produksi. Dokumen terkait: products/saga-platform/PRODUCT.md, products/saga-platform/CHANGELOG.md, CHATGPT_MASTER_KNOWLEDGE.md, GAPS.md dan SYNC_STATUS.md.

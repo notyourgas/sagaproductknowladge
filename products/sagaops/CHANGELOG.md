@@ -1,5 +1,11 @@
 # SagaOPS Changelog
 
+## 2026-11-18 - Hubungkan Saga Member dengan QR Kiosk
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Kiosk menampilkan QR sementara agar member bisa menghubungkan akun dari HP. Member melihat outlet dan mengonfirmasi di Saga Member sebelum kiosk menerima identitas. Setelah pembayaran lunas, SagaPOS mengirim struk dan alokasi poin sesuai transaksi. Kas offline dan gateway terverifikasi siap pada rilis baru. Uji perangkat fisik Kopi Saga masih terbuka. [Detail rilis Member](../saga-platform/CHANGELOG.md#2026-11-18---redesign-saga-member-check-in-dan-qr-kiosk).
+
+Source SagaPOS `4338770705845f24ce18143f8c84f9fb562fec83` menggantikan `33568ef4c63a63679f7b53635a3eaf8d1f9c8ba8`. Skema tetap 37 migrasi. CI lulus dengan 285 tes berhasil dan tiga dilewati. Backup terenkripsi, salinan di luar VPS, latihan pemulihan versi baru dan versi sebelumnya, serta monitor produksi lulus.
+
 ## 2026-11-18 - Poster November dan School Fiesta di Kiosk
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Setelah Mulai Pesan, Kiosk menampilkan tiga kartu promo hingga 30 November 2026. Poster Daily Dose terbaru menjelaskan Rp12.000 untuk lima menu pilihan, setiap hari pukul 09.00 hingga sebelum 14.00 WIB. Poster Free Session menjelaskan sesi foto 10 menit untuk dua orang dan seluruh softfile. Staf Saga Studio menjelaskan ketentuan dan menangani penggunaan promo foto.
