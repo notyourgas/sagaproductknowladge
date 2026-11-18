@@ -1,5 +1,13 @@
 # Saga Platform Dossier
 
+## 2026-11-18 - Tampilan prototype r10 di Saga Member produksi
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Andreas meminta visual dan pengalaman member mengikuti prototype r10. Sebelumnya rilis memakai struktur layar lama untuk fitur redesign. Beranda, Reward, Kartu, Akun, Riwayat, level, pesanan, dan Momen Studio kini memakai tata letak, tipografi, aset, dan gerakan dari r10. Navigasi bawah mempunyai Scan QR di tengah, diapit Beranda, Reward, Kartu, dan Akun. Desktop menampilkan panel editorial dan panduan kiosk yang bisa dipakai. [Saga Member produksi](https://app.sagamember.site/member) · [Referensi r10](https://851aca3c.saga-member-preview.pages.dev/).
+
+Saldo, reward, voucher, progres level, check-in, kode kasir, struk, dan Scan QR memakai layanan produksi. Kontrol simulasi dan panel review tetap khusus tautan prototype. Login dan pengaturan akun produksi tetap tersedia, termasuk keamanan perangkat, privasi, dan bantuan.
+
+Rilis `20261118T104714Z-6a9977e-r0u` memakai frontend `a7012d2060d0ea5c0ddf4dcaabe6fbd60b14f273` dan paket SHA-256 `554fb22f2e733e1440e29e47d09221c504cebfd45bafeff1cdf4f083f36f5e47`. Customer Platform tetap `6a9977eca8d910a7dbb2c17d8291e21f6347b8f4` dan SagaPOS tetap `4338770705845f24ce18143f8c84f9fb562fec83`. Validasi mencakup 638 tes frontend, browser dengan sesi uji pada 320/390/1440 px, restore PostgreSQL 18, rollback ke versi sebelumnya, monitor, dan pemeriksaan aset produksi. Uji fisik kiosk dan kamera HP masih terbuka.
+
 ## 2026-11-18 - Redesign Saga Member, check-in, dan QR Kiosk
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Andreas mengesahkan aktivasi redesign di produksi. [Saga Member produksi](https://app.sagamember.site/member) memakai Instrument Serif dan palet coklat, hitam, dan ivory. Beranda menempatkan Lihat kartu dan Scan QR Kiosk sejajar sepanjang kartu. Kartu bisa dibalik dan kode kasir dibuka lewat aksi khusus. Reward dan Akun menempatkan poin, voucher, dan riwayat di jalur yang mudah ditemukan.

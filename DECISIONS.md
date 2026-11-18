@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-327 — Gunakan prototype r10 sebagai acuan tampilan Saga Member produksi
+
+18 November 2026. **CONFIRMED.** Andreas menetapkan [prototype r10](https://851aca3c.saga-member-preview.pages.dev/) sebagai acuan tampilan dan pengalaman member pada website produksi. Data dan alur autentikasi serta transaksi mengikuti sistem produksi. Rincian rilis tercatat di changelog Saga Platform.
+
 ## DEC-326 — Aktivasi redesign Saga Member
 
 18 November 2026. **CONFIRMED.** Andreas menyetujui implementasi dan aktivasi redesign Saga Member pada aplikasi produksi, mengikuti visual dan aturan check-in pada DEC-325. Alasan keputusan adalah menyelesaikan alur yang sudah ditinjau pada preview dan menghubungkannya ke akun, ledger, dan kiosk yang sebenarnya. Scope meliputi Beranda, Reward, Kartu, Akun, Riwayat, daily check-in dan QR kiosk. Kopi Saga dengan akun uji dipilih untuk UAT fisik. Bukti release ada pada changelog Saga Platform.
