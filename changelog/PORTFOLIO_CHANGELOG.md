@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-11-18 - Perbaikan Safari dan koleksi desain Saga Member
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Menindaklanjuti laporan Andreas dari iPhone, label Hari 1–7 pada Daily Check-in kini punya jarak dari tombol klaim, navigasi bawah memakai latar solid, dan sisi depan serta belakang kartu terbaca saat dibalik. Aksi Lihat kartu dan Scan QR Kiosk tetap berdampingan sepanjang lebar kartu. [Saga Member produksi](https://app.sagamember.site/member).
+
+Pemilih kartu menghadirkan kembali 35 desain klasik dan mempertahankan tiga warna Saga r10. Member bisa mencoba desain di pratinjau, melihat desain aktif, lalu menyimpan pilihannya. Preferensi yang sudah tersimpan dibaca dari browser dan berlaku pada Beranda serta Kartu. Reward punya status memuat, gagal, dan kosong, informasi kedaluwarsa, serta filter Bisa ditukar untuk reward poin yang memenuhi syarat. Riwayat poin tetap bisa dibuka dari Beranda dan menampilkan mutasi tambah maupun kurang.
+
+Rilis `20261118T111112Z-6a9977e-r0u` memakai frontend `fc21bb565293e0cf054a6cb9ce152b5a4fa5701c` dengan Customer Platform `6a9977eca8d910a7dbb2c17d8291e21f6347b8f4`. Validasi mencakup 641 tes frontend, 161 tes runner, WebKit dan Chromium pada 320, 390, 430, dan 1440 px, pemulihan PostgreSQL, rollback, serta pemeriksaan aset live. Pengecekan kamera simulasi dan sesi pairing di lingkungan produksi melengkapi uji integrasi sintetis QR sampai struk. **NEEDS CONFIRMATION.** Uji penerimaan di iPhone dan kiosk fisik Kopi Saga masih terbuka.
+
 ## 2026-11-18 - Arkarupa: izin matriks nilai mengikuti akses internal
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0ba8c1ad365eb84dce203566e5fc0974d6e45ee8` membatasi matriks bobot bernilai rupiah dengan izin existing `view-internal`. PM/Owner/QS/Finance yang berhak membaca matriks; Pelaksana tetap membaca Gantt tanpa matriks nilai internal. Koreksi terfokus ini mengikuti rilis fitur pertama `2ad2a2b8cd4780d8d429b223f6951ef7873f053a`. Tiga tes final21asersi mencakup proyeksi dan render PM/Pelaksana. Regresi121tes/2488asersi adalah bukti kandidat sebelum tambahan guard view; full suite tidak diulang setelah delta guard. PM publik390/1440, hash source/CSS serta backup/restore disposable final diverifikasi. Tidak ada perubahan schema/data klien/aturan kas atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat serta ekspor matriks/editor baru tetap terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix).

@@ -1,5 +1,13 @@
 # Saga Platform Product Knowledge
 
+## 2026-11-18 - Perbaikan Safari dan koleksi desain Saga Member
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Menindaklanjuti laporan Andreas dari iPhone, label Hari 1–7 pada Daily Check-in kini punya jarak dari tombol klaim, navigasi bawah memakai latar solid, dan sisi depan serta belakang kartu terbaca saat dibalik. Aksi Lihat kartu dan Scan QR Kiosk tetap berdampingan sepanjang lebar kartu. [Saga Member produksi](https://app.sagamember.site/member).
+
+Pemilih kartu menghadirkan kembali 35 desain klasik dan mempertahankan tiga warna Saga r10. Member bisa mencoba desain di pratinjau, melihat desain aktif, lalu menyimpan pilihannya. Preferensi yang sudah tersimpan dibaca dari browser dan berlaku pada Beranda serta Kartu. Reward punya status memuat, gagal, dan kosong, informasi kedaluwarsa, serta filter Bisa ditukar untuk reward poin yang memenuhi syarat. Riwayat poin tetap bisa dibuka dari Beranda dan menampilkan mutasi tambah maupun kurang.
+
+Rilis `20261118T111112Z-6a9977e-r0u` memakai frontend `fc21bb565293e0cf054a6cb9ce152b5a4fa5701c` dengan Customer Platform `6a9977eca8d910a7dbb2c17d8291e21f6347b8f4`. Validasi mencakup 641 tes frontend, 161 tes runner, WebKit dan Chromium pada 320, 390, 430, dan 1440 px, pemulihan PostgreSQL, rollback, serta pemeriksaan aset live. Pengecekan kamera simulasi dan sesi pairing di lingkungan produksi melengkapi uji integrasi sintetis QR sampai struk. **NEEDS CONFIRMATION.** Uji penerimaan di iPhone dan kiosk fisik Kopi Saga masih terbuka.
+
 ## 2026-11-18 - Tampilan prototype r10 di Saga Member produksi
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Andreas meminta visual dan pengalaman member mengikuti prototype r10. Sebelumnya rilis memakai struktur layar lama untuk fitur redesign. Beranda, Reward, Kartu, Akun, Riwayat, level, pesanan, dan Momen Studio kini memakai tata letak, tipografi, aset, dan gerakan dari r10. Navigasi bawah mempunyai Scan QR di tengah, diapit Beranda, Reward, Kartu, dan Akun. Desktop menampilkan panel editorial dan panduan kiosk yang bisa dipakai. [Saga Member produksi](https://app.sagamember.site/member) · [Referensi r10](https://851aca3c.saga-member-preview.pages.dev/).
