@@ -2,9 +2,9 @@
 
 ## 2026-11-19 - Banner promo Kopi Saga dan Saga Studio di Beranda Member
 
-**CONFIRMED / LOCAL_VALIDATED.** Panel promo berada di antara progres level dan Daily Check-in. Banner dapat digeser dan membuka daftar detail yang memuat syarat pakai. Promo Kopi Saga berasal dari aturan otomatis yang efektif untuk SagaPOS Kiosk. Feed menyaring outlet, produk, jadwal, dan kuota. Kampanye publik Saga Studio diambil dari SagaBook, dengan detail yang mengarah ke halaman booking studio. Panel tampil ketika ada promo yang tersedia.
+**CONFIRMED / LOCAL_VALIDATED.** Panel informasi promo di antara progres level dan Daily Check-in menampilkan kampanye layar awal SagaPOS Kiosk dari sumber yang sama: Daily Dose, Free Session, dan School Fiesta. Banner memakai nama, syarat, dan periode kiosk. Detail membuka promo yang sedang dipilih terlebih dahulu. Poster resmi Daily Dose dan Free Session dipakai kembali. School Fiesta memakai foto Studio dengan teks perpanjangan sampai 30 November 2026 karena poster awal memuat tanggal lama.
 
-Frontend Saga Member `aed858e6cfd2fe485e146922e0d1570dfbffe3cf` dan SagaPOS `98b6f6743d4f26fb05ef857c770e7b1f3462bdf3`. Chromium dan WebKit memverifikasi panel, geser, detail, serta sumber data sintetis yang melewati kalkulasi promo kiosk yang sama. Harga akhir diperiksa oleh checkout SagaPOS dan booking SagaBook. Fitur menunggu rilis kedua komponen.
+Frontend Saga Member `7602737cb32d783e31dd563505ab80b9b14af620`, SagaPOS `3f549731b7b0370f72c5cc09194411951b80c2ad`. Chromium dan WebKit memverifikasi poster dan detail pada viewport 320, 390, dan 1440 px. Uji kiosk mencakup batas waktu kampanye, navigasi, katalog Daily Dose, dan kelangsungan alur pesan. Promo duplikat disaring. Perubahan banner dan feed belum aktif di produksi.
 
 ## 2026-11-19 - Panel saldo dan XP ringkas aktif di Saga Member
 

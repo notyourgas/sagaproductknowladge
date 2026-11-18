@@ -2,9 +2,9 @@
 
 ## 2026-11-19 - Banner promo Kopi Saga dan Saga Studio di Beranda Member
 
-**CONFIRMED / LOCAL_VALIDATED.** Kandidat SagaPOS menyediakan proyeksi publik baca-saja untuk promo otomatis yang bisa berlaku di kiosk Kopi Saga. Proyeksi memanfaatkan aturan yang dipublikasikan, periode efektif, kanal, outlet, pembayaran, menu, dan kuota. Saga Member memakai proyeksi ini agar aturan promo mengikuti publikasi SagaPOS.
+**CONFIRMED / LOCAL_VALIDATED.** Feed baca-saja Member memakai sumber poster layar awal SagaPOS Kiosk yang sama, mencakup nama, syarat dan akhir periode. Poster otomatis berhenti masuk feed mulai 1 Desember 2026 pukul 00.00 WIB. Promo otomatis terbitan katalog tetap mengikuti kanal, jadwal, outlet, menu dan kuota. Feed hanya menampilkan informasi kampanye.
 
-SagaPOS `98b6f6743d4f26fb05ef857c770e7b1f3462bdf3` dan Saga Member `aed858e6cfd2fe485e146922e0d1570dfbffe3cf`. Tes lokal mencocokkan nama dan potongan pada feed dengan kalkulasi keranjang di kiosk serta memeriksa aturan kedaluwarsa, kuota habis, dan promo yang dikhususkan untuk kasir. Kandidat belum aktif di produksi.
+Frontend Saga Member `7602737cb32d783e31dd563505ab80b9b14af620`, SagaPOS `3f549731b7b0370f72c5cc09194411951b80c2ad`. Chromium dan WebKit memverifikasi poster dan detail pada viewport 320, 390, dan 1440 px. Uji kiosk mencakup batas waktu kampanye, navigasi, katalog Daily Dose, dan kelangsungan alur pesan. Promo duplikat disaring. Perubahan banner dan feed belum aktif di produksi.
 
 ## 2026-11-18 - Lepas dan pindai ulang member di kiosk
 
