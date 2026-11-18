@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-18 - Lepas dan pindai ulang member di kiosk
+
+**CONFIRMED / LOCAL_VALIDATED.** Andreas meminta tombol Kembali mereset tautan member bila pelanggan salah pindai. Pada kandidat SagaPOS, Kembali setelah akun terhubung dan Ganti dari keranjang melepas akun dari sesi aktif, membuang voucher dan perhitungan harga member lama, lalu membuka layar untuk membuat QR dan kode kiosk baru. Item pesanan tetap ada. Bila pelepasan gagal, kiosk menampilkan pesan coba lagi dan mempertahankan akun yang masih terhubung.
+
+Source kandidat SagaPOS `c339d6fa05509acb78c1a7af14dd5b6e3527ebe9`. Tes Chromium dan WebKit memverifikasi pelepasan akun, pemindaian ulang, tautan akun pengganti, dan isi keranjang. Rilis kiosk yang terverifikasi saat validasi adalah `9942cf49951d12256365490decf51fe119263f71`.
+
 ## 2026-11-18 - QR dan kode sesi Saga Member di kiosk Kopi Saga
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Andreas melaporkan tombol QR hilang saat kiosk mulai. Bootstrap dan reset kiosk kini membaca ketersediaan pairing. Layar Punya Saga Member? menampilkan aksi utama Tampilkan QR Kiosk. Panel menampilkan QR di atas dan kode sesi 8 karakter di bawah. Pelanggan bisa memindai QR atau memilih Pakai kode kiosk di Saga Member, lalu mengonfirmasi outlet di HP. Nomor kartu tidak perlu diketik di alur ini. QR dan kode berlaku dua menit serta ditutup setelah sesi berakhir. [SagaPOS Kiosk](https://kiosk.sagapos.site/kiosk) · [Saga Member](https://app.sagamember.site/member).
