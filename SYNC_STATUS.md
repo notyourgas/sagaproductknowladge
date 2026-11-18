@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-19 - Tiga tombol cepat dan saldo poin di Beranda Saga Member
+
+**CONFIRMED / LOCAL_VALIDATED.** Andreas memilih referensi Beranda kedua untuk tata letak saldo dan XP. Lihat kartu, Scan QR Kiosk, dan Reward poin berjajar sepanjang lebar kartu. Scan QR Kiosk menjadi tombol utama. Di kiri, ikon P mendampingi angka saldo penuh dengan ukuran yang menyesuaikan panjang angka. Riwayat poin berada di bawah saldo. Total XP, target level, dan bar progres berada di kanan.
+
+Source Saga Member `29165b1f8d7fe5827d9419b12cf8edd7e932a46f`. Pemeriksaan statis dan 643 tes frontend lulus. Chromium dan WebKit memverifikasi tata letak, kartu klasik, saldo besar, navigasi, dan akses ke dialog QR serta kode kiosk pada lebar 320, 390, 430, dan 1440 px. Kandidat belum diaktifkan di produksi.
+
 ## 2026-11-18 - Lepas dan pindai ulang member di kiosk
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Andreas meminta tombol Kembali mereset tautan member bila pelanggan salah pindai. Setelah akun terhubung, Kembali melepas akun dari sesi aktif dan kembali ke layar Tampilkan QR Kiosk. Aksi Ganti dari keranjang memakai pelepasan yang sama. Voucher, pilihan uang tunai, dan perhitungan harga dari akun lama dibersihkan. Item pesanan tetap tersedia. Bila pelepasan gagal, kiosk memberi pesan coba lagi dan mempertahankan akun yang masih terhubung.
@@ -26,7 +32,7 @@ SagaPOS memakai source `9942cf49951d12256365490decf51fe119263f71`. Saga Member m
 
 **CONFIRMED / LOCAL_VALIDATED.** Andreas memilih ikon P yang lebih besar dan angka saldo di sebelahnya pada sisi kiri. Dua aksi disusun vertikal di sisi kanan dengan Lihat reward di atas Riwayat poin. Saldo memakai format Indonesia dan ukuran angka menyesuaikan panjangnya. Progres level menampilkan total dan target XP di bagian bawah.
 
-Source `94485422784ae837e749dba6b186337c3b4bce2d` di branch `codex/member-home-points-stack-20261118`. Sebanyak 643 tes frontend lulus. WebKit dan Chromium memverifikasi tata letak, saldo besar, dan tujuan ketiga aksi pada 320, 390, 430, dan 1440 px. Tampilan ini berstatus kandidat rilis. Rilis produksi yang terverifikasi saat validasi adalah `20261118T122337Z-807c295-r0u`.
+Source `94485422784ae837e749dba6b186337c3b4bce2d` di branch `codex/member-home-points-stack-20261118`. Sebanyak 643 tes frontend lulus. WebKit dan Chromium memverifikasi tata letak, saldo besar, dan tujuan ketiga aksi pada 320, 390, 430, dan 1440 px. Kandidat tata letak ini digantikan oleh revisi Beranda 19 November 2026. Rilis produksi yang terverifikasi saat validasi adalah `20261118T122337Z-807c295-r0u`.
 
 ## 2026-11-18 - Arkarupa: bulan dan porsi volume matriks
 
