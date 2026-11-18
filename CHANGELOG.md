@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-18 - QR dan kode sesi Saga Member di kiosk Kopi Saga (kandidat)
+
+**CONFIRMED / LOCAL_VALIDATED.** Andreas melaporkan tombol QR hilang saat kiosk mulai. Pada kandidat, bootstrap dan reset kiosk membaca ketersediaan pairing. Layar Punya Saga Member? menampilkan aksi utama Tampilkan QR Kiosk. Panel menampilkan QR di atas dan kode sesi 8 karakter di bawah. Pelanggan bisa memindai QR atau memilih Pakai kode kiosk di Saga Member, lalu mengonfirmasi outlet di HP. Nomor kartu tidak perlu diketik di alur ini. QR dan kode berlaku dua menit serta ditutup setelah sesi berakhir. [SagaPOS Kiosk](https://kiosk.sagapos.site/kiosk) · [Saga Member](https://app.sagamember.site/member).
+
+Source kandidat SagaPOS `9942cf49951d12256365490decf51fe119263f71`, frontend Member `611301257fd967e1e479a202fa6477d7136c2c07`, dan Customer Platform `807c2958e8aef9e04bb6192f580ec658cc0dbe64`. Chromium, WebKit, kualifikasi Linux SagaPOS, dan simulasi pemulihan Member lulus. Aktivasi menunggu ruang staging SagaPOS. Rilis live yang diverifikasi tetap `4338770705845f24ce18143f8c84f9fb562fec83` dan Member `20261118T111112Z-6a9977e-r0u`. Uji mesin fisik Kopi Saga masih terbuka.
+
 ## 2026-11-18 - Arkarupa: judul dan skala matriks langsung
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `09531808f7252d69d9bcf110165503b45bc73880` membuat judul matriks terlihat saat dibuka lewat deep link dan menambahkan pilihan Mingguan/Bulanan langsung pada matriks. Kontrol tetap memakai state jadwal existing dan tersinkron dua arah dengan Gantt. Space/ArrowLeft mempertahankan fokus. Akses internal tidak berubah; Pelaksana tetap membaca Gantt tanpa kontrol matriks nilai. Regresi MySQL disposable122tes/2500asersi, delapan kombinasi lokal320/390/740/1440 dengan reduced-motion/normal, PM publik390/1440 dalam dua mode gerak, hash runtime/CSS dan backup/restore disposable lulus. Tidak ada perubahan schema, baseline/aktual, kas, data klien atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat, staging privat dan UAT fisik masih terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-183409).

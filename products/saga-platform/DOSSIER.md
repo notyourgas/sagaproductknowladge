@@ -1,5 +1,11 @@
 # Saga Platform Dossier
 
+## 2026-11-18 - QR dan kode sesi Saga Member di kiosk Kopi Saga (kandidat)
+
+**CONFIRMED / LOCAL_VALIDATED.** Andreas melaporkan tombol QR hilang saat kiosk mulai. Pada kandidat, bootstrap dan reset kiosk membaca ketersediaan pairing. Layar Punya Saga Member? menampilkan aksi utama Tampilkan QR Kiosk. Panel menampilkan QR di atas dan kode sesi 8 karakter di bawah. Pelanggan bisa memindai QR atau memilih Pakai kode kiosk di Saga Member, lalu mengonfirmasi outlet di HP. Nomor kartu tidak perlu diketik di alur ini. QR dan kode berlaku dua menit serta ditutup setelah sesi berakhir. [SagaPOS Kiosk](https://kiosk.sagapos.site/kiosk) · [Saga Member](https://app.sagamember.site/member).
+
+Source kandidat SagaPOS `9942cf49951d12256365490decf51fe119263f71`, frontend Member `611301257fd967e1e479a202fa6477d7136c2c07`, dan Customer Platform `807c2958e8aef9e04bb6192f580ec658cc0dbe64`. Chromium, WebKit, kualifikasi Linux SagaPOS, dan simulasi pemulihan Member lulus. Aktivasi menunggu ruang staging SagaPOS. Rilis live yang diverifikasi tetap `4338770705845f24ce18143f8c84f9fb562fec83` dan Member `20261118T111112Z-6a9977e-r0u`. Uji mesin fisik Kopi Saga masih terbuka.
+
 ## 2026-11-18 - Hierarki poin dan XP di Beranda Saga Member
 
 **CONFIRMED / LOCAL_VALIDATED.** Andreas meminta saldo poin berjumlah ribuan tetap mudah dibaca dan aksi Reward lebih jelas. Beranda menempatkan saldo di atas tombol Lihat reward dan Riwayat poin. Ukuran angka menyesuaikan panjang saldo dengan format Indonesia. Bagian Progres level menampilkan total XP, bar progres, serta sisa XP ke level berikutnya.
