@@ -1,8 +1,12 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-329 — Prioritaskan Riwayat poin dan Scan QR Kiosk di Beranda
+
+19 November 2026. **CONFIRMED.** Andreas menetapkan dua tombol Beranda: Riwayat poin di kiri dan Scan QR Kiosk di kanan. Pilihan ini menggantikan susunan tiga tombol DEC-328. Simbol P dan angka saldo mendapat baris utama, dengan progres XP dikelompokkan di bawahnya.
+
 ## DEC-328 — Sejajarkan tiga tombol cepat Beranda Saga Member
 
-19 November 2026. **CONFIRMED.** Andreas memilih tampilan saldo dan XP dari referensi Beranda kedua. Letakkan Lihat kartu, Scan QR Kiosk, dan Reward poin di bawah kartu dalam satu baris. Tampilkan saldo dengan simbol P dan angka, Riwayat poin di bawahnya, serta progres XP di kanan. Besaran saldo tetap mengikuti format angka Indonesia. Implementasi dan status validasi tercatat di changelog Saga Platform.
+19 November 2026. **CONFIRMED.** Andreas memilih tampilan saldo dan XP dari referensi Beranda kedua. Letakkan Lihat kartu, Scan QR Kiosk, dan Reward poin di bawah kartu dalam satu baris. Tampilkan saldo dengan simbol P dan angka, Riwayat poin di bawahnya, serta progres XP di kanan. Besaran saldo tetap mengikuti format angka Indonesia. Implementasi dan status validasi tercatat di changelog Saga Platform. Keputusan ini digantikan oleh DEC-329.
 
 ## DEC-327 — Gunakan prototype r10 sebagai acuan tampilan Saga Member produksi
 

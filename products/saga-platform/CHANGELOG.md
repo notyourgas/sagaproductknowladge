@@ -1,10 +1,16 @@
 # Saga Platform Changelog
 
+## 2026-11-19 - Riwayat poin dan Scan QR Kiosk di Beranda Saga Member
+
+**CONFIRMED / LOCAL_VALIDATED.** Andreas menetapkan Riwayat poin di kiri dan Scan QR Kiosk di kanan pada satu baris selebar kartu. Riwayat membuka halaman mutasi poin. Kartu dan Reward dapat diakses melalui navigasi utama. Simbol P dan saldo dalam format Indonesia menjadi fokus di bagian atas panel. Total XP, bar progres, dan target level memakai satu bagian berlebar penuh di bawah saldo.
+
+Source Saga Member `e6c3cc0a0f7ea3484871ac617b0d931d8bd99d27`. Pemeriksaan statis dan 643 tes frontend lulus. Chromium dan WebKit memverifikasi tombol, formulir kode kiosk, hierarki XP, saldo panjang, dan navigasi pada lebar 320, 390, 430, dan 1440 px. Kandidat belum diaktifkan di produksi.
+
 ## 2026-11-19 - Tiga tombol cepat dan saldo poin di Beranda Saga Member
 
 **CONFIRMED / LOCAL_VALIDATED.** Andreas memilih referensi Beranda kedua untuk tata letak saldo dan XP. Lihat kartu, Scan QR Kiosk, dan Reward poin berjajar sepanjang lebar kartu. Scan QR Kiosk menjadi tombol utama. Di kiri, ikon P mendampingi angka saldo penuh dengan ukuran yang menyesuaikan panjang angka. Riwayat poin berada di bawah saldo. Total XP, target level, dan bar progres berada di kanan.
 
-Source Saga Member `29165b1f8d7fe5827d9419b12cf8edd7e932a46f`. Pemeriksaan statis dan 643 tes frontend lulus. Chromium dan WebKit memverifikasi tata letak, kartu klasik, saldo besar, navigasi, dan akses ke dialog QR serta kode kiosk pada lebar 320, 390, 430, dan 1440 px. Kandidat belum diaktifkan di produksi.
+Source Saga Member `29165b1f8d7fe5827d9419b12cf8edd7e932a46f`. Pemeriksaan statis dan 643 tes frontend lulus. Chromium dan WebKit memverifikasi tata letak, kartu klasik, saldo besar, navigasi, dan akses ke dialog QR serta kode kiosk pada lebar 320, 390, 430, dan 1440 px. Kandidat tiga tombol digantikan oleh revisi Riwayat poin dan Scan QR Kiosk. Kandidat ini belum pernah diaktifkan di produksi.
 
 ## 2026-11-18 - Lepas dan pindai ulang member di kiosk
 
