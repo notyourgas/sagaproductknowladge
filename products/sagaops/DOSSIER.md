@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-11-18 - Poster November dan School Fiesta di Kiosk
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Setelah Mulai Pesan, Kiosk menampilkan tiga kartu promo hingga 30 November 2026. Poster Daily Dose terbaru menjelaskan Rp12.000 untuk lima menu pilihan, setiap hari pukul 09.00 hingga sebelum 14.00 WIB. Poster Free Session menjelaskan sesi foto 10 menit untuk dua orang dan seluruh softfile. Staf Saga Studio menjelaskan ketentuan dan menangani penggunaan promo foto.
+
+School Fiesta ditampilkan kembali dengan keterangan perpanjangan sampai 30 November. Informasinya mencakup Rp15.000 per orang untuk siswa/mahasiswa aktif, pembelian langsung di tempat, 2–10 orang, sesi foto 10 menit, softfile dan cetak. Poster School Fiesta memakai desain periode awal dengan keterangan perpanjangan yang terlihat pada kartu. Layar promo berakhir pada 1 Desember 2026 pukul 00.00 WIB.
+
+Source `33568ef4c63a63679f7b53635a3eaf8d1f9c8ba8`, paket SHA-256 `64f764f5fcb77f269a685ba16d4705b297a7d52531cfde26e6e70a771c320a8a`. Kualifikasi Linux lulus 133 tes dan pemeriksaan UI Windows lulus lima tes. Backup terbaru, salinan di luar server, pemulihan kandidat dan rollback, aktivasi, monitor, serta lima aset produksi melalui akun Owner telah diverifikasi. Aturan harga Daily Dose terbaca pada katalog versi 192/revisi 25. Verifikasi berlangsung melalui simulasi dan pembacaan aset.
+
 ## 2026-11-16 - SagaPOS memperpanjang Daily Dose sampai 30 November
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Periode Daily Dose yang semula berakhir 14 November diperpanjang sampai 30 November 2026. Setiap hari pukul 09.00 hingga sebelum 14.00 WIB, harga dasar Americano, Cafe Latte, Cappuccino, Es Kopi Saga, dan Saga Premiyum menjadi Rp12.000 per minuman di Kiosk dan Kasir, untuk makan di tempat dan bawa pulang. Kategori promo mengikuti jadwal tersebut.
