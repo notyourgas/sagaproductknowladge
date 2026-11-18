@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-18 - Dua aksi kartu pada Home preview Saga Member
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Pada [preview Saga Member](https://saga-member-preview.pages.dev/), Lihat kartu dan Scan QR Kiosk kini menjadi dua tombol sejajar yang sama lebar, dari tepi kiri sampai tepi kanan kartu. Sebelumnya keduanya terlihat seperti tautan kecil. Scan memakai tombol gelap dan Lihat kartu memakai outline ivory/coklat; target sentuh minimal 48 px. Perubahan mengikuti umpan balik Andreas dan mempertahankan Instrument Serif, Plus Jakarta Sans, palet serta alur kartu/scanner yang ada.
+
+Uji lokal dan publik membuktikan alignment/lebar tombol di 320/390/1440 px, fokus keyboard, tujuan kartu/scanner, serta hash artifact. Alur check-in, reward dan pairing antartab tetap lulus; data sintetis tiap browser terisolasi. Aturan poin/XP, adapter penyimpanan, Account dan konten Reward tidak diubah. Perbaikan lanjutan Home/Reward masih usulan untuk dibahas. Rilis ini hanya mengubah preview; Member, POS dan Customer Platform produksi tidak disentuh.
+
+Provenance: release `saga-member-design-20261118-r5`, deployment `50d7568c-c4af-4061-aa5f-db63b17cd5e8`, artifact ZIP SHA-256 `0d25aab55e7c48d463fb3ae86defb56c6d324cc5c5c0f518dfe47a708152f291`. Tiga aset presentasi berubah; r4 tetap tersedia sebagai pemulihan. Hosted CI NOT_RUN untuk Direct Upload statis. Kamera fisik, pairing lintas perangkat dan UAT pelanggan tetap di luar bukti preview. Sinkronisasi knowledge terpisah pada main HEAD.
+
 ## 2026-11-18 - Preview redesign Saga Member di Cloudflare Pages
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Atas arahan Andreas, preview redesign Saga Member tersedia di [Cloudflare Pages](https://saga-member-preview.pages.dev/). Visual memakai Instrument Serif regular/italic bersama Plus Jakarta Sans, dengan coklat, hitam, dan ivory. Beranda, kartu interaktif, reward, level/aktivitas, Studio dan animasi photostrip dapat dieksplorasi.
