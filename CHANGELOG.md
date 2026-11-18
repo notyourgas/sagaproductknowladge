@@ -1,5 +1,16 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-18 - Riwayat poin serta Home, Reward dan Akun preview Saga Member
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Atas persetujuan Andreas, [preview Saga Member](https://saga-member-preview.pages.dev/) kini menyediakan Riwayat poin dari saldo Home, saldo Reward, dan menu Akun. Filter Semua/Masuk/Keluar menampilkan sumber aktivitas, waktu WIB, jumlah perubahan, dan saldo setelahnya. Saldo awal 128 poin diberi label contoh, bukan transaksi. Penggunaan voucher dipisahkan ke Reward > Terpakai tanpa potongan poin kedua. Riwayat kosong tidak mengarang transaksi.
+
+Home menampilkan check-in lebih ringkas dengan dialog aturan dan XP menuju level berikutnya. Dua tombol sepanjang kartu tetap dipertahankan. Reward menonjolkan Es Kopi Saga dan biaya 100 poin, menyediakan Tukar 100 poin saat cukup atau target reward saat belum cukup, serta mengutamakan Voucherku jika ada voucher aktif. Akun berubah dari penjelasan panjang menjadi identitas singkat dan menu. Rekomendasi lanjutan Home/Reward yang pada r5 masih usulan kini sudah diterapkan pada preview. Instrument Serif, Plus Jakarta Sans, palet coklat/hitam/ivory, serta animasi kartu, foto reward dan stempel tetap dipertahankan. Aturan check-in tetap 1 poin sehari ditambah bonus 10 setelah 7 hari berturut-turut, total 17; check-in tidak menambah XP.
+
+Validasi: 14 unit test, browser motion normal/reduced, daily, dan pengujian artifact publik lulus. Riwayat, saldo, filter, akses Home/Reward/Akun, kompatibilitas operasi tersimpan sebelum r6, voucher aktif, isolasi browser dan check-in bersamaan diverifikasi. Viewport relevan 320/390/1440 px serta pemeriksaan aksesibilitas otomatis area berubah lulus; tidak ada page error atau request API backend pada uji preview. Data tetap sintetis per browser melalui IndexedDB. Ini tidak mengubah Member, Customer Platform, POS, saldo atau transaksi produksi. Kamera fisik dan pairing lintas perangkat belum divalidasi; hosted CI NOT_RUN. Tidak ada blocker tersisa untuk preview ini; berikutnya penilaian desain oleh Andreas dan scope integrasi produksi terpisah.
+
+Provenance: release `saga-member-design-20261118-r6`, deployment `beabbf1a-4014-4b1a-aa94-15d1847cf602`, artifact ZIP SHA-256 `f36cac8bfcc699d81b824655f527fbd3474ae7cb510c849b682ddcbaa3a244ce`. Rilis memakai Direct Upload pada project Pages khusus preview. Rollback r5 tetap tersedia. Sinkronisasi knowledge diterbitkan terpisah pada main HEAD; diterima tanpa konflik, pricing/positioning tidak berubah.
+
+
 ## 2026-11-18 - Dua aksi kartu pada Home preview Saga Member
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Pada [preview Saga Member](https://saga-member-preview.pages.dev/), Lihat kartu dan Scan QR Kiosk kini menjadi dua tombol sejajar yang sama lebar, dari tepi kiri sampai tepi kanan kartu. Sebelumnya keduanya terlihat seperti tautan kecil. Scan memakai tombol gelap dan Lihat kartu memakai outline ivory/coklat; target sentuh minimal 48 px. Perubahan mengikuti umpan balik Andreas dan mempertahankan Instrument Serif, Plus Jakarta Sans, palet serta alur kartu/scanner yang ada.
