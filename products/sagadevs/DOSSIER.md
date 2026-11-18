@@ -1,5 +1,10 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-18 - Arkarupa: izin matriks nilai mengikuti akses internal
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0ba8c1ad365eb84dce203566e5fc0974d6e45ee8` membatasi matriks bobot bernilai rupiah dengan izin existing `view-internal`. PM/Owner/QS/Finance yang berhak membaca matriks; Pelaksana tetap membaca Gantt tanpa matriks nilai internal. Koreksi terfokus ini mengikuti rilis fitur pertama `2ad2a2b8cd4780d8d429b223f6951ef7873f053a`. Tiga tes final21asersi mencakup proyeksi dan render PM/Pelaksana. Regresi121tes/2488asersi adalah bukti kandidat sebelum tambahan guard view; full suite tidak diulang setelah delta guard. PM publik390/1440, hash source/CSS serta backup/restore disposable final diverifikasi. Tidak ada perubahan schema/data klien/aturan kas atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat serta ekspor matriks/editor baru tetap terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix).
+
+
 ## 2026-11-18 - Arkarupa: matriks bobot rencana per periode
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source Laravel `2ad2a2b8cd4780d8d429b223f6951ef7873f053a` memperluas halaman Baseline dengan matriks rencana mingguan/bulanan. Sebelumnya Gantt menampilkan rentang dan bobot item; kini operator membaca nilai baseline, bobot, kontribusi tiap periode serta rekap periode/kumulatif dari versi kontrak/jadwal yang sama. Disclosure native menampilkan target volume lewat keyboard. Kolom pekerjaan tetap terlihat dalam gulir tabel lokal; caption aksesibel dan lebar HP diperiksa secara visual.
