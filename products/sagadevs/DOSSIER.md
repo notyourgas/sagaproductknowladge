@@ -1,5 +1,10 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-18 - Arkarupa: bulan dan porsi volume matriks
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1c98c8cf4982b23acb5ff38ad74ec0d0c21f9a93` menambahkan header bulan sesuai tanggal awal periode dan rincian yang membedakan persentase volume item dari kontribusi terhadap proyek. Minggu lintas bulan tetap menampilkan rentang tanggal sebenarnya. Pembagi nol dan target kosong tidak menghasilkan angka palsu. Izin existing `view-internal` tetap berlaku; Pelaksana mempertahankan Gantt tanpa matriks nilai internal. Regresi MySQL disposable122tes/2497asersi, fokus proyeksi/izin3tes/25asersi, serta browser lokal320/1440 dan publik390/1440 lulus. Hash source/CSS dan backup/restore disposable diverifikasi. Tidak ada perubahan schema, baseline, aktual, kas, data klien atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat, editor baru dan ekspor matriks masih terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-180009).
+
+
 ## 2026-11-18 - Arkarupa: izin matriks nilai mengikuti akses internal
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0ba8c1ad365eb84dce203566e5fc0974d6e45ee8` membatasi matriks bobot bernilai rupiah dengan izin existing `view-internal`. PM/Owner/QS/Finance yang berhak membaca matriks; Pelaksana tetap membaca Gantt tanpa matriks nilai internal. Koreksi terfokus ini mengikuti rilis fitur pertama `2ad2a2b8cd4780d8d429b223f6951ef7873f053a`. Tiga tes final21asersi mencakup proyeksi dan render PM/Pelaksana. Regresi121tes/2488asersi adalah bukti kandidat sebelum tambahan guard view; full suite tidak diulang setelah delta guard. PM publik390/1440, hash source/CSS serta backup/restore disposable final diverifikasi. Tidak ada perubahan schema/data klien/aturan kas atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat serta ekspor matriks/editor baru tetap terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix).

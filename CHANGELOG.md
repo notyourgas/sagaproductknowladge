@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-18 - Arkarupa: bulan dan porsi volume matriks
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1c98c8cf4982b23acb5ff38ad74ec0d0c21f9a93` menambahkan header bulan sesuai tanggal awal periode dan rincian yang membedakan persentase volume item dari kontribusi terhadap proyek. Minggu lintas bulan tetap menampilkan rentang tanggal sebenarnya. Pembagi nol dan target kosong tidak menghasilkan angka palsu. Izin existing `view-internal` tetap berlaku; Pelaksana mempertahankan Gantt tanpa matriks nilai internal. Regresi MySQL disposable122tes/2497asersi, fokus proyeksi/izin3tes/25asersi, serta browser lokal320/1440 dan publik390/1440 lulus. Hash source/CSS dan backup/restore disposable diverifikasi. Tidak ada perubahan schema, baseline, aktual, kas, data klien atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat, editor baru dan ekspor matriks masih terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-180009).
+
+
 ## 2026-11-18 - Perbaikan Safari dan koleksi desain Saga Member
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Menindaklanjuti laporan Andreas dari iPhone, label Hari 1–7 pada Daily Check-in kini punya jarak dari tombol klaim, navigasi bawah memakai latar solid, dan sisi depan serta belakang kartu terbaca saat dibalik. Aksi Lihat kartu dan Scan QR Kiosk tetap berdampingan sepanjang lebar kartu. [Saga Member produksi](https://app.sagamember.site/member).
