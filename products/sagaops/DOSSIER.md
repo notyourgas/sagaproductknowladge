@@ -1,5 +1,11 @@
 # SagaOPS Dossier
 
+## 2026-11-19 - Banner promo Kopi Saga dan Saga Studio di Beranda Member
+
+**CONFIRMED / LOCAL_VALIDATED.** Kandidat SagaPOS menyediakan proyeksi publik baca-saja untuk promo otomatis yang bisa berlaku di kiosk Kopi Saga. Proyeksi memanfaatkan aturan yang dipublikasikan, periode efektif, kanal, outlet, pembayaran, menu, dan kuota. Saga Member memakai proyeksi ini agar aturan promo mengikuti publikasi SagaPOS.
+
+SagaPOS `98b6f6743d4f26fb05ef857c770e7b1f3462bdf3` dan Saga Member `aed858e6cfd2fe485e146922e0d1570dfbffe3cf`. Tes lokal mencocokkan nama dan potongan pada feed dengan kalkulasi keranjang di kiosk serta memeriksa aturan kedaluwarsa, kuota habis, dan promo yang dikhususkan untuk kasir. Kandidat belum aktif di produksi.
+
 ## 2026-11-18 - Lepas dan pindai ulang member di kiosk
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Andreas meminta tombol Kembali mereset tautan member bila pelanggan salah pindai. Setelah akun terhubung, Kembali melepas akun dari sesi aktif dan kembali ke layar Tampilkan QR Kiosk. Aksi Ganti dari keranjang memakai pelepasan yang sama. Voucher, pilihan uang tunai, dan perhitungan harga dari akun lama dibersihkan. Item pesanan tetap tersedia. Bila pelepasan gagal, kiosk memberi pesan coba lagi dan mempertahankan akun yang masih terhubung.

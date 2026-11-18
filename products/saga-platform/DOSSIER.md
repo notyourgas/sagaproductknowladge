@@ -1,5 +1,11 @@
 # Saga Platform Dossier
 
+## 2026-11-19 - Banner promo Kopi Saga dan Saga Studio di Beranda Member
+
+**CONFIRMED / LOCAL_VALIDATED.** Panel promo berada di antara progres level dan Daily Check-in. Banner dapat digeser dan membuka daftar detail yang memuat syarat pakai. Promo Kopi Saga berasal dari aturan otomatis yang efektif untuk SagaPOS Kiosk. Feed menyaring outlet, produk, jadwal, dan kuota. Kampanye publik Saga Studio diambil dari SagaBook, dengan detail yang mengarah ke halaman booking studio. Panel tampil ketika ada promo yang tersedia.
+
+Frontend Saga Member `aed858e6cfd2fe485e146922e0d1570dfbffe3cf` dan SagaPOS `98b6f6743d4f26fb05ef857c770e7b1f3462bdf3`. Chromium dan WebKit memverifikasi panel, geser, detail, serta sumber data sintetis yang melewati kalkulasi promo kiosk yang sama. Harga akhir diperiksa oleh checkout SagaPOS dan booking SagaBook. Fitur menunggu rilis kedua komponen.
+
 ## 2026-11-19 - Panel saldo dan XP ringkas aktif di Saga Member
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Setelah otorisasi Andreas, Beranda menempatkan simbol P dan saldo di kiri, dengan total XP, target berikutnya, dan bar progres di kanan. Angka mengikuti lebar panel dan tetap dibaca dalam format Indonesia. Pada ukuran teks yang lebih besar, bagian XP dapat berpindah ke bawah.
