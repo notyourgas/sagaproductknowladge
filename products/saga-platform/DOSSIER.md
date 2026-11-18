@@ -1,5 +1,11 @@
 # Saga Platform Dossier
 
+## 2026-11-19 - Kandidat panel saldo dan XP ringkas di Beranda Saga Member
+
+**CONFIRMED / LOCAL_VALIDATED.** Untuk mengurangi ruang kosong di bawah kartu, kandidat menempatkan simbol P dan saldo di kiri, dengan total XP, target berikutnya, dan bar progres di kanan. Angka mengikuti lebar panel dan tetap dibaca dalam format Indonesia. Pada ukuran teks yang lebih besar, bagian XP dapat berpindah ke bawah.
+
+Source Saga Member `ed78f585a369eb38a71af98fc8d5b37f941509b8`. Pada viewport 390 px, kedua panel selebar 342 px dan tinggi panel berkurang dari 150 menjadi 74 px. Pemeriksaan statis dan 643 tes frontend lulus. Chromium dan WebKit memverifikasi saldo, progres, dan dua aksi Beranda pada 320, 390, 430, dan 1440 px. Kandidat tersedia untuk ditinjau dan belum diaktifkan di produksi.
+
 ## 2026-11-19 - Riwayat poin dan Scan QR Kiosk di Beranda Saga Member
 
 **CONFIRMED / LOCAL_VALIDATED.** Andreas menetapkan Riwayat poin di kiri dan Scan QR Kiosk di kanan pada satu baris selebar kartu. Riwayat membuka halaman mutasi poin. Kartu dan Reward dapat diakses melalui navigasi utama. Simbol P dan saldo dalam format Indonesia menjadi fokus di bagian atas panel. Total XP, bar progres, dan target level memakai satu bagian berlebar penuh di bawah saldo.
