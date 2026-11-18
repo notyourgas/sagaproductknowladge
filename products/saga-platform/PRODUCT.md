@@ -1,5 +1,14 @@
 # Saga Platform Product Knowledge
 
+## 2026-11-18 - Ikon flat SVG pada preview Saga Member
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Sesuai arahan Andreas, aksen di samping nama, panah aksi, reset dan indikator perangkat pada [preview Saga Member](https://saga-member-preview.pages.dev/) kini memakai SVG tetap. Simbol UI tidak lagi bergantung pada bentuk emoji/font perangkat. Ikon menggunakan garis seragam dengan isian tipis satu warna; bunga pada kartu menjadi emblem geometris tanpa wajah. Instrument Serif dan palet coklat/hitam/ivory dipertahankan. Tidak menambah library atau aset ikon pihak ketiga.
+
+Perubahan hanya pada app.js, index.html, styles.css dan manifest. Adapter data, QR, model poin dan kode animasi identik dengan r6. Uji browser lokal 320/390/1440 px memeriksa SVG, semantik dekoratif, hilangnya simbol pictographic dari teks UI, ukuran layar, aksesibilitas area berubah, serta alur kartu, check-in, reward, riwayat poin, persistence dan isolasi browser. Artifact immutable publik cocok byte-for-byte dengan manifest dan rollback r6 tetap tersedia. Data tetap sintetis per browser; tidak ada perubahan atau aktivasi Member, POS, saldo pelanggan dan Customer Platform produksi. Hosted CI NOT_RUN; penilaian langsung perangkat Apple belum dilakukan.
+
+Provenance: release `saga-member-design-20261118-r7`, deployment `9af5aea7-5ec4-4222-bdbe-ab8278669341`, artifact ZIP SHA-256 `199f81177ccee48d2ff721eea3e9708a04e887a2ebbc8fa1a6c9dc90c4267f44`. Scope diterima tanpa konflik; pricing/positioning dan aturan loyalty tidak berubah. Next: Andreas memeriksa konsistensi ikon pada perangkatnya. Knowledge disinkronkan terpisah pada main HEAD.
+
+
 ## 2026-11-18 - Riwayat poin serta Home, Reward dan Akun preview Saga Member
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Atas persetujuan Andreas, [preview Saga Member](https://saga-member-preview.pages.dev/) kini menyediakan Riwayat poin dari saldo Home, saldo Reward, dan menu Akun. Filter Semua/Masuk/Keluar menampilkan sumber aktivitas, waktu WIB, jumlah perubahan, dan saldo setelahnya. Saldo awal 128 poin diberi label contoh, bukan transaksi. Penggunaan voucher dipisahkan ke Reward > Terpakai tanpa potongan poin kedua. Riwayat kosong tidak mengarang transaksi.
