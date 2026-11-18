@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-18 - Kartu dan Akun preview Saga Member
+
+Rilis r10: [versi immutable](https://851aca3c.saga-member-preview.pages.dev/). Uji browser lokal dan publik pada 320/390/1440 px meliputi aksi kartu, scanner demo, akses akun, gerakan dan pemeriksaan aksesibilitas Akun. Data bersifat sintetis per browser. Rilis ini berlaku pada preview.
+
+**PROPOSAL integrasi produksi:** port komponen ke PWA Saga Member dengan ringkasan, reward, aktivitas dan mekanisme buka kode kasir yang sudah ada. Check-in dan QR kiosk/struk memerlukan kontrak server serta uji akun nyata dan POS. Status member produksi diperiksa secara read-only.
+
 ## 2026-11-18 - Pesanan dan struk pada poin pembelian preview Saga Member
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Atas arahan Andreas, [preview Saga Member](https://saga-member-preview.pages.dev/) menghubungkan Beranda, Reward, Scan QR dan pesanan contoh. Home menampilkan voucher aktif/status pesanan, tombol kiosk sesuai koneksi, progres check-in dengan sisa hari, dan konten Studio yang lebih ringkas. Reward memiliki filter Bisa ditukar, detail produk/outlet/ketentuan, serta tanggal berlaku dan riwayat voucher. Scanner memiliki keadaan menyiapkan/memeriksa/tidak tersedia, mencoba membuka kamera bila browser melaporkan izin sudah diberikan, dan tetap menyediakan kode manual. Sisa waktu koneksi ditampilkan. Animasi kartu/kiosk, struk dan sobekan voucher menghormati reduced motion.
