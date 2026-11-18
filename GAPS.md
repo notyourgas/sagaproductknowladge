@@ -1,5 +1,16 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-18 - Arkarupa: matriks bobot rencana per periode
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source Laravel `2ad2a2b8cd4780d8d429b223f6951ef7873f053a` memperluas halaman Baseline dengan matriks rencana mingguan/bulanan. Sebelumnya Gantt menampilkan rentang dan bobot item; kini operator membaca nilai baseline, bobot, kontribusi tiap periode serta rekap periode/kumulatif dari versi kontrak/jadwal yang sama. Disclosure native menampilkan target volume lewat keyboard. Kolom pekerjaan tetap terlihat dalam gulir tabel lokal; caption aksesibel dan lebar HP diperiksa secara visual.
+
+Proyeksi memakai selisih nilai kumulatif berpresisi sumber, sehingga pembulatan sel tidak mengubah akhir rencana lengkap100%. Target parsial tetap ditandai, dan tampilan dibatasi104periode dengan peringatan eksplisit. Dua tes baru16asersi mencakup contoh totalRp357juta/sembilan item, pecahan1/3, lintas bulan, rencana parsial dan rentang panjang. Regresi MySQL disposable121tes/2488asersi lulus. Chrome lokal320/1440 dan PM demo publik390/1440 memverifikasi matriks, Enter, pergantian skala serta overflow; hash source dan CSS aktif cocok. Backup/restore disposable28migrasi/73tabel lulus; sumber posting dan bukti sintetis tetap identik.
+
+Scope rilis hanya matriks rencana baca saja. Tidak mengubah schema, hak akses, baseline tersimpan, perhitungan aktual, kas, pricing, akun nyata atau data klien. Editor target baru, ekspor matriks dan penyajian matriks pada laporan/Portal tetap tahap berikutnya. Holsite tetap29/36; tujuh pemeriksaan UI-05.1/06.3/06.4/07.1/07.3/07.4/09.4 masih terbuka untuk keputusan basis nilai/termin, OCR/retensi, OH/upah, pembanding serta perangkat fisik. Staging privat, UAT operator dan PILOT_READY belum selesai. Demo statis c6baa67a tidak dirilis ulang.
+
+Sumber: referensi Andreas18November2026, source/test dan verifikasi rilis pada tanggal yang sama. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-173239).
+
+
 ## 2026-11-18 - Redesign Saga Member, check-in, dan QR Kiosk
 
 **CONFIRMED.** Redesign Saga Member, check-in, dan integrasi QR sudah aktif. Uji fisik memerlukan HP, layar kiosk Kopi Saga dan akun uji yang disetujui. Cakupan penerimaan fisik mencakup QR dari layar kiosk, konfirmasi akun di HP, pembayaran uji dan kecocokan struk serta saldo pada Riwayat.
