@@ -1,5 +1,10 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-18 - Arkarupa: fokus matriks dan rincian target HP
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `416baf6148777e6ada847f041b826821630434c2` mempersempit kolom pekerjaan padaHP, memperbesar teks rincian dan memberi pemisah visual. Saat fokus berpindah ke angka matriks, tabel bergulir hingga angka dan rincian terlihat di luar kolom melekat. Sebelumnya rincian terpotong pada320/390px; kini delapan kombinasi lokal320/390/740/1440 dengan reduced-motion/normal memeriksa32target awal/akhir mingguan/bulanan, Enter dan Tab balik tanpa clipping. Regresi MySQL disposable122tes/2497asersi serta PM publik390/1440 dalam dua mode gerak lulus. Hash runtime/CSS dan recovery disposable diverifikasi. Tidak ada perubahan schema, akses, baseline/aktual/kas, data klien atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat dan UAT fisik tetap terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-181909).
+
+
 ## 2026-11-18 - Hierarki poin dan XP di Beranda Saga Member
 
 **CONFIRMED / LOCAL_VALIDATED.** Andreas meminta saldo poin berjumlah ribuan tetap mudah dibaca dan aksi Reward lebih jelas. Beranda menempatkan saldo di atas tombol Lihat reward dan Riwayat poin. Ukuran angka menyesuaikan panjang saldo dengan format Indonesia. Bagian Progres level menampilkan total XP, bar progres, serta sisa XP ke level berikutnya.
