@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-19 - Pilihan notifikasi saat mulai memakai Saga Member
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Saga Member menawarkan izin notifikasi setelah profil member baru selesai atau saat member lama masuk dengan perangkat yang belum terdaftar. Pilihan Izinkan notifikasi promo mendaftarkan perangkat setelah izin browser, lalu menyimpan preferensi Cerita & promo. Nanti dapat dipilih selama sesi berjalan. Pada iPhone yang membuka dari browser, dialog mengarahkan pemasangan ke Layar Utama. [Saga Member](https://app.sagamember.site/member).
+
+Rilis 20261119T095053Z-6086df7-r0u memakai frontend 13cb02987fa0f456d0c1dbe0c095077de9bcc9af. Uji browser dengan akun sintetis memverifikasi onboarding, login kembali, penundaan dan perangkat aktif. Pemeriksaan aset publik, pemulihan, rollback dan aktivasi ulang lulus.
+
 ## 2026-11-19 - Notifikasi push terjadwal Saga Member
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Owner dapat menjadwalkan pengumuman dalam WIB dan memilih pengiriman push. Pengiriman otomatis menjangkau perangkat yang memberi izin dan akun aktif yang menyalakan preferensi Promo. Pengiriman mengikuti jam tenang serta masa tayang pengumuman. Mengetuk notifikasi membuka pengumuman di Inbox. Member dapat mengatur izin perangkat di Akun. [Saga Member](https://app.sagamember.site/member).
