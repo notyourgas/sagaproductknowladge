@@ -1,5 +1,11 @@
 # Saga Platform Product Knowledge
 
+## 2026-11-19 - Notifikasi push terjadwal Saga Member
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Owner dapat menjadwalkan pengumuman dalam WIB dan memilih pengiriman push. Pengiriman otomatis menjangkau perangkat yang memberi izin dan akun aktif yang menyalakan preferensi Promo. Pengiriman mengikuti jam tenang serta masa tayang pengumuman. Mengetuk notifikasi membuka pengumuman di Inbox. Member dapat mengatur izin perangkat di Akun. [Saga Member](https://app.sagamember.site/member).
+
+Rilis 20261119T075352Z-6086df7-r0u memakai frontend fb6052493ad7da72dcfd62a31b4804f02260be75 dan Customer Platform 6086df7a2b377c88187c0286580665596c9250a2. Konfigurasi publik, service worker, enkripsi dengan data sintetis, simulasi PostgreSQL, rollback, aktivasi ulang, backup, dan monitor lulus. Penerimaan pada perangkat fisik masih belum terverifikasi. Belum ada pesan siaran yang diterbitkan sebagai bagian dari rilis.
+
 ## 2026-11-19 - Logo teks dua baris Saga Member
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Logo teks menempatkan Saga dalam Instrument Serif di atas Member dengan jarak rapat. Ikon aplikasi, favicon, header, layar masuk, dan pendaftaran memakai susunan ini. Koleksi desain kartu tetap tersedia. [Saga Member](https://app.sagamember.site/member).
