@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-11-19 - SagaBook: konfigurasi paket internal untuk booking manual
+
+**CONFIRMED / PRODUCTION_ACTIVATED khusus konfigurasi katalog.** Atas instruksi Andreas, satu paket internal studio founder ditambahkan melalui API katalog native dengan sesi Owner terautentikasi. Paket aktif disembunyikan dari website dan tetap tersedia untuk admin serta link manual. Seluruh background aktif ditautkan; aturan konsumsi cetak dan packaging tersimpan eksplisit. Readback admin serta payload halaman publik/manual memverifikasi hasil, dan paket lama, relasi background lama serta tarif add-on existing tetap utuh. Detail master-data dan bukti operasional disimpan restricted.
+
+Add-on orang/cetak tetap diproses admin. Link manual existing belum menyediakan pemilihan add-on atau menghitung otomatis biaya tambahan orang; pengajuan perlu diperiksa admin dan add-on berbayar dimasukkan sebelum konfirmasi. Batas peserta mengikuti kapasitas yang disetel pada paket; jatah gratis dijelaskan dalam deskripsi operasional, bukan aturan harga otomatis baru. Tidak ada booking/pembayaran uji atau perubahan stok fisik. Source aktif [ce07e76](https://github.com/notyourgas/sagabook/commit/ce07e76f9498591fcd1f7a15e0875f0e91fd619d), release `20261102101058-ce07e76`, diverifikasi ulang pada run ini. Tidak ada deployment kode atau migration baru; BUSINESS_READY dan uji transaksi nyata tidak diklaim. Sumber: instruksi Andreas, native API/readback, dan source runtime yang sama. File terdampak: PRODUCT/DOSSIER/CHANGELOG SagaBook, portfolio/root changelog, master knowledge, sync status, DECISIONS (DEC-330).
+
 ## 2026-11-19 - Banner promo Kopi Saga dan Saga Studio di Beranda Member
 
 **CONFIRMED / LOCAL_VALIDATED.** Panel informasi promo di antara progres level dan Daily Check-in menampilkan kampanye layar awal SagaPOS Kiosk dari sumber yang sama: Daily Dose, Free Session, dan School Fiesta. Banner memakai nama, syarat, dan periode kiosk. Detail membuka promo yang sedang dipilih terlebih dahulu. Poster resmi Daily Dose dan Free Session dipakai kembali. School Fiesta memakai foto Studio dengan teks perpanjangan sampai 30 November 2026 karena poster awal memuat tanggal lama.
