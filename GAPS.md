@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-19 - Pemulihan izin printer Chromebook kedaluwarsa
+
+**NEEDS CONFIRMATION.** Rilis SagaPOS `58873e1d6f9efbc1b4c1a40d77f21b2b7f164359` sudah aktif dan validasi software lulus. Pemulihan izin pada Chromebook fisik, status Layanan berjalan dan observasi memori jangka panjang masih terbuka. Uji otomatis tidak menggantikan penerimaan perangkat fisik.
+
 ## 2026-11-18 - Arkarupa: judul dan skala matriks langsung
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `09531808f7252d69d9bcf110165503b45bc73880` membuat judul matriks terlihat saat dibuka lewat deep link dan menambahkan pilihan Mingguan/Bulanan langsung pada matriks. Kontrol tetap memakai state jadwal existing dan tersinkron dua arah dengan Gantt. Space/ArrowLeft mempertahankan fokus. Akses internal tidak berubah; Pelaksana tetap membaca Gantt tanpa kontrol matriks nilai. Regresi MySQL disposable122tes/2500asersi, delapan kombinasi lokal320/390/740/1440 dengan reduced-motion/normal, PM publik390/1440 dalam dua mode gerak, hash runtime/CSS dan backup/restore disposable lulus. Tidak ada perubahan schema, baseline/aktual, kas, data klien atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat, staging privat dan UAT fisik masih terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-183409).

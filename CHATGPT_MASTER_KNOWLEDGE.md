@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-19 - Pemulihan izin printer Chromebook kedaluwarsa
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** USB dapat terlihat tersambung saat izin WebUSB tiga puluh hari sudah berakhir. Kondisi ini sebelumnya mengunci Mulai layanan dan otorisasi ulang. Owner kini dapat memilih printer yang sama, mencentang konfirmasi, lalu memakai Pulihkan izin printer ini dan Mulai layanan. Pemulihan menerbitkan izin browser baru selama tiga puluh hari. Revisi perangkat, commissioning, antrean nota berbayar, checker, dan profil cetak dipertahankan. Hasil kirim yang belum pasti tetap memerlukan pemeriksaan petugas. [Layanan printer](https://dashboard.sagapos.site/printer-service).
+
+Rilis SagaPOS `58873e1d6f9efbc1b4c1a40d77f21b2b7f164359` aktif dengan rollback `590c01fa984b0c94a62db4bbc13ee84f19cf9c48`. Dua puluh tes WebUSB lokal dan 286 tes PostgreSQL/Linux lulus. Restore backup terenkripsi, boot kandidat dan rollback, pemeriksaan aset publik serta monitor produksi lulus. Skema tetap 37. Batas heap Node menjadi 512 MiB di dalam batas RAM layanan 768 MiB yang sudah tersedia, sebagai mitigasi kehabisan heap. Layout nota, jarak dan autocut dipertahankan.
+
+**NEEDS CONFIRMATION.** Pemulihan izin dan status Layanan berjalan pada Chromebook fisik masih menunggu konfirmasi pengguna. Observasi memori jangka panjang tetap terbuka; headroom baru belum membuktikan seluruh penyebab retensi memori sudah selesai.
+
 ## 2026-11-19 - Pilihan notifikasi saat mulai memakai Saga Member
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Saga Member menawarkan izin notifikasi setelah profil member baru selesai atau saat member lama masuk dengan perangkat yang belum terdaftar. Pilihan Izinkan notifikasi promo mendaftarkan perangkat setelah izin browser, lalu menyimpan preferensi Cerita & promo. Nanti dapat dipilih selama sesi berjalan. Pada iPhone yang membuka dari browser, dialog mengarahkan pemasangan ke Layar Utama. [Saga Member](https://app.sagamember.site/member).
