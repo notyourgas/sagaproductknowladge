@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-331 - Add-on dapat ditumpuk tanpa batas jumlah
+
+Tanggal 2026-11-19. **CONFIRMED.** Andreas meminta semua additional print, waktu dan orang dapat ditumpuk berulang pada semua sesi. Pilihan yang sama harus menaikkan jumlah; admin juga dapat mengetik jumlah atau memakai tombol tambah/kurang. Validasi bilangan bulat positif, harga katalog server, izin/cakupan admin, idempotensi dan integritas tagihan tetap berlaku. Kapasitas peserta dan jadwal merupakan aturan terpisah; form link manual existing masih memerlukan pemrosesan tambahan oleh admin. Dampak: jumlah add-on tidak lagi tertahan satu per jenis dalam form booking manual. Implementasi production aktif pada source `d11a48f0fa96de9396aaaff7cf21af0016fc4b26`, release `20261119053217-d11a48f`; verifikasi independen dan Owner UI lulus. Alternatif mempertahankan pilihan tunggal tidak memenuhi kebutuhan operasional Andreas. Rujukan: [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md).
+
 ## DEC-330 - Paket internal aktif hanya pada booking manual
 
 Tanggal 2026-11-19. **CONFIRMED.** Andreas meminta paket internal studio tersedia melalui admin atau link booking manual, disembunyikan dari website, mencakup seluruh pilihan background serta menggunakan add-on orang/cetak existing. Konfigurasi disimpan dan dibaca kembali pada production melalui sesi Owner. Tidak ada fitur add-on langsung pada form link manual baru; admin memeriksa pengajuan dan memasukkan tambahan sebelum konfirmasi. Data master studio dan bukti operasional tetap restricted. Alternatif mempertahankan paket belum tersedia ditolak oleh permintaan penambahan ini. Dampak hanya konfigurasi katalog; source/release dan harga SaaS tetap. Rujukan: [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md).
