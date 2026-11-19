@@ -1,10 +1,16 @@
 # Saga Platform Dossier
 
+## 2026-11-19 - Finalisasi UI/UX Saga Member aktif di produksi
+
+**CONFIRMED / PRODUCTION_ACTIVATED untuk Saga Member.** Setelah otorisasi Andreas, rilis `20261119T044120Z-807c295-r0u` mengaktifkan frontend `fcca2eb6e77fb6fafd505ba6ff3a805d754fa2a1` dengan Customer Platform `807c2958e8aef9e04bb6192f580ec658cc0dbe64`. Beranda membuat check-in dan aksi kiosk lebih mudah ditemukan. Reward memisahkan katalog poin dan voucher, Riwayat Poin memuat penambahan serta pengurangan, dan struk tetap terhubung ke transaksi yang tepat. Kartu mempertahankan 35 pilihan desain. Akun, Quest bersyarat, Saga Studio, serta pemulihan sesi dan fokus mengikuti data atau kapabilitas server. [Saga Member produksi](https://app.sagamember.site/member).
+
+Pemulihan PostgreSQL 18, backup, rollback, identitas aset publik, dan monitor lulus. Chromium dan WebKit menguji aset produksi dengan proyeksi member sintetis serta halaman masuk publik. Uji akun member produksi dan kiosk fisik masih terbuka. UI promo dan endpoint Member aktif. Pada pemeriksaan rilis, feed Kopi Saga masih menunggu paket SagaPOS `1a72a8d9197018dd07319167bc18994081bc0ab7` karena batas kapasitas staging VPS. Kanal Saga Studio belum mengembalikan kampanye yang bisa ditampilkan. Panel muncul saat sumber mengembalikan promo aktif.
+
 ## 2026-11-19 - Banner promo Kopi Saga dan Saga Studio di Beranda Member
 
 **CONFIRMED / LOCAL_VALIDATED.** Panel informasi promo di antara progres level dan Daily Check-in menampilkan kampanye layar awal SagaPOS Kiosk dari sumber yang sama: Daily Dose, Free Session, dan School Fiesta. Banner memakai nama, syarat, dan periode kiosk. Detail membuka promo yang sedang dipilih terlebih dahulu. Poster resmi Daily Dose dan Free Session dipakai kembali. School Fiesta memakai foto Studio dengan teks perpanjangan sampai 30 November 2026 karena poster awal memuat tanggal lama.
 
-Frontend Saga Member `7602737cb32d783e31dd563505ab80b9b14af620`, SagaPOS `3f549731b7b0370f72c5cc09194411951b80c2ad`. Chromium dan WebKit memverifikasi poster dan detail pada viewport 320, 390, dan 1440 px. Uji kiosk mencakup batas waktu kampanye, navigasi, katalog Daily Dose, dan kelangsungan alur pesan. Promo duplikat disaring. Perubahan banner dan feed belum aktif di produksi.
+Frontend Saga Member `7602737cb32d783e31dd563505ab80b9b14af620`, SagaPOS `3f549731b7b0370f72c5cc09194411951b80c2ad`. Chromium dan WebKit memverifikasi poster dan detail pada viewport 320, 390, dan 1440 px. Uji kiosk mencakup batas waktu kampanye, navigasi, katalog Daily Dose, dan kelangsungan alur pesan. Promo duplikat disaring. Bagian ini mencatat validasi lokal saat kandidat promo dibuat. Status terbaru tercatat pada entri finalisasi UI/UX.
 
 ## 2026-11-19 - Panel saldo dan XP ringkas aktif di Saga Member
 
