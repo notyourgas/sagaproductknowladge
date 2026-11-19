@@ -1,10 +1,16 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-19 - Feed promo SagaPOS tampil di Saga Member produksi
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Beranda Saga Member membaca promosi yang terbit pada layar awal SagaPOS Kiosk. Pemeriksaan kedua endpoint produksi mencocokkan Daily Dose, Free Session, School Fiesta, termasuk judul, ringkasan, masa berlaku, dan poster yang tersedia. Chromium dan WebKit menguji pergantian banner dan pembukaan Detail promo dengan proyeksi akun simulasi. Feed ini menyediakan informasi kampanye. [Saga Member](https://app.sagamember.site/member).
+
+SagaPOS aktif pada source `590c01fa984b0c94a62db4bbc13ee84f19cf9c48` dengan rollback `1a72a8d9197018dd07319167bc18994081bc0ab7`. Saga Member memakai rilis `20261119T044120Z-807c295-r0u`. Kualifikasi Linux, uji pemulihan PostgreSQL dan rollback, serta monitor produksi lulus. Uji kiosk fisik dan transaksi produksi masih terbuka.
+
 ## 2026-11-19 - Banner promo Kopi Saga dan Saga Studio di Beranda Member
 
 **CONFIRMED / LOCAL_VALIDATED.** Feed baca-saja Member memakai sumber poster layar awal SagaPOS Kiosk yang sama, mencakup nama, syarat dan akhir periode. Poster otomatis berhenti masuk feed mulai 1 Desember 2026 pukul 00.00 WIB. Promo otomatis terbitan katalog tetap mengikuti kanal, jadwal, outlet, menu dan kuota. Feed hanya menampilkan informasi kampanye.
 
-Frontend Saga Member `7602737cb32d783e31dd563505ab80b9b14af620`, SagaPOS `3f549731b7b0370f72c5cc09194411951b80c2ad`. Chromium dan WebKit memverifikasi poster dan detail pada viewport 320, 390, dan 1440 px. Uji kiosk mencakup batas waktu kampanye, navigasi, katalog Daily Dose, dan kelangsungan alur pesan. Promo duplikat disaring. Perubahan banner dan feed belum aktif di produksi.
+Frontend Saga Member `7602737cb32d783e31dd563505ab80b9b14af620`, SagaPOS `3f549731b7b0370f72c5cc09194411951b80c2ad`. Chromium dan WebKit memverifikasi poster dan detail pada viewport 320, 390, dan 1440 px. Uji kiosk mencakup batas waktu kampanye, navigasi, katalog Daily Dose, dan kelangsungan alur pesan. Promo duplikat disaring. Status aktivasi tercatat pada entri produksi Feed promo SagaPOS.
 
 ## 2026-11-18 - Lepas dan pindai ulang member di kiosk
 
