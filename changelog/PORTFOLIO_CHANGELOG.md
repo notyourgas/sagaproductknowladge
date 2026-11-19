@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-11-19 - Kandidat pembulatan poin belanja Kopi Saga
+
+**CONFIRMED / LOCAL_VALIDATED.** Kandidat Customer Platform 039b35d46c5dcb1c07447c7cbb147e67b2915de7 menyiapkan aturan poin transaksi Kopi Saga sebesar satu poin per Rp1.000 belanja yang memenuhi syarat. Sisa lebih dari Rp500 dibulatkan naik. Nilai Rp16.500 menjadi 16 poin dan Rp16.600 menjadi 17 poin. XP mengikuti aturan yang berlaku. Koreksi transaksi merujuk versi perhitungan perolehan aslinya.
+
+Perubahan ini belum diaktifkan di produksi. Verifikasi mencakup perhitungan, retry, refund dan kompatibilitas pembaca lintas aturan dengan data sintetis. Aktivasi dan verifikasi di kiosk fisik masih terbuka.
+
 ## 2026-11-19 - Pemulihan izin printer Chromebook kedaluwarsa
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** USB dapat terlihat tersambung saat izin WebUSB tiga puluh hari sudah berakhir. Kondisi ini sebelumnya mengunci Mulai layanan dan otorisasi ulang. Owner kini dapat memilih printer yang sama, mencentang konfirmasi, lalu memakai Pulihkan izin printer ini dan Mulai layanan. Pemulihan menerbitkan izin browser baru selama tiga puluh hari. Revisi perangkat, commissioning, antrean nota berbayar, checker, dan profil cetak dipertahankan. Hasil kirim yang belum pasti tetap memerlukan pemeriksaan petugas. [Layanan printer](https://dashboard.sagapos.site/printer-service).

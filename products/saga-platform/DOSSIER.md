@@ -1,5 +1,11 @@
 # Saga Platform Dossier
 
+## 2026-11-19 - Kandidat pembulatan poin belanja Kopi Saga
+
+**CONFIRMED / LOCAL_VALIDATED.** Kandidat Customer Platform 039b35d46c5dcb1c07447c7cbb147e67b2915de7 menyiapkan aturan poin transaksi Kopi Saga sebesar satu poin per Rp1.000 belanja yang memenuhi syarat. Sisa lebih dari Rp500 dibulatkan naik. Nilai Rp16.500 menjadi 16 poin dan Rp16.600 menjadi 17 poin. XP mengikuti aturan yang berlaku. Koreksi transaksi merujuk versi perhitungan perolehan aslinya.
+
+Perubahan ini belum diaktifkan di produksi. Verifikasi mencakup perhitungan, retry, refund dan kompatibilitas pembaca lintas aturan dengan data sintetis. Aktivasi dan verifikasi di kiosk fisik masih terbuka.
+
 ## 2026-11-19 - Pilihan notifikasi saat mulai memakai Saga Member
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Saga Member menawarkan izin notifikasi setelah profil member baru selesai atau saat member lama masuk dengan perangkat yang belum terdaftar. Pilihan Izinkan notifikasi promo mendaftarkan perangkat setelah izin browser, lalu menyimpan preferensi Cerita & promo. Nanti dapat dipilih selama sesi berjalan. Pada iPhone yang membuka dari browser, dialog mengarahkan pemasangan ke Layar Utama. [Saga Member](https://app.sagamember.site/member).
