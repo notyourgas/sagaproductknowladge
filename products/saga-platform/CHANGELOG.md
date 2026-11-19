@@ -1,5 +1,11 @@
 # Saga Platform Changelog
 
+## 2026-11-19 - Logo teks dua baris Saga Member
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Logo teks menempatkan Saga dalam Instrument Serif di atas Member dengan jarak rapat. Ikon aplikasi, favicon, header, layar masuk, dan pendaftaran memakai susunan ini. Koleksi desain kartu tetap tersedia. [Saga Member](https://app.sagamember.site/member).
+
+Frontend `637bf26cdb8bfc0bdb7343036764cb889f1761d1` aktif pada rilis `20261119T071811Z-3346b54-r0u` dengan Customer Platform `3346b547b3f0b5075dab43a9bece68492592b306`. Pemeriksaan aset publik mencocokkan SVG dan PNG 180, 192, dan 512 piksel. Uji tampilan Chromium dan WebKit pada viewport mobile, uji pemulihan PostgreSQL, rollback, dan monitor produksi lulus.
+
 ## 2026-11-19 - Voyager menjadi level awal member aktif
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Akun aktif Saga Member mendapat level minimal Voyager sejak registrasi. Akun Pioneer dan Legend mempertahankan levelnya dan mendapat benefit yang sama. Diskon pembelian yang memenuhi syarat adalah 10% dengan batas Rp15.000 per transaksi. SagaPOS Kiosk memakai aturan dari Saga Member saat QR atau kode kiosk menghubungkan akun. Promo dan diskon member berlaku terpisah. Jika promo otomatis memberi potongan lebih besar, SagaPOS memakai promo itu. [Saga Member](https://app.sagamember.site/member).
