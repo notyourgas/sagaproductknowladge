@@ -1,5 +1,11 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-19 - Voyager menjadi level awal member aktif
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Akun aktif Saga Member mendapat level minimal Voyager sejak registrasi. Akun Pioneer dan Legend mempertahankan levelnya dan mendapat benefit yang sama. Diskon pembelian yang memenuhi syarat adalah 10% dengan batas Rp15.000 per transaksi. SagaPOS Kiosk memakai aturan dari Saga Member saat QR atau kode kiosk menghubungkan akun. Promo dan diskon member berlaku terpisah. Jika promo otomatis memberi potongan lebih besar, SagaPOS memakai promo itu. [Saga Member](https://app.sagamember.site/member).
+
+Customer Platform `3346b547b3f0b5075dab43a9bece68492592b306` aktif pada rilis `20261119T064303Z-3346b54-r0u`. Frontend `fcca2eb6e77fb6fafd505ba6ff3a805d754fa2a1` dan SagaPOS `590c01fa984b0c94a62db4bbc13ee84f19cf9c48` menggunakan alur yang sudah tersedia. CI Linux, pemulihan PostgreSQL, rollback, dan monitor produksi lulus. Pengujian integrasi mencakup akun aktif lama dan baru, level lebih tinggi, tamu, akun nonaktif, batas diskon, dan promo. Pemeriksaan QR dan kode pada jalur produksi lulus. Transaksi berbayar pada kiosk fisik masih terbuka.
+
 ## 2026-11-19 - Feed promo SagaPOS tampil di Saga Member produksi
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Beranda Saga Member membaca promosi yang terbit pada layar awal SagaPOS Kiosk. Pemeriksaan kedua endpoint produksi mencocokkan Daily Dose, Free Session, School Fiesta, termasuk judul, ringkasan, masa berlaku, dan poster yang tersedia. Chromium dan WebKit menguji pergantian banner dan pembukaan Detail promo dengan proyeksi akun simulasi. Feed ini menyediakan informasi kampanye. [Saga Member](https://app.sagamember.site/member).
