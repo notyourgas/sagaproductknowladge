@@ -1,5 +1,15 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-21 - Arkarupa: konteks hasil Dashboard terlihat
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `d436cd7dffc51c79c5091cf35dc415f297501c9e` menampilkan nama proyek atau seluruh proyek dalam akses serta periode hasil di atas KPI, meski filter tertutup. Label13px/nilai14px monokrom, Filter14px, tanggal dari hasil report dan penjelasan saldo kumulatif tetap terpisah. Draf tanggal yang belum diterapkan tidak dinyatakan sebagai periode hasil. Holsite, Plus Jakarta Sans, SVG original dan reduced motion dipertahankan.
+
+Rilis dibatasi UI. Upaya handler fokus filter bersama belum lulus verifikasi lokal sehingga dikecualikan dari source rilis; alur filter lama tetap dipakai. Kegagalan dan checkpoint UX dipertahankan, tanpa klaim perbaikan fokus baru selesai.
+
+18 fixture konteks(portfolio/nama panjang escaped/draf invalid) dan18 fixture actual Blade KPI(nol/nominal besar/sumber belum tersedia) pada320/390/768/900/1440 dan390normal lulus. Urutan stylesheet fixture disamakan dengan provider:base sebelum Holsite. UI01.1 lulus ulang untuk layout empat posisi4x1 desktop dan2x2HP serta label/nominal320.24 baseline+24 publik PM/Finance portfolio/proyek membuktikan konteks hasil,grid aktual,nilai sumber tetap dan48pintu buka filter lama tanpa request bisnis. Fixture empat-key membuktikan layout, bukan Owner browser atau sign-off visual manusia.
+
+Dua tes MySQL disposable38asersi lulus current review versus historical progress/reset periode serta forecast incomplete/commitment/stale/snapshot guards. DB disposable dihapus dan server milikrun shutdown. Backend/schema/auth/form/rumus/ekspor/PDF tidak berubah. Runner kanonik membuktikan encrypted backup/restore disposable73tabel10file28migrasi sebelum promosi;runtime4file dan CSS publik cocok exact source. Kedua Change Log diperbarui dan dibaca ulang. UI01.1 satu baris engineering yang terverifikasi pada kandidat ini;29/36 historis bukan skor seluruh kandidat saat ini. Seluruh36,reviewAndreas,Owner browser,HP fisik,screenreader,zoom200,UAT dan PILOT_READY tetap terbuka. Demo statis tidak berubah. [Buka Dashboard Utama](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-21 - Arkarupa: hierarki dan pintasan Dashboard
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `27d8cf462dc6c8423de205dbde9dc2362023c61f` membesarkan label antrean Dashboard dari12 menjadi14px, metadata proyek13px dan kondisi kosong14px. Judul Posisi proyek17px kini terlihat. Navigasi pintas membawa pengguna langsung ke Posisi proyek, Ke status proyek dan Pekerjaan; Dokumen tersedia bila konteks proyek dipilih. Palet putih/abu/hitam, Holsite, Plus Jakarta Sans, SVG original dan reduced motion tetap. Tidak ada grafik atau notifikasi tambahan.
