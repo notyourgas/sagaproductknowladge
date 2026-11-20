@@ -1,5 +1,9 @@
 # Riwayat Keputusan Saga Product Knowledge
 
+## DEC-332 - Enam menu KopiSaga dalam Mont Blanc dan Bakery & Cheesecake
+
+Tanggal 2026-11-20. **CONFIRMED.** Andreas menetapkan Garlic Bread Rp18.000, Sourdough Cranberry Cheese Rp18.000, Double Choco Rp16.000 dan tiga Montblanc masing-masing Rp18.000. Bakery digabung dengan cheesecake; kategori Mont Blanc dibuat untuk Or, Apple dan Berry Montblanc. Berry menggunakan satu irisan strawberry. Alasan: menu baru tersedia konsisten pada kasir dan kiosk dengan foto yang sama. Alternatif memisahkan bakery dari cheesecake tidak dipilih. Implementasi melalui publikasi katalog 26 / versi 209 pada runtime `58873e1d6f9efbc1b4c1a40d77f21b2b7f164359`; stok fisik, HPP dan promo tetap. Pemberi keputusan: Andreas. Rujukan: [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md).
+
 ## DEC-331 - Add-on dapat ditumpuk tanpa batas jumlah
 
 Tanggal 2026-11-19. **CONFIRMED.** Andreas meminta semua additional print, waktu dan orang dapat ditumpuk berulang pada semua sesi. Pilihan yang sama harus menaikkan jumlah; admin juga dapat mengetik jumlah atau memakai tombol tambah/kurang. Validasi bilangan bulat positif, harga katalog server, izin/cakupan admin, idempotensi dan integritas tagihan tetap berlaku. Kapasitas peserta dan jadwal merupakan aturan terpisah; form link manual existing masih memerlukan pemrosesan tambahan oleh admin. Dampak: jumlah add-on tidak lagi tertahan satu per jenis dalam form booking manual. Implementasi production aktif pada source `d11a48f0fa96de9396aaaff7cf21af0016fc4b26`, release `20261119053217-d11a48f`; verifikasi independen dan Owner UI lulus. Alternatif mempertahankan pilihan tunggal tidak memenuhi kebutuhan operasional Andreas. Rujukan: [SagaBook Product](products/sagabook/PRODUCT.md), [SagaBook Changelog](products/sagabook/CHANGELOG.md).

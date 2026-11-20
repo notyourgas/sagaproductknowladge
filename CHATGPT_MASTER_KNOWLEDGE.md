@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-20 - Mont Blanc dan Bakery & Cheesecake
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** SagaPOS/KopiSaga menerbitkan enam menu dengan foto pada katalog kasir dan kiosk: Garlic Bread Rp18.000; Sourdough Cranberry Cheese Rp18.000; Double Choco Rp16.000; Or, Apple dan Berry Montblanc masing-masing Rp18.000. Kategori baru Mont Blanc berisi tiga minuman dingin. Kategori Cake menjadi Bakery & Cheesecake, dengan menu cheesecake lama dipertahankan. Berry memakai garnish satu irisan strawberry sesuai keputusan Andreas.
+
+Publikasi 26 / katalog 209 pada runtime `58873e1d6f9efbc1b4c1a40d77f21b2b7f164359`; tanpa rilis kode baru. Read-back publik/kasir/kiosk, empat belas quote dan browser katalog desktop/HP lulus. Total keenam menu Rp106.000. Stok fisik, HPP dan aturan promo tidak berubah; tanpa order/pembayaran uji. UAT kiosk fisik belum dilakukan. [Mont Blanc](https://sagapos.site/menu?category=mont-blanc) · [Bakery & Cheesecake](https://sagapos.site/menu?category=cake). Sumber: instruksi Andreas dan verifikasi produksi 20 November 2026.
+
 ## 2026-11-19 - Kandidat pembulatan poin belanja Kopi Saga
 
 **CONFIRMED / LOCAL_VALIDATED.** Kandidat Customer Platform 039b35d46c5dcb1c07447c7cbb147e67b2915de7 menyiapkan aturan poin transaksi Kopi Saga sebesar satu poin per Rp1.000 belanja yang memenuhi syarat. Sisa lebih dari Rp500 dibulatkan naik. Nilai Rp16.500 menjadi 16 poin dan Rp16.600 menjadi 17 poin. XP mengikuti aturan yang berlaku. Koreksi transaksi merujuk versi perhitungan perolehan aslinya.

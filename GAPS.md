@@ -1,5 +1,11 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-20 - Batas penerimaan enam menu KopiSaga dan observasi memori
+
+**NEEDS CONFIRMATION.** Enam menu baru sudah aktif pada publikasi katalog 26 / versi 209 dan pemeriksaan katalog serta quote produksi lulus. UAT pada kiosk fisik, transaksi berbayar, resep serta biaya HPP menu baru belum divalidasi dalam pekerjaan katalog ini. Stok fisik dan HPP tidak diubah.
+
+Layanan sempat mencapai batas memori saat penyusunan draf dan pulih otomatis. Publikasi dilanjutkan dari state tersimpan dengan foto POS yang lebih ringan; hasil akhir sehat dan tanpa draf tersisa. Batas resource tidak dinaikkan. Observasi memori jangka panjang dari rilis sebelumnya tetap terbuka; keberhasilan publikasi ini bukan bukti seluruh penyebab retensi sudah selesai. Tidak ada klaim BUSINESS_READY baru.
+
 ## 2026-11-19 - Pemulihan izin printer Chromebook kedaluwarsa
 
 **NEEDS CONFIRMATION.** Rilis SagaPOS `58873e1d6f9efbc1b4c1a40d77f21b2b7f164359` sudah aktif dan validasi software lulus. Pemulihan izin pada Chromebook fisik, status Layanan berjalan dan observasi memori jangka panjang masih terbuka. Uji otomatis tidak menggantikan penerimaan perangkat fisik.

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-11-20 - Mont Blanc dan Bakery & Cheesecake
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Katalog KopiSaga menambahkan Garlic Bread Rp18.000, Sourdough Cranberry Cheese Rp18.000, Double Choco Rp16.000, Or Montblanc Rp18.000, Apple Montblanc Rp18.000 dan Berry Montblanc Rp18.000. Kategori Cake berganti nama menjadi Bakery & Cheesecake tanpa mengganti harga atau status cheesecake lama. Tiga minuman berada di kategori Mont Blanc dan hanya menyediakan pilihan Es. Foto retouch transparan dipasang pada keenam produk; Berry memakai satu irisan strawberry sesuai permintaan Andreas.
+
+Publikasi katalog 26, versi 209, aktif pada runtime source `58873e1d6f9efbc1b4c1a40d77f21b2b7f164359`. Ini perubahan data katalog, tanpa rilis kode aplikasi baru. Read-back katalog publik, kasir dan kiosk serta empat belas perhitungan harga produksi lulus: setiap produk sesuai harga dan keranjang enam produk berjumlah Rp106.000 pada kedua kanal. Browser katalog publik desktop dan HP menampilkan foto serta harga. Menu lama dan aturan promo dipertahankan. Stok fisik dan HPP tidak berubah; tidak dibuat order atau pembayaran uji. UAT kiosk fisik dan transaksi nyata tetap belum dilakukan.
+
+Sumber keputusan: Andreas, 20 November 2026; evidence publikasi dan pemeriksaan produksi pada tanggal yang sama. [Mont Blanc](https://sagapos.site/menu?category=mont-blanc) · [Bakery & Cheesecake](https://sagapos.site/menu?category=cake).
+
 ## 2026-11-19 - Pemulihan izin printer Chromebook kedaluwarsa
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** USB dapat terlihat tersambung saat izin WebUSB tiga puluh hari sudah berakhir. Kondisi ini sebelumnya mengunci Mulai layanan dan otorisasi ulang. Owner kini dapat memilih printer yang sama, mencentang konfirmasi, lalu memakai Pulihkan izin printer ini dan Mulai layanan. Pemulihan menerbitkan izin browser baru selama tiga puluh hari. Revisi perangkat, commissioning, antrean nota berbayar, checker, dan profil cetak dipertahankan. Hasil kirim yang belum pasti tetap memerlukan pemeriksaan petugas. [Layanan printer](https://dashboard.sagapos.site/printer-service).
