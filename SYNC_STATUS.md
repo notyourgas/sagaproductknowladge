@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-21 - Arkarupa: identitas BUP dan kode pekerjaan
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1419656a229bd9008903c33c78bb6e641e94666b` memisahkan nomor laporan dan tanggal kejadian BUP yang sebelumnya bercampur dengan kode pekerjaan dalam satu baris13px. Identitas kini memakai dl dua kolom,label13px/nilai14px tabular. Kode tetap exact dan escaped dalam native details defaultclosed dengan summary44px danfocusoutline;Enter/Space membuka-menutup tanpa RPC. Foto/status/volume/lokasi/tim/aksi serta izin tidak berubah. Monokrom,Plus Jakarta Sans,Holsite,reduced motion dan SVG original tetap;tidak menambah aset raster atau dependensi.
+
+12fixture actualBlade identityleaf short/longescaped pada6viewport-motion lulus13/14/defaultclosed/EnterSpace/fokus/44px/nooverflow/zeroPOST;ini bukanserverHTTPapp lokal.12baseline+12after publik PM/Pelaksana pada fixtureexisting lulus nomor/tanggal/kode/title/meta/actions exact. Screenshotmenggunakanheadingdenganmarginexisting agaridentitas tidakterpotongheader;ini koreksiframing bukti,bukan patchlayouttambahan. Dua probe awal baseline gagal karena parser separator danencodingANSI;harnessUTF8 danpemisahanliteral memperbaikinyatanpamengubahdata. Computedfontawalterbukti13px;asumsi12pxpadaentryjadwalawal dikoreksidenganriwayatdipertahankan.
+
+Dua tes MySQL disposable23asersi lulus histori review author/reviewer vs Finance,alasanreviewrequired,pemulihandraf/stalerevision,fotoprivat danpenolakanlintasproyek. OwnedtempD/DBbaru dijaga;DBdropped/serverMySQLshutdown/ownedsessionsremoved. Backend/schema/auth/data/rumus/formatPDFCSV tidak berubah;laporan/PDF/ekspor tidakterdampak/tidakdiujiulang. Runner kanonik backupencrypted/restoredisposable73tables10files28migrasi/promosi lulus;runtime3file/CSSpublicexact. KeduaChangeLogditulis/dibacaulang,riwayatdipertahankan.
+
+UI-04.4/UI-09 hanya subset;tidak mengklaim36/36 ataulevelvisualbaru. Ownerbrowser/HPfisik/screenreader/zoom200/reviewAndreas/staging/UAT/proyekpilotnyata/PILOT_READY tetapOPEN. Demo statis tidak berubah. Berikutnya lanjut irisan Lapangan/Portal yangsiap dankonsolidasi matriks pada kandidat terbaru. [Buka riwayat BUP](https://arkarupa-dashboard.vercel.app/lapangan?project=2&stage=harian#field-report-list-heading).
+
 ## 2026-11-21 - Arkarupa: tabel periode Lapangan dan pintasan baca
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `dabd5909c5fe8f4df0d7eeb86832d823634d6f09` memperbesar angka/header tabel progres per periode dari12px pada HP menjadi14px,metadata baseline13px danminimumlebar560px dalam wilayah gulir sendiri. Halaman tidak melebar. Monokrom,Plus Jakarta Sans,layoutHolsite,seriaktual danreducedmotion tetap. Tabelmenjaga teks/nilai/date/baseline/status persis;format angka/rumus/CSV/PDF tidak berubah. Tombol Baca tabel periode kini memfokuskan region tanpa gulir otomatis kemudian menyelaraskan awal tabel di bawah header setelah frame dock;kolom yang sedang dibaca dipertahankan.
