@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-20 - Arkarupa: tampilan aktif dan navigasi keyboard modul
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0b9d935e545de2ee21f4e6a5966e062ed03dbb89` menambahkan label Tampilan aktif berukuran14px pada menu horizontal modul. ArrowLeft/Right,Home/End memindahkan fokus dan menggulir tombol ke area terlihat;Tab/ShiftTab juga membawa fokus terlihat. Memindahkan fokus tidak mengganti tampilan atau mengirim POST. Pola Holsite,monokrom,Plus Jakarta Sans,wire/action dan guarddraf tetap.24fixture actualBlade+24baseline modul3/4/5tombol serta nama panjang escaped,dan24browser publik PM/Finance pada Komersial/Keuangan lulus terfokus. Enter/Space native hanya diuji pada fixture terisolasi;konfirmasi draf publik tidak dibypass.
+
+Dua existing Featuretest/94asersi MySQL disposable lulus:forecast hanya mengisi nominal kosong tanpa menimpa0/manual/alasan,serta deep link enamrole/empatmodul dengan fallbackstageinvalid dan penolakan update422. DBdisposable dihapus,proses milikrun dihentikan;data publik tidak dimutasi. UI-04.3/UI-05.3/UI-07.2 source-bound;seluruh36,reviewvisualAndreas,UATmanusia/HPfisik dan PILOT_READY masih terbuka. HostedCI/fullsuite tidak dijalankan. [Buka modul Komersial](https://arkarupa-dashboard.vercel.app/komersial).
+
 ## 2026-11-20 - Arkarupa: identitas dan pencarian pemilih proyek
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `532b180203f3bd415bedc3a1d6a515af9d8becff` memisahkan nama proyek15px,ID,wilayah dan penanda aktif pada opsi monokrom. Pencarian #12 atau12 mencocokkan nomor tepat;nama danwilayah tetap tersedia. Ini membantu membedakan nama serupa tanpa mengubah urutan,aksi selectProject atau akses.18fixture actualBlade+18baseline meliputi kosong,20proyek,namapanjang/escaped danID1vs10;12browser publik PM/Finance membuktikan pencarian,clear/Escape/fokus tanpa POST dan data/aksi tetap.
