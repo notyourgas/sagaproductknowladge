@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-21 - Arkarupa: identitas BUP bernama dan lookup laporan lama
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Kandidat akhir run identitas BUP adalah `98d095e0dd80a35bd71274fed7aaed54d0871111`, menggantikan1419656 yang sempat terbit pada run sama. Visual dua kolom label13px/nilai14px danpanel kode native44px dipertahankan. Grup dl kini bernama Laporan #ID melalui aria-label agar identitas self-contained bagi aksesibilitas serta lookup laporan lama tetap tersedia.12fixture leaf diulang setelah label ditambahkan;12pemeriksaan publik final lulus group label/nomor/date/key/title/meta/actions exact/defaultclosed/EnterSpace/fokus/nooverflow/zeroPOST. Nama grup diperiksa pada Chrome accessibility tree untuk dua role di390px;ini bukan screenreader atauUATfisik.
+
+Regresi tambahan disposable lookup laporan lama,paginasi antrean,fokusdeep link danstale report action lulus1tes9asersi pada kodeakhir. Bukti2tes23asersi reviewhistory/draft/photo/crossproject pada1419656 dipertahankan karena backend/query/auth tidak berubah;tidakdiklaimsebagaiSQLrunulangpadaSHAakhir. Labelharnessreceiptgenerikmerujukrunnerasal;nama/filtertesdan9asersi aktualada dilogeksekusi. Backupencrypted/restoredisposable73tables10files28migrasi/promosi final lulus;runtime3file/CSSpublicexact. Rilisawal danbuktinyatetapriwayat,tidakditulisulangsebagaiSHAakhir. KeduaChangeLogmemuatfinalcandidate dandibacaulang.
+
+UI04.4/UI09 tetapPASS_SUBSET;tidakmenyatakan36/36,levelvisualbaru,Ownerbrowser,HPfisik,screenreader,zoom200,staging/UATatauPILOT_READY. Demo statis tidak berubah. Berikutnya konsolidasikan bukti acceptance dengan kandidat terkini danlanjutirisan Lapangan/Portal yangsiap. [Riwayat BUP](https://arkarupa-dashboard.vercel.app/lapangan?project=2&stage=harian#field-report-list-heading).
+
 ## 2026-11-21 - Arkarupa: identitas BUP dan kode pekerjaan
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1419656a229bd9008903c33c78bb6e641e94666b` memisahkan nomor laporan dan tanggal kejadian BUP yang sebelumnya bercampur dengan kode pekerjaan dalam satu baris13px. Identitas kini memakai dl dua kolom,label13px/nilai14px tabular. Kode tetap exact dan escaped dalam native details defaultclosed dengan summary44px danfocusoutline;Enter/Space membuka-menutup tanpa RPC. Foto/status/volume/lokasi/tim/aksi serta izin tidak berubah. Monokrom,Plus Jakarta Sans,Holsite,reduced motion dan SVG original tetap;tidak menambah aset raster atau dependensi.
