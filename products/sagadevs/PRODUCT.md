@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-20 - Arkarupa: semua bagian workspace pada HP
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `eb9d68f883bd3b706ae38e3c898cf4b9d978cbe5` membesarkan label navigasi bagian workspace dari12 menjadi14px. Tombol Semua bagian pada lebar di bawah900px menampilkan semua tujuan dalam dua kolom; Ringkas bagian kembali ke baris yang dapat digeser. Penanda aktif monokrom, nama/href bagian, akses per role dan keyboard Arrow/Home/End dipertahankan. Tidak ada request atau mutasi data dari buka/ringkas. Holsite, Plus Jakarta Sans, SVG original dan reduced motion tetap.
+
+18 fixture aktual Blade empat/enam tujuan serta label panjang pada320/390/768/900/1440 dan390normal lulus label14px,target44px,expand/collapse,fokuskeyboard,tautan tetap dan nooverflow/noRPC.12 baseline+12 publik PM/Finance lulus; Enter membuka bagian Dokumen, fokus tujuan dan browser Back mempertahankan navigasi tanpa request tambahan. Header/workflow/form/data workspace di luar navigasi byte-identik. Dua tes MySQL disposable67asersi lulus: proyeksi workspace/sumber enam role, serta cut-off stok approved menolak gerakan backdate baru sambil menerima retry idempoten. DB disposable dihapus dan server milikrun shutdown.
+
+Runner kanonik membuktikan backup terenkripsi/restore disposable73tabel10file28migrasi sebelum promosi;runtime tiga file dan CSS publik cocok exact source. Kedua Change Log diperbarui dan dibaca ulang. Backend/schema/auth/angka/format ekspor/PDF tidak berubah; laporan/PDF tidak diuji ulang karena delta terbatas navigasi. UI03/UI09 parsial tanpa ID36 penuh baru. Seluruh36 pada satu kandidat, review visual Andreas, Owner browser, HP fisik, screenreader,zoom200,UAT dan PILOT_READY tetap terbuka. Demo publik terpisah dari staging atau aktivasi pilot. [Buka daftar proyek lalu Workspace](https://arkarupa-dashboard.vercel.app/proyek).
+
 ## 2026-11-20 - Arkarupa: histori harga monokrom dan pencarian lokal
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `dc80860dc3806e615c38572be84a0c100c3c8ee0` menerapkan histori harga monokrom dengan tanggal, jenis sumber, wilayah dan catatan terpisah dari nominal. Label13px/nilai14px; Asumsi demo dijelaskan tanpa klaim verifikasi. Metadata kosong ditandai, nilai nol dan URL sumber dipertahankan. Jumlah hasil memakai lencana hitam dan total bukti harga tetap terbaca. Holsite, Plus Jakarta Sans dan reduced motion dipertahankan.
