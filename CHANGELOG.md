@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-21 - Arkarupa: kontras filter BUP dan jumlah hasil
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `8f934293461e62a95dffaa973081cf02fd3f89c3` memperbaiki teks filter BUP aktif dari#383838diatas#171717(kontras1,53:1) menjadi putih pada latar netralyangsama(17,93:1). Filter inaktif11,73:1 dipertahankan. Monokrom,Plus Jakarta Sans,layoutHolsite,reduced motion danSVGoriginal tetap. Ringkasan menampilkan jumlah tampildaritotalpaginator serta status aktif,menggunakan rolestatus/polite/atomic danterhubung kenav untukfeedbacksetelah hasilberubah. Tidak menambah query bisnis,nilai atau notifikasi palsu.
+
+30actualBladefilterleaf5status/0/1/20dari61 pada6viewport-motion lulus textcontrastmin4,5/count/keyboard/nooverflow/zeroPOST;ini fixtureDOM,bukanserverHTTPapplokal.50baseline+50after publik PM/Pelaksana pada5statusx5kondisi(320/390/900/1440reduce+390normal) lulus count terikat agregatreadonlyfixture,statuspressed/URLrefresh,metadata/aksi exact danzeroPOST. Label/targetWiretetap. PengumumanATdipersiapkanmelaluimarkup;screenreaderfisik belum diuji.
+
+Dua tes MySQLdisposable46asersi lulus Livewirefilter/count/reasonpreserved/statuslaporanimmutable/roleview danstockcutoff/openingquantity yangmenolakfuturemovement/costposting. PercobaanawalfullpagePHPmenangkapsyntaxinline@phpyangtidakmunculpadafixtureleaf;digantiblockPHPmultiline,laluduaSQLdiulangDBbaruPASS. Failureproofretained,tanpapelemahanassertion. OwnedtmpD/DBfreshguarded,dropped/serverMySQLshutdown/ownedsessionsremoved. Backend/schema/auth/rumus/formatPDFCSV tidakberubah;laporan/PDF/ekspor tidakterdampak/tidakdiujiulang. Test source termasukcommit tetapi tidakdipaketkan keruntime sesuaiallowlistrunner.
+
+Backupencrypted/restoredisposable73tables10files28migrasi/promosi/runtime3file/CSSpublicexact lulus. KeduaChangeLogditulis/dibacaulang,riwayatdipertahankan. UI04.4/UI09 tetapPASS_SUBSET,bukan36/36atau levelvisualbaru. Ownerbrowser/HPfisik/screenreader/zoom200/reviewAndreas/staging/UAT/proyekpilotnyata/PILOT_READY OPEN. Demo statis tidak berubah. Berikutnya cek kontras seri/legenda DashboardUI01.3 danlanjutkonsolidasi matriks. [Filter BUP](https://arkarupa-dashboard.vercel.app/lapangan?project=2&stage=harian#field-report-list-heading).
+
 ## 2026-11-21 - Arkarupa: alasan review dan kembali ke BUP
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `238f01aee7391b61c72b0d2e354cf2c968722f03` memberi panel monokrom pada alasan review danpetunjuk penolakan minimal5karakter sesuai service existing. Isi alasan review mengingat bookmark laporan sebagai string agar ID18digit tidak kehilangan presisi. Tautan Kembali ke laporan menavigasi native hash/fokus heading asal sambil mempertahankan isian. Bookmark ini untuk navigasi;tidak mengubah ID laporan pada tindakan server. Target tidak ditemukan membatalkan hash,fokus ke filter danpesan lokal tanpa menghapus alasan. Event status BUP berubah membersihkan bookmark/pesan. Monokrom,Plus Jakarta Sans,Holsite,reduced motion danSVGoriginal tetap.
