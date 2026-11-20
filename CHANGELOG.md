@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-20 - Arkarupa: progres ruangan terverifikasi setelah koreksi fixture
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `22372f5abf076a39ecfdea83c8531c6118237c17` menerbitkan fitur WIP progres ruangan yang sebelumnya tertahan. PIC,rentang rencana,pembaruan terverifikasi danrencana percut-off kini menjadi empat fakta berlabel13px/nilai14px. Tautan kembali kedaftar hanya muncul pada multiruangan;anchor native menggantikan handler fokus tertunda agar klik modifier tidak merebut fokus. Monokrom,PlusJakartaSans,reducedmotion,nilai/meter serta izin tetap.
+
+Verifikasi mempertahankan SHAfiturWIPa154fdd sampai24kasus sesudah+24baseline lulus,termasuk20ruangan/320px,nama panjang escaped,null/legacy,Enter/fokus44px,Ctrl/Meta,nilai/meter/aksi exact danzeroPOST/nooverflow. Satu-satunya koreksi input adalah hostQA min-width0/max-width100%;asersi tidak diubah. SetelahPASS,hanya entriChangeLog ditambah pada kandidatfinal danhashfitur tetap sama.12browser publik PM dua proyek (satu kosong dan satu dengan2ruangan) lulus zeroPOST serta rekonsiliasi seluruh metadata/meter/tombol. Catatanrun19.35yangsebelumnyalokal ikutditerbitkan.
+
+Dua OperationsTest baru/16asersi MySQLdisposable lulus:bobotkontrak tiga pekerjaan menghasilkan42,5%,riwayatreviewBUP terlihatbagi penulis/reviewer,alasan wajib danFinance tidak melihat riwayat. Database dibersihkan danserver milikrun dihentikan. Bukti8fragment fullBlade/3tes66asersi dari runsebelumnya direuse denganhashfitur sama,bukan diklaimtesbaru. Backend/schema/PDF/CSV tidak berubah atau diujiulang penuh. Seluruh36,semuarole/HPfisik/pembacalayardanreviewAndreas/PILOT_READY tetapOPEN. HostedCI/fullsuite tidakdijalankan. [Buka progres ruangan](https://arkarupa-dashboard.vercel.app/lapangan?stage=progres#field-room-navigation).
+
 ## 2026-11-20 - Arkarupa: kandidat progres ruangan menunggu verifikasi fixture
 
 **CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / QA_BLOCKED / NOT_BUSINESS_READY.** Kandidat lokal `a154fddeec22726998a49d42223033753c553ac5` memisahkan PIC, rentang rencana, pembaruan terverifikasi dan rencana per cut-off menjadi empat fakta berlabel13/14px. Tautan kembali ke daftar hanya muncul pada multiruangan; anchor native menggantikan handler fokus yang tertunda. Monokrom, Plus Jakarta Sans, nilai dan izin tetap. Ini belum tersedia di demo publik.
