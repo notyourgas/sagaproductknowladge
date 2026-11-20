@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-11-20 - Arkarupa: metadata pekerjaan dan penerimaan upah per divisi
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `36cbc1cc02934a6976f443687ac2f9eed9c36570` memperbesar metadata proyek/PIC dan tanggal pekerjaan menjadi13px,label pencarian14px pada Dashboard/Workspace. Tautan Ke awal daftar mengembalikan fokus ke heading tanpa request atau mengubah filter/halaman.18fixture actualBlade dan24browser publik PM/Finance lulus terfokus;judul,PIC,tanggal,jumlah,URL danform tetap. Monokrom,Holsite,Plus Jakarta Sans dan reduced motion dipertahankan.
+
+UI-07.2 diverifikasi ulang secara engineering pada database MySQL disposable: satu mandor dengan dua penugasan,alokasi parsial/lunas tetap terkait divisi,filter/search/sort/reset/pergantian proyek,tanggal/bukti/snapshot sumber. Dua skenario/115asersi dan18kartu UI tersanitasi untuk semua/belum-lunas/lunas lulus. QA pembayaranupah juga membuktikan approval idempotent,penolakan lebihbayar dan pembalikan tanpa biaya ganda. Database disposable dihapus,proses MySQL milik run dihentikan;data publik tidak diubah. UI-04.3/UI-05.3 source-bound;29/36 tetap historis,seluruh36/visualreviewAndreas/UATmanusia/HPfisik/PILOT_READY tetap terbuka. Aturan konversi OH/proyek nyata tidak disahkan oleh fixture ini. HostedCI/fullsuite tidak dijalankan. [Pekerjaan berikutnya demo](https://arkarupa-dashboard.vercel.app/workspace#project-tasks).
+
+
 ## 2026-11-20 - Arkarupa: indeks dokumen dan kembali ke pencarian
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1563908fe1ceda1567c63e0ddf04a3fa591bdb8e` memperjelas jenis,jumlah dan nomor sumber pada indeks dokumen bersama Dashboard/Workspace memakai kartu monokrom,jumlah tabular serta judul15px/badge14px. Tautan footer Ubah pencarian mengembalikan fokus ke input tanpa request atau menghapus isi.18fixture actualBlade dan24browser publik PM/Finance di dua halaman lulus terfokus;label/status/tanggal/URL,form dan izin tetap. Layout Holsite dan Plus Jakarta Sans dipertahankan.
