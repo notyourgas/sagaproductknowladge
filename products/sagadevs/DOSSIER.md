@@ -1,5 +1,17 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-21 - Arkarupa: status sumber dan pintasan periode
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `7836ec98912812b6a59a3e2db1a85ff39f8fc86b` mengganti singkatan N/A pada KPI tanpa sumber menjadi Belum tersedia14px monokrom. Nominal nol tetap Rp0, nilai penuh/aria/title/rumus dan alasan sumber tidak berubah. Label yang belum tersedia dibedakan dari angka, termasuk empat kartu utama dan metrik sekunder. Holsite, Plus Jakarta Sans, SVG original dan reduced motion tetap.
+
+Pintasan Ubah periode tersedia langsung di samping tanggal hasil. Pintasan memakai alur filter lama yang teruji; fokus ke tanggal awal, draf dipertahankan, tidak menerapkan filter atau mengirim request bisnis. Tanggal hasil tetap berasal dari report sampai pengguna menerapkan perubahan.54 skenario lokal actual Blade(context18/KPI18/tiga pintu18) pada320/390/768/900/1440 dan390normal lulus termasuk kosong/nol/nominal besar,nama panjang escaped,grid4x1atau2x2,14px/44px,draf,Escape/Tutup/fokusSummary,nooverflow/zeroRPC.24 baseline+24 publik PM/Finance portfolio/proyek lulus:72 pintu buka filter setelah rilis, nilai sumber dan periode tetap. UI01.1 lulus ulang engineering pada kandidat ini;Owner browser dan review visual manusia tetap terpisah.
+
+Diagnosis read-only atas refactor filter tertunda memastikan root/event/ref benar dan summary menerima fokus. Kegagalan lama berasal dari hit-test yang menuntut nodeSummary padahal titik tersebut mengenaiSpan anak yang sah. Refactor opsional dibatalkan, tidak dipulihkan ke source atau dianggap perlu untuk alur publik lama yang sehat. Pemeriksaan baru mengharuskan fokus/viewport dan hit pada target atau turunannya;asersi nilai dan request tetap.
+
+Dua tes MySQL disposable39asersi lulus konversi material/harga proyek/satuan pembelian dan AHSP unit OJ/hari/lembar/batang ke estimasi,snapshotPDF serta respons unduh. Tidak mengklaim parsing ulang PDF biner terpisah. Database disposable dihapus/server milikrun shutdown. Backend/schema/auth/rumus/ekspor tetap. Runner kanonik membuktikan encrypted backup/restore disposable73tabel10file28migrasi sebelum promosi;runtime4file/CSSpublikexact. Kedua Change Log diperbarui dan dibaca ulang.
+
+Akses browser Owner masih terbuka:entri vault terkait demo belum memuat password login;tidak ada perubahan akun/password/vault atau unlock ulang. Seluruh36 pada satu kandidat,visualAndreas,Ownerbrowser,HP fisik,screenreader,zoom200,UAT dan PILOT_READY belum disahkan.29/36 historis bukan skor seluruh kandidat ini. Demo statis tidak berubah. [Buka Dashboard Utama](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-21 - Arkarupa: konteks hasil Dashboard terlihat
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `d436cd7dffc51c79c5091cf35dc415f297501c9e` menampilkan nama proyek atau seluruh proyek dalam akses serta periode hasil di atas KPI, meski filter tertutup. Label13px/nilai14px monokrom, Filter14px, tanggal dari hasil report dan penjelasan saldo kumulatif tetap terpisah. Draf tanggal yang belum diterapkan tidak dinyatakan sebagai periode hasil. Holsite, Plus Jakarta Sans, SVG original dan reduced motion dipertahankan.
