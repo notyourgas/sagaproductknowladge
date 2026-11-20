@@ -1,5 +1,12 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-20 - Arkarupa: indeks dokumen dan kembali ke pencarian
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1563908fe1ceda1567c63e0ddf04a3fa591bdb8e` memperjelas jenis,jumlah dan nomor sumber pada indeks dokumen bersama Dashboard/Workspace memakai kartu monokrom,jumlah tabular serta judul15px/badge14px. Tautan footer Ubah pencarian mengembalikan fokus ke input tanpa request atau menghapus isi.18fixture actualBlade dan24browser publik PM/Finance di dua halaman lulus terfokus;label/status/tanggal/URL,form dan izin tetap. Layout Holsite dan Plus Jakarta Sans dipertahankan.
+
+Tiga Feature test/65asersi pada MySQL disposable lulus:AHSP satuan unit/set mengalir ke RAP,PDF dan progres lapangan;indeks dokumen menjaga paginasi,karakter literal pencarian serta batas peran/proyek. Dua PDF hasil render yang tersisa terbaca sebagai PDF1halaman. Fixture/storage terisolasi,database disposable dihapus dan proses MySQL milik run dihentikan. Tidak mengubah data publik. Hipotesis perbaikan Escape tidak diterapkan karena native Chrome sudah membersihkan state;perilaku pencarian/debounce tetap. UI-04.3/UI-05.3 source-bound,seluruh36/UATmanusia/reviewAndreas/HPfisik/PILOT_READY tetap terbuka. HostedCI/fullsuite tidak dijalankan. [Indeks dokumen demo](https://arkarupa-dashboard.vercel.app/workspace#project-documents).
+
+
 ## 2026-11-20 - Arkarupa: antrean review workspace dan navigasi monokrom
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `6a774cce8348a0fd4644c21de4c009e6d69622e3` memisahkan label dan hitungan antrean review dalam kartu monokrom. Tautan Review pada navigasi bagian menuju heading dengan fokus terlihat; hanya tampil bila antrean existing tersedia. Sumber jumlah,role,URL,form dan data tetap.18fixture kosong/satu/banyak-nama-panjang,12kasus shell/Alpine lokal dan24kasus browser publik PM/Finance lulus terfokus. Layout Holsite,Plus Jakarta Sans dan reduced motion dipertahankan.
