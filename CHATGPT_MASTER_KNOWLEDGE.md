@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-20 - Arkarupa: kandidat progres ruangan menunggu verifikasi fixture
+
+**CONFIRMED / IMPLEMENTED_NOT_DEPLOYED / QA_BLOCKED / NOT_BUSINESS_READY.** Kandidat lokal `a154fddeec22726998a49d42223033753c553ac5` memisahkan PIC, rentang rencana, pembaruan terverifikasi dan rencana per cut-off menjadi empat fakta berlabel13/14px. Tautan kembali ke daftar hanya muncul pada multiruangan; anchor native menggantikan handler fokus yang tertunda. Monokrom, Plus Jakarta Sans, nilai dan izin tetap. Ini belum tersedia di demo publik.
+
+Tiga tes MySQL disposable/66 asersi lulus untuk identitas ruangan disepakati, volume verified, pemulihan cut-off dan verifikasi terlambat serta render UI. Database disposable dihapus dan proses milik run dihentikan. Browser menyelesaikan24baseline dan18dari24kasus sesudah; kasus20ruangan pada320px tertahan pada visibility. Diagnosis: fokus sudah benar, tetapi host fixture/nav melebar8243px. Eksperimen layout terpisah membatasi host menjadi288px; hasil ini bukan kelulusan gate. Setelah dua putaran koreksi, kandidat tidak dipromosikan. PIC QA/Frontend perlu memperbaiki constraint host dan mengulang matriks pada kandidat yang sama, dengan asersi tetap.
+
+Demo tetap memakai `873bc96d3ef3465e666b949bd5dd6430ca844f90`, telah diperiksa pada12skenario baca dua proyek dengan FPM aktif. Backend/schema/rumus dan demo statis tidak berubah; tidak ada deployment aplikasi baru pada run ini. Entri Change Log terbaru berada pada kandidat lokal dan jadwal, belum diterbitkan di demo. Seluruh36, review Andreas, pembaca layar/ponsel fisik dan PILOT_READY tetap terbuka. [Buka progres demo terakhir](https://arkarupa-dashboard.vercel.app/lapangan?stage=progres).
+
 ## 2026-11-20 - Arkarupa: indeks barang pada draf nota
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `873bc96d3ef3465e666b949bd5dd6430ca844f90` menampilkan jumlah baris13px dan legenda barang14px pada editor nota. Indeks horizontal Barang1dst muncul ketika lebih dari satu baris;tautan native memfokuskan isian nama menggunakan key aktual,termasuk indeks berlubang,setelah penghapusan. Tidak menyimpan atau mengubah jumlah/harga. Monokrom,PlusJakartaSans,reducedmotion danbatas24baris tetap.24fixture actualfullBlade+24baseline kosong/satu/sparse0-4-9/maks24 pada6viewport/motion lulus;target44px,fokus,nilai,total/URLexisting tetap,nooverflow/POST. Native input fixture dihidrasi dari data sintetis tanpa event setelah snapshot dikeluarkan.6browser publik PM menambah satu baris dengan methodexisting yang hanya mengubah stateform;Enter/click indeks menjaga semuaisian dengan0RPCtambahan,tanpamemanggilsimpan/upload.
