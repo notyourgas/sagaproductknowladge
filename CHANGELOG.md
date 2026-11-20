@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-20 - Arkarupa: status draf berbagi dan pintasan daftar foto
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `980c330dbd6fb3d5b1297b5295b03ca86e7a1d24` memperjelas pilihan keuangan pada formulir Portal dengan label monokrom “Draf · Disertakan/Tidak disertakan”. Label mengikuti checkbox dan tidak menyatakan laporan sudah terbit. Pintasan sebelum daftar foto menuju pilihan berbagi dengan fokus keyboard; judul dan pilihan foto tetap, tanpa menyimpan atau menerbitkan. Komposisi Holsite, Plus Jakarta Sans, palet netral, reduced motion, checkbox deferred, cut-off dan hak akses dipertahankan.
+
+24 fixture +24 baseline Blade (0/1/3/50 foto; 320–1440 px, reduced/normal motion) dan12 baseline +12 publik PM/Finance lulus: status13px, target44px, fokus native, draf tetap, zeroPOST setelah login, tanpa overflow. Finance tidak melihat editor. Dua tes MySQL disposable/197 asersi memverifikasi progres terverifikasi/foto terpilih/klien ditugaskan dan penutupan dengan reviewer berbeda serta penolakan sumber stale. Database disposable dibersihkan; backend/schema/rumus/format PDF/ekspor tidak berubah. PDF publik/hostedCI/full suite tidak diulang.
+
+REV-012/UI-03/UI-09 tetap parsial; tidak ada ID36 penuh baru ditutup. Seluruh36 pada satu kandidat, HP fisik, Owner browser, screenreader, zoom200, review Andreas dan PILOT_READY masih terbuka. Kedua Change Log dipertahankan dan dibaca ulang. [Buka pilihan berbagi Portal](https://arkarupa-dashboard.vercel.app/workspace#client-report-sharing).
+
 ## 2026-11-20 - Arkarupa: cut-off laporan dengan acuan workspace
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `235c100eeb3772ef617d48ba34760b2ff6e6e66b` menampilkanacuan cut-off workspace13/14px di dekatinputlaporanPortalKlien. TombolGunakan cut-off workspace mengisitanggal draf melalui1RPCexisting,mempertahankanjudul danmengosongkanpilihanfoto mengikutiaturanexisting;inputtanggal mendapatfokus. Saat tanggal sama,statusSama denganworkspace menggantikanbutton. Monokrom,PlusJakartaSans,gradien,reducedmotion,defaulttanggal/Gate/validasi tetap;tindakan tidakmenerbitkanlaporan.
