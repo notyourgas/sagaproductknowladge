@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-21 - Arkarupa: hierarki dan pintasan Dashboard
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `27d8cf462dc6c8423de205dbde9dc2362023c61f` membesarkan label antrean Dashboard dari12 menjadi14px, metadata proyek13px dan kondisi kosong14px. Judul Posisi proyek17px kini terlihat. Navigasi pintas membawa pengguna langsung ke Posisi proyek, Ke status proyek dan Pekerjaan; Dokumen tersedia bila konteks proyek dipilih. Palet putih/abu/hitam, Holsite, Plus Jakarta Sans, SVG original dan reduced motion tetap. Tidak ada grafik atau notifikasi tambahan.
+
+Pintasan native mempertahankan query proyek/periode serta browser Back, berukuran minimal44px dan tanpa request bisnis. Setelah fokus, tujuan digulir ke awal sehingga judul Dokumen yang panjang tetap terlihat. Tautan Ke status proyek juga memulihkan affordance yang diharapkan pengujian peran pelaksana.
+
+30 skenario lokal actual Blade(review18+nav12) dan18reviewbaseline kosong/satu/10panjang-escaped/3atau4tujuan pada320/390/768/900/1440 dan390normal lulus tipografi,target44px,Enter/Back,fokus-visible,querytetap,noRPC/nooverflow.24 baseline+24 publik PM/Finance portfolio/proyek lulus;nilai KPI,antrean,kas,progres dan tautan sumber cocok sebelum/sesudah. Kegagalan awal fokus native pada section tinggi disimpan dan diperbaiki tanpa melonggarkan asersi.
+
+Dua tes keuangan MySQL disposable68asersi lulus rekonsiliasi kas/nonkas/APAR/aging/periode/biaya, pagination, baseline belum tersedia, pengecualian review pengajuan sendiri, izin Livewire serta isolasi perusahaan/keanggotaan. DB disposable dihapus dan server milikrun shutdown. Backend/schema/auth/form/angka/format ekspor/PDF tidak berubah; laporan/PDF tidak diuji ulang pada delta navigasi ini. Runner kanonik membuktikan encrypted backup/restore disposable73tabel10file28migrasi sebelum promosi;runtime4file dan CSS publik cocok exact source. Kedua Change Log diperbarui dan dibaca ulang.
+
+UI01/UI03/UI09 parsial, tanpa ID36 penuh baru. Seluruh36 pada satu kandidat, review visual Andreas, Owner browser, HP fisik, screenreader,zoom200,UAT dan PILOT_READY tetap terbuka. Demo publik terpisah dari staging dan aktivasi pilot. [Buka Dashboard Utama](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-20 - Arkarupa: semua bagian workspace pada HP
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `eb9d68f883bd3b706ae38e3c898cf4b9d978cbe5` membesarkan label navigasi bagian workspace dari12 menjadi14px. Tombol Semua bagian pada lebar di bawah900px menampilkan semua tujuan dalam dua kolom; Ringkas bagian kembali ke baris yang dapat digeser. Penanda aktif monokrom, nama/href bagian, akses per role dan keyboard Arrow/Home/End dipertahankan. Tidak ada request atau mutasi data dari buka/ringkas. Holsite, Plus Jakarta Sans, SVG original dan reduced motion tetap.
