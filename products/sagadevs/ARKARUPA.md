@@ -1,5 +1,11 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-20 - Arkarupa: ringkasan validasi dan pemulihan isian pertama
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `2783bfd5263b36fefb3d22a2576acaefb65fea1f` memperjelas jumlah bagian bermasalah melalui lencana monokrom13px dan pesan14px. Tombol Ke isian pertama hanya tampil bila resolver existing menemukan input terkait; Enter/Space membawa fokus tanpa mengubah draf atau mengirim aksi bisnis.24fixture actualBlade+24baseline meliputi kosong,mapped,mixed/unmapped dan pesan panjang escaped.12browser Dashboard PM/Finance membuktikan validasi tanggal melalui applyFilters yang hanya membaca; aksi fokus tidak menambah RPC, nilai tanggal/proyek tetap.
+
+Dua Featuretest/26asersi MySQL disposable lulus: serverdraft pulih tanpa submission, konflik revisi dan isolasi role ditolak; validasi lapangan mempertahankan volume/catatan gagal lalu koreksi menyimpan satu draf. Database disposable dihapus dan proses milikrun dihentikan. Guard draf/offline/request dan field mapper identik di luar dua blok UI baru. Pemicu18.01WIB ditunda karena run17.46 masih aktif dan dicatat pada kedua Change Log. UI-04.3/UI-05.3/UI-07.2 source-bound; seluruh36,reviewAndreas,UATmanusia/HPfisik danPILOT_READY tetap terbuka. HostedCI/fullsuite tidak dijalankan. [Buka Dashboard dan Filter](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-20 - Arkarupa: keterbacaan sumber biaya dan kembali ke ringkasan
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `adb159a6de1e09894552677af03902210d9018eb` memisahkan nominal actual18px dari identitas sumber14px,tanggal/RAP13px dan deskripsi14px pada kartu sumber biaya Pengadaan. Monokrom,Plus Jakarta Sans,gradien dan sumber nilai tetap. Dari akhir rincian,tautan native Kembali ke ringkasan biaya membawa fokus ke nominal actual tanpa POST,menjaga proyek/stage dan mendukung Back.18fixture actualBlade+18baseline kosong/nol/20baris/negative/nominal20digit/deskripsi panjang escaped,serta24browser PM/Finance pada dua proyek lulus terfokus.
