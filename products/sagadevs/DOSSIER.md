@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-20 - Arkarupa: tahap workspace lebih terbaca dan navigasi kembali
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `3cf6a2996265a6c58d19c61ee36b04078b48d70a` memperjelas kartu tahap workspace denganjudul15px/keterangan13px,paletmonokrom,PlusJakartaSans,SVGoriginal danreducedmotion tetap. Tahapproyek menjadi tujuanpertama navigasibagian;tautan setelahdaftarpekerjaan memfokuskan navtahap menggunakananchor native. Home/Enter pada navigasi menuju alur yangsama,tanpaRPC;role,URL,cutoff danangka tidakberubah.
+
+24fixture+24baseline memakai8fragmentactualBlade dari4role dan komponentugas0/1/12/24hasil padaenamkondisi320-1440px/motion. Font,fokus44/outline2,anchor/navHomeEnter,roleURLsexact,zeroPOST/nooverflow lulus. Asetfixtureoffline dipetakankebyteSVGoriginalyangsama danassertloaded;tidakadaassetprodukbaru.12baseline+12publikPMFinance2proyek pada320reduced/390normal/1440reduced lulus dengancutoffhistoris15November:angka/URL/stagecards/projek tetap.
+
+Tiga tes111asersi MySQLdisposable lulus:1renderfixtureUI,2integrasi AHSP/RAP/BUPverified/baselinehistoris danstokopname. FixtureRAP2499120/penawaran2749032,verified50%/rencana40%,pembayaran400rb/sisa600rb tetap terpisahdariprogresfisik. Opname membedakantercatat60/fisik58,25(selisih-1,75) dari8,125tanpariwayat;CSVCLI mengembalikan statuscocok/selisih/inputinvalid tanpa postinginventory/kas. Backend/schema/auth/PDF/CSV/SVG tidakdiubah;PDFpublik/HostedCI/fullsuite tidakdiulang. UI03/UI09.2/UI09.3 tetapparsial,tanpaIDpenuhbaruditutup;29/36historis bukanpersentasekandidatbaru/skordesain. Seluruh36/HPfisik/screenreader/Ownerbrowser/reviewAndreas/PILOT_READY tetapOPEN. [Buka tahap workspace](https://arkarupa-dashboard.vercel.app/workspace#workspace-workflow).
+
 ## 2026-11-20 - Arkarupa: catatan modul inline dengan disclosure native
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `14078117bbfb7e5cd5058f1c24c00c29cef12723` menampilkan Catatan sumber & approval sebagai panel inline monokrom di konteksmodul,ringkasan13px/isi14px menggantikan dialoglayarpenuh untuk satuparagrafpanduan. Enter/Space/click membuka atau menutup;Escape menutupdanmemulihkan fokusringkasan,tanpaoverlay/POST. Deskripsi,proyek,stage danaksi tetap. PlusJakartaSans,komposisiHolsite danreducedmotion dipertahankan;tidakadaasetbaru.
