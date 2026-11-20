@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-11-20 - Arkarupa: identitas PDF dan navigasi hasil Pustaka
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `feeb6d3565940fa65bbf880ea459650423c07f9e` memperjelas nomor PDF dengan label13px/nilai15px dan penanda fokus monokrom. Tombol Ke PDF pertama yang cocok membawa fokus ke tautan unduhan hasil terlihat teratas, tanpa mengunduh atau request. Pencarian trim/casefold/reset, nomor/tautan/proyek/hak akses, Holsite, Plus Jakarta Sans dan reduced motion tetap.
+
+24 fixture +24 baseline scoped Blade0/1/3/50longEscaped, enam kondisi320–1440/reduced-normal, lulus13/15px/44px/fokus hasil/URL sama/reset/zeroPOST/noDownload/nooverflow. Progress card tidak berubah dan diomit dari fixture.12 baseline +12 publik PM/Finance pada dua proyek lulus; proyek pertama kosong, proyek kedua satuPDF sehingga enam kasus fokus positif diverifikasi. Tiga tes MySQL disposable/53 asersi lulus: lingkup library dua role/dua proyek/foreign deny; pembalikan pemakaian stok idempotent/histori; landed offer split rounding dan PDF PO privat immutable. Database disposable dibersihkan; backend/schema/izin/rumus/format PDF tetap. PDF baru tidak diterbitkan di publik.
+
+UI08.3/UI09 parsial, tanpa ID36 penuh baru. Seluruh36 pada satu kandidat, Owner browser, HP fisik, screenreader, zoom200, review Andreas dan PILOT_READY terbuka. Kedua Change Log dipertahankan dan dibaca ulang. [Buka Pustaka Laporan](https://arkarupa-dashboard.vercel.app/pustaka-laporan#ark-library-document-search).
+
 ## 2026-11-20 - Arkarupa: riwayat serah terima dan pemulihan checklist
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1dfd3166730d279b3bddb97bc0af93a5b8a2347a` memisahkan versi/status, tanggal/PIC/retensi, bukti, kewajiban dan catatan review dalam kartu riwayat monokrom. Metadata berlabel13px/nilai14px; retensi/review kosong dinyatakan jelas dan catatan bernilai0 tetap tampil. Peringatan sumber berubah dipertahankan. Riwayat kosong kini dijelaskan; pintasan dari catatan atau kondisi kosong membawa fokus ke checklist sumber tanpa request. Komposisi Holsite, Plus Jakarta Sans, reduced motion dan aturan Owner/non-self/submitted/snapshot tetap; guard dan tombol review byte-identik.
