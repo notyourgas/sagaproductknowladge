@@ -1,5 +1,13 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-20 - Arkarupa: cut-off laporan dengan acuan workspace
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `235c100eeb3772ef617d48ba34760b2ff6e6e66b` menampilkanacuan cut-off workspace13/14px di dekatinputlaporanPortalKlien. TombolGunakan cut-off workspace mengisitanggal draf melalui1RPCexisting,mempertahankanjudul danmengosongkanpilihanfoto mengikutiaturanexisting;inputtanggal mendapatfokus. Saat tanggal sama,statusSama denganworkspace menggantikanbutton. Monokrom,PlusJakartaSans,gradien,reducedmotion,defaulttanggal/Gate/validasi tetap;tindakan tidakmenerbitkanlaporan.
+
+24fixture+24baseline8Bladeequal/historical/emptyDraft/crossMonth pada6kondisi320-1440/motion luluscontext13/date14/focus44/action/inputconstraintsexact/nooverflow. Wireactiondilepashanyauntukfixturefocus;actualsetterdibuktikanPHPtestdanpublik.12baseline+12publikPMFinance2proyek lulus:enamPMcase1RPCdraft(tanggalmanualsebelum/tombolsesudah),enamFinanceeditorhidden0RPC. Judul/cutoff/photoCountstate akhir sama,tanpapublish. Harnessmemakaipolaendpointfingerprintedrunnerexisting sesuaidokumentasilokal,setelahguardawal belum mengenalinya;payloadtetapdibatasidraft. Penandamethod$settanpaparameter diterimahanyajikaupdatecutoffpersisnilaifixture,terkonfirmasidariimplementasilibrarylokal;kodekandidat tidakdiubah.
+
+3tes82asersiMySQLdisposable lulus:newdraftrecoverytitle/photoreset/emptydate dan2integrasiexisting(budget/progress/stock/wages/cash/clientexport serta latest-reportinvoicePDFscope/fileintegrity). DBdropped/ownedservershutdown. Backend/schema/auth/PDF/CSV tidakdiubah;PDFpublik/HostedCI/fullsuite tidakdiulang. REV012/UI03.2/UI09 danQAUI05.4 tetapparsial,tanpaIDpenuhbaruditutup;29/36historis bukanskorvisual/persentasekandidatbaru. Seluruh36/HPfisik/screenreader/Ownerbrowser/reviewAndreas/PILOT_READY tetapOPEN. [Buka acuan cut-off laporan](https://arkarupa-dashboard.vercel.app/workspace?cutoff=2026-11-15#portal-workspace-cutoff-context).
+
 ## 2026-11-20 - Arkarupa: pencarian lokal foto Portal Klien
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0f7674b1f89385a11be1731cd9aa6bc4ca25cfe4` memperjelas pilihanfotoPortalKlien denganlokasi14px/tanggal13px,paletmonokrom,PlusJakartaSans danreducedmotion tetap. Pencarianlokasi/tanggal trim-casefold menampilkanjumlahhasil danpilihan. Foto tersembunyi olehfilter tetapdipilih,Enter tidakmengajukan,Escape/reset memulihkanfokus. Tidakadapilihsemua/publikasiotomatis;Gate/cutoffreset/validasi/backend tetap. Daftar dipisahmenjadipartialdi dalamauthboundaryyangsama;wirekeyfoto daneventsyncUIexisting menjagafilter/count setelahmorph.
