@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-20 - Arkarupa: pemilih monokrom dan keyboard
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `e431bda39730810a86d4f171000b49d08e6043e7` memperjelas pemilih bersama dengan lencana netral13px untuk jumlah pilihan cocok. ArrowDown dari pencarian serta ArrowUp/Down/Home/End memindahkan fokus dan melewati opsi disabled; nilai baru dipilih secara eksplisit dengan Enter. Escape menutup dan memulihkan fokus. Palet putih-abu-hitam mengikuti arahan Andreas; Plus Jakarta Sans dan reduced motion tetap.18fixture actual Blade+18baseline mencakup kosong,3/20opsi panjang escaped dan alias pada6kondisi viewport/motion;12browser publik PM/Finance lulus tanpa POST atau perubahan nilai/form.
+
+Dua Featuretest/17asersi pada MySQL disposable lulus untuk konversi pack/pembulatan/penolakan unit tak kompatibel serta isolasi katalog dan izin role. Database disposable dihapus dan server milik run dihentikan. Backend/formula/PDF/CSV tidak diubah atau diklaim diuji penuh. Ini subset UI-09.1/UI-09.2; seluruh36, review desain Andreas, pembaca layar, HP fisik dan PILOT_READY tetap terbuka. HostedCI/fullsuite tidak dijalankan. [Buka Kalkulator](https://arkarupa-dashboard.vercel.app/kalkulator).
+
 ## 2026-11-20 - Arkarupa: status draf dan panduan pemulihan
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `6e0281f6a6a5c83e62cd3ed2d9538ff3c2596db9` memisahkan judul Draf teks14px dari status13px dan memperjelas catatan pemilihan ulang foto dengan batas netral. Disclosure native Apa yang tersimpan otomatis? menjelaskan bahwa pemulihan teks belum mengajukan dokumen dan foto harus dipilih ulang.24fixture actualBlade+24baseline idle/available xphoto/noPhoto termasuk timestamp panjang escaped lulus;12browser PM pada dua proyek forecast serta2pemeriksaan Finance editor-absence lulus. Buka/tutup Enter/Space mempertahankan fokus, nilai,status,revisi dan tombol restore tanpa POST. Holsite,monokrom,Plus Jakarta Sans dan reduced motion tetap.
