@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-20 - Arkarupa: konfirmasi manual dan konteks penutupan
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `4d30dcaef4d05e7946b8cd9c52f62a930c5b2f73` membedakan Konfirmasi manual dari Perlu ditinjau melalui batas putus-putus netral dan label13px. Catatan tanggal menjelaskan checklist memakai sumber terkini; cut-off progres historis pada header tidak mengubah checklist tersebut. Tautan Ke konfirmasi manual membawa fokus ke syarat manual pertama tanpa request atau perubahan status.18fixture actualBlade kosong/tanpa-manual/mixed true-false-null dan24browser PM/Finance pada proyek current/historical lulus;jumlah,syarat,tautan,form dan izin tetap. Monokrom,Holsite dan Plus Jakarta Sans dipertahankan.
+
+Dua Feature test/32asersi MySQL disposable lulus:rehearsal stock opname membedakan histori hilang dari nol tanpa posting stok,serta serah terima harus direview Owner lain dengan penolakan sumber stale/self-review dan tanpa menghapus saldo. Database disposable dihapus dan proses MySQL milik run dihentikan;data publik tidak diubah. UI-04.3/UI-05.3/UI-07.2 source-bound;seluruh36/reviewAndreas/UATmanusia/HPfisik/PILOT_READY tetap terbuka. HostedCI/fullsuite tidak dijalankan. [Checklist penutupan demo](https://arkarupa-dashboard.vercel.app/workspace#project-closeout).
+
+
 ## 2026-11-20 - Arkarupa: metadata pekerjaan dan penerimaan upah per divisi
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `36cbc1cc02934a6976f443687ac2f9eed9c36570` memperbesar metadata proyek/PIC dan tanggal pekerjaan menjadi13px,label pencarian14px pada Dashboard/Workspace. Tautan Ke awal daftar mengembalikan fokus ke heading tanpa request atau mengubah filter/halaman.18fixture actualBlade dan24browser publik PM/Finance lulus terfokus;judul,PIC,tanggal,jumlah,URL danform tetap. Monokrom,Holsite,Plus Jakarta Sans dan reduced motion dipertahankan.
