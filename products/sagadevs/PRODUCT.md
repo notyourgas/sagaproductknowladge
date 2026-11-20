@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-20 - Arkarupa: keterbacaan sumber biaya dan kembali ke ringkasan
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `adb159a6de1e09894552677af03902210d9018eb` memisahkan nominal actual18px dari identitas sumber14px,tanggal/RAP13px dan deskripsi14px pada kartu sumber biaya Pengadaan. Monokrom,Plus Jakarta Sans,gradien dan sumber nilai tetap. Dari akhir rincian,tautan native Kembali ke ringkasan biaya membawa fokus ke nominal actual tanpa POST,menjaga proyek/stage dan mendukung Back.18fixture actualBlade+18baseline kosong/nol/20baris/negative/nominal20digit/deskripsi panjang escaped,serta24browser PM/Finance pada dua proyek lulus terfokus.
+
+Dua existing Featuretest/20asersi pada MySQL disposable membuktikan SPK/opname satu efek,alokasi biaya langsung lintasproyek,rounding penerimaan,privatePOPDF immutable/checksum dan izin download;1PDF hasilrenderer juga terparse. Database disposable dihapus dan proses milikrun dihentikan. Rumus actual/commitment,coverage,form,role dan PDFtemplate tidak berubah;tidakada mutasi data publik. UI-04.3/UI-05.3/UI-07.2 source-bound;seluruh36,reviewvisualAndreas,UATmanusia/HPfisik/PILOT_READY tetap terbuka. Ini bukti sumberbiaya parsial,bukan penutupan alur nota dua pembayaran seluruhnya. HostedCI/fullsuite tidak dijalankan. [Buka Pengadaan - Biaya sumber](https://arkarupa-dashboard.vercel.app/pengadaan?stage=biaya).
+
 ## 2026-11-20 - Arkarupa: tampilan aktif dan navigasi keyboard modul
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0b9d935e545de2ee21f4e6a5966e062ed03dbb89` menambahkan label Tampilan aktif berukuran14px pada menu horizontal modul. ArrowLeft/Right,Home/End memindahkan fokus dan menggulir tombol ke area terlihat;Tab/ShiftTab juga membawa fokus terlihat. Memindahkan fokus tidak mengganti tampilan atau mengirim POST. Pola Holsite,monokrom,Plus Jakarta Sans,wire/action dan guarddraf tetap.24fixture actualBlade+24baseline modul3/4/5tombol serta nama panjang escaped,dan24browser publik PM/Finance pada Komersial/Keuangan lulus terfokus. Enter/Space native hanya diuji pada fixture terisolasi;konfirmasi draf publik tidak dibypass.
