@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-11-20 - Arkarupa: pilihan berbagi monokrom dan pemeriksaan dokumen
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `8403206eaebe0bac7217cd94964578ead43c2e28` memperjelas pilihan keuangan pada formulir laporan: kartu monokrom berlabel, garis tepi pada centang draf, dan tombol Periksa pilihan berbagi untuk kembali dengan keyboard. Pilihan, data, izin serta aksi penerbitan tetap;18fixture lokal dan24kasus browser publik PM/Finance lulus. Layout/navigasi Holsite dan Plus Jakarta Sans dipertahankan.
+
+QA dokumen:2Feature tests/244asersi pada MySQL disposable; rerun enam kategori174asersi untuk artefak UI tersanitasi,12PDF valid, preview/unduh versi aktif/lama dan pencabutan akses403.12kasus viewport arsip aktif/lama lulus. UI-05.3 diverifikasi engineering; UI-04.3 memakai bukti terikat source identik.29/36 tetap angka historis, seluruh36 belum diterima pada kandidat yang sama. Tidak menerbitkan fixture laporan/dokumen ke publik. Password Owner demo belum tersedia; UAT manusia/HPfisik, staging proyek nyata dan PILOT_READY tetap terbuka. HostedCI/full regression tidak dijalankan. [Dashboard demo](https://arkarupa-dashboard.vercel.app/).
+
+
 ## 2026-11-20 - Pemulihan akses SagaPOS setelah batas memori tercapai
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Proses SagaPOS mencapai batas memori 768 MiB, lalu startup berulang terhambat satu pekerjaan laporan dengan lease kedaluwarsa. Pekerjaan itu dipulihkan melalui orchestrator kanonik dan selesai pada percobaan kedua. Batas aplikasi sekarang MemoryHigh 1 GiB dan MemoryMax 1280 MiB.
