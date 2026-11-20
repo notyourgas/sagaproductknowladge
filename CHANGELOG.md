@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-21 - Arkarupa: panduan keyboard bertahap dan monokrom
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `ba30e72fced7726d9bae5a42d1ca47eb88eec52f` merapikan petunjuk keyboard pada workspace dan empat modul menjadi disclosure native Panduan keyboard, tertutup saat awal, target44px/teks14px. Klik/Enter/Space membuka; Escape menutup dan memulihkan fokus terlihat; panel terbuka dipusatkan dengan scroll instant agar tidak tertutup dock HP. Deskripsi aksesibilitas navigasi tetap tersedia saat tertutup melalui paragraf clipped di luar details. Koreksi prafreeze memindahkan deskripsi keluar karena Chrome accessibility tree kehilangan deskripsi dalam details tertutup. Tidak mengganti URL, kontrol navigasi, stage, role atau data.
+
+12fixture actualBlade dan60baseline+60after publik PM/Finance pada lima halaman/enam viewport-motion lulus textID/Chrome AXdescription exact,navcontrols exact,keyboard/fokus/panel hit,tidak overflow danzeroPOST sesudah login. Fixture lokal bukan bukti role;role dibuktikan pada halaman publik. Palet monokrom yang telah terbit dipertahankan sesuai penegasan Andreas: Holsite geometry,Plus Jakarta Sans,abu-hitam-putih,label/ikon dan pola garis grafik. Audit warna computed di60halaman workspace/modul dan12Dashboard lulus netral;ini verifikasi ulang,bukan perubahan warna baru.
+
+Dua tes MySQL disposable45asersi lulus koreksi status absensi tanpa mengubah identitas/stale revision ditolak,serta penulisan katalog dibatasi company dan role readonly ditolak. DB disposable dihapus/server owned shutdown. Tidak ada perubahan backend/schema/auth/rumus/laporan/PDF/ekspor;PDF/CSV tidak diuji ulang. Runner kanonik membuktikan backup terenkripsi/restore disposable73business tables10file28migrasi sebelum promosi;runtime4file danCSSpublic identik dengan source. Kedua Change Log diperbarui dan dibaca ulang,riwayat dipertahankan.
+
+UI-03/UI-09 subset;tidak mengklaim36/36pemeriksaan penerimaan. Seluruh matriks pada satu kandidat,review visual Andreas,Ownerbrowser,HPfisik/screenreader/zoom200,staging/UAT/proyek pilot nyata danPILOT_READY tetap terbuka. Demo statis tidak berubah. [Buka Dashboard monokrom](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-21 - Arkarupa: progres ringkas dan nilai sumber lengkap
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `d736d9ed8c8bf9ea473522b4a787baa34e6482c7` merapikan progres pada daftar Proyek dari hingga enam desimal menjadi dua desimal. Tanda perkiraan muncul hanya jika pembulatan mengubah angka: contoh43,333333→≈43,33;99,999999→≈100,00 bukan100pasti;nilai kecil positif dapat tampil≈0,00. Nol dan100exact tidak memakai tanda perkiraan;tanpa baseline tetap Belum ada baseline. Nilai mentah progress bar,max100,versi baseline,harga,tautan dan perhitungan tidak berubah. Monokrom,Holsite,Plus Jakarta Sans,SVG original dan reduced motion tetap.
