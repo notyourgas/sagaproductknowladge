@@ -7996,3 +7996,8 @@ GAP-004, bukan gap implementasi warna komponen.
 **CONFIRMED.** Kurva S/tabel/CSV dan metrik Gantt cocok pada dua cut-off dengan PM/Finance sintetis. **NEEDS CONFIRMATION.** Fixture publik belum memicu pergantian versi historis dalam proyek yang sama; laporan/PDF,penutupan36,UAT klien/Owner,HPfisik dan review visual belum disahkan. Ekspor CSV yang lulus tidak mengesahkan semua jenis ekspor. [Status Arkarupa](products/sagadevs/ARKARUPA.md).
 
 Inventaris baca-saja20November pada fixture publik yang diuji tidak menemukan laporan klien terbit. PIC QA/Backend: siapkan laporan/snapshot sintetis pada database disposable dan uji pemilihan laporan/histori; tidak membuat laporan pelanggan nyata atau menyatakan UAT portal lulus.
+
+
+## 2026-11-20 - Arkarupa: fixture snapshot dan histori tersedia di disposable
+
+**CONFIRMED.** Gap fixture lokal laporan/histori ditutup dengan6Featuretest/292asersi pada database MySQL disposable yang sudah dihapus;UI-04.3 direverifikasi engineering. **NEEDS CONFIRMATION.** Laporan klien pada demo publik masih belum tersedia dan UAT nyata tidak dilakukan. Seluruh36,review visual,Owner dan perangkatfisik tetap terbuka. Tidak menyamakan data disposable dengan rilis data publik. [Status Arkarupa](products/sagadevs/ARKARUPA.md).

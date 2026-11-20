@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-20 - Arkarupa: tautan Portal dan validasi snapshot disposable
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `be8855e5caee0d7534025c2d4346d9deaad1ec20` memisahkan URL Portal Klien dalam wadah monokrom berlabel. Pilih tautan memfokuskan input readonly dan memilih seluruh URL untuk salin manual, tanpa clipboard otomatis, request atau publikasi laporan. URL,form,cut-off,foto,opsi keuangan dan akses tetap.18kombinasi fixture dan24browser publik PM/Finance lulus terfokus.
+
+Enam Feature test existing dengan292asersi lulus pada MySQL8.4.9/PHP8.4.1 lokal yang terisolasi. Cakupan: histori baseline/kontrak,peringatan dan jalur kritis kalender,Gantt/KurvaS/tabel/CSV,laporan snapshot hanya progres terverifikasi/foto terpilih,akses klien yang ditugaskan dan termin opt-in/frozen/revocable. Dua database disposable dihapus dan proses MySQL milik run dihentikan;server lain dan database demo publik tidak diubah. UI-04.3 diverifikasi ulang secara engineering pada kandidat ini, dengan bukti browser/CSV sebelumnya diikat melalui source relevan yang identik. Ini bukan penambahan menjadi30/36:29/36 tetap historis dan seluruh36 belum diterima pada kandidat yang sama. UAT manusia/Owner/HPfisik,review visual dan aktivasi pilot tetap terbuka. Laporan disposable tidak diterbitkan ke demo publik. HostedCI/full regression tidak dijalankan.
+
+Sumber: arahan Andreas dan verifikasi20November2026. AreaUI/UX/workflow/QA Arkarupa;facts,release dan changelog SagaDevs/master/status diperbarui. [Dashboard demo](https://arkarupa-dashboard.vercel.app/) · [Status Arkarupa](ARKARUPA.md).
+
 ## 2026-11-20 - Arkarupa: Kurva S terbaca dan panduan native
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `d331f3f6457d587a5a23bc607ff8b90a48681637` memperjelas legenda rencana/aktual menjadi label14px dengan contoh garis28px monokrom. Panduan Cara membaca Kurva S dapat dibuka dengan Enter dan ditutup dengan Space tanpa request, menjelaskan baseline, pekerjaan terverifikasi, titik belum tersedia dan selisih dalam poin persentase. Grafik, angka, rumus dan hak akses dipertahankan. Partial bersama digunakan lapangan dan portal klien; sumbu portal menjadi13px. Lapangan diverifikasi pada demo publik; portal klien diverifikasi melalui fixture tanpa JavaScript, bukan login/UAT klien.
