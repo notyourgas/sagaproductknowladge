@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-20 - Arkarupa: periode grafik kas dan navigasi sumber
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `682c8f4517d0fa8bd1ac488a119ab00634af7378` menampilkan label Harian/Bulanan13px pada grafik kas, memperjelas pesan kosong14px dan membuat grid nominal menyesuaikan lebar panel agar nilai standar tetap utuh di HP. Tombol Ke periode terakhir memfokuskan baris sumber terakhir dengan Enter/Space, tanpa mengubah angka/filter. Escape/Tutup memulihkan fokus. Monokrom,Plus Jakarta Sans dan reduced motion tetap.24fixture actual Blade+24baseline mencakup kosong,satu hari,20hari,21bulan pada6viewport/motion;geometri grafik,total dan baris exact.24browser publik PM/Finance lulus pada state kosong tanpa POST. Kedua proyek demo belum mempunyai arus kas terposting:state aktif diverifikasi melalui fixture, tanpa membuat transaksi atau grafik palsu.
+
+Dua Featuretest/37asersi MySQL disposable lulus untuk kas/aging/nonkas/periode harian-bulanan tanpa mengubah saldo dan penolakan akses lintasperusahaan/proyek/file privat. DB disposable dihapus dan server milikrun dihentikan. Backend/schema/PDF/CSV tidak berubah atau diklaim diuji penuh. UI-01.2/UI-09.2 subset;seluruh36,reviewAndreas,pembaca layar/HPfisik,publicactivecashUAT dan PILOT_READY terbuka. HostedCI/fullsuite tidak dijalankan. [Buka Dashboard](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-20 - Arkarupa: pemilih monokrom dan keyboard
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `e431bda39730810a86d4f171000b49d08e6043e7` memperjelas pemilih bersama dengan lencana netral13px untuk jumlah pilihan cocok. ArrowDown dari pencarian serta ArrowUp/Down/Home/End memindahkan fokus dan melewati opsi disabled; nilai baru dipilih secara eksplisit dengan Enter. Escape menutup dan memulihkan fokus. Palet putih-abu-hitam mengikuti arahan Andreas; Plus Jakarta Sans dan reduced motion tetap.18fixture actual Blade+18baseline mencakup kosong,3/20opsi panjang escaped dan alias pada6kondisi viewport/motion;12browser publik PM/Finance lulus tanpa POST atau perubahan nilai/form.
