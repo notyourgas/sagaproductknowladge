@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-20 - Arkarupa: identitas dan pencarian pemilih proyek
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `532b180203f3bd415bedc3a1d6a515af9d8becff` memisahkan nama proyek15px,ID,wilayah dan penanda aktif pada opsi monokrom. Pencarian #12 atau12 mencocokkan nomor tepat;nama danwilayah tetap tersedia. Ini membantu membedakan nama serupa tanpa mengubah urutan,aksi selectProject atau akses.18fixture actualBlade+18baseline meliputi kosong,20proyek,namapanjang/escaped danID1vs10;12browser publik PM/Finance membuktikan pencarian,clear/Escape/fokus tanpa POST dan data/aksi tetap.
+
+Dua Featuretest/52asersi MySQL disposable lulus:penugasan mandor perproyek/idempotency/pemulihan inputduplikat dan perpindahan PM/Finance padaduamodul dengannamaserupa serta akses proyek tidakditugaskan tetap ditolak. Tidakada posting biaya dari pergantian;DBdisposable dihapus danproses milikrun dihentikan. UI-04.3/UI-05.3/UI-07.2 source-bound;seluruh36,visualreviewAndreas,UATmanusia/HPfisik danPILOT_READY masih terbuka. HostedCI/fullsuite tidakdijalankan. [Buka demo Komersial lalu Ganti proyek](https://arkarupa-dashboard.vercel.app/komersial).
+
 ## 2026-11-20 - Arkarupa: tujuan navigasi daftar proyek
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0eea1c08d7f725198c46b6e53e76074af64c02ea` memperjelas daftar proyek lewat zebra monokrom desktop,aksi14px dan jumlah13px;kartuHP/gradien tetap. Petunjuk terlihat dan deskripsi aksesibel membedakan Buka proyek ke workspace tim dari Lihat ringkasan ke angka/sumber. Panah internal sesuai perilaku tab yang sama;href,target,role,progres dan nilai kontrak tetap.18fixture actualBlade kosong/nol/tanpa-baseline/nama-panjang/angka-besar/perizinan campuran,24browser PM/Finance dan8alur dua tujuan/Back/refresh/query lulus.
