@@ -7989,3 +7989,10 @@ GAP-004, bukan gap implementasi warna komponen.
 ## 2026-11-20 - Arkarupa: penerimaan kandidat dan review visual
 
 **NEEDS CONFIRMATION.** Review visual Andreas, UAT manusia/Owner, HP fisik/screen reader, staging eksternal dan proyek pilot nyata tetap terbuka. Hasil29/36 historis tidak menjadi penerimaan kandidat terbaru. REV-012 masih memerlukan penutupan lintas Gantt/Kurva S/laporan/ekspor/histori pada kandidat yang sama. Palet monokrom adalah CONFIRMED; warna lama pada catatan historis tidak berlaku pada UI aktif. [Status terbaru Arkarupa](products/sagadevs/ARKARUPA.md).
+
+
+## 2026-11-20 - Arkarupa: pembandingan Kurva S dan CSV terfokus
+
+**CONFIRMED.** Kurva S/tabel/CSV dan metrik Gantt cocok pada dua cut-off dengan PM/Finance sintetis. **NEEDS CONFIRMATION.** Fixture publik belum memicu pergantian versi historis dalam proyek yang sama; laporan/PDF,penutupan36,UAT klien/Owner,HPfisik dan review visual belum disahkan. Ekspor CSV yang lulus tidak mengesahkan semua jenis ekspor. [Status Arkarupa](products/sagadevs/ARKARUPA.md).
+
+Inventaris baca-saja20November pada fixture publik yang diuji tidak menemukan laporan klien terbit. PIC QA/Backend: siapkan laporan/snapshot sintetis pada database disposable dan uji pemilihan laporan/histori; tidak membuat laporan pelanggan nyata atau menyatakan UAT portal lulus.
