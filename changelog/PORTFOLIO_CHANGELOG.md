@@ -1,5 +1,12 @@
 # Portfolio Changelog
 
+## 2026-11-20 - Arkarupa: tujuan navigasi daftar proyek
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0eea1c08d7f725198c46b6e53e76074af64c02ea` memperjelas daftar proyek lewat zebra monokrom desktop,aksi14px dan jumlah13px;kartuHP/gradien tetap. Petunjuk terlihat dan deskripsi aksesibel membedakan Buka proyek ke workspace tim dari Lihat ringkasan ke angka/sumber. Panah internal sesuai perilaku tab yang sama;href,target,role,progres dan nilai kontrak tetap.18fixture actualBlade kosong/nol/tanpa-baseline/nama-panjang/angka-besar/perizinan campuran,24browser PM/Finance dan8alur dua tujuan/Back/refresh/query lulus.
+
+Empat test/58asersi MySQL disposable lulus:dua skenario integrasi nota-receipt/finance menjaga sumber eligible tanpa posting stok/biaya/kas ganda;satu skenario membership membatasi list/survei/download;satu test menghasilkan fixture visual. Database disposable dihapus dan proses MySQL milik run dihentikan;data publik tidak diubah. UI-04.3/UI-05.3/UI-07.2 source-bound;seluruh36/reviewAndreas/UATmanusia/HPfisik/PILOT_READY tetap terbuka. HostedCI/fullsuite tidak dijalankan. [Daftar proyek demo](https://arkarupa-dashboard.vercel.app/proyek).
+
+
 ## 2026-11-20 - Arkarupa: konfirmasi manual dan konteks penutupan
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `4d30dcaef4d05e7946b8cd9c52f62a930c5b2f73` membedakan Konfirmasi manual dari Perlu ditinjau melalui batas putus-putus netral dan label13px. Catatan tanggal menjelaskan checklist memakai sumber terkini; cut-off progres historis pada header tidak mengubah checklist tersebut. Tautan Ke konfirmasi manual membawa fokus ke syarat manual pertama tanpa request atau perubahan status.18fixture actualBlade kosong/tanpa-manual/mixed true-false-null dan24browser PM/Finance pada proyek current/historical lulus;jumlah,syarat,tautan,form dan izin tetap. Monokrom,Holsite dan Plus Jakarta Sans dipertahankan.
