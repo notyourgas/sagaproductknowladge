@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-20 - Arkarupa: catatan modul inline dengan disclosure native
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `14078117bbfb7e5cd5058f1c24c00c29cef12723` menampilkan Catatan sumber & approval sebagai panel inline monokrom di konteksmodul,ringkasan13px/isi14px menggantikan dialoglayarpenuh untuk satuparagrafpanduan. Enter/Space/click membuka atau menutup;Escape menutupdanmemulihkan fokusringkasan,tanpaoverlay/POST. Deskripsi,proyek,stage danaksi tetap. PlusJakartaSans,komposisiHolsite danreducedmotion dipertahankan;tidakadaasetbaru.
+
+24fixture+24baseline dan8fragmentactualFullBlade mencakupteksnormal,panjang,escaped,kosong padaenamkondisi320-1440px/motion. Copyexact,summary13/body14,target44,fokus/zerooverlay/zeroPOST/nooverflow lulus.24baseline+24publikPMFinance4modulKomersial/Lapangan/Pengadaan/Keuangan pada320reduced/390normal/1440reduced lulus;deskripsi/proyek/stage/tabactions exact. Temuanminheight36 bukanbugaktif karenaCSSHolsite existing sudah44px;tidakdiklaimsebagaiperbaikanukuran.
+
+DuaOperationsTest69asersi MySQLdisposable lulus:stokcutoff60-5-3=52m3,tanpagerakanmasadepan,hariini71;biayatidakdipostingulang/kas0. Riwayatpenerimaan terscope,tanpaharga/pathprivat;foto hanyaakunproyek,foreignowner ditolak;validasitanggal/bukti mempertahankanPOdraft danrowlegacy0tidakditulisulang. Database dibersihkan/ownedservershutdown. Backend/schema/auth/PDF/CSV tidakberubah;ekspor/HostedCI/fullsuite tidakdiulang. UI09.1/09.2/09.3 tetapparsial;tidakadaIDpenuhbaruditutup.29/36historis bukanpersentasekandidatbaru atau skordesain. Seluruh36/HPfisik/screenreader/Ownerbrowser/reviewAndreas/PILOT_READY tetapOPEN. [Buka catatan sumber di Lapangan](https://arkarupa-dashboard.vercel.app/lapangan#ark-source-note-summary).
+
 ## 2026-11-20 - Arkarupa: pemilih proyek dengan navigasi keyboard
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `4559fbc94d83bff07797e0307c0f090219f4efee` mempertajam status proyekaktif dengan garis putih danbadge putih bertulisan hitam pada kartu gelap. Monokrom putih-abu-hitam,PlusJakartaSans,komposisiHolsite danreducedmotion tetap. Dari pencarian ArrowDown menuju hasilcocok pertama yangtidakdinonaktifkan;ArrowUp/Down/Home/End memindahkan danmembungkus fokus tanpa memilih proyek. Nama/wilayah/exactID,Escape reset,Tutup/fokuspemicu serta pemeriksaan draf existing dipertahankan.
