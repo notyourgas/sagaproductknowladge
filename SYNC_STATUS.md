@@ -1,5 +1,9 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-20 - Arkarupa: finalisasi tautan matriks tanpa nilai
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Kandidat final `c1c807ec27caeda7c4e9acc5b66b472e546f040e` mempertahankan legenda Gantt monokrom dan navigasi keyboard, serta menyembunyikan tautan kembali ketika baseline tidak menghasilkan matriks nilai. Ketersediaan mengikuti proyeksi dan izin existing. Verifikasi final48 kombinasi fixture termasuk nilai kosong,24 browser publik dan16 skala/cut-off lulus; angka/aktivitas/konteks cocok sebelum-sesudah, source/runtime/aset serta restore disposable cocok. Rilis pertama `697840ed58aafed2e4aa37ff981bcff6a1fe8000` dan bukti historis tetap dicatat di bawah. Tidak ada perubahan schema/rumus/data klien/aktivasi pilot;36 pemeriksaan penuh, review visual dan UAT fisik tetap terbuka. Sumber: arahan Andreas dan verifikasi20November2026. Area dan dokumen terdampak: UI/UX Arkarupa, facts/release/changelog SagaDevs, master dan status sinkronisasi. [Status Arkarupa](products/sagadevs/ARKARUPA.md).
+
 ## 2026-11-20 - Arkarupa monokrom dan legenda jadwal
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `697840ed58aafed2e4aa37ff981bcff6a1fe8000` memakai palet putih/abu-abu/hitam sesuai arahan Andreas, mempertahankan komposisi Holsite, Plus Jakarta Sans dan akses. Legenda Gantt kini berlabel dalam kartu berpola lebih jelas; pengguna internal dapat kembali ke matriks bobot dengan fokus keyboard terlihat. 42 kombinasi fixture,24 browser publik dan16 skala/cut-off lulus terfokus; source/runtime/aset dan restore disposable cocok. Rumus/data/schema tetap. Seluruh36 pemeriksaan, review visual, UAT/Owner/HPfisik dan proyek pilot belum disahkan;29/36 tetap historis. Demo statis tidak berubah. Sumber: instruksi Andreas19-20November dan verifikasi rilis20November2026.

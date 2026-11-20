@@ -1,5 +1,9 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-20 - Arkarupa: finalisasi tautan matriks tanpa nilai
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Kandidat final `c1c807ec27caeda7c4e9acc5b66b472e546f040e` mempertahankan legenda Gantt monokrom dan navigasi keyboard, serta menyembunyikan tautan kembali ketika baseline tidak menghasilkan matriks nilai. Ketersediaan mengikuti proyeksi dan izin existing. Verifikasi final48 kombinasi fixture termasuk nilai kosong,24 browser publik dan16 skala/cut-off lulus; angka/aktivitas/konteks cocok sebelum-sesudah, source/runtime/aset serta restore disposable cocok. Rilis pertama `697840ed58aafed2e4aa37ff981bcff6a1fe8000` dan bukti historis tetap dicatat di bawah. Tidak ada perubahan schema/rumus/data klien/aktivasi pilot;36 pemeriksaan penuh, review visual dan UAT fisik tetap terbuka. Sumber: arahan Andreas dan verifikasi20November2026. Area dan dokumen terdampak: UI/UX Arkarupa, facts/release/changelog SagaDevs, master dan status sinkronisasi.
+
 ## 2026-11-20 - Arkarupa monokrom dan legenda jadwal
 
 **CONFIRMED / LOCAL_VALIDATED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Arahan Andreas 20 November mengganti palet biru/pastel dengan putih, abu-abu dan hitam, sambil mempertahankan komposisi serta navigasi Holsite dan Plus Jakarta Sans. Status tetap memakai label, pola garis dan bentuk. Perbaikan diterapkan bertahap dari level 1 menuju level 2; penilaian visual Andreas masih terbuka.
