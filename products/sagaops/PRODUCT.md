@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-20 - Pemulihan akses SagaPOS setelah batas memori tercapai
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Proses SagaPOS mencapai batas memori 768 MiB, lalu startup berulang terhambat satu pekerjaan laporan dengan lease kedaluwarsa. Pekerjaan itu dipulihkan melalui orchestrator kanonik dan selesai pada percobaan kedua. Batas aplikasi sekarang MemoryHigh 1 GiB dan MemoryMax 1280 MiB.
+
+Source aktif 58873e1d6f9efbc1b4c1a40d77f21b2b7f164359. Login Staff dan Dashboard kembali HTTP 200, login Owner serta pembacaan data staff berhasil, health melaporkan ready=true dan laporan stok siap. Monitor produksi lulus dan lease kedaluwarsa menjadi nol. Pemantauan singkat setelah pemulihan menunjukkan proses stabil. Validasi ini mencakup pemulihan layanan dan akses terautentikasi.
+
 ## 2026-11-20 - Mont Blanc dan Bakery & Cheesecake
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Katalog KopiSaga menambahkan Garlic Bread Rp18.000, Sourdough Cranberry Cheese Rp18.000, Double Choco Rp16.000, Or Montblanc Rp18.000, Apple Montblanc Rp18.000 dan Berry Montblanc Rp18.000. Kategori Cake berganti nama menjadi Bakery & Cheesecake tanpa mengganti harga atau status cheesecake lama. Tiga minuman berada di kategori Mont Blanc dan hanya menyediakan pilihan Es. Foto retouch transparan dipasang pada keenam produk; Berry memakai satu irisan strawberry sesuai permintaan Andreas.

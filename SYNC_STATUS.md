@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-20 - Pemulihan akses SagaPOS setelah batas memori tercapai
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Proses SagaPOS mencapai batas memori 768 MiB, lalu startup berulang terhambat satu pekerjaan laporan dengan lease kedaluwarsa. Pekerjaan itu dipulihkan melalui orchestrator kanonik dan selesai pada percobaan kedua. Batas aplikasi sekarang MemoryHigh 1 GiB dan MemoryMax 1280 MiB.
+
+Source aktif 58873e1d6f9efbc1b4c1a40d77f21b2b7f164359. Login Staff dan Dashboard kembali HTTP 200, login Owner serta pembacaan data staff berhasil, health melaporkan ready=true dan laporan stok siap. Monitor produksi lulus dan lease kedaluwarsa menjadi nol. Pemantauan singkat setelah pemulihan menunjukkan proses stabil. Validasi ini mencakup pemulihan layanan dan akses terautentikasi.
+
 ## 2026-11-20 - Arkarupa: tautan Portal dan validasi snapshot disposable
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `be8855e5caee0d7534025c2d4346d9deaad1ec20` memisahkan URL Portal Klien dalam wadah monokrom berlabel. Pilih tautan memfokuskan input readonly dan memilih seluruh URL untuk salin manual, tanpa clipboard otomatis, request atau publikasi laporan. URL,form,cut-off,foto,opsi keuangan dan akses tetap.18kombinasi fixture dan24browser publik PM/Finance lulus terfokus.
