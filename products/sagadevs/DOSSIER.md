@@ -1,5 +1,17 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-20 - Arkarupa: histori harga monokrom dan pencarian lokal
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `dc80860dc3806e615c38572be84a0c100c3c8ee0` menerapkan histori harga monokrom dengan tanggal, jenis sumber, wilayah dan catatan terpisah dari nominal. Label13px/nilai14px; Asumsi demo dijelaskan tanpa klaim verifikasi. Metadata kosong ditandai, nilai nol dan URL sumber dipertahankan. Jumlah hasil memakai lencana hitam dan total bukti harga tetap terbaca. Holsite, Plus Jakarta Sans dan reduced motion dipertahankan.
+
+Pencarian lokal berdasarkan tanggal/sumber/wilayah mendukung trim/casefold, kosong, reset dan Escape tanpa perubahan harga. Berpindah resource mereset query. Reset/Escape memulihkan fokus dan menempatkan input di tengah viewport agar terlihat di bawah header HP. Perbaikan ini menutup masalah fokus tersembunyi pada versi demo sebelumnya.
+
+24 fixture +24 baseline actual Blade0/1/3parsial-nol/50panjang pada320–1440/reduced-normal lulus metadata/nominal/tautan exact, filter/reset/Escape, DOMsync, fokus viewport-hitInput,zeroRPC/nooverflow setelah satu setup select readonly.6 baseline+6 publik PM/Finance masing-masing dua resource lulus dua selectRPC readonly per kasus, query reset dan sumber/nilai tetap. Pemeriksaan reset setelah scroll390px lulus fokus terlihat tanpa request tambahan.
+
+Dua tes MySQL disposable94asersi lulus catalog pagination/filter/rounding/scope dan deep link/panduan enam role; DB disposable dihapus. Bukti sebelumnya3tes32asersi approval append-only/idempotent/aktor berbeda/companyscope tetap relevan karena backend/query/form tidak berubah. Runner kanonik membuktikan backup terenkripsi dan restore disposable73tabel10file28migrasi sebelum promosi. Kedua Change Log dicatat dan dibaca ulang. Backend/schema/auth/harga/ekspor/PDF tidak berubah.
+
+UI08.1/UI09 parsial; tanpa ID36 penuh baru. Seluruh36 pada satu kandidat, review visual Andreas, Owner browser, HP fisik, screenreader,zoom200,UAT dan PILOT_READY tetap terbuka. Demo publik terverifikasi terpisah dari staging/aktivasi pilot. [Buka Master Data lalu Detail/Histori](https://arkarupa-dashboard.vercel.app/katalog#ark-catalog-results).
+
 ## 2026-11-20 - Arkarupa: basis kalkulator dan kembali ke kebutuhan
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `a3905eba54879af7acd0cf275f794455ef9795cf` memisahkan basis hasil terakhir menjadi kebutuhan awal, isi dan harga kemasan, berlabel13px/nilai14px monokrom. Ubah kebutuhan membawa fokus native ke input pertama, tanpa menghitung ulang. Scrollmargin90px menjaga input terlihat di bawah header; batas viewport dan elementFromPoint=input diverifikasi. Draf dan basis/hasil lama tetap; peringatan Input berubah dan aturan Hitung ulang dipertahankan. Holsite, Plus Jakarta Sans, reduced motion, validasi dan rumus tidak berubah.
