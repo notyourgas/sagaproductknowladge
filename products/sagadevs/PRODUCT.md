@@ -1,5 +1,15 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-21 - Arkarupa: identitas proyek dan workspace Aksi cepat
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `a7378b484f63881334f134666e3a7ff7517442c2` memperjelas Aksi cepat HP: nama proyek disertai nomor pembeda netral, metadata13px dan tautan Buka workspace44px. Tautan membawa proyek aktif agar pengguna dapat memeriksa konteks sebelum mulai BUP, permintaan material atau pembayaran sesuai role. URL/label aksi utama, hak akses, data dan transaksi tidak berubah. Layout Holsite, palet putih-abu-hitam, Plus Jakarta Sans, SVG original dan reduced motion tetap.
+
+Pada Chrome, baseline Tab setelah kontrol terakhir dialog mencapai BODY meski modal tetap terbuka. Kini Tab/Shift+Tab di ujung kontrol terlihat berputar dalam dialog; Escape/Tutup mengembalikan fokus ke pemicu.24 fixture lokal tanpa proyek, dua nama sama dengan nomor berbeda dan nama panjang escaped pada320/390/768/900/1440/reduced-normal motion lulus konteks, URL,13px/44px,fokus,escaping,noPOST dan nooverflow.48 baseline publik dan48 sesudah rilis mencakup PM/Pelaksana/Purchasing/Finance,dua proyek dan6 kondisi viewport/motion. Delapan alur Buka workspace→Back→refresh mempertahankan proyek. Baseline trap lama tidak diklaim lulus; nilai BODY dicatat sebagai bukti sebelum. Dua koreksi harness whitespace dipertahankan; nama diuji textContent exact. Satu koreksi visual sesudah kandidat awal lulus menempatkan Buka workspace dan Ganti proyek pada baris terpisah, dibuktikan dengan posisi kedua target pada viewport844px.
+
+Bukti dua tes MySQL disposable90asersi run sebelumnya dipakai ulang hanya untuk backend/schema/permission yang identik: enam role/deeplink/denial dan snapshot stok approved terbaru tidak ditimpa pending lama. Bukan tes SQL baru. Tidak mengubah rumus/format PDF/ekspor. Runner kanonik membuktikan encrypted backup dan restore disposable73tabel10file28migrasi sebelum promosi;source/runtime3file dan CSS publik exact. Kedua Change Log diperbarui dan dibaca ulang, termasuk entri verifikasi monokrom yang sebelumnya tertunda lokal.
+
+UI-02/UI-03/UI-09 berstatus subset terverifikasi, bukan seluruh baris penerimaan atau36/36. Tidak menaikkan level kualitas visual berdasarkan jumlah tes. Review Andreas,Ownerbrowser,HPfisik,safearea,screenreader,zoom200,proyek pilot,UAT dan PILOT_READY tetap terbuka. Demo statis tidak berubah. [Buka Dashboard dan Aksi cepat](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-21 - Arkarupa: status sumber dan pintasan periode
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `7836ec98912812b6a59a3e2db1a85ff39f8fc86b` mengganti singkatan N/A pada KPI tanpa sumber menjadi Belum tersedia14px monokrom. Nominal nol tetap Rp0, nilai penuh/aria/title/rumus dan alasan sumber tidak berubah. Label yang belum tersedia dibedakan dari angka, termasuk empat kartu utama dan metrik sekunder. Holsite, Plus Jakarta Sans, SVG original dan reduced motion tetap.
