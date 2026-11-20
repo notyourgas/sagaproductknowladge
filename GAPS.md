@@ -7984,3 +7984,8 @@ GAP-004, bukan gap implementasi warna komponen.
 | Target domain/fitur bercampur dengan klaim live | Target selalu diberi label `PLANNED` atau `UNVERIFIED` sampai ada runtime evidence. |
 | Test/dummy/simulation dianggap mendekati provider | Provider tetap `UNVERIFIED` sampai transaksi/delivery nyata terverifikasi. |
 | `KNOWLEDGE_INDEX.md` dan `INDEX.md` | `INDEX.md` menjadi kanonik; file lama dipertahankan sebagai compatibility pointer. |
+
+
+## 2026-11-20 - Arkarupa: penerimaan kandidat dan review visual
+
+**NEEDS CONFIRMATION.** Review visual Andreas, UAT manusia/Owner, HP fisik/screen reader, staging eksternal dan proyek pilot nyata tetap terbuka. Hasil29/36 historis tidak menjadi penerimaan kandidat terbaru. REV-012 masih memerlukan penutupan lintas Gantt/Kurva S/laporan/ekspor/histori pada kandidat yang sama. Palet monokrom adalah CONFIRMED; warna lama pada catatan historis tidak berlaku pada UI aktif. [Status terbaru Arkarupa](products/sagadevs/ARKARUPA.md).

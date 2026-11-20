@@ -1,5 +1,11 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-20 - Arkarupa monokrom dan legenda jadwal
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `697840ed58aafed2e4aa37ff981bcff6a1fe8000` memakai palet putih/abu-abu/hitam sesuai arahan Andreas, mempertahankan komposisi Holsite, Plus Jakarta Sans dan akses. Legenda Gantt kini berlabel dalam kartu berpola lebih jelas; pengguna internal dapat kembali ke matriks bobot dengan fokus keyboard terlihat. 42 kombinasi fixture,24 browser publik dan16 skala/cut-off lulus terfokus; source/runtime/aset dan restore disposable cocok. Rumus/data/schema tetap. Seluruh36 pemeriksaan, review visual, UAT/Owner/HPfisik dan proyek pilot belum disahkan;29/36 tetap historis. Demo statis tidak berubah. Sumber: instruksi Andreas19-20November dan verifikasi rilis20November2026.
+
+[Detail dan batas penerimaan Arkarupa](products/sagadevs/ARKARUPA.md). Area: UI/UX demo Arkarupa; pembaruan facts/release/decision/gaps/changelog pada dokumen SagaDevs,master dan status sinkronisasi.
+
 ## 2026-11-20 - Mont Blanc dan Bakery & Cheesecake
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** SagaPOS/KopiSaga menerbitkan enam menu dengan foto pada katalog kasir dan kiosk: Garlic Bread Rp18.000; Sourdough Cranberry Cheese Rp18.000; Double Choco Rp16.000; Or, Apple dan Berry Montblanc masing-masing Rp18.000. Kategori baru Mont Blanc berisi tiga minuman dingin. Kategori Cake menjadi Bakery & Cheesecake, dengan menu cheesecake lama dipertahankan. Berry memakai garnish satu irisan strawberry sesuai keputusan Andreas.

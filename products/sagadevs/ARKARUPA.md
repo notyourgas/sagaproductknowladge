@@ -1,5 +1,17 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-20 - Arkarupa monokrom dan legenda jadwal
+
+**CONFIRMED / LOCAL_VALIDATED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Arahan Andreas 20 November mengganti palet biru/pastel dengan putih, abu-abu dan hitam, sambil mempertahankan komposisi serta navigasi Holsite dan Plus Jakarta Sans. Status tetap memakai label, pola garis dan bentuk. Perbaikan diterapkan bertahap dari level 1 menuju level 2; penilaian visual Andreas masih terbuka.
+
+Rilis Laravel demo sintetis `697840ed58aafed2e4aa37ff981bcff6a1fe8000` memperjelas legenda Gantt menjadi kartu berlabel dengan contoh pola yang lebih besar. Dari akhir Gantt, pengguna internal yang berhak dapat kembali ke matriks bobot dengan keyboard dan fokus terlihat di bawah header. Ringkasan matriks, navigasi awal/akhir tabel dan kelompok skala monokrom dari rilis sebelumnya dipertahankan. Rumus, bobot, target, tanggal, hak akses dan schema tidak berubah.
+
+Verifikasi terfokus: 42 kombinasi fixture tampilan/keyboard; 24 kombinasi browser publik PM/Finance; 16 kombinasi skala mingguan/bulanan pada dua cut-off dan dua proyek sintetis untuk kedua role. Snapshot angka, aktivitas, grafik dan konteks sebelum-sesudah cocok. Source/runtime dan aset publik cocok; backup/restore disposable lulus. Angka ini adalah skenario uji, bukan jumlah kriteria penerimaan atau skor desain. Hosted CI dan full regression tidak dijalankan pada rilis ini.
+
+**NEEDS CONFIRMATION.** Seluruh 36 pemeriksaan belum diikat dan disahkan pada kandidat ini. 29/36 merupakan hasil teknis historis, bukan persentase implementasi terbaru atau kualitas visual. REV-012 masih parsial: penutupan menyeluruh Gantt, Kurva S, laporan/ekspor dan histori baseline belum disahkan pada kandidat ini. UAT manusia, Owner, HP fisik, screen reader, staging eksternal dan pemilihan proyek pilot nyata masih terbuka. Demo statis tidak diperbarui pada rilis ini. Tidak ada aktivasi pilot, migrasi data klien atau akses akun nyata.
+
+Sumber: instruksi Andreas 19-20 November 2026, source commit dan verifikasi runtime 20 November 2026. [Dashboard Laravel demo](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-18 - Arkarupa: judul dan skala matriks langsung
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `09531808f7252d69d9bcf110165503b45bc73880` membuat judul matriks terlihat saat dibuka lewat deep link dan menambahkan pilihan Mingguan/Bulanan langsung pada matriks. Kontrol tetap memakai state jadwal existing dan tersinkron dua arah dengan Gantt. Space/ArrowLeft mempertahankan fokus. Akses internal tidak berubah; Pelaksana tetap membaca Gantt tanpa kontrol matriks nilai. Regresi MySQL disposable122tes/2500asersi, delapan kombinasi lokal320/390/740/1440 dengan reduced-motion/normal, PM publik390/1440 dalam dua mode gerak, hash runtime/CSS dan backup/restore disposable lulus. Tidak ada perubahan schema, baseline/aktual, kas, data klien atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat, staging privat dan UAT fisik masih terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-183409).

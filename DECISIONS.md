@@ -4599,3 +4599,18 @@ ini bukan aktivasi payment flow lain.
 | Pemberi keputusan | Andreas / founder |
 | Status | CONFIRMED / PRODUCTION_ACTIVATED khusus Maps; bukan BUSINESS_READY |
 | Dokumen terkait | [SagaDevs Product](products/sagadevs/PRODUCT.md), [Changelog](products/sagadevs/CHANGELOG.md) |
+
+
+## DEC-333 - Arkarupa memakai monokrom dengan komposisi Holsite
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-11-20 |
+| Topik | Palet dashboard dan prioritas desain |
+| Keputusan | Putih, abu-abu dan hitam menggantikan palet biru/pastel/amber sebelumnya; komposisi dan navigasi Holsite serta Plus Jakarta Sans dipertahankan. |
+| Alasan | Andreas meminta pewarnaan monokrom dan perbaikan desain bertahap dari level 1 menuju level 2. |
+| Alternatif yang dipertimbangkan | Mempertahankan warna referensi Holsite; digantikan instruksi terbaru. |
+| Dampak | Status tetap dibedakan dengan label, bentuk dan pola. Penilaian visual terpisah dari penerimaan teknis historis; tidak membuka akses atau aktivasi pilot. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED; palet sebelumnya DEPRECATED untuk antarmuka aktif Arkarupa |
+| Dokumen terkait | [Arkarupa](products/sagadevs/ARKARUPA.md), [Product](products/sagadevs/PRODUCT.md), [Changelog](products/sagadevs/CHANGELOG.md) |

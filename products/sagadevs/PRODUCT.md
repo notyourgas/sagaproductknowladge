@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-20 - Arkarupa monokrom dan legenda jadwal
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `697840ed58aafed2e4aa37ff981bcff6a1fe8000` memakai palet putih/abu-abu/hitam sesuai arahan Andreas, mempertahankan komposisi Holsite, Plus Jakarta Sans dan akses. Legenda Gantt kini berlabel dalam kartu berpola lebih jelas; pengguna internal dapat kembali ke matriks bobot dengan fokus keyboard terlihat. 42 kombinasi fixture,24 browser publik dan16 skala/cut-off lulus terfokus; source/runtime/aset dan restore disposable cocok. Rumus/data/schema tetap. Seluruh36 pemeriksaan, review visual, UAT/Owner/HPfisik dan proyek pilot belum disahkan;29/36 tetap historis. Demo statis tidak berubah. Sumber: instruksi Andreas19-20November dan verifikasi rilis20November2026.
+
+[Detail dan batas penerimaan Arkarupa](ARKARUPA.md). Area: UI/UX demo Arkarupa; pembaruan facts/release/decision/gaps/changelog pada dokumen SagaDevs,master dan status sinkronisasi.
+
 ## 2026-11-18 - Arkarupa: judul dan skala matriks langsung
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `09531808f7252d69d9bcf110165503b45bc73880` membuat judul matriks terlihat saat dibuka lewat deep link dan menambahkan pilihan Mingguan/Bulanan langsung pada matriks. Kontrol tetap memakai state jadwal existing dan tersinkron dua arah dengan Gantt. Space/ArrowLeft mempertahankan fokus. Akses internal tidak berubah; Pelaksana tetap membaca Gantt tanpa kontrol matriks nilai. Regresi MySQL disposable122tes/2500asersi, delapan kombinasi lokal320/390/740/1440 dengan reduced-motion/normal, PM publik390/1440 dalam dua mode gerak, hash runtime/CSS dan backup/restore disposable lulus. Tidak ada perubahan schema, baseline/aktual, kas, data klien atau aktivasi pilot. Penerimaan tetap29/36; tujuh keputusan/perangkat, staging privat dan UAT fisik masih terbuka. [Matriks demo](https://arkarupa-dashboard.vercel.app/lapangan?project=3&stage=jadwal#field-schedule-matrix) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261118-183409).
