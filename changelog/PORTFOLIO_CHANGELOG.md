@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-11-20 - Arkarupa: pemilih proyek dengan navigasi keyboard
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `4559fbc94d83bff07797e0307c0f090219f4efee` mempertajam status proyekaktif dengan garis putih danbadge putih bertulisan hitam pada kartu gelap. Monokrom putih-abu-hitam,PlusJakartaSans,komposisiHolsite danreducedmotion tetap. Dari pencarian ArrowDown menuju hasilcocok pertama yangtidakdinonaktifkan;ArrowUp/Down/Home/End memindahkan danmembungkus fokus tanpa memilih proyek. Nama/wilayah/exactID,Escape reset,Tutup/fokuspemicu serta pemeriksaan draf existing dipertahankan.
+
+24fixtureactualFullBlade+24baseline mencakupkosong,satu,3IDberjeda,30namapanjang escaped padaenamkondisi320-1440px/motion. Status13px/kontrasbadge,focus44px,filter/wrap/skipdisabled/modifier,zeroPOST/nooverflow lulus.24baseline+24publikPM/Finance padaempatmodulKomersial/Lapangan/Pengadaan/Keuangan dan320reduced/390normal/1440reduced lulus. Opsi/proyekaktif/aksi/URL tetap sama;tidakmemilihproyek atauRPC.
+
+DuaUi04Test77asersi MySQLdisposable lulus:kontekslintas4modul setelahproyekbaru,5route menolakproyekasing,6roleworkspace/sumbermetrik mengikutiizin. Margin hanyaOwner/QS;Pelaksana tidakmendapataktual/RAPinternal. Database dibersihkan danserverownedshutdown. Backend/schema/auth/PDF/CSV tidakberubah;ekspor/HostedCI/fullsuite tidakdiulang. UI-02.4/UI-09.2/UI-09.3 tetapparsial,tidakadaIDpenuhbaruditutup.29/36historis bukanpersentasekandidatbaru atau skordesain. Seluruh36/HPfisik/Ownerbrowser/screenreader/reviewAndreas/PILOT_READY tetapOPEN. [Buka pemilih proyek di Lapangan](https://arkarupa-dashboard.vercel.app/lapangan).
+
 ## 2026-11-20 - Arkarupa: identitas mandor dan pintasan penugasan
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `83c99984bd77bbb9dec1ad407b2f027a5fc6cc49` memperjelas kartu Mandor dan Divisi dengan nama utama16px,label kode/jumlahdivisi13px,nilai14px dantagdivisi13px. Palet putih-abu-hitam,PlusJakartaSans danreducedmotion tetap. Pintasan Tambah penugasan hanya bagi pengelola,membuka disclosure danmemfokuskan pilihanMandor;klik/Enter/Space tidakmenyimpan,draf tetap saatditutupsementara.
