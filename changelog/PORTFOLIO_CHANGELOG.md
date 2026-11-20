@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+## 2026-11-20 - Arkarupa: status draf dan panduan pemulihan
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `6e0281f6a6a5c83e62cd3ed2d9538ff3c2596db9` memisahkan judul Draf teks14px dari status13px dan memperjelas catatan pemilihan ulang foto dengan batas netral. Disclosure native Apa yang tersimpan otomatis? menjelaskan bahwa pemulihan teks belum mengajukan dokumen dan foto harus dipilih ulang.24fixture actualBlade+24baseline idle/available xphoto/noPhoto termasuk timestamp panjang escaped lulus;12browser PM pada dua proyek forecast serta2pemeriksaan Finance editor-absence lulus. Buka/tutup Enter/Space mempertahankan fokus, nilai,status,revisi dan tombol restore tanpa POST. Holsite,monokrom,Plus Jakarta Sans dan reduced motion tetap.
+
+Dua Featuretest/18asersi MySQL disposable lulus: dimensi dan catatan dipertahankan hanya pada baseline yang kompatibel; pergantian unit baseline mengosongkan perhitungan yang tak kompatibel tanpa membuat laporan. QA reload/review/revisi menolak foto tak valid,akses lintasperusahaan/proyek dan role tak berhak. Database disposable dihapus dan proses milikrun dihentikan. Script autosave/form serta backend tidak berubah;tidakada mutasi draf atau dokumen publik. UI-04.3/UI-05.3/UI-07.2 source-bound; seluruh36,reviewAndreas,UATmanusia/HPfisik danPILOT_READY tetap terbuka. HostedCI/fullsuite tidak dijalankan. [Buka Keuangan - Forecast](https://arkarupa-dashboard.vercel.app/keuangan?stage=forecast).
+
 ## 2026-11-20 - Arkarupa: ringkasan validasi dan pemulihan isian pertama
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `2783bfd5263b36fefb3d22a2576acaefb65fea1f` memperjelas jumlah bagian bermasalah melalui lencana monokrom13px dan pesan14px. Tombol Ke isian pertama hanya tampil bila resolver existing menemukan input terkait; Enter/Space membawa fokus tanpa mengubah draf atau mengirim aksi bisnis.24fixture actualBlade+24baseline meliputi kosong,mapped,mixed/unmapped dan pesan panjang escaped.12browser Dashboard PM/Finance membuktikan validasi tanggal melalui applyFilters yang hanya membaca; aksi fokus tidak menambah RPC, nilai tanggal/proyek tetap.
