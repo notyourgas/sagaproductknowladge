@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-20 - Arkarupa: basis kalkulator dan kembali ke kebutuhan
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `a3905eba54879af7acd0cf275f794455ef9795cf` memisahkan basis hasil terakhir menjadi kebutuhan awal, isi dan harga kemasan, berlabel13px/nilai14px monokrom. Ubah kebutuhan membawa fokus native ke input pertama, tanpa menghitung ulang. Scrollmargin90px menjaga input terlihat di bawah header; batas viewport dan elementFromPoint=input diverifikasi. Draf dan basis/hasil lama tetap; peringatan Input berubah dan aturan Hitung ulang dipertahankan. Holsite, Plus Jakarta Sans, reduced motion, validasi dan rumus tidak berubah.
+
+24 fixture +24 baseline actual result Blade empty/normal/decimal/dirty pada enam kondisi320–1440/reduced-normal lulus basis/results exact,13/14px,target44px,fokusinput,draf tetap,zeroRPC/nooverflow. inputs() dibind hanya untuk render fixture.6 baseline +6 publik PM/Finance lulus satu calculateRPC per kasus dengan input default yang diizinkan: hasil3kemasan/Rp180.000 dan basis120kg tetap saat draf121. Tombol kembali tidak mengirim request tambahan; payload guard hanya mengizinkan calculate, bukan aksi bisnis lain.
+
+Tiga tes MySQL disposable/63 asersi lulus: satuan/pack rounding/incompatible; histori basis, angka besar, nol dan desimal; nonposting dua role pada enam tabel bisnis. Database disposable dibersihkan. Backend/schema/auth/rumus/format ekspor/PDF tetap. HostedCI/fullsuite/HP fisik/Owner browser/screenreader/zoom200 tidak diulang. UI09.1–09.3 parsial, tanpa ID36 penuh baru; seluruh36 pada satu kandidat, review Andreas dan PILOT_READY terbuka. Kedua Change Log dipertahankan dan dibaca ulang. [Buka Kalkulator Satuan](https://arkarupa-dashboard.vercel.app/kalkulator#calculator-field-1-quantity).
+
 ## 2026-11-20 - Arkarupa: identitas PDF dan navigasi hasil Pustaka
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `feeb6d3565940fa65bbf880ea459650423c07f9e` memperjelas nomor PDF dengan label13px/nilai15px dan penanda fokus monokrom. Tombol Ke PDF pertama yang cocok membawa fokus ke tautan unduhan hasil terlihat teratas, tanpa mengunduh atau request. Pencarian trim/casefold/reset, nomor/tautan/proyek/hak akses, Holsite, Plus Jakarta Sans dan reduced motion tetap.
