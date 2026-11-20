@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-20 - Arkarupa: riwayat serah terima dan pemulihan checklist
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `1dfd3166730d279b3bddb97bc0af93a5b8a2347a` memisahkan versi/status, tanggal/PIC/retensi, bukti, kewajiban dan catatan review dalam kartu riwayat monokrom. Metadata berlabel13px/nilai14px; retensi/review kosong dinyatakan jelas dan catatan bernilai0 tetap tampil. Peringatan sumber berubah dipertahankan. Riwayat kosong kini dijelaskan; pintasan dari catatan atau kondisi kosong membawa fokus ke checklist sumber tanpa request. Komposisi Holsite, Plus Jakarta Sans, reduced motion dan aturan Owner/non-self/submitted/snapshot tetap; guard dan tombol review byte-identik.
+
+24 fixture +24 baseline dari workspace Blade (0/1submitted/approvedStale/12longEscapedMissing, enam kondisi320–1440/reduced-normal) lulus nilai/tanggal/stale tetap, metadata13/14px, target44px, fokus native, zeroPOST/nooverflow.12 baseline +12 publik PM/Finance pada dua proyek lulus: checklist/riwayat/aksi sama; riwayat publik kosong, catatan terisi dibuktikan fixture, tanpa menambah data publik.
+
+Tiga tes MySQL disposable/40 asersi lulus: render escaping/stale/zero reason; REV012 timeline versi kontrak/bobot/milestone/kembali baseline aktif; REV009 CSV absensi mengikuti filter, menetralkan formula dan menolak akses tanpa izin. Database disposable dibersihkan. Backend/schema/auth/rumus/format PDF-ekspor tetap; PDF publik/hostedCI/full suite tidak diulang. UI03.4/UI09 parsial, tanpa ID36 penuh baru. Seluruh36 satu kandidat, HP fisik, Owner browser, screenreader, zoom200, review Andreas dan PILOT_READY masih terbuka. Kedua Change Log dipertahankan dan dibaca ulang. [Buka riwayat serah terima](https://arkarupa-dashboard.vercel.app/workspace#closeout-records-heading).
+
 ## 2026-11-20 - Arkarupa: status draf berbagi dan pintasan daftar foto
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `980c330dbd6fb3d5b1297b5295b03ca86e7a1d24` memperjelas pilihan keuangan pada formulir Portal dengan label monokrom “Draf · Disertakan/Tidak disertakan”. Label mengikuti checkbox dan tidak menyatakan laporan sudah terbit. Pintasan sebelum daftar foto menuju pilihan berbagi dengan fokus keyboard; judul dan pilihan foto tetap, tanpa menyimpan atau menerbitkan. Komposisi Holsite, Plus Jakarta Sans, palet netral, reduced motion, checkbox deferred, cut-off dan hak akses dipertahankan.
