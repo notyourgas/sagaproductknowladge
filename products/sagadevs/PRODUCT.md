@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-20 - Arkarupa: identitas mandor dan pintasan penugasan
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `83c99984bd77bbb9dec1ad407b2f027a5fc6cc49` memperjelas kartu Mandor dan Divisi dengan nama utama16px,label kode/jumlahdivisi13px,nilai14px dantagdivisi13px. Palet putih-abu-hitam,PlusJakartaSans danreducedmotion tetap. Pintasan Tambah penugasan hanya bagi pengelola,membuka disclosure danmemfokuskan pilihanMandor;klik/Enter/Space tidakmenyimpan,draf tetap saatditutupsementara.
+
+24fixtureactualBlade+24baseline mencakupkosong,satu,bacasaja,20mandornamapanjang escaped pada320-1440px/enamkondisiviewport-motion:isinilai sama,target44px,fokus,draf,nooverflow,zeroPOST lulus.12baseline+12publik Finance kedua proyek semuanya belum memiliki mandor;hanyastatekosong/form terbuka/tertutup diuji di publik,daftarterisi fixturelokal. Tidakmenambahkan data publik untukbukti.2FinanceTest89asersi MySQLdisposable lulus:proyek-scoped,idempotensi,duplikat/inputrecovery,PMditolak,duadivisi menerima pembayaranterpisah,biaya tidakdipostingulang.
+
+UI-07.2/REV-008 danUI-09.2 tetapparsial,tidakadaIDkriteriapenuhbaruditutup.29/36adalahhistoris,bukanskorvisualatau persentasekandidatbaru. Seluruh36/allroles/HPfisik/screenreader/reviewAndreas/PILOT_READY tetapOPEN. Backend/schema/PDF/CSV tidakberubah dan ekspor tidakdiujiulang. HostedCI/fullsuiteNOT_RUN. [Buka Mandor dan Divisi](https://arkarupa-dashboard.vercel.app/keuangan?stage=utang#finance-foremen).
+
 ## 2026-11-20 - Arkarupa: progres ruangan terverifikasi setelah koreksi fixture
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `22372f5abf076a39ecfdea83c8531c6118237c17` menerbitkan fitur WIP progres ruangan yang sebelumnya tertahan. PIC,rentang rencana,pembaruan terverifikasi danrencana percut-off kini menjadi empat fakta berlabel13px/nilai14px. Tautan kembali kedaftar hanya muncul pada multiruangan;anchor native menggantikan handler fokus tertunda agar klik modifier tidak merebut fokus. Monokrom,PlusJakartaSans,reducedmotion,nilai/meter serta izin tetap.
