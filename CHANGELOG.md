@@ -1,5 +1,12 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-20 - Arkarupa: antrean review workspace dan navigasi monokrom
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `6a774cce8348a0fd4644c21de4c009e6d69622e3` memisahkan label dan hitungan antrean review dalam kartu monokrom. Tautan Review pada navigasi bagian menuju heading dengan fokus terlihat; hanya tampil bila antrean existing tersedia. Sumber jumlah,role,URL,form dan data tetap.18fixture kosong/satu/banyak-nama-panjang,12kasus shell/Alpine lokal dan24kasus browser publik PM/Finance lulus terfokus. Layout Holsite,Plus Jakarta Sans dan reduced motion dipertahankan.
+
+Tiga Feature test stok/66asersi lulus pada MySQL disposable terisolasi: pemakaian,pembalikan sekali dan saldo historis cut-off termasuk penolakan tanggal mendatang/pemulihan. Pembacaan tidak memposting biaya/kas. Database disposable dihapus dan proses MySQL milik run dihentikan;database publik tidak diubah. UI-04.3/UI-05.3 memakai bukti source terikat ulang; seluruh36/humanUAT tetap terbuka,29/36 historis bukan skor desain. Review visual Andreas,HPfisik,akses Owner dan proyek pilot nyata tetap terbuka. HostedCI/fullsuite tidak dijalankan. [Buka review workspace demo](https://arkarupa-dashboard.vercel.app/workspace#workspace-review-heading).
+
+
 ## 2026-11-20 - Arkarupa: pilihan berbagi monokrom dan pemeriksaan dokumen
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `8403206eaebe0bac7217cd94964578ead43c2e28` memperjelas pilihan keuangan pada formulir laporan: kartu monokrom berlabel, garis tepi pada centang draf, dan tombol Periksa pilihan berbagi untuk kembali dengan keyboard. Pilihan, data, izin serta aksi penerbitan tetap;18fixture lokal dan24kasus browser publik PM/Finance lulus. Layout/navigasi Holsite dan Plus Jakarta Sans dipertahankan.
