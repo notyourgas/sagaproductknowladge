@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-20 - Arkarupa: pencarian lokal foto Portal Klien
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `0f7674b1f89385a11be1731cd9aa6bc4ca25cfe4` memperjelas pilihanfotoPortalKlien denganlokasi14px/tanggal13px,paletmonokrom,PlusJakartaSans danreducedmotion tetap. Pencarianlokasi/tanggal trim-casefold menampilkanjumlahhasil danpilihan. Foto tersembunyi olehfilter tetapdipilih,Enter tidakmengajukan,Escape/reset memulihkanfokus. Tidakadapilihsemua/publikasiotomatis;Gate/cutoffreset/validasi/backend tetap. Daftar dipisahmenjadipartialdi dalamauthboundaryyangsama;wirekeyfoto daneventsyncUIexisting menjagafilter/count setelahmorph.
+
+24fixture+24baseline memakai8fragmentactualBlade0/1/3/50longEscaped pada6kondisi320-1440px/motion:copy/URL/model/value/date exact,selectedhiddenpreserved/noMatch/ISOdate/resetfocus44/EnterNoSubmit/zeroPOST/nooverflow lulus. Pembacaanvisibilitas disinkronkan setelahupdateDOM,tanpamelemahkanasersi. Simulasi DOM49dari50/selectionreset0 memverifikasipostMorphresync,bukanRPCcutoffpublik.12baseline+12publik PM/Finance2proyek lulus:PMeditorkosong0foto,Financeeditorhidden;daftarterisi/pencarian diuji fixturelokal,tanpamenambahfotopublik.
+
+Dua tesbackend260asersi MySQLdisposable lulus:portalhanyaprogresverified/fototerpilihkepadaassignedclient,arsipdokumenversioned/privateterbatasizin. DBdibersihkan/ownedservershutdown. Backend/schema/auth/PDF/CSVtidakdiubah;PDFpublik/HostedCI/fullsuite tidakdiulang. REV012/UI03/UI09 tetapparsial,tanpaIDpenuhbaruditutup;29/36historis bukanskorvisual/persentasekandidatbaru. Seluruh36/HPfisik/screenreader/Ownerbrowser/reviewAndreas/PILOT_READY tetapOPEN. [Buka pemilihan foto Portal Klien](https://arkarupa-dashboard.vercel.app/workspace#portal-photo-selector).
+
 ## 2026-11-20 - Arkarupa: tahap workspace lebih terbaca dan navigasi kembali
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `3cf6a2996265a6c58d19c61ee36b04078b48d70a` memperjelas kartu tahap workspace denganjudul15px/keterangan13px,paletmonokrom,PlusJakartaSans,SVGoriginal danreducedmotion tetap. Tahapproyek menjadi tujuanpertama navigasibagian;tautan setelahdaftarpekerjaan memfokuskan navtahap menggunakananchor native. Home/Enter pada navigasi menuju alur yangsama,tanpaRPC;role,URL,cutoff danangka tidakberubah.
