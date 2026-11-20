@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-21 - Arkarupa: header monokrom dan pintasan konten
+
+**CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `ee6d0fa4e8f9f3c6a8d06dfa3e1dcac6e37f1be3` memperbaiki header transparan yang menumpuk konten saat scroll menjadi bidang abu-abu netral opaque. Tinggi header54px desktop/60px HP dan komposisi Holsite tetap. Plus Jakarta Sans, SVG original, monokrom dan reduced motion dipertahankan. Pintasan bawaan Lewati ke konten tetap memakai href/hash/history native;sesudah aktivasi fokus preventScroll dan scrollIntoView start instant dengan scrollmargin82px membuat awal main terlihat di bawah header. Target pintasan saat fokus minimal44px. Tidak menambah library/gambar/dekorasi.
+
+20baseline publik PM/Pelaksana Proyek/Lapangan pada320/390/899/900/1440 menunjukkan header alpha0 dan target main tertutup.24fixture actualBlade component/CSS pada DOM publik terautentikasi dalam6kondisi viewport-motion lulus opaque/fokus/BackQueryRefresh/nooverflow/zeroPOST;ini bukan serverHTTP lokal.24after publik pada kandidatfinal lulus nativehash/fokus/pemulihanq/project,6tautan sumber kontrak PM tidak terintersep,serta dua alur drawer/aksi cepat Escape/fokus pada HP. Runtime3file danCSSpublicexact;duaChangeLog ditulis/dibacaulang,riwayatdipertahankan. UI-02.1/UI-09.2 hanya subset;tidak menaikkan levelvisual atau menyatakan36/36.
+
+Data/integrasi danQA: dua tes MySQL disposable52asersi lulus riwayat penerimaan scoped/private/pricefree,returpenggantian idempotent/progres fisik terpisah,serta CSVabsensi mengikuti filter danmenetralisasi formulasel. Satu kegagalanHTTPfoto500 berasal dari direktori file-session harness yangbelumada;setelah folderowned disiapkan,kedua tes diulang pada DBbaru danlulus. DBdropped/serverMySQLshutdown;tidakmengubahbackend/schema/auth/rumus/dataatauformatPDFCSV. Packagingawal belum menemukan foldertujuan;folderowneddibuat laluartifactimmutable dipaketkan,tanpamodifikasirunnerfrozen. Backupencrypted/restoredisposable73tables10files28migrasi lulus sebelum promosi.
+
+Ownerbrowser/HPfisik/screenreader/zoom200/reviewvisualAndreas/staging/UAT/proyekpilotnyata/PILOT_READY tetapOPEN. Demo statis tidak berubah. Berikutnya konsolidasi sisa pemeriksaan danirisan visual/UX siap pada PaketB,di luar header/pintasan yangbaru ditangani. [Buka Proyek](https://arkarupa-dashboard.vercel.app/proyek?q=%232).
+
 ## 2026-11-21 - Arkarupa: hierarki nilai kontrak dan sumber langsung
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `ec09111135e3277233c799c2f91945520cf8ef39` membedakan mata uangRp13px, nominal exact16px tabular danstatus Belum ada kontrak14px pada daftar Proyek. Tidak membulatkan uang atau mengubah formula. Lihat sumber kontrak44px hanya tampil pada role internal yang boleh membaca nilai;tautan native membawa proyek/stagekontrak/hash sumber,fokus heading danscrollmargin82px. Klik/Enter,Back danrefresh mempertahankan pencarianq. Nominal tetap sesuai sumber,harga tersembunyi untukPelaksana. Monokrom/Holsite/Plus Jakarta Sans/reduced motion tetap.
