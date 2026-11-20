@@ -1,5 +1,13 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-21 - Arkarupa: sumbu kas terbaca dan panduan pola monokrom
+
+**CONFIRMED. Status DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `dd53c17734e6bdea47b16e383325b5a990e60ffb` meningkatkan label sumbu grafik kas dari 10 ke 12 px tabular dengan warna netral #595959, serta legenda dari 10 ke 13 px. Kolom sumbu mengikuti panjang isi agar nominal besar tetap di luar plot. Legenda menyebut Kas masuk · garis utuh dan Kas keluar · garis putus-putus, dengan nama daftar Panduan garis arus kas. Pola garis, data seri, koordinat, periode, nilai tabel, hak akses, Plus Jakarta Sans, monokrom dan komposisi Holsite tetap. Tidak menambah aset atau animasi.
+
+24 fixture Blade kosong/tunggal/banyak/bulanan pada enam kondisi viewport-motion lulus font, kontras teks minimal 4,5:1, pola minimal 3:1, label di luar plot, tabel keyboard, tanpa overflow dan tanpa POST bisnis. Fixture merupakan render leaf pada DOM autentik, bukan HTTP aplikasi lokal. Dua belas baseline dan dua belas kasus publik PM/Finance lulus nilai/koordinat/total/periode exact serta Enter/Space/Escape/fokus tabel. Dua tes MySQL disposable 45 asersi lulus rekonsiliasi sumber kas/periode/nonkas serta advance/refund/transfer tanpa biaya ganda. Startup awal belum siap dan folder sesi harness yang hilang dikoreksi; tes diulang pada DB fresh, bukti gagal dipertahankan. Backend/schema/auth/rumus serta format laporan/PDF/CSV tidak berubah; ekspor tidak diuji ulang.
+
+Backup terenkripsi/restore disposable dan promosi runner kanonik lulus; runtime tiga file dan CSS publik exact. Kedua Change Log ditulis dan dibaca kembali tanpa menimpa riwayat. UI-01.3/UI-09 tetap PASS_SUBSET; belum seluruh 36 kriteria pada kandidat yang sama atau penilaian visual baru. HP fisik, screenreader, Owner browser, review Andreas, staging, UAT dan PILOT_READY masih OPEN. Demo statis tidak berubah. [Grafik Dashboard](https://arkarupa-dashboard.vercel.app/#overview-cash-title).
+
 ## 2026-11-21 - Arkarupa: kontras filter BUP dan jumlah hasil
 
 **CONFIRMED / DEMO_PUBLIC_VERIFIED / NOT_BUSINESS_READY.** Source `8f934293461e62a95dffaa973081cf02fd3f89c3` memperbaiki teks filter BUP aktif dari#383838diatas#171717(kontras1,53:1) menjadi putih pada latar netralyangsama(17,93:1). Filter inaktif11,73:1 dipertahankan. Monokrom,Plus Jakarta Sans,layoutHolsite,reduced motion danSVGoriginal tetap. Ringkasan menampilkan jumlah tampildaritotalpaginator serta status aktif,menggunakan rolestatus/polite/atomic danterhubung kenav untukfeedbacksetelah hasilberubah. Tidak menambah query bisnis,nilai atau notifikasi palsu.
