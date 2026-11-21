@@ -1,5 +1,15 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-21 - Arkarupa: panah rail dan fokus menu aktif
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `a098c0e70f185e3dfd6c88057377c8ffa22b922b`. Panah rail desktop yang berupa karakter salah encoding kini menjadi chevronSVG existing dalam bidangnetral28px, target44px dan arahberputar sesuai expanded. Accessiblelabel Perluas/Perkecil, monokrom, Plus Jakarta Sans dan geometriHolsite dipertahankan. Membuka rail kini memfokuskan menu halamanaktif (fallback menupertama); Escape menutup dan fokus kembali ke pemicu. Scrollnearest menjaga menuaktif terlihat di sidebar.
+
+Dua belas HTTPdisposable Owner/PM/Finance pada900normal/1440reduced/320normal/390reduced serta12publik PM/Finance (8Dashboard+4Katalog) lulus SVG/EnterActive/EscapeReturn/batas899-900/retensistatusrefresh/drawerHP/reflow danzeroPOSTbisnis. Katalog membuktikan menuaktif bukan linkpertama. Seluruh href/labelmenu setiaprole identik12baselinepublik. Snapshotawal saatlebarrail masihtransisi disimpan sebagai bukanbuktifinal; probe menunggu216px danHTTPdiulang DBfresh. SQL33 original dibawa viahash padaulangHTTP, bukan diklaimrerun.
+
+DuaSQLtes33asersi lulus bobotkontrak timelineversioned/durasi/dependency/milestone/kembalikebaselineaktif serta PDFtagihanklien scopedlaporanterbaru: bytes/headerdownload tepat, missing/privat/proyeklain/checksumrusak/dicabut ditolak; laporanlama tidakmenghidupkankembali invoiceyangdicabut. Ini ujiintegritas/downloadPDFfixture, bukan rendererPDF. Fingerprintbisnis tetap; backend/schema/href/rumus/permission unchanged.
+
+Fresh backup/restore73tabel10berkas28migrasi/promosi/authsmoke/runtime3file/publicCSSexact serta keduaChangeLogreadback lulus.8currentfullcarry ditinjaupadadeltanavigasi,21historicalrekonsiliasi/7open;UI09subset,bukanskorvisualatauUATfisik. Fullsuite/CSV/rendererPDF/HPfisik/screenreader NOT_RUN;staging/UAT/proyekpilotnyata/PILOT_READY OPEN. Demo statis unchanged. MasterAHSPpopulatedpublic tetapbelumadafixtureyangsah, bukanblockeririsanrail. NextFrontendQA: rekonsiliasiIDlain/fixtureAHSP;Andreas reviewvisual/HPfisik/proyekpilot. [Dashboard dan rail](https://arkarupa-dashboard.vercel.app/), [Menuaktif Katalog](https://arkarupa-dashboard.vercel.app/katalog).
+
 ## 2026-11-21 - Arkarupa: kartu komponen AHSP dan tutup rekap
 
 **CONFIRMED — DEMO_PUBLIC_DEPLOYED, populated AHSP flow LOCAL_VALIDATED, NOT_BUSINESS_READY.** Source `264a39d61a2c8a89b295967a6824f6a04f175385`. Komponen HSD menjadi kartu berlabel Koefisien/HSD aktif/Biaya komponen pada HP; desktop tetap tabel. Nama panjang membungkus, satuan/koefisien/harga/sumber/wilayah/tanggal/alasan harga belum lengkap tetap. Tombol Tutup Master AHSP mengosongkan pilihan rekap existing, menghapus parameter URL, lalu kembali fokus ke pekerjaan asal atau pencarian ketika hasil tersebut tidak lagi ada. Kata kunci dipertahankan; refresh tetap tertutup. Monokrom, Plus Jakarta Sans dan reduced motion tetap.
