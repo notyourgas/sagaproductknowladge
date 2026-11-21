@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-21 - Arkarupa: harga terakhir dan pintasan penerimaan terverifikasi
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `48ba76a2c238193e110125995e907344cf8c25b1`. Histori harga kini menandai recordcurrentPrice existing sebagai Harga terakhir di katalog denganlabel/border/pillmonokrom; catatanlain Catatansebelumnya. Nilai/unit/tanggal/sumber/region/notes tidak berubah.6HTTPdisposable Owner/PM/Finance320normal/1440reduced menguji3histori/1IDcurrent tepat dan4publikPM/Finance mengulang dataexisting identik. Pencarianhistori/empty/Escape/reflow lulus;PlusJakarta/reducedmotion tetap.
+
+POapproved mendapat pintasanheader keformulirpenerimaan existing melaluihelperark-open-action dan gatereceive-purchase yangsama.6lokal/4publik lulus Enter/visiblechildwindow/Tutup/fokusbalik/drafttutup-bukaulang/Financehidden/proyektanpaPO; tanpa businessPOST. HanyaRPCselect katalogberwenang. Blockerprobe lama ditutup berdasarbuktibaru: rootheight0 bukanjendeladialog; timeout lama tidakvalid untukmenyimpulkan appsumbergagal. Bukti3percobaan/2correctionround tetapdisimpan/tidakdireset. Baseline4tombolnative lulus denganpredicatechildbenar. Probeexactname tombol lama sempatgagal karena statusdraft menambahnamanya; selectorstabil memperbaiki probe tanpa mengubah statusdraft.
+
+SQLdua tes34asersi lulus PO/receipt/bill/payment/forecast/supplierpricedelta/credit serta konfirmasikatalognota/reopen/satuan/perusahaan. Fingerprint bisnis utuh; sourceform/controller/modelrelasi/service/permission/PDFformat unchanged. Backup/restore73tabel10berkas28migrasi/promosi/authsmoke/runtime4fileexact dan keduaChangeLogreadback lulus.8currentfullcarry,21historicalrekonsiliasi/7open;UI08.1/UI06/UI09subset,bukanpersentaseproduk/skorvisual. Fullsuite/HPfisik/screenreader/PDFruntime NOT_RUN;staging/UAT/proyekpilotnyata/PILOT_READY OPEN. Demo statis unchanged. [Pintasan penerimaan](https://arkarupa-dashboard.vercel.app/pengadaan?project=2&stage=material&po=1#procurement-po-heading).
+
 ## 2026-11-21 - Arkarupa: kartu resource katalog dan fokus pagination
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `25b2686a28ab434018f834c10c2c2b3537c69537`. Tabel resource katalog kini kartuHP berlabel Satuan/Hargaterakhir/Asal dengan aksi Detail/Histori; desktop tetap tabel. Kolomsticky dinonaktifkan padaHP untuklebarpenuh namapanjang. Nilai/unit/harga/provenance dan ekspresiBlade tetap. Paginationexisting next/previous kini memfokuskan judulhasil danmengumumkan halaman; filtermaterial, refreshhalaman2,emptysearch danEscape tetap.
