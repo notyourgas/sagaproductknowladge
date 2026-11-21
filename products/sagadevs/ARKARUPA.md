@@ -1,5 +1,17 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-21 — Arkarupa: riwayat serah terima dan review panjang
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime b212402e1ee5ad6183928c82c6532fd9e4465ff2, sebelumnya8f0e9b7. Source awal d6b7a43 hanya menambah log terblokir yang belum terbit; entri tersebut kini ikut rilis fitur ini. Tanggal serah terima/retensi tampil dd/mm/yyyy dengan datetime ISO tetap. Identitas versi15→16px dan label catatan13→14px. Catatan review lebih dari240karakter memakai native details dengan jumlah karakter; Enter/Space membuka/menutup dan fokus tetap pada ringkasan. Catatan pendek terlihat langsung, kosong tetap Belum diisi. Bukti berita acara, kewajiban tersisa dan peringatan sumber berubah tetap tampak penuh. Pembukaan catatan tidak mengajukan, menyetujui, melunasi atau menutup proyek.
+
+16baseline/16kandidat lokal lulus pada320/1440:4alur Owner/PM,4keadaan tanpa riwayat dan8kasus peran tanpa riwayat. Sumber teks, tanggal, status, hash dan reflow tetap; seluruh POST diblokir dan fingerprint tabel utuh. Fixture mematok3catatan historis untuk pengujian tampilan, bukan bukti serah terima nyata. Empat baseline/empat after publik PM semuanya0riwayat: hanya kondisi kosong diverifikasi publik; bukti positif disclosure hanya lokal. Tidak menambah data publik untuk uji.
+
+Tiga tes SQL baru/38asersi lulus upah parsial tanpa biaya ganda, reviewer Owner berbeda/penolakan sumber stale dan progres tepat100% pada bobot pecahan nonterminating. Formula, schema, gate, query dan format PDF/CSV tetap. Canonical backup terenkripsi/restore disposable, promosi segar/auth smoke, tiga hash runtime/CSS publik dan render Change Log lulus. Kedua Change Log dibaca ulang, termasuk entri blocked23.23 yang kini terbit tanpa mengubah hasil historisnya. Guidebookv2.1 tetap335halaman dengan ralat UI terpisah.
+
+Gate baseline pencarian Change Log, Esc workspace dan pagination RPC lama tetap BLOCKED/tidak diretry. UI pencarian Change Log tidak diterapkan. Tidak menambah full-ID36 atau skor visual. Fullsuite/hostedCI, Owner publik, HPfisik, staging, UAT manusia dan PILOT_READY belum dibuktikan. Proyek pilot nyata belum dipilih. Demo statis/pricing/trial/entitlement/produk lain tetap.
+
+[Penutupan workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2#project-closeout) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-234301).
+
 ## 2026-11-21 — Arkarupa: baseline Change Log terblokir, rilis tidak dilakukan
 
 **CONFIRMED — BLOCKED_NO_UI_RELEASE; NOT_BUSINESS_READY.** Source dokumentasi d6b7a43d3eeddc97b4fe7c3b99507c958420e4f2 hanya menambah catatan run terblokir. Runtime terakhir tetap 8f0e9b7a8da4bf536b0b669f81d41cc80fc67ff0; service dan CSS publik exact dibaca ulang. Tidak ada implementasi/publikasi UI baru atau redeploy hanya untuk checkpoint.
