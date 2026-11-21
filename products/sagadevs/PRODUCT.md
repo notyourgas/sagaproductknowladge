@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-21 - Arkarupa: ringkasan dan pencarian RAP per ruangan
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `e6a0c2102575bf380699d0c7f97cf84e27ac7bdd`. Volume dan biaya yang sebelumnya satu baris kini berlabel; hierarki ruangan/subtotal/komponen diperjelas. Pencarian lokal kode/pekerjaan/ruangan memiliki hitungan hasil, kosong, reset dan Escape, dengan penjelasan bahwa total tetap mencakup seluruh pekerjaan. Palet monokrom, Plus Jakarta Sans dan reduced motion tetap.
+
+12 kasus HTTP disposable Owner/PM/Finance dan 8 kasus publik PM/Finance pada 320/768/900/1440 lulus; seluruh nilai, subtotal, versi dan total identik baseline, nol POST bisnis publik. Tiga kasus pergantian versi lokal 2→3→2 baris dan enam RPC baca lulus. Dua tes SQL/28 asersi pengukuran/kemasan/margin/markup/diskon/review/selfapproval lulus. Fixture awal melampaui batas coverage group, hanya deskripsi fixture dikoreksi; validator aplikasi tetap, bukti gagal disimpan dan HTTP fresh retry lulus. Bukti SQL asli dibawa dengan hash.
+
+Runner backup/restore73 tabel/10 berkas/28 migrasi, promosi, runtime3 berkas dan CSS publik exact serta kedua Change Log readback lulus. Backend/schema/rumus/izin/form tidak berubah.8 current full carry/21 historis perlu rekonsiliasi/7 open; UI03.4/UI04/UI09 subset, tidak ada full ID baru. Tabel metode nonmanual menunggu data publik yang sesuai. Demo statis unchanged; full suite/PDFCSV/HP fisik/screen reader/staging/UAT/proyek pilot/PILOT_READY OPEN atau NOT_RUN. [RAP per ruangan](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=rap#rap-rooms-heading).
+
 ## 2026-11-21 - Arkarupa: kartu kebutuhan RAP dan navigasi area
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `43862024af6791bb65470853a3d651b5287eb905`. Lima kolom kebutuhan/pembelian RAP menjadi kartu berlabel Perlu/Kemasanbeli/Sisa/Biaya pada container<=760px; desktop tetap tabel. Resource/kelompok/satuan,8desimal,kemasan,purchased,leftover,biaya tetap. Nativeanchor dua-arah rekaparea/kebutuhan kini memfokuskanheading dengan scrollmargin90px danoutline netral; queryproyek/stage/versi/rekaparea tetap, refreshdeeplink danproyektanpaRAP diuji. Monokrom,PlusJakarta,reducedmotion tetap.
