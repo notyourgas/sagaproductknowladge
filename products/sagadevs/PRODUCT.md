@@ -1,5 +1,14 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-21 — Arkarupa: konteks review dokumen diajukan
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; REVIEW_GUIDANCE_LOCAL_VALIDATED; NOT_BUSINESS_READY.** Source/runtime `ce511cf7fed496e2d7a7f4affe27c0cb7d4d469b`, previous `db23baf`. RAP/penawaran submitted yang sedang dipilih menampilkan kartu monokrom jenis/versi dan Menunggu persetujuan Owner. Penyusun Owner mendapat alasan memerlukan Owner lain; QS/PM mendapat arahan sesuai peran. Owner berbeda mendapat pintasan native ke tombol approval RAP atau kolom alasan penawaran existing. Enter memindahkan fokus tanpa menyetujui otomatis; proyek/tahap tetap. Server, rumus, schema, izin, form dan format PDF/CSV tidak berubah; tidak ada fitur request revisi baru.
+
+24 baseline/24 final HTTP Owner/QS/PM pada 320/1440 mencakup dua penyusun dan RAP/quote; peran/tombol/fokus/reflow serta computed border lulus. Semua tabel fingerprint utuh; hanya pemilihan versi/read RPC. Dua tes MySQL/33 asersi lulus penolakan self-approval Owner, fresh snapshot tetap, approver berbeda tersimpan, guidance hilang setelah approved serta margin/markup/diskon/exception. Tes diulang setelah memperkuat fresh assertion; CSS border specificity dikoreksi dan 24 HTTP diulang, bukti awal dipertahankan.
+
+Canonical encrypted restore 73 tabel/10 berkas/28 migrasi, auth smoke, empat hash runtime/CSS dan log render lulus. Delapan baseline/delapan publik PM memverifikasi kondisi non-submitted; positive0 karena fixture publik saat ini tidak submitted, tanpa mutasi untuk membuat status. Positif Owner/QS/PM hanya lokal; Owner publik, HP fisik, staging/UAT dan PILOT_READY tetap terbuka. Tidak ada fullID36 atau skor visual baru. [Penawaran demo](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=penawaran), [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-191055).
+
+
 ## 2026-11-21 — Arkarupa: label perbandingan VO dan kembali ke lingkup
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `db23bafe010614f53195703d4c7c771267f6917d`, previous `62af4a0`. Volume dan nilai jual Sebelum–Sesudah VO kini berlabel dengan angka 16px memakai pola metrics existing. Setiap VO memiliki heading perbandingan dan tautan native kembali dari bagian bawah. Enter membawa fokus ke heading VO yang sama; proyek/tahap tetap. Form, izin, rumus quantity/money, backend, schema dan format PDF/CSV tidak berubah.
