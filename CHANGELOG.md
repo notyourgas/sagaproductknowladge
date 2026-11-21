@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-21 - Arkarupa: progres ringkas dengan angka lengkap per proyek
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `e4b3a826fbd255aea6b8e587f011c9007e0d1fbb` merapikan persentase pada tabel Progres & sumber proyek. Sebelumnya angka tampil hingga enam desimal. Kini aktual/rencana/selisih ringkas maksimal dua desimal, dengan ≈ jika dibulatkan. Nilai positif di bawah0,01 ditulis <0,01. Contoh44,571428% menjadi≈44,57%;25/50/100 dan nol yang exact tidak ditandai perkiraan. Status tertinggal/di atas/sesuai tetap dihitung dari variance sumber penuh, dan progress meter tetap memakai nilai asli.
+
+Kontrol native Angka lengkap memiliki nama proyek dan menampilkan aktual/rencana/selisih presisi asli. Enter membuka, Escape menutup dan memulihkan fokus secara instant;target44px dan reduced motion dipertahankan. Holsite monokrom, Plus Jakarta Sans dan keluarga SVG asli tetap, tanpa aset dekorasi baru.42fixtureactualBlade sebelum/sesudah mencakup fractional,exact,zero,tiny,near100,ahead,missing pada320/390/768/900/1440reduce+390normal. BigInt oracle memverifikasi pembulatan,tanda≈,nilai/aria/metervalueexact serta keyboard/reflow/zeroPOST.36publik PM/Finance/Pelaksana sebelum/sesudah pada dua scope juga lulus nilai/alert/tautan proyek-periode, Enter ke Detail progres dan kembali memulihkan konteks/fokus.
+
+Dua tesMySQLdisposable70asersi lulus cutoff historis/current,lateverification,reset/invalid422,missingbaseline,pagination,reviewqueue,RBACdanisolasi. Tidak ada perubahan backend/schema/auth,formula progres atau format laporanPDFCSV;ekspor tidak diuji ulang. Runner kanonik lulus backup terenkripsi/restore disposable73tabel10berkas28migrasi,promosi/authsmoke;runtime4file/CSSpublicexact. Kedua Change Log ditulis/dibaca ulang dengan riwayat tetap.
+
+UI-01.4 masih PASS_SUBSET:proyek kosong dan navigasi kembali lintas halaman memerlukan penerimaan penuh. UI-01.1/UI-01.3 dibawa dengan bukti delta terbatas:Gitblob KPI/cash identik,overview hanya mengganti sel progres dengan partial dan CSS hanya menambah selector khusus disclosureprogres.27PASS historis lain menunggu rekonsiliasi penuh,7baris historis terbuka tetap terbuka. Bukan persentase implementasi atau penilaian level visual baru. Ownerbrowser,HPfisik,screenreader,zoom200lintasmodul,reviewAndreas,staging,UAT,proyekpilotnyata danPILOT_READYOPEN. Demo statis tidak diubah. [Progres proyek](https://arkarupa-dashboard.vercel.app/?from=2026-10-01&to=2026-11-21#status-proyek).
+
 ## 2026-11-21 - Arkarupa: grafik kas monokrom mempertahankan periode nol
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `4d6998259225a23c7ba6beba7acd543c4f0799f0` memperbaiki grafik kas untuk rentang bulanan lebih dari setahun. Sebelumnya bulan tanpa transaksi dapat dilewati dan garis menghubungkan bulan aktif. Kini bulan kosong berada di nol; titik pada awal/akhir dan tetangga bulan aktif menjaga representasi tanpa memperluas seluruh rentang panjang. Caption menyebut jumlah hari/bulan bertransaksi dari seluruh periode. Ledger, nilai tabel, total, izin serta kontrak ProjectReports tetap.
