@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-21 - Arkarupa: rincian komponen RAP yang dapat diringkas
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `7cb627cfe621ceadca9d2baa49177dbf45f66c64`. Rincian komponen RAP yang sebelumnya kalimat rapat kini memisahkan nama tebal dan jumlah x harga, dengan batas/ritme netral. Disclosure native terbuka default menampilkan jumlah komponen; Space/Enter/click membuka/menutup dengan fokus tetap. Volume/biaya pekerjaan tetap terlihat; pencarian dan reset mempertahankan pilihan buka/tutup. Palet monokrom, Plus Jakarta Sans dan reduced motion tetap; tidak ada JavaScript/controller baru.
+
+12 baseline dan12 kandidat HTTP disposable Owner/PM/Finance serta8 baseline dan8 final publik PM/Finance pada320/768/900/1440 lulus data exact, nama panjang, reflow, keyboard dan disclosure; nol POST bisnis publik dan fingerprint fixture tetap. Dua tes SQL32 asersi lulus penerimaan parsial/penggantian/pengurangan/refund dan rekonsiliasi biaya, serta tautan nota idempotent, lintas proyek/supplier/role ditolak, stok10/biaya10000 tanpa posting keuangan/kas tambahan. Harness awal kekurangan direktori sesi; koreksi loop direktori dan pemisahan exit code SQL/HTTP dibuktikan lewat fresh SQL/HTTP, bukti gagal dipertahankan.
+
+Runner backup/restore73tabel10berkas28migrasi/promosi/authsmoke/runtime3berkas/publicCSSexact dan kedua Change Log readback lulus. Schema/backend/form/rumus/izin/PDFCSV tidak berubah.8 current full carry/21 historis perlu rekonsiliasi/7 open; UI03.4/UI04/UI09 subset, tidak ada full ID baru atau kenaikan skor visual. Demo statis unchanged; full suite/PDFCSV/HP fisik/screen reader/staging/UAT/proyek pilot/PILOT_READY OPEN atau NOT_RUN. [Rincian RAP per ruangan](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=rap#rap-rooms-heading).
+
 ## 2026-11-21 - Arkarupa: ringkasan dan pencarian RAP per ruangan
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `e6a0c2102575bf380699d0c7f97cf84e27ac7bdd`. Volume dan biaya yang sebelumnya satu baris kini berlabel; hierarki ruangan/subtotal/komponen diperjelas. Pencarian lokal kode/pekerjaan/ruangan memiliki hitungan hasil, kosong, reset dan Escape, dengan penjelasan bahwa total tetap mencakup seluruh pekerjaan. Palet monokrom, Plus Jakarta Sans dan reduced motion tetap.
