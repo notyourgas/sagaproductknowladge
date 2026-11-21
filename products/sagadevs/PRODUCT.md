@@ -1,5 +1,11 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-21 - Arkarupa: pemilih proyek dan palet monokrom
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `5bf5b7fd5f10d7c34b5ed398d55dcb4e7609f9bf`. Andreas menegaskan warna monokrom. Palet putih/abu/hitam existing dipertahankan, stylesheet Holsite diperiksa token netral dan runtime exact; PlusJakarta dan geometri Holsite tetap. Jumlah hasil pemilih proyek dipindah dari bawah daftar ke dekat pencarian agar cepat terlihat. Pencarian dialog kini pulih saat Back/refresh melalui history.state perakun/perentri, dibatasi80karakter; metadata asing/nonstring diabaikan. URL/pilihanproyek, metadataLivewire dan izin tidak berubah.
+
+12HTTPdisposable Owner/PM/Pelaksana dan8publik PM/Pelaksana dua proyek320normal/1440reduced lulus Back/refresh/isolasiakun/invalid80/empty/Escape/fokus/reflow;8baselinepublik kehilangan pencarian. Direktori/manyprojects/emptyproject dari kandidat sebelumnya dibawa viaexactsource. UI03.1 kini LULUS;8currentfull,21historicalPASS perlu rekonsiliasi/7open, bukanpersentaseproduk/skorvisual. SQLdua tes28asersi approvalharga append-only/idempotent/aktorberbeda dan pengelolaanakun scoped/reversible/revocation lulus pada disposable saja. Fingerprint bisnis utuh;publik hanyapergantianproyek berwenang. Tidak ada perubahan schema/data nyata/akun nyata/calculation/export. Probeawal gagal konteksbrowsermultipletab, diperbaiki danHTTPdiulang DBbaru;SQL28 dibawaviahash. Backup/restore73tabel10berkas28migrasi/promosi/authsmoke/runtime3fileexact dan keduaChangeLogreadback lulus. PDF/CSV/fullsuite/HPfisik/screenreader NOT_RUN;staging/UAT/proyekpilotnyata/PILOT_READY OPEN. Demo statis unchanged. Next rekonsiliasi historical/UI03.4, reviewvisualHP bersama Andreas. [Dashboard](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-21 - Arkarupa: kartu proyek dan kembali ke pencarian
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `08ec3fcd7c89ad619013973af020e8ce3cff960b`. Kartu direktori proyek HP memisahkan progres/kontrak dalam panel monokrom berlabel, memakai SVG original dan aksi Buka proyek penuh. Nilai/cutoff/izin tidak berubah. PlusJakarta/reducedmotion dipertahankan. Screenshot publik sebelum/sesudah memakai data sama; fixturelokal nama/wilayah panjang lulus.
