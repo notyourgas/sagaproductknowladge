@@ -1,5 +1,15 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-22 — Arkarupa: rentang workspace dan pencarian asal
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source dan runtime dbe8977c4053a0cb7b90c06b4cc247de37884058, sebelumnya aee5ddb603e62f64a95613c10de769279f00dbc2. Pemicu Ubah periode progres diperbesar dari14menjadi16px. Tanggal mulai dan cut-off14px kini terlihat ketika filter tertutup, dalam format dd/mm/yyyy dengan atribut datetime ISO. Bantuan memakai14px. Form GET dan reset periode mempertahankan kata kunci pencarian asal yang telah disanitasi ketika masuk workspace. Setelah menerapkan tanggal atau kembali ke periode saat ini, Daftar proyek membawa pencarian tersebut dan memfokuskan jumlah hasil. Tanpa pencarian tidak ditambahkan field atau query kosong. Perubahan ini tidak mengubah saldo atau mencatat approval.
+
+Sebanyak16baseline dan16kandidat lokal lulus untuk Owner, PM, Pelaksana dan Finance pada320/1440, dengan dan tanpa pencarian. Alur GET, reset, kembali ke direktori, proyek, tanggal, keyboard dan reflow diperiksa; tidak ada POST dan fingerprint tabel tetap. Delapan baseline dan delapan hasil publik PM pada dua proyek lulus. Baseline membuktikan hilangnya kata kunci sebelum perubahan. Tiga tes SQL dengan64asersi lulus untuk rekonsiliasi periode BUP dan versi baseline, penolakan tanggal invalid422tanpa posting serta membership daftar/survei/lampiran. Regresi formulir diperluas untuk ampersand dan tanda kutip yang terescape, URL reset dan query array yang dinormalisasi kosong. Backend, formula, schema, izin dan format laporan/PDF/CSV tetap.
+
+Canonical backup terenkripsi, restore disposable, promosi, autentikasi, tiga hash runtime, CSS publik dan tiga anchor Change Log lulus. Kedua Change Log sumber/runtime dibaca ulang; histori byte dan prefix dipertahankan. Guidebookv2.2tetap336halaman dengan hash6d09af6c; ralat UI terpisah. Gate Escape picker, history dan pagination RPC lama tidak diulang atau dinyatakan pulih. UI-03/UI-09masih subset, tanpa tambahan full-ID36atau skor visual. UAT manusia, HP fisik, staging, Owner publik dan PILOT_READY masih terbuka. Proyek pilot nyata belum dipilih. Demo statis, pricing, trial dan produk lain tetap.
+
+[Workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261122-002902).
+
 ## 2026-11-22 — Arkarupa: pesan validasi dan pemulihan kalkulator
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime aee5ddb603e62f64a95613c10de769279f00dbc2, sebelumnya b212402e1ee5ad6183928c82c6532fd9e4465ff2. Pesan error bersama12→14px dengan pembungkusan teks; tautan pesan ringkasan14→16px dan hitungan14px. Saat validasi kalkulator gagal, Kembali ke ringkasan kesalahan mengembalikan fokus tanpa membuang input. Enter/Ke isian pertama menuju input invalid. Setelah koreksi50kg dan hitung ulang, ringkasan/pintasan hilang dan fokus menuju hasil3kemasan, sisa30kg, biayaRp180.000. Pintasan mencegah navigasi fragmen native saat JavaScript aktif agar fokus hanya dipindahkan sekali; href tetap tersedia sebagai fallback.
