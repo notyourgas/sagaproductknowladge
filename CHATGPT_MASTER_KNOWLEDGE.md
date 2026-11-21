@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-21 — Arkarupa: nilai kontrak dan syarat pembayaran ringkas
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `62af4a0e545dc8c5784653a0c5db81636e5b73b8`, previous `da0974e`. Nilai kontrak diberi label dan ukuran 28px pada HP hingga 36px desktop, dibanding 24px sebelumnya. Nilai awal/versi tetap. Eksposur VO belum diterapkan diberi bidang monokrom dan tetap terpisah dari nilai kontrak. Syarat pembayaran dan milestone dipindah ke disclosure native: DP, retensi, tenggat dan durasi berlabel; recovery serta milestone memakai sumber yang sama. Enter/Space membuka, Escape menutup dan mengembalikan fokus; refresh menutup rincian tanpa mengganti proyek/tahap.
+
+18 baseline dan 18 kandidat HTTP disposable Owner/PM/Finance pada 320/390/1440, terisi/kosong, reduced/normal motion lulus. Semua tabel fingerprint utuh dan tidak ada POST bisnis. Fixture UI memakai quote accepted langsung di disposable; bukan bukti acceptance baru. Dua tes MySQL/81 asersi lulus rencana termin berbasis nilai awal serta alur issue/accept/contract/VO dan PDF privat immutable. Satu koreksi baseline runner untuk navigasi URL sama, dengan failed proof dipertahankan.
+
+Enam baseline/enam skenario publik PM pada tiga viewport lulus; kontrak V2 dan proyek kosong terverifikasi tanpa POST bisnis. Canonical encrypted backup/restore 73 tabel/10 berkas/28 migrasi, auth smoke, tiga hash runtime, CSS dan render Change Log lulus. Rumus, model, schema, terms, izin, form dan format PDF/CSV tidak berubah. Lembar UAT manusia disiapkan; dock HP fisik, Owner publik, staging/UAT dan PILOT_READY tetap terbuka. Tidak ada full ID/36 atau skor visual baru. [Kontrak demo](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=kontrak#commercial-contract-source), [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-183954).
+
+
 ## 2026-11-21 - Arkarupa: konteks proyek dari workspace ke akses tim
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; OWNER_UI_LOCAL_VALIDATED; NOT_BUSINESS_READY.** Source/runtime `da0974e09f1859803fde0ee62c26f7b5b5407f50`, previous `4589dd8`. Workspace sekarang memiliki tautan **Atur akses tim** khusus Owner. Halaman Akun & peran menampilkan kartu konteks monokrom dengan nama proyek18px, ID, wilayah dan petunjuk penugasan manual. Nama sangat panjang membungkus. Enter memindahkan fokus ke judul; konteks bertahan setelah membuka editor anggota. Browser Back kembali ke URL asal; tautan Workspace proyek kembali ke proyek yang sama dengan fokus pada pintasan, tanpa menjanjikan periode historis. Membuka pengaturan tidak menugaskan akun otomatis.
