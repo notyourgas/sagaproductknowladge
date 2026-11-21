@@ -1,5 +1,15 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-21 — Arkarupa: manual operasional konstruksi bergambar v2
+
+**CONFIRMED — DOCUMENTATION_LOCAL_VALIDATED; PUBLIC_RUNTIME_UNCHANGED; NOT_BUSINESS_READY.** Atas klarifikasi Andreas, guidebook ringkas v1 dikembangkan menjadi PDF A4 389halaman dengan 149gambar layar/popup aktual beranotasi, petunjuk tombol/kolom, peran/prasyarat/langkah/hasil/pemulihan, daftar isi klik dan43bookmark. Mencakup33kelompok layar: proyek/akses, survei dan backup volume, RAP manual/AHSP, penawaran/deal/kontrak/VO, jadwal/Gantt/KurvaS, BUP, material/absensi/pengadaan/upah, forecast/tagihan/kas, portal dan closeout. “Backup volume/progress” dibedakan dari backup database. Screenshot memakai fixture sintetis; harga/pajak contoh bukan kebijakan operasional.
+
+Source layar `ce511cf7fed496e2d7a7f4affe27c0cb7d4d469b`; provenance entri dokumentasi lokal `2bf96bffc70c0fb3fedaca4889383745fa766fe8` (hanya Change Log, belum dirilis). Artifact `Arkarupa-Manual-Operasional-Bergambar-v2.pdf`, SHA256 `69e226c50d0313e6cb55a6f492a18c4b1148224e14490faef25d4e9c231212d2`. Semua389halaman dirender, teks searchable, font Jakarta/Instrument embedded dan13contoh aritmetika lulus.479capture bukan479skenario QA; fingerprint bisnis tetap dan disposable dibersihkan. Tidak menjalankan ulang fullsuite atau menyatakan workflow/perangkat fisik UAT lulus. Satu penanda margin angka32% diperiksa visual dan berada dalam halaman. V1 dipertahankan.
+
+Plus Jakarta Sans digunakan untuk isi dan Instrument Serif untuk judul; interpretasi atas permintaan “Isomens Serif” tetap **ASSUMPTION** sampai konfirmasi. Manual diserahkan sebagai artifact lokal, belum dihosting pada website. Kedua Change Log lokal/jadwal ditulis dan dibaca ulang, termasuk waktu asli pemicu yang tertunda saat lock tugas buku. Demo publik terakhir pada checkpoint sebelumnya tetapce511cf; tidak ada deploy, perubahan fitur/schema/rumus/izin atau aktivasi baru dari dokumentasi ini. Staging/UAT/HP fisik/proyek nyata/PILOT_READY tetap terbuka. Next: latihan operator pada perangkat nyata serta lanjutkan UI yang siap; sertakan entri dokumentasi pada paket fitur berikutnya, tanpa rilis checkpoint tersendiri.
+
+[Dashboard demo](https://arkarupa-dashboard.vercel.app/) · [Panduan demo](https://arkarupa-dashboard.vercel.app/panduan-demo). Tidak memengaruhi pricing, trial, entitlement atau produk Saga lain.
+
 ## 2026-11-21 — Arkarupa: konteks review dokumen diajukan
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; REVIEW_GUIDANCE_LOCAL_VALIDATED; NOT_BUSINESS_READY.** Source/runtime `ce511cf7fed496e2d7a7f4affe27c0cb7d4d469b`, previous `db23baf`. RAP/penawaran submitted yang sedang dipilih menampilkan kartu monokrom jenis/versi dan Menunggu persetujuan Owner. Penyusun Owner mendapat alasan memerlukan Owner lain; QS/PM mendapat arahan sesuai peran. Owner berbeda mendapat pintasan native ke tombol approval RAP atau kolom alasan penawaran existing. Enter memindahkan fokus tanpa menyetujui otomatis; proyek/tahap tetap. Server, rumus, schema, izin, form dan format PDF/CSV tidak berubah; tidak ada fitur request revisi baru.
