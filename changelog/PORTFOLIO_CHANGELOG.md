@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-11-21 - Arkarupa: KPI langsung terbaca dan sumber berizin
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `e902143a540eea76816754fc0a7117d1446d1d7c` mengecualikan kartuKPI dari entryfade320ms/stagger480ms agar angka langsungterbaca. Monokrom,PlusJakarta,SVG,gradien/layout/nilai utuh dipertahankan;animasi nonKPI/teks eksplisit danreducedmotion tetap. Fokusawal Detail sumber kini konsistenke pencarian:12/12dialogpublik dan14/14lokal,sebelumnya8/12baseline. Nomatch→kosong,Escapepertama clearquery,Escapekedua tutup/fokuskembaliKPI;total tidakberubah.
+
+18actualHTTPcandidate Owner/Finance/Pelaksana portfolio/kontrakterisi/proyekkosong pada390normal/1440reduced serta12afterpublikPMFinancePelaksana+4crewprogres lulusdata positive/zero/missing,semuasumberKPIutama yangdiizinkanHTTP200,proyeksi tugas/progres danisolasi finansial. Fixtureacceptedquote dipin secara sintetis,bukanacceptanceklien. Dua tesMySQLdisposable37asersi membuktikan rekonsiliasikas/aging/nonkas/periode danpenolakanperusahaanlain/proyektidakditugaskan/lampiranprivat. FingerprintbisnisHTTPtetap,DB/serverdibersihkan. Backend/schema/auth/uang/PDFCSV tidakdiubah;PDF/CSV tidakdiujiulang.
+
+Backupterenkripsi/restoredisposable73tabel10berkas28migrasi,promosi/authsmoke,runtime3file/publicMotionexact lulus. KeduaChangeLogditulis/dibacaulang. **UI-01.2 LULUS pada kandidatini.** UI-01.1/UI-01.3/UI-01.4/UI-02.1 carry melaluideltaterbatas;5currentfullPASS,24historicalPASSmenunggurekonsiliasi,7historicalopen tetap. Ini bukan persentaseimplementasi atau signoffvisual. ReviewAndreas/Ownerbrowserpublik/HPfisik/screenreader/staging/UAT/proyekpilotnyata/PILOT_READYOPEN. Demo statis tidakberubah. [DashboardKPI](https://arkarupa-dashboard.vercel.app/?project=2#overview-metrics-heading).
+
 ## 2026-11-21 - Arkarupa: judul langsung terbaca dan Aksi cepat ke Menu
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `3f9aafb8a445884946768895255d08f68bb1c6ba` mengeluarkan judul halaman dari splitText/fade500ms agar langsung terbaca. Monokrom,PlusJakarta,geometriHolsite,SVG,reducedmotion dananimasi teks eksplisit lain dipertahankan. Animasi kartu tidak diubah.
