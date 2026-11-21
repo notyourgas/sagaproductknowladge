@@ -1,5 +1,15 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-21 - Arkarupa: navigasi tablet tunggal dan Escape rail desktop
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `68eb0503e5ac954b3acf7449c9327fe565c30435` meningkatkan label kelompok navigasi dari11px ke13px netral. Kontrol open/close native Filament yang sebelumnya ikut tampil pada900–1023px disembunyikan hanya pada desktop Arkarupa>=900;toggle Holsite tetap menjadi kontrol desktop. Rail61px ringkas/216px terbuka dan header54desktop/60HP dipertahankan sesuai pengukuran arsip. Brand Arkarupa,palet monokrom,PlusJakarta,SVGoriginal dan reduced motion tetap.
+
+Escape dari sidebar/toggle desktop terbuka merapikan rail dan memulihkan fokus ke toggle. Escape dari konten/dialog tidak merapikan rail;drawer dan aksi cepat HP tetap memulihkan fokus masing-masing.40baselinepublik+40preview actualBlade+40afterpublik padaPM/Pelaksana,Dashboard/workspace dan10viewport-motion lulus geometri,label,href,reflow,keyboard,one-control dan zeroPOST.12hotresize per stage membuktikan899↔900,1023↔1024,preferensi dan focus handoff tanpa reload. Preview bukan full HTTP candidate;public after dan exact runtime membuktikan source final.
+
+Dua tesMySQLdisposable41asersi lulus upah parsial tanpa posting biaya lagi serta Finance role/isolation/Livewire dan immutable client PDF;bytes PDF tetap setelah master company berubah. DB/server disposable dibersihkan. Backend/schema/auth/angka transaksi/formatPDFCSV tidak berubah;CSV tidak terdampak/tidak diuji ulang. Runner kanonik backup terenkripsi/restore disposable73tabel10berkas28migrasi,promosi/authsmoke lulus;runtime3file/CSSpublik exact. KeduaChangeLog ditulis/dibaca ulang dengan tanggal dan bukti lama utuh.
+
+**UI-02.1 LULUS pada kandidat ini.** UI-01.1/UI-01.3/UI-01.4 dibawa dengan overview/partial identik dan delta CSS/menu yang terbatas.25PASS historis lain menunggu rekonsiliasi penuh,7historicalopen tetap terbuka. Ini bukan skor implementasi atau sign-off level visual Andreas. Ownerbrowserpublik,HPfisik,screenreader,staging,UAT,proyekpilotnyata danPILOT_READYOPEN. Demo statis tidak berubah. [Workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2).
+
 ## 2026-11-21 - Arkarupa: tabel proyek, konteks sumber dan fokus setelah refresh
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `9409f3eab62af635d7d02570be8e14fe3b62b028` memperbesar judul kolom tabel proyek dari10px uppercase ke13px sentence case dengan abu-abu lebih gelap. Dialog rincian sumber menyebut nama proyek dan cut-off progres; keterangan terpisah menjelaskan bahwa saldo keuangan mengikuti waktu pembacaan, bukan otomatis saldo historis pada cut-off. Palet monokrom, Plus Jakarta Sans, komposisi Holsite, aset SVG original dan reduced motion dipertahankan.
