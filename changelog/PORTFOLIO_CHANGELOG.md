@@ -1,5 +1,11 @@
 # Portfolio Changelog
 
+### 2026-11-22 — Catatan dokumentasi Arkarupa: manual bergambar v2.2
+
+**CONFIRMED — DOCUMENTATION_LOCAL_VALIDATED; bukan rilis fitur atau UAT.** Guidebook operasional diperjelas menjadi336halaman A4,149screenshot asli pada33kelompok layar,44bookmark dan88tautan. Petunjuk76kelompok model isian kini membedakan identitas klien/proyek/pekerjaan, BUP/opname tambahan versus sertifikat kumulatif, fraction versus persen/rupiah, total komponen manual, ETC biaya sisa dan isi/harga kemasan. Ralat tampilan sesudah snapshot digabung ke PDF. Semua336halaman dirender,13cek aritmetika dan22cek editorial lulus; v2.1 tetap utuh.
+
+Source dokumentasi 5c97119f352da8b9bcb5518fb3ac5fcdeeb64b65; catatan ChangeLog kandidat Laravel 3d18d074e96c74d2b698b73900d31379856f70b7. SHA256 PDF6d09af6c451070f80097d770038757560829d0bc180b9a1221e6b44e568c1721. Screenshot tetap snapshot sintetis sourcece511cf7fed496e2d7a7f4affe27c0cb7d4d469b; bukan capture baru dari demo aktif. Runtime demo diperiksa read-only tetapb212402e1ee5ad6183928c82c6532fd9e4465ff2/serviceactive. KeduaChangeLogsource dicatat; entri publik baru belum dipromosikan. Dokumen tersedia lokal, tidak dipublikasikan ke website lewat task ini. Tidak ada perubahan aplikasi, formula, schema, akun, data bisnis atau gate36. Staging/UAT/HPfisik/PILOT_READY tetap terbuka; blocker sebelumnya tidak diretry. Pricing, workflow produk dan aktivasi tetap.
+
 ## 2026-11-21 — Arkarupa: riwayat serah terima dan review panjang
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime b212402e1ee5ad6183928c82c6532fd9e4465ff2, sebelumnya8f0e9b7. Source awal d6b7a43 hanya menambah log terblokir yang belum terbit; entri tersebut kini ikut rilis fitur ini. Tanggal serah terima/retensi tampil dd/mm/yyyy dengan datetime ISO tetap. Identitas versi15→16px dan label catatan13→14px. Catatan review lebih dari240karakter memakai native details dengan jumlah karakter; Enter/Space membuka/menutup dan fokus tetap pada ringkasan. Catatan pendek terlihat langsung, kosong tetap Belum diisi. Bukti berita acara, kewajiban tersisa dan peringatan sumber berubah tetap tampak penuh. Pembukaan catatan tidak mengajukan, menyetujui, melunasi atau menutup proyek.
