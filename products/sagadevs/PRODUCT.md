@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-21 - Arkarupa: kartu kebutuhan RAP dan navigasi area
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `43862024af6791bb65470853a3d651b5287eb905`. Lima kolom kebutuhan/pembelian RAP menjadi kartu berlabel Perlu/Kemasanbeli/Sisa/Biaya pada container<=760px; desktop tetap tabel. Resource/kelompok/satuan,8desimal,kemasan,purchased,leftover,biaya tetap. Nativeanchor dua-arah rekaparea/kebutuhan kini memfokuskanheading dengan scrollmargin90px danoutline netral; queryproyek/stage/versi/rekaparea tetap, refreshdeeplink danproyektanpaRAP diuji. Monokrom,PlusJakarta,reducedmotion tetap.
+
+12HTTPdisposable Owner/PM/Finance320/768/900/1440 dan8publikPM/Finance lulus cards/data/Enter/fokus/headingterlihat/query/version/refresh/empty;zeroPOSTbisnis/fingerprintutuh. Seluruhkebutuhan/kemasan/sisa/biaya/versi/rekaparea identik8baselinepublik. DuaSQLtes18asersi lulus konversikemasan5zak/pembulatansekali/zeroreceipttidakjadikedatangan, serta baseline3386270/hashes tetapketikamasterberubah, refreshoptin/selfapprovaldeny/idempotentapproval. Ujiawal menolakpurchasingfixture belumditugaskan; satuassignment ditambahhanyadites, izinapp tetap. Probeanchorawal membatasi y<=300 tidakvalid dekatakhirhalaman; digantikeheadingterlihat80-910danfokus. Failedproofdisimpan danDBfreshdiulang. Testfileexcludedartifactdibuktikan.
+
+Fresh backup/restore73tabel10berkas28migrasi/promosi/authsmoke/runtime4file/publicCSSexact serta keduaChangeLogreadback lulus. Backend/schema/rumus/permission/form/PDFCSV unchanged.8currentfullcarry/21historicalrekonsiliasi/7open;UI03.4/UI04/UI09subset,bukanIDbaru/skorvisualnaik. Demo statis unchanged;fullsuite/PDFCSV/HPfisik/screenreader/staging/UAT/proyekpilotnyata/PILOT_READY OPEN/NOT_RUN. NextFrontendQA tabelRAPmetode/rekonsiliasiID;Andreas reviewvisual/HPfisik/proyekpilot. [Kebutuhan RAP](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=rap#rap-needs-heading).
+
 ## 2026-11-21 - Arkarupa: kartu katalog adaptif dan Escape histori
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `f926dbb9ba23ee6ae8fb4c11280822b86454c96f`. Kartu katalog kini mengikuti lebararea konten<=760px melaluiCSScontainer, sehingga tablet768 dan900denganrail216 terbuka memakai kartu berlabel Satuan/Harga terakhir/Asal. Pada900railringkas dan1440 tetap tabel; resize tidakmemerlukanrequest atau mengubahdata. Sebelumnya kartu hanya pada viewport<=639px; tabel900expanded melebar76px, sementara768memadat tanpaoverflow. Monokrom, Plus Jakarta Sans, reduced motion dan komposisiHolsite tetap.
