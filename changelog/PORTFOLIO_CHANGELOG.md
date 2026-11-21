@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-11-21 - Arkarupa: kandidat tabel dan fokus lokal menunggu QA
+
+**CONFIRMED. IMPLEMENTED_NOT_DEPLOYED / QA_INCOMPLETE.** Kandidat lokal `aa41c7167aa45d2d8e1b8e35f078310585458335` memperbesar judul tabel proyek menjadi13px sentence case dengan kontras netral lebih kuat. Dialog sumber menyebut proyek/cut-off progres dan membedakannya dari waktu pembacaan saldo. Fokus hash tautan progres setelah refresh halaman2 diperbaiki; URL dan halaman sebelumnya tetap benar tetapi fokus body. Palet monokrom, Plus Jakarta Sans, layout Holsite dan reduced motion dipertahankan.
+
+Dua tesMySQLdisposable70asersi dan24baselinepublik lulus. Rangkaian HTTP disposable terakhir melewati enam skenario PM (dialog,halaman2,kembali,Back,refresh,pagination) lalu berhenti pada recovery akun tanpa proyek: selector harness tidak menyertakan simbol panah yang terdapat pada nama tautan. Pesan kosong/nol baris sudah terbaca. Koreksi selector disiapkan, belum diuji. Fingerprint bisnis tetap; semua database/server milik run dibersihkan. Ini bukan PASS12 atau penutupan UI-01.4. PDF/CSV tidak terdampak dan tidak diuji ulang.
+
+**Demo publik tetap `e4b3a826fbd255aea6b8e587f011c9007e0d1fbb`; tidak ada deployment kandidat ini.** UI-01.1/UI-01.3 tetap penerimaan pada kandidat publik sebelumnya;UI-01.4 parsial,27PASS historis lain memerlukan rekonsiliasi,7historicalopen tetap terbuka. Tidak menaikkan skor visual atau persen implementasi. Change Log kandidat lokal dan jadwal ditulis/dibaca ulang; entri run lokal belum tampil pada tab demo publik sampai promosi yang lulus. Next Frontend+QA: focusedHTTP12 dengan selector yang dikoreksi, lalu package/rehearsal/promote dan24verifikasi publik pada kandidat yang sama. Backend/schema/auth/formula tidak berubah;staging/UAT/HPfisik/Ownerbrowser/reviewAndreas/PILOT_READY terbuka. [Demo terakhir terverifikasi](https://arkarupa-dashboard.vercel.app/?from=2026-10-01&to=2026-11-21#status-proyek). Demo statis tidak berubah.
+
 ## 2026-11-21 - Arkarupa: progres ringkas dengan angka lengkap per proyek
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `e4b3a826fbd255aea6b8e587f011c9007e0d1fbb` merapikan persentase pada tabel Progres & sumber proyek. Sebelumnya angka tampil hingga enam desimal. Kini aktual/rencana/selisih ringkas maksimal dua desimal, dengan ≈ jika dibulatkan. Nilai positif di bawah0,01 ditulis <0,01. Contoh44,571428% menjadi≈44,57%;25/50/100 dan nol yang exact tidak ditandai perkiraan. Status tertinggal/di atas/sesuai tetap dihitung dari variance sumber penuh, dan progress meter tetap memakai nilai asli.
