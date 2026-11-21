@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-11-21 - Arkarupa: tabel proyek, konteks sumber dan fokus setelah refresh
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `9409f3eab62af635d7d02570be8e14fe3b62b028` memperbesar judul kolom tabel proyek dari10px uppercase ke13px sentence case dengan abu-abu lebih gelap. Dialog rincian sumber menyebut nama proyek dan cut-off progres; keterangan terpisah menjelaskan bahwa saldo keuangan mengikuti waktu pembacaan, bukan otomatis saldo historis pada cut-off. Palet monokrom, Plus Jakarta Sans, komposisi Holsite, aset SVG original dan reduced motion dipertahankan.
+
+Bug fokus setelah refresh diperbaiki: URL, proyek dan halaman kedua sebelumnya tetap benar, tetapi fokus jatuh ke body. Daftar proyek kini memulihkan fokus secara instant hanya bila hash menunjuk tautan progres yang ada.12kasus actual Laravel HTTP disposable pada enam viewport-motion lulus proyek kosong, akun tanpa akses, delapan proyek/halaman2, Detail progres, tautan kembali, browser Back, refresh dan fokus pagination. Fingerprint bisnis semua tabel tetap sama. Dua tesMySQL70asersi lulus cut-off/periode/reset/baselinekosong/pagination/RBAC; bukti SQL dipakai ulang dengan hash untuk retry HTTP karena source bisnis tidak berubah.24publik PM/Finance sebelum dan24sesudah lulus judul tabel, nama/cut-off dialog, angka keuangan exact, Escape/fokus, reflow dan zeroPOST; direct hash/refresh fokus juga diuji pada demo aktif.
+
+**UI-01.4 LULUS pada kandidat ini:** bukti progres/alert/tautan dari kandidat sebelumnya dibawa dengan partial progres dan action href identik, lalu dilengkapi HTTP disposable kosong/multipage dan verifikasi publik current. UI-01.1/UI-01.3 tetap LULUS melalui partial KPI/kas identik serta CSS/caller yang terbatas pada tabel proyek.26PASS historis lain masih perlu rekonsiliasi penuh,7baris historis terbuka tetap terbuka. Ini bukan persentase implementasi atau persetujuan level visual Andreas.
+
+Backend/schema/auth, formula progres/uang dan format laporanPDFCSV tidak berubah;ekspor tidak diuji ulang. Runner kanonik lulus backup terenkripsi/restore disposable73tabel10berkas28migrasi,promosi/authsmoke;runtime3file/CSSpublicexact. Kedua Change Log ditulis/dibaca ulang dengan riwayat tetap. Owner browser publik, HP fisik, screenreader, zoom200lintasmodul,reviewAndreas,staging,UAT,proyekpilotnyata danPILOT_READY terbuka. Demo statis tidak berubah. [Tabel proyek](https://arkarupa-dashboard.vercel.app/?from=2026-10-01&to=2026-11-21#status-proyek).
+
 ## 2026-11-21 - Arkarupa: kandidat tabel dan fokus lokal menunggu QA
 
 **CONFIRMED. IMPLEMENTED_NOT_DEPLOYED / QA_INCOMPLETE.** Kandidat lokal `aa41c7167aa45d2d8e1b8e35f078310585458335` memperbesar judul tabel proyek menjadi13px sentence case dengan kontras netral lebih kuat. Dialog sumber menyebut proyek/cut-off progres dan membedakannya dari waktu pembacaan saldo. Fokus hash tautan progres setelah refresh halaman2 diperbaiki; URL dan halaman sebelumnya tetap benar tetapi fokus body. Palet monokrom, Plus Jakarta Sans, layout Holsite dan reduced motion dipertahankan.
