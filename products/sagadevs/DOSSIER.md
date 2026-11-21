@@ -1,5 +1,15 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-22 — Arkarupa: pesan validasi dan pemulihan kalkulator
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime aee5ddb603e62f64a95613c10de769279f00dbc2, sebelumnya b212402e1ee5ad6183928c82c6532fd9e4465ff2. Pesan error bersama12→14px dengan pembungkusan teks; tautan pesan ringkasan14→16px dan hitungan14px. Saat validasi kalkulator gagal, Kembali ke ringkasan kesalahan mengembalikan fokus tanpa membuang input. Enter/Ke isian pertama menuju input invalid. Setelah koreksi50kg dan hitung ulang, ringkasan/pintasan hilang dan fokus menuju hasil3kemasan, sisa30kg, biayaRp180.000. Pintasan mencegah navigasi fragmen native saat JavaScript aktif agar fokus hanya dipindahkan sekali; href tetap tersedia sebagai fallback.
+
+Delapanbaseline/delapankandidat lokal lulus pada320/1440:6alurOwner/PM/Finance dan2Pelaksana403. Dua baseline/duaafterpublik PM lulus invalid→pemulihan→kalkulasi valid. Semua hasil dan fingerprint tabel lokal tetap; RPC hanya calculate dengan lima field yang dikenal pada kelas Calculator dan exactURI dari DOM. Tiga SQLtes/39asersi lulus konversi/pembulatan/unit invalid, snapshotbasis/angka besar/recalculate dan kalkulator+persistensi katalog disposable. SQL dilakukan sebelum koreksi satu handler fokus; backend hashidentik dan UI final diretest penuh. Formula/schema/izin/formatlaporanPDFCSV tidak berubah.
+
+Baselineharness dikoreksi melalui metadata request, URI Livewireberhash dan nama kelas namespace aktual. Notifikasi __dispatch tetap tidak diizinkan; gate notification/pagination lama tidak dinyatakan pulih. Candidate pertama5/6alurpositif lalu fokusFinance1440gagal; satu koreksi preventdefault+fokus/scroll tunggal menghasilkan8kasusfinalPASS. Gatehistory/Esc lama tidakdiretry. Canonical backupterenkripsi/restoredisposable/promosi/autentikasi,4hashruntime/CSSpublik serta3anchorChangeLog lulus. Entri guidebookv2.2yang sebelumnya antre kini ikut terbit; PDF tetap336halaman dan screenshotce511cf7, ralatUIterpisah. UI-09.2/3subset, tidak menambah full36ID/skorvisual. UATmanusia/HPfisik/staging/Ownerpublik/PILOT_READY terbuka; proyekpilotnyata belumdipilih. Demo statis/pricing/trial/produk lain tetap.
+
+[Kalkulator](https://arkarupa-dashboard.vercel.app/kalkulator) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261122-001302).
+
 ### 2026-11-22 — Catatan dokumentasi Arkarupa: manual bergambar v2.2
 
 **CONFIRMED — DOCUMENTATION_LOCAL_VALIDATED; bukan rilis fitur atau UAT.** Guidebook operasional diperjelas menjadi336halaman A4,149screenshot asli pada33kelompok layar,44bookmark dan88tautan. Petunjuk76kelompok model isian kini membedakan identitas klien/proyek/pekerjaan, BUP/opname tambahan versus sertifikat kumulatif, fraction versus persen/rupiah, total komponen manual, ETC biaya sisa dan isi/harga kemasan. Ralat tampilan sesudah snapshot digabung ke PDF. Semua336halaman dirender,13cek aritmetika dan22cek editorial lulus; v2.1 tetap utuh.
