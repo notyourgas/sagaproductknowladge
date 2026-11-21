@@ -1,5 +1,17 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-21 — Arkarupa: tanggal tindak lanjut dan alasan panjang
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `7c5b3842b0528920bacbe50e8077266b4d6645d2`, previous `a5f8f85`. Komponen Pekerjaan berikutnya pada Dashboard dan workspace memakai tanggaldd/mm/yyyy14px dengan ISOdatetime dan urutan sumber tetap. Alasan lebih160karakter dibuka melalui disclosure native Alasan tindak lanjut; alasan pendek tetap terlihat. Identitas proyek/PIC, tanggal dan Tindak lanjuti tidak disembunyikan. Enter/Space membuka; Escape menutup, memulihkan fokus dan membawa summary terlihat setelah pengguna menggulir. Nama akses memuat seluruh teks label terlihat.
+
+32baseline/32final browser Owner/PM/Pelaksana/Finance pada320/1440 dan dua halaman lulus alasan panjang/hasil kosong, sourceexact/dateformat, escapedtext, keyboard/44px/deepscrollfocus, reflow dan URL/project/pencarian/sourceurl tetap. Finance tidak memperoleh kendala lapangan lewat pencarian.32first-after dan32fase label dipertahankan; final32 diulang setelah nama akses/fokusperguliran dilengkapi. Semua businessPOST diblokir, fingerprint seluruhtabel tetap. DuaMySQLtes30asersi membuktikan laporanlama tetap masuk tugas/pencarian/deeplink dan PDFinvoiceklien sesuai scope/integritasfile. SQLsekali sebelum perubahan atributakses/fokus terakhir, service/controller/test tetap. Fixture downstreampinnedaccepted bukan bukti deal baru.
+
+Delapan publicbaseline/delapan after PM pada dua proyek/dua halaman/dua viewport lulus: satu proyek kosong, satu berisi dua tugas dengan satu tanggal. Alasan pendek publik tetap terlihat; alasan panjang positif hanya lokal, tanpa menambahkan tugas atau notifikasi publik. Canonical encryptedbackup/disposablerestore/authsmoke, tiga hash runtime, CSSpublik dan actualChangeLogrender lulus. Rumus/schema/role/query/form/formatlaporanPDFCSV tidak berubah; staticdemo tidak berubah.
+
+KeduaChangeLog dicatat/dibaca ulang; guidebookv2.1 tetap335halaman/hashb25cbbac67b7adf27ecf765d100f81ffda0f6c80d943f8315de7f6d87f54e9e9 dengan ralat terpisah. PDF belum dipublikasikan website. Tidak menambah full-ID36 atau skor visual. Ownerpublik/HPfisik/staging/UAT/proyeknyata/PILOT_READY terbuka; fullsuite/hostedCI NOT_RUN. Tidak mengubah pricing/trial/entitlement atau produk lain.
+
+[Workspace/Pekerjaan berikutnya](https://arkarupa-dashboard.vercel.app/workspace?project=2#project-tasks) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-213229).
+
 ## 2026-11-21 — Arkarupa: ringkasan nota dan navigasi pencocokan
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `a5f8f856502b6ac54ca692a62679a2a91daea0a2`, previous `4ec596e`. Ringkasan rekonsiliasi pada Keuangan/Utang supplier kini menampilkan identitas nota, Total nota tersimpan24px dan tanggaldd/mm/yyyy. Label dan total memakai bidang penuh sehingga nilai tidak terbelah pada320px. Nilai tetap snapshot tersimpan, bukan posting tagihan otomatis. Native Ke rincian pencocokan/Kembali ke ringkasan nota memindahkan fokus tanpa mengganti proyek/tahap atau menghapus filter Hanya baris belum lengkap. Service/rumus/schema/role/form/format laporanPDFCSV tetap.
