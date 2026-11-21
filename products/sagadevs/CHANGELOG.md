@@ -1,5 +1,13 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-21 - Arkarupa: nama proyek dan semua tampilan modul
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `5d6892452b0e35787a4b7bd3c998f7ccbf166da4`. Header modul membungkus nama proyek/wilayah tanpa spasi secara utuh. Semua tampilan membuka seluruh tombol tahap, 44px; Escape meringkas dan memulihkan fokus. Palet monokrom, Plus Jakarta Sans, aset original, komposisi Holsite dan reduced motion dipertahankan.
+
+12 HTTP disposable Owner/PM/Pelaksana pada dua proyek /36 perjalanan dan 8 publik empat peran /22 perjalanan lulus. Meliputi stage Livewire lewat keyboard, indikator aktif, proyek/periode/stage saat refresh dan Back/Forward/return. Hanya update stage dan aksi $set kosong diizinkan probe sesuai Livewire4; tidak ada business POST. Dua koreksi probe mengikuti endpoint dan format payload installed4.4.7; bukti gagal dipertahankan. SQL dua tes41 asersi lulus untuk stok cut-off tanpa future movement/posting serta draft reload/foto/akses lintas proyek. SQL hash dibawa saat retry HTTP, bukan diklaim rerun. Fingerprint bisnis utuh dan cleanup disposable selesai.
+
+Runner kanonik backup/restore73 tabel10 berkas28 migrasi, promosi/auth smoke/runtime exact dan dua Change Log readback lulus. UI-03.3 LULUS;enam ID terdahulu carry menjadi7currentfull,22historicalPASS perlu rekonsiliasi/7open. UI-03.4 baru subset header, tabel padat belum ditutup. Checklist UAT modul disiapkan lokal; review visual/HPfisik/staging/UAT/proyek pilot/PILOT_READY OPEN. Backend/schema/auth/rumus/formatPDFCSV tidak berubah; ekspor tidak diuji ulang. [Modul](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=rap).
+
 ## 2026-11-21 - Arkarupa: caption tahap dan kembali ke workspace
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `db3b2251fcecd0128f8d9f25d4c4f55f3e257f19`. Caption progres tahap maksimal dua desimal dengan tanda perkiraan bila dibulatkan; raw source dipertahankan. Tombol Workspace proyek dan Dashboard proyek terpisah, 44px; periode valid dibawa dari workflow dan metadata invalid dibuang. Monokrom/Plus Jakarta Sans/SVG/reduced motion dipertahankan.
