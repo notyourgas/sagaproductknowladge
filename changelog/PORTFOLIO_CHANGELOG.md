@@ -1,5 +1,15 @@
 # Portfolio Changelog
 
+## 2026-11-21 — Arkarupa: koreksi manual bergambar v2.1 (dokumentasi)
+
+**CONFIRMED — DOCUMENTATION_LOCAL_VALIDATED; NOT_BUSINESS_READY.** Manual operasional bergambar v2.1 menggantikan v2 sebagai file panduan yang direkomendasikan. Inspeksi visual lanjutan menemukan penanda posisi otomatis dashboard v2 tidak sesuai dengan kontrol pada screenshot. V2.1 menghapus semua overlay/legenda koordinat dan menggunakan nama tombol serta kolom dalam tabel referensi per fitur. PDF v2 dan screenshot asli dipertahankan; angka149gambar beranotasi pada catatan historis v2 bukan klaim pemetaan koordinat yang sudah terbukti benar.
+
+V2.1 memiliki335halamanA4,149screenshot asli pada33kelompok layar,43bookmark dan86tautan. Katalog fungsi tombol/kolom, peran/prasyarat/langkah/hasil/pemulihan, alur proyek sampai closeout, RAP/AHSP, backupvolume, BUP/progres, pengadaan, upah dan keuangan tetap. Berkurang389ke335halaman karena legenda duplikat dihapus. Seluruh335halaman dirender, teks searchable, font PlusJakartaSans/InstrumentSerif tertanam dan13cek aritmetika lulus. InstrumentSerif masih interpretasi sementara atas nama IsomensSerif yang belum dikonfirmasi.
+
+PDF `Arkarupa-Manual-Operasional-Bergambar-v2.1.pdf` SHA256 `b25cbbac67b7adf27ecf765d100f81ffda0f6c80d943f8315de7f6d87f54e9e9`; screenshot source `ce511cf7fed496e2d7a7f4affe27c0cb7d4d469b`. Provenance log/source `6a72e1896fb90a97d09b99bc7ef9063ef71396e3`. Ini koreksi dokumentasi lokal, bukan perubahan fitur atau rilis aplikasi. Demo runtime terakhir diverifikasi tetap `4ec596ef3fd5a4664e6b13022cba529e52337d17`; PDF baru belum dipublikasikan di website. Source Change Log sudah mencatat koreksi tetapi menunggu paket runtime berikutnya. Tidak menambah full-ID36 atau skor desain. Capture sintetis bukan fullworkflowUAT; perangkatfisik/Ownerpublik/staging/proyeknyata/PILOT_READY tetap terbuka. Tidak mengubah pricing/trial/permission/schema atau produk lain.
+
+[Dashboard demo](https://arkarupa-dashboard.vercel.app/) · [Panduan dalam aplikasi](https://arkarupa-dashboard.vercel.app/panduan-demo). Jangan menganggap seluruh fixture buku tersedia pada demo publik.
+
 ## 2026-11-21 — Arkarupa: draf nota dan navigasi penerimaan terkait
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `4ec596ef3fd5a4664e6b13022cba529e52337d17`, previous `7fb3cac`. Riwayat nota menampilkan status Draf tersimpan, nomor18px, total20px, tanggal14px serta garis netral untuk draf aktif. Angka riwayat tetap dari snapshot yang tersimpan, berbeda dari input editor yang belum disimpan dan tidak berarti posting biaya. Editor memiliki pintasan native Ke penerimaan terkait dan Kembali ke editor draf; fokus berpindah ke heading tanpa mengganti proyek/tahap atau menyimpan otomatis. Guard peran, service/form/schema/formula dan format PDF/CSV tetap.
