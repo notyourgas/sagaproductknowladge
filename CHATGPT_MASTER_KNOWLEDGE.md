@@ -1,5 +1,13 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-21 - Arkarupa: aktual terverifikasi dan fokus riwayat workspace
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `da269fce6a3600befeb07e3262e41aa412b255f1` menegaskanactualtersedia dengan bidanggelapnetral danangka/outlineputih. Target danactualnull/tanpabaseline tetapbidangterang;persen/rawsource/versi/cutoff tidakberubah. Monokrom,PlusJakarta,SVG,geometriHolsite danreducedmotion dipertahankan.
+
+Back/Forward/refresh pada hashbagianworkspace kini memulihkanfokus kebagianyangsesuai;sebelumnyaBackkePekerjaan masihfokusDokumen,refreshfokusbody. Hanyahashyangada pada navigasi sesuaiizin ditangani;anchorbalikdetailprogres tetapbekerja.16actualHTTPcandidate PM/Pelaksana baselineactual0/missingbaseline/namapanjang dan8publicactualfractional pada320/390normal/900/1440reduced lulusheader/rawexact/sourceGET200/projectcutoff/fokus/aria-current/zeroPOST/reflow. Dua tesMySQLdisposable24asersi membuktikancutoff/lateverification sertaCSVabsensifilter/formulaneutralization. FingerprintbisnisHTTPtetap,DB/serverdibersihkan. Backend/schema/auth/rumus/formatPDFCSV tidakdiubah;PDFtidakdiujiulang.
+
+Backupterenkripsi/restoredisposable73tabel10berkas28migrasi,promosi/authsmoke,runtime3file/publicCSSexact lulus. KeduaChangeLog ditulis/dibacaulang. **UI-03.2 LULUS pada kandidatini.**5fullPASS laincarry;6currentfullPASS,23historicalPASSperlurekonsiliasi,7historicalopen tetap. UI03.3masihsubsetinternalhash,bukansemuaalurantarhalaman. Bukan persentaseimplementasi/signoffvisual. ReviewAndreas/Ownerbrowserpublik/HPfisik/screenreader/staging/UAT/proyekpilotnyata/PILOT_READYOPEN. Demostatis tidakberubah. [Workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2#workspace-level2).
+
 ## 2026-11-21 - Arkarupa: KPI langsung terbaca dan sumber berizin
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `e902143a540eea76816754fc0a7117d1446d1d7c` mengecualikan kartuKPI dari entryfade320ms/stagger480ms agar angka langsungterbaca. Monokrom,PlusJakarta,SVG,gradien/layout/nilai utuh dipertahankan;animasi nonKPI/teks eksplisit danreducedmotion tetap. Fokusawal Detail sumber kini konsistenke pencarian:12/12dialogpublik dan14/14lokal,sebelumnya8/12baseline. Nomatch→kosong,Escapepertama clearquery,Escapekedua tutup/fokuskembaliKPI;total tidakberubah.
