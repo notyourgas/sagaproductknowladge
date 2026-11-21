@@ -1,5 +1,17 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-21 — Arkarupa: baseline Change Log terblokir, rilis tidak dilakukan
+
+**CONFIRMED — BLOCKED_NO_UI_RELEASE; NOT_BUSINESS_READY.** Source dokumentasi d6b7a43d3eeddc97b4fe7c3b99507c958420e4f2 hanya menambah catatan run terblokir. Runtime terakhir tetap 8f0e9b7a8da4bf536b0b669f81d41cc80fc67ff0; service dan CSS publik exact dibaca ulang. Tidak ada implementasi/publikasi UI baru atau redeploy hanya untuk checkpoint.
+
+Rancangan label snapshot teknis historis dan pencarian lokal Change Log disiapkan sebagai patch terpisah, belum diterapkan. Baseline browser tidak lengkap: satu kasus Owner320 membuka701entri lulus; desktop/peran lain belum selesai. Kegagalan awal meliputi native Node Windows exit-1073740791 dan screenshot timeout, lalu selector ambigu karena dua native details berbagi nama. Dua correction rounds dipakai untuk serialisasi browser/Chrome tanpaGPU dan selector unik. Percobaan terakhir gagal karena runner menganggap navigasi URL sama selalu mengembalikan respons HTTP; respons null dibaca statusnya. Ini kesalahan asumsi alat, bukan bukti aplikasi rusak. Gate dihentikan sesuai sagadevs-deployment; tidak mengganti nama kandidat untuk mereset batas.
+
+Tiga tes SQL independen/44asersi lulus untuk katalog company-scoped/read-only, akses akun scoped/reversible/revocation dan draf server/revisi serentak. Database disposable dihapus dan proses owned berhenti. Gate Esc workspace dan pagination RPC lama tidak diretry. Format PDF/CSV, data, formula, schema dan akses produk tidak berubah.
+
+Kedua Change Log source ditulis/dibaca ulang, histori/tanggal dipertahankan. Entri publik run23.23 antre untuk rilis fitur lulus berikutnya; belum ditampilkan sebagai rilis baru. Owner publik belum diuji karena password item vault belum tersedia; tidak direset. Tidak menambah full-ID36, skor visual atau PILOT_READY. Staging/HPfisik/UAT/proyek nyata tetap terbuka; guidebookv2.1 tetap335halaman. Fullsuite/hostedCI NOT_RUN. Demo statis/produk lain tetap.
+
+PIC executor/QA: pisahkan pemeriksaan status HTTP dari navigasi hash/URL sama; siapkan penanganan null yang tetap memverifikasi status dokumen, lalu review langkah unblock sebelum retry. [Tautan rilis terakhir terverifikasi](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-230801).
+
 ## 2026-11-21 — Arkarupa: tanggal foto terbaca dan pemulihan pencarian
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime 8f0e9b7a8da4bf536b0b669f81d41cc80fc67ff0, sebelumnya b706c31. Nama lokasi foto 14→16px; tanggal ISO 13px menjadi dd/mm/yyyy 14px dengan datetime ISO tetap. Pencarian menerima ISO maupun bentuk tampilan. Kondisi tanpa hasil mempunyai Tampilkan semua foto: query dikosongkan, fokus kembali ke pencarian dan pilihan foto tetap pada formulir. Tidak menerbitkan laporan atau mengubah file/data karena pencarian dipulihkan. Komposisi Holsite, monokrom, Plus Jakarta Sans, ikon existing dan reduced motion tetap.
