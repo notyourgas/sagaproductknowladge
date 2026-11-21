@@ -1,5 +1,17 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-21 — Arkarupa: tautan Portal Klien terbaca dan salin dengan pemulihan
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime b706c313a5f7f7535a49126b92e08b43e9578b35, sebelumnya d03f13a. Label dan URL Portal Klien14→16px, petunjuk13→14px dalam panel monokrom. Salin tautan memakai Clipboard API native dan konfirmasi setelah berhasil; saat ditolak, URL readonly dipilih dan petunjuk menyalin manual muncul. Pilih tautan tetap tersedia. Pola clipboard memakai implementasi existing Change Log; inputtext readonly/inputmodeurl mendukung seleksi native yang dapat diperiksa. Tidak menerbitkan laporan, mengirim pesan, mengubah akses klien atau menerbitkan data karena menyalin URL.
+
+16baseline/16kandidat lokal pada empat peran, dua proyek dan320/1440 lulus:8alur Owner/PM mencakup8salin native,8fallback ditolak terkontrol,8retry;8kasus Pelaksana/Finance tanpa kontrol penerbitan. Draf judul, URL, proyek, sumber dan data tetap; seluruh POST diblokir setelah login dan fingerprint seluruh tabel identik. Empat baseline/empat after publik PM membuktikan native clipboard, fallback, retry dan reflow pada dua proyek320/1440. Tidak ada koreksi harness pada run ini.
+
+Tiga tes SQL baru/282asersi lulus saldo satu mandor per divisi/proyek, portal hanya progres terverifikasi/foto dipilih/klien ditugaskan, dan integritas/scope PDF invoice. Rumus, schema, gate, query serta format PDF/CSV tetap. Canonical backup terenkripsi/restore disposable, promosi segar/auth smoke, tiga hash runtime/CSS publik dan render Change Log lulus. Kedua Change Log dibaca ulang. Guidebookv2.1 tetap335halaman dengan ralat terpisah untuk kontrol baru.
+
+Ini irisan independen dari gate Esc pemilih bagian dan pagination RPC lama; keduanya tetap BLOCKED/tidak diretry. Tidak menambah full-ID36 atau skor visual. Fullsuite/hostedCI, Owner publik, HPfisik, staging, UAT manusia dan PILOT_READY belum dibuktikan. Proyek pilot nyata belum dipilih. Demo statis/pricing/trial/entitlement/produk lain tetap.
+
+[Portal Klien dalam workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2#client-report-heading) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-225301).
+
 ## 2026-11-21 — Arkarupa: keterbacaan tahap workspace; Esc masih terblokir
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime d03f13a0cfb086caba5a46aafafc2c327f22fb63, sebelumnya 8818f778. Judul kartu tahap proyek14→16px dan keterangan12→14px. Komposisi Holsite, monokrom, Plus Jakarta Sans, SVG original dan reduced motion tetap. Hanya CSS dan Change Log dirilis; template workspace, sumber data, navigasi, gate, formula, schema dan format PDF/CSV tidak berubah.
