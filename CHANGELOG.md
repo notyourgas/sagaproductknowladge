@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-21 - Arkarupa: caption tahap dan kembali ke workspace
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `db3b2251fcecd0128f8d9f25d4c4f55f3e257f19`. Caption progres tahap maksimal dua desimal dengan tanda perkiraan bila dibulatkan; raw source dipertahankan. Tombol Workspace proyek dan Dashboard proyek terpisah, 44px; periode valid dibawa dari workflow dan metadata invalid dibuang. Monokrom/Plus Jakarta Sans/SVG/reduced motion dipertahankan.
+
+12 HTTP disposable dengan 36 perjalanan dan 8 publik dengan 22 perjalanan lulus, termasuk proyek/periode, Back/Forward/refresh, fokus dan zero business POST. Dua tes MySQL disposable/31 asersi lulus untuk identitas progres dan pemulihan draf/concurrent revision. Kegagalan Blade dan probe navigasi diperbaiki lokal, verifikasi diulang dan bukti lama dipertahankan. Backend/schema/auth/rumus/format ekspor tidak berubah; PDF/CSV tidak diuji ulang.
+
+Runner kanonik backup/restore disposable 73 tabel/10 berkas/28 migrasi, promosi/auth smoke serta runtime exact lulus. Kedua Change Log readback lulus. Enam ID full sebelumnya carry; UI-03.3 masih subset karena stage asinkron belum diuji. 23 historical PASS memerlukan rekonsiliasi, 7 open; bukan 36/36 atau skor visual. HP fisik/review visual/staging/UAT/proyek pilot nyata/PILOT_READY OPEN. [Workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2#workspace-workflow).
+
 ## 2026-11-21 - Arkarupa: koreksi kontras angka aktual workspace
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Sourcekoreksi `dbf031f894b0a1a2c49e92430c4661859419dbe9` menggantikan `da269fce6a3600befeb07e3262e41aa412b255f1`. Claimvisual/UI-03.2LULUS pada da269fc danentri knowledge495e7ec **DICABUT/DEPRECATED**: pemeriksaangambar setelahassertddputih menemukanangka strong masihgelapdiatasgelap. Riwayatdipertahankansebagaibuktikoreksi.
