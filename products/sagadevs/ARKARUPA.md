@@ -1,5 +1,15 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-21 — Arkarupa: draf nota dan navigasi penerimaan terkait
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `4ec596ef3fd5a4664e6b13022cba529e52337d17`, previous `7fb3cac`. Riwayat nota menampilkan status Draf tersimpan, nomor18px, total20px, tanggal14px serta garis netral untuk draf aktif. Angka riwayat tetap dari snapshot yang tersimpan, berbeda dari input editor yang belum disimpan dan tidak berarti posting biaya. Editor memiliki pintasan native Ke penerimaan terkait dan Kembali ke editor draf; fokus berpindah ke heading tanpa mengganti proyek/tahap atau menyimpan otomatis. Guard peran, service/form/schema/formula dan format PDF/CSV tetap.
+
+10baseline/10kandidat browser Owner/Purchasing/Finance pada320/1440 lulus drafbaru/aktif/nomor panjang, totalexact, reflow, Enter/fokus/konteks dan input sementara yang terjaga saat bolak-balik. Finance tanpa manage-purchase tetap tidak memiliki editor/pintasan. Fingerprint semua tabel utuh; hanya RPC pembacaan/openNote atau state component. Dua tesMySQL75asersi lulus save/reopen/revisi/idempotency serta drafttanpapostingstockcostcash dan upload/privateattachment/projectroleisolation.
+
+Canonical encrypted backup/restore73tabel/10berkas/28migrasi, auth smoke, tiga hash runtime, CSS publik serta render Change Log lulus. Empat baseline/empat publik Purchasing pada dua proyek320/1440 membuktikan kondisi editor baru/kosong dan nativejump; riwayat terisi/aktif positif hanya lokal karena tidak ada nota pada fixture publik, tanpa membuat nota publik. UAT manusia/perangkat fisik/Owner publik/staging/proyek nyata/PILOT_READY tetap terbuka. Guidebookv2 snapshotce511cf dipertahankan dengan ralat terpisah; kedua Change Log diperbarui/dibaca ulang. Tidak ada full-ID36 atau skor desain baru; fullsuite/hostedCI NOT_RUN.
+
+[Draf nota demo](https://arkarupa-dashboard.vercel.app/pengadaan?project=2&stage=nota) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-204426). Static demo tidak berubah. Tidak mengubah pricing, trial, entitlement atau produk Saga lain.
+
 ## 2026-11-21 — Arkarupa: validitas penawaran dan navigasi dokumen resmi
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `7fb3cacd193d3ef1e30c2355803a4731c9bfa17d`, previous `ce511cf`. Tanggal masa berlaku kini berlabel dd/mm/yyyy18px di histori dan versi penawaran terpilih. Kondisi issued yang sudah lewat tanggal memakai garis putus-putus netral dan petunjuk meninjau penerimaan; predicate dan aturan expiry server tidak berubah. Pratinjau menyebut versi, dibedakan dari dokumen terbit, serta memiliki pintasan native Ke status & PDF resmi yang memindahkan fokus ke panel dokumen tanpa mengganti proyek/tahap. Nomor dan tautan HTML/PDF tetap berasal dari versi sumber; keadaan belum terbit dijelaskan. Server/schema/rumus/izin/form dan format PDF/CSV tidak berubah.
