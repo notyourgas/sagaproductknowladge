@@ -1,5 +1,9 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-21 - Arkarupa: verifikasi monokrom dan catatan publik
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `5521161f25d5a5d81f6bde91f0c09f75f003042a` hanya menerbitkan Change Log verifikasi: pewarnaan monokrom sudah ada pada baseline, bukan fitur warna baru. CSS publik exact, 1340 literal hex netral, pemeriksaan autentik PM pada HP390/desktop1440 lulus computed palette/font Plus Jakarta Sans dan nol POST bisnis. Holsite geometry/navigation dipertahankan; grafik memakai label/garis utuh-putus. Kedua Change Log dibaca balik; runner backup/restore disposable 73 tabel/10 file/28 migrasi dan public smoke lulus. Data, schema, izin dan PDF/CSV tidak berubah; 8 current full carried/21 historical reconciliation/7 open tetap. HP fisik, staging, UAT dan PILOT_READY tetap terbuka. [Dashboard](https://arkarupa-dashboard.vercel.app/).
+
 ## 2026-11-21 - Arkarupa: rincian keuangan proyek berlabel dan tautan Keuangan
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `32a6754e009d4e008b23cab05a2d38a046b0a426`. AP/AR/forecast/EAC yang sebelumnya satu paragraf kini empat bidang DL berlabel, angka16px dan kartu monokrom responsif. Tautan BukaKeuangan dengan count aktual dan nama proyek ditempatkan setelah daftar dokumen, hanya bila count>0. Tujuan tetap Keuangan proyek; tidak menjanjikan filter dokumen otomatis. Status/versi/sumber/N/A/nilai tetap, dan cut-off progres tetap dibedakan dari waktu pembacaan saldo saat ini.
