@@ -1,5 +1,14 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-21 - Arkarupa: konteks proyek dari workspace ke akses tim
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; OWNER_UI_LOCAL_VALIDATED; NOT_BUSINESS_READY.** Source/runtime `da0974e09f1859803fde0ee62c26f7b5b5407f50`, previous `4589dd8`. Workspace sekarang memiliki tautan **Atur akses tim** khusus Owner. Halaman Akun & peran menampilkan kartu konteks monokrom dengan nama proyek18px, ID, wilayah dan petunjuk penugasan manual. Nama sangat panjang membungkus. Enter memindahkan fokus ke judul; konteks bertahan setelah membuka editor anggota. Browser Back kembali ke URL asal; tautan Workspace proyek kembali ke proyek yang sama dengan fokus pada pintasan, tanpa menjanjikan periode historis. Membuka pengaturan tidak menugaskan akun otomatis.
+
+ProjectContext existing dipakai; query ID malformed/array/lintas perusahaan ditolak404.16baseline/16candidate HTTP disposable (8Owner dan8batas QS/PM) pada320/390/768/1440 dengan reduced motion lulus. Seluruh tabel fingerprint dan relasi penugasan utuh; tidak ada POST bisnis.3tesMySQL78asersi lulus konteks/sesi/read-only serta report/source roleprojection dan unduhan privat. Satu koreksi tes pivot compositekey, failedproof dipertahankan. Model/izin bisnis, rumus, schema dan format PDF/CSV tidak berubah.
+
+Canonical runner backup terenkripsi/restore73tabel10file28migrasi dan smoke autentikasi lulus;5hash runtime/CSS publik/exclusion test/render Change Log cocok. Sebelum/sesudah publik: anonimlogin danPM403 tanpa POST bisnis. Owner publik belum diuji karena item vault relevan belum mempunyai password; tidak direset. PDF panduan v1 tetap40halaman dengan hash/tanggal asli, ralat navigasi disiapkan terpisah. Tidak ada fullID36/levelvisual baru; staging/UAT/HPfisik/PILOT_READY tetapOPEN. [Workspace proyek](https://arkarupa-dashboard.vercel.app/workspace?project=1#workspace-team-link), [Akses tim (Owner)](https://arkarupa-dashboard.vercel.app/fondasi?stage=akun&project=1#team-project-context), [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-182154).
+
+
 ## 2026-11-21 - Arkarupa: pilihan proyek tim dan penutupan popup akses
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; OWNER_UI_LOCAL_VALIDATED; NOT_BUSINESS_READY.** Source/runtime `4589dd8377501c461e4a61dc2cc8b6a93e9a9fcd`, previous `92605d9`. Pilihan akses proyek menampilkan nama 15px terpisah dari nomor/wilayah 13px pada kartu monokrom dengan checkbox existing; nama panjang membungkus dan fokus keyboard terlihat. Setelah simpan akun/akses berhasil, form yang dihapus kini diikuti close-modal eksplisit dan fokus kembali ke Ubah akses. Validasi gagal tetap membuka popup dan menjaga input. TeamCommands, model/izin, perhitungan, schema dan format PDF/CSV tidak diubah.
