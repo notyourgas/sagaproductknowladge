@@ -1,5 +1,17 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-21 — Arkarupa: tanggal foto terbaca dan pemulihan pencarian
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime 8f0e9b7a8da4bf536b0b669f81d41cc80fc67ff0, sebelumnya b706c31. Nama lokasi foto 14→16px; tanggal ISO 13px menjadi dd/mm/yyyy 14px dengan datetime ISO tetap. Pencarian menerima ISO maupun bentuk tampilan. Kondisi tanpa hasil mempunyai Tampilkan semua foto: query dikosongkan, fokus kembali ke pencarian dan pilihan foto tetap pada formulir. Tidak menerbitkan laporan atau mengubah file/data karena pencarian dipulihkan. Komposisi Holsite, monokrom, Plus Jakarta Sans, ikon existing dan reduced motion tetap.
+
+16 baseline dan16 kandidat lokal lulus pada320/1440:4alur foto positif Owner/PM,4keadaan tanpa foto dan8kasus peran terbatas. Enter/Space, ISO/tanggal tampilan, sumber, pilihan, hash unduhan PNG privat dan reflow lulus; seluruh POST diblokir dan fingerprint tabel tetap. Fixture mempunyai5foto privat terverifikasi melalui FieldCommands. Helper RAP/kontrak/jadwal memakai accepted quote yang dipatok untuk uji downstream; ini bukan bukti penerimaan penawaran atau UAT komersial. Empat baseline/empat after publik PM semuanya0foto eligible: hanya kondisi kosong dan tipografi jumlah yang diverifikasi publik. Bukti positif pemulihan foto hanya lokal. Tidak menambah data publik untuk menciptakan bukti.
+
+Tiga tes SQL baru/49asersi lulus pemakaian material tanpa posting ulang biaya/progres, reload/reject laporan/izin foto/isolasi lintas proyek, dan snapshot termin portal opt-in/frozen/revocable. Formula, schema, gate, query server dan format PDF/CSV tetap. Canonical backup terenkripsi/restore disposable, promosi segar/auth smoke, tiga hash runtime/CSS publik dan render Change Log lulus. Kedua Change Log dibaca ulang. Guidebookv2.1 tetap335halaman dengan ralat UI terpisah.
+
+Gate Esc pemilih bagian dan pagination RPC lama tetap BLOCKED/tidak diretry. Tidak menambah full-ID36 atau skor visual. Fullsuite/hostedCI, Owner publik, HPfisik, staging, UAT manusia dan PILOT_READY belum dibuktikan. Proyek pilot nyata belum dipilih. Demo statis/pricing/trial/entitlement/produk lain tetap.
+
+[Pemilih foto Portal Klien](https://arkarupa-dashboard.vercel.app/workspace?project=2#portal-photo-selector) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-230801).
+
 ## 2026-11-21 — Arkarupa: tautan Portal Klien terbaca dan salin dengan pemulihan
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime b706c313a5f7f7535a49126b92e08b43e9578b35, sebelumnya d03f13a. Label dan URL Portal Klien14→16px, petunjuk13→14px dalam panel monokrom. Salin tautan memakai Clipboard API native dan konfirmasi setelah berhasil; saat ditolak, URL readonly dipilih dan petunjuk menyalin manual muncul. Pilih tautan tetap tersedia. Pola clipboard memakai implementasi existing Change Log; inputtext readonly/inputmodeurl mendukung seleksi native yang dapat diperiksa. Tidak menerbitkan laporan, mengirim pesan, mengubah akses klien atau menerbitkan data karena menyalin URL.
