@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-21 — Arkarupa: label perbandingan VO dan kembali ke lingkup
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `db23bafe010614f53195703d4c7c771267f6917d`, previous `62af4a0`. Volume dan nilai jual Sebelum–Sesudah VO kini berlabel dengan angka 16px memakai pola metrics existing. Setiap VO memiliki heading perbandingan dan tautan native kembali dari bagian bawah. Enter membawa fokus ke heading VO yang sama; proyek/tahap tetap. Form, izin, rumus quantity/money, backend, schema dan format PDF/CSV tidak berubah.
+
+Delapan baseline/delapan kandidat HTTP Owner/PM pada 320/390/768/1440 lulus kesamaan nilai/lingkup dan role projection, reflow, return focus, modal serta zero POST bisnis. Semua tabel fingerprint utuh. Tiga baseline/tiga publik PM pada 320/390/1440 juga lulus. Dua tes MySQL/26 asersi lulus identitas ruangan/snapshot awal VO dan PDF invoice klien berdasarkan cakupan laporan/integritas file. Hipotesis Tab tertutup dock tidak terbukti pada baseline; satu koreksi ekspektasi runner dan screenshot/output gagal dipertahankan. Native Tab sudah clear pada Komersial/Workspace; Javascript/dock bersama tidak diubah, bukan klaim bug dock diperbaiki.
+
+Canonical encrypted backup/restore 73 tabel/10 berkas/28 migrasi, auth smoke, tiga hash runtime/CSS publik dan render Change Log lulus. Lembar UAT manusia ditambah skenario VO/kembali. HP fisik/Safari, Owner publik, staging/UAT dan PILOT_READY tetap terbuka; tidak ada full ID/36 atau skor visual baru. [VO demo](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=kontrak#vo-comparison-1), [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-185454).
+
+
 ## 2026-11-21 — Arkarupa: nilai kontrak dan syarat pembayaran ringkas
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `62af4a0e545dc8c5784653a0c5db81636e5b73b8`, previous `da0974e`. Nilai kontrak diberi label dan ukuran 28px pada HP hingga 36px desktop, dibanding 24px sebelumnya. Nilai awal/versi tetap. Eksposur VO belum diterapkan diberi bidang monokrom dan tetap terpisah dari nilai kontrak. Syarat pembayaran dan milestone dipindah ke disclosure native: DP, retensi, tenggat dan durasi berlabel; recovery serta milestone memakai sumber yang sama. Enter/Space membuka, Escape menutup dan mengembalikan fokus; refresh menutup rincian tanpa mengganti proyek/tahap.
