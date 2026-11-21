@@ -1,5 +1,13 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-21 - Arkarupa: kandidat sumber KPI tertahan autofocus desktop
+
+**CONFIRMED — LOCAL_IMPLEMENTED_BLOCKED, NOT_RELEASED.** Kandidat lokal `f193342bd3d5f03917333db02bdd45791b5534a7`. Demo publik aktif/terakhir terverifikasi `7cb627cfe621ceadca9d2baa49177dbf45f66c64` tetap, source/service/tiga file/CSS publik cocok. Tabel sumber KPI lokal berubah tiga menjadi dua kolom dengan nama proyek sebagai tautan44px, label KPI+proyek/deskripsi nilai, semantic rowheader, judul14px/latartransparan dan HP cards monokrom. Perubahan ini belum tersedia pada demo publik.
+
+36 baseline HTTP Owner/Finance/Pelaksana dan24 baseline publik PM/Finance/Pelaksana pada320/768/900/1440 lulus pada kode aktif sebelum perubahan. Kandidat gagal gate Finance portfolio1440: autofocus pencarian tidak tiba hingga5detik. Correction1 memperjelasfont/background dan menunggu linkvisible sesudah Escape filter; correction2 menunggu fokusaktual tanpa focusmanual menggantikan jeda250ms, tetap gagal. Batas dua correction tercapai; tidak ada promosi, full PASS atau kenaikan skor visual. PICFrontendQA perlu merekam activeElement/urutan ark-dialog dan fokus Filament sebelum memperbaiki akar penyebab; tidak menunggu keputusan pengguna.
+
+Dua tes SQL51 asersi lulus settlementuangmuka/refund/internaltransfer/existingcost tanpa biaya ganda dan paginasiDashboard/total/missing/review/izinLivewire. Bukti SQL asli dipertahankan dengan hash setelah koreksi CSS saja; PHP/backend/tests tetap. Gagalprobe dipertahankan dan DB/server disposable ditutup. Schema/backend/rumus/KPIraw/URL/form/izin/PDFCSV tidak berubah. Kedua Change Log lokal ditulis/dibacaulang; entri run ini di tab publik menunggu kandidat fitur lulus.8 current full milik kodeaktif tidak dipindah ke kandidat WIP;21 historis perlu rekonsiliasi/7 open. Monokrom/PlusJakarta/reducedmotion/Holsite tetap. Demo statis unchanged; full suite/PDFCSV/HP fisik/screen reader/staging/UAT/proyek pilot/PILOT_READY OPEN atau NOT_RUN. [Dashboard terakhir terverifikasi](https://arkarupa-dashboard.vercel.app/#dashboard-level2).
+
 ## 2026-11-21 - Arkarupa: rincian komponen RAP yang dapat diringkas
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `7cb627cfe621ceadca9d2baa49177dbf45f66c64`. Rincian komponen RAP yang sebelumnya kalimat rapat kini memisahkan nama tebal dan jumlah x harga, dengan batas/ritme netral. Disclosure native terbuka default menampilkan jumlah komponen; Space/Enter/click membuka/menutup dengan fokus tetap. Volume/biaya pekerjaan tetap terlihat; pencarian dan reset mempertahankan pilihan buka/tutup. Palet monokrom, Plus Jakarta Sans dan reduced motion tetap; tidak ada JavaScript/controller baru.
