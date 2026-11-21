@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-11-21 — Arkarupa: keterbacaan tahap workspace; Esc masih terblokir
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime d03f13a0cfb086caba5a46aafafc2c327f22fb63, sebelumnya 8818f778. Judul kartu tahap proyek14→16px dan keterangan12→14px. Komposisi Holsite, monokrom, Plus Jakarta Sans, SVG original dan reduced motion tetap. Hanya CSS dan Change Log dirilis; template workspace, sumber data, navigasi, gate, formula, schema dan format PDF/CSV tidak berubah.
+
+16baseline/16visual-after empat peran, proyek seed/kosong dan320/1440 lulus keterbacaan/reflow; sumber kartu, tautan dan progres identik. Seluruh POST diblokir setelah login dan fingerprint seluruh tabel tetap. Tiga tes SQL final/53asersi lulus koreksi pemakaian stok sekali/histori/izin, periode GET workspace valid-invalid, konteks akses tim read-only. Empat baseline/empat after publik PM pada dua proyek320/1440 membuktikan keterbacaan dan sumber yang sama tanpa POST. Canonical backup terenkripsi/restore disposable, promosi segar, auth smoke, dua hash runtime/CSS publik dan render Change Log lulus.
+
+**UX Esc BLOCKED, PATCH EXCLUDED.** Urutan keyboard Semua bagian belum selesai setelah dua koreksi gate fokus: tunggu async dan pembatalan hash-focus tertunda. Final timeout30s pada PM/proyek kosong setelah5kasus. Patch dan kegagalan disimpan; template workspace dikembalikan ke sumber sebelumnya sebelum tes final. Tidak dirilis, tidak diberi PASS, tidak diulang dengan nama kandidat lain. Dua koreksi baseline harness (selector label dinamis/ekspektasi role) terpisah dari gate fokus tersebut. PIC executor berikutnya perlu mengisolasi kondisi expanded/hash/activeElement pada kasus terakhir sebelum langkah unblock. Gate pagination RPC lama juga tetap BLOCKED/tidak diretry.
+
+Kedua Change Log dibaca ulang. Guidebookv2.1 tetap335halaman dengan ralat visual terpisah; bukan panduan fitur Esc baru. Tidak menambah full-ID36/skor visual. Fullsuite/hostedCI, Owner publik, HPfisik, staging, UAT manusia dan PILOT_READY belum dibuktikan. Proyek pilot nyata belum dipilih. Demo statis/pricing/trial/entitlement/produk lain tetap.
+
+[Tahap proyek workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2#workspace-workflow) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-223330).
+
 ## 2026-11-21 — Arkarupa: identitas dokumen dan filter jenis kosong lokal
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime 8818f778e8d5d1259990642f403574c7734088f7, previous7c5b384. Dokumen proyek pada Dashboard/workspace memakai identitas16px dan waktu Dicatat dd/mm/yyyyHH:mm14px; ISO/waktu sumber tetap, tanpa konversizona baru. Checkbox Sembunyikan jenis kosong hanya menyaring kartujenis tanpa entri pada halaman ini. Jumlah sumber, pencarian, proyek, halaman, URL dan berkas tetap; uncheck memulihkan semua jenis. Jika seluruhjenis pada halaman kosong, petunjuk menjelaskan cara memulihkan tampilan. Default menampilkan semua jenis. Palet monokrom dan PlusJakartaSans tetap.
