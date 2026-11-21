@@ -1,5 +1,14 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-21 - Arkarupa: pilihan proyek tim dan penutupan popup akses
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; OWNER_UI_LOCAL_VALIDATED; NOT_BUSINESS_READY.** Source/runtime `4589dd8377501c461e4a61dc2cc8b6a93e9a9fcd`, previous `92605d9`. Pilihan akses proyek menampilkan nama 15px terpisah dari nomor/wilayah 13px pada kartu monokrom dengan checkbox existing; nama panjang membungkus dan fokus keyboard terlihat. Setelah simpan akun/akses berhasil, form yang dihapus kini diikuti close-modal eksplisit dan fokus kembali ke Ubah akses. Validasi gagal tetap membuka popup dan menjaga input. TeamCommands, model/izin, perhitungan, schema dan format PDF/CSV tidak diubah.
+
+Delapan baseline dan delapan kandidat HTTP Owner/QS pada 320/390/768/1440, reduced motion/normal, lulus pilihan tiga proyek, nama panjang, Enter/Space, fokus balik, validasi gagal dan status akses QS 200/403. Delapan perubahan izin per fase dilakukan sengaja hanya pada database disposable; penugasan asal, nama dan hash password tetap, tanpa membuat RAP/quote. Tiga tes MySQL/31 asersi lulus simpan/nonaktif/reaktif, Owner guard, isolasi perusahaan/proyek serta unduhan lampiran privat. Dua kendala runner baseline diselesaikan sebelum edit fitur; failed proof dipertahankan. Canonical recovery 73 tabel/10 file/28 migrasi, auth smoke, hash empat file runtime, CSS publik, test exclusion dan render Change Log lulus. Anonim diarahkan ke login; PM tetap 403 pada Pengaturan, sebelum/sesudah rilis tanpa POST bisnis.
+
+Owner UI publik belum diuji karena kredensial demo Owner belum tersedia; local Owner PASS dibedakan dari public Owner UAT. Panduan v1 tetap snapshot lama; ralat alur popup disiapkan tanpa mengganti hash/tanggal PDF. Tidak ada full ID/36 atau level visual baru; perangkat fisik, staging/UAT dan PILOT_READY tetap terbuka. [Akun & peran (Owner)](https://arkarupa-dashboard.vercel.app/fondasi?stage=akun), [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-180153).
+
+
 ## 2026-11-21 - Arkarupa: guidebook penggunaan RAP, volume dan progres
 
 **CONFIRMED — GUIDEBOOK_LOCAL_DELIVERED; CHANGE_LOG_DEMO_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Guidebook v1.0, 40 halaman A4, mencakup akses/proyek, survei dan backup volume, RAP/AHSP, margin/markup, penawaran/negosiasi/kontrak/VO, baseline, BUP/koreksi, progres berbobot/Kurva S, tim/absensi, pengadaan/stok/upah, forecast, tagihan/kas, laporan/portal dan penutupan. Terdapat checklist, rumus dan lembar ukur/BUP cetak. Dokumen memakai Plus Jakarta Sans dan Instrument Serif tertanam, 52 tautan, 40 bookmark dan teks yang dapat dicari. Seluruh 40 halaman dirender dan batas layout diperiksa; 10 contoh aritmetika lulus, termasuk service Measurement dan QuantityCalculator aktual. PDF diserahkan sebagai file lokal melalui chat, belum menjadi unduhan publik website. Hash PDF `0f5a70c150c1e9763c7bff1e1f9ea39b1615943432db4ed0229a63c17d0af9a3`.
