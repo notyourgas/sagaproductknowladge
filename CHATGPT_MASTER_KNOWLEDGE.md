@@ -1,5 +1,19 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-21 — Arkarupa: identitas dokumen dan filter jenis kosong lokal
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime 8818f778e8d5d1259990642f403574c7734088f7, previous7c5b384. Dokumen proyek pada Dashboard/workspace memakai identitas16px dan waktu Dicatat dd/mm/yyyyHH:mm14px; ISO/waktu sumber tetap, tanpa konversizona baru. Checkbox Sembunyikan jenis kosong hanya menyaring kartujenis tanpa entri pada halaman ini. Jumlah sumber, pencarian, proyek, halaman, URL dan berkas tetap; uncheck memulihkan semua jenis. Jika seluruhjenis pada halaman kosong, petunjuk menjelaskan cara memulihkan tampilan. Default menampilkan semua jenis. Palet monokrom dan PlusJakartaSans tetap.
+
+32baseline/32candidate Owner/PM/Pelaksana/Finance320/1440 pada dua halaman/berisi-kosong lulus label/date/datetime/reflow, Space/touch44px, fokus/count/URL/search tetap, privatePDFhashexact dan roleprojection. SeluruhPOST diblokir, fingerprint seluruhtabelutuh. Fixture mempunyai45lampiranbaru ditambah1seed sehingga46sumber/6entrihalaman3; asumsi awal5dikoreksi pada harness sebelumeditaplikasi, bukti gagal disimpan.
+
+TigaSQLbaru34asersi lulus: konversisatuan/pembulatankemasan/incompatibility AHSP; unduhanlampiranprivat berizin/tidakdiwebroot; dokumensearch/pagination/sumberlama/literalwildcard/projectscope/role dan HTML. Testdokumensearch dijalankan ulang karenaBladenya berubah;25asersi historis tidak dipakai sebagai penerimaanHTML baru. Query/rumus/role/schema/form/formatPDFCSV tidak berubah.
+
+GatebrowserRPCpagination dari runsebelumnya tetapBLOCKED dan fiturHalamanpertama tidak diimplementasikan. Ini irisan GET/filterAlpinelokal independen, bukan retry atau penggantian kandidat gategagal tersebut. Delapan publicbaseline/delapan after PM pada dua proyek/dua halaman320/1440 membuktikan filter tampilan dan sumber tetap tanpaPOST. Seluruhkosong positif diuji lokal; fixturepublik berisi dokumen. Canonical encryptedbackup/disposablerestore/authsmoke, tiga hash runtime/CSSpublik dan actualChangeLogrender lulus.
+
+KeduaChangeLog dicatat/dibaca ulang; entri blocked21.51 kini ikut terbit, status historisnya tetap. Guidebookv2.1 tetap335halaman/hashb25cbbac67b7adf27ecf765d100f81ffda0f6c80d943f8315de7f6d87f54e9e9, ralat terpisah; PDF belum dipublikasikan website. Staticdemo tetap. Tidak menambah full-ID36 atau skorvisual. Ownerpublik/HPfisik/staging/UAT/proyeknyata/PILOT_READY terbuka; fullsuite/hostedCI NOT_RUN. Tidak mengubah pricing/trial/entitlement atau produk lain.
+
+[Dokumen workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2#project-documents) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-221130).
+
 ## 2026-11-21 — Arkarupa: tanggal tindak lanjut dan alasan panjang
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `7c5b3842b0528920bacbe50e8077266b4d6645d2`, previous `a5f8f85`. Komponen Pekerjaan berikutnya pada Dashboard dan workspace memakai tanggaldd/mm/yyyy14px dengan ISOdatetime dan urutan sumber tetap. Alasan lebih160karakter dibuka melalui disclosure native Alasan tindak lanjut; alasan pendek tetap terlihat. Identitas proyek/PIC, tanggal dan Tindak lanjuti tidak disembunyikan. Enter/Space membuka; Escape menutup, memulihkan fokus dan membawa summary terlihat setelah pengguna menggulir. Nama akses memuat seluruh teks label terlihat.
