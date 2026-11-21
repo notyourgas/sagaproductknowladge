@@ -1,5 +1,13 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-21 - Arkarupa: koreksi kontras angka aktual workspace
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Sourcekoreksi `dbf031f894b0a1a2c49e92430c4661859419dbe9` menggantikan `da269fce6a3600befeb07e3262e41aa412b255f1`. Claimvisual/UI-03.2LULUS pada da269fc danentri knowledge495e7ec **DICABUT/DEPRECATED**: pemeriksaangambar setelahassertddputih menemukanangka strong masihgelapdiatasgelap. Riwayatdipertahankansebagaibuktikoreksi.
+
+Koreksiround1 menetapkanputih langsungpadaangkaactual danstrongexact.8previewCSSdan8publickoreksi memeriksacomputedcolor,webkitTextFillColor,exactstrong serta gambarangka putih;target/actualnull tetapbidangterang. Monokrom/PlusJakarta/SVG/geometri/angka/rawpercent/cutoff/reducedmotion tetap. FokushashBack/Forward/refresh danreturnanchor lulus.16fullHTTPdisposablelogic/data/zeroactual/missingbaseline/namapanjang sertaSQL2tes24asersi(cutofflateverification,CSVfilter/formula) dibawa denganGitblob/inputscopeidentik,tanparerun. PreviewCSSpadaDOMpublik tidakdisamakandenganfullHTTPcandidate.
+
+Canonicalrunner backupterenkripsi/restoredisposable73tabel10berkas28migrasi,promosi/authsmoke baru danruntimekumulatif3file/CSSexact lulus. Delta koreksi hanyaCSS+entriChangeLogrunyangsama;duplikat tidakditambahkan. KeduaChangeLog readbacklulus. UI-03.2 LULUS hanya padaSHAkoreksiini;5IDlaincarry,total6currentfullPASS,23historicalPASSreconcile/7open tetap. UI03.3subset;reviewvisual/Ownerbrowserpublik/HPfisik/staging/UAT/proyekpilotnyata/PILOT_READYOPEN. Backend/schema/auth/data/formatPDFCSV tidakberubah;PDFtidakdiujiulang. [Workspacekoreksi](https://arkarupa-dashboard.vercel.app/workspace?project=2#workspace-level2).
+
 ## 2026-11-21 - Arkarupa: aktual terverifikasi dan fokus riwayat workspace
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `da269fce6a3600befeb07e3262e41aa412b255f1` menegaskanactualtersedia dengan bidanggelapnetral danangka/outlineputih. Target danactualnull/tanpabaseline tetapbidangterang;persen/rawsource/versi/cutoff tidakberubah. Monokrom,PlusJakarta,SVG,geometriHolsite danreducedmotion dipertahankan.
