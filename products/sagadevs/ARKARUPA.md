@@ -1,5 +1,15 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-21 - Arkarupa: kartu katalog adaptif dan Escape histori
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `f926dbb9ba23ee6ae8fb4c11280822b86454c96f`. Kartu katalog kini mengikuti lebararea konten<=760px melaluiCSScontainer, sehingga tablet768 dan900denganrail216 terbuka memakai kartu berlabel Satuan/Harga terakhir/Asal. Pada900railringkas dan1440 tetap tabel; resize tidakmemerlukanrequest atau mengubahdata. Sebelumnya kartu hanya pada viewport<=639px; tabel900expanded melebar76px, sementara768memadat tanpaoverflow. Monokrom, Plus Jakarta Sans, reduced motion dan komposisiHolsite tetap.
+
+Escape pada pencarianhistori kini bertahap: pertama membersihkan query, saatkosong kembali fokus ke resourceasal melalui tombolKembalidaftar existing, atau ke pencarianresource ketika resource tersaring. Detail/harga tidakdihapus, queryresource dan jenis dipertahankan.12HTTPdisposable Owner/PM/Finance320/768/900/1440 dengan3historiharga serta8publikPM/Finance lulus card/table/railresize/Enter/Escape/fallback/jenis/empty/reflow;36lokal dan24publik RPCbaca, zeroPOSTbisnis danfingerprint utuh.20resource dan seluruhhistori/ID/nilai/sumber/satuan identik8baselinepublik. Seluruhform/ekspresiuang/controller/service/schema/permission/PDFCSV unchanged.
+
+DuaSQLtes32asersi lulus manualprice/dailylabor/reprice/idempotensi dan katalogterpisah (RAP3.850.000,8OH,reprice4.250.000,tanpaharga/resourceglobalbaru), serta popupbayar dokumenopen10.000.000 yangtidakmemposting, arah/tagihanlunas/draftguard. Dua koreksiprobe baseline dipertahankan: asumsi768overflow dikoreksi pengukuran0px, dan menunggu x-show setelahreset tanpa melemahkan asersicount. Tidakada sourcefixpascagagalHTTPkandidat.
+
+Fresh backup/restore73tabel10berkas28migrasi/promosi/authsmoke/runtime4file/publicCSSexact serta keduaChangeLogreadback lulus.8currentfullcarry/21historicalrekonsiliasi/7open;UI03.4/UI08.1/UI09subset,bukanpersentaseproduk/skorvisual. Fullsuite/PDFCSV/HPfisik/screenreader NOT_RUN;staging/UAT/proyekpilotnyata/PILOT_READY OPEN. Demo statis unchanged, populatedMasterAHSPpublik masihmenunggufixtureyangsah. NextFrontendQA: tabelpadatlain danrekonsiliasiID;Andreas reviewvisual/HPfisik/proyekpilot. [Katalog material](https://arkarupa-dashboard.vercel.app/katalog?kind=material#catalog-resource-results-heading).
+
 ## 2026-11-21 - Arkarupa: panah rail dan fokus menu aktif
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `a098c0e70f185e3dfd6c88057377c8ffa22b922b`. Panah rail desktop yang berupa karakter salah encoding kini menjadi chevronSVG existing dalam bidangnetral28px, target44px dan arahberputar sesuai expanded. Accessiblelabel Perluas/Perkecil, monokrom, Plus Jakarta Sans dan geometriHolsite dipertahankan. Membuka rail kini memfokuskan menu halamanaktif (fallback menupertama); Escape menutup dan fokus kembali ke pemicu. Scrollnearest menjaga menuaktif terlihat di sidebar.
