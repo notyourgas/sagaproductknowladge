@@ -1,5 +1,13 @@
 # Portfolio Changelog
 
+## 2026-11-21 - Arkarupa: dock monokrom dan nama halaman aktif
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `a8639bcaf5c14feceba865345b2b09d6f1ab00a9` memperjelas penanda dock HP dari putih transparan menjadi bidang putih solid dengan ikon gelap dan outline fokus gelap. Link inert meredup saat drawer terbuka,pulih saat tutup;drawer dapat menutupi dock sehingga perubahan utama visual dibuktikan pada keadaan tertutup. Komposisi Holsite/PlusJakarta/gradien netral/SVG/reduced motion tetap.
+
+Menu pada modul selain Dashboard/Proyek menyebut halaman aktif dan memakai aria-current location dari navigasi sesuai izin.40baselinepublik+40actualHTTPcandidate+40afterpublik,PM/Pelaksana,4route320–1440 luluspenanda/label/konteksproyek/44px/keyboard/Escape/nooverflow/zeroPOST.100asersiMySQLdisposable pada2tes membuktikan isolasikonteks danarsipdokumenklienversi/izin;fingerprintbisnisHTTP tetap. DB/server dibersihkan. Backupterenkripsi/restoredisposable73tabel10berkas28migrasi,promosi/authsmoke danruntime3file/CSSexact lulus. KeduaChangeLog ditulis/dibacaulang. Backend/schema/auth/nilaibisnis/PDFCSV tidakdiubah;CSVtidakdiujiulang.
+
+UI-02.2/UI-09 masih subset;4fullPASS UI-01.1/UI-01.3/UI-01.4/UI-02.1 carry melalui delta mobile terbatas.25historicalPASS perlu rekonsiliasi dan7historicalopen tetap. Bukan persentase implementasi atau signoff levelvisual. ReviewAndreas/Ownerbrowserpublik/HPfisik/screenreader/staging/UAT/proyekpilotnyata/PILOT_READYOPEN. Demostatis tidakberubah. [Dashboard](https://arkarupa-dashboard.vercel.app/?project=2).
+
 ## 2026-11-21 - Arkarupa: navigasi tablet tunggal dan Escape rail desktop
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `68eb0503e5ac954b3acf7449c9327fe565c30435` meningkatkan label kelompok navigasi dari11px ke13px netral. Kontrol open/close native Filament yang sebelumnya ikut tampil pada900–1023px disembunyikan hanya pada desktop Arkarupa>=900;toggle Holsite tetap menjadi kontrol desktop. Rail61px ringkas/216px terbuka dan header54desktop/60HP dipertahankan sesuai pengukuran arsip. Brand Arkarupa,palet monokrom,PlusJakarta,SVGoriginal dan reduced motion tetap.
