@@ -1,5 +1,15 @@
 # SagaDevs Product Hub Knowledge
 
+## 2026-11-21 - Arkarupa: penanda pembulatan KPI dan penerimaan ulang UI-01.1
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `7aba0e8277bb80e0c554533c68c67c30fa370eac` menandai angka ringkas KPI dengan ≈ hanya bila pembulatan dua desimal unit kompak mengubah representasi. Contoh1.234.567→≈1,23jt,sedangkan1.230.000→1,23jt tetap exact. Pemeriksaan sisa memakai bcmath, bukan perbandingan float. Prefix netral ditumpuk agar nominal muat pada320px. NilaiRpraw,aria-label,title,angka kompak dan tautan sumber dipertahankan. Nilai lengkap memiliki namaKPI,open memusatkan panel danEscape memulihkan fokus secara instant di antara header dan dock. Holsite,monokrom,PlusJakarta,reduced motion danSVGoriginal tetap.
+
+**UI-01.1 LULUS ulang pada kandidat ini:** empat posisi KPI4×1desktop/2×2HP,label panjang dan nominal18digit pada320px,serta kondisi nol/missing.36fixture actualBlade sebelum dan36sesudah pada enam viewport-motion lulus grid/card/pagenooverflow/roundingtruth/rawexact/keyboard;fixture bukan Owner/RBAC browserUAT.12baseline+12afterpublikPMFinance juga lulus empat posisi termasuk pengganti jumlah proyek sesuai role. Dua tesMySQLdisposable60asersi lulus7batas pembulatan dan rekonsiliasi Dashboardcash/aging/nonkas/transfer/periode. Pembanding harness memperbaiki JSONoptionalundefined/propertyhilang ke serialisasi yang sama;assert data dan geometri tetap,36diulangPASS.
+
+Matriks36 sekarang mengikat UI-01.1 ke kandidat current. Status29/36 pada kandidat historis tetap riwayat;28PASS historis lain memerlukan rekonsiliasi delta dan tujuh baris historis terbuka tidak ditutup otomatis. Ini bukan persentase implementasi produk atau penilaian level visual baru. UI-09 masih PASS_SUBSET;HPfisik,Ownerbrowser,screenreader,zoom200lintasmodul,reviewAndreas,staging,UAT,proyekpilotnyata danPILOT_READY OPEN.
+
+Backend/schema/auth/rumus nilaiuang/format laporanPDFCSV tidak berubah;ekspor tidak diuji ulang. Backupterenkripsi/restoredisposable/promosi runnerkanonik lulus,runtime3file/CSSpublikexact;testsourceFinanceTestexcludedruntime sesuai allowlist. KeduaChangeLog ditulis/dibaca ulang dengan riwayat tetap. Demo statis tidak berubah. [KPI Dashboard](https://arkarupa-dashboard.vercel.app/?project=2#overview-metrics-heading).
+
 ## 2026-11-21 - Arkarupa: kontrol periode progres workspace
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `e051b3231e28a2cfc3baf132dc96088a30cce28e` memperjelas label ringkasan workspace12→13px dan menambahkan panel native Ubah periode progres dengan label14px/target44px, marker disclosure bawaan dan palet monokrom. FormGET membawa proyek, tanggal mulai dan cutoff ke validasi server yang sudah ada. Nilai progres tetap kumulatif sampai cut-off; tanggal mulai diteruskan pada tautan sumber. Batas tanggal native/required, Escape kembali ke summary dan tautan periode saat ini tersedia. Penerapan memuat ulang workspace; helper mengingatkan menyimpan isian lain. Hanya periode progres yang berubah; checklist, tugas dan saldo mengikuti sumber terkini. Tidak menambahkan autosave untuk isian bisnis yang belum dikirim.
