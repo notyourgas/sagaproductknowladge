@@ -1,5 +1,15 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-21 — Arkarupa: validitas penawaran dan navigasi dokumen resmi
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `7fb3cacd193d3ef1e30c2355803a4731c9bfa17d`, previous `ce511cf`. Tanggal masa berlaku kini berlabel dd/mm/yyyy18px di histori dan versi penawaran terpilih. Kondisi issued yang sudah lewat tanggal memakai garis putus-putus netral dan petunjuk meninjau penerimaan; predicate dan aturan expiry server tidak berubah. Pratinjau menyebut versi, dibedakan dari dokumen terbit, serta memiliki pintasan native Ke status & PDF resmi yang memindahkan fokus ke panel dokumen tanpa mengganti proyek/tahap. Nomor dan tautan HTML/PDF tetap berasal dari versi sumber; keadaan belum terbit dijelaskan. Server/schema/rumus/izin/form dan format PDF/CSV tidak berubah.
+
+12baseline/12kandidat browser Owner/QS/PM pada320/1440 lulus future/expired, tanggal, tautan, fokus, reflow dan unduhan PDF exact. Enam QA tambahan PM mencakup future/expired/belumterbit dan memperbaiki posisi kamera bukti HP. Fingerprint bisnis utuh/zero businessPOST. Dua tesMySQL79asersi lulus expiry/zero-ratio/idempotency/foreignscope serta alur issue-accept-contract-VO/privatePDFimmutable; tidak menjalankan fullsuite.
+
+Canonical runner membuktikan encrypted backup/restore73tabel/10berkas/28migrasi sebelum promosi, lalu auth smoke, empat hash runtime, CSS publik dan render Change Log. Dua baseline/dua kasus publik PM pada satu proyek berquote memverifikasi state ready/nonexpired dan PDFexact; kondisi expired positif hanya lokal. Source Change Log dokumentasi guidebook19.31 turut terbit dalam paket ini. Guidebookv2 tetap snapshotce511cf dengan ralat label terpisah; tidak menimpa PDF/histori. Lembar UAT manusia disiapkan NOT_RUN; Owner publik/perangkat fisik/staging/UAT/proyek nyata/PILOT_READY terbuka. Tidak menambah full-ID36 atau skor kualitas visual.
+
+[Penawaran demo](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=penawaran) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-202726). Static demo tidak berubah. Tidak ada perubahan pricing, trial, entitlement atau produk Saga lain.
+
 ## 2026-11-21 — Arkarupa: manual operasional konstruksi bergambar v2
 
 **CONFIRMED — DOCUMENTATION_LOCAL_VALIDATED; PUBLIC_RUNTIME_UNCHANGED; NOT_BUSINESS_READY.** Atas klarifikasi Andreas, guidebook ringkas v1 dikembangkan menjadi PDF A4 389halaman dengan 149gambar layar/popup aktual beranotasi, petunjuk tombol/kolom, peran/prasyarat/langkah/hasil/pemulihan, daftar isi klik dan43bookmark. Mencakup33kelompok layar: proyek/akses, survei dan backup volume, RAP manual/AHSP, penawaran/deal/kontrak/VO, jadwal/Gantt/KurvaS, BUP, material/absensi/pengadaan/upah, forecast/tagihan/kas, portal dan closeout. “Backup volume/progress” dibedakan dari backup database. Screenshot memakai fixture sintetis; harga/pajak contoh bukan kebijakan operasional.
