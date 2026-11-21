@@ -1,5 +1,17 @@
 # Portfolio Changelog
 
+## 2026-11-21 — Arkarupa: ringkasan nota dan navigasi pencocokan
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `a5f8f856502b6ac54ca692a62679a2a91daea0a2`, previous `4ec596e`. Ringkasan rekonsiliasi pada Keuangan/Utang supplier kini menampilkan identitas nota, Total nota tersimpan24px dan tanggaldd/mm/yyyy. Label dan total memakai bidang penuh sehingga nilai tidak terbelah pada320px. Nilai tetap snapshot tersimpan, bukan posting tagihan otomatis. Native Ke rincian pencocokan/Kembali ke ringkasan nota memindahkan fokus tanpa mengganti proyek/tahap atau menghapus filter Hanya baris belum lengkap. Service/rumus/schema/role/form/format laporanPDFCSV tetap.
+
+12baseline/12final browser Owner/Finance/PM pada320/1440 lulus nilai/sumber/status, rolepreparebuttons, reflow, satu baris nominal, Enter/fokus/query dan filter tetap saat bolak-balik. Inspeksi visual pada12first-after menemukan nominal24px terbelah; CSS diberi bidang penuh dan12final diulang. First-after disimpan, tidak diklaim hasil final. Seluruh businessPOST diblokir dan fingerprint semua tabel tetap. Dua tesMySQL46asersi lulus rekonsiliasi/preparation/role/projectscope dan pencocokan penerimaan satu kali/kuantitas neto setelah retur. SQL sekali sebelum koreksiCSS, PHP/test/service tidak berubah.
+
+Canonical encrypted backup/disposable restore, authsmoke, tiga hash runtime, CSS publik dan actualChangeLogrender lulus. Delapan baseline Finance kosong/invalid pada runtime4ec yang sama dipakai kembali; delapan publicafter lulus dua proyek320/1440. Tidak ada nota publik sehingga selected-positive hanya lokal; tidak menciptakan nota publik untuk verifikasi. Ownerpublik/HPfisik/staging/UAT/proyeknyata/PILOT_READY tetap terbuka. Tidak full-ID36 atau skorvisual baru; fullsuite/hostedCI NOT_RUN.
+
+Entri Change Log source yang sebelumnya menunggu paket (gate baseline tertahan dan manualv2.1) kini ikut terbit dan anchor aktual diverifikasi satu kali. PDFmanualv2.1 tetap335halaman/hashb25cbbac67b7adf27ecf765d100f81ffda0f6c80d943f8315de7f6d87f54e9e9; ralat layar baru terpisah. PDF belum dipublikasikan pada website. Static demo tidak berubah.
+
+[Rekonsiliasi nota demo](https://arkarupa-dashboard.vercel.app/keuangan?project=2&stage=utang#finance-note-title) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261121-211729). Tidak mengubah pricing/trial/entitlement atau produk lain.
+
 ## 2026-11-21 — Arkarupa: koreksi manual bergambar v2.1 (dokumentasi)
 
 **CONFIRMED — DOCUMENTATION_LOCAL_VALIDATED; NOT_BUSINESS_READY.** Manual operasional bergambar v2.1 menggantikan v2 sebagai file panduan yang direkomendasikan. Inspeksi visual lanjutan menemukan penanda posisi otomatis dashboard v2 tidak sesuai dengan kontrol pada screenshot. V2.1 menghapus semua overlay/legenda koordinat dan menggunakan nama tombol serta kolom dalam tabel referensi per fitur. PDF v2 dan screenshot asli dipertahankan; angka149gambar beranotasi pada catatan historis v2 bukan klaim pemetaan koordinat yang sudah terbukti benar.
