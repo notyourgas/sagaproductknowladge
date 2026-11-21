@@ -1,5 +1,15 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-21 - Arkarupa: judul langsung terbaca dan Aksi cepat ke Menu
+
+**CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `3f9aafb8a445884946768895255d08f68bb1c6ba` mengeluarkan judul halaman dari splitText/fade500ms agar langsung terbaca. Monokrom,PlusJakarta,geometriHolsite,SVG,reducedmotion dananimasi teks eksplisit lain dipertahankan. Animasi kartu tidak diubah.
+
+Aksi cepat memiliki tombol sekunder44px Buka menu navigasi: dialog ditutup sebelum drawer terbuka,fokus ke halaman aktif danTutup/Escape kembaliMenu. Deferredclose tidak menarik fokus yang sudah dipindah pengguna. Defek lama direproduksi;sesudahnya Menu mempertahankan fokus.32baselinepublik jalurmanual+32actualHTTPcandidate+32publicafter padaPM/Pelaksana,Dashboard/workspace,portrait/landscape320–1440 normal/reduced lulusjudul,TabShiftTab/Enter/Escape/Tutup,satuoverlay,konteks,reflow,zeroPOST. Dua tesMySQLdisposable53asersi membuktikan proyeksi workspace/sumber6role serta unduh lampiranprivat;fingerprintbisnisHTTPtetap,DB/serverdibersihkan. PDF/CSVformat tidak berubah/tidakdiujiulang.
+
+Backupterenkripsi/restoredisposable73tabel10berkas28migrasi,promosi/authsmoke,runtime4file/publicMotionexact lulus. KeduaChangeLog ditulis/dibacaulang. CSS/mainpartial/desktopmenu identik;4fullPASS UI-01.1/UI-01.3/UI-01.4/UI-02.1 carry,25historicalPASS menunggu rekonsiliasi,7historicalopen tetap. UI-02.3/UI-09 subset,bukan36/36atau signofflevelvisual. ReviewAndreas/Ownerbrowserpublik/HPfisik/screenreader/staging/UAT/proyekpilotnyata/PILOT_READYOPEN. Demostatis tidak berubah. [Workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2).
+
+QA tambahan4kasuspublik Finance/Purchasing,portrait390normal/landscape740reduced,lulusjalurkas/material,konteks,target44px,Menu/fokus/satuoverlay/zeroPOST. Totalpublik36kasus,32utama+4tambahan. Ownerbrowser/QS/klien/HPfisik belumditutup.
+
 ## 2026-11-21 - Arkarupa: dock monokrom dan nama halaman aktif
 
 **CONFIRMED. DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `a8639bcaf5c14feceba865345b2b09d6f1ab00a9` memperjelas penanda dock HP dari putih transparan menjadi bidang putih solid dengan ikon gelap dan outline fokus gelap. Link inert meredup saat drawer terbuka,pulih saat tutup;drawer dapat menutupi dock sehingga perubahan utama visual dibuktikan pada keadaan tertutup. Komposisi Holsite/PlusJakarta/gradien netral/SVG/reduced motion tetap.
