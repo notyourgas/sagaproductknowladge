@@ -1,5 +1,13 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-21 - Arkarupa: kartu RAP dan konteks pergantian proyek
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `dad1a63068639d7094de343b5d269505ef7e3afa`. Pekerjaan RAP per metode menjadi kartu berlabel di HP, row header memisahkan kode/deskripsi, nominal rata kanan desktop. Nilai/satuan/status/aksi/izin tidak berubah. Delapan fixture Blade historis/kandidat3203907681440 membandingkan nilai sama, font PlusJakarta dan reflow. Empat actualHTTP positif dan empat proyek tanpa RAP diuji pada database disposable. Data publik saat ini hanya RAP manual, sehingga tabel metode positif diverifikasi dengan actualHTTP lokal serta actualLinuxruntime Blade fixture sintetis; outputHTML sama. Fixture visual tidak mewakili harga konstruksi/data publik.
+
+Tautan Workspace kini mempertahankan periode ketika proyek diganti melalui dialog; proyek mengikuti projectIdLivewire. Baseline publik8pergantian kehilangan periode; sesudah8HTTPdisposable/16pergantian,4publik/8pergantianKomersial,dan16publik/32pergantianempatmodul lulus. Back/Forward/refresh/proyek/periode/fokus benar; hanya selectProject diizinkan, tidak ada businessPOST. Monokrom/SVG/PlusJakarta/reducedmotion serta guard draf tetap.
+
+Dua tesSQL80asersi lulus: upah mandor terpisah per divisi dan CSVabsensi/filter/formula injection. Fingerprint bisnis utuh/cleanup selesai. Target pecahan fixture diperbaiki menjadi setengah+sisa tepat; SQLhash dibawa saat retryHTTP, bukan rerun. Renderer awal serif/ekspor encoding gagal dicabut sebagai bukti visual, kemudian UTF8/font loaded dan8kasus ulang lulus. Backend/schema/rumus/formatPDFCSV tidak berubah; PDFtidakdiujiulang. Runner kanonikbackup/restore73tabel10berkas28migrasi/promosi/authsmoke/runtime5fileexact dan keduaChangeLogreadback lulus. Current7fullIDcarry;UI03.4 subset satu tabel,22historicalPASS rekonsiliasi/7open. Reviewvisual/HPfisik/staging/UAT/proyekpilotnyata/PILOT_READY OPEN. [Komersial](https://arkarupa-dashboard.vercel.app/komersial?project=2&stage=rap&workspaceFrom=2026-11-01&workspaceCutoff=2026-11-20).
+
 ## 2026-11-21 - Arkarupa: nama proyek dan semua tampilan modul
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED, NOT_BUSINESS_READY.** Source `5d6892452b0e35787a4b7bd3c998f7ccbf166da4`. Header modul membungkus nama proyek/wilayah tanpa spasi secara utuh. Semua tampilan membuka seluruh tombol tahap, 44px; Escape meringkas dan memulihkan fokus. Palet monokrom, Plus Jakarta Sans, aset original, komposisi Holsite dan reduced motion dipertahankan.
