@@ -1,5 +1,15 @@
 # SagaDevs Product Hub Knowledge
 
+### 2026-11-22 — Catatan baseline berbagi keuangan: alat lokal terblokir
+
+**CONFIRMED — BLOCKED_BEFORE_IMPLEMENTATION; runtime demo tidak berubah.** Source lokal f881b4db8357b8fe4170643da101582ba1379543 hanya menambah Change Log. Versi aktif tetap54914028dc0266b1496276db3a795976fd5fb9b4. Rancangan rincian berbagi keuangan yang dapat diringkas dan fokus review belum diterapkan; belum ada screenshot sesudah atau kandidat UI baru yang lulus.
+
+Baseline lokal gagal ketika navigasi login20detik menunggu respons awal32detik. Satu koreksi harness memakai DOMContentLoaded/HTTP200 dengan anggaran60detik dan navigasi45detik. Percobaan berikutnya gagal pada readiness MySQL30detik; engine baru siap53detik. Tidak mengulang baseline lagi dalam sisa waktu run. Patch readiness60detik disiapkan untuk review, belum dijalankan; satu koreksi login telah dipakai dan batas koreksi tidak direset. Executor/QA melanjutkan dari review patch dan identitas engine, lalu baseline penuh sebelum implementasi. Ini temuan alat lokal, bukan bukti demo publik rusak.
+
+Empat baseline publik PM pada dua proyek320/1440 lulus empat kombinasi pilihan berbagi, judul tetap dan fokus review, tanpa POST. Ini perilaku existing, bukan fitur baru. Fingerprint tabel lokal tetap pada kegagalan pertama; DB disposable tersisa0 dan kedua engine owned berhenti secara graceful. Tiga tes SQL yang direncanakan NOT_RUN. UAT manual disiapkan/NOT_RUN; guidebookv2.2tetap336halaman. Kedua Change Log source dibaca ulang; entri17.39tidak diduplikasi. Tab publik masih memuat rilis004403, sementara173901/175401menunggu paket fitur lulus berikutnya. Tidak ada deploy hanya untuk catatan, perubahan aplikasi/schema/formula/izin/PDF atau data bisnis. Full-ID36/skor visual tidak bertambah; Owner publik, HP fisik, staging, UAT dan PILOT_READY tetap terbuka. Gate blocked sebelumnya tidak diulang. Pricing, trial, demo statis dan produk lain tetap.
+
+[Workspace terakhir terverifikasi](https://arkarupa-dashboard.vercel.app/workspace?project=2#client-report-heading) · [Change Log terakhir terbit](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261122-004403).
+
 ## 2026-11-22 — Arkarupa: berkas yang layak untuk penerbitan klien
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime 54914028dc0266b1496276db3a795976fd5fb9b4, sebelumnya dbe8977c4053a0cb7b90c06b4cc247de37884058. Label formulir penerbitan khusus Owner diperbesar14→16px, jumlah berkas siap16px dan panduan format14px. Pilihan penerbitan hanya menawarkan berkas yang tersedia dengan MIME PDF/JPEG/PNG/WEBP, memakai PREVIEW_MIMES dari service yang sama. Ekstensi saja tidak menentukan kelayakan. Bila tidak ada berkas layak, tampil status kosong. Lihat lampiran proyek menuju indeks privat dengan fokus; input sementara tetap ada. Tindakan ini tidak menerbitkan dokumen.
