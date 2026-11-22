@@ -1,5 +1,15 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-22 — Arkarupa: berkas yang layak untuk penerbitan klien
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime 54914028dc0266b1496276db3a795976fd5fb9b4, sebelumnya dbe8977c4053a0cb7b90c06b4cc247de37884058. Label formulir penerbitan khusus Owner diperbesar14→16px, jumlah berkas siap16px dan panduan format14px. Pilihan penerbitan hanya menawarkan berkas yang tersedia dengan MIME PDF/JPEG/PNG/WEBP, memakai PREVIEW_MIMES dari service yang sama. Ekstensi saja tidak menentukan kelayakan. Bila tidak ada berkas layak, tampil status kosong. Lihat lampiran proyek menuju indeks privat dengan fokus; input sementara tetap ada. Tindakan ini tidak menerbitkan dokumen.
+
+16baseline/16kandidat lokal lulus pada320/1440:2kasus Owner dengan PDF/foto,2tanpa berkas layak dan12kasus peran tanpa panel. Seluruh tabel dan hash berkas privat tetap, zero POST. Tiga tes SQL/89asersi lulus versi dan arsip klien, idempotency, audit, unduhan scoped, filter berkas tersedia/MIME/proyek/role, keadaan kosong setelah file dihapus serta izin unduh internal. Write handler, service publikasi, schema, transaksi, izin, formula dan format PDF/CSV tidak berubah. Query Owner membaca path untuk kelayakan; path bukan properti publik Livewire.
+
+Empat baseline/empat hasil publik PM hanya membuktikan panel penerbitan tersembunyi. Alur positif Owner belum diverifikasi melalui browser publik; bukti positif berasal dari fixture lokal. Canonical backup terenkripsi, restore disposable, promosi, autentikasi, empat hash runtime/CSS publik dan tiga anchor Change Log lulus. Kedua Change Log dibaca ulang; histori byte dan prefix dipertahankan. Guidebook v2.2 tetap336halaman/hash6d09af6c, ralat UI terpisah. UI-03/UI-05/UI-09 masih subset tanpa tambahan full-ID36/skor visual. Gate Escape picker/history/pagination RPC lama tidak diulang. UAT manusia, HP fisik, staging dan PILOT_READY tetap terbuka; proyek pilot nyata belum dipilih. Demo statis, pricing, trial dan produk lain tetap.
+
+[Workspace](https://arkarupa-dashboard.vercel.app/workspace?project=2#client-document-publish) · [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261122-004403).
+
 ## 2026-11-22 — Arkarupa: rentang workspace dan pencarian asal
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source dan runtime dbe8977c4053a0cb7b90c06b4cc247de37884058, sebelumnya aee5ddb603e62f64a95613c10de769279f00dbc2. Pemicu Ubah periode progres diperbesar dari14menjadi16px. Tanggal mulai dan cut-off14px kini terlihat ketika filter tertutup, dalam format dd/mm/yyyy dengan atribut datetime ISO. Bantuan memakai14px. Form GET dan reset periode mempertahankan kata kunci pencarian asal yang telah disanitasi ketika masuk workspace. Setelah menerapkan tanggal atau kembali ke periode saat ini, Daftar proyek membawa pencarian tersebut dan memfokuskan jumlah hasil. Tanpa pencarian tidak ditambahkan field atau query kosong. Perubahan ini tidak mengubah saldo atau mencatat approval.
