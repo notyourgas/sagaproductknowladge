@@ -2,7 +2,7 @@
 
 ## 2026-11-24 - Dukungan bundling Coffee + Cheesecake di Kiosk
 
-**NEEDS CONFIRMATION.** Kode paket Rp30.000 sudah production-deployed pada `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39` dan seluruh kualifikasi software yang dipilih lulus. Aktivasi kampanye belum dilakukan karena akses Owner terautentikasi belum tersedia. Tidak ada klaim production-activated atau business-ready untuk paket ini. Selesaikan publikasi katalog dengan kontrol versi, lalu verifikasi quote Kiosk tanpa transaksi palsu dan lakukan penerimaan pada perangkat fisik. Persetujuan tanggal akhir sudah jelas: 30 November 2026 WIB; tidak perlu meminta ulang keputusan tersebut.
+**NEEDS CONFIRMATION.** UAT paket Rp30.000 pada kiosk fisik masih terbuka. Blocker akses Owner sudah ditutup: kampanye diterbitkan melalui katalog publikasi 27 / versi 212 pada source `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39`. Sepuluh pasangan, lima kasus tambahan dan dua kontrol kasir terverifikasi melalui quote production. Foto ketujuh pilihan sama dengan menu reguler dan termuat pada preview browser. Tidak dibuat transaksi uji production. Periode berakhir 1 Desember 2026 pukul 00.00 WIB; tidak ada klaim penerimaan perangkat fisik atau BUSINESS_READY baru.
 
 ## 2026-11-20 - Batas penerimaan enam menu KopiSaga dan observasi memori
 

@@ -1,5 +1,13 @@
 # SagaOPS Dossier
 
+## 2026-11-24 - Promo Coffee + Cheesecake Rp30.000 sudah aktif
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Andreas membuka akses Owner, lalu paket Coffee + Cheesecake Rp30.000 diterbitkan melalui publikasi katalog 27 / versi 212 pada source `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39`. Kategori paket tampil pertama selama periode aktif. Pilih satu cheesecake Original atau Brownies serta satu Americano, Cafe Latte, Cappucino, Es Kopi Saga atau Saga Premium. Berlaku di Kiosk untuk makan di tempat dan takeaway sampai 30 November 2026; otomatis berakhir 1 Desember 2026 pukul 00.00 WIB.
+
+Pemeriksaan quote production lulus untuk sepuluh pasangan Rp30.000, QRIS manual dan takeaway, tambahan satu item, dua paket, pasangan tidak lengkap, serta modifier berbayar. Dua pemeriksaan kasir memastikan harga normal tetap. Ketujuh foto memakai sumber foto reguler yang sama dan berhasil didekode pada preview browser dengan katalog production. Harga satuan, foto menu lain, HPP, stok fisik dan alur printer dipertahankan. Tidak dibuat pesanan atau pembayaran production untuk pengujian. UAT pada kiosk fisik tetap terbuka.
+
+Sumber: permintaan Andreas, konfirmasi masa berlaku dan akses Owner, read-back katalog serta 17 quote production. Sebelum: kode terpasang tetapi kampanye menunggu akses Owner. Sesudah: kampanye ACTIVE/EFFECTIVE, tanpa draft tersisa. Validasi software Linux 80/80, restore dan rollback dari milestone kode sebelumnya tetap berlaku; aktivasi ini hanya menerbitkan aturan katalog.
+
 ## 2026-11-24 - Dukungan bundling Coffee + Cheesecake di Kiosk
 
 **CONFIRMED / PRODUCTION_DEPLOYED.** Dukungan paket satu kopi dan satu cheesecake Rp30.000 telah dipasang pada source `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39`. Pilihan cheesecake adalah Original atau Brownies; pilihan kopi adalah Americano, Cafe Latte, Cappucino, Es Kopi Saga atau Saga Premium. Andreas menetapkan akhir periode 30 November 2026 pukul 23.59 WIB, dengan batas sistem 1 Desember 2026 pukul 00.00 WIB.

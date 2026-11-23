@@ -2,7 +2,7 @@
 
 ## DEC-334 - Paket Coffee + Cheesecake Rp30.000 di Kiosk
 
-Tanggal 2026-11-24. **CONFIRMED.** Andreas meminta paket satu cheesecake Original atau Brownies dengan satu Americano, Cafe Latte, Cappucino, Es Kopi Saga atau Saga Premium, total Rp30.000, berlaku sampai 30 November 2026. Alasan: memudahkan upselling melalui kategori khusus Kiosk. Alternatif mengubah harga satuan seluruh menu tidak dipilih karena harga normal harus tetap tersedia. Implementasi kode `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39` sudah production-deployed; penerbitan kampanye Owner dan UAT fisik masih terbuka. Pemberi keputusan: Andreas. [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md).
+Tanggal 2026-11-24. **CONFIRMED.** Andreas meminta paket satu cheesecake Original atau Brownies dengan satu Americano, Cafe Latte, Cappucino, Es Kopi Saga atau Saga Premium, total Rp30.000, berlaku sampai 30 November 2026. Alasan: memudahkan upselling melalui kategori khusus Kiosk. Alternatif mengubah harga satuan seluruh menu tidak dipilih karena harga normal harus tetap tersedia. Implementasi kode `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39` dan kampanye sudah production-activated melalui katalog publikasi 27 / versi 212. Quote production dan kesamaan foto reguler terverifikasi; UAT fisik masih terbuka. Pemberi keputusan: Andreas. [SagaOPS Product](products/sagaops/PRODUCT.md), [SagaOPS Changelog](products/sagaops/CHANGELOG.md).
 
 ## DEC-332 - Enam menu KopiSaga dalam Mont Blanc dan Bakery & Cheesecake
 

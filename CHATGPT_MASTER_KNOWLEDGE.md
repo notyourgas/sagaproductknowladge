@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-24 - Promo Coffee + Cheesecake Rp30.000 sudah aktif
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Paket satu kopi pilihan dan satu cheesecake Original/Brownies Rp30.000 aktif pada katalog SagaPOS publikasi 27 / versi 212, source `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39`, sampai 30 November 2026 WIB. Sepuluh kombinasi pasangan, lima pemeriksaan tambahan dan dua kontrol kasir lulus melalui quote production. Tujuh foto sama dengan foto reguler dan termuat di preview browser. Tidak ada transaksi uji production; UAT kiosk fisik masih terbuka. Akses Owner yang sebelumnya menghambat penerbitan sudah tersedia dan publikasi selesai. [Rincian SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-11-24 - Dukungan bundling Coffee + Cheesecake di Kiosk
 
 **CONFIRMED / PRODUCTION_DEPLOYED; campaign activation pending.** SagaPOS source `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39` menyediakan paket satu cheesecake Original/Brownies dan satu dari lima kopi pilihan Rp30.000 di Kiosk, dengan akhir periode yang disetujui 30 November 2026 WIB. Software, 80 tes Linux/PostgreSQL, restore, rollback dan monitor production lulus. Harga normal dan printer dipertahankan. Kampanye belum diterbitkan karena akses Owner belum tersedia; quote production sesudah publikasi dan UAT kiosk fisik tetap terbuka. [Rincian SagaOPS](products/sagaops/PRODUCT.md).
