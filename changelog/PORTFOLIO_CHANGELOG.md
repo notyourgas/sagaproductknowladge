@@ -1,5 +1,20 @@
 # Portfolio Changelog
 
+## 2026-11-24 — Arkarupa: Master AHSP PDF dan template RAP
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `224fcd7d9edba84871457ab9723b633425319b0e`. Katalog awal diterbitkan pada `aa15b6a8a0c916e1494ba91fada2a871816f3251`, menggantikan `54914028dc0266b1496276db3a795976fd5fb9b4`; rilis akhir merapikan filter status pada HP. Demo yang sebelumnya memiliki nol AHSP Lampiran VI kini memuat seluruh **2.841 kode** dari indeks Cipta Karya edisi 47/SE/Dk/2026. Rincian 143 tabel/812 koefisien berasal dari delapan batch yang sudah diperiksa. Sebanyak **136 analisis langsung/767 koefisien** dipetakan ke template RAP dan 131 resource tanpa harga. **2.705 kode tetap Referensi**, termasuk tujuh detail RISHA yang belum boleh dihitung. Katalog kode lengkap bukan klaim seluruh koefisien PDF selesai.
+
+Owner/QS dapat mencari kode/nama, memeriksa satuan dan sumber, mengisi volume, lalu memakai template untuk kebutuhan bahan, tenaga dan alat. Master menampilkan jumlah dan filter status memakai komponen pilihan bersama. Harga dasar diisi terpisah; harga kosong tetap belum lengkap. Impor transaksional/idempoten menjaga analisis perusahaan yang diedit dan snapshot RAP tersimpan. Perbandingan isi JSON kanonik mengatasi perubahan urutan kunci pada MySQL. Izin, harga pasar dan transaksi bisnis tetap.
+
+Sembilan tes/2.742 asersi lulus untuk seluruh 136 analisis, harga kosong, impor ulang, isolasi perusahaan, snapshot, unit/set/konversi pembelian, template, approval serta PDF RAP. Uji impor memakai membership ketat; regresi lama mengikuti konfigurasi default dan mengaktifkan membership sesuai skenario. Regresi sempat terhambat drive lokal penuh, lalu memakai database disposable terpisah. Backend rilis akhir identik dengan source yang diuji; perubahan akhir hanya tampilan filter dan catatan.
+
+Runner kanonik membuktikan backup terenkripsi, restore 73 tabel/10 berkas privat dan migrasi 28→29 pada disposable sebelum promosi katalog. Rilis filter tidak menambah migrasi. Versi aktif, enam file source, jumlah AHSP, checksum tabel bisnis di luar katalog dan lima entri Change Log cocok. Master AHSP serta pergantian filter pada 320/1440 lulus. UAT manusia, HP fisik, full suite, staging dan PILOT_READY tetap terbuka. Automation tetap **PAUSED**. Tidak ada tambahan klaim seluruh 36 pemeriksaan UI/UX lulus.
+
+Langkah berikutnya: verifikasi rincian 2.705 kode tersisa per divisi dan pemetaan HSD lokal. Tujuh detail RISHA memerlukan pemeriksaan estimator atas lingkup, konversi dan analisis bertingkat. Riwayat 22 dan 24 November dipertahankan di kedua Change Log.
+
+[Master AHSP](https://arkarupa-dashboard.vercel.app/katalog#ahsp-master-heading) · [Analisis yang dapat dipilih di RAP](https://arkarupa-dashboard.vercel.app/katalog?workState=verified#ahsp-master-heading).
+
+
 ## 2026-11-24 - Promo Coffee + Cheesecake Rp30.000 sudah aktif
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Paket satu kopi pilihan dan satu cheesecake Original/Brownies Rp30.000 aktif pada katalog SagaPOS publikasi 27 / versi 212, source `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39`, sampai 30 November 2026 WIB. Sepuluh kombinasi pasangan, lima pemeriksaan tambahan dan dua kontrol kasir lulus melalui quote production. Tujuh foto sama dengan foto reguler dan termuat di preview browser. Tidak ada transaksi uji production; UAT kiosk fisik masih terbuka. Akses Owner yang sebelumnya menghambat penerbitan sudah tersedia dan publikasi selesai. [Rincian SagaOPS](../products/sagaops/PRODUCT.md).
