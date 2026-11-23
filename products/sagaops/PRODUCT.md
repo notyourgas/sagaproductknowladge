@@ -1,5 +1,11 @@
 # SagaOPS Product Knowledge
 
+## 2026-11-23 - Staff terlambat dapat absen masuk pada tanggal shift yang sama
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Absen masuk untuk jadwal terbit tersedia dari waktu buka absensi sampai pergantian tanggal WIB. Keterlambatan mewajibkan alasan dan menyimpan jam server sebenarnya beserta menit terlambat. Staff melihat status Terlambat dan petunjuk langsung untuk Absen masuk. Koreksi lupa absen masuk digunakan untuk tanggal sebelumnya, dengan replay pengajuan lama tetap didukung.
+
+Pengaturan Owner menjelaskan batas akhir tanggal WIB. Pemilihan shift mendukung lebih dari satu jadwal pada tanggal yang sama. Validasi GPS, foto, riwayat kehadiran, serta perhitungan durasi memakai alur absensi existing. Proses uji pemulihan memakai heap 512 MiB sesuai konfigurasi produksi yang aktif, setelah batas lama 256 MiB kehabisan memori saat memuat salinan data. Source a9eb7b2d45c69690bd5374c8421f3596c74fd0cd. CI absensi pada PostgreSQL native lulus 85 dari 85 tes. Uji pemulihan candidate-current-candidate dan monitor produksi lulus. Health runtime siap, login Staff dan Dashboard HTTP 200, serta aset aturan baru terverifikasi melalui HTTPS. UAT langsung menggunakan akun operasional belum dilakukan.
+
 ## 2026-11-20 - Pemulihan akses SagaPOS setelah batas memori tercapai
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Proses SagaPOS mencapai batas memori 768 MiB, lalu startup berulang terhambat satu pekerjaan laporan dengan lease kedaluwarsa. Pekerjaan itu dipulihkan melalui orchestrator kanonik dan selesai pada percobaan kedua. Batas aplikasi sekarang MemoryHigh 1 GiB dan MemoryMax 1280 MiB.

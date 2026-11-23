@@ -1,5 +1,11 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-23 - Staff terlambat dapat absen masuk pada tanggal shift yang sama
+
+**CONFIRMED / PRODUCTION_ACTIVATED.** Absen masuk untuk jadwal terbit tersedia dari waktu buka absensi sampai pergantian tanggal WIB. Keterlambatan mewajibkan alasan dan menyimpan jam server sebenarnya beserta menit terlambat. Staff melihat status Terlambat dan petunjuk langsung untuk Absen masuk. Koreksi lupa absen masuk digunakan untuk tanggal sebelumnya, dengan replay pengajuan lama tetap didukung.
+
+Pengaturan Owner menjelaskan batas akhir tanggal WIB. Pemilihan shift mendukung lebih dari satu jadwal pada tanggal yang sama. Validasi GPS, foto, riwayat kehadiran, serta perhitungan durasi memakai alur absensi existing. Proses uji pemulihan memakai heap 512 MiB sesuai konfigurasi produksi yang aktif, setelah batas lama 256 MiB kehabisan memori saat memuat salinan data. Source a9eb7b2d45c69690bd5374c8421f3596c74fd0cd. CI absensi pada PostgreSQL native lulus 85 dari 85 tes. Uji pemulihan candidate-current-candidate dan monitor produksi lulus. Health runtime siap, login Staff dan Dashboard HTTP 200, serta aset aturan baru terverifikasi melalui HTTPS. UAT langsung menggunakan akun operasional belum dilakukan.
+
 ### 2026-11-22 — Catatan baseline berbagi keuangan: alat lokal terblokir
 
 **CONFIRMED — BLOCKED_BEFORE_IMPLEMENTATION; runtime demo tidak berubah.** Source lokal f881b4db8357b8fe4170643da101582ba1379543 hanya menambah Change Log. Versi aktif tetap54914028dc0266b1496276db3a795976fd5fb9b4. Rancangan rincian berbagi keuangan yang dapat diringkas dan fokus review belum diterapkan; belum ada screenshot sesudah atau kandidat UI baru yang lulus.
