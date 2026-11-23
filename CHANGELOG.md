@@ -1,5 +1,18 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-24 — Arkarupa: strategi PMS mengikuti referensi baru
+
+**CONFIRMED — ARAHAN DESAIN, BELUM IMPLEMENTASI.** Andreas meminta strategi fitur, navigasi dan UI/UX mengikuti referensi PMS yang diberikan sedekat mungkin. Target sidebar menjadi Beranda, Proyek, Master Data, Pengaturan dan Pusat Bantuan; submenu Proyek adalah Overview, Dokumen, RAB, Jadwal, Progress, Perubahan dan Laporan. Master Data memuat AHSP, Database Upah, Database Material dan Database Peralatan. Target komposisi/navigasi ini menggantikan Holsite untuk pengembangan berikutnya; monokrom dan Plus Jakarta Sans tetap. Lihat DEC-335.
+
+**PROPOSAL — STRATEGY_PLANNED_NOT_IMPLEMENTED.** Strategi memakai Foto1 untuk sidebar, Foto2 untuk workspace RAB desktop1280×720, serta Master Plan11halaman untuk aturan bisnis. Tiga tab RAB/Analisa Harga Satuan/Master Pekerjaan memakai sumber AHSP yang sama. QTO, Back Up Volume, BOQ, analisis dan rekap menjadi workspace terintegrasi; harga dasar, internal, penawaran, negosiasi dan kontrak tetap dibedakan. Pengadaan/keuangan tetap memiliki akses kontekstual. Detail penempatan, role, rumus dan kebijakan komersial belum otomatis disahkan.
+
+Dokumentasi source `0ba177b583c16b9e99bd4797f618a977032005a7` memuat strategi, peta navigasi usulan dan50pemeriksaan:10NAV,8VIS,12RAB,6DATA,8FLOW,6QA. Semua PLANNED_NOT_IMPLEMENTED,0/50 dinyatakanlulus. Sembilan paketP0–P8 memprioritaskan shell/navigasi dan kerangka visualRAB, kemudian master/QTO/BOQ/RAB, review/komersial, projectcore, jadwal/progres/operasional dan closeout. Rute target bukan rute yang sudah tersedia.36pemeriksaanHolsite lama perlu pemetaan; kelulusan lama tidak otomatis membuktikan target baru.
+
+**CONFIRMED — DOKUMENTASI SAJA.** Tidak ada perubahan UI/fungsi/schema/izin, migrasi, deployment atau aktivasi pilot dalam penyusunan strategi. Runtime terakhir yang diverifikasi tetap `224fcd7d9edba84871457ab9723b633425319b0e`; tidak diperiksa ulang pada task strategi. Kedua Change Log lokal dibaca ulang; catatan kajian/strategi belum terbit ke tab demo dan akan ikut rilis fitur berikutnya. Automation tetap PAUSED. Sumber strategi dan matriks tersedia dalam docs source commit di atas. Validasi hanya struktur dokumen,50IDunik/semuaPLANNED, jumlah/menu navigasi dan tautan lokal; tidak mengklaim tes aplikasi.
+
+Langkah berikutnya: rancangan rinci P0 dan implementasi P1 setelah instruksi implementasi; kecocokan screenshot desktop/HP dan satu alur AHSP→QTO→BUV/BOQ→RAB menjadi gerbang awal. Data nyata, UAT manusia dan PILOT_READY tetap terpisah.
+
+
 ## 2026-11-24 — Arkarupa: Master AHSP PDF dan template RAP
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `224fcd7d9edba84871457ab9723b633425319b0e`. Katalog awal diterbitkan pada `aa15b6a8a0c916e1494ba91fada2a871816f3251`, menggantikan `54914028dc0266b1496276db3a795976fd5fb9b4`; rilis akhir merapikan filter status pada HP. Demo yang sebelumnya memiliki nol AHSP Lampiran VI kini memuat seluruh **2.841 kode** dari indeks Cipta Karya edisi 47/SE/Dk/2026. Rincian 143 tabel/812 koefisien berasal dari delapan batch yang sudah diperiksa. Sebanyak **136 analisis langsung/767 koefisien** dipetakan ke template RAP dan 131 resource tanpa harga. **2.705 kode tetap Referensi**, termasuk tujuh detail RISHA yang belum boleh dihitung. Katalog kode lengkap bukan klaim seluruh koefisien PDF selesai.

@@ -4616,5 +4616,20 @@ ini bukan aktivasi payment flow lain.
 | Alternatif yang dipertimbangkan | Mempertahankan warna referensi Holsite; digantikan instruksi terbaru. |
 | Dampak | Status tetap dibedakan dengan label, bentuk dan pola. Penilaian visual terpisah dari penerimaan teknis historis; tidak membuka akses atau aktivasi pilot. |
 | Pemberi keputusan | Andreas / founder |
-| Status | CONFIRMED; palet sebelumnya DEPRECATED untuk antarmuka aktif Arkarupa |
+| Status | CONFIRMED untuk monokrom/Plus Jakarta Sans; komposisi dan navigasi Holsite DEPRECATED sebagai target pengembangan sejak 24 November 2026, digantikan DEC-335. Runtime lama tidak diubah oleh keputusan ini. |
+| Dokumen terkait | [Arkarupa](products/sagadevs/ARKARUPA.md), [Product](products/sagadevs/PRODUCT.md), [Changelog](products/sagadevs/CHANGELOG.md) |
+
+
+## DEC-335 - Target UI/UX dan navigasi Arkarupa PMS mengikuti referensi baru
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-11-24 |
+| Topik | Target desain dan strategi implementasi PMS |
+| Keputusan | Andreas meminta strategi fitur, navigasi dan UI/UX mengikuti referensi PMS yang diberikan; sidebar Beranda/Proyek/Master Data/Pengaturan/Pusat Bantuan dan workspace RAB terintegrasi menjadi target baru. |
+| Alasan | Referensi baru menjelaskan tampilan serta alur operasional modul yang diinginkan. |
+| Alternatif yang dipertimbangkan | Mempertahankan navigasi/komposisi Holsite sebagai target; digantikan arahan baru. Palet monokrom dan Plus Jakarta Sans tetap. |
+| Dampak | Detail tahap, rute, tab dan50kriteria masih proposal; tidak mengesahkan fitur sebagai selesai atau mengubah batas akses/approval. Pengadaan/keuangan tetap perlu jalur kontekstual. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED sebagai arahan target; implementasi dan rollout NOT_RUN, automation tetap PAUSED. |
 | Dokumen terkait | [Arkarupa](products/sagadevs/ARKARUPA.md), [Product](products/sagadevs/PRODUCT.md), [Changelog](products/sagadevs/CHANGELOG.md) |
