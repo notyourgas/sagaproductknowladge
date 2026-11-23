@@ -1,5 +1,9 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-24 - Dukungan bundling Coffee + Cheesecake di Kiosk
+
+**CONFIRMED / PRODUCTION_DEPLOYED; campaign activation pending.** SagaPOS source `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39` menyediakan paket satu cheesecake Original/Brownies dan satu dari lima kopi pilihan Rp30.000 di Kiosk, dengan akhir periode yang disetujui 30 November 2026 WIB. Software, 80 tes Linux/PostgreSQL, restore, rollback dan monitor production lulus. Harga normal dan printer dipertahankan. Kampanye belum diterbitkan karena akses Owner belum tersedia; quote production sesudah publikasi dan UAT kiosk fisik tetap terbuka. [Rincian SagaOPS](products/sagaops/PRODUCT.md).
+
 ## 2026-11-23 - Staff terlambat dapat absen masuk pada tanggal shift yang sama
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Absen masuk untuk jadwal terbit tersedia dari waktu buka absensi sampai pergantian tanggal WIB. Keterlambatan mewajibkan alasan dan menyimpan jam server sebenarnya beserta menit terlambat. Staff melihat status Terlambat dan petunjuk langsung untuk Absen masuk. Koreksi lupa absen masuk digunakan untuk tanggal sebelumnya, dengan replay pengajuan lama tetap didukung.

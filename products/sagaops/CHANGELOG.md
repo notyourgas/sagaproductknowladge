@@ -1,5 +1,17 @@
 # SagaOPS Changelog
 
+## 2026-11-24 - Dukungan bundling Coffee + Cheesecake di Kiosk
+
+**CONFIRMED / PRODUCTION_DEPLOYED.** Dukungan paket satu kopi dan satu cheesecake Rp30.000 telah dipasang pada source `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39`. Pilihan cheesecake adalah Original atau Brownies; pilihan kopi adalah Americano, Cafe Latte, Cappucino, Es Kopi Saga atau Saga Premium. Andreas menetapkan akhir periode 30 November 2026 pukul 23.59 WIB, dengan batas sistem 1 Desember 2026 pukul 00.00 WIB.
+
+Kategori paket ditempatkan paling atas ketika kampanye aktif, dengan dua kelompok pilihan. Setiap pasangan lengkap mendapat harga paket. Item tanpa pasangan dan tambahan berbayar mengikuti harga normal. Kampanye disiapkan khusus Kiosk untuk makan di tempat atau takeaway; Ojol dikecualikan. Pemilihan promo menggunakan benefit terbaik yang sudah tersedia, sehingga Daily Dose atau voucher member tidak ditambahkan lagi ke paket ini.
+
+**Aktivasi katalog belum dilakukan.** Kode production sehat, tetapi kampanye masih menunggu akses Owner terautentikasi. Menu paket belum dapat dijanjikan tersedia kepada pelanggan. Harga satuan tujuh produk pilihan, HPP, stok fisik, layout nota dan alur printer dipertahankan. Tidak dibuat pesanan atau pembayaran uji di production.
+
+Kualifikasi Linux/PostgreSQL native [run 45223402710](https://github.com/notyourgas/sagaops/actions/runs/45223402710) lulus 80/80 tes tanpa skip dalam 1 menit 57 detik. Validasi mencakup sepuluh kombinasi pasangan, jumlah tambahan, batas waktu, alokasi potongan, persistence dan pembacaan oleh versi rollback. Uji restore backup terenkripsi, boot kandidat dan rollback, serta monitor produksi lulus. Source rollback `a9eb7b2d45c69690bd5374c8421f3596c74fd0cd`. Health publik siap, tujuh aset sesuai kandidat dan tujuh harga satuan tetap. Jalur template offline terverifikasi melalui alias resmi; tidak ada perubahan aturan akses dashboard. Uji langsung pada kiosk fisik dan verifikasi quote production sesudah publikasi masih terbuka.
+
+Sumber keputusan: Andreas, permintaan bundling dan jawaban masa berlaku sampai 30 November 2026. Sebelum: belum tersedia paket pasangan kopi dan cheesecake. Sesudah: dukungan software terpasang, kampanye belum diterbitkan. Next action: akses Owner, publikasi katalog dengan pemeriksaan versi, lalu quote tanpa membuat transaksi production.
+
 ## 2026-11-23 - Staff terlambat dapat absen masuk pada tanggal shift yang sama
 
 **CONFIRMED / PRODUCTION_ACTIVATED.** Absen masuk untuk jadwal terbit tersedia dari waktu buka absensi sampai pergantian tanggal WIB. Keterlambatan mewajibkan alasan dan menyimpan jam server sebenarnya beserta menit terlambat. Staff melihat status Terlambat dan petunjuk langsung untuk Absen masuk. Koreksi lupa absen masuk digunakan untuk tanggal sebelumnya, dengan replay pengajuan lama tetap didukung.

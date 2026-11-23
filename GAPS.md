@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-24 - Dukungan bundling Coffee + Cheesecake di Kiosk
+
+**NEEDS CONFIRMATION.** Kode paket Rp30.000 sudah production-deployed pada `bc08cd9101b1d05141a39a7cdcc8590c2ecccf39` dan seluruh kualifikasi software yang dipilih lulus. Aktivasi kampanye belum dilakukan karena akses Owner terautentikasi belum tersedia. Tidak ada klaim production-activated atau business-ready untuk paket ini. Selesaikan publikasi katalog dengan kontrol versi, lalu verifikasi quote Kiosk tanpa transaksi palsu dan lakukan penerimaan pada perangkat fisik. Persetujuan tanggal akhir sudah jelas: 30 November 2026 WIB; tidak perlu meminta ulang keputusan tersebut.
+
 ## 2026-11-20 - Batas penerimaan enam menu KopiSaga dan observasi memori
 
 **NEEDS CONFIRMATION.** Enam menu baru sudah aktif pada publikasi katalog 26 / versi 209 dan pemeriksaan katalog serta quote produksi lulus. UAT pada kiosk fisik, transaksi berbayar, resep serta biaya HPP menu baru belum divalidasi dalam pekerjaan katalog ini. Stok fisik dan HPP tidak diubah.
