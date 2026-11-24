@@ -4653,3 +4653,18 @@ ini bukan aktivasi payment flow lain.
 ## DEC-337 — 24 November 2026 — Arkarupa tiga master dan kepemilikan harga
 
 **CONFIRMED_REQUIREMENT; IMPLEMENTATION_NOT_DEPLOYED.** Andreas: AHSP dapat direvisi pada kebutuhan/koefisien nonharga; harga bahan dan tarif upah hanya melalui master sumber. Tiga master: AHSP, Bahan(tabBahan/Peralatan dengan jenisbiayaalat terpisah), Upah. Harga AHSP turunan read-only. Histori harga/koefisien dan snapshotRABapproved tetap; izin/no-self-approval tidak diperluas. Master didahulukan sebelum project-first/RABminimal. Source spesifikasi85154b3; runtimeC4245ad belum diganti. Pemetaan seluruhPDF berupa reviewed+kandidat, bukan imporproduksi.
+
+
+## DEC-338 — 25 November 2026 — Arkarupa RAB draf nol dan panel volume kanan
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-11-25 |
+| Topik | Memperjelas alur RAB proyek dan lokasi input ukuran |
+| Keputusan | Owner menyusun semua item AHSP dahulu melalui [+] di kiri nomor Romawi dan dropdown inline. Item berukuran nol boleh disimpan draf. Dimensi diisi kemudian di panel kanan saat klik nama pekerjaan/kalkulator; tabel utama hanya satuan, volume dan harga. Tambah Baris, Batal/Terapkan; HP layar penuh. Plus Jakarta Sans dan monokrom dengan spacing/typography konsisten. |
+| Alasan | Arahan dan screenshot Andreas untuk menghilangkan formulir item yang rumit dan menyamakan persepsi penggunaan. |
+| Alternatif | Input P/L/T langsung di tabel atau mewajibkan ukuran positif sebelum menambahkan item; tidak digunakan untuk jalur utama baru. |
+| Dampak | Memperjelas DEC-337; kepemilikan harga tiga master, izin dan snapshot tidak berubah. Nol draf berbeda dari harga kosong; total sementara dan final review harus jujur. Rincian strategi sembilan batch adalah PROPOSAL, bukan fitur terpasang. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED kebutuhan; IMPLEMENTATION_NOT_DEPLOYED. Source dokumen abd158324fe822f56b8bb1d13daa840594b9892b; runtime terakhir tercatat c4245ad, belum diverifikasi ulang pada tugas strategi. Automation PAUSED. |
+| Dokumen terkait | [Arkarupa](products/sagadevs/ARKARUPA.md), [Product](products/sagadevs/PRODUCT.md), [Gaps](GAPS.md) |

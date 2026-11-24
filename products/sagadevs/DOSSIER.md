@@ -1,5 +1,14 @@
 # SagaDevs Product Hub Dossier
 
+## 2026-11-25 — Arkarupa: daftar pekerjaan dahulu, volume lewat panel kanan
+
+**CONFIRMED — kebutuhan Andreas, belum diimplementasikan.** DEC-338 memperjelas DEC-337: Owner membuat kelompok mandiri berurutan Romawi; tombol [+] di kiri nomor kelompok membuka baris dropdown AHSP yang dapat dicari. Seluruh pekerjaan boleh disusun/disimpan sebagai draf bervolume nol dan dilengkapi kemudian. Tabel menampilkan No., Uraian, Satuan, Volume, Harga Satuan, Jumlah Harga. P/L/T hanya di panel kanan Perhitungan Volume yang dibuka dari nama pekerjaan/kalkulator; Tambah Baris, catatan opsional, Batal/Terapkan, layar penuh di HP. Harga turunan master, tiga master, histori/izin dan snapshot approved tetap. Ukuran nol berstatus Belum diukur; harga belum lengkap berbeda dari nol, total sementara dan pemeriksaan final tidak boleh menyembunyikan ketidaklengkapan.
+
+**PROPOSAL — strategi implementasi R2.** Source perencanaan `abd158324fe822f56b8bb1d13daa840594b9892b` menyimpan sembilan batch: B01 acuan visual Plus Jakarta Sans/monokrom/spacing; B02 sumber harga Bahan/Peralatan/Upah; B03 AHSP dan review impor bertahap; B04 project-first; B05 kelompok mandiri; B06 AHSP inline/draf nol; B07 panel volume; B08 angka/snapshot/ekspor/integrasi; B09 QA/panduan/rilis. Tracker 9 batch dan 45 ID R2 unik tervalidasi dengan dependensi tanpa siklus; **0/45 bukti implementasi**, seluruhnya PLANNED_NOT_IMPLEMENTED. Pembagian batch adalah usulan pelaksanaan, bukan konfirmasi seluruh fitur lulus.
+
+**CONFIRMED — batas pemeriksaan.** Dokumen dan kedua Change Log lokal diperbarui; tidak ada tes aplikasi baru, mutasi data atau deployment. Rilis demo terakhir tercatat `c4245ad4efcd8eef002d95aeeafd4c67b621981d`, tidak diperiksa ulang dalam tugas strategi ini. Entri Change Log kandidat belum terbit. Automation PAUSED; validasi kandidat AHSP/harga dasar, pajak/pembulatan baru, UAT manusia dan PILOT_READY tetap terbuka. Jalur review data per divisi berjalan bertahap; pemetaan 2.841 kode tidak berarti semuanya siap dipakai. Rencana lama dan bukti 27/50 setelah rebaseline tetap histori terpisah dari R2.
+
+
 ## 2026-11-24 — Arkarupa: tiga master dan prioritas master sebelum RAB
 
 **CONFIRMED REQUIREMENT — DOCUMENTED, NOT_IMPLEMENTED_OR_DEPLOYED.** DEC-337: Andreas menetapkan tiga master: AHSP untuk komposisi/koefisien nonharga; Bahan dengan tabBahan/Peralatan (alat tetap berjenis biayaequipment); Upah sebagai sumbertarif tenaga. Harga tidak diedit di AHSP; harga analisis dihitung dari referensi resource. Edit kebutuhan memakai histori/versi; snapshot RABapproved tidak berubah otomatis. Hak akses/no-self-approval tetap. Prioritas master mendahului koreksi project-first/RABminimal. Source spesifikasi `85154b344d79223048766b71efc4bbb8be98872b`; runtime masih `c4245ad4efcd8eef002d95aeeafd4c67b621981d`. Tiga menu master baru dan impor kandidat belum terbit.
