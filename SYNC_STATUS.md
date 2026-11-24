@@ -1,5 +1,14 @@
 # Status Sinkronisasi Saga Product Knowledge
 
+## 2026-11-24 — Arkarupa: tiga master dan prioritas master sebelum RAB
+
+**CONFIRMED REQUIREMENT — DOCUMENTED, NOT_IMPLEMENTED_OR_DEPLOYED.** DEC-337: Andreas menetapkan tiga master: AHSP untuk komposisi/koefisien nonharga; Bahan dengan tabBahan/Peralatan (alat tetap berjenis biayaequipment); Upah sebagai sumbertarif tenaga. Harga tidak diedit di AHSP; harga analisis dihitung dari referensi resource. Edit kebutuhan memakai histori/versi; snapshot RABapproved tidak berubah otomatis. Hak akses/no-self-approval tetap. Prioritas master mendahului koreksi project-first/RABminimal. Source spesifikasi `85154b344d79223048766b71efc4bbb8be98872b`; runtime masih `c4245ad4efcd8eef002d95aeeafd4c67b621981d`. Tiga menu master baru dan impor kandidat belum terbit.
+
+**CONFIRMED — PEMETAAN, BUKAN KELAYAKAN SEMUA DATA.** Seluruh1563halaman PDF sumber dan2841kode dipetakan.16201baris komponen campuran reviewed/kandidat; kandidat resource2561bahan/145alat/45jenistenaga.136analisis lama/767koefisien dipertahankan; parser cocok pada136/136pembanding jenis/satuan/nilai koefisien.2672analisis masih kandidat ekstraksi,7bertingkat,24formula/produktivitas dan2rujukan dokumen lain memerlukan review.30barisexception dicatat.2padanan harga existing hanya kandidat pencocokan ketat, bukan harga proyek yang sudah divalidasi; tidak mengarang harga atau memakai expected_direct fixture sebagai hargaPDF. Belum ada mutasi DB/UI pada tahap pemetaan. Publikasi sebelumnya136template hitung tetap, bukan seluruh2841siap.
+
+**CONFIRMED — REBASELINE.** Arahan project-first: Proyek membuka daftar/+TambahProyek; tujuh submenu muncul setelah memilih proyek. Kelompok RAB mandiri cukup nama+urutanRomawi, item dariAHSP cukup ukuran tanpa ruangan wajib. NAV-02/NAV-03/RAB-02 dibuka ulang; **27/50** tetapPASS pada kriteria terbaru.30/50pada laporanC adalah histori acuanlama. KeduaChangeLog source/jadwal mencatat pemetaan; entri source baru belum terlihat publik karena tidak dirilis. Automation **PAUSED**. Validasi kandidat/HSD dan implementasi3master masih pekerjaan berikutnya; UATmanusia/PILOT_READY tetapOPEN.
+
+
 ## 2026-11-24 — Arkarupa Gelombang C: dokumen privat dan mutu proyek terbit
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `c4245ad4efcd8eef002d95aeeafd4c67b621981d`; dokumentasi acceptance `b5f4c21bf340d127d9d5dce8b84db4c03fb34809`; sebelumnya/rollback kode `d98d542787f2f9327780ef51deed8a8563226ac7`. [Demo Laravel Arkarupa](https://arkarupa-dashboard.vercel.app/). Demo statis tidak diubah. Bagian A/B di bawah merupakan histori sebelum milestone C ini.

@@ -4648,3 +4648,8 @@ ini bukan aktivasi payment flow lain.
 | Pemberi keputusan | Andreas / founder |
 | Status | CONFIRMED batas kebijakan; nilai aturan pajak/pembulatan baru NEEDS CONFIRMATION. Implementasi source/runtime d98d542; automationPAUSED, bukan BUSINESS_READY. |
 | Dokumen terkait | [Arkarupa](products/sagadevs/ARKARUPA.md), [Product](products/sagadevs/PRODUCT.md), [Gaps](GAPS.md) |
+
+
+## DEC-337 — 24 November 2026 — Arkarupa tiga master dan kepemilikan harga
+
+**CONFIRMED_REQUIREMENT; IMPLEMENTATION_NOT_DEPLOYED.** Andreas: AHSP dapat direvisi pada kebutuhan/koefisien nonharga; harga bahan dan tarif upah hanya melalui master sumber. Tiga master: AHSP, Bahan(tabBahan/Peralatan dengan jenisbiayaalat terpisah), Upah. Harga AHSP turunan read-only. Histori harga/koefisien dan snapshotRABapproved tetap; izin/no-self-approval tidak diperluas. Master didahulukan sebelum project-first/RABminimal. Source spesifikasi85154b3; runtimeC4245ad belum diganti. Pemetaan seluruhPDF berupa reviewed+kandidat, bukan imporproduksi.
