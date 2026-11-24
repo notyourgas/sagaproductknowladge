@@ -1,5 +1,14 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-25 — Arkarupa B01: hierarki prototype diperbaiki ke v2
+
+**CONFIRMED — DESIGN_REFERENCE_VALIDATED, runtime tidak berubah.** Menanggapi penilaian Andreas bahwa hierarki masih kurang jelas, source `a182bff8206818b53baa7a001eaa5ac705428598` menyempurnakan prototype B01: RAB menjadi satu-satunya judul utama, identitas proyek ringkas, kontrol contoh dipindah ke footer, status kelengkapan sebaris, kelompok lebih tegas, subtotal hanya di akhir kelompok, kode berada dalam target klik nama, item terpilih dan hasil volume diperjelas di panel. Plus Jakarta Sans, monokrom dan P/L/T hanya di panel tetap.
+
+**CONFIRMED — bukti perbandingan terarah.** Fixture dan viewport 1600 yang sama: tinggi konteks proyek 127,69 menjadi 77 px; posisi atas tabel 531,38 menjadi 400,30 px; baris pekerjaan 87,5 menjadi 65 px, teks isi tetap 14 px dan kontrol 44 px. Sebanyak 31 pemeriksaan prototype dan tujuh pasangan kontras lulus pada 1600/1280/390/320, tanpa error JavaScript/request eksternal. Lima ID desain B01 lulus ulang, bukan tambahan lima fitur/PASS baru. Screenshot v1 dipertahankan; v2 memiliki bukti DOM dan screenshot sendiri.
+
+**CONFIRMED — batas.** Prototype memakai data sintetis dan penyimpanan memori; tidak ada mutasi Laravel/database/akun/izin atau deployment. Kedua Change Log lokal diperbarui, entri kandidat belum terbit. Rilis demo terakhir tercatat c4245ad dan tidak diperiksa ulang pada revisi desain; acceptance PMS lama tetap 27/50 setelah rebaseline. Automation PAUSED. UAT manusia, HP fisik dan implementasi B02–B09 masih terbuka; berikutnya sumber harga Bahan/Peralatan dan Upah. Kelayakan master serta aturan pajak baru tetap mengikuti checkpoint sebelumnya.
+
+
 ## 2026-11-25 — Arkarupa R2 Batch 01: acuan visual dan interaksi tervalidasi
 
 **CONFIRMED — DESIGN_REFERENCE_VALIDATED, bukan perubahan runtime.** Source `82ab538b149d1306dec3458c45c10337094b4258` menyelesaikan R2-B01 sebagai prototype lokal dengan data sintetis di memori: Plus Jakarta Sans lokal, token monokrom/spacing, tabel enam kolom plus tindakan, kelompok Romawi dengan [+] di kiri, pencarian AHSP inline dan panel Perhitungan Volume kanan/HP penuh. P/L/T tetap di panel. Harga/kuantitas contoh bukan master nyata; Simpan hanya simulasi tanpa server.
