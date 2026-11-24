@@ -1,5 +1,14 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-25 — Arkarupa R2 Batch 01: acuan visual dan interaksi tervalidasi
+
+**CONFIRMED — DESIGN_REFERENCE_VALIDATED, bukan perubahan runtime.** Source `82ab538b149d1306dec3458c45c10337094b4258` menyelesaikan R2-B01 sebagai prototype lokal dengan data sintetis di memori: Plus Jakarta Sans lokal, token monokrom/spacing, tabel enam kolom plus tindakan, kelompok Romawi dengan [+] di kiri, pencarian AHSP inline dan panel Perhitungan Volume kanan/HP penuh. P/L/T tetap di panel. Harga/kuantitas contoh bukan master nyata; Simpan hanya simulasi tanpa server.
+
+**CONFIRMED — bukti acuan desain.** Lima ID R2-B01-01..05 berstatus PASS_DESIGN_REFERENCE; 30 pemeriksaan prototype pada lebar 1600/1280/390/320, tujuh pasangan kontras, tanpa error JavaScript/request eksternal. Fokus/keyboard, reduced motion, footer panel terjangkau, empty/loading/error/zero/unpriced dan pemulihan contoh diperiksa. Teks utama/putih 16,29:1; teks sekunder 6,19:1; batas kontrol 3,54:1. Screenshot aktual dan beranotasi, tokenCSS, spesifikasi, validasi dan script replay tersedia sebagai paket desain. Bukti sebelum adalah screenshot C historis dengan role/state berbeda, bukan klaim regresi piksel identik.
+
+**CONFIRMED — batas status dan langkah berikutnya.** B01 selesai sebagai acuan desain; B02–B09 belum diimplementasikan. Tidak menambah fitur Laravel, memutasi database/izin/akun atau merilis demo; acceptance PMS lama tetap 27/50 setelah rebaseline, tidak digabung dengan lima pemeriksaan desain R2. Kedua Change Log lokal diperbarui; entri kandidat belum dipublikasikan. Rilis demo terakhir tercatat `c4245ad4efcd8eef002d95aeeafd4c67b621981d`, tidak diperiksa ulang pada batch desain. UAT manusia, HP fisik dan pengujian backend/produksi tidak dilakukan. Automation PAUSED. Berikutnya B02 sumber harga Bahan/Peralatan dan Upah, lalu B03 AHSP; review kandidat/harga dasar dan pajak/pembulatan baru tetap terbuka. Bukan staging/UAT/PILOT_READY.
+
+
 ## 2026-11-25 — Arkarupa: daftar pekerjaan dahulu, volume lewat panel kanan
 
 **CONFIRMED — kebutuhan Andreas, belum diimplementasikan.** DEC-338 memperjelas DEC-337: Owner membuat kelompok mandiri berurutan Romawi; tombol [+] di kiri nomor kelompok membuka baris dropdown AHSP yang dapat dicari. Seluruh pekerjaan boleh disusun/disimpan sebagai draf bervolume nol dan dilengkapi kemudian. Tabel menampilkan No., Uraian, Satuan, Volume, Harga Satuan, Jumlah Harga. P/L/T hanya di panel kanan Perhitungan Volume yang dibuka dari nama pekerjaan/kalkulator; Tambah Baris, catatan opsional, Batal/Terapkan, layar penuh di HP. Harga turunan master, tiga master, histori/izin dan snapshot approved tetap. Ukuran nol berstatus Belum diukur; harga belum lengkap berbeda dari nol, total sementara dan pemeriksaan final tidak boleh menyembunyikan ketidaklengkapan.
