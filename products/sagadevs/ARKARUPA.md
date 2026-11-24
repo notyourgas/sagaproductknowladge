@@ -1,5 +1,12 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-25 — Arkarupa B01: panel volume v3 mengikuti screenshot
+
+**CONFIRMED — DESIGN_REFERENCE_VALIDATED, bukan runtime.** Arahan Andreas: samakan panel kanan dengan screenshot dan hapus kata-kata yang tidak perlu. Source `25b36eceb76484a282f742ad36139453b9f1968b` mengganti panel v2 menjadi flat panel 360 px: judul, nama pekerjaan, satuan, Tambah Baris, tabel Uraian Perhitungan/P/L/T/Jumlah, Total Volume abu-abu, Catatan opsional, Batal/Terapkan. Judul Rincian ukuran, penjelasan rumus, informasi harga tambahan, kode di panel, kartu pekerjaan dan blok hasil hitam dihapus. Label panjang/lebar/tinggi lengkap tetap tersedia bagi screen reader; tampilan menggunakan P/L/T. Validasi input tetap muncul saat diperlukan.
+
+**CONFIRMED — bukti dan batas.** Sebanyak 32 pemeriksaan prototype dan tujuh pasangan kontras lulus pada 1600/1280/390/320, tanpa error JavaScript/request eksternal. Tabel m² satu baris muat pada 320 px; keyboard/fokus/reduced motion, Tambah Baris, hasil hitung dan Batal/Terapkan tetap. Lima ID desain B01 lulus ulang, bukan lima PASS fitur baru. Paket v1/v2 dipertahankan; screenshot v3 tersendiri. Data sintetis dan simpan memori, tidak ada perubahan Laravel/database/akun/izin/deploy. Kedua Change Log lokal dicatat, entri kandidat belum terbit. Runtime terakhir tercatat c4245ad tidak diperiksa ulang; acceptance PMS lama tetap 27/50 setelah rebaseline. Automation PAUSED. UAT manusia/HP fisik dan B02–B09 masih terbuka; sumber harga master dan pajak baru mengikuti checkpoint sebelumnya.
+
+
 ## 2026-11-25 — Arkarupa B01: hierarki prototype diperbaiki ke v2
 
 **CONFIRMED — DESIGN_REFERENCE_VALIDATED, runtime tidak berubah.** Menanggapi penilaian Andreas bahwa hierarki masih kurang jelas, source `a182bff8206818b53baa7a001eaa5ac705428598` menyempurnakan prototype B01: RAB menjadi satu-satunya judul utama, identitas proyek ringkas, kontrol contoh dipindah ke footer, status kelengkapan sebaris, kelompok lebih tegas, subtotal hanya di akhir kelompok, kode berada dalam target klik nama, item terpilih dan hasil volume diperjelas di panel. Plus Jakarta Sans, monokrom dan P/L/T hanya di panel tetap.
