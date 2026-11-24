@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-24 — Arkarupa: Gelombang B PMS diterbitkan
+
+**CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `d98d542787f2f9327780ef51deed8a8563226ac7`, dokumentasi acceptance `50e6de8`; sebelumnya `a476f5476713192679599af1875927b9c5af08d3`. B04–B07 core tersedia: registrasi/identitas legacy/Creator-PM terpisah, alternatif AHS immutable dengan review Owner lain, geometri/QTO yang menyimpan RAB dan BUV/BOQ dari snapshot sama, serta return/revisi tanpa menimpa approved. B08 menambahkan jejak negosiasi dan imporCSV berpratinjau/transaksi/idempotency. Harga dasar, diskon sekali dan approval tetap. Ponytail memakai komponen/layanan existing, tanpa dependency baru.
+
+**CONFIRMED — KEBIJAKAN DAN BATAS.** Keputusan Andreas DEC-336: role perproyek dicatat sebagai tanggung jawab, tanpa memperluas izin akun/membership atau membolehkan self-approval. Andreas akan mengirim aturan pajak/pembulatan baru; bagian itu B08 OPEN dan belum diaktifkan. CSV didukung, bukan klaim XLSX baru; satuan tambahan di luar kontrak yang diuji tetap terbuka. Legacy tidak diberi Creator historis fiktif. Formula demo tetap berlabel simulasi, bukan kebijakan pajak proyek nyata.
+
+**CONFIRMED — VERIFIKASI.**25tes/479asersi,8skenario browser lokal1280/390/320 dan smokePM publik/empatviewMasterData lulus. Owner positif diuji lokal; tidak membuat transaksi bisnis untuk smoke publik. Runner kanonik memverifikasi backup terenkripsi/restore73tabel10berkas, migrasi29→30, oldcode-read dan autentikasi.33file runtime/CSS cocok; data lama70tabel bisnis identik,2841kodeAHSP/136verified tetap. KeduaChangeLog diperbarui dan entri kandidat terbit. Matriks26/50kriteria lulus(52%acceptance targetbaru, bukan progress keseluruhan aplikasi); B04–B07 PASS_DEMO_CORE_CURRENT_POLICY, B08 PARTIAL_DEMO_WAIT_TAX_RULES. Automation **PAUSED**. UATmanusia/HPfisik/staging/PILOT_READY dan keseluruhan36Holsite belum lulus. [Demo Laravel](https://arkarupa-dashboard.vercel.app/); demo statis tidak dirilis pada perubahan ini. Bagian WaveA/strategi di bawah adalah histori sebelum milestone ini.
+
+
 ## 2026-11-24 — Arkarupa: Gelombang A PMS terbit dengan acceptance parsial
 
 **CONFIRMED — DEMO_CODE_PUBLIC_VERIFIED; NOT_BUSINESS_READY.** Source/runtime `a476f5476713192679599af1875927b9c5af08d3`, menggantikan `224fcd7d9edba84871457ab9723b633425319b0e`; dokumentasi acceptance `7034153`. Implementasi memakai Ponytail dan komponen Filament/layanan existing, tanpa dependency atau schema baru. Sidebar monokrom mengikuti referensi PMS: lima menu utama, tujuh submenu Proyek dan empat submenu Master Data. Header memuat konteks proyek dan breadcrumb. RAB memiliki tiga tab RAB/Analisa Harga Satuan/Master Pekerjaan, tabel kelompok/subtotal, pencarian/filter, ringkasan biaya internal/terbilang dan panel volume kanan/fullsheetHP. Master memakai sumber AHSP yang sama.

@@ -4631,5 +4631,20 @@ ini bukan aktivasi payment flow lain.
 | Alternatif yang dipertimbangkan | Mempertahankan navigasi/komposisi Holsite sebagai target; digantikan arahan baru. Palet monokrom dan Plus Jakarta Sans tetap. |
 | Dampak | Detail tahap, rute, tab dan50kriteria masih proposal; tidak mengesahkan fitur sebagai selesai atau mengubah batas akses/approval. Pengadaan/keuangan tetap perlu jalur kontekstual. |
 | Pemberi keputusan | Andreas / founder |
-| Status | CONFIRMED sebagai arahan target; implementasi dan rollout NOT_RUN, automation tetap PAUSED. |
+| Status | CONFIRMED sebagai arahan target; implementasi parsial GelombangA/B kini DEMO_CODE_PUBLIC_VERIFIED pada source d98d542 dengan26/50acceptance. UAT/PILOT_READY terbuka; automation tetap PAUSED. |
 | Dokumen terkait | [Arkarupa](products/sagadevs/ARKARUPA.md), [Product](products/sagadevs/PRODUCT.md), [Changelog](products/sagadevs/CHANGELOG.md) |
+
+
+## DEC-336 - Role proyek Arkarupa tidak memperluas izin dan aturan pajak baru menunggu Andreas
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-11-24 |
+| Topik | Batas implementasi GelombangB PMS |
+| Keputusan | Pertahankan izin akun, membership dan approval saat ini; role tambahan perproyek hanya pencatatan tanggung jawab. Andreas akan mengirim aturan pajak/pembulatan baru, sehingga aturan baru belum diaktifkan. |
+| Alasan | Jawaban Andreas pada klarifikasi implementasi GelombangB. |
+| Alternatif yang dipertimbangkan | Memperluas izin lewat multi-role sebelum matriks final atau menebak pajak/pembulatan mockup; tidak dipilih. |
+| Dampak | Tidak ada self-approval/bypass lintasproyek. B04–B07 core dan B08negosiasi/impor dapat dirilis; pajak/pembulatan B08 tetap OPEN/PIC Andreas. Formula demo tidak menjadi kebijakan pajak proyek nyata. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED batas kebijakan; nilai aturan pajak/pembulatan baru NEEDS CONFIRMATION. Implementasi source/runtime d98d542; automationPAUSED, bukan BUSINESS_READY. |
+| Dokumen terkait | [Arkarupa](products/sagadevs/ARKARUPA.md), [Product](products/sagadevs/PRODUCT.md), [Gaps](GAPS.md) |
