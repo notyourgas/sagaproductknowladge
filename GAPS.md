@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-25 - Mapping kecamatan J&T COYABAG lolos preview
+
+**CONFIRMED.** Mapping kecamatan resmi J&T sudah diterima dan lolos preview COYABAG. Data postcode berasal dari alamat pelanggan. Status akses provider produksi, impor runtime, serta checkout dan fulfillment produksi memerlukan verifikasi baru. Source `f4086b338462990bbea368472dad65273f7f7242` pada branch `codex/coyabag-jnt-account-contract`.
+
 ## 2026-11-25 — Arkarupa B01: panel volume v3 mengikuti screenshot
 
 **CONFIRMED — DESIGN_REFERENCE_VALIDATED, bukan runtime.** Arahan Andreas: samakan panel kanan dengan screenshot dan hapus kata-kata yang tidak perlu. Source `25b36eceb76484a282f742ad36139453b9f1968b` mengganti panel v2 menjadi flat panel 360 px: judul, nama pekerjaan, satuan, Tambah Baris, tabel Uraian Perhitungan/P/L/T/Jumlah, Total Volume abu-abu, Catatan opsional, Batal/Terapkan. Judul Rincian ukuran, penjelasan rumus, informasi harga tambahan, kode di panel, kartu pekerjaan dan blok hasil hitam dihapus. Label panjang/lebar/tinggi lengkap tetap tersedia bagi screen reader; tampilan menggunakan P/L/T. Validasi input tetap muncul saat diperlukan.

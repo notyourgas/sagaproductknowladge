@@ -1,5 +1,11 @@
 # COYABAG Dossier
 
+## 2026-11-25 - Mapping kecamatan J&T COYABAG lolos preview
+
+**CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.** Mapping cakupan resmi J&T berisi 7.299 baris untuk 38 provinsi dan 514 kabupaten/kota. Setelah 14 duplikat persis disisihkan, 7.285 baris unik lolos preview dengan nol error. Pembaca mendukung beberapa kecamatan lokal yang memakai satu kode area J&T dan mapping tingkat kecamatan dengan kode pos dari alamat pelanggan. Tes terfokus lulus 18 skenario dan 67 assertion. Source `f4086b338462990bbea368472dad65273f7f7242` pada branch `codex/coyabag-jnt-account-contract`.
+
+Mapping resmi mencakup kode kota dan kecamatan untuk tarif serta pembuatan resi. Lookup mendahulukan mapping per kode pos jika tersedia, lalu mapping kecamatan. File sumber tidak memiliki kolom kode pos. Aktivasi runtime dan acceptance produksi masih perlu diperiksa tersendiri.
+
 ## 2026-11-17 - COYABAG memverifikasi empat API J&T di sandbox
 
 **CONFIRMED / SANDBOX_VERIFIED / IMPLEMENTED_NOT_DEPLOYED.** J&T mengonfirmasi cek ongkir EZ, pembuatan resi, tracking, dan pembatalan kiriman sintetis dari server COYABAG. Aktivasi produksi menunggu akses produksi dari J&T, mapping gudang Madiun dan kecamatan, serta uji alur checkout dan fulfillment.

@@ -1,5 +1,9 @@
 # Portfolio Changelog
 
+## 2026-11-25 - Mapping kecamatan J&T COYABAG lolos preview
+
+**CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.** Mapping cakupan resmi J&T berisi 7.299 baris untuk 38 provinsi dan 514 kabupaten/kota. Setelah 14 duplikat persis disisihkan, 7.285 baris unik lolos preview dengan nol error. Pembaca mendukung beberapa kecamatan lokal yang memakai satu kode area J&T dan mapping tingkat kecamatan dengan kode pos dari alamat pelanggan. Tes terfokus lulus 18 skenario dan 67 assertion. Source `f4086b338462990bbea368472dad65273f7f7242` pada branch `codex/coyabag-jnt-account-contract`.
+
 ## 2026-11-25 — Arkarupa B01: panel volume v3 mengikuti screenshot
 
 **CONFIRMED — DESIGN_REFERENCE_VALIDATED, bukan runtime.** Arahan Andreas: samakan panel kanan dengan screenshot dan hapus kata-kata yang tidak perlu. Source `25b36eceb76484a282f742ad36139453b9f1968b` mengganti panel v2 menjadi flat panel 360 px: judul, nama pekerjaan, satuan, Tambah Baris, tabel Uraian Perhitungan/P/L/T/Jumlah, Total Volume abu-abu, Catatan opsional, Batal/Terapkan. Judul Rincian ukuran, penjelasan rumus, informasi harga tambahan, kode di panel, kartu pekerjaan dan blok hasil hitam dihapus. Label panjang/lebar/tinggi lengkap tetap tersedia bagi screen reader; tampilan menggunakan P/L/T. Validasi input tetap muncul saat diperlukan.
