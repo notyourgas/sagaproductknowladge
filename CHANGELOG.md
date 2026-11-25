@@ -1,5 +1,14 @@
 # Saga Product Knowledge Changelog
 
+## 2026-11-25 — Arkarupa R2 Batch 03: komposisi AHSP dan review impor terbit
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED.** Fitur/runtime `9589c551d00cc202f94f8ee7ab9e9e29ffc6a3a7` menggantikan B02; dokumen penutupan `3da243ac3912a1a84088ed101452c0b34bfc01c6` terpisah. Editor AHSP kini mencari resource bernama, mengambil satuan otomatis dan menampilkan harga master/turunan readonly. Server menolak field harga/asing, duplikasi, unit salah dan koefisien invalid. Versi komposisi append-only mempertahankan source/PDF/edisi/halaman/aktor/alasan; Owner lain menyetujui dan perubahan sumber menahan approval basi. Empat status membedakan referensi, perlu review, koefisien terverifikasi dan harga lengkap. Preview/review impor per divisi terikat sumber/data, dengan konfirmasi, transaksi, replay dan audit.
+
+**CONFIRMED — bukti dan batas.** Regresi 158 tes/5.683 asersi; 14 browser lokal final; 12 pemeriksaan publik desktop/HP simulasi lulus, termasuk Change Log terbit. Dua atribut view final diperiksa browser, backend tetap seperti full pass. Restore 76 tabel/10 file dari dua snapshot terenkripsi; 74 tabel bisnis/harga lama identik saat rilis, schema33 tetap. Source/service dibaca segar kembali dan cocok. Kedua Change Log diperbarui. Ini demo sintetis, bukan staging/UAT/PILOT_READY; static demo tidak diperbarui. Impor UI hanya paket143detail reviewed, bukan PDF bebas atau klaim seluruh2.841kode siap hitung. Penutup atap tidak mencakup rangka/fondasi kanopi. R2 kini10IDimplementasi,5acuandesain,30planned; B04 project-first berikutnya. Automation PAUSED; pajak baru/UAT manusia/HP fisik/panduan penuh terbuka. CI_NOT_RUN dan audit security mendalam NOT_REQUESTED. Tidak ada aktivasi pilot/data klien/akun/izin/harga publik baru. Dasar arahan Andreas lanjut B03 dan DEC-336/337/338; pricing/positioning tetap.
+
+Buka [Master AHSP](https://arkarupa-dashboard.vercel.app/katalog?section=ahsp&workSearch=3.1.3.5) dan [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261125-183050).
+
+
 ## 2026-11-25 — Arkarupa R2 Batch 02: tiga master dan sumber harga terbit
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED.** Source fitur/runtime `5cc7dbd463710c07d992779c9127081338a30260`; dokumen penutupan `3f13099f5211e9de56478ab114caba28d7c0723b`. Arkarupa kini mempunyai tiga tujuan master AHSP/Bahan & Peralatan/Upah, pengajuan sumber dan konversi harga dengan preview, histori append-only, persetujuan Owner lain, penolakan duplikat tepat dan stale approval. Harga lama, jenis biaya, izin serta snapshot RAB approved tetap. Sebelumnya empat menu dan metadata pengajuan terbatas.
