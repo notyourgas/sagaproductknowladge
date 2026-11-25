@@ -1,5 +1,16 @@
 # Arkarupa Dashboard — prototype kontraktor
 
+## 2026-11-25 — Arkarupa R2 Batch 02: tiga master dan sumber harga terbit
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED.** Source fitur/runtime `5cc7dbd463710c07d992779c9127081338a30260` menggantikan `c4245ad4efcd8eef002d95aeeafd4c67b621981d` pada demo Laravel. Dokumentasi penutupan `3f13099f5211e9de56478ab114caba28d7c0723b` disimpan terpisah. Empat menu master menjadi AHSP, Bahan & Peralatan (dua tab), dan Upah. Pengajuan harga menyimpan sumber, wilayah/tanggal, supplier opsional, harga asal dan konversi eksplisit ke satuan acuan; preview dan penyimpanan memakai kalkulator yang sama. Harga baru aktif setelah konfirmasi Owner selain pengaju; histori append-only, pengajuan basi dan identitas duplikat tepat ditolak. Izin tetap; jenis alat/upah/jasa lama dan snapshot RAB approved terjaga.
+
+**CONFIRMED — pembuktian.** Lokal 152 tes/5.611 asersi dan 19 pemeriksaan browser lulus pada fixture disposable; publik 12 pemeriksaan baca pada 1280/390/320 lulus, termasuk form sumber, navigasi tiga master, hash isi CSS dan Change Log terbit. Tidak ada pengajuan harga publik untuk pengujian. Runner kanonik membuktikan dua snapshot terenkripsi, restore 76 tabel/10 file, migrasi 32→33 dan exact runtime/manifest. Sebanyak 74 tabel bisnis dan seluruh field harga lama tetap identik; satu kolom JSON nullable ditambah tanpa backfill/impor. Database disposable dihapus. Kedua Change Log diperbarui. Status ini demo publik sintetis; staging terpisah/UAT manusia/HP fisik/PILOT_READY belum lulus.
+
+**CONFIRMED — scope dan next action.** Lima ID R2-B02-01..05 lulus implementasi; B01 tetap lima ID acuan desain, panel RAB baru belum runtime. B03–B09 belum selesai dalam R2. Berikutnya B03 koefisien AHSP nonharga dan review/impor bertahap; pemetaan 2.841 kode bukan kelayakan semua harga/analisis. Aturan pajak/pembulatan baru menunggu Andreas. Automation PAUSED, static demo tidak berubah; tanpa aktivasi pilot atau migrasi data klien. Audit security mendalam NOT_REQUESTED; CI_NOT_RUN, gate lokal dan runner telah dijalankan. Implementasi mengikuti DEC-336/337/338; tidak menambah keputusan founder baru.
+
+Buka [Bahan](https://arkarupa-dashboard.vercel.app/katalog?section=material&kind=material), [Peralatan](https://arkarupa-dashboard.vercel.app/katalog?section=material&kind=equipment), [Upah](https://arkarupa-dashboard.vercel.app/katalog?section=labor&kind=labor), [Change Log](https://arkarupa-dashboard.vercel.app/fondasi?stage=rilis#run-20261125-113234).
+
+
 ## 2026-11-25 — Arkarupa B01: panel volume v3 mengikuti screenshot
 
 **CONFIRMED — DESIGN_REFERENCE_VALIDATED, bukan runtime.** Arahan Andreas: samakan panel kanan dengan screenshot dan hapus kata-kata yang tidak perlu. Source `25b36eceb76484a282f742ad36139453b9f1968b` mengganti panel v2 menjadi flat panel 360 px: judul, nama pekerjaan, satuan, Tambah Baris, tabel Uraian Perhitungan/P/L/T/Jumlah, Total Volume abu-abu, Catatan opsional, Batal/Terapkan. Judul Rincian ukuran, penjelasan rumus, informasi harga tambahan, kode di panel, kartu pekerjaan dan blok hasil hitam dihapus. Label panjang/lebar/tinggi lengkap tetap tersedia bagi screen reader; tampilan menggunakan P/L/T. Validasi input tetap muncul saat diperlukan.

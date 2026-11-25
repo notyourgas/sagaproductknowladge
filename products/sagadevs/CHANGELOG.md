@@ -1,5 +1,12 @@
 # SagaDevs Product Hub Changelog
 
+## 2026-11-25 — Arkarupa R2 Batch 02: tiga master dan sumber harga terbit
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED.** Source fitur/runtime `5cc7dbd463710c07d992779c9127081338a30260`; dokumen penutupan `3f13099f5211e9de56478ab114caba28d7c0723b`. Arkarupa kini mempunyai tiga tujuan master AHSP/Bahan & Peralatan/Upah, pengajuan sumber dan konversi harga dengan preview, histori append-only, persetujuan Owner lain, penolakan duplikat tepat dan stale approval. Harga lama, jenis biaya, izin serta snapshot RAB approved tetap. Sebelumnya empat menu dan metadata pengajuan terbatas.
+
+Lokal 152 tes/5.611 asersi + 19 browser lulus; publik 12 pemeriksaan baca desktop/HP simulasi lulus. Backup terenkripsi/restore 76 tabel/10 file; migrasi nullable 32→33, 74 tabel bisnis dan harga lama identik, exact runtime/manifest cocok. Kedua Change Log dicatat dan entri kandidat terbit. Production demo berubah; static demo tetap. Lima ID B02 lulus implementasi, B01 masih acuan desain; B03–B09, UAT manusia/HP fisik/PILOT_READY belum selesai. Berikutnya B03 koefisien AHSP nonharga/review impor; 2.841 kode belum semuanya siap hitung. Pajak baru menunggu Andreas. Automation PAUSED; bukan aktivasi/data klien. CI_NOT_RUN; audit security mendalam NOT_REQUESTED. Dasar DEC-336/337/338 dan permintaan Andreas lanjut Batch 02; positioning/pricing tidak berubah. Detail di [Arkarupa](ARKARUPA.md) dan [demo Bahan](https://arkarupa-dashboard.vercel.app/katalog?section=material&kind=material).
+
+
 ## 2026-11-25 — Arkarupa B01: panel volume v3 mengikuti screenshot
 
 **CONFIRMED — DESIGN_REFERENCE_VALIDATED, bukan runtime.** Arahan Andreas: samakan panel kanan dengan screenshot dan hapus kata-kata yang tidak perlu. Source `25b36eceb76484a282f742ad36139453b9f1968b` mengganti panel v2 menjadi flat panel 360 px: judul, nama pekerjaan, satuan, Tambah Baris, tabel Uraian Perhitungan/P/L/T/Jumlah, Total Volume abu-abu, Catatan opsional, Batal/Terapkan. Judul Rincian ukuran, penjelasan rumus, informasi harga tambahan, kode di panel, kartu pekerjaan dan blok hasil hitam dihapus. Label panjang/lebar/tinggi lengkap tetap tersedia bagi screen reader; tampilan menggunakan P/L/T. Validasi input tetap muncul saat diperlukan.

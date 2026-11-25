@@ -1,5 +1,12 @@
 # Saga Product — Master Knowledge for ChatGPT
 
+## 2026-11-25 — Arkarupa R2 Batch 02: tiga master dan sumber harga terbit
+
+**CONFIRMED — DEMO_PUBLIC_VERIFIED.** Source fitur/runtime `5cc7dbd463710c07d992779c9127081338a30260`; dokumen penutupan `3f13099f5211e9de56478ab114caba28d7c0723b`. Arkarupa kini mempunyai tiga tujuan master AHSP/Bahan & Peralatan/Upah, pengajuan sumber dan konversi harga dengan preview, histori append-only, persetujuan Owner lain, penolakan duplikat tepat dan stale approval. Harga lama, jenis biaya, izin serta snapshot RAB approved tetap. Sebelumnya empat menu dan metadata pengajuan terbatas.
+
+Lokal 152 tes/5.611 asersi + 19 browser lulus; publik 12 pemeriksaan baca desktop/HP simulasi lulus. Backup terenkripsi/restore 76 tabel/10 file; migrasi nullable 32→33, 74 tabel bisnis dan harga lama identik, exact runtime/manifest cocok. Kedua Change Log dicatat dan entri kandidat terbit. Production demo berubah; static demo tetap. Lima ID B02 lulus implementasi, B01 masih acuan desain; B03–B09, UAT manusia/HP fisik/PILOT_READY belum selesai. Berikutnya B03 koefisien AHSP nonharga/review impor; 2.841 kode belum semuanya siap hitung. Pajak baru menunggu Andreas. Automation PAUSED; bukan aktivasi/data klien. CI_NOT_RUN; audit security mendalam NOT_REQUESTED. Dasar DEC-336/337/338 dan permintaan Andreas lanjut Batch 02; positioning/pricing tidak berubah. Detail di [Arkarupa](products/sagadevs/ARKARUPA.md) dan [demo Bahan](https://arkarupa-dashboard.vercel.app/katalog?section=material&kind=material).
+
+
 ## 2026-11-25 - Mapping kecamatan J&T COYABAG lolos preview
 
 **CONFIRMED / LOCAL_VALIDATED / IMPLEMENTED_NOT_DEPLOYED.** Mapping cakupan resmi J&T berisi 7.299 baris untuk 38 provinsi dan 514 kabupaten/kota. Setelah 14 duplikat persis disisihkan, 7.285 baris unik lolos preview dengan nol error. Pembaca mendukung beberapa kecamatan lokal yang memakai satu kode area J&T dan mapping tingkat kecamatan dengan kode pos dari alamat pelanggan. Tes terfokus lulus 18 skenario dan 67 assertion. Source `f4086b338462990bbea368472dad65273f7f7242` pada branch `codex/coyabag-jnt-account-contract`. CI kandidat menemukan temuan pada audit dependensi backend. Penyelesaian temuan audit masih menjadi blocker rilis.
