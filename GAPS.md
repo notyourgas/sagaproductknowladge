@@ -2,7 +2,7 @@
 
 ## 2026-11-25 - Mapping kecamatan J&T COYABAG lolos preview
 
-**CONFIRMED.** Mapping kecamatan resmi J&T sudah diterima dan lolos preview COYABAG. Data postcode berasal dari alamat pelanggan. Status akses provider produksi, impor runtime, serta checkout dan fulfillment produksi memerlukan verifikasi baru. Source `f4086b338462990bbea368472dad65273f7f7242` pada branch `codex/coyabag-jnt-account-contract`.
+**CONFIRMED.** Mapping kecamatan resmi J&T sudah diterima dan lolos preview COYABAG. Data postcode berasal dari alamat pelanggan. Status akses provider produksi, impor runtime, serta checkout dan fulfillment produksi memerlukan verifikasi baru. Source `f4086b338462990bbea368472dad65273f7f7242` pada branch `codex/coyabag-jnt-account-contract`. CI kandidat menemukan temuan pada audit dependensi backend. Penyelesaian temuan audit masih menjadi blocker rilis.
 
 ## 2026-11-25 — Arkarupa B01: panel volume v3 mengikuti screenshot
 
