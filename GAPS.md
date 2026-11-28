@@ -1,8 +1,8 @@
 # Gaps dan Keputusan Founder
 
-## 2026-11-28 - Paket voucher kolaborasi foto dan minuman: kesiapan tiga aplikasi
+## 2026-11-28 - Paket voucher kolaborasi foto dan minuman: kesiapan tiga aplikasi — CLOSED
 
-**CONFIRMED / OPEN.** Paket dua manfaat untuk 200 akun dan masa pakai 60 hari belum diaktifkan. SagaBook sudah terpasang dan terverifikasi, sementara admission kapasitas kasir menahan deployment Member/kasir. Dry-run retensi resmi mencakup enam versi lama sekitar 1,03 GB dan melindungi versi aktif, rollback serta backup. Persetujuan pembersihan diminta, belum diterima. Setelah keputusan kapasitas, selesaikan rilis dua runtime, buat paket melalui Owner dan verifikasi isi/kuota/masa berlaku. Tidak ada penggantian jalur deploy atau pelemahan threshold.
+**CONFIRMED / CLOSED.** Andreas menyetujui pembersihan enam versi kasir lama; retensi resmi selesai dengan current/rollback/backup dilindungi. Kasir dan Member telah diaktifkan dan diverifikasi, menyusul SagaBook. Paket dua manfaat dengan kuota 200 dan masa pakai 60 hari sudah aktif, Owner readback PASS tanpa membuat grant customer. Kapasitas dan source-bound offline qualification tidak lagi menjadi blocker pada rilis ini. Customer/perangkat fisik UAT masih terbuka sebagai batas terpisah.
 
 ## 2026-11-25 — Arkarupa R2 Batch 03: komposisi AHSP dan review impor terbit
 

@@ -4694,7 +4694,7 @@ ini bukan aktivasi payment flow lain.
 | Keputusan | Andreas meminta satu voucher Self Photo gratis untuk dua orang selama sepuluh menit, dan satu voucher diskon 50% untuk satu minuman all beverages. Kuota 200 akun, masa pakai 60 hari sejak klaim; satu kali per akun mengikuti DEC-339. |
 | Alasan | Paket kolaborasi harus dapat diklaim dengan UI yang jelas dan dipakai sesuai manfaat yang dijanjikan. |
 | Alternatif | Memakai hadiah pendaftaran Self Photo 50% atau membatasi minuman ke daftar standar; tidak memenuhi manfaat yang diminta. |
-| Dampak | Template manfaat khusus, preview sebelum konfirmasi, klasifikasi minuman terbit serta booking sepuluh menit/nilai nol. Add-on tetap berbayar dan paket reguler tidak berubah. Parameter batas klaim 60 hari sejak aktivasi disampaikan saat pelaksanaan; belum ada kode aktif pada checkpoint ini. |
+| Dampak | Template manfaat khusus, preview sebelum konfirmasi, klasifikasi minuman terbit serta booking sepuluh menit/nilai nol. Add-on tetap berbayar dan paket reguler tidak berubah. Parameter batas klaim 60 hari sejak aktivasi disampaikan saat pelaksanaan dan diterapkan; program aktif dengan batas klaim 27 Januari 2027 WIB. |
 | Pemberi keputusan | Andreas / founder |
-| Status | CONFIRMED ketentuan. SagaBook PRODUCTION_ACTIVATED; Member/kasir LOCAL_VALIDATED, deployment menunggu persetujuan retensi kapasitas. Kampanye NOT_CREATED. |
+| Status | CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Member `20261128T161900Z-c8dc03e-r0u`, kasir 5c5d571c dan Book 62a3ba67; kampanye ACTIVE, kuota 200/masa pakai 60 hari, Owner readback terverifikasi. |
 | Dokumen terkait | [Platform](products/saga-platform/PRODUCT.md), [SagaBook](products/sagabook/PRODUCT.md), [SagaPOS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
