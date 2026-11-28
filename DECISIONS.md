@@ -4668,3 +4668,18 @@ ini bukan aktivasi payment flow lain.
 | Pemberi keputusan | Andreas / founder |
 | Status | CONFIRMED kebutuhan; IMPLEMENTATION_NOT_DEPLOYED. Source dokumen abd158324fe822f56b8bb1d13daa840594b9892b; runtime terakhir tercatat c4245ad, belum diverifikasi ulang pada tugas strategi. Automation PAUSED. |
 | Dokumen terkait | [Arkarupa](products/sagadevs/ARKARUPA.md), [Product](products/sagadevs/PRODUCT.md), [Gaps](GAPS.md) |
+
+
+## DEC-339 - Kode redeem paket voucher satu kali per akun dengan kuota teratur
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-11-28 |
+| Topik | Klaim satu atau beberapa voucher melalui kode redeem di Saga Member |
+| Keputusan | Satu kode dapat memberikan beberapa voucher sekaligus. Setiap akun hanya mengklaim sekali per kode. Owner dapat mengatur kuota akun; default satu akun per kode. |
+| Alasan | Andreas meminta fitur input kode dan menyetujui kuota yang dapat diatur pada klarifikasi implementasi. |
+| Alternatif | Kode selalu satu orang atau kode tanpa batas akun; tidak dipakai sebagai aturan tetap. |
+| Dampak | Isi paket dan kuota disimpan atomik, retry tidak menggandakan hak; kuota hadiah pendaftaran tetap terpisah. Owner mengelola kode dan Member melihat voucher miliknya. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada release `20261128T080105Z-be2f0c5-r0u`. |
+| Dokumen terkait | [Product](products/saga-platform/PRODUCT.md), [Dossier](products/saga-platform/DOSSIER.md), [Changelog](products/saga-platform/CHANGELOG.md) |
