@@ -1,5 +1,9 @@
 # Gaps dan Keputusan Founder
 
+## 2026-11-28 - Paket voucher kolaborasi foto dan minuman: kesiapan tiga aplikasi
+
+**CONFIRMED / OPEN.** Paket dua manfaat untuk 200 akun dan masa pakai 60 hari belum diaktifkan. SagaBook sudah terpasang dan terverifikasi, sementara admission kapasitas kasir menahan deployment Member/kasir. Dry-run retensi resmi mencakup enam versi lama sekitar 1,03 GB dan melindungi versi aktif, rollback serta backup. Persetujuan pembersihan diminta, belum diterima. Setelah keputusan kapasitas, selesaikan rilis dua runtime, buat paket melalui Owner dan verifikasi isi/kuota/masa berlaku. Tidak ada penggantian jalur deploy atau pelemahan threshold.
+
 ## 2026-11-25 — Arkarupa R2 Batch 03: komposisi AHSP dan review impor terbit
 
 **CONFIRMED — DEMO_PUBLIC_VERIFIED.** Fitur/runtime `9589c551d00cc202f94f8ee7ab9e9e29ffc6a3a7` menggantikan B02; dokumen penutupan `3da243ac3912a1a84088ed101452c0b34bfc01c6` terpisah. Editor AHSP kini mencari resource bernama, mengambil satuan otomatis dan menampilkan harga master/turunan readonly. Server menolak field harga/asing, duplikasi, unit salah dan koefisien invalid. Versi komposisi append-only mempertahankan source/PDF/edisi/halaman/aktor/alasan; Owner lain menyetujui dan perubahan sumber menahan approval basi. Empat status membedakan referensi, perlu review, koefisien terverifikasi dan harga lengkap. Preview/review impor per divisi terikat sumber/data, dengan konfirmasi, transaksi, replay dan audit.

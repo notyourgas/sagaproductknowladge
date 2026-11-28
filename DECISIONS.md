@@ -4683,3 +4683,18 @@ ini bukan aktivasi payment flow lain.
 | Pemberi keputusan | Andreas / founder |
 | Status | CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED pada release `20261128T080105Z-be2f0c5-r0u`. |
 | Dokumen terkait | [Product](products/saga-platform/PRODUCT.md), [Dossier](products/saga-platform/DOSSIER.md), [Changelog](products/saga-platform/CHANGELOG.md) |
+
+
+## DEC-340 - Paket kode kolaborasi foto gratis dan satu minuman setengah harga
+
+| Field | Isi |
+|---|---|
+| Tanggal | 2026-11-28 |
+| Topik | Dua manfaat sekaligus melalui klaim kode di Saga Member |
+| Keputusan | Andreas meminta satu voucher Self Photo gratis untuk dua orang selama sepuluh menit, dan satu voucher diskon 50% untuk satu minuman all beverages. Kuota 200 akun, masa pakai 60 hari sejak klaim; satu kali per akun mengikuti DEC-339. |
+| Alasan | Paket kolaborasi harus dapat diklaim dengan UI yang jelas dan dipakai sesuai manfaat yang dijanjikan. |
+| Alternatif | Memakai hadiah pendaftaran Self Photo 50% atau membatasi minuman ke daftar standar; tidak memenuhi manfaat yang diminta. |
+| Dampak | Template manfaat khusus, preview sebelum konfirmasi, klasifikasi minuman terbit serta booking sepuluh menit/nilai nol. Add-on tetap berbayar dan paket reguler tidak berubah. Parameter batas klaim 60 hari sejak aktivasi disampaikan saat pelaksanaan; belum ada kode aktif pada checkpoint ini. |
+| Pemberi keputusan | Andreas / founder |
+| Status | CONFIRMED ketentuan. SagaBook PRODUCTION_ACTIVATED; Member/kasir LOCAL_VALIDATED, deployment menunggu persetujuan retensi kapasitas. Kampanye NOT_CREATED. |
+| Dokumen terkait | [Platform](products/saga-platform/PRODUCT.md), [SagaBook](products/sagabook/PRODUCT.md), [SagaPOS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
