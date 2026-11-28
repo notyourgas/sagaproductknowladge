@@ -4696,5 +4696,5 @@ ini bukan aktivasi payment flow lain.
 | Alternatif | Memakai hadiah pendaftaran Self Photo 50% atau membatasi minuman ke daftar standar; tidak memenuhi manfaat yang diminta. |
 | Dampak | Template manfaat khusus, preview sebelum konfirmasi, klasifikasi minuman terbit serta booking sepuluh menit/nilai nol. Add-on tetap berbayar dan paket reguler tidak berubah. Parameter batas klaim 60 hari sejak aktivasi disampaikan saat pelaksanaan dan diterapkan; program aktif dengan batas klaim 27 Januari 2027 WIB. |
 | Pemberi keputusan | Andreas / founder |
-| Status | CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Member `20261128T161900Z-c8dc03e-r0u`, kasir 5c5d571c dan Book 62a3ba67; kampanye ACTIVE, kuota 200/masa pakai 60 hari, Owner readback terverifikasi. |
+| Status | CONFIRMED / PRODUCTION_DEPLOYED / PRODUCTION_ACTIVATED. Member `20261128T170937Z-c8dc03e-r0u` (perbaikan UI 29 November), kasir 5c5d571c dan Book 62a3ba67; kampanye ACTIVE, kuota 200/masa pakai 60 hari, Owner readback terverifikasi. |
 | Dokumen terkait | [Platform](products/saga-platform/PRODUCT.md), [SagaBook](products/sagabook/PRODUCT.md), [SagaPOS](products/sagaops/PRODUCT.md), [Gaps](GAPS.md) |
